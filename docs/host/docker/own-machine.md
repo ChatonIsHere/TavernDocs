@@ -12,7 +12,7 @@ This page is for a machine you already have: a home server, an old PC running Li
 ## What you need
 
 - A 64-bit (x86_64) Linux machine. ARM, like a Raspberry Pi, won't work.
-- At least 2 CPU cores and 4GB of RAM. 4 cores is better, see [Settings and updates](settings-and-updates.md#cpu-and-ram).
+- 2 CPU cores and 4 GB of RAM for a few friends around Town, 4 cores and 8 GB if people will explore the forest. See [How big a server you need](../before-you-host.md#how-big-a-server-you-need).
 - About 10GB of free disk for the game, the image and your saves.
 - Docker Engine with the Compose plugin. [Docker's install guide](https://docs.docker.com/engine/install/) has steps for every distro, or follow the [Installing Docker](vps.md#installing-docker) part of the VPS guide on Ubuntu.
 - Your game files. See [Making the game-source folder](#making-the-game-source-folder) below.

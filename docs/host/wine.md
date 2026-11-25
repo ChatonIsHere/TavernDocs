@@ -11,7 +11,7 @@ You'll want to be comfortable with a Linux terminal. Commands are for Ubuntu 22.
 
 ## What you need
 
-- A 64-bit (x86_64) Linux machine with at least 2 CPU cores and 4GB of RAM.
+- A 64-bit (x86_64) Linux machine: 2 CPU cores and 4 GB of RAM for a few friends around Town, 4 cores and 8 GB if people will explore the forest. See [How big a server you need](before-you-host.md#how-big-a-server-you-need).
 - Your game files, with `A Township Tale.exe` and `A Township Tale_Data` directly inside the folder (see [Making the game-source folder](docker/own-machine.md#making-the-game-source-folder)).
 - Internet the first time, to download MelonLoader, TavernLib and the patch.
 

@@ -45,7 +45,7 @@ All four can be changed. Players only need the server's name or IP, since the la
 ### Creating the server
 
 - **Allocations.** The primary allocation is the game port (`1757` by default). Add three more for the console, web server and login, and set **Console port**, **Web server port** and **Login port** to them (`1760`, `1761` and `1762` by default).
-- **Resources.** 2 CPU cores and 4GB of RAM is a good start. For disk, allow the game (about 4.4GB) plus a couple of GB.
+- **Resources.** 2 CPU cores and 3.5 GB of RAM for a few players around Town, 4 cores and 7.5 GB if they'll explore the forest. See [How big a server you need](../before-you-host.md#how-big-a-server-you-need). For disk, allow the game (about 4.4GB) plus a couple of GB.
 
 The install script doesn't download anything (there's nothing it legally can). It just reminds you what to upload.
 
@@ -77,7 +77,7 @@ With Controller/Target, every target that hosts an instance needs the repository
 ### Creating the instance
 
 1. Create an instance and pick **A Township Tale**.
-2. Keep the default ports unless you're running more than one server on the address. Set a memory limit (4GB is a good start).
+2. Keep the default ports unless you're running more than one server on the address. Set a memory limit (see [How big a server you need](../before-you-host.md#how-big-a-server-you-need)).
 3. Upload the contents of your `game-source` folder into the instance's `game-source` directory. Zip it and unzip it there rather than uploading 4.4GB of loose files.
 4. Start it. AMP marks it running once TavernLib logs `Starting auth listening cycle`.
 

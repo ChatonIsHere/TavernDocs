@@ -35,7 +35,7 @@ An SSH key is a pair of files: a private key that stays on your PC, and a public
 
 Any provider with Ubuntu works: Hetzner, OVH, Netcup, DigitalOcean, Vultr, whoever.
 
-- At least 2 CPU cores and 4GB of RAM. 4 cores is better.
+- 2 CPU cores and 4 GB of RAM for a few friends around Town, 4 cores and 8 GB if people will explore the forest and caves. See [How big a server you need](../before-you-host.md#how-big-a-server-you-need).
 - 40GB of disk or more (the game is about 4.4GB, plus the zip while you upload it, the Docker image, Ubuntu and your saves).
 - A dedicated IPv4 address. Some hosts sell cheaper IPv6-only servers. The game needs IPv4.
 - A location close to your players. Distance is ping.

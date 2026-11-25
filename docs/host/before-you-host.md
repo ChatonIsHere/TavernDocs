@@ -24,8 +24,26 @@ Running your own server is how most people play A Township Tale now. It's not ha
 ## What you need
 
 - Your own copy of the game files. The game can't be downloaded any more, so if you haven't already, [back up your game](../play/getting-started/back-up-your-game.md) first.
-- A computer that can stay on while people play. The server uses about 2 CPU cores and 4GB of RAM, more while a new world is being made.
+- A computer that can stay on while people play. See [How big a server you need](#how-big-a-server-you-need) below.
 - For a public server: either a router you can port forward on, or a VPS.
+
+## How big a server you need
+
+What matters most isn't how many people play, it's where they go. Around Town the server stays small. The procedural forest is what eats memory, and the server doesn't give it back until it restarts.
+
+| | Players | CPU | RAM for the server | RAM for the whole machine |
+| --- | --- | --- | --- | --- |
+| **Minimum** | Up to about 5, mostly around Town | 2 cores | 3.5 GB | 4 GB, plus [swap](troubleshooting.md#docker) |
+| **Recommended** | Up to about 12, exploring the forest and caves | 4 cores | 7.5 GB | 8 GB |
+| **Big** | Up to 20 | 4 fast cores | 11 GB | 12 GB, and restart it every few hours |
+
+- **Faster cores beat more cores.** The game does most of its work on one main thread. Past 4 cores, more don't help, but a faster CPU does.
+- **20 players is about as many as the game copes with.** In testing the server kept up, but its slowest frames took 50 to 100 ms, whatever it ran on.
+- **A busy server's memory keeps climbing**, by up to about 1 GB an hour with 20 players. Restart it regularly: turn on **Auto-reboot** in the [Server launcher's settings](windows/settings.md), or with Docker add `0 5 * * * cd ~/att-server && docker compose restart` to `crontab -e` for a restart at 5am every day.
+- **A new world uses all the CPU it can** for its first few minutes while it makes the forest. If you cap the server's CPU, keep at least 4 cores.
+- **On Windows**, with the Server launcher, the server uses a little less memory, since it doesn't need Wine.
+
+These numbers were measured with the [Canary](https://github.com/ChatonIsHere/Canary) mod on test servers with test players (real game clients run as bots), and no performance mods. Yours will vary with your world, your mods and what your players get up to.
 
 ## Local or public?
 
