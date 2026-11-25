@@ -19,9 +19,9 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StringGameSettingsAccess()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StringGameSettingsAccess()"}</code> |
 
 ## Used in
 

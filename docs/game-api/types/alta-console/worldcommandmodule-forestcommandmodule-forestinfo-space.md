@@ -17,18 +17,18 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Space()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Space()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-a" /><code>{"int a"}</code> |  |
-| <Link id="m-b" /><code>{"int b"}</code> |  |
-| <Link id="m-c" /><code>{"int c"}</code> |  |
-| <Link id="m-id" /><code>{"int id"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-a" /><code>{"int a"}</code> |
+| <Link id="m-b" /><code>{"int b"}</code> |
+| <Link id="m-c" /><code>{"int c"}</code> |
+| <Link id="m-id" /><code>{"int id"}</code> |
 
 ## Used in
 

@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FriendRequestResult()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FriendRequestResult()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-friendship" /><code><Link to="/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" Friendship { get; set; }"}</code> |  |
-| <Link id="m-result" /><code><Link to="/game-api/types/assembly-api-models/friendrequestedtype">{"FriendRequestedType"}</Link>{" Result { get; set; }"}</code> |  |
-| <Link id="m-reversefriendship" /><code><Link to="/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" ReverseFriendship { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-friendship" /><code><Link to="/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" Friendship { get; set; }"}</code> |
+| <Link id="m-result" /><code><Link to="/game-api/types/assembly-api-models/friendrequestedtype">{"FriendRequestedType"}</Link>{" Result { get; set; }"}</code> |
+| <Link id="m-reversefriendship" /><code><Link to="/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" ReverseFriendship { get; set; }"}</code> |
 
 ## Used in
 

@@ -16,6 +16,6 @@ An **interface** in `Root.Township`, `Alta.Chunks`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serializeclusterpart" /><code>{"void SerializeClusterPart("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serializeclusterpart" /><code>{"void SerializeClusterPart("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |

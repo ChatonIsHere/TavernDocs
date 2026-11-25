@@ -18,26 +18,39 @@ A **class** in `Root.Township`, `Alta.Caves.Displays`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PixelMapChunkDisplay()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PixelMapChunkDisplay()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> |  |
-| <Link id="m-pool" /><code>{"private static Queue<Texture2D> pool"}</code> |  |
-| <Link id="m-quad" /><code>{"private static Mesh quad"}</code> |  |
-| <Link id="m-quadrenderer" /><code>{"private MeshRenderer quadRenderer"}</code> |  |
-| <Link id="m-texture" /><code>{"private Texture2D texture"}</code> |  |
-| <Link id="m-yindex" /><code>{"private int yIndex"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> |
+| <Link id="m-pool" /><code>{"private static Queue<Texture2D> pool"}</code> |
+| <Link id="m-quad" /><code>{"private static Mesh quad"}</code> |
+| <Link id="m-quadrenderer" /><code>{"private MeshRenderer quadRenderer"}</code> |
+| <Link id="m-texture" /><code>{"private Texture2D texture"}</code> |
+| <Link id="m-yindex" /><code>{"private int yIndex"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-render" /><code>{"override IEnumerator Render() (iterator)"}</code> |  |
-| <Link id="m-gettexture" /><code>{"private Texture2D GetTexture()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+| <Link id="m-render" /><code>{"override IEnumerator Render() (iterator)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-gettexture" /><code>{"private Texture2D GetTexture()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>

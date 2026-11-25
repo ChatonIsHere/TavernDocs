@@ -20,18 +20,23 @@ A category of player cosmetics (a slot such as a hat or shirt), loaded from `Res
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerCosmeticCategory()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerCosmeticCategory()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allcategories" /><code>{"private static "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] allCategories"}</code> |  |
-| <Link id="m-categoriesfolder" /><code>{"private const string CategoriesFolder"}</code> |  |
-| <Link id="m-flatnullchance" /><code>{"private float flatNullChance"}</code> |  |
-| <Link id="m-nullelementweight" /><code>{"private float nullElementWeight"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-allcategories" /><code>{"private static "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] allCategories"}</code> |
+| <Link id="m-categoriesfolder" /><code>{"private const string CategoriesFolder"}</code> |
+| <Link id="m-flatnullchance" /><code>{"private float flatNullChance"}</code> |
+| <Link id="m-nullelementweight" /><code>{"private float nullElementWeight"}</code> |
+
+</details>
 
 ## Properties
 
@@ -45,7 +50,15 @@ A category of player cosmetics (a slot such as a hat or shirt), loaded from `Res
 | --- | --- |
 | <Link id="m-getrandom" /><code>{"override uint GetRandom(ICollection<uint> items, bool canUseNonOwnedItems)"}</code> | Picks a random item, or none by the category's null chances. The ID version only picks owned items, or available ones if allowed. |
 | <Link id="m-getrandom-2" /><code>{"override "}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" GetRandom(ICollection<"}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{"> items)"}</code> | Picks a random item, or none by the category's null chances. The ID version only picks owned items, or available ones if allowed. |
-| <Link id="m-loadallcategories" /><code>{"private static void LoadAllCategories()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-loadallcategories" /><code>{"private static void LoadAllCategories()"}</code> |
+
+</details>
 
 ## Used in
 

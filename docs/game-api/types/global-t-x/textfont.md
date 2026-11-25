@@ -19,33 +19,49 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TextFont()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TextFont()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxcharacters" /><code>{"const int MaxCharacters"}</code> |  |
-| <Link id="m-widthscalar" /><code>{"const float WidthScalar"}</code> |  |
-| <Link id="m-fonts" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-t-x/textfont">{"TextFont"}</Link>{", "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[]> fonts"}</code> |  |
-| <Link id="m-linkedfont" /><code>{"private Font linkedFont"}</code> |  |
-| <Link id="m-space" /><code>{"private "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{" space"}</code> |  |
-| <Link id="m-textfontlods" /><code>{"private "}<Link to="/game-api/types/global-t-x/textfont-textfontlod">{"TextFont.TextFontLOD"}</Link>{"[] textFontLODs"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maxcharacters" /><code>{"const int MaxCharacters"}</code> |
+| <Link id="m-widthscalar" /><code>{"const float WidthScalar"}</code> |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fonts" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-t-x/textfont">{"TextFont"}</Link>{", "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[]> fonts"}</code> |
+| <Link id="m-linkedfont" /><code>{"private Font linkedFont"}</code> |
+| <Link id="m-space" /><code>{"private "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{" space"}</code> |
+| <Link id="m-textfontlods" /><code>{"private "}<Link to="/game-api/types/global-t-x/textfont-textfontlod">{"TextFont.TextFontLOD"}</Link>{"[] textFontLODs"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-linkedfont-2" /><code>{"Font LinkedFont { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-linkedfont-2" /><code>{"Font LinkedFont { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getlettermesh" /><code><Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{" GetLetterMesh(char character)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getlettermesh" /><code><Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{" GetLetterMesh(char character)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>
 
 ## Used in
 

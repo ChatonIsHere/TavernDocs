@@ -19,19 +19,19 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FirstJoinState()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FirstJoinState()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> |  |
-| <Link id="m-statetype" /><code>{"override "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> |
+| <Link id="m-statetype" /><code>{"override "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-validatestateactivation" /><code>{"override bool ValidateStateActivation(bool isDuringSaving)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-validatestateactivation" /><code>{"override bool ValidateStateActivation(bool isDuringSaving)"}</code> |

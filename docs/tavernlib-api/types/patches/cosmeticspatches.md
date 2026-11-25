@@ -20,9 +20,9 @@ Postfixes `ServerHostingGameMode.OnStartSucceeded` to load every cosmetic into m
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticsPatches()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CosmeticsPatches()"}</code> |
 
 ## Methods
 

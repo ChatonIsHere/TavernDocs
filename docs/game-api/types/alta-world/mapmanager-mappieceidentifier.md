@@ -17,16 +17,16 @@ A **private struct** in `Root.Township`, `Alta.Map`. Reach it through att-stubs'
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MapPieceIdentifier("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map, int index)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MapPieceIdentifier("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map, int index)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-index" /><code>{"int index"}</code> |  |
-| <Link id="m-map" /><code><Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-index" /><code>{"int index"}</code> |
+| <Link id="m-map" /><code><Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> |
 
 ## Used in
 

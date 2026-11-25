@@ -17,30 +17,38 @@ A **private class** in `Root.Township`, `Alta.Utilities.Atlas`. Reach it through
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShaderBlits()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShaderBlits()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"string name"}</code> |  |
-| <Link id="m-diffuseblit" /><code>{"private Shader diffuseBlit"}</code> |  |
-| <Link id="m-emissionblit" /><code>{"private Shader emissionBlit"}</code> |  |
-| <Link id="m-normalblit" /><code>{"private Shader normalBlit"}</code> |  |
-| <Link id="m-shader" /><code>{"private Shader shader"}</code> |  |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-utilities/atlastype">{"AtlasType"}</Link>{" type"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"string name"}</code> |
+
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-diffuseblit" /><code>{"private Shader diffuseBlit"}</code> |
+| <Link id="m-emissionblit" /><code>{"private Shader emissionBlit"}</code> |
+| <Link id="m-normalblit" /><code>{"private Shader normalBlit"}</code> |
+| <Link id="m-shader" /><code>{"private Shader shader"}</code> |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-utilities/atlastype">{"AtlasType"}</Link>{" type"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-diffuseblit-2" /><code>{"Shader DiffuseBlit { get; }"}</code> |  |
-| <Link id="m-emissionblit-2" /><code>{"Shader EmissionBlit { get; }"}</code> |  |
-| <Link id="m-normalblit-2" /><code>{"Shader NormalBlit { get; }"}</code> |  |
-| <Link id="m-shader-2" /><code>{"Shader Shader { get; }"}</code> |  |
-| <Link id="m-type-2" /><code><Link to="/game-api/types/alta-utilities/atlastype">{"AtlasType"}</Link>{" Type { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-diffuseblit-2" /><code>{"Shader DiffuseBlit { get; }"}</code> |
+| <Link id="m-emissionblit-2" /><code>{"Shader EmissionBlit { get; }"}</code> |
+| <Link id="m-normalblit-2" /><code>{"Shader NormalBlit { get; }"}</code> |
+| <Link id="m-shader-2" /><code>{"Shader Shader { get; }"}</code> |
+| <Link id="m-type-2" /><code><Link to="/game-api/types/alta-utilities/atlastype">{"AtlasType"}</Link>{" Type { get; }"}</code> |
 
 ## Used in
 

@@ -16,6 +16,6 @@ A **static class** in `Root.Township`, `Alta.Networking`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-array" /><code>{"static uint[] array"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-array" /><code>{"static uint[] array"}</code> |

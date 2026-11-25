@@ -17,14 +17,14 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FloatRangeSettings(float min, float max, bool hasValues = true)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FloatRangeSettings(float min, float max, bool hasValues = true)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hasvalues" /><code>{"bool HasValues { get; private set; }"}</code> |  |
-| <Link id="m-max" /><code>{"float Max { get; private set; }"}</code> |  |
-| <Link id="m-min" /><code>{"float Min { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hasvalues" /><code>{"bool HasValues { get; private set; }"}</code> |
+| <Link id="m-max" /><code>{"float Max { get; private set; }"}</code> |
+| <Link id="m-min" /><code>{"float Min { get; private set; }"}</code> |

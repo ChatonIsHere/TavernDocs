@@ -18,26 +18,39 @@ An **abstract class** in `Alta.Build`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected BuildRendererBakeable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected BuildRendererBakeable()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sortingorder" /><code>{"virtual int SortingOrder { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-sortingorder" /><code>{"virtual int SortingOrder { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bake" /><code>{"abstract void Bake(bool isSaving)"}</code> |  |
-| <Link id="m-bakebuildbakeables" /><code>{"static void BakeBuildBakeables(GameObject target, bool isSaving)"}</code> |  |
-| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"abstract void Bake(bool isSaving)"}</code> |
+| <Link id="m-bakebuildbakeables" /><code>{"static void BakeBuildBakeables(GameObject target, bool isSaving)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |
+
+</details>

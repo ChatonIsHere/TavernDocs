@@ -20,12 +20,12 @@ Sets the stat's `Base` to `strength`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatSetEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatSetEffect()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modifystat" /><code>{"protected override void ModifyStat("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, float strength)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modifystat" /><code>{"protected override void ModifyStat("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, float strength)"}</code> |

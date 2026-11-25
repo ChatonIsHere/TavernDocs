@@ -20,25 +20,33 @@ A fuelled teleporter in the caves that sends a player to another layer (the surf
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CaveTeleporter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CaveTeleporter()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-costrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" costRenderer"}</code> |  |
 | <Link id="m-currentconnection" /><code>{"protected "}<Link to="/game-api/types/alta-world-generation/caveteleportconnection">{"CaveTeleportConnection"}</Link>{" currentConnection"}</code> | The connection between this layer and the target layer. |
-| <Link id="m-fueldock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" fuelDock"}</code> |  |
-| <Link id="m-handtrigger" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" handTrigger"}</code> |  |
-| <Link id="m-isvalidteleport" /><code>{"private bool isValidTeleport"}</code> |  |
-| <Link id="m-isvalidteleportchanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" IsValidTeleportChanged"}</code> |  |
 | <Link id="m-layer" /><code>{"protected int layer"}</code> | The cave layer this teleporter is on (0 is the surface). -1 until worked out. |
 | <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | The class's NLog logger. |
-| <Link id="m-synclayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncLayer"}</code> |  |
-| <Link id="m-teleporting" /><code>{"private readonly HashSet<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> teleporting"}</code> |  |
-| <Link id="m-teleporttotarget" /><code>{"private Transform teleportToTarget"}</code> |  |
+
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-costrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" costRenderer"}</code> |
+| <Link id="m-fueldock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" fuelDock"}</code> |
+| <Link id="m-handtrigger" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" handTrigger"}</code> |
+| <Link id="m-isvalidteleport" /><code>{"private bool isValidTeleport"}</code> |
+| <Link id="m-isvalidteleportchanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" IsValidTeleportChanged"}</code> |
+| <Link id="m-synclayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncLayer"}</code> |
+| <Link id="m-teleporting" /><code>{"private readonly HashSet<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> teleporting"}</code> |
+| <Link id="m-teleporttotarget" /><code>{"private Transform teleportToTarget"}</code> |
+
+</details>
 
 ## Properties
 
@@ -65,15 +73,23 @@ A fuelled teleporter in the caves that sends a player to another layer (the surf
 | <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the layer to a joining player. |
 | <Link id="m-teleport" /><code>{"void Teleport("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Server: if there is enough fuel, takes it, uses fuel at the other end and moves the player to the target layer. |
 | <Link id="m-updatelayerexternal" /><code>{"void UpdateLayerExternal()"}</code> | Works out the layer again and re-registers. For callers outside the class. |
-| <Link id="m-allowinteract" /><code>{"private void AllowInteract("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-connectionvalidchanged" /><code>{"private void ConnectionValidChanged(bool isValid)"}</code> |  |
-| <Link id="m-handfilter" /><code>{"private void HandFilter("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |  |
 | <Link id="m-initializeconnection" /><code>{"protected virtual void InitializeConnection()"}</code> | Gets the connection from this layer to `TargetLayer` from the manager. |
-| <Link id="m-onquantitychanged" /><code>{"private void OnQuantityChanged()"}</code> |  |
-| <Link id="m-synclayer-2" /><code>{"private void SyncLayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 | <Link id="m-updateconnection" /><code>{"protected void UpdateConnection("}<Link to="/game-api/types/alta-world-generation/caveteleportconnection">{"CaveTeleportConnection"}</Link>{" connection)"}</code> | Switches to a connection, updates validity and shows its cost. |
-| <Link id="m-updatelayer" /><code>{"private void UpdateLayer()"}</code> |  |
+
+<details>
+<summary>7 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-allowinteract" /><code>{"private void AllowInteract("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-connectionvalidchanged" /><code>{"private void ConnectionValidChanged(bool isValid)"}</code> |
+| <Link id="m-handfilter" /><code>{"private void HandFilter("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |
+| <Link id="m-onquantitychanged" /><code>{"private void OnQuantityChanged()"}</code> |
+| <Link id="m-synclayer-2" /><code>{"private void SyncLayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-updatelayer" /><code>{"private void UpdateLayer()"}</code> |
+
+</details>
 
 ## Used in
 

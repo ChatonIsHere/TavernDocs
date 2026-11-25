@@ -16,15 +16,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FleetInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FleetInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-additionalbuffer" /><code>{"int? AdditionalBuffer { get; set; }"}</code> |  |
-| <Link id="m-bufferlastupdatetime" /><code>{"DateTime? BufferLastUpdateTime { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-status" /><code><Link to="/game-api/types/assembly-api-models/gameserverstatus">{"GameServerStatus"}</Link>{" Status { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-additionalbuffer" /><code>{"int? AdditionalBuffer { get; set; }"}</code> |
+| <Link id="m-bufferlastupdatetime" /><code>{"DateTime? BufferLastUpdateTime { get; set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| <Link id="m-status" /><code><Link to="/game-api/types/assembly-api-models/gameserverstatus">{"GameServerStatus"}</Link>{" Status { get; set; }"}</code> |

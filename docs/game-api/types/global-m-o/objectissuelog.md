@@ -21,17 +21,22 @@ Editor-only list of problems found on assets. Its `Add` and assert methods are m
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ObjectIssueLog()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ObjectIssueLog()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-issues" /><code>{"private List<"}<Link to="/game-api/types/global-m-o/objectissuelog-issue">{"ObjectIssueLog.Issue"}</Link>{"> issues"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-map" /><code>{"private Dictionary<Object, "}<Link to="/game-api/types/global-m-o/objectissuelog-issue">{"ObjectIssueLog.Issue"}</Link>{"> map"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-issues" /><code>{"private List<"}<Link to="/game-api/types/global-m-o/objectissuelog-issue">{"ObjectIssueLog.Issue"}</Link>{"> issues"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-map" /><code>{"private Dictionary<Object, "}<Link to="/game-api/types/global-m-o/objectissuelog-issue">{"ObjectIssueLog.Issue"}</Link>{"> map"}</code> |
+
+</details>
 
 ## Methods
 

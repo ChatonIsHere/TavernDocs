@@ -20,20 +20,25 @@ A physical lever `Trigger`: reads the handle's X rotation each physics step and 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Lever()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Lever()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentvalue" /><code>{"private float currentValue"}</code> |  |
-| <Link id="m-handle" /><code>{"private Transform handle"}</code> |  |
-| <Link id="m-handlerigidbody" /><code>{"private Rigidbody handleRigidbody"}</code> |  |
-| <Link id="m-isforcedon" /><code>{"private bool isForcedOn"}</code> |  |
-| <Link id="m-rangemax" /><code>{"private float rangeMax"}</code> |  |
-| <Link id="m-rangemin" /><code>{"private float rangeMin"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentvalue" /><code>{"private float currentValue"}</code> |
+| <Link id="m-handle" /><code>{"private Transform handle"}</code> |
+| <Link id="m-handlerigidbody" /><code>{"private Rigidbody handleRigidbody"}</code> |
+| <Link id="m-isforcedon" /><code>{"private bool isForcedOn"}</code> |
+| <Link id="m-rangemax" /><code>{"private float rangeMax"}</code> |
+| <Link id="m-rangemin" /><code>{"private float rangeMin"}</code> |
+
+</details>
 
 ## Properties
 
@@ -49,9 +54,14 @@ A physical lever `Trigger`: reads the handle's X rotation each physics step and 
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |
+
+</details>
 
 ## Used in
 

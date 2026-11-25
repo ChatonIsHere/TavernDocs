@@ -20,9 +20,14 @@ Moves the game's hard-coded web server (1761) and websocket console (1760) to `w
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ports" /><code>{"private static "}<Link to="/tavernlib-api/types/backend-server-configs/tavernserver">{"TavernServer"}</Link>{" Ports { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-ports" /><code>{"private static "}<Link to="/tavernlib-api/types/backend-server-configs/tavernserver">{"TavernServer"}</Link>{" Ports { get; }"}</code> |
+
+</details>
 
 ## Methods
 

@@ -17,20 +17,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UnchunkedEffectPlayer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UnchunkedEffectPlayer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onplay" /><code>{"private "}<Link to="/game-api/types/global-p/positionhandler">{"PositionHandler"}</Link>{" onPlay"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-onplay" /><code>{"private "}<Link to="/game-api/types/global-p/positionhandler">{"PositionHandler"}</Link>{" onPlay"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gounchunked" /><code>{"void GoUnchunked()"}</code> |  |
-| <Link id="m-play" /><code>{"void Play()"}</code> |  |
-| <Link id="m-updateparent" /><code>{"private void UpdateParent("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" topic, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" oldParent, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newParent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gounchunked" /><code>{"void GoUnchunked()"}</code> |
+| <Link id="m-play" /><code>{"void Play()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-updateparent" /><code>{"private void UpdateParent("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" topic, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" oldParent, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newParent)"}</code> |
+
+</details>

@@ -19,9 +19,9 @@ Editor tool settings from the SAColliderBuilder package: the Rigidbody to add wh
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RigidbodyProperty()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RigidbodyProperty()"}</code> |
 
 ## Fields
 

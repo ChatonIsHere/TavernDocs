@@ -17,20 +17,20 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ElbowGuideDataPointRuntime()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ElbowGuideDataPointRuntime()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-datapointset" /><code><Link to="/game-api/types/alta-player/elbowdatapointset">{"ElbowDataPointSet"}</Link>{" DataPointSet { get; set; }"}</code> |  |
-| <Link id="m-elbowhintposition" /><code>{"Vector3 ElbowHintPosition { get; set; }"}</code> |  |
-| <Link id="m-handindex" /><code><Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" "}<Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-handposition" /><code>{"Vector3 HandPosition { get; set; }"}</code> |  |
-| <Link id="m-handrotation" /><code>{"Quaternion HandRotation { get; set; }"}</code> |  |
-| <Link id="m-weight" /><code>{"float Weight { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-datapointset" /><code><Link to="/game-api/types/alta-player/elbowdatapointset">{"ElbowDataPointSet"}</Link>{" DataPointSet { get; set; }"}</code> |
+| <Link id="m-elbowhintposition" /><code>{"Vector3 ElbowHintPosition { get; set; }"}</code> |
+| <Link id="m-handindex" /><code><Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" "}<Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-handposition" /><code>{"Vector3 HandPosition { get; set; }"}</code> |
+| <Link id="m-handrotation" /><code>{"Quaternion HandRotation { get; set; }"}</code> |
+| <Link id="m-weight" /><code>{"float Weight { get; set; }"}</code> |
 
 ## Used in
 

@@ -17,13 +17,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ScreenShotExtension()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ScreenShotExtension()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-takescreenshot" /><code>{"private void TakeScreenShot("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-takescreenshot" /><code>{"private void TakeScreenShot("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |
+
+</details>

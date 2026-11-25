@@ -16,9 +16,9 @@ An **enum** in `Root.Township`, `Alta.Creatures`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spriggull" /><code>{"Spriggull = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-spriggull" /><code>{"Spriggull = 0"}</code> |
 
 ## Used in
 

@@ -20,13 +20,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimedEventSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimedEventSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hasstarted" /><code>{"bool hasStarted"}</code> |  |
-| <Link id="m-timers" /><code><Link to="/game-api/types/global-t-x/timedeventsavedata-timerdata">{"TimedEventSaveData.TimerData"}</Link>{"[] timers"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hasstarted" /><code>{"bool hasStarted"}</code> |
+| <Link id="m-timers" /><code><Link to="/game-api/types/global-t-x/timedeventsavedata-timerdata">{"TimedEventSaveData.TimerData"}</Link>{"[] timers"}</code> |

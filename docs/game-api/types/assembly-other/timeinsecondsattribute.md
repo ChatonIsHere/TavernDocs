@@ -17,6 +17,6 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimeInSecondsAttribute()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimeInSecondsAttribute()"}</code> |

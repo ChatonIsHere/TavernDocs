@@ -19,15 +19,20 @@ A synced bool parameter on a `NetworkAnimator`. Setting it updates the Unity ani
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimatedBool(string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimatedBool(string name)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 

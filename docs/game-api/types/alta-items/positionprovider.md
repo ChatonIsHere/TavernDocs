@@ -21,34 +21,52 @@ A saved position (local or world) that logic can move.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionProvider()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionProvider()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |  |
-| <Link id="m-islocalposition" /><code>{"private bool isLocalPosition"}</code> |  |
-| <Link id="m-ismoving" /><code>{"private bool isMoving"}</code> |  |
-| <Link id="m-positionset" /><code>{"private "}<Link to="/game-api/types/global-p/positionhandler">{"PositionHandler"}</Link>{" positionSet"}</code> |  |
-| <Link id="m-updateposition" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updatePosition"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |
+| <Link id="m-islocalposition" /><code>{"private bool isLocalPosition"}</code> |
+| <Link id="m-ismoving" /><code>{"private bool isMoving"}</code> |
+| <Link id="m-positionset" /><code>{"private "}<Link to="/game-api/types/global-p/positionhandler">{"PositionHandler"}</Link>{" positionSet"}</code> |
+| <Link id="m-updateposition" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updatePosition"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-setup-2" /><code>{"void Setup(bool isLocalPosition, bool isMoving)"}</code> |  |
-| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |  |
-| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-setup" /><code>{"private void Setup()"}</code> |  |
-| <Link id="m-updateposition-2" /><code>{"private void UpdatePosition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+| <Link id="m-setup-2" /><code>{"void Setup(bool isLocalPosition, bool isMoving)"}</code> |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |
+| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-setup" /><code>{"private void Setup()"}</code> |
+| <Link id="m-updateposition-2" /><code>{"private void UpdatePosition()"}</code> |
+
+</details>

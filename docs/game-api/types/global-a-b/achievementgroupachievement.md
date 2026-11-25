@@ -18,19 +18,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AchievementGroupAchievement()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AchievementGroupAchievement()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-requiredachievements" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{"[] requiredAchievements"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-requiredachievements" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{"[] requiredAchievements"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-checkcompletion" /><code>{"private void CheckCompletion("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" newAchievement)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-checkcompletion" /><code>{"private void CheckCompletion("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" newAchievement)"}</code> |
+
+</details>

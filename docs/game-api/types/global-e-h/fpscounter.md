@@ -17,27 +17,37 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FPSCounter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FPSCounter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-framemodification" /><code>{"private float frameModification"}</code> |  |
-| <Link id="m-stopwatch" /><code>{"private readonly Stopwatch stopwatch"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-framemodification" /><code>{"private float frameModification"}</code> |
+| <Link id="m-stopwatch" /><code>{"private readonly Stopwatch stopwatch"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fps" /><code>{"static float FPS { get; private set; }"}</code> |  |
-| <Link id="m-fpsrecord" /><code>{"static "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" FPSRecord { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fps" /><code>{"static float FPS { get; private set; }"}</code> |
+| <Link id="m-fpsrecord" /><code>{"static "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" FPSRecord { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

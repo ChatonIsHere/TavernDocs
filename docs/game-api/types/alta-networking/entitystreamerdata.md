@@ -16,17 +16,17 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EntityStreamerData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EntityStreamerData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bitcount" /><code>{"uint bitCount"}</code> |  |
-| <Link id="m-data" /><code>{"uint[] data"}</code> |  |
-| <Link id="m-unchangedcount" /><code>{"int unchangedCount"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bitcount" /><code>{"uint bitCount"}</code> |
+| <Link id="m-data" /><code>{"uint[] data"}</code> |
+| <Link id="m-unchangedcount" /><code>{"int unchangedCount"}</code> |
 
 ## Used in
 

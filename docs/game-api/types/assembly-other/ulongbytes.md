@@ -16,13 +16,18 @@ A **internal struct** in `Alta.Serialization.Runtime`, `Alta.Serialization`. Rea
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-decimalvalue" /><code>{"private static readonly long[] decimalValue"}</code> |  |
-| <Link id="m-intvalue" /><code>{"private static readonly uint[] intValue"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-decimalvalue" /><code>{"private static readonly long[] decimalValue"}</code> |
+| <Link id="m-intvalue" /><code>{"private static readonly uint[] intValue"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"static void Serialize(ref long value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"static void Serialize(ref long value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |

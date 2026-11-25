@@ -17,25 +17,38 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MapMaskPiece()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MapMaskPiece()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-image" /><code>{"private Image image"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-image" /><code>{"private Image image"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-recttransform" /><code>{"RectTransform RectTransform { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-recttransform" /><code>{"RectTransform RectTransform { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{" piece, RectTransform parent, float resolution)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{" piece, RectTransform parent, float resolution)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

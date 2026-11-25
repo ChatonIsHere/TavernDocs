@@ -22,24 +22,29 @@ Asset for how an impact detector reacts to hits: the sounds and effects for crit
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactDetectorSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactDetectorSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-affectsdurabilitywhenstruck" /><code>{"private bool affectsDurabilityWhenStruck"}</code> |  |
-| <Link id="m-bad" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" bad"}</code> |  |
-| <Link id="m-baseeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" baseEffect"}</code> |  |
-| <Link id="m-critical" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" critical"}</code> |  |
-| <Link id="m-criticalbase" /><code>{"private float criticalBase"}</code> |  |
-| <Link id="m-good" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" good"}</code> |  |
-| <Link id="m-isreflected" /><code>{"private bool isReflected"}</code> |  |
-| <Link id="m-maximumscale" /><code>{"private float maximumScale"}</code> |  |
-| <Link id="m-minimumscale" /><code>{"private float minimumScale"}</code> |  |
-| <Link id="m-provideexperiencewhenhit" /><code>{"private bool provideExperienceWhenHit"}</code> |  |
+<details>
+<summary>10 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-affectsdurabilitywhenstruck" /><code>{"private bool affectsDurabilityWhenStruck"}</code> |
+| <Link id="m-bad" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" bad"}</code> |
+| <Link id="m-baseeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" baseEffect"}</code> |
+| <Link id="m-critical" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" critical"}</code> |
+| <Link id="m-criticalbase" /><code>{"private float criticalBase"}</code> |
+| <Link id="m-good" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" good"}</code> |
+| <Link id="m-isreflected" /><code>{"private bool isReflected"}</code> |
+| <Link id="m-maximumscale" /><code>{"private float maximumScale"}</code> |
+| <Link id="m-minimumscale" /><code>{"private float minimumScale"}</code> |
+| <Link id="m-provideexperiencewhenhit" /><code>{"private bool provideExperienceWhenHit"}</code> |
+
+</details>
 
 ## Properties
 

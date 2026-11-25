@@ -19,19 +19,24 @@ Sends the server to the Community Servers listing every 3 seconds from a backgro
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerListingController("}<Link to="/tavernlib-api/types/backend-api/tavernmanager">{"TavernManager"}</Link>{" manager)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerListingController("}<Link to="/tavernlib-api/types/backend-api/tavernmanager">{"TavernManager"}</Link>{" manager)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apiclient" /><code>{"private readonly HttpClient _apiClient"}</code> |  |
-| <Link id="m-closed" /><code>{"private bool _closed"}</code> |  |
-| <Link id="m-manager" /><code>{"private "}<Link to="/tavernlib-api/types/backend-api/tavernmanager">{"TavernManager"}</Link>{" _manager"}</code> |  |
-| <Link id="m-interval" /><code>{"private static readonly TimeSpan Interval"}</code> |  |
-| <Link id="m-longestwaitseconds" /><code>{"private const double LongestWaitSeconds"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-apiclient" /><code>{"private readonly HttpClient _apiClient"}</code> |
+| <Link id="m-closed" /><code>{"private bool _closed"}</code> |
+| <Link id="m-manager" /><code>{"private "}<Link to="/tavernlib-api/types/backend-api/tavernmanager">{"TavernManager"}</Link>{" _manager"}</code> |
+| <Link id="m-interval" /><code>{"private static readonly TimeSpan Interval"}</code> |
+| <Link id="m-longestwaitseconds" /><code>{"private const double LongestWaitSeconds"}</code> |
+
+</details>
 
 ## Methods
 
@@ -41,9 +46,17 @@ Sends the server to the Community Servers listing every 3 seconds from a backgro
 | <Link id="m-openlisting" /><code>{"async Task OpenListing()"}</code> | Sends one heartbeat now, the same as `Ping`. |
 | <Link id="m-ping" /><code>{"async Task Ping()"}</code> | Sends one heartbeat now. Throws `HttpRequestException` with the listing's answer if it isn't accepted. |
 | <Link id="m-startclosinglisting" /><code>{"bool StartClosingListing()"}</code> | The `Application.wantsToQuit` handler: closes the listing and returns true so the quit goes on. |
-| <Link id="m-heartbeatasync" /><code>{"private async Task HeartbeatAsync()"}</code> |  |
-| <Link id="m-jsonbody" /><code>{"private static StringContent JsonBody(object payload)"}</code> |  |
-| <Link id="m-post" /><code>{"private async Task<string> Post()"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-heartbeatasync" /><code>{"private async Task HeartbeatAsync()"}</code> |
+| <Link id="m-jsonbody" /><code>{"private static StringContent JsonBody(object payload)"}</code> |
+| <Link id="m-post" /><code>{"private async Task<string> Post()"}</code> |
+
+</details>
 
 ## Used in
 

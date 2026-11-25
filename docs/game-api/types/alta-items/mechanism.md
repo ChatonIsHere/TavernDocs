@@ -21,35 +21,48 @@ Watches an `ActivationPickup`; while it's held (and, if hand based, the base is 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Mechanism()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Mechanism()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activatedeffects" /><code>{"private UnityEvent activatedEffects"}</code> |  |
-| <Link id="m-activatedonserver" /><code>{"private UnityEvent activatedOnServer"}</code> |  |
-| <Link id="m-activationpickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" activationPickup"}</code> |  |
-| <Link id="m-basepickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" basePickup"}</code> |  |
-| <Link id="m-checkingturn" /><code>{"private Coroutine checkingTurn"}</code> |  |
-| <Link id="m-ishandbased" /><code>{"private bool isHandBased"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activatedeffects" /><code>{"private UnityEvent activatedEffects"}</code> |
+| <Link id="m-activatedonserver" /><code>{"private UnityEvent activatedOnServer"}</code> |
+| <Link id="m-activationpickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" activationPickup"}</code> |
+| <Link id="m-basepickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" basePickup"}</code> |
+| <Link id="m-checkingturn" /><code>{"private Coroutine checkingTurn"}</code> |
+| <Link id="m-ishandbased" /><code>{"private bool isHandBased"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activationpickup-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" ActivationPickup { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-activationpickup-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" ActivationPickup { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-checkaction" /><code>{"protected abstract IEnumerator CheckAction()"}</code> |  |
-| <Link id="m-filterhand" /><code>{"private void FilterHand("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |  |
-| <Link id="m-onactivated" /><code>{"protected void OnActivated()"}</code> |  |
-| <Link id="m-oninteracted" /><code>{"protected virtual void OnInteracted("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-startcheck" /><code>{"private void StartCheck("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-stopcheck" /><code>{"private void StopCheck("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkaction" /><code>{"protected abstract IEnumerator CheckAction()"}</code> |
+| <Link id="m-onactivated" /><code>{"protected void OnActivated()"}</code> |
+| <Link id="m-oninteracted" /><code>{"protected virtual void OnInteracted("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-filterhand" /><code>{"private void FilterHand("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |
+| <Link id="m-startcheck" /><code>{"private void StartCheck("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-stopcheck" /><code>{"private void StopCheck("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+
+</details>

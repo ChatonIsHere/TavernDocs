@@ -17,15 +17,15 @@ A **class** in `Root.Township`, `Alta.PlayerStates.Transitions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CombatToCombatTransition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CombatToCombatTransition()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-transitiontodestinationstate" /><code>{"protected override "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" TransitionToDestinationState()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-transitiontodestinationstate" /><code>{"protected override "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" TransitionToDestinationState()"}</code> |
 
 ## Used in
 

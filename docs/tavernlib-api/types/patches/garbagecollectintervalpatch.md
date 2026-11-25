@@ -20,15 +20,20 @@ Patches `GarbageCollectTimer.Start` to set the timer's interval from `garbage_co
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GarbageCollectIntervalPatch()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GarbageCollectIntervalPatch()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-intervalfield" /><code>{"private static readonly FieldInfo IntervalField"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-intervalfield" /><code>{"private static readonly FieldInfo IntervalField"}</code> |
+
+</details>
 
 ## Methods
 

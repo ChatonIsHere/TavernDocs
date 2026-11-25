@@ -17,24 +17,24 @@ A **class** in `Root.Township`, `ATT.MicroTutorial`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MicroTutorialSystem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MicroTutorialSystem()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clientcontroller" /><code><Link to="/game-api/types/game-other-namespaces/clientcontroller">{"ClientController"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/clientcontroller">{"ClientController"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-servercontroller" /><code><Link to="/game-api/types/game-other-namespaces/servercontroller">{"ServerController"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/servercontroller">{"ServerController"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-settings" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialsystemsettings">{"MicroTutorialSystemSettings"}</Link>{" Settings { get; private set; }"}</code> |  |
-| <Link id="m-synccontroller" /><code><Link to="/game-api/types/game-other-namespaces/isynccontroller">{"ISyncController"}</Link>{" SyncController { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clientcontroller" /><code><Link to="/game-api/types/game-other-namespaces/clientcontroller">{"ClientController"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/clientcontroller">{"ClientController"}</Link>{" { get; private set; }"}</code> |
+| <Link id="m-servercontroller" /><code><Link to="/game-api/types/game-other-namespaces/servercontroller">{"ServerController"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/servercontroller">{"ServerController"}</Link>{" { get; private set; }"}</code> |
+| <Link id="m-settings" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialsystemsettings">{"MicroTutorialSystemSettings"}</Link>{" Settings { get; private set; }"}</code> |
+| <Link id="m-synccontroller" /><code><Link to="/game-api/types/game-other-namespaces/isynccontroller">{"ISyncController"}</Link>{" SyncController { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-inject" /><code>{"void Inject("}<Link to="/game-api/types/game-other-namespaces/microtutorialsystemsettings">{"MicroTutorialSystemSettings"}</Link>{" settings, "}<Link to="/game-api/types/game-other-namespaces/idomaincontroller">{"IDomainController"}</Link>{" domainController, "}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-inject" /><code>{"void Inject("}<Link to="/game-api/types/game-other-namespaces/microtutorialsystemsettings">{"MicroTutorialSystemSettings"}</Link>{" settings, "}<Link to="/game-api/types/game-other-namespaces/idomaincontroller">{"IDomainController"}</Link>{" domainController, "}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> |
 
 ## Used in
 

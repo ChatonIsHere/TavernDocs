@@ -16,22 +16,22 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FunctionKeyDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FunctionKeyDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hasvisual" /><code>{"bool hasVisual"}</code> |  |
-| <Link id="m-key" /><code>{"KeyCode key"}</code> |  |
-| <Link id="m-keyimage" /><code>{"GameObject keyImage"}</code> |  |
-| <Link id="m-onpressed" /><code>{"UnityEvent onPressed"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |  |
-| <Link id="m-scale" /><code>{"Vector3 scale"}</code> |  |
-| <Link id="m-text" /><code>{"string text"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hasvisual" /><code>{"bool hasVisual"}</code> |
+| <Link id="m-key" /><code>{"KeyCode key"}</code> |
+| <Link id="m-keyimage" /><code>{"GameObject keyImage"}</code> |
+| <Link id="m-onpressed" /><code>{"UnityEvent onPressed"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |
+| <Link id="m-scale" /><code>{"Vector3 scale"}</code> |
+| <Link id="m-text" /><code>{"string text"}</code> |
 
 ## Used in
 

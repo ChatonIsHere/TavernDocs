@@ -20,20 +20,28 @@ One carving stage of a `TimberBlock` with its own pieces. Subclassed as `OuterSt
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Stage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Stage()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-block" /><code>{"protected "}<Link to="/game-api/types/alta-crafting/timberblock">{"TimberBlock"}</Link>{" block"}</code> | The block this stage belongs to. |
-| <Link id="m-concludedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" concludedEffect"}</code> |  |
-| <Link id="m-destroyingeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" destroyingEffect"}</code> |  |
-| <Link id="m-maximumreturnpercentage" /><code>{"private float maximumReturnPercentage"}</code> |  |
-| <Link id="m-minimumreturnpercentage" /><code>{"private float minimumReturnPercentage"}</code> |  |
-| <Link id="m-pieces" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{"[] pieces"}</code> |  |
+
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-concludedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" concludedEffect"}</code> |
+| <Link id="m-destroyingeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" destroyingEffect"}</code> |
+| <Link id="m-maximumreturnpercentage" /><code>{"private float maximumReturnPercentage"}</code> |
+| <Link id="m-minimumreturnpercentage" /><code>{"private float minimumReturnPercentage"}</code> |
+| <Link id="m-pieces" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{"[] pieces"}</code> |
+
+</details>
 
 ## Properties
 
@@ -60,9 +68,17 @@ One carving stage of a `TimberBlock` with its own pieces. Subclassed as `OuterSt
 | <Link id="m-setcurrent" /><code>{"void SetCurrent()"}</code> | Makes this the block's current stage, enables its pieces and syncs. |
 | <Link id="m-checkdone" /><code>{"protected virtual void CheckDone("}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{" piece)"}</code> | Called when a piece finishes; finalizes the stage once every piece is done. |
 | <Link id="m-finalizestage" /><code>{"protected virtual void FinalizeStage(bool isForced)"}</code> | Plays the concluded effect. Subclasses move to the next stage or release the result. |
-| <Link id="m-runoperationonpieces" /><code>{"private void RunOperationOnPieces(Action<"}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{", int> operation)"}</code> |  |
-| <Link id="m-runoperationonpieces-2" /><code>{"private void RunOperationOnPieces(Action<"}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{"> operation)"}</code> |  |
-| <Link id="m-setenabled" /><code>{"private void SetEnabled(bool isEnabled)"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-runoperationonpieces" /><code>{"private void RunOperationOnPieces(Action<"}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{", int> operation)"}</code> |
+| <Link id="m-runoperationonpieces-2" /><code>{"private void RunOperationOnPieces(Action<"}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{"> operation)"}</code> |
+| <Link id="m-setenabled" /><code>{"private void SetEnabled(bool isEnabled)"}</code> |
+
+</details>
 
 ## Used in
 

@@ -18,16 +18,16 @@ An **private abstract class** in `Root.Township`, no namespace. Reach it through
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ParticleSystemValueOperator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ParticleSystemValueOperator()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"abstract void Initialize(ParticleSystem targetSystem)"}</code> |  |
-| <Link id="m-set" /><code>{"abstract void Set(float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"abstract void Initialize(ParticleSystem targetSystem)"}</code> |
+| <Link id="m-set" /><code>{"abstract void Set(float value)"}</code> |
 
 ## Used in
 

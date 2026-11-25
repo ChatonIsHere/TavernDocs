@@ -21,17 +21,22 @@ A loot rarity asset with a weighting. All rarities load from Resources/Items/Rar
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Rarity()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Rarity()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allrarities" /><code>{"private static "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{"[] allRarities"}</code> |  |
-| <Link id="m-originweightings" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/originsinglevalue">{"OriginSingleValue"}</Link>{"[] originWeightings"}</code> |  |
-| <Link id="m-weighting" /><code>{"private float weighting"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-allrarities" /><code>{"private static "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{"[] allRarities"}</code> |
+| <Link id="m-originweightings" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/originsinglevalue">{"OriginSingleValue"}</Link>{"[] originWeightings"}</code> |
+| <Link id="m-weighting" /><code>{"private float weighting"}</code> |
+
+</details>
 
 ## Properties
 

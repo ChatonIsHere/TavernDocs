@@ -19,14 +19,27 @@ Reads the current user's Windows proxy settings from the registry. Used by `Serv
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-internetsettingskey" /><code>{"private const string InternetSettingsKey"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-internetsettingskey" /><code>{"private const string InternetSettingsKey"}</code> |
+
+</details>
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-createsystemproxy" /><code>{"static IWebProxy CreateSystemProxy()"}</code> | A `WebProxy` for the explicitly set `ProxyServer` with its bypass list, or `null` if none is on. PAC scripts are ignored. |
-| <Link id="m-parseproxyserver" /><code>{"private static Uri ParseProxyServer(string proxyServer, string protocol)"}</code> |  |
-| <Link id="m-regexescapeforbypass" /><code>{"private static string RegexEscapeForBypass(string wildcardEntry)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-parseproxyserver" /><code>{"private static Uri ParseProxyServer(string proxyServer, string protocol)"}</code> |
+| <Link id="m-regexescapeforbypass" /><code>{"private static string RegexEscapeForBypass(string wildcardEntry)"}</code> |
+
+</details>

@@ -17,20 +17,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CombinedMeshSource()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CombinedMeshSource()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bones" /><code>{"private Transform[] bones"}</code> |  |
-| <Link id="m-btnbake" /><code>{"private bool btnBake"}</code> |  |
-| <Link id="m-meshes" /><code>{"private Mesh[] meshes"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bones" /><code>{"private Transform[] bones"}</code> |
+| <Link id="m-btnbake" /><code>{"private bool btnBake"}</code> |
+| <Link id="m-meshes" /><code>{"private Mesh[] meshes"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-process" /><code>{"void Process()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-process" /><code>{"void Process()"}</code> |

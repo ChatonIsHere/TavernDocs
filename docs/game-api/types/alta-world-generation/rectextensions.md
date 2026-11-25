@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, `Alta.Forests`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-containsline" /><code>{"static bool ContainsLine(Rect rect, Vector2 start, Vector2 end)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-containsline" /><code>{"static bool ContainsLine(Rect rect, Vector2 start, Vector2 end)"}</code> |

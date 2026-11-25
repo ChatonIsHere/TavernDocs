@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, `Alta.Meta.Friends`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-friends" /><code>{"Friends = 0"}</code> |  |
-| <Link id="m-oculus" /><code>{"Oculus = 2"}</code> |  |
-| <Link id="m-requests" /><code>{"Requests = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-friends" /><code>{"Friends = 0"}</code> |
+| <Link id="m-oculus" /><code>{"Oculus = 2"}</code> |
+| <Link id="m-requests" /><code>{"Requests = 1"}</code> |
 
 ## Used in
 

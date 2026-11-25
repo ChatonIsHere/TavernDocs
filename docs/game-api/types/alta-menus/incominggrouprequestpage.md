@@ -17,25 +17,38 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"IncomingGroupRequestPage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"IncomingGroupRequestPage()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-emptylisttext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" emptyListText"}</code> |  |
-| <Link id="m-listelement" /><code>{"private "}<Link to="/game-api/types/alta-menus/listelementwith2buttons">{"ListElementWith2Buttons"}</Link>{" listElement"}</code> |  |
-| <Link id="m-uilist" /><code>{"private "}<Link to="/game-api/types/alta-menus/uilist">{"UIList"}</Link>{" uiList"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-emptylisttext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" emptyListText"}</code> |
+| <Link id="m-listelement" /><code>{"private "}<Link to="/game-api/types/alta-menus/listelementwith2buttons">{"ListElementWith2Buttons"}</Link>{" listElement"}</code> |
+| <Link id="m-uilist" /><code>{"private "}<Link to="/game-api/types/alta-menus/uilist">{"UIList"}</Link>{" uiList"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-refreshdata" /><code>{"override async void RefreshData()"}</code> |  |
-| <Link id="m-ongroupdatachange" /><code>{"protected override void OnGroupDataChange()"}</code> |  |
-| <Link id="m-setuprequestslist" /><code>{"private async Task SetupRequestsList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-refreshdata" /><code>{"override async void RefreshData()"}</code> |
+| <Link id="m-ongroupdatachange" /><code>{"protected override void OnGroupDataChange()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-setuprequestslist" /><code>{"private async Task SetupRequestsList()"}</code> |
+
+</details>
 
 ## Used in
 

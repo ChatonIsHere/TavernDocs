@@ -17,28 +17,33 @@ A **class** in `Root.Township`, `Features`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RepairBoxVfxController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RepairBoxVfxController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-itemdepositedvfxindex" /><code>{"private int itemDepositedVfxIndex"}</code> |  |
-| <Link id="m-refundvfxindex" /><code>{"private int refundVfxIndex"}</code> |  |
-| <Link id="m-repaircompletedvfxindex" /><code>{"private int repairCompletedVfxIndex"}</code> |  |
-| <Link id="m-vortexvfxindex" /><code>{"private int vortexVfxIndex"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-itemdepositedvfxindex" /><code>{"private int itemDepositedVfxIndex"}</code> |
+| <Link id="m-refundvfxindex" /><code>{"private int refundVfxIndex"}</code> |
+| <Link id="m-repaircompletedvfxindex" /><code>{"private int repairCompletedVfxIndex"}</code> |
+| <Link id="m-vortexvfxindex" /><code>{"private int vortexVfxIndex"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playitemdepositedvfx" /><code>{"void PlayItemDepositedVfx()"}</code> |  |
-| <Link id="m-playitemrefundedvfx" /><code>{"void PlayItemRefundedVfx()"}</code> |  |
-| <Link id="m-playrepaircompletedvfx" /><code>{"void PlayRepairCompletedVfx()"}</code> |  |
-| <Link id="m-playvortexvfx" /><code>{"void PlayVortexVfx()"}</code> |  |
-| <Link id="m-stopvortexvfx" /><code>{"void StopVortexVfx()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-playitemdepositedvfx" /><code>{"void PlayItemDepositedVfx()"}</code> |
+| <Link id="m-playitemrefundedvfx" /><code>{"void PlayItemRefundedVfx()"}</code> |
+| <Link id="m-playrepaircompletedvfx" /><code>{"void PlayRepairCompletedVfx()"}</code> |
+| <Link id="m-playvortexvfx" /><code>{"void PlayVortexVfx()"}</code> |
+| <Link id="m-stopvortexvfx" /><code>{"void StopVortexVfx()"}</code> |
 
 ## Used in
 

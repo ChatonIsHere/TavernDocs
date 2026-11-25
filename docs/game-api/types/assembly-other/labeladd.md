@@ -17,12 +17,12 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LabelAdd(string labelAddition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LabelAdd(string labelAddition)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-labeladdition" /><code>{"string LabelAddition { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-labeladdition" /><code>{"string LabelAddition { get; private set; }"}</code> |

@@ -19,20 +19,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HealthChannel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HealthChannel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isonehit" /><code>{"private bool isOneHit"}</code> |  |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isonehit" /><code>{"private bool isOneHit"}</code> |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isonehit-2" /><code>{"bool IsOneHit { get; }"}</code> |  |
-| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isonehit-2" /><code>{"bool IsOneHit { get; }"}</code> |
+| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; }"}</code> |

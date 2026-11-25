@@ -21,13 +21,18 @@ Status `error` with a message, for every other refusal (blacklisted, name taken,
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenericFail(string message)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenericFail(string message)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-message" /><code>{"private string Message { get; }"}</code> |  |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> |  |
+<details>
+<summary>2 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-message" /><code>{"private string Message { get; }"}</code> |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> |
+
+</details>

@@ -16,13 +16,13 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaGizmos()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaGizmos()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-drawcapsulegizmos" /><code>{"static void DrawCapsuleGizmos(Vector3 fromPosition, Vector3 toPosition, float radius)"}</code> |  |
-| <Link id="m-drawcapsulegizmos-2" /><code>{"static void DrawCapsuleGizmos(Vector3 fromPosition, Vector3 toPosition, float radius, Color color)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-drawcapsulegizmos" /><code>{"static void DrawCapsuleGizmos(Vector3 fromPosition, Vector3 toPosition, float radius)"}</code> |
+| <Link id="m-drawcapsulegizmos-2" /><code>{"static void DrawCapsuleGizmos(Vector3 fromPosition, Vector3 toPosition, float radius, Color color)"}</code> |

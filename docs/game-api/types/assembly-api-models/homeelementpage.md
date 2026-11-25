@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HomeElementPage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HomeElementPage()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> |  |
-| <Link id="m-target" /><code>{"string Target { get; set; }"}</code> |  |
-| <Link id="m-type" /><code>{"string Type { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> |
+| <Link id="m-target" /><code>{"string Target { get; set; }"}</code> |
+| <Link id="m-type" /><code>{"string Type { get; set; }"}</code> |
 
 ## Used in
 

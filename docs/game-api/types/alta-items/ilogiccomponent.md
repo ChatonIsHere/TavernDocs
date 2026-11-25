@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.Logic`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-editorpresave" /><code>{"void EditorPreSave("}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" manager)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-editorpresave" /><code>{"void EditorPreSave("}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" manager)"}</code> |

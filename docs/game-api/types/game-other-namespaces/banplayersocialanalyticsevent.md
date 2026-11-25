@@ -17,14 +17,22 @@ A **class** in `Root.Township`, `ATT.Analytics.Social`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BanPlayerSocialAnalyticsEvent("}<Link to="/game-api/types/global-s/socialanalyticseventorigin">{"SocialAnalyticsEventOrigin"}</Link>{" origin, "}<Link to="/game-api/types/global-a-b/banrole">{"BanRole"}</Link>{" banRole, "}<Link to="/game-api/types/global-s/socialanalyticsbanmenupanelorigin">{"SocialAnalyticsBanMenuPanelOrigin"}</Link>{"? menuPanelOrigin = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BanPlayerSocialAnalyticsEvent("}<Link to="/game-api/types/global-s/socialanalyticseventorigin">{"SocialAnalyticsEventOrigin"}</Link>{" origin, "}<Link to="/game-api/types/global-a-b/banrole">{"BanRole"}</Link>{" banRole, "}<Link to="/game-api/types/global-s/socialanalyticsbanmenupanelorigin">{"SocialAnalyticsBanMenuPanelOrigin"}</Link>{"? menuPanelOrigin = null)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-originkey" /><code>{"const string OriginKey"}</code> |  |
-| <Link id="m-rolekey" /><code>{"const string RoleKey"}</code> |  |
-| <Link id="m-eventname" /><code>{"private const string EventName"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-originkey" /><code>{"const string OriginKey"}</code> |
+| <Link id="m-rolekey" /><code>{"const string RoleKey"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-eventname" /><code>{"private const string EventName"}</code> |
+
+</details>

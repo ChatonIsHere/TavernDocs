@@ -19,15 +19,20 @@ An event mods can subscribe to but only TavernLib can raise. Used for `TavernEve
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TavernEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TavernEvent()"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handlers" /><code>{"private event Action<T> Handlers"}</code> |  |
+<details>
+<summary>1 private and internal event</summary>
+
+| Member |
+| --- |
+| <Link id="m-handlers" /><code>{"private event Action<T> Handlers"}</code> |
+
+</details>
 
 ## Methods
 
@@ -35,7 +40,15 @@ An event mods can subscribe to but only TavernLib can raise. Used for `TavernEve
 | --- | --- |
 | <Link id="m-subscribe" /><code>{"void Subscribe(Action<T> handler)"}</code> | Adds a handler. |
 | <Link id="m-unsubscribe" /><code>{"void Unsubscribe(Action<T> handler)"}</code> | Removes a handler. Pass the same delegate you subscribed, not a new lambda. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-invoke" /><code>{"internal void Invoke(T arg)"}</code> | Internal: raises the event, calling every handler with `arg`. Nothing catches a handler's exception. |
+
+</details>
 
 ## Used in
 

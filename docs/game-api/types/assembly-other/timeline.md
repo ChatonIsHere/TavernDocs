@@ -21,55 +21,68 @@ A scheduler for "call this in N seconds" and "every N seconds", used for respawn
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Timeline(TimeSpan startingTime)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Timeline(TimeSpan startingTime)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entries" /><code>{"private "}<Link to="/game-api/types/assembly-other/fastpriorityqueuetimespan-t">{"FastPriorityQueueTimeSpan"}</Link>{"<"}<Link to="/game-api/types/assembly-other/timeline-entry">{"Timeline.Entry"}</Link>{"> entries"}</code> |  |
-| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" instance"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entries" /><code>{"private "}<Link to="/game-api/types/assembly-other/fastpriorityqueuetimespan-t">{"FastPriorityQueueTimeSpan"}</Link>{"<"}<Link to="/game-api/types/assembly-other/timeline-entry">{"Timeline.Entry"}</Link>{"> entries"}</code> |
+| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" instance"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deltatime" /><code>{"TimeSpan DeltaTime { get; private set; }"}</code> |  |
-| <Link id="m-instance-2" /><code>{"static "}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" Instance { get; }"}</code> |  |
-| <Link id="m-time" /><code>{"TimeSpan Time { get; private set; }"}</code> |  |
-| <Link id="m-timespeed" /><code>{"float TimeSpeed { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deltatime" /><code>{"TimeSpan DeltaTime { get; private set; }"}</code> |
+| <Link id="m-instance-2" /><code>{"static "}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" Instance { get; }"}</code> |
+| <Link id="m-time" /><code>{"TimeSpan Time { get; private set; }"}</code> |
+| <Link id="m-timespeed" /><code>{"float TimeSpeed { get; set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-timechanged" /><code>{"event Action<TimeSpan> TimeChanged"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-timechanged" /><code>{"event Action<TimeSpan> TimeChanged"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-callafterduration" /><code><Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" CallAfterDuration(Action callback, float durationSeconds)"}</code> |  |
-| <Link id="m-callafterduration-2" /><code><Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" CallAfterDuration(Action callback, TimeSpan duration)"}</code> |  |
-| <Link id="m-callrepeatableafterduration" /><code><Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" CallRepeatableAfterDuration(Action callback, float durationSeconds, float repeatIntervalSeconds)"}</code> |  |
-| <Link id="m-callrepeatableafterduration-2" /><code><Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" CallRepeatableAfterDuration(Action callback, TimeSpan duration, TimeSpan repeatInterval)"}</code> |  |
-| <Link id="m-cancel" /><code>{"static void Cancel(ref "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry)"}</code> |  |
-| <Link id="m-clearentries" /><code>{"void ClearEntries()"}</code> |  |
-| <Link id="m-getserializedstate" /><code>{"static "}<Link to="/game-api/types/assembly-other/timeline-serializedentrystate">{"Timeline.SerializedEntryState"}</Link>{" GetSerializedState(TimeSpan targetTime)"}</code> |  |
-| <Link id="m-insertcallbackattime" /><code><Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" InsertCallbackAtTime(Action callback, TimeSpan time)"}</code> |  |
-| <Link id="m-load" /><code>{"void Load(TimeSpan time)"}</code> |  |
-| <Link id="m-loadentry" /><code>{"static "}<Link to="/game-api/types/assembly-other/timeline-serializedentrystate">{"Timeline.SerializedEntryState"}</Link>{" LoadEntry(out "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry, Action callback, TimeSpan targetTime, bool isRegistering = true, bool isInvokingPast = true)"}</code> |  |
-| <Link id="m-loadrepeatableentry" /><code>{"static int LoadRepeatableEntry(out "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry, Action callback, TimeSpan targetTime, TimeSpan interval)"}</code> |  |
-| <Link id="m-saveentry" /><code>{"static TimeSpan SaveEntry("}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry)"}</code> |  |
-| <Link id="m-serializeentry" /><code><Link to="/game-api/types/assembly-other/timeline-serializedentrystate">{"Timeline.SerializedEntryState"}</Link>{" SerializeEntry(ref "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" iEntry, Action callback, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isRegistering = true, bool isInvokingPast = true)"}</code> |  |
-| <Link id="m-serializerepeatableentry" /><code>{"void SerializeRepeatableEntry(ref "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" iEntry, Action callback, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isInvokingPast)"}</code> |  |
-| <Link id="m-update" /><code>{"void Update(TimeSpan deltaTime)"}</code> |  |
-| <Link id="m-enqueentry" /><code>{"private void EnqueEntry("}<Link to="/game-api/types/assembly-other/timeline-entry">{"Timeline.Entry"}</Link>{" entry)"}</code> |  |
-| <Link id="m-insertrepeatablecallbackattime" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" InsertRepeatableCallbackAtTime(Action callback, TimeSpan time, TimeSpan repeatInterval)"}</code> |  |
-| <Link id="m-serializeentry-2" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-serializedentrystate">{"Timeline.SerializedEntryState"}</Link>{" SerializeEntry(ref "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" iEntry, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, out TimeSpan targetTime)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-callafterduration" /><code><Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" CallAfterDuration(Action callback, float durationSeconds)"}</code> |
+| <Link id="m-callafterduration-2" /><code><Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" CallAfterDuration(Action callback, TimeSpan duration)"}</code> |
+| <Link id="m-callrepeatableafterduration" /><code><Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" CallRepeatableAfterDuration(Action callback, float durationSeconds, float repeatIntervalSeconds)"}</code> |
+| <Link id="m-callrepeatableafterduration-2" /><code><Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" CallRepeatableAfterDuration(Action callback, TimeSpan duration, TimeSpan repeatInterval)"}</code> |
+| <Link id="m-cancel" /><code>{"static void Cancel(ref "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry)"}</code> |
+| <Link id="m-clearentries" /><code>{"void ClearEntries()"}</code> |
+| <Link id="m-getserializedstate" /><code>{"static "}<Link to="/game-api/types/assembly-other/timeline-serializedentrystate">{"Timeline.SerializedEntryState"}</Link>{" GetSerializedState(TimeSpan targetTime)"}</code> |
+| <Link id="m-insertcallbackattime" /><code><Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" InsertCallbackAtTime(Action callback, TimeSpan time)"}</code> |
+| <Link id="m-load" /><code>{"void Load(TimeSpan time)"}</code> |
+| <Link id="m-loadentry" /><code>{"static "}<Link to="/game-api/types/assembly-other/timeline-serializedentrystate">{"Timeline.SerializedEntryState"}</Link>{" LoadEntry(out "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry, Action callback, TimeSpan targetTime, bool isRegistering = true, bool isInvokingPast = true)"}</code> |
+| <Link id="m-loadrepeatableentry" /><code>{"static int LoadRepeatableEntry(out "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry, Action callback, TimeSpan targetTime, TimeSpan interval)"}</code> |
+| <Link id="m-saveentry" /><code>{"static TimeSpan SaveEntry("}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry)"}</code> |
+| <Link id="m-serializeentry" /><code><Link to="/game-api/types/assembly-other/timeline-serializedentrystate">{"Timeline.SerializedEntryState"}</Link>{" SerializeEntry(ref "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" iEntry, Action callback, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isRegistering = true, bool isInvokingPast = true)"}</code> |
+| <Link id="m-serializerepeatableentry" /><code>{"void SerializeRepeatableEntry(ref "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" iEntry, Action callback, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isInvokingPast)"}</code> |
+| <Link id="m-update" /><code>{"void Update(TimeSpan deltaTime)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-enqueentry" /><code>{"private void EnqueEntry("}<Link to="/game-api/types/assembly-other/timeline-entry">{"Timeline.Entry"}</Link>{" entry)"}</code> |
+| <Link id="m-insertrepeatablecallbackattime" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" InsertRepeatableCallbackAtTime(Action callback, TimeSpan time, TimeSpan repeatInterval)"}</code> |
+| <Link id="m-serializeentry-2" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-serializedentrystate">{"Timeline.SerializedEntryState"}</Link>{" SerializeEntry(ref "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" iEntry, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, out TimeSpan targetTime)"}</code> |
+
+</details>
 
 ## Used in
 

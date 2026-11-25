@@ -17,14 +17,22 @@ A **class** in `Root.Township`, `ATT.Analytics`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AreaTriggerAnalyticsEvent(string eventName, "}<Link to="/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int duration)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AreaTriggerAnalyticsEvent(string eventName, "}<Link to="/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int duration)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-areaexit" /><code>{"const string AreaExit"}</code> |  |
-| <Link id="m-areakey" /><code>{"private const string AreaKey"}</code> |  |
-| <Link id="m-duration" /><code>{"private const string Duration"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-areaexit" /><code>{"const string AreaExit"}</code> |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-areakey" /><code>{"private const string AreaKey"}</code> |
+| <Link id="m-duration" /><code>{"private const string Duration"}</code> |
+
+</details>

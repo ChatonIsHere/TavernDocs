@@ -18,13 +18,13 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveInteractApproach()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActiveInteractApproach()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |  |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |

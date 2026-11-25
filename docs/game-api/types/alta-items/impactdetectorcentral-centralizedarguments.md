@@ -17,16 +17,16 @@ A **private struct** in `Root.Township`, `Alta.Impact`. Reach it through att-stu
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-items/impactdetector-impactsyncarguments">{"ImpactDetector.ImpactSyncArguments"}</Link>{" arguments"}</code> |  |
-| <Link id="m-detector" /><code><Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-items/impactdetector-impactsyncarguments">{"ImpactDetector.ImpactSyncArguments"}</Link>{" arguments"}</code> |
+| <Link id="m-detector" /><code><Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{"[] availableDetectors)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{"[] availableDetectors)"}</code> |
 
 ## Used in
 

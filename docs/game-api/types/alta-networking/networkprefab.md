@@ -23,26 +23,31 @@ Root component of a spawnable networked prefab. It holds the prefab hash used to
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkPrefab()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkPrefab()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-callbackorder" /><code>{"private List<int> callBackOrder"}</code> |  |
-| <Link id="m-canbespawnedthroughcommand" /><code>{"private bool canBeSpawnedThroughCommand"}</code> |  |
-| <Link id="m-childcount" /><code>{"private int childCount"}</code> |  |
-| <Link id="m-childprefabaccumulation" /><code>{"private static List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> childPrefabAccumulation"}</code> |  |
-| <Link id="m-childprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> childPrefabs"}</code> |  |
-| <Link id="m-childrencallback" /><code>{"private Dictionary<int, List<"}<Link to="/game-api/types/alta-networking/networkprefabchildeventhandler">{"NetworkPrefabChildEventHandler"}</Link>{">> childrenCallback"}</code> |  |
-| <Link id="m-embeddedhashes" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> embeddedHashes"}</code> |  |
-| <Link id="m-emptyindices" /><code>{"private HashSet<int> emptyIndices"}</code> |  |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
-| <Link id="m-hash" /><code>{"private int hash"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-positionsynclock" /><code>{"private "}<Link to="/game-api/types/alta-networking/positionsyncblocker">{"PositionSyncBlocker"}</Link>{" positionSyncLock"}</code> |  |
+<details>
+<summary>12 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-callbackorder" /><code>{"private List<int> callBackOrder"}</code> |
+| <Link id="m-canbespawnedthroughcommand" /><code>{"private bool canBeSpawnedThroughCommand"}</code> |
+| <Link id="m-childcount" /><code>{"private int childCount"}</code> |
+| <Link id="m-childprefabaccumulation" /><code>{"private static List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> childPrefabAccumulation"}</code> |
+| <Link id="m-childprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> childPrefabs"}</code> |
+| <Link id="m-childrencallback" /><code>{"private Dictionary<int, List<"}<Link to="/game-api/types/alta-networking/networkprefabchildeventhandler">{"NetworkPrefabChildEventHandler"}</Link>{">> childrenCallback"}</code> |
+| <Link id="m-embeddedhashes" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> embeddedHashes"}</code> |
+| <Link id="m-emptyindices" /><code>{"private HashSet<int> emptyIndices"}</code> |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| <Link id="m-hash" /><code>{"private int hash"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-positionsynclock" /><code>{"private "}<Link to="/game-api/types/alta-networking/positionsyncblocker">{"PositionSyncBlocker"}</Link>{" positionSyncLock"}</code> |
+
+</details>
 
 ## Properties
 
@@ -55,8 +60,16 @@ Root component of a spawnable networked prefab. It holds the prefab hash used to
 | <Link id="m-issyncingposition" /><code>{"bool IsSyncingPosition { get; }"}</code> | False while any position sync blocker is set (for example while docked), so position updates aren't sent. |
 | <Link id="m-savemode" /><code><Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" { get; set; }"}</code> | How this prefab saves: on its own (`Base`), as part of its parent (`Child`), not at all (`Ignore`), or with a player or creature. |
 | <Link id="m-spawnedcount" /><code>{"static int SpawnedCount { get; private set; }"}</code> | Static count of prefab instances currently alive. |
-| <Link id="m-alta-networking-iserializechildren-childcount" /><code>{"private int Alta.Networking.ISerializeChildren.ChildCount { get; }"}</code> |  |
-| <Link id="m-alta-networking-iserializechildren-childprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> Alta.Networking.ISerializeChildren.ChildPrefabs { get; }"}</code> |  |
+
+<details>
+<summary>2 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-networking-iserializechildren-childcount" /><code>{"private int Alta.Networking.ISerializeChildren.ChildCount { get; }"}</code> |
+| <Link id="m-alta-networking-iserializechildren-childprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> Alta.Networking.ISerializeChildren.ChildPrefabs { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -85,6 +98,13 @@ Root component of a spawnable networked prefab. It holds the prefab hash used to
 | <Link id="m-saveserializeempty" /><code>{"static void SaveSerializeEmpty("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning)"}</code> | Reads past a saved prefab without loading it, used when the saved prefab no longer exists. |
 | <Link id="m-unlockpositionsync" /><code>{"void UnlockPositionSync("}<Link to="/game-api/types/alta-networking/positionsyncblocker">{"PositionSyncBlocker"}</Link>{" blocker)"}</code> | Removes a reason added with `LockPositionSync`. |
 | <Link id="m-validateembeddedhashes" /><code>{"void ValidateEmbeddedHashes()"}</code> | Empty in this build. |
+| <Link id="m-updateentityembeddedids" /><code>{"protected override void UpdateEntityEmbeddedIds()"}</code> | Refreshes the embedded entity ids and the hash to entity lookup. |
+
+<details>
+<summary>13 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-accumulatechildprefabs" /><code>{"private void AccumulateChildPrefabs("}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" parent)"}</code> |  |
 | <Link id="m-addchild" /><code>{"private void Alta.Networking.ISerializeChildren.AddChild("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child)"}</code> |  |
 | <Link id="m-addemptychildatindex" /><code>{"private void Alta.Networking.ISerializeChildren.AddEmptyChildAtIndex(int index)"}</code> |  |
@@ -98,7 +118,8 @@ Root component of a spawnable networked prefab. It holds the prefab hash used to
 | <Link id="m-saveserializeempty-2" /><code>{"private static void SaveSerializeEmpty("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads past a saved prefab without loading it, used when the saved prefab no longer exists. |
 | <Link id="m-saveserializeentity" /><code>{"private void SaveSerializeEntity("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning, uint hash)"}</code> |  |
 | <Link id="m-saveserializeentity-2" /><code>{"private void SaveSerializeEntity("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
-| <Link id="m-updateentityembeddedids" /><code>{"protected override void UpdateEntityEmbeddedIds()"}</code> | Refreshes the embedded entity ids and the hash to entity lookup. |
+
+</details>
 
 ## Used in
 

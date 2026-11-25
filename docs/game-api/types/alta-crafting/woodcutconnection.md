@@ -20,20 +20,28 @@ Marks a joint between two pieces of a choppable tree model: which connection typ
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutConnection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WoodcutConnection()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-model" /><code><Link to="/game-api/types/alta-crafting/woodcuttreemodel">{"WoodcutTreeModel"}</Link>{" model"}</code> | Serialized backing field for `Model`. Public, but use `Model`. |
-| <Link id="m-breakthresholdmultiplier" /><code>{"private float breakThresholdMultiplier"}</code> |  |
-| <Link id="m-connectiontype" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnectiontype">{"WoodcutConnectionType"}</Link>{" connectionType"}</code> |  |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
-| <Link id="m-pointindex" /><code>{"private int pointIndex"}</code> |  |
-| <Link id="m-rotations" /><code>{"private int rotations"}</code> |  |
+
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-breakthresholdmultiplier" /><code>{"private float breakThresholdMultiplier"}</code> |
+| <Link id="m-connectiontype" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnectiontype">{"WoodcutConnectionType"}</Link>{" connectionType"}</code> |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| <Link id="m-pointindex" /><code>{"private int pointIndex"}</code> |
+| <Link id="m-rotations" /><code>{"private int rotations"}</code> |
+
+</details>
 
 ## Properties
 

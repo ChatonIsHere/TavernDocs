@@ -19,13 +19,13 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationDefinitionManagerData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationDefinitionManagerData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hashes" /><code>{"uint[] hashes"}</code> |  |
-| <Link id="m-times" /><code>{"float[] times"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hashes" /><code>{"uint[] hashes"}</code> |
+| <Link id="m-times" /><code>{"float[] times"}</code> |

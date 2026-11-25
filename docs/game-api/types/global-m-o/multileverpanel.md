@@ -18,21 +18,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MultiLeverPanel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MultiLeverPanel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-desiredindex" /><code>{"private int desiredIndex"}</code> |  |
-| <Link id="m-levers" /><code>{"private "}<Link to="/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{"[] levers"}</code> |  |
-| <Link id="m-selectionindex" /><code>{"private int selectionIndex"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-desiredindex" /><code>{"private int desiredIndex"}</code> |
+| <Link id="m-levers" /><code>{"private "}<Link to="/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{"[] levers"}</code> |
+| <Link id="m-selectionindex" /><code>{"private int selectionIndex"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handleselection" /><code>{"private void HandleSelection("}<Link to="/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{" activatedLever, int oldIndex, int currentSelection)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-handleselection" /><code>{"private void HandleSelection("}<Link to="/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{" activatedLever, int oldIndex, int currentSelection)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>

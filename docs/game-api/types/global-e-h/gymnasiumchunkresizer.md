@@ -17,21 +17,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GymnasiumChunkResizer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GymnasiumChunkResizer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-btn" /><code>{"private bool btn"}</code> |  |
-| <Link id="m-btn2" /><code>{"private bool btn2"}</code> |  |
-| <Link id="m-chunksize" /><code>{"private int chunkSize"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-btn" /><code>{"private bool btn"}</code> |
+| <Link id="m-btn2" /><code>{"private bool btn2"}</code> |
+| <Link id="m-chunksize" /><code>{"private int chunkSize"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-resize" /><code>{"void Resize()"}</code> |  |
-| <Link id="m-setadjacent" /><code>{"void SetAdjacent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-resize" /><code>{"void Resize()"}</code> |
+| <Link id="m-setadjacent" /><code>{"void SetAdjacent()"}</code> |

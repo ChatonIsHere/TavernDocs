@@ -17,25 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerCapsule()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TriggerCapsule()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-capsulecollider" /><code>{"private CapsuleCollider capsuleCollider"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-capsulecollider" /><code>{"private CapsuleCollider capsuleCollider"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-height" /><code>{"float Height { get; set; }"}</code> |  |
-| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-height" /><code>{"float Height { get; set; }"}</code> |
+| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize(float radius, float height)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"void Initialize(float radius, float height)"}</code> |

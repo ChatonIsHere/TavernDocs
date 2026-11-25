@@ -17,10 +17,10 @@ An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getsettings" /><code>{"Task<string> GetSettings(string name)"}</code> |  |
-| <Link id="m-setsettings" /><code>{"Task SetSettings(string name, string content)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getsettings" /><code>{"Task<string> GetSettings(string name)"}</code> |
+| <Link id="m-setsettings" /><code>{"Task SetSettings(string name, string content)"}</code> |
 
 ## Used in
 

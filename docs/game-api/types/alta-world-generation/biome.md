@@ -23,18 +23,23 @@ Cave biome asset (under `Caves/Biomes`): loot tables, attribute ranges and eleme
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Biome()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Biome()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-attributes" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributedoublevalue">{"AttributeDoubleValue"}</Link>{"[] attributes"}</code> |  |
-| <Link id="m-elements" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/elementsinglevalue">{"ElementSingleValue"}</Link>{"[] elements"}</code> |  |
-| <Link id="m-loottables" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] lootTables"}</code> |  |
-| <Link id="m-spawndata" /><code>{"private "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-attributes" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributedoublevalue">{"AttributeDoubleValue"}</Link>{"[] attributes"}</code> |
+| <Link id="m-elements" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/elementsinglevalue">{"ElementSingleValue"}</Link>{"[] elements"}</code> |
+| <Link id="m-loottables" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] lootTables"}</code> |
+| <Link id="m-spawndata" /><code>{"private "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData"}</code> |
+
+</details>
 
 ## Properties
 

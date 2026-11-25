@@ -20,18 +20,23 @@ A wrapper around a Unity coroutine that tracks its state, catches exceptions and
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaCoroutine()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaCoroutine()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cancellation" /><code>{"private CancellationToken cancellation"}</code> |  |
-| <Link id="m-delaycalls" /><code>{"private static List<Action> delayCalls"}</code> |  |
-| <Link id="m-delaycallsswap" /><code>{"private static List<Action> delayCallsSwap"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cancellation" /><code>{"private CancellationToken cancellation"}</code> |
+| <Link id="m-delaycalls" /><code>{"private static List<Action> delayCalls"}</code> |
+| <Link id="m-delaycallsswap" /><code>{"private static List<Action> delayCallsSwap"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
@@ -43,9 +48,17 @@ A wrapper around a Unity coroutine that tracks its state, catches exceptions and
 | <Link id="m-onfinished" /><code>{"Action OnFinished { get; set; }"}</code> | Called when the enumerator runs to the end. |
 | <Link id="m-onstopped" /><code>{"Action OnStopped { get; set; }"}</code> | Called when the coroutine is stopped or its cancellation token fires. |
 | <Link id="m-state" /><code><Link to="/game-api/types/assembly-other/altacoroutinestate">{"AltaCoroutineState"}</Link>{" State { get; protected set; }"}</code> | Running, finished, stopped or error. |
-| <Link id="m-altacoroutinehandler" /><code>{"private static "}<Link to="/game-api/types/assembly-other/altacoroutinehandler">{"AltaCoroutineHandler"}</Link>{" "}<Link to="/game-api/types/assembly-other/altacoroutinehandler">{"AltaCoroutineHandler"}</Link>{" { get; }"}</code> |  |
 | <Link id="m-enumerator" /><code>{"protected IEnumerator Enumerator { get; set; }"}</code> | The enumerator the coroutine steps through. |
-| <Link id="m-targetobject" /><code>{"private MonoBehaviour TargetObject { get; set; }"}</code> |  |
+
+<details>
+<summary>2 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-altacoroutinehandler" /><code>{"private static "}<Link to="/game-api/types/assembly-other/altacoroutinehandler">{"AltaCoroutineHandler"}</Link>{" "}<Link to="/game-api/types/assembly-other/altacoroutinehandler">{"AltaCoroutineHandler"}</Link>{" { get; }"}</code> |
+| <Link id="m-targetobject" /><code>{"private MonoBehaviour TargetObject { get; set; }"}</code> |
+
+</details>
 
 ## Methods
 
@@ -59,10 +72,18 @@ A wrapper around a Unity coroutine that tracks its state, catches exceptions and
 | <Link id="m-start" /><code>{"static "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" Start(IEnumerator enumerator, MonoBehaviour targetObject = null, CancellationToken cancellation = null)"}</code> | Static version creates and starts a coroutine. The instance version starts it, warning if it is already running. |
 | <Link id="m-start-2" /><code>{"virtual "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" Start()"}</code> | Static version creates and starts a coroutine. The instance version starts it, warning if it is already running. |
 | <Link id="m-stop" /><code>{"virtual void Stop()"}</code> | Stops a running coroutine and calls `OnStopped`. |
-| <Link id="m-coroutinehandler" /><code>{"private IEnumerator CoroutineHandler(IEnumerator enumerator) (iterator)"}</code> |  |
-| <Link id="m-delay" /><code>{"private static IEnumerator Delay() (iterator)"}</code> |  |
-| <Link id="m-delay-2" /><code>{"private static IEnumerator Delay(float delaySeconds, Action callback) (iterator)"}</code> |  |
-| <Link id="m-duodelay" /><code>{"private static IEnumerator DuoDelay(Action callback) (iterator)"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-coroutinehandler" /><code>{"private IEnumerator CoroutineHandler(IEnumerator enumerator) (iterator)"}</code> |
+| <Link id="m-delay" /><code>{"private static IEnumerator Delay() (iterator)"}</code> |
+| <Link id="m-delay-2" /><code>{"private static IEnumerator Delay(float delaySeconds, Action callback) (iterator)"}</code> |
+| <Link id="m-duodelay" /><code>{"private static IEnumerator DuoDelay(Action callback) (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

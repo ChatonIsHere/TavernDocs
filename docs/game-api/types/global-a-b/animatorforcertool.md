@@ -17,23 +17,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimatorForcerTool()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimatorForcerTool()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |  |
-| <Link id="m-btnapply" /><code>{"private bool btnApply"}</code> |  |
-| <Link id="m-layer" /><code>{"private int layer"}</code> |  |
-| <Link id="m-parametername" /><code>{"private string[] parameterName"}</code> |  |
-| <Link id="m-parametervalue" /><code>{"private int[] parameterValue"}</code> |  |
-| <Link id="m-statename" /><code>{"private string stateName"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
+| <Link id="m-btnapply" /><code>{"private bool btnApply"}</code> |
+| <Link id="m-layer" /><code>{"private int layer"}</code> |
+| <Link id="m-parametername" /><code>{"private string[] parameterName"}</code> |
+| <Link id="m-parametervalue" /><code>{"private int[] parameterValue"}</code> |
+| <Link id="m-statename" /><code>{"private string stateName"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"private void Apply()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"private void Apply()"}</code> |
+
+</details>

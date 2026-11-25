@@ -19,29 +19,34 @@ Simplex noise in 2, 3 or 4 dimensions, with per-instance offsets added to the in
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SimplexNoise(double offsetX, double offsetY, double offsetZ, double offsetW)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SimplexNoise(double offsetX, double offsetY, double offsetZ, double offsetW)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-f2" /><code>{"private static double F2"}</code> |  |
-| <Link id="m-f3" /><code>{"private static double F3"}</code> |  |
-| <Link id="m-f4" /><code>{"private static double F4"}</code> |  |
-| <Link id="m-g2" /><code>{"private static double G2"}</code> |  |
-| <Link id="m-g3" /><code>{"private static double G3"}</code> |  |
-| <Link id="m-g4" /><code>{"private static double G4"}</code> |  |
-| <Link id="m-grad3" /><code>{"private static "}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{"[] grad3"}</code> |  |
-| <Link id="m-grad4" /><code>{"private static "}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{"[] grad4"}</code> |  |
-| <Link id="m-offsetw" /><code>{"private double offsetW"}</code> |  |
-| <Link id="m-offsetx" /><code>{"private double offsetX"}</code> |  |
-| <Link id="m-offsety" /><code>{"private double offsetY"}</code> |  |
-| <Link id="m-offsetz" /><code>{"private double offsetZ"}</code> |  |
-| <Link id="m-p" /><code>{"private static short[] p"}</code> |  |
-| <Link id="m-perm" /><code>{"private short[] perm"}</code> |  |
-| <Link id="m-permmod12" /><code>{"private short[] permMod12"}</code> |  |
+<details>
+<summary>15 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-f2" /><code>{"private static double F2"}</code> |
+| <Link id="m-f3" /><code>{"private static double F3"}</code> |
+| <Link id="m-f4" /><code>{"private static double F4"}</code> |
+| <Link id="m-g2" /><code>{"private static double G2"}</code> |
+| <Link id="m-g3" /><code>{"private static double G3"}</code> |
+| <Link id="m-g4" /><code>{"private static double G4"}</code> |
+| <Link id="m-grad3" /><code>{"private static "}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{"[] grad3"}</code> |
+| <Link id="m-grad4" /><code>{"private static "}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{"[] grad4"}</code> |
+| <Link id="m-offsetw" /><code>{"private double offsetW"}</code> |
+| <Link id="m-offsetx" /><code>{"private double offsetX"}</code> |
+| <Link id="m-offsety" /><code>{"private double offsetY"}</code> |
+| <Link id="m-offsetz" /><code>{"private double offsetZ"}</code> |
+| <Link id="m-p" /><code>{"private static short[] p"}</code> |
+| <Link id="m-perm" /><code>{"private short[] perm"}</code> |
+| <Link id="m-permmod12" /><code>{"private short[] permMod12"}</code> |
+
+</details>
 
 ## Methods
 
@@ -53,10 +58,18 @@ Simplex noise in 2, 3 or 4 dimensions, with per-instance offsets added to the in
 | <Link id="m-noise01" /><code>{"double Noise01(double x, double y)"}</code> | Noise value at the point, rescaled to 0 to 1. |
 | <Link id="m-noise01-2" /><code>{"double Noise01(double x, double y, double z)"}</code> | Noise value at the point, rescaled to 0 to 1. |
 | <Link id="m-noise01-3" /><code>{"double Noise01(double x, double y, double z, double w)"}</code> | Noise value at the point, rescaled to 0 to 1. |
-| <Link id="m-dot" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y)"}</code> |  |
-| <Link id="m-dot-2" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y, double z)"}</code> |  |
-| <Link id="m-dot-3" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y, double z, double w)"}</code> |  |
-| <Link id="m-fastfloor" /><code>{"private static int fastfloor(double x)"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-dot" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y)"}</code> |
+| <Link id="m-dot-2" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y, double z)"}</code> |
+| <Link id="m-dot-3" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y, double z, double w)"}</code> |
+| <Link id="m-fastfloor" /><code>{"private static int fastfloor(double x)"}</code> |
+
+</details>
 
 ## Used in
 

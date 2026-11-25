@@ -21,31 +21,36 @@ One piece of a carpentry timber block that tilts away as it is chiselled until i
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimberPiece()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimberPiece()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-baselocalposition" /><code>{"private Vector3 baseLocalPosition"}</code> |  |
-| <Link id="m-currenthittingdirection" /><code>{"private Vector3 currentHittingDirection"}</code> |  |
-| <Link id="m-damagemultiplieroverchiseldistance" /><code>{"private AnimationCurve damageMultiplierOverChiselDistance"}</code> |  |
-| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> |  |
-| <Link id="m-health" /><code>{"private float health"}</code> |  |
-| <Link id="m-inversedup" /><code>{"private bool inversedUp"}</code> |  |
-| <Link id="m-leniencyoverprogress" /><code>{"private AnimationCurve leniencyOverProgress"}</code> |  |
-| <Link id="m-maxprogressonfirsthit" /><code>{"private float maxProgressOnFirstHit"}</code> |  |
-| <Link id="m-maxprogressonrotate" /><code>{"private float maxProgressOnRotate"}</code> |  |
-| <Link id="m-maxrotationfrompivot" /><code>{"private float maxRotationFromPivot"}</code> |  |
-| <Link id="m-pivottingdirection" /><code>{"private Vector3 pivottingDirection"}</code> |  |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |  |
-| <Link id="m-progressiontoangle" /><code>{"private AnimationCurve progressionToAngle"}</code> |  |
-| <Link id="m-recedingchiselpoint" /><code>{"private AnimationCurve recedingChiselPoint"}</code> |  |
-| <Link id="m-rotationmodel" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberpiece-rotationmodel">{"TimberPiece.RotationModel"}</Link>{" rotationModel"}</code> |  |
-| <Link id="m-size" /><code>{"private Vector3 size"}</code> |  |
-| <Link id="m-timberblock" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberblock">{"TimberBlock"}</Link>{" timberBlock"}</code> |  |
+<details>
+<summary>17 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-baselocalposition" /><code>{"private Vector3 baseLocalPosition"}</code> |
+| <Link id="m-currenthittingdirection" /><code>{"private Vector3 currentHittingDirection"}</code> |
+| <Link id="m-damagemultiplieroverchiseldistance" /><code>{"private AnimationCurve damageMultiplierOverChiselDistance"}</code> |
+| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> |
+| <Link id="m-health" /><code>{"private float health"}</code> |
+| <Link id="m-inversedup" /><code>{"private bool inversedUp"}</code> |
+| <Link id="m-leniencyoverprogress" /><code>{"private AnimationCurve leniencyOverProgress"}</code> |
+| <Link id="m-maxprogressonfirsthit" /><code>{"private float maxProgressOnFirstHit"}</code> |
+| <Link id="m-maxprogressonrotate" /><code>{"private float maxProgressOnRotate"}</code> |
+| <Link id="m-maxrotationfrompivot" /><code>{"private float maxRotationFromPivot"}</code> |
+| <Link id="m-pivottingdirection" /><code>{"private Vector3 pivottingDirection"}</code> |
+| <Link id="m-progress" /><code>{"private float progress"}</code> |
+| <Link id="m-progressiontoangle" /><code>{"private AnimationCurve progressionToAngle"}</code> |
+| <Link id="m-recedingchiselpoint" /><code>{"private AnimationCurve recedingChiselPoint"}</code> |
+| <Link id="m-rotationmodel" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberpiece-rotationmodel">{"TimberPiece.RotationModel"}</Link>{" rotationModel"}</code> |
+| <Link id="m-size" /><code>{"private Vector3 size"}</code> |
+| <Link id="m-timberblock" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberblock">{"TimberBlock"}</Link>{" timberBlock"}</code> |
+
+</details>
 
 ## Properties
 
@@ -70,8 +75,16 @@ One piece of a carpentry timber block that tilts away as it is chiselled until i
 | <Link id="m-save" /><code>{"override "}<Link to="/game-api/types/alta-crafting/piecesavedata">{"PieceSaveData"}</Link>{" Save()"}</code> | Returns the piece's progress and directions as save data. |
 | <Link id="m-serialize" /><code>{"override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWritingFull)"}</code> | Syncs progress and direction. Clients show a damage popup when it changes. |
 | <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Caches the mesh filter and sets up the tilt model. |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>
 
 ## Used in
 

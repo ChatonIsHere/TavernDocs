@@ -18,22 +18,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CameraClaimer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CameraClaimer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-all" /><code>{"private static readonly List<"}<Link to="/game-api/types/global-c-d/cameraclaimer">{"CameraClaimer"}</Link>{"> all"}</code> |  |
-| <Link id="m-checkcamera" /><code>{"private Camera checkCamera"}</code> |  |
-| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/global-c-d/cameraclaimer">{"CameraClaimer"}</Link>{" current"}</code> |  |
-| <Link id="m-oldcurrent" /><code>{"private static "}<Link to="/game-api/types/global-c-d/cameraclaimer">{"CameraClaimer"}</Link>{" oldCurrent"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-all" /><code>{"private static readonly List<"}<Link to="/game-api/types/global-c-d/cameraclaimer">{"CameraClaimer"}</Link>{"> all"}</code> |
+| <Link id="m-checkcamera" /><code>{"private Camera checkCamera"}</code> |
+| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/global-c-d/cameraclaimer">{"CameraClaimer"}</Link>{" current"}</code> |
+| <Link id="m-oldcurrent" /><code>{"private static "}<Link to="/game-api/types/global-c-d/cameraclaimer">{"CameraClaimer"}</Link>{" oldCurrent"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

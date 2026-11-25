@@ -19,14 +19,14 @@ A **internal class** in `Root.Township`, `Alta.Loot`. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GeneratedLootSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GeneratedLootSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cachedpluginidentifier" /><code>{"int cachedPluginIdentifier"}</code> |  |
-| <Link id="m-hasrun" /><code>{"bool hasRun"}</code> |  |
-| <Link id="m-waittorefill" /><code>{"TimeSpan waitToRefill"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cachedpluginidentifier" /><code>{"int cachedPluginIdentifier"}</code> |
+| <Link id="m-hasrun" /><code>{"bool hasRun"}</code> |
+| <Link id="m-waittorefill" /><code>{"TimeSpan waitToRefill"}</code> |

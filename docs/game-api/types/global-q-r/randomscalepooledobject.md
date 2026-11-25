@@ -18,21 +18,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RandomScalePooledObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RandomScalePooledObject()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isuniform" /><code>{"private bool isUniform"}</code> |  |
-| <Link id="m-maximumscale" /><code>{"private float maximumScale"}</code> |  |
-| <Link id="m-minimumscale" /><code>{"private float minimumScale"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isuniform" /><code>{"private bool isUniform"}</code> |
+| <Link id="m-maximumscale" /><code>{"private float maximumScale"}</code> |
+| <Link id="m-minimumscale" /><code>{"private float minimumScale"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-setscale" /><code>{"private void SetScale("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-setscale" /><code>{"private void SetScale("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
+
+</details>

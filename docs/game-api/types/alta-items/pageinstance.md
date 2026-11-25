@@ -21,25 +21,30 @@ A page or sheet of paper entity showing `PageData` (a recipe or glyphs). It rend
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PageInstance()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PageInstance()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |  |
-| <Link id="m-colliders" /><code>{"private Collider[] colliders"}</code> |  |
-| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data"}</code> |  |
-| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> |  |
-| <Link id="m-loadisduplicate" /><code>{"private bool loadIsDuplicate"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-predefinedpage" /><code>{"private Object predefinedPage"}</code> |  |
-| <Link id="m-rendereddata" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" renderedData"}</code> |  |
-| <Link id="m-renderer" /><code>{"private Renderer renderer"}</code> |  |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |  |
-| <Link id="m-visibilitydetector" /><code>{"private "}<Link to="/game-api/types/global-t-x/visibilitydetector">{"VisibilityDetector"}</Link>{" visibilityDetector"}</code> |  |
+<details>
+<summary>11 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
+| <Link id="m-colliders" /><code>{"private Collider[] colliders"}</code> |
+| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data"}</code> |
+| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> |
+| <Link id="m-loadisduplicate" /><code>{"private bool loadIsDuplicate"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-predefinedpage" /><code>{"private Object predefinedPage"}</code> |
+| <Link id="m-rendereddata" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" renderedData"}</code> |
+| <Link id="m-renderer" /><code>{"private Renderer renderer"}</code> |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
+| <Link id="m-visibilitydetector" /><code>{"private "}<Link to="/game-api/types/global-t-x/visibilitydetector">{"VisibilityDetector"}</Link>{" visibilityDetector"}</code> |
+
+</details>
 
 ## Properties
 
@@ -67,15 +72,23 @@ A page or sheet of paper entity showing `PageData` (a recipe or glyphs). It rend
 | <Link id="m-reload" /><code>{"void Reload()"}</code> | Re-renders the page if it is visible. |
 | <Link id="m-set" /><code>{"void Set("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data)"}</code> | Sets the page data and syncs it. |
 | <Link id="m-setinbook" /><code>{"void SetInBook("}<Link to="/game-api/types/alta-items/book">{"Book"}</Link>{" book)"}</code> | Puts the page in a book (turning off its physics and colliders) or takes it out with null. |
-| <Link id="m-delayrender" /><code>{"private IEnumerator DelayRender("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data) (iterator)"}</code> |  |
-| <Link id="m-delayrender-2" /><code>{"private void DelayRender()"}</code> |  |
 | <Link id="m-generate" /><code>{"protected override void Generate("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: gives a newly generated page a random spawnable page, or destroys it if there is none. |
-| <Link id="m-load" /><code>{"private void Load()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
 | <Link id="m-serialize" /><code>{"protected virtual void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the page data and raises `OnChangedPage` when reading. |
-| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-unload" /><code>{"private void Unload()"}</code> |  |
+
+<details>
+<summary>7 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-delayrender" /><code>{"private IEnumerator DelayRender("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data) (iterator)"}</code> |
+| <Link id="m-delayrender-2" /><code>{"private void DelayRender()"}</code> |
+| <Link id="m-load" /><code>{"private void Load()"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-unload" /><code>{"private void Unload()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -19,20 +19,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerDiagnosticsSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerDiagnosticsSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-diagnosticssendinterval" /><code>{"private float diagnosticsSendInterval"}</code> |  |
-| <Link id="m-fpssendinterval" /><code>{"private float fpsSendInterval"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-diagnosticssendinterval" /><code>{"private float diagnosticsSendInterval"}</code> |
+| <Link id="m-fpssendinterval" /><code>{"private float fpsSendInterval"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-diagnosticssendinterval-2" /><code>{"float DiagnosticsSendInterval { get; }"}</code> |  |
-| <Link id="m-fpssendinterval-2" /><code>{"float FpsSendInterval { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-diagnosticssendinterval-2" /><code>{"float DiagnosticsSendInterval { get; }"}</code> |
+| <Link id="m-fpssendinterval-2" /><code>{"float FpsSendInterval { get; }"}</code> |

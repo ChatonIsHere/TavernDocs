@@ -17,14 +17,14 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ReadOnlyAttribute("}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" mode = 1)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ReadOnlyAttribute("}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" outOfPlayMode, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" inPlayMode)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ReadOnlyAttribute("}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" mode = 1)"}</code> |
+| <Link id="m-ctor-2" /><code>{"ReadOnlyAttribute("}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" outOfPlayMode, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" inPlayMode)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-inplaymode" /><code><Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" InPlayMode { get; private set; }"}</code> |  |
-| <Link id="m-outofplaymode" /><code><Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" OutOfPlayMode { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-inplaymode" /><code><Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" InPlayMode { get; private set; }"}</code> |
+| <Link id="m-outofplaymode" /><code><Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" OutOfPlayMode { get; private set; }"}</code> |

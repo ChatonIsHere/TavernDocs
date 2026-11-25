@@ -17,12 +17,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerUnlockConverter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerUnlockConverter()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getfromstring" /><code>{"protected override "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue-t">{"HashedGeneralValue"}</Link>{"<"}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> GetFromString(string input)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getfromstring" /><code>{"protected override "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue-t">{"HashedGeneralValue"}</Link>{"<"}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> GetFromString(string input)"}</code> |

@@ -16,15 +16,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GroupPermissionsCheckRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GroupPermissionsCheckRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-permissions" /><code><Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] Permissions { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-permissions" /><code><Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] Permissions { get; set; }"}</code> |
 
 ## Used in
 

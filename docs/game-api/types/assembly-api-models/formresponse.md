@@ -17,15 +17,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FormResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FormResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-comments" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/comment">{"Comment"}</Link>{"> Comments { get; set; }"}</code> |  |
-| <Link id="m-pageresponses" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/pageresponse">{"PageResponse"}</Link>{"> PageResponses { get; set; }"}</code> |  |
-| <Link id="m-permissions" /><code><Link to="/game-api/types/assembly-api-models/permissiontype">{"PermissionType"}</Link>{" Permissions { get; set; }"}</code> |  |
-| <Link id="m-processingcomment" /><code>{"string ProcessingComment { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-comments" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/comment">{"Comment"}</Link>{"> Comments { get; set; }"}</code> |
+| <Link id="m-pageresponses" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/pageresponse">{"PageResponse"}</Link>{"> PageResponses { get; set; }"}</code> |
+| <Link id="m-permissions" /><code><Link to="/game-api/types/assembly-api-models/permissiontype">{"PermissionType"}</Link>{" Permissions { get; set; }"}</code> |
+| <Link id="m-processingcomment" /><code>{"string ProcessingComment { get; set; }"}</code> |

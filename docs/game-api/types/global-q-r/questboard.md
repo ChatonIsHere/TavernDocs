@@ -17,22 +17,35 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"QuestBoard()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"QuestBoard()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activequest" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" activeQuest"}</code> |  |
-| <Link id="m-issupporterboard" /><code>{"private bool isSupporterBoard"}</code> |  |
-| <Link id="m-reapplybtn" /><code>{"private bool reapplyBtn"}</code> |  |
-| <Link id="m-rewardsdisplaytrophy" /><code>{"private "}<Link to="/game-api/types/global-i-l/localplayeradvertisingtrophy">{"LocalPlayerAdvertisingTrophy"}</Link>{" rewardsDisplayTrophy"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activequest" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" activeQuest"}</code> |
+| <Link id="m-issupporterboard" /><code>{"private bool isSupporterBoard"}</code> |
+| <Link id="m-reapplybtn" /><code>{"private bool reapplyBtn"}</code> |
+| <Link id="m-rewardsdisplaytrophy" /><code>{"private "}<Link to="/game-api/types/global-i-l/localplayeradvertisingtrophy">{"LocalPlayerAdvertisingTrophy"}</Link>{" rewardsDisplayTrophy"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-debugapplyplayerandrewards" /><code>{"void DebugApplyPlayerAndRewards()"}</code> |  |
-| <Link id="m-applyplayerandrewards" /><code>{"private async void ApplyPlayerAndRewards("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-debugapplyplayerandrewards" /><code>{"void DebugApplyPlayerAndRewards()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-applyplayerandrewards" /><code>{"private async void ApplyPlayerAndRewards("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+
+</details>

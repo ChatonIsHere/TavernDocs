@@ -20,19 +20,24 @@ Base for a creature action component with movement settings for getting to its t
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected AgentNavigationSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected AgentNavigationSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-acceleration" /><code>{"private float acceleration"}</code> |  |
-| <Link id="m-isovershooting" /><code>{"private bool isOvershooting"}</code> |  |
-| <Link id="m-istargetremovedonfail" /><code>{"private bool isTargetRemovedOnFail"}</code> |  |
-| <Link id="m-removalseconds" /><code>{"private float removalSeconds"}</code> |  |
-| <Link id="m-speed" /><code>{"private float speed"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-acceleration" /><code>{"private float acceleration"}</code> |
+| <Link id="m-isovershooting" /><code>{"private bool isOvershooting"}</code> |
+| <Link id="m-istargetremovedonfail" /><code>{"private bool isTargetRemovedOnFail"}</code> |
+| <Link id="m-removalseconds" /><code>{"private float removalSeconds"}</code> |
+| <Link id="m-speed" /><code>{"private float speed"}</code> |
+
+</details>
 
 ## Properties
 

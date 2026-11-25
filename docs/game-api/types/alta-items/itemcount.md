@@ -16,23 +16,28 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ItemCount()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ItemCount()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-count" /><code>{"private int count"}</code> |  |
-| <Link id="m-item" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-count" /><code>{"private int count"}</code> |
+| <Link id="m-item" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-count-2" /><code>{"int Count { get; }"}</code> |  |
-| <Link id="m-item-2" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-count-2" /><code>{"int Count { get; }"}</code> |
+| <Link id="m-item-2" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" { get; }"}</code> |
 
 ## Used in
 

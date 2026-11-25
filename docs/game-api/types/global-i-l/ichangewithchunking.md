@@ -17,7 +17,7 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-beforesaving" /><code>{"void BeforeSaving()"}</code> |  |
-| <Link id="m-loaded" /><code>{"void Loaded()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-beforesaving" /><code>{"void BeforeSaving()"}</code> |
+| <Link id="m-loaded" /><code>{"void Loaded()"}</code> |

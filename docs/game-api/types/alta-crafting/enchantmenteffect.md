@@ -21,16 +21,21 @@ Asset for what an enchantment does (for example `DamageMultiplier`, `DurabilityS
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected EnchantmentEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected EnchantmentEffect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onalignedhiteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" onAlignedHitEffect"}</code> |  |
-| <Link id="m-onhiteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onHitEffect"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-onalignedhiteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" onAlignedHitEffect"}</code> |
+| <Link id="m-onhiteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onHitEffect"}</code> |
+
+</details>
 
 ## Methods
 

@@ -18,20 +18,20 @@ A **class** in `Root.Township`, `Alta.Trading`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TradeDeckSale()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TradeDeckSale()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-buyer" /><code>{"int buyer"}</code> |  |
-| <Link id="m-itemhash" /><code>{"uint itemHash"}</code> |  |
-| <Link id="m-itemname" /><code>{"string itemName"}</code> |  |
-| <Link id="m-price" /><code>{"float price"}</code> |  |
-| <Link id="m-quantity" /><code>{"int quantity"}</code> |  |
-| <Link id="m-seller" /><code>{"int seller"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-buyer" /><code>{"int buyer"}</code> |
+| <Link id="m-itemhash" /><code>{"uint itemHash"}</code> |
+| <Link id="m-itemname" /><code>{"string itemName"}</code> |
+| <Link id="m-price" /><code>{"float price"}</code> |
+| <Link id="m-quantity" /><code>{"int quantity"}</code> |
+| <Link id="m-seller" /><code>{"int seller"}</code> |
 
 ## Used in
 

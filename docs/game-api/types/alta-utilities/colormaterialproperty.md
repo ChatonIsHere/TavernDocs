@@ -19,9 +19,9 @@ A colour shader property, looked up by name once, that can be set on a material 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ColorMaterialProperty(string propertyName)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ColorMaterialProperty(string propertyName)"}</code> |
 
 ## Methods
 

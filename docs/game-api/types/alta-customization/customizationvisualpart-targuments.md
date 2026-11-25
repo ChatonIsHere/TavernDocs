@@ -20,16 +20,21 @@ A `CustomizationVisualPart` whose default arguments of type `TArguments` are set
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected CustomizationVisualPart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected CustomizationVisualPart()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-defaultarguments" /><code>{"private TArguments defaultArguments"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-defaultarguments" /><code>{"private TArguments defaultArguments"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 

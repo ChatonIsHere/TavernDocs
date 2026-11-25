@@ -19,22 +19,27 @@ Loads Unity Addressable assets and keeps them loaded until every user of the ses
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AddressableSession()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AddressableSession()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-count" /><code>{"private static int count"}</code> |  |
-| <Link id="m-handlemap" /><code>{"private readonly Dictionary<string, AsyncOperationHandle> handleMap"}</code> |  |
-| <Link id="m-handles" /><code>{"private readonly HashSet<AsyncOperationHandle> handles"}</code> |  |
-| <Link id="m-index" /><code>{"private readonly int index"}</code> |  |
-| <Link id="m-isdisposed" /><code>{"private bool isDisposed"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-next" /><code>{"private static int next"}</code> |  |
-| <Link id="m-users" /><code>{"private readonly HashSet<object> users"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-count" /><code>{"private static int count"}</code> |
+| <Link id="m-handlemap" /><code>{"private readonly Dictionary<string, AsyncOperationHandle> handleMap"}</code> |
+| <Link id="m-handles" /><code>{"private readonly HashSet<AsyncOperationHandle> handles"}</code> |
+| <Link id="m-index" /><code>{"private readonly int index"}</code> |
+| <Link id="m-isdisposed" /><code>{"private bool isDisposed"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-next" /><code>{"private static int next"}</code> |
+| <Link id="m-users" /><code>{"private readonly HashSet<object> users"}</code> |
+
+</details>
 
 ## Methods
 

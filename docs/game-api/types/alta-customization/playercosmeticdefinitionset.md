@@ -18,21 +18,26 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerCosmeticDefinitionSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerCosmeticDefinitionSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hashes" /><code>{"private List<uint> hashes"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-hashes" /><code>{"private List<uint> hashes"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hashes-2" /><code>{"List<uint> Hashes { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hashes-2" /><code>{"List<uint> Hashes { get; }"}</code> |
 
 ## Used in
 

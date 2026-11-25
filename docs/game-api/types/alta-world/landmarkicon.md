@@ -21,16 +21,21 @@ A hashed asset for a map landmark icon.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LandmarkIcon()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LandmarkIcon()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-scale" /><code>{"private float scale"}</code> |  |
-| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-scale" /><code>{"private float scale"}</code> |
+| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> |
+
+</details>
 
 ## Properties
 

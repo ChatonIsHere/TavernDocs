@@ -20,23 +20,36 @@ TavernLib's `MelonPlugin`. It registers TavernLib's services, collects its conso
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Tavern()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Tavern()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-version" /><code>{"const string Version"}</code> | TavernLib's version string, the same one given to `MelonInfo`. |
-| <Link id="m-didinitiallogarchive" /><code>{"private bool _didInitialLogArchive"}</code> |  |
-| <Link id="m-logarchivetimer" /><code>{"private Timer _logArchiveTimer"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-didinitiallogarchive" /><code>{"private bool _didInitialLogArchive"}</code> |
+| <Link id="m-logarchivetimer" /><code>{"private Timer _logArchiveTimer"}</code> |
+
+</details>
 
 ## Properties
+
+<details>
+<summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-logger" /><code>{"internal static MelonLogger.Instance Logger { get; private set; }"}</code> | TavernLib's own `MelonLogger.Instance`, set in `OnEarlyInitializeMelon`. `TavernLogger` writes through it. |
+
+</details>
 
 ## Methods
 
@@ -45,6 +58,14 @@ TavernLib's `MelonPlugin`. It registers TavernLib's services, collects its conso
 | <Link id="m-onearlyinitializemelon" /><code>{"override void OnEarlyInitializeMelon()"}</code> | Sets up the services. Server: console tokens, mod reconcile, `TavernManager`, roles, backups. Client: mod folders and Quick join. Both: `EntranceMessageHandler`. |
 | <Link id="m-oninitializemelon" /><code>{"override void OnInitializeMelon()"}</code> | Collects TavernLib's console command modules into the game's `CommandService.CommandCollection`. |
 | <Link id="m-onlateinitializemelon" /><code>{"override void OnLateInitializeMelon()"}</code> | Hooks the `select` object search and applies `GameCommandPatches`, once Unity is up. |
-| <Link id="m-setupselectionfixpatch" /><code>{"private void SetupSelectionFixPatch()"}</code> |  |
-| <Link id="m-setupservices" /><code>{"private void SetupServices()"}</code> |  |
-| <Link id="m-startlogarchivetimer" /><code>{"private void StartLogArchiveTimer()"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-setupselectionfixpatch" /><code>{"private void SetupSelectionFixPatch()"}</code> |
+| <Link id="m-setupservices" /><code>{"private void SetupServices()"}</code> |
+| <Link id="m-startlogarchivetimer" /><code>{"private void StartLogArchiveTimer()"}</code> |
+
+</details>

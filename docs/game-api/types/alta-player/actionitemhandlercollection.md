@@ -17,30 +17,48 @@ A **internal class** in `Root.Township`, `Alta.QuickAccessActions`. Reach it thr
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActionItemHandlerCollection("}<Link to="/game-api/types/alta-player/actionitemdata">{"ActionItemData"}</Link>{"[] actionItems, Action<int, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> destroyItem)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActionItemHandlerCollection("}<Link to="/game-api/types/alta-player/actionitemdata">{"ActionItemData"}</Link>{"[] actionItems, Action<int, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> destroyItem)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-localplayeractionitems" /><code>{"private "}<Link to="/game-api/types/alta-player/actionitemhandler">{"ActionItemHandler"}</Link>{"[] localPlayerActionItems"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-localplayeractionitems" /><code>{"private "}<Link to="/game-api/types/alta-player/actionitemhandler">{"ActionItemHandler"}</Link>{"[] localPlayerActionItems"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-localplayeractionitems-2" /><code>{"private "}<Link to="/game-api/types/alta-player/actionitemhandler">{"ActionItemHandler"}</Link>{"[] LocalPlayerActionItems { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-localplayeractionitems-2" /><code>{"private "}<Link to="/game-api/types/alta-player/actionitemhandler">{"ActionItemHandler"}</Link>{"[] LocalPlayerActionItems { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gethandlerforactionindex" /><code><Link to="/game-api/types/alta-player/actionitemhandler">{"ActionItemHandler"}</Link>{" GetHandlerForActionIndex("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int index)"}</code> |  |
-| <Link id="m-isspawnedfor" /><code>{"bool IsSpawnedFor("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int index)"}</code> |  |
-| <Link id="m-removeplayer" /><code>{"void RemovePlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-gethandler" /><code>{"private "}<Link to="/game-api/types/alta-player/actionitemhandler">{"ActionItemHandler"}</Link>{" GetHandler("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int index)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gethandlerforactionindex" /><code><Link to="/game-api/types/alta-player/actionitemhandler">{"ActionItemHandler"}</Link>{" GetHandlerForActionIndex("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int index)"}</code> |
+| <Link id="m-isspawnedfor" /><code>{"bool IsSpawnedFor("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int index)"}</code> |
+| <Link id="m-removeplayer" /><code>{"void RemovePlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-gethandler" /><code>{"private "}<Link to="/game-api/types/alta-player/actionitemhandler">{"ActionItemHandler"}</Link>{" GetHandler("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int index)"}</code> |
+
+</details>
 
 ## Used in
 

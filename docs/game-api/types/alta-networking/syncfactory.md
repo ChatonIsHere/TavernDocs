@@ -16,6 +16,6 @@ A **static class** in `Root.Township`, `Alta.Networking`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-create" /><code>{"static "}<Link to="/game-api/types/alta-networking/isync">{"ISync"}</Link>{" Create("}<Link to="/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-create" /><code>{"static "}<Link to="/game-api/types/alta-networking/isync">{"ISync"}</Link>{" Create("}<Link to="/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type)"}</code> |

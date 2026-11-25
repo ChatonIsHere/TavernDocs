@@ -20,24 +20,29 @@ One stat's live value on a `StatManager`. The value is (base plus extras, clampe
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Stat(float value, float minimum, float maximum)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"Stat("}<Link to="/game-api/types/alta-stats-effects/statdefinitionapplication">{"StatDefinitionApplication"}</Link>{" application)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Stat(float value, float minimum, float maximum)"}</code> |
+| <Link id="m-ctor-2" /><code>{"Stat("}<Link to="/game-api/types/alta-stats-effects/statdefinitionapplication">{"StatDefinitionApplication"}</Link>{" application)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-baseflat" /><code>{"private float baseFlat"}</code> |  |
-| <Link id="m-buffmultiplier" /><code>{"private float buffMultiplier"}</code> |  |
-| <Link id="m-extraflat" /><code>{"private float extraFlat"}</code> |  |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |  |
-| <Link id="m-lastnetworkedvalue" /><code>{"private float lastNetworkedValue"}</code> |  |
-| <Link id="m-maximum" /><code>{"private float maximum"}</code> |  |
-| <Link id="m-minimum" /><code>{"private float minimum"}</code> |  |
-| <Link id="m-nonbuffextra" /><code>{"private float nonBuffExtra"}</code> |  |
-| <Link id="m-nonbuffmultiplier" /><code>{"private float nonBuffMultiplier"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-baseflat" /><code>{"private float baseFlat"}</code> |
+| <Link id="m-buffmultiplier" /><code>{"private float buffMultiplier"}</code> |
+| <Link id="m-extraflat" /><code>{"private float extraFlat"}</code> |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
+| <Link id="m-lastnetworkedvalue" /><code>{"private float lastNetworkedValue"}</code> |
+| <Link id="m-maximum" /><code>{"private float maximum"}</code> |
+| <Link id="m-minimum" /><code>{"private float minimum"}</code> |
+| <Link id="m-nonbuffextra" /><code>{"private float nonBuffExtra"}</code> |
+| <Link id="m-nonbuffmultiplier" /><code>{"private float nonBuffMultiplier"}</code> |
+
+</details>
 
 ## Properties
 
@@ -82,7 +87,15 @@ One stat's live value on a `StatManager`. The value is (base plus extras, clampe
 | <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWritingFull)"}</code> | Reads or writes the stat. Full writes include range, extras and multipliers. Values are packed to fixed ranges (base and range 0 to 127) and rounded to 0.01. |
 | <Link id="m-setrange" /><code>{"void SetRange(float minimum, float maximum)"}</code> | Sets `Minimum` and `Maximum` together and forces a network update. |
 | <Link id="m-tostring" /><code>{"override string ToString()"}</code> | The value with at most one decimal. |
-| <Link id="m-onchanged" /><code>{"private void OnChanged(bool forceNetwork = false, bool forceEvent = false)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onchanged" /><code>{"private void OnChanged(bool forceNetwork = false, bool forceEvent = false)"}</code> |
+
+</details>
 
 ## Used in
 

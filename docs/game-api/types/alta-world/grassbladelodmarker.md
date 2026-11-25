@@ -18,24 +18,34 @@ A **class** in `Root.Township`, `Alta.Environmental.Vegetation`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrassBladeLODMarker()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrassBladeLODMarker()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lodobjects" /><code>{"private GameObject[] lodObjects"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-lodobjects" /><code>{"private GameObject[] lodObjects"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lodobjects-2" /><code>{"GameObject[] LODObjects { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-lodobjects-2" /><code>{"GameObject[] LODObjects { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

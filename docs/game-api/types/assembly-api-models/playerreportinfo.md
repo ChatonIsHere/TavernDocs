@@ -16,23 +16,23 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerReportInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerReportInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actedat" /><code>{"DateTime? ActedAt { get; set; }"}</code> |  |
-| <Link id="m-actinguser" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" ActingUser { get; set; }"}</code> |  |
-| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"Guid Identifier { get; set; }"}</code> |  |
-| <Link id="m-reporteduser" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" ReportedUser { get; set; }"}</code> |  |
-| <Link id="m-reportinguser" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" ReportingUser { get; set; }"}</code> |  |
-| <Link id="m-server" /><code><Link to="/game-api/types/assembly-api-models/gameserverinfominimal">{"GameServerInfoMinimal"}</Link>{" Server { get; set; }"}</code> |  |
-| <Link id="m-status" /><code><Link to="/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{" Status { get; set; }"}</code> |  |
-| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/reporttype">{"ReportType"}</Link>{" Type { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-actedat" /><code>{"DateTime? ActedAt { get; set; }"}</code> |
+| <Link id="m-actinguser" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" ActingUser { get; set; }"}</code> |
+| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> |
+| <Link id="m-identifier" /><code>{"Guid Identifier { get; set; }"}</code> |
+| <Link id="m-reporteduser" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" ReportedUser { get; set; }"}</code> |
+| <Link id="m-reportinguser" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" ReportingUser { get; set; }"}</code> |
+| <Link id="m-server" /><code><Link to="/game-api/types/assembly-api-models/gameserverinfominimal">{"GameServerInfoMinimal"}</Link>{" Server { get; set; }"}</code> |
+| <Link id="m-status" /><code><Link to="/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{" Status { get; set; }"}</code> |
+| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/reporttype">{"ReportType"}</Link>{" Type { get; set; }"}</code> |
 
 ## Used in
 

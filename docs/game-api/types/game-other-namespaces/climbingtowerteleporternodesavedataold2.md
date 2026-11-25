@@ -18,20 +18,20 @@ A **class** in `Root.Township`, `Features.Gameplay.ClimbingTower`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterNodeSaveDataOld2()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterNodeSaveDataOld2()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isrootnode" /><code>{"bool isRootNode"}</code> |  |
-| <Link id="m-teleportoffset" /><code>{"Vector3 teleportOffset"}</code> |  |
-| <Link id="m-unlocktoactivateteleporternode" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlockToActivateTeleporterNode"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isrootnode" /><code>{"bool isRootNode"}</code> |
+| <Link id="m-teleportoffset" /><code>{"Vector3 teleportOffset"}</code> |
+| <Link id="m-unlocktoactivateteleporternode" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlockToActivateTeleporterNode"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

@@ -17,24 +17,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LODLog(LODGroup group, float[] lods)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LODLog(LODGroup group, float[] lods)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-group" /><code>{"private LODGroup group"}</code> |  |
-| <Link id="m-lods" /><code>{"private float[] lods"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-group" /><code>{"private LODGroup group"}</code> |
+| <Link id="m-lods" /><code>{"private float[] lods"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-group-2" /><code>{"LODGroup Group { get; }"}</code> |  |
-| <Link id="m-isexpanding" /><code>{"bool IsExpanding { get; set; }"}</code> |  |
-| <Link id="m-lods-2" /><code>{"float[] LODs { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-group-2" /><code>{"LODGroup Group { get; }"}</code> |
+| <Link id="m-isexpanding" /><code>{"bool IsExpanding { get; set; }"}</code> |
+| <Link id="m-lods-2" /><code>{"float[] LODs { get; }"}</code> |
 
 ## Used in
 

@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.Populations`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacement)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacement)"}</code> |

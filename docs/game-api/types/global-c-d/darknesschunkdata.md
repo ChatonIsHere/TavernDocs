@@ -18,12 +18,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DarknessChunkData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DarknessChunkData()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> |

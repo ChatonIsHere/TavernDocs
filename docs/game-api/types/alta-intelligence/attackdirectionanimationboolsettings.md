@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AttackDirectionAnimationBoolSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AttackDirectionAnimationBoolSettings()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getanimation" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iattackdirectionanimation">{"IAttackDirectionAnimation"}</Link>{" GetAnimation { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getanimation" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iattackdirectionanimation">{"IAttackDirectionAnimation"}</Link>{" GetAnimation { get; }"}</code> |

@@ -19,13 +19,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TeleportationPointSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TeleportationPointSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-mode" /><code><Link to="/game-api/types/alta-player/teleportmode">{"TeleportMode"}</Link>{" mode"}</code> |  |
-| <Link id="m-targetposition" /><code>{"Vector3 targetPosition"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-mode" /><code><Link to="/game-api/types/alta-player/teleportmode">{"TeleportMode"}</Link>{" mode"}</code> |
+| <Link id="m-targetposition" /><code>{"Vector3 targetPosition"}</code> |

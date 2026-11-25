@@ -20,20 +20,25 @@ Base for items that can be melted down in a smelter (ingots, forged parts). The 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected MeltingModel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected MeltingModel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-androidmeshfilter" /><code>{"private MeshFilter androidMeshFilter"}</code> |  |
-| <Link id="m-heatpointcollection" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpointcollection">{"HeatPointCollection"}</Link>{" heatPointCollection"}</code> |  |
-| <Link id="m-ingotvalue" /><code>{"private float ingotValue"}</code> |  |
-| <Link id="m-istriggeringabilities" /><code>{"private bool istriggeringAbilities"}</code> |  |
-| <Link id="m-mainmeshfilter" /><code>{"private MeshFilter mainMeshFilter"}</code> |  |
-| <Link id="m-modifiers" /><code>{"private "}<Link to="/game-api/types/alta-crafting/meltingmodelmodifier">{"MeltingModelModifier"}</Link>{"[] modifiers"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androidmeshfilter" /><code>{"private MeshFilter androidMeshFilter"}</code> |
+| <Link id="m-heatpointcollection" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpointcollection">{"HeatPointCollection"}</Link>{" heatPointCollection"}</code> |
+| <Link id="m-ingotvalue" /><code>{"private float ingotValue"}</code> |
+| <Link id="m-istriggeringabilities" /><code>{"private bool istriggeringAbilities"}</code> |
+| <Link id="m-mainmeshfilter" /><code>{"private MeshFilter mainMeshFilter"}</code> |
+| <Link id="m-modifiers" /><code>{"private "}<Link to="/game-api/types/alta-crafting/meltingmodelmodifier">{"MeltingModelModifier"}</Link>{"[] modifiers"}</code> |
+
+</details>
 
 ## Properties
 
@@ -63,8 +68,16 @@ Base for items that can be melted down in a smelter (ingots, forged parts). The 
 | <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material, float ingotValue)"}</code> | Sets the material, and optionally the ingot value. |
 | <Link id="m-setup-2" /><code>{"void Setup("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material)"}</code> | Sets the material, and optionally the ingot value. |
 | <Link id="m-internalsetup" /><code>{"protected abstract void InternalSetup("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material)"}</code> | Sets the item's material. Subclasses implement it. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+
+</details>
 
 ## Used in
 

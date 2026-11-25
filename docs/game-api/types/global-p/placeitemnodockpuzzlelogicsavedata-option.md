@@ -17,16 +17,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Option()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Option()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] items"}</code> |  |
-| <Link id="m-output" /><code>{"int output"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-items" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] items"}</code> |
+| <Link id="m-output" /><code>{"int output"}</code> |
 
 ## Used in
 

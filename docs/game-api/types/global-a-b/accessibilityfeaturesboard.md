@@ -17,26 +17,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AccessibilityFeaturesBoard()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AccessibilityFeaturesBoard()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-acceptbutton" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" acceptButton"}</code> |  |
-| <Link id="m-acceptedmessage" /><code>{"private string acceptedMessage"}</code> |  |
-| <Link id="m-closebutton" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" closeButton"}</code> |  |
-| <Link id="m-declinebutton" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" declineButton"}</code> |  |
-| <Link id="m-declinedmessage" /><code>{"private string declinedMessage"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-acceptbutton" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" acceptButton"}</code> |
+| <Link id="m-acceptedmessage" /><code>{"private string acceptedMessage"}</code> |
+| <Link id="m-closebutton" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" closeButton"}</code> |
+| <Link id="m-declinebutton" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" declineButton"}</code> |
+| <Link id="m-declinedmessage" /><code>{"private string declinedMessage"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-accept" /><code>{"private void Accept()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-decline" /><code>{"private void Decline()"}</code> |  |
-| <Link id="m-setvalue" /><code>{"private void SetValue(bool settingValue)"}</code> |  |
-| <Link id="m-showclosebutton" /><code>{"private void ShowCloseButton()"}</code> |  |
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-accept" /><code>{"private void Accept()"}</code> |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-decline" /><code>{"private void Decline()"}</code> |
+| <Link id="m-setvalue" /><code>{"private void SetValue(bool settingValue)"}</code> |
+| <Link id="m-showclosebutton" /><code>{"private void ShowCloseButton()"}</code> |
+
+</details>

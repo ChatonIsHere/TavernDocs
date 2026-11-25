@@ -20,15 +20,15 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TreeSize()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TreeSize()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-subfolder" /><code>{"override string SubFolder { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-subfolder" /><code>{"override string SubFolder { get; }"}</code> |
 
 ## Used in
 

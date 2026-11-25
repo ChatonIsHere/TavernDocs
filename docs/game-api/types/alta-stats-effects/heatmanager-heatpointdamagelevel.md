@@ -17,30 +17,43 @@ A **private class** in `Root.Township`, `Alta.Heat`. Reach it through att-stubs'
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HeatPointDamageLevel(float hotTemperature, float ignitionTemperature, "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HeatPointDamageLevel(float hotTemperature, float ignitionTemperature, "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-changedlevel" /><code>{"Action<int> ChangedLevel"}</code> |  |
-| <Link id="m-burnlevels" /><code>{"private float[] burnLevels"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-changedlevel" /><code>{"Action<int> ChangedLevel"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-burnlevels" /><code>{"private float[] burnLevels"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-increasedtemperature" /><code>{"bool IncreasedTemperature { get; set; }"}</code> |  |
-| <Link id="m-level" /><code>{"int Level { get; private set; }"}</code> |  |
-| <Link id="m-temperature" /><code>{"float Temperature { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-increasedtemperature" /><code>{"bool IncreasedTemperature { get; set; }"}</code> |
+| <Link id="m-level" /><code>{"int Level { get; private set; }"}</code> |
+| <Link id="m-temperature" /><code>{"float Temperature { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updatetemperature" /><code>{"private void UpdateTemperature("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-updatetemperature" /><code>{"private void UpdateTemperature("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |
+
+</details>
 
 ## Used in
 

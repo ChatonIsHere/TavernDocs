@@ -19,21 +19,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpaceFilter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpaceFilter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allowedtypes" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" allowedTypes"}</code> |  |
-| <Link id="m-isnonspaceallowed" /><code>{"private bool isNonSpaceAllowed"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-redirects" /><code>{"private "}<Link to="/game-api/types/global-s/spacefilter-redirect">{"SpaceFilter.Redirect"}</Link>{"[] redirects"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-allowedtypes" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" allowedTypes"}</code> |
+| <Link id="m-isnonspaceallowed" /><code>{"private bool isNonSpaceAllowed"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-redirects" /><code>{"private "}<Link to="/game-api/types/global-s/spacefilter-redirect">{"SpaceFilter.Redirect"}</Link>{"[] redirects"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> |

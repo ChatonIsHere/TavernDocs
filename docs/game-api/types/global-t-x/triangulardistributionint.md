@@ -16,23 +16,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TriangularDistributionInt()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TriangularDistributionInt()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maximum" /><code>{"private int maximum"}</code> |  |
-| <Link id="m-minimum" /><code>{"private int minimum"}</code> |  |
-| <Link id="m-mode" /><code>{"private int mode"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maximum" /><code>{"private int maximum"}</code> |
+| <Link id="m-minimum" /><code>{"private int minimum"}</code> |
+| <Link id="m-mode" /><code>{"private int mode"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-randomvalue" /><code>{"int RandomValue { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-randomvalue" /><code>{"int RandomValue { get; }"}</code> |
 
 ## Used in
 

@@ -16,18 +16,18 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RegionInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RegionInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-countrycode" /><code>{"string CountryCode { get; set; }"}</code> |  |
-| <Link id="m-displayname" /><code>{"string DisplayName { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-pingaddress" /><code>{"IPAddress PingAddress { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-countrycode" /><code>{"string CountryCode { get; set; }"}</code> |
+| <Link id="m-displayname" /><code>{"string DisplayName { get; set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| <Link id="m-pingaddress" /><code>{"IPAddress PingAddress { get; set; }"}</code> |
 
 ## Used in
 

@@ -17,13 +17,23 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-s-hashinstanceid2ropedata" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/global-q-r/ropepersistmanager-ropedata">{"RopePersistManager.RopeData"}</Link>{"> s_hashInstanceID2RopeData"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-s-hashinstanceid2ropedata" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/global-q-r/ropepersistmanager-ropedata">{"RopePersistManager.RopeData"}</Link>{"> s_hashInstanceID2RopeData"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-computetransforminfo" /><code>{"private static "}<Link to="/game-api/types/global-q-r/ropepersistmanager-ropedata-transforminfo">{"RopePersistManager.RopeData.TransformInfo"}</Link>{" ComputeTransformInfo("}<Link to="/game-api/types/global-t-x/ultimaterope">{"UltimateRope"}</Link>{" rope, GameObject node, GameObject parent)"}</code> |  |
-| <Link id="m-settransforminfo" /><code>{"private static void SetTransformInfo("}<Link to="/game-api/types/global-q-r/ropepersistmanager-ropedata-transforminfo">{"RopePersistManager.RopeData.TransformInfo"}</Link>{" transformInfo, GameObject node)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-computetransforminfo" /><code>{"private static "}<Link to="/game-api/types/global-q-r/ropepersistmanager-ropedata-transforminfo">{"RopePersistManager.RopeData.TransformInfo"}</Link>{" ComputeTransformInfo("}<Link to="/game-api/types/global-t-x/ultimaterope">{"UltimateRope"}</Link>{" rope, GameObject node, GameObject parent)"}</code> |
+| <Link id="m-settransforminfo" /><code>{"private static void SetTransformInfo("}<Link to="/game-api/types/global-q-r/ropepersistmanager-ropedata-transforminfo">{"RopePersistManager.RopeData.TransformInfo"}</Link>{" transformInfo, GameObject node)"}</code> |
+
+</details>

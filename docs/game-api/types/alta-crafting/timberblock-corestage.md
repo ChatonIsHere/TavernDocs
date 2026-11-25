@@ -18,22 +18,22 @@ A **class** in `Root.Township`, `Alta.Carpentry`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CoreStage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CoreStage()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stagelevel" /><code>{"override "}<Link to="/game-api/types/alta-crafting/timberblock-stagelevel">{"TimberBlock.StageLevel"}</Link>{" "}<Link to="/game-api/types/alta-crafting/timberblock-stagelevel">{"StageLevel"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-stagelevel" /><code>{"override "}<Link to="/game-api/types/alta-crafting/timberblock-stagelevel">{"TimberBlock.StageLevel"}</Link>{" "}<Link to="/game-api/types/alta-crafting/timberblock-stagelevel">{"StageLevel"}</Link>{" { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-rotateto" /><code>{"override void RotateTo(bool isInversedUp)"}</code> |  |
-| <Link id="m-finalizestage" /><code>{"protected override void FinalizeStage(bool isForced)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-rotateto" /><code>{"override void RotateTo(bool isInversedUp)"}</code> |
+| <Link id="m-finalizestage" /><code>{"protected override void FinalizeStage(bool isForced)"}</code> |
 
 ## Used in
 

@@ -18,19 +18,24 @@ One controller input mode (for example a held item's mode) with action mappings 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ControllerActionMode()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ControllerActionMode()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allplatformsactionmapping" /><code>{"private "}<Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{" allPlatformsActionMapping"}</code> |  |
-| <Link id="m-modename" /><code>{"private string modeName"}</code> |  |
-| <Link id="m-platformactionmappings" /><code>{"private Dictionary<"}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{", "}<Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{"> platformActionMappings"}</code> |  |
-| <Link id="m-platformactionmappingslist" /><code>{"private List<"}<Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{"> platformActionMappingsList"}</code> |  |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" type"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-allplatformsactionmapping" /><code>{"private "}<Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{" allPlatformsActionMapping"}</code> |
+| <Link id="m-modename" /><code>{"private string modeName"}</code> |
+| <Link id="m-platformactionmappings" /><code>{"private Dictionary<"}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{", "}<Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{"> platformActionMappings"}</code> |
+| <Link id="m-platformactionmappingslist" /><code>{"private List<"}<Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{"> platformActionMappingsList"}</code> |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" type"}</code> |
+
+</details>
 
 ## Properties
 
@@ -47,7 +52,15 @@ One controller input mode (for example a held item's mode) with action mappings 
 | --- | --- |
 | <Link id="m-getmapping" /><code><Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{" GetMapping("}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" platform)"}</code> | The mapping for a player mode, or null. |
 | <Link id="m-setupplatformactionmappingslist" /><code>{"void SetupPlatformActionMappingsList()"}</code> | Links each platform mapping to this mode and to the all-platform mapping. |
-| <Link id="m-initializedictionary" /><code>{"private void InitializeDictionary()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-initializedictionary" /><code>{"private void InitializeDictionary()"}</code> |
+
+</details>
 
 ## Used in
 

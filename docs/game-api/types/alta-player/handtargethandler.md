@@ -17,33 +17,43 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HandTargetHandler()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HandTargetHandler()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-defaultsave" /><code>{"private TransformSave defaultSave"}</code> |  |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
-| <Link id="m-handtarget" /><code>{"private Transform handTarget"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-targetname" /><code>{"private string targetName"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-defaultsave" /><code>{"private TransformSave defaultSave"}</code> |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| <Link id="m-handtarget" /><code>{"private Transform handTarget"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-targetname" /><code>{"private string targetName"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handtarget-2" /><code>{"Transform HandTarget { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-handtarget-2" /><code>{"Transform HandTarget { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-assigntarget" /><code>{"private void AssignTarget(Transform newTarget)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-regeneratehandtarget" /><code>{"private void RegenerateHandTarget()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-assigntarget" /><code>{"private void AssignTarget(Transform newTarget)"}</code> |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-regeneratehandtarget" /><code>{"private void RegenerateHandTarget()"}</code> |
+
+</details>
 
 ## Used in
 

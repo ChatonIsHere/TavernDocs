@@ -20,9 +20,9 @@ A named event that remote console clients can subscribe to over the websocket. C
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ConsoleEvent(string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConsoleEvent(string name)"}</code> |
 
 ## Properties
 

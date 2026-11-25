@@ -18,22 +18,27 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CutableObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CutableObject()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-effect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effect"}</code> |  |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
-| <Link id="m-prefabtospawnonhit" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefabToSpawnOnHit"}</code> |  |
-| <Link id="m-spawningpoint" /><code>{"private Transform spawningPoint"}</code> |  |
-| <Link id="m-spawnvelocity" /><code>{"private Vector3 spawnVelocity"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-effect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effect"}</code> |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| <Link id="m-prefabtospawnonhit" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefabToSpawnOnHit"}</code> |
+| <Link id="m-spawningpoint" /><code>{"private Transform spawningPoint"}</code> |
+| <Link id="m-spawnvelocity" /><code>{"private Vector3 spawnVelocity"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hiteffect" /><code>{"protected override void HitEffect("}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" contact)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hiteffect" /><code>{"protected override void HitEffect("}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" contact)"}</code> |

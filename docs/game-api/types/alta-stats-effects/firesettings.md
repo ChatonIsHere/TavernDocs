@@ -22,23 +22,28 @@ An asset describing how a fire looks: light intensity, range and shadows, and ho
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FireSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FireSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialparticlesscale" /><code>{"private float initialParticlesScale"}</code> |  |
-| <Link id="m-intensity" /><code>{"private float intensity"}</code> |  |
-| <Link id="m-islightbrightnessmodified" /><code>{"private bool isLightBrightnessModified"}</code> |  |
-| <Link id="m-isparticlesscalemodified" /><code>{"private bool isParticlesScaleModified"}</code> |  |
-| <Link id="m-particlesscale" /><code>{"private AnimationCurve particlesScale"}</code> |  |
-| <Link id="m-particlesystemparametersoverlifetime" /><code>{"private AnimationCurve particleSystemParametersOverLifetime"}</code> |  |
-| <Link id="m-progressbrightnessmultiplier" /><code>{"private AnimationCurve progressBrightnessMultiplier"}</code> |  |
-| <Link id="m-range" /><code>{"private float range"}</code> |  |
-| <Link id="m-shadows" /><code>{"private LightShadows shadows"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-initialparticlesscale" /><code>{"private float initialParticlesScale"}</code> |
+| <Link id="m-intensity" /><code>{"private float intensity"}</code> |
+| <Link id="m-islightbrightnessmodified" /><code>{"private bool isLightBrightnessModified"}</code> |
+| <Link id="m-isparticlesscalemodified" /><code>{"private bool isParticlesScaleModified"}</code> |
+| <Link id="m-particlesscale" /><code>{"private AnimationCurve particlesScale"}</code> |
+| <Link id="m-particlesystemparametersoverlifetime" /><code>{"private AnimationCurve particleSystemParametersOverLifetime"}</code> |
+| <Link id="m-progressbrightnessmultiplier" /><code>{"private AnimationCurve progressBrightnessMultiplier"}</code> |
+| <Link id="m-range" /><code>{"private float range"}</code> |
+| <Link id="m-shadows" /><code>{"private LightShadows shadows"}</code> |
+
+</details>
 
 ## Properties
 

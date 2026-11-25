@@ -18,19 +18,32 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactModifierMultiplier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactModifierMultiplier()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modifyhit" /><code>{"override void ModifyHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modifyhit" /><code>{"override void ModifyHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

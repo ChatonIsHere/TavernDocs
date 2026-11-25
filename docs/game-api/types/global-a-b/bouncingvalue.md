@@ -17,24 +17,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BouncingValue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BouncingValue()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isincreasing" /><code>{"private bool isIncreasing"}</code> |  |
-| <Link id="m-onewayduration" /><code>{"private float oneWayDuration"}</code> |  |
-| <Link id="m-updatevalue" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateValue"}</code> |  |
-| <Link id="m-value" /><code>{"private float value"}</code> |  |
-| <Link id="m-valueupdated" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatunityevent">{"FloatUnityEvent"}</Link>{" valueUpdated"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isincreasing" /><code>{"private bool isIncreasing"}</code> |
+| <Link id="m-onewayduration" /><code>{"private float oneWayDuration"}</code> |
+| <Link id="m-updatevalue" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateValue"}</code> |
+| <Link id="m-value" /><code>{"private float value"}</code> |
+| <Link id="m-valueupdated" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatunityevent">{"FloatUnityEvent"}</Link>{" valueUpdated"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-updatevalue-2" /><code>{"private void UpdateValue()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-updatevalue-2" /><code>{"private void UpdateValue()"}</code> |
+
+</details>

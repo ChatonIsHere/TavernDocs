@@ -17,13 +17,13 @@ An **abstract class** in `Alta.VContainerLayer.Runtime`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Factory()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Factory()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-create" /><code>{"virtual TInterface Create(TParam1 param1, TParam2 param2, TParam3 param3)"}</code> |  |
-| <Link id="m-createinstance" /><code>{"protected abstract TInterface CreateInstance(TParam1 param1, TParam2 param2, TParam3 param3)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-create" /><code>{"virtual TInterface Create(TParam1 param1, TParam2 param2, TParam3 param3)"}</code> |
+| <Link id="m-createinstance" /><code>{"protected abstract TInterface CreateInstance(TParam1 param1, TParam2 param2, TParam3 param3)"}</code> |

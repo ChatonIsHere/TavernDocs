@@ -18,24 +18,29 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AgentFaceTargetSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AgentFaceTargetSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targetratio" /><code>{"private float targetRatio"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-targetratio" /><code>{"private float targetRatio"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targetratio-2" /><code>{"float TargetRatio { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-targetratio-2" /><code>{"float TargetRatio { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |

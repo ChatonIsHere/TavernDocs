@@ -22,47 +22,52 @@ Component on anything that can hit with its impactors (weapons, tools, arrows, c
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactTool()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactTool()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-blockablelayers" /><code>{"private LayerMask blockableLayers"}</code> |  |
-| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |  |
-| <Link id="m-collided" /><code>{"private UnityEvent collided"}</code> |  |
-| <Link id="m-collidedrigidbodies" /><code>{"private HashSet<Rigidbody> collidedRigidBodies"}</code> |  |
-| <Link id="m-currentlytrackingplayer" /><code>{"private "}<Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" currentlyTrackingPlayer"}</code> |  |
-| <Link id="m-damage" /><code>{"private float damage"}</code> |  |
-| <Link id="m-dualhandedmultiplier" /><code>{"private float dualHandedMultiplier"}</code> |  |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
-| <Link id="m-forceindeximpactors" /><code>{"private bool forceIndexImpactors"}</code> |  |
-| <Link id="m-haspickup" /><code>{"private bool hasPickup"}</code> |  |
-| <Link id="m-hit" /><code>{"private UnityEvent hit"}</code> |  |
-| <Link id="m-hitdependants" /><code>{"private Component[] hitDependants"}</code> |  |
-| <Link id="m-indexedimpactors" /><code>{"private List<"}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"> indexedImpactors"}</code> |  |
-| <Link id="m-isignoringinteractor" /><code>{"private bool isIgnoringInteractor"}</code> |  |
-| <Link id="m-isignoringvelocitycheck" /><code>{"private bool isIgnoringVelocityCheck"}</code> |  |
-| <Link id="m-ismedhandle" /><code>{"private bool isMedHandle"}</code> |  |
-| <Link id="m-isrecentgrab" /><code>{"private Coroutine isRecentGrab"}</code> |  |
-| <Link id="m-lengthaxis" /><code>{"private Vector3 lengthAxis"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-maps" /><code>{"private "}<Link to="/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{"[] maps"}</code> |  |
-| <Link id="m-needstobeprocessedinstantly" /><code>{"private bool needsToBeProcessedInstantly"}</code> |  |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |  |
-| <Link id="m-providesexperience" /><code>{"private bool providesExperience"}</code> |  |
-| <Link id="m-recorder" /><code>{"private "}<Link to="/game-api/types/global-p/positionrecorder">{"PositionRecorder"}</Link>{" recorder"}</code> |  |
-| <Link id="m-requiredblocklevel" /><code>{"private "}<Link to="/game-api/types/global-a-b/blocklevel">{"BlockLevel"}</Link>{" requiredBlockLevel"}</code> |  |
-| <Link id="m-resetconditions" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttool-resetconditions">{"ImpactTool.ResetConditions"}</Link>{" resetConditions"}</code> |  |
-| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |  |
-| <Link id="m-singlecontact" /><code>{"private static "}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{"[] singleContact"}</code> |  |
-| <Link id="m-singlehandedmultiplier" /><code>{"private float singleHandedMultiplier"}</code> |  |
-| <Link id="m-timetoselfhit" /><code>{"private float timeToSelfHit"}</code> |  |
-| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> |  |
-| <Link id="m-updatepositions" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updatePositions"}</code> |  |
-| <Link id="m-updatesposition" /><code>{"private bool updatesPosition"}</code> |  |
+<details>
+<summary>33 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-blockablelayers" /><code>{"private LayerMask blockableLayers"}</code> |
+| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |
+| <Link id="m-collided" /><code>{"private UnityEvent collided"}</code> |
+| <Link id="m-collidedrigidbodies" /><code>{"private HashSet<Rigidbody> collidedRigidBodies"}</code> |
+| <Link id="m-currentlytrackingplayer" /><code>{"private "}<Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" currentlyTrackingPlayer"}</code> |
+| <Link id="m-damage" /><code>{"private float damage"}</code> |
+| <Link id="m-dualhandedmultiplier" /><code>{"private float dualHandedMultiplier"}</code> |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| <Link id="m-forceindeximpactors" /><code>{"private bool forceIndexImpactors"}</code> |
+| <Link id="m-haspickup" /><code>{"private bool hasPickup"}</code> |
+| <Link id="m-hit" /><code>{"private UnityEvent hit"}</code> |
+| <Link id="m-hitdependants" /><code>{"private Component[] hitDependants"}</code> |
+| <Link id="m-indexedimpactors" /><code>{"private List<"}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"> indexedImpactors"}</code> |
+| <Link id="m-isignoringinteractor" /><code>{"private bool isIgnoringInteractor"}</code> |
+| <Link id="m-isignoringvelocitycheck" /><code>{"private bool isIgnoringVelocityCheck"}</code> |
+| <Link id="m-ismedhandle" /><code>{"private bool isMedHandle"}</code> |
+| <Link id="m-isrecentgrab" /><code>{"private Coroutine isRecentGrab"}</code> |
+| <Link id="m-lengthaxis" /><code>{"private Vector3 lengthAxis"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-maps" /><code>{"private "}<Link to="/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{"[] maps"}</code> |
+| <Link id="m-needstobeprocessedinstantly" /><code>{"private bool needsToBeProcessedInstantly"}</code> |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
+| <Link id="m-providesexperience" /><code>{"private bool providesExperience"}</code> |
+| <Link id="m-recorder" /><code>{"private "}<Link to="/game-api/types/global-p/positionrecorder">{"PositionRecorder"}</Link>{" recorder"}</code> |
+| <Link id="m-requiredblocklevel" /><code>{"private "}<Link to="/game-api/types/global-a-b/blocklevel">{"BlockLevel"}</Link>{" requiredBlockLevel"}</code> |
+| <Link id="m-resetconditions" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttool-resetconditions">{"ImpactTool.ResetConditions"}</Link>{" resetConditions"}</code> |
+| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |
+| <Link id="m-singlecontact" /><code>{"private static "}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{"[] singleContact"}</code> |
+| <Link id="m-singlehandedmultiplier" /><code>{"private float singleHandedMultiplier"}</code> |
+| <Link id="m-timetoselfhit" /><code>{"private float timeToSelfHit"}</code> |
+| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> |
+| <Link id="m-updatepositions" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updatePositions"}</code> |
+| <Link id="m-updatesposition" /><code>{"private bool updatesPosition"}</code> |
+
+</details>
 
 ## Properties
 
@@ -90,7 +95,15 @@ Component on anything that can hit with its impactors (weapons, tools, arrows, c
 | <Link id="m-rigidbody-2" /><code>{"Rigidbody Rigidbody { get; }"}</code> | The tool's own rigidbody. |
 | <Link id="m-velocity" /><code>{"virtual Vector3 Velocity { get; }"}</code> | Velocity of the pickup's rigidbody, or the tool's own if it has no pickup. |
 | <Link id="m-wielder" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Wielder { get; }"}</code> | The root entity holding the tool (last interactor), or the tool's own root if it has no pickup. |
-| <Link id="m-callcoroutine" /><code>{"private Coroutine CallCoroutine { get; set; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-callcoroutine" /><code>{"private Coroutine CallCoroutine { get; set; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -125,24 +138,32 @@ Component on anything that can hit with its impactors (weapons, tools, arrows, c
 | <Link id="m-startrecordingposition" /><code>{"void StartRecordingPosition()"}</code> | Starts recording positions if any impactor needs them. |
 | <Link id="m-updaterigidbody" /><code>{"void UpdateRigidbody()"}</code> | Re-reads the rigidbody from the game object. |
 | <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Gets a position recorder, hooks grab and release on the pickup and registers the impactors found in children. |
-| <Link id="m-deregisterplayer" /><code>{"private void DeregisterPlayer()"}</code> |  |
-| <Link id="m-getoverlapchannel" /><code>{"private bool GetOverlapChannel(List<"}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"> impactorChannels, "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] detectorChannels, out "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" overlap)"}</code> |  |
-| <Link id="m-grabbed" /><code>{"private void Grabbed("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-haptic" /><code>{"private void Haptic(AnimationCurve haptic)"}</code> |  |
 | <Link id="m-hit-2" /><code>{"protected void Hit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit)"}</code> | Protected: fires the inspector hit event, `OnHit` and the static `OnHitAny`. |
-| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-recentgrab" /><code>{"private IEnumerator RecentGrab() (iterator)"}</code> |  |
-| <Link id="m-registerimpactorchannels" /><code>{"private void RegisterImpactorChannels("}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{" impactor)"}</code> |  |
-| <Link id="m-released" /><code>{"private void Released("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-reset" /><code>{"private void Reset()"}</code> |  |
-| <Link id="m-setupimpactors" /><code>{"private void SetupImpactors()"}</code> |  |
-| <Link id="m-timetohurtself" /><code>{"private IEnumerator TimeToHurtSelf() (iterator)"}</code> |  |
-| <Link id="m-undockwakeup" /><code>{"private void UndockWakeUp("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
-| <Link id="m-updateindexedimpactors" /><code>{"private void UpdateIndexedImpactors()"}</code> |  |
-| <Link id="m-updateindexedimpactorsoncraftingpart" /><code>{"private void UpdateIndexedImpactorsOnCraftingPart("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part)"}</code> |  |
-| <Link id="m-updatepositions-2" /><code>{"private void UpdatePositions()"}</code> |  |
+
+<details>
+<summary>17 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-deregisterplayer" /><code>{"private void DeregisterPlayer()"}</code> |
+| <Link id="m-getoverlapchannel" /><code>{"private bool GetOverlapChannel(List<"}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"> impactorChannels, "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] detectorChannels, out "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" overlap)"}</code> |
+| <Link id="m-grabbed" /><code>{"private void Grabbed("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-haptic" /><code>{"private void Haptic(AnimationCurve haptic)"}</code> |
+| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-recentgrab" /><code>{"private IEnumerator RecentGrab() (iterator)"}</code> |
+| <Link id="m-registerimpactorchannels" /><code>{"private void RegisterImpactorChannels("}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{" impactor)"}</code> |
+| <Link id="m-released" /><code>{"private void Released("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-reset" /><code>{"private void Reset()"}</code> |
+| <Link id="m-setupimpactors" /><code>{"private void SetupImpactors()"}</code> |
+| <Link id="m-timetohurtself" /><code>{"private IEnumerator TimeToHurtSelf() (iterator)"}</code> |
+| <Link id="m-undockwakeup" /><code>{"private void UndockWakeUp("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
+| <Link id="m-updateindexedimpactors" /><code>{"private void UpdateIndexedImpactors()"}</code> |
+| <Link id="m-updateindexedimpactorsoncraftingpart" /><code>{"private void UpdateIndexedImpactorsOnCraftingPart("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part)"}</code> |
+| <Link id="m-updatepositions-2" /><code>{"private void UpdatePositions()"}</code> |
+
+</details>
 
 ## Used in
 

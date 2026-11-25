@@ -17,30 +17,43 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OptionsPanel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OptionsPanel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-buttonconfig" /><code>{"private "}<Link to="/game-api/types/alta-menus/optionspanelbuttonconfig">{"OptionsPanelButtonConfig"}</Link>{"[] buttonConfig"}</code> |  |
-| <Link id="m-currentbuttons" /><code>{"private List<GameObject> currentButtons"}</code> |  |
-| <Link id="m-parent" /><code>{"private Transform parent"}</code> |  |
-| <Link id="m-smallbackground" /><code>{"private GameObject smallBackground"}</code> |  |
-| <Link id="m-spacing" /><code>{"private float spacing"}</code> |  |
-| <Link id="m-tallbackground" /><code>{"private GameObject tallBackground"}</code> |  |
-| <Link id="m-text" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" text"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-buttonconfig" /><code>{"private "}<Link to="/game-api/types/alta-menus/optionspanelbuttonconfig">{"OptionsPanelButtonConfig"}</Link>{"[] buttonConfig"}</code> |
+| <Link id="m-currentbuttons" /><code>{"private List<GameObject> currentButtons"}</code> |
+| <Link id="m-parent" /><code>{"private Transform parent"}</code> |
+| <Link id="m-smallbackground" /><code>{"private GameObject smallBackground"}</code> |
+| <Link id="m-spacing" /><code>{"private float spacing"}</code> |
+| <Link id="m-tallbackground" /><code>{"private GameObject tallBackground"}</code> |
+| <Link id="m-text" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" text"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"void Setup(IEnumerable<"}<Link to="/game-api/types/alta-menus/optionsconfig">{"OptionsConfig"}</Link>{"> optionsConfig, string message = null)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-getprefab" /><code>{"private "}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" GetPrefab("}<Link to="/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" type)"}</code> |  |
-| <Link id="m-resetbuttons" /><code>{"private void ResetButtons()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"void Setup(IEnumerable<"}<Link to="/game-api/types/alta-menus/optionsconfig">{"OptionsConfig"}</Link>{"> optionsConfig, string message = null)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-getprefab" /><code>{"private "}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" GetPrefab("}<Link to="/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" type)"}</code> |
+| <Link id="m-resetbuttons" /><code>{"private void ResetButtons()"}</code> |
+
+</details>
 
 ## Used in
 

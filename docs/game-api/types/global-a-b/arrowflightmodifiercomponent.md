@@ -17,27 +17,37 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ArrowFlightModifierComponent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ArrowFlightModifierComponent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-craftingpart" /><code>{"private "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" craftingPart"}</code> |  |
-| <Link id="m-modifier" /><code>{"private "}<Link to="/game-api/types/global-a-b/arrowflightsettingsmodifier">{"ArrowFlightSettingsModifier"}</Link>{" modifier"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-craftingpart" /><code>{"private "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" craftingPart"}</code> |
+| <Link id="m-modifier" /><code>{"private "}<Link to="/game-api/types/global-a-b/arrowflightsettingsmodifier">{"ArrowFlightSettingsModifier"}</Link>{" modifier"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modifier-2" /><code><Link to="/game-api/types/global-a-b/arrowflightsettingsmodifier">{"ArrowFlightSettingsModifier"}</Link>{" Modifier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modifier-2" /><code><Link to="/game-api/types/global-a-b/arrowflightsettingsmodifier">{"ArrowFlightSettingsModifier"}</Link>{" Modifier { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-oncrafted" /><code>{"private void OnCrafted("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" slot, bool isLoad)"}</code> |  |
-| <Link id="m-ondecrafted" /><code>{"private void OnDecrafted("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" obj, bool isLoad)"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-oncrafted" /><code>{"private void OnCrafted("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" slot, bool isLoad)"}</code> |
+| <Link id="m-ondecrafted" /><code>{"private void OnDecrafted("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" obj, bool isLoad)"}</code> |
+
+</details>

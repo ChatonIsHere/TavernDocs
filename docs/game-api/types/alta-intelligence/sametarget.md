@@ -17,20 +17,25 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SameTarget(float sameValue, float differentValue = 1)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SameTarget(float sameValue, float differentValue = 1)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-differentvalue" /><code>{"private float differentValue"}</code> |  |
-| <Link id="m-samevalue" /><code>{"private float sameValue"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-differentvalue" /><code>{"private float differentValue"}</code> |
+| <Link id="m-samevalue" /><code>{"private float sameValue"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |

@@ -17,12 +17,12 @@ An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getlinkedaccount" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> GetLinkedAccount(ulong picoId, string picoToken, "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> |  |
-| <Link id="m-haslinkedaccount" /><code>{"Task<bool> HasLinkedAccount(ulong picoId, string picoToken, ulong altaId, "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> |  |
-| <Link id="m-linkloggedinaccount" /><code>{"Task LinkLoggedInAccount(ulong picoId, string userProof, "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> |  |
-| <Link id="m-unlinkloggedinaccount" /><code>{"Task UnlinkLoggedInAccount(ulong altaId)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getlinkedaccount" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> GetLinkedAccount(ulong picoId, string picoToken, "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> |
+| <Link id="m-haslinkedaccount" /><code>{"Task<bool> HasLinkedAccount(ulong picoId, string picoToken, ulong altaId, "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> |
+| <Link id="m-linkloggedinaccount" /><code>{"Task LinkLoggedInAccount(ulong picoId, string userProof, "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> |
+| <Link id="m-unlinkloggedinaccount" /><code>{"Task UnlinkLoggedInAccount(ulong altaId)"}</code> |
 
 ## Used in
 

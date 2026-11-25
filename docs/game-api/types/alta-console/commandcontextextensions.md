@@ -17,14 +17,19 @@ A **static class** in `Root.Township`, `Alta.Console`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-nullcontextmessage" /><code>{"private const string NullContextMessage"}</code> |  |
-| <Link id="m-sb" /><code>{"private static StringBuilder sb"}</code> |  |
-| <Link id="m-threadlock" /><code>{"private static readonly object threadLock"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-nullcontextmessage" /><code>{"private const string NullContextMessage"}</code> |
+| <Link id="m-sb" /><code>{"private static StringBuilder sb"}</code> |
+| <Link id="m-threadlock" /><code>{"private static readonly object threadLock"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getdebuginfo" /><code>{"static string GetDebugInfo("}<Link to="/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getdebuginfo" /><code>{"static string GetDebugInfo("}<Link to="/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> |

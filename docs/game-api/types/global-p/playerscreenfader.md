@@ -20,9 +20,9 @@ Fades the local player's view to and from black. Subclasses draw the fade. Locke
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PlayerScreenFader()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PlayerScreenFader()"}</code> |
 
 ## Fields
 
@@ -30,9 +30,17 @@ Fades the local player's view to and from black. Subclasses draw the fade. Locke
 | --- | --- |
 | <Link id="m-currentcallback" /><code>{"protected Action currentCallback"}</code> | Callback to run when the current fade ends. |
 | <Link id="m-currentfade" /><code>{"protected "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" currentFade"}</code> | The running fade coroutine. |
-| <Link id="m-fadeinlockers" /><code>{"private HashSet<object> fadeInLockers"}</code> |  |
 | <Link id="m-playercontroller" /><code>{"protected "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> | The player controller the fade belongs to; fade coroutines run on it. |
-| <Link id="m-playercontrollermultilockmodel" /><code>{"private "}<Link to="/game-api/types/global-i-l/iplayercontrollermultilockmodel">{"IPlayerControllerMultiLockModel"}</Link>{" playerControllerMultiLockModel"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fadeinlockers" /><code>{"private HashSet<object> fadeInLockers"}</code> |
+| <Link id="m-playercontrollermultilockmodel" /><code>{"private "}<Link to="/game-api/types/global-i-l/iplayercontrollermultilockmodel">{"IPlayerControllerMultiLockModel"}</Link>{" playerControllerMultiLockModel"}</code> |
+
+</details>
 
 ## Events
 
@@ -53,11 +61,19 @@ Fades the local player's view to and from black. Subclasses draw the fade. Locke
 | <Link id="m-instantset" /><code>{"void InstantSet(float alpha)"}</code> | Cancels any fade and sets the alpha at once. |
 | <Link id="m-removefadeinlocker" /><code>{"void RemoveFadeInLocker(object locker, float fadeDuration)"}</code> | Removes a lock and fades back in if none are left. |
 | <Link id="m-setfadedandfadebackin" /><code><Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" SetFadedAndFadeBackIn(float fadeInDuration, Action fadeCallback = null, float startDelay = 0)"}</code> | Snaps to black, then fades back in. |
-| <Link id="m-handlefade" /><code>{"private IEnumerator HandleFade(float duration, float alphaStart, float alphaEnd, float delay) (iterator)"}</code> |  |
 | <Link id="m-inject" /><code>{"protected void Inject("}<Link to="/game-api/types/global-i-l/iplayercontrollermultilockmodel">{"IPlayerControllerMultiLockModel"}</Link>{" playerControllerMultiLockModel)"}</code> | VContainer injection of the player controller lock model. |
 | <Link id="m-isfadelocked" /><code>{"protected bool IsFadeLocked()"}</code> | True while any locker is held. |
 | <Link id="m-lerpfadescreen" /><code>{"protected abstract IEnumerator LerpFadeScreen(float duration, float alphaStart, float alphaEnd)"}</code> | Subclass: animates the alpha over a duration. |
 | <Link id="m-set" /><code>{"protected abstract void Set(float alpha)"}</code> | Subclass: sets the alpha straight away. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-handlefade" /><code>{"private IEnumerator HandleFade(float duration, float alphaStart, float alphaEnd, float delay) (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

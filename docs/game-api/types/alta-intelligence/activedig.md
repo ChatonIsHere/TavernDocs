@@ -17,22 +17,35 @@ A **class** in `Root.Township`, `Alta.Intelligence.Wyrms`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveDig()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActiveDig()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration" /><code>{"private const float Duration"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-duration" /><code>{"private const float Duration"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getaction" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/activedig">{"ActiveDig"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/wyrmdigsettings">{"WyrmDigSettings"}</Link>{"> GetAction("}<Link to="/game-api/types/alta-intelligence/wyrmdigsettings">{"WyrmDigSettings"}</Link>{" settings)"}</code> |  |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |  |
-| <Link id="m-changesenses" /><code>{"private void ChangeSenses()"}</code> |  |
-| <Link id="m-digfinished" /><code>{"private void DigFinished("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |  |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getaction" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/activedig">{"ActiveDig"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/wyrmdigsettings">{"WyrmDigSettings"}</Link>{"> GetAction("}<Link to="/game-api/types/alta-intelligence/wyrmdigsettings">{"WyrmDigSettings"}</Link>{" settings)"}</code> |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-changesenses" /><code>{"private void ChangeSenses()"}</code> |
+| <Link id="m-digfinished" /><code>{"private void DigFinished("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |
+
+</details>

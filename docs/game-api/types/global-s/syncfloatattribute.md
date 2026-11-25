@@ -18,8 +18,8 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SyncFloatAttribute()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"SyncFloatAttribute(float minimum, float maximum, int bits)"}</code> |  |
-| <Link id="m-ctor-3" /><code>{"SyncFloatAttribute(float minimum, float maximum, float precision)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SyncFloatAttribute()"}</code> |
+| <Link id="m-ctor-2" /><code>{"SyncFloatAttribute(float minimum, float maximum, int bits)"}</code> |
+| <Link id="m-ctor-3" /><code>{"SyncFloatAttribute(float minimum, float maximum, float precision)"}</code> |

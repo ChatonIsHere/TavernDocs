@@ -20,39 +20,44 @@ Asset with the tuning for the downed state: gravestone, revive orbs other player
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DownedStateSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DownedStateSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angletorotatepersecond" /><code>{"private float angleToRotatePerSecond"}</code> |  |
-| <Link id="m-distancebeforeorbisforcereleased" /><code>{"private float distanceBeforeOrbIsForceReleased"}</code> |  |
-| <Link id="m-enterdownedstatesfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" enterDownedStateSfx"}</code> |  |
-| <Link id="m-enterdownedstatevfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" enterDownedStateVfx"}</code> |  |
-| <Link id="m-exitdownedstatesfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" exitDownedStateSfx"}</code> |  |
-| <Link id="m-exitdownedstatevfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" exitDownedStateVfx"}</code> |  |
-| <Link id="m-gravestone" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" gravestone"}</code> |  |
-| <Link id="m-healthpercentageforrevivedplayers" /><code>{"private float healthPercentageForRevivedPlayers"}</code> |  |
-| <Link id="m-healthstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" healthStat"}</code> |  |
-| <Link id="m-heightofrespawnorb" /><code>{"private float heightOfRespawnOrb"}</code> |  |
-| <Link id="m-heightofreviveorbs" /><code>{"private float heightOfReviveOrbs"}</code> |  |
-| <Link id="m-hungerstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" hungerStat"}</code> |  |
-| <Link id="m-numberofrevivalorbstospawn" /><code>{"private int numberOfRevivalOrbsToSpawn"}</code> |  |
-| <Link id="m-orbmovementrange" /><code>{"private Vector3 orbMovementRange"}</code> |  |
-| <Link id="m-orbmovementspeed" /><code>{"private float orbMovementSpeed"}</code> |  |
-| <Link id="m-respawndebuffdurationinseconds" /><code>{"private float respawnDebuffDurationInSeconds"}</code> |  |
-| <Link id="m-respawndebuffs" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmodifierconstructor">{"StatModifierConstructor"}</Link>{"[] respawnDebuffs"}</code> |  |
-| <Link id="m-respawnorbdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" respawnOrbDefinition"}</code> |  |
-| <Link id="m-respawnorbdistancefromplayer" /><code>{"private float respawnOrbDistanceFromPlayer"}</code> |  |
-| <Link id="m-revivalorbdistancefromdownedplayer" /><code>{"private float revivalOrbDistanceFromDownedPlayer"}</code> |  |
-| <Link id="m-revivalorbdistancefromgrave" /><code>{"private float revivalOrbDistanceFromGrave"}</code> |  |
-| <Link id="m-reviveorb" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" reviveOrb"}</code> |  |
-| <Link id="m-rotatingobject" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" rotatingObject"}</code> |  |
-| <Link id="m-secondsaddedtorevivaltimerperorb" /><code>{"private float secondsAddedToRevivalTimerPerOrb"}</code> |  |
-| <Link id="m-spawnablelayers" /><code>{"private LayerMask spawnableLayers"}</code> |  |
+<details>
+<summary>25 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-angletorotatepersecond" /><code>{"private float angleToRotatePerSecond"}</code> |
+| <Link id="m-distancebeforeorbisforcereleased" /><code>{"private float distanceBeforeOrbIsForceReleased"}</code> |
+| <Link id="m-enterdownedstatesfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" enterDownedStateSfx"}</code> |
+| <Link id="m-enterdownedstatevfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" enterDownedStateVfx"}</code> |
+| <Link id="m-exitdownedstatesfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" exitDownedStateSfx"}</code> |
+| <Link id="m-exitdownedstatevfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" exitDownedStateVfx"}</code> |
+| <Link id="m-gravestone" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" gravestone"}</code> |
+| <Link id="m-healthpercentageforrevivedplayers" /><code>{"private float healthPercentageForRevivedPlayers"}</code> |
+| <Link id="m-healthstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" healthStat"}</code> |
+| <Link id="m-heightofrespawnorb" /><code>{"private float heightOfRespawnOrb"}</code> |
+| <Link id="m-heightofreviveorbs" /><code>{"private float heightOfReviveOrbs"}</code> |
+| <Link id="m-hungerstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" hungerStat"}</code> |
+| <Link id="m-numberofrevivalorbstospawn" /><code>{"private int numberOfRevivalOrbsToSpawn"}</code> |
+| <Link id="m-orbmovementrange" /><code>{"private Vector3 orbMovementRange"}</code> |
+| <Link id="m-orbmovementspeed" /><code>{"private float orbMovementSpeed"}</code> |
+| <Link id="m-respawndebuffdurationinseconds" /><code>{"private float respawnDebuffDurationInSeconds"}</code> |
+| <Link id="m-respawndebuffs" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmodifierconstructor">{"StatModifierConstructor"}</Link>{"[] respawnDebuffs"}</code> |
+| <Link id="m-respawnorbdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" respawnOrbDefinition"}</code> |
+| <Link id="m-respawnorbdistancefromplayer" /><code>{"private float respawnOrbDistanceFromPlayer"}</code> |
+| <Link id="m-revivalorbdistancefromdownedplayer" /><code>{"private float revivalOrbDistanceFromDownedPlayer"}</code> |
+| <Link id="m-revivalorbdistancefromgrave" /><code>{"private float revivalOrbDistanceFromGrave"}</code> |
+| <Link id="m-reviveorb" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" reviveOrb"}</code> |
+| <Link id="m-rotatingobject" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" rotatingObject"}</code> |
+| <Link id="m-secondsaddedtorevivaltimerperorb" /><code>{"private float secondsAddedToRevivalTimerPerOrb"}</code> |
+| <Link id="m-spawnablelayers" /><code>{"private LayerMask spawnableLayers"}</code> |
+
+</details>
 
 ## Properties
 

@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Node()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Node()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-id" /><code>{"int id"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-radius" /><code>{"float radius"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-id" /><code>{"int id"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| <Link id="m-radius" /><code>{"float radius"}</code> |
 
 ## Used in
 

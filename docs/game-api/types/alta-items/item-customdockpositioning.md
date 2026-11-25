@@ -18,21 +18,26 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CustomDockPositioning("}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" type, Vector3 storePosition, Vector3 storeEuler)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CustomDockPositioning("}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" type, Vector3 storePosition, Vector3 storeEuler)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-docktype" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" dockType"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-docktype" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" dockType"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-type" /><code><Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" Type { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-type" /><code><Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" Type { get; }"}</code> |
 
 ## Used in
 

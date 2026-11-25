@@ -19,15 +19,20 @@ The fly cam's generated input action map. Keyboard, mouse and gamepad bindings f
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingActions("}<Link to="/game-api/types/global-e-h/flycaminput">{"FlyCamInput"}</Link>{" wrapper)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayingActions("}<Link to="/game-api/types/global-e-h/flycaminput">{"FlyCamInput"}</Link>{" wrapper)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-m-wrapper" /><code>{"private "}<Link to="/game-api/types/global-e-h/flycaminput">{"FlyCamInput"}</Link>{" m_Wrapper"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-m-wrapper" /><code>{"private "}<Link to="/game-api/types/global-e-h/flycaminput">{"FlyCamInput"}</Link>{" m_Wrapper"}</code> |
+
+</details>
 
 ## Properties
 

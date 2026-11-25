@@ -18,15 +18,15 @@ A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformSpecificScriptableObjectInstaller()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformSpecificScriptableObjectInstaller()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-install" /><code>{"virtual void Install(IContainerBuilder builder)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-install" /><code>{"virtual void Install(IContainerBuilder builder)"}</code> |
 
 ## Used in
 

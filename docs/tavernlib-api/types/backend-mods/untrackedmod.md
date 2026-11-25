@@ -19,9 +19,9 @@ A DLL or folder in `Mods` that TavernLib's mod manager didn't install. Never res
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UntrackedMod()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UntrackedMod()"}</code> |
 
 ## Fields
 

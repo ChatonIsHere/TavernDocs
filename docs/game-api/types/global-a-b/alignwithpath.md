@@ -19,18 +19,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AlignWithPath()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AlignWithPath()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hill" /><code>{"private "}<Link to="/game-api/types/global-a-b/alignwithpath-hill">{"AlignWithPath.Hill"}</Link>{" hill"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-hill" /><code>{"private "}<Link to="/game-api/types/global-a-b/alignwithpath-hill">{"AlignWithPath.Hill"}</Link>{" hill"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> |

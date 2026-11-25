@@ -16,13 +16,13 @@ A **static class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModel
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-itemsetprefix" /><code>{"const string ItemSetPrefix"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-itemsetprefix" /><code>{"const string ItemSetPrefix"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ensureitemsetsku" /><code>{"static string EnsureItemSetSku(string sku)"}</code> |  |
-| <Link id="m-isitemset" /><code>{"static bool IsItemSet(string itemSku)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ensureitemsetsku" /><code>{"static string EnsureItemSetSku(string sku)"}</code> |
+| <Link id="m-isitemset" /><code>{"static bool IsItemSet(string itemSku)"}</code> |

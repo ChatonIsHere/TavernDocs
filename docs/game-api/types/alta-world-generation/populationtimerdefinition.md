@@ -19,23 +19,23 @@ An **abstract class** in `Root.Township`, `Alta.Populations`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PopulationTimerDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PopulationTimerDefinition()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-elementdecaytime" /><code>{"abstract float ElementDecayTime { get; }"}</code> |  |
-| <Link id="m-spawnoninitialize" /><code>{"abstract bool SpawnOnInitialize { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-elementdecaytime" /><code>{"abstract float ElementDecayTime { get; }"}</code> |
+| <Link id="m-spawnoninitialize" /><code>{"abstract bool SpawnOnInitialize { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clean" /><code>{"abstract void Clean("}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> |  |
-| <Link id="m-setup" /><code>{"abstract void Setup("}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clean" /><code>{"abstract void Clean("}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> |
+| <Link id="m-setup" /><code>{"abstract void Setup("}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> |
 
 ## Used in
 

@@ -19,14 +19,14 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DrawBridgeLogicSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DrawBridgeLogicSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angletorotatesaved" /><code>{"float angleToRotateSaved"}</code> |  |
-| <Link id="m-isupsaved" /><code>{"bool isUpSaved"}</code> |  |
-| <Link id="m-rotationtimesaved" /><code>{"float rotationTimeSaved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-angletorotatesaved" /><code>{"float angleToRotateSaved"}</code> |
+| <Link id="m-isupsaved" /><code>{"bool isUpSaved"}</code> |
+| <Link id="m-rotationtimesaved" /><code>{"float rotationTimeSaved"}</code> |

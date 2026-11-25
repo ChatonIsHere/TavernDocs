@@ -21,9 +21,9 @@ A point in the forest generator's graph, with a radius. Paths join it to other n
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Node(int index, Vector2 position, float height, float radius)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Node(int index, Vector2 position, float height, float radius)"}</code> |
 
 ## Properties
 

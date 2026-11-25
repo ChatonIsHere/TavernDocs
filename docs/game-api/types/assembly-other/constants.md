@@ -19,8 +19,8 @@ The `PlayerPreferences` key names for the three tokens.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-storedaccesstokenname" /><code>{"const string StoredAccessTokenName"}</code> |  |
-| <Link id="m-storedidentitytokenname" /><code>{"const string StoredIdentityTokenName"}</code> |  |
-| <Link id="m-storedrefreshtokenname" /><code>{"const string StoredRefreshTokenName"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-storedaccesstokenname" /><code>{"const string StoredAccessTokenName"}</code> |
+| <Link id="m-storedidentitytokenname" /><code>{"const string StoredIdentityTokenName"}</code> |
+| <Link id="m-storedrefreshtokenname" /><code>{"const string StoredRefreshTokenName"}</code> |

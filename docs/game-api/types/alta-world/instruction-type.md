@@ -17,12 +17,12 @@ An **enum** in `Root.Township`, `Alta.Static`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forestgcore" /><code>{"ForestGCore = 3"}</code> |  |
-| <Link id="m-rivergcore" /><code>{"RiverGCore = 4"}</code> |  |
-| <Link id="m-spawn" /><code>{"Spawn = 1"}</code> |  |
-| <Link id="m-spline" /><code>{"Spline = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-forestgcore" /><code>{"ForestGCore = 3"}</code> |
+| <Link id="m-rivergcore" /><code>{"RiverGCore = 4"}</code> |
+| <Link id="m-spawn" /><code>{"Spawn = 1"}</code> |
+| <Link id="m-spline" /><code>{"Spline = 2"}</code> |
 
 ## Used in
 

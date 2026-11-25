@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, `ATT.EventBus.TownshipEvents`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isrelevant" /><code>{"static bool IsRelevant("}<Link to="/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{" playerEvent, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isrelevant" /><code>{"static bool IsRelevant("}<Link to="/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{" playerEvent, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |

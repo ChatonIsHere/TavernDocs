@@ -16,6 +16,6 @@ A **static class** in `Root.Township`, `Alta`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-linesegmentsintersection" /><code>{"static bool LineSegmentsIntersection(Vector2 a1, Vector2 a2, Vector2 b1, Vector3 b2, out float aProgress, out float bProgress)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-linesegmentsintersection" /><code>{"static bool LineSegmentsIntersection(Vector2 a1, Vector2 a2, Vector2 b1, Vector3 b2, out float aProgress, out float bProgress)"}</code> |

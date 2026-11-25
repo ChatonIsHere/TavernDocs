@@ -19,26 +19,31 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProgressStatChangeHook()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProgressStatChangeHook()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addedvalueovertime" /><code>{"private AnimationCurve addedValueOverTime"}</code> |  |
-| <Link id="m-isnormalizedtime" /><code>{"private bool isNormalizedTime"}</code> |  |
-| <Link id="m-progresses" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/progressstatchangehook-topicprogress">{"ProgressStatChangeHook.TopicProgress"}</Link>{"> progresses"}</code> |  |
-| <Link id="m-removeonend" /><code>{"private bool removeOnEnd"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-addedvalueovertime" /><code>{"private AnimationCurve addedValueOverTime"}</code> |
+| <Link id="m-isnormalizedtime" /><code>{"private bool isNormalizedTime"}</code> |
+| <Link id="m-progresses" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/progressstatchangehook-topicprogress">{"ProgressStatChangeHook.TopicProgress"}</Link>{"> progresses"}</code> |
+| <Link id="m-removeonend" /><code>{"private bool removeOnEnd"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-valueovertime" /><code>{"float ValueOverTime(float time)"}</code> |  |
-| <Link id="m-affectonend" /><code>{"protected override void AffectOnEnd("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |  |
-| <Link id="m-affectonstart" /><code>{"protected override void AffectOnStart("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-valueovertime" /><code>{"float ValueOverTime(float time)"}</code> |
+| <Link id="m-affectonend" /><code>{"protected override void AffectOnEnd("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |
+| <Link id="m-affectonstart" /><code>{"protected override void AffectOnStart("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> |
 
 ## Used in
 

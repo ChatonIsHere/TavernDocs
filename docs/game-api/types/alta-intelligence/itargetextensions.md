@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-exists" /><code>{"static bool Exists("}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-exists" /><code>{"static bool Exists("}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |

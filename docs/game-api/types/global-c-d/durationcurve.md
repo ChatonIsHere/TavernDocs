@@ -18,16 +18,21 @@ A serializable animation curve paired with a duration in seconds.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DurationCurve(AnimationCurve curve, float duration)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DurationCurve(AnimationCurve curve, float duration)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> |  |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> |
+| <Link id="m-duration" /><code>{"private float duration"}</code> |
+
+</details>
 
 ## Properties
 

@@ -17,6 +17,6 @@ A **static class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModel
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-toquerystring" /><code>{"static string ToQueryString(NameValueCollection nvc)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-toquerystring" /><code>{"static string ToQueryString(NameValueCollection nvc)"}</code> |

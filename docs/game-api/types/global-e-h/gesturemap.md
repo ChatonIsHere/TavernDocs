@@ -19,32 +19,37 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GestureMap()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GestureMap()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gesturemap" /><code>{"private Dictionary<int, "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{"> gestureMap"}</code> |  |
-| <Link id="m-gesturemappings" /><code>{"private "}<Link to="/game-api/types/global-e-h/gesturemap-gesturemapping">{"GestureMap.GestureMapping"}</Link>{"[] gestureMappings"}</code> |  |
-| <Link id="m-idlegesture" /><code>{"private "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{" idleGesture"}</code> |  |
-| <Link id="m-isgradualgrip" /><code>{"private bool isGradualGrip"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-gesturemap" /><code>{"private Dictionary<int, "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{"> gestureMap"}</code> |
+| <Link id="m-gesturemappings" /><code>{"private "}<Link to="/game-api/types/global-e-h/gesturemap-gesturemapping">{"GestureMap.GestureMapping"}</Link>{"[] gestureMappings"}</code> |
+| <Link id="m-idlegesture" /><code>{"private "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{" idleGesture"}</code> |
+| <Link id="m-isgradualgrip" /><code>{"private bool isGradualGrip"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-idlegesture-2" /><code><Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{" IdleGesture { get; }"}</code> |  |
-| <Link id="m-isgradualgrip-2" /><code>{"bool IsGradualGrip { get; }"}</code> |  |
-| <Link id="m-map" /><code>{"Dictionary<int, "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{"> Map { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-idlegesture-2" /><code><Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{" IdleGesture { get; }"}</code> |
+| <Link id="m-isgradualgrip-2" /><code>{"bool IsGradualGrip { get; }"}</code> |
+| <Link id="m-map" /><code>{"Dictionary<int, "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{"> Map { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setupdictionary" /><code>{"void SetupDictionary()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setupdictionary" /><code>{"void SetupDictionary()"}</code> |
 
 ## Used in
 

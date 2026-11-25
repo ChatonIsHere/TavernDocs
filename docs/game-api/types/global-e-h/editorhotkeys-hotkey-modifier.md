@@ -18,11 +18,11 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alt" /><code>{"Alt = 4"}</code> |  |
-| <Link id="m-ctrl" /><code>{"Ctrl = 1"}</code> |  |
-| <Link id="m-shift" /><code>{"Shift = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-alt" /><code>{"Alt = 4"}</code> |
+| <Link id="m-ctrl" /><code>{"Ctrl = 1"}</code> |
+| <Link id="m-shift" /><code>{"Shift = 2"}</code> |
 
 ## Used in
 

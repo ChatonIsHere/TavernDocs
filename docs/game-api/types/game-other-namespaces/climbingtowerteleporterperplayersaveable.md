@@ -18,6 +18,6 @@ A **class** in `Root.Township`, `Features.Gameplay.ClimbingTower`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterPerPlayerSaveable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterPerPlayerSaveable()"}</code> |

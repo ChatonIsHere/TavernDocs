@@ -19,23 +19,28 @@ Player controller for the auto camera mode: a camera that orbits and frames near
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AutoCamPlayer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AutoCamPlayer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cameratilt" /><code>{"private float cameraTilt"}</code> |  |
-| <Link id="m-gameobjecttoenableonlocal" /><code>{"private GameObject gameObjectToEnableOnLocal"}</code> |  |
-| <Link id="m-heightbuffer" /><code>{"private float heightBuffer"}</code> |  |
-| <Link id="m-lerprotation" /><code>{"private float lerpRotation"}</code> |  |
-| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |  |
-| <Link id="m-maximumdistance" /><code>{"private float maximumDistance"}</code> |  |
-| <Link id="m-rotationspeed" /><code>{"private float rotationSpeed"}</code> |  |
-| <Link id="m-topic" /><code>{"private Camera topic"}</code> |  |
-| <Link id="m-widthbuffer" /><code>{"private float widthBuffer"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cameratilt" /><code>{"private float cameraTilt"}</code> |
+| <Link id="m-gameobjecttoenableonlocal" /><code>{"private GameObject gameObjectToEnableOnLocal"}</code> |
+| <Link id="m-heightbuffer" /><code>{"private float heightBuffer"}</code> |
+| <Link id="m-lerprotation" /><code>{"private float lerpRotation"}</code> |
+| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |
+| <Link id="m-maximumdistance" /><code>{"private float maximumDistance"}</code> |
+| <Link id="m-rotationspeed" /><code>{"private float rotationSpeed"}</code> |
+| <Link id="m-topic" /><code>{"private Camera topic"}</code> |
+| <Link id="m-widthbuffer" /><code>{"private float widthBuffer"}</code> |
+
+</details>
 
 ## Properties
 
@@ -57,7 +62,15 @@ Player controller for the auto camera mode: a camera that orbits and frames near
 | Member | What it is |
 | --- | --- |
 | <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Enables the local-only object once linked to the local player. |
-| <Link id="m-onlinkedtoplayer" /><code>{"private void OnLinkedToPlayer()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onlinkedtoplayer" /><code>{"private void OnLinkedToPlayer()"}</code> |
+
+</details>
 
 ## Used in
 

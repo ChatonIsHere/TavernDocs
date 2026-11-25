@@ -16,16 +16,16 @@ A **class** in `Root.Township`, `ATT.MicroTutorial`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TutorialCompletedMessage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TutorialCompletedMessage()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> |  |
-| <Link id="m-title" /><code>{"string Title { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> |
+| <Link id="m-title" /><code>{"string Title { get; private set; }"}</code> |
 
 ## Used in
 

@@ -20,19 +20,27 @@ Base for simple code-driven transform animations that tick through the budgeted 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected TransformScriptAnimation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected TransformScriptAnimation()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-animatingtransform" /><code>{"protected Transform animatingTransform"}</code> | The transform being animated, cached from this object. |
-| <Link id="m-autostart" /><code>{"private bool autoStart"}</code> |  |
-| <Link id="m-isallowedtorun" /><code>{"private bool isAllowedToRun"}</code> |  |
-| <Link id="m-isdisabledonserver" /><code>{"private bool isDisabledOnServer"}</code> |  |
-| <Link id="m-updater" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updater"}</code> |  |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-autostart" /><code>{"private bool autoStart"}</code> |
+| <Link id="m-isallowedtorun" /><code>{"private bool isAllowedToRun"}</code> |
+| <Link id="m-isdisabledonserver" /><code>{"private bool isDisabledOnServer"}</code> |
+| <Link id="m-updater" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updater"}</code> |
+
+</details>
 
 ## Properties
 
@@ -49,6 +57,14 @@ Base for simple code-driven transform animations that tick through the budgeted 
 | <Link id="m-resetstate" /><code>{"virtual void ResetState()"}</code> | Called when the animation stops, to put the transform back. Does nothing unless overridden. |
 | <Link id="m-startanimating" /><code>{"void StartAnimating()"}</code> | Registers `UpdateAnimation` with the budgeted updater if not already running. |
 | <Link id="m-stopanimating" /><code>{"void StopAnimating()"}</code> | Unregisters the update and calls `ResetState`. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
 | <Link id="m-start" /><code>{"protected virtual void Start()"}</code> | Works out whether it may run on this side and starts animating if auto start is on. |
 | <Link id="m-updateanimation" /><code>{"protected abstract void UpdateAnimation()"}</code> | Called each budgeted update while active. Subclasses move the transform here. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>

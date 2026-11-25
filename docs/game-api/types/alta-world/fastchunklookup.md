@@ -18,22 +18,27 @@ Fast lookup from positions or bounds to location chunks. Overworld chunks sit in
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FastChunkLookup(IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> chunks)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FastChunkLookup(IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> chunks)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunksize" /><code>{"private float chunkSize"}</code> |  |
-| <Link id="m-chunksperside" /><code>{"private int chunksPerSide"}</code> |  |
-| <Link id="m-maporigin" /><code>{"private Vector3 mapOrigin"}</code> |  |
-| <Link id="m-maxy" /><code>{"private float maxY"}</code> |  |
-| <Link id="m-miny" /><code>{"private float minY"}</code> |  |
-| <Link id="m-otherchunkbounds" /><code>{"private Bounds otherChunkBounds"}</code> |  |
-| <Link id="m-otherchunks" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> otherChunks"}</code> |  |
-| <Link id="m-overworldchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/overworldchunk">{"OverworldChunk"}</Link>{"[,] overworldChunks"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-chunksize" /><code>{"private float chunkSize"}</code> |
+| <Link id="m-chunksperside" /><code>{"private int chunksPerSide"}</code> |
+| <Link id="m-maporigin" /><code>{"private Vector3 mapOrigin"}</code> |
+| <Link id="m-maxy" /><code>{"private float maxY"}</code> |
+| <Link id="m-miny" /><code>{"private float minY"}</code> |
+| <Link id="m-otherchunkbounds" /><code>{"private Bounds otherChunkBounds"}</code> |
+| <Link id="m-otherchunks" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> otherChunks"}</code> |
+| <Link id="m-overworldchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/overworldchunk">{"OverworldChunk"}</Link>{"[,] overworldChunks"}</code> |
+
+</details>
 
 ## Properties
 
@@ -58,10 +63,18 @@ Fast lookup from positions or bounds to location chunks. Overworld chunks sit in
 | <Link id="m-registerotherchunk" /><code>{"void RegisterOtherChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Adds a non-overworld chunk to the lookup. |
 | <Link id="m-removeotherchunk" /><code>{"void RemoveOtherChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" otherChunk)"}</code> | Same as `DeregisterOtherChunk`. |
 | <Link id="m-resetotherchunksbounds" /><code>{"void ResetOtherChunksBounds()"}</code> | Recomputes the combined bounds of all non-overworld chunks. |
-| <Link id="m-addchunksingrid" /><code>{"private void AddChunksInGrid(HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> chunks, int xMin, int xMax, int z, int xCenter, int zCenter, float totalRadius)"}</code> |  |
-| <Link id="m-getbestchunk" /><code>{"private static "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" GetBestChunk(IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> chunks)"}</code> |  |
-| <Link id="m-getxindex" /><code>{"private int GetXIndex(float x)"}</code> |  |
-| <Link id="m-getzindex" /><code>{"private int GetZIndex(float z)"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-addchunksingrid" /><code>{"private void AddChunksInGrid(HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> chunks, int xMin, int xMax, int z, int xCenter, int zCenter, float totalRadius)"}</code> |
+| <Link id="m-getbestchunk" /><code>{"private static "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" GetBestChunk(IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> chunks)"}</code> |
+| <Link id="m-getxindex" /><code>{"private int GetXIndex(float x)"}</code> |
+| <Link id="m-getzindex" /><code>{"private int GetZIndex(float z)"}</code> |
+
+</details>
 
 ## Used in
 

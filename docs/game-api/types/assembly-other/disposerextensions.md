@@ -17,7 +17,7 @@ A **static class** in `Alta.LifecycleManagement.Runtime`, `Alta.LifecycleManagem
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addtodisposer" /><code>{"static T AddToDisposer<T>(T disposable, "}<Link to="/game-api/types/assembly-other/idisposer">{"IDisposer"}</Link>{" disposer)"}</code> |  |
-| <Link id="m-ondisposal" /><code>{"static "}<Link to="/game-api/types/assembly-other/idisposer">{"IDisposer"}</Link>{" OnDisposal("}<Link to="/game-api/types/assembly-other/idisposer">{"IDisposer"}</Link>{" disposer, Action action)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addtodisposer" /><code>{"static T AddToDisposer<T>(T disposable, "}<Link to="/game-api/types/assembly-other/idisposer">{"IDisposer"}</Link>{" disposer)"}</code> |
+| <Link id="m-ondisposal" /><code>{"static "}<Link to="/game-api/types/assembly-other/idisposer">{"IDisposer"}</Link>{" OnDisposal("}<Link to="/game-api/types/assembly-other/idisposer">{"IDisposer"}</Link>{" disposer, Action action)"}</code> |

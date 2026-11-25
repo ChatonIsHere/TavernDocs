@@ -19,13 +19,13 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RotatePickupSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RotatePickupSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxrotatepersecondperhandsaved" /><code>{"float maxRotatePerSecondPerHandSaved"}</code> |  |
-| <Link id="m-maxrotatepersecondtotalsaved" /><code>{"float maxRotatePerSecondTotalSaved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maxrotatepersecondperhandsaved" /><code>{"float maxRotatePerSecondPerHandSaved"}</code> |
+| <Link id="m-maxrotatepersecondtotalsaved" /><code>{"float maxRotatePerSecondTotalSaved"}</code> |

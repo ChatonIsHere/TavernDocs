@@ -17,17 +17,17 @@ A **delegate** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AStarDestinationCondition(object object, IntPtr method)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AStarDestinationCondition(object object, IntPtr method)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(TNode node, AsyncCallback callback, object object)"}</code> |  |
-| <Link id="m-endinvoke" /><code>{"virtual bool EndInvoke(IAsyncResult result)"}</code> |  |
-| <Link id="m-invoke" /><code>{"virtual bool Invoke(TNode node)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(TNode node, AsyncCallback callback, object object)"}</code> |
+| <Link id="m-endinvoke" /><code>{"virtual bool EndInvoke(IAsyncResult result)"}</code> |
+| <Link id="m-invoke" /><code>{"virtual bool Invoke(TNode node)"}</code> |
 
 ## Used in
 

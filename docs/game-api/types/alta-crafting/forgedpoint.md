@@ -21,21 +21,26 @@ One point on a piece of forged metal that fills as it is hammered while hot. Syn
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ForgedPoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ForgedPoint()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-completeareatothicknessmultiplier" /><code>{"private float completeAreaToThicknessMultiplier"}</code> |  |
-| <Link id="m-heatpoint" /><code>{"private "}<Link to="/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{" heatPoint"}</code> |  |
-| <Link id="m-incompleteareatothicknessmultiplier" /><code>{"private float incompleteAreaToThicknessMultiplier"}</code> |  |
-| <Link id="m-ischangedsynclastsync" /><code>{"private bool isChangedSyncLastSync"}</code> |  |
-| <Link id="m-isfinished" /><code>{"private bool isFinished"}</code> |  |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |  |
-| <Link id="m-progressmultiplier" /><code>{"private float progressMultiplier"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-completeareatothicknessmultiplier" /><code>{"private float completeAreaToThicknessMultiplier"}</code> |
+| <Link id="m-heatpoint" /><code>{"private "}<Link to="/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{" heatPoint"}</code> |
+| <Link id="m-incompleteareatothicknessmultiplier" /><code>{"private float incompleteAreaToThicknessMultiplier"}</code> |
+| <Link id="m-ischangedsynclastsync" /><code>{"private bool isChangedSyncLastSync"}</code> |
+| <Link id="m-isfinished" /><code>{"private bool isFinished"}</code> |
+| <Link id="m-progress" /><code>{"private float progress"}</code> |
+| <Link id="m-progressmultiplier" /><code>{"private float progressMultiplier"}</code> |
+
+</details>
 
 ## Properties
 
@@ -63,7 +68,15 @@ One point on a piece of forged metal that fills as it is hammered while hot. Syn
 | <Link id="m-isneedingsync" /><code>{"bool IsNeedingSync()"}</code> | True if progress changed since the last sync. |
 | <Link id="m-sync" /><code>{"void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads progress, as a finished flag or a 0 to 1 value. Remote clients apply it. |
 | <Link id="m-takedamage" /><code>{"void TakeDamage(float damage)"}</code> | Server: adds damage times the multiplier times the glow. 0.99 or more counts as finished. |
-| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |
+
+</details>
 
 ## Used in
 

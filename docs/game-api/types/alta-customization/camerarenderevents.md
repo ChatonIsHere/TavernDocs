@@ -17,21 +17,34 @@ A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CameraRenderEvents()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CameraRenderEvents()"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onpostrender" /><code>{"private event Action onPostRender"}</code> |  |
-| <Link id="m-onprecull" /><code>{"private event Action onPreCull"}</code> |  |
+<details>
+<summary>2 private and internal events</summary>
+
+| Member |
+| --- |
+| <Link id="m-onpostrender" /><code>{"private event Action onPostRender"}</code> |
+| <Link id="m-onprecull" /><code>{"private event Action onPreCull"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addcamera" /><code>{"static void AddCamera(Camera camera, Action onPreCull, Action onPostRender)"}</code> |  |
-| <Link id="m-onpostrender-2" /><code>{"private void OnPostRender()"}</code> |  |
-| <Link id="m-onprecull-2" /><code>{"private void OnPreCull()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addcamera" /><code>{"static void AddCamera(Camera camera, Action onPreCull, Action onPostRender)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onpostrender-2" /><code>{"private void OnPostRender()"}</code> |
+| <Link id="m-onprecull-2" /><code>{"private void OnPreCull()"}</code> |
+
+</details>

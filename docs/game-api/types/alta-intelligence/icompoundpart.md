@@ -17,7 +17,7 @@ An **interface** in `Root.Township`, `Alta.Intelligence`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-first" /><code><Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" First { get; }"}</code> |  |
-| <Link id="m-remaining" /><code><Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] Remaining { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-first" /><code><Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" First { get; }"}</code> |
+| <Link id="m-remaining" /><code><Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] Remaining { get; }"}</code> |

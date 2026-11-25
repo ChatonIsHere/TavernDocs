@@ -18,19 +18,24 @@ One pour in progress from a source liquid container into a receiving one. Progre
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LiquidTransition("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" sourceContainer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LiquidTransition("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" sourceContainer)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentcontroller" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidtransitioncontroller">{"ILiquidTransitionController"}</Link>{" currentController"}</code> |  |
-| <Link id="m-isduringtransitionfinishing" /><code>{"private bool isDuringTransitionFinishing"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-receivingcontainer" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" receivingContainer"}</code> |  |
-| <Link id="m-sourcecontainer" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" sourceContainer"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentcontroller" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidtransitioncontroller">{"ILiquidTransitionController"}</Link>{" currentController"}</code> |
+| <Link id="m-isduringtransitionfinishing" /><code>{"private bool isDuringTransitionFinishing"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-receivingcontainer" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" receivingContainer"}</code> |
+| <Link id="m-sourcecontainer" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" sourceContainer"}</code> |
+
+</details>
 
 ## Properties
 
@@ -56,8 +61,16 @@ One pour in progress from a source liquid container into a receiving one. Progre
 | <Link id="m-progresstransition" /><code>{"void ProgressTransition(float transitionProgress, "}<Link to="/game-api/types/alta-stats-effects/iliquidtransitioncontroller">{"ILiquidTransitionController"}</Link>{" controller)"}</code> | Adds progress, scaled by the target's receive multiplier and the global liquid speed. Ignored unless called by the current controller. |
 | <Link id="m-resetandremovereceivingcontainer" /><code>{"void ResetAndRemoveReceivingContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidtransitioncontroller">{"ILiquidTransitionController"}</Link>{" controller)"}</code> | Clears the target and progress and marks the pour finished, if called by the current controller. |
 | <Link id="m-settarget" /><code>{"void SetTarget("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" newReceivingContainer, "}<Link to="/game-api/types/alta-stats-effects/iliquidtransitioncontroller">{"ILiquidTransitionController"}</Link>{" controller)"}</code> | Starts pouring into a new compatible container, cancelling any pour to a previous one. |
-| <Link id="m-checkiftransitionisstillvalid" /><code>{"private void CheckIfTransitionIsStillValid("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" oldType, "}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" newType)"}</code> |  |
-| <Link id="m-ontransitionfinished" /><code>{"private void OnTransitionFinished()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-checkiftransitionisstillvalid" /><code>{"private void CheckIfTransitionIsStillValid("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" oldType, "}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" newType)"}</code> |
+| <Link id="m-ontransitionfinished" /><code>{"private void OnTransitionFinished()"}</code> |
+
+</details>
 
 ## Used in
 

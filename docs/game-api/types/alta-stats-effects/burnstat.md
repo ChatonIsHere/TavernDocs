@@ -20,26 +20,31 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BurnStat()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BurnStat()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-damagebyvalue" /><code>{"private AnimationCurve damageByValue"}</code> |  |
-| <Link id="m-ignitethreshold" /><code>{"private float igniteThreshold"}</code> |  |
-| <Link id="m-putoutspeed" /><code>{"private float putOutSpeed"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-damagebyvalue" /><code>{"private AnimationCurve damageByValue"}</code> |
+| <Link id="m-ignitethreshold" /><code>{"private float igniteThreshold"}</code> |
+| <Link id="m-putoutspeed" /><code>{"private float putOutSpeed"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ignitethreshold-2" /><code>{"float IgniteThreshold { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ignitethreshold-2" /><code>{"float IgniteThreshold { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |

@@ -18,23 +18,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LocalMoveTest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LocalMoveTest()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-magnitude" /><code>{"private float magnitude"}</code> |  |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |  |
-| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |  |
-| <Link id="m-speed" /><code>{"private float speed"}</code> |  |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/global-i-l/localmovetest-type">{"LocalMoveTest.Type"}</Link>{" type"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-magnitude" /><code>{"private float magnitude"}</code> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |
+| <Link id="m-speed" /><code>{"private float speed"}</code> |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/global-i-l/localmovetest-type">{"LocalMoveTest.Type"}</Link>{" type"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>

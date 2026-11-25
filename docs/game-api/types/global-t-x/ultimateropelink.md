@@ -17,12 +17,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UltimateRopeLink()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UltimateRopeLink()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-extensiblekinematic" /><code>{"bool ExtensibleKinematic"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-extensiblekinematic" /><code>{"bool ExtensibleKinematic"}</code> |

@@ -17,20 +17,30 @@ A **class** in `Alta.Timing.Runtime`, `Alta.Timing`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimelineUpdater()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimelineUpdater()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lastupdate" /><code>{"private DateTime lastUpdate"}</code> |  |
-| <Link id="m-timeline" /><code>{"private "}<Link to="/game-api/types/assembly-other/itimeline">{"ITimeline"}</Link>{" timeline"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-lastupdate" /><code>{"private DateTime lastUpdate"}</code> |
+| <Link id="m-timeline" /><code>{"private "}<Link to="/game-api/types/assembly-other/itimeline">{"ITimeline"}</Link>{" timeline"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

@@ -19,13 +19,13 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionProviderSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionProviderSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-islocalposition" /><code>{"bool isLocalPosition"}</code> |  |
-| <Link id="m-ismoving" /><code>{"bool isMoving"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-islocalposition" /><code>{"bool isLocalPosition"}</code> |
+| <Link id="m-ismoving" /><code>{"bool isMoving"}</code> |

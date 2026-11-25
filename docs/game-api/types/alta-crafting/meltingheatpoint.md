@@ -18,27 +18,32 @@ A **class** in `Root.Township`, `Alta.Blacksmithing`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MeltingHeatPoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MeltingHeatPoint()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-meltingmodel" /><code>{"private "}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" meltingModel"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-meltingmodel" /><code>{"private "}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" meltingModel"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-receiveconductivitymultiplier" /><code>{"override float ReceiveConductivityMultiplier { get; }"}</code> |  |
-| <Link id="m-sourceconductivitymultiplier" /><code>{"override float SourceConductivityMultiplier { get; }"}</code> |  |
-| <Link id="m-internalconductivitymultiplier" /><code>{"protected override float InternalConductivityMultiplier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-receiveconductivitymultiplier" /><code>{"override float ReceiveConductivityMultiplier { get; }"}</code> |
+| <Link id="m-sourceconductivitymultiplier" /><code>{"override float SourceConductivityMultiplier { get; }"}</code> |
+| <Link id="m-internalconductivitymultiplier" /><code>{"protected override float InternalConductivityMultiplier { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
-| <Link id="m-showeffects" /><code>{"protected override void ShowEffects()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |
+| <Link id="m-showeffects" /><code>{"protected override void ShowEffects()"}</code> |

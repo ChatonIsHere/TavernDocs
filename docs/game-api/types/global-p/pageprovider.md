@@ -20,20 +20,28 @@ Base for a kind of page content (for books and notes). Each provider registers i
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PageProvider()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PageProvider()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-btnrandomtest" /><code>{"private bool btnRandomTest"}</code> |  |
-| <Link id="m-btntest" /><code>{"private bool btnTest"}</code> |  |
-| <Link id="m-providers" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/global-p/pageprovider">{"PageProvider"}</Link>{"> providers"}</code> |  |
-| <Link id="m-spawnweight" /><code>{"private float spawnWeight"}</code> |  |
 | <Link id="m-testrenderer" /><code>{"protected "}<Link to="/game-api/types/alta-items/pagerenderer">{"PageRenderer"}</Link>{" testRenderer"}</code> | A page renderer used by the editor test buttons. |
-| <Link id="m-totalspawnweight" /><code>{"private static float totalSpawnWeight"}</code> |  |
+
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-btnrandomtest" /><code>{"private bool btnRandomTest"}</code> |
+| <Link id="m-btntest" /><code>{"private bool btnTest"}</code> |
+| <Link id="m-providers" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/global-p/pageprovider">{"PageProvider"}</Link>{"> providers"}</code> |
+| <Link id="m-spawnweight" /><code>{"private float spawnWeight"}</code> |
+| <Link id="m-totalspawnweight" /><code>{"private static float totalSpawnWeight"}</code> |
+
+</details>
 
 ## Properties
 
@@ -52,9 +60,17 @@ Base for a kind of page content (for books and notes). Each provider registers i
 | <Link id="m-load" /><code>{"abstract "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" Load("}<Link to="/game-api/types/alta-items/pageinstancesavedata">{"PageInstanceSaveData"}</Link>{" saveData)"}</code> | Rebuilds page data from saved page data. |
 | <Link id="m-save" /><code>{"abstract void Save("}<Link to="/game-api/types/alta-items/pageinstancesavedata">{"PageInstanceSaveData"}</Link>{" saveData, "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" page)"}</code> | Writes page data into saved page data. |
 | <Link id="m-serialize" /><code>{"abstract void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" page)"}</code> | Reads or writes page data on a stream, for network sync. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-test" /><code>{"protected abstract void Test()"}</code> | Editor test button: shows sample content on `testRenderer`. |
 | <Link id="m-testrandom" /><code>{"protected void TestRandom()"}</code> | Editor test button: loads a random page onto `testRenderer`. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>
 
 ## Used in
 

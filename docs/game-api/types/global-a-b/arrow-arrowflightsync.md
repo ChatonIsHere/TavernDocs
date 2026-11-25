@@ -17,22 +17,27 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ArrowFlightSync(float speed, int seed)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ArrowFlightSync(float speed, int seed)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-flightspeed" /><code>{"float flightSpeed"}</code> |  |
-| <Link id="m-randomseed" /><code>{"int randomSeed"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-flightspeed" /><code>{"float flightSpeed"}</code> |
+| <Link id="m-randomseed" /><code>{"int randomSeed"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"internal void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"internal void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

@@ -19,13 +19,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerInteractionRestrictorData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerInteractionRestrictorData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-id" /><code>{"int id"}</code> |  |
-| <Link id="m-interactionspercharge" /><code>{"int interactionsPerCharge"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-id" /><code>{"int id"}</code> |
+| <Link id="m-interactionspercharge" /><code>{"int interactionsPerCharge"}</code> |

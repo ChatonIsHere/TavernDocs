@@ -16,25 +16,25 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShootArguments("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" shot, float strength)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShootArguments("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" shot, float strength)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |  |
-| <Link id="m-strength" /><code>{"float strength"}</code> |  |
-| <Link id="m-target" /><code>{"uint target"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |
+| <Link id="m-strength" /><code>{"float strength"}</code> |
+| <Link id="m-target" /><code>{"uint target"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
 
 ## Used in
 

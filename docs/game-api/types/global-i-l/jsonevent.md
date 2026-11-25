@@ -17,14 +17,14 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JsonEvent(string user_id, "}<Link to="/game-api/types/global-t-x/xsollaevent">{"XsollaEvent"}</Link>{" event_type)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JsonEvent(string user_id, "}<Link to="/game-api/types/global-t-x/xsollaevent">{"XsollaEvent"}</Link>{" event_type)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-event-datetime" /><code>{"string event_datetime"}</code> |  |
-| <Link id="m-event-type" /><code>{"string event_type"}</code> |  |
-| <Link id="m-user-id" /><code>{"string user_id"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-event-datetime" /><code>{"string event_datetime"}</code> |
+| <Link id="m-event-type" /><code>{"string event_type"}</code> |
+| <Link id="m-user-id" /><code>{"string user_id"}</code> |

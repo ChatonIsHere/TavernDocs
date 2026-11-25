@@ -21,9 +21,9 @@ Base of terms in the AI's logic system (atoms, variables, compounds). `Unify` ma
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Term()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Term()"}</code> |
 
 ## Methods
 

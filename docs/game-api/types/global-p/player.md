@@ -21,40 +21,45 @@ The network entity for a connected player. It is not the body: it holds the acco
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Player()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Player()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-associatedobjects" /><code>{"private readonly List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> associatedObjects"}</code> |  |
-| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" current"}</code> |  |
-| <Link id="m-eventsmanager" /><code>{"private "}<Link to="/game-api/types/global-p/playereventsmanager">{"PlayerEventsManager"}</Link>{" eventsManager"}</code> |  |
-| <Link id="m-isstarted" /><code>{"private bool isStarted"}</code> |  |
-| <Link id="m-leftplayerinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" leftPlayerInput"}</code> |  |
-| <Link id="m-loadstatustask" /><code>{"private TaskCompletionSource<bool> loadStatusTask"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-lookup" /><code>{"private static readonly Dictionary<int, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> lookup"}</code> |  |
-| <Link id="m-platformtarget" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformtarget">{"PlatformTarget"}</Link>{" platformTarget"}</code> |  |
-| <Link id="m-playercomponents" /><code>{"private "}<Link to="/game-api/types/global-p/playercomponent">{"PlayerComponent"}</Link>{"[] playerComponents"}</code> |  |
-| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> |  |
-| <Link id="m-playermode" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerMode"}</code> |  |
-| <Link id="m-progressionmanager" /><code>{"private "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" progressionManager"}</code> |  |
-| <Link id="m-respawnpositionprovider" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/iplayerrespawnpositionprovider">{"IPlayerRespawnPositionProvider"}</Link>{" respawnPositionProvider"}</code> |  |
-| <Link id="m-rightplayerinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" rightPlayerInput"}</code> |  |
-| <Link id="m-saveblockers" /><code>{"private readonly HashSet<object> saveBlockers"}</code> |  |
-| <Link id="m-savedata" /><code>{"private "}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" saveData"}</code> |  |
-| <Link id="m-savefile" /><code>{"private "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" saveFile"}</code> |  |
-| <Link id="m-setlocal" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" setLocal"}</code> |  |
-| <Link id="m-statemanager" /><code>{"private "}<Link to="/game-api/types/alta-player/playerstatemanager">{"PlayerStateManager"}</Link>{" stateManager"}</code> |  |
-| <Link id="m-synccosmetics" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncCosmetics"}</code> |  |
-| <Link id="m-synclastsafeposition" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<Vector3> syncLastSafePosition"}</code> |  |
-| <Link id="m-syncloadstatus" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<uint> syncLoadStatus"}</code> |  |
-| <Link id="m-syncmodecontrolleranduserinfowithremote" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncModeControllerAndUserInfoWithRemote"}</code> |  |
-| <Link id="m-unlockmanager" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlockmanager">{"PlayerUnlockManager"}</Link>{" unlockManager"}</code> |  |
-| <Link id="m-validsavingmodes" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" validSavingModes"}</code> |  |
+<details>
+<summary>26 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-associatedobjects" /><code>{"private readonly List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> associatedObjects"}</code> |
+| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" current"}</code> |
+| <Link id="m-eventsmanager" /><code>{"private "}<Link to="/game-api/types/global-p/playereventsmanager">{"PlayerEventsManager"}</Link>{" eventsManager"}</code> |
+| <Link id="m-isstarted" /><code>{"private bool isStarted"}</code> |
+| <Link id="m-leftplayerinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" leftPlayerInput"}</code> |
+| <Link id="m-loadstatustask" /><code>{"private TaskCompletionSource<bool> loadStatusTask"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-lookup" /><code>{"private static readonly Dictionary<int, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> lookup"}</code> |
+| <Link id="m-platformtarget" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformtarget">{"PlatformTarget"}</Link>{" platformTarget"}</code> |
+| <Link id="m-playercomponents" /><code>{"private "}<Link to="/game-api/types/global-p/playercomponent">{"PlayerComponent"}</Link>{"[] playerComponents"}</code> |
+| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> |
+| <Link id="m-playermode" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerMode"}</code> |
+| <Link id="m-progressionmanager" /><code>{"private "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" progressionManager"}</code> |
+| <Link id="m-respawnpositionprovider" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/iplayerrespawnpositionprovider">{"IPlayerRespawnPositionProvider"}</Link>{" respawnPositionProvider"}</code> |
+| <Link id="m-rightplayerinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" rightPlayerInput"}</code> |
+| <Link id="m-saveblockers" /><code>{"private readonly HashSet<object> saveBlockers"}</code> |
+| <Link id="m-savedata" /><code>{"private "}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" saveData"}</code> |
+| <Link id="m-savefile" /><code>{"private "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" saveFile"}</code> |
+| <Link id="m-setlocal" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" setLocal"}</code> |
+| <Link id="m-statemanager" /><code>{"private "}<Link to="/game-api/types/alta-player/playerstatemanager">{"PlayerStateManager"}</Link>{" stateManager"}</code> |
+| <Link id="m-synccosmetics" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncCosmetics"}</code> |
+| <Link id="m-synclastsafeposition" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<Vector3> syncLastSafePosition"}</code> |
+| <Link id="m-syncloadstatus" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<uint> syncLoadStatus"}</code> |
+| <Link id="m-syncmodecontrolleranduserinfowithremote" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncModeControllerAndUserInfoWithRemote"}</code> |
+| <Link id="m-unlockmanager" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlockmanager">{"PlayerUnlockManager"}</Link>{" unlockManager"}</code> |
+| <Link id="m-validsavingmodes" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" validSavingModes"}</code> |
+
+</details>
 
 ## Properties
 
@@ -136,8 +141,15 @@ The network entity for a connected player. It is not the body: it holds the acco
 | <Link id="m-tostring" /><code>{"override string ToString()"}</code> | `[Player <user info>]`. |
 | <Link id="m-unlinkplayercontroller" /><code>{"void UnlinkPlayerController()"}</code> | Detaches the current body from the player and clears the hand targets. |
 | <Link id="m-writesave" /><code>{"void WriteSave(bool isUnloading)"}</code> | Server: serializes the player entity into `Save` and starts writing the file. Runs even for dead players. |
-| <Link id="m-awaitremoteclienttoloadchunk" /><code>{"private async Task AwaitRemoteClientToLoadChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, Vector3 positionInChunk)"}</code> |  |
 | <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Wires up the state manager, hand inputs and `PlayerComponent`s. |
+| <Link id="m-inject" /><code>{"protected void Inject("}<Link to="/game-api/types/game-other-namespaces/iplayerrespawnpositionprovider">{"IPlayerRespawnPositionProvider"}</Link>{" respawnPositionProvider)"}</code> | Dependency injection hook that supplies the respawn position provider. |
+
+<details>
+<summary>30 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awaitremoteclienttoloadchunk" /><code>{"private async Task AwaitRemoteClientToLoadChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, Vector3 positionInChunk)"}</code> |  |
 | <Link id="m-delayupdatefriendship" /><code>{"private void DelayUpdateFriendShip()"}</code> |  |
 | <Link id="m-getdefaultspawnchunkandupdateposition" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" GetDefaultSpawnChunkAndUpdatePosition(ref Vector3 spawnPosition)"}</code> |  |
 | <Link id="m-getplayersave" /><code>{"private "}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" GetPlayerSave()"}</code> |  |
@@ -147,7 +159,6 @@ The network entity for a connected player. It is not the body: it holds the acco
 | <Link id="m-handleinteractor" /><code>{"private void HandleInteractor("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
 | <Link id="m-handlestateactivation" /><code>{"private void HandleStateActivation("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" playerState)"}</code> |  |
 | <Link id="m-handlestatedeactivation" /><code>{"private void HandleStateDeactivation("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" playerState)"}</code> |  |
-| <Link id="m-inject" /><code>{"protected void Inject("}<Link to="/game-api/types/game-other-namespaces/iplayerrespawnpositionprovider">{"IPlayerRespawnPositionProvider"}</Link>{" respawnPositionProvider)"}</code> | Dependency injection hook that supplies the respawn position provider. |
 | <Link id="m-invokeplayercontrollersetlisteners" /><code>{"private void InvokePlayerControllerSetListeners()"}</code> |  |
 | <Link id="m-listenforstatechanges" /><code>{"private void ListenForStateChanges("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" localPlayer)"}</code> |  |
 | <Link id="m-loadcosmetics" /><code>{"private async Task LoadCosmetics()"}</code> |  |
@@ -168,6 +179,8 @@ The network entity for a connected player. It is not the body: it holds the acco
 | <Link id="m-synclastsafeposition-2" /><code>{"private void SyncLastSafePosition("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, Vector3 lastSafePosition)"}</code> |  |
 | <Link id="m-syncloadstatus-2" /><code>{"private void SyncLoadStatus("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, uint chunkIndex)"}</code> |  |
 | <Link id="m-syncmodecontrolleranduserinfowithremote-2" /><code>{"private void SyncModeControllerAndUserInfoWithRemote("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+</details>
 
 ## Used in
 

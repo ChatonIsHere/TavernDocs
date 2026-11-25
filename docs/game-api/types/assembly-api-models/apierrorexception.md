@@ -17,17 +17,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Excep
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ApiErrorException("}<Link to="/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" apiError, HttpStatusCode httpCode = 500)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ApiErrorException("}<Link to="/game-api/types/assembly-api-models/errorcode">{"ErrorCode"}</Link>{" errorCode, string message, HttpStatusCode httpCode = 500)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ApiErrorException("}<Link to="/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" apiError, HttpStatusCode httpCode = 500)"}</code> |
+| <Link id="m-ctor-2" /><code>{"ApiErrorException("}<Link to="/game-api/types/assembly-api-models/errorcode">{"ErrorCode"}</Link>{" errorCode, string message, HttpStatusCode httpCode = 500)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apierror" /><code><Link to="/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-httpcode" /><code>{"HttpStatusCode HttpCode { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apierror" /><code><Link to="/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" { get; }"}</code> |
+| <Link id="m-httpcode" /><code>{"HttpStatusCode HttpCode { get; }"}</code> |
 
 ## Used in
 

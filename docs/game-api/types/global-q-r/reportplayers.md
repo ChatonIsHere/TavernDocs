@@ -17,13 +17,18 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createreport" /><code>{"static async void CreateReport(int userId, "}<Link to="/game-api/types/assembly-api-models/reporttype">{"ReportType"}</Link>{" type, int? serverId = null)"}</code> |  |
-| <Link id="m-getreports" /><code>{"static async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{">> GetReports("}<Link to="/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{"? statusFilter = null, int? serverFilter = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createreport" /><code>{"static async void CreateReport(int userId, "}<Link to="/game-api/types/assembly-api-models/reporttype">{"ReportType"}</Link>{" type, int? serverId = null)"}</code> |
+| <Link id="m-getreports" /><code>{"static async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{">> GetReports("}<Link to="/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{"? statusFilter = null, int? serverFilter = null)"}</code> |

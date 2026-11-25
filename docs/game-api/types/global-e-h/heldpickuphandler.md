@@ -19,15 +19,20 @@ Tracks one pickup a player is holding and the skill inputs registered for it, an
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HeldPickupHandler("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/global-p/playertoolbasedskillhelper">{"PlayerToolBasedSkillHelper"}</Link>{" playerHelper)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HeldPickupHandler("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/global-p/playertoolbasedskillhelper">{"PlayerToolBasedSkillHelper"}</Link>{" playerHelper)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-inputstoreset" /><code>{"private static HashSet<"}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> inputstoReset"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-inputstoreset" /><code>{"private static HashSet<"}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> inputstoReset"}</code> |
+
+</details>
 
 ## Properties
 

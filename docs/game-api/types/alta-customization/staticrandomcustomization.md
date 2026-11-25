@@ -16,13 +16,13 @@ A **static class** in `Root.Township`, `Alta.Customization`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentrandom" /><code>{"static "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" CurrentRandom { get; private set; }"}</code> |  |
-| <Link id="m-isinuse" /><code>{"static bool IsInUse { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentrandom" /><code>{"static "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" CurrentRandom { get; private set; }"}</code> |
+| <Link id="m-isinuse" /><code>{"static bool IsInUse { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-save" /><code>{"static async Task Save("}<Link to="/game-api/types/alta-customization/playercosmeticwrapper">{"PlayerCosmeticWrapper"}</Link>{" wrapper)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-save" /><code>{"static async Task Save("}<Link to="/game-api/types/alta-customization/playercosmeticwrapper">{"PlayerCosmeticWrapper"}</Link>{" wrapper)"}</code> |

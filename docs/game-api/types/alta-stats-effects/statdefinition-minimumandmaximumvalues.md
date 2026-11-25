@@ -17,23 +17,28 @@ A **private class** in `Root.Township`, `Alta.StatSystem`. Reach it through att-
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MinimumAndMaximumValues()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MinimumAndMaximumValues()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |  |
-| <Link id="m-maximum" /><code>{"private float maximum"}</code> |  |
-| <Link id="m-minimum" /><code>{"private float minimum"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |
+| <Link id="m-maximum" /><code>{"private float maximum"}</code> |
+| <Link id="m-minimum" /><code>{"private float minimum"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isvaluevalid" /><code>{"bool IsValueValid(float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isvaluevalid" /><code>{"bool IsValueValid(float value)"}</code> |
 
 ## Used in
 

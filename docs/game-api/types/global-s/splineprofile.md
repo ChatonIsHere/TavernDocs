@@ -20,9 +20,9 @@ A preset of river mesh settings that a `RamSpline` can load (from the R.A.M. riv
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SplineProfile()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SplineProfile()"}</code> |
 
 ## Fields
 

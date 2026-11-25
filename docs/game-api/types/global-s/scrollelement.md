@@ -20,9 +20,9 @@ Base for an item in a scrolling list that is shown or hidden by index.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ScrollElement()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ScrollElement()"}</code> |
 
 ## Properties
 

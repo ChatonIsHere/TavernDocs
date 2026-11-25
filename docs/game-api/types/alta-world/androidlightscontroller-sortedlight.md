@@ -18,19 +18,19 @@ A **private struct** in `Root.Township`, `Alta.Lighting`. Reach it through att-s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SortedLight("}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" light, Vector3 cameraPosition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SortedLight("}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" light, Vector3 cameraPosition)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-atten" /><code>{"float Atten { get; }"}</code> |  |
-| <Link id="m-distance" /><code>{"float Distance { get; }"}</code> |  |
-| <Link id="m-light" /><code><Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" Light { get; }"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> |  |
-| <Link id="m-shadercolor" /><code>{"Vector4 ShaderColor { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-atten" /><code>{"float Atten { get; }"}</code> |
+| <Link id="m-distance" /><code>{"float Distance { get; }"}</code> |
+| <Link id="m-light" /><code><Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" Light { get; }"}</code> |
+| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> |
+| <Link id="m-shadercolor" /><code>{"Vector4 ShaderColor { get; }"}</code> |
 
 ## Used in
 

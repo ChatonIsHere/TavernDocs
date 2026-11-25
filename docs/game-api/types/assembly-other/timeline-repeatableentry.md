@@ -18,26 +18,26 @@ A **private class** in `Alta.Timing.Runtime`, `Alta.Timing`. Reach it through at
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RepeatableEntry(Action callback)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RepeatableEntry(Action callback)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-repeatcalllimitonload" /><code>{"const int RepeatCallLimitOnLoad"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-repeatcalllimitonload" /><code>{"const int RepeatCallLimitOnLoad"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-repeatinterval" /><code>{"TimeSpan RepeatInterval { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-repeatinterval" /><code>{"TimeSpan RepeatInterval { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkentryreuse" /><code>{"override bool CheckEntryReuse("}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline)"}</code> |  |
-| <Link id="m-get" /><code>{"static "}<Link to="/game-api/types/assembly-other/timeline-repeatableentry">{"Timeline.RepeatableEntry"}</Link>{" Get(Action callback, TimeSpan time, TimeSpan repeatInterval)"}</code> |  |
-| <Link id="m-release" /><code>{"override void Release()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkentryreuse" /><code>{"override bool CheckEntryReuse("}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline)"}</code> |
+| <Link id="m-get" /><code>{"static "}<Link to="/game-api/types/assembly-other/timeline-repeatableentry">{"Timeline.RepeatableEntry"}</Link>{" Get(Action callback, TimeSpan time, TimeSpan repeatInterval)"}</code> |
+| <Link id="m-release" /><code>{"override void Release()"}</code> |

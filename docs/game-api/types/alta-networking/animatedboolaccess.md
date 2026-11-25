@@ -17,21 +17,34 @@ A **class** in `Root.Township`, `Alta.Networking.Animation`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimatedBoolAccess()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimatedBoolAccess()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animatedbool" /><code>{"private "}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{" animatedBool"}</code> |  |
-| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator"}</code> |  |
-| <Link id="m-boolname" /><code>{"private string boolName"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animatedbool" /><code>{"private "}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{" animatedBool"}</code> |
+| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator"}</code> |
+| <Link id="m-boolname" /><code>{"private string boolName"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-set" /><code>{"void Set(bool value)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-set" /><code>{"void Set(bool value)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

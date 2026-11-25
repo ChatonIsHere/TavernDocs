@@ -18,28 +18,41 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenerationStarter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenerationStarter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-biome" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" biome"}</code> |  |
-| <Link id="m-core" /><code>{"private "}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core"}</code> |  |
-| <Link id="m-isfirstthisruntime" /><code>{"private bool isFirstThisRuntime"}</code> |  |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" prefab"}</code> |  |
-| <Link id="m-preset" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomepreset">{"BiomePreset"}</Link>{" preset"}</code> |  |
-| <Link id="m-seed" /><code>{"private int seed"}</code> |  |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |  |
-| <Link id="m-terrainmodificationid" /><code>{"private uint terrainModificationId"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-biome" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" biome"}</code> |
+| <Link id="m-core" /><code>{"private "}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core"}</code> |
+| <Link id="m-isfirstthisruntime" /><code>{"private bool isFirstThisRuntime"}</code> |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" prefab"}</code> |
+| <Link id="m-preset" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomepreset">{"BiomePreset"}</Link>{" preset"}</code> |
+| <Link id="m-seed" /><code>{"private int seed"}</code> |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
+| <Link id="m-terrainmodificationid" /><code>{"private uint terrainModificationId"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-syncspawn" /><code>{"private void SyncSpawn("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-syncspawn" /><code>{"private void SyncSpawn("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>

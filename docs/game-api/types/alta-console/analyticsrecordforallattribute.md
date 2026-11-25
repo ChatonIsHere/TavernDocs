@@ -18,12 +18,12 @@ A **class** in `Root.Township`, `Alta.Analytics`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnalyticsRecordForAllAttribute("}<Link to="/game-api/types/alta-console/analyticsoptions">{"AnalyticsOptions"}</Link>{" option = 0)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnalyticsRecordForAllAttribute("}<Link to="/game-api/types/alta-console/analyticsoptions">{"AnalyticsOptions"}</Link>{" option = 0)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-options" /><code><Link to="/game-api/types/alta-console/analyticsoptions">{"AnalyticsOptions"}</Link>{" Options { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-options" /><code><Link to="/game-api/types/alta-console/analyticsoptions">{"AnalyticsOptions"}</Link>{" Options { get; private set; }"}</code> |

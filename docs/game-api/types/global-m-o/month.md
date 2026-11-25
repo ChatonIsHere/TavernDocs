@@ -16,20 +16,20 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-april" /><code>{"April = 4"}</code> |  |
-| <Link id="m-august" /><code>{"August = 8"}</code> |  |
-| <Link id="m-december" /><code>{"December = 12"}</code> |  |
-| <Link id="m-february" /><code>{"February = 2"}</code> |  |
-| <Link id="m-january" /><code>{"January = 1"}</code> |  |
-| <Link id="m-july" /><code>{"July = 7"}</code> |  |
-| <Link id="m-june" /><code>{"June = 6"}</code> |  |
-| <Link id="m-march" /><code>{"March = 3"}</code> |  |
-| <Link id="m-may" /><code>{"May = 5"}</code> |  |
-| <Link id="m-november" /><code>{"November = 11"}</code> |  |
-| <Link id="m-october" /><code>{"October = 10"}</code> |  |
-| <Link id="m-september" /><code>{"September = 9"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-april" /><code>{"April = 4"}</code> |
+| <Link id="m-august" /><code>{"August = 8"}</code> |
+| <Link id="m-december" /><code>{"December = 12"}</code> |
+| <Link id="m-february" /><code>{"February = 2"}</code> |
+| <Link id="m-january" /><code>{"January = 1"}</code> |
+| <Link id="m-july" /><code>{"July = 7"}</code> |
+| <Link id="m-june" /><code>{"June = 6"}</code> |
+| <Link id="m-march" /><code>{"March = 3"}</code> |
+| <Link id="m-may" /><code>{"May = 5"}</code> |
+| <Link id="m-november" /><code>{"November = 11"}</code> |
+| <Link id="m-october" /><code>{"October = 10"}</code> |
+| <Link id="m-september" /><code>{"September = 9"}</code> |
 
 ## Used in
 

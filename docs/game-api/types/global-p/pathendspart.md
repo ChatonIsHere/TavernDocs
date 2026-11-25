@@ -19,31 +19,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PathEndsPart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PathEndsPart()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-arrangement" /><code>{"private "}<Link to="/game-api/types/global-p/pathendspart-arrangement">{"PathEndsPart.Arrangement"}</Link>{" arrangement"}</code> |  |
-| <Link id="m-distancefromends" /><code>{"private float distanceFromEnds"}</code> |  |
-| <Link id="m-entranceindex" /><code>{"private int entranceIndex"}</code> |  |
-| <Link id="m-sidea" /><code>{"private Transform sideA"}</code> |  |
-| <Link id="m-sideb" /><code>{"private Transform sideB"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-arrangement" /><code>{"private "}<Link to="/game-api/types/global-p/pathendspart-arrangement">{"PathEndsPart.Arrangement"}</Link>{" arrangement"}</code> |
+| <Link id="m-distancefromends" /><code>{"private float distanceFromEnds"}</code> |
+| <Link id="m-entranceindex" /><code>{"private int entranceIndex"}</code> |
+| <Link id="m-sidea" /><code>{"private Transform sideA"}</code> |
+| <Link id="m-sideb" /><code>{"private Transform sideB"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distancefromends-2" /><code>{"float DistanceFromEnds { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-distancefromends-2" /><code>{"float DistanceFromEnds { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> |
 
 ## Used in
 

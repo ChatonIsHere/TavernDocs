@@ -18,16 +18,21 @@ The content of a book or paper page: a list of placed glyphs, or data from a `Pa
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PageData("}<Link to="/game-api/types/global-p/pageprovider">{"PageProvider"}</Link>{" pageProvider, object providerData)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PageData("}<Link to="/game-api/types/global-p/pageprovider">{"PageProvider"}</Link>{" pageProvider, object providerData)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-components" /><code>{"private List<object> components"}</code> |  |
-| <Link id="m-glyphs" /><code>{"private List<"}<Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"> glyphs"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-components" /><code>{"private List<object> components"}</code> |
+| <Link id="m-glyphs" /><code>{"private List<"}<Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"> glyphs"}</code> |
+
+</details>
 
 ## Properties
 

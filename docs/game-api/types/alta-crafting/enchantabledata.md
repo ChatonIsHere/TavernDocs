@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Alta.Enchantments`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EnchantableData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EnchantableData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enchantments" /><code><Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{"[] enchantments"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-enchantments" /><code><Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{"[] enchantments"}</code> |

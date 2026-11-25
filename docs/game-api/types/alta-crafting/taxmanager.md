@@ -21,25 +21,30 @@ Part of a `TradeVendor` that takes `TaxedAmount` coins from the tax dock every `
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TaxManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TaxManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-nocoinsleft" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" noCoinsLeft"}</code> |  |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> sync"}</code> |  |
-| <Link id="m-taxedamount" /><code>{"private int taxedAmount"}</code> |  |
-| <Link id="m-taxentry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" taxEntry"}</code> |  |
-| <Link id="m-taxingtime" /><code>{"private int taxingTime"}</code> |  |
-| <Link id="m-taxmeterbar" /><code>{"private "}<Link to="/game-api/types/global-e-h/gaugeprogressbar">{"GaugeProgressBar"}</Link>{" taxMeterBar"}</code> |  |
-| <Link id="m-taxmeterprogresslerpspeed" /><code>{"private float taxMeterProgressLerpSpeed"}</code> |  |
-| <Link id="m-timeremaining" /><code>{"private float timeRemaining"}</code> |  |
-| <Link id="m-tradevendor" /><code>{"private "}<Link to="/game-api/types/alta-crafting/tradevendor">{"TradeVendor"}</Link>{" tradeVendor"}</code> |  |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |  |
+<details>
+<summary>11 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-nocoinsleft" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" noCoinsLeft"}</code> |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> sync"}</code> |
+| <Link id="m-taxedamount" /><code>{"private int taxedAmount"}</code> |
+| <Link id="m-taxentry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" taxEntry"}</code> |
+| <Link id="m-taxingtime" /><code>{"private int taxingTime"}</code> |
+| <Link id="m-taxmeterbar" /><code>{"private "}<Link to="/game-api/types/global-e-h/gaugeprogressbar">{"GaugeProgressBar"}</Link>{" taxMeterBar"}</code> |
+| <Link id="m-taxmeterprogresslerpspeed" /><code>{"private float taxMeterProgressLerpSpeed"}</code> |
+| <Link id="m-timeremaining" /><code>{"private float timeRemaining"}</code> |
+| <Link id="m-tradevendor" /><code>{"private "}<Link to="/game-api/types/alta-crafting/tradevendor">{"TradeVendor"}</Link>{" tradeVendor"}</code> |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
+
+</details>
 
 ## Properties
 
@@ -64,15 +69,23 @@ Part of a `TradeVendor` that takes `TaxedAmount` coins from the tax dock every `
 | <Link id="m-load" /><code>{"void Load("}<Link to="/game-api/types/alta-crafting/taxsavedata">{"TaxSaveData"}</Link>{" data, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Restores the tax timer and takes any payments missed while unloaded. |
 | <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends a joining player the time left if taxing. |
 | <Link id="m-save" /><code><Link to="/game-api/types/alta-crafting/taxsavedata">{"TaxSaveData"}</Link>{" Save("}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Saves whether it is taxing and the time to the next payment. |
-| <Link id="m-animatetaxmeter" /><code>{"private void AnimateTaxMeter()"}</code> |  |
-| <Link id="m-enabletimer" /><code>{"private void EnableTimer()"}</code> |  |
-| <Link id="m-finishtax" /><code>{"private void FinishTax()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isTickOver)"}</code> |  |
-| <Link id="m-taketax" /><code>{"private void TakeTax()"}</code> |  |
-| <Link id="m-taketaxamount" /><code>{"private void TakeTaxAmount(int intervals = 1)"}</code> |  |
-| <Link id="m-updatetaxmeter" /><code>{"private void UpdateTaxMeter(float deltaTime)"}</code> |  |
-| <Link id="m-updatetaxtime" /><code>{"private void UpdateTaxTime()"}</code> |  |
+
+<details>
+<summary>9 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-animatetaxmeter" /><code>{"private void AnimateTaxMeter()"}</code> |
+| <Link id="m-enabletimer" /><code>{"private void EnableTimer()"}</code> |
+| <Link id="m-finishtax" /><code>{"private void FinishTax()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isTickOver)"}</code> |
+| <Link id="m-taketax" /><code>{"private void TakeTax()"}</code> |
+| <Link id="m-taketaxamount" /><code>{"private void TakeTaxAmount(int intervals = 1)"}</code> |
+| <Link id="m-updatetaxmeter" /><code>{"private void UpdateTaxMeter(float deltaTime)"}</code> |
+| <Link id="m-updatetaxtime" /><code>{"private void UpdateTaxTime()"}</code> |
+
+</details>
 
 ## Used in
 

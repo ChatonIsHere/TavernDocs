@@ -17,11 +17,11 @@ An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addoculusfriendasaltafriend" /><code>{"Task AddOculusFriendAsAltaFriend(ulong oculusId)"}</code> |  |
-| <Link id="m-createcustomaction" /><code>{"Task CreateCustomAction("}<Link to="/game-api/types/assembly-api-models/usertype">{"UserType"}</Link>{" userType, ulong userIdentifier, "}<Link to="/game-api/types/assembly-api-models/futureuseractiontype">{"FutureUserActionType"}</Link>{" actionType, object actionData)"}</code> |  |
-| <Link id="m-inviteoculusfriendtogroup" /><code>{"Task InviteOculusFriendToGroup(ulong oculusId, int groupId)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addoculusfriendasaltafriend" /><code>{"Task AddOculusFriendAsAltaFriend(ulong oculusId)"}</code> |
+| <Link id="m-createcustomaction" /><code>{"Task CreateCustomAction("}<Link to="/game-api/types/assembly-api-models/usertype">{"UserType"}</Link>{" userType, ulong userIdentifier, "}<Link to="/game-api/types/assembly-api-models/futureuseractiontype">{"FutureUserActionType"}</Link>{" actionType, object actionData)"}</code> |
+| <Link id="m-inviteoculusfriendtogroup" /><code>{"Task InviteOculusFriendToGroup(ulong oculusId, int groupId)"}</code> |
 
 ## Used in
 

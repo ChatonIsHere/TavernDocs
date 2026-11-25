@@ -17,15 +17,15 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PlatformLoader()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PlatformLoader()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-load" /><code>{"abstract Task<bool> Load()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-load" /><code>{"abstract Task<bool> Load()"}</code> |
 
 ## Used in
 

@@ -16,28 +16,28 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerJoinResult()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerJoinResult()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-connectioninfo" /><code><Link to="/game-api/types/assembly-api-models/connectioninfo">{"ConnectionInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/connectioninfo">{"ConnectionInfo"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-failreason" /><code><Link to="/game-api/types/assembly-api-models/serverjoinfailresult">{"ServerJoinFailResult"}</Link>{" FailReason { get; set; }"}</code> |  |
-| <Link id="m-isallowed" /><code>{"bool IsAllowed { get; set; }"}</code> |  |
-| <Link id="m-iscoldstart" /><code>{"bool IsColdStart { get; set; }"}</code> |  |
-| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> |  |
-| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> |  |
-| <Link id="m-token" /><code>{"JwtSecurityToken Token { get; set; }"}</code> |  |
-| <Link id="m-wasrejected" /><code>{"bool WasRejected { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-connectioninfo" /><code><Link to="/game-api/types/assembly-api-models/connectioninfo">{"ConnectionInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/connectioninfo">{"ConnectionInfo"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-failreason" /><code><Link to="/game-api/types/assembly-api-models/serverjoinfailresult">{"ServerJoinFailResult"}</Link>{" FailReason { get; set; }"}</code> |
+| <Link id="m-isallowed" /><code>{"bool IsAllowed { get; set; }"}</code> |
+| <Link id="m-iscoldstart" /><code>{"bool IsColdStart { get; set; }"}</code> |
+| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> |
+| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> |
+| <Link id="m-token" /><code>{"JwtSecurityToken Token { get; set; }"}</code> |
+| <Link id="m-wasrejected" /><code>{"bool WasRejected { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-settofailstate" /><code>{"void SetToFailState(string failMessage, "}<Link to="/game-api/types/assembly-api-models/serverjoinfailresult">{"ServerJoinFailResult"}</Link>{" failReason)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-settofailstate" /><code>{"void SetToFailState(string failMessage, "}<Link to="/game-api/types/assembly-api-models/serverjoinfailresult">{"ServerJoinFailResult"}</Link>{" failReason)"}</code> |
 
 ## Used in
 

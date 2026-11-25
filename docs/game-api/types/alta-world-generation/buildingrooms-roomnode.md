@@ -17,28 +17,33 @@ A **private class** in `Root.Township`, `Alta.PAGaC`. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RoomNode()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RoomNode()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-newpaths" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/buildingrooms-roompath">{"BuildingRooms.RoomPath"}</Link>{"> newPaths"}</code> |  |
-| <Link id="m-paths" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/buildingrooms-roompath">{"BuildingRooms.RoomPath"}</Link>{"> paths"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-newpaths" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/buildingrooms-roompath">{"BuildingRooms.RoomPath"}</Link>{"> newPaths"}</code> |
+| <Link id="m-paths" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/buildingrooms-roompath">{"BuildingRooms.RoomPath"}</Link>{"> paths"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-floor" /><code>{"int Floor { get; set; }"}</code> |  |
-| <Link id="m-isexternal" /><code>{"bool IsExternal { get; set; }"}</code> |  |
-| <Link id="m-isfloored" /><code>{"bool IsFloored { get; set; }"}</code> |  |
-| <Link id="m-isused" /><code>{"bool IsUsed { get; set; }"}</code> |  |
-| <Link id="m-newpaths-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/buildingrooms-roompath">{"BuildingRooms.RoomPath"}</Link>{"> NewPaths { get; }"}</code> |  |
-| <Link id="m-nodecollection" /><code><Link to="/game-api/types/alta-world-generation/nodecollection">{"NodeCollection"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/nodecollection">{"NodeCollection"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-paths-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/buildingrooms-roompath">{"BuildingRooms.RoomPath"}</Link>{"> Paths { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-floor" /><code>{"int Floor { get; set; }"}</code> |
+| <Link id="m-isexternal" /><code>{"bool IsExternal { get; set; }"}</code> |
+| <Link id="m-isfloored" /><code>{"bool IsFloored { get; set; }"}</code> |
+| <Link id="m-isused" /><code>{"bool IsUsed { get; set; }"}</code> |
+| <Link id="m-newpaths-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/buildingrooms-roompath">{"BuildingRooms.RoomPath"}</Link>{"> NewPaths { get; }"}</code> |
+| <Link id="m-nodecollection" /><code><Link to="/game-api/types/alta-world-generation/nodecollection">{"NodeCollection"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/nodecollection">{"NodeCollection"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-paths-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/buildingrooms-roompath">{"BuildingRooms.RoomPath"}</Link>{"> Paths { get; }"}</code> |
 
 ## Used in
 

@@ -17,21 +17,26 @@ A **class** in `Root.Township`, `Alta.PAGaC`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Decay()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Decay()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-decaylimit" /><code>{"private float decayLimit"}</code> |  |
-| <Link id="m-extradecaywithheight" /><code>{"private float extraDecayWithHeight"}</code> |  |
-| <Link id="m-noisemultiplier" /><code>{"private float noiseMultiplier"}</code> |  |
-| <Link id="m-noisescale" /><code>{"private float noiseScale"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-decaylimit" /><code>{"private float decayLimit"}</code> |
+| <Link id="m-extradecaywithheight" /><code>{"private float extraDecayWithHeight"}</code> |
+| <Link id="m-noisemultiplier" /><code>{"private float noiseMultiplier"}</code> |
+| <Link id="m-noisescale" /><code>{"private float noiseScale"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/alta-world-generation/generationbase-alta-pagac">{"GenerationBase"}</Link>{" generationBase)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/alta-world-generation/generationbase-alta-pagac">{"GenerationBase"}</Link>{" generationBase)"}</code> |

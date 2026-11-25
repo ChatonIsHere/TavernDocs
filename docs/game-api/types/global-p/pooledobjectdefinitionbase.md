@@ -20,15 +20,20 @@ Asset for a pooled object (usually a visual effect) with helpers to spawn it at 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PooledObjectDefinitionBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PooledObjectDefinitionBase()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lifetimepooledobjects" /><code>{"private Dictionary<Transform, "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> lifetimePooledObjects"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-lifetimepooledobjects" /><code>{"private Dictionary<Transform, "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> lifetimePooledObjects"}</code> |
+
+</details>
 
 ## Methods
 

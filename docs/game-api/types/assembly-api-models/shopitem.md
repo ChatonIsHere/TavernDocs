@@ -18,28 +18,28 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShopItem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShopItem()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-canonlybeboughtonce" /><code>{"bool CanOnlyBeBoughtOnce { get; set; }"}</code> |  |
-| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |  |
-| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; set; }"}</code> |  |
-| <Link id="m-isset" /><code>{"bool IsSet { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-price" /><code><Link to="/game-api/types/assembly-api-models/shopprice">{"ShopPrice"}</Link>{" Price { get; set; }"}</code> |  |
-| <Link id="m-purchasecount" /><code>{"int PurchaseCount { get; set; }"}</code> |  |
-| <Link id="m-sku" /><code>{"string Sku { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-canonlybeboughtonce" /><code>{"bool CanOnlyBeBoughtOnce { get; set; }"}</code> |
+| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |
+| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; set; }"}</code> |
+| <Link id="m-isset" /><code>{"bool IsSet { get; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| <Link id="m-price" /><code><Link to="/game-api/types/assembly-api-models/shopprice">{"ShopPrice"}</Link>{" Price { get; set; }"}</code> |
+| <Link id="m-purchasecount" /><code>{"int PurchaseCount { get; set; }"}</code> |
+| <Link id="m-sku" /><code>{"string Sku { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
 
 ## Used in
 

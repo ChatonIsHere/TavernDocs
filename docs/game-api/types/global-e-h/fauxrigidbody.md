@@ -16,24 +16,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FauxRigidbody(Transform targetTransform)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FauxRigidbody(Transform targetTransform)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angularvelocity" /><code>{"Vector3 angularVelocity"}</code> |  |
-| <Link id="m-velocity" /><code>{"Vector3 velocity"}</code> |  |
-| <Link id="m-targettransform" /><code>{"private Transform targetTransform"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-angularvelocity" /><code>{"Vector3 angularVelocity"}</code> |
+| <Link id="m-velocity" /><code>{"Vector3 velocity"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-targettransform" /><code>{"private Transform targetTransform"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-calculateaccelerationtoreachpoint" /><code>{"static Vector3 CalculateAccelerationToReachPoint(Vector3 deltaPosition, Vector3 currentVelocity, float acceleration, float maxSpeed)"}</code> |  |
-| <Link id="m-update" /><code>{"void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-calculateaccelerationtoreachpoint" /><code>{"static Vector3 CalculateAccelerationToReachPoint(Vector3 deltaPosition, Vector3 currentVelocity, float acceleration, float maxSpeed)"}</code> |
+| <Link id="m-update" /><code>{"void Update()"}</code> |
 
 ## Used in
 

@@ -21,35 +21,40 @@ Settings asset for `EyeFocusController`, which picks what a character's eyes loo
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EyeFocusControllerSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EyeFocusControllerSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-baseupdateinterval" /><code>{"private float baseUpdateInterval"}</code> |  |
-| <Link id="m-defaultfocusoffset" /><code>{"private Vector3 defaultFocusOffset"}</code> |  |
-| <Link id="m-detectionoffset" /><code>{"private Vector3 detectionOffset"}</code> |  |
-| <Link id="m-detectionrange" /><code>{"private float detectionRange"}</code> |  |
-| <Link id="m-disconnecthorizontalangletan" /><code>{"private float disconnectHorizontalAngleTan"}</code> |  |
-| <Link id="m-disconnectverticalangletan" /><code>{"private float disconnectVerticalAngleTan"}</code> |  |
-| <Link id="m-distancedetriment" /><code>{"private AnimationCurve distanceDetriment"}</code> |  |
-| <Link id="m-horizontalangledetriment" /><code>{"private AnimationCurve horizontalAngleDetriment"}</code> |  |
-| <Link id="m-isusingrotationlimits" /><code>{"private bool isUsingRotationLimits"}</code> |  |
-| <Link id="m-layerdetrimentmask" /><code>{"private float[] layerDetrimentMask"}</code> |  |
-| <Link id="m-lefteyesplinerotationlimitpoints" /><code>{"private AnimationCurve leftEyeSplineRotationLimitPoints"}</code> |  |
-| <Link id="m-lookat" /><code>{"private LayerMask lookAt"}</code> |  |
-| <Link id="m-maximumdetriment" /><code>{"private float maximumDetriment"}</code> |  |
-| <Link id="m-maximumoverlap" /><code>{"private int maximumOverlap"}</code> |  |
-| <Link id="m-missingrigidbodydetriment" /><code>{"private float missingRigidbodyDetriment"}</code> |  |
-| <Link id="m-righteyesplinerotationlimitpoints" /><code>{"private AnimationCurve rightEyeSplineRotationLimitPoints"}</code> |  |
-| <Link id="m-updatemaximum" /><code>{"private float updateMaximum"}</code> |  |
-| <Link id="m-updateminimum" /><code>{"private float updateMinimum"}</code> |  |
-| <Link id="m-updateweaknessmultiplier" /><code>{"private float updateWeaknessMultiplier"}</code> |  |
-| <Link id="m-velocitydetriment" /><code>{"private AnimationCurve velocityDetriment"}</code> |  |
-| <Link id="m-verticalangledetriment" /><code>{"private AnimationCurve verticalAngleDetriment"}</code> |  |
+<details>
+<summary>21 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-baseupdateinterval" /><code>{"private float baseUpdateInterval"}</code> |
+| <Link id="m-defaultfocusoffset" /><code>{"private Vector3 defaultFocusOffset"}</code> |
+| <Link id="m-detectionoffset" /><code>{"private Vector3 detectionOffset"}</code> |
+| <Link id="m-detectionrange" /><code>{"private float detectionRange"}</code> |
+| <Link id="m-disconnecthorizontalangletan" /><code>{"private float disconnectHorizontalAngleTan"}</code> |
+| <Link id="m-disconnectverticalangletan" /><code>{"private float disconnectVerticalAngleTan"}</code> |
+| <Link id="m-distancedetriment" /><code>{"private AnimationCurve distanceDetriment"}</code> |
+| <Link id="m-horizontalangledetriment" /><code>{"private AnimationCurve horizontalAngleDetriment"}</code> |
+| <Link id="m-isusingrotationlimits" /><code>{"private bool isUsingRotationLimits"}</code> |
+| <Link id="m-layerdetrimentmask" /><code>{"private float[] layerDetrimentMask"}</code> |
+| <Link id="m-lefteyesplinerotationlimitpoints" /><code>{"private AnimationCurve leftEyeSplineRotationLimitPoints"}</code> |
+| <Link id="m-lookat" /><code>{"private LayerMask lookAt"}</code> |
+| <Link id="m-maximumdetriment" /><code>{"private float maximumDetriment"}</code> |
+| <Link id="m-maximumoverlap" /><code>{"private int maximumOverlap"}</code> |
+| <Link id="m-missingrigidbodydetriment" /><code>{"private float missingRigidbodyDetriment"}</code> |
+| <Link id="m-righteyesplinerotationlimitpoints" /><code>{"private AnimationCurve rightEyeSplineRotationLimitPoints"}</code> |
+| <Link id="m-updatemaximum" /><code>{"private float updateMaximum"}</code> |
+| <Link id="m-updateminimum" /><code>{"private float updateMinimum"}</code> |
+| <Link id="m-updateweaknessmultiplier" /><code>{"private float updateWeaknessMultiplier"}</code> |
+| <Link id="m-velocitydetriment" /><code>{"private AnimationCurve velocityDetriment"}</code> |
+| <Link id="m-verticalangledetriment" /><code>{"private AnimationCurve verticalAngleDetriment"}</code> |
+
+</details>
 
 ## Properties
 

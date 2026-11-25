@@ -20,28 +20,33 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CookableCategoryDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CookableCategoryDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allcookableitems" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-crafting/cookablecategorydefinition">{"CookableCategoryDefinition"}</Link>{", List<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{">> allCookableItems"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-allcookableitems" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-crafting/cookablecategorydefinition">{"CookableCategoryDefinition"}</Link>{", List<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{">> allCookableItems"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allcookableitems-2" /><code>{"static Dictionary<"}<Link to="/game-api/types/alta-crafting/cookablecategorydefinition">{"CookableCategoryDefinition"}</Link>{", List<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{">> AllCookableItems { get; }"}</code> |  |
-| <Link id="m-cookables" /><code>{"override IEnumerable<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> Cookables { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-allcookableitems-2" /><code>{"static Dictionary<"}<Link to="/game-api/types/alta-crafting/cookablecategorydefinition">{"CookableCategoryDefinition"}</Link>{", List<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{">> AllCookableItems { get; }"}</code> |
+| <Link id="m-cookables" /><code>{"override IEnumerable<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> Cookables { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-containscookable" /><code>{"override bool ContainsCookable("}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{" cookable, out int score)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-containscookable" /><code>{"override bool ContainsCookable("}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{" cookable, out int score)"}</code> |
 
 ## Used in
 

@@ -21,9 +21,9 @@ Save data for `LogicVector3Sender`: the shared logic data and the current vector
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicVector3SaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicVector3SaveData()"}</code> |
 
 ## Fields
 

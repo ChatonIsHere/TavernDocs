@@ -19,12 +19,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SafePositionSetterData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SafePositionSetterData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targetoffset" /><code>{"Vector3 targetOffset"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-targetoffset" /><code>{"Vector3 targetOffset"}</code> |

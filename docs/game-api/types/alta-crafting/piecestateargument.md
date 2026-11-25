@@ -16,13 +16,13 @@ A **struct** in `Root.Township`, `Alta.Crafting`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isenabled" /><code>{"bool isEnabled"}</code> |  |
-| <Link id="m-piecehash" /><code>{"int pieceHash"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isenabled" /><code>{"bool isEnabled"}</code> |
+| <Link id="m-piecehash" /><code>{"int pieceHash"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |

@@ -22,34 +22,39 @@ Global settings for spawning creatures in the dark around players. The local cli
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DarknessSpawnerSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DarknessSpawnerSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-colorfilter" /><code>{"private Vector3 colorFilter"}</code> |  |
-| <Link id="m-computeshader" /><code>{"private ComputeShader computeShader"}</code> |  |
-| <Link id="m-darkdefinition" /><code>{"private float darkDefinition"}</code> |  |
-| <Link id="m-directionmagnitude" /><code>{"private float directionMagnitude"}</code> |  |
-| <Link id="m-downsamplescale" /><code>{"private float downSampleScale"}</code> |  |
-| <Link id="m-forwardweight" /><code>{"private float forwardWeight"}</code> |  |
-| <Link id="m-maxangletospawn" /><code>{"private float maxAngleToSpawn"}</code> |  |
-| <Link id="m-maximumspawninterval" /><code>{"private float maximumSpawnInterval"}</code> |  |
-| <Link id="m-maxtotaldarkness" /><code>{"private float maxTotalDarkness"}</code> |  |
-| <Link id="m-minimumspawninterval" /><code>{"private float minimumSpawnInterval"}</code> |  |
-| <Link id="m-platformlightrangeratio" /><code>{"private float platformLightRangeRatio"}</code> |  |
-| <Link id="m-playerspawncount" /><code>{"private Dictionary<uint, int> playerSpawnCount"}</code> |  |
-| <Link id="m-prefabtospawn" /><code>{"private uint prefabToSpawn"}</code> |  |
-| <Link id="m-raycastdistance" /><code>{"private float raycastDistance"}</code> |  |
-| <Link id="m-readdarknessfrequency" /><code>{"private float readDarknessFrequency"}</code> |  |
-| <Link id="m-spawncooldown" /><code>{"private float spawnCooldown"}</code> |  |
-| <Link id="m-spawncount" /><code>{"private "}<Link to="/game-api/types/global-t-x/triangulardistributionint">{"TriangularDistributionInt"}</Link>{" spawnCount"}</code> |  |
-| <Link id="m-spawnedtoplayer" /><code>{"private Dictionary<uint, uint> spawnedToPlayer"}</code> |  |
-| <Link id="m-spawnlimitperplayer" /><code>{"private int spawnLimitPerPlayer"}</code> |  |
-| <Link id="m-targetmask" /><code>{"private LayerMask targetMask"}</code> |  |
+<details>
+<summary>20 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-colorfilter" /><code>{"private Vector3 colorFilter"}</code> |
+| <Link id="m-computeshader" /><code>{"private ComputeShader computeShader"}</code> |
+| <Link id="m-darkdefinition" /><code>{"private float darkDefinition"}</code> |
+| <Link id="m-directionmagnitude" /><code>{"private float directionMagnitude"}</code> |
+| <Link id="m-downsamplescale" /><code>{"private float downSampleScale"}</code> |
+| <Link id="m-forwardweight" /><code>{"private float forwardWeight"}</code> |
+| <Link id="m-maxangletospawn" /><code>{"private float maxAngleToSpawn"}</code> |
+| <Link id="m-maximumspawninterval" /><code>{"private float maximumSpawnInterval"}</code> |
+| <Link id="m-maxtotaldarkness" /><code>{"private float maxTotalDarkness"}</code> |
+| <Link id="m-minimumspawninterval" /><code>{"private float minimumSpawnInterval"}</code> |
+| <Link id="m-platformlightrangeratio" /><code>{"private float platformLightRangeRatio"}</code> |
+| <Link id="m-playerspawncount" /><code>{"private Dictionary<uint, int> playerSpawnCount"}</code> |
+| <Link id="m-prefabtospawn" /><code>{"private uint prefabToSpawn"}</code> |
+| <Link id="m-raycastdistance" /><code>{"private float raycastDistance"}</code> |
+| <Link id="m-readdarknessfrequency" /><code>{"private float readDarknessFrequency"}</code> |
+| <Link id="m-spawncooldown" /><code>{"private float spawnCooldown"}</code> |
+| <Link id="m-spawncount" /><code>{"private "}<Link to="/game-api/types/global-t-x/triangulardistributionint">{"TriangularDistributionInt"}</Link>{" spawnCount"}</code> |
+| <Link id="m-spawnedtoplayer" /><code>{"private Dictionary<uint, uint> spawnedToPlayer"}</code> |
+| <Link id="m-spawnlimitperplayer" /><code>{"private int spawnLimitPerPlayer"}</code> |
+| <Link id="m-targetmask" /><code>{"private LayerMask targetMask"}</code> |
+
+</details>
 
 ## Properties
 
@@ -68,9 +73,17 @@ Global settings for spawning creatures in the dark around players. The local cli
 | Member | What it is |
 | --- | --- |
 | <Link id="m-spawnforplayer" /><code>{"bool SpawnForPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerCharacter)"}</code> | Server: raycasts ahead of the player's view and spawns the prefab on suitable surfaces, up to the per-player limit. Returns whether any spawned. |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-clearforplayer" /><code>{"private void ClearForPlayer("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
 | <Link id="m-spawnforplayer-2" /><code>{"private IEnumerator SpawnForPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerCharacter, List<"}<Link to="/game-api/types/global-c-d/darknessspawnersettings-spawninstructure">{"DarknessSpawnerSettings.SpawnInstructure"}</Link>{"> spawnPositions) (iterator)"}</code> | Server: raycasts ahead of the player's view and spawns the prefab on suitable surfaces, up to the per-player limit. Returns whether any spawned. |
+
+</details>
 
 ## Used in
 

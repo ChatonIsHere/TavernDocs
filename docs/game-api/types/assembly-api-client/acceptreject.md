@@ -17,19 +17,19 @@ An **abstract class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected AcceptReject("}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected AcceptReject("}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-api" /><code>{"protected "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-api" /><code>{"protected "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-accept" /><code>{"abstract Task Accept()"}</code> |  |
-| <Link id="m-reject" /><code>{"abstract Task Reject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-accept" /><code>{"abstract Task Accept()"}</code> |
+| <Link id="m-reject" /><code>{"abstract Task Reject()"}</code> |

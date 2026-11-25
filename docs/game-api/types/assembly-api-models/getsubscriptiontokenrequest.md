@@ -16,12 +16,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GetSubscriptionTokenRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GetSubscriptionTokenRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-subscriptionplanidentifier" /><code>{"string SubscriptionPlanIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-subscriptionplanidentifier" /><code>{"string SubscriptionPlanIdentifier { get; set; }"}</code> |

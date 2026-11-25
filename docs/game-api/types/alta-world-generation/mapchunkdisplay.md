@@ -20,9 +20,9 @@ Base for a component that draws one cave generation plugin's output in one map c
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected MapChunkDisplay()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected MapChunkDisplay()"}</code> |
 
 ## Fields
 

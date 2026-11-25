@@ -20,22 +20,27 @@ Action settings for a creature crawling over surfaces for a random duration (`Ac
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AgentCrawlSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AgentCrawlSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-colliderradius" /><code>{"private float colliderRadius"}</code> |  |
-| <Link id="m-collisioncheck" /><code>{"private LayerMask collisionCheck"}</code> |  |
-| <Link id="m-raycasteveryxframes" /><code>{"private int raycastEveryXFrames"}</code> |  |
-| <Link id="m-recoverfromfalling" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" recoverFromFalling"}</code> |  |
-| <Link id="m-uprightrotationspeed" /><code>{"private float uprightRotationSpeed"}</code> |  |
-| <Link id="m-walkingspeed" /><code>{"private float walkingSpeed"}</code> |  |
-| <Link id="m-walkon" /><code>{"private LayerMask walkOn"}</code> |  |
-| <Link id="m-walkrotationspeed" /><code>{"private float walkRotationSpeed"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-colliderradius" /><code>{"private float colliderRadius"}</code> |
+| <Link id="m-collisioncheck" /><code>{"private LayerMask collisionCheck"}</code> |
+| <Link id="m-raycasteveryxframes" /><code>{"private int raycastEveryXFrames"}</code> |
+| <Link id="m-recoverfromfalling" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" recoverFromFalling"}</code> |
+| <Link id="m-uprightrotationspeed" /><code>{"private float uprightRotationSpeed"}</code> |
+| <Link id="m-walkingspeed" /><code>{"private float walkingSpeed"}</code> |
+| <Link id="m-walkon" /><code>{"private LayerMask walkOn"}</code> |
+| <Link id="m-walkrotationspeed" /><code>{"private float walkRotationSpeed"}</code> |
+
+</details>
 
 ## Properties
 

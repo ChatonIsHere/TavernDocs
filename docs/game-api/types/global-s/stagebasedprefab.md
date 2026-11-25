@@ -20,17 +20,22 @@ Saved component that shows one stage prefab at a time from a `PrefabStageDefinit
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StageBasedPrefab()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StageBasedPrefab()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-progressedtostage" /><code>{"private "}<Link to="/game-api/types/global-i-l/intevent">{"IntEvent"}</Link>{" progressedToStage"}</code> |  |
-| <Link id="m-reachedlaststage" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" reachedLastStage"}</code> |  |
-| <Link id="m-stages" /><code>{"private "}<Link to="/game-api/types/global-p/prefabstagedefinition">{"PrefabStageDefinition"}</Link>{" stages"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-progressedtostage" /><code>{"private "}<Link to="/game-api/types/global-i-l/intevent">{"IntEvent"}</Link>{" progressedToStage"}</code> |
+| <Link id="m-reachedlaststage" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" reachedLastStage"}</code> |
+| <Link id="m-stages" /><code>{"private "}<Link to="/game-api/types/global-p/prefabstagedefinition">{"PrefabStageDefinition"}</Link>{" stages"}</code> |
+
+</details>
 
 ## Properties
 
@@ -47,4 +52,12 @@ Saved component that shows one stage prefab at a time from a `PrefabStageDefinit
 | <Link id="m-nextstage" /><code>{"void NextStage()"}</code> | Moves to the next stage, if there is one. |
 | <Link id="m-previousstage" /><code>{"void PreviousStage()"}</code> | Moves to the previous stage, if there is one. |
 | <Link id="m-progresstostage" /><code>{"void ProgressToStage(int stageIndex)"}</code> | Replaces the current stage entity with the given stage's prefab and fires the stage events. Ignores indexes out of range. |
-| <Link id="m-handleloadedcurrentstageentity" /><code>{"private void HandleLoadedCurrentStageEntity("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, int childIndex)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-handleloadedcurrentstageentity" /><code>{"private void HandleLoadedCurrentStageEntity("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, int childIndex)"}</code> |
+
+</details>

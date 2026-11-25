@@ -19,16 +19,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnInCircleSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpawnInCircleSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxradiussaved" /><code>{"float maxRadiusSaved"}</code> |  |
-| <Link id="m-minradiussaved" /><code>{"float minRadiusSaved"}</code> |  |
-| <Link id="m-numofitemssaved" /><code>{"int numOfItemsSaved"}</code> |  |
-| <Link id="m-randomoffsetsaved" /><code>{"Vector3 randomOffsetSaved"}</code> |  |
-| <Link id="m-shouldbekinematicsaved" /><code>{"bool shouldBeKinematicSaved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maxradiussaved" /><code>{"float maxRadiusSaved"}</code> |
+| <Link id="m-minradiussaved" /><code>{"float minRadiusSaved"}</code> |
+| <Link id="m-numofitemssaved" /><code>{"int numOfItemsSaved"}</code> |
+| <Link id="m-randomoffsetsaved" /><code>{"Vector3 randomOffsetSaved"}</code> |
+| <Link id="m-shouldbekinematicsaved" /><code>{"bool shouldBeKinematicSaved"}</code> |

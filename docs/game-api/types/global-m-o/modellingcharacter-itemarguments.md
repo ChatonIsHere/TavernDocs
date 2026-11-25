@@ -17,16 +17,16 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ItemArguments()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ItemArguments()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"[] arguments"}</code> |  |
-| <Link id="m-name" /><code>{"string name"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"[] arguments"}</code> |
+| <Link id="m-name" /><code>{"string name"}</code> |
 
 ## Used in
 

@@ -19,17 +19,22 @@ One item in a loot table with a count range.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Entry()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Entry()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-item" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> |  |
-| <Link id="m-maximum" /><code>{"private int maximum"}</code> |  |
-| <Link id="m-minimum" /><code>{"private int minimum"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-item" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> |
+| <Link id="m-maximum" /><code>{"private int maximum"}</code> |
+| <Link id="m-minimum" /><code>{"private int minimum"}</code> |
+
+</details>
 
 ## Properties
 

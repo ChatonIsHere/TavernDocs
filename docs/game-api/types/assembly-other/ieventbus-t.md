@@ -18,6 +18,6 @@ An **interface** in `Alta.EventBus.Runtime`, `Alta.EventBusSystem`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-send" /><code>{"void Send(T eventObject)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-send" /><code>{"void Send(T eventObject)"}</code> |

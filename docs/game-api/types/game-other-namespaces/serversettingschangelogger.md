@@ -16,12 +16,17 @@ A **static class** in `Root.Township`, `ATT.Character.QuickAccessMenu`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logserversettingschange" /><code>{"static void LogServerSettingsChange("}<Link to="/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" oldSettings, "}<Link to="/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" newSettings)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-logserversettingschange" /><code>{"static void LogServerSettingsChange("}<Link to="/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" oldSettings, "}<Link to="/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" newSettings)"}</code> |

@@ -20,18 +20,23 @@ An asset that reads and writes one named property of `GameSettings` or `ServerSe
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SettingsFieldAccess()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SettingsFieldAccess()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fieldname" /><code>{"private string fieldName"}</code> |  |
-| <Link id="m-isserversetting" /><code>{"private bool isServerSetting"}</code> |  |
-| <Link id="m-property" /><code>{"private PropertyInfo property"}</code> |  |
-| <Link id="m-settingdescription" /><code>{"private string settingDescription"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fieldname" /><code>{"private string fieldName"}</code> |
+| <Link id="m-isserversetting" /><code>{"private bool isServerSetting"}</code> |
+| <Link id="m-property" /><code>{"private PropertyInfo property"}</code> |
+| <Link id="m-settingdescription" /><code>{"private string settingDescription"}</code> |
+
+</details>
 
 ## Properties
 

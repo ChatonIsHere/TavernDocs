@@ -18,12 +18,17 @@ A **class** in `Root.Township`, `Alta.Alchemy`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BreathableArea()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BreathableArea()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-nothing" /><code>{"private bool nothing"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-nothing" /><code>{"private bool nothing"}</code> |
+
+</details>

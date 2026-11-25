@@ -16,19 +16,19 @@ A **struct** in `Root.Township`, `Alta.Utilities.Atlas`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialRect(Material material, Vector4 offsetScale, bool needsFixing)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"MaterialRect(Material material)"}</code> |  |
-| <Link id="m-ctor-3" /><code>{"MaterialRect("}<Link to="/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{" atlasedMaterial)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MaterialRect(Material material, Vector4 offsetScale, bool needsFixing)"}</code> |
+| <Link id="m-ctor-2" /><code>{"MaterialRect(Material material)"}</code> |
+| <Link id="m-ctor-3" /><code>{"MaterialRect("}<Link to="/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{" atlasedMaterial)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-material" /><code>{"Material Material { get; }"}</code> |  |
-| <Link id="m-needsfixing" /><code>{"bool NeedsFixing { get; }"}</code> |  |
-| <Link id="m-offsetscale" /><code>{"Vector4 OffsetScale { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-material" /><code>{"Material Material { get; }"}</code> |
+| <Link id="m-needsfixing" /><code>{"bool NeedsFixing { get; }"}</code> |
+| <Link id="m-offsetscale" /><code>{"Vector4 OffsetScale { get; }"}</code> |
 
 ## Used in
 

@@ -17,26 +17,39 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LiquidPouringParticlesMarker()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LiquidPouringParticlesMarker()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pouringparticles" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/pouringparticles">{"PouringParticles"}</Link>{" pouringParticles"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-pouringparticles" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/pouringparticles">{"PouringParticles"}</Link>{" pouringParticles"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-container" /><code><Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" Container { get; }"}</code> |  |
-| <Link id="m-pourable" /><code><Link to="/game-api/types/alta-stats-effects/ipourablecontainer">{"IPourableContainer"}</Link>{" Pourable { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-container" /><code><Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" Container { get; }"}</code> |
+| <Link id="m-pourable" /><code><Link to="/game-api/types/alta-stats-effects/ipourablecontainer">{"IPourableContainer"}</Link>{" Pourable { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-registerpouringparticlehit" /><code>{"void RegisterPouringParticleHit("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-registerpouringparticlehit" /><code>{"void RegisterPouringParticleHit("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

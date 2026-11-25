@@ -19,20 +19,25 @@ Inspector entry for one field or property marked with `BubbleInspectorFieldAttri
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ValueMember(FieldInfo field)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ValueMember(PropertyInfo property)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ValueMember(FieldInfo field)"}</code> |
+| <Link id="m-ctor-2" /><code>{"ValueMember(PropertyInfo property)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentinteractor" /><code>{"private static "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" currentInteractor"}</code> |  |
-| <Link id="m-currentinteractorinternal" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" currentInteractorInternal"}</code> |  |
-| <Link id="m-valuegetter" /><code>{"private Func<object, object> valueGetter"}</code> |  |
-| <Link id="m-valuename" /><code>{"private string valueName"}</code> |  |
-| <Link id="m-valuesetter" /><code>{"private Action<object, object> valueSetter"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentinteractor" /><code>{"private static "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" currentInteractor"}</code> |
+| <Link id="m-currentinteractorinternal" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" currentInteractorInternal"}</code> |
+| <Link id="m-valuegetter" /><code>{"private Func<object, object> valueGetter"}</code> |
+| <Link id="m-valuename" /><code>{"private string valueName"}</code> |
+| <Link id="m-valuesetter" /><code>{"private Action<object, object> valueSetter"}</code> |
+
+</details>
 
 ## Properties
 

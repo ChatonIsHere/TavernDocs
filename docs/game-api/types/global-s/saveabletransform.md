@@ -18,14 +18,14 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SaveableTransform()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SaveableTransform()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createobject" /><code>{"static ScriptableObject CreateObject<T>(Transform transform, bool isLocalSave, string savePath)"}</code> |  |
-| <Link id="m-loadinto" /><code>{"abstract bool LoadInto(Transform transform)"}</code> |  |
-| <Link id="m-save" /><code>{"abstract void Save(Transform transform, bool isLocalSave)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createobject" /><code>{"static ScriptableObject CreateObject<T>(Transform transform, bool isLocalSave, string savePath)"}</code> |
+| <Link id="m-loadinto" /><code>{"abstract bool LoadInto(Transform transform)"}</code> |
+| <Link id="m-save" /><code>{"abstract void Save(Transform transform, bool isLocalSave)"}</code> |

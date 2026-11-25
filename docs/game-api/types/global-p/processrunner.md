@@ -17,27 +17,40 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProcessRunner(string processPrefix)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProcessRunner(string processPrefix)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handleprocesscompletion" /><code>{"private TaskCompletionSource<bool> handleProcessCompletion"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |  |
-| <Link id="m-process" /><code>{"private Process process"}</code> |  |
-| <Link id="m-processprefix" /><code>{"private readonly string processPrefix"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-handleprocesscompletion" /><code>{"private TaskCompletionSource<bool> handleProcessCompletion"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |
+| <Link id="m-process" /><code>{"private Process process"}</code> |
+| <Link id="m-processprefix" /><code>{"private readonly string processPrefix"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-startprocess" /><code>{"async Task StartProcess(string file, string arguments)"}</code> |  |
-| <Link id="m-completedwithouterror" /><code>{"private bool CompletedWithoutError()"}</code> |  |
-| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> |  |
-| <Link id="m-logoutput" /><code>{"private void LogOutput(object sender, DataReceivedEventArgs e)"}</code> |  |
-| <Link id="m-onexit" /><code>{"private void OnExit(object sender, EventArgs e)"}</code> |  |
-| <Link id="m-releaseunmanagedresources" /><code>{"private void ReleaseUnmanagedResources()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
+| <Link id="m-startprocess" /><code>{"async Task StartProcess(string file, string arguments)"}</code> |
+| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-completedwithouterror" /><code>{"private bool CompletedWithoutError()"}</code> |
+| <Link id="m-logoutput" /><code>{"private void LogOutput(object sender, DataReceivedEventArgs e)"}</code> |
+| <Link id="m-onexit" /><code>{"private void OnExit(object sender, EventArgs e)"}</code> |
+| <Link id="m-releaseunmanagedresources" /><code>{"private void ReleaseUnmanagedResources()"}</code> |
+
+</details>

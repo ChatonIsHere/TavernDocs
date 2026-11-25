@@ -17,33 +17,38 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatBarNotch()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatBarNotch()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-axistorotatearound" /><code>{"private Vector3 axisToRotateAround"}</code> |  |
-| <Link id="m-basescale" /><code>{"private Vector3 baseScale"}</code> |  |
-| <Link id="m-majorscale" /><code>{"private float majorScale"}</code> |  |
-| <Link id="m-minorscale" /><code>{"private float minorScale"}</code> |  |
-| <Link id="m-renderer" /><code>{"private Renderer renderer"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-axistorotatearound" /><code>{"private Vector3 axisToRotateAround"}</code> |
+| <Link id="m-basescale" /><code>{"private Vector3 baseScale"}</code> |
+| <Link id="m-majorscale" /><code>{"private float majorScale"}</code> |
+| <Link id="m-minorscale" /><code>{"private float minorScale"}</code> |
+| <Link id="m-renderer" /><code>{"private Renderer renderer"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-position" /><code>{"float Position { get; private set; }"}</code> |  |
-| <Link id="m-renderer-2" /><code>{"Renderer Renderer { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-position" /><code>{"float Position { get; private set; }"}</code> |
+| <Link id="m-renderer-2" /><code>{"Renderer Renderer { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setmaterial" /><code>{"void SetMaterial(Material material)"}</code> |  |
-| <Link id="m-setposition" /><code>{"void SetPosition(float positionAlongCurve, float sizeOfStatBar, bool isMajor)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setmaterial" /><code>{"void SetMaterial(Material material)"}</code> |
+| <Link id="m-setposition" /><code>{"void SetPosition(float positionAlongCurve, float sizeOfStatBar, bool isMajor)"}</code> |
 
 ## Used in
 

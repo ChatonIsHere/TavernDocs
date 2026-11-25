@@ -19,19 +19,24 @@ A procedural set piece (an encounter, a camp) placed by forest or cave generatio
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenerationCore()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenerationCore()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private Logger logger"}</code> |  |
-| <Link id="m-maximumradius" /><code>{"private float maximumRadius"}</code> |  |
-| <Link id="m-minimumradius" /><code>{"private float minimumRadius"}</code> |  |
-| <Link id="m-parts" /><code>{"private "}<Link to="/game-api/types/global-e-h/generatablepart">{"GeneratablePart"}</Link>{"[] parts"}</code> |  |
-| <Link id="m-workingparts" /><code>{"private List<"}<Link to="/game-api/types/global-e-h/generatablepart">{"GeneratablePart"}</Link>{"> workingParts"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private Logger logger"}</code> |
+| <Link id="m-maximumradius" /><code>{"private float maximumRadius"}</code> |
+| <Link id="m-minimumradius" /><code>{"private float minimumRadius"}</code> |
+| <Link id="m-parts" /><code>{"private "}<Link to="/game-api/types/global-e-h/generatablepart">{"GeneratablePart"}</Link>{"[] parts"}</code> |
+| <Link id="m-workingparts" /><code>{"private List<"}<Link to="/game-api/types/global-e-h/generatablepart">{"GeneratablePart"}</Link>{"> workingParts"}</code> |
+
+</details>
 
 ## Properties
 
@@ -54,11 +59,19 @@ A procedural set piece (an encounter, a camp) placed by forest or cave generatio
 | <Link id="m-generate" /><code>{"void Generate("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" chunkingParent, bool isModifyingTerrain, float radius, int seed = 0)"}</code> | Runs every part's static generation with the given spawn data, radius and seed. |
 | <Link id="m-generatedynamic" /><code>{"void GenerateDynamic()"}</code> | If the spawn data is generating, runs every part's dynamic generation and the static generation helper. |
 | <Link id="m-release" /><code>{"override void Release()"}</code> | Destroys the core's object. |
-| <Link id="m-evaluate" /><code>{"private float Alta.Caves.IDistributionValue.Evaluate("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" set)"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
-| <Link id="m-testgenerate" /><code>{"private void TestGenerate()"}</code> |  |
-| <Link id="m-testnodegenerate" /><code>{"private void TestNodeGenerate()"}</code> |  |
-| <Link id="m-testpathgenerate" /><code>{"private void TestPathGenerate()"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-evaluate" /><code>{"private float Alta.Caves.IDistributionValue.Evaluate("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" set)"}</code> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+| <Link id="m-testgenerate" /><code>{"private void TestGenerate()"}</code> |
+| <Link id="m-testnodegenerate" /><code>{"private void TestNodeGenerate()"}</code> |
+| <Link id="m-testpathgenerate" /><code>{"private void TestPathGenerate()"}</code> |
+
+</details>
 
 ## Used in
 

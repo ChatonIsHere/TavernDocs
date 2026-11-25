@@ -18,29 +18,39 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactSoundMap()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactSoundMap()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-impactsoundsets" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/impactsoundset">{"ImpactSoundSet"}</Link>{"> impactSoundSets"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-materialtype" /><code>{"private Dictionary<PhysicMaterial, Switch> materialType"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-impactsoundsets" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/impactsoundset">{"ImpactSoundSet"}</Link>{"> impactSoundSets"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-materialtype" /><code>{"private Dictionary<PhysicMaterial, Switch> materialType"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-materialtype-2" /><code>{"Dictionary<PhysicMaterial, Switch> MaterialType { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-materialtype-2" /><code>{"Dictionary<PhysicMaterial, Switch> MaterialType { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loadimpactsoundmap" /><code>{"private void LoadImpactSoundMap()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-loadimpactsoundmap" /><code>{"private void LoadImpactSoundMap()"}</code> |
+
+</details>
 
 ## Used in
 

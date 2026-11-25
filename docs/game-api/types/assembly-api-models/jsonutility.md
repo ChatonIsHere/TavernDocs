@@ -16,18 +16,18 @@ A **static class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModel
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allconverters" /><code>{"static JsonConverter[] AllConverters"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-allconverters" /><code>{"static JsonConverter[] AllConverters"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-settings" /><code>{"static JsonSerializerSettings Settings { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-settings" /><code>{"static JsonSerializerSettings Settings { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setupjsonserializersettings" /><code>{"static void SetupJsonSerializerSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setupjsonserializersettings" /><code>{"static void SetupJsonSerializerSettings()"}</code> |

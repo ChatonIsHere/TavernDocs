@@ -19,15 +19,15 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RespawnOnDestroySaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RespawnOnDestroySaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maximumtimetorespawn" /><code>{"float maximumTimeToRespawn"}</code> |  |
-| <Link id="m-minimumtimetorespawn" /><code>{"float minimumTimeToRespawn"}</code> |  |
-| <Link id="m-respawnobject" /><code><Link to="/game-api/types/alta-world/savablesaveddynamicobject">{"SavableSavedDynamicObject"}</Link>{" respawnObject"}</code> |  |
-| <Link id="m-respawntimer" /><code>{"TimeSpan respawnTimer"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maximumtimetorespawn" /><code>{"float maximumTimeToRespawn"}</code> |
+| <Link id="m-minimumtimetorespawn" /><code>{"float minimumTimeToRespawn"}</code> |
+| <Link id="m-respawnobject" /><code><Link to="/game-api/types/alta-world/savablesaveddynamicobject">{"SavableSavedDynamicObject"}</Link>{" respawnObject"}</code> |
+| <Link id="m-respawntimer" /><code>{"TimeSpan respawnTimer"}</code> |

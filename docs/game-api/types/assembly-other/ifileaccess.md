@@ -17,17 +17,17 @@ An **interface** in `Alta.IO`, `Alta.Utilities`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-exists" /><code>{"bool Exists { get; }"}</code> |  |
-| <Link id="m-fullname" /><code>{"string FullName { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-exists" /><code>{"bool Exists { get; }"}</code> |
+| <Link id="m-fullname" /><code>{"string FullName { get; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-delete" /><code>{"void Delete()"}</code> |  |
-| <Link id="m-deleteasync" /><code>{"Task DeleteAsync()"}</code> |  |
-| <Link id="m-isexistingasync" /><code>{"Task<bool> IsExistingAsync()"}</code> |  |
-| <Link id="m-refresh" /><code>{"void Refresh()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-delete" /><code>{"void Delete()"}</code> |
+| <Link id="m-deleteasync" /><code>{"Task DeleteAsync()"}</code> |
+| <Link id="m-isexistingasync" /><code>{"Task<bool> IsExistingAsync()"}</code> |
+| <Link id="m-refresh" /><code>{"void Refresh()"}</code> |

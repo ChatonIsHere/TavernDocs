@@ -17,26 +17,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InteriorRendererCollector()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InteriorRendererCollector()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addedgroup" /><code>{"private List<LODGroup> addedGroup"}</code> |  |
-| <Link id="m-lodmultiplier" /><code>{"private float lodMultiplier"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-addedgroup" /><code>{"private List<LODGroup> addedGroup"}</code> |
+| <Link id="m-lodmultiplier" /><code>{"private float lodMultiplier"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lodmultiplier-2" /><code>{"protected float LodMultiplier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-lodmultiplier-2" /><code>{"protected float LodMultiplier { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
-| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
+| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |
+
+</details>

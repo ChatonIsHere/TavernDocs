@@ -17,18 +17,18 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SubscriptionStatus()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SubscriptionStatus()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isrenewing" /><code>{"bool? IsRenewing { get; set; }"}</code> |  |
-| <Link id="m-issupporter" /><code>{"bool IsSupporter { get; set; }"}</code> |  |
-| <Link id="m-memberenddate" /><code>{"DateTime? MemberEndDate { get; set; }"}</code> |  |
-| <Link id="m-nextreward" /><code>{"DateTime? NextReward { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isrenewing" /><code>{"bool? IsRenewing { get; set; }"}</code> |
+| <Link id="m-issupporter" /><code>{"bool IsSupporter { get; set; }"}</code> |
+| <Link id="m-memberenddate" /><code>{"DateTime? MemberEndDate { get; set; }"}</code> |
+| <Link id="m-nextreward" /><code>{"DateTime? NextReward { get; set; }"}</code> |
 
 ## Used in
 

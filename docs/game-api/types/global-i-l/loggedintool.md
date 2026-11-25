@@ -20,9 +20,9 @@ Base for menu tools that only work while logged in to Alta's account services, s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected LoggedInTool()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected LoggedInTool()"}</code> |
 
 ## Methods
 

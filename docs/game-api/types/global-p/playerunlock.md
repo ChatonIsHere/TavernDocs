@@ -23,17 +23,22 @@ Asset for something a player can unlock. It can raise the maximum of a stat on t
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerUnlock()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerUnlock()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-orbs" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock-orbproperties">{"PlayerUnlock.OrbProperties"}</Link>{"[] orbs"}</code> |  |
-| <Link id="m-prerequisites" /><code>{"private List<"}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> prerequisites"}</code> |  |
-| <Link id="m-unlockingpermissions" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock-unlockingpermissionssetup">{"PlayerUnlock.UnlockingPermissionsSetup"}</Link>{" unlockingPermissions"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-orbs" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock-orbproperties">{"PlayerUnlock.OrbProperties"}</Link>{"[] orbs"}</code> |
+| <Link id="m-prerequisites" /><code>{"private List<"}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> prerequisites"}</code> |
+| <Link id="m-unlockingpermissions" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock-unlockingpermissionssetup">{"PlayerUnlock.UnlockingPermissionsSetup"}</Link>{" unlockingPermissions"}</code> |
+
+</details>
 
 ## Properties
 
@@ -49,9 +54,17 @@ Asset for something a player can unlock. It can raise the maximum of a stat on t
 | --- | --- |
 | <Link id="m-applyto" /><code>{"void ApplyTo("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Adds the configured amount to the stat's maximum and base value, and again whenever the player gets a new controller. |
 | <Link id="m-removefrom" /><code>{"void RemoveFrom("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Takes back the stat change and stops reapplying it on new controllers. |
-| <Link id="m-canupdatemaxstat" /><code>{"private bool CanUpdateMaxStat("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-canupdatemaxstat-2" /><code>{"private bool CanUpdateMaxStat("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |
-| <Link id="m-updateplayercontroller" /><code>{"private void UpdatePlayerController("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-canupdatemaxstat" /><code>{"private bool CanUpdateMaxStat("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| <Link id="m-canupdatemaxstat-2" /><code>{"private bool CanUpdateMaxStat("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |
+| <Link id="m-updateplayercontroller" /><code>{"private void UpdatePlayerController("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |
+
+</details>
 
 ## Used in
 

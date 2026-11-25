@@ -16,12 +16,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MigrateWebsocketRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MigrateWebsocketRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-token" /><code>{"string Token { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-token" /><code>{"string Token { get; set; }"}</code> |

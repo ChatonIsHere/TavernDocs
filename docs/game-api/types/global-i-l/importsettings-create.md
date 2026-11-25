@@ -18,12 +18,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-defaultname" /><code>{"protected override string DefaultName { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-defaultname" /><code>{"protected override string DefaultName { get; }"}</code> |

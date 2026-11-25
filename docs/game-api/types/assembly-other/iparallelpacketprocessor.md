@@ -17,6 +17,6 @@ An **interface** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-unresolvedpackets" /><code>{"int UnResolvedPackets { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-unresolvedpackets" /><code>{"int UnResolvedPackets { get; }"}</code> |

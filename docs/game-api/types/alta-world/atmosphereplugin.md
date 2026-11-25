@@ -20,9 +20,9 @@ Base for an atmosphere source (such as a zone or weather) that supplies ambient 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected AtmospherePlugin()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected AtmospherePlugin()"}</code> |
 
 ## Fields
 
@@ -32,8 +32,16 @@ Base for an atmosphere source (such as a zone or weather) that supplies ambient 
 | <Link id="m-currentfogdensity" /><code>{"protected float currentFogDensity"}</code> | Fog density field for subclasses. |
 | <Link id="m-mainsource" /><code>{"protected "}<Link to="/game-api/types/global-a-b/ambienceaudio">{"AmbienceAudio"}</Link>{" mainSource"}</code> | The ambience audio source. |
 | <Link id="m-manager" /><code>{"protected "}<Link to="/game-api/types/alta-world/atmospheremanager">{"AtmosphereManager"}</Link>{" manager"}</code> | The atmosphere manager that owns this plugin. |
-| <Link id="m-pluginhash" /><code>{"private int pluginHash"}</code> |  |
-| <Link id="m-priority" /><code>{"private int priority"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-pluginhash" /><code>{"private int pluginHash"}</code> |
+| <Link id="m-priority" /><code>{"private int priority"}</code> |
+
+</details>
 
 ## Properties
 

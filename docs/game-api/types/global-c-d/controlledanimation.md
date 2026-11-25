@@ -17,21 +17,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ControlledAnimation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ControlledAnimation()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |  |
-| <Link id="m-property" /><code>{"private string property"}</code> |  |
-| <Link id="m-propertyhash" /><code>{"private int propertyHash"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
+| <Link id="m-property" /><code>{"private string property"}</code> |
+| <Link id="m-propertyhash" /><code>{"private int propertyHash"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-set" /><code>{"void Set(float progress)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-set" /><code>{"void Set(float progress)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

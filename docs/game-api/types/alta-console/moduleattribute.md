@@ -19,13 +19,13 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModuleAttribute(string name, string description)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModuleAttribute(string name, string description)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> |

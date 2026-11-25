@@ -18,16 +18,21 @@ One joined Vivox voice or text channel. Connects with a token from the API and p
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VivoxSession("}<Link to="/game-api/types/alta-networking/vivoxchannel">{"VivoxChannel"}</Link>{" channel, ILoginSession login)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VivoxSession("}<Link to="/game-api/types/alta-networking/vivoxchannel">{"VivoxChannel"}</Link>{" channel, ILoginSession login)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-session" /><code>{"private readonly IChannelSession session"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-session" /><code>{"private readonly IChannelSession session"}</code> |
+
+</details>
 
 ## Properties
 
@@ -54,11 +59,19 @@ One joined Vivox voice or text channel. Connects with a token from the API and p
 | <Link id="m-initialize" /><code>{"async void Initialize()"}</code> | Gets a connect token (up to 5 tries, waiting longer each time) and joins the channel. |
 | <Link id="m-setmuted" /><code>{"void SetMuted(string username, bool isMuted)"}</code> | Mutes or unmutes a participant locally, found by username in the participant key. |
 | <Link id="m-terminate" /><code>{"void Terminate()"}</code> | Disconnects from the channel. |
-| <Link id="m-connectasync" /><code>{"private async Task<bool> ConnectAsync(string accessToken)"}</code> |  |
-| <Link id="m-pairwithplayer" /><code>{"private void PairWithPlayer(string key, IParticipant player, float delay = 0.5)"}</code> |  |
-| <Link id="m-playerjoined" /><code>{"private void PlayerJoined(object sender, KeyEventArg<string> e)"}</code> |  |
-| <Link id="m-playerleft" /><code>{"private void PlayerLeft(object sender, KeyEventArg<string> e)"}</code> |  |
-| <Link id="m-sessionpropertychanged" /><code>{"private void SessionPropertyChanged(object sender, PropertyChangedEventArgs e)"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-connectasync" /><code>{"private async Task<bool> ConnectAsync(string accessToken)"}</code> |
+| <Link id="m-pairwithplayer" /><code>{"private void PairWithPlayer(string key, IParticipant player, float delay = 0.5)"}</code> |
+| <Link id="m-playerjoined" /><code>{"private void PlayerJoined(object sender, KeyEventArg<string> e)"}</code> |
+| <Link id="m-playerleft" /><code>{"private void PlayerLeft(object sender, KeyEventArg<string> e)"}</code> |
+| <Link id="m-sessionpropertychanged" /><code>{"private void SessionPropertyChanged(object sender, PropertyChangedEventArgs e)"}</code> |
+
+</details>
 
 ## Used in
 

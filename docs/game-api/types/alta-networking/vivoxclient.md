@@ -18,23 +18,31 @@ Wrapper around the Vivox voice and text chat client: login, audio devices, chann
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VivoxClient()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VivoxClient()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-loginsession" /><code>{"ILoginSession loginSession"}</code> | The Vivox login session, or null when logged out. |
-| <Link id="m-account" /><code>{"private AccountId account"}</code> |  |
-| <Link id="m-channels" /><code>{"private readonly Dictionary<string, "}<Link to="/game-api/types/alta-networking/vivoxsession">{"VivoxSession"}</Link>{"> channels"}</code> |  |
-| <Link id="m-client" /><code>{"private Client client"}</code> |  |
-| <Link id="m-isintendedmute" /><code>{"private bool isIntendedMute"}</code> |  |
-| <Link id="m-ismutedbymods" /><code>{"private bool isMutedByMods"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-positionalchat" /><code>{"private "}<Link to="/game-api/types/alta-networking/ivivoxvoiceupdatable">{"IVivoxVoiceUpdatable"}</Link>{" positionalChat"}</code> |  |
-| <Link id="m-stringbuilder" /><code>{"private static StringBuilder stringBuilder"}</code> |  |
+
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-account" /><code>{"private AccountId account"}</code> |
+| <Link id="m-channels" /><code>{"private readonly Dictionary<string, "}<Link to="/game-api/types/alta-networking/vivoxsession">{"VivoxSession"}</Link>{"> channels"}</code> |
+| <Link id="m-client" /><code>{"private Client client"}</code> |
+| <Link id="m-isintendedmute" /><code>{"private bool isIntendedMute"}</code> |
+| <Link id="m-ismutedbymods" /><code>{"private bool isMutedByMods"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-positionalchat" /><code>{"private "}<Link to="/game-api/types/alta-networking/ivivoxvoiceupdatable">{"IVivoxVoiceUpdatable"}</Link>{" positionalChat"}</code> |
+| <Link id="m-stringbuilder" /><code>{"private static StringBuilder stringBuilder"}</code> |
+
+</details>
 
 ## Properties
 
@@ -75,10 +83,18 @@ Wrapper around the Vivox voice and text chat client: login, audio devices, chann
 | <Link id="m-terminate" /><code>{"void Terminate()"}</code> | Shuts the Vivox client down. |
 | <Link id="m-togglemute" /><code>{"void ToggleMute()"}</code> | Flips the player's chosen mute; it only takes effect if moderators aren't muting them. |
 | <Link id="m-update" /><code>{"void Update()"}</code> | Runs Vivox once and updates the positional voice position. Call every frame. |
-| <Link id="m-handlesessionstatechanged" /><code>{"private void HandleSessionStateChanged()"}</code> |  |
-| <Link id="m-logdeviceinfo" /><code>{"private void LogDeviceInfo()"}</code> |  |
-| <Link id="m-onplayerpaired" /><code>{"private void OnPlayerPaired(IParticipant player)"}</code> |  |
-| <Link id="m-sessionpropertychanged" /><code>{"private void SessionPropertyChanged(object sender, PropertyChangedEventArgs e)"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-handlesessionstatechanged" /><code>{"private void HandleSessionStateChanged()"}</code> |
+| <Link id="m-logdeviceinfo" /><code>{"private void LogDeviceInfo()"}</code> |
+| <Link id="m-onplayerpaired" /><code>{"private void OnPlayerPaired(IParticipant player)"}</code> |
+| <Link id="m-sessionpropertychanged" /><code>{"private void SessionPropertyChanged(object sender, PropertyChangedEventArgs e)"}</code> |
+
+</details>
 
 ## Used in
 

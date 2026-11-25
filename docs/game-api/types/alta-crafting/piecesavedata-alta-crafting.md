@@ -16,18 +16,18 @@ A **class** in `Root.Township`, `Alta.Crafting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PieceSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PieceSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-failurehealth" /><code>{"float failureHealth"}</code> |  |
-| <Link id="m-hash" /><code>{"int hash"}</code> |  |
-| <Link id="m-iscomplete" /><code>{"bool isComplete"}</code> |  |
-| <Link id="m-material" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-failurehealth" /><code>{"float failureHealth"}</code> |
+| <Link id="m-hash" /><code>{"int hash"}</code> |
+| <Link id="m-iscomplete" /><code>{"bool isComplete"}</code> |
+| <Link id="m-material" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material"}</code> |
 
 ## Used in
 

@@ -19,25 +19,30 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationRaycast()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationRaycast()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-groundlayers" /><code>{"private LayerMask groundLayers"}</code> |  |
-| <Link id="m-maxacceptableangledot" /><code>{"private float maxAcceptableAngleDot"}</code> |  |
-| <Link id="m-minimumraycastdistance" /><code>{"private float minimumRaycastDistance"}</code> |  |
-| <Link id="m-raycastfinishheight" /><code>{"private float raycastFinishHeight"}</code> |  |
-| <Link id="m-raycaststartheight" /><code>{"private float raycastStartHeight"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-groundlayers" /><code>{"private LayerMask groundLayers"}</code> |
+| <Link id="m-maxacceptableangledot" /><code>{"private float maxAcceptableAngleDot"}</code> |
+| <Link id="m-minimumraycastdistance" /><code>{"private float minimumRaycastDistance"}</code> |
+| <Link id="m-raycastfinishheight" /><code>{"private float raycastFinishHeight"}</code> |
+| <Link id="m-raycaststartheight" /><code>{"private float raycastStartHeight"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-try" /><code><Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{"? Try(Vector3 position, Vector3 direction)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-try" /><code><Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{"? Try(Vector3 position, Vector3 direction)"}</code> |
 
 ## Used in
 

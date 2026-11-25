@@ -16,16 +16,16 @@ A **internal struct** in `Root.Township`, `Features.Climbing`. Reach it through 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StaminaUsageRecord(float distance, float leftStamina, float rightStamina)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StaminaUsageRecord(float distance, float leftStamina, float rightStamina)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distance" /><code>{"readonly float distance"}</code> |  |
-| <Link id="m-maxusedstamina" /><code>{"readonly float maxUsedStamina"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-distance" /><code>{"readonly float distance"}</code> |
+| <Link id="m-maxusedstamina" /><code>{"readonly float maxUsedStamina"}</code> |
 
 ## Used in
 

@@ -18,24 +18,34 @@ A **class** in `Root.Township`, `Alta.Environmental.Vegetation`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrassClump()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrassClump()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-availablemeshes" /><code>{"private Mesh[] availableMeshes"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-availablemeshes" /><code>{"private Mesh[] availableMeshes"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-availablemeshes-2" /><code>{"Mesh[] AvailableMeshes { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-availablemeshes-2" /><code>{"Mesh[] AvailableMeshes { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>

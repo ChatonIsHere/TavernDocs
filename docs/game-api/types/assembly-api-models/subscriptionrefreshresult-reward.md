@@ -17,16 +17,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Reward()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Reward()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-rewardamount" /><code>{"int RewardAmount { get; set; }"}</code> |  |
-| <Link id="m-rewardtype" /><code>{"string RewardType { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-rewardamount" /><code>{"int RewardAmount { get; set; }"}</code> |
+| <Link id="m-rewardtype" /><code>{"string RewardType { get; set; }"}</code> |
 
 ## Used in
 

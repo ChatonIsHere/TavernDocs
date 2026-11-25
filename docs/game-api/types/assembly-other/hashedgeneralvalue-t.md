@@ -21,20 +21,28 @@ Base for game data assets (items, stats, recipes, materials and so on) that have
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected HashedGeneralValue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected HashedGeneralValue()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isfail" /><code>{"private static bool isFail"}</code> |  |
-| <Link id="m-isinresourceloading" /><code>{"private static bool isInResourceLoading"}</code> |  |
-| <Link id="m-items" /><code>{"private static Dictionary<uint, T> items"}</code> |  |
-| <Link id="m-itemsbyname" /><code>{"private static Dictionary<string, T> itemsByName"}</code> |  |
 | <Link id="m-logger" /><code>{"protected static readonly Logger logger"}</code> | Shared NLog logger for every hashed value of this type. Logs missing hashes and names. |
-| <Link id="m-paths" /><code>{"private static string[] paths"}</code> |  |
+
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isfail" /><code>{"private static bool isFail"}</code> |
+| <Link id="m-isinresourceloading" /><code>{"private static bool isInResourceLoading"}</code> |
+| <Link id="m-items" /><code>{"private static Dictionary<uint, T> items"}</code> |
+| <Link id="m-itemsbyname" /><code>{"private static Dictionary<string, T> itemsByName"}</code> |
+| <Link id="m-paths" /><code>{"private static string[] paths"}</code> |
+
+</details>
 
 ## Properties
 
@@ -53,11 +61,19 @@ Base for game data assets (items, stats, recipes, materials and so on) that have
 | <Link id="m-get-2" /><code>{"static T Get(string name, bool isLogging = true)"}</code> | Finds an asset by hash (0 gives null) or by name. The name lookup strips spaces but does not lowercase your input, and names are stored lowercased, so pass lowercase. |
 | <Link id="m-validatefortutorialineditor" /><code>{"void ValidateForTutorialInEditor()"}</code> | Empty in this build. |
 | <Link id="m-validatehashes" /><code>{"void ValidateHashes()"}</code> | Checks this asset's hash is valid and unique and registers it in the hash table. Mostly an editor tool. |
-| <Link id="m-buildnamedictionary" /><code>{"private static Dictionary<string, T> BuildNameDictionary()"}</code> |  |
-| <Link id="m-getassetpaths" /><code>{"private static IEnumerable<string> GetAssetPaths()"}</code> |  |
 | <Link id="m-getitems" /><code>{"protected static IReadOnlyCollection<TSubType> GetItems<TSubType>()"}</code> | Protected: all loaded assets that are of a given subtype. |
-| <Link id="m-loadall" /><code>{"private static IEnumerable<T> LoadAll()"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Virtual Unity validation hook, empty in the base. |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-buildnamedictionary" /><code>{"private static Dictionary<string, T> BuildNameDictionary()"}</code> |
+| <Link id="m-getassetpaths" /><code>{"private static IEnumerable<string> GetAssetPaths()"}</code> |
+| <Link id="m-loadall" /><code>{"private static IEnumerable<T> LoadAll()"}</code> |
+
+</details>
 
 ## Used in
 

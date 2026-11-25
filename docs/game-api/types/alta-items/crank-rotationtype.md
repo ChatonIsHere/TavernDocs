@@ -17,10 +17,10 @@ An **private enum** in `Root.Township`, `Alta.Mechanisms`. Reach it through att-
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-half" /><code>{"Half = 0"}</code> |  |
-| <Link id="m-quarter" /><code>{"Quarter = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-half" /><code>{"Half = 0"}</code> |
+| <Link id="m-quarter" /><code>{"Quarter = 1"}</code> |
 
 ## Used in
 

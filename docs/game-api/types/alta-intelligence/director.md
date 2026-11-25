@@ -20,18 +20,23 @@ The high level movement control for a creature: walk to a point, follow a target
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Director()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Director()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-follower" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/follower">{"Follower"}</Link>{" follower"}</code> |  |
-| <Link id="m-navigator" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/navigator">{"Navigator"}</Link>{" navigator"}</code> |  |
-| <Link id="m-reevaluationinterval" /><code>{"private float reevaluationInterval"}</code> |  |
-| <Link id="m-topic" /><code>{"private Rigidbody topic"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-follower" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/follower">{"Follower"}</Link>{" follower"}</code> |
+| <Link id="m-navigator" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/navigator">{"Navigator"}</Link>{" navigator"}</code> |
+| <Link id="m-reevaluationinterval" /><code>{"private float reevaluationInterval"}</code> |
+| <Link id="m-topic" /><code>{"private Rigidbody topic"}</code> |
+
+</details>
 
 ## Properties
 
@@ -57,8 +62,16 @@ The high level movement control for a creature: walk to a point, follow a target
 | <Link id="m-wander" /><code>{"void Wander(Vector3 near, int searchLength, Vector3 idealDirection, int bestOf = 1)"}</code> | Stops following and walks to a random nearby spot, optionally near a point and toward a direction. |
 | <Link id="m-wander-2" /><code>{"void Wander(Vector3 near, int searchLength)"}</code> | Stops following and walks to a random nearby spot, optionally near a point and toward a direction. |
 | <Link id="m-wander-3" /><code>{"void Wander(int searchLength)"}</code> | Stops following and walks to a random nearby spot, optionally near a point and toward a direction. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -20,9 +20,9 @@ A user returned by the Alta web API's friends endpoints, with when the friendshi
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FriendshipInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FriendshipInfo()"}</code> |
 
 ## Properties
 

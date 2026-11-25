@@ -21,15 +21,20 @@ A tag asset for the PAGaC construction system (under `PAGaC/Construction/Tags`),
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Tag()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Tag()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-displaycolor" /><code>{"private Color displayColor"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-displaycolor" /><code>{"private Color displayColor"}</code> |
+
+</details>
 
 ## Properties
 

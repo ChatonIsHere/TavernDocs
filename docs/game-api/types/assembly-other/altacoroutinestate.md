@@ -16,13 +16,13 @@ An **enum** in `Alta.Coroutines`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-error" /><code>{"Error = 4"}</code> |  |
-| <Link id="m-finished" /><code>{"Finished = 3"}</code> |  |
-| <Link id="m-notstarted" /><code>{"NotStarted = 0"}</code> |  |
-| <Link id="m-running" /><code>{"Running = 1"}</code> |  |
-| <Link id="m-stopped" /><code>{"Stopped = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-error" /><code>{"Error = 4"}</code> |
+| <Link id="m-finished" /><code>{"Finished = 3"}</code> |
+| <Link id="m-notstarted" /><code>{"NotStarted = 0"}</code> |
+| <Link id="m-running" /><code>{"Running = 1"}</code> |
+| <Link id="m-stopped" /><code>{"Stopped = 2"}</code> |
 
 ## Used in
 

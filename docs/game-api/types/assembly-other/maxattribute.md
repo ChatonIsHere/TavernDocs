@@ -17,12 +17,12 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MaxAttribute(float max)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MaxAttribute(float max)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-max" /><code>{"readonly float max"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-max" /><code>{"readonly float max"}</code> |

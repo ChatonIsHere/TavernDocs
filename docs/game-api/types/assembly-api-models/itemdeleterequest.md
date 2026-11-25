@@ -17,12 +17,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ItemDeleteRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ItemDeleteRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reason" /><code>{"string Reason { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-reason" /><code>{"string Reason { get; set; }"}</code> |

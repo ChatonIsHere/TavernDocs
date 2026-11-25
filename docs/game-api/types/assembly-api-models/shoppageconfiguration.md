@@ -17,19 +17,19 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShopPageConfiguration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShopPageConfiguration()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allitemconfigurations" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/shopitemconfiguration">{"ShopItemConfiguration"}</Link>{"> AllItemConfigurations { get; }"}</code> |  |
-| <Link id="m-graphics" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/storerotationgraphicconfig">{"StoreRotationGraphicConfig"}</Link>{"> Graphics { get; set; }"}</code> |  |
-| <Link id="m-primaryitems" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/shopitemconfiguration">{"ShopItemConfiguration"}</Link>{"> PrimaryItems { get; set; }"}</code> |  |
-| <Link id="m-secondaryitems" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/shopitemconfiguration">{"ShopItemConfiguration"}</Link>{"> SecondaryItems { get; set; }"}</code> |  |
-| <Link id="m-subtitle" /><code>{"string Subtitle { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-allitemconfigurations" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/shopitemconfiguration">{"ShopItemConfiguration"}</Link>{"> AllItemConfigurations { get; }"}</code> |
+| <Link id="m-graphics" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/storerotationgraphicconfig">{"StoreRotationGraphicConfig"}</Link>{"> Graphics { get; set; }"}</code> |
+| <Link id="m-primaryitems" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/shopitemconfiguration">{"ShopItemConfiguration"}</Link>{"> PrimaryItems { get; set; }"}</code> |
+| <Link id="m-secondaryitems" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/shopitemconfiguration">{"ShopItemConfiguration"}</Link>{"> SecondaryItems { get; set; }"}</code> |
+| <Link id="m-subtitle" /><code>{"string Subtitle { get; set; }"}</code> |
 
 ## Used in
 

@@ -19,23 +19,23 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalCommunalStorageValuesData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GlobalCommunalStorageValuesData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-identifiers" /><code>{"List<"}<Link to="/game-api/types/alta-items/communalstorageuniqueidentifier">{"CommunalStorageUniqueIdentifier"}</Link>{"> identifiers"}</code> |  |
-| <Link id="m-storagedatas" /><code>{"List<"}<Link to="/game-api/types/alta-items/storagedata">{"StorageData"}</Link>{"> storageDatas"}</code> |  |
-| <Link id="m-stored" /><code>{"List<int> stored"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-identifiers" /><code>{"List<"}<Link to="/game-api/types/alta-items/communalstorageuniqueidentifier">{"CommunalStorageUniqueIdentifier"}</Link>{"> identifiers"}</code> |
+| <Link id="m-storagedatas" /><code>{"List<"}<Link to="/game-api/types/alta-items/storagedata">{"StorageData"}</Link>{"> storageDatas"}</code> |
+| <Link id="m-stored" /><code>{"List<int> stored"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-copyto" /><code>{"protected override void CopyTo("}<Link to="/game-api/types/alta-items/globalcommunalstoragevaluesdata">{"GlobalCommunalStorageValuesData"}</Link>{" target)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-copyto" /><code>{"protected override void CopyTo("}<Link to="/game-api/types/alta-items/globalcommunalstoragevaluesdata">{"GlobalCommunalStorageValuesData"}</Link>{" target)"}</code> |
 
 ## Used in
 

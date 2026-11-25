@@ -17,12 +17,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PipelineResultAttribute(params Type[] types)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PipelineResultAttribute(params Type[] types)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-types" /><code>{"IEnumerable<Type> Types { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-types" /><code>{"IEnumerable<Type> Types { get; }"}</code> |

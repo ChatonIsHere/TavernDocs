@@ -19,12 +19,12 @@ An **abstract class** in `Root.Township`, `Alta.Populations`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SpawnAreaBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SpawnAreaBase()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getrandomspawnposition" /><code>{"abstract Vector3 GetRandomSpawnPosition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getrandomspawnposition" /><code>{"abstract Vector3 GetRandomSpawnPosition()"}</code> |

@@ -21,42 +21,47 @@ Settings asset for how a player's body follows the head and hands: heading, pitc
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BodyControllerSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BodyControllerSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bodyforwardbendmultiplier" /><code>{"private float bodyForwardBendMultiplier"}</code> |  |
-| <Link id="m-bodypitchmultiplier" /><code>{"private float bodyPitchMultiplier"}</code> |  |
-| <Link id="m-bodyrollmultiplier" /><code>{"private float bodyRollMultiplier"}</code> |  |
-| <Link id="m-bodysidebendmultiplier" /><code>{"private float bodySideBendMultiplier"}</code> |  |
-| <Link id="m-distancetomovedtobendangle" /><code>{"private AnimationCurve distanceToMovedToBendAngle"}</code> |  |
-| <Link id="m-handpositionheadingimpact" /><code>{"private AnimationCurve handPositionHeadingImpact"}</code> |  |
-| <Link id="m-handpositionweight" /><code>{"private float handPositionWeight"}</code> |  |
-| <Link id="m-handweightbydistancefrombody" /><code>{"private AnimationCurve handWeightByDistanceFromBody"}</code> |  |
-| <Link id="m-headforwardlimit" /><code>{"private float headForwardLimit"}</code> |  |
-| <Link id="m-headheadingimpactonroll" /><code>{"private AnimationCurve headHeadingImpactOnRoll"}</code> |  |
-| <Link id="m-headheadingpitchimpact" /><code>{"private AnimationCurve headHeadingPitchImpact"}</code> |  |
-| <Link id="m-headingheadrotationweight" /><code>{"private float headingHeadRotationWeight"}</code> |  |
-| <Link id="m-headoffset" /><code>{"private Vector3 headOffset"}</code> |  |
-| <Link id="m-headpitchimpactonbodypitch" /><code>{"private AnimationCurve headPitchImpactOnBodyPitch"}</code> |  |
-| <Link id="m-headpositionpitchangle" /><code>{"private AnimationCurve headPositionPitchAngle"}</code> |  |
-| <Link id="m-headpositionweight" /><code>{"private float headPositionWeight"}</code> |  |
-| <Link id="m-headrolltobodyrollimpact" /><code>{"private AnimationCurve headRollToBodyRollImpact"}</code> |  |
-| <Link id="m-headrotationheadingimpact" /><code>{"private AnimationCurve headRotationHeadingImpact"}</code> |  |
-| <Link id="m-isbendingwithmovement" /><code>{"private bool isBendingWithMovement"}</code> |  |
-| <Link id="m-ischangingheading" /><code>{"private bool isChangingHeading"}</code> |  |
-| <Link id="m-ischangingpitch" /><code>{"private bool isChangingPitch"}</code> |  |
-| <Link id="m-ischangingroll" /><code>{"private bool isChangingRoll"}</code> |  |
-| <Link id="m-minmovementtobend" /><code>{"private float minMovementToBend"}</code> |  |
-| <Link id="m-movementbendlerpspeed" /><code>{"private float movementBendLerpSpeed"}</code> |  |
-| <Link id="m-pitchheadpositionweight" /><code>{"private float pitchHeadPositionWeight"}</code> |  |
-| <Link id="m-pitchheadrotationweight" /><code>{"private float pitchHeadRotationWeight"}</code> |  |
-| <Link id="m-positionlerpspeed" /><code>{"private AnimationCurve positionLerpSpeed"}</code> |  |
-| <Link id="m-rotationlerpspeed" /><code>{"private AnimationCurve rotationLerpSpeed"}</code> |  |
+<details>
+<summary>28 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bodyforwardbendmultiplier" /><code>{"private float bodyForwardBendMultiplier"}</code> |
+| <Link id="m-bodypitchmultiplier" /><code>{"private float bodyPitchMultiplier"}</code> |
+| <Link id="m-bodyrollmultiplier" /><code>{"private float bodyRollMultiplier"}</code> |
+| <Link id="m-bodysidebendmultiplier" /><code>{"private float bodySideBendMultiplier"}</code> |
+| <Link id="m-distancetomovedtobendangle" /><code>{"private AnimationCurve distanceToMovedToBendAngle"}</code> |
+| <Link id="m-handpositionheadingimpact" /><code>{"private AnimationCurve handPositionHeadingImpact"}</code> |
+| <Link id="m-handpositionweight" /><code>{"private float handPositionWeight"}</code> |
+| <Link id="m-handweightbydistancefrombody" /><code>{"private AnimationCurve handWeightByDistanceFromBody"}</code> |
+| <Link id="m-headforwardlimit" /><code>{"private float headForwardLimit"}</code> |
+| <Link id="m-headheadingimpactonroll" /><code>{"private AnimationCurve headHeadingImpactOnRoll"}</code> |
+| <Link id="m-headheadingpitchimpact" /><code>{"private AnimationCurve headHeadingPitchImpact"}</code> |
+| <Link id="m-headingheadrotationweight" /><code>{"private float headingHeadRotationWeight"}</code> |
+| <Link id="m-headoffset" /><code>{"private Vector3 headOffset"}</code> |
+| <Link id="m-headpitchimpactonbodypitch" /><code>{"private AnimationCurve headPitchImpactOnBodyPitch"}</code> |
+| <Link id="m-headpositionpitchangle" /><code>{"private AnimationCurve headPositionPitchAngle"}</code> |
+| <Link id="m-headpositionweight" /><code>{"private float headPositionWeight"}</code> |
+| <Link id="m-headrolltobodyrollimpact" /><code>{"private AnimationCurve headRollToBodyRollImpact"}</code> |
+| <Link id="m-headrotationheadingimpact" /><code>{"private AnimationCurve headRotationHeadingImpact"}</code> |
+| <Link id="m-isbendingwithmovement" /><code>{"private bool isBendingWithMovement"}</code> |
+| <Link id="m-ischangingheading" /><code>{"private bool isChangingHeading"}</code> |
+| <Link id="m-ischangingpitch" /><code>{"private bool isChangingPitch"}</code> |
+| <Link id="m-ischangingroll" /><code>{"private bool isChangingRoll"}</code> |
+| <Link id="m-minmovementtobend" /><code>{"private float minMovementToBend"}</code> |
+| <Link id="m-movementbendlerpspeed" /><code>{"private float movementBendLerpSpeed"}</code> |
+| <Link id="m-pitchheadpositionweight" /><code>{"private float pitchHeadPositionWeight"}</code> |
+| <Link id="m-pitchheadrotationweight" /><code>{"private float pitchHeadRotationWeight"}</code> |
+| <Link id="m-positionlerpspeed" /><code>{"private AnimationCurve positionLerpSpeed"}</code> |
+| <Link id="m-rotationlerpspeed" /><code>{"private AnimationCurve rotationLerpSpeed"}</code> |
+
+</details>
 
 ## Properties
 

@@ -16,10 +16,10 @@ A **struct** in `Root.Township`, `ATT.MicroTutorial`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunkidentifier" /><code>{"string ChunkIdentifier"}</code> |  |
-| <Link id="m-spawndata" /><code><Link to="/game-api/types/game-other-namespaces/orbspawndata">{"OrbSpawnData"}</Link>{" SpawnData"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chunkidentifier" /><code>{"string ChunkIdentifier"}</code> |
+| <Link id="m-spawndata" /><code><Link to="/game-api/types/game-other-namespaces/orbspawndata">{"OrbSpawnData"}</Link>{" SpawnData"}</code> |
 
 ## Used in
 

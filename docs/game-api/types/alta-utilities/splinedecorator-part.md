@@ -17,13 +17,13 @@ A **struct** in `Root.Township`, `Alta.Bezier`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forward" /><code>{"Vector3 Forward { get; set; }"}</code> |  |
-| <Link id="m-item" /><code>{"GameObject Item { get; set; }"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 Position { get; set; }"}</code> |  |
-| <Link id="m-progress" /><code>{"float Progress { get; set; }"}</code> |  |
-| <Link id="m-splineheight" /><code>{"float SplineHeight { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-forward" /><code>{"Vector3 Forward { get; set; }"}</code> |
+| <Link id="m-item" /><code>{"GameObject Item { get; set; }"}</code> |
+| <Link id="m-position" /><code>{"Vector3 Position { get; set; }"}</code> |
+| <Link id="m-progress" /><code>{"float Progress { get; set; }"}</code> |
+| <Link id="m-splineheight" /><code>{"float SplineHeight { get; set; }"}</code> |
 
 ## Used in
 

@@ -18,26 +18,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MainMenuLogger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MainMenuLogger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger-2" /><code><Link to="/game-api/types/global-i-l/imainmenulogger">{"IMainMenuLogger"}</Link>{" Logger { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-logger-2" /><code><Link to="/game-api/types/global-i-l/imainmenulogger">{"IMainMenuLogger"}</Link>{" Logger { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-error" /><code>{"void Error(string errorMessage)"}</code> |  |
-| <Link id="m-error-2" /><code>{"void Error(Exception exception, string errorMessage = null)"}</code> |  |
-| <Link id="m-info" /><code>{"void Info(string logMessage)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-error" /><code>{"void Error(string errorMessage)"}</code> |
+| <Link id="m-error-2" /><code>{"void Error(Exception exception, string errorMessage = null)"}</code> |
+| <Link id="m-info" /><code>{"void Info(string logMessage)"}</code> |

@@ -17,23 +17,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ColorBoard()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ColorBoard()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-colors" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpalette">{"CosmeticPalette"}</Link>{" colors"}</code> |  |
-| <Link id="m-colorvalue" /><code>{"private float colorValue"}</code> |  |
-| <Link id="m-columns" /><code>{"private int columns"}</code> |  |
-| <Link id="m-spacingx" /><code>{"private float spacingX"}</code> |  |
-| <Link id="m-spacingy" /><code>{"private float spacingY"}</code> |  |
-| <Link id="m-template" /><code>{"private "}<Link to="/game-api/types/global-c-d/colorboarditem">{"ColorBoardItem"}</Link>{" template"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-colors" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpalette">{"CosmeticPalette"}</Link>{" colors"}</code> |
+| <Link id="m-colorvalue" /><code>{"private float colorValue"}</code> |
+| <Link id="m-columns" /><code>{"private int columns"}</code> |
+| <Link id="m-spacingx" /><code>{"private float spacingX"}</code> |
+| <Link id="m-spacingy" /><code>{"private float spacingY"}</code> |
+| <Link id="m-template" /><code>{"private "}<Link to="/game-api/types/global-c-d/colorboarditem">{"ColorBoardItem"}</Link>{" template"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

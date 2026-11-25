@@ -21,26 +21,39 @@ Logs in from the command line (`/login`, `/login_hash`, `/access_token`, `/oauth
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AuthenticationUtility("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclient">{"IHighLevelApiClient"}</Link>{" apiClient, "}<Link to="/game-api/types/assembly-other/iloginpreferences">{"ILoginPreferences"}</Link>{" loginPreferences)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AuthenticationUtility("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclient">{"IHighLevelApiClient"}</Link>{" apiClient, "}<Link to="/game-api/types/assembly-other/iloginpreferences">{"ILoginPreferences"}</Link>{" loginPreferences)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apiclient" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclient">{"IHighLevelApiClient"}</Link>{" apiClient"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-loginpreferences" /><code>{"private readonly "}<Link to="/game-api/types/assembly-other/iloginpreferences">{"ILoginPreferences"}</Link>{" loginPreferences"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-apiclient" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclient">{"IHighLevelApiClient"}</Link>{" apiClient"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-loginpreferences" /><code>{"private readonly "}<Link to="/game-api/types/assembly-other/iloginpreferences">{"ILoginPreferences"}</Link>{" loginPreferences"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loginwithcommandlineargumentsasync" /><code>{"async Task<IResult<bool>> LoginWithCommandLineArgumentsAsync()"}</code> |  |
-| <Link id="m-loginwithcommandlinetokensasync" /><code>{"async Task<IResult> LoginWithCommandLineTokensAsync()"}</code> |  |
-| <Link id="m-loginwithoauthasync" /><code>{"async Task<IResult> LoginWithOAuthAsync(string clientId, string clientSecret, string clientScopes)"}</code> |  |
-| <Link id="m-loginwithrefreshtokenasync" /><code>{"async Task<IResult> LoginWithRefreshTokenAsync()"}</code> |  |
-| <Link id="m-loginwithuserpassasync" /><code>{"Task<IResult> LoginWithUserPassAsync(string username, string password)"}</code> |  |
-| <Link id="m-getrefreshtoken" /><code>{"private Result<string> GetRefreshToken()"}</code> |  |
-| <Link id="m-loginwithuserpasshashasync" /><code>{"private async Task<IResult> LoginWithUserPassHashAsync(string username, string passHash)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-loginwithcommandlineargumentsasync" /><code>{"async Task<IResult<bool>> LoginWithCommandLineArgumentsAsync()"}</code> |
+| <Link id="m-loginwithcommandlinetokensasync" /><code>{"async Task<IResult> LoginWithCommandLineTokensAsync()"}</code> |
+| <Link id="m-loginwithoauthasync" /><code>{"async Task<IResult> LoginWithOAuthAsync(string clientId, string clientSecret, string clientScopes)"}</code> |
+| <Link id="m-loginwithrefreshtokenasync" /><code>{"async Task<IResult> LoginWithRefreshTokenAsync()"}</code> |
+| <Link id="m-loginwithuserpassasync" /><code>{"Task<IResult> LoginWithUserPassAsync(string username, string password)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-getrefreshtoken" /><code>{"private Result<string> GetRefreshToken()"}</code> |
+| <Link id="m-loginwithuserpasshashasync" /><code>{"private async Task<IResult> LoginWithUserPassHashAsync(string username, string passHash)"}</code> |
+
+</details>

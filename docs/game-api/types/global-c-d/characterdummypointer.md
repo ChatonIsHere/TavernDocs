@@ -20,15 +20,15 @@ Component that points at a `CharacterDummy`, so other code can find the dummy fr
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterDummyPointer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CharacterDummyPointer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-characterdummy" /><code>{"protected "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" characterDummy"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-characterdummy" /><code>{"protected "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" characterDummy"}</code> |
 
 ## Properties
 

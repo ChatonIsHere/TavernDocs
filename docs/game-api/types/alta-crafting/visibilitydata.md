@@ -20,27 +20,32 @@ A **class** in `Root.Township`, `Alta.Scrapper.Data`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VisibilityData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VisibilityData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enabled" /><code>{"private bool enabled"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-enabled" /><code>{"private bool enabled"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enabled-2" /><code>{"bool Enabled { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-enabled-2" /><code>{"bool Enabled { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-savedata" /><code>{"void SaveData(bool enabled)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-savedata" /><code>{"void SaveData(bool enabled)"}</code> |
 
 ## Used in
 

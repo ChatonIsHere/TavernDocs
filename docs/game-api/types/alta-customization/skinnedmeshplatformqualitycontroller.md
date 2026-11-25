@@ -17,20 +17,25 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SkinnedMeshPlatformQualityController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SkinnedMeshPlatformQualityController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targetplatforms" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" targetPlatforms"}</code> |  |
-| <Link id="m-targetquality" /><code>{"private SkinQuality targetQuality"}</code> |  |
-| <Link id="m-targetrenderer" /><code>{"private SkinnedMeshRenderer targetRenderer"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-targetplatforms" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" targetPlatforms"}</code> |
+| <Link id="m-targetquality" /><code>{"private SkinQuality targetQuality"}</code> |
+| <Link id="m-targetrenderer" /><code>{"private SkinnedMeshRenderer targetRenderer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> |

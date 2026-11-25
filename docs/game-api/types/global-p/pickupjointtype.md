@@ -16,14 +16,14 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-customfixedjoint" /><code>{"CustomFixedJoint = 3"}</code> |  |
-| <Link id="m-emptyjoint" /><code>{"EmptyJoint = 4"}</code> |  |
-| <Link id="m-fixedjoint" /><code>{"FixedJoint = 0"}</code> |  |
-| <Link id="m-regularupdatefixedjoint" /><code>{"RegularUpdateFixedJoint = 5"}</code> |  |
-| <Link id="m-springjoint" /><code>{"SpringJoint = 1"}</code> |  |
-| <Link id="m-velocityjoint" /><code>{"VelocityJoint = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-customfixedjoint" /><code>{"CustomFixedJoint = 3"}</code> |
+| <Link id="m-emptyjoint" /><code>{"EmptyJoint = 4"}</code> |
+| <Link id="m-fixedjoint" /><code>{"FixedJoint = 0"}</code> |
+| <Link id="m-regularupdatefixedjoint" /><code>{"RegularUpdateFixedJoint = 5"}</code> |
+| <Link id="m-springjoint" /><code>{"SpringJoint = 1"}</code> |
+| <Link id="m-velocityjoint" /><code>{"VelocityJoint = 2"}</code> |
 
 ## Used in
 

@@ -18,29 +18,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ParticleStartColor(ParticleSystem system)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ParticleStartColor(ParticleSystem system)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-offcolor" /><code>{"private Color offColor"}</code> |  |
-| <Link id="m-oncolor" /><code>{"private Color onColor"}</code> |  |
-| <Link id="m-system" /><code>{"private ParticleSystem system"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-offcolor" /><code>{"private Color offColor"}</code> |
+| <Link id="m-oncolor" /><code>{"private Color onColor"}</code> |
+| <Link id="m-system" /><code>{"private ParticleSystem system"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-system-2" /><code>{"ParticleSystem System { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-system-2" /><code>{"ParticleSystem System { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-settoggle" /><code>{"virtual void SetToggle(bool on)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-settoggle" /><code>{"virtual void SetToggle(bool on)"}</code> |
 
 ## Used in
 

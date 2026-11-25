@@ -19,9 +19,9 @@ One named console token's row in `console_tokens.json`. Only its id and generati
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ConsoleToken()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConsoleToken()"}</code> |
 
 ## Fields
 
@@ -43,7 +43,15 @@ One named console token's row in `console_tokens.json`. Only its id and generati
 | <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The name given at `token create`. Active tokens' names are unique, ignoring case. |
 | <Link id="m-preset" /><code>{"string Preset { get; set; }"}</code> | Its preset label: `full`, `custom` or another one-word label. |
 | <Link id="m-revoked" /><code>{"DateTime? Revoked { get; set; }"}</code> | When it was revoked, in UTC, or `null` while it isn't. |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |
+
+</details>
 
 ## Methods
 

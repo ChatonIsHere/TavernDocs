@@ -17,22 +17,27 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ViewConeOperation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ViewConeOperation()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-from" /><code>{"private float from"}</code> |  |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |  |
-| <Link id="m-to" /><code>{"private float to"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-from" /><code>{"private float from"}</code> |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |
+| <Link id="m-to" /><code>{"private float to"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getoperation" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> |  |
-| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getoperation" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> |
+| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |

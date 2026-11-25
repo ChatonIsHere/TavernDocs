@@ -17,13 +17,21 @@ A **class** in `Root.Township`, `Alta.Caves.PluginParts`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RoomFixesInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/roomfixes">{"RoomFixes"}</Link>{" part)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RoomFixesInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/roomfixes">{"RoomFixes"}</Link>{" part)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> |  |
-| <Link id="m-floodfill" /><code>{"private int FloodFill(int x, int z, int maxXZ, "}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, float value, out int totalX, out int totalZ)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-floodfill" /><code>{"private int FloodFill(int x, int z, int maxXZ, "}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, float value, out int totalX, out int totalZ)"}</code> |
+
+</details>

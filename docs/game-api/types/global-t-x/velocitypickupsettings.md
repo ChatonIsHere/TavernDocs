@@ -21,31 +21,36 @@ Pickup type settings for items held with a velocity joint: how strongly the item
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VelocityPickupSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VelocityPickupSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-environmentpositiondriveforce" /><code>{"private float environmentPositionDriveForce"}</code> |  |
-| <Link id="m-environmentrotationdriveforce" /><code>{"private float environmentRotationDriveForce"}</code> |  |
-| <Link id="m-islimitingjointposition" /><code>{"private bool isLimitingJointPosition"}</code> |  |
-| <Link id="m-isusingdistancecalculation" /><code>{"private bool isUsingDistanceCalculation"}</code> |  |
-| <Link id="m-positiondamper" /><code>{"private float positionDamper"}</code> |  |
-| <Link id="m-positionmaximumforce" /><code>{"private float positionMaximumForce"}</code> |  |
-| <Link id="m-positionscaler" /><code>{"private AnimationCurve positionScaler"}</code> |  |
-| <Link id="m-positionspring" /><code>{"private float positionSpring"}</code> |  |
-| <Link id="m-rotationdamper" /><code>{"private float rotationDamper"}</code> |  |
-| <Link id="m-rotationmaximumforce" /><code>{"private float rotationMaximumForce"}</code> |  |
-| <Link id="m-rotationscaler" /><code>{"private AnimationCurve rotationScaler"}</code> |  |
-| <Link id="m-rotationspring" /><code>{"private float rotationSpring"}</code> |  |
-| <Link id="m-rotationspringoverdistance" /><code>{"private AnimationCurve rotationSpringOverDistance"}</code> |  |
-| <Link id="m-velocityjointpositionmultiplier" /><code>{"private float velocityJointPositionMultiplier"}</code> |  |
-| <Link id="m-velocityjointrotationmultiplier" /><code>{"private float velocityJointRotationMultiplier"}</code> |  |
-| <Link id="m-zanglerotationlimit" /><code>{"private float zAngleRotationLimit"}</code> |  |
-| <Link id="m-zbounciness" /><code>{"private float zBounciness"}</code> |  |
+<details>
+<summary>17 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-environmentpositiondriveforce" /><code>{"private float environmentPositionDriveForce"}</code> |
+| <Link id="m-environmentrotationdriveforce" /><code>{"private float environmentRotationDriveForce"}</code> |
+| <Link id="m-islimitingjointposition" /><code>{"private bool isLimitingJointPosition"}</code> |
+| <Link id="m-isusingdistancecalculation" /><code>{"private bool isUsingDistanceCalculation"}</code> |
+| <Link id="m-positiondamper" /><code>{"private float positionDamper"}</code> |
+| <Link id="m-positionmaximumforce" /><code>{"private float positionMaximumForce"}</code> |
+| <Link id="m-positionscaler" /><code>{"private AnimationCurve positionScaler"}</code> |
+| <Link id="m-positionspring" /><code>{"private float positionSpring"}</code> |
+| <Link id="m-rotationdamper" /><code>{"private float rotationDamper"}</code> |
+| <Link id="m-rotationmaximumforce" /><code>{"private float rotationMaximumForce"}</code> |
+| <Link id="m-rotationscaler" /><code>{"private AnimationCurve rotationScaler"}</code> |
+| <Link id="m-rotationspring" /><code>{"private float rotationSpring"}</code> |
+| <Link id="m-rotationspringoverdistance" /><code>{"private AnimationCurve rotationSpringOverDistance"}</code> |
+| <Link id="m-velocityjointpositionmultiplier" /><code>{"private float velocityJointPositionMultiplier"}</code> |
+| <Link id="m-velocityjointrotationmultiplier" /><code>{"private float velocityJointRotationMultiplier"}</code> |
+| <Link id="m-zanglerotationlimit" /><code>{"private float zAngleRotationLimit"}</code> |
+| <Link id="m-zbounciness" /><code>{"private float zBounciness"}</code> |
+
+</details>
 
 ## Properties
 

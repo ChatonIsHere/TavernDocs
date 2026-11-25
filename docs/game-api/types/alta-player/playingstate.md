@@ -21,9 +21,9 @@ The player state for normally playing in the world. On the server, entering it s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingState()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayingState()"}</code> |
 
 ## Properties
 
@@ -47,7 +47,15 @@ The player state for normally playing in the world. On the server, entering it s
 | <Link id="m-ondecoratedremote" /><code>{"protected override void OnDecoratedRemote("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | Client: turns off the equipment transition for the local player while decorated. |
 | <Link id="m-onundecorated" /><code>{"protected override void OnUndecorated("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | Server: turns the combat transition back on when a non-equipment decorator is removed. |
 | <Link id="m-onundecoratedremote" /><code>{"protected override void OnUndecoratedRemote("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | Client: turns the equipment transition back on for the local player. |
-| <Link id="m-spawnplayercontroller" /><code>{"private void SpawnPlayerController()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-spawnplayercontroller" /><code>{"private void SpawnPlayerController()"}</code> |
+
+</details>
 
 ## Used in
 

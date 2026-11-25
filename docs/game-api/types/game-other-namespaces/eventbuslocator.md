@@ -17,20 +17,25 @@ A **class** in `Root.Township`, `ATT.EventBus`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EventBusLocator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EventBusLocator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instances" /><code>{"private static readonly Dictionary<Type, IEventBus> instances"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-instances" /><code>{"private static readonly Dictionary<Type, IEventBus> instances"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-get" /><code>{"static T Get<T>()"}</code> |  |
-| <Link id="m-register" /><code>{"static void Register<T>(IEventBus eventBus)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-get" /><code>{"static T Get<T>()"}</code> |
+| <Link id="m-register" /><code>{"static void Register<T>(IEventBus eventBus)"}</code> |

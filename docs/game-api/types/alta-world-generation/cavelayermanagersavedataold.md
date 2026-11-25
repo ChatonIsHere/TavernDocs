@@ -18,18 +18,18 @@ A **internal class** in `Root.Township`, `Alta.Caves`. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveDataOld()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveDataOld()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-seed" /><code>{"int seed"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-seed" /><code>{"int seed"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

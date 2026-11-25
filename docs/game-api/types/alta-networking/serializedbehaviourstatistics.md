@@ -17,16 +17,16 @@ A **class** in `Root.Township`, `Alta.Profiling.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedBehaviourStatistics()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SerializedBehaviourStatistics()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-registerbehavioursend" /><code>{"void RegisterBehaviourSend(string behaviourName, int bytesSent)"}</code> |  |
-| <Link id="m-createnewstatistic" /><code>{"protected override "}<Link to="/game-api/types/alta-networking/serializedbehaviourstatistic">{"SerializedBehaviourStatistic"}</Link>{" CreateNewStatistic(string creationArgument)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-registerbehavioursend" /><code>{"void RegisterBehaviourSend(string behaviourName, int bytesSent)"}</code> |
+| <Link id="m-createnewstatistic" /><code>{"protected override "}<Link to="/game-api/types/alta-networking/serializedbehaviourstatistic">{"SerializedBehaviourStatistic"}</Link>{" CreateNewStatistic(string creationArgument)"}</code> |
 
 ## Used in
 

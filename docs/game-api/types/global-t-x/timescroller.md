@@ -17,21 +17,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimeScroller()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimeScroller()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fieldinfo" /><code>{"private FieldInfo fieldInfo"}</code> |  |
-| <Link id="m-timemanager" /><code>{"private "}<Link to="/game-api/types/global-e-h/gametimemanager">{"GameTimeManager"}</Link>{" timeManager"}</code> |  |
-| <Link id="m-wheel" /><code>{"private "}<Link to="/game-api/types/global-c-d/captainswheel">{"CaptainsWheel"}</Link>{" wheel"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fieldinfo" /><code>{"private FieldInfo fieldInfo"}</code> |
+| <Link id="m-timemanager" /><code>{"private "}<Link to="/game-api/types/global-e-h/gametimemanager">{"GameTimeManager"}</Link>{" timeManager"}</code> |
+| <Link id="m-wheel" /><code>{"private "}<Link to="/game-api/types/global-c-d/captainswheel">{"CaptainsWheel"}</Link>{" wheel"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-settime" /><code>{"private void SetTime(float oldValue, float newValue)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-settime" /><code>{"private void SetTime(float oldValue, float newValue)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>

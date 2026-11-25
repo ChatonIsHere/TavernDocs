@@ -20,18 +20,18 @@ A `GameServerInfo` with a fixed `ConnectionInfo`. `GetDevServer(ip, port, sceneI
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DevGameServerInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DevGameServerInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-connectioninfo" /><code><Link to="/game-api/types/assembly-api-models/connectioninfo">{"ConnectionInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/connectioninfo">{"ConnectionInfo"}</Link>{" { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-connectioninfo" /><code><Link to="/game-api/types/assembly-api-models/connectioninfo">{"ConnectionInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/connectioninfo">{"ConnectionInfo"}</Link>{" { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getdevserver" /><code>{"static "}<Link to="/game-api/types/global-c-d/devgameserverinfo">{"DevGameServerInfo"}</Link>{" GetDevServer(string ipAddress, int port, int sceneIndex)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getdevserver" /><code>{"static "}<Link to="/game-api/types/global-c-d/devgameserverinfo">{"DevGameServerInfo"}</Link>{" GetDevServer(string ipAddress, int port, int sceneIndex)"}</code> |

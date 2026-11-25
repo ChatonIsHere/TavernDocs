@@ -16,12 +16,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RedeemCouponRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RedeemCouponRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-coupon" /><code>{"string Coupon { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-coupon" /><code>{"string Coupon { get; set; }"}</code> |

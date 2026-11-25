@@ -18,22 +18,27 @@ One moving piece in a building animation: it slides in from an offset to its fin
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimationPart(Transform transform, Vector3 moveDirection, float distance)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimationPart(Transform transform, Vector3 moveDirection, float distance)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distance" /><code>{"private float distance"}</code> |  |
-| <Link id="m-movedirection" /><code>{"private Vector3 moveDirection"}</code> |  |
-| <Link id="m-overrideeffectonappear" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" overrideEffectOnAppear"}</code> |  |
-| <Link id="m-overrideeffectonposition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" overrideEffectOnPosition"}</code> |  |
-| <Link id="m-overridesoundonappear" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overrideSoundOnAppear"}</code> |  |
-| <Link id="m-overridesoundonposition" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overrideSoundOnPosition"}</code> |  |
-| <Link id="m-repairboxscale" /><code>{"private float repairBoxScale"}</code> |  |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-distance" /><code>{"private float distance"}</code> |
+| <Link id="m-movedirection" /><code>{"private Vector3 moveDirection"}</code> |
+| <Link id="m-overrideeffectonappear" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" overrideEffectOnAppear"}</code> |
+| <Link id="m-overrideeffectonposition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" overrideEffectOnPosition"}</code> |
+| <Link id="m-overridesoundonappear" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overrideSoundOnAppear"}</code> |
+| <Link id="m-overridesoundonposition" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overrideSoundOnPosition"}</code> |
+| <Link id="m-repairboxscale" /><code>{"private float repairBoxScale"}</code> |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> |
+
+</details>
 
 ## Properties
 

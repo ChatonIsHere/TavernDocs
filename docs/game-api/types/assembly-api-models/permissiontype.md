@@ -17,16 +17,16 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-comment" /><code>{"Comment = 32"}</code> |  |
-| <Link id="m-edit" /><code>{"Edit = 1"}</code> |  |
-| <Link id="m-resolve" /><code>{"Resolve = 64"}</code> |  |
-| <Link id="m-respond" /><code>{"Respond = 2"}</code> |  |
-| <Link id="m-unresolve" /><code>{"Unresolve = 128"}</code> |  |
-| <Link id="m-viewcomments" /><code>{"ViewComments = 8"}</code> |  |
-| <Link id="m-viewhiddencomments" /><code>{"ViewHiddenComments = 16"}</code> |  |
-| <Link id="m-viewresponses" /><code>{"ViewResponses = 4"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-comment" /><code>{"Comment = 32"}</code> |
+| <Link id="m-edit" /><code>{"Edit = 1"}</code> |
+| <Link id="m-resolve" /><code>{"Resolve = 64"}</code> |
+| <Link id="m-respond" /><code>{"Respond = 2"}</code> |
+| <Link id="m-unresolve" /><code>{"Unresolve = 128"}</code> |
+| <Link id="m-viewcomments" /><code>{"ViewComments = 8"}</code> |
+| <Link id="m-viewhiddencomments" /><code>{"ViewHiddenComments = 16"}</code> |
+| <Link id="m-viewresponses" /><code>{"ViewResponses = 4"}</code> |
 
 ## Used in
 

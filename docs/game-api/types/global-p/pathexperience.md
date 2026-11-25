@@ -19,23 +19,28 @@ A player's progress on one progression path (forging, mining and so on): XP, lev
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PathExperience("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" manager, Action<bool> leveledUp, Action<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{"> updatedPoints)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PathExperience("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" manager, Action<bool> leveledUp, Action<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{"> updatedPoints)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentexperience" /><code>{"private uint currentExperience"}</code> |  |
-| <Link id="m-currentlevel" /><code>{"private uint currentLevel"}</code> |  |
-| <Link id="m-freepoints" /><code>{"private uint freePoints"}</code> |  |
-| <Link id="m-leveledup" /><code>{"private Action<bool> LeveledUp"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-practicedslots" /><code>{"private HashSet<uint> practicedSlots"}</code> |  |
-| <Link id="m-targetplayer" /><code>{"private "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" targetPlayer"}</code> |  |
-| <Link id="m-unlockedslots" /><code>{"private HashSet<uint> unlockedSlots"}</code> |  |
-| <Link id="m-updatedpoints" /><code>{"private Action<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{"> UpdatedPoints"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentexperience" /><code>{"private uint currentExperience"}</code> |
+| <Link id="m-currentlevel" /><code>{"private uint currentLevel"}</code> |
+| <Link id="m-freepoints" /><code>{"private uint freePoints"}</code> |
+| <Link id="m-leveledup" /><code>{"private Action<bool> LeveledUp"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-practicedslots" /><code>{"private HashSet<uint> practicedSlots"}</code> |
+| <Link id="m-targetplayer" /><code>{"private "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" targetPlayer"}</code> |
+| <Link id="m-unlockedslots" /><code>{"private HashSet<uint> unlockedSlots"}</code> |
+| <Link id="m-updatedpoints" /><code>{"private Action<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{"> UpdatedPoints"}</code> |
+
+</details>
 
 ## Properties
 
@@ -63,11 +68,19 @@ A player's progress on one progression path (forging, mining and so on): XP, lev
 | <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes XP, level, points and bought skills. Reading unlocks the skills on the player. |
 | <Link id="m-serializepracticedslots" /><code>{"void SerializePracticedSlots("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the set of practiced skill slots. |
 | <Link id="m-unlockslot" /><code>{"void UnlockSlot("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot, bool isConsumingPoints = true)"}</code> | Buys a skill, spending its cost in points unless told not to, and unlocks it on the player. |
-| <Link id="m-gainexperienceunmultiplied" /><code>{"private void GainExperienceUnmultiplied(int experience)"}</code> |  |
-| <Link id="m-hasmultipledependenciesunlocked" /><code>{"private bool HasMultipleDependenciesUnlocked("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> |  |
-| <Link id="m-recursivelockslot" /><code>{"private void RecursiveLockSlot("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot, ref float totalExperienceReward)"}</code> |  |
-| <Link id="m-removeslots" /><code>{"private void RemoveSlots(int remainder)"}</code> |  |
-| <Link id="m-serializeslots" /><code>{"private void SerializeSlots("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, uint slotHash, HashSet<uint> covered, "}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{" tree)"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-gainexperienceunmultiplied" /><code>{"private void GainExperienceUnmultiplied(int experience)"}</code> |
+| <Link id="m-hasmultipledependenciesunlocked" /><code>{"private bool HasMultipleDependenciesUnlocked("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> |
+| <Link id="m-recursivelockslot" /><code>{"private void RecursiveLockSlot("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot, ref float totalExperienceReward)"}</code> |
+| <Link id="m-removeslots" /><code>{"private void RemoveSlots(int remainder)"}</code> |
+| <Link id="m-serializeslots" /><code>{"private void SerializeSlots("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, uint slotHash, HashSet<uint> covered, "}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{" tree)"}</code> |
+
+</details>
 
 ## Used in
 

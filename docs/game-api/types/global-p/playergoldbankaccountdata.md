@@ -18,27 +18,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerGoldBankAccountData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerGoldBankAccountData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-quantity" /><code>{"private int quantity"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-quantity" /><code>{"private int quantity"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentatm" /><code><Link to="/game-api/types/global-a-b/atmmachine">{"ATMMachine"}</Link>{" CurrentAtm { get; set; }"}</code> |  |
-| <Link id="m-quantity-2" /><code>{"int Quantity { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentatm" /><code><Link to="/game-api/types/global-a-b/atmmachine">{"ATMMachine"}</Link>{" CurrentAtm { get; set; }"}</code> |
+| <Link id="m-quantity-2" /><code>{"int Quantity { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clone" /><code>{"override "}<Link to="/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> |  |
-| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> |  |
-| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clone" /><code>{"override "}<Link to="/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> |
+| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> |
+| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> |

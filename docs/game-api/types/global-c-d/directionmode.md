@@ -16,12 +16,12 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-controller" /><code>{"Controller = 1"}</code> |  |
-| <Link id="m-head" /><code>{"Head = 0"}</code> |  |
-| <Link id="m-lockedcontroller" /><code>{"LockedController = 3"}</code> |  |
-| <Link id="m-lockedhead" /><code>{"LockedHead = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-controller" /><code>{"Controller = 1"}</code> |
+| <Link id="m-head" /><code>{"Head = 0"}</code> |
+| <Link id="m-lockedcontroller" /><code>{"LockedController = 3"}</code> |
+| <Link id="m-lockedhead" /><code>{"LockedHead = 2"}</code> |
 
 ## Used in
 

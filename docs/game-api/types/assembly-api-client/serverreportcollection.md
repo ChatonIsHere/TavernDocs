@@ -16,24 +16,34 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerReportCollection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerReportCollection()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reportsperplayer" /><code>{"private readonly Dictionary<int, "}<Link to="/game-api/types/assembly-api-client/playerreportsummary">{"PlayerReportSummary"}</Link>{"> reportsPerPlayer"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-reportsperplayer" /><code>{"private readonly Dictionary<int, "}<Link to="/game-api/types/assembly-api-client/playerreportsummary">{"PlayerReportSummary"}</Link>{"> reportsPerPlayer"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reports" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-client/playerreportsummary">{"PlayerReportSummary"}</Link>{"> Reports { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-reports" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-client/playerreportsummary">{"PlayerReportSummary"}</Link>{"> Reports { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"internal void Add("}<Link to="/game-api/types/assembly-api-client/playerreportadmin">{"PlayerReportAdmin"}</Link>{" report)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"internal void Add("}<Link to="/game-api/types/assembly-api-client/playerreportadmin">{"PlayerReportAdmin"}</Link>{" report)"}</code> |
+
+</details>

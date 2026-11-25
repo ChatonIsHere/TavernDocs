@@ -20,16 +20,16 @@ Flags for how a player is playing: flat modes (`Fly`, `AutoCam`) or a VR runtime
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-autocam" /><code>{"AutoCam = 2"}</code> |  |
-| <Link id="m-fly" /><code>{"Fly = 1"}</code> |  |
-| <Link id="m-metaquest" /><code>{"MetaQuest = 40"}</code> |  |
-| <Link id="m-oculus" /><code>{"Oculus = 8"}</code> |  |
-| <Link id="m-openvr" /><code>{"OpenVR = 4"}</code> |  |
-| <Link id="m-openxr" /><code>{"OpenXR = 28"}</code> |  |
-| <Link id="m-picoxr" /><code>{"PicoXR = 64"}</code> |  |
-| <Link id="m-unassigned" /><code>{"Unassigned = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-autocam" /><code>{"AutoCam = 2"}</code> |
+| <Link id="m-fly" /><code>{"Fly = 1"}</code> |
+| <Link id="m-metaquest" /><code>{"MetaQuest = 40"}</code> |
+| <Link id="m-oculus" /><code>{"Oculus = 8"}</code> |
+| <Link id="m-openvr" /><code>{"OpenVR = 4"}</code> |
+| <Link id="m-openxr" /><code>{"OpenXR = 28"}</code> |
+| <Link id="m-picoxr" /><code>{"PicoXR = 64"}</code> |
+| <Link id="m-unassigned" /><code>{"Unassigned = 0"}</code> |
 
 ## Used in
 

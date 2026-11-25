@@ -17,6 +17,6 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EmptyChunkContentManager("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EmptyChunkContentManager("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |

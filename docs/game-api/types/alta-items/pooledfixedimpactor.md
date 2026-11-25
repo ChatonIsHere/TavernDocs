@@ -17,20 +17,25 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PooledFixedImpactor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PooledFixedImpactor()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isoverridingreset" /><code>{"private bool isOverridingReset"}</code> |  |
-| <Link id="m-targetpooledobject" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" targetPooledObject"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isoverridingreset" /><code>{"private bool isOverridingReset"}</code> |
+| <Link id="m-targetpooledobject" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" targetPooledObject"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reset" /><code>{"override void Reset()"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-reset" /><code>{"override void Reset()"}</code> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |

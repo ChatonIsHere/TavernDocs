@@ -21,18 +21,26 @@ One cached world-generation step (spawn, spline, forest core or river core) that
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Instruction("}<Link to="/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{" type)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Instruction("}<Link to="/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{" type)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-create" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{", Func<"}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{">> create"}</code> |  |
-| <Link id="m-execute" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{", Func<"}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{", object, "}<Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{">> execute"}</code> |  |
-| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> |  |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{" type"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-create" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{", Func<"}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{">> create"}</code> |
+| <Link id="m-execute" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{", Func<"}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{", object, "}<Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{">> execute"}</code> |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{" type"}</code> |
+
+</details>
 
 ## Methods
 

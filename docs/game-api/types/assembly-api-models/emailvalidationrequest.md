@@ -16,15 +16,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EmailValidationRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EmailValidationRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> |
 
 ## Used in
 

@@ -18,19 +18,24 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveAgentRotateClose()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActiveAgentRotateClose()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-rotationangle" /><code>{"private Vector3 rotationAngle"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-rotationangle" /><code>{"private Vector3 rotationAngle"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |  |
-| <Link id="m-update" /><code>{"protected override void Update(Vector3 position, Vector3 targetPosition, Vector3 toTargetXZ, Vector3 toEdge, float flatDistance)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |
+| <Link id="m-update" /><code>{"protected override void Update(Vector3 position, Vector3 targetPosition, Vector3 toTargetXZ, Vector3 toEdge, float flatDistance)"}</code> |

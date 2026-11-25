@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.Utilities.Atlas`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-canmarkasnonlongerreadable" /><code>{"bool CanMarkAsNonLongerReadable(Renderer renderer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-canmarkasnonlongerreadable" /><code>{"bool CanMarkAsNonLongerReadable(Renderer renderer)"}</code> |

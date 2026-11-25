@@ -17,21 +17,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DelayedEnableLerp()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DelayedEnableLerp()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-delaycoroutine" /><code>{"private Coroutine delayCoroutine"}</code> |  |
-| <Link id="m-delaytodisable" /><code>{"private float delayToDisable"}</code> |  |
-| <Link id="m-delaytoenable" /><code>{"private float delayToEnable"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-delaycoroutine" /><code>{"private Coroutine delayCoroutine"}</code> |
+| <Link id="m-delaytodisable" /><code>{"private float delayToDisable"}</code> |
+| <Link id="m-delaytoenable" /><code>{"private float delayToEnable"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-delay" /><code>{"private IEnumerator Delay() (iterator)"}</code> |  |
-| <Link id="m-startanimation" /><code>{"protected override void StartAnimation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-startanimation" /><code>{"protected override void StartAnimation()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-delay" /><code>{"private IEnumerator Delay() (iterator)"}</code> |
+
+</details>

@@ -17,20 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CreateLOD()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CreateLOD()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isgoing" /><code>{"private bool isGoing"}</code> |  |
-| <Link id="m-lods" /><code>{"private GameObject[] lods"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isgoing" /><code>{"private bool isGoing"}</code> |
+| <Link id="m-lods" /><code>{"private GameObject[] lods"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-destroyeditor" /><code>{"private void DestroyEditor(Object target)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroyeditor" /><code>{"private void DestroyEditor(Object target)"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

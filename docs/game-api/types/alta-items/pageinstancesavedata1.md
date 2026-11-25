@@ -18,23 +18,23 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PageInstanceSaveData1()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PageInstanceSaveData1()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-custom" /><code><Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] custom"}</code> |  |
-| <Link id="m-ispredefined" /><code>{"bool isPredefined"}</code> |  |
-| <Link id="m-page" /><code><Link to="/game-api/types/alta-items/page">{"Page"}</Link>{" page"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-custom" /><code><Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] custom"}</code> |
+| <Link id="m-ispredefined" /><code>{"bool isPredefined"}</code> |
+| <Link id="m-page" /><code><Link to="/game-api/types/alta-items/page">{"Page"}</Link>{" page"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |
 
 ## Used in
 

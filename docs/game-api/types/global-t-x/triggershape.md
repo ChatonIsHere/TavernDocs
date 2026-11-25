@@ -20,15 +20,20 @@ Turns a trigger collider's enter and exit messages into C# events, so other scri
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerShape()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TriggerShape()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-thiscollider" /><code>{"private Collider thisCollider"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-thiscollider" /><code>{"private Collider thisCollider"}</code> |
+
+</details>
 
 ## Properties
 
@@ -48,8 +53,16 @@ Turns a trigger collider's enter and exit messages into C# events, so other scri
 | Member | What it is |
 | --- | --- |
 | <Link id="m-clear" /><code>{"void Clear()"}</code> | Removes every listener from both events. |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider collider)"}</code> |  |
-| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider collider)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider collider)"}</code> |
+| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider collider)"}</code> |
+
+</details>
 
 ## Used in
 

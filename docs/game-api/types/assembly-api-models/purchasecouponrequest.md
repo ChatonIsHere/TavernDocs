@@ -16,13 +16,13 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PurchaseCouponRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PurchaseCouponRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currencypackageid" /><code>{"int CurrencyPackageId { get; set; }"}</code> |  |
-| <Link id="m-quantity" /><code>{"int Quantity { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currencypackageid" /><code>{"int CurrencyPackageId { get; set; }"}</code> |
+| <Link id="m-quantity" /><code>{"int Quantity { get; set; }"}</code> |

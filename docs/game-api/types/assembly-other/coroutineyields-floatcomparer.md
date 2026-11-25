@@ -18,12 +18,17 @@ A **private class** in `Alta.Coroutines`, no namespace. Reach it through att-stu
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FloatComparer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FloatComparer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-check" /><code>{"private const float check"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-check" /><code>{"private const float check"}</code> |
+
+</details>

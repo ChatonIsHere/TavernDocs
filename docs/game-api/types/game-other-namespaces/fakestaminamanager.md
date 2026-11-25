@@ -17,18 +17,18 @@ A **class** in `Root.Township`, `Features.Climbing`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FakeStaminaManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FakeStaminaManager()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hasstamina" /><code>{"bool HasStamina { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hasstamina" /><code>{"bool HasStamina { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-process" /><code>{"void Process()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-process" /><code>{"void Process()"}</code> |

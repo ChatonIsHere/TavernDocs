@@ -16,11 +16,11 @@ An **enum** in `Alta.Attributes`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-editable" /><code>{"Editable = 2"}</code> |  |
-| <Link id="m-hidden" /><code>{"Hidden = 0"}</code> |  |
-| <Link id="m-readonly" /><code>{"ReadOnly = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-editable" /><code>{"Editable = 2"}</code> |
+| <Link id="m-hidden" /><code>{"Hidden = 0"}</code> |
+| <Link id="m-readonly" /><code>{"ReadOnly = 1"}</code> |
 
 ## Used in
 

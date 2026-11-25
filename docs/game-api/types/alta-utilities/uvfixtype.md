@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, `Alta.Utilities.Atlas`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-texcoord" /><code>{"Texcoord = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-texcoord" /><code>{"Texcoord = 2"}</code> |
 
 ## Used in
 

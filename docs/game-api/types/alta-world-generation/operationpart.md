@@ -18,31 +18,36 @@ A **class** in `Root.Township`, `Alta.Caves.PluginParts`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OperationPart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OperationPart()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-a" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" a"}</code> |  |
-| <Link id="m-b" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" b"}</code> |  |
-| <Link id="m-operationtype" /><code>{"private "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" operationType"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-a" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" a"}</code> |
+| <Link id="m-b" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" b"}</code> |
+| <Link id="m-operationtype" /><code>{"private "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" operationType"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-a-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" A { get; }"}</code> |  |
-| <Link id="m-b-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" B { get; }"}</code> |  |
-| <Link id="m-operationtype-2" /><code><Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-a-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" A { get; }"}</code> |
+| <Link id="m-b-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" B { get; }"}</code> |
+| <Link id="m-operationtype-2" /><code><Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getinstance" /><code>{"override "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getinstance" /><code>{"override "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> |
 
 ## Used in
 

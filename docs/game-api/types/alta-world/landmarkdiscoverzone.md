@@ -18,20 +18,33 @@ A **class** in `Root.Township`, `Alta.Map`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LandmarkDiscoverZone()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LandmarkDiscoverZone()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-landmark" /><code>{"private "}<Link to="/game-api/types/alta-world/landmark">{"Landmark"}</Link>{" landmark"}</code> |  |
-| <Link id="m-spherecollider" /><code>{"private SphereCollider sphereCollider"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-landmark" /><code>{"private "}<Link to="/game-api/types/alta-world/landmark">{"Landmark"}</Link>{" landmark"}</code> |
+| <Link id="m-spherecollider" /><code>{"private SphereCollider sphereCollider"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
+
+</details>

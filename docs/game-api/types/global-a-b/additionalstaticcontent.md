@@ -20,33 +20,49 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AdditionalStaticContent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AdditionalStaticContent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isbaking" /><code>{"static bool IsBaking"}</code> |  |
-| <Link id="m-mtransform" /><code>{"private Transform mTransform"}</code> |  |
-| <Link id="m-needstoinstantiate" /><code>{"private bool needsToInstantiate"}</code> |  |
-| <Link id="m-staticcontent" /><code>{"private "}<Link to="/game-api/types/global-a-b/additionalstaticcontent-staticcontent">{"AdditionalStaticContent.StaticContent"}</Link>{"[] staticContent"}</code> |  |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isbaking" /><code>{"static bool IsBaking"}</code> |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-mtransform" /><code>{"private Transform mTransform"}</code> |
+| <Link id="m-needstoinstantiate" /><code>{"private bool needsToInstantiate"}</code> |
+| <Link id="m-staticcontent" /><code>{"private "}<Link to="/game-api/types/global-a-b/additionalstaticcontent-staticcontent">{"AdditionalStaticContent.StaticContent"}</Link>{"[] staticContent"}</code> |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-instantiatecontent" /><code>{"void InstantiateContent(Transform parent, HideFlags hideFlags = 0)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-instantiatecontenteditor" /><code>{"private void InstantiateContentEditor()"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
-| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+| <Link id="m-instantiatecontent" /><code>{"void InstantiateContent(Transform parent, HideFlags hideFlags = 0)"}</code> |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-instantiatecontenteditor" /><code>{"private void InstantiateContentEditor()"}</code> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>

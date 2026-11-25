@@ -17,33 +17,38 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticScrollSource()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CosmeticScrollSource()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items" /><code>{"private List<uint> items"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-items" /><code>{"private List<uint> items"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items-2" /><code>{"List<uint> Items { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-items-2" /><code>{"List<uint> Items { get; set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-itemschanged" /><code>{"event Action ItemsChanged"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-itemschanged" /><code>{"event Action ItemsChanged"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onitemschanged" /><code>{"void OnItemsChanged()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onitemschanged" /><code>{"void OnItemsChanged()"}</code> |
 
 ## Used in
 

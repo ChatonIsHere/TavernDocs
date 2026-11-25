@@ -17,6 +17,6 @@ A **static class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel.Subscription
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-map" /><code>{"static IEnumerable<TResult> Map<TItem, TResult>(IEnumerable<TItem> list, Func<TItem, int, bool, TResult> mappingFunc) (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-map" /><code>{"static IEnumerable<TResult> Map<TItem, TResult>(IEnumerable<TItem> list, Func<TItem, int, bool, TResult> mappingFunc) (iterator)"}</code> |

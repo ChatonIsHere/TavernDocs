@@ -16,26 +16,39 @@ A **class** in `Root.Township`, `ATT.MicroTutorial`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerEventBuffer("}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" step, IEventBus eventBus)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerEventBuffer("}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" step, IEventBus eventBus)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-eventbuffer" /><code>{"private readonly List<"}<Link to="/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{">[] eventBuffer"}</code> |  |
-| <Link id="m-eventbus" /><code>{"private readonly IEventBus eventBus"}</code> |  |
-| <Link id="m-passthroughhandler" /><code>{"private Action<"}<Link to="/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{"> passthroughHandler"}</code> |  |
-| <Link id="m-step" /><code>{"private readonly "}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" step"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-eventbuffer" /><code>{"private readonly List<"}<Link to="/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{">[] eventBuffer"}</code> |
+| <Link id="m-eventbus" /><code>{"private readonly IEventBus eventBus"}</code> |
+| <Link id="m-passthroughhandler" /><code>{"private Action<"}<Link to="/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{"> passthroughHandler"}</code> |
+| <Link id="m-step" /><code>{"private readonly "}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" step"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-switchtopassthrough" /><code>{"IEnumerable<"}<Link to="/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{"> SwitchToPassthrough(Action<"}<Link to="/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{"> passthroughHandler)"}</code> |  |
-| <Link id="m-onplayerevent" /><code>{"private void OnPlayerEvent("}<Link to="/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{" playerEvent)"}</code> |  |
-| <Link id="m-onstepcompleted" /><code>{"private void OnStepCompleted("}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" _)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-switchtopassthrough" /><code>{"IEnumerable<"}<Link to="/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{"> SwitchToPassthrough(Action<"}<Link to="/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{"> passthroughHandler)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onplayerevent" /><code>{"private void OnPlayerEvent("}<Link to="/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{" playerEvent)"}</code> |
+| <Link id="m-onstepcompleted" /><code>{"private void OnStepCompleted("}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" _)"}</code> |
+
+</details>
 
 ## Used in
 

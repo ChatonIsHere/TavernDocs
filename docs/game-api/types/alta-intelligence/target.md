@@ -20,19 +20,24 @@ A networked thing that AI creatures can sense and attack, with optional health a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Target()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Target()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-healthobject" /><code>{"private "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthObject"}</code> |  |
-| <Link id="m-initialsenses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] initialSenses"}</code> |  |
-| <Link id="m-interactable" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable"}</code> |  |
-| <Link id="m-isobjectdisabledonclient" /><code>{"private bool isObjectDisabledOnClient"}</code> |  |
-| <Link id="m-senses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/basicsenseset">{"BasicSenseSet"}</Link>{" senses"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-healthobject" /><code>{"private "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthObject"}</code> |
+| <Link id="m-initialsenses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] initialSenses"}</code> |
+| <Link id="m-interactable" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable"}</code> |
+| <Link id="m-isobjectdisabledonclient" /><code>{"private bool isObjectDisabledOnClient"}</code> |
+| <Link id="m-senses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/basicsenseset">{"BasicSenseSet"}</Link>{" senses"}</code> |
+
+</details>
 
 ## Properties
 
@@ -48,7 +53,15 @@ A networked thing that AI creatures can sense and attack, with optional health a
 | <Link id="m-senses-2" /><code><Link to="/game-api/types/alta-intelligence/basicsenseset">{"BasicSenseSet"}</Link>{" Senses { get; }"}</code> | Server: the sense set built from the inspector's initial senses. Null on clients. |
 | <Link id="m-statmanager" /><code><Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" { get; }"}</code> | The health object's stat manager, or null if there is no health object. |
 | <Link id="m-transform" /><code>{"virtual Transform Transform { get; }"}</code> | The transform AI should aim at. This object's own transform unless overridden. |
-| <Link id="m-alta-intelligence-itargetpointer-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Alta.Intelligence.ITargetPointer.Target { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-intelligence-itargetpointer-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Alta.Intelligence.ITargetPointer.Target { get; }"}</code> |
+
+</details>
 
 ## Methods
 
@@ -60,8 +73,16 @@ A networked thing that AI creatures can sense and attack, with optional health a
 | <Link id="m-getvelocity" /><code>{"virtual float GetVelocity()"}</code> | The target's speed. Always 0 in the base class; subclasses override it. |
 | <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Hooks the health object's death. Server: sets up senses and registers with `TargetCollectorManager`. Client: disables the component. |
 | <Link id="m-killed" /><code>{"protected virtual void Killed("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthobject)"}</code> | Called when the health object is destroyed; sets `IsAlive` to false. Override to add death handling. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Editor: fixes up the initial sense setups. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -18,15 +18,15 @@ An **abstract class** in `Root.Township`, `ATT.Triggers`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ZoneEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ZoneEvent()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-trigger" /><code>{"abstract void Trigger("}<Link to="/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int durationInSeconds)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-trigger" /><code>{"abstract void Trigger("}<Link to="/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int durationInSeconds)"}</code> |
 
 ## Used in
 

@@ -17,18 +17,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimationBasedEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimationBasedEffect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-effectontrigger" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectOnTrigger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-effectontrigger" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectOnTrigger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-run" /><code>{"override void Run()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-run" /><code>{"override void Run()"}</code> |

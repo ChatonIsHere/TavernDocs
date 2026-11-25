@@ -18,14 +18,22 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveDelayEnterSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActiveDelayEnterSet()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |  |
-| <Link id="m-onfinished" /><code>{"private void OnFinished("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |  |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onfinished" /><code>{"private void OnFinished("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |
+
+</details>

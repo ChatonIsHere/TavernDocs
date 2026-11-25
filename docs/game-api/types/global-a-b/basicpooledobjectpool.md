@@ -19,9 +19,9 @@ Base pool for one `PooledObjectDefinition`. Fills itself with the initial pool s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BasicPooledObjectPool("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BasicPooledObjectPool("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition)"}</code> |
 
 ## Fields
 

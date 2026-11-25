@@ -17,24 +17,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerSphere()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TriggerSphere()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spherecollider" /><code>{"private SphereCollider sphereCollider"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-spherecollider" /><code>{"private SphereCollider sphereCollider"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize(float radius)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"void Initialize(float radius)"}</code> |

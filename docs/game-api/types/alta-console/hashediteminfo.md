@@ -16,24 +16,24 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HashedItemInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HashedItemInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hash" /><code>{"uint Hash { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hash" /><code>{"uint Hash { get; set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{" item)"}</code> |  |
-| <Link id="m-op-implicit-2" /><code>{"static "}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" item)"}</code> |  |
-| <Link id="m-op-implicit-3" /><code>{"static "}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{" item)"}</code> |
+| <Link id="m-op-implicit-2" /><code>{"static "}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" item)"}</code> |
+| <Link id="m-op-implicit-3" /><code>{"static "}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> |
 
 ## Used in
 

@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.Crafting`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updaterigidbody" /><code>{"void UpdateRigidbody()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updaterigidbody" /><code>{"void UpdateRigidbody()"}</code> |

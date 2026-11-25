@@ -19,24 +19,29 @@ One slot in a profession skill tree: a skill, its cost in points, and the slots 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProgressionSlot()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ProgressionSlot("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProgressionSlot()"}</code> |
+| <Link id="m-ctor-2" /><code>{"ProgressionSlot("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cost" /><code>{"private uint cost"}</code> |  |
-| <Link id="m-dependencies" /><code>{"private List<uint> dependencies"}</code> |  |
-| <Link id="m-hash" /><code>{"private uint hash"}</code> |  |
-| <Link id="m-indentlevel" /><code>{"private int indentLevel"}</code> |  |
-| <Link id="m-inheritslots" /><code>{"private List<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> inheritSlots"}</code> |  |
-| <Link id="m-name" /><code>{"private string name"}</code> |  |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |  |
-| <Link id="m-skill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill"}</code> |  |
-| <Link id="m-sloticon" /><code>{"private Texture2D slotIcon"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cost" /><code>{"private uint cost"}</code> |
+| <Link id="m-dependencies" /><code>{"private List<uint> dependencies"}</code> |
+| <Link id="m-hash" /><code>{"private uint hash"}</code> |
+| <Link id="m-indentlevel" /><code>{"private int indentLevel"}</code> |
+| <Link id="m-inheritslots" /><code>{"private List<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> inheritSlots"}</code> |
+| <Link id="m-name" /><code>{"private string name"}</code> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+| <Link id="m-skill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill"}</code> |
+| <Link id="m-sloticon" /><code>{"private Texture2D slotIcon"}</code> |
+
+</details>
 
 ## Properties
 

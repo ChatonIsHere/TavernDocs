@@ -17,29 +17,34 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RotationLimitWrapper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RotationLimitWrapper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-iscachingbonerotation" /><code>{"private bool isCachingBoneRotation"}</code> |  |
-| <Link id="m-lastwristrotation" /><code>{"private Quaternion lastWristRotation"}</code> |  |
-| <Link id="m-rotationlimit" /><code>{"private RotationLimit rotationLimit"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-iscachingbonerotation" /><code>{"private bool isCachingBoneRotation"}</code> |
+| <Link id="m-lastwristrotation" /><code>{"private Quaternion lastWristRotation"}</code> |
+| <Link id="m-rotationlimit" /><code>{"private RotationLimit rotationLimit"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-rotationlimit-2" /><code>{"RotationLimit RotationLimit { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-rotationlimit-2" /><code>{"RotationLimit RotationLimit { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> |
 
 ## Used in
 

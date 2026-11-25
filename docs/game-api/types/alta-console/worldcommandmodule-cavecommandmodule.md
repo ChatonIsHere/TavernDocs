@@ -21,7 +21,15 @@ The `world caves` module.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-caveteleport" /><code>{"static async Task CaveTeleport("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, int layer)"}</code> |  |
-| <Link id="m-cavewipe" /><code>{"private static async Task CaveWipe()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-caveteleport" /><code>{"static async Task CaveTeleport("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, int layer)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-cavewipe" /><code>{"private static async Task CaveWipe()"}</code> |
+
+</details>

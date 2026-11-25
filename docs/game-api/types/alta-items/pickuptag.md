@@ -21,9 +21,9 @@ An empty asset used as a tag for marking and matching pickups.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PickupTag()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PickupTag()"}</code> |
 
 ## Used in
 

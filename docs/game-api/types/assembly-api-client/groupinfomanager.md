@@ -16,17 +16,22 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"internal GroupInfoManager("}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" groupManager, "}<Link to="/game-api/types/assembly-api-models/groupinfodetailed">{"GroupInfoDetailed"}</Link>{" group, "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"internal GroupInfoManager("}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" groupManager, "}<Link to="/game-api/types/assembly-api-models/groupinfodetailed">{"GroupInfoDetailed"}</Link>{" group, "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-info" /><code><Link to="/game-api/types/assembly-api-client/groupinfoupdate">{"GroupInfoUpdate"}</Link>{" Info { get; }"}</code> |  |
-| <Link id="m-members" /><code><Link to="/game-api/types/assembly-api-client/groupmembers">{"GroupMembers"}</Link>{" Members { get; }"}</code> |  |
-| <Link id="m-roles" /><code><Link to="/game-api/types/assembly-api-client/grouproles">{"GroupRoles"}</Link>{" Roles { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-info" /><code><Link to="/game-api/types/assembly-api-client/groupinfoupdate">{"GroupInfoUpdate"}</Link>{" Info { get; }"}</code> |
+| <Link id="m-members" /><code><Link to="/game-api/types/assembly-api-client/groupmembers">{"GroupMembers"}</Link>{" Members { get; }"}</code> |
+| <Link id="m-roles" /><code><Link to="/game-api/types/assembly-api-client/grouproles">{"GroupRoles"}</Link>{" Roles { get; }"}</code> |
 
 ## Used in
 

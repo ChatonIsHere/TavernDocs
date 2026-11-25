@@ -18,20 +18,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WipeManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WipeManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunkstowipe" /><code>{"private HashSet<string> chunksToWipe"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-chunkstowipe" /><code>{"private HashSet<string> chunksToWipe"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunkstoprewipe" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> ChunksToPreWipe() (iterator)"}</code> |  |
-| <Link id="m-markneedingprewipeoperation" /><code>{"static void MarkNeedingPreWipeOperation("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chunkstoprewipe" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> ChunksToPreWipe() (iterator)"}</code> |
+| <Link id="m-markneedingprewipeoperation" /><code>{"static void MarkNeedingPreWipeOperation("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |

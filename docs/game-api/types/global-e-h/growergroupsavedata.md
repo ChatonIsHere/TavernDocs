@@ -20,12 +20,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrowerGroupSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrowerGroupSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items" /><code><Link to="/game-api/types/global-e-h/growergroupsavedata-item">{"GrowerGroupSaveData.Item"}</Link>{"[] items"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-items" /><code><Link to="/game-api/types/global-e-h/growergroupsavedata-item">{"GrowerGroupSaveData.Item"}</Link>{"[] items"}</code> |

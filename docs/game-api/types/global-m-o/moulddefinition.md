@@ -23,29 +23,34 @@ A hashed asset describing a smithing mould: the item it casts, the ingots it tak
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MouldDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MouldDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allowedmaterials" /><code>{"private "}<Link to="/game-api/types/alta-items/itemset">{"ItemSet"}</Link>{" allowedMaterials"}</code> |  |
-| <Link id="m-cost" /><code>{"private int cost"}</code> |  |
-| <Link id="m-countnumbergraphicposition" /><code>{"private Vector3 countNumberGraphicPosition"}</code> |  |
-| <Link id="m-countxgraphicposition" /><code>{"private Vector3 countXGraphicPosition"}</code> |  |
-| <Link id="m-definitions" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{", "}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{"> definitions"}</code> |  |
-| <Link id="m-findable" /><code>{"private static List<"}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{"> findable"}</code> |  |
-| <Link id="m-gap" /><code>{"private float gap"}</code> |  |
-| <Link id="m-graphic" /><code>{"private Mesh graphic"}</code> |  |
-| <Link id="m-graphicposition" /><code>{"private Vector3 graphicPosition"}</code> |  |
-| <Link id="m-graphicrotation" /><code>{"private Vector3 graphicRotation"}</code> |  |
-| <Link id="m-graphicscale" /><code>{"private float graphicScale"}</code> |  |
-| <Link id="m-graphicscalenew" /><code>{"private Vector3 graphicScaleNew"}</code> |  |
-| <Link id="m-isfindable" /><code>{"private bool isFindable"}</code> |  |
-| <Link id="m-product" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" product"}</code> |  |
-| <Link id="m-quantityproduced" /><code>{"private int quantityProduced"}</code> |  |
+<details>
+<summary>15 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-allowedmaterials" /><code>{"private "}<Link to="/game-api/types/alta-items/itemset">{"ItemSet"}</Link>{" allowedMaterials"}</code> |
+| <Link id="m-cost" /><code>{"private int cost"}</code> |
+| <Link id="m-countnumbergraphicposition" /><code>{"private Vector3 countNumberGraphicPosition"}</code> |
+| <Link id="m-countxgraphicposition" /><code>{"private Vector3 countXGraphicPosition"}</code> |
+| <Link id="m-definitions" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{", "}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{"> definitions"}</code> |
+| <Link id="m-findable" /><code>{"private static List<"}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{"> findable"}</code> |
+| <Link id="m-gap" /><code>{"private float gap"}</code> |
+| <Link id="m-graphic" /><code>{"private Mesh graphic"}</code> |
+| <Link id="m-graphicposition" /><code>{"private Vector3 graphicPosition"}</code> |
+| <Link id="m-graphicrotation" /><code>{"private Vector3 graphicRotation"}</code> |
+| <Link id="m-graphicscale" /><code>{"private float graphicScale"}</code> |
+| <Link id="m-graphicscalenew" /><code>{"private Vector3 graphicScaleNew"}</code> |
+| <Link id="m-isfindable" /><code>{"private bool isFindable"}</code> |
+| <Link id="m-product" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" product"}</code> |
+| <Link id="m-quantityproduced" /><code>{"private int quantityProduced"}</code> |
+
+</details>
 
 ## Properties
 
@@ -70,8 +75,16 @@ A hashed asset describing a smithing mould: the item it casts, the ingots it tak
 | --- | --- |
 | <Link id="m-getdefinition" /><code>{"static "}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" GetDefinition("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" product)"}</code> | Returns the mould whose product is the given item, or null. Builds the lookup on first use. |
 | <Link id="m-getrandom" /><code>{"static "}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" GetRandom()"}</code> | Returns a random mould marked findable. |
-| <Link id="m-checkinitialize" /><code>{"private static void CheckInitialize()"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor: renames the asset to the product's name plus " Mould". |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-checkinitialize" /><code>{"private static void CheckInitialize()"}</code> |
+
+</details>
 
 ## Used in
 

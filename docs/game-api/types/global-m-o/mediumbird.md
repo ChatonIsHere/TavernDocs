@@ -17,30 +17,40 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MediumBird()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MediumBird()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-aggression" /><code>{"private float aggression"}</code> |  |
-| <Link id="m-ismoving" /><code>{"private bool isMoving"}</code> |  |
-| <Link id="m-passiveaction" /><code>{"private float passiveAction"}</code> |  |
-| <Link id="m-passiveweight" /><code>{"private float passiveWeight"}</code> |  |
-| <Link id="m-speed" /><code>{"private float speed"}</code> |  |
-| <Link id="m-speedmovement" /><code>{"private float speedMovement"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-aggression" /><code>{"private float aggression"}</code> |
+| <Link id="m-ismoving" /><code>{"private bool isMoving"}</code> |
+| <Link id="m-passiveaction" /><code>{"private float passiveAction"}</code> |
+| <Link id="m-passiveweight" /><code>{"private float passiveWeight"}</code> |
+| <Link id="m-speed" /><code>{"private float speed"}</code> |
+| <Link id="m-speedmovement" /><code>{"private float speedMovement"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animator" /><code><Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" Animator { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-animator" /><code><Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" Animator { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

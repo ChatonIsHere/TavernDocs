@@ -17,21 +17,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HsvLerp()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HsvLerp()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-end" /><code>{"private Color end"}</code> |  |
-| <Link id="m-isreversed" /><code>{"private bool isReversed"}</code> |  |
-| <Link id="m-results" /><code>{"private Color[] results"}</code> |  |
-| <Link id="m-start" /><code>{"private Color start"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-end" /><code>{"private Color end"}</code> |
+| <Link id="m-isreversed" /><code>{"private bool isReversed"}</code> |
+| <Link id="m-results" /><code>{"private Color[] results"}</code> |
+| <Link id="m-start" /><code>{"private Color start"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, `Alta.Carpentry`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-core" /><code>{"Core = 2"}</code> |  |
-| <Link id="m-inner" /><code>{"Inner = 1"}</code> |  |
-| <Link id="m-outer" /><code>{"Outer = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-core" /><code>{"Core = 2"}</code> |
+| <Link id="m-inner" /><code>{"Inner = 1"}</code> |
+| <Link id="m-outer" /><code>{"Outer = 0"}</code> |
 
 ## Used in
 

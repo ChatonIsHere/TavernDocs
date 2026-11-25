@@ -17,30 +17,35 @@ A **class** in `Root.Township`, `Alta.Map`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LandmarkSaveFormat()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LandmarkSaveFormat()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-version" /><code>{"private const uint Version"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-version" /><code>{"private const uint Version"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-landmarkdiscovery" /><code>{"Dictionary<uint, bool> LandmarkDiscovery { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-landmarkdiscovery" /><code>{"Dictionary<uint, bool> LandmarkDiscovery { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clone" /><code>{"override "}<Link to="/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> |  |
-| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> |  |
-| <Link id="m-wipenonreserved" /><code>{"void WipeNonReserved(uint startingIndex)"}</code> |  |
-| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clone" /><code>{"override "}<Link to="/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> |
+| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> |
+| <Link id="m-wipenonreserved" /><code>{"void WipeNonReserved(uint startingIndex)"}</code> |
+| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> |
 
 ## Used in
 

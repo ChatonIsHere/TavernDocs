@@ -16,22 +16,22 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShopPrice()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShopPrice()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-amount" /><code>{"decimal Amount { get; set; }"}</code> |  |
-| <Link id="m-pricetype" /><code><Link to="/game-api/types/assembly-api-models/pricetype">{"PriceType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/pricetype">{"PriceType"}</Link>{" { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-amount" /><code>{"decimal Amount { get; set; }"}</code> |
+| <Link id="m-pricetype" /><code><Link to="/game-api/types/assembly-api-models/pricetype">{"PriceType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/pricetype">{"PriceType"}</Link>{" { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-multiply" /><code><Link to="/game-api/types/assembly-api-models/shopprice">{"ShopPrice"}</Link>{" Multiply(int quantity)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-multiply" /><code><Link to="/game-api/types/assembly-api-models/shopprice">{"ShopPrice"}</Link>{" Multiply(int quantity)"}</code> |
 
 ## Used in
 

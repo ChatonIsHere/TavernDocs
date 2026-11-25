@@ -17,34 +17,52 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"private BasicSenseSet()"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"private BasicSenseSet()"}</code> |
+
+</details>
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-intensities" /><code>{"private float[] intensities"}</code> |  |
-| <Link id="m-pool" /><code>{"private static Stack<"}<Link to="/game-api/types/alta-intelligence/basicsenseset">{"BasicSenseSet"}</Link>{"> pool"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-intensities" /><code>{"private float[] intensities"}</code> |
+| <Link id="m-pool" /><code>{"private static Stack<"}<Link to="/game-api/types/alta-intelligence/basicsenseset">{"BasicSenseSet"}</Link>{"> pool"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-intensities-2" /><code>{"float[] Intensities { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-intensities-2" /><code>{"float[] Intensities { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"void Apply("}<Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] setup, string errorName)"}</code> |  |
-| <Link id="m-apply-2" /><code>{"void Apply(float[] intensities)"}</code> |  |
-| <Link id="m-get" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/basicsenseset">{"BasicSenseSet"}</Link>{" Get()"}</code> |  |
-| <Link id="m-modify" /><code>{"void Modify("}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{" sense, float value)"}</code> |  |
-| <Link id="m-release" /><code>{"void Release()"}</code> |  |
-| <Link id="m-zeroall" /><code>{"void ZeroAll()"}</code> |  |
-| <Link id="m-clear" /><code>{"private void Clear()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"void Apply("}<Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] setup, string errorName)"}</code> |
+| <Link id="m-apply-2" /><code>{"void Apply(float[] intensities)"}</code> |
+| <Link id="m-get" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/basicsenseset">{"BasicSenseSet"}</Link>{" Get()"}</code> |
+| <Link id="m-modify" /><code>{"void Modify("}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{" sense, float value)"}</code> |
+| <Link id="m-release" /><code>{"void Release()"}</code> |
+| <Link id="m-zeroall" /><code>{"void ZeroAll()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-clear" /><code>{"private void Clear()"}</code> |
+
+</details>
 
 ## Used in
 

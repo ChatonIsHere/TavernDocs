@@ -19,19 +19,24 @@ A group of renderers changed together: layer, shadows, alpha and material floats
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RendererGroup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RendererGroup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-albedoalpha" /><code>{"private float albedoAlpha"}</code> |  |
-| <Link id="m-isinstanced" /><code>{"private bool isInstanced"}</code> |  |
-| <Link id="m-layer" /><code>{"private int layer"}</code> |  |
-| <Link id="m-receiveshadows" /><code>{"private bool receiveShadows"}</code> |  |
-| <Link id="m-shadowcastingmode" /><code>{"private ShadowCastingMode shadowCastingMode"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-albedoalpha" /><code>{"private float albedoAlpha"}</code> |
+| <Link id="m-isinstanced" /><code>{"private bool isInstanced"}</code> |
+| <Link id="m-layer" /><code>{"private int layer"}</code> |
+| <Link id="m-receiveshadows" /><code>{"private bool receiveShadows"}</code> |
+| <Link id="m-shadowcastingmode" /><code>{"private ShadowCastingMode shadowCastingMode"}</code> |
+
+</details>
 
 ## Properties
 
@@ -49,11 +54,19 @@ A group of renderers changed together: layer, shadows, alpha and material floats
 | <Link id="m-setasmaterialinstances" /><code>{"void SetAsMaterialInstances()"}</code> | Gives each renderer its own material copy, so later changes do not affect other objects. The copies are cleaned up on destroy. |
 | <Link id="m-updatematerialfloat" /><code>{"void UpdateMaterialFloat(string floatName, float value)"}</code> | Sets a float on the shared material of every enabled renderer, by name or property id. |
 | <Link id="m-updatematerialfloat-2" /><code>{"void UpdateMaterialFloat(int floatID, float value)"}</code> | Sets a float on the shared material of every enabled renderer, by name or property id. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-updaterenderers" /><code>{"private void IReferenceRenderer.UpdateRenderers(Renderer[] oldFirstRenderers, Renderer[] newFirstRenderers)"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-updaterenderers" /><code>{"private void IReferenceRenderer.UpdateRenderers(Renderer[] oldFirstRenderers, Renderer[] newFirstRenderers)"}</code> |
+
+</details>
 
 ## Used in
 

@@ -17,9 +17,9 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LockEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LockEvent()"}</code> |
 
 ## Used in
 

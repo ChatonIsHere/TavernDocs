@@ -21,56 +21,61 @@ Global tuning for the player's smooth (stick) locomotion: speeds, step and slope
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SmoothLocomotionSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SmoothLocomotionSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clampedspeed" /><code>{"private float clampedSpeed"}</code> |  |
-| <Link id="m-combatspeedmultiplier" /><code>{"private float combatSpeedMultiplier"}</code> |  |
-| <Link id="m-dangerdamage" /><code>{"private float dangerDamage"}</code> |  |
-| <Link id="m-dangermask" /><code>{"private LayerMask dangerMask"}</code> |  |
-| <Link id="m-deceleratelerp" /><code>{"private float decelerateLerp"}</code> |  |
-| <Link id="m-disablerotatoronactivehandfor" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" disableRotatorOnActiveHandFor"}</code> |  |
-| <Link id="m-distancetocheckforinfinitefall" /><code>{"private float distanceToCheckForInfiniteFall"}</code> |  |
-| <Link id="m-extraheight" /><code>{"private float extraHeight"}</code> |  |
-| <Link id="m-fallcrippledamageoverdistance" /><code>{"private AnimationCurve fallCrippleDamageOverDistance"}</code> |  |
-| <Link id="m-falldamageoverdistance" /><code>{"private AnimationCurve fallDamageOverDistance"}</code> |  |
-| <Link id="m-falldamagesound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" fallDamageSound"}</code> |  |
-| <Link id="m-falleffectsscaleoverdistance" /><code>{"private AnimationCurve fallEffectsScaleOverDistance"}</code> |  |
-| <Link id="m-fallingcontrolovertime" /><code>{"private AnimationCurve fallingControlOverTime"}</code> |  |
-| <Link id="m-gravitymultiplier" /><code>{"private float gravityMultiplier"}</code> |  |
-| <Link id="m-hasmovedsensitivitysquared" /><code>{"private float hasMovedSensitivitySquared"}</code> |  |
-| <Link id="m-heightadjustmentlerp" /><code>{"private AnimationCurve heightAdjustmentLerp"}</code> |  |
-| <Link id="m-hungerstatdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/hungerstat">{"HungerStat"}</Link>{" hungerStatDefinition"}</code> |  |
-| <Link id="m-hungrysoundcooldown" /><code>{"private float hungrySoundCooldown"}</code> |  |
-| <Link id="m-inputcurve" /><code>{"private AnimationCurve inputCurve"}</code> |  |
-| <Link id="m-leanlimit" /><code>{"private float leanLimit"}</code> |  |
-| <Link id="m-maxanglebeforeslopedot" /><code>{"private float maxAngleBeforeSlopeDot"}</code> |  |
-| <Link id="m-maxfalldistance" /><code>{"private float maxFallDistance"}</code> |  |
-| <Link id="m-maxleveltorun" /><code>{"private int maxLevelToRun"}</code> |  |
-| <Link id="m-mindistanceforeffect" /><code>{"private float minDistanceForEffect"}</code> |  |
-| <Link id="m-minimumheight" /><code>{"private float minimumHeight"}</code> |  |
-| <Link id="m-minimumvelocity" /><code>{"private float minimumVelocity"}</code> |  |
-| <Link id="m-normalstepheight" /><code>{"private float normalStepHeight"}</code> |  |
-| <Link id="m-onhitgroundeffectscaled" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformscaledevent">{"TransformScaledEvent"}</Link>{" onHitGroundEffectScaled"}</code> |  |
-| <Link id="m-pressacceleratelerp" /><code>{"private float pressAccelerateLerp"}</code> |  |
-| <Link id="m-pressedspeed" /><code>{"private float pressedSpeed"}</code> |  |
-| <Link id="m-recoverfromsafetyrepositionblackfadeduration" /><code>{"private float recoverFromSafetyRepositionBlackFadeDuration"}</code> |  |
-| <Link id="m-recoverfromsafetyrepositionduration" /><code>{"private float recoverFromSafetyRepositionDuration"}</code> |  |
-| <Link id="m-recoveryfadeblackness" /><code>{"private float recoveryFadeBlackness"}</code> |  |
-| <Link id="m-safetymask" /><code>{"private LayerMask safetyMask"}</code> |  |
-| <Link id="m-slipvalueincreaseduration" /><code>{"private float slipValueIncreaseDuration"}</code> |  |
-| <Link id="m-slopehelperdistance" /><code>{"private float slopeHelperDistance"}</code> |  |
-| <Link id="m-slopemultiplier" /><code>{"private float slopeMultiplier"}</code> |  |
-| <Link id="m-standablemask" /><code>{"private LayerMask standableMask"}</code> |  |
-| <Link id="m-teleportfalltimer" /><code>{"private float teleportFallTimer"}</code> |  |
-| <Link id="m-touchacceleratelerp" /><code>{"private float touchAccelerateLerp"}</code> |  |
-| <Link id="m-touchedspeed" /><code>{"private float touchedSpeed"}</code> |  |
-| <Link id="m-tryingtorunsound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" tryingToRunSound"}</code> |  |
+<details>
+<summary>42 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-clampedspeed" /><code>{"private float clampedSpeed"}</code> |
+| <Link id="m-combatspeedmultiplier" /><code>{"private float combatSpeedMultiplier"}</code> |
+| <Link id="m-dangerdamage" /><code>{"private float dangerDamage"}</code> |
+| <Link id="m-dangermask" /><code>{"private LayerMask dangerMask"}</code> |
+| <Link id="m-deceleratelerp" /><code>{"private float decelerateLerp"}</code> |
+| <Link id="m-disablerotatoronactivehandfor" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" disableRotatorOnActiveHandFor"}</code> |
+| <Link id="m-distancetocheckforinfinitefall" /><code>{"private float distanceToCheckForInfiniteFall"}</code> |
+| <Link id="m-extraheight" /><code>{"private float extraHeight"}</code> |
+| <Link id="m-fallcrippledamageoverdistance" /><code>{"private AnimationCurve fallCrippleDamageOverDistance"}</code> |
+| <Link id="m-falldamageoverdistance" /><code>{"private AnimationCurve fallDamageOverDistance"}</code> |
+| <Link id="m-falldamagesound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" fallDamageSound"}</code> |
+| <Link id="m-falleffectsscaleoverdistance" /><code>{"private AnimationCurve fallEffectsScaleOverDistance"}</code> |
+| <Link id="m-fallingcontrolovertime" /><code>{"private AnimationCurve fallingControlOverTime"}</code> |
+| <Link id="m-gravitymultiplier" /><code>{"private float gravityMultiplier"}</code> |
+| <Link id="m-hasmovedsensitivitysquared" /><code>{"private float hasMovedSensitivitySquared"}</code> |
+| <Link id="m-heightadjustmentlerp" /><code>{"private AnimationCurve heightAdjustmentLerp"}</code> |
+| <Link id="m-hungerstatdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/hungerstat">{"HungerStat"}</Link>{" hungerStatDefinition"}</code> |
+| <Link id="m-hungrysoundcooldown" /><code>{"private float hungrySoundCooldown"}</code> |
+| <Link id="m-inputcurve" /><code>{"private AnimationCurve inputCurve"}</code> |
+| <Link id="m-leanlimit" /><code>{"private float leanLimit"}</code> |
+| <Link id="m-maxanglebeforeslopedot" /><code>{"private float maxAngleBeforeSlopeDot"}</code> |
+| <Link id="m-maxfalldistance" /><code>{"private float maxFallDistance"}</code> |
+| <Link id="m-maxleveltorun" /><code>{"private int maxLevelToRun"}</code> |
+| <Link id="m-mindistanceforeffect" /><code>{"private float minDistanceForEffect"}</code> |
+| <Link id="m-minimumheight" /><code>{"private float minimumHeight"}</code> |
+| <Link id="m-minimumvelocity" /><code>{"private float minimumVelocity"}</code> |
+| <Link id="m-normalstepheight" /><code>{"private float normalStepHeight"}</code> |
+| <Link id="m-onhitgroundeffectscaled" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformscaledevent">{"TransformScaledEvent"}</Link>{" onHitGroundEffectScaled"}</code> |
+| <Link id="m-pressacceleratelerp" /><code>{"private float pressAccelerateLerp"}</code> |
+| <Link id="m-pressedspeed" /><code>{"private float pressedSpeed"}</code> |
+| <Link id="m-recoverfromsafetyrepositionblackfadeduration" /><code>{"private float recoverFromSafetyRepositionBlackFadeDuration"}</code> |
+| <Link id="m-recoverfromsafetyrepositionduration" /><code>{"private float recoverFromSafetyRepositionDuration"}</code> |
+| <Link id="m-recoveryfadeblackness" /><code>{"private float recoveryFadeBlackness"}</code> |
+| <Link id="m-safetymask" /><code>{"private LayerMask safetyMask"}</code> |
+| <Link id="m-slipvalueincreaseduration" /><code>{"private float slipValueIncreaseDuration"}</code> |
+| <Link id="m-slopehelperdistance" /><code>{"private float slopeHelperDistance"}</code> |
+| <Link id="m-slopemultiplier" /><code>{"private float slopeMultiplier"}</code> |
+| <Link id="m-standablemask" /><code>{"private LayerMask standableMask"}</code> |
+| <Link id="m-teleportfalltimer" /><code>{"private float teleportFallTimer"}</code> |
+| <Link id="m-touchacceleratelerp" /><code>{"private float touchAccelerateLerp"}</code> |
+| <Link id="m-touchedspeed" /><code>{"private float touchedSpeed"}</code> |
+| <Link id="m-tryingtorunsound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" tryingToRunSound"}</code> |
+
+</details>
 
 ## Properties
 
@@ -123,7 +128,15 @@ Global tuning for the player's smooth (stick) locomotion: speeds, step and slope
 | --- | --- |
 | <Link id="m-canrun" /><code>{"bool CanRun("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" hungerStat, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" fullnessStat)"}</code> | True unless the hunger stat is enabled and at level 2 or lower; then running needs some fullness left. |
 | <Link id="m-lerpheight" /><code>{"float LerpHeight(float currenty, float targetY)"}</code> | Smooths a height towards a target using the height adjustment curve. |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>
 
 ## Used in
 

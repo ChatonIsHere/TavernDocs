@@ -16,28 +16,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UpdateModuleInfo("}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" duration)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UpdateModuleInfo("}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" duration)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration" /><code>{"private "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" duration"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-duration" /><code>{"private "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" duration"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-registeredcount" /><code>{"int RegisteredCount { get; set; }"}</code> |  |
-| <Link id="m-updatedurationms" /><code>{"float UpdateDurationMs { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-registeredcount" /><code>{"int RegisteredCount { get; set; }"}</code> |
+| <Link id="m-updatedurationms" /><code>{"float UpdateDurationMs { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-resetduration" /><code>{"void ResetDuration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-resetduration" /><code>{"void ResetDuration()"}</code> |
 
 ## Used in
 

@@ -17,15 +17,15 @@ A **private class** in `Root.Township`, `Alta.Customization`. Reach it through a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TextureCache()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TextureCache()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-androidnormal" /><code>{"Texture2D androidNormal"}</code> |  |
-| <Link id="m-androidtexture" /><code>{"Texture2D androidTexture"}</code> |  |
-| <Link id="m-normal" /><code>{"Texture2D normal"}</code> |  |
-| <Link id="m-texture" /><code>{"Texture2D texture"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-androidnormal" /><code>{"Texture2D androidNormal"}</code> |
+| <Link id="m-androidtexture" /><code>{"Texture2D androidTexture"}</code> |
+| <Link id="m-normal" /><code>{"Texture2D normal"}</code> |
+| <Link id="m-texture" /><code>{"Texture2D texture"}</code> |

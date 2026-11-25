@@ -16,8 +16,8 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-defaultinteractableprioritymodifier" /><code>{"const float DefaultInteractablePriorityModifier"}</code> |  |
-| <Link id="m-pickupcontainerprioritymodifier" /><code>{"const float PickupContainerPriorityModifier"}</code> |  |
-| <Link id="m-pickupprioritymodifier" /><code>{"const float PickupPriorityModifier"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-defaultinteractableprioritymodifier" /><code>{"const float DefaultInteractablePriorityModifier"}</code> |
+| <Link id="m-pickupcontainerprioritymodifier" /><code>{"const float PickupContainerPriorityModifier"}</code> |
+| <Link id="m-pickupprioritymodifier" /><code>{"const float PickupPriorityModifier"}</code> |

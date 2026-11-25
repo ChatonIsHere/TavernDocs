@@ -17,12 +17,12 @@ An **enum** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-critical" /><code>{"Critical = 3"}</code> |  |
-| <Link id="m-high" /><code>{"High = 2"}</code> |  |
-| <Link id="m-low" /><code>{"Low = 0"}</code> |  |
-| <Link id="m-medium" /><code>{"Medium = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-critical" /><code>{"Critical = 3"}</code> |
+| <Link id="m-high" /><code>{"High = 2"}</code> |
+| <Link id="m-low" /><code>{"Low = 0"}</code> |
+| <Link id="m-medium" /><code>{"Medium = 1"}</code> |
 
 ## Used in
 

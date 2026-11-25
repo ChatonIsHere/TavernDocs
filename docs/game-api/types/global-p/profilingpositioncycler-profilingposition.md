@@ -17,17 +17,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProfilingPosition(Transform refTransform)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProfilingPosition(Transform refTransform)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"string name"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"string name"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |
 
 ## Used in
 

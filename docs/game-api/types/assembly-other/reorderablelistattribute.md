@@ -17,15 +17,15 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ReorderableListAttribute(bool isDraggable = true, bool isDisplayingHeader = true, bool isDisplayingAddButton = true, bool isDisplayingRemoveButton = true)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ReorderableListAttribute(bool isDraggable = true, bool isDisplayingHeader = true, bool isDisplayingAddButton = true, bool isDisplayingRemoveButton = true)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdisplayingaddbutton" /><code>{"bool IsDisplayingAddButton { get; private set; }"}</code> |  |
-| <Link id="m-isdisplayingheader" /><code>{"bool IsDisplayingHeader { get; private set; }"}</code> |  |
-| <Link id="m-isdisplayingremovebutton" /><code>{"bool IsDisplayingRemoveButton { get; private set; }"}</code> |  |
-| <Link id="m-isdraggable" /><code>{"bool IsDraggable { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isdisplayingaddbutton" /><code>{"bool IsDisplayingAddButton { get; private set; }"}</code> |
+| <Link id="m-isdisplayingheader" /><code>{"bool IsDisplayingHeader { get; private set; }"}</code> |
+| <Link id="m-isdisplayingremovebutton" /><code>{"bool IsDisplayingRemoveButton { get; private set; }"}</code> |
+| <Link id="m-isdraggable" /><code>{"bool IsDraggable { get; private set; }"}</code> |

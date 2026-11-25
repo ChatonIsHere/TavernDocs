@@ -19,23 +19,36 @@ A serializable event with no arguments that fires both an inspector UnityEvent a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaEvent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-triggered" /><code>{"private UnityEvent triggered"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-triggered" /><code>{"private UnityEvent triggered"}</code> |
+
+</details>
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-logger-2" /><code>{"static Logger Logger { get; }"}</code> | Shared logger, also used by the generic `AltaEvent` types. |
-| <Link id="m-ialtaeventvalidation-eventbase" /><code>{"private UnityEventBase IAltaEventValidation.EventBase { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-ialtaeventvalidation-eventbase" /><code>{"private UnityEventBase IAltaEventValidation.EventBase { get; }"}</code> |
+
+</details>
 
 ## Events
 

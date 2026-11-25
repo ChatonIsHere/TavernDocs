@@ -17,29 +17,42 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SocialTablet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SocialTablet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hoverpickup" /><code>{"private "}<Link to="/game-api/types/global-e-h/hoverpickup">{"HoverPickup"}</Link>{" hoverPickup"}</code> |  |
-| <Link id="m-touchscreen" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenmenubase">{"TouchScreenMenuBase"}</Link>{" touchScreen"}</code> |  |
-| <Link id="m-window" /><code>{"private "}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" window"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-hoverpickup" /><code>{"private "}<Link to="/game-api/types/global-e-h/hoverpickup">{"HoverPickup"}</Link>{" hoverPickup"}</code> |
+| <Link id="m-touchscreen" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenmenubase">{"TouchScreenMenuBase"}</Link>{" touchScreen"}</code> |
+| <Link id="m-window" /><code>{"private "}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" window"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-checkownership" /><code>{"private void CheckOwnership("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" owner)"}</code> |  |
-| <Link id="m-filterforowner" /><code>{"private void FilterForOwner("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |  |
-| <Link id="m-finishfadein" /><code>{"protected override void FinishFadeIn()"}</code> |  |
-| <Link id="m-hover" /><code>{"private void Hover("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-startfade" /><code>{"protected override void StartFade(bool isFadingIn)"}</code> |  |
-| <Link id="m-startupforlocalplayer" /><code>{"private void StartupForLocalPlayer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-finishfadein" /><code>{"protected override void FinishFadeIn()"}</code> |
+| <Link id="m-startfade" /><code>{"protected override void StartFade(bool isFadingIn)"}</code> |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-checkownership" /><code>{"private void CheckOwnership("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" owner)"}</code> |
+| <Link id="m-filterforowner" /><code>{"private void FilterForOwner("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |
+| <Link id="m-hover" /><code>{"private void Hover("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-startupforlocalplayer" /><code>{"private void StartupForLocalPlayer()"}</code> |
+
+</details>
 
 ## Used in
 

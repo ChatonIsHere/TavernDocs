@@ -17,21 +17,21 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProfileData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProfileData()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-averagefpsduringload" /><code>{"double AverageFPSDuringLoad { get; set; }"}</code> |  |
-| <Link id="m-averagefpsduringunload" /><code>{"double AverageFPSDuringUnload { get; set; }"}</code> |  |
-| <Link id="m-iteration" /><code>{"int Iteration { get; set; }"}</code> |  |
-| <Link id="m-loaddata" /><code><Link to="/game-api/types/global-p/profilechunkloading-gamedata">{"ProfileChunkLoading.GameData"}</Link>{" LoadData { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-timetillfullloaded" /><code>{"float TimeTillFullLoaded { get; set; }"}</code> |  |
-| <Link id="m-timetillfullunloaded" /><code>{"float TimeTillFullUnloaded { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-averagefpsduringload" /><code>{"double AverageFPSDuringLoad { get; set; }"}</code> |
+| <Link id="m-averagefpsduringunload" /><code>{"double AverageFPSDuringUnload { get; set; }"}</code> |
+| <Link id="m-iteration" /><code>{"int Iteration { get; set; }"}</code> |
+| <Link id="m-loaddata" /><code><Link to="/game-api/types/global-p/profilechunkloading-gamedata">{"ProfileChunkLoading.GameData"}</Link>{" LoadData { get; set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| <Link id="m-timetillfullloaded" /><code>{"float TimeTillFullLoaded { get; set; }"}</code> |
+| <Link id="m-timetillfullunloaded" /><code>{"float TimeTillFullUnloaded { get; set; }"}</code> |
 
 ## Used in
 

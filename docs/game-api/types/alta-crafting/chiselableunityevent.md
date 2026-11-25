@@ -18,6 +18,6 @@ A **class** in `Root.Township`, `Alta.Carpentry`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChiselableUnityEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChiselableUnityEvent()"}</code> |

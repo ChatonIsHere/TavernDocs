@@ -16,11 +16,11 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-open" /><code>{"Open = 0"}</code> |  |
-| <Link id="m-private" /><code>{"Private = 2"}</code> |  |
-| <Link id="m-public" /><code>{"Public = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-open" /><code>{"Open = 0"}</code> |
+| <Link id="m-private" /><code>{"Private = 2"}</code> |
+| <Link id="m-public" /><code>{"Public = 1"}</code> |
 
 ## Used in
 

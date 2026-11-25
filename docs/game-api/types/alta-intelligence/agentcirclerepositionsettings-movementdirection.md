@@ -17,10 +17,10 @@ An **private enum** in `Root.Township`, `Alta.Intelligence`. Reach it through at
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-left" /><code>{"Left = 1"}</code> |  |
-| <Link id="m-right" /><code>{"Right = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-left" /><code>{"Left = 1"}</code> |
+| <Link id="m-right" /><code>{"Right = 0"}</code> |
 
 ## Used in
 

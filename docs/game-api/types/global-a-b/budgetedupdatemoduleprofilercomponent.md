@@ -17,22 +17,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BudgetedUpdateModuleProfilerComponent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BudgetedUpdateModuleProfilerComponent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allbudgetedmodules" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/budgetedupdatemoduleprofiler-budgeteddata">{"BudgetedUpdateModuleProfiler.BudgetedData"}</Link>{"> allBudgetedModules"}</code> |  |
-| <Link id="m-istrackingallowance" /><code>{"private bool isTrackingAllowance"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-allbudgetedmodules" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/budgetedupdatemoduleprofiler-budgeteddata">{"BudgetedUpdateModuleProfiler.BudgetedData"}</Link>{"> allBudgetedModules"}</code> |
+| <Link id="m-istrackingallowance" /><code>{"private bool isTrackingAllowance"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-starttrackingallowance" /><code>{"private void StartTrackingAllowance()"}</code> |  |
-| <Link id="m-stoptrackingallowance" /><code>{"private void StopTrackingAllowance()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| <Link id="m-starttrackingallowance" /><code>{"private void StartTrackingAllowance()"}</code> |
+| <Link id="m-stoptrackingallowance" /><code>{"private void StopTrackingAllowance()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

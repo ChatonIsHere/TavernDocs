@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `Alta.Networking.Animation`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimatorBoolAccess()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimatorBoolAccess()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |  |
-| <Link id="m-boolname" /><code>{"private string boolName"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
+| <Link id="m-boolname" /><code>{"private string boolName"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-set" /><code>{"void Set(bool value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-set" /><code>{"void Set(bool value)"}</code> |

@@ -17,13 +17,13 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RefreshRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RefreshRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> |  |
-| <Link id="m-target" /><code>{"int? Target { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> |
+| <Link id="m-target" /><code>{"int? Target { get; set; }"}</code> |

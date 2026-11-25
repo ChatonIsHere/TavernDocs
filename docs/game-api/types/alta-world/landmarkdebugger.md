@@ -18,26 +18,31 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LandmarkDebugger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LandmarkDebugger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forced" /><code>{"private int forced"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-forced" /><code>{"private int forced"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> |  |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |

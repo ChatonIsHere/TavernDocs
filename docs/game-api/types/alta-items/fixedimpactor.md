@@ -20,23 +20,31 @@ An impact source that only hurts while charged, such as a creature's beak or a s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FixedImpactor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FixedImpactor()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-chargeonenable" /><code>{"protected bool chargeOnEnable"}</code> | If true, charges itself each time it's enabled. |
-| <Link id="m-damagemanager" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" damageManager"}</code> |  |
-| <Link id="m-damagestat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" damageStat"}</code> |  |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
-| <Link id="m-hasdamagestat" /><code>{"private bool hasDamageStat"}</code> |  |
-| <Link id="m-hasinitialized" /><code>{"private bool hasInitialized"}</code> |  |
 | <Link id="m-ischargedonstart" /><code>{"protected bool isChargedOnStart"}</code> | Whether it starts charged. |
-| <Link id="m-onchargedupdate" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onChargedUpdate"}</code> |  |
-| <Link id="m-synccharged" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncCharged"}</code> |  |
+
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-damagemanager" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" damageManager"}</code> |
+| <Link id="m-damagestat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" damageStat"}</code> |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| <Link id="m-hasdamagestat" /><code>{"private bool hasDamageStat"}</code> |
+| <Link id="m-hasinitialized" /><code>{"private bool hasInitialized"}</code> |
+| <Link id="m-onchargedupdate" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onChargedUpdate"}</code> |
+| <Link id="m-synccharged" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncCharged"}</code> |
+
+</details>
 
 ## Properties
 
@@ -59,8 +67,16 @@ An impact source that only hurts while charged, such as a creature's beak or a s
 | <Link id="m-ondisconnected" /><code>{"void OnDisconnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Does nothing. |
 | <Link id="m-reset" /><code>{"override void Reset()"}</code> | Turns it off. Server: also syncs to clients. |
 | <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Applies the starting charge state. |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-sync" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-sync" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

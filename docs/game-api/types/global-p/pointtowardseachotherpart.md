@@ -18,19 +18,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PointTowardsEachotherPart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PointTowardsEachotherPart()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-a" /><code>{"private "}<Link to="/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{" a"}</code> |  |
-| <Link id="m-b" /><code>{"private "}<Link to="/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{" b"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-a" /><code>{"private "}<Link to="/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{" a"}</code> |
+| <Link id="m-b" /><code>{"private "}<Link to="/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{" b"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generatedynamic" /><code>{"override void GenerateDynamic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-generatedynamic" /><code>{"override void GenerateDynamic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> |

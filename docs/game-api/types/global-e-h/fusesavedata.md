@@ -19,14 +19,14 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FuseSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FuseSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentfuseamount" /><code>{"float currentFuseAmount"}</code> |  |
-| <Link id="m-isfinished" /><code>{"bool isFinished"}</code> |  |
-| <Link id="m-islit" /><code>{"bool isLit"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentfuseamount" /><code>{"float currentFuseAmount"}</code> |
+| <Link id="m-isfinished" /><code>{"bool isFinished"}</code> |
+| <Link id="m-islit" /><code>{"bool isLit"}</code> |

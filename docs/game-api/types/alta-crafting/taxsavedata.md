@@ -19,16 +19,16 @@ A **class** in `Root.Township`, `Alta.Trading`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TaxSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TaxSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currenttime" /><code>{"TimeSpan currentTime"}</code> |  |
-| <Link id="m-istaxing" /><code>{"bool isTaxing"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currenttime" /><code>{"TimeSpan currentTime"}</code> |
+| <Link id="m-istaxing" /><code>{"bool isTaxing"}</code> |
 
 ## Used in
 

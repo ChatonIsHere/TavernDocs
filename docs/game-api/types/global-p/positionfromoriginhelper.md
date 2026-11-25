@@ -18,15 +18,15 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PositionFromOriginHelper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PositionFromOriginHelper()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getposition" /><code>{"abstract Vector3 GetPosition(Vector3 origin)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getposition" /><code>{"abstract Vector3 GetPosition(Vector3 origin)"}</code> |
 
 ## Used in
 

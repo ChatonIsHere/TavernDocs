@@ -17,16 +17,16 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Effect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Effect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" definition"}</code> |  |
-| <Link id="m-strengthmultiplier" /><code>{"float strengthMultiplier"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" definition"}</code> |
+| <Link id="m-strengthmultiplier" /><code>{"float strengthMultiplier"}</code> |
 
 ## Used in
 

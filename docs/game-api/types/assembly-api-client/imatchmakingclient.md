@@ -17,9 +17,9 @@ An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gettutorialserver" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> GetTutorialServer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gettutorialserver" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> GetTutorialServer()"}</code> |
 
 ## Used in
 

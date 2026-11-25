@@ -16,20 +16,28 @@ A **internal class** in `Alta.PlatformInformation.Runtime`, `Alta.PlatformInform
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LocalPlatformProvider()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LocalPlatformProvider()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getruntimeplatform" /><code><Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" GetRuntimePlatform()"}</code> |  |
-| <Link id="m-getandroidsubplatform" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" GetAndroidSubPlatform()"}</code> |  |
-| <Link id="m-geteditorbuildtargetplatform" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" GetEditorBuildTargetPlatform()"}</code> |  |
-| <Link id="m-isandroidpreview" /><code>{"private bool IsAndroidPreview()"}</code> |  |
-| <Link id="m-ispico" /><code>{"private bool IsPico()"}</code> |  |
-| <Link id="m-isquest" /><code>{"private bool IsQuest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getruntimeplatform" /><code><Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" GetRuntimePlatform()"}</code> |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-getandroidsubplatform" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" GetAndroidSubPlatform()"}</code> |
+| <Link id="m-geteditorbuildtargetplatform" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" GetEditorBuildTargetPlatform()"}</code> |
+| <Link id="m-isandroidpreview" /><code>{"private bool IsAndroidPreview()"}</code> |
+| <Link id="m-ispico" /><code>{"private bool IsPico()"}</code> |
+| <Link id="m-isquest" /><code>{"private bool IsQuest()"}</code> |
+
+</details>
 
 ## Used in
 

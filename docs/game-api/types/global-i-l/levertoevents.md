@@ -19,21 +19,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LeverToEvents()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LeverToEvents()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isserveronly" /><code>{"private bool isServerOnly"}</code> |  |
-| <Link id="m-onposition0" /><code>{"private UnityEvent onPosition0"}</code> |  |
-| <Link id="m-onposition1" /><code>{"private UnityEvent onPosition1"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isserveronly" /><code>{"private bool isServerOnly"}</code> |
+| <Link id="m-onposition0" /><code>{"private UnityEvent onPosition0"}</code> |
+| <Link id="m-onposition1" /><code>{"private UnityEvent onPosition1"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-triggerevents" /><code>{"private void TriggerEvents("}<Link to="/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{" lever, int oldIndex, int newIndex)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-triggerevents" /><code>{"private void TriggerEvents("}<Link to="/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{" lever, int oldIndex, int newIndex)"}</code> |
+
+</details>

@@ -18,9 +18,9 @@ API response describing one member of a group (server group), with their role an
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GroupMemberInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GroupMemberInfo()"}</code> |
 
 ## Properties
 

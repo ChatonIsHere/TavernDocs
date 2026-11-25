@@ -18,17 +18,17 @@ A **delegate** in `Root.Township`, `Alta.XR`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionPostProcessor(object object, IntPtr method)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionPostProcessor(object object, IntPtr method)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(ref Vector3 position, AsyncCallback callback, object object)"}</code> |  |
-| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(ref Vector3 position, IAsyncResult result)"}</code> |  |
-| <Link id="m-invoke" /><code>{"virtual void Invoke(ref Vector3 position)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(ref Vector3 position, AsyncCallback callback, object object)"}</code> |
+| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(ref Vector3 position, IAsyncResult result)"}</code> |
+| <Link id="m-invoke" /><code>{"virtual void Invoke(ref Vector3 position)"}</code> |
 
 ## Used in
 

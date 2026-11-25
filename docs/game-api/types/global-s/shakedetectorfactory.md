@@ -16,24 +16,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShakeDetectorFactory()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShakeDetectorFactory()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fadepersecond" /><code>{"private float fadePerSecond"}</code> |  |
-| <Link id="m-jumpperchange" /><code>{"private float jumpPerChange"}</code> |  |
-| <Link id="m-threshold" /><code>{"private float threshold"}</code> |  |
-| <Link id="m-velocitythresholdsquared" /><code>{"private float velocityThresholdSquared"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fadepersecond" /><code>{"private float fadePerSecond"}</code> |
+| <Link id="m-jumpperchange" /><code>{"private float jumpPerChange"}</code> |
+| <Link id="m-threshold" /><code>{"private float threshold"}</code> |
+| <Link id="m-velocitythresholdsquared" /><code>{"private float velocityThresholdSquared"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gethelper" /><code><Link to="/game-api/types/global-s/shakedetectorhelper">{"ShakeDetectorHelper"}</Link>{" GetHelper(Rigidbody targetRigidbody)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gethelper" /><code><Link to="/game-api/types/global-s/shakedetectorhelper">{"ShakeDetectorHelper"}</Link>{" GetHelper(Rigidbody targetRigidbody)"}</code> |
 
 ## Used in
 

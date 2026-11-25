@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, `Alta.Menu`. Reach it through att-stubs
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-argument" /><code>{"string Argument"}</code> |  |
-| <Link id="m-command" /><code>{"string command"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-argument" /><code>{"string Argument"}</code> |
+| <Link id="m-command" /><code>{"string command"}</code> |
 
 ## Used in
 

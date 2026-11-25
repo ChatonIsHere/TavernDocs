@@ -17,11 +17,11 @@ An **private enum** in `Root.Township`, `Alta.Intelligence`. Reach it through at
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-affectonend" /><code>{"AffectOnEnd = 2"}</code> |  |
-| <Link id="m-affectonstart" /><code>{"AffectOnStart = 1"}</code> |  |
-| <Link id="m-revertonend" /><code>{"RevertOnEnd = 4"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-affectonend" /><code>{"AffectOnEnd = 2"}</code> |
+| <Link id="m-affectonstart" /><code>{"AffectOnStart = 1"}</code> |
+| <Link id="m-revertonend" /><code>{"RevertOnEnd = 4"}</code> |
 
 ## Used in
 

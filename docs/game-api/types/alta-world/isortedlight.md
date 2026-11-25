@@ -17,8 +17,8 @@ An **internal interface** in `Root.Township`, `Alta.Lighting`. Reach it through 
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distance" /><code>{"float Distance { get; }"}</code> |  |
-| <Link id="m-light" /><code><Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" Light { get; }"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-distance" /><code>{"float Distance { get; }"}</code> |
+| <Link id="m-light" /><code><Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" Light { get; }"}</code> |
+| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> |

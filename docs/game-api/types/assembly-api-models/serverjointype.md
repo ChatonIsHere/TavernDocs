@@ -16,15 +16,15 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-groupmember" /><code>{"GroupMember = 0"}</code> |  |
-| <Link id="m-opengroup" /><code>{"OpenGroup = 2"}</code> |  |
-| <Link id="m-privategroup" /><code>{"PrivateGroup = 0"}</code> |  |
-| <Link id="m-public" /><code>{"Public = 1"}</code> |  |
-| <Link id="m-publicgroup" /><code>{"PublicGroup = 5"}</code> |  |
-| <Link id="m-supporteronly" /><code>{"SupporterOnly = 3"}</code> |  |
-| <Link id="m-worldinstance" /><code>{"WorldInstance = 4"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-groupmember" /><code>{"GroupMember = 0"}</code> |
+| <Link id="m-opengroup" /><code>{"OpenGroup = 2"}</code> |
+| <Link id="m-privategroup" /><code>{"PrivateGroup = 0"}</code> |
+| <Link id="m-public" /><code>{"Public = 1"}</code> |
+| <Link id="m-publicgroup" /><code>{"PublicGroup = 5"}</code> |
+| <Link id="m-supporteronly" /><code>{"SupporterOnly = 3"}</code> |
+| <Link id="m-worldinstance" /><code>{"WorldInstance = 4"}</code> |
 
 ## Used in
 

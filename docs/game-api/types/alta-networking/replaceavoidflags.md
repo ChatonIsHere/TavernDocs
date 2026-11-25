@@ -19,16 +19,16 @@ Flags for what to leave alone when one entity replaces another (for example `Cra
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-charge" /><code>{"Charge = 8"}</code> |  |
-| <Link id="m-chunk" /><code>{"Chunk = 64"}</code> |  |
-| <Link id="m-health" /><code>{"Health = 32"}</code> |  |
-| <Link id="m-internal" /><code>{"Internal = 4"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-position" /><code>{"Position = 1"}</code> |  |
-| <Link id="m-relation" /><code>{"Relation = 2"}</code> |  |
-| <Link id="m-stats" /><code>{"Stats = 16"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-charge" /><code>{"Charge = 8"}</code> |
+| <Link id="m-chunk" /><code>{"Chunk = 64"}</code> |
+| <Link id="m-health" /><code>{"Health = 32"}</code> |
+| <Link id="m-internal" /><code>{"Internal = 4"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-position" /><code>{"Position = 1"}</code> |
+| <Link id="m-relation" /><code>{"Relation = 2"}</code> |
+| <Link id="m-stats" /><code>{"Stats = 16"}</code> |
 
 ## Used in
 

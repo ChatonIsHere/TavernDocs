@@ -17,20 +17,25 @@ A **class** in `Root.Township`, `Alta.Intelligence.Wyrms`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveSpit()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActiveSpit()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angle" /><code>{"private "}<Link to="/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{" angle"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-angle" /><code>{"private "}<Link to="/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{" angle"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getaction" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/activespit">{"ActiveSpit"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/wyrmspitsettings">{"WyrmSpitSettings"}</Link>{"> GetAction("}<Link to="/game-api/types/alta-intelligence/wyrmspitsettings">{"WyrmSpitSettings"}</Link>{" settings)"}</code> |  |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |  |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getaction" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/activespit">{"ActiveSpit"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/wyrmspitsettings">{"WyrmSpitSettings"}</Link>{"> GetAction("}<Link to="/game-api/types/alta-intelligence/wyrmspitsettings">{"WyrmSpitSettings"}</Link>{" settings)"}</code> |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |

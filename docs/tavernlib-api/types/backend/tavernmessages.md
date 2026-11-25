@@ -19,7 +19,7 @@ TavernLib's own network message numbers, above the game's: `ReceiveRoles` (32, s
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-receiveroles" /><code>{"ReceiveRoles = 32"}</code> |  |
-| <Link id="m-receivesceneindex" /><code>{"ReceiveSceneIndex = 33"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-receiveroles" /><code>{"ReceiveRoles = 32"}</code> |
+| <Link id="m-receivesceneindex" /><code>{"ReceiveSceneIndex = 33"}</code> |

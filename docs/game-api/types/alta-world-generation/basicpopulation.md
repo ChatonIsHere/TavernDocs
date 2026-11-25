@@ -20,16 +20,21 @@ The older, simpler population type: keeps a folder of spawned items up to a cap 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BasicPopulation("}<Link to="/game-api/types/alta-world-generation/ipopulationfolder">{"IPopulationFolder"}</Link>{" folder)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BasicPopulation("}<Link to="/game-api/types/alta-world-generation/ipopulationfolder">{"IPopulationFolder"}</Link>{" folder)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{"> items"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-items" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{"> items"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
@@ -59,7 +64,15 @@ The older, simpler population type: keeps a folder of spawned items up to a cap 
 | <Link id="m-loadtime" /><code>{"void LoadTime(TimeSpan time, int totalPopulation)"}</code> | Restores the saved total and timer, then catches up spawning for the time since the save. |
 | <Link id="m-register" /><code>{"void Register("}<Link to="/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{" item)"}</code> | Adds an item, listens for its removal and raises `PopulationIncreased`. |
 | <Link id="m-replace" /><code>{"void Replace("}<Link to="/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{" basicPopulationItem, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacement)"}</code> | Swaps a member for a new entity, keeping it counted. Used when a population item is replaced, such as a grown plant. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-checkspawn" /><code>{"private void CheckSpawn()"}</code> | Grows the total by the spawn rate for the elapsed time, then spawns members toward it, limited by the emerge rate. |
+
+</details>
 
 ## Used in
 

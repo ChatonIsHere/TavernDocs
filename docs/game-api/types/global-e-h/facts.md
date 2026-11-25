@@ -16,12 +16,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Facts()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Facts()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-facts" /><code>{"string[] facts"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-facts" /><code>{"string[] facts"}</code> |

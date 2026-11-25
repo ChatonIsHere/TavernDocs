@@ -18,7 +18,12 @@ A **static class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getall" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{"> GetAll()"}</code> |  |
-| <Link id="m-listmaterials" /><code>{"private static IEnumerable<string> ListMaterials() (iterator)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-getall" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{"> GetAll()"}</code> |
+| <Link id="m-listmaterials" /><code>{"private static IEnumerable<string> ListMaterials() (iterator)"}</code> |
+
+</details>

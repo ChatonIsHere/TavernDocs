@@ -17,19 +17,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SetEnableOnGameObjects()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SetEnableOnGameObjects()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-objectstoactivate" /><code>{"private List<GameObject> objectsToActivate"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-objectstoactivate" /><code>{"private List<GameObject> objectsToActivate"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+
+</details>

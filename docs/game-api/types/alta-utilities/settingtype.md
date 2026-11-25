@@ -16,14 +16,14 @@ An **enum** in `Root.Township`, `Alta.Utilities`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-assistedmulticommand" /><code>{"AssistedMultiCommand = 5"}</code> |  |
-| <Link id="m-command" /><code>{"Command = 3"}</code> |  |
-| <Link id="m-enumfloat" /><code>{"EnumFloat = 2"}</code> |  |
-| <Link id="m-multicommand" /><code>{"MultiCommand = 4"}</code> |  |
-| <Link id="m-scroll" /><code>{"Scroll = 1"}</code> |  |
-| <Link id="m-toggle" /><code>{"Toggle = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-assistedmulticommand" /><code>{"AssistedMultiCommand = 5"}</code> |
+| <Link id="m-command" /><code>{"Command = 3"}</code> |
+| <Link id="m-enumfloat" /><code>{"EnumFloat = 2"}</code> |
+| <Link id="m-multicommand" /><code>{"MultiCommand = 4"}</code> |
+| <Link id="m-scroll" /><code>{"Scroll = 1"}</code> |
+| <Link id="m-toggle" /><code>{"Toggle = 0"}</code> |
 
 ## Used in
 

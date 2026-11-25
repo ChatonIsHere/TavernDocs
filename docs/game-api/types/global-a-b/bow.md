@@ -18,31 +18,41 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Bow()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Bow()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ispickup" /><code>{"private bool isPickup"}</code> |  |
-| <Link id="m-righthandrest" /><code>{"private Transform rightHandRest"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ispickup" /><code>{"private bool isPickup"}</code> |
+| <Link id="m-righthandrest" /><code>{"private Transform rightHandRest"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ispickup-2" /><code>{"bool IsPickup { get; }"}</code> |  |
-| <Link id="m-lefthandrest" /><code>{"Transform LeftHandRest { get; private set; }"}</code> |  |
-| <Link id="m-pickup" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-righthandrest-2" /><code>{"Transform RightHandRest { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ispickup-2" /><code>{"bool IsPickup { get; }"}</code> |
+| <Link id="m-lefthandrest" /><code>{"Transform LeftHandRest { get; private set; }"}</code> |
+| <Link id="m-pickup" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> |
+| <Link id="m-righthandrest-2" /><code>{"Transform RightHandRest { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>
 
 ## Used in
 

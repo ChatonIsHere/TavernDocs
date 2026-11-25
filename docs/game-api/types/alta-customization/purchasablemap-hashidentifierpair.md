@@ -17,16 +17,16 @@ A **private class** in `Root.Township`, `Alta.Customization`. Reach it through a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HashIdentifierPair()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HashIdentifierPair()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hash" /><code>{"uint hash"}</code> |  |
-| <Link id="m-sku" /><code>{"string sku"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hash" /><code>{"uint hash"}</code> |
+| <Link id="m-sku" /><code>{"string sku"}</code> |
 
 ## Used in
 

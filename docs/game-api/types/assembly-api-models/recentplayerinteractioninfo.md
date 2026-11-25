@@ -16,18 +16,18 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RecentPlayerInteractionInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RecentPlayerInteractionInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-interactiontime" /><code>{"DateTime InteractionTime { get; set; }"}</code> |  |
-| <Link id="m-server" /><code><Link to="/game-api/types/assembly-api-models/gameserverinfominimal">{"GameServerInfoMinimal"}</Link>{" Server { get; set; }"}</code> |  |
-| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/recentplayerinteractiontype">{"RecentPlayerInteractionType"}</Link>{" Type { get; set; }"}</code> |  |
-| <Link id="m-userinfo" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-interactiontime" /><code>{"DateTime InteractionTime { get; set; }"}</code> |
+| <Link id="m-server" /><code><Link to="/game-api/types/assembly-api-models/gameserverinfominimal">{"GameServerInfoMinimal"}</Link>{" Server { get; set; }"}</code> |
+| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/recentplayerinteractiontype">{"RecentPlayerInteractionType"}</Link>{" Type { get; set; }"}</code> |
+| <Link id="m-userinfo" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" { get; set; }"}</code> |
 
 ## Used in
 

@@ -19,16 +19,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CurveOutputSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CurveOutputSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isrunning" /><code>{"bool isRunning"}</code> |  |
-| <Link id="m-progress" /><code>{"float progress"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isrunning" /><code>{"bool isRunning"}</code> |
+| <Link id="m-progress" /><code>{"float progress"}</code> |
 
 ## Used in
 

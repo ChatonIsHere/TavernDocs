@@ -19,32 +19,45 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GlyphInstance()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GlyphInstance()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-details" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{" details"}</code> |  |
-| <Link id="m-image" /><code>{"private Image image"}</code> |  |
-| <Link id="m-iscalibrating" /><code>{"private bool isCalibrating"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-details" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{" details"}</code> |
+| <Link id="m-image" /><code>{"private Image image"}</code> |
+| <Link id="m-iscalibrating" /><code>{"private bool isCalibrating"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-details-2" /><code><Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{" Details { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-details-2" /><code><Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{" Details { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-calculatefromtransform" /><code>{"void CalculateFromTransform()"}</code> |  |
-| <Link id="m-load" /><code>{"bool Load("}<Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{" details)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-calculatefromtransform" /><code>{"void CalculateFromTransform()"}</code> |
+| <Link id="m-load" /><code>{"bool Load("}<Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{" details)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>
 
 ## Used in
 

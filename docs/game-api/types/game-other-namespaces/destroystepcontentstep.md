@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `ATT.MicroTutorial.Steps`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DestroyStepContentStep()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DestroyStepContentStep()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stepstodestroy" /><code>{"private int[] stepsToDestroy"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-stepstodestroy" /><code>{"private int[] stepsToDestroy"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isconfigurationvalid" /><code>{"override IResult IsConfigurationValid()"}</code> |  |
-| <Link id="m-runforinstance" /><code>{"override async Task RunForInstance("}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" stepInstance)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isconfigurationvalid" /><code>{"override IResult IsConfigurationValid()"}</code> |
+| <Link id="m-runforinstance" /><code>{"override async Task RunForInstance("}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" stepInstance)"}</code> |

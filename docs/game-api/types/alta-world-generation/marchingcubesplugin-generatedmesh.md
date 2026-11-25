@@ -17,24 +17,29 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GeneratedMesh(Mesh existing)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"GeneratedMesh(List<Vector3> vertices, int[] indices)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GeneratedMesh(Mesh existing)"}</code> |
+| <Link id="m-ctor-2" /><code>{"GeneratedMesh(List<Vector3> vertices, int[] indices)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-indices" /><code>{"private int[] indices"}</code> |  |
-| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> |  |
-| <Link id="m-vertices" /><code>{"private List<Vector3> vertices"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-indices" /><code>{"private int[] indices"}</code> |
+| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> |
+| <Link id="m-vertices" /><code>{"private List<Vector3> vertices"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getorcreatemesh" /><code>{"Mesh GetOrCreateMesh("}<Link to="/game-api/types/alta-world-generation/cavelayermanager">{"CaveLayerManager"}</Link>{" manager, int layer, out bool wasGenerated)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getorcreatemesh" /><code>{"Mesh GetOrCreateMesh("}<Link to="/game-api/types/alta-world-generation/cavelayermanager">{"CaveLayerManager"}</Link>{" manager, int layer, out bool wasGenerated)"}</code> |
 
 ## Used in
 

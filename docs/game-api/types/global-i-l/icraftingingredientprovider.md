@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-prefabquantities" /><code>{"Dictionary<uint, int> PrefabQuantities { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-prefabquantities" /><code>{"Dictionary<uint, int> PrefabQuantities { get; }"}</code> |

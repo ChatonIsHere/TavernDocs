@@ -18,20 +18,25 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling.NetworkTransportMetric
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkingProfiler()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkingProfiler()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-connectionconfiguration" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionsimulatorconfiguration">{"ConnectionSimulatorConfiguration"}</Link>{" connectionConfiguration"}</code> |  |
-| <Link id="m-isusingsimulatorsettings" /><code>{"private bool isUsingSimulatorSettings"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-connectionconfiguration" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionsimulatorconfiguration">{"ConnectionSimulatorConfiguration"}</Link>{" connectionConfiguration"}</code> |
+| <Link id="m-isusingsimulatorsettings" /><code>{"private bool isUsingSimulatorSettings"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isusingsimulatorsettings-2" /><code>{"bool IsUsingSimulatorSettings { get; set; }"}</code> |  |
-| <Link id="m-simulatorconfiguration" /><code>{"ConnectionSimulatorConfig SimulatorConfiguration { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isusingsimulatorsettings-2" /><code>{"bool IsUsingSimulatorSettings { get; set; }"}</code> |
+| <Link id="m-simulatorconfiguration" /><code>{"ConnectionSimulatorConfig SimulatorConfiguration { get; }"}</code> |

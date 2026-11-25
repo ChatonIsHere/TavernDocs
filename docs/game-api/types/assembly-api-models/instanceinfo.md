@@ -16,20 +16,20 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InstanceInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InstanceInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fleetname" /><code>{"string FleetName { get; set; }"}</code> |  |
-| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> |  |
-| <Link id="m-instancename" /><code>{"string InstanceName { get; set; }"}</code> |  |
-| <Link id="m-podstatus" /><code>{"string PodStatus { get; set; }"}</code> |  |
-| <Link id="m-region" /><code>{"string Region { get; set; }"}</code> |  |
-| <Link id="m-serveridentifier" /><code>{"int? ServerIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fleetname" /><code>{"string FleetName { get; set; }"}</code> |
+| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> |
+| <Link id="m-instancename" /><code>{"string InstanceName { get; set; }"}</code> |
+| <Link id="m-podstatus" /><code>{"string PodStatus { get; set; }"}</code> |
+| <Link id="m-region" /><code>{"string Region { get; set; }"}</code> |
+| <Link id="m-serveridentifier" /><code>{"int? ServerIdentifier { get; set; }"}</code> |
 
 ## Used in
 

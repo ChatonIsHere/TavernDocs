@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, `Alta.Intelligence`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-overlapsphere" /><code>{"OverlapSphere = 2"}</code> |  |
-| <Link id="m-rayglobaldown" /><code>{"RayGlobalDown = 0"}</code> |  |
-| <Link id="m-raylocaldown" /><code>{"RayLocalDown = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-overlapsphere" /><code>{"OverlapSphere = 2"}</code> |
+| <Link id="m-rayglobaldown" /><code>{"RayGlobalDown = 0"}</code> |
+| <Link id="m-raylocaldown" /><code>{"RayLocalDown = 1"}</code> |
 
 ## Used in
 

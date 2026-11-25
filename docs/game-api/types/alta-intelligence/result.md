@@ -18,10 +18,10 @@ One answer to a creature AI logic query: the term bindings that make it true and
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Result(Dictionary<"}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"> bindings, float weighting)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"Result(float weighting = 1)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Result(Dictionary<"}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"> bindings, float weighting)"}</code> |
+| <Link id="m-ctor-2" /><code>{"Result(float weighting = 1)"}</code> |
 
 ## Properties
 

@@ -16,28 +16,38 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"internal PlayerReportAdmin("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" lowLevel, "}<Link to="/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{" report)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"internal PlayerReportAdmin("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" lowLevel, "}<Link to="/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{" report)"}</code> |
+
+</details>
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lowlevel" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" lowLevel"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-lowlevel" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" lowLevel"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-info" /><code><Link to="/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{" Info { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-info" /><code><Link to="/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{" Info { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actedon" /><code>{"async Task ActedOn()"}</code> |  |
-| <Link id="m-ignore" /><code>{"async Task Ignore()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-actedon" /><code>{"async Task ActedOn()"}</code> |
+| <Link id="m-ignore" /><code>{"async Task Ignore()"}</code> |
 
 ## Used in
 

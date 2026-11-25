@@ -17,26 +17,31 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SavingInfoAttribute(string hash, bool isTag = false)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"SavingInfoAttribute(uint hash = 0, bool isTag = false)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SavingInfoAttribute(string hash, bool isTag = false)"}</code> |
+| <Link id="m-ctor-2" /><code>{"SavingInfoAttribute(uint hash = 0, bool isTag = false)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-savinghashes" /><code>{"private static Dictionary<Type, uint> savingHashes"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-savinghashes" /><code>{"private static Dictionary<Type, uint> savingHashes"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> |  |
-| <Link id="m-istag" /><code>{"bool IsTag { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> |
+| <Link id="m-istag" /><code>{"bool IsTag { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gethash" /><code>{"static uint GetHash(Type type)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gethash" /><code>{"static uint GetHash(Type type)"}</code> |

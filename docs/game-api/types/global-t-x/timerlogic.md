@@ -21,20 +21,28 @@ Saved component that runs a timer for a set duration and fires an event when it 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimerLogic()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimerLogic()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activeduration" /><code>{"private float activeDuration"}</code> |  |
-| <Link id="m-activeonload" /><code>{"private bool activeOnLoad"}</code> |  |
 | <Link id="m-activeprogress" /><code>{"protected float activeProgress"}</code> | Timer progress from 0 to 1. |
 | <Link id="m-timeralreadyactive" /><code>{"protected bool timerAlreadyActive"}</code> | True while the timer runs. |
-| <Link id="m-timerover" /><code>{"private UnityEvent timerOver"}</code> |  |
 | <Link id="m-timerresetswhenretriggered" /><code>{"protected bool timerResetsWhenRetriggered"}</code> | Whether starting the timer again resets its progress. |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activeduration" /><code>{"private float activeDuration"}</code> |
+| <Link id="m-activeonload" /><code>{"private bool activeOnLoad"}</code> |
+| <Link id="m-timerover" /><code>{"private UnityEvent timerOver"}</code> |
+
+</details>
 
 ## Events
 

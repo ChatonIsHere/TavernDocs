@@ -20,9 +20,9 @@ The `ServerConfigFile` for `tavern_server.json`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TavernServerConfig(string filePath)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TavernServerConfig(string filePath)"}</code> |
 
 ## Used in
 

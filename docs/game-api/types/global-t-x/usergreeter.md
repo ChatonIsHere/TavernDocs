@@ -17,20 +17,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UserGreeter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UserGreeter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-basegreetings" /><code>{"private string[] baseGreetings"}</code> |  |
-| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-basegreetings" /><code>{"private string[] baseGreetings"}</code> |
+| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loggedin" /><code>{"protected override void LoggedIn()"}</code> |  |
-| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-loggedin" /><code>{"protected override void LoggedIn()"}</code> |
+| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> |

@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedFullEmptyStatTriggerData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SerializedFullEmptyStatTriggerData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-wasfull" /><code>{"bool wasFull"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-wasfull" /><code>{"bool wasFull"}</code> |

@@ -20,23 +20,36 @@ The `ServerConfigFile` for `server_settings.json`. Hashes plain passwords and ma
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerSettingsConfig(string filePath)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerSettingsConfig(string filePath)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sha256hex" /><code>{"private static readonly Regex Sha256Hex"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-sha256hex" /><code>{"private static readonly Regex Sha256Hex"}</code> |
+
+</details>
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-readfromfile" /><code>{"override void ReadFromFile()"}</code> | Reads the file, then makes and saves a random `community_listing_token` if it's empty. |
-| <Link id="m-hash" /><code>{"private static string Hash(string password)"}</code> |  |
 | <Link id="m-tidy" /><code>{"protected override bool Tidy("}<Link to="/tavernlib-api/types/backend-server-configs/serversettings">{"ServerSettings"}</Link>{" settings)"}</code> | Swaps a plain `password` for its hash, or hashes a `password_hash` that isn't a SHA-256 hex string. Returns true when it changed anything. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-hash" /><code>{"private static string Hash(string password)"}</code> |
+
+</details>
 
 ## Used in
 

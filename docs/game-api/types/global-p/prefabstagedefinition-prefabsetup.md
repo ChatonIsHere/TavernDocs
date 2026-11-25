@@ -17,25 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PrefabSetup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PrefabSetup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |  |
-| <Link id="m-localrotation" /><code>{"private Vector3 localRotation"}</code> |  |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |
+| <Link id="m-localrotation" /><code>{"private Vector3 localRotation"}</code> |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-localposition-2" /><code>{"Vector3 LocalPosition { get; }"}</code> |  |
-| <Link id="m-localrotation-2" /><code>{"Vector3 LocalRotation { get; }"}</code> |  |
-| <Link id="m-prefab-2" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Prefab { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-localposition-2" /><code>{"Vector3 LocalPosition { get; }"}</code> |
+| <Link id="m-localrotation-2" /><code>{"Vector3 LocalRotation { get; }"}</code> |
+| <Link id="m-prefab-2" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Prefab { get; }"}</code> |
 
 ## Used in
 

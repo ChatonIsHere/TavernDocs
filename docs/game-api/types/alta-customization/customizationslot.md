@@ -16,35 +16,48 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CustomizationSlot(IEnumerable<"}<Link to="/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> handlers)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CustomizationSlot(IEnumerable<"}<Link to="/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> handlers)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-disablecount" /><code>{"private int disableCount"}</code> |  |
-| <Link id="m-entries" /><code>{"private List<"}<Link to="/game-api/types/alta-customization/customizationslotentry">{"CustomizationSlotEntry"}</Link>{"> entries"}</code> |  |
-| <Link id="m-handlers" /><code>{"private IEnumerable<"}<Link to="/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> handlers"}</code> |  |
-| <Link id="m-isvisibleprimary" /><code>{"private bool isVisiblePrimary"}</code> |  |
-| <Link id="m-visible" /><code>{"private List<"}<Link to="/game-api/types/alta-customization/customizationslotentry">{"CustomizationSlotEntry"}</Link>{"> visible"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-disablecount" /><code>{"private int disableCount"}</code> |
+| <Link id="m-entries" /><code>{"private List<"}<Link to="/game-api/types/alta-customization/customizationslotentry">{"CustomizationSlotEntry"}</Link>{"> entries"}</code> |
+| <Link id="m-handlers" /><code>{"private IEnumerable<"}<Link to="/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> handlers"}</code> |
+| <Link id="m-isvisibleprimary" /><code>{"private bool isVisiblePrimary"}</code> |
+| <Link id="m-visible" /><code>{"private List<"}<Link to="/game-api/types/alta-customization/customizationslotentry">{"CustomizationSlotEntry"}</Link>{"> visible"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdisabled" /><code>{"bool IsDisabled { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isdisabled" /><code>{"bool IsDisabled { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"void Add("}<Link to="/game-api/types/alta-customization/customizationslotentry">{"CustomizationSlotEntry"}</Link>{" entry)"}</code> |  |
-| <Link id="m-disable" /><code>{"void Disable()"}</code> |  |
-| <Link id="m-remove" /><code>{"void Remove("}<Link to="/game-api/types/alta-customization/customizationslotentry">{"CustomizationSlotEntry"}</Link>{" entry)"}</code> |  |
-| <Link id="m-undisable" /><code>{"void Undisable()"}</code> |  |
-| <Link id="m-evaluatenewvisible" /><code>{"private void EvaluateNewVisible("}<Link to="/game-api/types/alta-customization/icustomizationvisual">{"ICustomizationVisual"}</Link>{" oldVisual)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"void Add("}<Link to="/game-api/types/alta-customization/customizationslotentry">{"CustomizationSlotEntry"}</Link>{" entry)"}</code> |
+| <Link id="m-disable" /><code>{"void Disable()"}</code> |
+| <Link id="m-remove" /><code>{"void Remove("}<Link to="/game-api/types/alta-customization/customizationslotentry">{"CustomizationSlotEntry"}</Link>{" entry)"}</code> |
+| <Link id="m-undisable" /><code>{"void Undisable()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-evaluatenewvisible" /><code>{"private void EvaluateNewVisible("}<Link to="/game-api/types/alta-customization/icustomizationvisual">{"ICustomizationVisual"}</Link>{" oldVisual)"}</code> |
+
+</details>
 
 ## Used in
 

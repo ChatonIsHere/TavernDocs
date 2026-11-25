@@ -19,9 +19,9 @@ One imported bone of a skinned rope in the third-party Ultimate Rope asset, with
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RopeBone()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RopeBone()"}</code> |
 
 ## Fields
 

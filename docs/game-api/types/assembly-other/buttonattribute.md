@@ -18,15 +18,15 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ButtonAttribute(string text, string method = null, bool isDelayedCall = true, string validationMethod = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ButtonAttribute(string text, string method = null, bool isDelayedCall = true, string validationMethod = null)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdelayedcall" /><code>{"bool IsDelayedCall { get; private set; }"}</code> |  |
-| <Link id="m-method" /><code>{"string Method { get; private set; }"}</code> |  |
-| <Link id="m-text" /><code>{"string Text { get; private set; }"}</code> |  |
-| <Link id="m-validationmethod" /><code>{"string ValidationMethod { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isdelayedcall" /><code>{"bool IsDelayedCall { get; private set; }"}</code> |
+| <Link id="m-method" /><code>{"string Method { get; private set; }"}</code> |
+| <Link id="m-text" /><code>{"string Text { get; private set; }"}</code> |
+| <Link id="m-validationmethod" /><code>{"string ValidationMethod { get; private set; }"}</code> |

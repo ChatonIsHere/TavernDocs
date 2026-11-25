@@ -20,9 +20,9 @@ Tracks which static (baked) scene objects have been modified, such as buildings 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModifiableStaticManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModifiableStaticManager()"}</code> |
 
 ## Fields
 
@@ -32,8 +32,16 @@ Tracks which static (baked) scene objects have been modified, such as buildings 
 | <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/alta-networking/modifiablestaticmanager">{"ModifiableStaticManager"}</Link>{" instance"}</code> | The one manager in the scene. Extra copies destroy themselves. |
 | <Link id="m-objectmap" /><code>{"static Dictionary<uint, bool> objectMap"}</code> | Modified state by object hash. Saved with the manager and cleared on game reload. |
 | <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |  |
-| <Link id="m-syncmodification" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-networking/modificationarguments">{"ModificationArguments"}</Link>{"> syncModification"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
+| <Link id="m-syncmodification" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-networking/modificationarguments">{"ModificationArguments"}</Link>{"> syncModification"}</code> |
+
+</details>
 
 ## Events
 
@@ -52,8 +60,16 @@ Tracks which static (baked) scene objects have been modified, such as buildings 
 | <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the full sync and the single-change sync. |
 | <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends the full modified map to a joining player. |
 | <Link id="m-setobject" /><code>{"static void SetObject(uint hash, GameObject gameObject)"}</code> | Registers the scene object for a hash. Called by `ModifiableStaticObject`. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-reloadclean" /><code>{"private void ReloadClean()"}</code> |  |
-| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncmodification-2" /><code>{"private void SyncModification("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-networking/modificationarguments">{"ModificationArguments"}</Link>{" args)"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-reloadclean" /><code>{"private void ReloadClean()"}</code> |
+| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-syncmodification-2" /><code>{"private void SyncModification("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-networking/modificationarguments">{"ModificationArguments"}</Link>{" args)"}</code> |
+
+</details>

@@ -17,10 +17,10 @@ A **class** in `Root.Township`, `Alta.Loot`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OriginSingleValue()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"OriginSingleValue("}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{" origin, float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OriginSingleValue()"}</code> |
+| <Link id="m-ctor-2" /><code>{"OriginSingleValue("}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{" origin, float value)"}</code> |
 
 ## Used in
 

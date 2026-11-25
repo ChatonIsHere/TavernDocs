@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GiftResult()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GiftResult()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-iteminfo" /><code><Link to="/game-api/types/assembly-api-models/shopitemidentifier">{"ShopItemIdentifier"}</Link>{" ItemInfo { get; set; }"}</code> |  |
-| <Link id="m-result" /><code><Link to="/game-api/types/assembly-api-models/giftresulttype">{"GiftResultType"}</Link>{" Result { get; set; }"}</code> |  |
-| <Link id="m-transactionidentifier" /><code>{"int? TransactionIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-iteminfo" /><code><Link to="/game-api/types/assembly-api-models/shopitemidentifier">{"ShopItemIdentifier"}</Link>{" ItemInfo { get; set; }"}</code> |
+| <Link id="m-result" /><code><Link to="/game-api/types/assembly-api-models/giftresulttype">{"GiftResultType"}</Link>{" Result { get; set; }"}</code> |
+| <Link id="m-transactionidentifier" /><code>{"int? TransactionIdentifier { get; set; }"}</code> |
 
 ## Used in
 

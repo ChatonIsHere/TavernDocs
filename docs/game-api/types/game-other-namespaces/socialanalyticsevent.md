@@ -18,17 +18,17 @@ A **class** in `Root.Township`, `ATT.Analytics.Social`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SocialAnalyticsEvent(string eventName, "}<Link to="/game-api/types/global-s/socialanalyticseventorigin">{"SocialAnalyticsEventOrigin"}</Link>{" eventOrigin)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SocialAnalyticsEvent(string eventName, "}<Link to="/game-api/types/global-s/socialanalyticseventorigin">{"SocialAnalyticsEventOrigin"}</Link>{" eventOrigin)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-acceptfriend" /><code>{"const string AcceptFriend"}</code> |  |
-| <Link id="m-actionoriginkey" /><code>{"const string ActionOriginKey"}</code> |  |
-| <Link id="m-removefriend" /><code>{"const string RemoveFriend"}</code> |  |
-| <Link id="m-reportplayer" /><code>{"const string ReportPlayer"}</code> |  |
-| <Link id="m-requestfriend" /><code>{"const string RequestFriend"}</code> |  |
-| <Link id="m-unbanplayer" /><code>{"const string UnbanPlayer"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-acceptfriend" /><code>{"const string AcceptFriend"}</code> |
+| <Link id="m-actionoriginkey" /><code>{"const string ActionOriginKey"}</code> |
+| <Link id="m-removefriend" /><code>{"const string RemoveFriend"}</code> |
+| <Link id="m-reportplayer" /><code>{"const string ReportPlayer"}</code> |
+| <Link id="m-requestfriend" /><code>{"const string RequestFriend"}</code> |
+| <Link id="m-unbanplayer" /><code>{"const string UnbanPlayer"}</code> |

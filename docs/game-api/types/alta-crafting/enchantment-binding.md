@@ -17,23 +17,28 @@ A **class** in `Root.Township`, `Alta.Enchantments`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Binding()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Binding()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-effects" /><code>{"private "}<Link to="/game-api/types/alta-crafting/enchantmenteffect">{"EnchantmentEffect"}</Link>{"[] effects"}</code> |  |
-| <Link id="m-triggers" /><code>{"private "}<Link to="/game-api/types/alta-crafting/enchantmenttrigger">{"EnchantmentTrigger"}</Link>{"[] triggers"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-effects" /><code>{"private "}<Link to="/game-api/types/alta-crafting/enchantmenteffect">{"EnchantmentEffect"}</Link>{"[] effects"}</code> |
+| <Link id="m-triggers" /><code>{"private "}<Link to="/game-api/types/alta-crafting/enchantmenttrigger">{"EnchantmentTrigger"}</Link>{"[] triggers"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-effects-2" /><code><Link to="/game-api/types/alta-crafting/enchantmenteffect">{"EnchantmentEffect"}</Link>{"[] Effects { get; }"}</code> |  |
-| <Link id="m-triggers-2" /><code><Link to="/game-api/types/alta-crafting/enchantmenttrigger">{"EnchantmentTrigger"}</Link>{"[] Triggers { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-effects-2" /><code><Link to="/game-api/types/alta-crafting/enchantmenteffect">{"EnchantmentEffect"}</Link>{"[] Effects { get; }"}</code> |
+| <Link id="m-triggers-2" /><code><Link to="/game-api/types/alta-crafting/enchantmenttrigger">{"EnchantmentTrigger"}</Link>{"[] Triggers { get; }"}</code> |
 
 ## Used in
 

@@ -18,23 +18,23 @@ A **struct** in `Root.Township`, `Alta.Networking.Servers`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-level" /><code>{"int level"}</code> |  |
-| <Link id="m-message" /><code>{"string message"}</code> |  |
-| <Link id="m-messagegenerator" /><code>{"Func<string> messageGenerator"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-level" /><code>{"int level"}</code> |
+| <Link id="m-message" /><code>{"string message"}</code> |
+| <Link id="m-messagegenerator" /><code>{"Func<string> messageGenerator"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-message-2" /><code>{"string Message { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-message-2" /><code>{"string Message { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
 
 ## Used in
 

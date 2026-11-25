@@ -18,25 +18,30 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ProjectileComponent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ProjectileComponent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-projectile" /><code>{"private "}<Link to="/game-api/types/global-p/projectile">{"Projectile"}</Link>{" projectile"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-projectile" /><code>{"private "}<Link to="/game-api/types/global-p/projectile">{"Projectile"}</Link>{" projectile"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-projectile-2" /><code><Link to="/game-api/types/global-p/projectile">{"Projectile"}</Link>{" "}<Link to="/game-api/types/global-p/projectile">{"Projectile"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-projectile-2" /><code><Link to="/game-api/types/global-p/projectile">{"Projectile"}</Link>{" "}<Link to="/game-api/types/global-p/projectile">{"Projectile"}</Link>{" { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
-| <Link id="m-projectilecollided" /><code>{"protected abstract void ProjectileCollided("}<Link to="/game-api/types/global-p/projectile">{"Projectile"}</Link>{" projectile)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |
+| <Link id="m-projectilecollided" /><code>{"protected abstract void ProjectileCollided("}<Link to="/game-api/types/global-p/projectile">{"Projectile"}</Link>{" projectile)"}</code> |

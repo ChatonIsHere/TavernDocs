@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.Utilities`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkarguments" /><code>{"void CheckArguments(string[] arguments)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkarguments" /><code>{"void CheckArguments(string[] arguments)"}</code> |

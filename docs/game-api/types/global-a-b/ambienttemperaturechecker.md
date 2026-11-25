@@ -16,37 +16,53 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AmbientTemperatureChecker()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"AmbientTemperatureChecker("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AmbientTemperatureChecker()"}</code> |
+| <Link id="m-ctor-2" /><code>{"AmbientTemperatureChecker("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-standardambienttemperature" /><code>{"static readonly float standardAmbientTemperature"}</code> |  |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-standardambienttemperature" /><code>{"static readonly float standardAmbientTemperature"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ambienttemperature" /><code>{"float AmbientTemperature { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ambienttemperature" /><code>{"float AmbientTemperature { get; private set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onchanged" /><code>{"event Action OnChanged"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onchanged" /><code>{"event Action OnChanged"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isambient" /><code>{"bool IsAmbient(float temperature)"}</code> |  |
-| <Link id="m-updateentity" /><code>{"void UpdateEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newEntity)"}</code> |  |
-| <Link id="m-updatechunk" /><code>{"private void UpdateChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isambient" /><code>{"bool IsAmbient(float temperature)"}</code> |
+| <Link id="m-updateentity" /><code>{"void UpdateEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newEntity)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-updatechunk" /><code>{"private void UpdateChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+
+</details>
 
 ## Used in
 

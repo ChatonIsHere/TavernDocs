@@ -16,21 +16,21 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Comment()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Comment()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-content" /><code>{"string Content { get; set; }"}</code> |  |
-| <Link id="m-date" /><code>{"DateTime Date { get; set; }"}</code> |  |
-| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |  |
-| <Link id="m-ishidden" /><code>{"bool IsHidden { get; set; }"}</code> |  |
-| <Link id="m-issystem" /><code>{"bool IsSystem { get; set; }"}</code> |  |
-| <Link id="m-user" /><code>{"int User { get; set; }"}</code> |  |
-| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-content" /><code>{"string Content { get; set; }"}</code> |
+| <Link id="m-date" /><code>{"DateTime Date { get; set; }"}</code> |
+| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |
+| <Link id="m-ishidden" /><code>{"bool IsHidden { get; set; }"}</code> |
+| <Link id="m-issystem" /><code>{"bool IsSystem { get; set; }"}</code> |
+| <Link id="m-user" /><code>{"int User { get; set; }"}</code> |
+| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> |
 
 ## Used in
 

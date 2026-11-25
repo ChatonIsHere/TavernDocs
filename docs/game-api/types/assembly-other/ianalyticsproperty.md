@@ -17,10 +17,10 @@ An **interface** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-value" /><code>{"object Value { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> |
+| <Link id="m-value" /><code>{"object Value { get; }"}</code> |
 
 ## Used in
 

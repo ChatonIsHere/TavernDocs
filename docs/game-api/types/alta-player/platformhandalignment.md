@@ -16,23 +16,28 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformHandAlignment()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformHandAlignment()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-platform" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" platform"}</code> |  |
-| <Link id="m-transformalignement" /><code>{"private SerializableTransform transformAlignement"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-platform" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" platform"}</code> |
+| <Link id="m-transformalignement" /><code>{"private SerializableTransform transformAlignement"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-platform-2" /><code><Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Platform { get; }"}</code> |  |
-| <Link id="m-transformalignement-2" /><code>{"SerializableTransform TransformAlignement { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-platform-2" /><code><Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Platform { get; }"}</code> |
+| <Link id="m-transformalignement-2" /><code>{"SerializableTransform TransformAlignement { get; }"}</code> |
 
 ## Used in
 

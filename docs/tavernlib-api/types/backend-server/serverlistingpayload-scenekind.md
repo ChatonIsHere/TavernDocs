@@ -20,11 +20,11 @@ Private: which scene the listing reports, Normal, Quest or Tutorial. The launch 
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-normal" /><code>{"Normal = 0"}</code> |  |
-| <Link id="m-quest" /><code>{"Quest = 1"}</code> |  |
-| <Link id="m-tutorial" /><code>{"Tutorial = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-normal" /><code>{"Normal = 0"}</code> |
+| <Link id="m-quest" /><code>{"Quest = 1"}</code> |
+| <Link id="m-tutorial" /><code>{"Tutorial = 2"}</code> |
 
 ## Used in
 

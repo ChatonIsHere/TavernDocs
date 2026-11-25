@@ -17,14 +17,19 @@ A **class** in `Root.Township`, `Alta.Environmental.Atmosphere`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AmbienceArea()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AmbienceArea()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ambiencesetin" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" ambienceSetIn"}</code> |  |
-| <Link id="m-ambiencesetout" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" ambienceSetOut"}</code> |  |
-| <Link id="m-manager" /><code>{"private "}<Link to="/game-api/types/alta-world/atmospheremanager">{"AtmosphereManager"}</Link>{" manager"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ambiencesetin" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" ambienceSetIn"}</code> |
+| <Link id="m-ambiencesetout" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" ambienceSetOut"}</code> |
+| <Link id="m-manager" /><code>{"private "}<Link to="/game-api/types/alta-world/atmospheremanager">{"AtmosphereManager"}</Link>{" manager"}</code> |
+
+</details>

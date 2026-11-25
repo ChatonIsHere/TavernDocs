@@ -19,9 +19,9 @@ Describes one action a player did, reported to `GameTaskManager` to update `Game
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameTaskActionArgument()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameTaskActionArgument()"}</code> |
 
 ## Fields
 

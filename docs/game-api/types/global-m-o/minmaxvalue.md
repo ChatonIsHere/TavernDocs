@@ -16,28 +16,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MinMaxValue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MinMaxValue()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-max" /><code>{"private float max"}</code> |  |
-| <Link id="m-min" /><code>{"private float min"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-max" /><code>{"private float max"}</code> |
+| <Link id="m-min" /><code>{"private float min"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-randomvalue" /><code>{"float RandomValue { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-randomvalue" /><code>{"float RandomValue { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getprogress" /><code>{"float GetProgress(float progress)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getprogress" /><code>{"float GetProgress(float progress)"}</code> |
 
 ## Used in
 

@@ -18,33 +18,43 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LinkedMesh()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LinkedMesh()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-child" /><code>{"private GameObject child"}</code> |  |
-| <Link id="m-isaddingchild" /><code>{"private bool isAddingChild"}</code> |  |
-| <Link id="m-length" /><code>{"private float length"}</code> |  |
-| <Link id="m-oldindex" /><code>{"private int oldIndex"}</code> |  |
-| <Link id="m-prefabindex" /><code>{"private int prefabIndex"}</code> |  |
-| <Link id="m-prefabs" /><code>{"private GameObject[] prefabs"}</code> |  |
-| <Link id="m-previous" /><code>{"private "}<Link to="/game-api/types/global-i-l/linkedmesh">{"LinkedMesh"}</Link>{" previous"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-child" /><code>{"private GameObject child"}</code> |
+| <Link id="m-isaddingchild" /><code>{"private bool isAddingChild"}</code> |
+| <Link id="m-length" /><code>{"private float length"}</code> |
+| <Link id="m-oldindex" /><code>{"private int oldIndex"}</code> |
+| <Link id="m-prefabindex" /><code>{"private int prefabIndex"}</code> |
+| <Link id="m-prefabs" /><code>{"private GameObject[] prefabs"}</code> |
+| <Link id="m-previous" /><code>{"private "}<Link to="/game-api/types/global-i-l/linkedmesh">{"LinkedMesh"}</Link>{" previous"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-length-2" /><code>{"float Length { get; set; }"}</code> |  |
-| <Link id="m-prefabindex-2" /><code>{"int PrefabIndex { get; set; }"}</code> |  |
-| <Link id="m-prefabs-2" /><code>{"GameObject[] Prefabs { get; set; }"}</code> |  |
-| <Link id="m-previous-2" /><code><Link to="/game-api/types/global-i-l/linkedmesh">{"LinkedMesh"}</Link>{" Previous { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-length-2" /><code>{"float Length { get; set; }"}</code> |
+| <Link id="m-prefabindex-2" /><code>{"int PrefabIndex { get; set; }"}</code> |
+| <Link id="m-prefabs-2" /><code>{"GameObject[] Prefabs { get; set; }"}</code> |
+| <Link id="m-previous-2" /><code><Link to="/game-api/types/global-i-l/linkedmesh">{"LinkedMesh"}</Link>{" Previous { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-editorsafedestroy" /><code>{"private void EditorSafeDestroy(GameObject gameObject)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-editorsafedestroy" /><code>{"private void EditorSafeDestroy(GameObject gameObject)"}</code> |
+
+</details>

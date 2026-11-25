@@ -18,18 +18,23 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NameBoardShield()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NameBoardShield()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-parts" /><code>{"private "}<Link to="/game-api/types/alta-player/shieldpartdefinition">{"ShieldPartDefinition"}</Link>{"[] parts"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-parts" /><code>{"private "}<Link to="/game-api/types/alta-player/shieldpartdefinition">{"ShieldPartDefinition"}</Link>{"[] parts"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-parts-2" /><code><Link to="/game-api/types/alta-player/shieldpartdefinition">{"ShieldPartDefinition"}</Link>{"[] Parts { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-parts-2" /><code><Link to="/game-api/types/alta-player/shieldpartdefinition">{"ShieldPartDefinition"}</Link>{"[] Parts { get; }"}</code> |

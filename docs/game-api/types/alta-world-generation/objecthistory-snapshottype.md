@@ -18,12 +18,12 @@ An **private enum** in `Root.Township`, `Alta.Populations`. Reach it through att
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fixedupdate" /><code>{"FixedUpdate = 4"}</code> |  |
-| <Link id="m-lateupdate" /><code>{"LateUpdate = 2"}</code> |  |
-| <Link id="m-networkrigidbody" /><code>{"NetworkRigidbody = 8"}</code> |  |
-| <Link id="m-update" /><code>{"Update = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fixedupdate" /><code>{"FixedUpdate = 4"}</code> |
+| <Link id="m-lateupdate" /><code>{"LateUpdate = 2"}</code> |
+| <Link id="m-networkrigidbody" /><code>{"NetworkRigidbody = 8"}</code> |
+| <Link id="m-update" /><code>{"Update = 1"}</code> |
 
 ## Used in
 

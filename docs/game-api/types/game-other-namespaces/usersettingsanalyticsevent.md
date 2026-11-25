@@ -17,6 +17,6 @@ A **class** in `Root.Township`, `ATT.Analytics`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UserSettingsAnalyticsEvent(string eventName, Dictionary<string, object> eventData)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UserSettingsAnalyticsEvent(string eventName, Dictionary<string, object> eventData)"}</code> |

@@ -21,23 +21,31 @@ Base for a networked object whose mesh vertex colours are driven by values on it
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ColorModel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ColorModel()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-boneweights" /><code>{"private BoneWeight[] boneWeights"}</code> |  |
-| <Link id="m-clonemesh" /><code>{"private Mesh cloneMesh"}</code> |  |
-| <Link id="m-core" /><code>{"private "}<Link to="/game-api/types/global-c-d/colormodelcore-tr-tg-tb-ta">{"ColorModelCore"}</Link>{"<TR, TG, TB, TA> core"}</code> |  |
 | <Link id="m-mesh" /><code>{"protected Mesh mesh"}</code> | The original mesh. A clone with vertex colours replaces it while colours are changed. |
 | <Link id="m-meshfilter" /><code>{"protected MeshFilter meshFilter"}</code> | The mesh filter whose mesh is swapped. |
 | <Link id="m-meshrenderer" /><code>{"protected Renderer meshRenderer"}</code> | The renderer whose material is swapped. |
-| <Link id="m-modifiedmaterial" /><code>{"private Material modifiedMaterial"}</code> |  |
-| <Link id="m-unmodifiedmaterial" /><code>{"private Material unmodifiedMaterial"}</code> |  |
-| <Link id="m-workingcolors" /><code>{"private static List<Color> workingColors"}</code> |  |
+
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-boneweights" /><code>{"private BoneWeight[] boneWeights"}</code> |
+| <Link id="m-clonemesh" /><code>{"private Mesh cloneMesh"}</code> |
+| <Link id="m-core" /><code>{"private "}<Link to="/game-api/types/global-c-d/colormodelcore-tr-tg-tb-ta">{"ColorModelCore"}</Link>{"<TR, TG, TB, TA> core"}</code> |
+| <Link id="m-modifiedmaterial" /><code>{"private Material modifiedMaterial"}</code> |
+| <Link id="m-unmodifiedmaterial" /><code>{"private Material unmodifiedMaterial"}</code> |
+| <Link id="m-workingcolors" /><code>{"private static List<Color> workingColors"}</code> |
+
+</details>
 
 ## Properties
 
@@ -65,5 +73,13 @@ Base for a networked object whose mesh vertex colours are driven by values on it
 | <Link id="m-setmaterials" /><code>{"void SetMaterials(Material unmodified, Material modified)"}</code> | Sets the unmodified and modified materials and applies the right one. |
 | <Link id="m-updatemeshfilter" /><code>{"void UpdateMeshFilter(MeshFilter filter)"}</code> | Switches to a new mesh filter and its mesh, then reapplies colours. |
 | <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Client: sets up the colour core with the mesh, bone weights, points and defaults, and picks the starting material. |
-| <Link id="m-modified" /><code>{"private void Modified("}<Link to="/game-api/types/global-c-d/colormodelcore-tr-tg-tb-ta">{"ColorModelCore"}</Link>{"<TR, TG, TB, TA> core)"}</code> |  |
 | <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> | Cleans up the cloned mesh, if any. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-modified" /><code>{"private void Modified("}<Link to="/game-api/types/global-c-d/colormodelcore-tr-tg-tb-ta">{"ColorModelCore"}</Link>{"<TR, TG, TB, TA> core)"}</code> |
+
+</details>

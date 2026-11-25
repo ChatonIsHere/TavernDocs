@@ -18,17 +18,17 @@ A **class** in `Root.Township`, `Alta.Blacksmithing`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-content" /><code>{"float content"}</code> |  |
-| <Link id="m-index" /><code>{"int index"}</code> |  |
-| <Link id="m-material" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-content" /><code>{"float content"}</code> |
+| <Link id="m-index" /><code>{"int index"}</code> |
+| <Link id="m-material" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material"}</code> |
 
 ## Used in
 

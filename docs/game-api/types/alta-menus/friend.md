@@ -16,16 +16,16 @@ A **struct** in `Root.Township`, `Alta.Meta.Friends`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Friend(ulong userID, string userDisplayName)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Friend(ulong userID, string userDisplayName)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> |  |
-| <Link id="m-id" /><code>{"ulong ID { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> |
+| <Link id="m-id" /><code>{"ulong ID { get; }"}</code> |
 
 ## Used in
 

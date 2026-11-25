@@ -17,20 +17,30 @@ A **class** in `Root.Township`, `Alta.Logging`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CommandLineArgsLogger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CommandLineArgsLogger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-logaltacommandlineargs" /><code>{"private void LogAltaCommandLineArgs()"}</code> |  |
-| <Link id="m-lograwcommandlineargs" /><code>{"private void LogRawCommandLineArgs()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-logaltacommandlineargs" /><code>{"private void LogAltaCommandLineArgs()"}</code> |
+| <Link id="m-lograwcommandlineargs" /><code>{"private void LogRawCommandLineArgs()"}</code> |
+
+</details>

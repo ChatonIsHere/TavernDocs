@@ -19,6 +19,6 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Item()"}</code> |

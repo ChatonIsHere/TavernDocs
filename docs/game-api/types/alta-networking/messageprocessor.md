@@ -16,19 +16,35 @@ A **static class** in `Root.Township`, `Alta.Networking.Internal`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-messagelogger" /><code>{"static Logger MessageLogger"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-messagereader" /><code>{"private static "}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" messageReader"}</code> |  |
-| <Link id="m-receivebuffer" /><code>{"private static readonly uint[] receiveBuffer"}</code> |  |
-| <Link id="m-receivebuffersize" /><code>{"private const int receiveBufferSize"}</code> |  |
-| <Link id="m-size" /><code>{"private static readonly ushort[] size"}</code> |  |
-| <Link id="m-ushortbytesize" /><code>{"private const int UShortByteSize"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-messagelogger" /><code>{"static Logger MessageLogger"}</code> |
+
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-messagereader" /><code>{"private static "}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" messageReader"}</code> |
+| <Link id="m-receivebuffer" /><code>{"private static readonly uint[] receiveBuffer"}</code> |
+| <Link id="m-receivebuffersize" /><code>{"private const int receiveBufferSize"}</code> |
+| <Link id="m-size" /><code>{"private static readonly ushort[] size"}</code> |
+| <Link id="m-ushortbytesize" /><code>{"private const int UShortByteSize"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-processsinglemessagefromdata" /><code>{"static int ProcessSingleMessageFromData("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, ArraySegment<byte> data, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel, out "}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" messageType)"}</code> |  |
-| <Link id="m-handlemessage" /><code>{"private static bool HandleMessage("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" type, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-processsinglemessagefromdata" /><code>{"static int ProcessSingleMessageFromData("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, ArraySegment<byte> data, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel, out "}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" messageType)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-handlemessage" /><code>{"private static bool HandleMessage("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" type, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel)"}</code> |
+
+</details>

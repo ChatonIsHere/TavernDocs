@@ -17,12 +17,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"QuickCreateRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"QuickCreateRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-launchregion" /><code>{"string LaunchRegion { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-launchregion" /><code>{"string LaunchRegion { get; set; }"}</code> |

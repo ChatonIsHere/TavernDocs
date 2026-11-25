@@ -18,23 +18,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformLODController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformLODController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-destroyemptyobjects" /><code>{"private bool destroyEmptyObjects"}</code> |  |
-| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-platformdetails" /><code>{"private "}<Link to="/game-api/types/global-p/platformlodcontroller-platformdetails">{"PlatformLODController.PlatformDetails"}</Link>{"[] platformDetails"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroyemptyobjects" /><code>{"private bool destroyEmptyObjects"}</code> |
+| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-platformdetails" /><code>{"private "}<Link to="/game-api/types/global-p/platformlodcontroller-platformdetails">{"PlatformLODController.PlatformDetails"}</Link>{"[] platformDetails"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> |  |
-| <Link id="m-baketolevel" /><code>{"private void BakeToLevel(LOD[] lods, "}<Link to="/game-api/types/global-p/platformlodcontroller-platformdetails">{"PlatformLODController.PlatformDetails"}</Link>{" level)"}</code> |  |
-| <Link id="m-removerenderers" /><code>{"private void RemoveRenderers(IEnumerable<Renderer> renderers)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-baketolevel" /><code>{"private void BakeToLevel(LOD[] lods, "}<Link to="/game-api/types/global-p/platformlodcontroller-platformdetails">{"PlatformLODController.PlatformDetails"}</Link>{" level)"}</code> |
+| <Link id="m-removerenderers" /><code>{"private void RemoveRenderers(IEnumerable<Renderer> renderers)"}</code> |
+
+</details>

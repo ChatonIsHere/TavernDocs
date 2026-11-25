@@ -20,27 +20,43 @@ Base for a skill that changes how a held tool's skill works while active, for ex
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PickupBasedSkillModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PickupBasedSkillModifier()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-inputstructure" /><code>{"private "}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" inputStructure"}</code> |  |
-| <Link id="m-isexclusive" /><code>{"private bool isExclusive"}</code> |  |
-| <Link id="m-modifiedskill" /><code>{"private "}<Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" modifiedSkill"}</code> |  |
 | <Link id="m-pickupidentifier" /><code>{"protected uint pickupIdentifier"}</code> | Entity identifier of the pickup in the last status message. |
 | <Link id="m-status" /><code>{"protected "}<Link to="/game-api/types/global-t-x/toolbasedskillstatus">{"ToolBasedSkillStatus"}</Link>{" status"}</code> | The status in the last message. |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-inputstructure" /><code>{"private "}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" inputStructure"}</code> |
+| <Link id="m-isexclusive" /><code>{"private bool isExclusive"}</code> |
+| <Link id="m-modifiedskill" /><code>{"private "}<Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" modifiedSkill"}</code> |
+
+</details>
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-modifiedskill-2" /><code><Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" ModifiedSkill { get; }"}</code> | The pickup skill this modifier changes. |
-| <Link id="m-iinputbasedskill-inputstructure" /><code>{"private "}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" IInputBasedSkill.InputStructure { get; }"}</code> |  |
-| <Link id="m-iinputbasedskill-skill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" IInputBasedSkill.Skill { get; }"}</code> |  |
+
+<details>
+<summary>2 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-iinputbasedskill-inputstructure" /><code>{"private "}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" IInputBasedSkill.InputStructure { get; }"}</code> |
+| <Link id="m-iinputbasedskill-skill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" IInputBasedSkill.Skill { get; }"}</code> |
+
+</details>
 
 ## Methods
 

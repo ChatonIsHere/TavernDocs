@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> |

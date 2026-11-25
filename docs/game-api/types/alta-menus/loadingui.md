@@ -17,15 +17,15 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LoadingUI()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LoadingUI()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setactive" /><code>{"void SetActive(bool isActive)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setactive" /><code>{"void SetActive(bool isActive)"}</code> |
 
 ## Used in
 

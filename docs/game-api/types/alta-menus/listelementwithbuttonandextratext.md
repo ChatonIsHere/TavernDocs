@@ -18,18 +18,23 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ListElementWithButtonAndExtraText()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ListElementWithButtonAndExtraText()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-extratext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" extraText"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-extratext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" extraText"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-extratext-2" /><code><Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" ExtraText { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-extratext-2" /><code><Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" ExtraText { get; }"}</code> |

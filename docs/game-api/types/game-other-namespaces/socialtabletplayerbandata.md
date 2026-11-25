@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `ATT.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SocialTabletPlayerBanData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SocialTabletPlayerBanData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bannedby" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" BannedBy"}</code> |  |
-| <Link id="m-bannedplayer" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" BannedPlayer"}</code> |  |
-| <Link id="m-isban" /><code>{"bool IsBan"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bannedby" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" BannedBy"}</code> |
+| <Link id="m-bannedplayer" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" BannedPlayer"}</code> |
+| <Link id="m-isban" /><code>{"bool IsBan"}</code> |
 
 ## Used in
 

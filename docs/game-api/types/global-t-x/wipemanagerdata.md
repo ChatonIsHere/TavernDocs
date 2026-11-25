@@ -19,12 +19,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WipeManagerData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WipeManagerData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunkstowipe" /><code>{"string[] chunksToWipe"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chunkstowipe" /><code>{"string[] chunksToWipe"}</code> |

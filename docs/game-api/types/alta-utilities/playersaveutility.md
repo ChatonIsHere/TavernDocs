@@ -16,22 +16,22 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerSaveUtility("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerSaveUtility("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playerfolder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" PlayerFolder { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-playerfolder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" PlayerFolder { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-exists" /><code>{"bool Exists(int userIdentifier)"}</code> |  |
-| <Link id="m-load" /><code>{"async Task<"}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{"> Load(int userIdentifier)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-exists" /><code>{"bool Exists(int userIdentifier)"}</code> |
+| <Link id="m-load" /><code>{"async Task<"}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{"> Load(int userIdentifier)"}</code> |
 
 ## Used in
 

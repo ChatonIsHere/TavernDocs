@@ -16,13 +16,13 @@ A **class** in `Alta.IO`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerSettingsNames()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerSettingsNames()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-rememberlogindetails" /><code>{"const string RememberLoginDetails"}</code> |  |
-| <Link id="m-savedusername" /><code>{"const string SavedUsername"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-rememberlogindetails" /><code>{"const string RememberLoginDetails"}</code> |
+| <Link id="m-savedusername" /><code>{"const string SavedUsername"}</code> |

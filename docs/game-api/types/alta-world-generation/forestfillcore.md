@@ -21,16 +21,24 @@ Base for a forest fill step that places static environment pieces (trees, rocks)
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ForestFillCore()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ForestFillCore()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-fillset" /><code>{"protected "}<Link to="/game-api/types/alta-world-generation/forestfillset">{"ForestFillSet"}</Link>{" fillSet"}</code> | The `ForestFillSet` with this fill's prefabs and spawn modifiers. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
@@ -49,6 +57,14 @@ Base for a forest fill step that places static environment pieces (trees, rocks)
 | <Link id="m-generateglobal" /><code>{"Task GenerateGlobal("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | Does nothing; returns a completed task. |
 | <Link id="m-generatestatic" /><code>{"virtual async Task GenerateStatic("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world/instructionset">{"InstructionSet"}</Link>{" instructions)"}</code> | Stores the forest and runs `GenerateInternal` for the chunk. |
 | <Link id="m-initialize" /><code>{"void Initialize()"}</code> | Initializes the fill set's spawn modifiers. |
-| <Link id="m-destroy" /><code>{"private void Destroy("}<Link to="/game-api/types/global-i-l/instancedprefab">{"InstancedPrefab"}</Link>{" instance)"}</code> |  |
 | <Link id="m-generateinternal" /><code>{"protected abstract Task GenerateInternal("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world/instructionset">{"InstructionSet"}</Link>{" instructions)"}</code> | Implemented by subclasses to add this fill's instructions for a chunk. |
 | <Link id="m-raycasts" /><code>{"protected virtual IEnumerable Raycasts("}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{"[] raycastRequests, int pointCount, "}<Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{"[] pointNormals) (iterator)"}</code> | Looks up terrain height and normal at each requested point, yielding after each one. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroy" /><code>{"private void Destroy("}<Link to="/game-api/types/global-i-l/instancedprefab">{"InstancedPrefab"}</Link>{" instance)"}</code> |
+
+</details>

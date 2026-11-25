@@ -19,23 +19,28 @@ A **class** in `Root.Township`, `Alta.Loot`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PresetLootSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PresetLootSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entries" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/presetlootset-entry">{"PresetLootSet.Entry"}</Link>{"[] entries"}</code> |  |
-| <Link id="m-temp" /><code>{"private static List<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> temp"}</code> |  |
-| <Link id="m-used" /><code>{"private static List<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> used"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entries" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/presetlootset-entry">{"PresetLootSet.Entry"}</Link>{"[] entries"}</code> |
+| <Link id="m-temp" /><code>{"private static List<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> temp"}</code> |
+| <Link id="m-used" /><code>{"private static List<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> used"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spawn" /><code>{"void Spawn("}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" docks, "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-spawn" /><code>{"void Spawn("}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" docks, "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
 
 ## Used in
 

@@ -19,23 +19,28 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EnumFloatGameSettingsAccess()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EnumFloatGameSettingsAccess()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-possiblevalues" /><code>{"private float[] possibleValues"}</code> |  |
-| <Link id="m-possiblevaluesnames" /><code>{"private string[] possibleValuesNames"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-possiblevalues" /><code>{"private float[] possibleValues"}</code> |
+| <Link id="m-possiblevaluesnames" /><code>{"private string[] possibleValuesNames"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-possiblevalues-2" /><code>{"float[] PossibleValues { get; }"}</code> |  |
-| <Link id="m-possiblevaluesnames-2" /><code>{"string[] PossibleValuesNames { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-possiblevalues-2" /><code>{"float[] PossibleValues { get; }"}</code> |
+| <Link id="m-possiblevaluesnames-2" /><code>{"string[] PossibleValuesNames { get; }"}</code> |
 
 ## Used in
 

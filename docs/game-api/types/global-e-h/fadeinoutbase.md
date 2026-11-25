@@ -20,9 +20,9 @@ Base for objects that fade out using a `_Progress` shader value, or by spawning 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FadeInOutBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FadeInOutBase()"}</code> |
 
 ## Fields
 
@@ -30,12 +30,20 @@ Base for objects that fade out using a `_Progress` shader value, or by spawning 
 | --- | --- |
 | <Link id="m-progress" /><code>{"protected static readonly int _Progress"}</code> | Shader property ID for `_Progress`. |
 | <Link id="m-basematerial" /><code>{"protected Material baseMaterial"}</code> | The material copied for the fade. |
-| <Link id="m-fadeduration" /><code>{"private float fadeDuration"}</code> |  |
 | <Link id="m-fadingcoroutine" /><code>{"protected Coroutine fadingCoroutine"}</code> | The running fade coroutine, or null. |
-| <Link id="m-filters" /><code>{"private List<MeshFilter> filters"}</code> |  |
 | <Link id="m-material" /><code>{"protected Material material"}</code> | The copied material the renderers use. |
 | <Link id="m-meshfaderobject" /><code>{"protected "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" meshFaderObject"}</code> | Pooled effect spawned per mesh by `FadeOut`. |
-| <Link id="m-renderers" /><code>{"private List<Renderer> renderers"}</code> |  |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fadeduration" /><code>{"private float fadeDuration"}</code> |
+| <Link id="m-filters" /><code>{"private List<MeshFilter> filters"}</code> |
+| <Link id="m-renderers" /><code>{"private List<Renderer> renderers"}</code> |
+
+</details>
 
 ## Properties
 

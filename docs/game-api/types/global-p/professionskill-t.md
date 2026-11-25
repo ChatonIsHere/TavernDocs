@@ -21,9 +21,9 @@ Base for a skill that is a single asset, giving static access to it through `Ins
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ProfessionSkill()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ProfessionSkill()"}</code> |
 
 ## Properties
 

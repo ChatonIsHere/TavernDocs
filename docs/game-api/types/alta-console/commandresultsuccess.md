@@ -16,13 +16,13 @@ An **enum** in `Root.Township`, `Alta.Console`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-incorrectparametertypes" /><code>{"IncorrectParameterTypes = 2"}</code> |  |
-| <Link id="m-notenoughparameters" /><code>{"NotEnoughParameters = 0"}</code> |  |
-| <Link id="m-parameterparsingfailure" /><code>{"ParameterParsingFailure = 3"}</code> |  |
-| <Link id="m-success" /><code>{"Success = 4"}</code> |  |
-| <Link id="m-toomanyparameters" /><code>{"TooManyParameters = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-incorrectparametertypes" /><code>{"IncorrectParameterTypes = 2"}</code> |
+| <Link id="m-notenoughparameters" /><code>{"NotEnoughParameters = 0"}</code> |
+| <Link id="m-parameterparsingfailure" /><code>{"ParameterParsingFailure = 3"}</code> |
+| <Link id="m-success" /><code>{"Success = 4"}</code> |
+| <Link id="m-toomanyparameters" /><code>{"TooManyParameters = 1"}</code> |
 
 ## Used in
 

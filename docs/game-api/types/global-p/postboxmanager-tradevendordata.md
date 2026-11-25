@@ -17,29 +17,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TradeVendorData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TradeVendorData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items" /><code>{"private List<"}<Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{"> items"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-items" /><code>{"private List<"}<Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{"> items"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-coincount" /><code>{"int CoinCount { get; private set; }"}</code> |  |
-| <Link id="m-entities" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{"> Entities { get; }"}</code> |  |
-| <Link id="m-itemcount" /><code>{"int ItemCount { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-coincount" /><code>{"int CoinCount { get; private set; }"}</code> |
+| <Link id="m-entities" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{"> Entities { get; }"}</code> |
+| <Link id="m-itemcount" /><code>{"int ItemCount { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addtradevendor" /><code>{"void AddTradeVendor(int coinCount, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" dockedItem)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addtradevendor" /><code>{"void AddTradeVendor(int coinCount, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" dockedItem)"}</code> |
 
 ## Used in
 

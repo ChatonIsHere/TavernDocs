@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JsonRangeFloatValueProvider(IValueProvider baseProvider, float min, float max)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JsonRangeFloatValueProvider(IValueProvider baseProvider, float min, float max)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-max" /><code>{"private float max"}</code> |  |
-| <Link id="m-min" /><code>{"private float min"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-max" /><code>{"private float max"}</code> |
+| <Link id="m-min" /><code>{"private float min"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clamp" /><code>{"override float Clamp(float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clamp" /><code>{"override float Clamp(float value)"}</code> |

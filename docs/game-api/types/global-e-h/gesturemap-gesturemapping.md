@@ -17,23 +17,28 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GestureMapping()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GestureMapping()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dpaddirection" /><code>{"private int dPadDirection"}</code> |  |
-| <Link id="m-gesture" /><code>{"private "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{" gesture"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-dpaddirection" /><code>{"private int dPadDirection"}</code> |
+| <Link id="m-gesture" /><code>{"private "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{" gesture"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dpaddirection-2" /><code>{"int DPadDirection { get; }"}</code> |  |
-| <Link id="m-gesture-2" /><code><Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{" Gesture { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dpaddirection-2" /><code>{"int DPadDirection { get; }"}</code> |
+| <Link id="m-gesture-2" /><code><Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{" Gesture { get; }"}</code> |
 
 ## Used in
 

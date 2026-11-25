@@ -20,25 +20,30 @@ Settings for a digging tool's `DiggingImpactor`: which hits dig and how deep, ho
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DiggingImpactorSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DiggingImpactorSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-basediggingdamage" /><code>{"private float baseDiggingDamage"}</code> |  |
-| <Link id="m-diggingchannels" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] diggingChannels"}</code> |  |
-| <Link id="m-efficiencytodepth" /><code>{"private AnimationCurve efficiencyToDepth"}</code> |  |
-| <Link id="m-efficiencytodurabilitydamage" /><code>{"private AnimationCurve efficiencyToDurabilityDamage"}</code> |  |
-| <Link id="m-efficiencytopull" /><code>{"private AnimationCurve efficiencyToPull"}</code> |  |
-| <Link id="m-efficiencytoradius" /><code>{"private AnimationCurve efficiencyToRadius"}</code> |  |
-| <Link id="m-efficiencytotorque" /><code>{"private AnimationCurve efficiencyToTorque"}</code> |  |
-| <Link id="m-mineffectiveness" /><code>{"private float minEffectiveness"}</code> |  |
-| <Link id="m-ondigeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onDigEffect"}</code> |  |
-| <Link id="m-onembbedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onEmbbedEffect"}</code> |  |
-| <Link id="m-targetlayers" /><code>{"private LayerMask targetLayers"}</code> |  |
+<details>
+<summary>11 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-basediggingdamage" /><code>{"private float baseDiggingDamage"}</code> |
+| <Link id="m-diggingchannels" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] diggingChannels"}</code> |
+| <Link id="m-efficiencytodepth" /><code>{"private AnimationCurve efficiencyToDepth"}</code> |
+| <Link id="m-efficiencytodurabilitydamage" /><code>{"private AnimationCurve efficiencyToDurabilityDamage"}</code> |
+| <Link id="m-efficiencytopull" /><code>{"private AnimationCurve efficiencyToPull"}</code> |
+| <Link id="m-efficiencytoradius" /><code>{"private AnimationCurve efficiencyToRadius"}</code> |
+| <Link id="m-efficiencytotorque" /><code>{"private AnimationCurve efficiencyToTorque"}</code> |
+| <Link id="m-mineffectiveness" /><code>{"private float minEffectiveness"}</code> |
+| <Link id="m-ondigeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onDigEffect"}</code> |
+| <Link id="m-onembbedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onEmbbedEffect"}</code> |
+| <Link id="m-targetlayers" /><code>{"private LayerMask targetLayers"}</code> |
+
+</details>
 
 ## Properties
 

@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RendererGhost()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RendererGhost()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targetfilter" /><code>{"private MeshFilter targetFilter"}</code> |  |
-| <Link id="m-targetrenderer" /><code>{"private MeshRenderer targetRenderer"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-targetfilter" /><code>{"private MeshFilter targetFilter"}</code> |
+| <Link id="m-targetrenderer" /><code>{"private MeshRenderer targetRenderer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"void Setup(MeshRenderer renderer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"void Setup(MeshRenderer renderer)"}</code> |

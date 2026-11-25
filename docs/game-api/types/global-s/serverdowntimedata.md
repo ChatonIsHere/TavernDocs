@@ -16,20 +16,20 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerDowntimeData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerDowntimeData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-day" /><code>{"int day"}</code> |  |
-| <Link id="m-hour" /><code>{"int hour"}</code> |  |
-| <Link id="m-minute" /><code>{"int minute"}</code> |  |
-| <Link id="m-month" /><code>{"int month"}</code> |  |
-| <Link id="m-second" /><code>{"int second"}</code> |  |
-| <Link id="m-year" /><code>{"int year"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-day" /><code>{"int day"}</code> |
+| <Link id="m-hour" /><code>{"int hour"}</code> |
+| <Link id="m-minute" /><code>{"int minute"}</code> |
+| <Link id="m-month" /><code>{"int month"}</code> |
+| <Link id="m-second" /><code>{"int second"}</code> |
+| <Link id="m-year" /><code>{"int year"}</code> |
 
 ## Used in
 

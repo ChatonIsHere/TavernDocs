@@ -17,19 +17,19 @@ A **private struct** in `Root.Township`, `Alta.QuickAccessActions`. Reach it thr
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnedItemInfo(int actionItemIndex, Vector3 position, bool isSpawn, uint spawnedIdentifier, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" owner)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpawnedItemInfo(int actionItemIndex, Vector3 position, bool isSpawn, uint spawnedIdentifier, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" owner)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actionitemindex" /><code>{"int actionItemIndex"}</code> |  |
-| <Link id="m-isspawn" /><code>{"bool isSpawn"}</code> |  |
-| <Link id="m-owner" /><code>{"int owner"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-spawnedidentifier" /><code>{"uint spawnedIdentifier"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-actionitemindex" /><code>{"int actionItemIndex"}</code> |
+| <Link id="m-isspawn" /><code>{"bool isSpawn"}</code> |
+| <Link id="m-owner" /><code>{"int owner"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| <Link id="m-spawnedidentifier" /><code>{"uint spawnedIdentifier"}</code> |
 
 ## Used in
 

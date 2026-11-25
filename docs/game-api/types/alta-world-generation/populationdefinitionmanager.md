@@ -21,27 +21,40 @@ Saved per-definition overrides of the respawn time.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationDefinitionManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationDefinitionManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentvalues" /><code>{"private static Dictionary<uint, float> currentValues"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentvalues" /><code>{"private static Dictionary<uint, float> currentValues"}</code> |
+
+</details>
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-valuedupdated" /><code>{"static event Action<"}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{"> ValuedUpdated"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-valuedupdated" /><code>{"static event Action<"}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{"> ValuedUpdated"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getvalue" /><code>{"static float GetValue("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition)"}</code> |  |
-| <Link id="m-resetvalue" /><code>{"static float ResetValue("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition)"}</code> |  |
-| <Link id="m-setvalue" /><code>{"static void SetValue("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition, float value)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getvalue" /><code>{"static float GetValue("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition)"}</code> |
+| <Link id="m-resetvalue" /><code>{"static float ResetValue("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition)"}</code> |
+| <Link id="m-setvalue" /><code>{"static void SetValue("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition, float value)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>

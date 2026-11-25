@@ -16,38 +16,43 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShakeDetectorHelper(float velocityThresholdSquared, float threshold, float fadePerSecond, float jumpPerChange, Rigidbody targetRigidBody)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShakeDetectorHelper(float velocityThresholdSquared, float threshold, float fadePerSecond, float jumpPerChange, Rigidbody targetRigidBody)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fadepersecond" /><code>{"private float fadePerSecond"}</code> |  |
-| <Link id="m-jumpperchange" /><code>{"private float jumpPerChange"}</code> |  |
-| <Link id="m-olddirection" /><code>{"private Vector3 oldDirection"}</code> |  |
-| <Link id="m-targetrigidbody" /><code>{"private Rigidbody targetRigidBody"}</code> |  |
-| <Link id="m-threshold" /><code>{"private float threshold"}</code> |  |
-| <Link id="m-velocitythresholdsquared" /><code>{"private float velocityThresholdSquared"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fadepersecond" /><code>{"private float fadePerSecond"}</code> |
+| <Link id="m-jumpperchange" /><code>{"private float jumpPerChange"}</code> |
+| <Link id="m-olddirection" /><code>{"private Vector3 oldDirection"}</code> |
+| <Link id="m-targetrigidbody" /><code>{"private Rigidbody targetRigidBody"}</code> |
+| <Link id="m-threshold" /><code>{"private float threshold"}</code> |
+| <Link id="m-velocitythresholdsquared" /><code>{"private float velocityThresholdSquared"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-strength" /><code>{"float Strength { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-strength" /><code>{"float Strength { get; private set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-shaken" /><code>{"event Action Shaken"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-shaken" /><code>{"event Action Shaken"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-calculateshake" /><code>{"void CalculateShake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-calculateshake" /><code>{"void CalculateShake()"}</code> |
 
 ## Used in
 

@@ -17,14 +17,14 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EquipmentPickup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EquipmentPickup()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handleplacementresult" /><code>{"override void HandlePlacementResult(bool wasAdded)"}</code> |  |
-| <Link id="m-spawn" /><code>{"override "}<Link to="/game-api/types/alta-customization/customizationpickup">{"CustomizationPickup"}</Link>{" Spawn("}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" item, "}<Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments, Transform parent)"}</code> |  |
-| <Link id="m-destroypickup" /><code>{"protected override void DestroyPickup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-handleplacementresult" /><code>{"override void HandlePlacementResult(bool wasAdded)"}</code> |
+| <Link id="m-spawn" /><code>{"override "}<Link to="/game-api/types/alta-customization/customizationpickup">{"CustomizationPickup"}</Link>{" Spawn("}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" item, "}<Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments, Transform parent)"}</code> |
+| <Link id="m-destroypickup" /><code>{"protected override void DestroyPickup()"}</code> |

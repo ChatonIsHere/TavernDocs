@@ -17,19 +17,24 @@ A **struct** in `Root.Township`, `Alta.Carpentry`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-builderx" /><code>{"private float builderX"}</code> |  |
-| <Link id="m-size" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" size"}</code> |  |
-| <Link id="m-spawnpoint" /><code>{"private Transform spawnPoint"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-builderx" /><code>{"private float builderX"}</code> |
+| <Link id="m-size" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" size"}</code> |
+| <Link id="m-spawnpoint" /><code>{"private Transform spawnPoint"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-builderx-2" /><code>{"float BuilderX { get; }"}</code> |  |
-| <Link id="m-size-2" /><code><Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" Size { get; }"}</code> |  |
-| <Link id="m-spawnpoint-2" /><code>{"Transform SpawnPoint { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-builderx-2" /><code>{"float BuilderX { get; }"}</code> |
+| <Link id="m-size-2" /><code><Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" Size { get; }"}</code> |
+| <Link id="m-spawnpoint-2" /><code>{"Transform SpawnPoint { get; }"}</code> |
 
 ## Used in
 

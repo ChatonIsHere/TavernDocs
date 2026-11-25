@@ -18,15 +18,20 @@ A waterfall in river generation, from a top river node to a bottom one, with the
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Waterfall()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Waterfall()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-paths" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{"> paths"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-paths" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{"> paths"}</code> |
+
+</details>
 
 ## Properties
 

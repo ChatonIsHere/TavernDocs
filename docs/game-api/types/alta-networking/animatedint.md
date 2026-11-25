@@ -17,24 +17,29 @@ A **class** in `Root.Township`, `Alta.Networking.Animation`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimatedInt(string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimatedInt(string name)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maximum" /><code>{"private int maximum"}</code> |  |
-| <Link id="m-minimum" /><code>{"private int minimum"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maximum" /><code>{"private int maximum"}</code> |
+| <Link id="m-minimum" /><code>{"private int minimum"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize("}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator, int index)"}</code> |  |
-| <Link id="m-serialize" /><code>{"protected override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-update" /><code>{"protected override void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize("}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator, int index)"}</code> |
+| <Link id="m-serialize" /><code>{"protected override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-update" /><code>{"protected override void Update()"}</code> |
 
 ## Used in
 

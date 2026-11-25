@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Alta.Logging.Targets`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MainMenuTarget()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MainMenuTarget()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-write" /><code>{"protected override void Write(LogEventInfo logEvent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-write" /><code>{"protected override void Write(LogEventInfo logEvent)"}</code> |

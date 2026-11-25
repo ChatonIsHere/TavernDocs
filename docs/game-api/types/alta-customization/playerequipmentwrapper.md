@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerEquipmentWrapper("}<Link to="/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" manager)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerEquipmentWrapper("}<Link to="/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" manager)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getitem" /><code>{"override async Task<"}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{"> GetItem(uint hash)"}</code> |  |
-| <Link id="m-onitemadded" /><code>{"protected override void OnItemAdded(uint itemDefinition)"}</code> |  |
-| <Link id="m-onitemremoved" /><code>{"protected override void OnItemRemoved(uint itemDefinition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getitem" /><code>{"override async Task<"}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{"> GetItem(uint hash)"}</code> |
+| <Link id="m-onitemadded" /><code>{"protected override void OnItemAdded(uint itemDefinition)"}</code> |
+| <Link id="m-onitemremoved" /><code>{"protected override void OnItemRemoved(uint itemDefinition)"}</code> |
 
 ## Used in
 

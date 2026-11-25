@@ -19,23 +19,28 @@ A spot on a player's body where heat (smoke, burn) and stat effect particles are
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EffectPosition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EffectPosition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cullburneffect" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" cullBurnEffect"}</code> |  |
-| <Link id="m-cullsmokeeffect" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" cullSmokeEffect"}</code> |  |
-| <Link id="m-cullstateffects" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" cullStatEffects"}</code> |  |
-| <Link id="m-parent" /><code>{"private Transform parent"}</code> |  |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |  |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |  |
-| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |  |
-| <Link id="m-size" /><code>{"private float size"}</code> |  |
-| <Link id="m-targetpoint" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" targetPoint"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cullburneffect" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" cullBurnEffect"}</code> |
+| <Link id="m-cullsmokeeffect" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" cullSmokeEffect"}</code> |
+| <Link id="m-cullstateffects" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" cullStatEffects"}</code> |
+| <Link id="m-parent" /><code>{"private Transform parent"}</code> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+| <Link id="m-radius" /><code>{"private float radius"}</code> |
+| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |
+| <Link id="m-size" /><code>{"private float size"}</code> |
+| <Link id="m-targetpoint" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" targetPoint"}</code> |
+
+</details>
 
 ## Properties
 

@@ -20,16 +20,21 @@ A logic input that listens to one logic sender's value (for wired logic like lev
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SenderInput()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SenderInput()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-a" /><code>{"private TSender a"}</code> |  |
-| <Link id="m-b" /><code>{"private uint b"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-a" /><code>{"private TSender a"}</code> |
+| <Link id="m-b" /><code>{"private uint b"}</code> |
+
+</details>
 
 ## Properties
 
@@ -52,4 +57,12 @@ A logic input that listens to one logic sender's value (for wired logic like lev
 | <Link id="m-drawgizmos" /><code>{"override void DrawGizmos(Component receiver)"}</code> | Does nothing here. |
 | <Link id="m-load" /><code>{"void Load("}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" manager, TData data)"}</code> | Links to sender data directly, if that data has a logic identifier. |
 | <Link id="m-subscribe" /><code>{"override void Subscribe(Action listener, bool isCalling = true)"}</code> | Adds a listener for value changes and calls it straight away if already linked, unless told not to. |
-| <Link id="m-onvalueupdated" /><code>{"private void OnValueUpdated()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalueupdated" /><code>{"private void OnValueUpdated()"}</code> |
+
+</details>

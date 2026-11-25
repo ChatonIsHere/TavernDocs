@@ -21,23 +21,28 @@ A hashed asset holding a three-colour set for cosmetics, written into material c
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticColor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CosmeticColor()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-color0" /><code>{"private Color color0"}</code> |  |
-| <Link id="m-color1" /><code>{"private Color color1"}</code> |  |
-| <Link id="m-color2" /><code>{"private Color color2"}</code> |  |
-| <Link id="m-colora1" /><code>{"private static readonly int ColorA1"}</code> |  |
-| <Link id="m-colora2" /><code>{"private static readonly int ColorA2"}</code> |  |
-| <Link id="m-colora3" /><code>{"private static readonly int ColorA3"}</code> |  |
-| <Link id="m-colorb1" /><code>{"private static readonly int ColorB1"}</code> |  |
-| <Link id="m-colorb2" /><code>{"private static readonly int ColorB2"}</code> |  |
-| <Link id="m-colorb3" /><code>{"private static readonly int ColorB3"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-color0" /><code>{"private Color color0"}</code> |
+| <Link id="m-color1" /><code>{"private Color color1"}</code> |
+| <Link id="m-color2" /><code>{"private Color color2"}</code> |
+| <Link id="m-colora1" /><code>{"private static readonly int ColorA1"}</code> |
+| <Link id="m-colora2" /><code>{"private static readonly int ColorA2"}</code> |
+| <Link id="m-colora3" /><code>{"private static readonly int ColorA3"}</code> |
+| <Link id="m-colorb1" /><code>{"private static readonly int ColorB1"}</code> |
+| <Link id="m-colorb2" /><code>{"private static readonly int ColorB2"}</code> |
+| <Link id="m-colorb3" /><code>{"private static readonly int ColorB3"}</code> |
+
+</details>
 
 ## Properties
 
@@ -54,8 +59,16 @@ A hashed asset holding a three-colour set for cosmetics, written into material c
 | <Link id="m-applya" /><code>{"void ApplyA(Material material)"}</code> | Writes the three colours to the material's `_ColorA1` to `_ColorA3` properties. |
 | <Link id="m-applyb" /><code>{"void ApplyB(Material material)"}</code> | Writes the three colours to the material's `_ColorB1` to `_ColorB3` properties. |
 | <Link id="m-togradient" /><code>{"Gradient ToGradient()"}</code> | Builds a fully opaque gradient from the three colours, using each colour's alpha as its key position. |
-| <Link id="m-copycolors" /><code>{"private void CopyColors()"}</code> |  |
-| <Link id="m-resetalphas" /><code>{"private void ResetAlphas()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-copycolors" /><code>{"private void CopyColors()"}</code> |
+| <Link id="m-resetalphas" /><code>{"private void ResetAlphas()"}</code> |
+
+</details>
 
 ## Used in
 

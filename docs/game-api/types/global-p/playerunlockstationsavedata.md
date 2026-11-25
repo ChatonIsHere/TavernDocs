@@ -19,14 +19,14 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerUnlockStationSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerUnlockStationSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-climbingunlock" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" climbingUnlock"}</code> |  |
-| <Link id="m-orbindex" /><code>{"int orbIndex"}</code> |  |
-| <Link id="m-unlockstationindex" /><code>{"uint unlockStationIndex"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-climbingunlock" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" climbingUnlock"}</code> |
+| <Link id="m-orbindex" /><code>{"int orbIndex"}</code> |
+| <Link id="m-unlockstationindex" /><code>{"uint unlockStationIndex"}</code> |

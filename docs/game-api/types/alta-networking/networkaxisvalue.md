@@ -20,9 +20,9 @@ Base for a networked value along one axis (a slider, lever or hinge position). T
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected NetworkAxisValue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected NetworkAxisValue()"}</code> |
 
 ## Fields
 
@@ -30,29 +30,45 @@ Base for a networked value along one axis (a slider, lever or hinge position). T
 | --- | --- |
 | <Link id="m-prepareforwritetimer" /><code>{"static "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" prepareForWriteTimer"}</code> | Shared timing stats for preparing these values. |
 | <Link id="m-serializetimer" /><code>{"static "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" serializeTimer"}</code> | Shared timing stats for serializing these values. |
-| <Link id="m-fixedupdate" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" fixedUpdate"}</code> |  |
-| <Link id="m-fixedupdatelerptime" /><code>{"private float fixedUpdateLerpTime"}</code> |  |
-| <Link id="m-hassynced" /><code>{"private bool hasSynced"}</code> |  |
-| <Link id="m-isalwayssnapping" /><code>{"private bool isAlwaysSnapping"}</code> |  |
-| <Link id="m-issnapping" /><code>{"private bool isSnapping"}</code> |  |
-| <Link id="m-localaxis" /><code>{"private Vector3 localAxis"}</code> |  |
-| <Link id="m-precision" /><code>{"private float precision"}</code> |  |
-| <Link id="m-snapthreshold" /><code>{"private float snapThreshold"}</code> |  |
 | <Link id="m-targettransform" /><code>{"protected Transform TargetTransform"}</code> | The transform the value moves. |
-| <Link id="m-value" /><code>{"private float value"}</code> |  |
-| <Link id="m-valuethreshold" /><code>{"private float valueThreshold"}</code> |  |
+
+<details>
+<summary>10 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fixedupdate" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" fixedUpdate"}</code> |
+| <Link id="m-fixedupdatelerptime" /><code>{"private float fixedUpdateLerpTime"}</code> |
+| <Link id="m-hassynced" /><code>{"private bool hasSynced"}</code> |
+| <Link id="m-isalwayssnapping" /><code>{"private bool isAlwaysSnapping"}</code> |
+| <Link id="m-issnapping" /><code>{"private bool isSnapping"}</code> |
+| <Link id="m-localaxis" /><code>{"private Vector3 localAxis"}</code> |
+| <Link id="m-precision" /><code>{"private float precision"}</code> |
+| <Link id="m-snapthreshold" /><code>{"private float snapThreshold"}</code> |
+| <Link id="m-value" /><code>{"private float value"}</code> |
+| <Link id="m-valuethreshold" /><code>{"private float valueThreshold"}</code> |
+
+</details>
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> |  |
-| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> |  |
-| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> |  |
 | <Link id="m-currentvalue" /><code>{"protected abstract float CurrentValue { get; }"}</code> | Subclass: the value as it is now on this side. |
 | <Link id="m-localaxis-2" /><code>{"protected Vector3 LocalAxis { get; }"}</code> | Local axis the value runs along. |
 | <Link id="m-maximumvalue" /><code>{"protected abstract float MaximumValue { get; }"}</code> | Subclass: highest value, for compression. |
 | <Link id="m-minimumvalue" /><code>{"protected abstract float MinimumValue { get; }"}</code> | Subclass: lowest value, for compression. |
+
+<details>
+<summary>3 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> |
+| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> |
+| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> |
+
+</details>
 
 ## Methods
 
@@ -65,8 +81,16 @@ Base for a networked value along one axis (a slider, lever or hinge position). T
 | <Link id="m-setpositionlerp" /><code>{"void SetPositionLerp(float lerp)"}</code> | Server: sets the value as a 0 to 1 fraction of its range. |
 | <Link id="m-applyvalue" /><code>{"protected abstract void ApplyValue(float value)"}</code> | Subclass: sets the transform to a value. |
 | <Link id="m-getdifference" /><code>{"protected abstract float GetDifference(float currentValue, float value)"}</code> | Subclass: gap between two values. |
-| <Link id="m-handleremote" /><code>{"private void HandleRemote()"}</code> |  |
 | <Link id="m-lerptovalue" /><code>{"protected abstract float LerpToValue(float value, float lerpValue)"}</code> | Subclass: one smoothing step toward a value. |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-snap" /><code>{"private void Snap()"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-handleremote" /><code>{"private void HandleRemote()"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-snap" /><code>{"private void Snap()"}</code> |
+
+</details>

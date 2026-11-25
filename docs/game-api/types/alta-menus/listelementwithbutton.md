@@ -20,17 +20,22 @@ A text list entry with a button. Pressing the button selects it.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ListElementWithButton()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ListElementWithButton()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-button" /><code>{"private "}<Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" button"}</code> |  |
-| <Link id="m-deselected" /><code>{"private UnityEvent deselected"}</code> |  |
-| <Link id="m-selected" /><code>{"private UnityEvent selected"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-button" /><code>{"private "}<Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" button"}</code> |
+| <Link id="m-deselected" /><code>{"private UnityEvent deselected"}</code> |
+| <Link id="m-selected" /><code>{"private UnityEvent selected"}</code> |
+
+</details>
 
 ## Properties
 
@@ -51,8 +56,16 @@ A text list entry with a button. Pressing the button selects it.
 | --- | --- |
 | <Link id="m-deselect" /><code>{"void Deselect()"}</code> | Raises `Deselected` and the deselected Unity event. |
 | <Link id="m-select" /><code>{"void Select()"}</code> | Raises `Selected` and the selected Unity event. |
-| <Link id="m-onpressed" /><code>{"private void OnPressed("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" button)"}</code> |  |
 | <Link id="m-start" /><code>{"protected virtual void Start()"}</code> | Hooks the button press to `Select`. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onpressed" /><code>{"private void OnPressed("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" button)"}</code> |
+
+</details>
 
 ## Used in
 

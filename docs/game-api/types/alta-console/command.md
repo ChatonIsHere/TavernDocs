@@ -20,17 +20,22 @@ One console command built from a method with a `CommandAttribute`. Matches typed
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Command(MethodInfo method, "}<Link to="/game-api/types/alta-console/module">{"Module"}</Link>{" parent, "}<Link to="/game-api/types/alta-console/commandattribute">{"CommandAttribute"}</Link>{" attribute)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Command(MethodInfo method, "}<Link to="/game-api/types/alta-console/module">{"Module"}</Link>{" parent, "}<Link to="/game-api/types/alta-console/commandattribute">{"CommandAttribute"}</Link>{" attribute)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-method" /><code>{"private MethodInfo method"}</code> |  |
-| <Link id="m-voidtaskresult" /><code>{"private static readonly Type VoidTaskResult"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-method" /><code>{"private MethodInfo method"}</code> |
+| <Link id="m-voidtaskresult" /><code>{"private static readonly Type VoidTaskResult"}</code> |
+
+</details>
 
 ## Properties
 
@@ -49,11 +54,19 @@ One console command built from a method with a `CommandAttribute`. Matches typed
 | Member | What it is |
 | --- | --- |
 | <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Full command path followed by its parameters. |
-| <Link id="m-areparametersviable" /><code>{"private "}<Link to="/game-api/types/alta-console/commandsearchresult">{"CommandSearchResult"}</Link>{" AreParametersViable(string[] lower, string[] cased, int index)"}</code> |  |
-| <Link id="m-attemptconvertarguments" /><code>{"private bool AttemptConvertArguments(int matchedCount, string[] argumentParts, int index, object[] convertedArguments)"}</code> |  |
 | <Link id="m-getcommandpartinternal" /><code>{"protected override IEnumerable<"}<Link to="/game-api/types/alta-console/commandpart">{"CommandPart"}</Link>{"> GetCommandPartInternal(string[] lower, string[] cased, int index, "}<Link to="/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context) (iterator)"}</code> | Returns this command if the words end at its name. |
 | <Link id="m-getcommandsinternal" /><code>{"protected override IEnumerable<"}<Link to="/game-api/types/alta-console/commandsearchresult">{"CommandSearchResult"}</Link>{"> GetCommandsInternal(string[] lower, string[] cased, int index, "}<Link to="/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context) (iterator)"}</code> | Tries to match the words after the command name to its parameters and returns the result. |
-| <Link id="m-invoke" /><code>{"private async Task<"}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{"> Invoke("}<Link to="/game-api/types/alta-console/progressivehandler">{"ProgressiveHandler"}</Link>{" progressivehandler, object[] args)"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-areparametersviable" /><code>{"private "}<Link to="/game-api/types/alta-console/commandsearchresult">{"CommandSearchResult"}</Link>{" AreParametersViable(string[] lower, string[] cased, int index)"}</code> |
+| <Link id="m-attemptconvertarguments" /><code>{"private bool AttemptConvertArguments(int matchedCount, string[] argumentParts, int index, object[] convertedArguments)"}</code> |
+| <Link id="m-invoke" /><code>{"private async Task<"}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{"> Invoke("}<Link to="/game-api/types/alta-console/progressivehandler">{"ProgressiveHandler"}</Link>{" progressivehandler, object[] args)"}</code> |
+
+</details>
 
 ## Used in
 

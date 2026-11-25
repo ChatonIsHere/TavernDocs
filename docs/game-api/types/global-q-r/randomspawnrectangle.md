@@ -18,24 +18,37 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RandomSpawnRectangle()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RandomSpawnRectangle()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distribution" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> |  |
-| <Link id="m-maximum" /><code>{"private int maximum"}</code> |  |
-| <Link id="m-minimum" /><code>{"private int minimum"}</code> |  |
-| <Link id="m-minimumup" /><code>{"private float minimumUp"}</code> |  |
-| <Link id="m-size" /><code>{"private Vector3 size"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-distribution" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> |
+| <Link id="m-maximum" /><code>{"private int maximum"}</code> |
+| <Link id="m-minimum" /><code>{"private int minimum"}</code> |
+| <Link id="m-minimumup" /><code>{"private float minimumUp"}</code> |
+| <Link id="m-size" /><code>{"private Vector3 size"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
-| <Link id="m-spawnitems" /><code>{"private void SpawnItems("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+| <Link id="m-spawnitems" /><code>{"private void SpawnItems("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+
+</details>

@@ -21,24 +21,37 @@ On entities with several detectors.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactDetectorCentral()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactDetectorCentral()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-availabledetectors" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{"[] availableDetectors"}</code> |  |
-| <Link id="m-syncimpact" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-items/impactdetectorcentral-centralizedarguments">{"ImpactDetectorCentral.CentralizedArguments"}</Link>{"> syncImpact"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-availabledetectors" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{"[] availableDetectors"}</code> |
+| <Link id="m-syncimpact" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-items/impactdetectorcentral-centralizedarguments">{"ImpactDetectorCentral.CentralizedArguments"}</Link>{"> syncImpact"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-sendarguments" /><code>{"void SendArguments("}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector, "}<Link to="/game-api/types/alta-items/impactdetector-impactsyncarguments">{"ImpactDetector.ImpactSyncArguments"}</Link>{" arguments)"}</code> |  |
-| <Link id="m-syncimpact-2" /><code>{"private void SyncImpact("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-items/impactdetectorcentral-centralizedarguments">{"ImpactDetectorCentral.CentralizedArguments"}</Link>{" arguments)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+| <Link id="m-sendarguments" /><code>{"void SendArguments("}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector, "}<Link to="/game-api/types/alta-items/impactdetector-impactsyncarguments">{"ImpactDetector.ImpactSyncArguments"}</Link>{" arguments)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-syncimpact-2" /><code>{"private void SyncImpact("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-items/impactdetectorcentral-centralizedarguments">{"ImpactDetectorCentral.CentralizedArguments"}</Link>{" arguments)"}</code> |
+
+</details>
 
 ## Used in
 

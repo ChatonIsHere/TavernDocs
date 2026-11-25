@@ -17,16 +17,16 @@ A **private struct** in `Root.Township`, `Alta.Crafting`. Reach it through att-s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HitTypePosition(Vector3 position, bool isEffective)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HitTypePosition(Vector3 position, bool isEffective)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-iseffective" /><code>{"bool isEffective"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-iseffective" /><code>{"bool isEffective"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
 
 ## Used in
 

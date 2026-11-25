@@ -17,17 +17,22 @@ A **struct** in `Root.Township`, `Alta.Cooking`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-heightoffset" /><code>{"private float heightOffset"}</code> |  |
-| <Link id="m-lifetime" /><code>{"private float lifetime"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-heightoffset" /><code>{"private float heightOffset"}</code> |
+| <Link id="m-lifetime" /><code>{"private float lifetime"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-heightoffset-2" /><code>{"float HeightOffset { get; }"}</code> |  |
-| <Link id="m-lifetime-2" /><code>{"float Lifetime { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-heightoffset-2" /><code>{"float HeightOffset { get; }"}</code> |
+| <Link id="m-lifetime-2" /><code>{"float Lifetime { get; }"}</code> |
 
 ## Used in
 

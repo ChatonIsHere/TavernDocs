@@ -19,21 +19,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SphereCastFilter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SphereCastFilter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hitmultiplier" /><code>{"private float hitMultiplier"}</code> |  |
-| <Link id="m-layercheck" /><code>{"private LayerMask layerCheck"}</code> |  |
-| <Link id="m-missmultiplier" /><code>{"private float missMultiplier"}</code> |  |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-hitmultiplier" /><code>{"private float hitMultiplier"}</code> |
+| <Link id="m-layercheck" /><code>{"private LayerMask layerCheck"}</code> |
+| <Link id="m-missmultiplier" /><code>{"private float missMultiplier"}</code> |
+| <Link id="m-radius" /><code>{"private float radius"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" point, ref float weight)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" point, ref float weight)"}</code> |

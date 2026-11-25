@@ -18,13 +18,18 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"internal SettingsClient("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"internal SettingsClient("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getsettings" /><code>{"async Task<string> GetSettings(string name)"}</code> |  |
-| <Link id="m-setsettings" /><code>{"Task SetSettings(string name, string content)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getsettings" /><code>{"async Task<string> GetSettings(string name)"}</code> |
+| <Link id="m-setsettings" /><code>{"Task SetSettings(string name, string content)"}</code> |

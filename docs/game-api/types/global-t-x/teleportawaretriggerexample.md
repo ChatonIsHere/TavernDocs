@@ -17,13 +17,13 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected TeleportAwareTriggerExample()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected TeleportAwareTriggerExample()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ontriggerexit" /><code>{"void OnTriggerExit(Collider other)"}</code> |  |
-| <Link id="m-ontriggerteleportedthrough" /><code>{"void OnTriggerTeleportedThrough("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ontriggerexit" /><code>{"void OnTriggerExit(Collider other)"}</code> |
+| <Link id="m-ontriggerteleportedthrough" /><code>{"void OnTriggerTeleportedThrough("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |

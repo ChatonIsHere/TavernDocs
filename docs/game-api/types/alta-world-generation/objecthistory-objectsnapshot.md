@@ -17,17 +17,17 @@ A **private class** in `Root.Township`, `Alta.Populations`. Reach it through att
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ObjectSnapshot()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ObjectSnapshot()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-position" /><code>{"Vector3 Position { get; internal set; }"}</code> |  |
-| <Link id="m-rotation" /><code>{"Quaternion Rotation { get; internal set; }"}</code> |  |
-| <Link id="m-updatemethod" /><code><Link to="/game-api/types/alta-world-generation/objecthistory-snapshottype">{"ObjectHistory.SnapshotType"}</Link>{" UpdateMethod { get; internal set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-position" /><code>{"Vector3 Position { get; internal set; }"}</code> |
+| <Link id="m-rotation" /><code>{"Quaternion Rotation { get; internal set; }"}</code> |
+| <Link id="m-updatemethod" /><code><Link to="/game-api/types/alta-world-generation/objecthistory-snapshottype">{"ObjectHistory.SnapshotType"}</Link>{" UpdateMethod { get; internal set; }"}</code> |
 
 ## Used in
 

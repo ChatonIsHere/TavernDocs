@@ -19,10 +19,10 @@ A stat modifier whose value follows a curve over a number of ticks, scaled by a 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"IndirectModifier(float baseValue, uint duration, "}<Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration, uint tick)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"IndirectModifier(float baseValue, uint duration, "}<Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"IndirectModifier(float baseValue, uint duration, "}<Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration, uint tick)"}</code> |
+| <Link id="m-ctor-2" /><code>{"IndirectModifier(float baseValue, uint duration, "}<Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration)"}</code> |
 
 ## Fields
 
@@ -30,10 +30,18 @@ A stat modifier whose value follows a curve over a number of ticks, scaled by a 
 | --- | --- |
 | <Link id="m-changed" /><code>{"Action<"}<Link to="/game-api/types/alta-stats-effects/indirectmodifier">{"IndirectModifier"}</Link>{"> Changed"}</code> | Called when the value moves by more than 0.1. Must be set, or `Update` throws. |
 | <Link id="m-finished" /><code>{"Action<"}<Link to="/game-api/types/alta-stats-effects/indirectmodifier">{"IndirectModifier"}</Link>{"> Finished"}</code> | Called on each `Update` once the duration has passed. Must be set. |
-| <Link id="m-basevalue" /><code>{"private float baseValue"}</code> |  |
-| <Link id="m-duration" /><code>{"private uint duration"}</code> |  |
-| <Link id="m-tick" /><code>{"private uint tick"}</code> |  |
-| <Link id="m-valueoverduration" /><code>{"private "}<Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration"}</code> |  |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-basevalue" /><code>{"private float baseValue"}</code> |
+| <Link id="m-duration" /><code>{"private uint duration"}</code> |
+| <Link id="m-tick" /><code>{"private uint tick"}</code> |
+| <Link id="m-valueoverduration" /><code>{"private "}<Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration"}</code> |
+
+</details>
 
 ## Properties
 

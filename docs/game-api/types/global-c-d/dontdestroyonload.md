@@ -17,25 +17,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DontDestroyOnLoad()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DontDestroyOnLoad()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-identifier" /><code>{"protected string identifier"}</code> |  |
-| <Link id="m-identifiers" /><code>{"private static Dictionary<string, "}<Link to="/game-api/types/global-c-d/dontdestroyonload">{"DontDestroyOnLoad"}</Link>{"> identifiers"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-identifier" /><code>{"protected string identifier"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-identifiers" /><code>{"private static Dictionary<string, "}<Link to="/game-api/types/global-c-d/dontdestroyonload">{"DontDestroyOnLoad"}</Link>{"> identifiers"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isofficial" /><code>{"bool IsOfficial { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isofficial" /><code>{"bool IsOfficial { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |

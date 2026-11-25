@@ -18,6 +18,6 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LockEffectUnityEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LockEffectUnityEvent()"}</code> |

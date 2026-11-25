@@ -16,22 +16,22 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-banneduser" /><code>{"BannedUser = 10"}</code> |  |
-| <Link id="m-couldntaccesscluster" /><code>{"CouldntAccessCluster = 5"}</code> |  |
-| <Link id="m-couldntallocate" /><code>{"CouldntAllocate = 7"}</code> |  |
-| <Link id="m-couldntallocatewithmessage" /><code>{"CouldntAllocateWithMessage = 13"}</code> |  |
-| <Link id="m-couldntverifyuser" /><code>{"CouldntVerifyUser = 11"}</code> |  |
-| <Link id="m-lockedserver" /><code>{"LockedServer = 8"}</code> |  |
-| <Link id="m-notallowedtojoinserver" /><code>{"NotAllowedToJoinServer = 2"}</code> |  |
-| <Link id="m-notallowedtoseeserver" /><code>{"NotAllowedToSeeServer = 1"}</code> |  |
-| <Link id="m-nothing" /><code>{"Nothing = 0"}</code> |  |
-| <Link id="m-notlaunched" /><code>{"NotLaunched = 4"}</code> |  |
-| <Link id="m-notonline" /><code>{"NotOnline = 3"}</code> |  |
-| <Link id="m-playerlimitreached" /><code>{"PlayerLimitReached = 12"}</code> |  |
-| <Link id="m-webrequestfailed" /><code>{"WebRequestFailed = 6"}</code> |  |
-| <Link id="m-wrongclientgameversion" /><code>{"WrongClientGameVersion = 9"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-banneduser" /><code>{"BannedUser = 10"}</code> |
+| <Link id="m-couldntaccesscluster" /><code>{"CouldntAccessCluster = 5"}</code> |
+| <Link id="m-couldntallocate" /><code>{"CouldntAllocate = 7"}</code> |
+| <Link id="m-couldntallocatewithmessage" /><code>{"CouldntAllocateWithMessage = 13"}</code> |
+| <Link id="m-couldntverifyuser" /><code>{"CouldntVerifyUser = 11"}</code> |
+| <Link id="m-lockedserver" /><code>{"LockedServer = 8"}</code> |
+| <Link id="m-notallowedtojoinserver" /><code>{"NotAllowedToJoinServer = 2"}</code> |
+| <Link id="m-notallowedtoseeserver" /><code>{"NotAllowedToSeeServer = 1"}</code> |
+| <Link id="m-nothing" /><code>{"Nothing = 0"}</code> |
+| <Link id="m-notlaunched" /><code>{"NotLaunched = 4"}</code> |
+| <Link id="m-notonline" /><code>{"NotOnline = 3"}</code> |
+| <Link id="m-playerlimitreached" /><code>{"PlayerLimitReached = 12"}</code> |
+| <Link id="m-webrequestfailed" /><code>{"WebRequestFailed = 6"}</code> |
+| <Link id="m-wrongclientgameversion" /><code>{"WrongClientGameVersion = 9"}</code> |
 
 ## Used in
 

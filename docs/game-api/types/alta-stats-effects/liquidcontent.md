@@ -19,9 +19,9 @@ What a liquid container holds: either a preset `LiquidDefinition` or a custom mi
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LiquidContent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LiquidContent()"}</code> |
 
 ## Properties
 

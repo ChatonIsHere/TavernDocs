@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EnableAndUnchildIfClose()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EnableAndUnchildIfClose()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-destroyafter" /><code>{"private float destroyAfter"}</code> |  |
-| <Link id="m-distancesquared" /><code>{"private float distanceSquared"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroyafter" /><code>{"private float destroyAfter"}</code> |
+| <Link id="m-distancesquared" /><code>{"private float distanceSquared"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-trigger" /><code>{"void Trigger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-trigger" /><code>{"void Trigger()"}</code> |

@@ -17,33 +17,38 @@ A **class** in `Root.Township`, `Alta.Bezier`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Wedge()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Wedge()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angle" /><code>{"private float angle"}</code> |  |
-| <Link id="m-inverse" /><code>{"private GameObject[] inverse"}</code> |  |
-| <Link id="m-isreverse" /><code>{"private bool isReverse"}</code> |  |
-| <Link id="m-prefabs" /><code>{"private GameObject[] prefabs"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-angle" /><code>{"private float angle"}</code> |
+| <Link id="m-inverse" /><code>{"private GameObject[] inverse"}</code> |
+| <Link id="m-isreverse" /><code>{"private bool isReverse"}</code> |
+| <Link id="m-prefabs" /><code>{"private GameObject[] prefabs"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angle-2" /><code>{"float Angle { get; }"}</code> |  |
-| <Link id="m-hasinverse" /><code>{"bool HasInverse { get; }"}</code> |  |
-| <Link id="m-isreverse-2" /><code>{"bool IsReverse { get; }"}</code> |  |
-| <Link id="m-prefabs-2" /><code>{"GameObject[] Prefabs { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-angle-2" /><code>{"float Angle { get; }"}</code> |
+| <Link id="m-hasinverse" /><code>{"bool HasInverse { get; }"}</code> |
+| <Link id="m-isreverse-2" /><code>{"bool IsReverse { get; }"}</code> |
+| <Link id="m-prefabs-2" /><code>{"GameObject[] Prefabs { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getrandom" /><code>{"GameObject GetRandom(bool isInverse)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getrandom" /><code>{"GameObject GetRandom(bool isInverse)"}</code> |
 
 ## Used in
 

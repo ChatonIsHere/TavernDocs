@@ -17,6 +17,6 @@ A **internal class** in `Root.Township`, `Features.Main_Menu.Scripts.TalemShop.E
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NoShopForPlatformError("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NoShopForPlatformError("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime)"}</code> |

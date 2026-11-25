@@ -17,15 +17,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RequiredSpec()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RequiredSpec()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-matchlabels" /><code>{"Dictionary<string, string> MatchLabels { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-matchlabels" /><code>{"Dictionary<string, string> MatchLabels { get; set; }"}</code> |
 
 ## Used in
 

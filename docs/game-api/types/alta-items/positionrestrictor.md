@@ -22,41 +22,46 @@ Server component that keeps pickups near a spot, such as tutorial items or mould
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionRestrictor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionRestrictor()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-appeareffect" /><code>{"private ParticleSystem appearEffect"}</code> |  |
-| <Link id="m-appearpooledeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" appearPooledEffect"}</code> |  |
-| <Link id="m-autojumpbackboundsize" /><code>{"private Vector3 autoJumpBackBoundSize"}</code> |  |
-| <Link id="m-autojumpbackradius" /><code>{"private float autoJumpBackRadius"}</code> |  |
-| <Link id="m-boundsize" /><code>{"private Vector3 boundSize"}</code> |  |
-| <Link id="m-disappeareffect" /><code>{"private ParticleSystem disappearEffect"}</code> |  |
-| <Link id="m-docks" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> docks"}</code> |  |
-| <Link id="m-entitiestorestrict" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"[] entitiesToRestrict"}</code> |  |
-| <Link id="m-groups" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> groups"}</code> |  |
-| <Link id="m-hapticstarted" /><code>{"private Dictionary<uint, float> hapticStarted"}</code> |  |
-| <Link id="m-hapticstrength" /><code>{"private float hapticStrength"}</code> |  |
-| <Link id="m-heldlimit" /><code>{"private float heldLimit"}</code> |  |
-| <Link id="m-isrecursivelyaddingchildren" /><code>{"private bool isRecursivelyAddingChildren"}</code> |  |
-| <Link id="m-isusingbounds" /><code>{"private bool isUsingBounds"}</code> |  |
-| <Link id="m-isusingdocks" /><code>{"private bool isUsingDocks"}</code> |  |
-| <Link id="m-isusinglastdock" /><code>{"private bool isUsingLastDock"}</code> |  |
-| <Link id="m-lastdocks" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> lastDocks"}</code> |  |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |  |
-| <Link id="m-resetlocation" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-items/positionrestrictor-syncargs">{"PositionRestrictor.SyncArgs"}</Link>{"> resetLocation"}</code> |  |
-| <Link id="m-resetlocationsave" /><code>{"private TransformSave resetLocationSave"}</code> |  |
-| <Link id="m-restrictspecificentities" /><code>{"private bool restrictSpecificEntities"}</code> |  |
-| <Link id="m-sethaptic" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-items/positionrestrictor-syncargs">{"PositionRestrictor.SyncArgs"}</Link>{"> setHaptic"}</code> |  |
-| <Link id="m-spawnlocation" /><code>{"private Transform spawnLocation"}</code> |  |
-| <Link id="m-syncitem" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-items/positionrestrictor-syncargs">{"PositionRestrictor.SyncArgs"}</Link>{"> syncItem"}</code> |  |
-| <Link id="m-syncitems" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncItems"}</code> |  |
-| <Link id="m-tracking" /><code>{"private HashSet<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> tracking"}</code> |  |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |  |
+<details>
+<summary>27 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-appeareffect" /><code>{"private ParticleSystem appearEffect"}</code> |
+| <Link id="m-appearpooledeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" appearPooledEffect"}</code> |
+| <Link id="m-autojumpbackboundsize" /><code>{"private Vector3 autoJumpBackBoundSize"}</code> |
+| <Link id="m-autojumpbackradius" /><code>{"private float autoJumpBackRadius"}</code> |
+| <Link id="m-boundsize" /><code>{"private Vector3 boundSize"}</code> |
+| <Link id="m-disappeareffect" /><code>{"private ParticleSystem disappearEffect"}</code> |
+| <Link id="m-docks" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> docks"}</code> |
+| <Link id="m-entitiestorestrict" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"[] entitiesToRestrict"}</code> |
+| <Link id="m-groups" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> groups"}</code> |
+| <Link id="m-hapticstarted" /><code>{"private Dictionary<uint, float> hapticStarted"}</code> |
+| <Link id="m-hapticstrength" /><code>{"private float hapticStrength"}</code> |
+| <Link id="m-heldlimit" /><code>{"private float heldLimit"}</code> |
+| <Link id="m-isrecursivelyaddingchildren" /><code>{"private bool isRecursivelyAddingChildren"}</code> |
+| <Link id="m-isusingbounds" /><code>{"private bool isUsingBounds"}</code> |
+| <Link id="m-isusingdocks" /><code>{"private bool isUsingDocks"}</code> |
+| <Link id="m-isusinglastdock" /><code>{"private bool isUsingLastDock"}</code> |
+| <Link id="m-lastdocks" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> lastDocks"}</code> |
+| <Link id="m-radius" /><code>{"private float radius"}</code> |
+| <Link id="m-resetlocation" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-items/positionrestrictor-syncargs">{"PositionRestrictor.SyncArgs"}</Link>{"> resetLocation"}</code> |
+| <Link id="m-resetlocationsave" /><code>{"private TransformSave resetLocationSave"}</code> |
+| <Link id="m-restrictspecificentities" /><code>{"private bool restrictSpecificEntities"}</code> |
+| <Link id="m-sethaptic" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-items/positionrestrictor-syncargs">{"PositionRestrictor.SyncArgs"}</Link>{"> setHaptic"}</code> |
+| <Link id="m-spawnlocation" /><code>{"private Transform spawnLocation"}</code> |
+| <Link id="m-syncitem" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-items/positionrestrictor-syncargs">{"PositionRestrictor.SyncArgs"}</Link>{"> syncItem"}</code> |
+| <Link id="m-syncitems" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncItems"}</code> |
+| <Link id="m-tracking" /><code>{"private HashSet<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> tracking"}</code> |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
+
+</details>
 
 ## Properties
 
@@ -78,6 +83,13 @@ Server component that keeps pickups near a spot, such as tutorial items or mould
 | <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: starts tracking child entities (or a chosen list) and their docks, if docks are used. |
 | <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends the tracked items to a joining player. |
 | <Link id="m-register-2" /><code>{"virtual void Register("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Server: starts tracking a pickup. It becomes a saved child of this entity and is checked each budgeted update. |
+| <Link id="m-resetlocation-2" /><code>{"protected void ResetLocation("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, Vector3 position, bool isPlayingEffect, bool isDocking)"}</code> | Drops a pickup and, on the server, docks it back or moves it to the reset spot, with effects. |
+
+<details>
+<summary>20 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-attemptdock" /><code>{"private bool AttemptDock("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
 | <Link id="m-checkbounds" /><code>{"private void CheckBounds()"}</code> |  |
 | <Link id="m-checkdestroy" /><code>{"private void CheckDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
@@ -93,9 +105,10 @@ Server component that keeps pickups near a spot, such as tutorial items or mould
 | <Link id="m-pickupdestroyed" /><code>{"private void PickupDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
 | <Link id="m-recorddock" /><code>{"private void RecordDock("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
 | <Link id="m-register" /><code>{"private void Register("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" groupEntity, "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" group)"}</code> | Server: starts tracking a pickup. It becomes a saved child of this entity and is checked each budgeted update. |
-| <Link id="m-resetlocation-2" /><code>{"protected void ResetLocation("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, Vector3 position, bool isPlayingEffect, bool isDocking)"}</code> | Drops a pickup and, on the server, docks it back or moves it to the reset spot, with effects. |
 | <Link id="m-resetsync" /><code>{"private void ResetSync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-items/positionrestrictor-syncargs">{"PositionRestrictor.SyncArgs"}</Link>{" args)"}</code> |  |
 | <Link id="m-sethaptic-2" /><code>{"private void SetHaptic("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-items/positionrestrictor-syncargs">{"PositionRestrictor.SyncArgs"}</Link>{" args)"}</code> |  |
 | <Link id="m-stophaptic" /><code>{"private void StopHaptic("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
 | <Link id="m-syncitem-2" /><code>{"private void SyncItem("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-items/positionrestrictor-syncargs">{"PositionRestrictor.SyncArgs"}</Link>{" args)"}</code> |  |
 | <Link id="m-syncitems-2" /><code>{"private void SyncItems("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+</details>

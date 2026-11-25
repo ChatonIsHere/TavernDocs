@@ -23,32 +23,37 @@ A hashed asset for one kind of tree: its wood material, how chopping damage spre
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TreeSpecies()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TreeSpecies()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-atlasedmaterials" /><code>{"private Material[] atlasedMaterials"}</code> |  |
-| <Link id="m-breakthresholdmultiplier" /><code>{"private float breakThresholdMultiplier"}</code> |  |
-| <Link id="m-damagemultiplier" /><code>{"private float damageMultiplier"}</code> |  |
-| <Link id="m-distancedistribution" /><code>{"private float distanceDistribution"}</code> |  |
-| <Link id="m-doneeffect" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" doneEffect"}</code> |  |
-| <Link id="m-dropvelocity" /><code>{"private float dropVelocity"}</code> |  |
-| <Link id="m-hiteffect" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" hitEffect"}</code> |  |
-| <Link id="m-imposterlod" /><code>{"private int imposterLod"}</code> |  |
-| <Link id="m-leafneedsfixing" /><code>{"private bool[] leafNeedsFixing"}</code> |  |
-| <Link id="m-leafoffsetscale" /><code>{"private Vector4[] leafOffsetScale"}</code> |  |
-| <Link id="m-modifiedmaterial" /><code>{"private Material modifiedMaterial"}</code> |  |
-| <Link id="m-oppositesthreshold" /><code>{"private float oppositesThreshold"}</code> |  |
-| <Link id="m-pcleafmaterials" /><code>{"private Material[] pcLeafMaterials"}</code> |  |
-| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> |  |
-| <Link id="m-stick" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" stick"}</code> |  |
-| <Link id="m-totalfallsidethreshold" /><code>{"private float totalFallSideThreshold"}</code> |  |
-| <Link id="m-totalpercentthreshold" /><code>{"private float totalPercentThreshold"}</code> |  |
-| <Link id="m-wedge" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" wedge"}</code> |  |
+<details>
+<summary>18 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-atlasedmaterials" /><code>{"private Material[] atlasedMaterials"}</code> |
+| <Link id="m-breakthresholdmultiplier" /><code>{"private float breakThresholdMultiplier"}</code> |
+| <Link id="m-damagemultiplier" /><code>{"private float damageMultiplier"}</code> |
+| <Link id="m-distancedistribution" /><code>{"private float distanceDistribution"}</code> |
+| <Link id="m-doneeffect" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" doneEffect"}</code> |
+| <Link id="m-dropvelocity" /><code>{"private float dropVelocity"}</code> |
+| <Link id="m-hiteffect" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" hitEffect"}</code> |
+| <Link id="m-imposterlod" /><code>{"private int imposterLod"}</code> |
+| <Link id="m-leafneedsfixing" /><code>{"private bool[] leafNeedsFixing"}</code> |
+| <Link id="m-leafoffsetscale" /><code>{"private Vector4[] leafOffsetScale"}</code> |
+| <Link id="m-modifiedmaterial" /><code>{"private Material modifiedMaterial"}</code> |
+| <Link id="m-oppositesthreshold" /><code>{"private float oppositesThreshold"}</code> |
+| <Link id="m-pcleafmaterials" /><code>{"private Material[] pcLeafMaterials"}</code> |
+| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> |
+| <Link id="m-stick" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" stick"}</code> |
+| <Link id="m-totalfallsidethreshold" /><code>{"private float totalFallSideThreshold"}</code> |
+| <Link id="m-totalpercentthreshold" /><code>{"private float totalPercentThreshold"}</code> |
+| <Link id="m-wedge" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" wedge"}</code> |
+
+</details>
 
 ## Properties
 

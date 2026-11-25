@@ -18,26 +18,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FireParticleDivergence()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FireParticleDivergence()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-divergencecollider" /><code>{"private Collider divergenceCollider"}</code> |  |
-| <Link id="m-enter" /><code>{"private List<ParticleSystem.Particle> enter"}</code> |  |
-| <Link id="m-lifetimereduction" /><code>{"private float lifeTimeReduction"}</code> |  |
-| <Link id="m-maxforce" /><code>{"private float maxForce"}</code> |  |
-| <Link id="m-particlesystem" /><code>{"private ParticleSystem particleSystem"}</code> |  |
-| <Link id="m-pushforce" /><code>{"private float pushForce"}</code> |  |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-divergencecollider" /><code>{"private Collider divergenceCollider"}</code> |
+| <Link id="m-enter" /><code>{"private List<ParticleSystem.Particle> enter"}</code> |
+| <Link id="m-lifetimereduction" /><code>{"private float lifeTimeReduction"}</code> |
+| <Link id="m-maxforce" /><code>{"private float maxForce"}</code> |
+| <Link id="m-particlesystem" /><code>{"private ParticleSystem particleSystem"}</code> |
+| <Link id="m-pushforce" /><code>{"private float pushForce"}</code> |
+| <Link id="m-radius" /><code>{"private float radius"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handleenteredparticles" /><code>{"private void HandleEnteredParticles(int numberOfParticlesEntered)"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-onparticletrigger" /><code>{"private void OnParticleTrigger()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-handleenteredparticles" /><code>{"private void HandleEnteredParticles(int numberOfParticlesEntered)"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-onparticletrigger" /><code>{"private void OnParticleTrigger()"}</code> |
+
+</details>

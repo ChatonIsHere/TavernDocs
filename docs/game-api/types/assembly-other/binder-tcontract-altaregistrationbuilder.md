@@ -19,31 +19,49 @@ A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaRegistrationBuilder("}<Link to="/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{"<TContract> binder)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaRegistrationBuilder("}<Link to="/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{"<TContract> binder)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"private object instance"}</code> |  |
-| <Link id="m-instanceprovider" /><code>{"private IInstanceProvider instanceProvider"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"private object instance"}</code> |
+| <Link id="m-instanceprovider" /><code>{"private IInstanceProvider instanceProvider"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-binder" /><code>{"private "}<Link to="/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{"<TContract> "}<Link to="/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{" { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-binder" /><code>{"private "}<Link to="/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{"<TContract> "}<Link to="/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{" { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-build" /><code>{"override Registration Build()"}</code> |  |
-| <Link id="m-bindtoinstance" /><code>{"internal void BindToInstance(object instance)"}</code> |  |
-| <Link id="m-buildforcontract" /><code>{"private Registration BuildForContract()"}</code> |  |
-| <Link id="m-buildforinstance" /><code>{"private Registration BuildForInstance()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-build" /><code>{"override Registration Build()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-bindtoinstance" /><code>{"internal void BindToInstance(object instance)"}</code> |
+| <Link id="m-buildforcontract" /><code>{"private Registration BuildForContract()"}</code> |
+| <Link id="m-buildforinstance" /><code>{"private Registration BuildForInstance()"}</code> |
+
+</details>
 
 ## Used in
 

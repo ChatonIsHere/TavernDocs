@@ -17,23 +17,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PhysicsAcceleration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PhysicsAcceleration()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-acceleration" /><code>{"private Vector3 acceleration"}</code> |  |
-| <Link id="m-maximumangularimpulse" /><code>{"private float maximumAngularImpulse"}</code> |  |
-| <Link id="m-minimumangularimpulse" /><code>{"private float minimumAngularImpulse"}</code> |  |
-| <Link id="m-target" /><code>{"private Rigidbody target"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-acceleration" /><code>{"private Vector3 acceleration"}</code> |
+| <Link id="m-maximumangularimpulse" /><code>{"private float maximumAngularImpulse"}</code> |
+| <Link id="m-minimumangularimpulse" /><code>{"private float minimumAngularImpulse"}</code> |
+| <Link id="m-target" /><code>{"private Rigidbody target"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-wobble" /><code>{"void Wobble()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-wobble" /><code>{"void Wobble()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |
+
+</details>

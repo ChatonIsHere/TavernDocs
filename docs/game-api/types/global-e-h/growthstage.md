@@ -19,30 +19,35 @@ One stage in a `GrowthDefinition` (plants, trees and other things that grow): wh
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrowthStage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrowthStage()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |  |
-| <Link id="m-forcekinematic" /><code>{"private "}<Link to="/game-api/types/global-i-l/kinematicforcemode">{"KinematicForceMode"}</Link>{" forceKinematic"}</code> |  |
-| <Link id="m-isusingradius" /><code>{"private bool isUsingRadius"}</code> |  |
-| <Link id="m-isusingraycastcheck" /><code>{"private bool isUsingRaycastCheck"}</code> |  |
-| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |  |
-| <Link id="m-localrotation" /><code>{"private Vector3 localRotation"}</code> |  |
-| <Link id="m-minseparationradius" /><code>{"private float minSeparationRadius"}</code> |  |
-| <Link id="m-name" /><code>{"private string name"}</code> |  |
-| <Link id="m-prefabs" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" prefabs"}</code> |  |
-| <Link id="m-radiuschecklayers" /><code>{"private LayerMask radiusCheckLayers"}</code> |  |
-| <Link id="m-raycastdirection" /><code>{"private Vector3 raycastDirection"}</code> |  |
-| <Link id="m-raycastdistance" /><code>{"private float raycastDistance"}</code> |  |
-| <Link id="m-raycastlayers" /><code>{"private LayerMask raycastLayers"}</code> |  |
-| <Link id="m-retrystage" /><code>{"private bool retryStage"}</code> |  |
-| <Link id="m-survivalrate" /><code>{"private float survivalRate"}</code> |  |
-| <Link id="m-usingpreviousprefab" /><code>{"private bool usingPreviousPrefab"}</code> |  |
+<details>
+<summary>16 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-duration" /><code>{"private float duration"}</code> |
+| <Link id="m-forcekinematic" /><code>{"private "}<Link to="/game-api/types/global-i-l/kinematicforcemode">{"KinematicForceMode"}</Link>{" forceKinematic"}</code> |
+| <Link id="m-isusingradius" /><code>{"private bool isUsingRadius"}</code> |
+| <Link id="m-isusingraycastcheck" /><code>{"private bool isUsingRaycastCheck"}</code> |
+| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |
+| <Link id="m-localrotation" /><code>{"private Vector3 localRotation"}</code> |
+| <Link id="m-minseparationradius" /><code>{"private float minSeparationRadius"}</code> |
+| <Link id="m-name" /><code>{"private string name"}</code> |
+| <Link id="m-prefabs" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" prefabs"}</code> |
+| <Link id="m-radiuschecklayers" /><code>{"private LayerMask radiusCheckLayers"}</code> |
+| <Link id="m-raycastdirection" /><code>{"private Vector3 raycastDirection"}</code> |
+| <Link id="m-raycastdistance" /><code>{"private float raycastDistance"}</code> |
+| <Link id="m-raycastlayers" /><code>{"private LayerMask raycastLayers"}</code> |
+| <Link id="m-retrystage" /><code>{"private bool retryStage"}</code> |
+| <Link id="m-survivalrate" /><code>{"private float survivalRate"}</code> |
+| <Link id="m-usingpreviousprefab" /><code>{"private bool usingPreviousPrefab"}</code> |
+
+</details>
 
 ## Properties
 

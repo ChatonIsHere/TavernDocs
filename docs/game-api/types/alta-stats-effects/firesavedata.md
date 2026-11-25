@@ -19,12 +19,12 @@ A **internal class** in `Root.Township`, `Alta.Heat`. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FireSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FireSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fuelconsumptionprogress" /><code>{"float fuelConsumptionProgress"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fuelconsumptionprogress" /><code>{"float fuelConsumptionProgress"}</code> |

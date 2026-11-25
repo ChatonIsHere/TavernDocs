@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialTuple()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MaterialTuple()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-copy" /><code>{"Material copy"}</code> |  |
-| <Link id="m-needsclearing" /><code>{"bool needsClearing"}</code> |  |
-| <Link id="m-original" /><code>{"Material original"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-copy" /><code>{"Material copy"}</code> |
+| <Link id="m-needsclearing" /><code>{"bool needsClearing"}</code> |
+| <Link id="m-original" /><code>{"Material original"}</code> |
 
 ## Used in
 

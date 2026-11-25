@@ -20,17 +20,22 @@ Base asset for skill inputs triggered by holding a hand in a set position (such 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected HandPositionStructure()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected HandPositionStructure()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activetime" /><code>{"private float activeTime"}</code> |  |
-| <Link id="m-modifiers" /><code>{"private "}<Link to="/game-api/types/global-e-h/handpositioninputmodifier">{"HandPositionInputModifier"}</Link>{"[] modifiers"}</code> |  |
-| <Link id="m-timeinpositiontoactivate" /><code>{"private float timeInPositionToActivate"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activetime" /><code>{"private float activeTime"}</code> |
+| <Link id="m-modifiers" /><code>{"private "}<Link to="/game-api/types/global-e-h/handpositioninputmodifier">{"HandPositionInputModifier"}</Link>{"[] modifiers"}</code> |
+| <Link id="m-timeinpositiontoactivate" /><code>{"private float timeInPositionToActivate"}</code> |
+
+</details>
 
 ## Properties
 

@@ -19,28 +19,41 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicFloatReset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicFloatReset()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currenttimer" /><code>{"private float currentTimer"}</code> |  |
-| <Link id="m-defaultvalue" /><code>{"private float defaultValue"}</code> |  |
-| <Link id="m-errormessageposted" /><code>{"private bool errorMessagePosted"}</code> |  |
-| <Link id="m-isinteracting" /><code>{"private bool isInteracting"}</code> |  |
-| <Link id="m-returnspeedpersec" /><code>{"private float returnSpeedPerSec"}</code> |  |
-| <Link id="m-sender" /><code>{"private "}<Link to="/game-api/types/alta-items/logicfloatsender">{"LogicFloatSender"}</Link>{" sender"}</code> |  |
-| <Link id="m-targetvalue" /><code>{"private float targetValue"}</code> |  |
-| <Link id="m-timebeforereturn" /><code>{"private float timeBeforeReturn"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currenttimer" /><code>{"private float currentTimer"}</code> |
+| <Link id="m-defaultvalue" /><code>{"private float defaultValue"}</code> |
+| <Link id="m-errormessageposted" /><code>{"private bool errorMessagePosted"}</code> |
+| <Link id="m-isinteracting" /><code>{"private bool isInteracting"}</code> |
+| <Link id="m-returnspeedpersec" /><code>{"private float returnSpeedPerSec"}</code> |
+| <Link id="m-sender" /><code>{"private "}<Link to="/game-api/types/alta-items/logicfloatsender">{"LogicFloatSender"}</Link>{" sender"}</code> |
+| <Link id="m-targetvalue" /><code>{"private float targetValue"}</code> |
+| <Link id="m-timebeforereturn" /><code>{"private float timeBeforeReturn"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isinteracting-2" /><code>{"void IsInteracting(bool value)"}</code> |  |
-| <Link id="m-update" /><code>{"void Update()"}</code> |  |
-| <Link id="m-updatevalue" /><code>{"void UpdateValue(float value)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isinteracting-2" /><code>{"void IsInteracting(bool value)"}</code> |
+| <Link id="m-update" /><code>{"void Update()"}</code> |
+| <Link id="m-updatevalue" /><code>{"void UpdateValue(float value)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

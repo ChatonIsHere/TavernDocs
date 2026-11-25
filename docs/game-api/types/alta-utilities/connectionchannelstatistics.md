@@ -17,6 +17,6 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling.NetworkTransportMetric
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ConnectionChannelStatistics(Dictionary<"}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{", "}<Link to="/game-api/types/alta-utilities/connectionchannelstatistic">{"ConnectionChannelStatistic"}</Link>{"> messageDictionary)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConnectionChannelStatistics(Dictionary<"}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{", "}<Link to="/game-api/types/alta-utilities/connectionchannelstatistic">{"ConnectionChannelStatistic"}</Link>{"> messageDictionary)"}</code> |

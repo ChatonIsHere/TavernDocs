@@ -18,16 +18,16 @@ An **interface** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-connection" /><code><Link to="/game-api/types/assembly-other/itransportconnection">{"ITransportConnection"}</Link>{" Connection { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-connection" /><code><Link to="/game-api/types/assembly-other/itransportconnection">{"ITransportConnection"}</Link>{" Connection { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-approved" /><code>{"event Action<"}<Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{"> Approved"}</code> |  |
-| <Link id="m-disconnected" /><code>{"event Action<"}<Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{"> Disconnected"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-approved" /><code>{"event Action<"}<Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{"> Approved"}</code> |
+| <Link id="m-disconnected" /><code>{"event Action<"}<Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{"> Disconnected"}</code> |
 
 ## Used in
 

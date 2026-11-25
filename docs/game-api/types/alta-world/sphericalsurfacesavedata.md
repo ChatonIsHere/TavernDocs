@@ -19,13 +19,13 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SphericalSurfaceSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SphericalSurfaceSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ishemisphere" /><code>{"bool isHemisphere"}</code> |  |
-| <Link id="m-radius" /><code>{"float radius"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ishemisphere" /><code>{"bool isHemisphere"}</code> |
+| <Link id="m-radius" /><code>{"float radius"}</code> |

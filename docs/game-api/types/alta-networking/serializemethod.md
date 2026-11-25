@@ -19,9 +19,9 @@ Handler for a network message: gets the sending or receiving player and the stre
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SerializeMethod(object object, IntPtr method)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SerializeMethod(object object, IntPtr method)"}</code> |
 
 ## Methods
 

@@ -21,32 +21,37 @@ Plays a build-up animation where an object's parts fly in one by one along a dir
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BuildingAnimation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BuildingAnimation()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animationdirection" /><code>{"private Vector3 animationDirection"}</code> |  |
-| <Link id="m-animationfinished" /><code>{"private "}<Link to="/game-api/types/global-a-b/buildinganimationevent">{"BuildingAnimationEvent"}</Link>{" animationFinished"}</code> |  |
-| <Link id="m-animationparent" /><code>{"private Transform animationParent"}</code> |  |
-| <Link id="m-animationstarted" /><code>{"private "}<Link to="/game-api/types/global-a-b/buildinganimationevent">{"BuildingAnimationEvent"}</Link>{" animationStarted"}</code> |  |
-| <Link id="m-basedistance" /><code>{"private float baseDistance"}</code> |  |
-| <Link id="m-durationmultiplier" /><code>{"private AnimationCurve durationMultiplier"}</code> |  |
-| <Link id="m-effectonappear" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectOnAppear"}</code> |  |
-| <Link id="m-effectonposition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectOnPosition"}</code> |  |
-| <Link id="m-hasmovingcolliders" /><code>{"private bool hasMovingColliders"}</code> |  |
-| <Link id="m-insertduration" /><code>{"private float insertDuration"}</code> |  |
-| <Link id="m-isplayingonenable" /><code>{"private bool isPlayingOnEnable"}</code> |  |
-| <Link id="m-isrepeatable" /><code>{"private bool isRepeatable"}</code> |  |
-| <Link id="m-isskippinganimation" /><code>{"private bool isSkippingAnimation"}</code> |  |
-| <Link id="m-movingparts" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/animationpart">{"AnimationPart"}</Link>{"> movingParts"}</code> |  |
-| <Link id="m-overallduration" /><code>{"private float overallDuration"}</code> |  |
-| <Link id="m-releasetime" /><code>{"private AnimationCurve releaseTime"}</code> |  |
-| <Link id="m-soundonappear" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" soundOnAppear"}</code> |  |
-| <Link id="m-soundonposition" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" soundOnPosition"}</code> |  |
+<details>
+<summary>18 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animationdirection" /><code>{"private Vector3 animationDirection"}</code> |
+| <Link id="m-animationfinished" /><code>{"private "}<Link to="/game-api/types/global-a-b/buildinganimationevent">{"BuildingAnimationEvent"}</Link>{" animationFinished"}</code> |
+| <Link id="m-animationparent" /><code>{"private Transform animationParent"}</code> |
+| <Link id="m-animationstarted" /><code>{"private "}<Link to="/game-api/types/global-a-b/buildinganimationevent">{"BuildingAnimationEvent"}</Link>{" animationStarted"}</code> |
+| <Link id="m-basedistance" /><code>{"private float baseDistance"}</code> |
+| <Link id="m-durationmultiplier" /><code>{"private AnimationCurve durationMultiplier"}</code> |
+| <Link id="m-effectonappear" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectOnAppear"}</code> |
+| <Link id="m-effectonposition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectOnPosition"}</code> |
+| <Link id="m-hasmovingcolliders" /><code>{"private bool hasMovingColliders"}</code> |
+| <Link id="m-insertduration" /><code>{"private float insertDuration"}</code> |
+| <Link id="m-isplayingonenable" /><code>{"private bool isPlayingOnEnable"}</code> |
+| <Link id="m-isrepeatable" /><code>{"private bool isRepeatable"}</code> |
+| <Link id="m-isskippinganimation" /><code>{"private bool isSkippingAnimation"}</code> |
+| <Link id="m-movingparts" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/animationpart">{"AnimationPart"}</Link>{"> movingParts"}</code> |
+| <Link id="m-overallduration" /><code>{"private float overallDuration"}</code> |
+| <Link id="m-releasetime" /><code>{"private AnimationCurve releaseTime"}</code> |
+| <Link id="m-soundonappear" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" soundOnAppear"}</code> |
+| <Link id="m-soundonposition" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" soundOnPosition"}</code> |
+
+</details>
 
 ## Properties
 
@@ -72,14 +77,22 @@ Plays a build-up animation where an object's parts fly in one by one along a dir
 | <Link id="m-playinstant" /><code>{"void PlayInstant()"}</code> | Finishes at once. The temporary parts are hidden if repeatable or skipping, otherwise destroyed. |
 | <Link id="m-setisskippinganimation" /><code>{"void SetIsSkippingAnimation(bool isSkipping)"}</code> | Makes the next `Play` finish instantly. Resets after the animation finishes. |
 | <Link id="m-stop" /><code>{"void Stop()"}</code> | Stops the animation and hides all parts again. |
-| <Link id="m-animatepart" /><code>{"private IEnumerator AnimatePart("}<Link to="/game-api/types/global-a-b/animationpart">{"AnimationPart"}</Link>{" part, float duration, bool isLast) (iterator)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-onanimationfinished" /><code>{"private void OnAnimationFinished()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-playanimation" /><code>{"private IEnumerator PlayAnimation() (iterator)"}</code> |  |
-| <Link id="m-shouldkeepanimationparts" /><code>{"private bool ShouldKeepAnimationParts("}<Link to="/game-api/types/global-a-b/animationpart">{"AnimationPart"}</Link>{" part)"}</code> |  |
+
+<details>
+<summary>8 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-animatepart" /><code>{"private IEnumerator AnimatePart("}<Link to="/game-api/types/global-a-b/animationpart">{"AnimationPart"}</Link>{" part, float duration, bool isLast) (iterator)"}</code> |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-onanimationfinished" /><code>{"private void OnAnimationFinished()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-playanimation" /><code>{"private IEnumerator PlayAnimation() (iterator)"}</code> |
+| <Link id="m-shouldkeepanimationparts" /><code>{"private bool ShouldKeepAnimationParts("}<Link to="/game-api/types/global-a-b/animationpart">{"AnimationPart"}</Link>{" part)"}</code> |
+
+</details>
 
 ## Used in
 

@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getchunkstoload" /><code>{"void GetChunksToLoad("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> staticList)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getchunkstoload" /><code>{"void GetChunksToLoad("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> staticList)"}</code> |
 
 ## Used in
 

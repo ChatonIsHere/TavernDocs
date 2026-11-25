@@ -17,26 +17,39 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InGameSphereGizmo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InGameSphereGizmo()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lasttarget" /><code>{"private Vector3 lastTarget"}</code> |  |
-| <Link id="m-material" /><code>{"private Material material"}</code> |  |
-| <Link id="m-renderertransform" /><code>{"private Transform rendererTransform"}</code> |  |
-| <Link id="m-target" /><code>{"private Transform target"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-lasttarget" /><code>{"private Vector3 lastTarget"}</code> |
+| <Link id="m-material" /><code>{"private Material material"}</code> |
+| <Link id="m-renderertransform" /><code>{"private Transform rendererTransform"}</code> |
+| <Link id="m-target" /><code>{"private Transform target"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setposition" /><code>{"void SetPosition(Vector3 target, float radius)"}</code> |  |
-| <Link id="m-setposition-2" /><code>{"void SetPosition(Transform target, float radius, Vector3 offset)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-requestedsetup" /><code>{"private void RequestedSetup("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |  |
-| <Link id="m-setradius" /><code>{"private void SetRadius(float radius)"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setposition" /><code>{"void SetPosition(Vector3 target, float radius)"}</code> |
+| <Link id="m-setposition-2" /><code>{"void SetPosition(Transform target, float radius, Vector3 offset)"}</code> |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-requestedsetup" /><code>{"private void RequestedSetup("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
+| <Link id="m-setradius" /><code>{"private void SetRadius(float radius)"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

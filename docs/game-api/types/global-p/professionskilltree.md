@@ -20,21 +20,26 @@ A skill tree asset for one progression path: its slots, icon and model. Loaded f
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProfessionSkillTree()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProfessionSkillTree()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |  |
-| <Link id="m-path" /><code>{"private "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> |  |
-| <Link id="m-pathmodel" /><code>{"private GameObject pathModel"}</code> |  |
-| <Link id="m-slotmap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> slotMap"}</code> |  |
-| <Link id="m-slots" /><code>{"private List<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> slots"}</code> |  |
-| <Link id="m-treeicon" /><code>{"private Sprite treeIcon"}</code> |  |
-| <Link id="m-treemap" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", "}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{"> treeMap"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
+| <Link id="m-path" /><code>{"private "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> |
+| <Link id="m-pathmodel" /><code>{"private GameObject pathModel"}</code> |
+| <Link id="m-slotmap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> slotMap"}</code> |
+| <Link id="m-slots" /><code>{"private List<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> slots"}</code> |
+| <Link id="m-treeicon" /><code>{"private Sprite treeIcon"}</code> |
+| <Link id="m-treemap" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", "}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{"> treeMap"}</code> |
+
+</details>
 
 ## Properties
 
@@ -53,8 +58,16 @@ A skill tree asset for one progression path: its slots, icon and model. Loaded f
 | <Link id="m-getprofessiontree" /><code>{"static "}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{" GetProfessionTree("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | Returns the tree for a path, loading all trees on first call. Logs an error if there is none. |
 | <Link id="m-getslot" /><code>{"bool GetSlot(uint hash, out "}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> | Finds a slot in this tree by its hash. |
 | <Link id="m-onvalidate" /><code>{"void OnValidate()"}</code> | Editor: validates slots and changes any duplicate slot hashes. |
-| <Link id="m-ensurefullmap" /><code>{"private void EnsureFullMap()"}</code> |  |
-| <Link id="m-forwardload" /><code>{"private void ForwardLoad()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ensurefullmap" /><code>{"private void EnsureFullMap()"}</code> |
+| <Link id="m-forwardload" /><code>{"private void ForwardLoad()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -18,22 +18,27 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"internal IncomingGroupInvite("}<Link to="/game-api/types/assembly-api-models/invitedgroupinfo">{"InvitedGroupInfo"}</Link>{" groupInfo, "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"internal IncomingGroupInvite("}<Link to="/game-api/types/assembly-api-models/invitedgroupinfo">{"InvitedGroupInfo"}</Link>{" groupInfo, "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-groupinfo" /><code><Link to="/game-api/types/assembly-api-models/invitedgroupinfo">{"InvitedGroupInfo"}</Link>{" GroupInfo { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-groupinfo" /><code><Link to="/game-api/types/assembly-api-models/invitedgroupinfo">{"InvitedGroupInfo"}</Link>{" GroupInfo { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-accept" /><code>{"override Task Accept()"}</code> |  |
-| <Link id="m-reject" /><code>{"override Task Reject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-accept" /><code>{"override Task Accept()"}</code> |
+| <Link id="m-reject" /><code>{"override Task Reject()"}</code> |
 
 ## Used in
 

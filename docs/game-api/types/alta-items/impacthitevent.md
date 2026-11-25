@@ -17,9 +17,9 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactHitEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactHitEvent()"}</code> |
 
 ## Used in
 

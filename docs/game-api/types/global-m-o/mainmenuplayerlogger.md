@@ -17,14 +17,14 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MainMenuPlayerLogger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MainMenuPlayerLogger()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-error" /><code>{"void Error(string errorMessage)"}</code> |  |
-| <Link id="m-error-2" /><code>{"void Error(Exception exception, string errorMessage)"}</code> |  |
-| <Link id="m-info" /><code>{"void Info(string logMessage)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-error" /><code>{"void Error(string errorMessage)"}</code> |
+| <Link id="m-error-2" /><code>{"void Error(Exception exception, string errorMessage)"}</code> |
+| <Link id="m-info" /><code>{"void Info(string logMessage)"}</code> |

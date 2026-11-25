@@ -17,12 +17,12 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HashedObjectAttribute(Type targetType)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HashedObjectAttribute(Type targetType)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targettype" /><code>{"Type TargetType { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-targettype" /><code>{"Type TargetType { get; }"}</code> |

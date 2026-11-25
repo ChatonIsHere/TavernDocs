@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WebsocketResponseBody()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WebsocketResponseBody()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-content" /><code>{"string Content { get; set; }"}</code> |  |
-| <Link id="m-event" /><code>{"string Event { get; set; }"}</code> |  |
-| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |  |
-| <Link id="m-key" /><code>{"string Key { get; set; }"}</code> |  |
-| <Link id="m-responsecode" /><code>{"int ResponseCode { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-content" /><code>{"string Content { get; set; }"}</code> |
+| <Link id="m-event" /><code>{"string Event { get; set; }"}</code> |
+| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |
+| <Link id="m-key" /><code>{"string Key { get; set; }"}</code> |
+| <Link id="m-responsecode" /><code>{"int ResponseCode { get; set; }"}</code> |

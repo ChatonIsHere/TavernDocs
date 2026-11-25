@@ -18,22 +18,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SignPostPanel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SignPostPanel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-content" /><code>{"private Transform content"}</code> |  |
-| <Link id="m-mesh" /><code>{"private Transform mesh"}</code> |  |
-| <Link id="m-size" /><code>{"private Vector3 size"}</code> |  |
-| <Link id="m-text" /><code>{"private Text text"}</code> |  |
-| <Link id="m-textscale" /><code>{"private Vector2 textScale"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-content" /><code>{"private Transform content"}</code> |
+| <Link id="m-mesh" /><code>{"private Transform mesh"}</code> |
+| <Link id="m-size" /><code>{"private Vector3 size"}</code> |
+| <Link id="m-text" /><code>{"private Text text"}</code> |
+| <Link id="m-textscale" /><code>{"private Vector2 textScale"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

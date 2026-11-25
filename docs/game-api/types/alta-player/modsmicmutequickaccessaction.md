@@ -18,30 +18,35 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MODSMicMuteQuickAccessAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MODSMicMuteQuickAccessAction()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |  |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |  |
-| <Link id="m-maxmuteduration" /><code>{"private float maxMuteDuration"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |
+| <Link id="m-maxmuteduration" /><code>{"private float maxMuteDuration"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactive-2" /><code>{"override bool IsActive { get; }"}</code> |  |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isactive-2" /><code>{"override bool IsActive { get; }"}</code> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |
 
 ## Used in
 

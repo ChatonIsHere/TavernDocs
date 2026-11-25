@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `ATT.Respawn`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RespawnBeaconView()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RespawnBeaconView()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-beacongraphics" /><code>{"private GameObject beaconGraphics"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-beacongraphics" /><code>{"private GameObject beaconGraphics"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-init" /><code>{"void Init("}<Link to="/game-api/types/game-other-namespaces/irespawnsystemsettings">{"IRespawnSystemSettings"}</Link>{" settings)"}</code> |  |
-| <Link id="m-onmodelchanged" /><code>{"void OnModelChanged("}<Link to="/game-api/types/game-other-namespaces/irespawnshrinemodel">{"IRespawnShrineModel"}</Link>{" model)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-init" /><code>{"void Init("}<Link to="/game-api/types/game-other-namespaces/irespawnsystemsettings">{"IRespawnSystemSettings"}</Link>{" settings)"}</code> |
+| <Link id="m-onmodelchanged" /><code>{"void OnModelChanged("}<Link to="/game-api/types/game-other-namespaces/irespawnshrinemodel">{"IRespawnShrineModel"}</Link>{" model)"}</code> |

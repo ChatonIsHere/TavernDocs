@@ -19,12 +19,12 @@ Which side a mod says it's for, given to `TavernModAttribute`. `None` means not 
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-both" /><code>{"Both = 3"}</code> |  |
-| <Link id="m-client" /><code>{"Client = 2"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-server" /><code>{"Server = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-both" /><code>{"Both = 3"}</code> |
+| <Link id="m-client" /><code>{"Client = 2"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-server" /><code>{"Server = 1"}</code> |
 
 ## Used in
 

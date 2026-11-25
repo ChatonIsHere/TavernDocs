@@ -17,30 +17,35 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MiningEchoExecution(Vector3 center, "}<Link to="/game-api/types/global-m-o/miningecho-leveldefinition">{"MiningEcho.LevelDefinition"}</Link>{" levelDefinition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MiningEchoExecution(Vector3 center, "}<Link to="/game-api/types/global-m-o/miningecho-leveldefinition">{"MiningEcho.LevelDefinition"}</Link>{" levelDefinition)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-leveldefinition" /><code>{"private "}<Link to="/game-api/types/global-m-o/miningecho-leveldefinition">{"MiningEcho.LevelDefinition"}</Link>{" levelDefinition"}</code> |  |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-leveldefinition" /><code>{"private "}<Link to="/game-api/types/global-m-o/miningecho-leveldefinition">{"MiningEcho.LevelDefinition"}</Link>{" levelDefinition"}</code> |
+| <Link id="m-progress" /><code>{"private float progress"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-center" /><code>{"Vector3 Center { get; }"}</code> |  |
-| <Link id="m-isfinished" /><code>{"bool IsFinished { get; }"}</code> |  |
-| <Link id="m-radius" /><code>{"float Radius { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-center" /><code>{"Vector3 Center { get; }"}</code> |
+| <Link id="m-isfinished" /><code>{"bool IsFinished { get; }"}</code> |
+| <Link id="m-radius" /><code>{"float Radius { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update" /><code>{"void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"void Update()"}</code> |
 
 ## Used in
 

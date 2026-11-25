@@ -18,19 +18,19 @@ A **class** in `Root.Township`, `Alta.Logging.Targets`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerConsoleLogTarget()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerConsoleLogTarget()"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logsent" /><code>{"static event "}<Link to="/game-api/types/alta-console/loghandler">{"LogHandler"}</Link>{" LogSent"}</code> |  |
-| <Link id="m-logsentraw" /><code>{"static event "}<Link to="/game-api/types/alta-console/rawloghandler">{"RawLogHandler"}</Link>{" LogSentRaw"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-logsent" /><code>{"static event "}<Link to="/game-api/types/alta-console/loghandler">{"LogHandler"}</Link>{" LogSent"}</code> |
+| <Link id="m-logsentraw" /><code>{"static event "}<Link to="/game-api/types/alta-console/rawloghandler">{"RawLogHandler"}</Link>{" LogSentRaw"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-write" /><code>{"protected override void Write(LogEventInfo logEvent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-write" /><code>{"protected override void Write(LogEventInfo logEvent)"}</code> |

@@ -17,18 +17,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MoveToLayer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MoveToLayer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-layer" /><code>{"private int layer"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-layer" /><code>{"private int layer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+
+</details>

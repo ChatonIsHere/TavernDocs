@@ -20,9 +20,9 @@ A piece that `MiningBaseGenerator` can place in a generated mine: its size in ti
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StructurePart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StructurePart()"}</code> |
 
 ## Fields
 
@@ -31,23 +31,31 @@ A piece that `MiningBaseGenerator` can place in a generated mine: its size in ti
 | <Link id="m-x" /><code>{"int x"}</code> | Public grid coordinate field; not used in this class. |
 | <Link id="m-y" /><code>{"int y"}</code> | Public grid coordinate field; not used in this class. |
 | <Link id="m-z" /><code>{"int z"}</code> | Public grid coordinate field; not used in this class. |
-| <Link id="m-air" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] air"}</code> |  |
-| <Link id="m-connecttoair" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] connectToAir"}</code> |  |
-| <Link id="m-connecttosolid" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] connectToSolid"}</code> |  |
-| <Link id="m-depth" /><code>{"private int depth"}</code> |  |
-| <Link id="m-gates" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] gates"}</code> |  |
-| <Link id="m-height" /><code>{"private int height"}</code> |  |
-| <Link id="m-isrequiringgate" /><code>{"private bool isRequiringGate"}</code> |  |
-| <Link id="m-maximumdrop" /><code>{"private int maximumDrop"}</code> |  |
-| <Link id="m-maximumy" /><code>{"private int maximumY"}</code> |  |
-| <Link id="m-minimumdrop" /><code>{"private int minimumDrop"}</code> |  |
-| <Link id="m-minimumy" /><code>{"private int minimumY"}</code> |  |
-| <Link id="m-obsolete" /><code>{"private "}<Link to="/game-api/types/global-s/structurepart-cube">{"StructurePart.Cube"}</Link>{"[] obsolete"}</code> |  |
-| <Link id="m-solid" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] solid"}</code> |  |
-| <Link id="m-structurecubes" /><code>{"private "}<Link to="/game-api/types/global-s/structurecube">{"StructureCube"}</Link>{"[] structureCubes"}</code> |  |
-| <Link id="m-structurecubesparent" /><code>{"private Transform structureCubesParent"}</code> |  |
-| <Link id="m-structuretype" /><code>{"private "}<Link to="/game-api/types/global-s/structuretype">{"StructureType"}</Link>{" structureType"}</code> |  |
-| <Link id="m-width" /><code>{"private int width"}</code> |  |
+
+<details>
+<summary>17 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-air" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] air"}</code> |
+| <Link id="m-connecttoair" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] connectToAir"}</code> |
+| <Link id="m-connecttosolid" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] connectToSolid"}</code> |
+| <Link id="m-depth" /><code>{"private int depth"}</code> |
+| <Link id="m-gates" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] gates"}</code> |
+| <Link id="m-height" /><code>{"private int height"}</code> |
+| <Link id="m-isrequiringgate" /><code>{"private bool isRequiringGate"}</code> |
+| <Link id="m-maximumdrop" /><code>{"private int maximumDrop"}</code> |
+| <Link id="m-maximumy" /><code>{"private int maximumY"}</code> |
+| <Link id="m-minimumdrop" /><code>{"private int minimumDrop"}</code> |
+| <Link id="m-minimumy" /><code>{"private int minimumY"}</code> |
+| <Link id="m-obsolete" /><code>{"private "}<Link to="/game-api/types/global-s/structurepart-cube">{"StructurePart.Cube"}</Link>{"[] obsolete"}</code> |
+| <Link id="m-solid" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] solid"}</code> |
+| <Link id="m-structurecubes" /><code>{"private "}<Link to="/game-api/types/global-s/structurecube">{"StructureCube"}</Link>{"[] structureCubes"}</code> |
+| <Link id="m-structurecubesparent" /><code>{"private Transform structureCubesParent"}</code> |
+| <Link id="m-structuretype" /><code>{"private "}<Link to="/game-api/types/global-s/structuretype">{"StructureType"}</Link>{" structureType"}</code> |
+| <Link id="m-width" /><code>{"private int width"}</code> |
+
+</details>
 
 ## Properties
 
@@ -71,11 +79,16 @@ A piece that `MiningBaseGenerator` can place in a generated mine: its size in ti
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializesides" /><code>{"private void InitializeSides()"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-initializesides" /><code>{"private void InitializeSides()"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>
 
 ## Used in
 

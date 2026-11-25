@@ -20,18 +20,26 @@ Base for trigger areas whose effect follows a network of connected `SpacePoint`s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SpaceDefinedAttribute()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SpaceDefinedAttribute()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-closestpoint" /><code>{"protected T closestPoint"}</code> | The point the player is closest to, or null outside the area. |
-| <Link id="m-localplayer" /><code>{"private Transform localPlayer"}</code> |  |
-| <Link id="m-timestriggered" /><code>{"private int timesTriggered"}</code> |  |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |  |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-localplayer" /><code>{"private Transform localPlayer"}</code> |
+| <Link id="m-timestriggered" /><code>{"private int timesTriggered"}</code> |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
+
+</details>
 
 ## Properties
 
@@ -45,7 +53,15 @@ Base for trigger areas whose effect follows a network of connected `SpacePoint`s
 | --- | --- |
 | <Link id="m-enterarea" /><code>{"protected virtual void EnterArea()"}</code> | Called when the player first enters the trigger. Does nothing by default. |
 | <Link id="m-exitarea" /><code>{"protected abstract void ExitArea()"}</code> | Called when the player leaves the trigger. |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
-| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |  |
 | <Link id="m-sendnewcloserpoint" /><code>{"protected abstract void SendNewCloserPoint(T from, T to, float progress)"}</code> | Called each update with the closest point pair and the blended weight between them. |
-| <Link id="m-updateclosest" /><code>{"private void UpdateClosest()"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
+| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |
+| <Link id="m-updateclosest" /><code>{"private void UpdateClosest()"}</code> |
+
+</details>

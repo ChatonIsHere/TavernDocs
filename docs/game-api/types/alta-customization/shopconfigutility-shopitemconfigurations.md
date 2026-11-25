@@ -17,13 +17,13 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShopItemConfigurations()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShopItemConfigurations()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gamehomeconfiguration" /><code><Link to="/game-api/types/assembly-api-models/gamehomeconfiguration">{"GameHomeConfiguration"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/gamehomeconfiguration">{"GameHomeConfiguration"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-shopconfiguration" /><code><Link to="/game-api/types/assembly-api-models/shoppageconfiguration">{"ShopPageConfiguration"}</Link>{" ShopConfiguration { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gamehomeconfiguration" /><code><Link to="/game-api/types/assembly-api-models/gamehomeconfiguration">{"GameHomeConfiguration"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/gamehomeconfiguration">{"GameHomeConfiguration"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-shopconfiguration" /><code><Link to="/game-api/types/assembly-api-models/shoppageconfiguration">{"ShopPageConfiguration"}</Link>{" ShopConfiguration { get; set; }"}</code> |

@@ -16,19 +16,19 @@ A **struct** in `Root.Township`, `Alta.Crafting`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-basestruct" /><code>{"static "}<Link to="/game-api/types/alta-crafting/nailidentifier">{"NailIdentifier"}</Link>{" baseStruct"}</code> |  |
-| <Link id="m-hitquality" /><code><Link to="/game-api/types/alta-crafting/nailhitquality">{"NailHitquality"}</Link>{" hitQuality"}</code> |  |
-| <Link id="m-nailindex" /><code>{"int nailIndex"}</code> |  |
-| <Link id="m-pieceindex" /><code>{"int pieceIndex"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-basestruct" /><code>{"static "}<Link to="/game-api/types/alta-crafting/nailidentifier">{"NailIdentifier"}</Link>{" baseStruct"}</code> |
+| <Link id="m-hitquality" /><code><Link to="/game-api/types/alta-crafting/nailhitquality">{"NailHitquality"}</Link>{" hitQuality"}</code> |
+| <Link id="m-nailindex" /><code>{"int nailIndex"}</code> |
+| <Link id="m-pieceindex" /><code>{"int pieceIndex"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-setup" /><code>{"static "}<Link to="/game-api/types/alta-crafting/nailidentifier">{"NailIdentifier"}</Link>{" Setup(int pieceIndex, "}<Link to="/game-api/types/alta-crafting/genericcraftingnail">{"GenericCraftingNail"}</Link>{" nail, "}<Link to="/game-api/types/alta-crafting/nailhitquality">{"NailHitquality"}</Link>{" hitQuality)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-setup" /><code>{"static "}<Link to="/game-api/types/alta-crafting/nailidentifier">{"NailIdentifier"}</Link>{" Setup(int pieceIndex, "}<Link to="/game-api/types/alta-crafting/genericcraftingnail">{"GenericCraftingNail"}</Link>{" nail, "}<Link to="/game-api/types/alta-crafting/nailhitquality">{"NailHitquality"}</Link>{" hitQuality)"}</code> |
 
 ## Used in
 

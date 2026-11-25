@@ -16,14 +16,19 @@ A **static class** in `Root.Township`, `Alta.Customization`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-watch" /><code>{"private static Stopwatch watch"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-watch" /><code>{"private static Stopwatch watch"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-measure" /><code>{"static bool Measure()"}</code> |  |
-| <Link id="m-restart" /><code>{"static void Restart()"}</code> |  |
-| <Link id="m-stop" /><code>{"static void Stop()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-measure" /><code>{"static bool Measure()"}</code> |
+| <Link id="m-restart" /><code>{"static void Restart()"}</code> |
+| <Link id="m-stop" /><code>{"static void Stop()"}</code> |

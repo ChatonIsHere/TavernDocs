@@ -21,9 +21,9 @@ Save data for a `LogicIntSender`: its logic link data and its int value.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicIntSaveData()"}</code> |
 
 ## Fields
 

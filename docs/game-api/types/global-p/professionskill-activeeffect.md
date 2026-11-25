@@ -17,31 +17,44 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveEffect("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActiveEffect("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
-| <Link id="m-requestedskills" /><code>{"private HashSet<"}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{"> requestedSkills"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| <Link id="m-requestedskills" /><code>{"private HashSet<"}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{"> requestedSkills"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pooledobject" /><code><Link to="/game-api/types/global-t-x/toolbasedeffectbase">{"ToolBasedEffectBase"}</Link>{" PooledObject { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-pooledobject" /><code><Link to="/game-api/types/global-t-x/toolbasedeffectbase">{"ToolBasedEffectBase"}</Link>{" PooledObject { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forcerelease" /><code>{"void ForceRelease()"}</code> |  |
-| <Link id="m-release" /><code>{"bool Release("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> |  |
-| <Link id="m-request" /><code>{"bool Request("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> |  |
-| <Link id="m-destroyrelease" /><code>{"private void DestroyRelease("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-forcerelease" /><code>{"void ForceRelease()"}</code> |
+| <Link id="m-release" /><code>{"bool Release("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> |
+| <Link id="m-request" /><code>{"bool Request("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroyrelease" /><code>{"private void DestroyRelease("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+
+</details>
 
 ## Used in
 

@@ -17,27 +17,32 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Joint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Joint()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-curlinterval" /><code>{"private float curlInterval"}</code> |  |
-| <Link id="m-length" /><code>{"private float length"}</code> |  |
-| <Link id="m-maximumcurl" /><code>{"private float maximumCurl"}</code> |  |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-curlinterval" /><code>{"private float curlInterval"}</code> |
+| <Link id="m-length" /><code>{"private float length"}</code> |
+| <Link id="m-maximumcurl" /><code>{"private float maximumCurl"}</code> |
+| <Link id="m-radius" /><code>{"private float radius"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-curlinterval-2" /><code>{"float CurlInterval { get; }"}</code> |  |
-| <Link id="m-length-2" /><code>{"float Length { get; }"}</code> |  |
-| <Link id="m-maximumcurl-2" /><code>{"float MaximumCurl { get; }"}</code> |  |
-| <Link id="m-radius-2" /><code>{"float Radius { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-curlinterval-2" /><code>{"float CurlInterval { get; }"}</code> |
+| <Link id="m-length-2" /><code>{"float Length { get; }"}</code> |
+| <Link id="m-maximumcurl-2" /><code>{"float MaximumCurl { get; }"}</code> |
+| <Link id="m-radius-2" /><code>{"float Radius { get; }"}</code> |
 
 ## Used in
 

@@ -18,12 +18,12 @@ An **abstract class** in `Root.Township`, `Alta.Bezier`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SplineDisplayModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SplineDisplayModifier()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> |

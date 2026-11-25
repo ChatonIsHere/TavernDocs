@@ -17,20 +17,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OneTimeUnityEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OneTimeUnityEvent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isinvoked" /><code>{"private bool isInvoked"}</code> |  |
-| <Link id="m-unityevent" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" unityEvent"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isinvoked" /><code>{"private bool isInvoked"}</code> |
+| <Link id="m-unityevent" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" unityEvent"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke()"}</code> |  |
-| <Link id="m-resetevent" /><code>{"void ResetEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invoke" /><code>{"void Invoke()"}</code> |
+| <Link id="m-resetevent" /><code>{"void ResetEvent()"}</code> |

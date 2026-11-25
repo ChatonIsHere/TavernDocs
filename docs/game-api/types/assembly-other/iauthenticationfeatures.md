@@ -17,11 +17,11 @@ An **interface** in `Alta.Platform`, `Alta.Platform`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-accesstokenmode" /><code><Link to="/game-api/types/assembly-other/accesstokenmode">{"AccessTokenMode"}</Link>{" "}<Link to="/game-api/types/assembly-other/accesstokenmode">{"AccessTokenMode"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-supportsaccountlinking" /><code>{"bool SupportsAccountLinking { get; }"}</code> |  |
-| <Link id="m-supportsplatformlogin" /><code>{"bool SupportsPlatformLogin { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-accesstokenmode" /><code><Link to="/game-api/types/assembly-other/accesstokenmode">{"AccessTokenMode"}</Link>{" "}<Link to="/game-api/types/assembly-other/accesstokenmode">{"AccessTokenMode"}</Link>{" { get; }"}</code> |
+| <Link id="m-supportsaccountlinking" /><code>{"bool SupportsAccountLinking { get; }"}</code> |
+| <Link id="m-supportsplatformlogin" /><code>{"bool SupportsPlatformLogin { get; }"}</code> |
 
 ## Used in
 

@@ -17,32 +17,37 @@ A **class** in `Root.Township`, `Alta.PAGaC`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OptionSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OptionSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isweightingindividual" /><code>{"private bool isWeightingIndividual"}</code> |  |
-| <Link id="m-lockmode" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/lockmode">{"LockMode"}</Link>{" lockMode"}</code> |  |
-| <Link id="m-optionsets" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/optionsetchance">{"OptionSetChance"}</Link>{"[] optionSets"}</code> |  |
-| <Link id="m-parts" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/partchance">{"PartChance"}</Link>{"[] parts"}</code> |  |
-| <Link id="m-ruleoptionsets" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ruleoptionsetchance">{"RuleOptionSetChance"}</Link>{"[] ruleOptionSets"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isweightingindividual" /><code>{"private bool isWeightingIndividual"}</code> |
+| <Link id="m-lockmode" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/lockmode">{"LockMode"}</Link>{" lockMode"}</code> |
+| <Link id="m-optionsets" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/optionsetchance">{"OptionSetChance"}</Link>{"[] optionSets"}</code> |
+| <Link id="m-parts" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/partchance">{"PartChance"}</Link>{"[] parts"}</code> |
+| <Link id="m-ruleoptionsets" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ruleoptionsetchance">{"RuleOptionSetChance"}</Link>{"[] ruleOptionSets"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isweightingindividual-2" /><code>{"bool IsWeightingIndividual { get; }"}</code> |  |
-| <Link id="m-lockmode-2" /><code><Link to="/game-api/types/alta-world-generation/lockmode">{"LockMode"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/lockmode">{"LockMode"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isweightingindividual-2" /><code>{"bool IsWeightingIndividual { get; }"}</code> |
+| <Link id="m-lockmode-2" /><code><Link to="/game-api/types/alta-world-generation/lockmode">{"LockMode"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/lockmode">{"LockMode"}</Link>{" { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-evaluate" /><code>{"void Evaluate(List<"}<Link to="/game-api/types/alta-world-generation/part">{"Part"}</Link>{"> results)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-evaluate" /><code>{"void Evaluate(List<"}<Link to="/game-api/types/alta-world-generation/part">{"Part"}</Link>{"> results)"}</code> |
 
 ## Used in
 

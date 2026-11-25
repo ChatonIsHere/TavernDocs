@@ -18,26 +18,39 @@ A **static class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-listpopulations" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{"> ListPopulations()"}</code> |  |
-| <Link id="m-spawn" /><code>{"static "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Spawn("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, int count, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, Vector3 position, Quaternion rotation, string[] arguments)"}</code> |  |
-| <Link id="m-spawnpopulation" /><code>{"static "}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{" SpawnPopulation("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" population, "}<Link to="/game-api/types/alta-console/spawncommandmodule-populationtype">{"SpawnCommandModule.PopulationType"}</Link>{" populationType = 0, float size = 5, int startingPopulation = 5, int maxPopulation = 20)"}</code> |  |
-| <Link id="m-findprefab" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{"> FindPrefab(string name)"}</code> |  |
-| <Link id="m-findprefabandspawn" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> FindPrefabAndSpawn("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, string name, string[] args)"}</code> |  |
-| <Link id="m-for" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> For("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> |  |
-| <Link id="m-for-2" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> For("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, params string[] arguments)"}</code> |  |
-| <Link id="m-infodump" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/prefabinfodump">{"PrefabInfoDump"}</Link>{"> InfoDump() (iterator)"}</code> |  |
-| <Link id="m-parsespawncount" /><code>{"private static int ParseSpawnCount(string[] arguments)"}</code> |  |
-| <Link id="m-spawnatposition" /><code>{"private static "}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{" SpawnAtPosition(Vector3 position, Vector3 rotation, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, params string[] arguments)"}</code> |  |
-| <Link id="m-spawnfull" /><code>{"private static "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnFull("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, int count, Vector3 position, Quaternion? rotation, params string[] arguments)"}</code> |  |
-| <Link id="m-spawnlocal" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> SpawnLocal("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> |  |
-| <Link id="m-spawnstring" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> SpawnString("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players)"}</code> |  |
-| <Link id="m-spawnstring-2" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> SpawnString("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, string value) (iterator)"}</code> |  |
-| <Link id="m-spawnstringraw" /><code>{"private static "}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{" SpawnStringRaw(string value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-listpopulations" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{"> ListPopulations()"}</code> |
+| <Link id="m-spawn" /><code>{"static "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Spawn("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, int count, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, Vector3 position, Quaternion rotation, string[] arguments)"}</code> |
+| <Link id="m-spawnpopulation" /><code>{"static "}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{" SpawnPopulation("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" population, "}<Link to="/game-api/types/alta-console/spawncommandmodule-populationtype">{"SpawnCommandModule.PopulationType"}</Link>{" populationType = 0, float size = 5, int startingPopulation = 5, int maxPopulation = 20)"}</code> |
+
+<details>
+<summary>12 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-findprefab" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{"> FindPrefab(string name)"}</code> |
+| <Link id="m-findprefabandspawn" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> FindPrefabAndSpawn("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, string name, string[] args)"}</code> |
+| <Link id="m-for" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> For("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> |
+| <Link id="m-for-2" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> For("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, params string[] arguments)"}</code> |
+| <Link id="m-infodump" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/prefabinfodump">{"PrefabInfoDump"}</Link>{"> InfoDump() (iterator)"}</code> |
+| <Link id="m-parsespawncount" /><code>{"private static int ParseSpawnCount(string[] arguments)"}</code> |
+| <Link id="m-spawnatposition" /><code>{"private static "}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{" SpawnAtPosition(Vector3 position, Vector3 rotation, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, params string[] arguments)"}</code> |
+| <Link id="m-spawnfull" /><code>{"private static "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnFull("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, int count, Vector3 position, Quaternion? rotation, params string[] arguments)"}</code> |
+| <Link id="m-spawnlocal" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> SpawnLocal("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> |
+| <Link id="m-spawnstring" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> SpawnString("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players)"}</code> |
+| <Link id="m-spawnstring-2" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> SpawnString("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, string value) (iterator)"}</code> |
+| <Link id="m-spawnstringraw" /><code>{"private static "}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{" SpawnStringRaw(string value)"}</code> |
+
+</details>

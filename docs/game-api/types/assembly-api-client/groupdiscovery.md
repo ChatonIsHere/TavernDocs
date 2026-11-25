@@ -16,28 +16,38 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"internal GroupDiscovery("}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"internal GroupDiscovery("}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |
+
+</details>
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-api" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-api" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-opengroups" /><code><Link to="/game-api/types/assembly-api-client/groupget">{"GroupGet"}</Link>{" OpenGroups { get; }"}</code> |  |
-| <Link id="m-publicgroups" /><code><Link to="/game-api/types/assembly-api-client/groupget">{"GroupGet"}</Link>{" PublicGroups { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-opengroups" /><code><Link to="/game-api/types/assembly-api-client/groupget">{"GroupGet"}</Link>{" OpenGroups { get; }"}</code> |
+| <Link id="m-publicgroups" /><code><Link to="/game-api/types/assembly-api-client/groupget">{"GroupGet"}</Link>{" PublicGroups { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getbyidentifier" /><code>{"async Task<"}<Link to="/game-api/types/assembly-api-client/joinablegroupinfo">{"JoinableGroupInfo"}</Link>{"> GetByIdentifier(int groupIdentifier)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getbyidentifier" /><code>{"async Task<"}<Link to="/game-api/types/assembly-api-client/joinablegroupinfo">{"JoinableGroupInfo"}</Link>{"> GetByIdentifier(int groupIdentifier)"}</code> |
 
 ## Used in
 

@@ -16,12 +16,12 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-component" /><code>{"Component = 0"}</code> |  |
-| <Link id="m-interactor" /><code>{"Interactor = 3"}</code> |  |
-| <Link id="m-method" /><code>{"Method = 1"}</code> |  |
-| <Link id="m-value" /><code>{"Value = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-component" /><code>{"Component = 0"}</code> |
+| <Link id="m-interactor" /><code>{"Interactor = 3"}</code> |
+| <Link id="m-method" /><code>{"Method = 1"}</code> |
+| <Link id="m-value" /><code>{"Value = 2"}</code> |
 
 ## Used in
 

@@ -18,23 +18,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactSoundSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactSoundSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-materialswitch" /><code>{"private Switch materialSwitch"}</code> |  |
-| <Link id="m-physicmaterial" /><code>{"private PhysicMaterial physicMaterial"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-materialswitch" /><code>{"private Switch materialSwitch"}</code> |
+| <Link id="m-physicmaterial" /><code>{"private PhysicMaterial physicMaterial"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-materialswitch-2" /><code>{"Switch MaterialSwitch { get; }"}</code> |  |
-| <Link id="m-physicmaterial-2" /><code>{"PhysicMaterial PhysicMaterial { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-materialswitch-2" /><code>{"Switch MaterialSwitch { get; }"}</code> |
+| <Link id="m-physicmaterial-2" /><code>{"PhysicMaterial PhysicMaterial { get; }"}</code> |
 
 ## Used in
 

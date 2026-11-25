@@ -18,22 +18,22 @@ A **class** in `Root.Township`, `Alta.Rendering`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialInstance(Renderer renderer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MaterialInstance(Renderer renderer)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-material" /><code>{"Material Material { get; }"}</code> |  |
-| <Link id="m-renderer" /><code>{"Renderer Renderer { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-material" /><code>{"Material Material { get; }"}</code> |
+| <Link id="m-renderer" /><code>{"Renderer Renderer { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
 
 ## Used in
 

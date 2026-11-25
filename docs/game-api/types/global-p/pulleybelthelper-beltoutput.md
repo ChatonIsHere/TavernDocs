@@ -17,18 +17,18 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BeltOutput(Vector3 tangent, bool isAExternal, bool isBExternal, bool isCExternal)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BeltOutput(Vector3 tangent, bool isAExternal, bool isBExternal, bool isCExternal)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isaexternal" /><code>{"bool isAExternal"}</code> |  |
-| <Link id="m-isbexternal" /><code>{"bool isBExternal"}</code> |  |
-| <Link id="m-iscexternal" /><code>{"bool isCExternal"}</code> |  |
-| <Link id="m-tangent" /><code>{"Vector3 tangent"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isaexternal" /><code>{"bool isAExternal"}</code> |
+| <Link id="m-isbexternal" /><code>{"bool isBExternal"}</code> |
+| <Link id="m-iscexternal" /><code>{"bool isCExternal"}</code> |
+| <Link id="m-tangent" /><code>{"Vector3 tangent"}</code> |
 
 ## Used in
 

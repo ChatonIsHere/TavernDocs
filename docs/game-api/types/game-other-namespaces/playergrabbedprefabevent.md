@@ -18,13 +18,13 @@ A **class** in `Root.Township`, `ATT.EventBus.TownshipEvents`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerGrabbedPrefabEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerGrabbedPrefabEvent()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-grabbedprefab" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" GrabbedPrefab { get; set; }"}</code> |  |
-| <Link id="m-source" /><code>{"virtual "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-grabbedprefab" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" GrabbedPrefab { get; set; }"}</code> |
+| <Link id="m-source" /><code>{"virtual "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; set; }"}</code> |

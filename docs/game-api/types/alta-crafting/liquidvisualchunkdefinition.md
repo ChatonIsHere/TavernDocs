@@ -22,20 +22,25 @@ An asset that spawns floating chunk visuals in a liquid (such as pieces in a ste
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LiquidVisualChunkDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LiquidVisualChunkDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-amountvariation" /><code>{"private float amountVariation"}</code> |  |
-| <Link id="m-assetpathformat" /><code>{"private const string AssetPathFormat"}</code> |  |
-| <Link id="m-numberperserving" /><code>{"private int numberPerServing"}</code> |  |
-| <Link id="m-pooledobjectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" pooledObjectDefinition"}</code> |  |
-| <Link id="m-size" /><code>{"private float size"}</code> |  |
-| <Link id="m-sizevariation" /><code>{"private float sizeVariation"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-amountvariation" /><code>{"private float amountVariation"}</code> |
+| <Link id="m-assetpathformat" /><code>{"private const string AssetPathFormat"}</code> |
+| <Link id="m-numberperserving" /><code>{"private int numberPerServing"}</code> |
+| <Link id="m-pooledobjectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" pooledObjectDefinition"}</code> |
+| <Link id="m-size" /><code>{"private float size"}</code> |
+| <Link id="m-sizevariation" /><code>{"private float sizeVariation"}</code> |
+
+</details>
 
 ## Methods
 
@@ -43,7 +48,15 @@ An asset that spawns floating chunk visuals in a liquid (such as pieces in a ste
 | --- | --- |
 | <Link id="m-getorcreate" /><code>{"static "}<Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{" GetOrCreate(string name, out bool wasCreated)"}</code> | Editor helper to find or create the asset by name. Returns null in this build. |
 | <Link id="m-spawnvisuals" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> SpawnVisuals(Transform targetTransform, float sizeMultiplier) (iterator)"}</code> | Spawns pooled chunk objects under the target, about `numberPerServing` of them, each scaled by the random size times the multiplier. |
-| <Link id="m-getvaluewithrandomvariation" /><code>{"private float GetValueWithRandomVariation(float value, float variation)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getvaluewithrandomvariation" /><code>{"private float GetValueWithRandomVariation(float value, float variation)"}</code> |
+
+</details>
 
 ## Used in
 

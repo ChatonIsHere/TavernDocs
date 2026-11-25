@@ -18,22 +18,22 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ShapeImpactCollector()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ShapeImpactCollector()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sizesquared" /><code>{"abstract float SizeSquared { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-sizesquared" /><code>{"abstract float SizeSquared { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-collectcolliders" /><code>{"abstract IEnumerable<Collider> CollectColliders("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, LayerMask collectionLayer)"}</code> |  |
-| <Link id="m-drawgizmos" /><code>{"virtual void DrawGizmos()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-collectcolliders" /><code>{"abstract IEnumerable<Collider> CollectColliders("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, LayerMask collectionLayer)"}</code> |
+| <Link id="m-drawgizmos" /><code>{"virtual void DrawGizmos()"}</code> |
 
 ## Used in
 

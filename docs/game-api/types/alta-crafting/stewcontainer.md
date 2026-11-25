@@ -17,12 +17,17 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StewContainer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StewContainer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stew" /><code>{"private "}<Link to="/game-api/types/alta-crafting/stewcomponent">{"StewComponent"}</Link>{" stew"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-stew" /><code>{"private "}<Link to="/game-api/types/alta-crafting/stewcomponent">{"StewComponent"}</Link>{" stew"}</code> |
+
+</details>

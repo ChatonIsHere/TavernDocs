@@ -22,56 +22,61 @@ Asset with the rules and feel of a `PickupDock`: which items it accepts, stackin
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PickupDockSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PickupDockSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allowadditionaldocks" /><code>{"private bool allowAdditionalDocks"}</code> |  |
-| <Link id="m-allowcontainerinteraction" /><code>{"private bool allowContainerInteraction"}</code> |  |
-| <Link id="m-allowphysicaljoints" /><code>{"private bool allowPhysicalJoints"}</code> |  |
-| <Link id="m-allowscrafting" /><code>{"private bool allowsCrafting"}</code> |  |
-| <Link id="m-dockedscalemultiplier" /><code>{"private float dockedScaleMultiplier"}</code> |  |
-| <Link id="m-excludedtags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> excludedTags"}</code> |  |
-| <Link id="m-hapticonhover" /><code>{"private float hapticOnHover"}</code> |  |
-| <Link id="m-hapticpassthrough" /><code>{"private AnimationCurve hapticPassThrough"}</code> |  |
-| <Link id="m-haveinteractormemory" /><code>{"private bool haveInteractorMemory"}</code> |  |
-| <Link id="m-hoveroff" /><code>{"private AnimationCurve hoverOff"}</code> |  |
-| <Link id="m-hoveron" /><code>{"private AnimationCurve hoverOn"}</code> |  |
-| <Link id="m-includeditems" /><code>{"private List<"}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"> includedItems"}</code> |  |
-| <Link id="m-includedtags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> includedTags"}</code> |  |
-| <Link id="m-isacceptingtransientpickups" /><code>{"private bool isAcceptingTransientPickups"}</code> |  |
-| <Link id="m-isactiveinequipmentmode" /><code>{"private bool isActiveInEquipmentMode"}</code> |  |
-| <Link id="m-isallowingcrafteditems" /><code>{"private bool isAllowingCraftedItems"}</code> |  |
-| <Link id="m-isallowingcumbersomeitems" /><code>{"private bool isAllowingCumbersomeItems"}</code> |  |
-| <Link id="m-isallowingfirefromtags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> isAllowingFireFromTags"}</code> |  |
-| <Link id="m-isallowingglowingitems" /><code>{"private bool isAllowingGlowingItems"}</code> |  |
-| <Link id="m-isallowingsubdocking" /><code>{"private bool isAllowingSubDocking"}</code> |  |
-| <Link id="m-isdockingautomatic" /><code>{"private bool isDockingAutomatic"}</code> |  |
-| <Link id="m-isgrabbable" /><code>{"private bool isGrabbable"}</code> |  |
-| <Link id="m-ishanddockingallowed" /><code>{"private bool isHandDockingAllowed"}</code> |  |
-| <Link id="m-islengthbasedpositioning" /><code>{"private bool isLengthBasedPositioning"}</code> |  |
-| <Link id="m-ismultistackingallowed" /><code>{"private bool isMultiStackingAllowed"}</code> |  |
-| <Link id="m-isphysicaltriggersonly" /><code>{"private bool isPhysicalTriggersOnly"}</code> |  |
-| <Link id="m-isplayingaddedtosound" /><code>{"private bool isPlayingAddedToSound"}</code> |  |
-| <Link id="m-isplayinghoveroversound" /><code>{"private bool isPlayingHoverOverSound"}</code> |  |
-| <Link id="m-isplayingremovedfromsound" /><code>{"private bool isPlayingRemovedFromSound"}</code> |  |
-| <Link id="m-issnapping" /><code>{"private bool isSnapping"}</code> |  |
-| <Link id="m-isstackingdisabled" /><code>{"private bool isStackingDisabled"}</code> |  |
-| <Link id="m-isstackingenforced" /><code>{"private bool isStackingEnforced"}</code> |  |
-| <Link id="m-istintingwithvalue" /><code>{"private bool isTintingWithValue"}</code> |  |
-| <Link id="m-maintainphysicallayers" /><code>{"private LayerMask maintainPhysicalLayers"}</code> |  |
-| <Link id="m-maxcontainedstacks" /><code>{"private int maxContainedStacks"}</code> |  |
-| <Link id="m-maximumcraftingsize" /><code>{"private int maximumCraftingSize"}</code> |  |
-| <Link id="m-minimumcraftingsize" /><code>{"private int minimumCraftingSize"}</code> |  |
-| <Link id="m-physicaltags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> physicalTags"}</code> |  |
-| <Link id="m-scaleduration" /><code>{"private float scaleDuration"}</code> |  |
-| <Link id="m-scalingtags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> scalingTags"}</code> |  |
-| <Link id="m-subdockpriority" /><code>{"private int subDockPriority"}</code> |  |
-| <Link id="m-visualsettings" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdockvisualsettings">{"PickupDockVisualSettings"}</Link>{" visualSettings"}</code> |  |
+<details>
+<summary>42 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-allowadditionaldocks" /><code>{"private bool allowAdditionalDocks"}</code> |
+| <Link id="m-allowcontainerinteraction" /><code>{"private bool allowContainerInteraction"}</code> |
+| <Link id="m-allowphysicaljoints" /><code>{"private bool allowPhysicalJoints"}</code> |
+| <Link id="m-allowscrafting" /><code>{"private bool allowsCrafting"}</code> |
+| <Link id="m-dockedscalemultiplier" /><code>{"private float dockedScaleMultiplier"}</code> |
+| <Link id="m-excludedtags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> excludedTags"}</code> |
+| <Link id="m-hapticonhover" /><code>{"private float hapticOnHover"}</code> |
+| <Link id="m-hapticpassthrough" /><code>{"private AnimationCurve hapticPassThrough"}</code> |
+| <Link id="m-haveinteractormemory" /><code>{"private bool haveInteractorMemory"}</code> |
+| <Link id="m-hoveroff" /><code>{"private AnimationCurve hoverOff"}</code> |
+| <Link id="m-hoveron" /><code>{"private AnimationCurve hoverOn"}</code> |
+| <Link id="m-includeditems" /><code>{"private List<"}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"> includedItems"}</code> |
+| <Link id="m-includedtags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> includedTags"}</code> |
+| <Link id="m-isacceptingtransientpickups" /><code>{"private bool isAcceptingTransientPickups"}</code> |
+| <Link id="m-isactiveinequipmentmode" /><code>{"private bool isActiveInEquipmentMode"}</code> |
+| <Link id="m-isallowingcrafteditems" /><code>{"private bool isAllowingCraftedItems"}</code> |
+| <Link id="m-isallowingcumbersomeitems" /><code>{"private bool isAllowingCumbersomeItems"}</code> |
+| <Link id="m-isallowingfirefromtags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> isAllowingFireFromTags"}</code> |
+| <Link id="m-isallowingglowingitems" /><code>{"private bool isAllowingGlowingItems"}</code> |
+| <Link id="m-isallowingsubdocking" /><code>{"private bool isAllowingSubDocking"}</code> |
+| <Link id="m-isdockingautomatic" /><code>{"private bool isDockingAutomatic"}</code> |
+| <Link id="m-isgrabbable" /><code>{"private bool isGrabbable"}</code> |
+| <Link id="m-ishanddockingallowed" /><code>{"private bool isHandDockingAllowed"}</code> |
+| <Link id="m-islengthbasedpositioning" /><code>{"private bool isLengthBasedPositioning"}</code> |
+| <Link id="m-ismultistackingallowed" /><code>{"private bool isMultiStackingAllowed"}</code> |
+| <Link id="m-isphysicaltriggersonly" /><code>{"private bool isPhysicalTriggersOnly"}</code> |
+| <Link id="m-isplayingaddedtosound" /><code>{"private bool isPlayingAddedToSound"}</code> |
+| <Link id="m-isplayinghoveroversound" /><code>{"private bool isPlayingHoverOverSound"}</code> |
+| <Link id="m-isplayingremovedfromsound" /><code>{"private bool isPlayingRemovedFromSound"}</code> |
+| <Link id="m-issnapping" /><code>{"private bool isSnapping"}</code> |
+| <Link id="m-isstackingdisabled" /><code>{"private bool isStackingDisabled"}</code> |
+| <Link id="m-isstackingenforced" /><code>{"private bool isStackingEnforced"}</code> |
+| <Link id="m-istintingwithvalue" /><code>{"private bool isTintingWithValue"}</code> |
+| <Link id="m-maintainphysicallayers" /><code>{"private LayerMask maintainPhysicalLayers"}</code> |
+| <Link id="m-maxcontainedstacks" /><code>{"private int maxContainedStacks"}</code> |
+| <Link id="m-maximumcraftingsize" /><code>{"private int maximumCraftingSize"}</code> |
+| <Link id="m-minimumcraftingsize" /><code>{"private int minimumCraftingSize"}</code> |
+| <Link id="m-physicaltags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> physicalTags"}</code> |
+| <Link id="m-scaleduration" /><code>{"private float scaleDuration"}</code> |
+| <Link id="m-scalingtags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> scalingTags"}</code> |
+| <Link id="m-subdockpriority" /><code>{"private int subDockPriority"}</code> |
+| <Link id="m-visualsettings" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdockvisualsettings">{"PickupDockVisualSettings"}</Link>{" visualSettings"}</code> |
+
+</details>
 
 ## Properties
 

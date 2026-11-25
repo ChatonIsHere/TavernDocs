@@ -19,14 +19,14 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ScreenShotAlpha()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ScreenShotAlpha()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ispreviewing" /><code>{"BoolParameter isPreviewing"}</code> |  |
-| <Link id="m-maxdistance" /><code>{"FloatParameter maxDistance"}</code> |  |
-| <Link id="m-mindistance" /><code>{"FloatParameter minDistance"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ispreviewing" /><code>{"BoolParameter isPreviewing"}</code> |
+| <Link id="m-maxdistance" /><code>{"FloatParameter maxDistance"}</code> |
+| <Link id="m-mindistance" /><code>{"FloatParameter minDistance"}</code> |

@@ -19,27 +19,32 @@ A **class** in `Root.Township`, `Alta.Enchantments`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DurabilitySaveEnchantment()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DurabilitySaveEnchantment()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-durabilitylostmultiplier" /><code>{"private float durabilityLostMultiplier"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-durabilitylostmultiplier" /><code>{"private float durabilityLostMultiplier"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-durabilitylostmultiplier-2" /><code>{"float DurabilityLostMultiplier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-durabilitylostmultiplier-2" /><code>{"float DurabilityLostMultiplier { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createnew" /><code>{"protected override "}<Link to="/game-api/types/alta-crafting/ienchantmenteffectapplication">{"IEnchantmentEffectApplication"}</Link>{" CreateNew("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createnew" /><code>{"protected override "}<Link to="/game-api/types/alta-crafting/ienchantmenteffectapplication">{"IEnchantmentEffectApplication"}</Link>{" CreateNew("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment)"}</code> |
 
 ## Used in
 

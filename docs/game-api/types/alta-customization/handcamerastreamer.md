@@ -17,23 +17,28 @@ A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HandCameraStreamer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HandCameraStreamer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-plane" /><code>{"private Renderer plane"}</code> |  |
-| <Link id="m-streamercamera" /><code>{"private Camera streamerCamera"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-plane" /><code>{"private Renderer plane"}</code> |
+| <Link id="m-streamercamera" /><code>{"private Camera streamerCamera"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-startstreaming" /><code>{"void StartStreaming(RenderTexture renderTexture)"}</code> |  |
-| <Link id="m-stopstreaming" /><code>{"void StopStreaming()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-startstreaming" /><code>{"void StartStreaming(RenderTexture renderTexture)"}</code> |
+| <Link id="m-stopstreaming" /><code>{"void StopStreaming()"}</code> |
 
 ## Used in
 

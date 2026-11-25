@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `ATT.Respawn`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onsetspawnpointtoggle" /><code>{"void OnSetSpawnPointToggle("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onsetspawnpointtoggle" /><code>{"void OnSetSpawnPointToggle("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |

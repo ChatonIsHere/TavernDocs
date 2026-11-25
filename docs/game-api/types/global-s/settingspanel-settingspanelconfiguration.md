@@ -17,25 +17,30 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SettingsPanelConfiguration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SettingsPanelConfiguration()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-board" /><code>{"private Transform board"}</code> |  |
-| <Link id="m-isswitchingto" /><code>{"private bool isSwitchingTo"}</code> |  |
-| <Link id="m-lever" /><code>{"private "}<Link to="/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{" lever"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-board" /><code>{"private Transform board"}</code> |
+| <Link id="m-isswitchingto" /><code>{"private bool isSwitchingTo"}</code> |
+| <Link id="m-lever" /><code>{"private "}<Link to="/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{" lever"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-board-2" /><code>{"Transform Board { get; }"}</code> |  |
-| <Link id="m-isswitchingto-2" /><code>{"bool IsSwitchingTo { get; }"}</code> |  |
-| <Link id="m-lever-2" /><code><Link to="/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{" Lever { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-board-2" /><code>{"Transform Board { get; }"}</code> |
+| <Link id="m-isswitchingto-2" /><code>{"bool IsSwitchingTo { get; }"}</code> |
+| <Link id="m-lever-2" /><code><Link to="/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{" Lever { get; }"}</code> |
 
 ## Used in
 

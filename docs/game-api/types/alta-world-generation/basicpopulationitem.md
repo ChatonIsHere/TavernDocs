@@ -20,17 +20,22 @@ Added to a spawned population entity (such as an animal) to tie it to its `Basic
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BasicPopulationItem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BasicPopulationItem()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk"}</code> |  |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> |  |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk"}</code> |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
+
+</details>
 
 ## Properties
 
@@ -53,10 +58,18 @@ Added to a spawned population entity (such as an animal) to tie it to its `Basic
 | <Link id="m-create" /><code>{"static "}<Link to="/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{" Create("}<Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" population, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Adds the component to an entity, links it to the population and, for moving populations, starts checking which chunk it is in. |
 | <Link id="m-remove" /><code>{"void Remove()"}</code> | Raises `Removed` and destroys this component. Called when the entity is destroyed, but not when it is only unloaded. |
 | <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacement)"}</code> | Asks the population to replace this item with another entity. |
-| <Link id="m-checkmoved" /><code>{"private void CheckMoved()"}</code> |  |
-| <Link id="m-destroyedbyscene" /><code>{"private void DestroyedByScene("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-getpositionchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" GetPositionChunk("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
-| <Link id="m-listenformovement" /><code>{"private void ListenForMovement()"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-checkmoved" /><code>{"private void CheckMoved()"}</code> |
+| <Link id="m-destroyedbyscene" /><code>{"private void DestroyedByScene("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| <Link id="m-getpositionchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" GetPositionChunk("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
+| <Link id="m-listenformovement" /><code>{"private void ListenForMovement()"}</code> |
+
+</details>
 
 ## Used in
 

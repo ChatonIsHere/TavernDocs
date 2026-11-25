@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntToBoolData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicIntToBoolData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-correctvalues" /><code>{"int[] correctValues"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-correctvalues" /><code>{"int[] correctValues"}</code> |

@@ -16,21 +16,21 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Metadata()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Metadata()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-annotations" /><code>{"Dictionary<string, string> Annotations { get; set; }"}</code> |  |
-| <Link id="m-creationtime" /><code>{"DateTime? CreationTime { get; set; }"}</code> |  |
-| <Link id="m-generatename" /><code>{"string GenerateName { get; set; }"}</code> |  |
-| <Link id="m-labels" /><code>{"Dictionary<string, string> Labels { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-namespace" /><code>{"string Namespace { get; set; }"}</code> |  |
-| <Link id="m-resourceversion" /><code>{"string ResourceVersion { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-annotations" /><code>{"Dictionary<string, string> Annotations { get; set; }"}</code> |
+| <Link id="m-creationtime" /><code>{"DateTime? CreationTime { get; set; }"}</code> |
+| <Link id="m-generatename" /><code>{"string GenerateName { get; set; }"}</code> |
+| <Link id="m-labels" /><code>{"Dictionary<string, string> Labels { get; set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| <Link id="m-namespace" /><code>{"string Namespace { get; set; }"}</code> |
+| <Link id="m-resourceversion" /><code>{"string ResourceVersion { get; set; }"}</code> |
 
 ## Used in
 

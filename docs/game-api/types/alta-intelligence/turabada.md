@@ -21,9 +21,9 @@ The turabada creature's AI (`Agent<Turabada>`). Caches action sets per set asset
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Turabada()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Turabada()"}</code> |
 
 ## Fields
 
@@ -31,11 +31,19 @@ The turabada creature's AI (`Agent<Turabada>`). Caches action sets per set asset
 | --- | --- |
 | <Link id="m-passiveactionsetmap" /><code>{"static Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/turabada">{"Turabada"}</Link>{">> passiveActionSetMap"}</code> | Built action set for each passive set asset. |
 | <Link id="m-stunnedactionmap" /><code>{"static Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/actiontarget-tagent">{"ActionTarget"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/turabada">{"Turabada"}</Link>{">> stunnedActionMap"}</code> | Built stunned action for each stunned action component. |
-| <Link id="m-body" /><code>{"private Transform body"}</code> |  |
-| <Link id="m-killedanimatorboolean" /><code>{"private string killedAnimatorBoolean"}</code> |  |
-| <Link id="m-passiveactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> |  |
-| <Link id="m-stunnedaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{" stunnedAction"}</code> |  |
-| <Link id="m-viewcone" /><code>{"private "}<Link to="/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" viewCone"}</code> |  |
+
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-body" /><code>{"private Transform body"}</code> |
+| <Link id="m-killedanimatorboolean" /><code>{"private string killedAnimatorBoolean"}</code> |
+| <Link id="m-passiveactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> |
+| <Link id="m-stunnedaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{" stunnedAction"}</code> |
+| <Link id="m-viewcone" /><code>{"private "}<Link to="/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" viewCone"}</code> |
+
+</details>
 
 ## Properties
 

@@ -17,21 +17,31 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LoggedInWindow()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LoggedInWindow()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loggedinpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" loggedInPanel"}</code> |  |
-| <Link id="m-targetwindow" /><code>{"private "}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" targetWindow"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-loggedinpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" loggedInPanel"}</code> |
+| <Link id="m-targetwindow" /><code>{"private "}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" targetWindow"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-handlelogin" /><code>{"private void HandleLogin()"}</code> |  |
-| <Link id="m-windowstarted" /><code>{"private void WindowStarted("}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" obj)"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-handlelogin" /><code>{"private void HandleLogin()"}</code> |
+| <Link id="m-windowstarted" /><code>{"private void WindowStarted("}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" obj)"}</code> |
+
+</details>

@@ -17,31 +17,36 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EffectApplication("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition, "}<Link to="/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EffectApplication("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition, "}<Link to="/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition"}</code> |  |
-| <Link id="m-effectposition" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition"}</code> |
+| <Link id="m-effectposition" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activeeffect" /><code><Link to="/game-api/types/global-p/playereffectparticle">{"PlayerEffectParticle"}</Link>{" ActiveEffect { get; private set; }"}</code> |  |
-| <Link id="m-isvalid" /><code>{"bool IsValid { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-activeeffect" /><code><Link to="/game-api/types/global-p/playereffectparticle">{"PlayerEffectParticle"}</Link>{" ActiveEffect { get; private set; }"}</code> |
+| <Link id="m-isvalid" /><code>{"bool IsValid { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activate" /><code>{"void Activate()"}</code> |  |
-| <Link id="m-deactivate" /><code>{"void Deactivate()"}</code> |  |
-| <Link id="m-setsize" /><code>{"void SetSize(float size)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-activate" /><code>{"void Activate()"}</code> |
+| <Link id="m-deactivate" /><code>{"void Deactivate()"}</code> |
+| <Link id="m-setsize" /><code>{"void SetSize(float size)"}</code> |
 
 ## Used in
 

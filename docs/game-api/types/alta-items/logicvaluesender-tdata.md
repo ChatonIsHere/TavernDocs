@@ -20,16 +20,21 @@ Base for logic components (switches, wires and similar) whose value lives in a s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected LogicValueSender()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected LogicValueSender()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code>{"private TData data"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-data" /><code>{"private TData data"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
@@ -48,7 +53,15 @@ Base for logic components (switches, wires and similar) whose value lives in a s
 | <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: finds the logic manager (parent or global) and reads the current value if data exists. |
 | <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Editor: links prefab instances to a data record, or clears the id on prefab assets. |
 | <Link id="m-readdatavalue" /><code>{"protected abstract void ReadDataValue()"}</code> | Subclass: applies the record's value to the component. Also called when the record changes from elsewhere. |
-| <Link id="m-setupdata" /><code>{"private void SetupData()"}</code> |  |
-| <Link id="m-unsubscribe" /><code>{"private void Unsubscribe("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
 | <Link id="m-updatedatavalue" /><code>{"protected void UpdateDataValue()"}</code> | Writes the component's value into the record and notifies listeners. |
 | <Link id="m-writedatavalue" /><code>{"protected abstract void WriteDataValue()"}</code> | Subclass: copies the component's value into the record. |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-setupdata" /><code>{"private void SetupData()"}</code> |
+| <Link id="m-unsubscribe" /><code>{"private void Unsubscribe("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+
+</details>

@@ -16,29 +16,29 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gestures" /><code>{"Gestures = 11"}</code> |  |
-| <Link id="m-grab" /><code>{"Grab = 1"}</code> |  |
-| <Link id="m-grabassist" /><code>{"GrabAssist = 19"}</code> |  |
-| <Link id="m-hardgrab" /><code>{"HardGrab = 18"}</code> |  |
-| <Link id="m-lockforgestures" /><code>{"LockForGestures = 9"}</code> |  |
-| <Link id="m-metamenu" /><code>{"MetaMenu = 2"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-releasetogglegrab" /><code>{"ReleaseToggleGrab = 15"}</code> |  |
-| <Link id="m-senditemleft" /><code>{"SendItemLeft = 8"}</code> |  |
-| <Link id="m-senditemright" /><code>{"SendItemRight = 7"}</code> |  |
-| <Link id="m-smoothlocomotion" /><code>{"SmoothLocomotion = 10"}</code> |  |
-| <Link id="m-snapturnleft" /><code>{"SnapTurnLeft = 6"}</code> |  |
-| <Link id="m-snapturnright" /><code>{"SnapTurnRight = 5"}</code> |  |
-| <Link id="m-swipeexecuted" /><code>{"SwipeExecuted = 16"}</code> |  |
-| <Link id="m-swipemotions" /><code>{"SwipeMotions = 12"}</code> |  |
-| <Link id="m-swipetouch" /><code>{"SwipeTouch = 13"}</code> |  |
-| <Link id="m-takephoto" /><code>{"TakePhoto = 17"}</code> |  |
-| <Link id="m-teleport" /><code>{"Teleport = 3"}</code> |  |
-| <Link id="m-togglegrab" /><code>{"ToggleGrab = 4"}</code> |  |
-| <Link id="m-togglemetamenu" /><code>{"ToggleMetaMenu = 20"}</code> |  |
-| <Link id="m-togglerun" /><code>{"ToggleRun = 14"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gestures" /><code>{"Gestures = 11"}</code> |
+| <Link id="m-grab" /><code>{"Grab = 1"}</code> |
+| <Link id="m-grabassist" /><code>{"GrabAssist = 19"}</code> |
+| <Link id="m-hardgrab" /><code>{"HardGrab = 18"}</code> |
+| <Link id="m-lockforgestures" /><code>{"LockForGestures = 9"}</code> |
+| <Link id="m-metamenu" /><code>{"MetaMenu = 2"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-releasetogglegrab" /><code>{"ReleaseToggleGrab = 15"}</code> |
+| <Link id="m-senditemleft" /><code>{"SendItemLeft = 8"}</code> |
+| <Link id="m-senditemright" /><code>{"SendItemRight = 7"}</code> |
+| <Link id="m-smoothlocomotion" /><code>{"SmoothLocomotion = 10"}</code> |
+| <Link id="m-snapturnleft" /><code>{"SnapTurnLeft = 6"}</code> |
+| <Link id="m-snapturnright" /><code>{"SnapTurnRight = 5"}</code> |
+| <Link id="m-swipeexecuted" /><code>{"SwipeExecuted = 16"}</code> |
+| <Link id="m-swipemotions" /><code>{"SwipeMotions = 12"}</code> |
+| <Link id="m-swipetouch" /><code>{"SwipeTouch = 13"}</code> |
+| <Link id="m-takephoto" /><code>{"TakePhoto = 17"}</code> |
+| <Link id="m-teleport" /><code>{"Teleport = 3"}</code> |
+| <Link id="m-togglegrab" /><code>{"ToggleGrab = 4"}</code> |
+| <Link id="m-togglemetamenu" /><code>{"ToggleMetaMenu = 20"}</code> |
+| <Link id="m-togglerun" /><code>{"ToggleRun = 14"}</code> |
 
 ## Used in
 

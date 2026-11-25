@@ -21,20 +21,25 @@ Asset describing how one piece of a choppable tree joins its parent: how it can 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutConnectionType()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WoodcutConnectionType()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bones" /><code>{"private int bones"}</code> |  |
-| <Link id="m-breakthreshold" /><code>{"private float breakThreshold"}</code> |  |
-| <Link id="m-broken" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcuttreemodelevent">{"WoodcutTreeModelEvent"}</Link>{" broken"}</code> |  |
-| <Link id="m-isroot" /><code>{"private bool isRoot"}</code> |  |
-| <Link id="m-isstick" /><code>{"private bool isStick"}</code> |  |
-| <Link id="m-rotations" /><code>{"private int rotations"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bones" /><code>{"private int bones"}</code> |
+| <Link id="m-breakthreshold" /><code>{"private float breakThreshold"}</code> |
+| <Link id="m-broken" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcuttreemodelevent">{"WoodcutTreeModelEvent"}</Link>{" broken"}</code> |
+| <Link id="m-isroot" /><code>{"private bool isRoot"}</code> |
+| <Link id="m-isstick" /><code>{"private bool isStick"}</code> |
+| <Link id="m-rotations" /><code>{"private int rotations"}</code> |
+
+</details>
 
 ## Properties
 

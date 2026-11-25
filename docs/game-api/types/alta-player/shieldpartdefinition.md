@@ -16,35 +16,40 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShieldPartDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShieldPartDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-material" /><code>{"private Material material"}</code> |  |
-| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> |  |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |  |
-| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |  |
-| <Link id="m-scale" /><code>{"private Vector3 scale"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-material" /><code>{"private Material material"}</code> |
+| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |
+| <Link id="m-scale" /><code>{"private Vector3 scale"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-material-2" /><code>{"Material Material { get; }"}</code> |  |
-| <Link id="m-mesh-2" /><code>{"Mesh Mesh { get; }"}</code> |  |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> |  |
-| <Link id="m-rotation-2" /><code>{"Quaternion Rotation { get; }"}</code> |  |
-| <Link id="m-scale-2" /><code>{"Vector3 Scale { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-material-2" /><code>{"Material Material { get; }"}</code> |
+| <Link id="m-mesh-2" /><code>{"Mesh Mesh { get; }"}</code> |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> |
+| <Link id="m-rotation-2" /><code>{"Quaternion Rotation { get; }"}</code> |
+| <Link id="m-scale-2" /><code>{"Vector3 Scale { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-create" /><code>{"void Create(MeshRenderer meshRenderer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-create" /><code>{"void Create(MeshRenderer meshRenderer)"}</code> |
 
 ## Used in
 

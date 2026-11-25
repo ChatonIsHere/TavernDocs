@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cost" /><code>{"float Cost { get; }"}</code> |  |
-| <Link id="m-from" /><code>{"TNode From { get; }"}</code> |  |
-| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; }"}</code> |  |
-| <Link id="m-to" /><code>{"TNode To { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cost" /><code>{"float Cost { get; }"}</code> |
+| <Link id="m-from" /><code>{"TNode From { get; }"}</code> |
+| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; }"}</code> |
+| <Link id="m-to" /><code>{"TNode To { get; }"}</code> |

@@ -16,19 +16,19 @@ A **class** in `Root.Township`, `Alta.Profiling.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ConnectionSimulatorConfiguration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConnectionSimulatorConfiguration()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-inaveragedelay" /><code>{"int inAverageDelay"}</code> |  |
-| <Link id="m-inmindelay" /><code>{"int inMinDelay"}</code> |  |
-| <Link id="m-outaveragedelay" /><code>{"int outAverageDelay"}</code> |  |
-| <Link id="m-outmindelay" /><code>{"int outMinDelay"}</code> |  |
-| <Link id="m-packetloss" /><code>{"float packetLoss"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-inaveragedelay" /><code>{"int inAverageDelay"}</code> |
+| <Link id="m-inmindelay" /><code>{"int inMinDelay"}</code> |
+| <Link id="m-outaveragedelay" /><code>{"int outAverageDelay"}</code> |
+| <Link id="m-outmindelay" /><code>{"int outMinDelay"}</code> |
+| <Link id="m-packetloss" /><code>{"float packetLoss"}</code> |
 
 ## Used in
 

@@ -17,20 +17,28 @@ An **abstract class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PaginatedList("}<Link to="/game-api/types/assembly-api-client/ipagedresult-t">{"IPagedResult"}</Link>{"<T> page, "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PaginatedList("}<Link to="/game-api/types/assembly-api-client/ipagedresult-t">{"IPagedResult"}</Link>{"<T> page, "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-api" /><code>{"protected "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> |  |
-| <Link id="m-page" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/ipagedresult-t">{"IPagedResult"}</Link>{"<T> page"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-api" /><code>{"protected "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-page" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/ipagedresult-t">{"IPagedResult"}</Link>{"<T> page"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getall" /><code>{"Task<IEnumerable<T>> GetAll()"}</code> |  |
-| <Link id="m-getnext" /><code>{"Task<IEnumerable<T>> GetNext()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getall" /><code>{"Task<IEnumerable<T>> GetAll()"}</code> |
+| <Link id="m-getnext" /><code>{"Task<IEnumerable<T>> GetNext()"}</code> |

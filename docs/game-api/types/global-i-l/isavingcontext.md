@@ -17,10 +17,10 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-popcontext" /><code>{"void PopContext()"}</code> |  |
-| <Link id="m-pushcontext" /><code>{"void PushContext()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-popcontext" /><code>{"void PopContext()"}</code> |
+| <Link id="m-pushcontext" /><code>{"void PushContext()"}</code> |
 
 ## Used in
 

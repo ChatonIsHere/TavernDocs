@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, `Alta.PAGaC`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-within" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> Within(IEnumerable<"}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> nodes, int minX, int minY, int minZ, int maxX, int maxY, int maxZ) (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-within" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> Within(IEnumerable<"}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> nodes, int minX, int minY, int minZ, int maxX, int maxY, int maxZ) (iterator)"}</code> |

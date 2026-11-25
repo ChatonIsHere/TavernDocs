@@ -17,22 +17,22 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Bone()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Bone()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animatedbone" /><code>{"Transform animatedBone"}</code> |  |
-| <Link id="m-connectedmassscale" /><code>{"float connectedMassScale"}</code> |  |
-| <Link id="m-dampeningmultiplier" /><code>{"float dampeningMultiplier"}</code> |  |
-| <Link id="m-massscale" /><code>{"float massScale"}</code> |  |
-| <Link id="m-maximumforcemultiplier" /><code>{"float maximumForceMultiplier"}</code> |  |
-| <Link id="m-ragdollbone" /><code>{"Rigidbody ragdollBone"}</code> |  |
-| <Link id="m-ragdolljoint" /><code>{"ConfigurableJoint ragdollJoint"}</code> |  |
-| <Link id="m-torquemultiplier" /><code>{"float torqueMultiplier"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-animatedbone" /><code>{"Transform animatedBone"}</code> |
+| <Link id="m-connectedmassscale" /><code>{"float connectedMassScale"}</code> |
+| <Link id="m-dampeningmultiplier" /><code>{"float dampeningMultiplier"}</code> |
+| <Link id="m-massscale" /><code>{"float massScale"}</code> |
+| <Link id="m-maximumforcemultiplier" /><code>{"float maximumForceMultiplier"}</code> |
+| <Link id="m-ragdollbone" /><code>{"Rigidbody ragdollBone"}</code> |
+| <Link id="m-ragdolljoint" /><code>{"ConfigurableJoint ragdollJoint"}</code> |
+| <Link id="m-torquemultiplier" /><code>{"float torqueMultiplier"}</code> |
 
 ## Used in
 

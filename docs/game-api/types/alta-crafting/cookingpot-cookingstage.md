@@ -17,12 +17,12 @@ An **enum** in `Root.Township`, `Alta.Cooking`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-preparation" /><code>{"Preparation = 0"}</code> |  |
-| <Link id="m-stewing" /><code>{"Stewing = 2"}</code> |  |
-| <Link id="m-stewlocked" /><code>{"StewLocked = 3"}</code> |  |
-| <Link id="m-warmingup" /><code>{"WarmingUp = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-preparation" /><code>{"Preparation = 0"}</code> |
+| <Link id="m-stewing" /><code>{"Stewing = 2"}</code> |
+| <Link id="m-stewlocked" /><code>{"StewLocked = 3"}</code> |
+| <Link id="m-warmingup" /><code>{"WarmingUp = 1"}</code> |
 
 ## Used in
 

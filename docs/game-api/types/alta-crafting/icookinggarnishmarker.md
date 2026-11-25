@@ -17,10 +17,10 @@ An **interface** in `Root.Township`, `Alta.Cooking`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cookingplayer" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" CookingPlayer { get; }"}</code> |  |
-| <Link id="m-garnishitem" /><code><Link to="/game-api/types/alta-crafting/cookinggarnish">{"CookingGarnish"}</Link>{" GarnishItem { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cookingplayer" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" CookingPlayer { get; }"}</code> |
+| <Link id="m-garnishitem" /><code><Link to="/game-api/types/alta-crafting/cookinggarnish">{"CookingGarnish"}</Link>{" GarnishItem { get; }"}</code> |
 
 ## Used in
 

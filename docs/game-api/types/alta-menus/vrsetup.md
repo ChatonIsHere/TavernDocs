@@ -16,14 +16,27 @@ A **static class** in `Root.Township`, `Alta.XR`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-needstosetup" /><code>{"private static bool needsToSetup"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-needstosetup" /><code>{"private static bool needsToSetup"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"static void Setup()"}</code> |  |
-| <Link id="m-updatetransform" /><code>{"static void UpdateTransform(Transform transform, TrackedPoseDriver.TrackedPose pose)"}</code> |  |
-| <Link id="m-updatesubsystems" /><code>{"private static void UpdateSubsystems()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"static void Setup()"}</code> |
+| <Link id="m-updatetransform" /><code>{"static void UpdateTransform(Transform transform, TrackedPoseDriver.TrackedPose pose)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-updatesubsystems" /><code>{"private static void UpdateSubsystems()"}</code> |
+
+</details>

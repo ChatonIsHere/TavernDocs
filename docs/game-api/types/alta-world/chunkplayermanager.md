@@ -16,42 +16,50 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkPlayerManager("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkPlayerManager("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-players" /><code>{"protected HashSet<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> players"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-players" /><code>{"protected HashSet<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> players"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-count" /><code>{"int Count { get; }"}</code> |  |
-| <Link id="m-items" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> Items { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" { get; }"}</code> |
+| <Link id="m-count" /><code>{"int Count { get; }"}</code> |
+| <Link id="m-items" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> Items { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-firstitemadded" /><code>{"event Action FirstItemAdded"}</code> |  |
-| <Link id="m-itemadded" /><code>{"event Action<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> ItemAdded"}</code> |  |
-| <Link id="m-itemremoved" /><code>{"event Action<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> ItemRemoved"}</code> |  |
-| <Link id="m-lastitemremoved" /><code>{"event Action LastItemRemoved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-firstitemadded" /><code>{"event Action FirstItemAdded"}</code> |
+| <Link id="m-itemadded" /><code>{"event Action<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> ItemAdded"}</code> |
+| <Link id="m-itemremoved" /><code>{"event Action<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> ItemRemoved"}</code> |
+| <Link id="m-lastitemremoved" /><code>{"event Action LastItemRemoved"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"bool Add("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-remove" /><code>{"bool Remove("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-removeall" /><code>{"void RemoveAll()"}</code> |  |
-| <Link id="m-onitemadded" /><code>{"private void OnItemAdded("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-onitemremoved" /><code>{"private void OnItemRemoved("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"bool Add("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| <Link id="m-remove" /><code>{"bool Remove("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| <Link id="m-removeall" /><code>{"void RemoveAll()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onitemadded" /><code>{"private void OnItemAdded("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| <Link id="m-onitemremoved" /><code>{"private void OnItemRemoved("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+
+</details>
 
 ## Used in
 

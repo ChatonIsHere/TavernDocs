@@ -16,19 +16,19 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-boolean" /><code>{"Boolean = 0"}</code> |  |
-| <Link id="m-choice" /><code>{"Choice = 6"}</code> |  |
-| <Link id="m-item" /><code>{"Item = 8"}</code> |  |
-| <Link id="m-list" /><code>{"List = 2"}</code> |  |
-| <Link id="m-multichoice" /><code>{"Multichoice = 7"}</code> |  |
-| <Link id="m-number" /><code>{"Number = 4"}</code> |  |
-| <Link id="m-paragraph" /><code>{"Paragraph = 3"}</code> |  |
-| <Link id="m-player" /><code>{"Player = 10"}</code> |  |
-| <Link id="m-rating" /><code>{"Rating = 5"}</code> |  |
-| <Link id="m-server" /><code>{"Server = 9"}</code> |  |
-| <Link id="m-text" /><code>{"Text = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-boolean" /><code>{"Boolean = 0"}</code> |
+| <Link id="m-choice" /><code>{"Choice = 6"}</code> |
+| <Link id="m-item" /><code>{"Item = 8"}</code> |
+| <Link id="m-list" /><code>{"List = 2"}</code> |
+| <Link id="m-multichoice" /><code>{"Multichoice = 7"}</code> |
+| <Link id="m-number" /><code>{"Number = 4"}</code> |
+| <Link id="m-paragraph" /><code>{"Paragraph = 3"}</code> |
+| <Link id="m-player" /><code>{"Player = 10"}</code> |
+| <Link id="m-rating" /><code>{"Rating = 5"}</code> |
+| <Link id="m-server" /><code>{"Server = 9"}</code> |
+| <Link id="m-text" /><code>{"Text = 1"}</code> |
 
 ## Used in
 

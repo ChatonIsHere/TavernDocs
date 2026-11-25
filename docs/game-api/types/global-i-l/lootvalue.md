@@ -18,30 +18,35 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LootValue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LootValue()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dockcolortint" /><code>{"private Color dockColorTint"}</code> |  |
-| <Link id="m-value" /><code>{"private int value"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-dockcolortint" /><code>{"private Color dockColorTint"}</code> |
+| <Link id="m-value" /><code>{"private int value"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dockcolortint-2" /><code>{"Color DockColorTint { get; }"}</code> |  |
-| <Link id="m-subfolder" /><code>{"override string SubFolder { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dockcolortint-2" /><code>{"Color DockColorTint { get; }"}</code> |
+| <Link id="m-subfolder" /><code>{"override string SubFolder { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-op-greaterthan" /><code>{"static bool op_GreaterThan("}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" valueA, "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" ValueB)"}</code> |  |
-| <Link id="m-op-lessthan" /><code>{"static bool op_LessThan("}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" valueA, "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" ValueB)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-op-greaterthan" /><code>{"static bool op_GreaterThan("}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" valueA, "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" ValueB)"}</code> |
+| <Link id="m-op-lessthan" /><code>{"static bool op_LessThan("}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" valueA, "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" ValueB)"}</code> |
 
 ## Used in
 

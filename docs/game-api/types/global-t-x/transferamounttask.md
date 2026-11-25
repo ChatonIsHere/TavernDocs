@@ -19,26 +19,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TransferAmountTask()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TransferAmountTask()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ignorehashes" /><code>{"private List<uint> ignoreHashes"}</code> |  |
-| <Link id="m-isanyprefab" /><code>{"private bool isAnyPrefab"}</code> |  |
-| <Link id="m-targethashes" /><code>{"private List<uint> targetHashes"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ignorehashes" /><code>{"private List<uint> ignoreHashes"}</code> |
+| <Link id="m-isanyprefab" /><code>{"private bool isAnyPrefab"}</code> |
+| <Link id="m-targethashes" /><code>{"private List<uint> targetHashes"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/game-api/types/global-t-x/transferamountargument">{"TransferAmountArgument"}</Link>{" argument)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/game-api/types/global-t-x/transferamountargument">{"TransferAmountArgument"}</Link>{" argument)"}</code> |

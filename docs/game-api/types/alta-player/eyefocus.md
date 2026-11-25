@@ -17,33 +17,46 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EyeFocus()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EyeFocus()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-eyemovementspeed" /><code>{"private float eyeMovementSpeed"}</code> |  |
-| <Link id="m-lastrotation" /><code>{"private Quaternion lastRotation"}</code> |  |
-| <Link id="m-rotationlimit" /><code>{"private RotationLimit rotationLimit"}</code> |  |
-| <Link id="m-target" /><code>{"private Transform target"}</code> |  |
-| <Link id="m-torotate" /><code>{"private Transform toRotate"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-eyemovementspeed" /><code>{"private float eyeMovementSpeed"}</code> |
+| <Link id="m-lastrotation" /><code>{"private Quaternion lastRotation"}</code> |
+| <Link id="m-rotationlimit" /><code>{"private RotationLimit rotationLimit"}</code> |
+| <Link id="m-target" /><code>{"private Transform target"}</code> |
+| <Link id="m-torotate" /><code>{"private Transform toRotate"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-target-2" /><code>{"Transform Target { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-target-2" /><code>{"Transform Target { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"void Setup(Transform toRotate, RotationLimit rotationLimit)"}</code> |  |
-| <Link id="m-forceupdate" /><code>{"private void ForceUpdate()"}</code> |  |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"void Setup(Transform toRotate, RotationLimit rotationLimit)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-forceupdate" /><code>{"private void ForceUpdate()"}</code> |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
+
+</details>
 
 ## Used in
 

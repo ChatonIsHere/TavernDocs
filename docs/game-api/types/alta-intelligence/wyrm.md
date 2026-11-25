@@ -21,25 +21,30 @@ The wyrm creature's AI agent. It switches between a burrowed and an emerged acti
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Wyrm()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Wyrm()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-body" /><code>{"private Transform body"}</code> |  |
-| <Link id="m-burrowedactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" burrowedActions"}</code> |  |
-| <Link id="m-emergedactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" emergedActions"}</code> |  |
-| <Link id="m-head" /><code>{"private Transform head"}</code> |  |
-| <Link id="m-impactors" /><code>{"private "}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"[] impactors"}</code> |  |
-| <Link id="m-killedanimatorboolean" /><code>{"private string killedAnimatorBoolean"}</code> |  |
-| <Link id="m-killedanimatortrigger" /><code>{"private string killedAnimatorTrigger"}</code> |  |
-| <Link id="m-rotationspeed" /><code>{"private float rotationSpeed"}</code> |  |
-| <Link id="m-sametargetmultiplier" /><code>{"private float sameTargetMultiplier"}</code> |  |
-| <Link id="m-syncgameobjects" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncGameObjects"}</code> |  |
-| <Link id="m-wasidle" /><code>{"private bool wasIdle"}</code> |  |
+<details>
+<summary>11 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-body" /><code>{"private Transform body"}</code> |
+| <Link id="m-burrowedactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" burrowedActions"}</code> |
+| <Link id="m-emergedactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" emergedActions"}</code> |
+| <Link id="m-head" /><code>{"private Transform head"}</code> |
+| <Link id="m-impactors" /><code>{"private "}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"[] impactors"}</code> |
+| <Link id="m-killedanimatorboolean" /><code>{"private string killedAnimatorBoolean"}</code> |
+| <Link id="m-killedanimatortrigger" /><code>{"private string killedAnimatorTrigger"}</code> |
+| <Link id="m-rotationspeed" /><code>{"private float rotationSpeed"}</code> |
+| <Link id="m-sametargetmultiplier" /><code>{"private float sameTargetMultiplier"}</code> |
+| <Link id="m-syncgameobjects" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncGameObjects"}</code> |
+| <Link id="m-wasidle" /><code>{"private bool wasIdle"}</code> |
+
+</details>
 
 ## Properties
 
@@ -71,7 +76,15 @@ The wyrm creature's AI agent. It switches between a burrowed and an emerged acti
 | <Link id="m-initializeai" /><code>{"protected override void InitializeAi()"}</code> | Builds or reuses the burrowed and emerged action sets and starts in burrowed mode. |
 | <Link id="m-initializestatic" /><code>{"protected override void InitializeStatic()"}</code> | Creates the shared action set caches. |
 | <Link id="m-killed" /><code>{"protected override void Killed("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthobject)"}</code> | Turns off collision and sets the death animator parameters. |
-| <Link id="m-syncgameobjects-2" /><code>{"private void SyncGameObjects("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool value)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-syncgameobjects-2" /><code>{"private void SyncGameObjects("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool value)"}</code> |
+
+</details>
 
 ## Used in
 

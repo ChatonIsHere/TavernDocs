@@ -17,32 +17,37 @@ A **private class** in `Root.Township`, `Alta.QuickAccessActions`. Reach it thro
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Settings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Settings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-globalboneweights" /><code>{"private SkinWeights globalBoneweights"}</code> |  |
-| <Link id="m-isapplyingonlod0only" /><code>{"private bool isApplyingOnLOD0Only"}</code> |  |
-| <Link id="m-isglobal" /><code>{"private bool isGlobal"}</code> |  |
-| <Link id="m-name" /><code>{"private string name"}</code> |  |
-| <Link id="m-playerweightlevel" /><code>{"private SkinQuality playerWeightLevel"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-globalboneweights" /><code>{"private SkinWeights globalBoneweights"}</code> |
+| <Link id="m-isapplyingonlod0only" /><code>{"private bool isApplyingOnLOD0Only"}</code> |
+| <Link id="m-isglobal" /><code>{"private bool isGlobal"}</code> |
+| <Link id="m-name" /><code>{"private string name"}</code> |
+| <Link id="m-playerweightlevel" /><code>{"private SkinQuality playerWeightLevel"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"void Apply()"}</code> |  |
-| <Link id="m-applyonplayers" /><code>{"static void ApplyOnPlayers(SkinQuality lod0, SkinQuality remanining)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"void Apply()"}</code> |
+| <Link id="m-applyonplayers" /><code>{"static void ApplyOnPlayers(SkinQuality lod0, SkinQuality remanining)"}</code> |
 
 ## Used in
 

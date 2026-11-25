@@ -20,9 +20,9 @@ Harmony patches on the game's console and API checks: they turn off wrist-menu c
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CommandSecurityPatches()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CommandSecurityPatches()"}</code> |
 
 ## Methods
 

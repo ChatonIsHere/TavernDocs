@@ -17,9 +17,9 @@ A **class** in `Root.Township`, `Alta.Crafting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JointPointEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JointPointEvent()"}</code> |
 
 ## Used in
 

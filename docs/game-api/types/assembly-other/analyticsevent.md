@@ -18,32 +18,45 @@ An **abstract class** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected AnalyticsEvent(string eventName, int? userId = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected AnalyticsEvent(string eventName, int? userId = null)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cachedinstruments" /><code>{"private List<"}<Link to="/game-api/types/assembly-other/ianalyticsinstrument">{"IAnalyticsInstrument"}</Link>{"> cachedInstruments"}</code> |  |
-| <Link id="m-data" /><code>{"private readonly "}<Link to="/game-api/types/assembly-other/ianalyticsdata">{"IAnalyticsData"}</Link>{" data"}</code> |  |
-| <Link id="m-instruments" /><code>{"private Queue<"}<Link to="/game-api/types/assembly-other/ianalyticsinstrument">{"IAnalyticsInstrument"}</Link>{"> instruments"}</code> |  |
-| <Link id="m-resolver" /><code>{"private IObjectResolver resolver"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cachedinstruments" /><code>{"private List<"}<Link to="/game-api/types/assembly-other/ianalyticsinstrument">{"IAnalyticsInstrument"}</Link>{"> cachedInstruments"}</code> |
+| <Link id="m-data" /><code>{"private readonly "}<Link to="/game-api/types/assembly-other/ianalyticsdata">{"IAnalyticsData"}</Link>{" data"}</code> |
+| <Link id="m-instruments" /><code>{"private Queue<"}<Link to="/game-api/types/assembly-other/ianalyticsinstrument">{"IAnalyticsInstrument"}</Link>{"> instruments"}</code> |
+| <Link id="m-resolver" /><code>{"private IObjectResolver resolver"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data-2" /><code><Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" Data { get; }"}</code> |  |
-| <Link id="m-eventname" /><code>{"virtual string EventName { get; }"}</code> |  |
-| <Link id="m-userid" /><code>{"int? UserId { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data-2" /><code><Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" Data { get; }"}</code> |
+| <Link id="m-eventname" /><code>{"virtual string EventName { get; }"}</code> |
+| <Link id="m-userid" /><code>{"int? UserId { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addinstrument" /><code>{"void AddInstrument("}<Link to="/game-api/types/assembly-other/ianalyticsinstrument">{"IAnalyticsInstrument"}</Link>{" instrument)"}</code> |  |
-| <Link id="m-addproperty" /><code>{"void AddProperty(string propertyName, object value)"}</code> |  |
-| <Link id="m-inject" /><code>{"void Inject(IObjectResolver resolver)"}</code> |  |
-| <Link id="m-injectcachedinstruments" /><code>{"private void InjectCachedInstruments()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addinstrument" /><code>{"void AddInstrument("}<Link to="/game-api/types/assembly-other/ianalyticsinstrument">{"IAnalyticsInstrument"}</Link>{" instrument)"}</code> |
+| <Link id="m-addproperty" /><code>{"void AddProperty(string propertyName, object value)"}</code> |
+| <Link id="m-inject" /><code>{"void Inject(IObjectResolver resolver)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-injectcachedinstruments" /><code>{"private void InjectCachedInstruments()"}</code> |
+
+</details>

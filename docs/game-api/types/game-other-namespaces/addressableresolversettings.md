@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Features.Meta.Resolvers`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AddressableResolverSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AddressableResolverSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-questerbackerpopup" /><code>{"AssetReference QuesterBackerPopup"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-questerbackerpopup" /><code>{"AssetReference QuesterBackerPopup"}</code> |

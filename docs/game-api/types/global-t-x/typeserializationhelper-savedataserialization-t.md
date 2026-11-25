@@ -18,19 +18,19 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SaveDataSerialization()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SaveDataSerialization()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-t-x/typeserializationhelper-savedataserialization-t">{"TypeSerializationHelper.SaveDataSerialization"}</Link>{"<T> Instance { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-t-x/typeserializationhelper-savedataserialization-t">{"TypeSerializationHelper.SaveDataSerialization"}</Link>{"<T> Instance { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serializeext" /><code>{"void SerializeExt(ref T data, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |  |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref T data, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serializeext" /><code>{"void SerializeExt(ref T data, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref T data, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |

@@ -17,27 +17,27 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GroupInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GroupInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> |  |
-| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |  |
-| <Link id="m-grouptype" /><code><Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |  |
-| <Link id="m-membercount" /><code>{"int MemberCount { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-tags" /><code>{"List<string> Tags { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> |
+| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |
+| <Link id="m-grouptype" /><code><Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |
+| <Link id="m-membercount" /><code>{"int MemberCount { get; set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| <Link id="m-tags" /><code>{"List<string> Tags { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
 
 ## Used in
 

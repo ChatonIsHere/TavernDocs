@@ -18,17 +18,17 @@ A **delegate** in `Root.Township`, `WindowsConsole`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HandlerRoutine(object object, IntPtr method)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HandlerRoutine(object object, IntPtr method)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke("}<Link to="/game-api/types/game-other-namespaces/consolewindow-ctrltype">{"ConsoleWindow.CtrlType"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/consolewindow-ctrltype">{"CtrlType"}</Link>{", AsyncCallback callback, object object)"}</code> |  |
-| <Link id="m-endinvoke" /><code>{"virtual bool EndInvoke(IAsyncResult result)"}</code> |  |
-| <Link id="m-invoke" /><code>{"virtual bool Invoke("}<Link to="/game-api/types/game-other-namespaces/consolewindow-ctrltype">{"ConsoleWindow.CtrlType"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/consolewindow-ctrltype">{"CtrlType"}</Link>{")"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke("}<Link to="/game-api/types/game-other-namespaces/consolewindow-ctrltype">{"ConsoleWindow.CtrlType"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/consolewindow-ctrltype">{"CtrlType"}</Link>{", AsyncCallback callback, object object)"}</code> |
+| <Link id="m-endinvoke" /><code>{"virtual bool EndInvoke(IAsyncResult result)"}</code> |
+| <Link id="m-invoke" /><code>{"virtual bool Invoke("}<Link to="/game-api/types/game-other-namespaces/consolewindow-ctrltype">{"ConsoleWindow.CtrlType"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/consolewindow-ctrltype">{"CtrlType"}</Link>{")"}</code> |
 
 ## Used in
 

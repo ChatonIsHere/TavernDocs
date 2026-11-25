@@ -17,23 +17,23 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ConnectionInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConnectionInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-address" /><code>{"IPAddress Address { get; set; }"}</code> |  |
-| <Link id="m-consoleport" /><code>{"int? ConsolePort { get; set; }"}</code> |  |
-| <Link id="m-gameport" /><code>{"int GamePort { get; set; }"}</code> |  |
-| <Link id="m-localaddress" /><code>{"IPAddress LocalAddress { get; set; }"}</code> |  |
-| <Link id="m-loggingport" /><code>{"int? LoggingPort { get; set; }"}</code> |  |
-| <Link id="m-podname" /><code>{"string PodName { get; set; }"}</code> |  |
-| <Link id="m-serverid" /><code>{"int ServerId { get; set; }"}</code> |  |
-| <Link id="m-webserverport" /><code>{"int? WebServerPort { get; set; }"}</code> |  |
-| <Link id="m-websocketport" /><code>{"int? WebSocketPort { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-address" /><code>{"IPAddress Address { get; set; }"}</code> |
+| <Link id="m-consoleport" /><code>{"int? ConsolePort { get; set; }"}</code> |
+| <Link id="m-gameport" /><code>{"int GamePort { get; set; }"}</code> |
+| <Link id="m-localaddress" /><code>{"IPAddress LocalAddress { get; set; }"}</code> |
+| <Link id="m-loggingport" /><code>{"int? LoggingPort { get; set; }"}</code> |
+| <Link id="m-podname" /><code>{"string PodName { get; set; }"}</code> |
+| <Link id="m-serverid" /><code>{"int ServerId { get; set; }"}</code> |
+| <Link id="m-webserverport" /><code>{"int? WebServerPort { get; set; }"}</code> |
+| <Link id="m-websocketport" /><code>{"int? WebSocketPort { get; set; }"}</code> |
 
 ## Used in
 

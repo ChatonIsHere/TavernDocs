@@ -19,23 +19,36 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntThresholdReceiver()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicIntThresholdReceiver()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentvalue" /><code>{"private bool currentValue"}</code> |  |
-| <Link id="m-isactiveabovethreshold" /><code>{"private bool isActiveAboveThreshold"}</code> |  |
-| <Link id="m-onvalueupdated" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onValueUpdated"}</code> |  |
-| <Link id="m-threshold" /><code>{"private int threshold"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentvalue" /><code>{"private bool currentValue"}</code> |
+| <Link id="m-isactiveabovethreshold" /><code>{"private bool isActiveAboveThreshold"}</code> |
+| <Link id="m-onvalueupdated" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onValueUpdated"}</code> |
+| <Link id="m-threshold" /><code>{"private int threshold"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-getvalue" /><code>{"private bool GetValue()"}</code> |  |
-| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getvalue" /><code>{"private bool GetValue()"}</code> |
+
+</details>

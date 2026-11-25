@@ -17,13 +17,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DummyPlayerController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DummyPlayerController()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-head" /><code>{"override Transform Head { get; }"}</code> |  |
-| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-head" /><code>{"override Transform Head { get; }"}</code> |
+| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> |

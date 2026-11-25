@@ -17,22 +17,27 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BuriedItemTag()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BuriedItemTag()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-buriedoffset" /><code>{"private Vector3 buriedOffset"}</code> |  |
-| <Link id="m-buriedrotation" /><code>{"private Vector3 buriedRotation"}</code> |  |
-| <Link id="m-overridepulldistance" /><code>{"private float overridePullDistance"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-buriedoffset" /><code>{"private Vector3 buriedOffset"}</code> |
+| <Link id="m-buriedrotation" /><code>{"private Vector3 buriedRotation"}</code> |
+| <Link id="m-overridepulldistance" /><code>{"private float overridePullDistance"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-buriedoffset-2" /><code>{"Vector3 BuriedOffset { get; }"}</code> |  |
-| <Link id="m-buriedrotation-2" /><code>{"Vector3 BuriedRotation { get; }"}</code> |  |
-| <Link id="m-overridepulldistance-2" /><code>{"float OverridePullDistance { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-buriedoffset-2" /><code>{"Vector3 BuriedOffset { get; }"}</code> |
+| <Link id="m-buriedrotation-2" /><code>{"Vector3 BuriedRotation { get; }"}</code> |
+| <Link id="m-overridepulldistance-2" /><code>{"float OverridePullDistance { get; }"}</code> |

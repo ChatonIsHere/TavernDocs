@@ -19,27 +19,32 @@ In-world VR keyboard that builds keys from a `VirtualKeyboardSetup`, optionally 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VirtualKeyboard()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VirtualKeyboard()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bendingaxis" /><code>{"private Vector3 bendingAxis"}</code> |  |
-| <Link id="m-bendingnormal" /><code>{"private Vector3 bendingNormal"}</code> |  |
-| <Link id="m-bendingradius" /><code>{"private float bendingRadius"}</code> |  |
-| <Link id="m-doubleshifttimer" /><code>{"private float doubleShiftTimer"}</code> |  |
-| <Link id="m-input" /><code>{"private string input"}</code> |  |
-| <Link id="m-isshiftlocked" /><code>{"private bool isShiftLocked"}</code> |  |
-| <Link id="m-keyparent" /><code>{"private Transform keyParent"}</code> |  |
-| <Link id="m-keyprefab" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkey">{"VirtualKey"}</Link>{" keyPrefab"}</code> |  |
-| <Link id="m-originoffset" /><code>{"private Vector2 originOffset"}</code> |  |
-| <Link id="m-scale" /><code>{"private float scale"}</code> |  |
-| <Link id="m-setup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" setup"}</code> |  |
-| <Link id="m-shiftlockmarker" /><code>{"private GameObject shiftLockMarker"}</code> |  |
-| <Link id="m-timetodoubleshift" /><code>{"private float timeToDoubleShift"}</code> |  |
+<details>
+<summary>13 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bendingaxis" /><code>{"private Vector3 bendingAxis"}</code> |
+| <Link id="m-bendingnormal" /><code>{"private Vector3 bendingNormal"}</code> |
+| <Link id="m-bendingradius" /><code>{"private float bendingRadius"}</code> |
+| <Link id="m-doubleshifttimer" /><code>{"private float doubleShiftTimer"}</code> |
+| <Link id="m-input" /><code>{"private string input"}</code> |
+| <Link id="m-isshiftlocked" /><code>{"private bool isShiftLocked"}</code> |
+| <Link id="m-keyparent" /><code>{"private Transform keyParent"}</code> |
+| <Link id="m-keyprefab" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkey">{"VirtualKey"}</Link>{" keyPrefab"}</code> |
+| <Link id="m-originoffset" /><code>{"private Vector2 originOffset"}</code> |
+| <Link id="m-scale" /><code>{"private float scale"}</code> |
+| <Link id="m-setup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" setup"}</code> |
+| <Link id="m-shiftlockmarker" /><code>{"private GameObject shiftLockMarker"}</code> |
+| <Link id="m-timetodoubleshift" /><code>{"private float timeToDoubleShift"}</code> |
+
+</details>
 
 ## Properties
 
@@ -65,12 +70,20 @@ In-world VR keyboard that builds keys from a `VirtualKeyboardSetup`, optionally 
 | <Link id="m-clearfocus" /><code>{"void ClearFocus()"}</code> | Removes every `InputChanged` and `NextPressed` listener, so the previous field stops receiving input. |
 | <Link id="m-keypressed" /><code>{"void KeyPressed(KeyCode key)"}</code> | Handles a key: letters, digits, symbols, backspace, space, return (raises `NextPressed`) and shift. |
 | <Link id="m-togglesecret" /><code>{"void ToggleSecret(bool isShowingSecret)"}</code> | Sets whether secret text is shown and raises `DisplaySecretToggled`. |
-| <Link id="m-getposition" /><code>{"private void GetPosition(Vector2 original, out Vector3 position, out Quaternion rotation)"}</code> |  |
-| <Link id="m-includeletter" /><code>{"private void IncludeLetter(string letter)"}</code> |  |
-| <Link id="m-includenumber" /><code>{"private void IncludeNumber(int number)"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
-| <Link id="m-pressshift" /><code>{"private void PressShift()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+
+<details>
+<summary>6 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-getposition" /><code>{"private void GetPosition(Vector2 original, out Vector3 position, out Quaternion rotation)"}</code> |
+| <Link id="m-includeletter" /><code>{"private void IncludeLetter(string letter)"}</code> |
+| <Link id="m-includenumber" /><code>{"private void IncludeNumber(int number)"}</code> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+| <Link id="m-pressshift" /><code>{"private void PressShift()"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>
 
 ## Used in
 

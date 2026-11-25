@@ -16,6 +16,6 @@ A **static class** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-convertkcperrortoaltaerror" /><code>{"static "}<Link to="/game-api/types/assembly-other/altanetworkerror">{"AltaNetworkError"}</Link>{" ConvertKcpErrorToAltaError(ErrorCode error)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-convertkcperrortoaltaerror" /><code>{"static "}<Link to="/game-api/types/assembly-other/altanetworkerror">{"AltaNetworkError"}</Link>{" ConvertKcpErrorToAltaError(ErrorCode error)"}</code> |

@@ -18,13 +18,13 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticFilterAttribute(string category, bool isFree)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CosmeticFilterAttribute(string category, bool isFree)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-category" /><code>{"string Category { get; }"}</code> |  |
-| <Link id="m-isfree" /><code>{"bool IsFree { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-category" /><code>{"string Category { get; }"}</code> |
+| <Link id="m-isfree" /><code>{"bool IsFree { get; }"}</code> |

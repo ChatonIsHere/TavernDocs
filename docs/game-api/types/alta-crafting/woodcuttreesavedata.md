@@ -19,13 +19,13 @@ A **internal class** in `Root.Township`, `Alta.Woodcutting`. Reach it through at
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WoodcutTreeSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-preset" /><code><Link to="/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" preset"}</code> |  |
-| <Link id="m-species" /><code><Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-preset" /><code><Link to="/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" preset"}</code> |
+| <Link id="m-species" /><code><Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species"}</code> |

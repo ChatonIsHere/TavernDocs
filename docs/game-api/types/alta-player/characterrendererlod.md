@@ -16,21 +16,26 @@ A **internal class** in `Root.Township`, `Alta.Character.MeshRenderers`. Reach i
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterRendererLOD(Renderer renderer)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"CharacterRendererLOD(Renderer renderer, bool isUsingShell)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CharacterRendererLOD(Renderer renderer)"}</code> |
+| <Link id="m-ctor-2" /><code>{"CharacterRendererLOD(Renderer renderer, bool isUsingShell)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isusingshell" /><code>{"private bool isUsingShell"}</code> |  |
-| <Link id="m-renderer" /><code>{"private Renderer renderer"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isusingshell" /><code>{"private bool isUsingShell"}</code> |
+| <Link id="m-renderer" /><code>{"private Renderer renderer"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isusingshell-2" /><code>{"bool IsUsingShell { get; }"}</code> |  |
-| <Link id="m-renderer-2" /><code>{"Renderer Renderer { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isusingshell-2" /><code>{"bool IsUsingShell { get; }"}</code> |
+| <Link id="m-renderer-2" /><code>{"Renderer Renderer { get; }"}</code> |

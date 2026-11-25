@@ -19,17 +19,22 @@ A snapshot of server performance numbers (FPS, networking, serialization, entity
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerProfilingData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerProfilingData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cachedtime" /><code>{"private float cachedTime"}</code> |  |
-| <Link id="m-processmetrics" /><code>{"private readonly "}<Link to="/game-api/types/global-p/processmetrics">{"ProcessMetrics"}</Link>{" processMetrics"}</code> |  |
-| <Link id="m-serverstarttime" /><code>{"private readonly float serverStartTime"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cachedtime" /><code>{"private float cachedTime"}</code> |
+| <Link id="m-processmetrics" /><code>{"private readonly "}<Link to="/game-api/types/global-p/processmetrics">{"ProcessMetrics"}</Link>{" processMetrics"}</code> |
+| <Link id="m-serverstarttime" /><code>{"private readonly float serverStartTime"}</code> |
+
+</details>
 
 ## Properties
 

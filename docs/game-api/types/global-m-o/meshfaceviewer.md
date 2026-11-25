@@ -17,24 +17,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MeshFaceViewer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MeshFaceViewer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activemax" /><code>{"private int activeMax"}</code> |  |
-| <Link id="m-activemin" /><code>{"private int activeMin"}</code> |  |
-| <Link id="m-clone" /><code>{"private Mesh clone"}</code> |  |
-| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> |  |
-| <Link id="m-maxindex" /><code>{"private int maxIndex"}</code> |  |
-| <Link id="m-minindex" /><code>{"private int minIndex"}</code> |  |
-| <Link id="m-testingmesh" /><code>{"private Mesh testingMesh"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activemax" /><code>{"private int activeMax"}</code> |
+| <Link id="m-activemin" /><code>{"private int activeMin"}</code> |
+| <Link id="m-clone" /><code>{"private Mesh clone"}</code> |
+| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> |
+| <Link id="m-maxindex" /><code>{"private int maxIndex"}</code> |
+| <Link id="m-minindex" /><code>{"private int minIndex"}</code> |
+| <Link id="m-testingmesh" /><code>{"private Mesh testingMesh"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

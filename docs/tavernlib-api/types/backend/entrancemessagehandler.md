@@ -20,9 +20,9 @@ Receives the roles message on a client and keeps the local player's roles. Regis
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EntranceMessageHandler()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EntranceMessageHandler()"}</code> |
 
 ## Properties
 
@@ -32,11 +32,16 @@ Receives the roles message on a client and keeps the local player's roles. Regis
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onrolesreceived" /><code>{"private void OnRolesReceived("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-onsocketcreated" /><code>{"private void OnSocketCreated("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> |  |
-| <Link id="m-setmessagehandlerforconnection" /><code>{"private void SetMessageHandlerForConnection("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onrolesreceived" /><code>{"private void OnRolesReceived("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-onsocketcreated" /><code>{"private void OnSocketCreated("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> |
+| <Link id="m-setmessagehandlerforconnection" /><code>{"private void SetMessageHandlerForConnection("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |
+
+</details>
 
 ## Used in
 

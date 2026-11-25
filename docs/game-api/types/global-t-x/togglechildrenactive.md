@@ -17,12 +17,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ToggleChildrenActive()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ToggleChildrenActive()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-toggleactive" /><code>{"void ToggleActive()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-toggleactive" /><code>{"void ToggleActive()"}</code> |

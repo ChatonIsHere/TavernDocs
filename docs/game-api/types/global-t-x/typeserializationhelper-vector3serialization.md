@@ -18,12 +18,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Vector3Serialization()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Vector3Serialization()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref Vector3 value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref Vector3 value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |

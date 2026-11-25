@@ -17,19 +17,19 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OwnedShopItem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OwnedShopItem()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |  |
-| <Link id="m-isset" /><code>{"bool IsSet { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-quantity" /><code>{"int Quantity { get; set; }"}</code> |  |
-| <Link id="m-sku" /><code>{"string Sku { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |
+| <Link id="m-isset" /><code>{"bool IsSet { get; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| <Link id="m-quantity" /><code>{"int Quantity { get; set; }"}</code> |
+| <Link id="m-sku" /><code>{"string Sku { get; set; }"}</code> |
 
 ## Used in
 

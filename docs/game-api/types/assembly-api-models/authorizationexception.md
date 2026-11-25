@@ -17,9 +17,9 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Excep
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AuthorizationException()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"AuthorizationException(string message)"}</code> |  |
-| <Link id="m-ctor-3" /><code>{"AuthorizationException(string message, Exception innerException)"}</code> |  |
-| <Link id="m-ctor-4" /><code>{"protected AuthorizationException(SerializationInfo info, StreamingContext context)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AuthorizationException()"}</code> |
+| <Link id="m-ctor-2" /><code>{"AuthorizationException(string message)"}</code> |
+| <Link id="m-ctor-3" /><code>{"AuthorizationException(string message, Exception innerException)"}</code> |
+| <Link id="m-ctor-4" /><code>{"protected AuthorizationException(SerializationInfo info, StreamingContext context)"}</code> |

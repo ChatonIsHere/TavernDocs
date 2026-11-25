@@ -18,22 +18,27 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ForestConnectivityIncreaser()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ForestConnectivityIncreaser()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cutchance" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" cutChance"}</code> |  |
-| <Link id="m-heightchancemultiplier" /><code>{"private AnimationCurve heightChanceMultiplier"}</code> |  |
-| <Link id="m-iterations" /><code>{"private int iterations"}</code> |  |
-| <Link id="m-maxcutdistance" /><code>{"private int maxCutDistance"}</code> |  |
-| <Link id="m-maxheightdifference" /><code>{"private float maxHeightDifference"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cutchance" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" cutChance"}</code> |
+| <Link id="m-heightchancemultiplier" /><code>{"private AnimationCurve heightChanceMultiplier"}</code> |
+| <Link id="m-iterations" /><code>{"private int iterations"}</code> |
+| <Link id="m-maxcutdistance" /><code>{"private int maxCutDistance"}</code> |
+| <Link id="m-maxheightdifference" /><code>{"private float maxHeightDifference"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> |

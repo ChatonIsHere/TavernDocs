@@ -23,9 +23,9 @@ An asset listing which atmosphere plugins (sky, fog, ambient audio) to turn on o
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AtmosphereSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AtmosphereSet()"}</code> |
 
 ## Fields
 
@@ -34,8 +34,16 @@ An asset listing which atmosphere plugins (sky, fog, ambient audio) to turn on o
 | <Link id="m-disabledindices" /><code>{"List<int> disabledIndices"}</code> | Plugin indexes to turn off when `disableEverythingElse` is off. |
 | <Link id="m-disableeverythingelse" /><code>{"bool disableEverythingElse"}</code> | Turns off every plugin not in `enabledIndices`. |
 | <Link id="m-enabledindices" /><code>{"List<int> enabledIndices"}</code> | Plugin indexes to turn on. |
-| <Link id="m-atmosphereauxbus" /><code>{"private AuxBus atmosphereAuxBus"}</code> |  |
-| <Link id="m-targetaudiosource" /><code>{"private int targetAudioSource"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-atmosphereauxbus" /><code>{"private AuxBus atmosphereAuxBus"}</code> |
+| <Link id="m-targetaudiosource" /><code>{"private int targetAudioSource"}</code> |
+
+</details>
 
 ## Properties
 

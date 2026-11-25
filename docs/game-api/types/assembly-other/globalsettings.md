@@ -21,15 +21,15 @@ The game's design data as `ScriptableObject` assets: `MenuSettings`, `Networking
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected GlobalSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected GlobalSettings()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializeinstance" /><code>{"abstract void InitializeInstance()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializeinstance" /><code>{"abstract void InitializeInstance()"}</code> |
 
 ## Used in
 

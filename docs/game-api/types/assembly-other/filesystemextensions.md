@@ -17,7 +17,7 @@ A **static class** in `Alta.IO`, `Alta.Utilities`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cleardirectory" /><code>{"static void ClearDirectory(DirectoryInfo directory)"}</code> |  |
-| <Link id="m-fullnamerelativetoproject" /><code>{"static string FullNameRelativeToProject(FileSystemInfo info)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cleardirectory" /><code>{"static void ClearDirectory(DirectoryInfo directory)"}</code> |
+| <Link id="m-fullnamerelativetoproject" /><code>{"static string FullNameRelativeToProject(FileSystemInfo info)"}</code> |

@@ -16,11 +16,11 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actedon" /><code>{"ActedOn = 2"}</code> |  |
-| <Link id="m-awaitingaction" /><code>{"AwaitingAction = 0"}</code> |  |
-| <Link id="m-ignored" /><code>{"Ignored = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-actedon" /><code>{"ActedOn = 2"}</code> |
+| <Link id="m-awaitingaction" /><code>{"AwaitingAction = 0"}</code> |
+| <Link id="m-ignored" /><code>{"Ignored = 1"}</code> |
 
 ## Used in
 

@@ -18,23 +18,28 @@ A **class** in `Root.Township`, `Alta.Analytics.UserSettingsAnalytics`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UserSettingsAnalyticsReporterConfiguration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UserSettingsAnalyticsReporterConfiguration()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enddate" /><code>{"private string endDate"}</code> |  |
-| <Link id="m-reporttitle" /><code>{"private string reportTitle"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-enddate" /><code>{"private string endDate"}</code> |
+| <Link id="m-reporttitle" /><code>{"private string reportTitle"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enddate-2" /><code>{"string EndDate { get; }"}</code> |  |
-| <Link id="m-reporttitle-2" /><code>{"string ReportTitle { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-enddate-2" /><code>{"string EndDate { get; }"}</code> |
+| <Link id="m-reporttitle-2" /><code>{"string ReportTitle { get; }"}</code> |
 
 ## Used in
 

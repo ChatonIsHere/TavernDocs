@@ -21,30 +21,43 @@ A user given by id or username, looked up through Alta's web API on first use an
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UserInfoAccess(int userIdentifier)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"UserInfoAccess(string username)"}</code> |  |
-| <Link id="m-ctor-3" /><code>{"UserInfoAccess("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UserInfoAccess(int userIdentifier)"}</code> |
+| <Link id="m-ctor-2" /><code>{"UserInfoAccess(string username)"}</code> |
+| <Link id="m-ctor-3" /><code>{"UserInfoAccess("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hassearched" /><code>{"private bool hasSearched"}</code> |  |
-| <Link id="m-idcache" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> idCache"}</code> |  |
-| <Link id="m-isbyusername" /><code>{"private bool isByUsername"}</code> |  |
-| <Link id="m-namecache" /><code>{"private static Dictionary<string, "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> nameCache"}</code> |  |
-| <Link id="m-useridentifier" /><code>{"private int userIdentifier"}</code> |  |
-| <Link id="m-userinfo" /><code>{"private "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo"}</code> |  |
-| <Link id="m-username" /><code>{"private string username"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-hassearched" /><code>{"private bool hasSearched"}</code> |
+| <Link id="m-idcache" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> idCache"}</code> |
+| <Link id="m-isbyusername" /><code>{"private bool isByUsername"}</code> |
+| <Link id="m-namecache" /><code>{"private static Dictionary<string, "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> nameCache"}</code> |
+| <Link id="m-useridentifier" /><code>{"private int userIdentifier"}</code> |
+| <Link id="m-userinfo" /><code>{"private "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo"}</code> |
+| <Link id="m-username" /><code>{"private string username"}</code> |
+
+</details>
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-userinfo-2" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" { get; }"}</code> | The user info, or null before the lookup or if not found. |
-| <Link id="m-doesuserexist" /><code>{"private bool DoesUserExist { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-doesuserexist" /><code>{"private bool DoesUserExist { get; }"}</code> |
+
+</details>
 
 ## Methods
 
@@ -54,8 +67,16 @@ A user given by id or username, looked up through Alta's web API on first use an
 | <Link id="m-getusername" /><code>{"async Task<string> GetUsername()"}</code> | The user's name, looking it up if needed. Empty if not found. |
 | <Link id="m-isvalid" /><code>{"async Task<bool> IsValid()"}</code> | Looks up the user if needed and returns whether they exist. |
 | <Link id="m-providedargument" /><code>{"string ProvidedArgument()"}</code> | The id or lowercased username it was made from. |
-| <Link id="m-addtocache" /><code>{"private void AddToCache()"}</code> |  |
-| <Link id="m-searchforuserasync" /><code>{"private async Task SearchForUserAsync()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-addtocache" /><code>{"private void AddToCache()"}</code> |
+| <Link id="m-searchforuserasync" /><code>{"private async Task SearchForUserAsync()"}</code> |
+
+</details>
 
 ## Used in
 

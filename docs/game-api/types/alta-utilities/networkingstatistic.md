@@ -20,21 +20,29 @@ Counter for one kind of network message in the transport metrics: how many were 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkingStatistic()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkingStatistic()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bytesperframe" /><code>{"private float bytesPerFrame"}</code> |  |
-| <Link id="m-bytesperlastsecond" /><code>{"private float bytesPerLastSecond"}</code> |  |
-| <Link id="m-count" /><code>{"private int count"}</code> |  |
 | <Link id="m-numberpaddingwidth" /><code>{"protected const int NumberPaddingWidth"}</code> | Column width for numbers in summaries (10). |
-| <Link id="m-oldbytes" /><code>{"private int oldBytes"}</code> |  |
 | <Link id="m-stringpaddingwidth" /><code>{"protected const int StringPaddingWidth"}</code> | Column width for names in summaries (30). |
-| <Link id="m-totalbytes" /><code>{"private int totalBytes"}</code> |  |
+
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bytesperframe" /><code>{"private float bytesPerFrame"}</code> |
+| <Link id="m-bytesperlastsecond" /><code>{"private float bytesPerLastSecond"}</code> |
+| <Link id="m-count" /><code>{"private int count"}</code> |
+| <Link id="m-oldbytes" /><code>{"private int oldBytes"}</code> |
+| <Link id="m-totalbytes" /><code>{"private int totalBytes"}</code> |
+
+</details>
 
 ## Properties
 

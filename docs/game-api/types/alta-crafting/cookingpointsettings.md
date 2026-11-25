@@ -17,20 +17,25 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CookingPointSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CookingPointSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cookingtemperatures" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" cookingTemperatures"}</code> |  |
-| <Link id="m-isburnable" /><code>{"private bool isBurnable"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cookingtemperatures" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" cookingTemperatures"}</code> |
+| <Link id="m-isburnable" /><code>{"private bool isBurnable"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cookingtemperatures-2" /><code><Link to="/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" "}<Link to="/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-isburnable-2" /><code>{"bool IsBurnable { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cookingtemperatures-2" /><code><Link to="/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" "}<Link to="/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" { get; }"}</code> |
+| <Link id="m-isburnable-2" /><code>{"bool IsBurnable { get; }"}</code> |

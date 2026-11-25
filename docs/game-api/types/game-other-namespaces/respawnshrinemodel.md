@@ -17,36 +17,41 @@ A **class** in `Root.Township`, `ATT.Respawn`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RespawnShrineModel(Guid newShrineId)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"RespawnShrineModel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RespawnShrineModel(Guid newShrineId)"}</code> |
+| <Link id="m-ctor-2" /><code>{"RespawnShrineModel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-subscribers" /><code>{"private List<int> subscribers"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-subscribers" /><code>{"private List<int> subscribers"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fuel" /><code>{"float Fuel { get; private set; }"}</code> |  |
-| <Link id="m-hasconsumedallfuel" /><code>{"bool HasConsumedAllFuel { get; private set; }"}</code> |  |
-| <Link id="m-shrineid" /><code>{"Guid ShrineId { get; private set; }"}</code> |  |
-| <Link id="m-subscribers-2" /><code>{"IEnumerable<int> Subscribers { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fuel" /><code>{"float Fuel { get; private set; }"}</code> |
+| <Link id="m-hasconsumedallfuel" /><code>{"bool HasConsumedAllFuel { get; private set; }"}</code> |
+| <Link id="m-shrineid" /><code>{"Guid ShrineId { get; private set; }"}</code> |
+| <Link id="m-subscribers-2" /><code>{"IEnumerable<int> Subscribers { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addsubscriber" /><code>{"bool AddSubscriber(int playerId)"}</code> |  |
-| <Link id="m-removeallsubscribers" /><code>{"void RemoveAllSubscribers()"}</code> |  |
-| <Link id="m-removesubscriber" /><code>{"bool RemoveSubscriber(int playerId)"}</code> |  |
-| <Link id="m-setfuel" /><code>{"void SetFuel(float value)"}</code> |  |
-| <Link id="m-sethasconsumedallfuel" /><code>{"void SetHasConsumedAllFuel(bool isEmptied)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addsubscriber" /><code>{"bool AddSubscriber(int playerId)"}</code> |
+| <Link id="m-removeallsubscribers" /><code>{"void RemoveAllSubscribers()"}</code> |
+| <Link id="m-removesubscriber" /><code>{"bool RemoveSubscriber(int playerId)"}</code> |
+| <Link id="m-setfuel" /><code>{"void SetFuel(float value)"}</code> |
+| <Link id="m-sethasconsumedallfuel" /><code>{"void SetHasConsumedAllFuel(bool isEmptied)"}</code> |
 
 ## Used in
 

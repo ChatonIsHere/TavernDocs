@@ -17,26 +17,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StaticBoundsOverride()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StaticBoundsOverride()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bounds" /><code>{"private Bounds bounds"}</code> |  |
-| <Link id="m-btnreset" /><code>{"private bool btnReset"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bounds" /><code>{"private Bounds bounds"}</code> |
+| <Link id="m-btnreset" /><code>{"private bool btnReset"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bounds-2" /><code>{"Bounds Bounds { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bounds-2" /><code>{"Bounds Bounds { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-reset" /><code>{"private void Reset()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-reset" /><code>{"private void Reset()"}</code> |
+
+</details>

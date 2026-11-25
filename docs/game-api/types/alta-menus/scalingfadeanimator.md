@@ -17,30 +17,43 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ScalingFadeAnimator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ScalingFadeAnimator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currenttime" /><code>{"private float currentTime"}</code> |  |
-| <Link id="m-enableonfinish" /><code>{"private GameObject enableOnFinish"}</code> |  |
-| <Link id="m-scaleovertime" /><code>{"private AnimationCurve scaleOverTime"}</code> |  |
-| <Link id="m-scaling" /><code>{"private Coroutine scaling"}</code> |  |
-| <Link id="m-targets" /><code>{"private Transform[] targets"}</code> |  |
-| <Link id="m-targettime" /><code>{"private float targetTime"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currenttime" /><code>{"private float currentTime"}</code> |
+| <Link id="m-enableonfinish" /><code>{"private GameObject enableOnFinish"}</code> |
+| <Link id="m-scaleovertime" /><code>{"private AnimationCurve scaleOverTime"}</code> |
+| <Link id="m-scaling" /><code>{"private Coroutine scaling"}</code> |
+| <Link id="m-targets" /><code>{"private Transform[] targets"}</code> |
+| <Link id="m-targettime" /><code>{"private float targetTime"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fade" /><code>{"void Fade(GameObject fadeTo)"}</code> |  |
-| <Link id="m-fade-2" /><code>{"void Fade(GameObject fadeTo, Action onComplete)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-scalingcoroutine" /><code>{"private IEnumerator ScalingCoroutine(Action onComplete = null) (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fade" /><code>{"void Fade(GameObject fadeTo)"}</code> |
+| <Link id="m-fade-2" /><code>{"void Fade(GameObject fadeTo, Action onComplete)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-scalingcoroutine" /><code>{"private IEnumerator ScalingCoroutine(Action onComplete = null) (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

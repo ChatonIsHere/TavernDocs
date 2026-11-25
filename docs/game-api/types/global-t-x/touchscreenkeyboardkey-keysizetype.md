@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-basekey" /><code>{"BaseKey = 0"}</code> |  |
-| <Link id="m-spacebar" /><code>{"SpaceBar = 2"}</code> |  |
-| <Link id="m-suggestionkey" /><code>{"SuggestionKey = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-basekey" /><code>{"BaseKey = 0"}</code> |
+| <Link id="m-spacebar" /><code>{"SpaceBar = 2"}</code> |
+| <Link id="m-suggestionkey" /><code>{"SuggestionKey = 1"}</code> |
 
 ## Used in
 

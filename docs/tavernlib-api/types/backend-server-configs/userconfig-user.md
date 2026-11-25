@@ -20,9 +20,9 @@ One registered player in `users.json`, made the first time they join through the
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"User()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"User()"}</code> |
 
 ## Properties
 
@@ -35,7 +35,15 @@ One registered player in `users.json`, made the first time they join through the
 | <Link id="m-roles" /><code>{"List<string> Roles { get; set; }"}</code> | The player's roles, such as `owner`, `moderator`, `fly`, `dev`, `mod` or `supporter`. |
 | <Link id="m-token" /><code>{"string Token { get; set; }"}</code> | The player's account token, which must match on every join to use this name. |
 | <Link id="m-userid" /><code>{"ulong UserId { get; set; }"}</code> | The player's user id. New accounts get one past the highest in the file, starting at 1000000000. |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |
+
+</details>
 
 ## Methods
 

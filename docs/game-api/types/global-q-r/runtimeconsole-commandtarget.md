@@ -17,10 +17,10 @@ An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-client" /><code>{"Client = 0"}</code> |  |
-| <Link id="m-server" /><code>{"Server = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-client" /><code>{"Client = 0"}</code> |
+| <Link id="m-server" /><code>{"Server = 1"}</code> |
 
 ## Used in
 

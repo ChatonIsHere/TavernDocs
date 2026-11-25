@@ -17,28 +17,33 @@ A **private struct** in `Root.Township`, `Features.Climbing`. Reach it through a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StaminaTracker("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" staminaStat)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StaminaTracker("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" staminaStat)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lastvalue" /><code>{"private float lastValue"}</code> |  |
-| <Link id="m-staminastat" /><code>{"private readonly "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" staminaStat"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-lastvalue" /><code>{"private float lastValue"}</code> |
+| <Link id="m-staminastat" /><code>{"private readonly "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" staminaStat"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-consumedstamina" /><code>{"float ConsumedStamina { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-consumedstamina" /><code>{"float ConsumedStamina { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tick" /><code>{"void Tick()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tick" /><code>{"void Tick()"}</code> |
 
 ## Used in
 

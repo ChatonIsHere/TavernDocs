@@ -16,17 +16,17 @@ A **class** in `Root.Township`, `Alta.Crafting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CraftingPartTracker("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CraftingPartTracker("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-colliders" /><code>{"HashSet<Collider> Colliders { get; }"}</code> |  |
-| <Link id="m-needtoremove" /><code>{"bool NeedToRemove { get; }"}</code> |  |
-| <Link id="m-part" /><code><Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" Part { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-colliders" /><code>{"HashSet<Collider> Colliders { get; }"}</code> |
+| <Link id="m-needtoremove" /><code>{"bool NeedToRemove { get; }"}</code> |
+| <Link id="m-part" /><code><Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" Part { get; }"}</code> |
 
 ## Used in
 

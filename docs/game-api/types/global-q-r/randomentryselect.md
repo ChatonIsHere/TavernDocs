@@ -17,20 +17,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RandomEntrySelect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RandomEntrySelect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-indexvariable" /><code>{"private string indexVariable"}</code> |  |
-| <Link id="m-maximum" /><code>{"private int maximum"}</code> |  |
-| <Link id="m-minimum" /><code>{"private int minimum"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-indexvariable" /><code>{"private string indexVariable"}</code> |
+| <Link id="m-maximum" /><code>{"private int maximum"}</code> |
+| <Link id="m-minimum" /><code>{"private int minimum"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onstatemachineenter" /><code>{"override void OnStateMachineEnter(Animator animator, int stateMachinePathHash)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onstatemachineenter" /><code>{"override void OnStateMachineEnter(Animator animator, int stateMachinePathHash)"}</code> |

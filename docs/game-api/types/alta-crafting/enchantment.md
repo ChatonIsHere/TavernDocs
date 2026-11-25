@@ -21,15 +21,20 @@ An enchantment asset: a list of bindings, each linking triggers to the effects t
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Enchantment()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Enchantment()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bindings" /><code>{"private "}<Link to="/game-api/types/alta-crafting/enchantment-binding">{"Enchantment.Binding"}</Link>{"[] bindings"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-bindings" /><code>{"private "}<Link to="/game-api/types/alta-crafting/enchantment-binding">{"Enchantment.Binding"}</Link>{"[] bindings"}</code> |
+
+</details>
 
 ## Properties
 

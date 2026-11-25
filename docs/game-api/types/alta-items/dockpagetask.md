@@ -18,27 +18,32 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DockPageTask()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DockPageTask()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dockprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> dockPrefabs"}</code> |  |
-| <Link id="m-dockprefabshashes" /><code>{"private HashSet<uint> dockPrefabsHashes"}</code> |  |
-| <Link id="m-targetpages" /><code>{"private List<Object> targetPages"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-dockprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> dockPrefabs"}</code> |
+| <Link id="m-dockprefabshashes" /><code>{"private HashSet<uint> dockPrefabsHashes"}</code> |
+| <Link id="m-targetpages" /><code>{"private List<Object> targetPages"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> |  |
-| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/game-api/types/global-c-d/dockobjecttaskargument">{"DockObjectTaskArgument"}</Link>{" argument)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> |
+| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/game-api/types/global-c-d/dockobjecttaskargument">{"DockObjectTaskArgument"}</Link>{" argument)"}</code> |

@@ -18,24 +18,24 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionRestrictorSaveData2()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionRestrictorSaveData2()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-autojumpbackboundsizesaved" /><code>{"Vector3 autoJumpBackBoundSizeSaved"}</code> |  |
-| <Link id="m-autojumpbackradiussaved" /><code>{"float autoJumpBackRadiusSaved"}</code> |  |
-| <Link id="m-boundssizesaved" /><code>{"Vector3 boundsSizeSaved"}</code> |  |
-| <Link id="m-isusingboundssaved" /><code>{"bool isUsingBoundsSaved"}</code> |  |
-| <Link id="m-radiussaved" /><code>{"float radiusSaved"}</code> |  |
-| <Link id="m-spawnlocationpossaved" /><code>{"Vector3 spawnLocationPosSaved"}</code> |  |
-| <Link id="m-spawnlocationrotsaved" /><code>{"Quaternion spawnLocationRotSaved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-autojumpbackboundsizesaved" /><code>{"Vector3 autoJumpBackBoundSizeSaved"}</code> |
+| <Link id="m-autojumpbackradiussaved" /><code>{"float autoJumpBackRadiusSaved"}</code> |
+| <Link id="m-boundssizesaved" /><code>{"Vector3 boundsSizeSaved"}</code> |
+| <Link id="m-isusingboundssaved" /><code>{"bool isUsingBoundsSaved"}</code> |
+| <Link id="m-radiussaved" /><code>{"float radiusSaved"}</code> |
+| <Link id="m-spawnlocationpossaved" /><code>{"Vector3 spawnLocationPosSaved"}</code> |
+| <Link id="m-spawnlocationrotsaved" /><code>{"Quaternion spawnLocationRotSaved"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

@@ -19,9 +19,9 @@ Base for working out where stacked copies of an item go inside some bounds, from
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected StackingInstructionSetup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected StackingInstructionSetup()"}</code> |
 
 ## Properties
 

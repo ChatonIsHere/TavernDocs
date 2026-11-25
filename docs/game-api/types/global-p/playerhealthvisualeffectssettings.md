@@ -20,33 +20,38 @@ Asset with the local player's health effects: hurt vignette, saturation by healt
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerHealthVisualEffectsSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerHealthVisualEffectsSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-blurrydelay" /><code>{"private float blurryDelay"}</code> |  |
-| <Link id="m-blurryeffect" /><code>{"private "}<Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" blurryEffect"}</code> |  |
-| <Link id="m-chanceofstomachaudio" /><code>{"private float chanceOfStomachAudio"}</code> |  |
-| <Link id="m-deadsaturation" /><code>{"private float deadSaturation"}</code> |  |
-| <Link id="m-fogdensityovervalue" /><code>{"private AnimationCurve fogDensityOverValue"}</code> |  |
-| <Link id="m-hungerdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/hungerstat">{"HungerStat"}</Link>{" hungerDefinition"}</code> |  |
-| <Link id="m-hurtshell" /><code>{"private "}<Link to="/game-api/types/alta-player/shellsetting">{"ShellSetting"}</Link>{" hurtShell"}</code> |  |
-| <Link id="m-hurtshellcurve" /><code>{"private "}<Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" hurtShellCurve"}</code> |  |
-| <Link id="m-isblurringonrepeat" /><code>{"private bool isBlurringOnRepeat"}</code> |  |
-| <Link id="m-maxhungerlevelbeforeblur" /><code>{"private int maxHungerLevelBeforeBlur"}</code> |  |
-| <Link id="m-nightmareeffectcontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playerhealthvisualeffectssettings-nightmareeffectcontroller">{"PlayerHealthVisualEffectsSettings.NightmareEffectController"}</Link>{" nightmareEffectController"}</code> |  |
-| <Link id="m-nightmareeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" nightmareEffectDefinition"}</code> |  |
-| <Link id="m-nightmarestatdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" nightmareStatDefinition"}</code> |  |
-| <Link id="m-recentdamagecooldown" /><code>{"private float recentDamageCooldown"}</code> |  |
-| <Link id="m-recentdamagedefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" recentDamageDefinition"}</code> |  |
-| <Link id="m-repeatstartsonlevel" /><code>{"private int repeatStartsOnLevel"}</code> |  |
-| <Link id="m-saturationcurve" /><code>{"private AnimationCurve saturationCurve"}</code> |  |
-| <Link id="m-vignettedurationcurve" /><code>{"private "}<Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" vignetteDurationCurve"}</code> |  |
-| <Link id="m-visionlerpspeed" /><code>{"private float visionLerpSpeed"}</code> |  |
+<details>
+<summary>19 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-blurrydelay" /><code>{"private float blurryDelay"}</code> |
+| <Link id="m-blurryeffect" /><code>{"private "}<Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" blurryEffect"}</code> |
+| <Link id="m-chanceofstomachaudio" /><code>{"private float chanceOfStomachAudio"}</code> |
+| <Link id="m-deadsaturation" /><code>{"private float deadSaturation"}</code> |
+| <Link id="m-fogdensityovervalue" /><code>{"private AnimationCurve fogDensityOverValue"}</code> |
+| <Link id="m-hungerdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/hungerstat">{"HungerStat"}</Link>{" hungerDefinition"}</code> |
+| <Link id="m-hurtshell" /><code>{"private "}<Link to="/game-api/types/alta-player/shellsetting">{"ShellSetting"}</Link>{" hurtShell"}</code> |
+| <Link id="m-hurtshellcurve" /><code>{"private "}<Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" hurtShellCurve"}</code> |
+| <Link id="m-isblurringonrepeat" /><code>{"private bool isBlurringOnRepeat"}</code> |
+| <Link id="m-maxhungerlevelbeforeblur" /><code>{"private int maxHungerLevelBeforeBlur"}</code> |
+| <Link id="m-nightmareeffectcontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playerhealthvisualeffectssettings-nightmareeffectcontroller">{"PlayerHealthVisualEffectsSettings.NightmareEffectController"}</Link>{" nightmareEffectController"}</code> |
+| <Link id="m-nightmareeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" nightmareEffectDefinition"}</code> |
+| <Link id="m-nightmarestatdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" nightmareStatDefinition"}</code> |
+| <Link id="m-recentdamagecooldown" /><code>{"private float recentDamageCooldown"}</code> |
+| <Link id="m-recentdamagedefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" recentDamageDefinition"}</code> |
+| <Link id="m-repeatstartsonlevel" /><code>{"private int repeatStartsOnLevel"}</code> |
+| <Link id="m-saturationcurve" /><code>{"private AnimationCurve saturationCurve"}</code> |
+| <Link id="m-vignettedurationcurve" /><code>{"private "}<Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" vignetteDurationCurve"}</code> |
+| <Link id="m-visionlerpspeed" /><code>{"private float visionLerpSpeed"}</code> |
+
+</details>
 
 ## Properties
 

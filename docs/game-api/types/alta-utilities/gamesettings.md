@@ -21,9 +21,9 @@ The player's local game options, saved as JSON in the storage folder as `GameCon
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameSettings()"}</code> |
 
 ## Properties
 
@@ -69,9 +69,14 @@ The player's local game options, saved as JSON in the storage folder as `GameCon
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> |
+
+</details>
 
 ## Used in
 

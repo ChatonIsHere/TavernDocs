@@ -20,17 +20,22 @@ A world space popup with a title and a message. Destroys its own GameObject when
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopupBoard()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopupBoard()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-destroygameobjectonclose" /><code>{"private bool destroyGameObjectOnClose"}</code> |  |
-| <Link id="m-messagetext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" messageText"}</code> |  |
-| <Link id="m-titletext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" titleText"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroygameobjectonclose" /><code>{"private bool destroyGameObjectOnClose"}</code> |
+| <Link id="m-messagetext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" messageText"}</code> |
+| <Link id="m-titletext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" titleText"}</code> |
+
+</details>
 
 ## Properties
 

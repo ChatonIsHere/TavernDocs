@@ -17,12 +17,12 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-blockeverything" /><code>{"BlockEverything = 4"}</code> |  |
-| <Link id="m-blockphysicalonly" /><code>{"BlockPhysicalOnly = 2"}</code> |  |
-| <Link id="m-cantblock" /><code>{"CantBlock = 1"}</code> |  |
-| <Link id="m-unblockable" /><code>{"Unblockable = 99"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-blockeverything" /><code>{"BlockEverything = 4"}</code> |
+| <Link id="m-blockphysicalonly" /><code>{"BlockPhysicalOnly = 2"}</code> |
+| <Link id="m-cantblock" /><code>{"CantBlock = 1"}</code> |
+| <Link id="m-unblockable" /><code>{"Unblockable = 99"}</code> |
 
 ## Used in
 

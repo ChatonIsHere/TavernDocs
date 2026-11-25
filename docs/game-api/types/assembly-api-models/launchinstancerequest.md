@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LaunchInstanceRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LaunchInstanceRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-extraarguments" /><code>{"string[] ExtraArguments { get; set; }"}</code> |  |
-| <Link id="m-iswiping" /><code>{"bool IsWiping { get; set; }"}</code> |  |
-| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> |  |
-| <Link id="m-startshell" /><code>{"bool StartShell { get; set; }"}</code> |  |
-| <Link id="m-version" /><code>{"string Version { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-extraarguments" /><code>{"string[] ExtraArguments { get; set; }"}</code> |
+| <Link id="m-iswiping" /><code>{"bool IsWiping { get; set; }"}</code> |
+| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> |
+| <Link id="m-startshell" /><code>{"bool StartShell { get; set; }"}</code> |
+| <Link id="m-version" /><code>{"string Version { get; set; }"}</code> |

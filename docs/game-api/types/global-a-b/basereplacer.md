@@ -17,15 +17,15 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BaseReplacer(string target)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BaseReplacer(string target)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-target" /><code>{"string Target { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-target" /><code>{"string Target { get; private set; }"}</code> |
 
 ## Used in
 

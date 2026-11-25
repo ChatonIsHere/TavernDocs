@@ -18,12 +18,12 @@ An **abstract class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected EnumSettingAccess()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected EnumSettingAccess()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getpossiblevalue" /><code>{"virtual async Task<string[]> GetPossibleValue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getpossiblevalue" /><code>{"virtual async Task<string[]> GetPossibleValue()"}</code> |

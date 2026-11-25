@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializeasremoteplayer" /><code>{"void InitializeAsRemotePlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializeasremoteplayer" /><code>{"void InitializeAsRemotePlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |

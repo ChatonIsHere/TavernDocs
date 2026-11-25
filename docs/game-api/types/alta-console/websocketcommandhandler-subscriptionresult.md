@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, `Alta.Console`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-notfound" /><code>{"NotFound = 2"}</code> |  |
-| <Link id="m-success" /><code>{"Success = 0"}</code> |  |
-| <Link id="m-unchanged" /><code>{"Unchanged = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-notfound" /><code>{"NotFound = 2"}</code> |
+| <Link id="m-success" /><code>{"Success = 0"}</code> |
+| <Link id="m-unchanged" /><code>{"Unchanged = 1"}</code> |
 
 ## Used in
 

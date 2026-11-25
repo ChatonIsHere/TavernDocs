@@ -17,23 +17,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerBestTimes()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerBestTimes()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-definitions" /><code><Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"[] definitions"}</code> |  |
-| <Link id="m-identifier" /><code>{"int identifier"}</code> |  |
-| <Link id="m-times" /><code>{"int[] times"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-definitions" /><code><Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"[] definitions"}</code> |
+| <Link id="m-identifier" /><code>{"int identifier"}</code> |
+| <Link id="m-times" /><code>{"int[] times"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"void Setup(KeyValuePair<int, "}<Link to="/game-api/types/global-i-l/leaderboardmanager-playertracker">{"LeaderboardManager.PlayerTracker"}</Link>{"> tracker)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"void Setup(KeyValuePair<int, "}<Link to="/game-api/types/global-i-l/leaderboardmanager-playertracker">{"LeaderboardManager.PlayerTracker"}</Link>{"> tracker)"}</code> |
 
 ## Used in
 

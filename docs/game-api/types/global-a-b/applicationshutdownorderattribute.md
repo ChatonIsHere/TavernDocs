@@ -18,18 +18,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ApplicationShutdownOrderAttribute(int order)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ApplicationShutdownOrderAttribute(int order)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-shutdownorder" /><code>{"int ShutdownOrder { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-shutdownorder" /><code>{"int ShutdownOrder { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getshutdownorder" /><code>{"static int GetShutdownOrder(Type targetType)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getshutdownorder" /><code>{"static int GetShutdownOrder(Type targetType)"}</code> |

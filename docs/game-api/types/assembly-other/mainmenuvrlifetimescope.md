@@ -18,25 +18,38 @@ A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MainMenuVrLifetimeScope()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MainMenuVrLifetimeScope()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-friendsinvitespanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/friendsinvitespanel">{"FriendsInvitesPanel"}</Link>{" friendsInvitesPanel"}</code> |  |
-| <Link id="m-friendslistpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/friendslistpanel">{"FriendsListPanel"}</Link>{" friendsListPanel"}</code> |  |
-| <Link id="m-friendsrequestspanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/friendsrequestspanel">{"FriendsRequestsPanel"}</Link>{" friendsRequestsPanel"}</code> |  |
-| <Link id="m-inboxpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/inboxpanel">{"InboxPanel"}</Link>{" inboxPanel"}</code> |  |
-| <Link id="m-oculusfriendslistpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/oculusfriendslistpanel">{"OculusFriendsListPanel"}</Link>{" oculusFriendsListPanel"}</code> |  |
-| <Link id="m-recentplayerslistpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/recentplayerslistpanel">{"RecentPlayersListPanel"}</Link>{" recentPlayersListPanel"}</code> |  |
-| <Link id="m-reportspanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/reportspanel">{"ReportsPanel"}</Link>{" reportsPanel"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-friendsinvitespanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/friendsinvitespanel">{"FriendsInvitesPanel"}</Link>{" friendsInvitesPanel"}</code> |
+| <Link id="m-friendslistpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/friendslistpanel">{"FriendsListPanel"}</Link>{" friendsListPanel"}</code> |
+| <Link id="m-friendsrequestspanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/friendsrequestspanel">{"FriendsRequestsPanel"}</Link>{" friendsRequestsPanel"}</code> |
+| <Link id="m-inboxpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/inboxpanel">{"InboxPanel"}</Link>{" inboxPanel"}</code> |
+| <Link id="m-oculusfriendslistpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/oculusfriendslistpanel">{"OculusFriendsListPanel"}</Link>{" oculusFriendsListPanel"}</code> |
+| <Link id="m-recentplayerslistpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/recentplayerslistpanel">{"RecentPlayersListPanel"}</Link>{" recentPlayersListPanel"}</code> |
+| <Link id="m-reportspanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/reportspanel">{"ReportsPanel"}</Link>{" reportsPanel"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-configurescope" /><code>{"protected override void ConfigureScope(IContainerBuilder builder)"}</code> |  |
-| <Link id="m-configurescope-2" /><code>{"private void ConfigureScope(MonoBehaviour targetBehaviour)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-configurescope" /><code>{"protected override void ConfigureScope(IContainerBuilder builder)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-configurescope-2" /><code>{"private void ConfigureScope(MonoBehaviour targetBehaviour)"}</code> |
+
+</details>

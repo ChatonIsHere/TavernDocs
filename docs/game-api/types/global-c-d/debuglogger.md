@@ -17,13 +17,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DebugLogger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DebugLogger()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-log" /><code>{"void Log(string message)"}</code> |  |
-| <Link id="m-logerror" /><code>{"void LogError(string message)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-log" /><code>{"void Log(string message)"}</code> |
+| <Link id="m-logerror" /><code>{"void LogError(string message)"}</code> |

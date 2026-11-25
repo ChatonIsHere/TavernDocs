@@ -20,17 +20,25 @@ A named list of network traffic statistics with per-frame and per-second byte to
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected NetworkingStatisticsList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected NetworkingStatisticsList()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-averagebytesperframealltime" /><code>{"private float averageBytesPerFrameAllTime"}</code> |  |
-| <Link id="m-statistics" /><code>{"protected List<T> statistics"}</code> |  |
-| <Link id="m-totalbytesperlastsecond" /><code>{"private float totalBytesPerLastSecond"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-statistics" /><code>{"protected List<T> statistics"}</code> |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-averagebytesperframealltime" /><code>{"private float averageBytesPerFrameAllTime"}</code> |
+| <Link id="m-totalbytesperlastsecond" /><code>{"private float totalBytesPerLastSecond"}</code> |
+
+</details>
 
 ## Properties
 

@@ -17,24 +17,37 @@ A **class** in `Root.Township`, `Alta.PlayerStates.Transitions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingToDownedTransition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayingToDownedTransition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-killingimpact" /><code>{"private "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingImpact"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-killingimpact" /><code>{"private "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingImpact"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> |  |
-| <Link id="m-destinationpreactivationcallback" /><code>{"protected override void DestinationPreActivationCallback("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" activatedState)"}</code> |  |
-| <Link id="m-handleplayerdowned" /><code>{"private void HandlePlayerDowned("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" impact)"}</code> |  |
-| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> |
+| <Link id="m-destinationpreactivationcallback" /><code>{"protected override void DestinationPreActivationCallback("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" activatedState)"}</code> |
+| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-handleplayerdowned" /><code>{"private void HandlePlayerDowned("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" impact)"}</code> |
+
+</details>
 
 ## Used in
 

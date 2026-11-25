@@ -17,15 +17,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OculusFriendInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OculusFriendInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-oculusidentifier" /><code>{"ulong OculusIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-oculusidentifier" /><code>{"ulong OculusIdentifier { get; set; }"}</code> |
 
 ## Used in
 

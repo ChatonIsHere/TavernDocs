@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterDummySpawner()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CharacterDummySpawner()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-androidtexturesizemultiplier" /><code>{"private float androidTextureSizeMultiplier"}</code> |  |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" prefab"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androidtexturesizemultiplier" /><code>{"private float androidTextureSizeMultiplier"}</code> |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" prefab"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-characterdummy" /><code>{"override "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-characterdummy" /><code>{"override "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" { get; set; }"}</code> |

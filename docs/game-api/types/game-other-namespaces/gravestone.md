@@ -17,34 +17,47 @@ A **class** in `Root.Township`, `ATT.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Gravestone()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Gravestone()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-downedplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" downedPlayer"}</code> |  |
-| <Link id="m-gravemodel" /><code>{"private GameObject graveModel"}</code> |  |
-| <Link id="m-revivalbeacon" /><code>{"private GameObject revivalBeacon"}</code> |  |
-| <Link id="m-syncdownedplayeridentifier" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncDownedPlayerIdentifier"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-downedplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" downedPlayer"}</code> |
+| <Link id="m-gravemodel" /><code>{"private GameObject graveModel"}</code> |
+| <Link id="m-revivalbeacon" /><code>{"private GameObject revivalBeacon"}</code> |
+| <Link id="m-syncdownedplayeridentifier" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncDownedPlayerIdentifier"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-downedplayer-2" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" DownedPlayer { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-downedplayer-2" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" DownedPlayer { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-assigndownedplayertograve" /><code>{"void AssignDownedPlayerToGrave("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-ondisconnected" /><code>{"override void OnDisconnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-syncdownedplayeridentifier-2" /><code>{"private void SyncDownedPlayerIdentifier("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int downedPlayerIdentifier)"}</code> |  |
-| <Link id="m-trydisablegravevisualsonclient" /><code>{"private void TryDisableGraveVisualsOnClient()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-assigndownedplayertograve" /><code>{"void AssignDownedPlayerToGrave("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| <Link id="m-ondisconnected" /><code>{"override void OnDisconnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-syncdownedplayeridentifier-2" /><code>{"private void SyncDownedPlayerIdentifier("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int downedPlayerIdentifier)"}</code> |
+| <Link id="m-trydisablegravevisualsonclient" /><code>{"private void TryDisableGraveVisualsOnClient()"}</code> |
+
+</details>
 
 ## Used in
 

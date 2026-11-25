@@ -16,26 +16,39 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DistanceLODGroupManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DistanceLODGroupManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activegroups" /><code>{"private HashSet<"}<Link to="/game-api/types/global-c-d/distancelodgroup">{"DistanceLODGroup"}</Link>{"> activeGroups"}</code> |  |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activegroups" /><code>{"private HashSet<"}<Link to="/game-api/types/global-c-d/distancelodgroup">{"DistanceLODGroup"}</Link>{"> activeGroups"}</code> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addgroup" /><code>{"void AddGroup("}<Link to="/game-api/types/global-c-d/distancelodgroup">{"DistanceLODGroup"}</Link>{" distanceLODGroup)"}</code> |  |
-| <Link id="m-removegroup" /><code>{"void RemoveGroup("}<Link to="/game-api/types/global-c-d/distancelodgroup">{"DistanceLODGroup"}</Link>{" distanceLODGroup)"}</code> |  |
-| <Link id="m-cull" /><code>{"private void Cull()"}</code> |  |
-| <Link id="m-empty" /><code>{"private void Empty()"}</code> |  |
-| <Link id="m-updateplayer" /><code>{"private void UpdatePlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addgroup" /><code>{"void AddGroup("}<Link to="/game-api/types/global-c-d/distancelodgroup">{"DistanceLODGroup"}</Link>{" distanceLODGroup)"}</code> |
+| <Link id="m-removegroup" /><code>{"void RemoveGroup("}<Link to="/game-api/types/global-c-d/distancelodgroup">{"DistanceLODGroup"}</Link>{" distanceLODGroup)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-cull" /><code>{"private void Cull()"}</code> |
+| <Link id="m-empty" /><code>{"private void Empty()"}</code> |
+| <Link id="m-updateplayer" /><code>{"private void UpdatePlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |
+
+</details>
 
 ## Used in
 

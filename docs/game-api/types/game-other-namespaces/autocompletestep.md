@@ -17,12 +17,12 @@ A **class** in `Root.Township`, `ATT.MicroTutorial.Steps`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AutoCompleteStep()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AutoCompleteStep()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-runforinstance" /><code>{"override async Task RunForInstance("}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" stepInstance)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-runforinstance" /><code>{"override async Task RunForInstance("}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" stepInstance)"}</code> |

@@ -20,28 +20,41 @@ Loads a settings class from a JSON file (with `Resources` defaults), watches the
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SettingsFileAccess(string databaseIdentifier)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"SettingsFileAccess("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string name = null)"}</code> |  |
-| <Link id="m-ctor-3" /><code>{"SettingsFileAccess()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SettingsFileAccess(string databaseIdentifier)"}</code> |
+| <Link id="m-ctor-2" /><code>{"SettingsFileAccess("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string name = null)"}</code> |
+| <Link id="m-ctor-3" /><code>{"SettingsFileAccess()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-file" /><code>{"private "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file"}</code> |  |
-| <Link id="m-filesystemwatcher" /><code>{"private FileSystemWatcher fileSystemWatcher"}</code> |  |
-| <Link id="m-isdummysettings" /><code>{"private readonly bool isDummySettings"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-settings" /><code>{"private TSettings settings"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-file" /><code>{"private "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file"}</code> |
+| <Link id="m-filesystemwatcher" /><code>{"private FileSystemWatcher fileSystemWatcher"}</code> |
+| <Link id="m-isdummysettings" /><code>{"private readonly bool isDummySettings"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-settings" /><code>{"private TSettings settings"}</code> |
+
+</details>
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-settings-2" /><code>{"TSettings Settings { get; }"}</code> | The current settings. Blocks to finish a read that is still in progress. |
-| <Link id="m-alta-core-settings-isettingsfileaccess-basesettings" /><code>{"private ISettings Alta.Core.Settings.ISettingsFileAccess.BaseSettings { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-core-settings-isettingsfileaccess-basesettings" /><code>{"private ISettings Alta.Core.Settings.ISettingsFileAccess.BaseSettings { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -60,11 +73,19 @@ Loads a settings class from a JSON file (with `Resources` defaults), watches the
 | <Link id="m-saveasync" /><code>{"async void SaveAsync()"}</code> | Waits for any read in progress, then writes the file. |
 | <Link id="m-setallsettings" /><code>{"void SetAllSettings(TSettings newSettings)"}</code> | Replaces the whole settings object, saves it and raises the change events. |
 | <Link id="m-tryget" /><code>{"bool TryGet<TValue>(string name, out TValue value)"}</code> | Reads a settings property by name. |
-| <Link id="m-createwatcher" /><code>{"private void CreateWatcher("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string fileName)"}</code> |  |
 | <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> | Destructor: stops and disposes the file watcher. |
-| <Link id="m-loaddefaults" /><code>{"private void LoadDefaults(string name)"}</code> |  |
-| <Link id="m-onfilechanged" /><code>{"private void OnFileChanged(object sender, FileSystemEventArgs e)"}</code> |  |
-| <Link id="m-startread" /><code>{"private async void StartRead()"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-createwatcher" /><code>{"private void CreateWatcher("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string fileName)"}</code> |
+| <Link id="m-loaddefaults" /><code>{"private void LoadDefaults(string name)"}</code> |
+| <Link id="m-onfilechanged" /><code>{"private void OnFileChanged(object sender, FileSystemEventArgs e)"}</code> |
+| <Link id="m-startread" /><code>{"private async void StartRead()"}</code> |
+
+</details>
 
 ## Used in
 

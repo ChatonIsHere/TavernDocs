@@ -18,12 +18,12 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PriorityAttribute(int priority = 0)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PriorityAttribute(int priority = 0)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-priority" /><code>{"int Priority { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-priority" /><code>{"int Priority { get; private set; }"}</code> |

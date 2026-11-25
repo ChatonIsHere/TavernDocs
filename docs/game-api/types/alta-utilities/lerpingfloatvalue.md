@@ -18,20 +18,25 @@ Helper that moves a float towards a target over time and pushes each new value t
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LerpingFloatValue(Action<float> setValue)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LerpingFloatValue(Action<float> setValue)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-current" /><code>{"private float current"}</code> |  |
-| <Link id="m-gettarget" /><code>{"private Func<float> getTarget"}</code> |  |
-| <Link id="m-initial" /><code>{"private float initial"}</code> |  |
-| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |  |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |  |
-| <Link id="m-setvalue" /><code>{"private Action<float> setValue"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-current" /><code>{"private float current"}</code> |
+| <Link id="m-gettarget" /><code>{"private Func<float> getTarget"}</code> |
+| <Link id="m-initial" /><code>{"private float initial"}</code> |
+| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |
+| <Link id="m-progress" /><code>{"private float progress"}</code> |
+| <Link id="m-setvalue" /><code>{"private Action<float> setValue"}</code> |
+
+</details>
 
 ## Properties
 

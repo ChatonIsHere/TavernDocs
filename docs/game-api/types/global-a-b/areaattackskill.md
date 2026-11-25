@@ -21,24 +21,32 @@ Progression skill where a tool hit also damages everything around the hit point,
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AreaAttackSkill()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AreaAttackSkill()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-collectionlayers" /><code>{"private LayerMask collectionLayers"}</code> |  |
-| <Link id="m-collectionoverlevels" /><code>{"private "}<Link to="/game-api/types/global-s/shapeimpactcollector">{"ShapeImpactCollector"}</Link>{"[] collectionOverLevels"}</code> |  |
-| <Link id="m-damageoverradius" /><code>{"private AnimationCurve damageOverRadius"}</code> |  |
-| <Link id="m-dealsdamagetokinematicobjects" /><code>{"private bool dealsDamageToKinematicObjects"}</code> |  |
-| <Link id="m-hitdamagemultiplier" /><code>{"private float hitDamageMultiplier"}</code> |  |
-| <Link id="m-hitobjecteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" hitObjectEffect"}</code> |  |
-| <Link id="m-hitobjectpositions" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/areaattackskill-hitinformation">{"AreaAttackSkill.HitInformation"}</Link>{"> hitObjectPositions"}</code> |  |
 | <Link id="m-minimumeffectiveness" /><code>{"protected float minimumEffectiveness"}</code> | Not read anywhere in this build. |
-| <Link id="m-targetchannels" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] targetChannels"}</code> |  |
 | <Link id="m-toolrequiredchannels" /><code>{"protected "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] toolRequiredChannels"}</code> | Tool channels that allow the skill. |
+
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-collectionlayers" /><code>{"private LayerMask collectionLayers"}</code> |
+| <Link id="m-collectionoverlevels" /><code>{"private "}<Link to="/game-api/types/global-s/shapeimpactcollector">{"ShapeImpactCollector"}</Link>{"[] collectionOverLevels"}</code> |
+| <Link id="m-damageoverradius" /><code>{"private AnimationCurve damageOverRadius"}</code> |
+| <Link id="m-dealsdamagetokinematicobjects" /><code>{"private bool dealsDamageToKinematicObjects"}</code> |
+| <Link id="m-hitdamagemultiplier" /><code>{"private float hitDamageMultiplier"}</code> |
+| <Link id="m-hitobjecteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" hitObjectEffect"}</code> |
+| <Link id="m-hitobjectpositions" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/areaattackskill-hitinformation">{"AreaAttackSkill.HitInformation"}</Link>{"> hitObjectPositions"}</code> |
+| <Link id="m-targetchannels" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] targetChannels"}</code> |
+
+</details>
 
 ## Methods
 

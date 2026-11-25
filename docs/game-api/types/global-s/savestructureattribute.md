@@ -18,13 +18,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SaveStructureAttribute(Type type, uint version)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SaveStructureAttribute(Type type, uint version)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-type" /><code>{"Type Type { get; }"}</code> |  |
-| <Link id="m-version" /><code>{"uint Version { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-type" /><code>{"Type Type { get; }"}</code> |
+| <Link id="m-version" /><code>{"uint Version { get; }"}</code> |

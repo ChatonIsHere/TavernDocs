@@ -17,32 +17,42 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AmbienceAudio()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AmbienceAudio()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ismuted" /><code>{"private bool isMuted"}</code> |  |
-| <Link id="m-volume" /><code>{"private float volume"}</code> |  |
-| <Link id="m-volumevalue" /><code>{"private RTPCValue volumeValue"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ismuted" /><code>{"private bool isMuted"}</code> |
+| <Link id="m-volume" /><code>{"private float volume"}</code> |
+| <Link id="m-volumevalue" /><code>{"private RTPCValue volumeValue"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ismuted-2" /><code>{"bool IsMuted { get; set; }"}</code> |  |
-| <Link id="m-volume-2" /><code>{"float Volume { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ismuted-2" /><code>{"bool IsMuted { get; set; }"}</code> |
+| <Link id="m-volume-2" /><code>{"float Volume { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-assignvolumeproperty" /><code>{"private void AssignVolumeProperty()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-assignvolumeproperty" /><code>{"private void AssignVolumeProperty()"}</code> |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>
 
 ## Used in
 

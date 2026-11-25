@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, `Alta.Character`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fade" /><code>{"Fade = 2"}</code> |  |
-| <Link id="m-instant" /><code>{"Instant = 0"}</code> |  |
-| <Link id="m-lerp" /><code>{"Lerp = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fade" /><code>{"Fade = 2"}</code> |
+| <Link id="m-instant" /><code>{"Instant = 0"}</code> |
+| <Link id="m-lerp" /><code>{"Lerp = 1"}</code> |
 
 ## Used in
 

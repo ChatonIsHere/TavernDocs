@@ -16,23 +16,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AttackTypeMultiplier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AttackTypeMultiplier()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |  |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" type"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" type"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; }"}</code> |  |
-| <Link id="m-type-2" /><code><Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" Type { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; }"}</code> |
+| <Link id="m-type-2" /><code><Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" Type { get; }"}</code> |
 
 ## Used in
 

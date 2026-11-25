@@ -18,12 +18,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ForcedChunking()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ForcedChunking()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isforcedsingleprefab" /><code>{"bool isForcedSinglePrefab"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isforcedsingleprefab" /><code>{"bool isForcedSinglePrefab"}</code> |

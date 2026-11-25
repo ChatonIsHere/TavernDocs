@@ -21,33 +21,38 @@ Network behaviour on an item that can be joined to other parts (blade into guard
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CraftingPart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CraftingPart()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-adddurabilitytoslot" /><code>{"private bool addDurabilityToSlot"}</code> |  |
-| <Link id="m-attemptcraft" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<uint> attemptCraft"}</code> |  |
-| <Link id="m-canblockdefault" /><code>{"private bool canBlockDefault"}</code> |  |
-| <Link id="m-canstoreflipped" /><code>{"private bool canStoreFlipped"}</code> |  |
-| <Link id="m-currentlength" /><code>{"private float currentLength"}</code> |  |
-| <Link id="m-durabilitymodule" /><code>{"private "}<Link to="/game-api/types/global-c-d/durabilitymodule">{"DurabilityModule"}</Link>{" durabilityModule"}</code> |  |
-| <Link id="m-hitdependants" /><code>{"private Component[] hitDependants"}</code> |  |
-| <Link id="m-impactormaps" /><code>{"private "}<Link to="/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{"[] impactorMaps"}</code> |  |
-| <Link id="m-impacttool" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" impactTool"}</code> |  |
-| <Link id="m-insert" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointinsert">{"JointInsert"}</Link>{" insert"}</code> |  |
-| <Link id="m-isbasedoninteraction" /><code>{"private bool isBasedOnInteraction"}</code> |  |
-| <Link id="m-isstarted" /><code>{"private bool isStarted"}</code> |  |
-| <Link id="m-length" /><code>{"private float length"}</code> |  |
-| <Link id="m-lengthaxis" /><code>{"private Vector3 lengthAxis"}</code> |  |
-| <Link id="m-mass" /><code>{"private float mass"}</code> |  |
-| <Link id="m-networkrigidbody" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkrigidbody">{"NetworkRigidbody"}</Link>{" networkRigidbody"}</code> |  |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |  |
-| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |  |
-| <Link id="m-slots" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{"[] slots"}</code> |  |
+<details>
+<summary>19 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-adddurabilitytoslot" /><code>{"private bool addDurabilityToSlot"}</code> |
+| <Link id="m-attemptcraft" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<uint> attemptCraft"}</code> |
+| <Link id="m-canblockdefault" /><code>{"private bool canBlockDefault"}</code> |
+| <Link id="m-canstoreflipped" /><code>{"private bool canStoreFlipped"}</code> |
+| <Link id="m-currentlength" /><code>{"private float currentLength"}</code> |
+| <Link id="m-durabilitymodule" /><code>{"private "}<Link to="/game-api/types/global-c-d/durabilitymodule">{"DurabilityModule"}</Link>{" durabilityModule"}</code> |
+| <Link id="m-hitdependants" /><code>{"private Component[] hitDependants"}</code> |
+| <Link id="m-impactormaps" /><code>{"private "}<Link to="/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{"[] impactorMaps"}</code> |
+| <Link id="m-impacttool" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" impactTool"}</code> |
+| <Link id="m-insert" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointinsert">{"JointInsert"}</Link>{" insert"}</code> |
+| <Link id="m-isbasedoninteraction" /><code>{"private bool isBasedOnInteraction"}</code> |
+| <Link id="m-isstarted" /><code>{"private bool isStarted"}</code> |
+| <Link id="m-length" /><code>{"private float length"}</code> |
+| <Link id="m-lengthaxis" /><code>{"private Vector3 lengthAxis"}</code> |
+| <Link id="m-mass" /><code>{"private float mass"}</code> |
+| <Link id="m-networkrigidbody" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkrigidbody">{"NetworkRigidbody"}</Link>{" networkRigidbody"}</code> |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
+| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |
+| <Link id="m-slots" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{"[] slots"}</code> |
+
+</details>
 
 ## Properties
 
@@ -65,7 +70,15 @@ Network behaviour on an item that can be joined to other parts (blade into guard
 | <Link id="m-size" /><code>{"int Size { get; private set; }"}</code> | Total size of this part and everything inserted into it. Starts at the item's size. |
 | <Link id="m-slots-2" /><code><Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{"[] Slots { get; }"}</code> | The joint slots other parts can go into. |
 | <Link id="m-totalweight" /><code>{"float TotalWeight { get; }"}</code> | This part's weight plus the total weight of every part inserted into it. |
-| <Link id="m-alta-crafting-iblockgenericdecrafting-candecraft" /><code>{"private bool Alta.Crafting.IBlockGenericDecrafting.CanDecraft { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-crafting-iblockgenericdecrafting-candecraft" /><code>{"private bool Alta.Crafting.IBlockGenericDecrafting.CanDecraft { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -98,11 +111,17 @@ Network behaviour on an item that can be joined to other parts (blade into guard
 | <Link id="m-prepareforremoval" /><code>{"void PrepareForRemoval()"}</code> | Makes the part interactable again and gives it back a rigidbody before it is taken off. |
 | <Link id="m-receivedchildastoplevel" /><code>{"void ReceivedChildAsTopLevel("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part, "}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{" slot, float craftingDot)"}</code> | Called on the root when a part is added: marks crafted, adjusts dock scale, registers impactors and re-grips the hand. |
 | <Link id="m-removesize" /><code>{"void RemoveSize("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" insert, "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" bestValue)"}</code> | Removes a taken-off part's size, count, length and colliders here and above, and updates the loot value. |
-| <Link id="m-attemptcraft-3" /><code>{"private void AttemptCraft("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, uint slotIdentifier)"}</code> | Asks to connect this part into a slot. The server does it at once; a client sends the request to the server. |
 | <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Reads the rigidbody mass, sets size from the item and, if crafting is based on interaction, watches grabs to offer connections. |
+| <Link id="m-craftwithslot" /><code>{"protected void CraftWithSlot("}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{" slot, bool isIgnoringPreConfirmation = false)"}</code> | Protected: connects into a slot if the slot is free and supports this part's insert type. |
+
+<details>
+<summary>12 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-attemptcraft-3" /><code>{"private void AttemptCraft("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, uint slotIdentifier)"}</code> | Asks to connect this part into a slot. The server does it at once; a client sends the request to the server. |
 | <Link id="m-break" /><code>{"private void Break("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
 | <Link id="m-checkpossibleconnections" /><code>{"private void CheckPossibleConnections("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-craftwithslot" /><code>{"protected void CraftWithSlot("}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{" slot, bool isIgnoringPreConfirmation = false)"}</code> | Protected: connects into a slot if the slot is free and supports this part's insert type. |
 | <Link id="m-drawlength" /><code>{"private void DrawLength(Transform insertPosition)"}</code> |  |
 | <Link id="m-getmapsonpart" /><code>{"private static void GetMapsOnPart("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part, HashSet<"}<Link to="/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{"> maps)"}</code> |  |
 | <Link id="m-hasallcraftedeventprerequisites" /><code>{"private bool HasAllCraftedEventPrerequisites()"}</code> |  |
@@ -112,6 +131,8 @@ Network behaviour on an item that can be joined to other parts (blade into guard
 | <Link id="m-processcraftedevent" /><code>{"private static void ProcessCraftedEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, uint primaryPartHash, uint secondaryPartHash)"}</code> |  |
 | <Link id="m-replacedwith" /><code>{"private void Alta.Networking.IEntityReplaceHandler.ReplacedWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/replaceavoidflags">{"ReplaceAvoidFlags"}</Link>{" replaceAvoidFlags)"}</code> |  |
 | <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+
+</details>
 
 ## Used in
 

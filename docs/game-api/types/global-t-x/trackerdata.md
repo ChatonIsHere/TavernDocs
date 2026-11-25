@@ -19,15 +19,15 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TrackerData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TrackerData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"string name"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"string name"}</code> |
 
 ## Used in
 

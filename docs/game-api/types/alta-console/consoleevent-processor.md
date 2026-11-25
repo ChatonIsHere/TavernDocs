@@ -18,23 +18,36 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Processor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Processor()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cancel" /><code>{"private CancellationTokenSource cancel"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cancel" /><code>{"private CancellationTokenSource cancel"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-processqueue" /><code>{"private static void ProcessQueue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-processqueue" /><code>{"private static void ProcessQueue()"}</code> |
+
+</details>
 
 ## Used in
 

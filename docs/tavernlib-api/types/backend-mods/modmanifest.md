@@ -19,15 +19,20 @@ One version of one mod, from a source's `manifests` folder (schema version 2 onl
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModManifest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModManifest()"}</code> |
 
 ## Fields
+
+<details>
+<summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-supportedmajor" /><code>{"internal const int SupportedMajor"}</code> | Internal: 2, the only manifest schema version this build reads. |
+
+</details>
 
 ## Properties
 
@@ -51,10 +56,18 @@ One version of one mod, from a source's `manifests` folder (schema version 2 onl
 | <Link id="m-artifactfor" /><code><Link to="/tavernlib-api/types/backend-mods/modartifact">{"ModArtifact"}</Link>{" ArtifactFor(string target)"}</code> | The usable build for a target, or `null`. |
 | <Link id="m-fromjson" /><code>{"static "}<Link to="/tavernlib-api/types/backend-mods/modmanifest">{"ModManifest"}</Link>{" FromJson(JObject d, string sourceRepo)"}</code> | Parses a manifest. `null` (with a warning) for an unsupported schema; throws `ModManagerException` for a broken one. |
 | <Link id="m-runsin" /><code>{"static bool RunsIn(List<string> scenes, string scene)"}</code> | True if the scene list is `null`, the scene is `null`, or the list has the scene. |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-readparity" /><code>{"private static bool ReadParity(JToken value, string idForMsg)"}</code> |  |
 | <Link id="m-readscenes" /><code>{"private static List<string> ReadScenes(JToken value, string idForMsg)"}</code> |  |
 | <Link id="m-sha256field" /><code>{"internal static string Sha256Field(JObject d, string where)"}</code> | Internal: reads and checks a `sha256` field: 64 hex characters, returned lower case. |
 | <Link id="m-text" /><code>{"internal static string Text(JObject d, string key, string fallback, string where)"}</code> | Internal: reads a string field, using the fallback when it's absent or null. Throws for any other type. |
+
+</details>
 
 ## Used in
 

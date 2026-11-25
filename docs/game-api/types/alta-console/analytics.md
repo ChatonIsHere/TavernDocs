@@ -17,14 +17,30 @@ A **static class** in `Root.Township`, `Alta.Analytics`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apiendpoint" /><code>{"const string APIEndpoint"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apiendpoint" /><code>{"const string APIEndpoint"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sendrecord" /><code>{"static void SendRecord<T>("}<Link to="/game-api/types/alta-console/analyticstype">{"AnalyticsType"}</Link>{" type, T objectToSend, "}<Link to="/game-api/types/alta-console/analyticsoptions">{"AnalyticsOptions"}</Link>{" options = 0)"}</code> |  |
-| <Link id="m-getapiendpoint" /><code>{"private static string GetAPIEndpoint("}<Link to="/game-api/types/alta-console/analyticstype">{"AnalyticsType"}</Link>{" type)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-sendrecord" /><code>{"static void SendRecord<T>("}<Link to="/game-api/types/alta-console/analyticstype">{"AnalyticsType"}</Link>{" type, T objectToSend, "}<Link to="/game-api/types/alta-console/analyticsoptions">{"AnalyticsOptions"}</Link>{" options = 0)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getapiendpoint" /><code>{"private static string GetAPIEndpoint("}<Link to="/game-api/types/alta-console/analyticstype">{"AnalyticsType"}</Link>{" type)"}</code> |
+
+</details>

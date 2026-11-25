@@ -17,23 +17,28 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FacingOperation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FacingOperation()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dotproductmaximum" /><code>{"private float dotProductMaximum"}</code> |  |
-| <Link id="m-dotproductminimum" /><code>{"private float dotProductMinimum"}</code> |  |
-| <Link id="m-isignoringy" /><code>{"private bool isIgnoringY"}</code> |  |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-dotproductmaximum" /><code>{"private float dotProductMaximum"}</code> |
+| <Link id="m-dotproductminimum" /><code>{"private float dotProductMinimum"}</code> |
+| <Link id="m-isignoringy" /><code>{"private bool isIgnoringY"}</code> |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getoperation" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> |  |
-| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getoperation" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> |
+| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |

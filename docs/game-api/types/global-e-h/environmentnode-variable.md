@@ -17,22 +17,27 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Variable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Variable()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isoverriding" /><code>{"private bool isOverriding"}</code> |  |
-| <Link id="m-value" /><code>{"private float value"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isoverriding" /><code>{"private bool isOverriding"}</code> |
+| <Link id="m-value" /><code>{"private float value"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-get" /><code>{"float Get("}<Link to="/game-api/types/global-e-h/environmentnode-variable">{"EnvironmentNode.Variable"}</Link>{" defaultValue)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-get" /><code>{"float Get("}<Link to="/game-api/types/global-e-h/environmentnode-variable">{"EnvironmentNode.Variable"}</Link>{" defaultValue)"}</code> |
 
 ## Used in
 

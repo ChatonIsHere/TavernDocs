@@ -19,12 +19,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MRK_ActivationLeverSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MRK_ActivationLeverSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactive" /><code>{"bool isActive"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isactive" /><code>{"bool isActive"}</code> |

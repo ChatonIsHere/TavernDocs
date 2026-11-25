@@ -16,31 +16,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"IKControllSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"IKControllSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-controllermodestoenable" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"[] controllerModesToEnable"}</code> |  |
-| <Link id="m-isdisablingikcompletely" /><code>{"private bool isDisablingIKCompletely"}</code> |  |
-| <Link id="m-ismovingextensions" /><code>{"private bool isMovingExtensions"}</code> |  |
-| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> |  |
-| <Link id="m-isshowingghosthands" /><code>{"private bool isShowingGhostHands"}</code> |  |
-| <Link id="m-outofbodymessage" /><code>{"private string outOfBodyMessage"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-controllermodestoenable" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"[] controllerModesToEnable"}</code> |
+| <Link id="m-isdisablingikcompletely" /><code>{"private bool isDisablingIKCompletely"}</code> |
+| <Link id="m-ismovingextensions" /><code>{"private bool isMovingExtensions"}</code> |
+| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> |
+| <Link id="m-isshowingghosthands" /><code>{"private bool isShowingGhostHands"}</code> |
+| <Link id="m-outofbodymessage" /><code>{"private string outOfBodyMessage"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-controllermodestoenable-2" /><code><Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"[] ControllerModesToEnable { get; set; }"}</code> |  |
-| <Link id="m-isdisablingikcompletely-2" /><code>{"bool IsDisablingIKCompletely { get; set; }"}</code> |  |
-| <Link id="m-ismovingextensions-2" /><code>{"bool IsMovingExtensions { get; set; }"}</code> |  |
-| <Link id="m-isnetworked-2" /><code>{"bool IsNetworked { get; set; }"}</code> |  |
-| <Link id="m-isshowingghosthands-2" /><code>{"bool IsShowingGhostHands { get; set; }"}</code> |  |
-| <Link id="m-outofbodymessage-2" /><code>{"string OutOfBodyMessage { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-controllermodestoenable-2" /><code><Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"[] ControllerModesToEnable { get; set; }"}</code> |
+| <Link id="m-isdisablingikcompletely-2" /><code>{"bool IsDisablingIKCompletely { get; set; }"}</code> |
+| <Link id="m-ismovingextensions-2" /><code>{"bool IsMovingExtensions { get; set; }"}</code> |
+| <Link id="m-isnetworked-2" /><code>{"bool IsNetworked { get; set; }"}</code> |
+| <Link id="m-isshowingghosthands-2" /><code>{"bool IsShowingGhostHands { get; set; }"}</code> |
+| <Link id="m-outofbodymessage-2" /><code>{"string OutOfBodyMessage { get; set; }"}</code> |
 
 ## Used in
 

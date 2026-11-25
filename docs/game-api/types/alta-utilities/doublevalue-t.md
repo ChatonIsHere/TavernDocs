@@ -20,16 +20,21 @@ A `SingleValue<T>` with a second float value.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DoubleValue()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"DoubleValue(T topic, float value, float value2)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DoubleValue()"}</code> |
+| <Link id="m-ctor-2" /><code>{"DoubleValue(T topic, float value, float value2)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-value2" /><code>{"private float value2"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-value2" /><code>{"private float value2"}</code> |
+
+</details>
 
 ## Properties
 

@@ -17,17 +17,17 @@ An **abstract class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferMo
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected AgonesObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected AgonesObject()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apigroup" /><code>{"virtual string ApiGroup { get; set; }"}</code> |  |
-| <Link id="m-apiversion" /><code>{"string ApiVersion { get; set; }"}</code> |  |
-| <Link id="m-kind" /><code>{"virtual string Kind { get; set; }"}</code> |  |
-| <Link id="m-metadata" /><code><Link to="/game-api/types/assembly-api-models/metadata">{"Metadata"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/metadata">{"Metadata"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-status" /><code><Link to="/game-api/types/assembly-api-models/status">{"Status"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/status">{"Status"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-version" /><code>{"string Version { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apigroup" /><code>{"virtual string ApiGroup { get; set; }"}</code> |
+| <Link id="m-apiversion" /><code>{"string ApiVersion { get; set; }"}</code> |
+| <Link id="m-kind" /><code>{"virtual string Kind { get; set; }"}</code> |
+| <Link id="m-metadata" /><code><Link to="/game-api/types/assembly-api-models/metadata">{"Metadata"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/metadata">{"Metadata"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-status" /><code><Link to="/game-api/types/assembly-api-models/status">{"Status"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/status">{"Status"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-version" /><code>{"string Version { get; set; }"}</code> |

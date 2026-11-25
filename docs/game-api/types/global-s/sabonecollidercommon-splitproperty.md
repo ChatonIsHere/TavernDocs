@@ -17,26 +17,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SplitProperty()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SplitProperty()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bonetriangleextent" /><code><Link to="/game-api/types/global-s/sabonecollidercommon-bonetriangleextent">{"SABoneColliderCommon.BoneTriangleExtent"}</Link>{" boneTriangleExtent"}</code> |  |
-| <Link id="m-boneweight2" /><code>{"int boneWeight2"}</code> |  |
-| <Link id="m-boneweight3" /><code>{"int boneWeight3"}</code> |  |
-| <Link id="m-boneweight4" /><code>{"int boneWeight4"}</code> |  |
-| <Link id="m-boneweighttype" /><code><Link to="/game-api/types/global-s/sabonecollidercommon-boneweighttype">{"SABoneColliderCommon.BoneWeightType"}</Link>{" boneWeightType"}</code> |  |
-| <Link id="m-greaterboneweight" /><code>{"bool greaterBoneWeight"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bonetriangleextent" /><code><Link to="/game-api/types/global-s/sabonecollidercommon-bonetriangleextent">{"SABoneColliderCommon.BoneTriangleExtent"}</Link>{" boneTriangleExtent"}</code> |
+| <Link id="m-boneweight2" /><code>{"int boneWeight2"}</code> |
+| <Link id="m-boneweight3" /><code>{"int boneWeight3"}</code> |
+| <Link id="m-boneweight4" /><code>{"int boneWeight4"}</code> |
+| <Link id="m-boneweighttype" /><code><Link to="/game-api/types/global-s/sabonecollidercommon-boneweighttype">{"SABoneColliderCommon.BoneWeightType"}</Link>{" boneWeightType"}</code> |
+| <Link id="m-greaterboneweight" /><code>{"bool greaterBoneWeight"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-shallowcopy" /><code><Link to="/game-api/types/global-s/sabonecollidercommon-splitproperty">{"SABoneColliderCommon.SplitProperty"}</Link>{" ShallowCopy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-shallowcopy" /><code><Link to="/game-api/types/global-s/sabonecollidercommon-splitproperty">{"SABoneColliderCommon.SplitProperty"}</Link>{" ShallowCopy()"}</code> |
 
 ## Used in
 

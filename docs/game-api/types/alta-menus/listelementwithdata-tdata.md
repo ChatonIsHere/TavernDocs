@@ -18,20 +18,20 @@ An **abstract class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ListElementWithData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ListElementWithData()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code>{"TData Data { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data" /><code>{"TData Data { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"void Setup(TData data)"}</code> |  |
-| <Link id="m-gettext" /><code>{"protected abstract string GetText(TData data)"}</code> |  |
-| <Link id="m-onsetup" /><code>{"protected virtual void OnSetup(TData data)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"void Setup(TData data)"}</code> |
+| <Link id="m-gettext" /><code>{"protected abstract string GetText(TData data)"}</code> |
+| <Link id="m-onsetup" /><code>{"protected virtual void OnSetup(TData data)"}</code> |

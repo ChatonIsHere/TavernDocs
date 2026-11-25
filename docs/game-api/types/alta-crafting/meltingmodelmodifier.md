@@ -19,16 +19,16 @@ An **abstract class** in `Root.Township`, `Alta.Blacksmithing`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected MeltingModelModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected MeltingModelModifier()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"abstract void Initialize("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> |  |
-| <Link id="m-terminate" /><code>{"abstract void Terminate("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"abstract void Initialize("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> |
+| <Link id="m-terminate" /><code>{"abstract void Terminate("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> |
 
 ## Used in
 

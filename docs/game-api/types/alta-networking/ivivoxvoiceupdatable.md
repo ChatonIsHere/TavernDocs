@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, `Alta.Voice`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update3dposition" /><code>{"void Update3DPosition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-update3dposition" /><code>{"void Update3DPosition()"}</code> |
 
 ## Used in
 

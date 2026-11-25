@@ -18,40 +18,64 @@ A **class** in `Root.Township`, `Alta.Menu`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AssistedSpawnCommandDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AssistedSpawnCommandDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-prefab" /><code>{"const string Prefab"}</code> |  |
-| <Link id="m-quantity" /><code>{"const string Quantity"}</code> |  |
-| <Link id="m-argumentmap" /><code>{"private readonly Dictionary<string, string> argumentMap"}</code> |  |
-| <Link id="m-autocompletionsource" /><code>{"private Object autoCompletionSource"}</code> |  |
-| <Link id="m-spawncommandbase" /><code>{"private const string SpawnCommandBase"}</code> |  |
-| <Link id="m-spawnquantities" /><code>{"private int[] spawnQuantities"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-prefab" /><code>{"const string Prefab"}</code> |
+| <Link id="m-quantity" /><code>{"const string Quantity"}</code> |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-argumentmap" /><code>{"private readonly Dictionary<string, string> argumentMap"}</code> |
+| <Link id="m-autocompletionsource" /><code>{"private Object autoCompletionSource"}</code> |
+| <Link id="m-spawncommandbase" /><code>{"private const string SpawnCommandBase"}</code> |
+| <Link id="m-spawnquantities" /><code>{"private int[] spawnQuantities"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-labels" /><code>{"string[] Labels { get; }"}</code> |  |
-| <Link id="m-settingdescription" /><code>{"override string SettingDescription { get; }"}</code> |  |
-| <Link id="m-spawnquantities-2" /><code>{"int[] SpawnQuantities { get; }"}</code> |  |
-| <Link id="m-autocompletionsource-2" /><code>{"private "}<Link to="/game-api/types/alta-menus/iautocompletionsource">{"IAutoCompletionSource"}</Link>{" AutoCompletionSource { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-labels" /><code>{"string[] Labels { get; }"}</code> |
+| <Link id="m-settingdescription" /><code>{"override string SettingDescription { get; }"}</code> |
+| <Link id="m-spawnquantities-2" /><code>{"int[] SpawnQuantities { get; }"}</code> |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-autocompletionsource-2" /><code>{"private "}<Link to="/game-api/types/alta-menus/iautocompletionsource">{"IAutoCompletionSource"}</Link>{" AutoCompletionSource { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-argumentisvalid" /><code>{"bool ArgumentIsValid(string argumentName)"}</code> |  |
-| <Link id="m-commandisvalid" /><code>{"bool CommandIsValid()"}</code> |  |
-| <Link id="m-getargument" /><code>{"string GetArgument(string name)"}</code> |  |
-| <Link id="m-runcommandonclient" /><code>{"override void RunCommandOnClient()"}</code> |  |
-| <Link id="m-setargument" /><code>{"void SetArgument(string name, string argument)"}</code> |  |
-| <Link id="m-parsecommand" /><code>{"private string ParseCommand()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-argumentisvalid" /><code>{"bool ArgumentIsValid(string argumentName)"}</code> |
+| <Link id="m-commandisvalid" /><code>{"bool CommandIsValid()"}</code> |
+| <Link id="m-getargument" /><code>{"string GetArgument(string name)"}</code> |
+| <Link id="m-runcommandonclient" /><code>{"override void RunCommandOnClient()"}</code> |
+| <Link id="m-setargument" /><code>{"void SetArgument(string name, string argument)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-parsecommand" /><code>{"private string ParseCommand()"}</code> |
+
+</details>
 
 ## Used in
 

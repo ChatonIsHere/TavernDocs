@@ -16,18 +16,18 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FutureUserActionCreateRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FutureUserActionCreateRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actiondata" /><code>{"object ActionData { get; set; }"}</code> |  |
-| <Link id="m-actiontype" /><code><Link to="/game-api/types/assembly-api-models/futureuseractiontype">{"FutureUserActionType"}</Link>{" ActionType { get; set; }"}</code> |  |
-| <Link id="m-useridentifier" /><code>{"ulong UserIdentifier { get; set; }"}</code> |  |
-| <Link id="m-usertype" /><code><Link to="/game-api/types/assembly-api-models/usertype">{"UserType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/usertype">{"UserType"}</Link>{" { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-actiondata" /><code>{"object ActionData { get; set; }"}</code> |
+| <Link id="m-actiontype" /><code><Link to="/game-api/types/assembly-api-models/futureuseractiontype">{"FutureUserActionType"}</Link>{" ActionType { get; set; }"}</code> |
+| <Link id="m-useridentifier" /><code>{"ulong UserIdentifier { get; set; }"}</code> |
+| <Link id="m-usertype" /><code><Link to="/game-api/types/assembly-api-models/usertype">{"UserType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/usertype">{"UserType"}</Link>{" { get; set; }"}</code> |
 
 ## Used in
 

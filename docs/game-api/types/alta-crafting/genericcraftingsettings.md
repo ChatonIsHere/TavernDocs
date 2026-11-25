@@ -21,34 +21,39 @@ Global settings for generic crafting (building from ghost pieces and nailing the
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenericCraftingSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenericCraftingSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-androiddestroyedpieceeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" androidDestroyedPieceEffect"}</code> |  |
-| <Link id="m-androidpiececompletedanimation" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" androidPieceCompletedAnimation"}</code> |  |
-| <Link id="m-completedprojecteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" completedProjectEffect"}</code> |  |
-| <Link id="m-destroyedpieceeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" destroyedPieceEffect"}</code> |  |
-| <Link id="m-genericnaildefaultdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" genericNailDefaultDefinition"}</code> |  |
-| <Link id="m-genericpiecedefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" genericPieceDefinition"}</code> |  |
-| <Link id="m-maxdistancetoanimatesquared" /><code>{"private float maxDistanceToAnimateSquared"}</code> |  |
-| <Link id="m-nailbadhiteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" nailBadHitEffect"}</code> |  |
-| <Link id="m-nailbasehiteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" nailBaseHitEffect"}</code> |  |
-| <Link id="m-naildoneeffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" nailDoneEffect"}</code> |  |
-| <Link id="m-nailgoodhiteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" nailGoodHitEffect"}</code> |  |
-| <Link id="m-onpiececompletedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onPieceCompletedEffect"}</code> |  |
-| <Link id="m-onpiecedestroyeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onPieceDestroyEffect"}</code> |  |
-| <Link id="m-onpiecepopeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onPiecePopEffect"}</code> |  |
-| <Link id="m-piececompletedanimation" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" pieceCompletedAnimation"}</code> |  |
-| <Link id="m-piecematerialdisabled" /><code>{"private Material pieceMaterialDisabled"}</code> |  |
-| <Link id="m-piecematerialenabled" /><code>{"private Material pieceMaterialEnabled"}</code> |  |
-| <Link id="m-piecematerialhighlight" /><code>{"private Material pieceMaterialHighlight"}</code> |  |
-| <Link id="m-timebeforesound" /><code>{"private float timeBeforeSound"}</code> |  |
-| <Link id="m-timeendingsound" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" timeEndingSound"}</code> |  |
+<details>
+<summary>20 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androiddestroyedpieceeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" androidDestroyedPieceEffect"}</code> |
+| <Link id="m-androidpiececompletedanimation" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" androidPieceCompletedAnimation"}</code> |
+| <Link id="m-completedprojecteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" completedProjectEffect"}</code> |
+| <Link id="m-destroyedpieceeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" destroyedPieceEffect"}</code> |
+| <Link id="m-genericnaildefaultdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" genericNailDefaultDefinition"}</code> |
+| <Link id="m-genericpiecedefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" genericPieceDefinition"}</code> |
+| <Link id="m-maxdistancetoanimatesquared" /><code>{"private float maxDistanceToAnimateSquared"}</code> |
+| <Link id="m-nailbadhiteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" nailBadHitEffect"}</code> |
+| <Link id="m-nailbasehiteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" nailBaseHitEffect"}</code> |
+| <Link id="m-naildoneeffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" nailDoneEffect"}</code> |
+| <Link id="m-nailgoodhiteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" nailGoodHitEffect"}</code> |
+| <Link id="m-onpiececompletedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onPieceCompletedEffect"}</code> |
+| <Link id="m-onpiecedestroyeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onPieceDestroyEffect"}</code> |
+| <Link id="m-onpiecepopeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onPiecePopEffect"}</code> |
+| <Link id="m-piececompletedanimation" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" pieceCompletedAnimation"}</code> |
+| <Link id="m-piecematerialdisabled" /><code>{"private Material pieceMaterialDisabled"}</code> |
+| <Link id="m-piecematerialenabled" /><code>{"private Material pieceMaterialEnabled"}</code> |
+| <Link id="m-piecematerialhighlight" /><code>{"private Material pieceMaterialHighlight"}</code> |
+| <Link id="m-timebeforesound" /><code>{"private float timeBeforeSound"}</code> |
+| <Link id="m-timeendingsound" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" timeEndingSound"}</code> |
+
+</details>
 
 ## Properties
 

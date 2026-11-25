@@ -17,25 +17,38 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CastToSurfaceEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CastToSurfaceEffect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-castdirection" /><code>{"private Vector3 castDirection"}</code> |  |
-| <Link id="m-castdistance" /><code>{"private float castDistance"}</code> |  |
-| <Link id="m-groundlayers" /><code>{"private LayerMask groundLayers"}</code> |  |
-| <Link id="m-groundparticle" /><code>{"private GameObject groundParticle"}</code> |  |
-| <Link id="m-iscasting" /><code>{"private bool isCasting"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-castdirection" /><code>{"private Vector3 castDirection"}</code> |
+| <Link id="m-castdistance" /><code>{"private float castDistance"}</code> |
+| <Link id="m-groundlayers" /><code>{"private LayerMask groundLayers"}</code> |
+| <Link id="m-groundparticle" /><code>{"private GameObject groundParticle"}</code> |
+| <Link id="m-iscasting" /><code>{"private bool isCasting"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
-| <Link id="m-casttoground" /><code>{"private void CastToGround("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |  |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |
-| <Link id="m-storecasted" /><code>{"private void StoreCasted("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-casttoground" /><code>{"private void CastToGround("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+| <Link id="m-storecasted" /><code>{"private void StoreCasted("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
+
+</details>

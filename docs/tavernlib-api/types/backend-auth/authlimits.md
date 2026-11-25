@@ -20,9 +20,9 @@ Internal: per-address limits on the auth port and console logins. 8 failures, or
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AuthLimits()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AuthLimits()"}</code> |
 
 ## Fields
 
@@ -32,15 +32,23 @@ Internal: per-address limits on the auth port and console logins. 8 failures, or
 | <Link id="m-maxopen" /><code>{"const int MaxOpen"}</code> | 64 open connections in all. |
 | <Link id="m-maxopenperaddress" /><code>{"const int MaxOpenPerAddress"}</code> | 8 open connections from one address. |
 | <Link id="m-passwordfaillimit" /><code>{"const int PasswordFailLimit"}</code> | 5 wrong passwords. |
-| <Link id="m-caplogged" /><code>{"private readonly HashSet<string> _capLogged"}</code> |  |
-| <Link id="m-fails" /><code>{"private readonly Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> _fails"}</code> |  |
-| <Link id="m-open" /><code>{"private readonly Dictionary<string, int> _open"}</code> |  |
-| <Link id="m-opentotal" /><code>{"private int _openTotal"}</code> |  |
-| <Link id="m-passwordfails" /><code>{"private readonly Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> _passwordFails"}</code> |  |
-| <Link id="m-sync" /><code>{"private readonly object _sync"}</code> |  |
-| <Link id="m-totalcaplogged" /><code>{"private bool _totalCapLogged"}</code> |  |
-| <Link id="m-pruneabove" /><code>{"private const int PruneAbove"}</code> |  |
-| <Link id="m-window" /><code>{"private static readonly TimeSpan Window"}</code> |  |
+
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-caplogged" /><code>{"private readonly HashSet<string> _capLogged"}</code> |
+| <Link id="m-fails" /><code>{"private readonly Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> _fails"}</code> |
+| <Link id="m-open" /><code>{"private readonly Dictionary<string, int> _open"}</code> |
+| <Link id="m-opentotal" /><code>{"private int _openTotal"}</code> |
+| <Link id="m-passwordfails" /><code>{"private readonly Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> _passwordFails"}</code> |
+| <Link id="m-sync" /><code>{"private readonly object _sync"}</code> |
+| <Link id="m-totalcaplogged" /><code>{"private bool _totalCapLogged"}</code> |
+| <Link id="m-pruneabove" /><code>{"private const int PruneAbove"}</code> |
+| <Link id="m-window" /><code>{"private static readonly TimeSpan Window"}</code> |
+
+</details>
 
 ## Methods
 
@@ -52,8 +60,16 @@ Internal: per-address limits on the auth port and console logins. 8 failures, or
 | <Link id="m-passwordfail" /><code>{"void PasswordFail(string address)"}</code> | Counts a wrong password, which is also a failure. |
 | <Link id="m-passwordheldoff" /><code>{"bool PasswordHeldOff(string address)"}</code> | True while the address has 5 recent wrong passwords. |
 | <Link id="m-tryopen" /><code>{"bool TryOpen(string address)"}</code> | Takes a connection slot for the address. False when it or the server is at its cap. |
-| <Link id="m-add" /><code>{"private int Add(Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> strikes, string address)"}</code> |  |
-| <Link id="m-count" /><code>{"private int Count(Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> strikes, string address)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"private int Add(Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> strikes, string address)"}</code> |
+| <Link id="m-count" /><code>{"private int Count(Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> strikes, string address)"}</code> |
+
+</details>
 
 ## Used in
 

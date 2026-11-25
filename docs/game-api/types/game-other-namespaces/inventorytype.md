@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, `ATT.PlayerStates`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-player" /><code>{"Player = 1"}</code> |  |
-| <Link id="m-world" /><code>{"World = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-player" /><code>{"Player = 1"}</code> |
+| <Link id="m-world" /><code>{"World = 0"}</code> |
 
 ## Used in
 

@@ -17,20 +17,20 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LauncherGameInfoShort()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LauncherGameInfoShort()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bucketurl" /><code>{"string BucketUrl { get; set; }"}</code> |  |
-| <Link id="m-displayorder" /><code>{"int DisplayOrder { get; set; }"}</code> |  |
-| <Link id="m-icon" /><code>{"string Icon { get; set; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |  |
-| <Link id="m-stringidentifier" /><code>{"string StringIdentifier { get; set; }"}</code> |  |
-| <Link id="m-title" /><code>{"string Title { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bucketurl" /><code>{"string BucketUrl { get; set; }"}</code> |
+| <Link id="m-displayorder" /><code>{"int DisplayOrder { get; set; }"}</code> |
+| <Link id="m-icon" /><code>{"string Icon { get; set; }"}</code> |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |
+| <Link id="m-stringidentifier" /><code>{"string StringIdentifier { get; set; }"}</code> |
+| <Link id="m-title" /><code>{"string Title { get; set; }"}</code> |
 
 ## Used in
 

@@ -17,24 +17,29 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ParticleSystemValueOperatorDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ParticleSystemValueOperatorDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> |  |
-| <Link id="m-value" /><code>{"private "}<Link to="/game-api/types/global-t-x/valueoperatedparticlesystem-particlesystemvalue">{"ValueOperatedParticleSystem.ParticleSystemValue"}</Link>{" value"}</code> |  |
-| <Link id="m-valueoperator" /><code>{"private "}<Link to="/game-api/types/global-t-x/valueoperatedparticlesystem-particlesystemvalueoperator">{"ValueOperatedParticleSystem.ParticleSystemValueOperator"}</Link>{" valueOperator"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> |
+| <Link id="m-value" /><code>{"private "}<Link to="/game-api/types/global-t-x/valueoperatedparticlesystem-particlesystemvalue">{"ValueOperatedParticleSystem.ParticleSystemValue"}</Link>{" value"}</code> |
+| <Link id="m-valueoperator" /><code>{"private "}<Link to="/game-api/types/global-t-x/valueoperatedparticlesystem-particlesystemvalueoperator">{"ValueOperatedParticleSystem.ParticleSystemValueOperator"}</Link>{" valueOperator"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize(ParticleSystem targetsystem)"}</code> |  |
-| <Link id="m-set" /><code>{"void Set(float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"void Initialize(ParticleSystem targetsystem)"}</code> |
+| <Link id="m-set" /><code>{"void Set(float value)"}</code> |
 
 ## Used in
 

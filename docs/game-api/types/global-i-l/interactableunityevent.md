@@ -18,9 +18,9 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InteractableUnityEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InteractableUnityEvent()"}</code> |
 
 ## Used in
 

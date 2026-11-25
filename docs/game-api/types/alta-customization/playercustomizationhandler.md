@@ -20,19 +20,24 @@ Links a player's character model to the customization system: finds bones by nam
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerCustomizationHandler()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerCustomizationHandler()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-armormanager" /><code>{"private "}<Link to="/game-api/types/alta-customization/playerarmormanager">{"PlayerArmorManager"}</Link>{" armorManager"}</code> |  |
-| <Link id="m-bodyboundboxsize" /><code>{"private Vector3 bodyBoundBoxSize"}</code> |  |
-| <Link id="m-childmap" /><code>{"private Dictionary<string, Transform> childMap"}</code> |  |
-| <Link id="m-editableequipmentmanager" /><code>{"private "}<Link to="/game-api/types/alta-customization/editableequipmentmanager">{"EditableEquipmentManager"}</Link>{" editableEquipmentManager"}</code> |  |
-| <Link id="m-pointer" /><code>{"private "}<Link to="/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" pointer"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-armormanager" /><code>{"private "}<Link to="/game-api/types/alta-customization/playerarmormanager">{"PlayerArmorManager"}</Link>{" armorManager"}</code> |
+| <Link id="m-bodyboundboxsize" /><code>{"private Vector3 bodyBoundBoxSize"}</code> |
+| <Link id="m-childmap" /><code>{"private Dictionary<string, Transform> childMap"}</code> |
+| <Link id="m-editableequipmentmanager" /><code>{"private "}<Link to="/game-api/types/alta-customization/editableequipmentmanager">{"EditableEquipmentManager"}</Link>{" editableEquipmentManager"}</code> |
+| <Link id="m-pointer" /><code>{"private "}<Link to="/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" pointer"}</code> |
+
+</details>
 
 ## Properties
 
@@ -63,10 +68,18 @@ Links a player's character model to the customization system: finds bones by nam
 | <Link id="m-getbone" /><code>{"Transform GetBone(Transform oldBone, bool isLoggingUnfoundBones)"}</code> | Finds this character's bone with the same name (or entity original name) as another rig's bone. Can log misses. |
 | <Link id="m-setfirstperson" /><code>{"void SetFirstPerson(bool isFirstPerson)"}</code> | Switches first person mode and tells the manager. |
 | <Link id="m-setmanager" /><code>{"void SetManager("}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager)"}</code> | Sets the customization manager and raises `onManagerUpdated`. |
-| <Link id="m-addtomap" /><code>{"private void AddToMap(Transform transform)"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-preparechildmap" /><code>{"private void PrepareChildMap()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-addtomap" /><code>{"private void AddToMap(Transform transform)"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-preparechildmap" /><code>{"private void PrepareChildMap()"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>
 
 ## Used in
 

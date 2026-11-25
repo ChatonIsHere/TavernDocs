@@ -17,7 +17,7 @@ A **static class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-constantinitialize" /><code>{"static void ConstantInitialize("}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms, "}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" definition)"}</code> |  |
-| <Link id="m-print" /><code>{"static void Print(IEnumerable<"}<Link to="/game-api/types/alta-intelligence/result">{"Result"}</Link>{"> results)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-constantinitialize" /><code>{"static void ConstantInitialize("}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms, "}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" definition)"}</code> |
+| <Link id="m-print" /><code>{"static void Print(IEnumerable<"}<Link to="/game-api/types/alta-intelligence/result">{"Result"}</Link>{"> results)"}</code> |

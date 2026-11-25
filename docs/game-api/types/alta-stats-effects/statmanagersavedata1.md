@@ -19,20 +19,20 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatManagerSaveData1()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatManagerSaveData1()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-indirectmodifiers" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedata1-indirectstatmodifier">{"StatManagerSaveData1.IndirectStatModifier"}</Link>{"[] indirectModifiers"}</code> |  |
-| <Link id="m-modifiers" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedata1-timedmodifier">{"StatManagerSaveData1.TimedModifier"}</Link>{"[] modifiers"}</code> |  |
-| <Link id="m-stats" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedatastat">{"StatManagerSaveDataStat"}</Link>{"[] stats"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-indirectmodifiers" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedata1-indirectstatmodifier">{"StatManagerSaveData1.IndirectStatModifier"}</Link>{"[] indirectModifiers"}</code> |
+| <Link id="m-modifiers" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedata1-timedmodifier">{"StatManagerSaveData1.TimedModifier"}</Link>{"[] modifiers"}</code> |
+| <Link id="m-stats" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedatastat">{"StatManagerSaveDataStat"}</Link>{"[] stats"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

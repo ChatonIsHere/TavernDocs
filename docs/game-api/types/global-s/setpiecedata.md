@@ -20,15 +20,20 @@ An asset holding a saved dynamic object (a set piece) that can be spawned whole.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SetPieceData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SetPieceData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dynamicdata" /><code>{"private "}<Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" dynamicData"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-dynamicdata" /><code>{"private "}<Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" dynamicData"}</code> |
+
+</details>
 
 ## Properties
 

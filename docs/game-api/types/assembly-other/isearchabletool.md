@@ -17,19 +17,19 @@ An **interface** in `Alta.SearchableTools`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-description" /><code>{"string Description { get; }"}</code> |  |
-| <Link id="m-icon" /><code>{"string Icon { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-priority" /><code>{"int Priority { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-description" /><code>{"string Description { get; }"}</code> |
+| <Link id="m-icon" /><code>{"string Icon { get; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> |
+| <Link id="m-priority" /><code>{"int Priority { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getpath" /><code>{"string GetPath()"}</code> |  |
-| <Link id="m-validate" /><code>{"bool Validate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getpath" /><code>{"string GetPath()"}</code> |
+| <Link id="m-validate" /><code>{"bool Validate()"}</code> |
 
 ## Used in
 

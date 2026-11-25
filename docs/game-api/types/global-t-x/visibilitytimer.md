@@ -17,18 +17,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VisibilityTimer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VisibilityTimer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-test" /><code>{"private bool test"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-test" /><code>{"private bool test"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-test-2" /><code>{"private void Test()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-test-2" /><code>{"private void Test()"}</code> |
+
+</details>

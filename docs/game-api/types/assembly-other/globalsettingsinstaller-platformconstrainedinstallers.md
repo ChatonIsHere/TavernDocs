@@ -17,24 +17,37 @@ A **private class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`. Reach i
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformConstrainedInstallers()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformConstrainedInstallers()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-installers" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformspecificscriptableobjectinstaller">{"PlatformSpecificScriptableObjectInstaller"}</Link>{"[] installers"}</code> |  |
-| <Link id="m-isvalidineditor" /><code>{"private bool isValidInEditor"}</code> |  |
-| <Link id="m-validplatforms" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" validPlatforms"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-installers" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformspecificscriptableobjectinstaller">{"PlatformSpecificScriptableObjectInstaller"}</Link>{"[] installers"}</code> |
+| <Link id="m-isvalidineditor" /><code>{"private bool isValidInEditor"}</code> |
+| <Link id="m-validplatforms" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" validPlatforms"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-install" /><code>{"void Install(IContainerBuilder builder)"}</code> |  |
-| <Link id="m-isvalidifineditor" /><code>{"private bool IsValidIfInEditor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-install" /><code>{"void Install(IContainerBuilder builder)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-isvalidifineditor" /><code>{"private bool IsValidIfInEditor()"}</code> |
+
+</details>
 
 ## Used in
 

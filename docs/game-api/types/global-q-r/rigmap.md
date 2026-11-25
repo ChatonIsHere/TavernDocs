@@ -18,34 +18,47 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RigMap()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RigMap()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bones" /><code>{"private List<Transform> bones"}</code> |  |
-| <Link id="m-btnfind" /><code>{"private bool btnFind"}</code> |  |
-| <Link id="m-map" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{", Transform> map"}</code> |  |
-| <Link id="m-requiredlist" /><code>{"private "}<Link to="/game-api/types/global-q-r/rigbonelist">{"RigBoneList"}</Link>{" requiredList"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bones" /><code>{"private List<Transform> bones"}</code> |
+| <Link id="m-btnfind" /><code>{"private bool btnFind"}</code> |
+| <Link id="m-map" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{", Transform> map"}</code> |
+| <Link id="m-requiredlist" /><code>{"private "}<Link to="/game-api/types/global-q-r/rigbonelist">{"RigBoneList"}</Link>{" requiredList"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bones-2" /><code>{"Dictionary<"}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{", Transform> Bones { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bones-2" /><code>{"Dictionary<"}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{", Transform> Bones { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-find" /><code>{"void Find()"}</code> |  |
-| <Link id="m-map-2" /><code>{"Transform[] Map("}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{"[] boneIdentifiers)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-getbones" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{", Transform> GetBones()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-find" /><code>{"void Find()"}</code> |
+| <Link id="m-map-2" /><code>{"Transform[] Map("}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{"[] boneIdentifiers)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-getbones" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{", Transform> GetBones()"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>
 
 ## Used in
 

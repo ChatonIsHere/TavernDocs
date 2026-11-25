@@ -18,29 +18,34 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SummonActionItemQuickAccess()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SummonActionItemQuickAccess()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ignoredefaultsfx" /><code>{"private bool ignoreDefaultSfx"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-ignoredefaultsfx" /><code>{"private bool ignoreDefaultSfx"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ignoredefaultsfx-2" /><code>{"override bool IgnoreDefaultSfx { get; }"}</code> |  |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> |  |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ignoredefaultsfx-2" /><code>{"override bool IgnoreDefaultSfx { get; }"}</code> |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |
 
 ## Used in
 

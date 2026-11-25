@@ -17,11 +17,11 @@ An **private enum** in `Root.Township`, `Alta.StatSystem`. Reach it through att-
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fill" /><code>{"fill = 2"}</code> |  |
-| <Link id="m-increasedamount" /><code>{"increasedAmount = 1"}</code> |  |
-| <Link id="m-none" /><code>{"none = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fill" /><code>{"fill = 2"}</code> |
+| <Link id="m-increasedamount" /><code>{"increasedAmount = 1"}</code> |
+| <Link id="m-none" /><code>{"none = 0"}</code> |
 
 ## Used in
 

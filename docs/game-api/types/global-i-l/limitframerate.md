@@ -17,27 +17,37 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LimitFrameRate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LimitFrameRate()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targetfps" /><code>{"private int targetFPS"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-targetfps" /><code>{"private int targetFPS"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targetfps-2" /><code>{"int TargetFPS { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-targetfps-2" /><code>{"int TargetFPS { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>
 
 ## Used in
 

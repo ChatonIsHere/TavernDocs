@@ -17,26 +17,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TransformConflict()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TransformConflict()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-one" /><code>{"private Transform one"}</code> |  |
-| <Link id="m-two" /><code>{"private Transform two"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-one" /><code>{"private Transform one"}</code> |
+| <Link id="m-two" /><code>{"private Transform two"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-one-2" /><code>{"Transform One { get; }"}</code> |  |
-| <Link id="m-two-2" /><code>{"Transform Two { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-one-2" /><code>{"Transform One { get; }"}</code> |
+| <Link id="m-two-2" /><code>{"Transform Two { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createconflict" /><code>{"void CreateConflict(Transform one, Transform two)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createconflict" /><code>{"void CreateConflict(Transform one, Transform two)"}</code> |

@@ -19,18 +19,18 @@ The `Testing` values mean the player is practising that orb.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allowed" /><code>{"Allowed = 9"}</code> |  |
-| <Link id="m-cantbuy" /><code>{"CantBuy = 3"}</code> |  |
-| <Link id="m-notallowed" /><code>{"NotAllowed = 1"}</code> |  |
-| <Link id="m-otherplayer" /><code>{"OtherPlayer = 0"}</code> |  |
-| <Link id="m-owned" /><code>{"Owned = 7"}</code> |  |
-| <Link id="m-ownedlocked" /><code>{"OwnedLocked = 5"}</code> |  |
-| <Link id="m-testingallowed" /><code>{"TestingAllowed = 8"}</code> |  |
-| <Link id="m-testingcantbuy" /><code>{"TestingCantBuy = 2"}</code> |  |
-| <Link id="m-testinglockedowned" /><code>{"TestingLockedOwned = 4"}</code> |  |
-| <Link id="m-testingowned" /><code>{"TestingOwned = 6"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-allowed" /><code>{"Allowed = 9"}</code> |
+| <Link id="m-cantbuy" /><code>{"CantBuy = 3"}</code> |
+| <Link id="m-notallowed" /><code>{"NotAllowed = 1"}</code> |
+| <Link id="m-otherplayer" /><code>{"OtherPlayer = 0"}</code> |
+| <Link id="m-owned" /><code>{"Owned = 7"}</code> |
+| <Link id="m-ownedlocked" /><code>{"OwnedLocked = 5"}</code> |
+| <Link id="m-testingallowed" /><code>{"TestingAllowed = 8"}</code> |
+| <Link id="m-testingcantbuy" /><code>{"TestingCantBuy = 2"}</code> |
+| <Link id="m-testinglockedowned" /><code>{"TestingLockedOwned = 4"}</code> |
+| <Link id="m-testingowned" /><code>{"TestingOwned = 6"}</code> |
 
 ## Used in
 

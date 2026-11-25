@@ -18,9 +18,9 @@ An **interface** in `Root.Township`, `Alta.QATools`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getchunkstoload" /><code>{"void GetChunksToLoad("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getchunkstoload" /><code>{"void GetChunksToLoad("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList)"}</code> |
 
 ## Used in
 

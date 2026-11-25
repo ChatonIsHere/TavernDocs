@@ -17,28 +17,33 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerReportInboxInfoPanel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerReportInboxInfoPanel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actiontakenattext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" actionTakenAtText"}</code> |  |
-| <Link id="m-actiontakenbytext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" actionTakenByText"}</code> |  |
-| <Link id="m-actiontakentext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" actionTakenText"}</code> |  |
-| <Link id="m-reasontext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" reasonText"}</code> |  |
-| <Link id="m-reportedusertext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" reportedUserText"}</code> |  |
-| <Link id="m-reportertext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" reporterText"}</code> |  |
-| <Link id="m-servertext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" serverText"}</code> |  |
-| <Link id="m-timetext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" timeText"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-actiontakenattext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" actionTakenAtText"}</code> |
+| <Link id="m-actiontakenbytext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" actionTakenByText"}</code> |
+| <Link id="m-actiontakentext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" actionTakenText"}</code> |
+| <Link id="m-reasontext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" reasonText"}</code> |
+| <Link id="m-reportedusertext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" reportedUserText"}</code> |
+| <Link id="m-reportertext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" reporterText"}</code> |
+| <Link id="m-servertext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" serverText"}</code> |
+| <Link id="m-timetext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" timeText"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setupforreport" /><code>{"void SetupForReport("}<Link to="/game-api/types/assembly-api-client/playerreportadmin">{"PlayerReportAdmin"}</Link>{" playerReport)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setupforreport" /><code>{"void SetupForReport("}<Link to="/game-api/types/assembly-api-client/playerreportadmin">{"PlayerReportAdmin"}</Link>{" playerReport)"}</code> |
 
 ## Used in
 

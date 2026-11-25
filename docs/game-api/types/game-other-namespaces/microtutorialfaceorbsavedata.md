@@ -19,13 +19,13 @@ A **internal class** in `Root.Township`, `ATT.MicroTutorial`. Reach it through a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MicroTutorialFaceOrbSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MicroTutorialFaceOrbSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-microtutorialsettings" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link></code> |  |
-| <Link id="m-orbtype" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialfaceorbtype">{"MicroTutorialFaceOrbType"}</Link>{" OrbType"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-microtutorialsettings" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link></code> |
+| <Link id="m-orbtype" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialfaceorbtype">{"MicroTutorialFaceOrbType"}</Link>{" OrbType"}</code> |

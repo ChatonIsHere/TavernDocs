@@ -20,9 +20,9 @@ Callback used by `SpawnHelper.Spawn`. One is called just after the entity is cre
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpawningCallback(object object, IntPtr method)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpawningCallback(object object, IntPtr method)"}</code> |
 
 ## Methods
 

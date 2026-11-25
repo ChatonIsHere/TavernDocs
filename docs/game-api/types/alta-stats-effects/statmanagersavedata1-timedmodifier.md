@@ -17,18 +17,18 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimedModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimedModifier()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> |  |
-| <Link id="m-ismultiplier" /><code>{"bool isMultiplier"}</code> |  |
-| <Link id="m-time" /><code>{"float time"}</code> |  |
-| <Link id="m-value" /><code>{"float value"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> |
+| <Link id="m-ismultiplier" /><code>{"bool isMultiplier"}</code> |
+| <Link id="m-time" /><code>{"float time"}</code> |
+| <Link id="m-value" /><code>{"float value"}</code> |
 
 ## Used in
 

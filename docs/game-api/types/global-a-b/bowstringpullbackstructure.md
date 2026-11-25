@@ -19,33 +19,38 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BowStringPullbackStructure()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BowStringPullbackStructure()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-istimingout" /><code>{"private bool isTimingOut"}</code> |  |
-| <Link id="m-mintimetopullback" /><code>{"private float minTimeToPullback"}</code> |  |
-| <Link id="m-pullbackvalue" /><code>{"private float pullbackValue"}</code> |  |
-| <Link id="m-timeoutduration" /><code>{"private float timeoutDuration"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-istimingout" /><code>{"private bool isTimingOut"}</code> |
+| <Link id="m-mintimetopullback" /><code>{"private float minTimeToPullback"}</code> |
+| <Link id="m-pullbackvalue" /><code>{"private float pullbackValue"}</code> |
+| <Link id="m-timeoutduration" /><code>{"private float timeoutDuration"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-istimingout-2" /><code>{"bool IsTimingOut { get; }"}</code> |  |
-| <Link id="m-mintimetopullback-2" /><code>{"float MinTimeToPullback { get; }"}</code> |  |
-| <Link id="m-pullbackvalue-2" /><code>{"float PullbackValue { get; }"}</code> |  |
-| <Link id="m-timeoutduration-2" /><code>{"float TimeoutDuration { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-istimingout-2" /><code>{"bool IsTimingOut { get; }"}</code> |
+| <Link id="m-mintimetopullback-2" /><code>{"float MinTimeToPullback { get; }"}</code> |
+| <Link id="m-pullbackvalue-2" /><code>{"float PullbackValue { get; }"}</code> |
+| <Link id="m-timeoutduration-2" /><code>{"float TimeoutDuration { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getnewinput" /><code>{"override "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getnewinput" /><code>{"override "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> |
 
 ## Used in
 

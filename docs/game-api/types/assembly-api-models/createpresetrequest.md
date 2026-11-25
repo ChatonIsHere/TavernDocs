@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CreatePresetRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CreatePresetRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bytesize" /><code>{"int ByteSize { get; set; }"}</code> |  |
-| <Link id="m-data" /><code>{"uint[] Data { get; set; }"}</code> |  |
-| <Link id="m-presetid" /><code>{"int PresetId { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bytesize" /><code>{"int ByteSize { get; set; }"}</code> |
+| <Link id="m-data" /><code>{"uint[] Data { get; set; }"}</code> |
+| <Link id="m-presetid" /><code>{"int PresetId { get; set; }"}</code> |
 
 ## Used in
 

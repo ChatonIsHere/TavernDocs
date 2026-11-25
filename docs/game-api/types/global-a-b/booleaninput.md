@@ -19,9 +19,9 @@ An on or off controller input value (a button), usable directly as a `bool`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BooleanInput()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BooleanInput()"}</code> |
 
 ## Methods
 

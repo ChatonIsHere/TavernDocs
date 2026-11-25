@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, `Alta.Populations`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spawn" /><code><Link to="/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{" Spawn("}<Link to="/game-api/types/alta-world-generation/ipopulationfolder">{"IPopulationFolder"}</Link>{" folder)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-spawn" /><code><Link to="/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{" Spawn("}<Link to="/game-api/types/alta-world-generation/ipopulationfolder">{"IPopulationFolder"}</Link>{" folder)"}</code> |
 
 ## Used in
 

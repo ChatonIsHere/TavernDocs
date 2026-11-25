@@ -21,37 +21,42 @@ Reacts to a bool sender: `IsActive`, `event UnityAction<bool> Changed`, `Activat
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicBoolReceiver()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicBoolReceiver()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onactivate" /><code>{"private UnityEvent onActivate"}</code> |  |
-| <Link id="m-ondeactivate" /><code>{"private UnityEvent onDeactivate"}</code> |  |
-| <Link id="m-onvaluechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onValueChanged"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-onactivate" /><code>{"private UnityEvent onActivate"}</code> |
+| <Link id="m-ondeactivate" /><code>{"private UnityEvent onDeactivate"}</code> |
+| <Link id="m-onvaluechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onValueChanged"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activated" /><code>{"event UnityAction Activated"}</code> |  |
-| <Link id="m-changed" /><code>{"event UnityAction<bool> Changed"}</code> |  |
-| <Link id="m-deactivated" /><code>{"event UnityAction Deactivated"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-activated" /><code>{"event UnityAction Activated"}</code> |
+| <Link id="m-changed" /><code>{"event UnityAction<bool> Changed"}</code> |
+| <Link id="m-deactivated" /><code>{"event UnityAction Deactivated"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> |
 
 ## Used in
 

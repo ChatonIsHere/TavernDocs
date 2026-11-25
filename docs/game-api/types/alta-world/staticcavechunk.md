@@ -19,25 +19,30 @@ A hand-built cave layer placed under a cave entrance by the `CaveLayerManager`. 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StaticCaveChunk()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StaticCaveChunk()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk"}</code> |  |
-| <Link id="m-entrance" /><code>{"private Transform entrance"}</code> |  |
-| <Link id="m-exit" /><code>{"private Transform exit"}</code> |  |
-| <Link id="m-height" /><code>{"private float height"}</code> |  |
-| <Link id="m-isterrainenabled" /><code>{"private bool isTerrainEnabled"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-pathfindinggenerated" /><code>{"private TaskCompletionSource<bool> pathfindingGenerated"}</code> |  |
-| <Link id="m-portal" /><code>{"private "}<Link to="/game-api/types/global-c-d/cullingportal">{"CullingPortal"}</Link>{" portal"}</code> |  |
-| <Link id="m-staticrenderers" /><code>{"private List<Renderer> staticRenderers"}</code> |  |
-| <Link id="m-syncsetup" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncSetup"}</code> |  |
-| <Link id="m-terrain" /><code>{"private List<Renderer> terrain"}</code> |  |
+<details>
+<summary>11 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk"}</code> |
+| <Link id="m-entrance" /><code>{"private Transform entrance"}</code> |
+| <Link id="m-exit" /><code>{"private Transform exit"}</code> |
+| <Link id="m-height" /><code>{"private float height"}</code> |
+| <Link id="m-isterrainenabled" /><code>{"private bool isTerrainEnabled"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-pathfindinggenerated" /><code>{"private TaskCompletionSource<bool> pathfindingGenerated"}</code> |
+| <Link id="m-portal" /><code>{"private "}<Link to="/game-api/types/global-c-d/cullingportal">{"CullingPortal"}</Link>{" portal"}</code> |
+| <Link id="m-staticrenderers" /><code>{"private List<Renderer> staticRenderers"}</code> |
+| <Link id="m-syncsetup" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncSetup"}</code> |
+| <Link id="m-terrain" /><code>{"private List<Renderer> terrain"}</code> |
+
+</details>
 
 ## Properties
 
@@ -70,14 +75,22 @@ A hand-built cave layer placed under a cave entrance by the `CaveLayerManager`. 
 | <Link id="m-registerportal" /><code>{"void RegisterPortal("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world/icavelayer">{"ICaveLayer"}</Link>{" other)"}</code> | Points the culling portal's front at the given chunk. |
 | <Link id="m-setentrance" /><code>{"void SetEntrance(float depth, Vector2 entrance, Vector2 direction)"}</code> | Server: moves and rotates the layer so its entrance lines up, syncs it to clients, raises `ExitReady` and starts building pathfinding. |
 | <Link id="m-toggleterrain" /><code>{"void ToggleTerrain(bool isEnabled)"}</code> | Shows or hides the cave terrain renderers. Always shown while the local player is in the chunk. |
-| <Link id="m-activateportal" /><code>{"private void ActivatePortal()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-generatepathfinding" /><code>{"private IEnumerator GeneratePathfinding() (iterator)"}</code> |  |
-| <Link id="m-handlelocalplayer" /><code>{"private void HandleLocalPlayer()"}</code> |  |
-| <Link id="m-loaddynamic" /><code>{"private Task Alta.Chunks.IProceduralGenerationStreamer.LoadDynamic(bool hasGenerated)"}</code> |  |
-| <Link id="m-loadstatic" /><code>{"private async Task Alta.Chunks.IProceduralGenerationStreamer.LoadStatic(CancellationToken cancellationToken)"}</code> |  |
-| <Link id="m-recenterbounds" /><code>{"private void RecenterBounds()"}</code> |  |
-| <Link id="m-syncsetup-2" /><code>{"private void SyncSetup("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-togglelocalplayer" /><code>{"private void ToggleLocalPlayer(bool hasLocalPlayer)"}</code> |  |
-| <Link id="m-unloaddynamic" /><code>{"private void Alta.Chunks.IProceduralGenerationStreamer.UnloadDynamic()"}</code> |  |
-| <Link id="m-unloadstatic" /><code>{"private void Alta.Chunks.IProceduralGenerationStreamer.UnloadStatic()"}</code> |  |
+
+<details>
+<summary>11 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-activateportal" /><code>{"private void ActivatePortal()"}</code> |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-generatepathfinding" /><code>{"private IEnumerator GeneratePathfinding() (iterator)"}</code> |
+| <Link id="m-handlelocalplayer" /><code>{"private void HandleLocalPlayer()"}</code> |
+| <Link id="m-loaddynamic" /><code>{"private Task Alta.Chunks.IProceduralGenerationStreamer.LoadDynamic(bool hasGenerated)"}</code> |
+| <Link id="m-loadstatic" /><code>{"private async Task Alta.Chunks.IProceduralGenerationStreamer.LoadStatic(CancellationToken cancellationToken)"}</code> |
+| <Link id="m-recenterbounds" /><code>{"private void RecenterBounds()"}</code> |
+| <Link id="m-syncsetup-2" /><code>{"private void SyncSetup("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-togglelocalplayer" /><code>{"private void ToggleLocalPlayer(bool hasLocalPlayer)"}</code> |
+| <Link id="m-unloaddynamic" /><code>{"private void Alta.Chunks.IProceduralGenerationStreamer.UnloadDynamic()"}</code> |
+| <Link id="m-unloadstatic" /><code>{"private void Alta.Chunks.IProceduralGenerationStreamer.UnloadStatic()"}</code> |
+
+</details>

@@ -20,18 +20,23 @@ An effect with a strength multiplier and optional duration, as carried by liquid
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EffectDefinitionApplication("}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectToModify, float strengthMultiplier, int durationInSeconds = 0)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"EffectDefinitionApplication()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EffectDefinitionApplication("}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectToModify, float strengthMultiplier, int durationInSeconds = 0)"}</code> |
+| <Link id="m-ctor-2" /><code>{"EffectDefinitionApplication()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-durationinseconds" /><code>{"private int durationInSeconds"}</code> |  |
-| <Link id="m-effecttomodify" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectToModify"}</code> |  |
-| <Link id="m-strengthmultiplier" /><code>{"private float strengthMultiplier"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-durationinseconds" /><code>{"private int durationInSeconds"}</code> |
+| <Link id="m-effecttomodify" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectToModify"}</code> |
+| <Link id="m-strengthmultiplier" /><code>{"private float strengthMultiplier"}</code> |
+
+</details>
 
 ## Properties
 

@@ -18,21 +18,21 @@ An **abstract class** in `Root.Township`, `Alta.Utilities.Profiling.NetworkTrans
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected NetworkStatisticWithIncomingPackets()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected NetworkStatisticWithIncomingPackets()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-incomingpacketcounttotal" /><code>{"protected "}<Link to="/game-api/types/alta-utilities/networktransportcountstatisticfield">{"NetworkTransportCountStatisticField"}</Link>{" incomingPacketCountTotal"}</code> |  |
-| <Link id="m-incomingpacketslosttotal" /><code>{"protected "}<Link to="/game-api/types/alta-utilities/networktransportcountstatisticfield">{"NetworkTransportCountStatisticField"}</Link>{" incomingPacketsLostTotal"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-incomingpacketcounttotal" /><code>{"protected "}<Link to="/game-api/types/alta-utilities/networktransportcountstatisticfield">{"NetworkTransportCountStatisticField"}</Link>{" incomingPacketCountTotal"}</code> |
+| <Link id="m-incomingpacketslosttotal" /><code>{"protected "}<Link to="/game-api/types/alta-utilities/networktransportcountstatisticfield">{"NetworkTransportCountStatisticField"}</Link>{" incomingPacketsLostTotal"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createsummarydump" /><code>{"override string CreateSummaryDump(float statisticDuration)"}</code> |  |
-| <Link id="m-resetall" /><code>{"override void ResetAll()"}</code> |  |
-| <Link id="m-updatetotalbytesperlastsecondforextrafields" /><code>{"protected override void UpdateTotalBytesPerLastSecondForExtraFields()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createsummarydump" /><code>{"override string CreateSummaryDump(float statisticDuration)"}</code> |
+| <Link id="m-resetall" /><code>{"override void ResetAll()"}</code> |
+| <Link id="m-updatetotalbytesperlastsecondforextrafields" /><code>{"protected override void UpdateTotalBytesPerLastSecondForExtraFields()"}</code> |

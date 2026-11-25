@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, `ATT.FeatureTestGymnasium`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-all" /><code>{"All = 1"}</code> |  |
-| <Link id="m-loadedonly" /><code>{"LoadedOnly = 2"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-all" /><code>{"All = 1"}</code> |
+| <Link id="m-loadedonly" /><code>{"LoadedOnly = 2"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
 
 ## Used in
 

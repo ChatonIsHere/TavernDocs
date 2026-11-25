@@ -17,18 +17,18 @@ A **private struct** in `Root.Township`, `Alta.Pages`. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SyncArgs("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isEnabled)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"SyncArgs("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isEnabled, Vector3 position)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SyncArgs("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isEnabled)"}</code> |
+| <Link id="m-ctor-2" /><code>{"SyncArgs("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isEnabled, Vector3 position)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
-| <Link id="m-isenabled" /><code>{"bool isEnabled"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| <Link id="m-isenabled" /><code>{"bool isEnabled"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
 
 ## Used in
 

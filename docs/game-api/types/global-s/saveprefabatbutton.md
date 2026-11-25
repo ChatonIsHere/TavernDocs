@@ -17,15 +17,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SavePrefabAtButton()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SavePrefabAtButton()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-directory" /><code>{"string directory"}</code> |  |
-| <Link id="m-filename" /><code>{"string fileName"}</code> |  |
-| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |  |
-| <Link id="m-saveprefabat" /><code>{"private bool savePrefabAt"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-directory" /><code>{"string directory"}</code> |
+| <Link id="m-filename" /><code>{"string fileName"}</code> |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |
+| <Link id="m-saveprefabat" /><code>{"private bool savePrefabAt"}</code> |
+
+</details>

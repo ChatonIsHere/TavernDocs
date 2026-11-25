@@ -17,16 +17,24 @@ A **class** in `Root.Township`, `Alta.Intelligence.Wyrms`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveEmerge()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActiveEmerge()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getaction" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/activeemerge">{"ActiveEmerge"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/wyrmemergesettings">{"WyrmEmergeSettings"}</Link>{"> GetAction("}<Link to="/game-api/types/alta-intelligence/wyrmemergesettings">{"WyrmEmergeSettings"}</Link>{" settings)"}</code> |  |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |  |
-| <Link id="m-changesenses" /><code>{"private void ChangeSenses()"}</code> |  |
-| <Link id="m-emergefinished" /><code>{"private void EmergeFinished("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |  |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getaction" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/activeemerge">{"ActiveEmerge"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/wyrmemergesettings">{"WyrmEmergeSettings"}</Link>{"> GetAction("}<Link to="/game-api/types/alta-intelligence/wyrmemergesettings">{"WyrmEmergeSettings"}</Link>{" settings)"}</code> |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-changesenses" /><code>{"private void ChangeSenses()"}</code> |
+| <Link id="m-emergefinished" /><code>{"private void EmergeFinished("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |
+
+</details>

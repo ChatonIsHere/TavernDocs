@@ -17,23 +17,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MouldCopyTest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MouldCopyTest()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-inputdock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" inputDock"}</code> |  |
-| <Link id="m-isused" /><code>{"private bool isUsed"}</code> |  |
-| <Link id="m-mould" /><code>{"private "}<Link to="/game-api/types/global-m-o/mould">{"Mould"}</Link>{" mould"}</code> |  |
-| <Link id="m-useddock" /><code>{"private GameObject usedDock"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-inputdock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" inputDock"}</code> |
+| <Link id="m-isused" /><code>{"private bool isUsed"}</code> |
+| <Link id="m-mould" /><code>{"private "}<Link to="/game-api/types/global-m-o/mould">{"Mould"}</Link>{" mould"}</code> |
+| <Link id="m-useddock" /><code>{"private GameObject usedDock"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkmoulddock" /><code>{"void CheckMouldDock("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" input, "}<Link to="/game-api/types/global-m-o/mould">{"Mould"}</Link>{" targetMould)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-handleitemdocked" /><code>{"private void HandleItemDocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkmoulddock" /><code>{"void CheckMouldDock("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" input, "}<Link to="/game-api/types/global-m-o/mould">{"Mould"}</Link>{" targetMould)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-handleitemdocked" /><code>{"private void HandleItemDocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
+
+</details>

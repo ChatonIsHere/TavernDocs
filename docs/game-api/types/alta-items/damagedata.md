@@ -20,9 +20,9 @@ Information passed along with damage, currently just its source. Given to `Recei
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DamageData("}<Link to="/game-api/types/alta-items/damagesource">{"DamageSource"}</Link>{" source)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DamageData("}<Link to="/game-api/types/alta-items/damagesource">{"DamageSource"}</Link>{" source)"}</code> |
 
 ## Properties
 

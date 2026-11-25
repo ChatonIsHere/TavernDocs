@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UpdateActionStatRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UpdateActionStatRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actionstats" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/statprogress">{"StatProgress"}</Link>{"> ActionStats { get; set; }"}</code> |  |
-| <Link id="m-newprogress" /><code>{"float NewProgress { get; set; }"}</code> |  |
-| <Link id="m-stathash" /><code>{"uint StatHash { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-actionstats" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/statprogress">{"StatProgress"}</Link>{"> ActionStats { get; set; }"}</code> |
+| <Link id="m-newprogress" /><code>{"float NewProgress { get; set; }"}</code> |
+| <Link id="m-stathash" /><code>{"uint StatHash { get; set; }"}</code> |
 
 ## Used in
 

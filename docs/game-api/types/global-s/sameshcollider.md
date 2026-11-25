@@ -19,9 +19,9 @@ Component from the third-party SA Collider Builder editor tool: holds the settin
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SAMeshCollider()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SAMeshCollider()"}</code> |
 
 ## Fields
 

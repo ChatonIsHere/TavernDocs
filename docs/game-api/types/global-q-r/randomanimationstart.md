@@ -17,12 +17,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RandomAnimationStart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RandomAnimationStart()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-start" /><code>{"protected virtual void Start()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-start" /><code>{"protected virtual void Start()"}</code> |

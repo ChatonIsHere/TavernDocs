@@ -20,32 +20,37 @@ A `LocationChunk` in the square grid that covers the outdoor map. Named `"Chunk 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OverworldChunk()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OverworldChunk()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gridxindex" /><code>{"private int gridXIndex"}</code> |  |
-| <Link id="m-gridzindex" /><code>{"private int gridZIndex"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-gridxindex" /><code>{"private int gridXIndex"}</code> |
+| <Link id="m-gridzindex" /><code>{"private int gridZIndex"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gridxindex-2" /><code>{"int GridXIndex { get; }"}</code> |  |
-| <Link id="m-gridzindex-2" /><code>{"int GridZIndex { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gridxindex-2" /><code>{"int GridXIndex { get; }"}</code> |
+| <Link id="m-gridzindex-2" /><code>{"int GridZIndex { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createchunkidentifier" /><code>{"static string CreateChunkIdentifier(int xIndex, int yIndex)"}</code> |  |
-| <Link id="m-getneighboursforloading" /><code>{"override void GetNeighboursForLoading(float remainingLoadBudget, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> result)"}</code> |  |
-| <Link id="m-setgridposition" /><code>{"void SetGridPosition(int xIndex, int zIndex)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createchunkidentifier" /><code>{"static string CreateChunkIdentifier(int xIndex, int yIndex)"}</code> |
+| <Link id="m-getneighboursforloading" /><code>{"override void GetNeighboursForLoading(float remainingLoadBudget, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> result)"}</code> |
+| <Link id="m-setgridposition" /><code>{"void SetGridPosition(int xIndex, int zIndex)"}</code> |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |
 
 ## Used in
 

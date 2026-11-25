@@ -22,19 +22,24 @@ A hashed map asset: the map pieces players can uncover and the world area it cov
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Map()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Map()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-firstnonreservedindex" /><code>{"private uint firstNonReservedIndex"}</code> |  |
-| <Link id="m-globalmappieces" /><code>{"private "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"[] globalMapPieces"}</code> |  |
-| <Link id="m-pieces" /><code>{"private "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"[] pieces"}</code> |  |
-| <Link id="m-worldpositionbottomleft" /><code>{"private Vector2 worldPositionBottomLeft"}</code> |  |
-| <Link id="m-worldpositiontopright" /><code>{"private Vector2 worldPositionTopRight"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-firstnonreservedindex" /><code>{"private uint firstNonReservedIndex"}</code> |
+| <Link id="m-globalmappieces" /><code>{"private "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"[] globalMapPieces"}</code> |
+| <Link id="m-pieces" /><code>{"private "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"[] pieces"}</code> |
+| <Link id="m-worldpositionbottomleft" /><code>{"private Vector2 worldPositionBottomLeft"}</code> |
+| <Link id="m-worldpositiontopright" /><code>{"private Vector2 worldPositionTopRight"}</code> |
+
+</details>
 
 ## Properties
 

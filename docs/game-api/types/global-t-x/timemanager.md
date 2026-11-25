@@ -21,21 +21,29 @@ A scene `NetworkEntityBehaviour`; `static TimeManager instance`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimeManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimeManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-t-x/timemanager">{"TimeManager"}</Link>{" instance"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-t-x/timemanager">{"TimeManager"}</Link>{" instance"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-updatesettings" /><code>{"private void UpdateSettings(Settings settings)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-updatesettings" /><code>{"private void UpdateSettings(Settings settings)"}</code> |
+
+</details>

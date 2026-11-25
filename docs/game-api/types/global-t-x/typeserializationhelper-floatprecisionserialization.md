@@ -18,21 +18,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FloatPrecisionSerialization(float minimum, float maximum, float precision)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FloatPrecisionSerialization(float minimum, float maximum, float precision)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maximum" /><code>{"private float maximum"}</code> |  |
-| <Link id="m-minimum" /><code>{"private float minimum"}</code> |  |
-| <Link id="m-precision" /><code>{"private float precision"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maximum" /><code>{"private float maximum"}</code> |
+| <Link id="m-minimum" /><code>{"private float minimum"}</code> |
+| <Link id="m-precision" /><code>{"private float precision"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref float value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |  |
-| <Link id="m-serializeprecision" /><code>{"private void SerializePrecision(ref float value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref float value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-serializeprecision" /><code>{"private void SerializePrecision(ref float value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>

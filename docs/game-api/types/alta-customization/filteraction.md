@@ -18,16 +18,16 @@ An **abstract class** in `Root.Township`, `Alta.ScreenshotCamera`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected FilterAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected FilterAction()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"abstract void Initialize("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, PostProcessVolume volume)"}</code> |  |
-| <Link id="m-terminate" /><code>{"abstract void Terminate("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, PostProcessVolume volume)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"abstract void Initialize("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, PostProcessVolume volume)"}</code> |
+| <Link id="m-terminate" /><code>{"abstract void Terminate("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, PostProcessVolume volume)"}</code> |
 
 ## Used in
 

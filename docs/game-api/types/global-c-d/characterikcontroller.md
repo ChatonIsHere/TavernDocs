@@ -19,35 +19,48 @@ Runs a player character's IK (body following head and hands) and lets it be turn
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterIKController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CharacterIKController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-charactercomponentcontrollers" /><code>{"private "}<Link to="/game-api/types/alta-player/charactercomponentcontrollercollection">{"CharacterComponentControllerCollection"}</Link>{" characterComponentControllers"}</code> |  |
-| <Link id="m-headtarget" /><code>{"private Transform headTarget"}</code> |  |
-| <Link id="m-headtargetlocalparent" /><code>{"private Transform headTargetLocalParent"}</code> |  |
-| <Link id="m-headtargetremoteparent" /><code>{"private Transform headTargetRemoteParent"}</code> |  |
-| <Link id="m-headtargettransform" /><code>{"private SerializableTransform headTargetTransform"}</code> |  |
-| <Link id="m-isautomaticallyfillingtargettransform" /><code>{"private bool isAutomaticallyFillingTargetTransform"}</code> |  |
-| <Link id="m-lefthandtarget" /><code>{"private "}<Link to="/game-api/types/alta-player/handtargethandler">{"HandTargetHandler"}</Link>{" leftHandTarget"}</code> |  |
-| <Link id="m-lefthandtargetparent" /><code>{"private Transform leftHandTargetParent"}</code> |  |
-| <Link id="m-lefthandtargettransform" /><code>{"private SerializableTransform leftHandTargetTransform"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-playercharacter" /><code>{"private "}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter"}</code> |  |
-| <Link id="m-righthandtarget" /><code>{"private "}<Link to="/game-api/types/alta-player/handtargethandler">{"HandTargetHandler"}</Link>{" rightHandTarget"}</code> |  |
-| <Link id="m-righthandtargetparent" /><code>{"private Transform rightHandTargetParent"}</code> |  |
-| <Link id="m-righthandtargettransform" /><code>{"private SerializableTransform rightHandTargetTransform"}</code> |  |
+<details>
+<summary>14 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-charactercomponentcontrollers" /><code>{"private "}<Link to="/game-api/types/alta-player/charactercomponentcontrollercollection">{"CharacterComponentControllerCollection"}</Link>{" characterComponentControllers"}</code> |
+| <Link id="m-headtarget" /><code>{"private Transform headTarget"}</code> |
+| <Link id="m-headtargetlocalparent" /><code>{"private Transform headTargetLocalParent"}</code> |
+| <Link id="m-headtargetremoteparent" /><code>{"private Transform headTargetRemoteParent"}</code> |
+| <Link id="m-headtargettransform" /><code>{"private SerializableTransform headTargetTransform"}</code> |
+| <Link id="m-isautomaticallyfillingtargettransform" /><code>{"private bool isAutomaticallyFillingTargetTransform"}</code> |
+| <Link id="m-lefthandtarget" /><code>{"private "}<Link to="/game-api/types/alta-player/handtargethandler">{"HandTargetHandler"}</Link>{" leftHandTarget"}</code> |
+| <Link id="m-lefthandtargetparent" /><code>{"private Transform leftHandTargetParent"}</code> |
+| <Link id="m-lefthandtargettransform" /><code>{"private SerializableTransform leftHandTargetTransform"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-playercharacter" /><code>{"private "}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter"}</code> |
+| <Link id="m-righthandtarget" /><code>{"private "}<Link to="/game-api/types/alta-player/handtargethandler">{"HandTargetHandler"}</Link>{" rightHandTarget"}</code> |
+| <Link id="m-righthandtargetparent" /><code>{"private Transform rightHandTargetParent"}</code> |
+| <Link id="m-righthandtargettransform" /><code>{"private SerializableTransform rightHandTargetTransform"}</code> |
+
+</details>
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-isikcontrolactive" /><code>{"bool IsIKControlActive { get; private set; }"}</code> | True while IK drives the hand and head targets. |
-| <Link id="m-shouldupdate" /><code>{"private bool ShouldUpdate { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-shouldupdate" /><code>{"private bool ShouldUpdate { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -70,11 +83,19 @@ Runs a player character's IK (body following head and hands) and lets it be turn
 | <Link id="m-onpreikupdate" /><code>{"void OnPreIKUpdate()"}</code> | Raises `PreIKUpdates`, logging any handler errors. |
 | <Link id="m-setconstantghosthandvisibility" /><code>{"void SetConstantGhostHandVisibility(bool isAlwaysVisible)"}</code> | Forces both ghost hands fully visible, or hands them back to their normal fading. |
 | <Link id="m-updateik" /><code>{"void UpdateIK()"}</code> | Runs the IK components' update while the player is alive (and has input focus in the editor or on Quest). |
-| <Link id="m-automaticallyfilltargettransforms" /><code>{"private void AutomaticallyFillTargetTransforms()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-initializeaslocalplayer" /><code>{"private void IInitializeAsLocalPlayer.InitializeAsLocalPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-syncwithremote" /><code>{"private void SyncWithRemote("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-automaticallyfilltargettransforms" /><code>{"private void AutomaticallyFillTargetTransforms()"}</code> |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-initializeaslocalplayer" /><code>{"private void IInitializeAsLocalPlayer.InitializeAsLocalPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| <Link id="m-syncwithremote" /><code>{"private void SyncWithRemote("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

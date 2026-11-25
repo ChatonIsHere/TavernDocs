@@ -18,24 +18,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MultipleSpawner()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MultipleSpawner()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spawners" /><code>{"private List<"}<Link to="/game-api/types/global-m-o/multiplespawner-simplespawner">{"MultipleSpawner.SimpleSpawner"}</Link>{"> spawners"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-spawners" /><code>{"private List<"}<Link to="/game-api/types/global-m-o/multiplespawner-simplespawner">{"MultipleSpawner.SimpleSpawner"}</Link>{"> spawners"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spawners-2" /><code>{"List<"}<Link to="/game-api/types/global-m-o/multiplespawner-simplespawner">{"MultipleSpawner.SimpleSpawner"}</Link>{"> Spawners { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-spawners-2" /><code>{"List<"}<Link to="/game-api/types/global-m-o/multiplespawner-simplespawner">{"MultipleSpawner.SimpleSpawner"}</Link>{"> Spawners { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spawn" /><code>{"void Spawn()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-spawn" /><code>{"void Spawn()"}</code> |

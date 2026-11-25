@@ -17,12 +17,12 @@ A **class** in `Alta.Timing.Runtime`, `Alta.Timing.PriorityQueue`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StablePriorityQueueNode()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StablePriorityQueueNode()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-insertionindex" /><code>{"long InsertionIndex { get; internal set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-insertionindex" /><code>{"long InsertionIndex { get; internal set; }"}</code> |

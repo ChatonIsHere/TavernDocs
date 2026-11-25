@@ -17,20 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ComponentCounter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ComponentCounter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-componenttype" /><code>{"private Component componentType"}</code> |  |
-| <Link id="m-found" /><code>{"private Component[] found"}</code> |  |
-| <Link id="m-isincludingdisabled" /><code>{"private bool isIncludingDisabled"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-componenttype" /><code>{"private Component componentType"}</code> |
+| <Link id="m-found" /><code>{"private Component[] found"}</code> |
+| <Link id="m-isincludingdisabled" /><code>{"private bool isIncludingDisabled"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

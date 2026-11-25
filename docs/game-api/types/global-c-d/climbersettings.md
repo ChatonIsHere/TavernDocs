@@ -22,9 +22,9 @@ Global settings for an older climbing setup. Nothing else in this build reads it
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClimberSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClimberSettings()"}</code> |
 
 ## Fields
 
@@ -34,30 +34,38 @@ Global settings for an older climbing setup. Nothing else in this build reads it
 | <Link id="m-raycasts" /><code><Link to="/game-api/types/global-c-d/climbersettings-raycast">{"ClimberSettings.Raycast"}</Link>{"[] raycasts"}</code> | Backing field for `Raycasts`. |
 | <Link id="m-strengthaccessleft" /><code><Link to="/game-api/types/global-i-l/infodisplayeraccess">{"InfoDisplayerAccess"}</Link>{" strengthAccessLeft"}</code> | Debug info display for left hand strength. |
 | <Link id="m-strengthaccessright" /><code><Link to="/game-api/types/global-i-l/infodisplayeraccess">{"InfoDisplayerAccess"}</Link>{" strengthAccessRight"}</code> | Debug info display for right hand strength. |
-| <Link id="m-activetightgriplayer" /><code>{"private int activeTightGripLayer"}</code> |  |
-| <Link id="m-breakdistancesquared" /><code>{"private float breakDistanceSquared"}</code> |  |
-| <Link id="m-climbingfriction" /><code>{"private float climbingFriction"}</code> |  |
-| <Link id="m-climbingheight" /><code>{"private float climbingHeight"}</code> |  |
-| <Link id="m-climbingmask" /><code>{"private LayerMask climbingMask"}</code> |  |
-| <Link id="m-climbingstepheight" /><code>{"private float climbingStepHeight"}</code> |  |
-| <Link id="m-climbvelocitymultiplier" /><code>{"private float climbVelocityMultiplier"}</code> |  |
-| <Link id="m-cornerangledotgrip" /><code>{"private AnimationCurve cornerAngleDotGrip"}</code> |  |
-| <Link id="m-cornerdotgrip" /><code>{"private AnimationCurve cornerDotGrip"}</code> |  |
-| <Link id="m-defaultclimbable" /><code>{"private "}<Link to="/game-api/types/global-c-d/climbable">{"Climbable"}</Link>{" defaultClimbable"}</code> |  |
-| <Link id="m-downgripoffsety" /><code>{"private float downGripOffsetY"}</code> |  |
-| <Link id="m-downgripoffsetz" /><code>{"private float downGripOffsetZ"}</code> |  |
-| <Link id="m-griphapticduration" /><code>{"private float gripHapticDuration"}</code> |  |
-| <Link id="m-gripmultiplier" /><code>{"private float gripMultiplier"}</code> |  |
-| <Link id="m-gripoverdistance" /><code>{"private AnimationCurve gripOverDistance"}</code> |  |
-| <Link id="m-gripoververticality" /><code>{"private AnimationCurve gripOverVerticality"}</code> |  |
-| <Link id="m-hapticstrengthoverdistance" /><code>{"private AnimationCurve hapticStrengthOverDistance"}</code> |  |
-| <Link id="m-hapticstrengthoverupwardalignment" /><code>{"private AnimationCurve hapticStrengthOverUpwardAlignment"}</code> |  |
-| <Link id="m-isrequiringclimbable" /><code>{"private bool isRequiringClimbable"}</code> |  |
-| <Link id="m-lowermultiplier" /><code>{"private float lowerMultiplier"}</code> |  |
-| <Link id="m-mindistancetoapplyforcesquared" /><code>{"private float minDistanceToApplyForceSquared"}</code> |  |
-| <Link id="m-strengthoverdistance" /><code>{"private AnimationCurve strengthOverDistance"}</code> |  |
-| <Link id="m-upgripoffsety" /><code>{"private float upGripOffsetY"}</code> |  |
-| <Link id="m-upgripoffsetz" /><code>{"private float upGripOffsetZ"}</code> |  |
+
+<details>
+<summary>24 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activetightgriplayer" /><code>{"private int activeTightGripLayer"}</code> |
+| <Link id="m-breakdistancesquared" /><code>{"private float breakDistanceSquared"}</code> |
+| <Link id="m-climbingfriction" /><code>{"private float climbingFriction"}</code> |
+| <Link id="m-climbingheight" /><code>{"private float climbingHeight"}</code> |
+| <Link id="m-climbingmask" /><code>{"private LayerMask climbingMask"}</code> |
+| <Link id="m-climbingstepheight" /><code>{"private float climbingStepHeight"}</code> |
+| <Link id="m-climbvelocitymultiplier" /><code>{"private float climbVelocityMultiplier"}</code> |
+| <Link id="m-cornerangledotgrip" /><code>{"private AnimationCurve cornerAngleDotGrip"}</code> |
+| <Link id="m-cornerdotgrip" /><code>{"private AnimationCurve cornerDotGrip"}</code> |
+| <Link id="m-defaultclimbable" /><code>{"private "}<Link to="/game-api/types/global-c-d/climbable">{"Climbable"}</Link>{" defaultClimbable"}</code> |
+| <Link id="m-downgripoffsety" /><code>{"private float downGripOffsetY"}</code> |
+| <Link id="m-downgripoffsetz" /><code>{"private float downGripOffsetZ"}</code> |
+| <Link id="m-griphapticduration" /><code>{"private float gripHapticDuration"}</code> |
+| <Link id="m-gripmultiplier" /><code>{"private float gripMultiplier"}</code> |
+| <Link id="m-gripoverdistance" /><code>{"private AnimationCurve gripOverDistance"}</code> |
+| <Link id="m-gripoververticality" /><code>{"private AnimationCurve gripOverVerticality"}</code> |
+| <Link id="m-hapticstrengthoverdistance" /><code>{"private AnimationCurve hapticStrengthOverDistance"}</code> |
+| <Link id="m-hapticstrengthoverupwardalignment" /><code>{"private AnimationCurve hapticStrengthOverUpwardAlignment"}</code> |
+| <Link id="m-isrequiringclimbable" /><code>{"private bool isRequiringClimbable"}</code> |
+| <Link id="m-lowermultiplier" /><code>{"private float lowerMultiplier"}</code> |
+| <Link id="m-mindistancetoapplyforcesquared" /><code>{"private float minDistanceToApplyForceSquared"}</code> |
+| <Link id="m-strengthoverdistance" /><code>{"private AnimationCurve strengthOverDistance"}</code> |
+| <Link id="m-upgripoffsety" /><code>{"private float upGripOffsetY"}</code> |
+| <Link id="m-upgripoffsetz" /><code>{"private float upGripOffsetZ"}</code> |
+
+</details>
 
 ## Properties
 

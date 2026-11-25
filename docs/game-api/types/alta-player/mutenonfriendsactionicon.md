@@ -17,24 +17,37 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MuteNonFriendsActionIcon()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MuteNonFriendsActionIcon()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-action" /><code>{"private "}<Link to="/game-api/types/alta-player/mutenonfriendsquickaccessaction">{"MuteNonFriendsQuickAccessAction"}</Link>{" action"}</code> |  |
-| <Link id="m-icons" /><code>{"private GameObject[] icons"}</code> |  |
-| <Link id="m-slash" /><code>{"private GameObject slash"}</code> |  |
-| <Link id="m-voicechat" /><code>{"private "}<Link to="/game-api/types/alta-networking/ivoicechat">{"IVoiceChat"}</Link>{" voiceChat"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-action" /><code>{"private "}<Link to="/game-api/types/alta-player/mutenonfriendsquickaccessaction">{"MuteNonFriendsQuickAccessAction"}</Link>{" action"}</code> |
+| <Link id="m-icons" /><code>{"private GameObject[] icons"}</code> |
+| <Link id="m-slash" /><code>{"private GameObject slash"}</code> |
+| <Link id="m-voicechat" /><code>{"private "}<Link to="/game-api/types/alta-networking/ivoicechat">{"IVoiceChat"}</Link>{" voiceChat"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onenable" /><code>{"void OnEnable()"}</code> |  |
-| <Link id="m-setupaction" /><code>{"void SetupAction("}<Link to="/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" action)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-setactive" /><code>{"private void SetActive(bool isActive)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onenable" /><code>{"void OnEnable()"}</code> |
+| <Link id="m-setupaction" /><code>{"void SetupAction("}<Link to="/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" action)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-setactive" /><code>{"private void SetActive(bool isActive)"}</code> |
+
+</details>

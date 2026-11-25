@@ -17,15 +17,15 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GroupMemberListElement()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GroupMemberListElement()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gettext" /><code>{"protected override string GetText("}<Link to="/game-api/types/assembly-api-client/groupmember">{"GroupMember"}</Link>{" data)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gettext" /><code>{"protected override string GetText("}<Link to="/game-api/types/assembly-api-client/groupmember">{"GroupMember"}</Link>{" data)"}</code> |
 
 ## Used in
 

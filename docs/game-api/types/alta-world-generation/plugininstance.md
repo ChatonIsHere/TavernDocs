@@ -20,15 +20,20 @@ One cave generation `Plugin` running for one generator (cave layer). Made by `Pl
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PluginInstance("}<Link to="/game-api/types/alta-world-generation/igenerator">{"IGenerator"}</Link>{" generator, "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" plugin, bool isEnabled)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PluginInstance("}<Link to="/game-api/types/alta-world-generation/igenerator">{"IGenerator"}</Link>{" generator, "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" plugin, bool isEnabled)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-parts" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{"[] parts"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-parts" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{"[] parts"}</code> |
+
+</details>
 
 ## Properties
 

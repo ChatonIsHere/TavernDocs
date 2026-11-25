@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UserRoles()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UserRoles()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdeveloper" /><code>{"bool IsDeveloper { get; set; }"}</code> |  |
-| <Link id="m-ismember" /><code>{"bool IsMember { get; set; }"}</code> |  |
-| <Link id="m-ismoderator" /><code>{"bool IsModerator { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isdeveloper" /><code>{"bool IsDeveloper { get; set; }"}</code> |
+| <Link id="m-ismember" /><code>{"bool IsMember { get; set; }"}</code> |
+| <Link id="m-ismoderator" /><code>{"bool IsModerator { get; set; }"}</code> |
 
 ## Used in
 

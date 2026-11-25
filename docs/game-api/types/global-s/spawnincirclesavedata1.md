@@ -18,21 +18,21 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnInCircleSaveData1()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpawnInCircleSaveData1()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxradiussaved" /><code>{"float maxRadiusSaved"}</code> |  |
-| <Link id="m-minradiussaved" /><code>{"float minRadiusSaved"}</code> |  |
-| <Link id="m-numofitemssaved" /><code>{"int numOfItemsSaved"}</code> |  |
-| <Link id="m-randomoffsetsaved" /><code>{"Vector3 randomOffsetSaved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maxradiussaved" /><code>{"float maxRadiusSaved"}</code> |
+| <Link id="m-minradiussaved" /><code>{"float minRadiusSaved"}</code> |
+| <Link id="m-numofitemssaved" /><code>{"int numOfItemsSaved"}</code> |
+| <Link id="m-randomoffsetsaved" /><code>{"Vector3 randomOffsetSaved"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

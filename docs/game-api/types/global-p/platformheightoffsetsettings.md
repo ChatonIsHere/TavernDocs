@@ -17,21 +17,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformHeightOffsetSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformHeightOffsetSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-offsets" /><code>{"private List<"}<Link to="/game-api/types/global-p/platformheightoffset">{"PlatformHeightOffset"}</Link>{"> offsets"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-offsets" /><code>{"private List<"}<Link to="/game-api/types/global-p/platformheightoffset">{"PlatformHeightOffset"}</Link>{"> offsets"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-offsets-2" /><code>{"List<"}<Link to="/game-api/types/global-p/platformheightoffset">{"PlatformHeightOffset"}</Link>{"> Offsets { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-offsets-2" /><code>{"List<"}<Link to="/game-api/types/global-p/platformheightoffset">{"PlatformHeightOffset"}</Link>{"> Offsets { get; }"}</code> |
 
 ## Used in
 

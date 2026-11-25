@@ -24,5 +24,13 @@ TavernLib's internal log helper. Writes through `Tavern.Logger` as `[Type.Method
 | <Link id="m-error" /><code>{"static void Error(object msg, string callerName = \"\")"}</code> | Logs a red line prefixed `ERROR`, tagged with the calling type and method. |
 | <Link id="m-msg" /><code>{"static void Msg(object msg, string callerName = \"\")"}</code> | Logs a green line tagged with the calling type and method. |
 | <Link id="m-warn" /><code>{"static void Warn(object msg, string callerName = \"\")"}</code> | Logs an orange line prefixed `WARNING`, tagged with the calling type and method. |
-| <Link id="m-iscompilergeneratedasyncstatemachine" /><code>{"private static bool IsCompilerGeneratedAsyncStateMachine(Type type)"}</code> |  |
-| <Link id="m-log" /><code>{"private static void Log(ColorARGB color, string callerName, object msg, string prefix = \"\")"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-iscompilergeneratedasyncstatemachine" /><code>{"private static bool IsCompilerGeneratedAsyncStateMachine(Type type)"}</code> |
+| <Link id="m-log" /><code>{"private static void Log(ColorARGB color, string callerName, object msg, string prefix = \"\")"}</code> |
+
+</details>

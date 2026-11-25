@@ -19,12 +19,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkedFloatStreamSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkedFloatStreamSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-value" /><code>{"float value"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-value" /><code>{"float value"}</code> |

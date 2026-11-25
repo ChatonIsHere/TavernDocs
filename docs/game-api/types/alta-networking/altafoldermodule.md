@@ -18,28 +18,33 @@ A **class** in `Root.Township`, `Alta.WebServer`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaFolderModule("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string path)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaFolderModule("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string path)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filemodule" /><code>{"private FileModule fileModule"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-filemodule" /><code>{"private FileModule fileModule"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-folder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" Folder { get; }"}</code> |  |
-| <Link id="m-isfinalhandler" /><code>{"override bool IsFinalHandler { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-folder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" Folder { get; }"}</code> |
+| <Link id="m-isfinalhandler" /><code>{"override bool IsFinalHandler { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> |  |
-| <Link id="m-onrequestasync" /><code>{"protected override async Task OnRequestAsync(IHttpContext context)"}</code> |  |
-| <Link id="m-onstart" /><code>{"protected override void OnStart(CancellationToken cancellationToken)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
+| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> |
+| <Link id="m-onrequestasync" /><code>{"protected override async Task OnRequestAsync(IHttpContext context)"}</code> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart(CancellationToken cancellationToken)"}</code> |

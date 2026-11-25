@@ -17,13 +17,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NullConsole()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NullConsole()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handlelog" /><code>{"override void HandleLog(string message, LogLevel level)"}</code> |  |
-| <Link id="m-shutdown" /><code>{"override void Shutdown()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-handlelog" /><code>{"override void HandleLog(string message, LogLevel level)"}</code> |
+| <Link id="m-shutdown" /><code>{"override void Shutdown()"}</code> |

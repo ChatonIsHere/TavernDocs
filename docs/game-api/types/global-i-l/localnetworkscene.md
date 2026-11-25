@@ -20,16 +20,21 @@ An offline stand-in network scene for the main menu: it pretends to be the serve
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LocalNetworkScene()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LocalNetworkScene()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-spawnarea" /><code>{"private "}<Link to="/game-api/types/global-s/spawnarea">{"SpawnArea"}</Link>{" spawnArea"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-spawnarea" /><code>{"private "}<Link to="/game-api/types/global-s/spawnarea">{"SpawnArea"}</Link>{" spawnArea"}</code> |
+
+</details>
 
 ## Properties
 
@@ -51,7 +56,15 @@ An offline stand-in network scene for the main menu: it pretends to be the serve
 | <Link id="m-spawnpoint" /><code>{"Transform SpawnPoint { get; }"}</code> | Always null. |
 | <Link id="m-spawnratemultiplier" /><code>{"float SpawnRateMultiplier { get; }"}</code> | Always 1. |
 | <Link id="m-voidchunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" VoidChunk { get; }"}</code> | Always null. |
-| <Link id="m-alta-networking-inetworksceneinternal-sceneserializer" /><code>{"private "}<Link to="/game-api/types/alta-networking/sceneserializer">{"SceneSerializer"}</Link>{" Alta.Networking.INetworkSceneInternal.SceneSerializer { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-networking-inetworksceneinternal-sceneserializer" /><code>{"private "}<Link to="/game-api/types/alta-networking/sceneserializer">{"SceneSerializer"}</Link>{" Alta.Networking.INetworkSceneInternal.SceneSerializer { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -79,10 +92,18 @@ An offline stand-in network scene for the main menu: it pretends to be the serve
 | <Link id="m-serializeasclient" /><code>{"void SerializeAsClient("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | The one-argument version does nothing; the two-argument one throws. |
 | <Link id="m-serializeasclient-2" /><code>{"void SerializeAsClient("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isAdding = true)"}</code> | The one-argument version does nothing; the two-argument one throws. |
 | <Link id="m-serializeentity" /><code>{"void SerializeEntity("}<Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" entitySerializer, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isSendingAll)"}</code> | Not supported; throws. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-setallitemstonotnetwork" /><code>{"private void SetAllItemsToNotNetwork()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-setallitemstonotnetwork" /><code>{"private void SetAllItemsToNotNetwork()"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>
 
 ## Used in
 

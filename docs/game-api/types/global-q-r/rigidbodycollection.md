@@ -17,28 +17,38 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RigidbodyCollection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RigidbodyCollection()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-rigidbodies" /><code>{"private List<Rigidbody> rigidbodies"}</code> |  |
-| <Link id="m-uniquerigidbodies" /><code>{"private HashSet<Rigidbody> uniqueRigidbodies"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-rigidbodies" /><code>{"private List<Rigidbody> rigidbodies"}</code> |
+| <Link id="m-uniquerigidbodies" /><code>{"private HashSet<Rigidbody> uniqueRigidbodies"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-rigidbodies-2" /><code>{"HashSet<Rigidbody> Rigidbodies { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-rigidbodies-2" /><code>{"HashSet<Rigidbody> Rigidbodies { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reset" /><code>{"private void Reset()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-reset" /><code>{"private void Reset()"}</code> |
+
+</details>
 
 ## Used in
 

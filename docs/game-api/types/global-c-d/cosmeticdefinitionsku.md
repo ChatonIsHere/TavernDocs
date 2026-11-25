@@ -16,23 +16,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticDefinitionSku(string sku)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CosmeticDefinitionSku(string sku)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments"}</code> |  |
-| <Link id="m-name" /><code>{"string name"}</code> |  |
-| <Link id="m-cosmeticsku" /><code>{"private string cosmeticSKU"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments"}</code> |
+| <Link id="m-name" /><code>{"string name"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-cosmeticsku" /><code>{"private string cosmeticSKU"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cosmeticsku-2" /><code>{"string CosmeticSKU { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cosmeticsku-2" /><code>{"string CosmeticSKU { get; }"}</code> |
 
 ## Used in
 

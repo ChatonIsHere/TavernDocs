@@ -18,6 +18,6 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UnityAttachmentEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UnityAttachmentEvent()"}</code> |

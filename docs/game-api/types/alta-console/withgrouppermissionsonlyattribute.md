@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WithGroupPermissionsOnlyAttribute(params "}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] groups)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WithGroupPermissionsOnlyAttribute(params "}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] groups)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-groups" /><code>{"private List<"}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"> Groups { get; set; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-groups" /><code>{"private List<"}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"> Groups { get; set; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-check" /><code>{"override bool Check("}<Link to="/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-check" /><code>{"override bool Check("}<Link to="/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |

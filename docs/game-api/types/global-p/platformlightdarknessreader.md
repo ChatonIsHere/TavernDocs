@@ -17,23 +17,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformLightDarknessReader("}<Link to="/game-api/types/global-c-d/darknessreader">{"DarknessReader"}</Link>{" reader, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" character, Action requestSpawn)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformLightDarknessReader("}<Link to="/game-api/types/global-c-d/darknessreader">{"DarknessReader"}</Link>{" reader, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" character, Action requestSpawn)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-timer" /><code>{"private float timer"}</code> |  |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-timer" /><code>{"private float timer"}</code> |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-disableinternal" /><code>{"protected override void DisableInternal()"}</code> |  |
-| <Link id="m-enableinternal" /><code>{"protected override void EnableInternal()"}</code> |  |
-| <Link id="m-isindarkness" /><code>{"private bool IsInDarkness()"}</code> |  |
-| <Link id="m-updateloop" /><code>{"private void UpdateLoop()"}</code> |  |
-| <Link id="m-updateplayer" /><code>{"private void UpdatePlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-disableinternal" /><code>{"protected override void DisableInternal()"}</code> |
+| <Link id="m-enableinternal" /><code>{"protected override void EnableInternal()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-isindarkness" /><code>{"private bool IsInDarkness()"}</code> |
+| <Link id="m-updateloop" /><code>{"private void UpdateLoop()"}</code> |
+| <Link id="m-updateplayer" /><code>{"private void UpdatePlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |
+
+</details>

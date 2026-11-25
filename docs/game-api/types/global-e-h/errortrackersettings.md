@@ -17,13 +17,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ErrorTrackerSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ErrorTrackerSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-displaydialogonfirsterror" /><code>{"bool displayDialogOnFirstError"}</code> |  |
-| <Link id="m-displaymessagewhenthereareerrors" /><code>{"bool displayMessageWhenThereAreErrors"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-displaydialogonfirsterror" /><code>{"bool displayDialogOnFirstError"}</code> |
+| <Link id="m-displaymessagewhenthereareerrors" /><code>{"bool displayMessageWhenThereAreErrors"}</code> |

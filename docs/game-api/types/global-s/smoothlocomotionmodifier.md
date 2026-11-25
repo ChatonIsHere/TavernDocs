@@ -20,9 +20,9 @@ Base for components next to `SmoothLocomotion` that change the local player's sm
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SmoothLocomotionModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SmoothLocomotionModifier()"}</code> |
 
 ## Fields
 

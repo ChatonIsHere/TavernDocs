@@ -19,27 +19,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpecificSpawnItemTask()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpecificSpawnItemTask()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-recipefilter" /><code>{"private "}<Link to="/game-api/types/global-s/specificspawnitemtask-recipefilter">{"SpecificSpawnItemTask.RecipeFilter"}</Link>{" recipeFilter"}</code> |  |
-| <Link id="m-targetprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> targetPrefabs"}</code> |  |
-| <Link id="m-targetprefabshashes" /><code>{"private HashSet<uint> targetPrefabsHashes"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-recipefilter" /><code>{"private "}<Link to="/game-api/types/global-s/specificspawnitemtask-recipefilter">{"SpecificSpawnItemTask.RecipeFilter"}</Link>{" recipeFilter"}</code> |
+| <Link id="m-targetprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> targetPrefabs"}</code> |
+| <Link id="m-targetprefabshashes" /><code>{"private HashSet<uint> targetPrefabsHashes"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> |  |
-| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/game-api/types/global-s/specificspawnitemtaskargument">{"SpecificSpawnItemTaskArgument"}</Link>{" argument)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> |
+| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/game-api/types/global-s/specificspawnitemtaskargument">{"SpecificSpawnItemTaskArgument"}</Link>{" argument)"}</code> |

@@ -18,22 +18,27 @@ A float that eases toward a target over time and writes each step through a sett
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LerpingControlledFloatValue(Action<float> setValue)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LerpingControlledFloatValue(Action<float> setValue)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-control" /><code>{"private float control"}</code> |  |
-| <Link id="m-gettarget" /><code>{"private Func<float> getTarget"}</code> |  |
-| <Link id="m-initial" /><code>{"private float initial"}</code> |  |
-| <Link id="m-iscontrolled" /><code>{"private bool isControlled"}</code> |  |
-| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |  |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |  |
-| <Link id="m-setvalue" /><code>{"private Action<float> setValue"}</code> |  |
-| <Link id="m-snapvalue" /><code>{"private float snapValue"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-control" /><code>{"private float control"}</code> |
+| <Link id="m-gettarget" /><code>{"private Func<float> getTarget"}</code> |
+| <Link id="m-initial" /><code>{"private float initial"}</code> |
+| <Link id="m-iscontrolled" /><code>{"private bool isControlled"}</code> |
+| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |
+| <Link id="m-progress" /><code>{"private float progress"}</code> |
+| <Link id="m-setvalue" /><code>{"private Action<float> setValue"}</code> |
+| <Link id="m-snapvalue" /><code>{"private float snapValue"}</code> |
+
+</details>
 
 ## Properties
 
@@ -61,7 +66,15 @@ A float that eases toward a target over time and writes each step through a sett
 | <Link id="m-stopcontrol" /><code>{"void StopControl()"}</code> | Ends control and lerps from the current value back to the normal target. |
 | <Link id="m-update" /><code>{"void Update()"}</code> | Advances the lerp by the frame time and calls the setter. |
 | <Link id="m-lerp" /><code>{"protected float Lerp(float target)"}</code> | Starts moving toward a fixed target (with a duration in seconds) or toward a target read every frame. |
-| <Link id="m-snapvalue-2" /><code>{"private float SnapValue()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-snapvalue-2" /><code>{"private float SnapValue()"}</code> |
+
+</details>
 
 ## Used in
 

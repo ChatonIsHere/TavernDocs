@@ -20,31 +20,31 @@ The kind of a connection-level network message: joining, spawning, entity update
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clientisreadytospawn" /><code>{"ClientIsReadyToSpawn = 11"}</code> |  |
-| <Link id="m-confirmservercontrol" /><code>{"ConfirmServerControl = 13"}</code> |  |
-| <Link id="m-connectionpauserequest" /><code>{"ConnectionPauseRequest = 17"}</code> |  |
-| <Link id="m-debug" /><code>{"Debug = 1"}</code> |  |
-| <Link id="m-entitydestroyed" /><code>{"EntityDestroyed = 21"}</code> |  |
-| <Link id="m-entityinternal" /><code>{"EntityInternal = 24"}</code> |  |
-| <Link id="m-entitymissing" /><code>{"EntityMissing = 22"}</code> |  |
-| <Link id="m-entitymoved" /><code>{"EntityMoved = 23"}</code> |  |
-| <Link id="m-error" /><code>{"Error = 2"}</code> |  |
-| <Link id="m-filecacherequest" /><code>{"FileCacheRequest = 26"}</code> |  |
-| <Link id="m-initialentityserialize" /><code>{"InitialEntitySerialize = 29"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-ping" /><code>{"Ping = 6"}</code> |  |
-| <Link id="m-requestjoin" /><code>{"RequestJoin = 9"}</code> |  |
-| <Link id="m-requestjoinresponse" /><code>{"RequestJoinResponse = 10"}</code> |  |
-| <Link id="m-requestservercontrol" /><code>{"RequestServerControl = 12"}</code> |  |
-| <Link id="m-sceneentitysync" /><code>{"SceneEntitySync = 25"}</code> |  |
-| <Link id="m-sceneserialize" /><code>{"SceneSerialize = 28"}</code> |  |
-| <Link id="m-servercontrolmessage" /><code>{"ServerControlMessage = 15"}</code> |  |
-| <Link id="m-serverdiagnostics" /><code>{"ServerDiagnostics = 4"}</code> |  |
-| <Link id="m-serverstatus" /><code>{"ServerStatus = 7"}</code> |  |
-| <Link id="m-spawnentity" /><code>{"SpawnEntity = 20"}</code> |  |
-| <Link id="m-voicechat" /><code>{"VoiceChat = 30"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clientisreadytospawn" /><code>{"ClientIsReadyToSpawn = 11"}</code> |
+| <Link id="m-confirmservercontrol" /><code>{"ConfirmServerControl = 13"}</code> |
+| <Link id="m-connectionpauserequest" /><code>{"ConnectionPauseRequest = 17"}</code> |
+| <Link id="m-debug" /><code>{"Debug = 1"}</code> |
+| <Link id="m-entitydestroyed" /><code>{"EntityDestroyed = 21"}</code> |
+| <Link id="m-entityinternal" /><code>{"EntityInternal = 24"}</code> |
+| <Link id="m-entitymissing" /><code>{"EntityMissing = 22"}</code> |
+| <Link id="m-entitymoved" /><code>{"EntityMoved = 23"}</code> |
+| <Link id="m-error" /><code>{"Error = 2"}</code> |
+| <Link id="m-filecacherequest" /><code>{"FileCacheRequest = 26"}</code> |
+| <Link id="m-initialentityserialize" /><code>{"InitialEntitySerialize = 29"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-ping" /><code>{"Ping = 6"}</code> |
+| <Link id="m-requestjoin" /><code>{"RequestJoin = 9"}</code> |
+| <Link id="m-requestjoinresponse" /><code>{"RequestJoinResponse = 10"}</code> |
+| <Link id="m-requestservercontrol" /><code>{"RequestServerControl = 12"}</code> |
+| <Link id="m-sceneentitysync" /><code>{"SceneEntitySync = 25"}</code> |
+| <Link id="m-sceneserialize" /><code>{"SceneSerialize = 28"}</code> |
+| <Link id="m-servercontrolmessage" /><code>{"ServerControlMessage = 15"}</code> |
+| <Link id="m-serverdiagnostics" /><code>{"ServerDiagnostics = 4"}</code> |
+| <Link id="m-serverstatus" /><code>{"ServerStatus = 7"}</code> |
+| <Link id="m-spawnentity" /><code>{"SpawnEntity = 20"}</code> |
+| <Link id="m-voicechat" /><code>{"VoiceChat = 30"}</code> |
 
 ## Used in
 

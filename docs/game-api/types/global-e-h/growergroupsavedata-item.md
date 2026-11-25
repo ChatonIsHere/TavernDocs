@@ -17,22 +17,22 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Item()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-childindex" /><code>{"int childIndex"}</code> |  |
-| <Link id="m-currentstage" /><code>{"int currentStage"}</code> |  |
-| <Link id="m-definition" /><code><Link to="/game-api/types/global-e-h/growthdefinition">{"GrowthDefinition"}</Link>{" definition"}</code> |  |
-| <Link id="m-hasstarted" /><code>{"bool hasStarted"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |  |
-| <Link id="m-spawnedstageindex" /><code>{"int spawnedStageIndex"}</code> |  |
-| <Link id="m-startedtime" /><code>{"TimeSpan startedTime"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-childindex" /><code>{"int childIndex"}</code> |
+| <Link id="m-currentstage" /><code>{"int currentStage"}</code> |
+| <Link id="m-definition" /><code><Link to="/game-api/types/global-e-h/growthdefinition">{"GrowthDefinition"}</Link>{" definition"}</code> |
+| <Link id="m-hasstarted" /><code>{"bool hasStarted"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |
+| <Link id="m-spawnedstageindex" /><code>{"int spawnedStageIndex"}</code> |
+| <Link id="m-startedtime" /><code>{"TimeSpan startedTime"}</code> |
 
 ## Used in
 

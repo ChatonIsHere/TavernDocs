@@ -17,10 +17,10 @@ A **struct** in `Root.Township`, `Alta.Forests`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pointedge" /><code><Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" pointEdge"}</code> |  |
-| <Link id="m-y" /><code>{"float y"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-pointedge" /><code><Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" pointEdge"}</code> |
+| <Link id="m-y" /><code>{"float y"}</code> |
 
 ## Used in
 

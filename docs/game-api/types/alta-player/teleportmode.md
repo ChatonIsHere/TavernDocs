@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, `Alta.Character`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-feet" /><code>{"Feet = 1"}</code> |  |
-| <Link id="m-head" /><code>{"Head = 2"}</code> |  |
-| <Link id="m-roomcenter" /><code>{"RoomCenter = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-feet" /><code>{"Feet = 1"}</code> |
+| <Link id="m-head" /><code>{"Head = 2"}</code> |
+| <Link id="m-roomcenter" /><code>{"RoomCenter = 0"}</code> |
 
 ## Used in
 

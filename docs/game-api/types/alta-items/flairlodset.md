@@ -17,25 +17,30 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FlairLodSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FlairLodSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lod0" /><code>{"private Renderer[] lod0"}</code> |  |
-| <Link id="m-lod1" /><code>{"private Renderer[] lod1"}</code> |  |
-| <Link id="m-lod2" /><code>{"private Renderer[] lod2"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-lod0" /><code>{"private Renderer[] lod0"}</code> |
+| <Link id="m-lod1" /><code>{"private Renderer[] lod1"}</code> |
+| <Link id="m-lod2" /><code>{"private Renderer[] lod2"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addto" /><code>{"void AddTo(List<Renderer>[] lods)"}</code> |  |
-| <Link id="m-removefrom" /><code>{"void RemoveFrom(List<Renderer>[] lods)"}</code> |  |
-| <Link id="m-set01material" /><code>{"void Set01Material(Material material)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addto" /><code>{"void AddTo(List<Renderer>[] lods)"}</code> |
+| <Link id="m-removefrom" /><code>{"void RemoveFrom(List<Renderer>[] lods)"}</code> |
+| <Link id="m-set01material" /><code>{"void Set01Material(Material material)"}</code> |
 
 ## Used in
 

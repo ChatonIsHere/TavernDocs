@@ -18,28 +18,33 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ToggleRuntimeConsole()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ToggleRuntimeConsole()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-consoleprefab" /><code>{"private "}<Link to="/game-api/types/global-q-r/runtimeconsole">{"RuntimeConsole"}</Link>{" consolePrefab"}</code> |  |
-| <Link id="m-runtimeconsole" /><code>{"private "}<Link to="/game-api/types/global-q-r/runtimeconsole">{"RuntimeConsole"}</Link>{" runtimeConsole"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-consoleprefab" /><code>{"private "}<Link to="/game-api/types/global-q-r/runtimeconsole">{"RuntimeConsole"}</Link>{" consolePrefab"}</code> |
+| <Link id="m-runtimeconsole" /><code>{"private "}<Link to="/game-api/types/global-q-r/runtimeconsole">{"RuntimeConsole"}</Link>{" runtimeConsole"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> |  |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initconsole" /><code>{"void InitConsole()"}</code> |  |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |  |
-| <Link id="m-updateconsoleposition" /><code>{"void UpdateConsolePosition("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initconsole" /><code>{"void InitConsole()"}</code> |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |
+| <Link id="m-updateconsoleposition" /><code>{"void UpdateConsolePosition("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |

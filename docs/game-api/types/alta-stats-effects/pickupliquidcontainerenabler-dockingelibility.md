@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, `Alta.Liquid`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alldocks" /><code>{"AllDocks = 2"}</code> |  |
-| <Link id="m-notallowed" /><code>{"NotAllowed = 0"}</code> |  |
-| <Link id="m-onlyphysical" /><code>{"OnlyPhysical = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-alldocks" /><code>{"AllDocks = 2"}</code> |
+| <Link id="m-notallowed" /><code>{"NotAllowed = 0"}</code> |
+| <Link id="m-onlyphysical" /><code>{"OnlyPhysical = 1"}</code> |
 
 ## Used in
 

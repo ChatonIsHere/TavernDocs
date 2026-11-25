@@ -21,17 +21,22 @@ A ScriptableObject for one option in the wrist quick access menu. The menu contr
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected QuickAccessMenuAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected QuickAccessMenuAction()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-displayname" /><code>{"private string displayName"}</code> |  |
-| <Link id="m-isignoredon" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" isIgnoredOn"}</code> |  |
-| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-displayname" /><code>{"private string displayName"}</code> |
+| <Link id="m-isignoredon" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" isIgnoredOn"}</code> |
+| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |
+
+</details>
 
 ## Properties
 

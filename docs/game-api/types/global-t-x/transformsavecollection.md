@@ -19,17 +19,22 @@ Asset that stores saved transforms for a hierarchy by object name and can load t
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TransformSaveCollection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TransformSaveCollection()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-displayname" /><code>{"private string displayName"}</code> |  |
-| <Link id="m-savedtransforms" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/global-t-x/transformsaveobject">{"TransformSaveObject"}</Link>{"> savedTransforms"}</code> |  |
-| <Link id="m-savedtransformslist" /><code>{"private List<"}<Link to="/game-api/types/global-t-x/transformsaveobject">{"TransformSaveObject"}</Link>{"> savedTransformsList"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-displayname" /><code>{"private string displayName"}</code> |
+| <Link id="m-savedtransforms" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/global-t-x/transformsaveobject">{"TransformSaveObject"}</Link>{"> savedTransforms"}</code> |
+| <Link id="m-savedtransformslist" /><code>{"private List<"}<Link to="/game-api/types/global-t-x/transformsaveobject">{"TransformSaveObject"}</Link>{"> savedTransformsList"}</code> |
+
+</details>
 
 ## Properties
 
@@ -46,9 +51,17 @@ Asset that stores saved transforms for a hierarchy by object name and can load t
 | <Link id="m-loadinto" /><code>{"override bool LoadInto(Transform transform)"}</code> | Applies the saved transforms to the hierarchy by name. False if the root isn't in the save. |
 | <Link id="m-save" /><code>{"override void Save(Transform transform, bool isLocalSave)"}</code> | Clears the saved list and walks the hierarchy, but the per-transform save is empty, so nothing is stored. |
 | <Link id="m-setupdictionary" /><code>{"void SetupDictionary()"}</code> | Rebuilds the name lookup from the saved list. |
-| <Link id="m-recursiveload" /><code>{"private void RecursiveLoad(Transform transform)"}</code> |  |
-| <Link id="m-recursivesave" /><code>{"private void RecursiveSave(Transform transform, bool isLocalSave)"}</code> |  |
-| <Link id="m-savetransform" /><code>{"private void SaveTransform(Transform transform, bool isLocalSave)"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-recursiveload" /><code>{"private void RecursiveLoad(Transform transform)"}</code> |
+| <Link id="m-recursivesave" /><code>{"private void RecursiveSave(Transform transform, bool isLocalSave)"}</code> |
+| <Link id="m-savetransform" /><code>{"private void SaveTransform(Transform transform, bool isLocalSave)"}</code> |
+
+</details>
 
 ## Used in
 

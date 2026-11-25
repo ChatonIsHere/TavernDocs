@@ -16,18 +16,18 @@ A **static class** in `Root.Township`, `Alta.Customization`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentbalance" /><code>{"static int CurrentBalance { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentbalance" /><code>{"static int CurrentBalance { get; private set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onbalancechanged" /><code>{"static event Action<int> OnBalanceChanged"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onbalancechanged" /><code>{"static event Action<int> OnBalanceChanged"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-requestupdate" /><code>{"static async Task<int> RequestUpdate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-requestupdate" /><code>{"static async Task<int> RequestUpdate()"}</code> |

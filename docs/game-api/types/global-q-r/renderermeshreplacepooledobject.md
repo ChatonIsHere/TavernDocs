@@ -17,20 +17,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RendererMeshReplacePooledObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RendererMeshReplacePooledObject()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-meshfilters" /><code>{"private MeshFilter[] meshFilters"}</code> |  |
-| <Link id="m-renderers" /><code>{"private MeshRenderer[] renderers"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-meshfilters" /><code>{"private MeshFilter[] meshFilters"}</code> |
+| <Link id="m-renderers" /><code>{"private MeshRenderer[] renderers"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"override void Setup(Mesh mesh, Material material)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"override void Setup(Mesh mesh, Material material)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

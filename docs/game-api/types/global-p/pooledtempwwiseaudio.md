@@ -17,27 +17,37 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PooledTempWwiseAudio()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PooledTempWwiseAudio()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-akgameobj" /><code>{"private "}<Link to="/game-api/types/global-p/pooledakgameobj">{"PooledAkGameObj"}</Link>{" akGameObj"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-akgameobj" /><code>{"private "}<Link to="/game-api/types/global-p/pooledakgameobj">{"PooledAkGameObj"}</Link>{" akGameObj"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-akgameobj-2" /><code>{"AkGameObj AkGameObj { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-akgameobj-2" /><code>{"AkGameObj AkGameObj { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>
 
 ## Used in
 

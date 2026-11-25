@@ -18,21 +18,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EnvironmentNode()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EnvironmentNode()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reverb" /><code>{"private "}<Link to="/game-api/types/global-e-h/environmentnode-variable">{"EnvironmentNode.Variable"}</Link>{" reverb"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-reverb" /><code>{"private "}<Link to="/game-api/types/global-e-h/environmentnode-variable">{"EnvironmentNode.Variable"}</Link>{" reverb"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reverb-2" /><code><Link to="/game-api/types/global-e-h/environmentnode-variable">{"EnvironmentNode.Variable"}</Link>{" Reverb { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-reverb-2" /><code><Link to="/game-api/types/global-e-h/environmentnode-variable">{"EnvironmentNode.Variable"}</Link>{" Reverb { get; }"}</code> |
 
 ## Used in
 

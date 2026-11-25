@@ -21,31 +21,36 @@ Fixed layers in an asset.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PregeneratedCave()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PregeneratedCave()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-baker" /><code>{"private GameObject baker"}</code> |  |
-| <Link id="m-layers" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/pregeneratedcave-layer">{"PregeneratedCave.Layer"}</Link>{"> layers"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-seed" /><code>{"private int seed"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-baker" /><code>{"private GameObject baker"}</code> |
+| <Link id="m-layers" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/pregeneratedcave-layer">{"PregeneratedCave.Layer"}</Link>{"> layers"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-seed" /><code>{"private int seed"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-seed-2" /><code>{"int Seed { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-seed-2" /><code>{"int Seed { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"void Add(int index, "}<Link to="/game-api/types/alta-world-generation/pregeneratedcave-layer">{"PregeneratedCave.Layer"}</Link>{" layer)"}</code> |  |
-| <Link id="m-get" /><code><Link to="/game-api/types/alta-world-generation/pregeneratedcave-layer">{"PregeneratedCave.Layer"}</Link>{" Get(int index)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"void Add(int index, "}<Link to="/game-api/types/alta-world-generation/pregeneratedcave-layer">{"PregeneratedCave.Layer"}</Link>{" layer)"}</code> |
+| <Link id="m-get" /><code><Link to="/game-api/types/alta-world-generation/pregeneratedcave-layer">{"PregeneratedCave.Layer"}</Link>{" Get(int index)"}</code> |
 
 ## Used in
 

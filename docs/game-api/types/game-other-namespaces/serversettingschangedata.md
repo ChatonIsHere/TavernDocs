@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `ATT.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerSettingsChangeData()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ServerSettingsChangeData("}<Link to="/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" settings, "}<Link to="/game-api/types/game-other-namespaces/serversettingsage">{"ServerSettingsAge"}</Link>{" age)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerSettingsChangeData()"}</code> |
+| <Link id="m-ctor-2" /><code>{"ServerSettingsChangeData("}<Link to="/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" settings, "}<Link to="/game-api/types/game-other-namespaces/serversettingsage">{"ServerSettingsAge"}</Link>{" age)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-age" /><code><Link to="/game-api/types/game-other-namespaces/serversettingsage">{"ServerSettingsAge"}</Link>{" Age { get; }"}</code> |  |
-| <Link id="m-settings" /><code><Link to="/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" Settings { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-age" /><code><Link to="/game-api/types/game-other-namespaces/serversettingsage">{"ServerSettingsAge"}</Link>{" Age { get; }"}</code> |
+| <Link id="m-settings" /><code><Link to="/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" Settings { get; }"}</code> |
 
 ## Used in
 

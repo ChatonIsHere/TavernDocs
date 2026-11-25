@@ -17,21 +17,31 @@ A **class** in `Root.Township`, `Alta.Environmental.Atmosphere`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DayTimeEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DayTimeEffect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactiveduringday" /><code>{"private bool isActiveDuringDay"}</code> |  |
-| <Link id="m-particlesystem" /><code>{"private ParticleSystem particleSystem"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isactiveduringday" /><code>{"private bool isActiveDuringDay"}</code> |
+| <Link id="m-particlesystem" /><code>{"private ParticleSystem particleSystem"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-updateenabled" /><code>{"private void UpdateEnabled(bool isNight)"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-updateenabled" /><code>{"private void UpdateEnabled(bool isNight)"}</code> |
+
+</details>

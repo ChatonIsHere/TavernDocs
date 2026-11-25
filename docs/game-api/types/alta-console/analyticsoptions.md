@@ -17,13 +17,13 @@ An **enum** in `Root.Township`, `Alta.Analytics`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gametimestamp" /><code>{"GameTimeStamp = 8"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-notimestamp" /><code>{"NoTimestamp = 1"}</code> |  |
-| <Link id="m-serverid" /><code>{"ServerId = 4"}</code> |  |
-| <Link id="m-userid" /><code>{"UserId = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gametimestamp" /><code>{"GameTimeStamp = 8"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-notimestamp" /><code>{"NoTimestamp = 1"}</code> |
+| <Link id="m-serverid" /><code>{"ServerId = 4"}</code> |
+| <Link id="m-userid" /><code>{"UserId = 2"}</code> |
 
 ## Used in
 

@@ -17,22 +17,27 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VelocityLimitOperation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VelocityLimitOperation()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maximimumvelocitysquared" /><code>{"private float maximimumVelocitySquared"}</code> |  |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |  |
-| <Link id="m-outsidelimitvalue" /><code>{"private float outsideLimitValue"}</code> |  |
-| <Link id="m-withinlimitvalue" /><code>{"private float withinLimitValue"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maximimumvelocitysquared" /><code>{"private float maximimumVelocitySquared"}</code> |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |
+| <Link id="m-outsidelimitvalue" /><code>{"private float outsideLimitValue"}</code> |
+| <Link id="m-withinlimitvalue" /><code>{"private float withinLimitValue"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getoperation" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> |  |
-| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getoperation" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> |
+| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> |

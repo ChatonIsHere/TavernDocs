@@ -19,15 +19,20 @@ Receives OpenXR input action callbacks and turns them into per-hand `OpenXRContr
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OpenXRWrapper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OpenXRWrapper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
@@ -75,7 +80,15 @@ Receives OpenXR input action callbacks and turns them into per-hand `OpenXRContr
 | <Link id="m-onturnleft" /><code>{"void OnTurnLeft(InputAction.CallbackContext context)"}</code> | Sets the snap turn left state. |
 | <Link id="m-onturnright" /><code>{"void OnTurnRight(InputAction.CallbackContext context)"}</code> | Sets the snap turn right state. |
 | <Link id="m-onvelocity" /><code>{"void OnVelocity(InputAction.CallbackContext context)"}</code> | Stores the controller velocity in its pose. |
-| <Link id="m-getinput" /><code>{"private bool GetInput(InputAction.CallbackContext context, out "}<Link to="/game-api/types/global-m-o/openxrcontrollerinput">{"OpenXRControllerInput"}</Link>{" input)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getinput" /><code>{"private bool GetInput(InputAction.CallbackContext context, out "}<Link to="/game-api/types/global-m-o/openxrcontrollerinput">{"OpenXRControllerInput"}</Link>{" input)"}</code> |
+
+</details>
 
 ## Used in
 

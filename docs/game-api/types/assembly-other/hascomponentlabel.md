@@ -17,13 +17,13 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HasComponentLabel(string hasName, string dontHasName, Type componentType)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"HasComponentLabel(string hasName, string dontHasName, Type componentType, float hasDefaultValue, float dontHasDefaultValue)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HasComponentLabel(string hasName, string dontHasName, Type componentType)"}</code> |
+| <Link id="m-ctor-2" /><code>{"HasComponentLabel(string hasName, string dontHasName, Type componentType, float hasDefaultValue, float dontHasDefaultValue)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-componenttype" /><code>{"Type ComponentType { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-componenttype" /><code>{"Type ComponentType { get; private set; }"}</code> |

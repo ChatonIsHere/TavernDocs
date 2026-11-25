@@ -20,22 +20,27 @@ One entry on the main menu's server list: shows a server's name, player count an
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerElement()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerElement()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-display" /><code>{"private "}<Link to="/game-api/types/global-s/serverselectiondisplay">{"ServerSelectionDisplay"}</Link>{" display"}</code> |  |
-| <Link id="m-elementselected" /><code>{"private "}<Link to="/game-api/types/global-t-x/toggleevent">{"ToggleEvent"}</Link>{" elementSelected"}</code> |  |
-| <Link id="m-isconnectingtoserver" /><code>{"private bool isConnectingToServer"}</code> |  |
-| <Link id="m-isinstancedmaterials" /><code>{"private bool isInstancedMaterials"}</code> |  |
-| <Link id="m-numberofplayerstext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" numberOfPlayersText"}</code> |  |
-| <Link id="m-playabilityrenderers" /><code>{"private Renderer[] playabilityRenderers"}</code> |  |
-| <Link id="m-renderertoselect" /><code>{"private Renderer rendererToSelect"}</code> |  |
-| <Link id="m-servernametext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" serverNameText"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-display" /><code>{"private "}<Link to="/game-api/types/global-s/serverselectiondisplay">{"ServerSelectionDisplay"}</Link>{" display"}</code> |
+| <Link id="m-elementselected" /><code>{"private "}<Link to="/game-api/types/global-t-x/toggleevent">{"ToggleEvent"}</Link>{" elementSelected"}</code> |
+| <Link id="m-isconnectingtoserver" /><code>{"private bool isConnectingToServer"}</code> |
+| <Link id="m-isinstancedmaterials" /><code>{"private bool isInstancedMaterials"}</code> |
+| <Link id="m-numberofplayerstext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" numberOfPlayersText"}</code> |
+| <Link id="m-playabilityrenderers" /><code>{"private Renderer[] playabilityRenderers"}</code> |
+| <Link id="m-renderertoselect" /><code>{"private Renderer rendererToSelect"}</code> |
+| <Link id="m-servernametext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" serverNameText"}</code> |
+
+</details>
 
 ## Properties
 
@@ -51,9 +56,17 @@ One entry on the main menu's server list: shows a server's name, player count an
 | <Link id="m-setdisplay" /><code>{"void SetDisplay("}<Link to="/game-api/types/global-s/serverselectiondisplay">{"ServerSelectionDisplay"}</Link>{" display)"}</code> | Sets the list this entry belongs to and deselects it. |
 | <Link id="m-setselected" /><code>{"void SetSelected(bool isSelected)"}</code> | Shows the entry as selected or not. |
 | <Link id="m-setupforserver" /><code>{"void SetupForServer("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | Fills the entry from a `GameServerInfo`. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor: the inspector's connect button joins the shown server. |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+
+</details>
 
 ## Used in
 

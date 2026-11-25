@@ -20,9 +20,9 @@ Base for assets such as `TreeSize`, `DurabilitySettings` and `LootValue` that na
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopupScriptableObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopupScriptableObject()"}</code> |
 
 ## Properties
 

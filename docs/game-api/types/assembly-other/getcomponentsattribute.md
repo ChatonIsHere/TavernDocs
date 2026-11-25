@@ -18,27 +18,32 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GetComponentsAttribute()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GetComponentsAttribute()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-includeinactive" /><code>{"bool IncludeInActive { get; set; }"}</code> |  |
-| <Link id="m-type" /><code>{"Type Type { get; set; }"}</code> |  |
-| <Link id="m-warnonempty" /><code>{"bool WarnOnEmpty { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-includeinactive" /><code>{"bool IncludeInActive { get; set; }"}</code> |
+| <Link id="m-type" /><code>{"Type Type { get; set; }"}</code> |
+| <Link id="m-warnonempty" /><code>{"bool WarnOnEmpty { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getcomponents" /><code>{"virtual Component[] GetComponents(Transform transform, Type type)"}</code> |  |
-| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getcomponents" /><code>{"virtual Component[] GetComponents(Transform transform, Type type)"}</code> |
+| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> |

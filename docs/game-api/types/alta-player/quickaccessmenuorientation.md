@@ -16,8 +16,8 @@ An **enum** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-controllerfull" /><code>{"ControllerFull = 1"}</code> |  |
-| <Link id="m-controllernoroll" /><code>{"ControllerNoRoll = 2"}</code> |  |
-| <Link id="m-headworld" /><code>{"HeadWorld = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-controllerfull" /><code>{"ControllerFull = 1"}</code> |
+| <Link id="m-controllernoroll" /><code>{"ControllerNoRoll = 2"}</code> |
+| <Link id="m-headworld" /><code>{"HeadWorld = 0"}</code> |

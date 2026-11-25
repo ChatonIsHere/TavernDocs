@@ -18,26 +18,42 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PouringStrengthController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PouringStrengthController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fullypouringstrengthmultiplier" /><code>{"private float fullyPouringStrengthMultiplier"}</code> |  |
-| <Link id="m-isallowingfullypouring" /><code>{"private bool isAllowingFullyPouring"}</code> |  |
-| <Link id="m-pouringcontainer" /><code>{"protected "}<Link to="/game-api/types/alta-stats-effects/pourablecontainer">{"PourableContainer"}</Link>{" pouringContainer"}</code> |  |
-| <Link id="m-pouringmultiplier" /><code>{"protected float pouringMultiplier"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-pouringcontainer" /><code>{"protected "}<Link to="/game-api/types/alta-stats-effects/pourablecontainer">{"PourableContainer"}</Link>{" pouringContainer"}</code> |
+| <Link id="m-pouringmultiplier" /><code>{"protected float pouringMultiplier"}</code> |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fullypouringstrengthmultiplier" /><code>{"private float fullyPouringStrengthMultiplier"}</code> |
+| <Link id="m-isallowingfullypouring" /><code>{"private bool isAllowingFullyPouring"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getpouringstrength" /><code>{"virtual float GetPouringStrength(out bool isFullyPouring)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-getfullypouringvalues" /><code>{"protected void GetFullyPouringValues(out bool isFullyPouring, out float fullyPouringMultiplier)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getpouringstrength" /><code>{"virtual float GetPouringStrength(out bool isFullyPouring)"}</code> |
+| <Link id="m-getfullypouringvalues" /><code>{"protected void GetFullyPouringValues(out bool isFullyPouring, out float fullyPouringMultiplier)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>
 
 ## Used in
 

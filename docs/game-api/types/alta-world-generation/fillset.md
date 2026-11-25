@@ -18,21 +18,26 @@ An **abstract class** in `Root.Township`, `Alta.Forests`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected FillSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected FillSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maximumfailscore" /><code>{"private float maximumFailScore"}</code> |  |
-| <Link id="m-minimumfailscore" /><code>{"private float minimumFailScore"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maximumfailscore" /><code>{"private float maximumFailScore"}</code> |
+| <Link id="m-minimumfailscore" /><code>{"private float minimumFailScore"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maximumfailscore-2" /><code>{"float MaximumFailScore { get; }"}</code> |  |
-| <Link id="m-minimumfailscore-2" /><code>{"float MinimumFailScore { get; }"}</code> |  |
-| <Link id="m-spawnmodifiers" /><code>{"abstract "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maximumfailscore-2" /><code>{"float MaximumFailScore { get; }"}</code> |
+| <Link id="m-minimumfailscore-2" /><code>{"float MinimumFailScore { get; }"}</code> |
+| <Link id="m-spawnmodifiers" /><code>{"abstract "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> |

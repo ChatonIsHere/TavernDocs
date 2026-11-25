@@ -16,6 +16,6 @@ A **static class** in `Root.Township`, `Alta.Utilities`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setcursor" /><code>{"static void SetCursor(bool isEnabled)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setcursor" /><code>{"static void SetCursor(bool isEnabled)"}</code> |

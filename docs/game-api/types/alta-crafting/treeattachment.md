@@ -20,20 +20,25 @@ Something attached to a tree's node, such as leaves, that can break off. Attache
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TreeAttachment()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TreeAttachment()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-broken" /><code>{"private "}<Link to="/game-api/types/alta-crafting/attachmentevent">{"AttachmentEvent"}</Link>{" broken"}</code> |  |
-| <Link id="m-forcebreak" /><code>{"private float forceBreak"}</code> |  |
-| <Link id="m-imposter" /><code>{"private MeshRenderer imposter"}</code> |  |
-| <Link id="m-isbreakingonunroot" /><code>{"private bool isBreakingOnUnroot"}</code> |  |
-| <Link id="m-pcmeshes" /><code>{"private Mesh[] pcMeshes"}</code> |  |
-| <Link id="m-syncbroken" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncBroken"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-broken" /><code>{"private "}<Link to="/game-api/types/alta-crafting/attachmentevent">{"AttachmentEvent"}</Link>{" broken"}</code> |
+| <Link id="m-forcebreak" /><code>{"private float forceBreak"}</code> |
+| <Link id="m-imposter" /><code>{"private MeshRenderer imposter"}</code> |
+| <Link id="m-isbreakingonunroot" /><code>{"private bool isBreakingOnUnroot"}</code> |
+| <Link id="m-pcmeshes" /><code>{"private Mesh[] pcMeshes"}</code> |
+| <Link id="m-syncbroken" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncBroken"}</code> |
+
+</details>
 
 ## Properties
 
@@ -43,7 +48,15 @@ Something attached to a tree's node, such as leaves, that can break off. Attache
 | <Link id="m-imposter-2" /><code>{"Renderer Imposter { get; }"}</code> | The far-distance imposter renderer, if any. |
 | <Link id="m-lods" /><code>{"Mesh[] Lods { get; }"}</code> | The LOD meshes for this attachment. |
 | <Link id="m-renderers" /><code>{"MeshRenderer[] Renderers { get; private set; }"}</code> | The renderers built by `GenerateRenderers`, null before that. |
-| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -62,10 +75,18 @@ Something attached to a tree's node, such as leaves, that can break off. Attache
 | <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the synced break message. |
 | <Link id="m-onmoved" /><code>{"void OnMoved()"}</code> | Raises `Moved`. Called by `WoodcutTreeBaker`. |
 | <Link id="m-unroot" /><code>{"void Unroot()"}</code> | Breaks the attachment if it is set to break when the tree is uprooted. |
-| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |  |
-| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |  |
-| <Link id="m-getrendereratlod" /><code>{"private MeshRenderer GetRendererAtLOD(int lod)"}</code> |  |
-| <Link id="m-syncbreak" /><code>{"private void SyncBreak("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |
+| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |
+| <Link id="m-getrendereratlod" /><code>{"private MeshRenderer GetRendererAtLOD(int lod)"}</code> |
+| <Link id="m-syncbreak" /><code>{"private void SyncBreak("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

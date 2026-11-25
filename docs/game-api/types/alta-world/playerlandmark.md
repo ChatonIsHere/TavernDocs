@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `Alta.Map`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerLandmark()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerLandmark()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-friendicon" /><code>{"private "}<Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" friendIcon"}</code> |  |
-| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-friendicon" /><code>{"private "}<Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" friendIcon"}</code> |
+| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-customizeicon" /><code>{"override void CustomizeIcon("}<Link to="/game-api/types/alta-world/markerinfo">{"MarkerInfo"}</Link>{" info, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-customizeicon" /><code>{"override void CustomizeIcon("}<Link to="/game-api/types/alta-world/markerinfo">{"MarkerInfo"}</Link>{" info, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target)"}</code> |

@@ -20,9 +20,9 @@ Postfixes the `ServerHandler.PlayerLimit` getter so the limit comes from `server
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerLimitPatch()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerLimitPatch()"}</code> |
 
 ## Methods
 

@@ -19,12 +19,12 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RockClusterSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RockClusterSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-items/boulderdefinition">{"BoulderDefinition"}</Link>{" definition"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-items/boulderdefinition">{"BoulderDefinition"}</Link>{" definition"}</code> |

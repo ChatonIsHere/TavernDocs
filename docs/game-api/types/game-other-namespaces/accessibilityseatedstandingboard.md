@@ -17,21 +17,31 @@ A **class** in `Root.Township`, `Features.Main_Menu.Scripts`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AccessibilitySeatedStandingBoard()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AccessibilitySeatedStandingBoard()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-seatedbutton" /><code>{"private "}<Link to="/game-api/types/global-a-b/analyticalbutton">{"AnalyticalButton"}</Link>{" seatedButton"}</code> |  |
-| <Link id="m-standingbutton" /><code>{"private "}<Link to="/game-api/types/global-a-b/analyticalbutton">{"AnalyticalButton"}</Link>{" standingButton"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-seatedbutton" /><code>{"private "}<Link to="/game-api/types/global-a-b/analyticalbutton">{"AnalyticalButton"}</Link>{" seatedButton"}</code> |
+| <Link id="m-standingbutton" /><code>{"private "}<Link to="/game-api/types/global-a-b/analyticalbutton">{"AnalyticalButton"}</Link>{" standingButton"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-seated" /><code>{"private async void Seated()"}</code> |  |
-| <Link id="m-standing" /><code>{"private async void Standing()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-seated" /><code>{"private async void Seated()"}</code> |
+| <Link id="m-standing" /><code>{"private async void Standing()"}</code> |
+
+</details>

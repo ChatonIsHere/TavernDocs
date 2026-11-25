@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-press" /><code>{"Press = 1"}</code> |  |
-| <Link id="m-swipe" /><code>{"Swipe = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-press" /><code>{"Press = 1"}</code> |
+| <Link id="m-swipe" /><code>{"Swipe = 0"}</code> |
 
 ## Used in
 

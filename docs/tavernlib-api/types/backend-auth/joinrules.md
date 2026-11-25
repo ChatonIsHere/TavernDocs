@@ -31,5 +31,13 @@ Internal: who may join, checked on the auth port and again at the game port, whi
 | <Link id="m-isvalidname" /><code>{"static bool IsValidName(string name)"}</code> | True for 1 to 16 ASCII letters, digits, spaces, hyphens and underscores, not all blank. Only new names are checked. |
 | <Link id="m-iswhitelisted" /><code>{"static bool IsWhitelisted("}<Link to="/tavernlib-api/types/backend-server-configs/userconfig">{"UserConfig"}</Link>{" config, string username, ulong? userId, string address, string registeredFrom)"}</code> | True if the name, id or address is on the whitelist, or the address the account was registered from is. |
 | <Link id="m-whiteliston" /><code>{"static bool WhitelistOn("}<Link to="/tavernlib-api/types/backend-server-configs/serversettings">{"ServerSettings"}</Link>{" settings, "}<Link to="/tavernlib-api/types/backend-server-configs/userconfig">{"UserConfig"}</Link>{" config)"}</code> | True with `whitelist_enabled`, or (without `/launcherauth`) whenever the whitelist has any entry. |
-| <Link id="m-hasentries" /><code>{"private static bool HasEntries("}<Link to="/tavernlib-api/types/backend-server-configs/userconfig-listconfig">{"UserConfig.ListConfig"}</Link>{" list)"}</code> |  |
-| <Link id="m-matches" /><code>{"private static bool Matches("}<Link to="/tavernlib-api/types/backend-server-configs/userconfig-listconfig">{"UserConfig.ListConfig"}</Link>{" list, string username, ulong? userId, string address, string registeredFrom)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-hasentries" /><code>{"private static bool HasEntries("}<Link to="/tavernlib-api/types/backend-server-configs/userconfig-listconfig">{"UserConfig.ListConfig"}</Link>{" list)"}</code> |
+| <Link id="m-matches" /><code>{"private static bool Matches("}<Link to="/tavernlib-api/types/backend-server-configs/userconfig-listconfig">{"UserConfig.ListConfig"}</Link>{" list, string username, ulong? userId, string address, string registeredFrom)"}</code> |
+
+</details>

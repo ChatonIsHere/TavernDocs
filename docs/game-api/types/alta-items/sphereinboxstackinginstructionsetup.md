@@ -18,18 +18,23 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SphereInBoxStackingInstructionSetup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SphereInBoxStackingInstructionSetup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-levelcount" /><code>{"private int levelCount"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-levelcount" /><code>{"private int levelCount"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"protected override void Setup(Bounds bounds, "}<Link to="/game-api/types/alta-items/sphereinboxstackinginstruction">{"SphereInBoxStackingInstruction"}</Link>{" instructions)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"protected override void Setup(Bounds bounds, "}<Link to="/game-api/types/alta-items/sphereinboxstackinginstruction">{"SphereInBoxStackingInstruction"}</Link>{" instructions)"}</code> |

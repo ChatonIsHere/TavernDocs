@@ -17,6 +17,6 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClusterStreamer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClusterStreamer()"}</code> |

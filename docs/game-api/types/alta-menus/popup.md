@@ -17,6 +17,6 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Popup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Popup()"}</code> |

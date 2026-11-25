@@ -21,18 +21,23 @@ Player state for spirit mode during a climbing challenge (a `PlayerUnlock` with 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpiritState("}<Link to="/game-api/types/alta-player/playingstate">{"PlayingState"}</Link>{" playingState)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpiritState("}<Link to="/game-api/types/alta-player/playingstate">{"PlayingState"}</Link>{" playingState)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-beltorbs" /><code>{"private Dictionary<uint, GameObject> beltOrbs"}</code> |  |
-| <Link id="m-locomotion" /><code>{"private "}<Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" locomotion"}</code> |  |
-| <Link id="m-playerhealth" /><code>{"private "}<Link to="/game-api/types/global-p/playerhealth">{"PlayerHealth"}</Link>{" playerHealth"}</code> |  |
-| <Link id="m-weight" /><code>{"private "}<Link to="/game-api/types/global-p/playerweight">{"PlayerWeight"}</Link>{" weight"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-beltorbs" /><code>{"private Dictionary<uint, GameObject> beltOrbs"}</code> |
+| <Link id="m-locomotion" /><code>{"private "}<Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" locomotion"}</code> |
+| <Link id="m-playerhealth" /><code>{"private "}<Link to="/game-api/types/global-p/playerhealth">{"PlayerHealth"}</Link>{" playerHealth"}</code> |
+| <Link id="m-weight" /><code>{"private "}<Link to="/game-api/types/global-p/playerweight">{"PlayerWeight"}</Link>{" weight"}</code> |
+
+</details>
 
 ## Properties
 
@@ -46,16 +51,24 @@ Player state for spirit mode during a climbing challenge (a `PlayerUnlock` with 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canplaysfx" /><code>{"private bool CanPlaySfx("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" spiritModeStateSfx)"}</code> |  |
-| <Link id="m-handledamage" /><code>{"private void HandleDamage("}<Link to="/game-api/types/alta-player/damagestate">{"DamageState"}</Link>{" damageState)"}</code> |  |
-| <Link id="m-movedoutofbounds" /><code>{"private void MovedOutOfBounds("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |  |
 | <Link id="m-onactivate" /><code>{"protected override void OnActivate()"}</code> | Server: adds the spirit-to-playing transition. |
 | <Link id="m-onactivateremote" /><code>{"protected override void OnActivateRemote(bool isPlayerCharacterSpawned)"}</code> | Client: plays the enter-spirit sound and glow on the player. |
 | <Link id="m-ondeactivateremote" /><code>{"protected override void OnDeactivateRemote(bool isPlayerCharacterSpawned)"}</code> | Client: plays the exit-spirit sound and glow. |
 | <Link id="m-onplayercontrollerfound" /><code>{"protected override void OnPlayerControllerFound("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController, bool isFromOnActivate)"}</code> | Marks the character as a spirit, turns off hunger and docks, hooks damage and unlock changes. On the server, moving too far from the checkpoint cancels the unlock. |
 | <Link id="m-onplayercontrollerlost" /><code>{"protected override void OnPlayerControllerLost(bool isFromOnDeactivate)"}</code> | Undoes the spirit setup: hunger, docks and weight back to normal, belt orbs removed. |
-| <Link id="m-playsoundeffectforplayer" /><code>{"private void PlaySoundEffectForPlayer("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" spiritModeStateSfx)"}</code> |  |
-| <Link id="m-playspiritmodeglow" /><code>{"private void PlaySpiritModeGlow(bool isEnteringSpiritMode)"}</code> |  |
-| <Link id="m-removespiritmode" /><code>{"private void RemoveSpiritMode("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |  |
-| <Link id="m-resetplayertolastcheckpoint" /><code>{"private void ResetPlayerToLastCheckpoint()"}</code> |  |
-| <Link id="m-unlocksmodified" /><code>{"private void UnlocksModified()"}</code> |  |
+
+<details>
+<summary>8 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-canplaysfx" /><code>{"private bool CanPlaySfx("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" spiritModeStateSfx)"}</code> |
+| <Link id="m-handledamage" /><code>{"private void HandleDamage("}<Link to="/game-api/types/alta-player/damagestate">{"DamageState"}</Link>{" damageState)"}</code> |
+| <Link id="m-movedoutofbounds" /><code>{"private void MovedOutOfBounds("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |
+| <Link id="m-playsoundeffectforplayer" /><code>{"private void PlaySoundEffectForPlayer("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" spiritModeStateSfx)"}</code> |
+| <Link id="m-playspiritmodeglow" /><code>{"private void PlaySpiritModeGlow(bool isEnteringSpiritMode)"}</code> |
+| <Link id="m-removespiritmode" /><code>{"private void RemoveSpiritMode("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |
+| <Link id="m-resetplayertolastcheckpoint" /><code>{"private void ResetPlayerToLastCheckpoint()"}</code> |
+| <Link id="m-unlocksmodified" /><code>{"private void UnlocksModified()"}</code> |
+
+</details>

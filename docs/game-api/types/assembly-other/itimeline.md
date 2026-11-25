@@ -17,9 +17,9 @@ An **interface** in `Alta.Timing.Runtime`, `Alta.Timing`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update" /><code>{"void Update(TimeSpan deltaTime)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"void Update(TimeSpan deltaTime)"}</code> |
 
 ## Used in
 

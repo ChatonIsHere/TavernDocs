@@ -21,20 +21,25 @@ A scoring rule for "grounded" or "upside down".
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Operation("}<Link to="/game-api/types/alta-intelligence/schmeechee-operationtype">{"Schmeechee.OperationType"}</Link>{" operation, float trueValue, float falseValue)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Operation("}<Link to="/game-api/types/alta-intelligence/schmeechee-operationtype">{"Schmeechee.OperationType"}</Link>{" operation, float trueValue, float falseValue)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-falsevalue" /><code>{"private float falseValue"}</code> |  |
-| <Link id="m-operation" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/schmeechee-operationtype">{"Schmeechee.OperationType"}</Link>{" operation"}</code> |  |
-| <Link id="m-truevalue" /><code>{"private float trueValue"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-falsevalue" /><code>{"private float falseValue"}</code> |
+| <Link id="m-operation" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/schmeechee-operationtype">{"Schmeechee.OperationType"}</Link>{" operation"}</code> |
+| <Link id="m-truevalue" /><code>{"private float trueValue"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |

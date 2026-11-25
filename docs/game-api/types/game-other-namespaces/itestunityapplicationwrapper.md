@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Features.Utility.UnityWrappers`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-overrideinstance" /><code>{"void OverrideInstance("}<Link to="/game-api/types/game-other-namespaces/iunityapplicationwrapper">{"IUnityApplicationWrapper"}</Link>{" wrapper)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-overrideinstance" /><code>{"void OverrideInstance("}<Link to="/game-api/types/game-other-namespaces/iunityapplicationwrapper">{"IUnityApplicationWrapper"}</Link>{" wrapper)"}</code> |

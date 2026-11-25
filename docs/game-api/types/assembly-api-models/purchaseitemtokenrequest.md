@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PurchaseItemTokenRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PurchaseItemTokenRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-itemidentifier" /><code>{"int ItemIdentifier { get; set; }"}</code> |  |
-| <Link id="m-oculuscredentials" /><code><Link to="/game-api/types/assembly-api-models/accountrequestbase">{"AccountRequestBase"}</Link>{" OculusCredentials { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-itemidentifier" /><code>{"int ItemIdentifier { get; set; }"}</code> |
+| <Link id="m-oculuscredentials" /><code><Link to="/game-api/types/assembly-api-models/accountrequestbase">{"AccountRequestBase"}</Link>{" OculusCredentials { get; set; }"}</code> |
 
 ## Used in
 

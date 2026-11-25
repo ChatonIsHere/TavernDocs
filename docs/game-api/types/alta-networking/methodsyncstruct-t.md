@@ -19,16 +19,21 @@ A `Sync` for struct values that hands the read or write to a method you pass in.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MethodSyncStruct("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType, "}<Link to="/game-api/types/alta-networking/serializemethod-t">{"SerializeMethod"}</Link>{"<T> method, bool isAlwaysRecreating = false)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MethodSyncStruct("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType, "}<Link to="/game-api/types/alta-networking/serializemethod-t">{"SerializeMethod"}</Link>{"<T> method, bool isAlwaysRecreating = false)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isalwaysrecreating" /><code>{"private bool isAlwaysRecreating"}</code> |  |
-| <Link id="m-method" /><code>{"private "}<Link to="/game-api/types/alta-networking/serializemethod-t">{"SerializeMethod"}</Link>{"<T> method"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isalwaysrecreating" /><code>{"private bool isAlwaysRecreating"}</code> |
+| <Link id="m-method" /><code>{"private "}<Link to="/game-api/types/alta-networking/serializemethod-t">{"SerializeMethod"}</Link>{"<T> method"}</code> |
+
+</details>
 
 ## Properties
 
@@ -38,9 +43,14 @@ A `Sync` for struct values that hands the read or write to a method you pass in.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forward" /><code>{"private void Forward("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-forward" /><code>{"private void Forward("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

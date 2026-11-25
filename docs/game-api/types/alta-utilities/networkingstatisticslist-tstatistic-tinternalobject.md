@@ -18,6 +18,6 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling.NetworkTransportMetric
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkingStatisticsList(ICollection<TInternalObject> listToCreateFrom, Func<TInternalObject, TStatistic> createStatisticObject, string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkingStatisticsList(ICollection<TInternalObject> listToCreateFrom, Func<TInternalObject, TStatistic> createStatisticObject, string name)"}</code> |

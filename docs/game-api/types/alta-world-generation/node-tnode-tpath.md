@@ -21,9 +21,9 @@ A point in a forest generation graph (river and path networks), with a 2D positi
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Node(int index, Vector2 position, float height)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Node(int index, Vector2 position, float height)"}</code> |
 
 ## Properties
 

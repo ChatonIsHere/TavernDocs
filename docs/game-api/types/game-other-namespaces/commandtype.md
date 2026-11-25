@@ -16,9 +16,9 @@ An **enum** in `Root.Township`, `GameCommands.Messages`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-prepareforupdate" /><code>{"PrepareForUpdate = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-prepareforupdate" /><code>{"PrepareForUpdate = 0"}</code> |
 
 ## Used in
 

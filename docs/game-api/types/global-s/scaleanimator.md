@@ -19,21 +19,26 @@ Helper that scales a behaviour's transform in or out along "on" and "off" curves
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ScaleAnimator(MonoBehaviour behaviour, bool isInitiallyOn, Vector3 startScale, AnimationCurve on, AnimationCurve off, bool isDisallowingZero)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ScaleAnimator(MonoBehaviour behaviour, bool isInitiallyOn, Vector3 startScale, AnimationCurve on, AnimationCurve off, bool isDisallowingZero)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animationroutine" /><code>{"private Coroutine animationRoutine"}</code> |  |
-| <Link id="m-behaviour" /><code>{"private MonoBehaviour behaviour"}</code> |  |
-| <Link id="m-isdisallowingzero" /><code>{"private bool isDisallowingZero"}</code> |  |
-| <Link id="m-ison" /><code>{"private bool isOn"}</code> |  |
-| <Link id="m-off" /><code>{"private AnimationCurve off"}</code> |  |
-| <Link id="m-on" /><code>{"private AnimationCurve on"}</code> |  |
-| <Link id="m-startscale" /><code>{"private Vector3 startScale"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animationroutine" /><code>{"private Coroutine animationRoutine"}</code> |
+| <Link id="m-behaviour" /><code>{"private MonoBehaviour behaviour"}</code> |
+| <Link id="m-isdisallowingzero" /><code>{"private bool isDisallowingZero"}</code> |
+| <Link id="m-ison" /><code>{"private bool isOn"}</code> |
+| <Link id="m-off" /><code>{"private AnimationCurve off"}</code> |
+| <Link id="m-on" /><code>{"private AnimationCurve on"}</code> |
+| <Link id="m-startscale" /><code>{"private Vector3 startScale"}</code> |
+
+</details>
 
 ## Properties
 
@@ -56,8 +61,16 @@ Helper that scales a behaviour's transform in or out along "on" and "off" curves
 | --- | --- |
 | <Link id="m-set" /><code>{"void Set(bool isOn)"}</code> | Turns on or off. Animates if the behaviour is active, otherwise jumps to the end scale. |
 | <Link id="m-stop" /><code>{"void Stop()"}</code> | Stops the animation and jumps to the end scale. |
-| <Link id="m-animate" /><code>{"private IEnumerator Animate() (iterator)"}</code> |  |
 | <Link id="m-setscale" /><code>{"protected virtual void SetScale(float scale)"}</code> | Applies a scale relative to the start scale, never below 0.001 if zero is disallowed. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-animate" /><code>{"private IEnumerator Animate() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

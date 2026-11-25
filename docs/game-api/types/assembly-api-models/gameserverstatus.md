@@ -16,11 +16,11 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forcedoffline" /><code>{"ForcedOffline = -1"}</code> |  |
-| <Link id="m-offline" /><code>{"Offline = 0"}</code> |  |
-| <Link id="m-online" /><code>{"Online = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-forcedoffline" /><code>{"ForcedOffline = -1"}</code> |
+| <Link id="m-offline" /><code>{"Offline = 0"}</code> |
+| <Link id="m-online" /><code>{"Online = 1"}</code> |
 
 ## Used in
 

@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-history" /><code><Link to="/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" History { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-history" /><code><Link to="/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" History { get; }"}</code> |

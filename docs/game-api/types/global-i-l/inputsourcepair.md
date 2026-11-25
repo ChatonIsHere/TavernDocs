@@ -17,18 +17,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InputSourcePair()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InputSourcePair()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-controller" /><code><Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller"}</code> |  |
-| <Link id="m-parentmapping" /><code><Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{" parentMapping"}</code> |  |
-| <Link id="m-primaryinput" /><code><Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{" primaryInput"}</code> |  |
-| <Link id="m-secondaryinput" /><code><Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{" secondaryInput"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-controller" /><code><Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller"}</code> |
+| <Link id="m-parentmapping" /><code><Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{" parentMapping"}</code> |
+| <Link id="m-primaryinput" /><code><Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{" primaryInput"}</code> |
+| <Link id="m-secondaryinput" /><code><Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{" secondaryInput"}</code> |
 
 ## Used in
 

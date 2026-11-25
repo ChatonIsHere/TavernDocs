@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"IndirectStatModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"IndirectStatModifier()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> |  |
-| <Link id="m-modifiers" /><code><Link to="/game-api/types/alta-stats-effects/indirectmodifiersavedata">{"IndirectModifierSaveData"}</Link>{"[] modifiers"}</code> |  |
-| <Link id="m-time" /><code>{"TimeSpan time"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> |
+| <Link id="m-modifiers" /><code><Link to="/game-api/types/alta-stats-effects/indirectmodifiersavedata">{"IndirectModifierSaveData"}</Link>{"[] modifiers"}</code> |
+| <Link id="m-time" /><code>{"TimeSpan time"}</code> |
 
 ## Used in
 

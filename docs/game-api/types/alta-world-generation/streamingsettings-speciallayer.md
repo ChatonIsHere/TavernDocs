@@ -17,16 +17,16 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpecialLayer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpecialLayer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-layer" /><code>{"int layer"}</code> |  |
-| <Link id="m-prefab" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-layer" /><code>{"int layer"}</code> |
+| <Link id="m-prefab" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> |
 
 ## Used in
 

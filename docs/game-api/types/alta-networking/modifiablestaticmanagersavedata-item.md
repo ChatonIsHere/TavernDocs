@@ -17,16 +17,16 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Item()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hash" /><code>{"uint hash"}</code> |  |
-| <Link id="m-state" /><code>{"bool state"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hash" /><code>{"uint hash"}</code> |
+| <Link id="m-state" /><code>{"bool state"}</code> |
 
 ## Used in
 

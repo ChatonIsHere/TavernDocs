@@ -16,29 +16,34 @@ A **struct** in `Root.Township`, `Alta.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModificationArguments(uint objectHash, bool isModified)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModificationArguments(uint objectHash, bool isModified)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ismodified" /><code>{"private bool isModified"}</code> |  |
-| <Link id="m-objecthash" /><code>{"private uint objectHash"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ismodified" /><code>{"private bool isModified"}</code> |
+| <Link id="m-objecthash" /><code>{"private uint objectHash"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ismodified-2" /><code>{"bool IsModified { get; }"}</code> |  |
-| <Link id="m-objecthash-2" /><code>{"uint ObjectHash { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ismodified-2" /><code>{"bool IsModified { get; }"}</code> |
+| <Link id="m-objecthash-2" /><code>{"uint ObjectHash { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
 
 ## Used in
 

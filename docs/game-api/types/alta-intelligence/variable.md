@@ -19,23 +19,31 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Variable(int value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Variable(int value)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-context" /><code><Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" Context { get; set; }"}</code> |  |
-| <Link id="m-value" /><code>{"private int Value { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-context" /><code><Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" Context { get; set; }"}</code> |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-value" /><code>{"private int Value { get; set; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-constantinitialize" /><code>{"override void ConstantInitialize("}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" definition)"}</code> |  |
-| <Link id="m-contains" /><code>{"override bool Contains("}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" other)"}</code> |  |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |  |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-constantinitialize" /><code>{"override void ConstantInitialize("}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" definition)"}</code> |
+| <Link id="m-contains" /><code>{"override bool Contains("}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" other)"}</code> |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |

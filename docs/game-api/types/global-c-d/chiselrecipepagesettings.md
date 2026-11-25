@@ -20,15 +20,15 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChiselRecipePageSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChiselRecipePageSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-iconposition" /><code><Link to="/game-api/types/global-e-h/glyphposition">{"GlyphPosition"}</Link>{" iconPosition"}</code> |  |
-| <Link id="m-sizebrackets" /><code><Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] sizeBrackets"}</code> |  |
-| <Link id="m-template" /><code><Link to="/game-api/types/alta-items/page">{"Page"}</Link>{" template"}</code> |  |
-| <Link id="m-woodblocks" /><code><Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] woodBlocks"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-iconposition" /><code><Link to="/game-api/types/global-e-h/glyphposition">{"GlyphPosition"}</Link>{" iconPosition"}</code> |
+| <Link id="m-sizebrackets" /><code><Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] sizeBrackets"}</code> |
+| <Link id="m-template" /><code><Link to="/game-api/types/alta-items/page">{"Page"}</Link>{" template"}</code> |
+| <Link id="m-woodblocks" /><code><Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] woodBlocks"}</code> |

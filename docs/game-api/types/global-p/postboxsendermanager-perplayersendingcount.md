@@ -17,22 +17,22 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PerPlayerSendingCount()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PerPlayerSendingCount()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-countperplayer" /><code>{"Dictionary<int, int> CountPerPlayer { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-countperplayer" /><code>{"Dictionary<int, int> CountPerPlayer { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-serializesingle" /><code>{"void SerializeSingle("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int toIdentifier)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-serializesingle" /><code>{"void SerializeSingle("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int toIdentifier)"}</code> |
 
 ## Used in
 

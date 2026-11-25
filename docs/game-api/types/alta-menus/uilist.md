@@ -20,15 +20,20 @@ Base for a list of elements in the game's world-space menus. Subclasses decide h
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected UIList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected UIList()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 

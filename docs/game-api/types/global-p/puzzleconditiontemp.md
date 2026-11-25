@@ -18,27 +18,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PuzzleConditionTemp()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PuzzleConditionTemp()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-state" /><code>{"private bool state"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-state" /><code>{"private bool state"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-completionstate" /><code>{"bool CompletionState { get; protected set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-completionstate" /><code>{"bool CompletionState { get; protected set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-statechanged" /><code>{"event "}<Link to="/game-api/types/global-p/puzzleconditionhandlertemp">{"PuzzleConditionHandlerTemp"}</Link>{" StateChanged"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-statechanged" /><code>{"event "}<Link to="/game-api/types/global-p/puzzleconditionhandlertemp">{"PuzzleConditionHandlerTemp"}</Link>{" StateChanged"}</code> |
 
 ## Used in
 

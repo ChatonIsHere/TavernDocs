@@ -17,12 +17,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Excep
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OfflineException()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OfflineException()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getmethodname" /><code>{"private static string GetMethodName()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getmethodname" /><code>{"private static string GetMethodName()"}</code> |
+
+</details>

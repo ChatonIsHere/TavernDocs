@@ -17,10 +17,10 @@ An **interface** in `Root.Township`, `Alta.Forests`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modifyheight" /><code>{"void ModifyHeight("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/alta-world-generation/forestgenerator-nearestinfo">{"ForestGenerator.NearestInfo"}</Link>{" nearest, Vector2 position, ref float height)"}</code> |  |
-| <Link id="m-modifysplat" /><code>{"void ModifySplat("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/alta-world-generation/forestgenerator-nearestinfo">{"ForestGenerator.NearestInfo"}</Link>{" info, Vector2 position, ref "}<Link to="/game-api/types/alta-world-generation/splatdata">{"SplatData"}</Link>{" data)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modifyheight" /><code>{"void ModifyHeight("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/alta-world-generation/forestgenerator-nearestinfo">{"ForestGenerator.NearestInfo"}</Link>{" nearest, Vector2 position, ref float height)"}</code> |
+| <Link id="m-modifysplat" /><code>{"void ModifySplat("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/alta-world-generation/forestgenerator-nearestinfo">{"ForestGenerator.NearestInfo"}</Link>{" info, Vector2 position, ref "}<Link to="/game-api/types/alta-world-generation/splatdata">{"SplatData"}</Link>{" data)"}</code> |
 
 ## Used in
 

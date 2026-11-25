@@ -18,12 +18,12 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-followed" /><code>{"Followed = 1"}</code> |  |
-| <Link id="m-generic" /><code>{"Generic = 8"}</code> |  |
-| <Link id="m-notfollowed" /><code>{"NotFollowed = 2"}</code> |  |
-| <Link id="m-smelt" /><code>{"Smelt = 4"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-followed" /><code>{"Followed = 1"}</code> |
+| <Link id="m-generic" /><code>{"Generic = 8"}</code> |
+| <Link id="m-notfollowed" /><code>{"NotFollowed = 2"}</code> |
+| <Link id="m-smelt" /><code>{"Smelt = 4"}</code> |
 
 ## Used in
 

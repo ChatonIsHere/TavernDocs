@@ -19,13 +19,13 @@ A **internal class** in `Root.Township`, `Alta.Pages`. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BookSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BookSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-collection" /><code><Link to="/game-api/types/alta-items/pagecollection">{"PageCollection"}</Link>{" collection"}</code> |  |
-| <Link id="m-pages" /><code><Link to="/game-api/types/alta-items/pageinstancesavedata1">{"PageInstanceSaveData1"}</Link>{"[] pages"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-collection" /><code><Link to="/game-api/types/alta-items/pagecollection">{"PageCollection"}</Link>{" collection"}</code> |
+| <Link id="m-pages" /><code><Link to="/game-api/types/alta-items/pageinstancesavedata1">{"PageInstanceSaveData1"}</Link>{"[] pages"}</code> |

@@ -19,9 +19,9 @@ One cosmetic part to pack into a character's combined mesh and texture, with its
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Input()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Input()"}</code> |
 
 ## Fields
 

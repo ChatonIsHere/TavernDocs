@@ -19,15 +19,15 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ButtonCounterSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ButtonCounterSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-savedamount" /><code>{"int savedAmount"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-savedamount" /><code>{"int savedAmount"}</code> |
 
 ## Used in
 

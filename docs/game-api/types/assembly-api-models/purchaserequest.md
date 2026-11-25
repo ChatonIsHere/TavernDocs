@@ -17,12 +17,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PurchaseRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PurchaseRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-paymentmethodidentifier" /><code>{"int PaymentMethodIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-paymentmethodidentifier" /><code>{"int PaymentMethodIdentifier { get; set; }"}</code> |

@@ -19,9 +19,9 @@ Base for a notification shown in the menu's server management panel, such as a f
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected UINotification("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected UINotification("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |
 
 ## Fields
 

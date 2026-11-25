@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ResetPasswordRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ResetPasswordRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-newpasswordhash" /><code>{"string NewPasswordHash { get; set; }"}</code> |  |
-| <Link id="m-resettoken" /><code>{"string ResetToken { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-newpasswordhash" /><code>{"string NewPasswordHash { get; set; }"}</code> |
+| <Link id="m-resettoken" /><code>{"string ResetToken { get; set; }"}</code> |
 
 ## Used in
 

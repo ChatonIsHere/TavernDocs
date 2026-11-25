@@ -18,13 +18,13 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LoginRequestBase(string passwordHash, string deviceIdentifier)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"LoginRequestBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LoginRequestBase(string passwordHash, string deviceIdentifier)"}</code> |
+| <Link id="m-ctor-2" /><code>{"LoginRequestBase()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-passwordhash" /><code>{"string PasswordHash { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-passwordhash" /><code>{"string PasswordHash { get; private set; }"}</code> |

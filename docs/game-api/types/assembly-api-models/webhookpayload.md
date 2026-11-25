@@ -16,12 +16,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WebhookPayload()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WebhookPayload()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> |

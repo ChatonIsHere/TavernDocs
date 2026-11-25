@@ -18,10 +18,10 @@ An **private interface** in `Root.Township`, no namespace. Reach it through att-
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"[] Arguments { get; set; }"}</code> |  |
-| <Link id="m-asset" /><code><Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" Asset { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"[] Arguments { get; set; }"}</code> |
+| <Link id="m-asset" /><code><Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" Asset { get; set; }"}</code> |
 
 ## Used in
 

@@ -19,15 +19,15 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SentGiftData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SentGiftData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-receiversname" /><code>{"string receiversName"}</code> |  |
-| <Link id="m-sendersname" /><code>{"string sendersName"}</code> |  |
-| <Link id="m-sendertag" /><code><Link to="/game-api/types/global-s/sentgifttag">{"SentGiftTag"}</Link>{" senderTag"}</code> |  |
-| <Link id="m-tospawn" /><code><Link to="/game-api/types/alta-world/savablesaveddynamicobject">{"SavableSavedDynamicObject"}</Link>{"[] toSpawn"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-receiversname" /><code>{"string receiversName"}</code> |
+| <Link id="m-sendersname" /><code>{"string sendersName"}</code> |
+| <Link id="m-sendertag" /><code><Link to="/game-api/types/global-s/sentgifttag">{"SentGiftTag"}</Link>{" senderTag"}</code> |
+| <Link id="m-tospawn" /><code><Link to="/game-api/types/alta-world/savablesaveddynamicobject">{"SavableSavedDynamicObject"}</Link>{"[] toSpawn"}</code> |

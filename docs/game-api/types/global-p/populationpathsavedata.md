@@ -19,15 +19,15 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationPathSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationPathSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-accumulatedtime" /><code>{"float accumulatedTime"}</code> |  |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" definition"}</code> |  |
-| <Link id="m-population" /><code>{"int population"}</code> |  |
-| <Link id="m-time" /><code>{"TimeSpan time"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-accumulatedtime" /><code>{"float accumulatedTime"}</code> |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" definition"}</code> |
+| <Link id="m-population" /><code>{"int population"}</code> |
+| <Link id="m-time" /><code>{"TimeSpan time"}</code> |

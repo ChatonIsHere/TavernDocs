@@ -16,28 +16,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ForgedHitEffectOverride()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ForgedHitEffectOverride()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-coldhit" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" coldHit"}</code> |  |
-| <Link id="m-efficiencytoheatmodifier" /><code>{"private float efficiencyToHeatModifier"}</code> |  |
-| <Link id="m-hothit" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" hotHit"}</code> |  |
-| <Link id="m-overrides" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{", "}<Link to="/game-api/types/global-e-h/forgedhiteffectoverride">{"ForgedHitEffectOverride"}</Link>{"> overrides"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-coldhit" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" coldHit"}</code> |
+| <Link id="m-efficiencytoheatmodifier" /><code>{"private float efficiencyToHeatModifier"}</code> |
+| <Link id="m-hothit" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" hotHit"}</code> |
+| <Link id="m-overrides" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{", "}<Link to="/game-api/types/global-e-h/forgedhiteffectoverride">{"ForgedHitEffectOverride"}</Link>{"> overrides"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-coldhit-2" /><code>{"static void ColdHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> |  |
-| <Link id="m-deregister" /><code>{"static void Deregister("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" toolEntity)"}</code> |  |
-| <Link id="m-hitheat" /><code>{"static float HitHeat("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> |  |
-| <Link id="m-hothit-2" /><code>{"static void HotHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> |  |
-| <Link id="m-register" /><code>{"static void Register("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" toolEntity, "}<Link to="/game-api/types/global-e-h/forgedhiteffectoverride">{"ForgedHitEffectOverride"}</Link>{" hitOverride)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-coldhit-2" /><code>{"static void ColdHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> |
+| <Link id="m-deregister" /><code>{"static void Deregister("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" toolEntity)"}</code> |
+| <Link id="m-hitheat" /><code>{"static float HitHeat("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> |
+| <Link id="m-hothit-2" /><code>{"static void HotHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> |
+| <Link id="m-register" /><code>{"static void Register("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" toolEntity, "}<Link to="/game-api/types/global-e-h/forgedhiteffectoverride">{"ForgedHitEffectOverride"}</Link>{" hitOverride)"}</code> |
 
 ## Used in
 

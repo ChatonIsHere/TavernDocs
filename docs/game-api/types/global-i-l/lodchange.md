@@ -19,22 +19,27 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LODChange()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LODChange()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logs" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/lodchange-lodlog">{"LODChange.LODLog"}</Link>{"> logs"}</code> |  |
-| <Link id="m-namedgroups" /><code>{"private Dictionary<string, LODGroup> namedGroups"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logs" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/lodchange-lodlog">{"LODChange.LODLog"}</Link>{"> logs"}</code> |
+| <Link id="m-namedgroups" /><code>{"private Dictionary<string, LODGroup> namedGroups"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logs-2" /><code>{"List<"}<Link to="/game-api/types/global-i-l/lodchange-lodlog">{"LODChange.LODLog"}</Link>{"> Logs { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-logs-2" /><code>{"List<"}<Link to="/game-api/types/global-i-l/lodchange-lodlog">{"LODChange.LODLog"}</Link>{"> Logs { get; }"}</code> |
 
 ## Used in
 

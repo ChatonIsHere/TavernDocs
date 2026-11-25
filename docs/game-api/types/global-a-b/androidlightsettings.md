@@ -19,19 +19,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AndroidLightSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AndroidLightSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lightmaterial" /><code>{"private Material lightMaterial"}</code> |  |
-| <Link id="m-pointlightmesh" /><code>{"private Mesh pointLightMesh"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-lightmaterial" /><code>{"private Material lightMaterial"}</code> |
+| <Link id="m-pointlightmesh" /><code>{"private Mesh pointLightMesh"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializepointlight" /><code>{"static MeshRenderer InitializePointLight(GameObject target)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializepointlight" /><code>{"static MeshRenderer InitializePointLight(GameObject target)"}</code> |

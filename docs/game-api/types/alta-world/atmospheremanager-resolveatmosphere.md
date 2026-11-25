@@ -18,17 +18,17 @@ A **delegate** in `Root.Township`, `Alta.Environmental.Atmosphere`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ResolveAtmosphere(object object, IntPtr method)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ResolveAtmosphere(object object, IntPtr method)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(ref "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" set, AsyncCallback callback, object object)"}</code> |  |
-| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(ref "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" set, IAsyncResult result)"}</code> |  |
-| <Link id="m-invoke" /><code>{"virtual void Invoke(ref "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" set)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(ref "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" set, AsyncCallback callback, object object)"}</code> |
+| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(ref "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" set, IAsyncResult result)"}</code> |
+| <Link id="m-invoke" /><code>{"virtual void Invoke(ref "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" set)"}</code> |
 
 ## Used in
 

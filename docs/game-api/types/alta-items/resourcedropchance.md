@@ -16,16 +16,16 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ResourceDropChance()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ResourceDropChance()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dropweighting" /><code>{"float dropWeighting"}</code> |  |
-| <Link id="m-resourcedefinition" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" resourceDefinition"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dropweighting" /><code>{"float dropWeighting"}</code> |
+| <Link id="m-resourcedefinition" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" resourceDefinition"}</code> |
 
 ## Used in
 

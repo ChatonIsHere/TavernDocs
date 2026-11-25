@@ -17,22 +17,32 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CollisionImpulseReader()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CollisionImpulseReader()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-strongflailvelocity" /><code>{"private float strongFlailVelocity"}</code> |  |
-| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/ireceiveimpulsefromcollision">{"IReceiveImpulseFromCollision"}</Link>{" target"}</code> |  |
-| <Link id="m-targetobject" /><code>{"private Object targetObject"}</code> |  |
-| <Link id="m-weakflailvelocity" /><code>{"private float weakFlailVelocity"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-strongflailvelocity" /><code>{"private float strongFlailVelocity"}</code> |
+| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/ireceiveimpulsefromcollision">{"IReceiveImpulseFromCollision"}</Link>{" target"}</code> |
+| <Link id="m-targetobject" /><code>{"private Object targetObject"}</code> |
+| <Link id="m-weakflailvelocity" /><code>{"private float weakFlailVelocity"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |
+
+</details>

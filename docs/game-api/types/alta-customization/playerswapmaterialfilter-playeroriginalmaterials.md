@@ -17,23 +17,36 @@ A **private struct** in `Root.Township`, `Alta.ScreenshotCamera`. Reach it throu
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerOriginalMaterials("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, "}<Link to="/game-api/types/alta-customization/playerswapmaterialfilter">{"PlayerSwapMaterialFilter"}</Link>{" filter)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerOriginalMaterials("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, "}<Link to="/game-api/types/alta-customization/playerswapmaterialfilter">{"PlayerSwapMaterialFilter"}</Link>{" filter)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-materialmap" /><code>{"private Dictionary<Renderer, "}<Link to="/game-api/types/alta-customization/playerswapmaterialfilter-materialtuple">{"PlayerSwapMaterialFilter.MaterialTuple"}</Link>{"> materialMap"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-materialmap" /><code>{"private Dictionary<Renderer, "}<Link to="/game-api/types/alta-customization/playerswapmaterialfilter-materialtuple">{"PlayerSwapMaterialFilter.MaterialTuple"}</Link>{"> materialMap"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-toggle" /><code>{"void Toggle(bool isSpectral)"}</code> |  |
-| <Link id="m-processrenderer" /><code>{"private void ProcessRenderer(Renderer renderer, "}<Link to="/game-api/types/alta-customization/playerswapmaterialfilter">{"PlayerSwapMaterialFilter"}</Link>{" filter, Material baseMaterial, bool needsClearing)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> |
+| <Link id="m-toggle" /><code>{"void Toggle(bool isSpectral)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-processrenderer" /><code>{"private void ProcessRenderer(Renderer renderer, "}<Link to="/game-api/types/alta-customization/playerswapmaterialfilter">{"PlayerSwapMaterialFilter"}</Link>{" filter, Material baseMaterial, bool needsClearing)"}</code> |
+
+</details>
 
 ## Used in
 

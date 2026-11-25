@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, `Alta.Impact`. Reach it through att-stu
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sourcehash" /><code>{"uint sourceHash"}</code> |  |
-| <Link id="m-targethash" /><code>{"uint targetHash"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-sourcehash" /><code>{"uint sourceHash"}</code> |
+| <Link id="m-targethash" /><code>{"uint targetHash"}</code> |
 
 ## Used in
 

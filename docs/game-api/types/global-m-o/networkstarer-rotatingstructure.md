@@ -17,31 +17,36 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RotatingStructure()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RotatingStructure()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-joints" /><code>{"private "}<Link to="/game-api/types/global-m-o/networkstarer-rotatingjoint">{"NetworkStarer.RotatingJoint"}</Link>{"[] joints"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-joints" /><code>{"private "}<Link to="/game-api/types/global-m-o/networkstarer-rotatingjoint">{"NetworkStarer.RotatingJoint"}</Link>{"[] joints"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-base" /><code><Link to="/game-api/types/global-m-o/networkstarer-rotatingjoint">{"NetworkStarer.RotatingJoint"}</Link>{" Base { get; }"}</code> |  |
-| <Link id="m-jointlength" /><code>{"int JointLength { get; private set; }"}</code> |  |
-| <Link id="m-maxangle" /><code>{"float MaxAngle { get; private set; }"}</code> |  |
-| <Link id="m-root" /><code>{"Transform Root { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-base" /><code><Link to="/game-api/types/global-m-o/networkstarer-rotatingjoint">{"NetworkStarer.RotatingJoint"}</Link>{" Base { get; }"}</code> |
+| <Link id="m-jointlength" /><code>{"int JointLength { get; private set; }"}</code> |
+| <Link id="m-maxangle" /><code>{"float MaxAngle { get; private set; }"}</code> |
+| <Link id="m-root" /><code>{"Transform Root { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> |  |
-| <Link id="m-rotate" /><code>{"bool Rotate(Vector3 headDirection)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> |
+| <Link id="m-rotate" /><code>{"bool Rotate(Vector3 headDirection)"}</code> |
 
 ## Used in
 

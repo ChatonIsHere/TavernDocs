@@ -21,32 +21,37 @@ A debug tool item with 12 modes (LOD tools, chunk bounds, teleporters, console c
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InGameInspector()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InGameInspector()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-availabletools" /><code>{"private "}<Link to="/game-api/types/global-i-l/ingameinspector-ingametool">{"InGameInspector.InGameTool"}</Link>{"[] availableTools"}</code> |  |
-| <Link id="m-bg" /><code>{"private Image bg"}</code> |  |
-| <Link id="m-chunkboundsmaterial" /><code>{"private Material chunkBoundsMaterial"}</code> |  |
-| <Link id="m-controller" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller"}</code> |  |
-| <Link id="m-currenttool" /><code>{"private int currentTool"}</code> |  |
-| <Link id="m-displayingmessage" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" displayingMessage"}</code> |  |
-| <Link id="m-isdoubleclicking" /><code>{"private bool isDoubleClicking"}</code> |  |
-| <Link id="m-israycasting" /><code>{"private bool isRaycasting"}</code> |  |
-| <Link id="m-isrotating" /><code>{"private bool isRotating"}</code> |  |
-| <Link id="m-lodcolors" /><code>{"private Color[] lodColors"}</code> |  |
-| <Link id="m-lodmaterial" /><code>{"private Material lodMaterial"}</code> |  |
-| <Link id="m-log" /><code>{"private "}<Link to="/game-api/types/global-i-l/lodchange">{"LODChange"}</Link>{" log"}</code> |  |
-| <Link id="m-messageduration" /><code>{"private float messageDuration"}</code> |  |
-| <Link id="m-minescompass" /><code>{"private Image minesCompass"}</code> |  |
-| <Link id="m-objectname" /><code>{"private Text objectName"}</code> |  |
-| <Link id="m-pointertransform" /><code>{"private Transform pointerTransform"}</code> |  |
-| <Link id="m-previousvalue" /><code>{"private Vector2 previousValue"}</code> |  |
-| <Link id="m-syncmessage" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncMessage"}</code> |  |
+<details>
+<summary>18 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-availabletools" /><code>{"private "}<Link to="/game-api/types/global-i-l/ingameinspector-ingametool">{"InGameInspector.InGameTool"}</Link>{"[] availableTools"}</code> |
+| <Link id="m-bg" /><code>{"private Image bg"}</code> |
+| <Link id="m-chunkboundsmaterial" /><code>{"private Material chunkBoundsMaterial"}</code> |
+| <Link id="m-controller" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller"}</code> |
+| <Link id="m-currenttool" /><code>{"private int currentTool"}</code> |
+| <Link id="m-displayingmessage" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" displayingMessage"}</code> |
+| <Link id="m-isdoubleclicking" /><code>{"private bool isDoubleClicking"}</code> |
+| <Link id="m-israycasting" /><code>{"private bool isRaycasting"}</code> |
+| <Link id="m-isrotating" /><code>{"private bool isRotating"}</code> |
+| <Link id="m-lodcolors" /><code>{"private Color[] lodColors"}</code> |
+| <Link id="m-lodmaterial" /><code>{"private Material lodMaterial"}</code> |
+| <Link id="m-log" /><code>{"private "}<Link to="/game-api/types/global-i-l/lodchange">{"LODChange"}</Link>{" log"}</code> |
+| <Link id="m-messageduration" /><code>{"private float messageDuration"}</code> |
+| <Link id="m-minescompass" /><code>{"private Image minesCompass"}</code> |
+| <Link id="m-objectname" /><code>{"private Text objectName"}</code> |
+| <Link id="m-pointertransform" /><code>{"private Transform pointerTransform"}</code> |
+| <Link id="m-previousvalue" /><code>{"private Vector2 previousValue"}</code> |
+| <Link id="m-syncmessage" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncMessage"}</code> |
+
+</details>
 
 ## Properties
 
@@ -54,10 +59,18 @@ A debug tool item with 12 modes (LOD tools, chunk bounds, teleporters, console c
 | --- | --- |
 | <Link id="m-counttools" /><code>{"int CountTools { get; private set; }"}</code> | Number of tools (12). |
 | <Link id="m-currenttool-2" /><code>{"int CurrentTool { get; set; }"}</code> | Index of the active tool. Setting it disables the old tool, enables the new one if held, and shows its name. |
-| <Link id="m-displaytext" /><code>{"private string DisplayText { get; set; }"}</code> |  |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-pointing" /><code>{"private Vector3 Pointing { get; set; }"}</code> |  |
-| <Link id="m-renderer" /><code>{"private LineRenderer Renderer { get; set; }"}</code> |  |
+
+<details>
+<summary>4 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-displaytext" /><code>{"private string DisplayText { get; set; }"}</code> |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-pointing" /><code>{"private Vector3 Pointing { get; set; }"}</code> |
+| <Link id="m-renderer" /><code>{"private LineRenderer Renderer { get; set; }"}</code> |
+
+</details>
 
 ## Methods
 
@@ -71,16 +84,24 @@ A debug tool item with 12 modes (LOD tools, chunk bounds, teleporters, console c
 | <Link id="m-pressup" /><code>{"void PressUp()"}</code> | Sends the up press to the active tool. Only for the local player holding it. |
 | <Link id="m-sendmessage" /><code>{"void SendMessage()"}</code> | Sends the active tool's data to everyone in the item's chunks. |
 | <Link id="m-toggleraycasting" /><code>{"void ToggleRaycasting(bool isEnabled)"}</code> | Shows or hides the pointer line. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-checkinput" /><code>{"private void CheckInput("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |  |
-| <Link id="m-displaymessage" /><code>{"private IEnumerator DisplayMessage(string message) (iterator)"}</code> |  |
-| <Link id="m-interact" /><code>{"private void Interact("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" pickup, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-stop" /><code>{"private void Stop("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |  |
-| <Link id="m-syncmessage-2" /><code>{"private void SyncMessage("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int arguments)"}</code> |  |
-| <Link id="m-toggleenable" /><code>{"private void ToggleEnable(bool isEnabled)"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+
+<details>
+<summary>10 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-checkinput" /><code>{"private void CheckInput("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |
+| <Link id="m-displaymessage" /><code>{"private IEnumerator DisplayMessage(string message) (iterator)"}</code> |
+| <Link id="m-interact" /><code>{"private void Interact("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" pickup, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-stop" /><code>{"private void Stop("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |
+| <Link id="m-syncmessage-2" /><code>{"private void SyncMessage("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int arguments)"}</code> |
+| <Link id="m-toggleenable" /><code>{"private void ToggleEnable(bool isEnabled)"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>
 
 ## Used in
 

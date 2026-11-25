@@ -17,20 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StartupLoader()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StartupLoader()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-platformloaders" /><code>{"private List<"}<Link to="/game-api/types/global-p/platformloader">{"PlatformLoader"}</Link>{"> platformLoaders"}</code> |  |
-| <Link id="m-sceneloaders" /><code>{"private "}<Link to="/game-api/types/global-i-l/loadscenes">{"LoadScenes"}</Link>{"[] sceneLoaders"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-platformloaders" /><code>{"private List<"}<Link to="/game-api/types/global-p/platformloader">{"PlatformLoader"}</Link>{"> platformLoaders"}</code> |
+| <Link id="m-sceneloaders" /><code>{"private "}<Link to="/game-api/types/global-i-l/loadscenes">{"LoadScenes"}</Link>{"[] sceneLoaders"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private async void Awake()"}</code> |  |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private async void Awake()"}</code> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+
+</details>

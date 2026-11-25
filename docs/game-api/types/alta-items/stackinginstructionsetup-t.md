@@ -18,13 +18,13 @@ An **abstract class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected StackingInstructionSetup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected StackingInstructionSetup()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"override void Setup(Bounds bounds, Matrix4x4 localToWorld, "}<Link to="/game-api/types/alta-items/stackinginstructions">{"StackingInstructions"}</Link>{" instructions)"}</code> |  |
-| <Link id="m-setup-2" /><code>{"protected abstract void Setup(Bounds bounds, T instructions)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"override void Setup(Bounds bounds, Matrix4x4 localToWorld, "}<Link to="/game-api/types/alta-items/stackinginstructions">{"StackingInstructions"}</Link>{" instructions)"}</code> |
+| <Link id="m-setup-2" /><code>{"protected abstract void Setup(Bounds bounds, T instructions)"}</code> |

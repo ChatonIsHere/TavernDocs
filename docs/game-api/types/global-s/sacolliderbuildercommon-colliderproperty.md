@@ -19,9 +19,9 @@ Editor collider builder options for generated colliders.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ColliderProperty()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ColliderProperty()"}</code> |
 
 ## Fields
 

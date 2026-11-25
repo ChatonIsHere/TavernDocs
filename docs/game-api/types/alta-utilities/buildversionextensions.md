@@ -17,7 +17,7 @@ A **static class** in `Root.Township`, `Alta.Utilities`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-drawgui" /><code>{"static BuildVersion DrawGui(BuildVersion version)"}</code> |  |
-| <Link id="m-getbuildversionforbuild" /><code>{"static BuildVersion GetBuildVersionForBuild(BuildVersion version, int changeSet)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-drawgui" /><code>{"static BuildVersion DrawGui(BuildVersion version)"}</code> |
+| <Link id="m-getbuildversionforbuild" /><code>{"static BuildVersion GetBuildVersionForBuild(BuildVersion version, int changeSet)"}</code> |

@@ -21,24 +21,29 @@ Settings asset for the player's dead state (`DeadState`): ragdoll feel, the fade
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DeadStateSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DeadStateSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animationsettings" /><code>{"private "}<Link to="/game-api/types/alta-player/deathanimationsettings">{"DeathAnimationSettings"}</Link>{" animationSettings"}</code> |  |
-| <Link id="m-deadbodydrag" /><code>{"private float deadBodyDrag"}</code> |  |
-| <Link id="m-diedaction" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" diedAction"}</code> |  |
-| <Link id="m-fadeinouttime" /><code>{"private float fadeInOutTime"}</code> |  |
-| <Link id="m-shownamesaction" /><code>{"private "}<Link to="/game-api/types/alta-player/shownames">{"ShowNames"}</Link>{" showNamesAction"}</code> |  |
-| <Link id="m-skirtrotationmultiplier" /><code>{"private float skirtRotationMultiplier"}</code> |  |
-| <Link id="m-statstomodifyondeath" /><code>{"private "}<Link to="/game-api/types/alta-player/statthresholdvalue">{"StatThresholdValue"}</Link>{"[] statsToModifyOnDeath"}</code> |  |
-| <Link id="m-statstoresetondeath" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{"[] statsToResetOnDeath"}</code> |  |
-| <Link id="m-timetoincreasefog" /><code>{"private float timeToIncreaseFog"}</code> |  |
-| <Link id="m-timetorespawn" /><code>{"private float timeToRespawn"}</code> |  |
+<details>
+<summary>10 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animationsettings" /><code>{"private "}<Link to="/game-api/types/alta-player/deathanimationsettings">{"DeathAnimationSettings"}</Link>{" animationSettings"}</code> |
+| <Link id="m-deadbodydrag" /><code>{"private float deadBodyDrag"}</code> |
+| <Link id="m-diedaction" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" diedAction"}</code> |
+| <Link id="m-fadeinouttime" /><code>{"private float fadeInOutTime"}</code> |
+| <Link id="m-shownamesaction" /><code>{"private "}<Link to="/game-api/types/alta-player/shownames">{"ShowNames"}</Link>{" showNamesAction"}</code> |
+| <Link id="m-skirtrotationmultiplier" /><code>{"private float skirtRotationMultiplier"}</code> |
+| <Link id="m-statstomodifyondeath" /><code>{"private "}<Link to="/game-api/types/alta-player/statthresholdvalue">{"StatThresholdValue"}</Link>{"[] statsToModifyOnDeath"}</code> |
+| <Link id="m-statstoresetondeath" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{"[] statsToResetOnDeath"}</code> |
+| <Link id="m-timetoincreasefog" /><code>{"private float timeToIncreaseFog"}</code> |
+| <Link id="m-timetorespawn" /><code>{"private float timeToRespawn"}</code> |
+
+</details>
 
 ## Properties
 
@@ -58,9 +63,14 @@ Settings asset for the player's dead state (`DeadState`): ragdoll feel, the fade
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>
 
 ## Used in
 

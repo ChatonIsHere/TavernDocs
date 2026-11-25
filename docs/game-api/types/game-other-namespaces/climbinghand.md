@@ -18,45 +18,50 @@ One hand's climbing state: grabbing a climbable surface, holding the grip and wo
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClimbingHand("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller, "}<Link to="/game-api/types/game-other-namespaces/climbinghandler">{"ClimbingHandler"}</Link>{" handler, "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClimbingHand("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller, "}<Link to="/game-api/types/game-other-namespaces/climbinghandler">{"ClimbingHandler"}</Link>{" handler, "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkframecount" /><code>{"private const int CheckFrameCount"}</code> |  |
-| <Link id="m-checkframes" /><code>{"private int checkFrames"}</code> |  |
-| <Link id="m-climbable" /><code>{"private "}<Link to="/game-api/types/global-i-l/iclimbable">{"IClimbable"}</Link>{" climbable"}</code> |  |
-| <Link id="m-collider" /><code>{"private Collider collider"}</code> |  |
-| <Link id="m-currentlygrabbingobjectlayer" /><code>{"private int currentlyGrabbingObjectLayer"}</code> |  |
-| <Link id="m-currentpressure" /><code>{"private Vector3 currentPressure"}</code> |  |
-| <Link id="m-currentpressuremagnitude" /><code>{"private float currentPressureMagnitude"}</code> |  |
-| <Link id="m-frameindex" /><code>{"private int frameIndex"}</code> |  |
-| <Link id="m-getcolliderclimbable" /><code>{"private readonly "}<Link to="/game-api/types/global-m-o/memoizecomponentone-t">{"MemoizeComponentOne"}</Link>{"<"}<Link to="/game-api/types/global-i-l/iclimbable">{"IClimbable"}</Link>{"> getColliderClimbable"}</code> |  |
-| <Link id="m-getrigidbodyclimbable" /><code>{"private readonly "}<Link to="/game-api/types/global-m-o/memoizecomponentone-t">{"MemoizeComponentOne"}</Link>{"<"}<Link to="/game-api/types/global-i-l/iclimbable">{"IClimbable"}</Link>{"> getRigidbodyClimbable"}</code> |  |
-| <Link id="m-grabpositionoffset" /><code>{"private readonly Vector3 grabPositionOffset"}</code> |  |
-| <Link id="m-grabresults" /><code>{"private static readonly Collider[] grabResults"}</code> |  |
-| <Link id="m-gravityboost" /><code>{"private float gravityBoost"}</code> |  |
-| <Link id="m-grip" /><code>{"private "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{"? grip"}</code> |  |
-| <Link id="m-handler" /><code>{"private readonly "}<Link to="/game-api/types/game-other-namespaces/climbinghandler">{"ClimbingHandler"}</Link>{" handler"}</code> |  |
-| <Link id="m-incorrecthandstrengthmodifier" /><code>{"private float incorrectHandStrengthModifier"}</code> |  |
-| <Link id="m-ishandclosed" /><code>{"private bool isHandClosed"}</code> |  |
-| <Link id="m-ishanging" /><code>{"private bool isHanging"}</code> |  |
-| <Link id="m-lastarmdirection" /><code>{"private Vector3 lastArmDirection"}</code> |  |
-| <Link id="m-lastarmlength" /><code>{"private float lastArmLength"}</code> |  |
-| <Link id="m-lastframeprocessran" /><code>{"private int lastFrameProcessRan"}</code> |  |
-| <Link id="m-lastframes" /><code>{"private readonly Vector3[] lastFrames"}</code> |  |
-| <Link id="m-masterhand" /><code>{"private readonly Transform masterHand"}</code> |  |
-| <Link id="m-player" /><code>{"private readonly "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> |  |
-| <Link id="m-shoulder" /><code>{"private readonly Transform shoulder"}</code> |  |
-| <Link id="m-shouldercache" /><code>{"private "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{" shoulderCache"}</code> |  |
-| <Link id="m-sphere" /><code>{"private static SphereCollider sphere"}</code> |  |
-| <Link id="m-sync" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |  |
-| <Link id="m-syncimmediategrabfail" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/throttledmethodsync">{"ThrottledMethodSync"}</Link>{" syncImmediateGrabFail"}</code> |  |
-| <Link id="m-syncvoluntarybreak" /><code>{"private bool syncVoluntaryBreak"}</code> |  |
-| <Link id="m-unlock" /><code>{"private readonly "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock"}</code> |  |
+<details>
+<summary>31 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-checkframecount" /><code>{"private const int CheckFrameCount"}</code> |
+| <Link id="m-checkframes" /><code>{"private int checkFrames"}</code> |
+| <Link id="m-climbable" /><code>{"private "}<Link to="/game-api/types/global-i-l/iclimbable">{"IClimbable"}</Link>{" climbable"}</code> |
+| <Link id="m-collider" /><code>{"private Collider collider"}</code> |
+| <Link id="m-currentlygrabbingobjectlayer" /><code>{"private int currentlyGrabbingObjectLayer"}</code> |
+| <Link id="m-currentpressure" /><code>{"private Vector3 currentPressure"}</code> |
+| <Link id="m-currentpressuremagnitude" /><code>{"private float currentPressureMagnitude"}</code> |
+| <Link id="m-frameindex" /><code>{"private int frameIndex"}</code> |
+| <Link id="m-getcolliderclimbable" /><code>{"private readonly "}<Link to="/game-api/types/global-m-o/memoizecomponentone-t">{"MemoizeComponentOne"}</Link>{"<"}<Link to="/game-api/types/global-i-l/iclimbable">{"IClimbable"}</Link>{"> getColliderClimbable"}</code> |
+| <Link id="m-getrigidbodyclimbable" /><code>{"private readonly "}<Link to="/game-api/types/global-m-o/memoizecomponentone-t">{"MemoizeComponentOne"}</Link>{"<"}<Link to="/game-api/types/global-i-l/iclimbable">{"IClimbable"}</Link>{"> getRigidbodyClimbable"}</code> |
+| <Link id="m-grabpositionoffset" /><code>{"private readonly Vector3 grabPositionOffset"}</code> |
+| <Link id="m-grabresults" /><code>{"private static readonly Collider[] grabResults"}</code> |
+| <Link id="m-gravityboost" /><code>{"private float gravityBoost"}</code> |
+| <Link id="m-grip" /><code>{"private "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{"? grip"}</code> |
+| <Link id="m-handler" /><code>{"private readonly "}<Link to="/game-api/types/game-other-namespaces/climbinghandler">{"ClimbingHandler"}</Link>{" handler"}</code> |
+| <Link id="m-incorrecthandstrengthmodifier" /><code>{"private float incorrectHandStrengthModifier"}</code> |
+| <Link id="m-ishandclosed" /><code>{"private bool isHandClosed"}</code> |
+| <Link id="m-ishanging" /><code>{"private bool isHanging"}</code> |
+| <Link id="m-lastarmdirection" /><code>{"private Vector3 lastArmDirection"}</code> |
+| <Link id="m-lastarmlength" /><code>{"private float lastArmLength"}</code> |
+| <Link id="m-lastframeprocessran" /><code>{"private int lastFrameProcessRan"}</code> |
+| <Link id="m-lastframes" /><code>{"private readonly Vector3[] lastFrames"}</code> |
+| <Link id="m-masterhand" /><code>{"private readonly Transform masterHand"}</code> |
+| <Link id="m-player" /><code>{"private readonly "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> |
+| <Link id="m-shoulder" /><code>{"private readonly Transform shoulder"}</code> |
+| <Link id="m-shouldercache" /><code>{"private "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{" shoulderCache"}</code> |
+| <Link id="m-sphere" /><code>{"private static SphereCollider sphere"}</code> |
+| <Link id="m-sync" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
+| <Link id="m-syncimmediategrabfail" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/throttledmethodsync">{"ThrottledMethodSync"}</Link>{" syncImmediateGrabFail"}</code> |
+| <Link id="m-syncvoluntarybreak" /><code>{"private bool syncVoluntaryBreak"}</code> |
+| <Link id="m-unlock" /><code>{"private readonly "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock"}</code> |
+
+</details>
 
 ## Properties
 
@@ -91,6 +96,12 @@ One hand's climbing state: grabbing a climbable surface, holding the grip and wo
 | <Link id="m-process" /><code>{"void Process(bool hasStamina)"}</code> | Per frame: grabs a climbable when interact is held with no interactable in reach and stamina left, or lets go. |
 | <Link id="m-resetpressure" /><code>{"void ResetPressure()"}</code> | Clears this hand's stored pressure. |
 | <Link id="m-resistpressure" /><code>{"Vector3 ResistPressure(Vector3 pressure, float pressureDirectionPower)"}</code> | Applies extra pressure to the gripped climbable and adds it to this hand's total. Returns zero if the climbable refuses it. |
+
+<details>
+<summary>14 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-breakgrip" /><code>{"private void BreakGrip()"}</code> | Lets go: detaches the hand, plays the grab broken effect if not voluntary, syncs it and raises `stoppedClimbing`. |
 | <Link id="m-checkgrab" /><code>{"private bool CheckGrab(float armReduce = 0)"}</code> |  |
 | <Link id="m-checkstreamreadpermission" /><code>{"private bool CheckStreamReadPermission("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
@@ -105,6 +116,8 @@ One hand's climbing state: grabbing a climbable surface, holding the grip and wo
 | <Link id="m-serializeposition" /><code>{"private void SerializePosition("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref Vector3 position)"}</code> |  |
 | <Link id="m-shouldbreakcurrentgrip" /><code>{"private bool ShouldBreakCurrentGrip(bool hasStamina)"}</code> |  |
 | <Link id="m-syncimmediategrabfail-2" /><code>{"private void SyncImmediateGrabFail("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+</details>
 
 ## Used in
 

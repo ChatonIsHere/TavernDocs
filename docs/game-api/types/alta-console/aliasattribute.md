@@ -18,12 +18,12 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AliasAttribute(params string[] aliases)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AliasAttribute(params string[] aliases)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-aliases" /><code>{"string[] Aliases { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-aliases" /><code>{"string[] Aliases { get; private set; }"}</code> |

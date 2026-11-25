@@ -17,10 +17,10 @@ An **enum** in `Root.Township`, `Alta.Crafting`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-down" /><code>{"Down = 2"}</code> |  |
-| <Link id="m-up" /><code>{"Up = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-down" /><code>{"Down = 2"}</code> |
+| <Link id="m-up" /><code>{"Up = 1"}</code> |
 
 ## Used in
 

@@ -19,15 +19,15 @@ A **internal class** in `Root.Township`, `ATT.ClimbingTower`. Reach it through a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpiritModeDoorwaySaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpiritModeDoorwaySaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-doorwaymode" /><code><Link to="/game-api/types/game-other-namespaces/spiritmodedoorwaymode">{"SpiritModeDoorwayMode"}</Link>{" doorwayMode"}</code> |  |
-| <Link id="m-isonewaydoor" /><code>{"bool isOneWayDoor"}</code> |  |
-| <Link id="m-playerunlock" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" playerUnlock"}</code> |  |
-| <Link id="m-size" /><code>{"Vector3 size"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-doorwaymode" /><code><Link to="/game-api/types/game-other-namespaces/spiritmodedoorwaymode">{"SpiritModeDoorwayMode"}</Link>{" doorwayMode"}</code> |
+| <Link id="m-isonewaydoor" /><code>{"bool isOneWayDoor"}</code> |
+| <Link id="m-playerunlock" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" playerUnlock"}</code> |
+| <Link id="m-size" /><code>{"Vector3 size"}</code> |

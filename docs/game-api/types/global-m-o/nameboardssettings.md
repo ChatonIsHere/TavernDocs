@@ -19,25 +19,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NameBoardsSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NameBoardsSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distancefromhead" /><code>{"private float distanceFromHead"}</code> |  |
-| <Link id="m-memberstatusshield" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{"[] memberStatusShield"}</code> |  |
-| <Link id="m-nameboarddefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" nameBoardDefinition"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-distancefromhead" /><code>{"private float distanceFromHead"}</code> |
+| <Link id="m-memberstatusshield" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{"[] memberStatusShield"}</code> |
+| <Link id="m-nameboarddefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" nameBoardDefinition"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distancefromhead-2" /><code>{"float DistanceFromHead { get; }"}</code> |  |
-| <Link id="m-memberstatusshield-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{"[] MemberStatusShield { get; }"}</code> |  |
-| <Link id="m-nameboarddefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" NameBoardDefinition { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-distancefromhead-2" /><code>{"float DistanceFromHead { get; }"}</code> |
+| <Link id="m-memberstatusshield-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{"[] MemberStatusShield { get; }"}</code> |
+| <Link id="m-nameboarddefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" NameBoardDefinition { get; }"}</code> |
 
 ## Used in
 

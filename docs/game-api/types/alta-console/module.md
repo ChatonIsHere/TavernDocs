@@ -20,10 +20,10 @@ A named group of console commands, with its own commands and submodules. Typing 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Module(object moduleObject, string name, string description)"}</code> |  |
-| <Link id="m-ctor-2" /><code><Link to="/game-api/types/alta-console/module">{"Module"}</Link>{"(Assembly assembly, "}<Link to="/game-api/types/alta-console/module">{"Module"}</Link>{" parent, string name, string description)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Module(object moduleObject, string name, string description)"}</code> |
+| <Link id="m-ctor-2" /><code><Link to="/game-api/types/alta-console/module">{"Module"}</Link>{"(Assembly assembly, "}<Link to="/game-api/types/alta-console/module">{"Module"}</Link>{" parent, string name, string description)"}</code> |
 
 ## Properties
 

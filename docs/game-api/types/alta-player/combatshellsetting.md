@@ -17,23 +17,28 @@ A **class** in `Root.Township`, `Alta.PlayerEffects`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CombatShellSetting()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CombatShellSetting()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dissolvestrength" /><code>{"private float dissolveStrength"}</code> |  |
-| <Link id="m-ramp1" /><code>{"private Texture2D ramp1"}</code> |  |
-| <Link id="m-ramp2" /><code>{"private Texture2D ramp2"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-dissolvestrength" /><code>{"private float dissolveStrength"}</code> |
+| <Link id="m-ramp1" /><code>{"private Texture2D ramp1"}</code> |
+| <Link id="m-ramp2" /><code>{"private Texture2D ramp2"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setmaterial" /><code>{"override void SetMaterial(Material material)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setmaterial" /><code>{"override void SetMaterial(Material material)"}</code> |
 
 ## Used in
 

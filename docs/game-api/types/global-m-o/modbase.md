@@ -18,21 +18,21 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ModBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ModBase()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"abstract string Name { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"abstract string Name { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"protected abstract void Initialize()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"protected void OnDestroy()"}</code> |  |
-| <Link id="m-start" /><code>{"protected void Start()"}</code> |  |
-| <Link id="m-terminate" /><code>{"protected abstract void Terminate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"protected abstract void Initialize()"}</code> |
+| <Link id="m-ondestroy" /><code>{"protected void OnDestroy()"}</code> |
+| <Link id="m-start" /><code>{"protected void Start()"}</code> |
+| <Link id="m-terminate" /><code>{"protected abstract void Terminate()"}</code> |

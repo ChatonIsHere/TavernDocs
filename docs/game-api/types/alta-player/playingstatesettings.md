@@ -19,15 +19,15 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingStateSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayingStateSettings()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-statetype" /><code>{"override Type StateType { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-statetype" /><code>{"override Type StateType { get; }"}</code> |
 
 ## Used in
 

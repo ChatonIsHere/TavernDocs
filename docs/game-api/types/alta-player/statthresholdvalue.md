@@ -16,15 +16,15 @@ A **struct** in `Root.Township`, `Alta.PlayerStates`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-keepunlessabovevalue" /><code>{"bool keepUnlessAboveValue"}</code> |  |
-| <Link id="m-keepunlessbelowvalue" /><code>{"bool keepUnlessBelowValue"}</code> |  |
-| <Link id="m-secondarystatdefinition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" secondaryStatDefinition"}</code> |  |
-| <Link id="m-secondaryvalue" /><code>{"float secondaryValue"}</code> |  |
-| <Link id="m-settingsecondary" /><code>{"bool settingSecondary"}</code> |  |
-| <Link id="m-statdefinition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statDefinition"}</code> |  |
-| <Link id="m-value" /><code>{"float value"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-keepunlessabovevalue" /><code>{"bool keepUnlessAboveValue"}</code> |
+| <Link id="m-keepunlessbelowvalue" /><code>{"bool keepUnlessBelowValue"}</code> |
+| <Link id="m-secondarystatdefinition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" secondaryStatDefinition"}</code> |
+| <Link id="m-secondaryvalue" /><code>{"float secondaryValue"}</code> |
+| <Link id="m-settingsecondary" /><code>{"bool settingSecondary"}</code> |
+| <Link id="m-statdefinition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statDefinition"}</code> |
+| <Link id="m-value" /><code>{"float value"}</code> |
 
 ## Used in
 

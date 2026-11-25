@@ -17,12 +17,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShopItemSetModificationRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShopItemSetModificationRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setitems" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/shopitemdetailed">{"ShopItemDetailed"}</Link>{"> SetItems { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setitems" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/shopitemdetailed">{"ShopItemDetailed"}</Link>{"> SetItems { get; set; }"}</code> |

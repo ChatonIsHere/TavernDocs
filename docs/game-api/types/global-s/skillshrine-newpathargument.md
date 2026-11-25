@@ -17,7 +17,7 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-path" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> |  |
-| <Link id="m-playerid" /><code>{"int playerId"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-path" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> |
+| <Link id="m-playerid" /><code>{"int playerId"}</code> |

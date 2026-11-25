@@ -16,15 +16,15 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionFromOriginHandler(Transform transform, "}<Link to="/game-api/types/global-p/positionfromoriginhelper">{"PositionFromOriginHelper"}</Link>{" helper)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionFromOriginHandler(Transform transform, "}<Link to="/game-api/types/global-p/positionfromoriginhelper">{"PositionFromOriginHelper"}</Link>{" helper)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getposition" /><code>{"Func<Vector3, Vector3> GetPosition"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getposition" /><code>{"Func<Vector3, Vector3> GetPosition"}</code> |
 
 ## Used in
 

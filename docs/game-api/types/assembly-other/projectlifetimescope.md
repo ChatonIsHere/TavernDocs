@@ -19,30 +19,43 @@ A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProjectLifetimeScope()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProjectLifetimeScope()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-analyticsinstaller" /><code>{"private "}<Link to="/game-api/types/assembly-other/analyticsinstaller">{"AnalyticsInstaller"}</Link>{" analyticsInstaller"}</code> |  |
-| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/assembly-other/projectlifetimescope">{"ProjectLifetimeScope"}</Link>{" instance"}</code> |  |
-| <Link id="m-loadingscreenfactory" /><code>{"private "}<Link to="/game-api/types/global-i-l/loadingscreenfactory">{"LoadingScreenFactory"}</Link>{" loadingScreenFactory"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-settingsinstaller" /><code>{"private "}<Link to="/game-api/types/assembly-other/globalsettingsinstaller">{"GlobalSettingsInstaller"}</Link>{" settingsInstaller"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-analyticsinstaller" /><code>{"private "}<Link to="/game-api/types/assembly-other/analyticsinstaller">{"AnalyticsInstaller"}</Link>{" analyticsInstaller"}</code> |
+| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/assembly-other/projectlifetimescope">{"ProjectLifetimeScope"}</Link>{" instance"}</code> |
+| <Link id="m-loadingscreenfactory" /><code>{"private "}<Link to="/game-api/types/global-i-l/loadingscreenfactory">{"LoadingScreenFactory"}</Link>{" loadingScreenFactory"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-settingsinstaller" /><code>{"private "}<Link to="/game-api/types/assembly-other/globalsettingsinstaller">{"GlobalSettingsInstaller"}</Link>{" settingsInstaller"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
-| <Link id="m-configurescope" /><code>{"protected override void ConfigureScope(IContainerBuilder builder)"}</code> |  |
-| <Link id="m-onapplicationquit" /><code>{"private void OnApplicationQuit()"}</code> |  |
-| <Link id="m-onapplicationquitroutine" /><code>{"private IEnumerator OnApplicationQuitRoutine() (iterator)"}</code> |  |
-| <Link id="m-registeraltalifecycle" /><code>{"private static void RegisterAltaLifecycle(IContainerBuilder builder)"}</code> |  |
-| <Link id="m-setbuildversionforeditorruntime" /><code>{"private static void SetBuildVersionForEditorRuntime()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |
+| <Link id="m-configurescope" /><code>{"protected override void ConfigureScope(IContainerBuilder builder)"}</code> |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onapplicationquit" /><code>{"private void OnApplicationQuit()"}</code> |
+| <Link id="m-onapplicationquitroutine" /><code>{"private IEnumerator OnApplicationQuitRoutine() (iterator)"}</code> |
+| <Link id="m-registeraltalifecycle" /><code>{"private static void RegisterAltaLifecycle(IContainerBuilder builder)"}</code> |
+| <Link id="m-setbuildversionforeditorruntime" /><code>{"private static void SetBuildVersionForEditorRuntime()"}</code> |
+
+</details>
 
 ## Used in
 

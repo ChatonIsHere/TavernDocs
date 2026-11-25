@@ -17,17 +17,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ExtraArrowData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ExtraArrowData()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-arrow" /><code><Link to="/game-api/types/global-i-l/ishootable">{"IShootable"}</Link>{" Arrow { get; set; }"}</code> |  |
-| <Link id="m-collidergroup" /><code><Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-localoffset" /><code>{"Vector3 LocalOffset { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-arrow" /><code><Link to="/game-api/types/global-i-l/ishootable">{"IShootable"}</Link>{" Arrow { get; set; }"}</code> |
+| <Link id="m-collidergroup" /><code><Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-localoffset" /><code>{"Vector3 LocalOffset { get; set; }"}</code> |
 
 ## Used in
 

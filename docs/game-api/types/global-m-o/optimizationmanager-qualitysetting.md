@@ -17,17 +17,22 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lodbias" /><code>{"private float lodBias"}</code> |  |
-| <Link id="m-shadowdistance" /><code>{"private float shadowDistance"}</code> |  |
-| <Link id="m-shadowresolution" /><code>{"private ShadowResolution shadowResolution"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-lodbias" /><code>{"private float lodBias"}</code> |
+| <Link id="m-shadowdistance" /><code>{"private float shadowDistance"}</code> |
+| <Link id="m-shadowresolution" /><code>{"private ShadowResolution shadowResolution"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"void Apply()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"void Apply()"}</code> |
 
 ## Used in
 

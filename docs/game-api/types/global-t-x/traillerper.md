@@ -17,20 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TrailLerper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TrailLerper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lerpers" /><code>{"private "}<Link to="/game-api/types/global-i-l/lerpfollow">{"LerpFollow"}</Link>{"[] lerpers"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-lerpers" /><code>{"private "}<Link to="/game-api/types/global-i-l/lerpfollow">{"LerpFollow"}</Link>{"[] lerpers"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-resettimer" /><code>{"private void ResetTimer()"}</code> |  |
-| <Link id="m-setposition" /><code>{"private void SetPosition(Vector3 position)"}</code> |  |
-| <Link id="m-settarget" /><code>{"private void SetTarget(Transform target)"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-resettimer" /><code>{"private void ResetTimer()"}</code> |
+| <Link id="m-setposition" /><code>{"private void SetPosition(Vector3 position)"}</code> |
+| <Link id="m-settarget" /><code>{"private void SetTarget(Transform target)"}</code> |
+
+</details>

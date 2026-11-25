@@ -20,15 +20,20 @@ A list that raises events when items are added or removed. Adding through the `I
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ListenedList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ListenedList()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-list" /><code>{"private List<T> list"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-list" /><code>{"private List<T> list"}</code> |
+
+</details>
 
 ## Properties
 
@@ -56,7 +61,15 @@ A list that raises events when items are added or removed. Adding through the `I
 | <Link id="m-copyto" /><code>{"void CopyTo(T[] array, int arrayIndex)"}</code> | Copies the items into an array from the given index. |
 | <Link id="m-getenumerator" /><code>{"IEnumerator<T> GetEnumerator()"}</code> |  |
 | <Link id="m-remove" /><code>{"bool Remove(T item)"}</code> | Removes an item, raises `ItemRemoved` and returns whether it was found. |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |
+
+</details>
 
 ## Used in
 

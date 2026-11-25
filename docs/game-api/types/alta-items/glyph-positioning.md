@@ -19,19 +19,24 @@ Where a glyph sits on a page: position, rotation and scale, snapped to steps so 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Positioning()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"Positioning("}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph, Vector2 position, float rotation, float scale)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Positioning()"}</code> |
+| <Link id="m-ctor-2" /><code>{"Positioning("}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph, Vector2 position, float rotation, float scale)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-glyph" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph"}</code> |  |
-| <Link id="m-position" /><code>{"private Vector2 position"}</code> |  |
-| <Link id="m-rotation" /><code>{"private float rotation"}</code> |  |
-| <Link id="m-scale" /><code>{"private float scale"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-glyph" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph"}</code> |
+| <Link id="m-position" /><code>{"private Vector2 position"}</code> |
+| <Link id="m-rotation" /><code>{"private float rotation"}</code> |
+| <Link id="m-scale" /><code>{"private float scale"}</code> |
+
+</details>
 
 ## Properties
 

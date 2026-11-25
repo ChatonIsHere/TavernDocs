@@ -17,30 +17,43 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerConfiguration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerConfiguration()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-listtype" /><code>{"private "}<Link to="/game-api/types/global-s/serverlisttype">{"ServerListType"}</Link>{" listType"}</code> |  |
-| <Link id="m-playerslist" /><code>{"private List<int> playersList"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-listtype" /><code>{"private "}<Link to="/game-api/types/global-s/serverlisttype">{"ServerListType"}</Link>{" listType"}</code> |
+| <Link id="m-playerslist" /><code>{"private List<int> playersList"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-listtype-2" /><code><Link to="/game-api/types/global-s/serverlisttype">{"ServerListType"}</Link>{" ListType { get; set; }"}</code> |  |
-| <Link id="m-playerslist-2" /><code>{"List<int> PlayersList { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-listtype-2" /><code><Link to="/game-api/types/global-s/serverlisttype">{"ServerListType"}</Link>{" ListType { get; set; }"}</code> |
+| <Link id="m-playerslist-2" /><code>{"List<int> PlayersList { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isplayerallowed" /><code>{"bool IsPlayerAllowed(int playerID)"}</code> |  |
-| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isplayerallowed" /><code>{"bool IsPlayerAllowed(int playerID)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> |
+
+</details>
 
 ## Used in
 

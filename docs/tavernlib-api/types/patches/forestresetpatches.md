@@ -21,11 +21,16 @@ Patches `ForestGenerator.Wipe` so a forest reset clears the forest and moves pla
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-otherreset" /><code>{"private static bool? _otherReset"}</code> |  |
-| <Link id="m-queued" /><code>{"private static readonly ConditionalWeakTable<"}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{", StrongBox<int>> Queued"}</code> |  |
-| <Link id="m-resetting" /><code>{"private static readonly HashSet<"}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{"> Resetting"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-otherreset" /><code>{"private static bool? _otherReset"}</code> |
+| <Link id="m-queued" /><code>{"private static readonly ConditionalWeakTable<"}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{", StrongBox<int>> Queued"}</code> |
+| <Link id="m-resetting" /><code>{"private static readonly HashSet<"}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{"> Resetting"}</code> |
+
+</details>
 
 ## Methods
 
@@ -34,6 +39,14 @@ Patches `ForestGenerator.Wipe` so a forest reset clears the forest and moves pla
 | <Link id="m-answerreset" /><code>{"static bool AnswerReset("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest, ref Task __result)"}</code> | Prefix on `WorldCommandModule.ForestCommandModule.Reset` that skips it, runs the wipe and answers what happened. |
 | <Link id="m-isqueued" /><code>{"static bool IsQueued("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest)"}</code> | True when a reset of this forest is waiting for the next server start. |
 | <Link id="m-queuereset" /><code>{"static bool QueueReset("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" __instance, int newSeed, ref Task __result, MethodBase __originalMethod)"}</code> | Prefix on `ForestGenerator.Wipe` that skips it and queues the reset, unless another assembly also prefixes `Wipe`. A negative seed picks a random one. |
-| <Link id="m-answer" /><code>{"private static async Task<string> Answer("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest)"}</code> |  |
-| <Link id="m-otherreset-2" /><code>{"private static bool OtherReset(MethodBase wipe)"}</code> |  |
-| <Link id="m-queue" /><code>{"private static async Task Queue("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest, int newSeed)"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-answer" /><code>{"private static async Task<string> Answer("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest)"}</code> |
+| <Link id="m-otherreset-2" /><code>{"private static bool OtherReset(MethodBase wipe)"}</code> |
+| <Link id="m-queue" /><code>{"private static async Task Queue("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest, int newSeed)"}</code> |
+
+</details>

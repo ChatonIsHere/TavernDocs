@@ -20,16 +20,21 @@ A cone along the object's forward axis, used by AI to check whether a point is i
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ViewCone()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ViewCone()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angle" /><code>{"private float angle"}</code> |  |
-| <Link id="m-angledot" /><code>{"private float angleDot"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-angle" /><code>{"private float angle"}</code> |
+| <Link id="m-angledot" /><code>{"private float angleDot"}</code> |
+
+</details>
 
 ## Properties
 
@@ -42,8 +47,16 @@ A cone along the object's forward axis, used by AI to check whether a point is i
 | Member | What it is |
 | --- | --- |
 | <Link id="m-contains" /><code>{"bool Contains(Vector3 point, out float ratio)"}</code> | Whether a point is inside the cone. `ratio` is 0 at the centre and 1 at the edge. |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>
 
 ## Used in
 

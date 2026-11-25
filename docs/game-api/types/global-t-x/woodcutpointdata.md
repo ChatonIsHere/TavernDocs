@@ -20,17 +20,25 @@ One damage point on a woodcut tree: a local position and how far it has been cho
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutPointData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WoodcutPointData()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-position" /><code>{"Vector3 position"}</code> | Backing field for `Position`, set in the inspector. |
-| <Link id="m-haschangedsincelastwrite" /><code>{"private bool hasChangedSinceLastWrite"}</code> |  |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-haschangedsincelastwrite" /><code>{"private bool hasChangedSinceLastWrite"}</code> |
+| <Link id="m-progress" /><code>{"private float progress"}</code> |
+
+</details>
 
 ## Properties
 
@@ -57,8 +65,16 @@ One damage point on a woodcut tree: a local position and how far it has been cho
 | <Link id="m-isneedingsync" /><code>{"bool IsNeedingSync()"}</code> | True if progress changed since it was last written to the network. |
 | <Link id="m-sync" /><code>{"void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the progress (7 bits). Clients apply what they read. |
 | <Link id="m-takedamage" /><code>{"void TakeDamage(float damage)"}</code> | Server: adds the damage to the progress, clamped to 1. |
-| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>
 
 ## Used in
 

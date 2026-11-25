@@ -19,9 +19,9 @@ A do-nothing socket for running without a network. Sends report success and go n
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FakeSocket()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FakeSocket()"}</code> |
 
 ## Properties
 

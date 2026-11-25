@@ -18,23 +18,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ThrowAlignHelper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ThrowAlignHelper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-throwalignto" /><code>{"private Vector3 throwAlignTo"}</code> |  |
-| <Link id="m-torque" /><code>{"private Vector3 torque"}</code> |  |
-| <Link id="m-torquelerp" /><code>{"private float torqueLerp"}</code> |  |
-| <Link id="m-torquemultiplier" /><code>{"private float torqueMultiplier"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-throwalignto" /><code>{"private Vector3 throwAlignTo"}</code> |
+| <Link id="m-torque" /><code>{"private Vector3 torque"}</code> |
+| <Link id="m-torquelerp" /><code>{"private float torqueLerp"}</code> |
+| <Link id="m-torquemultiplier" /><code>{"private float torqueMultiplier"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-resetvalues" /><code>{"protected override void ResetValues()"}</code> |  |
-| <Link id="m-throwbehaviour" /><code>{"protected override void ThrowBehaviour(Vector3 velocity, float throwMagnitude)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-resetvalues" /><code>{"protected override void ResetValues()"}</code> |
+| <Link id="m-throwbehaviour" /><code>{"protected override void ThrowBehaviour(Vector3 velocity, float throwMagnitude)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+
+</details>

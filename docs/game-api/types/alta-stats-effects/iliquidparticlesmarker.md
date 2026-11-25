@@ -17,6 +17,6 @@ An **internal interface** in `Root.Township`, `Alta.Liquid`. Reach it through at
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-container" /><code><Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" Container { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-container" /><code><Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" Container { get; }"}</code> |

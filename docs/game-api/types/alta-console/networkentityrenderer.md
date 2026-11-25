@@ -20,9 +20,9 @@ Base for NLog layout renderers that print something about a `NetworkEntity` pass
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected NetworkEntityRenderer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected NetworkEntityRenderer()"}</code> |
 
 ## Methods
 

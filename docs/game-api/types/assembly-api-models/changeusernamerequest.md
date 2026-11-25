@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChangeUsernameRequest(string newUsername, string passwordHash)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ChangeUsernameRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChangeUsernameRequest(string newUsername, string passwordHash)"}</code> |
+| <Link id="m-ctor-2" /><code>{"ChangeUsernameRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-newusername" /><code>{"string NewUsername { get; private set; }"}</code> |  |
-| <Link id="m-passwordhash" /><code>{"string PasswordHash { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-newusername" /><code>{"string NewUsername { get; private set; }"}</code> |
+| <Link id="m-passwordhash" /><code>{"string PasswordHash { get; private set; }"}</code> |
 
 ## Used in
 

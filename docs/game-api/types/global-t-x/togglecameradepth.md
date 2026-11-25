@@ -17,32 +17,45 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ToggleCameraDepth()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ToggleCameraDepth()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alternatedepth" /><code>{"private float alternateDepth"}</code> |  |
-| <Link id="m-alternatetexture" /><code>{"private RenderTexture alternateTexture"}</code> |  |
-| <Link id="m-cameratotoggle" /><code>{"private Camera cameraToToggle"}</code> |  |
-| <Link id="m-initialdepth" /><code>{"private float initialDepth"}</code> |  |
-| <Link id="m-initialtexture" /><code>{"private RenderTexture initialTexture"}</code> |  |
-| <Link id="m-istoggled" /><code>{"private bool isToggled"}</code> |  |
-| <Link id="m-togglekey" /><code>{"private KeyCode toggleKey"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-alternatedepth" /><code>{"private float alternateDepth"}</code> |
+| <Link id="m-alternatetexture" /><code>{"private RenderTexture alternateTexture"}</code> |
+| <Link id="m-cameratotoggle" /><code>{"private Camera cameraToToggle"}</code> |
+| <Link id="m-initialdepth" /><code>{"private float initialDepth"}</code> |
+| <Link id="m-initialtexture" /><code>{"private RenderTexture initialTexture"}</code> |
+| <Link id="m-istoggled" /><code>{"private bool isToggled"}</code> |
+| <Link id="m-togglekey" /><code>{"private KeyCode toggleKey"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-t-x/togglecameradepth">{"ToggleCameraDepth"}</Link>{" Instance { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-t-x/togglecameradepth">{"ToggleCameraDepth"}</Link>{" Instance { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-toggle" /><code>{"void Toggle()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-toggle" /><code>{"void Toggle()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

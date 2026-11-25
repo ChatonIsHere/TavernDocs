@@ -20,9 +20,9 @@ Base of the `JsonMin`, `JsonMax` and `JsonRange` attributes on settings properti
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected JsonPropertyFilterAttribute()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected JsonPropertyFilterAttribute()"}</code> |
 
 ## Methods
 

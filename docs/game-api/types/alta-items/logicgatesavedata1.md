@@ -18,24 +18,24 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicGateSaveData1()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicGateSaveData1()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-operationtype" /><code><Link to="/game-api/types/alta-items/logicoperationtype">{"LogicOperationType"}</Link>{" operationType"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-operationtype" /><code><Link to="/game-api/types/alta-items/logicoperationtype">{"LogicOperationType"}</Link>{" operationType"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-datas" /><code><Link to="/game-api/types/alta-items/logicboolsavedata">{"LogicBoolSaveData"}</Link>{"[] Datas { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-datas" /><code><Link to="/game-api/types/alta-items/logicboolsavedata">{"LogicBoolSaveData"}</Link>{"[] Datas { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

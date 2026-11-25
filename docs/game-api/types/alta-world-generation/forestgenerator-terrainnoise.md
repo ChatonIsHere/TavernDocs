@@ -17,17 +17,17 @@ A **private class** in `Root.Township`, `Alta.Forests`. Reach it through att-stu
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TerrainNoise()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TerrainNoise()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-magnitude" /><code>{"float magnitude"}</code> |  |
-| <Link id="m-pathfade" /><code>{"float pathFade"}</code> |  |
-| <Link id="m-scale" /><code>{"float scale"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-magnitude" /><code>{"float magnitude"}</code> |
+| <Link id="m-pathfade" /><code>{"float pathFade"}</code> |
+| <Link id="m-scale" /><code>{"float scale"}</code> |
 
 ## Used in
 

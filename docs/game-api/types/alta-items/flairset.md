@@ -19,25 +19,30 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FlairSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FlairSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-edgefaceflairs" /><code>{"private "}<Link to="/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" edgeFaceFlairs"}</code> |  |
-| <Link id="m-spinefaceflairs" /><code>{"private "}<Link to="/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" spineFaceFlairs"}</code> |  |
-| <Link id="m-spineflairs" /><code>{"private "}<Link to="/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" spineFlairs"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-edgefaceflairs" /><code>{"private "}<Link to="/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" edgeFaceFlairs"}</code> |
+| <Link id="m-spinefaceflairs" /><code>{"private "}<Link to="/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" spineFaceFlairs"}</code> |
+| <Link id="m-spineflairs" /><code>{"private "}<Link to="/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" spineFlairs"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-edgeface" /><code><Link to="/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" EdgeFace { get; }"}</code> |  |
-| <Link id="m-spine" /><code><Link to="/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" Spine { get; }"}</code> |  |
-| <Link id="m-spineface" /><code><Link to="/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" SpineFace { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-edgeface" /><code><Link to="/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" EdgeFace { get; }"}</code> |
+| <Link id="m-spine" /><code><Link to="/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" Spine { get; }"}</code> |
+| <Link id="m-spineface" /><code><Link to="/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" SpineFace { get; }"}</code> |
 
 ## Used in
 

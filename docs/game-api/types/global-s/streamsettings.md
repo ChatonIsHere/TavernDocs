@@ -16,21 +16,21 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StreamSettings(int _width, int _height)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"StreamSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StreamSettings(int _width, int _height)"}</code> |
+| <Link id="m-ctor-2" /><code>{"StreamSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-height" /><code>{"int height"}</code> |  |
-| <Link id="m-width" /><code>{"int width"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-height" /><code>{"int height"}</code> |
+| <Link id="m-width" /><code>{"int width"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-height-2" /><code>{"int Height { get; }"}</code> |  |
-| <Link id="m-width-2" /><code>{"int Width { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-height-2" /><code>{"int Height { get; }"}</code> |
+| <Link id="m-width-2" /><code>{"int Width { get; }"}</code> |

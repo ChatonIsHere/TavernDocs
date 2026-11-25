@@ -22,17 +22,22 @@ A smelter recipe asset: the items that go in, what comes out and how much fuel i
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SmeltingRecipe()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SmeltingRecipe()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |  |
-| <Link id="m-input" /><code>{"private "}<Link to="/game-api/types/alta-items/itemcount">{"ItemCount"}</Link>{"[] input"}</code> |  |
-| <Link id="m-output" /><code>{"private "}<Link to="/game-api/types/alta-items/itemcount">{"ItemCount"}</Link>{"[] output"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-duration" /><code>{"private float duration"}</code> |
+| <Link id="m-input" /><code>{"private "}<Link to="/game-api/types/alta-items/itemcount">{"ItemCount"}</Link>{"[] input"}</code> |
+| <Link id="m-output" /><code>{"private "}<Link to="/game-api/types/alta-items/itemcount">{"ItemCount"}</Link>{"[] output"}</code> |
+
+</details>
 
 ## Properties
 

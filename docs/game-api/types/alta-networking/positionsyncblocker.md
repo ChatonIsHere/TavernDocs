@@ -17,9 +17,9 @@ An **enum** in `Root.Township`, `Alta.Networking`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-docked" /><code>{"Docked = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-docked" /><code>{"Docked = 1"}</code> |
 
 ## Used in
 

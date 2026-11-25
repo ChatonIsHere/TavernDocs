@@ -21,18 +21,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpecificSpawnItemTaskArgument(uint producedHash, "}<Link to="/game-api/types/global-s/specificspawnitemtask-recipefilter">{"SpecificSpawnItemTask.RecipeFilter"}</Link>{" filter)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"SpecificSpawnItemTaskArgument(uint producedHash, bool followedRecipe)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpecificSpawnItemTaskArgument(uint producedHash, "}<Link to="/game-api/types/global-s/specificspawnitemtask-recipefilter">{"SpecificSpawnItemTask.RecipeFilter"}</Link>{" filter)"}</code> |
+| <Link id="m-ctor-2" /><code>{"SpecificSpawnItemTaskArgument(uint producedHash, bool followedRecipe)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |  |
-| <Link id="m-followedrecipe" /><code><Link to="/game-api/types/global-s/specificspawnitemtask-recipefilter">{"SpecificSpawnItemTask.RecipeFilter"}</Link>{" FollowedRecipe { get; }"}</code> |  |
-| <Link id="m-producedhash" /><code>{"uint ProducedHash { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
+| <Link id="m-followedrecipe" /><code><Link to="/game-api/types/global-s/specificspawnitemtask-recipefilter">{"SpecificSpawnItemTask.RecipeFilter"}</Link>{" FollowedRecipe { get; }"}</code> |
+| <Link id="m-producedhash" /><code>{"uint ProducedHash { get; }"}</code> |
 
 ## Used in
 

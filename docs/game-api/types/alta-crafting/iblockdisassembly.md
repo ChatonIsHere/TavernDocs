@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.Crafting`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-candisassemble" /><code>{"bool CanDisassemble { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-candisassemble" /><code>{"bool CanDisassemble { get; }"}</code> |

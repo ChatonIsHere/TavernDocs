@@ -17,25 +17,38 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SlidingDoor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SlidingDoor()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |  |
-| <Link id="m-istransitioning" /><code>{"private bool isTransitioning"}</code> |  |
-| <Link id="m-movementcurve" /><code>{"private AnimationCurve movementCurve"}</code> |  |
-| <Link id="m-movingpart" /><code>{"private Transform movingPart"}</code> |  |
-| <Link id="m-offsetlocation" /><code>{"private Vector3 offsetLocation"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-duration" /><code>{"private float duration"}</code> |
+| <Link id="m-istransitioning" /><code>{"private bool isTransitioning"}</code> |
+| <Link id="m-movementcurve" /><code>{"private AnimationCurve movementCurve"}</code> |
+| <Link id="m-movingpart" /><code>{"private Transform movingPart"}</code> |
+| <Link id="m-offsetlocation" /><code>{"private Vector3 offsetLocation"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-changeopen" /><code>{"private IEnumerator ChangeOpen() (iterator)"}</code> |  |
-| <Link id="m-handlechange" /><code>{"protected override void HandleChange()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+| <Link id="m-handlechange" /><code>{"protected override void HandleChange()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-changeopen" /><code>{"private IEnumerator ChangeOpen() (iterator)"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

@@ -18,21 +18,21 @@ An **abstract class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SenderInput()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SenderInput()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-manager" /><code><Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" Manager { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-manager" /><code><Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" Manager { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-attemptlink" /><code>{"abstract bool AttemptLink("}<Link to="/game-api/types/alta-items/logicvaluesender">{"LogicValueSender"}</Link>{" sender)"}</code> |  |
-| <Link id="m-destroy" /><code>{"abstract void Destroy()"}</code> |  |
-| <Link id="m-drawgizmos" /><code>{"abstract void DrawGizmos(Component receiver)"}</code> |  |
-| <Link id="m-subscribe" /><code>{"abstract void Subscribe(Action listener, bool isCalling = true)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-attemptlink" /><code>{"abstract bool AttemptLink("}<Link to="/game-api/types/alta-items/logicvaluesender">{"LogicValueSender"}</Link>{" sender)"}</code> |
+| <Link id="m-destroy" /><code>{"abstract void Destroy()"}</code> |
+| <Link id="m-drawgizmos" /><code>{"abstract void DrawGizmos(Component receiver)"}</code> |
+| <Link id="m-subscribe" /><code>{"abstract void Subscribe(Action listener, bool isCalling = true)"}</code> |

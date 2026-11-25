@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, `Alta.Networking`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-always" /><code>{"Always = 1"}</code> |  |
-| <Link id="m-ifnull" /><code>{"IfNull = 0"}</code> |  |
-| <Link id="m-never" /><code>{"Never = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-always" /><code>{"Always = 1"}</code> |
+| <Link id="m-ifnull" /><code>{"IfNull = 0"}</code> |
+| <Link id="m-never" /><code>{"Never = 2"}</code> |
 
 ## Used in
 

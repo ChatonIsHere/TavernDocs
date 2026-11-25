@@ -16,24 +16,29 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkAdjacencyConfiguration(float connectionCost, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ChunkAdjacencyConfiguration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkAdjacencyConfiguration(float connectionCost, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |
+| <Link id="m-ctor-2" /><code>{"ChunkAdjacencyConfiguration()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk"}</code> |  |
-| <Link id="m-connectioncost" /><code>{"private float connectionCost"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk"}</code> |
+| <Link id="m-connectioncost" /><code>{"private float connectionCost"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunk-2" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; }"}</code> |  |
-| <Link id="m-connectioncost-2" /><code>{"float ConnectionCost { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chunk-2" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; }"}</code> |
+| <Link id="m-connectioncost-2" /><code>{"float ConnectionCost { get; }"}</code> |
 
 ## Used in
 

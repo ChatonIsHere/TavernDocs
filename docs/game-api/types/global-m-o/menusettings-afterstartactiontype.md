@@ -17,12 +17,12 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-joinlocalserver" /><code>{"JoinLocalServer = 3"}</code> |  |
-| <Link id="m-localserver" /><code>{"LocalServer = 2"}</code> |  |
-| <Link id="m-localtest" /><code>{"LocalTest = 1"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-joinlocalserver" /><code>{"JoinLocalServer = 3"}</code> |
+| <Link id="m-localserver" /><code>{"LocalServer = 2"}</code> |
+| <Link id="m-localtest" /><code>{"LocalTest = 1"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
 
 ## Used in
 

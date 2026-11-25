@@ -18,23 +18,28 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PathExperienceShare()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PathExperienceShare()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-experienceshareselfhold" /><code>{"private float experienceShareSelfHold"}</code> |  |
-| <Link id="m-experiencesharesupporthold" /><code>{"private float experienceShareSupportHold"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-experienceshareselfhold" /><code>{"private float experienceShareSelfHold"}</code> |
+| <Link id="m-experiencesharesupporthold" /><code>{"private float experienceShareSupportHold"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-experienceshareselfhold-2" /><code>{"float ExperienceShareSelfHold { get; }"}</code> |  |
-| <Link id="m-experiencesharesupporthold-2" /><code>{"float ExperienceShareSupportHold { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-experienceshareselfhold-2" /><code>{"float ExperienceShareSelfHold { get; }"}</code> |
+| <Link id="m-experiencesharesupporthold-2" /><code>{"float ExperienceShareSupportHold { get; }"}</code> |
 
 ## Used in
 

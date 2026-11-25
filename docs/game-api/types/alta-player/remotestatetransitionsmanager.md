@@ -17,13 +17,13 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RemoteStateTransitionsManager("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" parentState)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RemoteStateTransitionsManager("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" parentState)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-settostate" /><code>{"override void SetToState("}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" destinationType, "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" preActivationCallback)"}</code> |  |
-| <Link id="m-triggertransition" /><code>{"override void TriggerTransition("}<Link to="/game-api/types/alta-player/iplayerstatetransition">{"IPlayerStateTransition"}</Link>{" stateTransition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-settostate" /><code>{"override void SetToState("}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" destinationType, "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" preActivationCallback)"}</code> |
+| <Link id="m-triggertransition" /><code>{"override void TriggerTransition("}<Link to="/game-api/types/alta-player/iplayerstatetransition">{"IPlayerStateTransition"}</Link>{" stateTransition)"}</code> |

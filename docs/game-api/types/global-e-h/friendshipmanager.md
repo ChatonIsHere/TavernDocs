@@ -18,16 +18,21 @@ Each `Player` has one. Holds that player's friend list, and on the client, wheth
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FriendshipManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FriendshipManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-player" /><code>{"private int player"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-player" /><code>{"private int player"}</code> |
+
+</details>
 
 ## Properties
 
@@ -36,9 +41,17 @@ Each `Player` has one. Holds that player's friend list, and on the client, wheth
 | <Link id="m-friends" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> Friends { get; }"}</code> | The friends' user info. Entries added by `LocalStatusUpdate` have the placeholder name `[temp]`. |
 | <Link id="m-isfriend" /><code>{"bool IsFriend { get; private set; }"}</code> | Whether this player is friends with the local player. Used for name boards. |
 | <Link id="m-isupdating" /><code>{"bool IsUpdating { get; private set; }"}</code> | True while `GetFriends` is waiting on the API. |
-| <Link id="m-friendsids" /><code>{"private HashSet<int> friendsIDs { get; }"}</code> |  |
-| <Link id="m-incomingrequestsids" /><code>{"private HashSet<int> incomingRequestsIDs { get; }"}</code> |  |
-| <Link id="m-outgoingrequestsids" /><code>{"private HashSet<int> outgoingRequestsIDs { get; }"}</code> |  |
+
+<details>
+<summary>3 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-friendsids" /><code>{"private HashSet<int> friendsIDs { get; }"}</code> |
+| <Link id="m-incomingrequestsids" /><code>{"private HashSet<int> incomingRequestsIDs { get; }"}</code> |
+| <Link id="m-outgoingrequestsids" /><code>{"private HashSet<int> outgoingRequestsIDs { get; }"}</code> |
+
+</details>
 
 ## Events
 

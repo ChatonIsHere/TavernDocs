@@ -21,9 +21,9 @@ Save data for a `ChisellingDeck`, the carpentry chiselling station. The deck sav
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChisellingDeckSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChisellingDeckSaveData()"}</code> |
 
 ## Fields
 

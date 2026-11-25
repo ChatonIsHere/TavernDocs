@@ -19,14 +19,14 @@ The struct `Walker.Updated` passes.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forwardspeed" /><code>{"float ForwardSpeed"}</code> |  |
-| <Link id="m-isfinalstretch" /><code>{"bool IsFinalStretch"}</code> |  |
-| <Link id="m-isgrounded" /><code>{"bool IsGrounded"}</code> |  |
-| <Link id="m-ispivoting" /><code>{"bool IsPivoting"}</code> |  |
-| <Link id="m-turnspeed" /><code>{"float TurnSpeed"}</code> |  |
-| <Link id="m-velocity" /><code>{"Vector3 Velocity"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-forwardspeed" /><code>{"float ForwardSpeed"}</code> |
+| <Link id="m-isfinalstretch" /><code>{"bool IsFinalStretch"}</code> |
+| <Link id="m-isgrounded" /><code>{"bool IsGrounded"}</code> |
+| <Link id="m-ispivoting" /><code>{"bool IsPivoting"}</code> |
+| <Link id="m-turnspeed" /><code>{"float TurnSpeed"}</code> |
+| <Link id="m-velocity" /><code>{"Vector3 Velocity"}</code> |
 
 ## Used in
 

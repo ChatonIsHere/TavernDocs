@@ -20,9 +20,9 @@ Base for a component that syncs a list of child items (woodcut points, forged po
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ChildSyncableCollectionBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ChildSyncableCollectionBase()"}</code> |
 
 ## Fields
 

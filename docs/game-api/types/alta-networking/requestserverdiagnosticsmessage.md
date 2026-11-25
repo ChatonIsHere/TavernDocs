@@ -16,19 +16,32 @@ A **static class** in `Root.Township`, `Alta.Networking`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isrequesting" /><code>{"private static bool isRequesting"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-isrequesting" /><code>{"private static bool isRequesting"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isrequesting-2" /><code>{"static bool IsRequesting { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isrequesting-2" /><code>{"static bool IsRequesting { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-set" /><code>{"static void Set(bool isRequestingServerDiagnostics)"}</code> |  |
-| <Link id="m-serialize" /><code>{"internal static void Serialize("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-set" /><code>{"static void Set(bool isRequestingServerDiagnostics)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"internal static void Serialize("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>

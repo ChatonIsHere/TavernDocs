@@ -19,9 +19,9 @@ Obsolete analytics record of the player's hardware, filled from Unity's `SystemI
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DeviceStatRecord()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DeviceStatRecord()"}</code> |
 
 ## Properties
 

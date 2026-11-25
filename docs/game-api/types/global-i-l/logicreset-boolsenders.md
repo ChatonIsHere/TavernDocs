@@ -17,10 +17,10 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sender" /><code><Link to="/game-api/types/alta-items/boolsenderinput">{"BoolSenderInput"}</Link>{" sender"}</code> |  |
-| <Link id="m-value" /><code>{"bool value"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-sender" /><code><Link to="/game-api/types/alta-items/boolsenderinput">{"BoolSenderInput"}</Link>{" sender"}</code> |
+| <Link id="m-value" /><code>{"bool value"}</code> |
 
 ## Used in
 

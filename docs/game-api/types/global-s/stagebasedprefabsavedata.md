@@ -19,14 +19,14 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StageBasedPrefabSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StageBasedPrefabSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentstageentity" /><code>{"int currentStageEntity"}</code> |  |
-| <Link id="m-definition" /><code><Link to="/game-api/types/global-p/prefabstagedefinition">{"PrefabStageDefinition"}</Link>{" definition"}</code> |  |
-| <Link id="m-stageindex" /><code>{"int stageIndex"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentstageentity" /><code>{"int currentStageEntity"}</code> |
+| <Link id="m-definition" /><code><Link to="/game-api/types/global-p/prefabstagedefinition">{"PrefabStageDefinition"}</Link>{" definition"}</code> |
+| <Link id="m-stageindex" /><code>{"int stageIndex"}</code> |

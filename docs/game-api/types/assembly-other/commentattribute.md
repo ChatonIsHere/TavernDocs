@@ -18,14 +18,14 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CommentAttribute(string message, float numberOfLines = 3, "}<Link to="/game-api/types/assembly-other/commentattribute-messagetype">{"CommentAttribute.MessageType"}</Link>{" messageType = 0)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CommentAttribute(string message, float numberOfLines = 3, "}<Link to="/game-api/types/assembly-other/commentattribute-messagetype">{"CommentAttribute.MessageType"}</Link>{" messageType = 0)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-message" /><code>{"string Message { get; private set; }"}</code> |  |
-| <Link id="m-numberoflines" /><code>{"float NumberOfLines { get; private set; }"}</code> |  |
-| <Link id="m-typeofmessage" /><code><Link to="/game-api/types/assembly-other/commentattribute-messagetype">{"CommentAttribute.MessageType"}</Link>{" TypeOfMessage { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-message" /><code>{"string Message { get; private set; }"}</code> |
+| <Link id="m-numberoflines" /><code>{"float NumberOfLines { get; private set; }"}</code> |
+| <Link id="m-typeofmessage" /><code><Link to="/game-api/types/assembly-other/commentattribute-messagetype">{"CommentAttribute.MessageType"}</Link>{" TypeOfMessage { get; private set; }"}</code> |

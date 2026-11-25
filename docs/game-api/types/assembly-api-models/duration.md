@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Duration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Duration()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-months" /><code>{"int Months { get; }"}</code> |  |
-| <Link id="m-period" /><code>{"int Period { get; set; }"}</code> |  |
-| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/durationtype">{"DurationType"}</Link>{" Type { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-months" /><code>{"int Months { get; }"}</code> |
+| <Link id="m-period" /><code>{"int Period { get; set; }"}</code> |
+| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/durationtype">{"DurationType"}</Link>{" Type { get; set; }"}</code> |
 
 ## Used in
 

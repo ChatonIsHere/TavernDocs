@@ -17,14 +17,14 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ControllerMod()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ControllerMod()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> |  |
-| <Link id="m-runmod" /><code>{"protected abstract void RunMod("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |  |
-| <Link id="m-terminate" /><code>{"protected override void Terminate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> |
+| <Link id="m-runmod" /><code>{"protected abstract void RunMod("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |
+| <Link id="m-terminate" /><code>{"protected override void Terminate()"}</code> |

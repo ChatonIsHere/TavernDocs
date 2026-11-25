@@ -17,26 +17,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BudgetedData(string moduleName)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BudgetedData(string moduleName)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modulename" /><code>{"string moduleName"}</code> |  |
-| <Link id="m-registeredcount" /><code>{"int registeredCount"}</code> |  |
-| <Link id="m-totalmilliseconds" /><code>{"double totalMilliseconds"}</code> |  |
-| <Link id="m-totalrecordings" /><code>{"int totalRecordings"}</code> |  |
-| <Link id="m-averagemilliseconds" /><code>{"private double averageMilliseconds"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modulename" /><code>{"string moduleName"}</code> |
+| <Link id="m-registeredcount" /><code>{"int registeredCount"}</code> |
+| <Link id="m-totalmilliseconds" /><code>{"double totalMilliseconds"}</code> |
+| <Link id="m-totalrecordings" /><code>{"int totalRecordings"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-averagemilliseconds" /><code>{"private double averageMilliseconds"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |  |
-| <Link id="m-updateaverage" /><code>{"void UpdateAverage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> |
+| <Link id="m-updateaverage" /><code>{"void UpdateAverage()"}</code> |
 
 ## Used in
 

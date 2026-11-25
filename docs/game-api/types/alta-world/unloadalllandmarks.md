@@ -18,12 +18,12 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UnloadAllLandmarks()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UnloadAllLandmarks()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> |

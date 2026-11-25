@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, `Alta.Map`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-aware" /><code>{"Aware = 1"}</code> |  |
-| <Link id="m-discovered" /><code>{"Discovered = 2"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-aware" /><code>{"Aware = 1"}</code> |
+| <Link id="m-discovered" /><code>{"Discovered = 2"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
 
 ## Used in
 

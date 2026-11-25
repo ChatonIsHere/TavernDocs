@@ -20,16 +20,21 @@ A pooled object that releases itself back to its pool a set time after it is req
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DestroyByTime()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DestroyByTime()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-destroycoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" destroyCoroutine"}</code> |  |
-| <Link id="m-time" /><code>{"private float time"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroycoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" destroyCoroutine"}</code> |
+| <Link id="m-time" /><code>{"private float time"}</code> |
+
+</details>
 
 ## Properties
 

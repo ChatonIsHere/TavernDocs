@@ -16,12 +16,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerSaveFileResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerSaveFileResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-urls" /><code>{"IEnumerable<string> Urls { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-urls" /><code>{"IEnumerable<string> Urls { get; set; }"}</code> |

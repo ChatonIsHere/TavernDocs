@@ -17,9 +17,17 @@ A **static class** in `Root.Township`, `Alta.Console`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addnullableconverters" /><code>{"static void AddNullableConverters(JsonSerializerSettings settings)"}</code> |  |
-| <Link id="m-createnullablewrapper" /><code>{"private static JsonConverter CreateNullableWrapper(Type type)"}</code> |  |
-| <Link id="m-isjsonconverteroft" /><code>{"private static bool IsJsonConverterOfT(Type type)"}</code> |  |
-| <Link id="m-trygetjsonconverterstruct" /><code>{"private static bool TryGetJsonConverterStruct(Type type, out Type structType)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addnullableconverters" /><code>{"static void AddNullableConverters(JsonSerializerSettings settings)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-createnullablewrapper" /><code>{"private static JsonConverter CreateNullableWrapper(Type type)"}</code> |
+| <Link id="m-isjsonconverteroft" /><code>{"private static bool IsJsonConverterOfT(Type type)"}</code> |
+| <Link id="m-trygetjsonconverterstruct" /><code>{"private static bool TryGetJsonConverterStruct(Type type, out Type structType)"}</code> |
+
+</details>

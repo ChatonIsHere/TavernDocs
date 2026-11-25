@@ -17,19 +17,19 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-offset" /><code><Link to="/game-api/types/global-m-o/miningbasegenerator-point">{"MiningBaseGenerator.Point"}</Link>{" offset"}</code> |  |
-| <Link id="m-part" /><code><Link to="/game-api/types/global-s/structurepart">{"StructurePart"}</Link>{" part"}</code> |  |
-| <Link id="m-pathcount" /><code>{"int pathCount"}</code> |  |
-| <Link id="m-rotation" /><code>{"int rotation"}</code> |  |
-| <Link id="m-weighting" /><code>{"float weighting"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-offset" /><code><Link to="/game-api/types/global-m-o/miningbasegenerator-point">{"MiningBaseGenerator.Point"}</Link>{" offset"}</code> |
+| <Link id="m-part" /><code><Link to="/game-api/types/global-s/structurepart">{"StructurePart"}</Link>{" part"}</code> |
+| <Link id="m-pathcount" /><code>{"int pathCount"}</code> |
+| <Link id="m-rotation" /><code>{"int rotation"}</code> |
+| <Link id="m-weighting" /><code>{"float weighting"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
 
 ## Used in
 

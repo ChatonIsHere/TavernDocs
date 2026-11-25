@@ -20,23 +20,31 @@ One network traffic counter for the profiler. Reads a running total from a funct
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportStatisticField(Func<int> getValueFunction, "}<Link to="/game-api/types/alta-utilities/networktransportstatistictype">{"NetworkTransportStatisticType"}</Link>{" statisticType = 0)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkTransportStatisticField(Func<int> getValueFunction, "}<Link to="/game-api/types/alta-utilities/networktransportstatistictype">{"NetworkTransportStatisticType"}</Link>{" statisticType = 0)"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentvalue" /><code>{"private int currentValue"}</code> |  |
-| <Link id="m-getvaluefunction" /><code>{"private Func<int> getValueFunction"}</code> |  |
 | <Link id="m-numberpaddingwidth" /><code>{"protected const int NumberPaddingWidth"}</code> | Column width (10) used to pad numbers in summaries. |
-| <Link id="m-oldbytevalue" /><code>{"private int oldByteValue"}</code> |  |
-| <Link id="m-startvalue" /><code>{"private int startValue"}</code> |  |
-| <Link id="m-statistictype" /><code>{"private "}<Link to="/game-api/types/alta-utilities/networktransportstatistictype">{"NetworkTransportStatisticType"}</Link>{" statisticType"}</code> |  |
 | <Link id="m-stringpaddingwidth" /><code>{"protected const int StringPaddingWidth"}</code> | Column width (30) used to pad labels in summaries. |
-| <Link id="m-value" /><code>{"private int value"}</code> |  |
-| <Link id="m-valueperlastsecond" /><code>{"private float valuePerLastSecond"}</code> |  |
+
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentvalue" /><code>{"private int currentValue"}</code> |
+| <Link id="m-getvaluefunction" /><code>{"private Func<int> getValueFunction"}</code> |
+| <Link id="m-oldbytevalue" /><code>{"private int oldByteValue"}</code> |
+| <Link id="m-startvalue" /><code>{"private int startValue"}</code> |
+| <Link id="m-statistictype" /><code>{"private "}<Link to="/game-api/types/alta-utilities/networktransportstatistictype">{"NetworkTransportStatisticType"}</Link>{" statisticType"}</code> |
+| <Link id="m-value" /><code>{"private int value"}</code> |
+| <Link id="m-valueperlastsecond" /><code>{"private float valuePerLastSecond"}</code> |
+
+</details>
 
 ## Properties
 

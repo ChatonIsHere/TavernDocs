@@ -20,9 +20,9 @@ A list for console answers: one item per line in a text console, and a JSON arra
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Lines(IEnumerable<T> items)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Lines(IEnumerable<T> items)"}</code> |
 
 ## Methods
 

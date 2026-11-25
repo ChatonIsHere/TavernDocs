@@ -18,27 +18,32 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Finger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Finger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isthumb" /><code>{"private bool isThumb"}</code> |  |
-| <Link id="m-joints" /><code>{"private "}<Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{"[] joints"}</code> |  |
-| <Link id="m-name" /><code>{"private string name"}</code> |  |
-| <Link id="m-skeletalinputcorrection" /><code>{"private AnimationCurve skeletalInputCorrection"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isthumb" /><code>{"private bool isThumb"}</code> |
+| <Link id="m-joints" /><code>{"private "}<Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{"[] joints"}</code> |
+| <Link id="m-name" /><code>{"private string name"}</code> |
+| <Link id="m-skeletalinputcorrection" /><code>{"private AnimationCurve skeletalInputCorrection"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isthumb-2" /><code>{"bool IsThumb { get; }"}</code> |  |
-| <Link id="m-joints-2" /><code><Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{"[] Joints { get; }"}</code> |  |
-| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-skeletalinputcorrection-2" /><code>{"AnimationCurve SkeletalInputCorrection { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isthumb-2" /><code>{"bool IsThumb { get; }"}</code> |
+| <Link id="m-joints-2" /><code><Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{"[] Joints { get; }"}</code> |
+| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> |
+| <Link id="m-skeletalinputcorrection-2" /><code>{"AnimationCurve SkeletalInputCorrection { get; }"}</code> |
 
 ## Used in
 

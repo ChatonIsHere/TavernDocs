@@ -17,16 +17,16 @@ A **protected class** in `Root.Township`, `Alta.Populations`. Reach it through a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedChild(int spawnPointIndex)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SerializedChild(int spawnPointIndex)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-child" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Child { get; set; }"}</code> |  |
-| <Link id="m-spawnpointindex" /><code>{"int SpawnPointIndex { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-child" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Child { get; set; }"}</code> |
+| <Link id="m-spawnpointindex" /><code>{"int SpawnPointIndex { get; }"}</code> |
 
 ## Used in
 

@@ -17,10 +17,10 @@ An **enum** in `Alta.Serialization.Runtime`, `Alta.Serialization`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ascii" /><code>{"ASCII = 0"}</code> |  |
-| <Link id="m-utf8" /><code>{"UTF8 = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ascii" /><code>{"ASCII = 0"}</code> |
+| <Link id="m-utf8" /><code>{"UTF8 = 1"}</code> |
 
 ## Used in
 

@@ -17,13 +17,18 @@ A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DependencyInjectionEditorInitializer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DependencyInjectionEditorInitializer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-projectlifetimescope" /><code>{"private "}<Link to="/game-api/types/assembly-other/projectlifetimescope">{"ProjectLifetimeScope"}</Link>{" projectLifetimeScope"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-projectlifetimescope" /><code>{"private "}<Link to="/game-api/types/assembly-other/projectlifetimescope">{"ProjectLifetimeScope"}</Link>{" projectLifetimeScope"}</code> |
+
+</details>

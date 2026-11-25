@@ -17,12 +17,12 @@ An **enum** in `Root.Township`, `Alta.Intelligence`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forward" /><code>{"Forward = 0"}</code> |  |
-| <Link id="m-forwardxztargety" /><code>{"ForwardXZTargetY = 2"}</code> |  |
-| <Link id="m-forwardytargetxz" /><code>{"ForwardYTargetXZ = 3"}</code> |  |
-| <Link id="m-target" /><code>{"Target = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-forward" /><code>{"Forward = 0"}</code> |
+| <Link id="m-forwardxztargety" /><code>{"ForwardXZTargetY = 2"}</code> |
+| <Link id="m-forwardytargetxz" /><code>{"ForwardYTargetXZ = 3"}</code> |
+| <Link id="m-target" /><code>{"Target = 1"}</code> |
 
 ## Used in
 

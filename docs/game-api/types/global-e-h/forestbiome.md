@@ -21,24 +21,29 @@ A forest generation biome asset, with weighting and noise settings used to score
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ForestBiome()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ForestBiome()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-biomedefinition" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" biomeDefinition"}</code> |  |
-| <Link id="m-color" /><code>{"private Color color"}</code> |  |
-| <Link id="m-maximumradius" /><code>{"private float maximumRadius"}</code> |  |
-| <Link id="m-minimumradius" /><code>{"private float minimumRadius"}</code> |  |
-| <Link id="m-parent" /><code>{"private "}<Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{" parent"}</code> |  |
-| <Link id="m-parents" /><code>{"private "}<Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{"[] parents"}</code> |  |
-| <Link id="m-randomextraweight" /><code>{"private float randomExtraWeight"}</code> |  |
-| <Link id="m-simplexscale" /><code>{"private float simplexScale"}</code> |  |
-| <Link id="m-weighting" /><code>{"private float weighting"}</code> |  |
-| <Link id="m-woffset" /><code>{"private int wOffset"}</code> |  |
+<details>
+<summary>10 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-biomedefinition" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" biomeDefinition"}</code> |
+| <Link id="m-color" /><code>{"private Color color"}</code> |
+| <Link id="m-maximumradius" /><code>{"private float maximumRadius"}</code> |
+| <Link id="m-minimumradius" /><code>{"private float minimumRadius"}</code> |
+| <Link id="m-parent" /><code>{"private "}<Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{" parent"}</code> |
+| <Link id="m-parents" /><code>{"private "}<Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{"[] parents"}</code> |
+| <Link id="m-randomextraweight" /><code>{"private float randomExtraWeight"}</code> |
+| <Link id="m-simplexscale" /><code>{"private float simplexScale"}</code> |
+| <Link id="m-weighting" /><code>{"private float weighting"}</code> |
+| <Link id="m-woffset" /><code>{"private int wOffset"}</code> |
+
+</details>
 
 ## Properties
 

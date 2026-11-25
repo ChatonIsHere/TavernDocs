@@ -16,10 +16,10 @@ A **struct** in `Root.Township`, `Alta.Utilities`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-position" /><code>{"Vector3 Position"}</code> |  |
-| <Link id="m-rotation" /><code>{"Quaternion Rotation"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-position" /><code>{"Vector3 Position"}</code> |
+| <Link id="m-rotation" /><code>{"Quaternion Rotation"}</code> |
 
 ## Used in
 

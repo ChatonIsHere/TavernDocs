@@ -20,15 +20,20 @@ A micro tutorial step completed by player events, with a setting for how far bac
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerEventStep()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerEventStep()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playereventsearchdepth" /><code>{"private int playerEventSearchDepth"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-playereventsearchdepth" /><code>{"private int playerEventSearchDepth"}</code> |
+
+</details>
 
 ## Properties
 

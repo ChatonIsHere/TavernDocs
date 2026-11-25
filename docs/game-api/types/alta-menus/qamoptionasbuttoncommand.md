@@ -17,19 +17,32 @@ A **class** in `Root.Township`, `Alta.Menu`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"QamOptionAsButtonCommand()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"QamOptionAsButtonCommand()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-action" /><code>{"private "}<Link to="/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" action"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-action" /><code>{"private "}<Link to="/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" action"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-runcommandonclient" /><code>{"override void RunCommandOnClient()"}</code> |  |
-| <Link id="m-getcontrollerhack" /><code>{"private static "}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" GetControllerHack()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-runcommandonclient" /><code>{"override void RunCommandOnClient()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getcontrollerhack" /><code>{"private static "}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" GetControllerHack()"}</code> |
+
+</details>

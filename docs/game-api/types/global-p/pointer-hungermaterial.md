@@ -17,25 +17,30 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HungerMaterial()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HungerMaterial()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-color" /><code>{"private Color color"}</code> |  |
-| <Link id="m-hungerlevel" /><code>{"private int hungerLevel"}</code> |  |
-| <Link id="m-name" /><code>{"private string name"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-color" /><code>{"private Color color"}</code> |
+| <Link id="m-hungerlevel" /><code>{"private int hungerLevel"}</code> |
+| <Link id="m-name" /><code>{"private string name"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-color-2" /><code>{"Color Color { get; }"}</code> |  |
-| <Link id="m-hungerlevel-2" /><code>{"int HungerLevel { get; }"}</code> |  |
-| <Link id="m-name-2" /><code>{"string Name { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-color-2" /><code>{"Color Color { get; }"}</code> |
+| <Link id="m-hungerlevel-2" /><code>{"int HungerLevel { get; }"}</code> |
+| <Link id="m-name-2" /><code>{"string Name { get; set; }"}</code> |
 
 ## Used in
 

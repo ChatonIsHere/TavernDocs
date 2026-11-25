@@ -16,12 +16,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BooleanRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BooleanRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-value" /><code>{"bool Value { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-value" /><code>{"bool Value { get; set; }"}</code> |

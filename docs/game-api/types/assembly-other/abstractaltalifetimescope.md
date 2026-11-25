@@ -18,24 +18,37 @@ An **abstract class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected AbstractAltaLifetimeScope()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected AbstractAltaLifetimeScope()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-profilesession" /><code>{"private "}<Link to="/game-api/types/assembly-other/profilingsession">{"ProfilingSession"}</Link>{" profileSession"}</code> |  |
-| <Link id="m-typename" /><code>{"private string typeName"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-profilesession" /><code>{"private "}<Link to="/game-api/types/assembly-other/profilingsession">{"ProfilingSession"}</Link>{" profileSession"}</code> |
+| <Link id="m-typename" /><code>{"private string typeName"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logstartup" /><code>{"void LogStartup()"}</code> |  |
-| <Link id="m-configure" /><code>{"protected sealed override void Configure(IContainerBuilder builder)"}</code> |  |
-| <Link id="m-configurescope" /><code>{"protected abstract void ConfigureScope(IContainerBuilder builder)"}</code> |  |
-| <Link id="m-startprofiling" /><code>{"private void StartProfiling()"}</code> |  |
-| <Link id="m-stopprofiling" /><code>{"private void StopProfiling()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-logstartup" /><code>{"void LogStartup()"}</code> |
+| <Link id="m-configure" /><code>{"protected sealed override void Configure(IContainerBuilder builder)"}</code> |
+| <Link id="m-configurescope" /><code>{"protected abstract void ConfigureScope(IContainerBuilder builder)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-startprofiling" /><code>{"private void StartProfiling()"}</code> |
+| <Link id="m-stopprofiling" /><code>{"private void StopProfiling()"}</code> |
+
+</details>

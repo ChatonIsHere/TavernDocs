@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-validate" /><code>{"static void Validate("}<Link to="/game-api/types/global-i-l/ialtaeventvalidation">{"IAltaEventValidation"}</Link>{" altaEvent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-validate" /><code>{"static void Validate("}<Link to="/game-api/types/global-i-l/ialtaeventvalidation">{"IAltaEventValidation"}</Link>{" altaEvent)"}</code> |

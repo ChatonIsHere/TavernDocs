@@ -17,12 +17,12 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveBlockCanceleableWander()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActiveBlockCanceleableWander()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |

@@ -22,9 +22,9 @@ A mod version, exactly `MAJOR.MINOR.PATCH` in ASCII digits with no pre-release o
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModVersion(int major, int minor, int patch)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModVersion(int major, int minor, int patch)"}</code> |
 
 ## Properties
 
@@ -46,7 +46,15 @@ A mod version, exactly `MAJOR.MINOR.PATCH` in ASCII digits with no pre-release o
 | <Link id="m-parse" /><code>{"static "}<Link to="/tavernlib-api/types/backend-mods/modversion">{"ModVersion"}</Link>{" Parse(string v)"}</code> | Parses three dot-separated digit runs after trimming spaces. Throws `ModManagerException` for anything else. |
 | <Link id="m-tostring" /><code>{"override string ToString()"}</code> | The version as `major.minor.patch`. |
 | <Link id="m-tryparse" /><code>{"static bool TryParse(string v, out "}<Link to="/tavernlib-api/types/backend-mods/modversion">{"ModVersion"}</Link>{" result)"}</code> | The same as `Parse`, returning false instead of throwing. |
-| <Link id="m-segment" /><code>{"private static int Segment(string v, string part)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-segment" /><code>{"private static int Segment(string v, string part)"}</code> |
+
+</details>
 
 ## Used in
 

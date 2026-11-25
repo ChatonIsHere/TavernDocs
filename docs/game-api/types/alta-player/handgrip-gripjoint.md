@@ -20,32 +20,40 @@ One finger joint of a hand grip. It curls in steps until it touches a grabbed ob
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GripJoint()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"GripJoint("}<Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" hand, "}<Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{" joint, Transform transform, "}<Link to="/game-api/types/alta-player/handgripconfiguration-rotationsnapshots">{"HandGripConfiguration.RotationSnapshots"}</Link>{" rotations)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GripJoint()"}</code> |
+| <Link id="m-ctor-2" /><code>{"GripJoint("}<Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" hand, "}<Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{" joint, Transform transform, "}<Link to="/game-api/types/alta-player/handgripconfiguration-rotationsnapshots">{"HandGripConfiguration.RotationSnapshots"}</Link>{" rotations)"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-worldmatrix" /><code>{"Matrix4x4 worldMatrix"}</code> | The joint's world matrix, worked out while curling. |
-| <Link id="m-axis" /><code>{"private Vector3 axis"}</code> |  |
-| <Link id="m-closedrotation" /><code>{"private Quaternion closedRotation"}</code> |  |
 | <Link id="m-curlprogress" /><code>{"protected float curlProgress"}</code> | How far the joint has curled, in degrees. |
-| <Link id="m-defaultrotation" /><code>{"private Quaternion defaultRotation"}</code> |  |
 | <Link id="m-hand" /><code>{"protected "}<Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" hand"}</code> | The hand grip this joint belongs to. |
-| <Link id="m-ishit" /><code>{"private bool isHit"}</code> |  |
 | <Link id="m-joint" /><code>{"protected "}<Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{" joint"}</code> | The joint's configuration: length, radius, curl step and maximum curl. |
-| <Link id="m-lastcurlmultiplier" /><code>{"private int lastCurlMultiplier"}</code> |  |
-| <Link id="m-layermask" /><code>{"private int layerMask"}</code> |  |
 | <Link id="m-local" /><code>{"protected Matrix4x4 local"}</code> | The joint's default local matrix. |
 | <Link id="m-modifiedlocal" /><code>{"protected Matrix4x4 modifiedLocal"}</code> | The local matrix after curling. |
-| <Link id="m-openrotation" /><code>{"private Quaternion openRotation"}</code> |  |
-| <Link id="m-savedrotation" /><code>{"private Quaternion savedRotation"}</code> |  |
-| <Link id="m-sidemultiplier" /><code>{"private int sideMultiplier"}</code> |  |
-| <Link id="m-splaidrotation" /><code>{"private Quaternion splaidRotation"}</code> |  |
 | <Link id="m-transform" /><code>{"protected Transform transform"}</code> | The joint's bone transform. |
+
+<details>
+<summary>10 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-axis" /><code>{"private Vector3 axis"}</code> |
+| <Link id="m-closedrotation" /><code>{"private Quaternion closedRotation"}</code> |
+| <Link id="m-defaultrotation" /><code>{"private Quaternion defaultRotation"}</code> |
+| <Link id="m-ishit" /><code>{"private bool isHit"}</code> |
+| <Link id="m-lastcurlmultiplier" /><code>{"private int lastCurlMultiplier"}</code> |
+| <Link id="m-layermask" /><code>{"private int layerMask"}</code> |
+| <Link id="m-openrotation" /><code>{"private Quaternion openRotation"}</code> |
+| <Link id="m-savedrotation" /><code>{"private Quaternion savedRotation"}</code> |
+| <Link id="m-sidemultiplier" /><code>{"private int sideMultiplier"}</code> |
+| <Link id="m-splaidrotation" /><code>{"private Quaternion splaidRotation"}</code> |
+
+</details>
 
 ## Methods
 

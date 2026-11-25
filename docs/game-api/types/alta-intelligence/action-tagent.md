@@ -21,9 +21,9 @@ Base for a creature action: its settings and the scoring rules the `ActionDecide
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Action()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Action()"}</code> |
 
 ## Properties
 

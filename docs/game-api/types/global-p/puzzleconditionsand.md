@@ -17,20 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PuzzleConditionsAND()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PuzzleConditionsAND()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-conditions" /><code>{"private "}<Link to="/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{"[] conditions"}</code> |  |
-| <Link id="m-falsecount" /><code>{"private int falseCount"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-conditions" /><code>{"private "}<Link to="/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{"[] conditions"}</code> |
+| <Link id="m-falsecount" /><code>{"private int falseCount"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-conditionchanged" /><code>{"private void ConditionChanged("}<Link to="/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{" condition)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-conditionchanged" /><code>{"private void ConditionChanged("}<Link to="/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{" condition)"}</code> |
+
+</details>

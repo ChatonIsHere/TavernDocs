@@ -17,26 +17,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NamedProgressBar()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NamedProgressBar()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-variableid" /><code>{"private int variableID"}</code> |  |
-| <Link id="m-variablename" /><code>{"private string variableName"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-variableid" /><code>{"private int variableID"}</code> |
+| <Link id="m-variablename" /><code>{"private string variableName"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-progressvariable" /><code>{"override int ProgressVariable { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-progressvariable" /><code>{"override int ProgressVariable { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
-| <Link id="m-setup" /><code>{"protected override void Setup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |
+| <Link id="m-setup" /><code>{"protected override void Setup()"}</code> |

@@ -19,22 +19,27 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImportSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImportSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filters" /><code>{"private "}<Link to="/game-api/types/global-i-l/importsettings-filter">{"ImportSettings.Filter"}</Link>{"[] filters"}</code> |  |
-| <Link id="m-settingsmap" /><code>{"private static Dictionary<string, "}<Link to="/game-api/types/global-i-l/importsettings">{"ImportSettings"}</Link>{"> settingsMap"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-filters" /><code>{"private "}<Link to="/game-api/types/global-i-l/importsettings-filter">{"ImportSettings.Filter"}</Link>{"[] filters"}</code> |
+| <Link id="m-settingsmap" /><code>{"private static Dictionary<string, "}<Link to="/game-api/types/global-i-l/importsettings">{"ImportSettings"}</Link>{"> settingsMap"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clearmap" /><code>{"static void ClearMap()"}</code> |  |
-| <Link id="m-find" /><code><Link to="/game-api/types/global-i-l/importsettings-platformsettings">{"ImportSettings.PlatformSettings"}</Link>{" Find(string assetPath, "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime, "}<Link to="/game-api/types/global-i-l/importsettings-type">{"ImportSettings.Type"}</Link>{" type)"}</code> |  |
-| <Link id="m-getsettings" /><code>{"static "}<Link to="/game-api/types/global-i-l/importsettings">{"ImportSettings"}</Link>{" GetSettings(string path)"}</code> |  |
-| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clearmap" /><code>{"static void ClearMap()"}</code> |
+| <Link id="m-find" /><code><Link to="/game-api/types/global-i-l/importsettings-platformsettings">{"ImportSettings.PlatformSettings"}</Link>{" Find(string assetPath, "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime, "}<Link to="/game-api/types/global-i-l/importsettings-type">{"ImportSettings.Type"}</Link>{" type)"}</code> |
+| <Link id="m-getsettings" /><code>{"static "}<Link to="/game-api/types/global-i-l/importsettings">{"ImportSettings"}</Link>{" GetSettings(string path)"}</code> |
+| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime)"}</code> |

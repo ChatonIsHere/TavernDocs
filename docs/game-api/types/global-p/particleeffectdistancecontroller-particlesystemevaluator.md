@@ -17,23 +17,28 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ParticleSystemEvaluator(ParticleSystem system, "}<Link to="/game-api/types/global-p/particleeffectdistancecontroller">{"ParticleEffectDistanceController"}</Link>{" controller)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ParticleSystemEvaluator(ParticleSystem system, "}<Link to="/game-api/types/global-p/particleeffectdistancecontroller">{"ParticleEffectDistanceController"}</Link>{" controller)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-controller" /><code>{"private "}<Link to="/game-api/types/global-p/particleeffectdistancecontroller">{"ParticleEffectDistanceController"}</Link>{" controller"}</code> |  |
-| <Link id="m-particles" /><code>{"private ParticleSystem.Particle[] particles"}</code> |  |
-| <Link id="m-system" /><code>{"private ParticleSystem system"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-controller" /><code>{"private "}<Link to="/game-api/types/global-p/particleeffectdistancecontroller">{"ParticleEffectDistanceController"}</Link>{" controller"}</code> |
+| <Link id="m-particles" /><code>{"private ParticleSystem.Particle[] particles"}</code> |
+| <Link id="m-system" /><code>{"private ParticleSystem system"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-evaluate" /><code>{"void Evaluate(Vector3 position)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-evaluate" /><code>{"void Evaluate(Vector3 position)"}</code> |
 
 ## Used in
 

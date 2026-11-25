@@ -18,9 +18,14 @@ A **static class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-exact" /><code>{"private static void Exact(Vector3 rotation)"}</code> |  |
-| <Link id="m-pitch" /><code>{"private static void Pitch(float degrees = 90)"}</code> |  |
-| <Link id="m-roll" /><code>{"private static void Roll(float degrees = 90)"}</code> |  |
-| <Link id="m-yaw" /><code>{"private static void Yaw(float degrees = 90)"}</code> |  |
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-exact" /><code>{"private static void Exact(Vector3 rotation)"}</code> |
+| <Link id="m-pitch" /><code>{"private static void Pitch(float degrees = 90)"}</code> |
+| <Link id="m-roll" /><code>{"private static void Roll(float degrees = 90)"}</code> |
+| <Link id="m-yaw" /><code>{"private static void Yaw(float degrees = 90)"}</code> |
+
+</details>

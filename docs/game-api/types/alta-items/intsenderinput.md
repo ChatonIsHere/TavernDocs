@@ -20,6 +20,6 @@ A serialized link from a logic receiver to a `LogicIntSender`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"IntSenderInput()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"IntSenderInput()"}</code> |

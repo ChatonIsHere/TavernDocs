@@ -22,30 +22,46 @@ Base for custom throw behaviour (`ThrowAlignHelper`).
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ThrowablePickup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ThrowablePickup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currenttime" /><code>{"private float currentTime"}</code> |  |
-| <Link id="m-lerpovertime" /><code>{"private AnimationCurve lerpOverTime"}</code> |  |
-| <Link id="m-minvelocitysquared" /><code>{"private float minVelocitySquared"}</code> |  |
-| <Link id="m-pickup" /><code>{"protected "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |  |
-| <Link id="m-timetofulllerp" /><code>{"private float timeToFullLerp"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-pickup" /><code>{"protected "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currenttime" /><code>{"private float currentTime"}</code> |
+| <Link id="m-lerpovertime" /><code>{"private AnimationCurve lerpOverTime"}</code> |
+| <Link id="m-minvelocitysquared" /><code>{"private float minVelocitySquared"}</code> |
+| <Link id="m-timetofulllerp" /><code>{"private float timeToFullLerp"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-checkstart" /><code>{"private void CheckStart("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-dockedendalign" /><code>{"private void DockedEndAlign("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |  |
-| <Link id="m-interactendalign" /><code>{"private void InteractEndAlign("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-resetvalues" /><code>{"protected virtual void ResetValues()"}</code> |  |
-| <Link id="m-throwbehaviour" /><code>{"protected abstract void ThrowBehaviour(Vector3 velocity, float throwMagnitude)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-resetvalues" /><code>{"protected virtual void ResetValues()"}</code> |
+| <Link id="m-throwbehaviour" /><code>{"protected abstract void ThrowBehaviour(Vector3 velocity, float throwMagnitude)"}</code> |
+
+<details>
+<summary>7 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-checkstart" /><code>{"private void CheckStart("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-dockedendalign" /><code>{"private void DockedEndAlign("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |
+| <Link id="m-interactendalign" /><code>{"private void InteractEndAlign("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+
+</details>

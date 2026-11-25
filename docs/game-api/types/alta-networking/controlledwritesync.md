@@ -16,23 +16,28 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ControlledWriteSync("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type, "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" handler)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ControlledWriteSync("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type, "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" handler)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sendtochunks" /><code>{"void SendToChunks("}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" sendMethod, params "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"[] except)"}</code> |  |
-| <Link id="m-sendtoplayer" /><code>{"void SendToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" sendMethod)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-sendtochunks" /><code>{"void SendToChunks("}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" sendMethod, params "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"[] except)"}</code> |
+| <Link id="m-sendtoplayer" /><code>{"void SendToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" sendMethod)"}</code> |
 
 ## Used in
 

@@ -16,30 +16,35 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnIndex()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpawnIndex()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-index" /><code>{"private uint index"}</code> |  |
-| <Link id="m-waslastdespawn" /><code>{"private bool wasLastDespawn"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-index" /><code>{"private uint index"}</code> |
+| <Link id="m-waslastdespawn" /><code>{"private bool wasLastDespawn"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-despawningindex" /><code>{"uint DespawningIndex { get; }"}</code> |  |
-| <Link id="m-index-2" /><code>{"uint Index { get; set; }"}</code> |  |
-| <Link id="m-spawningindex" /><code>{"uint SpawningIndex { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-despawningindex" /><code>{"uint DespawningIndex { get; }"}</code> |
+| <Link id="m-index-2" /><code>{"uint Index { get; set; }"}</code> |
+| <Link id="m-spawningindex" /><code>{"uint SpawningIndex { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serializeindex" /><code>{"static void SerializeIndex("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref uint index)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serializeindex" /><code>{"static void SerializeIndex("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref uint index)"}</code> |
 
 ## Used in
 

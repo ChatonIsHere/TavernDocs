@@ -18,24 +18,34 @@ A **class** in `Root.Township`, `Alta.Heat`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FireLighter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FireLighter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chance" /><code>{"private float chance"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-chance" /><code>{"private float chance"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chance-2" /><code>{"float Chance { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chance-2" /><code>{"float Chance { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider collider)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider collider)"}</code> |
+
+</details>

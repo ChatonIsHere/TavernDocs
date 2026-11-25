@@ -17,15 +17,15 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicManagerSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicManagerSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-datas" /><code><Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{"[] datas"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-datas" /><code><Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{"[] datas"}</code> |
 
 ## Used in
 

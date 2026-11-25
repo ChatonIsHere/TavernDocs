@@ -16,12 +16,12 @@ A **class** in `Root.Township`, `GameCommands.Messages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameCommandMessage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameCommandMessage()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-commandtype" /><code><Link to="/game-api/types/game-other-namespaces/commandtype">{"CommandType"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/commandtype">{"CommandType"}</Link>{" { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-commandtype" /><code><Link to="/game-api/types/game-other-namespaces/commandtype">{"CommandType"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/commandtype">{"CommandType"}</Link>{" { get; set; }"}</code> |

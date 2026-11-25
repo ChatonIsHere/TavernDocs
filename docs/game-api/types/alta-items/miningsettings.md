@@ -23,28 +23,33 @@ Global settings for mining rocks and ore. In this build only the haptics, strike
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MiningSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MiningSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isonehitdestroy" /><code>{"private bool isOneHitDestroy"}</code> |  |
-| <Link id="m-maxrespawntime" /><code>{"private float maxRespawnTime"}</code> |  |
-| <Link id="m-maxswingdistance" /><code>{"private float maxSwingDistance"}</code> |  |
-| <Link id="m-minimpactmultiplier" /><code>{"private float minImpactMultiplier"}</code> |  |
-| <Link id="m-minrespawntime" /><code>{"private float minRespawnTime"}</code> |  |
-| <Link id="m-minstrikedamage" /><code>{"private int minStrikeDamage"}</code> |  |
-| <Link id="m-minswingdistance" /><code>{"private float minSwingDistance"}</code> |  |
-| <Link id="m-resourcedrophapticfeedback" /><code>{"private AnimationCurve resourceDropHapticFeedback"}</code> |  |
-| <Link id="m-resourcedropspeedmultiplier" /><code>{"private float resourceDropSpeedMultiplier"}</code> |  |
-| <Link id="m-strikecooldowntime" /><code>{"private float strikeCoolDownTime"}</code> |  |
-| <Link id="m-strikestrengthrtpc" /><code>{"private RTPC strikeStrengthRTPC"}</code> |  |
-| <Link id="m-successfulhapticfeedback" /><code>{"private AnimationCurve successfulHapticFeedback"}</code> |  |
-| <Link id="m-tooldamageperstrike" /><code>{"private float toolDamagePerStrike"}</code> |  |
-| <Link id="m-unsuccessfulhapticfeedback" /><code>{"private AnimationCurve unsuccessfulHapticFeedback"}</code> |  |
+<details>
+<summary>14 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isonehitdestroy" /><code>{"private bool isOneHitDestroy"}</code> |
+| <Link id="m-maxrespawntime" /><code>{"private float maxRespawnTime"}</code> |
+| <Link id="m-maxswingdistance" /><code>{"private float maxSwingDistance"}</code> |
+| <Link id="m-minimpactmultiplier" /><code>{"private float minImpactMultiplier"}</code> |
+| <Link id="m-minrespawntime" /><code>{"private float minRespawnTime"}</code> |
+| <Link id="m-minstrikedamage" /><code>{"private int minStrikeDamage"}</code> |
+| <Link id="m-minswingdistance" /><code>{"private float minSwingDistance"}</code> |
+| <Link id="m-resourcedrophapticfeedback" /><code>{"private AnimationCurve resourceDropHapticFeedback"}</code> |
+| <Link id="m-resourcedropspeedmultiplier" /><code>{"private float resourceDropSpeedMultiplier"}</code> |
+| <Link id="m-strikecooldowntime" /><code>{"private float strikeCoolDownTime"}</code> |
+| <Link id="m-strikestrengthrtpc" /><code>{"private RTPC strikeStrengthRTPC"}</code> |
+| <Link id="m-successfulhapticfeedback" /><code>{"private AnimationCurve successfulHapticFeedback"}</code> |
+| <Link id="m-tooldamageperstrike" /><code>{"private float toolDamagePerStrike"}</code> |
+| <Link id="m-unsuccessfulhapticfeedback" /><code>{"private AnimationCurve unsuccessfulHapticFeedback"}</code> |
+
+</details>
 
 ## Properties
 

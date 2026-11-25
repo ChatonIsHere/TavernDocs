@@ -18,16 +18,16 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Atom(string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Atom(string name)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-define" /><code><Link to="/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define("}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal)"}</code> |  |
-| <Link id="m-define-2" /><code><Link to="/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(params "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms)"}</code> |  |
-| <Link id="m-define-3" /><code><Link to="/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(float weighting, params "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms)"}</code> |  |
-| <Link id="m-define-4" /><code><Link to="/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(float weighting, "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal)"}</code> |  |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/atom">{"Atom"}</Link>{" op_Implicit(string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-define" /><code><Link to="/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define("}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal)"}</code> |
+| <Link id="m-define-2" /><code><Link to="/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(params "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms)"}</code> |
+| <Link id="m-define-3" /><code><Link to="/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(float weighting, params "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms)"}</code> |
+| <Link id="m-define-4" /><code><Link to="/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(float weighting, "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal)"}</code> |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/atom">{"Atom"}</Link>{" op_Implicit(string name)"}</code> |

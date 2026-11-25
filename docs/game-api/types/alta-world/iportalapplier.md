@@ -17,15 +17,15 @@ An **interface** in `Root.Township`, `Alta.Chunks`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allstaticrenderers" /><code>{"Dictionary<Renderer, Vector3> AllStaticRenderers { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-allstaticrenderers" /><code>{"Dictionary<Renderer, Vector3> AllStaticRenderers { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-toggleterrain" /><code>{"void ToggleTerrain(bool isVisible)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-toggleterrain" /><code>{"void ToggleTerrain(bool isVisible)"}</code> |
 
 ## Used in
 

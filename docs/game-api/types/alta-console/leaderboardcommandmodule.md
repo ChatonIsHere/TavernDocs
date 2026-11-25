@@ -17,11 +17,11 @@ A **static class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createdefinitiondata" /><code>{"static void CreateDefinitionData(string courseName, bool isLowest = true)"}</code> |  |
-| <Link id="m-getranking" /><code>{"static async Task<IEnumerable<"}<Link to="/game-api/types/global-p/playerdatainfo">{"PlayerDataInfo"}</Link>{">> GetRanking(string courseName)"}</code> |  |
-| <Link id="m-list" /><code>{"static IEnumerable<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondatainfo">{"LeaderboardDefinitionDataInfo"}</Link>{"> List()"}</code> |  |
-| <Link id="m-removecheckpoint" /><code>{"static void RemoveCheckPoint(string courseName, bool isBeginning)"}</code> |  |
-| <Link id="m-setboard" /><code>{"static void SetBoard(string courseName)"}</code> |  |
-| <Link id="m-setcheckpoint" /><code>{"static void SetCheckpoint(string courseName, bool isBeginning)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createdefinitiondata" /><code>{"static void CreateDefinitionData(string courseName, bool isLowest = true)"}</code> |
+| <Link id="m-getranking" /><code>{"static async Task<IEnumerable<"}<Link to="/game-api/types/global-p/playerdatainfo">{"PlayerDataInfo"}</Link>{">> GetRanking(string courseName)"}</code> |
+| <Link id="m-list" /><code>{"static IEnumerable<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondatainfo">{"LeaderboardDefinitionDataInfo"}</Link>{"> List()"}</code> |
+| <Link id="m-removecheckpoint" /><code>{"static void RemoveCheckPoint(string courseName, bool isBeginning)"}</code> |
+| <Link id="m-setboard" /><code>{"static void SetBoard(string courseName)"}</code> |
+| <Link id="m-setcheckpoint" /><code>{"static void SetCheckpoint(string courseName, bool isBeginning)"}</code> |

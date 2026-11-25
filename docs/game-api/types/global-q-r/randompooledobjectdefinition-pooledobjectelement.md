@@ -17,23 +17,28 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PooledObjectElement()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PooledObjectElement()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition"}</code> |  |
-| <Link id="m-weight" /><code>{"private int weight"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition"}</code> |
+| <Link id="m-weight" /><code>{"private int weight"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-definition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" Definition { get; }"}</code> |  |
-| <Link id="m-weight-2" /><code>{"int Weight { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-definition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" Definition { get; }"}</code> |
+| <Link id="m-weight-2" /><code>{"int Weight { get; }"}</code> |
 
 ## Used in
 

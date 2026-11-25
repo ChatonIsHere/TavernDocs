@@ -21,9 +21,9 @@ The heat points on an entity, synced together as one block whenever any of them 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HeatPointCollection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HeatPointCollection()"}</code> |
 
 ## Fields
 
@@ -31,16 +31,32 @@ The heat points on an entity, synced together as one block whenever any of them 
 | --- | --- |
 | <Link id="m-prepareforwritetimer" /><code>{"static "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" prepareForWriteTimer"}</code> | Shared timing stats for preparing to send. |
 | <Link id="m-serializetimer" /><code>{"static "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" serializeTimer"}</code> | Shared timing stats for serializing. |
-| <Link id="m-isforcesending" /><code>{"private bool isForceSending"}</code> |  |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-isforcesending" /><code>{"private bool isForceSending"}</code> |
+
+</details>
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> |  |
-| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> |  |
-| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> |  |
 | <Link id="m-isusingsyncmessage" /><code>{"protected override bool IsUsingSyncMessage { get; }"}</code> | False: heat points sync through regular entity serialization, not their own message. |
+
+<details>
+<summary>3 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> |
+| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> |
+| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> |
+
+</details>
 
 ## Methods
 

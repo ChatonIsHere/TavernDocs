@@ -18,25 +18,30 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TeleportCostStructure()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TeleportCostStructure()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-basecost" /><code>{"private int baseCost"}</code> |  |
-| <Link id="m-distancecorrection" /><code>{"private int distanceCorrection"}</code> |  |
-| <Link id="m-frommultiplier" /><code>{"private float fromMultiplier"}</code> |  |
-| <Link id="m-layerdistanceincrease" /><code>{"private int layerDistanceIncrease"}</code> |  |
-| <Link id="m-tomultiplier" /><code>{"private float toMultiplier"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-basecost" /><code>{"private int baseCost"}</code> |
+| <Link id="m-distancecorrection" /><code>{"private int distanceCorrection"}</code> |
+| <Link id="m-frommultiplier" /><code>{"private float fromMultiplier"}</code> |
+| <Link id="m-layerdistanceincrease" /><code>{"private int layerDistanceIncrease"}</code> |
+| <Link id="m-tomultiplier" /><code>{"private float toMultiplier"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-calculatecost" /><code>{"void CalculateCost(int distance, out int fromCost, out int toCost)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-calculatecost" /><code>{"void CalculateCost(int distance, out int fromCost, out int toCost)"}</code> |
 
 ## Used in
 

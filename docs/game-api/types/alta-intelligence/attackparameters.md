@@ -16,17 +16,17 @@ A **struct** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AttackParameters(float damage, Vector3 position)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AttackParameters(float damage, Vector3 position)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-damage" /><code>{"float damage"}</code> |  |
-| <Link id="m-empty" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/attackparameters">{"AttackParameters"}</Link>{" Empty"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-damage" /><code>{"float damage"}</code> |
+| <Link id="m-empty" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/attackparameters">{"AttackParameters"}</Link>{" Empty"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
 
 ## Used in
 

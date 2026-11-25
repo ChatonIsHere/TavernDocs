@@ -21,16 +21,21 @@ Layout asset for the in-game virtual keyboard: its keys and whether each row is 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VirtualKeyboardSetup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VirtualKeyboardSetup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-keysinfo" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{"[] keysInfo"}</code> |  |
-| <Link id="m-rowisordered" /><code>{"private bool[] rowIsOrdered"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-keysinfo" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{"[] keysInfo"}</code> |
+| <Link id="m-rowisordered" /><code>{"private bool[] rowIsOrdered"}</code> |
+
+</details>
 
 ## Properties
 

@@ -19,30 +19,35 @@ A small character figure that shows a saved cosmetic preset and can be picked up
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticPresetTrophy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CosmeticPresetTrophy()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-progress" /><code>{"private static readonly int _Progress"}</code> |  |
-| <Link id="m-baseburnmaterial" /><code>{"private Material baseBurnMaterial"}</code> |  |
-| <Link id="m-basefadematerial" /><code>{"private Material baseFadeMaterial"}</code> |  |
-| <Link id="m-burnduration" /><code>{"private float burnDuration"}</code> |  |
-| <Link id="m-fadeduration" /><code>{"private float fadeDuration"}</code> |  |
-| <Link id="m-handler" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" handler"}</code> |  |
-| <Link id="m-headjoint" /><code>{"private "}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" headJoint"}</code> |  |
-| <Link id="m-hoverpickup" /><code>{"private "}<Link to="/game-api/types/global-e-h/hoverpickup">{"HoverPickup"}</Link>{" hoverPickup"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-originalmaterials" /><code>{"private Dictionary<Renderer, Material> originalMaterials"}</code> |  |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |  |
-| <Link id="m-renderers" /><code>{"private Renderer[] renderers"}</code> |  |
-| <Link id="m-session" /><code>{"private "}<Link to="/game-api/types/global-a-b/addressablesession">{"AddressableSession"}</Link>{" session"}</code> |  |
-| <Link id="m-standardbody" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{" standardBody"}</code> |  |
-| <Link id="m-trophybody" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{" trophyBody"}</code> |  |
-| <Link id="m-uniquematerials" /><code>{"private Dictionary<Material, Material> uniqueMaterials"}</code> |  |
+<details>
+<summary>16 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-progress" /><code>{"private static readonly int _Progress"}</code> |
+| <Link id="m-baseburnmaterial" /><code>{"private Material baseBurnMaterial"}</code> |
+| <Link id="m-basefadematerial" /><code>{"private Material baseFadeMaterial"}</code> |
+| <Link id="m-burnduration" /><code>{"private float burnDuration"}</code> |
+| <Link id="m-fadeduration" /><code>{"private float fadeDuration"}</code> |
+| <Link id="m-handler" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" handler"}</code> |
+| <Link id="m-headjoint" /><code>{"private "}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" headJoint"}</code> |
+| <Link id="m-hoverpickup" /><code>{"private "}<Link to="/game-api/types/global-e-h/hoverpickup">{"HoverPickup"}</Link>{" hoverPickup"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-originalmaterials" /><code>{"private Dictionary<Renderer, Material> originalMaterials"}</code> |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
+| <Link id="m-renderers" /><code>{"private Renderer[] renderers"}</code> |
+| <Link id="m-session" /><code>{"private "}<Link to="/game-api/types/global-a-b/addressablesession">{"AddressableSession"}</Link>{" session"}</code> |
+| <Link id="m-standardbody" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{" standardBody"}</code> |
+| <Link id="m-trophybody" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{" trophyBody"}</code> |
+| <Link id="m-uniquematerials" /><code>{"private Dictionary<Material, Material> uniqueMaterials"}</code> |
+
+</details>
 
 ## Properties
 
@@ -70,14 +75,22 @@ A small character figure that shows a saved cosmetic preset and can be picked up
 | <Link id="m-forceretreat" /><code>{"void ForceRetreat()"}</code> | Fades the figure out and back in at its slot, or burns it if it has no slot. |
 | <Link id="m-reenablecolliders" /><code>{"void ReenableColliders()"}</code> | Turns the figure's colliders back on. |
 | <Link id="m-registerslot" /><code>{"void RegisterSlot("}<Link to="/game-api/types/alta-customization/icosmeticpresetslot">{"ICosmeticPresetSlot"}</Link>{" slot)"}</code> | Sets the slot the figure belongs to and points its hover target at the slot. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-burnanimation" /><code>{"private IEnumerator BurnAnimation() (iterator)"}</code> |  |
-| <Link id="m-disableghosthands" /><code>{"private void DisableGhostHands("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-enableghosthands" /><code>{"private void EnableGhostHands("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-preparerenderers" /><code>{"private void PrepareRenderers(Dictionary<Material, Material> uniqueMaterials, IEnumerable<Renderer> renderers, Material baseMaterial)"}</code> |  |
-| <Link id="m-retreatanimation" /><code>{"private IEnumerator RetreatAnimation() (iterator)"}</code> |  |
+
+<details>
+<summary>8 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-burnanimation" /><code>{"private IEnumerator BurnAnimation() (iterator)"}</code> |
+| <Link id="m-disableghosthands" /><code>{"private void DisableGhostHands("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-enableghosthands" /><code>{"private void EnableGhostHands("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-preparerenderers" /><code>{"private void PrepareRenderers(Dictionary<Material, Material> uniqueMaterials, IEnumerable<Renderer> renderers, Material baseMaterial)"}</code> |
+| <Link id="m-retreatanimation" /><code>{"private IEnumerator RetreatAnimation() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

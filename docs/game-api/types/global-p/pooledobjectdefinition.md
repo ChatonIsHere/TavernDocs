@@ -21,21 +21,26 @@ A ScriptableObject asset describing an object pool: which `PooledObject` prefab 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PooledObjectDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PooledObjectDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializesize" /><code>{"private int initializeSize"}</code> |  |
-| <Link id="m-ismaxsizelimitting" /><code>{"private bool isMaxSizeLimitting"}</code> |  |
-| <Link id="m-ismaxsizelimittingonandroid" /><code>{"private bool isMaxSizeLimittingOnAndroid"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-maximumpoolsize" /><code>{"private int maximumPoolSize"}</code> |  |
-| <Link id="m-maximumpoolsizeandroid" /><code>{"private int maximumPoolSizeAndroid"}</code> |  |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" prefab"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-initializesize" /><code>{"private int initializeSize"}</code> |
+| <Link id="m-ismaxsizelimitting" /><code>{"private bool isMaxSizeLimitting"}</code> |
+| <Link id="m-ismaxsizelimittingonandroid" /><code>{"private bool isMaxSizeLimittingOnAndroid"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-maximumpoolsize" /><code>{"private int maximumPoolSize"}</code> |
+| <Link id="m-maximumpoolsizeandroid" /><code>{"private int maximumPoolSizeAndroid"}</code> |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" prefab"}</code> |
+
+</details>
 
 ## Properties
 

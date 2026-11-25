@@ -19,13 +19,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DiggingImpactorSaveStructure()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DiggingImpactorSaveStructure()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-efficiencyratio" /><code>{"float efficiencyRatio"}</code> |  |
-| <Link id="m-pivot" /><code>{"Vector3 pivot"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-efficiencyratio" /><code>{"float efficiencyRatio"}</code> |
+| <Link id="m-pivot" /><code>{"Vector3 pivot"}</code> |

@@ -19,20 +19,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EdgeCutFilter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EdgeCutFilter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cut" /><code>{"private float cut"}</code> |  |
-| <Link id="m-edgefade" /><code>{"private float edgeFade"}</code> |  |
-| <Link id="m-noisescale" /><code>{"private float noiseScale"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cut" /><code>{"private float cut"}</code> |
+| <Link id="m-edgefade" /><code>{"private float edgeFade"}</code> |
+| <Link id="m-noisescale" /><code>{"private float noiseScale"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> |

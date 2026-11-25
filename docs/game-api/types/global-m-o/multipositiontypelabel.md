@@ -16,8 +16,8 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-large-mode" /><code>{"Large_Mode = 1"}</code> |  |
-| <Link id="m-multiposition-mode" /><code>{"MultiPosition_Mode = 2"}</code> |  |
-| <Link id="m-simple-mode" /><code>{"Simple_Mode = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-large-mode" /><code>{"Large_Mode = 1"}</code> |
+| <Link id="m-multiposition-mode" /><code>{"MultiPosition_Mode = 2"}</code> |
+| <Link id="m-simple-mode" /><code>{"Simple_Mode = 0"}</code> |

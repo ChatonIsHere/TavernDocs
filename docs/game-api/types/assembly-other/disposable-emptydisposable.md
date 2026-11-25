@@ -18,18 +18,23 @@ A **private class** in `Alta.LifecycleManagement.Runtime`, `Alta.LifecycleManage
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"private EmptyDisposable()"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"private EmptyDisposable()"}</code> |
+
+</details>
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-singleton" /><code>{"static "}<Link to="/game-api/types/assembly-other/disposable-emptydisposable">{"Disposable.EmptyDisposable"}</Link>{" Singleton"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-singleton" /><code>{"static "}<Link to="/game-api/types/assembly-other/disposable-emptydisposable">{"Disposable.EmptyDisposable"}</Link>{" Singleton"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |

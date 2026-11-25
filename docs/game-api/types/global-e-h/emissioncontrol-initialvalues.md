@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-rateoverdistance" /><code>{"float rateOverDistance"}</code> |  |
-| <Link id="m-rateovertime" /><code>{"float rateOverTime"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-rateoverdistance" /><code>{"float rateOverDistance"}</code> |
+| <Link id="m-rateovertime" /><code>{"float rateOverTime"}</code> |
 
 ## Used in
 

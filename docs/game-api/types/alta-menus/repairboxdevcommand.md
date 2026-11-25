@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, `Alta.UI`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-build" /><code>{"Build = 0"}</code> |  |
-| <Link id="m-destroy" /><code>{"Destroy = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-build" /><code>{"Build = 0"}</code> |
+| <Link id="m-destroy" /><code>{"Destroy = 1"}</code> |
 
 ## Used in
 

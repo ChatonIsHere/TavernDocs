@@ -20,16 +20,21 @@ Base asset for one step of a micro tutorial. Subclasses say which player events 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected MicroTutorialStep()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected MicroTutorialStep()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"internal static readonly Logger logger"}</code> |  |
-| <Link id="m-norequiredevents" /><code>{"private static readonly Type[] noRequiredEvents"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"internal static readonly Logger logger"}</code> |
+| <Link id="m-norequiredevents" /><code>{"private static readonly Type[] noRequiredEvents"}</code> |
+
+</details>
 
 ## Properties
 

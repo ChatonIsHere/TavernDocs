@@ -17,18 +17,18 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TotalDamageDisplay()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TotalDamageDisplay()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> |

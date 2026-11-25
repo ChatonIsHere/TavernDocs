@@ -16,12 +16,12 @@ An **enum** in `Root.Township`, `ATT.PlayerStates`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dock" /><code>{"Dock = 2"}</code> |  |
-| <Link id="m-drop" /><code>{"Drop = 1"}</code> |  |
-| <Link id="m-pickup" /><code>{"Pickup = 0"}</code> |  |
-| <Link id="m-undock" /><code>{"Undock = 3"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dock" /><code>{"Dock = 2"}</code> |
+| <Link id="m-drop" /><code>{"Drop = 1"}</code> |
+| <Link id="m-pickup" /><code>{"Pickup = 0"}</code> |
+| <Link id="m-undock" /><code>{"Undock = 3"}</code> |
 
 ## Used in
 

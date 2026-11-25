@@ -17,8 +17,8 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getobjectbounds" /><code>{"static Bounds GetObjectBounds(GameObject go)"}</code> |  |
-| <Link id="m-getobjectboundswithcolliders" /><code>{"static Bounds GetObjectBoundsWithColliders(GameObject go)"}</code> |  |
-| <Link id="m-getpointerbounds" /><code>{"static Bounds GetPointerBounds(GameObject prefab)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getobjectbounds" /><code>{"static Bounds GetObjectBounds(GameObject go)"}</code> |
+| <Link id="m-getobjectboundswithcolliders" /><code>{"static Bounds GetObjectBoundsWithColliders(GameObject go)"}</code> |
+| <Link id="m-getpointerbounds" /><code>{"static Bounds GetPointerBounds(GameObject prefab)"}</code> |

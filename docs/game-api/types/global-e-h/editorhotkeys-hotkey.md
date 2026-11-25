@@ -18,29 +18,34 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Hotkey()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Hotkey()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-key" /><code>{"private "}<Link to="/game-api/types/global-e-h/editorhotkeys-hotkey-key">{"EditorHotKeys.Hotkey.Key"}</Link>{" key"}</code> |  |
-| <Link id="m-modifier" /><code>{"private "}<Link to="/game-api/types/global-e-h/editorhotkeys-hotkey-modifier">{"EditorHotKeys.Hotkey.Modifier"}</Link>{" modifier"}</code> |  |
-| <Link id="m-path" /><code>{"private string path"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-key" /><code>{"private "}<Link to="/game-api/types/global-e-h/editorhotkeys-hotkey-key">{"EditorHotKeys.Hotkey.Key"}</Link>{" key"}</code> |
+| <Link id="m-modifier" /><code>{"private "}<Link to="/game-api/types/global-e-h/editorhotkeys-hotkey-modifier">{"EditorHotKeys.Hotkey.Modifier"}</Link>{" modifier"}</code> |
+| <Link id="m-path" /><code>{"private string path"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-path-2" /><code>{"string Path { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-path-2" /><code>{"string Path { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-evaluate" /><code>{"string Evaluate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-evaluate" /><code>{"string Evaluate()"}</code> |
 
 ## Used in
 

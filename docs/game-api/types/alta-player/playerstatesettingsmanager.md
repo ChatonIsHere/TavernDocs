@@ -16,13 +16,26 @@ A **static class** in `Root.Township`, `Alta.PlayerStates`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-statesettings" /><code>{"private static Dictionary<Type, "}<Link to="/game-api/types/alta-player/playerstatesettings">{"PlayerStateSettings"}</Link>{"> stateSettings"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-statesettings" /><code>{"private static Dictionary<Type, "}<Link to="/game-api/types/alta-player/playerstatesettings">{"PlayerStateSettings"}</Link>{"> stateSettings"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getsettings" /><code>{"static "}<Link to="/game-api/types/alta-player/playerstatesettings">{"PlayerStateSettings"}</Link>{" GetSettings(Type stateType)"}</code> |  |
-| <Link id="m-initializedictionary" /><code>{"private static void InitializeDictionary()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getsettings" /><code>{"static "}<Link to="/game-api/types/alta-player/playerstatesettings">{"PlayerStateSettings"}</Link>{" GetSettings(Type stateType)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-initializedictionary" /><code>{"private static void InitializeDictionary()"}</code> |
+
+</details>

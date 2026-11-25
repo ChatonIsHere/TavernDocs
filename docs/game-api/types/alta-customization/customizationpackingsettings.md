@@ -19,20 +19,25 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CustomizationPackingSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CustomizationPackingSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-diffuseblit" /><code>{"private Material diffuseBlit"}</code> |  |
-| <Link id="m-normalblit" /><code>{"private Material normalBlit"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-diffuseblit" /><code>{"private Material diffuseBlit"}</code> |
+| <Link id="m-normalblit" /><code>{"private Material normalBlit"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-diffuseblit-2" /><code>{"Material DiffuseBlit { get; }"}</code> |  |
-| <Link id="m-normalblit-2" /><code>{"Material NormalBlit { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-diffuseblit-2" /><code>{"Material DiffuseBlit { get; }"}</code> |
+| <Link id="m-normalblit-2" /><code>{"Material NormalBlit { get; }"}</code> |

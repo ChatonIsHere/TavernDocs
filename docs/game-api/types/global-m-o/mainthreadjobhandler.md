@@ -19,27 +19,40 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MainThreadJobHandler()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MainThreadJobHandler()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-current" /><code>{"private "}<Link to="/game-api/types/global-m-o/mainthreadjobhandler-internalentry">{"MainThreadJobHandler.InternalEntry"}</Link>{" current"}</code> |  |
-| <Link id="m-entries" /><code>{"private ConcurrentQueue<"}<Link to="/game-api/types/global-m-o/mainthreadjobhandler-internalentry">{"MainThreadJobHandler.InternalEntry"}</Link>{"> entries"}</code> |  |
-| <Link id="m-millisecondallowance" /><code>{"private float millisecondAllowance"}</code> |  |
-| <Link id="m-nextindex" /><code>{"private uint nextIndex"}</code> |  |
-| <Link id="m-pool" /><code>{"private ConcurrentBag<"}<Link to="/game-api/types/global-m-o/mainthreadjobhandler-internalentry">{"MainThreadJobHandler.InternalEntry"}</Link>{"> pool"}</code> |  |
-| <Link id="m-remainingcount" /><code>{"private int remainingCount"}</code> |  |
-| <Link id="m-timer" /><code>{"private Stopwatch timer"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-current" /><code>{"private "}<Link to="/game-api/types/global-m-o/mainthreadjobhandler-internalentry">{"MainThreadJobHandler.InternalEntry"}</Link>{" current"}</code> |
+| <Link id="m-entries" /><code>{"private ConcurrentQueue<"}<Link to="/game-api/types/global-m-o/mainthreadjobhandler-internalentry">{"MainThreadJobHandler.InternalEntry"}</Link>{"> entries"}</code> |
+| <Link id="m-millisecondallowance" /><code>{"private float millisecondAllowance"}</code> |
+| <Link id="m-nextindex" /><code>{"private uint nextIndex"}</code> |
+| <Link id="m-pool" /><code>{"private ConcurrentBag<"}<Link to="/game-api/types/global-m-o/mainthreadjobhandler-internalentry">{"MainThreadJobHandler.InternalEntry"}</Link>{"> pool"}</code> |
+| <Link id="m-remainingcount" /><code>{"private int remainingCount"}</code> |
+| <Link id="m-timer" /><code>{"private Stopwatch timer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-schedule" /><code><Link to="/game-api/types/global-m-o/mainthreadjobhandler-entry">{"MainThreadJobHandler.Entry"}</Link>{" Schedule(Action getTask, CancellationToken cancellationToken = null)"}</code> |  |
-| <Link id="m-schedule-2" /><code><Link to="/game-api/types/global-m-o/mainthreadjobhandler-entry">{"MainThreadJobHandler.Entry"}</Link>{" Schedule(Func<IEnumerable> getTask, CancellationToken cancellationToken = null)"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
-| <Link id="m-wrap" /><code>{"private IEnumerable Wrap(Action task) (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-schedule" /><code><Link to="/game-api/types/global-m-o/mainthreadjobhandler-entry">{"MainThreadJobHandler.Entry"}</Link>{" Schedule(Action getTask, CancellationToken cancellationToken = null)"}</code> |
+| <Link id="m-schedule-2" /><code><Link to="/game-api/types/global-m-o/mainthreadjobhandler-entry">{"MainThreadJobHandler.Entry"}</Link>{" Schedule(Func<IEnumerable> getTask, CancellationToken cancellationToken = null)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| <Link id="m-wrap" /><code>{"private IEnumerable Wrap(Action task) (iterator)"}</code> |
+
+</details>

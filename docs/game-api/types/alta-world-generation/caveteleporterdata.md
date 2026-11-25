@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CaveTeleporterData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CaveTeleporterData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-layer" /><code>{"int layer"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-layer" /><code>{"int layer"}</code> |

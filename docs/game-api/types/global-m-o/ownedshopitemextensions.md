@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gethash" /><code>{"static uint GetHash("}<Link to="/game-api/types/assembly-api-models/ownedshopitem">{"OwnedShopItem"}</Link>{" item)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gethash" /><code>{"static uint GetHash("}<Link to="/game-api/types/assembly-api-models/ownedshopitem">{"OwnedShopItem"}</Link>{" item)"}</code> |

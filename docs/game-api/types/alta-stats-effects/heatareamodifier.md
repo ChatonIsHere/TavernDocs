@@ -19,13 +19,13 @@ An **abstract class** in `Root.Township`, `Alta.Heat`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected HeatAreaModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected HeatAreaModifier()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
-| <Link id="m-gettemperaturemultiplier" /><code>{"protected abstract float GetTemperatureMultiplier("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |
+| <Link id="m-gettemperaturemultiplier" /><code>{"protected abstract float GetTemperatureMultiplier("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |

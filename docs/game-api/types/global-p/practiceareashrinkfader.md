@@ -18,29 +18,37 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PracticeAreaShrinkFader()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PracticeAreaShrinkFader()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-shrinkpoint" /><code>{"private readonly int _ShrinkPoint"}</code> |  |
-| <Link id="m-nonanimatedobjects" /><code>{"private List<GameObject> nonAnimatedObjects"}</code> |  |
-| <Link id="m-testingarea" /><code>{"protected "}<Link to="/game-api/types/global-s/skillshrinetestingarea">{"SkillShrineTestingArea"}</Link>{" testingArea"}</code> |  |
-| <Link id="m-toggleenabletarget" /><code>{"private float toggleEnableTarget"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-testingarea" /><code>{"protected "}<Link to="/game-api/types/global-s/skillshrinetestingarea">{"SkillShrineTestingArea"}</Link>{" testingArea"}</code> |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-shrinkpoint" /><code>{"private readonly int _ShrinkPoint"}</code> |
+| <Link id="m-nonanimatedobjects" /><code>{"private List<GameObject> nonAnimatedObjects"}</code> |
+| <Link id="m-toggleenabletarget" /><code>{"private float toggleEnableTarget"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-postbake" /><code>{"override void PostBake()"}</code> |  |
-| <Link id="m-registertestingarea" /><code>{"virtual void RegisterTestingArea("}<Link to="/game-api/types/global-s/skillshrinetestingarea">{"SkillShrineTestingArea"}</Link>{" testingArea)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
-| <Link id="m-fade" /><code>{"protected override IEnumerator Fade() (iterator)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
-| <Link id="m-togglerenderersenabled" /><code>{"protected void ToggleRenderersEnabled(bool isEnabled)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-postbake" /><code>{"override void PostBake()"}</code> |
+| <Link id="m-registertestingarea" /><code>{"virtual void RegisterTestingArea("}<Link to="/game-api/types/global-s/skillshrinetestingarea">{"SkillShrineTestingArea"}</Link>{" testingArea)"}</code> |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |
+| <Link id="m-fade" /><code>{"protected override IEnumerator Fade() (iterator)"}</code> |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |
+| <Link id="m-togglerenderersenabled" /><code>{"protected void ToggleRenderersEnabled(bool isEnabled)"}</code> |
 
 ## Used in
 

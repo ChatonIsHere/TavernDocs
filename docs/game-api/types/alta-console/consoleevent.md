@@ -18,36 +18,41 @@ An **abstract class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ConsoleEvent(string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConsoleEvent(string name)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-processor" /><code>{"private static "}<Link to="/game-api/types/alta-console/consoleevent-processor">{"ConsoleEvent.Processor"}</Link>{" processor"}</code> |  |
-| <Link id="m-queue" /><code>{"private static BlockingCollection<"}<Link to="/game-api/types/alta-console/consoleevent-queueitem">{"ConsoleEvent.QueueItem"}</Link>{"> queue"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-processor" /><code>{"private static "}<Link to="/game-api/types/alta-console/consoleevent-processor">{"ConsoleEvent.Processor"}</Link>{" processor"}</code> |
+| <Link id="m-queue" /><code>{"private static BlockingCollection<"}<Link to="/game-api/types/alta-console/consoleevent-queueitem">{"ConsoleEvent.QueueItem"}</Link>{"> queue"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-haslisteners" /><code>{"bool HasListeners { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-haslisteners" /><code>{"bool HasListeners { get; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invoked" /><code>{"event Action<"}<Link to="/game-api/types/alta-console/websocketcommandhandler-responsedata">{"WebSocketCommandHandler.ResponseData"}</Link>{"> Invoked"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invoked" /><code>{"event Action<"}<Link to="/game-api/types/alta-console/websocketcommandhandler-responsedata">{"WebSocketCommandHandler.ResponseData"}</Link>{"> Invoked"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deregister" /><code>{"virtual void Deregister()"}</code> |  |
-| <Link id="m-invoke" /><code>{"protected void Invoke("}<Link to="/game-api/types/alta-console/websocketcommandhandler-responsedata">{"WebSocketCommandHandler.ResponseData"}</Link>{" response)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deregister" /><code>{"virtual void Deregister()"}</code> |
+| <Link id="m-invoke" /><code>{"protected void Invoke("}<Link to="/game-api/types/alta-console/websocketcommandhandler-responsedata">{"WebSocketCommandHandler.ResponseData"}</Link>{" response)"}</code> |
 
 ## Used in
 

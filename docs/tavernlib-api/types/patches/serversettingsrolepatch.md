@@ -20,9 +20,9 @@ Sends each joining player their roles and limits who may change server settings 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerSettingsRolePatch()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerSettingsRolePatch()"}</code> |
 
 ## Methods
 
@@ -30,4 +30,12 @@ Sends each joining player their roles and limits who may change server settings 
 | --- | --- |
 | <Link id="m-onlymoderatorschangesettings" /><code>{"static void OnlyModeratorsChangeSettings("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, ref Task<bool> __result)"}</code> | Postfix on `ServerSettingsSync.IsServerSyncPermitted` that allows only the `owner` and `moderator` roles, logging a warning for anyone else. |
 | <Link id="m-sendrolestouser" /><code>{"static void SendRolesToUser("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" __instance)"}</code> | Postfix on `Player.InitializePlayerOnServer` that sends the player their roles from `users.json` (none if they aren't in it). |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-sendroles" /><code>{"internal static void SendRoles("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, IReadOnlyList<string> roles)"}</code> | Internal: sends a connection the `ReceiveRoles` message with a list of role names. Also used when roles change. |
+
+</details>

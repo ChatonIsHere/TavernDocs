@@ -19,20 +19,30 @@ Which cosmetics a player has bought, owns and may pick from, by category. Get on
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"private CosmeticOwnershipManager("}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-customization/purchasedlist">{"PurchasedList"}</Link>{" purchasedList)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"private CosmeticOwnershipManager("}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-customization/purchasedlist">{"PurchasedList"}</Link>{" purchasedList)"}</code> |
+
+</details>
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-available" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{", HashSet<uint>> available"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-manager" /><code>{"private readonly "}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager"}</code> |  |
-| <Link id="m-owned" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{", HashSet<uint>> owned"}</code> |  |
-| <Link id="m-purchased" /><code>{"private readonly List<uint> purchased"}</code> |  |
-| <Link id="m-randomize" /><code>{"private TaskCompletionSource<bool> randomize"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-available" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{", HashSet<uint>> available"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-manager" /><code>{"private readonly "}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager"}</code> |
+| <Link id="m-owned" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{", HashSet<uint>> owned"}</code> |
+| <Link id="m-purchased" /><code>{"private readonly List<uint> purchased"}</code> |
+| <Link id="m-randomize" /><code>{"private TaskCompletionSource<bool> randomize"}</code> |
+
+</details>
 
 ## Properties
 
@@ -53,8 +63,16 @@ Which cosmetics a player has bought, owns and may pick from, by category. Get on
 | <Link id="m-randomize-2" /><code>{"async Task Randomize(bool canUseNonOwned)"}</code> | Replaces the character's cosmetics with a random pick per category, from owned items or all available ones. Concurrent calls wait for the running one. |
 | <Link id="m-randomize-3" /><code>{"async Task Randomize("}<Link to="/game-api/types/alta-customization/playercosmeticwrapper">{"PlayerCosmeticWrapper"}</Link>{" cosmeticWrapper, bool canUseNonOwned)"}</code> | Replaces the character's cosmetics with a random pick per category, from owned items or all available ones. Concurrent calls wait for the running one. |
 | <Link id="m-refreshstore" /><code>{"async Task RefreshStore()"}</code> | Removes the old store rotation's items, fetches the current rotation and adds its items (expanding sets) as owned. |
-| <Link id="m-additem" /><code>{"private void AddItem(uint purchasable)"}</code> |  |
-| <Link id="m-wasdestroyed" /><code>{"private bool WasDestroyed()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-additem" /><code>{"private void AddItem(uint purchasable)"}</code> |
+| <Link id="m-wasdestroyed" /><code>{"private bool WasDestroyed()"}</code> |
+
+</details>
 
 ## Used in
 

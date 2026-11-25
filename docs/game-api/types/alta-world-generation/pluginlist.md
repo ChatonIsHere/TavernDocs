@@ -19,21 +19,26 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PluginList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PluginList()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-plugins" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{"> plugins"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-plugins" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{"> plugins"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-plugins-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{"> Plugins { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-plugins-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{"> Plugins { get; }"}</code> |
 
 ## Used in
 

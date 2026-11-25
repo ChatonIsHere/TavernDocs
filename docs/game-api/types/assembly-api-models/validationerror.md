@@ -16,23 +16,23 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Error
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ValidationError(string field, string message)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ValidationError()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ValidationError(string field, string message)"}</code> |
+| <Link id="m-ctor-2" /><code>{"ValidationError()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-field" /><code>{"string Field { get; set; }"}</code> |  |
-| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-field" /><code>{"string Field { get; set; }"}</code> |
+| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
 
 ## Used in
 

@@ -19,20 +19,33 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatList(IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/statplayerpair">{"StatPlayerPair"}</Link>{"> range)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatList(IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/statplayerpair">{"StatPlayerPair"}</Link>{"> range)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stats" /><code>{"private IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/statplayerpair">{"StatPlayerPair"}</Link>{"> stats"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-stats" /><code>{"private IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/statplayerpair">{"StatPlayerPair"}</Link>{"> stats"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-stats-effects/statplayerpair">{"StatPlayerPair"}</Link>{"> GetEnumerator()"}</code> |  |
-| <Link id="m-name" /><code>{"string Name()"}</code> |  |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-stats-effects/statplayerpair">{"StatPlayerPair"}</Link>{"> GetEnumerator()"}</code> |
+| <Link id="m-name" /><code>{"string Name()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |
+
+</details>

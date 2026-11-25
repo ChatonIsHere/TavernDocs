@@ -17,20 +17,25 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"QualityCommandModule()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"QualityCommandModule()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setdynamicloaddistance" /><code>{"static void SetDynamicLoadDistance(float loadMultiplier = 1)"}</code> |  |
-| <Link id="m-setlodbias" /><code>{"static void SetLODBias(float lodbias)"}</code> |  |
-| <Link id="m-setstaticloaddistance" /><code>{"static void SetStaticLoadDistance(float loadMultiplier = 1)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setdynamicloaddistance" /><code>{"static void SetDynamicLoadDistance(float loadMultiplier = 1)"}</code> |
+| <Link id="m-setlodbias" /><code>{"static void SetLODBias(float lodbias)"}</code> |
+| <Link id="m-setstaticloaddistance" /><code>{"static void SetStaticLoadDistance(float loadMultiplier = 1)"}</code> |

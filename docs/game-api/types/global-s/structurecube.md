@@ -19,24 +19,29 @@ One grid cell of a `StructurePart` used by the mining base generator. Its side f
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StructureCube()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StructureCube()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-air" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" air"}</code> |  |
-| <Link id="m-connecttoair" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" connectToAir"}</code> |  |
-| <Link id="m-connecttosolid" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" connectToSolid"}</code> |  |
-| <Link id="m-gates" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" gates"}</code> |  |
-| <Link id="m-minimumgatesforculling" /><code>{"private int minimumGatesForCulling"}</code> |  |
-| <Link id="m-part" /><code>{"private "}<Link to="/game-api/types/global-s/structurepart">{"StructurePart"}</Link>{" part"}</code> |  |
-| <Link id="m-solid" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" solid"}</code> |  |
-| <Link id="m-x" /><code>{"private int x"}</code> |  |
-| <Link id="m-y" /><code>{"private int y"}</code> |  |
-| <Link id="m-z" /><code>{"private int z"}</code> |  |
+<details>
+<summary>10 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-air" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" air"}</code> |
+| <Link id="m-connecttoair" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" connectToAir"}</code> |
+| <Link id="m-connecttosolid" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" connectToSolid"}</code> |
+| <Link id="m-gates" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" gates"}</code> |
+| <Link id="m-minimumgatesforculling" /><code>{"private int minimumGatesForCulling"}</code> |
+| <Link id="m-part" /><code>{"private "}<Link to="/game-api/types/global-s/structurepart">{"StructurePart"}</Link>{" part"}</code> |
+| <Link id="m-solid" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" solid"}</code> |
+| <Link id="m-x" /><code>{"private int x"}</code> |
+| <Link id="m-y" /><code>{"private int y"}</code> |
+| <Link id="m-z" /><code>{"private int z"}</code> |
+
+</details>
 
 ## Properties
 
@@ -57,8 +62,16 @@ One grid cell of a `StructurePart` used by the mining base generator. Its side f
 | Member | What it is |
 | --- | --- |
 | <Link id="m-loadfrom" /><code>{"void LoadFrom("}<Link to="/game-api/types/global-s/structurepart-cube">{"StructurePart.Cube"}</Link>{" cube)"}</code> | Copies position and side flags from a `StructurePart.Cube`. |
-| <Link id="m-drawsides" /><code>{"private void DrawSides(Color color, Vector3 size, Vector3 position, "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" sides)"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-drawsides" /><code>{"private void DrawSides(Color color, Vector3 size, Vector3 position, "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" sides)"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+
+</details>
 
 ## Used in
 

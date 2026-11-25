@@ -19,12 +19,12 @@ A **internal class** in `Root.Township`, `Alta.Chunks`. Reach it through att-stu
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CaveLayerStreamerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CaveLayerStreamerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isgenerated" /><code>{"bool isGenerated"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isgenerated" /><code>{"bool isGenerated"}</code> |

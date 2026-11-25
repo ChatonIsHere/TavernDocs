@@ -18,19 +18,24 @@ Which grab point of a pickup a hand holds and where along it, so a grab can be s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrabPointParameters()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"GrabPointParameters("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/global-e-h/grabpoint">{"GrabPoint"}</Link>{" grabPoint)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrabPointParameters()"}</code> |
+| <Link id="m-ctor-2" /><code>{"GrabPointParameters("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/global-e-h/grabpoint">{"GrabPoint"}</Link>{" grabPoint)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-grabpointindex" /><code>{"private int grabPointIndex"}</code> |  |
-| <Link id="m-lastlinearposition" /><code>{"private float lastLinearPosition"}</code> |  |
-| <Link id="m-lastposition" /><code>{"private Vector3 lastPosition"}</code> |  |
-| <Link id="m-lastrotation" /><code>{"private Quaternion lastRotation"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-grabpointindex" /><code>{"private int grabPointIndex"}</code> |
+| <Link id="m-lastlinearposition" /><code>{"private float lastLinearPosition"}</code> |
+| <Link id="m-lastposition" /><code>{"private Vector3 lastPosition"}</code> |
+| <Link id="m-lastrotation" /><code>{"private Quaternion lastRotation"}</code> |
+
+</details>
 
 ## Methods
 

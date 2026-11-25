@@ -16,14 +16,14 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-debug" /><code>{"Debug = 1"}</code> |  |
-| <Link id="m-error" /><code>{"Error = 4"}</code> |  |
-| <Link id="m-fatal" /><code>{"Fatal = 5"}</code> |  |
-| <Link id="m-info" /><code>{"Info = 2"}</code> |  |
-| <Link id="m-trace" /><code>{"Trace = 0"}</code> |  |
-| <Link id="m-warn" /><code>{"Warn = 3"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-debug" /><code>{"Debug = 1"}</code> |
+| <Link id="m-error" /><code>{"Error = 4"}</code> |
+| <Link id="m-fatal" /><code>{"Fatal = 5"}</code> |
+| <Link id="m-info" /><code>{"Info = 2"}</code> |
+| <Link id="m-trace" /><code>{"Trace = 0"}</code> |
+| <Link id="m-warn" /><code>{"Warn = 3"}</code> |
 
 ## Used in
 

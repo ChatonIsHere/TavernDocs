@@ -17,24 +17,37 @@ A **class** in `Root.Township`, `Alta.Environmental.Vegetation`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrassClumpHolder()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrassClumpHolder()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-blades" /><code>{"private List<"}<Link to="/game-api/types/alta-world/grassblade">{"GrassBlade"}</Link>{"> blades"}</code> |  |
-| <Link id="m-width" /><code>{"private float width"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-blades" /><code>{"private List<"}<Link to="/game-api/types/alta-world/grassblade">{"GrassBlade"}</Link>{"> blades"}</code> |
+| <Link id="m-width" /><code>{"private float width"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clear" /><code>{"void Clear(float _width)"}</code> |  |
-| <Link id="m-generatelod2" /><code>{"Mesh GenerateLOD2()"}</code> |  |
-| <Link id="m-generatetemplate" /><code>{"Mesh GenerateTemplate(int maxLevels)"}</code> |  |
-| <Link id="m-receiveblade" /><code>{"void ReceiveBlade("}<Link to="/game-api/types/alta-world/grassblademesh">{"GrassBladeMesh"}</Link>{" mesh, Material grassMaterial, bool isUnique)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clear" /><code>{"void Clear(float _width)"}</code> |
+| <Link id="m-generatelod2" /><code>{"Mesh GenerateLOD2()"}</code> |
+| <Link id="m-generatetemplate" /><code>{"Mesh GenerateTemplate(int maxLevels)"}</code> |
+| <Link id="m-receiveblade" /><code>{"void ReceiveBlade("}<Link to="/game-api/types/alta-world/grassblademesh">{"GrassBladeMesh"}</Link>{" mesh, Material grassMaterial, bool isUnique)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+
+</details>

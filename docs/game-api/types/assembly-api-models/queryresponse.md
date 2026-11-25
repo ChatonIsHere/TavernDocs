@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"QueryResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"QueryResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |  |
-| <Link id="m-values" /><code>{"List<string> Values { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |
+| <Link id="m-values" /><code>{"List<string> Values { get; set; }"}</code> |
 
 ## Used in
 

@@ -20,9 +20,9 @@ Base for spawn modifiers in forest generation that work on spawn parameters.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SpawnModifierSpawnParameters()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SpawnModifierSpawnParameters()"}</code> |
 
 ## Used in
 

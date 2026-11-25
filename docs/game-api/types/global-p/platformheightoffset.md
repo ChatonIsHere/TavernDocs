@@ -16,23 +16,28 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformHeightOffset("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform, float offset)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformHeightOffset("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform, float offset)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-offset" /><code>{"private float offset"}</code> |  |
-| <Link id="m-platform" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-offset" /><code>{"private float offset"}</code> |
+| <Link id="m-platform" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> |  |
-| <Link id="m-offset-2" /><code>{"float Offset { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> |
+| <Link id="m-offset-2" /><code>{"float Offset { get; }"}</code> |
 
 ## Used in
 

@@ -17,12 +17,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"private HashComparer()"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"private HashComparer()"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-e-h/hashcomparer">{"HashComparer"}</Link>{" Instance { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-e-h/hashcomparer">{"HashComparer"}</Link>{" Instance { get; }"}</code> |

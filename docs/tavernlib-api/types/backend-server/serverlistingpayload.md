@@ -40,4 +40,12 @@ The JSON body each heartbeat sends to the Community Servers listing, built from 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-fromconfig" /><code>{"static "}<Link to="/tavernlib-api/types/backend-server/serverlistingpayload">{"ServerListingPayload"}</Link>{" FromConfig("}<Link to="/tavernlib-api/types/backend-server-configs/serversettingsconfig">{"ServerSettingsConfig"}</Link>{" config, "}<Link to="/tavernlib-api/types/backend-server-configs/tavernserverconfig">{"TavernServerConfig"}</Link>{" tavernConfig)"}</code> | Builds the payload from the last-read settings and ports, using the live player limit and connection count when a server is running. |
-| <Link id="m-resolvescene" /><code>{"private static "}<Link to="/tavernlib-api/types/backend-server/serverlistingpayload-scenekind">{"ServerListingPayload.SceneKind"}</Link>{" ResolveScene("}<Link to="/tavernlib-api/types/backend-server-configs/serversettingsconfig">{"ServerSettingsConfig"}</Link>{" config)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-resolvescene" /><code>{"private static "}<Link to="/tavernlib-api/types/backend-server/serverlistingpayload-scenekind">{"ServerListingPayload.SceneKind"}</Link>{" ResolveScene("}<Link to="/tavernlib-api/types/backend-server-configs/serversettingsconfig">{"ServerSettingsConfig"}</Link>{" config)"}</code> |
+
+</details>

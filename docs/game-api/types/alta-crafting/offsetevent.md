@@ -16,26 +16,39 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OffsetEvent("}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline, TimeSpan minimumDelay, TimeSpan offsetDelay, Action delayedEvent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OffsetEvent("}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline, TimeSpan minimumDelay, TimeSpan offsetDelay, Action delayedEvent)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-delayedevent" /><code>{"private Action delayedEvent"}</code> |  |
-| <Link id="m-lastoffset" /><code>{"private TimeSpan lastOffset"}</code> |  |
-| <Link id="m-minimumdelay" /><code>{"private TimeSpan minimumDelay"}</code> |  |
-| <Link id="m-offsetdelay" /><code>{"private TimeSpan offsetDelay"}</code> |  |
-| <Link id="m-timeline" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-delayedevent" /><code>{"private Action delayedEvent"}</code> |
+| <Link id="m-lastoffset" /><code>{"private TimeSpan lastOffset"}</code> |
+| <Link id="m-minimumdelay" /><code>{"private TimeSpan minimumDelay"}</code> |
+| <Link id="m-offsetdelay" /><code>{"private TimeSpan offsetDelay"}</code> |
+| <Link id="m-timeline" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-offset" /><code>{"void Offset()"}</code> |  |
-| <Link id="m-check" /><code>{"private void Check()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-offset" /><code>{"void Offset()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-check" /><code>{"private void Check()"}</code> |
+
+</details>
 
 ## Used in
 

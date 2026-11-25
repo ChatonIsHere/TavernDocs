@@ -17,18 +17,18 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaContractResolver()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaContractResolver()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-settings" /><code>{"static JsonSerializerSettings settings"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-settings" /><code>{"static JsonSerializerSettings settings"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createproperty" /><code>{"protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createproperty" /><code>{"protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)"}</code> |

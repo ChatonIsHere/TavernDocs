@@ -19,27 +19,32 @@ One bubble in the quick access menu, showing an action and running it when chose
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"QuickAccessMenuBubble()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"QuickAccessMenuBubble()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activebubblematerial" /><code>{"private Material activeBubbleMaterial"}</code> |  |
-| <Link id="m-activebubblematerialandroid" /><code>{"private Material activeBubbleMaterialAndroid"}</code> |  |
-| <Link id="m-activeprefab" /><code>{"private GameObject activePrefab"}</code> |  |
-| <Link id="m-animatingscale" /><code>{"private float animatingScale"}</code> |  |
-| <Link id="m-bubblerenderer" /><code>{"private Renderer bubbleRenderer"}</code> |  |
-| <Link id="m-content" /><code>{"private "}<Link to="/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" content"}</code> |  |
-| <Link id="m-headingtext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" headingText"}</code> |  |
-| <Link id="m-inactivebubblematerial" /><code>{"private Material inactiveBubbleMaterial"}</code> |  |
-| <Link id="m-inactivebubblematerialandroid" /><code>{"private Material inactiveBubbleMaterialAndroid"}</code> |  |
-| <Link id="m-isbubbleselected" /><code>{"private bool isBubbleSelected"}</code> |  |
-| <Link id="m-scaleanimationspeed" /><code>{"private float scaleAnimationSpeed"}</code> |  |
-| <Link id="m-selectedscale" /><code>{"private float selectedScale"}</code> |  |
-| <Link id="m-unselectedscale" /><code>{"private float unselectedScale"}</code> |  |
+<details>
+<summary>13 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activebubblematerial" /><code>{"private Material activeBubbleMaterial"}</code> |
+| <Link id="m-activebubblematerialandroid" /><code>{"private Material activeBubbleMaterialAndroid"}</code> |
+| <Link id="m-activeprefab" /><code>{"private GameObject activePrefab"}</code> |
+| <Link id="m-animatingscale" /><code>{"private float animatingScale"}</code> |
+| <Link id="m-bubblerenderer" /><code>{"private Renderer bubbleRenderer"}</code> |
+| <Link id="m-content" /><code>{"private "}<Link to="/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" content"}</code> |
+| <Link id="m-headingtext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" headingText"}</code> |
+| <Link id="m-inactivebubblematerial" /><code>{"private Material inactiveBubbleMaterial"}</code> |
+| <Link id="m-inactivebubblematerialandroid" /><code>{"private Material inactiveBubbleMaterialAndroid"}</code> |
+| <Link id="m-isbubbleselected" /><code>{"private bool isBubbleSelected"}</code> |
+| <Link id="m-scaleanimationspeed" /><code>{"private float scaleAnimationSpeed"}</code> |
+| <Link id="m-selectedscale" /><code>{"private float selectedScale"}</code> |
+| <Link id="m-unselectedscale" /><code>{"private float unselectedScale"}</code> |
+
+</details>
 
 ## Properties
 
@@ -62,9 +67,17 @@ One bubble in the quick access menu, showing an action and running it when chose
 | <Link id="m-unmarkselected" /><code>{"void UnmarkSelected()"}</code> | Shrinks the bubble back and clears the title. |
 | <Link id="m-updatecontent" /><code>{"void UpdateContent("}<Link to="/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" content, "}<Link to="/game-api/types/alta-player/quickaccessmenucontroller">{"QuickAccessMenuController"}</Link>{" controller)"}</code> | Fills the bubble with an action: name, preview object, material, and opens the action. |
 | <Link id="m-fadefinished" /><code>{"protected override void FadeFinished()"}</code> | Destroys the action's preview object when the bubble has faded out. |
-| <Link id="m-updateactive" /><code>{"private void UpdateActive(bool isActive)"}</code> |  |
 | <Link id="m-updatelerp" /><code>{"protected override void UpdateLerp()"}</code> | Turns the bubble to face the local player's head, then updates its scale. |
-| <Link id="m-updatetitledisplay" /><code>{"private void UpdateTitleDisplay(bool showTitle)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-updateactive" /><code>{"private void UpdateActive(bool isActive)"}</code> |
+| <Link id="m-updatetitledisplay" /><code>{"private void UpdateTitleDisplay(bool showTitle)"}</code> |
+
+</details>
 
 ## Used in
 

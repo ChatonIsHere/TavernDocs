@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.Networking.Animation`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-guiname" /><code>{"string GUIName { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-guiname" /><code>{"string GUIName { get; }"}</code> |

@@ -18,14 +18,14 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"KeyBoardTriggerHandler(Key key, bool isDown, "}<Link to="/game-api/types/global-i-l/keyeventhandler">{"KeyEventHandler"}</Link>{" handler)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"KeyBoardTriggerHandler(Key key, bool isDown, "}<Link to="/game-api/types/global-i-l/keyeventhandler">{"KeyEventHandler"}</Link>{" handler)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handler" /><code><Link to="/game-api/types/global-i-l/keyeventhandler">{"KeyEventHandler"}</Link>{" Handler { get; }"}</code> |  |
-| <Link id="m-isdown" /><code>{"bool IsDown { get; }"}</code> |  |
-| <Link id="m-key" /><code>{"Key Key { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-handler" /><code><Link to="/game-api/types/global-i-l/keyeventhandler">{"KeyEventHandler"}</Link>{" Handler { get; }"}</code> |
+| <Link id="m-isdown" /><code>{"bool IsDown { get; }"}</code> |
+| <Link id="m-key" /><code>{"Key Key { get; }"}</code> |

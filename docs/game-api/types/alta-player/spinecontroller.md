@@ -17,26 +17,34 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpineController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpineController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gravityweigth" /><code>{"float gravityWeigth"}</code> |  |
-| <Link id="m-bodytarget" /><code>{"private Transform bodyTarget"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gravityweigth" /><code>{"float gravityWeigth"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-bodytarget" /><code>{"private Transform bodyTarget"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cachedneutral" /><code>{"protected Quaternion[] CachedNeutral { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cachedneutral" /><code>{"protected Quaternion[] CachedNeutral { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updatecharactercomponent" /><code>{"override void UpdateCharacterComponent()"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updatecharactercomponent" /><code>{"override void UpdateCharacterComponent()"}</code> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |

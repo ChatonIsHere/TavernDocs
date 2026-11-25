@@ -17,20 +17,36 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SetRenderQueue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SetRenderQueue()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ischangingchildren" /><code>{"private bool isChangingChildren"}</code> |  |
-| <Link id="m-renderqueue" /><code>{"protected int renderQueue"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-renderqueue" /><code>{"protected int renderQueue"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-ischangingchildren" /><code>{"private bool isChangingChildren"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"protected void Awake()"}</code> |  |
-| <Link id="m-setrenderqueues" /><code>{"private void SetRenderQueues(Transform objectToSet)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected void Awake()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-setrenderqueues" /><code>{"private void SetRenderQueues(Transform objectToSet)"}</code> |
+
+</details>

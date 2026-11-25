@@ -21,13 +21,21 @@ The contents of `whitelist_requests.json`: players who asked to be whitelisted f
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WhitelistRequestList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WhitelistRequestList()"}</code> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-requests" /><code>{"List<"}<Link to="/tavernlib-api/types/backend-server-configs/whitelistrequestlist-whitelistrequest">{"WhitelistRequestList.WhitelistRequest"}</Link>{"> Requests { get; set; }"}</code> | The pending applications. At most 3 per address and 100 in all are taken. |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |
+
+</details>

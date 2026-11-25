@@ -17,12 +17,12 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PointerReference()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PointerReference()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pointer" /><code><Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{" pointer"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-pointer" /><code><Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{" pointer"}</code> |

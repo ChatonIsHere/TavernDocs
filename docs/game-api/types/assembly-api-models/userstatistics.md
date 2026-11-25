@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UserStatistics()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UserStatistics()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playtime" /><code>{"TimeSpan? PlayTime { get; set; }"}</code> |  |
-| <Link id="m-signuptime" /><code>{"DateTime SignupTime { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-playtime" /><code>{"TimeSpan? PlayTime { get; set; }"}</code> |
+| <Link id="m-signuptime" /><code>{"DateTime SignupTime { get; set; }"}</code> |
 
 ## Used in
 

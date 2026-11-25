@@ -18,27 +18,32 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GetComponentAttribute()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"GetComponentAttribute(Type type)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GetComponentAttribute()"}</code> |
+| <Link id="m-ctor-2" /><code>{"GetComponentAttribute(Type type)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-type" /><code>{"Type Type { get; set; }"}</code> |  |
-| <Link id="m-warnonnull" /><code>{"bool WarnOnNull { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-type" /><code>{"Type Type { get; set; }"}</code> |
+| <Link id="m-warnonnull" /><code>{"bool WarnOnNull { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getcomponent" /><code>{"virtual Component GetComponent(Transform transform, Type type)"}</code> |  |
-| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getcomponent" /><code>{"virtual Component GetComponent(Transform transform, Type type)"}</code> |
+| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> |

@@ -17,24 +17,29 @@ A **class** in `Root.Township`, `Alta.Loot`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PrefabQuantity("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PrefabQuantity("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> |  |
-| <Link id="m-quantity" /><code>{"private int quantity"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> |
+| <Link id="m-quantity" /><code>{"private int quantity"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> |  |
-| <Link id="m-prefab-2" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Prefab { get; }"}</code> |  |
-| <Link id="m-quantity-2" /><code>{"int Quantity { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> |
+| <Link id="m-prefab-2" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Prefab { get; }"}</code> |
+| <Link id="m-quantity-2" /><code>{"int Quantity { get; }"}</code> |
 
 ## Used in
 

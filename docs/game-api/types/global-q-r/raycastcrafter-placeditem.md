@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> |  |
-| <Link id="m-transformsave" /><code>{"TransformSave TransformSave { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> |
+| <Link id="m-transformsave" /><code>{"TransformSave TransformSave { get; set; }"}</code> |
 
 ## Used in
 

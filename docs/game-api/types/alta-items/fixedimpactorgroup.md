@@ -20,13 +20,13 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FixedImpactorGroup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FixedImpactorGroup()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-charge" /><code>{"void Charge()"}</code> |  |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-charge" /><code>{"void Charge()"}</code> |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> |

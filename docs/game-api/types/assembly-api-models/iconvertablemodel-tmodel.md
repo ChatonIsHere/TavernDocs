@@ -16,6 +16,6 @@ An **interface** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-convert" /><code>{"TModel Convert()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-convert" /><code>{"TModel Convert()"}</code> |

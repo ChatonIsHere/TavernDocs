@@ -18,19 +18,32 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CircularSpawnPointGenerator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CircularSpawnPointGenerator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-radius" /><code>{"private float radius"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getrandomspawnposition" /><code>{"override Vector3 GetRandomSpawnPosition()"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getrandomspawnposition" /><code>{"override Vector3 GetRandomSpawnPosition()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+
+</details>

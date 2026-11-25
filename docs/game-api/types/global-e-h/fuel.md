@@ -21,22 +21,27 @@ Fuel values for an item type, used by fuel-burning fires. An `ItemComponent`, so
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Fuel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Fuel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-burnduration" /><code>{"private float burnDuration"}</code> |  |
-| <Link id="m-burning" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" burning"}</code> |  |
-| <Link id="m-burnprioritymultiplier" /><code>{"private float burnPriorityMultiplier"}</code> |  |
-| <Link id="m-dockedburnduration" /><code>{"private float dockedBurnDuration"}</code> |  |
-| <Link id="m-efficiencycap" /><code>{"private float efficiencyCap"}</code> |  |
-| <Link id="m-efficiencyvalue" /><code>{"private float efficiencyValue"}</code> |  |
-| <Link id="m-parentduration" /><code>{"private float parentDuration"}</code> |  |
-| <Link id="m-volume" /><code>{"private float volume"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-burnduration" /><code>{"private float burnDuration"}</code> |
+| <Link id="m-burning" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" burning"}</code> |
+| <Link id="m-burnprioritymultiplier" /><code>{"private float burnPriorityMultiplier"}</code> |
+| <Link id="m-dockedburnduration" /><code>{"private float dockedBurnDuration"}</code> |
+| <Link id="m-efficiencycap" /><code>{"private float efficiencyCap"}</code> |
+| <Link id="m-efficiencyvalue" /><code>{"private float efficiencyValue"}</code> |
+| <Link id="m-parentduration" /><code>{"private float parentDuration"}</code> |
+| <Link id="m-volume" /><code>{"private float volume"}</code> |
+
+</details>
 
 ## Properties
 

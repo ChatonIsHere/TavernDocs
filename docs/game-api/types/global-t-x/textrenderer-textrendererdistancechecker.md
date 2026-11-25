@@ -17,22 +17,35 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TextRendererDistanceChecker()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TextRendererDistanceChecker()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activerenderers" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{", Vector3> activeRenderers"}</code> |  |
-| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/global-t-x/textrenderer-textrendererdistancechecker">{"TextRenderer.TextRendererDistanceChecker"}</Link>{" instance"}</code> |  |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activerenderers" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{", Vector3> activeRenderers"}</code> |
+| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/global-t-x/textrenderer-textrendererdistancechecker">{"TextRenderer.TextRendererDistanceChecker"}</Link>{" instance"}</code> |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deregister" /><code>{"static void Deregister("}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" renderer)"}</code> |  |
-| <Link id="m-register" /><code>{"static void Register("}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" renderer)"}</code> |  |
-| <Link id="m-update-2" /><code>{"private void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deregister" /><code>{"static void Deregister("}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" renderer)"}</code> |
+| <Link id="m-register" /><code>{"static void Register("}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" renderer)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-update-2" /><code>{"private void Update()"}</code> |
+
+</details>

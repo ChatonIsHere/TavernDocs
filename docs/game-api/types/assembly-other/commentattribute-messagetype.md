@@ -17,12 +17,12 @@ An **enum** in `Alta.Attributes`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-error" /><code>{"Error = 3"}</code> |  |
-| <Link id="m-info" /><code>{"Info = 1"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-warning" /><code>{"Warning = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-error" /><code>{"Error = 3"}</code> |
+| <Link id="m-info" /><code>{"Info = 1"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-warning" /><code>{"Warning = 2"}</code> |
 
 ## Used in
 

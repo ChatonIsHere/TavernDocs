@@ -23,31 +23,39 @@ A slot that holds pickups: backpack and belt slots, pouches, racks, crafting sta
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PickupDock()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PickupDock()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-dockedtype" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" dockedType"}</code> | The `Item` type stored in the dock. Saved, and used to respawn the docked pickup on load. |
-| <Link id="m-clientdocked" /><code>{"private List<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> clientDocked"}</code> |  |
-| <Link id="m-dockvisual" /><code>{"private "}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{" dockVisual"}</code> |  |
-| <Link id="m-hapticcoroutine" /><code>{"private Coroutine hapticCoroutine"}</code> |  |
-| <Link id="m-hascontentsrange" /><code>{"private List<Collider> hasContentsRange"}</code> |  |
-| <Link id="m-hovercount" /><code>{"private int hoverCount"}</code> |  |
-| <Link id="m-ishapticanimating" /><code>{"private bool isHapticAnimating"}</code> |  |
-| <Link id="m-lastofficialquantity" /><code>{"private int lastOfficialQuantity"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-pickuprange" /><code>{"private Collider pickupRange"}</code> |  |
-| <Link id="m-previouslydocked" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" previouslyDocked"}</code> |  |
-| <Link id="m-quantitystored" /><code>{"private int quantityStored"}</code> |  |
-| <Link id="m-scaleanimator" /><code>{"private "}<Link to="/game-api/types/global-s/scaleanimator">{"ScaleAnimator"}</Link>{" scaleAnimator"}</code> |  |
-| <Link id="m-scaler" /><code>{"private "}<Link to="/game-api/types/global-m-o/nearbyplayerscaler">{"NearbyPlayerScaler"}</Link>{" scaler"}</code> |  |
-| <Link id="m-serializeddata" /><code>{"private "}<Link to="/game-api/types/alta-world/saveddynamicobject">{"SavedDynamicObject"}</Link>{" serializedData"}</code> |  |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" settings"}</code> |  |
-| <Link id="m-snappoint" /><code>{"private Transform snapPoint"}</code> |  |
+
+<details>
+<summary>16 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-clientdocked" /><code>{"private List<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> clientDocked"}</code> |
+| <Link id="m-dockvisual" /><code>{"private "}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{" dockVisual"}</code> |
+| <Link id="m-hapticcoroutine" /><code>{"private Coroutine hapticCoroutine"}</code> |
+| <Link id="m-hascontentsrange" /><code>{"private List<Collider> hasContentsRange"}</code> |
+| <Link id="m-hovercount" /><code>{"private int hoverCount"}</code> |
+| <Link id="m-ishapticanimating" /><code>{"private bool isHapticAnimating"}</code> |
+| <Link id="m-lastofficialquantity" /><code>{"private int lastOfficialQuantity"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-pickuprange" /><code>{"private Collider pickupRange"}</code> |
+| <Link id="m-previouslydocked" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" previouslyDocked"}</code> |
+| <Link id="m-quantitystored" /><code>{"private int quantityStored"}</code> |
+| <Link id="m-scaleanimator" /><code>{"private "}<Link to="/game-api/types/global-s/scaleanimator">{"ScaleAnimator"}</Link>{" scaleAnimator"}</code> |
+| <Link id="m-scaler" /><code>{"private "}<Link to="/game-api/types/global-m-o/nearbyplayerscaler">{"NearbyPlayerScaler"}</Link>{" scaler"}</code> |
+| <Link id="m-serializeddata" /><code>{"private "}<Link to="/game-api/types/alta-world/saveddynamicobject">{"SavedDynamicObject"}</Link>{" serializedData"}</code> |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" settings"}</code> |
+| <Link id="m-snappoint" /><code>{"private Transform snapPoint"}</code> |
+
+</details>
 
 ## Properties
 
@@ -67,8 +75,16 @@ A slot that holds pickups: backpack and belt slots, pouches, racks, crafting sta
 | <Link id="m-snappoint-2" /><code>{"Transform SnapPoint { get; }"}</code> | Transform docked pickups are parented to. |
 | <Link id="m-syncquantity" /><code><Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" SyncQuantity { get; private set; }"}</code> | The network sync that sends the stored count to clients. |
 | <Link id="m-totalweight" /><code>{"float TotalWeight { get; }"}</code> | Weight of the docked pickup times the stored count. |
-| <Link id="m-alta-crafting-iblockgenericdecrafting-candecraft" /><code>{"private bool Alta.Crafting.IBlockGenericDecrafting.CanDecraft { get; }"}</code> |  |
-| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |  |
+
+<details>
+<summary>2 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-crafting-iblockgenericdecrafting-candecraft" /><code>{"private bool Alta.Crafting.IBlockGenericDecrafting.CanDecraft { get; }"}</code> |
+| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -118,42 +134,50 @@ A slot that holds pickups: backpack and belt slots, pouches, racks, crafting sta
 | <Link id="m-undockunlimitedpouches" /><code>{"bool UndockUnlimitedPouches(int quantity, out List<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> pickups)"}</code> | Splits that quantity into as many pickups or pouches as needed, one stack each. False if there isn't enough. |
 | <Link id="m-updatechangedcontent" /><code>{"void UpdateChangedContent()"}</code> | Re-places the docked pickup, refreshes the count text and raises `UpdateContent`. |
 | <Link id="m-updatequantitystoredtext" /><code>{"void UpdateQuantityStoredText()"}</code> | Client: refreshes the count shown on the dock, hiding it for empty, non-stackable or unique crafted items. |
-| <Link id="m-addsoundlisteners" /><code>{"private void AddSoundListeners()"}</code> |  |
 | <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Clears a stored count that has no item, sets up the hover scale animation and turns off the pickup range collider on a headless server. |
-| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |  |
-| <Link id="m-changepickupssavemode" /><code>{"private void ChangePickupsSaveMode("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, bool isSavingNormaly)"}</code> |  |
-| <Link id="m-checkcraftingflip" /><code>{"private static Quaternion CheckCraftingFlip("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, Quaternion rotation)"}</code> |  |
-| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |  |
-| <Link id="m-cleandestroy" /><code>{"private void CleanDestroy()"}</code> |  |
-| <Link id="m-cleanupdocked" /><code>{"private void CleanupDocked("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, bool isUnload)"}</code> |  |
-| <Link id="m-createnewimage" /><code>{"private void CreateNewImage("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" takenOutPickup)"}</code> |  |
-| <Link id="m-dock" /><code>{"private void IDockable.Dock("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int dockingQuantity, bool isInstantMovementForced)"}</code> |  |
-| <Link id="m-dockeddestroyed" /><code>{"private void DockedDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-dockhoversound" /><code>{"private void DockHoverSound("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, int oldCount)"}</code> |  |
-| <Link id="m-generateserializeddata" /><code>{"private void GenerateSerializedData("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" takenOutPickup)"}</code> |  |
-| <Link id="m-initializeaslocalplayer" /><code>{"private void IInitializeAsLocalPlayer.InitializeAsLocalPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |
-| <Link id="m-initializeasremoteplayer" /><code>{"private void IInitializeAsRemotePlayer.InitializeAsRemotePlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |
-| <Link id="m-itemdockedsound" /><code>{"private void ItemDockedSound("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
-| <Link id="m-itemundockedsound" /><code>{"private void ItemUnDockedSound("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
-| <Link id="m-loaddockpickup" /><code>{"private void LoadDockPickup("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" pickupPrefab, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, int childIndex)"}</code> |  |
-| <Link id="m-loadsetup" /><code>{"private void Alta.Chunks.ISavableFull.LoadSetup()"}</code> |  |
-| <Link id="m-movetodockinstant" /><code>{"private void MoveToDockInstant("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, bool isScaling)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-ondocked" /><code>{"private void OnDocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-onundocked" /><code>{"private void OnUndocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Defaults the snap point to the dock's own transform. |
-| <Link id="m-onweightchanged" /><code>{"private void OnWeightChanged()"}</code> |  |
-| <Link id="m-removesoundlisteners" /><code>{"private void RemoveSoundListeners()"}</code> |  |
-| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-serializequantity" /><code>{"private void SerializeQuantity("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-soundhookinitializedelay" /><code>{"private void SoundHookInitializeDelay()"}</code> |  |
-| <Link id="m-subdockedevent" /><code>{"private void SubDockedEvent("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" pickupDock)"}</code> |  |
-| <Link id="m-subundockedevent" /><code>{"private void SubUndockedEvent("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" pickupDock)"}</code> |  |
-| <Link id="m-undock" /><code>{"private void IDockable.Undock("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int quantity)"}</code> |  |
-| <Link id="m-updateplayerownership" /><code>{"private void UpdatePlayerOwnership("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |
-| <Link id="m-updatequantity" /><code>{"private IEnumerator UpdateQuantity() (iterator)"}</code> |  |
-| <Link id="m-waitforanimation" /><code>{"private IEnumerator WaitForAnimation() (iterator)"}</code> |  |
+
+<details>
+<summary>34 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-addsoundlisteners" /><code>{"private void AddSoundListeners()"}</code> |
+| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |
+| <Link id="m-changepickupssavemode" /><code>{"private void ChangePickupsSaveMode("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, bool isSavingNormaly)"}</code> |
+| <Link id="m-checkcraftingflip" /><code>{"private static Quaternion CheckCraftingFlip("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, Quaternion rotation)"}</code> |
+| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |
+| <Link id="m-cleandestroy" /><code>{"private void CleanDestroy()"}</code> |
+| <Link id="m-cleanupdocked" /><code>{"private void CleanupDocked("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, bool isUnload)"}</code> |
+| <Link id="m-createnewimage" /><code>{"private void CreateNewImage("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" takenOutPickup)"}</code> |
+| <Link id="m-dock" /><code>{"private void IDockable.Dock("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int dockingQuantity, bool isInstantMovementForced)"}</code> |
+| <Link id="m-dockeddestroyed" /><code>{"private void DockedDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| <Link id="m-dockhoversound" /><code>{"private void DockHoverSound("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, int oldCount)"}</code> |
+| <Link id="m-generateserializeddata" /><code>{"private void GenerateSerializedData("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" takenOutPickup)"}</code> |
+| <Link id="m-initializeaslocalplayer" /><code>{"private void IInitializeAsLocalPlayer.InitializeAsLocalPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |
+| <Link id="m-initializeasremoteplayer" /><code>{"private void IInitializeAsRemotePlayer.InitializeAsRemotePlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |
+| <Link id="m-itemdockedsound" /><code>{"private void ItemDockedSound("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
+| <Link id="m-itemundockedsound" /><code>{"private void ItemUnDockedSound("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
+| <Link id="m-loaddockpickup" /><code>{"private void LoadDockPickup("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" pickupPrefab, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, int childIndex)"}</code> |
+| <Link id="m-loadsetup" /><code>{"private void Alta.Chunks.ISavableFull.LoadSetup()"}</code> |
+| <Link id="m-movetodockinstant" /><code>{"private void MoveToDockInstant("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, bool isScaling)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-ondocked" /><code>{"private void OnDocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |
+| <Link id="m-onundocked" /><code>{"private void OnUndocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |
+| <Link id="m-onweightchanged" /><code>{"private void OnWeightChanged()"}</code> |
+| <Link id="m-removesoundlisteners" /><code>{"private void RemoveSoundListeners()"}</code> |
+| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| <Link id="m-serializequantity" /><code>{"private void SerializeQuantity("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-soundhookinitializedelay" /><code>{"private void SoundHookInitializeDelay()"}</code> |
+| <Link id="m-subdockedevent" /><code>{"private void SubDockedEvent("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" pickupDock)"}</code> |
+| <Link id="m-subundockedevent" /><code>{"private void SubUndockedEvent("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" pickupDock)"}</code> |
+| <Link id="m-undock" /><code>{"private void IDockable.Undock("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int quantity)"}</code> |
+| <Link id="m-updateplayerownership" /><code>{"private void UpdatePlayerOwnership("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |
+| <Link id="m-updatequantity" /><code>{"private IEnumerator UpdateQuantity() (iterator)"}</code> |
+| <Link id="m-waitforanimation" /><code>{"private IEnumerator WaitForAnimation() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

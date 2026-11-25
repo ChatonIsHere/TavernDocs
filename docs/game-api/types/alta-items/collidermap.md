@@ -16,23 +16,28 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ColliderMap(Collider collider, "}<Link to="/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" modifier)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ColliderMap(Collider collider, "}<Link to="/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" modifier)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-collider" /><code>{"private Collider collider"}</code> |  |
-| <Link id="m-modifier" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" modifier"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-collider" /><code>{"private Collider collider"}</code> |
+| <Link id="m-modifier" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" modifier"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-collider-2" /><code>{"Collider Collider { get; }"}</code> |  |
-| <Link id="m-modifier-2" /><code><Link to="/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" Modifier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-collider-2" /><code>{"Collider Collider { get; }"}</code> |
+| <Link id="m-modifier-2" /><code><Link to="/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" Modifier { get; }"}</code> |
 
 ## Used in
 

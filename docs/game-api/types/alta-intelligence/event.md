@@ -18,17 +18,22 @@ One remembered event in an AI's `History`: some knowledge atoms that fade over a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code><Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{"("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" next, "}<Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{" day, float lifeTime, params "}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{"[] knowledge)"}</code> |  |
-| <Link id="m-ctor-2" /><code><Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{"("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" previous)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code><Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{"("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" next, "}<Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{" day, float lifeTime, params "}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{"[] knowledge)"}</code> |
+| <Link id="m-ctor-2" /><code><Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{"("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" previous)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-nextactive" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" nextActive"}</code> |  |
-| <Link id="m-previousactive" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" previousActive"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-nextactive" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" nextActive"}</code> |
+| <Link id="m-previousactive" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" previousActive"}</code> |
+
+</details>
 
 ## Properties
 
@@ -38,15 +43,31 @@ One remembered event in an AI's `History`: some knowledge atoms that fade over a
 | <Link id="m-isalive" /><code>{"bool IsAlive { get; private set; }"}</code> | False once the event is older than its lifetime and has left the active list. |
 | <Link id="m-knowledge" /><code><Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{"[] Knowledge { get; private set; }"}</code> | The knowledge atoms this event holds. Their age weighting falls from 1 to 0 as the event ages. |
 | <Link id="m-next" /><code><Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" Next { get; }"}</code> | The next active event in the history list. |
-| <Link id="m-age" /><code>{"private float Age { get; set; }"}</code> |  |
-| <Link id="m-lifetime" /><code>{"private float LifeTime { get; set; }"}</code> |  |
+
+<details>
+<summary>2 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-age" /><code>{"private float Age { get; set; }"}</code> |
+| <Link id="m-lifetime" /><code>{"private float LifeTime { get; set; }"}</code> |
+
+</details>
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-update" /><code>{"void Update(float duration)"}</code> | Ages the event, lowering its knowledge weighting, and unlinks it once its lifetime runs out. |
-| <Link id="m-ageweightknowledge" /><code>{"private void AgeWeightKnowledge(float weight)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ageweightknowledge" /><code>{"private void AgeWeightKnowledge(float weight)"}</code> |
+
+</details>
 
 ## Used in
 

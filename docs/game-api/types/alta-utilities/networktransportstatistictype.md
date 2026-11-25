@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, `Alta.Utilities.Profiling.NetworkTransportMetric
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bytes" /><code>{"Bytes = 0"}</code> |  |
-| <Link id="m-count" /><code>{"Count = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bytes" /><code>{"Bytes = 0"}</code> |
+| <Link id="m-count" /><code>{"Count = 1"}</code> |
 
 ## Used in
 

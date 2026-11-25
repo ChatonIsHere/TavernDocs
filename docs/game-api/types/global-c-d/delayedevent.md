@@ -17,22 +17,35 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DelayedEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DelayedEvent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-delayedevent" /><code>{"private UnityEvent delayedEvent"}</code> |  |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |  |
-| <Link id="m-isinvokedonstart" /><code>{"private bool isInvokedOnStart"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-delayedevent" /><code>{"private UnityEvent delayedEvent"}</code> |
+| <Link id="m-duration" /><code>{"private float duration"}</code> |
+| <Link id="m-isinvokedonstart" /><code>{"private bool isInvokedOnStart"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-triggerevent" /><code>{"private IEnumerator TriggerEvent() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invoke" /><code>{"void Invoke()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-triggerevent" /><code>{"private IEnumerator TriggerEvent() (iterator)"}</code> |
+
+</details>

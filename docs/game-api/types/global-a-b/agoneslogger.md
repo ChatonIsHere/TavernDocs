@@ -17,26 +17,39 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AgonesLogger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AgonesLogger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-prefix" /><code>{"string Prefix { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-prefix" /><code>{"string Prefix { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-log" /><code>{"void Log(LogLevel level, string message, params object[] args)"}</code> |  |
-| <Link id="m-log-2" /><code>{"void Log(LogLevel level, Exception exception, string message, params object[] args)"}</code> |  |
-| <Link id="m-logtonlog" /><code>{"private static void LogToNLog(Exception exception, LogLevel level, string message, object[] args)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-log" /><code>{"void Log(LogLevel level, string message, params object[] args)"}</code> |
+| <Link id="m-log-2" /><code>{"void Log(LogLevel level, Exception exception, string message, params object[] args)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-logtonlog" /><code>{"private static void LogToNLog(Exception exception, LogLevel level, string message, object[] args)"}</code> |
+
+</details>

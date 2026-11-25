@@ -20,9 +20,9 @@ Harmony patches that raise the game's `ConsoleEvents.PlayerJoined` and `PlayerLe
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ConsoleEventsPatch()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConsoleEventsPatch()"}</code> |
 
 ## Methods
 

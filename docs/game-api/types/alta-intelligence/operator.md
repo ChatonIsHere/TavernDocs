@@ -21,9 +21,9 @@ Base for predicates that join two other predicates (such as and), in the creatur
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Operator(string name, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" left, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Operator(string name, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" left, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> |
 
 ## Properties
 

@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, `Alta.Forests`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-landbridge" /><code>{"LandBridge = 2"}</code> |  |
-| <Link id="m-normal" /><code>{"Normal = 1"}</code> |  |
-| <Link id="m-waterbridge" /><code>{"WaterBridge = 4"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-landbridge" /><code>{"LandBridge = 2"}</code> |
+| <Link id="m-normal" /><code>{"Normal = 1"}</code> |
+| <Link id="m-waterbridge" /><code>{"WaterBridge = 4"}</code> |
 
 ## Used in
 

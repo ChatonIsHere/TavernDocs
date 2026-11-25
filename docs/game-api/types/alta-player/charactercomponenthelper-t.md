@@ -20,15 +20,20 @@ Base for editor helper scripts that sit next to a `CharacterComponentController`
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected CharacterComponentHelper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected CharacterComponentHelper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-componentcontroller" /><code>{"private T componentController"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-componentcontroller" /><code>{"private T componentController"}</code> |
+
+</details>
 
 ## Properties
 

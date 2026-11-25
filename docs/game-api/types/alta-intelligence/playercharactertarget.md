@@ -20,27 +20,32 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerCharacterTarget()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerCharacterTarget()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-character" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" character"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-character" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" character"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-character-2" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" Character { get; }"}</code> |  |
-| <Link id="m-groundposition" /><code>{"override Vector3 GroundPosition { get; }"}</code> |  |
-| <Link id="m-isalive" /><code>{"override bool IsAlive { get; }"}</code> |  |
-| <Link id="m-position" /><code>{"override Vector3 Position { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-character-2" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" Character { get; }"}</code> |
+| <Link id="m-groundposition" /><code>{"override Vector3 GroundPosition { get; }"}</code> |
+| <Link id="m-isalive" /><code>{"override bool IsAlive { get; }"}</code> |
+| <Link id="m-position" /><code>{"override Vector3 Position { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-attacks" /><code>{"override IEnumerable<"}<Link to="/game-api/types/alta-intelligence/attackparameters">{"AttackParameters"}</Link>{"> Attacks() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-attacks" /><code>{"override IEnumerable<"}<Link to="/game-api/types/alta-intelligence/attackparameters">{"AttackParameters"}</Link>{"> Attacks() (iterator)"}</code> |

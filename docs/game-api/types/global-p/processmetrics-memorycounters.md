@@ -17,18 +17,18 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cb" /><code>{"int cb"}</code> |  |
-| <Link id="m-pagefaultcount" /><code>{"int PageFaultCount"}</code> |  |
-| <Link id="m-pagefileusage" /><code>{"IntPtr PagefileUsage"}</code> |  |
-| <Link id="m-peakpagefileusage" /><code>{"IntPtr PeakPagefileUsage"}</code> |  |
-| <Link id="m-peakworkingsetsize" /><code>{"IntPtr PeakWorkingSetSize"}</code> |  |
-| <Link id="m-quotanonpagedpoolusage" /><code>{"IntPtr QuotaNonPagedPoolUsage"}</code> |  |
-| <Link id="m-quotapagedpoolusage" /><code>{"IntPtr QuotaPagedPoolUsage"}</code> |  |
-| <Link id="m-quotapeaknonpagedpoolusage" /><code>{"IntPtr QuotaPeakNonPagedPoolUsage"}</code> |  |
-| <Link id="m-quotapeakpagedpoolusage" /><code>{"IntPtr QuotaPeakPagedPoolUsage"}</code> |  |
-| <Link id="m-workingsetsize" /><code>{"IntPtr WorkingSetSize"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cb" /><code>{"int cb"}</code> |
+| <Link id="m-pagefaultcount" /><code>{"int PageFaultCount"}</code> |
+| <Link id="m-pagefileusage" /><code>{"IntPtr PagefileUsage"}</code> |
+| <Link id="m-peakpagefileusage" /><code>{"IntPtr PeakPagefileUsage"}</code> |
+| <Link id="m-peakworkingsetsize" /><code>{"IntPtr PeakWorkingSetSize"}</code> |
+| <Link id="m-quotanonpagedpoolusage" /><code>{"IntPtr QuotaNonPagedPoolUsage"}</code> |
+| <Link id="m-quotapagedpoolusage" /><code>{"IntPtr QuotaPagedPoolUsage"}</code> |
+| <Link id="m-quotapeaknonpagedpoolusage" /><code>{"IntPtr QuotaPeakNonPagedPoolUsage"}</code> |
+| <Link id="m-quotapeakpagedpoolusage" /><code>{"IntPtr QuotaPeakPagedPoolUsage"}</code> |
+| <Link id="m-workingsetsize" /><code>{"IntPtr WorkingSetSize"}</code> |
 
 ## Used in
 

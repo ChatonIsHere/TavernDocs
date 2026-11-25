@@ -17,28 +17,43 @@ A **class** in `Root.Township`, `ATT.MicroTutorial.Steps`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PrefabInPositionObserver()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PrefabInPositionObserver()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-domain" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/domain">{"Domain"}</Link>{" domain"}</code> |  |
-| <Link id="m-eventbus" /><code>{"private static IEventBus eventBus"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-logprefix" /><code>{"private const string LogPrefix"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-domain" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/domain">{"Domain"}</Link>{" domain"}</code> |
+| <Link id="m-eventbus" /><code>{"private static IEventBus eventBus"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-logprefix" /><code>{"private const string LogPrefix"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-eventbus-2" /><code>{"private static IEventBus EventBus { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-eventbus-2" /><code>{"private static IEventBus EventBus { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>

@@ -18,9 +18,14 @@ A **static class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkmodifiablestatic" /><code>{"private static string CheckModifiableStatic()"}</code> |  |
-| <Link id="m-fixmodifiablestatic" /><code>{"private static string FixModifiableStatic(params uint[] hashes)"}</code> |  |
-| <Link id="m-listmodifiablestatic" /><code>{"private static string ListModifiableStatic()"}</code> |  |
-| <Link id="m-setmodifiablestatic" /><code>{"private static string SetModifiableStatic(uint hash, bool state)"}</code> |  |
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-checkmodifiablestatic" /><code>{"private static string CheckModifiableStatic()"}</code> |
+| <Link id="m-fixmodifiablestatic" /><code>{"private static string FixModifiableStatic(params uint[] hashes)"}</code> |
+| <Link id="m-listmodifiablestatic" /><code>{"private static string ListModifiableStatic()"}</code> |
+| <Link id="m-setmodifiablestatic" /><code>{"private static string SetModifiableStatic(uint hash, bool state)"}</code> |
+
+</details>

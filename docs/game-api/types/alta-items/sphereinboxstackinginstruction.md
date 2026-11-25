@@ -19,30 +19,35 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SphereInBoxStackingInstruction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SphereInBoxStackingInstruction()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-diameter" /><code>{"private float diameter"}</code> |  |
-| <Link id="m-spacing" /><code>{"private float spacing"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-diameter" /><code>{"private float diameter"}</code> |
+| <Link id="m-spacing" /><code>{"private float spacing"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-diameter-2" /><code>{"float Diameter { get; }"}</code> |  |
-| <Link id="m-size" /><code>{"float Size { get; }"}</code> |  |
-| <Link id="m-spacing-2" /><code>{"float Spacing { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-diameter-2" /><code>{"float Diameter { get; }"}</code> |
+| <Link id="m-size" /><code>{"float Size { get; }"}</code> |
+| <Link id="m-spacing-2" /><code>{"float Spacing { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-drawgizmos" /><code>{"override void DrawGizmos(Transform transform)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-drawgizmos" /><code>{"override void DrawGizmos(Transform transform)"}</code> |
 
 ## Used in
 

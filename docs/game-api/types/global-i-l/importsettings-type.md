@@ -17,10 +17,10 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-mesh" /><code>{"Mesh = 1"}</code> |  |
-| <Link id="m-texture" /><code>{"Texture = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-mesh" /><code>{"Mesh = 1"}</code> |
+| <Link id="m-texture" /><code>{"Texture = 0"}</code> |
 
 ## Used in
 

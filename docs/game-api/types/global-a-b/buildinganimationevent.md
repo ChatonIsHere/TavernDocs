@@ -17,9 +17,9 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BuildingAnimationEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BuildingAnimationEvent()"}</code> |
 
 ## Used in
 

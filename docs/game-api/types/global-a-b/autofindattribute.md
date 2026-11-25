@@ -17,12 +17,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AutoFindAttribute(bool isSearchingChildren = false)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AutoFindAttribute(bool isSearchingChildren = false)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-issearchingchildren" /><code>{"bool IsSearchingChildren { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-issearchingchildren" /><code>{"bool IsSearchingChildren { get; }"}</code> |

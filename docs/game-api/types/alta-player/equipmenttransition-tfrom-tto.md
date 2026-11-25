@@ -18,26 +18,39 @@ An **abstract class** in `Root.Township`, `Alta.PlayerStates.Transitions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EquipmentTransition("}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" destinationType)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EquipmentTransition("}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" destinationType)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-trigger" /><code>{"protected static Action trigger"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-trigger" /><code>{"protected static Action trigger"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-equipmentsettings" /><code>{"private "}<Link to="/game-api/types/alta-player/equipmentstatesettings">{"EquipmentStateSettings"}</Link>{" EquipmentSettings { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-equipmentsettings" /><code>{"private "}<Link to="/game-api/types/alta-player/equipmentstatesettings">{"EquipmentStateSettings"}</Link>{" EquipmentSettings { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> |  |
-| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> |  |
-| <Link id="m-triggered" /><code>{"private void Triggered()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> |
+| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-triggered" /><code>{"private void Triggered()"}</code> |
+
+</details>

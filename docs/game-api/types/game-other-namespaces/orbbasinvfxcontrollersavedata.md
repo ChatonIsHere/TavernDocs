@@ -19,17 +19,17 @@ A **class** in `Root.Township`, `Features.Gameplay`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OrbBasinVfxControllerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OrbBasinVfxControllerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-orbobtainedvfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" OrbObtainedVfxData"}</code> |  |
-| <Link id="m-permanentunlockvfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" PermanentUnlockVfxData"}</code> |  |
-| <Link id="m-towercompletionvfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" TowerCompletionVfxData"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-orbobtainedvfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" OrbObtainedVfxData"}</code> |
+| <Link id="m-permanentunlockvfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" PermanentUnlockVfxData"}</code> |
+| <Link id="m-towercompletionvfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" TowerCompletionVfxData"}</code> |
 
 ## Used in
 

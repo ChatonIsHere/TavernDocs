@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PurchaseResult()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PurchaseResult("}<Link to="/game-api/types/assembly-api-models/purchaseresulttype">{"PurchaseResultType"}</Link>{" result)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PurchaseResult()"}</code> |
+| <Link id="m-ctor-2" /><code>{"PurchaseResult("}<Link to="/game-api/types/assembly-api-models/purchaseresulttype">{"PurchaseResultType"}</Link>{" result)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-result" /><code><Link to="/game-api/types/assembly-api-models/purchaseresulttype">{"PurchaseResultType"}</Link>{" Result { get; set; }"}</code> |  |
-| <Link id="m-transactionidentifier" /><code>{"int? TransactionIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-result" /><code><Link to="/game-api/types/assembly-api-models/purchaseresulttype">{"PurchaseResultType"}</Link>{" Result { get; set; }"}</code> |
+| <Link id="m-transactionidentifier" /><code>{"int? TransactionIdentifier { get; set; }"}</code> |
 
 ## Used in
 

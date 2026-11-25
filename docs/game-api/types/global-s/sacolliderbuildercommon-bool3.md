@@ -17,23 +17,23 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Bool3(bool x, bool y, bool z)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Bool3(bool x, bool y, bool z)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-x" /><code>{"bool x"}</code> |  |
-| <Link id="m-y" /><code>{"bool y"}</code> |  |
-| <Link id="m-z" /><code>{"bool z"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-x" /><code>{"bool x"}</code> |
+| <Link id="m-y" /><code>{"bool y"}</code> |
+| <Link id="m-z" /><code>{"bool z"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setvalue" /><code>{"void SetValue(bool x, bool y, bool z)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setvalue" /><code>{"void SetValue(bool x, bool y, bool z)"}</code> |
 
 ## Used in
 

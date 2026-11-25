@@ -17,23 +17,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerBestTimes()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerBestTimes()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-definitions" /><code><Link to="/game-api/types/global-i-l/leaderboarddefinition">{"LeaderboardDefinition"}</Link>{"[] definitions"}</code> |  |
-| <Link id="m-identifier" /><code>{"int identifier"}</code> |  |
-| <Link id="m-times" /><code>{"int[] times"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-definitions" /><code><Link to="/game-api/types/global-i-l/leaderboarddefinition">{"LeaderboardDefinition"}</Link>{"[] definitions"}</code> |
+| <Link id="m-identifier" /><code>{"int identifier"}</code> |
+| <Link id="m-times" /><code>{"int[] times"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code><Link to="/game-api/types/global-i-l/leaderboardmanagerdata-playerbesttimes">{"LeaderboardManagerData.PlayerBestTimes"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code><Link to="/game-api/types/global-i-l/leaderboardmanagerdata-playerbesttimes">{"LeaderboardManagerData.PlayerBestTimes"}</Link>{" Migrate()"}</code> |
 
 ## Used in
 

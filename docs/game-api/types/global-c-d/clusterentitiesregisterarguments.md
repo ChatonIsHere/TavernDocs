@@ -16,30 +16,35 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClusterEntitiesRegisterArguments(uint optionHash, int count, uint[] entities)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClusterEntitiesRegisterArguments(uint optionHash, int count, uint[] entities)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entities" /><code>{"private uint[] entities"}</code> |  |
-| <Link id="m-optionhash" /><code>{"private uint optionHash"}</code> |  |
-| <Link id="m-quantityentities" /><code>{"private uint quantityEntities"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entities" /><code>{"private uint[] entities"}</code> |
+| <Link id="m-optionhash" /><code>{"private uint optionHash"}</code> |
+| <Link id="m-quantityentities" /><code>{"private uint quantityEntities"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entities-2" /><code>{"uint[] Entities { get; }"}</code> |  |
-| <Link id="m-option" /><code>{"uint Option { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-entities-2" /><code>{"uint[] Entities { get; }"}</code> |
+| <Link id="m-option" /><code>{"uint Option { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
 
 ## Used in
 

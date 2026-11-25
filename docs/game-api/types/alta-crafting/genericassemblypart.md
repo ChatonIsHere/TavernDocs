@@ -18,32 +18,45 @@ A **class** in `Root.Township`, `Alta.Crafting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenericAssemblyPart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenericAssemblyPart()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-availablepositions" /><code>{"private "}<Link to="/game-api/types/alta-crafting/genericassemblystation-assemblyposition">{"GenericAssemblyStation.AssemblyPosition"}</Link>{" availablePositions"}</code> |  |
-| <Link id="m-craftingpart" /><code>{"private "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" craftingPart"}</code> |  |
-| <Link id="m-downhangingposition" /><code>{"private "}<Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" downHangingPosition"}</code> |  |
-| <Link id="m-uphangingposition" /><code>{"private "}<Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" upHangingPosition"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-availablepositions" /><code>{"private "}<Link to="/game-api/types/alta-crafting/genericassemblystation-assemblyposition">{"GenericAssemblyStation.AssemblyPosition"}</Link>{" availablePositions"}</code> |
+| <Link id="m-craftingpart" /><code>{"private "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" craftingPart"}</code> |
+| <Link id="m-downhangingposition" /><code>{"private "}<Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" downHangingPosition"}</code> |
+| <Link id="m-uphangingposition" /><code>{"private "}<Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" upHangingPosition"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-availablepositions-2" /><code><Link to="/game-api/types/alta-crafting/genericassemblystation-assemblyposition">{"GenericAssemblyStation.AssemblyPosition"}</Link>{" AvailablePositions { get; }"}</code> |  |
-| <Link id="m-craftingpart-2" /><code><Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-availablepositions-2" /><code><Link to="/game-api/types/alta-crafting/genericassemblystation-assemblyposition">{"GenericAssemblyStation.AssemblyPosition"}</Link>{" AvailablePositions { get; }"}</code> |
+| <Link id="m-craftingpart-2" /><code><Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setpositionlocal" /><code>{"void SetPositionLocal("}<Link to="/game-api/types/alta-crafting/genericassemblystation-assemblyposition">{"GenericAssemblyStation.AssemblyPosition"}</Link>{" position)"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setpositionlocal" /><code>{"void SetPositionLocal("}<Link to="/game-api/types/alta-crafting/genericassemblystation-assemblyposition">{"GenericAssemblyStation.AssemblyPosition"}</Link>{" position)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -16,18 +16,18 @@ A **struct** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TeleportEffectArgument(bool isDeparture, int layer, Vector3 position, uint teleportingPlayer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TeleportEffectArgument(bool isDeparture, int layer, Vector3 position, uint teleportingPlayer)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdeparture" /><code>{"bool isDeparture"}</code> |  |
-| <Link id="m-layer" /><code>{"int layer"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-teleportingplayer" /><code>{"uint teleportingPlayer"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isdeparture" /><code>{"bool isDeparture"}</code> |
+| <Link id="m-layer" /><code>{"int layer"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| <Link id="m-teleportingplayer" /><code>{"uint teleportingPlayer"}</code> |
 
 ## Used in
 

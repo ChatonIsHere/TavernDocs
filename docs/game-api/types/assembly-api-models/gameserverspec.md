@@ -17,16 +17,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameServerSpec()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameServerSpec()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ports" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/specportconfig">{"SpecPortConfig"}</Link>{"> Ports { get; set; }"}</code> |  |
-| <Link id="m-template" /><code><Link to="/game-api/types/assembly-api-models/gameserverspec-gameservertemplate">{"GameServerSpec.GameServerTemplate"}</Link>{" Template { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ports" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/specportconfig">{"SpecPortConfig"}</Link>{"> Ports { get; set; }"}</code> |
+| <Link id="m-template" /><code><Link to="/game-api/types/assembly-api-models/gameserverspec-gameservertemplate">{"GameServerSpec.GameServerTemplate"}</Link>{" Template { get; set; }"}</code> |
 
 ## Used in
 

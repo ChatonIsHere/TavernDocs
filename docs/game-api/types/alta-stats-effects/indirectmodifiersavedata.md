@@ -16,18 +16,18 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"IndirectModifierSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"IndirectModifierSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-basevalue" /><code>{"float baseValue"}</code> |  |
-| <Link id="m-duration" /><code>{"uint duration"}</code> |  |
-| <Link id="m-tick" /><code>{"uint tick"}</code> |  |
-| <Link id="m-valueoverduration" /><code><Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-basevalue" /><code>{"float baseValue"}</code> |
+| <Link id="m-duration" /><code>{"uint duration"}</code> |
+| <Link id="m-tick" /><code>{"uint tick"}</code> |
+| <Link id="m-valueoverduration" /><code><Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration"}</code> |
 
 ## Used in
 

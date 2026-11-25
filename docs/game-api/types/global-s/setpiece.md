@@ -18,30 +18,43 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SetPiece()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SetPiece()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" data"}</code> |  |
-| <Link id="m-olddata" /><code>{"private "}<Link to="/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" oldData"}</code> |  |
-| <Link id="m-savemode" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" data"}</code> |
+| <Link id="m-olddata" /><code>{"private "}<Link to="/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" oldData"}</code> |
+| <Link id="m-savemode" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clearpieceineditor" /><code>{"void ClearPieceInEditor()"}</code> |  |
-| <Link id="m-ghostpieceforeditor" /><code>{"void GhostPieceForEditor()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-storepieceineditor" /><code>{"void StorePieceInEditor()"}</code> |  |
-| <Link id="m-storepieceineditorwithoutdestroy" /><code>{"void StorePieceInEditorWithoutDestroy()"}</code> |  |
-| <Link id="m-addedtochunk" /><code>{"private void AddedToChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-applyghostingeffecttorenderer" /><code>{"private static GameObject ApplyGhostingEffectToRenderer(Renderer renderer)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-preparenetworkprefabsavemode" /><code>{"private void PrepareNetworkPrefabSaveMode()"}</code> |  |
-| <Link id="m-save" /><code>{"private void Save()"}</code> |  |
-| <Link id="m-updatecomponentdatareference" /><code>{"private void UpdateComponentDataReference()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clearpieceineditor" /><code>{"void ClearPieceInEditor()"}</code> |
+| <Link id="m-ghostpieceforeditor" /><code>{"void GhostPieceForEditor()"}</code> |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+| <Link id="m-storepieceineditor" /><code>{"void StorePieceInEditor()"}</code> |
+| <Link id="m-storepieceineditorwithoutdestroy" /><code>{"void StorePieceInEditorWithoutDestroy()"}</code> |
+
+<details>
+<summary>6 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-addedtochunk" /><code>{"private void AddedToChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| <Link id="m-applyghostingeffecttorenderer" /><code>{"private static GameObject ApplyGhostingEffectToRenderer(Renderer renderer)"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| <Link id="m-preparenetworkprefabsavemode" /><code>{"private void PrepareNetworkPrefabSaveMode()"}</code> |
+| <Link id="m-save" /><code>{"private void Save()"}</code> |
+| <Link id="m-updatecomponentdatareference" /><code>{"private void UpdateComponentDataReference()"}</code> |
+
+</details>

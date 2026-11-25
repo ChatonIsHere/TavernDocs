@@ -19,13 +19,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BasicDecayData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BasicDecayData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdisabled" /><code>{"bool isDisabled"}</code> |  |
-| <Link id="m-timelineentry" /><code>{"TimeSpan timelineEntry"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isdisabled" /><code>{"bool isDisabled"}</code> |
+| <Link id="m-timelineentry" /><code>{"TimeSpan timelineEntry"}</code> |

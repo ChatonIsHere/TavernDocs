@@ -17,24 +17,29 @@ A **class** in `Root.Township`, `Township.Climbing`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClimbingEditorSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClimbingEditorSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-averagejumpdistance" /><code>{"private float averageJumpDistance"}</code> |  |
-| <Link id="m-maxarmspan" /><code>{"private float maxArmSpan"}</code> |  |
-| <Link id="m-maximumjumpdistance" /><code>{"private float maximumJumpDistance"}</code> |  |
-| <Link id="m-staminaconsumedbydistance" /><code>{"private float staminaConsumedByDistance"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-averagejumpdistance" /><code>{"private float averageJumpDistance"}</code> |
+| <Link id="m-maxarmspan" /><code>{"private float maxArmSpan"}</code> |
+| <Link id="m-maximumjumpdistance" /><code>{"private float maximumJumpDistance"}</code> |
+| <Link id="m-staminaconsumedbydistance" /><code>{"private float staminaConsumedByDistance"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-averagejumpdistance-2" /><code>{"float AverageJumpDistance { get; }"}</code> |  |
-| <Link id="m-maxarmspan-2" /><code>{"float MaxArmSpan { get; }"}</code> |  |
-| <Link id="m-maximumjumpdistance-2" /><code>{"float MaximumJumpDistance { get; }"}</code> |  |
-| <Link id="m-staminaconsumedbydistance-2" /><code>{"float StaminaConsumedByDistance { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-averagejumpdistance-2" /><code>{"float AverageJumpDistance { get; }"}</code> |
+| <Link id="m-maxarmspan-2" /><code>{"float MaxArmSpan { get; }"}</code> |
+| <Link id="m-maximumjumpdistance-2" /><code>{"float MaximumJumpDistance { get; }"}</code> |
+| <Link id="m-staminaconsumedbydistance-2" /><code>{"float StaminaConsumedByDistance { get; }"}</code> |

@@ -17,18 +17,18 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GetComponentInChildrenAttribute()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GetComponentInChildrenAttribute()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-includeinactive" /><code>{"bool IncludeInActive { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-includeinactive" /><code>{"bool IncludeInActive { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getcomponent" /><code>{"override Component GetComponent(Transform transform, Type type)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getcomponent" /><code>{"override Component GetComponent(Transform transform, Type type)"}</code> |

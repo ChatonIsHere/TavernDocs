@@ -18,22 +18,22 @@ A **class** in `Root.Township`, `Alta.Carpentry`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OuterStage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OuterStage()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stagelevel" /><code>{"override "}<Link to="/game-api/types/alta-crafting/timberblock-stagelevel">{"TimberBlock.StageLevel"}</Link>{" "}<Link to="/game-api/types/alta-crafting/timberblock-stagelevel">{"StageLevel"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-stagelevel" /><code>{"override "}<Link to="/game-api/types/alta-crafting/timberblock-stagelevel">{"TimberBlock.StageLevel"}</Link>{" "}<Link to="/game-api/types/alta-crafting/timberblock-stagelevel">{"StageLevel"}</Link>{" { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkdone" /><code>{"protected override void CheckDone("}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{" piece)"}</code> |  |
-| <Link id="m-finalizestage" /><code>{"protected override void FinalizeStage(bool isForced)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkdone" /><code>{"protected override void CheckDone("}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{" piece)"}</code> |
+| <Link id="m-finalizestage" /><code>{"protected override void FinalizeStage(bool isForced)"}</code> |
 
 ## Used in
 

@@ -18,28 +18,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DeferredSynchronizeInvoke()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DeferredSynchronizeInvoke()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fifotoexecute" /><code>{"private Queue<"}<Link to="/game-api/types/global-c-d/deferredsynchronizeinvoke-unityasyncresult">{"DeferredSynchronizeInvoke.UnityAsyncResult"}</Link>{"> fifoToExecute"}</code> |  |
-| <Link id="m-mainthread" /><code>{"private Thread mainThread"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fifotoexecute" /><code>{"private Queue<"}<Link to="/game-api/types/global-c-d/deferredsynchronizeinvoke-unityasyncresult">{"DeferredSynchronizeInvoke.UnityAsyncResult"}</Link>{"> fifoToExecute"}</code> |
+| <Link id="m-mainthread" /><code>{"private Thread mainThread"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invokerequired" /><code>{"bool InvokeRequired { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invokerequired" /><code>{"bool InvokeRequired { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-begininvoke" /><code>{"IAsyncResult BeginInvoke(Delegate method, object[] args)"}</code> |  |
-| <Link id="m-endinvoke" /><code>{"object EndInvoke(IAsyncResult result)"}</code> |  |
-| <Link id="m-invoke" /><code>{"object Invoke(Delegate method, object[] args)"}</code> |  |
-| <Link id="m-processqueue" /><code>{"void ProcessQueue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-begininvoke" /><code>{"IAsyncResult BeginInvoke(Delegate method, object[] args)"}</code> |
+| <Link id="m-endinvoke" /><code>{"object EndInvoke(IAsyncResult result)"}</code> |
+| <Link id="m-invoke" /><code>{"object Invoke(Delegate method, object[] args)"}</code> |
+| <Link id="m-processqueue" /><code>{"void ProcessQueue()"}</code> |

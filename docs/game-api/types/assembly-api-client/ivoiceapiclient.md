@@ -17,10 +17,10 @@ An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getjoinchanneltokenasync" /><code>{"Task<string> GetJoinChannelTokenAsync(int serverIdentifier)"}</code> |  |
-| <Link id="m-getlogintokenasync" /><code>{"Task<string> GetLoginTokenAsync()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getjoinchanneltokenasync" /><code>{"Task<string> GetJoinChannelTokenAsync(int serverIdentifier)"}</code> |
+| <Link id="m-getlogintokenasync" /><code>{"Task<string> GetLoginTokenAsync()"}</code> |
 
 ## Used in
 

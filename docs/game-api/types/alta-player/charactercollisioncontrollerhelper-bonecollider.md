@@ -18,18 +18,23 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BoneCollider()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BoneCollider()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bone" /><code>{"private Transform bone"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-bone" /><code>{"private Transform bone"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bone-2" /><code>{"Transform Bone { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bone-2" /><code>{"Transform Bone { get; set; }"}</code> |

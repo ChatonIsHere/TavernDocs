@@ -17,6 +17,6 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CommandException(string message)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CommandException(string message)"}</code> |

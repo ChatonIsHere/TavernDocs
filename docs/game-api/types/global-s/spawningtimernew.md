@@ -17,26 +17,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpawningTimerNew(string message, string objectName = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpawningTimerNew(string message, string objectName = null)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-framenumber" /><code>{"private int frameNumber"}</code> |  |
-| <Link id="m-message" /><code>{"private string message"}</code> |  |
-| <Link id="m-stopwatch" /><code>{"private Stopwatch stopwatch"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-framenumber" /><code>{"private int frameNumber"}</code> |
+| <Link id="m-message" /><code>{"private string message"}</code> |
+| <Link id="m-stopwatch" /><code>{"private Stopwatch stopwatch"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-objectname" /><code>{"string ObjectName { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-objectname" /><code>{"string ObjectName { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"private void System.IDisposable.Dispose()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"private void System.IDisposable.Dispose()"}</code> |
+
+</details>

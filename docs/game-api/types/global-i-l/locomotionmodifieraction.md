@@ -20,9 +20,9 @@ Base asset for something that changes smooth locomotion for a while, started and
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected LocomotionModifierAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected LocomotionModifierAction()"}</code> |
 
 ## Methods
 

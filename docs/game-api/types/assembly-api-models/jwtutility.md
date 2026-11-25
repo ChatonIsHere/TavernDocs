@@ -16,6 +16,6 @@ A **static class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModel
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createfromstring" /><code>{"static JwtSecurityToken CreateFromString(string rawData, bool includeRawData = false)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createfromstring" /><code>{"static JwtSecurityToken CreateFromString(string rawData, bool includeRawData = false)"}</code> |

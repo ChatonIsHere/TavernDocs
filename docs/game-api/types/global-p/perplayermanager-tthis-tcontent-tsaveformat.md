@@ -20,17 +20,22 @@ Base for server singletons that load, cache and save one content object per play
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PerPlayerManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PerPlayerManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-contents" /><code>{"private Dictionary<int, TContent> contents"}</code> |  |
-| <Link id="m-getcontenttasks" /><code>{"private Dictionary<int, Task> getContentTasks"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-contents" /><code>{"private Dictionary<int, TContent> contents"}</code> |
+| <Link id="m-getcontenttasks" /><code>{"private Dictionary<int, Task> getContentTasks"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
@@ -49,5 +54,13 @@ Base for server singletons that load, cache and save one content object per play
 | <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: registers the manager for autosave, which saves every loaded player's content. |
 | <Link id="m-onconnected" /><code>{"override async void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: starts loading the joining player's content. |
 | <Link id="m-ondisconnected" /><code>{"override void OnDisconnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: saves the leaving player's content and drops it from the cache. |
-| <Link id="m-autosave" /><code>{"private void IAutoSave.AutoSave()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-autosave" /><code>{"private void IAutoSave.AutoSave()"}</code> |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

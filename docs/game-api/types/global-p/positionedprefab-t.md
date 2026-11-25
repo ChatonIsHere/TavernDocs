@@ -17,21 +17,21 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PositionedPrefab()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PositionedPrefab()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-position" /><code>{"protected Vector3 position"}</code> |  |
-| <Link id="m-rotation" /><code>{"protected Quaternion rotation"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-position" /><code>{"protected Vector3 position"}</code> |
+| <Link id="m-rotation" /><code>{"protected Quaternion rotation"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-load" /><code>{"abstract T Load(Transform transformParent, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-save" /><code>{"virtual void Save(T scenePrefab)"}</code> |  |
-| <Link id="m-gettransform" /><code>{"protected abstract Transform GetTransform(T scenePrefab)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-load" /><code>{"abstract T Load(Transform transformParent, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| <Link id="m-save" /><code>{"virtual void Save(T scenePrefab)"}</code> |
+| <Link id="m-gettransform" /><code>{"protected abstract Transform GetTransform(T scenePrefab)"}</code> |

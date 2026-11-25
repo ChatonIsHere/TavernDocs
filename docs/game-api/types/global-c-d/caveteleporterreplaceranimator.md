@@ -17,20 +17,38 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"private CaveTeleporterReplacerAnimator("}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" originalRenderers, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing, Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> finished)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"private CaveTeleporterReplacerAnimator("}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" originalRenderers, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing, Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> finished)"}</code> |
+
+</details>
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-finished" /><code>{"private Action finished"}</code> |  |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/caveteleportsettings">{"CaveTeleportSettings"}</Link>{" settings"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-finished" /><code>{"private Action finished"}</code> |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/caveteleportsettings">{"CaveTeleportSettings"}</Link>{" settings"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animatereplace" /><code>{"static void AnimateReplace("}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" originalRenderers, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing, Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> finished)"}</code> |  |
-| <Link id="m-animation" /><code>{"private IEnumerator Animation("}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" originalRenderers, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing) (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-animatereplace" /><code>{"static void AnimateReplace("}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" originalRenderers, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing, Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> finished)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-animation" /><code>{"private IEnumerator Animation("}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" originalRenderers, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing) (iterator)"}</code> |
+
+</details>

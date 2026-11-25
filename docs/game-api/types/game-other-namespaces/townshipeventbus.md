@@ -17,6 +17,6 @@ A **class** in `Root.Township`, `ATT.EventBus`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TownshipEventBus()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TownshipEventBus()"}</code> |

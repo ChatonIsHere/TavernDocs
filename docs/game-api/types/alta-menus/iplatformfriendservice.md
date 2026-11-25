@@ -16,11 +16,11 @@ An **interface** in `Root.Township`, `Alta.Meta.Friends.Platform`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getfriends" /><code>{"Task<List<"}<Link to="/game-api/types/alta-menus/friend">{"Friend"}</Link>{">> GetFriends()"}</code> |  |
-| <Link id="m-getlinkedfriends" /><code>{"Task<List<"}<Link to="/game-api/types/alta-menus/friend">{"Friend"}</Link>{">> GetLinkedFriends()"}</code> |  |
-| <Link id="m-getunlinkedfriends" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/alta-menus/friend">{"Friend"}</Link>{">> GetUnlinkedFriends()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getfriends" /><code>{"Task<List<"}<Link to="/game-api/types/alta-menus/friend">{"Friend"}</Link>{">> GetFriends()"}</code> |
+| <Link id="m-getlinkedfriends" /><code>{"Task<List<"}<Link to="/game-api/types/alta-menus/friend">{"Friend"}</Link>{">> GetLinkedFriends()"}</code> |
+| <Link id="m-getunlinkedfriends" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/alta-menus/friend">{"Friend"}</Link>{">> GetUnlinkedFriends()"}</code> |
 
 ## Used in
 

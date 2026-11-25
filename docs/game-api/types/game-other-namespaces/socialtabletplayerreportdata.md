@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `ATT.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SocialTabletPlayerReportData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SocialTabletPlayerReportData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reason" /><code>{"string Reason"}</code> |  |
-| <Link id="m-reportedby" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" ReportedBy"}</code> |  |
-| <Link id="m-reportedplayer" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" ReportedPlayer"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-reason" /><code>{"string Reason"}</code> |
+| <Link id="m-reportedby" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" ReportedBy"}</code> |
+| <Link id="m-reportedplayer" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" ReportedPlayer"}</code> |
 
 ## Used in
 

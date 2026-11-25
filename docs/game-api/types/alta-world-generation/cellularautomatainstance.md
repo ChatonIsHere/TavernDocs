@@ -17,12 +17,12 @@ A **class** in `Root.Township`, `Alta.Caves.PluginParts`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CellularAutomataInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/cellularautomata">{"CellularAutomata"}</Link>{" part)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CellularAutomataInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/cellularautomata">{"CellularAutomata"}</Link>{" part)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offY)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offY)"}</code> |

@@ -22,9 +22,9 @@ A piece of the world that loads, unloads and saves as a unit. Every entity sits 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Chunk()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Chunk()"}</code> |
 
 ## Fields
 
@@ -32,18 +32,26 @@ A piece of the world that loads, unloads and saves as a unit. Every entity sits 
 | --- | --- |
 | <Link id="m-bitstoserialize" /><code>{"const int BitsToSerialize"}</code> | Number of bits used to send a chunk index (13, so up to 8192 chunks). |
 | <Link id="m-overworldchunktag" /><code>{"const string OverworldChunkTag"}</code> | The tag string `Overworld Chunk`. |
-| <Link id="m-autosyncs" /><code>{"private bool autoSyncs"}</code> |  |
-| <Link id="m-chunkidentifier" /><code>{"private string chunkIdentifier"}</code> |  |
-| <Link id="m-isforceloaded" /><code>{"private bool isForceLoaded"}</code> |  |
-| <Link id="m-isforceunloaded" /><code>{"private bool isForceUnloaded"}</code> |  |
-| <Link id="m-isglobal" /><code>{"private bool isGlobal"}</code> |  |
-| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-logicmanager" /><code>{"private "}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" logicManager"}</code> |  |
-| <Link id="m-maxchunksindex" /><code>{"private const int MaxChunksIndex"}</code> |  |
-| <Link id="m-minimumsaveversion" /><code>{"private "}<Link to="/game-api/types/alta-world/chunksaveversion">{"ChunkSaveVersion"}</Link>{" minimumSaveVersion"}</code> |  |
-| <Link id="m-nextindex" /><code>{"private static uint nextIndex"}</code> |  |
-| <Link id="m-syncindex" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncIndex"}</code> |  |
+
+<details>
+<summary>12 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-autosyncs" /><code>{"private bool autoSyncs"}</code> |
+| <Link id="m-chunkidentifier" /><code>{"private string chunkIdentifier"}</code> |
+| <Link id="m-isforceloaded" /><code>{"private bool isForceLoaded"}</code> |
+| <Link id="m-isforceunloaded" /><code>{"private bool isForceUnloaded"}</code> |
+| <Link id="m-isglobal" /><code>{"private bool isGlobal"}</code> |
+| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-logicmanager" /><code>{"private "}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" logicManager"}</code> |
+| <Link id="m-maxchunksindex" /><code>{"private const int MaxChunksIndex"}</code> |
+| <Link id="m-minimumsaveversion" /><code>{"private "}<Link to="/game-api/types/alta-world/chunksaveversion">{"ChunkSaveVersion"}</Link>{" minimumSaveVersion"}</code> |
+| <Link id="m-nextindex" /><code>{"private static uint nextIndex"}</code> |
+| <Link id="m-syncindex" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncIndex"}</code> |
+
+</details>
 
 ## Properties
 
@@ -100,15 +108,23 @@ A piece of the world that loads, unloads and saves as a unit. Every entity sits 
 | <Link id="m-serializeentityposition" /><code>{"static void SerializeEntityPosition("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" entity, ref Vector3 position)"}</code> | Writes or reads an entity's position along with its chunk. The server uses the entity's position chunk; clients find the best containing chunk. |
 | <Link id="m-serializeposition" /><code>{"virtual void SerializePosition("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref Vector3 position, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity = null)"}</code> | Writes or reads a position. The base class sends a full vector; `LocationChunk` overrides it to quantise within its bounds. |
 | <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Returns the chunk identifier in brackets. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-contentisfullyloaded" /><code>{"private void ContentIsFullyLoaded("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-contentisfullyunloaded" /><code>{"private void ContentIsFullyUnloaded("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-findindex" /><code>{"private uint FindIndex()"}</code> |  |
 | <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> | Removes the chunk from the static lookups. Logs an error if a static chunk is destroyed outside a reload or quit. |
 | <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Defaults the identifier to the GameObject name. |
-| <Link id="m-setindex" /><code>{"private void SetIndex(uint index)"}</code> |  |
-| <Link id="m-syncindex-2" /><code>{"private void SyncIndex("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-updateloadedasync" /><code>{"private async Task UpdateLoadedAsync()"}</code> |  |
+
+<details>
+<summary>7 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-contentisfullyloaded" /><code>{"private void ContentIsFullyLoaded("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| <Link id="m-contentisfullyunloaded" /><code>{"private void ContentIsFullyUnloaded("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| <Link id="m-findindex" /><code>{"private uint FindIndex()"}</code> |
+| <Link id="m-setindex" /><code>{"private void SetIndex(uint index)"}</code> |
+| <Link id="m-syncindex-2" /><code>{"private void SyncIndex("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-updateloadedasync" /><code>{"private async Task UpdateLoadedAsync()"}</code> |
+
+</details>
 
 ## Used in
 

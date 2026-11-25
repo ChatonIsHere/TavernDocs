@@ -18,17 +18,17 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DeathAnalytics(string victim, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit, Vector3 position)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DeathAnalytics(string victim, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit, Vector3 position)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-murderer" /><code>{"string murderer"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-victim" /><code>{"string victim"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-murderer" /><code>{"string murderer"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| <Link id="m-victim" /><code>{"string victim"}</code> |
 
 ## Used in
 

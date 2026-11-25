@@ -18,19 +18,24 @@ An **abstract class** in `Root.Township`, `Alta`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SimpleHashedGeneralValue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SimpleHashedGeneralValue()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdisabledonsimpleserver" /><code>{"private bool isDisabledOnSimpleServer"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-isdisabledonsimpleserver" /><code>{"private bool isDisabledOnSimpleServer"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdisabledonsimpleserver-2" /><code>{"bool IsDisabledOnSimpleServer { get; }"}</code> |  |
-| <Link id="m-simpleall" /><code>{"static IEnumerable<T> SimpleAll { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isdisabledonsimpleserver-2" /><code>{"bool IsDisabledOnSimpleServer { get; }"}</code> |
+| <Link id="m-simpleall" /><code>{"static IEnumerable<T> SimpleAll { get; }"}</code> |

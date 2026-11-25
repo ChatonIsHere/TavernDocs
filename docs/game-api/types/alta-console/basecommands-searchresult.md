@@ -17,15 +17,15 @@ A **private class** in `Root.Township`, `Alta.Console.Commands`. Reach it throug
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SearchResult("}<Link to="/game-api/types/alta-console/basepart">{"BasePart"}</Link>{" part)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SearchResult("}<Link to="/game-api/types/alta-console/basepart">{"BasePart"}</Link>{" part)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-part" /><code><Link to="/game-api/types/alta-console/basepart">{"BasePart"}</Link>{" Part { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-part" /><code><Link to="/game-api/types/alta-console/basepart">{"BasePart"}</Link>{" Part { get; set; }"}</code> |
 
 ## Used in
 

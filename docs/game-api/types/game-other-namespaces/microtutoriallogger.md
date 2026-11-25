@@ -18,15 +18,20 @@ Wrapper around a logger for the micro tutorial code that drops messages below a 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MicroTutorialLogger(ILogger logger)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MicroTutorialLogger(ILogger logger)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private readonly ILogger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private readonly ILogger logger"}</code> |
+
+</details>
 
 ## Properties
 
@@ -43,7 +48,15 @@ Wrapper around a logger for the micro tutorial code that drops messages below a 
 | <Link id="m-error-2" /><code>{"void Error(Exception exception)"}</code> | Logs an error if `LogLevel` allows it. The exception overload always logs. |
 | <Link id="m-info" /><code>{"void Info(string message)"}</code> | Logs at Info if `LogLevel` allows it. |
 | <Link id="m-warn" /><code>{"void Warn(string message)"}</code> | Logs a warning, but writes it at Error level. |
-| <Link id="m-isabovelogthreshold" /><code>{"private bool IsAboveLogThreshold("}<Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" level)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-isabovelogthreshold" /><code>{"private bool IsAboveLogThreshold("}<Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" level)"}</code> |
+
+</details>
 
 ## Used in
 

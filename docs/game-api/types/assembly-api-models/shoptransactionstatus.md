@@ -16,19 +16,19 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-couponemailfailednotrefunded" /><code>{"CouponEmailFailedNotRefunded = 7"}</code> |  |
-| <Link id="m-itemattributionfailed" /><code>{"ItemAttributionFailed = 3"}</code> |  |
-| <Link id="m-itemattributionfailedfree" /><code>{"ItemAttributionFailedFree = 4"}</code> |  |
-| <Link id="m-itemattributionfailednotrefunded" /><code>{"ItemAttributionFailedNotRefunded = 6"}</code> |  |
-| <Link id="m-itemattributionfailedrefunded" /><code>{"ItemAttributionFailedRefunded = 5"}</code> |  |
-| <Link id="m-processing" /><code>{"Processing = 1"}</code> |  |
-| <Link id="m-refunded" /><code>{"Refunded = 10"}</code> |  |
-| <Link id="m-shardattributionfailed" /><code>{"ShardAttributionFailed = 8"}</code> |  |
-| <Link id="m-sharddeductionfailed" /><code>{"ShardDeductionFailed = 2"}</code> |  |
-| <Link id="m-started" /><code>{"Started = 0"}</code> |  |
-| <Link id="m-successful" /><code>{"Successful = 9"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-couponemailfailednotrefunded" /><code>{"CouponEmailFailedNotRefunded = 7"}</code> |
+| <Link id="m-itemattributionfailed" /><code>{"ItemAttributionFailed = 3"}</code> |
+| <Link id="m-itemattributionfailedfree" /><code>{"ItemAttributionFailedFree = 4"}</code> |
+| <Link id="m-itemattributionfailednotrefunded" /><code>{"ItemAttributionFailedNotRefunded = 6"}</code> |
+| <Link id="m-itemattributionfailedrefunded" /><code>{"ItemAttributionFailedRefunded = 5"}</code> |
+| <Link id="m-processing" /><code>{"Processing = 1"}</code> |
+| <Link id="m-refunded" /><code>{"Refunded = 10"}</code> |
+| <Link id="m-shardattributionfailed" /><code>{"ShardAttributionFailed = 8"}</code> |
+| <Link id="m-sharddeductionfailed" /><code>{"ShardDeductionFailed = 2"}</code> |
+| <Link id="m-started" /><code>{"Started = 0"}</code> |
+| <Link id="m-successful" /><code>{"Successful = 9"}</code> |
 
 ## Used in
 

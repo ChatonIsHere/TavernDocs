@@ -17,16 +17,16 @@ An **interface** in `Root.Township`, `Alta.Intelligence`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-possibletargets" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{"> PossibleTargets { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-possibletargets" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{"> PossibleTargets { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addtarget" /><code>{"bool AddTarget("}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |  |
-| <Link id="m-removetarget" /><code>{"bool RemoveTarget("}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addtarget" /><code>{"bool AddTarget("}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |
+| <Link id="m-removetarget" /><code>{"bool RemoveTarget("}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |
 
 ## Used in
 

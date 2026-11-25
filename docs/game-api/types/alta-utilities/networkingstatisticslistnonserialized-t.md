@@ -18,31 +18,39 @@ An **abstract class** in `Root.Township`, `Alta.Utilities.Profiling.NetworkTrans
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected NetworkingStatisticsListNonSerialized()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected NetworkingStatisticsListNonSerialized()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-averagebytesperframealltime" /><code>{"private float averageBytesPerFrameAllTime"}</code> |  |
-| <Link id="m-statistics" /><code>{"protected List<T> statistics"}</code> |  |
-| <Link id="m-totalbytesperlastsecond" /><code>{"private float totalBytesPerLastSecond"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-statistics" /><code>{"protected List<T> statistics"}</code> |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-averagebytesperframealltime" /><code>{"private float averageBytesPerFrameAllTime"}</code> |
+| <Link id="m-totalbytesperlastsecond" /><code>{"private float totalBytesPerLastSecond"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; protected set; }"}</code> |  |
-| <Link id="m-statistics-2" /><code>{"IEnumerable<T> Statistics { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"string Name { get; protected set; }"}</code> |
+| <Link id="m-statistics-2" /><code>{"IEnumerable<T> Statistics { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createsummarydump" /><code>{"string CreateSummaryDump(float dumpDuration)"}</code> |  |
-| <Link id="m-resetall" /><code>{"void ResetAll()"}</code> |  |
-| <Link id="m-updatetotalbytesperframe" /><code>{"virtual void UpdateTotalBytesPerFrame()"}</code> |  |
-| <Link id="m-updatetotalbytesperlastsecond" /><code>{"virtual void UpdateTotalBytesPerLastSecond()"}</code> |  |
-| <Link id="m-ensurestatisticslistcapacity" /><code>{"protected void EnsureStatisticsListCapacity(int index)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createsummarydump" /><code>{"string CreateSummaryDump(float dumpDuration)"}</code> |
+| <Link id="m-resetall" /><code>{"void ResetAll()"}</code> |
+| <Link id="m-updatetotalbytesperframe" /><code>{"virtual void UpdateTotalBytesPerFrame()"}</code> |
+| <Link id="m-updatetotalbytesperlastsecond" /><code>{"virtual void UpdateTotalBytesPerLastSecond()"}</code> |
+| <Link id="m-ensurestatisticslistcapacity" /><code>{"protected void EnsureStatisticsListCapacity(int index)"}</code> |

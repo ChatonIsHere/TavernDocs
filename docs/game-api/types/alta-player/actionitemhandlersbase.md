@@ -17,20 +17,20 @@ An **internal abstract class** in `Root.Township`, `Alta.QuickAccessActions`. Re
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ActionItemHandlersBase("}<Link to="/game-api/types/alta-player/actionitemdata">{"ActionItemData"}</Link>{"[] actionItems, Action<int, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> destroyItem)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ActionItemHandlersBase("}<Link to="/game-api/types/alta-player/actionitemdata">{"ActionItemData"}</Link>{"[] actionItems, Action<int, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> destroyItem)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actionitems" /><code>{"protected readonly "}<Link to="/game-api/types/alta-player/actionitemdata">{"ActionItemData"}</Link>{"[] actionItems"}</code> |  |
-| <Link id="m-destroyitem" /><code>{"protected Action<int, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> destroyItem"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-actionitems" /><code>{"protected readonly "}<Link to="/game-api/types/alta-player/actionitemdata">{"ActionItemData"}</Link>{"[] actionItems"}</code> |
+| <Link id="m-destroyitem" /><code>{"protected Action<int, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> destroyItem"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createhandler" /><code>{"protected "}<Link to="/game-api/types/alta-player/actionitemhandler">{"ActionItemHandler"}</Link>{" CreateHandler("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int index)"}</code> |  |
-| <Link id="m-summonindexisvalid" /><code>{"protected bool SummonIndexIsValid(int index)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createhandler" /><code>{"protected "}<Link to="/game-api/types/alta-player/actionitemhandler">{"ActionItemHandler"}</Link>{" CreateHandler("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int index)"}</code> |
+| <Link id="m-summonindexisvalid" /><code>{"protected bool SummonIndexIsValid(int index)"}</code> |

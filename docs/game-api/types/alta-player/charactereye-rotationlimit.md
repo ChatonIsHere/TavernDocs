@@ -17,18 +17,18 @@ A **private class** in `Root.Township`, `Alta.Character`. Reach it through att-s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RotationLimit()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RotationLimit()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-axis" /><code>{"Vector3 axis"}</code> |  |
-| <Link id="m-defaultlocalrotation" /><code>{"Quaternion defaultLocalRotation"}</code> |  |
-| <Link id="m-spline" /><code>{"AnimationCurve spline"}</code> |  |
-| <Link id="m-twistlimit" /><code>{"float twistLimit"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-axis" /><code>{"Vector3 axis"}</code> |
+| <Link id="m-defaultlocalrotation" /><code>{"Quaternion defaultLocalRotation"}</code> |
+| <Link id="m-spline" /><code>{"AnimationCurve spline"}</code> |
+| <Link id="m-twistlimit" /><code>{"float twistLimit"}</code> |
 
 ## Used in
 

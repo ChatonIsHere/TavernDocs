@@ -22,31 +22,39 @@ A fixed value the target gives off, from its `BasicSenseSet`. Up to 32 of these.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BasicSense()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BasicSense()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-indexcount" /><code>{"const int IndexCount"}</code> |  |
-| <Link id="m-index" /><code>{"private int index"}</code> |  |
-| <Link id="m-senses" /><code>{"private static List<"}<Link to="/game-api/types/alta-intelligence/basicsense">{"BasicSense"}</Link>{"> senses"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-indexcount" /><code>{"const int IndexCount"}</code> |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-index" /><code>{"private int index"}</code> |
+| <Link id="m-senses" /><code>{"private static List<"}<Link to="/game-api/types/alta-intelligence/basicsense">{"BasicSense"}</Link>{"> senses"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-index-2" /><code>{"int Index { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-index-2" /><code>{"int Index { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fromindex" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/basicsense">{"BasicSense"}</Link>{" FromIndex(int index)"}</code> |  |
-| <Link id="m-get" /><code>{"override float Get("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fromindex" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/basicsense">{"BasicSense"}</Link>{" FromIndex(int index)"}</code> |
+| <Link id="m-get" /><code>{"override float Get("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
 
 ## Used in
 

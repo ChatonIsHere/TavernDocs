@@ -19,15 +19,15 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Module()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Module()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modify" /><code>{"abstract void Modify(ref Vector3 position, ref Quaternion rotation)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modify" /><code>{"abstract void Modify(ref Vector3 position, ref Quaternion rotation)"}</code> |
 
 ## Used in
 

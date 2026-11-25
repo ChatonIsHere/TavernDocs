@@ -17,11 +17,11 @@ An **interface** in `Root.Township`, `Alta.PlayerStates`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-controlstoadd" /><code>{"List<"}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"> ControlsToAdd { get; }"}</code> |  |
-| <Link id="m-controlstoremove" /><code>{"List<"}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"> ControlsToRemove { get; }"}</code> |  |
-| <Link id="m-statetype" /><code>{"Type StateType { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-controlstoadd" /><code>{"List<"}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"> ControlsToAdd { get; }"}</code> |
+| <Link id="m-controlstoremove" /><code>{"List<"}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"> ControlsToRemove { get; }"}</code> |
+| <Link id="m-statetype" /><code>{"Type StateType { get; }"}</code> |
 
 ## Used in
 

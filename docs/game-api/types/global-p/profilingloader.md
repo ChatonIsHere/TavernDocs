@@ -17,17 +17,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProfilingLoader()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProfilingLoader()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-files" /><code>{"string[] files"}</code> |  |
-| <Link id="m-friendlyname" /><code>{"string friendlyName"}</code> |  |
-| <Link id="m-isexpanding" /><code>{"bool isExpanding"}</code> |  |
-| <Link id="m-isexpandingresults" /><code>{"bool isExpandingResults"}</code> |  |
-| <Link id="m-loaders" /><code>{"string[] loaders"}</code> |  |
-| <Link id="m-result" /><code>{"string result"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-files" /><code>{"string[] files"}</code> |
+| <Link id="m-friendlyname" /><code>{"string friendlyName"}</code> |
+| <Link id="m-isexpanding" /><code>{"bool isExpanding"}</code> |
+| <Link id="m-isexpandingresults" /><code>{"bool isExpandingResults"}</code> |
+| <Link id="m-loaders" /><code>{"string[] loaders"}</code> |
+| <Link id="m-result" /><code>{"string result"}</code> |

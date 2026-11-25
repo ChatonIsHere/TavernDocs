@@ -19,15 +19,15 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimeBasedStagedPrefabSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimeBasedStagedPrefabSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-autostart" /><code>{"bool autoStart"}</code> |  |
-| <Link id="m-definition" /><code><Link to="/game-api/types/global-t-x/timedprefabstagedefinition">{"TimedPrefabStageDefinition"}</Link>{" definition"}</code> |  |
-| <Link id="m-hasstarted" /><code>{"bool hasStarted"}</code> |  |
-| <Link id="m-startedtime" /><code>{"TimeSpan startedTime"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-autostart" /><code>{"bool autoStart"}</code> |
+| <Link id="m-definition" /><code><Link to="/game-api/types/global-t-x/timedprefabstagedefinition">{"TimedPrefabStageDefinition"}</Link>{" definition"}</code> |
+| <Link id="m-hasstarted" /><code>{"bool hasStarted"}</code> |
+| <Link id="m-startedtime" /><code>{"TimeSpan startedTime"}</code> |

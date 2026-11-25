@@ -20,15 +20,20 @@ Base for a device SDK controller (one per player mode): starts the SDK, makes th
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected XrDeviceSdkController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected XrDeviceSdkController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-devicelifecycle" /><code>{"private "}<Link to="/game-api/types/global-c-d/devicelifecycle">{"DeviceLifecycle"}</Link>{" deviceLifecycle"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-devicelifecycle" /><code>{"private "}<Link to="/game-api/types/global-c-d/devicelifecycle">{"DeviceLifecycle"}</Link>{" deviceLifecycle"}</code> |
+
+</details>
 
 ## Properties
 

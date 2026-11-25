@@ -17,21 +17,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ResourcesCleanup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ResourcesCleanup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/global-q-r/resourcescleanup">{"ResourcesCleanup"}</Link>{" instance"}</code> |  |
-| <Link id="m-isunloading" /><code>{"private static bool isUnloading"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/global-q-r/resourcescleanup">{"ResourcesCleanup"}</Link>{" instance"}</code> |
+| <Link id="m-isunloading" /><code>{"private static bool isUnloading"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-run" /><code>{"static void Run()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-unloadatendofframe" /><code>{"private static IEnumerator UnloadAtEndOfFrame() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-run" /><code>{"static void Run()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-unloadatendofframe" /><code>{"private static IEnumerator UnloadAtEndOfFrame() (iterator)"}</code> |
+
+</details>

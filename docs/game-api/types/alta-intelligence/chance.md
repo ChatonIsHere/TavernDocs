@@ -17,21 +17,26 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Chance(float chance, float success = 1, float failure = 0)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Chance(float chance, float success = 1, float failure = 0)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chance" /><code>{"private float chance"}</code> |  |
-| <Link id="m-failure" /><code>{"private float failure"}</code> |  |
-| <Link id="m-success" /><code>{"private float success"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-chance" /><code>{"private float chance"}</code> |
+| <Link id="m-failure" /><code>{"private float failure"}</code> |
+| <Link id="m-success" /><code>{"private float success"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |

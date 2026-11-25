@@ -17,7 +17,15 @@ A **static class** in `Root.Township`, `Alta.Chunks`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getawaiter" /><code>{"static TaskAwaiter<Object> GetAwaiter(ResourceRequest request)"}</code> |  |
-| <Link id="m-waitfor" /><code>{"private static IEnumerator WaitFor(ResourceRequest request) (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getawaiter" /><code>{"static TaskAwaiter<Object> GetAwaiter(ResourceRequest request)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-waitfor" /><code>{"private static IEnumerator WaitFor(ResourceRequest request) (iterator)"}</code> |
+
+</details>

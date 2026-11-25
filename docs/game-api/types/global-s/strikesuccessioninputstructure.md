@@ -21,21 +21,26 @@ Skill input asset for skills that trigger after a number of good strikes in a ro
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StrikeSuccessionInputStructure()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StrikeSuccessionInputStructure()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cooldowntime" /><code>{"private float coolDownTime"}</code> |  |
-| <Link id="m-minimumeficiency" /><code>{"private float minimumEficiency"}</code> |  |
-| <Link id="m-strikesrequiredperlevel" /><code>{"private int[] strikesRequiredPerLevel"}</code> |  |
-| <Link id="m-targetchannel" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" targetChannel"}</code> |  |
-| <Link id="m-timeforcombobuild" /><code>{"private float timeForComboBuild"}</code> |  |
-| <Link id="m-timeforpowerstrike" /><code>{"private float timeForPowerStrike"}</code> |  |
-| <Link id="m-timetoresetafterthrown" /><code>{"private float timeToResetAfterThrown"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cooldowntime" /><code>{"private float coolDownTime"}</code> |
+| <Link id="m-minimumeficiency" /><code>{"private float minimumEficiency"}</code> |
+| <Link id="m-strikesrequiredperlevel" /><code>{"private int[] strikesRequiredPerLevel"}</code> |
+| <Link id="m-targetchannel" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" targetChannel"}</code> |
+| <Link id="m-timeforcombobuild" /><code>{"private float timeForComboBuild"}</code> |
+| <Link id="m-timeforpowerstrike" /><code>{"private float timeForPowerStrike"}</code> |
+| <Link id="m-timetoresetafterthrown" /><code>{"private float timeToResetAfterThrown"}</code> |
+
+</details>
 
 ## Properties
 

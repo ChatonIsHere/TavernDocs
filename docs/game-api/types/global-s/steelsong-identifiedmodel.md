@@ -17,23 +17,23 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"IdentifiedModel("}<Link to="/game-api/types/alta-crafting/forgedmodel">{"ForgedModel"}</Link>{" model, uint identifier)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"IdentifiedModel("}<Link to="/game-api/types/alta-crafting/forgedmodel">{"ForgedModel"}</Link>{" model, uint identifier)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hitcount" /><code>{"int HitCount { get; set; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"uint Identifier { get; }"}</code> |  |
-| <Link id="m-model" /><code><Link to="/game-api/types/alta-crafting/forgedmodel">{"ForgedModel"}</Link>{" Model { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hitcount" /><code>{"int HitCount { get; set; }"}</code> |
+| <Link id="m-identifier" /><code>{"uint Identifier { get; }"}</code> |
+| <Link id="m-model" /><code><Link to="/game-api/types/alta-crafting/forgedmodel">{"ForgedModel"}</Link>{" Model { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ishitvalid" /><code>{"bool IsHitValid()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ishitvalid" /><code>{"bool IsHitValid()"}</code> |
 
 ## Used in
 

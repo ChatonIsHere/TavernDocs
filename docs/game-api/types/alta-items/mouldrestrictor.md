@@ -18,19 +18,24 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MouldRestrictor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MouldRestrictor()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-moulddefinitions" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{", "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> mouldDefinitions"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-moulddefinitions" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{", "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> mouldDefinitions"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deregister" /><code>{"override void Deregister("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-register" /><code>{"override void Register("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deregister" /><code>{"override void Deregister("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |
+| <Link id="m-register" /><code>{"override void Register("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |

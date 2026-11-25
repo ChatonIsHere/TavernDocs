@@ -19,16 +19,16 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RandomSpawnRectangleSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RandomSpawnRectangleSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distribution" /><code><Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> |  |
-| <Link id="m-maximum" /><code>{"int maximum"}</code> |  |
-| <Link id="m-minimum" /><code>{"int minimum"}</code> |  |
-| <Link id="m-minimumup" /><code>{"float minimumUp"}</code> |  |
-| <Link id="m-size" /><code>{"Vector3 size"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-distribution" /><code><Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> |
+| <Link id="m-maximum" /><code>{"int maximum"}</code> |
+| <Link id="m-minimum" /><code>{"int minimum"}</code> |
+| <Link id="m-minimumup" /><code>{"float minimumUp"}</code> |
+| <Link id="m-size" /><code>{"Vector3 size"}</code> |

@@ -18,28 +18,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PuzzleLightBeam()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PuzzleLightBeam()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-beam" /><code>{"private "}<Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{" beam"}</code> |  |
-| <Link id="m-distance" /><code>{"protected float distance"}</code> |  |
-| <Link id="m-mask" /><code>{"private LayerMask mask"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-distance" /><code>{"protected float distance"}</code> |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-beam" /><code>{"private "}<Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{" beam"}</code> |
+| <Link id="m-mask" /><code>{"private LayerMask mask"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distance-2" /><code>{"float Distance { get; }"}</code> |  |
-| <Link id="m-mask-2" /><code>{"LayerMask Mask { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-distance-2" /><code>{"float Distance { get; }"}</code> |
+| <Link id="m-mask-2" /><code>{"LayerMask Mask { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
-| <Link id="m-update" /><code>{"protected virtual void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |
+| <Link id="m-update" /><code>{"protected virtual void Update()"}</code> |

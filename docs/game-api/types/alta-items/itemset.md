@@ -19,21 +19,26 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ItemSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ItemSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items" /><code>{"private List<"}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"> items"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-items" /><code>{"private List<"}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"> items"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items-2" /><code>{"List<"}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"> Items { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-items-2" /><code>{"List<"}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"> Items { get; }"}</code> |
 
 ## Used in
 

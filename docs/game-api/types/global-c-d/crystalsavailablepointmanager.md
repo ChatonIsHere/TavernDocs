@@ -17,24 +17,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CrystalsAvailablePointManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CrystalsAvailablePointManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activevisuals" /><code>{"private Queue<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> activeVisuals"}</code> |  |
-| <Link id="m-availablepointsposition" /><code>{"private Transform availablePointsPosition"}</code> |  |
-| <Link id="m-freepointseffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" freePointsEffectDefinition"}</code> |  |
-| <Link id="m-temporaryvisuals" /><code>{"private Queue<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> temporaryVisuals"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activevisuals" /><code>{"private Queue<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> activeVisuals"}</code> |
+| <Link id="m-availablepointsposition" /><code>{"private Transform availablePointsPosition"}</code> |
+| <Link id="m-freepointseffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" freePointsEffectDefinition"}</code> |
+| <Link id="m-temporaryvisuals" /><code>{"private Queue<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> temporaryVisuals"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cleantemporary" /><code>{"override void CleanTemporary()"}</code> |  |
-| <Link id="m-opentemporary" /><code>{"override void OpenTemporary(int index)"}</code> |  |
-| <Link id="m-openvisual" /><code>{"override void OpenVisual(int index)"}</code> |  |
-| <Link id="m-updateavailablepointsvisual" /><code>{"override void UpdateAvailablePointsVisual(int freePoints)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cleantemporary" /><code>{"override void CleanTemporary()"}</code> |
+| <Link id="m-opentemporary" /><code>{"override void OpenTemporary(int index)"}</code> |
+| <Link id="m-openvisual" /><code>{"override void OpenVisual(int index)"}</code> |
+| <Link id="m-updateavailablepointsvisual" /><code>{"override void UpdateAvailablePointsVisual(int freePoints)"}</code> |

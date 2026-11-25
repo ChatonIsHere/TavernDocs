@@ -20,16 +20,21 @@ Base for AI action components that run for a random length of time, set in the i
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected RandomTimedActionComponent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected RandomTimedActionComponent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maximumduration" /><code>{"private float maximumDuration"}</code> |  |
-| <Link id="m-minimumduration" /><code>{"private float minimumDuration"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maximumduration" /><code>{"private float maximumDuration"}</code> |
+| <Link id="m-minimumduration" /><code>{"private float minimumDuration"}</code> |
+
+</details>
 
 ## Properties
 

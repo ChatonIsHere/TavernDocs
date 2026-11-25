@@ -16,12 +16,12 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-accepted" /><code>{"Accepted = 2"}</code> |  |
-| <Link id="m-none" /><code>{"None = -1"}</code> |  |
-| <Link id="m-requested" /><code>{"Requested = 1"}</code> |  |
-| <Link id="m-waitingforreply" /><code>{"WaitingForReply = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-accepted" /><code>{"Accepted = 2"}</code> |
+| <Link id="m-none" /><code>{"None = -1"}</code> |
+| <Link id="m-requested" /><code>{"Requested = 1"}</code> |
+| <Link id="m-waitingforreply" /><code>{"WaitingForReply = 0"}</code> |
 
 ## Used in
 

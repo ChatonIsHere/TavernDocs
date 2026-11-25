@@ -17,9 +17,9 @@ An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-purchaseitem" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/purchaseresult">{"PurchaseResult"}</Link>{"> PurchaseItem(int identifier)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-purchaseitem" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/purchaseresult">{"PurchaseResult"}</Link>{"> PurchaseItem(int identifier)"}</code> |
 
 ## Used in
 

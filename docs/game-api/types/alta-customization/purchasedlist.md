@@ -18,22 +18,27 @@ Which cosmetic hashes the local player owns or can pick, built from default cosm
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PurchasedList(int playerIdentifier, "}<Link to="/game-api/types/assembly-other/playersubscriberstatus">{"PlayerSubscriberStatus"}</Link>{" status)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PurchasedList("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PurchasedList(int playerIdentifier, "}<Link to="/game-api/types/assembly-other/playersubscriberstatus">{"PlayerSubscriberStatus"}</Link>{" status)"}</code> |
+| <Link id="m-ctor-2" /><code>{"PurchasedList("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-available" /><code>{"private static HashSet<uint> available"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-owned" /><code>{"private static HashSet<uint> owned"}</code> |  |
-| <Link id="m-owneditems" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/assembly-api-models/ownedshopitem">{"OwnedShopItem"}</Link>{"> ownedItems"}</code> |  |
-| <Link id="m-personal" /><code>{"private static "}<Link to="/game-api/types/alta-customization/purchasedlist">{"PurchasedList"}</Link>{" personal"}</code> |  |
-| <Link id="m-playerid" /><code>{"private int playerId"}</code> |  |
-| <Link id="m-status" /><code>{"private "}<Link to="/game-api/types/assembly-other/playersubscriberstatus">{"PlayerSubscriberStatus"}</Link>{" status"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-available" /><code>{"private static HashSet<uint> available"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-owned" /><code>{"private static HashSet<uint> owned"}</code> |
+| <Link id="m-owneditems" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/assembly-api-models/ownedshopitem">{"OwnedShopItem"}</Link>{"> ownedItems"}</code> |
+| <Link id="m-personal" /><code>{"private static "}<Link to="/game-api/types/alta-customization/purchasedlist">{"PurchasedList"}</Link>{" personal"}</code> |
+| <Link id="m-playerid" /><code>{"private int playerId"}</code> |
+| <Link id="m-status" /><code>{"private "}<Link to="/game-api/types/assembly-other/playersubscriberstatus">{"PlayerSubscriberStatus"}</Link>{" status"}</code> |
+
+</details>
 
 ## Properties
 
@@ -64,14 +69,22 @@ Which cosmetic hashes the local player owns or can pick, built from default cosm
 | <Link id="m-refresh" /><code>{"async Task Refresh()"}</code> | Client or local test only: rebuilds the owned and available sets, fetching owned items from the shop API if not cached. |
 | <Link id="m-updatecurrentrotation" /><code>{"static async Task UpdateCurrentRotation()"}</code> | Fetches the current shop configuration and rebuilds `CurrentOnStore`. Clears it on error. |
 | <Link id="m-validateplayersowneditems" /><code>{"static Task<bool> ValidatePlayersOwnedItems("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, IEnumerable<uint> items)"}</code> | Meant to check a player owns the given items. Always returns true in this build. |
-| <Link id="m-additems" /><code>{"private static void AddItems("}<Link to="/game-api/types/assembly-api-models/shopitemconfiguration">{"ShopItemConfiguration"}</Link>{"[] items)"}</code> |  |
-| <Link id="m-clearavailablehashes" /><code>{"private static void ClearAvailableHashes()"}</code> |  |
-| <Link id="m-clearpurchasedhashes" /><code>{"private static void ClearPurchasedHashes()"}</code> |  |
-| <Link id="m-initialize" /><code>{"private static void Initialize()"}</code> |  |
-| <Link id="m-invalidatecache" /><code>{"private static void InvalidateCache()"}</code> |  |
-| <Link id="m-refreshowneditemscache" /><code>{"private static async Task RefreshOwnedItemsCache()"}</code> |  |
-| <Link id="m-updatedeveloperitems" /><code>{"private void UpdateDeveloperItems()"}</code> |  |
-| <Link id="m-updateowneditems" /><code>{"private static void UpdateOwnedItems()"}</code> |  |
+
+<details>
+<summary>8 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-additems" /><code>{"private static void AddItems("}<Link to="/game-api/types/assembly-api-models/shopitemconfiguration">{"ShopItemConfiguration"}</Link>{"[] items)"}</code> |
+| <Link id="m-clearavailablehashes" /><code>{"private static void ClearAvailableHashes()"}</code> |
+| <Link id="m-clearpurchasedhashes" /><code>{"private static void ClearPurchasedHashes()"}</code> |
+| <Link id="m-initialize" /><code>{"private static void Initialize()"}</code> |
+| <Link id="m-invalidatecache" /><code>{"private static void InvalidateCache()"}</code> |
+| <Link id="m-refreshowneditemscache" /><code>{"private static async Task RefreshOwnedItemsCache()"}</code> |
+| <Link id="m-updatedeveloperitems" /><code>{"private void UpdateDeveloperItems()"}</code> |
+| <Link id="m-updateowneditems" /><code>{"private static void UpdateOwnedItems()"}</code> |
+
+</details>
 
 ## Used in
 

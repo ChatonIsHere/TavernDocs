@@ -20,16 +20,21 @@ Timed zip backups of the server's world folder (`Servers\-1`) into its `Backups`
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-busy" /><code>{"private static int _busy"}</code> |  |
-| <Link id="m-lastsettingserror" /><code>{"private static string _lastSettingsError"}</code> |  |
-| <Link id="m-timer" /><code>{"private static Timer _timer"}</code> |  |
-| <Link id="m-backupfoldername" /><code>{"private const string BackupFolderName"}</code> |  |
-| <Link id="m-checkinterval" /><code>{"private static readonly TimeSpan CheckInterval"}</code> |  |
-| <Link id="m-excludedfolders" /><code>{"private static readonly string[] ExcludedFolders"}</code> |  |
-| <Link id="m-nameprefix" /><code>{"private const string NamePrefix"}</code> |  |
-| <Link id="m-stampformat" /><code>{"private const string StampFormat"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-busy" /><code>{"private static int _busy"}</code> |
+| <Link id="m-lastsettingserror" /><code>{"private static string _lastSettingsError"}</code> |
+| <Link id="m-timer" /><code>{"private static Timer _timer"}</code> |
+| <Link id="m-backupfoldername" /><code>{"private const string BackupFolderName"}</code> |
+| <Link id="m-checkinterval" /><code>{"private static readonly TimeSpan CheckInterval"}</code> |
+| <Link id="m-excludedfolders" /><code>{"private static readonly string[] ExcludedFolders"}</code> |
+| <Link id="m-nameprefix" /><code>{"private const string NamePrefix"}</code> |
+| <Link id="m-stampformat" /><code>{"private const string StampFormat"}</code> |
+
+</details>
 
 ## Properties
 
@@ -38,6 +43,9 @@ Timed zip backups of the server's world folder (`Servers\-1`) into its `Backups`
 | <Link id="m-serverdirectory" /><code>{"static string ServerDirectory { get; }"}</code> | `A Township Tale\Servers\-1`, the Tavern server's world folder. |
 
 ## Methods
+
+<details>
+<summary>10 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
@@ -51,3 +59,5 @@ Timed zip backups of the server's world folder (`Servers\-1`) into its `Backups`
 | <Link id="m-tick" /><code>{"internal static void Tick()"}</code> | Internal: one check. Re-reads `server_backup_time` and `server_backup_max_backups`, backs up if due, then prunes. Never runs two at once. |
 | <Link id="m-tryreadsettings" /><code>{"private static bool TryReadSettings(out float hours, out int maxBackups)"}</code> |  |
 | <Link id="m-ziptime" /><code>{"private static DateTimeOffset ZipTime(DateTime time)"}</code> |  |
+
+</details>

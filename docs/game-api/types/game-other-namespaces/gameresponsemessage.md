@@ -16,13 +16,13 @@ A **class** in `Root.Township`, `GameCommands.Messages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameResponseMessage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameResponseMessage()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-errormessage" /><code>{"string ErrorMessage { get; set; }"}</code> |  |
-| <Link id="m-wassuccessfull" /><code>{"bool WasSuccessfull { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-errormessage" /><code>{"string ErrorMessage { get; set; }"}</code> |
+| <Link id="m-wassuccessfull" /><code>{"bool WasSuccessfull { get; set; }"}</code> |

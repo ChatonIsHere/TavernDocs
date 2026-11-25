@@ -17,31 +17,36 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Tunnel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Tunnel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-end" /><code>{"private float end"}</code> |  |
-| <Link id="m-operation" /><code>{"private "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" operation"}</code> |  |
-| <Link id="m-radius" /><code>{"private AnimationCurve radius"}</code> |  |
-| <Link id="m-start" /><code>{"private float start"}</code> |  |
-| <Link id="m-value" /><code>{"private AnimationCurve value"}</code> |  |
-| <Link id="m-verticaloffset" /><code>{"private float verticalOffset"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-end" /><code>{"private float end"}</code> |
+| <Link id="m-operation" /><code>{"private "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" operation"}</code> |
+| <Link id="m-radius" /><code>{"private AnimationCurve radius"}</code> |
+| <Link id="m-start" /><code>{"private float start"}</code> |
+| <Link id="m-value" /><code>{"private AnimationCurve value"}</code> |
+| <Link id="m-verticaloffset" /><code>{"private float verticalOffset"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-end-2" /><code>{"float End { get; }"}</code> |  |
-| <Link id="m-operationtype" /><code><Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-radius-2" /><code>{"AnimationCurve Radius { get; }"}</code> |  |
-| <Link id="m-start-2" /><code>{"float Start { get; }"}</code> |  |
-| <Link id="m-value-2" /><code>{"AnimationCurve Value { get; }"}</code> |  |
-| <Link id="m-verticaloffset-2" /><code>{"float VerticalOffset { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-end-2" /><code>{"float End { get; }"}</code> |
+| <Link id="m-operationtype" /><code><Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" { get; }"}</code> |
+| <Link id="m-radius-2" /><code>{"AnimationCurve Radius { get; }"}</code> |
+| <Link id="m-start-2" /><code>{"float Start { get; }"}</code> |
+| <Link id="m-value-2" /><code>{"AnimationCurve Value { get; }"}</code> |
+| <Link id="m-verticaloffset-2" /><code>{"float VerticalOffset { get; }"}</code> |
 
 ## Used in
 

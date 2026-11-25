@@ -17,21 +17,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Feather()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Feather()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bottom" /><code>{"private GameObject bottom"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-bottom" /><code>{"private GameObject bottom"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bottom-2" /><code>{"GameObject Bottom { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bottom-2" /><code>{"GameObject Bottom { get; }"}</code> |
 
 ## Used in
 

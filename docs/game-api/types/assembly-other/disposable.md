@@ -18,13 +18,13 @@ A **static class** in `Alta.LifecycleManagement.Runtime`, `Alta.LifecycleManagem
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-empty" /><code>{"static readonly IDisposable Empty"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-empty" /><code>{"static readonly IDisposable Empty"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-create" /><code>{"static IDisposable Create(Action disposeAction)"}</code> |  |
-| <Link id="m-createwithstate" /><code>{"static IDisposable CreateWithState<TState>(TState state, Action<TState> disposeAction)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-create" /><code>{"static IDisposable Create(Action disposeAction)"}</code> |
+| <Link id="m-createwithstate" /><code>{"static IDisposable CreateWithState<TState>(TState state, Action<TState> disposeAction)"}</code> |

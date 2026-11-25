@@ -16,15 +16,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StartServerSessionResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StartServerSessionResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serversession" /><code>{"int ServerSession { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serversession" /><code>{"int ServerSession { get; set; }"}</code> |
 
 ## Used in
 

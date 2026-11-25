@@ -20,17 +20,22 @@ One square of a cave generator's map. It holds a `MapChunkLayer` per plugin, run
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MapChunk()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MapChunk()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-displays" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{"> displays"}</code> |  |
-| <Link id="m-generationthread" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/chunkthread">{"ChunkThread"}</Link>{" generationThread"}</code> |  |
-| <Link id="m-layers" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{", "}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{"> layers"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-displays" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{"> displays"}</code> |
+| <Link id="m-generationthread" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/chunkthread">{"ChunkThread"}</Link>{" generationThread"}</code> |
+| <Link id="m-layers" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{", "}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{"> layers"}</code> |
+
+</details>
 
 ## Properties
 
@@ -56,8 +61,16 @@ One square of a cave generator's map. It holds a `MapChunkLayer` per plugin, run
 | <Link id="m-initialize" /><code><Link to="/game-api/types/alta-world-generation/chunkthread">{"ChunkThread"}</Link>{" Initialize("}<Link to="/game-api/types/alta-world-generation/igenerator">{"IGenerator"}</Link>{" generator, int x, int z)"}</code> | Sets the generator and grid position, works out the offsets and creates the generation thread. |
 | <Link id="m-prepare" /><code>{"void Prepare()"}</code> | Clears any old layers and starts a fresh set. |
 | <Link id="m-render" /><code>{"IEnumerator Render("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" pluginInstance, "}<Link to="/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{" displayPrefab, int renderIndex)"}</code> | Spawns a display for a plugin's layer and returns its render coroutine, or null without a prefab. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>
 
 ## Used in
 

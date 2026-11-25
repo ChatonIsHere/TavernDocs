@@ -17,12 +17,12 @@ An **abstract class** in `Alta.VContainerLayer.Runtime`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected FactoryAsync()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected FactoryAsync()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-create" /><code>{"async Task<TInterface> Create(TParam param)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-create" /><code>{"async Task<TInterface> Create(TParam param)"}</code> |

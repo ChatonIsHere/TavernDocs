@@ -17,25 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MemoizeOne(Func<TInput, TOutput> evaluate, IEqualityComparer<TInput> comparer = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MemoizeOne(Func<TInput, TOutput> evaluate, IEqualityComparer<TInput> comparer = null)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-comparer" /><code>{"private IEqualityComparer<TInput> comparer"}</code> |  |
-| <Link id="m-evaluate" /><code>{"private Func<TInput, TOutput> evaluate"}</code> |  |
-| <Link id="m-lastinput" /><code>{"private TInput lastInput"}</code> |  |
-| <Link id="m-lastoutput" /><code>{"private TOutput lastOutput"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-comparer" /><code>{"private IEqualityComparer<TInput> comparer"}</code> |
+| <Link id="m-evaluate" /><code>{"private Func<TInput, TOutput> evaluate"}</code> |
+| <Link id="m-lastinput" /><code>{"private TInput lastInput"}</code> |
+| <Link id="m-lastoutput" /><code>{"private TOutput lastOutput"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forget" /><code>{"void Forget()"}</code> |  |
-| <Link id="m-get" /><code>{"TOutput Get(TInput input)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-forget" /><code>{"void Forget()"}</code> |
+| <Link id="m-get" /><code>{"TOutput Get(TInput input)"}</code> |
 
 ## Used in
 

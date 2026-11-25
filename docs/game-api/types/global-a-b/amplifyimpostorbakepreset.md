@@ -18,18 +18,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AmplifyImpostorBakePreset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AmplifyImpostorBakePreset()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alphaindex" /><code>{"int AlphaIndex"}</code> |  |
-| <Link id="m-bakeshader" /><code>{"Shader BakeShader"}</code> |  |
-| <Link id="m-output" /><code>{"List<"}<Link to="/game-api/types/global-t-x/textureoutput">{"TextureOutput"}</Link>{"> Output"}</code> |  |
-| <Link id="m-runtimeshader" /><code>{"Shader RuntimeShader"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-alphaindex" /><code>{"int AlphaIndex"}</code> |
+| <Link id="m-bakeshader" /><code>{"Shader BakeShader"}</code> |
+| <Link id="m-output" /><code>{"List<"}<Link to="/game-api/types/global-t-x/textureoutput">{"TextureOutput"}</Link>{"> Output"}</code> |
+| <Link id="m-runtimeshader" /><code>{"Shader RuntimeShader"}</code> |
 
 ## Used in
 

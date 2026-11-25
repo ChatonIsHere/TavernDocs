@@ -16,20 +16,20 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DebugResults()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DebugResults()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-results" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/targetresult">{"TargetResult"}</Link>{"> results"}</code> |  |
-| <Link id="m-targeted" /><code>{"List<"}<Link to="/game-api/types/alta-intelligence/targetresult-result">{"TargetResult.Result"}</Link>{"> targeted"}</code> |  |
-| <Link id="m-targetless" /><code>{"List<"}<Link to="/game-api/types/alta-intelligence/targetresult-result">{"TargetResult.Result"}</Link>{"> targetless"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-results" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/targetresult">{"TargetResult"}</Link>{"> results"}</code> |
+| <Link id="m-targeted" /><code>{"List<"}<Link to="/game-api/types/alta-intelligence/targetresult-result">{"TargetResult.Result"}</Link>{"> targeted"}</code> |
+| <Link id="m-targetless" /><code>{"List<"}<Link to="/game-api/types/alta-intelligence/targetresult-result">{"TargetResult.Result"}</Link>{"> targetless"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> |

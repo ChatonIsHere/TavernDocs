@@ -17,21 +17,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PickupClamp()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PickupClamp()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-castcenter" /><code>{"private Transform castCenter"}</code> |  |
-| <Link id="m-castradius" /><code>{"private float castRadius"}</code> |  |
-| <Link id="m-onpickupclamped" /><code>{"private "}<Link to="/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" onPickupClamped"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-castcenter" /><code>{"private Transform castCenter"}</code> |
+| <Link id="m-castradius" /><code>{"private float castRadius"}</code> |
+| <Link id="m-onpickupclamped" /><code>{"private "}<Link to="/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" onPickupClamped"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enable" /><code>{"void Enable()"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-enable" /><code>{"void Enable()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+
+</details>

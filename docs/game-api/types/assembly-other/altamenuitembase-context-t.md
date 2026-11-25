@@ -18,18 +18,18 @@ An **abstract class** in `Alta.MenuItem`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected CONTEXT()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected CONTEXT()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-target" /><code>{"T Target { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-target" /><code>{"T Target { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getpath" /><code>{"override string GetPath()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getpath" /><code>{"override string GetPath()"}</code> |

@@ -16,10 +16,10 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addfriend" /><code>{"AddFriend = 0"}</code> |  |
-| <Link id="m-invitetogroup" /><code>{"InviteToGroup = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addfriend" /><code>{"AddFriend = 0"}</code> |
+| <Link id="m-invitetogroup" /><code>{"InviteToGroup = 1"}</code> |
 
 ## Used in
 

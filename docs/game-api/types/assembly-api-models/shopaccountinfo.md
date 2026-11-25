@@ -17,18 +17,18 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShopAccountInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShopAccountInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-memberstatus" /><code><Link to="/game-api/types/assembly-api-models/shopaccountinfo-subscriptionstatus">{"ShopAccountInfo.SubscriptionStatus"}</Link>{" MemberStatus { get; set; }"}</code> |  |
-| <Link id="m-shardbalance" /><code>{"int ShardBalance { get; set; }"}</code> |  |
-| <Link id="m-walletamount" /><code>{"decimal WalletAmount { get; set; }"}</code> |  |
-| <Link id="m-walletcurrency" /><code>{"string WalletCurrency { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-memberstatus" /><code><Link to="/game-api/types/assembly-api-models/shopaccountinfo-subscriptionstatus">{"ShopAccountInfo.SubscriptionStatus"}</Link>{" MemberStatus { get; set; }"}</code> |
+| <Link id="m-shardbalance" /><code>{"int ShardBalance { get; set; }"}</code> |
+| <Link id="m-walletamount" /><code>{"decimal WalletAmount { get; set; }"}</code> |
+| <Link id="m-walletcurrency" /><code>{"string WalletCurrency { get; set; }"}</code> |
 
 ## Used in
 

@@ -17,33 +17,46 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DamageDisplayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DamageDisplayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-player" /><code>{"private "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> |  |
-| <Link id="m-syncdamage" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<float> syncDamage"}</code> |  |
-| <Link id="m-targettime" /><code>{"private float targetTime"}</code> |  |
-| <Link id="m-updatetimer" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateTimer"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-player" /><code>{"private "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> |
+| <Link id="m-syncdamage" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<float> syncDamage"}</code> |
+| <Link id="m-targettime" /><code>{"private float targetTime"}</code> |
+| <Link id="m-updatetimer" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateTimer"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-totaldamage" /><code>{"static float TotalDamage { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-totaldamage" /><code>{"static float TotalDamage { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dealtdamage" /><code>{"void DealtDamage(float damage)"}</code> |  |
-| <Link id="m-clear" /><code>{"private void Clear("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-syncdamage-2" /><code>{"private void SyncDamage("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, float damage)"}</code> |  |
-| <Link id="m-updatetimer-2" /><code>{"private void UpdateTimer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dealtdamage" /><code>{"void DealtDamage(float damage)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-clear" /><code>{"private void Clear("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| <Link id="m-syncdamage-2" /><code>{"private void SyncDamage("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, float damage)"}</code> |
+| <Link id="m-updatetimer-2" /><code>{"private void UpdateTimer()"}</code> |
+
+</details>
 
 ## Used in
 

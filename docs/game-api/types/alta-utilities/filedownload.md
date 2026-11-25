@@ -16,30 +16,38 @@ A **class** in `Root.Township`, `Alta`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FileDownload(string url)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FileDownload(string url)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-folder" /><code>{"static string Folder"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-folder" /><code>{"static string Folder"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-downloadurl" /><code>{"string DownloadUrl { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-downloadurl" /><code>{"string DownloadUrl { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getpath" /><code>{"static string GetPath(string input)"}</code> |  |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-utilities/filedownload">{"FileDownload"}</Link>{" op_Implicit(string url)"}</code> |  |
-| <Link id="m-openwrite" /><code>{"StreamWriter OpenWrite()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getpath" /><code>{"static string GetPath(string input)"}</code> |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-utilities/filedownload">{"FileDownload"}</Link>{" op_Implicit(string url)"}</code> |
+| <Link id="m-openwrite" /><code>{"StreamWriter OpenWrite()"}</code> |
 
 ## Used in
 

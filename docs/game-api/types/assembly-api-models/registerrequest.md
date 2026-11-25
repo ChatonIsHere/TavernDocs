@@ -17,18 +17,18 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RegisterRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RegisterRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-oculusaccountlink" /><code><Link to="/game-api/types/assembly-api-models/accountlinkdata">{"AccountLinkData"}</Link>{" OculusAccountLink { get; set; }"}</code> |  |
-| <Link id="m-passwordhash" /><code>{"string PasswordHash { get; set; }"}</code> |  |
-| <Link id="m-picoaccountlink" /><code><Link to="/game-api/types/assembly-api-models/accountlinkdata">{"AccountLinkData"}</Link>{" PicoAccountLink { get; set; }"}</code> |  |
-| <Link id="m-referral" /><code>{"string Referral { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-oculusaccountlink" /><code><Link to="/game-api/types/assembly-api-models/accountlinkdata">{"AccountLinkData"}</Link>{" OculusAccountLink { get; set; }"}</code> |
+| <Link id="m-passwordhash" /><code>{"string PasswordHash { get; set; }"}</code> |
+| <Link id="m-picoaccountlink" /><code><Link to="/game-api/types/assembly-api-models/accountlinkdata">{"AccountLinkData"}</Link>{" PicoAccountLink { get; set; }"}</code> |
+| <Link id="m-referral" /><code>{"string Referral { get; set; }"}</code> |
 
 ## Used in
 

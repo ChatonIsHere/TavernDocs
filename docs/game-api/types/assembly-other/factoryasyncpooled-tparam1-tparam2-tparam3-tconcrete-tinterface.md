@@ -17,12 +17,12 @@ An **abstract class** in `Alta.VContainerLayer.Runtime`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected FactoryAsyncPooled()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected FactoryAsyncPooled()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spawn" /><code>{"async Task<TInterface> Spawn(TParam1 param1, TParam2 param2, TParam3 param3)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-spawn" /><code>{"async Task<TInterface> Spawn(TParam1 param1, TParam2 param2, TParam3 param3)"}</code> |

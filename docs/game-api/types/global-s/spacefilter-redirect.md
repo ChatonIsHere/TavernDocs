@@ -17,23 +17,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Redirect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Redirect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fillset" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/forestfillset">{"ForestFillSet"}</Link>{" fillSet"}</code> |  |
-| <Link id="m-types" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" types"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fillset" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/forestfillset">{"ForestFillSet"}</Link>{" fillSet"}</code> |
+| <Link id="m-types" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" types"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fillset-2" /><code><Link to="/game-api/types/alta-world-generation/forestfillset">{"ForestFillSet"}</Link>{" FillSet { get; }"}</code> |  |
-| <Link id="m-types-2" /><code><Link to="/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" Types { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fillset-2" /><code><Link to="/game-api/types/alta-world-generation/forestfillset">{"ForestFillSet"}</Link>{" FillSet { get; }"}</code> |
+| <Link id="m-types-2" /><code><Link to="/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" Types { get; }"}</code> |
 
 ## Used in
 

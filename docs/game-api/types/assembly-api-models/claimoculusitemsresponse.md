@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClaimOculusItemsResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClaimOculusItemsResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-claimeditems" /><code>{"List<string> ClaimedItems { get; set; }"}</code> |  |
-| <Link id="m-value" /><code>{"bool Value { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-claimeditems" /><code>{"List<string> ClaimedItems { get; set; }"}</code> |
+| <Link id="m-value" /><code>{"bool Value { get; set; }"}</code> |
 
 ## Used in
 

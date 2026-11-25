@@ -17,6 +17,6 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UpdateUserInfoRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UpdateUserInfoRequest()"}</code> |

@@ -20,9 +20,9 @@ A serializable `UnityEvent` with a `bool` argument, for wiring toggles in the in
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BoolUnityEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BoolUnityEvent()"}</code> |
 
 ## Used in
 

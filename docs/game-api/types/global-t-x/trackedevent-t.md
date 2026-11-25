@@ -19,9 +19,9 @@ A delegate list you add to with `+` and fire with `Invoke`, which remembers whet
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TrackedEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TrackedEvent()"}</code> |
 
 ## Fields
 
@@ -29,7 +29,15 @@ A delegate list you add to with `+` and fire with `Invoke`, which remembers whet
 | --- | --- |
 | <Link id="m-eventhandlers" /><code>{"protected readonly List<T> eventHandlers"}</code> | The handlers added so far. |
 | <Link id="m-eventhandlersbuffer" /><code>{"protected readonly List<T> eventHandlersBuffer"}</code> | Copy of the handlers used during `Invoke`, so handlers can remove themselves safely. |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+
+</details>
 
 ## Properties
 

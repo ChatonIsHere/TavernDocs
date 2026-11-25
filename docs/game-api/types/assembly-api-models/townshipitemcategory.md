@@ -18,17 +18,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TownshipItemCategory()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TownshipItemCategory()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-code" /><code>{"string Code { get; set; }"}</code> |  |
-| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |  |
-| <Link id="m-enabled" /><code>{"bool Enabled { get; set; }"}</code> |  |
-| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-parentcategory" /><code><Link to="/game-api/types/assembly-api-models/townshipitemcategory">{"TownshipItemCategory"}</Link>{" ParentCategory { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-code" /><code>{"string Code { get; set; }"}</code> |
+| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |
+| <Link id="m-enabled" /><code>{"bool Enabled { get; set; }"}</code> |
+| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| <Link id="m-parentcategory" /><code><Link to="/game-api/types/assembly-api-models/townshipitemcategory">{"TownshipItemCategory"}</Link>{" ParentCategory { get; set; }"}</code> |

@@ -18,16 +18,21 @@ One character and its 3D mesh, used by `TextFont` for letters and digits.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LetterMesh()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LetterMesh()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-letter" /><code>{"private char letter"}</code> |  |
-| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-letter" /><code>{"private char letter"}</code> |
+| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> |
+
+</details>
 
 ## Properties
 

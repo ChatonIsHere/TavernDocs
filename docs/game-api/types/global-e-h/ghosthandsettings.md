@@ -19,23 +19,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GhostHandSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GhostHandSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alphabydistance" /><code>{"private AnimationCurve alphaByDistance"}</code> |  |
-| <Link id="m-isfadingalpha" /><code>{"private bool isFadingAlpha"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-alphabydistance" /><code>{"private AnimationCurve alphaByDistance"}</code> |
+| <Link id="m-isfadingalpha" /><code>{"private bool isFadingAlpha"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alphabydistance-2" /><code>{"AnimationCurve AlphaByDistance { get; }"}</code> |  |
-| <Link id="m-isfadingalpha-2" /><code>{"bool IsFadingAlpha { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-alphabydistance-2" /><code>{"AnimationCurve AlphaByDistance { get; }"}</code> |
+| <Link id="m-isfadingalpha-2" /><code>{"bool IsFadingAlpha { get; }"}</code> |
 
 ## Used in
 

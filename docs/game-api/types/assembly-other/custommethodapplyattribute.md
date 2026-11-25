@@ -17,28 +17,41 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CustomMethodApplyAttribute(string method)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CustomMethodApplyAttribute(string method)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-empty" /><code>{"private static object[] empty"}</code> |  |
-| <Link id="m-flags" /><code>{"private const BindingFlags flags"}</code> |  |
-| <Link id="m-methods" /><code>{"private static Dictionary<int, MethodInfo> methods"}</code> |  |
-| <Link id="m-nonreturnmethods" /><code>{"private static Dictionary<int, MethodInfo> nonReturnMethods"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-empty" /><code>{"private static object[] empty"}</code> |
+| <Link id="m-flags" /><code>{"private const BindingFlags flags"}</code> |
+| <Link id="m-methods" /><code>{"private static Dictionary<int, MethodInfo> methods"}</code> |
+| <Link id="m-nonreturnmethods" /><code>{"private static Dictionary<int, MethodInfo> nonReturnMethods"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-method" /><code>{"string Method { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-method" /><code>{"string Method { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> |  |
-| <Link id="m-gethashcode" /><code>{"private static int GetHashCode(Type type, string method)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-gethashcode" /><code>{"private static int GetHashCode(Type type, string method)"}</code> |
+
+</details>

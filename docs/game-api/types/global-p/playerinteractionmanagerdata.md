@@ -20,13 +20,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerInteractionManagerData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerInteractionManagerData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-nextid" /><code>{"int nextID"}</code> |  |
-| <Link id="m-trackers" /><code><Link to="/game-api/types/global-p/playerinteractionmanagerdata-playerdata">{"PlayerInteractionManagerData.PlayerData"}</Link>{"[] trackers"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-nextid" /><code>{"int nextID"}</code> |
+| <Link id="m-trackers" /><code><Link to="/game-api/types/global-p/playerinteractionmanagerdata-playerdata">{"PlayerInteractionManagerData.PlayerData"}</Link>{"[] trackers"}</code> |

@@ -16,23 +16,23 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playername" /><code>{"string playerName"}</code> |  |
-| <Link id="m-timeinseconds" /><code>{"int timeInSeconds"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-playername" /><code>{"string playerName"}</code> |
+| <Link id="m-timeinseconds" /><code>{"int timeInSeconds"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-message" /><code>{"string Message { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-message" /><code>{"string Message { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/global-p/playerdatainfo">{"PlayerDataInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/global-p/playerdata">{"PlayerData"}</Link>{" data)"}</code> |  |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/global-p/playerdatainfo">{"PlayerDataInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/global-p/playerdata">{"PlayerData"}</Link>{" data)"}</code> |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
 
 ## Used in
 

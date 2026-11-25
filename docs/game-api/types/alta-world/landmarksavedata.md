@@ -21,9 +21,9 @@ Save data for a map `Landmark`: which map and index it is, its icons, starting d
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LandmarkSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LandmarkSaveData()"}</code> |
 
 ## Properties
 

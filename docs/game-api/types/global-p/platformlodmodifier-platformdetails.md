@@ -17,16 +17,16 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformDetails()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformDetails()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-platform" /><code><Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform"}</code> |  |
-| <Link id="m-screenrelativetransitionheights" /><code>{"float[] screenRelativeTransitionHeights"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-platform" /><code><Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform"}</code> |
+| <Link id="m-screenrelativetransitionheights" /><code>{"float[] screenRelativeTransitionHeights"}</code> |
 
 ## Used in
 

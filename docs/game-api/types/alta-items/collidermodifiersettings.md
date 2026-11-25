@@ -21,9 +21,9 @@ Base for settings that change hits on one collider, listed on an `ImpactDetector
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ColliderModifierSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ColliderModifierSettings()"}</code> |
 
 ## Methods
 

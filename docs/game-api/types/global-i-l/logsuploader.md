@@ -16,14 +16,22 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogsUploader()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogsUploader()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-uploadlogs" /><code>{"async void UploadLogs()"}</code> |  |
-| <Link id="m-compressdirectory" /><code>{"private static void CompressDirectory(string sInDir, string sOutFile)"}</code> |  |
-| <Link id="m-compressfile" /><code>{"private static void CompressFile(string sDir, string sRelativePath, GZipStream zipStream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-uploadlogs" /><code>{"async void UploadLogs()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-compressdirectory" /><code>{"private static void CompressDirectory(string sInDir, string sOutFile)"}</code> |
+| <Link id="m-compressfile" /><code>{"private static void CompressFile(string sDir, string sRelativePath, GZipStream zipStream)"}</code> |
+
+</details>

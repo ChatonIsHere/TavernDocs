@@ -19,9 +19,9 @@ Per-row state handed to forest fill code: the forest layout, a seeded random and
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Setup(Random rowRandom, "}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Setup(Random rowRandom, "}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> |
 
 ## Properties
 

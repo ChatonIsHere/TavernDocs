@@ -18,17 +18,17 @@ A **delegate** in `Alta.Serialization.Runtime`, `Alta.Serialization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GetMoreData(object object, IntPtr method)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GetMoreData(object object, IntPtr method)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(uint[] data, ref uint wordIndex, AsyncCallback callback, object object)"}</code> |  |
-| <Link id="m-endinvoke" /><code>{"virtual uint[] EndInvoke(ref uint wordIndex, IAsyncResult result)"}</code> |  |
-| <Link id="m-invoke" /><code>{"virtual uint[] Invoke(uint[] data, ref uint wordIndex)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(uint[] data, ref uint wordIndex, AsyncCallback callback, object object)"}</code> |
+| <Link id="m-endinvoke" /><code>{"virtual uint[] EndInvoke(ref uint wordIndex, IAsyncResult result)"}</code> |
+| <Link id="m-invoke" /><code>{"virtual uint[] Invoke(uint[] data, ref uint wordIndex)"}</code> |
 
 ## Used in
 

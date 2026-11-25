@@ -21,19 +21,27 @@ Base for charged tool skills that show a target on the struck object and fire wh
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected TargetBasedSkill()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected TargetBasedSkill()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activehandlermap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> activeHandlerMap"}</code> |  |
-| <Link id="m-activetargets" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> activeTargets"}</code> |  |
 | <Link id="m-clienthitinput" /><code>{"protected "}<Link to="/game-api/types/global-t-x/targetbasedskill-clienthitinput">{"TargetBasedSkill.ClientHitInput"}</Link>{" clientHitInput"}</code> | The last hit the client reported: position, direction, up, damage and impact type. |
-| <Link id="m-impacttypefilter" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttypefilter">{"ImpactTypeFilter"}</Link>{" impactTypeFilter"}</code> |  |
-| <Link id="m-isexecutingonclient" /><code>{"private bool isExecutingOnClient"}</code> |  |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activehandlermap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> activeHandlerMap"}</code> |
+| <Link id="m-activetargets" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> activeTargets"}</code> |
+| <Link id="m-impacttypefilter" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttypefilter">{"ImpactTypeFilter"}</Link>{" impactTypeFilter"}</code> |
+| <Link id="m-isexecutingonclient" /><code>{"private bool isExecutingOnClient"}</code> |
+
+</details>
 
 ## Methods
 

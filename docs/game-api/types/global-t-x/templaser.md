@@ -17,20 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TempLaser()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TempLaser()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distance" /><code>{"private float distance"}</code> |  |
-| <Link id="m-mask" /><code>{"private LayerMask mask"}</code> |  |
-| <Link id="m-olddetector" /><code>{"private "}<Link to="/game-api/types/global-i-l/ilightdetectortemp">{"ILightDetectorTemp"}</Link>{" oldDetector"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-distance" /><code>{"private float distance"}</code> |
+| <Link id="m-mask" /><code>{"private LayerMask mask"}</code> |
+| <Link id="m-olddetector" /><code>{"private "}<Link to="/game-api/types/global-i-l/ilightdetectortemp">{"ILightDetectorTemp"}</Link>{" oldDetector"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

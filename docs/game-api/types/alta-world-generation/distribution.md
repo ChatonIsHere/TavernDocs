@@ -23,9 +23,9 @@ Weighted random table of assets (prefabs, presets, liquids) under the hashed pat
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Distribution()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Distribution()"}</code> |
 
 ## Methods
 

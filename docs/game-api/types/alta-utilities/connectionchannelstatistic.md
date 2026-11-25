@@ -18,27 +18,32 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling.NetworkTransportMetric
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ConnectionChannelStatistic()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConnectionChannelStatistic()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channel" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-channel" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channel-2" /><code><Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" Channel { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-channel-2" /><code><Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" Channel { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> |
 
 ## Used in
 

@@ -18,12 +18,12 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InvertedTriangleStackingInstructionSetup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InvertedTriangleStackingInstructionSetup()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"protected override void Setup(Bounds bounds, "}<Link to="/game-api/types/alta-items/invertedtrianglestackinginstruction">{"InvertedTriangleStackingInstruction"}</Link>{" instructions)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"protected override void Setup(Bounds bounds, "}<Link to="/game-api/types/alta-items/invertedtrianglestackinginstruction">{"InvertedTriangleStackingInstruction"}</Link>{" instructions)"}</code> |

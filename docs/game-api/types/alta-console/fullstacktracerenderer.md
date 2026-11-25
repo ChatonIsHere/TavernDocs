@@ -18,18 +18,18 @@ A **class** in `Root.Township`, `Alta.Logging.Targets`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FullStackTraceRenderer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FullStackTraceRenderer()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stacktraceusage" /><code>{"StackTraceUsage StackTraceUsage { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-stacktraceusage" /><code>{"StackTraceUsage StackTraceUsage { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-append" /><code>{"protected override void Append(StringBuilder builder, LogEventInfo logEvent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-append" /><code>{"protected override void Append(StringBuilder builder, LogEventInfo logEvent)"}</code> |

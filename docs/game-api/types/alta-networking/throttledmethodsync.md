@@ -16,27 +16,40 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ThrottledMethodSync("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type, "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" handler, float throttleFrequencyInSeconds)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ThrottledMethodSync("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type, "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" handler, float throttleFrequencyInSeconds)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entity" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
-| <Link id="m-handler" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" handler"}</code> |  |
-| <Link id="m-nextavailablemessage" /><code>{"private float nextAvailableMessage"}</code> |  |
-| <Link id="m-throttlefrequencyinseconds" /><code>{"private readonly float throttleFrequencyInSeconds"}</code> |  |
-| <Link id="m-type" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entity" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| <Link id="m-handler" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" handler"}</code> |
+| <Link id="m-nextavailablemessage" /><code>{"private float nextAvailableMessage"}</code> |
+| <Link id="m-throttlefrequencyinseconds" /><code>{"private readonly float throttleFrequencyInSeconds"}</code> |
+| <Link id="m-type" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sendtochunks" /><code>{"void SendToChunks(params "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"[] except)"}</code> |  |
-| <Link id="m-sendtoplayer" /><code>{"void SendToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-shouldthrottlemessage" /><code>{"private bool ShouldThrottleMessage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-sendtochunks" /><code>{"void SendToChunks(params "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"[] except)"}</code> |
+| <Link id="m-sendtoplayer" /><code>{"void SendToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-shouldthrottlemessage" /><code>{"private bool ShouldThrottleMessage()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -18,28 +18,41 @@ A **class** in `Root.Township`, `Alta.Alchemy`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EffectVolumeTrigger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EffectVolumeTrigger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-effects" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectvolumetrigger-effect">{"EffectVolumeTrigger.Effect"}</Link>{"[] effects"}</code> |  |
-| <Link id="m-isserver" /><code>{"private bool isServer"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-effects" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectvolumetrigger-effect">{"EffectVolumeTrigger.Effect"}</Link>{"[] effects"}</code> |
+| <Link id="m-isserver" /><code>{"private bool isServer"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ischeckingforeffecthandler" /><code>{"override bool IsCheckingForEffectHandler { get; }"}</code> |  |
-| <Link id="m-ischeckingforrigidbody" /><code>{"override bool IsCheckingForRigidbody { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ischeckingforeffecthandler" /><code>{"override bool IsCheckingForEffectHandler { get; }"}</code> |
+| <Link id="m-ischeckingforrigidbody" /><code>{"override bool IsCheckingForRigidbody { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-effecthandlerentered" /><code>{"protected override void EffectHandlerEntered("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> |  |
-| <Link id="m-effecthandlerleft" /><code>{"protected override void EffectHandlerLeft("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-effecthandlerentered" /><code>{"protected override void EffectHandlerEntered("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> |
+| <Link id="m-effecthandlerleft" /><code>{"protected override void EffectHandlerLeft("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

@@ -17,25 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Spawner()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Spawner()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-count" /><code>{"private int count"}</code> |  |
-| <Link id="m-distribution" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> |  |
-| <Link id="m-isallsame" /><code>{"private bool isAllSame"}</code> |  |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-count" /><code>{"private int count"}</code> |
+| <Link id="m-distribution" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> |
+| <Link id="m-isallsame" /><code>{"private bool isAllSame"}</code> |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spawn" /><code>{"override void Spawn()"}</code> |  |
-| <Link id="m-spawnandreplace" /><code>{"void SpawnAndReplace()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-spawn" /><code>{"override void Spawn()"}</code> |
+| <Link id="m-spawnandreplace" /><code>{"void SpawnAndReplace()"}</code> |
 
 ## Used in
 

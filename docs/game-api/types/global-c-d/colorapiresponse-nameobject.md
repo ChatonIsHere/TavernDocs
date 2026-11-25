@@ -17,15 +17,15 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NameObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NameObject()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-value" /><code>{"string value"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-value" /><code>{"string value"}</code> |
 
 ## Used in
 

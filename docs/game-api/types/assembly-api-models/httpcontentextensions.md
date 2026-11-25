@@ -17,12 +17,17 @@ A **static class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModel
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-readasjsonasync" /><code>{"static async Task<T> ReadAsJsonAsync<T>(HttpContent content)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-readasjsonasync" /><code>{"static async Task<T> ReadAsJsonAsync<T>(HttpContent content)"}</code> |

@@ -16,37 +16,50 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Screenshot("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, int width = 1920, int height = 1080)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Screenshot("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, int width = 1920, int height = 1080)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-camera" /><code><Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" Camera { get; }"}</code> |  |
-| <Link id="m-height" /><code>{"int Height { get; }"}</code> |  |
-| <Link id="m-istransparent" /><code>{"bool IsTransparent { get; set; }"}</code> |  |
-| <Link id="m-lastphoto" /><code>{"Texture2D LastPhoto { get; }"}</code> |  |
-| <Link id="m-width" /><code>{"int Width { get; }"}</code> |  |
-| <Link id="m-windowspath" /><code>{"string WindowsPath { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-camera" /><code><Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" Camera { get; }"}</code> |
+| <Link id="m-height" /><code>{"int Height { get; }"}</code> |
+| <Link id="m-istransparent" /><code>{"bool IsTransparent { get; set; }"}</code> |
+| <Link id="m-lastphoto" /><code>{"Texture2D LastPhoto { get; }"}</code> |
+| <Link id="m-width" /><code>{"int Width { get; }"}</code> |
+| <Link id="m-windowspath" /><code>{"string WindowsPath { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-take" /><code>{"bool Take()"}</code> |  |
-| <Link id="m-savephoto" /><code>{"private bool SavePhoto()"}</code> |  |
-| <Link id="m-savephotoandroid" /><code>{"private bool SavePhotoAndroid()"}</code> |  |
-| <Link id="m-savephotowindows" /><code>{"private bool SavePhotoWindows()"}</code> |  |
-| <Link id="m-screenshotname" /><code>{"private string ScreenShotName()"}</code> |  |
-| <Link id="m-windowspathwithscreenshotname" /><code>{"private string WindowsPathWithScreenShotName()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-take" /><code>{"bool Take()"}</code> |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-savephoto" /><code>{"private bool SavePhoto()"}</code> |
+| <Link id="m-savephotoandroid" /><code>{"private bool SavePhotoAndroid()"}</code> |
+| <Link id="m-savephotowindows" /><code>{"private bool SavePhotoWindows()"}</code> |
+| <Link id="m-screenshotname" /><code>{"private string ScreenShotName()"}</code> |
+| <Link id="m-windowspathwithscreenshotname" /><code>{"private string WindowsPathWithScreenShotName()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -16,10 +16,10 @@ A **struct** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactive" /><code>{"bool isActive"}</code> |  |
-| <Link id="m-modplayeridentifier" /><code>{"uint modPlayerIdentifier"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isactive" /><code>{"bool isActive"}</code> |
+| <Link id="m-modplayeridentifier" /><code>{"uint modPlayerIdentifier"}</code> |
 
 ## Used in
 

@@ -18,20 +18,25 @@ A serializable chain that turns an input object (usually a `Distribution`) into 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ObjectPipeline()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ObjectPipeline()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cached" /><code>{"private Object cached"}</code> |  |
-| <Link id="m-cachedepth" /><code>{"private int cacheDepth"}</code> |  |
-| <Link id="m-input" /><code>{"private Object input"}</code> |  |
-| <Link id="m-isrun" /><code>{"private bool isRun"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-pipeline" /><code>{"private int[] pipeline"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cached" /><code>{"private Object cached"}</code> |
+| <Link id="m-cachedepth" /><code>{"private int cacheDepth"}</code> |
+| <Link id="m-input" /><code>{"private Object input"}</code> |
+| <Link id="m-isrun" /><code>{"private bool isRun"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-pipeline" /><code>{"private int[] pipeline"}</code> |
+
+</details>
 
 ## Properties
 

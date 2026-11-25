@@ -18,25 +18,33 @@ A **class** in `Alta.EventBus.Runtime`, `Alta.EventBusSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EventBus()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EventBus()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duplicatelistenerlogprefix" /><code>{"const string DuplicateListenerLogPrefix"}</code> |  |
-| <Link id="m-listeners" /><code>{"private readonly List<Action<T>> listeners"}</code> |  |
-| <Link id="m-logger" /><code>{"private readonly Logger logger"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-duplicatelistenerlogprefix" /><code>{"const string DuplicateListenerLogPrefix"}</code> |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-listeners" /><code>{"private readonly List<Action<T>> listeners"}</code> |
+| <Link id="m-logger" /><code>{"private readonly Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addlistener" /><code>{"void AddListener(Action<T> listener)"}</code> |  |
-| <Link id="m-removelistener" /><code>{"void RemoveListener(Action<T> listener)"}</code> |  |
-| <Link id="m-send" /><code>{"void Send(T eventObject)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addlistener" /><code>{"void AddListener(Action<T> listener)"}</code> |
+| <Link id="m-removelistener" /><code>{"void RemoveListener(Action<T> listener)"}</code> |
+| <Link id="m-send" /><code>{"void Send(T eventObject)"}</code> |
 
 ## Used in
 

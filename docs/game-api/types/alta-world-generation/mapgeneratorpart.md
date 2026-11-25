@@ -20,16 +20,21 @@ Base asset for one part of a cave generator plugin. It makes a `MapGeneratorPart
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected MapGeneratorPart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected MapGeneratorPart()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-overridetarget" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" overrideTarget"}</code> |  |
-| <Link id="m-partidentifier" /><code>{"private int partIdentifier"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-overridetarget" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" overrideTarget"}</code> |
+| <Link id="m-partidentifier" /><code>{"private int partIdentifier"}</code> |
+
+</details>
 
 ## Properties
 
@@ -44,7 +49,15 @@ Base asset for one part of a cave generator plugin. It makes a `MapGeneratorPart
 | --- | --- |
 | <Link id="m-getinstance" /><code>{"abstract "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> | Creates the runtime instance of this part for a plugin instance. |
 | <Link id="m-regenerateidentifier" /><code>{"void RegenerateIdentifier()"}</code> | Sets the identifier from the asset's instance ID. |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>
 
 ## Used in
 

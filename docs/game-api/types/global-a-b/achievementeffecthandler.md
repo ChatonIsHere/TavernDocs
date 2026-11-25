@@ -16,14 +16,27 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-effectqueue" /><code>{"private static Queue<"}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{"> effectQueue"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-effectqueue" /><code>{"private static Queue<"}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{"> effectQueue"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-calleffect" /><code>{"static void CallEffect("}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> |  |
-| <Link id="m-movequeue" /><code>{"private static void MoveQueue("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |  |
-| <Link id="m-play" /><code>{"private static async void Play()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-calleffect" /><code>{"static void CallEffect("}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-movequeue" /><code>{"private static void MoveQueue("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
+| <Link id="m-play" /><code>{"private static async void Play()"}</code> |
+
+</details>

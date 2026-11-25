@@ -20,16 +20,21 @@ Base for the dedicated server's text console (Windows, Linux or a null console).
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerConsole()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerConsole()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-inputqueue" /><code>{"private ConcurrentQueue<string> inputQueue"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-inputqueue" /><code>{"private ConcurrentQueue<string> inputQueue"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Events
 

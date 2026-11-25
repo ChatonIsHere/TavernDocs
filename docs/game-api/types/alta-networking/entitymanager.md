@@ -20,27 +20,35 @@ Owns the table of network entity ids for a scene: hands out free ids, maps ids t
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EntityManager("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" networkScene, bool isServer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EntityManager("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" networkScene, bool isServer)"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-maximumentities" /><code>{"const int MaximumEntities"}</code> | Size of the id table: 100000. Two ids in every 50 are reserved as markers, so fewer are usable. |
-| <Link id="m-clientserialized" /><code>{"private readonly SortedList<uint, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"> clientSerialized"}</code> |  |
-| <Link id="m-clientserializedenumerable" /><code>{"private "}<Link to="/game-api/types/alta-networking/clientserializedenumerable">{"ClientSerializedEnumerable"}</Link>{" clientSerializedEnumerable"}</code> |  |
-| <Link id="m-entities" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"[] entities"}</code> |  |
-| <Link id="m-fakeentitydivision" /><code>{"private const int FakeEntityDivision"}</code> |  |
-| <Link id="m-isserver" /><code>{"private readonly bool isServer"}</code> |  |
-| <Link id="m-linkedlistiterationcount" /><code>{"private int linkedListIterationCount"}</code> |  |
-| <Link id="m-linkprovider" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/ilinkprovider">{"ILinkProvider"}</Link>{" linkProvider"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-networkscene" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" networkScene"}</code> |  |
-| <Link id="m-nextspawn" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" nextSpawn"}</code> |  |
-| <Link id="m-preparedlinks" /><code>{"private static "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"[] preparedLinks"}</code> |  |
-| <Link id="m-serializedenumerables" /><code>{"private readonly Dictionary<int, "}<Link to="/game-api/types/alta-networking/serializedenumerable">{"SerializedEnumerable"}</Link>{"> serializedEnumerables"}</code> |  |
+
+<details>
+<summary>12 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-clientserialized" /><code>{"private readonly SortedList<uint, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"> clientSerialized"}</code> |
+| <Link id="m-clientserializedenumerable" /><code>{"private "}<Link to="/game-api/types/alta-networking/clientserializedenumerable">{"ClientSerializedEnumerable"}</Link>{" clientSerializedEnumerable"}</code> |
+| <Link id="m-entities" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"[] entities"}</code> |
+| <Link id="m-fakeentitydivision" /><code>{"private const int FakeEntityDivision"}</code> |
+| <Link id="m-isserver" /><code>{"private readonly bool isServer"}</code> |
+| <Link id="m-linkedlistiterationcount" /><code>{"private int linkedListIterationCount"}</code> |
+| <Link id="m-linkprovider" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/ilinkprovider">{"ILinkProvider"}</Link>{" linkProvider"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-networkscene" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" networkScene"}</code> |
+| <Link id="m-nextspawn" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" nextSpawn"}</code> |
+| <Link id="m-preparedlinks" /><code>{"private static "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"[] preparedLinks"}</code> |
+| <Link id="m-serializedenumerables" /><code>{"private readonly Dictionary<int, "}<Link to="/game-api/types/alta-networking/serializedenumerable">{"SerializedEnumerable"}</Link>{"> serializedEnumerables"}</code> |
+
+</details>
 
 ## Methods
 
@@ -63,9 +71,17 @@ Owns the table of network entity ids for a scene: hands out free ids, maps ids t
 | <Link id="m-registerembedded" /><code>{"void RegisterEmbedded(IEnumerable<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> embeddedEntities)"}</code> | Gives each embedded scene entity without an id a new one and initializes it. |
 | <Link id="m-serializeasclient" /><code>{"void SerializeAsClient("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Adds an entity to the list the client sends to the server, until it's destroyed. |
 | <Link id="m-syncsceneentity" /><code>{"void SyncSceneEntity(uint embeddedIndex, uint identifier, uint[] embedded)"}</code> | Client: gives an embedded scene entity the id the server uses for it. |
-| <Link id="m-getlink" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" Alta.Networking.Internal.ILinkProvider.GetLink(uint identifier)"}</code> |  |
-| <Link id="m-getnextlink" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" Alta.Networking.Internal.ILinkProvider.GetNextLink()"}</code> |  |
-| <Link id="m-preparelinkedentitylist" /><code>{"private void PrepareLinkedEntityList()"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-getlink" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" Alta.Networking.Internal.ILinkProvider.GetLink(uint identifier)"}</code> |
+| <Link id="m-getnextlink" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" Alta.Networking.Internal.ILinkProvider.GetNextLink()"}</code> |
+| <Link id="m-preparelinkedentitylist" /><code>{"private void PrepareLinkedEntityList()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -19,15 +19,20 @@ Typed access to the `PlayingBase` action map of `InputMap`, one `InputAction` pe
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingBaseActions("}<Link to="/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" wrapper)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayingBaseActions("}<Link to="/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" wrapper)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-m-wrapper" /><code>{"private "}<Link to="/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" m_Wrapper"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-m-wrapper" /><code>{"private "}<Link to="/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" m_Wrapper"}</code> |
+
+</details>
 
 ## Properties
 

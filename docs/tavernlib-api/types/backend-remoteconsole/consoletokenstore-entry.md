@@ -20,9 +20,9 @@ Private: one named token in the in-memory copy, with its granted paths worked ou
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Entry("}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletoken">{"ConsoleToken"}</Link>{" token)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Entry("}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletoken">{"ConsoleToken"}</Link>{" token)"}</code> |
 
 ## Fields
 

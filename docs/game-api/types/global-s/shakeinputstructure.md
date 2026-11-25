@@ -19,35 +19,40 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShakeInputStructure()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShakeInputStructure()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fadepersecond" /><code>{"private float fadePerSecond"}</code> |  |
-| <Link id="m-helddeactivation" /><code>{"private float heldDeactivation"}</code> |  |
-| <Link id="m-jumpperchange" /><code>{"private float jumpPerChange"}</code> |  |
-| <Link id="m-threshold" /><code>{"private float threshold"}</code> |  |
-| <Link id="m-velocitythresholdsquared" /><code>{"private float velocityThresholdSquared"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fadepersecond" /><code>{"private float fadePerSecond"}</code> |
+| <Link id="m-helddeactivation" /><code>{"private float heldDeactivation"}</code> |
+| <Link id="m-jumpperchange" /><code>{"private float jumpPerChange"}</code> |
+| <Link id="m-threshold" /><code>{"private float threshold"}</code> |
+| <Link id="m-velocitythresholdsquared" /><code>{"private float velocityThresholdSquared"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fadepersecond-2" /><code>{"float FadePerSecond { get; }"}</code> |  |
-| <Link id="m-helddeactivation-2" /><code>{"float HeldDeactivation { get; }"}</code> |  |
-| <Link id="m-jumpperchange-2" /><code>{"float JumpPerChange { get; }"}</code> |  |
-| <Link id="m-threshold-2" /><code>{"float Threshold { get; }"}</code> |  |
-| <Link id="m-velocitythresholdsquared-2" /><code>{"float VelocityThresholdSquared { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fadepersecond-2" /><code>{"float FadePerSecond { get; }"}</code> |
+| <Link id="m-helddeactivation-2" /><code>{"float HeldDeactivation { get; }"}</code> |
+| <Link id="m-jumpperchange-2" /><code>{"float JumpPerChange { get; }"}</code> |
+| <Link id="m-threshold-2" /><code>{"float Threshold { get; }"}</code> |
+| <Link id="m-velocitythresholdsquared-2" /><code>{"float VelocityThresholdSquared { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getnewinput" /><code>{"override "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getnewinput" /><code>{"override "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> |
 
 ## Used in
 

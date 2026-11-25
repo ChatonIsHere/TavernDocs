@@ -21,16 +21,21 @@ A ScriptableObject holding one wind speed and strength pair, used by the grass a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WindPattern()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WindPattern()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-windspeed" /><code>{"private float windSpeed"}</code> |  |
-| <Link id="m-windstrength" /><code>{"private float windStrength"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-windspeed" /><code>{"private float windSpeed"}</code> |
+| <Link id="m-windstrength" /><code>{"private float windStrength"}</code> |
+
+</details>
 
 ## Properties
 

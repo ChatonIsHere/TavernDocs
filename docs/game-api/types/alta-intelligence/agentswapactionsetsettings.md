@@ -18,31 +18,36 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AgentSwapActionSetSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AgentSwapActionSetSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |  |
-| <Link id="m-isusingtarget" /><code>{"private bool isUsingTarget"}</code> |  |
-| <Link id="m-set" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" set"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-duration" /><code>{"private float duration"}</code> |
+| <Link id="m-isusingtarget" /><code>{"private bool isUsingTarget"}</code> |
+| <Link id="m-set" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" set"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> |  |
-| <Link id="m-isusingtarget-2" /><code>{"bool IsUsingTarget { get; }"}</code> |  |
-| <Link id="m-set-2" /><code><Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" Set { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> |
+| <Link id="m-isusingtarget-2" /><code>{"bool IsUsingTarget { get; }"}</code> |
+| <Link id="m-set-2" /><code><Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" Set { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |
 
 ## Used in
 

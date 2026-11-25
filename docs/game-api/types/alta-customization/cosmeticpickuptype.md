@@ -16,13 +16,13 @@ An **enum** in `Root.Township`, `Alta.Customization`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bodytype" /><code>{"BodyType = 4"}</code> |  |
-| <Link id="m-cosmetic" /><code>{"Cosmetic = 0"}</code> |  |
-| <Link id="m-eye" /><code>{"Eye = 1"}</code> |  |
-| <Link id="m-skincolor" /><code>{"SkinColor = 2"}</code> |  |
-| <Link id="m-skinpart" /><code>{"SkinPart = 3"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bodytype" /><code>{"BodyType = 4"}</code> |
+| <Link id="m-cosmetic" /><code>{"Cosmetic = 0"}</code> |
+| <Link id="m-eye" /><code>{"Eye = 1"}</code> |
+| <Link id="m-skincolor" /><code>{"SkinColor = 2"}</code> |
+| <Link id="m-skinpart" /><code>{"SkinPart = 3"}</code> |
 
 ## Used in
 

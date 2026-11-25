@@ -19,17 +19,27 @@ Client-only helpers and the `recent-players` console module (alias `recent`) for
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-recentstatustime" /><code>{"private const string RecentStatusTime"}</code> |  |
-| <Link id="m-voicechat" /><code>{"private static "}<Link to="/game-api/types/alta-networking/ivoicechat">{"IVoiceChat"}</Link>{" voiceChat"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-recentstatustime" /><code>{"private const string RecentStatusTime"}</code> |
+| <Link id="m-voicechat" /><code>{"private static "}<Link to="/game-api/types/alta-networking/ivoicechat">{"IVoiceChat"}</Link>{" voiceChat"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-voicechat-2" /><code>{"private static "}<Link to="/game-api/types/alta-networking/ivoicechat">{"IVoiceChat"}</Link>{" VoiceChat { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-voicechat-2" /><code>{"private static "}<Link to="/game-api/types/alta-networking/ivoicechat">{"IVoiceChat"}</Link>{" VoiceChat { get; }"}</code> |
+
+</details>
 
 ## Methods
 
@@ -48,5 +58,13 @@ Client-only helpers and the `recent-players` console module (alias `recent`) for
 | <Link id="m-testrecordinteraction" /><code>{"static async Task TestRecordInteraction(string name, int id, int interactionType)"}</code> | Console command `test-record` (`tr`): records a test interaction with a made-up user. |
 | <Link id="m-toprettyformat" /><code>{"static string ToPrettyFormat(TimeSpan span)"}</code> | Formats a time span as days, hours and minutes ago. |
 | <Link id="m-toprettyformatapprox" /><code>{"static string ToPrettyFormatApprox(TimeSpan span)"}</code> | Formats a time span as its largest unit only, such as "3 hours ago". |
-| <Link id="m-querydbforinteractions" /><code>{"private static async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{">> QueryDbForInteractions(int? serverIdToCheck = null)"}</code> |  |
-| <Link id="m-timesince" /><code>{"private static TimeSpan TimeSince("}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{" info)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-querydbforinteractions" /><code>{"private static async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{">> QueryDbForInteractions(int? serverIdToCheck = null)"}</code> |
+| <Link id="m-timesince" /><code>{"private static TimeSpan TimeSince("}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{" info)"}</code> |
+
+</details>

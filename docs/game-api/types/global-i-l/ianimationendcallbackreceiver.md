@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onanimationended" /><code>{"void OnAnimationEnded()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onanimationended" /><code>{"void OnAnimationEnded()"}</code> |

@@ -17,25 +17,38 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TextButton()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TextButton()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-buttonobject" /><code>{"private GameObject buttonObject"}</code> |  |
-| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-buttonobject" /><code>{"private GameObject buttonObject"}</code> |
+| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setbuttonlayer" /><code>{"void SetButtonLayer(int newLayer)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
-| <Link id="m-onlabelchanged" /><code>{"private void OnLabelChanged("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" obj)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setbuttonlayer" /><code>{"void SetButtonLayer(int newLayer)"}</code> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onlabelchanged" /><code>{"private void OnLabelChanged("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" obj)"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>
 
 ## Used in
 

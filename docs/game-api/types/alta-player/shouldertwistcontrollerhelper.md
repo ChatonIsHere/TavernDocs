@@ -17,29 +17,34 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShoulderTwistControllerHelper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShoulderTwistControllerHelper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-issettingtwistlimit" /><code>{"private bool isSettingTwistLimit"}</code> |  |
-| <Link id="m-twistlimit" /><code>{"private "}<Link to="/game-api/types/alta-player/bonewithtwistlimit">{"BoneWithTwistLimit"}</Link>{" twistLimit"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-issettingtwistlimit" /><code>{"private bool isSettingTwistLimit"}</code> |
+| <Link id="m-twistlimit" /><code>{"private "}<Link to="/game-api/types/alta-player/bonewithtwistlimit">{"BoneWithTwistLimit"}</Link>{" twistLimit"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-shoulder" /><code>{"Transform Shoulder { set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-shoulder" /><code>{"Transform Shoulder { set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setuptwistlimit" /><code>{"void SetupTwistLimit()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setuptwistlimit" /><code>{"void SetupTwistLimit()"}</code> |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |
 
 ## Used in
 

@@ -19,10 +19,10 @@ Flags for what the hand-held screenshot camera is doing: `idle` or taking a `pho
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-idle" /><code>{"idle = 1"}</code> |  |
-| <Link id="m-photo" /><code>{"photo = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-idle" /><code>{"idle = 1"}</code> |
+| <Link id="m-photo" /><code>{"photo = 2"}</code> |
 
 ## Used in
 

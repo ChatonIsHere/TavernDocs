@@ -16,24 +16,29 @@ A **internal class** in `Root.Township`, `Alta.StatSystem`. Reach it through att
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatModifierConstructor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatModifierConstructor()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hasbuffeffects" /><code>{"private bool hasBuffEffects"}</code> |  |
-| <Link id="m-ismultiplier" /><code>{"private bool isMultiplier"}</code> |  |
-| <Link id="m-targetstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" targetStat"}</code> |  |
-| <Link id="m-value" /><code>{"private float value"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-hasbuffeffects" /><code>{"private bool hasBuffEffects"}</code> |
+| <Link id="m-ismultiplier" /><code>{"private bool isMultiplier"}</code> |
+| <Link id="m-targetstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" targetStat"}</code> |
+| <Link id="m-value" /><code>{"private float value"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getmodifier" /><code><Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" GetModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getmodifier" /><code><Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" GetModifier()"}</code> |
 
 ## Used in
 

@@ -18,8 +18,8 @@ A **static class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addatm" /><code>{"static async Task<int> AddATM("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user, int quantityToAdd)"}</code> |  |
-| <Link id="m-getatm" /><code>{"static async Task<int> GetATM("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user)"}</code> |  |
-| <Link id="m-setatm" /><code>{"static async Task SetATM("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user, int quantity)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addatm" /><code>{"static async Task<int> AddATM("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user, int quantityToAdd)"}</code> |
+| <Link id="m-getatm" /><code>{"static async Task<int> GetATM("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user)"}</code> |
+| <Link id="m-setatm" /><code>{"static async Task SetATM("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user, int quantity)"}</code> |

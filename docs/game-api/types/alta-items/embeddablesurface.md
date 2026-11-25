@@ -18,26 +18,36 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EmbeddableSurface()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EmbeddableSurface()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-breakdistance" /><code>{"private float breakDistance"}</code> |  |
-| <Link id="m-damper" /><code>{"private float damper"}</code> |  |
-| <Link id="m-detector" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector"}</code> |  |
-| <Link id="m-minimumdamage" /><code>{"private float minimumDamage"}</code> |  |
-| <Link id="m-spring" /><code>{"private AnimationCurve spring"}</code> |  |
-| <Link id="m-wedgedistance" /><code>{"private float wedgeDistance"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-breakdistance" /><code>{"private float breakDistance"}</code> |
+| <Link id="m-damper" /><code>{"private float damper"}</code> |
+| <Link id="m-detector" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector"}</code> |
+| <Link id="m-minimumdamage" /><code>{"private float minimumDamage"}</code> |
+| <Link id="m-spring" /><code>{"private AnimationCurve spring"}</code> |
+| <Link id="m-wedgedistance" /><code>{"private float wedgeDistance"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkbreak" /><code>{"private IEnumerator CheckBreak("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impact, ConfigurableJoint joint, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup) (iterator)"}</code> |  |
-| <Link id="m-hit" /><code>{"private void Hit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" rawImpact)"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-checkbreak" /><code>{"private IEnumerator CheckBreak("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impact, ConfigurableJoint joint, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup) (iterator)"}</code> |
+| <Link id="m-hit" /><code>{"private void Hit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" rawImpact)"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+
+</details>

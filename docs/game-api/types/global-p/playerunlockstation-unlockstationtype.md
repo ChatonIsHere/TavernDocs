@@ -17,12 +17,12 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-completion" /><code>{"Completion = 2"}</code> |  |
-| <Link id="m-normal" /><code>{"Normal = 0"}</code> |  |
-| <Link id="m-start" /><code>{"Start = 1"}</code> |  |
-| <Link id="m-unlock" /><code>{"Unlock = 3"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-completion" /><code>{"Completion = 2"}</code> |
+| <Link id="m-normal" /><code>{"Normal = 0"}</code> |
+| <Link id="m-start" /><code>{"Start = 1"}</code> |
+| <Link id="m-unlock" /><code>{"Unlock = 3"}</code> |
 
 ## Used in
 

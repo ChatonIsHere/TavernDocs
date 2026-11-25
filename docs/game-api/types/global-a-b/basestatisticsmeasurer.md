@@ -16,23 +16,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BaseStatisticsMeasurer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BaseStatisticsMeasurer()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-average" /><code>{"float Average { get; }"}</code> |  |
-| <Link id="m-count" /><code>{"int Count { get; private set; }"}</code> |  |
-| <Link id="m-max" /><code>{"float Max { get; private set; }"}</code> |  |
-| <Link id="m-min" /><code>{"float Min { get; private set; }"}</code> |  |
-| <Link id="m-sum" /><code>{"float Sum { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-average" /><code>{"float Average { get; }"}</code> |
+| <Link id="m-count" /><code>{"int Count { get; private set; }"}</code> |
+| <Link id="m-max" /><code>{"float Max { get; private set; }"}</code> |
+| <Link id="m-min" /><code>{"float Min { get; private set; }"}</code> |
+| <Link id="m-sum" /><code>{"float Sum { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addvalue" /><code>{"void AddValue(float value)"}</code> |  |
-| <Link id="m-onvalueadded" /><code>{"protected virtual void OnValueAdded(float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addvalue" /><code>{"void AddValue(float value)"}</code> |
+| <Link id="m-onvalueadded" /><code>{"protected virtual void OnValueAdded(float value)"}</code> |

@@ -17,10 +17,10 @@ An **internal interface** in `Root.Township`, `Alta.Cooking`. Reach it through a
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cookingtemperatures" /><code><Link to="/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" "}<Link to="/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-isburnable" /><code>{"bool IsBurnable { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cookingtemperatures" /><code><Link to="/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" "}<Link to="/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" { get; }"}</code> |
+| <Link id="m-isburnable" /><code>{"bool IsBurnable { get; }"}</code> |
 
 ## Used in
 

@@ -17,13 +17,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FlyCamInputController("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FlyCamInputController("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-triggerhaptics" /><code>{"override void TriggerHaptics(float strength, float frequency, float timeRemaining)"}</code> |  |
-| <Link id="m-populateinput" /><code>{"protected override void PopulateInput("}<Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" input)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-triggerhaptics" /><code>{"override void TriggerHaptics(float strength, float frequency, float timeRemaining)"}</code> |
+| <Link id="m-populateinput" /><code>{"protected override void PopulateInput("}<Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" input)"}</code> |

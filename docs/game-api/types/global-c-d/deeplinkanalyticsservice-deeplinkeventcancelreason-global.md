@@ -17,9 +17,9 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-skippeddeeplinkfortutorial" /><code>{"SkippedDeepLinkForTutorial = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-skippeddeeplinkfortutorial" /><code>{"SkippedDeepLinkForTutorial = 0"}</code> |
 
 ## Used in
 

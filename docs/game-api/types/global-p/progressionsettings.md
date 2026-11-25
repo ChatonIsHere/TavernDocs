@@ -23,44 +23,49 @@ Global settings for XP, levels and skill points. Get it with `GlobalSettings<Pro
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProgressionSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProgressionSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bellowspumptoexperience" /><code>{"private float bellowsPumpToExperience"}</code> |  |
-| <Link id="m-bodylevelupeffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" bodyLevelUpEffect"}</code> |  |
-| <Link id="m-bodylevelupeffecttopointcap" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" bodyLevelUpEffectToPointCap"}</code> |  |
-| <Link id="m-destroyeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" destroyEffectDefinition"}</code> |  |
-| <Link id="m-dissipatetoolbasedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" dissipateToolBasedEffect"}</code> |  |
-| <Link id="m-experiencebooststat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" experienceBoostStat"}</code> |  |
-| <Link id="m-experienceperdamage" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-pathexperienceperdamage">{"ProgressionSettings.PathExperiencePerDamage"}</Link>{"[] experiencePerDamage"}</code> |  |
-| <Link id="m-experienceperdamagemap" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", float> experiencePerDamageMap"}</code> |  |
-| <Link id="m-experienceperlevelbasedonlevel" /><code>{"private AnimationCurve experiencePerLevelBasedOnLevel"}</code> |  |
-| <Link id="m-experienceshare" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-pathexperienceshare">{"ProgressionSettings.PathExperienceShare"}</Link>{"[] experienceShare"}</code> |  |
-| <Link id="m-experiencesharemap" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", "}<Link to="/game-api/types/global-p/progressionsettings-pathexperienceshare">{"ProgressionSettings.PathExperienceShare"}</Link>{"> experienceShareMap"}</code> |  |
-| <Link id="m-garnishexperienceboost" /><code>{"private float garnishExperienceBoost"}</code> |  |
-| <Link id="m-get8skillsachievement" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" get8SkillsAchievement"}</code> |  |
-| <Link id="m-impactchannel" /><code>{"private "}<Link to="/game-api/types/global-a-b/baseimpactchannelprogressionfilter">{"BaseImpactChannelProgressionFilter"}</Link>{"[] impactChannel"}</code> |  |
-| <Link id="m-isclearingpracticeobjectsonfirstpractice" /><code>{"private bool isClearingPracticeObjectsOnFirstPractice"}</code> |  |
-| <Link id="m-levelupaction" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" levelUpAction"}</code> |  |
-| <Link id="m-levelupeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" levelUpEffect"}</code> |  |
-| <Link id="m-levelupeffecttopointcap" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" levelUpEffectToPointCap"}</code> |  |
-| <Link id="m-maxboughtskills" /><code>{"private uint maxBoughtSkills"}</code> |  |
-| <Link id="m-maxfreepoints" /><code>{"private uint maxFreePoints"}</code> |  |
-| <Link id="m-pathimpactchannelmap" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{", "}<Link to="/game-api/types/global-a-b/baseimpactchannelprogressionfilter">{"BaseImpactChannelProgressionFilter"}</Link>{"> pathImpactChannelMap"}</code> |  |
-| <Link id="m-peringredientexperience" /><code>{"private int perIngredientExperience"}</code> |  |
-| <Link id="m-playercountexperienceshare" /><code>{"private float[] playerCountExperienceShare"}</code> |  |
-| <Link id="m-popcolors" /><code>{"private Color[] popColors"}</code> |  |
-| <Link id="m-powerstrikeinput" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-inputsystemsound">{"ProgressionSettings.InputSystemSound"}</Link>{" powerStrikeInput"}</code> |  |
-| <Link id="m-raisehandinput" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-inputsystemsound">{"ProgressionSettings.InputSystemSound"}</Link>{" raiseHandInput"}</code> |  |
-| <Link id="m-recipeexperiencebonus" /><code>{"private float recipeExperienceBonus"}</code> |  |
-| <Link id="m-sellingskillpointsrefundpercentage" /><code>{"private float sellingSkillPointsRefundPercentage"}</code> |  |
-| <Link id="m-skillorbinteractioneffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" skillOrbInteractionEffectDefinition"}</code> |  |
-| <Link id="m-toolbasedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" toolBasedEffect"}</code> |  |
+<details>
+<summary>30 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bellowspumptoexperience" /><code>{"private float bellowsPumpToExperience"}</code> |
+| <Link id="m-bodylevelupeffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" bodyLevelUpEffect"}</code> |
+| <Link id="m-bodylevelupeffecttopointcap" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" bodyLevelUpEffectToPointCap"}</code> |
+| <Link id="m-destroyeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" destroyEffectDefinition"}</code> |
+| <Link id="m-dissipatetoolbasedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" dissipateToolBasedEffect"}</code> |
+| <Link id="m-experiencebooststat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" experienceBoostStat"}</code> |
+| <Link id="m-experienceperdamage" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-pathexperienceperdamage">{"ProgressionSettings.PathExperiencePerDamage"}</Link>{"[] experiencePerDamage"}</code> |
+| <Link id="m-experienceperdamagemap" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", float> experiencePerDamageMap"}</code> |
+| <Link id="m-experienceperlevelbasedonlevel" /><code>{"private AnimationCurve experiencePerLevelBasedOnLevel"}</code> |
+| <Link id="m-experienceshare" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-pathexperienceshare">{"ProgressionSettings.PathExperienceShare"}</Link>{"[] experienceShare"}</code> |
+| <Link id="m-experiencesharemap" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", "}<Link to="/game-api/types/global-p/progressionsettings-pathexperienceshare">{"ProgressionSettings.PathExperienceShare"}</Link>{"> experienceShareMap"}</code> |
+| <Link id="m-garnishexperienceboost" /><code>{"private float garnishExperienceBoost"}</code> |
+| <Link id="m-get8skillsachievement" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" get8SkillsAchievement"}</code> |
+| <Link id="m-impactchannel" /><code>{"private "}<Link to="/game-api/types/global-a-b/baseimpactchannelprogressionfilter">{"BaseImpactChannelProgressionFilter"}</Link>{"[] impactChannel"}</code> |
+| <Link id="m-isclearingpracticeobjectsonfirstpractice" /><code>{"private bool isClearingPracticeObjectsOnFirstPractice"}</code> |
+| <Link id="m-levelupaction" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" levelUpAction"}</code> |
+| <Link id="m-levelupeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" levelUpEffect"}</code> |
+| <Link id="m-levelupeffecttopointcap" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" levelUpEffectToPointCap"}</code> |
+| <Link id="m-maxboughtskills" /><code>{"private uint maxBoughtSkills"}</code> |
+| <Link id="m-maxfreepoints" /><code>{"private uint maxFreePoints"}</code> |
+| <Link id="m-pathimpactchannelmap" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{", "}<Link to="/game-api/types/global-a-b/baseimpactchannelprogressionfilter">{"BaseImpactChannelProgressionFilter"}</Link>{"> pathImpactChannelMap"}</code> |
+| <Link id="m-peringredientexperience" /><code>{"private int perIngredientExperience"}</code> |
+| <Link id="m-playercountexperienceshare" /><code>{"private float[] playerCountExperienceShare"}</code> |
+| <Link id="m-popcolors" /><code>{"private Color[] popColors"}</code> |
+| <Link id="m-powerstrikeinput" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-inputsystemsound">{"ProgressionSettings.InputSystemSound"}</Link>{" powerStrikeInput"}</code> |
+| <Link id="m-raisehandinput" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-inputsystemsound">{"ProgressionSettings.InputSystemSound"}</Link>{" raiseHandInput"}</code> |
+| <Link id="m-recipeexperiencebonus" /><code>{"private float recipeExperienceBonus"}</code> |
+| <Link id="m-sellingskillpointsrefundpercentage" /><code>{"private float sellingSkillPointsRefundPercentage"}</code> |
+| <Link id="m-skillorbinteractioneffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" skillOrbInteractionEffectDefinition"}</code> |
+| <Link id="m-toolbasedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" toolBasedEffect"}</code> |
+
+</details>
 
 ## Properties
 
@@ -91,7 +96,15 @@ Global settings for XP, levels and skill points. Get it with `GlobalSettings<Pro
 | <Link id="m-orbdestroyeffect" /><code>{"void OrbDestroyEffect("}<Link to="/game-api/types/global-i-l/iskillorb">{"ISkillOrb"}</Link>{" orb)"}</code> | Spawns the skill orb destroy effect at an orb's position. |
 | <Link id="m-uncapskillpoints" /><code>{"void UncapSkillPoints(out int maxXp)"}</code> | Sets `MaxFreePoints` and `MaxBoughtSkills` to 0 (no limits) on the shared asset and outputs the curve's last XP value. |
 | <Link id="m-validatepathhit" /><code>{"bool ValidatePathHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, bool isGettingExperience, out "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | Maps a tool hit to a progression path by its impact channel and applies that channel's filter. False if the channel is not mapped. |
-| <Link id="m-fillandvalidatemaps" /><code>{"private void FillAndValidateMaps()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-populatemap" /><code>{"private void PopulateMap<T>(Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", T> map, T[] array)"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-fillandvalidatemaps" /><code>{"private void FillAndValidateMaps()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| <Link id="m-populatemap" /><code>{"private void PopulateMap<T>(Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", T> map, T[] array)"}</code> |
+
+</details>

@@ -18,15 +18,15 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ispushpossible" /><code>{"bool IsPushPossible { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ispushpossible" /><code>{"bool IsPushPossible { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-push" /><code>{"void Push(T item)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-push" /><code>{"void Push(T item)"}</code> |
 
 ## Used in
 

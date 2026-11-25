@@ -17,10 +17,10 @@ An **interface** in `Root.Township`, `Alta.Crafting`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forceactive" /><code>{"void ForceActive()"}</code> |  |
-| <Link id="m-isactive" /><code>{"bool IsActive()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-forceactive" /><code>{"void ForceActive()"}</code> |
+| <Link id="m-isactive" /><code>{"bool IsActive()"}</code> |
 
 ## Used in
 

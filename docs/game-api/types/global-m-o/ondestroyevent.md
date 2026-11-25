@@ -17,25 +17,38 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OnDestroyEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OnDestroyEvent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-destroyevent" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" destroyEvent"}</code> |  |
-| <Link id="m-iscallinginlocaltest" /><code>{"private bool isCallingInLocalTest"}</code> |  |
-| <Link id="m-iscallingonclient" /><code>{"private bool isCallingOnClient"}</code> |  |
-| <Link id="m-iscallingonserver" /><code>{"private bool isCallingOnServer"}</code> |  |
-| <Link id="m-isusingunitydestroy" /><code>{"private bool isUsingUnityDestroy"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroyevent" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" destroyEvent"}</code> |
+| <Link id="m-iscallinginlocaltest" /><code>{"private bool isCallingInLocalTest"}</code> |
+| <Link id="m-iscallingonclient" /><code>{"private bool isCallingOnClient"}</code> |
+| <Link id="m-iscallingonserver" /><code>{"private bool isCallingOnServer"}</code> |
+| <Link id="m-isusingunitydestroy" /><code>{"private bool isUsingUnityDestroy"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-destroyed" /><code>{"private void Destroyed()"}</code> |  |
-| <Link id="m-entitydestroyedbyscene" /><code>{"private void EntityDestroyedByScene("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroyed" /><code>{"private void Destroyed()"}</code> |
+| <Link id="m-entitydestroyedbyscene" /><code>{"private void EntityDestroyedByScene("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>

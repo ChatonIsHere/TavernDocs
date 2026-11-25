@@ -17,24 +17,37 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DebugClimbable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DebugClimbable()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-a" /><code>{"private Color a"}</code> |  |
-| <Link id="m-b" /><code>{"private Color b"}</code> |  |
-| <Link id="m-breakduration" /><code>{"private float breakDuration"}</code> |  |
-| <Link id="m-isinstanced" /><code>{"private bool isInstanced"}</code> |  |
-| <Link id="m-renderer" /><code>{"private Renderer renderer"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-a" /><code>{"private Color a"}</code> |
+| <Link id="m-b" /><code>{"private Color b"}</code> |
+| <Link id="m-breakduration" /><code>{"private float breakDuration"}</code> |
+| <Link id="m-isinstanced" /><code>{"private bool isInstanced"}</code> |
+| <Link id="m-renderer" /><code>{"private Renderer renderer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-applypressure" /><code>{"override bool ApplyPressure(Vector3 pressure)"}</code> |  |
-| <Link id="m-handlebreak" /><code>{"private IEnumerator HandleBreak() (iterator)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-applypressure" /><code>{"override bool ApplyPressure(Vector3 pressure)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-handlebreak" /><code>{"private IEnumerator HandleBreak() (iterator)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>

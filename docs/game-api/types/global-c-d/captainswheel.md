@@ -17,39 +17,49 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CaptainsWheel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CaptainsWheel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentangle" /><code>{"private float currentAngle"}</code> |  |
-| <Link id="m-direction" /><code>{"private float direction"}</code> |  |
-| <Link id="m-lengthperrevolution" /><code>{"private float lengthPerRevolution"}</code> |  |
-| <Link id="m-value" /><code>{"private float value"}</code> |  |
-| <Link id="m-valuechanged" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" valueChanged"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentangle" /><code>{"private float currentAngle"}</code> |
+| <Link id="m-direction" /><code>{"private float direction"}</code> |
+| <Link id="m-lengthperrevolution" /><code>{"private float lengthPerRevolution"}</code> |
+| <Link id="m-value" /><code>{"private float value"}</code> |
+| <Link id="m-valuechanged" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" valueChanged"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-value-2" /><code>{"float Value { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-value-2" /><code>{"float Value { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-valuechanged-2" /><code>{"event Action<float, float> ValueChanged"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-valuechanged-2" /><code>{"event Action<float, float> ValueChanged"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
-| <Link id="m-onvaluechanged" /><code>{"private void OnValueChanged(float newValue)"}</code> |  |
-| <Link id="m-updatevalues" /><code>{"private void UpdateValues()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
+| <Link id="m-onvaluechanged" /><code>{"private void OnValueChanged(float newValue)"}</code> |
+| <Link id="m-updatevalues" /><code>{"private void UpdateValues()"}</code> |
+
+</details>
 
 ## Used in
 

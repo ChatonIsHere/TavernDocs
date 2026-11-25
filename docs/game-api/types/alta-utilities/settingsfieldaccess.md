@@ -20,16 +20,21 @@ Asset that ties a settings menu entry to one game or server setting, read and wr
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SettingsFieldAccess()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SettingsFieldAccess()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-displayname" /><code>{"private string displayName"}</code> |  |
-| <Link id="m-settingtype" /><code>{"private "}<Link to="/game-api/types/alta-utilities/settingtype">{"SettingType"}</Link>{" settingType"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-displayname" /><code>{"private string displayName"}</code> |
+| <Link id="m-settingtype" /><code>{"private "}<Link to="/game-api/types/alta-utilities/settingtype">{"SettingType"}</Link>{" settingType"}</code> |
+
+</details>
 
 ## Properties
 

@@ -21,20 +21,25 @@ Recipe asset for a generic crafting station: the ghost pieces to fill and the pr
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenericCraftingRecipe()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenericCraftingRecipe()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-mappedresult" /><code>{"private static Dictionary<uint, "}<Link to="/game-api/types/alta-crafting/genericcraftingrecipe">{"GenericCraftingRecipe"}</Link>{"> mappedResult"}</code> |  |
-| <Link id="m-pieces" /><code>{"private "}<Link to="/game-api/types/alta-crafting/genericcraftingpiecedefinition">{"GenericCraftingPieceDefinition"}</Link>{"[] pieces"}</code> |  |
-| <Link id="m-resulthash" /><code>{"private uint resultHash"}</code> |  |
-| <Link id="m-spawnoffset" /><code>{"private "}<Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" spawnOffset"}</code> |  |
-| <Link id="m-uniqueglyphs" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] uniqueGlyphs"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-mappedresult" /><code>{"private static Dictionary<uint, "}<Link to="/game-api/types/alta-crafting/genericcraftingrecipe">{"GenericCraftingRecipe"}</Link>{"> mappedResult"}</code> |
+| <Link id="m-pieces" /><code>{"private "}<Link to="/game-api/types/alta-crafting/genericcraftingpiecedefinition">{"GenericCraftingPieceDefinition"}</Link>{"[] pieces"}</code> |
+| <Link id="m-resulthash" /><code>{"private uint resultHash"}</code> |
+| <Link id="m-spawnoffset" /><code>{"private "}<Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" spawnOffset"}</code> |
+| <Link id="m-uniqueglyphs" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] uniqueGlyphs"}</code> |
+
+</details>
 
 ## Properties
 
@@ -56,7 +61,15 @@ Recipe asset for a generic crafting station: the ghost pieces to fill and the pr
 | <Link id="m-getproviderid" /><code>{"int GetProviderID(int preferredProvider)"}</code> | Identifier of the generic crafting page provider. |
 | <Link id="m-getrecipe" /><code>{"static "}<Link to="/game-api/types/alta-crafting/genericcraftingrecipe">{"GenericCraftingRecipe"}</Link>{" GetRecipe("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> | Finds the recipe that makes a prefab. The lookup is built on first use. |
 | <Link id="m-initializeproject" /><code><Link to="/game-api/types/alta-crafting/genericcraftingproject">{"GenericCraftingProject"}</Link>{" InitializeProject("}<Link to="/game-api/types/alta-crafting/genericcraftingstation">{"GenericCraftingStation"}</Link>{" station)"}</code> | Starts a crafting project for this recipe at a station. |
-| <Link id="m-mapresults" /><code>{"private static void MapResults()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-mapresults" /><code>{"private static void MapResults()"}</code> |
+
+</details>
 
 ## Used in
 

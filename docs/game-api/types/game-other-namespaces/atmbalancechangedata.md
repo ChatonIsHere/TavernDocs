@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `ATT.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AtmBalanceChangeData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AtmBalanceChangeData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-change" /><code>{"int Change"}</code> |  |
-| <Link id="m-currentbalance" /><code>{"int CurrentBalance"}</code> |  |
-| <Link id="m-user" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" User"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-change" /><code>{"int Change"}</code> |
+| <Link id="m-currentbalance" /><code>{"int CurrentBalance"}</code> |
+| <Link id="m-user" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" User"}</code> |
 
 ## Used in
 

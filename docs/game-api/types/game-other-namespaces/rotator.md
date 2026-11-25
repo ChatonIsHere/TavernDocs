@@ -17,23 +17,36 @@ A **class** in `Root.Township`, `ATT.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Rotator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Rotator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angletorotatepersecond" /><code>{"private float angleToRotatePerSecond"}</code> |  |
-| <Link id="m-axisrotation" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkaxisrotation">{"NetworkAxisRotation"}</Link>{" axisRotation"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-angletorotatepersecond" /><code>{"private float angleToRotatePerSecond"}</code> |
+| <Link id="m-axisrotation" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkaxisrotation">{"NetworkAxisRotation"}</Link>{" axisRotation"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setrotationspeed" /><code>{"void SetRotationSpeed(float newRotationSpeed)"}</code> |  |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setrotationspeed" /><code>{"void SetRotationSpeed(float newRotationSpeed)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |
+
+</details>
 
 ## Used in
 

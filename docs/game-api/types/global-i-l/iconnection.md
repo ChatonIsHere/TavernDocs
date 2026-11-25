@@ -17,10 +17,10 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-player" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Player { get; set; }"}</code> |  |
-| <Link id="m-playername" /><code>{"string PlayerName { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-player" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Player { get; set; }"}</code> |
+| <Link id="m-playername" /><code>{"string PlayerName { get; }"}</code> |
 
 ## Used in
 

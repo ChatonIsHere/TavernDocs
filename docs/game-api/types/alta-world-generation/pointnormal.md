@@ -19,10 +19,10 @@ A point on the ground with its normal, plus cached info about the nearest forest
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PointNormal("}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" pointEdge, float y, Vector3 normal)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PointNormal(Vector3 point, Vector3 normal)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PointNormal("}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" pointEdge, float y, Vector3 normal)"}</code> |
+| <Link id="m-ctor-2" /><code>{"PointNormal(Vector3 point, Vector3 normal)"}</code> |
 
 ## Fields
 

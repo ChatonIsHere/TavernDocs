@@ -16,6 +16,6 @@ An **interface** in `Alta.VContainerLayer.Runtime`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-factoryconstruct" /><code>{"void FactoryConstruct(TParam param)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-factoryconstruct" /><code>{"void FactoryConstruct(TParam param)"}</code> |

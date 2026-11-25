@@ -19,19 +19,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicReset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicReset()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-senders" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/logicreset-boolsenders">{"LogicReset.BoolSenders"}</Link>{"> senders"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-senders" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/logicreset-boolsenders">{"LogicReset.BoolSenders"}</Link>{"> senders"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-resetlogic" /><code>{"void ResetLogic()"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-resetlogic" /><code>{"void ResetLogic()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+
+</details>

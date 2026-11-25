@@ -17,18 +17,18 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HitInformation()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"HitInformation(Vector3 position)"}</code> |  |
-| <Link id="m-ctor-3" /><code>{"HitInformation(Vector3 position, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HitInformation()"}</code> |
+| <Link id="m-ctor-2" /><code>{"HitInformation(Vector3 position)"}</code> |
+| <Link id="m-ctor-3" /><code>{"HitInformation(Vector3 position, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
 
 ## Used in
 

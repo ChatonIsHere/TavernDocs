@@ -16,11 +16,11 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alreadyowned" /><code>{"AlreadyOwned = 1"}</code> |  |
-| <Link id="m-failed" /><code>{"Failed = 0"}</code> |  |
-| <Link id="m-success" /><code>{"Success = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-alreadyowned" /><code>{"AlreadyOwned = 1"}</code> |
+| <Link id="m-failed" /><code>{"Failed = 0"}</code> |
+| <Link id="m-success" /><code>{"Success = 2"}</code> |
 
 ## Used in
 

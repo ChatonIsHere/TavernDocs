@@ -20,23 +20,31 @@ A gear or wheel in a simple torque network: connected turnables share torque, al
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Turnable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Turnable()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-connected" /><code>{"protected List<"}<Link to="/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> connected"}</code> | Backing list for `Connected`. |
-| <Link id="m-friction" /><code>{"private float friction"}</code> |  |
-| <Link id="m-iscurrentflipped" /><code>{"private bool isCurrentFlipped"}</code> |  |
-| <Link id="m-isdebug" /><code>{"private bool isDebug"}</code> |  |
-| <Link id="m-mass" /><code>{"private float mass"}</code> |  |
 | <Link id="m-radius" /><code>{"protected float radius"}</code> | Backing value for `Radius`. |
-| <Link id="m-speed" /><code>{"private float speed"}</code> |  |
-| <Link id="m-torque" /><code>{"private float torque"}</code> |  |
-| <Link id="m-turning" /><code>{"private List<"}<Link to="/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> turning"}</code> |  |
+
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-friction" /><code>{"private float friction"}</code> |
+| <Link id="m-iscurrentflipped" /><code>{"private bool isCurrentFlipped"}</code> |
+| <Link id="m-isdebug" /><code>{"private bool isDebug"}</code> |
+| <Link id="m-mass" /><code>{"private float mass"}</code> |
+| <Link id="m-speed" /><code>{"private float speed"}</code> |
+| <Link id="m-torque" /><code>{"private float torque"}</code> |
+| <Link id="m-turning" /><code>{"private List<"}<Link to="/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> turning"}</code> |
+
+</details>
 
 ## Properties
 

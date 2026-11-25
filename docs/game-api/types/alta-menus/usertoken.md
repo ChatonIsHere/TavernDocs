@@ -19,19 +19,24 @@ One user entry on the friends board, with optional accept and reject buttons.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UserToken()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UserToken()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-accept" /><code>{"private Action<"}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> accept"}</code> |  |
-| <Link id="m-acceptbutton" /><code>{"private GameObject acceptButton"}</code> |  |
-| <Link id="m-reject" /><code>{"private Action<"}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> reject"}</code> |  |
-| <Link id="m-rejectbutton" /><code>{"private GameObject rejectButton"}</code> |  |
-| <Link id="m-username" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" username"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-accept" /><code>{"private Action<"}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> accept"}</code> |
+| <Link id="m-acceptbutton" /><code>{"private GameObject acceptButton"}</code> |
+| <Link id="m-reject" /><code>{"private Action<"}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> reject"}</code> |
+| <Link id="m-rejectbutton" /><code>{"private GameObject rejectButton"}</code> |
+| <Link id="m-username" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" username"}</code> |
+
+</details>
 
 ## Properties
 

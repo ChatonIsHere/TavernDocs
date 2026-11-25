@@ -17,16 +17,16 @@ An **interface** in `Root.Township`, `Alta.Console`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-type" /><code>{"Type Type { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> |
+| <Link id="m-type" /><code>{"Type Type { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invoked" /><code>{"event Action<"}<Link to="/game-api/types/alta-console/websocketcommandhandler-responsedata">{"WebSocketCommandHandler.ResponseData"}</Link>{"> Invoked"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invoked" /><code>{"event Action<"}<Link to="/game-api/types/alta-console/websocketcommandhandler-responsedata">{"WebSocketCommandHandler.ResponseData"}</Link>{"> Invoked"}</code> |
 
 ## Used in
 

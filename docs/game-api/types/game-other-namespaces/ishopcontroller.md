@@ -16,10 +16,10 @@ An **interface** in `Root.Township`, `Features.Main_Menu.Scripts.TalemShop`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-consumepurchaseasync" /><code>{"Task<bool> ConsumePurchaseAsync()"}</code> |  |
-| <Link id="m-purchaseasync" /><code>{"Task<"}<Link to="/game-api/types/game-other-namespaces/purchaseresult">{"PurchaseResult"}</Link>{"> PurchaseAsync(string sku)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-consumepurchaseasync" /><code>{"Task<bool> ConsumePurchaseAsync()"}</code> |
+| <Link id="m-purchaseasync" /><code>{"Task<"}<Link to="/game-api/types/game-other-namespaces/purchaseresult">{"PurchaseResult"}</Link>{"> PurchaseAsync(string sku)"}</code> |
 
 ## Used in
 

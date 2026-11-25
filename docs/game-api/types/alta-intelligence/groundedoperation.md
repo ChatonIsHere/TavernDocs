@@ -17,20 +17,25 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GroundedOperation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GroundedOperation()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-airvalue" /><code>{"private float airValue"}</code> |  |
-| <Link id="m-groundedvalue" /><code>{"private float groundedValue"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-airvalue" /><code>{"private float airValue"}</code> |
+| <Link id="m-groundedvalue" /><code>{"private float groundedValue"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getoperation" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> |  |
-| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getoperation" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> |
+| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> |

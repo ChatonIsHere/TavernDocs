@@ -16,36 +16,44 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ToggleBool(string name, bool defaultValue = false)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ToggleBool(string name, bool defaultValue = false)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-toggleablesettings" /><code>{"static Dictionary<string, "}<Link to="/game-api/types/global-t-x/togglebool">{"ToggleBool"}</Link>{"> toggleableSettings"}</code> |  |
-| <Link id="m-value" /><code>{"private bool value"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-toggleablesettings" /><code>{"static Dictionary<string, "}<Link to="/game-api/types/global-t-x/togglebool">{"ToggleBool"}</Link>{"> toggleableSettings"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-value" /><code>{"private bool value"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> |  |
-| <Link id="m-value-2" /><code>{"bool Value { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> |
+| <Link id="m-value-2" /><code>{"bool Value { get; set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-toggled" /><code>{"event Action<bool> Toggled"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-toggled" /><code>{"event Action<bool> Toggled"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-destroy" /><code>{"void Destroy()"}</code> |  |
-| <Link id="m-toggle" /><code>{"void Toggle()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-destroy" /><code>{"void Destroy()"}</code> |
+| <Link id="m-toggle" /><code>{"void Toggle()"}</code> |
 
 ## Used in
 

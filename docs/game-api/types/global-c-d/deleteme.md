@@ -17,18 +17,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DeleteMe()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DeleteMe()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-blah" /><code>{"private Mesh[] blah"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-blah" /><code>{"private Mesh[] blah"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-test" /><code>{"private void Test()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-test" /><code>{"private void Test()"}</code> |
+
+</details>

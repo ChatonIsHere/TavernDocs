@@ -22,27 +22,32 @@ Global networking settings: transport (KCP) settings, channels and send and rece
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkingSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkingSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{"[] channels"}</code> |  |
-| <Link id="m-connectionconfiguration" /><code>{"private ConnectionConfig connectionConfiguration"}</code> |  |
-| <Link id="m-currenttransportsystem" /><code>{"private "}<Link to="/game-api/types/alta-networking/transportsystem">{"TransportSystem"}</Link>{" currentTransportSystem"}</code> |  |
-| <Link id="m-defaultchannel" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" defaultChannel"}</code> |  |
-| <Link id="m-defaultnetworktransport" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/transportsystem">{"TransportSystem"}</Link>{" defaultNetworkTransport"}</code> |  |
-| <Link id="m-kcpsettings" /><code>{"private "}<Link to="/game-api/types/assembly-other/kcpsettings">{"KcpSettings"}</Link>{" kcpSettings"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger Logger"}</code> |  |
-| <Link id="m-maxbitsperserializationmessage" /><code>{"private uint maxBitsPerSerializationMessage"}</code> |  |
-| <Link id="m-maxconnectionqueuesize" /><code>{"private int maxConnectionQueueSize"}</code> |  |
-| <Link id="m-maxserverqueuesize" /><code>{"private int maxServerQueueSize"}</code> |  |
-| <Link id="m-maxunreliablereceivedperframe" /><code>{"private int maxUnreliableReceivedPerFrame"}</code> |  |
-| <Link id="m-networkconfiguration" /><code>{"private GlobalConfig networkConfiguration"}</code> |  |
-| <Link id="m-simulatenointernetineditor" /><code>{"private bool simulateNoInternetInEditor"}</code> |  |
+<details>
+<summary>13 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{"[] channels"}</code> |
+| <Link id="m-connectionconfiguration" /><code>{"private ConnectionConfig connectionConfiguration"}</code> |
+| <Link id="m-currenttransportsystem" /><code>{"private "}<Link to="/game-api/types/alta-networking/transportsystem">{"TransportSystem"}</Link>{" currentTransportSystem"}</code> |
+| <Link id="m-defaultchannel" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" defaultChannel"}</code> |
+| <Link id="m-defaultnetworktransport" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/transportsystem">{"TransportSystem"}</Link>{" defaultNetworkTransport"}</code> |
+| <Link id="m-kcpsettings" /><code>{"private "}<Link to="/game-api/types/assembly-other/kcpsettings">{"KcpSettings"}</Link>{" kcpSettings"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger Logger"}</code> |
+| <Link id="m-maxbitsperserializationmessage" /><code>{"private uint maxBitsPerSerializationMessage"}</code> |
+| <Link id="m-maxconnectionqueuesize" /><code>{"private int maxConnectionQueueSize"}</code> |
+| <Link id="m-maxserverqueuesize" /><code>{"private int maxServerQueueSize"}</code> |
+| <Link id="m-maxunreliablereceivedperframe" /><code>{"private int maxUnreliableReceivedPerFrame"}</code> |
+| <Link id="m-networkconfiguration" /><code>{"private GlobalConfig networkConfiguration"}</code> |
+| <Link id="m-simulatenointernetineditor" /><code>{"private bool simulateNoInternetInEditor"}</code> |
+
+</details>
 
 ## Properties
 

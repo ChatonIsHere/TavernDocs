@@ -17,20 +17,20 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Biome()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Biome()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-biomehash" /><code>{"uint biomeHash"}</code> |  |
-| <Link id="m-biomename" /><code>{"string biomeName"}</code> |  |
-| <Link id="m-origin" /><code>{"Vector3 origin"}</code> |  |
-| <Link id="m-radius" /><code>{"float radius"}</code> |  |
-| <Link id="m-seed" /><code>{"int seed"}</code> |  |
-| <Link id="m-strength" /><code>{"float strength"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-biomehash" /><code>{"uint biomeHash"}</code> |
+| <Link id="m-biomename" /><code>{"string biomeName"}</code> |
+| <Link id="m-origin" /><code>{"Vector3 origin"}</code> |
+| <Link id="m-radius" /><code>{"float radius"}</code> |
+| <Link id="m-seed" /><code>{"int seed"}</code> |
+| <Link id="m-strength" /><code>{"float strength"}</code> |
 
 ## Used in
 

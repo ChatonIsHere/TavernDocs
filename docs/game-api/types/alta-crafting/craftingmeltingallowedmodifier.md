@@ -19,20 +19,33 @@ A **class** in `Root.Township`, `Alta.Blacksmithing`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CraftingMeltingAllowedModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CraftingMeltingAllowedModifier()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pickupmaps" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{", "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> pickupMaps"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-pickupmaps" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{", "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> pickupMaps"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> |  |
-| <Link id="m-terminate" /><code>{"override void Terminate("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> |  |
-| <Link id="m-allowedfilter" /><code>{"private void AllowedFilter("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model, ref bool isAllowed)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> |
+| <Link id="m-terminate" /><code>{"override void Terminate("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-allowedfilter" /><code>{"private void AllowedFilter("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model, ref bool isAllowed)"}</code> |
+
+</details>

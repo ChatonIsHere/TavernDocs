@@ -17,26 +17,26 @@ A **struct** in `Root.Township`, `Alta.Impact`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactSyncArguments("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactSyncArguments("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channelindex" /><code>{"int channelIndex"}</code> |  |
-| <Link id="m-effectiveness" /><code>{"float effectiveness"}</code> |  |
-| <Link id="m-impactorindex" /><code>{"int impactorIndex"}</code> |  |
-| <Link id="m-impacttoolidentifier" /><code>{"uint impactToolIdentifier"}</code> |  |
-| <Link id="m-normal" /><code>{"Vector3 normal"}</code> |  |
-| <Link id="m-point" /><code>{"Vector3 point"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-channelindex" /><code>{"int channelIndex"}</code> |
+| <Link id="m-effectiveness" /><code>{"float effectiveness"}</code> |
+| <Link id="m-impactorindex" /><code>{"int impactorIndex"}</code> |
+| <Link id="m-impacttoolidentifier" /><code>{"uint impactToolIdentifier"}</code> |
+| <Link id="m-normal" /><code>{"Vector3 normal"}</code> |
+| <Link id="m-point" /><code>{"Vector3 point"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, Vector3 center)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, Vector3 center)"}</code> |
 
 ## Used in
 

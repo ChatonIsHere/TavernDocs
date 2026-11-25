@@ -20,18 +20,23 @@ Base component for a cosmetic visual part. Handles show, hide and argument chang
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected CustomizationVisualPart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected CustomizationVisualPart()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isprimary" /><code>{"private bool isPrimary"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-priority" /><code>{"private int priority"}</code> |  |
-| <Link id="m-slots" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercustomizationslotset">{"PlayerCustomizationSlotSet"}</Link>{" slots"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isprimary" /><code>{"private bool isPrimary"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-priority" /><code>{"private int priority"}</code> |
+| <Link id="m-slots" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercustomizationslotset">{"PlayerCustomizationSlotSet"}</Link>{" slots"}</code> |
+
+</details>
 
 ## Properties
 

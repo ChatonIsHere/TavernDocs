@@ -19,9 +19,9 @@ Base for a seeded hash that turns integers into repeatable pseudo-random values.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected HashFunction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected HashFunction()"}</code> |
 
 ## Methods
 

@@ -18,15 +18,15 @@ Kind of damage an impact does: pierce, slash, blunt, caustic, poison, explosive 
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-blunt" /><code>{"Blunt = 2"}</code> |  |
-| <Link id="m-caustic" /><code>{"Caustic = 3"}</code> |  |
-| <Link id="m-explosive" /><code>{"Explosive = 5"}</code> |  |
-| <Link id="m-pierce" /><code>{"Pierce = 0"}</code> |  |
-| <Link id="m-poison" /><code>{"Poison = 4"}</code> |  |
-| <Link id="m-slash" /><code>{"Slash = 1"}</code> |  |
-| <Link id="m-spiritual" /><code>{"Spiritual = 6"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-blunt" /><code>{"Blunt = 2"}</code> |
+| <Link id="m-caustic" /><code>{"Caustic = 3"}</code> |
+| <Link id="m-explosive" /><code>{"Explosive = 5"}</code> |
+| <Link id="m-pierce" /><code>{"Pierce = 0"}</code> |
+| <Link id="m-poison" /><code>{"Poison = 4"}</code> |
+| <Link id="m-slash" /><code>{"Slash = 1"}</code> |
+| <Link id="m-spiritual" /><code>{"Spiritual = 6"}</code> |
 
 ## Used in
 

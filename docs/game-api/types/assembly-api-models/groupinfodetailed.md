@@ -18,17 +18,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GroupInfoDetailed()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GroupInfoDetailed()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allowedserverscount" /><code>{"int AllowedServersCount { get; set; }"}</code> |  |
-| <Link id="m-roles" /><code><Link to="/game-api/types/assembly-api-models/grouproleinfo">{"GroupRoleInfo"}</Link>{"[] Roles { get; set; }"}</code> |  |
-| <Link id="m-servers" /><code><Link to="/game-api/types/assembly-api-models/groupserverinfo">{"GroupServerInfo"}</Link>{"[] Servers { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-allowedserverscount" /><code>{"int AllowedServersCount { get; set; }"}</code> |
+| <Link id="m-roles" /><code><Link to="/game-api/types/assembly-api-models/grouproleinfo">{"GroupRoleInfo"}</Link>{"[] Roles { get; set; }"}</code> |
+| <Link id="m-servers" /><code><Link to="/game-api/types/assembly-api-models/groupserverinfo">{"GroupServerInfo"}</Link>{"[] Servers { get; set; }"}</code> |
 
 ## Used in
 

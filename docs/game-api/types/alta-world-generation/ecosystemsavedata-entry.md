@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Entry()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Entry()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-key" /><code>{"uint key"}</code> |  |
-| <Link id="m-positions" /><code>{"Vector3[] positions"}</code> |  |
-| <Link id="m-rotations" /><code>{"Quaternion[] rotations"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-key" /><code>{"uint key"}</code> |
+| <Link id="m-positions" /><code>{"Vector3[] positions"}</code> |
+| <Link id="m-rotations" /><code>{"Quaternion[] rotations"}</code> |
 
 ## Used in
 

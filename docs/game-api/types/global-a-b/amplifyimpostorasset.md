@@ -20,9 +20,9 @@ Asset from the third-party Amplify Impostors tool: the bake settings and result 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AmplifyImpostorAsset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AmplifyImpostorAsset()"}</code> |
 
 ## Fields
 

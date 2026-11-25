@@ -21,9 +21,9 @@ Save data for the `RespawnSystem`: the global shrine and every respawn shrine's 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RespawnSystemSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RespawnSystemSaveData()"}</code> |
 
 ## Fields
 

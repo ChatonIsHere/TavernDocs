@@ -16,9 +16,9 @@ A **static class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-aus" /><code>{"const string AUS"}</code> |  |
-| <Link id="m-eu" /><code>{"const string EU"}</code> |  |
-| <Link id="m-useast" /><code>{"const string USEast"}</code> |  |
-| <Link id="m-uswest" /><code>{"const string USWest"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-aus" /><code>{"const string AUS"}</code> |
+| <Link id="m-eu" /><code>{"const string EU"}</code> |
+| <Link id="m-useast" /><code>{"const string USEast"}</code> |
+| <Link id="m-uswest" /><code>{"const string USWest"}</code> |

@@ -17,23 +17,28 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpecialKeySetup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpecialKeySetup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"private UnityEvent setup"}</code> |  |
-| <Link id="m-targetkey" /><code>{"private KeyCode targetKey"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"private UnityEvent setup"}</code> |
+| <Link id="m-targetkey" /><code>{"private KeyCode targetKey"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup-2" /><code>{"UnityEvent Setup { get; }"}</code> |  |
-| <Link id="m-targetkey-2" /><code>{"KeyCode TargetKey { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup-2" /><code>{"UnityEvent Setup { get; }"}</code> |
+| <Link id="m-targetkey-2" /><code>{"KeyCode TargetKey { get; }"}</code> |
 
 ## Used in
 

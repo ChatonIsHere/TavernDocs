@@ -18,25 +18,30 @@ Settings for a two-burst death dissolve effect. `DeadStateSettings.AnimationSett
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DeathAnimationSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DeathAnimationSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ashesmaterial" /><code>{"private Material ashesMaterial"}</code> |  |
-| <Link id="m-deathvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" deathVisual"}</code> |  |
-| <Link id="m-deathvisualgroundposition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" deathVisualGroundPosition"}</code> |  |
-| <Link id="m-defaultduration" /><code>{"private float defaultDuration"}</code> |  |
-| <Link id="m-firstdissolvestrength" /><code>{"private float firstDissolveStrength"}</code> |  |
-| <Link id="m-firstramp1" /><code>{"private Texture2D firstRamp1"}</code> |  |
-| <Link id="m-firstramp2" /><code>{"private Texture2D firstRamp2"}</code> |  |
-| <Link id="m-predeathvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" preDeathVisual"}</code> |  |
-| <Link id="m-seconddissolvestrength" /><code>{"private float secondDissolveStrength"}</code> |  |
-| <Link id="m-secondramp1" /><code>{"private Texture2D secondRamp1"}</code> |  |
-| <Link id="m-secondramp2" /><code>{"private Texture2D secondRamp2"}</code> |  |
+<details>
+<summary>11 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ashesmaterial" /><code>{"private Material ashesMaterial"}</code> |
+| <Link id="m-deathvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" deathVisual"}</code> |
+| <Link id="m-deathvisualgroundposition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" deathVisualGroundPosition"}</code> |
+| <Link id="m-defaultduration" /><code>{"private float defaultDuration"}</code> |
+| <Link id="m-firstdissolvestrength" /><code>{"private float firstDissolveStrength"}</code> |
+| <Link id="m-firstramp1" /><code>{"private Texture2D firstRamp1"}</code> |
+| <Link id="m-firstramp2" /><code>{"private Texture2D firstRamp2"}</code> |
+| <Link id="m-predeathvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" preDeathVisual"}</code> |
+| <Link id="m-seconddissolvestrength" /><code>{"private float secondDissolveStrength"}</code> |
+| <Link id="m-secondramp1" /><code>{"private Texture2D secondRamp1"}</code> |
+| <Link id="m-secondramp2" /><code>{"private Texture2D secondRamp2"}</code> |
+
+</details>
 
 ## Properties
 

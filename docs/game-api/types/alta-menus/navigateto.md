@@ -17,19 +17,29 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NavigateTo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NavigateTo()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-button" /><code>{"private "}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" button"}</code> |  |
-| <Link id="m-panel" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-button" /><code>{"private "}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" button"}</code> |
+| <Link id="m-panel" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

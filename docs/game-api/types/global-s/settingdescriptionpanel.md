@@ -17,23 +17,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SettingDescriptionPanel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SettingDescriptionPanel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentsetting" /><code>{"private "}<Link to="/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" currentSetting"}</code> |  |
-| <Link id="m-descriptiontext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" descriptionText"}</code> |  |
-| <Link id="m-fieldname" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" fieldName"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentsetting" /><code>{"private "}<Link to="/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" currentSetting"}</code> |
+| <Link id="m-descriptiontext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" descriptionText"}</code> |
+| <Link id="m-fieldname" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" fieldName"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-showsetting" /><code>{"void ShowSetting("}<Link to="/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" setting)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-showsetting" /><code>{"void ShowSetting("}<Link to="/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" setting)"}</code> |
 
 ## Used in
 

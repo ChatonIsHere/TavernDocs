@@ -25,15 +25,23 @@ Static owner of the network transport (KCP) and all sockets. Pumps receiving in 
 | <Link id="m-receivingms" /><code>{"static "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" ReceivingMs"}</code> | Average time spent receiving per frame. |
 | <Link id="m-sendingms" /><code>{"static "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" SendingMs"}</code> | Average time spent sending per frame. |
 | <Link id="m-transport" /><code>{"static "}<Link to="/game-api/types/assembly-other/itransport">{"ITransport"}</Link>{" Transport"}</code> | The transport in use, created on first socket. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-receive" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" receive"}</code> |  |
-| <Link id="m-receiveupdatemethod" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" receiveUpdateMethod"}</code> |  |
-| <Link id="m-receivingmodule" /><code>{"private static readonly "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" receivingModule"}</code> |  |
-| <Link id="m-send" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" send"}</code> |  |
-| <Link id="m-sendingmodule" /><code>{"private static readonly "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" sendingModule"}</code> |  |
-| <Link id="m-sendupdatemethod" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" sendUpdateMethod"}</code> |  |
-| <Link id="m-sockets" /><code>{"private static readonly List<"}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{"> sockets"}</code> |  |
-| <Link id="m-timer" /><code>{"private static readonly Stopwatch timer"}</code> |  |
+
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-receive" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" receive"}</code> |
+| <Link id="m-receiveupdatemethod" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" receiveUpdateMethod"}</code> |
+| <Link id="m-receivingmodule" /><code>{"private static readonly "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" receivingModule"}</code> |
+| <Link id="m-send" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" send"}</code> |
+| <Link id="m-sendingmodule" /><code>{"private static readonly "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" sendingModule"}</code> |
+| <Link id="m-sendupdatemethod" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" sendUpdateMethod"}</code> |
+| <Link id="m-sockets" /><code>{"private static readonly List<"}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{"> sockets"}</code> |
+| <Link id="m-timer" /><code>{"private static readonly Stopwatch timer"}</code> |
+
+</details>
 
 ## Properties
 
@@ -53,7 +61,15 @@ Static owner of the network transport (KCP) and all sockets. Pumps receiving in 
 | <Link id="m-queuelimitpackets" /><code>{"static ulong QueueLimitPackets { get; set; }"}</code> | Sends dropped because the server or connection queue limit was hit. |
 | <Link id="m-reliablepacketoverflowdisconnects" /><code>{"static ulong ReliablePacketOverflowDisconnects { get; set; }"}</code> | Disconnects caused by too many queued reliable packets. |
 | <Link id="m-sentpackets" /><code>{"static ulong SentPackets { get; set; }"}</code> | Packets sent successfully. |
-| <Link id="m-settings" /><code>{"private static "}<Link to="/game-api/types/alta-networking/networkingsettings">{"NetworkingSettings"}</Link>{" Settings { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-settings" /><code>{"private static "}<Link to="/game-api/types/alta-networking/networkingsettings">{"NetworkingSettings"}</Link>{" Settings { get; }"}</code> |
+
+</details>
 
 ## Methods
 
@@ -62,9 +78,17 @@ Static owner of the network transport (KCP) and all sockets. Pumps receiving in 
 | <Link id="m-closesocket" /><code>{"static void CloseSocket("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> | Removes and disposes a socket. |
 | <Link id="m-createsocket" /><code>{"static "}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" CreateSocket(bool isServer, "}<Link to="/game-api/types/alta-networking/transportsystem">{"TransportSystem"}</Link>{" transportSystem, int socketPort = 0)"}</code> | Starts the transport if needed and creates a socket (server sockets on the given port). |
 | <Link id="m-terminate" /><code>{"static void Terminate()"}</code> | Disposes every socket and shuts the transport down. |
-| <Link id="m-createtransport" /><code>{"private static void CreateTransport()"}</code> |  |
-| <Link id="m-ensurenetworkinghasstarted" /><code>{"private static void EnsureNetworkingHasStarted()"}</code> |  |
-| <Link id="m-receive-2" /><code>{"private static void Receive()"}</code> |  |
-| <Link id="m-send-2" /><code>{"private static void Send()"}</code> |  |
-| <Link id="m-setupsendreceive" /><code>{"private static void SetupSendReceive("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" _ = null)"}</code> |  |
-| <Link id="m-setuptransportchannels" /><code>{"private static void SetupTransportChannels()"}</code> |  |
+
+<details>
+<summary>6 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-createtransport" /><code>{"private static void CreateTransport()"}</code> |
+| <Link id="m-ensurenetworkinghasstarted" /><code>{"private static void EnsureNetworkingHasStarted()"}</code> |
+| <Link id="m-receive-2" /><code>{"private static void Receive()"}</code> |
+| <Link id="m-send-2" /><code>{"private static void Send()"}</code> |
+| <Link id="m-setupsendreceive" /><code>{"private static void SetupSendReceive("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" _ = null)"}</code> |
+| <Link id="m-setuptransportchannels" /><code>{"private static void SetupTransportChannels()"}</code> |
+
+</details>

@@ -19,28 +19,38 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PrefabNameMap()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PrefabNameMap()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hashes" /><code>{"private uint[] hashes"}</code> |  |
-| <Link id="m-map" /><code>{"private Dictionary<uint, string> map"}</code> |  |
-| <Link id="m-paths" /><code>{"private string[] paths"}</code> |  |
-| <Link id="m-setup" /><code>{"private bool setup"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-hashes" /><code>{"private uint[] hashes"}</code> |
+| <Link id="m-map" /><code>{"private Dictionary<uint, string> map"}</code> |
+| <Link id="m-paths" /><code>{"private string[] paths"}</code> |
+| <Link id="m-setup" /><code>{"private bool setup"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-map-2" /><code>{"Dictionary<uint, string> Map { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-map-2" /><code>{"Dictionary<uint, string> Map { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> |  |
-| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> |
+| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> |
+
+</details>

@@ -19,12 +19,12 @@ A **internal class** in `Root.Township`, `Alta.Scrapper`. Reach it through att-s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MeshPlacementSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MeshPlacementSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/alta-crafting/meshplacementdata">{"MeshPlacementData"}</Link>{" data"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data" /><code><Link to="/game-api/types/alta-crafting/meshplacementdata">{"MeshPlacementData"}</Link>{" data"}</code> |

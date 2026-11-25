@@ -22,9 +22,17 @@ The `world forest` module.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reset" /><code>{"static async Task Reset("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest)"}</code> |  |
-| <Link id="m-teleport" /><code>{"static async Task Teleport("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, "}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest, int nodeIndex = -1)"}</code> |  |
-| <Link id="m-info" /><code>{"private static async Task<"}<Link to="/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo">{"WorldCommandModule.ForestCommandModule.ForestInfo"}</Link>{"> Info("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest)"}</code> |  |
-| <Link id="m-list" /><code>{"private static IEnumerable<string> List() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-reset" /><code>{"static async Task Reset("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest)"}</code> |
+| <Link id="m-teleport" /><code>{"static async Task Teleport("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, "}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest, int nodeIndex = -1)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-info" /><code>{"private static async Task<"}<Link to="/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo">{"WorldCommandModule.ForestCommandModule.ForestInfo"}</Link>{"> Info("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest)"}</code> |
+| <Link id="m-list" /><code>{"private static IEnumerable<string> List() (iterator)"}</code> |
+
+</details>

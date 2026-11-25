@@ -16,11 +16,11 @@ An **enum** in `Alta.XRManagement`, `Alta.XRLoaders`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-novr" /><code>{"NoVR = 2"}</code> |  |
-| <Link id="m-openxr" /><code>{"OpenXR = 0"}</code> |  |
-| <Link id="m-valve" /><code>{"Valve = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-novr" /><code>{"NoVR = 2"}</code> |
+| <Link id="m-openxr" /><code>{"OpenXR = 0"}</code> |
+| <Link id="m-valve" /><code>{"Valve = 1"}</code> |
 
 ## Used in
 

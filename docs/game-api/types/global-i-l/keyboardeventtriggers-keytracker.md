@@ -17,29 +17,29 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"KeyTracker(Key key)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"KeyTracker(Key key)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isvalid" /><code>{"bool IsValid { get; }"}</code> |  |
-| <Link id="m-key" /><code>{"Key Key { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isvalid" /><code>{"bool IsValid { get; }"}</code> |
+| <Link id="m-key" /><code>{"Key Key { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-keypresseddown" /><code>{"event "}<Link to="/game-api/types/global-i-l/keyeventhandler">{"KeyEventHandler"}</Link>{" KeyPressedDown"}</code> |  |
-| <Link id="m-keypressedup" /><code>{"event "}<Link to="/game-api/types/global-i-l/keyeventhandler">{"KeyEventHandler"}</Link>{" KeyPressedUp"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-keypresseddown" /><code>{"event "}<Link to="/game-api/types/global-i-l/keyeventhandler">{"KeyEventHandler"}</Link>{" KeyPressedDown"}</code> |
+| <Link id="m-keypressedup" /><code>{"event "}<Link to="/game-api/types/global-i-l/keyeventhandler">{"KeyEventHandler"}</Link>{" KeyPressedUp"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update" /><code>{"void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"void Update()"}</code> |
 
 ## Used in
 

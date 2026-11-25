@@ -17,19 +17,19 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Grad(double x, double y, double z)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"Grad(double x, double y, double z, double w)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Grad(double x, double y, double z)"}</code> |
+| <Link id="m-ctor-2" /><code>{"Grad(double x, double y, double z, double w)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-w" /><code>{"double w"}</code> |  |
-| <Link id="m-x" /><code>{"double x"}</code> |  |
-| <Link id="m-y" /><code>{"double y"}</code> |  |
-| <Link id="m-z" /><code>{"double z"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-w" /><code>{"double w"}</code> |
+| <Link id="m-x" /><code>{"double x"}</code> |
+| <Link id="m-y" /><code>{"double y"}</code> |
+| <Link id="m-z" /><code>{"double z"}</code> |
 
 ## Used in
 

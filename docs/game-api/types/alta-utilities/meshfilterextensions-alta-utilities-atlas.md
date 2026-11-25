@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, `Alta.Utilities.Atlas`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getatlasedmesh" /><code>{"static void GetAtlasedMesh(MeshFilter filter, "}<Link to="/game-api/types/alta-utilities/materialrect">{"MaterialRect"}</Link>{" material)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getatlasedmesh" /><code>{"static void GetAtlasedMesh(MeshFilter filter, "}<Link to="/game-api/types/alta-utilities/materialrect">{"MaterialRect"}</Link>{" material)"}</code> |

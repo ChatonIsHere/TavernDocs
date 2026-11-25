@@ -20,9 +20,9 @@ Runtime instance of a `MapGeneratorPart` for one cave generator plugin run. It w
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MapGeneratorPartInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, T part)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MapGeneratorPartInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, T part)"}</code> |
 
 ## Properties
 

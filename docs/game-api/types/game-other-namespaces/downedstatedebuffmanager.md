@@ -16,23 +16,28 @@ A **class** in `Root.Township`, `ATT.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DownedStateDebuffManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DownedStateDebuffManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playerstatmodifiers" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{"> playerStatModifiers"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-playerstatmodifiers" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{"> playerStatModifiers"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-applydebufftoplayer" /><code>{"void ApplyDebuffToPlayer("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter, IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{"> debuffs, float duration)"}</code> |  |
-| <Link id="m-clearalldebuffs" /><code>{"void ClearAllDebuffs()"}</code> |  |
-| <Link id="m-removedebuffsforplayer" /><code>{"void RemoveDebuffsForPlayer("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-applydebufftoplayer" /><code>{"void ApplyDebuffToPlayer("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter, IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{"> debuffs, float duration)"}</code> |
+| <Link id="m-clearalldebuffs" /><code>{"void ClearAllDebuffs()"}</code> |
+| <Link id="m-removedebuffsforplayer" /><code>{"void RemoveDebuffsForPlayer("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter)"}</code> |
 
 ## Used in
 

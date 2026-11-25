@@ -21,23 +21,28 @@ Base for the two ends of a crafting join: `JointSlot` (receives) and the insert 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected JointPoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected JointPoint()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-connected" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointpointevent">{"JointPointEvent"}</Link>{" connected"}</code> |  |
-| <Link id="m-connectedobjects" /><code>{"private List<GameObject> connectedObjects"}</code> |  |
-| <Link id="m-craftingpart" /><code>{"private "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" craftingPart"}</code> |  |
-| <Link id="m-disconnected" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointpointevent">{"JointPointEvent"}</Link>{" disconnected"}</code> |  |
-| <Link id="m-disconnectedobjects" /><code>{"private List<GameObject> disconnectedObjects"}</code> |  |
-| <Link id="m-glow" /><code>{"private Renderer glow"}</code> |  |
-| <Link id="m-glowcolor" /><code>{"private static readonly int glowColor"}</code> |  |
-| <Link id="m-glowproperties" /><code>{"private MaterialPropertyBlock glowProperties"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-connected" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointpointevent">{"JointPointEvent"}</Link>{" connected"}</code> |
+| <Link id="m-connectedobjects" /><code>{"private List<GameObject> connectedObjects"}</code> |
+| <Link id="m-craftingpart" /><code>{"private "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" craftingPart"}</code> |
+| <Link id="m-disconnected" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointpointevent">{"JointPointEvent"}</Link>{" disconnected"}</code> |
+| <Link id="m-disconnectedobjects" /><code>{"private List<GameObject> disconnectedObjects"}</code> |
+| <Link id="m-glow" /><code>{"private Renderer glow"}</code> |
+| <Link id="m-glowcolor" /><code>{"private static readonly int glowColor"}</code> |
+| <Link id="m-glowproperties" /><code>{"private MaterialPropertyBlock glowProperties"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
@@ -71,7 +76,15 @@ Base for the two ends of a crafting join: `JointSlot` (receives) and the insert 
 | <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Hides the glow. |
 | <Link id="m-ondrawgizmosselected" /><code>{"protected virtual void OnDrawGizmosSelected()"}</code> | Draws the joint's axes in the editor. |
 | <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Finds a child named "Glow" as the glow renderer if none is set. |
-| <Link id="m-setobjectsactive" /><code>{"private void SetObjectsActive(bool isConnected)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-setobjectsactive" /><code>{"private void SetObjectsActive(bool isConnected)"}</code> |
+
+</details>
 
 ## Used in
 

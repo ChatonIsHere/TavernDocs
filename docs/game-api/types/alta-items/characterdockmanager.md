@@ -20,6 +20,6 @@ A `ComponentGroup` of `PickupDockGroup`s.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterDockManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CharacterDockManager()"}</code> |

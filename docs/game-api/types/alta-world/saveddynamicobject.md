@@ -20,10 +20,10 @@ One saved entity (with its child entities) as a prefab hash plus a packed bit st
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SavedDynamicObject(uint[] savingData, uint sizeInBytes, uint prefabHash)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"SavedDynamicObject(List<uint[]> savingData, uint sizeInBytes, uint prefabHash)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SavedDynamicObject(uint[] savingData, uint sizeInBytes, uint prefabHash)"}</code> |
+| <Link id="m-ctor-2" /><code>{"SavedDynamicObject(List<uint[]> savingData, uint sizeInBytes, uint prefabHash)"}</code> |
 
 ## Fields
 
@@ -31,9 +31,17 @@ One saved entity (with its child entities) as a prefab hash plus a packed bit st
 | --- | --- |
 | <Link id="m-data" /><code>{"protected List<uint[]> data"}</code> | Backing list for `Data`. |
 | <Link id="m-hash" /><code>{"protected uint hash"}</code> | Backing field for `Hash`. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
 | <Link id="m-messagesizeinbytes" /><code>{"protected uint messageSizeInBytes"}</code> | Backing field for `MessageSizeInBytes`. |
-| <Link id="m-pool" /><code>{"private static "}<Link to="/game-api/types/assembly-other/unclearedpower2arraypool-t">{"UnclearedPower2ArrayPool"}</Link>{"<uint> pool"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-pool" /><code>{"private static "}<Link to="/game-api/types/assembly-other/unclearedpower2arraypool-t">{"UnclearedPower2ArrayPool"}</Link>{"<uint> pool"}</code> |
+
+</details>
 
 ## Properties
 

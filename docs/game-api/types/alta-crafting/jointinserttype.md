@@ -20,9 +20,9 @@ A **class** in `Root.Township`, `Alta.Crafting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JointInsertType()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JointInsertType()"}</code> |
 
 ## Used in
 

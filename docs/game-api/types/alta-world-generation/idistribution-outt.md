@@ -17,7 +17,7 @@ An **interface** in `Root.Township`, `Alta.Caves`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getpossibleresults" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/idistributionitem-outt">{"IDistributionItem"}</Link>{"<T>> GetPossibleResults()"}</code> |  |
-| <Link id="m-getrandom" /><code>{"T GetRandom(Func<double> randomValue, "}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getpossibleresults" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/idistributionitem-outt">{"IDistributionItem"}</Link>{"<T>> GetPossibleResults()"}</code> |
+| <Link id="m-getrandom" /><code>{"T GetRandom(Func<double> randomValue, "}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes = null)"}</code> |

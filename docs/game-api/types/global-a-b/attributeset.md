@@ -20,15 +20,20 @@ Biome attribute values (such as for spawning) with an optional parent set to fal
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code><Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{"("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" parent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code><Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{"("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" parent)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-attributes" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{", float> attributes"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-attributes" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{", float> attributes"}</code> |
+
+</details>
 
 ## Properties
 
@@ -45,7 +50,15 @@ Biome attribute values (such as for spawning) with an optional parent set to fal
 | <Link id="m-isset" /><code>{"bool IsSet("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" attribute, bool isIncludingParent = true)"}</code> | Whether the attribute has a value here (or in a parent, by default). |
 | <Link id="m-set" /><code>{"void Set("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" attribute, float value)"}</code> | Sets a value in this set. |
 | <Link id="m-setparent" /><code>{"void SetParent("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" parent)"}</code> | Changes the parent set. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Lists values set here, then the parent's values not overridden here. |
+
+</details>
 
 ## Used in
 

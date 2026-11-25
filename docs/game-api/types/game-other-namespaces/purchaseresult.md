@@ -16,17 +16,17 @@ A **class** in `Root.Township`, `Features.Main_Menu.Scripts.TalemShop`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PurchaseResult()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PurchaseResult("}<Link to="/game-api/types/game-other-namespaces/purchaseerror">{"PurchaseError"}</Link>{" error)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PurchaseResult()"}</code> |
+| <Link id="m-ctor-2" /><code>{"PurchaseResult("}<Link to="/game-api/types/game-other-namespaces/purchaseerror">{"PurchaseError"}</Link>{" error)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-error" /><code><Link to="/game-api/types/game-other-namespaces/purchaseerror">{"PurchaseError"}</Link>{" Error"}</code> |  |
-| <Link id="m-issuccess" /><code>{"bool IsSuccess"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-error" /><code><Link to="/game-api/types/game-other-namespaces/purchaseerror">{"PurchaseError"}</Link>{" Error"}</code> |
+| <Link id="m-issuccess" /><code>{"bool IsSuccess"}</code> |
 
 ## Used in
 

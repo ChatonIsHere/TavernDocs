@@ -20,9 +20,9 @@ Base for a game task action that only checks one kind of task argument.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected CustomArgumentGameAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected CustomArgumentGameAction()"}</code> |
 
 ## Methods
 

@@ -19,18 +19,23 @@ An **abstract class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected CaveSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected CaveSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"private static T instance"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"private static T instance"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance-2" /><code>{"static T Instance { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instance-2" /><code>{"static T Instance { get; }"}</code> |

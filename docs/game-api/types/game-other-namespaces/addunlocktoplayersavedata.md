@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Features.Gameplay`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AddUnlockToPlayerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AddUnlockToPlayerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playerunlock" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link></code> |  |
+| Member |
+| --- |
+| <Link id="m-playerunlock" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link></code> |

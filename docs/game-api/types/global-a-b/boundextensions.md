@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-volume" /><code>{"static float Volume(Bounds bounds)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-volume" /><code>{"static float Volume(Bounds bounds)"}</code> |

@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, `Alta.Scrapper`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-multipletargetsandvalues" /><code>{"multipleTargetsAndValues = 2"}</code> |  |
-| <Link id="m-multipletargetssinglevalue" /><code>{"multipleTargetsSingleValue = 1"}</code> |  |
-| <Link id="m-singletargetandvalue" /><code>{"singleTargetAndValue = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-multipletargetsandvalues" /><code>{"multipleTargetsAndValues = 2"}</code> |
+| <Link id="m-multipletargetssinglevalue" /><code>{"multipleTargetsSingleValue = 1"}</code> |
+| <Link id="m-singletargetandvalue" /><code>{"singleTargetAndValue = 0"}</code> |
 
 ## Used in
 

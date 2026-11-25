@@ -19,18 +19,18 @@ An **private abstract class** in `Root.Township`, no namespace. Reach it through
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected EmissionOperator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected EmissionOperator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-module" /><code>{"protected ParticleSystem.EmissionModule module"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-module" /><code>{"protected ParticleSystem.EmissionModule module"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize(ParticleSystem targetSystem)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize(ParticleSystem targetSystem)"}</code> |

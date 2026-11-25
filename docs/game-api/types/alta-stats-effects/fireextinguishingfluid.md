@@ -18,12 +18,17 @@ A **class** in `Root.Township`, `Alta.Alchemy`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FireExtinguishingFluid()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FireExtinguishingFluid()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
+
+</details>

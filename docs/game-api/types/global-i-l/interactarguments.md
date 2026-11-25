@@ -19,11 +19,19 @@ The network message sent when a hand starts holding an entity: the held entity, 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InteractArguments("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" holder, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" held, bool isForced = false, bool isForcingHold = false)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"InteractArguments("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" interactor, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" held, Vector3 velocity, Vector3 angularVelocity, bool isForced = false, bool isForcingHold = false)"}</code> |  |
-| <Link id="m-ctor-3" /><code>{"private InteractArguments(Transform interactorTarget, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" held, Vector3 heldVelocity, Vector3 heldAngularVelocity, bool isForced, bool isForcingHold)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InteractArguments("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" holder, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" held, bool isForced = false, bool isForcingHold = false)"}</code> |
+| <Link id="m-ctor-2" /><code>{"InteractArguments("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" interactor, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" held, Vector3 velocity, Vector3 angularVelocity, bool isForced = false, bool isForcingHold = false)"}</code> |
+
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor-3" /><code>{"private InteractArguments(Transform interactorTarget, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" held, Vector3 heldVelocity, Vector3 heldAngularVelocity, bool isForced, bool isForcingHold)"}</code> |
+
+</details>
 
 ## Fields
 
@@ -38,13 +46,21 @@ The network message sent when a hand starts holding an entity: the held entity, 
 | <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | World rotation of the held entity. |
 | <Link id="m-target" /><code>{"uint target"}</code> | Backing field for `Target`. |
 | <Link id="m-velocity" /><code>{"Vector3 velocity"}</code> | Velocity of the held entity, including the player's movement when built from an `Interactor`. |
-| <Link id="m-angularvelocitymax" /><code>{"private static readonly Vector3 AngularVelocityMax"}</code> |  |
-| <Link id="m-angularvelocitymin" /><code>{"private static readonly Vector3 AngularVelocityMin"}</code> |  |
-| <Link id="m-angularvelocityprecision" /><code>{"private const float AngularVelocityPrecision"}</code> |  |
-| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> |  |
-| <Link id="m-velocitymax" /><code>{"private static readonly Vector3 VelocityMax"}</code> |  |
-| <Link id="m-velocitymin" /><code>{"private static readonly Vector3 VelocityMin"}</code> |  |
-| <Link id="m-velocityprecision" /><code>{"private const float VelocityPrecision"}</code> |  |
+
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-angularvelocitymax" /><code>{"private static readonly Vector3 AngularVelocityMax"}</code> |
+| <Link id="m-angularvelocitymin" /><code>{"private static readonly Vector3 AngularVelocityMin"}</code> |
+| <Link id="m-angularvelocityprecision" /><code>{"private const float AngularVelocityPrecision"}</code> |
+| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> |
+| <Link id="m-velocitymax" /><code>{"private static readonly Vector3 VelocityMax"}</code> |
+| <Link id="m-velocitymin" /><code>{"private static readonly Vector3 VelocityMin"}</code> |
+| <Link id="m-velocityprecision" /><code>{"private const float VelocityPrecision"}</code> |
+
+</details>
 
 ## Properties
 

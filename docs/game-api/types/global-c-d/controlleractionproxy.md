@@ -19,15 +19,20 @@ A stand-in controller action that forwards the state and events of whichever `Co
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ControllerActionProxy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ControllerActionProxy()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
+
+</details>
 
 ## Properties
 
@@ -36,7 +41,15 @@ A stand-in controller action that forwards the state and events of whichever `Co
 | <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; set; }"}</code> | When false, `Started` and `Ended` are not forwarded and the bool conversion is false. True by default. |
 | <Link id="m-state" /><code>{"bool State { get; }"}</code> | The linked action's current state, or false when nothing is linked. Ignores `IsEnabled`. |
 | <Link id="m-type" /><code><Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{" Type { get; set; }"}</code> | Which controller action type this proxy stands for. |
-| <Link id="m-linkedcontrolleraction" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleraction">{"ControllerAction"}</Link>{" LinkedControllerAction { get; set; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-linkedcontrolleraction" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleraction">{"ControllerAction"}</Link>{" LinkedControllerAction { get; set; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -54,8 +67,16 @@ A stand-in controller action that forwards the state and events of whichever `Co
 | <Link id="m-linktocontrolleraction" /><code>{"void LinkToControllerAction("}<Link to="/game-api/types/global-c-d/controlleraction">{"ControllerAction"}</Link>{" controllerAction)"}</code> | Links the proxy to a controller action, unlinking any previous one first. |
 | <Link id="m-op-implicit" /><code>{"static bool op_Implicit("}<Link to="/game-api/types/global-c-d/controlleractionproxy">{"ControllerActionProxy"}</Link>{" input)"}</code> | Converts to bool: true only when the linked action is active and the proxy is enabled. |
 | <Link id="m-unlinkfromaction" /><code>{"void UnlinkFromAction()"}</code> | Stops following the linked action. |
-| <Link id="m-invokeended" /><code>{"private void InvokeEnded("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" input, bool isDisabling)"}</code> |  |
-| <Link id="m-invokestarted" /><code>{"private void InvokeStarted("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" input)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-invokeended" /><code>{"private void InvokeEnded("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" input, bool isDisabling)"}</code> |
+| <Link id="m-invokestarted" /><code>{"private void InvokeStarted("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" input)"}</code> |
+
+</details>
 
 ## Used in
 

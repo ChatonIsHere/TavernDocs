@@ -18,15 +18,15 @@ How to combine two floats, turned into a function by `MathfOperation.GetOperatio
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"Add = 3"}</code> |  |
-| <Link id="m-max" /><code>{"Max = 1"}</code> |  |
-| <Link id="m-min" /><code>{"Min = 2"}</code> |  |
-| <Link id="m-multiply" /><code>{"Multiply = 5"}</code> |  |
-| <Link id="m-multiply1minus" /><code>{"Multiply1Minus = 6"}</code> |  |
-| <Link id="m-set" /><code>{"Set = 0"}</code> |  |
-| <Link id="m-subtract" /><code>{"Subtract = 4"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"Add = 3"}</code> |
+| <Link id="m-max" /><code>{"Max = 1"}</code> |
+| <Link id="m-min" /><code>{"Min = 2"}</code> |
+| <Link id="m-multiply" /><code>{"Multiply = 5"}</code> |
+| <Link id="m-multiply1minus" /><code>{"Multiply1Minus = 6"}</code> |
+| <Link id="m-set" /><code>{"Set = 0"}</code> |
+| <Link id="m-subtract" /><code>{"Subtract = 4"}</code> |
 
 ## Used in
 

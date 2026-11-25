@@ -18,24 +18,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FinishSpawnProjectTask()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FinishSpawnProjectTask()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spawningtarget" /><code>{"private uint spawningTarget"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-spawningtarget" /><code>{"private uint spawningTarget"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/game-api/types/global-e-h/finishspawnprojecttaskargument">{"FinishSpawnProjectTaskArgument"}</Link>{" argument)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/game-api/types/global-e-h/finishspawnprojecttaskargument">{"FinishSpawnProjectTaskArgument"}</Link>{" argument)"}</code> |

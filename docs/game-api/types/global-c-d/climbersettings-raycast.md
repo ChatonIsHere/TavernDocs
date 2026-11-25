@@ -17,23 +17,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Raycast()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Raycast()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-endposition" /><code>{"private Vector3 endPosition"}</code> |  |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-endposition" /><code>{"private Vector3 endPosition"}</code> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-endposition-2" /><code>{"Vector3 EndPosition { get; }"}</code> |  |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-endposition-2" /><code>{"Vector3 EndPosition { get; }"}</code> |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> |
 
 ## Used in
 

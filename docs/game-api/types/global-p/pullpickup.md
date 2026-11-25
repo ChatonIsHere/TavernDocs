@@ -21,24 +21,29 @@ A stand-in pickup that forwards grabs to a target item and hands it over when pu
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PullPickup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PullPickup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |  |
-| <Link id="m-isreleasingtargetonpull" /><code>{"private bool isReleasingTargetOnPull"}</code> |  |
-| <Link id="m-pullcoroutine" /><code>{"private Coroutine pullCoroutine"}</code> |  |
-| <Link id="m-pulldirection" /><code>{"private Vector3 pullDirection"}</code> |  |
-| <Link id="m-pulldistance" /><code>{"private float pullDistance"}</code> |  |
-| <Link id="m-pulledonclient" /><code>{"private "}<Link to="/game-api/types/global-p/pullevent">{"PullEvent"}</Link>{" pulledOnClient"}</code> |  |
-| <Link id="m-pulledonserver" /><code>{"private "}<Link to="/game-api/types/global-p/pullevent">{"PullEvent"}</Link>{" pulledOnServer"}</code> |  |
-| <Link id="m-syncforward" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncForward"}</code> |  |
-| <Link id="m-syncpulled" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPulled"}</code> |  |
-| <Link id="m-targetpickup" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" targetPickup"}</code> |  |
+<details>
+<summary>10 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |
+| <Link id="m-isreleasingtargetonpull" /><code>{"private bool isReleasingTargetOnPull"}</code> |
+| <Link id="m-pullcoroutine" /><code>{"private Coroutine pullCoroutine"}</code> |
+| <Link id="m-pulldirection" /><code>{"private Vector3 pullDirection"}</code> |
+| <Link id="m-pulldistance" /><code>{"private float pullDistance"}</code> |
+| <Link id="m-pulledonclient" /><code>{"private "}<Link to="/game-api/types/global-p/pullevent">{"PullEvent"}</Link>{" pulledOnClient"}</code> |
+| <Link id="m-pulledonserver" /><code>{"private "}<Link to="/game-api/types/global-p/pullevent">{"PullEvent"}</Link>{" pulledOnServer"}</code> |
+| <Link id="m-syncforward" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncForward"}</code> |
+| <Link id="m-syncpulled" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPulled"}</code> |
+| <Link id="m-targetpickup" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" targetPickup"}</code> |
+
+</details>
 
 ## Properties
 
@@ -54,13 +59,21 @@ A stand-in pickup that forwards grabs to a target item and hands it over when pu
 | <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up forwarding to the target (or disables the pickup with no target) and the sync messages. |
 | <Link id="m-pull" /><code>{"void Pull("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor = null)"}</code> | Releases the target: swaps the interactor's grab to it, or with no interactor pops it up and makes it physical. Then fires the pulled events. |
 | <Link id="m-settargetpickup" /><code>{"void SetTargetPickup("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" targetPickup)"}</code> | Sets the target if none is set yet and starts forwarding its grabs to this pickup. |
-| <Link id="m-checkpull" /><code>{"private IEnumerator CheckPull("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor) (iterator)"}</code> |  |
-| <Link id="m-handleforward" /><code>{"private void HandleForward(bool isSettingForward)"}</code> |  |
-| <Link id="m-offsethandtargetforgrabassist" /><code>{"private static void OffsetHandTargetForGrabAssist("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-startcheck" /><code>{"private void StartCheck("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-syncforward-2" /><code>{"private void SyncForward("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isSettingForward)"}</code> |  |
-| <Link id="m-syncpulled-2" /><code>{"private void SyncPulled("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+<details>
+<summary>7 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-checkpull" /><code>{"private IEnumerator CheckPull("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor) (iterator)"}</code> |
+| <Link id="m-handleforward" /><code>{"private void HandleForward(bool isSettingForward)"}</code> |
+| <Link id="m-offsethandtargetforgrabassist" /><code>{"private static void OffsetHandTargetForGrabAssist("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-startcheck" /><code>{"private void StartCheck("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-syncforward-2" /><code>{"private void SyncForward("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isSettingForward)"}</code> |
+| <Link id="m-syncpulled-2" /><code>{"private void SyncPulled("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

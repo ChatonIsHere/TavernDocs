@@ -17,9 +17,17 @@ A **static class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModel
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serializecontentstream" /><code>{"static string SerializeContentStream(Stream contentStream)"}</code> |  |
-| <Link id="m-serializetostring" /><code>{"static string SerializeToString(Stream contentStream)"}</code> |  |
-| <Link id="m-serializetostring-2" /><code>{"static string SerializeToString(HttpResponseHeaders headers)"}</code> |  |
-| <Link id="m-serializebody" /><code>{"private static string SerializeBody(Stream inputStream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serializecontentstream" /><code>{"static string SerializeContentStream(Stream contentStream)"}</code> |
+| <Link id="m-serializetostring" /><code>{"static string SerializeToString(Stream contentStream)"}</code> |
+| <Link id="m-serializetostring-2" /><code>{"static string SerializeToString(HttpResponseHeaders headers)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-serializebody" /><code>{"private static string SerializeBody(Stream inputStream)"}</code> |
+
+</details>

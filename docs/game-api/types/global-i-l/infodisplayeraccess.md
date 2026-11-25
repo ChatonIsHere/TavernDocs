@@ -21,16 +21,21 @@ A debug text asset that code writes a line of text to and an `InfoDisplayer` sho
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InfoDisplayerAccess()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InfoDisplayerAccess()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-prefix" /><code>{"private string prefix"}</code> |  |
-| <Link id="m-sufix" /><code>{"private string sufix"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-prefix" /><code>{"private string prefix"}</code> |
+| <Link id="m-sufix" /><code>{"private string sufix"}</code> |
+
+</details>
 
 ## Properties
 

@@ -16,21 +16,21 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Form()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Form()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allowmultiple" /><code>{"bool AllowMultiple { get; set; }"}</code> |  |
-| <Link id="m-completiontext" /><code>{"string CompletionText { get; set; }"}</code> |  |
-| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |  |
-| <Link id="m-end" /><code>{"DateTime End { get; set; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |  |
-| <Link id="m-iscompleted" /><code>{"bool IsCompleted { get; set; }"}</code> |  |
-| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; set; }"}</code> |  |
-| <Link id="m-pages" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/page">{"Page"}</Link>{"> Pages { get; set; }"}</code> |  |
-| <Link id="m-start" /><code>{"DateTime Start { get; set; }"}</code> |  |
-| <Link id="m-title" /><code>{"string Title { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-allowmultiple" /><code>{"bool AllowMultiple { get; set; }"}</code> |
+| <Link id="m-completiontext" /><code>{"string CompletionText { get; set; }"}</code> |
+| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |
+| <Link id="m-end" /><code>{"DateTime End { get; set; }"}</code> |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |
+| <Link id="m-iscompleted" /><code>{"bool IsCompleted { get; set; }"}</code> |
+| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; set; }"}</code> |
+| <Link id="m-pages" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/page">{"Page"}</Link>{"> Pages { get; set; }"}</code> |
+| <Link id="m-start" /><code>{"DateTime Start { get; set; }"}</code> |
+| <Link id="m-title" /><code>{"string Title { get; set; }"}</code> |

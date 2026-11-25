@@ -22,21 +22,26 @@ A multiplier when an impactor and a detector share a group.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactImmunityGroup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactImmunityGroup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; }"}</code> |
 
 ## Used in
 

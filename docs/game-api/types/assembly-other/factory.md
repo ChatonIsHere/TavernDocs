@@ -18,20 +18,20 @@ An **abstract class** in `Alta.VContainerLayer.Runtime`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Factory()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Factory()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-container" /><code>{"protected IObjectResolver container"}</code> |  |
-| <Link id="m-disposer" /><code>{"protected "}<Link to="/game-api/types/assembly-other/idisposer">{"IDisposer"}</Link>{" disposer"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-container" /><code>{"protected IObjectResolver container"}</code> |
+| <Link id="m-disposer" /><code>{"protected "}<Link to="/game-api/types/assembly-other/idisposer">{"IDisposer"}</Link>{" disposer"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"virtual void Dispose()"}</code> |  |
-| <Link id="m-tryadddisposable" /><code>{"protected void TryAddDisposable<TInstance>(TInstance instance)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"virtual void Dispose()"}</code> |
+| <Link id="m-tryadddisposable" /><code>{"protected void TryAddDisposable<TInstance>(TInstance instance)"}</code> |

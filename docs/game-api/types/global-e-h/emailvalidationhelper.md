@@ -16,13 +16,21 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invalidemailerrormessage" /><code>{"const string InvalidEmailErrorMessage"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invalidemailerrormessage" /><code>{"const string InvalidEmailErrorMessage"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isvalidemail" /><code>{"static bool IsValidEmail(string email)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isvalidemail" /><code>{"static bool IsValidEmail(string email)"}</code> |

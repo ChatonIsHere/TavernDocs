@@ -17,6 +17,6 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Error
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NotFoundApiError()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NotFoundApiError()"}</code> |

@@ -19,14 +19,14 @@ A **internal class** in `Root.Township`, `Alta.Cooking`. Reach it through att-st
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StewManagerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StewManagerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-garnishes" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] garnishes"}</code> |  |
-| <Link id="m-ingredients" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] ingredients"}</code> |  |
-| <Link id="m-liquidbase" /><code><Link to="/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" liquidBase"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-garnishes" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] garnishes"}</code> |
+| <Link id="m-ingredients" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] ingredients"}</code> |
+| <Link id="m-liquidbase" /><code><Link to="/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" liquidBase"}</code> |

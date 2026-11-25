@@ -20,23 +20,28 @@ A board in the world that shows a map and, when a player touches its hover point
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MapBoard()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MapBoard()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activemappieces" /><code>{"private readonly Dictionary<int, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"> activeMapPieces"}</code> |  |
-| <Link id="m-handhoverpoint" /><code>{"private "}<Link to="/game-api/types/global-e-h/handhoverpoint">{"HandHoverPoint"}</Link>{" handHoverPoint"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-map" /><code>{"private "}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> |  |
-| <Link id="m-positionoffset" /><code>{"private Vector2 positionOffset"}</code> |  |
-| <Link id="m-resolution" /><code>{"private Vector2 resolution"}</code> |  |
-| <Link id="m-syncboard" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncBoard"}</code> |  |
-| <Link id="m-unlockpieceindex" /><code>{"private int unlockPieceIndex"}</code> |  |
-| <Link id="m-zoom" /><code>{"private float zoom"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activemappieces" /><code>{"private readonly Dictionary<int, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"> activeMapPieces"}</code> |
+| <Link id="m-handhoverpoint" /><code>{"private "}<Link to="/game-api/types/global-e-h/handhoverpoint">{"HandHoverPoint"}</Link>{" handHoverPoint"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-map" /><code>{"private "}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> |
+| <Link id="m-positionoffset" /><code>{"private Vector2 positionOffset"}</code> |
+| <Link id="m-resolution" /><code>{"private Vector2 resolution"}</code> |
+| <Link id="m-syncboard" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncBoard"}</code> |
+| <Link id="m-unlockpieceindex" /><code>{"private int unlockPieceIndex"}</code> |
+| <Link id="m-zoom" /><code>{"private float zoom"}</code> |
+
+</details>
 
 ## Properties
 
@@ -62,17 +67,25 @@ A board in the world that shows a map and, when a player touches its hover point
 | <Link id="m-interactionstarted" /><code>{"void InteractionStarted("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Discovers the board's unlock piece for the player through the `MapManager`. |
 | <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the board settings to the joining player. |
 | <Link id="m-worldtomapposition" /><code>{"Vector2 WorldToMapPosition(Vector2 worldPosition)"}</code> | Turns a world XZ position into a board position centred on 0, scaled by zoom. |
-| <Link id="m-discovermappiece" /><code>{"private void DiscoverMapPiece(int index, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{" mapPiece)"}</code> |  |
-| <Link id="m-initializeforclient" /><code>{"private void InitializeForClient()"}</code> |  |
-| <Link id="m-ismapcontentavailable" /><code>{"private bool IsMapContentAvailable()"}</code> |  |
-| <Link id="m-listentomapdiscoveries" /><code>{"private void ListenToMapDiscoveries()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-setupmap" /><code>{"private void SetupMap()"}</code> |  |
-| <Link id="m-setupmappiece" /><code>{"private void SetupMapPiece(int index, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{" piece)"}</code> |  |
-| <Link id="m-setupmappieces" /><code>{"private void SetupMapPieces("}<Link to="/game-api/types/alta-world/playermapmanager">{"PlayerMapManager"}</Link>{" mapManager)"}</code> |  |
-| <Link id="m-syncboard-2" /><code>{"private void SyncBoard("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-unclampedinverselerp" /><code>{"private static float UnclampedInverseLerp(float a, float b, float value)"}</code> |  |
+
+<details>
+<summary>11 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-discovermappiece" /><code>{"private void DiscoverMapPiece(int index, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{" mapPiece)"}</code> |
+| <Link id="m-initializeforclient" /><code>{"private void InitializeForClient()"}</code> |
+| <Link id="m-ismapcontentavailable" /><code>{"private bool IsMapContentAvailable()"}</code> |
+| <Link id="m-listentomapdiscoveries" /><code>{"private void ListenToMapDiscoveries()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| <Link id="m-setupmap" /><code>{"private void SetupMap()"}</code> |
+| <Link id="m-setupmappiece" /><code>{"private void SetupMapPiece(int index, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{" piece)"}</code> |
+| <Link id="m-setupmappieces" /><code>{"private void SetupMapPieces("}<Link to="/game-api/types/alta-world/playermapmanager">{"PlayerMapManager"}</Link>{" mapManager)"}</code> |
+| <Link id="m-syncboard-2" /><code>{"private void SyncBoard("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-unclampedinverselerp" /><code>{"private static float UnclampedInverseLerp(float a, float b, float value)"}</code> |
+
+</details>
 
 ## Used in
 

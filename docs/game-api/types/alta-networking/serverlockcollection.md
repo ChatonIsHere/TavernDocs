@@ -18,31 +18,44 @@ A **class** in `Root.Township`, `Alta.Networking.Servers`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerLockCollection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerLockCollection()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-locks" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{"> locks"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-locks" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{"> locks"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-count" /><code>{"int Count { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-count" /><code>{"int Count { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"bool Add("}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{" serverLock)"}</code> |  |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{"> GetEnumerator()"}</code> |  |
-| <Link id="m-remove" /><code>{"bool Remove("}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{" serverLock)"}</code> |  |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"bool Add("}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{" serverLock)"}</code> |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{"> GetEnumerator()"}</code> |
+| <Link id="m-remove" /><code>{"bool Remove("}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{" serverLock)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |
+
+</details>
 
 ## Used in
 

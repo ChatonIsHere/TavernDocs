@@ -17,21 +17,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StaticDynamicSpawner()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StaticDynamicSpawner()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-editorpreview" /><code>{"private GameObject editorPreview"}</code> |  |
-| <Link id="m-positioning" /><code>{"private "}<Link to="/game-api/types/global-e-h/generatedpositioning">{"GeneratedPositioning"}</Link>{" positioning"}</code> |  |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" prefab"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-editorpreview" /><code>{"private GameObject editorPreview"}</code> |
+| <Link id="m-positioning" /><code>{"private "}<Link to="/game-api/types/global-e-h/generatedpositioning">{"GeneratedPositioning"}</Link>{" positioning"}</code> |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" prefab"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generate" /><code>{"private void IStaticGeneration.Generate("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" dynamicParent, "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-reset" /><code>{"private void IStaticGeneration.Reset()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-generate" /><code>{"private void IStaticGeneration.Generate("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" dynamicParent, "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+| <Link id="m-reset" /><code>{"private void IStaticGeneration.Reset()"}</code> |
+
+</details>

@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hemioctahedron" /><code>{"HemiOctahedron = 2"}</code> |  |
-| <Link id="m-octahedron" /><code>{"Octahedron = 1"}</code> |  |
-| <Link id="m-spherical" /><code>{"Spherical = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hemioctahedron" /><code>{"HemiOctahedron = 2"}</code> |
+| <Link id="m-octahedron" /><code>{"Octahedron = 1"}</code> |
+| <Link id="m-spherical" /><code>{"Spherical = 0"}</code> |
 
 ## Used in
 

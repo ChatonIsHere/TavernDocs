@@ -17,18 +17,23 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DestroyedHandRegenerate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DestroyedHandRegenerate()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-destroyed" /><code>{"Action Destroyed"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-destroyed" /><code>{"Action Destroyed"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>

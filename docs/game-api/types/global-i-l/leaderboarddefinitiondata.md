@@ -19,9 +19,9 @@ A leaderboard's settings: course name, size and whether lower scores win. A stat
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LeaderboardDefinitionData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LeaderboardDefinitionData()"}</code> |
 
 ## Fields
 
@@ -32,7 +32,15 @@ A leaderboard's settings: course name, size and whether lower scores win. A stat
 | <Link id="m-hash" /><code>{"uint hash"}</code> | Identifier: the asset's hash, or the course name's hash code for command-made ones. |
 | <Link id="m-islowest" /><code>{"bool isLowest"}</code> | True if lower scores (such as times) rank higher. |
 | <Link id="m-size" /><code>{"int size"}</code> | Number of entries kept. |
-| <Link id="m-mapped" /><code>{"private static List<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"> mapped"}</code> |  |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-mapped" /><code>{"private static List<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"> mapped"}</code> |
+
+</details>
 
 ## Properties
 
@@ -50,7 +58,15 @@ A leaderboard's settings: course name, size and whether lower scores win. A stat
 | <Link id="m-listavailable" /><code>{"static IEnumerable<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondatainfo">{"LeaderboardDefinitionDataInfo"}</Link>{"> ListAvailable() (iterator)"}</code> | Lists every known leaderboard as `LeaderboardDefinitionDataInfo`. |
 | <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondatainfo">{"LeaderboardDefinitionDataInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" data)"}</code> | Converts to a `LeaderboardDefinitionDataInfo` with just the name. |
 | <Link id="m-setdata" /><code>{"static "}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" SetData(string courseName, int size, bool isLowest)"}</code> | Finds or creates a leaderboard by course name. Size and order only change for ones without an asset. |
-| <Link id="m-prepare" /><code>{"private static void Prepare()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-prepare" /><code>{"private static void Prepare()"}</code> |
+
+</details>
 
 ## Used in
 

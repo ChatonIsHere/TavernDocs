@@ -21,23 +21,28 @@ Component on an item that holds its enchantments and syncs their trigger and eff
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Enchantable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Enchantable()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-effectapplication" /><code>{"private "}<Link to="/game-api/types/alta-crafting/ienchantmenteffectapplication">{"IEnchantmentEffectApplication"}</Link>{" effectApplication"}</code> |  |
-| <Link id="m-enchantments" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{", "}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{"> enchantments"}</code> |  |
-| <Link id="m-initial" /><code>{"private "}<Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{"[] initial"}</code> |  |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |  |
-| <Link id="m-sendingeffectindex" /><code>{"private int sendingEffectIndex"}</code> |  |
-| <Link id="m-sendingenchantment" /><code>{"private "}<Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{" sendingEnchantment"}</code> |  |
-| <Link id="m-sendingtriggerindex" /><code>{"private int sendingTriggerIndex"}</code> |  |
-| <Link id="m-syncmessage" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncMessage"}</code> |  |
-| <Link id="m-triggerapplication" /><code>{"private "}<Link to="/game-api/types/alta-crafting/ienchantmenttriggerapplication">{"IEnchantmentTriggerApplication"}</Link>{" triggerApplication"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-effectapplication" /><code>{"private "}<Link to="/game-api/types/alta-crafting/ienchantmenteffectapplication">{"IEnchantmentEffectApplication"}</Link>{" effectApplication"}</code> |
+| <Link id="m-enchantments" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{", "}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{"> enchantments"}</code> |
+| <Link id="m-initial" /><code>{"private "}<Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{"[] initial"}</code> |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
+| <Link id="m-sendingeffectindex" /><code>{"private int sendingEffectIndex"}</code> |
+| <Link id="m-sendingenchantment" /><code>{"private "}<Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{" sendingEnchantment"}</code> |
+| <Link id="m-sendingtriggerindex" /><code>{"private int sendingTriggerIndex"}</code> |
+| <Link id="m-syncmessage" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncMessage"}</code> |
+| <Link id="m-triggerapplication" /><code>{"private "}<Link to="/game-api/types/alta-crafting/ienchantmenttriggerapplication">{"IEnchantmentTriggerApplication"}</Link>{" triggerApplication"}</code> |
+
+</details>
 
 ## Properties
 
@@ -55,8 +60,16 @@ Component on an item that holds its enchantments and syncs their trigger and eff
 | <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: adds the initial enchantments. |
 | <Link id="m-sendeffectmessage" /><code>{"void SendEffectMessage("}<Link to="/game-api/types/alta-crafting/ienchantmenteffectapplication">{"IEnchantmentEffectApplication"}</Link>{" effectApplication)"}</code> | Sends one effect application's message to players in the chunk. |
 | <Link id="m-sendtriggermessage" /><code>{"void SendTriggerMessage("}<Link to="/game-api/types/alta-crafting/ienchantmenttriggerapplication">{"IEnchantmentTriggerApplication"}</Link>{" triggerApplication)"}</code> | Sends one trigger application's message to players in the chunk. |
-| <Link id="m-enchantmentremoved" /><code>{"private void EnchantmentRemoved("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" application)"}</code> |  |
-| <Link id="m-synceffect" /><code>{"private void SyncEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-enchantmentremoved" /><code>{"private void EnchantmentRemoved("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" application)"}</code> |
+| <Link id="m-synceffect" /><code>{"private void SyncEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

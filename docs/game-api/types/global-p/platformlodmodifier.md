@@ -18,20 +18,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformLODModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformLODModifier()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> |  |
-| <Link id="m-platformdetails" /><code>{"private "}<Link to="/game-api/types/global-p/platformlodmodifier-platformdetails">{"PlatformLODModifier.PlatformDetails"}</Link>{"[] platformDetails"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> |
+| <Link id="m-platformdetails" /><code>{"private "}<Link to="/game-api/types/global-p/platformlodmodifier-platformdetails">{"PlatformLODModifier.PlatformDetails"}</Link>{"[] platformDetails"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getefficiency" /><code>{"static float GetEfficiency(IEnumerable<"}<Link to="/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"> attributeWeightings, "}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getefficiency" /><code>{"static float GetEfficiency(IEnumerable<"}<Link to="/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"> attributeWeightings, "}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes)"}</code> |

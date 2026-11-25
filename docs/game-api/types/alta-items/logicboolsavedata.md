@@ -21,9 +21,9 @@ Save data for a `LogicBoolSender`: its logic link data and its bool value.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicBoolSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicBoolSaveData()"}</code> |
 
 ## Fields
 

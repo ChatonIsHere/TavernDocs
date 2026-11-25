@@ -16,16 +16,16 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationSaveDataChild()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationSaveDataChild()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-index" /><code>{"int index"}</code> |  |
-| <Link id="m-pointindex" /><code>{"int pointIndex"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-index" /><code>{"int index"}</code> |
+| <Link id="m-pointindex" /><code>{"int pointIndex"}</code> |
 
 ## Used in
 

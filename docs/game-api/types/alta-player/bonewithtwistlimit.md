@@ -17,23 +17,28 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BoneWithTwistLimit()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BoneWithTwistLimit()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bone" /><code>{"private Transform bone"}</code> |  |
-| <Link id="m-rotationtwist" /><code>{"private float rotationTwist"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bone" /><code>{"private Transform bone"}</code> |
+| <Link id="m-rotationtwist" /><code>{"private float rotationTwist"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bone-2" /><code>{"Transform Bone { get; set; }"}</code> |  |
-| <Link id="m-rotationtwist-2" /><code>{"float RotationTwist { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bone-2" /><code>{"Transform Bone { get; set; }"}</code> |
+| <Link id="m-rotationtwist-2" /><code>{"float RotationTwist { get; set; }"}</code> |
 
 ## Used in
 

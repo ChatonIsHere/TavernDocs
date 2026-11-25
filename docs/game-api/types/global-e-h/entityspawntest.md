@@ -17,28 +17,38 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EntitySpawnTest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EntitySpawnTest()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentlyspawned" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> currentlySpawned"}</code> |  |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
-| <Link id="m-existingcount" /><code>{"private int existingCount"}</code> |  |
-| <Link id="m-isdeletingall" /><code>{"private bool isDeletingAll"}</code> |  |
-| <Link id="m-isdeletingold" /><code>{"private bool isDeletingOld"}</code> |  |
-| <Link id="m-isspawning" /><code>{"private bool isSpawning"}</code> |  |
-| <Link id="m-numbertospawneachframe" /><code>{"private int numberToSpawnEachFrame"}</code> |  |
-| <Link id="m-prefabtospawn" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefabToSpawn"}</code> |  |
-| <Link id="m-spawnedcount" /><code>{"private int spawnedCount"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentlyspawned" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> currentlySpawned"}</code> |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| <Link id="m-existingcount" /><code>{"private int existingCount"}</code> |
+| <Link id="m-isdeletingall" /><code>{"private bool isDeletingAll"}</code> |
+| <Link id="m-isdeletingold" /><code>{"private bool isDeletingOld"}</code> |
+| <Link id="m-isspawning" /><code>{"private bool isSpawning"}</code> |
+| <Link id="m-numbertospawneachframe" /><code>{"private int numberToSpawnEachFrame"}</code> |
+| <Link id="m-prefabtospawn" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefabToSpawn"}</code> |
+| <Link id="m-spawnedcount" /><code>{"private int spawnedCount"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

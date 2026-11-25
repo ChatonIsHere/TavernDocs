@@ -18,25 +18,30 @@ A **class** in `Alta.Platform`, `Alta.Platform.Fakes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FakeValidVersionService()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FakeValidVersionService()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentcode" /><code>{"int CurrentCode { get; }"}</code> |  |
-| <Link id="m-latestcode" /><code>{"int LatestCode { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentcode" /><code>{"int CurrentCode { get; }"}</code> |
+| <Link id="m-latestcode" /><code>{"int LatestCode { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isversionvalid" /><code>{"async Task<IResult> IsVersionValid()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isversionvalid" /><code>{"async Task<IResult> IsVersionValid()"}</code> |

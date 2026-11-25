@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, `ATT.PlayerStates`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-exposure" /><code>{"Exposure = 1"}</code> |  |
-| <Link id="m-frost" /><code>{"Frost = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-exposure" /><code>{"Exposure = 1"}</code> |
+| <Link id="m-frost" /><code>{"Frost = 0"}</code> |
 
 ## Used in
 

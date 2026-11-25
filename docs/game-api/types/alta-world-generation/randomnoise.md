@@ -20,19 +20,27 @@ Cave generator part that fills a map layer with hashed random values, combined w
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RandomNoise()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RandomNoise()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-coverage" /><code>{"protected float coverage"}</code> |  |
-| <Link id="m-coveragemultiplier" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" coverageMultiplier"}</code> |  |
-| <Link id="m-maximumexclusive" /><code>{"protected float maximumExclusive"}</code> |  |
-| <Link id="m-minimuminclusive" /><code>{"protected float minimumInclusive"}</code> |  |
-| <Link id="m-operationtype" /><code>{"protected "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" operationType"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-coverage" /><code>{"protected float coverage"}</code> |
+| <Link id="m-maximumexclusive" /><code>{"protected float maximumExclusive"}</code> |
+| <Link id="m-minimuminclusive" /><code>{"protected float minimumInclusive"}</code> |
+| <Link id="m-operationtype" /><code>{"protected "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" operationType"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-coveragemultiplier" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" coverageMultiplier"}</code> |
+
+</details>
 
 ## Properties
 

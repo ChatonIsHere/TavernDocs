@@ -20,33 +20,46 @@ Each frame it calls methods until `MsAllowance` milliseconds have passed, then s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BudgetedUpdateModule(string name, float msAllowance, "}<Link to="/game-api/types/global-t-x/updatesegment">{"UpdateSegment"}</Link>{" segment, bool includeInServerProfiling = false)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BudgetedUpdateModule(string name, float msAllowance, "}<Link to="/game-api/types/global-t-x/updatesegment">{"UpdateSegment"}</Link>{" segment, bool includeInServerProfiling = false)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdebuggingallowance" /><code>{"private static bool isDebuggingAllowance"}</code> |  |
-| <Link id="m-isfirst" /><code>{"private bool isFirst"}</code> |  |
-| <Link id="m-msallowance" /><code>{"private float msAllowance"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isdebuggingallowance" /><code>{"private static bool isDebuggingAllowance"}</code> |
+| <Link id="m-isfirst" /><code>{"private bool isFirst"}</code> |
+| <Link id="m-msallowance" /><code>{"private float msAllowance"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdebuggingallowance-2" /><code>{"static bool IsDebuggingAllowance { get; set; }"}</code> |  |
-| <Link id="m-msallowance-2" /><code>{"float MsAllowance { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isdebuggingallowance-2" /><code>{"static bool IsDebuggingAllowance { get; set; }"}</code> |
+| <Link id="m-msallowance-2" /><code>{"float MsAllowance { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-registermethod" /><code>{"override "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" RegisterMethod(Action method)"}</code> |  |
-| <Link id="m-update" /><code>{"sealed override void Update()"}</code> |  |
-| <Link id="m-deregistermethod" /><code>{"protected override void DeregisterMethod("}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" node)"}</code> |  |
-| <Link id="m-processnode" /><code>{"private bool ProcessNode("}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" node)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-registermethod" /><code>{"override "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" RegisterMethod(Action method)"}</code> |
+| <Link id="m-update" /><code>{"sealed override void Update()"}</code> |
+| <Link id="m-deregistermethod" /><code>{"protected override void DeregisterMethod("}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" node)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-processnode" /><code>{"private bool ProcessNode("}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" node)"}</code> |
+
+</details>
 
 ## Used in
 

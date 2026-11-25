@@ -17,10 +17,10 @@ An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getalllaunchergamesasync" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/launchergameinfoshort">{"LauncherGameInfoShort"}</Link>{">> GetAllLauncherGamesAsync()"}</code> |  |
-| <Link id="m-getlaunchergameasync" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/launchergameinfofull">{"LauncherGameInfoFull"}</Link>{"> GetLauncherGameAsync(int gameIdentifier)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getalllaunchergamesasync" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/launchergameinfoshort">{"LauncherGameInfoShort"}</Link>{">> GetAllLauncherGamesAsync()"}</code> |
+| <Link id="m-getlaunchergameasync" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/launchergameinfofull">{"LauncherGameInfoFull"}</Link>{"> GetLauncherGameAsync(int gameIdentifier)"}</code> |
 
 ## Used in
 

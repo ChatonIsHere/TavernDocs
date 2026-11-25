@@ -16,13 +16,13 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DiscordSupporterRoleVerificationResults()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DiscordSupporterRoleVerificationResults()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gainedsupporters" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> GainedSupporters { get; }"}</code> |  |
-| <Link id="m-removedsupporters" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> RemovedSupporters { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gainedsupporters" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> GainedSupporters { get; }"}</code> |
+| <Link id="m-removedsupporters" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> RemovedSupporters { get; }"}</code> |

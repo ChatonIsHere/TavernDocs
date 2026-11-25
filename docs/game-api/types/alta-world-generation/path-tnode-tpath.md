@@ -21,9 +21,9 @@ A one-way connection between two nodes in the forest graph, used for A* search. 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Path(TNode from, TNode to, float length)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Path(TNode from, TNode to, float length)"}</code> |
 
 ## Properties
 

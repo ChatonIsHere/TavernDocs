@@ -20,20 +20,25 @@ Server-side population holder for an area, such as a forest chunk. Spawns from a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BasicPopulationFolder()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BasicPopulationFolder()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" definition"}</code> |  |
-| <Link id="m-density" /><code>{"private float density"}</code> |  |
-| <Link id="m-isecosystem" /><code>{"private bool isEcosystem"}</code> |  |
-| <Link id="m-loadpopulation" /><code>{"private int? loadPopulation"}</code> |  |
-| <Link id="m-loadtime" /><code>{"private TimeSpan? loadTime"}</code> |  |
-| <Link id="m-squaremeters" /><code>{"private float squareMeters"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" definition"}</code> |
+| <Link id="m-density" /><code>{"private float density"}</code> |
+| <Link id="m-isecosystem" /><code>{"private bool isEcosystem"}</code> |
+| <Link id="m-loadpopulation" /><code>{"private int? loadPopulation"}</code> |
+| <Link id="m-loadtime" /><code>{"private TimeSpan? loadTime"}</code> |
+| <Link id="m-squaremeters" /><code>{"private float squareMeters"}</code> |
+
+</details>
 
 ## Properties
 
@@ -53,6 +58,14 @@ Server-side population holder for an area, such as a forest chunk. Spawns from a
 | --- | --- |
 | <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: creates the manager and population, and if it is an ecosystem, joins the chunk's ecosystem when added. |
 | <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" definition, float squareMeters, float density, bool isEcosystem)"}</code> | Sets the definition, area, density and ecosystem flag. Used by `ForestPopulationCreator`. |
-| <Link id="m-addtoecosystem" /><code>{"private void AddToEcosystem("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-removefromecosystem" /><code>{"private void RemoveFromEcosystem("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-addtoecosystem" /><code>{"private void AddToEcosystem("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-removefromecosystem" /><code>{"private void RemoveFromEcosystem("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+
+</details>

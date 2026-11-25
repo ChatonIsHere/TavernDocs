@@ -17,8 +17,8 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-redo" /><code>{"void Redo()"}</code> |  |
-| <Link id="m-release" /><code>{"void Release()"}</code> |  |
-| <Link id="m-undo" /><code>{"void Undo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-redo" /><code>{"void Redo()"}</code> |
+| <Link id="m-release" /><code>{"void Release()"}</code> |
+| <Link id="m-undo" /><code>{"void Undo()"}</code> |

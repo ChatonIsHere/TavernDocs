@@ -18,7 +18,7 @@ An **internal abstract class** in `Root.Township`, `Alta.Utilities`. Reach it th
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerSaveException()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PlayerSaveException(string message)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerSaveException()"}</code> |
+| <Link id="m-ctor-2" /><code>{"PlayerSaveException(string message)"}</code> |

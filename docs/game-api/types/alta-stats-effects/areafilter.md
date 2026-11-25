@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, `Alta.StatSystem`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-body" /><code>{"Body = 2"}</code> |  |
-| <Link id="m-mind" /><code>{"Mind = 4"}</code> |  |
-| <Link id="m-none" /><code>{"None = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-body" /><code>{"Body = 2"}</code> |
+| <Link id="m-mind" /><code>{"Mind = 4"}</code> |
+| <Link id="m-none" /><code>{"None = 1"}</code> |
 
 ## Used in
 

@@ -16,15 +16,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SearchByUsernameRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SearchByUsernameRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> |
 
 ## Used in
 

@@ -17,25 +17,30 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PaintModifiers()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PaintModifiers()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isforced" /><code>{"private bool isForced"}</code> |  |
-| <Link id="m-layer1" /><code>{"private int layer1"}</code> |  |
-| <Link id="m-layer1strength" /><code>{"private float layer1Strength"}</code> |  |
-| <Link id="m-layer2" /><code>{"private int layer2"}</code> |  |
-| <Link id="m-layer2strength" /><code>{"private float layer2Strength"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isforced" /><code>{"private bool isForced"}</code> |
+| <Link id="m-layer1" /><code>{"private int layer1"}</code> |
+| <Link id="m-layer1strength" /><code>{"private float layer1Strength"}</code> |
+| <Link id="m-layer2" /><code>{"private int layer2"}</code> |
+| <Link id="m-layer2strength" /><code>{"private float layer2Strength"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"void Apply(ref "}<Link to="/game-api/types/alta-world-generation/splatdata">{"SplatData"}</Link>{" data, float score)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"void Apply(ref "}<Link to="/game-api/types/alta-world-generation/splatdata">{"SplatData"}</Link>{" data, float score)"}</code> |
 
 ## Used in
 

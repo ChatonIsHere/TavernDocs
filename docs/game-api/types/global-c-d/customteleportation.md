@@ -18,17 +18,17 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected CustomTeleportation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected CustomTeleportation()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-attempt" /><code>{"abstract bool Attempt("}<Link to="/game-api/types/global-t-x/teleporter">{"Teleporter"}</Link>{" teleporter)"}</code> |  |
-| <Link id="m-begin" /><code>{"abstract void Begin("}<Link to="/game-api/types/global-t-x/teleporter">{"Teleporter"}</Link>{" teleporter)"}</code> |  |
-| <Link id="m-end" /><code>{"abstract void End("}<Link to="/game-api/types/global-t-x/teleporter">{"Teleporter"}</Link>{" teleporter)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-attempt" /><code>{"abstract bool Attempt("}<Link to="/game-api/types/global-t-x/teleporter">{"Teleporter"}</Link>{" teleporter)"}</code> |
+| <Link id="m-begin" /><code>{"abstract void Begin("}<Link to="/game-api/types/global-t-x/teleporter">{"Teleporter"}</Link>{" teleporter)"}</code> |
+| <Link id="m-end" /><code>{"abstract void End("}<Link to="/game-api/types/global-t-x/teleporter">{"Teleporter"}</Link>{" teleporter)"}</code> |
 
 ## Used in
 

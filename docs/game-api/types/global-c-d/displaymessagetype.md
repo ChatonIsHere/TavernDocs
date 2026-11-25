@@ -16,12 +16,12 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forcenext" /><code>{"ForceNext = 1"}</code> |  |
-| <Link id="m-forcenextkillcurrent" /><code>{"ForceNextKillCurrent = 2"}</code> |  |
-| <Link id="m-onemptyqueueonly" /><code>{"OnEmptyQueueOnly = 3"}</code> |  |
-| <Link id="m-queue" /><code>{"Queue = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-forcenext" /><code>{"ForceNext = 1"}</code> |
+| <Link id="m-forcenextkillcurrent" /><code>{"ForceNextKillCurrent = 2"}</code> |
+| <Link id="m-onemptyqueueonly" /><code>{"OnEmptyQueueOnly = 3"}</code> |
+| <Link id="m-queue" /><code>{"Queue = 0"}</code> |
 
 ## Used in
 

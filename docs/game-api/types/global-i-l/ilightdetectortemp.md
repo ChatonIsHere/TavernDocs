@@ -17,10 +17,10 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-beginhit" /><code>{"void BeginHit("}<Link to="/game-api/types/global-i-l/ilightemittertemp">{"ILightEmitterTemp"}</Link>{" emitter)"}</code> |  |
-| <Link id="m-endhit" /><code>{"void EndHit("}<Link to="/game-api/types/global-i-l/ilightemittertemp">{"ILightEmitterTemp"}</Link>{" emitter)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-beginhit" /><code>{"void BeginHit("}<Link to="/game-api/types/global-i-l/ilightemittertemp">{"ILightEmitterTemp"}</Link>{" emitter)"}</code> |
+| <Link id="m-endhit" /><code>{"void EndHit("}<Link to="/game-api/types/global-i-l/ilightemittertemp">{"ILightEmitterTemp"}</Link>{" emitter)"}</code> |
 
 ## Used in
 

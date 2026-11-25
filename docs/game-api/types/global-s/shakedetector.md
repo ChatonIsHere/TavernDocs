@@ -17,34 +17,44 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShakeDetector()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShakeDetector()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fadepersecond" /><code>{"private float fadePerSecond"}</code> |  |
-| <Link id="m-helper" /><code>{"private "}<Link to="/game-api/types/global-s/shakedetectorhelper">{"ShakeDetectorHelper"}</Link>{" helper"}</code> |  |
-| <Link id="m-jumpperchange" /><code>{"private float jumpPerChange"}</code> |  |
-| <Link id="m-shaken" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" shaken"}</code> |  |
-| <Link id="m-threshold" /><code>{"private float threshold"}</code> |  |
-| <Link id="m-velocitythreshold" /><code>{"private float velocityThreshold"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fadepersecond" /><code>{"private float fadePerSecond"}</code> |
+| <Link id="m-helper" /><code>{"private "}<Link to="/game-api/types/global-s/shakedetectorhelper">{"ShakeDetectorHelper"}</Link>{" helper"}</code> |
+| <Link id="m-jumpperchange" /><code>{"private float jumpPerChange"}</code> |
+| <Link id="m-shaken" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" shaken"}</code> |
+| <Link id="m-threshold" /><code>{"private float threshold"}</code> |
+| <Link id="m-velocitythreshold" /><code>{"private float velocityThreshold"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-shaken-2" /><code><Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" Shaken { get; }"}</code> |  |
-| <Link id="m-strength" /><code>{"float Strength { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-shaken-2" /><code><Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" Shaken { get; }"}</code> |
+| <Link id="m-strength" /><code>{"float Strength { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |
+
+</details>
 
 ## Used in
 

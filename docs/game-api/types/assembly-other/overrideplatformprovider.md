@@ -16,23 +16,23 @@ A **internal class** in `Alta.PlatformInformation.Runtime`, `Alta.PlatformInform
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OverridePlatformProvider()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OverridePlatformProvider()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isruntimeoverride" /><code>{"bool IsRuntimeOverride { get; }"}</code> |  |
-| <Link id="m-overrideruntime" /><code><Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" OverrideRuntime { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isruntimeoverride" /><code>{"bool IsRuntimeOverride { get; }"}</code> |
+| <Link id="m-overrideruntime" /><code><Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" OverrideRuntime { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clearclientruntimeoverride" /><code>{"void ClearClientRuntimeOverride()"}</code> |  |
-| <Link id="m-setclientruntimeoverride" /><code>{"void SetClientRuntimeOverride("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clearclientruntimeoverride" /><code>{"void ClearClientRuntimeOverride()"}</code> |
+| <Link id="m-setclientruntimeoverride" /><code>{"void SetClientRuntimeOverride("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform)"}</code> |
 
 ## Used in
 

@@ -18,22 +18,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LocalPlayer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LocalPlayer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-localonly" /><code>{"private GameObject[] localOnly"}</code> |  |
-| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> |  |
-| <Link id="m-remoteonly" /><code>{"private GameObject[] remoteOnly"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-localonly" /><code>{"private GameObject[] localOnly"}</code> |
+| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> |
+| <Link id="m-remoteonly" /><code>{"private GameObject[] remoteOnly"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |
-| <Link id="m-setup" /><code>{"private void Setup()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+| <Link id="m-setup" /><code>{"private void Setup()"}</code> |
+
+</details>

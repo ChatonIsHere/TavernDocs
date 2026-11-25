@@ -18,23 +18,28 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticSetDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CosmeticSetDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items" /><code>{"private List<"}<Link to="/game-api/types/alta-customization/purchasable">{"Purchasable"}</Link>{"> items"}</code> |  |
-| <Link id="m-settype" /><code>{"private "}<Link to="/game-api/types/assembly-api-models/itemsettype">{"ItemSetType"}</Link>{" setType"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-items" /><code>{"private List<"}<Link to="/game-api/types/alta-customization/purchasable">{"Purchasable"}</Link>{"> items"}</code> |
+| <Link id="m-settype" /><code>{"private "}<Link to="/game-api/types/assembly-api-models/itemsettype">{"ItemSetType"}</Link>{" setType"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items-2" /><code>{"List<"}<Link to="/game-api/types/alta-customization/purchasable">{"Purchasable"}</Link>{"> Items { get; }"}</code> |  |
-| <Link id="m-settype-2" /><code><Link to="/game-api/types/assembly-api-models/itemsettype">{"ItemSetType"}</Link>{" SetType { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-items-2" /><code>{"List<"}<Link to="/game-api/types/alta-customization/purchasable">{"Purchasable"}</Link>{"> Items { get; }"}</code> |
+| <Link id="m-settype-2" /><code><Link to="/game-api/types/assembly-api-models/itemsettype">{"ItemSetType"}</Link>{" SetType { get; set; }"}</code> |
 
 ## Used in
 

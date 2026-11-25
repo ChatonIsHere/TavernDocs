@@ -18,22 +18,35 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveCircleTarget()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActiveCircleTarget()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ismovingright" /><code>{"private bool isMovingRight"}</code> |  |
-| <Link id="m-movingtowards" /><code>{"private Vector3 movingTowards"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ismovingright" /><code>{"private bool isMovingRight"}</code> |
+| <Link id="m-movingtowards" /><code>{"private Vector3 movingTowards"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |  |
-| <Link id="m-clean" /><code>{"private void Clean("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |  |
-| <Link id="m-getposition" /><code>{"private bool GetPosition(Vector3 targetPosition, Vector3 topicPosition, Vector3 toPosition, ref Vector3 intendedPosition)"}</code> |  |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-clean" /><code>{"private void Clean("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |
+| <Link id="m-getposition" /><code>{"private bool GetPosition(Vector3 targetPosition, Vector3 topicPosition, Vector3 toPosition, ref Vector3 intendedPosition)"}</code> |
+
+</details>

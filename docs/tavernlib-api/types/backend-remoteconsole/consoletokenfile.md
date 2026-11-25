@@ -20,9 +20,9 @@ The `ServerConfigFile` for `console_tokens.json`. Only `ConsoleTokenStore` reads
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ConsoleTokenFile(string filePath)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConsoleTokenFile(string filePath)"}</code> |
 
 ## Used in
 

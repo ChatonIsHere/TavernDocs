@@ -17,16 +17,16 @@ A **private struct** in `Root.Township`, `ATT.Character.QuickAccessMenu`. Reach 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CommandSyncInfo("}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{" commandResult)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CommandSyncInfo("}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{" commandResult)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-commandname" /><code>{"readonly string CommandName"}</code> |  |
-| <Link id="m-result" /><code>{"readonly string Result"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-commandname" /><code>{"readonly string CommandName"}</code> |
+| <Link id="m-result" /><code>{"readonly string Result"}</code> |
 
 ## Used in
 

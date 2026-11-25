@@ -17,27 +17,32 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RotationSnapshots()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RotationSnapshots()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-closedhandrotations" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" closedHandRotations"}</code> |  |
-| <Link id="m-defaultrotations" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" defaultRotations"}</code> |  |
-| <Link id="m-openhandrotations" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" openHandRotations"}</code> |  |
-| <Link id="m-splaidhandrotations" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" splaidHandRotations"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-closedhandrotations" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" closedHandRotations"}</code> |
+| <Link id="m-defaultrotations" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" defaultRotations"}</code> |
+| <Link id="m-openhandrotations" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" openHandRotations"}</code> |
+| <Link id="m-splaidhandrotations" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" splaidHandRotations"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-closed" /><code><Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" Closed { get; }"}</code> |  |
-| <Link id="m-default" /><code><Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" Default { get; }"}</code> |  |
-| <Link id="m-open" /><code><Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" Open { get; }"}</code> |  |
-| <Link id="m-splaid" /><code><Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" Splaid { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-closed" /><code><Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" Closed { get; }"}</code> |
+| <Link id="m-default" /><code><Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" Default { get; }"}</code> |
+| <Link id="m-open" /><code><Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" Open { get; }"}</code> |
+| <Link id="m-splaid" /><code><Link to="/game-api/types/global-t-x/transformsavecollection">{"TransformSaveCollection"}</Link>{" Splaid { get; }"}</code> |
 
 ## Used in
 

@@ -21,13 +21,18 @@ Status `whitelist_application_received`, with `already_pending` true when the sa
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WhitelistApplicationReceived(bool wasNew)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WhitelistApplicationReceived(bool wasNew)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alreadypending" /><code>{"private bool AlreadyPending { get; }"}</code> |  |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> |  |
+<details>
+<summary>2 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-alreadypending" /><code>{"private bool AlreadyPending { get; }"}</code> |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> |
+
+</details>

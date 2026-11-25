@@ -20,9 +20,9 @@ Base for a component that should exist once. The first one to wake becomes `Inst
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SingletonBehaviour()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SingletonBehaviour()"}</code> |
 
 ## Fields
 

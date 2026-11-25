@@ -18,29 +18,34 @@ An **abstract class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SimpleIKController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SimpleIKController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bones" /><code>{"private "}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{"[] bones"}</code> |  |
-| <Link id="m-dummy" /><code>{"private "}<Link to="/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" dummy"}</code> |  |
-| <Link id="m-lerp" /><code>{"private float lerp"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bones" /><code>{"private "}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{"[] bones"}</code> |
+| <Link id="m-dummy" /><code>{"private "}<Link to="/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" dummy"}</code> |
+| <Link id="m-lerp" /><code>{"private float lerp"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bones-2" /><code>{"protected Transform[] Bones { get; private set; }"}</code> |  |
-| <Link id="m-boneslength" /><code>{"protected int BonesLength { get; private set; }"}</code> |  |
-| <Link id="m-framerotations" /><code>{"protected Quaternion[] FrameRotations { get; private set; }"}</code> |  |
-| <Link id="m-lerp-2" /><code>{"protected float Lerp { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bones-2" /><code>{"protected Transform[] Bones { get; private set; }"}</code> |
+| <Link id="m-boneslength" /><code>{"protected int BonesLength { get; private set; }"}</code> |
+| <Link id="m-framerotations" /><code>{"protected Quaternion[] FrameRotations { get; private set; }"}</code> |
+| <Link id="m-lerp-2" /><code>{"protected float Lerp { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |

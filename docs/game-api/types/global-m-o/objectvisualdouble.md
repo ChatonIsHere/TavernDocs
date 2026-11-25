@@ -18,20 +18,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ObjectVisualDouble()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ObjectVisualDouble()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activeghosts" /><code>{"private List<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> activeGhosts"}</code> |  |
-| <Link id="m-rendererghostdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" rendererGhostDefinition"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activeghosts" /><code>{"private List<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> activeGhosts"}</code> |
+| <Link id="m-rendererghostdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" rendererGhostDefinition"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-releaseactive" /><code>{"void ReleaseActive()"}</code> |  |
-| <Link id="m-setuprenderers" /><code>{"void SetupRenderers(IEnumerable<MeshRenderer> renderers)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-releaseactive" /><code>{"void ReleaseActive()"}</code> |
+| <Link id="m-setuprenderers" /><code>{"void SetupRenderers(IEnumerable<MeshRenderer> renderers)"}</code> |

@@ -19,20 +19,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EmbeddableGlobalSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EmbeddableGlobalSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isrestrictingpickupsbytag" /><code>{"private bool isRestrictingPickupsByTag"}</code> |  |
-| <Link id="m-validpickupstoembedinto" /><code>{"private "}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{" validPickupsToEmbedInto"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isrestrictingpickupsbytag" /><code>{"private bool isRestrictingPickupsByTag"}</code> |
+| <Link id="m-validpickupstoembedinto" /><code>{"private "}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{" validPickupsToEmbedInto"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isrestrictingpickupsbytag-2" /><code>{"bool IsRestrictingPickupsByTag { get; }"}</code> |  |
-| <Link id="m-validpickupstoembedinto-2" /><code><Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{" ValidPickupsToEmbedInto { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isrestrictingpickupsbytag-2" /><code>{"bool IsRestrictingPickupsByTag { get; }"}</code> |
+| <Link id="m-validpickupstoembedinto-2" /><code><Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{" ValidPickupsToEmbedInto { get; }"}</code> |

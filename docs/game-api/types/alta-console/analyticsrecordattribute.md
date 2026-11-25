@@ -18,6 +18,6 @@ A **class** in `Root.Township`, `Alta.Analytics`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnalyticsRecordAttribute()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnalyticsRecordAttribute()"}</code> |

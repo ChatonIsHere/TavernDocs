@@ -16,16 +16,16 @@ A **class** in `Root.Township`, `Alta.AssetBaking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CachedDirectory(string projectPath, string cachePath)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CachedDirectory(string projectPath, string cachePath)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cachepath" /><code>{"string CachePath { get; }"}</code> |  |
-| <Link id="m-projectpath" /><code>{"string ProjectPath { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cachepath" /><code>{"string CachePath { get; }"}</code> |
+| <Link id="m-projectpath" /><code>{"string ProjectPath { get; }"}</code> |
 
 ## Used in
 

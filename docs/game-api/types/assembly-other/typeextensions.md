@@ -17,9 +17,9 @@ A **static class** in `Alta.Attributes`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getfieldincludingbase" /><code>{"static FieldInfo GetFieldIncludingBase(Type type, string name, BindingFlags flags)"}</code> |  |
-| <Link id="m-getfieldsincludingbase" /><code>{"static IEnumerable<FieldInfo> GetFieldsIncludingBase(Type type, BindingFlags flags) (iterator)"}</code> |  |
-| <Link id="m-getmethodincludingbase" /><code>{"static MethodInfo GetMethodIncludingBase(Type type, string name, BindingFlags flags)"}</code> |  |
-| <Link id="m-getmethodsincludingbase" /><code>{"static IEnumerable<MethodInfo> GetMethodsIncludingBase(Type type, BindingFlags flags) (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getfieldincludingbase" /><code>{"static FieldInfo GetFieldIncludingBase(Type type, string name, BindingFlags flags)"}</code> |
+| <Link id="m-getfieldsincludingbase" /><code>{"static IEnumerable<FieldInfo> GetFieldsIncludingBase(Type type, BindingFlags flags) (iterator)"}</code> |
+| <Link id="m-getmethodincludingbase" /><code>{"static MethodInfo GetMethodIncludingBase(Type type, string name, BindingFlags flags)"}</code> |
+| <Link id="m-getmethodsincludingbase" /><code>{"static IEnumerable<MethodInfo> GetMethodsIncludingBase(Type type, BindingFlags flags) (iterator)"}</code> |

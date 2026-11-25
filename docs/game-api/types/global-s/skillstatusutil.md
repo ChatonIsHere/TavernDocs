@@ -16,6 +16,6 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxserialization" /><code>{"const int MaxSerialization"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maxserialization" /><code>{"const int MaxSerialization"}</code> |

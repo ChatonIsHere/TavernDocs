@@ -20,6 +20,6 @@ A component on a spawned thing that tells its population when the thing should s
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-removefrompopulation" /><code>{"event "}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" RemoveFromPopulation"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-removefrompopulation" /><code>{"event "}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" RemoveFromPopulation"}</code> |

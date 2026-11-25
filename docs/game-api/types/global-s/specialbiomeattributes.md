@@ -22,23 +22,28 @@ Global settings asset listing the biome attributes forest generation fills in fo
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpecialBiomeAttributes()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpecialBiomeAttributes()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-depth" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" depth"}</code> |  |
-| <Link id="m-distancefromborder" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" distanceFromBorder"}</code> |  |
-| <Link id="m-distancefrompath" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" distanceFromPath"}</code> |  |
-| <Link id="m-elevation" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" elevation"}</code> |  |
-| <Link id="m-radius" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" radius"}</code> |  |
-| <Link id="m-relativeelevationmax" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" relativeElevationMax"}</code> |  |
-| <Link id="m-relativeelevationmin" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" relativeElevationMin"}</code> |  |
-| <Link id="m-slope" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" slope"}</code> |  |
-| <Link id="m-traversaldepth" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" traversalDepth"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-depth" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" depth"}</code> |
+| <Link id="m-distancefromborder" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" distanceFromBorder"}</code> |
+| <Link id="m-distancefrompath" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" distanceFromPath"}</code> |
+| <Link id="m-elevation" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" elevation"}</code> |
+| <Link id="m-radius" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" radius"}</code> |
+| <Link id="m-relativeelevationmax" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" relativeElevationMax"}</code> |
+| <Link id="m-relativeelevationmin" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" relativeElevationMin"}</code> |
+| <Link id="m-slope" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" slope"}</code> |
+| <Link id="m-traversaldepth" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" traversalDepth"}</code> |
+
+</details>
 
 ## Properties
 

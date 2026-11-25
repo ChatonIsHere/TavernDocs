@@ -20,18 +20,26 @@ A cubic Bezier spline component: control points in groups of three per curve, wi
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BezierSpline()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BezierSpline()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-changed" /><code><Link to="/game-api/types/alta-utilities/splinechangedhandler">{"SplineChangedHandler"}</Link>{" Changed"}</code> | Called whenever the spline changes. |
-| <Link id="m-islooping" /><code>{"private bool isLooping"}</code> |  |
-| <Link id="m-modes" /><code>{"private "}<Link to="/game-api/types/global-a-b/beziercontrolpointmode">{"BezierControlPointMode"}</Link>{"[] modes"}</code> |  |
-| <Link id="m-points" /><code>{"private Vector3[] points"}</code> |  |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-islooping" /><code>{"private bool isLooping"}</code> |
+| <Link id="m-modes" /><code>{"private "}<Link to="/game-api/types/global-a-b/beziercontrolpointmode">{"BezierControlPointMode"}</Link>{"[] modes"}</code> |
+| <Link id="m-points" /><code>{"private Vector3[] points"}</code> |
+
+</details>
 
 ## Properties
 
@@ -60,9 +68,17 @@ A cubic Bezier spline component: control points in groups of three per curve, wi
 | <Link id="m-reset" /><code>{"void Reset()"}</code> | Resets to one straight curve along X. |
 | <Link id="m-setcontrolpoint" /><code>{"void SetControlPoint(int index, Vector3 point)"}</code> | Moves a control point; moving a joint also moves its handles, and the handle mode is enforced. |
 | <Link id="m-setcontrolpointmode" /><code>{"void SetControlPointMode(int index, "}<Link to="/game-api/types/global-a-b/beziercontrolpointmode">{"BezierControlPointMode"}</Link>{" mode)"}</code> | Sets the handle mode of a joint and enforces it. |
-| <Link id="m-enforcemode" /><code>{"private void EnforceMode(int index)"}</code> |  |
-| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |  |
-| <Link id="m-undo" /><code>{"private void Alta.Static.IInstructionResult.Undo()"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-enforcemode" /><code>{"private void EnforceMode(int index)"}</code> |
+| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |
+| <Link id="m-undo" /><code>{"private void Alta.Static.IInstructionResult.Undo()"}</code> |
+
+</details>
 
 ## Used in
 

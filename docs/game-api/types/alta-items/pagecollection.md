@@ -23,20 +23,25 @@ Asset listing the pages a kind of book can hold, in order. Looked up by hash; a 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PageCollection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PageCollection()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-canremovepagesfrom" /><code>{"private bool canRemovePagesFrom"}</code> |  |
-| <Link id="m-flairs" /><code>{"private "}<Link to="/game-api/types/alta-items/flairsettings">{"FlairSettings"}</Link>{" flairs"}</code> |  |
-| <Link id="m-initialpages" /><code>{"private int[] initialPages"}</code> |  |
-| <Link id="m-ishidingmaxcount" /><code>{"private bool isHidingMaxCount"}</code> |  |
-| <Link id="m-pagebases" /><code>{"private Object[] pageBases"}</code> |  |
-| <Link id="m-preferredprovider" /><code>{"private int preferredProvider"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-canremovepagesfrom" /><code>{"private bool canRemovePagesFrom"}</code> |
+| <Link id="m-flairs" /><code>{"private "}<Link to="/game-api/types/alta-items/flairsettings">{"FlairSettings"}</Link>{" flairs"}</code> |
+| <Link id="m-initialpages" /><code>{"private int[] initialPages"}</code> |
+| <Link id="m-ishidingmaxcount" /><code>{"private bool isHidingMaxCount"}</code> |
+| <Link id="m-pagebases" /><code>{"private Object[] pageBases"}</code> |
+| <Link id="m-preferredprovider" /><code>{"private int preferredProvider"}</code> |
+
+</details>
 
 ## Properties
 

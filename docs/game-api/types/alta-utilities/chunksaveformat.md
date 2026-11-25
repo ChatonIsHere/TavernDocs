@@ -20,18 +20,26 @@ File format for one chunk's save: a list of versions, each with the chunk's own 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkSaveFormat()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkSaveFormat()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-versions" /><code>{"List<"}<Link to="/game-api/types/alta-utilities/chunksaveformat-version">{"ChunkSaveFormat.Version"}</Link>{"> Versions"}</code> | Saved versions of the chunk. The first is the one applied. |
-| <Link id="m-currentsaveversion" /><code>{"private const "}<Link to="/game-api/types/alta-world/chunksaveversion">{"ChunkSaveVersion"}</Link>{" CurrentSaveVersion"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-usecount" /><code>{"private int useCount"}</code> |  |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentsaveversion" /><code>{"private const "}<Link to="/game-api/types/alta-world/chunksaveversion">{"ChunkSaveVersion"}</Link>{" CurrentSaveVersion"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-usecount" /><code>{"private int useCount"}</code> |
+
+</details>
 
 ## Properties
 
@@ -54,8 +62,16 @@ File format for one chunk's save: a list of versions, each with the chunk's own 
 | <Link id="m-saveobject" /><code>{"static void SaveObject(BinaryWriter writer, "}<Link to="/game-api/types/alta-world/saveddynamicobject">{"SavedDynamicObject"}</Link>{" saving)"}</code> | Writes one saved object. |
 | <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> | Writes every version to a stream. Writes nothing if there are none. |
 | <Link id="m-writeversion" /><code>{"static void WriteVersion(BinaryWriter writer, "}<Link to="/game-api/types/alta-utilities/chunksaveformat-version">{"ChunkSaveFormat.Version"}</Link>{" version)"}</code> | Writes one version. |
-| <Link id="m-loaddate" /><code>{"private void LoadDate(BinaryReader reader)"}</code> |  |
-| <Link id="m-savedate" /><code>{"private void SaveDate(BinaryWriter writer)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-loaddate" /><code>{"private void LoadDate(BinaryReader reader)"}</code> |
+| <Link id="m-savedate" /><code>{"private void SaveDate(BinaryWriter writer)"}</code> |
+
+</details>
 
 ## Used in
 

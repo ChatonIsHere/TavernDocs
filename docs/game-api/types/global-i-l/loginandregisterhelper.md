@@ -18,29 +18,37 @@ An **internal abstract class** in `Root.Township`, no namespace. Reach it throug
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected LoginAndRegisterHelper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected LoginAndRegisterHelper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-genericerrortext" /><code>{"protected "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" genericErrorText"}</code> |  |
-| <Link id="m-loadingobject" /><code>{"private GameObject loadingObject"}</code> |  |
-| <Link id="m-passwordinput" /><code>{"protected "}<Link to="/game-api/types/alta-menus/inputfield">{"InputField"}</Link>{" passwordInput"}</code> |  |
-| <Link id="m-usernameinput" /><code>{"protected "}<Link to="/game-api/types/alta-menus/inputfield">{"InputField"}</Link>{" usernameInput"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-genericerrortext" /><code>{"protected "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" genericErrorText"}</code> |
+| <Link id="m-passwordinput" /><code>{"protected "}<Link to="/game-api/types/alta-menus/inputfield">{"InputField"}</Link>{" passwordInput"}</code> |
+| <Link id="m-usernameinput" /><code>{"protected "}<Link to="/game-api/types/alta-menus/inputfield">{"InputField"}</Link>{" usernameInput"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-loadingobject" /><code>{"private GameObject loadingObject"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isprocessing" /><code>{"protected bool IsProcessing { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isprocessing" /><code>{"protected bool IsProcessing { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondisable" /><code>{"virtual void OnDisable()"}</code> |  |
-| <Link id="m-submit" /><code>{"async void Submit()"}</code> |  |
-| <Link id="m-internalsubmit" /><code>{"protected abstract Task InternalSubmit()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ondisable" /><code>{"virtual void OnDisable()"}</code> |
+| <Link id="m-submit" /><code>{"async void Submit()"}</code> |
+| <Link id="m-internalsubmit" /><code>{"protected abstract Task InternalSubmit()"}</code> |

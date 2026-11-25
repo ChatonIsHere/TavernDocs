@@ -16,13 +16,13 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-banned" /><code>{"Banned = 1"}</code> |  |
-| <Link id="m-othererror" /><code>{"OtherError = 4"}</code> |  |
-| <Link id="m-privateserver" /><code>{"PrivateServer = 2"}</code> |  |
-| <Link id="m-serverfull" /><code>{"ServerFull = 0"}</code> |  |
-| <Link id="m-wrongversion" /><code>{"WrongVersion = 3"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-banned" /><code>{"Banned = 1"}</code> |
+| <Link id="m-othererror" /><code>{"OtherError = 4"}</code> |
+| <Link id="m-privateserver" /><code>{"PrivateServer = 2"}</code> |
+| <Link id="m-serverfull" /><code>{"ServerFull = 0"}</code> |
+| <Link id="m-wrongversion" /><code>{"WrongVersion = 3"}</code> |
 
 ## Used in
 

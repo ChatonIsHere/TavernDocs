@@ -20,18 +20,23 @@ A point in the year (month, day, hour) with no year, used for seasonal or dated 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MonthDayHour("}<Link to="/game-api/types/global-m-o/month">{"Month"}</Link>{" month, int day, int hour)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MonthDayHour("}<Link to="/game-api/types/global-m-o/month">{"Month"}</Link>{" month, int day, int hour)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" current"}</code> |  |
-| <Link id="m-day" /><code>{"private int day"}</code> |  |
-| <Link id="m-hour" /><code>{"private int hour"}</code> |  |
-| <Link id="m-month" /><code>{"private "}<Link to="/game-api/types/global-m-o/month">{"Month"}</Link>{" month"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" current"}</code> |
+| <Link id="m-day" /><code>{"private int day"}</code> |
+| <Link id="m-hour" /><code>{"private int hour"}</code> |
+| <Link id="m-month" /><code>{"private "}<Link to="/game-api/types/global-m-o/month">{"Month"}</Link>{" month"}</code> |
+
+</details>
 
 ## Properties
 

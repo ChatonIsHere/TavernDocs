@@ -17,16 +17,16 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatPlayerPair("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatPlayerPair("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-player" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-stat" /><code><Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-player" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" { get; }"}</code> |
+| <Link id="m-stat" /><code><Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" { get; }"}</code> |
 
 ## Used in
 

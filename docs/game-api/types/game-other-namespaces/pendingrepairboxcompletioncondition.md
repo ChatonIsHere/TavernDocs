@@ -17,28 +17,41 @@ A **class** in `Root.Township`, `Features.Gameplay.GameConditions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PendingRepairBoxCompletionCondition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PendingRepairBoxCompletionCondition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-issetup" /><code>{"private bool isSetup"}</code> |  |
-| <Link id="m-onconditionchanged" /><code>{"private Action onConditionChanged"}</code> |  |
-| <Link id="m-repairbox" /><code>{"private "}<Link to="/game-api/types/global-q-r/repairbox">{"RepairBox"}</Link>{" repairBox"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-issetup" /><code>{"private bool isSetup"}</code> |
+| <Link id="m-onconditionchanged" /><code>{"private Action onConditionChanged"}</code> |
+| <Link id="m-repairbox" /><code>{"private "}<Link to="/game-api/types/global-q-r/repairbox">{"RepairBox"}</Link>{" repairBox"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onconditionchanged-2" /><code>{"Action OnConditionChanged { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onconditionchanged-2" /><code>{"Action OnConditionChanged { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet()"}</code> |  |
-| <Link id="m-repairboxcompleted" /><code>{"private void RepairBoxCompleted()"}</code> |  |
-| <Link id="m-setup" /><code>{"private void Setup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-repairboxcompleted" /><code>{"private void RepairBoxCompleted()"}</code> |
+| <Link id="m-setup" /><code>{"private void Setup()"}</code> |
+
+</details>

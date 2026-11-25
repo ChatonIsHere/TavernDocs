@@ -17,17 +17,17 @@ An **interface** in `Root.Township`, `Alta.Carpentry`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getdirectionleniency" /><code>{"void GetDirectionLeniency(ref float directionMultiplier)"}</code> |  |
-| <Link id="m-gethitmultiplier" /><code>{"float GetHitMultiplier(Vector3 hitDirection)"}</code> |  |
-| <Link id="m-receivedamage" /><code>{"void ReceiveDamage(float damage, Vector3 position, Vector3 direction, "}<Link to="/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getdirectionleniency" /><code>{"void GetDirectionLeniency(ref float directionMultiplier)"}</code> |
+| <Link id="m-gethitmultiplier" /><code>{"float GetHitMultiplier(Vector3 hitDirection)"}</code> |
+| <Link id="m-receivedamage" /><code>{"void ReceiveDamage(float damage, Vector3 position, Vector3 direction, "}<Link to="/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> |
 
 ## Used in
 

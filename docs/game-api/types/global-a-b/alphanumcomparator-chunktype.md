@@ -17,7 +17,7 @@ An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alphanumeric" /><code>{"Alphanumeric = 0"}</code> |  |
-| <Link id="m-numeric" /><code>{"Numeric = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-alphanumeric" /><code>{"Alphanumeric = 0"}</code> |
+| <Link id="m-numeric" /><code>{"Numeric = 1"}</code> |

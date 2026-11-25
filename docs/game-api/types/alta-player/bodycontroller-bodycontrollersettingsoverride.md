@@ -17,22 +17,27 @@ A **private class** in `Root.Township`, `Alta.Character`. Reach it through att-s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BodyControllerSettingsOverride("}<Link to="/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" settings, Func<bool> relevantCheck)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BodyControllerSettingsOverride("}<Link to="/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" settings, Func<bool> relevantCheck)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-relevantcheck" /><code>{"private Func<bool> relevantCheck"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-relevantcheck" /><code>{"private Func<bool> relevantCheck"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isrelevant" /><code>{"bool IsRelevant { get; }"}</code> |  |
-| <Link id="m-settings" /><code><Link to="/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" Settings { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isrelevant" /><code>{"bool IsRelevant { get; }"}</code> |
+| <Link id="m-settings" /><code><Link to="/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" Settings { get; private set; }"}</code> |
 
 ## Used in
 

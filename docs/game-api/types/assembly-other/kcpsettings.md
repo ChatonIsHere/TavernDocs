@@ -19,25 +19,25 @@ A **class** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport.Kcp`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"KcpSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"KcpSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-congestionwindow" /><code>{"bool CongestionWindow"}</code> |  |
-| <Link id="m-dualmode" /><code>{"bool DualMode"}</code> |  |
-| <Link id="m-fastresend" /><code>{"int FastResend"}</code> |  |
-| <Link id="m-interval" /><code>{"uint Interval"}</code> |  |
-| <Link id="m-maximizesendreceivebufferstooslimit" /><code>{"bool MaximizeSendReceiveBuffersToOSLimit"}</code> |  |
-| <Link id="m-maxretransmit" /><code>{"uint MaxRetransmit"}</code> |  |
-| <Link id="m-nodelay" /><code>{"bool NoDelay"}</code> |  |
-| <Link id="m-nonalloc" /><code>{"bool NonAlloc"}</code> |  |
-| <Link id="m-receivewindowsize" /><code>{"uint ReceiveWindowSize"}</code> |  |
-| <Link id="m-sendwindowsize" /><code>{"uint SendWindowSize"}</code> |  |
-| <Link id="m-timeout" /><code>{"int Timeout"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-congestionwindow" /><code>{"bool CongestionWindow"}</code> |
+| <Link id="m-dualmode" /><code>{"bool DualMode"}</code> |
+| <Link id="m-fastresend" /><code>{"int FastResend"}</code> |
+| <Link id="m-interval" /><code>{"uint Interval"}</code> |
+| <Link id="m-maximizesendreceivebufferstooslimit" /><code>{"bool MaximizeSendReceiveBuffersToOSLimit"}</code> |
+| <Link id="m-maxretransmit" /><code>{"uint MaxRetransmit"}</code> |
+| <Link id="m-nodelay" /><code>{"bool NoDelay"}</code> |
+| <Link id="m-nonalloc" /><code>{"bool NonAlloc"}</code> |
+| <Link id="m-receivewindowsize" /><code>{"uint ReceiveWindowSize"}</code> |
+| <Link id="m-sendwindowsize" /><code>{"uint SendWindowSize"}</code> |
+| <Link id="m-timeout" /><code>{"int Timeout"}</code> |
 
 ## Used in
 

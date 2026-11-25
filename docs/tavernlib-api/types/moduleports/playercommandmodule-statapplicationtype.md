@@ -20,11 +20,11 @@ Which part of a stat `player set-stat` changes: its base value, its minimum or i
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-base" /><code>{"Base = 0"}</code> |  |
-| <Link id="m-max" /><code>{"Max = 2"}</code> |  |
-| <Link id="m-min" /><code>{"Min = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-base" /><code>{"Base = 0"}</code> |
+| <Link id="m-max" /><code>{"Max = 2"}</code> |
+| <Link id="m-min" /><code>{"Min = 1"}</code> |
 
 ## Used in
 

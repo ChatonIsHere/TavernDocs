@@ -20,18 +20,26 @@ Base for one synced animator parameter (bool, float, trigger) on a `NetworkAnima
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimatedValue(string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimatedValue(string name)"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator"}</code> |  |
-| <Link id="m-index" /><code>{"private int index"}</code> |  |
-| <Link id="m-name" /><code>{"private string name"}</code> |  |
 | <Link id="m-value" /><code>{"protected T value"}</code> | Backing field for `Value`. |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator"}</code> |
+| <Link id="m-index" /><code>{"private int index"}</code> |
+| <Link id="m-name" /><code>{"private string name"}</code> |
+
+</details>
 
 ## Properties
 

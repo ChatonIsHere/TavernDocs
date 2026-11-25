@@ -18,27 +18,40 @@ A **class** in `Root.Township`, `Alta.Loot`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PresetLootModule()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PresetLootModule()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-group" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" group"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-setup" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/presetlootmodulesavedata">{"PresetLootModuleSaveData"}</Link>{" setup"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-group" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" group"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-setup" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/presetlootmodulesavedata">{"PresetLootModuleSaveData"}</Link>{" setup"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-group-2" /><code><Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" Group { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-group-2" /><code><Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" Group { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spawn" /><code>{"void Spawn()"}</code> |  |
-| <Link id="m-haschunk" /><code>{"private void HasChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-spawn" /><code>{"void Spawn()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-haschunk" /><code>{"private void HasChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk = null)"}</code> |
+
+</details>

@@ -19,16 +19,16 @@ A **class** in `Root.Township`, `ATT.MicroTutorial`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MicroTutorialSystemSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MicroTutorialSystemSettings()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-droptags" /><code><Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"[] DropTags { get; private set; }"}</code> |  |
-| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-droptags" /><code><Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"[] DropTags { get; private set; }"}</code> |
+| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; private set; }"}</code> |
 
 ## Used in
 

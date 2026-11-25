@@ -17,20 +17,30 @@ A **class** in `Root.Township`, `Alta.Heat`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HeatPointToHeatAreaLink()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HeatPointToHeatAreaLink()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-areatosettemperatureoff" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatarea">{"HeatArea"}</Link>{" areaToSetTemperatureOff"}</code> |  |
-| <Link id="m-pointtogettemperaturefrom" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" pointToGetTemperatureFrom"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-areatosettemperatureoff" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatarea">{"HeatArea"}</Link>{" areaToSetTemperatureOff"}</code> |
+| <Link id="m-pointtogettemperaturefrom" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" pointToGetTemperatureFrom"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-updatetargettemperatureofheatarea" /><code>{"private void UpdateTargetTemperatureOfHeatArea("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-updatetargettemperatureofheatarea" /><code>{"private void UpdateTargetTemperatureOfHeatArea("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> |
+
+</details>

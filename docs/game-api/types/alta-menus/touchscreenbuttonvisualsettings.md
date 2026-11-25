@@ -18,29 +18,34 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TouchScreenButtonVisualSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TouchScreenButtonVisualSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-color" /><code>{"private Material color"}</code> |  |
-| <Link id="m-growcurve" /><code>{"private AnimationCurve growCurve"}</code> |  |
-| <Link id="m-growduration" /><code>{"private float growDuration"}</code> |  |
-| <Link id="m-idlealpha" /><code>{"private float idleAlpha"}</code> |  |
-| <Link id="m-pressedalpha" /><code>{"private float pressedAlpha"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-color" /><code>{"private Material color"}</code> |
+| <Link id="m-growcurve" /><code>{"private AnimationCurve growCurve"}</code> |
+| <Link id="m-growduration" /><code>{"private float growDuration"}</code> |
+| <Link id="m-idlealpha" /><code>{"private float idleAlpha"}</code> |
+| <Link id="m-pressedalpha" /><code>{"private float pressedAlpha"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-color-2" /><code>{"Material Color { get; }"}</code> |  |
-| <Link id="m-growcurve-2" /><code>{"AnimationCurve GrowCurve { get; }"}</code> |  |
-| <Link id="m-growduration-2" /><code>{"float GrowDuration { get; }"}</code> |  |
-| <Link id="m-idlealpha-2" /><code>{"float IdleAlpha { get; }"}</code> |  |
-| <Link id="m-pressedalpha-2" /><code>{"float PressedAlpha { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-color-2" /><code>{"Material Color { get; }"}</code> |
+| <Link id="m-growcurve-2" /><code>{"AnimationCurve GrowCurve { get; }"}</code> |
+| <Link id="m-growduration-2" /><code>{"float GrowDuration { get; }"}</code> |
+| <Link id="m-idlealpha-2" /><code>{"float IdleAlpha { get; }"}</code> |
+| <Link id="m-pressedalpha-2" /><code>{"float PressedAlpha { get; }"}</code> |
 
 ## Used in
 

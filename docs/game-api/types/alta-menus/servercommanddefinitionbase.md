@@ -20,9 +20,9 @@ Base for quick access menu settings that run a server command when used, such as
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ServerCommandDefinitionBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ServerCommandDefinitionBase()"}</code> |
 
 ## Methods
 

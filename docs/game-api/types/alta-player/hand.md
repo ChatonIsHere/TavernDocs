@@ -19,33 +19,38 @@ One hand of a player's character: links the controller, IK hand target, grip ani
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Hand()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Hand()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-armikcontrollers" /><code>{"private "}<Link to="/game-api/types/alta-player/charactercomponentcontrollercollection">{"CharacterComponentControllerCollection"}</Link>{" armIKControllers"}</code> |  |
-| <Link id="m-controller" /><code>{"private "}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller"}</code> |  |
-| <Link id="m-controlleroffsetsettings" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleroffsetsettings">{"ControllerOffsetSettings"}</Link>{" controllerOffsetSettings"}</code> |  |
-| <Link id="m-gesturecontroller" /><code>{"private "}<Link to="/game-api/types/global-e-h/handgesturecontroller">{"HandGestureController"}</Link>{" gestureController"}</code> |  |
-| <Link id="m-ghosthandcontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/ghosthandcontroller">{"GhostHandController"}</Link>{" ghostHandController"}</code> |  |
-| <Link id="m-gripanimator" /><code>{"private "}<Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" gripAnimator"}</code> |  |
-| <Link id="m-grippointsave" /><code>{"private TransformSave gripPointSave"}</code> |  |
-| <Link id="m-handanimator" /><code>{"private Animator handAnimator"}</code> |  |
-| <Link id="m-handindex" /><code>{"private "}<Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" handIndex"}</code> |  |
-| <Link id="m-handtargetsave" /><code>{"private TransformSave handTargetSave"}</code> |  |
-| <Link id="m-ikhandtarget" /><code>{"private "}<Link to="/game-api/types/alta-player/handtargethandler">{"HandTargetHandler"}</Link>{" ikHandTarget"}</code> |  |
-| <Link id="m-isnotfixingikhandtopickup" /><code>{"private bool isNotFixingIKHandToPickup"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-masterhand" /><code>{"private "}<Link to="/game-api/types/alta-player/masterhand">{"MasterHand"}</Link>{" masterHand"}</code> |  |
-| <Link id="m-movedpickupinthisframe" /><code>{"private bool movedPickupInThisFrame"}</code> |  |
-| <Link id="m-pickupstatebeforephysics" /><code>{"private TransformSave pickupStateBeforePhysics"}</code> |  |
-| <Link id="m-platform" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" platform"}</code> |  |
-| <Link id="m-savedcenterofmass" /><code>{"private Vector3 savedCenterOfMass"}</code> |  |
-| <Link id="m-shakedetector" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/handshakeoffdetector">{"HandShakeOffDetector"}</Link>{" shakeDetector"}</code> |  |
+<details>
+<summary>19 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-armikcontrollers" /><code>{"private "}<Link to="/game-api/types/alta-player/charactercomponentcontrollercollection">{"CharacterComponentControllerCollection"}</Link>{" armIKControllers"}</code> |
+| <Link id="m-controller" /><code>{"private "}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller"}</code> |
+| <Link id="m-controlleroffsetsettings" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleroffsetsettings">{"ControllerOffsetSettings"}</Link>{" controllerOffsetSettings"}</code> |
+| <Link id="m-gesturecontroller" /><code>{"private "}<Link to="/game-api/types/global-e-h/handgesturecontroller">{"HandGestureController"}</Link>{" gestureController"}</code> |
+| <Link id="m-ghosthandcontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/ghosthandcontroller">{"GhostHandController"}</Link>{" ghostHandController"}</code> |
+| <Link id="m-gripanimator" /><code>{"private "}<Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" gripAnimator"}</code> |
+| <Link id="m-grippointsave" /><code>{"private TransformSave gripPointSave"}</code> |
+| <Link id="m-handanimator" /><code>{"private Animator handAnimator"}</code> |
+| <Link id="m-handindex" /><code>{"private "}<Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" handIndex"}</code> |
+| <Link id="m-handtargetsave" /><code>{"private TransformSave handTargetSave"}</code> |
+| <Link id="m-ikhandtarget" /><code>{"private "}<Link to="/game-api/types/alta-player/handtargethandler">{"HandTargetHandler"}</Link>{" ikHandTarget"}</code> |
+| <Link id="m-isnotfixingikhandtopickup" /><code>{"private bool isNotFixingIKHandToPickup"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-masterhand" /><code>{"private "}<Link to="/game-api/types/alta-player/masterhand">{"MasterHand"}</Link>{" masterHand"}</code> |
+| <Link id="m-movedpickupinthisframe" /><code>{"private bool movedPickupInThisFrame"}</code> |
+| <Link id="m-pickupstatebeforephysics" /><code>{"private TransformSave pickupStateBeforePhysics"}</code> |
+| <Link id="m-platform" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" platform"}</code> |
+| <Link id="m-savedcenterofmass" /><code>{"private Vector3 savedCenterOfMass"}</code> |
+| <Link id="m-shakedetector" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/handshakeoffdetector">{"HandShakeOffDetector"}</Link>{" shakeDetector"}</code> |
+
+</details>
 
 ## Properties
 
@@ -76,7 +81,15 @@ One hand of a player's character: links the controller, IK hand target, grip ani
 | <Link id="m-savedhandtargetpoint" /><code>{"TransformSave SavedHandTargetPoint { get; }"}</code> | The IK hand target's transform saved at setup. |
 | <Link id="m-shakedetector-2" /><code><Link to="/game-api/types/alta-stats-effects/handshakeoffdetector">{"HandShakeOffDetector"}</Link>{" ShakeDetector { get; }"}</code> | The shake-off detector for this hand. |
 | <Link id="m-sqrdistancetomasterhand" /><code>{"float SqrDistanceToMasterHand { get; }"}</code> | Squared `DistanceToMasterHand`. A `Lock` uses it to pull a key out. |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/global-e-h/handsettings">{"HandSettings"}</Link>{" Settings { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/global-e-h/handsettings">{"HandSettings"}</Link>{" Settings { get; }"}</code> |
+
+</details>
 
 ## Methods
 
@@ -91,10 +104,18 @@ One hand of a player's character: links the controller, IK hand target, grip ani
 | <Link id="m-offsethandtarget" /><code>{"void OffsetHandTarget(Vector3 worldSpacePosition)"}</code> | Moves the IK hand target to a world position. |
 | <Link id="m-setupwithcontroller" /><code>{"void SetupWithController("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Links the hand to its controller, applies the platform's controller offset, saves the start transforms and hooks grab events. |
 | <Link id="m-updatewithcustomoffset" /><code>{"void UpdateWithCustomOffset(SerializableTransform offset)"}</code> | Reapplies the platform controller offset plus an extra offset. |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-detach" /><code>{"private void Detach("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> | Puts the grip point and IK hand target back where they were saved at setup. |
 | <Link id="m-resetcenterofmass" /><code>{"private void ResetCenterOfMass("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> |  |
 | <Link id="m-setupforplatform" /><code>{"private void SetUpForPlatform()"}</code> |  |
 | <Link id="m-updatecontrolleroffsets" /><code>{"private void UpdateControllerOffsets(SerializableTransform additionalOffset = null)"}</code> |  |
+
+</details>
 
 ## Used in
 

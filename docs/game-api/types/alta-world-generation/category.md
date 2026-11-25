@@ -19,27 +19,32 @@ A **class** in `Root.Township`, `Alta.Loot`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Category()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Category()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-weighting" /><code>{"private float weighting"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-weighting" /><code>{"private float weighting"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-weighting-2" /><code>{"float Weighting { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-weighting-2" /><code>{"float Weighting { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filter" /><code>{"static void Filter(List<"}<Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> entries)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-filter" /><code>{"static void Filter(List<"}<Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> entries)"}</code> |
 
 ## Used in
 

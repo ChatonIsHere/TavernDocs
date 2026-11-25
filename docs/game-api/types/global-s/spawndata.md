@@ -20,15 +20,20 @@ Options passed along when spawning an entity: whether it should run its procedur
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnData("}<Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" biome, bool isGenerating = true, bool isFirstChunkLoad = false)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpawnData("}<Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" biome, bool isGenerating = true, bool isFirstChunkLoad = false)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-empty" /><code>{"private static IEnumerable<string> empty"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-empty" /><code>{"private static IEnumerable<string> empty"}</code> |
+
+</details>
 
 ## Properties
 

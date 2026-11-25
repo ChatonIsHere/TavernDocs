@@ -17,6 +17,6 @@ A **class** in `Root.Township`, `Alta.Caves.Displays`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EmergePoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EmergePoint()"}</code> |

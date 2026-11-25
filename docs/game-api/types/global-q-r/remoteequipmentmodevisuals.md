@@ -17,23 +17,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RemoteEquipmentModeVisuals()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RemoteEquipmentModeVisuals()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-appearscaler" /><code>{"private "}<Link to="/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" appearScaler"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-appearscaler" /><code>{"private "}<Link to="/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" appearScaler"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-makeappear" /><code>{"void MakeAppear()"}</code> |  |
-| <Link id="m-makedissappear" /><code>{"void MakeDissappear()"}</code> |  |
-| <Link id="m-waitfordissapearanimation" /><code>{"private IEnumerator WaitForDissapearAnimation() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-makeappear" /><code>{"void MakeAppear()"}</code> |
+| <Link id="m-makedissappear" /><code>{"void MakeDissappear()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-waitfordissapearanimation" /><code>{"private IEnumerator WaitForDissapearAnimation() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

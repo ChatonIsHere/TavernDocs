@@ -18,28 +18,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TeleportDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TeleportDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-delaybetweenoriginanddestinationvfx" /><code>{"private float delayBetweenOriginAndDestinationVfx"}</code> |  |
-| <Link id="m-teleportdestinationvfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" teleportDestinationVfx"}</code> |  |
-| <Link id="m-teleportmessenger" /><code>{"private "}<Link to="/game-api/types/global-t-x/teleportdefinitionnetworkmessenger">{"TeleportDefinitionNetworkMessenger"}</Link>{" teleportMessenger"}</code> |  |
-| <Link id="m-teleportoriginvfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" teleportOriginVfx"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-delaybetweenoriginanddestinationvfx" /><code>{"private float delayBetweenOriginAndDestinationVfx"}</code> |
+| <Link id="m-teleportdestinationvfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" teleportDestinationVfx"}</code> |
+| <Link id="m-teleportmessenger" /><code>{"private "}<Link to="/game-api/types/global-t-x/teleportdefinitionnetworkmessenger">{"TeleportDefinitionNetworkMessenger"}</Link>{" teleportMessenger"}</code> |
+| <Link id="m-teleportoriginvfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" teleportOriginVfx"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playdestinationvfx" /><code>{"void PlayDestinationVfx(Vector3 position)"}</code> |  |
-| <Link id="m-playoriginvfx" /><code>{"void PlayOriginVfx(Vector3 position)"}</code> |  |
-| <Link id="m-setupdefinition" /><code>{"void SetupDefinition("}<Link to="/game-api/types/global-t-x/teleportdefinitionnetworkmessenger">{"TeleportDefinitionNetworkMessenger"}</Link>{" newTeleportMessenger)"}</code> |  |
-| <Link id="m-teleportplayerandrotateto" /><code>{"async void TeleportPlayerAndRotateTo("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, "}<Link to="/game-api/types/global-p/positionandrotationtarget">{"PositionAndRotationTarget"}</Link>{" target)"}</code> |  |
-| <Link id="m-teleportplayerto" /><code>{"async void TeleportPlayerTo("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Vector3 destinationPosition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-playdestinationvfx" /><code>{"void PlayDestinationVfx(Vector3 position)"}</code> |
+| <Link id="m-playoriginvfx" /><code>{"void PlayOriginVfx(Vector3 position)"}</code> |
+| <Link id="m-setupdefinition" /><code>{"void SetupDefinition("}<Link to="/game-api/types/global-t-x/teleportdefinitionnetworkmessenger">{"TeleportDefinitionNetworkMessenger"}</Link>{" newTeleportMessenger)"}</code> |
+| <Link id="m-teleportplayerandrotateto" /><code>{"async void TeleportPlayerAndRotateTo("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, "}<Link to="/game-api/types/global-p/positionandrotationtarget">{"PositionAndRotationTarget"}</Link>{" target)"}</code> |
+| <Link id="m-teleportplayerto" /><code>{"async void TeleportPlayerTo("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Vector3 destinationPosition)"}</code> |
 
 ## Used in
 

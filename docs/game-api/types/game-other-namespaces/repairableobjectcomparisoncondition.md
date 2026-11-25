@@ -19,28 +19,41 @@ A **class** in `Root.Township`, `Features.Gameplay.GameConditions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RepairableObjectComparisonCondition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RepairableObjectComparisonCondition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> |  |
-| <Link id="m-repairableobjects" /><code>{"private List<"}<Link to="/game-api/types/game-other-namespaces/repairableobject">{"RepairableObject"}</Link>{"> repairableObjects"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> |
+| <Link id="m-repairableobjects" /><code>{"private List<"}<Link to="/game-api/types/game-other-namespaces/repairableobject">{"RepairableObject"}</Link>{"> repairableObjects"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onconditionchanged" /><code>{"Action OnConditionChanged { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onconditionchanged" /><code>{"Action OnConditionChanged { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet()"}</code> |  |
-| <Link id="m-notifyeventlistenersofobjectchange" /><code>{"private void NotifyEventListenersOfObjectChange(uint objectHash, bool isModified)"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-notifyeventlistenersofobjectchange" /><code>{"private void NotifyEventListenersOfObjectChange(uint objectHash, bool isModified)"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+
+</details>

@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EmailVerificationController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EmailVerificationController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-emailverificationpopup" /><code>{"private "}<Link to="/game-api/types/global-p/popupboard">{"PopupBoard"}</Link>{" emailVerificationPopup"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-emailverificationpopup" /><code>{"private "}<Link to="/game-api/types/global-p/popupboard">{"PopupBoard"}</Link>{" emailVerificationPopup"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loggedin" /><code>{"protected override async void LoggedIn()"}</code> |  |
-| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-loggedin" /><code>{"protected override async void LoggedIn()"}</code> |
+| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> |

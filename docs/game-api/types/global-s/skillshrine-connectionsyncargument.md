@@ -17,22 +17,22 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ConnectionSyncArgument()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ConnectionSyncArgument(Dictionary<uint, "}<Link to="/game-api/types/global-s/skillshrine-apliedslottuple">{"SkillShrine.ApliedSlotTuple"}</Link>{"> spawnedOrbs)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConnectionSyncArgument()"}</code> |
+| <Link id="m-ctor-2" /><code>{"ConnectionSyncArgument(Dictionary<uint, "}<Link to="/game-api/types/global-s/skillshrine-apliedslottuple">{"SkillShrine.ApliedSlotTuple"}</Link>{"> spawnedOrbs)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-orbstoconnect" /><code>{"List<uint> OrbsToConnect { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-orbstoconnect" /><code>{"List<uint> OrbsToConnect { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
 
 ## Used in
 

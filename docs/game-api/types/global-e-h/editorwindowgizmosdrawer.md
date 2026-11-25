@@ -17,26 +17,44 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EditorWindowGizmosDrawer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EditorWindowGizmosDrawer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-scenedrawer" /><code>{"private static "}<Link to="/game-api/types/global-e-h/editorwindowgizmosdrawer">{"EditorWindowGizmosDrawer"}</Link>{" sceneDrawer"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-scenedrawer" /><code>{"private static "}<Link to="/game-api/types/global-e-h/editorwindowgizmosdrawer">{"EditorWindowGizmosDrawer"}</Link>{" sceneDrawer"}</code> |
+
+</details>
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gizmoscallback" /><code>{"private static event Action gizmosCallback"}</code> |  |
+<details>
+<summary>1 private and internal event</summary>
+
+| Member |
+| --- |
+| <Link id="m-gizmoscallback" /><code>{"private static event Action gizmosCallback"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deregistercallback" /><code>{"static void DeregisterCallback(Action callback)"}</code> |  |
-| <Link id="m-registercallback" /><code>{"static void RegisterCallback(Action callback)"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deregistercallback" /><code>{"static void DeregisterCallback(Action callback)"}</code> |
+| <Link id="m-registercallback" /><code>{"static void RegisterCallback(Action callback)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+
+</details>

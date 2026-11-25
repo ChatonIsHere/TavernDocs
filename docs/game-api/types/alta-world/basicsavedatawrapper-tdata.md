@@ -16,34 +16,39 @@ A **class** in `Root.Township`, `Alta.Saving`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BasicSaveDataWrapper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BasicSaveDataWrapper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bytedata" /><code>{"private uint[] byteData"}</code> |  |
-| <Link id="m-bytes" /><code>{"private int bytes"}</code> |  |
-| <Link id="m-data" /><code>{"private TData data"}</code> |  |
-| <Link id="m-isserialized" /><code>{"private bool isSerialized"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bytedata" /><code>{"private uint[] byteData"}</code> |
+| <Link id="m-bytes" /><code>{"private int bytes"}</code> |
+| <Link id="m-data" /><code>{"private TData data"}</code> |
+| <Link id="m-isserialized" /><code>{"private bool isSerialized"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data-2" /><code>{"TData Data { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data-2" /><code>{"TData Data { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clone" /><code><Link to="/game-api/types/alta-world/basicsavedatawrapper-tdata">{"BasicSaveDataWrapper"}</Link>{"<TData> Clone()"}</code> |  |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-markmodified" /><code>{"void MarkModified()"}</code> |  |
-| <Link id="m-readfrom" /><code>{"void ReadFrom(BinaryReader binary)"}</code> |  |
-| <Link id="m-writeto" /><code>{"void WriteTo(BinaryWriter binary)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clone" /><code><Link to="/game-api/types/alta-world/basicsavedatawrapper-tdata">{"BasicSaveDataWrapper"}</Link>{"<TData> Clone()"}</code> |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
+| <Link id="m-markmodified" /><code>{"void MarkModified()"}</code> |
+| <Link id="m-readfrom" /><code>{"void ReadFrom(BinaryReader binary)"}</code> |
+| <Link id="m-writeto" /><code>{"void WriteTo(BinaryWriter binary)"}</code> |
 
 ## Used in
 

@@ -16,13 +16,13 @@ A **struct** in `Root.Township`, `Alta.Cooking`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentrecipe" /><code><Link to="/game-api/types/alta-crafting/stewrecipe">{"StewRecipe"}</Link>{" CurrentRecipe { get; set; }"}</code> |  |
-| <Link id="m-garnishes" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/cookinggarnish">{"CookingGarnish"}</Link>{"> Garnishes { get; set; }"}</code> |  |
-| <Link id="m-ingredients" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> Ingredients { get; set; }"}</code> |  |
-| <Link id="m-liquidbase" /><code><Link to="/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" LiquidBase { get; set; }"}</code> |  |
-| <Link id="m-stew" /><code><Link to="/game-api/types/alta-crafting/stewcomponent">{"StewComponent"}</Link>{" Stew { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentrecipe" /><code><Link to="/game-api/types/alta-crafting/stewrecipe">{"StewRecipe"}</Link>{" CurrentRecipe { get; set; }"}</code> |
+| <Link id="m-garnishes" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/cookinggarnish">{"CookingGarnish"}</Link>{"> Garnishes { get; set; }"}</code> |
+| <Link id="m-ingredients" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> Ingredients { get; set; }"}</code> |
+| <Link id="m-liquidbase" /><code><Link to="/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" LiquidBase { get; set; }"}</code> |
+| <Link id="m-stew" /><code><Link to="/game-api/types/alta-crafting/stewcomponent">{"StewComponent"}</Link>{" Stew { get; set; }"}</code> |
 
 ## Used in
 

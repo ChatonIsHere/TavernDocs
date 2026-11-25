@@ -17,22 +17,22 @@ An **interface** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distancedisabled" /><code>{"event Action DistanceDisabled"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-distancedisabled" /><code>{"event Action DistanceDisabled"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-release" /><code>{"void Release()"}</code> |  |
-| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/alta-player/settingsquickaccessmenu">{"SettingsQuickAccessMenu"}</Link>{" settings)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-release" /><code>{"void Release()"}</code> |
+| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/alta-player/settingsquickaccessmenu">{"SettingsQuickAccessMenu"}</Link>{" settings)"}</code> |
 
 ## Used in
 

@@ -18,9 +18,9 @@ A **internal class** in `Alta.Coroutines`, `Alta.Utilities`. Reach it through at
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaCoroutineHandler()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaCoroutineHandler()"}</code> |
 
 ## Used in
 

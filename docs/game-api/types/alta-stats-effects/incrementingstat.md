@@ -22,26 +22,31 @@ Adds `statChangePerSecond` on every incremental tick while the value is above 0.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"IncrementingStat()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"IncrementingStat()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isincrementing" /><code>{"private bool isIncrementing"}</code> |  |
-| <Link id="m-statchangepersecond" /><code>{"private float statChangePerSecond"}</code> |  |
-| <Link id="m-statchangepertick" /><code>{"private float statChangePerTick"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isincrementing" /><code>{"private bool isIncrementing"}</code> |
+| <Link id="m-statchangepersecond" /><code>{"private float statChangePerSecond"}</code> |
+| <Link id="m-statchangepertick" /><code>{"private float statChangePerTick"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isincrementing-2" /><code>{"bool IsIncrementing { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isincrementing-2" /><code>{"bool IsIncrementing { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |

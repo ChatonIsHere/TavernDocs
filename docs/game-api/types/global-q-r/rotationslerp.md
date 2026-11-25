@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RotationSlerp()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RotationSlerp()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-position0" /><code>{"private Vector3 position0"}</code> |  |
-| <Link id="m-position1" /><code>{"private Vector3 position1"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-position0" /><code>{"private Vector3 position0"}</code> |
+| <Link id="m-position1" /><code>{"private Vector3 position1"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setrotation" /><code>{"void SetRotation(float progress)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setrotation" /><code>{"void SetRotation(float progress)"}</code> |

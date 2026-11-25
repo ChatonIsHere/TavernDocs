@@ -21,31 +21,36 @@ A cosmetic part that adds a mesh with its own texture to the character, coloured
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticMeshPartBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CosmeticMeshPartBase()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-androidimpededlods" /><code>{"private Mesh[] androidImpededLods"}</code> |  |
-| <Link id="m-androidlods" /><code>{"private Mesh[] androidLods"}</code> |  |
-| <Link id="m-androidnormal" /><code>{"private Texture2D androidNormal"}</code> |  |
-| <Link id="m-androidtexture" /><code>{"private Texture2D androidTexture"}</code> |  |
-| <Link id="m-copycolorfrom" /><code>{"private "}<Link to="/game-api/types/alta-customization/customizationvisualpart">{"CustomizationVisualPart"}</Link>{" copyColorFrom"}</code> |  |
-| <Link id="m-impededlods" /><code>{"private Mesh[] impededLods"}</code> |  |
-| <Link id="m-isalphablending" /><code>{"private bool isAlphaBlending"}</code> |  |
-| <Link id="m-isalphablendingandroid" /><code>{"private bool isAlphaBlendingAndroid"}</code> |  |
-| <Link id="m-iscolorlocked" /><code>{"private bool isColorLocked"}</code> |  |
-| <Link id="m-isdisabledonandroid" /><code>{"private bool isDisabledOnAndroid"}</code> |  |
-| <Link id="m-isgeneratingbackfaces" /><code>{"private bool isGeneratingBackFaces"}</code> |  |
-| <Link id="m-isshowninfirstperson" /><code>{"private bool isShownInFirstPerson"}</code> |  |
-| <Link id="m-lods" /><code>{"private Mesh[] lods"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-normal" /><code>{"private Texture2D normal"}</code> |  |
-| <Link id="m-originallink" /><code>{"private "}<Link to="/game-api/types/global-e-h/editorlink">{"EditorLink"}</Link>{" originalLink"}</code> |  |
-| <Link id="m-texture" /><code>{"private Texture2D texture"}</code> |  |
+<details>
+<summary>17 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androidimpededlods" /><code>{"private Mesh[] androidImpededLods"}</code> |
+| <Link id="m-androidlods" /><code>{"private Mesh[] androidLods"}</code> |
+| <Link id="m-androidnormal" /><code>{"private Texture2D androidNormal"}</code> |
+| <Link id="m-androidtexture" /><code>{"private Texture2D androidTexture"}</code> |
+| <Link id="m-copycolorfrom" /><code>{"private "}<Link to="/game-api/types/alta-customization/customizationvisualpart">{"CustomizationVisualPart"}</Link>{" copyColorFrom"}</code> |
+| <Link id="m-impededlods" /><code>{"private Mesh[] impededLods"}</code> |
+| <Link id="m-isalphablending" /><code>{"private bool isAlphaBlending"}</code> |
+| <Link id="m-isalphablendingandroid" /><code>{"private bool isAlphaBlendingAndroid"}</code> |
+| <Link id="m-iscolorlocked" /><code>{"private bool isColorLocked"}</code> |
+| <Link id="m-isdisabledonandroid" /><code>{"private bool isDisabledOnAndroid"}</code> |
+| <Link id="m-isgeneratingbackfaces" /><code>{"private bool isGeneratingBackFaces"}</code> |
+| <Link id="m-isshowninfirstperson" /><code>{"private bool isShownInFirstPerson"}</code> |
+| <Link id="m-lods" /><code>{"private Mesh[] lods"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-normal" /><code>{"private Texture2D normal"}</code> |
+| <Link id="m-originallink" /><code>{"private "}<Link to="/game-api/types/global-e-h/editorlink">{"EditorLink"}</Link>{" originalLink"}</code> |
+| <Link id="m-texture" /><code>{"private Texture2D texture"}</code> |
+
+</details>
 
 ## Properties
 
@@ -72,4 +77,12 @@ A cosmetic part that adds a mesh with its own texture to the character, coloured
 | <Link id="m-changearguments" /><code>{"protected override void ChangeArguments("}<Link to="/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{" handler, "}<Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" arguments)"}</code> | Updates the part's colours in the packer and repacks. |
 | <Link id="m-createinput" /><code>{"protected virtual "}<Link to="/game-api/types/alta-customization/cosmeticpacker-input">{"CosmeticPacker.Input"}</Link>{" CreateInput("}<Link to="/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{" handler, "}<Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" arguments)"}</code> | Builds the packer input: part id, colours, first-person visibility, blending and blit materials. |
 | <Link id="m-detach" /><code>{"protected override void Detach("}<Link to="/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{" handler)"}</code> | Removes this part from the packer, cleans its materials and repacks. |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

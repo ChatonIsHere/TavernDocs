@@ -16,17 +16,17 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModInfo(string name, bool isActive)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ModInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModInfo(string name, bool isActive)"}</code> |
+| <Link id="m-ctor-2" /><code>{"ModInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
 
 ## Used in
 

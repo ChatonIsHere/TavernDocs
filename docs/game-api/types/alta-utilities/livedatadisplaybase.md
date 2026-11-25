@@ -20,16 +20,21 @@ Base asset for one line of the live debug data display (a title and a value). Su
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected LiveDataDisplayBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected LiveDataDisplayBase()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-editoronly" /><code>{"private bool editorOnly"}</code> |  |
-| <Link id="m-overridetitle" /><code>{"private string overrideTitle"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-editoronly" /><code>{"private bool editorOnly"}</code> |
+| <Link id="m-overridetitle" /><code>{"private string overrideTitle"}</code> |
+
+</details>
 
 ## Properties
 
@@ -37,8 +42,16 @@ Base asset for one line of the live debug data display (a title and a value). Su
 | --- | --- |
 | <Link id="m-editoronly-2" /><code>{"bool EditorOnly { get; }"}</code> | If true, the line is only valid in the Unity editor. |
 | <Link id="m-output" /><code>{"virtual string Output { get; }"}</code> | The title (or override title), a colon and the value. |
-| <Link id="m-finaltitle" /><code>{"private string FinalTitle { get; }"}</code> |  |
 | <Link id="m-title" /><code>{"protected virtual string Title { get; }"}</code> | Default title, used when no override is set. |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-finaltitle" /><code>{"private string FinalTitle { get; }"}</code> |
+
+</details>
 
 ## Methods
 

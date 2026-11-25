@@ -16,18 +16,18 @@ An **enum** in `Root.Township`, `Alta.Chunks`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dec2022release" /><code>{"Dec2022Release = 239722738"}</code> |  |
-| <Link id="m-finalclimbingorbfixrelease" /><code>{"FinalClimbingOrbFixRelease = 239722737"}</code> |  |
-| <Link id="m-latest" /><code>{"Latest = 239722743"}</code> |  |
-| <Link id="m-questrelease" /><code>{"QuestRelease = 239722735"}</code> |  |
-| <Link id="m-release0151" /><code>{"Release0151 = 239722739"}</code> |  |
-| <Link id="m-release1530" /><code>{"Release1530 = 239722740"}</code> |  |
-| <Link id="m-release1600" /><code>{"Release1600 = 239722741"}</code> |  |
-| <Link id="m-release1700" /><code>{"Release1700 = 239722742"}</code> |  |
-| <Link id="m-release1720" /><code>{"Release1720 = 239722743"}</code> |  |
-| <Link id="m-towerrelease" /><code>{"TowerRelease = 239722736"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dec2022release" /><code>{"Dec2022Release = 239722738"}</code> |
+| <Link id="m-finalclimbingorbfixrelease" /><code>{"FinalClimbingOrbFixRelease = 239722737"}</code> |
+| <Link id="m-latest" /><code>{"Latest = 239722743"}</code> |
+| <Link id="m-questrelease" /><code>{"QuestRelease = 239722735"}</code> |
+| <Link id="m-release0151" /><code>{"Release0151 = 239722739"}</code> |
+| <Link id="m-release1530" /><code>{"Release1530 = 239722740"}</code> |
+| <Link id="m-release1600" /><code>{"Release1600 = 239722741"}</code> |
+| <Link id="m-release1700" /><code>{"Release1700 = 239722742"}</code> |
+| <Link id="m-release1720" /><code>{"Release1720 = 239722743"}</code> |
+| <Link id="m-towerrelease" /><code>{"TowerRelease = 239722736"}</code> |
 
 ## Used in
 

@@ -17,27 +17,37 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimationTrigger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimationTrigger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondisable" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onDisable"}</code> |  |
-| <Link id="m-onenable" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onEnable"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondisable" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onDisable"}</code> |
+| <Link id="m-onenable" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onEnable"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-disabled" /><code><Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" Disabled { get; }"}</code> |  |
-| <Link id="m-enabled" /><code><Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" Enabled { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-disabled" /><code><Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" Disabled { get; }"}</code> |
+| <Link id="m-enabled" /><code><Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" Enabled { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondisable-2" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable-2" /><code>{"private void OnEnable()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondisable-2" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable-2" /><code>{"private void OnEnable()"}</code> |
+
+</details>

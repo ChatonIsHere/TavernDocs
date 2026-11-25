@@ -17,9 +17,9 @@ An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-consumealloculuspurchases" /><code>{"Task<IEnumerable<string>> ConsumeAllOculusPurchases(string userToken)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-consumealloculuspurchases" /><code>{"Task<IEnumerable<string>> ConsumeAllOculusPurchases(string userToken)"}</code> |
 
 ## Used in
 

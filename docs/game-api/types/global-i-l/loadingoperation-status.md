@@ -17,7 +17,7 @@ An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loaded" /><code>{"loaded = 1"}</code> |  |
-| <Link id="m-loading" /><code>{"loading = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-loaded" /><code>{"loaded = 1"}</code> |
+| <Link id="m-loading" /><code>{"loading = 0"}</code> |

@@ -20,22 +20,27 @@ On a stew entity in a cooking pot: its tint and effect multipliers, and its own 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StewComponent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StewComponent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-baseeffectsmultiplier" /><code>{"private float baseEffectsMultiplier"}</code> |  |
-| <Link id="m-baseliquideffectsmultiplier" /><code>{"private float baseLiquidEffectsMultiplier"}</code> |  |
-| <Link id="m-cookable" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookable">{"Cookable"}</Link>{" cookable"}</code> |  |
-| <Link id="m-extraeffectsmultiplier" /><code>{"private float extraEffectsMultiplier"}</code> |  |
-| <Link id="m-isawardingexperiencestage" /><code>{"private bool isAwardingExperienceStage"}</code> |  |
-| <Link id="m-liquidvisualdata" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" liquidVisualData"}</code> |  |
-| <Link id="m-stewcreatedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" stewCreatedEffect"}</code> |  |
-| <Link id="m-tintcolor" /><code>{"private Color tintColor"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-baseeffectsmultiplier" /><code>{"private float baseEffectsMultiplier"}</code> |
+| <Link id="m-baseliquideffectsmultiplier" /><code>{"private float baseLiquidEffectsMultiplier"}</code> |
+| <Link id="m-cookable" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookable">{"Cookable"}</Link>{" cookable"}</code> |
+| <Link id="m-extraeffectsmultiplier" /><code>{"private float extraEffectsMultiplier"}</code> |
+| <Link id="m-isawardingexperiencestage" /><code>{"private bool isAwardingExperienceStage"}</code> |
+| <Link id="m-liquidvisualdata" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" liquidVisualData"}</code> |
+| <Link id="m-stewcreatedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" stewCreatedEffect"}</code> |
+| <Link id="m-tintcolor" /><code>{"private Color tintColor"}</code> |
+
+</details>
 
 ## Properties
 

@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, `Alta.Alchemy`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-challengereposition" /><code>{"ChallengeReposition = 2"}</code> |  |
-| <Link id="m-default" /><code>{"Default = 0"}</code> |  |
-| <Link id="m-potion" /><code>{"Potion = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-challengereposition" /><code>{"ChallengeReposition = 2"}</code> |
+| <Link id="m-default" /><code>{"Default = 0"}</code> |
+| <Link id="m-potion" /><code>{"Potion = 1"}</code> |
 
 ## Used in
 

@@ -20,20 +20,25 @@ A menu orb that runs a set action when the player lets go of it in a valid place
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EventOrb()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EventOrb()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actionorb" /><code>{"private "}<Link to="/game-api/types/global-a-b/actionorb">{"ActionOrb"}</Link>{" actionOrb"}</code> |  |
-| <Link id="m-isinteractiononserver" /><code>{"private bool isInteractionOnServer"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-onreleaseaction" /><code>{"private Action onReleaseAction"}</code> |  |
-| <Link id="m-playercharacter" /><code>{"private "}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter"}</code> |  |
-| <Link id="m-selectionorbposition" /><code>{"private Transform selectionOrbPosition"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-actionorb" /><code>{"private "}<Link to="/game-api/types/global-a-b/actionorb">{"ActionOrb"}</Link>{" actionOrb"}</code> |
+| <Link id="m-isinteractiononserver" /><code>{"private bool isInteractionOnServer"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-onreleaseaction" /><code>{"private Action onReleaseAction"}</code> |
+| <Link id="m-playercharacter" /><code>{"private "}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter"}</code> |
+| <Link id="m-selectionorbposition" /><code>{"private Transform selectionOrbPosition"}</code> |
+
+</details>
 
 ## Properties
 
@@ -48,9 +53,17 @@ A menu orb that runs a set action when the player lets go of it in a valid place
 | <Link id="m-clearreleaseaction" /><code>{"void ClearReleaseAction()"}</code> | Removes the release action and force drops the orb. |
 | <Link id="m-setreleaseaction" /><code>{"void SetReleaseAction(Action action)"}</code> | Sets what runs when the orb is let go. |
 | <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Hooks the orb's let go and grab filter, and sets its home position. |
-| <Link id="m-hasinteractionexception" /><code>{"private bool HasInteractionException()"}</code> |  |
-| <Link id="m-onvalidletgo" /><code>{"private void OnValidLetGo()"}</code> |  |
 | <Link id="m-validatepickupinteraction" /><code>{"protected virtual void ValidatePickupInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> | Blocks grabbing when no release action is set, except on a client when `isInteractionOnServer` is set. |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-hasinteractionexception" /><code>{"private bool HasInteractionException()"}</code> |
+| <Link id="m-onvalidletgo" /><code>{"private void OnValidLetGo()"}</code> |
+
+</details>
 
 ## Used in
 

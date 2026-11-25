@@ -17,16 +17,16 @@ A **class** in `Root.Township`, `Alta.Utilities.Hierarchy`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Pocket()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Pocket()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items" /><code>{"List<Object> items"}</code> |  |
-| <Link id="m-name" /><code>{"string name"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-items" /><code>{"List<Object> items"}</code> |
+| <Link id="m-name" /><code>{"string name"}</code> |
 
 ## Used in
 

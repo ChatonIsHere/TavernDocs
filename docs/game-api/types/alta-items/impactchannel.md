@@ -22,15 +22,20 @@ Asset naming a damage channel that impactors can deal on.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactChannel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactChannel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-popupcolor" /><code>{"private Color popUpColor"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-popupcolor" /><code>{"private Color popUpColor"}</code> |
+
+</details>
 
 ## Properties
 

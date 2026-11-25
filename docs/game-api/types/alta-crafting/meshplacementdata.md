@@ -22,20 +22,25 @@ A saved mesh placement for the Scrapper tool: local transform, mesh and material
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MeshPlacementData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MeshPlacementData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forcedatlasdefinition" /><code>{"private "}<Link to="/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{" forcedAtlasDefinition"}</code> |  |
-| <Link id="m-localeulerangles" /><code>{"private Vector3 localEulerAngles"}</code> |  |
-| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |  |
-| <Link id="m-localscale" /><code>{"private Vector3 localScale"}</code> |  |
-| <Link id="m-sharedmaterial" /><code>{"private Material sharedMaterial"}</code> |  |
-| <Link id="m-sharedmesh" /><code>{"private Mesh sharedMesh"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-forcedatlasdefinition" /><code>{"private "}<Link to="/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{" forcedAtlasDefinition"}</code> |
+| <Link id="m-localeulerangles" /><code>{"private Vector3 localEulerAngles"}</code> |
+| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |
+| <Link id="m-localscale" /><code>{"private Vector3 localScale"}</code> |
+| <Link id="m-sharedmaterial" /><code>{"private Material sharedMaterial"}</code> |
+| <Link id="m-sharedmesh" /><code>{"private Mesh sharedMesh"}</code> |
+
+</details>
 
 ## Properties
 

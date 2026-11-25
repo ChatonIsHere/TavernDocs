@@ -18,21 +18,21 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerUnlockStationSaveDataOld1()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerUnlockStationSaveDataOld1()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ischeckpoint" /><code>{"bool isCheckpoint"}</code> |  |
-| <Link id="m-isreset" /><code>{"bool isReset"}</code> |  |
-| <Link id="m-orbindex" /><code>{"int orbIndex"}</code> |  |
-| <Link id="m-unlock" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ischeckpoint" /><code>{"bool isCheckpoint"}</code> |
+| <Link id="m-isreset" /><code>{"bool isReset"}</code> |
+| <Link id="m-orbindex" /><code>{"int orbIndex"}</code> |
+| <Link id="m-unlock" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

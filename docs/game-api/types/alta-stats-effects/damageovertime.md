@@ -18,18 +18,18 @@ A **class** in `Root.Township`, `Alta.Alchemy`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DamageOverTime(float strength, float frequency)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DamageOverTime(float strength, float frequency)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-strength" /><code>{"float Strength { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-strength" /><code>{"float Strength { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update" /><code>{"override void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"override void Update()"}</code> |

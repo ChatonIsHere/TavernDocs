@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerDebugMessager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerDebugMessager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-displaytype" /><code>{"private "}<Link to="/game-api/types/global-c-d/displaymessagetype">{"DisplayMessageType"}</Link>{" displayType"}</code> |  |
-| <Link id="m-messageduration" /><code>{"private float messageDuration"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-displaytype" /><code>{"private "}<Link to="/game-api/types/global-c-d/displaymessagetype">{"DisplayMessageType"}</Link>{" displayType"}</code> |
+| <Link id="m-messageduration" /><code>{"private float messageDuration"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-displaymessage" /><code>{"void DisplayMessage(string message)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-displaymessage" /><code>{"void DisplayMessage(string message)"}</code> |

@@ -16,21 +16,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SceneCubeMaps()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SceneCubeMaps()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cubemaps" /><code>{"private AssetReference[] cubemaps"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-cubemaps" /><code>{"private AssetReference[] cubemaps"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cubemaps-2" /><code>{"AssetReference[] Cubemaps { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cubemaps-2" /><code>{"AssetReference[] Cubemaps { get; }"}</code> |
 
 ## Used in
 

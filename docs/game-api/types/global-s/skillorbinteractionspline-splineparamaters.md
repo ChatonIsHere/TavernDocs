@@ -17,9 +17,9 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enteritem" /><code>{"EnterItem = 3"}</code> |  |
-| <Link id="m-enterwrist" /><code>{"EnterWrist = 1"}</code> |  |
-| <Link id="m-leaveelbow" /><code>{"LeaveElbow = 0"}</code> |  |
-| <Link id="m-leavewrist" /><code>{"LeaveWrist = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-enteritem" /><code>{"EnterItem = 3"}</code> |
+| <Link id="m-enterwrist" /><code>{"EnterWrist = 1"}</code> |
+| <Link id="m-leaveelbow" /><code>{"LeaveElbow = 0"}</code> |
+| <Link id="m-leavewrist" /><code>{"LeaveWrist = 2"}</code> |

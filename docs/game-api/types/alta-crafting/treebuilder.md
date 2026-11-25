@@ -18,20 +18,25 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TreeBuilder()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TreeBuilder()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-preset" /><code>{"private "}<Link to="/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" preset"}</code> |  |
-| <Link id="m-selected" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" selected"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-preset" /><code>{"private "}<Link to="/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" preset"}</code> |
+| <Link id="m-selected" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" selected"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-preset-2" /><code><Link to="/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" Preset { get; set; }"}</code> |  |
-| <Link id="m-selected-2" /><code><Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" Selected { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-preset-2" /><code><Link to="/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" Preset { get; set; }"}</code> |
+| <Link id="m-selected-2" /><code><Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" Selected { get; set; }"}</code> |

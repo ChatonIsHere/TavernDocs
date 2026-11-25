@@ -17,42 +17,47 @@ A **class** in `Root.Township`, `ATT.Respawn`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RespawnShrineData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RespawnShrineData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-beaconposition" /><code>{"private Vector3 beaconPosition"}</code> |  |
-| <Link id="m-beaconprefabdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" beaconPrefabDefinition"}</code> |  |
-| <Link id="m-fuelconsumedperhour" /><code>{"private float fuelConsumedPerHour"}</code> |  |
-| <Link id="m-guid" /><code>{"private string guid"}</code> |  |
-| <Link id="m-isglobalrespawnshrine" /><code>{"private bool isGlobalRespawnShrine"}</code> |  |
-| <Link id="m-maximumfuelcapacity" /><code>{"private int maximumFuelCapacity"}</code> |  |
-| <Link id="m-resourcetype" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" resourceType"}</code> |  |
-| <Link id="m-shrineid" /><code>{"private Guid shrineId"}</code> |  |
-| <Link id="m-spawnposition" /><code>{"private Vector3 spawnPosition"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-beaconposition" /><code>{"private Vector3 beaconPosition"}</code> |
+| <Link id="m-beaconprefabdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" beaconPrefabDefinition"}</code> |
+| <Link id="m-fuelconsumedperhour" /><code>{"private float fuelConsumedPerHour"}</code> |
+| <Link id="m-guid" /><code>{"private string guid"}</code> |
+| <Link id="m-isglobalrespawnshrine" /><code>{"private bool isGlobalRespawnShrine"}</code> |
+| <Link id="m-maximumfuelcapacity" /><code>{"private int maximumFuelCapacity"}</code> |
+| <Link id="m-resourcetype" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" resourceType"}</code> |
+| <Link id="m-shrineid" /><code>{"private Guid shrineId"}</code> |
+| <Link id="m-spawnposition" /><code>{"private Vector3 spawnPosition"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-beaconposition-2" /><code>{"Vector3 BeaconPosition { get; }"}</code> |  |
-| <Link id="m-beaconprefabdefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" BeaconPrefabDefinition { get; }"}</code> |  |
-| <Link id="m-fuelconsumedperhour-2" /><code>{"float FuelConsumedPerHour { get; }"}</code> |  |
-| <Link id="m-isglobalrespawnshrine-2" /><code>{"bool IsGlobalRespawnShrine { get; }"}</code> |  |
-| <Link id="m-maxfuelcapacity" /><code>{"int MaxFuelCapacity { get; }"}</code> |  |
-| <Link id="m-resourcetype-2" /><code><Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" ResourceType { get; }"}</code> |  |
-| <Link id="m-shrineid-2" /><code>{"Guid ShrineId { get; }"}</code> |  |
-| <Link id="m-spawnposition-2" /><code>{"Vector3 SpawnPosition { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-beaconposition-2" /><code>{"Vector3 BeaconPosition { get; }"}</code> |
+| <Link id="m-beaconprefabdefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" BeaconPrefabDefinition { get; }"}</code> |
+| <Link id="m-fuelconsumedperhour-2" /><code>{"float FuelConsumedPerHour { get; }"}</code> |
+| <Link id="m-isglobalrespawnshrine-2" /><code>{"bool IsGlobalRespawnShrine { get; }"}</code> |
+| <Link id="m-maxfuelcapacity" /><code>{"int MaxFuelCapacity { get; }"}</code> |
+| <Link id="m-resourcetype-2" /><code><Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" ResourceType { get; }"}</code> |
+| <Link id="m-shrineid-2" /><code>{"Guid ShrineId { get; }"}</code> |
+| <Link id="m-spawnposition-2" /><code>{"Vector3 SpawnPosition { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getresourcetypehash" /><code>{"uint GetResourceTypeHash()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getresourcetypehash" /><code>{"uint GetResourceTypeHash()"}</code> |
 
 ## Used in
 

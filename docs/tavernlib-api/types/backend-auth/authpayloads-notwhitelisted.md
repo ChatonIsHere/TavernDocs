@@ -21,7 +21,12 @@ Status `not_whitelisted`, with the message `Not Whitelisted`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-message" /><code>{"private string Message { get; }"}</code> |  |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> |  |
+<details>
+<summary>2 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-message" /><code>{"private string Message { get; }"}</code> |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> |
+
+</details>

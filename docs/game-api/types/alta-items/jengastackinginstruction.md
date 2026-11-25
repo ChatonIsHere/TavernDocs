@@ -19,31 +19,36 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JengaStackingInstruction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JengaStackingInstruction()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bounds" /><code>{"private Bounds bounds"}</code> |  |
-| <Link id="m-defaultrotation" /><code>{"private Quaternion defaultRotation"}</code> |  |
-| <Link id="m-isrotatedbase" /><code>{"private bool isRotatedBase"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bounds" /><code>{"private Bounds bounds"}</code> |
+| <Link id="m-defaultrotation" /><code>{"private Quaternion defaultRotation"}</code> |
+| <Link id="m-isrotatedbase" /><code>{"private bool isRotatedBase"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bounds-2" /><code>{"Bounds Bounds { get; }"}</code> |  |
-| <Link id="m-defaultrotation-2" /><code>{"Quaternion DefaultRotation { get; }"}</code> |  |
-| <Link id="m-isrotatedbase-2" /><code>{"bool IsRotatedBase { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bounds-2" /><code>{"Bounds Bounds { get; }"}</code> |
+| <Link id="m-defaultrotation-2" /><code>{"Quaternion DefaultRotation { get; }"}</code> |
+| <Link id="m-isrotatedbase-2" /><code>{"bool IsRotatedBase { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-drawgizmos" /><code>{"override void DrawGizmos(Transform transform)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-drawgizmos" /><code>{"override void DrawGizmos(Transform transform)"}</code> |
 
 ## Used in
 

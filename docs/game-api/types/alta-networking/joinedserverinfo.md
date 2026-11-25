@@ -19,18 +19,23 @@ Client: the server you are joined to, sent by the server in `ConfirmJoinMessage`
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JoinedServerInfo("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" serverInfo)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"JoinedServerInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JoinedServerInfo("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" serverInfo)"}</code> |
+| <Link id="m-ctor-2" /><code>{"JoinedServerInfo()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-identifier" /><code>{"private int identifier"}</code> |  |
-| <Link id="m-ispublicserver" /><code>{"private bool isPublicServer"}</code> |  |
-| <Link id="m-name" /><code>{"private string name"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-identifier" /><code>{"private int identifier"}</code> |
+| <Link id="m-ispublicserver" /><code>{"private bool isPublicServer"}</code> |
+| <Link id="m-name" /><code>{"private string name"}</code> |
+
+</details>
 
 ## Properties
 

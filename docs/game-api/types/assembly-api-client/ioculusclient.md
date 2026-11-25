@@ -17,12 +17,12 @@ An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getlinkedaccount" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> GetLinkedAccount(ulong oculusId, string oculusToken)"}</code> |  |
-| <Link id="m-haslinkedaccount" /><code>{"Task<bool> HasLinkedAccount(ulong oculusId, string oculusToken, ulong altaId)"}</code> |  |
-| <Link id="m-linkloggedinaccount" /><code>{"Task LinkLoggedInAccount(ulong oculusId, string oculusToken)"}</code> |  |
-| <Link id="m-unlinkloggedinaccount" /><code>{"Task UnlinkLoggedInAccount(ulong altaId)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getlinkedaccount" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> GetLinkedAccount(ulong oculusId, string oculusToken)"}</code> |
+| <Link id="m-haslinkedaccount" /><code>{"Task<bool> HasLinkedAccount(ulong oculusId, string oculusToken, ulong altaId)"}</code> |
+| <Link id="m-linkloggedinaccount" /><code>{"Task LinkLoggedInAccount(ulong oculusId, string oculusToken)"}</code> |
+| <Link id="m-unlinkloggedinaccount" /><code>{"Task UnlinkLoggedInAccount(ulong altaId)"}</code> |
 
 ## Used in
 

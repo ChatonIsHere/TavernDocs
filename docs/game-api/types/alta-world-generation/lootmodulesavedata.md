@@ -19,17 +19,17 @@ A **internal class** in `Root.Township`, `Alta.Loot`. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LootModuleSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LootModuleSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-biome" /><code><Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" biome"}</code> |  |
-| <Link id="m-incrementingfailchance" /><code>{"float incrementingFailChance"}</code> |  |
-| <Link id="m-isoneoff" /><code>{"bool isOneOff"}</code> |  |
-| <Link id="m-prosperity" /><code>{"float prosperity"}</code> |  |
-| <Link id="m-respawnfrequency" /><code>{"float respawnFrequency"}</code> |  |
-| <Link id="m-waittorefill" /><code>{"TimeSpan waitToRefill"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-biome" /><code><Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" biome"}</code> |
+| <Link id="m-incrementingfailchance" /><code>{"float incrementingFailChance"}</code> |
+| <Link id="m-isoneoff" /><code>{"bool isOneOff"}</code> |
+| <Link id="m-prosperity" /><code>{"float prosperity"}</code> |
+| <Link id="m-respawnfrequency" /><code>{"float respawnFrequency"}</code> |
+| <Link id="m-waittorefill" /><code>{"TimeSpan waitToRefill"}</code> |

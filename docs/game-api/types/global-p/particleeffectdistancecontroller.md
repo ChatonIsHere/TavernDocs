@@ -18,34 +18,44 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ParticleEffectDistanceController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ParticleEffectDistanceController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-evaluatorcount" /><code>{"private int evaluatorCount"}</code> |  |
-| <Link id="m-evaluators" /><code>{"private "}<Link to="/game-api/types/global-p/particleeffectdistancecontroller-particlesystemevaluator">{"ParticleEffectDistanceController.ParticleSystemEvaluator"}</Link>{"[] evaluators"}</code> |  |
-| <Link id="m-framecount" /><code>{"private int frameCount"}</code> |  |
-| <Link id="m-maxdistancesquared" /><code>{"private float maxDistanceSquared"}</code> |  |
-| <Link id="m-remaininglifetimewhenfar" /><code>{"private float remainingLifetimeWhenFar"}</code> |  |
-| <Link id="m-updateframecount" /><code>{"private int updateFrameCount"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-evaluatorcount" /><code>{"private int evaluatorCount"}</code> |
+| <Link id="m-evaluators" /><code>{"private "}<Link to="/game-api/types/global-p/particleeffectdistancecontroller-particlesystemevaluator">{"ParticleEffectDistanceController.ParticleSystemEvaluator"}</Link>{"[] evaluators"}</code> |
+| <Link id="m-framecount" /><code>{"private int frameCount"}</code> |
+| <Link id="m-maxdistancesquared" /><code>{"private float maxDistanceSquared"}</code> |
+| <Link id="m-remaininglifetimewhenfar" /><code>{"private float remainingLifetimeWhenFar"}</code> |
+| <Link id="m-updateframecount" /><code>{"private int updateFrameCount"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-remaininglifetimewhenfar-2" /><code>{"float RemainingLifetimeWhenFar { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-remaininglifetimewhenfar-2" /><code>{"float RemainingLifetimeWhenFar { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+
+</details>
 
 ## Used in
 

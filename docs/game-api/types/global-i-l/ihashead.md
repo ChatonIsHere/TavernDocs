@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-head" /><code>{"Transform Head { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-head" /><code>{"Transform Head { get; }"}</code> |

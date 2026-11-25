@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-seek" /><code>{"static bool Seek(Event soundEvent, GameObject gameObject, float timePercentage)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-seek" /><code>{"static bool Seek(Event soundEvent, GameObject gameObject, float timePercentage)"}</code> |

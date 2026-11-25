@@ -16,24 +16,37 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BubbleInspector()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BubbleInspector()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-inspectors" /><code>{"private static Dictionary<Type, "}<Link to="/game-api/types/global-c-d/componentinspector">{"ComponentInspector"}</Link>{"> inspectors"}</code> |  |
-| <Link id="m-lastspawned" /><code>{"private static List<"}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{"> lastSpawned"}</code> |  |
-| <Link id="m-tospawn" /><code>{"private static Dictionary<Component, "}<Link to="/game-api/types/global-c-d/componentinspector">{"ComponentInspector"}</Link>{"> toSpawn"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-inspectors" /><code>{"private static Dictionary<Type, "}<Link to="/game-api/types/global-c-d/componentinspector">{"ComponentInspector"}</Link>{"> inspectors"}</code> |
+| <Link id="m-lastspawned" /><code>{"private static List<"}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{"> lastSpawned"}</code> |
+| <Link id="m-tospawn" /><code>{"private static Dictionary<Component, "}<Link to="/game-api/types/global-c-d/componentinspector">{"ComponentInspector"}</Link>{"> toSpawn"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-calculateanglespread" /><code>{"static void CalculateAngleSpread(int count, out float step, out float angle)"}</code> |  |
-| <Link id="m-calculateaxis" /><code>{"static Vector3 CalculateAxis(Transform baseTransform)"}</code> |  |
-| <Link id="m-evaluate" /><code>{"static void Evaluate("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> |  |
-| <Link id="m-evaluatecomponent" /><code>{"private static void EvaluateComponent(MonoBehaviour component)"}</code> |  |
-| <Link id="m-recursiveevaluate" /><code>{"private static void RecursiveEvaluate(GameObject evaluate)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-calculateanglespread" /><code>{"static void CalculateAngleSpread(int count, out float step, out float angle)"}</code> |
+| <Link id="m-calculateaxis" /><code>{"static Vector3 CalculateAxis(Transform baseTransform)"}</code> |
+| <Link id="m-evaluate" /><code>{"static void Evaluate("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-evaluatecomponent" /><code>{"private static void EvaluateComponent(MonoBehaviour component)"}</code> |
+| <Link id="m-recursiveevaluate" /><code>{"private static void RecursiveEvaluate(GameObject evaluate)"}</code> |
+
+</details>

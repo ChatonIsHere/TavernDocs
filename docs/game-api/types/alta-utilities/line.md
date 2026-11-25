@@ -16,16 +16,16 @@ A **struct** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Line(Vector3 from, Vector3 to)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Line(Vector3 from, Vector3 to)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-from" /><code>{"Vector3 From { get; }"}</code> |  |
-| <Link id="m-to" /><code>{"Vector3 To { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-from" /><code>{"Vector3 From { get; }"}</code> |
+| <Link id="m-to" /><code>{"Vector3 To { get; }"}</code> |
 
 ## Used in
 

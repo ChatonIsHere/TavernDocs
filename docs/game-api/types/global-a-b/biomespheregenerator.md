@@ -17,28 +17,41 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BiomeSphereGenerator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BiomeSphereGenerator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distribution" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> |  |
-| <Link id="m-last" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" last"}</code> |  |
-| <Link id="m-maxcompetitionscore" /><code>{"private float maxCompetitionScore"}</code> |  |
-| <Link id="m-nodetoattemptratio" /><code>{"private float nodeToAttemptRatio"}</code> |  |
-| <Link id="m-spheres" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomesphere">{"BiomeSphere"}</Link>{"[] spheres"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-distribution" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> |
+| <Link id="m-last" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" last"}</code> |
+| <Link id="m-maxcompetitionscore" /><code>{"private float maxCompetitionScore"}</code> |
+| <Link id="m-nodetoattemptratio" /><code>{"private float nodeToAttemptRatio"}</code> |
+| <Link id="m-spheres" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomesphere">{"BiomeSphere"}</Link>{"[] spheres"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-finishinitialize" /><code>{"override Task FinishInitialize()"}</code> |  |
-| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> |  |
-| <Link id="m-regenerate" /><code>{"void Regenerate()"}</code> |  |
-| <Link id="m-awake" /><code>{"private async void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-finishinitialize" /><code>{"override Task FinishInitialize()"}</code> |
+| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> |
+| <Link id="m-regenerate" /><code>{"void Regenerate()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private async void Awake()"}</code> |
+
+</details>
 
 ## Used in
 

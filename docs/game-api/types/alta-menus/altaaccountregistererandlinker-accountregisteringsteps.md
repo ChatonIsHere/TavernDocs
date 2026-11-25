@@ -17,12 +17,12 @@ An **private enum** in `Root.Township`, `Alta.OculusLogin`. Reach it through att
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-confirmpassword" /><code>{"confirmPassword = 3"}</code> |  |
-| <Link id="m-email" /><code>{"email = 1"}</code> |  |
-| <Link id="m-password" /><code>{"password = 2"}</code> |  |
-| <Link id="m-username" /><code>{"username = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-confirmpassword" /><code>{"confirmPassword = 3"}</code> |
+| <Link id="m-email" /><code>{"email = 1"}</code> |
+| <Link id="m-password" /><code>{"password = 2"}</code> |
+| <Link id="m-username" /><code>{"username = 0"}</code> |
 
 ## Used in
 

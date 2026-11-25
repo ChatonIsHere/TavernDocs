@@ -16,15 +16,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameHomeConfiguration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameHomeConfiguration()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-elements" /><code><Link to="/game-api/types/assembly-api-models/homeelement">{"HomeElement"}</Link>{"[] Elements { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-elements" /><code><Link to="/game-api/types/assembly-api-models/homeelement">{"HomeElement"}</Link>{"[] Elements { get; set; }"}</code> |
 
 ## Used in
 

@@ -17,22 +17,22 @@ A **class** in `Root.Township`, `UnityEngine.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CustomOutline()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CustomOutline()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-glintcolor" /><code>{"Color glintColor"}</code> |  |
-| <Link id="m-glinteffect" /><code>{"bool glintEffect"}</code> |  |
-| <Link id="m-glintvertex" /><code>{"int glintVertex"}</code> |  |
-| <Link id="m-glintwidth" /><code>{"int glintWidth"}</code> |  |
-| <Link id="m-m-size" /><code>{"float m_size"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-glintcolor" /><code>{"Color glintColor"}</code> |
+| <Link id="m-glinteffect" /><code>{"bool glintEffect"}</code> |
+| <Link id="m-glintvertex" /><code>{"int glintVertex"}</code> |
+| <Link id="m-glintwidth" /><code>{"int glintWidth"}</code> |
+| <Link id="m-m-size" /><code>{"float m_size"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modifymesh" /><code>{"override void ModifyMesh(VertexHelper vh)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modifymesh" /><code>{"override void ModifyMesh(VertexHelper vh)"}</code> |

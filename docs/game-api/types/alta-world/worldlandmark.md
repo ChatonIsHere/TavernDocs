@@ -20,22 +20,27 @@ An asset for a large landmark prefab that's loaded through Addressables while ce
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WorldLandmark()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WorldLandmark()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> |  |
-| <Link id="m-load" /><code>{"private AsyncOperationHandle<GameObject> load"}</code> |  |
-| <Link id="m-loadedchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunkreference">{"ChunkReference"}</Link>{"[] loadedChunks"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-prefab" /><code>{"private AssetReference prefab"}</code> |  |
-| <Link id="m-sceneloadedchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"[] sceneLoadedChunks"}</code> |  |
-| <Link id="m-scenestaticchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"[] sceneStaticChunks"}</code> |  |
-| <Link id="m-staticchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunkreference">{"ChunkReference"}</Link>{"[] staticChunks"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> |
+| <Link id="m-load" /><code>{"private AsyncOperationHandle<GameObject> load"}</code> |
+| <Link id="m-loadedchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunkreference">{"ChunkReference"}</Link>{"[] loadedChunks"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-prefab" /><code>{"private AssetReference prefab"}</code> |
+| <Link id="m-sceneloadedchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"[] sceneLoadedChunks"}</code> |
+| <Link id="m-scenestaticchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"[] sceneStaticChunks"}</code> |
+| <Link id="m-staticchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunkreference">{"ChunkReference"}</Link>{"[] staticChunks"}</code> |
+
+</details>
 
 ## Properties
 
@@ -58,9 +63,17 @@ An asset for a large landmark prefab that's loaded through Addressables while ce
 | <Link id="m-resetreferences" /><code>{"void ResetReferences()"}</code> | Destroys the spawned prefab, releases the asset and drops the load handle. |
 | <Link id="m-resolvechunkreferences" /><code>{"void ResolveChunkReferences()"}</code> | Turns the chunk references into scene chunks, skipping missing ones. |
 | <Link id="m-unload" /><code>{"void Unload()"}</code> | Destroys the spawned prefab and releases the asset. |
-| <Link id="m-loadcomplete" /><code>{"private void LoadComplete(AsyncOperationHandle<GameObject> spawned)"}</code> |  |
 | <Link id="m-onloadcompleted" /><code>{"protected virtual void OnLoadCompleted(GameObject spawnedPrefab)"}</code> | Override hook, called with the spawned prefab after loading. |
 | <Link id="m-onunloadcompleted" /><code>{"protected virtual void OnUnloadCompleted()"}</code> | Override hook, called after unloading. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-loadcomplete" /><code>{"private void LoadComplete(AsyncOperationHandle<GameObject> spawned)"}</code> |
+
+</details>
 
 ## Used in
 

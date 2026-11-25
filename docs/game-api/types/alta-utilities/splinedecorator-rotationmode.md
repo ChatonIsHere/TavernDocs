@@ -17,12 +17,12 @@ An **enum** in `Root.Township`, `Alta.Bezier`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-look" /><code>{"Look = 1"}</code> |  |
-| <Link id="m-looky" /><code>{"LookY = 2"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-terrain" /><code>{"Terrain = 3"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-look" /><code>{"Look = 1"}</code> |
+| <Link id="m-looky" /><code>{"LookY = 2"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-terrain" /><code>{"Terrain = 3"}</code> |
 
 ## Used in
 

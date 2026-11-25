@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, `Alta.QuickAccessActions`. Reach it thr
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-scaler" /><code>{"float scaler"}</code> |  |
-| <Link id="m-settingtype" /><code><Link to="/game-api/types/alta-utilities/settingtype">{"SettingType"}</Link>{" settingType"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-scaler" /><code>{"float scaler"}</code> |
+| <Link id="m-settingtype" /><code><Link to="/game-api/types/alta-utilities/settingtype">{"SettingType"}</Link>{" settingType"}</code> |
 
 ## Used in
 

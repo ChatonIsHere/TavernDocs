@@ -23,18 +23,23 @@ Asset that records a tree's full shape (each trunk or branch piece, how they con
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PresetTree()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PresetTree()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-size" /><code>{"private "}<Link to="/game-api/types/alta-crafting/treesize">{"TreeSize"}</Link>{" size"}</code> |  |
-| <Link id="m-species" /><code>{"private "}<Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{"[] species"}</code> |  |
-| <Link id="m-steps" /><code>{"private List<"}<Link to="/game-api/types/alta-crafting/presettree-step">{"PresetTree.Step"}</Link>{"> steps"}</code> |  |
-| <Link id="m-workingwithtree" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" workingWithTree"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-size" /><code>{"private "}<Link to="/game-api/types/alta-crafting/treesize">{"TreeSize"}</Link>{" size"}</code> |
+| <Link id="m-species" /><code>{"private "}<Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{"[] species"}</code> |
+| <Link id="m-steps" /><code>{"private List<"}<Link to="/game-api/types/alta-crafting/presettree-step">{"PresetTree.Step"}</Link>{"> steps"}</code> |
+| <Link id="m-workingwithtree" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" workingWithTree"}</code> |
+
+</details>
 
 ## Properties
 
@@ -52,11 +57,19 @@ Asset that records a tree's full shape (each trunk or branch piece, how they con
 | <Link id="m-generateruntimetreeonexisting" /><code>{"void GenerateRunTimeTreeOnExisting("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree)"}</code> | Server: builds the recorded pieces onto an existing tree entity and initializes it. |
 | <Link id="m-generateruntimetreewithoutparent" /><code><Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" GenerateRunTimeTreeWithoutParent("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" treePrefab, "}<Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species, Vector3 position, Quaternion rotation, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Server: spawns a tree prefab of a species at a world position in a chunk. |
 | <Link id="m-savefrom" /><code>{"void SaveFrom("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree)"}</code> | Marks a tree to record. Its shape is written into the asset when Unity next serializes it. |
-| <Link id="m-handleeditorstep" /><code>{"private void HandleEditorStep("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree, "}<Link to="/game-api/types/alta-crafting/presettree-step">{"PresetTree.Step"}</Link>{" step, "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" parent)"}</code> |  |
-| <Link id="m-handlestep" /><code>{"private void HandleStep("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree, "}<Link to="/game-api/types/alta-crafting/presettree-step">{"PresetTree.Step"}</Link>{" step, "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" parent)"}</code> |  |
-| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> |  |
-| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> |  |
-| <Link id="m-spawnandinitwoodcuttree" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" SpawnAndInitWoodcutTree("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" treePrefab, "}<Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species)"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-handleeditorstep" /><code>{"private void HandleEditorStep("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree, "}<Link to="/game-api/types/alta-crafting/presettree-step">{"PresetTree.Step"}</Link>{" step, "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" parent)"}</code> |
+| <Link id="m-handlestep" /><code>{"private void HandleStep("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree, "}<Link to="/game-api/types/alta-crafting/presettree-step">{"PresetTree.Step"}</Link>{" step, "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" parent)"}</code> |
+| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> |
+| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> |
+| <Link id="m-spawnandinitwoodcuttree" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" SpawnAndInitWoodcutTree("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" treePrefab, "}<Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species)"}</code> |
+
+</details>
 
 ## Used in
 

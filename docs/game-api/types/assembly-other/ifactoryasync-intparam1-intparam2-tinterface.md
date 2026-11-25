@@ -18,6 +18,6 @@ An **interface** in `Alta.VContainerLayer.Runtime`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-create" /><code>{"Task<TInterface> Create(TParam1 param1, TParam2 param2)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-create" /><code>{"Task<TInterface> Create(TParam1 param1, TParam2 param2)"}</code> |

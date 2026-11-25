@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.Logic`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-attemptlink" /><code>{"bool AttemptLink("}<Link to="/game-api/types/alta-items/logicvaluesender">{"LogicValueSender"}</Link>{" sender)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-attemptlink" /><code>{"bool AttemptLink("}<Link to="/game-api/types/alta-items/logicvaluesender">{"LogicValueSender"}</Link>{" sender)"}</code> |

@@ -17,6 +17,6 @@ An **interface** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addproperty" /><code>{"void AddProperty(string name, object value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addproperty" /><code>{"void AddProperty(string name, object value)"}</code> |

@@ -18,15 +18,15 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerKilledData("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" killedPlayer, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerKilledData("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" killedPlayer, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-killedplayer" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" killedPlayer"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-killedplayer" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" killedPlayer"}</code> |
 
 ## Used in
 

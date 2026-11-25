@@ -17,7 +17,7 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-writecsvline" /><code>{"static void WriteCsvLine(StreamWriter writer, params object[] parts)"}</code> |  |
-| <Link id="m-writecsvline-2" /><code>{"static void WriteCsvLine(StringBuilder writer, params object[] parts)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-writecsvline" /><code>{"static void WriteCsvLine(StreamWriter writer, params object[] parts)"}</code> |
+| <Link id="m-writecsvline-2" /><code>{"static void WriteCsvLine(StringBuilder writer, params object[] parts)"}</code> |

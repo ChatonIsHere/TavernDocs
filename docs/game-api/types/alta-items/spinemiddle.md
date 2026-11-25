@@ -19,9 +19,9 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpineMiddle()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpineMiddle()"}</code> |
 
 ## Used in
 

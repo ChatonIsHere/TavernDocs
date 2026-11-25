@@ -17,31 +17,44 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpineIKHelper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpineIKHelper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isautofillingspinebones" /><code>{"private bool isAutoFillingSpineBones"}</code> |  |
-| <Link id="m-issettingupik" /><code>{"private bool isSettingUpIK"}</code> |  |
-| <Link id="m-spineboneroot" /><code>{"private Transform spineBoneRoot"}</code> |  |
-| <Link id="m-spinebones" /><code>{"private List<"}<Link to="/game-api/types/alta-player/bonewithrotationlimit">{"BoneWithRotationLimit"}</Link>{"> spineBones"}</code> |  |
-| <Link id="m-spineik" /><code>{"private FABRIK spineIK"}</code> |  |
-| <Link id="m-spinetarget" /><code>{"private Transform spineTarget"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isautofillingspinebones" /><code>{"private bool isAutoFillingSpineBones"}</code> |
+| <Link id="m-issettingupik" /><code>{"private bool isSettingUpIK"}</code> |
+| <Link id="m-spineboneroot" /><code>{"private Transform spineBoneRoot"}</code> |
+| <Link id="m-spinebones" /><code>{"private List<"}<Link to="/game-api/types/alta-player/bonewithrotationlimit">{"BoneWithRotationLimit"}</Link>{"> spineBones"}</code> |
+| <Link id="m-spineik" /><code>{"private FABRIK spineIK"}</code> |
+| <Link id="m-spinetarget" /><code>{"private Transform spineTarget"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spineboneroot-2" /><code>{"Transform SpineBoneRoot { set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-spineboneroot-2" /><code>{"Transform SpineBoneRoot { set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fillreferencesfromroot" /><code>{"void FillReferencesFromRoot()"}</code> |  |
-| <Link id="m-setupikbones" /><code>{"void SetupIKBones()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fillreferencesfromroot" /><code>{"void FillReferencesFromRoot()"}</code> |
+| <Link id="m-setupikbones" /><code>{"void SetupIKBones()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

@@ -18,13 +18,21 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AlphanumComparator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AlphanumComparator()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-compare" /><code>{"int Compare(object x, object y)"}</code> |  |
-| <Link id="m-inchunk" /><code>{"private bool InChunk(char ch, char otherCh)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-compare" /><code>{"int Compare(object x, object y)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-inchunk" /><code>{"private bool InChunk(char ch, char otherCh)"}</code> |
+
+</details>

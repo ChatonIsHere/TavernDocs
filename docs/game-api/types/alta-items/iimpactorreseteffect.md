@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, `Alta.Impact`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reseteffect" /><code>{"void ResetEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-reseteffect" /><code>{"void ResetEffect()"}</code> |
 
 ## Used in
 

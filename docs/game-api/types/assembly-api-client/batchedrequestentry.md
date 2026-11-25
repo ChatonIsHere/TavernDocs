@@ -16,16 +16,16 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.LowLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BatchedRequestEntry()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BatchedRequestEntry()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code>{"object Data { get; set; }"}</code> |  |
-| <Link id="m-uri" /><code>{"string Uri { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data" /><code>{"object Data { get; set; }"}</code> |
+| <Link id="m-uri" /><code>{"string Uri { get; set; }"}</code> |
 
 ## Used in
 

@@ -16,7 +16,7 @@ A **static class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModel
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getrolesfromidentitytoken" /><code>{"static "}<Link to="/game-api/types/assembly-api-models/userroles">{"UserRoles"}</Link>{" GetRolesFromIdentityToken(string identityToken)"}</code> |  |
-| <Link id="m-getrolesfromidentitytoken-2" /><code>{"static "}<Link to="/game-api/types/assembly-api-models/userroles">{"UserRoles"}</Link>{" GetRolesFromIdentityToken(JwtSecurityToken identityToken)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getrolesfromidentitytoken" /><code>{"static "}<Link to="/game-api/types/assembly-api-models/userroles">{"UserRoles"}</Link>{" GetRolesFromIdentityToken(string identityToken)"}</code> |
+| <Link id="m-getrolesfromidentitytoken-2" /><code>{"static "}<Link to="/game-api/types/assembly-api-models/userroles">{"UserRoles"}</Link>{" GetRolesFromIdentityToken(JwtSecurityToken identityToken)"}</code> |

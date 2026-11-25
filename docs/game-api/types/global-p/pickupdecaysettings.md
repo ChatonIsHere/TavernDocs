@@ -19,25 +19,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PickupDecaySettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PickupDecaySettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-candecaywhencrafted" /><code>{"private bool canDecayWhenCrafted"}</code> |  |
-| <Link id="m-candecaywhenkinematic" /><code>{"private bool canDecayWhenKinematic"}</code> |  |
-| <Link id="m-crafteddecaytimemultiplier" /><code>{"private float craftedDecayTimeMultiplier"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-candecaywhencrafted" /><code>{"private bool canDecayWhenCrafted"}</code> |
+| <Link id="m-candecaywhenkinematic" /><code>{"private bool canDecayWhenKinematic"}</code> |
+| <Link id="m-crafteddecaytimemultiplier" /><code>{"private float craftedDecayTimeMultiplier"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-candecaywhencrafted-2" /><code>{"bool CanDecayWhenCrafted { get; }"}</code> |  |
-| <Link id="m-candecaywhenkinematic-2" /><code>{"bool CanDecayWhenKinematic { get; }"}</code> |  |
-| <Link id="m-crafteddecaytimemultiplier-2" /><code>{"float CraftedDecayTimeMultiplier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-candecaywhencrafted-2" /><code>{"bool CanDecayWhenCrafted { get; }"}</code> |
+| <Link id="m-candecaywhenkinematic-2" /><code>{"bool CanDecayWhenKinematic { get; }"}</code> |
+| <Link id="m-crafteddecaytimemultiplier-2" /><code>{"float CraftedDecayTimeMultiplier { get; }"}</code> |
 
 ## Used in
 

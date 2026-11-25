@@ -18,21 +18,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LightFlicker()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LightFlicker()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-colors" /><code>{"private Gradient colors"}</code> |  |
-| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |  |
-| <Link id="m-targetlight" /><code>{"private "}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" targetLight"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-colors" /><code>{"private Gradient colors"}</code> |
+| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |
+| <Link id="m-targetlight" /><code>{"private "}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" targetLight"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

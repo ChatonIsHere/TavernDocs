@@ -16,11 +16,11 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cheatingexploits" /><code>{"CheatingExploits = 2"}</code> |  |
-| <Link id="m-griefing" /><code>{"Griefing = 0"}</code> |  |
-| <Link id="m-harrassment" /><code>{"Harrassment = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cheatingexploits" /><code>{"CheatingExploits = 2"}</code> |
+| <Link id="m-griefing" /><code>{"Griefing = 0"}</code> |
+| <Link id="m-harrassment" /><code>{"Harrassment = 1"}</code> |
 
 ## Used in
 

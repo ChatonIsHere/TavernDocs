@@ -17,31 +17,44 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModifiableLandmarkSelector()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModifiableLandmarkSelector()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-final" /><code>{"private GameObject final"}</code> |  |
-| <Link id="m-modifiablehash" /><code>{"private uint modifiableHash"}</code> |  |
-| <Link id="m-original" /><code>{"private GameObject original"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-final" /><code>{"private GameObject final"}</code> |
+| <Link id="m-modifiablehash" /><code>{"private uint modifiableHash"}</code> |
+| <Link id="m-original" /><code>{"private GameObject original"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-final-2" /><code>{"GameObject Final { get; set; }"}</code> |  |
-| <Link id="m-modifiablehash-2" /><code>{"uint ModifiableHash { get; set; }"}</code> |  |
-| <Link id="m-original-2" /><code>{"GameObject Original { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-final-2" /><code>{"GameObject Final { get; set; }"}</code> |
+| <Link id="m-modifiablehash-2" /><code>{"uint ModifiableHash { get; set; }"}</code> |
+| <Link id="m-original-2" /><code>{"GameObject Original { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-select" /><code>{"void Select(bool isModified)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-checkchange" /><code>{"private void CheckChange(uint objectHash, bool isModified)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-select" /><code>{"void Select(bool isModified)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-checkchange" /><code>{"private void CheckChange(uint objectHash, bool isModified)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>

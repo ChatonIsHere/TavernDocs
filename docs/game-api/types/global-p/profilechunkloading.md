@@ -18,34 +18,47 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProfileChunkLoading()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProfileChunkLoading()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentprofile" /><code>{"private Coroutine currentProfile"}</code> |  |
-| <Link id="m-isstarting" /><code>{"private bool isStarting"}</code> |  |
-| <Link id="m-iterations" /><code>{"private int iterations"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-positions" /><code>{"private List<"}<Link to="/game-api/types/global-p/profilechunkloading-profilingposition">{"ProfileChunkLoading.ProfilingPosition"}</Link>{"> positions"}</code> |  |
-| <Link id="m-profilingdata" /><code>{"private "}<Link to="/game-api/types/global-p/profilechunkloading-profiledata">{"ProfileChunkLoading.ProfileData"}</Link>{" profilingData"}</code> |  |
-| <Link id="m-waitingfor" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> waitingFor"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentprofile" /><code>{"private Coroutine currentProfile"}</code> |
+| <Link id="m-isstarting" /><code>{"private bool isStarting"}</code> |
+| <Link id="m-iterations" /><code>{"private int iterations"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-positions" /><code>{"private List<"}<Link to="/game-api/types/global-p/profilechunkloading-profilingposition">{"ProfileChunkLoading.ProfilingPosition"}</Link>{"> positions"}</code> |
+| <Link id="m-profilingdata" /><code>{"private "}<Link to="/game-api/types/global-p/profilechunkloading-profiledata">{"ProfileChunkLoading.ProfileData"}</Link>{" profilingData"}</code> |
+| <Link id="m-waitingfor" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> waitingFor"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-positions-2" /><code>{"List<"}<Link to="/game-api/types/global-p/profilechunkloading-profilingposition">{"ProfileChunkLoading.ProfilingPosition"}</Link>{"> Positions { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-positions-2" /><code>{"List<"}<Link to="/game-api/types/global-p/profilechunkloading-profilingposition">{"ProfileChunkLoading.ProfilingPosition"}</Link>{"> Positions { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-profile" /><code>{"IEnumerator Profile() (iterator)"}</code> |  |
-| <Link id="m-startprofiling" /><code>{"void StartProfiling()"}</code> |  |
-| <Link id="m-markasloaded" /><code>{"private void MarkAsLoaded("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" loadedChunk)"}</code> |  |
-| <Link id="m-markasunloaded" /><code>{"private void MarkAsUnloaded("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" loadedChunk)"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-profile" /><code>{"IEnumerator Profile() (iterator)"}</code> |
+| <Link id="m-startprofiling" /><code>{"void StartProfiling()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-markasloaded" /><code>{"private void MarkAsLoaded("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" loadedChunk)"}</code> |
+| <Link id="m-markasunloaded" /><code>{"private void MarkAsUnloaded("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" loadedChunk)"}</code> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+
+</details>

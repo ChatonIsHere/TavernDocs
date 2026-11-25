@@ -17,20 +17,25 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Formula(string name, Func<T, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{", float> evaluate)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Formula(string name, Func<T, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{", float> evaluate)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-evaluate" /><code>{"private Func<T, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{", float> evaluate"}</code> |  |
-| <Link id="m-name" /><code>{"private string name"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-evaluate" /><code>{"private Func<T, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{", float> evaluate"}</code> |
+| <Link id="m-name" /><code>{"private string name"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-evaluate-2" /><code>{"override float Evaluate("}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-evaluate-2" /><code>{"override float Evaluate("}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |

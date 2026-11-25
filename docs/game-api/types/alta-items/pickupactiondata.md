@@ -16,14 +16,14 @@ A **struct** in `Root.Township`, `Alta.Inventory.Pickups.Scripts`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-changetype" /><code><Link to="/game-api/types/game-other-namespaces/inventorychangetype">{"InventoryChangeType"}</Link>{" ChangeType"}</code> |  |
-| <Link id="m-destinationuser" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" DestinationUser"}</code> |  |
-| <Link id="m-interactor" /><code><Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link></code> |  |
-| <Link id="m-inventorytype" /><code><Link to="/game-api/types/game-other-namespaces/inventorytype">{"InventoryType"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/inventorytype">{"InventoryType"}</Link></code> |  |
-| <Link id="m-pickup" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link></code> |  |
-| <Link id="m-quantity" /><code>{"int Quantity"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-changetype" /><code><Link to="/game-api/types/game-other-namespaces/inventorychangetype">{"InventoryChangeType"}</Link>{" ChangeType"}</code> |
+| <Link id="m-destinationuser" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" DestinationUser"}</code> |
+| <Link id="m-interactor" /><code><Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link></code> |
+| <Link id="m-inventorytype" /><code><Link to="/game-api/types/game-other-namespaces/inventorytype">{"InventoryType"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/inventorytype">{"InventoryType"}</Link></code> |
+| <Link id="m-pickup" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link></code> |
+| <Link id="m-quantity" /><code>{"int Quantity"}</code> |
 
 ## Used in
 

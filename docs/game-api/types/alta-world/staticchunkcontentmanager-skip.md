@@ -19,20 +19,33 @@ A **private class** in `Root.Township`, `Alta.Chunks`. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Skip()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Skip()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/alta-world/staticchunkcontentmanager-skip">{"StaticChunkContentManager.Skip"}</Link>{" current"}</code> |  |
-| <Link id="m-data" /><code>{"private string[] data"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/alta-world/staticchunkcontentmanager-skip">{"StaticChunkContentManager.Skip"}</Link>{" current"}</code> |
+| <Link id="m-data" /><code>{"private string[] data"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getskipping" /><code>{"static async Task<bool> GetSkipping(string pointer)"}</code> |  |
-| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getskipping" /><code>{"static async Task<bool> GetSkipping(string pointer)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> |
+
+</details>

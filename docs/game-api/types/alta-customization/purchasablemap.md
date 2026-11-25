@@ -20,38 +20,43 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PurchasableMap()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PurchasableMap()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allitems" /><code>{"private string[] allItems"}</code> |  |
-| <Link id="m-categories" /><code>{"private "}<Link to="/game-api/types/alta-customization/purchasablemap-cosmeticcategory">{"PurchasableMap.CosmeticCategory"}</Link>{"[] categories"}</code> |  |
-| <Link id="m-categorymap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-customization/icustomizationcategory">{"ICustomizationCategory"}</Link>{"> categoryMap"}</code> |  |
-| <Link id="m-cosmeticdefinitions" /><code>{"private uint[] cosmeticDefinitions"}</code> |  |
-| <Link id="m-devitems" /><code>{"private uint[] devItems"}</code> |  |
-| <Link id="m-hashidentifierpairs" /><code>{"private "}<Link to="/game-api/types/alta-customization/purchasablemap-hashidentifierpair">{"PurchasableMap.HashIdentifierPair"}</Link>{"[] hashIdentifierPairs"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-mappedcosmeticdefinitions" /><code>{"private HashSet<uint> mappedCosmeticDefinitions"}</code> |  |
-| <Link id="m-mappedhashidentifierpair" /><code>{"private Dictionary<string, uint> mappedHashIdentifierPair"}</code> |  |
-| <Link id="m-mappedsets" /><code>{"private Dictionary<uint, uint[]> mappedSets"}</code> |  |
-| <Link id="m-sets" /><code>{"private "}<Link to="/game-api/types/alta-customization/purchasablemap-cosmeticset">{"PurchasableMap.CosmeticSet"}</Link>{"[] sets"}</code> |  |
+<details>
+<summary>11 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-allitems" /><code>{"private string[] allItems"}</code> |
+| <Link id="m-categories" /><code>{"private "}<Link to="/game-api/types/alta-customization/purchasablemap-cosmeticcategory">{"PurchasableMap.CosmeticCategory"}</Link>{"[] categories"}</code> |
+| <Link id="m-categorymap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-customization/icustomizationcategory">{"ICustomizationCategory"}</Link>{"> categoryMap"}</code> |
+| <Link id="m-cosmeticdefinitions" /><code>{"private uint[] cosmeticDefinitions"}</code> |
+| <Link id="m-devitems" /><code>{"private uint[] devItems"}</code> |
+| <Link id="m-hashidentifierpairs" /><code>{"private "}<Link to="/game-api/types/alta-customization/purchasablemap-hashidentifierpair">{"PurchasableMap.HashIdentifierPair"}</Link>{"[] hashIdentifierPairs"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-mappedcosmeticdefinitions" /><code>{"private HashSet<uint> mappedCosmeticDefinitions"}</code> |
+| <Link id="m-mappedhashidentifierpair" /><code>{"private Dictionary<string, uint> mappedHashIdentifierPair"}</code> |
+| <Link id="m-mappedsets" /><code>{"private Dictionary<uint, uint[]> mappedSets"}</code> |
+| <Link id="m-sets" /><code>{"private "}<Link to="/game-api/types/alta-customization/purchasablemap-cosmeticset">{"PurchasableMap.CosmeticSet"}</Link>{"[] sets"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allitems-2" /><code>{"string[] AllItems { get; }"}</code> |  |
-| <Link id="m-devitems-2" /><code>{"uint[] DevItems { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-allitems-2" /><code>{"string[] AllItems { get; }"}</code> |
+| <Link id="m-devitems-2" /><code>{"uint[] DevItems { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-convertstoreskutohash" /><code>{"uint ConvertStoreSKUToHash(string storeSKU)"}</code> |  |
-| <Link id="m-getitemcategory" /><code><Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" GetItemCategory(uint itemHash)"}</code> |  |
-| <Link id="m-getsetcontent" /><code>{"bool GetSetContent(uint hash, out uint[] content)"}</code> |  |
-| <Link id="m-iscosmeticdefinition" /><code>{"bool IsCosmeticDefinition(uint hash)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-convertstoreskutohash" /><code>{"uint ConvertStoreSKUToHash(string storeSKU)"}</code> |
+| <Link id="m-getitemcategory" /><code><Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" GetItemCategory(uint itemHash)"}</code> |
+| <Link id="m-getsetcontent" /><code>{"bool GetSetContent(uint hash, out uint[] content)"}</code> |
+| <Link id="m-iscosmeticdefinition" /><code>{"bool IsCosmeticDefinition(uint hash)"}</code> |

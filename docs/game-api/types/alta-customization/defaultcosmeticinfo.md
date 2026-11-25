@@ -17,35 +17,43 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DefaultCosmeticInfo()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"DefaultCosmeticInfo("}<Link to="/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{" category, "}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{" definition, IEnumerable<"}<Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"> colors)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DefaultCosmeticInfo()"}</code> |
+| <Link id="m-ctor-2" /><code>{"DefaultCosmeticInfo("}<Link to="/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{" category, "}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{" definition, IEnumerable<"}<Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"> colors)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"string name"}</code> |  |
-| <Link id="m-category" /><code>{"private "}<Link to="/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{" category"}</code> |  |
-| <Link id="m-colors" /><code>{"private "}<Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"[] colors"}</code> |  |
-| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{" definition"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"string name"}</code> |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-category" /><code>{"private "}<Link to="/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{" category"}</code> |
+| <Link id="m-colors" /><code>{"private "}<Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"[] colors"}</code> |
+| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{" definition"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-category-2" /><code><Link to="/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{" Category { get; }"}</code> |  |
-| <Link id="m-colors-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"> Colors { get; }"}</code> |  |
-| <Link id="m-definition-2" /><code><Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" Definition { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-category-2" /><code><Link to="/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{" Category { get; }"}</code> |
+| <Link id="m-colors-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"> Colors { get; }"}</code> |
+| <Link id="m-definition-2" /><code><Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" Definition { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onafterdeserialize" /><code>{"void OnAfterDeserialize()"}</code> |  |
-| <Link id="m-onbeforeserialize" /><code>{"void OnBeforeSerialize()"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onafterdeserialize" /><code>{"void OnAfterDeserialize()"}</code> |
+| <Link id="m-onbeforeserialize" /><code>{"void OnBeforeSerialize()"}</code> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
 
 ## Used in
 

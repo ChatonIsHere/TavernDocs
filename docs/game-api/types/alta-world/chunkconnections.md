@@ -16,33 +16,46 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkConnections()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkConnections()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forcedadjacent" /><code>{"private List<"}<Link to="/game-api/types/alta-world/chunkadjacencyconfiguration">{"ChunkAdjacencyConfiguration"}</Link>{"> forcedAdjacent"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-forcedadjacent" /><code>{"private List<"}<Link to="/game-api/types/alta-world/chunkadjacencyconfiguration">{"ChunkAdjacencyConfiguration"}</Link>{"> forcedAdjacent"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; private set; }"}</code> |  |
-| <Link id="m-forcedadjacent-2" /><code>{"List<"}<Link to="/game-api/types/alta-world/chunkadjacencyconfiguration">{"ChunkAdjacencyConfiguration"}</Link>{"> ForcedAdjacent { get; }"}</code> |  |
-| <Link id="m-portals" /><code>{"List<"}<Link to="/game-api/types/global-c-d/cullingportal">{"CullingPortal"}</Link>{"> Portals { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; private set; }"}</code> |
+| <Link id="m-forcedadjacent-2" /><code>{"List<"}<Link to="/game-api/types/alta-world/chunkadjacencyconfiguration">{"ChunkAdjacencyConfiguration"}</Link>{"> ForcedAdjacent { get; }"}</code> |
+| <Link id="m-portals" /><code>{"List<"}<Link to="/game-api/types/global-c-d/cullingportal">{"CullingPortal"}</Link>{"> Portals { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-connecttwoway" /><code>{"static void ConnectTwoWay("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" a, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" b, float connectionCost = 1)"}</code> |  |
-| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-addadjacent" /><code>{"private void AddAdjacent("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, float connectionCost = 1)"}</code> |  |
-| <Link id="m-removeadjacent" /><code>{"private void RemoveAdjacent("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-connecttwoway" /><code>{"static void ConnectTwoWay("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" a, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" b, float connectionCost = 1)"}</code> |
+| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-addadjacent" /><code>{"private void AddAdjacent("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, float connectionCost = 1)"}</code> |
+| <Link id="m-removeadjacent" /><code>{"private void RemoveAdjacent("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+
+</details>
 
 ## Used in
 

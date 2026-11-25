@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatAffectAccessor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatAffectAccessor()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filters" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/areafilter">{"AreaFilter"}</Link>{" filters"}</code> |  |
-| <Link id="m-manager" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-filters" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/areafilter">{"AreaFilter"}</Link>{" filters"}</code> |
+| <Link id="m-manager" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isaffecting" /><code>{"bool IsAffecting("}<Link to="/game-api/types/alta-stats-effects/areafilter">{"AreaFilter"}</Link>{" filter, out "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isaffecting" /><code>{"bool IsAffecting("}<Link to="/game-api/types/alta-stats-effects/areafilter">{"AreaFilter"}</Link>{" filter, out "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |

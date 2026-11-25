@@ -17,30 +17,43 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkAxisPosition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkAxisPosition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maximumvalue" /><code>{"private float maximumValue"}</code> |  |
-| <Link id="m-minimumvalue" /><code>{"private float minimumValue"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maximumvalue" /><code>{"private float maximumValue"}</code> |
+| <Link id="m-minimumvalue" /><code>{"private float minimumValue"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentvalue" /><code>{"protected override float CurrentValue { get; }"}</code> |  |
-| <Link id="m-maximumvalue-2" /><code>{"protected override float MaximumValue { get; }"}</code> |  |
-| <Link id="m-minimumvalue-2" /><code>{"protected override float MinimumValue { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentvalue" /><code>{"protected override float CurrentValue { get; }"}</code> |
+| <Link id="m-maximumvalue-2" /><code>{"protected override float MaximumValue { get; }"}</code> |
+| <Link id="m-minimumvalue-2" /><code>{"protected override float MinimumValue { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-applyvalue" /><code>{"protected override void ApplyValue(float value)"}</code> |  |
-| <Link id="m-getdifference" /><code>{"protected override float GetDifference(float currentValue, float value)"}</code> |  |
-| <Link id="m-lerptovalue" /><code>{"protected override float LerpToValue(float value, float lerpValue)"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-applyvalue" /><code>{"protected override void ApplyValue(float value)"}</code> |
+| <Link id="m-getdifference" /><code>{"protected override float GetDifference(float currentValue, float value)"}</code> |
+| <Link id="m-lerptovalue" /><code>{"protected override float LerpToValue(float value, float lerpValue)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+
+</details>

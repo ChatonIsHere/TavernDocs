@@ -22,18 +22,26 @@ A weighted random table of assets, used by world and cave generation. Weights ca
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Distribution()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Distribution()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-festivities" /><code>{"protected List<TFestivityGroup> festivities"}</code> | Serialized festivity groups. |
-| <Link id="m-globalmultipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"[] globalMultipliers"}</code> |  |
 | <Link id="m-items" /><code>{"protected List<TItem> items"}</code> | Serialized main items. |
 | <Link id="m-nullchance" /><code>{"protected float nullChance"}</code> | Chance (0 to 1) of picking nothing, before attribute multipliers. |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-globalmultipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"[] globalMultipliers"}</code> |
+
+</details>
 
 ## Properties
 

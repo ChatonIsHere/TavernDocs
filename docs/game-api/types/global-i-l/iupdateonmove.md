@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-moved" /><code>{"void Moved()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-moved" /><code>{"void Moved()"}</code> |

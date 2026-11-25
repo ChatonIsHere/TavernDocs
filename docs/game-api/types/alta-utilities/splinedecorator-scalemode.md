@@ -18,10 +18,10 @@ An **enum** in `Root.Township`, `Alta.Bezier`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-height" /><code>{"Height = 2"}</code> |  |
-| <Link id="m-stretch" /><code>{"Stretch = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-height" /><code>{"Height = 2"}</code> |
+| <Link id="m-stretch" /><code>{"Stretch = 1"}</code> |
 
 ## Used in
 

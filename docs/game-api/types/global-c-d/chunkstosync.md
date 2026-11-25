@@ -16,10 +16,10 @@ A **internal struct** in `Root.Township`, no namespace. Reach it through att-stu
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentchunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" currentChunk"}</code> |  |
-| <Link id="m-loadedchunks" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"[] loadedChunks"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentchunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" currentChunk"}</code> |
+| <Link id="m-loadedchunks" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"[] loadedChunks"}</code> |
 
 ## Used in
 

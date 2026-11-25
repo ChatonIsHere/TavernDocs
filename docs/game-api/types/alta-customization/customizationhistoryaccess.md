@@ -17,25 +17,30 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CustomizationHistoryAccess()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CustomizationHistoryAccess()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-history" /><code>{"private "}<Link to="/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" history"}</code> |  |
-| <Link id="m-historysize" /><code>{"private int historySize"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-history" /><code>{"private "}<Link to="/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" history"}</code> |
+| <Link id="m-historysize" /><code>{"private int historySize"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-history-2" /><code>{"override "}<Link to="/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" History { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-history-2" /><code>{"override "}<Link to="/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" History { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |

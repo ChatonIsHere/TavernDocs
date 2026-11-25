@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, `Features.Gameplay.GameConditions.StaticObjectMa
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-built" /><code>{"Built = 1"}</code> |  |
-| <Link id="m-notbuilt" /><code>{"NotBuilt = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-built" /><code>{"Built = 1"}</code> |
+| <Link id="m-notbuilt" /><code>{"NotBuilt = 0"}</code> |
 
 ## Used in
 

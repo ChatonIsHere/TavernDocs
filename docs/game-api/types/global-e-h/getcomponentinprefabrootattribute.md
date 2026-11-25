@@ -17,12 +17,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GetComponentInPrefabRootAttribute()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GetComponentInPrefabRootAttribute()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getcomponent" /><code>{"override Component GetComponent(Transform transform, Type type)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getcomponent" /><code>{"override Component GetComponent(Transform transform, Type type)"}</code> |

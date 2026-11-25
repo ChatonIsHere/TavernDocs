@@ -21,9 +21,9 @@ Save data for a `PopulationSpawnArea`: which population it holds, its counts, sp
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationSpawnAreaSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationSpawnAreaSaveData()"}</code> |
 
 ## Fields
 

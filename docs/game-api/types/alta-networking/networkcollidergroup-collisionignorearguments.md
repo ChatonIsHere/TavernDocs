@@ -17,29 +17,34 @@ A **private struct** in `Root.Township`, `Alta.Networking`. Reach it through att
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CollisionIgnoreArguments("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" otherEntity, bool isIgnoring)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CollisionIgnoreArguments("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" otherEntity, bool isIgnoring)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isignoring" /><code>{"private bool isIgnoring"}</code> |  |
-| <Link id="m-otheridentifier" /><code>{"private uint otherIdentifier"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isignoring" /><code>{"private bool isIgnoring"}</code> |
+| <Link id="m-otheridentifier" /><code>{"private uint otherIdentifier"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isignoring-2" /><code>{"bool IsIgnoring { get; }"}</code> |  |
-| <Link id="m-otheridentifier-2" /><code>{"uint OtherIdentifier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isignoring-2" /><code>{"bool IsIgnoring { get; }"}</code> |
+| <Link id="m-otheridentifier-2" /><code>{"uint OtherIdentifier { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
 
 ## Used in
 

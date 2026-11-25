@@ -19,14 +19,14 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RopeGrabSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RopeGrabSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentprogress" /><code>{"float currentProgress"}</code> |  |
-| <Link id="m-isgrabclampedsaved" /><code>{"bool isGrabClampedSaved"}</code> |  |
-| <Link id="m-length" /><code>{"float length"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentprogress" /><code>{"float currentProgress"}</code> |
+| <Link id="m-isgrabclampedsaved" /><code>{"bool isGrabClampedSaved"}</code> |
+| <Link id="m-length" /><code>{"float length"}</code> |

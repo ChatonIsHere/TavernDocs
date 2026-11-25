@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VersionMarker()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VersionMarker()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-version" /><code><Link to="/game-api/types/assembly-api-models/gameversion">{"GameVersion"}</Link>{" Version { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| <Link id="m-version" /><code><Link to="/game-api/types/assembly-api-models/gameversion">{"GameVersion"}</Link>{" Version { get; set; }"}</code> |
 
 ## Used in
 

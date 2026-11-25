@@ -17,19 +17,19 @@ An **abstract class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialProperty(string propertyName)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MaterialProperty(string propertyName)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-propertyindex" /><code>{"protected int PropertyIndex { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-propertyindex" /><code>{"protected int PropertyIndex { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setonmaterial" /><code>{"abstract void SetOnMaterial(T value, Material material)"}</code> |  |
-| <Link id="m-setonpropertyblock" /><code>{"abstract void SetOnPropertyBlock(T value, MaterialPropertyBlock propertyBlock)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setonmaterial" /><code>{"abstract void SetOnMaterial(T value, Material material)"}</code> |
+| <Link id="m-setonpropertyblock" /><code>{"abstract void SetOnPropertyBlock(T value, MaterialPropertyBlock propertyBlock)"}</code> |

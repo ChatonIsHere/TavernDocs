@@ -17,27 +17,40 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformObjectSetup()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PlatformObjectSetup("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime, List<GameObject> targets)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformObjectSetup()"}</code> |
+| <Link id="m-ctor-2" /><code>{"PlatformObjectSetup("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime, List<GameObject> targets)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-defaultisinactive" /><code>{"private bool defaultIsInactive"}</code> |  |
-| <Link id="m-iskeepingwhennotvalid" /><code>{"private bool isKeepingWhenNotValid"}</code> |  |
-| <Link id="m-targetplatforms" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" targetPlatforms"}</code> |  |
-| <Link id="m-targets" /><code>{"private GameObject[] targets"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-defaultisinactive" /><code>{"private bool defaultIsInactive"}</code> |
+| <Link id="m-iskeepingwhennotvalid" /><code>{"private bool isKeepingWhenNotValid"}</code> |
+| <Link id="m-targetplatforms" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" targetPlatforms"}</code> |
+| <Link id="m-targets" /><code>{"private GameObject[] targets"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bake" /><code>{"void Bake()"}</code> |  |
-| <Link id="m-processactivetargets" /><code>{"private void ProcessActiveTargets()"}</code> |  |
-| <Link id="m-processinactivetargets" /><code>{"private void ProcessInactiveTargets()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"void Bake()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-processactivetargets" /><code>{"private void ProcessActiveTargets()"}</code> |
+| <Link id="m-processinactivetargets" /><code>{"private void ProcessInactiveTargets()"}</code> |
+
+</details>
 
 ## Used in
 

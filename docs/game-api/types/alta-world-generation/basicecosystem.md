@@ -19,24 +19,29 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BasicEcosystem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BasicEcosystem()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-populations" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{", "}<Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{"> populations"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-populations" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{", "}<Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{"> populations"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"void Add("}<Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" population)"}</code> |  |
-| <Link id="m-get" /><code><Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" Get("}<Link to="/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" setup)"}</code> |  |
-| <Link id="m-remove" /><code>{"void Remove("}<Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" population)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"void Add("}<Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" population)"}</code> |
+| <Link id="m-get" /><code><Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" Get("}<Link to="/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" setup)"}</code> |
+| <Link id="m-remove" /><code>{"void Remove("}<Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" population)"}</code> |
 
 ## Used in
 

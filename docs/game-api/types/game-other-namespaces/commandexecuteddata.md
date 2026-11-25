@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `ATT.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CommandExecutedData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CommandExecutedData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-command" /><code>{"string Command"}</code> |  |
-| <Link id="m-message" /><code>{"string Message"}</code> |  |
-| <Link id="m-wassuccessful" /><code>{"bool WasSuccessful"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-command" /><code>{"string Command"}</code> |
+| <Link id="m-message" /><code>{"string Message"}</code> |
+| <Link id="m-wassuccessful" /><code>{"bool WasSuccessful"}</code> |
 
 ## Used in
 

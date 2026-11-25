@@ -17,32 +17,45 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.LowLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PagedResult(Func<"}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{", Task<HttpResponseMessage>> getNext, "}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PagedResult(Func<"}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{", Task<HttpResponseMessage>> getNext, "}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config = null)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-config" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config"}</code> |  |
-| <Link id="m-getnext" /><code>{"private readonly Func<"}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{", Task<HttpResponseMessage>> getNext"}</code> |  |
-| <Link id="m-hasrun" /><code>{"private bool hasRun"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-config" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config"}</code> |
+| <Link id="m-getnext" /><code>{"private readonly Func<"}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{", Task<HttpResponseMessage>> getNext"}</code> |
+| <Link id="m-hasrun" /><code>{"private bool hasRun"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hasnext" /><code>{"bool HasNext { get; }"}</code> |  |
-| <Link id="m-results" /><code>{"IEnumerable<T> Results { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hasnext" /><code>{"bool HasNext { get; }"}</code> |
+| <Link id="m-results" /><code>{"IEnumerable<T> Results { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getallasync" /><code>{"async Task<IEnumerable<T>> GetAllAsync()"}</code> |  |
-| <Link id="m-getnextasync" /><code>{"async Task<IEnumerable<T>> GetNextAsync()"}</code> |  |
-| <Link id="m-handleresponse" /><code>{"private async Task<IEnumerable<T>> HandleResponse(HttpResponseMessage response)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getallasync" /><code>{"async Task<IEnumerable<T>> GetAllAsync()"}</code> |
+| <Link id="m-getnextasync" /><code>{"async Task<IEnumerable<T>> GetNextAsync()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-handleresponse" /><code>{"private async Task<IEnumerable<T>> HandleResponse(HttpResponseMessage response)"}</code> |
+
+</details>
 
 ## Used in
 

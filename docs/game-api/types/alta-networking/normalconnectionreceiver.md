@@ -17,13 +17,13 @@ A **class** in `Root.Township`, `Alta.Networking.Internal`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NormalConnectionReceiver("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NormalConnectionReceiver("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-processexistingqueues" /><code>{"override void ProcessExistingQueues()"}</code> |  |
-| <Link id="m-receivepacket" /><code>{"override void ReceivePacket("}<Link to="/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, ArraySegment<byte> data)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-processexistingqueues" /><code>{"override void ProcessExistingQueues()"}</code> |
+| <Link id="m-receivepacket" /><code>{"override void ReceivePacket("}<Link to="/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, ArraySegment<byte> data)"}</code> |

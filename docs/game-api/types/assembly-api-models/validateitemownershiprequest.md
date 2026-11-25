@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ValidateItemOwnershipRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ValidateItemOwnershipRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items" /><code>{"IEnumerable<uint> Items { get; set; }"}</code> |  |
-| <Link id="m-itemskus" /><code>{"IEnumerable<string> ItemSKUs { get; set; }"}</code> |  |
-| <Link id="m-useridentifer" /><code>{"int UserIdentifer { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-items" /><code>{"IEnumerable<uint> Items { get; set; }"}</code> |
+| <Link id="m-itemskus" /><code>{"IEnumerable<string> ItemSKUs { get; set; }"}</code> |
+| <Link id="m-useridentifer" /><code>{"int UserIdentifer { get; set; }"}</code> |
 
 ## Used in
 

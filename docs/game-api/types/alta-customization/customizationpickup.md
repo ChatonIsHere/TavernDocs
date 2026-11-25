@@ -20,16 +20,21 @@ Base for the grabbable items in the character customization area (cosmetics, bod
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CustomizationPickup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CustomizationPickup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hoverpickup" /><code>{"private "}<Link to="/game-api/types/global-e-h/hoverpickup">{"HoverPickup"}</Link>{" hoverPickup"}</code> |  |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-hoverpickup" /><code>{"private "}<Link to="/game-api/types/global-e-h/hoverpickup">{"HoverPickup"}</Link>{" hoverPickup"}</code> |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
+
+</details>
 
 ## Properties
 
@@ -47,9 +52,17 @@ Base for the grabbable items in the character customization area (cosmetics, bod
 | <Link id="m-destroyonrelease" /><code>{"void DestroyOnRelease()"}</code> | Makes the pickup destroy itself shortly after it is let go, unless it is grabbed again. |
 | <Link id="m-handleplacementresult" /><code>{"virtual void HandlePlacementResult(bool wasAdded)"}</code> | Plays the added or disappear effect (not on headless) and snaps the hover pickup back. |
 | <Link id="m-spawn" /><code>{"virtual "}<Link to="/game-api/types/alta-customization/customizationpickup">{"CustomizationPickup"}</Link>{" Spawn("}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" definition, "}<Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments, Transform parent)"}</code> | Instantiates a copy of this pickup under a parent and gives it a definition and arguments. |
-| <Link id="m-delaydestroy" /><code>{"private void DelayDestroy()"}</code> |  |
-| <Link id="m-destroyoninteractend" /><code>{"private void DestroyOnInteractEnd("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |  |
 | <Link id="m-destroypickup" /><code>{"protected virtual void DestroyPickup()"}</code> | Destroys the pickup's game object. Override to pool or animate instead. |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-delaydestroy" /><code>{"private void DelayDestroy()"}</code> |
+| <Link id="m-destroyoninteractend" /><code>{"private void DestroyOnInteractEnd("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |
+
+</details>
 
 ## Used in
 

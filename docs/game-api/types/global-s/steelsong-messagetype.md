@@ -17,11 +17,11 @@ An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tolocalplayer" /><code>{"ToLocalPlayer = 0"}</code> |  |
-| <Link id="m-tootherplayers" /><code>{"ToOtherPlayers = 1"}</code> |  |
-| <Link id="m-toserver" /><code>{"ToServer = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tolocalplayer" /><code>{"ToLocalPlayer = 0"}</code> |
+| <Link id="m-tootherplayers" /><code>{"ToOtherPlayers = 1"}</code> |
+| <Link id="m-toserver" /><code>{"ToServer = 2"}</code> |
 
 ## Used in
 

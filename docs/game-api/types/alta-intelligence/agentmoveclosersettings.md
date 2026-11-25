@@ -18,28 +18,33 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AgentMoveCloserSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AgentMoveCloserSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxdistancebeforecancelsquared" /><code>{"private float maxDistanceBeforeCancelSquared"}</code> |  |
-| <Link id="m-reacheddistance" /><code>{"private float reachedDistance"}</code> |  |
-| <Link id="m-speed" /><code>{"private float speed"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maxdistancebeforecancelsquared" /><code>{"private float maxDistanceBeforeCancelSquared"}</code> |
+| <Link id="m-reacheddistance" /><code>{"private float reachedDistance"}</code> |
+| <Link id="m-speed" /><code>{"private float speed"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxdistancebeforecancelsquared-2" /><code>{"float MaxDistanceBeforeCancelSquared { get; }"}</code> |  |
-| <Link id="m-reacheddistance-2" /><code>{"float ReachedDistance { get; }"}</code> |  |
-| <Link id="m-speed-2" /><code>{"float Speed { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maxdistancebeforecancelsquared-2" /><code>{"float MaxDistanceBeforeCancelSquared { get; }"}</code> |
+| <Link id="m-reacheddistance-2" /><code>{"float ReachedDistance { get; }"}</code> |
+| <Link id="m-speed-2" /><code>{"float Speed { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |

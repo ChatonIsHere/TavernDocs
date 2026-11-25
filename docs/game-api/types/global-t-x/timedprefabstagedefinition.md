@@ -20,23 +20,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimedPrefabStageDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimedPrefabStageDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdestroyingthisonlaststage" /><code>{"private bool isDestroyingThisOnLastStage"}</code> |  |
-| <Link id="m-timesperstage" /><code>{"private "}<Link to="/game-api/types/global-t-x/timedprefabstagedefinition-timesetup">{"TimedPrefabStageDefinition.TimeSetup"}</Link>{"[] timesPerStage"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isdestroyingthisonlaststage" /><code>{"private bool isDestroyingThisOnLastStage"}</code> |
+| <Link id="m-timesperstage" /><code>{"private "}<Link to="/game-api/types/global-t-x/timedprefabstagedefinition-timesetup">{"TimedPrefabStageDefinition.TimeSetup"}</Link>{"[] timesPerStage"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdestroyingthisonlaststage-2" /><code>{"bool IsDestroyingThisOnLastStage { get; }"}</code> |  |
-| <Link id="m-times" /><code><Link to="/game-api/types/global-t-x/timedprefabstagedefinition-timesetup">{"TimedPrefabStageDefinition.TimeSetup"}</Link>{"[] Times { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isdestroyingthisonlaststage-2" /><code>{"bool IsDestroyingThisOnLastStage { get; }"}</code> |
+| <Link id="m-times" /><code><Link to="/game-api/types/global-t-x/timedprefabstagedefinition-timesetup">{"TimedPrefabStageDefinition.TimeSetup"}</Link>{"[] Times { get; }"}</code> |
 
 ## Used in
 

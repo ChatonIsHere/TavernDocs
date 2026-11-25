@@ -16,17 +16,17 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionAndRotationTarget(Vector3 position)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PositionAndRotationTarget(Vector3 position, Vector3 rotation)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionAndRotationTarget(Vector3 position)"}</code> |
+| <Link id="m-ctor-2" /><code>{"PositionAndRotationTarget(Vector3 position, Vector3 rotation)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-rotation" /><code>{"Vector3 rotation"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| <Link id="m-rotation" /><code>{"Vector3 rotation"}</code> |
 
 ## Used in
 

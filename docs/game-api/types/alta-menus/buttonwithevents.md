@@ -21,25 +21,38 @@ A menu `Button` that also fires Unity events set in the inspector when pressed, 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ButtonWithEvents()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ButtonWithEvents()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondisable" /><code>{"private UnityEvent onDisable"}</code> |  |
-| <Link id="m-onenable" /><code>{"private UnityEvent onEnable"}</code> |  |
-| <Link id="m-onpress" /><code>{"private UnityEvent onPress"}</code> |  |
-| <Link id="m-onrelease" /><code>{"private UnityEvent onRelease"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondisable" /><code>{"private UnityEvent onDisable"}</code> |
+| <Link id="m-onenable" /><code>{"private UnityEvent onEnable"}</code> |
+| <Link id="m-onpress" /><code>{"private UnityEvent onPress"}</code> |
+| <Link id="m-onrelease" /><code>{"private UnityEvent onRelease"}</code> |
+
+</details>
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Hooks the press, release and enabled change events to the inspector Unity events. |
-| <Link id="m-handleenabledchanged" /><code>{"private void HandleEnabledChanged("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" obj)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-handleenabledchanged" /><code>{"private void HandleEnabledChanged("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" obj)"}</code> |
+
+</details>
 
 ## Used in
 

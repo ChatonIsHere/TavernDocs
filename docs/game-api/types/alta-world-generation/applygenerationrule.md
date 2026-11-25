@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `Alta.PAGaC`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ApplyGenerationRule()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ApplyGenerationRule()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generationrules" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/generationrule">{"GenerationRule"}</Link>{"[] generationRules"}</code> |  |
-| <Link id="m-isrepeatinguntilnone" /><code>{"private bool isRepeatingUntilNone"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-generationrules" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/generationrule">{"GenerationRule"}</Link>{"[] generationRules"}</code> |
+| <Link id="m-isrepeatinguntilnone" /><code>{"private bool isRepeatingUntilNone"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/alta-world-generation/generationbase-alta-pagac">{"GenerationBase"}</Link>{" generationBase)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/alta-world-generation/generationbase-alta-pagac">{"GenerationBase"}</Link>{" generationBase)"}</code> |

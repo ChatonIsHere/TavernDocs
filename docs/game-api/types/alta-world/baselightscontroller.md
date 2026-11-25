@@ -19,16 +19,24 @@ Base for the platform light controllers (PC and Android) that manage the active 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected BaseLightsController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected BaseLightsController()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-activelights" /><code>{"protected HashSet<"}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{"> activeLights"}</code> | Backing set of active lights. |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |  |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
+
+</details>
 
 ## Properties
 

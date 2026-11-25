@@ -22,27 +22,35 @@ One point of temperature on an object. The server conducts heat between neighbou
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HeatPoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HeatPoint()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-armorconductivity" /><code>{"private float armorConductivity"}</code> |  |
-| <Link id="m-basevolume" /><code>{"private float baseVolume"}</code> |  |
-| <Link id="m-effectparent" /><code>{"private Transform effectParent"}</code> |  |
-| <Link id="m-equipmentslot" /><code>{"private "}<Link to="/game-api/types/alta-items/equipmentreference">{"EquipmentReference"}</Link>{" equipmentSlot"}</code> |  |
-| <Link id="m-haschangedsynclastsync" /><code>{"private bool hasChangedSyncLastSync"}</code> |  |
-| <Link id="m-heatareapriorities" /><code>{"private List<int> heatAreaPriorities"}</code> |  |
 | <Link id="m-internalconductivitymultiplier" /><code>{"protected float internalConductivityMultiplier"}</code> | Serialized base for internal conduction. `ConductTo` squares this raw field for same-entity points, skipping the global and armour multipliers. |
-| <Link id="m-ischanged" /><code>{"private bool isChanged"}</code> |  |
-| <Link id="m-neighbours" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint-neighbour">{"HeatPoint.Neighbour"}</Link>{"[] neighbours"}</code> |  |
-| <Link id="m-positionhelper" /><code>{"private "}<Link to="/game-api/types/global-p/positionfromoriginhelper">{"PositionFromOriginHelper"}</Link>{" positionHelper"}</code> |  |
 | <Link id="m-receiveconductivitymultiplier" /><code>{"protected float receiveConductivityMultiplier"}</code> | Serialized base for `ReceiveConductivityMultiplier`. |
 | <Link id="m-sourceconductivitymultiplier" /><code>{"protected float sourceConductivityMultiplier"}</code> | Serialized base for `SourceConductivityMultiplier`. |
-| <Link id="m-temperature" /><code>{"private float temperature"}</code> |  |
+
+<details>
+<summary>10 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-armorconductivity" /><code>{"private float armorConductivity"}</code> |
+| <Link id="m-basevolume" /><code>{"private float baseVolume"}</code> |
+| <Link id="m-effectparent" /><code>{"private Transform effectParent"}</code> |
+| <Link id="m-equipmentslot" /><code>{"private "}<Link to="/game-api/types/alta-items/equipmentreference">{"EquipmentReference"}</Link>{" equipmentSlot"}</code> |
+| <Link id="m-haschangedsynclastsync" /><code>{"private bool hasChangedSyncLastSync"}</code> |
+| <Link id="m-heatareapriorities" /><code>{"private List<int> heatAreaPriorities"}</code> |
+| <Link id="m-ischanged" /><code>{"private bool isChanged"}</code> |
+| <Link id="m-neighbours" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint-neighbour">{"HeatPoint.Neighbour"}</Link>{"[] neighbours"}</code> |
+| <Link id="m-positionhelper" /><code>{"private "}<Link to="/game-api/types/global-p/positionfromoriginhelper">{"PositionFromOriginHelper"}</Link>{" positionHelper"}</code> |
+| <Link id="m-temperature" /><code>{"private float temperature"}</code> |
+
+</details>
 
 ## Properties
 
@@ -65,8 +73,16 @@ One point of temperature on an object. The server conducts heat between neighbou
 | <Link id="m-temperature-2" /><code>{"float Temperature { get; set; }"}</code> | Current temperature. Setting it runs `TemperatureModifier`, then on the server marks the entity for sync. |
 | <Link id="m-volume" /><code>{"float Volume { get; set; }"}</code> | Heat capacity of the point. Starts at the serialized base volume. |
 | <Link id="m-activeeffect" /><code>{"protected "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" ActiveEffect { get; private set; }"}</code> | The pooled visual effect currently attached (glow, smoke and so on), or null. |
-| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |  |
 | <Link id="m-internalconductivitymultiplier-2" /><code>{"protected virtual float InternalConductivityMultiplier { get; }"}</code> | Conductivity between points on the same entity, including global and armour multipliers. Overridden by metal heat points. |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -93,22 +109,30 @@ One point of temperature on an object. The server conducts heat between neighbou
 | <Link id="m-sync" /><code>{"void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the temperature (or just an is-ambient flag) for network sync. Clients apply the read value. |
 | <Link id="m-addeffect" /><code>{"protected void AddEffect("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effect)"}</code> | Spawns a pooled effect under the effect parent if no effect is active yet. |
 | <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Sets up the position helper, sets `Volume` to the base volume and listens for armour changes on the linked equipment slot. |
-| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |  |
-| <Link id="m-checkambientchange" /><code>{"private void CheckAmbientChange()"}</code> |  |
-| <Link id="m-checkenable" /><code>{"private void CheckEnable()"}</code> |  |
-| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |  |
-| <Link id="m-euipmentchanged" /><code>{"private void EuipmentChanged("}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" definition)"}</code> |  |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |  |
-| <Link id="m-neighbourchanged" /><code>{"private void NeighbourChanged("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" neighbour)"}</code> |  |
 | <Link id="m-nonambientchanged" /><code>{"protected virtual void NonAmbientChanged()"}</code> | Called when the temperature changes while not ambient. Shows effects (not on headless servers) and raises `Changed`. |
-| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |  |
 | <Link id="m-ondisable" /><code>{"protected virtual void OnDisable()"}</code> | Resets the temperature to ambient whenever the component is disabled. |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Empty hook for subclasses. |
-| <Link id="m-releaseeffect" /><code>{"private void ReleaseEffect("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
 | <Link id="m-removeeffect" /><code>{"protected void RemoveEffect()"}</code> | Releases the active pooled effect, if any. |
 | <Link id="m-resettoambient" /><code>{"protected virtual void ResetToAmbient()"}</code> | Called when the point returns to ambient: removes effects and raises `Changed`. |
 | <Link id="m-showeffects" /><code>{"protected virtual void ShowEffects()"}</code> | Empty hook that subclasses use to show glow or particles for the current temperature. |
+
+<details>
+<summary>10 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |
+| <Link id="m-checkambientchange" /><code>{"private void CheckAmbientChange()"}</code> |
+| <Link id="m-checkenable" /><code>{"private void CheckEnable()"}</code> |
+| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |
+| <Link id="m-euipmentchanged" /><code>{"private void EuipmentChanged("}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" definition)"}</code> |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |
+| <Link id="m-neighbourchanged" /><code>{"private void NeighbourChanged("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" neighbour)"}</code> |
+| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-releaseeffect" /><code>{"private void ReleaseEffect("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+
+</details>
 
 ## Used in
 

@@ -17,30 +17,43 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnchoredList(Func<int> getCount)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnchoredList(Func<int> getCount)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getcount" /><code>{"private readonly Func<int> getCount"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-getcount" /><code>{"private readonly Func<int> getCount"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-values" /><code>{"List<T> Values { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-values" /><code>{"List<T> Values { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addrange" /><code>{"void AddRange(List<T> newValues)"}</code> |  |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-isneeded" /><code>{"bool IsNeeded()"}</code> |  |
-| <Link id="m-ensurelength" /><code>{"private void EnsureLength()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addrange" /><code>{"void AddRange(List<T> newValues)"}</code> |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> |
+| <Link id="m-isneeded" /><code>{"bool IsNeeded()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ensurelength" /><code>{"private void EnsureLength()"}</code> |
+
+</details>
 
 ## Used in
 

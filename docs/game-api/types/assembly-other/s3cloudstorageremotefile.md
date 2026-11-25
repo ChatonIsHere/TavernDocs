@@ -17,13 +17,13 @@ A **class** in `Alta.IO`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"S3CloudStorageRemoteFile("}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" internalFile, "}<Link to="/game-api/types/assembly-other/s3storagefile">{"S3StorageFile"}</Link>{" remoteFileInfo)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"S3CloudStorageRemoteFile("}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" internalFile, "}<Link to="/game-api/types/assembly-other/s3storagefile">{"S3StorageFile"}</Link>{" remoteFileInfo)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-backuptoremoteinternal" /><code>{"protected override Task BackupToRemoteInternal()"}</code> |  |
-| <Link id="m-copyfromremoteinternal" /><code>{"protected override Task CopyFromRemoteInternal()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-backuptoremoteinternal" /><code>{"protected override Task BackupToRemoteInternal()"}</code> |
+| <Link id="m-copyfromremoteinternal" /><code>{"protected override Task CopyFromRemoteInternal()"}</code> |

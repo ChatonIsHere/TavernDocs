@@ -18,18 +18,28 @@ A **private class** in `Root.Township`, `Alta.QATools`. Reach it through att-stu
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OptimisedChunkLoader(HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> currentLoaded)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OptimisedChunkLoader(HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> currentLoaded)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentloaded" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> currentLoaded"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentloaded" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> currentLoaded"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getchunkstoload" /><code>{"private void Alta.QATools.DebugLoadMarker.IChunkLoader.GetChunksToLoad("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getchunkstoload" /><code>{"private void Alta.QATools.DebugLoadMarker.IChunkLoader.GetChunksToLoad("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList)"}</code> |
+
+</details>

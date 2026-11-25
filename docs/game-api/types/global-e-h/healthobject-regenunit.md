@@ -17,20 +17,25 @@ A **protected class** in `Root.Township`, no namespace. Reach it through att-stu
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RegenUnit(float amount, int duration)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RegenUnit(float amount, int duration)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-amount" /><code>{"private float amount"}</code> |  |
-| <Link id="m-duration" /><code>{"private int duration"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-amount" /><code>{"private float amount"}</code> |
+| <Link id="m-duration" /><code>{"private int duration"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-amount-2" /><code>{"float Amount { get; }"}</code> |  |
-| <Link id="m-duration-2" /><code>{"int Duration { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-amount-2" /><code>{"float Amount { get; }"}</code> |
+| <Link id="m-duration-2" /><code>{"int Duration { get; }"}</code> |

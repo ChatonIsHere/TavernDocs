@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ScaleLerp()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ScaleLerp()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-scale0" /><code>{"private float scale0"}</code> |  |
-| <Link id="m-scale1" /><code>{"private float scale1"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-scale0" /><code>{"private float scale0"}</code> |
+| <Link id="m-scale1" /><code>{"private float scale1"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setscale" /><code>{"void SetScale(float progress)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setscale" /><code>{"void SetScale(float progress)"}</code> |

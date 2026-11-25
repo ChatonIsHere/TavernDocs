@@ -17,29 +17,34 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimedEventSetup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimedEventSetup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ontimereached" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onTimeReached"}</code> |  |
-| <Link id="m-timeinseconds" /><code>{"private float timeInSeconds"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ontimereached" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onTimeReached"}</code> |
+| <Link id="m-timeinseconds" /><code>{"private float timeInSeconds"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ontimereached-2" /><code><Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" OnTimeReached { get; }"}</code> |  |
-| <Link id="m-timeinseconds-2" /><code>{"float TimeInSeconds { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ontimereached-2" /><code><Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" OnTimeReached { get; }"}</code> |
+| <Link id="m-timeinseconds-2" /><code>{"float TimeInSeconds { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invoke" /><code>{"void Invoke()"}</code> |
 
 ## Used in
 

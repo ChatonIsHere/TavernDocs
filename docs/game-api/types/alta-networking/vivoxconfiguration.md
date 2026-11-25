@@ -16,31 +16,36 @@ A **class** in `Root.Township`, `Alta.Voice`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VivoxConfiguration(string issuer, string domain, string endPoint, bool isUsingSandbox = false)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VivoxConfiguration(string issuer, string domain, string endPoint, bool isUsingSandbox = false)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isusingsandbox" /><code>{"private bool isUsingSandbox"}</code> |  |
-| <Link id="m-sandboxkey" /><code>{"private const string SandboxKey"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isusingsandbox" /><code>{"private bool isUsingSandbox"}</code> |
+| <Link id="m-sandboxkey" /><code>{"private const string SandboxKey"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-domain" /><code>{"string Domain { get; }"}</code> |  |
-| <Link id="m-endpoint" /><code>{"string EndPoint { get; }"}</code> |  |
-| <Link id="m-issuer" /><code>{"string Issuer { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-domain" /><code>{"string Domain { get; }"}</code> |
+| <Link id="m-endpoint" /><code>{"string EndPoint { get; }"}</code> |
+| <Link id="m-issuer" /><code>{"string Issuer { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getconnecttokenasync" /><code>{"async Task<string> GetConnectTokenAsync(IChannelSession session)"}</code> |  |
-| <Link id="m-getloginasync" /><code>{"async Task<string> GetLoginAsync(ILoginSession session)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getconnecttokenasync" /><code>{"async Task<string> GetConnectTokenAsync(IChannelSession session)"}</code> |
+| <Link id="m-getloginasync" /><code>{"async Task<string> GetLoginAsync(ILoginSession session)"}</code> |
 
 ## Used in
 

@@ -19,27 +19,32 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EquipmentReference()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EquipmentReference()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-armor" /><code>{"private "}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" armor"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-armor" /><code>{"private "}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" armor"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-equipment" /><code><Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" Equipment { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-equipment" /><code><Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" Equipment { get; set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-changed" /><code>{"event "}<Link to="/game-api/types/alta-items/equipmentreference-equipmentchangedhandler">{"EquipmentReference.EquipmentChangedHandler"}</Link>{" Changed"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-changed" /><code>{"event "}<Link to="/game-api/types/alta-items/equipmentreference-equipmentchangedhandler">{"EquipmentReference.EquipmentChangedHandler"}</Link>{" Changed"}</code> |
 
 ## Used in
 

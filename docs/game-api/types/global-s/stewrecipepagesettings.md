@@ -22,9 +22,9 @@ Global settings for generated stew recipe pages: the page template and where ing
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StewRecipePageSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StewRecipePageSettings()"}</code> |
 
 ## Fields
 

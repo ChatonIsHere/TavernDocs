@@ -17,21 +17,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GetSizeTest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GetSizeTest()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-doj" /><code>{"private bool doj"}</code> |  |
-| <Link id="m-x" /><code>{"private string x"}</code> |  |
-| <Link id="m-y" /><code>{"private string y"}</code> |  |
-| <Link id="m-z" /><code>{"private string z"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-doj" /><code>{"private bool doj"}</code> |
+| <Link id="m-x" /><code>{"private string x"}</code> |
+| <Link id="m-y" /><code>{"private string y"}</code> |
+| <Link id="m-z" /><code>{"private string z"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getwidth" /><code>{"void GetWidth()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getwidth" /><code>{"void GetWidth()"}</code> |

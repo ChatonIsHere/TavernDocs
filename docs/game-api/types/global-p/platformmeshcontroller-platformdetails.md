@@ -17,19 +17,19 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformDetails()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformDetails()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isaplyingnullmaterial" /><code>{"bool isAplyingNullMaterial"}</code> |  |
-| <Link id="m-isaplyingnullmesh" /><code>{"bool isAplyingNullMesh"}</code> |  |
-| <Link id="m-replacementmaterial" /><code>{"Material replacementMaterial"}</code> |  |
-| <Link id="m-replacementmesh" /><code>{"Mesh replacementMesh"}</code> |  |
-| <Link id="m-targetplatform" /><code><Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" targetPlatform"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isaplyingnullmaterial" /><code>{"bool isAplyingNullMaterial"}</code> |
+| <Link id="m-isaplyingnullmesh" /><code>{"bool isAplyingNullMesh"}</code> |
+| <Link id="m-replacementmaterial" /><code>{"Material replacementMaterial"}</code> |
+| <Link id="m-replacementmesh" /><code>{"Mesh replacementMesh"}</code> |
+| <Link id="m-targetplatform" /><code><Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" targetPlatform"}</code> |
 
 ## Used in
 

@@ -17,22 +17,27 @@ A **class** in `Root.Township`, `Alta.Menu`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerCommandAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerCommandAction()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-buttontext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" buttonText"}</code> |  |
-| <Link id="m-command" /><code>{"private "}<Link to="/game-api/types/alta-menus/servercommanddefinitionbase">{"ServerCommandDefinitionBase"}</Link>{" command"}</code> |  |
-| <Link id="m-mindelaybetweencommands" /><code>{"private float minDelayBetweenCommands"}</code> |  |
-| <Link id="m-nextcommand" /><code>{"private static float nextCommand"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-buttontext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" buttonText"}</code> |
+| <Link id="m-command" /><code>{"private "}<Link to="/game-api/types/alta-menus/servercommanddefinitionbase">{"ServerCommandDefinitionBase"}</Link>{" command"}</code> |
+| <Link id="m-mindelaybetweencommands" /><code>{"private float minDelayBetweenCommands"}</code> |
+| <Link id="m-nextcommand" /><code>{"private static float nextCommand"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sendcommand" /><code>{"void SendCommand()"}</code> |  |
-| <Link id="m-setsettings" /><code>{"override void SetSettings("}<Link to="/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" newSettingToDisplay)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-sendcommand" /><code>{"void SendCommand()"}</code> |
+| <Link id="m-setsettings" /><code>{"override void SetSettings("}<Link to="/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" newSettingToDisplay)"}</code> |

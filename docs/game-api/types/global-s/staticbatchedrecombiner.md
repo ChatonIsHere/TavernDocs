@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-recombine" /><code>{"static void Recombine(Transform parent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-recombine" /><code>{"static void Recombine(Transform parent)"}</code> |

@@ -17,27 +17,32 @@ A **class** in `Root.Township`, `Alta.Environmental.Vegetation`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClumpLOD()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClumpLOD()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-appearpoint" /><code>{"private float appearPoint"}</code> |  |
-| <Link id="m-chance" /><code>{"private float chance"}</code> |  |
-| <Link id="m-gameobject" /><code>{"private GameObject gameObject"}</code> |  |
-| <Link id="m-renderers" /><code>{"private List<Renderer> renderers"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-appearpoint" /><code>{"private float appearPoint"}</code> |
+| <Link id="m-chance" /><code>{"private float chance"}</code> |
+| <Link id="m-gameobject" /><code>{"private GameObject gameObject"}</code> |
+| <Link id="m-renderers" /><code>{"private List<Renderer> renderers"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-appearpoint-2" /><code>{"float AppearPoint { get; }"}</code> |  |
-| <Link id="m-chance-2" /><code>{"float Chance { get; }"}</code> |  |
-| <Link id="m-gameobject-2" /><code>{"GameObject GameObject { get; }"}</code> |  |
-| <Link id="m-renderers-2" /><code>{"List<Renderer> Renderers { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-appearpoint-2" /><code>{"float AppearPoint { get; }"}</code> |
+| <Link id="m-chance-2" /><code>{"float Chance { get; }"}</code> |
+| <Link id="m-gameobject-2" /><code>{"GameObject GameObject { get; }"}</code> |
+| <Link id="m-renderers-2" /><code>{"List<Renderer> Renderers { get; }"}</code> |
 
 ## Used in
 

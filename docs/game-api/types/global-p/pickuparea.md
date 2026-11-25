@@ -20,36 +20,46 @@ Tracks the pickups inside a trigger.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PickupArea()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PickupArea()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-added" /><code>{"private "}<Link to="/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" added"}</code> |  |
-| <Link id="m-allowedtags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> allowedTags"}</code> |  |
-| <Link id="m-contained" /><code>{"private HashSet<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> contained"}</code> |  |
-| <Link id="m-isallowingcrafted" /><code>{"private bool isAllowingCrafted"}</code> |  |
-| <Link id="m-removed" /><code>{"private "}<Link to="/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" removed"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-added" /><code>{"private "}<Link to="/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" added"}</code> |
+| <Link id="m-allowedtags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> allowedTags"}</code> |
+| <Link id="m-contained" /><code>{"private HashSet<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> contained"}</code> |
+| <Link id="m-isallowingcrafted" /><code>{"private bool isAllowingCrafted"}</code> |
+| <Link id="m-removed" /><code>{"private "}<Link to="/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" removed"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-added-2" /><code><Link to="/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" Added { get; }"}</code> |  |
-| <Link id="m-contained-2" /><code>{"HashSet<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> Contained { get; }"}</code> |  |
-| <Link id="m-removed-2" /><code><Link to="/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" Removed { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-added-2" /><code><Link to="/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" Added { get; }"}</code> |
+| <Link id="m-contained-2" /><code>{"HashSet<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> Contained { get; }"}</code> |
+| <Link id="m-removed-2" /><code><Link to="/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" Removed { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-destroyed" /><code>{"private void Destroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
-| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |  |
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroyed" /><code>{"private void Destroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
+| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |
+
+</details>
 
 ## Used in
 

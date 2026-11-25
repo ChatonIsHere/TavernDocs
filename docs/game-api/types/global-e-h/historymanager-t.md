@@ -17,41 +17,54 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HistoryManager(int maxCount)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HistoryManager(int maxCount)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actions" /><code>{"private T[] actions"}</code> |  |
-| <Link id="m-firstindex" /><code>{"private int firstIndex"}</code> |  |
-| <Link id="m-ismodifying" /><code>{"private bool isModifying"}</code> |  |
-| <Link id="m-lastindex" /><code>{"private int lastIndex"}</code> |  |
-| <Link id="m-nextindex" /><code>{"private int nextIndex"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-actions" /><code>{"private T[] actions"}</code> |
+| <Link id="m-firstindex" /><code>{"private int firstIndex"}</code> |
+| <Link id="m-ismodifying" /><code>{"private bool isModifying"}</code> |
+| <Link id="m-lastindex" /><code>{"private int lastIndex"}</code> |
+| <Link id="m-nextindex" /><code>{"private int nextIndex"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ispushpossible" /><code>{"bool IsPushPossible { get; }"}</code> |  |
-| <Link id="m-isredopossible" /><code>{"bool IsRedoPossible { get; }"}</code> |  |
-| <Link id="m-isundopossible" /><code>{"bool IsUndoPossible { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ispushpossible" /><code>{"bool IsPushPossible { get; }"}</code> |
+| <Link id="m-isredopossible" /><code>{"bool IsRedoPossible { get; }"}</code> |
+| <Link id="m-isundopossible" /><code>{"bool IsUndoPossible { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-itempushed" /><code>{"event Action ItemPushed"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-itempushed" /><code>{"event Action ItemPushed"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-push" /><code>{"void Push(T item)"}</code> |  |
-| <Link id="m-redo" /><code>{"void Redo()"}</code> |  |
-| <Link id="m-undo" /><code>{"void Undo()"}</code> |  |
-| <Link id="m-back" /><code>{"private void Back()"}</code> |  |
-| <Link id="m-forward" /><code>{"private void Forward()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> |
+| <Link id="m-push" /><code>{"void Push(T item)"}</code> |
+| <Link id="m-redo" /><code>{"void Redo()"}</code> |
+| <Link id="m-undo" /><code>{"void Undo()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-back" /><code>{"private void Back()"}</code> |
+| <Link id="m-forward" /><code>{"private void Forward()"}</code> |
+
+</details>

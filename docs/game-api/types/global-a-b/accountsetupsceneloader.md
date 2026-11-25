@@ -17,12 +17,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AccountSetupSceneLoader()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AccountSetupSceneLoader()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loadasync" /><code>{"Task LoadAsync()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-loadasync" /><code>{"Task LoadAsync()"}</code> |

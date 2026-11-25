@@ -17,17 +17,27 @@ A **static class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-future" /><code>{"private static void Future(float progress, char measure = s)"}</code> |  |
-| <Link id="m-keywords" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/global-e-h/gametimemanager-timename">{"GameTimeManager.TimeName"}</Link>{"> Keywords()"}</code> |  |
-| <Link id="m-printcurrenttime" /><code>{"private static TimeSpan PrintCurrentTime()"}</code> |  |
-| <Link id="m-printcurrenttimeofday" /><code>{"private static void PrintCurrentTimeOfDay(bool isNormalised = false)"}</code> |  |
-| <Link id="m-set" /><code>{"private static void Set(string time)"}</code> |  |
-| <Link id="m-toggledaynight" /><code>{"private static void ToggleDayNight()"}</code> |  |
+<details>
+<summary>6 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-future" /><code>{"private static void Future(float progress, char measure = s)"}</code> |
+| <Link id="m-keywords" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/global-e-h/gametimemanager-timename">{"GameTimeManager.TimeName"}</Link>{"> Keywords()"}</code> |
+| <Link id="m-printcurrenttime" /><code>{"private static TimeSpan PrintCurrentTime()"}</code> |
+| <Link id="m-printcurrenttimeofday" /><code>{"private static void PrintCurrentTimeOfDay(bool isNormalised = false)"}</code> |
+| <Link id="m-set" /><code>{"private static void Set(string time)"}</code> |
+| <Link id="m-toggledaynight" /><code>{"private static void ToggleDayNight()"}</code> |
+
+</details>

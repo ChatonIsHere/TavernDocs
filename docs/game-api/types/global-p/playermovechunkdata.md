@@ -17,17 +17,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerMoveChunkData("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" oldChunk, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" newChunk)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerMoveChunkData("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" oldChunk, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" newChunk)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-newchunk" /><code>{"string newChunk"}</code> |  |
-| <Link id="m-oldchunk" /><code>{"string oldChunk"}</code> |  |
-| <Link id="m-player" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" player"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-newchunk" /><code>{"string newChunk"}</code> |
+| <Link id="m-oldchunk" /><code>{"string oldChunk"}</code> |
+| <Link id="m-player" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" player"}</code> |
 
 ## Used in
 

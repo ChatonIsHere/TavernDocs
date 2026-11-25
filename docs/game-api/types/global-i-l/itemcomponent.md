@@ -20,15 +20,20 @@ Base for an asset that adds data to an `Item`, such as `CookableItem`. Can be li
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ItemComponent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ItemComponent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-physicalmaterials" /><code>{"private List<"}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"> physicalMaterials"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-physicalmaterials" /><code>{"private List<"}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"> physicalMaterials"}</code> |
+
+</details>
 
 ## Properties
 
@@ -41,7 +46,15 @@ Base for an asset that adds data to an `Item`, such as `CookableItem`. Can be li
 | Member | What it is |
 | --- | --- |
 | <Link id="m-checkmatch" /><code>{"bool CheckMatch("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial)"}</code> | Whether this component applies to a physical material. True if none are listed or the material is null. |
-| <Link id="m-initialize" /><code>{"private void IItemComponent.Initialize("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"private void IItemComponent.Initialize("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> |
+
+</details>
 
 ## Used in
 

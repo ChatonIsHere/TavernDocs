@@ -16,23 +16,23 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.LowLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PagedConfig()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PagedConfig()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-default" /><code>{"static "}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" Default { get; }"}</code> |  |
-| <Link id="m-limit" /><code>{"int Limit { get; set; }"}</code> |  |
-| <Link id="m-paginationtoken" /><code>{"string PaginationToken { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-default" /><code>{"static "}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" Default { get; }"}</code> |
+| <Link id="m-limit" /><code>{"int Limit { get; set; }"}</code> |
+| <Link id="m-paginationtoken" /><code>{"string PaginationToken { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getpaginationqueryparams" /><code>{"string GetPaginationQueryParams(NameValueCollection extra = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getpaginationqueryparams" /><code>{"string GetPaginationQueryParams(NameValueCollection extra = null)"}</code> |
 
 ## Used in
 

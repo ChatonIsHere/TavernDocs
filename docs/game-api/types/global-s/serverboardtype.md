@@ -16,12 +16,12 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-discoverservers" /><code>{"DiscoverServers = 3"}</code> |  |
-| <Link id="m-myservers" /><code>{"MyServers = 1"}</code> |  |
-| <Link id="m-openservers" /><code>{"OpenServers = 2"}</code> |  |
-| <Link id="m-publicserver" /><code>{"PublicServer = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-discoverservers" /><code>{"DiscoverServers = 3"}</code> |
+| <Link id="m-myservers" /><code>{"MyServers = 1"}</code> |
+| <Link id="m-openservers" /><code>{"OpenServers = 2"}</code> |
+| <Link id="m-publicserver" /><code>{"PublicServer = 0"}</code> |
 
 ## Used in
 

@@ -17,13 +17,13 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformConditionAttribute("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PlatformConditionAttribute(bool isAndroid)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformConditionAttribute("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime)"}</code> |
+| <Link id="m-ctor-2" /><code>{"PlatformConditionAttribute(bool isAndroid)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-runtime" /><code><Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" Runtime { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-runtime" /><code><Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" Runtime { get; }"}</code> |

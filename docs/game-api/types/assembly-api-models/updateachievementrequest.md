@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UpdateAchievementRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UpdateAchievementRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-achievementhash" /><code>{"uint AchievementHash { get; set; }"}</code> |  |
-| <Link id="m-iscompleted" /><code>{"bool IsCompleted { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-achievementhash" /><code>{"uint AchievementHash { get; set; }"}</code> |
+| <Link id="m-iscompleted" /><code>{"bool IsCompleted { get; set; }"}</code> |
 
 ## Used in
 

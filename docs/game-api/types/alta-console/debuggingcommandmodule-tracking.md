@@ -18,8 +18,8 @@ A **static class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-get" /><code>{"static "}<Link to="/game-api/types/alta-console/entityinfo">{"EntityInfo"}</Link>{" Get(string name)"}</code> |  |
-| <Link id="m-remove" /><code>{"static void Remove(string name)"}</code> |  |
-| <Link id="m-track" /><code>{"static void Track(uint entityId, string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-get" /><code>{"static "}<Link to="/game-api/types/alta-console/entityinfo">{"EntityInfo"}</Link>{" Get(string name)"}</code> |
+| <Link id="m-remove" /><code>{"static void Remove(string name)"}</code> |
+| <Link id="m-track" /><code>{"static void Track(uint entityId, string name)"}</code> |

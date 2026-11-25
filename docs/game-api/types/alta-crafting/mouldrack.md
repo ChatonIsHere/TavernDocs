@@ -20,33 +20,43 @@ Visual rack for moulds.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MouldRack()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MouldRack()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-frames" /><code>{"private Transform[] frames"}</code> |  |
-| <Link id="m-progresscurve" /><code>{"private AnimationCurve progressCurve"}</code> |  |
-| <Link id="m-seperation" /><code>{"private float seperation"}</code> |  |
-| <Link id="m-slide" /><code>{"private float slide"}</code> |  |
-| <Link id="m-snapweight" /><code>{"private float snapWeight"}</code> |  |
-| <Link id="m-xrotation" /><code>{"private AnimationCurve xRotation"}</code> |  |
-| <Link id="m-yposition" /><code>{"private AnimationCurve yPosition"}</code> |  |
-| <Link id="m-zposition" /><code>{"private AnimationCurve zPosition"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-frames" /><code>{"private Transform[] frames"}</code> |
+| <Link id="m-progresscurve" /><code>{"private AnimationCurve progressCurve"}</code> |
+| <Link id="m-seperation" /><code>{"private float seperation"}</code> |
+| <Link id="m-slide" /><code>{"private float slide"}</code> |
+| <Link id="m-snapweight" /><code>{"private float snapWeight"}</code> |
+| <Link id="m-xrotation" /><code>{"private AnimationCurve xRotation"}</code> |
+| <Link id="m-yposition" /><code>{"private AnimationCurve yPosition"}</code> |
+| <Link id="m-zposition" /><code>{"private AnimationCurve zPosition"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-slide-2" /><code>{"float Slide { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-slide-2" /><code>{"float Slide { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-updatepositions" /><code>{"private void UpdatePositions()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| <Link id="m-updatepositions" /><code>{"private void UpdatePositions()"}</code> |
+
+</details>

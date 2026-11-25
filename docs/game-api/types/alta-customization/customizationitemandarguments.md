@@ -16,10 +16,10 @@ A **struct** in `Root.Township`, `Alta.Customization`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments"}</code> |  |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" definition"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments"}</code> |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" definition"}</code> |
 
 ## Used in
 

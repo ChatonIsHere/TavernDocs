@@ -20,19 +20,27 @@ Base component for the part of an item or creature that deals hits (a blade edge
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ImpactGenerator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ImpactGenerator()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-cachedtransform" /><code>{"protected Transform cachedTransform"}</code> | Cached transform of this component. |
-| <Link id="m-impactorsettings" /><code>{"private "}<Link to="/game-api/types/alta-items/impactorsettings">{"ImpactorSettings"}</Link>{" impactorSettings"}</code> |  |
-| <Link id="m-impactorvalues" /><code>{"private "}<Link to="/game-api/types/alta-items/impactorvalues">{"ImpactorValues"}</Link>{" impactorValues"}</code> |  |
-| <Link id="m-overridehardnesslevel" /><code>{"private uint overrideHardnessLevel"}</code> |  |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |  |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-impactorsettings" /><code>{"private "}<Link to="/game-api/types/alta-items/impactorsettings">{"ImpactorSettings"}</Link>{" impactorSettings"}</code> |
+| <Link id="m-impactorvalues" /><code>{"private "}<Link to="/game-api/types/alta-items/impactorvalues">{"ImpactorValues"}</Link>{" impactorValues"}</code> |
+| <Link id="m-overridehardnesslevel" /><code>{"private uint overrideHardnessLevel"}</code> |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
+
+</details>
 
 ## Properties
 

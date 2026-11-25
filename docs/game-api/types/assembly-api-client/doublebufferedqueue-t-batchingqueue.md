@@ -17,10 +17,10 @@ An **private enum** in `Alta.Api.Client`, `Alta.Api.Client.LowLevel`. Reach it t
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-primary" /><code>{"Primary = 0"}</code> |  |
-| <Link id="m-secondary" /><code>{"Secondary = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-primary" /><code>{"Primary = 0"}</code> |
+| <Link id="m-secondary" /><code>{"Secondary = 1"}</code> |
 
 ## Used in
 

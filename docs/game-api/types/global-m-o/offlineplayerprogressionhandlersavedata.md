@@ -19,12 +19,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OfflinePlayerProgressionHandlerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OfflinePlayerProgressionHandlerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-progresses" /><code><Link to="/game-api/types/global-m-o/offlineplayerprogress">{"OfflinePlayerProgress"}</Link>{"[] progresses"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-progresses" /><code><Link to="/game-api/types/global-m-o/offlineplayerprogress">{"OfflinePlayerProgress"}</Link>{"[] progresses"}</code> |

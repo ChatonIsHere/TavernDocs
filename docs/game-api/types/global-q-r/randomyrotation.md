@@ -17,12 +17,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RandomYRotation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RandomYRotation()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modify" /><code>{"override void Modify(ref Vector3 position, ref Quaternion rotation)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modify" /><code>{"override void Modify(ref Vector3 position, ref Quaternion rotation)"}</code> |

@@ -17,18 +17,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OpenServerLogs()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OpenServerLogs()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-description" /><code>{"override string Description { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-description" /><code>{"override string Description { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-run" /><code>{"protected override void Run()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-run" /><code>{"protected override void Run()"}</code> |

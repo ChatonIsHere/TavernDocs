@@ -17,9 +17,9 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModifiableStaticEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModifiableStaticEvent()"}</code> |
 
 ## Used in
 

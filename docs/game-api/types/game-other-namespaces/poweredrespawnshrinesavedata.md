@@ -19,15 +19,15 @@ A **class** in `Root.Township`, `ATT.Respawn`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PoweredRespawnShrineSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PoweredRespawnShrineSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-shrineid" /><code>{"string ShrineId"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-shrineid" /><code>{"string ShrineId"}</code> |
 
 ## Used in
 

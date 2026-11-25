@@ -20,9 +20,9 @@ The answer to `token list`: every named token.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TokenList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TokenList()"}</code> |
 
 ## Properties
 

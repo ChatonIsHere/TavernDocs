@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, `Alta.Impact`. Reach it through att-stu
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-effectiveness" /><code>{"float effectiveness"}</code> |  |
-| <Link id="m-point" /><code>{"Vector3 point"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-effectiveness" /><code>{"float effectiveness"}</code> |
+| <Link id="m-point" /><code>{"Vector3 point"}</code> |
 
 ## Used in
 

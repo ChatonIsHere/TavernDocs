@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, `ATT.MicroTutorial`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logerror" /><code>{"static void LogError(IResult result, "}<Link to="/game-api/types/game-other-namespaces/microtutoriallogger">{"MicroTutorialLogger"}</Link>{" logger)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-logerror" /><code>{"static void LogError(IResult result, "}<Link to="/game-api/types/game-other-namespaces/microtutoriallogger">{"MicroTutorialLogger"}</Link>{" logger)"}</code> |

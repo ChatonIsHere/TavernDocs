@@ -16,16 +16,16 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatManagerSaveDataStat()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatManagerSaveDataStat()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-baseflat" /><code>{"float baseFlat"}</code> |  |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-baseflat" /><code>{"float baseFlat"}</code> |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> |
 
 ## Used in
 

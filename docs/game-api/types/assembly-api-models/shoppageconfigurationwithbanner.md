@@ -17,21 +17,21 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShopPageConfigurationWithBanner()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShopPageConfigurationWithBanner()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-create" /><code>{"static "}<Link to="/game-api/types/assembly-api-models/shoppageconfigurationwithbanner">{"ShopPageConfigurationWithBanner"}</Link>{" Create("}<Link to="/game-api/types/assembly-api-models/shoppageconfiguration">{"ShopPageConfiguration"}</Link>{" shop, "}<Link to="/game-api/types/assembly-api-models/gamehomeconfiguration">{"GameHomeConfiguration"}</Link>{" gameHome)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-create" /><code>{"static "}<Link to="/game-api/types/assembly-api-models/shoppageconfigurationwithbanner">{"ShopPageConfigurationWithBanner"}</Link>{" Create("}<Link to="/game-api/types/assembly-api-models/shoppageconfiguration">{"ShopPageConfiguration"}</Link>{" shop, "}<Link to="/game-api/types/assembly-api-models/gamehomeconfiguration">{"GameHomeConfiguration"}</Link>{" gameHome)"}</code> |
 
 ## Used in
 

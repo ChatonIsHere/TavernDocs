@@ -17,14 +17,14 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-workingnode" /><code><Link to="/game-api/types/global-a-b/astarworkingnode-tnode-tconnection">{"AStarWorkingNode"}</Link>{"<TNode, TConnection> WorkingNode { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> |
+| <Link id="m-workingnode" /><code><Link to="/game-api/types/global-a-b/astarworkingnode-tnode-tconnection">{"AStarWorkingNode"}</Link>{"<TNode, TConnection> WorkingNode { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-calculateheuristic" /><code>{"float CalculateHeuristic(TNode target)"}</code> |  |
-| <Link id="m-getconnectionsforastar" /><code>{"ICollection<TConnection> GetConnectionsForAStar()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-calculateheuristic" /><code>{"float CalculateHeuristic(TNode target)"}</code> |
+| <Link id="m-getconnectionsforastar" /><code>{"ICollection<TConnection> GetConnectionsForAStar()"}</code> |

@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CommunalStorageData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CommunalStorageData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-uniqueidentifier" /><code><Link to="/game-api/types/alta-items/communalstorageuniqueidentifier">{"CommunalStorageUniqueIdentifier"}</Link>{" uniqueIdentifier"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-uniqueidentifier" /><code><Link to="/game-api/types/alta-items/communalstorageuniqueidentifier">{"CommunalStorageUniqueIdentifier"}</Link>{" uniqueIdentifier"}</code> |

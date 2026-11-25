@@ -17,32 +17,45 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DiscreteStatBarVisual()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DiscreteStatBarVisual()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alpha" /><code>{"private readonly int _Alpha"}</code> |  |
-| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/global-a-b/animatescaleovertime">{"AnimateScaleOverTime"}</Link>{" animator"}</code> |  |
-| <Link id="m-color" /><code>{"private Color color"}</code> |  |
-| <Link id="m-material" /><code>{"private Material material"}</code> |  |
-| <Link id="m-pingcoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" pingCoroutine"}</code> |  |
-| <Link id="m-renderers" /><code>{"private Renderer[] renderers"}</code> |  |
-| <Link id="m-usedmaterial" /><code>{"private Material usedMaterial"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-alpha" /><code>{"private readonly int _Alpha"}</code> |
+| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/global-a-b/animatescaleovertime">{"AnimateScaleOverTime"}</Link>{" animator"}</code> |
+| <Link id="m-color" /><code>{"private Color color"}</code> |
+| <Link id="m-material" /><code>{"private Material material"}</code> |
+| <Link id="m-pingcoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" pingCoroutine"}</code> |
+| <Link id="m-renderers" /><code>{"private Renderer[] renderers"}</code> |
+| <Link id="m-usedmaterial" /><code>{"private Material usedMaterial"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ping" /><code>{"void Ping(float duration)"}</code> |  |
-| <Link id="m-setrenderersenabled" /><code>{"void SetRenderersEnabled(bool isEnabled)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-pinganimation" /><code>{"private IEnumerator PingAnimation(float duration) (iterator)"}</code> |  |
-| <Link id="m-setactive" /><code>{"internal void SetActive(bool activeState)"}</code> |  |
-| <Link id="m-setalpha" /><code>{"internal void SetAlpha(float alpha)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ping" /><code>{"void Ping(float duration)"}</code> |
+| <Link id="m-setrenderersenabled" /><code>{"void SetRenderersEnabled(bool isEnabled)"}</code> |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-pinganimation" /><code>{"private IEnumerator PingAnimation(float duration) (iterator)"}</code> |
+| <Link id="m-setactive" /><code>{"internal void SetActive(bool activeState)"}</code> |
+| <Link id="m-setalpha" /><code>{"internal void SetAlpha(float alpha)"}</code> |
+
+</details>
 
 ## Used in
 

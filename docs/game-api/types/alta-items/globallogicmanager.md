@@ -22,21 +22,26 @@ Holds the shared data records for logic components (switches, wires and so on), 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalLogicManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GlobalLogicManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-contextstack" /><code>{"private static Stack<"}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{"> contextStack"}</code> |  |
-| <Link id="m-datamap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-items/ilogicvaluedata">{"ILogicValueData"}</Link>{"> dataMap"}</code> |  |
-| <Link id="m-defaultsetdata" /><code>{"private "}<Link to="/game-api/types/global-m-o/nonhasheddata">{"NonHashedData"}</Link>{" defaultSetData"}</code> |  |
-| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" instance"}</code> |  |
-| <Link id="m-isglobal" /><code>{"private bool isGlobal"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-nextid" /><code>{"private uint nextId"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-contextstack" /><code>{"private static Stack<"}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{"> contextStack"}</code> |
+| <Link id="m-datamap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-items/ilogicvaluedata">{"ILogicValueData"}</Link>{"> dataMap"}</code> |
+| <Link id="m-defaultsetdata" /><code>{"private "}<Link to="/game-api/types/global-m-o/nonhasheddata">{"NonHashedData"}</Link>{" defaultSetData"}</code> |
+| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" instance"}</code> |
+| <Link id="m-isglobal" /><code>{"private bool isGlobal"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-nextid" /><code>{"private uint nextId"}</code> |
+
+</details>
 
 ## Properties
 
@@ -53,9 +58,17 @@ Holds the shared data records for logic components (switches, wires and so on), 
 | <Link id="m-getdata-2" /><code><Link to="/game-api/types/alta-items/ilogicvaluedata">{"ILogicValueData"}</Link>{" GetData(uint identifier)"}</code> | Gets a record by id. The generic form assigns a new id if 0 and creates missing records; the plain form returns null. |
 | <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: loads the default data set into its entity if it has no records yet. |
 | <Link id="m-restore" /><code>{"void Restore<TData>(ref TData saveData)"}</code> | On load: keeps the existing record for an id if there is one, otherwise stores the loaded one. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-popcontext" /><code>{"private void ISavingContext.PopContext()"}</code> |  |
-| <Link id="m-pushcontext" /><code>{"private void ISavingContext.PushContext()"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-popcontext" /><code>{"private void ISavingContext.PopContext()"}</code> |
+| <Link id="m-pushcontext" /><code>{"private void ISavingContext.PushContext()"}</code> |
+
+</details>
 
 ## Used in
 

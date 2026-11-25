@@ -20,17 +20,25 @@ Base of `NetworkPrefab` and `NetworkScene`. Holds the list of child network enti
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityParent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkEntityParent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-embeddedentities" /><code>{"protected List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> embeddedEntities"}</code> |  |
-| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> |  |
-| <Link id="m-nextsceneentityid" /><code>{"private int nextSceneEntityId"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-embeddedentities" /><code>{"protected List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> embeddedEntities"}</code> |
+| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-nextsceneentityid" /><code>{"private int nextSceneEntityId"}</code> |
+
+</details>
 
 ## Properties
 
@@ -38,7 +46,15 @@ Base of `NetworkPrefab` and `NetworkScene`. Holds the list of child network enti
 | --- | --- |
 | <Link id="m-embedded" /><code>{"List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> Embedded { get; }"}</code> | Child entities embedded in this prefab or scene. An entity's `EmbeddedId` is its index here. |
 | <Link id="m-isembeddedupdated" /><code>{"bool IsEmbeddedUpdated { get; set; }"}</code> | Set once embedded ids are assigned, so play mode doesn't redo it. |
-| <Link id="m-nextembeddedentityid" /><code>{"private int NextEmbeddedEntityId { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-nextembeddedentityid" /><code>{"private int NextEmbeddedEntityId { get; }"}</code> |
+
+</details>
 
 ## Methods
 

@@ -18,19 +18,24 @@ An **abstract class** in `Root.Township`, `Alta.ScreenshotCamera`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected CameraButton()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected CameraButton()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handcamera" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-handcamera" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
-| <Link id="m-updatesettings" /><code>{"protected abstract void UpdateSettings("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |
+| <Link id="m-updatesettings" /><code>{"protected abstract void UpdateSettings("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera)"}</code> |

@@ -17,23 +17,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LinuxServerConsole()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LinuxServerConsole()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isalive" /><code>{"private bool isAlive"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isalive" /><code>{"private bool isAlive"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handlelog" /><code>{"override void HandleLog(string message, LogLevel level)"}</code> |  |
-| <Link id="m-shutdown" /><code>{"override void Shutdown()"}</code> |  |
-| <Link id="m-handleinteruptsignal" /><code>{"private void HandleInteruptSignal(object sender, ConsoleCancelEventArgs e)"}</code> |  |
-| <Link id="m-handleterminatesignal" /><code>{"private void HandleTerminateSignal(object sender, EventArgs e)"}</code> |  |
-| <Link id="m-runconsole" /><code>{"private void RunConsole()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-handlelog" /><code>{"override void HandleLog(string message, LogLevel level)"}</code> |
+| <Link id="m-shutdown" /><code>{"override void Shutdown()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-handleinteruptsignal" /><code>{"private void HandleInteruptSignal(object sender, ConsoleCancelEventArgs e)"}</code> |
+| <Link id="m-handleterminatesignal" /><code>{"private void HandleTerminateSignal(object sender, EventArgs e)"}</code> |
+| <Link id="m-runconsole" /><code>{"private void RunConsole()"}</code> |
+
+</details>

@@ -17,6 +17,6 @@ An **interface** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |

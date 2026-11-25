@@ -17,30 +17,43 @@ A **class** in `Root.Township`, `Township.Downed`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ReviveOrbMovementModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ReviveOrbMovementModifier()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-curve" /><code>{"private readonly AnimationCurve curve"}</code> |  |
-| <Link id="m-movementrange" /><code>{"private Vector3 movementRange"}</code> |  |
-| <Link id="m-movespeed" /><code>{"private float moveSpeed"}</code> |  |
-| <Link id="m-originalposition" /><code>{"private Vector3 originalPosition"}</code> |  |
-| <Link id="m-startingposition" /><code>{"private Vector3 startingPosition"}</code> |  |
-| <Link id="m-targetposition" /><code>{"private Vector3 targetPosition"}</code> |  |
-| <Link id="m-timer" /><code>{"private float timer"}</code> |  |
-| <Link id="m-timetomove" /><code>{"private float timeToMove"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-curve" /><code>{"private readonly AnimationCurve curve"}</code> |
+| <Link id="m-movementrange" /><code>{"private Vector3 movementRange"}</code> |
+| <Link id="m-movespeed" /><code>{"private float moveSpeed"}</code> |
+| <Link id="m-originalposition" /><code>{"private Vector3 originalPosition"}</code> |
+| <Link id="m-startingposition" /><code>{"private Vector3 startingPosition"}</code> |
+| <Link id="m-targetposition" /><code>{"private Vector3 targetPosition"}</code> |
+| <Link id="m-timer" /><code>{"private float timer"}</code> |
+| <Link id="m-timetomove" /><code>{"private float timeToMove"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize(Vector3 movementRange, float moveSpeed)"}</code> |  |
-| <Link id="m-setoriginposition" /><code>{"void SetOriginPosition(Vector3 newPosition)"}</code> |  |
-| <Link id="m-lerptoposition" /><code>{"private IEnumerator LerpToPosition() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"void Initialize(Vector3 movementRange, float moveSpeed)"}</code> |
+| <Link id="m-setoriginposition" /><code>{"void SetOriginPosition(Vector3 newPosition)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-lerptoposition" /><code>{"private IEnumerator LerpToPosition() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

@@ -19,14 +19,14 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BasicDynamicPathSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BasicDynamicPathSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fromindex" /><code>{"int fromIndex"}</code> |  |
-| <Link id="m-fromposition" /><code>{"Vector2 fromPosition"}</code> |  |
-| <Link id="m-toindex" /><code>{"int toIndex"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fromindex" /><code>{"int fromIndex"}</code> |
+| <Link id="m-fromposition" /><code>{"Vector2 fromPosition"}</code> |
+| <Link id="m-toindex" /><code>{"int toIndex"}</code> |

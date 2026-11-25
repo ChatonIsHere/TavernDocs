@@ -22,20 +22,33 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ArmorManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ArmorManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-slotpairings" /><code>{"private "}<Link to="/game-api/types/alta-customization/armormanager-tslot-slotpairing">{"ArmorManager"}</Link>{"<TSlot>[] slotPairings"}</code> |  |
-| <Link id="m-slots" /><code>{"private Dictionary<TSlot, "}<Link to="/game-api/types/alta-customization/armormanager-tslot-slotpairing">{"ArmorManager"}</Link>{"<TSlot>> slots"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-slotpairings" /><code>{"private "}<Link to="/game-api/types/alta-customization/armormanager-tslot-slotpairing">{"ArmorManager"}</Link>{"<TSlot>[] slotPairings"}</code> |
+| <Link id="m-slots" /><code>{"private Dictionary<TSlot, "}<Link to="/game-api/types/alta-customization/armormanager-tslot-slotpairing">{"ArmorManager"}</Link>{"<TSlot>> slots"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-set" /><code>{"void Set(TSlot slot, "}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" armor)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-set" /><code>{"void Set(TSlot slot, "}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" armor)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

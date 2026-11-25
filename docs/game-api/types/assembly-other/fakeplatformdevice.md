@@ -17,12 +17,12 @@ A **class** in `Alta.Platform`, `Alta.Platform.Fakes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FakePlatformDevice()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FakePlatformDevice()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setffvsource" /><code>{"void SetFfvSource("}<Link to="/game-api/types/assembly-other/ffvsource">{"FfvSource"}</Link>{" source, bool shouldEnable)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setffvsource" /><code>{"void SetFfvSource("}<Link to="/game-api/types/assembly-other/ffvsource">{"FfvSource"}</Link>{" source, bool shouldEnable)"}</code> |

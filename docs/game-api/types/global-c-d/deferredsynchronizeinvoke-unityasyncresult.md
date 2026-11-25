@@ -18,25 +18,25 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UnityAsyncResult()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UnityAsyncResult()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-args" /><code>{"object[] args"}</code> |  |
-| <Link id="m-method" /><code>{"Delegate method"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-args" /><code>{"object[] args"}</code> |
+| <Link id="m-method" /><code>{"Delegate method"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-asyncstate" /><code>{"object AsyncState { get; set; }"}</code> |  |
-| <Link id="m-asyncwaithandle" /><code>{"WaitHandle AsyncWaitHandle { get; internal set; }"}</code> |  |
-| <Link id="m-completedsynchronously" /><code>{"bool CompletedSynchronously { get; }"}</code> |  |
-| <Link id="m-iscompleted" /><code>{"bool IsCompleted { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-asyncstate" /><code>{"object AsyncState { get; set; }"}</code> |
+| <Link id="m-asyncwaithandle" /><code>{"WaitHandle AsyncWaitHandle { get; internal set; }"}</code> |
+| <Link id="m-completedsynchronously" /><code>{"bool CompletedSynchronously { get; }"}</code> |
+| <Link id="m-iscompleted" /><code>{"bool IsCompleted { get; set; }"}</code> |
 
 ## Used in
 

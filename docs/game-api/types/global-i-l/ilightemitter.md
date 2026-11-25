@@ -17,10 +17,10 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distance" /><code>{"float Distance { get; }"}</code> |  |
-| <Link id="m-mask" /><code>{"LayerMask Mask { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-distance" /><code>{"float Distance { get; }"}</code> |
+| <Link id="m-mask" /><code>{"LayerMask Mask { get; }"}</code> |
 
 ## Used in
 

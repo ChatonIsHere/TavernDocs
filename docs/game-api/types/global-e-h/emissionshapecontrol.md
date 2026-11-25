@@ -17,20 +17,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EmissionShapeControl()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EmissionShapeControl()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialradii" /><code>{"private float[] initialRadii"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-initialradii" /><code>{"private float[] initialRadii"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setemissionshaperadius" /><code>{"void SetEmissionShapeRadius(float radiusMultiplier)"}</code> |  |
-| <Link id="m-resetsystems" /><code>{"protected override void ResetSystems("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |  |
-| <Link id="m-setupsystems" /><code>{"protected override void SetupSystems()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setemissionshaperadius" /><code>{"void SetEmissionShapeRadius(float radiusMultiplier)"}</code> |
+| <Link id="m-resetsystems" /><code>{"protected override void ResetSystems("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
+| <Link id="m-setupsystems" /><code>{"protected override void SetupSystems()"}</code> |

@@ -20,17 +20,25 @@ A connection receiver that can hold packets back and process them later, so inco
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected QueuedConnectionReceiver("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected QueuedConnectionReceiver("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel)"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-incomingqueue" /><code>{"private readonly Queue<"}<Link to="/game-api/types/alta-networking/pooleddataqueueitem">{"PooledDataQueueItem"}</Link>{"> incomingQueue"}</code> |  |
 | <Link id="m-isqueueingthisframe" /><code>{"protected bool isQueueingThisFrame"}</code> | Set when processing stopped part way this frame. |
 | <Link id="m-messagesprocessedthisframe" /><code>{"protected int messagesProcessedThisFrame"}</code> | Messages processed since the last `ProcessExistingQueues`. |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-incomingqueue" /><code>{"private readonly Queue<"}<Link to="/game-api/types/alta-networking/pooleddataqueueitem">{"PooledDataQueueItem"}</Link>{"> incomingQueue"}</code> |
+
+</details>
 
 ## Properties
 
@@ -53,8 +61,16 @@ A connection receiver that can hold packets back and process them later, so inco
 | <Link id="m-receivepacket" /><code>{"override void ReceivePacket("}<Link to="/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, ArraySegment<byte> data)"}</code> | Processes a packet straight away or queues it. Whatever is left of a part-processed packet is queued. |
 | <Link id="m-cancontinueprocessingpacket" /><code>{"protected virtual bool CanContinueProcessingPacket()"}</code> | Whether to keep reading messages from the current packet. By default, while `ShouldPacketBeQueued` is false. |
 | <Link id="m-processreceivedpacket" /><code>{"protected virtual bool ProcessReceivedPacket(ArraySegment<byte> data, out int progress)"}</code> | Processes messages in a packet one at a time. Returns false with the bytes used if it had to stop early. |
-| <Link id="m-queuepacketdata" /><code>{"private void QueuePacketData(ArraySegment<byte> data)"}</code> |  |
 | <Link id="m-shouldpacketbequeued" /><code>{"protected abstract bool ShouldPacketBeQueued()"}</code> | Whether new packets should be queued instead of processed now. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-queuepacketdata" /><code>{"private void QueuePacketData(ArraySegment<byte> data)"}</code> |
+
+</details>
 
 ## Used in
 

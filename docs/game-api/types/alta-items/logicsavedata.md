@@ -21,9 +21,9 @@ Saved state of a logic value with an identifier and change events.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicSaveData()"}</code> |
 
 ## Fields
 

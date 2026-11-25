@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/global-p/playerdata">{"PlayerData"}</Link>{" data"}</code> |  |
-| <Link id="m-isbesttime" /><code>{"bool isBestTime"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data" /><code><Link to="/game-api/types/global-p/playerdata">{"PlayerData"}</Link>{" data"}</code> |
+| <Link id="m-isbesttime" /><code>{"bool isBestTime"}</code> |
 
 ## Used in
 

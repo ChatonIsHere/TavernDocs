@@ -17,16 +17,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LinkAccountRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LinkAccountRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-source" /><code>{"string Source { get; set; }"}</code> |  |
-| <Link id="m-useridentifier" /><code>{"int? UserIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-source" /><code>{"string Source { get; set; }"}</code> |
+| <Link id="m-useridentifier" /><code>{"int? UserIdentifier { get; set; }"}</code> |
 
 ## Used in
 

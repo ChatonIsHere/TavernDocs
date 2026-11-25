@@ -17,10 +17,10 @@ An **private enum** in `Alta.IO`, no namespace. Reach it through att-stubs' publ
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bool" /><code>{"Bool = 3"}</code> |  |
-| <Link id="m-float" /><code>{"Float = 1"}</code> |  |
-| <Link id="m-int" /><code>{"Int = 2"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-string" /><code>{"String = 4"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bool" /><code>{"Bool = 3"}</code> |
+| <Link id="m-float" /><code>{"Float = 1"}</code> |
+| <Link id="m-int" /><code>{"Int = 2"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-string" /><code>{"String = 4"}</code> |

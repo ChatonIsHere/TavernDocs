@@ -18,20 +18,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RaycastPreview()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RaycastPreview()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hit" /><code>{"private RaycastHit hit"}</code> |  |
-| <Link id="m-mask" /><code>{"private LayerMask mask"}</code> |  |
-| <Link id="m-maximumdistance" /><code>{"private float maximumDistance"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-hit" /><code>{"private RaycastHit hit"}</code> |
+| <Link id="m-mask" /><code>{"private LayerMask mask"}</code> |
+| <Link id="m-maximumdistance" /><code>{"private float maximumDistance"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+
+</details>

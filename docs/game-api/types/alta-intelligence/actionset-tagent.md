@@ -19,16 +19,21 @@ An agent's available AI actions, split into actions that need a target and actio
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActionSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActionSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-baseactions" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent>> baseActions"}</code> |  |
-| <Link id="m-targetactions" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent>> targetActions"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-baseactions" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent>> baseActions"}</code> |
+| <Link id="m-targetactions" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent>> targetActions"}</code> |
+
+</details>
 
 ## Properties
 

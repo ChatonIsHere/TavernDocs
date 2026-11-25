@@ -17,20 +17,25 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CachedSyncChannel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CachedSyncChannel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cache" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" cache"}</code> |  |
-| <Link id="m-returnto" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" returnTo"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cache" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" cache"}</code> |
+| <Link id="m-returnto" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" returnTo"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activate" /><code>{"IDisposable Activate()"}</code> |  |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-activate" /><code>{"IDisposable Activate()"}</code> |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |

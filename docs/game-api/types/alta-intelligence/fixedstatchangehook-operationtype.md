@@ -17,11 +17,11 @@ An **private enum** in `Root.Township`, `Alta.Intelligence`. Reach it through at
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"Add = 1"}</code> |  |
-| <Link id="m-multiply" /><code>{"Multiply = 2"}</code> |  |
-| <Link id="m-set" /><code>{"Set = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"Add = 1"}</code> |
+| <Link id="m-multiply" /><code>{"Multiply = 2"}</code> |
+| <Link id="m-set" /><code>{"Set = 0"}</code> |
 
 ## Used in
 

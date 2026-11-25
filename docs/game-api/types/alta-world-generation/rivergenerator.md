@@ -20,43 +20,48 @@ Part of a procedural forest: works out the river network from the forest's space
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RiverGenerator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RiverGenerator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-calculatetask" /><code>{"private Task<"}<Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{"> calculateTask"}</code> |  |
-| <Link id="m-curvemaxwidth" /><code>{"private float curveMaxWidth"}</code> |  |
-| <Link id="m-curvetangentmultiplier" /><code>{"private float curveTangentMultiplier"}</code> |  |
-| <Link id="m-decorationmultiplier" /><code>{"private float decorationMultiplier"}</code> |  |
-| <Link id="m-depthcurve" /><code>{"private AnimationCurve depthCurve"}</code> |  |
-| <Link id="m-distancenoise" /><code>{"private float distanceNoise"}</code> |  |
-| <Link id="m-edgesegments" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/iriverdecorationsegment">{"IRiverDecorationSegment"}</Link>{"> edgeSegments"}</code> |  |
-| <Link id="m-forest" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest"}</code> |  |
-| <Link id="m-intersections" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/riverintersections">{"RiverIntersections"}</Link>{" intersections"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-lowerstrengthcurve" /><code>{"private AnimationCurve lowerStrengthCurve"}</code> |  |
-| <Link id="m-maxvolume" /><code>{"private float maxVolume"}</code> |  |
-| <Link id="m-nodewidthmultiplier" /><code>{"private float nodeWidthMultiplier"}</code> |  |
-| <Link id="m-overgroundvolumethreshold" /><code>{"private float overgroundVolumeThreshold"}</code> |  |
-| <Link id="m-raisestrengthcurve" /><code>{"private AnimationCurve raiseStrengthCurve"}</code> |  |
-| <Link id="m-riverdepths" /><code>{"private float[,] riverDepths"}</code> |  |
-| <Link id="m-riversegmentminimum" /><code>{"private int riverSegmentMinimum"}</code> |  |
-| <Link id="m-rivervalues" /><code>{"private float[,] riverValues"}</code> |  |
-| <Link id="m-segments" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/iriverdecorationsegment">{"IRiverDecorationSegment"}</Link>{"> segments"}</code> |  |
-| <Link id="m-splitdistance" /><code>{"private int splitDistance"}</code> |  |
-| <Link id="m-splitpositionjitter" /><code>{"private float splitPositionJitter"}</code> |  |
-| <Link id="m-staticwaterfallvolumemultiplier" /><code>{"private float[] staticWaterfallVolumeMultiplier"}</code> |  |
-| <Link id="m-volumepernode" /><code>{"private AnimationCurve volumePerNode"}</code> |  |
-| <Link id="m-waterfallalignmentthreshold" /><code>{"private float waterfallAlignmentThreshold"}</code> |  |
-| <Link id="m-waterfallcliffstrength" /><code>{"private float waterfallCliffStrength"}</code> |  |
-| <Link id="m-waterfallslope" /><code>{"private float waterfallSlope"}</code> |  |
-| <Link id="m-waterfallvolumemultiplier" /><code>{"private float waterfallVolumeMultiplier"}</code> |  |
-| <Link id="m-wetnessattribute" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" wetnessAttribute"}</code> |  |
-| <Link id="m-widthmultiplier" /><code>{"private float widthMultiplier"}</code> |  |
+<details>
+<summary>29 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-calculatetask" /><code>{"private Task<"}<Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{"> calculateTask"}</code> |
+| <Link id="m-curvemaxwidth" /><code>{"private float curveMaxWidth"}</code> |
+| <Link id="m-curvetangentmultiplier" /><code>{"private float curveTangentMultiplier"}</code> |
+| <Link id="m-decorationmultiplier" /><code>{"private float decorationMultiplier"}</code> |
+| <Link id="m-depthcurve" /><code>{"private AnimationCurve depthCurve"}</code> |
+| <Link id="m-distancenoise" /><code>{"private float distanceNoise"}</code> |
+| <Link id="m-edgesegments" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/iriverdecorationsegment">{"IRiverDecorationSegment"}</Link>{"> edgeSegments"}</code> |
+| <Link id="m-forest" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest"}</code> |
+| <Link id="m-intersections" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/riverintersections">{"RiverIntersections"}</Link>{" intersections"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-lowerstrengthcurve" /><code>{"private AnimationCurve lowerStrengthCurve"}</code> |
+| <Link id="m-maxvolume" /><code>{"private float maxVolume"}</code> |
+| <Link id="m-nodewidthmultiplier" /><code>{"private float nodeWidthMultiplier"}</code> |
+| <Link id="m-overgroundvolumethreshold" /><code>{"private float overgroundVolumeThreshold"}</code> |
+| <Link id="m-raisestrengthcurve" /><code>{"private AnimationCurve raiseStrengthCurve"}</code> |
+| <Link id="m-riverdepths" /><code>{"private float[,] riverDepths"}</code> |
+| <Link id="m-riversegmentminimum" /><code>{"private int riverSegmentMinimum"}</code> |
+| <Link id="m-rivervalues" /><code>{"private float[,] riverValues"}</code> |
+| <Link id="m-segments" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/iriverdecorationsegment">{"IRiverDecorationSegment"}</Link>{"> segments"}</code> |
+| <Link id="m-splitdistance" /><code>{"private int splitDistance"}</code> |
+| <Link id="m-splitpositionjitter" /><code>{"private float splitPositionJitter"}</code> |
+| <Link id="m-staticwaterfallvolumemultiplier" /><code>{"private float[] staticWaterfallVolumeMultiplier"}</code> |
+| <Link id="m-volumepernode" /><code>{"private AnimationCurve volumePerNode"}</code> |
+| <Link id="m-waterfallalignmentthreshold" /><code>{"private float waterfallAlignmentThreshold"}</code> |
+| <Link id="m-waterfallcliffstrength" /><code>{"private float waterfallCliffStrength"}</code> |
+| <Link id="m-waterfallslope" /><code>{"private float waterfallSlope"}</code> |
+| <Link id="m-waterfallvolumemultiplier" /><code>{"private float waterfallVolumeMultiplier"}</code> |
+| <Link id="m-wetnessattribute" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" wetnessAttribute"}</code> |
+| <Link id="m-widthmultiplier" /><code>{"private float widthMultiplier"}</code> |
+
+</details>
 
 ## Properties
 
@@ -78,9 +83,17 @@ Part of a procedural forest: works out the river network from the forest's space
 | <Link id="m-spawnvisuals" /><code>{"async Task SpawnVisuals("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | Client: has every `IRiverVisual` child build its visuals from the river network. Does nothing on a headless server. |
 | <Link id="m-trygetgenerated" /><code><Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{" TryGetGenerated(bool isError = true)"}</code> | The river network if it's finished, otherwise null (logging an error unless told not to). |
 | <Link id="m-wipe" /><code>{"async Task Wipe("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | Deletes the cached river network for a forest. |
-| <Link id="m-calculate" /><code>{"private async Task<"}<Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{"> Calculate("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/global-t-x/terrainaccess">{"TerrainAccess"}</Link>{" access)"}</code> |  |
-| <Link id="m-getcatmullromposition" /><code>{"private Vector2 GetCatmullRomPosition(float t, Vector2 p0, Vector2 p1, Vector2 p2, Vector2 p3, float tangentStrength)"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-calculate" /><code>{"private async Task<"}<Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{"> Calculate("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/global-t-x/terrainaccess">{"TerrainAccess"}</Link>{" access)"}</code> |
+| <Link id="m-getcatmullromposition" /><code>{"private Vector2 GetCatmullRomPosition(float t, Vector2 p0, Vector2 p1, Vector2 p2, Vector2 p3, float tangentStrength)"}</code> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+
+</details>
 
 ## Used in
 

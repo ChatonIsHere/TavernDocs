@@ -18,20 +18,20 @@ A **internal class** in `Root.Township`, `Alta.Inventory`. Reach it through att-
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PickupDockSaveDataOld()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PickupDockSaveDataOld()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-childindex" /><code>{"int childIndex"}</code> |  |
-| <Link id="m-dockedtype" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" dockedType"}</code> |  |
-| <Link id="m-quantity" /><code>{"int quantity"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-childindex" /><code>{"int childIndex"}</code> |
+| <Link id="m-dockedtype" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" dockedType"}</code> |
+| <Link id="m-quantity" /><code>{"int quantity"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

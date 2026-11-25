@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, `ATT.Respawn`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getrespawnposition" /><code>{"Vector3 GetRespawnPosition("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, out bool isDefaultRespawn)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getrespawnposition" /><code>{"Vector3 GetRespawnPosition("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, out bool isDefaultRespawn)"}</code> |
 
 ## Used in
 

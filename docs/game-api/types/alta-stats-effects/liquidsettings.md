@@ -23,26 +23,31 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LiquidSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LiquidSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-androiddfaultpouringparticles" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" androidDfaultPouringParticles"}</code> |  |
-| <Link id="m-androidliquidsplashparticle" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" androidLiquidSplashParticle"}</code> |  |
-| <Link id="m-debugwaterconcoction" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" debugWaterConcoction"}</code> |  |
-| <Link id="m-defaultpouringparticles" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" defaultPouringParticles"}</code> |  |
-| <Link id="m-liquidsplashparticle" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" liquidSplashParticle"}</code> |  |
-| <Link id="m-liquidtransitionspeed" /><code>{"private float liquidTransitionSpeed"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androiddfaultpouringparticles" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" androidDfaultPouringParticles"}</code> |
+| <Link id="m-androidliquidsplashparticle" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" androidLiquidSplashParticle"}</code> |
+| <Link id="m-debugwaterconcoction" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" debugWaterConcoction"}</code> |
+| <Link id="m-defaultpouringparticles" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" defaultPouringParticles"}</code> |
+| <Link id="m-liquidsplashparticle" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" liquidSplashParticle"}</code> |
+| <Link id="m-liquidtransitionspeed" /><code>{"private float liquidTransitionSpeed"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-debugwaterconcoction-2" /><code><Link to="/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" DebugWaterConcoction { get; }"}</code> |  |
-| <Link id="m-defaultpouringparticles-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DefaultPouringParticles { get; }"}</code> |  |
-| <Link id="m-liquidsplashparticles" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" LiquidSplashParticles { get; }"}</code> |  |
-| <Link id="m-liquidtransitionspeed-2" /><code>{"float LiquidTransitionSpeed { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-debugwaterconcoction-2" /><code><Link to="/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" DebugWaterConcoction { get; }"}</code> |
+| <Link id="m-defaultpouringparticles-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DefaultPouringParticles { get; }"}</code> |
+| <Link id="m-liquidsplashparticles" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" LiquidSplashParticles { get; }"}</code> |
+| <Link id="m-liquidtransitionspeed-2" /><code>{"float LiquidTransitionSpeed { get; }"}</code> |

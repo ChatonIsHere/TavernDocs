@@ -18,19 +18,19 @@ An **abstract class** in `Root.Township`, `Alta.Profiling.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected IndexedStatisticList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected IndexedStatisticList()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-typeindexes" /><code>{"protected static Dictionary<TStatType, int> typeIndexes"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-typeindexes" /><code>{"protected static Dictionary<TStatType, int> typeIndexes"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createnewstatistic" /><code>{"protected abstract TStatistic CreateNewStatistic(TStatType creationArgument)"}</code> |  |
-| <Link id="m-ensurestatistictypeindexexists" /><code>{"protected void EnsureStatisticTypeIndexExists(TStatType statType)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createnewstatistic" /><code>{"protected abstract TStatistic CreateNewStatistic(TStatType creationArgument)"}</code> |
+| <Link id="m-ensurestatistictypeindexexists" /><code>{"protected void EnsureStatisticTypeIndexExists(TStatType statType)"}</code> |

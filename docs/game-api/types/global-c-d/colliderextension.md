@@ -17,7 +17,7 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getbodycomponent" /><code>{"static T GetBodyComponent<T>(Collider collider)"}</code> |  |
-| <Link id="m-getcomponentincludingbody" /><code>{"static T GetComponentIncludingBody<T>(Collider collider)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getbodycomponent" /><code>{"static T GetBodyComponent<T>(Collider collider)"}</code> |
+| <Link id="m-getcomponentincludingbody" /><code>{"static T GetComponentIncludingBody<T>(Collider collider)"}</code> |

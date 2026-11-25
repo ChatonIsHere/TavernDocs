@@ -17,24 +17,37 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JoinedGroupsList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JoinedGroupsList()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-elementtemplate" /><code>{"private "}<Link to="/game-api/types/alta-menus/joinedgrouplistelement">{"JoinedGroupListElement"}</Link>{" elementTemplate"}</code> |  |
-| <Link id="m-inviteuserpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/inviteusertogroupviafriendspanel">{"InviteUserToGroupViaFriendsPanel"}</Link>{" inviteUserPanel"}</code> |  |
-| <Link id="m-selectedgrouppanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/selectedgrouppanel">{"SelectedGroupPanel"}</Link>{" selectedGroupPanel"}</code> |  |
-| <Link id="m-uilist" /><code>{"private "}<Link to="/game-api/types/alta-menus/uilist">{"UIList"}</Link>{" uiList"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-elementtemplate" /><code>{"private "}<Link to="/game-api/types/alta-menus/joinedgrouplistelement">{"JoinedGroupListElement"}</Link>{" elementTemplate"}</code> |
+| <Link id="m-inviteuserpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/inviteusertogroupviafriendspanel">{"InviteUserToGroupViaFriendsPanel"}</Link>{" inviteUserPanel"}</code> |
+| <Link id="m-selectedgrouppanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/selectedgrouppanel">{"SelectedGroupPanel"}</Link>{" selectedGroupPanel"}</code> |
+| <Link id="m-uilist" /><code>{"private "}<Link to="/game-api/types/alta-menus/uilist">{"UIList"}</Link>{" uiList"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-refreshdata" /><code>{"override async void RefreshData()"}</code> |  |
-| <Link id="m-invitefriendtogroup" /><code>{"private void InviteFriendToGroup("}<Link to="/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{" element)"}</code> |  |
-| <Link id="m-setupjoinedgroupslist" /><code>{"private async Task SetupJoinedGroupsList()"}</code> |  |
-| <Link id="m-swaptoselectedgrouppanel" /><code>{"private void SwapToSelectedGroupPanel("}<Link to="/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{" element)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-refreshdata" /><code>{"override async void RefreshData()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-invitefriendtogroup" /><code>{"private void InviteFriendToGroup("}<Link to="/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{" element)"}</code> |
+| <Link id="m-setupjoinedgroupslist" /><code>{"private async Task SetupJoinedGroupsList()"}</code> |
+| <Link id="m-swaptoselectedgrouppanel" /><code>{"private void SwapToSelectedGroupPanel("}<Link to="/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{" element)"}</code> |
+
+</details>

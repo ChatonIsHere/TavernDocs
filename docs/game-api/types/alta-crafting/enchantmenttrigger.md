@@ -22,25 +22,30 @@ When it fires. `CreateApplication` applies the trigger on the server only. `Quic
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected EnchantmentTrigger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected EnchantmentTrigger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onskillcanceledtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" onSkillCanceledTransform"}</code> |  |
-| <Link id="m-onskillchargedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" onSkillChargedTransform"}</code> |  |
-| <Link id="m-onskillexecutedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" onSkillExecutedTransform"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-onskillcanceledtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" onSkillCanceledTransform"}</code> |
+| <Link id="m-onskillchargedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" onSkillChargedTransform"}</code> |
+| <Link id="m-onskillexecutedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" onSkillExecutedTransform"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-callevents" /><code>{"void CallEvents("}<Link to="/game-api/types/alta-crafting/enchantmenttrigger-effecttype">{"EnchantmentTrigger.EffectType"}</Link>{" effectType, Transform transform)"}</code> |  |
-| <Link id="m-createapplication" /><code><Link to="/game-api/types/alta-crafting/ienchantmenttriggerapplication">{"IEnchantmentTriggerApplication"}</Link>{" CreateApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment)"}</code> |  |
-| <Link id="m-createnew" /><code>{"protected abstract "}<Link to="/game-api/types/alta-crafting/ienchantmenttriggerapplication">{"IEnchantmentTriggerApplication"}</Link>{" CreateNew("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-callevents" /><code>{"void CallEvents("}<Link to="/game-api/types/alta-crafting/enchantmenttrigger-effecttype">{"EnchantmentTrigger.EffectType"}</Link>{" effectType, Transform transform)"}</code> |
+| <Link id="m-createapplication" /><code><Link to="/game-api/types/alta-crafting/ienchantmenttriggerapplication">{"IEnchantmentTriggerApplication"}</Link>{" CreateApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment)"}</code> |
+| <Link id="m-createnew" /><code>{"protected abstract "}<Link to="/game-api/types/alta-crafting/ienchantmenttriggerapplication">{"IEnchantmentTriggerApplication"}</Link>{" CreateNew("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment)"}</code> |
 
 ## Used in
 

@@ -20,9 +20,9 @@ Base for a button on an in-world touch screen (such as the camera or menus): tra
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected BasicTouchScreenButton()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected BasicTouchScreenButton()"}</code> |
 
 ## Fields
 
@@ -35,10 +35,18 @@ Base for a button on an in-world touch screen (such as the camera or menus): tra
 | <Link id="m-pressedalpha" /><code>{"float pressedAlpha"}</code> | Material alpha when pressed. |
 | <Link id="m-alpha" /><code>{"protected static readonly int _Alpha"}</code> | Shader property id for `_Alpha`. |
 | <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | Shared logger. |
-| <Link id="m-material" /><code>{"private Material material"}</code> |  |
-| <Link id="m-onpressed" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onPressed"}</code> |  |
-| <Link id="m-onreleased" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onReleased"}</code> |  |
-| <Link id="m-sounds" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttonsoundsettings">{"ButtonSoundSettings"}</Link>{" sounds"}</code> |  |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-material" /><code>{"private Material material"}</code> |
+| <Link id="m-onpressed" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onPressed"}</code> |
+| <Link id="m-onreleased" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onReleased"}</code> |
+| <Link id="m-sounds" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttonsoundsettings">{"ButtonSoundSettings"}</Link>{" sounds"}</code> |
+
+</details>
 
 ## Properties
 
@@ -64,6 +72,14 @@ Base for a button on an in-world touch screen (such as the camera or menus): tra
 | <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Makes a material copy for the renderers and hooks the press and release sounds. |
 | <Link id="m-internalpress" /><code>{"protected virtual void InternalPress()"}</code> | Hook for subclasses, called after `Pressed`. |
 | <Link id="m-internalrelease" /><code>{"protected virtual void InternalRelease()"}</code> | Hook for subclasses, called after `Released`. |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
 | <Link id="m-setalpha" /><code>{"protected void SetAlpha(bool isPressed)"}</code> | Sets the material alpha to the pressed or idle value. |
 | <Link id="m-setpressedalpha" /><code>{"protected void SetPressedAlpha()"}</code> | Sets the material alpha to the pressed value. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+
+</details>

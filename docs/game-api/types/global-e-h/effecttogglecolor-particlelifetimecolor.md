@@ -18,22 +18,27 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ParticleLifetimeColor(ParticleSystem system)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ParticleLifetimeColor(ParticleSystem system)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-offgradient" /><code>{"private Gradient offGradient"}</code> |  |
-| <Link id="m-ongradient" /><code>{"private Gradient onGradient"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-offgradient" /><code>{"private Gradient offGradient"}</code> |
+| <Link id="m-ongradient" /><code>{"private Gradient onGradient"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-settoggle" /><code>{"override void SetToggle(bool on)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-settoggle" /><code>{"override void SetToggle(bool on)"}</code> |
 
 ## Used in
 

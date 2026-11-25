@@ -17,16 +17,16 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnInstructure(Vector3 position, Vector3 normal)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpawnInstructure(Vector3 position, Vector3 normal)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-normal" /><code>{"Vector3 normal"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-normal" /><code>{"Vector3 normal"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
 
 ## Used in
 

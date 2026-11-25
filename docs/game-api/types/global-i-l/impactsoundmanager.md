@@ -18,18 +18,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactSoundManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactSoundManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-impactsoundsettings" /><code>{"private "}<Link to="/game-api/types/global-i-l/impactsoundsettings">{"ImpactSoundSettings"}</Link>{" impactSoundSettings"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-impactsoundsettings" /><code>{"private "}<Link to="/game-api/types/global-i-l/impactsoundsettings">{"ImpactSoundSettings"}</Link>{" impactSoundSettings"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-impactsoundsettings-2" /><code><Link to="/game-api/types/global-i-l/impactsoundsettings">{"ImpactSoundSettings"}</Link>{" "}<Link to="/game-api/types/global-i-l/impactsoundsettings">{"ImpactSoundSettings"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-impactsoundsettings-2" /><code><Link to="/game-api/types/global-i-l/impactsoundsettings">{"ImpactSoundSettings"}</Link>{" "}<Link to="/game-api/types/global-i-l/impactsoundsettings">{"ImpactSoundSettings"}</Link>{" { get; }"}</code> |

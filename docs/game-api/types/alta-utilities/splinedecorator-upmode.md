@@ -17,10 +17,10 @@ An **enum** in `Root.Township`, `Alta.Bezier`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-curve" /><code>{"Curve = 1"}</code> |  |
-| <Link id="m-world" /><code>{"World = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-curve" /><code>{"Curve = 1"}</code> |
+| <Link id="m-world" /><code>{"World = 0"}</code> |
 
 ## Used in
 

@@ -19,26 +19,39 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MarchingCubesPlugin()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MarchingCubesPlugin()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generatorlayer" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" generatorLayer"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-meshes" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{", "}<Link to="/game-api/types/alta-world-generation/marchingcubesplugin-generatedmesh">{"MarchingCubesPlugin.GeneratedMesh"}</Link>{"> meshes"}</code> |  |
-| <Link id="m-threshold" /><code>{"private float threshold"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-generatorlayer" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" generatorLayer"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-meshes" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{", "}<Link to="/game-api/types/alta-world-generation/marchingcubesplugin-generatedmesh">{"MarchingCubesPlugin.GeneratedMesh"}</Link>{"> meshes"}</code> |
+| <Link id="m-threshold" /><code>{"private float threshold"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getmesh" /><code><Link to="/game-api/types/alta-world-generation/marchingcubesplugin-generatedmesh">{"MarchingCubesPlugin.GeneratedMesh"}</Link>{" GetMesh("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{"[] parts)"}</code> |  |
-| <Link id="m-ensurecleanmeshmap" /><code>{"private void EnsureCleanMeshMap()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getmesh" /><code><Link to="/game-api/types/alta-world-generation/marchingcubesplugin-generatedmesh">{"MarchingCubesPlugin.GeneratedMesh"}</Link>{" GetMesh("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> |
+| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{"[] parts)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ensurecleanmeshmap" /><code>{"private void EnsureCleanMeshMap()"}</code> |
+
+</details>
 
 ## Used in
 

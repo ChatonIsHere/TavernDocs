@@ -18,30 +18,35 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LocomotionStatSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LocomotionStatSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cripplestat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" crippleStat"}</code> |  |
-| <Link id="m-cripplevaluetospeedmodifier" /><code>{"private AnimationCurve crippleValueToSpeedModifier"}</code> |  |
-| <Link id="m-speedstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" speedStat"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cripplestat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" crippleStat"}</code> |
+| <Link id="m-cripplevaluetospeedmodifier" /><code>{"private AnimationCurve crippleValueToSpeedModifier"}</code> |
+| <Link id="m-speedstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" speedStat"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cripplestat-2" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" CrippleStat { get; }"}</code> |  |
-| <Link id="m-speedstat-2" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" SpeedStat { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cripplestat-2" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" CrippleStat { get; }"}</code> |
+| <Link id="m-speedstat-2" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" SpeedStat { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getcripplevalue" /><code>{"float GetCrippleValue("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getcripplevalue" /><code>{"float GetCrippleValue("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |
 
 ## Used in
 

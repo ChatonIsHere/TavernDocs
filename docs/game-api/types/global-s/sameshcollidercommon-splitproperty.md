@@ -17,24 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SplitProperty()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SplitProperty()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-splitmaterialenabled" /><code>{"bool splitMaterialEnabled"}</code> |  |
-| <Link id="m-splitpolygonnormalangle" /><code>{"float splitPolygonNormalAngle"}</code> |  |
-| <Link id="m-splitpolygonnormalenabled" /><code>{"bool splitPolygonNormalEnabled"}</code> |  |
-| <Link id="m-splitprimitiveenabled" /><code>{"bool splitPrimitiveEnabled"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-splitmaterialenabled" /><code>{"bool splitMaterialEnabled"}</code> |
+| <Link id="m-splitpolygonnormalangle" /><code>{"float splitPolygonNormalAngle"}</code> |
+| <Link id="m-splitpolygonnormalenabled" /><code>{"bool splitPolygonNormalEnabled"}</code> |
+| <Link id="m-splitprimitiveenabled" /><code>{"bool splitPrimitiveEnabled"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-shallowcopy" /><code><Link to="/game-api/types/global-s/sameshcollidercommon-splitproperty">{"SAMeshColliderCommon.SplitProperty"}</Link>{" ShallowCopy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-shallowcopy" /><code><Link to="/game-api/types/global-s/sameshcollidercommon-splitproperty">{"SAMeshColliderCommon.SplitProperty"}</Link>{" ShallowCopy()"}</code> |
 
 ## Used in
 

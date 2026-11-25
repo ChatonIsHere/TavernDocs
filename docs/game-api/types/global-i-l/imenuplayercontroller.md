@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setcontrols" /><code>{"void SetControls()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setcontrols" /><code>{"void SetControls()"}</code> |

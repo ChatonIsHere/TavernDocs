@@ -16,21 +16,26 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatusAPI(int timeOutInSeconds = 15)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatusAPI(int timeOutInSeconds = 15)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-client" /><code>{"private readonly HttpClient client"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-client" /><code>{"private readonly HttpClient client"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getstatus" /><code>{"async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-client/status">{"Status"}</Link>{">> GetStatus()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getstatus" /><code>{"async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-client/status">{"Status"}</Link>{">> GetStatus()"}</code> |
 
 ## Used in
 

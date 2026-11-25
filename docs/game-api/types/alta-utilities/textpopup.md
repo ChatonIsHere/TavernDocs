@@ -18,38 +18,59 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TextPopup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TextPopup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-locomotioncontroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" locomotionController"}</code> |  |
-| <Link id="m-maxdistance" /><code>{"private float maxDistance"}</code> |  |
-| <Link id="m-scalebasedondistance" /><code>{"private AnimationCurve scaleBasedOnDistance"}</code> |  |
-| <Link id="m-text" /><code>{"private Text text"}</code> |  |
-| <Link id="m-upspeed" /><code>{"private float upSpeed"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-locomotioncontroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" locomotionController"}</code> |
+| <Link id="m-maxdistance" /><code>{"private float maxDistance"}</code> |
+| <Link id="m-scalebasedondistance" /><code>{"private AnimationCurve scaleBasedOnDistance"}</code> |
+| <Link id="m-text" /><code>{"private Text text"}</code> |
+| <Link id="m-upspeed" /><code>{"private float upSpeed"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pooledobject" /><code><Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-localplayerhead" /><code>{"private Transform LocalPlayerHead { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-pooledobject" /><code><Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" { get; set; }"}</code> |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-localplayerhead" /><code>{"private Transform LocalPlayerHead { get; set; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updatetext" /><code>{"void UpdateText(string textToDisplay)"}</code> |  |
-| <Link id="m-updatetext-2" /><code>{"void UpdateText(string textToDisplay, Color color)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-checkenabled" /><code>{"private void CheckEnabled("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
-| <Link id="m-updatehead" /><code>{"private void UpdateHead("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updatetext" /><code>{"void UpdateText(string textToDisplay)"}</code> |
+| <Link id="m-updatetext-2" /><code>{"void UpdateText(string textToDisplay, Color color)"}</code> |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-checkenabled" /><code>{"private void CheckEnabled("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| <Link id="m-updatehead" /><code>{"private void UpdateHead("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |
+
+</details>
 
 ## Used in
 

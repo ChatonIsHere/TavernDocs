@@ -21,26 +21,31 @@ Progression skill: a strong pickaxe hit sends out an echo pulse whose radius gro
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MiningEcho()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MiningEcho()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-echodefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" echoDefinition"}</code> |  |
-| <Link id="m-hasintensityplus" /><code>{"private bool hasIntensityPlus"}</code> |  |
-| <Link id="m-hitminefficiency" /><code>{"private float hitMinEfficiency"}</code> |  |
-| <Link id="m-intensityplusskill" /><code>{"private "}<Link to="/game-api/types/global-m-o/miningechointensity">{"MiningEchoIntensity"}</Link>{" intensityPlusSkill"}</code> |  |
-| <Link id="m-level" /><code>{"private int level"}</code> |  |
-| <Link id="m-leveldefinitions" /><code>{"private "}<Link to="/game-api/types/global-m-o/miningecho-leveldefinition">{"MiningEcho.LevelDefinition"}</Link>{"[] levelDefinitions"}</code> |  |
-| <Link id="m-listeners" /><code>{"private static HashSet<"}<Link to="/game-api/types/global-i-l/ilistentominingecho">{"IListenToMiningEcho"}</Link>{"> listeners"}</code> |  |
-| <Link id="m-miningechoes" /><code>{"private static List<"}<Link to="/game-api/types/global-m-o/miningecho-miningechoexecution">{"MiningEcho.MiningEchoExecution"}</Link>{"> miningEchoes"}</code> |  |
-| <Link id="m-targetchannels" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] targetChannels"}</code> |  |
-| <Link id="m-targetlayer" /><code>{"private LayerMask targetLayer"}</code> |  |
-| <Link id="m-toolinputs" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{", "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> toolInputs"}</code> |  |
-| <Link id="m-updateechoes" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateEchoes"}</code> |  |
+<details>
+<summary>12 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-echodefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" echoDefinition"}</code> |
+| <Link id="m-hasintensityplus" /><code>{"private bool hasIntensityPlus"}</code> |
+| <Link id="m-hitminefficiency" /><code>{"private float hitMinEfficiency"}</code> |
+| <Link id="m-intensityplusskill" /><code>{"private "}<Link to="/game-api/types/global-m-o/miningechointensity">{"MiningEchoIntensity"}</Link>{" intensityPlusSkill"}</code> |
+| <Link id="m-level" /><code>{"private int level"}</code> |
+| <Link id="m-leveldefinitions" /><code>{"private "}<Link to="/game-api/types/global-m-o/miningecho-leveldefinition">{"MiningEcho.LevelDefinition"}</Link>{"[] levelDefinitions"}</code> |
+| <Link id="m-listeners" /><code>{"private static HashSet<"}<Link to="/game-api/types/global-i-l/ilistentominingecho">{"IListenToMiningEcho"}</Link>{"> listeners"}</code> |
+| <Link id="m-miningechoes" /><code>{"private static List<"}<Link to="/game-api/types/global-m-o/miningecho-miningechoexecution">{"MiningEcho.MiningEchoExecution"}</Link>{"> miningEchoes"}</code> |
+| <Link id="m-targetchannels" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] targetChannels"}</code> |
+| <Link id="m-targetlayer" /><code>{"private LayerMask targetLayer"}</code> |
+| <Link id="m-toolinputs" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{", "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> toolInputs"}</code> |
+| <Link id="m-updateechoes" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateEchoes"}</code> |
+
+</details>
 
 ## Methods
 
@@ -54,7 +59,15 @@ Progression skill: a strong pickaxe hit sends out an echo pulse whose radius gro
 | <Link id="m-stoplistening" /><code>{"static void StopListening("}<Link to="/game-api/types/global-i-l/ilistentominingecho">{"IListenToMiningEcho"}</Link>{" listener)"}</code> | Removes a listener. |
 | <Link id="m-validateexecutionhit" /><code>{"override bool ValidateExecutionHit("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | Always false. The skill fires from tool collisions instead. |
 | <Link id="m-validatepickup" /><code>{"override bool ValidatePickup("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" pickupHandler)"}</code> | True if the held tool has all the target channels. |
-| <Link id="m-collided" /><code>{"private void Collided(Collision collision, bool isHitting, "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> |  |
 | <Link id="m-effectsrequested" /><code>{"protected override void EffectsRequested("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" targetEntity, "}<Link to="/game-api/types/global-t-x/toolbasedskillstatus">{"ToolBasedSkillStatus"}</Link>{" status, bool isLocalPlayer)"}</code> | For the local player, shows the echolocation effect at the hit for the used level. |
 | <Link id="m-serializeinternal" /><code>{"protected override void SerializeInternal("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | When consumed, sends the level and whether the intensity upgrade skill is owned. |
-| <Link id="m-updateechoes-2" /><code>{"private static void UpdateEchoes()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-collided" /><code>{"private void Collided(Collision collision, bool isHitting, "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> |
+| <Link id="m-updateechoes-2" /><code>{"private static void UpdateEchoes()"}</code> |
+
+</details>

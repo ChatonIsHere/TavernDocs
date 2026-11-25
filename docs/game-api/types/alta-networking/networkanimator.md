@@ -21,9 +21,9 @@ Syncs chosen Animator parameters (floats, ints, bools, triggers, layer weights) 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkAnimator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkAnimator()"}</code> |
 
 ## Fields
 
@@ -31,24 +31,32 @@ Syncs chosen Animator parameters (floats, ints, bools, triggers, layer weights) 
 | --- | --- |
 | <Link id="m-prepareforwritetimer" /><code>{"static "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" prepareForWriteTimer"}</code> | Shared profiling timer. |
 | <Link id="m-serializetimer" /><code>{"static "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" serializeTimer"}</code> | Shared profiling timer. |
-| <Link id="m-boolmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{"> boolMap"}</code> |  |
-| <Link id="m-bools" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{"> bools"}</code> |  |
-| <Link id="m-floatlerpmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedfloatlerp">{"AnimatedFloatLerp"}</Link>{"> floatLerpMap"}</code> |  |
-| <Link id="m-floatmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{"> floatMap"}</code> |  |
-| <Link id="m-floats" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{"> floats"}</code> |  |
-| <Link id="m-floatslerp" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedfloatlerp">{"AnimatedFloatLerp"}</Link>{"> floatsLerp"}</code> |  |
-| <Link id="m-intmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedint">{"AnimatedInt"}</Link>{"> intMap"}</code> |  |
-| <Link id="m-ints" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedint">{"AnimatedInt"}</Link>{"> ints"}</code> |  |
-| <Link id="m-isawake" /><code>{"private bool isAwake"}</code> |  |
-| <Link id="m-layerlerpmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedlayerweightlerp">{"AnimatedLayerWeightLerp"}</Link>{"> layerLerpMap"}</code> |  |
-| <Link id="m-layermap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedlayerweight">{"AnimatedLayerWeight"}</Link>{"> layerMap"}</code> |  |
-| <Link id="m-layers" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedlayerweight">{"AnimatedLayerWeight"}</Link>{"> layers"}</code> |  |
-| <Link id="m-layerslerp" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedlayerweightlerp">{"AnimatedLayerWeightLerp"}</Link>{"> layersLerp"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-syncstart" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncStart"}</code> |  |
-| <Link id="m-triggermap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedtrigger">{"AnimatedTrigger"}</Link>{"> triggerMap"}</code> |  |
-| <Link id="m-triggers" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedtrigger">{"AnimatedTrigger"}</Link>{"> triggers"}</code> |  |
-| <Link id="m-unityanimator" /><code>{"private Animator unityAnimator"}</code> |  |
+
+<details>
+<summary>18 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-boolmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{"> boolMap"}</code> |
+| <Link id="m-bools" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{"> bools"}</code> |
+| <Link id="m-floatlerpmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedfloatlerp">{"AnimatedFloatLerp"}</Link>{"> floatLerpMap"}</code> |
+| <Link id="m-floatmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{"> floatMap"}</code> |
+| <Link id="m-floats" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{"> floats"}</code> |
+| <Link id="m-floatslerp" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedfloatlerp">{"AnimatedFloatLerp"}</Link>{"> floatsLerp"}</code> |
+| <Link id="m-intmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedint">{"AnimatedInt"}</Link>{"> intMap"}</code> |
+| <Link id="m-ints" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedint">{"AnimatedInt"}</Link>{"> ints"}</code> |
+| <Link id="m-isawake" /><code>{"private bool isAwake"}</code> |
+| <Link id="m-layerlerpmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedlayerweightlerp">{"AnimatedLayerWeightLerp"}</Link>{"> layerLerpMap"}</code> |
+| <Link id="m-layermap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedlayerweight">{"AnimatedLayerWeight"}</Link>{"> layerMap"}</code> |
+| <Link id="m-layers" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedlayerweight">{"AnimatedLayerWeight"}</Link>{"> layers"}</code> |
+| <Link id="m-layerslerp" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedlayerweightlerp">{"AnimatedLayerWeightLerp"}</Link>{"> layersLerp"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-syncstart" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncStart"}</code> |
+| <Link id="m-triggermap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedtrigger">{"AnimatedTrigger"}</Link>{"> triggerMap"}</code> |
+| <Link id="m-triggers" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedtrigger">{"AnimatedTrigger"}</Link>{"> triggers"}</code> |
+| <Link id="m-unityanimator" /><code>{"private Animator unityAnimator"}</code> |
+
+</details>
 
 ## Properties
 
@@ -56,9 +64,17 @@ Syncs chosen Animator parameters (floats, ints, bools, triggers, layer weights) 
 | --- | --- |
 | <Link id="m-animator" /><code>{"Animator Animator { get; }"}</code> | The Unity Animator on this object. |
 | <Link id="m-haschanged" /><code>{"bool HasChanged { get; private set; }"}</code> | True if any synced value changed and needs sending. |
-| <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> |  |
-| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> |  |
-| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> |  |
+
+<details>
+<summary>3 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> |
+| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> |
+| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> |
+
+</details>
 
 ## Methods
 
@@ -76,13 +92,21 @@ Syncs chosen Animator parameters (floats, ints, bools, triggers, layer weights) 
 | <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the message that sends current animation states. |
 | <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends a joining player each layer's current state and time. |
 | <Link id="m-updatechanged" /><code>{"void UpdateChanged()"}</code> | Recomputes `HasChanged` from the parameters. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-logmissingparameter" /><code>{"private void LogMissingParameter(string parameterType, string parameterName)"}</code> |  |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |
-| <Link id="m-prepareforwrite" /><code>{"private bool Alta.Networking.INetworkSerialized.PrepareForWrite(bool isWriteFull)"}</code> |  |
-| <Link id="m-serialize" /><code>{"private void Alta.Networking.INetworkSerialized.Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWriteFull)"}</code> |  |
-| <Link id="m-syncstart-2" /><code>{"private void SyncStart("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+
+<details>
+<summary>7 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-logmissingparameter" /><code>{"private void LogMissingParameter(string parameterType, string parameterName)"}</code> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+| <Link id="m-prepareforwrite" /><code>{"private bool Alta.Networking.INetworkSerialized.PrepareForWrite(bool isWriteFull)"}</code> |
+| <Link id="m-serialize" /><code>{"private void Alta.Networking.INetworkSerialized.Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWriteFull)"}</code> |
+| <Link id="m-syncstart-2" /><code>{"private void SyncStart("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>
 
 ## Used in
 

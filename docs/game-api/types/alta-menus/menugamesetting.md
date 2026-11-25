@@ -18,15 +18,15 @@ An **abstract class** in `Root.Township`, `Alta.Menu`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected MenuGameSetting()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected MenuGameSetting()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setsettings" /><code>{"abstract void SetSettings("}<Link to="/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" newSettingToDisplay)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setsettings" /><code>{"abstract void SetSettings("}<Link to="/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" newSettingToDisplay)"}</code> |
 
 ## Used in
 

@@ -16,6 +16,6 @@ A **static class** in `Root.Township`, `Alta.Cooking`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-primes" /><code>{"static int[] Primes"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-primes" /><code>{"static int[] Primes"}</code> |

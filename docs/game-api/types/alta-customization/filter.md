@@ -16,29 +16,34 @@ A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Filter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Filter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actions" /><code>{"private "}<Link to="/game-api/types/alta-customization/filteraction">{"FilterAction"}</Link>{"[] actions"}</code> |  |
-| <Link id="m-targetfestivity" /><code>{"private "}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" targetFestivity"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-actions" /><code>{"private "}<Link to="/game-api/types/alta-customization/filteraction">{"FilterAction"}</Link>{"[] actions"}</code> |
+| <Link id="m-targetfestivity" /><code>{"private "}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" targetFestivity"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, PostProcessVolume volume)"}</code> |  |
-| <Link id="m-terminate" /><code>{"void Terminate("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, PostProcessVolume volume)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, PostProcessVolume volume)"}</code> |
+| <Link id="m-terminate" /><code>{"void Terminate("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, PostProcessVolume volume)"}</code> |
 
 ## Used in
 

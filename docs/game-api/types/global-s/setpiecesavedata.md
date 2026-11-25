@@ -19,12 +19,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SetPieceSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SetPieceSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" data"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data" /><code><Link to="/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" data"}</code> |

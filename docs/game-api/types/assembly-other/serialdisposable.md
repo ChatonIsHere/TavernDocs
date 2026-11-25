@@ -18,27 +18,32 @@ A **class** in `Alta.LifecycleManagement.Runtime`, `Alta.LifecycleManagement`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SerialDisposable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SerialDisposable()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-current" /><code>{"private IDisposable current"}</code> |  |
-| <Link id="m-disposed" /><code>{"private bool disposed"}</code> |  |
-| <Link id="m-gate" /><code>{"private readonly object gate"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-current" /><code>{"private IDisposable current"}</code> |
+| <Link id="m-disposed" /><code>{"private bool disposed"}</code> |
+| <Link id="m-gate" /><code>{"private readonly object gate"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-disposable" /><code>{"IDisposable Disposable { get; set; }"}</code> |  |
-| <Link id="m-isdisposed" /><code>{"bool IsDisposed { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-disposable" /><code>{"IDisposable Disposable { get; set; }"}</code> |
+| <Link id="m-isdisposed" /><code>{"bool IsDisposed { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |

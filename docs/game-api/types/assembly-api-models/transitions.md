@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Transitions()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Transitions()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-conditions" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/condition">{"Condition"}</Link>{"> Conditions { get; set; }"}</code> |  |
-| <Link id="m-pageid" /><code>{"int PageId { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-conditions" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/condition">{"Condition"}</Link>{"> Conditions { get; set; }"}</code> |
+| <Link id="m-pageid" /><code>{"int PageId { get; set; }"}</code> |
 
 ## Used in
 

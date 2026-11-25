@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, `Alta.UserInterface.SocialTablet`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ban" /><code>{"Ban = 1"}</code> |  |
-| <Link id="m-report" /><code>{"Report = 0"}</code> |  |
-| <Link id="m-unban" /><code>{"Unban = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ban" /><code>{"Ban = 1"}</code> |
+| <Link id="m-report" /><code>{"Report = 0"}</code> |
+| <Link id="m-unban" /><code>{"Unban = 2"}</code> |
 
 ## Used in
 

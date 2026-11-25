@@ -20,9 +20,9 @@ Base for a page provider that builds a page from a hashed asset (for example an 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected GeneratedPageProvider()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected GeneratedPageProvider()"}</code> |
 
 ## Methods
 

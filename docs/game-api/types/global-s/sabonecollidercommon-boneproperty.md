@@ -17,21 +17,21 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BoneProperty()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BoneProperty()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-recursivery" /><code>{"bool recursivery"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-recursivery" /><code>{"bool recursivery"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-shallowcopy" /><code><Link to="/game-api/types/global-s/sabonecollidercommon-boneproperty">{"SABoneColliderCommon.BoneProperty"}</Link>{" ShallowCopy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-shallowcopy" /><code><Link to="/game-api/types/global-s/sabonecollidercommon-boneproperty">{"SABoneColliderCommon.BoneProperty"}</Link>{" ShallowCopy()"}</code> |
 
 ## Used in
 

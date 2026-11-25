@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `ATT.Respawn`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onmodelchanged" /><code>{"void OnModelChanged("}<Link to="/game-api/types/game-other-namespaces/irespawnsystemmodel">{"IRespawnSystemModel"}</Link>{" model)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onmodelchanged" /><code>{"void OnModelChanged("}<Link to="/game-api/types/game-other-namespaces/irespawnsystemmodel">{"IRespawnSystemModel"}</Link>{" model)"}</code> |

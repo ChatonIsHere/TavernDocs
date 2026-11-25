@@ -17,16 +17,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InitialContent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InitialContent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chance" /><code>{"float chance"}</code> |  |
-| <Link id="m-data" /><code><Link to="/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" data"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chance" /><code>{"float chance"}</code> |
+| <Link id="m-data" /><code><Link to="/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" data"}</code> |
 
 ## Used in
 

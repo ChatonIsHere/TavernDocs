@@ -16,28 +16,28 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GroupRoleInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GroupRoleInfo()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bannedroleidentifier" /><code>{"const int BannedRoleIdentifier"}</code> |  |
-| <Link id="m-defaultmoderatoridentifier" /><code>{"const int DefaultModeratorIdentifier"}</code> |  |
-| <Link id="m-defaultroleidentifier" /><code>{"const int DefaultRoleIdentifier"}</code> |  |
-| <Link id="m-ownerroleidentifier" /><code>{"const int OwnerRoleIdentifier"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bannedroleidentifier" /><code>{"const int BannedRoleIdentifier"}</code> |
+| <Link id="m-defaultmoderatoridentifier" /><code>{"const int DefaultModeratorIdentifier"}</code> |
+| <Link id="m-defaultroleidentifier" /><code>{"const int DefaultRoleIdentifier"}</code> |
+| <Link id="m-ownerroleidentifier" /><code>{"const int OwnerRoleIdentifier"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allowedcommands" /><code>{"string[] AllowedCommands { get; set; }"}</code> |  |
-| <Link id="m-color" /><code>{"string Color { get; set; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-permissions" /><code><Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] Permissions { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-allowedcommands" /><code>{"string[] AllowedCommands { get; set; }"}</code> |
+| <Link id="m-color" /><code>{"string Color { get; set; }"}</code> |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| <Link id="m-permissions" /><code><Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] Permissions { get; set; }"}</code> |
 
 ## Used in
 

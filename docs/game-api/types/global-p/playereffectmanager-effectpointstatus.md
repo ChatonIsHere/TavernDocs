@@ -18,36 +18,46 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EffectPointStatus("}<Link to="/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition, "}<Link to="/game-api/types/global-p/playereffectmanager">{"PlayerEffectManager"}</Link>{" manager, "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" settings)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EffectPointStatus("}<Link to="/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition, "}<Link to="/game-api/types/global-p/playereffectmanager">{"PlayerEffectManager"}</Link>{" manager, "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" settings)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-burnactiveeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{" burnActiveEffectDefinition"}</code> |  |
-| <Link id="m-effectposition" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition"}</code> |  |
-| <Link id="m-smokeactiveeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{" smokeActiveEffectDefinition"}</code> |  |
-| <Link id="m-stateffectsdefinition" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{", "}<Link to="/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{"[]> statEffectsDefinition"}</code> |  |
-| <Link id="m-temperaturecurve" /><code>{"private AnimationCurve temperatureCurve"}</code> |  |
-| <Link id="m-temperaturelevelchanged" /><code>{"private Action TemperatureLevelChanged"}</code> |  |
-| <Link id="m-temperaturelevelcount" /><code>{"private int temperatureLevelCount"}</code> |  |
-| <Link id="m-temperaturelevels" /><code>{"private float[] temperatureLevels"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-burnactiveeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{" burnActiveEffectDefinition"}</code> |
+| <Link id="m-effectposition" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition"}</code> |
+| <Link id="m-smokeactiveeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{" smokeActiveEffectDefinition"}</code> |
+| <Link id="m-stateffectsdefinition" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{", "}<Link to="/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{"[]> statEffectsDefinition"}</code> |
+| <Link id="m-temperaturecurve" /><code>{"private AnimationCurve temperatureCurve"}</code> |
+| <Link id="m-temperaturelevelchanged" /><code>{"private Action TemperatureLevelChanged"}</code> |
+| <Link id="m-temperaturelevelcount" /><code>{"private int temperatureLevelCount"}</code> |
+| <Link id="m-temperaturelevels" /><code>{"private float[] temperatureLevels"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentlevel" /><code>{"int CurrentLevel { get; private set; }"}</code> |  |
-| <Link id="m-havestateffectsvalid" /><code>{"bool HaveStatEffectsValid { get; }"}</code> |  |
-| <Link id="m-item" /><code><Link to="/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{"[] this["}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statDefinition] { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentlevel" /><code>{"int CurrentLevel { get; private set; }"}</code> |
+| <Link id="m-havestateffectsvalid" /><code>{"bool HaveStatEffectsValid { get; }"}</code> |
+| <Link id="m-item" /><code><Link to="/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{"[] this["}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statDefinition] { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updatetemperature" /><code>{"private void UpdateTemperature("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-updatetemperature" /><code>{"private void UpdateTemperature("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |
+
+</details>
 
 ## Used in
 

@@ -17,32 +17,37 @@ A **class** in `Root.Township`, `Alta.Networking.Animation`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimatedFloatLerp(string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimatedFloatLerp(string name)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-islerping" /><code>{"private bool isLerping"}</code> |  |
-| <Link id="m-lerpprogress" /><code>{"private float lerpProgress"}</code> |  |
-| <Link id="m-snapthreshold" /><code>{"private float snapThreshold"}</code> |  |
-| <Link id="m-target" /><code>{"private float target"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-islerping" /><code>{"private bool isLerping"}</code> |
+| <Link id="m-lerpprogress" /><code>{"private float lerpProgress"}</code> |
+| <Link id="m-snapthreshold" /><code>{"private float snapThreshold"}</code> |
+| <Link id="m-target" /><code>{"private float target"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-value" /><code>{"override float Value { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-value" /><code>{"override float Value { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lerp" /><code>{"void Lerp()"}</code> |  |
-| <Link id="m-serialize" /><code>{"protected override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-update" /><code>{"protected override void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-lerp" /><code>{"void Lerp()"}</code> |
+| <Link id="m-serialize" /><code>{"protected override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-update" /><code>{"protected override void Update()"}</code> |
 
 ## Used in
 

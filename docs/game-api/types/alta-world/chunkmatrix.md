@@ -16,23 +16,28 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkMatrix(Matrix4x4 matrix)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkMatrix(Matrix4x4 matrix)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-matrix" /><code>{"private Matrix4x4 matrix"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-matrix" /><code>{"private Matrix4x4 matrix"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-direction" /><code>{"void Direction(ref Vector3 direction)"}</code> |  |
-| <Link id="m-position" /><code>{"void Position(ref Vector3 position)"}</code> |  |
-| <Link id="m-rotation" /><code>{"void Rotation(ref Quaternion rotation)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-direction" /><code>{"void Direction(ref Vector3 direction)"}</code> |
+| <Link id="m-position" /><code>{"void Position(ref Vector3 position)"}</code> |
+| <Link id="m-rotation" /><code>{"void Rotation(ref Quaternion rotation)"}</code> |
 
 ## Used in
 

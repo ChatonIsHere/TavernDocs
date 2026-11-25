@@ -20,9 +20,9 @@ The `ServerConfigFile` for `users.json`, with lookups on the last read. Use the 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UserConfigFile(string filePath)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UserConfigFile(string filePath)"}</code> |
 
 ## Methods
 

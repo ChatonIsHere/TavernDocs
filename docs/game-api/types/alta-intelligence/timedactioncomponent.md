@@ -20,15 +20,20 @@ Base for a creature action component that runs for a set duration.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected TimedActionComponent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected TimedActionComponent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-duration" /><code>{"private float duration"}</code> |
+
+</details>
 
 ## Properties
 

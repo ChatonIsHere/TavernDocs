@@ -17,25 +17,25 @@ A **class** in `Root.Township`, `Alta.Networking.Animation`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimatedTrigger(string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimatedTrigger(string name)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-value" /><code>{"override bool Value { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-value" /><code>{"override bool Value { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-force" /><code>{"void Force()"}</code> |  |
-| <Link id="m-serialize" /><code>{"override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWriteFull)"}</code> |  |
-| <Link id="m-updatechanged" /><code>{"void UpdateChanged()"}</code> |  |
-| <Link id="m-serialize-2" /><code>{"protected override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-update" /><code>{"protected override void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-force" /><code>{"void Force()"}</code> |
+| <Link id="m-serialize" /><code>{"override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWriteFull)"}</code> |
+| <Link id="m-updatechanged" /><code>{"void UpdateChanged()"}</code> |
+| <Link id="m-serialize-2" /><code>{"protected override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-update" /><code>{"protected override void Update()"}</code> |
 
 ## Used in
 

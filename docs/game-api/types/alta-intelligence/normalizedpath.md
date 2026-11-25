@@ -19,25 +19,33 @@ A path's corners and length, for `NormalizedMove`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NormalizedPath(Vector3 origin, List<Vector3> points)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NormalizedPath(Vector3 origin, List<Vector3> points)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-target" /><code>{"Vector3 target"}</code> |  |
-| <Link id="m-totallength" /><code>{"float totalLength"}</code> |  |
-| <Link id="m-lengths" /><code>{"private float[] lengths"}</code> |  |
-| <Link id="m-points" /><code>{"private Vector3[] points"}</code> |  |
-| <Link id="m-pointslength" /><code>{"private int pointsLength"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-target" /><code>{"Vector3 target"}</code> |
+| <Link id="m-totallength" /><code>{"float totalLength"}</code> |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-lengths" /><code>{"private float[] lengths"}</code> |
+| <Link id="m-points" /><code>{"private Vector3[] points"}</code> |
+| <Link id="m-pointslength" /><code>{"private int pointsLength"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getposition" /><code>{"Vector3 GetPosition(float progress, ref bool isFinished)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getposition" /><code>{"Vector3 GetPosition(float progress, ref bool isFinished)"}</code> |
 
 ## Used in
 

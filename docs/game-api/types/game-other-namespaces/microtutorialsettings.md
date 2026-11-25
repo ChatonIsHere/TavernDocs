@@ -21,16 +21,21 @@ One micro tutorial asset: a name, a list of steps and a completion message. It i
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MicroTutorialSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MicroTutorialSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-steps" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{"[] steps"}</code> |  |
-| <Link id="m-tutorialname" /><code>{"private string tutorialName"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-steps" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{"[] steps"}</code> |
+| <Link id="m-tutorialname" /><code>{"private string tutorialName"}</code> |
+
+</details>
 
 ## Properties
 

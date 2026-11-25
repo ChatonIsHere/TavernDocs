@@ -17,14 +17,14 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EnumArrayAttribute(Type enumType, int startIndex = 0, bool isFlagEnum = false)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EnumArrayAttribute(Type enumType, int startIndex = 0, bool isFlagEnum = false)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enumtype" /><code>{"Type EnumType { get; }"}</code> |  |
-| <Link id="m-isflagenum" /><code>{"bool IsFlagEnum { get; }"}</code> |  |
-| <Link id="m-startindex" /><code>{"int StartIndex { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-enumtype" /><code>{"Type EnumType { get; }"}</code> |
+| <Link id="m-isflagenum" /><code>{"bool IsFlagEnum { get; }"}</code> |
+| <Link id="m-startindex" /><code>{"int StartIndex { get; }"}</code> |

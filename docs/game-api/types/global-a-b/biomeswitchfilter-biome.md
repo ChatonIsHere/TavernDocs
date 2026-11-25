@@ -17,16 +17,16 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Biome()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Biome()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forestbiome" /><code><Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{" forestBiome"}</code> |  |
-| <Link id="m-set" /><code>{"Object set"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-forestbiome" /><code><Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{" forestBiome"}</code> |
+| <Link id="m-set" /><code>{"Object set"}</code> |
 
 ## Used in
 

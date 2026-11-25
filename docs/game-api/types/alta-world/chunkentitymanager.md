@@ -18,19 +18,24 @@ Server: the list of network entities currently in one chunk, used when syncing t
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkEntityManager("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkEntityManager("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entities" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> entities"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-temppriorities" /><code>{"private static List<int> tempPriorities"}</code> |  |
-| <Link id="m-tempsort" /><code>{"private static List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> tempSort"}</code> |  |
-| <Link id="m-tempsortmap" /><code>{"private static Dictionary<int, List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{">> tempSortMap"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entities" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> entities"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-temppriorities" /><code>{"private static List<int> tempPriorities"}</code> |
+| <Link id="m-tempsort" /><code>{"private static List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> tempSort"}</code> |
+| <Link id="m-tempsortmap" /><code>{"private static Dictionary<int, List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{">> tempSortMap"}</code> |
+
+</details>
 
 ## Properties
 
@@ -58,11 +63,19 @@ Server: the list of network entities currently in one chunk, used when syncing t
 | <Link id="m-comparefeet" /><code>{"static Comparison<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> CompareFeet("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, bool isSpawning)"}</code> | Sorts by distance to the player's feet: nearest first when spawning, farthest first otherwise. Its distance maths is off (z plus z). |
 | <Link id="m-contains" /><code>{"bool Contains("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Whether the entity is in this chunk. |
 | <Link id="m-remove" /><code>{"bool Remove("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Removes an entity by identifier and raises `Removed`. False if it wasn't there. |
-| <Link id="m-compareentitiesposition" /><code>{"private static int CompareEntitiesPosition("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" a, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" b, Vector3 position)"}</code> |  |
-| <Link id="m-handlechunknotloaded" /><code>{"private void HandleChunkNotLoaded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
-| <Link id="m-onadded" /><code>{"private void OnAdded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
-| <Link id="m-onremoved" /><code>{"private void OnRemoved("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
-| <Link id="m-sort" /><code>{"private void Sort("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"[] cache, int firstFail, bool isSpawning, Comparison<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> finalSort, out int count)"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-compareentitiesposition" /><code>{"private static int CompareEntitiesPosition("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" a, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" b, Vector3 position)"}</code> |
+| <Link id="m-handlechunknotloaded" /><code>{"private void HandleChunkNotLoaded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
+| <Link id="m-onadded" /><code>{"private void OnAdded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
+| <Link id="m-onremoved" /><code>{"private void OnRemoved("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
+| <Link id="m-sort" /><code>{"private void Sort("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"[] cache, int firstFail, bool isSpawning, Comparison<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> finalSort, out int count)"}</code> |
+
+</details>
 
 ## Used in
 

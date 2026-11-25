@@ -20,9 +20,9 @@ Base for parts of a `GenerationCore` (a procedurally placed static piece) that a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected GeneratablePart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected GeneratablePart()"}</code> |
 
 ## Methods
 

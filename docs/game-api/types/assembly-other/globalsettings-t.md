@@ -21,16 +21,21 @@ Base for global settings ScriptableObjects with a static `Instance`. The instanc
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GlobalSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"private static T instance"}</code> |  |
-| <Link id="m-startedcount" /><code>{"private static int startedCount"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"private static T instance"}</code> |
+| <Link id="m-startedcount" /><code>{"private static int startedCount"}</code> |
+
+</details>
 
 ## Properties
 
@@ -43,4 +48,12 @@ Base for global settings ScriptableObjects with a static `Instance`. The instanc
 | Member | What it is |
 | --- | --- |
 | <Link id="m-initializeinstance" /><code>{"sealed override void InitializeInstance()"}</code> | Makes this asset the static `Instance`. Called at startup for every listed settings asset. |
-| <Link id="m-geteditorinstance" /><code>{"private static T GetEditorInstance()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-geteditorinstance" /><code>{"private static T GetEditorInstance()"}</code> |
+
+</details>

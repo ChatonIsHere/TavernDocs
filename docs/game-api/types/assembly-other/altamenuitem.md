@@ -20,9 +20,9 @@ Base for Alta's editor menu commands. Subclasses nest inside an `AltaMenuItemBas
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected AltaMenuItem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected AltaMenuItem()"}</code> |
 
 ## Properties
 

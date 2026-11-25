@@ -16,23 +16,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialLOD(Material material, int level)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MaterialLOD(Material material, int level)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-level" /><code>{"int level"}</code> |  |
-| <Link id="m-material" /><code>{"Material material"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-level" /><code>{"int level"}</code> |
+| <Link id="m-material" /><code>{"Material material"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |  |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |
 
 ## Used in
 

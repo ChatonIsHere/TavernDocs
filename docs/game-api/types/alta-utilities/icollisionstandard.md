@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-material" /><code><Link to="/game-api/types/alta-utilities/surfacematerial">{"SurfaceMaterial"}</Link>{" Material { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-material" /><code><Link to="/game-api/types/alta-utilities/surfacematerial">{"SurfaceMaterial"}</Link>{" Material { get; }"}</code> |

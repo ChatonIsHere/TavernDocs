@@ -19,21 +19,26 @@ The river network for a forest: nodes, the overground paths and waterfalls. It c
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RiverGeneration("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, float overgroundVolumeThreshold, float nodeWidthMultiplier, float maxVolume)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"RiverGeneration("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RiverGeneration("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, float overgroundVolumeThreshold, float nodeWidthMultiplier, float maxVolume)"}</code> |
+| <Link id="m-ctor-2" /><code>{"RiverGeneration("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxvolume" /><code>{"private float maxVolume"}</code> |  |
-| <Link id="m-nodes" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{"> nodes"}</code> |  |
-| <Link id="m-nodewidthmultiplier" /><code>{"private float nodeWidthMultiplier"}</code> |  |
-| <Link id="m-overground" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{"> overground"}</code> |  |
-| <Link id="m-overgroundvolumethreshold" /><code>{"private float overgroundVolumeThreshold"}</code> |  |
-| <Link id="m-waterfalls" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/waterfall">{"Waterfall"}</Link>{"> waterfalls"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maxvolume" /><code>{"private float maxVolume"}</code> |
+| <Link id="m-nodes" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{"> nodes"}</code> |
+| <Link id="m-nodewidthmultiplier" /><code>{"private float nodeWidthMultiplier"}</code> |
+| <Link id="m-overground" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{"> overground"}</code> |
+| <Link id="m-overgroundvolumethreshold" /><code>{"private float overgroundVolumeThreshold"}</code> |
+| <Link id="m-waterfalls" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/waterfall">{"Waterfall"}</Link>{"> waterfalls"}</code> |
+
+</details>
 
 ## Properties
 
@@ -49,13 +54,26 @@ The river network for a forest: nodes, the overground paths and waterfalls. It c
 | <Link id="m-workingnodes" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{"> WorkingNodes { get; }"}</code> | The node list itself, for generation steps to edit. |
 | <Link id="m-workingoverground" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{"> WorkingOverground { get; }"}</code> | The overground path list itself, for editing. |
 | <Link id="m-workingwaterfalls" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/waterfall">{"Waterfall"}</Link>{"> WorkingWaterfalls { get; }"}</code> | The waterfall list itself, for editing. |
-| <Link id="m-alta-static-icacheable-version" /><code>{"private uint Alta.Static.ICacheable.Version { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-static-icacheable-version" /><code>{"private uint Alta.Static.ICacheable.Version { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serializeasync" /><code>{"private Task Alta.Static.ICacheable.SerializeAsync(uint version, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-serializeasync" /><code>{"private Task Alta.Static.ICacheable.SerializeAsync(uint version, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

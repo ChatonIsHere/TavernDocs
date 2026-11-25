@@ -18,6 +18,6 @@ A **class** in `Root.Township`, `Alta.Environmental.Atmosphere`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Prefab_Scene_Settings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Prefab_Scene_Settings()"}</code> |

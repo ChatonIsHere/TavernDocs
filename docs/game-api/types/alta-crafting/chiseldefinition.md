@@ -23,9 +23,9 @@ A chiselling recipe under `Carpentry/Chisel Definitions`: the order the 12 outer
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChiselDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChiselDefinition()"}</code> |
 
 ## Fields
 
@@ -35,10 +35,18 @@ A chiselling recipe under `Carpentry/Chisel Definitions`: the order the 12 outer
 | <Link id="m-recipeglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" recipeGlyph"}</code> | Glyph shown for this recipe. |
 | <Link id="m-shardcount" /><code>{"const int ShardCount"}</code> | Number of outer shards (12). |
 | <Link id="m-undonepenalty" /><code>{"const int UndonePenalty"}</code> | Error added per shard missing from the chiselled order (5). |
-| <Link id="m-btnrandomize" /><code>{"private bool btnRandomize"}</code> |  |
-| <Link id="m-chiselorder" /><code>{"private List<int> chiselOrder"}</code> |  |
-| <Link id="m-prefabs" /><code>{"private "}<Link to="/game-api/types/alta-crafting/prefabspawnposition">{"PrefabSpawnPosition"}</Link>{"[] prefabs"}</code> |  |
-| <Link id="m-size" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" size"}</code> |  |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-btnrandomize" /><code>{"private bool btnRandomize"}</code> |
+| <Link id="m-chiselorder" /><code>{"private List<int> chiselOrder"}</code> |
+| <Link id="m-prefabs" /><code>{"private "}<Link to="/game-api/types/alta-crafting/prefabspawnposition">{"PrefabSpawnPosition"}</Link>{"[] prefabs"}</code> |
+| <Link id="m-size" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" size"}</code> |
+
+</details>
 
 ## Properties
 

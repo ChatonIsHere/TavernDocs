@@ -21,20 +21,25 @@ An asset describing a mineable rock: its health, what it drops, how its hits loo
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BoulderDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BoulderDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-destroyedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" destroyedEffect"}</code> |  |
-| <Link id="m-dropcount" /><code>{"private AnimationCurve dropCount"}</code> |  |
-| <Link id="m-health" /><code>{"private int health"}</code> |  |
-| <Link id="m-impactsettings" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" impactSettings"}</code> |  |
-| <Link id="m-orematerial" /><code>{"private Material oreMaterial"}</code> |  |
-| <Link id="m-resourcesdropchances" /><code>{"private "}<Link to="/game-api/types/alta-items/resourcedropchance">{"ResourceDropChance"}</Link>{"[] resourcesDropChances"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroyedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" destroyedEffect"}</code> |
+| <Link id="m-dropcount" /><code>{"private AnimationCurve dropCount"}</code> |
+| <Link id="m-health" /><code>{"private int health"}</code> |
+| <Link id="m-impactsettings" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" impactSettings"}</code> |
+| <Link id="m-orematerial" /><code>{"private Material oreMaterial"}</code> |
+| <Link id="m-resourcesdropchances" /><code>{"private "}<Link to="/game-api/types/alta-items/resourcedropchance">{"ResourceDropChance"}</Link>{"[] resourcesDropChances"}</code> |
+
+</details>
 
 ## Properties
 

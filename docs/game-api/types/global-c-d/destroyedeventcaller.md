@@ -17,26 +17,39 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DestroyedEventCaller()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DestroyedEventCaller()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+
+</details>
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-callback" /><code>{"event Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> Callback"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-callback" /><code>{"event Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> Callback"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-attachto" /><code>{"static void AttachTo("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" target, Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> callback)"}</code> |  |
-| <Link id="m-detach" /><code>{"static void Detach("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" target, Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> callback)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-attachto" /><code>{"static void AttachTo("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" target, Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> callback)"}</code> |
+| <Link id="m-detach" /><code>{"static void Detach("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" target, Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> callback)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>

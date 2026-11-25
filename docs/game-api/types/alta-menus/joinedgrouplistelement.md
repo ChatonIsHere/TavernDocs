@@ -17,28 +17,33 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JoinedGroupListElement()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JoinedGroupListElement()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invitebutton" /><code>{"private "}<Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" inviteButton"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-invitebutton" /><code>{"private "}<Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" inviteButton"}</code> |
+
+</details>
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invitefriend" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{"> InviteFriend"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invitefriend" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{"> InviteFriend"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gettext" /><code>{"protected override string GetText("}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" data)"}</code> |  |
-| <Link id="m-start" /><code>{"protected override void Start()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gettext" /><code>{"protected override string GetText("}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" data)"}</code> |
+| <Link id="m-start" /><code>{"protected override void Start()"}</code> |
 
 ## Used in
 

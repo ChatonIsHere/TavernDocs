@@ -18,9 +18,9 @@ Sends and reads the regular state updates of every `EntitySerializer` in a netwo
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SceneSerializer("}<Link to="/game-api/types/alta-networking/inetworksceneinternal">{"INetworkSceneInternal"}</Link>{" networkScene, "}<Link to="/game-api/types/alta-networking/entitymanager">{"EntityManager"}</Link>{" entityManager)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SceneSerializer("}<Link to="/game-api/types/alta-networking/inetworksceneinternal">{"INetworkSceneInternal"}</Link>{" networkScene, "}<Link to="/game-api/types/alta-networking/entitymanager">{"EntityManager"}</Link>{" entityManager)"}</code> |
 
 ## Fields
 
@@ -30,12 +30,20 @@ Sends and reads the regular state updates of every `EntitySerializer` in a netwo
 | <Link id="m-serializationtimems" /><code>{"static "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" SerializationTimeMs"}</code> | Running average time spent preparing entity data. |
 | <Link id="m-serializetoconnectionsms" /><code>{"static "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" SerializeToConnectionsMs"}</code> | Running average time to write and send to all connections. |
 | <Link id="m-writingentity" /><code>{"static "}<Link to="/game-api/types/alta-networking/serializingentityhandler">{"SerializingEntityHandler"}</Link>{" WritingEntity"}</code> | Static debug hook called for every entity written. |
-| <Link id="m-connections" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{"> connections"}</code> |  |
-| <Link id="m-entitymanager" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymanager">{"EntityManager"}</Link>{" entityManager"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-networkscene" /><code>{"private "}<Link to="/game-api/types/alta-networking/inetworksceneinternal">{"INetworkSceneInternal"}</Link>{" networkScene"}</code> |  |
-| <Link id="m-serializeframeindex" /><code>{"private int serializeFrameIndex"}</code> |  |
-| <Link id="m-timer" /><code>{"private static Stopwatch timer"}</code> |  |
+
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-connections" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{"> connections"}</code> |
+| <Link id="m-entitymanager" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymanager">{"EntityManager"}</Link>{" entityManager"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-networkscene" /><code>{"private "}<Link to="/game-api/types/alta-networking/inetworksceneinternal">{"INetworkSceneInternal"}</Link>{" networkScene"}</code> |
+| <Link id="m-serializeframeindex" /><code>{"private int serializeFrameIndex"}</code> |
+| <Link id="m-timer" /><code>{"private static Stopwatch timer"}</code> |
+
+</details>
 
 ## Properties
 
@@ -52,7 +60,15 @@ Sends and reads the regular state updates of every `EntitySerializer` in a netwo
 | <Link id="m-sendserialized" /><code>{"void SendSerialized("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> | Writes and sends entity data to every connection on the socket, split over messages (logs an error at 1000). |
 | <Link id="m-serializeread" /><code>{"void SerializeRead("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" stream)"}</code> | Reads a serialize message and hands each entity's bits to its serializer. Skips unknown entities and data the sender may not write. |
 | <Link id="m-serializewrite" /><code>{"void SerializeWrite("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" stream, "}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, ref int startIndex)"}</code> | Writes serializers into one message up to `MaxBitsPerSerializationMessage`. Sets `startIndex` to where the next message resumes, or -1 when done. |
-| <Link id="m-updateentitydata" /><code>{"private void UpdateEntityData(IEnumerable<"}<Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{"> serializers)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-updateentitydata" /><code>{"private void UpdateEntityData(IEnumerable<"}<Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{"> serializers)"}</code> |
+
+</details>
 
 ## Used in
 

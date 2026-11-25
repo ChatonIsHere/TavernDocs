@@ -22,22 +22,27 @@ The starting inventory for new players (`InitialPlayerInventory` in the settings
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialsetupbytes" /><code>{"private int initialSetupBytes"}</code> |  |
-| <Link id="m-initialsetupdata" /><code>{"private uint[] initialSetupData"}</code> |  |
-| <Link id="m-versioning" /><code>{"private uint[] versioning"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-initialsetupbytes" /><code>{"private int initialSetupBytes"}</code> |
+| <Link id="m-initialsetupdata" /><code>{"private uint[] initialSetupData"}</code> |
+| <Link id="m-versioning" /><code>{"private uint[] versioning"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getcurrent" /><code>{"static "}<Link to="/game-api/types/alta-utilities/playersavedata">{"PlayerSaveData"}</Link>{" GetCurrent()"}</code> |  |
-| <Link id="m-populate" /><code>{"void Populate("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getcurrent" /><code>{"static "}<Link to="/game-api/types/alta-utilities/playersavedata">{"PlayerSaveData"}</Link>{" GetCurrent()"}</code> |
+| <Link id="m-populate" /><code>{"void Populate("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |

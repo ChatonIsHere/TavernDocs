@@ -18,25 +18,30 @@ A **class** in `Root.Township`, `Alta.Menu`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerCommandDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerCommandDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-command" /><code>{"private string command"}</code> |  |
-| <Link id="m-settingdescription" /><code>{"private string settingDescription"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-command" /><code>{"private string command"}</code> |
+| <Link id="m-settingdescription" /><code>{"private string settingDescription"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-settingdescription-2" /><code>{"override string SettingDescription { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-settingdescription-2" /><code>{"override string SettingDescription { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-runcommandonclient" /><code>{"override void RunCommandOnClient()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-runcommandonclient" /><code>{"override void RunCommandOnClient()"}</code> |

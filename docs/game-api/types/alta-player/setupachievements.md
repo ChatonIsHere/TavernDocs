@@ -16,6 +16,6 @@ A **static class** in `Root.Township`, `Alta.Achievements`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"static void Setup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"static void Setup()"}</code> |

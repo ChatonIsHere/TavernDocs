@@ -19,22 +19,27 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SplatPaintSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SplatPaintSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-paintmodifiers" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" paintModifiers"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-paintmodifiers" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" paintModifiers"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-paintmodifiers-2" /><code><Link to="/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-spawnmodifiers" /><code>{"override "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-paintmodifiers-2" /><code><Link to="/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" { get; }"}</code> |
+| <Link id="m-spawnmodifiers" /><code>{"override "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> |
 
 ## Used in
 

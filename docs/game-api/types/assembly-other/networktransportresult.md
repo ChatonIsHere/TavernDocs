@@ -17,21 +17,21 @@ A **class** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportResult()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkTransportResult()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-error" /><code>{"string Error { get; private set; }"}</code> |  |
-| <Link id="m-issuccess" /><code>{"bool IsSuccess { get; private set; }"}</code> |  |
-| <Link id="m-noresources" /><code>{"static "}<Link to="/game-api/types/assembly-other/networktransportresult">{"NetworkTransportResult"}</Link>{" NoResources { get; }"}</code> |  |
-| <Link id="m-success" /><code>{"static "}<Link to="/game-api/types/assembly-other/networktransportresult">{"NetworkTransportResult"}</Link>{" Success { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-error" /><code>{"string Error { get; private set; }"}</code> |
+| <Link id="m-issuccess" /><code>{"bool IsSuccess { get; private set; }"}</code> |
+| <Link id="m-noresources" /><code>{"static "}<Link to="/game-api/types/assembly-other/networktransportresult">{"NetworkTransportResult"}</Link>{" NoResources { get; }"}</code> |
+| <Link id="m-success" /><code>{"static "}<Link to="/game-api/types/assembly-other/networktransportresult">{"NetworkTransportResult"}</Link>{" Success { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fromerror" /><code>{"static "}<Link to="/game-api/types/assembly-other/networktransportresult">{"NetworkTransportResult"}</Link>{" FromError(string error)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fromerror" /><code>{"static "}<Link to="/game-api/types/assembly-other/networktransportresult">{"NetworkTransportResult"}</Link>{" FromError(string error)"}</code> |

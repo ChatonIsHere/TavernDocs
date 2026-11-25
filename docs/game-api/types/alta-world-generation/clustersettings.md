@@ -18,29 +18,34 @@ How a cluster generator scatters child objects (such as crystals or mushrooms) a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClusterSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClusterSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-childcount" /><code>{"private AnimationCurve childCount"}</code> |  |
-| <Link id="m-iseveningrandomposition" /><code>{"private bool isEveningRandomPosition"}</code> |  |
-| <Link id="m-iskinematic" /><code>{"private bool isKinematic"}</code> |  |
-| <Link id="m-isoffsetrestrictedtoupwards" /><code>{"private bool isOffsetRestrictedToUpwards"}</code> |  |
-| <Link id="m-israycastingfinal" /><code>{"private bool isRaycastingFinal"}</code> |  |
-| <Link id="m-isrotationunsplit" /><code>{"private bool isRotationUnsplit"}</code> |  |
-| <Link id="m-isscalerandom" /><code>{"private bool isScaleRandom"}</code> |  |
-| <Link id="m-maximumuprotation" /><code>{"private float maximumUpRotation"}</code> |  |
-| <Link id="m-maxraycastdistance" /><code>{"private float maxRaycastDistance"}</code> |  |
-| <Link id="m-minimumuprotation" /><code>{"private float minimumUpRotation"}</code> |  |
-| <Link id="m-offset" /><code>{"private float offset"}</code> |  |
-| <Link id="m-randomscale" /><code>{"private AnimationCurve randomScale"}</code> |  |
-| <Link id="m-raycastinglayers" /><code>{"private LayerMask raycastingLayers"}</code> |  |
-| <Link id="m-verticaloffset" /><code>{"private float verticalOffset"}</code> |  |
-| <Link id="m-verticaloffsetmultiplier" /><code>{"private float verticalOffsetMultiplier"}</code> |  |
+<details>
+<summary>15 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-childcount" /><code>{"private AnimationCurve childCount"}</code> |
+| <Link id="m-iseveningrandomposition" /><code>{"private bool isEveningRandomPosition"}</code> |
+| <Link id="m-iskinematic" /><code>{"private bool isKinematic"}</code> |
+| <Link id="m-isoffsetrestrictedtoupwards" /><code>{"private bool isOffsetRestrictedToUpwards"}</code> |
+| <Link id="m-israycastingfinal" /><code>{"private bool isRaycastingFinal"}</code> |
+| <Link id="m-isrotationunsplit" /><code>{"private bool isRotationUnsplit"}</code> |
+| <Link id="m-isscalerandom" /><code>{"private bool isScaleRandom"}</code> |
+| <Link id="m-maximumuprotation" /><code>{"private float maximumUpRotation"}</code> |
+| <Link id="m-maxraycastdistance" /><code>{"private float maxRaycastDistance"}</code> |
+| <Link id="m-minimumuprotation" /><code>{"private float minimumUpRotation"}</code> |
+| <Link id="m-offset" /><code>{"private float offset"}</code> |
+| <Link id="m-randomscale" /><code>{"private AnimationCurve randomScale"}</code> |
+| <Link id="m-raycastinglayers" /><code>{"private LayerMask raycastingLayers"}</code> |
+| <Link id="m-verticaloffset" /><code>{"private float verticalOffset"}</code> |
+| <Link id="m-verticaloffsetmultiplier" /><code>{"private float verticalOffsetMultiplier"}</code> |
+
+</details>
 
 ## Properties
 

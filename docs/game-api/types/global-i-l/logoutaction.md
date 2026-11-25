@@ -17,20 +17,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogoutAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogoutAction()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-leverobject" /><code>{"private GameObject leverObject"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-leverobject" /><code>{"private GameObject leverObject"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logout" /><code>{"void Logout()"}</code> |  |
-| <Link id="m-loggedin" /><code>{"protected override void LoggedIn()"}</code> |  |
-| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-logout" /><code>{"void Logout()"}</code> |
+| <Link id="m-loggedin" /><code>{"protected override void LoggedIn()"}</code> |
+| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> |

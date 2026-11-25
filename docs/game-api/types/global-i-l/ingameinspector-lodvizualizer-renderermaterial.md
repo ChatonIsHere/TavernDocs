@@ -17,16 +17,16 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RendererMaterial(Renderer renderer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RendererMaterial(Renderer renderer)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-material" /><code>{"Material Material { get; private set; }"}</code> |  |
-| <Link id="m-renderer" /><code>{"Renderer Renderer { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-material" /><code>{"Material Material { get; private set; }"}</code> |
+| <Link id="m-renderer" /><code>{"Renderer Renderer { get; private set; }"}</code> |
 
 ## Used in
 

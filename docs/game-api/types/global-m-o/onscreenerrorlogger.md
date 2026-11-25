@@ -17,12 +17,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OnScreenErrorLogger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OnScreenErrorLogger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-textcolor" /><code>{"private Color textColor"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-textcolor" /><code>{"private Color textColor"}</code> |
+
+</details>

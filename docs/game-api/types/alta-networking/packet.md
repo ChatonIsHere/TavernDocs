@@ -18,17 +18,22 @@ An outgoing packet buffer that several messages are written into, each with a 2-
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Packet(int size)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Packet(int size)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code>{"private readonly byte[] data"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-size" /><code>{"private readonly ushort[] size"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-data" /><code>{"private readonly byte[] data"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-size" /><code>{"private readonly ushort[] size"}</code> |
+
+</details>
 
 ## Properties
 
@@ -37,7 +42,15 @@ An outgoing packet buffer that several messages are written into, each with a 2-
 | <Link id="m-isempty" /><code>{"bool IsEmpty { get; }"}</code> | True when nothing has been written. |
 | <Link id="m-ispooled" /><code>{"bool IsPooled { get; set; }"}</code> | Set while the packet is in a pool. Using it then logs an error. |
 | <Link id="m-position" /><code>{"int Position { get; private set; }"}</code> | Write position in the buffer. |
-| <Link id="m-byteoffset" /><code>{"private static int ByteOffset { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-byteoffset" /><code>{"private static int ByteOffset { get; }"}</code> |
+
+</details>
 
 ## Methods
 

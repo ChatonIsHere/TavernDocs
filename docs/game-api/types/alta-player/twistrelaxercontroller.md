@@ -18,36 +18,49 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TwistRelaxerController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TwistRelaxerController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angletoweightmultiplier" /><code>{"private AnimationCurve angleToWeightMultiplier"}</code> |  |
-| <Link id="m-elbow" /><code>{"private Transform elbow"}</code> |  |
-| <Link id="m-hand" /><code>{"private Transform hand"}</code> |  |
-| <Link id="m-ischangingweights" /><code>{"private bool isChangingWeights"}</code> |  |
-| <Link id="m-relaxers" /><code>{"private List<TwistRelaxer> relaxers"}</code> |  |
-| <Link id="m-relaxerstartingweights" /><code>{"private Dictionary<TwistRelaxer, float> relaxerStartingWeights"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-angletoweightmultiplier" /><code>{"private AnimationCurve angleToWeightMultiplier"}</code> |
+| <Link id="m-elbow" /><code>{"private Transform elbow"}</code> |
+| <Link id="m-hand" /><code>{"private Transform hand"}</code> |
+| <Link id="m-ischangingweights" /><code>{"private bool isChangingWeights"}</code> |
+| <Link id="m-relaxers" /><code>{"private List<TwistRelaxer> relaxers"}</code> |
+| <Link id="m-relaxerstartingweights" /><code>{"private Dictionary<TwistRelaxer, float> relaxerStartingWeights"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-elbow-2" /><code>{"Transform Elbow { get; set; }"}</code> |  |
-| <Link id="m-hand-2" /><code>{"Transform Hand { get; set; }"}</code> |  |
-| <Link id="m-relaxers-2" /><code>{"List<TwistRelaxer> Relaxers { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-elbow-2" /><code>{"Transform Elbow { get; set; }"}</code> |
+| <Link id="m-hand-2" /><code>{"Transform Hand { get; set; }"}</code> |
+| <Link id="m-relaxers-2" /><code>{"List<TwistRelaxer> Relaxers { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>
 
 ## Used in
 

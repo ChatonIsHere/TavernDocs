@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-levelup" /><code>{"LevelUp = 0"}</code> |  |
-| <Link id="m-skillbought" /><code>{"SkillBought = 1"}</code> |  |
-| <Link id="m-skillsold" /><code>{"SkillSold = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-levelup" /><code>{"LevelUp = 0"}</code> |
+| <Link id="m-skillbought" /><code>{"SkillBought = 1"}</code> |
+| <Link id="m-skillsold" /><code>{"SkillSold = 2"}</code> |
 
 ## Used in
 

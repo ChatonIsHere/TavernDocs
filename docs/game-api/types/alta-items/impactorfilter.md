@@ -18,15 +18,15 @@ An **abstract class** in `Root.Township`, `Alta.Impact`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ImpactorFilter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ImpactorFilter()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkfilter" /><code>{"abstract bool CheckFilter("}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" contactPoint, out float multiplier)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkfilter" /><code>{"abstract bool CheckFilter("}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" contactPoint, out float multiplier)"}</code> |
 
 ## Used in
 

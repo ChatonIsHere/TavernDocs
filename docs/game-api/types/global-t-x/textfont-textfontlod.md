@@ -17,25 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TextFontLOD()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TextFontLOD()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alphalower" /><code>{"private "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] alphaLower"}</code> |  |
-| <Link id="m-alphaupper" /><code>{"private "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] alphaUpper"}</code> |  |
-| <Link id="m-numeric" /><code>{"private "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] numeric"}</code> |  |
-| <Link id="m-other" /><code>{"private "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] other"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-alphalower" /><code>{"private "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] alphaLower"}</code> |
+| <Link id="m-alphaupper" /><code>{"private "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] alphaUpper"}</code> |
+| <Link id="m-numeric" /><code>{"private "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] numeric"}</code> |
+| <Link id="m-other" /><code>{"private "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] other"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filldictionary" /><code>{"void FillDictionary("}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] dictionary)"}</code> |  |
-| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] alphaLower, "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] alphaUpper, "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] numeric, "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] other)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-filldictionary" /><code>{"void FillDictionary("}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] dictionary)"}</code> |
+| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] alphaLower, "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] alphaUpper, "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] numeric, "}<Link to="/game-api/types/global-i-l/lettermesh">{"LetterMesh"}</Link>{"[] other)"}</code> |
 
 ## Used in
 

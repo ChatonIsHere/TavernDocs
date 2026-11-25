@@ -17,12 +17,12 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-random" /><code>{"Random = 3"}</code> |  |
-| <Link id="m-sideatoentrance" /><code>{"SideAToEntrance = 1"}</code> |  |
-| <Link id="m-sidebtoentrance" /><code>{"SideBToEntrance = 2"}</code> |  |
-| <Link id="m-symmetrical" /><code>{"Symmetrical = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-random" /><code>{"Random = 3"}</code> |
+| <Link id="m-sideatoentrance" /><code>{"SideAToEntrance = 1"}</code> |
+| <Link id="m-sidebtoentrance" /><code>{"SideBToEntrance = 2"}</code> |
+| <Link id="m-symmetrical" /><code>{"Symmetrical = 0"}</code> |
 
 ## Used in
 

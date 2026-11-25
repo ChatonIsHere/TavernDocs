@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, `Alta.Utilities`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setcolor" /><code>{"static void SetColor(MeshFilter meshFilter, Color color, bool useSharedMesh = false)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setcolor" /><code>{"static void SetColor(MeshFilter meshFilter, Color color, bool useSharedMesh = false)"}</code> |

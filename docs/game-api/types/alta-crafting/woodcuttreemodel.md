@@ -21,27 +21,32 @@ One choppable segment of a `WoodcutTree` (a trunk or branch piece). Hits from th
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeModel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WoodcutTreeModel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-boneweights" /><code>{"private BoneWeight[] boneWeights"}</code> |  |
-| <Link id="m-bottompointindex" /><code>{"private int bottomPointIndex"}</code> |  |
-| <Link id="m-btncheckcomplete" /><code>{"private bool btnCheckComplete"}</code> |  |
-| <Link id="m-btntakingrandomdamage" /><code>{"private bool btnTakingRandomDamage"}</code> |  |
-| <Link id="m-colors" /><code>{"private Color[] colors"}</code> |  |
-| <Link id="m-connections" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{"[] connections"}</code> |  |
-| <Link id="m-droplocations" /><code>{"private PositionRotation[] dropLocations"}</code> |  |
-| <Link id="m-finisheddirection" /><code>{"private int finishedDirection"}</code> |  |
-| <Link id="m-impactdetector" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector"}</code> |  |
-| <Link id="m-mass" /><code>{"private float mass"}</code> |  |
-| <Link id="m-meshes" /><code>{"private Mesh[] meshes"}</code> |  |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnectiontype">{"WoodcutConnectionType"}</Link>{" type"}</code> |  |
-| <Link id="m-woodcutpointscollection" /><code>{"private "}<Link to="/game-api/types/global-t-x/woodcutpointcollection">{"WoodcutPointCollection"}</Link>{" woodcutPointsCollection"}</code> |  |
+<details>
+<summary>13 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-boneweights" /><code>{"private BoneWeight[] boneWeights"}</code> |
+| <Link id="m-bottompointindex" /><code>{"private int bottomPointIndex"}</code> |
+| <Link id="m-btncheckcomplete" /><code>{"private bool btnCheckComplete"}</code> |
+| <Link id="m-btntakingrandomdamage" /><code>{"private bool btnTakingRandomDamage"}</code> |
+| <Link id="m-colors" /><code>{"private Color[] colors"}</code> |
+| <Link id="m-connections" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{"[] connections"}</code> |
+| <Link id="m-droplocations" /><code>{"private PositionRotation[] dropLocations"}</code> |
+| <Link id="m-finisheddirection" /><code>{"private int finishedDirection"}</code> |
+| <Link id="m-impactdetector" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector"}</code> |
+| <Link id="m-mass" /><code>{"private float mass"}</code> |
+| <Link id="m-meshes" /><code>{"private Mesh[] meshes"}</code> |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnectiontype">{"WoodcutConnectionType"}</Link>{" type"}</code> |
+| <Link id="m-woodcutpointscollection" /><code>{"private "}<Link to="/game-api/types/global-t-x/woodcutpointcollection">{"WoodcutPointCollection"}</Link>{" woodcutPointsCollection"}</code> |
+
+</details>
 
 ## Properties
 
@@ -78,8 +83,16 @@ One choppable segment of a `WoodcutTree` (a trunk or branch piece). Hits from th
 | <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the colour model for chop marks, except on a headless server. |
 | <Link id="m-piecechopped" /><code>{"void PieceChopped()"}</code> | Server: spawns the species' sticks or wedges at the drop locations and destroys the segment. |
 | <Link id="m-setimpactdetector" /><code>{"void SetImpactDetector("}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector)"}</code> | Switches which impact detector's hits damage this segment. |
-| <Link id="m-handlehit" /><code>{"private void HandleHit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |  |
-| <Link id="m-randomdamage" /><code>{"private void RandomDamage()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-handlehit" /><code>{"private void HandleHit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |
+| <Link id="m-randomdamage" /><code>{"private void RandomDamage()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -18,15 +18,15 @@ A **private class** in `Root.Township`, `Alta.PlayerEffects`. Reach it through a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShellAnimationHandlerNode("}<Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" handler)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShellAnimationHandlerNode("}<Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" handler)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handler" /><code><Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" Handler { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-handler" /><code><Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" Handler { get; }"}</code> |
 
 ## Used in
 

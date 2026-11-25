@@ -17,13 +17,13 @@ An **internal abstract class** in `Root.Township`, `Alta.Utilities.Atlas`. Reach
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ShaderBlit()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ShaderBlit()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-blit" /><code>{"abstract void Blit(bool rendersEmission, RenderTexture diffuseRT, RenderTexture normalRT, RenderTexture emissionRT, Texture2D defaultWhiteTexture, Texture2D defaultNormal, Texture2D defaultEmission, Vector4 rect, Vector4 interiorRect, Material material, Material diffuseBlit, Material normalBlit, Material emissionBlit)"}</code> |  |
-| <Link id="m-copykeyword" /><code>{"protected void CopyKeyword(Material copyFrom, Material copyTo, string keyword)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-blit" /><code>{"abstract void Blit(bool rendersEmission, RenderTexture diffuseRT, RenderTexture normalRT, RenderTexture emissionRT, Texture2D defaultWhiteTexture, Texture2D defaultNormal, Texture2D defaultEmission, Vector4 rect, Vector4 interiorRect, Material material, Material diffuseBlit, Material normalBlit, Material emissionBlit)"}</code> |
+| <Link id="m-copykeyword" /><code>{"protected void CopyKeyword(Material copyFrom, Material copyTo, string keyword)"}</code> |

@@ -17,18 +17,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerPositionHelper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerPositionHelper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-colliders" /><code>{"private Collider[] colliders"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-colliders" /><code>{"private Collider[] colliders"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getposition" /><code>{"override Vector3 GetPosition(Vector3 origin)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getposition" /><code>{"override Vector3 GetPosition(Vector3 origin)"}</code> |

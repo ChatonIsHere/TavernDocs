@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, `ATT.MicroTutorial`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-completed" /><code>{"Completed = 1"}</code> |  |
-| <Link id="m-inprogress" /><code>{"InProgress = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-completed" /><code>{"Completed = 1"}</code> |
+| <Link id="m-inprogress" /><code>{"InProgress = 0"}</code> |
 
 ## Used in
 

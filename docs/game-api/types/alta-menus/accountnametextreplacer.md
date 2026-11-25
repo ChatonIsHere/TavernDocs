@@ -17,24 +17,37 @@ A **internal class** in `Root.Township`, `Alta.OculusLogin`. Reach it through at
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AccountNameTextReplacer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AccountNameTextReplacer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-altaaccounttext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" altaAccountText"}</code> |  |
-| <Link id="m-deviceaccounttext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" deviceAccountText"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-userservice" /><code>{"private "}<Link to="/game-api/types/assembly-other/iuserservice">{"IUserService"}</Link>{" userService"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-altaaccounttext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" altaAccountText"}</code> |
+| <Link id="m-deviceaccounttext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" deviceAccountText"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-userservice" /><code>{"private "}<Link to="/game-api/types/assembly-other/iuserservice">{"IUserService"}</Link>{" userService"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updatefrominput" /><code>{"void UpdateFromInput("}<Link to="/game-api/types/alta-menus/inputfield">{"InputField"}</Link>{" input)"}</code> |  |
-| <Link id="m-updatefromlogin" /><code>{"void UpdateFromLogin()"}</code> |  |
-| <Link id="m-inject" /><code>{"protected void Inject("}<Link to="/game-api/types/assembly-other/iuserservice">{"IUserService"}</Link>{" injectedUserService)"}</code> |  |
-| <Link id="m-onenable" /><code>{"private async void OnEnable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updatefrominput" /><code>{"void UpdateFromInput("}<Link to="/game-api/types/alta-menus/inputfield">{"InputField"}</Link>{" input)"}</code> |
+| <Link id="m-updatefromlogin" /><code>{"void UpdateFromLogin()"}</code> |
+| <Link id="m-inject" /><code>{"protected void Inject("}<Link to="/game-api/types/assembly-other/iuserservice">{"IUserService"}</Link>{" injectedUserService)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onenable" /><code>{"private async void OnEnable()"}</code> |
+
+</details>

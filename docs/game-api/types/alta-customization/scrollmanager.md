@@ -18,39 +18,44 @@ An **abstract class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ScrollManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ScrollManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-columncount" /><code>{"private int columnCount"}</code> |  |
-| <Link id="m-columnsize" /><code>{"private int columnSize"}</code> |  |
-| <Link id="m-customizationmanager" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" customizationManager"}</code> |  |
-| <Link id="m-items" /><code>{"private List<uint> items"}</code> |  |
-| <Link id="m-itemscroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/itemscroller">{"ItemScroller"}</Link>{" itemScroller"}</code> |  |
-| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticscrollsource">{"CosmeticScrollSource"}</Link>{" target"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-columncount" /><code>{"private int columnCount"}</code> |
+| <Link id="m-columnsize" /><code>{"private int columnSize"}</code> |
+| <Link id="m-customizationmanager" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" customizationManager"}</code> |
+| <Link id="m-items" /><code>{"private List<uint> items"}</code> |
+| <Link id="m-itemscroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/itemscroller">{"ItemScroller"}</Link>{" itemScroller"}</code> |
+| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticscrollsource">{"CosmeticScrollSource"}</Link>{" target"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-customizationmanager-2" /><code><Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" CustomizationManager { get; }"}</code> |  |
-| <Link id="m-items-2" /><code>{"List<uint> Items { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-customizationmanager-2" /><code><Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" CustomizationManager { get; }"}</code> |
+| <Link id="m-items-2" /><code>{"List<uint> Items { get; set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-itemschanged" /><code>{"event Action ItemsChanged"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-itemschanged" /><code>{"event Action ItemsChanged"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onitemschanged" /><code>{"void OnItemsChanged()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onitemschanged" /><code>{"void OnItemsChanged()"}</code> |
 
 ## Used in
 

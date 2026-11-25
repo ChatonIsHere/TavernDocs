@@ -17,23 +17,28 @@ A **class** in `Root.Township`, `Alta.Carpentry`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChiselingSizePoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChiselingSizePoint()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxsize" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" maxSize"}</code> |  |
-| <Link id="m-position" /><code>{"private float position"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maxsize" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" maxSize"}</code> |
+| <Link id="m-position" /><code>{"private float position"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxsize-2" /><code><Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" MaxSize { get; }"}</code> |  |
-| <Link id="m-position-2" /><code>{"float Position { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maxsize-2" /><code><Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" MaxSize { get; }"}</code> |
+| <Link id="m-position-2" /><code>{"float Position { get; }"}</code> |
 
 ## Used in
 

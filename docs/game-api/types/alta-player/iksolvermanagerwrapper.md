@@ -17,25 +17,30 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"IKSolverManagerWrapper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"IKSolverManagerWrapper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-iksolvermanager" /><code>{"private IK ikSolverManager"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-iksolvermanager" /><code>{"private IK ikSolverManager"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-iksolvermanager-2" /><code>{"IK IkSolverManager { get; }"}</code> |  |
-| <Link id="m-solver" /><code>{"IKSolver Solver { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-iksolvermanager-2" /><code>{"IK IkSolverManager { get; }"}</code> |
+| <Link id="m-solver" /><code>{"IKSolver Solver { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> |

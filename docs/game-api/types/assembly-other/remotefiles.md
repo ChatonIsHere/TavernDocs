@@ -17,14 +17,19 @@ A **static class** in `Alta.IO`, `Alta.Utilities`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allremotefiles" /><code>{"private static List<"}<Link to="/game-api/types/assembly-other/iremotealtafile">{"IRemoteAltaFile"}</Link>{"> allRemoteFiles"}</code> |  |
-| <Link id="m-currentlybackingup" /><code>{"private static ConcurrentDictionary<"}<Link to="/game-api/types/assembly-other/iremotealtafile">{"IRemoteAltaFile"}</Link>{", byte> currentlyBackingUp"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-allremotefiles" /><code>{"private static List<"}<Link to="/game-api/types/assembly-other/iremotealtafile">{"IRemoteAltaFile"}</Link>{"> allRemoteFiles"}</code> |
+| <Link id="m-currentlybackingup" /><code>{"private static ConcurrentDictionary<"}<Link to="/game-api/types/assembly-other/iremotealtafile">{"IRemoteAltaFile"}</Link>{", byte> currentlyBackingUp"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-backupallchanged" /><code>{"static void BackupAllChanged(bool isInstant)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-backupallchanged" /><code>{"static void BackupAllChanged(bool isInstant)"}</code> |

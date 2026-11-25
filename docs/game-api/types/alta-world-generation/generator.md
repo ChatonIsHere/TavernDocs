@@ -19,15 +19,20 @@ A 3D grid of tagged nodes for procedural construction, all set to the air tag at
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Generator(int sizeX, int sizeY, int sizeZ, "}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{" air)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Generator(int sizeX, int sizeY, int sizeZ, "}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{" air)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-nodes" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"[,,] nodes"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-nodes" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"[,,] nodes"}</code> |
+
+</details>
 
 ## Properties
 

@@ -22,47 +22,52 @@ Global settings for climbing: what can be grabbed, how hands pull the body, hand
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClimbingSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClimbingSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activetightgriplayer" /><code>{"private int activeTightGripLayer"}</code> |  |
-| <Link id="m-againstdrag" /><code>{"private AnimationCurve againstDrag"}</code> |  |
-| <Link id="m-assumedbaseplayerweight" /><code>{"private float assumedBasePlayerWeight"}</code> |  |
-| <Link id="m-bodyheight" /><code>{"private float bodyHeight"}</code> |  |
-| <Link id="m-bodyheighttransitionduration" /><code>{"private float bodyHeightTransitionDuration"}</code> |  |
-| <Link id="m-distancefromwalldirectionpower" /><code>{"private AnimationCurve distanceFromWallDirectionPower"}</code> |  |
-| <Link id="m-extraresistpressureperhand" /><code>{"private float extraResistPressurePerHand"}</code> |  |
-| <Link id="m-frictionfade" /><code>{"private AnimationCurve frictionFade"}</code> |  |
-| <Link id="m-grabbroken" /><code>{"private "}<Link to="/game-api/types/global-p/positionhandler">{"PositionHandler"}</Link>{" grabBroken"}</code> |  |
-| <Link id="m-grabhaptic" /><code>{"private AnimationCurve grabHaptic"}</code> |  |
-| <Link id="m-grabradius" /><code>{"private float grabRadius"}</code> |  |
-| <Link id="m-grabsuccessful" /><code>{"private "}<Link to="/game-api/types/global-p/positionhandler">{"PositionHandler"}</Link>{" grabSuccessful"}</code> |  |
-| <Link id="m-handdistancedrain" /><code>{"private AnimationCurve handDistanceDrain"}</code> |  |
-| <Link id="m-hangdistance" /><code>{"private float hangDistance"}</code> |  |
-| <Link id="m-holdbreakhaptic" /><code>{"private AnimationCurve holdBreakHaptic"}</code> |  |
-| <Link id="m-incorrecthandstrengthmodifier" /><code>{"private AnimationCurve incorrectHandStrengthModifier"}</code> |  |
-| <Link id="m-layermask" /><code>{"private LayerMask layerMask"}</code> |  |
-| <Link id="m-layerstaminaconsumptionmultipliers" /><code>{"private "}<Link to="/game-api/types/global-c-d/climbingsettings-layerstaminaconsumptionmultiplier">{"ClimbingSettings.LayerStaminaConsumptionMultiplier"}</Link>{"[] layerStaminaConsumptionMultipliers"}</code> |  |
-| <Link id="m-lefthandstamina" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" leftHandStamina"}</code> |  |
-| <Link id="m-maximumgripperhand" /><code>{"private float maximumGripPerHand"}</code> |  |
-| <Link id="m-maximumpressureperhand" /><code>{"private float maximumPressurePerHand"}</code> |  |
-| <Link id="m-minimumtimebeforeconsideringshaking" /><code>{"private float minimumTimeBeforeConsideringShaking"}</code> |  |
-| <Link id="m-pressurefromdistance" /><code>{"private AnimationCurve pressureFromDistance"}</code> |  |
-| <Link id="m-pressuresmoothing" /><code>{"private float pressureSmoothing"}</code> |  |
-| <Link id="m-righthandstamina" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" rightHandStamina"}</code> |  |
-| <Link id="m-staminahangmultiplier" /><code>{"private float staminaHangMultiplier"}</code> |  |
-| <Link id="m-staminalosspersecond" /><code>{"private float staminaLossPerSecond"}</code> |  |
-| <Link id="m-staminaregenpersecondidle" /><code>{"private float staminaRegenPerSecondIdle"}</code> |  |
-| <Link id="m-staminaregenshakemultiplier" /><code>{"private float staminaRegenShakeMultiplier"}</code> |  |
-| <Link id="m-startingvalueformaximumstamina" /><code>{"private float startingValueForMaximumStamina"}</code> |  |
-| <Link id="m-stepheight" /><code>{"private float stepHeight"}</code> |  |
-| <Link id="m-towardspalmoffset" /><code>{"private float towardsPalmOffset"}</code> |  |
-| <Link id="m-velocitydampening" /><code>{"private float velocityDampening"}</code> |  |
+<details>
+<summary>33 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activetightgriplayer" /><code>{"private int activeTightGripLayer"}</code> |
+| <Link id="m-againstdrag" /><code>{"private AnimationCurve againstDrag"}</code> |
+| <Link id="m-assumedbaseplayerweight" /><code>{"private float assumedBasePlayerWeight"}</code> |
+| <Link id="m-bodyheight" /><code>{"private float bodyHeight"}</code> |
+| <Link id="m-bodyheighttransitionduration" /><code>{"private float bodyHeightTransitionDuration"}</code> |
+| <Link id="m-distancefromwalldirectionpower" /><code>{"private AnimationCurve distanceFromWallDirectionPower"}</code> |
+| <Link id="m-extraresistpressureperhand" /><code>{"private float extraResistPressurePerHand"}</code> |
+| <Link id="m-frictionfade" /><code>{"private AnimationCurve frictionFade"}</code> |
+| <Link id="m-grabbroken" /><code>{"private "}<Link to="/game-api/types/global-p/positionhandler">{"PositionHandler"}</Link>{" grabBroken"}</code> |
+| <Link id="m-grabhaptic" /><code>{"private AnimationCurve grabHaptic"}</code> |
+| <Link id="m-grabradius" /><code>{"private float grabRadius"}</code> |
+| <Link id="m-grabsuccessful" /><code>{"private "}<Link to="/game-api/types/global-p/positionhandler">{"PositionHandler"}</Link>{" grabSuccessful"}</code> |
+| <Link id="m-handdistancedrain" /><code>{"private AnimationCurve handDistanceDrain"}</code> |
+| <Link id="m-hangdistance" /><code>{"private float hangDistance"}</code> |
+| <Link id="m-holdbreakhaptic" /><code>{"private AnimationCurve holdBreakHaptic"}</code> |
+| <Link id="m-incorrecthandstrengthmodifier" /><code>{"private AnimationCurve incorrectHandStrengthModifier"}</code> |
+| <Link id="m-layermask" /><code>{"private LayerMask layerMask"}</code> |
+| <Link id="m-layerstaminaconsumptionmultipliers" /><code>{"private "}<Link to="/game-api/types/global-c-d/climbingsettings-layerstaminaconsumptionmultiplier">{"ClimbingSettings.LayerStaminaConsumptionMultiplier"}</Link>{"[] layerStaminaConsumptionMultipliers"}</code> |
+| <Link id="m-lefthandstamina" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" leftHandStamina"}</code> |
+| <Link id="m-maximumgripperhand" /><code>{"private float maximumGripPerHand"}</code> |
+| <Link id="m-maximumpressureperhand" /><code>{"private float maximumPressurePerHand"}</code> |
+| <Link id="m-minimumtimebeforeconsideringshaking" /><code>{"private float minimumTimeBeforeConsideringShaking"}</code> |
+| <Link id="m-pressurefromdistance" /><code>{"private AnimationCurve pressureFromDistance"}</code> |
+| <Link id="m-pressuresmoothing" /><code>{"private float pressureSmoothing"}</code> |
+| <Link id="m-righthandstamina" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" rightHandStamina"}</code> |
+| <Link id="m-staminahangmultiplier" /><code>{"private float staminaHangMultiplier"}</code> |
+| <Link id="m-staminalosspersecond" /><code>{"private float staminaLossPerSecond"}</code> |
+| <Link id="m-staminaregenpersecondidle" /><code>{"private float staminaRegenPerSecondIdle"}</code> |
+| <Link id="m-staminaregenshakemultiplier" /><code>{"private float staminaRegenShakeMultiplier"}</code> |
+| <Link id="m-startingvalueformaximumstamina" /><code>{"private float startingValueForMaximumStamina"}</code> |
+| <Link id="m-stepheight" /><code>{"private float stepHeight"}</code> |
+| <Link id="m-towardspalmoffset" /><code>{"private float towardsPalmOffset"}</code> |
+| <Link id="m-velocitydampening" /><code>{"private float velocityDampening"}</code> |
+
+</details>
 
 ## Properties
 

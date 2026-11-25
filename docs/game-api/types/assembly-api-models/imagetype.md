@@ -16,13 +16,13 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-carousel" /><code>{"Carousel = 3"}</code> |  |
-| <Link id="m-detailed" /><code>{"Detailed = 4"}</code> |  |
-| <Link id="m-gallery" /><code>{"Gallery = 5"}</code> |  |
-| <Link id="m-hover" /><code>{"Hover = 2"}</code> |  |
-| <Link id="m-primary" /><code>{"Primary = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-carousel" /><code>{"Carousel = 3"}</code> |
+| <Link id="m-detailed" /><code>{"Detailed = 4"}</code> |
+| <Link id="m-gallery" /><code>{"Gallery = 5"}</code> |
+| <Link id="m-hover" /><code>{"Hover = 2"}</code> |
+| <Link id="m-primary" /><code>{"Primary = 1"}</code> |
 
 ## Used in
 

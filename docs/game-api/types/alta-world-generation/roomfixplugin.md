@@ -21,27 +21,35 @@ Cave generation plugin that lines the cave up so its biggest room sits behind th
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RoomFixPlugin()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RoomFixPlugin()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-positionoffset" /><code>{"const float PositionOffset"}</code> | Distance (15) used to pull the cave back from the entrance and push the exit out. |
-| <Link id="m-floorheight" /><code>{"private float floorHeight"}</code> |  |
-| <Link id="m-layerheightunits" /><code>{"private float layerHeightUnits"}</code> |  |
-| <Link id="m-progresslerpvalue" /><code>{"private AnimationCurve progressLerpValue"}</code> |  |
-| <Link id="m-solidfloorend" /><code>{"private AnimationCurve solidFloorEnd"}</code> |  |
-| <Link id="m-solidfloorstart" /><code>{"private AnimationCurve solidFloorStart"}</code> |  |
-| <Link id="m-solidroofend" /><code>{"private AnimationCurve solidRoofEnd"}</code> |  |
-| <Link id="m-solidroofstart" /><code>{"private AnimationCurve solidRoofStart"}</code> |  |
-| <Link id="m-stepdepth" /><code>{"private float stepDepth"}</code> |  |
-| <Link id="m-steps" /><code>{"private int steps"}</code> |  |
-| <Link id="m-tunnels" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/roomfixplugin-tunnel">{"RoomFixPlugin.Tunnel"}</Link>{"[] tunnels"}</code> |  |
-| <Link id="m-width" /><code>{"private AnimationCurve width"}</code> |  |
-| <Link id="m-widthlerpvalue" /><code>{"private AnimationCurve widthLerpValue"}</code> |  |
+
+<details>
+<summary>12 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-floorheight" /><code>{"private float floorHeight"}</code> |
+| <Link id="m-layerheightunits" /><code>{"private float layerHeightUnits"}</code> |
+| <Link id="m-progresslerpvalue" /><code>{"private AnimationCurve progressLerpValue"}</code> |
+| <Link id="m-solidfloorend" /><code>{"private AnimationCurve solidFloorEnd"}</code> |
+| <Link id="m-solidfloorstart" /><code>{"private AnimationCurve solidFloorStart"}</code> |
+| <Link id="m-solidroofend" /><code>{"private AnimationCurve solidRoofEnd"}</code> |
+| <Link id="m-solidroofstart" /><code>{"private AnimationCurve solidRoofStart"}</code> |
+| <Link id="m-stepdepth" /><code>{"private float stepDepth"}</code> |
+| <Link id="m-steps" /><code>{"private int steps"}</code> |
+| <Link id="m-tunnels" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/roomfixplugin-tunnel">{"RoomFixPlugin.Tunnel"}</Link>{"[] tunnels"}</code> |
+| <Link id="m-width" /><code>{"private AnimationCurve width"}</code> |
+| <Link id="m-widthlerpvalue" /><code>{"private AnimationCurve widthLerpValue"}</code> |
+
+</details>
 
 ## Properties
 

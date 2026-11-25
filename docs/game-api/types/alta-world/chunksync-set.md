@@ -17,22 +17,22 @@ A **private class** in `Root.Township`, `Alta.Chunks`. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Set()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Set()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-nextsendtime" /><code>{"float nextSendTime"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-nextsendtime" /><code>{"float nextSendTime"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-despawning" /><code>{"List<"}<Link to="/game-api/types/alta-world/chunksync">{"ChunkSync"}</Link>{"> Despawning { get; }"}</code> |  |
-| <Link id="m-spawning" /><code>{"List<"}<Link to="/game-api/types/alta-world/chunksync">{"ChunkSync"}</Link>{"> Spawning { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-despawning" /><code>{"List<"}<Link to="/game-api/types/alta-world/chunksync">{"ChunkSync"}</Link>{"> Despawning { get; }"}</code> |
+| <Link id="m-spawning" /><code>{"List<"}<Link to="/game-api/types/alta-world/chunksync">{"ChunkSync"}</Link>{"> Spawning { get; }"}</code> |
 
 ## Used in
 

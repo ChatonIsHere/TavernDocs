@@ -17,13 +17,13 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LoggedInOnlyAttribute()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LoggedInOnlyAttribute()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-check" /><code>{"override bool Check()"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-check" /><code>{"override bool Check()"}</code> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |

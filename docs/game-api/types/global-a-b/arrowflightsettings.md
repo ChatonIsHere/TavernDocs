@@ -18,32 +18,42 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ArrowFlightSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ArrowFlightSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-debuggizmosspeed" /><code>{"private float debugGizmosSpeed"}</code> |  |
-| <Link id="m-deviancemultiplier" /><code>{"private float devianceMultiplier"}</code> |  |
-| <Link id="m-devianceovertime" /><code>{"private AnimationCurve devianceOverTime"}</code> |  |
-| <Link id="m-flightduration" /><code>{"private float flightDuration"}</code> |  |
-| <Link id="m-flightspeed" /><code>{"private float flightSpeed"}</code> |  |
-| <Link id="m-israndomdeviationamount" /><code>{"private bool isRandomDeviationAmount"}</code> |  |
-| <Link id="m-numberofiterations" /><code>{"private int numberOfIterations"}</code> |  |
-| <Link id="m-simulategravity" /><code>{"private bool simulateGravity"}</code> |  |
-| <Link id="m-simulationlength" /><code>{"private float simulationLength"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-debuggizmosspeed" /><code>{"private float debugGizmosSpeed"}</code> |
+| <Link id="m-deviancemultiplier" /><code>{"private float devianceMultiplier"}</code> |
+| <Link id="m-devianceovertime" /><code>{"private AnimationCurve devianceOverTime"}</code> |
+| <Link id="m-flightduration" /><code>{"private float flightDuration"}</code> |
+| <Link id="m-flightspeed" /><code>{"private float flightSpeed"}</code> |
+| <Link id="m-israndomdeviationamount" /><code>{"private bool isRandomDeviationAmount"}</code> |
+| <Link id="m-numberofiterations" /><code>{"private int numberOfIterations"}</code> |
+| <Link id="m-simulategravity" /><code>{"private bool simulateGravity"}</code> |
+| <Link id="m-simulationlength" /><code>{"private float simulationLength"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-drawgizmos" /><code>{"internal void DrawGizmos(int randomSeed, Transform arrowTransform, Transform tipTransform)"}</code> |  |
-| <Link id="m-getdeviance" /><code>{"private float GetDeviance(IEnumerable<"}<Link to="/game-api/types/global-a-b/arrowflightsettingsmodifier">{"ArrowFlightSettingsModifier"}</Link>{"> modifiers)"}</code> |  |
-| <Link id="m-getvelocity" /><code>{"internal Vector3 GetVelocity(Vector3 currentVelocity, float flightTime, float flightSpeed, float materialWeightModifier, IEnumerable<"}<Link to="/game-api/types/global-a-b/arrowflightsettingsmodifier">{"ArrowFlightSettingsModifier"}</Link>{"> modifiers = null)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-drawgizmos" /><code>{"internal void DrawGizmos(int randomSeed, Transform arrowTransform, Transform tipTransform)"}</code> |
+| <Link id="m-getdeviance" /><code>{"private float GetDeviance(IEnumerable<"}<Link to="/game-api/types/global-a-b/arrowflightsettingsmodifier">{"ArrowFlightSettingsModifier"}</Link>{"> modifiers)"}</code> |
+| <Link id="m-getvelocity" /><code>{"internal Vector3 GetVelocity(Vector3 currentVelocity, float flightTime, float flightSpeed, float materialWeightModifier, IEnumerable<"}<Link to="/game-api/types/global-a-b/arrowflightsettingsmodifier">{"ArrowFlightSettingsModifier"}</Link>{"> modifiers = null)"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>
 
 ## Used in
 

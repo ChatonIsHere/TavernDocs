@@ -20,27 +20,32 @@ Curls a hand model's fingers around what it holds, and blends in finger tracking
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HandGrip()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HandGrip()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-configuration" /><code>{"private "}<Link to="/game-api/types/alta-player/handgripconfiguration">{"HandGripConfiguration"}</Link>{" configuration"}</code> |  |
-| <Link id="m-coroutine" /><code>{"private Coroutine coroutine"}</code> |  |
-| <Link id="m-fingerprogress" /><code>{"private float[] fingerProgress"}</code> |  |
-| <Link id="m-fingers" /><code>{"private "}<Link to="/game-api/types/alta-player/handgrip-gripfinger">{"HandGrip.GripFinger"}</Link>{"[] fingers"}</code> |  |
-| <Link id="m-griptime" /><code>{"private float gripTime"}</code> |  |
-| <Link id="m-ischanged" /><code>{"private bool isChanged"}</code> |  |
-| <Link id="m-isgripping" /><code>{"private bool isGripping"}</code> |  |
-| <Link id="m-islefthand" /><code>{"private bool isLeftHand"}</code> |  |
-| <Link id="m-isnextforcedskeletal" /><code>{"private bool isNextForcedSkeletal"}</code> |  |
-| <Link id="m-nonthumbcurl" /><code>{"private float nonThumbCurl"}</code> |  |
-| <Link id="m-splaidlerp" /><code>{"private float splaidLerp"}</code> |  |
-| <Link id="m-totalcurl" /><code>{"private float totalCurl"}</code> |  |
-| <Link id="m-wrist" /><code>{"private Transform wrist"}</code> |  |
+<details>
+<summary>13 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-configuration" /><code>{"private "}<Link to="/game-api/types/alta-player/handgripconfiguration">{"HandGripConfiguration"}</Link>{" configuration"}</code> |
+| <Link id="m-coroutine" /><code>{"private Coroutine coroutine"}</code> |
+| <Link id="m-fingerprogress" /><code>{"private float[] fingerProgress"}</code> |
+| <Link id="m-fingers" /><code>{"private "}<Link to="/game-api/types/alta-player/handgrip-gripfinger">{"HandGrip.GripFinger"}</Link>{"[] fingers"}</code> |
+| <Link id="m-griptime" /><code>{"private float gripTime"}</code> |
+| <Link id="m-ischanged" /><code>{"private bool isChanged"}</code> |
+| <Link id="m-isgripping" /><code>{"private bool isGripping"}</code> |
+| <Link id="m-islefthand" /><code>{"private bool isLeftHand"}</code> |
+| <Link id="m-isnextforcedskeletal" /><code>{"private bool isNextForcedSkeletal"}</code> |
+| <Link id="m-nonthumbcurl" /><code>{"private float nonThumbCurl"}</code> |
+| <Link id="m-splaidlerp" /><code>{"private float splaidLerp"}</code> |
+| <Link id="m-totalcurl" /><code>{"private float totalCurl"}</code> |
+| <Link id="m-wrist" /><code>{"private Transform wrist"}</code> |
+
+</details>
 
 ## Properties
 
@@ -67,10 +72,18 @@ Curls a hand model's fingers around what it holds, and blends in finger tracking
 | <Link id="m-serializegrip" /><code>{"void SerializeGrip("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes each finger's grip pose. Reading starts the grip animation. |
 | <Link id="m-skeletalinput" /><code>{"void SkeletalInput(float[] fingersProgress)"}</code> | Takes per-finger curl amounts (thumb first) from finger tracking. |
 | <Link id="m-startgrip" /><code>{"void StartGrip()"}</code> | Curls each finger until it touches the held object and animates into that pose. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
-| <Link id="m-updategrip" /><code>{"private IEnumerator UpdateGrip() (iterator)"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+| <Link id="m-updategrip" /><code>{"private IEnumerator UpdateGrip() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

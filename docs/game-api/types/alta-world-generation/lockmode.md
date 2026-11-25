@@ -16,13 +16,13 @@ An **enum** in `Root.Township`, `Alta.PAGaC`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-building" /><code>{"Building = 2"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-region" /><code>{"Region = 3"}</code> |  |
-| <Link id="m-server" /><code>{"Server = 4"}</code> |  |
-| <Link id="m-set" /><code>{"Set = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-building" /><code>{"Building = 2"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-region" /><code>{"Region = 3"}</code> |
+| <Link id="m-server" /><code>{"Server = 4"}</code> |
+| <Link id="m-set" /><code>{"Set = 1"}</code> |
 
 ## Used in
 

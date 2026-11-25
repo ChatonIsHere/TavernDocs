@@ -18,29 +18,37 @@ The HTTP layer under `IHighLevelApiClient`: one method per endpoint of Alta's we
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LowLevelApiClient(string baseUrl, string userAgent = null, float timeOutInSeconds = 40)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LowLevelApiClient(string baseUrl, string userAgent = null, float timeOutInSeconds = 40)"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-apikey" /><code>{"const string ApiKey"}</code> | Fixed key sent as the `x-api-key` header on every request. |
-| <Link id="m-apibaseuri" /><code>{"private const string ApiBaseUri"}</code> |  |
-| <Link id="m-authenticationclient" /><code>{"private HttpClient authenticationClient"}</code> |  |
-| <Link id="m-authorizedclient" /><code>{"private HttpClient authorizedClient"}</code> |  |
-| <Link id="m-baseurl" /><code>{"private readonly string baseUrl"}</code> |  |
-| <Link id="m-defaultclient" /><code>{"private HttpClient defaultClient"}</code> |  |
-| <Link id="m-isanalyticsbatchprocessing" /><code>{"private bool isAnalyticsBatchProcessing"}</code> |  |
-| <Link id="m-lasttimeout" /><code>{"private DateTime? lastTimeout"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |  |
-| <Link id="m-refreshcancel" /><code>{"private CancellationTokenSource refreshCancel"}</code> |  |
-| <Link id="m-refreshinglogintask" /><code>{"private Task refreshingLoginTask"}</code> |  |
-| <Link id="m-timeoutinseconds" /><code>{"private readonly float timeOutInSeconds"}</code> |  |
-| <Link id="m-tokenexpirationleeway" /><code>{"private const int TokenExpirationLeeway"}</code> |  |
-| <Link id="m-useragent" /><code>{"private readonly string userAgent"}</code> |  |
-| <Link id="m-xrequestid" /><code>{"private const string XRequestId"}</code> |  |
+
+<details>
+<summary>14 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-apibaseuri" /><code>{"private const string ApiBaseUri"}</code> |
+| <Link id="m-authenticationclient" /><code>{"private HttpClient authenticationClient"}</code> |
+| <Link id="m-authorizedclient" /><code>{"private HttpClient authorizedClient"}</code> |
+| <Link id="m-baseurl" /><code>{"private readonly string baseUrl"}</code> |
+| <Link id="m-defaultclient" /><code>{"private HttpClient defaultClient"}</code> |
+| <Link id="m-isanalyticsbatchprocessing" /><code>{"private bool isAnalyticsBatchProcessing"}</code> |
+| <Link id="m-lasttimeout" /><code>{"private DateTime? lastTimeout"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |
+| <Link id="m-refreshcancel" /><code>{"private CancellationTokenSource refreshCancel"}</code> |
+| <Link id="m-refreshinglogintask" /><code>{"private Task refreshingLoginTask"}</code> |
+| <Link id="m-timeoutinseconds" /><code>{"private readonly float timeOutInSeconds"}</code> |
+| <Link id="m-tokenexpirationleeway" /><code>{"private const int TokenExpirationLeeway"}</code> |
+| <Link id="m-useragent" /><code>{"private readonly string userAgent"}</code> |
+| <Link id="m-xrequestid" /><code>{"private const string XRequestId"}</code> |
+
+</details>
 
 ## Properties
 
@@ -48,32 +56,40 @@ The HTTP layer under `IHighLevelApiClient`: one method per endpoint of Alta's we
 | --- | --- |
 | <Link id="m-credentials" /><code><Link to="/game-api/types/assembly-api-client/logincredentials">{"LoginCredentials"}</Link>{" Credentials { get; private set; }"}</code> | Current access, refresh and identity tokens, or null when logged out. |
 | <Link id="m-loggedinuser" /><code><Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" LoggedInUser { get; internal set; }"}</code> | The logged-in user with permissions. |
-| <Link id="m-accountcontrolleruri" /><code>{"private static string AccountControllerUri { get; }"}</code> |  |
-| <Link id="m-banscontrolleruri" /><code>{"private static string BansControllerUri { get; }"}</code> |  |
-| <Link id="m-batchanalyticscontrolleruri" /><code>{"private static string BatchAnalyticsControllerUri { get; }"}</code> |  |
-| <Link id="m-friendscontrolleruri" /><code>{"private static string FriendsControllerUri { get; }"}</code> |  |
-| <Link id="m-futureuseractionscontrolleruri" /><code>{"private static string FutureUserActionsControllerUri { get; }"}</code> |  |
-| <Link id="m-groupscontrolleruri" /><code>{"private static string GroupsControllerUri { get; }"}</code> |  |
-| <Link id="m-instancescontrolleruri" /><code>{"private static string InstancesControllerUri { get; }"}</code> |  |
-| <Link id="m-launchercontrolleruri" /><code>{"private static string LauncherControllerUri { get; }"}</code> |  |
-| <Link id="m-loginsessionscontrolleruri" /><code>{"private static string LoginSessionsControllerUri { get; }"}</code> |  |
-| <Link id="m-matchmakingcontrolleruri" /><code>{"private static string MatchMakingControllerUri { get; }"}</code> |  |
-| <Link id="m-playerreportscontrolleruri" /><code>{"private static string PlayerReportsControllerUri { get; }"}</code> |  |
-| <Link id="m-recentplayersbatchcontrolleruri" /><code>{"private string RecentPlayersBatchControllerUri { get; }"}</code> |  |
-| <Link id="m-recentplayerscontrolleruri" /><code>{"private static string RecentPlayersControllerUri { get; }"}</code> |  |
-| <Link id="m-regionscontrolleruri" /><code>{"private static string RegionsControllerUri { get; }"}</code> |  |
-| <Link id="m-securitycontrolleruri" /><code>{"private static string SecurityControllerUri { get; }"}</code> |  |
-| <Link id="m-serverscontrolleruri" /><code>{"private static string ServersControllerUri { get; }"}</code> |  |
-| <Link id="m-servicescontrolleruri" /><code>{"private static string ServicesControllerUri { get; }"}</code> |  |
-| <Link id="m-settingscontrolleruri" /><code>{"private static string SettingsControllerUri { get; }"}</code> |  |
-| <Link id="m-shopaccountcontrolleruri" /><code>{"private static string ShopAccountControllerUri { get; }"}</code> |  |
-| <Link id="m-shopcontrolleruri" /><code>{"private static string ShopControllerUri { get; }"}</code> |  |
-| <Link id="m-shopdebugcontrolleruri" /><code>{"private static string ShopDebugControllerUri { get; }"}</code> |  |
-| <Link id="m-shopoculuscontrolleruri" /><code>{"private static string ShopOculusControllerUri { get; }"}</code> |  |
-| <Link id="m-shoppurchasecontrolleruri" /><code>{"private static string ShopPurchaseControllerUri { get; }"}</code> |  |
-| <Link id="m-signupcodescontrolleruri" /><code>{"private static string SignUpCodesControllerUri { get; }"}</code> |  |
-| <Link id="m-userscontrolleruri" /><code>{"private static string UsersControllerUri { get; }"}</code> |  |
-| <Link id="m-voicecontrolleruri" /><code>{"private static string VoiceControllerUri { get; }"}</code> |  |
+
+<details>
+<summary>26 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-accountcontrolleruri" /><code>{"private static string AccountControllerUri { get; }"}</code> |
+| <Link id="m-banscontrolleruri" /><code>{"private static string BansControllerUri { get; }"}</code> |
+| <Link id="m-batchanalyticscontrolleruri" /><code>{"private static string BatchAnalyticsControllerUri { get; }"}</code> |
+| <Link id="m-friendscontrolleruri" /><code>{"private static string FriendsControllerUri { get; }"}</code> |
+| <Link id="m-futureuseractionscontrolleruri" /><code>{"private static string FutureUserActionsControllerUri { get; }"}</code> |
+| <Link id="m-groupscontrolleruri" /><code>{"private static string GroupsControllerUri { get; }"}</code> |
+| <Link id="m-instancescontrolleruri" /><code>{"private static string InstancesControllerUri { get; }"}</code> |
+| <Link id="m-launchercontrolleruri" /><code>{"private static string LauncherControllerUri { get; }"}</code> |
+| <Link id="m-loginsessionscontrolleruri" /><code>{"private static string LoginSessionsControllerUri { get; }"}</code> |
+| <Link id="m-matchmakingcontrolleruri" /><code>{"private static string MatchMakingControllerUri { get; }"}</code> |
+| <Link id="m-playerreportscontrolleruri" /><code>{"private static string PlayerReportsControllerUri { get; }"}</code> |
+| <Link id="m-recentplayersbatchcontrolleruri" /><code>{"private string RecentPlayersBatchControllerUri { get; }"}</code> |
+| <Link id="m-recentplayerscontrolleruri" /><code>{"private static string RecentPlayersControllerUri { get; }"}</code> |
+| <Link id="m-regionscontrolleruri" /><code>{"private static string RegionsControllerUri { get; }"}</code> |
+| <Link id="m-securitycontrolleruri" /><code>{"private static string SecurityControllerUri { get; }"}</code> |
+| <Link id="m-serverscontrolleruri" /><code>{"private static string ServersControllerUri { get; }"}</code> |
+| <Link id="m-servicescontrolleruri" /><code>{"private static string ServicesControllerUri { get; }"}</code> |
+| <Link id="m-settingscontrolleruri" /><code>{"private static string SettingsControllerUri { get; }"}</code> |
+| <Link id="m-shopaccountcontrolleruri" /><code>{"private static string ShopAccountControllerUri { get; }"}</code> |
+| <Link id="m-shopcontrolleruri" /><code>{"private static string ShopControllerUri { get; }"}</code> |
+| <Link id="m-shopdebugcontrolleruri" /><code>{"private static string ShopDebugControllerUri { get; }"}</code> |
+| <Link id="m-shopoculuscontrolleruri" /><code>{"private static string ShopOculusControllerUri { get; }"}</code> |
+| <Link id="m-shoppurchasecontrolleruri" /><code>{"private static string ShopPurchaseControllerUri { get; }"}</code> |
+| <Link id="m-signupcodescontrolleruri" /><code>{"private static string SignUpCodesControllerUri { get; }"}</code> |
+| <Link id="m-userscontrolleruri" /><code>{"private static string UsersControllerUri { get; }"}</code> |
+| <Link id="m-voicecontrolleruri" /><code>{"private static string VoiceControllerUri { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -244,6 +260,12 @@ The HTTP layer under `IHighLevelApiClient`: one method per endpoint of Alta's we
 | <Link id="m-validateusername" /><code>{"async Task<string> ValidateUsername("}<Link to="/game-api/types/assembly-api-models/usernamevalidationrequest">{"UsernameValidationRequest"}</Link>{" request)"}</code> | Checks a username is acceptable. |
 | <Link id="m-verifyuserasync" /><code>{"async Task<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> VerifyUserAsync(int userIdentifer, "}<Link to="/game-api/types/assembly-api-models/verifyuserrequest">{"VerifyUserRequest"}</Link>{" verifyRequest)"}</code> | Posts a verification request for a user and returns the updated user. |
 | <Link id="m-verifyusersmembership" /><code>{"async Task VerifyUsersMemberShip(int userId)"}</code> | Calls the membership verify endpoint for a user. |
+
+<details>
+<summary>28 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-cancelrefreshroutine" /><code>{"private void CancelRefreshRoutine()"}</code> |  |
 | <Link id="m-createapierrorexceptionasync" /><code>{"private static async Task<"}<Link to="/game-api/types/assembly-api-models/apierrorexception">{"ApiErrorException"}</Link>{"> CreateApiErrorExceptionAsync(HttpResponseMessage response)"}</code> |  |
 | <Link id="m-createhttpclient" /><code>{"private HttpClient CreateHttpClient(string baseUrl, float timeOutInSeconds)"}</code> |  |
@@ -272,6 +294,8 @@ The HTTP layer under `IHighLevelApiClient`: one method per endpoint of Alta's we
 | <Link id="m-scheduleaction" /><code>{"private async void ScheduleAction(Action action, DateTime executionTime, CancellationToken cancelToken)"}</code> |  |
 | <Link id="m-setauthenticationheaderonauthenticationclient" /><code>{"private void SetAuthenticationHeaderOnAuthenticationClient(string refreshTokenString)"}</code> |  |
 | <Link id="m-updaterefreshtokenasync" /><code>{"private async void UpdateRefreshTokenAsync()"}</code> |  |
+
+</details>
 
 ## Used in
 

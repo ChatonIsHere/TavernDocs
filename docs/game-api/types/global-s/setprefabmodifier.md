@@ -19,23 +19,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SetPrefabModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SetPrefabModifier()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-btnmigrate" /><code>{"private bool btnMigrate"}</code> |  |
-| <Link id="m-piecepipeline" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" piecePipeline"}</code> |  |
-| <Link id="m-pieces" /><code>{"private "}<Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{"[] pieces"}</code> |  |
-| <Link id="m-pipeline" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" pipeline"}</code> |  |
-| <Link id="m-prefabs" /><code>{"private GameObject[] prefabs"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-btnmigrate" /><code>{"private bool btnMigrate"}</code> |
+| <Link id="m-piecepipeline" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" piecePipeline"}</code> |
+| <Link id="m-pieces" /><code>{"private "}<Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{"[] pieces"}</code> |
+| <Link id="m-pipeline" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" pipeline"}</code> |
+| <Link id="m-prefabs" /><code>{"private GameObject[] prefabs"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/spawnparameters">{"SpawnParameters"}</Link>{" point, ref float weight)"}</code> |  |
-| <Link id="m-migrate" /><code>{"private void Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/spawnparameters">{"SpawnParameters"}</Link>{" point, ref float weight)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"private void Migrate()"}</code> |
+
+</details>

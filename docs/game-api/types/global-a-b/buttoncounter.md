@@ -21,32 +21,37 @@ A networked number set with up and down buttons (or a throttle) and shown on tex
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ButtonCounter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ButtonCounter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activeplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" activePlayer"}</code> |  |
-| <Link id="m-amount" /><code>{"private int amount"}</code> |  |
-| <Link id="m-cap" /><code>{"private int cap"}</code> |  |
-| <Link id="m-changingfinished" /><code>{"private float changingFinished"}</code> |  |
-| <Link id="m-changingwaitduration" /><code>{"private float changingWaitDuration"}</code> |  |
-| <Link id="m-down" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" down"}</code> |  |
-| <Link id="m-downbuttonpressed" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" downButtonPressed"}</code> |  |
-| <Link id="m-labels" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttoncounter-textrenderersettings">{"ButtonCounter.TextRendererSettings"}</Link>{"[] labels"}</code> |  |
-| <Link id="m-maximum" /><code>{"private int maximum"}</code> |  |
-| <Link id="m-minimum" /><code>{"private int minimum"}</code> |  |
-| <Link id="m-mode" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttoncounter-countermode">{"ButtonCounter.CounterMode"}</Link>{" mode"}</code> |  |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |  |
-| <Link id="m-syncmode" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttoncounter-countsyncmode">{"ButtonCounter.CountSyncMode"}</Link>{" syncMode"}</code> |  |
-| <Link id="m-syncplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPlayer"}</code> |  |
-| <Link id="m-throttlecounter" /><code>{"private "}<Link to="/game-api/types/global-t-x/throttlecounter">{"ThrottleCounter"}</Link>{" throttleCounter"}</code> |  |
-| <Link id="m-up" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" up"}</code> |  |
-| <Link id="m-upbuttonpressed" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" upButtonPressed"}</code> |  |
-| <Link id="m-waitingforchangetofinish" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" waitingForChangeToFinish"}</code> |  |
+<details>
+<summary>18 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activeplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" activePlayer"}</code> |
+| <Link id="m-amount" /><code>{"private int amount"}</code> |
+| <Link id="m-cap" /><code>{"private int cap"}</code> |
+| <Link id="m-changingfinished" /><code>{"private float changingFinished"}</code> |
+| <Link id="m-changingwaitduration" /><code>{"private float changingWaitDuration"}</code> |
+| <Link id="m-down" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" down"}</code> |
+| <Link id="m-downbuttonpressed" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" downButtonPressed"}</code> |
+| <Link id="m-labels" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttoncounter-textrenderersettings">{"ButtonCounter.TextRendererSettings"}</Link>{"[] labels"}</code> |
+| <Link id="m-maximum" /><code>{"private int maximum"}</code> |
+| <Link id="m-minimum" /><code>{"private int minimum"}</code> |
+| <Link id="m-mode" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttoncounter-countermode">{"ButtonCounter.CounterMode"}</Link>{" mode"}</code> |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
+| <Link id="m-syncmode" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttoncounter-countsyncmode">{"ButtonCounter.CountSyncMode"}</Link>{" syncMode"}</code> |
+| <Link id="m-syncplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPlayer"}</code> |
+| <Link id="m-throttlecounter" /><code>{"private "}<Link to="/game-api/types/global-t-x/throttlecounter">{"ThrottleCounter"}</Link>{" throttleCounter"}</code> |
+| <Link id="m-up" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" up"}</code> |
+| <Link id="m-upbuttonpressed" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" upButtonPressed"}</code> |
+| <Link id="m-waitingforchangetofinish" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" waitingForChangeToFinish"}</code> |
+
+</details>
 
 ## Properties
 
@@ -77,15 +82,23 @@ A networked number set with up and down buttons (or a throttle) and shown on tex
 | <Link id="m-load" /><code>{"void Load("}<Link to="/game-api/types/global-a-b/buttoncountersavedata">{"ButtonCounterSaveData"}</Link>{" data, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Restores the saved amount. |
 | <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the amount and active player to a joining player. |
 | <Link id="m-save" /><code><Link to="/game-api/types/global-a-b/buttoncountersavedata">{"ButtonCounterSaveData"}</Link>{" Save("}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Saves the amount. |
-| <Link id="m-changeby" /><code>{"private void ChangeBy(int delta)"}</code> |  |
-| <Link id="m-checksync" /><code>{"private void CheckSync("}<Link to="/game-api/types/global-a-b/buttoncounter-countsyncmode">{"ButtonCounter.CountSyncMode"}</Link>{" mode)"}</code> |  |
-| <Link id="m-iscorrectmode" /><code>{"private bool IsCorrectMode()"}</code> |  |
-| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |  |
-| <Link id="m-playerchanged" /><code>{"private void PlayerChanged()"}</code> |  |
-| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncplayer-2" /><code>{"private void SyncPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-updatetext" /><code>{"private void UpdateText()"}</code> |  |
-| <Link id="m-waitwhilechanging" /><code>{"private IEnumerator WaitWhileChanging() (iterator)"}</code> |  |
+
+<details>
+<summary>9 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-changeby" /><code>{"private void ChangeBy(int delta)"}</code> |
+| <Link id="m-checksync" /><code>{"private void CheckSync("}<Link to="/game-api/types/global-a-b/buttoncounter-countsyncmode">{"ButtonCounter.CountSyncMode"}</Link>{" mode)"}</code> |
+| <Link id="m-iscorrectmode" /><code>{"private bool IsCorrectMode()"}</code> |
+| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |
+| <Link id="m-playerchanged" /><code>{"private void PlayerChanged()"}</code> |
+| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-syncplayer-2" /><code>{"private void SyncPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-updatetext" /><code>{"private void UpdateText()"}</code> |
+| <Link id="m-waitwhilechanging" /><code>{"private IEnumerator WaitWhileChanging() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

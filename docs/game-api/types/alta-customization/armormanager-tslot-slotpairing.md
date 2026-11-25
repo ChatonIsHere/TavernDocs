@@ -17,28 +17,33 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SlotPairing()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SlotPairing()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-detectors" /><code>{"private "}<Link to="/game-api/types/alta-items/equipmentreference">{"EquipmentReference"}</Link>{"[] detectors"}</code> |  |
-| <Link id="m-slot" /><code>{"private TSlot slot"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-detectors" /><code>{"private "}<Link to="/game-api/types/alta-items/equipmentreference">{"EquipmentReference"}</Link>{"[] detectors"}</code> |
+| <Link id="m-slot" /><code>{"private TSlot slot"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-slot-2" /><code>{"TSlot Slot { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-slot-2" /><code>{"TSlot Slot { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"void Apply("}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" armor)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"void Apply("}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" armor)"}</code> |
 
 ## Used in
 

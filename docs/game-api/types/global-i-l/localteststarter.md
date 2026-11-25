@@ -18,12 +18,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LocalTestStarter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LocalTestStarter()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setactive" /><code>{"protected override void SetActive(bool isActive)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setactive" /><code>{"protected override void SetActive(bool isActive)"}</code> |

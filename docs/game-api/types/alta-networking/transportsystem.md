@@ -16,9 +16,9 @@ An **enum** in `Root.Township`, `Alta.Networking`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-kcp" /><code>{"Kcp = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-kcp" /><code>{"Kcp = 1"}</code> |
 
 ## Used in
 

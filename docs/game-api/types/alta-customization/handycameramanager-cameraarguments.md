@@ -17,13 +17,13 @@ A **private struct** in `Root.Township`, `Alta.ScreenshotCamera`. Reach it throu
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CameraArguments(uint cameraIdentifier, int playerIdentifier)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CameraArguments(uint cameraIdentifier, int playerIdentifier)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cameraidentifier" /><code>{"uint cameraIdentifier"}</code> |  |
-| <Link id="m-playeridentifier" /><code>{"int playerIdentifier"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cameraidentifier" /><code>{"uint cameraIdentifier"}</code> |
+| <Link id="m-playeridentifier" /><code>{"int playerIdentifier"}</code> |

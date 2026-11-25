@@ -22,19 +22,24 @@ Global settings for Wwise impact sounds: the send and receive events, velocity R
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactSoundSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactSoundSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-defaultimpactsound" /><code>{"private Switch defaultImpactSound"}</code> |  |
-| <Link id="m-impactreceiveevent" /><code>{"private Event impactReceiveEvent"}</code> |  |
-| <Link id="m-impactsendevent" /><code>{"private Event impactSendEvent"}</code> |  |
-| <Link id="m-impactsoundmap" /><code>{"private "}<Link to="/game-api/types/global-i-l/impactsoundmap">{"ImpactSoundMap"}</Link>{" impactSoundMap"}</code> |  |
-| <Link id="m-impactvelocityrtpc" /><code>{"private RTPC impactVelocityRTPC"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-defaultimpactsound" /><code>{"private Switch defaultImpactSound"}</code> |
+| <Link id="m-impactreceiveevent" /><code>{"private Event impactReceiveEvent"}</code> |
+| <Link id="m-impactsendevent" /><code>{"private Event impactSendEvent"}</code> |
+| <Link id="m-impactsoundmap" /><code>{"private "}<Link to="/game-api/types/global-i-l/impactsoundmap">{"ImpactSoundMap"}</Link>{" impactSoundMap"}</code> |
+| <Link id="m-impactvelocityrtpc" /><code>{"private RTPC impactVelocityRTPC"}</code> |
+
+</details>
 
 ## Properties
 

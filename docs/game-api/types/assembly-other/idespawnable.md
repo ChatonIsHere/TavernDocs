@@ -17,6 +17,6 @@ An **interface** in `Alta.VContainerLayer.Runtime`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondespawn" /><code>{"void OnDespawn()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ondespawn" /><code>{"void OnDespawn()"}</code> |

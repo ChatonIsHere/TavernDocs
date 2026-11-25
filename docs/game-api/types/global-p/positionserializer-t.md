@@ -17,22 +17,27 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionSerializer("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, Func<T, bool> isParentNull, Action<T> makeParentNull)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionSerializer("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, Func<T, bool> isParentNull, Action<T> makeParentNull)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isparentnull" /><code>{"private Func<T, bool> isParentNull"}</code> |  |
-| <Link id="m-makeparentnull" /><code>{"private Action<T> makeParentNull"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isparentnull" /><code>{"private Func<T, bool> isParentNull"}</code> |
+| <Link id="m-makeparentnull" /><code>{"private Action<T> makeParentNull"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fixparent" /><code>{"void FixParent(T target, Transform targetTransform)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fixparent" /><code>{"void FixParent(T target, Transform targetTransform)"}</code> |
 
 ## Used in
 

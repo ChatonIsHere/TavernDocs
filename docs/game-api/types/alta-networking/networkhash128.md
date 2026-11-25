@@ -45,4 +45,12 @@ A 128-bit ID stored as 16 bytes, written and read as a 32 character hex string.
 | <Link id="m-parse" /><code>{"static "}<Link to="/game-api/types/alta-networking/networkhash128">{"NetworkHash128"}</Link>{" Parse(string text)"}</code> | Reads a hex string, left padding short strings with zeros. Bad characters read as 0. |
 | <Link id="m-reset" /><code>{"void Reset()"}</code> | Sets every byte to zero. |
 | <Link id="m-tostring" /><code>{"override string ToString()"}</code> | The 32 character lowercase hex form. |
-| <Link id="m-hextonumber" /><code>{"private static int HexToNumber(char c)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-hextonumber" /><code>{"private static int HexToNumber(char c)"}</code> |
+
+</details>

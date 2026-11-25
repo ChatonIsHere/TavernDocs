@@ -16,13 +16,13 @@ An **enum** in `Root.Township`, `Alta.Utilities.Atlas`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-common" /><code>{"Common = 0"}</code> |  |
-| <Link id="m-forgingmetal" /><code>{"ForgingMetal = 3"}</code> |  |
-| <Link id="m-nonforgingmetal" /><code>{"NonForgingMetal = 4"}</code> |  |
-| <Link id="m-nowindfoliage" /><code>{"NoWindFoliage = 2"}</code> |  |
-| <Link id="m-windfoliage" /><code>{"WindFoliage = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-common" /><code>{"Common = 0"}</code> |
+| <Link id="m-forgingmetal" /><code>{"ForgingMetal = 3"}</code> |
+| <Link id="m-nonforgingmetal" /><code>{"NonForgingMetal = 4"}</code> |
+| <Link id="m-nowindfoliage" /><code>{"NoWindFoliage = 2"}</code> |
+| <Link id="m-windfoliage" /><code>{"WindFoliage = 1"}</code> |
 
 ## Used in
 

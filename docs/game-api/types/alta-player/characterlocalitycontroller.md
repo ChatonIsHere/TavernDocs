@@ -17,35 +17,48 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterLocalityController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CharacterLocalityController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bodycontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/bodycontroller">{"BodyController"}</Link>{" bodyController"}</code> |  |
-| <Link id="m-headnetworktransform" /><code>{"private "}<Link to="/game-api/types/alta-networking/networktransform">{"NetworkTransform"}</Link>{" headNetworkTransform"}</code> |  |
-| <Link id="m-headtarget" /><code>{"private Transform headTarget"}</code> |  |
-| <Link id="m-localhead" /><code>{"private Transform localHead"}</code> |  |
-| <Link id="m-remotehead" /><code>{"private Transform remoteHead"}</code> |  |
-| <Link id="m-voicechatfollow" /><code>{"private "}<Link to="/game-api/types/global-i-l/lerpfollow">{"LerpFollow"}</Link>{" voiceChatFollow"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bodycontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/bodycontroller">{"BodyController"}</Link>{" bodyController"}</code> |
+| <Link id="m-headnetworktransform" /><code>{"private "}<Link to="/game-api/types/alta-networking/networktransform">{"NetworkTransform"}</Link>{" headNetworkTransform"}</code> |
+| <Link id="m-headtarget" /><code>{"private Transform headTarget"}</code> |
+| <Link id="m-localhead" /><code>{"private Transform localHead"}</code> |
+| <Link id="m-remotehead" /><code>{"private Transform remoteHead"}</code> |
+| <Link id="m-voicechatfollow" /><code>{"private "}<Link to="/game-api/types/global-i-l/lerpfollow">{"LerpFollow"}</Link>{" voiceChatFollow"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-head" /><code>{"Transform Head { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-head" /><code>{"Transform Head { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setlocality" /><code>{"override void SetLocality(bool isLocal)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected void Awake()"}</code> |  |
-| <Link id="m-finishedpackingcharactercosmetics" /><code>{"private void FinishedPackingCharacterCosmetics()"}</code> |  |
-| <Link id="m-setuplocalandremoteheads" /><code>{"protected virtual void SetupLocalAndRemoteHeads(bool isLocalPlayer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setlocality" /><code>{"override void SetLocality(bool isLocal)"}</code> |
+| <Link id="m-awake" /><code>{"protected void Awake()"}</code> |
+| <Link id="m-setuplocalandremoteheads" /><code>{"protected virtual void SetupLocalAndRemoteHeads(bool isLocalPlayer)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-finishedpackingcharactercosmetics" /><code>{"private void FinishedPackingCharacterCosmetics()"}</code> |
+
+</details>
 
 ## Used in
 

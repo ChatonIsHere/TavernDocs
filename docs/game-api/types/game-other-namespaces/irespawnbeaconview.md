@@ -17,10 +17,10 @@ An **interface** in `Root.Township`, `ATT.Respawn`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-init" /><code>{"void Init("}<Link to="/game-api/types/game-other-namespaces/irespawnsystemsettings">{"IRespawnSystemSettings"}</Link>{" settings)"}</code> |  |
-| <Link id="m-onmodelchanged" /><code>{"void OnModelChanged("}<Link to="/game-api/types/game-other-namespaces/irespawnshrinemodel">{"IRespawnShrineModel"}</Link>{" model)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-init" /><code>{"void Init("}<Link to="/game-api/types/game-other-namespaces/irespawnsystemsettings">{"IRespawnSystemSettings"}</Link>{" settings)"}</code> |
+| <Link id="m-onmodelchanged" /><code>{"void OnModelChanged("}<Link to="/game-api/types/game-other-namespaces/irespawnshrinemodel">{"IRespawnShrineModel"}</Link>{" model)"}</code> |
 
 ## Used in
 

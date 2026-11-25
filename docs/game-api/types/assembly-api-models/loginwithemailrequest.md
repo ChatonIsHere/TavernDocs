@@ -17,16 +17,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LoginWithEmailRequest(string email, string passwordHash, string deviceIdentifier)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"LoginWithEmailRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LoginWithEmailRequest(string email, string passwordHash, string deviceIdentifier)"}</code> |
+| <Link id="m-ctor-2" /><code>{"LoginWithEmailRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-email" /><code>{"string Email { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-email" /><code>{"string Email { get; private set; }"}</code> |
 
 ## Used in
 

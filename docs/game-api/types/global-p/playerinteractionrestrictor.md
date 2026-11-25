@@ -21,18 +21,23 @@ Limits how many times each player can use something per in-game day, such as tak
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerInteractionRestrictor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerInteractionRestrictor()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-acceptsrefunds" /><code>{"private bool acceptsRefunds"}</code> |  |
-| <Link id="m-id" /><code>{"private int id"}</code> |  |
-| <Link id="m-interactionspercharge" /><code>{"private int interactionsPerCharge"}</code> |  |
-| <Link id="m-syncid" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncID"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-acceptsrefunds" /><code>{"private bool acceptsRefunds"}</code> |
+| <Link id="m-id" /><code>{"private int id"}</code> |
+| <Link id="m-interactionspercharge" /><code>{"private int interactionsPerCharge"}</code> |
+| <Link id="m-syncid" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncID"}</code> |
+
+</details>
 
 ## Properties
 
@@ -57,12 +62,20 @@ Limits how many times each player can use something per in-game day, such as tak
 | <Link id="m-interactfull" /><code>{"int InteractFull("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Uses a whole charge's worth of interactions. |
 | <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the id and charge count to a joining player. |
 | <Link id="m-refundinteractions" /><code>{"void RefundInteractions("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, int refund)"}</code> | Server: gives uses back, if this restrictor accepts refunds. |
-| <Link id="m-checkupdated" /><code>{"private void CheckUpdated(int id)"}</code> |  |
-| <Link id="m-destroyclean" /><code>{"private void DestroyClean("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-onallowanceupdated" /><code>{"private void OnAllowanceUpdated()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-settingschanged" /><code>{"private void SettingsChanged(Settings obj)"}</code> |  |
-| <Link id="m-syncid-2" /><code>{"private void SyncID("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+<details>
+<summary>6 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-checkupdated" /><code>{"private void CheckUpdated(int id)"}</code> |
+| <Link id="m-destroyclean" /><code>{"private void DestroyClean("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| <Link id="m-onallowanceupdated" /><code>{"private void OnAllowanceUpdated()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-settingschanged" /><code>{"private void SettingsChanged(Settings obj)"}</code> |
+| <Link id="m-syncid-2" /><code>{"private void SyncID("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

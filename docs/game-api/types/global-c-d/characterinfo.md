@@ -18,9 +18,9 @@ Shortcuts to a player's controller, head, hands and interactors. Each `PlayerCon
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterInfo("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CharacterInfo("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller)"}</code> |
 
 ## Properties
 

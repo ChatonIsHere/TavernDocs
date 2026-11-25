@@ -16,18 +16,18 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrabAssistEventData(bool success, Vector3 origin, Vector3 target, float length)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrabAssistEventData(bool success, Vector3 origin, Vector3 target, float length)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-length" /><code>{"readonly float length"}</code> |  |
-| <Link id="m-origin" /><code>{"Vector3 origin"}</code> |  |
-| <Link id="m-success" /><code>{"readonly bool success"}</code> |  |
-| <Link id="m-target" /><code>{"Vector3 target"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-length" /><code>{"readonly float length"}</code> |
+| <Link id="m-origin" /><code>{"Vector3 origin"}</code> |
+| <Link id="m-success" /><code>{"readonly bool success"}</code> |
+| <Link id="m-target" /><code>{"Vector3 target"}</code> |
 
 ## Used in
 

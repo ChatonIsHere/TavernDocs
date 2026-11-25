@@ -22,31 +22,44 @@ Server only (its `Applied` only runs on the server).
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HungerStat()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HungerStat()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fullnessstatdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" fullnessStatDefinition"}</code> |  |
-| <Link id="m-fullstateregen" /><code>{"private AnimationCurve fullStateRegen"}</code> |  |
-| <Link id="m-healthdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" healthDefinition"}</code> |  |
-| <Link id="m-hungerdamage" /><code>{"private static "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" hungerDamage"}</code> |  |
-| <Link id="m-hungerstarvedamage" /><code>{"private float hungerStarveDamage"}</code> |  |
-| <Link id="m-hungertick" /><code>{"private float hungerTick"}</code> |  |
-| <Link id="m-recentdamagedefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" recentDamageDefinition"}</code> |  |
-| <Link id="m-starvedamagehealthcutoff" /><code>{"private float starveDamageHealthCutoff"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fullnessstatdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" fullnessStatDefinition"}</code> |
+| <Link id="m-fullstateregen" /><code>{"private AnimationCurve fullStateRegen"}</code> |
+| <Link id="m-healthdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" healthDefinition"}</code> |
+| <Link id="m-hungerdamage" /><code>{"private static "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" hungerDamage"}</code> |
+| <Link id="m-hungerstarvedamage" /><code>{"private float hungerStarveDamage"}</code> |
+| <Link id="m-hungertick" /><code>{"private float hungerTick"}</code> |
+| <Link id="m-recentdamagedefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" recentDamageDefinition"}</code> |
+| <Link id="m-starvedamagehealthcutoff" /><code>{"private float starveDamageHealthCutoff"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |  |
-| <Link id="m-getsets" /><code>{"protected override "}<Link to="/game-api/types/alta-stats-effects/modifierset">{"ModifierSet"}</Link>{"[] GetSets("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |  |
-| <Link id="m-processhealthregen" /><code>{"private void ProcessHealthRegen("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" health, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" recentDamage)"}</code> |  |
-| <Link id="m-processstarvedamage" /><code>{"private void ProcessStarveDamage("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" fullnessStat, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" health)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |
+| <Link id="m-getsets" /><code>{"protected override "}<Link to="/game-api/types/alta-stats-effects/modifierset">{"ModifierSet"}</Link>{"[] GetSets("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-processhealthregen" /><code>{"private void ProcessHealthRegen("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" health, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" recentDamage)"}</code> |
+| <Link id="m-processstarvedamage" /><code>{"private void ProcessStarveDamage("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" fullnessStat, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" health)"}</code> |
+
+</details>
 
 ## Used in
 

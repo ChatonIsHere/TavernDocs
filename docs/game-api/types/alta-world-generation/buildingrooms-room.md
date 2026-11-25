@@ -17,20 +17,20 @@ A **private class** in `Root.Township`, `Alta.PAGaC`. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Room()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Room()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sizex" /><code>{"int sizeX"}</code> |  |
-| <Link id="m-sizey" /><code>{"int sizeY"}</code> |  |
-| <Link id="m-sizez" /><code>{"int sizeZ"}</code> |  |
-| <Link id="m-x" /><code>{"int x"}</code> |  |
-| <Link id="m-y" /><code>{"int y"}</code> |  |
-| <Link id="m-z" /><code>{"int z"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-sizex" /><code>{"int sizeX"}</code> |
+| <Link id="m-sizey" /><code>{"int sizeY"}</code> |
+| <Link id="m-sizez" /><code>{"int sizeZ"}</code> |
+| <Link id="m-x" /><code>{"int x"}</code> |
+| <Link id="m-y" /><code>{"int y"}</code> |
+| <Link id="m-z" /><code>{"int z"}</code> |
 
 ## Used in
 

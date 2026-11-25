@@ -18,21 +18,26 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PathExperiencePerDamage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PathExperiencePerDamage()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-experienceperdamage" /><code>{"private float experiencePerDamage"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-experienceperdamage" /><code>{"private float experiencePerDamage"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-experienceperdamage-2" /><code>{"float ExperiencePerDamage { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-experienceperdamage-2" /><code>{"float ExperiencePerDamage { get; }"}</code> |
 
 ## Used in
 

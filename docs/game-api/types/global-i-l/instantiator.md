@@ -17,21 +17,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Instantiator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Instantiator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |  |
-| <Link id="m-targetorientation" /><code>{"private Transform targetOrientation"}</code> |  |
-| <Link id="m-targetparent" /><code>{"private Transform targetParent"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |
+| <Link id="m-targetorientation" /><code>{"private Transform targetOrientation"}</code> |
+| <Link id="m-targetparent" /><code>{"private Transform targetParent"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instantiateprefab" /><code>{"void InstantiatePrefab()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instantiateprefab" /><code>{"void InstantiatePrefab()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

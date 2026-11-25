@@ -17,32 +17,37 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkThread("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkThread("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk"}</code> |  |
-| <Link id="m-generationthread" /><code>{"private Thread generationThread"}</code> |  |
-| <Link id="m-iscomplete" /><code>{"private bool isComplete"}</code> |  |
-| <Link id="m-lockobject" /><code>{"private object lockObject"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk"}</code> |
+| <Link id="m-generationthread" /><code>{"private Thread generationThread"}</code> |
+| <Link id="m-iscomplete" /><code>{"private bool isComplete"}</code> |
+| <Link id="m-lockobject" /><code>{"private object lockObject"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-iscomplete-2" /><code>{"bool IsComplete { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-iscomplete-2" /><code>{"bool IsComplete { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-abort" /><code>{"void Abort()"}</code> |  |
-| <Link id="m-generate" /><code>{"void Generate()"}</code> |  |
-| <Link id="m-startgenerating" /><code>{"void StartGenerating()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-abort" /><code>{"void Abort()"}</code> |
+| <Link id="m-generate" /><code>{"void Generate()"}</code> |
+| <Link id="m-startgenerating" /><code>{"void StartGenerating()"}</code> |
 
 ## Used in
 

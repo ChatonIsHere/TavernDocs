@@ -20,9 +20,9 @@ Base for an entity behaviour that builds its content procedurally when it first 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected GeneratedNetworkEntityBehaviour()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected GeneratedNetworkEntityBehaviour()"}</code> |
 
 ## Properties
 

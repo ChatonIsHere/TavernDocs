@@ -17,6 +17,6 @@ A **static class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModel
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-converttoserverjointype" /><code>{"static "}<Link to="/game-api/types/assembly-api-models/serverjointype">{"ServerJoinType"}</Link>{" ConvertToServerJoinType("}<Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" groupType)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-converttoserverjointype" /><code>{"static "}<Link to="/game-api/types/assembly-api-models/serverjointype">{"ServerJoinType"}</Link>{" ConvertToServerJoinType("}<Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" groupType)"}</code> |

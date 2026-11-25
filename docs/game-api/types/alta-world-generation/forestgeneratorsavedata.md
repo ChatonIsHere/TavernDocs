@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ForestGeneratorSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ForestGeneratorSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-seed" /><code>{"int seed"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-seed" /><code>{"int seed"}</code> |

@@ -17,16 +17,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SimpleDummy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SimpleDummy()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animator" /><code>{"Animator animator"}</code> |  |
-| <Link id="m-skinnedmeshrenderer" /><code>{"SkinnedMeshRenderer skinnedMeshRenderer"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-animator" /><code>{"Animator animator"}</code> |
+| <Link id="m-skinnedmeshrenderer" /><code>{"SkinnedMeshRenderer skinnedMeshRenderer"}</code> |
 
 ## Used in
 

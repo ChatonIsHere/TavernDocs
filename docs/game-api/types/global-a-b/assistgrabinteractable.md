@@ -18,15 +18,20 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AssistGrabInteractable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AssistGrabInteractable()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alta-networking-icustomtypereplace-replacetype" /><code>{"private Type Alta.Networking.ICustomTypeReplace.ReplaceType { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-networking-icustomtypereplace-replacetype" /><code>{"private Type Alta.Networking.ICustomTypeReplace.ReplaceType { get; }"}</code> |
+
+</details>
 
 ## Used in
 

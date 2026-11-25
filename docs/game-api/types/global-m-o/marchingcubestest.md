@@ -17,24 +17,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MarchingCubesTest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MarchingCubesTest()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isolevel" /><code>{"private float isoLevel"}</code> |  |
-| <Link id="m-maximumradius" /><code>{"private float maximumRadius"}</code> |  |
-| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> |  |
-| <Link id="m-minimumradius" /><code>{"private float minimumRadius"}</code> |  |
-| <Link id="m-size" /><code>{"private int size"}</code> |  |
-| <Link id="m-spheres" /><code>{"private int spheres"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isolevel" /><code>{"private float isoLevel"}</code> |
+| <Link id="m-maximumradius" /><code>{"private float maximumRadius"}</code> |
+| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> |
+| <Link id="m-minimumradius" /><code>{"private float minimumRadius"}</code> |
+| <Link id="m-size" /><code>{"private int size"}</code> |
+| <Link id="m-spheres" /><code>{"private int spheres"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+
+</details>

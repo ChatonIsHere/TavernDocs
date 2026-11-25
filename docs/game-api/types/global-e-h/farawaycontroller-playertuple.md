@@ -17,16 +17,16 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerTuple("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerTuple("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-closeby" /><code>{"List<"}<Link to="/game-api/types/global-e-h/farawaycontroller-playerdata">{"FarAwayController.PlayerData"}</Link>{"> CloseBy { get; }"}</code> |  |
-| <Link id="m-playerdata" /><code><Link to="/game-api/types/global-e-h/farawaycontroller-playerdata">{"FarAwayController.PlayerData"}</Link>{" "}<Link to="/game-api/types/global-e-h/farawaycontroller-playerdata">{"PlayerData"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-closeby" /><code>{"List<"}<Link to="/game-api/types/global-e-h/farawaycontroller-playerdata">{"FarAwayController.PlayerData"}</Link>{"> CloseBy { get; }"}</code> |
+| <Link id="m-playerdata" /><code><Link to="/game-api/types/global-e-h/farawaycontroller-playerdata">{"FarAwayController.PlayerData"}</Link>{" "}<Link to="/game-api/types/global-e-h/farawaycontroller-playerdata">{"PlayerData"}</Link>{" { get; }"}</code> |
 
 ## Used in
 

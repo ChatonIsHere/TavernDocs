@@ -22,17 +22,22 @@ Asset for a tracked player action (docking an item, destroying something and so 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected GameAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected GameAction()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stattype" /><code>{"private "}<Link to="/game-api/types/global-s/stattype">{"StatType"}</Link>{" statType"}</code> |  |
-| <Link id="m-targetsceneindex" /><code>{"private int targetSceneIndex"}</code> |  |
-| <Link id="m-targetsceneindexes" /><code>{"private int[] targetSceneIndexes"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-stattype" /><code>{"private "}<Link to="/game-api/types/global-s/stattype">{"StatType"}</Link>{" statType"}</code> |
+| <Link id="m-targetsceneindex" /><code>{"private int targetSceneIndex"}</code> |
+| <Link id="m-targetsceneindexes" /><code>{"private int[] targetSceneIndexes"}</code> |
+
+</details>
 
 ## Properties
 

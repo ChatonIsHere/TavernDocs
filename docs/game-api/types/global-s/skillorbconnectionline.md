@@ -16,35 +16,48 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SkillOrbConnectionline(uint entityFromIdentifier, uint entityToIdentifier, "}<Link to="/game-api/types/global-s/skillshrine">{"SkillShrine"}</Link>{" shrine)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SkillOrbConnectionline(uint entityFromIdentifier, uint entityToIdentifier, "}<Link to="/game-api/types/global-s/skillshrine">{"SkillShrine"}</Link>{" shrine)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tintcolor" /><code>{"private readonly int _TintColor"}</code> |  |
-| <Link id="m-entityfromidentifier" /><code>{"private uint entityFromIdentifier"}</code> |  |
-| <Link id="m-entitytoidentifier" /><code>{"private uint entityToIdentifier"}</code> |  |
-| <Link id="m-from" /><code>{"private Transform from"}</code> |  |
-| <Link id="m-line" /><code>{"private LineRenderer line"}</code> |  |
-| <Link id="m-midpoint" /><code>{"private Vector3 midPoint"}</code> |  |
-| <Link id="m-pooledline" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledLine"}</code> |  |
-| <Link id="m-positions" /><code>{"private Vector3[] positions"}</code> |  |
-| <Link id="m-shrine" /><code>{"private "}<Link to="/game-api/types/global-s/skillshrine">{"SkillShrine"}</Link>{" shrine"}</code> |  |
-| <Link id="m-to" /><code>{"private Transform to"}</code> |  |
-| <Link id="m-updatemethod" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateMethod"}</code> |  |
+<details>
+<summary>11 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-tintcolor" /><code>{"private readonly int _TintColor"}</code> |
+| <Link id="m-entityfromidentifier" /><code>{"private uint entityFromIdentifier"}</code> |
+| <Link id="m-entitytoidentifier" /><code>{"private uint entityToIdentifier"}</code> |
+| <Link id="m-from" /><code>{"private Transform from"}</code> |
+| <Link id="m-line" /><code>{"private LineRenderer line"}</code> |
+| <Link id="m-midpoint" /><code>{"private Vector3 midPoint"}</code> |
+| <Link id="m-pooledline" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledLine"}</code> |
+| <Link id="m-positions" /><code>{"private Vector3[] positions"}</code> |
+| <Link id="m-shrine" /><code>{"private "}<Link to="/game-api/types/global-s/skillshrine">{"SkillShrine"}</Link>{" shrine"}</code> |
+| <Link id="m-to" /><code>{"private Transform to"}</code> |
+| <Link id="m-updatemethod" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateMethod"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-destroy" /><code>{"void Destroy()"}</code> |  |
-| <Link id="m-destroyupdate" /><code>{"void DestroyUpdate()"}</code> |  |
-| <Link id="m-update" /><code>{"void Update()"}</code> |  |
-| <Link id="m-updatecolor" /><code>{"private void UpdateColor("}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" orb, "}<Link to="/game-api/types/global-s/skillstatus">{"SkillStatus"}</Link>{" status)"}</code> |  |
-| <Link id="m-waittospawn" /><code>{"private void WaitToSpawn()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-destroy" /><code>{"void Destroy()"}</code> |
+| <Link id="m-destroyupdate" /><code>{"void DestroyUpdate()"}</code> |
+| <Link id="m-update" /><code>{"void Update()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-updatecolor" /><code>{"private void UpdateColor("}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" orb, "}<Link to="/game-api/types/global-s/skillstatus">{"SkillStatus"}</Link>{" status)"}</code> |
+| <Link id="m-waittospawn" /><code>{"private void WaitToSpawn()"}</code> |
+
+</details>
 
 ## Used in
 

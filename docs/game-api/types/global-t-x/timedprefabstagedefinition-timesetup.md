@@ -17,23 +17,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimeSetup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimeSetup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stageindex" /><code>{"private int stageIndex"}</code> |  |
-| <Link id="m-timesincestart" /><code>{"private float timeSinceStart"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-stageindex" /><code>{"private int stageIndex"}</code> |
+| <Link id="m-timesincestart" /><code>{"private float timeSinceStart"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stageindex-2" /><code>{"int StageIndex { get; }"}</code> |  |
-| <Link id="m-timesincestart-2" /><code>{"float TimeSinceStart { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-stageindex-2" /><code>{"int StageIndex { get; }"}</code> |
+| <Link id="m-timesincestart-2" /><code>{"float TimeSinceStart { get; }"}</code> |
 
 ## Used in
 

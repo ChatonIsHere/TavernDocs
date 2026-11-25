@@ -16,28 +16,33 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkPositions()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkPositions()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hassurfaces" /><code>{"private bool hasSurfaces"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-hassurfaces" /><code>{"private bool hasSurfaces"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hassurfaces-2" /><code>{"bool HasSurfaces { get; set; }"}</code> |  |
-| <Link id="m-positiondefinitions" /><code>{"HashSet<"}<Link to="/game-api/types/alta-world/chunkpositionsurface">{"ChunkPositionSurface"}</Link>{"> PositionDefinitions { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hassurfaces-2" /><code>{"bool HasSurfaces { get; set; }"}</code> |
+| <Link id="m-positiondefinitions" /><code>{"HashSet<"}<Link to="/game-api/types/alta-world/chunkpositionsurface">{"ChunkPositionSurface"}</Link>{"> PositionDefinitions { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getposition" /><code><Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{"? GetPosition(int iterations, float maxAngleFromUpDot)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getposition" /><code><Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{"? GetPosition(int iterations, float maxAngleFromUpDot)"}</code> |
 
 ## Used in
 

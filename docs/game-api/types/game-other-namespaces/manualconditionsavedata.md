@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Features.Gameplay.GameConditions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ManualConditionSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ManualConditionSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet"}</code> |

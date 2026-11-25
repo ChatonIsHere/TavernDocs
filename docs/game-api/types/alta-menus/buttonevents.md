@@ -17,23 +17,33 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ButtonEvents()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ButtonEvents()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-button" /><code>{"private "}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" button"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private UnityEvent onDisable"}</code> |  |
-| <Link id="m-onenable" /><code>{"private UnityEvent onEnable"}</code> |  |
-| <Link id="m-onpress" /><code>{"private UnityEvent onPress"}</code> |  |
-| <Link id="m-onrelease" /><code>{"private UnityEvent onRelease"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-button" /><code>{"private "}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" button"}</code> |
+| <Link id="m-ondisable" /><code>{"private UnityEvent onDisable"}</code> |
+| <Link id="m-onenable" /><code>{"private UnityEvent onEnable"}</code> |
+| <Link id="m-onpress" /><code>{"private UnityEvent onPress"}</code> |
+| <Link id="m-onrelease" /><code>{"private UnityEvent onRelease"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-handleenabledchanged" /><code>{"private void HandleEnabledChanged("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" button)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-handleenabledchanged" /><code>{"private void HandleEnabledChanged("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" button)"}</code> |
+
+</details>

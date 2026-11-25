@@ -17,25 +17,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ReceivingMetrics()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ReceivingMetrics()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-networktransportms" /><code>{"float NetworkTransportMs { get; }"}</code> |  |
-| <Link id="m-reliablems" /><code>{"float ReliableMs { get; }"}</code> |  |
-| <Link id="m-reliablereceived" /><code>{"float ReliableReceived { get; }"}</code> |  |
-| <Link id="m-unreliablems" /><code>{"float UnreliableMs { get; }"}</code> |  |
-| <Link id="m-unreliablereceived" /><code>{"float UnreliableReceived { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-networktransportms" /><code>{"float NetworkTransportMs { get; }"}</code> |
+| <Link id="m-reliablems" /><code>{"float ReliableMs { get; }"}</code> |
+| <Link id="m-reliablereceived" /><code>{"float ReliableReceived { get; }"}</code> |
+| <Link id="m-unreliablems" /><code>{"float UnreliableMs { get; }"}</code> |
+| <Link id="m-unreliablereceived" /><code>{"float UnreliableReceived { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> |
 
 ## Used in
 

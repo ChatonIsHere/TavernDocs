@@ -18,36 +18,46 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LightFader()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LightFader()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-baseintensity" /><code>{"private float baseIntensity"}</code> |  |
-| <Link id="m-currentunmultipliedintensity" /><code>{"private float currentUnmultipliedIntensity"}</code> |  |
-| <Link id="m-islit" /><code>{"private bool isLit"}</code> |  |
-| <Link id="m-lightendmultiplier" /><code>{"private AnimationCurve lightEndMultiplier"}</code> |  |
-| <Link id="m-lightstartmultiplier" /><code>{"private AnimationCurve lightStartMultiplier"}</code> |  |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |  |
-| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" target"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-baseintensity" /><code>{"private float baseIntensity"}</code> |
+| <Link id="m-currentunmultipliedintensity" /><code>{"private float currentUnmultipliedIntensity"}</code> |
+| <Link id="m-islit" /><code>{"private bool isLit"}</code> |
+| <Link id="m-lightendmultiplier" /><code>{"private AnimationCurve lightEndMultiplier"}</code> |
+| <Link id="m-lightstartmultiplier" /><code>{"private AnimationCurve lightStartMultiplier"}</code> |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |
+| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" target"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-islit-2" /><code>{"bool IsLit { get; set; }"}</code> |  |
-| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-islit-2" /><code>{"bool IsLit { get; set; }"}</code> |
+| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-fadelight" /><code>{"private IEnumerator FadeLight() (iterator)"}</code> |  |
-| <Link id="m-findclosesttime" /><code>{"private float FindClosestTime(AnimationCurve curve, float value, int steps)"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-fadelight" /><code>{"private IEnumerator FadeLight() (iterator)"}</code> |
+| <Link id="m-findclosesttime" /><code>{"private float FindClosestTime(AnimationCurve curve, float value, int steps)"}</code> |
+
+</details>
 
 ## Used in
 

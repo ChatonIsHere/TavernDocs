@@ -17,23 +17,28 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SmoothingSetting()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SmoothingSetting()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-locomotionlerp" /><code>{"private float locomotionLerp"}</code> |  |
-| <Link id="m-transformslerp" /><code>{"private float transformsLerp"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-locomotionlerp" /><code>{"private float locomotionLerp"}</code> |
+| <Link id="m-transformslerp" /><code>{"private float transformsLerp"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-locomotionlerp-2" /><code>{"float LocomotionLerp { get; }"}</code> |  |
-| <Link id="m-transformslerp-2" /><code>{"float TransformsLerp { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-locomotionlerp-2" /><code>{"float LocomotionLerp { get; }"}</code> |
+| <Link id="m-transformslerp-2" /><code>{"float TransformsLerp { get; }"}</code> |
 
 ## Used in
 

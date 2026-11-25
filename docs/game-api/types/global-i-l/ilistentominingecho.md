@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update" /><code>{"void Update(Vector3 center, float radius)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"void Update(Vector3 center, float radius)"}</code> |
 
 ## Used in
 

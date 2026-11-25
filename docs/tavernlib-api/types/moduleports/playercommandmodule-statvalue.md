@@ -20,9 +20,9 @@ The answer to `player check-stat`: one stat's definition, current value and base
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatValue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatValue()"}</code> |
 
 ## Properties
 

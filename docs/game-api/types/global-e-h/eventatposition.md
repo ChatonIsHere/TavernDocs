@@ -17,18 +17,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EventAtPosition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EventAtPosition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-transformevent" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" transformEvent"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-transformevent" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" transformEvent"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-callevent" /><code>{"void CallEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-callevent" /><code>{"void CallEvent()"}</code> |

@@ -17,30 +17,43 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DynamicObjectCombiner()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DynamicObjectCombiner()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addresultsto" /><code>{"private "}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" addResultsTo"}</code> |  |
-| <Link id="m-avoidchildrenderersof" /><code>{"private Transform avoidChildRenderersOf"}</code> |  |
-| <Link id="m-rendererstoavoid" /><code>{"private Renderer[] renderersToAvoid"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-addresultsto" /><code>{"private "}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" addResultsTo"}</code> |
+| <Link id="m-avoidchildrenderersof" /><code>{"private Transform avoidChildRenderersOf"}</code> |
+| <Link id="m-rendererstoavoid" /><code>{"private Renderer[] renderersToAvoid"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-iscleaningonjoin" /><code>{"protected override bool IsCleaningOnJoin { get; }"}</code> |  |
-| <Link id="m-issettingtoterrainlayer" /><code>{"protected override bool IsSettingToTerrainLayer { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-iscleaningonjoin" /><code>{"protected override bool IsCleaningOnJoin { get; }"}</code> |
+| <Link id="m-issettingtoterrainlayer" /><code>{"protected override bool IsSettingToTerrainLayer { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bake" /><code>{"override void Bake()"}</code> |  |
-| <Link id="m-addrenderers" /><code>{"private void AddRenderers(IEnumerable<Renderer> renderers)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-validaterenderer" /><code>{"protected override bool ValidateRenderer(Renderer renderer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"override void Bake()"}</code> |
+| <Link id="m-validaterenderer" /><code>{"protected override bool ValidateRenderer(Renderer renderer)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-addrenderers" /><code>{"private void AddRenderers(IEnumerable<Renderer> renderers)"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

@@ -19,16 +19,16 @@ An **abstract class** in `Root.Township`, `Alta.Mechanisms`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Path()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Path()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getprogress" /><code>{"abstract float GetProgress(Transform transform)"}</code> |  |
-| <Link id="m-settransform" /><code>{"abstract void SetTransform(Transform transform, float lerp)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getprogress" /><code>{"abstract float GetProgress(Transform transform)"}</code> |
+| <Link id="m-settransform" /><code>{"abstract void SetTransform(Transform transform, float lerp)"}</code> |
 
 ## Used in
 

@@ -19,24 +19,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HeightProgressFilter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HeightProgressFilter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-islinearweighting" /><code>{"private bool isLinearWeighting"}</code> |  |
-| <Link id="m-isnormalizedweighting" /><code>{"private bool isNormalizedWeighting"}</code> |  |
-| <Link id="m-linearmaxheight" /><code>{"private float linearMaxHeight"}</code> |  |
-| <Link id="m-linearminheight" /><code>{"private float linearMinHeight"}</code> |  |
-| <Link id="m-linearmode" /><code>{"private "}<Link to="/game-api/types/global-e-h/heightprogressfilter-linearmode">{"HeightProgressFilter.LinearMode"}</Link>{" linearMode"}</code> |  |
-| <Link id="m-linearweight" /><code>{"private AnimationCurve linearWeight"}</code> |  |
-| <Link id="m-normalizedweight" /><code>{"private AnimationCurve normalizedWeight"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-islinearweighting" /><code>{"private bool isLinearWeighting"}</code> |
+| <Link id="m-isnormalizedweighting" /><code>{"private bool isNormalizedWeighting"}</code> |
+| <Link id="m-linearmaxheight" /><code>{"private float linearMaxHeight"}</code> |
+| <Link id="m-linearminheight" /><code>{"private float linearMinHeight"}</code> |
+| <Link id="m-linearmode" /><code>{"private "}<Link to="/game-api/types/global-e-h/heightprogressfilter-linearmode">{"HeightProgressFilter.LinearMode"}</Link>{" linearMode"}</code> |
+| <Link id="m-linearweight" /><code>{"private AnimationCurve linearWeight"}</code> |
+| <Link id="m-normalizedweight" /><code>{"private AnimationCurve normalizedWeight"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" point, ref float weight)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" point, ref float weight)"}</code> |

@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PotionImpactColorer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PotionImpactColorer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-particlesystemwithliquidcolor" /><code>{"private "}<Link to="/game-api/types/global-c-d/coloredparticlesystem">{"ColoredParticleSystem"}</Link>{" particleSystemWithLiquidColor"}</code> |  |
-| <Link id="m-particlesystemwithrimcolor" /><code>{"private "}<Link to="/game-api/types/global-c-d/coloredparticlesystem">{"ColoredParticleSystem"}</Link>{" particleSystemWithRimColor"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-particlesystemwithliquidcolor" /><code>{"private "}<Link to="/game-api/types/global-c-d/coloredparticlesystem">{"ColoredParticleSystem"}</Link>{" particleSystemWithLiquidColor"}</code> |
+| <Link id="m-particlesystemwithrimcolor" /><code>{"private "}<Link to="/game-api/types/global-c-d/coloredparticlesystem">{"ColoredParticleSystem"}</Link>{" particleSystemWithRimColor"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-settoliquid" /><code>{"void SetToLiquid("}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-settoliquid" /><code>{"void SetToLiquid("}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> |

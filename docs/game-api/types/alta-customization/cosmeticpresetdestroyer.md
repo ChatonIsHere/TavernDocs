@@ -17,27 +17,37 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticPresetDestroyer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CosmeticPresetDestroyer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-destroytrigger" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresettrophytrigger">{"CosmeticPresetTrophyTrigger"}</Link>{" destroyTrigger"}</code> |  |
-| <Link id="m-hastrophies" /><code>{"private UnityEvent HasTrophies"}</code> |  |
-| <Link id="m-notrophies" /><code>{"private UnityEvent NoTrophies"}</code> |  |
-| <Link id="m-proximitytrigger" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresettrophytrigger">{"CosmeticPresetTrophyTrigger"}</Link>{" proximityTrigger"}</code> |  |
-| <Link id="m-trackedtrophies" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{"> trackedTrophies"}</code> |  |
-| <Link id="m-trophygotdestroyed" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformhandler">{"TransformHandler"}</Link>{" trophyGotDestroyed"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroytrigger" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresettrophytrigger">{"CosmeticPresetTrophyTrigger"}</Link>{" destroyTrigger"}</code> |
+| <Link id="m-hastrophies" /><code>{"private UnityEvent HasTrophies"}</code> |
+| <Link id="m-notrophies" /><code>{"private UnityEvent NoTrophies"}</code> |
+| <Link id="m-proximitytrigger" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresettrophytrigger">{"CosmeticPresetTrophyTrigger"}</Link>{" proximityTrigger"}</code> |
+| <Link id="m-trackedtrophies" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{"> trackedTrophies"}</code> |
+| <Link id="m-trophygotdestroyed" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformhandler">{"TransformHandler"}</Link>{" trophyGotDestroyed"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-checkdestroy" /><code>{"private void CheckDestroy("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophy)"}</code> |  |
-| <Link id="m-destroytrophy" /><code>{"private void DestroyTrophy("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophy)"}</code> |  |
-| <Link id="m-trophyentered" /><code>{"private void TrophyEntered("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophy)"}</code> |  |
-| <Link id="m-trophyexited" /><code>{"private void TrophyExited("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophy)"}</code> |  |
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-checkdestroy" /><code>{"private void CheckDestroy("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophy)"}</code> |
+| <Link id="m-destroytrophy" /><code>{"private void DestroyTrophy("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophy)"}</code> |
+| <Link id="m-trophyentered" /><code>{"private void TrophyEntered("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophy)"}</code> |
+| <Link id="m-trophyexited" /><code>{"private void TrophyExited("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophy)"}</code> |
+
+</details>

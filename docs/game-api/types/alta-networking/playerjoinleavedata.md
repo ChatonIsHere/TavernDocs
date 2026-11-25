@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `Alta.Networking.Servers`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerJoinLeaveData("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerJoinLeaveData("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-mode" /><code><Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-user" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-mode" /><code><Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| <Link id="m-user" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user"}</code> |
 
 ## Used in
 

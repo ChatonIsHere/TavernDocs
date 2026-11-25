@@ -17,22 +17,22 @@ A **private class** in `Root.Township`, `Alta.Pages`. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LODRenderers()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"LODRenderers(IEnumerable<Renderer> renderers)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LODRenderers()"}</code> |
+| <Link id="m-ctor-2" /><code>{"LODRenderers(IEnumerable<Renderer> renderers)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-renderers" /><code>{"List<Renderer> renderers"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-renderers" /><code>{"List<Renderer> renderers"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-toarray" /><code>{"Renderer[] ToArray()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-toarray" /><code>{"Renderer[] ToArray()"}</code> |
 
 ## Used in
 

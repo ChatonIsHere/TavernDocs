@@ -20,9 +20,9 @@ A group of pickup docks on one object, so they can be handled together.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PickupDockGroup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PickupDockGroup()"}</code> |
 
 ## Methods
 

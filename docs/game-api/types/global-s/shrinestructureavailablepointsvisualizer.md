@@ -17,13 +17,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShrineStructureAvailablePointsVisualizer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShrineStructureAvailablePointsVisualizer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-availablepointsposition" /><code>{"private Transform availablePointsPosition"}</code> |  |
-| <Link id="m-freepointseffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" freePointsEffectDefinition"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-availablepointsposition" /><code>{"private Transform availablePointsPosition"}</code> |
+| <Link id="m-freepointseffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" freePointsEffectDefinition"}</code> |
+
+</details>

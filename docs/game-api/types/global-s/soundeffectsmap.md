@@ -19,29 +19,39 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SoundEffectsMap()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SoundEffectsMap()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-soundeffectsets" /><code>{"private List<"}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{"> soundEffectSets"}</code> |  |
-| <Link id="m-soundeventmap" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{", "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{"> soundEventMap"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-soundeffectsets" /><code>{"private List<"}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{"> soundEffectSets"}</code> |
+| <Link id="m-soundeventmap" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{", "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{"> soundEventMap"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-soundeventmap-2" /><code>{"Dictionary<"}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{", "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{"> SoundEventMap { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-soundeventmap-2" /><code>{"Dictionary<"}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{", "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{"> SoundEventMap { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loadsoundeventmap" /><code>{"private void LoadSoundEventMap()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-loadsoundeventmap" /><code>{"private void LoadSoundEventMap()"}</code> |
+
+</details>
 
 ## Used in
 

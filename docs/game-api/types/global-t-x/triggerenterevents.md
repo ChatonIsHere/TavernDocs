@@ -18,20 +18,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerEnterEvents()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TriggerEnterEvents()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ontriggerenter" /><code>{"private "}<Link to="/game-api/types/global-t-x/triggerenterevents-colliderevent">{"TriggerEnterEvents.ColliderEvent"}</Link>{" onTriggerEnter"}</code> |  |
-| <Link id="m-ontriggerexit" /><code>{"private "}<Link to="/game-api/types/global-t-x/triggerenterevents-colliderevent">{"TriggerEnterEvents.ColliderEvent"}</Link>{" onTriggerExit"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ontriggerenter" /><code>{"private "}<Link to="/game-api/types/global-t-x/triggerenterevents-colliderevent">{"TriggerEnterEvents.ColliderEvent"}</Link>{" onTriggerEnter"}</code> |
+| <Link id="m-ontriggerexit" /><code>{"private "}<Link to="/game-api/types/global-t-x/triggerenterevents-colliderevent">{"TriggerEnterEvents.ColliderEvent"}</Link>{" onTriggerExit"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ontriggerenter-2" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
-| <Link id="m-ontriggerexit-2" /><code>{"private void OnTriggerExit(Collider other)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ontriggerenter-2" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
+| <Link id="m-ontriggerexit-2" /><code>{"private void OnTriggerExit(Collider other)"}</code> |
+
+</details>

@@ -20,15 +20,20 @@ An `Action<TAgent>` that runs a `TActive` with settings `TSettings`, reusing fin
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BasicAction(TSettings settings)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BasicAction(TSettings settings)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activepool" /><code>{"private Stack<TActive> activePool"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-activepool" /><code>{"private Stack<TActive> activePool"}</code> |
+
+</details>
 
 ## Properties
 
@@ -43,7 +48,15 @@ An `Action<TAgent>` that runs a `TActive` with settings `TSettings`, reusing fin
 | Member | What it is |
 | --- | --- |
 | <Link id="m-start" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" Start(TAgent agent)"}</code> | Takes a pooled active action (or makes one), starts it on the agent, calls the settings' `HandleUsed` and returns it. |
-| <Link id="m-pool" /><code>{"private void Pool("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-pool" /><code>{"private void Pool("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |
+
+</details>
 
 ## Used in
 

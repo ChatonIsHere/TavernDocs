@@ -17,13 +17,13 @@ An **enum** in `Root.Township`, `Alta.PAGaC`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-all" /><code>{"All = 4"}</code> |  |
-| <Link id="m-mirror" /><code>{"Mirror = 2"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-perpendicular" /><code>{"Perpendicular = 1"}</code> |  |
-| <Link id="m-perpendicularormirror" /><code>{"PerpendicularOrMirror = 3"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-all" /><code>{"All = 4"}</code> |
+| <Link id="m-mirror" /><code>{"Mirror = 2"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-perpendicular" /><code>{"Perpendicular = 1"}</code> |
+| <Link id="m-perpendicularormirror" /><code>{"PerpendicularOrMirror = 3"}</code> |
 
 ## Used in
 

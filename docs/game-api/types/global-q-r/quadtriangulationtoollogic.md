@@ -17,9 +17,17 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-calculatechanges" /><code>{"static bool CalculateChanges(Mesh meshToTriangulate, out int targetSubMesh, out int[] triangles)"}</code> |  |
-| <Link id="m-checkfixtriangulation" /><code>{"static void CheckFixTriangulation(Mesh mesh)"}</code> |  |
-| <Link id="m-mergetriangulatedmesh" /><code>{"static void MergeTriangulatedMesh(Mesh meshToTriangulate, int targetSubMesh, int[] triangles)"}</code> |  |
-| <Link id="m-getsafebasesubmesh" /><code>{"private static bool GetSafeBaseSubMesh(Mesh mesh, int targetSubMesh, out int baseSubMeshIndex)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-calculatechanges" /><code>{"static bool CalculateChanges(Mesh meshToTriangulate, out int targetSubMesh, out int[] triangles)"}</code> |
+| <Link id="m-checkfixtriangulation" /><code>{"static void CheckFixTriangulation(Mesh mesh)"}</code> |
+| <Link id="m-mergetriangulatedmesh" /><code>{"static void MergeTriangulatedMesh(Mesh meshToTriangulate, int targetSubMesh, int[] triangles)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getsafebasesubmesh" /><code>{"private static bool GetSafeBaseSubMesh(Mesh mesh, int targetSubMesh, out int baseSubMeshIndex)"}</code> |
+
+</details>

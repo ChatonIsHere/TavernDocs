@@ -16,12 +16,12 @@ A **static class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModel
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-emaillength" /><code>{"const int EmailLength"}</code> |  |
-| <Link id="m-namelength" /><code>{"const int NameLength"}</code> |  |
-| <Link id="m-nameregularexpression" /><code>{"const string NameRegularExpression"}</code> |  |
-| <Link id="m-passwordhashlength" /><code>{"const int PasswordHashLength"}</code> |  |
-| <Link id="m-signupcodelength" /><code>{"const int SignupCodeLength"}</code> |  |
-| <Link id="m-signupcoderegularexpression" /><code>{"const string SignupCodeRegularExpression"}</code> |  |
-| <Link id="m-usernamefieldname" /><code>{"const string UsernameFieldName"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-emaillength" /><code>{"const int EmailLength"}</code> |
+| <Link id="m-namelength" /><code>{"const int NameLength"}</code> |
+| <Link id="m-nameregularexpression" /><code>{"const string NameRegularExpression"}</code> |
+| <Link id="m-passwordhashlength" /><code>{"const int PasswordHashLength"}</code> |
+| <Link id="m-signupcodelength" /><code>{"const int SignupCodeLength"}</code> |
+| <Link id="m-signupcoderegularexpression" /><code>{"const string SignupCodeRegularExpression"}</code> |
+| <Link id="m-usernamefieldname" /><code>{"const string UsernameFieldName"}</code> |

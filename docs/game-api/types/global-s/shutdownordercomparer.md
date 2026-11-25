@@ -17,12 +17,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShutdownOrderComparer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShutdownOrderComparer()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-compare" /><code>{"int Compare(Delegate x, Delegate y)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-compare" /><code>{"int Compare(Delegate x, Delegate y)"}</code> |

@@ -17,30 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Variable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Variable()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-from" /><code>{"float From { get; private set; }"}</code> |  |
-| <Link id="m-to" /><code>{"float To { get; private set; }"}</code> |  |
-| <Link id="m-value" /><code>{"float Value { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-from" /><code>{"float From { get; private set; }"}</code> |
+| <Link id="m-to" /><code>{"float To { get; private set; }"}</code> |
+| <Link id="m-value" /><code>{"float Value { get; private set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-changed" /><code>{"event Action<float> Changed"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-changed" /><code>{"event Action<float> Changed"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lerp" /><code>{"void Lerp(float lerp)"}</code> |  |
-| <Link id="m-setto" /><code>{"void SetTo(float target, bool isSnapping)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-lerp" /><code>{"void Lerp(float lerp)"}</code> |
+| <Link id="m-setto" /><code>{"void SetTo(float target, bool isSnapping)"}</code> |
 
 ## Used in
 

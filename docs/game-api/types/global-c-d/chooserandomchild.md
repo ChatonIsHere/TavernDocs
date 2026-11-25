@@ -17,20 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChooseRandomChild()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChooseRandomChild()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-btnrandomize" /><code>{"private bool btnRandomize"}</code> |  |
-| <Link id="m-noneweight" /><code>{"private float noneWeight"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-btnrandomize" /><code>{"private bool btnRandomize"}</code> |
+| <Link id="m-noneweight" /><code>{"private float noneWeight"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-randomizechildren" /><code>{"private void RandomizeChildren()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| <Link id="m-randomizechildren" /><code>{"private void RandomizeChildren()"}</code> |
+
+</details>

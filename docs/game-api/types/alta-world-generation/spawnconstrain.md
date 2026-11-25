@@ -18,15 +18,15 @@ An **abstract class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SpawnConstrain()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SpawnConstrain()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spawnparameters" /><code>{"abstract bool SpawnParameters("}<Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" generation, ref int quantity)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-spawnparameters" /><code>{"abstract bool SpawnParameters("}<Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" generation, ref int quantity)"}</code> |
 
 ## Used in
 

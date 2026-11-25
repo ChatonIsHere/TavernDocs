@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterPoseSaver()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CharacterPoseSaver()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bodyrootjoint" /><code>{"private Transform bodyRootJoint"}</code> |  |
-| <Link id="m-posecount" /><code>{"private static int poseCount"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bodyrootjoint" /><code>{"private Transform bodyRootJoint"}</code> |
+| <Link id="m-posecount" /><code>{"private static int poseCount"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-buttonpressed" /><code>{"protected override void ButtonPressed("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-buttonpressed" /><code>{"protected override void ButtonPressed("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |

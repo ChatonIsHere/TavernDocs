@@ -18,24 +18,34 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BodyProjection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BodyProjection()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angleinterpolation" /><code>{"private AnimationCurve angleInterpolation"}</code> |  |
-| <Link id="m-body" /><code>{"private Renderer body"}</code> |  |
-| <Link id="m-head" /><code>{"private Transform head"}</code> |  |
-| <Link id="m-lefthand" /><code>{"private Transform leftHand"}</code> |  |
-| <Link id="m-lerptime" /><code>{"private float lerpTime"}</code> |  |
-| <Link id="m-righthand" /><code>{"private Transform rightHand"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-angleinterpolation" /><code>{"private AnimationCurve angleInterpolation"}</code> |
+| <Link id="m-body" /><code>{"private Renderer body"}</code> |
+| <Link id="m-head" /><code>{"private Transform head"}</code> |
+| <Link id="m-lefthand" /><code>{"private Transform leftHand"}</code> |
+| <Link id="m-lerptime" /><code>{"private float lerpTime"}</code> |
+| <Link id="m-righthand" /><code>{"private Transform rightHand"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>

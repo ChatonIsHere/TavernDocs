@@ -20,9 +20,9 @@ One whitelist application.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WhitelistRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WhitelistRequest()"}</code> |
 
 ## Properties
 
@@ -31,7 +31,15 @@ One whitelist application.
 | <Link id="m-appliedat" /><code>{"string AppliedAt { get; set; }"}</code> | When it was filed, as UTC ISO 8601 text. |
 | <Link id="m-ip" /><code>{"string Ip { get; set; }"}</code> | The address it came from. |
 | <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | The name that applied. |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |
+
+</details>
 
 ## Used in
 

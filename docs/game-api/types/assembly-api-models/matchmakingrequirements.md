@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MatchMakingRequirements()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MatchMakingRequirements()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sceneindex" /><code>{"int? SceneIndex { get; set; }"}</code> |  |
-| <Link id="m-target" /><code>{"int? Target { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-sceneindex" /><code>{"int? SceneIndex { get; set; }"}</code> |
+| <Link id="m-target" /><code>{"int? Target { get; set; }"}</code> |
 
 ## Used in
 

@@ -18,23 +18,28 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BoneMeshCollider()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BoneMeshCollider()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-meshes" /><code>{"private Mesh[] meshes"}</code> |  |
-| <Link id="m-positionoffset" /><code>{"private Vector3 positionOffset"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-meshes" /><code>{"private Mesh[] meshes"}</code> |
+| <Link id="m-positionoffset" /><code>{"private Vector3 positionOffset"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-meshes-2" /><code>{"Mesh[] Meshes { get; }"}</code> |  |
-| <Link id="m-positionoffset-2" /><code>{"Vector3 PositionOffset { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-meshes-2" /><code>{"Mesh[] Meshes { get; }"}</code> |
+| <Link id="m-positionoffset-2" /><code>{"Vector3 PositionOffset { get; }"}</code> |
 
 ## Used in
 

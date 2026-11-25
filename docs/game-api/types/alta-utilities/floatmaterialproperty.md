@@ -19,9 +19,9 @@ A cached shader property id for a float value, set on a material or a property b
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FloatMaterialProperty(string propertyName)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FloatMaterialProperty(string propertyName)"}</code> |
 
 ## Methods
 

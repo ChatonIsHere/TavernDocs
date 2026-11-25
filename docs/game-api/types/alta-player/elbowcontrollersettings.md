@@ -21,22 +21,27 @@ Settings asset for `ElbowController`, which places the elbow IK hint by matching
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ElbowControllerSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ElbowControllerSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-elbowtargetspeedcurve" /><code>{"private AnimationCurve elbowTargetSpeedCurve"}</code> |  |
-| <Link id="m-isloggingbesttargets" /><code>{"private bool isLoggingBestTargets"}</code> |  |
-| <Link id="m-isshowingbesttargets" /><code>{"private bool isShowingBestTargets"}</code> |  |
-| <Link id="m-isusingweightedaverage" /><code>{"private bool isUsingWeightedAverage"}</code> |  |
-| <Link id="m-minimumassessedpoints" /><code>{"private int minimumAssessedPoints"}</code> |  |
-| <Link id="m-numberofbestmatchedtoaverage" /><code>{"private int numberOfBestMatchedToAverage"}</code> |  |
-| <Link id="m-positionmultiplier" /><code>{"private float positionMultiplier"}</code> |  |
-| <Link id="m-rotationmultiplier" /><code>{"private float rotationMultiplier"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-elbowtargetspeedcurve" /><code>{"private AnimationCurve elbowTargetSpeedCurve"}</code> |
+| <Link id="m-isloggingbesttargets" /><code>{"private bool isLoggingBestTargets"}</code> |
+| <Link id="m-isshowingbesttargets" /><code>{"private bool isShowingBestTargets"}</code> |
+| <Link id="m-isusingweightedaverage" /><code>{"private bool isUsingWeightedAverage"}</code> |
+| <Link id="m-minimumassessedpoints" /><code>{"private int minimumAssessedPoints"}</code> |
+| <Link id="m-numberofbestmatchedtoaverage" /><code>{"private int numberOfBestMatchedToAverage"}</code> |
+| <Link id="m-positionmultiplier" /><code>{"private float positionMultiplier"}</code> |
+| <Link id="m-rotationmultiplier" /><code>{"private float rotationMultiplier"}</code> |
+
+</details>
 
 ## Properties
 

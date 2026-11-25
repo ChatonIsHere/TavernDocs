@@ -20,9 +20,9 @@ Base for a spawn modifier that works on `PointNormal` ground points, as used by 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SpawnModifierPointNormal()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SpawnModifierPointNormal()"}</code> |
 
 ## Used in
 

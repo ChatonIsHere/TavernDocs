@@ -18,10 +18,10 @@ An **interface** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport`.
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-connectioncreated" /><code>{"event Action<"}<Link to="/game-api/types/assembly-other/itransportconnection">{"ITransportConnection"}</Link>{"> ConnectionCreated"}</code> |  |
-| <Link id="m-connectiondestroyed" /><code>{"event Action<"}<Link to="/game-api/types/assembly-other/itransportconnection">{"ITransportConnection"}</Link>{"> ConnectionDestroyed"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-connectioncreated" /><code>{"event Action<"}<Link to="/game-api/types/assembly-other/itransportconnection">{"ITransportConnection"}</Link>{"> ConnectionCreated"}</code> |
+| <Link id="m-connectiondestroyed" /><code>{"event Action<"}<Link to="/game-api/types/assembly-other/itransportconnection">{"ITransportConnection"}</Link>{"> ConnectionDestroyed"}</code> |
 
 ## Used in
 

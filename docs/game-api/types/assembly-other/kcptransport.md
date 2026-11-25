@@ -17,42 +17,55 @@ A **class** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport.Kcp`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"KcpTransport("}<Link to="/game-api/types/assembly-other/kcpsettings">{"KcpSettings"}</Link>{" settings)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"KcpTransport("}<Link to="/game-api/types/assembly-other/kcpsettings">{"KcpSettings"}</Link>{" settings)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channelcount" /><code>{"private int channelCount"}</code> |  |
-| <Link id="m-channelreliability" /><code>{"private readonly bool[] channelReliability"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |  |
-| <Link id="m-settings" /><code>{"private readonly "}<Link to="/game-api/types/assembly-other/kcpsettings">{"KcpSettings"}</Link>{" settings"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-channelcount" /><code>{"private int channelCount"}</code> |
+| <Link id="m-channelreliability" /><code>{"private readonly bool[] channelReliability"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |
+| <Link id="m-settings" /><code>{"private readonly "}<Link to="/game-api/types/assembly-other/kcpsettings">{"KcpSettings"}</Link>{" settings"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-byteoffset" /><code>{"int ByteOffset { get; }"}</code> |  |
-| <Link id="m-packetsize" /><code>{"int PacketSize { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-byteoffset" /><code>{"int ByteOffset { get; }"}</code> |
+| <Link id="m-packetsize" /><code>{"int PacketSize { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onerror" /><code>{"event Action<"}<Link to="/game-api/types/assembly-other/altanetworkerror">{"AltaNetworkError"}</Link>{"> OnError"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onerror" /><code>{"event Action<"}<Link to="/game-api/types/assembly-other/altanetworkerror">{"AltaNetworkError"}</Link>{"> OnError"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-connect" /><code><Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" Connect(string ipAddress, int port)"}</code> |  |
-| <Link id="m-createchannel" /><code>{"int CreateChannel(bool isReliable)"}</code> |  |
-| <Link id="m-createserver" /><code><Link to="/game-api/types/assembly-other/itransportserver">{"ITransportServer"}</Link>{" CreateServer(int port)"}</code> |  |
-| <Link id="m-terminate" /><code>{"void Terminate()"}</code> |  |
-| <Link id="m-tokcpchannel" /><code>{"KcpChannel ToKcpChannel(int channelId)"}</code> |  |
-| <Link id="m-fixnonalloc" /><code>{"private void FixNonAlloc()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-connect" /><code><Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" Connect(string ipAddress, int port)"}</code> |
+| <Link id="m-createchannel" /><code>{"int CreateChannel(bool isReliable)"}</code> |
+| <Link id="m-createserver" /><code><Link to="/game-api/types/assembly-other/itransportserver">{"ITransportServer"}</Link>{" CreateServer(int port)"}</code> |
+| <Link id="m-terminate" /><code>{"void Terminate()"}</code> |
+| <Link id="m-tokcpchannel" /><code>{"KcpChannel ToKcpChannel(int channelId)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-fixnonalloc" /><code>{"private void FixNonAlloc()"}</code> |
+
+</details>
 
 ## Used in
 

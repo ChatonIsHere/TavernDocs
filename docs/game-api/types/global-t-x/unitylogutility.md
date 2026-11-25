@@ -16,8 +16,8 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-converttonloglevel" /><code>{"static LogLevel ConvertToNLogLevel(LogType logType)"}</code> |  |
-| <Link id="m-converttonloglevel-2" /><code>{"static LogLevel ConvertToNLogLevel("}<Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" logLevel)"}</code> |  |
-| <Link id="m-converttounityloglevel" /><code>{"static LogType ConvertToUnityLogLevel(LogLevel logLevel)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-converttonloglevel" /><code>{"static LogLevel ConvertToNLogLevel(LogType logType)"}</code> |
+| <Link id="m-converttonloglevel-2" /><code>{"static LogLevel ConvertToNLogLevel("}<Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" logLevel)"}</code> |
+| <Link id="m-converttounityloglevel" /><code>{"static LogType ConvertToUnityLogLevel(LogLevel logLevel)"}</code> |

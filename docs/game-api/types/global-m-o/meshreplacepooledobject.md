@@ -18,12 +18,12 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected MeshReplacePooledObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected MeshReplacePooledObject()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"abstract void Setup(Mesh mesh, Material material)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"abstract void Setup(Mesh mesh, Material material)"}</code> |

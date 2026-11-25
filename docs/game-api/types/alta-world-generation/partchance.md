@@ -16,23 +16,28 @@ A **class** in `Root.Township`, `Alta.PAGaC`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PartChance()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PartChance()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-part" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/part">{"Part"}</Link>{" part"}</code> |  |
-| <Link id="m-weight" /><code>{"private float weight"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-part" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/part">{"Part"}</Link>{" part"}</code> |
+| <Link id="m-weight" /><code>{"private float weight"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-part-2" /><code><Link to="/game-api/types/alta-world-generation/part">{"Part"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/part">{"Part"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-weight-2" /><code>{"float Weight { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-part-2" /><code><Link to="/game-api/types/alta-world-generation/part">{"Part"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/part">{"Part"}</Link>{" { get; }"}</code> |
+| <Link id="m-weight-2" /><code>{"float Weight { get; }"}</code> |
 
 ## Used in
 

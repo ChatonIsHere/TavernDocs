@@ -22,33 +22,41 @@ Keeps the time of day and month and decides when it's night. One timeline second
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameTimeManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameTimeManager()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-e-h/gametimemanager">{"GameTimeManager"}</Link>{" Instance"}</code> | The current manager, set on `Awake`. |
-| <Link id="m-availablekeywords" /><code>{"private "}<Link to="/game-api/types/global-e-h/gametimemanager-timename">{"GameTimeManager.TimeName"}</Link>{"[] availableKeyWords"}</code> |  |
-| <Link id="m-daydurationminutes" /><code>{"private float dayDurationMinutes"}</code> |  |
-| <Link id="m-dayprogress" /><code>{"private float dayProgress"}</code> |  |
-| <Link id="m-daytonightratio" /><code>{"private float dayToNightRatio"}</code> |  |
-| <Link id="m-deltaoperation" /><code>{"private Func<float, float> deltaOperation"}</code> |  |
-| <Link id="m-initialtime" /><code>{"private float initialTime"}</code> |  |
-| <Link id="m-isrushing" /><code>{"private bool isRushing"}</code> |  |
-| <Link id="m-issettinginstance" /><code>{"private bool isSettingInstance"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-monthdurationdays" /><code>{"private float monthDurationDays"}</code> |  |
-| <Link id="m-monthprogress" /><code>{"private float monthProgress"}</code> |  |
-| <Link id="m-nextsync" /><code>{"private float nextSync"}</code> |  |
-| <Link id="m-offsetfromserver" /><code>{"private float offsetFromServer"}</code> |  |
-| <Link id="m-rushingtimemultiplier" /><code>{"private float rushingTimeMultiplier"}</code> |  |
-| <Link id="m-smallhoursnightpercentage" /><code>{"private float smallHoursNightPercentage"}</code> |  |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> sync"}</code> |  |
-| <Link id="m-syncrefreshrate" /><code>{"private float syncRefreshRate"}</code> |  |
-| <Link id="m-targettime" /><code>{"private float targetTime"}</code> |  |
+
+<details>
+<summary>18 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-availablekeywords" /><code>{"private "}<Link to="/game-api/types/global-e-h/gametimemanager-timename">{"GameTimeManager.TimeName"}</Link>{"[] availableKeyWords"}</code> |
+| <Link id="m-daydurationminutes" /><code>{"private float dayDurationMinutes"}</code> |
+| <Link id="m-dayprogress" /><code>{"private float dayProgress"}</code> |
+| <Link id="m-daytonightratio" /><code>{"private float dayToNightRatio"}</code> |
+| <Link id="m-deltaoperation" /><code>{"private Func<float, float> deltaOperation"}</code> |
+| <Link id="m-initialtime" /><code>{"private float initialTime"}</code> |
+| <Link id="m-isrushing" /><code>{"private bool isRushing"}</code> |
+| <Link id="m-issettinginstance" /><code>{"private bool isSettingInstance"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-monthdurationdays" /><code>{"private float monthDurationDays"}</code> |
+| <Link id="m-monthprogress" /><code>{"private float monthProgress"}</code> |
+| <Link id="m-nextsync" /><code>{"private float nextSync"}</code> |
+| <Link id="m-offsetfromserver" /><code>{"private float offsetFromServer"}</code> |
+| <Link id="m-rushingtimemultiplier" /><code>{"private float rushingTimeMultiplier"}</code> |
+| <Link id="m-smallhoursnightpercentage" /><code>{"private float smallHoursNightPercentage"}</code> |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> sync"}</code> |
+| <Link id="m-syncrefreshrate" /><code>{"private float syncRefreshRate"}</code> |
+| <Link id="m-targettime" /><code>{"private float targetTime"}</code> |
+
+</details>
 
 ## Properties
 
@@ -85,18 +93,26 @@ Keeps the time of day and month and decides when it's night. One timeline second
 | <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the time to a new player and makes them snap to it. |
 | <Link id="m-rushtotime" /><code>{"void RushToTime(float time)"}</code> | Server: fast-forwards to a normalized time (0 to 0.5 day part, 0.5 to 1 night part) at the rushing speed. |
 | <Link id="m-updatetimebykeyword" /><code>{"void UpdateTimeByKeyWord(string name)"}</code> | Server: rushes to a named time; logs an error for an unknown name. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-clientupdate" /><code>{"private float ClientUpdate(float dayDelta)"}</code> |  |
-| <Link id="m-createtimeline" /><code>{"private void CreateTimeline(TimeSpan startTime)"}</code> |  |
-| <Link id="m-getnormalizedtime" /><code>{"private TimeSpan GetNormalizedTime()"}</code> |  |
-| <Link id="m-gettimefromtimeline" /><code>{"private float GetTimeFromTimeline("}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-onnightchanged" /><code>{"private void OnNightChanged(bool wasNight)"}</code> |  |
-| <Link id="m-serverupdate" /><code>{"private float ServerUpdate(float dayDelta)"}</code> |  |
-| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isForcingSnapping)"}</code> |  |
-| <Link id="m-updatenormalizedtime" /><code>{"private void UpdateNormalizedTime()"}</code> |  |
-| <Link id="m-updateprogressfromtimeline" /><code>{"private void UpdateProgressFromTimeline()"}</code> |  |
-| <Link id="m-updatetimeline" /><code>{"private void UpdateTimeline(TimeSpan deltaTime)"}</code> |  |
+
+<details>
+<summary>12 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-clientupdate" /><code>{"private float ClientUpdate(float dayDelta)"}</code> |
+| <Link id="m-createtimeline" /><code>{"private void CreateTimeline(TimeSpan startTime)"}</code> |
+| <Link id="m-getnormalizedtime" /><code>{"private TimeSpan GetNormalizedTime()"}</code> |
+| <Link id="m-gettimefromtimeline" /><code>{"private float GetTimeFromTimeline("}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-onnightchanged" /><code>{"private void OnNightChanged(bool wasNight)"}</code> |
+| <Link id="m-serverupdate" /><code>{"private float ServerUpdate(float dayDelta)"}</code> |
+| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isForcingSnapping)"}</code> |
+| <Link id="m-updatenormalizedtime" /><code>{"private void UpdateNormalizedTime()"}</code> |
+| <Link id="m-updateprogressfromtimeline" /><code>{"private void UpdateProgressFromTimeline()"}</code> |
+| <Link id="m-updatetimeline" /><code>{"private void UpdateTimeline(TimeSpan deltaTime)"}</code> |
+
+</details>
 
 ## Used in
 

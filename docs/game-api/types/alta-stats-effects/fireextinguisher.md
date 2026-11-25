@@ -18,23 +18,33 @@ A **class** in `Root.Township`, `Alta.Heat`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FireExtinguisher()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FireExtinguisher()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-heatpointlayer" /><code>{"private int heatPointLayer"}</code> |  |
-| <Link id="m-sourcesmap" /><code>{"private Dictionary<Collider, "}<Link to="/game-api/types/alta-stats-effects/heatsourcebase">{"HeatSourceBase"}</Link>{"> sourcesMap"}</code> |  |
-| <Link id="m-validationroutine" /><code>{"private Coroutine validationRoutine"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-heatpointlayer" /><code>{"private int heatPointLayer"}</code> |
+| <Link id="m-sourcesmap" /><code>{"private Dictionary<Collider, "}<Link to="/game-api/types/alta-stats-effects/heatsourcebase">{"HeatSourceBase"}</Link>{"> sourcesMap"}</code> |
+| <Link id="m-validationroutine" /><code>{"private Coroutine validationRoutine"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ensureheatsourcesarevalid" /><code>{"private IEnumerator EnsureHeatSourcesAreValid() (iterator)"}</code> |  |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
-| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |  |
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ensureheatsourcesarevalid" /><code>{"private IEnumerator EnsureHeatSourcesAreValid() (iterator)"}</code> |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
+| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |
+
+</details>

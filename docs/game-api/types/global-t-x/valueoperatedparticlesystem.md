@@ -18,23 +18,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ValueOperatedParticleSystem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ValueOperatedParticleSystem()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-operators" /><code>{"private "}<Link to="/game-api/types/global-t-x/valueoperatedparticlesystem-particlesystemvalueoperatordefinition">{"ValueOperatedParticleSystem.ParticleSystemValueOperatorDefinition"}</Link>{"[] operators"}</code> |  |
-| <Link id="m-targetsystem" /><code>{"private ParticleSystem targetSystem"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-operators" /><code>{"private "}<Link to="/game-api/types/global-t-x/valueoperatedparticlesystem-particlesystemvalueoperatordefinition">{"ValueOperatedParticleSystem.ParticleSystemValueOperatorDefinition"}</Link>{"[] operators"}</code> |
+| <Link id="m-targetsystem" /><code>{"private ParticleSystem targetSystem"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setvalue" /><code>{"void SetValue(float value)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setvalue" /><code>{"void SetValue(float value)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>
 
 ## Used in
 

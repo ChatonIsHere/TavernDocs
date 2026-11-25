@@ -17,30 +17,45 @@ A **class** in `Root.Township`, `ATT.Respawn`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RespawnShrineFuelDockController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RespawnShrineFuelDockController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pickupdock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" pickupDock"}</code> |  |
-| <Link id="m-poweredrespawnshrine" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/poweredrespawnshrine">{"PoweredRespawnShrine"}</Link>{" poweredRespawnShrine"}</code> |  |
-| <Link id="m-refundlocation" /><code>{"private Transform refundLocation"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-pickupdock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" pickupDock"}</code> |
+| <Link id="m-poweredrespawnshrine" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/poweredrespawnshrine">{"PoweredRespawnShrine"}</Link>{" poweredRespawnShrine"}</code> |
+| <Link id="m-refundlocation" /><code>{"private Transform refundLocation"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-systemsettings" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/irespawnsystemsettings">{"IRespawnSystemSettings"}</Link>{" SystemSettings { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-systemsettings" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/irespawnsystemsettings">{"IRespawnSystemSettings"}</Link>{" SystemSettings { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addfueltopickupdock" /><code>{"private void AddFuelToPickupDock(int fuelQuantityToAdd, Guid shrineId)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-onquantitychanged" /><code>{"private void OnQuantityChanged()"}</code> |  |
-| <Link id="m-refundextraitems" /><code>{"private bool RefundExtraItems("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, int quantityToRefund)"}</code> |  |
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-addfueltopickupdock" /><code>{"private void AddFuelToPickupDock(int fuelQuantityToAdd, Guid shrineId)"}</code> |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-onquantitychanged" /><code>{"private void OnQuantityChanged()"}</code> |
+| <Link id="m-refundextraitems" /><code>{"private bool RefundExtraItems("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, int quantityToRefund)"}</code> |
+
+</details>

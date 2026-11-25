@@ -18,21 +18,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TrailRendererLerpFollow()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TrailRendererLerpFollow()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-basewidth" /><code>{"private float baseWidth"}</code> |  |
-| <Link id="m-minimumdistance" /><code>{"private float minimumDistance"}</code> |  |
-| <Link id="m-trail" /><code>{"private TrailRenderer trail"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-basewidth" /><code>{"private float baseWidth"}</code> |
+| <Link id="m-minimumdistance" /><code>{"private float minimumDistance"}</code> |
+| <Link id="m-trail" /><code>{"private TrailRenderer trail"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-start" /><code>{"override void Start()"}</code> |  |
-| <Link id="m-moving" /><code>{"protected override void Moving(Vector3 from, Vector3 to)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-start" /><code>{"override void Start()"}</code> |
+| <Link id="m-moving" /><code>{"protected override void Moving(Vector3 from, Vector3 to)"}</code> |

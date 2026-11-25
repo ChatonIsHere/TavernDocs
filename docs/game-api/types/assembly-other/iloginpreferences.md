@@ -18,18 +18,18 @@ An **interface** in `Alta.Authentication`, `Alta.Authentication`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-refreshtoken" /><code>{"string RefreshToken { get; }"}</code> |  |
-| <Link id="m-rememberdetails" /><code>{"bool RememberDetails { get; set; }"}</code> |  |
-| <Link id="m-savedusername" /><code>{"string SavedUsername { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-refreshtoken" /><code>{"string RefreshToken { get; }"}</code> |
+| <Link id="m-rememberdetails" /><code>{"bool RememberDetails { get; set; }"}</code> |
+| <Link id="m-savedusername" /><code>{"string SavedUsername { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clearcredentials" /><code>{"void ClearCredentials()"}</code> |  |
-| <Link id="m-savecredentials" /><code>{"void SaveCredentials("}<Link to="/game-api/types/assembly-api-client/logincredentials">{"LoginCredentials"}</Link>{" credentials)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clearcredentials" /><code>{"void ClearCredentials()"}</code> |
+| <Link id="m-savecredentials" /><code>{"void SaveCredentials("}<Link to="/game-api/types/assembly-api-client/logincredentials">{"LoginCredentials"}</Link>{" credentials)"}</code> |
 
 ## Used in
 

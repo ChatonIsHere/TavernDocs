@@ -18,37 +18,58 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ControllerActionsManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ControllerActionsManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-controllersettings" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllermodesettings">{"ControllerModeSettings"}</Link>{" controllerSettings"}</code> |  |
-| <Link id="m-defaultmodes" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"[] defaultModes"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-playerinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-controllersettings" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllermodesettings">{"ControllerModeSettings"}</Link>{" controllerSettings"}</code> |
+| <Link id="m-defaultmodes" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"[] defaultModes"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-playerinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-controlleractions" /><code><Link to="/game-api/types/global-c-d/controlleractions">{"ControllerActions"}</Link>{" "}<Link to="/game-api/types/global-c-d/controlleractions">{"ControllerActions"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-item" /><code><Link to="/game-api/types/global-c-d/controlleraction">{"ControllerAction"}</Link>{" this["}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{" type] { get; }"}</code> |  |
-| <Link id="m-otheractionsmanager" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleractionsmanager">{"ControllerActionsManager"}</Link>{" OtherActionsManager { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-controlleractions" /><code><Link to="/game-api/types/global-c-d/controlleractions">{"ControllerActions"}</Link>{" "}<Link to="/game-api/types/global-c-d/controlleractions">{"ControllerActions"}</Link>{" { get; private set; }"}</code> |
+| <Link id="m-item" /><code><Link to="/game-api/types/global-c-d/controlleraction">{"ControllerAction"}</Link>{" this["}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{" type] { get; }"}</code> |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-otheractionsmanager" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleractionsmanager">{"ControllerActionsManager"}</Link>{" OtherActionsManager { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addcontrollermode" /><code>{"void AddControllerMode("}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" modeType, bool isForBothHands)"}</code> |  |
-| <Link id="m-adddefaultmodes" /><code>{"void AddDefaultModes()"}</code> |  |
-| <Link id="m-clearallcontrollermappings" /><code>{"void ClearAllControllerMappings(bool isForBothHands)"}</code> |  |
-| <Link id="m-removecontrollermode" /><code>{"void RemoveControllerMode("}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" modeType, bool isForBothHands)"}</code> |  |
-| <Link id="m-setcontrollermode" /><code>{"void SetControllerMode("}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" modeType, bool isForBothHands)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addcontrollermode" /><code>{"void AddControllerMode("}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" modeType, bool isForBothHands)"}</code> |
+| <Link id="m-adddefaultmodes" /><code>{"void AddDefaultModes()"}</code> |
+| <Link id="m-clearallcontrollermappings" /><code>{"void ClearAllControllerMappings(bool isForBothHands)"}</code> |
+| <Link id="m-removecontrollermode" /><code>{"void RemoveControllerMode("}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" modeType, bool isForBothHands)"}</code> |
+| <Link id="m-setcontrollermode" /><code>{"void SetControllerMode("}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" modeType, bool isForBothHands)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>
 
 ## Used in
 

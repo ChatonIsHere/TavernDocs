@@ -20,12 +20,12 @@ Which `Resources` folders hold a type's assets.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HashedPathAttribute(params string[] paths)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HashedPathAttribute(params string[] paths)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-paths" /><code>{"string[] Paths { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-paths" /><code>{"string[] Paths { get; private set; }"}</code> |

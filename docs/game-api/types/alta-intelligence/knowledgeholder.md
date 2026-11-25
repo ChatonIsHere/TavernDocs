@@ -18,16 +18,21 @@ A store of known events and rule definitions for the creature knowledge system. 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code><Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{"("}<Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{" parent = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code><Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{"("}<Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{" parent = null)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-definitions" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/baseatom">{"BaseAtom"}</Link>{", List<"}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{">> definitions"}</code> |  |
-| <Link id="m-knownevents" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{", List<"}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{">> knownEvents"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-definitions" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/baseatom">{"BaseAtom"}</Link>{", List<"}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{">> definitions"}</code> |
+| <Link id="m-knownevents" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{", List<"}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{">> knownEvents"}</code> |
+
+</details>
 
 ## Properties
 

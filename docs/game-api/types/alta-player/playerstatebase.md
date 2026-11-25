@@ -21,9 +21,9 @@ Base for a player state (alive, downed, dead, customising and so on). The player
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerStateBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerStateBase()"}</code> |
 
 ## Fields
 
@@ -31,13 +31,21 @@ Base for a player state (alive, downed, dead, customising and so on). The player
 | --- | --- |
 | <Link id="m-maxplayerstatedepth" /><code>{"const int MaxPlayerStateDepth"}</code> | Most states that can be stacked: 9. |
 | <Link id="m-maxplayerstatetypes" /><code>{"const int MaxPlayerStateTypes"}</code> | Most state types: 32. |
-| <Link id="m-basesynchandler" /><code>{"private "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" baseSyncHandler"}</code> |  |
-| <Link id="m-basetransitionrequesthandler" /><code>{"private "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" baseTransitionRequestHandler"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-player" /><code>{"private "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> |  |
-| <Link id="m-requeststatechange" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{"> requestStateChange"}</code> |  |
-| <Link id="m-statemanager" /><code>{"private "}<Link to="/game-api/types/alta-player/playerstatemanager">{"PlayerStateManager"}</Link>{" stateManager"}</code> |  |
 | <Link id="m-sync" /><code>{"protected "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> | Network message for the state's own sync, set up when it activates. |
+
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-basesynchandler" /><code>{"private "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" baseSyncHandler"}</code> |
+| <Link id="m-basetransitionrequesthandler" /><code>{"private "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" baseTransitionRequestHandler"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-player" /><code>{"private "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> |
+| <Link id="m-requeststatechange" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{"> requestStateChange"}</code> |
+| <Link id="m-statemanager" /><code>{"private "}<Link to="/game-api/types/alta-player/playerstatemanager">{"PlayerStateManager"}</Link>{" stateManager"}</code> |
+
+</details>
 
 ## Properties
 
@@ -55,11 +63,19 @@ Base for a player state (alive, downed, dead, customising and so on). The player
 | <Link id="m-statetype" /><code>{"abstract "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> | Which `PlayerStateType` this is. |
 | <Link id="m-isclearingalltransitionsondeactivation" /><code>{"protected virtual bool IsClearingAllTransitionsOnDeactivation { get; }"}</code> | If true (default), the transitions manager clears this state's transitions when it deactivates. |
 | <Link id="m-islocalplayer" /><code>{"protected bool IsLocalPlayer { get; }"}</code> | True if the state belongs to the local player. |
-| <Link id="m-isplayercharacterspawned" /><code>{"private bool IsPlayerCharacterSpawned { get; }"}</code> |  |
 | <Link id="m-isremote" /><code>{"protected bool IsRemote { get; }"}</code> | True on a client (anything that is not the server). |
 | <Link id="m-isserver" /><code>{"protected bool IsServer { get; }"}</code> | True on the server. |
 | <Link id="m-playercharacter" /><code>{"protected "}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" "}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" { get; }"}</code> | The player's controller as a `PlayerCharacter`, or null. |
 | <Link id="m-transitionsmanager" /><code>{"protected "}<Link to="/game-api/types/alta-player/istatetransitionsmanager">{"IStateTransitionsManager"}</Link>{" TransitionsManager { get; private set; }"}</code> | Manages this state's transitions: a local one on the server, a remote one on clients. |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-isplayercharacterspawned" /><code>{"private bool IsPlayerCharacterSpawned { get; }"}</code> |
+
+</details>
 
 ## Methods
 
@@ -71,12 +87,7 @@ Base for a player state (alive, downed, dead, customising and so on). The player
 | <Link id="m-syncstateenter" /><code>{"virtual void SyncStateEnter("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Hook to read or write extra data when the state is entered over the network. |
 | <Link id="m-syncstateleave" /><code>{"virtual void SyncStateLeave("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Hook to read or write extra data when the state is left over the network. |
 | <Link id="m-validatestateactivation" /><code>{"virtual bool ValidateStateActivation(bool isDuringLoading)"}</code> | Whether the state may activate now. True by default. |
-| <Link id="m-activate" /><code>{"private void Alta.PlayerStates.IPlayerState.Activate()"}</code> |  |
-| <Link id="m-clearnetworking" /><code>{"private void ClearNetworking()"}</code> |  |
-| <Link id="m-deactivate" /><code>{"private void Alta.PlayerStates.IPlayerState.Deactivate()"}</code> |  |
-| <Link id="m-decorate" /><code>{"private void Alta.PlayerStates.IPlayerState.Decorate("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> |  |
 | <Link id="m-endstate" /><code>{"protected void EndState()"}</code> | Returns the player to the base state. Logs an error if there is none. |
-| <Link id="m-initializenetworking" /><code>{"private void InitializeNetworking()"}</code> |  |
 | <Link id="m-onactivate" /><code>{"protected virtual void OnActivate()"}</code> | Server: called when the state becomes active. |
 | <Link id="m-onactivateremote" /><code>{"protected virtual void OnActivateRemote(bool isPlayerCharacterSpawned)"}</code> | Client: called when the state becomes active, with whether the player's character is spawned. |
 | <Link id="m-ondeactivate" /><code>{"protected virtual void OnDeactivate()"}</code> | Server: called when the state ends. |
@@ -87,10 +98,23 @@ Base for a player state (alive, downed, dead, customising and so on). The player
 | <Link id="m-onplayercontrollerlost" /><code>{"protected virtual void OnPlayerControllerLost(bool isFromOnDeactivate)"}</code> | Called when the controller is destroyed or the state deactivates. |
 | <Link id="m-onundecorated" /><code>{"protected virtual void OnUndecorated("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | Server: called when a decorating state comes off. |
 | <Link id="m-onundecoratedremote" /><code>{"protected virtual void OnUndecoratedRemote("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | Client (and the local player): called when a decorating state comes off. |
-| <Link id="m-playercontrolleralreadyexists" /><code>{"private void PlayerControllerAlreadyExists()"}</code> |  |
-| <Link id="m-playercontrollerdestroyed" /><code>{"private void PlayerControllerDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-playercontrolleronplayerset" /><code>{"private void PlayerControllerOnPlayerSet("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |
-| <Link id="m-requeststatechange-2" /><code>{"private void Alta.PlayerStates.IPlayerState.RequestStateChange("}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" destinationStateType)"}</code> |  |
-| <Link id="m-requeststatechange-3" /><code>{"private void RequestStateChange("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" stateType)"}</code> |  |
 | <Link id="m-sync-2" /><code>{"protected virtual void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Handler for this state's sync message while it is active. Empty by default. |
-| <Link id="m-undecorate" /><code>{"private void Alta.PlayerStates.IPlayerState.Undecorate("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> |  |
+
+<details>
+<summary>11 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-activate" /><code>{"private void Alta.PlayerStates.IPlayerState.Activate()"}</code> |
+| <Link id="m-clearnetworking" /><code>{"private void ClearNetworking()"}</code> |
+| <Link id="m-deactivate" /><code>{"private void Alta.PlayerStates.IPlayerState.Deactivate()"}</code> |
+| <Link id="m-decorate" /><code>{"private void Alta.PlayerStates.IPlayerState.Decorate("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> |
+| <Link id="m-initializenetworking" /><code>{"private void InitializeNetworking()"}</code> |
+| <Link id="m-playercontrolleralreadyexists" /><code>{"private void PlayerControllerAlreadyExists()"}</code> |
+| <Link id="m-playercontrollerdestroyed" /><code>{"private void PlayerControllerDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| <Link id="m-playercontrolleronplayerset" /><code>{"private void PlayerControllerOnPlayerSet("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |
+| <Link id="m-requeststatechange-2" /><code>{"private void Alta.PlayerStates.IPlayerState.RequestStateChange("}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" destinationStateType)"}</code> |
+| <Link id="m-requeststatechange-3" /><code>{"private void RequestStateChange("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" stateType)"}</code> |
+| <Link id="m-undecorate" /><code>{"private void Alta.PlayerStates.IPlayerState.Undecorate("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> |
+
+</details>

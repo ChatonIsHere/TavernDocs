@@ -19,20 +19,25 @@ A stat definition paired with its default value and range, as set up on a `StatM
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatDefinitionApplication("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition, float baseValue)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"StatDefinitionApplication("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatDefinitionApplication("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition, float baseValue)"}</code> |
+| <Link id="m-ctor-2" /><code>{"StatDefinitionApplication("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-defaultmaximumvalue" /><code>{"private float defaultMaximumValue"}</code> |  |
-| <Link id="m-defaultminimumvalue" /><code>{"private float defaultMinimumValue"}</code> |  |
-| <Link id="m-defaultvalue" /><code>{"private float defaultValue"}</code> |  |
-| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> |  |
-| <Link id="m-name" /><code>{"private string name"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-defaultmaximumvalue" /><code>{"private float defaultMaximumValue"}</code> |
+| <Link id="m-defaultminimumvalue" /><code>{"private float defaultMinimumValue"}</code> |
+| <Link id="m-defaultvalue" /><code>{"private float defaultValue"}</code> |
+| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> |
+| <Link id="m-name" /><code>{"private string name"}</code> |
+
+</details>
 
 ## Properties
 

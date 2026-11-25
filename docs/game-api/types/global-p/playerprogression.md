@@ -17,16 +17,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerProgression("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/global-p/playerprogression-eventtypeenum">{"PlayerProgression.EventTypeEnum"}</Link>{" eventType, uint currentLevel, uint hash = 0)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerProgression("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/global-p/playerprogression-eventtypeenum">{"PlayerProgression.EventTypeEnum"}</Link>{" eventType, uint currentLevel, uint hash = 0)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentlevel" /><code>{"uint CurrentLevel { get; }"}</code> |  |
-| <Link id="m-eventtype" /><code>{"string EventType { get; }"}</code> |  |
-| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> |  |
-| <Link id="m-path" /><code>{"string Path { get; }"}</code> |  |
-| <Link id="m-playerid" /><code>{"int PlayerID { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentlevel" /><code>{"uint CurrentLevel { get; }"}</code> |
+| <Link id="m-eventtype" /><code>{"string EventType { get; }"}</code> |
+| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> |
+| <Link id="m-path" /><code>{"string Path { get; }"}</code> |
+| <Link id="m-playerid" /><code>{"int PlayerID { get; }"}</code> |

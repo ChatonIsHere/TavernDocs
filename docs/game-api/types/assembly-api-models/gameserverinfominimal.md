@@ -18,16 +18,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameServerInfoMinimal()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameServerInfoMinimal()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
 
 ## Used in
 

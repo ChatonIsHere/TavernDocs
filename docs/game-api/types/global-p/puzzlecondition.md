@@ -20,15 +20,20 @@ Base for one condition of an in-world puzzle. Subclasses set the completion stat
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PuzzleCondition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PuzzleCondition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-state" /><code>{"private bool state"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-state" /><code>{"private bool state"}</code> |
+
+</details>
 
 ## Properties
 

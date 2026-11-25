@@ -18,18 +18,23 @@ A **private class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`. Reach i
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InstanceProvider(object instance)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InstanceProvider(object instance)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"private readonly object instance"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"private readonly object instance"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spawninstance" /><code>{"object SpawnInstance(IObjectResolver resolver)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-spawninstance" /><code>{"object SpawnInstance(IObjectResolver resolver)"}</code> |

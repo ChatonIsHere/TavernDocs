@@ -18,25 +18,38 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ControllerOffsetSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ControllerOffsetSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lefthandalignment" /><code>{"private "}<Link to="/game-api/types/alta-player/platformhandalignment">{"PlatformHandAlignment"}</Link>{"[] leftHandAlignment"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-righthandalignment" /><code>{"private "}<Link to="/game-api/types/alta-player/platformhandalignment">{"PlatformHandAlignment"}</Link>{"[] rightHandAlignment"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-lefthandalignment" /><code>{"private "}<Link to="/game-api/types/alta-player/platformhandalignment">{"PlatformHandAlignment"}</Link>{"[] leftHandAlignment"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-righthandalignment" /><code>{"private "}<Link to="/game-api/types/alta-player/platformhandalignment">{"PlatformHandAlignment"}</Link>{"[] rightHandAlignment"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getcontrolleroffsetforhand" /><code>{"SerializableTransform GetControllerOffsetForHand("}<Link to="/game-api/types/alta-player/hand">{"Hand"}</Link>{" hand, "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerMode)"}</code> |  |
-| <Link id="m-gethandalignmentsforhandindex" /><code>{"private "}<Link to="/game-api/types/alta-player/platformhandalignment">{"PlatformHandAlignment"}</Link>{"[] GetHandAlignmentsForHandIndex("}<Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" handIndex)"}</code> |  |
-| <Link id="m-offsetisopenxr" /><code>{"private static bool OffsetIsOpenXr("}<Link to="/game-api/types/alta-player/platformhandalignment">{"PlatformHandAlignment"}</Link>{" handRotation)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getcontrolleroffsetforhand" /><code>{"SerializableTransform GetControllerOffsetForHand("}<Link to="/game-api/types/alta-player/hand">{"Hand"}</Link>{" hand, "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerMode)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-gethandalignmentsforhandindex" /><code>{"private "}<Link to="/game-api/types/alta-player/platformhandalignment">{"PlatformHandAlignment"}</Link>{"[] GetHandAlignmentsForHandIndex("}<Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" handIndex)"}</code> |
+| <Link id="m-offsetisopenxr" /><code>{"private static bool OffsetIsOpenXr("}<Link to="/game-api/types/alta-player/platformhandalignment">{"PlatformHandAlignment"}</Link>{" handRotation)"}</code> |
+
+</details>
 
 ## Used in
 

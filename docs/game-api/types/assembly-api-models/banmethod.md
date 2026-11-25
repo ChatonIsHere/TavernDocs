@@ -17,11 +17,11 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deviceid" /><code>{"DeviceId = 4"}</code> |  |
-| <Link id="m-ipaddress" /><code>{"IpAddress = 2"}</code> |  |
-| <Link id="m-userid" /><code>{"UserId = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deviceid" /><code>{"DeviceId = 4"}</code> |
+| <Link id="m-ipaddress" /><code>{"IpAddress = 2"}</code> |
+| <Link id="m-userid" /><code>{"UserId = 1"}</code> |
 
 ## Used in
 

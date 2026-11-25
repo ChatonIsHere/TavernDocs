@@ -16,31 +16,31 @@ An **enum** in `Root.Township`, `Alta.FriendLocation`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-archersrefuge" /><code>{"archersRefuge = 211"}</code> |  |
-| <Link id="m-blacksmithbuilding" /><code>{"blacksmithBuilding = 105"}</code> |  |
-| <Link id="m-carpentryhouse" /><code>{"carpentryHouse = 104"}</code> |  |
-| <Link id="m-caves" /><code>{"caves = 300"}</code> |  |
-| <Link id="m-cliffs" /><code>{"cliffs = 203"}</code> |  |
-| <Link id="m-combattrials" /><code>{"combatTrials = 400"}</code> |  |
-| <Link id="m-craftinghouse" /><code>{"craftingHouse = 103"}</code> |  |
-| <Link id="m-festivearea" /><code>{"festiveArea = 210"}</code> |  |
-| <Link id="m-fields" /><code>{"fields = 205"}</code> |  |
-| <Link id="m-glades" /><code>{"glades = 204"}</code> |  |
-| <Link id="m-mainmenu" /><code>{"mainMenu = 1"}</code> |  |
-| <Link id="m-mountainpass" /><code>{"mountainPass = 202"}</code> |  |
-| <Link id="m-none" /><code>{"none = 0"}</code> |  |
-| <Link id="m-overworld" /><code>{"overworld = 200"}</code> |  |
-| <Link id="m-pond" /><code>{"pond = 208"}</code> |  |
-| <Link id="m-rockarena" /><code>{"rockArena = 207"}</code> |  |
-| <Link id="m-rocklands" /><code>{"rocklands = 201"}</code> |  |
-| <Link id="m-tarn" /><code>{"tarn = 206"}</code> |  |
-| <Link id="m-tavern" /><code>{"tavern = 102"}</code> |  |
-| <Link id="m-tower" /><code>{"tower = 209"}</code> |  |
-| <Link id="m-town" /><code>{"town = 100"}</code> |  |
-| <Link id="m-townhall" /><code>{"townHall = 101"}</code> |  |
-| <Link id="m-tutorial" /><code>{"tutorial = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-archersrefuge" /><code>{"archersRefuge = 211"}</code> |
+| <Link id="m-blacksmithbuilding" /><code>{"blacksmithBuilding = 105"}</code> |
+| <Link id="m-carpentryhouse" /><code>{"carpentryHouse = 104"}</code> |
+| <Link id="m-caves" /><code>{"caves = 300"}</code> |
+| <Link id="m-cliffs" /><code>{"cliffs = 203"}</code> |
+| <Link id="m-combattrials" /><code>{"combatTrials = 400"}</code> |
+| <Link id="m-craftinghouse" /><code>{"craftingHouse = 103"}</code> |
+| <Link id="m-festivearea" /><code>{"festiveArea = 210"}</code> |
+| <Link id="m-fields" /><code>{"fields = 205"}</code> |
+| <Link id="m-glades" /><code>{"glades = 204"}</code> |
+| <Link id="m-mainmenu" /><code>{"mainMenu = 1"}</code> |
+| <Link id="m-mountainpass" /><code>{"mountainPass = 202"}</code> |
+| <Link id="m-none" /><code>{"none = 0"}</code> |
+| <Link id="m-overworld" /><code>{"overworld = 200"}</code> |
+| <Link id="m-pond" /><code>{"pond = 208"}</code> |
+| <Link id="m-rockarena" /><code>{"rockArena = 207"}</code> |
+| <Link id="m-rocklands" /><code>{"rocklands = 201"}</code> |
+| <Link id="m-tarn" /><code>{"tarn = 206"}</code> |
+| <Link id="m-tavern" /><code>{"tavern = 102"}</code> |
+| <Link id="m-tower" /><code>{"tower = 209"}</code> |
+| <Link id="m-town" /><code>{"town = 100"}</code> |
+| <Link id="m-townhall" /><code>{"townHall = 101"}</code> |
+| <Link id="m-tutorial" /><code>{"tutorial = 2"}</code> |
 
 ## Used in
 

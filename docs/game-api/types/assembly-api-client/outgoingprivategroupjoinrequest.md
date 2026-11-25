@@ -17,21 +17,26 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"internal OutgoingPrivateGroupJoinRequest("}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api, int groupId)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"internal OutgoingPrivateGroupJoinRequest("}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api, int groupId)"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-groupidentifier" /><code>{"int GroupIdentifier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-groupidentifier" /><code>{"int GroupIdentifier { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-revoke" /><code>{"override Task Revoke()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-revoke" /><code>{"override Task Revoke()"}</code> |
 
 ## Used in
 

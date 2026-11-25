@@ -16,11 +16,11 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-active" /><code>{"Active = 0"}</code> |  |
-| <Link id="m-cancelled" /><code>{"Cancelled = 1"}</code> |  |
-| <Link id="m-nonrenewing" /><code>{"NonRenewing = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-active" /><code>{"Active = 0"}</code> |
+| <Link id="m-cancelled" /><code>{"Cancelled = 1"}</code> |
+| <Link id="m-nonrenewing" /><code>{"NonRenewing = 2"}</code> |
 
 ## Used in
 

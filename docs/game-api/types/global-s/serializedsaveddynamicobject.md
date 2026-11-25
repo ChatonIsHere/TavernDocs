@@ -19,18 +19,23 @@ A saved object (prefab hash plus its serialized state) in a form Unity can seria
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedSavedDynamicObject(List<uint[]> savingData, uint sizeBytes, uint prefabHash, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SerializedSavedDynamicObject(List<uint[]> savingData, uint sizeBytes, uint prefabHash, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning = null)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-serializeddata" /><code>{"private uint[] serializedData"}</code> |  |
-| <Link id="m-versioning" /><code>{"private uint[] versioning"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-serializeddata" /><code>{"private uint[] serializedData"}</code> |
+| <Link id="m-versioning" /><code>{"private uint[] versioning"}</code> |
+
+</details>
 
 ## Properties
 
@@ -51,8 +56,16 @@ A saved object (prefab hash plus its serialized state) in a form Unity can seria
 | <Link id="m-loadintoprefablessentity" /><code>{"void LoadIntoPrefablessEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Loads saved state into an entity that has no prefab, such as a scene object. |
 | <Link id="m-savefromprefablessentity" /><code>{"static "}<Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" SaveFromPrefablessEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Saves an entity that has no prefab, with a prefab hash of 0. |
 | <Link id="m-spawnfromstring" /><code>{"static "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnFromString(string value, "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode)"}</code> | Spawns an object from a spawn string. Returns null and logs on failure. Used by `spawn string` and trade commands. |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-load-2" /><code>{"private void Load("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" existing, Transform parent, Vector3 localPosition, Quaternion localRotation, "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode)"}</code> | Obsolete: spawns the object and loads into it, but spawns network entities twice. Use `LoadInto`. |
 | <Link id="m-spawn" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Spawn()"}</code> |  |
+
+</details>
 
 ## Used in
 

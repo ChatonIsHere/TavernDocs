@@ -17,21 +17,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SceneViewVisualizer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SceneViewVisualizer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gizmoscolor" /><code>{"private Color gizmosColor"}</code> |  |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |  |
-| <Link id="m-isdrawingasaxis" /><code>{"private bool isDrawingAsAxis"}</code> |  |
-| <Link id="m-size" /><code>{"private float size"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-gizmoscolor" /><code>{"private Color gizmosColor"}</code> |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |
+| <Link id="m-isdrawingasaxis" /><code>{"private bool isDrawingAsAxis"}</code> |
+| <Link id="m-size" /><code>{"private float size"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+
+</details>

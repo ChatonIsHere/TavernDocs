@@ -17,9 +17,9 @@ A **class** in `Root.Township`, `Alta.PlayerStates.Transitions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingToCombatTransition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayingToCombatTransition()"}</code> |
 
 ## Used in
 

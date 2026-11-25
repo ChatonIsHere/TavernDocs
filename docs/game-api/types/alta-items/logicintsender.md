@@ -21,9 +21,9 @@ Logic sender that holds an int and passes changes to linked receivers.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntSender()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicIntSender()"}</code> |
 
 ## Fields
 

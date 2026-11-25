@@ -18,12 +18,12 @@ An **internal interface** in `Alta.Timing.Runtime`, `Alta.Timing.PriorityQueue`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxsize" /><code>{"int MaxSize { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maxsize" /><code>{"int MaxSize { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-resize" /><code>{"void Resize(int maxNodes)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-resize" /><code>{"void Resize(int maxNodes)"}</code> |

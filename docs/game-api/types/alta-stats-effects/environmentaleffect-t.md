@@ -17,22 +17,35 @@ An **abstract class** in `Root.Township`, `Alta.Alchemy`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EnvironmentalEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EnvironmentalEffect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-applying" /><code>{"private List<T> applying"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-applying" /><code>{"private List<T> applying"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"override void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> |  |
-| <Link id="m-checkstackallowed" /><code>{"override bool CheckStackAllowed(T newEffect)"}</code> |  |
-| <Link id="m-stop" /><code>{"override void Stop()"}</code> |  |
-| <Link id="m-applyingstopped" /><code>{"private void ApplyingStopped(T effect)"}</code> |  |
-| <Link id="m-finished" /><code>{"protected virtual void Finished()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"override void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> |
+| <Link id="m-checkstackallowed" /><code>{"override bool CheckStackAllowed(T newEffect)"}</code> |
+| <Link id="m-stop" /><code>{"override void Stop()"}</code> |
+| <Link id="m-finished" /><code>{"protected virtual void Finished()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-applyingstopped" /><code>{"private void ApplyingStopped(T effect)"}</code> |
+
+</details>

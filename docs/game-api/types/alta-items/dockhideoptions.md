@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, `Alta.Inventory`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-always" /><code>{"Always = 2"}</code> |  |
-| <Link id="m-never" /><code>{"Never = 0"}</code> |  |
-| <Link id="m-whenempty" /><code>{"WhenEmpty = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-always" /><code>{"Always = 2"}</code> |
+| <Link id="m-never" /><code>{"Never = 0"}</code> |
+| <Link id="m-whenempty" /><code>{"WhenEmpty = 1"}</code> |
 
 ## Used in
 

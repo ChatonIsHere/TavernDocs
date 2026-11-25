@@ -18,26 +18,44 @@ A **class** in `Root.Township`, `Alta.XR`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"private VRTrackedDevice(Transform transform, TrackedPoseDriver.TrackedPose pose, "}<Link to="/game-api/types/alta-menus/vrtrackeddevice-positionpostprocessor">{"VRTrackedDevice.PositionPostProcessor"}</Link>{" positionPostProcessor)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"private VRTrackedDevice(Transform transform, TrackedPoseDriver.TrackedPose pose, "}<Link to="/game-api/types/alta-menus/vrtrackeddevice-positionpostprocessor">{"VRTrackedDevice.PositionPostProcessor"}</Link>{" positionPostProcessor)"}</code> |
+
+</details>
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pose" /><code>{"private TrackedPoseDriver.TrackedPose pose"}</code> |  |
-| <Link id="m-positionpostprocessor" /><code>{"private "}<Link to="/game-api/types/alta-menus/vrtrackeddevice-positionpostprocessor">{"VRTrackedDevice.PositionPostProcessor"}</Link>{" positionPostProcessor"}</code> |  |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-pose" /><code>{"private TrackedPoseDriver.TrackedPose pose"}</code> |
+| <Link id="m-positionpostprocessor" /><code>{"private "}<Link to="/game-api/types/alta-menus/vrtrackeddevice-positionpostprocessor">{"VRTrackedDevice.PositionPostProcessor"}</Link>{" positionPostProcessor"}</code> |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addtracking" /><code>{"static "}<Link to="/game-api/types/alta-menus/vrtrackeddevice">{"VRTrackedDevice"}</Link>{" AddTracking(Transform transform, "}<Link to="/game-api/types/alta-menus/trackeddevice">{"TrackedDevice"}</Link>{" device, "}<Link to="/game-api/types/alta-menus/vrtrackeddevice-positionpostprocessor">{"VRTrackedDevice.PositionPostProcessor"}</Link>{" positionPostProcessor = null)"}</code> |  |
-| <Link id="m-addtracking-2" /><code>{"static "}<Link to="/game-api/types/alta-menus/vrtrackeddevice">{"VRTrackedDevice"}</Link>{" AddTracking(Transform transform, TrackedPoseDriver.TrackedPose pose, "}<Link to="/game-api/types/alta-menus/vrtrackeddevice-positionpostprocessor">{"VRTrackedDevice.PositionPostProcessor"}</Link>{" positionPostProcessor = null)"}</code> |  |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-updateposition" /><code>{"private void UpdatePosition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addtracking" /><code>{"static "}<Link to="/game-api/types/alta-menus/vrtrackeddevice">{"VRTrackedDevice"}</Link>{" AddTracking(Transform transform, "}<Link to="/game-api/types/alta-menus/trackeddevice">{"TrackedDevice"}</Link>{" device, "}<Link to="/game-api/types/alta-menus/vrtrackeddevice-positionpostprocessor">{"VRTrackedDevice.PositionPostProcessor"}</Link>{" positionPostProcessor = null)"}</code> |
+| <Link id="m-addtracking-2" /><code>{"static "}<Link to="/game-api/types/alta-menus/vrtrackeddevice">{"VRTrackedDevice"}</Link>{" AddTracking(Transform transform, TrackedPoseDriver.TrackedPose pose, "}<Link to="/game-api/types/alta-menus/vrtrackeddevice-positionpostprocessor">{"VRTrackedDevice.PositionPostProcessor"}</Link>{" positionPostProcessor = null)"}</code> |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-updateposition" /><code>{"private void UpdatePosition()"}</code> |
+
+</details>
 
 ## Used in
 

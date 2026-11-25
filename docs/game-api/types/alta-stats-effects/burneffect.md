@@ -20,20 +20,33 @@ Positive strength starts adding to the `"burn"` stat every tick, negative stops 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BurnEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BurnEffect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-burningmanager" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{"> burningManager"}</code> |  |
-| <Link id="m-firetick" /><code>{"private float fireTick"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-burningmanager" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{"> burningManager"}</code> |
+| <Link id="m-firetick" /><code>{"private float fireTick"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"protected override void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |  |
-| <Link id="m-burn" /><code>{"private void Burn("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"protected override void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-burn" /><code>{"private void Burn("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |
+
+</details>

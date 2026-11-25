@@ -17,14 +17,19 @@ A **static class** in `Alta.Platform`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cosmetics" /><code>{"private const "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Cosmetics"}</code> |  |
-| <Link id="m-vr" /><code>{"private const "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" VR"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cosmetics" /><code>{"private const "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Cosmetics"}</code> |
+| <Link id="m-vr" /><code>{"private const "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" VR"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkcosmetics" /><code>{"static bool CheckCosmetics("}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode)"}</code> |  |
-| <Link id="m-checkvr" /><code>{"static bool CheckVR("}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkcosmetics" /><code>{"static bool CheckCosmetics("}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode)"}</code> |
+| <Link id="m-checkvr" /><code>{"static bool CheckVR("}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode)"}</code> |

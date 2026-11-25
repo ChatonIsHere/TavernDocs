@@ -18,15 +18,15 @@ The kinds of player movement (teleport, smooth, reposition, rotation, anchor dis
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-anchordistance" /><code>{"AnchorDistance = 4"}</code> |  |
-| <Link id="m-forcedlocomotion" /><code>{"ForcedLocomotion = 6"}</code> |  |
-| <Link id="m-recovery" /><code>{"Recovery = 5"}</code> |  |
-| <Link id="m-reposition" /><code>{"Reposition = 2"}</code> |  |
-| <Link id="m-rotation" /><code>{"Rotation = 3"}</code> |  |
-| <Link id="m-smoothlocomotion" /><code>{"SmoothLocomotion = 1"}</code> |  |
-| <Link id="m-teleportlocomotion" /><code>{"TeleportLocomotion = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-anchordistance" /><code>{"AnchorDistance = 4"}</code> |
+| <Link id="m-forcedlocomotion" /><code>{"ForcedLocomotion = 6"}</code> |
+| <Link id="m-recovery" /><code>{"Recovery = 5"}</code> |
+| <Link id="m-reposition" /><code>{"Reposition = 2"}</code> |
+| <Link id="m-rotation" /><code>{"Rotation = 3"}</code> |
+| <Link id="m-smoothlocomotion" /><code>{"SmoothLocomotion = 1"}</code> |
+| <Link id="m-teleportlocomotion" /><code>{"TeleportLocomotion = 0"}</code> |
 
 ## Used in
 

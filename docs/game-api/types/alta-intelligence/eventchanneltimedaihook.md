@@ -21,19 +21,24 @@ Fires channel events at set delays after the action starts.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EventChannelTimedAiHook()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EventChannelTimedAiHook()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-delays" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/eventchanneltimedaihook-delay">{"EventChannelTimedAiHook.Delay"}</Link>{"[] delays"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-delays" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/eventchanneltimedaihook-delay">{"EventChannelTimedAiHook.Delay"}</Link>{"[] delays"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-finishedorcancelled" /><code>{"protected override void FinishedOrCancelled("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |  |
-| <Link id="m-used" /><code>{"protected override void Used("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-finishedorcancelled" /><code>{"protected override void FinishedOrCancelled("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |
+| <Link id="m-used" /><code>{"protected override void Used("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> |

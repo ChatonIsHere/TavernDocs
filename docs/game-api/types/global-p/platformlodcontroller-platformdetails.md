@@ -17,17 +17,17 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformDetails()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformDetails()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxlod" /><code>{"int maxLOD"}</code> |  |
-| <Link id="m-minlod" /><code>{"int minLOD"}</code> |  |
-| <Link id="m-platform" /><code><Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maxlod" /><code>{"int maxLOD"}</code> |
+| <Link id="m-minlod" /><code>{"int minLOD"}</code> |
+| <Link id="m-platform" /><code><Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform"}</code> |
 
 ## Used in
 

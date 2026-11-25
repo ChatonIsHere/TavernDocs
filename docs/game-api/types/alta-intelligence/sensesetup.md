@@ -16,30 +16,35 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SenseSetup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SenseSetup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sense" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{" sense"}</code> |  |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/basicsense">{"BasicSense"}</Link>{" type"}</code> |  |
-| <Link id="m-value" /><code>{"private float value"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-sense" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{" sense"}</code> |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/basicsense">{"BasicSense"}</Link>{" type"}</code> |
+| <Link id="m-value" /><code>{"private float value"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sense-2" /><code><Link to="/game-api/types/alta-intelligence/basicsense">{"BasicSense"}</Link>{" Sense { get; }"}</code> |  |
-| <Link id="m-value-2" /><code>{"float Value { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-sense-2" /><code><Link to="/game-api/types/alta-intelligence/basicsense">{"BasicSense"}</Link>{" Sense { get; }"}</code> |
+| <Link id="m-value-2" /><code>{"float Value { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fix" /><code>{"void Fix()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fix" /><code>{"void Fix()"}</code> |
 
 ## Used in
 

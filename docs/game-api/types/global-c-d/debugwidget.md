@@ -19,28 +19,46 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected DebugWidget()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected DebugWidget()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activationtype" /><code>{"private "}<Link to="/game-api/types/global-c-d/debugwidget-activationtype">{"DebugWidget.ActivationType"}</Link>{" activationType"}</code> |  |
-| <Link id="m-awokenwidgets" /><code>{"private static HashSet<"}<Link to="/game-api/types/global-c-d/debugwidget">{"DebugWidget"}</Link>{"> awokenWidgets"}</code> |  |
-| <Link id="m-haswidgetfile" /><code>{"private static bool? hasWidgetFile"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activationtype" /><code>{"private "}<Link to="/game-api/types/global-c-d/debugwidget-activationtype">{"DebugWidget.ActivationType"}</Link>{" activationType"}</code> |
+| <Link id="m-awokenwidgets" /><code>{"private static HashSet<"}<Link to="/game-api/types/global-c-d/debugwidget">{"DebugWidget"}</Link>{"> awokenWidgets"}</code> |
+| <Link id="m-haswidgetfile" /><code>{"private static bool? hasWidgetFile"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-haswidgetfile-2" /><code>{"private static bool HasWidgetFile { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-haswidgetfile-2" /><code>{"private static bool HasWidgetFile { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setactive" /><code>{"static void SetActive(bool isActive)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setactive" /><code>{"static void SetActive(bool isActive)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>

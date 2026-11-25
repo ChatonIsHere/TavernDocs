@@ -20,17 +20,22 @@ A pooled copy of a static environment piece (rock, plant and so on) placed by wo
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StaticEnvironmentPieceInstance()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StaticEnvironmentPieceInstance()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gameobject" /><code>{"private GameObject gameObject"}</code> |  |
-| <Link id="m-piece" /><code>{"private "}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" piece"}</code> |  |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-gameobject" /><code>{"private GameObject gameObject"}</code> |
+| <Link id="m-piece" /><code>{"private "}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" piece"}</code> |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> |
+
+</details>
 
 ## Properties
 
@@ -54,7 +59,15 @@ A pooled copy of a static environment piece (rock, plant and so on) placed by wo
 | <Link id="m-release" /><code>{"virtual void Release()"}</code> | Turns the instance off and returns it to the piece's pool. |
 | <Link id="m-setscale" /><code>{"void SetScale(Vector3 scale)"}</code> | Sets the instance's scale. |
 | <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Editor hook. Empty here. |
-| <Link id="m-undo" /><code>{"private void Alta.Static.IInstructionResult.Undo()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-undo" /><code>{"private void Alta.Static.IInstructionResult.Undo()"}</code> |
+
+</details>
 
 ## Used in
 

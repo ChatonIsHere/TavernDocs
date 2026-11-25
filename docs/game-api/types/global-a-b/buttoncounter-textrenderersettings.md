@@ -17,22 +17,27 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TextRendererSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TextRendererSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-minimumquantityfortext" /><code>{"private int minimumQuantityForText"}</code> |  |
-| <Link id="m-renderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" renderer"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-minimumquantityfortext" /><code>{"private int minimumQuantityForText"}</code> |
+| <Link id="m-renderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" renderer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updatetext" /><code>{"void UpdateText(int value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updatetext" /><code>{"void UpdateText(int value)"}</code> |
 
 ## Used in
 

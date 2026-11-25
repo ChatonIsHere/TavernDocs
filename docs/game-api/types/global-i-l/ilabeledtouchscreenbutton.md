@@ -18,10 +18,10 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-applytext" /><code>{"void ApplyText(string text)"}</code> |  |
-| <Link id="m-gettext" /><code>{"string GetText()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-applytext" /><code>{"void ApplyText(string text)"}</code> |
+| <Link id="m-gettext" /><code>{"string GetText()"}</code> |
 
 ## Used in
 

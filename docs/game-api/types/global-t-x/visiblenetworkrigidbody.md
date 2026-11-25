@@ -17,27 +17,37 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VisibleNetworkRigidbody()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VisibleNetworkRigidbody()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-culling" /><code>{"private CullingGroup culling"}</code> |  |
-| <Link id="m-spheres" /><code>{"private BoundingSphere[] spheres"}</code> |  |
-| <Link id="m-visibilitycenter" /><code>{"private Vector3 visibilityCenter"}</code> |  |
-| <Link id="m-visibilityradius" /><code>{"private float visibilityRadius"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-culling" /><code>{"private CullingGroup culling"}</code> |
+| <Link id="m-spheres" /><code>{"private BoundingSphere[] spheres"}</code> |
+| <Link id="m-visibilitycenter" /><code>{"private Vector3 visibilityCenter"}</code> |
+| <Link id="m-visibilityradius" /><code>{"private float visibilityRadius"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"private void Initialize("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" current)"}</code> |  |
-| <Link id="m-moved" /><code>{"private void IUpdateOnMove.Moved()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-reset" /><code>{"private void Reset()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-updatevisibility" /><code>{"private void UpdateVisibility(CullingGroupEvent sphere)"}</code> |  |
+<details>
+<summary>7 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"private void Initialize("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" current)"}</code> |
+| <Link id="m-moved" /><code>{"private void IUpdateOnMove.Moved()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-reset" /><code>{"private void Reset()"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-updatevisibility" /><code>{"private void UpdateVisibility(CullingGroupEvent sphere)"}</code> |
+
+</details>

@@ -18,12 +18,12 @@ A **class** in `Alta.Global.Runtime`, `Alta.Global`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalSettingsAttribute(string filePath)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GlobalSettingsAttribute(string filePath)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filepath" /><code>{"string FilePath { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-filepath" /><code>{"string FilePath { get; }"}</code> |

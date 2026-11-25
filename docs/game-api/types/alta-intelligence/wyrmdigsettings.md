@@ -18,34 +18,39 @@ A **class** in `Root.Township`, `Alta.Intelligence.Wyrms`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WyrmDigSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WyrmDigSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-changesensedelay" /><code>{"private float changeSenseDelay"}</code> |  |
-| <Link id="m-dugsenses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] dugSenses"}</code> |  |
-| <Link id="m-failchance" /><code>{"private float failChance"}</code> |  |
-| <Link id="m-maxstrengthduration" /><code>{"private float maxStrengthDuration"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-changesensedelay" /><code>{"private float changeSenseDelay"}</code> |
+| <Link id="m-dugsenses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] dugSenses"}</code> |
+| <Link id="m-failchance" /><code>{"private float failChance"}</code> |
+| <Link id="m-maxstrengthduration" /><code>{"private float maxStrengthDuration"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-changesensedelay-2" /><code>{"float ChangeSenseDelay { get; }"}</code> |  |
-| <Link id="m-dugsenses-2" /><code><Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] DugSenses { get; }"}</code> |  |
-| <Link id="m-failchance-2" /><code>{"float FailChance { get; }"}</code> |  |
-| <Link id="m-maxstrengthduration-2" /><code>{"float MaxStrengthDuration { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-changesensedelay-2" /><code>{"float ChangeSenseDelay { get; }"}</code> |
+| <Link id="m-dugsenses-2" /><code><Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] DugSenses { get; }"}</code> |
+| <Link id="m-failchance-2" /><code>{"float FailChance { get; }"}</code> |
+| <Link id="m-maxstrengthduration-2" /><code>{"float MaxStrengthDuration { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |
 
 ## Used in
 

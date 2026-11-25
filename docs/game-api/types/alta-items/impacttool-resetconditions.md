@@ -18,10 +18,10 @@ An **private enum** in `Root.Township`, `Alta.Impact`. Reach it through att-stub
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onblocked" /><code>{"OnBlocked = 1"}</code> |  |
-| <Link id="m-onvalidhit" /><code>{"OnValidHit = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onblocked" /><code>{"OnBlocked = 1"}</code> |
+| <Link id="m-onvalidhit" /><code>{"OnValidHit = 2"}</code> |
 
 ## Used in
 

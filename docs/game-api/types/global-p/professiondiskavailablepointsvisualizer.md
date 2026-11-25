@@ -17,26 +17,39 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProfessionDiskAvailablePointsVisualizer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProfessionDiskAvailablePointsVisualizer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alpha" /><code>{"private static readonly int _Alpha"}</code> |  |
-| <Link id="m-alphalimit" /><code>{"private static readonly int _AlphaLimit"}</code> |  |
-| <Link id="m-particles" /><code>{"private ParticleSystem particles"}</code> |  |
-| <Link id="m-runninganimation" /><code>{"private Coroutine runningAnimation"}</code> |  |
-| <Link id="m-spriterenderer" /><code>{"private SpriteRenderer spriteRenderer"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-alpha" /><code>{"private static readonly int _Alpha"}</code> |
+| <Link id="m-alphalimit" /><code>{"private static readonly int _AlphaLimit"}</code> |
+| <Link id="m-particles" /><code>{"private ParticleSystem particles"}</code> |
+| <Link id="m-runninganimation" /><code>{"private Coroutine runningAnimation"}</code> |
+| <Link id="m-spriterenderer" /><code>{"private SpriteRenderer spriteRenderer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-disable" /><code>{"override void Disable()"}</code> |  |
-| <Link id="m-setpath" /><code>{"override void SetPath("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
-| <Link id="m-animate" /><code>{"private void Animate(float target)"}</code> |  |
-| <Link id="m-openinternal" /><code>{"protected override void OpenInternal()"}</code> |  |
-| <Link id="m-runanimation" /><code>{"private IEnumerator RunAnimation(float target) (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-disable" /><code>{"override void Disable()"}</code> |
+| <Link id="m-setpath" /><code>{"override void SetPath("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |
+| <Link id="m-openinternal" /><code>{"protected override void OpenInternal()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-animate" /><code>{"private void Animate(float target)"}</code> |
+| <Link id="m-runanimation" /><code>{"private IEnumerator RunAnimation(float target) (iterator)"}</code> |
+
+</details>

@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimerButton()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimerButton()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-emptywhenzero" /><code>{"private bool emptyWhenZero"}</code> |  |
-| <Link id="m-textui" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textUI"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-emptywhenzero" /><code>{"private bool emptyWhenZero"}</code> |
+| <Link id="m-textui" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textUI"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updatesettings" /><code>{"protected override void UpdateSettings("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updatesettings" /><code>{"protected override void UpdateSettings("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera)"}</code> |

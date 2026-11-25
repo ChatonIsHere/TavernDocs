@@ -17,14 +17,14 @@ An **interface** in `Root.Township`, `ATT.Utilities`.
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-completed" /><code>{"event Action Completed"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-completed" /><code>{"event Action Completed"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addprogress" /><code>{"void AddProgress(float progress)"}</code> |  |
-| <Link id="m-cancel" /><code>{"void Cancel()"}</code> |  |
-| <Link id="m-restart" /><code>{"void Restart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addprogress" /><code>{"void AddProgress(float progress)"}</code> |
+| <Link id="m-cancel" /><code>{"void Cancel()"}</code> |
+| <Link id="m-restart" /><code>{"void Restart()"}</code> |

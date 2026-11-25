@@ -17,31 +17,47 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SortedEnumerator(T[] list)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SortedEnumerator(T[] list)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sortedlist" /><code>{"T[] sortedList"}</code> |  |
-| <Link id="m-position" /><code>{"private int position"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-sortedlist" /><code>{"T[] sortedList"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-position" /><code>{"private int position"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-current" /><code>{"T Current { get; }"}</code> |  |
-| <Link id="m-system-collections-ienumerator-current" /><code>{"private object System.Collections.IEnumerator.Current { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-current" /><code>{"T Current { get; }"}</code> |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-system-collections-ienumerator-current" /><code>{"private object System.Collections.IEnumerator.Current { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-movenext" /><code>{"bool MoveNext()"}</code> |  |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
+| <Link id="m-movenext" /><code>{"bool MoveNext()"}</code> |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> |
 
 ## Used in
 

@@ -17,16 +17,16 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DisposeData(int index, bool isForced)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DisposeData(int index, bool isForced)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-index" /><code>{"int Index { get; }"}</code> |  |
-| <Link id="m-isforced" /><code>{"bool IsForced { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-index" /><code>{"int Index { get; }"}</code> |
+| <Link id="m-isforced" /><code>{"bool IsForced { get; }"}</code> |
 
 ## Used in
 

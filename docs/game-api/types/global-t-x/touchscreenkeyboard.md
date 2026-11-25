@@ -20,42 +20,50 @@ The in-world virtual keyboard players type on with their fingers. Client only; o
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TouchScreenKeyboard()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TouchScreenKeyboard()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-setupsecretkey" /><code>{"bool setupSecretKey"}</code> | If set, an extra secret toggle key is added to the last row. |
-| <Link id="m-androidmultikeyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-i-l/keyboardset">{"KeyboardSet"}</Link>{" androidMultiKeyboardSetup"}</code> |  |
-| <Link id="m-androidsetup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" androidSetup"}</code> |  |
-| <Link id="m-autocomplete" /><code>{"private "}<Link to="/game-api/types/alta-menus/autocomplete">{"AutoComplete"}</Link>{" autoComplete"}</code> |  |
-| <Link id="m-backspacedelaystart" /><code>{"private float backspaceDelayStart"}</code> |  |
-| <Link id="m-backspacesingleletterduration" /><code>{"private float backspaceSingleLetterDuration"}</code> |  |
-| <Link id="m-continuousbackspacespeed" /><code>{"private float continuousBackspaceSpeed"}</code> |  |
-| <Link id="m-currentkeyboardindex" /><code>{"private int currentKeyboardIndex"}</code> |  |
-| <Link id="m-dimensionsoffset" /><code>{"private Vector2 dimensionsOffset"}</code> |  |
-| <Link id="m-doubleshifttimer" /><code>{"private float doubleShiftTimer"}</code> |  |
-| <Link id="m-empty" /><code>{"private const string empty"}</code> |  |
-| <Link id="m-functionkeys" /><code>{"private "}<Link to="/game-api/types/global-e-h/functionkeydefinition">{"FunctionKeyDefinition"}</Link>{"[] functionKeys"}</code> |  |
-| <Link id="m-hasdoneautocompletesetup" /><code>{"private bool hasDoneAutoCompleteSetup"}</code> |  |
-| <Link id="m-indextokeycode" /><code>{"private readonly Dictionary<int, KeyCode> indexToKeyCode"}</code> |  |
-| <Link id="m-input" /><code>{"private string input"}</code> |  |
-| <Link id="m-instantiatedbuttons" /><code>{"private readonly List<"}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{"> instantiatedButtons"}</code> |  |
-| <Link id="m-isshiftlocked" /><code>{"private bool isShiftLocked"}</code> |  |
-| <Link id="m-keyboardedgesinfo" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard-keyboardedgesinfo">{"TouchScreenKeyboard.KeyBoardEdgesInfo"}</Link>{" keyboardEdgesInfo"}</code> |  |
-| <Link id="m-keyprefab" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey">{"TouchScreenKeyboardKey"}</Link>{" keyPrefab"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-originoffset" /><code>{"private Vector2 originOffset"}</code> |  |
-| <Link id="m-output" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard-outputevent">{"TouchScreenKeyboard.OutputEvent"}</Link>{" output"}</code> |  |
-| <Link id="m-pcmultikeyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-i-l/keyboardset">{"KeyboardSet"}</Link>{" pcMultiKeyboardSetup"}</code> |  |
-| <Link id="m-scale" /><code>{"private float scale"}</code> |  |
-| <Link id="m-setup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" setup"}</code> |  |
-| <Link id="m-shiftlockmarker" /><code>{"private Renderer shiftLockMarker"}</code> |  |
-| <Link id="m-timetodoubleshift" /><code>{"private float timeToDoubleShift"}</code> |  |
-| <Link id="m-usemultikeyboardsetup" /><code>{"private bool useMultiKeyboardSetup"}</code> |  |
+
+<details>
+<summary>27 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androidmultikeyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-i-l/keyboardset">{"KeyboardSet"}</Link>{" androidMultiKeyboardSetup"}</code> |
+| <Link id="m-androidsetup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" androidSetup"}</code> |
+| <Link id="m-autocomplete" /><code>{"private "}<Link to="/game-api/types/alta-menus/autocomplete">{"AutoComplete"}</Link>{" autoComplete"}</code> |
+| <Link id="m-backspacedelaystart" /><code>{"private float backspaceDelayStart"}</code> |
+| <Link id="m-backspacesingleletterduration" /><code>{"private float backspaceSingleLetterDuration"}</code> |
+| <Link id="m-continuousbackspacespeed" /><code>{"private float continuousBackspaceSpeed"}</code> |
+| <Link id="m-currentkeyboardindex" /><code>{"private int currentKeyboardIndex"}</code> |
+| <Link id="m-dimensionsoffset" /><code>{"private Vector2 dimensionsOffset"}</code> |
+| <Link id="m-doubleshifttimer" /><code>{"private float doubleShiftTimer"}</code> |
+| <Link id="m-empty" /><code>{"private const string empty"}</code> |
+| <Link id="m-functionkeys" /><code>{"private "}<Link to="/game-api/types/global-e-h/functionkeydefinition">{"FunctionKeyDefinition"}</Link>{"[] functionKeys"}</code> |
+| <Link id="m-hasdoneautocompletesetup" /><code>{"private bool hasDoneAutoCompleteSetup"}</code> |
+| <Link id="m-indextokeycode" /><code>{"private readonly Dictionary<int, KeyCode> indexToKeyCode"}</code> |
+| <Link id="m-input" /><code>{"private string input"}</code> |
+| <Link id="m-instantiatedbuttons" /><code>{"private readonly List<"}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{"> instantiatedButtons"}</code> |
+| <Link id="m-isshiftlocked" /><code>{"private bool isShiftLocked"}</code> |
+| <Link id="m-keyboardedgesinfo" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard-keyboardedgesinfo">{"TouchScreenKeyboard.KeyBoardEdgesInfo"}</Link>{" keyboardEdgesInfo"}</code> |
+| <Link id="m-keyprefab" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey">{"TouchScreenKeyboardKey"}</Link>{" keyPrefab"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-originoffset" /><code>{"private Vector2 originOffset"}</code> |
+| <Link id="m-output" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard-outputevent">{"TouchScreenKeyboard.OutputEvent"}</Link>{" output"}</code> |
+| <Link id="m-pcmultikeyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-i-l/keyboardset">{"KeyboardSet"}</Link>{" pcMultiKeyboardSetup"}</code> |
+| <Link id="m-scale" /><code>{"private float scale"}</code> |
+| <Link id="m-setup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" setup"}</code> |
+| <Link id="m-shiftlockmarker" /><code>{"private Renderer shiftLockMarker"}</code> |
+| <Link id="m-timetodoubleshift" /><code>{"private float timeToDoubleShift"}</code> |
+| <Link id="m-usemultikeyboardsetup" /><code>{"private bool useMultiKeyboardSetup"}</code> |
+
+</details>
 
 ## Properties
 
@@ -71,9 +79,17 @@ The in-world virtual keyboard players type on with their fingers. Client only; o
 | <Link id="m-isshiftpressed" /><code>{"bool IsShiftPressed { get; private set; }"}</code> | True while shift is on. Turns off after one character unless shift is locked. |
 | <Link id="m-isshowingsecret" /><code>{"bool IsShowingSecret { get; }"}</code> | Never set, so always false. |
 | <Link id="m-mappedfunctionkeys" /><code>{"Dictionary<KeyCode, "}<Link to="/game-api/types/global-e-h/functionkeydefinition">{"FunctionKeyDefinition"}</Link>{"> MappedFunctionKeys { get; }"}</code> | Function keys with their actions, by key code. |
-| <Link id="m-keyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" KeyboardSetup { get; }"}</code> |  |
-| <Link id="m-multikeyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-i-l/keyboardset">{"KeyboardSet"}</Link>{" MultiKeyboardSetup { get; }"}</code> |  |
 | <Link id="m-offset" /><code>{"protected override Vector2 Offset { get; }"}</code> | Centre offset of the keyboard's touch area. |
+
+<details>
+<summary>2 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-keyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" KeyboardSetup { get; }"}</code> |
+| <Link id="m-multikeyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-i-l/keyboardset">{"KeyboardSet"}</Link>{" MultiKeyboardSetup { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -102,6 +118,16 @@ The in-world virtual keyboard players type on with their fingers. Client only; o
 | <Link id="m-togglesecret" /><code>{"void ToggleSecret()"}</code> | Raises `ToggleSecretDisplay`. |
 | <Link id="m-typecustom" /><code>{"void TypeCustom(string custom)"}</code> | Adds a string to the input. |
 | <Link id="m-wordbackspace" /><code>{"void WordBackspace()"}</code> | Deletes the last word. |
+| <Link id="m-ondrawgizmos" /><code>{"protected override void OnDrawGizmos()"}</code> | Draws the key layout in the editor. |
+| <Link id="m-posttouchcalculation" /><code>{"protected override void PostTouchCalculation()"}</code> | After touch checks, lets each enabled key settle its press state. |
+| <Link id="m-pretouchcalculation" /><code>{"protected override void PreTouchCalculation()"}</code> | Before touch checks, clears each enabled key's finger distance. |
+| <Link id="m-updatetouchwithbuttons" /><code>{"protected override void UpdateTouchWithButtons("}<Link to="/game-api/types/global-t-x/touchscreenmenubase-touchinput">{"TouchScreenMenuBase.TouchInput"}</Link>{" touch)"}</code> | Updates each key's distance to a nearby fingertip. |
+
+<details>
+<summary>23 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-addautocompletekeys" /><code>{"private void AddAutoCompleteKeys()"}</code> |  |
 | <Link id="m-applycompletion" /><code>{"private void ApplyCompletion(string completion)"}</code> |  |
 | <Link id="m-autocompletesetup" /><code>{"private void AutoCompleteSetup()"}</code> |  |
@@ -114,12 +140,9 @@ The in-world virtual keyboard players type on with their fingers. Client only; o
 | <Link id="m-includenumber" /><code>{"private void IncludeNumber(int number)"}</code> |  |
 | <Link id="m-localkeyboardsetup" /><code>{"private void LocalKeyboardSetup()"}</code> |  |
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"protected override void OnDrawGizmos()"}</code> | Draws the key layout in the editor. |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
 | <Link id="m-populateautocompleteswithcurrentinput" /><code>{"private void PopulateAutoCompletesWithCurrentInput(string currentInput)"}</code> |  |
-| <Link id="m-posttouchcalculation" /><code>{"protected override void PostTouchCalculation()"}</code> | After touch checks, lets each enabled key settle its press state. |
 | <Link id="m-pressshift" /><code>{"private void PressShift()"}</code> |  |
-| <Link id="m-pretouchcalculation" /><code>{"protected override void PreTouchCalculation()"}</code> | Before touch checks, clears each enabled key's finger distance. |
 | <Link id="m-removeonlynecessarykeys" /><code>{"private int RemoveOnlyNecessaryKeys(int incomingIndex)"}</code> |  |
 | <Link id="m-resetdimensions" /><code>{"private void ResetDimensions()"}</code> |  |
 | <Link id="m-scaleposition" /><code>{"private Vector3 ScalePosition(Vector2 original)"}</code> |  |
@@ -127,8 +150,9 @@ The in-world virtual keyboard players type on with their fingers. Client only; o
 | <Link id="m-setupnewkeyboard" /><code>{"private void SetUpNewKeyboard(int keyboardIndex, int lastEqualIndex)"}</code> |  |
 | <Link id="m-setupplayer" /><code>{"private void SetupPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |  |
 | <Link id="m-spawnkey" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey">{"TouchScreenKeyboardKey"}</Link>{" SpawnKey("}<Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{" keyInfo)"}</code> |  |
-| <Link id="m-updatetouchwithbuttons" /><code>{"protected override void UpdateTouchWithButtons("}<Link to="/game-api/types/global-t-x/touchscreenmenubase-touchinput">{"TouchScreenMenuBase.TouchInput"}</Link>{" touch)"}</code> | Updates each key's distance to a nearby fingertip. |
 | <Link id="m-wordbackspace-2" /><code>{"private string WordBackspace(string input)"}</code> | Deletes the last word. |
+
+</details>
 
 ## Used in
 

@@ -17,12 +17,12 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedInterfaceAttribute(Type interfaceType)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SerializedInterfaceAttribute(Type interfaceType)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-interfacetype" /><code>{"Type InterfaceType { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-interfacetype" /><code>{"Type InterfaceType { get; private set; }"}</code> |

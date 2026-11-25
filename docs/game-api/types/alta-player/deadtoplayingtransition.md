@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `Alta.PlayerStates.Transitions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DeadToPlayingTransition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DeadToPlayingTransition()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> |  |
-| <Link id="m-destinationpreactivationcallback" /><code>{"protected override void DestinationPreActivationCallback("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" toBeActivatedState)"}</code> |  |
-| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> |
+| <Link id="m-destinationpreactivationcallback" /><code>{"protected override void DestinationPreActivationCallback("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" toBeActivatedState)"}</code> |
+| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> |
 
 ## Used in
 

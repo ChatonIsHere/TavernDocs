@@ -18,17 +18,17 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ObjectKilledData("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ObjectKilledData("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-identifier" /><code>{"uint identifier"}</code> |  |
-| <Link id="m-name" /><code>{"string name"}</code> |  |
-| <Link id="m-prefab" /><code>{"uint prefab"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-identifier" /><code>{"uint identifier"}</code> |
+| <Link id="m-name" /><code>{"string name"}</code> |
+| <Link id="m-prefab" /><code>{"uint prefab"}</code> |
 
 ## Used in
 

@@ -16,16 +16,21 @@ A **static class** in `Root.Township`, `Alta.Networking`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entityspawnindex" /><code>{"private static uint entitySpawnIndex"}</code> |  |
-| <Link id="m-isallowingwait" /><code>{"private static bool isAllowingWait"}</code> |  |
-| <Link id="m-isunload" /><code>{"private static bool isUnload"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entityspawnindex" /><code>{"private static uint entitySpawnIndex"}</code> |
+| <Link id="m-isallowingwait" /><code>{"private static bool isAllowingWait"}</code> |
+| <Link id="m-isunload" /><code>{"private static bool isUnload"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"static void Serialize("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-set" /><code>{"static void Set("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload, bool isAllowingWait)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"static void Serialize("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-set" /><code>{"static void Set("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload, bool isAllowingWait)"}</code> |

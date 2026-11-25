@@ -19,15 +19,15 @@ A **class** in `Root.Township`, `Alta.Achievements`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AchievementDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AchievementDefinition()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-identifier" /><code>{"string Identifier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-identifier" /><code>{"string Identifier { get; }"}</code> |
 
 ## Used in
 

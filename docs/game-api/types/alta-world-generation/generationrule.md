@@ -19,36 +19,49 @@ A **class** in `Root.Township`, `Alta.PAGaC`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenerationRule()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenerationRule()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serializedsteptagcounts" /><code>{"private int[] serializedStepTagCounts"}</code> |  |
-| <Link id="m-serializedsteptags" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"[] serializedStepTags"}</code> |  |
-| <Link id="m-steps" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/generationrule-step">{"GenerationRule.Step"}</Link>{"> steps"}</code> |  |
-| <Link id="m-steptags" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{">[,,,] stepTags"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-serializedsteptagcounts" /><code>{"private int[] serializedStepTagCounts"}</code> |
+| <Link id="m-serializedsteptags" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"[] serializedStepTags"}</code> |
+| <Link id="m-steps" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/generationrule-step">{"GenerationRule.Step"}</Link>{"> steps"}</code> |
+| <Link id="m-steptags" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{">[,,,] stepTags"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-steps-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/generationrule-step">{"GenerationRule.Step"}</Link>{"> Steps { get; }"}</code> |  |
-| <Link id="m-steptags-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{">[,,,] StepTags { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-steps-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/generationrule-step">{"GenerationRule.Step"}</Link>{"> Steps { get; }"}</code> |
+| <Link id="m-steptags-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{">[,,,] StepTags { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forcebeforeserialize" /><code>{"void ForceBeforeSerialize()"}</code> |  |
-| <Link id="m-getsteptags" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"> GetStepTags(int step, int x, int y, int z)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"void OnValidate()"}</code> |  |
-| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> |  |
-| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> |  |
-| <Link id="m-resize" /><code>{"private void Resize(bool isClearing, ref List<"}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{">[,,,] tags, int configurations, int sizeX, int sizeY, int sizeZ)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-forcebeforeserialize" /><code>{"void ForceBeforeSerialize()"}</code> |
+| <Link id="m-getsteptags" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"> GetStepTags(int step, int x, int y, int z)"}</code> |
+| <Link id="m-onvalidate" /><code>{"void OnValidate()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> |
+| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> |
+| <Link id="m-resize" /><code>{"private void Resize(bool isClearing, ref List<"}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{">[,,,] tags, int configurations, int sizeX, int sizeY, int sizeZ)"}</code> |
+
+</details>
 
 ## Used in
 

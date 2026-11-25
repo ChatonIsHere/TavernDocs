@@ -20,9 +20,9 @@ Client: the shell animator for stat effect shields around a player. Several shie
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatEffectShellAnimator("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, Material shellMaterialSample)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatEffectShellAnimator("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, Material shellMaterialSample)"}</code> |
 
 ## Fields
 
@@ -38,8 +38,16 @@ Client: the shell animator for stat effect shields around a player. Several shie
 | <Link id="m-wavecolor" /><code>{"static readonly int _WaveColor"}</code> | Shader ID of `_WaveColor`. |
 | <Link id="m-wavetexture" /><code>{"static readonly int _WaveTexture"}</code> | Shader ID of `_WaveTexture`. |
 | <Link id="m-width" /><code>{"static readonly int _Width"}</code> | Shader ID of `_Width`. |
-| <Link id="m-animationqueue" /><code>{"private "}<Link to="/game-api/types/assembly-other/fastpriorityqueue-t">{"FastPriorityQueue"}</Link>{"<"}<Link to="/game-api/types/alta-player/stateffectshellanimator-shellanimationhandlernode">{"StatEffectShellAnimator.ShellAnimationHandlerNode"}</Link>{"> animationQueue"}</code> |  |
-| <Link id="m-currenthandler" /><code>{"private "}<Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" currentHandler"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animationqueue" /><code>{"private "}<Link to="/game-api/types/assembly-other/fastpriorityqueue-t">{"FastPriorityQueue"}</Link>{"<"}<Link to="/game-api/types/alta-player/stateffectshellanimator-shellanimationhandlernode">{"StatEffectShellAnimator.ShellAnimationHandlerNode"}</Link>{"> animationQueue"}</code> |
+| <Link id="m-currenthandler" /><code>{"private "}<Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" currentHandler"}</code> |
+
+</details>
 
 ## Properties
 
@@ -53,10 +61,18 @@ Client: the shell animator for stat effect shields around a player. Several shie
 | Member | What it is |
 | --- | --- |
 | <Link id="m-animateshield" /><code><Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" AnimateShield("}<Link to="/game-api/types/alta-player/stateffectshellsetting">{"StatEffectShellSetting"}</Link>{" setting, float startProgress, float priority)"}</code> | Asks for a shield with a setting and priority (higher shows first). It plays now or queues; the returned handler ends it. |
-| <Link id="m-animatecurrenthandler" /><code>{"private void AnimateCurrentHandler()"}</code> |  |
-| <Link id="m-followqueue" /><code>{"private void FollowQueue()"}</code> |  |
-| <Link id="m-handlerdeactivated" /><code>{"private void HandlerDeactivated("}<Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" handler)"}</code> |  |
-| <Link id="m-returntocurrent" /><code>{"private void ReturnToCurrent()"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-animatecurrenthandler" /><code>{"private void AnimateCurrentHandler()"}</code> |
+| <Link id="m-followqueue" /><code>{"private void FollowQueue()"}</code> |
+| <Link id="m-handlerdeactivated" /><code>{"private void HandlerDeactivated("}<Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" handler)"}</code> |
+| <Link id="m-returntocurrent" /><code>{"private void ReturnToCurrent()"}</code> |
+
+</details>
 
 ## Used in
 

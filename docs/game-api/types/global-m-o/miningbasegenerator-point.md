@@ -17,24 +17,24 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Point(int x = 0, int y = 0, int z = 0)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Point(int x = 0, int y = 0, int z = 0)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-x" /><code>{"int X { get; set; }"}</code> |  |
-| <Link id="m-y" /><code>{"int Y { get; set; }"}</code> |  |
-| <Link id="m-z" /><code>{"int Z { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-x" /><code>{"int X { get; set; }"}</code> |
+| <Link id="m-y" /><code>{"int Y { get; set; }"}</code> |
+| <Link id="m-z" /><code>{"int Z { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-rotate" /><code><Link to="/game-api/types/global-m-o/miningbasegenerator-point">{"MiningBaseGenerator.Point"}</Link>{" Rotate(int rotations)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-rotate" /><code><Link to="/game-api/types/global-m-o/miningbasegenerator-point">{"MiningBaseGenerator.Point"}</Link>{" Rotate(int rotations)"}</code> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
 
 ## Used in
 

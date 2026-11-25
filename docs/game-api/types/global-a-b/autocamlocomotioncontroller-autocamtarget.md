@@ -17,16 +17,16 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AutoCamTarget()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AutoCamTarget()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-iscontained" /><code>{"bool IsContained { get; set; }"}</code> |  |
-| <Link id="m-transform" /><code>{"Transform Transform { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-iscontained" /><code>{"bool IsContained { get; set; }"}</code> |
+| <Link id="m-transform" /><code>{"Transform Transform { get; set; }"}</code> |
 
 ## Used in
 

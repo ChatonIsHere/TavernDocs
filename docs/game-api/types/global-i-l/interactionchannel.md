@@ -16,13 +16,13 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-characterbodycustomisation" /><code>{"CharacterBodyCustomisation = 2"}</code> |  |
-| <Link id="m-characterequipment" /><code>{"CharacterEquipment = 4"}</code> |  |
-| <Link id="m-downedcharacter" /><code>{"DownedCharacter = 16"}</code> |  |
-| <Link id="m-normal" /><code>{"Normal = 1"}</code> |  |
-| <Link id="m-skillpractice" /><code>{"SkillPractice = 8"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-characterbodycustomisation" /><code>{"CharacterBodyCustomisation = 2"}</code> |
+| <Link id="m-characterequipment" /><code>{"CharacterEquipment = 4"}</code> |
+| <Link id="m-downedcharacter" /><code>{"DownedCharacter = 16"}</code> |
+| <Link id="m-normal" /><code>{"Normal = 1"}</code> |
+| <Link id="m-skillpractice" /><code>{"SkillPractice = 8"}</code> |
 
 ## Used in
 

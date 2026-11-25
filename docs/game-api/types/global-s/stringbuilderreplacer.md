@@ -17,21 +17,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StringBuilderReplacer(string target)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StringBuilderReplacer(string target)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-builder" /><code>{"private StringBuilder builder"}</code> |  |
-| <Link id="m-identation" /><code>{"private string identation"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-builder" /><code>{"private StringBuilder builder"}</code> |
+| <Link id="m-identation" /><code>{"private string identation"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-append" /><code>{"void Append(string text)"}</code> |  |
-| <Link id="m-appendline" /><code>{"void AppendLine(string line)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-append" /><code>{"void Append(string text)"}</code> |
+| <Link id="m-appendline" /><code>{"void AppendLine(string line)"}</code> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |

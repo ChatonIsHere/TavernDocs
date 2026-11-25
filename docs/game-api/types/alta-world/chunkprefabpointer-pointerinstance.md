@@ -19,9 +19,9 @@ One loaded static scenery pointer (an Addressables prefab) shared by every chunk
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PointerInstance(string reference, AsyncOperationHandle<GameObject> handler)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PointerInstance(string reference, AsyncOperationHandle<GameObject> handler)"}</code> |
 
 ## Properties
 

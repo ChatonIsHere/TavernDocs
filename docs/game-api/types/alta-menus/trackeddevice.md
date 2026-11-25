@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, `Alta.XR`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hmd" /><code>{"HMD = 2"}</code> |  |
-| <Link id="m-leftcontroller" /><code>{"LeftController = 4"}</code> |  |
-| <Link id="m-rightcontroller" /><code>{"RightController = 5"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hmd" /><code>{"HMD = 2"}</code> |
+| <Link id="m-leftcontroller" /><code>{"LeftController = 4"}</code> |
+| <Link id="m-rightcontroller" /><code>{"RightController = 5"}</code> |
 
 ## Used in
 

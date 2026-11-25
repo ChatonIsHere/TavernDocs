@@ -17,25 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LocalTestGameMode("}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LocalTestGameMode("}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serveraccess" /><code>{"private "}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-serveraccess" /><code>{"private "}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isserver" /><code>{"override bool IsServer { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isserver" /><code>{"override bool IsServer { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activateasync" /><code>{"override async Task<bool> ActivateAsync()"}</code> |  |
-| <Link id="m-stopmodeasync" /><code>{"override async Task StopModeAsync(string reason)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-activateasync" /><code>{"override async Task<bool> ActivateAsync()"}</code> |
+| <Link id="m-stopmodeasync" /><code>{"override async Task StopModeAsync(string reason)"}</code> |

@@ -17,8 +17,16 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-waitforcoroutineasync" /><code>{"static async Task WaitForCoroutineAsync(IEnumerator coroutine, MonoBehaviour target = null)"}</code> |  |
-| <Link id="m-waitforcoroutineasync-2" /><code>{"static async Task<T> WaitForCoroutineAsync<T>(IEnumerator coroutine, Func<T> getResult, MonoBehaviour target = null)"}</code> |  |
-| <Link id="m-runcoroutine" /><code>{"private static IEnumerator RunCoroutine(IEnumerator coroutine, TaskCompletionSource<bool> completion) (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-waitforcoroutineasync" /><code>{"static async Task WaitForCoroutineAsync(IEnumerator coroutine, MonoBehaviour target = null)"}</code> |
+| <Link id="m-waitforcoroutineasync-2" /><code>{"static async Task<T> WaitForCoroutineAsync<T>(IEnumerator coroutine, Func<T> getResult, MonoBehaviour target = null)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-runcoroutine" /><code>{"private static IEnumerator RunCoroutine(IEnumerator coroutine, TaskCompletionSource<bool> completion) (iterator)"}</code> |
+
+</details>

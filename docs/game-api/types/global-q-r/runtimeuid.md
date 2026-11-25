@@ -16,12 +16,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RuntimeUid()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RuntimeUid()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-id" /><code>{"static uint Id { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-id" /><code>{"static uint Id { get; }"}</code> |

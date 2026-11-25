@@ -17,32 +17,37 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ControllerActionsManagerProxy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ControllerActionsManagerProxy()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actionsmap" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{", "}<Link to="/game-api/types/global-c-d/controlleractionproxy">{"ControllerActionProxy"}</Link>{"> actionsMap"}</code> |  |
-| <Link id="m-linkedactionsmanager" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleractionsmanager">{"ControllerActionsManager"}</Link>{" linkedActionsManager"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-actionsmap" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{", "}<Link to="/game-api/types/global-c-d/controlleractionproxy">{"ControllerActionProxy"}</Link>{"> actionsMap"}</code> |
+| <Link id="m-linkedactionsmanager" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleractionsmanager">{"ControllerActionsManager"}</Link>{" linkedActionsManager"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actionsmap-2" /><code>{"Dictionary<"}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{", "}<Link to="/game-api/types/global-c-d/controlleractionproxy">{"ControllerActionProxy"}</Link>{"> ActionsMap { get; }"}</code> |  |
-| <Link id="m-item" /><code><Link to="/game-api/types/global-c-d/controlleractionproxy">{"ControllerActionProxy"}</Link>{" this["}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{" type] { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-actionsmap-2" /><code>{"Dictionary<"}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{", "}<Link to="/game-api/types/global-c-d/controlleractionproxy">{"ControllerActionProxy"}</Link>{"> ActionsMap { get; }"}</code> |
+| <Link id="m-item" /><code><Link to="/game-api/types/global-c-d/controlleractionproxy">{"ControllerActionProxy"}</Link>{" this["}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{" type] { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializedictionary" /><code>{"void InitializeDictionary()"}</code> |  |
-| <Link id="m-linktoactionsmanager" /><code>{"void LinkToActionsManager("}<Link to="/game-api/types/global-c-d/controlleractionsmanager">{"ControllerActionsManager"}</Link>{" actionsManager)"}</code> |  |
-| <Link id="m-unlinkfromactionsmanager" /><code>{"void UnlinkFromActionsManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializedictionary" /><code>{"void InitializeDictionary()"}</code> |
+| <Link id="m-linktoactionsmanager" /><code>{"void LinkToActionsManager("}<Link to="/game-api/types/global-c-d/controlleractionsmanager">{"ControllerActionsManager"}</Link>{" actionsManager)"}</code> |
+| <Link id="m-unlinkfromactionsmanager" /><code>{"void UnlinkFromActionsManager()"}</code> |
 
 ## Used in
 

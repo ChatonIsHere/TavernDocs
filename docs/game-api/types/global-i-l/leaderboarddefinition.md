@@ -21,17 +21,22 @@ Asset for a leaderboard (a course), with its size and whether lower scores are b
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LeaderboardDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LeaderboardDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-coursename" /><code>{"private string courseName"}</code> |  |
-| <Link id="m-islowest" /><code>{"private bool isLowest"}</code> |  |
-| <Link id="m-size" /><code>{"private int size"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-coursename" /><code>{"private string courseName"}</code> |
+| <Link id="m-islowest" /><code>{"private bool isLowest"}</code> |
+| <Link id="m-size" /><code>{"private int size"}</code> |
+
+</details>
 
 ## Properties
 

@@ -18,19 +18,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SignPointPart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SignPointPart()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entranceindex" /><code>{"private int entranceIndex"}</code> |  |
-| <Link id="m-sign" /><code>{"private Transform sign"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entranceindex" /><code>{"private int entranceIndex"}</code> |
+| <Link id="m-sign" /><code>{"private Transform sign"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> |

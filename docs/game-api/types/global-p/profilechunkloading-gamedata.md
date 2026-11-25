@@ -19,9 +19,9 @@ A snapshot of spawned object counts taken when it is created, used by the chunk 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameData()"}</code> |
 
 ## Properties
 

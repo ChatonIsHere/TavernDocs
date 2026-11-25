@@ -20,26 +20,39 @@ Glow and colour from temperature. Client visuals.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TemperatureToMaterial()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TemperatureToMaterial()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forcedtemperature" /><code>{"private static readonly int _ForcedTemperature"}</code> |  |
-| <Link id="m-heatpoint" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-props" /><code>{"private MaterialPropertyBlock props"}</code> |  |
-| <Link id="m-targetrenderers" /><code>{"private Renderer[] targetRenderers"}</code> |  |
-| <Link id="m-temperaturetovalue" /><code>{"private AnimationCurve temperatureToValue"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-forcedtemperature" /><code>{"private static readonly int _ForcedTemperature"}</code> |
+| <Link id="m-heatpoint" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-props" /><code>{"private MaterialPropertyBlock props"}</code> |
+| <Link id="m-targetrenderers" /><code>{"private Renderer[] targetRenderers"}</code> |
+| <Link id="m-temperaturetovalue" /><code>{"private AnimationCurve temperatureToValue"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"void OnValidate()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |
-| <Link id="m-updatevalue" /><code>{"private void UpdateValue("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"void OnValidate()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+| <Link id="m-updatevalue" /><code>{"private void UpdateValue("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> |
+
+</details>

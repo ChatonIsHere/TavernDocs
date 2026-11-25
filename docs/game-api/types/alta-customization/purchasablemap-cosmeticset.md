@@ -17,23 +17,23 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CosmeticSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-itemhashes" /><code>{"uint[] itemHashes"}</code> |  |
-| <Link id="m-sethash" /><code>{"uint setHash"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-itemhashes" /><code>{"uint[] itemHashes"}</code> |
+| <Link id="m-sethash" /><code>{"uint setHash"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |  |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |
 
 ## Used in
 

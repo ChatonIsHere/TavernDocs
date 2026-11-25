@@ -23,24 +23,29 @@ A stat asset (health, hunger, speed and so on), a hashed value looked up by hash
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-changetosync" /><code>{"private float changeToSync"}</code> |  |
-| <Link id="m-commandminimumandmaximumvalues" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition-minimumandmaximumvalues">{"StatDefinition.MinimumAndMaximumValues"}</Link>{" commandMinimumAndMaximumValues"}</code> |  |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |  |
-| <Link id="m-indirectmodificationcurve" /><code>{"private AnimationCurve indirectModificationCurve"}</code> |  |
-| <Link id="m-isindirectusagemultiplier" /><code>{"private bool isIndirectUsageMultiplier"}</code> |  |
-| <Link id="m-issaveserialized" /><code>{"private bool isSaveSerialized"}</code> |  |
-| <Link id="m-majornotcheveryxnotches" /><code>{"private int majorNotchEveryXNotches"}</code> |  |
-| <Link id="m-notchvalue" /><code>{"private float notchValue"}</code> |  |
-| <Link id="m-particlescolor" /><code>{"private Color particlesColor"}</code> |  |
-| <Link id="m-statname" /><code>{"private string statName"}</code> |  |
+<details>
+<summary>10 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-changetosync" /><code>{"private float changeToSync"}</code> |
+| <Link id="m-commandminimumandmaximumvalues" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition-minimumandmaximumvalues">{"StatDefinition.MinimumAndMaximumValues"}</Link>{" commandMinimumAndMaximumValues"}</code> |
+| <Link id="m-duration" /><code>{"private float duration"}</code> |
+| <Link id="m-indirectmodificationcurve" /><code>{"private AnimationCurve indirectModificationCurve"}</code> |
+| <Link id="m-isindirectusagemultiplier" /><code>{"private bool isIndirectUsageMultiplier"}</code> |
+| <Link id="m-issaveserialized" /><code>{"private bool isSaveSerialized"}</code> |
+| <Link id="m-majornotcheveryxnotches" /><code>{"private int majorNotchEveryXNotches"}</code> |
+| <Link id="m-notchvalue" /><code>{"private float notchValue"}</code> |
+| <Link id="m-particlescolor" /><code>{"private Color particlesColor"}</code> |
+| <Link id="m-statname" /><code>{"private string statName"}</code> |
+
+</details>
 
 ## Properties
 

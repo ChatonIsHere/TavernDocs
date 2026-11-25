@@ -17,12 +17,12 @@ A **struct** in `Root.Township`, `Alta.Caves`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-value" /><code>{"float value"}</code> |  |
-| <Link id="m-x" /><code>{"int x"}</code> |  |
-| <Link id="m-y" /><code>{"int y"}</code> |  |
-| <Link id="m-z" /><code>{"int z"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-value" /><code>{"float value"}</code> |
+| <Link id="m-x" /><code>{"int x"}</code> |
+| <Link id="m-y" /><code>{"int y"}</code> |
+| <Link id="m-z" /><code>{"int z"}</code> |
 
 ## Used in
 

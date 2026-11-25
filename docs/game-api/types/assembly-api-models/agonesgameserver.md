@@ -17,17 +17,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AgonesGameServer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AgonesGameServer()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apigroup" /><code>{"override string ApiGroup { get; set; }"}</code> |  |
-| <Link id="m-kind" /><code>{"override string Kind { get; set; }"}</code> |  |
-| <Link id="m-spec" /><code><Link to="/game-api/types/assembly-api-models/gameserverspec">{"GameServerSpec"}</Link>{" Spec { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apigroup" /><code>{"override string ApiGroup { get; set; }"}</code> |
+| <Link id="m-kind" /><code>{"override string Kind { get; set; }"}</code> |
+| <Link id="m-spec" /><code><Link to="/game-api/types/assembly-api-models/gameserverspec">{"GameServerSpec"}</Link>{" Spec { get; set; }"}</code> |
 
 ## Used in
 

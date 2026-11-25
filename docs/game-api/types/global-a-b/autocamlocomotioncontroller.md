@@ -18,26 +18,41 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AutoCamLocomotionController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AutoCamLocomotionController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentrotation" /><code>{"private float currentRotation"}</code> |  |
-| <Link id="m-focus" /><code>{"private int focus"}</code> |  |
-| <Link id="m-targets" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/autocamlocomotioncontroller-autocamtarget">{"AutoCamLocomotionController.AutoCamTarget"}</Link>{"> targets"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentrotation" /><code>{"private float currentRotation"}</code> |
+| <Link id="m-focus" /><code>{"private int focus"}</code> |
+| <Link id="m-targets" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/autocamlocomotioncontroller-autocamtarget">{"AutoCamLocomotionController.AutoCamTarget"}</Link>{"> targets"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-a-b/autocamplayer">{"AutoCamPlayer"}</Link>{" PlayerController { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-a-b/autocamplayer">{"AutoCamPlayer"}</Link>{" PlayerController { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
+
+</details>

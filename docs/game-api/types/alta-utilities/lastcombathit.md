@@ -17,26 +17,31 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LastCombatHit()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LastCombatHit()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lasthit" /><code>{"private float lastHit"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-lasthit" /><code>{"private float lastHit"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-internalupdate" /><code>{"override void InternalUpdate("}<Link to="/game-api/types/alta-utilities/livedatadisplayview">{"LiveDataDisplayView"}</Link>{" _)"}</code> |  |
-| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> |  |
-| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-internalupdate" /><code>{"override void InternalUpdate("}<Link to="/game-api/types/alta-utilities/livedatadisplayview">{"LiveDataDisplayView"}</Link>{" _)"}</code> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> |
+| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> |

@@ -17,13 +17,18 @@ A **static class** in `Root.Township`, `Alta.Utilities`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-exec" /><code>{"private static MethodInfo exec"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-exec" /><code>{"private static MethodInfo exec"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-progressalltasks" /><code>{"static void ProgressAllTasks()"}</code> |  |
-| <Link id="m-unitywait" /><code>{"static void UnityWait(Task task)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-progressalltasks" /><code>{"static void ProgressAllTasks()"}</code> |
+| <Link id="m-unitywait" /><code>{"static void UnityWait(Task task)"}</code> |

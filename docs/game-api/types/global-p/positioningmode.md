@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-default" /><code>{"Default = 0"}</code> |  |
-| <Link id="m-paded" /><code>{"Paded = 1"}</code> |  |
-| <Link id="m-startaligned" /><code>{"StartAligned = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-default" /><code>{"Default = 0"}</code> |
+| <Link id="m-paded" /><code>{"Paded = 1"}</code> |
+| <Link id="m-startaligned" /><code>{"StartAligned = 2"}</code> |
 
 ## Used in
 

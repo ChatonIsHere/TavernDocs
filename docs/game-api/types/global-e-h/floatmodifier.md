@@ -18,19 +18,24 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected FloatModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected FloatModifier()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-output" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" output"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-output" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" output"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-input" /><code>{"abstract void Input(float value)"}</code> |  |
-| <Link id="m-output-2" /><code>{"protected void Output(float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-input" /><code>{"abstract void Input(float value)"}</code> |
+| <Link id="m-output-2" /><code>{"protected void Output(float value)"}</code> |

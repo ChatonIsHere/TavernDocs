@@ -17,25 +17,30 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NeckController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NeckController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-headtarget" /><code>{"private Transform headTarget"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-headtarget" /><code>{"private Transform headTarget"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cachedinverseneutral" /><code>{"protected Quaternion[] CachedInverseNeutral { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cachedinverseneutral" /><code>{"protected Quaternion[] CachedInverseNeutral { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updatecharactercomponent" /><code>{"override void UpdateCharacterComponent()"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updatecharactercomponent" /><code>{"override void UpdateCharacterComponent()"}</code> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |

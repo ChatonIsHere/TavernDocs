@@ -18,25 +18,30 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ToggleLiveDataDisplayMenuAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ToggleLiveDataDisplayMenuAction()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-livedatadisplay" /><code>{"private "}<Link to="/game-api/types/alta-utilities/livedatadisplayview">{"LiveDataDisplayView"}</Link>{" liveDataDisplay"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-livedatadisplay" /><code>{"private "}<Link to="/game-api/types/alta-utilities/livedatadisplayview">{"LiveDataDisplayView"}</Link>{" liveDataDisplay"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> |  |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |

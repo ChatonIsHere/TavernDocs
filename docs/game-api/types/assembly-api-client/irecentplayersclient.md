@@ -17,10 +17,10 @@ An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getallasync" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{">> GetAllAsync(int? serverId = null, int limit = 25)"}</code> |  |
-| <Link id="m-recordinteractionasync" /><code>{"Task RecordInteractionAsync("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user, "}<Link to="/game-api/types/assembly-api-models/recentplayerinteractiontype">{"RecentPlayerInteractionType"}</Link>{" type)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getallasync" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{">> GetAllAsync(int? serverId = null, int limit = 25)"}</code> |
+| <Link id="m-recordinteractionasync" /><code>{"Task RecordInteractionAsync("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user, "}<Link to="/game-api/types/assembly-api-models/recentplayerinteractiontype">{"RecentPlayerInteractionType"}</Link>{" type)"}</code> |
 
 ## Used in
 

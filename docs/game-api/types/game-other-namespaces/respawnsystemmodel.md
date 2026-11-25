@@ -20,17 +20,22 @@ State of every respawn shrine (fuel and bound players), saved and sent to client
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RespawnSystemModel()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"RespawnSystemModel("}<Link to="/game-api/types/game-other-namespaces/respawnsystemsavedata">{"RespawnSystemSaveData"}</Link>{" saveData)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RespawnSystemModel()"}</code> |
+| <Link id="m-ctor-2" /><code>{"RespawnSystemModel("}<Link to="/game-api/types/game-other-namespaces/respawnsystemsavedata">{"RespawnSystemSaveData"}</Link>{" saveData)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-respawnshrinemodels" /><code>{"private Dictionary<Guid, "}<Link to="/game-api/types/game-other-namespaces/respawnshrinemodel">{"RespawnShrineModel"}</Link>{"> respawnShrineModels"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-respawnshrinemodels" /><code>{"private Dictionary<Guid, "}<Link to="/game-api/types/game-other-namespaces/respawnshrinemodel">{"RespawnShrineModel"}</Link>{"> respawnShrineModels"}</code> |
+
+</details>
 
 ## Properties
 
@@ -54,7 +59,15 @@ State of every respawn shrine (fuel and bound players), saved and sent to client
 | <Link id="m-removesubscriber" /><code>{"bool RemoveSubscriber(Guid shrineId, int playerId)"}</code> | Unbinds a player id from a shrine. Always true for the global shrine. |
 | <Link id="m-setfuel" /><code>{"void SetFuel(Guid shrineId, float value)"}</code> | Sets a shrine's fuel. |
 | <Link id="m-synctoclients" /><code>{"void SyncToClients("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, ref "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads all shrines as a JSON string. Writing clears the changed and emptied flags. |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Enumerates the shrine models (not including the global shrine). |
 | <Link id="m-getshrinemodelsasjsonstring" /><code>{"private string GetShrineModelsAsJsonString()"}</code> |  |
 | <Link id="m-loadshrinemodelsfromjsonstring" /><code>{"private void LoadShrineModelsFromJsonString(string respawnShrineModelAsJsonString)"}</code> |  |
 | <Link id="m-resetemptiedshrineflags" /><code>{"private void ResetEmptiedShrineFlags()"}</code> |  |
+
+</details>

@@ -17,13 +17,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TaskYield(Task task)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TaskYield(Task task)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-keepwaiting" /><code>{"override bool keepWaiting { get; }"}</code> |  |
-| <Link id="m-task" /><code>{"Task Task { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-keepwaiting" /><code>{"override bool keepWaiting { get; }"}</code> |
+| <Link id="m-task" /><code>{"Task Task { get; set; }"}</code> |

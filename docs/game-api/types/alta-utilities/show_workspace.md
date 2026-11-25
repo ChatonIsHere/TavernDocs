@@ -17,18 +17,23 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Show_Workspace()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Show_Workspace()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-run" /><code>{"protected override void Run()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-run" /><code>{"protected override void Run()"}</code> |

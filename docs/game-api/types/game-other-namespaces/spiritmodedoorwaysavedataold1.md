@@ -18,20 +18,20 @@ A **internal class** in `Root.Township`, `ATT.ClimbingTower`. Reach it through a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpiritModeDoorwaySaveDataOld1()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpiritModeDoorwaySaveDataOld1()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-doorwaymode" /><code><Link to="/game-api/types/game-other-namespaces/spiritmodedoorwaymode">{"SpiritModeDoorwayMode"}</Link>{" doorwayMode"}</code> |  |
-| <Link id="m-playerunlock" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" playerUnlock"}</code> |  |
-| <Link id="m-size" /><code>{"Vector3 size"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-doorwaymode" /><code><Link to="/game-api/types/game-other-namespaces/spiritmodedoorwaymode">{"SpiritModeDoorwayMode"}</Link>{" doorwayMode"}</code> |
+| <Link id="m-playerunlock" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" playerUnlock"}</code> |
+| <Link id="m-size" /><code>{"Vector3 size"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

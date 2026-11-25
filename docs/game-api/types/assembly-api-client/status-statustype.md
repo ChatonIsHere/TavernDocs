@@ -17,10 +17,10 @@ An **enum** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ongoing" /><code>{"OnGoing = 0"}</code> |  |
-| <Link id="m-resolved" /><code>{"Resolved = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ongoing" /><code>{"OnGoing = 0"}</code> |
+| <Link id="m-resolved" /><code>{"Resolved = 1"}</code> |
 
 ## Used in
 

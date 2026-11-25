@@ -17,35 +17,48 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Space(Quaternion rotation, Transform root, int layer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Space(Quaternion rotation, Transform root, int layer)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentparent" /><code>{"private GameObject currentParent"}</code> |  |
-| <Link id="m-defaultxyz" /><code>{"private readonly Vector3[] defaultXYZ"}</code> |  |
-| <Link id="m-layer" /><code>{"private readonly int layer"}</code> |  |
-| <Link id="m-root" /><code>{"private readonly Transform root"}</code> |  |
-| <Link id="m-rotation" /><code>{"private readonly Quaternion rotation"}</code> |  |
-| <Link id="m-xyz" /><code>{"private readonly Vector3[] xyz"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentparent" /><code>{"private GameObject currentParent"}</code> |
+| <Link id="m-defaultxyz" /><code>{"private readonly Vector3[] defaultXYZ"}</code> |
+| <Link id="m-layer" /><code>{"private readonly int layer"}</code> |
+| <Link id="m-root" /><code>{"private readonly Transform root"}</code> |
+| <Link id="m-rotation" /><code>{"private readonly Quaternion rotation"}</code> |
+| <Link id="m-xyz" /><code>{"private readonly Vector3[] xyz"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-parent" /><code>{"GameObject Parent { get; }"}</code> |  |
-| <Link id="m-parenttothis" /><code>{"Matrix4x4 ParentToThis { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-parent" /><code>{"GameObject Parent { get; }"}</code> |
+| <Link id="m-parenttothis" /><code>{"Matrix4x4 ParentToThis { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getdirection" /><code>{"int GetDirection(Vector3 direction)"}</code> |  |
-| <Link id="m-isaligned" /><code>{"bool IsAligned(Quaternion rotation)"}</code> |  |
-| <Link id="m-getnewparent" /><code>{"private void GetNewParent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getdirection" /><code>{"int GetDirection(Vector3 direction)"}</code> |
+| <Link id="m-isaligned" /><code>{"bool IsAligned(Quaternion rotation)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getnewparent" /><code>{"private void GetNewParent()"}</code> |
+
+</details>
 
 ## Used in
 

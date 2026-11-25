@@ -17,21 +17,21 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MouldDefinitionInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MouldDefinitionInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-console/spawncommandmodule-moulddefinitioninfo">{"SpawnCommandModule.MouldDefinitionInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" definition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-console/spawncommandmodule-moulddefinitioninfo">{"SpawnCommandModule.MouldDefinitionInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" definition)"}</code> |
 
 ## Used in
 

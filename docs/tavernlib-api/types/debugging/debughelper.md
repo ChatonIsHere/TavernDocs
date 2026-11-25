@@ -20,18 +20,33 @@ The `/debug_helper` service: copies the game's NLog output into MelonLoader's lo
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"internal DebugHelper()"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"internal DebugHelper()"}</code> |
+
+</details>
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logcatcher" /><code>{"private readonly "}<Link to="/tavernlib-api/types/debugging/nlogcatcher">{"NLogCatcher"}</Link>{" _logCatcher"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logcatcher" /><code>{"private readonly "}<Link to="/tavernlib-api/types/debugging/nlogcatcher">{"NLogCatcher"}</Link>{" _logCatcher"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ongui" /><code>{"private void OnGui()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ongui" /><code>{"private void OnGui()"}</code> |
+
+</details>

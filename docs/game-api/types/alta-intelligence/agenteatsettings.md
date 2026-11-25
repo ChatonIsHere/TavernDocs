@@ -18,26 +18,31 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AgentEatSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AgentEatSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-delay" /><code>{"private float delay"}</code> |  |
-| <Link id="m-isimmediate" /><code>{"private bool isImmediate"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-delay" /><code>{"private float delay"}</code> |
+| <Link id="m-isimmediate" /><code>{"private bool isImmediate"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-delay-2" /><code>{"float Delay { get; }"}</code> |  |
-| <Link id="m-isimmediate-2" /><code>{"bool IsImmediate { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-delay-2" /><code>{"float Delay { get; }"}</code> |
+| <Link id="m-isimmediate-2" /><code>{"bool IsImmediate { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |

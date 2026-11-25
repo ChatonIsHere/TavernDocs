@@ -20,17 +20,25 @@ Bow skill that boosts the damage of the next arrow shot from a bow while the ski
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BowDrawSkill()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BowDrawSkill()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bowstrings" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{", "}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{"> bowStrings"}</code> |  |
 | <Link id="m-damagemultiplierperlevel" /><code>{"protected "}<Link to="/game-api/types/alta-player/floatvaluesperlevel">{"FloatValuesPerLevel"}</Link>{" damageMultiplierPerLevel"}</code> | Damage multiplier for each skill level. |
-| <Link id="m-inputs" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{", "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> inputs"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bowstrings" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{", "}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{"> bowStrings"}</code> |
+| <Link id="m-inputs" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{", "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> inputs"}</code> |
+
+</details>
 
 ## Methods
 
@@ -42,4 +50,12 @@ Bow skill that boosts the damage of the next arrow shot from a bow while the ski
 | <Link id="m-getdamagemultiplier" /><code>{"protected float GetDamageMultiplier("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | The damage multiplier for the player's level in this skill. |
 | <Link id="m-gettransformtocallat" /><code>{"protected override Transform GetTransformToCallAt("}<Link to="/game-api/types/global-t-x/toolbasedskillstatus">{"ToolBasedSkillStatus"}</Link>{" status, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Where to show skill effects: the arrow's tip if it has one, otherwise the entity itself. |
 | <Link id="m-handleinputchanged" /><code>{"protected virtual void HandleInputChanged(bool isEnabled, "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input, "}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{" bowString)"}</code> | Turns the skill effect on or off for the arrow docked on the bow string, if there is one. |
-| <Link id="m-onarrowshot" /><code>{"private void OnArrowShot("}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{" bowString, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" shotEntity, Vector3 shotVelocity)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onarrowshot" /><code>{"private void OnArrowShot("}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{" bowString, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" shotEntity, Vector3 shotVelocity)"}</code> |
+
+</details>

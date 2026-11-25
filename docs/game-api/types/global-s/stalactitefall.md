@@ -17,21 +17,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StalactiteFall()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StalactiteFall()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stalactites" /><code>{"private "}<Link to="/game-api/types/global-t-x/togglekinematiclogic">{"ToggleKinematicLogic"}</Link>{"[] stalactites"}</code> |  |
-| <Link id="m-triggeredvalues" /><code>{"private bool[] triggeredValues"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-stalactites" /><code>{"private "}<Link to="/game-api/types/global-t-x/togglekinematiclogic">{"ToggleKinematicLogic"}</Link>{"[] stalactites"}</code> |
+| <Link id="m-triggeredvalues" /><code>{"private bool[] triggeredValues"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sendonetrue" /><code>{"void SendOneTrue()"}</code> |  |
-| <Link id="m-alltriggered" /><code>{"private bool AllTriggered()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-sendonetrue" /><code>{"void SendOneTrue()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-alltriggered" /><code>{"private bool AllTriggered()"}</code> |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

@@ -17,10 +17,10 @@ An **enum** in `Root.Township`, `ATT.TownshipServer`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-mobilefeatureset" /><code>{"MobileFeatureSet = 2"}</code> |  |
-| <Link id="m-pcfeatureset" /><code>{"PcFeatureSet = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-mobilefeatureset" /><code>{"MobileFeatureSet = 2"}</code> |
+| <Link id="m-pcfeatureset" /><code>{"PcFeatureSet = 1"}</code> |
 
 ## Used in
 

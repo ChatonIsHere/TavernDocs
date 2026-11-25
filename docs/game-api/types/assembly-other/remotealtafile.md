@@ -17,14 +17,14 @@ A **class** in `Alta.IO`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RemoteAltaFile("}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" internalFile, FileInfo remoteFileInfo)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RemoteAltaFile("}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" internalFile, FileInfo remoteFileInfo)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-backupinstantinternal" /><code>{"protected override void BackupInstantInternal()"}</code> |  |
-| <Link id="m-backuptoremoteinternal" /><code>{"protected override Task BackupToRemoteInternal()"}</code> |  |
-| <Link id="m-copyfromremoteinternal" /><code>{"protected override Task CopyFromRemoteInternal()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-backupinstantinternal" /><code>{"protected override void BackupInstantInternal()"}</code> |
+| <Link id="m-backuptoremoteinternal" /><code>{"protected override Task BackupToRemoteInternal()"}</code> |
+| <Link id="m-copyfromremoteinternal" /><code>{"protected override Task CopyFromRemoteInternal()"}</code> |

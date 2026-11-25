@@ -20,12 +20,12 @@ A **internal class** in `Root.Township`, `Alta.Networking`. Reach it through att
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModifiableStaticManagerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModifiableStaticManagerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items" /><code><Link to="/game-api/types/alta-networking/modifiablestaticmanagersavedata-item">{"ModifiableStaticManagerSaveData.Item"}</Link>{"[] items"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-items" /><code><Link to="/game-api/types/alta-networking/modifiablestaticmanagersavedata-item">{"ModifiableStaticManagerSaveData.Item"}</Link>{"[] items"}</code> |

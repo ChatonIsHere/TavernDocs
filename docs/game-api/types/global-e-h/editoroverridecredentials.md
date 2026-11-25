@@ -16,16 +16,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EditorOverrideCredentials()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EditorOverrideCredentials()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-password" /><code>{"string password"}</code> |  |
-| <Link id="m-username" /><code>{"string username"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-password" /><code>{"string password"}</code> |
+| <Link id="m-username" /><code>{"string username"}</code> |
 
 ## Used in
 

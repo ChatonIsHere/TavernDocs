@@ -20,16 +20,21 @@ Prefixes `StatManager.Awake` to rename the stat definition with hash 44538 from 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatNamePatch()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatNamePatch()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-crippledamageprotectionhash" /><code>{"private const uint CrippleDamageProtectionHash"}</code> |  |
-| <Link id="m-done" /><code>{"private static bool done"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-crippledamageprotectionhash" /><code>{"private const uint CrippleDamageProtectionHash"}</code> |
+| <Link id="m-done" /><code>{"private static bool done"}</code> |
+
+</details>
 
 ## Methods
 

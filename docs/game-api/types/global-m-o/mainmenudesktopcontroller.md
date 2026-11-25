@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MainMenuDesktopController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MainMenuDesktopController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-head" /><code>{"private Transform head"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-head" /><code>{"private Transform head"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-head-2" /><code>{"override Transform Head { get; }"}</code> |  |
-| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-head-2" /><code>{"override Transform Head { get; }"}</code> |
+| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> |

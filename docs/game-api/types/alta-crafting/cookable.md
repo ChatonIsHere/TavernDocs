@@ -21,30 +21,38 @@ Makes an item cook and burn from the heat at its `CookingPoint`, then replace it
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Cookable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Cookable()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-burnteffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" burntEffect"}</code> |  |
-| <Link id="m-burntprogress" /><code>{"private float burntProgress"}</code> |  |
-| <Link id="m-burntspawnpoint" /><code>{"private Transform burntSpawnPoint"}</code> |  |
 | <Link id="m-burntversion" /><code>{"protected "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" burntVersion"}</code> | Prefab the item turns into when burnt. |
-| <Link id="m-cookableitem" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{" cookableItem"}</code> |  |
-| <Link id="m-cookedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" cookedEffect"}</code> |  |
-| <Link id="m-cookedprogress" /><code>{"private float cookedProgress"}</code> |  |
-| <Link id="m-cookedspawnpoint" /><code>{"private Transform cookedSpawnPoint"}</code> |  |
 | <Link id="m-cookedversion" /><code>{"protected "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" cookedVersion"}</code> | Prefab the item turns into when cooked. |
-| <Link id="m-cookingpoint" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookingpoint">{"CookingPoint"}</Link>{" cookingPoint"}</code> |  |
 | <Link id="m-cookingtemperatures" /><code>{"protected "}<Link to="/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" cookingTemperatures"}</code> | The temperature settings asset. |
-| <Link id="m-experienceawardedwhenroasted" /><code>{"private int experienceAwardedWhenRoasted"}</code> |  |
-| <Link id="m-isburnable" /><code>{"private bool isBurnable"}</code> |  |
-| <Link id="m-iscookable" /><code>{"private bool isCookable"}</code> |  |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |  |
-| <Link id="m-synceffect" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncEffect"}</code> |  |
+
+<details>
+<summary>13 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-burnteffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" burntEffect"}</code> |
+| <Link id="m-burntprogress" /><code>{"private float burntProgress"}</code> |
+| <Link id="m-burntspawnpoint" /><code>{"private Transform burntSpawnPoint"}</code> |
+| <Link id="m-cookableitem" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{" cookableItem"}</code> |
+| <Link id="m-cookedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" cookedEffect"}</code> |
+| <Link id="m-cookedprogress" /><code>{"private float cookedProgress"}</code> |
+| <Link id="m-cookedspawnpoint" /><code>{"private Transform cookedSpawnPoint"}</code> |
+| <Link id="m-cookingpoint" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookingpoint">{"CookingPoint"}</Link>{" cookingPoint"}</code> |
+| <Link id="m-experienceawardedwhenroasted" /><code>{"private int experienceAwardedWhenRoasted"}</code> |
+| <Link id="m-isburnable" /><code>{"private bool isBurnable"}</code> |
+| <Link id="m-iscookable" /><code>{"private bool isCookable"}</code> |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
+| <Link id="m-synceffect" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncEffect"}</code> |
+
+</details>
 
 ## Properties
 
@@ -65,10 +73,18 @@ Makes an item cook and burn from the heat at its `CookingPoint`, then replace it
 | <Link id="m-optimalcookingtemperature" /><code>{"float OptimalCookingTemperature { get; }"}</code> | Temperature at which cooking is fastest. |
 | <Link id="m-pickup-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> | The pickup this belongs to, found in parents. |
 | <Link id="m-weakcookingtemperature" /><code>{"float WeakCookingTemperature { get; }"}</code> | Lowest temperature that cooks at all. |
-| <Link id="m-burningduration" /><code>{"private float BurningDuration { get; }"}</code> |  |
-| <Link id="m-instantburntemperature" /><code>{"private float InstantBurnTemperature { get; }"}</code> |  |
-| <Link id="m-optimalcookingduration" /><code>{"private float OptimalCookingDuration { get; }"}</code> |  |
-| <Link id="m-weakcookingduration" /><code>{"private float WeakCookingDuration { get; }"}</code> |  |
+
+<details>
+<summary>4 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-burningduration" /><code>{"private float BurningDuration { get; }"}</code> |
+| <Link id="m-instantburntemperature" /><code>{"private float InstantBurnTemperature { get; }"}</code> |
+| <Link id="m-optimalcookingduration" /><code>{"private float OptimalCookingDuration { get; }"}</code> |
+| <Link id="m-weakcookingduration" /><code>{"private float WeakCookingDuration { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -85,16 +101,24 @@ Makes an item cook and burn from the heat at its `CookingPoint`, then replace it
 | <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: enables cooking straight away if the item is already hot or part done, otherwise waits for heat. |
 | <Link id="m-replacewith" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" ReplaceWith(uint prefabHash, "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effect, Transform spawnPosition)"}</code> | Plays the effect, spawns the given prefab in place (if the hash is not 0) and destroys this item. Returns the new entity. |
 | <Link id="m-resetprogress" /><code>{"void ResetProgress()"}</code> | Sets cooked progress back to 0. |
-| <Link id="m-advancecookedprogressfortemperature" /><code>{"private void AdvanceCookedProgressForTemperature(float temperature)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-checkenable" /><code>{"private void CheckEnable("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |  |
-| <Link id="m-handleburnabletemperatures" /><code>{"private bool HandleBurnableTemperatures(float temperature)"}</code> |  |
-| <Link id="m-handlenormalcookingtemperature" /><code>{"private bool HandleNormalCookingTemperature(float temperature)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-spawncookedversion" /><code>{"private void SpawnCookedVersion()"}</code> |  |
-| <Link id="m-swaptoburntversion" /><code>{"private void SwapToBurntVersion()"}</code> |  |
-| <Link id="m-synceffect-2" /><code>{"private void SyncEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isCooked)"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+
+<details>
+<summary>10 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-advancecookedprogressfortemperature" /><code>{"private void AdvanceCookedProgressForTemperature(float temperature)"}</code> |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-checkenable" /><code>{"private void CheckEnable("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |
+| <Link id="m-handleburnabletemperatures" /><code>{"private bool HandleBurnableTemperatures(float temperature)"}</code> |
+| <Link id="m-handlenormalcookingtemperature" /><code>{"private bool HandleNormalCookingTemperature(float temperature)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-spawncookedversion" /><code>{"private void SpawnCookedVersion()"}</code> |
+| <Link id="m-swaptoburntversion" /><code>{"private void SwapToBurntVersion()"}</code> |
+| <Link id="m-synceffect-2" /><code>{"private void SyncEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isCooked)"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -20,10 +20,10 @@ Which console a login came through: the websocket console, or another one. Named
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-other" /><code>{"Other = 1"}</code> |  |
-| <Link id="m-websocket" /><code>{"WebSocket = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-other" /><code>{"Other = 1"}</code> |
+| <Link id="m-websocket" /><code>{"WebSocket = 0"}</code> |
 
 ## Used in
 

@@ -20,9 +20,9 @@ Server: a save file that belongs to one player (by user ID), loaded whether or n
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PerPlayerContent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PerPlayerContent()"}</code> |
 
 ## Properties
 
@@ -43,5 +43,13 @@ Server: a save file that belongs to one player (by user ID), loaded whether or n
 | <Link id="m-resumesaving" /><code>{"void ResumeSaving(bool isUnloading)"}</code> | Ends a pause and saves straight away, optionally unloading the file. |
 | <Link id="m-save" /><code>{"void Save(bool isUnloading)"}</code> | Writes the file if the server has save files, and optionally queues it to unload. |
 | <Link id="m-saveifnoplayer" /><code>{"void SaveIfNoPlayer()"}</code> | Saves now if the player is offline and saving isn't paused. |
-| <Link id="m-loseplayer" /><code>{"private void LosePlayer("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-playerjoined" /><code>{"private void PlayerJoined("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" newPlayer)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-loseplayer" /><code>{"private void LosePlayer("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| <Link id="m-playerjoined" /><code>{"private void PlayerJoined("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" newPlayer)"}</code> |
+
+</details>

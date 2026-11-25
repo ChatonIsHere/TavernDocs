@@ -16,16 +16,16 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ElbowDataPointScore("}<Link to="/game-api/types/alta-player/ielbowguidedatapoint">{"IElbowGuideDataPoint"}</Link>{" point, float score)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ElbowDataPointScore("}<Link to="/game-api/types/alta-player/ielbowguidedatapoint">{"IElbowGuideDataPoint"}</Link>{" point, float score)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-point" /><code><Link to="/game-api/types/alta-player/ielbowguidedatapoint">{"IElbowGuideDataPoint"}</Link>{" Point { get; set; }"}</code> |  |
-| <Link id="m-score" /><code>{"float Score { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-point" /><code><Link to="/game-api/types/alta-player/ielbowguidedatapoint">{"IElbowGuideDataPoint"}</Link>{" Point { get; set; }"}</code> |
+| <Link id="m-score" /><code>{"float Score { get; set; }"}</code> |
 
 ## Used in
 

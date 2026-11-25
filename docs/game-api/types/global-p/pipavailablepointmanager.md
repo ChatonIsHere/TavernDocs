@@ -17,28 +17,41 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PipAvailablePointManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PipAvailablePointManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-anglegap" /><code>{"private float angleGap"}</code> |  |
-| <Link id="m-instantiated" /><code>{"private "}<Link to="/game-api/types/global-a-b/availablepointbar">{"AvailablePointBar"}</Link>{"[] instantiated"}</code> |  |
-| <Link id="m-pipprefab" /><code>{"private "}<Link to="/game-api/types/global-a-b/availablepointbar">{"AvailablePointBar"}</Link>{" pipPrefab"}</code> |  |
-| <Link id="m-startpipangle" /><code>{"private float startPipAngle"}</code> |  |
-| <Link id="m-temporarypips" /><code>{"private Queue<int> temporaryPips"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-anglegap" /><code>{"private float angleGap"}</code> |
+| <Link id="m-instantiated" /><code>{"private "}<Link to="/game-api/types/global-a-b/availablepointbar">{"AvailablePointBar"}</Link>{"[] instantiated"}</code> |
+| <Link id="m-pipprefab" /><code>{"private "}<Link to="/game-api/types/global-a-b/availablepointbar">{"AvailablePointBar"}</Link>{" pipPrefab"}</code> |
+| <Link id="m-startpipangle" /><code>{"private float startPipAngle"}</code> |
+| <Link id="m-temporarypips" /><code>{"private Queue<int> temporaryPips"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cleantemporary" /><code>{"override void CleanTemporary()"}</code> |  |
-| <Link id="m-opentemporary" /><code>{"override void OpenTemporary(int index)"}</code> |  |
-| <Link id="m-openvisual" /><code>{"override void OpenVisual(int index)"}</code> |  |
-| <Link id="m-updateavailablepointsvisual" /><code>{"override void UpdateAvailablePointsVisual(int freePoints)"}</code> |  |
-| <Link id="m-ensuresetup" /><code>{"private void EnsureSetup()"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-placepips" /><code>{"private void PlacePips(Action<int, Quaternion> positionMethod)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cleantemporary" /><code>{"override void CleanTemporary()"}</code> |
+| <Link id="m-opentemporary" /><code>{"override void OpenTemporary(int index)"}</code> |
+| <Link id="m-openvisual" /><code>{"override void OpenVisual(int index)"}</code> |
+| <Link id="m-updateavailablepointsvisual" /><code>{"override void UpdateAvailablePointsVisual(int freePoints)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ensuresetup" /><code>{"private void EnsureSetup()"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-placepips" /><code>{"private void PlacePips(Action<int, Quaternion> positionMethod)"}</code> |
+
+</details>

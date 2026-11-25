@@ -17,21 +17,34 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimatedEmblem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimatedEmblem()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |  |
-| <Link id="m-callback" /><code>{"private Action callBack"}</code> |  |
-| <Link id="m-disablingparameter" /><code>{"private string disablingParameter"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
+| <Link id="m-callback" /><code>{"private Action callBack"}</code> |
+| <Link id="m-disablingparameter" /><code>{"private string disablingParameter"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-close" /><code>{"override void Close(Action callBack)"}</code> |  |
-| <Link id="m-onanimationended" /><code>{"private void IAnimationEndCallbackReceiver.OnAnimationEnded()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-close" /><code>{"override void Close(Action callBack)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onanimationended" /><code>{"private void IAnimationEndCallbackReceiver.OnAnimationEnded()"}</code> |
+
+</details>

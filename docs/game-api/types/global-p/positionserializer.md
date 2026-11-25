@@ -19,9 +19,9 @@ Writes and reads an entity's position and rotation for the network, optionally r
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionSerializer("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionSerializer("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
 
 ## Fields
 
@@ -29,15 +29,23 @@ Writes and reads an entity's position and rotation for the network, optionally r
 | --- | --- |
 | <Link id="m-position" /><code>{"Vector3 position"}</code> | Last world position written or received. |
 | <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | Last world rotation written or received. |
-| <Link id="m-context" /><code>{"private "}<Link to="/game-api/types/global-i-l/imovementcontext">{"IMovementContext"}</Link>{" context"}</code> |  |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
-| <Link id="m-getcontext" /><code>{"private "}<Link to="/game-api/types/global-m-o/memoizeone-tinput-toutput">{"MemoizeOne"}</Link>{"<uint, "}<Link to="/game-api/types/global-i-l/imovementcontext">{"IMovementContext"}</Link>{"> getContext"}</code> |  |
 | <Link id="m-iscontextchanged" /><code>{"protected bool isContextChanged"}</code> | Set on read when the context changed from the previous one. |
 | <Link id="m-lastcontextparent" /><code>{"protected Transform lastContextParent"}</code> | The transform `FixParent` last parented to. |
-| <Link id="m-localmaximum" /><code>{"private static readonly Vector3 LocalMaximum"}</code> |  |
-| <Link id="m-localminimum" /><code>{"private static readonly Vector3 LocalMinimum"}</code> |  |
-| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |  |
-| <Link id="m-localrotation" /><code>{"private Quaternion localRotation"}</code> |  |
+
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-context" /><code>{"private "}<Link to="/game-api/types/global-i-l/imovementcontext">{"IMovementContext"}</Link>{" context"}</code> |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| <Link id="m-getcontext" /><code>{"private "}<Link to="/game-api/types/global-m-o/memoizeone-tinput-toutput">{"MemoizeOne"}</Link>{"<uint, "}<Link to="/game-api/types/global-i-l/imovementcontext">{"IMovementContext"}</Link>{"> getContext"}</code> |
+| <Link id="m-localmaximum" /><code>{"private static readonly Vector3 LocalMaximum"}</code> |
+| <Link id="m-localminimum" /><code>{"private static readonly Vector3 LocalMinimum"}</code> |
+| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |
+| <Link id="m-localrotation" /><code>{"private Quaternion localRotation"}</code> |
+
+</details>
 
 ## Properties
 
@@ -55,8 +63,16 @@ Writes and reads an entity's position and rotation for the network, optionally r
 | <Link id="m-forceremoteposition" /><code>{"void ForceRemotePosition(Vector3 position)"}</code> | Sets the stored world position and updates the context-local copy to match. |
 | <Link id="m-forceremoterotation" /><code>{"void ForceRemoteRotation(Quaternion rotation)"}</code> | Sets the stored world rotation and updates the context-local copy to match. |
 | <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads position, rotation and the context id plus local offset. Readers that aren't authoritative pick up the new context. |
-| <Link id="m-getcontext-2" /><code>{"private "}<Link to="/game-api/types/global-i-l/imovementcontext">{"IMovementContext"}</Link>{" GetContext(uint id)"}</code> |  |
-| <Link id="m-removecontext" /><code>{"private void RemoveContext("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-getcontext-2" /><code>{"private "}<Link to="/game-api/types/global-i-l/imovementcontext">{"IMovementContext"}</Link>{" GetContext(uint id)"}</code> |
+| <Link id="m-removecontext" /><code>{"private void RemoveContext("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+
+</details>
 
 ## Used in
 

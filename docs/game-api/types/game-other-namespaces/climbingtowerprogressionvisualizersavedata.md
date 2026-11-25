@@ -19,16 +19,16 @@ A **class** in `Root.Township`, `Features.Gameplay.ClimbingTower`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClimbingTowerProgressionVisualizerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClimbingTowerProgressionVisualizerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gaugeheights" /><code>{"float[] GaugeHeights"}</code> |  |
-| <Link id="m-orbindexes" /><code>{"uint[] OrbIndexes"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gaugeheights" /><code>{"float[] GaugeHeights"}</code> |
+| <Link id="m-orbindexes" /><code>{"uint[] OrbIndexes"}</code> |
 
 ## Used in
 

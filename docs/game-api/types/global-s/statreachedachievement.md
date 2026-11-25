@@ -18,26 +18,39 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatReachedAchievement()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatReachedAchievement()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-required" /><code>{"private int required"}</code> |  |
-| <Link id="m-targetstat" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" targetStat"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-required" /><code>{"private int required"}</code> |
+| <Link id="m-targetstat" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" targetStat"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targetstat-2" /><code><Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" TargetStat { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-targetstat-2" /><code><Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" TargetStat { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-updatevalue" /><code>{"private void UpdateValue("}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" stat, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-updatevalue" /><code>{"private void UpdateValue("}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" stat, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, float value)"}</code> |
+
+</details>

@@ -18,19 +18,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SafetySpline()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SafetySpline()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-extraradius" /><code>{"private float extraRadius"}</code> |  |
-| <Link id="m-fallminimum" /><code>{"private float fallMinimum"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-extraradius" /><code>{"private float extraRadius"}</code> |
+| <Link id="m-fallminimum" /><code>{"private float fallMinimum"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> |

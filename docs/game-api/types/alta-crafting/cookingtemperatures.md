@@ -16,27 +16,32 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CookingTemperatures()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CookingTemperatures()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-burningcooking" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookingtemperatureduration">{"CookingTemperatureDuration"}</Link>{" burningCooking"}</code> |  |
-| <Link id="m-instantburntemperature" /><code>{"private float instantBurnTemperature"}</code> |  |
-| <Link id="m-optimalcooking" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookingtemperatureduration">{"CookingTemperatureDuration"}</Link>{" optimalCooking"}</code> |  |
-| <Link id="m-weakcooking" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookingtemperatureduration">{"CookingTemperatureDuration"}</Link>{" weakCooking"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-burningcooking" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookingtemperatureduration">{"CookingTemperatureDuration"}</Link>{" burningCooking"}</code> |
+| <Link id="m-instantburntemperature" /><code>{"private float instantBurnTemperature"}</code> |
+| <Link id="m-optimalcooking" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookingtemperatureduration">{"CookingTemperatureDuration"}</Link>{" optimalCooking"}</code> |
+| <Link id="m-weakcooking" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookingtemperatureduration">{"CookingTemperatureDuration"}</Link>{" weakCooking"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-burningcooking-2" /><code><Link to="/game-api/types/alta-crafting/cookingtemperatureduration">{"CookingTemperatureDuration"}</Link>{" BurningCooking { get; }"}</code> |  |
-| <Link id="m-instantburntemperature-2" /><code>{"float InstantBurnTemperature { get; }"}</code> |  |
-| <Link id="m-optimalcooking-2" /><code><Link to="/game-api/types/alta-crafting/cookingtemperatureduration">{"CookingTemperatureDuration"}</Link>{" OptimalCooking { get; }"}</code> |  |
-| <Link id="m-weakcooking-2" /><code><Link to="/game-api/types/alta-crafting/cookingtemperatureduration">{"CookingTemperatureDuration"}</Link>{" WeakCooking { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-burningcooking-2" /><code><Link to="/game-api/types/alta-crafting/cookingtemperatureduration">{"CookingTemperatureDuration"}</Link>{" BurningCooking { get; }"}</code> |
+| <Link id="m-instantburntemperature-2" /><code>{"float InstantBurnTemperature { get; }"}</code> |
+| <Link id="m-optimalcooking-2" /><code><Link to="/game-api/types/alta-crafting/cookingtemperatureduration">{"CookingTemperatureDuration"}</Link>{" OptimalCooking { get; }"}</code> |
+| <Link id="m-weakcooking-2" /><code><Link to="/game-api/types/alta-crafting/cookingtemperatureduration">{"CookingTemperatureDuration"}</Link>{" WeakCooking { get; }"}</code> |
 
 ## Used in
 

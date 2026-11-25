@@ -17,23 +17,36 @@ A **static class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forcebackup" /><code>{"static void ForceBackup(bool isInstant = false)"}</code> |  |
-| <Link id="m-cavewipe" /><code>{"private static async Task CaveWipe()"}</code> |  |
-| <Link id="m-forcewipe" /><code>{"private static async Task<bool> ForceWipe(bool keepPlayers = true)"}</code> |  |
-| <Link id="m-fullwipe" /><code>{"private static async Task<bool> FullWipe()"}</code> |  |
-| <Link id="m-instant" /><code>{"private static async Task Instant()"}</code> |  |
-| <Link id="m-save" /><code>{"private static async Task Save()"}</code> |  |
-| <Link id="m-wipe" /><code>{"private static async Task<bool> Wipe()"}</code> |  |
-| <Link id="m-wipe-2" /><code>{"private static async Task<bool> Wipe(bool isSettingOffline)"}</code> |  |
-| <Link id="m-wipeallplayers" /><code>{"private static void WipeAllPlayers(bool isWipingATM = true, bool isWipingPostbox = true, bool isWipingLandmarks = true, bool isWipingMap = true)"}</code> |  |
-| <Link id="m-wipecache" /><code>{"private static void WipeCache(bool isSettingOffline = false)"}</code> |  |
-| <Link id="m-wipecommunitystorage" /><code>{"private static async Task WipeCommunityStorage()"}</code> |  |
-| <Link id="m-wipeplayer" /><code>{"private static async Task<bool> WipePlayer("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user, bool isWipingLockbox = true, bool isWipingATM = true, bool isWipingPostbox = true, bool isWipingLandmarks = true, bool isWipingMap = true)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-forcebackup" /><code>{"static void ForceBackup(bool isInstant = false)"}</code> |
+
+<details>
+<summary>11 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-cavewipe" /><code>{"private static async Task CaveWipe()"}</code> |
+| <Link id="m-forcewipe" /><code>{"private static async Task<bool> ForceWipe(bool keepPlayers = true)"}</code> |
+| <Link id="m-fullwipe" /><code>{"private static async Task<bool> FullWipe()"}</code> |
+| <Link id="m-instant" /><code>{"private static async Task Instant()"}</code> |
+| <Link id="m-save" /><code>{"private static async Task Save()"}</code> |
+| <Link id="m-wipe" /><code>{"private static async Task<bool> Wipe()"}</code> |
+| <Link id="m-wipe-2" /><code>{"private static async Task<bool> Wipe(bool isSettingOffline)"}</code> |
+| <Link id="m-wipeallplayers" /><code>{"private static void WipeAllPlayers(bool isWipingATM = true, bool isWipingPostbox = true, bool isWipingLandmarks = true, bool isWipingMap = true)"}</code> |
+| <Link id="m-wipecache" /><code>{"private static void WipeCache(bool isSettingOffline = false)"}</code> |
+| <Link id="m-wipecommunitystorage" /><code>{"private static async Task WipeCommunityStorage()"}</code> |
+| <Link id="m-wipeplayer" /><code>{"private static async Task<bool> WipePlayer("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user, bool isWipingLockbox = true, bool isWipingATM = true, bool isWipingPostbox = true, bool isWipingLandmarks = true, bool isWipingMap = true)"}</code> |
+
+</details>

@@ -17,19 +17,19 @@ An **interface** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-byteoffset" /><code>{"int ByteOffset { get; }"}</code> |  |
-| <Link id="m-packetsize" /><code>{"int PacketSize { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-byteoffset" /><code>{"int ByteOffset { get; }"}</code> |
+| <Link id="m-packetsize" /><code>{"int PacketSize { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-connect" /><code><Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" Connect(string ipAddress, int port)"}</code> |  |
-| <Link id="m-createchannel" /><code>{"int CreateChannel(bool isReliable)"}</code> |  |
-| <Link id="m-createserver" /><code><Link to="/game-api/types/assembly-other/itransportserver">{"ITransportServer"}</Link>{" CreateServer(int port)"}</code> |  |
-| <Link id="m-terminate" /><code>{"void Terminate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-connect" /><code><Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" Connect(string ipAddress, int port)"}</code> |
+| <Link id="m-createchannel" /><code>{"int CreateChannel(bool isReliable)"}</code> |
+| <Link id="m-createserver" /><code><Link to="/game-api/types/assembly-other/itransportserver">{"ITransportServer"}</Link>{" CreateServer(int port)"}</code> |
+| <Link id="m-terminate" /><code>{"void Terminate()"}</code> |
 
 ## Used in
 

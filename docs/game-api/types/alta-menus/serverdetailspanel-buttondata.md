@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ButtonData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ButtonData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-button" /><code><Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" button"}</code> |  |
-| <Link id="m-data" /><code>{"string data"}</code> |  |
-| <Link id="m-friendlyname" /><code>{"string friendlyName"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-button" /><code><Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" button"}</code> |
+| <Link id="m-data" /><code>{"string data"}</code> |
+| <Link id="m-friendlyname" /><code>{"string friendlyName"}</code> |
 
 ## Used in
 

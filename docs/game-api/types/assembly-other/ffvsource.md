@@ -17,12 +17,12 @@ An **enum** in `Alta.Platform`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-characterpaking" /><code>{"CharacterPaking = 8"}</code> |  |
-| <Link id="m-hurt" /><code>{"Hurt = 2"}</code> |  |
-| <Link id="m-lowperformance" /><code>{"LowPerformance = 4"}</code> |  |
-| <Link id="m-movement" /><code>{"Movement = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-characterpaking" /><code>{"CharacterPaking = 8"}</code> |
+| <Link id="m-hurt" /><code>{"Hurt = 2"}</code> |
+| <Link id="m-lowperformance" /><code>{"LowPerformance = 4"}</code> |
+| <Link id="m-movement" /><code>{"Movement = 1"}</code> |
 
 ## Used in
 

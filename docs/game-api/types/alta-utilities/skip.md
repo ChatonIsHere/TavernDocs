@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `Alta.Bezier`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Skip()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Skip()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items" /><code>{"private GameObject[] items"}</code> |  |
-| <Link id="m-skipinterval" /><code>{"private int skipInterval"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-items" /><code>{"private GameObject[] items"}</code> |
+| <Link id="m-skipinterval" /><code>{"private int skipInterval"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getprefab" /><code>{"override GameObject GetPrefab(List<"}<Link to="/game-api/types/alta-utilities/splinedecorator-part">{"SplineDecorator.Part"}</Link>{"> parts, int index)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getprefab" /><code>{"override GameObject GetPrefab(List<"}<Link to="/game-api/types/alta-utilities/splinedecorator-part">{"SplineDecorator.Part"}</Link>{"> parts, int index)"}</code> |

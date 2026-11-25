@@ -19,19 +19,32 @@ A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerControllerLifetimeScope()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerControllerLifetimeScope()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-concreteplayercontrollermultilockmodel" /><code>{"private MonoBehaviour concretePlayerControllerMultiLockModel"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-concreteplayercontrollermultilockmodel" /><code>{"private MonoBehaviour concretePlayerControllerMultiLockModel"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-configurescope" /><code>{"protected override void ConfigureScope(IContainerBuilder builder)"}</code> |  |
-| <Link id="m-registercontrolsafetylockmodel" /><code>{"private void RegisterControlSafetyLockModel(IContainerBuilder builder)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-configurescope" /><code>{"protected override void ConfigureScope(IContainerBuilder builder)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-registercontrolsafetylockmodel" /><code>{"private void RegisterControlSafetyLockModel(IContainerBuilder builder)"}</code> |
+
+</details>

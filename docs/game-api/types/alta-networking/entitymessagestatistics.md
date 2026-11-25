@@ -17,16 +17,16 @@ A **class** in `Root.Township`, `Alta.Profiling.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EntityMessageStatistics()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EntityMessageStatistics()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-registermessagesend" /><code>{"void RegisterMessageSend("}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType, int byteCount)"}</code> |  |
-| <Link id="m-createnewstatistic" /><code>{"protected override "}<Link to="/game-api/types/alta-networking/entitymessagetypestatistic">{"EntityMessageTypeStatistic"}</Link>{" CreateNewStatistic("}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" creationArgument)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-registermessagesend" /><code>{"void RegisterMessageSend("}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType, int byteCount)"}</code> |
+| <Link id="m-createnewstatistic" /><code>{"protected override "}<Link to="/game-api/types/alta-networking/entitymessagetypestatistic">{"EntityMessageTypeStatistic"}</Link>{" CreateNewStatistic("}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" creationArgument)"}</code> |
 
 ## Used in
 

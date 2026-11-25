@@ -17,21 +17,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HashedGeneralValuesWarmer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HashedGeneralValuesWarmer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-framemillisecondallowance" /><code>{"private float frameMillisecondAllowance"}</code> |  |
-| <Link id="m-prefabstowarm" /><code>{"private uint[] prefabsToWarm"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-framemillisecondallowance" /><code>{"private float frameMillisecondAllowance"}</code> |
+| <Link id="m-prefabstowarm" /><code>{"private uint[] prefabsToWarm"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private async void Awake()"}</code> |  |
-| <Link id="m-initialize" /><code>{"private async Task Initialize()"}</code> |  |
-| <Link id="m-warmprefabs" /><code>{"private async Task WarmPrefabs()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private async void Awake()"}</code> |
+| <Link id="m-initialize" /><code>{"private async Task Initialize()"}</code> |
+| <Link id="m-warmprefabs" /><code>{"private async Task WarmPrefabs()"}</code> |
+
+</details>

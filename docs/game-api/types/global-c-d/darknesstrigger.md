@@ -16,26 +16,39 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdarktarget" /><code>{"private static bool isDarkTarget"}</code> |  |
-| <Link id="m-isupdating" /><code>{"private static bool isUpdating"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isdarktarget" /><code>{"private static bool isDarkTarget"}</code> |
+| <Link id="m-isupdating" /><code>{"private static bool isUpdating"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdark" /><code>{"static bool IsDark { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isdark" /><code>{"static bool IsDark { get; private set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onchanged" /><code>{"static event Action<bool> OnChanged"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onchanged" /><code>{"static event Action<bool> OnChanged"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setisdark" /><code>{"static void SetIsDark(bool isDark)"}</code> |  |
-| <Link id="m-updatedark" /><code>{"private static void UpdateDark()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setisdark" /><code>{"static void SetIsDark(bool isDark)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-updatedark" /><code>{"private static void UpdateDark()"}</code> |
+
+</details>

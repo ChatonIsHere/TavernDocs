@@ -17,16 +17,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NameplateMeshReference()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NameplateMeshReference()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-mesh" /><code>{"Mesh mesh"}</code> |  |
-| <Link id="m-meshfilter" /><code>{"MeshFilter meshFilter"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-mesh" /><code>{"Mesh mesh"}</code> |
+| <Link id="m-meshfilter" /><code>{"MeshFilter meshFilter"}</code> |
 
 ## Used in
 

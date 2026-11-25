@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-recalculatetangents" /><code>{"static void RecalculateTangents(Mesh mesh)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-recalculatetangents" /><code>{"static void RecalculateTangents(Mesh mesh)"}</code> |

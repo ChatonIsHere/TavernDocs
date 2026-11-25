@@ -19,9 +19,9 @@ A user plus the policies (permissions) and verified flag read from their Alta JW
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UserInfoWithPermissions(int identifier, string username, bool isVerified, IEnumerable<string> policies)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UserInfoWithPermissions(int identifier, string username, bool isVerified, IEnumerable<string> policies)"}</code> |
 
 ## Properties
 

@@ -17,31 +17,44 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PersonalSpace()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PersonalSpace()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |  |
-| <Link id="m-character" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" character"}</code> |  |
-| <Link id="m-spherecollider" /><code>{"private SphereCollider sphereCollider"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |
+| <Link id="m-character" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" character"}</code> |
+| <Link id="m-spherecollider" /><code>{"private SphereCollider sphereCollider"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-character-2" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" Character { get; }"}</code> |  |
-| <Link id="m-radius" /><code>{"float Radius { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-character-2" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" Character { get; }"}</code> |
+| <Link id="m-radius" /><code>{"float Radius { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-disablepersonalspace" /><code>{"void DisablePersonalSpace()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-disablepersonalspace" /><code>{"void DisablePersonalSpace()"}</code> |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+
+</details>

@@ -17,32 +17,37 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RotatingJoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RotatingJoint()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> |  |
-| <Link id="m-joint" /><code>{"private Transform joint"}</code> |  |
-| <Link id="m-maxangle" /><code>{"private float maxAngle"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> |
+| <Link id="m-joint" /><code>{"private Transform joint"}</code> |
+| <Link id="m-maxangle" /><code>{"private float maxAngle"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-joint-2" /><code>{"Transform Joint { get; }"}</code> |  |
-| <Link id="m-maxangle-2" /><code>{"float MaxAngle { get; }"}</code> |  |
-| <Link id="m-originalrotation" /><code>{"Quaternion OriginalRotation { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-joint-2" /><code>{"Transform Joint { get; }"}</code> |
+| <Link id="m-maxangle-2" /><code>{"float MaxAngle { get; }"}</code> |
+| <Link id="m-originalrotation" /><code>{"Quaternion OriginalRotation { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getangle" /><code>{"float GetAngle(Vector3 direction)"}</code> |  |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getangle" /><code>{"float GetAngle(Vector3 direction)"}</code> |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> |
 
 ## Used in
 

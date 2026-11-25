@@ -18,9 +18,9 @@ A player's whole cosmetic setup written out as packed bits, so it can be stored 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticPresetData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CosmeticPresetData()"}</code> |
 
 ## Fields
 

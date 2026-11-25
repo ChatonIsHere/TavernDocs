@@ -19,35 +19,40 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DownwardSwingInputStructure()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DownwardSwingInputStructure()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activetime" /><code>{"private float activeTime"}</code> |  |
-| <Link id="m-hasactivetime" /><code>{"private bool hasActiveTime"}</code> |  |
-| <Link id="m-heightdown" /><code>{"private float heightDown"}</code> |  |
-| <Link id="m-heightup" /><code>{"private float heightUp"}</code> |  |
-| <Link id="m-timetolowerhand" /><code>{"private float timeToLowerHand"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activetime" /><code>{"private float activeTime"}</code> |
+| <Link id="m-hasactivetime" /><code>{"private bool hasActiveTime"}</code> |
+| <Link id="m-heightdown" /><code>{"private float heightDown"}</code> |
+| <Link id="m-heightup" /><code>{"private float heightUp"}</code> |
+| <Link id="m-timetolowerhand" /><code>{"private float timeToLowerHand"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activetime-2" /><code>{"float ActiveTime { get; }"}</code> |  |
-| <Link id="m-hasactivetime-2" /><code>{"bool HasActiveTime { get; }"}</code> |  |
-| <Link id="m-heightdown-2" /><code>{"float HeightDown { get; }"}</code> |  |
-| <Link id="m-heightup-2" /><code>{"float HeightUp { get; }"}</code> |  |
-| <Link id="m-timetolowerhand-2" /><code>{"float TimeToLowerHand { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-activetime-2" /><code>{"float ActiveTime { get; }"}</code> |
+| <Link id="m-hasactivetime-2" /><code>{"bool HasActiveTime { get; }"}</code> |
+| <Link id="m-heightdown-2" /><code>{"float HeightDown { get; }"}</code> |
+| <Link id="m-heightup-2" /><code>{"float HeightUp { get; }"}</code> |
+| <Link id="m-timetolowerhand-2" /><code>{"float TimeToLowerHand { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getnewinput" /><code>{"override "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getnewinput" /><code>{"override "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> |
 
 ## Used in
 

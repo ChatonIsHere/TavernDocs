@@ -17,26 +17,39 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DPadInputSource(int direction, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DPadInputSource(int direction, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playerinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-playerinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-direction" /><code>{"int Direction { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-direction" /><code>{"int Direction { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addlisteners" /><code>{"void AddListeners()"}</code> |  |
-| <Link id="m-removelisteners" /><code>{"void RemoveListeners()"}</code> |  |
-| <Link id="m-keypressed" /><code>{"private void KeyPressed(int direction)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addlisteners" /><code>{"void AddListeners()"}</code> |
+| <Link id="m-removelisteners" /><code>{"void RemoveListeners()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-keypressed" /><code>{"private void KeyPressed(int direction)"}</code> |
+
+</details>

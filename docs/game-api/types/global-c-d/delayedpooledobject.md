@@ -18,20 +18,20 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DelayedPooledObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DelayedPooledObject()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-releasedelay" /><code>{"protected float releaseDelay"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-releasedelay" /><code>{"protected float releaseDelay"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-release" /><code>{"override void Release()"}</code> |  |
-| <Link id="m-delayrelease" /><code>{"protected virtual IEnumerator DelayRelease() (iterator)"}</code> |  |
-| <Link id="m-finalrelease" /><code>{"protected void FinalRelease()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-release" /><code>{"override void Release()"}</code> |
+| <Link id="m-delayrelease" /><code>{"protected virtual IEnumerator DelayRelease() (iterator)"}</code> |
+| <Link id="m-finalrelease" /><code>{"protected void FinalRelease()"}</code> |

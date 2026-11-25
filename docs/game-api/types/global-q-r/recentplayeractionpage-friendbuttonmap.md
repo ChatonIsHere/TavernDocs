@@ -17,10 +17,10 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-button" /><code>{"GameObject button"}</code> |  |
-| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/friendshiptype">{"FriendshipType"}</Link>{" type"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-button" /><code>{"GameObject button"}</code> |
+| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/friendshiptype">{"FriendshipType"}</Link>{" type"}</code> |
 
 ## Used in
 

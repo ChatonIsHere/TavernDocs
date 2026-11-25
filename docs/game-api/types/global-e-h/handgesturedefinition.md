@@ -21,17 +21,22 @@ A hand gesture asset (such as pointing), matched to a transition on the hand ani
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HandGestureDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HandGestureDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activefingers" /><code>{"private "}<Link to="/game-api/types/global-e-h/handfingers">{"HandFingers"}</Link>{" activeFingers"}</code> |  |
-| <Link id="m-animatortransitionindex" /><code>{"private int animatorTransitionIndex"}</code> |  |
-| <Link id="m-gestureforanimationindex" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{"> gestureForAnimationIndex"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activefingers" /><code>{"private "}<Link to="/game-api/types/global-e-h/handfingers">{"HandFingers"}</Link>{" activeFingers"}</code> |
+| <Link id="m-animatortransitionindex" /><code>{"private int animatorTransitionIndex"}</code> |
+| <Link id="m-gestureforanimationindex" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{"> gestureForAnimationIndex"}</code> |
+
+</details>
 
 ## Properties
 

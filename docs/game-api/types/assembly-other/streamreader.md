@@ -18,42 +18,55 @@ A **class** in `Alta.Serialization.Runtime`, `Alta.Serialization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StreamReader(Func<uint[], uint[]> getMoreData, int byteCount)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"StreamReader(uint[] data, int byteCount)"}</code> |  |
-| <Link id="m-ctor-3" /><code>{"private StreamReader()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StreamReader(Func<uint[], uint[]> getMoreData, int byteCount)"}</code> |
+| <Link id="m-ctor-2" /><code>{"StreamReader(uint[] data, int byteCount)"}</code> |
+
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor-3" /><code>{"private StreamReader()"}</code> |
+
+</details>
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reader" /><code>{"private "}<Link to="/game-api/types/assembly-other/bitreader">{"BitReader"}</Link>{" reader"}</code> |  |
-| <Link id="m-stringbuffer" /><code>{"private static byte[] stringBuffer"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-reader" /><code>{"private "}<Link to="/game-api/types/assembly-other/bitreader">{"BitReader"}</Link>{" reader"}</code> |
+| <Link id="m-stringbuffer" /><code>{"private static byte[] stringBuffer"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bitindex" /><code>{"override uint BitIndex { get; }"}</code> |  |
-| <Link id="m-isfinished" /><code>{"bool IsFinished { get; }"}</code> |  |
-| <Link id="m-totalbytecount" /><code>{"override uint TotalByteCount { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bitindex" /><code>{"override uint BitIndex { get; }"}</code> |
+| <Link id="m-isfinished" /><code>{"bool IsFinished { get; }"}</code> |
+| <Link id="m-totalbytecount" /><code>{"override uint TotalByteCount { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-align" /><code>{"override void Align()"}</code> |  |
-| <Link id="m-backtrack" /><code>{"override void BackTrack(uint bitCount)"}</code> |  |
-| <Link id="m-clone" /><code>{"override object Clone()"}</code> |  |
-| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> |  |
-| <Link id="m-initialize" /><code>{"void Initialize(uint[] data, int newSize)"}</code> |  |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |  |
-| <Link id="m-serializebits" /><code>{"override void SerializeBits(ref uint value, int bitCount)"}</code> |  |
-| <Link id="m-serializestring" /><code>{"override void SerializeString(ref string value, "}<Link to="/game-api/types/assembly-other/stream-stringencoding">{"Stream.StringEncoding"}</Link>{" encoding = 0)"}</code> |  |
-| <Link id="m-tobytes" /><code>{"byte[] ToBytes()"}</code> |  |
-| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> |  |
-| <Link id="m-serializebytes" /><code>{"protected override void SerializeBytes(byte[] value, int byteCount)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-align" /><code>{"override void Align()"}</code> |
+| <Link id="m-backtrack" /><code>{"override void BackTrack(uint bitCount)"}</code> |
+| <Link id="m-clone" /><code>{"override object Clone()"}</code> |
+| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> |
+| <Link id="m-initialize" /><code>{"void Initialize(uint[] data, int newSize)"}</code> |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> |
+| <Link id="m-serializebits" /><code>{"override void SerializeBits(ref uint value, int bitCount)"}</code> |
+| <Link id="m-serializestring" /><code>{"override void SerializeString(ref string value, "}<Link to="/game-api/types/assembly-other/stream-stringencoding">{"Stream.StringEncoding"}</Link>{" encoding = 0)"}</code> |
+| <Link id="m-tobytes" /><code>{"byte[] ToBytes()"}</code> |
+| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> |
+| <Link id="m-serializebytes" /><code>{"protected override void SerializeBytes(byte[] value, int byteCount)"}</code> |
 
 ## Used in
 

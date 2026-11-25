@@ -22,24 +22,32 @@ Component next to a `HealthObject` that receives potion and alchemy effects: poi
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EffectHandler()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EffectHandler()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
-| <Link id="m-health" /><code>{"private "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" health"}</code> |  |
-| <Link id="m-immuneto" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effecthandler-effecttypes">{"EffectHandler.EffectTypes"}</Link>{" immuneTo"}</code> |  |
 | <Link id="m-isteleportable" /><code>{"protected bool isTeleportable"}</code> | False during the teleport cooldown. |
-| <Link id="m-poisoncoroutine" /><code>{"private Coroutine poisonCoroutine"}</code> |  |
-| <Link id="m-poisonfrequency" /><code>{"private float poisonFrequency"}</code> |  |
-| <Link id="m-poisonmultiplier" /><code>{"private float poisonMultiplier"}</code> |  |
-| <Link id="m-poisonstrength" /><code>{"private float poisonStrength"}</code> |  |
-| <Link id="m-statmanager" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" statManager"}</code> |  |
-| <Link id="m-unitstoregen" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", ValueTuple<Queue<"}<Link to="/game-api/types/alta-stats-effects/effecthandler-effectovertimedata">{"EffectHandler.EffectOverTimeData"}</Link>{">, "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{">> unitsToRegen"}</code> |  |
+
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| <Link id="m-health" /><code>{"private "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" health"}</code> |
+| <Link id="m-immuneto" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effecthandler-effecttypes">{"EffectHandler.EffectTypes"}</Link>{" immuneTo"}</code> |
+| <Link id="m-poisoncoroutine" /><code>{"private Coroutine poisonCoroutine"}</code> |
+| <Link id="m-poisonfrequency" /><code>{"private float poisonFrequency"}</code> |
+| <Link id="m-poisonmultiplier" /><code>{"private float poisonMultiplier"}</code> |
+| <Link id="m-poisonstrength" /><code>{"private float poisonStrength"}</code> |
+| <Link id="m-statmanager" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" statManager"}</code> |
+| <Link id="m-unitstoregen" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", ValueTuple<Queue<"}<Link to="/game-api/types/alta-stats-effects/effecthandler-effectovertimedata">{"EffectHandler.EffectOverTimeData"}</Link>{">, "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{">> unitsToRegen"}</code> |
+
+</details>
 
 ## Properties
 
@@ -63,11 +71,19 @@ Component next to a `HealthObject` that receives potion and alchemy effects: poi
 | <Link id="m-poisonovertime" /><code>{"virtual void PoisonOverTime(float strength)"}</code> | A positive strength adds a poison stack (damage each second at the strongest strength so far); zero or less removes one. |
 | <Link id="m-reveal" /><code>{"virtual void Reveal()"}</code> | Raises `OnReveal`, unless immune to reveal. |
 | <Link id="m-teleport" /><code>{"virtual void Teleport(Vector3 position, float strength, "}<Link to="/game-api/types/alta-stats-effects/effecthandler-teleporttype">{"EffectHandler.TeleportType"}</Link>{" teleportType = 0)"}</code> | Moves the object to a position (the move happens on the server), then blocks further teleports for 2 seconds. Ignored if immune. |
-| <Link id="m-effectovertime" /><code>{"internal void EffectOverTime("}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectToModify, float strength, int duration, Action<"}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", float> handleUpdate)"}</code> |  |
-| <Link id="m-effectovertimeloop" /><code>{"private IEnumerator EffectOverTimeLoop(Queue<"}<Link to="/game-api/types/alta-stats-effects/effecthandler-effectovertimedata">{"EffectHandler.EffectOverTimeData"}</Link>{"> queue) (iterator)"}</code> |  |
-| <Link id="m-runpoison" /><code>{"private IEnumerator RunPoison() (iterator)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
 | <Link id="m-teleportcooldown" /><code>{"protected IEnumerator TeleportCooldown() (iterator)"}</code> | Coroutine that re-enables teleporting after 2 seconds. |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-effectovertime" /><code>{"internal void EffectOverTime("}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectToModify, float strength, int duration, Action<"}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", float> handleUpdate)"}</code> |
+| <Link id="m-effectovertimeloop" /><code>{"private IEnumerator EffectOverTimeLoop(Queue<"}<Link to="/game-api/types/alta-stats-effects/effecthandler-effectovertimedata">{"EffectHandler.EffectOverTimeData"}</Link>{"> queue) (iterator)"}</code> |
+| <Link id="m-runpoison" /><code>{"private IEnumerator RunPoison() (iterator)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>
 
 ## Used in
 

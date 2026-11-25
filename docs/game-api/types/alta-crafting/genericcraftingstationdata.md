@@ -19,13 +19,13 @@ A **class** in `Root.Township`, `Alta.Crafting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenericCraftingStationData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenericCraftingStationData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pieces" /><code><Link to="/game-api/types/alta-crafting/piecesavedata-alta-crafting">{"PieceSaveData"}</Link>{"[] pieces"}</code> |  |
-| <Link id="m-recipe" /><code><Link to="/game-api/types/alta-crafting/genericcraftingrecipe">{"GenericCraftingRecipe"}</Link>{" recipe"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-pieces" /><code><Link to="/game-api/types/alta-crafting/piecesavedata-alta-crafting">{"PieceSaveData"}</Link>{"[] pieces"}</code> |
+| <Link id="m-recipe" /><code><Link to="/game-api/types/alta-crafting/genericcraftingrecipe">{"GenericCraftingRecipe"}</Link>{" recipe"}</code> |

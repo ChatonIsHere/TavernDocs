@@ -20,22 +20,30 @@ Base for in-world text fields typed into with the virtual keyboard. Shows placeh
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected VirtualInputFieldBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected VirtualInputFieldBase()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultvalue" /><code>{"private string defaultValue"}</code> |  |
 | <Link id="m-input" /><code>{"protected string input"}</code> | Backing field for `Input`. |
-| <Link id="m-inputcolor" /><code>{"private Color inputColor"}</code> |  |
-| <Link id="m-inputrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" inputRenderer"}</code> |  |
-| <Link id="m-issecret" /><code>{"private bool isSecret"}</code> |  |
-| <Link id="m-placeholdercolor" /><code>{"private Color placeHolderColor"}</code> |  |
-| <Link id="m-placeholderselectedcolor" /><code>{"private Color placeHolderSelectedColor"}</code> |  |
-| <Link id="m-secretkey" /><code>{"private string secretKey"}</code> |  |
+
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-defaultvalue" /><code>{"private string defaultValue"}</code> |
+| <Link id="m-inputcolor" /><code>{"private Color inputColor"}</code> |
+| <Link id="m-inputrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" inputRenderer"}</code> |
+| <Link id="m-issecret" /><code>{"private bool isSecret"}</code> |
+| <Link id="m-placeholdercolor" /><code>{"private Color placeHolderColor"}</code> |
+| <Link id="m-placeholderselectedcolor" /><code>{"private Color placeHolderSelectedColor"}</code> |
+| <Link id="m-secretkey" /><code>{"private string secretKey"}</code> |
+
+</details>
 
 ## Properties
 

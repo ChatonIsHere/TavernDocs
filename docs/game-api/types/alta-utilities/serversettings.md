@@ -21,9 +21,9 @@ The game's own server settings, loaded from `ServerConfiguration.json`. Server: 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerSettings()"}</code> |
 
 ## Properties
 
@@ -81,9 +81,14 @@ The game's own server settings, loaded from `ServerConfiguration.json`. Server: 
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> |
+
+</details>
 
 ## Used in
 

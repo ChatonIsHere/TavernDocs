@@ -16,12 +16,12 @@ An **enum** in `Root.Township`, `Alta.UI`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"Add = 0"}</code> |  |
-| <Link id="m-multiply" /><code>{"Multiply = 2"}</code> |  |
-| <Link id="m-replace" /><code>{"Replace = 3"}</code> |  |
-| <Link id="m-subtract" /><code>{"Subtract = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"Add = 0"}</code> |
+| <Link id="m-multiply" /><code>{"Multiply = 2"}</code> |
+| <Link id="m-replace" /><code>{"Replace = 3"}</code> |
+| <Link id="m-subtract" /><code>{"Subtract = 1"}</code> |
 
 ## Used in
 

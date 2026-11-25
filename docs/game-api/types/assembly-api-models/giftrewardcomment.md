@@ -16,12 +16,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GiftRewardComment()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GiftRewardComment()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-comment" /><code>{"string Comment { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-comment" /><code>{"string Comment { get; set; }"}</code> |

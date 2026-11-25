@@ -18,16 +18,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenerationStartSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenerationStartSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generatedbiome" /><code><Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" generatedBiome"}</code> |  |
-| <Link id="m-lastloadid" /><code>{"uint lastLoadId"}</code> |  |
-| <Link id="m-preset" /><code><Link to="/game-api/types/global-a-b/biomepreset">{"BiomePreset"}</Link>{" preset"}</code> |  |
-| <Link id="m-seed" /><code>{"int seed"}</code> |  |
-| <Link id="m-terrainmodificationid" /><code>{"uint terrainModificationId"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-generatedbiome" /><code><Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" generatedBiome"}</code> |
+| <Link id="m-lastloadid" /><code>{"uint lastLoadId"}</code> |
+| <Link id="m-preset" /><code><Link to="/game-api/types/global-a-b/biomepreset">{"BiomePreset"}</Link>{" preset"}</code> |
+| <Link id="m-seed" /><code>{"int seed"}</code> |
+| <Link id="m-terrainmodificationid" /><code>{"uint terrainModificationId"}</code> |

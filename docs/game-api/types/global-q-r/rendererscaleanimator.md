@@ -17,18 +17,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RendererScaleAnimator(MonoBehaviour behaviour, bool isInitiallyOn, Vector3 startScale, AnimationCurve on, AnimationCurve off, bool isDisallowingZero, "}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"[] dockVisuals)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RendererScaleAnimator(MonoBehaviour behaviour, bool isInitiallyOn, Vector3 startScale, AnimationCurve on, AnimationCurve off, bool isDisallowingZero, "}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"[] dockVisuals)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dockvisuals" /><code>{"private "}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"[] dockVisuals"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-dockvisuals" /><code>{"private "}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"[] dockVisuals"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setscale" /><code>{"protected override void SetScale(float scale)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setscale" /><code>{"protected override void SetScale(float scale)"}</code> |

@@ -17,26 +17,31 @@ A **class** in `Root.Township`, `Alta.Crafting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CraftingPieceChiselable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CraftingPieceChiselable()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |  |
-| <Link id="m-piece" /><code>{"private "}<Link to="/game-api/types/alta-crafting/genericcraftingpiece">{"GenericCraftingPiece"}</Link>{" piece"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
+| <Link id="m-piece" /><code>{"private "}<Link to="/game-api/types/alta-crafting/genericcraftingpiece">{"GenericCraftingPiece"}</Link>{" piece"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isenabled-2" /><code>{"override bool IsEnabled { get; set; }"}</code> |  |
-| <Link id="m-triggerhaptics" /><code>{"override bool TriggerHaptics { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isenabled-2" /><code>{"override bool IsEnabled { get; set; }"}</code> |
+| <Link id="m-triggerhaptics" /><code>{"override bool TriggerHaptics { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-receivedamage" /><code>{"override void ReceiveDamage(float damage, Vector3 position, Vector3 direction, "}<Link to="/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-receivedamage" /><code>{"override void ReceiveDamage(float damage, Vector3 position, Vector3 direction, "}<Link to="/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> |

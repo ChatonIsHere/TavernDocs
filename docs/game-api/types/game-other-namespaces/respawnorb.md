@@ -17,24 +17,37 @@ A **class** in `Root.Township`, `Township.Downed`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RespawnOrb()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RespawnOrb()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-circulartimer" /><code>{"private Image circularTimer"}</code> |  |
-| <Link id="m-respawntime" /><code>{"private float respawnTime"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-circulartimer" /><code>{"private Image circularTimer"}</code> |
+| <Link id="m-respawntime" /><code>{"private float respawnTime"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-starttimer" /><code>{"void StartTimer(float timeToRespawn)"}</code> |  |
-| <Link id="m-updatetimer" /><code>{"void UpdateTimer(float increaseToRespawnTimer)"}</code> |  |
-| <Link id="m-updatecirculartimer" /><code>{"private IEnumerator UpdateCircularTimer() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-starttimer" /><code>{"void StartTimer(float timeToRespawn)"}</code> |
+| <Link id="m-updatetimer" /><code>{"void UpdateTimer(float increaseToRespawnTimer)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-updatecirculartimer" /><code>{"private IEnumerator UpdateCircularTimer() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

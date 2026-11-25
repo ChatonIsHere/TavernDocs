@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UnityLogHandler()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UnityLogHandler()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-unhandledlogger" /><code>{"private Logger unhandledLogger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-unhandledlogger" /><code>{"private Logger unhandledLogger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logexception" /><code>{"void LogException(Exception exception, Object context)"}</code> |  |
-| <Link id="m-logformat" /><code>{"void LogFormat(LogType logType, Object context, string format, params object[] args)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-logexception" /><code>{"void LogException(Exception exception, Object context)"}</code> |
+| <Link id="m-logformat" /><code>{"void LogFormat(LogType logType, Object context, string format, params object[] args)"}</code> |

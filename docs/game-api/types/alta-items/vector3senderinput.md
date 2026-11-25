@@ -18,6 +18,6 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Vector3SenderInput()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Vector3SenderInput()"}</code> |

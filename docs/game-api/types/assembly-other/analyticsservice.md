@@ -18,22 +18,27 @@ A **class** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnalyticsService(IObjectResolver resolver)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnalyticsService(IObjectResolver resolver)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-eventbus" /><code>{"private readonly "}<Link to="/game-api/types/assembly-other/eventbus-t">{"EventBus"}</Link>{"<"}<Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{"> eventBus"}</code> |  |
-| <Link id="m-resolver" /><code>{"private readonly IObjectResolver resolver"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-eventbus" /><code>{"private readonly "}<Link to="/game-api/types/assembly-other/eventbus-t">{"EventBus"}</Link>{"<"}<Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{"> eventBus"}</code> |
+| <Link id="m-resolver" /><code>{"private readonly IObjectResolver resolver"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-preventstripping" /><code>{"static void __PreventStripping()"}</code> |  |
-| <Link id="m-addlistener" /><code>{"void AddListener(Action<"}<Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{"> listener)"}</code> |  |
-| <Link id="m-removelistener" /><code>{"void RemoveListener(Action<"}<Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{"> listener)"}</code> |  |
-| <Link id="m-send" /><code>{"void Send("}<Link to="/game-api/types/assembly-other/ianalyticsevent">{"IAnalyticsEvent"}</Link>{" analyticsEvent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-preventstripping" /><code>{"static void __PreventStripping()"}</code> |
+| <Link id="m-addlistener" /><code>{"void AddListener(Action<"}<Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{"> listener)"}</code> |
+| <Link id="m-removelistener" /><code>{"void RemoveListener(Action<"}<Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{"> listener)"}</code> |
+| <Link id="m-send" /><code>{"void Send("}<Link to="/game-api/types/assembly-other/ianalyticsevent">{"IAnalyticsEvent"}</Link>{" analyticsEvent)"}</code> |

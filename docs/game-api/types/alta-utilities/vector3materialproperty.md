@@ -17,16 +17,16 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Vector3MaterialProperty(string propertyName)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Vector3MaterialProperty(string propertyName)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setonmaterial" /><code>{"override void SetOnMaterial(Vector3 value, Material material)"}</code> |  |
-| <Link id="m-setonpropertyblock" /><code>{"override void SetOnPropertyBlock(Vector3 value, MaterialPropertyBlock propertyBlock)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setonmaterial" /><code>{"override void SetOnMaterial(Vector3 value, Material material)"}</code> |
+| <Link id="m-setonpropertyblock" /><code>{"override void SetOnPropertyBlock(Vector3 value, MaterialPropertyBlock propertyBlock)"}</code> |
 
 ## Used in
 

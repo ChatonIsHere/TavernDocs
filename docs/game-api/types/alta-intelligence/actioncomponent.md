@@ -21,28 +21,33 @@ Base for a creature action set up as a component on a creature's AI prefab. Hold
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ActionComponent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ActionComponent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-action" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" action"}</code> |  |
-| <Link id="m-baseweightingmultiplier" /><code>{"private float baseWeightingMultiplier"}</code> |  |
-| <Link id="m-cancancelselfwithsametarget" /><code>{"private bool canCancelSelfWithSameTarget"}</code> |  |
-| <Link id="m-cancelpriority" /><code>{"private int cancelPriority"}</code> |  |
-| <Link id="m-extrarandommultiplier" /><code>{"private float extraRandomMultiplier"}</code> |  |
-| <Link id="m-isaddingbasepreferred" /><code>{"private bool isAddingBasePreferred"}</code> |  |
-| <Link id="m-isaddingbaserequired" /><code>{"private bool isAddingBaseRequired"}</code> |  |
-| <Link id="m-isaddingtargetpreferred" /><code>{"private bool isAddingTargetPreferred"}</code> |  |
-| <Link id="m-isaddingtargetrequired" /><code>{"private bool isAddingTargetRequired"}</code> |  |
-| <Link id="m-iscancellable" /><code>{"private bool isCancellable"}</code> |  |
-| <Link id="m-isused" /><code>{"private bool isUsed"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-minimumcancelpriority" /><code>{"private int minimumCancelPriority"}</code> |  |
-| <Link id="m-minimumcancelweighting" /><code>{"private float minimumCancelWeighting"}</code> |  |
+<details>
+<summary>14 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-action" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" action"}</code> |
+| <Link id="m-baseweightingmultiplier" /><code>{"private float baseWeightingMultiplier"}</code> |
+| <Link id="m-cancancelselfwithsametarget" /><code>{"private bool canCancelSelfWithSameTarget"}</code> |
+| <Link id="m-cancelpriority" /><code>{"private int cancelPriority"}</code> |
+| <Link id="m-extrarandommultiplier" /><code>{"private float extraRandomMultiplier"}</code> |
+| <Link id="m-isaddingbasepreferred" /><code>{"private bool isAddingBasePreferred"}</code> |
+| <Link id="m-isaddingbaserequired" /><code>{"private bool isAddingBaseRequired"}</code> |
+| <Link id="m-isaddingtargetpreferred" /><code>{"private bool isAddingTargetPreferred"}</code> |
+| <Link id="m-isaddingtargetrequired" /><code>{"private bool isAddingTargetRequired"}</code> |
+| <Link id="m-iscancellable" /><code>{"private bool isCancellable"}</code> |
+| <Link id="m-isused" /><code>{"private bool isUsed"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-minimumcancelpriority" /><code>{"private int minimumCancelPriority"}</code> |
+| <Link id="m-minimumcancelweighting" /><code>{"private float minimumCancelWeighting"}</code> |
+
+</details>
 
 ## Properties
 
@@ -67,9 +72,17 @@ Base for a creature action set up as a component on a creature's AI prefab. Hold
 | --- | --- |
 | <Link id="m-getstaticaction" /><code><Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetStaticAction()"}</code> | Builds the action once (with its target operations from the named child objects) and returns the cached one after that. |
 | <Link id="m-handleused" /><code>{"void HandleUsed("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | Called each time the action starts. On first use it initializes `IAiHook` components on the object, then raises `Used`. |
-| <Link id="m-addchildrento" /><code>{"private void AddChildrenTo(string childName, List<"}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> operations)"}</code> |  |
 | <Link id="m-getaction" /><code>{"protected abstract "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Subclasses create the `IAction` for this component here. |
 | <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Empty editor hook for subclasses. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-addchildrento" /><code>{"private void AddChildrenTo(string childName, List<"}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> operations)"}</code> |
+
+</details>
 
 ## Used in
 

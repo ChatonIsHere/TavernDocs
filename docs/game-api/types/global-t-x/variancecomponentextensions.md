@@ -17,7 +17,7 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getvariantcomponents" /><code>{"static IEnumerable<TVariant> GetVariantComponents<TBase, TVariant>(GameObject gameObject)"}</code> |  |
-| <Link id="m-getvariantcomponentsinchildren" /><code>{"static IEnumerable<TVariant> GetVariantComponentsInChildren<TBase, TVariant>(GameObject gameObject)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getvariantcomponents" /><code>{"static IEnumerable<TVariant> GetVariantComponents<TBase, TVariant>(GameObject gameObject)"}</code> |
+| <Link id="m-getvariantcomponentsinchildren" /><code>{"static IEnumerable<TVariant> GetVariantComponentsInChildren<TBase, TVariant>(GameObject gameObject)"}</code> |

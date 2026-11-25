@@ -19,15 +19,15 @@ A **class** in `Root.Township`, `Alta.Map`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InfoBoardSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InfoBoardSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-identifier" /><code>{"string identifier"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-identifier" /><code>{"string identifier"}</code> |
 
 ## Used in
 

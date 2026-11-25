@@ -17,19 +17,19 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterDummyController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CharacterDummyController()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-head" /><code>{"override Transform Head { get; }"}</code> |  |
-| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-head" /><code>{"override Transform Head { get; }"}</code> |
+| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |

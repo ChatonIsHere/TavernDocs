@@ -17,12 +17,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TownshipItemCategoryModificationRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TownshipItemCategoryModificationRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-parentcategory" /><code>{"int ParentCategory { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-parentcategory" /><code>{"int ParentCategory { get; set; }"}</code> |

@@ -19,16 +19,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GymnasiumOnDemandPrefabSpawnerData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GymnasiumOnDemandPrefabSpawnerData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-boardposition" /><code>{"Vector3 boardPosition"}</code> |  |
-| <Link id="m-prefabs" /><code>{"uint[] prefabs"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-boardposition" /><code>{"Vector3 boardPosition"}</code> |
+| <Link id="m-prefabs" /><code>{"uint[] prefabs"}</code> |
 
 ## Used in
 

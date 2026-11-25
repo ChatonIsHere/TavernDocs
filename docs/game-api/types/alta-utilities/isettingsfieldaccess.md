@@ -17,16 +17,16 @@ An **interface** in `Root.Township`, `Alta.Utilities`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> |  |
-| <Link id="m-settingdescription" /><code>{"string SettingDescription { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> |
+| <Link id="m-settingdescription" /><code>{"string SettingDescription { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isvalid" /><code>{"bool IsValid()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isvalid" /><code>{"bool IsValid()"}</code> |
 
 ## Used in
 

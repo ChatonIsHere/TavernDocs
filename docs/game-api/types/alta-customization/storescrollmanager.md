@@ -17,18 +17,23 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StoreScrollManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StoreScrollManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-regularscroll" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticscrollmanager">{"CosmeticScrollManager"}</Link>{" regularScroll"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-regularscroll" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticscrollmanager">{"CosmeticScrollManager"}</Link>{" regularScroll"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-open" /><code>{"void Open()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-open" /><code>{"void Open()"}</code> |

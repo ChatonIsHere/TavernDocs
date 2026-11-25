@@ -18,18 +18,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlaceItemNoDockPuzzleLogicSaveData1()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlaceItemNoDockPuzzleLogicSaveData1()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-correctitemssaved" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] correctItemsSaved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-correctitemssaved" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] correctItemsSaved"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

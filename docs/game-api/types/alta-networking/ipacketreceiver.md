@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, `Alta.Networking`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-receivepackets" /><code>{"void ReceivePackets()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-receivepackets" /><code>{"void ReceivePackets()"}</code> |
 
 ## Used in
 

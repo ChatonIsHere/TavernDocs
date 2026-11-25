@@ -17,23 +17,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialSwapper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MaterialSwapper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-basematerials" /><code>{"private Material[] baseMaterials"}</code> |  |
-| <Link id="m-swapmaterial" /><code>{"private Material swapMaterial"}</code> |  |
-| <Link id="m-swaponstart" /><code>{"private bool swapOnStart"}</code> |  |
-| <Link id="m-targetrenderers" /><code>{"private Renderer[] targetRenderers"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-basematerials" /><code>{"private Material[] baseMaterials"}</code> |
+| <Link id="m-swapmaterial" /><code>{"private Material swapMaterial"}</code> |
+| <Link id="m-swaponstart" /><code>{"private bool swapOnStart"}</code> |
+| <Link id="m-targetrenderers" /><code>{"private Renderer[] targetRenderers"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-swap" /><code>{"void Swap(bool isSwapped)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-swap" /><code>{"void Swap(bool isSwapped)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+
+</details>

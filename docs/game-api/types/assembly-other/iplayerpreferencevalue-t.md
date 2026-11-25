@@ -17,6 +17,6 @@ An **interface** in `Alta.IO`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-value" /><code>{"T Value { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-value" /><code>{"T Value { get; set; }"}</code> |

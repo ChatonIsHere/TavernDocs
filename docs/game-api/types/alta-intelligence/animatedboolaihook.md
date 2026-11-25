@@ -18,23 +18,28 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimatedBoolAiHook()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimatedBoolAiHook()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-booleans" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{", "}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{"> booleans"}</code> |  |
-| <Link id="m-boolname" /><code>{"private string boolName"}</code> |  |
-| <Link id="m-isendtrue" /><code>{"private bool isEndTrue"}</code> |  |
-| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> |  |
-| <Link id="m-isstarttrue" /><code>{"private bool isStartTrue"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-booleans" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{", "}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{"> booleans"}</code> |
+| <Link id="m-boolname" /><code>{"private string boolName"}</code> |
+| <Link id="m-isendtrue" /><code>{"private bool isEndTrue"}</code> |
+| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> |
+| <Link id="m-isstarttrue" /><code>{"private bool isStartTrue"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-finishedorcancelled" /><code>{"protected override void FinishedOrCancelled("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |  |
-| <Link id="m-used" /><code>{"protected override void Used("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-finishedorcancelled" /><code>{"protected override void FinishedOrCancelled("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |
+| <Link id="m-used" /><code>{"protected override void Used("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> |

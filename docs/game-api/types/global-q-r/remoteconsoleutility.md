@@ -16,12 +16,17 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serializelogevent" /><code>{"static int SerializeLogEvent(LogEventInfo log, byte[] buffer, int offset)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serializelogevent" /><code>{"static int SerializeLogEvent(LogEventInfo log, byte[] buffer, int offset)"}</code> |

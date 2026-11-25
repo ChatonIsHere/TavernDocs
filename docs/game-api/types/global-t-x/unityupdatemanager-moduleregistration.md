@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-module" /><code><Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" Module { get; set; }"}</code> |  |
-| <Link id="m-segment" /><code><Link to="/game-api/types/global-t-x/updatesegment">{"UpdateSegment"}</Link>{" Segment { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-module" /><code><Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" Module { get; set; }"}</code> |
+| <Link id="m-segment" /><code><Link to="/game-api/types/global-t-x/updatesegment">{"UpdateSegment"}</Link>{" Segment { get; set; }"}</code> |
 
 ## Used in
 

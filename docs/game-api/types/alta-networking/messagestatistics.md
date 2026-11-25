@@ -17,6 +17,6 @@ A **class** in `Root.Township`, `Alta.Profiling.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MessageStatistics(Dictionary<"}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{", "}<Link to="/game-api/types/alta-networking/messagetypestatistic">{"MessageTypeStatistic"}</Link>{"> messageDictionary)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MessageStatistics(Dictionary<"}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{", "}<Link to="/game-api/types/alta-networking/messagetypestatistic">{"MessageTypeStatistic"}</Link>{"> messageDictionary)"}</code> |

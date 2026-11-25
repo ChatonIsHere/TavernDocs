@@ -16,14 +16,27 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-waitingtask" /><code>{"private static Task waitingTask"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-waitingtask" /><code>{"private static Task waitingTask"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forceupdatewhile" /><code>{"static void ForceUpdateWhile(Task task)"}</code> |  |
-| <Link id="m-forceupdate" /><code>{"private static void ForceUpdate()"}</code> |  |
-| <Link id="m-stopupdating" /><code>{"private static void StopUpdating()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-forceupdatewhile" /><code>{"static void ForceUpdateWhile(Task task)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-forceupdate" /><code>{"private static void ForceUpdate()"}</code> |
+| <Link id="m-stopupdating" /><code>{"private static void StopUpdating()"}</code> |
+
+</details>

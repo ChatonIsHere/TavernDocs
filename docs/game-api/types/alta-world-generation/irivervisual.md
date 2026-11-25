@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.Forests`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generate" /><code>{"void Generate("}<Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{" generation)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-generate" /><code>{"void Generate("}<Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{" generation)"}</code> |

@@ -22,9 +22,9 @@ Global settings for the generated pages that describe a cooking ingredient. Same
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"IngredientPageSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"IngredientPageSettings()"}</code> |
 
 ## Fields
 

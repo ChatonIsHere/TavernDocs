@@ -17,18 +17,18 @@ An **interface** in `Root.Township`, `Alta.Heat`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> |  |
-| <Link id="m-receiveconductivitymultiplier" /><code>{"float ReceiveConductivityMultiplier { get; }"}</code> |  |
-| <Link id="m-sourceconductivitymultiplier" /><code>{"float SourceConductivityMultiplier { get; }"}</code> |  |
-| <Link id="m-temperature" /><code>{"float Temperature { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> |
+| <Link id="m-receiveconductivitymultiplier" /><code>{"float ReceiveConductivityMultiplier { get; }"}</code> |
+| <Link id="m-sourceconductivitymultiplier" /><code>{"float SourceConductivityMultiplier { get; }"}</code> |
+| <Link id="m-temperature" /><code>{"float Temperature { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-conductto" /><code>{"void ConductTo("}<Link to="/game-api/types/alta-stats-effects/iheatreceiver">{"IHeatReceiver"}</Link>{" receiver, bool isSource, bool isIgnoringAmbient = false, float weight = 1)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-conductto" /><code>{"void ConductTo("}<Link to="/game-api/types/alta-stats-effects/iheatreceiver">{"IHeatReceiver"}</Link>{" receiver, bool isSource, bool isIgnoringAmbient = false, float weight = 1)"}</code> |
 
 ## Used in
 

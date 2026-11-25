@@ -20,9 +20,9 @@ Base for something that changes stats on a `StatManager`, with apply and remove 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Modifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Modifier()"}</code> |
 
 ## Properties
 

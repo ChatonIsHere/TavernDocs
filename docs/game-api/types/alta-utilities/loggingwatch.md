@@ -16,22 +16,27 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LoggingWatch()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"LoggingWatch(int errorLevel)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LoggingWatch()"}</code> |
+| <Link id="m-ctor-2" /><code>{"LoggingWatch(int errorLevel)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-errorlevel" /><code>{"private int errorLevel"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-watch" /><code>{"private Stopwatch watch"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-errorlevel" /><code>{"private int errorLevel"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-watch" /><code>{"private Stopwatch watch"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-measure" /><code>{"void Measure(string name)"}</code> |  |
-| <Link id="m-start" /><code>{"void Start()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-measure" /><code>{"void Measure(string name)"}</code> |
+| <Link id="m-start" /><code>{"void Start()"}</code> |

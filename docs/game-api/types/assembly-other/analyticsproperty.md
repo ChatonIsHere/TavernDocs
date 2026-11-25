@@ -17,13 +17,13 @@ A **struct** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnalyticsProperty(string name, object value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnalyticsProperty(string name, object value)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-value" /><code>{"object Value { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> |
+| <Link id="m-value" /><code>{"object Value { get; }"}</code> |

@@ -17,18 +17,18 @@ A **class** in `Alta.IO`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"S3StorageFolder(string bucketName, string fullName)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"S3StorageFolder(string bucketName, string fullName)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-delete" /><code>{"override void Delete()"}</code> |  |
-| <Link id="m-deleteasync" /><code>{"override Task DeleteAsync()"}</code> |  |
-| <Link id="m-getfiles" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-other/s3storagefile">{"S3StorageFile"}</Link>{"> GetFiles()"}</code> |  |
-| <Link id="m-getfolders" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-other/s3storagefolder">{"S3StorageFolder"}</Link>{"> GetFolders()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-delete" /><code>{"override void Delete()"}</code> |
+| <Link id="m-deleteasync" /><code>{"override Task DeleteAsync()"}</code> |
+| <Link id="m-getfiles" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-other/s3storagefile">{"S3StorageFile"}</Link>{"> GetFiles()"}</code> |
+| <Link id="m-getfolders" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-other/s3storagefolder">{"S3StorageFolder"}</Link>{"> GetFolders()"}</code> |
 
 ## Used in
 

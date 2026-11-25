@@ -19,29 +19,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ThumbConfiguration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ThumbConfiguration()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-baserotation" /><code>{"private Quaternion baseRotation"}</code> |  |
-| <Link id="m-lefthandcurlaxis" /><code>{"private Vector3 leftHandCurlAxis"}</code> |  |
-| <Link id="m-righthandcurlaxis" /><code>{"private Vector3 rightHandCurlAxis"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-baserotation" /><code>{"private Quaternion baseRotation"}</code> |
+| <Link id="m-lefthandcurlaxis" /><code>{"private Vector3 leftHandCurlAxis"}</code> |
+| <Link id="m-righthandcurlaxis" /><code>{"private Vector3 rightHandCurlAxis"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-baserotation-2" /><code>{"Quaternion BaseRotation { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-baserotation-2" /><code>{"Quaternion BaseRotation { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-curlaxis" /><code>{"Vector3 CurlAxis(bool isLeftHand)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-curlaxis" /><code>{"Vector3 CurlAxis(bool isLeftHand)"}</code> |
 
 ## Used in
 

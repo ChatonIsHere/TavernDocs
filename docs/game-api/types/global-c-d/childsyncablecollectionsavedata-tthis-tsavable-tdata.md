@@ -20,9 +20,9 @@ Save data for a `ChildSyncableCollection`: one saved element per child, in child
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChildSyncableCollectionSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChildSyncableCollectionSaveData()"}</code> |
 
 ## Fields
 

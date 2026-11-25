@@ -16,18 +16,18 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionRecord(Vector3 position, Quaternion rotation)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PositionRecord(Transform transform)"}</code> |  |
-| <Link id="m-ctor-3" /><code>{"PositionRecord(Transform to, Transform from)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionRecord(Vector3 position, Quaternion rotation)"}</code> |
+| <Link id="m-ctor-2" /><code>{"PositionRecord(Transform transform)"}</code> |
+| <Link id="m-ctor-3" /><code>{"PositionRecord(Transform to, Transform from)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |
 
 ## Used in
 

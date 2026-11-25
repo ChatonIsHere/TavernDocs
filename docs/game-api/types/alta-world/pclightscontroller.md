@@ -18,22 +18,27 @@ A **class** in `Root.Township`, `Alta.Lighting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PCLightsController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PCLightsController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-nextupdate" /><code>{"private float nextUpdate"}</code> |  |
-| <Link id="m-sorter" /><code>{"private "}<Link to="/game-api/types/alta-world/lightsorter-t">{"LightSorter"}</Link>{"<"}<Link to="/game-api/types/alta-world/pclightscontroller-pcsortedlight">{"PCLightsController.PCSortedLight"}</Link>{"> sorter"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-nextupdate" /><code>{"private float nextUpdate"}</code> |
+| <Link id="m-sorter" /><code>{"private "}<Link to="/game-api/types/alta-world/lightsorter-t">{"LightSorter"}</Link>{"<"}<Link to="/game-api/types/alta-world/pclightscontroller-pcsortedlight">{"PCLightsController.PCSortedLight"}</Link>{"> sorter"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addlight" /><code>{"override void AddLight("}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" light)"}</code> |  |
-| <Link id="m-removelight" /><code>{"override void RemoveLight("}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" light)"}</code> |  |
-| <Link id="m-update" /><code>{"protected override void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addlight" /><code>{"override void AddLight("}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" light)"}</code> |
+| <Link id="m-removelight" /><code>{"override void RemoveLight("}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" light)"}</code> |
+| <Link id="m-update" /><code>{"protected override void Update()"}</code> |

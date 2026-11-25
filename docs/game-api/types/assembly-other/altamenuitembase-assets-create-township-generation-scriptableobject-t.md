@@ -21,6 +21,6 @@ Editor menu helper: nest a `Create` class deriving from this inside a Scriptable
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> |

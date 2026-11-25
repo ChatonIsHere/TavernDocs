@@ -20,28 +20,38 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PrefabStageDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PrefabStageDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stages" /><code>{"private "}<Link to="/game-api/types/global-p/prefabstagedefinition-prefabsetup">{"PrefabStageDefinition.PrefabSetup"}</Link>{"[] stages"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-stages" /><code>{"private "}<Link to="/game-api/types/global-p/prefabstagedefinition-prefabsetup">{"PrefabStageDefinition.PrefabSetup"}</Link>{"[] stages"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stagecount" /><code>{"int StageCount { get; }"}</code> |  |
-| <Link id="m-stages-2" /><code><Link to="/game-api/types/global-p/prefabstagedefinition-prefabsetup">{"PrefabStageDefinition.PrefabSetup"}</Link>{"[] Stages { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-stagecount" /><code>{"int StageCount { get; }"}</code> |
+| <Link id="m-stages-2" /><code><Link to="/game-api/types/global-p/prefabstagedefinition-prefabsetup">{"PrefabStageDefinition.PrefabSetup"}</Link>{"[] Stages { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getstage" /><code>{"internal "}<Link to="/game-api/types/global-p/prefabstagedefinition-prefabsetup">{"PrefabStageDefinition.PrefabSetup"}</Link>{" GetStage(int index)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getstage" /><code>{"internal "}<Link to="/game-api/types/global-p/prefabstagedefinition-prefabsetup">{"PrefabStageDefinition.PrefabSetup"}</Link>{" GetStage(int index)"}</code> |
+
+</details>
 
 ## Used in
 

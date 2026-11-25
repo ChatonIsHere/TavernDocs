@@ -17,17 +17,17 @@ A **struct** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Level(int x, int y)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Level(int x, int y)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-count" /><code>{"int count"}</code> |  |
-| <Link id="m-x" /><code>{"int x"}</code> |  |
-| <Link id="m-z" /><code>{"int z"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-count" /><code>{"int count"}</code> |
+| <Link id="m-x" /><code>{"int x"}</code> |
+| <Link id="m-z" /><code>{"int z"}</code> |
 
 ## Used in
 

@@ -16,30 +16,35 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SkinSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SkinSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-skinadditionalblit" /><code>{"private Material skinAdditionalBlit"}</code> |  |
-| <Link id="m-skinblit" /><code>{"private Material skinBlit"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-skinadditionalblit" /><code>{"private Material skinAdditionalBlit"}</code> |
+| <Link id="m-skinblit" /><code>{"private Material skinBlit"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{" Arguments { get; }"}</code> |  |
-| <Link id="m-skinadditionalblit-2" /><code>{"Material SkinAdditionalBlit { get; }"}</code> |  |
-| <Link id="m-skinblit-2" /><code>{"Material SkinBlit { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{" Arguments { get; }"}</code> |
+| <Link id="m-skinadditionalblit-2" /><code>{"Material SkinAdditionalBlit { get; }"}</code> |
+| <Link id="m-skinblit-2" /><code>{"Material SkinBlit { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-set" /><code>{"void Set("}<Link to="/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" color)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-set" /><code>{"void Set("}<Link to="/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" color)"}</code> |
 
 ## Used in
 

@@ -20,20 +20,25 @@ Lie flat against a surface.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Surface()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Surface()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-defaultdefinition" /><code>{"private static "}<Link to="/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" defaultDefinition"}</code> |  |
-| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" definition"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-defaultdefinition" /><code>{"private static "}<Link to="/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" defaultDefinition"}</code> |
+| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" definition"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-defaultdefinition-2" /><code>{"static "}<Link to="/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" DefaultDefinition { get; }"}</code> |  |
-| <Link id="m-definition-2" /><code><Link to="/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" Definition { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-defaultdefinition-2" /><code>{"static "}<Link to="/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" DefaultDefinition { get; }"}</code> |
+| <Link id="m-definition-2" /><code><Link to="/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" Definition { get; }"}</code> |

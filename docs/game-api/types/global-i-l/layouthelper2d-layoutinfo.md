@@ -17,16 +17,16 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LayoutInfo(List<Vector3> positions, float scale)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LayoutInfo(List<Vector3> positions, float scale)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-positions" /><code>{"List<Vector3> Positions"}</code> |  |
-| <Link id="m-scale" /><code>{"float Scale"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-positions" /><code>{"List<Vector3> Positions"}</code> |
+| <Link id="m-scale" /><code>{"float Scale"}</code> |
 
 ## Used in
 

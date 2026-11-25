@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SocialMediaInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SocialMediaInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-address" /><code>{"string Address { get; set; }"}</code> |  |
-| <Link id="m-icon" /><code>{"string Icon { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-address" /><code>{"string Address { get; set; }"}</code> |
+| <Link id="m-icon" /><code>{"string Icon { get; set; }"}</code> |
 
 ## Used in
 

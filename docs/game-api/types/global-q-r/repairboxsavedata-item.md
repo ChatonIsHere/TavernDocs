@@ -17,19 +17,19 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Item()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cost" /><code>{"uint cost"}</code> |  |
-| <Link id="m-isignoringmaterialonsimpleserver" /><code>{"bool isIgnoringMaterialOnSimpleServer"}</code> |  |
-| <Link id="m-item" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> |  |
-| <Link id="m-physmat" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physMat"}</code> |  |
-| <Link id="m-usephysmat" /><code>{"bool usePhysMat"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cost" /><code>{"uint cost"}</code> |
+| <Link id="m-isignoringmaterialonsimpleserver" /><code>{"bool isIgnoringMaterialOnSimpleServer"}</code> |
+| <Link id="m-item" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> |
+| <Link id="m-physmat" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physMat"}</code> |
+| <Link id="m-usephysmat" /><code>{"bool usePhysMat"}</code> |
 
 ## Used in
 

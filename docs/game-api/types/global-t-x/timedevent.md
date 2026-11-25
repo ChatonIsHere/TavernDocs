@@ -17,28 +17,41 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimedEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimedEvent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-btnplay" /><code>{"private bool btnPlay"}</code> |  |
-| <Link id="m-btnstop" /><code>{"private bool btnStop"}</code> |  |
-| <Link id="m-interval" /><code>{"private float interval"}</code> |  |
-| <Link id="m-isrepeating" /><code>{"private bool isRepeating"}</code> |  |
-| <Link id="m-isrunningonawake" /><code>{"private bool isRunningOnAwake"}</code> |  |
-| <Link id="m-repeat" /><code>{"private Coroutine repeat"}</code> |  |
-| <Link id="m-runhere" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" runHere"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-btnplay" /><code>{"private bool btnPlay"}</code> |
+| <Link id="m-btnstop" /><code>{"private bool btnStop"}</code> |
+| <Link id="m-interval" /><code>{"private float interval"}</code> |
+| <Link id="m-isrepeating" /><code>{"private bool isRepeating"}</code> |
+| <Link id="m-isrunningonawake" /><code>{"private bool isRunningOnAwake"}</code> |
+| <Link id="m-repeat" /><code>{"private Coroutine repeat"}</code> |
+| <Link id="m-runhere" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" runHere"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-begin" /><code>{"void Begin()"}</code> |  |
-| <Link id="m-stop" /><code>{"void Stop()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-repeatrun" /><code>{"private IEnumerator RepeatRun() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-begin" /><code>{"void Begin()"}</code> |
+| <Link id="m-stop" /><code>{"void Stop()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| <Link id="m-repeatrun" /><code>{"private IEnumerator RepeatRun() (iterator)"}</code> |
+
+</details>

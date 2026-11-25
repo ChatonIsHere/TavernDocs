@@ -19,15 +19,15 @@ A **class** in `Root.Township`, `Alta.Trading`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TradeVendorSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TradeVendorSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-vendorowner" /><code>{"int vendorOwner"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-vendorowner" /><code>{"int vendorOwner"}</code> |
 
 ## Used in
 

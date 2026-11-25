@@ -17,25 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EnvironmentalPropertyBlock()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EnvironmentalPropertyBlock()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-propertyblock" /><code>{"private MaterialPropertyBlock propertyBlock"}</code> |  |
-| <Link id="m-winddirection" /><code>{"private static Vector2 windDirection"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-propertyblock" /><code>{"private MaterialPropertyBlock propertyBlock"}</code> |
+| <Link id="m-winddirection" /><code>{"private static Vector2 windDirection"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-winddirection-2" /><code>{"static Vector2 WindDirection { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-winddirection-2" /><code>{"static Vector2 WindDirection { get; set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-windchanged" /><code>{"static event Action WindChanged"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-windchanged" /><code>{"static event Action WindChanged"}</code> |

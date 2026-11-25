@@ -19,13 +19,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicResetSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicResetSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-boolsavedata" /><code><Link to="/game-api/types/alta-items/logicboolsavedata">{"LogicBoolSaveData"}</Link>{"[] boolSaveData"}</code> |  |
-| <Link id="m-resetvalues" /><code>{"bool[] resetValues"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-boolsavedata" /><code><Link to="/game-api/types/alta-items/logicboolsavedata">{"LogicBoolSaveData"}</Link>{"[] boolSaveData"}</code> |
+| <Link id="m-resetvalues" /><code>{"bool[] resetValues"}</code> |

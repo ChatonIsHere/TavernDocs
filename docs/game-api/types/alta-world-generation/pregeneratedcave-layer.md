@@ -17,15 +17,15 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Layer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Layer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-mesh" /><code>{"Mesh mesh"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-mesh" /><code>{"Mesh mesh"}</code> |
 
 ## Used in
 

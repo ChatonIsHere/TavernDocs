@@ -17,16 +17,16 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LayerStaminaConsumptionMultiplier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LayerStaminaConsumptionMultiplier()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-layer" /><code>{"int layer"}</code> |  |
-| <Link id="m-multiplier" /><code>{"float multiplier"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-layer" /><code>{"int layer"}</code> |
+| <Link id="m-multiplier" /><code>{"float multiplier"}</code> |
 
 ## Used in
 

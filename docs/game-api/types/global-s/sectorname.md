@@ -16,16 +16,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SectorName()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SectorName()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-originalname" /><code>{"string originalName"}</code> |  |
-| <Link id="m-rename" /><code>{"string rename"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-originalname" /><code>{"string originalName"}</code> |
+| <Link id="m-rename" /><code>{"string rename"}</code> |
 
 ## Used in
 

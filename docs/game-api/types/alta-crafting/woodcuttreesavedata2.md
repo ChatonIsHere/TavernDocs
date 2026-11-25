@@ -18,20 +18,20 @@ A **internal class** in `Root.Township`, `Alta.Woodcutting`. Reach it through at
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeSaveData2()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WoodcutTreeSaveData2()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isgenerated" /><code>{"bool isGenerated"}</code> |  |
-| <Link id="m-preset" /><code><Link to="/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" preset"}</code> |  |
-| <Link id="m-species" /><code><Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isgenerated" /><code>{"bool isGenerated"}</code> |
+| <Link id="m-preset" /><code><Link to="/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" preset"}</code> |
+| <Link id="m-species" /><code><Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

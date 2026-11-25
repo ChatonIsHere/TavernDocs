@@ -17,17 +17,17 @@ A **delegate** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EvaluateWielder(object object, IntPtr method)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EvaluateWielder(object object, IntPtr method)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(out "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" wielder, out "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerWielder, AsyncCallback callback, object object)"}</code> |  |
-| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(out "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" wielder, out "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerWielder, IAsyncResult result)"}</code> |  |
-| <Link id="m-invoke" /><code>{"virtual void Invoke(out "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" wielder, out "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerWielder)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(out "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" wielder, out "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerWielder, AsyncCallback callback, object object)"}</code> |
+| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(out "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" wielder, out "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerWielder, IAsyncResult result)"}</code> |
+| <Link id="m-invoke" /><code>{"virtual void Invoke(out "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" wielder, out "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerWielder)"}</code> |
 
 ## Used in
 

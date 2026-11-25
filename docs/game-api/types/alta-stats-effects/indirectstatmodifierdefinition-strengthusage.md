@@ -18,10 +18,10 @@ An **private enum** in `Root.Township`, `Alta.StatSystem`. Reach it through att-
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration" /><code>{"duration = 1"}</code> |  |
-| <Link id="m-value" /><code>{"value = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-duration" /><code>{"duration = 1"}</code> |
+| <Link id="m-value" /><code>{"value = 2"}</code> |
 
 ## Used in
 

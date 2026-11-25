@@ -19,9 +19,9 @@ One message sent to a remote console client over the WebSocket: a system message
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ResponseData("}<Link to="/game-api/types/alta-console/websocketcommandhandler-responsetype">{"WebSocketCommandHandler.ResponseType"}</Link>{" type, string eventType, object data, uint? commandId = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ResponseData("}<Link to="/game-api/types/alta-console/websocketcommandhandler-responsetype">{"WebSocketCommandHandler.ResponseType"}</Link>{" type, string eventType, object data, uint? commandId = null)"}</code> |
 
 ## Fields
 
@@ -32,7 +32,15 @@ One message sent to a remote console client over the WebSocket: a system message
 | <Link id="m-eventtype" /><code>{"string eventType"}</code> | The subscription event name, or the log type for system messages. |
 | <Link id="m-timestamp" /><code>{"DateTime timeStamp"}</code> | UTC time the message was created. |
 | <Link id="m-type" /><code><Link to="/game-api/types/alta-console/websocketcommandhandler-responsetype">{"WebSocketCommandHandler.ResponseType"}</Link>{" type"}</code> | Whether this is a system message, subscription event or command result. |
-| <Link id="m-serialized" /><code>{"private string serialized"}</code> |  |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-serialized" /><code>{"private string serialized"}</code> |
+
+</details>
 
 ## Methods
 

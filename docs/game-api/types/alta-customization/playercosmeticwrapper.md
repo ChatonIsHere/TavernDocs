@@ -17,23 +17,28 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerCosmeticWrapper("}<Link to="/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" manager)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerCosmeticWrapper("}<Link to="/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" manager)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-randomizecache" /><code>{"private readonly List<uint> randomizeCache"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-randomizecache" /><code>{"private readonly List<uint> randomizeCache"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getitem" /><code>{"override async Task<"}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{"> GetItem(uint hash)"}</code> |  |
-| <Link id="m-getitem-2" /><code>{"Task<"}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{"> GetItem(string sku)"}</code> |  |
-| <Link id="m-postrandomize" /><code>{"async Task PostRandomize()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getitem" /><code>{"override async Task<"}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{"> GetItem(uint hash)"}</code> |
+| <Link id="m-getitem-2" /><code>{"Task<"}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{"> GetItem(string sku)"}</code> |
+| <Link id="m-postrandomize" /><code>{"async Task PostRandomize()"}</code> |
 
 ## Used in
 

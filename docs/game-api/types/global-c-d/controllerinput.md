@@ -19,16 +19,21 @@ A snapshot of one hand controller's input: buttons, sticks, finger curl and hand
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ControllerInput()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ControllerInput()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-booleaninputs" /><code>{"private readonly "}<Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{"[] booleanInputs"}</code> |  |
-| <Link id="m-inputlength" /><code>{"private readonly int inputLength"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-booleaninputs" /><code>{"private readonly "}<Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{"[] booleanInputs"}</code> |
+| <Link id="m-inputlength" /><code>{"private readonly int inputLength"}</code> |
+
+</details>
 
 ## Properties
 

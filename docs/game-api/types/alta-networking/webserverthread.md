@@ -17,32 +17,48 @@ A **class** in `Root.Township`, `Alta.WebServer`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WebServerThread(int port = 1761)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WebServerThread(int port = 1761)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-port" /><code>{"const int Port"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-thread" /><code>{"private Thread thread"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-port" /><code>{"const int Port"}</code> |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-thread" /><code>{"private Thread thread"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-url" /><code>{"string Url { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-url" /><code>{"string Url { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-create" /><code>{"private WebServer Create()"}</code> |  |
-| <Link id="m-run" /><code>{"private async void Run()"}</code> |  |
-| <Link id="m-statechanged" /><code>{"private void StateChanged(object sender, WebServerStateChangedEventArgs e)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-create" /><code>{"private WebServer Create()"}</code> |
+| <Link id="m-run" /><code>{"private async void Run()"}</code> |
+| <Link id="m-statechanged" /><code>{"private void StateChanged(object sender, WebServerStateChangedEventArgs e)"}</code> |
+
+</details>
 
 ## Used in
 

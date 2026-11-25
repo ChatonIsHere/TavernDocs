@@ -16,17 +16,17 @@ An **enum** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-congestion" /><code>{"Congestion = 2"}</code> |  |
-| <Link id="m-connectionclosed" /><code>{"ConnectionClosed = 5"}</code> |  |
-| <Link id="m-dnsresolve" /><code>{"DnsResolve = 0"}</code> |  |
-| <Link id="m-invalidreceive" /><code>{"InvalidReceive = 3"}</code> |  |
-| <Link id="m-invalidsend" /><code>{"InvalidSend = 4"}</code> |  |
-| <Link id="m-none" /><code>{"None = -1"}</code> |  |
-| <Link id="m-timeout" /><code>{"Timeout = 1"}</code> |  |
-| <Link id="m-unexpected" /><code>{"Unexpected = 7"}</code> |  |
-| <Link id="m-wrongconnection" /><code>{"WrongConnection = 6"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-congestion" /><code>{"Congestion = 2"}</code> |
+| <Link id="m-connectionclosed" /><code>{"ConnectionClosed = 5"}</code> |
+| <Link id="m-dnsresolve" /><code>{"DnsResolve = 0"}</code> |
+| <Link id="m-invalidreceive" /><code>{"InvalidReceive = 3"}</code> |
+| <Link id="m-invalidsend" /><code>{"InvalidSend = 4"}</code> |
+| <Link id="m-none" /><code>{"None = -1"}</code> |
+| <Link id="m-timeout" /><code>{"Timeout = 1"}</code> |
+| <Link id="m-unexpected" /><code>{"Unexpected = 7"}</code> |
+| <Link id="m-wrongconnection" /><code>{"WrongConnection = 6"}</code> |
 
 ## Used in
 

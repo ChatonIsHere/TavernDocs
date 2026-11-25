@@ -19,13 +19,13 @@ How a spawned instance is saved when its chunk saves or unloads: `Base` (on its 
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-base" /><code>{"Base = 0"}</code> |  |
-| <Link id="m-child" /><code>{"Child = 1"}</code> |  |
-| <Link id="m-creature" /><code>{"Creature = 4"}</code> |  |
-| <Link id="m-ignore" /><code>{"Ignore = 2"}</code> |  |
-| <Link id="m-player" /><code>{"Player = 3"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-base" /><code>{"Base = 0"}</code> |
+| <Link id="m-child" /><code>{"Child = 1"}</code> |
+| <Link id="m-creature" /><code>{"Creature = 4"}</code> |
+| <Link id="m-ignore" /><code>{"Ignore = 2"}</code> |
+| <Link id="m-player" /><code>{"Player = 3"}</code> |
 
 ## Used in
 

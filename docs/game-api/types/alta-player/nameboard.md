@@ -17,48 +17,61 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NameBoard()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NameBoard()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activeemblem" /><code>{"private "}<Link to="/game-api/types/alta-player/nameboardemblem">{"NameBoardEmblem"}</Link>{" activeEmblem"}</code> |  |
-| <Link id="m-friendcolor" /><code>{"private Color friendColor"}</code> |  |
-| <Link id="m-friendicon" /><code>{"private GameObject friendIcon"}</code> |  |
-| <Link id="m-friendprefix" /><code>{"private string friendPrefix"}</code> |  |
-| <Link id="m-hasshieldtextwidth" /><code>{"private float hasShieldTextWidth"}</code> |  |
-| <Link id="m-mesheffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" meshEffectDefinition"}</code> |  |
-| <Link id="m-nonfriendcolor" /><code>{"private Color nonFriendColor"}</code> |  |
-| <Link id="m-noshieldtextwidth" /><code>{"private float noShieldTextWidth"}</code> |  |
-| <Link id="m-notitlenameheight" /><code>{"private float noTitleNameHeight"}</code> |  |
-| <Link id="m-notitlenamescale" /><code>{"private float noTitleNameScale"}</code> |  |
-| <Link id="m-shieldparent" /><code>{"private Transform shieldParent"}</code> |  |
-| <Link id="m-titlerenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" titleRenderer"}</code> |  |
-| <Link id="m-usernamerenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" userNameRenderer"}</code> |  |
-| <Link id="m-withtitlenameheight" /><code>{"private float withTitleNameHeight"}</code> |  |
-| <Link id="m-withtitlenamescale" /><code>{"private float withTitleNameScale"}</code> |  |
+<details>
+<summary>15 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activeemblem" /><code>{"private "}<Link to="/game-api/types/alta-player/nameboardemblem">{"NameBoardEmblem"}</Link>{" activeEmblem"}</code> |
+| <Link id="m-friendcolor" /><code>{"private Color friendColor"}</code> |
+| <Link id="m-friendicon" /><code>{"private GameObject friendIcon"}</code> |
+| <Link id="m-friendprefix" /><code>{"private string friendPrefix"}</code> |
+| <Link id="m-hasshieldtextwidth" /><code>{"private float hasShieldTextWidth"}</code> |
+| <Link id="m-mesheffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" meshEffectDefinition"}</code> |
+| <Link id="m-nonfriendcolor" /><code>{"private Color nonFriendColor"}</code> |
+| <Link id="m-noshieldtextwidth" /><code>{"private float noShieldTextWidth"}</code> |
+| <Link id="m-notitlenameheight" /><code>{"private float noTitleNameHeight"}</code> |
+| <Link id="m-notitlenamescale" /><code>{"private float noTitleNameScale"}</code> |
+| <Link id="m-shieldparent" /><code>{"private Transform shieldParent"}</code> |
+| <Link id="m-titlerenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" titleRenderer"}</code> |
+| <Link id="m-usernamerenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" userNameRenderer"}</code> |
+| <Link id="m-withtitlenameheight" /><code>{"private float withTitleNameHeight"}</code> |
+| <Link id="m-withtitlenamescale" /><code>{"private float withTitleNameScale"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentusername" /><code>{"string CurrentUserName { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentusername" /><code>{"string CurrentUserName { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-release" /><code>{"override void Release()"}</code> |  |
-| <Link id="m-setup" /><code>{"void Setup(string userName, bool isFriend, string title = \"\", "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" shieldDefinition = null)"}</code> |  |
-| <Link id="m-updatefriendship" /><code>{"void UpdateFriendship(bool isFriend)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
-| <Link id="m-clear" /><code>{"private void Clear()"}</code> |  |
-| <Link id="m-clearshield" /><code>{"private void ClearShield()"}</code> |  |
-| <Link id="m-fadefinished" /><code>{"protected override void FadeFinished()"}</code> |  |
-| <Link id="m-setupfriendicon" /><code>{"private void SetupFriendIcon(bool isFriend)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-release" /><code>{"override void Release()"}</code> |
+| <Link id="m-setup" /><code>{"void Setup(string userName, bool isFriend, string title = \"\", "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" shieldDefinition = null)"}</code> |
+| <Link id="m-updatefriendship" /><code>{"void UpdateFriendship(bool isFriend)"}</code> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |
+| <Link id="m-fadefinished" /><code>{"protected override void FadeFinished()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-clear" /><code>{"private void Clear()"}</code> |
+| <Link id="m-clearshield" /><code>{"private void ClearShield()"}</code> |
+| <Link id="m-setupfriendicon" /><code>{"private void SetupFriendIcon(bool isFriend)"}</code> |
+
+</details>
 
 ## Used in
 

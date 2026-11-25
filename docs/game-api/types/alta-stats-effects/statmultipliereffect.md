@@ -22,20 +22,25 @@ Applies a timed `StatModifier` of its own `modifierValue`, lasting `strength` se
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatMultiplierEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatMultiplierEffect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ismultiplier" /><code>{"private bool isMultiplier"}</code> |  |
-| <Link id="m-modifiervalue" /><code>{"private float modifierValue"}</code> |  |
-| <Link id="m-stattoaffect" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statToAffect"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ismultiplier" /><code>{"private bool isMultiplier"}</code> |
+| <Link id="m-modifiervalue" /><code>{"private float modifierValue"}</code> |
+| <Link id="m-stattoaffect" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statToAffect"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"protected override void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"protected override void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |

@@ -21,9 +21,9 @@ A game server as returned by the Alta web API: id, name, status, region, owner, 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameServerInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameServerInfo()"}</code> |
 
 ## Fields
 
@@ -31,7 +31,15 @@ A game server as returned by the Alta web API: id, name, status, region, owner, 
 | --- | --- |
 | <Link id="m-defaultfleetname" /><code>{"const string DefaultFleetName"}</code> | The fallback fleet name, "att-release". |
 | <Link id="m-publicservers" /><code>{"static readonly HashSet<int> PublicServers"}</code> | Hard-coded set of server ids treated as official public servers. |
-| <Link id="m-fleetmapping" /><code>{"private static readonly Dictionary<int, string> FleetMapping"}</code> |  |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-fleetmapping" /><code>{"private static readonly Dictionary<int, string> FleetMapping"}</code> |
+
+</details>
 
 ## Properties
 

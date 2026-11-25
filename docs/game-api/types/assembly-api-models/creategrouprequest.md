@@ -16,14 +16,14 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CreateGroupRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CreateGroupRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" Type { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" Type { get; set; }"}</code> |

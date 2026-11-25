@@ -17,10 +17,10 @@ An **interface** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-identifier" /><code>{"int Identifier { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-identifier" /><code>{"int Identifier { get; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> |
 
 ## Used in
 

@@ -20,9 +20,9 @@ Third-party NatureManufacture river spline: builds a river mesh along Catmull-Ro
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RamSpline()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RamSpline()"}</code> |
 
 ## Fields
 
@@ -112,7 +112,15 @@ Third-party NatureManufacture river spline: builds a river mesh along Catmull-Ro
 | <Link id="m-vertsinshape" /><code>{"int vertsInShape"}</code> | Vertices across the river's width. |
 | <Link id="m-width" /><code>{"float width"}</code> | Default width for new control points. |
 | <Link id="m-widths" /><code>{"List<float> widths"}</code> |  |
-| <Link id="m-isgenerationcontrolled" /><code>{"private bool isGenerationControlled"}</code> |  |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-isgenerationcontrolled" /><code>{"private bool isGenerationControlled"}</code> |
+
+</details>
 
 ## Methods
 
@@ -132,19 +140,27 @@ Third-party NatureManufacture river spline: builds a river mesh along Catmull-Ro
 | <Link id="m-removepoint" /><code>{"void RemovePoint(int i)"}</code> | Removes a control point and its rotation, snap and curve entries. |
 | <Link id="m-removepoints" /><code>{"void RemovePoints(int fromID = -1)"}</code> | Removes every control point after index `fromID` (all of them by default). |
 | <Link id="m-start" /><code>{"void Start()"}</code> | Builds the mesh unless `ControlledGenerate` already did. |
-| <Link id="m-calculatecatmullromsidesplines" /><code>{"private void CalculateCatmullRomSideSplines(List<Vector4> controlPoints, int pos)"}</code> |  |
-| <Link id="m-calculatecatmullromspline" /><code>{"private void CalculateCatmullRomSpline(List<Vector3> controlPoints, int pos, ref List<Vector3> points)"}</code> |  |
-| <Link id="m-calculatecatmullromsplineparameters" /><code>{"private void CalculateCatmullRomSplineParameters(List<Vector4> controlPoints, int pos, bool initialPoints = false)"}</code> |  |
-| <Link id="m-calculatenormal" /><code>{"private Vector3 CalculateNormal(Vector3 tangent, Vector3 up)"}</code> |  |
-| <Link id="m-calculatepointparameters" /><code>{"private void CalculatePointParameters(List<Vector4> controlPoints, int pos, Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t)"}</code> |  |
-| <Link id="m-calculatepointposition" /><code>{"private void CalculatePointPosition(List<Vector3> controlPoints, int pos, Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t, ref List<Vector3> points)"}</code> |  |
-| <Link id="m-clamplistpos" /><code>{"private int ClampListPos(int pos)"}</code> |  |
-| <Link id="m-flowcalculate" /><code>{"private float FlowCalculate(float u, float normalY)"}</code> |  |
-| <Link id="m-generatemesh" /><code>{"private void GenerateMesh(ref Mesh mesh)"}</code> |  |
-| <Link id="m-generaterow" /><code>{"private float GenerateRow(int i, int j, int offset, ref float u, ref float u3, Vector3[] vertices, Vector3[] normals, Vector2[] uvs, Vector2[] uvs3, Vector2[] uvs4, bool isRaycasting)"}</code> |  |
-| <Link id="m-getcatmullromposition" /><code>{"private Vector3 GetCatmullRomPosition(float t, Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3)"}</code> |  |
-| <Link id="m-getcatmullromtangent" /><code>{"private Vector3 GetCatmullRomTangent(float t, Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+
+<details>
+<summary>13 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-calculatecatmullromsidesplines" /><code>{"private void CalculateCatmullRomSideSplines(List<Vector4> controlPoints, int pos)"}</code> |
+| <Link id="m-calculatecatmullromspline" /><code>{"private void CalculateCatmullRomSpline(List<Vector3> controlPoints, int pos, ref List<Vector3> points)"}</code> |
+| <Link id="m-calculatecatmullromsplineparameters" /><code>{"private void CalculateCatmullRomSplineParameters(List<Vector4> controlPoints, int pos, bool initialPoints = false)"}</code> |
+| <Link id="m-calculatenormal" /><code>{"private Vector3 CalculateNormal(Vector3 tangent, Vector3 up)"}</code> |
+| <Link id="m-calculatepointparameters" /><code>{"private void CalculatePointParameters(List<Vector4> controlPoints, int pos, Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t)"}</code> |
+| <Link id="m-calculatepointposition" /><code>{"private void CalculatePointPosition(List<Vector3> controlPoints, int pos, Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t, ref List<Vector3> points)"}</code> |
+| <Link id="m-clamplistpos" /><code>{"private int ClampListPos(int pos)"}</code> |
+| <Link id="m-flowcalculate" /><code>{"private float FlowCalculate(float u, float normalY)"}</code> |
+| <Link id="m-generatemesh" /><code>{"private void GenerateMesh(ref Mesh mesh)"}</code> |
+| <Link id="m-generaterow" /><code>{"private float GenerateRow(int i, int j, int offset, ref float u, ref float u3, Vector3[] vertices, Vector3[] normals, Vector2[] uvs, Vector2[] uvs3, Vector2[] uvs4, bool isRaycasting)"}</code> |
+| <Link id="m-getcatmullromposition" /><code>{"private Vector3 GetCatmullRomPosition(float t, Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3)"}</code> |
+| <Link id="m-getcatmullromtangent" /><code>{"private Vector3 GetCatmullRomTangent(float t, Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>
 
 ## Used in
 

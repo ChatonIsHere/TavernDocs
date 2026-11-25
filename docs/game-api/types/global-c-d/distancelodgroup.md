@@ -19,19 +19,24 @@ Client: a simple LOD group that switches renderer sets on and off by the local p
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DistanceLODGroup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DistanceLODGroup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |  |
-| <Link id="m-lastlevel" /><code>{"private int lastLevel"}</code> |  |
-| <Link id="m-lastposition" /><code>{"private Vector3 lastPosition"}</code> |  |
-| <Link id="m-lods" /><code>{"private "}<Link to="/game-api/types/global-c-d/distancelod">{"DistanceLOD"}</Link>{"[] lods"}</code> |  |
-| <Link id="m-manager" /><code>{"private static "}<Link to="/game-api/types/global-c-d/distancelodgroupmanager">{"DistanceLODGroupManager"}</Link>{" manager"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |
+| <Link id="m-lastlevel" /><code>{"private int lastLevel"}</code> |
+| <Link id="m-lastposition" /><code>{"private Vector3 lastPosition"}</code> |
+| <Link id="m-lods" /><code>{"private "}<Link to="/game-api/types/global-c-d/distancelod">{"DistanceLOD"}</Link>{"[] lods"}</code> |
+| <Link id="m-manager" /><code>{"private static "}<Link to="/game-api/types/global-c-d/distancelodgroupmanager">{"DistanceLODGroupManager"}</Link>{" manager"}</code> |
+
+</details>
 
 ## Properties
 
@@ -52,11 +57,19 @@ Client: a simple LOD group that switches renderer sets on and off by the local p
 | <Link id="m-removerendererfromlod" /><code>{"void RemoveRendererFromLOD(int level, Renderer rendererToModify)"}</code> | Removes a renderer from one LOD level. |
 | <Link id="m-removerenderersfromlod" /><code>{"void RemoveRenderersFromLOD(int level, IEnumerable<Renderer> renderersToModify)"}</code> | Removes several renderers from one LOD level. |
 | <Link id="m-updatelod" /><code>{"void UpdateLOD(Vector3 referencePosition)"}</code> | Shows the level matching the distance to the given point and hides the previous one. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-modifylodlevelrenderers" /><code>{"private void ModifyLODLevelRenderers(int lodIndex, Func<HashSet<Renderer>, bool> modifyFunction)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-updateposition" /><code>{"private void UpdatePosition()"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-modifylodlevelrenderers" /><code>{"private void ModifyLODLevelRenderers(int lodIndex, Func<HashSet<Renderer>, bool> modifyFunction)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-updateposition" /><code>{"private void UpdatePosition()"}</code> |
+
+</details>
 
 ## Used in
 

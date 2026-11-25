@@ -20,17 +20,22 @@ Asset describing how a tool-based skill is triggered (the input gesture), with d
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SkillInputStructure()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SkillInputStructure()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-canceleddefaulteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" canceledDefaultEffect"}</code> |  |
-| <Link id="m-chargeddefaulteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" chargedDefaultEffect"}</code> |  |
-| <Link id="m-executeddefaulteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" executedDefaultEffect"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-canceleddefaulteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" canceledDefaultEffect"}</code> |
+| <Link id="m-chargeddefaulteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" chargedDefaultEffect"}</code> |
+| <Link id="m-executeddefaulteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" executedDefaultEffect"}</code> |
+
+</details>
 
 ## Methods
 

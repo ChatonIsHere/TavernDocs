@@ -20,16 +20,21 @@ Runtime part of an `EnchantmentTrigger` on one item: hooks game events when appl
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EnchantmentTriggerApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, T settings)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EnchantmentTriggerApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, T settings)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-effecttype" /><code>{"private uint effectType"}</code> |  |
-| <Link id="m-isapplied" /><code>{"private bool isApplied"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-effecttype" /><code>{"private uint effectType"}</code> |
+| <Link id="m-isapplied" /><code>{"private bool isApplied"}</code> |
+
+</details>
 
 ## Properties
 
@@ -37,7 +42,15 @@ Runtime part of an `EnchantmentTrigger` on one item: hooks game events when appl
 | --- | --- |
 | <Link id="m-enchantmentapp" /><code><Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" EnchantmentApp { get; private set; }"}</code> | The enchantment this trigger belongs to. |
 | <Link id="m-settings" /><code>{"T Settings { get; private set; }"}</code> | The trigger asset. |
-| <Link id="m-alta-enchantments-ienchantmenttriggerapplication-settings" /><code>{"private "}<Link to="/game-api/types/alta-crafting/enchantmenttrigger">{"EnchantmentTrigger"}</Link>{" Alta.Enchantments.IEnchantmentTriggerApplication.Settings { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-enchantments-ienchantmenttriggerapplication-settings" /><code>{"private "}<Link to="/game-api/types/alta-crafting/enchantmenttrigger">{"EnchantmentTrigger"}</Link>{" Alta.Enchantments.IEnchantmentTriggerApplication.Settings { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -54,6 +67,14 @@ Runtime part of an `EnchantmentTrigger` on one item: hooks game events when appl
 | <Link id="m-remove" /><code>{"void Remove()"}</code> | Unhooks the trigger, once. |
 | <Link id="m-sendmessage" /><code>{"virtual void SendMessage("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the effect type. Clients play the events on reading. |
 | <Link id="m-applyinternal" /><code>{"protected abstract void ApplyInternal()"}</code> | Subclass hook for `Apply`. |
-| <Link id="m-gettransformtocallat" /><code>{"private Transform GetTransformToCallAt("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
 | <Link id="m-invoke" /><code>{"protected void Invoke(object data)"}</code> | Fires `Invoked` with data such as the hit. |
 | <Link id="m-removeinternal" /><code>{"protected abstract void RemoveInternal()"}</code> | Subclass hook for `Remove`. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-gettransformtocallat" /><code>{"private Transform GetTransformToCallAt("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
+
+</details>

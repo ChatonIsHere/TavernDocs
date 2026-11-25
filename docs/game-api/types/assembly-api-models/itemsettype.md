@@ -16,10 +16,10 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bundle" /><code>{"Bundle = 23"}</code> |  |
-| <Link id="m-outfit" /><code>{"Outfit = 22"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bundle" /><code>{"Bundle = 23"}</code> |
+| <Link id="m-outfit" /><code>{"Outfit = 22"}</code> |
 
 ## Used in
 

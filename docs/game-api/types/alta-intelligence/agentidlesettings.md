@@ -20,24 +20,29 @@ Settings for a creature's idle action: how long it lasts, whether it faces or fo
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AgentIdleSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AgentIdleSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-followfrom" /><code>{"private float followFrom"}</code> |  |
-| <Link id="m-followmovementfrom" /><code>{"private float followMovementFrom"}</code> |  |
-| <Link id="m-followmovementto" /><code>{"private float followMovementTo"}</code> |  |
-| <Link id="m-followto" /><code>{"private float followTo"}</code> |  |
-| <Link id="m-isfacingtarget" /><code>{"private bool isFacingTarget"}</code> |  |
-| <Link id="m-isfollowingmovement" /><code>{"private bool isFollowingMovement"}</code> |  |
-| <Link id="m-isslowingdownwhenmoving" /><code>{"private bool isSlowingDownWhenMoving"}</code> |  |
-| <Link id="m-isusingtarget" /><code>{"private bool isUsingTarget"}</code> |  |
-| <Link id="m-movespawnchance" /><code>{"private float moveSpawnChance"}</code> |  |
-| <Link id="m-targetreacheddistance" /><code>{"private float targetReachedDistance"}</code> |  |
+<details>
+<summary>10 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-followfrom" /><code>{"private float followFrom"}</code> |
+| <Link id="m-followmovementfrom" /><code>{"private float followMovementFrom"}</code> |
+| <Link id="m-followmovementto" /><code>{"private float followMovementTo"}</code> |
+| <Link id="m-followto" /><code>{"private float followTo"}</code> |
+| <Link id="m-isfacingtarget" /><code>{"private bool isFacingTarget"}</code> |
+| <Link id="m-isfollowingmovement" /><code>{"private bool isFollowingMovement"}</code> |
+| <Link id="m-isslowingdownwhenmoving" /><code>{"private bool isSlowingDownWhenMoving"}</code> |
+| <Link id="m-isusingtarget" /><code>{"private bool isUsingTarget"}</code> |
+| <Link id="m-movespawnchance" /><code>{"private float moveSpawnChance"}</code> |
+| <Link id="m-targetreacheddistance" /><code>{"private float targetReachedDistance"}</code> |
+
+</details>
 
 ## Properties
 

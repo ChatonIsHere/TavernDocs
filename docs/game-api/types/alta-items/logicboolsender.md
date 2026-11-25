@@ -21,15 +21,20 @@ Logic component that sends a bool to linked logic receivers. The value is stored
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicBoolSender()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicBoolSender()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentvalue" /><code>{"private bool currentValue"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentvalue" /><code>{"private bool currentValue"}</code> |
+
+</details>
 
 ## Methods
 

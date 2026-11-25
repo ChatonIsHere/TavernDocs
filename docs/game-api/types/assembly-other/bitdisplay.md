@@ -16,7 +16,7 @@ A **static class** in `Alta.Serialization.Runtime`, `Alta.Serialization`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tobits" /><code>{"static string ToBits(ulong value)"}</code> |  |
-| <Link id="m-tobits-2" /><code>{"static string ToBits(uint value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tobits" /><code>{"static string ToBits(ulong value)"}</code> |
+| <Link id="m-tobits-2" /><code>{"static string ToBits(uint value)"}</code> |

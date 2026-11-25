@@ -17,23 +17,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MeshEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MeshEffect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-meshfilter" /><code>{"private MeshFilter meshFilter"}</code> |  |
-| <Link id="m-meshrenderer" /><code>{"private MeshRenderer meshRenderer"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-meshfilter" /><code>{"private MeshFilter meshFilter"}</code> |
+| <Link id="m-meshrenderer" /><code>{"private MeshRenderer meshRenderer"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-meshfilter-2" /><code>{"MeshFilter MeshFilter { get; }"}</code> |  |
-| <Link id="m-meshrenderer-2" /><code>{"MeshRenderer MeshRenderer { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-meshfilter-2" /><code>{"MeshFilter MeshFilter { get; }"}</code> |
+| <Link id="m-meshrenderer-2" /><code>{"MeshRenderer MeshRenderer { get; }"}</code> |
 
 ## Used in
 

@@ -17,20 +17,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SceneViewCamera()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SceneViewCamera()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-mesh" /><code>{"private GameObject mesh"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-mesh" /><code>{"private GameObject mesh"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-awake" /><code>{"protected void Awake()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+| <Link id="m-awake" /><code>{"protected void Awake()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

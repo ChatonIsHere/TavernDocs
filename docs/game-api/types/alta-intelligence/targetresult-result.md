@@ -17,18 +17,18 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Result()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Result()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-action" /><code><Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" Action { get; set; }"}</code> |  |
-| <Link id="m-basemultiplier" /><code>{"float BaseMultiplier { get; set; }"}</code> |  |
-| <Link id="m-steps" /><code>{"List<float> Steps { get; }"}</code> |  |
-| <Link id="m-weight" /><code>{"float Weight { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-action" /><code><Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" Action { get; set; }"}</code> |
+| <Link id="m-basemultiplier" /><code>{"float BaseMultiplier { get; set; }"}</code> |
+| <Link id="m-steps" /><code>{"List<float> Steps { get; }"}</code> |
+| <Link id="m-weight" /><code>{"float Weight { get; set; }"}</code> |
 
 ## Used in
 

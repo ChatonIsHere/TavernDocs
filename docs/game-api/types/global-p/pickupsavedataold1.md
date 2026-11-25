@@ -18,18 +18,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PickupSaveDataOld1()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PickupSaveDataOld1()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lastinteractorplayerid" /><code>{"int lastInteractorPlayerId"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-lastinteractorplayerid" /><code>{"int lastInteractorPlayerId"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

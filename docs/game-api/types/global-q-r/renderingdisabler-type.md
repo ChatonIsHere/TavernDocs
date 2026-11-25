@@ -17,16 +17,16 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-burnables" /><code>{"Burnables = 2"}</code> |  |
-| <Link id="m-dryleaves" /><code>{"DryLeaves = 7"}</code> |  |
-| <Link id="m-houses" /><code>{"Houses = 3"}</code> |  |
-| <Link id="m-rocks" /><code>{"Rocks = 0"}</code> |  |
-| <Link id="m-splineplaced" /><code>{"SplinePlaced = 1"}</code> |  |
-| <Link id="m-terrain" /><code>{"Terrain = 4"}</code> |  |
-| <Link id="m-vegetation" /><code>{"Vegetation = 5"}</code> |  |
-| <Link id="m-water" /><code>{"Water = 6"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-burnables" /><code>{"Burnables = 2"}</code> |
+| <Link id="m-dryleaves" /><code>{"DryLeaves = 7"}</code> |
+| <Link id="m-houses" /><code>{"Houses = 3"}</code> |
+| <Link id="m-rocks" /><code>{"Rocks = 0"}</code> |
+| <Link id="m-splineplaced" /><code>{"SplinePlaced = 1"}</code> |
+| <Link id="m-terrain" /><code>{"Terrain = 4"}</code> |
+| <Link id="m-vegetation" /><code>{"Vegetation = 5"}</code> |
+| <Link id="m-water" /><code>{"Water = 6"}</code> |
 
 ## Used in
 

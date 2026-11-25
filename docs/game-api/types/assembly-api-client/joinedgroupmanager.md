@@ -17,32 +17,42 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"internal JoinedGroupManager("}<Link to="/game-api/types/assembly-api-models/groupinfodetailed">{"GroupInfoDetailed"}</Link>{" group, "}<Link to="/game-api/types/assembly-api-models/groupmemberinfo">{"GroupMemberInfo"}</Link>{" membership, "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"internal JoinedGroupManager("}<Link to="/game-api/types/assembly-api-models/groupinfodetailed">{"GroupInfoDetailed"}</Link>{" group, "}<Link to="/game-api/types/assembly-api-models/groupmemberinfo">{"GroupMemberInfo"}</Link>{" membership, "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |
+
+</details>
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-api" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-api" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bans" /><code><Link to="/game-api/types/assembly-api-client/groupbans">{"GroupBans"}</Link>{" Bans { get; }"}</code> |  |
-| <Link id="m-group" /><code><Link to="/game-api/types/assembly-api-models/groupinfodetailed">{"GroupInfoDetailed"}</Link>{" Group { get; }"}</code> |  |
-| <Link id="m-info" /><code><Link to="/game-api/types/assembly-api-client/groupinfomanager">{"GroupInfoManager"}</Link>{" Info { get; }"}</code> |  |
-| <Link id="m-invites" /><code><Link to="/game-api/types/assembly-api-client/groupinvites">{"GroupInvites"}</Link>{" Invites { get; }"}</code> |  |
-| <Link id="m-memberinfo" /><code><Link to="/game-api/types/assembly-api-models/groupmemberinfo">{"GroupMemberInfo"}</Link>{" MemberInfo { get; }"}</code> |  |
-| <Link id="m-requests" /><code><Link to="/game-api/types/assembly-api-client/groupjoinrequests">{"GroupJoinRequests"}</Link>{" Requests { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bans" /><code><Link to="/game-api/types/assembly-api-client/groupbans">{"GroupBans"}</Link>{" Bans { get; }"}</code> |
+| <Link id="m-group" /><code><Link to="/game-api/types/assembly-api-models/groupinfodetailed">{"GroupInfoDetailed"}</Link>{" Group { get; }"}</code> |
+| <Link id="m-info" /><code><Link to="/game-api/types/assembly-api-client/groupinfomanager">{"GroupInfoManager"}</Link>{" Info { get; }"}</code> |
+| <Link id="m-invites" /><code><Link to="/game-api/types/assembly-api-client/groupinvites">{"GroupInvites"}</Link>{" Invites { get; }"}</code> |
+| <Link id="m-memberinfo" /><code><Link to="/game-api/types/assembly-api-models/groupmemberinfo">{"GroupMemberInfo"}</Link>{" MemberInfo { get; }"}</code> |
+| <Link id="m-requests" /><code><Link to="/game-api/types/assembly-api-client/groupjoinrequests">{"GroupJoinRequests"}</Link>{" Requests { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-leavegroup" /><code>{"Task LeaveGroup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-leavegroup" /><code>{"Task LeaveGroup()"}</code> |
 
 ## Used in
 

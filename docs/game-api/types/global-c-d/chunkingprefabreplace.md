@@ -18,28 +18,41 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkingPrefabReplace()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkingPrefabReplace()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isbaked" /><code>{"bool IsBaked { get; set; }"}</code> |  |
-| <Link id="m-prefab-2" /><code>{"GameObject Prefab { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isbaked" /><code>{"bool IsBaked { get; set; }"}</code> |
+| <Link id="m-prefab-2" /><code>{"GameObject Prefab { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkreplace" /><code>{"static void CheckReplace(ref GameObject target, bool isChunkingPrefabFolderForced = false)"}</code> |  |
-| <Link id="m-replacewithprefab" /><code>{"GameObject ReplaceWithPrefab()"}</code> |  |
-| <Link id="m-validateprefab" /><code>{"bool ValidatePrefab()"}</code> |  |
-| <Link id="m-bake" /><code>{"private void IBakeable.Bake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkreplace" /><code>{"static void CheckReplace(ref GameObject target, bool isChunkingPrefabFolderForced = false)"}</code> |
+| <Link id="m-replacewithprefab" /><code>{"GameObject ReplaceWithPrefab()"}</code> |
+| <Link id="m-validateprefab" /><code>{"bool ValidatePrefab()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"private void IBakeable.Bake()"}</code> |
+
+</details>

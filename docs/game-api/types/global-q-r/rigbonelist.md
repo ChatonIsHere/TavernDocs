@@ -18,21 +18,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RigBoneList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RigBoneList()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bones" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{"> bones"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-bones" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{"> bones"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bones-2" /><code>{"List<"}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{"> Bones { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bones-2" /><code>{"List<"}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{"> Bones { get; }"}</code> |
 
 ## Used in
 

@@ -19,14 +19,14 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimerLogicSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimerLogicSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activedurationsaved" /><code>{"float activeDurationSaved"}</code> |  |
-| <Link id="m-activeonloadsaved" /><code>{"bool activeOnLoadSaved"}</code> |  |
-| <Link id="m-timerresetswhenretriggeredsaved" /><code>{"bool timerResetsWhenRetriggeredSaved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-activedurationsaved" /><code>{"float activeDurationSaved"}</code> |
+| <Link id="m-activeonloadsaved" /><code>{"bool activeOnLoadSaved"}</code> |
+| <Link id="m-timerresetswhenretriggeredsaved" /><code>{"bool timerResetsWhenRetriggeredSaved"}</code> |

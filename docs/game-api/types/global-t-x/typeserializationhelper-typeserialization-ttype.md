@@ -21,9 +21,9 @@ Base for a serializer of one value type (float, vector, prefab, save data and so
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected TypeSerialization()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected TypeSerialization()"}</code> |
 
 ## Methods
 

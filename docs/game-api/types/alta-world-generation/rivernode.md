@@ -20,18 +20,23 @@ A point in the forest's river network. Water volume flows down its outgoing path
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RiverNode(int index, "}<Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{" space, Vector2 position, float height, float volume)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RiverNode(int index, "}<Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{" space, Vector2 position, float height, float volume)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isbelowthreshold" /><code>{"private bool isBelowThreshold"}</code> |  |
-| <Link id="m-isvolumecached" /><code>{"private bool isVolumeCached"}</code> |  |
-| <Link id="m-volumecache" /><code>{"private float volumeCache"}</code> |  |
-| <Link id="m-width" /><code>{"private float width"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isbelowthreshold" /><code>{"private bool isBelowThreshold"}</code> |
+| <Link id="m-isvolumecached" /><code>{"private bool isVolumeCached"}</code> |
+| <Link id="m-volumecache" /><code>{"private float volumeCache"}</code> |
+| <Link id="m-width" /><code>{"private float width"}</code> |
+
+</details>
 
 ## Properties
 
@@ -60,7 +65,15 @@ A point in the forest's river network. Water volume flows down its outgoing path
 | <Link id="m-evaluatecatchment" /><code>{"void EvaluateCatchment()"}</code> | Follows outgoing paths to the end and stores it as `Catchment`. |
 | <Link id="m-evaluateedgeinformation" /><code>{"static void EvaluateEdgeInformation(float decorationMultiplier, List<"}<Link to="/game-api/types/alta-world-generation/iriverdecorationsegment">{"IRiverDecorationSegment"}</Link>{"> decorations, "}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" finalOutgoing)"}</code> | Walks around the river's outline from a final outgoing path and adds line and arc decoration segments along the banks. |
 | <Link id="m-evaluatesegmentinformation" /><code>{"static void EvaluateSegmentInformation(List<"}<Link to="/game-api/types/alta-world-generation/iriverdecorationsegment">{"IRiverDecorationSegment"}</Link>{"> segments, "}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" node, float offset = 0)"}</code> | Adds a line segment for every path upstream of a node, recursively. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-evaluateedgeinformation-2" /><code>{"private static Vector2 EvaluateEdgeInformation(float decorationMultiplier, List<"}<Link to="/game-api/types/alta-world-generation/iriverdecorationsegment">{"IRiverDecorationSegment"}</Link>{"> decorations, "}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" nodeA, "}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" nodeB, "}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" nodeC, Vector2 nodeAB, Vector2 nodeBC, Vector2 leftPoint, ref float totalLength, ref float totalAngle, bool isWaterfall, bool isCurveWaterfall, float height)"}</code> | Walks around the river's outline from a final outgoing path and adds line and arc decoration segments along the banks. |
+
+</details>
 
 ## Used in
 

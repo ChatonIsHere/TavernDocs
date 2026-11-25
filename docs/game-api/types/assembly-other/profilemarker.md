@@ -16,13 +16,18 @@ A **static class** in `Alta.Profiling.Runtime`, `Alta.Profiling`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-markers" /><code>{"private static readonly Dictionary<string, ProfilerMarker> Markers"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-markers" /><code>{"private static readonly Dictionary<string, ProfilerMarker> Markers"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addprofile" /><code>{"static void AddProfile(string name)"}</code> |  |
-| <Link id="m-endprofile" /><code>{"static void EndProfile(string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addprofile" /><code>{"static void AddProfile(string name)"}</code> |
+| <Link id="m-endprofile" /><code>{"static void EndProfile(string name)"}</code> |

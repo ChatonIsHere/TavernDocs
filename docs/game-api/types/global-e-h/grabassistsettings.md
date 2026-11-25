@@ -21,35 +21,40 @@ Global settings for grab assist, which searches a short path from the hand to fi
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrabAssistSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrabAssistSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-assistgrabdirection" /><code>{"private Vector3 assistGrabDirection"}</code> |  |
-| <Link id="m-assistlength" /><code>{"private float assistLength"}</code> |  |
-| <Link id="m-assistpathmaterial" /><code>{"private Material assistPathMaterial"}</code> |  |
-| <Link id="m-assistpathmaterialandroid" /><code>{"private Material assistPathMaterialAndroid"}</code> |  |
-| <Link id="m-assistpathmesh" /><code>{"private Mesh assistPathMesh"}</code> |  |
-| <Link id="m-assistpathmeshandroid" /><code>{"private Mesh assistPathMeshAndroid"}</code> |  |
-| <Link id="m-assisttargetmaterial" /><code>{"private Material assistTargetMaterial"}</code> |  |
-| <Link id="m-assisttargetmesh" /><code>{"private Mesh assistTargetMesh"}</code> |  |
-| <Link id="m-assisttargetnotfoundmaterial" /><code>{"private Material assistTargetNotFoundMaterial"}</code> |  |
-| <Link id="m-detectionradius" /><code>{"private float detectionRadius"}</code> |  |
-| <Link id="m-foundtargetcolor" /><code>{"private Color foundTargetColor"}</code> |  |
-| <Link id="m-maximumanglefromdowntobeactivedot" /><code>{"private float maximumAngleFromDownToBeActiveDot"}</code> |  |
-| <Link id="m-notargetcolor" /><code>{"private Color noTargetColor"}</code> |  |
-| <Link id="m-obstaclelayermask" /><code>{"private LayerMask obstacleLayerMask"}</code> |  |
-| <Link id="m-pathindicatorscale" /><code>{"private Vector3 pathIndicatorScale"}</code> |  |
-| <Link id="m-pathinterval" /><code>{"private float pathInterval"}</code> |  |
-| <Link id="m-smoothdamptime" /><code>{"private float smoothDampTime"}</code> |  |
-| <Link id="m-startdelay" /><code>{"private float startDelay"}</code> |  |
-| <Link id="m-targetindicatorscale" /><code>{"private Vector3 targetIndicatorScale"}</code> |  |
-| <Link id="m-targetindicatorscalecurve" /><code>{"private AnimationCurve targetIndicatorScaleCurve"}</code> |  |
-| <Link id="m-verticalpower" /><code>{"private float verticalPower"}</code> |  |
+<details>
+<summary>21 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-assistgrabdirection" /><code>{"private Vector3 assistGrabDirection"}</code> |
+| <Link id="m-assistlength" /><code>{"private float assistLength"}</code> |
+| <Link id="m-assistpathmaterial" /><code>{"private Material assistPathMaterial"}</code> |
+| <Link id="m-assistpathmaterialandroid" /><code>{"private Material assistPathMaterialAndroid"}</code> |
+| <Link id="m-assistpathmesh" /><code>{"private Mesh assistPathMesh"}</code> |
+| <Link id="m-assistpathmeshandroid" /><code>{"private Mesh assistPathMeshAndroid"}</code> |
+| <Link id="m-assisttargetmaterial" /><code>{"private Material assistTargetMaterial"}</code> |
+| <Link id="m-assisttargetmesh" /><code>{"private Mesh assistTargetMesh"}</code> |
+| <Link id="m-assisttargetnotfoundmaterial" /><code>{"private Material assistTargetNotFoundMaterial"}</code> |
+| <Link id="m-detectionradius" /><code>{"private float detectionRadius"}</code> |
+| <Link id="m-foundtargetcolor" /><code>{"private Color foundTargetColor"}</code> |
+| <Link id="m-maximumanglefromdowntobeactivedot" /><code>{"private float maximumAngleFromDownToBeActiveDot"}</code> |
+| <Link id="m-notargetcolor" /><code>{"private Color noTargetColor"}</code> |
+| <Link id="m-obstaclelayermask" /><code>{"private LayerMask obstacleLayerMask"}</code> |
+| <Link id="m-pathindicatorscale" /><code>{"private Vector3 pathIndicatorScale"}</code> |
+| <Link id="m-pathinterval" /><code>{"private float pathInterval"}</code> |
+| <Link id="m-smoothdamptime" /><code>{"private float smoothDampTime"}</code> |
+| <Link id="m-startdelay" /><code>{"private float startDelay"}</code> |
+| <Link id="m-targetindicatorscale" /><code>{"private Vector3 targetIndicatorScale"}</code> |
+| <Link id="m-targetindicatorscalecurve" /><code>{"private AnimationCurve targetIndicatorScaleCurve"}</code> |
+| <Link id="m-verticalpower" /><code>{"private float verticalPower"}</code> |
+
+</details>
 
 ## Properties
 

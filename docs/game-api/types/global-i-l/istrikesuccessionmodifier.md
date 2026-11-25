@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targetskill" /><code><Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" TargetSkill { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-targetskill" /><code><Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" TargetSkill { get; }"}</code> |

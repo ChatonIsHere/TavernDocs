@@ -17,9 +17,9 @@ A **class** in `Root.Township`, `Alta.Creatures`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DeathEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DeathEvent()"}</code> |
 
 ## Used in
 

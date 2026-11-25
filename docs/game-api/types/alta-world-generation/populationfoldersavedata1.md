@@ -18,23 +18,23 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationFolderSaveData1()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationFolderSaveData1()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkpopulationtime" /><code>{"float checkPopulationTime"}</code> |  |
-| <Link id="m-children" /><code><Link to="/game-api/types/alta-world-generation/populationsavedatachild">{"PopulationSaveDataChild"}</Link>{"[] children"}</code> |  |
-| <Link id="m-currentpopulation" /><code>{"int currentPopulation"}</code> |  |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition"}</code> |  |
-| <Link id="m-ispopulationstarted" /><code>{"bool isPopulationStarted"}</code> |  |
-| <Link id="m-maxpopulation" /><code>{"int maxPopulation"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkpopulationtime" /><code>{"float checkPopulationTime"}</code> |
+| <Link id="m-children" /><code><Link to="/game-api/types/alta-world-generation/populationsavedatachild">{"PopulationSaveDataChild"}</Link>{"[] children"}</code> |
+| <Link id="m-currentpopulation" /><code>{"int currentPopulation"}</code> |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition"}</code> |
+| <Link id="m-ispopulationstarted" /><code>{"bool isPopulationStarted"}</code> |
+| <Link id="m-maxpopulation" /><code>{"int maxPopulation"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

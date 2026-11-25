@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProjectileEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProjectileEffect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-effectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectDefinition"}</code> |  |
-| <Link id="m-soundeffect" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-effectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectDefinition"}</code> |
+| <Link id="m-soundeffect" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-projectilecollided" /><code>{"protected override void ProjectileCollided("}<Link to="/game-api/types/global-p/projectile">{"Projectile"}</Link>{" projectile)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-projectilecollided" /><code>{"protected override void ProjectileCollided("}<Link to="/game-api/types/global-p/projectile">{"Projectile"}</Link>{" projectile)"}</code> |

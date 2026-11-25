@@ -23,14 +23,14 @@ What a body saves: each saved stat's `Base`, timed and indirect modifiers.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatManagerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatManagerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-indirectmodifiers" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedata-indirectstatmodifier">{"StatManagerSaveData.IndirectStatModifier"}</Link>{"[] indirectModifiers"}</code> |  |
-| <Link id="m-modifiers" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedata-timedmodifier">{"StatManagerSaveData.TimedModifier"}</Link>{"[] modifiers"}</code> |  |
-| <Link id="m-stats" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedatastat">{"StatManagerSaveDataStat"}</Link>{"[] stats"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-indirectmodifiers" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedata-indirectstatmodifier">{"StatManagerSaveData.IndirectStatModifier"}</Link>{"[] indirectModifiers"}</code> |
+| <Link id="m-modifiers" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedata-timedmodifier">{"StatManagerSaveData.TimedModifier"}</Link>{"[] modifiers"}</code> |
+| <Link id="m-stats" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedatastat">{"StatManagerSaveDataStat"}</Link>{"[] stats"}</code> |

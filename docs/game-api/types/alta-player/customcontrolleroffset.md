@@ -16,24 +16,29 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CustomControllerOffset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CustomControllerOffset()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-left" /><code>{"private SerializableTransform left"}</code> |  |
-| <Link id="m-right" /><code>{"private SerializableTransform right"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-left" /><code>{"private SerializableTransform left"}</code> |
+| <Link id="m-right" /><code>{"private SerializableTransform right"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-default" /><code>{"static "}<Link to="/game-api/types/alta-player/customcontrolleroffset">{"CustomControllerOffset"}</Link>{" Default { get; }"}</code> |  |
-| <Link id="m-left-2" /><code>{"SerializableTransform Left { get; }"}</code> |  |
-| <Link id="m-right-2" /><code>{"SerializableTransform Right { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-default" /><code>{"static "}<Link to="/game-api/types/alta-player/customcontrolleroffset">{"CustomControllerOffset"}</Link>{" Default { get; }"}</code> |
+| <Link id="m-left-2" /><code>{"SerializableTransform Left { get; }"}</code> |
+| <Link id="m-right-2" /><code>{"SerializableTransform Right { get; }"}</code> |
 
 ## Used in
 

@@ -17,31 +17,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionedNetworkPrefab()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionedNetworkPrefab()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-canmove" /><code>{"private bool canMove"}</code> |  |
-| <Link id="m-saveddynamicobject" /><code>{"private "}<Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" savedDynamicObject"}</code> |  |
-| <Link id="m-savemode" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-canmove" /><code>{"private bool canMove"}</code> |
+| <Link id="m-saveddynamicobject" /><code>{"private "}<Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" savedDynamicObject"}</code> |
+| <Link id="m-savemode" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-canmove-2" /><code>{"bool CanMove { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-canmove-2" /><code>{"bool CanMove { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-load" /><code>{"override "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Load(Transform transformParent, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-save" /><code>{"override void Save("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" scenePrefab)"}</code> |  |
-| <Link id="m-gettransform" /><code>{"protected override Transform GetTransform("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" scenePrefab)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-load" /><code>{"override "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Load(Transform transformParent, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| <Link id="m-save" /><code>{"override void Save("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" scenePrefab)"}</code> |
+| <Link id="m-gettransform" /><code>{"protected override Transform GetTransform("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" scenePrefab)"}</code> |
 
 ## Used in
 

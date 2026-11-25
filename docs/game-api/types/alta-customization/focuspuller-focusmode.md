@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, `Alta.ScreenshotCamera`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-auto" /><code>{"Auto = 1"}</code> |  |
-| <Link id="m-manual" /><code>{"Manual = 2"}</code> |  |
-| <Link id="m-perfect" /><code>{"Perfect = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-auto" /><code>{"Auto = 1"}</code> |
+| <Link id="m-manual" /><code>{"Manual = 2"}</code> |
+| <Link id="m-perfect" /><code>{"Perfect = 0"}</code> |
 
 ## Used in
 

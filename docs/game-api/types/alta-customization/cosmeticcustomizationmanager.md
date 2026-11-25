@@ -20,27 +20,32 @@ Runs the cosmetic customization room: attaches a player's cosmetics to the dummy
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticCustomizationManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CosmeticCustomizationManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cacheredopossible" /><code>{"private bool cacheRedoPossible"}</code> |  |
-| <Link id="m-cacheundopossible" /><code>{"private bool cacheUndoPossible"}</code> |  |
-| <Link id="m-categoryscroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/itemscroller">{"ItemScroller"}</Link>{" categoryScroller"}</code> |  |
-| <Link id="m-customizationhandler" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" customizationHandler"}</code> |  |
-| <Link id="m-detachableparts" /><code>{"private GameObject[] detachableParts"}</code> |  |
-| <Link id="m-editableslots" /><code>{"private "}<Link to="/game-api/types/alta-customization/editablecosmeticslot">{"EditableCosmeticSlot"}</Link>{"[] editableSlots"}</code> |  |
-| <Link id="m-israndomizing" /><code>{"private bool isRandomizing"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-originaldata" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" originalData"}</code> |  |
-| <Link id="m-owned" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticownershipmanager">{"CosmeticOwnershipManager"}</Link>{" owned"}</code> |  |
-| <Link id="m-player" /><code>{"private "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> |  |
-| <Link id="m-redopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" redoPossibleChanged"}</code> |  |
-| <Link id="m-undopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" undoPossibleChanged"}</code> |  |
+<details>
+<summary>13 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cacheredopossible" /><code>{"private bool cacheRedoPossible"}</code> |
+| <Link id="m-cacheundopossible" /><code>{"private bool cacheUndoPossible"}</code> |
+| <Link id="m-categoryscroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/itemscroller">{"ItemScroller"}</Link>{" categoryScroller"}</code> |
+| <Link id="m-customizationhandler" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" customizationHandler"}</code> |
+| <Link id="m-detachableparts" /><code>{"private GameObject[] detachableParts"}</code> |
+| <Link id="m-editableslots" /><code>{"private "}<Link to="/game-api/types/alta-customization/editablecosmeticslot">{"EditableCosmeticSlot"}</Link>{"[] editableSlots"}</code> |
+| <Link id="m-israndomizing" /><code>{"private bool isRandomizing"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-originaldata" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" originalData"}</code> |
+| <Link id="m-owned" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticownershipmanager">{"CosmeticOwnershipManager"}</Link>{" owned"}</code> |
+| <Link id="m-player" /><code>{"private "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> |
+| <Link id="m-redopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" redoPossibleChanged"}</code> |
+| <Link id="m-undopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" undoPossibleChanged"}</code> |
+
+</details>
 
 ## Properties
 
@@ -72,11 +77,19 @@ Runs the cosmetic customization room: attaches a player's cosmetics to the dummy
 | <Link id="m-randomize" /><code>{"async void Randomize()"}</code> | Randomizes the outfit using only owned items. Ignored while a randomize is already running. |
 | <Link id="m-redo" /><code>{"void Redo()"}</code> | Redoes the last undone cosmetic change and updates the undo and redo button events. |
 | <Link id="m-undo" /><code>{"void Undo()"}</code> | Undoes the last cosmetic change and updates the undo and redo button events. |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
 | <Link id="m-onitempushed" /><code>{"private void OnItemPushed()"}</code> |  |
 | <Link id="m-randomize-2" /><code>{"private void Randomize("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" input)"}</code> | Randomizes the outfit using only owned items. Ignored while a randomize is already running. |
 | <Link id="m-startsession" /><code>{"private async Task StartSession("}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager)"}</code> |  |
 | <Link id="m-updatecache" /><code>{"private void UpdateCache()"}</code> |  |
+
+</details>
 
 ## Used in
 

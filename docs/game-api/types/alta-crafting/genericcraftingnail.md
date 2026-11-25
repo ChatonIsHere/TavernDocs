@@ -21,28 +21,33 @@ One nail on a generic crafting piece that players hammer in. Hits from its impac
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenericCraftingNail()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenericCraftingNail()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-afterdonedisabletimer" /><code>{"private float afterDoneDisableTimer"}</code> |  |
-| <Link id="m-deviance" /><code>{"private Quaternion deviance"}</code> |  |
-| <Link id="m-disablecollider" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" disableCollider"}</code> |  |
-| <Link id="m-donedistance" /><code>{"private float doneDistance"}</code> |  |
-| <Link id="m-hitreceiver" /><code>{"private "}<Link to="/game-api/types/alta-crafting/inailable">{"INailable"}</Link>{" hitReceiver"}</code> |  |
-| <Link id="m-impactcollider" /><code>{"private Collider impactCollider"}</code> |  |
-| <Link id="m-impactdetector" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector"}</code> |  |
-| <Link id="m-length" /><code>{"private float length"}</code> |  |
-| <Link id="m-maxdeviance" /><code>{"private float maxDeviance"}</code> |  |
-| <Link id="m-meshtransform" /><code>{"private Transform meshTransform"}</code> |  |
-| <Link id="m-pivottransform" /><code>{"private Transform pivotTransform"}</code> |  |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |  |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |  |
-| <Link id="m-shell" /><code>{"private Renderer shell"}</code> |  |
+<details>
+<summary>14 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-afterdonedisabletimer" /><code>{"private float afterDoneDisableTimer"}</code> |
+| <Link id="m-deviance" /><code>{"private Quaternion deviance"}</code> |
+| <Link id="m-disablecollider" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" disableCollider"}</code> |
+| <Link id="m-donedistance" /><code>{"private float doneDistance"}</code> |
+| <Link id="m-hitreceiver" /><code>{"private "}<Link to="/game-api/types/alta-crafting/inailable">{"INailable"}</Link>{" hitReceiver"}</code> |
+| <Link id="m-impactcollider" /><code>{"private Collider impactCollider"}</code> |
+| <Link id="m-impactdetector" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector"}</code> |
+| <Link id="m-length" /><code>{"private float length"}</code> |
+| <Link id="m-maxdeviance" /><code>{"private float maxDeviance"}</code> |
+| <Link id="m-meshtransform" /><code>{"private Transform meshTransform"}</code> |
+| <Link id="m-pivottransform" /><code>{"private Transform pivotTransform"}</code> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+| <Link id="m-progress" /><code>{"private float progress"}</code> |
+| <Link id="m-shell" /><code>{"private Renderer shell"}</code> |
+
+</details>
 
 ## Properties
 
@@ -70,14 +75,22 @@ One nail on a generic crafting piece that players hammer in. Hits from its impac
 | <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads done, progress and tilt. |
 | <Link id="m-setactive" /><code>{"void SetActive(bool isActive)"}</code> | Shows or hides the nail. |
 | <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/alta-crafting/inailable">{"INailable"}</Link>{" hitReceiver, int index, Vector3 position, float maxDeviance)"}</code> | Links the nail to its piece with an index, position and maximum tilt, and resets it. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-disablecollider-2" /><code>{"private void DisableCollider()"}</code> |  |
-| <Link id="m-disabletimer" /><code>{"private void DisableTimer("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |  |
-| <Link id="m-icclientsideimpact" /><code>{"private bool IcClientSideImpact("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact, out "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" resultHit)"}</code> |  |
 | <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> | Cancels the collider-off timer. |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-receivehit" /><code>{"private void ReceiveHit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |  |
-| <Link id="m-updateposition" /><code>{"private void UpdatePosition()"}</code> |  |
+
+<details>
+<summary>7 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-disablecollider-2" /><code>{"private void DisableCollider()"}</code> |
+| <Link id="m-disabletimer" /><code>{"private void DisableTimer("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
+| <Link id="m-icclientsideimpact" /><code>{"private bool IcClientSideImpact("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact, out "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" resultHit)"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-receivehit" /><code>{"private void ReceiveHit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |
+| <Link id="m-updateposition" /><code>{"private void UpdatePosition()"}</code> |
+
+</details>
 
 ## Used in
 

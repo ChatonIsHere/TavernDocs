@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, `Alta.Console`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-commandresult" /><code>{"CommandResult = 2"}</code> |  |
-| <Link id="m-subscription" /><code>{"Subscription = 1"}</code> |  |
-| <Link id="m-systemmessage" /><code>{"SystemMessage = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-commandresult" /><code>{"CommandResult = 2"}</code> |
+| <Link id="m-subscription" /><code>{"Subscription = 1"}</code> |
+| <Link id="m-systemmessage" /><code>{"SystemMessage = 0"}</code> |
 
 ## Used in
 

@@ -19,27 +19,32 @@ The visual character model: rig, animator, skin, clothes, eyes and LODs, used fo
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterDummy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CharacterDummy()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |  |
-| <Link id="m-bodytype" /><code>{"private "}<Link to="/game-api/types/alta-player/bodytypesettings">{"BodyTypeSettings"}</Link>{" bodyType"}</code> |  |
-| <Link id="m-clothes" /><code>{"private "}<Link to="/game-api/types/alta-player/clothessettings">{"ClothesSettings"}</Link>{" clothes"}</code> |  |
-| <Link id="m-controllercollection" /><code>{"private "}<Link to="/game-api/types/alta-player/charactercomponentcontrollercollection">{"CharacterComponentControllerCollection"}</Link>{" controllerCollection"}</code> |  |
-| <Link id="m-cosmeticpacker" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpacker">{"CosmeticPacker"}</Link>{" cosmeticPacker"}</code> |  |
-| <Link id="m-effectrenderers" /><code>{"private HashSet<Renderer> effectRenderers"}</code> |  |
-| <Link id="m-eyes" /><code>{"private "}<Link to="/game-api/types/alta-player/eyesettings">{"EyeSettings"}</Link>{" eyes"}</code> |  |
-| <Link id="m-fingertips" /><code>{"private "}<Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" fingerTips"}</code> |  |
-| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> |  |
-| <Link id="m-mainrenderers" /><code>{"private HashSet<Renderer> mainRenderers"}</code> |  |
-| <Link id="m-rigmap" /><code>{"private "}<Link to="/game-api/types/global-q-r/rigmap">{"RigMap"}</Link>{" rigMap"}</code> |  |
-| <Link id="m-root" /><code>{"private "}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" root"}</code> |  |
-| <Link id="m-skin" /><code>{"private "}<Link to="/game-api/types/alta-player/skinsettings">{"SkinSettings"}</Link>{" skin"}</code> |  |
+<details>
+<summary>13 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
+| <Link id="m-bodytype" /><code>{"private "}<Link to="/game-api/types/alta-player/bodytypesettings">{"BodyTypeSettings"}</Link>{" bodyType"}</code> |
+| <Link id="m-clothes" /><code>{"private "}<Link to="/game-api/types/alta-player/clothessettings">{"ClothesSettings"}</Link>{" clothes"}</code> |
+| <Link id="m-controllercollection" /><code>{"private "}<Link to="/game-api/types/alta-player/charactercomponentcontrollercollection">{"CharacterComponentControllerCollection"}</Link>{" controllerCollection"}</code> |
+| <Link id="m-cosmeticpacker" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpacker">{"CosmeticPacker"}</Link>{" cosmeticPacker"}</code> |
+| <Link id="m-effectrenderers" /><code>{"private HashSet<Renderer> effectRenderers"}</code> |
+| <Link id="m-eyes" /><code>{"private "}<Link to="/game-api/types/alta-player/eyesettings">{"EyeSettings"}</Link>{" eyes"}</code> |
+| <Link id="m-fingertips" /><code>{"private "}<Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" fingerTips"}</code> |
+| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> |
+| <Link id="m-mainrenderers" /><code>{"private HashSet<Renderer> mainRenderers"}</code> |
+| <Link id="m-rigmap" /><code>{"private "}<Link to="/game-api/types/global-q-r/rigmap">{"RigMap"}</Link>{" rigMap"}</code> |
+| <Link id="m-root" /><code>{"private "}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" root"}</code> |
+| <Link id="m-skin" /><code>{"private "}<Link to="/game-api/types/alta-player/skinsettings">{"SkinSettings"}</Link>{" skin"}</code> |
+
+</details>
 
 ## Properties
 
@@ -70,9 +75,17 @@ The visual character model: rig, animator, skin, clothes, eyes and LODs, used fo
 | <Link id="m-setcharacterbodyvisibility" /><code>{"void SetCharacterBodyVisibility(bool isVisible)"}</code> | Shows or hides the body renderers. |
 | <Link id="m-setcharacterheadvisibility" /><code>{"void SetCharacterHeadVisibility(bool isVisible)"}</code> | Shows or hides the head renderers. |
 | <Link id="m-setfirstperson" /><code>{"void SetFirstPerson(bool isFirstPerson)"}</code> | Sets first person mode, hiding the head renderers when on. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-reducelod" /><code>{"private void ReduceLOD()"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-reducelod" /><code>{"private void ReduceLOD()"}</code> |
+
+</details>
 
 ## Used in
 

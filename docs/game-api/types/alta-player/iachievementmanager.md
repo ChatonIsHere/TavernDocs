@@ -17,10 +17,10 @@ An **interface** in `Root.Township`, `Alta.Achievements`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-complete" /><code>{"void Complete("}<Link to="/game-api/types/alta-player/achievement">{"Achievement"}</Link>{" achievement)"}</code> |  |
-| <Link id="m-requestupdate" /><code>{"void RequestUpdate("}<Link to="/game-api/types/alta-player/achievement">{"Achievement"}</Link>{" achievement)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-complete" /><code>{"void Complete("}<Link to="/game-api/types/alta-player/achievement">{"Achievement"}</Link>{" achievement)"}</code> |
+| <Link id="m-requestupdate" /><code>{"void RequestUpdate("}<Link to="/game-api/types/alta-player/achievement">{"Achievement"}</Link>{" achievement)"}</code> |
 
 ## Used in
 

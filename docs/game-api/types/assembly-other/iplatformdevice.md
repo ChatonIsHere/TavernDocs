@@ -17,9 +17,9 @@ An **interface** in `Alta.Platform`, `Alta.Platform`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setffvsource" /><code>{"void SetFfvSource("}<Link to="/game-api/types/assembly-other/ffvsource">{"FfvSource"}</Link>{" source, bool shouldEnable)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setffvsource" /><code>{"void SetFfvSource("}<Link to="/game-api/types/assembly-other/ffvsource">{"FfvSource"}</Link>{" source, bool shouldEnable)"}</code> |
 
 ## Used in
 

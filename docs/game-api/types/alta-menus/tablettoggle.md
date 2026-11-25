@@ -17,24 +17,29 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TabletToggle()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TabletToggle()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-button" /><code>{"private "}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" button"}</code> |  |
-| <Link id="m-buttonhome" /><code>{"private GameObject ButtonHome"}</code> |  |
-| <Link id="m-buttonhomeextended" /><code>{"private GameObject ButtonHomeExtended"}</code> |  |
-| <Link id="m-home" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" home"}</code> |  |
-| <Link id="m-homeextended" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" homeExtended"}</code> |  |
-| <Link id="m-isextended" /><code>{"private bool isExtended"}</code> |  |
-| <Link id="m-playerlistback" /><code>{"private GameObject PlayerListBack"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-button" /><code>{"private "}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" button"}</code> |
+| <Link id="m-buttonhome" /><code>{"private GameObject ButtonHome"}</code> |
+| <Link id="m-buttonhomeextended" /><code>{"private GameObject ButtonHomeExtended"}</code> |
+| <Link id="m-home" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" home"}</code> |
+| <Link id="m-homeextended" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" homeExtended"}</code> |
+| <Link id="m-isextended" /><code>{"private bool isExtended"}</code> |
+| <Link id="m-playerlistback" /><code>{"private GameObject PlayerListBack"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tablettoggle" /><code>{"void tabletToggle()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tablettoggle" /><code>{"void tabletToggle()"}</code> |

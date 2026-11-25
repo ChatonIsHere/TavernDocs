@@ -17,30 +17,35 @@ A **internal class** in `Root.Township`, `Alta.Lighting`. Reach it through att-s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LightSorter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LightSorter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-count" /><code>{"private int count"}</code> |  |
-| <Link id="m-lights" /><code>{"private T[] lights"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-count" /><code>{"private int count"}</code> |
+| <Link id="m-lights" /><code>{"private T[] lights"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-item" /><code>{"T this[int index] { get; }"}</code> |  |
-| <Link id="m-size" /><code>{"int Size { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-item" /><code>{"T this[int index] { get; }"}</code> |
+| <Link id="m-size" /><code>{"int Size { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enqueue" /><code>{"int Enqueue(T light)"}</code> |  |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-enqueue" /><code>{"int Enqueue(T light)"}</code> |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> |
 
 ## Used in
 

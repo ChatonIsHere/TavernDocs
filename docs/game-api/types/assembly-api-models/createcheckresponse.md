@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CreateCheckResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CreateCheckResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pcgroupsleft" /><code>{"int PcGroupsLeft { get; set; }"}</code> |  |
-| <Link id="m-questgroupsleft" /><code>{"int QuestGroupsLeft { get; set; }"}</code> |  |
-| <Link id="m-value" /><code>{"bool Value { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-pcgroupsleft" /><code>{"int PcGroupsLeft { get; set; }"}</code> |
+| <Link id="m-questgroupsleft" /><code>{"int QuestGroupsLeft { get; set; }"}</code> |
+| <Link id="m-value" /><code>{"bool Value { get; set; }"}</code> |
 
 ## Used in
 

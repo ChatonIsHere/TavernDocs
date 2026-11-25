@@ -18,8 +18,8 @@ An **interface** in `Root.Township`, `Alta.Menu`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-argumentisvalid" /><code>{"bool ArgumentIsValid(string name)"}</code> |  |
-| <Link id="m-getargument" /><code>{"string GetArgument(string name)"}</code> |  |
-| <Link id="m-setargument" /><code>{"void SetArgument(string name, string argument)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-argumentisvalid" /><code>{"bool ArgumentIsValid(string name)"}</code> |
+| <Link id="m-getargument" /><code>{"string GetArgument(string name)"}</code> |
+| <Link id="m-setargument" /><code>{"void SetArgument(string name, string argument)"}</code> |

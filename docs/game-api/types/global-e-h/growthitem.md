@@ -18,9 +18,9 @@ One growing plant inside a `GrowerGroup`: steps through a `GrowthDefinition`'s s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrowthItem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrowthItem()"}</code> |
 
 ## Fields
 
@@ -36,10 +36,18 @@ One growing plant inside a `GrowerGroup`: steps through a `GrowthDefinition`'s s
 | <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | Local rotation in the parent group. |
 | <Link id="m-spawnedstageindex" /><code>{"int spawnedStageIndex"}</code> | Index of the stage whose prefab is spawned, or -1. |
 | <Link id="m-startedtime" /><code>{"TimeSpan startedTime"}</code> | Timeline time when growth started. |
-| <Link id="m-colliders" /><code>{"private static Collider[] colliders"}</code> |  |
-| <Link id="m-handledrigidbodies" /><code>{"private static HashSet<Rigidbody> handledRigidbodies"}</code> |  |
-| <Link id="m-hits" /><code>{"private static RaycastHit[] hits"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-colliders" /><code>{"private static Collider[] colliders"}</code> |
+| <Link id="m-handledrigidbodies" /><code>{"private static HashSet<Rigidbody> handledRigidbodies"}</code> |
+| <Link id="m-hits" /><code>{"private static RaycastHit[] hits"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
@@ -66,18 +74,26 @@ One growing plant inside a `GrowerGroup`: steps through a `GrowthDefinition`'s s
 | <Link id="m-ondestroy" /><code>{"void OnDestroy()"}</code> | Cancels the next stage timer. |
 | <Link id="m-startgrowing" /><code>{"void StartGrowing()"}</code> | Starts at stage 0 if not already started and the parent is not being destroyed. |
 | <Link id="m-stopgrowth" /><code>{"void StopGrowth(bool isKeepingChild)"}</code> | Cancels the timer. Keeping the child unparents the last stage if the group destroys itself at the end; otherwise the stage is destroyed. |
-| <Link id="m-checkradius" /><code>{"private bool CheckRadius("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage)"}</code> |  |
-| <Link id="m-checkraycast" /><code>{"private bool CheckRaycast("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage)"}</code> |  |
-| <Link id="m-destroycurrentstage" /><code>{"private void DestroyCurrentStage()"}</code> |  |
-| <Link id="m-handlechecksresult" /><code>{"private void HandleChecksResult(int stageIndex, "}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, bool checksResult, TimeSpan timeLeft = null)"}</code> |  |
-| <Link id="m-handlechilddestroyed" /><code>{"private void HandleChildDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-handleprefabkinematic" /><code>{"private void HandlePrefabKinematic("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" spawned)"}</code> |  |
-| <Link id="m-performstagechecks" /><code>{"private bool PerformStageChecks(int stageIndex)"}</code> |  |
-| <Link id="m-picked" /><code>{"private void Picked()"}</code> |  |
-| <Link id="m-setcurrentstageentity" /><code>{"private void SetCurrentStageEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newEntity)"}</code> |  |
-| <Link id="m-spawnprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnPrefab("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, int stageIndex)"}</code> |  |
-| <Link id="m-stageentityunchilded" /><code>{"private void StageEntityUnchilded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" topic, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" oldParent, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newParent)"}</code> |  |
-| <Link id="m-unchildspawned" /><code>{"private void UnchildSpawned()"}</code> |  |
+
+<details>
+<summary>12 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-checkradius" /><code>{"private bool CheckRadius("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage)"}</code> |
+| <Link id="m-checkraycast" /><code>{"private bool CheckRaycast("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage)"}</code> |
+| <Link id="m-destroycurrentstage" /><code>{"private void DestroyCurrentStage()"}</code> |
+| <Link id="m-handlechecksresult" /><code>{"private void HandleChecksResult(int stageIndex, "}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, bool checksResult, TimeSpan timeLeft = null)"}</code> |
+| <Link id="m-handlechilddestroyed" /><code>{"private void HandleChildDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| <Link id="m-handleprefabkinematic" /><code>{"private void HandlePrefabKinematic("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" spawned)"}</code> |
+| <Link id="m-performstagechecks" /><code>{"private bool PerformStageChecks(int stageIndex)"}</code> |
+| <Link id="m-picked" /><code>{"private void Picked()"}</code> |
+| <Link id="m-setcurrentstageentity" /><code>{"private void SetCurrentStageEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newEntity)"}</code> |
+| <Link id="m-spawnprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnPrefab("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, int stageIndex)"}</code> |
+| <Link id="m-stageentityunchilded" /><code>{"private void StageEntityUnchilded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" topic, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" oldParent, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newParent)"}</code> |
+| <Link id="m-unchildspawned" /><code>{"private void UnchildSpawned()"}</code> |
+
+</details>
 
 ## Used in
 

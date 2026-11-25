@@ -17,25 +17,38 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GlyphDisplayer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GlyphDisplayer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-starttime" /><code>{"private static readonly int _StartTime"}</code> |  |
-| <Link id="m-glyphcoroutine" /><code>{"private Coroutine glyphCoroutine"}</code> |  |
-| <Link id="m-glyphrenderer" /><code>{"private Renderer glyphRenderer"}</code> |  |
-| <Link id="m-glyphshowdelay" /><code>{"private float glyphShowDelay"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-starttime" /><code>{"private static readonly int _StartTime"}</code> |
+| <Link id="m-glyphcoroutine" /><code>{"private Coroutine glyphCoroutine"}</code> |
+| <Link id="m-glyphrenderer" /><code>{"private Renderer glyphRenderer"}</code> |
+| <Link id="m-glyphshowdelay" /><code>{"private float glyphShowDelay"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-finishrequest" /><code>{"override void FinishRequest()"}</code> |  |
-| <Link id="m-hideglyph" /><code>{"void HideGlyph()"}</code> |  |
-| <Link id="m-release" /><code>{"override void Release()"}</code> |  |
-| <Link id="m-resetglyphtimer" /><code>{"void ResetGlyphTimer()"}</code> |  |
-| <Link id="m-delayshowglyph" /><code>{"private IEnumerator DelayShowGlyph() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-finishrequest" /><code>{"override void FinishRequest()"}</code> |
+| <Link id="m-hideglyph" /><code>{"void HideGlyph()"}</code> |
+| <Link id="m-release" /><code>{"override void Release()"}</code> |
+| <Link id="m-resetglyphtimer" /><code>{"void ResetGlyphTimer()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-delayshowglyph" /><code>{"private IEnumerator DelayShowGlyph() (iterator)"}</code> |
+
+</details>

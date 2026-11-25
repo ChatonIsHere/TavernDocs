@@ -19,13 +19,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BakeableTextureDecimator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BakeableTextureDecimator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activedata" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/bakeabletexturedecimator-texturedata">{"BakeableTextureDecimator.TextureData"}</Link>{"> activeData"}</code> |  |
-| <Link id="m-textures" /><code>{"private "}<Link to="/game-api/types/global-a-b/bakeabletexturedecimator-platformtextures">{"BakeableTextureDecimator.PlatformTextures"}</Link>{"[] textures"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activedata" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/bakeabletexturedecimator-texturedata">{"BakeableTextureDecimator.TextureData"}</Link>{"> activeData"}</code> |
+| <Link id="m-textures" /><code>{"private "}<Link to="/game-api/types/global-a-b/bakeabletexturedecimator-platformtextures">{"BakeableTextureDecimator.PlatformTextures"}</Link>{"[] textures"}</code> |
+
+</details>

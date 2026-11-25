@@ -16,13 +16,13 @@ An **enum** in `Root.Township`, `Alta.Logic`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-and" /><code>{"And = 0"}</code> |  |
-| <Link id="m-nand" /><code>{"Nand = 3"}</code> |  |
-| <Link id="m-or" /><code>{"Or = 1"}</code> |  |
-| <Link id="m-toggle" /><code>{"Toggle = 4"}</code> |  |
-| <Link id="m-xor" /><code>{"Xor = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-and" /><code>{"And = 0"}</code> |
+| <Link id="m-nand" /><code>{"Nand = 3"}</code> |
+| <Link id="m-or" /><code>{"Or = 1"}</code> |
+| <Link id="m-toggle" /><code>{"Toggle = 4"}</code> |
+| <Link id="m-xor" /><code>{"Xor = 2"}</code> |
 
 ## Used in
 

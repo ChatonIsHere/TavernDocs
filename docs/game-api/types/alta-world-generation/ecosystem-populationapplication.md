@@ -17,34 +17,39 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationApplication()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationApplication()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-averagemaximumpopulation" /><code>{"private int averageMaximumPopulation"}</code> |  |
-| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition"}</code> |  |
-| <Link id="m-islimitedbyspawnpoints" /><code>{"private bool isLimitedBySpawnPoints"}</code> |  |
-| <Link id="m-maxpopulationmultiplieronsimpleservers" /><code>{"private float maxPopulationMultiplierOnSimpleServers"}</code> |  |
-| <Link id="m-minimumstartpopulation" /><code>{"private int minimumStartPopulation"}</code> |  |
-| <Link id="m-plugin" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" plugin"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-averagemaximumpopulation" /><code>{"private int averageMaximumPopulation"}</code> |
+| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition"}</code> |
+| <Link id="m-islimitedbyspawnpoints" /><code>{"private bool isLimitedBySpawnPoints"}</code> |
+| <Link id="m-maxpopulationmultiplieronsimpleservers" /><code>{"private float maxPopulationMultiplierOnSimpleServers"}</code> |
+| <Link id="m-minimumstartpopulation" /><code>{"private int minimumStartPopulation"}</code> |
+| <Link id="m-plugin" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" plugin"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-definition-2" /><code><Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" Definition { get; }"}</code> |  |
-| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> |  |
-| <Link id="m-plugin-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-definition-2" /><code><Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" Definition { get; }"}</code> |
+| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> |
+| <Link id="m-plugin-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializesample" /><code><Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" InitializeSample("}<Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" biome, "}<Link to="/game-api/types/alta-world-generation/ecosystem">{"Ecosystem"}</Link>{" ecosystem, "}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" parent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializesample" /><code><Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" InitializeSample("}<Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" biome, "}<Link to="/game-api/types/alta-world-generation/ecosystem">{"Ecosystem"}</Link>{" ecosystem, "}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" parent)"}</code> |
 
 ## Used in
 

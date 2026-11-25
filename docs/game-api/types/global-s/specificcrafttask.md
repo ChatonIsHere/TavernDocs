@@ -18,28 +18,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpecificCraftTask()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpecificCraftTask()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-insertprefabhashes" /><code>{"private HashSet<uint> insertPrefabHashes"}</code> |  |
-| <Link id="m-insertprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> insertPrefabs"}</code> |  |
-| <Link id="m-slotprefabhashes" /><code>{"private HashSet<uint> slotPrefabHashes"}</code> |  |
-| <Link id="m-slotprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> slotPrefabs"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-insertprefabhashes" /><code>{"private HashSet<uint> insertPrefabHashes"}</code> |
+| <Link id="m-insertprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> insertPrefabs"}</code> |
+| <Link id="m-slotprefabhashes" /><code>{"private HashSet<uint> slotPrefabHashes"}</code> |
+| <Link id="m-slotprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> slotPrefabs"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> |  |
-| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/game-api/types/global-s/specificcrafttaskargument">{"SpecificCraftTaskArgument"}</Link>{" argument)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> |
+| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/game-api/types/global-s/specificcrafttaskargument">{"SpecificCraftTaskArgument"}</Link>{" argument)"}</code> |

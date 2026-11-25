@@ -18,30 +18,43 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NeckIKController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NeckIKController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-headtarget" /><code>{"private Transform headTarget"}</code> |  |
-| <Link id="m-isapplyinrotationlimitonoverride" /><code>{"private bool isApplyinRotationLimitOnOverride"}</code> |  |
-| <Link id="m-isoverridingheadrotation" /><code>{"private bool isOverridingHeadRotation"}</code> |  |
-| <Link id="m-neckik" /><code>{"private FABRIK neckIK"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-headtarget" /><code>{"private Transform headTarget"}</code> |
+| <Link id="m-isapplyinrotationlimitonoverride" /><code>{"private bool isApplyinRotationLimitOnOverride"}</code> |
+| <Link id="m-isoverridingheadrotation" /><code>{"private bool isOverridingHeadRotation"}</code> |
+| <Link id="m-neckik" /><code>{"private FABRIK neckIK"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-neckik-2" /><code>{"FABRIK NeckIK { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-neckik-2" /><code>{"FABRIK NeckIK { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> |  |
-| <Link id="m-setactive" /><code>{"void SetActive(bool isActive)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-overrideheadrotation" /><code>{"private void OverrideHeadRotation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> |
+| <Link id="m-setactive" /><code>{"void SetActive(bool isActive)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| <Link id="m-overrideheadrotation" /><code>{"private void OverrideHeadRotation()"}</code> |
+
+</details>

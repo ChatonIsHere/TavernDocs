@@ -18,18 +18,18 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameTimeManagerSaveDataOld()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameTimeManagerSaveDataOld()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentcontinuoustime" /><code>{"float currentContinuousTime"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentcontinuoustime" /><code>{"float currentContinuousTime"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

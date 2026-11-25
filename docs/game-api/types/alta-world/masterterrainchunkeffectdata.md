@@ -18,18 +18,23 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MasterTerrainChunkEffectData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MasterTerrainChunkEffectData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> |

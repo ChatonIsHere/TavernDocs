@@ -17,22 +17,27 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"QuaternionRotationSlerp()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"QuaternionRotationSlerp()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-positiona" /><code>{"private Quaternion positionA"}</code> |  |
-| <Link id="m-positionb" /><code>{"private Quaternion positionB"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-positiona" /><code>{"private Quaternion positionA"}</code> |
+| <Link id="m-positionb" /><code>{"private Quaternion positionB"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setrotation" /><code>{"void SetRotation(float progress)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setrotation" /><code>{"void SetRotation(float progress)"}</code> |
 
 ## Used in
 

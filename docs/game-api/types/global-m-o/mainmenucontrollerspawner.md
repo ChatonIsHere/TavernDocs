@@ -17,22 +17,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MainMenuControllerSpawner()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MainMenuControllerSpawner()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-islocomotiondisabled" /><code>{"private bool isLocomotionDisabled"}</code> |  |
-| <Link id="m-menucontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" menuController"}</code> |  |
-| <Link id="m-menucontrollerspawnpoint" /><code>{"private Transform menuControllerSpawnPoint"}</code> |  |
-| <Link id="m-scene" /><code>{"private "}<Link to="/game-api/types/global-i-l/localnetworkscene">{"LocalNetworkScene"}</Link>{" scene"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-islocomotiondisabled" /><code>{"private bool isLocomotionDisabled"}</code> |
+| <Link id="m-menucontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" menuController"}</code> |
+| <Link id="m-menucontrollerspawnpoint" /><code>{"private Transform menuControllerSpawnPoint"}</code> |
+| <Link id="m-scene" /><code>{"private "}<Link to="/game-api/types/global-i-l/localnetworkscene">{"LocalNetworkScene"}</Link>{" scene"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spawnmenucontroller" /><code>{"private IEnumerator SpawnMenuController() (iterator)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-spawnmenucontroller" /><code>{"private IEnumerator SpawnMenuController() (iterator)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>

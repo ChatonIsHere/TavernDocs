@@ -20,9 +20,9 @@ Internal: adds a `MelonTarget` to NLog's configuration once the app has started,
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NLogCatcher()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NLogCatcher()"}</code> |
 
 ## Properties
 

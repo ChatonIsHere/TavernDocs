@@ -19,23 +19,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SurfaceDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SurfaceDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-embedmultiplier" /><code>{"private float embedMultiplier"}</code> |  |
-| <Link id="m-requiresdirectionalignment" /><code>{"private bool requiresDirectionAlignment"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-embedmultiplier" /><code>{"private float embedMultiplier"}</code> |
+| <Link id="m-requiresdirectionalignment" /><code>{"private bool requiresDirectionAlignment"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-embedmultiplier-2" /><code>{"float EmbedMultiplier { get; }"}</code> |  |
-| <Link id="m-requiresdirectionalignment-2" /><code>{"bool RequiresDirectionAlignment { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-embedmultiplier-2" /><code>{"float EmbedMultiplier { get; }"}</code> |
+| <Link id="m-requiresdirectionalignment-2" /><code>{"bool RequiresDirectionAlignment { get; }"}</code> |
 
 ## Used in
 

@@ -19,19 +19,19 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LeaderboardManagerDataOld()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LeaderboardManagerDataOld()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entries" /><code><Link to="/game-api/types/global-i-l/leaderboardmanagerdataold-leaderboardentry">{"LeaderboardManagerDataOld.LeaderboardEntry"}</Link>{"[] entries"}</code> |  |
-| <Link id="m-players" /><code><Link to="/game-api/types/global-i-l/leaderboardmanagerdataold-playerbesttimes">{"LeaderboardManagerDataOld.PlayerBestTimes"}</Link>{"[] players"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-entries" /><code><Link to="/game-api/types/global-i-l/leaderboardmanagerdataold-leaderboardentry">{"LeaderboardManagerDataOld.LeaderboardEntry"}</Link>{"[] entries"}</code> |
+| <Link id="m-players" /><code><Link to="/game-api/types/global-i-l/leaderboardmanagerdataold-playerbesttimes">{"LeaderboardManagerDataOld.PlayerBestTimes"}</Link>{"[] players"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

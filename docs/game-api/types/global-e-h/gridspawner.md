@@ -17,25 +17,35 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GridSpawner()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GridSpawner()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-columns" /><code>{"private int columns"}</code> |  |
-| <Link id="m-distance" /><code>{"private float distance"}</code> |  |
-| <Link id="m-isplacinginfolders" /><code>{"private bool isPlacingInFolders"}</code> |  |
-| <Link id="m-levels" /><code>{"private int levels"}</code> |  |
-| <Link id="m-place" /><code>{"private bool place"}</code> |  |
-| <Link id="m-rows" /><code>{"private int rows"}</code> |  |
-| <Link id="m-tospawn" /><code>{"private GameObject[] toSpawn"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-columns" /><code>{"private int columns"}</code> |
+| <Link id="m-distance" /><code>{"private float distance"}</code> |
+| <Link id="m-isplacinginfolders" /><code>{"private bool isPlacingInFolders"}</code> |
+| <Link id="m-levels" /><code>{"private int levels"}</code> |
+| <Link id="m-place" /><code>{"private bool place"}</code> |
+| <Link id="m-rows" /><code>{"private int rows"}</code> |
+| <Link id="m-tospawn" /><code>{"private GameObject[] toSpawn"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-place-2" /><code>{"private void Place()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-place-2" /><code>{"private void Place()"}</code> |
+
+</details>

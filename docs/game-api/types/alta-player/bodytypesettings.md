@@ -16,31 +16,36 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BodyTypeSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BodyTypeSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pouchbeltdocksdistanceratio" /><code>{"private float pouchBeltDocksDistanceRatio"}</code> |  |
-| <Link id="m-statbarsdistanceratio" /><code>{"private float statbarsDistanceRatio"}</code> |  |
-| <Link id="m-toolbeltdocksdistanceratio" /><code>{"private float toolBeltDocksDistanceRatio"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-pouchbeltdocksdistanceratio" /><code>{"private float pouchBeltDocksDistanceRatio"}</code> |
+| <Link id="m-statbarsdistanceratio" /><code>{"private float statbarsDistanceRatio"}</code> |
+| <Link id="m-toolbeltdocksdistanceratio" /><code>{"private float toolBeltDocksDistanceRatio"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pouchbeltdocksdistanceratio-2" /><code>{"float PouchBeltDocksDistanceRatio { get; set; }"}</code> |  |
-| <Link id="m-statbarsdistanceratio-2" /><code>{"float StatbarsDistanceRatio { get; set; }"}</code> |  |
-| <Link id="m-toolbeltdocksdistanceratio-2" /><code>{"float ToolBeltDocksDistanceRatio { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-pouchbeltdocksdistanceratio-2" /><code>{"float PouchBeltDocksDistanceRatio { get; set; }"}</code> |
+| <Link id="m-statbarsdistanceratio-2" /><code>{"float StatbarsDistanceRatio { get; set; }"}</code> |
+| <Link id="m-toolbeltdocksdistanceratio-2" /><code>{"float ToolBeltDocksDistanceRatio { get; set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onstatbardistancechanged" /><code>{"event Action<float> OnStatBarDistanceChanged"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onstatbardistancechanged" /><code>{"event Action<float> OnStatBarDistanceChanged"}</code> |
 
 ## Used in
 

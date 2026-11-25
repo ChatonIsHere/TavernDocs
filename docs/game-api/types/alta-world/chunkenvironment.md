@@ -18,22 +18,27 @@ Per-chunk environment settings on a `LocationChunk`: ambient temperature overrid
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkEnvironment()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkEnvironment()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ambienttemperature" /><code>{"private float ambientTemperature"}</code> |  |
-| <Link id="m-biome" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/serializedgeneratedbiome">{"SerializedGeneratedBiome"}</Link>{" biome"}</code> |  |
-| <Link id="m-generatedbiome" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" generatedBiome"}</code> |  |
-| <Link id="m-generationcontext" /><code>{"private "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" generationContext"}</code> |  |
-| <Link id="m-isdisablingterraincollision" /><code>{"private bool isDisablingTerrainCollision"}</code> |  |
-| <Link id="m-isonlyusingownedpointers" /><code>{"private bool isOnlyUsingOwnedPointers"}</code> |  |
-| <Link id="m-overridesambienttemperature" /><code>{"private bool overridesAmbientTemperature"}</code> |  |
-| <Link id="m-overrideset" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" overrideSet"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ambienttemperature" /><code>{"private float ambientTemperature"}</code> |
+| <Link id="m-biome" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/serializedgeneratedbiome">{"SerializedGeneratedBiome"}</Link>{" biome"}</code> |
+| <Link id="m-generatedbiome" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" generatedBiome"}</code> |
+| <Link id="m-generationcontext" /><code>{"private "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" generationContext"}</code> |
+| <Link id="m-isdisablingterraincollision" /><code>{"private bool isDisablingTerrainCollision"}</code> |
+| <Link id="m-isonlyusingownedpointers" /><code>{"private bool isOnlyUsingOwnedPointers"}</code> |
+| <Link id="m-overridesambienttemperature" /><code>{"private bool overridesAmbientTemperature"}</code> |
+| <Link id="m-overrideset" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" overrideSet"}</code> |
+
+</details>
 
 ## Properties
 

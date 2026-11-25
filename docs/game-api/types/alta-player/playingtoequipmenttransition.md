@@ -17,15 +17,15 @@ A **class** in `Root.Township`, `Alta.PlayerStates.Transitions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingToEquipmentTransition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayingToEquipmentTransition()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-trigger" /><code>{"static void Trigger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-trigger" /><code>{"static void Trigger()"}</code> |
 
 ## Used in
 

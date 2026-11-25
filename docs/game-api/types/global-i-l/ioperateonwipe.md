@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-wipeoperation" /><code>{"void WipeOperation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-wipeoperation" /><code>{"void WipeOperation()"}</code> |

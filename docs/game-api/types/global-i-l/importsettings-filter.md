@@ -17,17 +17,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Filter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Filter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filter" /><code>{"string filter"}</code> |  |
-| <Link id="m-settings" /><code><Link to="/game-api/types/global-i-l/importsettings-platformsettings">{"ImportSettings.PlatformSettings"}</Link>{"[] settings"}</code> |  |
-| <Link id="m-type" /><code><Link to="/game-api/types/global-i-l/importsettings-type">{"ImportSettings.Type"}</Link>{" type"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-filter" /><code>{"string filter"}</code> |
+| <Link id="m-settings" /><code><Link to="/game-api/types/global-i-l/importsettings-platformsettings">{"ImportSettings.PlatformSettings"}</Link>{"[] settings"}</code> |
+| <Link id="m-type" /><code><Link to="/game-api/types/global-i-l/importsettings-type">{"ImportSettings.Type"}</Link>{" type"}</code> |
 
 ## Used in
 

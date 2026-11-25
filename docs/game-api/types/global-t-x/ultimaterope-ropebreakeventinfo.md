@@ -17,17 +17,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RopeBreakEventInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RopeBreakEventInfo()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-link1" /><code>{"GameObject link1"}</code> |  |
-| <Link id="m-link2" /><code>{"GameObject link2"}</code> |  |
-| <Link id="m-locallink1pos" /><code>{"Vector3 localLink1Pos"}</code> |  |
-| <Link id="m-locallink2pos" /><code>{"Vector3 localLink2Pos"}</code> |  |
-| <Link id="m-rope" /><code><Link to="/game-api/types/global-t-x/ultimaterope">{"UltimateRope"}</Link>{" rope"}</code> |  |
-| <Link id="m-worldpos" /><code>{"Vector3 worldPos"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-link1" /><code>{"GameObject link1"}</code> |
+| <Link id="m-link2" /><code>{"GameObject link2"}</code> |
+| <Link id="m-locallink1pos" /><code>{"Vector3 localLink1Pos"}</code> |
+| <Link id="m-locallink2pos" /><code>{"Vector3 localLink2Pos"}</code> |
+| <Link id="m-rope" /><code><Link to="/game-api/types/global-t-x/ultimaterope">{"UltimateRope"}</Link>{" rope"}</code> |
+| <Link id="m-worldpos" /><code>{"Vector3 worldPos"}</code> |

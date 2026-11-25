@@ -17,24 +17,29 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EditServerPanel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EditServerPanel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-firstpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" firstPanel"}</code> |  |
-| <Link id="m-server" /><code>{"private "}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" server"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-firstpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" firstPanel"}</code> |
+| <Link id="m-server" /><code>{"private "}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" server"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" server)"}</code> |  |
-| <Link id="m-getsummarytext" /><code>{"protected override string GetSummaryText()"}</code> |  |
-| <Link id="m-run" /><code>{"protected override async Task Run()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" server)"}</code> |
+| <Link id="m-getsummarytext" /><code>{"protected override string GetSummaryText()"}</code> |
+| <Link id="m-run" /><code>{"protected override async Task Run()"}</code> |
 
 ## Used in
 

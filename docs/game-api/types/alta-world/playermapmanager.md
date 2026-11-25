@@ -19,19 +19,24 @@ Map discovery state for one player (or the shared map): which pieces of each `Ma
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerMapManager()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PlayerMapManager("}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file)"}</code> |  |
-| <Link id="m-ctor-3" /><code>{"PlayerMapManager("}<Link to="/game-api/types/alta-world/mapsaveformat">{"MapSaveFormat"}</Link>{" save)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerMapManager()"}</code> |
+| <Link id="m-ctor-2" /><code>{"PlayerMapManager("}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file)"}</code> |
+| <Link id="m-ctor-3" /><code>{"PlayerMapManager("}<Link to="/game-api/types/alta-world/mapsaveformat">{"MapSaveFormat"}</Link>{" save)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-file" /><code>{"private "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-save" /><code>{"private "}<Link to="/game-api/types/alta-world/mapsaveformat">{"MapSaveFormat"}</Link>{" save"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-file" /><code>{"private "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-save" /><code>{"private "}<Link to="/game-api/types/alta-world/mapsaveformat">{"MapSaveFormat"}</Link>{" save"}</code> |
+
+</details>
 
 ## Methods
 
@@ -41,7 +46,15 @@ Map discovery state for one player (or the shared map): which pieces of each `Ma
 | <Link id="m-getundiscoveredmappieces" /><code>{"IEnumerable<int> GetUndiscoveredMapPieces("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map) (iterator)"}</code> | Indexes of the pieces not yet discovered on the map. |
 | <Link id="m-isthismappiecediscovered" /><code>{"bool IsThisMapPieceDiscovered("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map, int pieceIndex)"}</code> | True if the piece has been discovered. |
 | <Link id="m-syncmapmanager" /><code>{"void SyncMapManager("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the discovery flags of every map. `MapManager` sends it to each player when they connect. |
-| <Link id="m-serializemap" /><code>{"private void SerializeMap("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-serializemap" /><code>{"private void SerializeMap("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

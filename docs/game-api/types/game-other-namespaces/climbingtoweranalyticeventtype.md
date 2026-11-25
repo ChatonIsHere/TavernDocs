@@ -16,14 +16,14 @@ An **enum** in `Root.Township`, `Features.Analytics.ClimbingTower`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onplayercheckpointobtained" /><code>{"OnPlayerCheckpointObtained = 3"}</code> |  |
-| <Link id="m-onplayerenteredtower" /><code>{"OnPlayerEnteredTower = 1"}</code> |  |
-| <Link id="m-onplayerexitedtower" /><code>{"OnPlayerExitedTower = 2"}</code> |  |
-| <Link id="m-onplayerfell" /><code>{"OnPlayerFell = 0"}</code> |  |
-| <Link id="m-onplayerloggedinwithspiritmode" /><code>{"OnPlayerLoggedInWithSpiritMode = 4"}</code> |  |
-| <Link id="m-onplayerloggedoutwithspiritmode" /><code>{"OnPlayerLoggedOutWithSpiritMode = 5"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onplayercheckpointobtained" /><code>{"OnPlayerCheckpointObtained = 3"}</code> |
+| <Link id="m-onplayerenteredtower" /><code>{"OnPlayerEnteredTower = 1"}</code> |
+| <Link id="m-onplayerexitedtower" /><code>{"OnPlayerExitedTower = 2"}</code> |
+| <Link id="m-onplayerfell" /><code>{"OnPlayerFell = 0"}</code> |
+| <Link id="m-onplayerloggedinwithspiritmode" /><code>{"OnPlayerLoggedInWithSpiritMode = 4"}</code> |
+| <Link id="m-onplayerloggedoutwithspiritmode" /><code>{"OnPlayerLoggedOutWithSpiritMode = 5"}</code> |
 
 ## Used in
 

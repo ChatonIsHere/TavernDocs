@@ -17,11 +17,11 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> |  |
-| <Link id="m-isdestroyedoncompletion" /><code>{"bool IsDestroyedOnCompletion { get; }"}</code> |  |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> |
+| <Link id="m-isdestroyedoncompletion" /><code>{"bool IsDestroyedOnCompletion { get; }"}</code> |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |
 
 ## Used in
 

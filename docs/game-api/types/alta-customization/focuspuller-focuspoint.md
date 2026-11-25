@@ -17,23 +17,28 @@ A **private class** in `Root.Township`, `Alta.ScreenshotCamera`. Reach it throug
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FocusPoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FocusPoint()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-point" /><code>{"private Renderer point"}</code> |  |
-| <Link id="m-weight" /><code>{"private int weight"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-point" /><code>{"private Renderer point"}</code> |
+| <Link id="m-weight" /><code>{"private int weight"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-point-2" /><code>{"Renderer Point { get; }"}</code> |  |
-| <Link id="m-weight-2" /><code>{"int Weight { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-point-2" /><code>{"Renderer Point { get; }"}</code> |
+| <Link id="m-weight-2" /><code>{"int Weight { get; }"}</code> |
 
 ## Used in
 

@@ -21,9 +21,9 @@ Base for a logic term in the AI knowledge system: a functor with argument terms 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Predicate("}<Link to="/game-api/types/alta-intelligence/baseatom">{"BaseAtom"}</Link>{" functor, params "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Predicate("}<Link to="/game-api/types/alta-intelligence/baseatom">{"BaseAtom"}</Link>{" functor, params "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms)"}</code> |
 
 ## Properties
 
@@ -31,8 +31,16 @@ Base for a logic term in the AI knowledge system: a functor with argument terms 
 | --- | --- |
 | <Link id="m-functor" /><code><Link to="/game-api/types/alta-intelligence/baseatom">{"BaseAtom"}</Link>{" Functor { get; private set; }"}</code> | The predicate's head atom. |
 | <Link id="m-terms" /><code><Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] Terms { get; private set; }"}</code> | The predicate's arguments. |
-| <Link id="m-alta-intelligence-icompoundpart-first" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" Alta.Intelligence.ICompoundPart.First { get; }"}</code> |  |
-| <Link id="m-alta-intelligence-icompoundpart-remaining" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] Alta.Intelligence.ICompoundPart.Remaining { get; }"}</code> |  |
+
+<details>
+<summary>2 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-intelligence-icompoundpart-first" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" Alta.Intelligence.ICompoundPart.First { get; }"}</code> |
+| <Link id="m-alta-intelligence-icompoundpart-remaining" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] Alta.Intelligence.ICompoundPart.Remaining { get; }"}</code> |
+
+</details>
 
 ## Methods
 

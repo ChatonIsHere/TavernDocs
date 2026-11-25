@@ -18,19 +18,24 @@ A **class** in `Root.Township`, `Alta.Networking.Animation`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimationBasedSound()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimationBasedSound()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clips" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{"[] clips"}</code> |  |
-| <Link id="m-clipstoplay" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{"[] clipsToPlay"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-clips" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{"[] clips"}</code> |
+| <Link id="m-clipstoplay" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{"[] clipsToPlay"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playsound" /><code>{"void PlaySound(int clipIndex)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-playsound" /><code>{"void PlaySound(int clipIndex)"}</code> |

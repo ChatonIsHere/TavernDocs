@@ -17,24 +17,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TwistLimit()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TwistLimit()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-twistlimit" /><code>{"private float twistLimit"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-twistlimit" /><code>{"private float twistLimit"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-twistlimitangle" /><code>{"float TwistLimitAngle { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-twistlimitangle" /><code>{"float TwistLimitAngle { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-limitrotation" /><code>{"protected override Quaternion LimitRotation(Quaternion rotation)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-limitrotation" /><code>{"protected override Quaternion LimitRotation(Quaternion rotation)"}</code> |

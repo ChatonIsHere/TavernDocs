@@ -17,25 +17,35 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CustomizationHistoryAction("}<Link to="/game-api/types/alta-customization/customizationwrapper">{"CustomizationWrapper"}</Link>{" target, "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" oldState, "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" newState)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CustomizationHistoryAction("}<Link to="/game-api/types/alta-customization/customizationwrapper">{"CustomizationWrapper"}</Link>{" target, "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" oldState, "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" newState)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-newstate" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" newState"}</code> |  |
-| <Link id="m-oldstate" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" oldState"}</code> |  |
-| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/alta-customization/customizationwrapper">{"CustomizationWrapper"}</Link>{" target"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-newstate" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" newState"}</code> |
+| <Link id="m-oldstate" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" oldState"}</code> |
+| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/alta-customization/customizationwrapper">{"CustomizationWrapper"}</Link>{" target"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-redo" /><code>{"private void IHistoryAction.Redo()"}</code> |  |
-| <Link id="m-release" /><code>{"private void IHistoryAction.Release()"}</code> |  |
-| <Link id="m-undo" /><code>{"private void IHistoryAction.Undo()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-redo" /><code>{"private void IHistoryAction.Redo()"}</code> |
+| <Link id="m-release" /><code>{"private void IHistoryAction.Release()"}</code> |
+| <Link id="m-undo" /><code>{"private void IHistoryAction.Undo()"}</code> |
+
+</details>
 
 ## Used in
 

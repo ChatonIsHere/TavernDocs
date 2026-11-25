@@ -17,30 +17,35 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkStat()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkStat()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cachedrecordtime" /><code>{"private DateTime cachedRecordTime"}</code> |  |
-| <Link id="m-cachedvalue" /><code>{"private float cachedValue"}</code> |  |
-| <Link id="m-getvalue" /><code>{"private Func<int> getValue"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cachedrecordtime" /><code>{"private DateTime cachedRecordTime"}</code> |
+| <Link id="m-cachedvalue" /><code>{"private float cachedValue"}</code> |
+| <Link id="m-getvalue" /><code>{"private Func<int> getValue"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-output" /><code>{"float Output { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-output" /><code>{"float Output { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cachestat" /><code>{"void CacheStat()"}</code> |  |
-| <Link id="m-init" /><code>{"void Init(Func<int> getValue)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cachestat" /><code>{"void CacheStat()"}</code> |
+| <Link id="m-init" /><code>{"void Init(Func<int> getValue)"}</code> |
 
 ## Used in
 

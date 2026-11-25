@@ -18,15 +18,20 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Disposer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Disposer()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"private void System.IDisposable.Dispose()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"private void System.IDisposable.Dispose()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -19,15 +19,23 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationFolder()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationFolder()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loadsetup" /><code>{"protected virtual void LoadSetup(TData data)"}</code> |  |
-| <Link id="m-registerchild" /><code>{"private void Registerchild("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, int childIndex)"}</code> |  |
-| <Link id="m-savesetup" /><code>{"protected virtual void SaveSetup(TData data)"}</code> |  |
-| <Link id="m-serializesetup" /><code>{"protected virtual void SerializeSetup("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-loadsetup" /><code>{"protected virtual void LoadSetup(TData data)"}</code> |
+| <Link id="m-savesetup" /><code>{"protected virtual void SaveSetup(TData data)"}</code> |
+| <Link id="m-serializesetup" /><code>{"protected virtual void SerializeSetup("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-registerchild" /><code>{"private void Registerchild("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, int childIndex)"}</code> |
+
+</details>

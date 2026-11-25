@@ -17,16 +17,16 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TargetResult()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TargetResult()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-results" /><code>{"List<"}<Link to="/game-api/types/alta-intelligence/targetresult-result">{"TargetResult.Result"}</Link>{"> Results { get; }"}</code> |  |
-| <Link id="m-target" /><code><Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-results" /><code>{"List<"}<Link to="/game-api/types/alta-intelligence/targetresult-result">{"TargetResult.Result"}</Link>{"> Results { get; }"}</code> |
+| <Link id="m-target" /><code><Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target { get; set; }"}</code> |
 
 ## Used in
 

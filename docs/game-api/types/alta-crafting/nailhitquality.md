@@ -16,12 +16,12 @@ An **enum** in `Root.Township`, `Alta.Crafting`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bad" /><code>{"Bad = 1"}</code> |  |
-| <Link id="m-base" /><code>{"Base = 0"}</code> |  |
-| <Link id="m-done" /><code>{"Done = 3"}</code> |  |
-| <Link id="m-good" /><code>{"Good = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bad" /><code>{"Bad = 1"}</code> |
+| <Link id="m-base" /><code>{"Base = 0"}</code> |
+| <Link id="m-done" /><code>{"Done = 3"}</code> |
+| <Link id="m-good" /><code>{"Good = 2"}</code> |
 
 ## Used in
 

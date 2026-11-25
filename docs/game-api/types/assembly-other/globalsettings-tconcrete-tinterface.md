@@ -20,27 +20,32 @@ The game's design data as `ScriptableObject` assets: `MenuSettings`, `Networking
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GlobalSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"private static TConcrete instance"}</code> |  |
-| <Link id="m-mockoverride" /><code>{"private static TInterface mockOverride"}</code> |  |
-| <Link id="m-startedcount" /><code>{"private static int startedCount"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"private static TConcrete instance"}</code> |
+| <Link id="m-mockoverride" /><code>{"private static TInterface mockOverride"}</code> |
+| <Link id="m-startedcount" /><code>{"private static int startedCount"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance-2" /><code>{"static TInterface Instance { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instance-2" /><code>{"static TInterface Instance { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializeinstance" /><code>{"sealed override void InitializeInstance()"}</code> |  |
-| <Link id="m-setmock" /><code>{"static void SetMock(TInterface mock)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializeinstance" /><code>{"sealed override void InitializeInstance()"}</code> |
+| <Link id="m-setmock" /><code>{"static void SetMock(TInterface mock)"}</code> |

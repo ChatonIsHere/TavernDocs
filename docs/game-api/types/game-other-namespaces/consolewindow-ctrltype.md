@@ -17,13 +17,13 @@ An **enum** in `Root.Township`, `WindowsConsole`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctrl-break-event" /><code>{"CTRL_BREAK_EVENT = 1"}</code> |  |
-| <Link id="m-ctrl-c-event" /><code>{"CTRL_C_EVENT = 0"}</code> |  |
-| <Link id="m-ctrl-close-event" /><code>{"CTRL_CLOSE_EVENT = 2"}</code> |  |
-| <Link id="m-ctrl-logoff-event" /><code>{"CTRL_LOGOFF_EVENT = 5"}</code> |  |
-| <Link id="m-ctrl-shutdown-event" /><code>{"CTRL_SHUTDOWN_EVENT = 6"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctrl-break-event" /><code>{"CTRL_BREAK_EVENT = 1"}</code> |
+| <Link id="m-ctrl-c-event" /><code>{"CTRL_C_EVENT = 0"}</code> |
+| <Link id="m-ctrl-close-event" /><code>{"CTRL_CLOSE_EVENT = 2"}</code> |
+| <Link id="m-ctrl-logoff-event" /><code>{"CTRL_LOGOFF_EVENT = 5"}</code> |
+| <Link id="m-ctrl-shutdown-event" /><code>{"CTRL_SHUTDOWN_EVENT = 6"}</code> |
 
 ## Used in
 

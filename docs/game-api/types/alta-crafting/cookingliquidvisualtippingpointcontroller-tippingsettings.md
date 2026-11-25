@@ -17,22 +17,22 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TippingSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TippingSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tipthreshold" /><code>{"float TipThreshold"}</code> |  |
-| <Link id="m-visualtiplimit" /><code>{"float VisualTipLimit"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tipthreshold" /><code>{"float TipThreshold"}</code> |
+| <Link id="m-visualtiplimit" /><code>{"float VisualTipLimit"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
 
 ## Used in
 

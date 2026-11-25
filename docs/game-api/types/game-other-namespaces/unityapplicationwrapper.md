@@ -17,25 +17,35 @@ A **class** in `Root.Township`, `Features.Utility.UnityWrappers`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UnityApplicationWrapper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UnityApplicationWrapper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/game-other-namespaces/iunityapplicationwrapper">{"IUnityApplicationWrapper"}</Link>{" instance"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/game-other-namespaces/iunityapplicationwrapper">{"IUnityApplicationWrapper"}</Link>{" instance"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance-2" /><code>{"static "}<Link to="/game-api/types/game-other-namespaces/iunityapplicationwrapper">{"IUnityApplicationWrapper"}</Link>{" Instance { get; }"}</code> |  |
-| <Link id="m-iseditor" /><code>{"bool IsEditor { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instance-2" /><code>{"static "}<Link to="/game-api/types/game-other-namespaces/iunityapplicationwrapper">{"IUnityApplicationWrapper"}</Link>{" Instance { get; }"}</code> |
+| <Link id="m-iseditor" /><code>{"bool IsEditor { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-overrideinstance" /><code>{"private void Features.Utility.UnityWrappers.ITestUnityApplicationWrapper.OverrideInstance("}<Link to="/game-api/types/game-other-namespaces/iunityapplicationwrapper">{"IUnityApplicationWrapper"}</Link>{" wrapper)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-overrideinstance" /><code>{"private void Features.Utility.UnityWrappers.ITestUnityApplicationWrapper.OverrideInstance("}<Link to="/game-api/types/game-other-namespaces/iunityapplicationwrapper">{"IUnityApplicationWrapper"}</Link>{" wrapper)"}</code> |
+
+</details>

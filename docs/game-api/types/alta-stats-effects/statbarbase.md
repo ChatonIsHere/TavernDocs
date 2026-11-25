@@ -20,9 +20,9 @@ Base for a bar that shows one stat (such as on the player's wrist). Hides itself
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatBarBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatBarBase()"}</code> |
 
 ## Fields
 
@@ -53,13 +53,21 @@ Base for a bar that shows one stat (such as on the player's wrist). Hides itself
 | <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | Finds the tracked stat in the visibility group's stat manager and listens for changes. Hides the bar if the stat is missing. |
 | <Link id="m-ping" /><code>{"virtual void Ping(float duration)"}</code> | Asks the bar to draw attention for a duration. Empty in the base class. |
 | <Link id="m-setalpha" /><code>{"virtual void SetAlpha(float alphaMultiplier)"}</code> | Fades the bar. Empty in the base class. |
-| <Link id="m-delayinitialize" /><code>{"private void DelayInitialize()"}</code> |  |
 | <Link id="m-onbecamevisiblechanged" /><code>{"protected void OnBecameVisibleChanged(bool isVisible)"}</code> | Raises `UpdatedVisibility` for subclasses. |
 | <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> | Stops listening to the hand camera. |
 | <Link id="m-onstatchanged" /><code>{"protected virtual void OnStatChanged("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | Called when the stat changes, and once after initialising. Empty in the base class. |
-| <Link id="m-ontakingphoto" /><code>{"private void OnTakingPhoto("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> |  |
-| <Link id="m-ontookphoto" /><code>{"private void OnTookPhoto("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> |  |
 | <Link id="m-setrenderersenabled" /><code>{"protected virtual void SetRenderersEnabled(bool isEnabled)"}</code> | Shows or hides the bar's renderers. Empty in the base class. |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-delayinitialize" /><code>{"private void DelayInitialize()"}</code> |
+| <Link id="m-ontakingphoto" /><code>{"private void OnTakingPhoto("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> |
+| <Link id="m-ontookphoto" /><code>{"private void OnTookPhoto("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> |
+
+</details>
 
 ## Used in
 

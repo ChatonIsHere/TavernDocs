@@ -18,6 +18,6 @@ An **interface** in `Root.Township`, `Alta.Intelligence`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-interactor" /><code><Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-interactor" /><code><Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" { get; }"}</code> |

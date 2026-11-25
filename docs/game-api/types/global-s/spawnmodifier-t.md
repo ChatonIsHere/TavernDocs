@@ -20,9 +20,9 @@ Base asset for filters in the forest fill spawner that adjust a candidate point 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SpawnModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SpawnModifier()"}</code> |
 
 ## Fields
 

@@ -16,24 +16,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WebInterface()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WebInterface()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-client" /><code>{"private static WebClient client"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-client" /><code>{"private static WebClient client"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isofflinemode" /><code>{"static bool IsOfflineMode { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isofflinemode" /><code>{"static bool IsOfflineMode { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fireandforget" /><code>{"static void FireAndForget(string uri, string data)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fireandforget" /><code>{"static void FireAndForget(string uri, string data)"}</code> |

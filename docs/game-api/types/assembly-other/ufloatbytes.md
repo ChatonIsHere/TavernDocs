@@ -16,14 +16,19 @@ A **internal struct** in `Alta.Serialization.Runtime`, `Alta.Serialization`. Rea
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-floatvalue" /><code>{"private static readonly float[] floatValue"}</code> |  |
-| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/assembly-other/ufloatbytes">{"UFloatBytes"}</Link>{" instance"}</code> |  |
-| <Link id="m-intvalue" /><code>{"private static readonly uint[] intValue"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-floatvalue" /><code>{"private static readonly float[] floatValue"}</code> |
+| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/assembly-other/ufloatbytes">{"UFloatBytes"}</Link>{" instance"}</code> |
+| <Link id="m-intvalue" /><code>{"private static readonly uint[] intValue"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"static void Serialize(ref float value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"static void Serialize(ref float value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |

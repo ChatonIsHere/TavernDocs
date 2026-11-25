@@ -21,28 +21,33 @@ Death Fern, Mother Fern, Vine Attack Fern, Targeted Geyser (also inside Chute Gc
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DeathFern()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DeathFern()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-body" /><code>{"private Transform body"}</code> |  |
-| <Link id="m-passiveactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> |  |
-| <Link id="m-passiveactionsetmap" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/deathfern">{"DeathFern"}</Link>{">> passiveActionSetMap"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-body" /><code>{"private Transform body"}</code> |
+| <Link id="m-passiveactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> |
+| <Link id="m-passiveactionsetmap" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/deathfern">{"DeathFern"}</Link>{">> passiveActionSetMap"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-position" /><code>{"override Vector3 Position { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-position" /><code>{"override Vector3 Position { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializeai" /><code>{"protected override void InitializeAi()"}</code> |  |
-| <Link id="m-initializestatic" /><code>{"protected override void InitializeStatic()"}</code> |  |
-| <Link id="m-killed" /><code>{"protected override void Killed("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthobject)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializeai" /><code>{"protected override void InitializeAi()"}</code> |
+| <Link id="m-initializestatic" /><code>{"protected override void InitializeStatic()"}</code> |
+| <Link id="m-killed" /><code>{"protected override void Killed("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthobject)"}</code> |

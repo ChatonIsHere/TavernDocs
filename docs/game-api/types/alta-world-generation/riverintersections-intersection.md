@@ -17,18 +17,18 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Intersection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Intersection()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-edge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge"}</code> |  |
-| <Link id="m-pathprogress" /><code>{"float pathProgress"}</code> |  |
-| <Link id="m-river" /><code><Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" river"}</code> |  |
-| <Link id="m-riverprogress" /><code>{"float riverProgress"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-edge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge"}</code> |
+| <Link id="m-pathprogress" /><code>{"float pathProgress"}</code> |
+| <Link id="m-river" /><code><Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" river"}</code> |
+| <Link id="m-riverprogress" /><code>{"float riverProgress"}</code> |
 
 ## Used in
 

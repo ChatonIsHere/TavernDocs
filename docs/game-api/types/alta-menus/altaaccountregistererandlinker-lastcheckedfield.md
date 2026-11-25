@@ -17,25 +17,33 @@ A **private class** in `Root.Township`, `Alta.OculusLogin`. Reach it through att
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LastCheckedField("}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker-accountregisteringsteps">{"AltaAccountRegistererAndLinker.AccountRegisteringSteps"}</Link>{" step, "}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker">{"AltaAccountRegistererAndLinker"}</Link>{" manager)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LastCheckedField("}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker-accountregisteringsteps">{"AltaAccountRegistererAndLinker.AccountRegisteringSteps"}</Link>{" step, "}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker">{"AltaAccountRegistererAndLinker"}</Link>{" manager)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lastcheckedvalue" /><code>{"string lastCheckedValue"}</code> |  |
-| <Link id="m-lastgenericerror" /><code>{"string lastGenericError"}</code> |  |
-| <Link id="m-lastresult" /><code>{"bool lastResult"}</code> |  |
-| <Link id="m-manager" /><code>{"private readonly "}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker">{"AltaAccountRegistererAndLinker"}</Link>{" manager"}</code> |  |
-| <Link id="m-step" /><code>{"private readonly "}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker-accountregisteringsteps">{"AltaAccountRegistererAndLinker.AccountRegisteringSteps"}</Link>{" step"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-lastcheckedvalue" /><code>{"string lastCheckedValue"}</code> |
+| <Link id="m-lastgenericerror" /><code>{"string lastGenericError"}</code> |
+| <Link id="m-lastresult" /><code>{"bool lastResult"}</code> |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-manager" /><code>{"private readonly "}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker">{"AltaAccountRegistererAndLinker"}</Link>{" manager"}</code> |
+| <Link id="m-step" /><code>{"private readonly "}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker-accountregisteringsteps">{"AltaAccountRegistererAndLinker.AccountRegisteringSteps"}</Link>{" step"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkactive" /><code>{"bool CheckActive(string newValue, out bool result)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkactive" /><code>{"bool CheckActive(string newValue, out bool result)"}</code> |
 
 ## Used in
 

@@ -20,22 +20,35 @@ A part that shows an extra visual (`jointAddon`) while it's inserted.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AddonCraftingPart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AddonCraftingPart()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addon" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" addon"}</code> |  |
-| <Link id="m-addonposition" /><code>{"private Transform addOnPosition"}</code> |  |
-| <Link id="m-jointaddon" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" jointAddon"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-addon" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" addon"}</code> |
+| <Link id="m-addonposition" /><code>{"private Transform addOnPosition"}</code> |
+| <Link id="m-jointaddon" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" jointAddon"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"private void Add("}<Link to="/game-api/types/alta-crafting/jointpoint">{"JointPoint"}</Link>{" obj)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
-| <Link id="m-remove" /><code>{"private void Remove("}<Link to="/game-api/types/alta-crafting/jointpoint">{"JointPoint"}</Link>{" obj)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"private void Add("}<Link to="/game-api/types/alta-crafting/jointpoint">{"JointPoint"}</Link>{" obj)"}</code> |
+| <Link id="m-remove" /><code>{"private void Remove("}<Link to="/game-api/types/alta-crafting/jointpoint">{"JointPoint"}</Link>{" obj)"}</code> |
+
+</details>

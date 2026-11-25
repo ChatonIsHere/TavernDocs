@@ -19,9 +19,9 @@ A method that writes (or reads) a message body for one connection on a stream. P
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SerializeConnectionMethod(object object, IntPtr method)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SerializeConnectionMethod(object object, IntPtr method)"}</code> |
 
 ## Methods
 

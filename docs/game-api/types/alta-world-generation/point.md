@@ -16,13 +16,13 @@ A **internal class** in `Root.Township`, `Alta.Caves.PluginParts`. Reach it thro
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Point(int x, int y)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Point(int x, int y)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-x" /><code>{"int x"}</code> |  |
-| <Link id="m-y" /><code>{"int y"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-x" /><code>{"int x"}</code> |
+| <Link id="m-y" /><code>{"int y"}</code> |

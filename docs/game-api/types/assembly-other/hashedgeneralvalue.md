@@ -18,29 +18,37 @@ An **abstract class** in `Alta.Values`, `Alta`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected HashedGeneralValue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected HashedGeneralValue()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allvalues" /><code>{"protected static Dictionary<Type, IEnumerable<"}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{">> allValues"}</code> |  |
-| <Link id="m-hash" /><code>{"protected int hash"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-allvalues" /><code>{"protected static Dictionary<Type, IEnumerable<"}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{">> allValues"}</code> |
+| <Link id="m-hash" /><code>{"protected int hash"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hash-2" /><code>{"uint Hash { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hash-2" /><code>{"uint Hash { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-oftype" /><code>{"static "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{" OfType(Type type, uint hash)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-oftype" /><code>{"static "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{" OfType(Type type, uint hash)"}</code> |
 
 ## Used in
 

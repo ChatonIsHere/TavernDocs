@@ -22,16 +22,21 @@ A hashed asset for a liquid used in cooking, under `Cooking/Liquids`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LiquidDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LiquidDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-content" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" content"}</code> |  |
-| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" data"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-content" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" content"}</code> |
+| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" data"}</code> |
+
+</details>
 
 ## Properties
 

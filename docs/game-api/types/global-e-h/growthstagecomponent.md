@@ -20,15 +20,20 @@ On a prefab spawned as a growth stage: remembers which grower, definition and st
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrowthStageComponent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrowthStageComponent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
@@ -53,7 +58,15 @@ On a prefab spawned as a growth stage: remembers which grower, definition and st
 | <Link id="m-failstage" /><code>{"void FailStage(bool isDestroying)"}</code> | Ends growth. Pass true to destroy the object too, false to keep it as it is. |
 | <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Finds the grower on the parent transform. |
 | <Link id="m-setstage" /><code>{"void SetStage("}<Link to="/game-api/types/global-e-h/growercomponent">{"GrowerComponent"}</Link>{" grower, "}<Link to="/game-api/types/global-e-h/growthdefinition">{"GrowthDefinition"}</Link>{" definition, int stage)"}</code> | Sets the grower, definition and stage. Logs an error if already set. |
-| <Link id="m-clear" /><code>{"private void Clear()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-clear" /><code>{"private void Clear()"}</code> |
+
+</details>
 
 ## Used in
 

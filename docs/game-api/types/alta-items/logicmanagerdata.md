@@ -19,13 +19,13 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicManagerData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicManagerData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-nextid" /><code>{"uint nextId"}</code> |  |
-| <Link id="m-set" /><code><Link to="/game-api/types/alta-items/logicmanagerset">{"LogicManagerSet"}</Link>{" set"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-nextid" /><code>{"uint nextId"}</code> |
+| <Link id="m-set" /><code><Link to="/game-api/types/alta-items/logicmanagerset">{"LogicManagerSet"}</Link>{" set"}</code> |

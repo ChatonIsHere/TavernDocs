@@ -18,20 +18,20 @@ An **abstract class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected BasicActiveAgentMoveCloser()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected BasicActiveAgentMoveCloser()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getspeedmultiplier" /><code>{"protected Func<float> getSpeedMultiplier"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getspeedmultiplier" /><code>{"protected Func<float> getSpeedMultiplier"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |  |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |  |
-| <Link id="m-update-2" /><code>{"protected abstract void Update(Vector3 position, Vector3 targetPosition, Vector3 toTargetXZ, Vector3 toEdge, float flatDistance)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |
+| <Link id="m-update-2" /><code>{"protected abstract void Update(Vector3 position, Vector3 targetPosition, Vector3 toTargetXZ, Vector3 toEdge, float flatDistance)"}</code> |

@@ -21,24 +21,29 @@ Points at static chunk content loaded through Addressables. The static methods r
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkPrefabPointer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkPrefabPointer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-id" /><code>{"private uint id"}</code> |  |
-| <Link id="m-inram" /><code>{"private static Dictionary<string, "}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> inRam"}</code> |  |
-| <Link id="m-lastspawned" /><code>{"private static "}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{" lastSpawned"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-pointerfolder" /><code>{"private static Transform pointerFolder"}</code> |  |
-| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |  |
-| <Link id="m-spawnedpointer" /><code>{"private static List<"}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> spawnedPointer"}</code> |  |
-| <Link id="m-stopwatch" /><code>{"private static Stopwatch stopwatch"}</code> |  |
-| <Link id="m-waitingforload" /><code>{"private static Queue<"}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> waitingForLoad"}</code> |  |
-| <Link id="m-waitingforunload" /><code>{"private static Queue<"}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> waitingForUnload"}</code> |  |
+<details>
+<summary>10 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-id" /><code>{"private uint id"}</code> |
+| <Link id="m-inram" /><code>{"private static Dictionary<string, "}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> inRam"}</code> |
+| <Link id="m-lastspawned" /><code>{"private static "}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{" lastSpawned"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-pointerfolder" /><code>{"private static Transform pointerFolder"}</code> |
+| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |
+| <Link id="m-spawnedpointer" /><code>{"private static List<"}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> spawnedPointer"}</code> |
+| <Link id="m-stopwatch" /><code>{"private static Stopwatch stopwatch"}</code> |
+| <Link id="m-waitingforload" /><code>{"private static Queue<"}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> waitingForLoad"}</code> |
+| <Link id="m-waitingforunload" /><code>{"private static Queue<"}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> waitingForUnload"}</code> |
+
+</details>
 
 ## Properties
 
@@ -60,10 +65,18 @@ Points at static chunk content loaded through Addressables. The static methods r
 | <Link id="m-use" /><code>{"static async Task Use(string reference, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Loads the Addressable asset if needed and records the chunk as a user, queueing it to spawn on first use. |
 | <Link id="m-useold" /><code>{"static async Task UseOld(AssetReference reference, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Older version of `Use` that takes an `AssetReference`. |
 | <Link id="m-waitforload" /><code>{"static async Task WaitForLoad(string reference)"}</code> | Waits until used content has spawned. Logs an error if `Use` was not called first. |
-| <Link id="m-clearstaticpointerinstances" /><code>{"private static void ClearStaticPointerInstances()"}</code> |  |
-| <Link id="m-ensurepointerfolderexists" /><code>{"private static void EnsurePointerFolderExists()"}</code> |  |
-| <Link id="m-loadnext" /><code>{"private static void LoadNext(float allowance)"}</code> |  |
-| <Link id="m-unloadnext" /><code>{"private static void UnloadNext(float allowance)"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-clearstaticpointerinstances" /><code>{"private static void ClearStaticPointerInstances()"}</code> |
+| <Link id="m-ensurepointerfolderexists" /><code>{"private static void EnsurePointerFolderExists()"}</code> |
+| <Link id="m-loadnext" /><code>{"private static void LoadNext(float allowance)"}</code> |
+| <Link id="m-unloadnext" /><code>{"private static void UnloadNext(float allowance)"}</code> |
+
+</details>
 
 ## Used in
 

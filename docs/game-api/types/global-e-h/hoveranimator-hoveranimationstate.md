@@ -17,18 +17,18 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HoverAnimationState()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HoverAnimationState()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animationoffset" /><code>{"Vector3 AnimationOffset { get; set; }"}</code> |  |
-| <Link id="m-dragtrigger" /><code><Link to="/game-api/types/global-c-d/dragtrigger">{"DragTrigger"}</Link>{" "}<Link to="/game-api/types/global-c-d/dragtrigger">{"DragTrigger"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-startlocalposition" /><code>{"Vector3 StartLocalPosition { get; set; }"}</code> |  |
-| <Link id="m-transform" /><code>{"Transform Transform { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-animationoffset" /><code>{"Vector3 AnimationOffset { get; set; }"}</code> |
+| <Link id="m-dragtrigger" /><code><Link to="/game-api/types/global-c-d/dragtrigger">{"DragTrigger"}</Link>{" "}<Link to="/game-api/types/global-c-d/dragtrigger">{"DragTrigger"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-startlocalposition" /><code>{"Vector3 StartLocalPosition { get; set; }"}</code> |
+| <Link id="m-transform" /><code>{"Transform Transform { get; set; }"}</code> |
 
 ## Used in
 

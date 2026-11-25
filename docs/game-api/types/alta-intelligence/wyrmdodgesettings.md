@@ -18,27 +18,32 @@ A **class** in `Root.Township`, `Alta.Intelligence.Wyrms`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WyrmDodgeSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WyrmDodgeSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reach" /><code>{"private float reach"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-reach" /><code>{"private float reach"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reach-2" /><code>{"float Reach { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-reach-2" /><code>{"float Reach { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |
 
 ## Used in
 

@@ -19,16 +19,16 @@ The skill trees a player can progress in: Forging, Woodcutting, Mining, Chiselin
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chiseling" /><code>{"Chiseling = 3"}</code> |  |
-| <Link id="m-cooking" /><code>{"Cooking = 4"}</code> |  |
-| <Link id="m-devdebug" /><code>{"DevDebug = 7"}</code> |  |
-| <Link id="m-forging" /><code>{"Forging = 0"}</code> |  |
-| <Link id="m-melee" /><code>{"Melee = 5"}</code> |  |
-| <Link id="m-mining" /><code>{"Mining = 2"}</code> |  |
-| <Link id="m-ranged" /><code>{"Ranged = 6"}</code> |  |
-| <Link id="m-woodcutting" /><code>{"Woodcutting = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chiseling" /><code>{"Chiseling = 3"}</code> |
+| <Link id="m-cooking" /><code>{"Cooking = 4"}</code> |
+| <Link id="m-devdebug" /><code>{"DevDebug = 7"}</code> |
+| <Link id="m-forging" /><code>{"Forging = 0"}</code> |
+| <Link id="m-melee" /><code>{"Melee = 5"}</code> |
+| <Link id="m-mining" /><code>{"Mining = 2"}</code> |
+| <Link id="m-ranged" /><code>{"Ranged = 6"}</code> |
+| <Link id="m-woodcutting" /><code>{"Woodcutting = 1"}</code> |
 
 ## Used in
 

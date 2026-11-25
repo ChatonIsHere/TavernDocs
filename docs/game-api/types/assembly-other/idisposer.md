@@ -18,9 +18,9 @@ An **interface** in `Alta.LifecycleManagement.Runtime`, `System`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"void Add(IDisposable disposable)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"void Add(IDisposable disposable)"}</code> |
 
 ## Used in
 

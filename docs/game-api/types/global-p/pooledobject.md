@@ -20,9 +20,9 @@ Component on a prefab that can be reused through a `PooledObjectDefinition` pool
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PooledObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PooledObject()"}</code> |
 
 ## Properties
 
@@ -48,7 +48,15 @@ Component on a prefab that can be reused through a `PooledObjectDefinition` pool
 | <Link id="m-release" /><code>{"virtual void Release()"}</code> | Returns the instance to its pool (deactivating it, or destroying it if the pool is full). Destroys it if it has no pool. |
 | <Link id="m-resetrun" /><code>{"virtual void ResetRun()"}</code> | Hook for subclasses to restart their effect. Empty in the base class. |
 | <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> | Clears the `Released` and `Requested` handlers. |
-| <Link id="m-onreleased" /><code>{"private void OnReleased()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onreleased" /><code>{"private void OnReleased()"}</code> |
+
+</details>
 
 ## Used in
 

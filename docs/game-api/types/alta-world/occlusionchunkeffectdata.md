@@ -18,19 +18,32 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OcclusionChunkEffectData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OcclusionChunkEffectData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-mode" /><code>{"private "}<Link to="/game-api/types/alta-world/occlusionmode">{"OcclusionMode"}</Link>{" mode"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-mode" /><code>{"private "}<Link to="/game-api/types/alta-world/occlusionmode">{"OcclusionMode"}</Link>{" mode"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> |  |
-| <Link id="m-disableforplayer" /><code>{"private void DisableForPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-disableforplayer" /><code>{"private void DisableForPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |
+
+</details>

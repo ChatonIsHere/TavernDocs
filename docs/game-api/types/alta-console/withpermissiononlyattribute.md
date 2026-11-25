@@ -17,19 +17,19 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WithPermissionOnlyAttribute(params string[] roles)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WithPermissionOnlyAttribute(params string[] roles)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-roles" /><code>{"string[] Roles { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-roles" /><code>{"string[] Roles { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-check" /><code>{"override bool Check("}<Link to="/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-check" /><code>{"override bool Check("}<Link to="/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |

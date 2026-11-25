@@ -19,22 +19,27 @@ The orb for a skill a player already owns on the progression board. Pulling it a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BoughtSkillOrbReplacer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BoughtSkillOrbReplacer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-boughtskillvisualizer" /><code>{"private "}<Link to="/game-api/types/global-a-b/boughtskillvisualizer">{"BoughtSkillVisualizer"}</Link>{" boughtSkillVisualizer"}</code> |  |
-| <Link id="m-fixedjoint" /><code>{"private FixedJoint fixedJoint"}</code> |  |
-| <Link id="m-hapticoverduration" /><code>{"private AnimationCurve hapticOverDuration"}</code> |  |
-| <Link id="m-hasvisualizer" /><code>{"private bool hasVisualizer"}</code> |  |
-| <Link id="m-mindistancetobreak" /><code>{"private float minDistanceToBreak"}</code> |  |
-| <Link id="m-syncdependencylock" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncDependencyLock"}</code> |  |
-| <Link id="m-timetobreak" /><code>{"private float timeToBreak"}</code> |  |
-| <Link id="m-visualizer" /><code>{"private "}<Link to="/game-api/types/global-e-h/experiencefillvisualizer">{"ExperienceFillVisualizer"}</Link>{" visualizer"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-boughtskillvisualizer" /><code>{"private "}<Link to="/game-api/types/global-a-b/boughtskillvisualizer">{"BoughtSkillVisualizer"}</Link>{" boughtSkillVisualizer"}</code> |
+| <Link id="m-fixedjoint" /><code>{"private FixedJoint fixedJoint"}</code> |
+| <Link id="m-hapticoverduration" /><code>{"private AnimationCurve hapticOverDuration"}</code> |
+| <Link id="m-hasvisualizer" /><code>{"private bool hasVisualizer"}</code> |
+| <Link id="m-mindistancetobreak" /><code>{"private float minDistanceToBreak"}</code> |
+| <Link id="m-syncdependencylock" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncDependencyLock"}</code> |
+| <Link id="m-timetobreak" /><code>{"private float timeToBreak"}</code> |
+| <Link id="m-visualizer" /><code>{"private "}<Link to="/game-api/types/global-e-h/experiencefillvisualizer">{"ExperienceFillVisualizer"}</Link>{" visualizer"}</code> |
+
+</details>
 
 ## Properties
 
@@ -56,8 +61,16 @@ The orb for a skill a player already owns on the progression board. Pulling it a
 | <Link id="m-filterinteraction" /><code>{"protected override void FilterInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> | Blocks grabbing while locked by dependencies (playing a locked effect) or while the board is in use. |
 | <Link id="m-helddurationcheck" /><code>{"protected override IEnumerator HeldDurationCheck("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor) (iterator)"}</code> | While held away from its spot, fills the sell progress with haptics. When full it sends the operate message and drops the orb. |
 | <Link id="m-operate" /><code>{"protected override void Operate("}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" targetManager)"}</code> | Sells the skill: locks the slot in the player's `PlayerProgressionManager`, which refunds part of the experience. |
-| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-syncdependencylock-2" /><code>{"private void SyncDependencyLock("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isLockedByDependencies)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| <Link id="m-syncdependencylock-2" /><code>{"private void SyncDependencyLock("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isLockedByDependencies)"}</code> |
+
+</details>
 
 ## Used in
 

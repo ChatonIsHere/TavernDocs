@@ -17,17 +17,17 @@ An **enum** in `Root.Township`, `Alta.Customization`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chest" /><code>{"Chest = 6"}</code> |  |
-| <Link id="m-head" /><code>{"Head = 1"}</code> |  |
-| <Link id="m-leftarm" /><code>{"LeftArm = 4"}</code> |  |
-| <Link id="m-leftshoulder" /><code>{"LeftShoulder = 2"}</code> |  |
-| <Link id="m-lefttasset" /><code>{"LeftTasset = 7"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-rightarm" /><code>{"RightArm = 5"}</code> |  |
-| <Link id="m-rightshoulder" /><code>{"RightShoulder = 3"}</code> |  |
-| <Link id="m-righttasset" /><code>{"RightTasset = 8"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chest" /><code>{"Chest = 6"}</code> |
+| <Link id="m-head" /><code>{"Head = 1"}</code> |
+| <Link id="m-leftarm" /><code>{"LeftArm = 4"}</code> |
+| <Link id="m-leftshoulder" /><code>{"LeftShoulder = 2"}</code> |
+| <Link id="m-lefttasset" /><code>{"LeftTasset = 7"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-rightarm" /><code>{"RightArm = 5"}</code> |
+| <Link id="m-rightshoulder" /><code>{"RightShoulder = 3"}</code> |
+| <Link id="m-righttasset" /><code>{"RightTasset = 8"}</code> |
 
 ## Used in
 

@@ -18,25 +18,35 @@ A **class** in `Root.Township`, `Alta.UserInterface`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LabelledInteractPoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LabelledInteractPoint()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-label" /><code>{"private string label"}</code> |  |
-| <Link id="m-labeltextrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" labelTextRenderer"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-label" /><code>{"private string label"}</code> |
+| <Link id="m-labeltextrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" labelTextRenderer"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-label-2" /><code>{"string Label { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-label-2" /><code>{"string Label { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

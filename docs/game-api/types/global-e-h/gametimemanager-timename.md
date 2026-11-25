@@ -17,23 +17,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimeName()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimeName()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"private string name"}</code> |  |
-| <Link id="m-time" /><code>{"private float time"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"private string name"}</code> |
+| <Link id="m-time" /><code>{"private float time"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-time-2" /><code>{"float Time { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> |
+| <Link id="m-time-2" /><code>{"float Time { get; }"}</code> |
 
 ## Used in
 

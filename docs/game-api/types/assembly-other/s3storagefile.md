@@ -18,31 +18,36 @@ A **class** in `Alta.IO`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"S3StorageFile(string bucketName, string fullName)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"S3StorageFile(string bucketName, string fullName)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-exists" /><code>{"bool Exists { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-exists" /><code>{"bool Exists { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-downloadasync" /><code>{"async Task DownloadAsync(Stream localStream)"}</code> |  |
-| <Link id="m-isexistingasync" /><code>{"async Task<bool> IsExistingAsync()"}</code> |  |
-| <Link id="m-refresh" /><code>{"void Refresh()"}</code> |  |
-| <Link id="m-upload" /><code>{"void Upload(Stream fileStream)"}</code> |  |
-| <Link id="m-uploadasync" /><code>{"async Task UploadAsync(Stream fileStream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-downloadasync" /><code>{"async Task DownloadAsync(Stream localStream)"}</code> |
+| <Link id="m-isexistingasync" /><code>{"async Task<bool> IsExistingAsync()"}</code> |
+| <Link id="m-refresh" /><code>{"void Refresh()"}</code> |
+| <Link id="m-upload" /><code>{"void Upload(Stream fileStream)"}</code> |
+| <Link id="m-uploadasync" /><code>{"async Task UploadAsync(Stream fileStream)"}</code> |
 
 ## Used in
 

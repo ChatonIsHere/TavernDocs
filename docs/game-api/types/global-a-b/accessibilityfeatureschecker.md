@@ -17,23 +17,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AccessibilityFeaturesChecker()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AccessibilityFeaturesChecker()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-accessibilitypopup" /><code>{"private "}<Link to="/game-api/types/global-p/popupboard">{"PopupBoard"}</Link>{" accessibilityPopup"}</code> |  |
-| <Link id="m-popupposition" /><code>{"private Transform popupPosition"}</code> |  |
-| <Link id="m-prefskey" /><code>{"private const string prefsKey"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-accessibilitypopup" /><code>{"private "}<Link to="/game-api/types/global-p/popupboard">{"PopupBoard"}</Link>{" accessibilityPopup"}</code> |
+| <Link id="m-popupposition" /><code>{"private Transform popupPosition"}</code> |
+| <Link id="m-prefskey" /><code>{"private const string prefsKey"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-decisionmade" /><code>{"private void DecisionMade("}<Link to="/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{" board)"}</code> |  |
-| <Link id="m-setup" /><code>{"private void Setup("}<Link to="/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{" board)"}</code> |  |
-| <Link id="m-showpopup" /><code>{"private void ShowPopup()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-decisionmade" /><code>{"private void DecisionMade("}<Link to="/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{" board)"}</code> |
+| <Link id="m-setup" /><code>{"private void Setup("}<Link to="/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{" board)"}</code> |
+| <Link id="m-showpopup" /><code>{"private void ShowPopup()"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>

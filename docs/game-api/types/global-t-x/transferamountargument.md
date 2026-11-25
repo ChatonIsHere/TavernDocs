@@ -19,16 +19,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TransferAmountArgument("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" transfer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TransferAmountArgument("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" transfer)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |  |
-| <Link id="m-transferring" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Transferring { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
+| <Link id="m-transferring" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Transferring { get; }"}</code> |
 
 ## Used in
 

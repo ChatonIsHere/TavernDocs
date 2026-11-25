@@ -17,15 +17,15 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MeshColoringRam()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MeshColoringRam()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-autocolor" /><code>{"bool autoColor"}</code> |  |
-| <Link id="m-height" /><code>{"float height"}</code> |  |
-| <Link id="m-newmesh" /><code>{"bool newMesh"}</code> |  |
-| <Link id="m-threshold" /><code>{"float threshold"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-autocolor" /><code>{"bool autoColor"}</code> |
+| <Link id="m-height" /><code>{"float height"}</code> |
+| <Link id="m-newmesh" /><code>{"bool newMesh"}</code> |
+| <Link id="m-threshold" /><code>{"float threshold"}</code> |

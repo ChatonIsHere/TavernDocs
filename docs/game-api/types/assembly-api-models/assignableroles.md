@@ -16,9 +16,9 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-prealphaplayer" /><code>{"PreAlphaPlayer = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-prealphaplayer" /><code>{"PreAlphaPlayer = 0"}</code> |
 
 ## Used in
 

@@ -18,12 +18,12 @@ Size of a timber block, or the size a chisel cuts: Empty, Small, Medium or Large
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-empty" /><code>{"Empty = 0"}</code> |  |
-| <Link id="m-large" /><code>{"Large = 3"}</code> |  |
-| <Link id="m-medium" /><code>{"Medium = 2"}</code> |  |
-| <Link id="m-small" /><code>{"Small = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-empty" /><code>{"Empty = 0"}</code> |
+| <Link id="m-large" /><code>{"Large = 3"}</code> |
+| <Link id="m-medium" /><code>{"Medium = 2"}</code> |
+| <Link id="m-small" /><code>{"Small = 1"}</code> |
 
 ## Used in
 

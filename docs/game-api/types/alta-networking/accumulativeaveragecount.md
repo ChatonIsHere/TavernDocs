@@ -18,16 +18,21 @@ A counter that keeps a running average of how many times something happened per 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AccumulativeAverageCount()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AccumulativeAverageCount()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-count" /><code>{"private int count"}</code> |  |
-| <Link id="m-counts" /><code>{"private "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" counts"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-count" /><code>{"private int count"}</code> |
+| <Link id="m-counts" /><code>{"private "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" counts"}</code> |
+
+</details>
 
 ## Properties
 

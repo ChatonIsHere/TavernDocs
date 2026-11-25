@@ -17,23 +17,28 @@ A **class** in `Root.Township`, `Alta.Heat`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Neighbour()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Neighbour()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distancemultiplier" /><code>{"private float distanceMultiplier"}</code> |  |
-| <Link id="m-point" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-distancemultiplier" /><code>{"private float distanceMultiplier"}</code> |
+| <Link id="m-point" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distancemultiplier-2" /><code>{"float DistanceMultiplier { get; }"}</code> |  |
-| <Link id="m-point-2" /><code><Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" Point { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-distancemultiplier-2" /><code>{"float DistanceMultiplier { get; }"}</code> |
+| <Link id="m-point-2" /><code><Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" Point { get; }"}</code> |
 
 ## Used in
 

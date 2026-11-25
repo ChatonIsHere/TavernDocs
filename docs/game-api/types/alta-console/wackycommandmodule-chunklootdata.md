@@ -17,16 +17,16 @@ A **private class** in `Root.Township`, `Alta.Console.Commands`. Reach it throug
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkLootData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkLootData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunk" /><code>{"string chunk"}</code> |  |
-| <Link id="m-lootdata" /><code>{"List<"}<Link to="/game-api/types/alta-console/wackycommandmodule-lootdata">{"WackyCommandModule.LootData"}</Link>{"> lootData"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chunk" /><code>{"string chunk"}</code> |
+| <Link id="m-lootdata" /><code>{"List<"}<Link to="/game-api/types/alta-console/wackycommandmodule-lootdata">{"WackyCommandModule.LootData"}</Link>{"> lootData"}</code> |
 
 ## Used in
 

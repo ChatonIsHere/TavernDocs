@@ -16,18 +16,28 @@ A **struct** in `Root.Township`, `ATT`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-standaloneprefab" /><code>{"private GameObject standalonePrefab"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-standaloneprefab" /><code>{"private GameObject standalonePrefab"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-prefab" /><code>{"private GameObject Prefab { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-prefab" /><code>{"private GameObject Prefab { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-op-implicit" /><code>{"static GameObject op_Implicit("}<Link to="/game-api/types/game-other-namespaces/prefabreference">{"PrefabReference"}</Link>{" reference)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-op-implicit" /><code>{"static GameObject op_Implicit("}<Link to="/game-api/types/game-other-namespaces/prefabreference">{"PrefabReference"}</Link>{" reference)"}</code> |

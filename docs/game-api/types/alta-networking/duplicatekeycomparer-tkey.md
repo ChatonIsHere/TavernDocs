@@ -17,15 +17,15 @@ A **internal class** in `Root.Township`, `Alta.Profiling.Networking`. Reach it t
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DuplicateKeyComparer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DuplicateKeyComparer()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-compare" /><code>{"int Compare(TKey x, TKey y)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-compare" /><code>{"int Compare(TKey x, TKey y)"}</code> |
 
 ## Used in
 

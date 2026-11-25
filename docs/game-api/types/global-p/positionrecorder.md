@@ -16,36 +16,57 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionRecorder()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionRecorder()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-inverselerp" /><code>{"private static float inverseLerp"}</code> |  |
-| <Link id="m-isaround" /><code>{"private bool isAround"}</code> |  |
-| <Link id="m-nextindex" /><code>{"private int nextIndex"}</code> |  |
-| <Link id="m-positionarray" /><code>{"private "}<Link to="/game-api/types/global-p/positionrecord">{"PositionRecord"}</Link>{"[] positionArray"}</code> |  |
-| <Link id="m-smoothlerp" /><code>{"private static float smoothLerp"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-inverselerp" /><code>{"private static float inverseLerp"}</code> |
+| <Link id="m-isaround" /><code>{"private bool isAround"}</code> |
+| <Link id="m-nextindex" /><code>{"private int nextIndex"}</code> |
+| <Link id="m-positionarray" /><code>{"private "}<Link to="/game-api/types/global-p/positionrecord">{"PositionRecord"}</Link>{"[] positionArray"}</code> |
+| <Link id="m-smoothlerp" /><code>{"private static float smoothLerp"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-positions" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/positionrecord">{"PositionRecord"}</Link>{"> Positions { get; }"}</code> |  |
-| <Link id="m-end" /><code>{"private int End { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-positions" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/positionrecord">{"PositionRecord"}</Link>{"> Positions { get; }"}</code> |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-end" /><code>{"private int End { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-adddistance" /><code>{"void AddDistance(Vector3 distance)"}</code> |  |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-recordposition" /><code>{"void RecordPosition(Transform transform)"}</code> |  |
-| <Link id="m-rotatearound" /><code>{"void RotateAround(Vector3 pivot, Quaternion relativeRotation)"}</code> |  |
-| <Link id="m-lerp" /><code>{"private Quaternion Lerp(Quaternion from, Quaternion to, float inverseLerp)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-adddistance" /><code>{"void AddDistance(Vector3 distance)"}</code> |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> |
+| <Link id="m-recordposition" /><code>{"void RecordPosition(Transform transform)"}</code> |
+| <Link id="m-rotatearound" /><code>{"void RotateAround(Vector3 pivot, Quaternion relativeRotation)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-lerp" /><code>{"private Quaternion Lerp(Quaternion from, Quaternion to, float inverseLerp)"}</code> |
+
+</details>
 
 ## Used in
 

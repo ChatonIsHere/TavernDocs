@@ -16,30 +16,35 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AccumulativeAverageNumber()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AccumulativeAverageNumber()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration" /><code>{"private "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" duration"}</code> |  |
-| <Link id="m-sum" /><code>{"private double sum"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-duration" /><code>{"private "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" duration"}</code> |
+| <Link id="m-sum" /><code>{"private double sum"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-durationms" /><code>{"float DurationMs { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-durationms" /><code>{"float DurationMs { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clearrecord" /><code>{"void ClearRecord()"}</code> |  |
-| <Link id="m-recordandresetcurrentsum" /><code>{"void RecordAndResetCurrentSum()"}</code> |  |
-| <Link id="m-recordnumber" /><code>{"void RecordNumber(double number)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clearrecord" /><code>{"void ClearRecord()"}</code> |
+| <Link id="m-recordandresetcurrentsum" /><code>{"void RecordAndResetCurrentSum()"}</code> |
+| <Link id="m-recordnumber" /><code>{"void RecordNumber(double number)"}</code> |
 
 ## Used in
 

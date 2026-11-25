@@ -16,19 +16,19 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InstallationEventInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InstallationEventInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-error" /><code>{"string Error { get; set; }"}</code> |  |
-| <Link id="m-eventtype" /><code>{"string EventType { get; set; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |  |
-| <Link id="m-startidentifier" /><code>{"int StartIdentifier { get; set; }"}</code> |  |
-| <Link id="m-time" /><code>{"DateTime Time { get; set; }"}</code> |  |
-| <Link id="m-useridentifier" /><code>{"int UserIdentifier { get; set; }"}</code> |  |
-| <Link id="m-versionfrom" /><code>{"string VersionFrom { get; set; }"}</code> |  |
-| <Link id="m-versionto" /><code>{"string VersionTo { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-error" /><code>{"string Error { get; set; }"}</code> |
+| <Link id="m-eventtype" /><code>{"string EventType { get; set; }"}</code> |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |
+| <Link id="m-startidentifier" /><code>{"int StartIdentifier { get; set; }"}</code> |
+| <Link id="m-time" /><code>{"DateTime Time { get; set; }"}</code> |
+| <Link id="m-useridentifier" /><code>{"int UserIdentifier { get; set; }"}</code> |
+| <Link id="m-versionfrom" /><code>{"string VersionFrom { get; set; }"}</code> |
+| <Link id="m-versionto" /><code>{"string VersionTo { get; set; }"}</code> |

@@ -17,20 +17,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SetBoolParameter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SetBoolParameter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |  |
-| <Link id="m-parameterid" /><code>{"private int parameterId"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
+| <Link id="m-parameterid" /><code>{"private int parameterId"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setinverseparameter" /><code>{"void SetInverseParameter(bool value)"}</code> |  |
-| <Link id="m-setparameter" /><code>{"void SetParameter(bool value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setinverseparameter" /><code>{"void SetInverseParameter(bool value)"}</code> |
+| <Link id="m-setparameter" /><code>{"void SetParameter(bool value)"}</code> |

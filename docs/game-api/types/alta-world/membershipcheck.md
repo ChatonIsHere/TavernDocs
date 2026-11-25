@@ -18,6 +18,6 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MembershipCheck()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MembershipCheck()"}</code> |

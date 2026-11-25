@@ -17,12 +17,12 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdisposed" /><code>{"bool IsDisposed { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isdisposed" /><code>{"bool IsDisposed { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose(bool isForced)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"void Dispose(bool isForced)"}</code> |

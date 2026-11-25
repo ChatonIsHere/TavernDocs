@@ -18,25 +18,25 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InteractorInspector("}<Link to="/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InteractorInspector("}<Link to="/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targetmember" /><code>{"protected "}<Link to="/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-targetmember" /><code>{"protected "}<Link to="/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-inspectortype" /><code>{"override "}<Link to="/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" "}<Link to="/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"override string Name { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-inspectortype" /><code>{"override "}<Link to="/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" "}<Link to="/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" { get; }"}</code> |
+| <Link id="m-name" /><code>{"override string Name { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-interact" /><code>{"override void Interact(Component target, "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" interactable)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-interact" /><code>{"override void Interact(Component target, "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" interactable)"}</code> |

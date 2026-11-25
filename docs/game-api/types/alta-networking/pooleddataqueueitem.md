@@ -16,25 +16,46 @@ A **class** in `Root.Township`, `Alta.Networking.Internal`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"private PooledDataQueueItem()"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"private PooledDataQueueItem()"}</code> |
+
+</details>
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-queueddata" /><code>{"ArraySegment<byte> queuedData"}</code> |  |
-| <Link id="m-dataqueueitempool" /><code>{"private static Stack<"}<Link to="/game-api/types/alta-networking/pooleddataqueueitem">{"PooledDataQueueItem"}</Link>{"> dataQueueItemPool"}</code> |  |
-| <Link id="m-maxpoolsize" /><code>{"private const int MaxPoolSize"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-queueddata" /><code>{"ArraySegment<byte> queuedData"}</code> |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-dataqueueitempool" /><code>{"private static Stack<"}<Link to="/game-api/types/alta-networking/pooleddataqueueitem">{"PooledDataQueueItem"}</Link>{"> dataQueueItemPool"}</code> |
+| <Link id="m-maxpoolsize" /><code>{"private const int MaxPoolSize"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-get" /><code>{"static "}<Link to="/game-api/types/alta-networking/pooleddataqueueitem">{"PooledDataQueueItem"}</Link>{" Get(ArraySegment<byte> queuedData)"}</code> |  |
-| <Link id="m-release" /><code>{"void Release()"}</code> |  |
-| <Link id="m-setupitem" /><code>{"private void SetupItem(ArraySegment<byte> queuedData)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-get" /><code>{"static "}<Link to="/game-api/types/alta-networking/pooleddataqueueitem">{"PooledDataQueueItem"}</Link>{" Get(ArraySegment<byte> queuedData)"}</code> |
+| <Link id="m-release" /><code>{"void Release()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-setupitem" /><code>{"private void SetupItem(ArraySegment<byte> queuedData)"}</code> |
+
+</details>
 
 ## Used in
 

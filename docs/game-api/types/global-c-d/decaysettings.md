@@ -21,17 +21,22 @@ Asset with decay timing, used by decay components such as `BasicDecay`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DecaySettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DecaySettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |  |
-| <Link id="m-maximumdecaytime" /><code>{"private float maximumDecayTime"}</code> |  |
-| <Link id="m-minimumdecaytime" /><code>{"private float minimumDecayTime"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
+| <Link id="m-maximumdecaytime" /><code>{"private float maximumDecayTime"}</code> |
+| <Link id="m-minimumdecaytime" /><code>{"private float minimumDecayTime"}</code> |
+
+</details>
 
 ## Properties
 

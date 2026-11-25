@@ -17,13 +17,13 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling.NetworkTransportMetric
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportOverallStatistics()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkTransportOverallStatistics()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updateallstatisticvalues" /><code>{"override void UpdateAllStatisticValues()"}</code> |  |
-| <Link id="m-setupfields" /><code>{"protected override void SetupFields()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updateallstatisticvalues" /><code>{"override void UpdateAllStatisticValues()"}</code> |
+| <Link id="m-setupfields" /><code>{"protected override void SetupFields()"}</code> |

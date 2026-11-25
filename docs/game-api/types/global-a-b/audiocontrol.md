@@ -19,15 +19,20 @@ Plays one Wwise event on a game object and lets you stop, seek or reapply sound 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AudioControl()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AudioControl()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isplaying" /><code>{"private bool isPlaying"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-isplaying" /><code>{"private bool isPlaying"}</code> |
+
+</details>
 
 ## Properties
 
@@ -46,7 +51,15 @@ Plays one Wwise event on a game object and lets you stop, seek or reapply sound 
 | <Link id="m-reapplysoundproperties" /><code>{"void ReapplySoundProperties()"}</code> | Applies all stored sound properties to the game object again. |
 | <Link id="m-seek" /><code>{"bool Seek(float timePercentage)"}</code> | Jumps the playing sound to a point given as a fraction of its length. False if nothing is playing. |
 | <Link id="m-stop" /><code>{"bool Stop()"}</code> | Stops the playing sound. False if nothing was playing. |
-| <Link id="m-exhaustsound" /><code>{"private void ExhaustSound()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-exhaustsound" /><code>{"private void ExhaustSound()"}</code> |
+
+</details>
 
 ## Used in
 

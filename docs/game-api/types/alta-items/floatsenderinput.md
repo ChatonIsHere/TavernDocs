@@ -20,6 +20,6 @@ A serialized link from a logic receiver to a `LogicFloatSender`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FloatSenderInput()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FloatSenderInput()"}</code> |

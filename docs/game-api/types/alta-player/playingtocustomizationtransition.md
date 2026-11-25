@@ -17,25 +17,30 @@ A **class** in `Root.Township`, `Alta.PlayerStates.Transitions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingToCustomizationTransition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayingToCustomizationTransition()"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-trigger" /><code>{"private static event Action<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> trigger"}</code> |  |
+<details>
+<summary>1 private and internal event</summary>
+
+| Member |
+| --- |
+| <Link id="m-trigger" /><code>{"private static event Action<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> trigger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-externaltrigger" /><code>{"static void ExternalTrigger("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-triggertransition" /><code>{"void TriggerTransition("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> |  |
-| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> |  |
-| <Link id="m-transitiontodestinationstate" /><code>{"protected override "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" TransitionToDestinationState()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-externaltrigger" /><code>{"static void ExternalTrigger("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| <Link id="m-triggertransition" /><code>{"void TriggerTransition("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> |
+| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> |
+| <Link id="m-transitiontodestinationstate" /><code>{"protected override "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" TransitionToDestinationState()"}</code> |
 
 ## Used in
 

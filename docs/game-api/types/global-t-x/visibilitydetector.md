@@ -17,37 +17,47 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VisibilityDetector()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VisibilityDetector()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-becameinvisible" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" becameInvisible"}</code> |  |
-| <Link id="m-becamevisible" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" becameVisible"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-becameinvisible" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" becameInvisible"}</code> |
+| <Link id="m-becamevisible" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" becameVisible"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isvisible" /><code>{"bool IsVisible { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isvisible" /><code>{"bool IsVisible { get; private set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-becameinvisible-2" /><code>{"event Action BecameInvisible"}</code> |  |
-| <Link id="m-becamevisible-2" /><code>{"event Action BecameVisible"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-becameinvisible-2" /><code>{"event Action BecameInvisible"}</code> |
+| <Link id="m-becamevisible-2" /><code>{"event Action BecameVisible"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onbecameinvisible" /><code>{"private void OnBecameInvisible()"}</code> |  |
-| <Link id="m-onbecamevisible" /><code>{"private void OnBecameVisible()"}</code> |  |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onbecameinvisible" /><code>{"private void OnBecameInvisible()"}</code> |
+| <Link id="m-onbecamevisible" /><code>{"private void OnBecameVisible()"}</code> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+
+</details>
 
 ## Used in
 

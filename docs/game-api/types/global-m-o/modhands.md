@@ -18,19 +18,27 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModHands()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModHands()"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modcalled" /><code>{"static event "}<Link to="/game-api/types/global-m-o/modhands-modevent">{"ModHands.ModEvent"}</Link>{" ModCalled"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modcalled" /><code>{"static event "}<Link to="/game-api/types/global-m-o/modhands-modevent">{"ModHands.ModEvent"}</Link>{" ModCalled"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializecontrollerextension" /><code>{"override void InitializeControllerExtension()"}</code> |  |
-| <Link id="m-buttonpressed" /><code>{"private void ButtonPressed("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializecontrollerextension" /><code>{"override void InitializeControllerExtension()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-buttonpressed" /><code>{"private void ButtonPressed("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |
+
+</details>

@@ -18,29 +18,42 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ObjectNamesInFolder()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ObjectNamesInFolder()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-assettypeconstraint" /><code>{"private string assetTypeConstraint"}</code> |  |
-| <Link id="m-containingbehaviours" /><code>{"private string[] containingBehaviours"}</code> |  |
-| <Link id="m-folderpath" /><code>{"private string folderPath"}</code> |  |
-| <Link id="m-getnames" /><code>{"private bool getNames"}</code> |  |
-| <Link id="m-objectnames" /><code>{"private string[] objectNames"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-assettypeconstraint" /><code>{"private string assetTypeConstraint"}</code> |
+| <Link id="m-containingbehaviours" /><code>{"private string[] containingBehaviours"}</code> |
+| <Link id="m-folderpath" /><code>{"private string folderPath"}</code> |
+| <Link id="m-getnames" /><code>{"private bool getNames"}</code> |
+| <Link id="m-objectnames" /><code>{"private string[] objectNames"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-completions" /><code>{"string[] Completions { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-completions" /><code>{"string[] Completions { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getnames-2" /><code>{"void GetNames()"}</code> |  |
-| <Link id="m-hasbehaviours" /><code>{"private bool HasBehaviours(Object obj)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getnames-2" /><code>{"void GetNames()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-hasbehaviours" /><code>{"private bool HasBehaviours(Object obj)"}</code> |
+
+</details>

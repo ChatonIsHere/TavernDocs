@@ -18,20 +18,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenericReplacer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenericReplacer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-btnreplace" /><code>{"private bool btnReplace"}</code> |  |
-| <Link id="m-targetprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" targetPrefab"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-btnreplace" /><code>{"private bool btnReplace"}</code> |
+| <Link id="m-targetprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" targetPrefab"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-replace" /><code>{"void Replace()"}</code> |  |
-| <Link id="m-onreplace" /><code>{"protected virtual void OnReplace("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-replace" /><code>{"void Replace()"}</code> |
+| <Link id="m-onreplace" /><code>{"protected virtual void OnReplace("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing)"}</code> |

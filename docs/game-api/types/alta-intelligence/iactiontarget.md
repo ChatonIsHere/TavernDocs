@@ -17,10 +17,10 @@ An **interface** in `Root.Township`, `Alta.Intelligence`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-target" /><code><Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target { get; }"}</code> |  |
-| <Link id="m-weight" /><code>{"float Weight { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-target" /><code><Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target { get; }"}</code> |
+| <Link id="m-weight" /><code>{"float Weight { get; }"}</code> |
 
 ## Used in
 

@@ -16,18 +16,23 @@ A **internal class** in `Root.Township`, `Alta.StatSystem`. Reach it through att
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SetSwitch()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SetSwitch()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-active" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/modifierset">{"ModifierSet"}</Link>{" active"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-active" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/modifierset">{"ModifierSet"}</Link>{" active"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-set" /><code>{"void Set("}<Link to="/game-api/types/alta-stats-effects/modifierset">{"ModifierSet"}</Link>{" set)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-set" /><code>{"void Set("}<Link to="/game-api/types/alta-stats-effects/modifierset">{"ModifierSet"}</Link>{" set)"}</code> |

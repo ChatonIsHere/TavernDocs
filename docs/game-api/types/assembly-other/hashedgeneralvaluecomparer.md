@@ -20,12 +20,17 @@ Compares by hash.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"private HashedGeneralValueComparer()"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"private HashedGeneralValueComparer()"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/assembly-other/hashedgeneralvaluecomparer">{"HashedGeneralValueComparer"}</Link>{" Instance { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/assembly-other/hashedgeneralvaluecomparer">{"HashedGeneralValueComparer"}</Link>{" Instance { get; }"}</code> |

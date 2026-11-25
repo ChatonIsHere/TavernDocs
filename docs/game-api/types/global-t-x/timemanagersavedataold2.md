@@ -18,19 +18,19 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimeManagerSaveDataOld2()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimeManagerSaveDataOld2()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-downtime" /><code><Link to="/game-api/types/global-s/serverdowntimedata">{"ServerDowntimeData"}</Link>{" downtime"}</code> |  |
-| <Link id="m-time" /><code>{"TimeSpan time"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-downtime" /><code><Link to="/game-api/types/global-s/serverdowntimedata">{"ServerDowntimeData"}</Link>{" downtime"}</code> |
+| <Link id="m-time" /><code>{"TimeSpan time"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

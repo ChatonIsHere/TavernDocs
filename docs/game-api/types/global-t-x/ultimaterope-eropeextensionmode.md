@@ -17,10 +17,10 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-coilrotationincrement" /><code>{"CoilRotationIncrement = 0"}</code> |  |
-| <Link id="m-linearextensionincrement" /><code>{"LinearExtensionIncrement = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-coilrotationincrement" /><code>{"CoilRotationIncrement = 0"}</code> |
+| <Link id="m-linearextensionincrement" /><code>{"LinearExtensionIncrement = 1"}</code> |
 
 ## Used in
 

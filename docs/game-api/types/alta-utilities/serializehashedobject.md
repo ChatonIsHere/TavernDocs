@@ -17,8 +17,8 @@ A **static class** in `Root.Township`, `Alta`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serializehashed" /><code>{"static void SerializeHashed<T>("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref T value)"}</code> |  |
-| <Link id="m-serializehashedcached" /><code>{"static void SerializeHashedCached<T>("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref T value, ref T last)"}</code> |  |
-| <Link id="m-serializeprogressflag" /><code>{"static void SerializeProgressFlag<T>("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref T value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serializehashed" /><code>{"static void SerializeHashed<T>("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref T value)"}</code> |
+| <Link id="m-serializehashedcached" /><code>{"static void SerializeHashedCached<T>("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref T value, ref T last)"}</code> |
+| <Link id="m-serializeprogressflag" /><code>{"static void SerializeProgressFlag<T>("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref T value)"}</code> |

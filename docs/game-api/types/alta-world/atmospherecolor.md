@@ -17,15 +17,15 @@ A **class** in `Root.Township`, `Alta.Environmental.Atmosphere`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AtmosphereColor(Action<Color> setValue)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AtmosphereColor(Action<Color> setValue)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lerp" /><code>{"protected override Color Lerp(Color initial, Color target, float progress)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-lerp" /><code>{"protected override Color Lerp(Color initial, Color target, float progress)"}</code> |
 
 ## Used in
 

@@ -16,12 +16,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FriendRequestResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FriendRequestResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isaccepted" /><code>{"bool IsAccepted { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isaccepted" /><code>{"bool IsAccepted { get; set; }"}</code> |

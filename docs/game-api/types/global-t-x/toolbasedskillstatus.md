@@ -16,12 +16,12 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cancelled" /><code>{"Cancelled = 0"}</code> |  |
-| <Link id="m-charged" /><code>{"Charged = 2"}</code> |  |
-| <Link id="m-chargingstarted" /><code>{"ChargingStarted = 1"}</code> |  |
-| <Link id="m-consumed" /><code>{"Consumed = 3"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cancelled" /><code>{"Cancelled = 0"}</code> |
+| <Link id="m-charged" /><code>{"Charged = 2"}</code> |
+| <Link id="m-chargingstarted" /><code>{"ChargingStarted = 1"}</code> |
+| <Link id="m-consumed" /><code>{"Consumed = 3"}</code> |
 
 ## Used in
 

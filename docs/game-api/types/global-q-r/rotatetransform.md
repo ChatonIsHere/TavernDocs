@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RotateTransform()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RotateTransform()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-eulerangles" /><code>{"private Vector3[] eulerAngles"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-eulerangles" /><code>{"private Vector3[] eulerAngles"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setglobalrotation" /><code>{"void SetGlobalRotation(int angleIndex)"}</code> |  |
-| <Link id="m-setlocalrotation" /><code>{"void SetLocalRotation(int angleIndex)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setglobalrotation" /><code>{"void SetGlobalRotation(int angleIndex)"}</code> |
+| <Link id="m-setlocalrotation" /><code>{"void SetLocalRotation(int angleIndex)"}</code> |

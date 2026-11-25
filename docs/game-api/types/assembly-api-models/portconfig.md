@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PortConfig()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PortConfig()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-port" /><code>{"int Port { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| <Link id="m-port" /><code>{"int Port { get; set; }"}</code> |
 
 ## Used in
 

@@ -18,20 +18,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HitboxVisualizer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HitboxVisualizer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-capsulecollider" /><code>{"private CapsuleCollider capsuleCollider"}</code> |  |
-| <Link id="m-visual" /><code>{"private GameObject visual"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-capsulecollider" /><code>{"private CapsuleCollider capsuleCollider"}</code> |
+| <Link id="m-visual" /><code>{"private GameObject visual"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

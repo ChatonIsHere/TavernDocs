@@ -17,10 +17,10 @@ An **interface** in `Alta.XRManagement.Windows`, `Alta.XRLoaders`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" mode)"}</code> |  |
-| <Link id="m-preconfigureinitialize" /><code>{"void PreconfigureInitialize()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" mode)"}</code> |
+| <Link id="m-preconfigureinitialize" /><code>{"void PreconfigureInitialize()"}</code> |
 
 ## Used in
 

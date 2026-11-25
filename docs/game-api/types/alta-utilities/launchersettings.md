@@ -17,21 +17,26 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LauncherSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LauncherSettings()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cameraphotospath" /><code>{"string CameraPhotosPath { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cameraphotospath" /><code>{"string CameraPhotosPath { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> |
+
+</details>
 
 ## Used in
 

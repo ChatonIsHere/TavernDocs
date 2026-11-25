@@ -20,17 +20,22 @@ Base for the skill shrine a player opens to see and spend progression points. Se
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ProgressionShrine()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ProgressionShrine()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentmanager" /><code>{"private "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" currentManager"}</code> |  |
-| <Link id="m-synccurrentplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncCurrentPlayer"}</code> |  |
-| <Link id="m-syncvisuals" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncVisuals"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentmanager" /><code>{"private "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" currentManager"}</code> |
+| <Link id="m-synccurrentplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncCurrentPlayer"}</code> |
+| <Link id="m-syncvisuals" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncVisuals"}</code> |
+
+</details>
 
 ## Properties
 
@@ -58,12 +63,20 @@ Base for the skill shrine a player opens to see and spend progression points. Se
 | <Link id="m-open-2" /><code>{"void Open("}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" manager)"}</code> | Server: opens the shrine for a player, closing it for anyone else first. |
 | <Link id="m-toggleopenclosedlocalplayer" /><code>{"void ToggleOpenClosedLocalPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Closes the shrine if open, otherwise opens it for the given player. |
 | <Link id="m-closeinternal" /><code>{"protected abstract void CloseInternal()"}</code> | Subclass: work when closed. |
-| <Link id="m-destroydisable" /><code>{"private void DestroyDisable("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
 | <Link id="m-openonclient" /><code>{"protected abstract void OpenOnClient()"}</code> | Subclass: client-side work when the open state arrives. |
 | <Link id="m-openonserver" /><code>{"protected abstract void OpenOnServer()"}</code> | Subclass: server-side work when opened. |
-| <Link id="m-synccurrentplayer-2" /><code>{"private void SyncCurrentPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncvisuals-2" /><code>{"private void SyncVisuals("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 | <Link id="m-updatevisuals" /><code>{"protected virtual void UpdateVisuals("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" updatedPath)"}</code> | Server: refreshes the visualizers from the player's progress and syncs them. |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroydisable" /><code>{"private void DestroyDisable("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| <Link id="m-synccurrentplayer-2" /><code>{"private void SyncCurrentPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-syncvisuals-2" /><code>{"private void SyncVisuals("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

@@ -18,14 +18,14 @@ A **class** in `Alta.Platform.Generic`, `Alta.Platform.Generic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AuthenticationFeatures()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AuthenticationFeatures()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-accesstokenmode" /><code><Link to="/game-api/types/assembly-other/accesstokenmode">{"AccessTokenMode"}</Link>{" "}<Link to="/game-api/types/assembly-other/accesstokenmode">{"AccessTokenMode"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-supportsaccountlinking" /><code>{"bool SupportsAccountLinking { get; }"}</code> |  |
-| <Link id="m-supportsplatformlogin" /><code>{"bool SupportsPlatformLogin { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-accesstokenmode" /><code><Link to="/game-api/types/assembly-other/accesstokenmode">{"AccessTokenMode"}</Link>{" "}<Link to="/game-api/types/assembly-other/accesstokenmode">{"AccessTokenMode"}</Link>{" { get; }"}</code> |
+| <Link id="m-supportsaccountlinking" /><code>{"bool SupportsAccountLinking { get; }"}</code> |
+| <Link id="m-supportsplatformlogin" /><code>{"bool SupportsPlatformLogin { get; }"}</code> |

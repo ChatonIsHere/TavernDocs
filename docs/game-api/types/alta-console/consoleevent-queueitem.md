@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, `Alta.Console`. Reach it through att-st
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invoker" /><code><Link to="/game-api/types/alta-console/consoleevent">{"ConsoleEvent"}</Link>{" invoker"}</code> |  |
-| <Link id="m-response" /><code><Link to="/game-api/types/alta-console/websocketcommandhandler-responsedata">{"WebSocketCommandHandler.ResponseData"}</Link>{" response"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invoker" /><code><Link to="/game-api/types/alta-console/consoleevent">{"ConsoleEvent"}</Link>{" invoker"}</code> |
+| <Link id="m-response" /><code><Link to="/game-api/types/alta-console/websocketcommandhandler-responsedata">{"WebSocketCommandHandler.ResponseData"}</Link>{" response"}</code> |
 
 ## Used in
 

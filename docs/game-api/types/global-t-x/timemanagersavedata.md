@@ -19,13 +19,13 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimeManagerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimeManagerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-downtime" /><code>{"DateTime downtime"}</code> |  |
-| <Link id="m-time" /><code>{"TimeSpan time"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-downtime" /><code>{"DateTime downtime"}</code> |
+| <Link id="m-time" /><code>{"TimeSpan time"}</code> |

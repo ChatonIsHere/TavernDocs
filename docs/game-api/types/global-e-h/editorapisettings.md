@@ -19,36 +19,49 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EditorApiSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EditorApiSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-credentialoverridefile" /><code>{"private TextAsset credentialOverrideFile"}</code> |  |
-| <Link id="m-customendpoint" /><code>{"private string customEndpoint"}</code> |  |
-| <Link id="m-defaulteditoroverridecredentialsfilename" /><code>{"private const string DefaultEditorOverrideCredentialsFilename"}</code> |  |
-| <Link id="m-defaulteditoroverridecredentialspath" /><code>{"private const string DefaultEditorOverrideCredentialsPath"}</code> |  |
-| <Link id="m-endpointineditor" /><code>{"private "}<Link to="/game-api/types/global-a-b/apiendpoint">{"ApiEndpoint"}</Link>{" endpointInEditor"}</code> |  |
-| <Link id="m-isignoringinternetoffline" /><code>{"private bool isIgnoringInternetOffline"}</code> |  |
-| <Link id="m-isoffline" /><code>{"private bool isOffline"}</code> |  |
-| <Link id="m-isoverridingcredentialineditor" /><code>{"private bool isOverridingCredentialInEditor"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-credentialoverridefile" /><code>{"private TextAsset credentialOverrideFile"}</code> |
+| <Link id="m-customendpoint" /><code>{"private string customEndpoint"}</code> |
+| <Link id="m-defaulteditoroverridecredentialsfilename" /><code>{"private const string DefaultEditorOverrideCredentialsFilename"}</code> |
+| <Link id="m-defaulteditoroverridecredentialspath" /><code>{"private const string DefaultEditorOverrideCredentialsPath"}</code> |
+| <Link id="m-endpointineditor" /><code>{"private "}<Link to="/game-api/types/global-a-b/apiendpoint">{"ApiEndpoint"}</Link>{" endpointInEditor"}</code> |
+| <Link id="m-isignoringinternetoffline" /><code>{"private bool isIgnoringInternetOffline"}</code> |
+| <Link id="m-isoffline" /><code>{"private bool isOffline"}</code> |
+| <Link id="m-isoverridingcredentialineditor" /><code>{"private bool isOverridingCredentialInEditor"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-customendpoint-2" /><code>{"string CustomEndpoint { get; }"}</code> |  |
-| <Link id="m-endpointineditor-2" /><code><Link to="/game-api/types/global-a-b/apiendpoint">{"ApiEndpoint"}</Link>{" EndpointInEditor { get; }"}</code> |  |
-| <Link id="m-isignoringinternetoffline-2" /><code>{"bool IsIgnoringInternetOffline { get; }"}</code> |  |
-| <Link id="m-isoffline-2" /><code>{"bool IsOffline { get; }"}</code> |  |
-| <Link id="m-isoverridingcredentialineditor-2" /><code>{"static bool IsOverridingCredentialInEditor { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-customendpoint-2" /><code>{"string CustomEndpoint { get; }"}</code> |
+| <Link id="m-endpointineditor-2" /><code><Link to="/game-api/types/global-a-b/apiendpoint">{"ApiEndpoint"}</Link>{" EndpointInEditor { get; }"}</code> |
+| <Link id="m-isignoringinternetoffline-2" /><code>{"bool IsIgnoringInternetOffline { get; }"}</code> |
+| <Link id="m-isoffline-2" /><code>{"bool IsOffline { get; }"}</code> |
+| <Link id="m-isoverridingcredentialineditor-2" /><code>{"static bool IsOverridingCredentialInEditor { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getoverridecredentials" /><code>{"static "}<Link to="/game-api/types/global-e-h/editoroverridecredentials">{"EditorOverrideCredentials"}</Link>{" GetOverrideCredentials()"}</code> |  |
-| <Link id="m-createdefaultcredentialoverridefile" /><code>{"private static void CreateDefaultCredentialOverrideFile()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getoverridecredentials" /><code>{"static "}<Link to="/game-api/types/global-e-h/editoroverridecredentials">{"EditorOverrideCredentials"}</Link>{" GetOverrideCredentials()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-createdefaultcredentialoverridefile" /><code>{"private static void CreateDefaultCredentialOverrideFile()"}</code> |
+
+</details>

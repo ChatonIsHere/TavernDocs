@@ -17,21 +17,26 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveSchmeecheePlay()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActiveSchmeecheePlay()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-energy" /><code>{"private float energy"}</code> |  |
-| <Link id="m-lastcache" /><code>{"private float lastCache"}</code> |  |
-| <Link id="m-lastposition" /><code>{"private Vector3 lastPosition"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-energy" /><code>{"private float energy"}</code> |
+| <Link id="m-lastcache" /><code>{"private float lastCache"}</code> |
+| <Link id="m-lastposition" /><code>{"private Vector3 lastPosition"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |  |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |

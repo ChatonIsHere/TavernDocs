@@ -19,13 +19,13 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TriggerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-syncwithsendersaved" /><code>{"bool syncWithSenderSaved"}</code> |  |
-| <Link id="m-togglesaved" /><code>{"bool toggleSaved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-syncwithsendersaved" /><code>{"bool syncWithSenderSaved"}</code> |
+| <Link id="m-togglesaved" /><code>{"bool toggleSaved"}</code> |

@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerStateChangeData("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" state, bool isEnter)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerStateChangeData("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" state, bool isEnter)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isenter" /><code>{"bool isEnter"}</code> |  |
-| <Link id="m-state" /><code><Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" state"}</code> |  |
-| <Link id="m-user" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isenter" /><code>{"bool isEnter"}</code> |
+| <Link id="m-state" /><code><Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" state"}</code> |
+| <Link id="m-user" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user"}</code> |
 
 ## Used in
 

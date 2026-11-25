@@ -18,21 +18,26 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stats" /><code>{"private static Dictionary<string, "}<Link to="/game-api/types/global-m-o/newnetworkingprofiler-networkstat">{"NewNetworkingProfiler.NetworkStat"}</Link>{"> stats"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-stats" /><code>{"private static Dictionary<string, "}<Link to="/game-api/types/global-m-o/newnetworkingprofiler-networkstat">{"NewNetworkingProfiler.NetworkStat"}</Link>{"> stats"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bytespersecond" /><code>{"static float BytesPerSecond { get; }"}</code> |  |
-| <Link id="m-incomingpacketspersecond" /><code>{"static float IncomingPacketsPerSecond { get; }"}</code> |  |
-| <Link id="m-outgoingpacketspersecond" /><code>{"static float OutgoingPacketsPerSecond { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bytespersecond" /><code>{"static float BytesPerSecond { get; }"}</code> |
+| <Link id="m-incomingpacketspersecond" /><code>{"static float IncomingPacketsPerSecond { get; }"}</code> |
+| <Link id="m-outgoingpacketspersecond" /><code>{"static float OutgoingPacketsPerSecond { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cache" /><code>{"static void Cache()"}</code> |  |
-| <Link id="m-init" /><code>{"static void Init()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cache" /><code>{"static void Cache()"}</code> |
+| <Link id="m-init" /><code>{"static void Init()"}</code> |

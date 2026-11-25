@@ -17,29 +17,34 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CategoryScrollElement()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CategoryScrollElement()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |  |
-| <Link id="m-cosmeticmanager" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticscrollmanager">{"CosmeticScrollManager"}</Link>{" cosmeticManager"}</code> |  |
-| <Link id="m-icon" /><code>{"private SpriteRenderer icon"}</code> |  |
-| <Link id="m-manager" /><code>{"private "}<Link to="/game-api/types/alta-customization/categoryscrollmanager">{"CategoryScrollManager"}</Link>{" manager"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
+| <Link id="m-cosmeticmanager" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticscrollmanager">{"CosmeticScrollManager"}</Link>{" cosmeticManager"}</code> |
+| <Link id="m-icon" /><code>{"private SpriteRenderer icon"}</code> |
+| <Link id="m-manager" /><code>{"private "}<Link to="/game-api/types/alta-customization/categoryscrollmanager">{"CategoryScrollManager"}</Link>{" manager"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-category" /><code><Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" Category { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-category" /><code><Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" Category { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hide" /><code>{"override void Hide()"}</code> |  |
-| <Link id="m-pressed" /><code>{"void Pressed()"}</code> |  |
-| <Link id="m-show" /><code>{"override void Show(int index)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hide" /><code>{"override void Hide()"}</code> |
+| <Link id="m-pressed" /><code>{"void Pressed()"}</code> |
+| <Link id="m-show" /><code>{"override void Show(int index)"}</code> |

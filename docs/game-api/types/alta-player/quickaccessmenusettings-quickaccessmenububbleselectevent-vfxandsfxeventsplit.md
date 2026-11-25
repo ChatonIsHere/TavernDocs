@@ -17,10 +17,10 @@ A **struct** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-soundeffect" /><code><Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" soundEffect"}</code> |  |
-| <Link id="m-visualeffect" /><code><Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" visualEffect"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-soundeffect" /><code><Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" soundEffect"}</code> |
+| <Link id="m-visualeffect" /><code><Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" visualEffect"}</code> |
 
 ## Used in
 

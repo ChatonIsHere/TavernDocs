@@ -19,17 +19,17 @@ A **internal class** in `Root.Township`, `Alta.Networking`. Reach it through att
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkRigidbodySaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkRigidbodySaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angularvelocity" /><code>{"Vector3 angularVelocity"}</code> |  |
-| <Link id="m-iskinematic" /><code>{"bool isKinematic"}</code> |  |
-| <Link id="m-isserversleeping" /><code>{"bool isServerSleeping"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |  |
-| <Link id="m-velocity" /><code>{"Vector3 velocity"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-angularvelocity" /><code>{"Vector3 angularVelocity"}</code> |
+| <Link id="m-iskinematic" /><code>{"bool isKinematic"}</code> |
+| <Link id="m-isserversleeping" /><code>{"bool isServerSleeping"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |
+| <Link id="m-velocity" /><code>{"Vector3 velocity"}</code> |

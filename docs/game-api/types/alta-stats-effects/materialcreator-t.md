@@ -19,9 +19,9 @@ Base for classes that build a liquid material from settings of type `T` and a te
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected MaterialCreator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected MaterialCreator()"}</code> |
 
 ## Methods
 

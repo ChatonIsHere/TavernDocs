@@ -16,35 +16,40 @@ A **class** in `Alta.Core.Runtime`, `Alta.Core.Runtime`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AverageNumber()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AverageNumber()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-max" /><code>{"private double max"}</code> |  |
-| <Link id="m-min" /><code>{"private double min"}</code> |  |
-| <Link id="m-numberofvalues" /><code>{"private int numberOfValues"}</code> |  |
-| <Link id="m-total" /><code>{"private double total"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-max" /><code>{"private double max"}</code> |
+| <Link id="m-min" /><code>{"private double min"}</code> |
+| <Link id="m-numberofvalues" /><code>{"private int numberOfValues"}</code> |
+| <Link id="m-total" /><code>{"private double total"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-average" /><code>{"double Average { get; }"}</code> |  |
-| <Link id="m-max-2" /><code>{"double Max { get; }"}</code> |  |
-| <Link id="m-min-2" /><code>{"double Min { get; }"}</code> |  |
-| <Link id="m-numberofvalues-2" /><code>{"int NumberOfValues { get; }"}</code> |  |
-| <Link id="m-total-2" /><code>{"double Total { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-average" /><code>{"double Average { get; }"}</code> |
+| <Link id="m-max-2" /><code>{"double Max { get; }"}</code> |
+| <Link id="m-min-2" /><code>{"double Min { get; }"}</code> |
+| <Link id="m-numberofvalues-2" /><code>{"int NumberOfValues { get; }"}</code> |
+| <Link id="m-total-2" /><code>{"double Total { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-recordnumber" /><code>{"void RecordNumber(double value)"}</code> |  |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-recordnumber" /><code>{"void RecordNumber(double value)"}</code> |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> |
 
 ## Used in
 

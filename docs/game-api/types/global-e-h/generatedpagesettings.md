@@ -20,16 +20,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GeneratedPageSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GeneratedPageSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-circlesegment1" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" circleSegment1"}</code> |  |
-| <Link id="m-circlesegment10" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" circleSegment10"}</code> |  |
-| <Link id="m-effectmodifierborderglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" effectModifierBorderGlyph"}</code> |  |
-| <Link id="m-extraeffectborderglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" extraEffectBorderGlyph"}</code> |  |
-| <Link id="m-squareitemborderglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" squareItemBorderGlyph"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-circlesegment1" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" circleSegment1"}</code> |
+| <Link id="m-circlesegment10" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" circleSegment10"}</code> |
+| <Link id="m-effectmodifierborderglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" effectModifierBorderGlyph"}</code> |
+| <Link id="m-extraeffectborderglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" extraEffectBorderGlyph"}</code> |
+| <Link id="m-squareitemborderglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" squareItemBorderGlyph"}</code> |

@@ -18,16 +18,16 @@ An **abstract class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected StackingInstructions()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected StackingInstructions()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-drawgizmos" /><code>{"virtual void DrawGizmos(Transform transform)"}</code> |  |
-| <Link id="m-getsetup" /><code>{"abstract "}<Link to="/game-api/types/alta-items/stackinginstructionsetup">{"StackingInstructionSetup"}</Link>{" GetSetup(Bounds bounds, Matrix4x4 localToWorld)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-drawgizmos" /><code>{"virtual void DrawGizmos(Transform transform)"}</code> |
+| <Link id="m-getsetup" /><code>{"abstract "}<Link to="/game-api/types/alta-items/stackinginstructionsetup">{"StackingInstructionSetup"}</Link>{" GetSetup(Bounds bounds, Matrix4x4 localToWorld)"}</code> |
 
 ## Used in
 

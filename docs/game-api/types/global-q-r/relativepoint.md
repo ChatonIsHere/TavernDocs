@@ -16,35 +16,45 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"private RelativePoint(Transform relativeTo, Vector3 localPosition, Quaternion localRotation)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"private RelativePoint(Transform relativeTo, Vector3 localPosition, Quaternion localRotation)"}</code> |
+
+</details>
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |  |
-| <Link id="m-localrotation" /><code>{"private Quaternion localRotation"}</code> |  |
-| <Link id="m-relativeto" /><code>{"private Transform relativeTo"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |
+| <Link id="m-localrotation" /><code>{"private Quaternion localRotation"}</code> |
+| <Link id="m-relativeto" /><code>{"private Transform relativeTo"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-localposition-2" /><code>{"Vector3 LocalPosition { get; }"}</code> |  |
-| <Link id="m-localrotation-2" /><code>{"Quaternion LocalRotation { get; }"}</code> |  |
-| <Link id="m-relativeto-2" /><code>{"Transform RelativeTo { get; }"}</code> |  |
-| <Link id="m-worldposition" /><code>{"Vector3 WorldPosition { get; }"}</code> |  |
-| <Link id="m-worldrotation" /><code>{"Quaternion WorldRotation { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-localposition-2" /><code>{"Vector3 LocalPosition { get; }"}</code> |
+| <Link id="m-localrotation-2" /><code>{"Quaternion LocalRotation { get; }"}</code> |
+| <Link id="m-relativeto-2" /><code>{"Transform RelativeTo { get; }"}</code> |
+| <Link id="m-worldposition" /><code>{"Vector3 WorldPosition { get; }"}</code> |
+| <Link id="m-worldrotation" /><code>{"Quaternion WorldRotation { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fromlocal" /><code>{"static "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{" FromLocal(Transform relativeTo, Vector3 localPosition, Quaternion localRotation)"}</code> |  |
-| <Link id="m-fromtransform" /><code>{"static "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{" FromTransform(Transform transform)"}</code> |  |
-| <Link id="m-fromworld" /><code>{"static "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{" FromWorld(Transform relativeTo, Vector3 worldPosition, Quaternion worldRotation)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fromlocal" /><code>{"static "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{" FromLocal(Transform relativeTo, Vector3 localPosition, Quaternion localRotation)"}</code> |
+| <Link id="m-fromtransform" /><code>{"static "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{" FromTransform(Transform transform)"}</code> |
+| <Link id="m-fromworld" /><code>{"static "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{" FromWorld(Transform relativeTo, Vector3 worldPosition, Quaternion worldRotation)"}</code> |
 
 ## Used in
 

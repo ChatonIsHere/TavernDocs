@@ -20,9 +20,9 @@ Empty component, probably a marker for items in a UI list.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ListElement()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ListElement()"}</code> |
 
 ## Used in
 

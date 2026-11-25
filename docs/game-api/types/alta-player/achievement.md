@@ -18,16 +18,21 @@ One Steam achievement tracked by `AchievementManager`: its definition, text and 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Achievement("}<Link to="/game-api/types/alta-player/iachievementmanager">{"IAchievementManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-player/achievementdefinition">{"AchievementDefinition"}</Link>{" definition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Achievement("}<Link to="/game-api/types/alta-player/iachievementmanager">{"IAchievementManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-player/achievementdefinition">{"AchievementDefinition"}</Link>{" definition)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-manager" /><code>{"private "}<Link to="/game-api/types/alta-player/iachievementmanager">{"IAchievementManager"}</Link>{" manager"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-manager" /><code>{"private "}<Link to="/game-api/types/alta-player/iachievementmanager">{"IAchievementManager"}</Link>{" manager"}</code> |
+
+</details>
 
 ## Properties
 

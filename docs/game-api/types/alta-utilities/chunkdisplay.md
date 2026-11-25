@@ -17,19 +17,19 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkDisplay()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkDisplay()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> |  |
-| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> |
+| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> |

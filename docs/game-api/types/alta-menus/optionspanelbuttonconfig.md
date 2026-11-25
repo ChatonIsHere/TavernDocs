@@ -16,23 +16,28 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OptionsPanelButtonConfig()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OptionsPanelButtonConfig()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-buttonprefab" /><code>{"private "}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" buttonPrefab"}</code> |  |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" type"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-buttonprefab" /><code>{"private "}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" buttonPrefab"}</code> |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" type"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-buttonprefab-2" /><code><Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" ButtonPrefab { get; }"}</code> |  |
-| <Link id="m-type-2" /><code><Link to="/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" Type { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-buttonprefab-2" /><code><Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" ButtonPrefab { get; }"}</code> |
+| <Link id="m-type-2" /><code><Link to="/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" Type { get; }"}</code> |
 
 ## Used in
 

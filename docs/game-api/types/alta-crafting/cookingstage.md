@@ -18,12 +18,12 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CookingStage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CookingStage()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stage" /><code><Link to="/game-api/types/alta-crafting/cookingstage-stage">{"CookingStage.Stage"}</Link>{" stage"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-stage" /><code><Link to="/game-api/types/alta-crafting/cookingstage-stage">{"CookingStage.Stage"}</Link>{" stage"}</code> |

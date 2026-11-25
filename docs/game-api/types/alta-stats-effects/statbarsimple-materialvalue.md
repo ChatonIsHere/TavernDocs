@@ -17,35 +17,56 @@ A **protected class** in `Root.Township`, `Alta.StatSystem`. Reach it through at
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialValue(string property, "}<Link to="/game-api/types/alta-stats-effects/statbarsimple">{"StatBarSimple"}</Link>{" bar, float lerpSpeed)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MaterialValue(string property, "}<Link to="/game-api/types/alta-stats-effects/statbarsimple">{"StatBarSimple"}</Link>{" bar, float lerpSpeed)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bar" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statbarsimple">{"StatBarSimple"}</Link>{" bar"}</code> |  |
-| <Link id="m-currentvalue" /><code>{"private float currentValue"}</code> |  |
-| <Link id="m-islerping" /><code>{"private bool isLerping"}</code> |  |
-| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |  |
-| <Link id="m-lerptarget" /><code>{"private float lerpTarget"}</code> |  |
-| <Link id="m-material" /><code>{"private Material material"}</code> |  |
-| <Link id="m-propertyid" /><code>{"private int propertyID"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bar" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statbarsimple">{"StatBarSimple"}</Link>{" bar"}</code> |
+| <Link id="m-currentvalue" /><code>{"private float currentValue"}</code> |
+| <Link id="m-islerping" /><code>{"private bool isLerping"}</code> |
+| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |
+| <Link id="m-lerptarget" /><code>{"private float lerpTarget"}</code> |
+| <Link id="m-material" /><code>{"private Material material"}</code> |
+| <Link id="m-propertyid" /><code>{"private int propertyID"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-value" /><code>{"float Value { get; set; }"}</code> |  |
-| <Link id="m-currentvalue-2" /><code>{"private float CurrentValue { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-value" /><code>{"float Value { get; set; }"}</code> |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentvalue-2" /><code>{"private float CurrentValue { get; set; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lerp" /><code>{"void Lerp(float target)"}</code> |  |
-| <Link id="m-lerp-2" /><code>{"private void Lerp(ref bool isLerping)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-lerp" /><code>{"void Lerp(float target)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-lerp-2" /><code>{"private void Lerp(ref bool isLerping)"}</code> |
+
+</details>
 
 ## Used in
 

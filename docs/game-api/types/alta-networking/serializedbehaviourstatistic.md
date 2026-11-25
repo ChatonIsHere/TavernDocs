@@ -18,27 +18,32 @@ A **class** in `Root.Township`, `Alta.Profiling.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedBehaviourStatistic(string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SerializedBehaviourStatistic(string name)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-behaviourname" /><code>{"private string behaviourName"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-behaviourname" /><code>{"private string behaviourName"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-behaviourname-2" /><code>{"string BehaviourName { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-behaviourname-2" /><code>{"string BehaviourName { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> |
 
 ## Used in
 

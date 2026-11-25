@@ -19,31 +19,36 @@ Generates one procedural cave layer from a seed: splits it into map chunks and r
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenerationBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenerationBase()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunks" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{"[,] chunks"}</code> |  |
-| <Link id="m-chunksgenerating" /><code>{"private int chunksGenerating"}</code> |  |
-| <Link id="m-chunkshigh" /><code>{"private int chunksHigh"}</code> |  |
-| <Link id="m-chunksize" /><code>{"private int chunkSize"}</code> |  |
-| <Link id="m-chunksparent" /><code>{"private Transform chunksParent"}</code> |  |
-| <Link id="m-chunkswide" /><code>{"private int chunksWide"}</code> |  |
-| <Link id="m-clientspawn" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-c-d/caveseedarguments">{"CaveSeedArguments"}</Link>{"> clientSpawn"}</code> |  |
-| <Link id="m-currentrendering" /><code>{"private IEnumerator<bool> currentRendering"}</code> |  |
-| <Link id="m-deletingentities" /><code>{"private Transform deletingEntities"}</code> |  |
-| <Link id="m-floorplugin" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" floorPlugin"}</code> |  |
-| <Link id="m-isgenerationstarted" /><code>{"private bool isGenerationStarted"}</code> |  |
-| <Link id="m-isseedrandomonregenerate" /><code>{"private bool isSeedRandomOnRegenerate"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-pluginlist" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/pluginlist">{"PluginList"}</Link>{" pluginList"}</code> |  |
-| <Link id="m-rendering" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{"> rendering"}</code> |  |
-| <Link id="m-seed" /><code>{"private int seed"}</code> |  |
-| <Link id="m-stepindex" /><code>{"private int stepIndex"}</code> |  |
+<details>
+<summary>17 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-chunks" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{"[,] chunks"}</code> |
+| <Link id="m-chunksgenerating" /><code>{"private int chunksGenerating"}</code> |
+| <Link id="m-chunkshigh" /><code>{"private int chunksHigh"}</code> |
+| <Link id="m-chunksize" /><code>{"private int chunkSize"}</code> |
+| <Link id="m-chunksparent" /><code>{"private Transform chunksParent"}</code> |
+| <Link id="m-chunkswide" /><code>{"private int chunksWide"}</code> |
+| <Link id="m-clientspawn" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-c-d/caveseedarguments">{"CaveSeedArguments"}</Link>{"> clientSpawn"}</code> |
+| <Link id="m-currentrendering" /><code>{"private IEnumerator<bool> currentRendering"}</code> |
+| <Link id="m-deletingentities" /><code>{"private Transform deletingEntities"}</code> |
+| <Link id="m-floorplugin" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" floorPlugin"}</code> |
+| <Link id="m-isgenerationstarted" /><code>{"private bool isGenerationStarted"}</code> |
+| <Link id="m-isseedrandomonregenerate" /><code>{"private bool isSeedRandomOnRegenerate"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-pluginlist" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/pluginlist">{"PluginList"}</Link>{" pluginList"}</code> |
+| <Link id="m-rendering" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{"> rendering"}</code> |
+| <Link id="m-seed" /><code>{"private int seed"}</code> |
+| <Link id="m-stepindex" /><code>{"private int stepIndex"}</code> |
+
+</details>
 
 ## Properties
 
@@ -85,14 +90,22 @@ Generates one procedural cave layer from a seed: splits it into map chunks and r
 | <Link id="m-setuplayer" /><code>{"async Task SetupLayer("}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer, int layer, int seed, Vector2 entrance, Vector2 entranceDirection)"}</code> | Sets the layer, seed, streamer and entrance, then generates. |
 | <Link id="m-startgenerating" /><code>{"async Task StartGenerating()"}</code> | Generates every chunk and waits until rendering is complete. The server also sends the seed to clients. |
 | <Link id="m-startrendering" /><code>{"void StartRendering("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> | Queues a generated map chunk for rendering. |
-| <Link id="m-clear" /><code>{"private void Clear()"}</code> |  |
-| <Link id="m-clientspawn-2" /><code>{"private async void ClientSpawn("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-c-d/caveseedarguments">{"CaveSeedArguments"}</Link>{" args)"}</code> |  |
-| <Link id="m-decrementsceneloading" /><code>{"private void DecrementSceneLoading()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-prepareandstart" /><code>{"private async Task PrepareAndStart()"}</code> |  |
-| <Link id="m-render" /><code>{"private IEnumerator<bool> Render("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk) (iterator)"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
-| <Link id="m-updaterendering" /><code>{"private void UpdateRendering()"}</code> |  |
+
+<details>
+<summary>8 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-clear" /><code>{"private void Clear()"}</code> |
+| <Link id="m-clientspawn-2" /><code>{"private async void ClientSpawn("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-c-d/caveseedarguments">{"CaveSeedArguments"}</Link>{" args)"}</code> |
+| <Link id="m-decrementsceneloading" /><code>{"private void DecrementSceneLoading()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-prepareandstart" /><code>{"private async Task PrepareAndStart()"}</code> |
+| <Link id="m-render" /><code>{"private IEnumerator<bool> Render("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk) (iterator)"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| <Link id="m-updaterendering" /><code>{"private void UpdateRendering()"}</code> |
+
+</details>
 
 ## Used in
 

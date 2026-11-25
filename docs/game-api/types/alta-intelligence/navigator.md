@@ -20,25 +20,30 @@ Wraps an A* `Seeker` to plan and follow a path for a creature: it requests paths
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Navigator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Navigator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distancetonextpointsquared" /><code>{"private float distanceToNextPointSquared"}</code> |  |
-| <Link id="m-funnel" /><code>{"private RichFunnel funnel"}</code> |  |
-| <Link id="m-islastcorner" /><code>{"private bool isLastCorner"}</code> |  |
-| <Link id="m-isrequestingpath" /><code>{"private bool isRequestingPath"}</code> |  |
-| <Link id="m-lastpathrequest" /><code>{"private float lastPathRequest"}</code> |  |
-| <Link id="m-lasttarget" /><code>{"private Vector3 lastTarget"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-nearestconstraint" /><code>{"private static readonly NNConstraint NearestConstraint"}</code> |  |
-| <Link id="m-path" /><code>{"private RichPath path"}</code> |  |
-| <Link id="m-preparingpath" /><code>{"private Path preparingPath"}</code> |  |
-| <Link id="m-targetreacheddistancesquared" /><code>{"private float targetReachedDistanceSquared"}</code> |  |
+<details>
+<summary>11 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-distancetonextpointsquared" /><code>{"private float distanceToNextPointSquared"}</code> |
+| <Link id="m-funnel" /><code>{"private RichFunnel funnel"}</code> |
+| <Link id="m-islastcorner" /><code>{"private bool isLastCorner"}</code> |
+| <Link id="m-isrequestingpath" /><code>{"private bool isRequestingPath"}</code> |
+| <Link id="m-lastpathrequest" /><code>{"private float lastPathRequest"}</code> |
+| <Link id="m-lasttarget" /><code>{"private Vector3 lastTarget"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-nearestconstraint" /><code>{"private static readonly NNConstraint NearestConstraint"}</code> |
+| <Link id="m-path" /><code>{"private RichPath path"}</code> |
+| <Link id="m-preparingpath" /><code>{"private Path preparingPath"}</code> |
+| <Link id="m-targetreacheddistancesquared" /><code>{"private float targetReachedDistanceSquared"}</code> |
+
+</details>
 
 ## Properties
 
@@ -84,16 +89,24 @@ Wraps an A* `Seeker` to plan and follow a path for a creature: it requests paths
 | <Link id="m-wander-2" /><code>{"void Wander(Vector3 near, int searchLength, float targetReachedDistance = 0.1)"}</code> | Picks a random reachable point within a search length (optionally the best of several towards a direction) and paths there. |
 | <Link id="m-wander-4" /><code>{"void Wander(int searchLength, float targetReachedDistance = 0.2)"}</code> | Picks a random reachable point within a search length (optionally the best of several towards a direction) and paths there. |
 | <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Grabs the `Seeker` on the same object and sets `GetTarget` to return the last target. |
+| <Link id="m-ondisable" /><code>{"protected virtual void OnDisable()"}</code> | Stops any path and unhooks from the seeker. |
+| <Link id="m-onenable" /><code>{"protected virtual void OnEnable()"}</code> | Hooks the seeker's path callback. |
+
+<details>
+<summary>8 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-cancelrequest" /><code>{"private void CancelRequest()"}</code> |  |
 | <Link id="m-finish" /><code>{"private void Finish()"}</code> |  |
 | <Link id="m-getlasttarget" /><code>{"private Vector3 GetLastTarget()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"protected virtual void OnDisable()"}</code> | Stops any path and unhooks from the seeker. |
-| <Link id="m-onenable" /><code>{"protected virtual void OnEnable()"}</code> | Hooks the seeker's path callback. |
 | <Link id="m-onpathfindfailed" /><code>{"private void OnPathFindFailed(Path path)"}</code> |  |
 | <Link id="m-pathfound" /><code>{"private void PathFound(Path path)"}</code> |  |
 | <Link id="m-startpath" /><code>{"private void StartPath(Path standardPath)"}</code> |  |
 | <Link id="m-wander-3" /><code>{"private void Wander(Vector3 near, int searchLength, float targetReachedDistance, OnPathDelegate callback)"}</code> | Picks a random reachable point within a search length (optionally the best of several towards a direction) and paths there. |
 | <Link id="m-wanderto" /><code>{"private void WanderTo(Path path)"}</code> |  |
+
+</details>
 
 ## Used in
 

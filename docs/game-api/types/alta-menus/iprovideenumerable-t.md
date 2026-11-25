@@ -17,15 +17,15 @@ An **interface** in `Root.Township`, `Alta.Menu`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-values" /><code>{"IEnumerable<T> Values { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-values" /><code>{"IEnumerable<T> Values { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updatedvalues" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/iprovideenumerable-t">{"IProvideEnumerable"}</Link>{"<T>> UpdatedValues"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updatedvalues" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/iprovideenumerable-t">{"IProvideEnumerable"}</Link>{"<T>> UpdatedValues"}</code> |
 
 ## Used in
 

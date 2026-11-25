@@ -20,9 +20,9 @@ A network entity that groups child entities (its parts) and destroys itself on t
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Cluster()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Cluster()"}</code> |
 
 ## Fields
 
@@ -40,8 +40,16 @@ A network entity that groups child entities (its parts) and destroys itself on t
 | <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Adds every child network prefab as a part, makes the cluster their chunking parent, then calls `AddingFinished`. |
 | <Link id="m-remove" /><code>{"void Remove("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part)"}</code> | Removes a part, calls `RemoveInternal`, then `CheckDestroy`. Also runs when a part is destroyed. |
 | <Link id="m-addinternal" /><code>{"protected virtual void AddInternal("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part)"}</code> | Hook for subclasses, called when a new part is added. |
-| <Link id="m-remove-2" /><code>{"private void Remove("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part, bool isUnloading)"}</code> | Removes a part, calls `RemoveInternal`, then `CheckDestroy`. Also runs when a part is destroyed. |
 | <Link id="m-removeinternal" /><code>{"protected virtual void RemoveInternal("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part)"}</code> | Hook for subclasses, called when a part is removed. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-remove-2" /><code>{"private void Remove("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part, bool isUnloading)"}</code> | Removes a part, calls `RemoveInternal`, then `CheckDestroy`. Also runs when a part is destroyed. |
+
+</details>
 
 ## Used in
 

@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-teleportdefinitionindex" /><code>{"int teleportDefinitionIndex"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| <Link id="m-teleportdefinitionindex" /><code>{"int teleportDefinitionIndex"}</code> |
 
 ## Used in
 

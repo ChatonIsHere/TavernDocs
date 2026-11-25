@@ -18,27 +18,32 @@ A **class** in `Root.Township`, `Alta.Profiling.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EntityMessageTypeStatistic("}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EntityMessageTypeStatistic("}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-messagetype" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-messagetype" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-messagetype-2" /><code><Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" MessageType { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-messagetype-2" /><code><Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" MessageType { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> |
 
 ## Used in
 

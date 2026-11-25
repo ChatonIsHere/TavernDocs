@@ -21,9 +21,9 @@ Singleton that handles app start, pause, reload and shutdown, and tells you whet
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ApplicationManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ApplicationManager()"}</code> |
 
 ## Fields
 
@@ -31,14 +31,22 @@ Singleton that handles app start, pause, reload and shutdown, and tells you whet
 | --- | --- |
 | <Link id="m-isapplicationpaused" /><code>{"static bool IsApplicationPaused"}</code> | Whether the app is paused right now. |
 | <Link id="m-shouldrestartaftershutdown" /><code>{"static bool ShouldRestartAfterShutdown"}</code> | When true, the server heartbeat isn't shut down on quit. |
-| <Link id="m-hasquit" /><code>{"private static bool hasQuit"}</code> |  |
-| <Link id="m-iscleaning" /><code>{"private static bool isCleaning"}</code> |  |
-| <Link id="m-isheadless" /><code>{"private static bool isHeadless"}</code> |  |
-| <Link id="m-isquit" /><code>{"private static bool isQuit"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-needstocache" /><code>{"private static bool needsToCache"}</code> |  |
-| <Link id="m-serverhostcontroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/iserverhostcontroller">{"IServerHostController"}</Link>{" serverHostController"}</code> |  |
-| <Link id="m-shutdownreason" /><code>{"private static "}<Link to="/game-api/types/assembly-api-models/shutdownreason">{"ShutdownReason"}</Link>{" shutdownReason"}</code> |  |
+
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-hasquit" /><code>{"private static bool hasQuit"}</code> |
+| <Link id="m-iscleaning" /><code>{"private static bool isCleaning"}</code> |
+| <Link id="m-isheadless" /><code>{"private static bool isHeadless"}</code> |
+| <Link id="m-isquit" /><code>{"private static bool isQuit"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-needstocache" /><code>{"private static bool needsToCache"}</code> |
+| <Link id="m-serverhostcontroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/iserverhostcontroller">{"IServerHostController"}</Link>{" serverHostController"}</code> |
+| <Link id="m-shutdownreason" /><code>{"private static "}<Link to="/game-api/types/assembly-api-models/shutdownreason">{"ShutdownReason"}</Link>{" shutdownReason"}</code> |
+
+</details>
 
 ## Properties
 
@@ -67,8 +75,16 @@ Singleton that handles app start, pause, reload and shutdown, and tells you whet
 | <Link id="m-onapplicationquit" /><code>{"void OnApplicationQuit()"}</code> | Shuts down once: stops the game mode, stops the heartbeat unless restarting, saves preferences, runs `ApplicationQuit`, finishes file writes and quits. |
 | <Link id="m-startreload" /><code>{"static void StartReload()"}</code> | Starts a scene reload and raises `GameReload`, unless already reloading or quitting. |
 | <Link id="m-inject" /><code>{"protected void Inject("}<Link to="/game-api/types/global-i-l/iserverhostcontroller">{"IServerHostController"}</Link>{" injectedServerHostController)"}</code> | Receives the server host controller through dependency injection. |
-| <Link id="m-loggameinfo" /><code>{"private static void LogGameInfo()"}</code> |  |
-| <Link id="m-onapplicationpause" /><code>{"private void OnApplicationPause(bool isPaused)"}</code> |  |
-| <Link id="m-setup" /><code>{"private static void Setup()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-loggameinfo" /><code>{"private static void LogGameInfo()"}</code> |
+| <Link id="m-onapplicationpause" /><code>{"private void OnApplicationPause(bool isPaused)"}</code> |
+| <Link id="m-setup" /><code>{"private static void Setup()"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

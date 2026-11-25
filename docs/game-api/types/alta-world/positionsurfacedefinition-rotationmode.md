@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, `Alta.Chunks`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-youtrandom" /><code>{"YOutRandom = 0"}</code> |  |
-| <Link id="m-zoutflat" /><code>{"ZOutFlat = 2"}</code> |  |
-| <Link id="m-zoutrandom" /><code>{"ZOutRandom = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-youtrandom" /><code>{"YOutRandom = 0"}</code> |
+| <Link id="m-zoutflat" /><code>{"ZOutFlat = 2"}</code> |
+| <Link id="m-zoutrandom" /><code>{"ZOutRandom = 1"}</code> |
 
 ## Used in
 

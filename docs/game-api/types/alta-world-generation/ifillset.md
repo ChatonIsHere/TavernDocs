@@ -17,8 +17,8 @@ An **interface** in `Root.Township`, `Alta.Forests`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maximumfailscore" /><code>{"float MaximumFailScore { get; }"}</code> |  |
-| <Link id="m-minimumfailscore" /><code>{"float MinimumFailScore { get; }"}</code> |  |
-| <Link id="m-spawnmodifiers" /><code><Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maximumfailscore" /><code>{"float MaximumFailScore { get; }"}</code> |
+| <Link id="m-minimumfailscore" /><code>{"float MinimumFailScore { get; }"}</code> |
+| <Link id="m-spawnmodifiers" /><code><Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> |

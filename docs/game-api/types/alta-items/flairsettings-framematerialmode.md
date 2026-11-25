@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, `Alta.Pages`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-frombook" /><code>{"FromBook = 1"}</code> |  |
-| <Link id="m-fromflair" /><code>{"FromFlair = 2"}</code> |  |
-| <Link id="m-unchanged" /><code>{"Unchanged = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-frombook" /><code>{"FromBook = 1"}</code> |
+| <Link id="m-fromflair" /><code>{"FromFlair = 2"}</code> |
+| <Link id="m-unchanged" /><code>{"Unchanged = 0"}</code> |
 
 ## Used in
 

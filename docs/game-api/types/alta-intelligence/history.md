@@ -18,17 +18,22 @@ A timeline of days and knowledge events for the experimental AI reasoning system
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"History()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"History()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-days" /><code>{"private List<"}<Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{"> days"}</code> |  |
-| <Link id="m-firstfake" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" firstFake"}</code> |  |
-| <Link id="m-lastfake" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" lastFake"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-days" /><code>{"private List<"}<Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{"> days"}</code> |
+| <Link id="m-firstfake" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" firstFake"}</code> |
+| <Link id="m-lastfake" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" lastFake"}</code> |
+
+</details>
 
 ## Properties
 
@@ -49,7 +54,15 @@ A timeline of days and knowledge events for the experimental AI reasoning system
 | <Link id="m-minutes" /><code>{"static float Minutes(int minutes)"}</code> | Converts whole minutes into a fraction of a day. |
 | <Link id="m-seconds" /><code>{"static float Seconds(int seconds)"}</code> | Converts whole seconds into a fraction of a day. |
 | <Link id="m-update" /><code>{"void Update(float progression)"}</code> | Advances time by the given fraction of a day and updates every active event. |
-| <Link id="m-startday" /><code>{"private void StartDay()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-startday" /><code>{"private void StartDay()"}</code> |
+
+</details>
 
 ## Used in
 

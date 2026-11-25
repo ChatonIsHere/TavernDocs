@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, `Alta.PAGaC`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clear" /><code>{"Clear = 2"}</code> |  |
-| <Link id="m-remove" /><code>{"Remove = 1"}</code> |  |
-| <Link id="m-set" /><code>{"Set = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clear" /><code>{"Clear = 2"}</code> |
+| <Link id="m-remove" /><code>{"Remove = 1"}</code> |
+| <Link id="m-set" /><code>{"Set = 0"}</code> |
 
 ## Used in
 

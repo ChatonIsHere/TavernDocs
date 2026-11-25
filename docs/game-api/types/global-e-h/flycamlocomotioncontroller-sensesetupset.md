@@ -17,15 +17,15 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SenseSetupSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SenseSetupSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code><Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] setup"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code><Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] setup"}</code> |
 
 ## Used in
 

@@ -17,21 +17,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FestivityCommandModule()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FestivityCommandModule()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-inspect" /><code>{"private static "}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" Inspect("}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> |  |
-| <Link id="m-listfestivities" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{"> ListFestivities()"}</code> |  |
-| <Link id="m-startfestivity" /><code>{"private static string StartFestivity("}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> |  |
-| <Link id="m-stopfestivity" /><code>{"private static string StopFestivity("}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> |  |
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-inspect" /><code>{"private static "}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" Inspect("}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> |
+| <Link id="m-listfestivities" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{"> ListFestivities()"}</code> |
+| <Link id="m-startfestivity" /><code>{"private static string StartFestivity("}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> |
+| <Link id="m-stopfestivity" /><code>{"private static string StopFestivity("}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> |
+
+</details>

@@ -18,7 +18,12 @@ A **static class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-mute" /><code>{"private static void Mute()"}</code> |  |
-| <Link id="m-unmute" /><code>{"private static void Unmute()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-mute" /><code>{"private static void Mute()"}</code> |
+| <Link id="m-unmute" /><code>{"private static void Unmute()"}</code> |
+
+</details>

@@ -17,10 +17,10 @@ An **enum** in `Root.Township`, `Alta.Utilities.Atlas`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dynamic" /><code>{"Dynamic = 2"}</code> |  |
-| <Link id="m-static" /><code>{"Static = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dynamic" /><code>{"Dynamic = 2"}</code> |
+| <Link id="m-static" /><code>{"Static = 1"}</code> |
 
 ## Used in
 

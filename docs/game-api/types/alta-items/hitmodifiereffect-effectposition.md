@@ -17,11 +17,11 @@ An **private enum** in `Root.Township`, `Alta.Impact`. Reach it through att-stub
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hit" /><code>{"Hit = 1"}</code> |  |
-| <Link id="m-this" /><code>{"This = 0"}</code> |  |
-| <Link id="m-wielder" /><code>{"Wielder = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hit" /><code>{"Hit = 1"}</code> |
+| <Link id="m-this" /><code>{"This = 0"}</code> |
+| <Link id="m-wielder" /><code>{"Wielder = 2"}</code> |
 
 ## Used in
 

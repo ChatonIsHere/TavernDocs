@@ -22,17 +22,22 @@ An unlockable set of smelter abilities: extra recipes, metals it can melt for mo
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SmelterUpgrades()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SmelterUpgrades()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bonussmelterspeed" /><code>{"private float bonusSmelterSpeed"}</code> |  |
-| <Link id="m-physicalmaterials" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"[] physicalMaterials"}</code> |  |
-| <Link id="m-recipes" /><code>{"private "}<Link to="/game-api/types/alta-crafting/smeltingrecipe">{"SmeltingRecipe"}</Link>{"[] recipes"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bonussmelterspeed" /><code>{"private float bonusSmelterSpeed"}</code> |
+| <Link id="m-physicalmaterials" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"[] physicalMaterials"}</code> |
+| <Link id="m-recipes" /><code>{"private "}<Link to="/game-api/types/alta-crafting/smeltingrecipe">{"SmeltingRecipe"}</Link>{"[] recipes"}</code> |
+
+</details>
 
 ## Properties
 

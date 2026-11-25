@@ -16,6 +16,6 @@ An **internal interface** in `Root.Township`, `Alta.Meta.Friends`. Reach it thro
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> |

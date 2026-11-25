@@ -20,6 +20,6 @@ The `ServerConfigFile` for `mod_repos.json`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TrustedReposConfig(string filePath)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TrustedReposConfig(string filePath)"}</code> |

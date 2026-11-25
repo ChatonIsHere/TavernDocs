@@ -21,9 +21,9 @@ Base asset for a PAGaC (procedural generation) rule: a 3D grid of tag lists, wit
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected RuleBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected RuleBase()"}</code> |
 
 ## Fields
 

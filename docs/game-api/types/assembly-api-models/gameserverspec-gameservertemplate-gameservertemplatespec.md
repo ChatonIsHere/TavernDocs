@@ -18,15 +18,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameServerTemplateSpec()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameServerTemplateSpec()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-containers" /><code><Link to="/game-api/types/assembly-api-models/gameserverspec-gameservertemplate-gameservertemplatespec-containerconfig">{"GameServerSpec.GameServerTemplate.GameServerTemplateSpec.ContainerConfig"}</Link>{"[] Containers { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-containers" /><code><Link to="/game-api/types/assembly-api-models/gameserverspec-gameservertemplate-gameservertemplatespec-containerconfig">{"GameServerSpec.GameServerTemplate.GameServerTemplateSpec.ContainerConfig"}</Link>{"[] Containers { get; set; }"}</code> |
 
 ## Used in
 

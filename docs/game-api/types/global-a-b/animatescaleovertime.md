@@ -17,28 +17,41 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnimateScaleOverTime()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnimateScaleOverTime()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animationspeed" /><code>{"private float animationSpeed"}</code> |  |
-| <Link id="m-basescale" /><code>{"private Vector3 baseScale"}</code> |  |
-| <Link id="m-componentwiseimpact" /><code>{"private Vector3 componentWiseImpact"}</code> |  |
-| <Link id="m-currenttime" /><code>{"private float currentTime"}</code> |  |
-| <Link id="m-scaleanimation" /><code>{"private AnimationCurve scaleAnimation"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animationspeed" /><code>{"private float animationSpeed"}</code> |
+| <Link id="m-basescale" /><code>{"private Vector3 baseScale"}</code> |
+| <Link id="m-componentwiseimpact" /><code>{"private Vector3 componentWiseImpact"}</code> |
+| <Link id="m-currenttime" /><code>{"private float currentTime"}</code> |
+| <Link id="m-scaleanimation" /><code>{"private AnimationCurve scaleAnimation"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getlengthofanimationinseconds" /><code>{"override float GetLengthOfAnimationInSeconds()"}</code> |  |
-| <Link id="m-resetstate" /><code>{"override void ResetState()"}</code> |  |
-| <Link id="m-setupbasescale" /><code>{"private bool SetupBaseScale()"}</code> |  |
-| <Link id="m-updateanimation" /><code>{"protected override void UpdateAnimation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getlengthofanimationinseconds" /><code>{"override float GetLengthOfAnimationInSeconds()"}</code> |
+| <Link id="m-resetstate" /><code>{"override void ResetState()"}</code> |
+| <Link id="m-updateanimation" /><code>{"protected override void UpdateAnimation()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-setupbasescale" /><code>{"private bool SetupBaseScale()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -17,30 +17,35 @@ A **class** in `Root.Township`, `Features.World.Environmental.Atmosphere`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InteriorFogAmbience()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InteriorFogAmbience()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-basementambience" /><code>{"private Color basementAmbience"}</code> |  |
-| <Link id="m-basementfogcolor" /><code>{"private Color basementFogColor"}</code> |  |
-| <Link id="m-fogdensity" /><code>{"private float fogDensity"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-basementambience" /><code>{"private Color basementAmbience"}</code> |
+| <Link id="m-basementfogcolor" /><code>{"private Color basementFogColor"}</code> |
+| <Link id="m-fogdensity" /><code>{"private float fogDensity"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentambience" /><code>{"override Color CurrentAmbience { get; }"}</code> |  |
-| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> |  |
-| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentambience" /><code>{"override Color CurrentAmbience { get; }"}</code> |
+| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> |
+| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-disable" /><code>{"override void Disable()"}</code> |  |
-| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> |  |
-| <Link id="m-reenabled" /><code>{"protected override void Reenabled()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-disable" /><code>{"override void Disable()"}</code> |
+| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> |
+| <Link id="m-reenabled" /><code>{"protected override void Reenabled()"}</code> |

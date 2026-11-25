@@ -17,24 +17,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BudgetedUpdateModuleProfiler()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BudgetedUpdateModuleProfiler()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-elapsedtime" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-a-b/budgetedupdatemodule">{"BudgetedUpdateModule"}</Link>{", "}<Link to="/game-api/types/global-a-b/budgetedupdatemoduleprofiler-budgeteddata">{"BudgetedUpdateModuleProfiler.BudgetedData"}</Link>{"> elapsedTime"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-elapsedtime" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-a-b/budgetedupdatemodule">{"BudgetedUpdateModule"}</Link>{", "}<Link to="/game-api/types/global-a-b/budgetedupdatemoduleprofiler-budgeteddata">{"BudgetedUpdateModuleProfiler.BudgetedData"}</Link>{"> elapsedTime"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-elapsedtime-2" /><code>{"static Dictionary<"}<Link to="/game-api/types/global-a-b/budgetedupdatemodule">{"BudgetedUpdateModule"}</Link>{", "}<Link to="/game-api/types/global-a-b/budgetedupdatemoduleprofiler-budgeteddata">{"BudgetedUpdateModuleProfiler.BudgetedData"}</Link>{"> ElapsedTime { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-elapsedtime-2" /><code>{"static Dictionary<"}<Link to="/game-api/types/global-a-b/budgetedupdatemodule">{"BudgetedUpdateModule"}</Link>{", "}<Link to="/game-api/types/global-a-b/budgetedupdatemoduleprofiler-budgeteddata">{"BudgetedUpdateModuleProfiler.BudgetedData"}</Link>{"> ElapsedTime { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-recordusagetime" /><code>{"static void RecordUsageTime("}<Link to="/game-api/types/global-a-b/budgetedupdatemodule">{"BudgetedUpdateModule"}</Link>{" module, double elapsedMilliseconds)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-recordusagetime" /><code>{"static void RecordUsageTime("}<Link to="/game-api/types/global-a-b/budgetedupdatemodule">{"BudgetedUpdateModule"}</Link>{" module, double elapsedMilliseconds)"}</code> |

@@ -17,13 +17,18 @@ A **private class** in `Root.Township`, `Alta.Populations`. Reach it through att
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationImpact()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationImpact()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-affectingpopulation" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" affectingPopulation"}</code> |  |
-| <Link id="m-populationmultiplier" /><code>{"private AnimationCurve populationMultiplier"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-affectingpopulation" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" affectingPopulation"}</code> |
+| <Link id="m-populationmultiplier" /><code>{"private AnimationCurve populationMultiplier"}</code> |
+
+</details>

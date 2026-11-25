@@ -19,29 +19,34 @@ The main menu server picker: switches between server boards (my servers, open se
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerSelectionMenu()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerSelectionMenu()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-boardlevers" /><code>{"private "}<Link to="/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{"[] boardLevers"}</code> |  |
-| <Link id="m-boards" /><code>{"private "}<Link to="/game-api/types/global-s/serverboard">{"ServerBoard"}</Link>{"[] boards"}</code> |  |
-| <Link id="m-boardsbytype" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{", "}<Link to="/game-api/types/global-s/serverboard">{"ServerBoard"}</Link>{"> boardsByType"}</code> |  |
-| <Link id="m-currentboard" /><code>{"private "}<Link to="/game-api/types/global-s/serverboard">{"ServerBoard"}</Link>{" currentBoard"}</code> |  |
-| <Link id="m-elementselected" /><code>{"private "}<Link to="/game-api/types/global-s/serverelementevent">{"ServerElementEvent"}</Link>{" elementSelected"}</code> |  |
-| <Link id="m-headingtext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" headingText"}</code> |  |
-| <Link id="m-ropegrabs" /><code>{"private "}<Link to="/game-api/types/global-q-r/ropegrab">{"RopeGrab"}</Link>{"[] ropeGrabs"}</code> |  |
-| <Link id="m-ropespeedmultiplier" /><code>{"private float ropeSpeedMultiplier"}</code> |  |
-| <Link id="m-serverelementprefab" /><code>{"private "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" serverElementPrefab"}</code> |  |
-| <Link id="m-serverinfoboard" /><code>{"private "}<Link to="/game-api/types/global-s/serverinfoboard">{"ServerInfoBoard"}</Link>{" serverInfoBoard"}</code> |  |
-| <Link id="m-startingboard" /><code>{"private "}<Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{" startingBoard"}</code> |  |
-| <Link id="m-updatecountdowntext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" updateCountdownText"}</code> |  |
-| <Link id="m-waitingforlogintext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" waitingForLoginText"}</code> |  |
-| <Link id="m-wheel" /><code>{"private "}<Link to="/game-api/types/global-c-d/captainswheel">{"CaptainsWheel"}</Link>{" wheel"}</code> |  |
-| <Link id="m-wheelspeedmultiplier" /><code>{"private float wheelSpeedMultiplier"}</code> |  |
+<details>
+<summary>15 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-boardlevers" /><code>{"private "}<Link to="/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{"[] boardLevers"}</code> |
+| <Link id="m-boards" /><code>{"private "}<Link to="/game-api/types/global-s/serverboard">{"ServerBoard"}</Link>{"[] boards"}</code> |
+| <Link id="m-boardsbytype" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{", "}<Link to="/game-api/types/global-s/serverboard">{"ServerBoard"}</Link>{"> boardsByType"}</code> |
+| <Link id="m-currentboard" /><code>{"private "}<Link to="/game-api/types/global-s/serverboard">{"ServerBoard"}</Link>{" currentBoard"}</code> |
+| <Link id="m-elementselected" /><code>{"private "}<Link to="/game-api/types/global-s/serverelementevent">{"ServerElementEvent"}</Link>{" elementSelected"}</code> |
+| <Link id="m-headingtext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" headingText"}</code> |
+| <Link id="m-ropegrabs" /><code>{"private "}<Link to="/game-api/types/global-q-r/ropegrab">{"RopeGrab"}</Link>{"[] ropeGrabs"}</code> |
+| <Link id="m-ropespeedmultiplier" /><code>{"private float ropeSpeedMultiplier"}</code> |
+| <Link id="m-serverelementprefab" /><code>{"private "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" serverElementPrefab"}</code> |
+| <Link id="m-serverinfoboard" /><code>{"private "}<Link to="/game-api/types/global-s/serverinfoboard">{"ServerInfoBoard"}</Link>{" serverInfoBoard"}</code> |
+| <Link id="m-startingboard" /><code>{"private "}<Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{" startingBoard"}</code> |
+| <Link id="m-updatecountdowntext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" updateCountdownText"}</code> |
+| <Link id="m-waitingforlogintext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" waitingForLoginText"}</code> |
+| <Link id="m-wheel" /><code>{"private "}<Link to="/game-api/types/global-c-d/captainswheel">{"CaptainsWheel"}</Link>{" wheel"}</code> |
+| <Link id="m-wheelspeedmultiplier" /><code>{"private float wheelSpeedMultiplier"}</code> |
+
+</details>
 
 ## Properties
 
@@ -66,14 +71,22 @@ The main menu server picker: switches between server boards (my servers, open se
 | <Link id="m-selectserver" /><code>{"void SelectServer("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server, "}<Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{" board)"}</code> | Switches to a board and selects a server on it. |
 | <Link id="m-switchtoboard" /><code>{"void SwitchToBoard(int boardType)"}</code> | Shows another board and updates the heading, lever and info board. |
 | <Link id="m-switchtoboard-2" /><code>{"void SwitchToBoard("}<Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{" board)"}</code> | Shows another board and updates the heading, lever and info board. |
-| <Link id="m-checkforempty" /><code>{"private void CheckForEmpty()"}</code> |  |
-| <Link id="m-clear" /><code>{"private void Clear()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-onselectedchanged" /><code>{"private void OnSelectedChanged("}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" oldElement, "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" newElement)"}</code> |  |
-| <Link id="m-scrollserverlist" /><code>{"private void ScrollServerList(float oldRopeValue, float ropeValue)"}</code> |  |
-| <Link id="m-scrollserverlistfromwheel" /><code>{"private void ScrollServerListFromWheel(float oldRopeValue, float ropeValue)"}</code> |  |
-| <Link id="m-setup" /><code>{"private void Setup()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+
+<details>
+<summary>8 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-checkforempty" /><code>{"private void CheckForEmpty()"}</code> |
+| <Link id="m-clear" /><code>{"private void Clear()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-onselectedchanged" /><code>{"private void OnSelectedChanged("}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" oldElement, "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" newElement)"}</code> |
+| <Link id="m-scrollserverlist" /><code>{"private void ScrollServerList(float oldRopeValue, float ropeValue)"}</code> |
+| <Link id="m-scrollserverlistfromwheel" /><code>{"private void ScrollServerListFromWheel(float oldRopeValue, float ropeValue)"}</code> |
+| <Link id="m-setup" /><code>{"private void Setup()"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>
 
 ## Used in
 

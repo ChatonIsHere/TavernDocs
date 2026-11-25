@@ -19,19 +19,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HandToHeartInputStructure()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HandToHeartInputStructure()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-frombodypivottoheart" /><code>{"private Vector3 fromBodyPivotToHeart"}</code> |  |
-| <Link id="m-maxdistancetoheartsquared" /><code>{"private float maxDistanceToHeartSquared"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-frombodypivottoheart" /><code>{"private Vector3 fromBodyPivotToHeart"}</code> |
+| <Link id="m-maxdistancetoheartsquared" /><code>{"private float maxDistanceToHeartSquared"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isinpositioninternal" /><code>{"protected override bool IsInPositionInternal("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isinpositioninternal" /><code>{"protected override bool IsInPositionInternal("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> |

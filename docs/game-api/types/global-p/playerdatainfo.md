@@ -16,17 +16,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerDataInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerDataInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-player" /><code>{"string Player { get; set; }"}</code> |  |
-| <Link id="m-time" /><code>{"string Time { get; set; }"}</code> |  |
-| <Link id="m-timeinseconds" /><code>{"int TimeInSeconds { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-player" /><code>{"string Player { get; set; }"}</code> |
+| <Link id="m-time" /><code>{"string Time { get; set; }"}</code> |
+| <Link id="m-timeinseconds" /><code>{"int TimeInSeconds { get; set; }"}</code> |
 
 ## Used in
 

@@ -18,20 +18,33 @@ A **static class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModel
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deleteasync" /><code>{"static async Task<HttpResponseMessage> DeleteAsync(HttpClient client, string requestUri, HttpContent content)"}</code> |  |
-| <Link id="m-deletejsonasync" /><code>{"static Task<HttpResponseMessage> DeleteJsonAsync<T>(HttpClient client, string uri, T content)"}</code> |  |
-| <Link id="m-patchasync" /><code>{"static async Task<HttpResponseMessage> PatchAsync(HttpClient client, string requestUri, HttpContent content)"}</code> |  |
-| <Link id="m-patchjsonasync" /><code>{"static Task<HttpResponseMessage> PatchJsonAsync<T>(HttpClient client, string uri, T content)"}</code> |  |
-| <Link id="m-postasync" /><code>{"static async Task<HttpResponseMessage> PostAsync<T>(HttpClient client, string uri)"}</code> |  |
-| <Link id="m-postjsonasync" /><code>{"static async Task<HttpResponseMessage> PostJsonAsync<T>(HttpClient client, string uri, T content, Action<"}<Link to="/game-api/types/assembly-api-models/httpclientextensions-jsoncontent">{"HttpClientExtensions.JsonContent"}</Link>{"> modifyContent = null)"}</code> |  |
-| <Link id="m-putjsonasync" /><code>{"static Task<HttpResponseMessage> PutJsonAsync<T>(HttpClient client, string uri, T content)"}</code> |  |
-| <Link id="m-logapirequest" /><code>{"private static async Task LogApiRequest(string uri, "}<Link to="/game-api/types/assembly-api-models/httpclientextensions-jsoncontent">{"HttpClientExtensions.JsonContent"}</Link>{" content)"}</code> |  |
-| <Link id="m-logapirequest-2" /><code>{"private static void LogApiRequest(string uri)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deleteasync" /><code>{"static async Task<HttpResponseMessage> DeleteAsync(HttpClient client, string requestUri, HttpContent content)"}</code> |
+| <Link id="m-deletejsonasync" /><code>{"static Task<HttpResponseMessage> DeleteJsonAsync<T>(HttpClient client, string uri, T content)"}</code> |
+| <Link id="m-patchasync" /><code>{"static async Task<HttpResponseMessage> PatchAsync(HttpClient client, string requestUri, HttpContent content)"}</code> |
+| <Link id="m-patchjsonasync" /><code>{"static Task<HttpResponseMessage> PatchJsonAsync<T>(HttpClient client, string uri, T content)"}</code> |
+| <Link id="m-postasync" /><code>{"static async Task<HttpResponseMessage> PostAsync<T>(HttpClient client, string uri)"}</code> |
+| <Link id="m-postjsonasync" /><code>{"static async Task<HttpResponseMessage> PostJsonAsync<T>(HttpClient client, string uri, T content, Action<"}<Link to="/game-api/types/assembly-api-models/httpclientextensions-jsoncontent">{"HttpClientExtensions.JsonContent"}</Link>{"> modifyContent = null)"}</code> |
+| <Link id="m-putjsonasync" /><code>{"static Task<HttpResponseMessage> PutJsonAsync<T>(HttpClient client, string uri, T content)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-logapirequest" /><code>{"private static async Task LogApiRequest(string uri, "}<Link to="/game-api/types/assembly-api-models/httpclientextensions-jsoncontent">{"HttpClientExtensions.JsonContent"}</Link>{" content)"}</code> |
+| <Link id="m-logapirequest-2" /><code>{"private static void LogApiRequest(string uri)"}</code> |
+
+</details>

@@ -22,9 +22,9 @@ Server-owned, saved per-player charge counters for limited interactions ("you ca
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerInteractionManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerInteractionManager()"}</code> |
 
 ## Fields
 
@@ -32,14 +32,22 @@ Server-owned, saved per-player charge counters for limited interactions ("you ca
 | --- | --- |
 | <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-p/playerinteractionmanager">{"PlayerInteractionManager"}</Link>{" instance"}</code> | The last created manager, set in `Awake`. |
 | <Link id="m-maxids" /><code>{"const int maxIDs"}</code> | 2048, the ID range the sync messages can carry. |
-| <Link id="m-chargesperid" /><code>{"private Dictionary<int, int> chargesPerId"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-nextid" /><code>{"private int nextID"}</code> |  |
-| <Link id="m-oldinteractionmultiplier" /><code>{"private float oldInteractionMultiplier"}</code> |  |
-| <Link id="m-playerstrackers" /><code>{"private Dictionary<int, Dictionary<int, "}<Link to="/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{">> playersTrackers"}</code> |  |
-| <Link id="m-syncfull" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncFull"}</code> |  |
-| <Link id="m-syncmarker" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncclass-t">{"MethodSyncClass"}</Link>{"<"}<Link to="/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{"> syncMarker"}</code> |  |
-| <Link id="m-timeofdaytorefresh" /><code>{"private float timeOfDayToRefresh"}</code> |  |
+
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-chargesperid" /><code>{"private Dictionary<int, int> chargesPerId"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-nextid" /><code>{"private int nextID"}</code> |
+| <Link id="m-oldinteractionmultiplier" /><code>{"private float oldInteractionMultiplier"}</code> |
+| <Link id="m-playerstrackers" /><code>{"private Dictionary<int, Dictionary<int, "}<Link to="/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{">> playersTrackers"}</code> |
+| <Link id="m-syncfull" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncFull"}</code> |
+| <Link id="m-syncmarker" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncclass-t">{"MethodSyncClass"}</Link>{"<"}<Link to="/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{"> syncMarker"}</code> |
+| <Link id="m-timeofdaytorefresh" /><code>{"private float timeOfDayToRefresh"}</code> |
+
+</details>
 
 ## Events
 
@@ -61,8 +69,16 @@ Server-owned, saved per-player charge counters for limited interactions ("you ca
 | <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the joining player their counters. |
 | <Link id="m-refund" /><code>{"void Refund("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, int id, int refund)"}</code> | Server: gives charges back to a player for an ID. |
 | <Link id="m-setcharges" /><code>{"void SetCharges(int id, int charges)"}</code> | Changes the charge count of a registered ID. Players who already have a counter keep theirs. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-gettracker" /><code>{"private bool GetTracker("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, int id, out "}<Link to="/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{" tracker)"}</code> |  |
-| <Link id="m-settingschanged" /><code>{"private void SettingsChanged(Settings obj)"}</code> |  |
-| <Link id="m-syncfull-2" /><code>{"private void SyncFull("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isClear)"}</code> |  |
-| <Link id="m-syncmarker-2" /><code>{"private void SyncMarker("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{" arguments)"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-gettracker" /><code>{"private bool GetTracker("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, int id, out "}<Link to="/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{" tracker)"}</code> |
+| <Link id="m-settingschanged" /><code>{"private void SettingsChanged(Settings obj)"}</code> |
+| <Link id="m-syncfull-2" /><code>{"private void SyncFull("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isClear)"}</code> |
+| <Link id="m-syncmarker-2" /><code>{"private void SyncMarker("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{" arguments)"}</code> |
+
+</details>

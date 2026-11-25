@@ -19,28 +19,33 @@ The bubble and item count label on a pickup dock. Switches materials by distance
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DockVisual()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DockVisual()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activepooledvisual" /><code>{"private "}<Link to="/game-api/types/alta-items/pooleddockvisual">{"PooledDockVisual"}</Link>{" activePooledVisual"}</code> |  |
-| <Link id="m-coloredmeshes" /><code>{"private static Dictionary<int, Mesh> coloredMeshes"}</code> |  |
-| <Link id="m-countlabel3d" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" countLabel3D"}</code> |  |
-| <Link id="m-distant" /><code>{"private int distant"}</code> |  |
-| <Link id="m-dock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock"}</code> |  |
-| <Link id="m-dockbubble" /><code>{"private MeshRenderer dockBubble"}</code> |  |
-| <Link id="m-hasnearbyscaler" /><code>{"private bool hasNearbyScaler"}</code> |  |
-| <Link id="m-ispulsing" /><code>{"private bool isPulsing"}</code> |  |
-| <Link id="m-nearbyscaler" /><code>{"private "}<Link to="/game-api/types/global-m-o/nearbyplayerscaler">{"NearbyPlayerScaler"}</Link>{" nearbyScaler"}</code> |  |
-| <Link id="m-pooleddockvisualdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" pooledDockVisualDefinition"}</code> |  |
-| <Link id="m-scalepulsator" /><code>{"private "}<Link to="/game-api/types/global-s/scalepulsator">{"ScalePulsator"}</Link>{" scalePulsator"}</code> |  |
-| <Link id="m-updatedistance" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateDistance"}</code> |  |
-| <Link id="m-updatingvisuals" /><code>{"private static HashSet<"}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"> updatingVisuals"}</code> |  |
-| <Link id="m-validatecamerahide" /><code>{"private Func<bool> validateCameraHide"}</code> |  |
+<details>
+<summary>14 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activepooledvisual" /><code>{"private "}<Link to="/game-api/types/alta-items/pooleddockvisual">{"PooledDockVisual"}</Link>{" activePooledVisual"}</code> |
+| <Link id="m-coloredmeshes" /><code>{"private static Dictionary<int, Mesh> coloredMeshes"}</code> |
+| <Link id="m-countlabel3d" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" countLabel3D"}</code> |
+| <Link id="m-distant" /><code>{"private int distant"}</code> |
+| <Link id="m-dock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock"}</code> |
+| <Link id="m-dockbubble" /><code>{"private MeshRenderer dockBubble"}</code> |
+| <Link id="m-hasnearbyscaler" /><code>{"private bool hasNearbyScaler"}</code> |
+| <Link id="m-ispulsing" /><code>{"private bool isPulsing"}</code> |
+| <Link id="m-nearbyscaler" /><code>{"private "}<Link to="/game-api/types/global-m-o/nearbyplayerscaler">{"NearbyPlayerScaler"}</Link>{" nearbyScaler"}</code> |
+| <Link id="m-pooleddockvisualdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" pooledDockVisualDefinition"}</code> |
+| <Link id="m-scalepulsator" /><code>{"private "}<Link to="/game-api/types/global-s/scalepulsator">{"ScalePulsator"}</Link>{" scalePulsator"}</code> |
+| <Link id="m-updatedistance" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateDistance"}</code> |
+| <Link id="m-updatingvisuals" /><code>{"private static HashSet<"}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"> updatingVisuals"}</code> |
+| <Link id="m-validatecamerahide" /><code>{"private Func<bool> validateCameraHide"}</code> |
+
+</details>
 
 ## Properties
 
@@ -50,7 +55,15 @@ The bubble and item count label on a pickup dock. Switches materials by distance
 | <Link id="m-dock-2" /><code><Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" Dock { get; }"}</code> | The pickup dock this visual belongs to. |
 | <Link id="m-dockbubble-2" /><code>{"MeshRenderer DockBubble { get; }"}</code> | The bubble mesh renderer whose material changes with distance. |
 | <Link id="m-needstogetfrompool" /><code>{"bool NeedsToGetFromPool { get; private set; }"}</code> | Pooled visual flag. Nothing in this build sets it. |
-| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |
+
+</details>
 
 ## Methods
 
@@ -61,23 +74,31 @@ The bubble and item count label on a pickup dock. Switches materials by distance
 | <Link id="m-endnearplayer" /><code>{"void EndNearPlayer()"}</code> | Called when the local player's head leaves range. Turns off the nearby scaler. |
 | <Link id="m-setisscaledup" /><code>{"void SetIsScaledUp(bool isScaledUp)"}</code> | Hook for when the dock scales up. Its pooling work is empty in this build. |
 | <Link id="m-updatequantitystoredtext" /><code>{"void UpdateQuantityStoredText(int quantityStored, bool isCountHidden)"}</code> | Shows the stored count on the 3D label, or clears it when the count is hidden. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |  |
-| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |  |
-| <Link id="m-getraritymeshcolor" /><code>{"private void GetRarityMeshColor("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
-| <Link id="m-getspooledvisual" /><code>{"private void GetsPooledVisual()"}</code> |  |
-| <Link id="m-modifypulse" /><code>{"private void ModifyPulse("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, int oldCount)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-postcamerarender" /><code>{"private void PostCameraRender("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> |  |
-| <Link id="m-precamerarender" /><code>{"private void PreCameraRender("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> |  |
-| <Link id="m-releasevisual" /><code>{"private void ReleaseVisual("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-resetmeshcolor" /><code>{"private void ResetMeshColor("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
-| <Link id="m-setbubbleenabled" /><code>{"private void SetBubbleEnabled(bool isEnabled)"}</code> |  |
-| <Link id="m-startpulse" /><code>{"private void StartPulse()"}</code> |  |
-| <Link id="m-stoppulse" /><code>{"private void StopPulse()"}</code> |  |
-| <Link id="m-updatealldistances" /><code>{"private static void UpdateAllDistances()"}</code> |  |
-| <Link id="m-updatemeshcolor" /><code>{"private void UpdateMeshColor(Color targetColor)"}</code> |  |
-| <Link id="m-updatenear" /><code>{"private void UpdateNear(bool isNear)"}</code> |  |
+
+<details>
+<summary>17 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |
+| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |
+| <Link id="m-getraritymeshcolor" /><code>{"private void GetRarityMeshColor("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
+| <Link id="m-getspooledvisual" /><code>{"private void GetsPooledVisual()"}</code> |
+| <Link id="m-modifypulse" /><code>{"private void ModifyPulse("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, int oldCount)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-postcamerarender" /><code>{"private void PostCameraRender("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> |
+| <Link id="m-precamerarender" /><code>{"private void PreCameraRender("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> |
+| <Link id="m-releasevisual" /><code>{"private void ReleaseVisual("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| <Link id="m-resetmeshcolor" /><code>{"private void ResetMeshColor("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
+| <Link id="m-setbubbleenabled" /><code>{"private void SetBubbleEnabled(bool isEnabled)"}</code> |
+| <Link id="m-startpulse" /><code>{"private void StartPulse()"}</code> |
+| <Link id="m-stoppulse" /><code>{"private void StopPulse()"}</code> |
+| <Link id="m-updatealldistances" /><code>{"private static void UpdateAllDistances()"}</code> |
+| <Link id="m-updatemeshcolor" /><code>{"private void UpdateMeshColor(Color targetColor)"}</code> |
+| <Link id="m-updatenear" /><code>{"private void UpdateNear(bool isNear)"}</code> |
+
+</details>
 
 ## Used in
 

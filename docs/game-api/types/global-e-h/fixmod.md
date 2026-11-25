@@ -17,19 +17,19 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FixMod()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FixMod()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"override string Name { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"override string Name { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> |  |
-| <Link id="m-terminate" /><code>{"protected override void Terminate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> |
+| <Link id="m-terminate" /><code>{"protected override void Terminate()"}</code> |

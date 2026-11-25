@@ -16,28 +16,33 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Day("}<Link to="/game-api/types/alta-intelligence/history">{"History"}</Link>{" history, int index)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Day("}<Link to="/game-api/types/alta-intelligence/history">{"History"}</Link>{" history, int index)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-events" /><code>{"private List<"}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{"> events"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-events" /><code>{"private List<"}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{"> events"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-history" /><code><Link to="/game-api/types/alta-intelligence/history">{"History"}</Link>{" "}<Link to="/game-api/types/alta-intelligence/history">{"History"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-index" /><code>{"int Index { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-history" /><code><Link to="/game-api/types/alta-intelligence/history">{"History"}</Link>{" "}<Link to="/game-api/types/alta-intelligence/history">{"History"}</Link>{" { get; private set; }"}</code> |
+| <Link id="m-index" /><code>{"int Index { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-registerevent" /><code>{"void RegisterEvent("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" newEvent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-registerevent" /><code>{"void RegisterEvent("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" newEvent)"}</code> |
 
 ## Used in
 

@@ -17,15 +17,15 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hasstamina" /><code>{"bool HasStamina { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hasstamina" /><code>{"bool HasStamina { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-process" /><code>{"void Process()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-process" /><code>{"void Process()"}</code> |
 
 ## Used in
 

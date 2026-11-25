@@ -18,28 +18,33 @@ A **class** in `Root.Township`, `Features.Gameplay`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AddUnlockToPlayer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AddUnlockToPlayer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playerunlock" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" playerUnlock"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-playerunlock" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" playerUnlock"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playerunlock-2" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-playerunlock-2" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addunlock" /><code>{"void AddUnlock("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-addunlock-2" /><code>{"void AddUnlock("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addunlock" /><code>{"void AddUnlock("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| <Link id="m-addunlock-2" /><code>{"void AddUnlock("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> |
 
 ## Used in
 

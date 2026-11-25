@@ -18,6 +18,6 @@ An **interface** in `Root.Township`, `Alta.Intelligence`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-start" /><code>{"void Start("}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" action, TAgent agent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-start" /><code>{"void Start("}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" action, TAgent agent)"}</code> |

@@ -17,30 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EmptyHistory()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EmptyHistory()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-e-h/emptyhistory-t">{"EmptyHistory"}</Link>{"<T> Instance { get; }"}</code> |  |
-| <Link id="m-ispushpossible" /><code>{"bool IsPushPossible { get; }"}</code> |  |
-| <Link id="m-isredopossible" /><code>{"bool IsRedoPossible { get; }"}</code> |  |
-| <Link id="m-isundopossible" /><code>{"bool IsUndoPossible { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-e-h/emptyhistory-t">{"EmptyHistory"}</Link>{"<T> Instance { get; }"}</code> |
+| <Link id="m-ispushpossible" /><code>{"bool IsPushPossible { get; }"}</code> |
+| <Link id="m-isredopossible" /><code>{"bool IsRedoPossible { get; }"}</code> |
+| <Link id="m-isundopossible" /><code>{"bool IsUndoPossible { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-itempushed" /><code>{"event Action ItemPushed"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-itempushed" /><code>{"event Action ItemPushed"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-push" /><code>{"void Push(T item)"}</code> |  |
-| <Link id="m-redo" /><code>{"void Redo()"}</code> |  |
-| <Link id="m-undo" /><code>{"void Undo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> |
+| <Link id="m-push" /><code>{"void Push(T item)"}</code> |
+| <Link id="m-redo" /><code>{"void Redo()"}</code> |
+| <Link id="m-undo" /><code>{"void Undo()"}</code> |

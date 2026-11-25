@@ -20,10 +20,10 @@ An **enum** in `Alta.Platform`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pc" /><code>{"PC = 1"}</code> |  |
-| <Link id="m-quest" /><code>{"Quest = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-pc" /><code>{"PC = 1"}</code> |
+| <Link id="m-quest" /><code>{"Quest = 2"}</code> |
 
 ## Used in
 

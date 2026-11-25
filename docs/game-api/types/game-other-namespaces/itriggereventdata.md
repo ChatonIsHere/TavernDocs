@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, `ATT.Triggers`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-eventname" /><code>{"string EventName { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-eventname" /><code>{"string EventName { get; }"}</code> |
 
 ## Used in
 

@@ -16,14 +16,14 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-a" /><code>{"A = 0"}</code> |  |
-| <Link id="m-b" /><code>{"B = 1"}</code> |  |
-| <Link id="m-c" /><code>{"C = 2"}</code> |  |
-| <Link id="m-d" /><code>{"D = 3"}</code> |  |
-| <Link id="m-e" /><code>{"E = 4"}</code> |  |
-| <Link id="m-f" /><code>{"F = 5"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-a" /><code>{"A = 0"}</code> |
+| <Link id="m-b" /><code>{"B = 1"}</code> |
+| <Link id="m-c" /><code>{"C = 2"}</code> |
+| <Link id="m-d" /><code>{"D = 3"}</code> |
+| <Link id="m-e" /><code>{"E = 4"}</code> |
+| <Link id="m-f" /><code>{"F = 5"}</code> |
 
 ## Used in
 

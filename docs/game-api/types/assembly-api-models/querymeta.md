@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"QueryMeta(int offset, bool hasMoreResults)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"QueryMeta(int offset, bool hasMoreResults)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hasmoreresults" /><code>{"bool HasMoreResults { get; }"}</code> |  |
-| <Link id="m-offset" /><code>{"int Offset { get; }"}</code> |  |
-| <Link id="m-results" /><code>{"int Results { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hasmoreresults" /><code>{"bool HasMoreResults { get; }"}</code> |
+| <Link id="m-offset" /><code>{"int Offset { get; }"}</code> |
+| <Link id="m-results" /><code>{"int Results { get; set; }"}</code> |
 
 ## Used in
 

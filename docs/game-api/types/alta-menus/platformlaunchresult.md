@@ -16,15 +16,15 @@ An **enum** in `Root.Township`, `Alta.PlatformSpecific.Oculus`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-failedgamealreadystarted" /><code>{"FailedGameAlreadyStarted = 3"}</code> |  |
-| <Link id="m-failedotherreason" /><code>{"FailedOtherReason = 6"}</code> |  |
-| <Link id="m-failedroomfull" /><code>{"FailedRoomFull = 2"}</code> |  |
-| <Link id="m-failedroomnotfound" /><code>{"FailedRoomNotFound = 4"}</code> |  |
-| <Link id="m-faileduserdeclined" /><code>{"FailedUserDeclined = 5"}</code> |  |
-| <Link id="m-success" /><code>{"Success = 1"}</code> |  |
-| <Link id="m-unknown" /><code>{"Unknown = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-failedgamealreadystarted" /><code>{"FailedGameAlreadyStarted = 3"}</code> |
+| <Link id="m-failedotherreason" /><code>{"FailedOtherReason = 6"}</code> |
+| <Link id="m-failedroomfull" /><code>{"FailedRoomFull = 2"}</code> |
+| <Link id="m-failedroomnotfound" /><code>{"FailedRoomNotFound = 4"}</code> |
+| <Link id="m-faileduserdeclined" /><code>{"FailedUserDeclined = 5"}</code> |
+| <Link id="m-success" /><code>{"Success = 1"}</code> |
+| <Link id="m-unknown" /><code>{"Unknown = 0"}</code> |
 
 ## Used in
 

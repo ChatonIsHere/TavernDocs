@@ -17,15 +17,15 @@ An **interface** in `Root.Township`, `Alta.Caves`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-topic" /><code>{"T Topic { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-topic" /><code>{"T Topic { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getvalue" /><code>{"float GetValue("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getvalue" /><code>{"float GetValue("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes = null)"}</code> |
 
 ## Used in
 

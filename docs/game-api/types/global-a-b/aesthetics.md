@@ -16,6 +16,6 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isshowing" /><code>{"static bool IsShowing { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isshowing" /><code>{"static bool IsShowing { get; }"}</code> |

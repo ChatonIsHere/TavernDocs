@@ -18,17 +18,17 @@ An **interface** in `Alta.Platform`, `Alta.Platform`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isloggedin" /><code>{"bool IsLoggedIn { get; }"}</code> |  |
-| <Link id="m-loggedinuser" /><code><Link to="/game-api/types/assembly-other/iuser">{"IUser"}</Link>{" LoggedInUser { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isloggedin" /><code>{"bool IsLoggedIn { get; }"}</code> |
+| <Link id="m-loggedinuser" /><code><Link to="/game-api/types/assembly-other/iuser">{"IUser"}</Link>{" LoggedInUser { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getuserwithid" /><code>{"Task<IResult<"}<Link to="/game-api/types/assembly-other/iuser">{"IUser"}</Link>{">> GetUserWithId(string userId)"}</code> |  |
-| <Link id="m-refreshloggedinuser" /><code>{"Task<IResult> RefreshLoggedInUser()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getuserwithid" /><code>{"Task<IResult<"}<Link to="/game-api/types/assembly-other/iuser">{"IUser"}</Link>{">> GetUserWithId(string userId)"}</code> |
+| <Link id="m-refreshloggedinuser" /><code>{"Task<IResult> RefreshLoggedInUser()"}</code> |
 
 ## Used in
 

@@ -17,13 +17,18 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"internal VoiceApiClient("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"internal VoiceApiClient("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getjoinchanneltokenasync" /><code>{"async Task<string> GetJoinChannelTokenAsync(int serverIdentifier)"}</code> |  |
-| <Link id="m-getlogintokenasync" /><code>{"async Task<string> GetLoginTokenAsync()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getjoinchanneltokenasync" /><code>{"async Task<string> GetJoinChannelTokenAsync(int serverIdentifier)"}</code> |
+| <Link id="m-getlogintokenasync" /><code>{"async Task<string> GetLoginTokenAsync()"}</code> |

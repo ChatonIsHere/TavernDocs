@@ -17,25 +17,38 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformCollection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformCollection()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-collections" /><code>{"private ShaderVariantCollection[] collections"}</code> |  |
-| <Link id="m-platform" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform"}</code> |  |
-| <Link id="m-runtimecollections" /><code>{"private List<ShaderVariantCollection> runtimeCollections"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-collections" /><code>{"private ShaderVariantCollection[] collections"}</code> |
+| <Link id="m-platform" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform"}</code> |
+| <Link id="m-runtimecollections" /><code>{"private List<ShaderVariantCollection> runtimeCollections"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bakeruntime" /><code>{"void BakeRuntime()"}</code> |  |
-| <Link id="m-warm" /><code>{"async Task Warm()"}</code> |  |
-| <Link id="m-splitcollection" /><code>{"private void SplitCollection(ShaderVariantCollection collection)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bakeruntime" /><code>{"void BakeRuntime()"}</code> |
+| <Link id="m-warm" /><code>{"async Task Warm()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-splitcollection" /><code>{"private void SplitCollection(ShaderVariantCollection collection)"}</code> |
+
+</details>
 
 ## Used in
 

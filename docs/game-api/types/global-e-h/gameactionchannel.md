@@ -18,18 +18,18 @@ Channel a game action is filed under, such as destroying, crafting, repairing, d
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-craftitem" /><code>{"CraftItem = 1"}</code> |  |
-| <Link id="m-destroyobject" /><code>{"DestroyObject = 0"}</code> |  |
-| <Link id="m-dockobject" /><code>{"DockObject = 5"}</code> |  |
-| <Link id="m-eatamount" /><code>{"EatAmount = 9"}</code> |  |
-| <Link id="m-finishrepair" /><code>{"FinishRepair = 2"}</code> |  |
-| <Link id="m-general" /><code>{"General = 3"}</code> |  |
-| <Link id="m-handtouch" /><code>{"HandTouch = 4"}</code> |  |
-| <Link id="m-maxcount" /><code>{"MaxCount = 6"}</code> |  |
-| <Link id="m-spawnitem" /><code>{"SpawnItem = 7"}</code> |  |
-| <Link id="m-transferamount" /><code>{"TransferAmount = 8"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-craftitem" /><code>{"CraftItem = 1"}</code> |
+| <Link id="m-destroyobject" /><code>{"DestroyObject = 0"}</code> |
+| <Link id="m-dockobject" /><code>{"DockObject = 5"}</code> |
+| <Link id="m-eatamount" /><code>{"EatAmount = 9"}</code> |
+| <Link id="m-finishrepair" /><code>{"FinishRepair = 2"}</code> |
+| <Link id="m-general" /><code>{"General = 3"}</code> |
+| <Link id="m-handtouch" /><code>{"HandTouch = 4"}</code> |
+| <Link id="m-maxcount" /><code>{"MaxCount = 6"}</code> |
+| <Link id="m-spawnitem" /><code>{"SpawnItem = 7"}</code> |
+| <Link id="m-transferamount" /><code>{"TransferAmount = 8"}</code> |
 
 ## Used in
 

@@ -21,26 +21,31 @@ Owns the cave system: the seed, the layers that exist, each layer's entrance and
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CaveLayerManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CaveLayerManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-biomes" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{"> biomes"}</code> |  |
-| <Link id="m-currentlayercount" /><code>{"private int currentLayerCount"}</code> |  |
-| <Link id="m-depths" /><code>{"private List<float> depths"}</code> |  |
-| <Link id="m-entrancechunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" entranceChunk"}</code> |  |
-| <Link id="m-entrancedirections" /><code>{"private List<Vector2> entranceDirections"}</code> |  |
-| <Link id="m-entrances" /><code>{"private List<Vector2> entrances"}</code> |  |
-| <Link id="m-layerprefabs" /><code>{"private List<uint> layerPrefabs"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-pregenerated" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/pregeneratedcave">{"PregeneratedCave"}</Link>{" pregenerated"}</code> |  |
-| <Link id="m-requested" /><code>{"private Dictionary<int, TaskCompletionSource<bool>> requested"}</code> |  |
-| <Link id="m-seed" /><code>{"private int seed"}</code> |  |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |  |
+<details>
+<summary>12 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-biomes" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{"> biomes"}</code> |
+| <Link id="m-currentlayercount" /><code>{"private int currentLayerCount"}</code> |
+| <Link id="m-depths" /><code>{"private List<float> depths"}</code> |
+| <Link id="m-entrancechunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" entranceChunk"}</code> |
+| <Link id="m-entrancedirections" /><code>{"private List<Vector2> entranceDirections"}</code> |
+| <Link id="m-entrances" /><code>{"private List<Vector2> entrances"}</code> |
+| <Link id="m-layerprefabs" /><code>{"private List<uint> layerPrefabs"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-pregenerated" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/pregeneratedcave">{"PregeneratedCave"}</Link>{" pregenerated"}</code> |
+| <Link id="m-requested" /><code>{"private Dictionary<int, TaskCompletionSource<bool>> requested"}</code> |
+| <Link id="m-seed" /><code>{"private int seed"}</code> |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
+
+</details>
 
 ## Properties
 
@@ -65,13 +70,21 @@ Owns the cave system: the seed, the layers that exist, each layer's entrance and
 | <Link id="m-requestportalregistering" /><code>{"void RequestPortalRegistering("}<Link to="/game-api/types/alta-world/icavelayer">{"ICaveLayer"}</Link>{" streamer)"}</code> | Connects a layer's chunk to the layer above (or the entrance chunk for layer 0) and registers its portal. |
 | <Link id="m-spawnwithoutgenerating" /><code><Link to="/game-api/types/alta-world/icavelayer">{"ICaveLayer"}</Link>{" SpawnWithoutGenerating(int layer)"}</code> | Returns the layer, making its streamer if it does not exist yet. Does not load or generate it. |
 | <Link id="m-waitforentranceinformation" /><code>{"async Task WaitForEntranceInformation(int layer)"}</code> | Waits until the layer's entrance position is known (set when the layer above finds its exit). |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-createlayer" /><code>{"private "}<Link to="/game-api/types/alta-world/icavelayer">{"ICaveLayer"}</Link>{" CreateLayer(int layer)"}</code> |  |
-| <Link id="m-exitready" /><code>{"private void ExitReady(int layer, float depth, Vector2 exit, Vector2 direction)"}</code> |  |
-| <Link id="m-prepare" /><code>{"private void Prepare()"}</code> |  |
-| <Link id="m-preparespawn" /><code>{"private void PrepareSpawn("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-setentrance" /><code>{"private void SetEntrance(int layer, float depth, Vector2 entrance, Vector2 direction)"}</code> |  |
-| <Link id="m-syncseed" /><code>{"private void SyncSeed("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+<details>
+<summary>7 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-createlayer" /><code>{"private "}<Link to="/game-api/types/alta-world/icavelayer">{"ICaveLayer"}</Link>{" CreateLayer(int layer)"}</code> |
+| <Link id="m-exitready" /><code>{"private void ExitReady(int layer, float depth, Vector2 exit, Vector2 direction)"}</code> |
+| <Link id="m-prepare" /><code>{"private void Prepare()"}</code> |
+| <Link id="m-preparespawn" /><code>{"private void PrepareSpawn("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| <Link id="m-setentrance" /><code>{"private void SetEntrance(int layer, float depth, Vector2 entrance, Vector2 direction)"}</code> |
+| <Link id="m-syncseed" /><code>{"private void SyncSeed("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

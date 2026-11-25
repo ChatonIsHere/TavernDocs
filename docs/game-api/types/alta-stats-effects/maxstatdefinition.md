@@ -22,26 +22,39 @@ Its `Base` becomes the `Maximum` of other stats (applied a frame later through `
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MaxStatDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MaxStatDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-controldefinitions" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{"[] controlDefinitions"}</code> |  |
-| <Link id="m-endofframebuffer" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> endOfFrameBuffer"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-controldefinitions" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{"[] controlDefinitions"}</code> |
+| <Link id="m-endofframebuffer" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> endOfFrameBuffer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |  |
-| <Link id="m-isvalidformanager" /><code>{"private bool IsValidForManager("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |  |
-| <Link id="m-onreset" /><code>{"private void OnReset("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |  |
-| <Link id="m-processchangebuffer" /><code>{"private static void ProcessChangeBuffer()"}</code> |  |
-| <Link id="m-updatemanager" /><code>{"private static void UpdateManager("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-isvalidformanager" /><code>{"private bool IsValidForManager("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |
+| <Link id="m-onreset" /><code>{"private void OnReset("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |
+| <Link id="m-processchangebuffer" /><code>{"private static void ProcessChangeBuffer()"}</code> |
+| <Link id="m-updatemanager" /><code>{"private static void UpdateManager("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |
+
+</details>
 
 ## Used in
 

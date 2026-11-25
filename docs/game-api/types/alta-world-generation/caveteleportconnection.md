@@ -19,21 +19,37 @@ A link between two cave teleporter layers and its fuel costs. Watches fuel on bo
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor-2" /><code>{"CaveTeleportConnection("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayer, "}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" toLayer, int fromCost, int toCost)"}</code> |  |
-| <Link id="m-ctor-3" /><code>{"CaveTeleportConnection("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayer, int toLayer, int fromCost, int toCost)"}</code> |  |
-| <Link id="m-ctor" /><code>{"private CaveTeleportConnection()"}</code> |  |
-| <Link id="m-ctor-4" /><code>{"private CaveTeleportConnection("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayer, int toLayer, int fromCost, int toCost, bool hasTo, bool hasFuelTo)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor-2" /><code>{"CaveTeleportConnection("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayer, "}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" toLayer, int fromCost, int toCost)"}</code> |
+| <Link id="m-ctor-3" /><code>{"CaveTeleportConnection("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayer, int toLayer, int fromCost, int toCost)"}</code> |
+
+<details>
+<summary>2 private and internal constructors</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"private CaveTeleportConnection()"}</code> |
+| <Link id="m-ctor-4" /><code>{"private CaveTeleportConnection("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayer, int toLayer, int fromCost, int toCost, bool hasTo, bool hasFuelTo)"}</code> |
+
+</details>
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-nullconnection" /><code>{"static "}<Link to="/game-api/types/alta-world-generation/caveteleportconnection">{"CaveTeleportConnection"}</Link>{" NullConnection"}</code> | A shared placeholder connection that's never valid. |
-| <Link id="m-fromlayerdata" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayerData"}</code> |  |
-| <Link id="m-tolayerdata" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" toLayerData"}</code> |  |
-| <Link id="m-wasvalid" /><code>{"private bool wasValid"}</code> |  |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fromlayerdata" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayerData"}</code> |
+| <Link id="m-tolayerdata" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" toLayerData"}</code> |
+| <Link id="m-wasvalid" /><code>{"private bool wasValid"}</code> |
+
+</details>
 
 ## Properties
 
@@ -60,7 +76,15 @@ A link between two cave teleporter layers and its fuel costs. Watches fuel on bo
 | Member | What it is |
 | --- | --- |
 | <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> | Stops listening for fuel updates. |
-| <Link id="m-updatevalid" /><code>{"private void UpdateValid("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" modifiedLayer)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-updatevalid" /><code>{"private void UpdateValid("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" modifiedLayer)"}</code> |
+
+</details>
 
 ## Used in
 

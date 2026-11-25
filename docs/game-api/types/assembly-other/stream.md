@@ -22,9 +22,9 @@ The bit reader and writer under every network message and save file. Each `Seria
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Stream(bool isReading, bool isWriting)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Stream(bool isReading, bool isWriting)"}</code> |
 
 ## Fields
 
@@ -34,10 +34,18 @@ The bit reader and writer under every network message and save file. Each `Seria
 | <Link id="m-iswriting" /><code>{"readonly bool IsWriting"}</code> | True on a writer. |
 | <Link id="m-resizedatafunc" /><code>{"static readonly "}<Link to="/game-api/types/assembly-other/bitwriter-getmoredata">{"BitWriter.GetMoreData"}</Link>{" ResizeDataFunc"}</code> | Pass to `new StreamWriter(...)` for a writer that doubles its buffer as needed. Buffers come from a shared pool. |
 | <Link id="m-emptybytes" /><code>{"protected static readonly byte[] EmptyBytes"}</code> | A shared empty byte array for subclasses. |
-| <Link id="m-epsilon" /><code>{"private const float Epsilon"}</code> |  |
-| <Link id="m-normalizedmaximum" /><code>{"private const float NormalizedMaximum"}</code> |  |
-| <Link id="m-normalizedminimum" /><code>{"private const float NormalizedMinimum"}</code> |  |
-| <Link id="m-normalizedrange" /><code>{"private const float NormalizedRange"}</code> |  |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-epsilon" /><code>{"private const float Epsilon"}</code> |
+| <Link id="m-normalizedmaximum" /><code>{"private const float NormalizedMaximum"}</code> |
+| <Link id="m-normalizedminimum" /><code>{"private const float NormalizedMinimum"}</code> |
+| <Link id="m-normalizedrange" /><code>{"private const float NormalizedRange"}</code> |
+
+</details>
 
 ## Properties
 
@@ -95,8 +103,16 @@ The bit reader and writer under every network message and save file. Each `Seria
 | <Link id="m-serializevector4" /><code>{"void SerializeVector4(ref Vector4 vector)"}</code> | Four full floats. |
 | <Link id="m-setializedatetime" /><code>{"void SetializeDatetime(ref DateTime value)"}</code> | A `DateTime` as 64-bit ticks. Alta's spelling. |
 | <Link id="m-skipbits" /><code>{"void SkipBits(uint bitCount)"}</code> | Reads past a number of bits, discarding them. |
-| <Link id="m-internalserializefloat" /><code>{"private void InternalSerializeFloat(ref float value, int bits, uint maximumInteger)"}</code> |  |
 | <Link id="m-serializebytes" /><code>{"protected abstract void SerializeBytes(byte[] value, int byteCount)"}</code> | Protected subclass hook that reads or writes raw bytes. Callers use `AlignAndSerializeBytes`. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-internalserializefloat" /><code>{"private void InternalSerializeFloat(ref float value, int bits, uint maximumInteger)"}</code> |
+
+</details>
 
 ## Used in
 

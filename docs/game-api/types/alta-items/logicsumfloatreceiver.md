@@ -19,21 +19,34 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicSumFloatReceiver()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicSumFloatReceiver()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentvalue" /><code>{"private float currentValue"}</code> |  |
-| <Link id="m-onvalueupdated" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatunityevent">{"FloatUnityEvent"}</Link>{" onValueUpdated"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentvalue" /><code>{"private float currentValue"}</code> |
+| <Link id="m-onvalueupdated" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatunityevent">{"FloatUnityEvent"}</Link>{" onValueUpdated"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-getvalue" /><code>{"private float GetValue()"}</code> |  |
-| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getvalue" /><code>{"private float GetValue()"}</code> |
+
+</details>

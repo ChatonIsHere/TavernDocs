@@ -23,13 +23,21 @@ The game's own global `Debug` class, which hides `UnityEngine.Debug` in the game
 | Member | What it is |
 | --- | --- |
 | <Link id="m-logconfigpath" /><code>{"static string LogConfigPath"}</code> | Path of the NLog config file in use. Defaults to `StreamingAssets/NLog.config` unless `/logging_config_path` is given. |
-| <Link id="m-commandlinepath" /><code>{"private static string commandLinePath"}</code> |  |
-| <Link id="m-defaultunitylogger" /><code>{"private static ILogHandler defaultUnityLogger"}</code> |  |
-| <Link id="m-issetup" /><code>{"private static bool isSetup"}</code> |  |
-| <Link id="m-logbasepath" /><code>{"private static string logBasePath"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-unhandledexceptionslogger" /><code>{"private static readonly Logger unhandledExceptionsLogger"}</code> |  |
-| <Link id="m-unhandledlogger" /><code>{"private static readonly Logger unhandledLogger"}</code> |  |
+
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-commandlinepath" /><code>{"private static string commandLinePath"}</code> |
+| <Link id="m-defaultunitylogger" /><code>{"private static ILogHandler defaultUnityLogger"}</code> |
+| <Link id="m-issetup" /><code>{"private static bool isSetup"}</code> |
+| <Link id="m-logbasepath" /><code>{"private static string logBasePath"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-unhandledexceptionslogger" /><code>{"private static readonly Logger unhandledExceptionsLogger"}</code> |
+| <Link id="m-unhandledlogger" /><code>{"private static readonly Logger unhandledLogger"}</code> |
+
+</details>
 
 ## Properties
 
@@ -54,19 +62,27 @@ The game's own global `Debug` class, which hides `UnityEngine.Debug` in the game
 | <Link id="m-logwarningformat" /><code>{"static void LogWarningFormat(string format, params object[] args)"}</code> | Logs a formatted message at Warn level. |
 | <Link id="m-setuplogging" /><code>{"static void SetupLogging()"}</code> | Loads the NLog config, registers the game's targets and layout renderers and takes over Unity's log handler. Runs once. |
 | <Link id="m-updatelogfolderpath" /><code>{"static void UpdateLogFolderPath(string newLogFolder)"}</code> | Changes the base log folder and reloads the NLog config. |
-| <Link id="m-addcsvtargetwithname" /><code>{"private static void AddCsvTargetWithName(LoggingConfiguration config, CsvLayout csvLayout, string name)"}</code> |  |
-| <Link id="m-addcustomtarget" /><code>{"private static void AddCustomTarget(LoggingConfiguration config, string fileName, params string[] fields)"}</code> |  |
-| <Link id="m-addcustomtargetsandrenderers" /><code>{"private static void AddCustomTargetsAndRenderers()"}</code> |  |
-| <Link id="m-adderrortarget" /><code>{"private static void AddErrorTarget(LoggingConfiguration config)"}</code> |  |
-| <Link id="m-addsimpletarget" /><code>{"private static void AddSimpleTarget(LoggingConfiguration config, string fileName)"}</code> |  |
-| <Link id="m-addsupersimpletarget" /><code>{"private static void AddSuperSimpleTarget(LoggingConfiguration config, string fileName)"}</code> |  |
-| <Link id="m-getlogfolderpath" /><code>{"private static string GetLogFolderPath()"}</code> |  |
-| <Link id="m-getlogsettingspath" /><code>{"private static string GetLogSettingsPath()"}</code> |  |
-| <Link id="m-loadconfiguration" /><code>{"private static void LoadConfiguration()"}</code> |  |
-| <Link id="m-logmanagerconfigurationreloaded" /><code>{"private static void LogManagerConfigurationReloaded(object sender, LoggingConfigurationReloadedEventArgs e)"}</code> |  |
-| <Link id="m-setfulllogfolderpath" /><code>{"private static void SetFullLogFolderPath()"}</code> |  |
-| <Link id="m-setupforandroid" /><code>{"private static void SetupForAndroid()"}</code> |  |
-| <Link id="m-setupforstandalone" /><code>{"private static void SetupForStandalone()"}</code> |  |
-| <Link id="m-setuphostname" /><code>{"private static void SetupHostname()"}</code> |  |
-| <Link id="m-shutdownnlog" /><code>{"private static void ShutdownNLog()"}</code> |  |
-| <Link id="m-unhandledunitylog" /><code>{"private static void UnhandledUnityLog(string condition, string stackTrace, LogType type)"}</code> |  |
+
+<details>
+<summary>16 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-addcsvtargetwithname" /><code>{"private static void AddCsvTargetWithName(LoggingConfiguration config, CsvLayout csvLayout, string name)"}</code> |
+| <Link id="m-addcustomtarget" /><code>{"private static void AddCustomTarget(LoggingConfiguration config, string fileName, params string[] fields)"}</code> |
+| <Link id="m-addcustomtargetsandrenderers" /><code>{"private static void AddCustomTargetsAndRenderers()"}</code> |
+| <Link id="m-adderrortarget" /><code>{"private static void AddErrorTarget(LoggingConfiguration config)"}</code> |
+| <Link id="m-addsimpletarget" /><code>{"private static void AddSimpleTarget(LoggingConfiguration config, string fileName)"}</code> |
+| <Link id="m-addsupersimpletarget" /><code>{"private static void AddSuperSimpleTarget(LoggingConfiguration config, string fileName)"}</code> |
+| <Link id="m-getlogfolderpath" /><code>{"private static string GetLogFolderPath()"}</code> |
+| <Link id="m-getlogsettingspath" /><code>{"private static string GetLogSettingsPath()"}</code> |
+| <Link id="m-loadconfiguration" /><code>{"private static void LoadConfiguration()"}</code> |
+| <Link id="m-logmanagerconfigurationreloaded" /><code>{"private static void LogManagerConfigurationReloaded(object sender, LoggingConfigurationReloadedEventArgs e)"}</code> |
+| <Link id="m-setfulllogfolderpath" /><code>{"private static void SetFullLogFolderPath()"}</code> |
+| <Link id="m-setupforandroid" /><code>{"private static void SetupForAndroid()"}</code> |
+| <Link id="m-setupforstandalone" /><code>{"private static void SetupForStandalone()"}</code> |
+| <Link id="m-setuphostname" /><code>{"private static void SetupHostname()"}</code> |
+| <Link id="m-shutdownnlog" /><code>{"private static void ShutdownNLog()"}</code> |
+| <Link id="m-unhandledunitylog" /><code>{"private static void UnhandledUnityLog(string condition, string stackTrace, LogType type)"}</code> |
+
+</details>

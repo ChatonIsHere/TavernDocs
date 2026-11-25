@@ -18,15 +18,15 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected HandPositionInputModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected HandPositionInputModifier()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modifyisinposition" /><code>{"abstract void ModifyIsInPosition("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler, ref bool isInPosition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modifyisinposition" /><code>{"abstract void ModifyIsInPosition("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler, ref bool isInPosition)"}</code> |
 
 ## Used in
 

@@ -17,29 +17,34 @@ A **class** in `Root.Township`, `Alta.Combat`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DeadPlugin()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DeadPlugin()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fogcolor" /><code>{"private Color fogColor"}</code> |  |
-| <Link id="m-fogdensity" /><code>{"private float fogDensity"}</code> |  |
-| <Link id="m-isupdatingfogcolor" /><code>{"private bool isUpdatingFogColor"}</code> |  |
-| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fogcolor" /><code>{"private Color fogColor"}</code> |
+| <Link id="m-fogdensity" /><code>{"private float fogDensity"}</code> |
+| <Link id="m-isupdatingfogcolor" /><code>{"private bool isUpdatingFogColor"}</code> |
+| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentambience" /><code>{"override Color CurrentAmbience { get; }"}</code> |  |
-| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> |  |
-| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentambience" /><code>{"override Color CurrentAmbience { get; }"}</code> |
+| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> |
+| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> |

@@ -18,17 +18,17 @@ An **interface** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" Data { get; }"}</code> |  |
-| <Link id="m-eventname" /><code>{"string EventName { get; }"}</code> |  |
-| <Link id="m-userid" /><code>{"int? UserId { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data" /><code><Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" Data { get; }"}</code> |
+| <Link id="m-eventname" /><code>{"string EventName { get; }"}</code> |
+| <Link id="m-userid" /><code>{"int? UserId { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addinstrument" /><code>{"void AddInstrument("}<Link to="/game-api/types/assembly-other/ianalyticsinstrument">{"IAnalyticsInstrument"}</Link>{" instrument)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addinstrument" /><code>{"void AddInstrument("}<Link to="/game-api/types/assembly-other/ianalyticsinstrument">{"IAnalyticsInstrument"}</Link>{" instrument)"}</code> |
 
 ## Used in
 

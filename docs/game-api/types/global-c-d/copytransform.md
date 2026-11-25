@@ -17,18 +17,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CopyTransform()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CopyTransform()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-target" /><code>{"private Transform target"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-target" /><code>{"private Transform target"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
+
+</details>

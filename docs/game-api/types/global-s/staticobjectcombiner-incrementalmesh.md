@@ -17,14 +17,14 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"IncrementalMesh()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"IncrementalMesh()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-colliders" /><code>{"List<Collider> Colliders { get; }"}</code> |  |
-| <Link id="m-indices" /><code>{"List<int> Indices { get; }"}</code> |  |
-| <Link id="m-vertices" /><code>{"List<Vector3> Vertices { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-colliders" /><code>{"List<Collider> Colliders { get; }"}</code> |
+| <Link id="m-indices" /><code>{"List<int> Indices { get; }"}</code> |
+| <Link id="m-vertices" /><code>{"List<Vector3> Vertices { get; }"}</code> |

@@ -16,13 +16,18 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-changedownership" /><code>{"static void ChangedOwnership("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int oldOwner, int newOwner)"}</code> |  |
-| <Link id="m-removedfromownership" /><code>{"static void RemovedFromOwnership("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" removedPickup, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" basePickup, int oldOwner, int newOwner)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-changedownership" /><code>{"static void ChangedOwnership("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int oldOwner, int newOwner)"}</code> |
+| <Link id="m-removedfromownership" /><code>{"static void RemovedFromOwnership("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" removedPickup, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" basePickup, int oldOwner, int newOwner)"}</code> |

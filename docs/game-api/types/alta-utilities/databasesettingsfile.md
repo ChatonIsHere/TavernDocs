@@ -19,16 +19,21 @@ A settings "file" stored through the Alta web API's settings endpoint instead of
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DatabaseSettingsFile(string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DatabaseSettingsFile(string name)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-readingtask" /><code>{"private Task readingTask"}</code> |  |
-| <Link id="m-writingtask" /><code>{"private Task writingTask"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-readingtask" /><code>{"private Task readingTask"}</code> |
+| <Link id="m-writingtask" /><code>{"private Task writingTask"}</code> |
+
+</details>
 
 ## Properties
 
@@ -58,5 +63,13 @@ A settings "file" stored through the Alta web API's settings endpoint instead of
 | <Link id="m-refresh" /><code>{"void Refresh()"}</code> | Does nothing. |
 | <Link id="m-resethaschanged" /><code>{"void ResetHasChanged()"}</code> | Does nothing. |
 | <Link id="m-writeasync" /><code>{"async void WriteAsync()"}</code> | Writes `Content` to text and sends it to the API, waiting for any earlier write first. |
-| <Link id="m-readinternal" /><code>{"private async Task<T> ReadInternal<T>(Func<T> create)"}</code> |  |
-| <Link id="m-writeinternal" /><code>{"private async Task WriteInternal()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-readinternal" /><code>{"private async Task<T> ReadInternal<T>(Func<T> create)"}</code> |
+| <Link id="m-writeinternal" /><code>{"private async Task WriteInternal()"}</code> |
+
+</details>

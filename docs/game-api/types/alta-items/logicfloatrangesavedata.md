@@ -19,20 +19,20 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicFloatRangeSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicFloatRangeSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactivewithinrange" /><code>{"bool isActiveWithinRange"}</code> |  |
-| <Link id="m-maximumvalue" /><code>{"float maximumValue"}</code> |  |
-| <Link id="m-minimumvalue" /><code>{"float minimumValue"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isactivewithinrange" /><code>{"bool isActiveWithinRange"}</code> |
+| <Link id="m-maximumvalue" /><code>{"float maximumValue"}</code> |
+| <Link id="m-minimumvalue" /><code>{"float minimumValue"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/alta-items/logicfloatsavedata">{"LogicFloatSaveData"}</Link>{" Data { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data" /><code><Link to="/game-api/types/alta-items/logicfloatsavedata">{"LogicFloatSaveData"}</Link>{" Data { get; set; }"}</code> |

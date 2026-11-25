@@ -21,19 +21,24 @@ Enchantment trigger that charges when the item is taken out of a dock and goes o
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"QuickDrawTrigger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"QuickDrawTrigger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cooldowntime" /><code>{"private float cooldownTime"}</code> |  |
-| <Link id="m-isonehit" /><code>{"private bool isOneHit"}</code> |  |
-| <Link id="m-minimumeffectiveness" /><code>{"private float minimumEffectiveness"}</code> |  |
-| <Link id="m-timetohit" /><code>{"private float timeToHit"}</code> |  |
-| <Link id="m-validdocks" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{"[] validDocks"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cooldowntime" /><code>{"private float cooldownTime"}</code> |
+| <Link id="m-isonehit" /><code>{"private bool isOneHit"}</code> |
+| <Link id="m-minimumeffectiveness" /><code>{"private float minimumEffectiveness"}</code> |
+| <Link id="m-timetohit" /><code>{"private float timeToHit"}</code> |
+| <Link id="m-validdocks" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{"[] validDocks"}</code> |
+
+</details>
 
 ## Properties
 

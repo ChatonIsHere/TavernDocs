@@ -20,10 +20,10 @@ Server: one population (creatures or items of one `PopulationDefinition`) in one
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationSample("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition, int currentPopulation, int maximumPopulation, "}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" parent, bool isOneOff = false)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PopulationSample("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition, int currentPopulation, int maximumPopulation, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/ispawnsystem">{"ISpawnSystem"}</Link>{" spawner, "}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" parent, bool isOneOff = false)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationSample("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition, int currentPopulation, int maximumPopulation, "}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" parent, bool isOneOff = false)"}</code> |
+| <Link id="m-ctor-2" /><code>{"PopulationSample("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition, int currentPopulation, int maximumPopulation, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/ispawnsystem">{"ISpawnSystem"}</Link>{" spawner, "}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" parent, bool isOneOff = false)"}</code> |
 
 ## Fields
 
@@ -32,10 +32,18 @@ Server: one population (creatures or items of one `PopulationDefinition`) in one
 | <Link id="m-onpopulationdiedout" /><code><Link to="/game-api/types/alta-world-generation/populationdelegate">{"PopulationDelegate"}</Link>{" OnPopulationDiedOut"}</code> | Called when the count reaches 0. |
 | <Link id="m-onpopulationmaxed" /><code><Link to="/game-api/types/alta-world-generation/populationdelegate">{"PopulationDelegate"}</Link>{" OnPopulationMaxed"}</code> | Called when the count reaches the maximum. |
 | <Link id="m-onpopulationstarted" /><code><Link to="/game-api/types/alta-world-generation/populationdelegate">{"PopulationDelegate"}</Link>{" OnPopulationStarted"}</code> | Called when the count goes from 0 to above 0. |
-| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |  |
-| <Link id="m-isoneoff" /><code>{"private bool isOneOff"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-spawner" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ispawnsystem">{"ISpawnSystem"}</Link>{" spawner"}</code> |  |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |
+| <Link id="m-isoneoff" /><code>{"private bool isOneOff"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-spawner" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ispawnsystem">{"ISpawnSystem"}</Link>{" spawner"}</code> |
+
+</details>
 
 ## Properties
 
@@ -72,6 +80,12 @@ Server: one population (creatures or items of one `PopulationDefinition`) in one
 | <Link id="m-requestmove" /><code>{"bool RequestMove("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isAllowingSame = true)"}</code> | Moves a member to another random free spawn point. False if none is available. |
 | <Link id="m-savetime" /><code>{"TimeSpan SaveTime()"}</code> | Returns the tick timer for saving. |
 | <Link id="m-serializetime" /><code>{"void SerializeTime("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Obsolete: old way of saving the tick timer to a stream. |
+
+<details>
+<summary>9 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-addentity-2" /><code>{"private void AddEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" point)"}</code> | Adds an existing entity as a member at the spawn point with the given index. |
 | <Link id="m-additemto" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationitem">{"PopulationItem"}</Link>{" AddItemTo(GameObject gameObject)"}</code> |  |
 | <Link id="m-checkpopulation" /><code>{"private void CheckPopulation()"}</code> |  |
@@ -81,6 +95,8 @@ Server: one population (creatures or items of one `PopulationDefinition`) in one
 | <Link id="m-entitydestroyed" /><code>{"private void EntityDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
 | <Link id="m-registerremovemethod" /><code>{"private void RegisterRemoveMethod("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newEntity)"}</code> |  |
 | <Link id="m-spawnrandom" /><code>{"private bool SpawnRandom("}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" value)"}</code> |  |
+
+</details>
 
 ## Used in
 

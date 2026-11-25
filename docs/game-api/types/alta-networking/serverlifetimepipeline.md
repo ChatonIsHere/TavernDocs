@@ -20,23 +20,39 @@ Opens the server socket and makes the handler. `GetServerRegion()`, `GetServerFl
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hostname" /><code>{"const string HostName"}</code> |  |
-| <Link id="m-servername" /><code>{"const string ServerName"}</code> |  |
-| <Link id="m-servertransporttype" /><code>{"const string ServerTransportType"}</code> |  |
-| <Link id="m-currentserver" /><code>{"private static "}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" currentServer"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-serveridentifier" /><code>{"private const string ServerIdentifier"}</code> |  |
-| <Link id="m-serverversion" /><code>{"private const string ServerVersion"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hostname" /><code>{"const string HostName"}</code> |
+| <Link id="m-servername" /><code>{"const string ServerName"}</code> |
+| <Link id="m-servertransporttype" /><code>{"const string ServerTransportType"}</code> |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentserver" /><code>{"private static "}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" currentServer"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-serveridentifier" /><code>{"private const string ServerIdentifier"}</code> |
+| <Link id="m-serverversion" /><code>{"private const string ServerVersion"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-attempttostartserver" /><code>{"static async Task<bool> AttemptToStartServer("}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" server, int port, bool isRunningLocally)"}</code> |  |
-| <Link id="m-getserverfleet" /><code>{"static string GetServerFleet()"}</code> |  |
-| <Link id="m-getserverregion" /><code>{"static string GetServerRegion()"}</code> |  |
-| <Link id="m-serverended" /><code>{"private static void ServerEnded("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> |  |
-| <Link id="m-startrejected" /><code>{"private static void StartRejected(string error)"}</code> |  |
-| <Link id="m-startserverhandler" /><code>{"private static async Task StartServerHandler("}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess, int port, bool isRunningLocally)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-attempttostartserver" /><code>{"static async Task<bool> AttemptToStartServer("}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" server, int port, bool isRunningLocally)"}</code> |
+| <Link id="m-getserverfleet" /><code>{"static string GetServerFleet()"}</code> |
+| <Link id="m-getserverregion" /><code>{"static string GetServerRegion()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-serverended" /><code>{"private static void ServerEnded("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> |
+| <Link id="m-startrejected" /><code>{"private static void StartRejected(string error)"}</code> |
+| <Link id="m-startserverhandler" /><code>{"private static async Task StartServerHandler("}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess, int port, bool isRunningLocally)"}</code> |
+
+</details>

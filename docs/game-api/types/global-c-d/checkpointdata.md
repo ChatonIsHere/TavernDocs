@@ -19,13 +19,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CheckPointData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CheckPointData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-beginningdatas" /><code><Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"[] beginningDatas"}</code> |  |
-| <Link id="m-endingdatas" /><code><Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"[] endingDatas"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-beginningdatas" /><code><Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"[] beginningDatas"}</code> |
+| <Link id="m-endingdatas" /><code><Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"[] endingDatas"}</code> |

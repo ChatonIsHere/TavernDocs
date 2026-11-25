@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LerpModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LerpModifier()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-from" /><code>{"private float from"}</code> |  |
-| <Link id="m-to" /><code>{"private float to"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-from" /><code>{"private float from"}</code> |
+| <Link id="m-to" /><code>{"private float to"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-input" /><code>{"override void Input(float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-input" /><code>{"override void Input(float value)"}</code> |

@@ -18,26 +18,39 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LinearPartClonerPart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LinearPartClonerPart()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-baseinset" /><code>{"private float baseInset"}</code> |  |
-| <Link id="m-baselength" /><code>{"private float baseLength"}</code> |  |
-| <Link id="m-cloners" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/linearpartcloner">{"LinearPartCloner"}</Link>{"> cloners"}</code> |  |
-| <Link id="m-clonerspawner" /><code>{"private List<"}<Link to="/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{"> clonerSpawner"}</code> |  |
-| <Link id="m-partlength" /><code>{"private float partLength"}</code> |  |
-| <Link id="m-parts" /><code>{"private int parts"}</code> |  |
-| <Link id="m-pathendspart" /><code>{"private "}<Link to="/game-api/types/global-p/pathendspart">{"PathEndsPart"}</Link>{" pathEndsPart"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-baseinset" /><code>{"private float baseInset"}</code> |
+| <Link id="m-baselength" /><code>{"private float baseLength"}</code> |
+| <Link id="m-cloners" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/linearpartcloner">{"LinearPartCloner"}</Link>{"> cloners"}</code> |
+| <Link id="m-clonerspawner" /><code>{"private List<"}<Link to="/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{"> clonerSpawner"}</code> |
+| <Link id="m-partlength" /><code>{"private float partLength"}</code> |
+| <Link id="m-parts" /><code>{"private int parts"}</code> |
+| <Link id="m-pathendspart" /><code>{"private "}<Link to="/game-api/types/global-p/pathendspart">{"PathEndsPart"}</Link>{" pathEndsPart"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generatedynamic" /><code>{"override void GenerateDynamic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> |  |
-| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> |  |
-| <Link id="m-process" /><code>{"private void Process("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, int count)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-generatedynamic" /><code>{"override void GenerateDynamic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> |
+| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-process" /><code>{"private void Process("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, int count)"}</code> |
+
+</details>

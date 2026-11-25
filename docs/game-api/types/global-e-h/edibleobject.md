@@ -22,24 +22,29 @@ Makes a pickup edible: bites over time at the mouth, then the server applies its
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EdibleObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EdibleObject()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-biteeffects" /><code>{"private "}<Link to="/game-api/types/global-e-h/edibleobject-eatenstage">{"EdibleObject.EatenStage"}</Link>{" biteEffects"}</code> |  |
-| <Link id="m-bitehaptic" /><code>{"private AnimationCurve biteHaptic"}</code> |  |
-| <Link id="m-consumers" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-c-d/consumptionmanager">{"ConsumptionManager"}</Link>{", Coroutine> consumers"}</code> |  |
-| <Link id="m-consumptioneffects" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] consumptionEffects"}</code> |  |
-| <Link id="m-currentbites" /><code>{"private int currentBites"}</code> |  |
-| <Link id="m-finishedeating" /><code>{"private "}<Link to="/game-api/types/global-e-h/edibleevent">{"EdibleEvent"}</Link>{" finishedEating"}</code> |  |
-| <Link id="m-holdingentity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" holdingEntity"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |  |
-| <Link id="m-resetingbites" /><code>{"private Coroutine resetingBites"}</code> |  |
+<details>
+<summary>10 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-biteeffects" /><code>{"private "}<Link to="/game-api/types/global-e-h/edibleobject-eatenstage">{"EdibleObject.EatenStage"}</Link>{" biteEffects"}</code> |
+| <Link id="m-bitehaptic" /><code>{"private AnimationCurve biteHaptic"}</code> |
+| <Link id="m-consumers" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-c-d/consumptionmanager">{"ConsumptionManager"}</Link>{", Coroutine> consumers"}</code> |
+| <Link id="m-consumptioneffects" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] consumptionEffects"}</code> |
+| <Link id="m-currentbites" /><code>{"private int currentBites"}</code> |
+| <Link id="m-finishedeating" /><code>{"private "}<Link to="/game-api/types/global-e-h/edibleevent">{"EdibleEvent"}</Link>{" finishedEating"}</code> |
+| <Link id="m-holdingentity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" holdingEntity"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
+| <Link id="m-resetingbites" /><code>{"private Coroutine resetingBites"}</code> |
+
+</details>
 
 ## Properties
 
@@ -54,12 +59,20 @@ Makes a pickup edible: bites over time at the mouth, then the server applies its
 | --- | --- |
 | <Link id="m-starteat" /><code>{"bool StartEat("}<Link to="/game-api/types/global-c-d/consumptionmanager">{"ConsumptionManager"}</Link>{" consumer, Transform mouth)"}</code> | Starts the biting coroutine for a consumer. False if disabled or that consumer is already eating. |
 | <Link id="m-stopeat" /><code>{"void StopEat("}<Link to="/game-api/types/global-c-d/consumptionmanager">{"ConsumptionManager"}</Link>{" consumer)"}</code> | Stops a consumer's biting. Bite count is kept until the item is let go. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-biteeffects-2" /><code>{"private void BiteEffects()"}</code> |  |
-| <Link id="m-resetbites" /><code>{"private void ResetBites("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-resetbites-2" /><code>{"private IEnumerator ResetBites() (iterator)"}</code> |  |
-| <Link id="m-starteating" /><code>{"private IEnumerator StartEating("}<Link to="/game-api/types/global-c-d/consumptionmanager">{"ConsumptionManager"}</Link>{" consumer, Transform mouth) (iterator)"}</code> |  |
-| <Link id="m-startholding" /><code>{"private void StartHolding("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
+
+<details>
+<summary>6 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-biteeffects-2" /><code>{"private void BiteEffects()"}</code> |
+| <Link id="m-resetbites" /><code>{"private void ResetBites("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-resetbites-2" /><code>{"private IEnumerator ResetBites() (iterator)"}</code> |
+| <Link id="m-starteating" /><code>{"private IEnumerator StartEating("}<Link to="/game-api/types/global-c-d/consumptionmanager">{"ConsumptionManager"}</Link>{" consumer, Transform mouth) (iterator)"}</code> |
+| <Link id="m-startholding" /><code>{"private void StartHolding("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+
+</details>
 
 ## Used in
 

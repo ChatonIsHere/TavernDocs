@@ -17,39 +17,44 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SelectedGroupPanel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SelectedGroupPanel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-editserverpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/editserverpanel">{"EditServerPanel"}</Link>{" editServerPanel"}</code> |  |
-| <Link id="m-infopage" /><code>{"private "}<Link to="/game-api/types/alta-menus/groupinfotab">{"GroupInfoTab"}</Link>{" infoPage"}</code> |  |
-| <Link id="m-invitespage" /><code>{"private "}<Link to="/game-api/types/alta-menus/outgoinggroupinvitespage">{"OutgoingGroupInvitesPage"}</Link>{" invitesPage"}</code> |  |
-| <Link id="m-memberspage" /><code>{"private "}<Link to="/game-api/types/alta-menus/groupmemberspage">{"GroupMembersPage"}</Link>{" membersPage"}</code> |  |
-| <Link id="m-panel" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel"}</code> |  |
-| <Link id="m-requestspage" /><code>{"private "}<Link to="/game-api/types/alta-menus/incominggrouprequestpage">{"IncomingGroupRequestPage"}</Link>{" requestsPage"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-editserverpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/editserverpanel">{"EditServerPanel"}</Link>{" editServerPanel"}</code> |
+| <Link id="m-infopage" /><code>{"private "}<Link to="/game-api/types/alta-menus/groupinfotab">{"GroupInfoTab"}</Link>{" infoPage"}</code> |
+| <Link id="m-invitespage" /><code>{"private "}<Link to="/game-api/types/alta-menus/outgoinggroupinvitespage">{"OutgoingGroupInvitesPage"}</Link>{" invitesPage"}</code> |
+| <Link id="m-memberspage" /><code>{"private "}<Link to="/game-api/types/alta-menus/groupmemberspage">{"GroupMembersPage"}</Link>{" membersPage"}</code> |
+| <Link id="m-panel" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel"}</code> |
+| <Link id="m-requestspage" /><code>{"private "}<Link to="/game-api/types/alta-menus/incominggrouprequestpage">{"IncomingGroupRequestPage"}</Link>{" requestsPage"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-group" /><code><Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" Group { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-group" /><code><Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" Group { get; private set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-groupupdated" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/selectedgrouppanel">{"SelectedGroupPanel"}</Link>{"> GroupUpdated"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-groupupdated" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/selectedgrouppanel">{"SelectedGroupPanel"}</Link>{"> GroupUpdated"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-editselectserver" /><code>{"void EditSelectServer()"}</code> |  |
-| <Link id="m-settogroup" /><code>{"void SetToGroup("}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" group)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-editselectserver" /><code>{"void EditSelectServer()"}</code> |
+| <Link id="m-settogroup" /><code>{"void SetToGroup("}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" group)"}</code> |
 
 ## Used in
 

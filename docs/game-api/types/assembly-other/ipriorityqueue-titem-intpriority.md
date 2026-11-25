@@ -18,18 +18,18 @@ An **interface** in `Alta.Timing.Runtime`, `Alta.Timing.PriorityQueue`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-count" /><code>{"int Count { get; }"}</code> |  |
-| <Link id="m-first" /><code>{"TItem First { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-count" /><code>{"int Count { get; }"}</code> |
+| <Link id="m-first" /><code>{"TItem First { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-contains" /><code>{"bool Contains(TItem node)"}</code> |  |
-| <Link id="m-dequeue" /><code>{"TItem Dequeue()"}</code> |  |
-| <Link id="m-enqueue" /><code>{"void Enqueue(TItem node, TPriority priority)"}</code> |  |
-| <Link id="m-remove" /><code>{"void Remove(TItem node)"}</code> |  |
-| <Link id="m-updatepriority" /><code>{"void UpdatePriority(TItem node, TPriority priority)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> |
+| <Link id="m-contains" /><code>{"bool Contains(TItem node)"}</code> |
+| <Link id="m-dequeue" /><code>{"TItem Dequeue()"}</code> |
+| <Link id="m-enqueue" /><code>{"void Enqueue(TItem node, TPriority priority)"}</code> |
+| <Link id="m-remove" /><code>{"void Remove(TItem node)"}</code> |
+| <Link id="m-updatepriority" /><code>{"void UpdatePriority(TItem node, TPriority priority)"}</code> |

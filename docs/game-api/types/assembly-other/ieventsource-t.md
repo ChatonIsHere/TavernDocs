@@ -17,7 +17,7 @@ An **interface** in `Alta.EventBus.Runtime`, `Alta.EventBusSystem`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addlistener" /><code>{"void AddListener(Action<T> listener)"}</code> |  |
-| <Link id="m-removelistener" /><code>{"void RemoveListener(Action<T> listener)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addlistener" /><code>{"void AddListener(Action<T> listener)"}</code> |
+| <Link id="m-removelistener" /><code>{"void RemoveListener(Action<T> listener)"}</code> |

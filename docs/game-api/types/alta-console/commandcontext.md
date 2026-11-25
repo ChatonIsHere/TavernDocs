@@ -19,10 +19,10 @@ Who ran a console command and with what: the calling user, their group permissio
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CommandContext("}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" user)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"CommandContext("}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" user, IEnumerable<"}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"> groupPermissions)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CommandContext("}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" user)"}</code> |
+| <Link id="m-ctor-2" /><code>{"CommandContext("}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" user, IEnumerable<"}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"> groupPermissions)"}</code> |
 
 ## Properties
 

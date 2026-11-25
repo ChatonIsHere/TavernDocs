@@ -18,15 +18,15 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Entry()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Entry()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getawaiter" /><code>{"abstract TaskAwaiter<bool> GetAwaiter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getawaiter" /><code>{"abstract TaskAwaiter<bool> GetAwaiter()"}</code> |
 
 ## Used in
 

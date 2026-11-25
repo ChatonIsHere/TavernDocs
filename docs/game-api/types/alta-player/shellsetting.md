@@ -19,9 +19,9 @@ Base for one setting applied to a player effect's shell material.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ShellSetting()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ShellSetting()"}</code> |
 
 ## Methods
 

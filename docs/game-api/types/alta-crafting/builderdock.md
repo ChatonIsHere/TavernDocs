@@ -20,49 +20,73 @@ A **class** in `Root.Township`, `Alta.Carpentry`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BuilderDock()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BuilderDock()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activechanged" /><code><Link to="/game-api/types/alta-crafting/builderdock-booldelegate">{"BuilderDock.BoolDelegate"}</Link>{" ActiveChanged"}</code> |  |
-| <Link id="m-animationduration" /><code>{"private float animationDuration"}</code> |  |
-| <Link id="m-builderparent" /><code>{"private Transform builderParent"}</code> |  |
-| <Link id="m-builderpieces" /><code>{"private Renderer[] builderPieces"}</code> |  |
-| <Link id="m-builderpiecesfilters" /><code>{"private MeshFilter[] builderPiecesFilters"}</code> |  |
-| <Link id="m-deck" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chisellingdeck">{"ChisellingDeck"}</Link>{" deck"}</code> |  |
-| <Link id="m-dock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock"}</code> |  |
-| <Link id="m-undockingtarget" /><code>{"private Transform undockingTarget"}</code> |  |
-| <Link id="m-updatingroutine" /><code>{"private Coroutine updatingRoutine"}</code> |  |
-| <Link id="m-wedgeitem" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" wedgeItem"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-activechanged" /><code><Link to="/game-api/types/alta-crafting/builderdock-booldelegate">{"BuilderDock.BoolDelegate"}</Link>{" ActiveChanged"}</code> |
+
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animationduration" /><code>{"private float animationDuration"}</code> |
+| <Link id="m-builderparent" /><code>{"private Transform builderParent"}</code> |
+| <Link id="m-builderpieces" /><code>{"private Renderer[] builderPieces"}</code> |
+| <Link id="m-builderpiecesfilters" /><code>{"private MeshFilter[] builderPiecesFilters"}</code> |
+| <Link id="m-deck" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chisellingdeck">{"ChisellingDeck"}</Link>{" deck"}</code> |
+| <Link id="m-dock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock"}</code> |
+| <Link id="m-undockingtarget" /><code>{"private Transform undockingTarget"}</code> |
+| <Link id="m-updatingroutine" /><code>{"private Coroutine updatingRoutine"}</code> |
+| <Link id="m-wedgeitem" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" wedgeItem"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentphysicalmaterial" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" CurrentPhysicalMaterial { get; private set; }"}</code> |  |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; private set; }"}</code> |  |
-| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentphysicalmaterial" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" CurrentPhysicalMaterial { get; private set; }"}</code> |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; private set; }"}</code> |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reducesize" /><code>{"void ReduceSize()"}</code> |  |
-| <Link id="m-setupphysicalmaterial" /><code>{"void SetupPhysicalMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial)"}</code> |  |
-| <Link id="m-spawnrefuse" /><code>{"void SpawnRefuse(int refuse)"}</code> |  |
-| <Link id="m-updateposition" /><code>{"void UpdatePosition()"}</code> |  |
-| <Link id="m-updatequantity" /><code>{"void UpdateQuantity()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |  |
-| <Link id="m-blockfilter" /><code>{"private void BlockFilter("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, ref bool result)"}</code> |  |
-| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |  |
-| <Link id="m-ensurespace" /><code>{"private IEnumerator EnsureSpace() (iterator)"}</code> |  |
-| <Link id="m-spawnanimation" /><code>{"private IEnumerator SpawnAnimation() (iterator)"}</code> |  |
-| <Link id="m-updateimage" /><code>{"private void UpdateImage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-reducesize" /><code>{"void ReduceSize()"}</code> |
+| <Link id="m-setupphysicalmaterial" /><code>{"void SetupPhysicalMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial)"}</code> |
+| <Link id="m-spawnrefuse" /><code>{"void SpawnRefuse(int refuse)"}</code> |
+| <Link id="m-updateposition" /><code>{"void UpdatePosition()"}</code> |
+| <Link id="m-updatequantity" /><code>{"void UpdateQuantity()"}</code> |
+
+<details>
+<summary>7 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |
+| <Link id="m-blockfilter" /><code>{"private void BlockFilter("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, ref bool result)"}</code> |
+| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |
+| <Link id="m-ensurespace" /><code>{"private IEnumerator EnsureSpace() (iterator)"}</code> |
+| <Link id="m-spawnanimation" /><code>{"private IEnumerator SpawnAnimation() (iterator)"}</code> |
+| <Link id="m-updateimage" /><code>{"private void UpdateImage()"}</code> |
+
+</details>
 
 ## Used in
 

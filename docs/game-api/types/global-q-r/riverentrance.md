@@ -17,18 +17,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RiverEntrance()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RiverEntrance()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-volume" /><code>{"private float volume"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-volume" /><code>{"private float volume"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-volume-2" /><code>{"float Volume { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-volume-2" /><code>{"float Volume { get; }"}</code> |

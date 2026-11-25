@@ -17,29 +17,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OrbProperties()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OrbProperties()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bone" /><code>{"private "}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" bone"}</code> |  |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |  |
-| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |  |
-| <Link id="m-scale" /><code>{"private float scale"}</code> |  |
-| <Link id="m-weight" /><code>{"private float weight"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bone" /><code>{"private "}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" bone"}</code> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |
+| <Link id="m-scale" /><code>{"private float scale"}</code> |
+| <Link id="m-weight" /><code>{"private float weight"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bone-2" /><code><Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" Bone { get; }"}</code> |  |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> |  |
-| <Link id="m-prefab-2" /><code>{"GameObject Prefab { get; }"}</code> |  |
-| <Link id="m-scale-2" /><code>{"float Scale { get; }"}</code> |  |
-| <Link id="m-weight-2" /><code>{"float Weight { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bone-2" /><code><Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" Bone { get; }"}</code> |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> |
+| <Link id="m-prefab-2" /><code>{"GameObject Prefab { get; }"}</code> |
+| <Link id="m-scale-2" /><code>{"float Scale { get; }"}</code> |
+| <Link id="m-weight-2" /><code>{"float Weight { get; }"}</code> |
 
 ## Used in
 

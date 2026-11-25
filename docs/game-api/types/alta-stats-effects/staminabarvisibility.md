@@ -19,29 +19,39 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StaminaBarVisibility()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StaminaBarVisibility()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alphalerpspeed" /><code>{"private float alphaLerpSpeed"}</code> |  |
-| <Link id="m-leftstamina" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statbarbase">{"StatBarBase"}</Link>{"[] leftStamina"}</code> |  |
-| <Link id="m-leftstaminaview" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/staminabarvisibility-handstaminaview">{"StaminaBarVisibility.HandStaminaView"}</Link>{" leftStaminaView"}</code> |  |
-| <Link id="m-player" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player"}</code> |  |
-| <Link id="m-rightstamina" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statbarbase">{"StatBarBase"}</Link>{"[] rightStamina"}</code> |  |
-| <Link id="m-rightstaminaview" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/staminabarvisibility-handstaminaview">{"StaminaBarVisibility.HandStaminaView"}</Link>{" rightStaminaView"}</code> |  |
-| <Link id="m-staminanotchmaterial" /><code>{"private Material staminaNotchMaterial"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-alphalerpspeed" /><code>{"private float alphaLerpSpeed"}</code> |
+| <Link id="m-leftstamina" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statbarbase">{"StatBarBase"}</Link>{"[] leftStamina"}</code> |
+| <Link id="m-leftstaminaview" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/staminabarvisibility-handstaminaview">{"StaminaBarVisibility.HandStaminaView"}</Link>{" leftStaminaView"}</code> |
+| <Link id="m-player" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player"}</code> |
+| <Link id="m-rightstamina" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statbarbase">{"StatBarBase"}</Link>{"[] rightStamina"}</code> |
+| <Link id="m-rightstaminaview" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/staminabarvisibility-handstaminaview">{"StaminaBarVisibility.HandStaminaView"}</Link>{" rightStaminaView"}</code> |
+| <Link id="m-staminanotchmaterial" /><code>{"private Material staminaNotchMaterial"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-initialize" /><code>{"private void Initialize("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller = null)"}</code> |  |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-playerdeath" /><code>{"private void PlayerDeath("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" health)"}</code> |  |
+<details>
+<summary>6 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-initialize" /><code>{"private void Initialize("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller = null)"}</code> |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-playerdeath" /><code>{"private void PlayerDeath("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" health)"}</code> |
+
+</details>

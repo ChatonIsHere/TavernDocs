@@ -22,16 +22,24 @@ A `StatDefinition` split into named levels by threshold. While the stat's value 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ThresholdStat()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ThresholdStat()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-levels" /><code>{"protected "}<Link to="/game-api/types/alta-stats-effects/thresholdstat-thresholdlevel">{"ThresholdStat.ThresholdLevel"}</Link>{"[] levels"}</code> |  |
-| <Link id="m-notchescount" /><code>{"private int notchesCount"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-levels" /><code>{"protected "}<Link to="/game-api/types/alta-stats-effects/thresholdstat-thresholdlevel">{"ThresholdStat.ThresholdLevel"}</Link>{"[] levels"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-notchescount" /><code>{"private int notchesCount"}</code> |
+
+</details>
 
 ## Properties
 

@@ -19,27 +19,43 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EmissionControl()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EmissionControl()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialvalues" /><code>{"private "}<Link to="/game-api/types/global-e-h/emissioncontrol-initialvalues">{"EmissionControl.InitialValues"}</Link>{"[] initialValues"}</code> |  |
-| <Link id="m-systemstochange" /><code>{"protected ParticleSystem[] systemsToChange"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-systemstochange" /><code>{"protected ParticleSystem[] systemsToChange"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-initialvalues" /><code>{"private "}<Link to="/game-api/types/global-e-h/emissioncontrol-initialvalues">{"EmissionControl.InitialValues"}</Link>{"[] initialValues"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-release" /><code>{"override void Release()"}</code> |  |
-| <Link id="m-setemissionmultiplier" /><code>{"void SetEmissionMultiplier(float value)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |
-| <Link id="m-resetsystems" /><code>{"protected virtual void ResetSystems("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |  |
-| <Link id="m-setupsystems" /><code>{"protected virtual void SetupSystems()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-release" /><code>{"override void Release()"}</code> |
+| <Link id="m-setemissionmultiplier" /><code>{"void SetEmissionMultiplier(float value)"}</code> |
+| <Link id="m-resetsystems" /><code>{"protected virtual void ResetSystems("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
+| <Link id="m-setupsystems" /><code>{"protected virtual void SetupSystems()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+
+</details>
 
 ## Used in
 

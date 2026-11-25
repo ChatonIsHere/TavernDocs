@@ -17,32 +17,37 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ThresholdLevel(string name, float minThreshold)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ThresholdLevel(string name, float minThreshold)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-constructors" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmodifierconstructor">{"StatModifierConstructor"}</Link>{"[] constructors"}</code> |  |
-| <Link id="m-hasnotch" /><code>{"private bool hasNotch"}</code> |  |
-| <Link id="m-minthreshold" /><code>{"private float minThreshold"}</code> |  |
-| <Link id="m-name" /><code>{"private string name"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-constructors" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmodifierconstructor">{"StatModifierConstructor"}</Link>{"[] constructors"}</code> |
+| <Link id="m-hasnotch" /><code>{"private bool hasNotch"}</code> |
+| <Link id="m-minthreshold" /><code>{"private float minThreshold"}</code> |
+| <Link id="m-name" /><code>{"private string name"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hasnotch-2" /><code>{"bool HasNotch { get; }"}</code> |  |
-| <Link id="m-minthreshold-2" /><code>{"float MinThreshold { get; }"}</code> |  |
-| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hasnotch-2" /><code>{"bool HasNotch { get; }"}</code> |
+| <Link id="m-minthreshold-2" /><code>{"float MinThreshold { get; }"}</code> |
+| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getset" /><code><Link to="/game-api/types/alta-stats-effects/modifierset">{"ModifierSet"}</Link>{" GetSet("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getset" /><code><Link to="/game-api/types/alta-stats-effects/modifierset">{"ModifierSet"}</Link>{" GetSet("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |
 
 ## Used in
 

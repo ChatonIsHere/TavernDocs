@@ -17,32 +17,45 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OculusFriendsListPanel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OculusFriendsListPanel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-analyticsservice" /><code>{"private "}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService"}</code> |  |
-| <Link id="m-emptylisttext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" emptyListText"}</code> |  |
-| <Link id="m-friendslist" /><code>{"private "}<Link to="/game-api/types/alta-menus/panelcomponent">{"PanelComponent"}</Link>{" friendsList"}</code> |  |
-| <Link id="m-listelement" /><code>{"private "}<Link to="/game-api/types/alta-menus/listelementwithbutton">{"ListElementWithButton"}</Link>{" listElement"}</code> |  |
-| <Link id="m-oculusonlylistelement" /><code>{"private "}<Link to="/game-api/types/alta-menus/listelementwithbutton">{"ListElementWithButton"}</Link>{" oculusOnlyListElement"}</code> |  |
-| <Link id="m-uilist" /><code>{"private "}<Link to="/game-api/types/alta-menus/uilist">{"UIList"}</Link>{" uiList"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-analyticsservice" /><code>{"private "}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService"}</code> |
+| <Link id="m-emptylisttext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" emptyListText"}</code> |
+| <Link id="m-friendslist" /><code>{"private "}<Link to="/game-api/types/alta-menus/panelcomponent">{"PanelComponent"}</Link>{" friendsList"}</code> |
+| <Link id="m-listelement" /><code>{"private "}<Link to="/game-api/types/alta-menus/listelementwithbutton">{"ListElementWithButton"}</Link>{" listElement"}</code> |
+| <Link id="m-oculusonlylistelement" /><code>{"private "}<Link to="/game-api/types/alta-menus/listelementwithbutton">{"ListElementWithButton"}</Link>{" oculusOnlyListElement"}</code> |
+| <Link id="m-uilist" /><code>{"private "}<Link to="/game-api/types/alta-menus/uilist">{"UIList"}</Link>{" uiList"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-inject" /><code>{"void Inject("}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> |  |
-| <Link id="m-refreshdata" /><code>{"override async void RefreshData()"}</code> |  |
-| <Link id="m-inviteoculususertobefriend" /><code>{"private async void InviteOculusUserToBeFriend("}<Link to="/game-api/types/alta-menus/friend">{"Friend"}</Link>{" oculusFriend)"}</code> |  |
-| <Link id="m-invitetobefriend" /><code>{"private async void InviteToBeFriend("}<Link to="/game-api/types/assembly-api-models/inamedentity">{"INamedEntity"}</Link>{" friendship)"}</code> |  |
-| <Link id="m-setupfriendslist" /><code>{"private async Task SetupFriendsList()"}</code> |  |
-| <Link id="m-showoptionsforfriend" /><code>{"private void ShowOptionsForFriend("}<Link to="/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" friendship)"}</code> |  |
-| <Link id="m-showoptionsforoculusfriend" /><code>{"private void ShowOptionsForOculusFriend("}<Link to="/game-api/types/alta-menus/friend">{"Friend"}</Link>{" oculusFriend)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-inject" /><code>{"void Inject("}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> |
+| <Link id="m-refreshdata" /><code>{"override async void RefreshData()"}</code> |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-inviteoculususertobefriend" /><code>{"private async void InviteOculusUserToBeFriend("}<Link to="/game-api/types/alta-menus/friend">{"Friend"}</Link>{" oculusFriend)"}</code> |
+| <Link id="m-invitetobefriend" /><code>{"private async void InviteToBeFriend("}<Link to="/game-api/types/assembly-api-models/inamedentity">{"INamedEntity"}</Link>{" friendship)"}</code> |
+| <Link id="m-setupfriendslist" /><code>{"private async Task SetupFriendsList()"}</code> |
+| <Link id="m-showoptionsforfriend" /><code>{"private void ShowOptionsForFriend("}<Link to="/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" friendship)"}</code> |
+| <Link id="m-showoptionsforoculusfriend" /><code>{"private void ShowOptionsForOculusFriend("}<Link to="/game-api/types/alta-menus/friend">{"Friend"}</Link>{" oculusFriend)"}</code> |
+
+</details>
 
 ## Used in
 

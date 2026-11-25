@@ -17,20 +17,33 @@ A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CapsuleBlockableCamera()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CapsuleBlockableCamera()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-height" /><code>{"private float height"}</code> |  |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-height" /><code>{"private float height"}</code> |
+| <Link id="m-radius" /><code>{"private float radius"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-updateblockinternal" /><code>{"protected override bool UpdateBlockInternal()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updateblockinternal" /><code>{"protected override bool UpdateBlockInternal()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+
+</details>

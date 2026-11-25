@@ -16,21 +16,34 @@ A **static class** in `Root.Township`, `ATT.TownshipServer`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-oldservervalue" /><code>{"private const int OldServerValue"}</code> |  |
-| <Link id="m-servertype" /><code>{"private static "}<Link to="/game-api/types/game-other-namespaces/featuresetflags">{"FeatureSetFlags"}</Link>{"? serverType"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-oldservervalue" /><code>{"private const int OldServerValue"}</code> |
+| <Link id="m-servertype" /><code>{"private static "}<Link to="/game-api/types/game-other-namespaces/featuresetflags">{"FeatureSetFlags"}</Link>{"? serverType"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-featureset" /><code>{"static "}<Link to="/game-api/types/game-other-namespaces/featuresetflags">{"FeatureSetFlags"}</Link>{" FeatureSet { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-featureset" /><code>{"static "}<Link to="/game-api/types/game-other-namespaces/featuresetflags">{"FeatureSetFlags"}</Link>{" FeatureSet { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-geteditorservertype" /><code>{"static "}<Link to="/game-api/types/game-other-namespaces/featuresetflags">{"FeatureSetFlags"}</Link>{" GetEditorServerType()"}</code> |  |
-| <Link id="m-isservervalid" /><code>{"static bool IsServerValid(int targetAsInt)"}</code> |  |
-| <Link id="m-getservertype" /><code>{"private static "}<Link to="/game-api/types/game-other-namespaces/featuresetflags">{"FeatureSetFlags"}</Link>{" GetServerType()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-geteditorservertype" /><code>{"static "}<Link to="/game-api/types/game-other-namespaces/featuresetflags">{"FeatureSetFlags"}</Link>{" GetEditorServerType()"}</code> |
+| <Link id="m-isservervalid" /><code>{"static bool IsServerValid(int targetAsInt)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getservertype" /><code>{"private static "}<Link to="/game-api/types/game-other-namespaces/featuresetflags">{"FeatureSetFlags"}</Link>{" GetServerType()"}</code> |
+
+</details>

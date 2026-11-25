@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-importbones" /><code>{"ImportBones = 2"}</code> |  |
-| <Link id="m-linkedobjects" /><code>{"LinkedObjects = 1"}</code> |  |
-| <Link id="m-procedural" /><code>{"Procedural = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-importbones" /><code>{"ImportBones = 2"}</code> |
+| <Link id="m-linkedobjects" /><code>{"LinkedObjects = 1"}</code> |
+| <Link id="m-procedural" /><code>{"Procedural = 0"}</code> |
 
 ## Used in
 

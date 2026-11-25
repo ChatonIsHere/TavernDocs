@@ -21,9 +21,9 @@ Marks an entity as spawned by a `PopulationSample`, with the spawn point it used
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationItem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationItem()"}</code> |
 
 ## Properties
 
@@ -39,7 +39,15 @@ Marks an entity as spawned by a `PopulationSample`, with the spawn point it used
 | --- | --- |
 | <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | Makes the entity work out its chunk from its own position. |
 | <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Asks the population to swap this item for another entity. |
-| <Link id="m-getpositionchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" GetPositionChunk("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getpositionchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" GetPositionChunk("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
+
+</details>
 
 ## Used in
 

@@ -18,30 +18,43 @@ A **class** in `Root.Township`, `Alta.Caves.Displays`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClusterGenerator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClusterGenerator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cluster" /><code>{"private "}<Link to="/game-api/types/global-c-d/cluster">{"Cluster"}</Link>{" cluster"}</code> |  |
-| <Link id="m-isgeneratingfirsttime" /><code>{"private bool isGeneratingFirstTime"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" prefab"}</code> |  |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/clustersettings">{"ClusterSettings"}</Link>{" settings"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cluster" /><code>{"private "}<Link to="/game-api/types/global-c-d/cluster">{"Cluster"}</Link>{" cluster"}</code> |
+| <Link id="m-isgeneratingfirsttime" /><code>{"private bool isGeneratingFirstTime"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" prefab"}</code> |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/clustersettings">{"ClusterSettings"}</Link>{" settings"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isgeneratingfirsttime-2" /><code>{"protected override bool IsGeneratingFirstTime { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isgeneratingfirsttime-2" /><code>{"protected override bool IsGeneratingFirstTime { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generate" /><code>{"protected override void Generate("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
-| <Link id="m-positionchild" /><code>{"private void PositionChild("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" child)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-generate" /><code>{"protected override void Generate("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+| <Link id="m-positionchild" /><code>{"private void PositionChild("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" child)"}</code> |
+
+</details>

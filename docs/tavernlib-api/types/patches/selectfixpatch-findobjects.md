@@ -21,9 +21,9 @@ The delegate for the original `SelectionCommandModule.FindObjects`, handed to `S
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FindObjects(object object, IntPtr method)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FindObjects(object object, IntPtr method)"}</code> |
 
 ## Methods
 

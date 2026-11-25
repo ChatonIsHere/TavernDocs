@@ -22,31 +22,36 @@ A station in a climbing challenge (`PlayerUnlock`): start, orb checkpoint, compl
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerUnlockStation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerUnlockStation()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-analyticsservice" /><code>{"private "}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService"}</code> |  |
-| <Link id="m-climbingunlock" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" climbingUnlock"}</code> |  |
-| <Link id="m-cooldown" /><code>{"private float cooldown"}</code> |  |
-| <Link id="m-cooldownendtime" /><code>{"private float cooldownEndTime"}</code> |  |
-| <Link id="m-handhover" /><code>{"private "}<Link to="/game-api/types/global-e-h/handhoverpoint">{"HandHoverPoint"}</Link>{" handHover"}</code> |  |
-| <Link id="m-interactable" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable"}</code> |  |
-| <Link id="m-interactiondelay" /><code>{"private float interactionDelay"}</code> |  |
-| <Link id="m-logger" /><code>{"private readonly Logger logger"}</code> |  |
-| <Link id="m-orbindex" /><code>{"private int orbIndex"}</code> |  |
-| <Link id="m-orbparent" /><code>{"private Transform orbParent"}</code> |  |
-| <Link id="m-stationtype" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlockstation-unlockstationtype">{"PlayerUnlockStation.UnlockStationType"}</Link>{" stationType"}</code> |  |
-| <Link id="m-synceffect" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-p/playerunlockstation-networkeffect">{"PlayerUnlockStation.NetworkEffect"}</Link>{"> syncEffect"}</code> |  |
-| <Link id="m-syncinteractioninfotoclient" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-p/playerunlockstation-interactioninfo">{"PlayerUnlockStation.InteractionInfo"}</Link>{"> syncInteractionInfoToClient"}</code> |  |
-| <Link id="m-syncsavedatatoclient" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncSaveDataToClient"}</code> |  |
-| <Link id="m-triggeredcancelled" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" triggeredCancelled"}</code> |  |
-| <Link id="m-triggeredcomplete" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" triggeredComplete"}</code> |  |
-| <Link id="m-triggeredunlock" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" triggeredUnlock"}</code> |  |
+<details>
+<summary>17 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-analyticsservice" /><code>{"private "}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService"}</code> |
+| <Link id="m-climbingunlock" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" climbingUnlock"}</code> |
+| <Link id="m-cooldown" /><code>{"private float cooldown"}</code> |
+| <Link id="m-cooldownendtime" /><code>{"private float cooldownEndTime"}</code> |
+| <Link id="m-handhover" /><code>{"private "}<Link to="/game-api/types/global-e-h/handhoverpoint">{"HandHoverPoint"}</Link>{" handHover"}</code> |
+| <Link id="m-interactable" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable"}</code> |
+| <Link id="m-interactiondelay" /><code>{"private float interactionDelay"}</code> |
+| <Link id="m-logger" /><code>{"private readonly Logger logger"}</code> |
+| <Link id="m-orbindex" /><code>{"private int orbIndex"}</code> |
+| <Link id="m-orbparent" /><code>{"private Transform orbParent"}</code> |
+| <Link id="m-stationtype" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlockstation-unlockstationtype">{"PlayerUnlockStation.UnlockStationType"}</Link>{" stationType"}</code> |
+| <Link id="m-synceffect" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-p/playerunlockstation-networkeffect">{"PlayerUnlockStation.NetworkEffect"}</Link>{"> syncEffect"}</code> |
+| <Link id="m-syncinteractioninfotoclient" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-p/playerunlockstation-interactioninfo">{"PlayerUnlockStation.InteractionInfo"}</Link>{"> syncInteractionInfoToClient"}</code> |
+| <Link id="m-syncsavedatatoclient" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncSaveDataToClient"}</code> |
+| <Link id="m-triggeredcancelled" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" triggeredCancelled"}</code> |
+| <Link id="m-triggeredcomplete" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" triggeredComplete"}</code> |
+| <Link id="m-triggeredunlock" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" triggeredUnlock"}</code> |
+
+</details>
 
 ## Properties
 
@@ -65,24 +70,32 @@ A station in a climbing challenge (`PlayerUnlock`): start, orb checkpoint, compl
 | <Link id="m-interact" /><code>{"async void Interact("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Server: with a cooldown and optional delay, runs the station for the player (start, checkpoint and orb, or completion) and sends the result to them. |
 | <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the station's unlock, orb index and type to a joining player. |
 | <Link id="m-playerhasallorbs" /><code>{"bool PlayerHasAllOrbs("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | True if the player has this station's orb. On a completion station that orb index stands for the last one. |
-| <Link id="m-addorb" /><code>{"private void AddOrb("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-cancelunlock" /><code>{"private void CancelUnlock("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-p/playerunlockstation-networkeffect">{"PlayerUnlockStation.NetworkEffect"}</Link>{" effect)"}</code> |  |
-| <Link id="m-caninteractwithunlockstation" /><code>{"private bool CanInteractWithUnlockStation("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-filterstationinteraction" /><code>{"private void FilterStationInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |  |
-| <Link id="m-handhoverhascontent" /><code>{"private bool HandHoverHasContent()"}</code> |  |
-| <Link id="m-initializehandhoverattractingstate" /><code>{"private void InitializeHandHoverAttractingState("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" _)"}</code> |  |
-| <Link id="m-interactwithcompletionstation" /><code>{"private void InteractWithCompletionStation("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-interactwithstartstation" /><code>{"private void InteractWithStartStation("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-interactwithstation" /><code>{"private void InteractWithStation("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-interactwithunlockstation" /><code>{"private void InteractWithUnlockStation("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-removeorbs" /><code>{"private void RemoveOrbs("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-sendanalyticsevent" /><code>{"private void SendAnalyticsEvent("}<Link to="/game-api/types/global-p/playerunlockstation-interactioninfo">{"PlayerUnlockStation.InteractionInfo"}</Link>{" interactionInfo)"}</code> |  |
-| <Link id="m-setcheckpoint" /><code>{"private void SetCheckpoint("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-setuphandhoverattractingstate" /><code>{"private void SetupHandHoverAttractingState()"}</code> |  |
-| <Link id="m-spawnorb" /><code>{"private void SpawnOrb()"}</code> |  |
-| <Link id="m-synceffect-2" /><code>{"private void SyncEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/playerunlockstation-networkeffect">{"PlayerUnlockStation.NetworkEffect"}</Link>{" arguments)"}</code> |  |
-| <Link id="m-syncinteractioninfotoclient-2" /><code>{"private void SyncInteractionInfoToClient("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/playerunlockstation-interactioninfo">{"PlayerUnlockStation.InteractionInfo"}</Link>{" interactionInfo)"}</code> |  |
-| <Link id="m-syncsavedatatoclient-2" /><code>{"private void SyncSaveDataToClient("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+<details>
+<summary>18 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-addorb" /><code>{"private void AddOrb("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| <Link id="m-cancelunlock" /><code>{"private void CancelUnlock("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-p/playerunlockstation-networkeffect">{"PlayerUnlockStation.NetworkEffect"}</Link>{" effect)"}</code> |
+| <Link id="m-caninteractwithunlockstation" /><code>{"private bool CanInteractWithUnlockStation("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| <Link id="m-filterstationinteraction" /><code>{"private void FilterStationInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |
+| <Link id="m-handhoverhascontent" /><code>{"private bool HandHoverHasContent()"}</code> |
+| <Link id="m-initializehandhoverattractingstate" /><code>{"private void InitializeHandHoverAttractingState("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" _)"}</code> |
+| <Link id="m-interactwithcompletionstation" /><code>{"private void InteractWithCompletionStation("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| <Link id="m-interactwithstartstation" /><code>{"private void InteractWithStartStation("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| <Link id="m-interactwithstation" /><code>{"private void InteractWithStation("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| <Link id="m-interactwithunlockstation" /><code>{"private void InteractWithUnlockStation("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| <Link id="m-removeorbs" /><code>{"private void RemoveOrbs("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| <Link id="m-sendanalyticsevent" /><code>{"private void SendAnalyticsEvent("}<Link to="/game-api/types/global-p/playerunlockstation-interactioninfo">{"PlayerUnlockStation.InteractionInfo"}</Link>{" interactionInfo)"}</code> |
+| <Link id="m-setcheckpoint" /><code>{"private void SetCheckpoint("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| <Link id="m-setuphandhoverattractingstate" /><code>{"private void SetupHandHoverAttractingState()"}</code> |
+| <Link id="m-spawnorb" /><code>{"private void SpawnOrb()"}</code> |
+| <Link id="m-synceffect-2" /><code>{"private void SyncEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/playerunlockstation-networkeffect">{"PlayerUnlockStation.NetworkEffect"}</Link>{" arguments)"}</code> |
+| <Link id="m-syncinteractioninfotoclient-2" /><code>{"private void SyncInteractionInfoToClient("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/playerunlockstation-interactioninfo">{"PlayerUnlockStation.InteractionInfo"}</Link>{" interactionInfo)"}</code> |
+| <Link id="m-syncsavedatatoclient-2" /><code>{"private void SyncSaveDataToClient("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

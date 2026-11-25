@@ -18,19 +18,24 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlaybackSpeedOperator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlaybackSpeedOperator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-module" /><code>{"private ParticleSystem.MainModule module"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-module" /><code>{"private ParticleSystem.MainModule module"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize(ParticleSystem targetSystem)"}</code> |  |
-| <Link id="m-set" /><code>{"override void Set(float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize(ParticleSystem targetSystem)"}</code> |
+| <Link id="m-set" /><code>{"override void Set(float value)"}</code> |

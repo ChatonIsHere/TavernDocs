@@ -17,19 +17,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FakePlayerHelper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FakePlayerHelper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loadchunks" /><code>{"private List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> loadChunks"}</code> |  |
-| <Link id="m-unloadchunks" /><code>{"private List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> unloadChunks"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-loadchunks" /><code>{"private List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> loadChunks"}</code> |
+| <Link id="m-unloadchunks" /><code>{"private List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> unloadChunks"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

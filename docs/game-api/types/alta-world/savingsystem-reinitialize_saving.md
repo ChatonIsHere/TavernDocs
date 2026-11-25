@@ -18,12 +18,12 @@ A **class** in `Root.Township`, `Alta.Saving`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Reinitialize_Saving()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Reinitialize_Saving()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-run" /><code>{"protected override void Run()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-run" /><code>{"protected override void Run()"}</code> |

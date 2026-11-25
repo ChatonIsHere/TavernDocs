@@ -20,21 +20,29 @@ A point of interest that can appear on a map once a player is aware of it or has
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Landmark()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Landmark()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awareicon" /><code>{"private "}<Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" awareIcon"}</code> |  |
-| <Link id="m-defaultstate" /><code>{"private "}<Link to="/game-api/types/alta-world/discoverystate">{"DiscoveryState"}</Link>{" defaultState"}</code> |  |
-| <Link id="m-discoveredicon" /><code>{"private "}<Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" discoveredIcon"}</code> |  |
-| <Link id="m-findaction" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" findAction"}</code> |  |
 | <Link id="m-iskeptafterunload" /><code>{"protected bool isKeptAfterUnload"}</code> | Whether the landmark stays registered (and keeps its saved index) while its chunk is unloaded. |
-| <Link id="m-ismasked" /><code>{"private bool isMasked"}</code> |  |
-| <Link id="m-map" /><code>{"private "}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> |  |
+
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-awareicon" /><code>{"private "}<Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" awareIcon"}</code> |
+| <Link id="m-defaultstate" /><code>{"private "}<Link to="/game-api/types/alta-world/discoverystate">{"DiscoveryState"}</Link>{" defaultState"}</code> |
+| <Link id="m-discoveredicon" /><code>{"private "}<Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" discoveredIcon"}</code> |
+| <Link id="m-findaction" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" findAction"}</code> |
+| <Link id="m-ismasked" /><code>{"private bool isMasked"}</code> |
+| <Link id="m-map" /><code>{"private "}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> |
+
+</details>
 
 ## Properties
 
@@ -59,10 +67,18 @@ A point of interest that can appear on a map once a player is aware of it or has
 | <Link id="m-forcesync" /><code>{"void ForceSync()"}</code> | Asks `LandmarkManager` to resend this landmark to players. |
 | <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Server: registers the landmark on the next frame and hooks deregistering on destroy. |
 | <Link id="m-seticons" /><code>{"void SetIcons("}<Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" aware, "}<Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" discovered)"}</code> | Sets both icons at once and resyncs. |
-| <Link id="m-awareforlocal" /><code>{"private void AwareForLocal()"}</code> |  |
 | <Link id="m-destroyed" /><code>{"protected virtual void Destroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Deregisters the landmark when its entity is destroyed (not when it is only unloaded). |
-| <Link id="m-discoverforlocal" /><code>{"private void DiscoverForLocal()"}</code> |  |
 | <Link id="m-register" /><code>{"protected virtual void Register()"}</code> | Registers with `LandmarkManager` and stores the index, unless the entity is being destroyed. |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awareforlocal" /><code>{"private void AwareForLocal()"}</code> |
+| <Link id="m-discoverforlocal" /><code>{"private void DiscoverForLocal()"}</code> |
+
+</details>
 
 ## Used in
 

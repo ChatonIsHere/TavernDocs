@@ -20,17 +20,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlaceItemNoDockFirePuzzleLogicSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlaceItemNoDockFirePuzzleLogicSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-emptyoutput" /><code>{"int emptyOutput"}</code> |  |
-| <Link id="m-invalidoutput" /><code>{"int invalidOutput"}</code> |  |
-| <Link id="m-options" /><code><Link to="/game-api/types/global-p/placeitemnodockfirepuzzlelogicsavedata-option">{"PlaceItemNoDockFirePuzzleLogicSaveData.Option"}</Link>{"[] options"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-emptyoutput" /><code>{"int emptyOutput"}</code> |
+| <Link id="m-invalidoutput" /><code>{"int invalidOutput"}</code> |
+| <Link id="m-options" /><code><Link to="/game-api/types/global-p/placeitemnodockfirepuzzlelogicsavedata-option">{"PlaceItemNoDockFirePuzzleLogicSaveData.Option"}</Link>{"[] options"}</code> |
 
 ## Used in
 

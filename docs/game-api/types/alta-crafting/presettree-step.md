@@ -18,29 +18,34 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Step(uint pieceHash, int rotation)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Step(uint pieceHash, int rotation)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-attachments" /><code>{"private List<"}<Link to="/game-api/types/alta-crafting/presettree-step-attachment">{"PresetTree.Step.Attachment"}</Link>{"> attachments"}</code> |  |
-| <Link id="m-childconnectionhashes" /><code>{"private List<uint> childConnectionHashes"}</code> |  |
-| <Link id="m-childindices" /><code>{"private List<int> childIndices"}</code> |  |
-| <Link id="m-piecehash" /><code>{"private uint pieceHash"}</code> |  |
-| <Link id="m-rotation" /><code>{"private int rotation"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-attachments" /><code>{"private List<"}<Link to="/game-api/types/alta-crafting/presettree-step-attachment">{"PresetTree.Step.Attachment"}</Link>{"> attachments"}</code> |
+| <Link id="m-childconnectionhashes" /><code>{"private List<uint> childConnectionHashes"}</code> |
+| <Link id="m-childindices" /><code>{"private List<int> childIndices"}</code> |
+| <Link id="m-piecehash" /><code>{"private uint pieceHash"}</code> |
+| <Link id="m-rotation" /><code>{"private int rotation"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-attachments-2" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/presettree-step-attachment">{"PresetTree.Step.Attachment"}</Link>{"> Attachments { get; }"}</code> |  |
-| <Link id="m-childconnectionhashes-2" /><code>{"List<uint> ChildConnectionHashes { get; }"}</code> |  |
-| <Link id="m-childindices-2" /><code>{"List<int> ChildIndices { get; }"}</code> |  |
-| <Link id="m-piecehash-2" /><code>{"uint PieceHash { get; }"}</code> |  |
-| <Link id="m-rotation-2" /><code>{"int Rotation { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-attachments-2" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/presettree-step-attachment">{"PresetTree.Step.Attachment"}</Link>{"> Attachments { get; }"}</code> |
+| <Link id="m-childconnectionhashes-2" /><code>{"List<uint> ChildConnectionHashes { get; }"}</code> |
+| <Link id="m-childindices-2" /><code>{"List<int> ChildIndices { get; }"}</code> |
+| <Link id="m-piecehash-2" /><code>{"uint PieceHash { get; }"}</code> |
+| <Link id="m-rotation-2" /><code>{"int Rotation { get; }"}</code> |
 
 ## Used in
 

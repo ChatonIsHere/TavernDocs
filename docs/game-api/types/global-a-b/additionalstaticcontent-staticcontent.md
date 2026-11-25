@@ -17,28 +17,41 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StaticContent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StaticContent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isvisualonly" /><code>{"private bool isVisualOnly"}</code> |  |
-| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |  |
-| <Link id="m-localrotation" /><code>{"private Quaternion localRotation"}</code> |  |
-| <Link id="m-localscale" /><code>{"private Vector3 localScale"}</code> |  |
-| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isvisualonly" /><code>{"private bool isVisualOnly"}</code> |
+| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |
+| <Link id="m-localrotation" /><code>{"private Quaternion localRotation"}</code> |
+| <Link id="m-localscale" /><code>{"private Vector3 localScale"}</code> |
+| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instantiatecontent" /><code>{"Transform InstantiateContent(Transform parent)"}</code> |  |
-| <Link id="m-isequals" /><code>{"bool IsEquals(GameObject prefab)"}</code> |  |
-| <Link id="m-validate" /><code>{"bool Validate()"}</code> |  |
-| <Link id="m-isapproxzeroscale" /><code>{"private bool IsApproxZeroScale()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instantiatecontent" /><code>{"Transform InstantiateContent(Transform parent)"}</code> |
+| <Link id="m-isequals" /><code>{"bool IsEquals(GameObject prefab)"}</code> |
+| <Link id="m-validate" /><code>{"bool Validate()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-isapproxzeroscale" /><code>{"private bool IsApproxZeroScale()"}</code> |
+
+</details>
 
 ## Used in
 

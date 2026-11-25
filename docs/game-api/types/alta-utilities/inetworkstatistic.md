@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, `Alta.Utilities.Profiling.NetworkTransportM
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getsummary" /><code>{"string GetSummary(float statisticDuration)"}</code> |  |
-| <Link id="m-resetstatistictotals" /><code>{"void ResetStatisticTotals()"}</code> |  |
-| <Link id="m-updatevalueperframe" /><code>{"void UpdateValuePerFrame()"}</code> |  |
-| <Link id="m-updatevalueperlastsecond" /><code>{"void UpdateValuePerLastSecond()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getsummary" /><code>{"string GetSummary(float statisticDuration)"}</code> |
+| <Link id="m-resetstatistictotals" /><code>{"void ResetStatisticTotals()"}</code> |
+| <Link id="m-updatevalueperframe" /><code>{"void UpdateValuePerFrame()"}</code> |
+| <Link id="m-updatevalueperlastsecond" /><code>{"void UpdateValuePerLastSecond()"}</code> |

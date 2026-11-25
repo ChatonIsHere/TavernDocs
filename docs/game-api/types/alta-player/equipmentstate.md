@@ -21,17 +21,22 @@ Player state for the equipment (cosmetics) screen. The local player gets a custo
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EquipmentState("}<Link to="/game-api/types/alta-player/playingstate">{"PlayingState"}</Link>{" playingState)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EquipmentState("}<Link to="/game-api/types/alta-player/playingstate">{"PlayingState"}</Link>{" playingState)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activename" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" activeName"}</code> |  |
-| <Link id="m-remotedummyeffects" /><code>{"private "}<Link to="/game-api/types/global-q-r/remoteequipmentmodevisuals">{"RemoteEquipmentModeVisuals"}</Link>{" remoteDummyEffects"}</code> |  |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activename" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" activeName"}</code> |
+| <Link id="m-remotedummyeffects" /><code>{"private "}<Link to="/game-api/types/global-q-r/remoteequipmentmodevisuals">{"RemoteEquipmentModeVisuals"}</Link>{" remoteDummyEffects"}</code> |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
+
+</details>
 
 ## Properties
 
@@ -40,20 +45,36 @@ Player state for the equipment (cosmetics) screen. The local player gets a custo
 | <Link id="m-customizationroom" /><code><Link to="/game-api/types/alta-customization/equipmentcustomizationroom">{"EquipmentCustomizationRoom"}</Link>{" CustomizationRoom { get; private set; }"}</code> | The `EquipmentCustomizationRoom` spawned for the local player. |
 | <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> | "Equipment State". |
 | <Link id="m-statetype" /><code>{"override "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> | `PlayerStateType.Equipment`. |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-player/equipmentstatesettings">{"EquipmentStateSettings"}</Link>{" Settings { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-player/equipmentstatesettings">{"EquipmentStateSettings"}</Link>{" Settings { get; }"}</code> |
+
+</details>
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-validatestateactivation" /><code>{"override bool ValidateStateActivation(bool isDuringLoading)"}</code> | False while loading, true otherwise. |
-| <Link id="m-destroycustomizationdummy" /><code>{"private void DestroyCustomizationDummy()"}</code> |  |
-| <Link id="m-destroyremoteeffects" /><code>{"private void DestroyRemoteEffects(bool isAnimatingEffects)"}</code> |  |
-| <Link id="m-getdummyspawnposition" /><code>{"private Vector3 GetDummySpawnPosition()"}</code> |  |
 | <Link id="m-ondeactivate" /><code>{"protected override void OnDeactivate()"}</code> | Does nothing. |
 | <Link id="m-onplayercontrollerfound" /><code>{"protected override void OnPlayerControllerFound("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController, bool isFromOnActivate)"}</code> | Local player: spawns the room and name board and adds the back-to-playing transition. Others: spawns the remote dummy effect. |
 | <Link id="m-onplayercontrollerlost" /><code>{"protected override void OnPlayerControllerLost(bool isFromOnDeactivate)"}</code> | Removes the room or the remote effect. |
-| <Link id="m-positioninfrontofplayer" /><code>{"private void PositionInFrontOfPlayer(Transform transformToPosition)"}</code> |  |
-| <Link id="m-spawncustomizationdummy" /><code>{"private void SpawnCustomizationDummy()"}</code> |  |
-| <Link id="m-spawnremotedummyeffects" /><code>{"private void SpawnRemoteDummyEffects(bool isAnimatingEffects)"}</code> |  |
-| <Link id="m-updatenameboardposition" /><code>{"private void UpdateNameBoardPosition()"}</code> |  |
+
+<details>
+<summary>7 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroycustomizationdummy" /><code>{"private void DestroyCustomizationDummy()"}</code> |
+| <Link id="m-destroyremoteeffects" /><code>{"private void DestroyRemoteEffects(bool isAnimatingEffects)"}</code> |
+| <Link id="m-getdummyspawnposition" /><code>{"private Vector3 GetDummySpawnPosition()"}</code> |
+| <Link id="m-positioninfrontofplayer" /><code>{"private void PositionInFrontOfPlayer(Transform transformToPosition)"}</code> |
+| <Link id="m-spawncustomizationdummy" /><code>{"private void SpawnCustomizationDummy()"}</code> |
+| <Link id="m-spawnremotedummyeffects" /><code>{"private void SpawnRemoteDummyEffects(bool isAnimatingEffects)"}</code> |
+| <Link id="m-updatenameboardposition" /><code>{"private void UpdateNameBoardPosition()"}</code> |
+
+</details>

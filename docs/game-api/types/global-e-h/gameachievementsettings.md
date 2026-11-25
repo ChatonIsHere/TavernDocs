@@ -19,26 +19,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameAchievementSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameAchievementSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-achievementearneddefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" achievementEarnedDefinition"}</code> |  |
-| <Link id="m-cookfoodstat" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" cookFoodStat"}</code> |  |
-| <Link id="m-distancetravelledstat" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" distanceTravelledStat"}</code> |  |
-| <Link id="m-lightcampfirestat" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" lightCampfireStat"}</code> |  |
-| <Link id="m-receivedpostboxstat" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" receivedPostboxStat"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-achievementearneddefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" achievementEarnedDefinition"}</code> |
+| <Link id="m-cookfoodstat" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" cookFoodStat"}</code> |
+| <Link id="m-distancetravelledstat" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" distanceTravelledStat"}</code> |
+| <Link id="m-lightcampfirestat" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" lightCampfireStat"}</code> |
+| <Link id="m-receivedpostboxstat" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" receivedPostboxStat"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-achievementearneddefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" AchievementEarnedDefinition { get; }"}</code> |  |
-| <Link id="m-cookfoodstat-2" /><code><Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" CookFoodStat { get; }"}</code> |  |
-| <Link id="m-distancetravelledstat-2" /><code><Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" DistanceTravelledStat { get; }"}</code> |  |
-| <Link id="m-lightcampfirestat-2" /><code><Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" LightCampfireStat { get; }"}</code> |  |
-| <Link id="m-receivedpostboxstat-2" /><code><Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" ReceivedPostboxStat { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-achievementearneddefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" AchievementEarnedDefinition { get; }"}</code> |
+| <Link id="m-cookfoodstat-2" /><code><Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" CookFoodStat { get; }"}</code> |
+| <Link id="m-distancetravelledstat-2" /><code><Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" DistanceTravelledStat { get; }"}</code> |
+| <Link id="m-lightcampfirestat-2" /><code><Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" LightCampfireStat { get; }"}</code> |
+| <Link id="m-receivedpostboxstat-2" /><code><Link to="/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" ReceivedPostboxStat { get; }"}</code> |

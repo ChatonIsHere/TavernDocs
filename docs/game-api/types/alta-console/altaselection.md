@@ -16,16 +16,16 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaSelection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaSelection()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-current" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Current { get; set; }"}</code> |  |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-current" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Current { get; set; }"}</code> |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |
 
 ## Used in
 

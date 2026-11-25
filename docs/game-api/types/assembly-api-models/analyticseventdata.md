@@ -16,23 +16,23 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnalyticsEventData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnalyticsEventData()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-eventtype" /><code>{"string EventType { get; set; }"}</code> |  |
-| <Link id="m-ipaddress" /><code>{"string IpAddress { get; set; }"}</code> |  |
-| <Link id="m-metadata" /><code>{"Dictionary<string, object> Metadata { get; set; }"}</code> |  |
-| <Link id="m-oculusidentifier" /><code>{"string OculusIdentifier { get; set; }"}</code> |  |
-| <Link id="m-source" /><code>{"string Source { get; set; }"}</code> |  |
-| <Link id="m-time" /><code>{"DateTime Time { get; set; }"}</code> |  |
-| <Link id="m-type" /><code>{"string Type { get; set; }"}</code> |  |
-| <Link id="m-useridentifier" /><code>{"int? UserIdentifier { get; set; }"}</code> |  |
-| <Link id="m-version" /><code>{"string Version { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-eventtype" /><code>{"string EventType { get; set; }"}</code> |
+| <Link id="m-ipaddress" /><code>{"string IpAddress { get; set; }"}</code> |
+| <Link id="m-metadata" /><code>{"Dictionary<string, object> Metadata { get; set; }"}</code> |
+| <Link id="m-oculusidentifier" /><code>{"string OculusIdentifier { get; set; }"}</code> |
+| <Link id="m-source" /><code>{"string Source { get; set; }"}</code> |
+| <Link id="m-time" /><code>{"DateTime Time { get; set; }"}</code> |
+| <Link id="m-type" /><code>{"string Type { get; set; }"}</code> |
+| <Link id="m-useridentifier" /><code>{"int? UserIdentifier { get; set; }"}</code> |
+| <Link id="m-version" /><code>{"string Version { get; set; }"}</code> |
 
 ## Used in
 

@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-directional" /><code>{"Directional = 2"}</code> |  |
-| <Link id="m-disk" /><code>{"Disk = 0"}</code> |  |
-| <Link id="m-sphere" /><code>{"Sphere = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-directional" /><code>{"Directional = 2"}</code> |
+| <Link id="m-disk" /><code>{"Disk = 0"}</code> |
+| <Link id="m-sphere" /><code>{"Sphere = 1"}</code> |
 
 ## Used in
 

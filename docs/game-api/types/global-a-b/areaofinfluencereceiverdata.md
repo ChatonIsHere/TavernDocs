@@ -19,12 +19,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AreaOfInfluenceReceiverData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AreaOfInfluenceReceiverData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-correctvalues" /><code>{"int[] correctValues"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-correctvalues" /><code>{"int[] correctValues"}</code> |

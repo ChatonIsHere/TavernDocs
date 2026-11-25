@@ -16,9 +16,9 @@ A **struct** in `Root.Township`, `ATT.MicroTutorial`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-microtutorialstep" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link></code> |  |
+| Member |
+| --- |
+| <Link id="m-microtutorialstep" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link></code> |
 
 ## Used in
 

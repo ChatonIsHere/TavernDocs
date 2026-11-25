@@ -16,15 +16,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerAchievementResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerAchievementResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-achievementhashes" /><code>{"IEnumerable<uint> AchievementHashes { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-achievementhashes" /><code>{"IEnumerable<uint> AchievementHashes { get; set; }"}</code> |
 
 ## Used in
 

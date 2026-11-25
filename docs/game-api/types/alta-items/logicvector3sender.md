@@ -19,20 +19,25 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicVector3Sender()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicVector3Sender()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentvalue" /><code>{"private Vector3 currentValue"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentvalue" /><code>{"private Vector3 currentValue"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updatevalue" /><code>{"void UpdateValue(Vector3 value)"}</code> |  |
-| <Link id="m-readdatavalue" /><code>{"protected override void ReadDataValue()"}</code> |  |
-| <Link id="m-writedatavalue" /><code>{"protected override void WriteDataValue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updatevalue" /><code>{"void UpdateValue(Vector3 value)"}</code> |
+| <Link id="m-readdatavalue" /><code>{"protected override void ReadDataValue()"}</code> |
+| <Link id="m-writedatavalue" /><code>{"protected override void WriteDataValue()"}</code> |

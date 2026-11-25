@@ -16,23 +16,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LoadingScreenFactory()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LoadingScreenFactory()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-defaultloadingscreenobject" /><code>{"private AssetReference defaultLoadingScreenObject"}</code> |  |
-| <Link id="m-picoloadingscreenobject" /><code>{"private AssetReference picoLoadingScreenObject"}</code> |  |
-| <Link id="m-questloadingscreenobject" /><code>{"private AssetReference questLoadingScreenObject"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-defaultloadingscreenobject" /><code>{"private AssetReference defaultLoadingScreenObject"}</code> |
+| <Link id="m-picoloadingscreenobject" /><code>{"private AssetReference picoLoadingScreenObject"}</code> |
+| <Link id="m-questloadingscreenobject" /><code>{"private AssetReference questLoadingScreenObject"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getloadingscreenobjecthandle" /><code>{"AsyncOperationHandle<GameObject> GetLoadingScreenObjectHandle()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getloadingscreenobjecthandle" /><code>{"AsyncOperationHandle<GameObject> GetLoadingScreenObjectHandle()"}</code> |
 
 ## Used in
 

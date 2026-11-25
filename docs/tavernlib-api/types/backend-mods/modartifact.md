@@ -19,17 +19,22 @@ One build of a mod from its manifest: which targets it's for, where to download 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModArtifact()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModArtifact()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-raw" /><code>{"private JObject _raw"}</code> |  |
-| <Link id="m-keyorder" /><code>{"private static readonly string[] KeyOrder"}</code> |  |
-| <Link id="m-librarykeyorder" /><code>{"private static readonly string[] LibraryKeyOrder"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-raw" /><code>{"private JObject _raw"}</code> |
+| <Link id="m-keyorder" /><code>{"private static readonly string[] KeyOrder"}</code> |
+| <Link id="m-librarykeyorder" /><code>{"private static readonly string[] LibraryKeyOrder"}</code> |
+
+</details>
 
 ## Properties
 
@@ -49,8 +54,16 @@ One build of a mod from its manifest: which targets it's for, where to download 
 | <Link id="m-builds" /><code>{"bool Builds(string target)"}</code> | True when the build is usable and lists that target. |
 | <Link id="m-fromjson" /><code>{"static "}<Link to="/tavernlib-api/types/backend-mods/modartifact">{"ModArtifact"}</Link>{" FromJson(JToken token, string idForMsg)"}</code> | Parses one artifact. Throws `ModManagerException` when targets, `download_url`, `sha256` or the libraries are missing or malformed. |
 | <Link id="m-installname" /><code>{"string InstallName(string modId)"}</code> | The file name a `dll` build is saved as: the URL's file name if it ends in `.dll`, otherwise `<modId>.dll`. |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-reordered" /><code>{"private static JObject Reordered(JObject source, string[] order)"}</code> |  |
 | <Link id="m-torecordjson" /><code>{"internal JObject ToRecordJson()"}</code> | Internal: the artifact's original JSON with keys in the manifest's order, for writing into a mod record. |
+
+</details>
 
 ## Used in
 

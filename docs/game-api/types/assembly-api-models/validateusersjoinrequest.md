@@ -16,15 +16,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ValidateUsersJoinRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ValidateUsersJoinRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> |  |
-| <Link id="m-identitytoken" /><code>{"string IdentityToken { get; set; }"}</code> |  |
-| <Link id="m-ipaddress" /><code>{"IPAddress IpAddress { get; set; }"}</code> |  |
-| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> |
+| <Link id="m-identitytoken" /><code>{"string IdentityToken { get; set; }"}</code> |
+| <Link id="m-ipaddress" /><code>{"IPAddress IpAddress { get; set; }"}</code> |
+| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> |

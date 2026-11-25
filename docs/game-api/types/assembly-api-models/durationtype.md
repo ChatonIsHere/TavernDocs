@@ -16,11 +16,11 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-day" /><code>{"Day = 0"}</code> |  |
-| <Link id="m-month" /><code>{"Month = 1"}</code> |  |
-| <Link id="m-year" /><code>{"Year = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-day" /><code>{"Day = 0"}</code> |
+| <Link id="m-month" /><code>{"Month = 1"}</code> |
+| <Link id="m-year" /><code>{"Year = 2"}</code> |
 
 ## Used in
 

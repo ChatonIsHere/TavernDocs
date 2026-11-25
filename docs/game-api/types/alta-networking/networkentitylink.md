@@ -18,11 +18,11 @@ One slot in the entity manager's fixed table of 100,000 entity identifiers. On t
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityLink(uint index)"}</code> |  |
-| <Link id="m-ctor-2" /><code><Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"(uint index, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" previous)"}</code> |  |
-| <Link id="m-ctor-3" /><code><Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"(uint index, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" previous, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" next)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkEntityLink(uint index)"}</code> |
+| <Link id="m-ctor-2" /><code><Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"(uint index, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" previous)"}</code> |
+| <Link id="m-ctor-3" /><code><Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"(uint index, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" previous, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" next)"}</code> |
 
 ## Fields
 
@@ -41,7 +41,15 @@ One slot in the entity manager's fixed table of 100,000 entity identifiers. On t
 | <Link id="m-previousfull" /><code><Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" PreviousFull"}</code> | Previous full slot (server). |
 | <Link id="m-previousserialized" /><code><Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" PreviousSerialized"}</code> | Previous serialized slot (server). |
 | <Link id="m-serializer" /><code><Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" Serializer"}</code> | The entity's serializer, once marked serialized. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
@@ -52,8 +60,16 @@ One slot in the entity manager's fixed table of 100,000 entity identifiers. On t
 | <Link id="m-makefake" /><code>{"void MakeFake(bool isEmpty, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"[] links)"}</code> | Turns the slot into a placeholder, empty or full. |
 | <Link id="m-markfirstfakeasserialized" /><code>{"void MarkFirstFakeAsSerialized()"}</code> | Marks slot 0 as the head of the serialized list. Only valid on a fake slot. |
 | <Link id="m-markserialized" /><code>{"void MarkSerialized(bool isServer, "}<Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" serializer)"}</code> | Records the entity's serializer. On the server it also links the slot into the serialized list. |
-| <Link id="m-deregisterentity" /><code>{"private static void DeregisterEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
-| <Link id="m-registerentity" /><code>{"private static void RegisterEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-deregisterentity" /><code>{"private static void DeregisterEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
+| <Link id="m-registerentity" /><code>{"private static void RegisterEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
+
+</details>
 
 ## Used in
 

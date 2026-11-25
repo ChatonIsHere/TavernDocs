@@ -17,25 +17,30 @@ A **class** in `Root.Township`, `Alta.Networking.Internal`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClientSerializedEnumerable(SortedList<uint, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"> pairs)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClientSerializedEnumerable(SortedList<uint, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"> pairs)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isstarted" /><code>{"private bool isStarted"}</code> |  |
-| <Link id="m-pairenumerator" /><code>{"private IEnumerator<KeyValuePair<uint, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{">> pairEnumerator"}</code> |  |
-| <Link id="m-pairs" /><code>{"private SortedList<uint, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"> pairs"}</code> |  |
-| <Link id="m-tempemptyentities" /><code>{"private List<uint> tempEmptyEntities"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isstarted" /><code>{"private bool isStarted"}</code> |
+| <Link id="m-pairenumerator" /><code>{"private IEnumerator<KeyValuePair<uint, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{">> pairEnumerator"}</code> |
+| <Link id="m-pairs" /><code>{"private SortedList<uint, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"> pairs"}</code> |
+| <Link id="m-tempemptyentities" /><code>{"private List<uint> tempEmptyEntities"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-movenext" /><code>{"override bool MoveNext()"}</code> |  |
-| <Link id="m-reset" /><code>{"override void Reset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-movenext" /><code>{"override bool MoveNext()"}</code> |
+| <Link id="m-reset" /><code>{"override void Reset()"}</code> |
 
 ## Used in
 

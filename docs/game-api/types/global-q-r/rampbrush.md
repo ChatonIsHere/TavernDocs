@@ -20,9 +20,9 @@ Editor tool for terrain: strokes a ramp along control points into the terrain he
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RampBrush()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RampBrush()"}</code> |
 
 ## Fields
 
@@ -45,10 +45,18 @@ Editor tool for terrain: strokes a ramp along control points into the terrain he
 | <Link id="m-sizejitter" /><code>{"float sizeJitter"}</code> | Random variation in brush size. |
 | <Link id="m-spacingjitter" /><code>{"float spacingJitter"}</code> | Random sideways offset of each stamp, as a fraction of the brush size. |
 | <Link id="m-turnbrushonvar" /><code>{"bool turnBrushOnVar"}</code> | Whether the brush gizmo is drawn. |
-| <Link id="m-distbetweenpoints" /><code>{"private List<float> _distBetweenPoints"}</code> |  |
-| <Link id="m-totallength" /><code>{"private float _totalLength"}</code> |  |
-| <Link id="m-totallengthpixels" /><code>{"private float _totalLengthPixels"}</code> |  |
-| <Link id="m-verbose" /><code>{"private bool VERBOSE"}</code> |  |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-distbetweenpoints" /><code>{"private List<float> _distBetweenPoints"}</code> |
+| <Link id="m-totallength" /><code>{"private float _totalLength"}</code> |
+| <Link id="m-totallengthpixels" /><code>{"private float _totalLengthPixels"}</code> |
+| <Link id="m-verbose" /><code>{"private bool VERBOSE"}</code> |
+
+</details>
 
 ## Methods
 
@@ -61,6 +69,14 @@ Editor tool for terrain: strokes a ramp along control points into the terrain he
 | <Link id="m-strokepath" /><code>{"void StrokePath()"}</code> | Runs `_StrokePath`. |
 | <Link id="m-terraincordstobitmap" /><code>{"int[] terrainCordsToBitmap(TerrainData terData, Vector3 v)"}</code> | Turns terrain-local coordinates into heightmap pixel coordinates. |
 | <Link id="m-togglebrushon" /><code>{"void toggleBrushOn()"}</code> | Flips whether the brush gizmo is drawn. |
-| <Link id="m-calculatedistbetweenpoints" /><code>{"private void calculateDistBetweenPoints(List<Vector3> cps)"}</code> |  |
-| <Link id="m-calculatedistbetweenpointsinpixels" /><code>{"private void calculateDistBetweenPointsInPixels(List<Vector3> cps, TerrainData terData)"}</code> |  |
-| <Link id="m-parameterizedline" /><code>{"private Ray parameterizedLine(float t, List<Vector3> cps, StringBuilder sb = null)"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-calculatedistbetweenpoints" /><code>{"private void calculateDistBetweenPoints(List<Vector3> cps)"}</code> |
+| <Link id="m-calculatedistbetweenpointsinpixels" /><code>{"private void calculateDistBetweenPointsInPixels(List<Vector3> cps, TerrainData terData)"}</code> |
+| <Link id="m-parameterizedline" /><code>{"private Ray parameterizedLine(float t, List<Vector3> cps, StringBuilder sb = null)"}</code> |
+
+</details>

@@ -17,18 +17,23 @@ A **class** in `Root.Township`, `Alta.Progression.Skills`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ValuePerLevel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ValuePerLevel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-valueperlevel" /><code>{"private T[] valuePerLevel"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-valueperlevel" /><code>{"private T[] valuePerLevel"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getforlevel" /><code>{"T GetForLevel(int level)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getforlevel" /><code>{"T GetForLevel(int level)"}</code> |

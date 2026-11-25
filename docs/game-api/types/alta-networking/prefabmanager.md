@@ -19,26 +19,39 @@ It loads every `NetworkPrefab` under `Resources/Network Prefabs` the first time 
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-prefabmap" /><code>{"private static Dictionary<uint, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> prefabMap"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-prefabmap" /><code>{"private static Dictionary<uint, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> prefabMap"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allprefabs" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> AllPrefabs { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-allprefabs" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> AllPrefabs { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-exists" /><code>{"static bool Exists(uint hash)"}</code> |  |
-| <Link id="m-getprefab" /><code>{"static "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" GetPrefab(uint hash)"}</code> |  |
-| <Link id="m-getprefab-2" /><code>{"static "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" GetPrefab(string name)"}</code> |  |
-| <Link id="m-preparespawnsetups" /><code>{"static void PrepareSpawnSetups()"}</code> |  |
-| <Link id="m-addtoprefabmap" /><code>{"private static void AddToPrefabMap("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"[] prefabs)"}</code> |  |
-| <Link id="m-findprefabsoutoffolder" /><code>{"private static void FindPrefabsOutOfFolder("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"[] prefabs)"}</code> |  |
-| <Link id="m-removeallmaterialsandmeshesonprefabs" /><code>{"private static void RemoveAllMaterialsAndMeshesOnPrefabs()"}</code> |  |
-| <Link id="m-validateallembeddedhashes" /><code>{"private static void ValidateAllEmbeddedHashes("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"[] prefabs)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-exists" /><code>{"static bool Exists(uint hash)"}</code> |
+| <Link id="m-getprefab" /><code>{"static "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" GetPrefab(uint hash)"}</code> |
+| <Link id="m-getprefab-2" /><code>{"static "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" GetPrefab(string name)"}</code> |
+| <Link id="m-preparespawnsetups" /><code>{"static void PrepareSpawnSetups()"}</code> |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-addtoprefabmap" /><code>{"private static void AddToPrefabMap("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"[] prefabs)"}</code> |
+| <Link id="m-findprefabsoutoffolder" /><code>{"private static void FindPrefabsOutOfFolder("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"[] prefabs)"}</code> |
+| <Link id="m-removeallmaterialsandmeshesonprefabs" /><code>{"private static void RemoveAllMaterialsAndMeshesOnPrefabs()"}</code> |
+| <Link id="m-validateallembeddedhashes" /><code>{"private static void ValidateAllEmbeddedHashes("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"[] prefabs)"}</code> |
+
+</details>

@@ -16,10 +16,10 @@ A **struct** in `Root.Township`, `ATT.MicroTutorial`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-spawnpoint" /><code>{"Vector3 SpawnPoint"}</code> |  |
-| <Link id="m-tutorial" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{" Tutorial"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-spawnpoint" /><code>{"Vector3 SpawnPoint"}</code> |
+| <Link id="m-tutorial" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{" Tutorial"}</code> |
 
 ## Used in
 

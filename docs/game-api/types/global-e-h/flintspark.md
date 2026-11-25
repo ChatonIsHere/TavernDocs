@@ -17,25 +17,38 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FlintSpark()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FlintSpark()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |  |
-| <Link id="m-intensitymultiplier" /><code>{"private float intensityMultiplier"}</code> |  |
-| <Link id="m-lightcolor" /><code>{"private Gradient lightColor"}</code> |  |
-| <Link id="m-lightintensity" /><code>{"private AnimationCurve lightIntensity"}</code> |  |
-| <Link id="m-minimumintensitymultiplier" /><code>{"private float minimumIntensityMultiplier"}</code> |  |
-| <Link id="m-sparklight" /><code>{"private "}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" sparkLight"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-duration" /><code>{"private float duration"}</code> |
+| <Link id="m-intensitymultiplier" /><code>{"private float intensityMultiplier"}</code> |
+| <Link id="m-lightcolor" /><code>{"private Gradient lightColor"}</code> |
+| <Link id="m-lightintensity" /><code>{"private AnimationCurve lightIntensity"}</code> |
+| <Link id="m-minimumintensitymultiplier" /><code>{"private float minimumIntensityMultiplier"}</code> |
+| <Link id="m-sparklight" /><code>{"private "}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" sparkLight"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forcedtrigger" /><code>{"void ForcedTrigger()"}</code> |  |
-| <Link id="m-trigger" /><code>{"void Trigger("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" hit)"}</code> |  |
-| <Link id="m-updatevisual" /><code>{"private IEnumerator UpdateVisual() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-forcedtrigger" /><code>{"void ForcedTrigger()"}</code> |
+| <Link id="m-trigger" /><code>{"void Trigger("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" hit)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-updatevisual" /><code>{"private IEnumerator UpdateVisual() (iterator)"}</code> |
+
+</details>

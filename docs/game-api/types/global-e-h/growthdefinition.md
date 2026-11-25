@@ -22,16 +22,21 @@ Asset listing the stages something grows through, used by `GrowerComponent`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrowthDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrowthDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ischildingtoparentatend" /><code>{"private bool isChildingToParentAtEnd"}</code> |  |
-| <Link id="m-stages" /><code>{"private "}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{"[] stages"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ischildingtoparentatend" /><code>{"private bool isChildingToParentAtEnd"}</code> |
+| <Link id="m-stages" /><code>{"private "}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{"[] stages"}</code> |
+
+</details>
 
 ## Properties
 

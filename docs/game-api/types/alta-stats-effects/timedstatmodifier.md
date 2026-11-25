@@ -19,17 +19,25 @@ A stat modifier that removes itself after a duration, using the `Timeline`. Can 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimedStatModifier("}<Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" modifier)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"TimedStatModifier("}<Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" modifier, float duration)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimedStatModifier("}<Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" modifier)"}</code> |
+| <Link id="m-ctor-2" /><code>{"TimedStatModifier("}<Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" modifier, float duration)"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-onremoved" /><code>{"Action<"}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{"> OnRemoved"}</code> | Called when `Remove` runs. Not called when a loaded or received modifier expires, since those call the modifier's own remove. |
-| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |  |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |
+
+</details>
 
 ## Properties
 

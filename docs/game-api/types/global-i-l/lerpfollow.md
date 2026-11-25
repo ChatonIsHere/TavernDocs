@@ -18,28 +18,33 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LerpFollow()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LerpFollow()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-target" /><code>{"private Transform target"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-target" /><code>{"private Transform target"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-target-2" /><code>{"override Transform Target { get; }"}</code> |  |
-| <Link id="m-targetposition" /><code>{"protected override Vector3 TargetPosition { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-target-2" /><code>{"override Transform Target { get; }"}</code> |
+| <Link id="m-targetposition" /><code>{"protected override Vector3 TargetPosition { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-settarget" /><code>{"override void SetTarget(Transform target)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-settarget" /><code>{"override void SetTarget(Transform target)"}</code> |
 
 ## Used in
 

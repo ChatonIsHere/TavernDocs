@@ -20,9 +20,9 @@ The contents of `mod_repos.json`: the mod sources reconcile may pull from. Only 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TrustedRepos()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TrustedRepos()"}</code> |
 
 ## Properties
 

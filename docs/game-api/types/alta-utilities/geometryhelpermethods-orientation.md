@@ -17,11 +17,11 @@ An **private enum** in `Root.Township`, `Alta.Utilities`. Reach it through att-s
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-anticlockwise" /><code>{"AntiClockwise = 2"}</code> |  |
-| <Link id="m-clockwise" /><code>{"Clockwise = 1"}</code> |  |
-| <Link id="m-collinear" /><code>{"Collinear = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-anticlockwise" /><code>{"AntiClockwise = 2"}</code> |
+| <Link id="m-clockwise" /><code>{"Clockwise = 1"}</code> |
+| <Link id="m-collinear" /><code>{"Collinear = 0"}</code> |
 
 ## Used in
 

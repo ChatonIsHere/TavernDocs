@@ -17,18 +17,18 @@ A **private class** in `Root.Township`, `Alta.Caves.Displays`. Reach it through 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Point(int x, int y, Vector2 direction, float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Point(int x, int y, Vector2 direction, float value)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-direction" /><code>{"Vector2 Direction { get; private set; }"}</code> |  |
-| <Link id="m-value" /><code>{"float Value { get; private set; }"}</code> |  |
-| <Link id="m-x" /><code>{"int X { get; private set; }"}</code> |  |
-| <Link id="m-y" /><code>{"int Y { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-direction" /><code>{"Vector2 Direction { get; private set; }"}</code> |
+| <Link id="m-value" /><code>{"float Value { get; private set; }"}</code> |
+| <Link id="m-x" /><code>{"int X { get; private set; }"}</code> |
+| <Link id="m-y" /><code>{"int Y { get; private set; }"}</code> |
 
 ## Used in
 

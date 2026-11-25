@@ -16,29 +16,42 @@ A **class** in `Root.Township`, `Alta.Voice`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VivoxText(IChannelSession session)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VivoxText(IChannelSession session)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-session" /><code>{"private IChannelSession session"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-session" /><code>{"private IChannelSession session"}</code> |
+
+</details>
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-messagereceived" /><code>{"event Action<IChannelTextMessage> MessageReceived"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-messagereceived" /><code>{"event Action<IChannelTextMessage> MessageReceived"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-queue" /><code>{"IEnumerable<IChannelTextMessage> Queue() (iterator)"}</code> |  |
-| <Link id="m-send" /><code>{"async Task<bool> Send(string message)"}</code> |  |
-| <Link id="m-messagelogadded" /><code>{"private void MessageLogAdded(object sender, QueueItemAddedEventArgs<IChannelTextMessage> e)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-queue" /><code>{"IEnumerable<IChannelTextMessage> Queue() (iterator)"}</code> |
+| <Link id="m-send" /><code>{"async Task<bool> Send(string message)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-messagelogadded" /><code>{"private void MessageLogAdded(object sender, QueueItemAddedEventArgs<IChannelTextMessage> e)"}</code> |
+
+</details>
 
 ## Used in
 

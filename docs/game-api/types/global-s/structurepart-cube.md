@@ -19,23 +19,23 @@ Old per-tile side data for a `StructurePart`. Now only read in the editor to con
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Cube()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Cube()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-air" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" air"}</code> |  |
-| <Link id="m-connecttoair" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" connectToAir"}</code> |  |
-| <Link id="m-connecttosolid" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" connectToSolid"}</code> |  |
-| <Link id="m-gates" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" gates"}</code> |  |
-| <Link id="m-minimumgatesforculling" /><code>{"int minimumGatesForCulling"}</code> |  |
-| <Link id="m-solid" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" solid"}</code> |  |
-| <Link id="m-x" /><code>{"int x"}</code> |  |
-| <Link id="m-y" /><code>{"int y"}</code> |  |
-| <Link id="m-z" /><code>{"int z"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-air" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" air"}</code> |
+| <Link id="m-connecttoair" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" connectToAir"}</code> |
+| <Link id="m-connecttosolid" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" connectToSolid"}</code> |
+| <Link id="m-gates" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" gates"}</code> |
+| <Link id="m-minimumgatesforculling" /><code>{"int minimumGatesForCulling"}</code> |
+| <Link id="m-solid" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" solid"}</code> |
+| <Link id="m-x" /><code>{"int x"}</code> |
+| <Link id="m-y" /><code>{"int y"}</code> |
+| <Link id="m-z" /><code>{"int z"}</code> |
 
 ## Properties
 

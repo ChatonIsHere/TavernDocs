@@ -17,18 +17,18 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameServerAllocationSpec()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameServerAllocationSpec()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-metadata" /><code><Link to="/game-api/types/assembly-api-models/metadata">{"Metadata"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/metadata">{"Metadata"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-required" /><code><Link to="/game-api/types/assembly-api-models/gameserverallocationspec-requiredspec">{"GameServerAllocationSpec.RequiredSpec"}</Link>{" Required { get; set; }"}</code> |  |
-| <Link id="m-scheduling" /><code>{"string Scheduling { get; set; }"}</code> |  |
-| <Link id="m-selectors" /><code><Link to="/game-api/types/assembly-api-models/gameserverallocationspec-requiredspec">{"GameServerAllocationSpec.RequiredSpec"}</Link>{"[] Selectors { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-metadata" /><code><Link to="/game-api/types/assembly-api-models/metadata">{"Metadata"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/metadata">{"Metadata"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-required" /><code><Link to="/game-api/types/assembly-api-models/gameserverallocationspec-requiredspec">{"GameServerAllocationSpec.RequiredSpec"}</Link>{" Required { get; set; }"}</code> |
+| <Link id="m-scheduling" /><code>{"string Scheduling { get; set; }"}</code> |
+| <Link id="m-selectors" /><code><Link to="/game-api/types/assembly-api-models/gameserverallocationspec-requiredspec">{"GameServerAllocationSpec.RequiredSpec"}</Link>{"[] Selectors { get; set; }"}</code> |
 
 ## Used in
 

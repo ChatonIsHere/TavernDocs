@@ -18,21 +18,21 @@ A **class** in `Root.Township`, `Features.Gameplay`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OrbBasinVfxControllerSaveData1()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OrbBasinVfxControllerSaveData1()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-climbingunlockvfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" ClimbingUnlockVfxData"}</code> |  |
-| <Link id="m-orbobtainedvfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" OrbObtainedVfxData"}</code> |  |
-| <Link id="m-staminaunlockvfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" StaminaUnlockVfxData"}</code> |  |
-| <Link id="m-towercompletionvfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" TowerCompletionVfxData"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-climbingunlockvfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" ClimbingUnlockVfxData"}</code> |
+| <Link id="m-orbobtainedvfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" OrbObtainedVfxData"}</code> |
+| <Link id="m-staminaunlockvfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" StaminaUnlockVfxData"}</code> |
+| <Link id="m-towercompletionvfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" TowerCompletionVfxData"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

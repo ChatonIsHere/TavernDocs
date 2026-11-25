@@ -16,23 +16,23 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerStartArguments()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerStartArguments()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-address" /><code>{"IPAddress Address { get; set; }"}</code> |  |
-| <Link id="m-consoleport" /><code>{"int? ConsolePort { get; set; }"}</code> |  |
-| <Link id="m-gameport" /><code>{"int? GamePort { get; set; }"}</code> |  |
-| <Link id="m-isrunninglocally" /><code>{"bool IsRunningLocally { get; set; }"}</code> |  |
-| <Link id="m-localaddress" /><code>{"IPAddress LocalAddress { get; set; }"}</code> |  |
-| <Link id="m-loggingport" /><code>{"int? LoggingPort { get; set; }"}</code> |  |
-| <Link id="m-version" /><code><Link to="/game-api/types/assembly-api-models/gameversion">{"GameVersion"}</Link>{" Version { get; set; }"}</code> |  |
-| <Link id="m-webserverport" /><code>{"int? WebServerPort { get; set; }"}</code> |  |
-| <Link id="m-websocketport" /><code>{"int? WebSocketPort { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-address" /><code>{"IPAddress Address { get; set; }"}</code> |
+| <Link id="m-consoleport" /><code>{"int? ConsolePort { get; set; }"}</code> |
+| <Link id="m-gameport" /><code>{"int? GamePort { get; set; }"}</code> |
+| <Link id="m-isrunninglocally" /><code>{"bool IsRunningLocally { get; set; }"}</code> |
+| <Link id="m-localaddress" /><code>{"IPAddress LocalAddress { get; set; }"}</code> |
+| <Link id="m-loggingport" /><code>{"int? LoggingPort { get; set; }"}</code> |
+| <Link id="m-version" /><code><Link to="/game-api/types/assembly-api-models/gameversion">{"GameVersion"}</Link>{" Version { get; set; }"}</code> |
+| <Link id="m-webserverport" /><code>{"int? WebServerPort { get; set; }"}</code> |
+| <Link id="m-websocketport" /><code>{"int? WebSocketPort { get; set; }"}</code> |
 
 ## Used in
 

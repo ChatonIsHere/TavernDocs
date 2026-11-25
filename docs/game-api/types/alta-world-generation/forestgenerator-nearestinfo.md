@@ -17,17 +17,17 @@ A **struct** in `Root.Township`, `Alta.Forests`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NearestInfo(int size)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NearestInfo(int size)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-nearestdistance" /><code>{"float[] nearestDistance"}</code> |  |
-| <Link id="m-nearestedge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"[] nearestEdge"}</code> |  |
-| <Link id="m-nearestprogresses" /><code>{"float[] nearestProgresses"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-nearestdistance" /><code>{"float[] nearestDistance"}</code> |
+| <Link id="m-nearestedge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"[] nearestEdge"}</code> |
+| <Link id="m-nearestprogresses" /><code>{"float[] nearestProgresses"}</code> |
 
 ## Used in
 

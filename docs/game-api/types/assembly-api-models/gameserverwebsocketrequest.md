@@ -16,7 +16,7 @@ A **struct** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Mode
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-content" /><code>{"string content"}</code> |  |
-| <Link id="m-id" /><code>{"uint id"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-content" /><code>{"string content"}</code> |
+| <Link id="m-id" /><code>{"uint id"}</code> |

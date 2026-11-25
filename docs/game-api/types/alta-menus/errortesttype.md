@@ -16,13 +16,13 @@ An **enum** in `Root.Township`, `Alta.PlatformSpecific.Oculus`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-banned" /><code>{"BANNED = 3"}</code> |  |
-| <Link id="m-debug" /><code>{"DEBUG = 1"}</code> |  |
-| <Link id="m-none" /><code>{"NONE = 0"}</code> |  |
-| <Link id="m-private" /><code>{"PRIVATE = 2"}</code> |  |
-| <Link id="m-wrong-version" /><code>{"WRONG_VERSION = 4"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-banned" /><code>{"BANNED = 3"}</code> |
+| <Link id="m-debug" /><code>{"DEBUG = 1"}</code> |
+| <Link id="m-none" /><code>{"NONE = 0"}</code> |
+| <Link id="m-private" /><code>{"PRIVATE = 2"}</code> |
+| <Link id="m-wrong-version" /><code>{"WRONG_VERSION = 4"}</code> |
 
 ## Used in
 

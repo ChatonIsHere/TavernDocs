@@ -18,20 +18,20 @@ A **internal class** in `Root.Township`, `Alta.Heat`. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HeatSourceBaseSaveData1()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HeatSourceBaseSaveData1()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-islit" /><code>{"bool isLit"}</code> |  |
-| <Link id="m-progress" /><code>{"float progress"}</code> |  |
-| <Link id="m-time" /><code>{"float time"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-islit" /><code>{"bool isLit"}</code> |
+| <Link id="m-progress" /><code>{"float progress"}</code> |
+| <Link id="m-time" /><code>{"float time"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

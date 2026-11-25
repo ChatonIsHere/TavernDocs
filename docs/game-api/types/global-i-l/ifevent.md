@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"IfEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"IfEvent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-iffalse" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" ifFalse"}</code> |  |
-| <Link id="m-iftrue" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" ifTrue"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-iffalse" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" ifFalse"}</code> |
+| <Link id="m-iftrue" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" ifTrue"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke(bool isTrue)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invoke" /><code>{"void Invoke(bool isTrue)"}</code> |

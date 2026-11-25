@@ -16,9 +16,9 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-log" /><code>{"Log = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-log" /><code>{"Log = 0"}</code> |
 
 ## Used in
 

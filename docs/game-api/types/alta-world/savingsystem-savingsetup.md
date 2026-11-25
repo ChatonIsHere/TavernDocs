@@ -19,20 +19,25 @@ How one savable type is saved: its hash, every save data version registered with
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SavingSetup(Type topic)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SavingSetup(Type topic)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-latestsetup" /><code>{"private "}<Link to="/game-api/types/alta-world/savingsystem-versionsetup">{"SavingSystem.VersionSetup"}</Link>{" latestSetup"}</code> |  |
-| <Link id="m-latestversion" /><code>{"private uint latestVersion"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-savemethod" /><code>{"private static MethodInfo saveMethod"}</code> |  |
-| <Link id="m-typetoversion" /><code>{"private Dictionary<Type, uint> typeToVersion"}</code> |  |
-| <Link id="m-versions" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-world/savingsystem-versionsetup">{"SavingSystem.VersionSetup"}</Link>{"> versions"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-latestsetup" /><code>{"private "}<Link to="/game-api/types/alta-world/savingsystem-versionsetup">{"SavingSystem.VersionSetup"}</Link>{" latestSetup"}</code> |
+| <Link id="m-latestversion" /><code>{"private uint latestVersion"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-savemethod" /><code>{"private static MethodInfo saveMethod"}</code> |
+| <Link id="m-typetoversion" /><code>{"private Dictionary<Type, uint> typeToVersion"}</code> |
+| <Link id="m-versions" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-world/savingsystem-versionsetup">{"SavingSystem.VersionSetup"}</Link>{"> versions"}</code> |
+
+</details>
 
 ## Properties
 
@@ -55,9 +60,17 @@ How one savable type is saved: its hash, every save data version registered with
 | <Link id="m-finishinitialization" /><code>{"void FinishInitialization(Dictionary<Type, "}<Link to="/game-api/types/alta-world/savingsystem-savingsetup">{"SavingSystem.SavingSetup"}</Link>{"> map)"}</code> | Links the parent setup and builds `Save`. Logs an error if the type doesn't implement `ISavable` for its latest data type. |
 | <Link id="m-getsetup" /><code><Link to="/game-api/types/alta-world/savingsystem-versionsetup">{"SavingSystem.VersionSetup"}</Link>{" GetSetup(uint version)"}</code> | The version setup for a version number, or null. |
 | <Link id="m-getversion" /><code>{"uint GetVersion("}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" data)"}</code> | The version number of a save data object's type, or 0. |
-| <Link id="m-cast" /><code>{"private static T Cast<T>(object value)"}</code> |  |
-| <Link id="m-processinfo" /><code>{"private void ProcessInfo()"}</code> |  |
-| <Link id="m-saveinternal" /><code>{"private static "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" SaveInternal<T>(object target, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" children)"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-cast" /><code>{"private static T Cast<T>(object value)"}</code> |
+| <Link id="m-processinfo" /><code>{"private void ProcessInfo()"}</code> |
+| <Link id="m-saveinternal" /><code>{"private static "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" SaveInternal<T>(object target, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" children)"}</code> |
+
+</details>
 
 ## Used in
 

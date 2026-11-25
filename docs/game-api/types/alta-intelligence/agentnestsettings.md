@@ -18,37 +18,42 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AgentNestSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AgentNestSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animatorsleepingbool" /><code>{"private string animatorSleepingBool"}</code> |  |
-| <Link id="m-fulltired" /><code>{"private float fullTired"}</code> |  |
-| <Link id="m-maximumdistance" /><code>{"private float maximumDistance"}</code> |  |
-| <Link id="m-nonestwanderheuristic" /><code>{"private int noNestWanderHeuristic"}</code> |  |
-| <Link id="m-starttired" /><code>{"private float startTired"}</code> |  |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/nesttype">{"NestType"}</Link>{" type"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animatorsleepingbool" /><code>{"private string animatorSleepingBool"}</code> |
+| <Link id="m-fulltired" /><code>{"private float fullTired"}</code> |
+| <Link id="m-maximumdistance" /><code>{"private float maximumDistance"}</code> |
+| <Link id="m-nonestwanderheuristic" /><code>{"private int noNestWanderHeuristic"}</code> |
+| <Link id="m-starttired" /><code>{"private float startTired"}</code> |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/nesttype">{"NestType"}</Link>{" type"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animatorsleepingbool-2" /><code>{"string AnimatorSleepingBool { get; }"}</code> |  |
-| <Link id="m-fulltired-2" /><code>{"float FullTired { get; }"}</code> |  |
-| <Link id="m-maximumdistance-2" /><code>{"float MaximumDistance { get; }"}</code> |  |
-| <Link id="m-nonestwanderheuristic-2" /><code>{"int NoNestWanderHeuristic { get; }"}</code> |  |
-| <Link id="m-starttired-2" /><code>{"float StartTired { get; }"}</code> |  |
-| <Link id="m-type-2" /><code><Link to="/game-api/types/alta-intelligence/nesttype">{"NestType"}</Link>{" Type { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-animatorsleepingbool-2" /><code>{"string AnimatorSleepingBool { get; }"}</code> |
+| <Link id="m-fulltired-2" /><code>{"float FullTired { get; }"}</code> |
+| <Link id="m-maximumdistance-2" /><code>{"float MaximumDistance { get; }"}</code> |
+| <Link id="m-nonestwanderheuristic-2" /><code>{"int NoNestWanderHeuristic { get; }"}</code> |
+| <Link id="m-starttired-2" /><code>{"float StartTired { get; }"}</code> |
+| <Link id="m-type-2" /><code><Link to="/game-api/types/alta-intelligence/nesttype">{"NestType"}</Link>{" Type { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |
 
 ## Used in
 

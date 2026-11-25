@@ -21,16 +21,21 @@ A pickup that works as a key. While inside a lock it's held at the lock's positi
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"KeyItem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"KeyItem()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-colliderstodisable" /><code>{"private GameObject[] collidersToDisable"}</code> |  |
-| <Link id="m-tipoffset" /><code>{"private Vector3 tipOffset"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-colliderstodisable" /><code>{"private GameObject[] collidersToDisable"}</code> |
+| <Link id="m-tipoffset" /><code>{"private Vector3 tipOffset"}</code> |
+
+</details>
 
 ## Properties
 
@@ -48,12 +53,20 @@ A pickup that works as a key. While inside a lock it's held at the lock's positi
 | <Link id="m-assessscore" /><code>{"override bool AssessScore("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out float score)"}</code> | Can't be grabbed while the component is disabled. |
 | <Link id="m-finishinteraction" /><code>{"override void FinishInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Lets go normally, but treats a key inside a lock as mid-interaction so it stays put. |
 | <Link id="m-setcolliders" /><code>{"void SetColliders(bool enabled)"}</code> | Moves the key's set colliders to the Default layer, or to Hand Triggers to turn their collisions off. |
-| <Link id="m-deregisterik" /><code>{"private void DeRegisterIK("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
 | <Link id="m-ondisable" /><code>{"protected override void OnDisable()"}</code> | Stops following the holder's IK. |
 | <Link id="m-ondrawgizmosselected" /><code>{"protected override void OnDrawGizmosSelected()"}</code> | Draws the key's tip in the editor. |
 | <Link id="m-onenable" /><code>{"protected override void OnEnable()"}</code> | Starts following the holder's IK when grabbed. |
-| <Link id="m-registerik" /><code>{"private void RegisterIK("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-reposition" /><code>{"private void Reposition()"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-deregisterik" /><code>{"private void DeRegisterIK("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-registerik" /><code>{"private void RegisterIK("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-reposition" /><code>{"private void Reposition()"}</code> |
+
+</details>
 
 ## Used in
 

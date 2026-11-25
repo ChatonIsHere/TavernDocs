@@ -21,29 +21,34 @@ Global settings for respawn shrines: per-shrine data by GUID, tick rates, beacon
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RespawnSystemSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RespawnSystemSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activeglyphcolor" /><code>{"private Color activeGlyphColor"}</code> |  |
-| <Link id="m-fuelconsumptiontickrateinseconds" /><code>{"private float fuelConsumptionTickRateInSeconds"}</code> |  |
-| <Link id="m-inactiveglyphcolor" /><code>{"private Color inactiveGlyphColor"}</code> |  |
-| <Link id="m-isupdatingmarksonplayerjoinandleave" /><code>{"private bool isUpdatingMarksOnPlayerJoinAndLeave"}</code> |  |
-| <Link id="m-localplayersubscribermark" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" localPlayerSubscriberMark"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-maximumbeaconradius" /><code>{"private float maximumBeaconRadius"}</code> |  |
-| <Link id="m-minimumbeaconradius" /><code>{"private float minimumBeaconRadius"}</code> |  |
-| <Link id="m-minimumbeaconscreenwidth" /><code>{"private float minimumBeaconScreenWidth"}</code> |  |
-| <Link id="m-modelupdatetickrateinseconds" /><code>{"private float modelUpdateTickRateInSeconds"}</code> |  |
-| <Link id="m-remoteplayersubscribermark" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" remotePlayerSubscriberMark"}</code> |  |
-| <Link id="m-respawnshrinesettings" /><code>{"private List<"}<Link to="/game-api/types/game-other-namespaces/respawnshrinedata">{"RespawnShrineData"}</Link>{"> respawnShrineSettings"}</code> |  |
-| <Link id="m-shrinedeactivationsfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" shrineDeactivationSfx"}</code> |  |
-| <Link id="m-shrinesubscribesfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" shrineSubscribeSfx"}</code> |  |
-| <Link id="m-subscribermarkdistancefromcentre" /><code>{"private float subscriberMarkDistanceFromCentre"}</code> |  |
+<details>
+<summary>15 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activeglyphcolor" /><code>{"private Color activeGlyphColor"}</code> |
+| <Link id="m-fuelconsumptiontickrateinseconds" /><code>{"private float fuelConsumptionTickRateInSeconds"}</code> |
+| <Link id="m-inactiveglyphcolor" /><code>{"private Color inactiveGlyphColor"}</code> |
+| <Link id="m-isupdatingmarksonplayerjoinandleave" /><code>{"private bool isUpdatingMarksOnPlayerJoinAndLeave"}</code> |
+| <Link id="m-localplayersubscribermark" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" localPlayerSubscriberMark"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-maximumbeaconradius" /><code>{"private float maximumBeaconRadius"}</code> |
+| <Link id="m-minimumbeaconradius" /><code>{"private float minimumBeaconRadius"}</code> |
+| <Link id="m-minimumbeaconscreenwidth" /><code>{"private float minimumBeaconScreenWidth"}</code> |
+| <Link id="m-modelupdatetickrateinseconds" /><code>{"private float modelUpdateTickRateInSeconds"}</code> |
+| <Link id="m-remoteplayersubscribermark" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" remotePlayerSubscriberMark"}</code> |
+| <Link id="m-respawnshrinesettings" /><code>{"private List<"}<Link to="/game-api/types/game-other-namespaces/respawnshrinedata">{"RespawnShrineData"}</Link>{"> respawnShrineSettings"}</code> |
+| <Link id="m-shrinedeactivationsfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" shrineDeactivationSfx"}</code> |
+| <Link id="m-shrinesubscribesfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" shrineSubscribeSfx"}</code> |
+| <Link id="m-subscribermarkdistancefromcentre" /><code>{"private float subscriberMarkDistanceFromCentre"}</code> |
+
+</details>
 
 ## Properties
 
@@ -70,5 +75,13 @@ Global settings for respawn shrines: per-shrine data by GUID, tick rates, beacon
 | --- | --- |
 | <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/game-other-namespaces/irespawnshrinesettings">{"IRespawnShrineSettings"}</Link>{"> GetEnumerator()"}</code> | Goes through every shrine's settings. |
 | <Link id="m-getshrinesettings" /><code><Link to="/game-api/types/game-other-namespaces/irespawnshrinesettings">{"IRespawnShrineSettings"}</Link>{" GetShrineSettings(Guid shrineId)"}</code> | The settings for the shrine with this GUID. Throws if there's none. |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Goes through every shrine's settings. |
 | <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
+
+</details>

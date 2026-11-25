@@ -19,12 +19,12 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OneTimeUpgradeSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OneTimeUpgradeSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-upgradedplayeridssaved" /><code>{"int[] upgradedPlayerIDsSaved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-upgradedplayeridssaved" /><code>{"int[] upgradedPlayerIDsSaved"}</code> |

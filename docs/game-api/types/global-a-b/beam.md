@@ -18,9 +18,9 @@ One light beam cast from an `ILightEmitter`, tracking which `ILightDetector` it 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code><Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{"("}<Link to="/game-api/types/global-i-l/ilightemitter">{"ILightEmitter"}</Link>{" emitter, "}<Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{" beam)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code><Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{"("}<Link to="/game-api/types/global-i-l/ilightemitter">{"ILightEmitter"}</Link>{" emitter, "}<Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{" beam)"}</code> |
 
 ## Properties
 
@@ -39,7 +39,15 @@ One light beam cast from an `ILightEmitter`, tracking which `ILightDetector` it 
 | --- | --- |
 | <Link id="m-emit" /><code>{"void Emit(Vector3 start, Vector3 direction)"}</code> | Raycasts from a start point along a direction using the emitter's distance and mask, telling detectors when the beam starts or stops hitting them. |
 | <Link id="m-stop" /><code>{"void Stop()"}</code> | Tells the current detector the beam has left it and clears `Hit`. |
-| <Link id="m-drawray" /><code>{"private void DrawRay()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-drawray" /><code>{"private void DrawRay()"}</code> |
+
+</details>
 
 ## Used in
 

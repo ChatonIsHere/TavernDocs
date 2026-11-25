@@ -20,6 +20,11 @@ A `ping` request. Any payload with a `ping` key is answered with a `PingResponse
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ping" /><code>{"private bool Ping { get; set; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-ping" /><code>{"private bool Ping { get; set; }"}</code> |
+
+</details>

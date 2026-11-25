@@ -17,19 +17,19 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationEventData("}<Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" sample, "}<Link to="/game-api/types/alta-world-generation/populationaction">{"PopulationAction"}</Link>{" action)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationEventData("}<Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" sample, "}<Link to="/game-api/types/alta-world-generation/populationaction">{"PopulationAction"}</Link>{" action)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-action" /><code><Link to="/game-api/types/alta-world-generation/populationaction">{"PopulationAction"}</Link>{" action"}</code> |  |
-| <Link id="m-chunkidentifier" /><code>{"string chunkIdentifier"}</code> |  |
-| <Link id="m-currentpopulation" /><code>{"int currentPopulation"}</code> |  |
-| <Link id="m-maxpopulation" /><code>{"int maxPopulation"}</code> |  |
-| <Link id="m-populationname" /><code>{"string populationName"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-action" /><code><Link to="/game-api/types/alta-world-generation/populationaction">{"PopulationAction"}</Link>{" action"}</code> |
+| <Link id="m-chunkidentifier" /><code>{"string chunkIdentifier"}</code> |
+| <Link id="m-currentpopulation" /><code>{"int currentPopulation"}</code> |
+| <Link id="m-maxpopulation" /><code>{"int maxPopulation"}</code> |
+| <Link id="m-populationname" /><code>{"string populationName"}</code> |
 
 ## Used in
 

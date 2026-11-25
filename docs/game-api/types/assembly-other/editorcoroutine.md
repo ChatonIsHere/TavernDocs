@@ -17,12 +17,12 @@ A **class** in `Alta.Coroutines`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EditorCoroutine()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EditorCoroutine()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-immediate" /><code>{"static void Immediate(IEnumerator enumerator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-immediate" /><code>{"static void Immediate(IEnumerator enumerator)"}</code> |

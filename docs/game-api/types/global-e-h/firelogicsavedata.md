@@ -19,12 +19,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FireLogicSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FireLogicSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activatedbylogicsaved" /><code>{"bool activatedByLogicSaved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-activatedbylogicsaved" /><code>{"bool activatedByLogicSaved"}</code> |

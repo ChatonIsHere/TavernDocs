@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StoreRotationGraphicConfig()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StoreRotationGraphicConfig()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-brightness" /><code>{"double Brightness { get; set; }"}</code> |  |
-| <Link id="m-id" /><code>{"string Id { get; set; }"}</code> |  |
-| <Link id="m-src" /><code>{"string Src { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-brightness" /><code>{"double Brightness { get; set; }"}</code> |
+| <Link id="m-id" /><code>{"string Id { get; set; }"}</code> |
+| <Link id="m-src" /><code>{"string Src { get; set; }"}</code> |
 
 ## Used in
 

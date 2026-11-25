@@ -22,44 +22,49 @@ A material asset (iron, oak, copper and so on) that holds the heat, crafting, im
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PhysicalMaterial()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PhysicalMaterial()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-damagemultiplier" /><code>{"private float damageMultiplier"}</code> |  |
-| <Link id="m-density" /><code>{"private float density"}</code> |  |
-| <Link id="m-durabilitymultiplier" /><code>{"private float durabilityMultiplier"}</code> |  |
-| <Link id="m-effectonfullyheated" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectOnFullyHeated"}</code> |  |
-| <Link id="m-firstisdoneimpacteffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" firstIsDoneImpactEffect"}</code> |  |
-| <Link id="m-firstisdonemesheffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" firstIsDoneMeshEffect"}</code> |  |
-| <Link id="m-followingdoneimpactseffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" followingDoneImpactsEffect"}</code> |  |
-| <Link id="m-followingdonemesheffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" followingDoneMeshEffect"}</code> |  |
-| <Link id="m-forgemultiplier" /><code>{"private float forgeMultiplier"}</code> |  |
-| <Link id="m-glowingend" /><code>{"private float glowingEnd"}</code> |  |
-| <Link id="m-glowingstart" /><code>{"private float glowingStart"}</code> |  |
-| <Link id="m-hardnesslevel" /><code>{"private uint hardnessLevel"}</code> |  |
-| <Link id="m-internalthermalconductivity" /><code>{"private float internalThermalConductivity"}</code> |  |
-| <Link id="m-isshowinginlist" /><code>{"private bool isShowingInList"}</code> |  |
-| <Link id="m-material" /><code>{"private Material material"}</code> |  |
-| <Link id="m-materialchannels" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial-materialchannel">{"PhysicalMaterial.MaterialChannel"}</Link>{"[] materialChannels"}</code> |  |
-| <Link id="m-maxcraftingdamagemultiplier" /><code>{"private float maxCraftingDamageMultiplier"}</code> |  |
-| <Link id="m-maxinvalidprojectilevelocitymultiplier" /><code>{"private float maxInvalidProjectileVelocityMultiplier"}</code> |  |
-| <Link id="m-maxtemperatureforparticles" /><code>{"private float maxTemperatureForParticles"}</code> |  |
-| <Link id="m-meltingpoint" /><code>{"private float meltingPoint"}</code> |  |
-| <Link id="m-minimumprojectileweight" /><code>{"private float minimumProjectileWeight"}</code> |  |
-| <Link id="m-nailhealthmultiplier" /><code>{"private float nailHealthMultiplier"}</code> |  |
-| <Link id="m-noisemultiplier" /><code>{"private float noiseMultiplier"}</code> |  |
-| <Link id="m-nondeformingmaterial" /><code>{"private Material nonDeformingMaterial"}</code> |  |
-| <Link id="m-receivethermalconductivity" /><code>{"private float receiveThermalConductivity"}</code> |  |
-| <Link id="m-sourcematerialhash" /><code>{"private uint sourceMaterialHash"}</code> |  |
-| <Link id="m-sourcethermalconductivity" /><code>{"private float sourceThermalConductivity"}</code> |  |
-| <Link id="m-tightnessbowimpact" /><code>{"private float tightnessBowImpact"}</code> |  |
-| <Link id="m-tightnessmultiplier" /><code>{"private float tightnessMultiplier"}</code> |  |
-| <Link id="m-weightmultiplier" /><code>{"private float weightMultiplier"}</code> |  |
+<details>
+<summary>30 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-damagemultiplier" /><code>{"private float damageMultiplier"}</code> |
+| <Link id="m-density" /><code>{"private float density"}</code> |
+| <Link id="m-durabilitymultiplier" /><code>{"private float durabilityMultiplier"}</code> |
+| <Link id="m-effectonfullyheated" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectOnFullyHeated"}</code> |
+| <Link id="m-firstisdoneimpacteffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" firstIsDoneImpactEffect"}</code> |
+| <Link id="m-firstisdonemesheffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" firstIsDoneMeshEffect"}</code> |
+| <Link id="m-followingdoneimpactseffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" followingDoneImpactsEffect"}</code> |
+| <Link id="m-followingdonemesheffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" followingDoneMeshEffect"}</code> |
+| <Link id="m-forgemultiplier" /><code>{"private float forgeMultiplier"}</code> |
+| <Link id="m-glowingend" /><code>{"private float glowingEnd"}</code> |
+| <Link id="m-glowingstart" /><code>{"private float glowingStart"}</code> |
+| <Link id="m-hardnesslevel" /><code>{"private uint hardnessLevel"}</code> |
+| <Link id="m-internalthermalconductivity" /><code>{"private float internalThermalConductivity"}</code> |
+| <Link id="m-isshowinginlist" /><code>{"private bool isShowingInList"}</code> |
+| <Link id="m-material" /><code>{"private Material material"}</code> |
+| <Link id="m-materialchannels" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial-materialchannel">{"PhysicalMaterial.MaterialChannel"}</Link>{"[] materialChannels"}</code> |
+| <Link id="m-maxcraftingdamagemultiplier" /><code>{"private float maxCraftingDamageMultiplier"}</code> |
+| <Link id="m-maxinvalidprojectilevelocitymultiplier" /><code>{"private float maxInvalidProjectileVelocityMultiplier"}</code> |
+| <Link id="m-maxtemperatureforparticles" /><code>{"private float maxTemperatureForParticles"}</code> |
+| <Link id="m-meltingpoint" /><code>{"private float meltingPoint"}</code> |
+| <Link id="m-minimumprojectileweight" /><code>{"private float minimumProjectileWeight"}</code> |
+| <Link id="m-nailhealthmultiplier" /><code>{"private float nailHealthMultiplier"}</code> |
+| <Link id="m-noisemultiplier" /><code>{"private float noiseMultiplier"}</code> |
+| <Link id="m-nondeformingmaterial" /><code>{"private Material nonDeformingMaterial"}</code> |
+| <Link id="m-receivethermalconductivity" /><code>{"private float receiveThermalConductivity"}</code> |
+| <Link id="m-sourcematerialhash" /><code>{"private uint sourceMaterialHash"}</code> |
+| <Link id="m-sourcethermalconductivity" /><code>{"private float sourceThermalConductivity"}</code> |
+| <Link id="m-tightnessbowimpact" /><code>{"private float tightnessBowImpact"}</code> |
+| <Link id="m-tightnessmultiplier" /><code>{"private float tightnessMultiplier"}</code> |
+| <Link id="m-weightmultiplier" /><code>{"private float weightMultiplier"}</code> |
+
+</details>
 
 ## Properties
 
@@ -101,7 +106,15 @@ A material asset (iron, oak, copper and so on) that holds the heat, crafting, im
 | <Link id="m-getnonatlasednondeformingmaterial" /><code>{"Material GetNonAtlasedNonDeformingMaterial("}<Link to="/game-api/types/global-p/physicalmaterialchannel">{"PhysicalMaterialChannel"}</Link>{" channel)"}</code> | Returns the plain non-deforming render material for a channel, without the atlas offset. |
 | <Link id="m-getnondeformingmaterial" /><code><Link to="/game-api/types/alta-utilities/materialrect">{"MaterialRect"}</Link>{" GetNonDeformingMaterial("}<Link to="/game-api/types/global-p/physicalmaterialchannel">{"PhysicalMaterialChannel"}</Link>{" channel)"}</code> | Returns the atlased non-deforming material for a channel as a `MaterialRect` (atlas material plus offset and scale). |
 | <Link id="m-setup" /><code>{"bool Setup("}<Link to="/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{" definition)"}</code> | Editor/build: fills in atlas offsets for each channel from an `AtlasDefinition`. Returns true if any channel matched. |
-| <Link id="m-getchannel" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial-materialchannel">{"PhysicalMaterial.MaterialChannel"}</Link>{" GetChannel(int index)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getchannel" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial-materialchannel">{"PhysicalMaterial.MaterialChannel"}</Link>{" GetChannel(int index)"}</code> |
+
+</details>
 
 ## Used in
 

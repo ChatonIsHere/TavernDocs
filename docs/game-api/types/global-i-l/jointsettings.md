@@ -16,36 +16,41 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JointSettings(ConfigurableJoint joint)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JointSettings(ConfigurableJoint joint)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angularxlimitspring" /><code>{"private SoftJointLimitSpring angularXLimitSpring"}</code> |  |
-| <Link id="m-angularxmotion" /><code>{"private ConfigurableJointMotion angularXMotion"}</code> |  |
-| <Link id="m-angularyzdrive" /><code>{"private JointDrive angularYZDrive"}</code> |  |
-| <Link id="m-autoconfigureconnectedanchor" /><code>{"private bool autoConfigureConnectedAnchor"}</code> |  |
-| <Link id="m-axis" /><code>{"private Vector3 axis"}</code> |  |
-| <Link id="m-connectedanchor" /><code>{"private Vector3 connectedAnchor"}</code> |  |
-| <Link id="m-connectedbody" /><code>{"private Rigidbody connectedBody"}</code> |  |
-| <Link id="m-highangularxlimit" /><code>{"private SoftJointLimit highAngularXLimit"}</code> |  |
-| <Link id="m-linearlimit" /><code>{"private SoftJointLimit linearLimit"}</code> |  |
-| <Link id="m-linearlimitspring" /><code>{"private SoftJointLimitSpring linearLimitSpring"}</code> |  |
-| <Link id="m-lowangularxlimit" /><code>{"private SoftJointLimit lowAngularXLimit"}</code> |  |
-| <Link id="m-secondaryaxis" /><code>{"private Vector3 secondaryAxis"}</code> |  |
-| <Link id="m-targetobject" /><code>{"private GameObject targetObject"}</code> |  |
-| <Link id="m-xmotion" /><code>{"private ConfigurableJointMotion xMotion"}</code> |  |
-| <Link id="m-ymotion" /><code>{"private ConfigurableJointMotion yMotion"}</code> |  |
-| <Link id="m-zmotion" /><code>{"private ConfigurableJointMotion zMotion"}</code> |  |
+<details>
+<summary>16 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-angularxlimitspring" /><code>{"private SoftJointLimitSpring angularXLimitSpring"}</code> |
+| <Link id="m-angularxmotion" /><code>{"private ConfigurableJointMotion angularXMotion"}</code> |
+| <Link id="m-angularyzdrive" /><code>{"private JointDrive angularYZDrive"}</code> |
+| <Link id="m-autoconfigureconnectedanchor" /><code>{"private bool autoConfigureConnectedAnchor"}</code> |
+| <Link id="m-axis" /><code>{"private Vector3 axis"}</code> |
+| <Link id="m-connectedanchor" /><code>{"private Vector3 connectedAnchor"}</code> |
+| <Link id="m-connectedbody" /><code>{"private Rigidbody connectedBody"}</code> |
+| <Link id="m-highangularxlimit" /><code>{"private SoftJointLimit highAngularXLimit"}</code> |
+| <Link id="m-linearlimit" /><code>{"private SoftJointLimit linearLimit"}</code> |
+| <Link id="m-linearlimitspring" /><code>{"private SoftJointLimitSpring linearLimitSpring"}</code> |
+| <Link id="m-lowangularxlimit" /><code>{"private SoftJointLimit lowAngularXLimit"}</code> |
+| <Link id="m-secondaryaxis" /><code>{"private Vector3 secondaryAxis"}</code> |
+| <Link id="m-targetobject" /><code>{"private GameObject targetObject"}</code> |
+| <Link id="m-xmotion" /><code>{"private ConfigurableJointMotion xMotion"}</code> |
+| <Link id="m-ymotion" /><code>{"private ConfigurableJointMotion yMotion"}</code> |
+| <Link id="m-zmotion" /><code>{"private ConfigurableJointMotion zMotion"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"ConfigurableJoint Apply()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"ConfigurableJoint Apply()"}</code> |
 
 ## Used in
 

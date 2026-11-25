@@ -16,12 +16,12 @@ An **enum** in `Root.Township`, `Alta.Populations`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"Initialize = 0"}</code> |  |
-| <Link id="m-lost" /><code>{"Lost = 3"}</code> |  |
-| <Link id="m-spawned" /><code>{"Spawned = 2"}</code> |  |
-| <Link id="m-update" /><code>{"Update = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"Initialize = 0"}</code> |
+| <Link id="m-lost" /><code>{"Lost = 3"}</code> |
+| <Link id="m-spawned" /><code>{"Spawned = 2"}</code> |
+| <Link id="m-update" /><code>{"Update = 1"}</code> |
 
 ## Used in
 

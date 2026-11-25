@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChangePasswordRequest(string oldPasswordHash, string newPasswordHash)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ChangePasswordRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChangePasswordRequest(string oldPasswordHash, string newPasswordHash)"}</code> |
+| <Link id="m-ctor-2" /><code>{"ChangePasswordRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-newpasswordhash" /><code>{"string NewPasswordHash { get; private set; }"}</code> |  |
-| <Link id="m-oldpasswordhash" /><code>{"string OldPasswordHash { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-newpasswordhash" /><code>{"string NewPasswordHash { get; private set; }"}</code> |
+| <Link id="m-oldpasswordhash" /><code>{"string OldPasswordHash { get; private set; }"}</code> |
 
 ## Used in
 

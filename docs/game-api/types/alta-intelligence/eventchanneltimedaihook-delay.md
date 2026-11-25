@@ -17,24 +17,32 @@ A **private class** in `Root.Township`, `Alta.Intelligence`. Reach it through at
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Delay()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Delay()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-delay" /><code>{"float delay"}</code> |  |
-| <Link id="m-started" /><code><Link to="/game-api/types/alta-intelligence/hookeventchannel">{"HookEventChannel"}</Link>{" started"}</code> |  |
-| <Link id="m-entries" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{", "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{"> entries"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-delay" /><code>{"float delay"}</code> |
+| <Link id="m-started" /><code><Link to="/game-api/types/alta-intelligence/hookeventchannel">{"HookEventChannel"}</Link>{" started"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-entries" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{", "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{"> entries"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cancel" /><code>{"void Cancel("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" action)"}</code> |  |
-| <Link id="m-start" /><code>{"void Start("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" action)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cancel" /><code>{"void Cancel("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" action)"}</code> |
+| <Link id="m-start" /><code>{"void Start("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" action)"}</code> |
 
 ## Used in
 

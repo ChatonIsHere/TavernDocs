@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-random" /><code>{"Random = 1"}</code> |  |
-| <Link id="m-sequence" /><code>{"Sequence = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-random" /><code>{"Random = 1"}</code> |
+| <Link id="m-sequence" /><code>{"Sequence = 0"}</code> |
 
 ## Used in
 

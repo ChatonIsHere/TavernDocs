@@ -20,19 +20,24 @@ Action settings for a burrowed wyrm coming up when a target is close (`ActiveEme
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WyrmEmergeSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WyrmEmergeSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animatedbool" /><code>{"private string animatedBool"}</code> |  |
-| <Link id="m-chance" /><code>{"private float chance"}</code> |  |
-| <Link id="m-changesensedelay" /><code>{"private float changeSenseDelay"}</code> |  |
-| <Link id="m-emergedsenses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] emergedSenses"}</code> |  |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animatedbool" /><code>{"private string animatedBool"}</code> |
+| <Link id="m-chance" /><code>{"private float chance"}</code> |
+| <Link id="m-changesensedelay" /><code>{"private float changeSenseDelay"}</code> |
+| <Link id="m-emergedsenses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] emergedSenses"}</code> |
+| <Link id="m-radius" /><code>{"private float radius"}</code> |
+
+</details>
 
 ## Properties
 

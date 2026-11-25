@@ -17,18 +17,23 @@ A **class** in `Alta.MenuItem`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaMenuItemBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaMenuItemBase()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-menuitems" /><code>{"private static readonly Dictionary<Type, "}<Link to="/game-api/types/assembly-other/altamenuitem">{"AltaMenuItem"}</Link>{"> menuItems"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-menuitems" /><code>{"private static readonly Dictionary<Type, "}<Link to="/game-api/types/assembly-other/altamenuitem">{"AltaMenuItem"}</Link>{"> menuItems"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getitem" /><code>{"static "}<Link to="/game-api/types/assembly-other/altamenuitem">{"AltaMenuItem"}</Link>{" GetItem<T>()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getitem" /><code>{"static "}<Link to="/game-api/types/assembly-other/altamenuitem">{"AltaMenuItem"}</Link>{" GetItem<T>()"}</code> |

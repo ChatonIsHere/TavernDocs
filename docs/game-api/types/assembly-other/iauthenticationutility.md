@@ -17,13 +17,13 @@ An **interface** in `Alta.Authentication`, `Alta.Authentication`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loginwithcommandlineargumentsasync" /><code>{"Task<IResult<bool>> LoginWithCommandLineArgumentsAsync()"}</code> |  |
-| <Link id="m-loginwithcommandlinetokensasync" /><code>{"Task<IResult> LoginWithCommandLineTokensAsync()"}</code> |  |
-| <Link id="m-loginwithoauthasync" /><code>{"Task<IResult> LoginWithOAuthAsync(string clientId, string clientSecret, string clientScopes)"}</code> |  |
-| <Link id="m-loginwithrefreshtokenasync" /><code>{"Task<IResult> LoginWithRefreshTokenAsync()"}</code> |  |
-| <Link id="m-loginwithuserpassasync" /><code>{"Task<IResult> LoginWithUserPassAsync(string username, string password)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-loginwithcommandlineargumentsasync" /><code>{"Task<IResult<bool>> LoginWithCommandLineArgumentsAsync()"}</code> |
+| <Link id="m-loginwithcommandlinetokensasync" /><code>{"Task<IResult> LoginWithCommandLineTokensAsync()"}</code> |
+| <Link id="m-loginwithoauthasync" /><code>{"Task<IResult> LoginWithOAuthAsync(string clientId, string clientSecret, string clientScopes)"}</code> |
+| <Link id="m-loginwithrefreshtokenasync" /><code>{"Task<IResult> LoginWithRefreshTokenAsync()"}</code> |
+| <Link id="m-loginwithuserpassasync" /><code>{"Task<IResult> LoginWithUserPassAsync(string username, string password)"}</code> |
 
 ## Used in
 

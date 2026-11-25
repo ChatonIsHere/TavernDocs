@@ -20,9 +20,9 @@ A river segment between two `RiverNode`s in the forest generator, with its splin
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RiverPath("}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" from, "}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" to)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RiverPath("}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" from, "}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" to)"}</code> |
 
 ## Properties
 
@@ -48,7 +48,15 @@ A river segment between two `RiverNode`s in the forest generator, with its splin
 | <Link id="m-disableriver" /><code>{"void DisableRiver("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Hides the river mesh. Hooked to the chunk unloading. |
 | <Link id="m-enableriver" /><code>{"void EnableRiver("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Shows the river mesh. Hooked to the chunk finishing loading. |
 | <Link id="m-ondestroy" /><code>{"void OnDestroy()"}</code> | Unhooks the mesh from the chunk's load and unload events. |
-| <Link id="m-foreach" /><code>{"internal void ForEach(Func<object, object> p)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-foreach" /><code>{"internal void ForEach(Func<object, object> p)"}</code> |
+
+</details>
 
 ## Used in
 

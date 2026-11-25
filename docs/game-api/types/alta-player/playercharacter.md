@@ -21,38 +21,43 @@ The player's body in the world: the `PlayerController` used for normal play, wit
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerCharacter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerCharacter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-backdocks" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" backDocks"}</code> |  |
-| <Link id="m-beltdocks" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" beltDocks"}</code> |  |
-| <Link id="m-bodycollidergroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" bodyColliderGroup"}</code> |  |
-| <Link id="m-bodycontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/bodycontroller">{"BodyController"}</Link>{" bodyController"}</code> |  |
-| <Link id="m-currentrotate" /><code>{"private Coroutine currentRotate"}</code> |  |
-| <Link id="m-currentscaling" /><code>{"private Coroutine currentScaling"}</code> |  |
-| <Link id="m-currenttranslate" /><code>{"private Coroutine currentTranslate"}</code> |  |
-| <Link id="m-customizationhandler" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" customizationHandler"}</code> |  |
-| <Link id="m-dockpositioncontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/dockpositioncontroller">{"DockPositionController"}</Link>{" dockPositionController"}</code> |  |
-| <Link id="m-dummy" /><code>{"private "}<Link to="/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" dummy"}</code> |  |
-| <Link id="m-headfollow" /><code>{"private Transform headFollow"}</code> |  |
-| <Link id="m-ikcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/characterikcontroller">{"CharacterIKController"}</Link>{" ikController"}</code> |  |
-| <Link id="m-isfadingonmove" /><code>{"private bool isFadingOnMove"}</code> |  |
-| <Link id="m-localitycontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/characterlocalitycontroller">{"CharacterLocalityController"}</Link>{" localityController"}</code> |  |
-| <Link id="m-minimumdistancefortrail" /><code>{"private float minimumDistanceForTrail"}</code> |  |
-| <Link id="m-moveduration" /><code>{"private float moveDuration"}</code> |  |
-| <Link id="m-nonbakedcharacterrenderer" /><code>{"private Renderer nonBakedCharacterRenderer"}</code> |  |
-| <Link id="m-nonbakedcharacterrendererpivot" /><code>{"private Transform nonBakedCharacterRendererPivot"}</code> |  |
-| <Link id="m-rigidbodies" /><code>{"private "}<Link to="/game-api/types/global-q-r/rigidbodycollection">{"RigidbodyCollection"}</Link>{" rigidbodies"}</code> |  |
-| <Link id="m-scalevelocity" /><code>{"private float scaleVelocity"}</code> |  |
-| <Link id="m-specialeffectscontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playerspecialeffectscontroller">{"PlayerSpecialEffectsController"}</Link>{" specialEffectsController"}</code> |  |
-| <Link id="m-teleportertrail" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" teleporterTrail"}</code> |  |
-| <Link id="m-teleportstyle" /><code>{"private "}<Link to="/game-api/types/alta-player/locomotionstyle">{"LocomotionStyle"}</Link>{" teleportStyle"}</code> |  |
-| <Link id="m-translatevelocity" /><code>{"private Vector3 translateVelocity"}</code> |  |
+<details>
+<summary>24 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-backdocks" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" backDocks"}</code> |
+| <Link id="m-beltdocks" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" beltDocks"}</code> |
+| <Link id="m-bodycollidergroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" bodyColliderGroup"}</code> |
+| <Link id="m-bodycontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/bodycontroller">{"BodyController"}</Link>{" bodyController"}</code> |
+| <Link id="m-currentrotate" /><code>{"private Coroutine currentRotate"}</code> |
+| <Link id="m-currentscaling" /><code>{"private Coroutine currentScaling"}</code> |
+| <Link id="m-currenttranslate" /><code>{"private Coroutine currentTranslate"}</code> |
+| <Link id="m-customizationhandler" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" customizationHandler"}</code> |
+| <Link id="m-dockpositioncontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/dockpositioncontroller">{"DockPositionController"}</Link>{" dockPositionController"}</code> |
+| <Link id="m-dummy" /><code>{"private "}<Link to="/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" dummy"}</code> |
+| <Link id="m-headfollow" /><code>{"private Transform headFollow"}</code> |
+| <Link id="m-ikcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/characterikcontroller">{"CharacterIKController"}</Link>{" ikController"}</code> |
+| <Link id="m-isfadingonmove" /><code>{"private bool isFadingOnMove"}</code> |
+| <Link id="m-localitycontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/characterlocalitycontroller">{"CharacterLocalityController"}</Link>{" localityController"}</code> |
+| <Link id="m-minimumdistancefortrail" /><code>{"private float minimumDistanceForTrail"}</code> |
+| <Link id="m-moveduration" /><code>{"private float moveDuration"}</code> |
+| <Link id="m-nonbakedcharacterrenderer" /><code>{"private Renderer nonBakedCharacterRenderer"}</code> |
+| <Link id="m-nonbakedcharacterrendererpivot" /><code>{"private Transform nonBakedCharacterRendererPivot"}</code> |
+| <Link id="m-rigidbodies" /><code>{"private "}<Link to="/game-api/types/global-q-r/rigidbodycollection">{"RigidbodyCollection"}</Link>{" rigidbodies"}</code> |
+| <Link id="m-scalevelocity" /><code>{"private float scaleVelocity"}</code> |
+| <Link id="m-specialeffectscontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playerspecialeffectscontroller">{"PlayerSpecialEffectsController"}</Link>{" specialEffectsController"}</code> |
+| <Link id="m-teleportertrail" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" teleporterTrail"}</code> |
+| <Link id="m-teleportstyle" /><code>{"private "}<Link to="/game-api/types/alta-player/locomotionstyle">{"LocomotionStyle"}</Link>{" teleportStyle"}</code> |
+| <Link id="m-translatevelocity" /><code>{"private Vector3 translateVelocity"}</code> |
+
+</details>
 
 ## Properties
 
@@ -78,8 +83,16 @@ The player's body in the world: the `PlayerController` used for normal play, wit
 | <Link id="m-rigidbodies-2" /><code><Link to="/game-api/types/global-q-r/rigidbodycollection">{"RigidbodyCollection"}</Link>{" Rigidbodies { get; }"}</code> | The body's rigidbodies. |
 | <Link id="m-specialeffectscontroller-2" /><code><Link to="/game-api/types/global-p/playerspecialeffectscontroller">{"PlayerSpecialEffectsController"}</Link>{" SpecialEffectsController { get; }"}</code> | Plays special effects on the body. |
 | <Link id="m-teleportstyle-2" /><code><Link to="/game-api/types/alta-player/locomotionstyle">{"LocomotionStyle"}</Link>{" TeleportStyle { get; set; }"}</code> | Locomotion style for teleports. Settable; nothing else in this build reads it. |
-| <Link id="m-ihasfingertips-fingertips" /><code>{"private "}<Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" IHasFingertips.FingerTips { get; }"}</code> |  |
 | <Link id="m-savemode" /><code>{"protected override "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" { get; }"}</code> | Always `SaveMode.Player`: saved with the player save, not with a chunk. |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-ihasfingertips-fingertips" /><code>{"private "}<Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" IHasFingertips.FingerTips { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -97,13 +110,21 @@ The player's body in the world: the `PlayerController` used for normal play, wit
 | <Link id="m-saveto" /><code>{"override void SaveTo("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> | Writes the body's network prefab data (docks, held items and so on) into the player save. |
 | <Link id="m-unlinkfromplayer" /><code>{"override void UnlinkFromPlayer()"}</code> | Destroys the customization handler and stops listening for armed changes before the base unlink. |
 | <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Sets up health, creates the `Inventory`, grabs the body animator and hooks dock placement to the body type once cosmetics are packed. |
-| <Link id="m-onarmedchanged" /><code>{"private void OnArmedChanged(bool isArmed)"}</code> |  |
 | <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> | Destroys the customization handler with the body. |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-onlinkedtoplayer" /><code>{"private void OnLinkedToPlayer()"}</code> |  |
-| <Link id="m-setupdocksbasedonbodytype" /><code>{"private void SetupDocksBasedOnBodyType()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
-| <Link id="m-updateik" /><code>{"private IEnumerator UpdateIK() (iterator)"}</code> |  |
+
+<details>
+<summary>6 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onarmedchanged" /><code>{"private void OnArmedChanged(bool isArmed)"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-onlinkedtoplayer" /><code>{"private void OnLinkedToPlayer()"}</code> |
+| <Link id="m-setupdocksbasedonbodytype" /><code>{"private void SetupDocksBasedOnBodyType()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| <Link id="m-updateik" /><code>{"private IEnumerator UpdateIK() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

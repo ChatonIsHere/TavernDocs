@@ -21,21 +21,26 @@ Settings asset for a two-part particle effect: particles that spawn, fly to a de
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VfxData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VfxData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-particleacceleration" /><code>{"private float particleAcceleration"}</code> |  |
-| <Link id="m-particledestination" /><code>{"private "}<Link to="/game-api/types/global-p/particledestination">{"ParticleDestination"}</Link>{" particleDestination"}</code> |  |
-| <Link id="m-particlesonarrival" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" particlesOnArrival"}</code> |  |
-| <Link id="m-particlespeed" /><code>{"private float particleSpeed"}</code> |  |
-| <Link id="m-particlestotransform" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" particlesToTransform"}</code> |  |
-| <Link id="m-shouldplayvfx" /><code>{"private bool shouldPlayVFX"}</code> |  |
-| <Link id="m-timetostartmoving" /><code>{"private float timeToStartMoving"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-particleacceleration" /><code>{"private float particleAcceleration"}</code> |
+| <Link id="m-particledestination" /><code>{"private "}<Link to="/game-api/types/global-p/particledestination">{"ParticleDestination"}</Link>{" particleDestination"}</code> |
+| <Link id="m-particlesonarrival" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" particlesOnArrival"}</code> |
+| <Link id="m-particlespeed" /><code>{"private float particleSpeed"}</code> |
+| <Link id="m-particlestotransform" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" particlesToTransform"}</code> |
+| <Link id="m-shouldplayvfx" /><code>{"private bool shouldPlayVFX"}</code> |
+| <Link id="m-timetostartmoving" /><code>{"private float timeToStartMoving"}</code> |
+
+</details>
 
 ## Properties
 

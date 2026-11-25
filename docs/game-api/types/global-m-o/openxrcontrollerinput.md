@@ -17,27 +17,35 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OpenXRControllerInput()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OpenXRControllerInput()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-istouchingthumb" /><code>{"bool isTouchingThumb"}</code> |  |
-| <Link id="m-istouchingtrigger" /><code>{"bool isTouchingTrigger"}</code> |  |
-| <Link id="m-longphotoispressed" /><code>{"bool longPhotoIsPressed"}</code> |  |
-| <Link id="m-pose" /><code>{"PoseState pose"}</code> |  |
-| <Link id="m-doubletapspeed" /><code>{"private const float doubleTapSpeed"}</code> |  |
-| <Link id="m-doubletaptarget" /><code>{"private float doubleTapTarget"}</code> |  |
-| <Link id="m-wastapping" /><code>{"private bool wasTapping"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-istouchingthumb" /><code>{"bool isTouchingThumb"}</code> |
+| <Link id="m-istouchingtrigger" /><code>{"bool isTouchingTrigger"}</code> |
+| <Link id="m-longphotoispressed" /><code>{"bool longPhotoIsPressed"}</code> |
+| <Link id="m-pose" /><code>{"PoseState pose"}</code> |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-doubletapspeed" /><code>{"private const float doubleTapSpeed"}</code> |
+| <Link id="m-doubletaptarget" /><code>{"private float doubleTapTarget"}</code> |
+| <Link id="m-wastapping" /><code>{"private bool wasTapping"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-calculatedoubletap" /><code>{"void CalculateDoubleTap(bool isTapping)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-calculatedoubletap" /><code>{"void CalculateDoubleTap(bool isTapping)"}</code> |
 
 ## Used in
 

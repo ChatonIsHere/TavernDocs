@@ -16,11 +16,11 @@ An **enum** in `Alta.Platform`, `Alta.Platform`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-multiuse" /><code>{"MultiUse = 2"}</code> |  |
-| <Link id="m-notsupported" /><code>{"NotSupported = 0"}</code> |  |
-| <Link id="m-singleuse" /><code>{"SingleUse = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-multiuse" /><code>{"MultiUse = 2"}</code> |
+| <Link id="m-notsupported" /><code>{"NotSupported = 0"}</code> |
+| <Link id="m-singleuse" /><code>{"SingleUse = 1"}</code> |
 
 ## Used in
 

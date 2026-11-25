@@ -20,17 +20,22 @@ Base for a hand camera view that switches its camera off while something is in t
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected BlockableCamera()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected BlockableCamera()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-postprocesslayer" /><code>{"private PostProcessLayer postProcessLayer"}</code> |  |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcamerasettings">{"HandCameraSettings"}</Link>{" settings"}</code> |  |
-| <Link id="m-targetcamera" /><code>{"private Camera targetCamera"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-postprocesslayer" /><code>{"private PostProcessLayer postProcessLayer"}</code> |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcamerasettings">{"HandCameraSettings"}</Link>{" settings"}</code> |
+| <Link id="m-targetcamera" /><code>{"private Camera targetCamera"}</code> |
+
+</details>
 
 ## Properties
 

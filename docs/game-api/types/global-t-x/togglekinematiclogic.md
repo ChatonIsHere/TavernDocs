@@ -17,23 +17,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ToggleKinematicLogic()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ToggleKinematicLogic()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-kinematicoff" /><code>{"void KinematicOff()"}</code> |  |
-| <Link id="m-kinematicon" /><code>{"void KinematicOn()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-kinematicoff" /><code>{"void KinematicOff()"}</code> |
+| <Link id="m-kinematicon" /><code>{"void KinematicOn()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>
 
 ## Used in
 

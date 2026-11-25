@@ -17,12 +17,12 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-box" /><code>{"Box = 3"}</code> |  |
-| <Link id="m-convexboxes" /><code>{"ConvexBoxes = 1"}</code> |  |
-| <Link id="m-convexhull" /><code>{"ConvexHull = 2"}</code> |  |
-| <Link id="m-raw" /><code>{"Raw = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-box" /><code>{"Box = 3"}</code> |
+| <Link id="m-convexboxes" /><code>{"ConvexBoxes = 1"}</code> |
+| <Link id="m-convexhull" /><code>{"ConvexHull = 2"}</code> |
+| <Link id="m-raw" /><code>{"Raw = 0"}</code> |
 
 ## Used in
 

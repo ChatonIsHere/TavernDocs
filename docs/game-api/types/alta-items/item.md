@@ -23,45 +23,50 @@ The item asset behind a pickup: tags, weight, stacking, dock placement, sounds, 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Item()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-components" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/itemcomponent">{"ItemComponent"}</Link>{"> components"}</code> |  |
-| <Link id="m-custompositions" /><code>{"private "}<Link to="/game-api/types/alta-items/item-customdockpositioning">{"Item.CustomDockPositioning"}</Link>{"[] customPositions"}</code> |  |
-| <Link id="m-custompositionswhencrafted" /><code>{"private "}<Link to="/game-api/types/alta-items/item-customdockpositioning">{"Item.CustomDockPositioning"}</Link>{"[] customPositionsWhenCrafted"}</code> |  |
-| <Link id="m-destroywhendocked" /><code>{"private bool destroyWhenDocked"}</code> |  |
-| <Link id="m-dockedstacksize" /><code>{"private int dockedStackSize"}</code> |  |
-| <Link id="m-glyph" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph"}</code> |  |
-| <Link id="m-isassistgrabblocked" /><code>{"private bool isAssistGrabBlocked"}</code> |  |
-| <Link id="m-isdisabledonsimpleserver" /><code>{"private bool isDisabledOnSimpleServer"}</code> |  |
-| <Link id="m-isoverridingdefaultshrunkenscale" /><code>{"private bool isOverridingDefaultShrunkenScale"}</code> |  |
-| <Link id="m-isoverridingdefaultvisualscale" /><code>{"private bool isOverridingDefaultVisualScale"}</code> |  |
-| <Link id="m-isplayingsound" /><code>{"private bool isPlayingSound"}</code> |  |
-| <Link id="m-isscalingongrab" /><code>{"private bool isScalingOnGrab"}</code> |  |
-| <Link id="m-issnappingtohand" /><code>{"private bool isSnappingToHand"}</code> |  |
-| <Link id="m-isstackable" /><code>{"private bool isStackable"}</code> |  |
-| <Link id="m-isstackablewhencrafted" /><code>{"private bool isStackableWhenCrafted"}</code> |  |
-| <Link id="m-isusingshrunkenvisual" /><code>{"private bool isUsingShrunkenVisual"}</code> |  |
-| <Link id="m-lastcalculatedscale" /><code>{"private float lastCalculatedScale"}</code> |  |
-| <Link id="m-lootcategory" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/category">{"Category"}</Link>{" lootCategory"}</code> |  |
-| <Link id="m-lootvalue" /><code>{"private "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" lootValue"}</code> |  |
-| <Link id="m-normalpositioning" /><code>{"private "}<Link to="/game-api/types/alta-items/item-dockpositioning">{"Item.DockPositioning"}</Link>{" normalPositioning"}</code> |  |
-| <Link id="m-overrideletgosoundeffecttype" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overrideLetGoSoundEffectType"}</code> |  |
-| <Link id="m-overridepickupsoundeffecttype" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overridePickUpSoundEffectType"}</code> |  |
-| <Link id="m-overridescaleinsidevisual" /><code>{"private float overrideScaleInsideVisual"}</code> |  |
-| <Link id="m-overrideshrunkenscale" /><code>{"private float overrideShrunkenScale"}</code> |  |
-| <Link id="m-prefabhash" /><code>{"private uint prefabHash"}</code> |  |
-| <Link id="m-scaledpositioning" /><code>{"private "}<Link to="/game-api/types/alta-items/item-dockpositioning">{"Item.DockPositioning"}</Link>{" scaledPositioning"}</code> |  |
-| <Link id="m-shrunkenvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" shrunkenVisual"}</code> |  |
-| <Link id="m-size" /><code>{"private int size"}</code> |  |
-| <Link id="m-storescale" /><code>{"private Vector3 storeScale"}</code> |  |
-| <Link id="m-tags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> tags"}</code> |  |
-| <Link id="m-weight" /><code>{"private float weight"}</code> |  |
+<details>
+<summary>31 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-components" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/itemcomponent">{"ItemComponent"}</Link>{"> components"}</code> |
+| <Link id="m-custompositions" /><code>{"private "}<Link to="/game-api/types/alta-items/item-customdockpositioning">{"Item.CustomDockPositioning"}</Link>{"[] customPositions"}</code> |
+| <Link id="m-custompositionswhencrafted" /><code>{"private "}<Link to="/game-api/types/alta-items/item-customdockpositioning">{"Item.CustomDockPositioning"}</Link>{"[] customPositionsWhenCrafted"}</code> |
+| <Link id="m-destroywhendocked" /><code>{"private bool destroyWhenDocked"}</code> |
+| <Link id="m-dockedstacksize" /><code>{"private int dockedStackSize"}</code> |
+| <Link id="m-glyph" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph"}</code> |
+| <Link id="m-isassistgrabblocked" /><code>{"private bool isAssistGrabBlocked"}</code> |
+| <Link id="m-isdisabledonsimpleserver" /><code>{"private bool isDisabledOnSimpleServer"}</code> |
+| <Link id="m-isoverridingdefaultshrunkenscale" /><code>{"private bool isOverridingDefaultShrunkenScale"}</code> |
+| <Link id="m-isoverridingdefaultvisualscale" /><code>{"private bool isOverridingDefaultVisualScale"}</code> |
+| <Link id="m-isplayingsound" /><code>{"private bool isPlayingSound"}</code> |
+| <Link id="m-isscalingongrab" /><code>{"private bool isScalingOnGrab"}</code> |
+| <Link id="m-issnappingtohand" /><code>{"private bool isSnappingToHand"}</code> |
+| <Link id="m-isstackable" /><code>{"private bool isStackable"}</code> |
+| <Link id="m-isstackablewhencrafted" /><code>{"private bool isStackableWhenCrafted"}</code> |
+| <Link id="m-isusingshrunkenvisual" /><code>{"private bool isUsingShrunkenVisual"}</code> |
+| <Link id="m-lastcalculatedscale" /><code>{"private float lastCalculatedScale"}</code> |
+| <Link id="m-lootcategory" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/category">{"Category"}</Link>{" lootCategory"}</code> |
+| <Link id="m-lootvalue" /><code>{"private "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" lootValue"}</code> |
+| <Link id="m-normalpositioning" /><code>{"private "}<Link to="/game-api/types/alta-items/item-dockpositioning">{"Item.DockPositioning"}</Link>{" normalPositioning"}</code> |
+| <Link id="m-overrideletgosoundeffecttype" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overrideLetGoSoundEffectType"}</code> |
+| <Link id="m-overridepickupsoundeffecttype" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overridePickUpSoundEffectType"}</code> |
+| <Link id="m-overridescaleinsidevisual" /><code>{"private float overrideScaleInsideVisual"}</code> |
+| <Link id="m-overrideshrunkenscale" /><code>{"private float overrideShrunkenScale"}</code> |
+| <Link id="m-prefabhash" /><code>{"private uint prefabHash"}</code> |
+| <Link id="m-scaledpositioning" /><code>{"private "}<Link to="/game-api/types/alta-items/item-dockpositioning">{"Item.DockPositioning"}</Link>{" scaledPositioning"}</code> |
+| <Link id="m-shrunkenvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" shrunkenVisual"}</code> |
+| <Link id="m-size" /><code>{"private int size"}</code> |
+| <Link id="m-storescale" /><code>{"private Vector3 storeScale"}</code> |
+| <Link id="m-tags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> tags"}</code> |
+| <Link id="m-weight" /><code>{"private float weight"}</code> |
+
+</details>
 
 ## Properties
 

@@ -18,42 +18,55 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShoulderTwistController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShoulderTwistController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-body" /><code>{"private Transform body"}</code> |  |
-| <Link id="m-elbow" /><code>{"private Transform elbow"}</code> |  |
-| <Link id="m-hand" /><code>{"private Transform hand"}</code> |  |
-| <Link id="m-handvector" /><code>{"private Vector3 handVector"}</code> |  |
-| <Link id="m-rotationaxis" /><code>{"private Vector3 rotationAxis"}</code> |  |
-| <Link id="m-rotationlimit" /><code>{"private RotationLimit rotationLimit"}</code> |  |
-| <Link id="m-shoulder" /><code>{"private Transform shoulder"}</code> |  |
-| <Link id="m-speed" /><code>{"private float speed"}</code> |  |
-| <Link id="m-startangle" /><code>{"private float startAngle"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-body" /><code>{"private Transform body"}</code> |
+| <Link id="m-elbow" /><code>{"private Transform elbow"}</code> |
+| <Link id="m-hand" /><code>{"private Transform hand"}</code> |
+| <Link id="m-handvector" /><code>{"private Vector3 handVector"}</code> |
+| <Link id="m-rotationaxis" /><code>{"private Vector3 rotationAxis"}</code> |
+| <Link id="m-rotationlimit" /><code>{"private RotationLimit rotationLimit"}</code> |
+| <Link id="m-shoulder" /><code>{"private Transform shoulder"}</code> |
+| <Link id="m-speed" /><code>{"private float speed"}</code> |
+| <Link id="m-startangle" /><code>{"private float startAngle"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-body-2" /><code>{"Transform Body { set; }"}</code> |  |
-| <Link id="m-elbow-2" /><code>{"Transform Elbow { set; }"}</code> |  |
-| <Link id="m-hand-2" /><code>{"Transform Hand { set; }"}</code> |  |
-| <Link id="m-rotationlimit-2" /><code>{"RotationLimit RotationLimit { set; }"}</code> |  |
-| <Link id="m-shoulder-2" /><code>{"Transform Shoulder { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-body-2" /><code>{"Transform Body { set; }"}</code> |
+| <Link id="m-elbow-2" /><code>{"Transform Elbow { set; }"}</code> |
+| <Link id="m-hand-2" /><code>{"Transform Hand { set; }"}</code> |
+| <Link id="m-rotationlimit-2" /><code>{"RotationLimit RotationLimit { set; }"}</code> |
+| <Link id="m-shoulder-2" /><code>{"Transform Shoulder { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> |  |
-| <Link id="m-gethandvectorangle" /><code>{"private float GetHandVectorAngle()"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-gethandvectorangle" /><code>{"private float GetHandVectorAngle()"}</code> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>
 
 ## Used in
 

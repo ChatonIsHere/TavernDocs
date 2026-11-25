@@ -19,13 +19,13 @@ A **internal class** in `Root.Township`, `Alta.Cooking`. Reach it through att-st
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CookableSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CookableSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-burntprogress" /><code>{"float burntProgress"}</code> |  |
-| <Link id="m-cookedprogress" /><code>{"float cookedProgress"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-burntprogress" /><code>{"float burntProgress"}</code> |
+| <Link id="m-cookedprogress" /><code>{"float cookedProgress"}</code> |

@@ -20,16 +20,21 @@ Internal: `console_tokens.json` with an in-memory copy rebuilt after each write,
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-byid" /><code>{"private static Dictionary<string, "}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenstore-entry">{"ConsoleTokenStore.Entry"}</Link>{"> _byId"}</code> |  |
-| <Link id="m-lastload" /><code>{"private static DateTime _lastLoad"}</code> |  |
-| <Link id="m-loaderrorlogged" /><code>{"private static bool _loadErrorLogged"}</code> |  |
-| <Link id="m-ownergeneration" /><code>{"private static int _ownerGeneration"}</code> |  |
-| <Link id="m-filepath" /><code>{"private static readonly string FilePath"}</code> |  |
-| <Link id="m-paths" /><code>{"private static readonly ConditionalWeakTable<"}<Link to="/game-api/types/alta-console/commandpart">{"CommandPart"}</Link>{", string> Paths"}</code> |  |
-| <Link id="m-retryevery" /><code>{"private static readonly TimeSpan RetryEvery"}</code> |  |
-| <Link id="m-tokenfile" /><code>{"private static readonly "}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenfile">{"ConsoleTokenFile"}</Link>{" TokenFile"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-byid" /><code>{"private static Dictionary<string, "}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenstore-entry">{"ConsoleTokenStore.Entry"}</Link>{"> _byId"}</code> |
+| <Link id="m-lastload" /><code>{"private static DateTime _lastLoad"}</code> |
+| <Link id="m-loaderrorlogged" /><code>{"private static bool _loadErrorLogged"}</code> |
+| <Link id="m-ownergeneration" /><code>{"private static int _ownerGeneration"}</code> |
+| <Link id="m-filepath" /><code>{"private static readonly string FilePath"}</code> |
+| <Link id="m-paths" /><code>{"private static readonly ConditionalWeakTable<"}<Link to="/game-api/types/alta-console/commandpart">{"CommandPart"}</Link>{", string> Paths"}</code> |
+| <Link id="m-retryevery" /><code>{"private static readonly TimeSpan RetryEvery"}</code> |
+| <Link id="m-tokenfile" /><code>{"private static readonly "}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenfile">{"ConsoleTokenFile"}</Link>{" TokenFile"}</code> |
+
+</details>
 
 ## Properties
 
@@ -52,6 +57,14 @@ Internal: `console_tokens.json` with an in-memory copy rebuilt after each write,
 | <Link id="m-pathof" /><code>{"static string PathOf("}<Link to="/game-api/types/alta-console/commandpart">{"CommandPart"}</Link>{" part)"}</code> | The typed path of a command or module, such as `player progression list`, without parameters. |
 | <Link id="m-touch" /><code>{"static void Touch(string id)"}</code> | Records now as the token's last use. Logs a warning if the file can't be written. |
 | <Link id="m-update" /><code>{"static void Update(Func<"}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenlist">{"ConsoleTokenList"}</Link>{", bool> change)"}</code> | Reads the file, applies a change and writes it back under its lock. The copy is rebuilt when the change returns true. |
-| <Link id="m-ancestors" /><code>{"private static IEnumerable<string> Ancestors(string path) (iterator)"}</code> |  |
-| <Link id="m-granted" /><code>{"private static bool Granted(HashSet<string> granted, string path)"}</code> |  |
-| <Link id="m-rebuild" /><code>{"private static void Rebuild("}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenlist">{"ConsoleTokenList"}</Link>{" list)"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ancestors" /><code>{"private static IEnumerable<string> Ancestors(string path) (iterator)"}</code> |
+| <Link id="m-granted" /><code>{"private static bool Granted(HashSet<string> granted, string path)"}</code> |
+| <Link id="m-rebuild" /><code>{"private static void Rebuild("}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenlist">{"ConsoleTokenList"}</Link>{" list)"}</code> |
+
+</details>

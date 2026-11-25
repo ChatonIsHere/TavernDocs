@@ -18,18 +18,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ArrowFlightSettingsDevianceMultiplierModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ArrowFlightSettingsDevianceMultiplierModifier()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deviancemultiplier" /><code>{"private float devianceMultiplier"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-deviancemultiplier" /><code>{"private float devianceMultiplier"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deviancemultiplier-2" /><code>{"override float DevianceMultiplier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deviancemultiplier-2" /><code>{"override float DevianceMultiplier { get; }"}</code> |

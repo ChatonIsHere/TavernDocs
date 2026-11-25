@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-process" /><code>{"void Process()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-process" /><code>{"void Process()"}</code> |

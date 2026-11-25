@@ -20,9 +20,9 @@ Base for a page in the server management UI that shows one joined group. Client 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected GroupPage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected GroupPage()"}</code> |
 
 ## Fields
 
@@ -36,4 +36,12 @@ Base for a page in the server management UI that shows one joined group. Client 
 | --- | --- |
 | <Link id="m-setupforgroup" /><code>{"void SetupForGroup("}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" group)"}</code> | Points the page at a group and makes it refresh the next time it loads. |
 | <Link id="m-ongroupdatachange" /><code>{"protected virtual void OnGroupDataChange()"}</code> | Hook for subclasses to refresh when the group is cleared or changes. |
-| <Link id="m-resetpage" /><code>{"private void ResetPage()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-resetpage" /><code>{"private void ResetPage()"}</code> |
+
+</details>

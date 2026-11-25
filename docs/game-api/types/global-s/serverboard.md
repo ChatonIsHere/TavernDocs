@@ -19,32 +19,37 @@ A server list board in the main menu (public, my servers, open or discover). Fet
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerBoard()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerBoard()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createserverboards" /><code>{"private Coroutine createServerBoards"}</code> |  |
-| <Link id="m-display" /><code>{"private "}<Link to="/game-api/types/global-s/serverselectiondisplay">{"ServerSelectionDisplay"}</Link>{" display"}</code> |  |
-| <Link id="m-elementparent" /><code>{"private Transform elementParent"}</code> |  |
-| <Link id="m-filter" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/serverboardfilter">{"ServerBoardFilter"}</Link>{" filter"}</code> |  |
-| <Link id="m-hasfilterchanged" /><code>{"private bool hasFilterChanged"}</code> |  |
-| <Link id="m-headingtext" /><code>{"private string headingText"}</code> |  |
-| <Link id="m-interval" /><code>{"private int interval"}</code> |  |
-| <Link id="m-isfirstserverload" /><code>{"private bool isFirstServerLoad"}</code> |  |
-| <Link id="m-joiningservertext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" joiningServerText"}</code> |  |
-| <Link id="m-lastfilteredservers" /><code>{"private IEnumerable<"}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> lastFilteredServers"}</code> |  |
-| <Link id="m-lastreceivedservers" /><code>{"private IEnumerable<"}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> lastReceivedServers"}</code> |  |
-| <Link id="m-loadservers" /><code>{"private Coroutine loadServers"}</code> |  |
-| <Link id="m-serverdisplays" /><code>{"private List<"}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{"> serverDisplays"}</code> |  |
-| <Link id="m-serverelementprefab" /><code>{"private "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" serverElementPrefab"}</code> |  |
-| <Link id="m-serverelements" /><code>{"private Dictionary<int, "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{"> serverElements"}</code> |  |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{" type"}</code> |  |
-| <Link id="m-updatecountdowntext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" updateCountdownText"}</code> |  |
-| <Link id="m-updateinterval" /><code>{"private int updateInterval"}</code> |  |
+<details>
+<summary>18 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-createserverboards" /><code>{"private Coroutine createServerBoards"}</code> |
+| <Link id="m-display" /><code>{"private "}<Link to="/game-api/types/global-s/serverselectiondisplay">{"ServerSelectionDisplay"}</Link>{" display"}</code> |
+| <Link id="m-elementparent" /><code>{"private Transform elementParent"}</code> |
+| <Link id="m-filter" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/serverboardfilter">{"ServerBoardFilter"}</Link>{" filter"}</code> |
+| <Link id="m-hasfilterchanged" /><code>{"private bool hasFilterChanged"}</code> |
+| <Link id="m-headingtext" /><code>{"private string headingText"}</code> |
+| <Link id="m-interval" /><code>{"private int interval"}</code> |
+| <Link id="m-isfirstserverload" /><code>{"private bool isFirstServerLoad"}</code> |
+| <Link id="m-joiningservertext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" joiningServerText"}</code> |
+| <Link id="m-lastfilteredservers" /><code>{"private IEnumerable<"}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> lastFilteredServers"}</code> |
+| <Link id="m-lastreceivedservers" /><code>{"private IEnumerable<"}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> lastReceivedServers"}</code> |
+| <Link id="m-loadservers" /><code>{"private Coroutine loadServers"}</code> |
+| <Link id="m-serverdisplays" /><code>{"private List<"}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{"> serverDisplays"}</code> |
+| <Link id="m-serverelementprefab" /><code>{"private "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" serverElementPrefab"}</code> |
+| <Link id="m-serverelements" /><code>{"private Dictionary<int, "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{"> serverElements"}</code> |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{" type"}</code> |
+| <Link id="m-updatecountdowntext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" updateCountdownText"}</code> |
+| <Link id="m-updateinterval" /><code>{"private int updateInterval"}</code> |
+
+</details>
 
 ## Properties
 
@@ -72,15 +77,23 @@ A server list board in the main menu (public, my servers, open or discover). Fet
 | <Link id="m-selectserver" /><code>{"void SelectServer("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | Selects the entry for the given server. |
 | <Link id="m-setactive" /><code>{"void SetActive(bool isActive)"}</code> | Shows or hides the board and starts or stops refreshing. |
 | <Link id="m-updatevalue" /><code>{"void UpdateValue(float value)"}</code> | Adds to the display's scroll value. |
-| <Link id="m-filterservers" /><code>{"private void FilterServers()"}</code> |  |
-| <Link id="m-loadservers-2" /><code>{"private IEnumerator LoadServers() (iterator)"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-onfilterchanged" /><code>{"private void OnFilterChanged()"}</code> |  |
-| <Link id="m-onselectedchanged" /><code>{"private void OnSelectedChanged("}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" oldElement, "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" newElement)"}</code> |  |
-| <Link id="m-sortandupdateserverslist" /><code>{"private void SortAndUpdateServersList()"}</code> |  |
-| <Link id="m-startupdatingservers" /><code>{"private void StartUpdatingServers()"}</code> |  |
-| <Link id="m-stopupdatingserver" /><code>{"private void StopUpdatingServer()"}</code> |  |
-| <Link id="m-updateserverslist" /><code>{"private IEnumerator UpdateServersList() (iterator)"}</code> |  |
+
+<details>
+<summary>9 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-filterservers" /><code>{"private void FilterServers()"}</code> |
+| <Link id="m-loadservers-2" /><code>{"private IEnumerator LoadServers() (iterator)"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-onfilterchanged" /><code>{"private void OnFilterChanged()"}</code> |
+| <Link id="m-onselectedchanged" /><code>{"private void OnSelectedChanged("}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" oldElement, "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" newElement)"}</code> |
+| <Link id="m-sortandupdateserverslist" /><code>{"private void SortAndUpdateServersList()"}</code> |
+| <Link id="m-startupdatingservers" /><code>{"private void StartUpdatingServers()"}</code> |
+| <Link id="m-stopupdatingserver" /><code>{"private void StopUpdatingServer()"}</code> |
+| <Link id="m-updateserverslist" /><code>{"private IEnumerator UpdateServersList() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

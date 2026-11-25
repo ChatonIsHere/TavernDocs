@@ -22,23 +22,28 @@ A cave generation step asset (blob, tunnels, crystals, structures and so on), ma
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Plugin()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Plugin()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-element" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/element">{"Element"}</Link>{" element"}</code> |  |
-| <Link id="m-generationstage" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/generationstage">{"GenerationStage"}</Link>{" generationStage"}</code> |  |
-| <Link id="m-isdynamic" /><code>{"private bool isDynamic"}</code> |  |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |  |
-| <Link id="m-isnonzerolistcreated" /><code>{"private bool isNonZeroListCreated"}</code> |  |
-| <Link id="m-layerheight" /><code>{"private int layerHeight"}</code> |  |
-| <Link id="m-layeroverflowxz" /><code>{"private int layerOverflowXZ"}</code> |  |
-| <Link id="m-parts" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/mapgeneratorpart">{"MapGeneratorPart"}</Link>{"> parts"}</code> |  |
-| <Link id="m-pluginidentifier" /><code>{"private int pluginIdentifier"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-element" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/element">{"Element"}</Link>{" element"}</code> |
+| <Link id="m-generationstage" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/generationstage">{"GenerationStage"}</Link>{" generationStage"}</code> |
+| <Link id="m-isdynamic" /><code>{"private bool isDynamic"}</code> |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
+| <Link id="m-isnonzerolistcreated" /><code>{"private bool isNonZeroListCreated"}</code> |
+| <Link id="m-layerheight" /><code>{"private int layerHeight"}</code> |
+| <Link id="m-layeroverflowxz" /><code>{"private int layerOverflowXZ"}</code> |
+| <Link id="m-parts" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/mapgeneratorpart">{"MapGeneratorPart"}</Link>{"> parts"}</code> |
+| <Link id="m-pluginidentifier" /><code>{"private int pluginIdentifier"}</code> |
+
+</details>
 
 ## Properties
 
@@ -62,7 +67,15 @@ A cave generation step asset (blob, tunnels, crystals, structures and so on), ma
 | <Link id="m-modify" /><code>{"virtual void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{"[] parts)"}</code> | Runs each part on the map chunk. Subclasses can change this. |
 | <Link id="m-regenerateidentifier" /><code>{"void RegenerateIdentifier()"}</code> | Editor: sets `PluginIdentifier` from the asset's instance id. |
 | <Link id="m-render" /><code>{"virtual IEnumerator Render("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" pluginInstance) (iterator)"}</code> | Coroutine that spawns `Element`'s prefab for the chunk, if there is one. |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>
 
 ## Used in
 

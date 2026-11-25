@@ -20,20 +20,25 @@ The plug end of a crafting part that goes into another part's `JointSlot`. Also 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JointInsert()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JointInsert()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-insertlength" /><code>{"private Vector3 insertLength"}</code> |  |
-| <Link id="m-isshowinglines" /><code>{"private bool isShowingLines"}</code> |  |
-| <Link id="m-linesplayer" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" linesPlayer"}</code> |  |
-| <Link id="m-particlespool" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{", "}<Link to="/game-api/types/global-s/splineparticlespooled">{"SplineParticlesPooled"}</Link>{"> particlesPool"}</code> |  |
-| <Link id="m-settings" /><code>{"private static "}<Link to="/game-api/types/global-p/pickuptypesettings">{"PickupTypeSettings"}</Link>{" settings"}</code> |  |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointinserttype">{"JointInsertType"}</Link>{" type"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-insertlength" /><code>{"private Vector3 insertLength"}</code> |
+| <Link id="m-isshowinglines" /><code>{"private bool isShowingLines"}</code> |
+| <Link id="m-linesplayer" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" linesPlayer"}</code> |
+| <Link id="m-particlespool" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{", "}<Link to="/game-api/types/global-s/splineparticlespooled">{"SplineParticlesPooled"}</Link>{"> particlesPool"}</code> |
+| <Link id="m-settings" /><code>{"private static "}<Link to="/game-api/types/global-p/pickuptypesettings">{"PickupTypeSettings"}</Link>{" settings"}</code> |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointinserttype">{"JointInsertType"}</Link>{" type"}</code> |
+
+</details>
 
 ## Properties
 
@@ -53,8 +58,16 @@ The plug end of a crafting part that goes into another part's `JointSlot`. Also 
 | <Link id="m-swaplines" /><code>{"void SwapLines("}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{" previousBest, "}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{" newBest)"}</code> | Client: moves the active highlight from the previous best slot to the new one. |
 | <Link id="m-ondrawgizmosselected" /><code>{"protected override void OnDrawGizmosSelected()"}</code> | Editor: draws the insert length as a yellow line. |
 | <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor: renames the GameObject to match the insert type. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-tryadd" /><code>{"private void TryAdd(List<GameObject> list, params string[] names)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-tryadd" /><code>{"private void TryAdd(List<GameObject> list, params string[] names)"}</code> |
+
+</details>
 
 ## Used in
 

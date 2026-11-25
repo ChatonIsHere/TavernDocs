@@ -19,13 +19,13 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MovePickupSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MovePickupSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-movement" /><code>{"float movement"}</code> |  |
-| <Link id="m-velocity" /><code>{"float velocity"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-movement" /><code>{"float movement"}</code> |
+| <Link id="m-velocity" /><code>{"float velocity"}</code> |

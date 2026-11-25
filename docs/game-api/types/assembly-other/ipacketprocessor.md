@@ -17,9 +17,9 @@ An **interface** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-process" /><code>{"void Process("}<Link to="/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, int connection, ArraySegment<byte> data, int channel)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-process" /><code>{"void Process("}<Link to="/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, int connection, ArraySegment<byte> data, int channel)"}</code> |
 
 ## Used in
 

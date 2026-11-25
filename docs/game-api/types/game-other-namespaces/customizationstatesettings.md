@@ -21,20 +21,25 @@ Settings for the character customization player state: the room prefab to spawn,
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CustomizationStateSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CustomizationStateSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-customizationroomprefab" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" customizationRoomPrefab"}</code> |  |
-| <Link id="m-fadeinduration" /><code>{"private float fadeInDuration"}</code> |  |
-| <Link id="m-finishcustomizationaction" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" finishCustomizationAction"}</code> |  |
-| <Link id="m-isskippingcustomization" /><code>{"private bool isSkippingCustomization"}</code> |  |
-| <Link id="m-roomposition" /><code>{"private Vector3 roomPosition"}</code> |  |
-| <Link id="m-roomrotation" /><code>{"private Vector3 roomRotation"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-customizationroomprefab" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" customizationRoomPrefab"}</code> |
+| <Link id="m-fadeinduration" /><code>{"private float fadeInDuration"}</code> |
+| <Link id="m-finishcustomizationaction" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" finishCustomizationAction"}</code> |
+| <Link id="m-isskippingcustomization" /><code>{"private bool isSkippingCustomization"}</code> |
+| <Link id="m-roomposition" /><code>{"private Vector3 roomPosition"}</code> |
+| <Link id="m-roomrotation" /><code>{"private Vector3 roomRotation"}</code> |
+
+</details>
 
 ## Properties
 

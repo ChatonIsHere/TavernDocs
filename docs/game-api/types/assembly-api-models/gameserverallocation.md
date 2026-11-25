@@ -17,13 +17,13 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameServerAllocation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameServerAllocation()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-kind" /><code>{"override string Kind { get; set; }"}</code> |  |
-| <Link id="m-spec" /><code><Link to="/game-api/types/assembly-api-models/gameserverallocationspec">{"GameServerAllocationSpec"}</Link>{" Spec { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-kind" /><code>{"override string Kind { get; set; }"}</code> |
+| <Link id="m-spec" /><code><Link to="/game-api/types/assembly-api-models/gameserverallocationspec">{"GameServerAllocationSpec"}</Link>{" Spec { get; set; }"}</code> |

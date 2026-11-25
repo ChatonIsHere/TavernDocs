@@ -17,25 +17,35 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerContainEvents()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TriggerContainEvents()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-containedcolliders" /><code>{"private HashSet<Collider> containedColliders"}</code> |  |
-| <Link id="m-haslayerfilter" /><code>{"private bool hasLayerFilter"}</code> |  |
-| <Link id="m-layerfilter" /><code>{"private LayerMask layerFilter"}</code> |  |
-| <Link id="m-onempty" /><code>{"private UnityEvent onEmpty"}</code> |  |
-| <Link id="m-onenter" /><code>{"private UnityEvent onEnter"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-containedcolliders" /><code>{"private HashSet<Collider> containedColliders"}</code> |
+| <Link id="m-haslayerfilter" /><code>{"private bool hasLayerFilter"}</code> |
+| <Link id="m-layerfilter" /><code>{"private LayerMask layerFilter"}</code> |
+| <Link id="m-onempty" /><code>{"private UnityEvent onEmpty"}</code> |
+| <Link id="m-onenter" /><code>{"private UnityEvent onEnter"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
-| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |  |
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
+| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |
+
+</details>

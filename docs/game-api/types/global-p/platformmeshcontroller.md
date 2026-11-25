@@ -18,23 +18,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformMeshController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformMeshController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-replacements" /><code>{"private "}<Link to="/game-api/types/global-p/platformmeshcontroller-platformdetails">{"PlatformMeshController.PlatformDetails"}</Link>{"[] replacements"}</code> |  |
-| <Link id="m-targetfilter" /><code>{"private MeshFilter targetFilter"}</code> |  |
-| <Link id="m-targetrenderer" /><code>{"private MeshRenderer targetRenderer"}</code> |  |
-| <Link id="m-targetskinnedmeshrenderer" /><code>{"private SkinnedMeshRenderer targetSkinnedMeshRenderer"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-replacements" /><code>{"private "}<Link to="/game-api/types/global-p/platformmeshcontroller-platformdetails">{"PlatformMeshController.PlatformDetails"}</Link>{"[] replacements"}</code> |
+| <Link id="m-targetfilter" /><code>{"private MeshFilter targetFilter"}</code> |
+| <Link id="m-targetrenderer" /><code>{"private MeshRenderer targetRenderer"}</code> |
+| <Link id="m-targetskinnedmeshrenderer" /><code>{"private SkinnedMeshRenderer targetSkinnedMeshRenderer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> |  |
-| <Link id="m-createplatformmeshcontroller" /><code>{"static void CreatePlatformMeshController(Renderer renderer, Material newMaterial)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> |
+| <Link id="m-createplatformmeshcontroller" /><code>{"static void CreatePlatformMeshController(Renderer renderer, Material newMaterial)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

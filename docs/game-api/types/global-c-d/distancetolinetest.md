@@ -17,20 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DistanceToLineTest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DistanceToLineTest()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distance" /><code>{"private float distance"}</code> |  |
-| <Link id="m-end" /><code>{"private Transform end"}</code> |  |
-| <Link id="m-start" /><code>{"private Transform start"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-distance" /><code>{"private float distance"}</code> |
+| <Link id="m-end" /><code>{"private Transform end"}</code> |
+| <Link id="m-start" /><code>{"private Transform start"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+
+</details>

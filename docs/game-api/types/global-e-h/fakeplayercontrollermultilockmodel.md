@@ -17,19 +17,19 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FakePlayerControllerMultiLockModel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FakePlayerControllerMultiLockModel()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-islocked" /><code>{"bool IsLocked { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-islocked" /><code>{"bool IsLocked { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addlock" /><code>{"void AddLock(object lockerObject)"}</code> |  |
-| <Link id="m-removelock" /><code>{"void RemoveLock(object lockerObject)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addlock" /><code>{"void AddLock(object lockerObject)"}</code> |
+| <Link id="m-removelock" /><code>{"void RemoveLock(object lockerObject)"}</code> |

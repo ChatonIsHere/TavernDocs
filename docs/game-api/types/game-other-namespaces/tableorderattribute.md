@@ -17,12 +17,12 @@ A **class** in `Root.Township`, `TableParser`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TableOrderAttribute(int order)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TableOrderAttribute(int order)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-order" /><code>{"int Order { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-order" /><code>{"int Order { get; set; }"}</code> |

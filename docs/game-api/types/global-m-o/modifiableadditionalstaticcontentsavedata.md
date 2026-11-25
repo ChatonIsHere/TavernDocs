@@ -19,13 +19,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModifiableAdditionalStaticContentSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModifiableAdditionalStaticContentSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modifiablehash" /><code>{"uint modifiableHash"}</code> |  |
-| <Link id="m-needstoinstantiate" /><code>{"bool needsToInstantiate"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modifiablehash" /><code>{"uint modifiableHash"}</code> |
+| <Link id="m-needstoinstantiate" /><code>{"bool needsToInstantiate"}</code> |

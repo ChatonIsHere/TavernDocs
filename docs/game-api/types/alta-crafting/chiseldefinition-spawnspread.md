@@ -17,7 +17,7 @@ An **private enum** in `Root.Township`, `Alta.Carpentry`. Reach it through att-s
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-length" /><code>{"length = 0"}</code> |  |
-| <Link id="m-width" /><code>{"width = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-length" /><code>{"length = 0"}</code> |
+| <Link id="m-width" /><code>{"width = 1"}</code> |

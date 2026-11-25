@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Page()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Page()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |  |
-| <Link id="m-queries" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/query">{"Query"}</Link>{"> Queries { get; set; }"}</code> |  |
-| <Link id="m-transitions" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/transitions">{"Transitions"}</Link>{"> "}<Link to="/game-api/types/assembly-api-models/transitions">{"Transitions"}</Link>{" { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |
+| <Link id="m-queries" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/query">{"Query"}</Link>{"> Queries { get; set; }"}</code> |
+| <Link id="m-transitions" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/transitions">{"Transitions"}</Link>{"> "}<Link to="/game-api/types/assembly-api-models/transitions">{"Transitions"}</Link>{" { get; set; }"}</code> |
 
 ## Used in
 

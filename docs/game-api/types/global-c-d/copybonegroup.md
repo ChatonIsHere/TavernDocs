@@ -17,13 +17,21 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CopyBoneGroup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CopyBoneGroup()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setenable" /><code>{"void SetEnable(bool isEnabled)"}</code> |  |
-| <Link id="m-timeddisable" /><code>{"private IEnumerator TimedDisable() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setenable" /><code>{"void SetEnable(bool isEnabled)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-timeddisable" /><code>{"private IEnumerator TimedDisable() (iterator)"}</code> |
+
+</details>

@@ -16,25 +16,30 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TwistRelaxerSetting()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TwistRelaxerSetting()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bone" /><code>{"private Transform bone"}</code> |  |
-| <Link id="m-parentchildcrossfade" /><code>{"private float parentChildCrossfade"}</code> |  |
-| <Link id="m-weight" /><code>{"private float weight"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bone" /><code>{"private Transform bone"}</code> |
+| <Link id="m-parentchildcrossfade" /><code>{"private float parentChildCrossfade"}</code> |
+| <Link id="m-weight" /><code>{"private float weight"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bone-2" /><code>{"Transform Bone { get; set; }"}</code> |  |
-| <Link id="m-parentchildcrossfade-2" /><code>{"float ParentChildCrossfade { get; }"}</code> |  |
-| <Link id="m-weight-2" /><code>{"float Weight { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bone-2" /><code>{"Transform Bone { get; set; }"}</code> |
+| <Link id="m-parentchildcrossfade-2" /><code>{"float ParentChildCrossfade { get; }"}</code> |
+| <Link id="m-weight-2" /><code>{"float Weight { get; }"}</code> |
 
 ## Used in
 

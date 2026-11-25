@@ -21,26 +21,34 @@ The set of cosmetics a character is wearing, by item hash, with their arguments 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CustomizationWrapper("}<Link to="/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" manager)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CustomizationWrapper("}<Link to="/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" manager)"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentload" /><code>{"private CancellationTokenSource currentLoad"}</code> |  |
-| <Link id="m-historymanager" /><code>{"private "}<Link to="/game-api/types/global-i-l/ihistorymanager-t">{"IHistoryManager"}</Link>{"<"}<Link to="/game-api/types/alta-customization/customizationhistoryaction">{"CustomizationHistoryAction"}</Link>{"> historyManager"}</code> |  |
-| <Link id="m-historysize" /><code>{"private const int HistorySize"}</code> |  |
-| <Link id="m-isgroupaction" /><code>{"private bool isGroupAction"}</code> |  |
-| <Link id="m-isvisible" /><code>{"private readonly bool isVisible"}</code> |  |
-| <Link id="m-items" /><code>{"private readonly HashSet<uint> items"}</code> |  |
-| <Link id="m-laststate" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" lastState"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-packingcount" /><code>{"private int packingCount"}</code> |  |
-| <Link id="m-primarycache" /><code>{"private readonly Dictionary<uint, IEnumerable<int>> primaryCache"}</code> |  |
-| <Link id="m-tracked" /><code>{"private readonly Dictionary<int, uint> tracked"}</code> |  |
 | <Link id="m-visualmanager" /><code>{"protected "}<Link to="/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" visualManager"}</code> | The visual manager that dresses the character. |
+
+<details>
+<summary>11 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentload" /><code>{"private CancellationTokenSource currentLoad"}</code> |
+| <Link id="m-historymanager" /><code>{"private "}<Link to="/game-api/types/global-i-l/ihistorymanager-t">{"IHistoryManager"}</Link>{"<"}<Link to="/game-api/types/alta-customization/customizationhistoryaction">{"CustomizationHistoryAction"}</Link>{"> historyManager"}</code> |
+| <Link id="m-historysize" /><code>{"private const int HistorySize"}</code> |
+| <Link id="m-isgroupaction" /><code>{"private bool isGroupAction"}</code> |
+| <Link id="m-isvisible" /><code>{"private readonly bool isVisible"}</code> |
+| <Link id="m-items" /><code>{"private readonly HashSet<uint> items"}</code> |
+| <Link id="m-laststate" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" lastState"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-packingcount" /><code>{"private int packingCount"}</code> |
+| <Link id="m-primarycache" /><code>{"private readonly Dictionary<uint, IEnumerable<int>> primaryCache"}</code> |
+| <Link id="m-tracked" /><code>{"private readonly Dictionary<int, uint> tracked"}</code> |
+
+</details>
 
 ## Properties
 
@@ -52,7 +60,15 @@ The set of cosmetics a character is wearing, by item hash, with their arguments 
 | <Link id="m-lastadded" /><code>{"uint LastAdded { get; private set; }"}</code> | Hash of the item added last. |
 | <Link id="m-overrideset" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{", "}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{"> OverrideSet { get; set; }"}</code> | Definitions to swap for others, such as a trophy body in place of the standard body. |
 | <Link id="m-session" /><code><Link to="/game-api/types/global-a-b/addressablesession">{"AddressableSession"}</Link>{" Session { get; private set; }"}</code> | The addressable session used to load cosmetic assets. |
-| <Link id="m-historymanager-2" /><code>{"private "}<Link to="/game-api/types/global-i-l/ihistorymanager-t">{"IHistoryManager"}</Link>{"<"}<Link to="/game-api/types/alta-customization/customizationhistoryaction">{"CustomizationHistoryAction"}</Link>{"> HistoryManager { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-historymanager-2" /><code>{"private "}<Link to="/game-api/types/global-i-l/ihistorymanager-t">{"IHistoryManager"}</Link>{"<"}<Link to="/game-api/types/alta-customization/customizationhistoryaction">{"CustomizationHistoryAction"}</Link>{"> HistoryManager { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -82,14 +98,22 @@ The set of cosmetics a character is wearing, by item hash, with their arguments 
 | <Link id="m-startgroupaction" /><code>{"void StartGroupAction()"}</code> | Starts a group of changes that go into history as one step. |
 | <Link id="m-startsession" /><code>{"async Task StartSession("}<Link to="/game-api/types/global-a-b/addressablesession">{"AddressableSession"}</Link>{" session)"}</code> | Starts an asset loading session and loads all worn items. |
 | <Link id="m-stopsession" /><code>{"void StopSession("}<Link to="/game-api/types/global-a-b/addressablesession">{"AddressableSession"}</Link>{" session)"}</code> | Ends the given session if it is the current one. |
-| <Link id="m-checkcleanmemory" /><code>{"private void CheckCleanMemory()"}</code> |  |
-| <Link id="m-deregisterinternal" /><code>{"private void DeregisterInternal(uint item)"}</code> |  |
-| <Link id="m-finishload" /><code>{"private void Alta.Customization.ICustomizationWrapper.FinishLoad(CancellationTokenSource source)"}</code> |  |
 | <Link id="m-isprimary" /><code>{"protected virtual bool IsPrimary("}<Link to="/game-api/types/alta-customization/icustomizationpart">{"ICustomizationPart"}</Link>{" part)"}</code> | Whether a part counts as primary. True by default. |
 | <Link id="m-onitemadded" /><code>{"protected virtual void OnItemAdded(uint itemDefinition)"}</code> | Raises `ItemAdded`. Subclasses can override it. |
 | <Link id="m-onitemremoved" /><code>{"protected virtual void OnItemRemoved(uint itemDefinition)"}</code> | Raises `ItemRemoved`. Subclasses can override it. |
-| <Link id="m-pushstatetohistory" /><code>{"private void PushStateToHistory()"}</code> |  |
-| <Link id="m-startload" /><code>{"private CancellationTokenSource Alta.Customization.ICustomizationWrapper.StartLoad()"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-checkcleanmemory" /><code>{"private void CheckCleanMemory()"}</code> |
+| <Link id="m-deregisterinternal" /><code>{"private void DeregisterInternal(uint item)"}</code> |
+| <Link id="m-finishload" /><code>{"private void Alta.Customization.ICustomizationWrapper.FinishLoad(CancellationTokenSource source)"}</code> |
+| <Link id="m-pushstatetohistory" /><code>{"private void PushStateToHistory()"}</code> |
+| <Link id="m-startload" /><code>{"private CancellationTokenSource Alta.Customization.ICustomizationWrapper.StartLoad()"}</code> |
+
+</details>
 
 ## Used in
 

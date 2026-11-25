@@ -20,10 +20,10 @@ Every trusted source's `repository.json` merged: a list of `ModSummary` plus the
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModIndex()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ModIndex(IEnumerable<"}<Link to="/tavernlib-api/types/backend-mods/modsummary">{"ModSummary"}</Link>{"> summaries, IEnumerable<"}<Link to="/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{"> replaced)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModIndex()"}</code> |
+| <Link id="m-ctor-2" /><code>{"ModIndex(IEnumerable<"}<Link to="/tavernlib-api/types/backend-mods/modsummary">{"ModSummary"}</Link>{"> summaries, IEnumerable<"}<Link to="/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{"> replaced)"}</code> |
 
 ## Properties
 

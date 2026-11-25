@@ -17,17 +17,17 @@ A **private class** in `Root.Township`, `Alta.Console`. Reach it through att-stu
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogEvent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"string logger"}</code> |  |
-| <Link id="m-message" /><code>{"string message"}</code> |  |
-| <Link id="m-timestamp" /><code>{"DateTime timeStamp"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"string logger"}</code> |
+| <Link id="m-message" /><code>{"string message"}</code> |
+| <Link id="m-timestamp" /><code>{"DateTime timeStamp"}</code> |
 
 ## Used in
 

@@ -20,17 +20,22 @@ A place on a `CraftingPart` where another part's insert can join (a blade onto a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JointSlot()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JointSlot()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isflipweighting" /><code>{"private bool isFlipWeighting"}</code> |  |
-| <Link id="m-syncinsert" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncInsert"}</code> |  |
-| <Link id="m-types" /><code>{"private List<"}<Link to="/game-api/types/alta-crafting/jointslottype">{"JointSlotType"}</Link>{"> types"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isflipweighting" /><code>{"private bool isFlipWeighting"}</code> |
+| <Link id="m-syncinsert" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncInsert"}</code> |
+| <Link id="m-types" /><code>{"private List<"}<Link to="/game-api/types/alta-crafting/jointslottype">{"JointSlotType"}</Link>{"> types"}</code> |
+
+</details>
 
 ## Properties
 
@@ -41,7 +46,15 @@ A place on a `CraftingPart` where another part's insert can join (a blade onto a
 | <Link id="m-isflipweighting-2" /><code>{"bool IsFlipWeighting { get; }"}</code> | For double-sided weapons: asks to flip when docked if this side is heavier. |
 | <Link id="m-isused" /><code>{"bool IsUsed { get; }"}</code> | True if a part is joined here. |
 | <Link id="m-types-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-crafting/jointslottype">{"JointSlotType"}</Link>{"> Types { get; }"}</code> | Slot types that say which inserts fit. |
-| <Link id="m-alta-crafting-ijointslotcomponent-isdestroyed" /><code>{"private bool Alta.Crafting.IJointSlotComponent.IsDestroyed { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-crafting-ijointslotcomponent-isdestroyed" /><code>{"private bool Alta.Crafting.IJointSlotComponent.IsDestroyed { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -64,9 +77,17 @@ A place on a `CraftingPart` where another part's insert can join (a blade onto a
 | <Link id="m-supports" /><code>{"bool Supports("}<Link to="/game-api/types/alta-crafting/jointinserttype">{"JointInsertType"}</Link>{" type)"}</code> | True if any of the slot's types allows the given insert type. |
 | <Link id="m-tryconnect" /><code>{"bool TryConnect("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" insertPart, bool isPlayingEffects)"}</code> | Joins a part here: parents it, attaches durability, raises the crafted events, reports a craft task and syncs. False if either side is taken. |
 | <Link id="m-trydisconnect" /><code>{"bool TryDisconnect(bool isPlayingEffects)"}</code> | Splits the joined part out and syncs. False if the slot is empty. |
-| <Link id="m-findexisting" /><code>{"private void FindExisting()"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Names the object after its slot type in the editor. |
-| <Link id="m-syncinsert-2" /><code>{"private async void SyncInsert("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isPlayingEffects)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-findexisting" /><code>{"private void FindExisting()"}</code> |
+| <Link id="m-syncinsert-2" /><code>{"private async void SyncInsert("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isPlayingEffects)"}</code> |
+
+</details>
 
 ## Used in
 

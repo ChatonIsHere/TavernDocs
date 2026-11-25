@@ -16,8 +16,8 @@ An **enum** in `Root.Township`, `Alta.Forests`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-merge" /><code>{"Merge = 2"}</code> |  |
-| <Link id="m-normal" /><code>{"Normal = 0"}</code> |  |
-| <Link id="m-waterfall" /><code>{"Waterfall = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-merge" /><code>{"Merge = 2"}</code> |
+| <Link id="m-normal" /><code>{"Normal = 0"}</code> |
+| <Link id="m-waterfall" /><code>{"Waterfall = 1"}</code> |

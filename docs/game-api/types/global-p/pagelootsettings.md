@@ -20,12 +20,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PageLootSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PageLootSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-excludedproviderids" /><code>{"int[] excludedProviderIds"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-excludedproviderids" /><code>{"int[] excludedProviderIds"}</code> |

@@ -21,17 +21,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpecificCraftTaskArgument("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" slot, "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" insert)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpecificCraftTaskArgument("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" slot, "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" insert)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |  |
-| <Link id="m-insert" /><code><Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" Insert { get; }"}</code> |  |
-| <Link id="m-slot" /><code><Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" Slot { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
+| <Link id="m-insert" /><code><Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" Insert { get; }"}</code> |
+| <Link id="m-slot" /><code><Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" Slot { get; }"}</code> |
 
 ## Used in
 

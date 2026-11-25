@@ -21,22 +21,32 @@ Breaks an item on a hard hit.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PickupBreakOnImpact()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PickupBreakOnImpact()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isrecentgrab" /><code>{"private bool isRecentGrab"}</code> |  |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |  |
-| <Link id="m-timeddisablecoroutine" /><code>{"private Coroutine timedDisableCoroutine"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isrecentgrab" /><code>{"private bool isRecentGrab"}</code> |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
+| <Link id="m-timeddisablecoroutine" /><code>{"private Coroutine timedDisableCoroutine"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-disablebreak" /><code>{"private void DisableBreak("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |  |
-| <Link id="m-timedbreakdisable" /><code>{"private IEnumerator TimedBreakDisable() (iterator)"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-disablebreak" /><code>{"private void DisableBreak("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |
+| <Link id="m-timedbreakdisable" /><code>{"private IEnumerator TimedBreakDisable() (iterator)"}</code> |
+
+</details>

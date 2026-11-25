@@ -18,15 +18,15 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NameBoardEmblem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NameBoardEmblem()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-close" /><code>{"virtual void Close(Action callBack)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-close" /><code>{"virtual void Close(Action callBack)"}</code> |
 
 ## Used in
 

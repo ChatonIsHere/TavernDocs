@@ -17,32 +17,45 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BakeLODGroupGrouper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BakeLODGroupGrouper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-axisframes" /><code>{"private int axisFrames"}</code> |  |
-| <Link id="m-btnbake" /><code>{"private bool btnBake"}</code> |  |
-| <Link id="m-forcebakeeverytime" /><code>{"private bool forceBakeEveryTime"}</code> |  |
-| <Link id="m-impostortype" /><code>{"private "}<Link to="/game-api/types/global-i-l/impostortype">{"ImpostorType"}</Link>{" impostorType"}</code> |  |
-| <Link id="m-isbakingimpostor" /><code>{"private bool isBakingImpostor"}</code> |  |
-| <Link id="m-lodreplacement" /><code>{"private LODReplacement lodReplacement"}</code> |  |
-| <Link id="m-pixelpadding" /><code>{"private int pixelPadding"}</code> |  |
-| <Link id="m-texturesize" /><code>{"private int textureSize"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-axisframes" /><code>{"private int axisFrames"}</code> |
+| <Link id="m-btnbake" /><code>{"private bool btnBake"}</code> |
+| <Link id="m-forcebakeeverytime" /><code>{"private bool forceBakeEveryTime"}</code> |
+| <Link id="m-impostortype" /><code>{"private "}<Link to="/game-api/types/global-i-l/impostortype">{"ImpostorType"}</Link>{" impostorType"}</code> |
+| <Link id="m-isbakingimpostor" /><code>{"private bool isBakingImpostor"}</code> |
+| <Link id="m-lodreplacement" /><code>{"private LODReplacement lodReplacement"}</code> |
+| <Link id="m-pixelpadding" /><code>{"private int pixelPadding"}</code> |
+| <Link id="m-texturesize" /><code>{"private int textureSize"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isbaked" /><code>{"bool IsBaked { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isbaked" /><code>{"bool IsBaked { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bake" /><code>{"void Bake()"}</code> |  |
-| <Link id="m-bakeimpostor" /><code>{"private void BakeImpostor(LODGroup lodGroup, Renderer[] lod0Renderers)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"void Bake()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-bakeimpostor" /><code>{"private void BakeImpostor(LODGroup lodGroup, Renderer[] lod0Renderers)"}</code> |
+
+</details>

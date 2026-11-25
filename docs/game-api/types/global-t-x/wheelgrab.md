@@ -19,39 +19,52 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WheelGrab()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WheelGrab()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentangle" /><code>{"private float currentAngle"}</code> |  |
-| <Link id="m-direction" /><code>{"private float direction"}</code> |  |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |  |
-| <Link id="m-progresschanged" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" progressChanged"}</code> |  |
-| <Link id="m-progressperrevolution" /><code>{"private float progressPerRevolution"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentangle" /><code>{"private float currentAngle"}</code> |
+| <Link id="m-direction" /><code>{"private float direction"}</code> |
+| <Link id="m-progress" /><code>{"private float progress"}</code> |
+| <Link id="m-progresschanged" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" progressChanged"}</code> |
+| <Link id="m-progressperrevolution" /><code>{"private float progressPerRevolution"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-progress-2" /><code>{"float Progress { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-progress-2" /><code>{"float Progress { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-progresschanged-2" /><code>{"event Action<float, float> ProgressChanged"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-progresschanged-2" /><code>{"event Action<float, float> ProgressChanged"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setprogress" /><code>{"void SetProgress(float newValue)"}</code> |  |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
-| <Link id="m-updateprogress" /><code>{"private void UpdateProgress()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setprogress" /><code>{"void SetProgress(float newValue)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
+| <Link id="m-updateprogress" /><code>{"private void UpdateProgress()"}</code> |
+
+</details>
 
 ## Used in
 

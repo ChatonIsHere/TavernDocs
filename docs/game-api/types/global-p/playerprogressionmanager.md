@@ -21,25 +21,30 @@ Per-player component that holds experience, levels and unlocked skill slots for 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerProgressionManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerProgressionManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-canbuymoreskills" /><code>{"private bool canBuyMoreSkills"}</code> |  |
-| <Link id="m-currentlyownedskillscount" /><code>{"private int currentlyOwnedSkillsCount"}</code> |  |
-| <Link id="m-experiencebooststat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" experienceBoostStat"}</code> |  |
-| <Link id="m-experiencepopup" /><code>{"private static "}<Link to="/game-api/types/global-t-x/togglebool">{"ToggleBool"}</Link>{" experiencePopup"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-sendingskill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" sendingSkill"}</code> |  |
-| <Link id="m-skilllevel" /><code>{"private Dictionary<uint, int> skillLevel"}</code> |  |
-| <Link id="m-skillmessage" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" skillMessage"}</code> |  |
-| <Link id="m-synclevelupeffect" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncLevelUpEffect"}</code> |  |
-| <Link id="m-syncpracticedfull" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPracticedFull"}</code> |  |
-| <Link id="m-syncslotpractice" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncclass-t">{"MethodSyncClass"}</Link>{"<"}<Link to="/game-api/types/global-p/playerprogressionmanager-practicetuple">{"PlayerProgressionManager.PracticeTuple"}</Link>{"> syncSlotPractice"}</code> |  |
+<details>
+<summary>11 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-canbuymoreskills" /><code>{"private bool canBuyMoreSkills"}</code> |
+| <Link id="m-currentlyownedskillscount" /><code>{"private int currentlyOwnedSkillsCount"}</code> |
+| <Link id="m-experiencebooststat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" experienceBoostStat"}</code> |
+| <Link id="m-experiencepopup" /><code>{"private static "}<Link to="/game-api/types/global-t-x/togglebool">{"ToggleBool"}</Link>{" experiencePopup"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-sendingskill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" sendingSkill"}</code> |
+| <Link id="m-skilllevel" /><code>{"private Dictionary<uint, int> skillLevel"}</code> |
+| <Link id="m-skillmessage" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" skillMessage"}</code> |
+| <Link id="m-synclevelupeffect" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncLevelUpEffect"}</code> |
+| <Link id="m-syncpracticedfull" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPracticedFull"}</code> |
+| <Link id="m-syncslotpractice" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncclass-t">{"MethodSyncClass"}</Link>{"<"}<Link to="/game-api/types/global-p/playerprogressionmanager-practicetuple">{"PlayerProgressionManager.PracticeTuple"}</Link>{"> syncSlotPractice"}</code> |
+
+</details>
 
 ## Properties
 
@@ -84,19 +89,27 @@ Per-player component that holds experience, levels and unlocked skill slots for 
 | <Link id="m-syncpracticedtoplayer" /><code>{"void SyncPracticedToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends all practised slots to one player; called when that player connects. |
 | <Link id="m-unlockslot" /><code>{"void UnlockSlot("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot, bool isConsumingPoints = true, bool isFromLoad = false)"}</code> | Unlocks a slot, spending points unless told not to. Refuses (and logs) when dependencies are missing, except when loading. |
 | <Link id="m-updatecounts" /><code>{"void UpdateCounts()"}</code> | Rebuilds the owned skill count and skill levels from the unlocked slots. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-characterdied" /><code>{"private void CharacterDied("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingBlow)"}</code> |  |
-| <Link id="m-createpathexperience" /><code>{"private "}<Link to="/game-api/types/global-p/pathexperience">{"PathExperience"}</Link>{" CreatePathExperience("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
-| <Link id="m-initialize" /><code>{"private void Initialize("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
-| <Link id="m-networklevelupeffect" /><code>{"private void NetworkLevelUpEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isLevelCap)"}</code> |  |
-| <Link id="m-networkskillmessage" /><code>{"private void NetworkSkillMessage("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" connectionPlayer, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-onleveledup" /><code>{"private void OnLeveledUp(bool isLevelCap)"}</code> |  |
-| <Link id="m-onupdatedpoints" /><code>{"private void OnUpdatedPoints("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
-| <Link id="m-registerstat" /><code>{"private void RegisterStat("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter)"}</code> |  |
-| <Link id="m-saveserialize" /><code>{"private void SaveSerialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-serializeallpracticedslots" /><code>{"private void SerializeAllPracticedSlots("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncpracticedfull-2" /><code>{"private void SyncPracticedFull("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncslotpracticed" /><code>{"private void SyncSlotPracticed("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/playerprogressionmanager-practicetuple">{"PlayerProgressionManager.PracticeTuple"}</Link>{" arguments)"}</code> |  |
+
+<details>
+<summary>13 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-characterdied" /><code>{"private void CharacterDied("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingBlow)"}</code> |
+| <Link id="m-createpathexperience" /><code>{"private "}<Link to="/game-api/types/global-p/pathexperience">{"PathExperience"}</Link>{" CreatePathExperience("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |
+| <Link id="m-initialize" /><code>{"private void Initialize("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
+| <Link id="m-networklevelupeffect" /><code>{"private void NetworkLevelUpEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isLevelCap)"}</code> |
+| <Link id="m-networkskillmessage" /><code>{"private void NetworkSkillMessage("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" connectionPlayer, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-onleveledup" /><code>{"private void OnLeveledUp(bool isLevelCap)"}</code> |
+| <Link id="m-onupdatedpoints" /><code>{"private void OnUpdatedPoints("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |
+| <Link id="m-registerstat" /><code>{"private void RegisterStat("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter)"}</code> |
+| <Link id="m-saveserialize" /><code>{"private void SaveSerialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-serializeallpracticedslots" /><code>{"private void SerializeAllPracticedSlots("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-syncpracticedfull-2" /><code>{"private void SyncPracticedFull("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-syncslotpracticed" /><code>{"private void SyncSlotPracticed("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/playerprogressionmanager-practicetuple">{"PlayerProgressionManager.PracticeTuple"}</Link>{" arguments)"}</code> |
+
+</details>
 
 ## Used in
 

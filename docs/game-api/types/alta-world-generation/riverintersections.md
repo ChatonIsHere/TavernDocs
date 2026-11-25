@@ -17,22 +17,27 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RiverIntersections()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RiverIntersections()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-intersections" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{", List<"}<Link to="/game-api/types/alta-world-generation/riverintersections-intersection">{"RiverIntersections.Intersection"}</Link>{">> intersections"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-intersections" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{", List<"}<Link to="/game-api/types/alta-world-generation/riverintersections-intersection">{"RiverIntersections.Intersection"}</Link>{">> intersections"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-evaluate" /><code>{"void Evaluate("}<Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{" river)"}</code> |  |
-| <Link id="m-get" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/riverintersections-intersection">{"RiverIntersections.Intersection"}</Link>{"> Get("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-evaluate" /><code>{"void Evaluate("}<Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{" river)"}</code> |
+| <Link id="m-get" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/riverintersections-intersection">{"RiverIntersections.Intersection"}</Link>{"> Get("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
 
 ## Used in
 

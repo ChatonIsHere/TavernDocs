@@ -17,24 +17,34 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TouchScreenButton()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TouchScreenButton()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-touchsize" /><code>{"private Vector2 touchSize"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-touchsize" /><code>{"private Vector2 touchSize"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-buttonsize" /><code>{"Vector2 ButtonSize { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-buttonsize" /><code>{"Vector2 ButtonSize { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

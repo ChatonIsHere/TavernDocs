@@ -17,12 +17,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VirtualCurrencyPurchaseRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VirtualCurrencyPurchaseRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-virtualcurrencypackageidentifier" /><code>{"int VirtualCurrencyPackageIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-virtualcurrencypackageidentifier" /><code>{"int VirtualCurrencyPackageIdentifier { get; set; }"}</code> |

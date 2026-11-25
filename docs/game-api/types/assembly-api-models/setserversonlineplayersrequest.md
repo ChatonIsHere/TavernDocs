@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SetServersOnlinePlayersRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SetServersOnlinePlayersRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onlineplayers" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> OnlinePlayers { get; set; }"}</code> |  |
-| <Link id="m-session" /><code>{"int Session { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onlineplayers" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> OnlinePlayers { get; set; }"}</code> |
+| <Link id="m-session" /><code>{"int Session { get; set; }"}</code> |
 
 ## Used in
 

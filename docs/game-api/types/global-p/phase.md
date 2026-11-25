@@ -17,38 +17,51 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Phase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Phase()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-details" /><code>{"string details"}</code> |  |
-| <Link id="m-active" /><code>{"private "}<Link to="/game-api/types/alta-items/logicboolsender">{"LogicBoolSender"}</Link>{" active"}</code> |  |
-| <Link id="m-complete" /><code>{"private "}<Link to="/game-api/types/alta-items/logicboolsender">{"LogicBoolSender"}</Link>{" complete"}</code> |  |
-| <Link id="m-markcomplete" /><code>{"private "}<Link to="/game-api/types/alta-items/logicboolreceiver">{"LogicBoolReceiver"}</Link>{" markComplete"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-details" /><code>{"string details"}</code> |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-active" /><code>{"private "}<Link to="/game-api/types/alta-items/logicboolsender">{"LogicBoolSender"}</Link>{" active"}</code> |
+| <Link id="m-complete" /><code>{"private "}<Link to="/game-api/types/alta-items/logicboolsender">{"LogicBoolSender"}</Link>{" complete"}</code> |
+| <Link id="m-markcomplete" /><code>{"private "}<Link to="/game-api/types/alta-items/logicboolreceiver">{"LogicBoolReceiver"}</Link>{" markComplete"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ismarkedcomplete" /><code>{"bool IsMarkedComplete { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ismarkedcomplete" /><code>{"bool IsMarkedComplete { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-markedcompleted" /><code>{"event UnityAction MarkedCompleted"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-markedcompleted" /><code>{"event UnityAction MarkedCompleted"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-begin" /><code>{"private void IPhase.Begin()"}</code> |  |
-| <Link id="m-complete-2" /><code>{"private void IPhase.Complete()"}</code> |  |
-| <Link id="m-resetstate" /><code>{"private void IPhase.ResetState()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-begin" /><code>{"private void IPhase.Begin()"}</code> |
+| <Link id="m-complete-2" /><code>{"private void IPhase.Complete()"}</code> |
+| <Link id="m-resetstate" /><code>{"private void IPhase.ResetState()"}</code> |
+
+</details>
 
 ## Used in
 

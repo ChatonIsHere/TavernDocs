@@ -17,13 +17,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StaticDrop()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StaticDrop()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-destroy" /><code>{"private void Destroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" obj)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-destroy" /><code>{"private void Destroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" obj)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>

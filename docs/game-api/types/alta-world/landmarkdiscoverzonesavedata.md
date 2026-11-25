@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Alta.Map`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LandmarkDiscoverZoneSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LandmarkDiscoverZoneSaveData()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> |

@@ -20,21 +20,29 @@ Makes an object trail smoothly after a target's position plus an offset, in late
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected LerpFollowBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected LerpFollowBase()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-cachedtransform" /><code>{"protected Transform cachedTransform"}</code> | This object's transform. |
-| <Link id="m-isdisabledonserver" /><code>{"private bool isDisabledOnServer"}</code> |  |
-| <Link id="m-lerppersecond" /><code>{"private float lerpPerSecond"}</code> |  |
 | <Link id="m-oldposition" /><code>{"protected Vector3 oldPosition"}</code> | Position from the last update. |
-| <Link id="m-staticupdatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" staticUpdateModule"}</code> |  |
-| <Link id="m-updatemodule" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateModule"}</code> |  |
-| <Link id="m-worldoffset" /><code>{"private Vector3 worldOffset"}</code> |  |
+
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isdisabledonserver" /><code>{"private bool isDisabledOnServer"}</code> |
+| <Link id="m-lerppersecond" /><code>{"private float lerpPerSecond"}</code> |
+| <Link id="m-staticupdatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" staticUpdateModule"}</code> |
+| <Link id="m-updatemodule" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateModule"}</code> |
+| <Link id="m-worldoffset" /><code>{"private Vector3 worldOffset"}</code> |
+
+</details>
 
 ## Properties
 
@@ -49,7 +57,15 @@ Makes an object trail smoothly after a target's position plus an offset, in late
 | --- | --- |
 | <Link id="m-settarget" /><code>{"virtual void SetTarget(T target)"}</code> | Enables following when the target is not null. |
 | <Link id="m-start" /><code>{"virtual void Start()"}</code> | Snaps to the target, and disables itself on a server unless that is turned off. |
-| <Link id="m-movementupdate" /><code>{"private void MovementUpdate()"}</code> |  |
 | <Link id="m-moving" /><code>{"protected virtual void Moving(Vector3 from, Vector3 to)"}</code> | Called each update with the old and target positions, for subclasses. |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-movementupdate" /><code>{"private void MovementUpdate()"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+
+</details>

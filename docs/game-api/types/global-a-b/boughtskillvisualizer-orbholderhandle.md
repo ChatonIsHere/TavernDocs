@@ -17,32 +17,37 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OrbHolderHandle("}<Link to="/game-api/types/global-s/skillorbholder">{"SkillOrbHolder"}</Link>{" holder, Vector3 orbOffset)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OrbHolderHandle("}<Link to="/game-api/types/global-s/skillorbholder">{"SkillOrbHolder"}</Link>{" holder, Vector3 orbOffset)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-holder" /><code>{"private "}<Link to="/game-api/types/global-s/skillorbholder">{"SkillOrbHolder"}</Link>{" holder"}</code> |  |
-| <Link id="m-orboffset" /><code>{"private Vector3 orbOffset"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-holder" /><code>{"private "}<Link to="/game-api/types/global-s/skillorbholder">{"SkillOrbHolder"}</Link>{" holder"}</code> |
+| <Link id="m-orboffset" /><code>{"private Vector3 orbOffset"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-orb" /><code><Link to="/game-api/types/global-a-b/boughtskillorbreplacer">{"BoughtSkillOrbReplacer"}</Link>{" Orb { get; private set; }"}</code> |  |
-| <Link id="m-slothash" /><code>{"uint SlotHash { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-orb" /><code><Link to="/game-api/types/global-a-b/boughtskillorbreplacer">{"BoughtSkillOrbReplacer"}</Link>{" Orb { get; private set; }"}</code> |
+| <Link id="m-slothash" /><code>{"uint SlotHash { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-assignorb" /><code>{"void AssignOrb("}<Link to="/game-api/types/global-a-b/boughtskillorbreplacer">{"BoughtSkillOrbReplacer"}</Link>{" orb)"}</code> |  |
-| <Link id="m-clearorb" /><code>{"void ClearOrb(bool isOpen, bool isInstant = false)"}</code> |  |
-| <Link id="m-destroyholder" /><code>{"void DestroyHolder()"}</code> |  |
-| <Link id="m-updatelocked" /><code>{"void UpdateLocked(bool isOpen)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-assignorb" /><code>{"void AssignOrb("}<Link to="/game-api/types/global-a-b/boughtskillorbreplacer">{"BoughtSkillOrbReplacer"}</Link>{" orb)"}</code> |
+| <Link id="m-clearorb" /><code>{"void ClearOrb(bool isOpen, bool isInstant = false)"}</code> |
+| <Link id="m-destroyholder" /><code>{"void DestroyHolder()"}</code> |
+| <Link id="m-updatelocked" /><code>{"void UpdateLocked(bool isOpen)"}</code> |
 
 ## Used in
 

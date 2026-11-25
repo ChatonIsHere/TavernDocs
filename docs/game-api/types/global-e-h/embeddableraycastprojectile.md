@@ -17,20 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EmbeddableRaycastProjectile()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EmbeddableRaycastProjectile()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-embeddable" /><code>{"private "}<Link to="/game-api/types/global-e-h/embeddable">{"Embeddable"}</Link>{" embeddable"}</code> |  |
-| <Link id="m-raycastprojectile" /><code>{"private "}<Link to="/game-api/types/global-q-r/raycastprojectile">{"RaycastProjectile"}</Link>{" raycastProjectile"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-embeddable" /><code>{"private "}<Link to="/game-api/types/global-e-h/embeddable">{"Embeddable"}</Link>{" embeddable"}</code> |
+| <Link id="m-raycastprojectile" /><code>{"private "}<Link to="/game-api/types/global-q-r/raycastprojectile">{"RaycastProjectile"}</Link>{" raycastProjectile"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generatehitforembeddable" /><code>{"private void GenerateHitForEmbeddable(RaycastHit hit)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-generatehitforembeddable" /><code>{"private void GenerateHitForEmbeddable(RaycastHit hit)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>

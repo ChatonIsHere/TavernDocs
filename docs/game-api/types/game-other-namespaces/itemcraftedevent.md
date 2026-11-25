@@ -18,13 +18,13 @@ A **class** in `Root.Township`, `ATT.EventBus.TownshipEvents`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ItemCraftedEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, List<uint> itemPartHashes)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ItemCraftedEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, List<uint> itemPartHashes)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-itemparthashes" /><code>{"List<uint> ItemPartHashes { get; }"}</code> |  |
-| <Link id="m-source" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-itemparthashes" /><code>{"List<uint> ItemPartHashes { get; }"}</code> |
+| <Link id="m-source" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; }"}</code> |

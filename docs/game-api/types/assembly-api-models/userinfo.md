@@ -21,10 +21,10 @@ A user as returned by the Alta web API: id and username. Equal when the ids matc
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UserInfo()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"UserInfo(int identifier, string username)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UserInfo()"}</code> |
+| <Link id="m-ctor-2" /><code>{"UserInfo(int identifier, string username)"}</code> |
 
 ## Properties
 
@@ -32,7 +32,15 @@ A user as returned by the Alta web API: id and username. Equal when the ids matc
 | --- | --- |
 | <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | The user's account id. |
 | <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | The user's name. |
-| <Link id="m-alta-api-datatransfermodels-models-responses-inamedentity-name" /><code>{"private string Alta.Api.DataTransferModels.Models.Responses.INamedEntity.Name { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-api-datatransfermodels-models-responses-inamedentity-name" /><code>{"private string Alta.Api.DataTransferModels.Models.Responses.INamedEntity.Name { get; }"}</code> |
+
+</details>
 
 ## Methods
 

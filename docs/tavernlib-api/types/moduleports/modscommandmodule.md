@@ -20,6 +20,9 @@ TavernLib's `modmanager` console module, with `list` (every mod in `Mods` and it
 
 ## Methods
 
+<details>
+<summary>6 private and internal methods</summary>
+
 | Member | What it is |
 | --- | --- |
 | <Link id="m-addrepo" /><code>{"private static string AddRepo(string url)"}</code> |  |
@@ -28,3 +31,5 @@ TavernLib's `modmanager` console module, with `list` (every mod in `Mods` and it
 | <Link id="m-reposhorthand" /><code>{"private static string RepoShorthand(string url)"}</code> |  |
 | <Link id="m-state" /><code>{"private static string State(bool enabled)"}</code> |  |
 | <Link id="m-targets" /><code>{"private static string Targets("}<Link to="/tavernlib-api/types/backend-mods/modrecord">{"ModRecord"}</Link>{" record)"}</code> |  |
+
+</details>

@@ -16,18 +16,18 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TurnPageArguments()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"TurnPageArguments(int spawnedIndex, int direction, bool isSkipping)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TurnPageArguments()"}</code> |
+| <Link id="m-ctor-2" /><code>{"TurnPageArguments(int spawnedIndex, int direction, bool isSkipping)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-direction" /><code>{"int direction"}</code> |  |
-| <Link id="m-isskipping" /><code>{"bool isSkipping"}</code> |  |
-| <Link id="m-spawnedindex" /><code>{"int spawnedIndex"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-direction" /><code>{"int direction"}</code> |
+| <Link id="m-isskipping" /><code>{"bool isSkipping"}</code> |
+| <Link id="m-spawnedindex" /><code>{"int spawnedIndex"}</code> |
 
 ## Used in
 

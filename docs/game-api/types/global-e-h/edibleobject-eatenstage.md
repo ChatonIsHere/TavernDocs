@@ -17,25 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EatenStage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EatenStage()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-biteduration" /><code>{"private float biteDuration"}</code> |  |
-| <Link id="m-biteeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" biteEffect"}</code> |  |
-| <Link id="m-numberofbites" /><code>{"private int numberOfBites"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-biteduration" /><code>{"private float biteDuration"}</code> |
+| <Link id="m-biteeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" biteEffect"}</code> |
+| <Link id="m-numberofbites" /><code>{"private int numberOfBites"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-biteduration-2" /><code>{"float BiteDuration { get; }"}</code> |  |
-| <Link id="m-biteeffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" BiteEffect { get; }"}</code> |  |
-| <Link id="m-numberofbites-2" /><code>{"int NumberOfBites { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-biteduration-2" /><code>{"float BiteDuration { get; }"}</code> |
+| <Link id="m-biteeffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" BiteEffect { get; }"}</code> |
+| <Link id="m-numberofbites-2" /><code>{"int NumberOfBites { get; }"}</code> |
 
 ## Used in
 

@@ -19,30 +19,43 @@ Static folders, set up the first time anything touches the class.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaIO()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaIO()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gametitle" /><code>{"const string GameTitle"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gametitle" /><code>{"const string GameTitle"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cachefolder" /><code>{"static "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" CacheFolder { get; private set; }"}</code> |  |
-| <Link id="m-clientfolder" /><code>{"static "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" ClientFolder { get; private set; }"}</code> |  |
-| <Link id="m-gamefolder" /><code>{"static "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" GameFolder { get; private set; }"}</code> |  |
-| <Link id="m-persistentstoragefolder" /><code>{"static "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" PersistentStorageFolder { get; private set; }"}</code> |  |
-| <Link id="m-serversfolder" /><code>{"static "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" ServersFolder { get; private set; }"}</code> |  |
-| <Link id="m-storagefolder" /><code>{"static "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" StorageFolder { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cachefolder" /><code>{"static "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" CacheFolder { get; private set; }"}</code> |
+| <Link id="m-clientfolder" /><code>{"static "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" ClientFolder { get; private set; }"}</code> |
+| <Link id="m-gamefolder" /><code>{"static "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" GameFolder { get; private set; }"}</code> |
+| <Link id="m-persistentstoragefolder" /><code>{"static "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" PersistentStorageFolder { get; private set; }"}</code> |
+| <Link id="m-serversfolder" /><code>{"static "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" ServersFolder { get; private set; }"}</code> |
+| <Link id="m-storagefolder" /><code>{"static "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" StorageFolder { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setsavepath" /><code>{"private static void SetSavePath()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-setsavepath" /><code>{"private static void SetSavePath()"}</code> |
+
+</details>

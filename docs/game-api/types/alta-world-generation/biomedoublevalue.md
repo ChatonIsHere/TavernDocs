@@ -17,6 +17,6 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BiomeDoubleValue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BiomeDoubleValue()"}</code> |

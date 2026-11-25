@@ -21,22 +21,27 @@ Cave map generator part that tidies open areas: fills rooms below a minimum size
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RoomFixes()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RoomFixes()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-linethreshold" /><code>{"private float lineThreshold"}</code> |  |
-| <Link id="m-manmadelayer" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" manMadeLayer"}</code> |  |
-| <Link id="m-maximumcorridorwidth" /><code>{"private float maximumCorridorWidth"}</code> |  |
-| <Link id="m-minimumcorridorwidth" /><code>{"private float minimumCorridorWidth"}</code> |  |
-| <Link id="m-minimumroomsize" /><code>{"private int minimumRoomSize"}</code> |  |
-| <Link id="m-room" /><code>{"private int room"}</code> |  |
-| <Link id="m-wall" /><code>{"private int wall"}</code> |  |
-| <Link id="m-yindex" /><code>{"private int yIndex"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-linethreshold" /><code>{"private float lineThreshold"}</code> |
+| <Link id="m-manmadelayer" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" manMadeLayer"}</code> |
+| <Link id="m-maximumcorridorwidth" /><code>{"private float maximumCorridorWidth"}</code> |
+| <Link id="m-minimumcorridorwidth" /><code>{"private float minimumCorridorWidth"}</code> |
+| <Link id="m-minimumroomsize" /><code>{"private int minimumRoomSize"}</code> |
+| <Link id="m-room" /><code>{"private int room"}</code> |
+| <Link id="m-wall" /><code>{"private int wall"}</code> |
+| <Link id="m-yindex" /><code>{"private int yIndex"}</code> |
+
+</details>
 
 ## Properties
 

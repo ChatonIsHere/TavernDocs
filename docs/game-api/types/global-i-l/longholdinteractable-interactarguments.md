@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-interactoridentifier" /><code>{"uint interactorIdentifier"}</code> |  |
-| <Link id="m-islonghold" /><code>{"bool isLongHold"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-interactoridentifier" /><code>{"uint interactorIdentifier"}</code> |
+| <Link id="m-islonghold" /><code>{"bool isLongHold"}</code> |
 
 ## Used in
 

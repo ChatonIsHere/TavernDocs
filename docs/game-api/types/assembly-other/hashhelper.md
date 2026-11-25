@@ -19,20 +19,36 @@ The hashing the game uses: `Hash(string)`, `HashCompressed`, `GetHashCodeForStri
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hashbits" /><code>{"const int HashBits"}</code> |  |
-| <Link id="m-maxhash" /><code>{"const ulong MaxHash"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-savinghashes" /><code>{"private static Dictionary<Type, uint> savingHashes"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hashbits" /><code>{"const int HashBits"}</code> |
+| <Link id="m-maxhash" /><code>{"const ulong MaxHash"}</code> |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-savinghashes" /><code>{"private static Dictionary<Type, uint> savingHashes"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gethashcodeforstring" /><code>{"static int GetHashCodeForString(string src)"}</code> |  |
-| <Link id="m-hash" /><code>{"static uint Hash(string text)"}</code> |  |
-| <Link id="m-hashcompressed" /><code>{"static uint HashCompressed(string text)"}</code> |  |
-| <Link id="m-validate" /><code>{"static bool Validate(ref int hash, Object current, Object target)"}</code> |  |
-| <Link id="m-validate-2" /><code>{"static bool Validate(ref int hash, Object target)"}</code> |  |
-| <Link id="m-getnewhash" /><code>{"private static int GetNewHash(Object target)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gethashcodeforstring" /><code>{"static int GetHashCodeForString(string src)"}</code> |
+| <Link id="m-hash" /><code>{"static uint Hash(string text)"}</code> |
+| <Link id="m-hashcompressed" /><code>{"static uint HashCompressed(string text)"}</code> |
+| <Link id="m-validate" /><code>{"static bool Validate(ref int hash, Object current, Object target)"}</code> |
+| <Link id="m-validate-2" /><code>{"static bool Validate(ref int hash, Object target)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getnewhash" /><code>{"private static int GetNewHash(Object target)"}</code> |
+
+</details>

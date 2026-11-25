@@ -23,9 +23,9 @@ A hashed sprite asset that can be stamped onto a page (book or paper). Stored un
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Glyph()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Glyph()"}</code> |
 
 ## Fields
 
@@ -36,7 +36,15 @@ A hashed sprite asset that can be stamped onto a page (book or paper). Stored un
 | <Link id="m-scaleinterval" /><code>{"const float ScaleInterval"}</code> | Step a glyph's scale is rounded to (0.1). |
 | <Link id="m-scalemaximum" /><code>{"const float ScaleMaximum"}</code> | Largest allowed glyph scale (4.5). |
 | <Link id="m-scaleminimum" /><code>{"const float ScaleMinimum"}</code> | Smallest allowed glyph scale (0.25). |
-| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> |  |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> |
+
+</details>
 
 ## Properties
 

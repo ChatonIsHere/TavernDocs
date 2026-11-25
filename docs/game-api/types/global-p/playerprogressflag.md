@@ -21,9 +21,9 @@ Base for per-player completion flags looked up by hash: game achievements and mi
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PlayerProgressFlag()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PlayerProgressFlag()"}</code> |
 
 ## Methods
 

@@ -19,9 +19,9 @@ What a mod record says is installed for one target.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InstalledTarget()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InstalledTarget()"}</code> |
 
 ## Properties
 

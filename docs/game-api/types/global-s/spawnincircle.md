@@ -18,24 +18,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnInCircle()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpawnInCircle()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-items" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" items"}</code> |  |
-| <Link id="m-maxradius" /><code>{"private float maxRadius"}</code> |  |
-| <Link id="m-minradius" /><code>{"private float minRadius"}</code> |  |
-| <Link id="m-numofitems" /><code>{"private int numOfItems"}</code> |  |
-| <Link id="m-randomoffset" /><code>{"private Vector3 randomOffset"}</code> |  |
-| <Link id="m-shouldbekinematic" /><code>{"private bool shouldBeKinematic"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-items" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" items"}</code> |
+| <Link id="m-maxradius" /><code>{"private float maxRadius"}</code> |
+| <Link id="m-minradius" /><code>{"private float minRadius"}</code> |
+| <Link id="m-numofitems" /><code>{"private int numOfItems"}</code> |
+| <Link id="m-randomoffset" /><code>{"private Vector3 randomOffset"}</code> |
+| <Link id="m-shouldbekinematic" /><code>{"private bool shouldBeKinematic"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-circlespawn" /><code>{"void CircleSpawn()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-circlespawn" /><code>{"void CircleSpawn()"}</code> |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |

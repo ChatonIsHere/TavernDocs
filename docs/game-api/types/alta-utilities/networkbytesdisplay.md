@@ -17,27 +17,32 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkBytesDisplay()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkBytesDisplay()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bytesperinterval" /><code>{"private float bytesPerInterval"}</code> |  |
-| <Link id="m-lastbytes" /><code>{"private int lastBytes"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bytesperinterval" /><code>{"private float bytesPerInterval"}</code> |
+| <Link id="m-lastbytes" /><code>{"private int lastBytes"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-internalupdate" /><code>{"override void InternalUpdate("}<Link to="/game-api/types/alta-utilities/livedatadisplayview">{"LiveDataDisplayView"}</Link>{" view)"}</code> |  |
-| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> |  |
-| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-internalupdate" /><code>{"override void InternalUpdate("}<Link to="/game-api/types/alta-utilities/livedatadisplayview">{"LiveDataDisplayView"}</Link>{" view)"}</code> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> |
+| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> |

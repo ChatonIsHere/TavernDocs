@@ -21,9 +21,9 @@ One direction of an `Edge` in the forest generator's node graph, with links to t
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Path("}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge, bool isA)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Path("}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge, bool isA)"}</code> |
 
 ## Properties
 
@@ -47,8 +47,16 @@ One direction of an `Edge` in the forest generator's node graph, with links to t
 | <Link id="m-isinside" /><code>{"bool IsInside("}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" path, Vector2 position, out float angleDot)"}</code> | Whether a position lies inside the corner this path forms with another path that shares a node. |
 | <Link id="m-lerp3d" /><code>{"Vector3 Lerp3d(float t)"}</code> | Point along the path in 3D, from start (0) to end (1). |
 | <Link id="m-progressfromangle" /><code>{"void ProgressFromAngle("}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" path, ref float thisProgress, ref float pathProgress)"}</code> | Flips the two progress values so both measure from the shared node of the corner. |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-insidedot-2" /><code>{"private float InsideDot(Vector2 origin, Vector2 arm1, Vector2 arm2, Vector2 position, out float armsDot)"}</code> | For a path sharing a node, dot between the corner's bisector and the direction to a position. Also outputs the corner's dot. |
 | <Link id="m-iswithin" /><code>{"private bool IsWithin(Vector2 origin, Vector2 arm1, Vector2 arm2, Vector2 position, out float armsDot)"}</code> |  |
+
+</details>
 
 ## Used in
 

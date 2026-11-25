@@ -21,20 +21,25 @@ The spriggull creature. Runs passive actions, charges its beak while jump attack
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Spriggull()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Spriggull()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-beak" /><code>{"private "}<Link to="/game-api/types/alta-items/fixedimpactor">{"FixedImpactor"}</Link>{" beak"}</code> |  |
-| <Link id="m-body" /><code>{"private Transform body"}</code> |  |
-| <Link id="m-flailaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{" flailAction"}</code> |  |
-| <Link id="m-flailingaction" /><code>{"private static "}<Link to="/game-api/types/alta-intelligence/actiontarget-tagent">{"ActionTarget"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/spriggull">{"Spriggull"}</Link>{"> flailingAction"}</code> |  |
-| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> |  |
-| <Link id="m-passiveactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-beak" /><code>{"private "}<Link to="/game-api/types/alta-items/fixedimpactor">{"FixedImpactor"}</Link>{" beak"}</code> |
+| <Link id="m-body" /><code>{"private Transform body"}</code> |
+| <Link id="m-flailaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{" flailAction"}</code> |
+| <Link id="m-flailingaction" /><code>{"private static "}<Link to="/game-api/types/alta-intelligence/actiontarget-tagent">{"ActionTarget"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/spriggull">{"Spriggull"}</Link>{"> flailingAction"}</code> |
+| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> |
+| <Link id="m-passiveactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> |
+
+</details>
 
 ## Properties
 
@@ -54,7 +59,15 @@ The spriggull creature. Runs passive actions, charges its beak while jump attack
 | <Link id="m-initializeai" /><code>{"protected override void InitializeAi()"}</code> | Starts on the passive action set. |
 | <Link id="m-initializestatic" /><code>{"protected override void InitializeStatic()"}</code> | Builds the shared passive action set and flail action. |
 | <Link id="m-killed" /><code>{"protected override void Killed("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthobject)"}</code> | Turns off its collision and (server) sets the animator's IsFlailing. |
-| <Link id="m-setjumping" /><code>{"private void Alta.Intelligence.IJumpAttacker.SetJumping(bool isJumping)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-setjumping" /><code>{"private void Alta.Intelligence.IJumpAttacker.SetJumping(bool isJumping)"}</code> |
+
+</details>
 
 ## Used in
 

@@ -20,13 +20,21 @@ Forces the scene a client joins from `/tutorialScene` or `/questScene`, with a p
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SceneIndexPatches()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SceneIndexPatches()"}</code> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-overridesceneindex" /><code>{"static void OverrideSceneIndex("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | Postfix on the `JoinedServerGameMode` constructor that sets the server info's `SceneIndex` to the forced scene, if there is one. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-forcedsceneindex" /><code>{"internal static int? ForcedSceneIndex()"}</code> | Internal: 1 with `/tutorialScene`, 4 with `/questScene`, otherwise `null`. |
+
+</details>

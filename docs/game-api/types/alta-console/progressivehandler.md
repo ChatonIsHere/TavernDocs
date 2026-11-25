@@ -16,9 +16,9 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProgressiveHandler()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProgressiveHandler()"}</code> |
 
 ## Used in
 

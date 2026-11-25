@@ -17,16 +17,16 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ApliedSlotTuple("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot, "}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" orb)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ApliedSlotTuple("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot, "}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" orb)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-orb" /><code><Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" Orb { get; }"}</code> |  |
-| <Link id="m-slot" /><code><Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" Slot { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-orb" /><code><Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" Orb { get; }"}</code> |
+| <Link id="m-slot" /><code><Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" Slot { get; }"}</code> |
 
 ## Used in
 

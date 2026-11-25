@@ -17,21 +17,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PuzzleDoor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PuzzleDoor()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-condition" /><code>{"private "}<Link to="/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{" condition"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-condition" /><code>{"private "}<Link to="/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{" condition"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-closedoor" /><code>{"private void CloseDoor()"}</code> |  |
-| <Link id="m-doorstatechanged" /><code>{"private void DoorStateChanged("}<Link to="/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{" condition)"}</code> |  |
-| <Link id="m-opendoor" /><code>{"private void OpenDoor()"}</code> |  |
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-closedoor" /><code>{"private void CloseDoor()"}</code> |
+| <Link id="m-doorstatechanged" /><code>{"private void DoorStateChanged("}<Link to="/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{" condition)"}</code> |
+| <Link id="m-opendoor" /><code>{"private void OpenDoor()"}</code> |
+
+</details>

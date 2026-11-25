@@ -17,21 +17,26 @@ A **class** in `Root.Township`, `Alta.Meta.Servers`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServersManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServersManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-friendsmanager" /><code>{"private "}<Link to="/game-api/types/alta-menus/friendsmanager">{"FriendsManager"}</Link>{" friendsManager"}</code> |  |
-| <Link id="m-servers" /><code>{"private List<"}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{"> servers"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-friendsmanager" /><code>{"private "}<Link to="/game-api/types/alta-menus/friendsmanager">{"FriendsManager"}</Link>{" friendsManager"}</code> |
+| <Link id="m-servers" /><code>{"private List<"}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{"> servers"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-selectedserverchanged" /><code>{"async void SelectedServerChanged("}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" server)"}</code> |  |
-| <Link id="m-loggedin" /><code>{"protected override async void LoggedIn()"}</code> |  |
-| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-selectedserverchanged" /><code>{"async void SelectedServerChanged("}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" server)"}</code> |
+| <Link id="m-loggedin" /><code>{"protected override async void LoggedIn()"}</code> |
+| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> |

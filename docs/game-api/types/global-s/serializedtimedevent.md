@@ -19,25 +19,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedTimedEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SerializedTimedEvent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allowrestartafterstop" /><code>{"private bool allowRestartAfterStop"}</code> |  |
-| <Link id="m-autostart" /><code>{"private bool autoStart"}</code> |  |
-| <Link id="m-hasstarted" /><code>{"private bool hasStarted"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-setup" /><code>{"private "}<Link to="/game-api/types/global-s/serializedtimedevent-timedeventsetup">{"SerializedTimedEvent.TimedEventSetup"}</Link>{"[] setup"}</code> |  |
-| <Link id="m-timers" /><code>{"private List<"}<Link to="/game-api/types/global-s/serializedtimedevent-timerdata">{"SerializedTimedEvent.TimerData"}</Link>{"> timers"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-allowrestartafterstop" /><code>{"private bool allowRestartAfterStop"}</code> |
+| <Link id="m-autostart" /><code>{"private bool autoStart"}</code> |
+| <Link id="m-hasstarted" /><code>{"private bool hasStarted"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-setup" /><code>{"private "}<Link to="/game-api/types/global-s/serializedtimedevent-timedeventsetup">{"SerializedTimedEvent.TimedEventSetup"}</Link>{"[] setup"}</code> |
+| <Link id="m-timers" /><code>{"private List<"}<Link to="/game-api/types/global-s/serializedtimedevent-timerdata">{"SerializedTimedEvent.TimerData"}</Link>{"> timers"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-starttimers" /><code>{"void StartTimers()"}</code> |  |
-| <Link id="m-stoptimers" /><code>{"void StopTimers()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+| <Link id="m-starttimers" /><code>{"void StartTimers()"}</code> |
+| <Link id="m-stoptimers" /><code>{"void StopTimers()"}</code> |

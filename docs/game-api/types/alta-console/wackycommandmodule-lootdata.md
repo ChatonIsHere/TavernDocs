@@ -17,16 +17,16 @@ A **private class** in `Root.Township`, `Alta.Console.Commands`. Reach it throug
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LootData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LootData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-json" /><code>{"string json"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-json" /><code>{"string json"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
 
 ## Used in
 

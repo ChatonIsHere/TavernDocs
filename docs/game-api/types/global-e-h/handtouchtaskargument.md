@@ -19,16 +19,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HandTouchTaskArgument(uint hash)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HandTouchTaskArgument(uint hash)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |  |
-| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
+| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> |
 
 ## Used in
 

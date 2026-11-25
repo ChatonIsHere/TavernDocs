@@ -17,11 +17,11 @@ An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-downhill" /><code>{"Downhill = 2"}</code> |  |
-| <Link id="m-either" /><code>{"Either = 0"}</code> |  |
-| <Link id="m-uphill" /><code>{"Uphill = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-downhill" /><code>{"Downhill = 2"}</code> |
+| <Link id="m-either" /><code>{"Either = 0"}</code> |
+| <Link id="m-uphill" /><code>{"Uphill = 1"}</code> |
 
 ## Used in
 

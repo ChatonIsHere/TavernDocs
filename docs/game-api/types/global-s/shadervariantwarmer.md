@@ -18,29 +18,42 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShaderVariantWarmer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShaderVariantWarmer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-collectionstowarm" /><code>{"private "}<Link to="/game-api/types/global-s/shadervariantwarmer-platformcollection">{"ShaderVariantWarmer.PlatformCollection"}</Link>{"[] collectionsToWarm"}</code> |  |
-| <Link id="m-iswarm" /><code>{"private bool isWarm"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-collectionstowarm" /><code>{"private "}<Link to="/game-api/types/global-s/shadervariantwarmer-platformcollection">{"ShaderVariantWarmer.PlatformCollection"}</Link>{"[] collectionsToWarm"}</code> |
+| <Link id="m-iswarm" /><code>{"private bool isWarm"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-sortingorder" /><code>{"int SortingOrder { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-sortingorder" /><code>{"int SortingOrder { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bake" /><code>{"void Bake(bool isSaving)"}</code> |  |
-| <Link id="m-clean" /><code>{"void Clean()"}</code> |  |
-| <Link id="m-warm" /><code>{"async Task Warm()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"void Bake(bool isSaving)"}</code> |
+| <Link id="m-clean" /><code>{"void Clean()"}</code> |
+| <Link id="m-warm" /><code>{"async Task Warm()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>

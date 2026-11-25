@@ -17,24 +17,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TextRendererBackground()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TextRendererBackground()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-androidmaterial" /><code>{"private Material androidMaterial"}</code> |  |
-| <Link id="m-margin" /><code>{"private Vector2 margin"}</code> |  |
-| <Link id="m-mesh" /><code>{"private static Mesh mesh"}</code> |  |
-| <Link id="m-pcmaterial" /><code>{"private Material pcMaterial"}</code> |  |
-| <Link id="m-renderertransform" /><code>{"private Transform rendererTransform"}</code> |  |
-| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androidmaterial" /><code>{"private Material androidMaterial"}</code> |
+| <Link id="m-margin" /><code>{"private Vector2 margin"}</code> |
+| <Link id="m-mesh" /><code>{"private static Mesh mesh"}</code> |
+| <Link id="m-pcmaterial" /><code>{"private Material pcMaterial"}</code> |
+| <Link id="m-renderertransform" /><code>{"private Transform rendererTransform"}</code> |
+| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-updatebackground" /><code>{"private void UpdateBackground()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-updatebackground" /><code>{"private void UpdateBackground()"}</code> |
+
+</details>

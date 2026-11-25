@@ -20,16 +20,21 @@ One segment in a `WoodcutTree`'s layout: its model, the connection it hangs from
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MapNode()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MapNode()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-mass" /><code>{"private float mass"}</code> |  |
-| <Link id="m-totalsize" /><code>{"private int totalSize"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-mass" /><code>{"private float mass"}</code> |
+| <Link id="m-totalsize" /><code>{"private int totalSize"}</code> |
+
+</details>
 
 ## Properties
 

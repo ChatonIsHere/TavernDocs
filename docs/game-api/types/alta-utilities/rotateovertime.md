@@ -17,18 +17,23 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RotateOverTime()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RotateOverTime()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-rotationamount" /><code>{"private Vector3 rotationAmount"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-rotationamount" /><code>{"private Vector3 rotationAmount"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updateanimation" /><code>{"protected override void UpdateAnimation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updateanimation" /><code>{"protected override void UpdateAnimation()"}</code> |

@@ -16,17 +16,17 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StorageData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StorageData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-item" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> |  |
-| <Link id="m-material" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material"}</code> |  |
-| <Link id="m-quantity" /><code>{"int quantity"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-item" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> |
+| <Link id="m-material" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material"}</code> |
+| <Link id="m-quantity" /><code>{"int quantity"}</code> |
 
 ## Used in
 

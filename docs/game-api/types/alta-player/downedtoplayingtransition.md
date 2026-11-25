@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `Alta.PlayerStates.Transitions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DownedToPlayingTransition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DownedToPlayingTransition()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handlerevive" /><code>{"void HandleRevive()"}</code> |  |
-| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> |  |
-| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-handlerevive" /><code>{"void HandleRevive()"}</code> |
+| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> |
+| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> |
 
 ## Used in
 

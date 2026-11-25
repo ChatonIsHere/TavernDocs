@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShakeablePouringStrengthController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShakeablePouringStrengthController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxpouringfromshaking" /><code>{"private float maxPouringFromShaking"}</code> |  |
-| <Link id="m-shakedetector" /><code>{"private "}<Link to="/game-api/types/global-s/shakedetector">{"ShakeDetector"}</Link>{" shakeDetector"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maxpouringfromshaking" /><code>{"private float maxPouringFromShaking"}</code> |
+| <Link id="m-shakedetector" /><code>{"private "}<Link to="/game-api/types/global-s/shakedetector">{"ShakeDetector"}</Link>{" shakeDetector"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getpouringstrength" /><code>{"override float GetPouringStrength(out bool isFullyPouring)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getpouringstrength" /><code>{"override float GetPouringStrength(out bool isFullyPouring)"}</code> |

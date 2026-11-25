@@ -17,30 +17,35 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DamageHolder()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DamageHolder()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-format" /><code>{"private const string format"}</code> |  |
-| <Link id="m-lastattacks" /><code>{"private Queue<string> lastAttacks"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-format" /><code>{"private const string format"}</code> |
+| <Link id="m-lastattacks" /><code>{"private Queue<string> lastAttacks"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-haschanged" /><code>{"bool HasChanged { get; private set; }"}</code> |  |
-| <Link id="m-text" /><code>{"string Text { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-haschanged" /><code>{"bool HasChanged { get; private set; }"}</code> |
+| <Link id="m-text" /><code>{"string Text { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addattack" /><code>{"void AddAttack(float damage, float followValue, float followMultiplier, float directionValue, float directionMultiplier, float weight, float weightPenalty, string dmgType)"}</code> |  |
-| <Link id="m-clean" /><code>{"void Clean()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addattack" /><code>{"void AddAttack(float damage, float followValue, float followMultiplier, float directionValue, float directionMultiplier, float weight, float weightPenalty, string dmgType)"}</code> |
+| <Link id="m-clean" /><code>{"void Clean()"}</code> |
 
 ## Used in
 

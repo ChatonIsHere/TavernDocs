@@ -20,32 +20,37 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerVisionComfortSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerVisionComfortSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-comfortprogresstovignette" /><code>{"private AnimationCurve comfortProgressToVignette"}</code> |  |
-| <Link id="m-confortincreasespeedlevel" /><code>{"private float[] confortIncreaseSpeedLevel"}</code> |  |
-| <Link id="m-confortrampspeed" /><code>{"private float confortRampSpeed"}</code> |  |
-| <Link id="m-maxconfortintensities" /><code>{"private float[] maxConfortIntensities"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-comfortprogresstovignette" /><code>{"private AnimationCurve comfortProgressToVignette"}</code> |
+| <Link id="m-confortincreasespeedlevel" /><code>{"private float[] confortIncreaseSpeedLevel"}</code> |
+| <Link id="m-confortrampspeed" /><code>{"private float confortRampSpeed"}</code> |
+| <Link id="m-maxconfortintensities" /><code>{"private float[] maxConfortIntensities"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-confortrampspeed-2" /><code>{"float ConfortRampSpeed { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-confortrampspeed-2" /><code>{"float ConfortRampSpeed { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getcomfortspeed" /><code>{"float GetComfortSpeed("}<Link to="/game-api/types/global-m-o/movementconfortspeed">{"MovementConfortSpeed"}</Link>{" speed)"}</code> |  |
-| <Link id="m-getcurrentconfortintensity" /><code>{"float GetCurrentConfortIntensity(float currentComfort)"}</code> |  |
-| <Link id="m-getmaxconfortintensity" /><code>{"float GetMaxConfortIntensity("}<Link to="/game-api/types/global-m-o/movementconfortstrength">{"MovementConfortStrength"}</Link>{" strength)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getcomfortspeed" /><code>{"float GetComfortSpeed("}<Link to="/game-api/types/global-m-o/movementconfortspeed">{"MovementConfortSpeed"}</Link>{" speed)"}</code> |
+| <Link id="m-getcurrentconfortintensity" /><code>{"float GetCurrentConfortIntensity(float currentComfort)"}</code> |
+| <Link id="m-getmaxconfortintensity" /><code>{"float GetMaxConfortIntensity("}<Link to="/game-api/types/global-m-o/movementconfortstrength">{"MovementConfortStrength"}</Link>{" strength)"}</code> |
 
 ## Used in
 

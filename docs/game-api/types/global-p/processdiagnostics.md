@@ -17,26 +17,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProcessDiagnostics(Process processToTrack)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProcessDiagnostics(Process processToTrack)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cpucounter" /><code>{"private PerformanceCounter cpuCounter"}</code> |  |
-| <Link id="m-processtotrack" /><code>{"private Process processToTrack"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cpucounter" /><code>{"private PerformanceCounter cpuCounter"}</code> |
+| <Link id="m-processtotrack" /><code>{"private Process processToTrack"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cpupercentage" /><code>{"float CPUPercentage { get; }"}</code> |  |
-| <Link id="m-memorysizeinbytes" /><code>{"long MemorySizeInBytes { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cpupercentage" /><code>{"float CPUPercentage { get; }"}</code> |
+| <Link id="m-memorysizeinbytes" /><code>{"long MemorySizeInBytes { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updatevalues" /><code>{"void UpdateValues()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updatevalues" /><code>{"void UpdateValues()"}</code> |

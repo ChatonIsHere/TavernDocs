@@ -21,19 +21,24 @@ Settings asset for player hands, read by `Hand` from the player controller's set
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HandSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HandSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-armlength" /><code>{"private float armLength"}</code> |  |
-| <Link id="m-isalwaysrenderingpickupatikhand" /><code>{"private bool isAlwaysRenderingPickupAtIKHand"}</code> |  |
-| <Link id="m-isdebugging" /><code>{"private bool isDebugging"}</code> |  |
-| <Link id="m-isfixingikhandtopickups" /><code>{"private bool isFixingIKHandToPickups"}</code> |  |
-| <Link id="m-ismovingcenterofmasstogrippoint" /><code>{"private bool isMovingCenterOfMassToGripPoint"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-armlength" /><code>{"private float armLength"}</code> |
+| <Link id="m-isalwaysrenderingpickupatikhand" /><code>{"private bool isAlwaysRenderingPickupAtIKHand"}</code> |
+| <Link id="m-isdebugging" /><code>{"private bool isDebugging"}</code> |
+| <Link id="m-isfixingikhandtopickups" /><code>{"private bool isFixingIKHandToPickups"}</code> |
+| <Link id="m-ismovingcenterofmasstogrippoint" /><code>{"private bool isMovingCenterOfMassToGripPoint"}</code> |
+
+</details>
 
 ## Properties
 

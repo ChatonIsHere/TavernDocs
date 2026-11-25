@@ -16,23 +16,28 @@ A **struct** in `Root.Township`, `Features.Gameplay.GameConditions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RepairableObject(uint targetHash, "}<Link to="/game-api/types/game-other-namespaces/repairableobjectbuildstate">{"RepairableObjectBuildState"}</Link>{" requirement)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RepairableObject(uint targetHash, "}<Link to="/game-api/types/game-other-namespaces/repairableobjectbuildstate">{"RepairableObjectBuildState"}</Link>{" requirement)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-requirement" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/repairableobjectbuildstate">{"RepairableObjectBuildState"}</Link>{" requirement"}</code> |  |
-| <Link id="m-targethash" /><code>{"private uint targetHash"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-requirement" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/repairableobjectbuildstate">{"RepairableObjectBuildState"}</Link>{" requirement"}</code> |
+| <Link id="m-targethash" /><code>{"private uint targetHash"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-requirement-2" /><code><Link to="/game-api/types/game-other-namespaces/repairableobjectbuildstate">{"RepairableObjectBuildState"}</Link>{" Requirement { get; }"}</code> |  |
-| <Link id="m-targethash-2" /><code>{"uint TargetHash { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-requirement-2" /><code><Link to="/game-api/types/game-other-namespaces/repairableobjectbuildstate">{"RepairableObjectBuildState"}</Link>{" Requirement { get; }"}</code> |
+| <Link id="m-targethash-2" /><code>{"uint TargetHash { get; }"}</code> |
 
 ## Used in
 

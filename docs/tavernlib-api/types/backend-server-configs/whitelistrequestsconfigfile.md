@@ -20,9 +20,9 @@ The `ServerConfigFile` for `whitelist_requests.json`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WhitelistRequestsConfigFile(string filePath)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WhitelistRequestsConfigFile(string filePath)"}</code> |
 
 ## Used in
 

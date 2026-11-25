@@ -19,28 +19,41 @@ A **class** in `Root.Township`, `Alta.Loot`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Origin()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Origin()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allorigins" /><code>{"private static "}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{"[] allOrigins"}</code> |  |
-| <Link id="m-alltables" /><code>{"private static "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] allTables"}</code> |  |
-| <Link id="m-isallowinglocal" /><code>{"private bool isAllowingLocal"}</code> |  |
-| <Link id="m-iswhitelist" /><code>{"private bool isWhitelist"}</code> |  |
-| <Link id="m-tables" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] tables"}</code> |  |
-| <Link id="m-workingdistinct" /><code>{"private static HashSet<"}<Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> workingDistinct"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-allorigins" /><code>{"private static "}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{"[] allOrigins"}</code> |
+| <Link id="m-alltables" /><code>{"private static "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] allTables"}</code> |
+| <Link id="m-isallowinglocal" /><code>{"private bool isAllowingLocal"}</code> |
+| <Link id="m-iswhitelist" /><code>{"private bool isWhitelist"}</code> |
+| <Link id="m-tables" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] tables"}</code> |
+| <Link id="m-workingdistinct" /><code>{"private static HashSet<"}<Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> workingDistinct"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getitems" /><code>{"void GetItems(List<"}<Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> results, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, params "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] local)"}</code> |  |
-| <Link id="m-getrandom" /><code>{"static "}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{" GetRandom("}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, List<"}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{"> ignore)"}</code> |  |
-| <Link id="m-addentries" /><code>{"private static void AddEntries(HashSet<"}<Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> workingDistinct, "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{" table)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getitems" /><code>{"void GetItems(List<"}<Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> results, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, params "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] local)"}</code> |
+| <Link id="m-getrandom" /><code>{"static "}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{" GetRandom("}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, List<"}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{"> ignore)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-addentries" /><code>{"private static void AddEntries(HashSet<"}<Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> workingDistinct, "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{" table)"}</code> |
+
+</details>
 
 ## Used in
 

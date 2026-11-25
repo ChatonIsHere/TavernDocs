@@ -18,9 +18,9 @@ Terrain texture blend for one point: two layer indices and how far to blend from
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SplatData(int layer1, int layer2, float lerp)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SplatData(int layer1, int layer2, float lerp)"}</code> |
 
 ## Fields
 

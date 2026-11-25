@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-trialreset" /><code>{"void TrialReset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-trialreset" /><code>{"void TrialReset()"}</code> |
 
 ## Used in
 

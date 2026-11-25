@@ -19,9 +19,9 @@ A library a mod build needs in `UserLibs`, from the build's `library_dependencie
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LibraryDependency()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LibraryDependency()"}</code> |
 
 ## Properties
 

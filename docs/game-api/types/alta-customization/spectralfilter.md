@@ -18,19 +18,24 @@ A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpectralFilter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpectralFilter()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cutout" /><code>{"private static int _Cutout { get; }"}</code> |  |
-| <Link id="m-maintex" /><code>{"private static int _MainTex { get; }"}</code> |  |
+<details>
+<summary>2 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-cutout" /><code>{"private static int _Cutout { get; }"}</code> |
+| <Link id="m-maintex" /><code>{"private static int _MainTex { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setuptuple" /><code>{"protected override void SetupTuple("}<Link to="/game-api/types/alta-customization/playerswapmaterialfilter-materialtuple">{"PlayerSwapMaterialFilter.MaterialTuple"}</Link>{" tuple, Material baseMaterial)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setuptuple" /><code>{"protected override void SetupTuple("}<Link to="/game-api/types/alta-customization/playerswapmaterialfilter-materialtuple">{"PlayerSwapMaterialFilter.MaterialTuple"}</Link>{" tuple, Material baseMaterial)"}</code> |

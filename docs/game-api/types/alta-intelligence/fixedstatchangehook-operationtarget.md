@@ -17,11 +17,11 @@ An **private enum** in `Root.Township`, `Alta.Intelligence`. Reach it through at
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-base" /><code>{"Base = 0"}</code> |  |
-| <Link id="m-max" /><code>{"Max = 2"}</code> |  |
-| <Link id="m-min" /><code>{"Min = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-base" /><code>{"Base = 0"}</code> |
+| <Link id="m-max" /><code>{"Max = 2"}</code> |
+| <Link id="m-min" /><code>{"Min = 1"}</code> |
 
 ## Used in
 

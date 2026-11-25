@@ -21,17 +21,22 @@ A group of pickup docks (a bag's or belt's slots) with totals for count, stored 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DockArray()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DockArray()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-children" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-items/dockarray">{"DockArray"}</Link>{"> children"}</code> |  |
-| <Link id="m-docks" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> docks"}</code> |  |
-| <Link id="m-parent" /><code>{"private "}<Link to="/game-api/types/alta-items/dockarray">{"DockArray"}</Link>{" parent"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-children" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-items/dockarray">{"DockArray"}</Link>{"> children"}</code> |
+| <Link id="m-docks" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> docks"}</code> |
+| <Link id="m-parent" /><code>{"private "}<Link to="/game-api/types/alta-items/dockarray">{"DockArray"}</Link>{" parent"}</code> |
+
+</details>
 
 ## Properties
 
@@ -61,8 +66,16 @@ A group of pickup docks (a bag's or belt's slots) with totals for count, stored 
 | <Link id="m-calculateweight" /><code>{"float CalculateWeight("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Total weight of this array's docks, applying the multiplier where the pickup's storage settings match. |
 | <Link id="m-remove" /><code>{"bool Remove("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Removes one or more docks. The single version returns false if not present. |
 | <Link id="m-remove-2" /><code>{"void Remove(IEnumerable<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> docks)"}</code> | Removes one or more docks. The single version returns false if not present. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-onweightchanged" /><code>{"private void OnWeightChanged()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-onweightchanged" /><code>{"private void OnWeightChanged()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -18,27 +18,32 @@ A **class** in `Root.Township`, `ATT.Triggers`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerEventData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TriggerEventData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-eventname" /><code>{"private string eventName"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-eventname" /><code>{"private string eventName"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-eventname-2" /><code>{"string EventName { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-eventname-2" /><code>{"string EventName { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setname" /><code>{"void SetName(string newName)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setname" /><code>{"void SetName(string newName)"}</code> |
 
 ## Used in
 

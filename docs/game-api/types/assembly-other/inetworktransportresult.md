@@ -17,10 +17,10 @@ An **interface** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-error" /><code>{"string Error { get; }"}</code> |  |
-| <Link id="m-issuccess" /><code>{"bool IsSuccess { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-error" /><code>{"string Error { get; }"}</code> |
+| <Link id="m-issuccess" /><code>{"bool IsSuccess { get; }"}</code> |
 
 ## Used in
 

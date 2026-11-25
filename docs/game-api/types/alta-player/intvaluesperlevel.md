@@ -17,6 +17,6 @@ A **class** in `Root.Township`, `Alta.Progression.Skills`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"IntValuesPerLevel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"IntValuesPerLevel()"}</code> |

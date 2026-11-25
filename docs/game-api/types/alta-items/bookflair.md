@@ -20,15 +20,20 @@ Base asset for a decoration (spine, edge, emblem) added to a book's model, with 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected BookFlair()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected BookFlair()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-items/flairlodset">{"FlairLodSet"}</Link>{" prefab"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-items/flairlodset">{"FlairLodSet"}</Link>{" prefab"}</code> |
+
+</details>
 
 ## Methods
 

@@ -17,20 +17,20 @@ An **abstract class** in `Root.Township`, `Alta.Alchemy`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Effect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Effect()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cooldown" /><code>{"virtual float Cooldown { get; }"}</code> |  |
-| <Link id="m-handler" /><code><Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" Handler { get; private set; }"}</code> |  |
-| <Link id="m-isduration" /><code>{"virtual bool IsDuration { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cooldown" /><code>{"virtual float Cooldown { get; }"}</code> |
+| <Link id="m-handler" /><code><Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" Handler { get; private set; }"}</code> |
+| <Link id="m-isduration" /><code>{"virtual bool IsDuration { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"virtual void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"virtual void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> |

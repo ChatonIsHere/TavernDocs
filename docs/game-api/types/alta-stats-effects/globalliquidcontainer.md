@@ -18,27 +18,32 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalLiquidContainer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GlobalLiquidContainer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-receivetransitionmultiplier" /><code>{"private float receiveTransitionMultiplier"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-receivetransitionmultiplier" /><code>{"private float receiveTransitionMultiplier"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/alta-stats-effects/globalliquidcontainer">{"GlobalLiquidContainer"}</Link>{" Instance { get; protected set; }"}</code> |  |
-| <Link id="m-receivetransitionmultiplier-2" /><code>{"override float ReceiveTransitionMultiplier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/alta-stats-effects/globalliquidcontainer">{"GlobalLiquidContainer"}</Link>{" Instance { get; protected set; }"}</code> |
+| <Link id="m-receivetransitionmultiplier-2" /><code>{"override float ReceiveTransitionMultiplier { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fillliquidintocontainer" /><code>{"static bool FillLiquidIntoContainer("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" liquidType, "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container, int amount, bool isForced = false)"}</code> |  |
-| <Link id="m-removeliquidfromcontainer" /><code>{"static bool RemoveLiquidFromContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container, int amount, bool isForced = false)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fillliquidintocontainer" /><code>{"static bool FillLiquidIntoContainer("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" liquidType, "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container, int amount, bool isForced = false)"}</code> |
+| <Link id="m-removeliquidfromcontainer" /><code>{"static bool RemoveLiquidFromContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container, int amount, bool isForced = false)"}</code> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |

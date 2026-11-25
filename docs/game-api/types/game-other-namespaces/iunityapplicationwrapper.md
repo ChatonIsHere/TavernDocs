@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, `Features.Utility.UnityWrappers`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-iseditor" /><code>{"bool IsEditor { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-iseditor" /><code>{"bool IsEditor { get; }"}</code> |
 
 ## Used in
 

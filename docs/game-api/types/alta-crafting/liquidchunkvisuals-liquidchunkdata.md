@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, `Alta.Cooking`. Reach it through att-st
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentvisuals" /><code>{"Dictionary<int, List<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{">> CurrentVisuals { get; set; }"}</code> |  |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{" Definition { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentvisuals" /><code>{"Dictionary<int, List<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{">> CurrentVisuals { get; set; }"}</code> |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{" Definition { get; set; }"}</code> |
 
 ## Used in
 

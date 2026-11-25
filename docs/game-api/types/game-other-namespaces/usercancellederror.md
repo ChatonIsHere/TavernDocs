@@ -17,6 +17,6 @@ A **class** in `Root.Township`, `Features.Main_Menu.Scripts.TalemShop.Errors`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UserCancelledError(string message)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UserCancelledError(string message)"}</code> |

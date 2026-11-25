@@ -17,13 +17,13 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RoomFixPluginInstance("}<Link to="/game-api/types/alta-world-generation/igenerator">{"IGenerator"}</Link>{" generator, "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" plugin, bool isEnabled)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RoomFixPluginInstance("}<Link to="/game-api/types/alta-world-generation/igenerator">{"IGenerator"}</Link>{" generator, "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" plugin, bool isEnabled)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-biggestroomaverage" /><code>{"Vector2 BiggestRoomAverage { get; set; }"}</code> |  |
-| <Link id="m-secondbiggestroomaverage" /><code>{"Vector2 SecondBiggestRoomAverage { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-biggestroomaverage" /><code>{"Vector2 BiggestRoomAverage { get; set; }"}</code> |
+| <Link id="m-secondbiggestroomaverage" /><code>{"Vector2 SecondBiggestRoomAverage { get; set; }"}</code> |

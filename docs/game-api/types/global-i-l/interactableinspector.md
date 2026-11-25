@@ -20,30 +20,35 @@ Debug bubble shown in the world for inspecting a prefab's components, methods an
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InteractableInspector()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InteractableInspector()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angletovariation" /><code>{"private AnimationCurve angleToVariation"}</code> |  |
-| <Link id="m-btninteract" /><code>{"private bool btnInteract"}</code> |  |
-| <Link id="m-bubblerenderer" /><code>{"private Renderer bubbleRenderer"}</code> |  |
-| <Link id="m-canrotate" /><code>{"private bool canRotate"}</code> |  |
-| <Link id="m-checkingcoroutine" /><code>{"private Coroutine checkingCoroutine"}</code> |  |
-| <Link id="m-componentmaterial" /><code>{"private Material componentMaterial"}</code> |  |
-| <Link id="m-currentlist" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{", "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{"> currentList"}</code> |  |
-| <Link id="m-inspector" /><code>{"private "}<Link to="/game-api/types/global-i-l/inspectorbase">{"InspectorBase"}</Link>{" inspector"}</code> |  |
-| <Link id="m-interactable" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable"}</code> |  |
-| <Link id="m-interactormaterial" /><code>{"private Material interactorMaterial"}</code> |  |
-| <Link id="m-methodmaterial" /><code>{"private Material methodMaterial"}</code> |  |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> |  |
-| <Link id="m-root" /><code>{"private Component root"}</code> |  |
-| <Link id="m-roottransform" /><code>{"private Transform rootTransform"}</code> |  |
-| <Link id="m-text" /><code>{"private "}<Link to="/game-api/types/alta-utilities/textpopup">{"TextPopup"}</Link>{" text"}</code> |  |
-| <Link id="m-valuematerial" /><code>{"private Material valueMaterial"}</code> |  |
+<details>
+<summary>16 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-angletovariation" /><code>{"private AnimationCurve angleToVariation"}</code> |
+| <Link id="m-btninteract" /><code>{"private bool btnInteract"}</code> |
+| <Link id="m-bubblerenderer" /><code>{"private Renderer bubbleRenderer"}</code> |
+| <Link id="m-canrotate" /><code>{"private bool canRotate"}</code> |
+| <Link id="m-checkingcoroutine" /><code>{"private Coroutine checkingCoroutine"}</code> |
+| <Link id="m-componentmaterial" /><code>{"private Material componentMaterial"}</code> |
+| <Link id="m-currentlist" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{", "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{"> currentList"}</code> |
+| <Link id="m-inspector" /><code>{"private "}<Link to="/game-api/types/global-i-l/inspectorbase">{"InspectorBase"}</Link>{" inspector"}</code> |
+| <Link id="m-interactable" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable"}</code> |
+| <Link id="m-interactormaterial" /><code>{"private Material interactorMaterial"}</code> |
+| <Link id="m-methodmaterial" /><code>{"private Material methodMaterial"}</code> |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> |
+| <Link id="m-root" /><code>{"private Component root"}</code> |
+| <Link id="m-roottransform" /><code>{"private Transform rootTransform"}</code> |
+| <Link id="m-text" /><code>{"private "}<Link to="/game-api/types/alta-utilities/textpopup">{"TextPopup"}</Link>{" text"}</code> |
+| <Link id="m-valuematerial" /><code>{"private Material valueMaterial"}</code> |
+
+</details>
 
 ## Methods
 
@@ -52,14 +57,22 @@ Debug bubble shown in the world for inspecting a prefab's components, methods an
 | <Link id="m-clean" /><code>{"void Clean()"}</code> | Unhooks everything, releases its text and returns the bubble to the pool. |
 | <Link id="m-registerinspector" /><code>{"void RegisterInspector("}<Link to="/game-api/types/global-i-l/inspectorbase">{"InspectorBase"}</Link>{" inspector, Component root)"}</code> | Sets which component, method, value or interactor this bubble shows and colours it by type. |
 | <Link id="m-registerprefab" /><code>{"void RegisterPrefab("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> | Cleans the bubble up when that prefab's entity is destroyed. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-checkinteraction" /><code>{"private IEnumerator CheckInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor) (iterator)"}</code> |  |
-| <Link id="m-distancerelease" /><code>{"private void DistanceRelease("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |  |
-| <Link id="m-filterinteraction" /><code>{"private void FilterInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |  |
-| <Link id="m-interact" /><code>{"private void Interact()"}</code> |  |
-| <Link id="m-onrequested" /><code>{"private void OnRequested("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |  |
-| <Link id="m-targetdestroyed" /><code>{"private void TargetDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-updatename" /><code>{"private void UpdateName(string addition = \"\")"}</code> |  |
+
+<details>
+<summary>8 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-checkinteraction" /><code>{"private IEnumerator CheckInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor) (iterator)"}</code> |
+| <Link id="m-distancerelease" /><code>{"private void DistanceRelease("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |
+| <Link id="m-filterinteraction" /><code>{"private void FilterInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |
+| <Link id="m-interact" /><code>{"private void Interact()"}</code> |
+| <Link id="m-onrequested" /><code>{"private void OnRequested("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
+| <Link id="m-targetdestroyed" /><code>{"private void TargetDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| <Link id="m-updatename" /><code>{"private void UpdateName(string addition = \"\")"}</code> |
+
+</details>
 
 ## Used in
 

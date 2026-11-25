@@ -20,20 +20,25 @@ Asset for one cosmetic category (hair, hats and so on) in the character customiz
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected CustomizationCategory()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected CustomizationCategory()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-icon" /><code>{"private Sprite icon"}</code> |  |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |  |
-| <Link id="m-isvisible" /><code>{"private bool isVisible"}</code> |  |
-| <Link id="m-pickupscale" /><code>{"private float pickupScale"}</code> |  |
-| <Link id="m-priority" /><code>{"private int priority"}</code> |  |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/assembly-api-models/itemcategory">{"ItemCategory"}</Link>{" type"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-icon" /><code>{"private Sprite icon"}</code> |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |
+| <Link id="m-isvisible" /><code>{"private bool isVisible"}</code> |
+| <Link id="m-pickupscale" /><code>{"private float pickupScale"}</code> |
+| <Link id="m-priority" /><code>{"private int priority"}</code> |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/assembly-api-models/itemcategory">{"ItemCategory"}</Link>{" type"}</code> |
+
+</details>
 
 ## Properties
 

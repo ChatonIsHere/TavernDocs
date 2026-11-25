@@ -20,24 +20,29 @@ the game's web server, path `/console`
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaConsoleModule(string path)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaConsoleModule(string path)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isfinalhandler" /><code>{"override bool IsFinalHandler { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isfinalhandler" /><code>{"override bool IsFinalHandler { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onrequestasync" /><code>{"protected override async Task OnRequestAsync(IHttpContext context)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onrequestasync" /><code>{"protected override async Task OnRequestAsync(IHttpContext context)"}</code> |

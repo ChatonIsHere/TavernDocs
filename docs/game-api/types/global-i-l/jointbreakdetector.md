@@ -17,21 +17,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JointBreakDetector()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JointBreakDetector()"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-jointbreak" /><code>{"event "}<Link to="/game-api/types/global-i-l/jointbreakhandler">{"JointBreakHandler"}</Link>{" JointBreak"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-jointbreak" /><code>{"event "}<Link to="/game-api/types/global-i-l/jointbreakhandler">{"JointBreakHandler"}</Link>{" JointBreak"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onjointbreak" /><code>{"private void OnJointBreak(float force)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onjointbreak" /><code>{"private void OnJointBreak(float force)"}</code> |
+
+</details>
 
 ## Used in
 

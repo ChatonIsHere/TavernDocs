@@ -18,20 +18,25 @@ A **private class** in `Alta.LifecycleManagement.Runtime`, `Alta.LifecycleManage
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnonymousDisposable(T state, Action<T> dispose)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnonymousDisposable(T state, Action<T> dispose)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"private readonly Action<T> dispose"}</code> |  |
-| <Link id="m-isdisposed" /><code>{"private bool isDisposed"}</code> |  |
-| <Link id="m-state" /><code>{"private readonly T state"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"private readonly Action<T> dispose"}</code> |
+| <Link id="m-isdisposed" /><code>{"private bool isDisposed"}</code> |
+| <Link id="m-state" /><code>{"private readonly T state"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose-2" /><code>{"void Dispose()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose-2" /><code>{"void Dispose()"}</code> |

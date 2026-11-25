@@ -17,10 +17,10 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AttributeDoubleValue()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"AttributeDoubleValue("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" topic, float value1, float value2)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AttributeDoubleValue()"}</code> |
+| <Link id="m-ctor-2" /><code>{"AttributeDoubleValue("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" topic, float value1, float value2)"}</code> |
 
 ## Used in
 

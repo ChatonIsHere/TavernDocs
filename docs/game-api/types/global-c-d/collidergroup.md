@@ -20,18 +20,23 @@ A `ComponentGroup` of colliders with helpers to switch them on and off, set thei
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ColliderGroup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ColliderGroup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isacceptingtriggers" /><code>{"private bool isAcceptingTriggers"}</code> |  |
-| <Link id="m-isdeletingall" /><code>{"private bool isDeletingAll"}</code> |  |
-| <Link id="m-isdisablinginternalcollisiononstart" /><code>{"private bool isDisablingInternalCollisionOnStart"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isacceptingtriggers" /><code>{"private bool isAcceptingTriggers"}</code> |
+| <Link id="m-isdeletingall" /><code>{"private bool isDeletingAll"}</code> |
+| <Link id="m-isdisablinginternalcollisiononstart" /><code>{"private bool isDisablingInternalCollisionOnStart"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
@@ -48,7 +53,15 @@ A `ComponentGroup` of colliders with helpers to switch them on and off, set thei
 | <Link id="m-ignorecollision" /><code>{"protected virtual void IgnoreCollision(Collider thisCollider, Collider otherCollider, bool isIgnoring)"}</code> | Ignores or restores collision between two colliders. Subclasses can override it. |
 | <Link id="m-iselementvalid" /><code>{"protected override bool IsElementValid(Collider element)"}</code> | Skips trigger colliders when the group does not accept triggers. |
 | <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor hook. Does nothing useful. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>
 
 ## Used in
 

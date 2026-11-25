@@ -18,9 +18,9 @@ An **interface** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setuserid" /><code>{"void SetUserId(int userId)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setuserid" /><code>{"void SetUserId(int userId)"}</code> |
 
 ## Used in
 

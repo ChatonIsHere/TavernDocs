@@ -19,27 +19,40 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FixedStatChangeHook()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FixedStatChangeHook()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addedextras" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{", float> addedExtras"}</code> |  |
-| <Link id="m-operationtarget" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/fixedstatchangehook-operationtarget">{"FixedStatChangeHook.OperationTarget"}</Link>{" operationTarget"}</code> |  |
-| <Link id="m-operationtype" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/fixedstatchangehook-operationtype">{"FixedStatChangeHook.OperationType"}</Link>{" operationType"}</code> |  |
-| <Link id="m-statoperation" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/fixedstatchangehook-operationtime">{"FixedStatChangeHook.OperationTime"}</Link>{" statOperation"}</code> |  |
-| <Link id="m-value" /><code>{"private float value"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-addedextras" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{", float> addedExtras"}</code> |
+| <Link id="m-operationtarget" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/fixedstatchangehook-operationtarget">{"FixedStatChangeHook.OperationTarget"}</Link>{" operationTarget"}</code> |
+| <Link id="m-operationtype" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/fixedstatchangehook-operationtype">{"FixedStatChangeHook.OperationType"}</Link>{" operationType"}</code> |
+| <Link id="m-statoperation" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/fixedstatchangehook-operationtime">{"FixedStatChangeHook.OperationTime"}</Link>{" statOperation"}</code> |
+| <Link id="m-value" /><code>{"private float value"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-affectonend" /><code>{"protected override void AffectOnEnd("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |  |
-| <Link id="m-affectonstart" /><code>{"protected override void AffectOnStart("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> |  |
-| <Link id="m-getaffectedstat" /><code>{"private float GetAffectedStat("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" topic)"}</code> |  |
-| <Link id="m-operateonstat" /><code>{"private void OperateOnStat("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" topic)"}</code> |  |
-| <Link id="m-revertoperateonstat" /><code>{"private void RevertOperateOnStat("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" topic)"}</code> |  |
-| <Link id="m-setaffectedstat" /><code>{"private void SetAffectedStat("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" topic, float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-affectonend" /><code>{"protected override void AffectOnEnd("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |
+| <Link id="m-affectonstart" /><code>{"protected override void AffectOnStart("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-getaffectedstat" /><code>{"private float GetAffectedStat("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" topic)"}</code> |
+| <Link id="m-operateonstat" /><code>{"private void OperateOnStat("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" topic)"}</code> |
+| <Link id="m-revertoperateonstat" /><code>{"private void RevertOperateOnStat("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" topic)"}</code> |
+| <Link id="m-setaffectedstat" /><code>{"private void SetAffectedStat("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" topic, float value)"}</code> |
+
+</details>

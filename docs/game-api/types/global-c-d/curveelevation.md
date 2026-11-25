@@ -17,21 +17,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CurveElevation()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CurveElevation()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updatestep" /><code>{"void UpdateStep(float progress)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updatestep" /><code>{"void UpdateStep(float progress)"}</code> |
 
 ## Used in
 

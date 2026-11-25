@@ -17,20 +17,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Limit()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Limit()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-limit" /><code>{"private float limit"}</code> |  |
-| <Link id="m-over" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" over"}</code> |  |
-| <Link id="m-under" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" under"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-limit" /><code>{"private float limit"}</code> |
+| <Link id="m-over" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" over"}</code> |
+| <Link id="m-under" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" under"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-input" /><code>{"void Input(float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-input" /><code>{"void Input(float value)"}</code> |

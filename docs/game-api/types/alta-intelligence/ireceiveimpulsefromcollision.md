@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, `Alta.Intelligence`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-receivedimpulse" /><code>{"void ReceivedImpulse(float strength)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-receivedimpulse" /><code>{"void ReceivedImpulse(float strength)"}</code> |
 
 ## Used in
 

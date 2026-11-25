@@ -17,15 +17,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LoginViaLinkedAccountRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LoginViaLinkedAccountRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> |
 
 ## Used in
 

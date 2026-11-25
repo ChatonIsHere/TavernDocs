@@ -18,26 +18,31 @@ An **abstract class** in `Root.Township`, `Alta.Static`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected IndexedScriptableObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected IndexedScriptableObject()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-index" /><code>{"private uint index"}</code> |  |
-| <Link id="m-isinonvalidateloop" /><code>{"private static bool isInOnValidateLoop"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-index" /><code>{"private uint index"}</code> |
+| <Link id="m-isinonvalidateloop" /><code>{"private static bool isInOnValidateLoop"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-index-2" /><code>{"uint Index { get; }"}</code> |  |
-| <Link id="m-key" /><code>{"virtual Type Key { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-index-2" /><code>{"uint Index { get; }"}</code> |
+| <Link id="m-key" /><code>{"virtual Type Key { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> |

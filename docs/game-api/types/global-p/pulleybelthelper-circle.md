@@ -18,11 +18,11 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-face" /><code>{"Vector3 Face { get; set; }"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 Position { get; set; }"}</code> |  |
-| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-face" /><code>{"Vector3 Face { get; set; }"}</code> |
+| <Link id="m-position" /><code>{"Vector3 Position { get; set; }"}</code> |
+| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> |
 
 ## Used in
 

@@ -17,14 +17,14 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Excep
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HttpException(HttpStatusCode statusCode)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HttpException(HttpStatusCode statusCode)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-response" /><code>{"HttpResponseMessage Response { get; set; }"}</code> |  |
-| <Link id="m-statuscode" /><code>{"HttpStatusCode StatusCode { get; private set; }"}</code> |  |
-| <Link id="m-webresponse" /><code>{"HttpWebResponse WebResponse { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-response" /><code>{"HttpResponseMessage Response { get; set; }"}</code> |
+| <Link id="m-statuscode" /><code>{"HttpStatusCode StatusCode { get; private set; }"}</code> |
+| <Link id="m-webresponse" /><code>{"HttpWebResponse WebResponse { get; set; }"}</code> |

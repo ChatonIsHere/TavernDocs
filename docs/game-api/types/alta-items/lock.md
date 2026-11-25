@@ -21,38 +21,46 @@ A lock that opens when its matching key prefab is pushed in and turned far enoug
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Lock()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Lock()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colliderstoignore" /><code>{"private Collider[] collidersToIgnore"}</code> |  |
-| <Link id="m-cooldowncoroutine" /><code>{"private Coroutine coolDownCoroutine"}</code> |  |
-| <Link id="m-correctkeyhash" /><code>{"private uint correctKeyHash"}</code> |  |
-| <Link id="m-correctkeyprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" correctKeyPrefab"}</code> |  |
 | <Link id="m-currentkey" /><code>{"protected "}<Link to="/game-api/types/alta-items/keyitem">{"KeyItem"}</Link>{" currentKey"}</code> | The key currently inserted, or null. |
-| <Link id="m-delaybetweenunlockingandopening" /><code>{"private float delayBetweenUnlockingAndOpening"}</code> |  |
-| <Link id="m-distancetobreakjoint" /><code>{"private float distanceToBreakJoint"}</code> |  |
-| <Link id="m-dottounlock" /><code>{"private float dotToUnlock"}</code> |  |
 | <Link id="m-haskey" /><code>{"protected bool hasKey"}</code> | Whether a key is held in the lock by its joint. |
-| <Link id="m-isdetachedlock" /><code>{"private bool isDetachedLock"}</code> |  |
-| <Link id="m-islocked" /><code>{"private bool isLocked"}</code> |  |
-| <Link id="m-islockedevent" /><code>{"private "}<Link to="/game-api/types/alta-items/lockevent">{"LockEvent"}</Link>{" isLockedEvent"}</code> |  |
-| <Link id="m-isoutofcooldown" /><code>{"private bool isOutOfCooldown"}</code> |  |
 | <Link id="m-keyjoint" /><code>{"protected ConfigurableJoint keyJoint"}</code> | The joint holding the inserted key; breaks when the player pulls their hand too far away. |
-| <Link id="m-keyturnevent" /><code>{"private "}<Link to="/game-api/types/alta-items/keyitemevent">{"KeyItemEvent"}</Link>{" keyTurnEvent"}</code> |  |
-| <Link id="m-lockposition" /><code>{"private Transform lockPosition"}</code> |  |
-| <Link id="m-noninteractinglayer" /><code>{"private int nonInteractingLayer"}</code> |  |
-| <Link id="m-originallayer" /><code>{"private int originalLayer"}</code> |  |
-| <Link id="m-receivednewkeyevent" /><code>{"private "}<Link to="/game-api/types/alta-items/keyitemevent">{"KeyItemEvent"}</Link>{" receivedNewKeyEvent"}</code> |  |
 | <Link id="m-rigidbody" /><code>{"protected "}<Link to="/game-api/types/alta-networking/networkrigidbody">{"NetworkRigidbody"}</Link>{" rigidBody"}</code> | The lock's `NetworkRigidbody`, cached on `Awake`. |
-| <Link id="m-sqrbreakdistance" /><code>{"private float sqrBreakDistance"}</code> |  |
-| <Link id="m-syncbreakkeygrip" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncBreakKeyGrip"}</code> |  |
-| <Link id="m-syncbreakkeyjoint" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncBreakKeyJoint"}</code> |  |
-| <Link id="m-synclocked" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncLocked"}</code> |  |
+
+<details>
+<summary>20 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-colliderstoignore" /><code>{"private Collider[] collidersToIgnore"}</code> |
+| <Link id="m-cooldowncoroutine" /><code>{"private Coroutine coolDownCoroutine"}</code> |
+| <Link id="m-correctkeyhash" /><code>{"private uint correctKeyHash"}</code> |
+| <Link id="m-correctkeyprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" correctKeyPrefab"}</code> |
+| <Link id="m-delaybetweenunlockingandopening" /><code>{"private float delayBetweenUnlockingAndOpening"}</code> |
+| <Link id="m-distancetobreakjoint" /><code>{"private float distanceToBreakJoint"}</code> |
+| <Link id="m-dottounlock" /><code>{"private float dotToUnlock"}</code> |
+| <Link id="m-isdetachedlock" /><code>{"private bool isDetachedLock"}</code> |
+| <Link id="m-islocked" /><code>{"private bool isLocked"}</code> |
+| <Link id="m-islockedevent" /><code>{"private "}<Link to="/game-api/types/alta-items/lockevent">{"LockEvent"}</Link>{" isLockedEvent"}</code> |
+| <Link id="m-isoutofcooldown" /><code>{"private bool isOutOfCooldown"}</code> |
+| <Link id="m-keyturnevent" /><code>{"private "}<Link to="/game-api/types/alta-items/keyitemevent">{"KeyItemEvent"}</Link>{" keyTurnEvent"}</code> |
+| <Link id="m-lockposition" /><code>{"private Transform lockPosition"}</code> |
+| <Link id="m-noninteractinglayer" /><code>{"private int nonInteractingLayer"}</code> |
+| <Link id="m-originallayer" /><code>{"private int originalLayer"}</code> |
+| <Link id="m-receivednewkeyevent" /><code>{"private "}<Link to="/game-api/types/alta-items/keyitemevent">{"KeyItemEvent"}</Link>{" receivedNewKeyEvent"}</code> |
+| <Link id="m-sqrbreakdistance" /><code>{"private float sqrBreakDistance"}</code> |
+| <Link id="m-syncbreakkeygrip" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncBreakKeyGrip"}</code> |
+| <Link id="m-syncbreakkeyjoint" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncBreakKeyJoint"}</code> |
+| <Link id="m-synclocked" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncLocked"}</code> |
+
+</details>
 
 ## Properties
 
@@ -74,21 +82,29 @@ A lock that opens when its matching key prefab is pushed in and turned far enoug
 | <Link id="m-jinglejangle" /><code>{"void JingleJangle(Vector3 jingleJangleTorque)"}</code> | Adds a torque to the lock's rigidbody to rattle it, unless a key is inserted. Called by `Chest` when shaken. |
 | <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the current locked state to a newly connected player. |
 | <Link id="m-setlock" /><code>{"void SetLock(bool isLocked)"}</code> | Sets the locked state, raises the event and, on the server, syncs it to clients. Does nothing if unchanged. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-breakkeygrip" /><code>{"private void BreakKeyGrip()"}</code> |  |
-| <Link id="m-collidersignoredelay" /><code>{"private IEnumerator CollidersIgnoreDelay(IEnumerable<Collider> colliders) (iterator)"}</code> |  |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
 | <Link id="m-locked" /><code>{"protected virtual void Locked()"}</code> | Called when the lock becomes locked; sets the flag and raises `IsLockedEvent`. Override to add behaviour. |
-| <Link id="m-onjointbreak" /><code>{"private void OnJointBreak(float breakForce)"}</code> |  |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
-| <Link id="m-recentgrab" /><code>{"private void RecentGrab("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" key, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-rungrabcooldown" /><code>{"private IEnumerator RunGrabCooldown() (iterator)"}</code> |  |
-| <Link id="m-setupkey" /><code>{"private void SetupKey("}<Link to="/game-api/types/alta-items/keyitem">{"KeyItem"}</Link>{" newKey)"}</code> |  |
-| <Link id="m-syncbreakkeygrip-2" /><code>{"private void SyncBreakKeyGrip("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncbreakkeyjoint-2" /><code>{"private void SyncBreakKeyJoint("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-synclocked-2" /><code>{"private void SyncLocked("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-unlockdelay" /><code>{"private IEnumerator UnlockDelay() (iterator)"}</code> |  |
 | <Link id="m-unlocked" /><code>{"protected virtual void Unlocked()"}</code> | Called when the lock becomes unlocked; clears the flag and raises `IsLockedEvent`. Override to add behaviour. |
+
+<details>
+<summary>13 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-breakkeygrip" /><code>{"private void BreakKeyGrip()"}</code> |
+| <Link id="m-collidersignoredelay" /><code>{"private IEnumerator CollidersIgnoreDelay(IEnumerable<Collider> colliders) (iterator)"}</code> |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
+| <Link id="m-onjointbreak" /><code>{"private void OnJointBreak(float breakForce)"}</code> |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
+| <Link id="m-recentgrab" /><code>{"private void RecentGrab("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" key, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-rungrabcooldown" /><code>{"private IEnumerator RunGrabCooldown() (iterator)"}</code> |
+| <Link id="m-setupkey" /><code>{"private void SetupKey("}<Link to="/game-api/types/alta-items/keyitem">{"KeyItem"}</Link>{" newKey)"}</code> |
+| <Link id="m-syncbreakkeygrip-2" /><code>{"private void SyncBreakKeyGrip("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-syncbreakkeyjoint-2" /><code>{"private void SyncBreakKeyJoint("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-synclocked-2" /><code>{"private void SyncLocked("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-unlockdelay" /><code>{"private IEnumerator UnlockDelay() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

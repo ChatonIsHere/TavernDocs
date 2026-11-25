@@ -21,39 +21,47 @@ Asset with the look of a liquid (colours, rim, fresnel, highlight, waves) that l
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LiquidVisualData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LiquidVisualData()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-maxthickness" /><code>{"const int MaxThickness"}</code> | Constant 100, the top of the `Thickness` range. |
-| <Link id="m-androidliquidcolor" /><code>{"private Color androidLiquidColor"}</code> |  |
-| <Link id="m-depth" /><code>{"private float depth"}</code> |  |
-| <Link id="m-fresnelcolor" /><code>{"private Color fresnelColor"}</code> |  |
-| <Link id="m-fresnelexponent" /><code>{"private float fresnelExponent"}</code> |  |
-| <Link id="m-glossiness" /><code>{"private float glossiness"}</code> |  |
-| <Link id="m-liquidcolor" /><code>{"private Color liquidColor"}</code> |  |
-| <Link id="m-liquiddepthcolor" /><code>{"private Color liquidDepthColor"}</code> |  |
-| <Link id="m-refractionamount" /><code>{"private float refractionAmount"}</code> |  |
-| <Link id="m-rimcolor" /><code>{"private Color rimColor"}</code> |  |
-| <Link id="m-rimfalloff" /><code>{"private float rimFalloff"}</code> |  |
-| <Link id="m-rimsize" /><code>{"private float rimSize"}</code> |  |
-| <Link id="m-rimtiling" /><code>{"private float rimTiling"}</code> |  |
-| <Link id="m-sharedmaterials" /><code>{"private Dictionary<Material, Material> sharedMaterials"}</code> |  |
-| <Link id="m-surfacehighlight" /><code>{"private float surfaceHighlight"}</code> |  |
-| <Link id="m-surfacehighlightcolor" /><code>{"private Color surfaceHighlightColor"}</code> |  |
-| <Link id="m-surfacehighlightsize" /><code>{"private float surfaceHighlightSize"}</code> |  |
-| <Link id="m-surfacehighlighttiling" /><code>{"private float surfaceHighlightTiling"}</code> |  |
-| <Link id="m-thickness" /><code>{"private int thickness"}</code> |  |
-| <Link id="m-tiling" /><code>{"private float tiling"}</code> |  |
-| <Link id="m-transparency" /><code>{"private float transparency"}</code> |  |
-| <Link id="m-wavespeed" /><code>{"private float waveSpeed"}</code> |  |
-| <Link id="m-wavespeedbytemperature" /><code>{"private AnimationCurve waveSpeedByTemperature"}</code> |  |
-| <Link id="m-wavestrength" /><code>{"private float waveStrength"}</code> |  |
-| <Link id="m-wavestrengthbytemperature" /><code>{"private AnimationCurve waveStrengthByTemperature"}</code> |  |
+
+<details>
+<summary>24 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androidliquidcolor" /><code>{"private Color androidLiquidColor"}</code> |
+| <Link id="m-depth" /><code>{"private float depth"}</code> |
+| <Link id="m-fresnelcolor" /><code>{"private Color fresnelColor"}</code> |
+| <Link id="m-fresnelexponent" /><code>{"private float fresnelExponent"}</code> |
+| <Link id="m-glossiness" /><code>{"private float glossiness"}</code> |
+| <Link id="m-liquidcolor" /><code>{"private Color liquidColor"}</code> |
+| <Link id="m-liquiddepthcolor" /><code>{"private Color liquidDepthColor"}</code> |
+| <Link id="m-refractionamount" /><code>{"private float refractionAmount"}</code> |
+| <Link id="m-rimcolor" /><code>{"private Color rimColor"}</code> |
+| <Link id="m-rimfalloff" /><code>{"private float rimFalloff"}</code> |
+| <Link id="m-rimsize" /><code>{"private float rimSize"}</code> |
+| <Link id="m-rimtiling" /><code>{"private float rimTiling"}</code> |
+| <Link id="m-sharedmaterials" /><code>{"private Dictionary<Material, Material> sharedMaterials"}</code> |
+| <Link id="m-surfacehighlight" /><code>{"private float surfaceHighlight"}</code> |
+| <Link id="m-surfacehighlightcolor" /><code>{"private Color surfaceHighlightColor"}</code> |
+| <Link id="m-surfacehighlightsize" /><code>{"private float surfaceHighlightSize"}</code> |
+| <Link id="m-surfacehighlighttiling" /><code>{"private float surfaceHighlightTiling"}</code> |
+| <Link id="m-thickness" /><code>{"private int thickness"}</code> |
+| <Link id="m-tiling" /><code>{"private float tiling"}</code> |
+| <Link id="m-transparency" /><code>{"private float transparency"}</code> |
+| <Link id="m-wavespeed" /><code>{"private float waveSpeed"}</code> |
+| <Link id="m-wavespeedbytemperature" /><code>{"private AnimationCurve waveSpeedByTemperature"}</code> |
+| <Link id="m-wavestrength" /><code>{"private float waveStrength"}</code> |
+| <Link id="m-wavestrengthbytemperature" /><code>{"private AnimationCurve waveStrengthByTemperature"}</code> |
+
+</details>
 
 ## Properties
 

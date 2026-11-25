@@ -17,11 +17,11 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-internalmodeltransform" /><code>{"Transform InternalModelTransform { get; }"}</code> |  |
-| <Link id="m-shellmaterial" /><code>{"Material ShellMaterial { get; }"}</code> |  |
-| <Link id="m-slot" /><code><Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" Slot { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-internalmodeltransform" /><code>{"Transform InternalModelTransform { get; }"}</code> |
+| <Link id="m-shellmaterial" /><code>{"Material ShellMaterial { get; }"}</code> |
+| <Link id="m-slot" /><code><Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" Slot { get; }"}</code> |
 
 ## Used in
 

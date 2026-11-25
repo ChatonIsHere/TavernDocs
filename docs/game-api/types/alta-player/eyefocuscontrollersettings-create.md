@@ -18,6 +18,6 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> |

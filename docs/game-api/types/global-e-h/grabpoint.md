@@ -19,31 +19,39 @@ A spot on a pickup where a hand can hold it, with a rule for how the hand may tu
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrabPoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrabPoint()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-rotationmode" /><code><Link to="/game-api/types/global-q-r/rotationmode">{"RotationMode"}</Link>{" rotationMode"}</code> | Backing field for `RotationMode`. |
-| <Link id="m-dockedrestriction" /><code>{"private "}<Link to="/game-api/types/global-p/pickupfromdockrestriction">{"PickupFromDockRestriction"}</Link>{" dockedRestriction"}</code> |  |
-| <Link id="m-enabledfromdocks" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{"> enabledFromDocks"}</code> |  |
-| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> |  |
-| <Link id="m-isdisabled" /><code>{"private bool isDisabled"}</code> |  |
-| <Link id="m-isignoringangle" /><code>{"private bool isIgnoringAngle"}</code> |  |
-| <Link id="m-issetupwithleft" /><code>{"private bool isSetupWithLeft"}</code> |  |
-| <Link id="m-isusinglocal" /><code>{"private bool isUsingLocal"}</code> |  |
-| <Link id="m-linear" /><code>{"private Vector3 linear"}</code> |  |
-| <Link id="m-nondockedrestriction" /><code>{"private "}<Link to="/game-api/types/global-p/pickupfromdockrestriction">{"PickupFromDockRestriction"}</Link>{" nonDockedRestriction"}</code> |  |
-| <Link id="m-offset" /><code>{"private float offset"}</code> |  |
-| <Link id="m-poleforward" /><code>{"private Vector3 poleForward"}</code> |  |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |  |
-| <Link id="m-refusemultiplehands" /><code>{"private bool refuseMultipleHands"}</code> |  |
-| <Link id="m-rotationeuler" /><code>{"private Vector3 rotationEuler"}</code> |  |
-| <Link id="m-thumbposition" /><code>{"private "}<Link to="/game-api/types/global-t-x/thumbposition">{"ThumbPosition"}</Link>{" thumbPosition"}</code> |  |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> |  |
+
+<details>
+<summary>16 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-dockedrestriction" /><code>{"private "}<Link to="/game-api/types/global-p/pickupfromdockrestriction">{"PickupFromDockRestriction"}</Link>{" dockedRestriction"}</code> |
+| <Link id="m-enabledfromdocks" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{"> enabledFromDocks"}</code> |
+| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> |
+| <Link id="m-isdisabled" /><code>{"private bool isDisabled"}</code> |
+| <Link id="m-isignoringangle" /><code>{"private bool isIgnoringAngle"}</code> |
+| <Link id="m-issetupwithleft" /><code>{"private bool isSetupWithLeft"}</code> |
+| <Link id="m-isusinglocal" /><code>{"private bool isUsingLocal"}</code> |
+| <Link id="m-linear" /><code>{"private Vector3 linear"}</code> |
+| <Link id="m-nondockedrestriction" /><code>{"private "}<Link to="/game-api/types/global-p/pickupfromdockrestriction">{"PickupFromDockRestriction"}</Link>{" nonDockedRestriction"}</code> |
+| <Link id="m-offset" /><code>{"private float offset"}</code> |
+| <Link id="m-poleforward" /><code>{"private Vector3 poleForward"}</code> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+| <Link id="m-refusemultiplehands" /><code>{"private bool refuseMultipleHands"}</code> |
+| <Link id="m-rotationeuler" /><code>{"private Vector3 rotationEuler"}</code> |
+| <Link id="m-thumbposition" /><code>{"private "}<Link to="/game-api/types/global-t-x/thumbposition">{"ThumbPosition"}</Link>{" thumbPosition"}</code> |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> |
+
+</details>
 
 ## Properties
 

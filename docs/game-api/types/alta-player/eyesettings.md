@@ -16,30 +16,35 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EyeSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EyeSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-eyeadditionalblit" /><code>{"private Material eyeAdditionalBlit"}</code> |  |
-| <Link id="m-eyeblit" /><code>{"private Material eyeBlit"}</code> |  |
-| <Link id="m-isinstantiated" /><code>{"private bool isInstantiated"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-eyeadditionalblit" /><code>{"private Material eyeAdditionalBlit"}</code> |
+| <Link id="m-eyeblit" /><code>{"private Material eyeBlit"}</code> |
+| <Link id="m-isinstantiated" /><code>{"private bool isInstantiated"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-eyeadditionalblit-2" /><code>{"Material EyeAdditionalBlit { get; }"}</code> |  |
-| <Link id="m-eyeblit-2" /><code>{"Material EyeBlit { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-eyeadditionalblit-2" /><code>{"Material EyeAdditionalBlit { get; }"}</code> |
+| <Link id="m-eyeblit-2" /><code>{"Material EyeBlit { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cleanup" /><code>{"void CleanUp()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cleanup" /><code>{"void CleanUp()"}</code> |
 
 ## Used in
 

@@ -17,19 +17,19 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SectorNames()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SectorNames()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-names" /><code>{"List<"}<Link to="/game-api/types/global-s/sectorname">{"SectorName"}</Link>{"> names"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-names" /><code>{"List<"}<Link to="/game-api/types/global-s/sectorname">{"SectorName"}</Link>{"> names"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-load" /><code>{"static "}<Link to="/game-api/types/global-s/sectornames">{"SectorNames"}</Link>{" Load(string path)"}</code> |  |
-| <Link id="m-save" /><code>{"void Save(string path)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-load" /><code>{"static "}<Link to="/game-api/types/global-s/sectornames">{"SectorNames"}</Link>{" Load(string path)"}</code> |
+| <Link id="m-save" /><code>{"void Save(string path)"}</code> |

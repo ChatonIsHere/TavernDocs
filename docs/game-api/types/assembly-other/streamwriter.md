@@ -20,10 +20,10 @@ The writing side of the game's bit stream, backed by a `BitWriter` over a `uint`
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StreamWriter("}<Link to="/game-api/types/assembly-other/bitwriter-getmoredata">{"BitWriter.GetMoreData"}</Link>{" getMoreData = null)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"StreamWriter(uint[] data)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StreamWriter("}<Link to="/game-api/types/assembly-other/bitwriter-getmoredata">{"BitWriter.GetMoreData"}</Link>{" getMoreData = null)"}</code> |
+| <Link id="m-ctor-2" /><code>{"StreamWriter(uint[] data)"}</code> |
 
 ## Properties
 

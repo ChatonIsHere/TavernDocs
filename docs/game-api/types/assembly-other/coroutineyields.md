@@ -18,21 +18,26 @@ A **static class** in `Alta.Coroutines`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-endofframe" /><code>{"private static WaitForEndOfFrame endOfFrame"}</code> |  |
-| <Link id="m-fixedupdate" /><code>{"private static WaitForFixedUpdate fixedUpdate"}</code> |  |
-| <Link id="m-timedyields" /><code>{"private static Dictionary<float, WaitForSeconds> timedYields"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-endofframe" /><code>{"private static WaitForEndOfFrame endOfFrame"}</code> |
+| <Link id="m-fixedupdate" /><code>{"private static WaitForFixedUpdate fixedUpdate"}</code> |
+| <Link id="m-timedyields" /><code>{"private static Dictionary<float, WaitForSeconds> timedYields"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-endofframe-2" /><code>{"static WaitForEndOfFrame EndOfFrame { get; }"}</code> |  |
-| <Link id="m-fixedupdate-2" /><code>{"static WaitForFixedUpdate FixedUpdate { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-endofframe-2" /><code>{"static WaitForEndOfFrame EndOfFrame { get; }"}</code> |
+| <Link id="m-fixedupdate-2" /><code>{"static WaitForFixedUpdate FixedUpdate { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-waitforseconds" /><code>{"static WaitForSeconds WaitForSeconds(float seconds)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-waitforseconds" /><code>{"static WaitForSeconds WaitForSeconds(float seconds)"}</code> |

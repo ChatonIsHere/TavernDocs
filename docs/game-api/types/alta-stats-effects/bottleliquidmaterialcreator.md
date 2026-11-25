@@ -17,31 +17,36 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BottleLiquidMaterialCreator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BottleLiquidMaterialCreator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-anchor" /><code>{"private "}<Link to="/game-api/types/alta-utilities/vector3materialproperty">{"Vector3MaterialProperty"}</Link>{" anchor"}</code> |  |
-| <Link id="m-liquidcolor" /><code>{"private "}<Link to="/game-api/types/alta-utilities/colormaterialproperty">{"ColorMaterialProperty"}</Link>{" liquidColor"}</code> |  |
-| <Link id="m-point" /><code>{"private "}<Link to="/game-api/types/alta-utilities/vector3materialproperty">{"Vector3MaterialProperty"}</Link>{" point"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-anchor" /><code>{"private "}<Link to="/game-api/types/alta-utilities/vector3materialproperty">{"Vector3MaterialProperty"}</Link>{" anchor"}</code> |
+| <Link id="m-liquidcolor" /><code>{"private "}<Link to="/game-api/types/alta-utilities/colormaterialproperty">{"ColorMaterialProperty"}</Link>{" liquidColor"}</code> |
+| <Link id="m-point" /><code>{"private "}<Link to="/game-api/types/alta-utilities/vector3materialproperty">{"Vector3MaterialProperty"}</Link>{" point"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-anchor-2" /><code><Link to="/game-api/types/alta-utilities/vector3materialproperty">{"Vector3MaterialProperty"}</Link>{" Anchor { get; }"}</code> |  |
-| <Link id="m-liquidcolor-2" /><code><Link to="/game-api/types/alta-utilities/colormaterialproperty">{"ColorMaterialProperty"}</Link>{" LiquidColor { get; }"}</code> |  |
-| <Link id="m-point-2" /><code><Link to="/game-api/types/alta-utilities/vector3materialproperty">{"Vector3MaterialProperty"}</Link>{" Point { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-anchor-2" /><code><Link to="/game-api/types/alta-utilities/vector3materialproperty">{"Vector3MaterialProperty"}</Link>{" Anchor { get; }"}</code> |
+| <Link id="m-liquidcolor-2" /><code><Link to="/game-api/types/alta-utilities/colormaterialproperty">{"ColorMaterialProperty"}</Link>{" LiquidColor { get; }"}</code> |
+| <Link id="m-point-2" /><code><Link to="/game-api/types/alta-utilities/vector3materialproperty">{"Vector3MaterialProperty"}</Link>{" Point { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-creatematerial" /><code>{"override Material CreateMaterial("}<Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" settings, Material materialTemplate)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-creatematerial" /><code>{"override Material CreateMaterial("}<Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" settings, Material materialTemplate)"}</code> |
 
 ## Used in
 

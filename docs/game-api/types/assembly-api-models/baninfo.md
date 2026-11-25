@@ -16,24 +16,24 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BanInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BanInfo()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bantype" /><code><Link to="/game-api/types/assembly-api-models/bantype">{"BanType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/bantype">{"BanType"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> |  |
-| <Link id="m-createdby" /><code>{"int CreatedBy { get; set; }"}</code> |  |
-| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> |  |
-| <Link id="m-endtime" /><code>{"DateTime EndTime { get; set; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |  |
-| <Link id="m-ipaddress" /><code>{"IPAddress IpAddress { get; set; }"}</code> |  |
-| <Link id="m-reason" /><code>{"string Reason { get; set; }"}</code> |  |
-| <Link id="m-servers" /><code>{"List<int> Servers { get; set; }"}</code> |  |
-| <Link id="m-useridentifier" /><code>{"int? UserIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bantype" /><code><Link to="/game-api/types/assembly-api-models/bantype">{"BanType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/bantype">{"BanType"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> |
+| <Link id="m-createdby" /><code>{"int CreatedBy { get; set; }"}</code> |
+| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> |
+| <Link id="m-endtime" /><code>{"DateTime EndTime { get; set; }"}</code> |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |
+| <Link id="m-ipaddress" /><code>{"IPAddress IpAddress { get; set; }"}</code> |
+| <Link id="m-reason" /><code>{"string Reason { get; set; }"}</code> |
+| <Link id="m-servers" /><code>{"List<int> Servers { get; set; }"}</code> |
+| <Link id="m-useridentifier" /><code>{"int? UserIdentifier { get; set; }"}</code> |
 
 ## Used in
 

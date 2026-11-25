@@ -19,17 +19,17 @@ A **internal class** in `Root.Township`, `Alta.Caves`. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentlayercount" /><code>{"int currentLayerCount"}</code> |  |
-| <Link id="m-depths" /><code>{"float[] depths"}</code> |  |
-| <Link id="m-entrancedirections" /><code>{"Vector2[] entranceDirections"}</code> |  |
-| <Link id="m-entrances" /><code>{"Vector2[] entrances"}</code> |  |
-| <Link id="m-layerprefabs" /><code>{"uint[] layerPrefabs"}</code> |  |
-| <Link id="m-seed" /><code>{"int seed"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentlayercount" /><code>{"int currentLayerCount"}</code> |
+| <Link id="m-depths" /><code>{"float[] depths"}</code> |
+| <Link id="m-entrancedirections" /><code>{"Vector2[] entranceDirections"}</code> |
+| <Link id="m-entrances" /><code>{"Vector2[] entrances"}</code> |
+| <Link id="m-layerprefabs" /><code>{"uint[] layerPrefabs"}</code> |
+| <Link id="m-seed" /><code>{"int seed"}</code> |

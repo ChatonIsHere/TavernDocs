@@ -18,26 +18,26 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InternalEntry()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InternalEntry()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cancellationtoken" /><code>{"CancellationToken cancellationToken"}</code> |  |
-| <Link id="m-completionsource" /><code>{"TaskCompletionSource<bool> completionSource"}</code> |  |
-| <Link id="m-gettask" /><code>{"Func<IEnumerable> getTask"}</code> |  |
-| <Link id="m-index" /><code>{"uint index"}</code> |  |
-| <Link id="m-task" /><code>{"IEnumerator task"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cancellationtoken" /><code>{"CancellationToken cancellationToken"}</code> |
+| <Link id="m-completionsource" /><code>{"TaskCompletionSource<bool> completionSource"}</code> |
+| <Link id="m-gettask" /><code>{"Func<IEnumerable> getTask"}</code> |
+| <Link id="m-index" /><code>{"uint index"}</code> |
+| <Link id="m-task" /><code>{"IEnumerator task"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getawaiter" /><code>{"override TaskAwaiter<bool> GetAwaiter()"}</code> |  |
-| <Link id="m-initialize" /><code>{"void Initialize(uint index, Func<IEnumerable> getTask, CancellationToken cancellationToken = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getawaiter" /><code>{"override TaskAwaiter<bool> GetAwaiter()"}</code> |
+| <Link id="m-initialize" /><code>{"void Initialize(uint index, Func<IEnumerable> getTask, CancellationToken cancellationToken = null)"}</code> |
 
 ## Used in
 

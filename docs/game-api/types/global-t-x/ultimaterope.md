@@ -21,9 +21,9 @@ Third-party Ultimate Rope Editor component: builds a physics rope from jointed r
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UltimateRope()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UltimateRope()"}</code> |
 
 ## Fields
 
@@ -139,30 +139,38 @@ Third-party Ultimate Rope Editor component: builds a physics rope from jointed r
 | <Link id="m-setupropejoints" /><code>{"void SetupRopeJoints()"}</code> | Creates the joints between links from the current settings. |
 | <Link id="m-setupropelinks" /><code>{"void SetupRopeLinks()"}</code> | Sets up link colliders, rigidbodies and layer from the current settings. |
 | <Link id="m-setupropematerials" /><code>{"void SetupRopeMaterials()"}</code> | Assigns the rope and section materials on a procedural rope's skinned renderer. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-buildbonehashstring2gameobject" /><code>{"private bool BuildBoneHashString2GameObject(GameObject goRoot, GameObject goCurrent, ref Dictionary<string, GameObject> outHashString2GameObjects, ref string strErrorMessage)"}</code> |  |
-| <Link id="m-buildimportedbonelist" /><code>{"private bool BuildImportedBoneList(GameObject goBoneFirst, GameObject goBoneLast, List<int> ListImportBonesStatic, List<int> ListImportBonesNoCollider, out List<"}<Link to="/game-api/types/global-t-x/ultimaterope-ropebone">{"UltimateRope.RopeBone"}</Link>{"> outListImportedBones, out string strErrorMessage)"}</code> |  |
-| <Link id="m-buildimportedbonelisttry" /><code>{"private bool BuildImportedBoneListTry(GameObject goRoot, string strPrefix, int nIndexFirst, int nIndexLast, int nDigitsFirst, int nDigitsLast, List<int> ListImportBonesStatic, List<int> ListImportBonesNoCollider, out List<"}<Link to="/game-api/types/global-t-x/ultimaterope-ropebone">{"UltimateRope.RopeBone"}</Link>{"> outListImportedBones, ref string strErrorMessage)"}</code> |  |
-| <Link id="m-checkaddcoilnode" /><code>{"private void CheckAddCoilNode()"}</code> |  |
-| <Link id="m-checkdelcoilnode" /><code>{"private void CheckDelCoilNode()"}</code> |  |
-| <Link id="m-createjoint" /><code>{"private ConfigurableJoint CreateJoint(GameObject goObject, GameObject goConnectedTo, Vector3 v3Pivot)"}</code> |  |
-| <Link id="m-createropejoints" /><code>{"private void CreateRopeJoints(bool bCheckIfBroken = false)"}</code> |  |
-| <Link id="m-extendropelinear" /><code>{"private float ExtendRopeLinear(float fLinearIncrement)"}</code> |  |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |  |
-| <Link id="m-getaxisvector" /><code>{"private Vector3 GetAxisVector("}<Link to="/game-api/types/global-t-x/ultimaterope-eaxis">{"UltimateRope.EAxis"}</Link>{" eAxis, float fLength)"}</code> |  |
-| <Link id="m-getlinkaxisindex" /><code>{"private int GetLinkAxisIndex()"}</code> |  |
-| <Link id="m-getlinkaxisoffset" /><code>{"private Vector3 GetLinkAxisOffset(float fValue)"}</code> |  |
-| <Link id="m-getlinkboxcollidercenterandsize" /><code>{"private bool GetLinkBoxColliderCenterAndSize(float fLinkLength, float fRopeDiameter, ref Vector3 v3CenterInOut, ref Vector3 v3SizeInOut)"}</code> |  |
-| <Link id="m-getlinkdiameter" /><code>{"private float GetLinkDiameter()"}</code> |  |
-| <Link id="m-getlinkedobjectlocalrotation" /><code>{"private Quaternion GetLinkedObjectLocalRotation(float fTwistAngle = 0)"}</code> |  |
-| <Link id="m-getlinkedobjectscale" /><code>{"private float GetLinkedObjectScale(float fSegmentLength, int nNumLinks)"}</code> |  |
-| <Link id="m-ongui" /><code>{"private void OnGUI()"}</code> |  |
-| <Link id="m-parseboneindices" /><code>{"private bool ParseBoneIndices(string strBoneList, out List<int> outListBoneIndices, out string strErrorMessage)"}</code> |  |
-| <Link id="m-setextensiblelinktokinematic" /><code>{"private void SetExtensibleLinkToKinematic(GameObject link, bool bKinematic)"}</code> |  |
-| <Link id="m-setupcoilbones" /><code>{"private void SetupCoilBones(float fCoilLength)"}</code> |  |
-| <Link id="m-setupjoint" /><code>{"private void SetupJoint(ConfigurableJoint joint)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+
+<details>
+<summary>24 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-buildbonehashstring2gameobject" /><code>{"private bool BuildBoneHashString2GameObject(GameObject goRoot, GameObject goCurrent, ref Dictionary<string, GameObject> outHashString2GameObjects, ref string strErrorMessage)"}</code> |
+| <Link id="m-buildimportedbonelist" /><code>{"private bool BuildImportedBoneList(GameObject goBoneFirst, GameObject goBoneLast, List<int> ListImportBonesStatic, List<int> ListImportBonesNoCollider, out List<"}<Link to="/game-api/types/global-t-x/ultimaterope-ropebone">{"UltimateRope.RopeBone"}</Link>{"> outListImportedBones, out string strErrorMessage)"}</code> |
+| <Link id="m-buildimportedbonelisttry" /><code>{"private bool BuildImportedBoneListTry(GameObject goRoot, string strPrefix, int nIndexFirst, int nIndexLast, int nDigitsFirst, int nDigitsLast, List<int> ListImportBonesStatic, List<int> ListImportBonesNoCollider, out List<"}<Link to="/game-api/types/global-t-x/ultimaterope-ropebone">{"UltimateRope.RopeBone"}</Link>{"> outListImportedBones, ref string strErrorMessage)"}</code> |
+| <Link id="m-checkaddcoilnode" /><code>{"private void CheckAddCoilNode()"}</code> |
+| <Link id="m-checkdelcoilnode" /><code>{"private void CheckDelCoilNode()"}</code> |
+| <Link id="m-createjoint" /><code>{"private ConfigurableJoint CreateJoint(GameObject goObject, GameObject goConnectedTo, Vector3 v3Pivot)"}</code> |
+| <Link id="m-createropejoints" /><code>{"private void CreateRopeJoints(bool bCheckIfBroken = false)"}</code> |
+| <Link id="m-extendropelinear" /><code>{"private float ExtendRopeLinear(float fLinearIncrement)"}</code> |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |
+| <Link id="m-getaxisvector" /><code>{"private Vector3 GetAxisVector("}<Link to="/game-api/types/global-t-x/ultimaterope-eaxis">{"UltimateRope.EAxis"}</Link>{" eAxis, float fLength)"}</code> |
+| <Link id="m-getlinkaxisindex" /><code>{"private int GetLinkAxisIndex()"}</code> |
+| <Link id="m-getlinkaxisoffset" /><code>{"private Vector3 GetLinkAxisOffset(float fValue)"}</code> |
+| <Link id="m-getlinkboxcollidercenterandsize" /><code>{"private bool GetLinkBoxColliderCenterAndSize(float fLinkLength, float fRopeDiameter, ref Vector3 v3CenterInOut, ref Vector3 v3SizeInOut)"}</code> |
+| <Link id="m-getlinkdiameter" /><code>{"private float GetLinkDiameter()"}</code> |
+| <Link id="m-getlinkedobjectlocalrotation" /><code>{"private Quaternion GetLinkedObjectLocalRotation(float fTwistAngle = 0)"}</code> |
+| <Link id="m-getlinkedobjectscale" /><code>{"private float GetLinkedObjectScale(float fSegmentLength, int nNumLinks)"}</code> |
+| <Link id="m-ongui" /><code>{"private void OnGUI()"}</code> |
+| <Link id="m-parseboneindices" /><code>{"private bool ParseBoneIndices(string strBoneList, out List<int> outListBoneIndices, out string strErrorMessage)"}</code> |
+| <Link id="m-setextensiblelinktokinematic" /><code>{"private void SetExtensibleLinkToKinematic(GameObject link, bool bKinematic)"}</code> |
+| <Link id="m-setupcoilbones" /><code>{"private void SetupCoilBones(float fCoilLength)"}</code> |
+| <Link id="m-setupjoint" /><code>{"private void SetupJoint(ConfigurableJoint joint)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>
 
 ## Used in
 

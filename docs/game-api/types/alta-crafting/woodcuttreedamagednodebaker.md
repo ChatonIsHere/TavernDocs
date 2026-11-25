@@ -17,22 +17,22 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeDamagedNodeBaker()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WoodcutTreeDamagedNodeBaker()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/alta-crafting/woodcuttreedamagednodebaker">{"WoodcutTreeDamagedNodeBaker"}</Link>{" Instance { get; }"}</code> |  |
-| <Link id="m-iscopyingcolors" /><code>{"override bool IsCopyingColors { get; }"}</code> |  |
-| <Link id="m-maxlods" /><code>{"override int MaxLods { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/alta-crafting/woodcuttreedamagednodebaker">{"WoodcutTreeDamagedNodeBaker"}</Link>{" Instance { get; }"}</code> |
+| <Link id="m-iscopyingcolors" /><code>{"override bool IsCopyingColors { get; }"}</code> |
+| <Link id="m-maxlods" /><code>{"override int MaxLods { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getlodcount" /><code>{"override int GetLodCount("}<Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item)"}</code> |  |
-| <Link id="m-getmaterial" /><code>{"override Material GetMaterial("}<Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item, int index)"}</code> |  |
-| <Link id="m-isvalid" /><code>{"override bool IsValid("}<Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item, int lod)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getlodcount" /><code>{"override int GetLodCount("}<Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item)"}</code> |
+| <Link id="m-getmaterial" /><code>{"override Material GetMaterial("}<Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item, int index)"}</code> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid("}<Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item, int lod)"}</code> |

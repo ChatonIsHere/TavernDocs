@@ -17,16 +17,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimerData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimerData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-index" /><code>{"int index"}</code> |  |
-| <Link id="m-timer" /><code>{"TimeSpan timer"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-index" /><code>{"int index"}</code> |
+| <Link id="m-timer" /><code>{"TimeSpan timer"}</code> |
 
 ## Used in
 

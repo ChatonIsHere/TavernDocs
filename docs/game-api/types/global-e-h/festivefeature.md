@@ -17,30 +17,40 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FestiveFeature()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FestiveFeature()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activated" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" activated"}</code> |  |
-| <Link id="m-changedwhilespawned" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" changedWhileSpawned"}</code> |  |
-| <Link id="m-components" /><code>{"private Behaviour[] components"}</code> |  |
-| <Link id="m-deactivated" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" deactivated"}</code> |  |
-| <Link id="m-festivity" /><code>{"private "}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity"}</code> |  |
-| <Link id="m-gameobjects" /><code>{"private GameObject[] gameObjects"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activated" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" activated"}</code> |
+| <Link id="m-changedwhilespawned" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" changedWhileSpawned"}</code> |
+| <Link id="m-components" /><code>{"private Behaviour[] components"}</code> |
+| <Link id="m-deactivated" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" deactivated"}</code> |
+| <Link id="m-festivity" /><code>{"private "}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity"}</code> |
+| <Link id="m-gameobjects" /><code>{"private GameObject[] gameObjects"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modify" /><code>{"private void Modify(bool isActive)"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-onfestivityactivationchanged" /><code>{"private void OnFestivityActivationChanged("}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> |  |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |
-| <Link id="m-setactive" /><code>{"private void SetActive(bool isActive)"}</code> |  |
-| <Link id="m-trygetfestivityfromresources" /><code>{"private bool TryGetFestivityFromResources()"}</code> |  |
+<details>
+<summary>7 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-modify" /><code>{"private void Modify(bool isActive)"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-onfestivityactivationchanged" /><code>{"private void OnFestivityActivationChanged("}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+| <Link id="m-setactive" /><code>{"private void SetActive(bool isActive)"}</code> |
+| <Link id="m-trygetfestivityfromresources" /><code>{"private bool TryGetFestivityFromResources()"}</code> |
+
+</details>

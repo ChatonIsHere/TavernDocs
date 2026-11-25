@@ -17,11 +17,11 @@ An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-emissionrateoverdistance" /><code>{"EmissionRateOverDistance = 2"}</code> |  |
-| <Link id="m-emissionrateovertime" /><code>{"EmissionRateOverTime = 1"}</code> |  |
-| <Link id="m-playbackspeed" /><code>{"PlaybackSpeed = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-emissionrateoverdistance" /><code>{"EmissionRateOverDistance = 2"}</code> |
+| <Link id="m-emissionrateovertime" /><code>{"EmissionRateOverTime = 1"}</code> |
+| <Link id="m-playbackspeed" /><code>{"PlaybackSpeed = 0"}</code> |
 
 ## Used in
 

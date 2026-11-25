@@ -20,19 +20,24 @@ Server: a path edge that spawns and keeps a population of creatures along it, us
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationPath()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationPath()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-densitymultiplier" /><code>{"private float densityMultiplier"}</code> |  |
-| <Link id="m-loadpopulation" /><code>{"private int? loadPopulation"}</code> |  |
-| <Link id="m-loadtime" /><code>{"private TimeSpan? loadTime"}</code> |  |
-| <Link id="m-population" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" population"}</code> |  |
-| <Link id="m-widthmultiplier" /><code>{"private float widthMultiplier"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-densitymultiplier" /><code>{"private float densityMultiplier"}</code> |
+| <Link id="m-loadpopulation" /><code>{"private int? loadPopulation"}</code> |
+| <Link id="m-loadtime" /><code>{"private TimeSpan? loadTime"}</code> |
+| <Link id="m-population" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" population"}</code> |
+| <Link id="m-widthmultiplier" /><code>{"private float widthMultiplier"}</code> |
+
+</details>
 
 ## Properties
 
@@ -54,5 +59,13 @@ Server: a path edge that spawns and keeps a population of creatures along it, us
 | --- | --- |
 | <Link id="m-getpoint" /><code><Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{"? GetPoint()"}</code> | A random spawn point on the terrain inside the path's area, with the ground normal. |
 | <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Picks the population setup and starts the population once the entity is in a chunk. |
-| <Link id="m-addedtochunk" /><code>{"private void AddedToChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-removedfromchunk" /><code>{"private void RemovedFromChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-addedtochunk" /><code>{"private void AddedToChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| <Link id="m-removedfromchunk" /><code>{"private void RemovedFromChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+
+</details>

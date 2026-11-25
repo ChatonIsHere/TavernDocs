@@ -19,12 +19,12 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RaycastCrafterSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RaycastCrafterSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-iscrafted" /><code>{"bool isCrafted"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-iscrafted" /><code>{"bool isCrafted"}</code> |

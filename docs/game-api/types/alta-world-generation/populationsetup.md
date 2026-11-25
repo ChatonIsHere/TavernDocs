@@ -21,19 +21,24 @@ Asset defining a population: how fast it spawns and where its members may be pla
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationSetup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PopulationSetup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ismoving" /><code>{"private bool isMoving"}</code> |  |
-| <Link id="m-maximumfailscore" /><code>{"private float maximumFailScore"}</code> |  |
-| <Link id="m-minimumfailscore" /><code>{"private float minimumFailScore"}</code> |  |
-| <Link id="m-spawnmodifiers" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" spawnModifiers"}</code> |  |
-| <Link id="m-spawnrate" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spawnrate">{"SpawnRate"}</Link>{" spawnRate"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ismoving" /><code>{"private bool isMoving"}</code> |
+| <Link id="m-maximumfailscore" /><code>{"private float maximumFailScore"}</code> |
+| <Link id="m-minimumfailscore" /><code>{"private float minimumFailScore"}</code> |
+| <Link id="m-spawnmodifiers" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" spawnModifiers"}</code> |
+| <Link id="m-spawnrate" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spawnrate">{"SpawnRate"}</Link>{" spawnRate"}</code> |
+
+</details>
 
 ## Properties
 

@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameSceneVisuals()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameSceneVisuals()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gameobjects" /><code>{"private GameObject[] gameObjects"}</code> |  |
-| <Link id="m-terrain" /><code>{"private Terrain terrain"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-gameobjects" /><code>{"private GameObject[] gameObjects"}</code> |
+| <Link id="m-terrain" /><code>{"private Terrain terrain"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setvisualsactive" /><code>{"void SetVisualsActive(bool isActive)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setvisualsactive" /><code>{"void SetVisualsActive(bool isActive)"}</code> |

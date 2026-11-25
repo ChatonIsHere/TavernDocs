@@ -16,6 +16,6 @@ A **static class** in `Alta.Api.Client`, `Alta.Api.Client.Utility`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-istokenexpired" /><code>{"static bool IsTokenExpired(string tokenString)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-istokenexpired" /><code>{"static bool IsTokenExpired(string tokenString)"}</code> |

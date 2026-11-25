@@ -16,12 +16,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StopInstanceRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StopInstanceRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> |

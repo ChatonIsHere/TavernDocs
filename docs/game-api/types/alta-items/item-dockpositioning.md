@@ -18,23 +18,28 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DockPositioning(Vector3 storePosition, Vector3 storeEuler)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DockPositioning(Vector3 storePosition, Vector3 storeEuler)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-storeeuler" /><code>{"private Vector3 storeEuler"}</code> |  |
-| <Link id="m-storeposition" /><code>{"private Vector3 storePosition"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-storeeuler" /><code>{"private Vector3 storeEuler"}</code> |
+| <Link id="m-storeposition" /><code>{"private Vector3 storePosition"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-storeeuler-2" /><code>{"Vector3 StoreEuler { get; }"}</code> |  |
-| <Link id="m-storeposition-2" /><code>{"Vector3 StorePosition { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-storeeuler-2" /><code>{"Vector3 StoreEuler { get; }"}</code> |
+| <Link id="m-storeposition-2" /><code>{"Vector3 StorePosition { get; }"}</code> |
 
 ## Used in
 

@@ -17,6 +17,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OrbitalInspector("}<Link to="/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OrbitalInspector("}<Link to="/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember)"}</code> |

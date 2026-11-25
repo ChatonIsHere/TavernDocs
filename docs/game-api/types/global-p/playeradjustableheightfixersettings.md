@@ -18,34 +18,47 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerAdjustableHeightFixerSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerAdjustableHeightFixerSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentheight" /><code>{"private int currentHeight"}</code> |  |
-| <Link id="m-heights" /><code>{"private float[] heights"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentheight" /><code>{"private int currentHeight"}</code> |
+| <Link id="m-heights" /><code>{"private float[] heights"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-candecreaseheight" /><code>{"bool CanDecreaseHeight { get; }"}</code> |  |
-| <Link id="m-canincreaseheight" /><code>{"bool CanIncreaseHeight { get; }"}</code> |  |
-| <Link id="m-height" /><code>{"float Height { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-candecreaseheight" /><code>{"bool CanDecreaseHeight { get; }"}</code> |
+| <Link id="m-canincreaseheight" /><code>{"bool CanIncreaseHeight { get; }"}</code> |
+| <Link id="m-height" /><code>{"float Height { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-decreaseheight" /><code>{"void DecreaseHeight()"}</code> |  |
-| <Link id="m-increaseheight" /><code>{"void IncreaseHeight()"}</code> |  |
-| <Link id="m-saveheight" /><code>{"private void SaveHeight()"}</code> |  |
-| <Link id="m-setupheight" /><code>{"private void SetupHeight()"}</code> |  |
-| <Link id="m-updatesettings" /><code>{"private void UpdateSettings("}<Link to="/game-api/types/alta-utilities/gamesettings">{"GameSettings"}</Link>{" settings)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-decreaseheight" /><code>{"void DecreaseHeight()"}</code> |
+| <Link id="m-increaseheight" /><code>{"void IncreaseHeight()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-saveheight" /><code>{"private void SaveHeight()"}</code> |
+| <Link id="m-setupheight" /><code>{"private void SetupHeight()"}</code> |
+| <Link id="m-updatesettings" /><code>{"private void UpdateSettings("}<Link to="/game-api/types/alta-utilities/gamesettings">{"GameSettings"}</Link>{" settings)"}</code> |
+
+</details>
 
 ## Used in
 

@@ -19,12 +19,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HealthBasedDigableData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HealthBasedDigableData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currenthealth" /><code>{"float currentHealth"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currenthealth" /><code>{"float currentHealth"}</code> |

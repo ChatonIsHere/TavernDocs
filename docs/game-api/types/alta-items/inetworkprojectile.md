@@ -17,15 +17,15 @@ An **interface** in `Root.Township`, `Alta.Impact`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-collider" /><code>{"Collider Collider { get; }"}</code> |  |
-| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> |  |
-| <Link id="m-rigidbody" /><code>{"Rigidbody Rigidbody { get; set; }"}</code> |  |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-collider" /><code>{"Collider Collider { get; }"}</code> |
+| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> |
+| <Link id="m-rigidbody" /><code>{"Rigidbody Rigidbody { get; set; }"}</code> |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializeeffects" /><code>{"void InitializeEffects()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializeeffects" /><code>{"void InitializeEffects()"}</code> |

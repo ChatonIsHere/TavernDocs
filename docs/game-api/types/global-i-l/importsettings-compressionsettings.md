@@ -17,16 +17,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CompressionSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CompressionSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isignored" /><code>{"bool isIgnored"}</code> |  |
-| <Link id="m-isoverriden" /><code>{"bool isOverriden"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isignored" /><code>{"bool isIgnored"}</code> |
+| <Link id="m-isoverriden" /><code>{"bool isOverriden"}</code> |
 
 ## Used in
 

@@ -20,9 +20,9 @@ One mod a joining player is missing or has the wrong version of, as sent in the 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RequiredMod()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RequiredMod()"}</code> |
 
 ## Fields
 

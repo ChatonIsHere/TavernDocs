@@ -16,10 +16,10 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-normal" /><code>{"Normal = 0"}</code> |  |
-| <Link id="m-world" /><code>{"World = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-normal" /><code>{"Normal = 0"}</code> |
+| <Link id="m-world" /><code>{"World = 1"}</code> |
 
 ## Used in
 

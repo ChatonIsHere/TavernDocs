@@ -17,22 +17,35 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ColorFadeRelease()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ColorFadeRelease()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fadeoutduration" /><code>{"private float fadeOutDuration"}</code> |  |
-| <Link id="m-systemstochange" /><code>{"private ParticleSystem[] systemsToChange"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fadeoutduration" /><code>{"private float fadeOutDuration"}</code> |
+| <Link id="m-systemstochange" /><code>{"private ParticleSystem[] systemsToChange"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-delayrelease" /><code>{"protected override IEnumerator DelayRelease() (iterator)"}</code> |  |
-| <Link id="m-resetsystems" /><code>{"private void ResetSystems("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |  |
-| <Link id="m-updatesystems" /><code>{"private void UpdateSystems(float alpha)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-delayrelease" /><code>{"protected override IEnumerator DelayRelease() (iterator)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-resetsystems" /><code>{"private void ResetSystems("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
+| <Link id="m-updatesystems" /><code>{"private void UpdateSystems(float alpha)"}</code> |
+
+</details>

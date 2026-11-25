@@ -19,14 +19,14 @@ Flags for the six sides of a `StructureCube`: forward, right, backward, left, up
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-backward" /><code>{"Backward = 4"}</code> |  |
-| <Link id="m-down" /><code>{"Down = 32"}</code> |  |
-| <Link id="m-forward" /><code>{"Forward = 1"}</code> |  |
-| <Link id="m-left" /><code>{"Left = 8"}</code> |  |
-| <Link id="m-right" /><code>{"Right = 2"}</code> |  |
-| <Link id="m-up" /><code>{"Up = 16"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-backward" /><code>{"Backward = 4"}</code> |
+| <Link id="m-down" /><code>{"Down = 32"}</code> |
+| <Link id="m-forward" /><code>{"Forward = 1"}</code> |
+| <Link id="m-left" /><code>{"Left = 8"}</code> |
+| <Link id="m-right" /><code>{"Right = 2"}</code> |
+| <Link id="m-up" /><code>{"Up = 16"}</code> |
 
 ## Used in
 

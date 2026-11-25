@@ -17,21 +17,21 @@ A **private class** in `Root.Township`, `Alta.Forests`. Reach it through att-stu
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Option()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Option()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-display" /><code>{"GameObject display"}</code> |  |
-| <Link id="m-handleheight" /><code>{"float handleHeight"}</code> |  |
-| <Link id="m-handlelength" /><code>{"float handleLength"}</code> |  |
-| <Link id="m-piece" /><code><Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" piece"}</code> |  |
-| <Link id="m-startheight" /><code>{"float startHeight"}</code> |  |
-| <Link id="m-startoffset" /><code>{"float startOffset"}</code> |  |
-| <Link id="m-weight" /><code>{"float weight"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-display" /><code>{"GameObject display"}</code> |
+| <Link id="m-handleheight" /><code>{"float handleHeight"}</code> |
+| <Link id="m-handlelength" /><code>{"float handleLength"}</code> |
+| <Link id="m-piece" /><code><Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" piece"}</code> |
+| <Link id="m-startheight" /><code>{"float startHeight"}</code> |
+| <Link id="m-startoffset" /><code>{"float startOffset"}</code> |
+| <Link id="m-weight" /><code>{"float weight"}</code> |
 
 ## Used in
 

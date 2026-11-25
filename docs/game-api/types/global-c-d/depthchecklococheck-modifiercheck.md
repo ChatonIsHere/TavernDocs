@@ -17,16 +17,16 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModifierCheck(Bounds bounds)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModifierCheck(Bounds bounds)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-depth" /><code><Link to="/game-api/types/global-c-d/depthchecklococheck-depth">{"DepthCheckLocoCheck.Depth"}</Link>{" "}<Link to="/game-api/types/global-c-d/depthchecklococheck-depth">{"Depth"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-surface" /><code>{"float Surface { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-depth" /><code><Link to="/game-api/types/global-c-d/depthchecklococheck-depth">{"DepthCheckLocoCheck.Depth"}</Link>{" "}<Link to="/game-api/types/global-c-d/depthchecklococheck-depth">{"Depth"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-surface" /><code>{"float Surface { get; }"}</code> |
 
 ## Used in
 

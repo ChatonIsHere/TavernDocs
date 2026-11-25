@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-completions" /><code>{"string[] Completions { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-completions" /><code>{"string[] Completions { get; }"}</code> |
 
 ## Used in
 

@@ -17,14 +17,27 @@ A **static class** in `Root.Township`, `Alta.Console`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logevents" /><code>{"private static "}<Link to="/game-api/types/alta-console/consoleevent-t">{"ConsoleEvent"}</Link>{"<"}<Link to="/game-api/types/alta-console/consolelogevents-logevent">{"ConsoleLogEvents.LogEvent"}</Link>{">[] LogEvents"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logevents" /><code>{"private static "}<Link to="/game-api/types/alta-console/consoleevent-t">{"ConsoleEvent"}</Link>{"<"}<Link to="/game-api/types/alta-console/consolelogevents-logevent">{"ConsoleLogEvents.LogEvent"}</Link>{">[] LogEvents"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"static void Initialize()"}</code> |  |
-| <Link id="m-handlelog" /><code>{"private static void HandleLog(LogEventInfo logInfo)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"static void Initialize()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-handlelog" /><code>{"private static void HandleLog(LogEventInfo logInfo)"}</code> |
+
+</details>

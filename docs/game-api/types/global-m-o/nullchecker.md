@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NullChecker()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NullChecker()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isnotnull" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" isNotNull"}</code> |  |
-| <Link id="m-isnull" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" isNull"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isnotnull" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" isNotNull"}</code> |
+| <Link id="m-isnull" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" isNull"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkvalue" /><code>{"void CheckValue(object toCheck)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkvalue" /><code>{"void CheckValue(object toCheck)"}</code> |

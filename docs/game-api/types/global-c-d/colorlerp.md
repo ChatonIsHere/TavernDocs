@@ -17,26 +17,39 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ColorLerp()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ColorLerp()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-color0" /><code>{"private Color color0"}</code> |  |
-| <Link id="m-color1" /><code>{"private Color color1"}</code> |  |
-| <Link id="m-needstobeset" /><code>{"private bool needsToBeSet"}</code> |  |
-| <Link id="m-output" /><code>{"private "}<Link to="/game-api/types/global-c-d/colorevent">{"ColorEvent"}</Link>{" output"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-color0" /><code>{"private Color color0"}</code> |
+| <Link id="m-color1" /><code>{"private Color color1"}</code> |
+| <Link id="m-needstobeset" /><code>{"private bool needsToBeSet"}</code> |
+| <Link id="m-output" /><code>{"private "}<Link to="/game-api/types/global-c-d/colorevent">{"ColorEvent"}</Link>{" output"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-set" /><code>{"void Set(float value)"}</code> |  |
-| <Link id="m-set-2" /><code>{"void Set(int value)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-set" /><code>{"void Set(float value)"}</code> |
+| <Link id="m-set-2" /><code>{"void Set(int value)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>
 
 ## Used in
 

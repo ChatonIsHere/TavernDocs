@@ -19,16 +19,21 @@ An entity network method whose handler gets a class instance to read into or wri
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MethodSyncClass("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType, "}<Link to="/game-api/types/alta-networking/serializemethod-t">{"SerializeMethod"}</Link>{"<T> method, "}<Link to="/game-api/types/alta-networking/recreateargumentmode">{"RecreateArgumentMode"}</Link>{" recreateArgumentMode = 0)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MethodSyncClass("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType, "}<Link to="/game-api/types/alta-networking/serializemethod-t">{"SerializeMethod"}</Link>{"<T> method, "}<Link to="/game-api/types/alta-networking/recreateargumentmode">{"RecreateArgumentMode"}</Link>{" recreateArgumentMode = 0)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-method" /><code>{"private "}<Link to="/game-api/types/alta-networking/serializemethod-t">{"SerializeMethod"}</Link>{"<T> method"}</code> |  |
-| <Link id="m-recreateargumentmode" /><code>{"private "}<Link to="/game-api/types/alta-networking/recreateargumentmode">{"RecreateArgumentMode"}</Link>{" recreateArgumentMode"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-method" /><code>{"private "}<Link to="/game-api/types/alta-networking/serializemethod-t">{"SerializeMethod"}</Link>{"<T> method"}</code> |
+| <Link id="m-recreateargumentmode" /><code>{"private "}<Link to="/game-api/types/alta-networking/recreateargumentmode">{"RecreateArgumentMode"}</Link>{" recreateArgumentMode"}</code> |
+
+</details>
 
 ## Properties
 
@@ -38,9 +43,14 @@ An entity network method whose handler gets a class instance to read into or wri
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-forward" /><code>{"private void Forward("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-forward" /><code>{"private void Forward("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

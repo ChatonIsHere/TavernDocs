@@ -21,18 +21,23 @@ Logs the client in to the Alta API: automatic login at startup, or username (or 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LoginManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LoginManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-loginpreferences" /><code>{"private "}<Link to="/game-api/types/assembly-other/iloginpreferences">{"ILoginPreferences"}</Link>{" loginPreferences"}</code> |  |
-| <Link id="m-postloginactions" /><code>{"private readonly List<Action> postLoginActions"}</code> |  |
-| <Link id="m-userservice" /><code>{"private "}<Link to="/game-api/types/assembly-other/iuserservice">{"IUserService"}</Link>{" userService"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-loginpreferences" /><code>{"private "}<Link to="/game-api/types/assembly-other/iloginpreferences">{"ILoginPreferences"}</Link>{" loginPreferences"}</code> |
+| <Link id="m-postloginactions" /><code>{"private readonly List<Action> postLoginActions"}</code> |
+| <Link id="m-userservice" /><code>{"private "}<Link to="/game-api/types/assembly-other/iuserservice">{"IUserService"}</Link>{" userService"}</code> |
+
+</details>
 
 ## Properties
 
@@ -59,8 +64,16 @@ Logs the client in to the Alta API: automatic login at startup, or username (or 
 | <Link id="m-loginasync" /><code>{"async Task<IResult> LoginAsync(string username, string password)"}</code> | Logs in with a hashed password. Email logins return success without running post-login actions or raising `LoggedIn`. |
 | <Link id="m-logout" /><code>{"IResult Logout()"}</code> | Logs out, clears saved credentials and raises `LoggedOut`. On Android it opens the registration scene. |
 | <Link id="m-processsuccessfullogin" /><code>{"void ProcessSuccessfulLogin()"}</code> | Saves credentials, runs queued post-login actions and raises `LoggedIn`. |
-| <Link id="m-autologinasync" /><code>{"private async void AutoLoginAsync()"}</code> |  |
 | <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Hooks automatic login to application startup. |
-| <Link id="m-executepostloginactions" /><code>{"private void ExecutePostLoginActions()"}</code> |  |
 | <Link id="m-inject" /><code>{"protected void Inject("}<Link to="/game-api/types/assembly-other/iuserservice">{"IUserService"}</Link>{" userService, "}<Link to="/game-api/types/assembly-other/iloginpreferences">{"ILoginPreferences"}</Link>{" loginPreferences)"}</code> | Receives the user service and login preferences from dependency injection. |
-| <Link id="m-processautologinfailed" /><code>{"private async Task ProcessAutoLoginFailed(IResult loginResult)"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-autologinasync" /><code>{"private async void AutoLoginAsync()"}</code> |
+| <Link id="m-executepostloginactions" /><code>{"private void ExecutePostLoginActions()"}</code> |
+| <Link id="m-processautologinfailed" /><code>{"private async Task ProcessAutoLoginFailed(IResult loginResult)"}</code> |
+
+</details>

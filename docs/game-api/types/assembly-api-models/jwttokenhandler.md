@@ -17,12 +17,17 @@ A **static class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModel
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handler" /><code>{"private static readonly JwtSecurityTokenHandler Handler"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-handler" /><code>{"private static readonly JwtSecurityTokenHandler Handler"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-write" /><code>{"static string Write(JwtSecurityToken token)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-write" /><code>{"static string Write(JwtSecurityToken token)"}</code> |

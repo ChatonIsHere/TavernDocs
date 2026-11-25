@@ -17,45 +17,58 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NearbyPlayerScaler()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NearbyPlayerScaler()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activatedistance" /><code>{"private float activateDistance"}</code> |  |
-| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |  |
-| <Link id="m-deactivatedistance" /><code>{"private float deactivateDistance"}</code> |  |
-| <Link id="m-debugview" /><code>{"private bool debugView"}</code> |  |
-| <Link id="m-enabledwhileactivated" /><code>{"private Behaviour[] enabledWhileActivated"}</code> |  |
-| <Link id="m-sqrdactivatedistance" /><code>{"private float sqrdActivateDistance"}</code> |  |
-| <Link id="m-sqrddeactivatedistance" /><code>{"private float sqrdDeactivateDistance"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activatedistance" /><code>{"private float activateDistance"}</code> |
+| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |
+| <Link id="m-deactivatedistance" /><code>{"private float deactivateDistance"}</code> |
+| <Link id="m-debugview" /><code>{"private bool debugView"}</code> |
+| <Link id="m-enabledwhileactivated" /><code>{"private Behaviour[] enabledWhileActivated"}</code> |
+| <Link id="m-sqrdactivatedistance" /><code>{"private float sqrdActivateDistance"}</code> |
+| <Link id="m-sqrddeactivatedistance" /><code>{"private float sqrdDeactivateDistance"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isscalingforced" /><code>{"bool? IsScalingForced { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isscalingforced" /><code>{"bool? IsScalingForced { get; set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onnearchanged" /><code>{"event Action<bool> OnNearChanged"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onnearchanged" /><code>{"event Action<bool> OnNearChanged"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-debugview-2" /><code>{"void DebugView()"}</code> |  |
-| <Link id="m-setscale" /><code>{"void SetScale(float progress)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"protected override void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-set" /><code>{"private void Set(bool isOn)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-debugview-2" /><code>{"void DebugView()"}</code> |
+| <Link id="m-setscale" /><code>{"void SetScale(float progress)"}</code> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |
+| <Link id="m-ondisable" /><code>{"protected override void OnDisable()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-set" /><code>{"private void Set(bool isOn)"}</code> |
+
+</details>
 
 ## Used in
 

@@ -17,25 +17,35 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ExplosionRadius()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ExplosionRadius()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cachedparent" /><code>{"private Transform cachedParent"}</code> |  |
-| <Link id="m-explosionradius" /><code>{"private float explosionRadius"}</code> |  |
-| <Link id="m-scalemultiplier" /><code>{"private float scaleMultiplier"}</code> |  |
-| <Link id="m-scaler" /><code>{"private Transform scaler"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cachedparent" /><code>{"private Transform cachedParent"}</code> |
+| <Link id="m-explosionradius" /><code>{"private float explosionRadius"}</code> |
+| <Link id="m-scalemultiplier" /><code>{"private float scaleMultiplier"}</code> |
+| <Link id="m-scaler" /><code>{"private Transform scaler"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-fixparent" /><code>{"private IEnumerator FixParent() (iterator)"}</code> |  |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-fixparent" /><code>{"private IEnumerator FixParent() (iterator)"}</code> |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+
+</details>

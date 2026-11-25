@@ -21,16 +21,21 @@ A ScriptableObject pairing a `SoundEffect` type with a Wwise event. Plays throug
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SoundEffectSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SoundEffectSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-soundeffecttype" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" soundEffectType"}</code> |  |
-| <Link id="m-soundevent" /><code>{"private Event soundEvent"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-soundeffecttype" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" soundEffectType"}</code> |
+| <Link id="m-soundevent" /><code>{"private Event soundEvent"}</code> |
+
+</details>
 
 ## Properties
 

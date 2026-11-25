@@ -19,19 +19,24 @@ One hand's input component on the platform player. Holds the hand index, raw but
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerInput()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerInput()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actionsmanager" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleractionsmanager">{"ControllerActionsManager"}</Link>{" actionsManager"}</code> |  |
-| <Link id="m-handindex" /><code>{"private "}<Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" handIndex"}</code> |  |
-| <Link id="m-inputcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/deviceinputcontroller">{"DeviceInputController"}</Link>{" inputController"}</code> |  |
-| <Link id="m-targettransform" /><code>{"private Transform targetTransform"}</code> |  |
-| <Link id="m-vrtrackeddevice" /><code>{"private "}<Link to="/game-api/types/alta-menus/vrtrackeddevice">{"VRTrackedDevice"}</Link>{" vrTrackedDevice"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-actionsmanager" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleractionsmanager">{"ControllerActionsManager"}</Link>{" actionsManager"}</code> |
+| <Link id="m-handindex" /><code>{"private "}<Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" handIndex"}</code> |
+| <Link id="m-inputcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/deviceinputcontroller">{"DeviceInputController"}</Link>{" inputController"}</code> |
+| <Link id="m-targettransform" /><code>{"private Transform targetTransform"}</code> |
+| <Link id="m-vrtrackeddevice" /><code>{"private "}<Link to="/game-api/types/alta-menus/vrtrackeddevice">{"VRTrackedDevice"}</Link>{" vrTrackedDevice"}</code> |
+
+</details>
 
 ## Properties
 
@@ -46,7 +51,15 @@ One hand's input component on the platform player. Holds the hand index, raw but
 | <Link id="m-player" /><code><Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" Player { get; private set; }"}</code> | The platform player this hand belongs to, set by `InitializeForPlayer`. |
 | <Link id="m-rawinput" /><code><Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" RawInput { get; }"}</code> | The `ControllerInput` holding this hand's current button and axis values. The input controller writes into it each frame while the player is loaded. |
 | <Link id="m-targettransform-2" /><code>{"Transform TargetTransform { get; set; }"}</code> | The transform the hand tracks. Setting a new one rebuilds the tracked device (empty in this build). |
-| <Link id="m-trackeddevice" /><code>{"private "}<Link to="/game-api/types/alta-menus/trackeddevice">{"TrackedDevice"}</Link>{" "}<Link to="/game-api/types/alta-menus/trackeddevice">{"TrackedDevice"}</Link>{" { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-trackeddevice" /><code>{"private "}<Link to="/game-api/types/alta-menus/trackeddevice">{"TrackedDevice"}</Link>{" "}<Link to="/game-api/types/alta-menus/trackeddevice">{"TrackedDevice"}</Link>{" { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -62,15 +75,23 @@ One hand's input component on the platform player. Holds the hand index, raw but
 | <Link id="m-setplatformcontroller" /><code>{"void SetPlatformController("}<Link to="/game-api/types/global-c-d/deviceinputcontroller">{"DeviceInputController"}</Link>{" inputController)"}</code> | Assigns the device input controller for this hand and raises `ReceivedController`. |
 | <Link id="m-triggerhaptic" /><code>{"void TriggerHaptic(float strength, float duration, float frequency = 80)"}</code> | Client: vibrates this controller, either at a fixed strength for a duration or following a curve. Scaled by the haptics strength setting; does nothing without a controller. |
 | <Link id="m-triggerhaptic-2" /><code>{"void TriggerHaptic(AnimationCurve curve, float strength = 1, float frequency = 80)"}</code> | Client: vibrates this controller, either at a fixed strength for a duration or following a curve. Scaled by the haptics strength setting; does nothing without a controller. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-createtrackeddevice" /><code>{"private void CreateTrackedDevice()"}</code> |  |
-| <Link id="m-haptic" /><code>{"private IEnumerator Haptic(float strength, float duration, float frequency) (iterator)"}</code> |  |
-| <Link id="m-haptic-2" /><code>{"private IEnumerator Haptic(AnimationCurve curve, float strength, float frequency) (iterator)"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-positionpostprocessor" /><code>{"private void PositionPostProcessor(ref Vector3 input)"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
-| <Link id="m-updateposition" /><code>{"private void UpdatePosition()"}</code> |  |
+
+<details>
+<summary>9 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-createtrackeddevice" /><code>{"private void CreateTrackedDevice()"}</code> |
+| <Link id="m-haptic" /><code>{"private IEnumerator Haptic(float strength, float duration, float frequency) (iterator)"}</code> |
+| <Link id="m-haptic-2" /><code>{"private IEnumerator Haptic(AnimationCurve curve, float strength, float frequency) (iterator)"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-positionpostprocessor" /><code>{"private void PositionPostProcessor(ref Vector3 input)"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| <Link id="m-updateposition" /><code>{"private void UpdatePosition()"}</code> |
+
+</details>
 
 ## Used in
 

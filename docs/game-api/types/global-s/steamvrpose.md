@@ -18,15 +18,20 @@ Tracks the pose of one SteamVR tracked device index. `SteamVRDeviceLifecycle` ke
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SteamVRPose(SteamVR_TrackedObject.EIndex index)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SteamVRPose(SteamVR_TrackedObject.EIndex index)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-index" /><code>{"private int index"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-index" /><code>{"private int index"}</code> |
+
+</details>
 
 ## Properties
 
@@ -54,7 +59,15 @@ Tracks the pose of one SteamVR tracked device index. `SteamVRDeviceLifecycle` ke
 | <Link id="m-handleupdate" /><code>{"void HandleUpdate(Vector3 localPosition, Quaternion localRotation)"}</code> | Sets the position and rotation, either directly or from the SteamVR pose array (skipped when that device's pose is invalid or disconnected). |
 | <Link id="m-handleupdate-2" /><code>{"void HandleUpdate(TrackedDevicePose_t[] poses)"}</code> | Sets the position and rotation, either directly or from the SteamVR pose array (skipped when that device's pose is invalid or disconnected). |
 | <Link id="m-ondisconnected" /><code>{"void OnDisconnected()"}</code> | Marks the device disconnected and raises `Disconnected` if it was connected. |
-| <Link id="m-onconnected" /><code>{"private void OnConnected()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onconnected" /><code>{"private void OnConnected()"}</code> |
+
+</details>
 
 ## Used in
 

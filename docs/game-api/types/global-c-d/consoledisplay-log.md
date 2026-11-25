@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loglevel" /><code>{"LogLevel logLevel"}</code> |  |
-| <Link id="m-message" /><code>{"string message"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-loglevel" /><code>{"LogLevel logLevel"}</code> |
+| <Link id="m-message" /><code>{"string message"}</code> |
 
 ## Used in
 

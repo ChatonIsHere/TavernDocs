@@ -16,12 +16,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DeleteItemRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DeleteItemRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-itemidentifier" /><code>{"int ItemIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-itemidentifier" /><code>{"int ItemIdentifier { get; set; }"}</code> |

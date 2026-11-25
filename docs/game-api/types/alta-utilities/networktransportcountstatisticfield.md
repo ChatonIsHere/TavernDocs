@@ -17,15 +17,15 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling.NetworkTransportMetric
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportCountStatisticField(Func<int> getValueFunction)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkTransportCountStatisticField(Func<int> getValueFunction)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> |
 
 ## Used in
 

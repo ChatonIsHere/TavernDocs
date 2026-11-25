@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-replace" /><code>{"static string Replace(string original, "}<Link to="/game-api/types/global-a-b/basereplacer">{"BaseReplacer"}</Link>{" replacer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-replace" /><code>{"static string Replace(string original, "}<Link to="/game-api/types/global-a-b/basereplacer">{"BaseReplacer"}</Link>{" replacer)"}</code> |

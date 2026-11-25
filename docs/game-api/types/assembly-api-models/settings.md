@@ -19,16 +19,16 @@ Where the game keeps its settings and files, and the helpers it uses to read and
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Settings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Settings()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-content" /><code>{"string Content { get; set; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"string Identifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-content" /><code>{"string Content { get; set; }"}</code> |
+| <Link id="m-identifier" /><code>{"string Identifier { get; set; }"}</code> |
 
 ## Used in
 

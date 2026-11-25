@@ -21,12 +21,12 @@ Adds `strength` to the stat's `Base`. This is how food fills hunger and fullness
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatChangeEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatChangeEffect()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modifystat" /><code>{"protected override void ModifyStat("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, float strength)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modifystat" /><code>{"protected override void ModifyStat("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, float strength)"}</code> |

@@ -21,24 +21,29 @@ An asset holding the settings for the parts of a player's body rig: body, clavic
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerControllerSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerControllerSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bodycontrollersettings" /><code>{"private "}<Link to="/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" bodyControllerSettings"}</code> |  |
-| <Link id="m-claviclecontrollersettings" /><code>{"private "}<Link to="/game-api/types/alta-player/claviclecontrollersettings">{"ClavicleControllerSettings"}</Link>{" clavicleControllerSettings"}</code> |  |
-| <Link id="m-controllersettings" /><code>{"private "}<Link to="/game-api/types/global-e-h/handsettings">{"HandSettings"}</Link>{" controllerSettings"}</code> |  |
-| <Link id="m-elbowcontrollersettings" /><code>{"private "}<Link to="/game-api/types/alta-player/elbowcontrollersettings">{"ElbowControllerSettings"}</Link>{" elbowControllerSettings"}</code> |  |
-| <Link id="m-elbowdatapointset" /><code>{"private "}<Link to="/game-api/types/alta-player/elbowdatapointset">{"ElbowDataPointSet"}</Link>{" elbowDataPointSet"}</code> |  |
-| <Link id="m-eyefocusdetectionsettings" /><code>{"private "}<Link to="/game-api/types/alta-player/eyefocuscontrollersettings">{"EyeFocusControllerSettings"}</Link>{" eyeFocusDetectionSettings"}</code> |  |
-| <Link id="m-ghosthandsettings" /><code>{"private "}<Link to="/game-api/types/global-e-h/ghosthandsettings">{"GhostHandSettings"}</Link>{" ghostHandSettings"}</code> |  |
-| <Link id="m-handsettings" /><code>{"private "}<Link to="/game-api/types/global-e-h/handsettings">{"HandSettings"}</Link>{" handSettings"}</code> |  |
-| <Link id="m-isdebugging" /><code>{"private bool isDebugging"}</code> |  |
-| <Link id="m-saveraycastlayer" /><code>{"private LayerMask saveRaycastLayer"}</code> |  |
+<details>
+<summary>10 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bodycontrollersettings" /><code>{"private "}<Link to="/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" bodyControllerSettings"}</code> |
+| <Link id="m-claviclecontrollersettings" /><code>{"private "}<Link to="/game-api/types/alta-player/claviclecontrollersettings">{"ClavicleControllerSettings"}</Link>{" clavicleControllerSettings"}</code> |
+| <Link id="m-controllersettings" /><code>{"private "}<Link to="/game-api/types/global-e-h/handsettings">{"HandSettings"}</Link>{" controllerSettings"}</code> |
+| <Link id="m-elbowcontrollersettings" /><code>{"private "}<Link to="/game-api/types/alta-player/elbowcontrollersettings">{"ElbowControllerSettings"}</Link>{" elbowControllerSettings"}</code> |
+| <Link id="m-elbowdatapointset" /><code>{"private "}<Link to="/game-api/types/alta-player/elbowdatapointset">{"ElbowDataPointSet"}</Link>{" elbowDataPointSet"}</code> |
+| <Link id="m-eyefocusdetectionsettings" /><code>{"private "}<Link to="/game-api/types/alta-player/eyefocuscontrollersettings">{"EyeFocusControllerSettings"}</Link>{" eyeFocusDetectionSettings"}</code> |
+| <Link id="m-ghosthandsettings" /><code>{"private "}<Link to="/game-api/types/global-e-h/ghosthandsettings">{"GhostHandSettings"}</Link>{" ghostHandSettings"}</code> |
+| <Link id="m-handsettings" /><code>{"private "}<Link to="/game-api/types/global-e-h/handsettings">{"HandSettings"}</Link>{" handSettings"}</code> |
+| <Link id="m-isdebugging" /><code>{"private bool isDebugging"}</code> |
+| <Link id="m-saveraycastlayer" /><code>{"private LayerMask saveRaycastLayer"}</code> |
+
+</details>
 
 ## Properties
 

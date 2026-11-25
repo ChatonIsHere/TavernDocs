@@ -20,21 +20,21 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RepairBoxSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RepairBoxSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-canbeundone" /><code>{"bool canBeUndone"}</code> |  |
-| <Link id="m-isdone" /><code>{"bool isDone"}</code> |  |
-| <Link id="m-isrepeatable" /><code>{"bool isRepeatable"}</code> |  |
-| <Link id="m-items" /><code><Link to="/game-api/types/global-q-r/repairboxsavedata-item">{"RepairBoxSaveData.Item"}</Link>{"[] items"}</code> |  |
-| <Link id="m-spawning" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" spawning"}</code> |  |
-| <Link id="m-spawningdata" /><code><Link to="/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" spawningData"}</code> |  |
-| <Link id="m-spawnposition" /><code>{"Vector3 spawnPosition"}</code> |  |
-| <Link id="m-spawnrotation" /><code>{"Quaternion spawnRotation"}</code> |  |
-| <Link id="m-statichash" /><code>{"uint staticHash"}</code> |  |
-| <Link id="m-wasbuiltbydevtool" /><code>{"bool wasBuiltByDevTool"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-canbeundone" /><code>{"bool canBeUndone"}</code> |
+| <Link id="m-isdone" /><code>{"bool isDone"}</code> |
+| <Link id="m-isrepeatable" /><code>{"bool isRepeatable"}</code> |
+| <Link id="m-items" /><code><Link to="/game-api/types/global-q-r/repairboxsavedata-item">{"RepairBoxSaveData.Item"}</Link>{"[] items"}</code> |
+| <Link id="m-spawning" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" spawning"}</code> |
+| <Link id="m-spawningdata" /><code><Link to="/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" spawningData"}</code> |
+| <Link id="m-spawnposition" /><code>{"Vector3 spawnPosition"}</code> |
+| <Link id="m-spawnrotation" /><code>{"Quaternion spawnRotation"}</code> |
+| <Link id="m-statichash" /><code>{"uint staticHash"}</code> |
+| <Link id="m-wasbuiltbydevtool" /><code>{"bool wasBuiltByDevTool"}</code> |

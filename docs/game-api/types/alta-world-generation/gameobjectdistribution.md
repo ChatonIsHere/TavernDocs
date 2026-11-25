@@ -22,9 +22,9 @@ A weighted distribution of GameObjects used by cave generation, with festivity g
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameObjectDistribution()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameObjectDistribution()"}</code> |
 
 ## Methods
 

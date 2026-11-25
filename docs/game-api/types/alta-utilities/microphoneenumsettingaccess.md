@@ -18,22 +18,27 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MicrophoneEnumSettingAccess()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MicrophoneEnumSettingAccess()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-audiodevices" /><code>{"private readonly Dictionary<string, IAudioDevice> audioDevices"}</code> |  |
-| <Link id="m-devicesnames" /><code>{"private readonly Dictionary<IAudioDevice, string> devicesNames"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-audiodevices" /><code>{"private readonly Dictionary<string, IAudioDevice> audioDevices"}</code> |
+| <Link id="m-devicesnames" /><code>{"private readonly Dictionary<IAudioDevice, string> devicesNames"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getpossiblevalue" /><code>{"override async Task<string[]> GetPossibleValue()"}</code> |  |
-| <Link id="m-getvalue" /><code>{"override string GetValue()"}</code> |  |
-| <Link id="m-setvalue" /><code>{"override void SetValue(string value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getpossiblevalue" /><code>{"override async Task<string[]> GetPossibleValue()"}</code> |
+| <Link id="m-getvalue" /><code>{"override string GetValue()"}</code> |
+| <Link id="m-setvalue" /><code>{"override void SetValue(string value)"}</code> |

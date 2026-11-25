@@ -17,32 +17,50 @@ A **class** in `Root.Township`, `ATT.Respawn`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RespawnShrineSubscriberMarkController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RespawnShrineSubscriberMarkController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-subscribermarkrotator" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/rotator">{"Rotator"}</Link>{" subscriberMarkRotator"}</code> |  |
-| <Link id="m-subscribermarks" /><code>{"private List<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> subscriberMarks"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-subscribermarkrotator" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/rotator">{"Rotator"}</Link>{" subscriberMarkRotator"}</code> |
+| <Link id="m-subscribermarks" /><code>{"private List<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> subscriberMarks"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-systemsettings" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/irespawnsystemsettings">{"IRespawnSystemSettings"}</Link>{" SystemSettings { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-systemsettings" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/irespawnsystemsettings">{"IRespawnSystemSettings"}</Link>{" SystemSettings { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-canrefreshsubscribermarks" /><code>{"bool CanRefreshSubscriberMarks()"}</code> |  |
-| <Link id="m-updatesubscribermarks" /><code>{"void UpdateSubscriberMarks(int numberOfSubscribers, bool isSubscribedToShrine)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-calculateorbposition" /><code>{"private Vector3 CalculateOrbPosition(float spawnAngle, float distanceFromCentre)"}</code> |  |
-| <Link id="m-calculatesubscribermarkpositions" /><code>{"private Vector3[] CalculateSubscriberMarkPositions(int numberOfSubscribers, float angleBetweenMarks)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-canrefreshsubscribermarks" /><code>{"bool CanRefreshSubscriberMarks()"}</code> |
+| <Link id="m-updatesubscribermarks" /><code>{"void UpdateSubscriberMarks(int numberOfSubscribers, bool isSubscribedToShrine)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-calculateorbposition" /><code>{"private Vector3 CalculateOrbPosition(float spawnAngle, float distanceFromCentre)"}</code> |
+| <Link id="m-calculatesubscribermarkpositions" /><code>{"private Vector3[] CalculateSubscriberMarkPositions(int numberOfSubscribers, float angleBetweenMarks)"}</code> |
+
+</details>
 
 ## Used in
 

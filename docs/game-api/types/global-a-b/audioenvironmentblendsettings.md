@@ -20,18 +20,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AudioEnvironmentBlendSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AudioEnvironmentBlendSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-blendcurve" /><code>{"private AnimationCurve blendCurve"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-blendcurve" /><code>{"private AnimationCurve blendCurve"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-blendcurve-2" /><code>{"AnimationCurve BlendCurve { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-blendcurve-2" /><code>{"AnimationCurve BlendCurve { get; }"}</code> |

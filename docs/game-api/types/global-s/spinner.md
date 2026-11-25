@@ -17,22 +17,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Spinner()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Spinner()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |  |
-| <Link id="m-rotation" /><code>{"private float rotation"}</code> |  |
-| <Link id="m-rotationaxis" /><code>{"private Vector3 rotationAxis"}</code> |  |
-| <Link id="m-scalecurve" /><code>{"private "}<Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" scaleCurve"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-progress" /><code>{"private float progress"}</code> |
+| <Link id="m-rotation" /><code>{"private float rotation"}</code> |
+| <Link id="m-rotationaxis" /><code>{"private Vector3 rotationAxis"}</code> |
+| <Link id="m-scalecurve" /><code>{"private "}<Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" scaleCurve"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

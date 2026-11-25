@@ -17,10 +17,10 @@ An **enum** in `Root.Township`, `Alta.Intelligence`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-grounded" /><code>{"Grounded = 0"}</code> |  |
-| <Link id="m-upsidedown" /><code>{"UpsideDown = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-grounded" /><code>{"Grounded = 0"}</code> |
+| <Link id="m-upsidedown" /><code>{"UpsideDown = 1"}</code> |
 
 ## Used in
 

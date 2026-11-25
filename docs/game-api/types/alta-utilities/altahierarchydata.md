@@ -18,35 +18,40 @@ A **class** in `Root.Township`, `Alta.Utilities.Hierarchy`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaHierarchyData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaHierarchyData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isbeepingwhenrecompiling" /><code>{"private bool isBeepingWhenRecompiling"}</code> |  |
-| <Link id="m-isrenderinghierarchyicons" /><code>{"private bool isRenderingHierarchyIcons"}</code> |  |
-| <Link id="m-projectpockets" /><code>{"private List<"}<Link to="/game-api/types/alta-utilities/altahierarchydata-pocket">{"AltaHierarchyData.Pocket"}</Link>{"> projectPockets"}</code> |  |
-| <Link id="m-temporaryhierarchypath" /><code>{"private const string temporaryHierarchyPath"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isbeepingwhenrecompiling" /><code>{"private bool isBeepingWhenRecompiling"}</code> |
+| <Link id="m-isrenderinghierarchyicons" /><code>{"private bool isRenderingHierarchyIcons"}</code> |
+| <Link id="m-projectpockets" /><code>{"private List<"}<Link to="/game-api/types/alta-utilities/altahierarchydata-pocket">{"AltaHierarchyData.Pocket"}</Link>{"> projectPockets"}</code> |
+| <Link id="m-temporaryhierarchypath" /><code>{"private const string temporaryHierarchyPath"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isbeepingwhenrecompiling-2" /><code>{"bool IsBeepingWhenRecompiling { get; }"}</code> |  |
-| <Link id="m-isrenderinghierarchyicons-2" /><code>{"bool IsRenderingHierarchyIcons { get; }"}</code> |  |
-| <Link id="m-projectpockets-2" /><code>{"List<"}<Link to="/game-api/types/alta-utilities/altahierarchydata-pocket">{"AltaHierarchyData.Pocket"}</Link>{"> ProjectPockets { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isbeepingwhenrecompiling-2" /><code>{"bool IsBeepingWhenRecompiling { get; }"}</code> |
+| <Link id="m-isrenderinghierarchyicons-2" /><code>{"bool IsRenderingHierarchyIcons { get; }"}</code> |
+| <Link id="m-projectpockets-2" /><code>{"List<"}<Link to="/game-api/types/alta-utilities/altahierarchydata-pocket">{"AltaHierarchyData.Pocket"}</Link>{"> ProjectPockets { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-validate" /><code>{"event Action Validate"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-validate" /><code>{"event Action Validate"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getdata" /><code>{"static "}<Link to="/game-api/types/alta-utilities/altahierarchydata">{"AltaHierarchyData"}</Link>{" GetData(bool isCreatingIfMissing = true)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getdata" /><code>{"static "}<Link to="/game-api/types/alta-utilities/altahierarchydata">{"AltaHierarchyData"}</Link>{" GetData(bool isCreatingIfMissing = true)"}</code> |

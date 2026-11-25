@@ -23,33 +23,38 @@ Global settings for cooking and stews. Get it with `GlobalSettings<CookingSettin
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CookingSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CookingSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-androidboilingparticlesdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" androidBoilingParticlesDefinition"}</code> |  |
-| <Link id="m-boilingparticlesdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" boilingParticlesDefinition"}</code> |  |
-| <Link id="m-cookableaddedtostewfadeoutduration" /><code>{"private float cookableAddedToStewFadeoutDuration"}</code> |  |
-| <Link id="m-cookabledecayduration" /><code>{"private float cookableDecayDuration"}</code> |  |
-| <Link id="m-cookingbubblestransparencybyliquidtransparency" /><code>{"private AnimationCurve cookingBubblesTransparencyByLiquidTransparency"}</code> |  |
-| <Link id="m-cookingtemperaturertpc" /><code>{"private RTPC cookingTemperatureRTPC"}</code> |  |
-| <Link id="m-defaultstew" /><code>{"private "}<Link to="/game-api/types/alta-crafting/stewcomponent">{"StewComponent"}</Link>{" defaultStew"}</code> |  |
-| <Link id="m-globalsteweffects" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] globalStewEffects"}</code> |  |
-| <Link id="m-ingredientrejectionforce" /><code>{"private float ingredientRejectionForce"}</code> |  |
-| <Link id="m-isassumingnoeffectmodificationonmissing" /><code>{"private bool isAssumingNoEffectModificationOnMissing"}</code> |  |
-| <Link id="m-isdisplayingheatpointdebugtext" /><code>{"private bool isDisplayingHeatPointDebugText"}</code> |  |
-| <Link id="m-maxnumberofitemsinstew" /><code>{"private int maxNumberOfItemsInStew"}</code> |  |
-| <Link id="m-minimumstewingtemperature" /><code>{"private float minimumStewingTemperature"}</code> |  |
-| <Link id="m-nonrecipestewprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" nonRecipeStewPrefab"}</code> |  |
-| <Link id="m-stewingredientdissolveshader" /><code>{"private Shader stewIngredientDissolveShader"}</code> |  |
-| <Link id="m-stewingredientdissolvetexture" /><code>{"private Texture stewIngredientDissolveTexture"}</code> |  |
-| <Link id="m-stewingredientsfilledeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" stewIngredientsFilledEffect"}</code> |  |
-| <Link id="m-stewrecipestartedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" stewRecipeStartedEffect"}</code> |  |
-| <Link id="m-textpopupdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" textPopupDefinition"}</code> |  |
+<details>
+<summary>19 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androidboilingparticlesdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" androidBoilingParticlesDefinition"}</code> |
+| <Link id="m-boilingparticlesdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" boilingParticlesDefinition"}</code> |
+| <Link id="m-cookableaddedtostewfadeoutduration" /><code>{"private float cookableAddedToStewFadeoutDuration"}</code> |
+| <Link id="m-cookabledecayduration" /><code>{"private float cookableDecayDuration"}</code> |
+| <Link id="m-cookingbubblestransparencybyliquidtransparency" /><code>{"private AnimationCurve cookingBubblesTransparencyByLiquidTransparency"}</code> |
+| <Link id="m-cookingtemperaturertpc" /><code>{"private RTPC cookingTemperatureRTPC"}</code> |
+| <Link id="m-defaultstew" /><code>{"private "}<Link to="/game-api/types/alta-crafting/stewcomponent">{"StewComponent"}</Link>{" defaultStew"}</code> |
+| <Link id="m-globalsteweffects" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] globalStewEffects"}</code> |
+| <Link id="m-ingredientrejectionforce" /><code>{"private float ingredientRejectionForce"}</code> |
+| <Link id="m-isassumingnoeffectmodificationonmissing" /><code>{"private bool isAssumingNoEffectModificationOnMissing"}</code> |
+| <Link id="m-isdisplayingheatpointdebugtext" /><code>{"private bool isDisplayingHeatPointDebugText"}</code> |
+| <Link id="m-maxnumberofitemsinstew" /><code>{"private int maxNumberOfItemsInStew"}</code> |
+| <Link id="m-minimumstewingtemperature" /><code>{"private float minimumStewingTemperature"}</code> |
+| <Link id="m-nonrecipestewprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" nonRecipeStewPrefab"}</code> |
+| <Link id="m-stewingredientdissolveshader" /><code>{"private Shader stewIngredientDissolveShader"}</code> |
+| <Link id="m-stewingredientdissolvetexture" /><code>{"private Texture stewIngredientDissolveTexture"}</code> |
+| <Link id="m-stewingredientsfilledeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" stewIngredientsFilledEffect"}</code> |
+| <Link id="m-stewrecipestartedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" stewRecipeStartedEffect"}</code> |
+| <Link id="m-textpopupdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" textPopupDefinition"}</code> |
+
+</details>
 
 ## Properties
 

@@ -19,12 +19,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SkillShrineSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SkillShrineSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pathindex" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" pathIndex"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-pathindex" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" pathIndex"}</code> |

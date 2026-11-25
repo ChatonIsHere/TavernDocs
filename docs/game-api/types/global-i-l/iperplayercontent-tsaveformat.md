@@ -17,13 +17,13 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targetplayer" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" TargetPlayer { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-targetplayer" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" TargetPlayer { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loadasync" /><code>{"Task LoadAsync(int playerIdentifier, "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" currentPlayer = null)"}</code> |  |
-| <Link id="m-save" /><code>{"void Save(bool isUnloading)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-loadasync" /><code>{"Task LoadAsync(int playerIdentifier, "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" currentPlayer = null)"}</code> |
+| <Link id="m-save" /><code>{"void Save(bool isUnloading)"}</code> |

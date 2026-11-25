@@ -17,21 +17,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StaticPositionSpawner()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StaticPositionSpawner()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-positions" /><code>{"private "}<Link to="/game-api/types/global-s/spawnpositions">{"SpawnPositions"}</Link>{" positions"}</code> |  |
-| <Link id="m-staticprefabs" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/gameobjectdistribution">{"GameObjectDistribution"}</Link>{" staticPrefabs"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-positions" /><code>{"private "}<Link to="/game-api/types/global-s/spawnpositions">{"SpawnPositions"}</Link>{" positions"}</code> |
+| <Link id="m-staticprefabs" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/gameobjectdistribution">{"GameObjectDistribution"}</Link>{" staticPrefabs"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+
+</details>

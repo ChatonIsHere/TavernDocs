@@ -20,21 +20,29 @@ Animates an object's scale between off and on using curves, for example a dock h
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CurveScaler()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CurveScaler()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/global-s/scaleanimator">{"ScaleAnimator"}</Link>{" animator"}</code> |  |
-| <Link id="m-dockvisuals" /><code>{"private "}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"[] dockVisuals"}</code> |  |
 | <Link id="m-isdisallowingzero" /><code>{"protected bool isDisallowingZero"}</code> | Whether the scale may reach exactly zero. True by default. |
-| <Link id="m-isinitiallyon" /><code>{"private bool isInitiallyOn"}</code> |  |
 | <Link id="m-off" /><code>{"protected AnimationCurve off"}</code> | Curve played when turning off. |
 | <Link id="m-on" /><code>{"protected AnimationCurve on"}</code> | Curve played when turning on. |
 | <Link id="m-startscale" /><code>{"protected Vector3 startScale"}</code> | The object's scale when it woke, used as the full-size scale. |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/global-s/scaleanimator">{"ScaleAnimator"}</Link>{" animator"}</code> |
+| <Link id="m-dockvisuals" /><code>{"private "}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"[] dockVisuals"}</code> |
+| <Link id="m-isinitiallyon" /><code>{"private bool isInitiallyOn"}</code> |
+
+</details>
 
 ## Properties
 

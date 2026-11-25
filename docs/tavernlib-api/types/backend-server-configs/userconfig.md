@@ -21,9 +21,9 @@ The contents of `users.json`: registered players, and the whitelist and blacklis
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UserConfig()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UserConfig()"}</code> |
 
 ## Properties
 
@@ -32,7 +32,15 @@ The contents of `users.json`: registered players, and the whitelist and blacklis
 | <Link id="m-blacklist" /><code><Link to="/tavernlib-api/types/backend-server-configs/userconfig-listconfig">{"UserConfig.ListConfig"}</Link>{" Blacklist { get; set; }"}</code> | Names, ids and addresses that may never join. |
 | <Link id="m-users" /><code>{"Dictionary<string, "}<Link to="/tavernlib-api/types/backend-server-configs/userconfig-user">{"UserConfig.User"}</Link>{"> Users { get; set; }"}</code> | Registered players by lower-case username. |
 | <Link id="m-whitelist" /><code><Link to="/tavernlib-api/types/backend-server-configs/userconfig-listconfig">{"UserConfig.ListConfig"}</Link>{" Whitelist { get; set; }"}</code> | Names, ids and addresses allowed in while the whitelist is on. |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |
+
+</details>
 
 ## Used in
 

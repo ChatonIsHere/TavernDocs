@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FixedPouringStrengthController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FixedPouringStrengthController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentpouringstrength" /><code>{"private float currentPouringStrength"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentpouringstrength" /><code>{"private float currentPouringStrength"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getpouringstrength" /><code>{"override float GetPouringStrength(out bool isFullyPouring)"}</code> |  |
-| <Link id="m-setpouringstrength" /><code>{"void SetPouringStrength(float newPouringStrength)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getpouringstrength" /><code>{"override float GetPouringStrength(out bool isFullyPouring)"}</code> |
+| <Link id="m-setpouringstrength" /><code>{"void SetPouringStrength(float newPouringStrength)"}</code> |

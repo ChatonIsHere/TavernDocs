@@ -21,30 +21,38 @@ Makes a pickup float back to a set spot when let go, like the menu and customiza
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HoverPickup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HoverPickup()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-acceleration" /><code>{"private float acceleration"}</code> |  |
-| <Link id="m-cachedparent" /><code>{"private Transform cachedParent"}</code> |  |
-| <Link id="m-isalwaysreturning" /><code>{"private bool isAlwaysReturning"}</code> |  |
-| <Link id="m-ismaintainingparent" /><code>{"private bool isMaintainingParent"}</code> |  |
 | <Link id="m-isnetworked" /><code>{"protected bool isNetworked"}</code> | Whether only the server moves it back. |
-| <Link id="m-ispositionset" /><code>{"private bool isPositionSet"}</code> |  |
-| <Link id="m-movespeed" /><code>{"private float moveSpeed"}</code> |  |
 | <Link id="m-pickup" /><code>{"protected "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | Backing field for `Pickup`. |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |  |
-| <Link id="m-returning" /><code>{"private Coroutine returning"}</code> |  |
-| <Link id="m-returnpositionthreshold" /><code>{"private float returnPositionThreshold"}</code> |  |
-| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |  |
-| <Link id="m-rotationlerpspeed" /><code>{"private float rotationLerpSpeed"}</code> |  |
-| <Link id="m-selectionorbrigidbody" /><code>{"private "}<Link to="/game-api/types/global-e-h/fauxrigidbody">{"FauxRigidbody"}</Link>{" selectionOrbRigidbody"}</code> |  |
-| <Link id="m-snapdelayinseconds" /><code>{"private float snapDelayInSeconds"}</code> |  |
 | <Link id="m-teleporttotargetonrelease" /><code>{"protected bool teleportToTargetOnRelease"}</code> | Despite the name, true makes it fly back smoothly; false snaps it after the delay. |
+
+<details>
+<summary>13 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-acceleration" /><code>{"private float acceleration"}</code> |
+| <Link id="m-cachedparent" /><code>{"private Transform cachedParent"}</code> |
+| <Link id="m-isalwaysreturning" /><code>{"private bool isAlwaysReturning"}</code> |
+| <Link id="m-ismaintainingparent" /><code>{"private bool isMaintainingParent"}</code> |
+| <Link id="m-ispositionset" /><code>{"private bool isPositionSet"}</code> |
+| <Link id="m-movespeed" /><code>{"private float moveSpeed"}</code> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+| <Link id="m-returning" /><code>{"private Coroutine returning"}</code> |
+| <Link id="m-returnpositionthreshold" /><code>{"private float returnPositionThreshold"}</code> |
+| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |
+| <Link id="m-rotationlerpspeed" /><code>{"private float rotationLerpSpeed"}</code> |
+| <Link id="m-selectionorbrigidbody" /><code>{"private "}<Link to="/game-api/types/global-e-h/fauxrigidbody">{"FauxRigidbody"}</Link>{" selectionOrbRigidbody"}</code> |
+| <Link id="m-snapdelayinseconds" /><code>{"private float snapDelayInSeconds"}</code> |
+
+</details>
 
 ## Properties
 
@@ -62,14 +70,22 @@ Makes a pickup float back to a set spot when let go, like the menu and customiza
 | <Link id="m-snapwithdelay" /><code>{"async void SnapWithDelay()"}</code> | Snaps after the snap delay. |
 | <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Hooks grab and release on the pickup. |
 | <Link id="m-canexecute" /><code>{"protected bool CanExecute()"}</code> | True when not networked, or networked and on the server. |
-| <Link id="m-gettarget" /><code>{"private void GetTarget(out Vector3 position, out Quaternion rotation, out float scale)"}</code> |  |
 | <Link id="m-handlegrabbed" /><code>{"protected virtual void HandleGrabbed("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Stops returning when grabbed. |
 | <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> | Stops all coroutines. |
 | <Link id="m-onreturning" /><code>{"protected virtual void OnReturning(Vector3 direction, float velocity)"}</code> | Hook called each frame while flying back, with direction and speed. Does nothing by default. |
-| <Link id="m-returntoposition" /><code>{"private IEnumerator ReturnToPosition() (iterator)"}</code> |  |
 | <Link id="m-start" /><code>{"protected virtual void Start()"}</code> | Remembers the parent and, if no target is set, uses the current position as the target. |
 | <Link id="m-startmovingback" /><code>{"protected virtual void StartMovingBack("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | On release, starts returning to the spot if one is set. |
 | <Link id="m-stopreturning" /><code>{"protected void StopReturning()"}</code> | Stops the return coroutine. |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-gettarget" /><code>{"private void GetTarget(out Vector3 position, out Quaternion rotation, out float scale)"}</code> |
+| <Link id="m-returntoposition" /><code>{"private IEnumerator ReturnToPosition() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

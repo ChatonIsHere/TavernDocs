@@ -19,34 +19,39 @@ Client UI: a row of `ScrollElement`s that slides along to show a window of a lon
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ItemScroller()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ItemScroller()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-canscrollleftchanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" canScrollLeftChanged"}</code> |  |
-| <Link id="m-canscrollrightchanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" canScrollRightChanged"}</code> |  |
-| <Link id="m-count" /><code>{"private int count"}</code> |  |
-| <Link id="m-finaltargetindex" /><code>{"private int finalTargetIndex"}</code> |  |
-| <Link id="m-index" /><code>{"private int index"}</code> |  |
-| <Link id="m-instances" /><code>{"private List<"}<Link to="/game-api/types/global-s/scrollelement">{"ScrollElement"}</Link>{"> instances"}</code> |  |
-| <Link id="m-interval" /><code>{"private float interval"}</code> |  |
-| <Link id="m-isscrollingleft" /><code>{"private bool isScrollingLeft"}</code> |  |
-| <Link id="m-isscrollingright" /><code>{"private bool isScrollingRight"}</code> |  |
-| <Link id="m-isshowingbydefault" /><code>{"private bool isShowingByDefault"}</code> |  |
-| <Link id="m-maxindex" /><code>{"private int maxIndex"}</code> |  |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/global-s/scrollelement">{"ScrollElement"}</Link>{" prefab"}</code> |  |
-| <Link id="m-reshow" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" reshow"}</code> |  |
-| <Link id="m-rotationinterval" /><code>{"private float rotationInterval"}</code> |  |
-| <Link id="m-rotationoffset" /><code>{"private float rotationOffset"}</code> |  |
-| <Link id="m-scrollexecuted" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" scrollExecuted"}</code> |  |
-| <Link id="m-scrollprogress" /><code>{"private float scrollProgress"}</code> |  |
-| <Link id="m-stepinterval" /><code>{"private float stepInterval"}</code> |  |
-| <Link id="m-stepsize" /><code>{"private int stepSize"}</code> |  |
-| <Link id="m-targetindex" /><code>{"private int targetIndex"}</code> |  |
+<details>
+<summary>20 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-canscrollleftchanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" canScrollLeftChanged"}</code> |
+| <Link id="m-canscrollrightchanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" canScrollRightChanged"}</code> |
+| <Link id="m-count" /><code>{"private int count"}</code> |
+| <Link id="m-finaltargetindex" /><code>{"private int finalTargetIndex"}</code> |
+| <Link id="m-index" /><code>{"private int index"}</code> |
+| <Link id="m-instances" /><code>{"private List<"}<Link to="/game-api/types/global-s/scrollelement">{"ScrollElement"}</Link>{"> instances"}</code> |
+| <Link id="m-interval" /><code>{"private float interval"}</code> |
+| <Link id="m-isscrollingleft" /><code>{"private bool isScrollingLeft"}</code> |
+| <Link id="m-isscrollingright" /><code>{"private bool isScrollingRight"}</code> |
+| <Link id="m-isshowingbydefault" /><code>{"private bool isShowingByDefault"}</code> |
+| <Link id="m-maxindex" /><code>{"private int maxIndex"}</code> |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/global-s/scrollelement">{"ScrollElement"}</Link>{" prefab"}</code> |
+| <Link id="m-reshow" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" reshow"}</code> |
+| <Link id="m-rotationinterval" /><code>{"private float rotationInterval"}</code> |
+| <Link id="m-rotationoffset" /><code>{"private float rotationOffset"}</code> |
+| <Link id="m-scrollexecuted" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" scrollExecuted"}</code> |
+| <Link id="m-scrollprogress" /><code>{"private float scrollProgress"}</code> |
+| <Link id="m-stepinterval" /><code>{"private float stepInterval"}</code> |
+| <Link id="m-stepsize" /><code>{"private int stepSize"}</code> |
+| <Link id="m-targetindex" /><code>{"private int targetIndex"}</code> |
+
+</details>
 
 ## Properties
 
@@ -66,14 +71,22 @@ Client UI: a row of `ScrollElement`s that slides along to show a window of a lon
 | <Link id="m-scrolldirection" /><code>{"void ScrollDirection(int direction)"}</code> | Moves the target one step in a direction if it stays in range, and fires the scroll event. |
 | <Link id="m-scrollto" /><code>{"void ScrollTo(int target)"}</code> | Sets the index to scroll to. The row then steps there over time. |
 | <Link id="m-show" /><code>{"void Show()"}</code> | Shows the first `Count` elements. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-positioninstances" /><code>{"private void PositionInstances()"}</code> |  |
-| <Link id="m-safemod" /><code>{"private int SafeMod(int value, int mod)"}</code> |  |
-| <Link id="m-startscrollleft" /><code>{"private void StartScrollLeft()"}</code> |  |
-| <Link id="m-startscrollright" /><code>{"private void StartScrollRight()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+
+<details>
+<summary>8 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| <Link id="m-positioninstances" /><code>{"private void PositionInstances()"}</code> |
+| <Link id="m-safemod" /><code>{"private int SafeMod(int value, int mod)"}</code> |
+| <Link id="m-startscrollleft" /><code>{"private void StartScrollLeft()"}</code> |
+| <Link id="m-startscrollright" /><code>{"private void StartScrollRight()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>
 
 ## Used in
 

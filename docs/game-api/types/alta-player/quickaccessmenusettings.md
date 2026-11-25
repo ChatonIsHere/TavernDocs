@@ -22,31 +22,36 @@ Global settings for the quick access (wrist) menu: where its bubbles spawn, how 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"QuickAccessMenuSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"QuickAccessMenuSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-centertitlebackgrounddiameter" /><code>{"private float centerTitleBackgroundDiameter"}</code> |  |
-| <Link id="m-centertitlebackgroundprefab" /><code>{"private GameObject centerTitleBackgroundPrefab"}</code> |  |
-| <Link id="m-centertitlemaxcharacters" /><code>{"private int centerTitleMaxCharacters"}</code> |  |
-| <Link id="m-centertitlemaxlines" /><code>{"private int centerTitleMaxLines"}</code> |  |
-| <Link id="m-displaytitlesincenter" /><code>{"private bool displayTitlesInCenter"}</code> |  |
-| <Link id="m-islerpingtowardshandposition" /><code>{"private bool isLerpingTowardsHandPosition"}</code> |  |
-| <Link id="m-maxanglebeforelerp" /><code>{"private float maxAngleBeforeLerp"}</code> |  |
-| <Link id="m-maxbubbledistancesquared" /><code>{"private float maxBubbleDistanceSquared"}</code> |  |
-| <Link id="m-maxdistancebeforelerp" /><code>{"private float maxDistanceBeforeLerp"}</code> |  |
-| <Link id="m-menuprefabdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" menuPrefabDefinition"}</code> |  |
-| <Link id="m-nestedmaxdistancebeforelerp" /><code>{"private float nestedMaxDistanceBeforeLerp"}</code> |  |
-| <Link id="m-onselectbubbleevents" /><code>{"private "}<Link to="/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent">{"QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent"}</Link>{" onSelectBubbleEvents"}</code> |  |
-| <Link id="m-positionlerpspeedoverdistance" /><code>{"private AnimationCurve positionLerpSpeedOverDistance"}</code> |  |
-| <Link id="m-rotationlerpspeed" /><code>{"private float rotationLerpSpeed"}</code> |  |
-| <Link id="m-spawnnestedradius" /><code>{"private float spawnNestedRadius"}</code> |  |
-| <Link id="m-spawnradius" /><code>{"private float spawnRadius"}</code> |  |
-| <Link id="m-targetdistancebeforelerpsquared" /><code>{"private float targetDistanceBeforeLerpSquared"}</code> |  |
+<details>
+<summary>17 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-centertitlebackgrounddiameter" /><code>{"private float centerTitleBackgroundDiameter"}</code> |
+| <Link id="m-centertitlebackgroundprefab" /><code>{"private GameObject centerTitleBackgroundPrefab"}</code> |
+| <Link id="m-centertitlemaxcharacters" /><code>{"private int centerTitleMaxCharacters"}</code> |
+| <Link id="m-centertitlemaxlines" /><code>{"private int centerTitleMaxLines"}</code> |
+| <Link id="m-displaytitlesincenter" /><code>{"private bool displayTitlesInCenter"}</code> |
+| <Link id="m-islerpingtowardshandposition" /><code>{"private bool isLerpingTowardsHandPosition"}</code> |
+| <Link id="m-maxanglebeforelerp" /><code>{"private float maxAngleBeforeLerp"}</code> |
+| <Link id="m-maxbubbledistancesquared" /><code>{"private float maxBubbleDistanceSquared"}</code> |
+| <Link id="m-maxdistancebeforelerp" /><code>{"private float maxDistanceBeforeLerp"}</code> |
+| <Link id="m-menuprefabdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" menuPrefabDefinition"}</code> |
+| <Link id="m-nestedmaxdistancebeforelerp" /><code>{"private float nestedMaxDistanceBeforeLerp"}</code> |
+| <Link id="m-onselectbubbleevents" /><code>{"private "}<Link to="/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent">{"QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent"}</Link>{" onSelectBubbleEvents"}</code> |
+| <Link id="m-positionlerpspeedoverdistance" /><code>{"private AnimationCurve positionLerpSpeedOverDistance"}</code> |
+| <Link id="m-rotationlerpspeed" /><code>{"private float rotationLerpSpeed"}</code> |
+| <Link id="m-spawnnestedradius" /><code>{"private float spawnNestedRadius"}</code> |
+| <Link id="m-spawnradius" /><code>{"private float spawnRadius"}</code> |
+| <Link id="m-targetdistancebeforelerpsquared" /><code>{"private float targetDistanceBeforeLerpSquared"}</code> |
+
+</details>
 
 ## Properties
 

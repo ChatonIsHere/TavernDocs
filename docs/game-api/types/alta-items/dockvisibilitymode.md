@@ -16,9 +16,9 @@ An **enum** in `Root.Township`, `Alta.Inventory`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alphafade" /><code>{"AlphaFade = 1"}</code> |  |
-| <Link id="m-highlightmaterialatclose" /><code>{"HighlightMaterialAtClose = 3"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-sizefade" /><code>{"SizeFade = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-alphafade" /><code>{"AlphaFade = 1"}</code> |
+| <Link id="m-highlightmaterialatclose" /><code>{"HighlightMaterialAtClose = 3"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-sizefade" /><code>{"SizeFade = 2"}</code> |

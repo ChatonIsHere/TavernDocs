@@ -19,9 +19,9 @@ Editor component from the SA Collider Builder tool that builds mesh colliders fo
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SAMeshColliderBuilder()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SAMeshColliderBuilder()"}</code> |
 
 ## Fields
 

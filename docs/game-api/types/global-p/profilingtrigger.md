@@ -17,19 +17,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProfilingTrigger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProfilingTrigger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-profiling" /><code>{"private int profiling"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-profiling" /><code>{"private int profiling"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-profile" /><code>{"void Profile()"}</code> |  |
-| <Link id="m-advanceprofiler" /><code>{"private void AdvanceProfiler()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-profile" /><code>{"void Profile()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-advanceprofiler" /><code>{"private void AdvanceProfiler()"}</code> |
+
+</details>

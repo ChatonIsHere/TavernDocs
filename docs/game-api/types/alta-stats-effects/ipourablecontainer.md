@@ -18,17 +18,17 @@ An **interface** in `Root.Township`, `Alta.Liquid`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-internalcontainer" /><code><Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" InternalContainer { get; }"}</code> |  |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; set; }"}</code> |  |
-| <Link id="m-issubmergedinothercontainer" /><code>{"bool IsSubmergedInOtherContainer { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-internalcontainer" /><code><Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" InternalContainer { get; }"}</code> |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; set; }"}</code> |
+| <Link id="m-issubmergedinothercontainer" /><code>{"bool IsSubmergedInOtherContainer { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-registerpouringparticlehit" /><code>{"void RegisterPouringParticleHit("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-registerpouringparticlehit" /><code>{"void RegisterPouringParticleHit("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container)"}</code> |
 
 ## Used in
 

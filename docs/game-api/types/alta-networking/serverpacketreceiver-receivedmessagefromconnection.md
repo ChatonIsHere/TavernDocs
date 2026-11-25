@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, `Alta.Networking`. Reach it through att
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-connectionidentifier" /><code>{"int connectionIdentifier"}</code> |  |
-| <Link id="m-data" /><code>{"ArraySegment<byte> data"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-connectionidentifier" /><code>{"int connectionIdentifier"}</code> |
+| <Link id="m-data" /><code>{"ArraySegment<byte> data"}</code> |
 
 ## Used in
 

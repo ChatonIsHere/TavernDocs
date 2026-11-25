@@ -17,17 +17,17 @@ An **interface** in `Alta.Api.Client`, `Alta.Api.Client.LowLevel`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hasnext" /><code>{"bool HasNext { get; }"}</code> |  |
-| <Link id="m-results" /><code>{"IEnumerable<T> Results { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hasnext" /><code>{"bool HasNext { get; }"}</code> |
+| <Link id="m-results" /><code>{"IEnumerable<T> Results { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getallasync" /><code>{"Task<IEnumerable<T>> GetAllAsync()"}</code> |  |
-| <Link id="m-getnextasync" /><code>{"Task<IEnumerable<T>> GetNextAsync()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getallasync" /><code>{"Task<IEnumerable<T>> GetAllAsync()"}</code> |
+| <Link id="m-getnextasync" /><code>{"Task<IEnumerable<T>> GetNextAsync()"}</code> |
 
 ## Used in
 

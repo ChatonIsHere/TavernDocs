@@ -21,6 +21,6 @@ Editor menu marker: a settings asset's nested `Create` class inherits it to appe
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> |

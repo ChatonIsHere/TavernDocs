@@ -22,31 +22,39 @@ Component that receives hits from `ImpactTool`s, particles and liquids on an obj
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactDetector()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactDetector()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] channels"}</code> |  |
-| <Link id="m-collidermodifiers" /><code>{"private Dictionary<Collider, "}<Link to="/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{"> colliderModifiers"}</code> |  |
-| <Link id="m-currentsettings" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" currentSettings"}</code> |  |
-| <Link id="m-detectorcentral" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorcentral">{"ImpactDetectorCentral"}</Link>{" detectorCentral"}</code> |  |
 | <Link id="m-entity" /><code>{"protected "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | The `NetworkEntity` on the same object. |
-| <Link id="m-equipmentslot" /><code>{"private "}<Link to="/game-api/types/alta-items/equipmentreference">{"EquipmentReference"}</Link>{" equipmentSlot"}</code> |  |
-| <Link id="m-hardnesslevel" /><code>{"private uint hardnessLevel"}</code> |  |
-| <Link id="m-healthtarget" /><code>{"private "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthTarget"}</code> |  |
-| <Link id="m-hitcooldowns" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{", float> hitCooldowns"}</code> |  |
-| <Link id="m-immunitygroups" /><code>{"private List<"}<Link to="/game-api/types/alta-items/impactimmunitygroup">{"ImpactImmunityGroup"}</Link>{"> immunityGroups"}</code> |  |
-| <Link id="m-islocalclient" /><code>{"private bool isLocalClient"}</code> |  |
-| <Link id="m-isoverridingimpactoreffects" /><code>{"private bool isOverridingImpactorEffects"}</code> |  |
-| <Link id="m-ispartofplayercontroller" /><code>{"private bool isPartOfPlayerController"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-mappedcolliders" /><code>{"private "}<Link to="/game-api/types/alta-items/collidermap">{"ColliderMap"}</Link>{"[] mappedColliders"}</code> |  |
-| <Link id="m-particlecollisions" /><code>{"private static List<ParticleCollisionEvent> particleCollisions"}</code> |  |
-| <Link id="m-syncimpact" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-items/impactdetector-impactsyncarguments">{"ImpactDetector.ImpactSyncArguments"}</Link>{"> syncImpact"}</code> |  |
+
+<details>
+<summary>16 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] channels"}</code> |
+| <Link id="m-collidermodifiers" /><code>{"private Dictionary<Collider, "}<Link to="/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{"> colliderModifiers"}</code> |
+| <Link id="m-currentsettings" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" currentSettings"}</code> |
+| <Link id="m-detectorcentral" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorcentral">{"ImpactDetectorCentral"}</Link>{" detectorCentral"}</code> |
+| <Link id="m-equipmentslot" /><code>{"private "}<Link to="/game-api/types/alta-items/equipmentreference">{"EquipmentReference"}</Link>{" equipmentSlot"}</code> |
+| <Link id="m-hardnesslevel" /><code>{"private uint hardnessLevel"}</code> |
+| <Link id="m-healthtarget" /><code>{"private "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthTarget"}</code> |
+| <Link id="m-hitcooldowns" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{", float> hitCooldowns"}</code> |
+| <Link id="m-immunitygroups" /><code>{"private List<"}<Link to="/game-api/types/alta-items/impactimmunitygroup">{"ImpactImmunityGroup"}</Link>{"> immunityGroups"}</code> |
+| <Link id="m-islocalclient" /><code>{"private bool isLocalClient"}</code> |
+| <Link id="m-isoverridingimpactoreffects" /><code>{"private bool isOverridingImpactorEffects"}</code> |
+| <Link id="m-ispartofplayercontroller" /><code>{"private bool isPartOfPlayerController"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-mappedcolliders" /><code>{"private "}<Link to="/game-api/types/alta-items/collidermap">{"ColliderMap"}</Link>{"[] mappedColliders"}</code> |
+| <Link id="m-particlecollisions" /><code>{"private static List<ParticleCollisionEvent> particleCollisions"}</code> |
+| <Link id="m-syncimpact" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-items/impactdetector-impactsyncarguments">{"ImpactDetector.ImpactSyncArguments"}</Link>{"> syncImpact"}</code> |
+
+</details>
 
 ## Properties
 
@@ -61,7 +69,15 @@ Component that receives hits from `ImpactTool`s, particles and liquids on an obj
 | <Link id="m-immunitygroups-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-items/impactimmunitygroup">{"ImpactImmunityGroup"}</Link>{"> ImmunityGroups { get; }"}</code> | Groups of tools this detector ignores. |
 | <Link id="m-isoverridingimpactoreffects-2" /><code>{"bool IsOverridingImpactorEffects { get; }"}</code> | When true, the detector's own effects are used instead of the impactor's. |
 | <Link id="m-settings" /><code><Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" Settings { get; set; }"}</code> | The detector settings. Swapping them moves the effects listener to the new settings. |
-| <Link id="m-alta-networking-inetworkentitybehaviour-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Alta.Networking.INetworkEntityBehaviour.Entity { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-networking-inetworkentitybehaviour-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Alta.Networking.INetworkEntityBehaviour.Entity { get; }"}</code> |
+
+</details>
 
 ## Events
 
@@ -80,24 +96,32 @@ Component that receives hits from `ImpactTool`s, particles and liquids on an obj
 | <Link id="m-ontoolhit" /><code>{"void OnToolHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> | Handles a tool hit: per-tool cooldown, path experience on the server, damage popups, syncs the hit if a local player caused it, then raises `Hit`. |
 | <Link id="m-syncimpact-2" /><code>{"void SyncImpact("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-items/impactdetector-impactsyncarguments">{"ImpactDetector.ImpactSyncArguments"}</Link>{" arguments)"}</code> | Network handler for a synced hit. Rebuilds the hit from the tool entity and applies it; the server refuses hits from anyone but the tool's last holder. |
 | <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Hooks the settings' hit effects (not on headless servers) and builds the collider modifier map. |
-| <Link id="m-handleparticleasliquidcollision" /><code>{"private void HandleParticleAsLiquidCollision(GameObject other)"}</code> |  |
-| <Link id="m-handleparticlehit" /><code>{"private void HandleParticleHit(GameObject other)"}</code> |  |
-| <Link id="m-initialize" /><code>{"private void Alta.Networking.INetworkEntityBehaviour.Initialize()"}</code> |  |
-| <Link id="m-initializeaslocalplayer" /><code>{"private void IInitializeAsLocalPlayer.InitializeAsLocalPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |
-| <Link id="m-initializeasremoteplayer" /><code>{"private void IInitializeAsRemotePlayer.InitializeAsRemotePlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"private void Alta.Networking.INetworkEntityBehaviour.InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-isforcedclientsideimpact" /><code>{"private bool IsForcedClientSideImpact("}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> |  |
-| <Link id="m-isimpactclientsideonly" /><code>{"private bool IsImpactClientSideOnly("}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool, out "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" wielder)"}</code> |  |
-| <Link id="m-islocalplayerbeinghit" /><code>{"private bool IsLocalPlayerBeingHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |  |
-| <Link id="m-islocalplayerhittingnonplayer" /><code>{"private bool IsLocalPlayerHittingNonPlayer("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"private void Alta.Networking.INetworkEntityBehaviour.OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-ondisconnected" /><code>{"private void Alta.Networking.INetworkEntityBehaviour.OnDisconnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
 | <Link id="m-prereceivesyncedhit" /><code>{"protected virtual void PreReceiveSyncedHit()"}</code> | Hook for subclasses, called just before a hit received from the network is applied. |
-| <Link id="m-renderdamagepopup" /><code>{"private void RenderDamagePopup("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |  |
-| <Link id="m-runplayerevents" /><code>{"private void RunPlayerEvents("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |  |
-| <Link id="m-setphysicalmaterial" /><code>{"private void IListenToPhysicalMaterial.SetPhysicalMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" newMaterial)"}</code> |  |
-| <Link id="m-shouldrefusesyncedhit" /><code>{"private static bool ShouldRefuseSyncedHit("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" toolEntity, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" fromPlayer)"}</code> |  |
-| <Link id="m-updatedebugdamagedisplayer" /><code>{"private void UpdateDebugDamageDisplayer("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |  |
+
+<details>
+<summary>17 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-handleparticleasliquidcollision" /><code>{"private void HandleParticleAsLiquidCollision(GameObject other)"}</code> |
+| <Link id="m-handleparticlehit" /><code>{"private void HandleParticleHit(GameObject other)"}</code> |
+| <Link id="m-initialize" /><code>{"private void Alta.Networking.INetworkEntityBehaviour.Initialize()"}</code> |
+| <Link id="m-initializeaslocalplayer" /><code>{"private void IInitializeAsLocalPlayer.InitializeAsLocalPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |
+| <Link id="m-initializeasremoteplayer" /><code>{"private void IInitializeAsRemotePlayer.InitializeAsRemotePlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |
+| <Link id="m-initializeasserver" /><code>{"private void Alta.Networking.INetworkEntityBehaviour.InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+| <Link id="m-isforcedclientsideimpact" /><code>{"private bool IsForcedClientSideImpact("}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> |
+| <Link id="m-isimpactclientsideonly" /><code>{"private bool IsImpactClientSideOnly("}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool, out "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" wielder)"}</code> |
+| <Link id="m-islocalplayerbeinghit" /><code>{"private bool IsLocalPlayerBeingHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |
+| <Link id="m-islocalplayerhittingnonplayer" /><code>{"private bool IsLocalPlayerHittingNonPlayer("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |
+| <Link id="m-onconnected" /><code>{"private void Alta.Networking.INetworkEntityBehaviour.OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| <Link id="m-ondisconnected" /><code>{"private void Alta.Networking.INetworkEntityBehaviour.OnDisconnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| <Link id="m-renderdamagepopup" /><code>{"private void RenderDamagePopup("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |
+| <Link id="m-runplayerevents" /><code>{"private void RunPlayerEvents("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |
+| <Link id="m-setphysicalmaterial" /><code>{"private void IListenToPhysicalMaterial.SetPhysicalMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" newMaterial)"}</code> |
+| <Link id="m-shouldrefusesyncedhit" /><code>{"private static bool ShouldRefuseSyncedHit("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" toolEntity, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" fromPlayer)"}</code> |
+| <Link id="m-updatedebugdamagedisplayer" /><code>{"private void UpdateDebugDamageDisplayer("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |
+
+</details>
 
 ## Used in
 

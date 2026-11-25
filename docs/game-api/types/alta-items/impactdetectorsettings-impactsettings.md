@@ -19,18 +19,23 @@ The effect and sound for one impact outcome (critical, good or bad) in `ImpactDe
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactSettings()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ImpactSettings("}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" sound, "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" objectDefinition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactSettings()"}</code> |
+| <Link id="m-ctor-2" /><code>{"ImpactSettings("}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" sound, "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" objectDefinition)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-objectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" objectDefinition"}</code> |  |
-| <Link id="m-sound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" sound"}</code> |  |
-| <Link id="m-soundeffectset" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffectSet"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-objectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" objectDefinition"}</code> |
+| <Link id="m-sound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" sound"}</code> |
+| <Link id="m-soundeffectset" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffectSet"}</code> |
+
+</details>
 
 ## Properties
 

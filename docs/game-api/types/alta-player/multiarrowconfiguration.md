@@ -16,23 +16,28 @@ A **class** in `Root.Township`, `Alta.Progression.Skills`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MultiArrowConfiguration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MultiArrowConfiguration()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-arrowdamagemultiplier" /><code>{"private float arrowDamageMultiplier"}</code> |  |
-| <Link id="m-arrowoffsets" /><code>{"private Vector3[] arrowOffsets"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-arrowdamagemultiplier" /><code>{"private float arrowDamageMultiplier"}</code> |
+| <Link id="m-arrowoffsets" /><code>{"private Vector3[] arrowOffsets"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-arrowdamagemultiplier-2" /><code>{"float ArrowDamageMultiplier { get; }"}</code> |  |
-| <Link id="m-arrowoffsets-2" /><code>{"Vector3[] ArrowOffsets { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-arrowdamagemultiplier-2" /><code>{"float ArrowDamageMultiplier { get; }"}</code> |
+| <Link id="m-arrowoffsets-2" /><code>{"Vector3[] ArrowOffsets { get; }"}</code> |
 
 ## Used in
 

@@ -17,8 +17,8 @@ A **static class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModel
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-newbase64string" /><code>{"static string NewBase64String()"}</code> |  |
-| <Link id="m-tobase64string" /><code>{"static string ToBase64String(Guid guid)"}</code> |  |
-| <Link id="m-toshortstring" /><code>{"static string ToShortString(Guid guid)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-newbase64string" /><code>{"static string NewBase64String()"}</code> |
+| <Link id="m-tobase64string" /><code>{"static string ToBase64String(Guid guid)"}</code> |
+| <Link id="m-toshortstring" /><code>{"static string ToShortString(Guid guid)"}</code> |

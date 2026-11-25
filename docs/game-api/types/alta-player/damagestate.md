@@ -18,9 +18,9 @@ Damage about to be applied to a player, passed to `PlayerHealth.HandleDamage` li
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DamageState()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DamageState()"}</code> |
 
 ## Properties
 

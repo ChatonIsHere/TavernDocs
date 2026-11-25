@@ -18,11 +18,11 @@ An **private enum** in `Root.Township`, `Alta.Alchemy`. Reach it through att-stu
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-poison" /><code>{"Poison = 1"}</code> |  |
-| <Link id="m-reveal" /><code>{"Reveal = 4"}</code> |  |
-| <Link id="m-teleport" /><code>{"Teleport = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-poison" /><code>{"Poison = 1"}</code> |
+| <Link id="m-reveal" /><code>{"Reveal = 4"}</code> |
+| <Link id="m-teleport" /><code>{"Teleport = 2"}</code> |
 
 ## Used in
 

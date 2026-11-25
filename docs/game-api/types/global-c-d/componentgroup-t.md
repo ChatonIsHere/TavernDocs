@@ -21,18 +21,26 @@ A component that keeps a list of other components of one type, usually filled fr
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ComponentGroup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ComponentGroup()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-components" /><code>{"protected List<T> components"}</code> | The backing list. |
-| <Link id="m-componentstoignorewhenadding" /><code>{"private List<T> componentsToIgnoreWhenAdding"}</code> |  |
-| <Link id="m-isaddingcomponents" /><code>{"private bool isAddingComponents"}</code> |  |
-| <Link id="m-parentstoignorewhenadding" /><code>{"private List<Transform> parentsToIgnoreWhenAdding"}</code> |  |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-componentstoignorewhenadding" /><code>{"private List<T> componentsToIgnoreWhenAdding"}</code> |
+| <Link id="m-isaddingcomponents" /><code>{"private bool isAddingComponents"}</code> |
+| <Link id="m-parentstoignorewhenadding" /><code>{"private List<Transform> parentsToIgnoreWhenAdding"}</code> |
+
+</details>
 
 ## Properties
 
@@ -56,11 +64,19 @@ A component that keeps a list of other components of one type, usually filled fr
 | <Link id="m-getchildcomponents" /><code>{"virtual void GetChildComponents(bool isAddingOn = false)"}</code> | Fills the list from this object and its children, skipping ignored components and parents. Can add to the existing list. |
 | <Link id="m-remove" /><code>{"void Remove(T item)"}</code> | Removes an item and raises `ItemRemoved` if it was there. |
 | <Link id="m-removenullcomponents" /><code>{"void RemoveNullComponents()"}</code> | Removes destroyed or missing entries from the list. |
-| <Link id="m-getenumerator" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |  |
 | <Link id="m-iselementvalid" /><code>{"protected virtual bool IsElementValid(T element)"}</code> | Filter used by `GetChildComponents`. Accepts everything by default. |
 | <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Editor hook. Empty in the base class. |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |
-| <Link id="m-recursivlyaddcomponents" /><code>{"private void RecursivlyAddComponents(Transform transform)"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-getenumerator" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+| <Link id="m-recursivlyaddcomponents" /><code>{"private void RecursivlyAddComponents(Transform transform)"}</code> |
+
+</details>
 
 ## Used in
 

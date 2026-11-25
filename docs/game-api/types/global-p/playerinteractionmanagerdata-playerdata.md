@@ -17,17 +17,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerData()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PlayerData(int playerIdentifier, Dictionary<int, "}<Link to="/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{"> trackers)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerData()"}</code> |
+| <Link id="m-ctor-2" /><code>{"PlayerData(int playerIdentifier, Dictionary<int, "}<Link to="/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{"> trackers)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playeridentifier" /><code>{"int playerIdentifier"}</code> |  |
-| <Link id="m-trackerdatas" /><code><Link to="/game-api/types/global-p/playerinteractionmanagerdata-trackerdata">{"PlayerInteractionManagerData.TrackerData"}</Link>{"[] trackerDatas"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-playeridentifier" /><code>{"int playerIdentifier"}</code> |
+| <Link id="m-trackerdatas" /><code><Link to="/game-api/types/global-p/playerinteractionmanagerdata-trackerdata">{"PlayerInteractionManagerData.TrackerData"}</Link>{"[] trackerDatas"}</code> |
 
 ## Used in
 

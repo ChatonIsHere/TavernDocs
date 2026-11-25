@@ -16,25 +16,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EditorLink()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EditorLink()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-guid" /><code>{"private string guid"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-guid" /><code>{"private string guid"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-load" /><code>{"T Load<T>()"}</code> |  |
-| <Link id="m-set" /><code>{"void Set(Object value)"}</code> |  |
-| <Link id="m-setifnull" /><code>{"void SetIfNull(Func<Object> getValue)"}</code> |  |
-| <Link id="m-setifnull-2" /><code>{"void SetIfNull(Object value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-load" /><code>{"T Load<T>()"}</code> |
+| <Link id="m-set" /><code>{"void Set(Object value)"}</code> |
+| <Link id="m-setifnull" /><code>{"void SetIfNull(Func<Object> getValue)"}</code> |
+| <Link id="m-setifnull-2" /><code>{"void SetIfNull(Object value)"}</code> |
 
 ## Used in
 

@@ -20,9 +20,9 @@ The contents of `tavern_server.json`: the game, auth, web and console ports. Use
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TavernServer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TavernServer()"}</code> |
 
 ## Fields
 
@@ -45,7 +45,15 @@ The contents of `tavern_server.json`: the game, auth, web and console ports. Use
 | <Link id="m-serverport" /><code>{"int ServerPort { get; private set; }"}</code> | `server_port` as written: the game port. 0 if the file leaves it out. |
 | <Link id="m-web" /><code>{"int Web { get; }"}</code> | The game's web server port, or 1761 if missing or out of range. |
 | <Link id="m-webport" /><code>{"int WebPort { get; private set; }"}</code> | `web_port` as written. |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |
+
+</details>
 
 ## Methods
 

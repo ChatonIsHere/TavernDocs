@@ -16,24 +16,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DistanceLOD()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DistanceLOD()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distancesquared" /><code>{"float distanceSquared"}</code> |  |
-| <Link id="m-renderers" /><code>{"List<Renderer> renderers"}</code> |  |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-distancesquared" /><code>{"float distanceSquared"}</code> |
+| <Link id="m-renderers" /><code>{"List<Renderer> renderers"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setenabled" /><code>{"void SetEnabled(bool enabled)"}</code> |  |
-| <Link id="m-setrenderers" /><code>{"void SetRenderers(IEnumerable<Renderer> newRenderers, "}<Link to="/game-api/types/global-c-d/distancelod">{"DistanceLOD"}</Link>{"[] all, int thisIndex)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setenabled" /><code>{"void SetEnabled(bool enabled)"}</code> |
+| <Link id="m-setrenderers" /><code>{"void SetRenderers(IEnumerable<Renderer> newRenderers, "}<Link to="/game-api/types/global-c-d/distancelod">{"DistanceLOD"}</Link>{"[] all, int thisIndex)"}</code> |
 
 ## Used in
 

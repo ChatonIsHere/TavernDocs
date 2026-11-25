@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, `Alta.Logic`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-convert" /><code>{"static TData[] Convert<TType, TData, TSender>(List<TType> input)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-convert" /><code>{"static TData[] Convert<TType, TData, TSender>(List<TType> input)"}</code> |

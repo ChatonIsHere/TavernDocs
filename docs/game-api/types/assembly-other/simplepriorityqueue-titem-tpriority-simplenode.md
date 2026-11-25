@@ -18,15 +18,15 @@ A **private class** in `Alta.Timing.Runtime`, `Alta.Timing.PriorityQueue`. Reach
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SimpleNode(TItem data)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SimpleNode(TItem data)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code>{"TItem Data { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data" /><code>{"TItem Data { get; private set; }"}</code> |
 
 ## Used in
 

@@ -16,17 +16,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SentGiftTag()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"SentGiftTag(int from, int to)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SentGiftTag()"}</code> |
+| <Link id="m-ctor-2" /><code>{"SentGiftTag(int from, int to)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-from" /><code>{"int from"}</code> |  |
-| <Link id="m-to" /><code>{"int to"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-from" /><code>{"int from"}</code> |
+| <Link id="m-to" /><code>{"int to"}</code> |
 
 ## Used in
 

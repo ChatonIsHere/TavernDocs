@@ -17,12 +17,12 @@ An **interface** in `Alta.Platform`, `Alta.Platform`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializeasync" /><code>{"Task<bool> InitializeAsync()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializeasync" /><code>{"Task<bool> InitializeAsync()"}</code> |

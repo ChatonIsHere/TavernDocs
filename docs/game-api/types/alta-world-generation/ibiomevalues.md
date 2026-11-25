@@ -16,8 +16,8 @@ An **interface** in `Root.Township`, `Alta.Caves`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-attributes" /><code><Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" Attributes { get; }"}</code> |  |
-| <Link id="m-biomeweightings" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{", float> BiomeWeightings { get; }"}</code> |  |
-| <Link id="m-elementchances" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-world-generation/element">{"Element"}</Link>{", float> ElementChances { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-attributes" /><code><Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" Attributes { get; }"}</code> |
+| <Link id="m-biomeweightings" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{", float> BiomeWeightings { get; }"}</code> |
+| <Link id="m-elementchances" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-world-generation/element">{"Element"}</Link>{", float> ElementChances { get; }"}</code> |

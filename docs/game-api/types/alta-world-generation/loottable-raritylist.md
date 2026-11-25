@@ -17,25 +17,30 @@ A **class** in `Root.Township`, `Alta.Loot`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RarityList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RarityList()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entries" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"[] entries"}</code> |  |
-| <Link id="m-festivityentries" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/loottable-festivitylist">{"LootTable.FestivityList"}</Link>{"[] festivityEntries"}</code> |  |
-| <Link id="m-topic" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" topic"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entries" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"[] entries"}</code> |
+| <Link id="m-festivityentries" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/loottable-festivitylist">{"LootTable.FestivityList"}</Link>{"[] festivityEntries"}</code> |
+| <Link id="m-topic" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" topic"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entries-2" /><code><Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"[] Entries { get; }"}</code> |  |
-| <Link id="m-festivityentries-2" /><code><Link to="/game-api/types/alta-world-generation/loottable-festivitylist">{"LootTable.FestivityList"}</Link>{"[] FestivityEntries { get; }"}</code> |  |
-| <Link id="m-rarity" /><code><Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-entries-2" /><code><Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"[] Entries { get; }"}</code> |
+| <Link id="m-festivityentries-2" /><code><Link to="/game-api/types/alta-world-generation/loottable-festivitylist">{"LootTable.FestivityList"}</Link>{"[] FestivityEntries { get; }"}</code> |
+| <Link id="m-rarity" /><code><Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" { get; }"}</code> |
 
 ## Used in
 

@@ -17,23 +17,28 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionMachine(Transform transform, int instancesCount, float radius)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionMachine(Transform transform, int instancesCount, float radius)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentposition" /><code>{"private readonly Vector3 currentPosition"}</code> |  |
-| <Link id="m-forwardaxis" /><code>{"private readonly Vector3 forwardAxis"}</code> |  |
-| <Link id="m-instancescount" /><code>{"private readonly int instancesCount"}</code> |  |
-| <Link id="m-startposition" /><code>{"private readonly Vector3 startPosition"}</code> |  |
-| <Link id="m-step" /><code>{"private readonly float step"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentposition" /><code>{"private readonly Vector3 currentPosition"}</code> |
+| <Link id="m-forwardaxis" /><code>{"private readonly Vector3 forwardAxis"}</code> |
+| <Link id="m-instancescount" /><code>{"private readonly int instancesCount"}</code> |
+| <Link id="m-startposition" /><code>{"private readonly Vector3 startPosition"}</code> |
+| <Link id="m-step" /><code>{"private readonly float step"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getposition" /><code>{"Vector3 GetPosition(int index)"}</code> |  |
-| <Link id="m-getpositions" /><code>{"IEnumerable<Vector3> GetPositions() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getposition" /><code>{"Vector3 GetPosition(int index)"}</code> |
+| <Link id="m-getpositions" /><code>{"IEnumerable<Vector3> GetPositions() (iterator)"}</code> |

@@ -17,17 +17,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SubscriptionRefreshResult()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SubscriptionRefreshResult()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-comment" /><code>{"string Comment { get; set; }"}</code> |  |
-| <Link id="m-rewardperiodspassed" /><code>{"int RewardPeriodsPassed { get; set; }"}</code> |  |
-| <Link id="m-rewards" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/subscriptionrefreshresult-reward">{"SubscriptionRefreshResult.Reward"}</Link>{"> Rewards { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-comment" /><code>{"string Comment { get; set; }"}</code> |
+| <Link id="m-rewardperiodspassed" /><code>{"int RewardPeriodsPassed { get; set; }"}</code> |
+| <Link id="m-rewards" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/subscriptionrefreshresult-reward">{"SubscriptionRefreshResult.Reward"}</Link>{"> Rewards { get; set; }"}</code> |
 
 ## Used in
 

@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.Caves`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-evaluate" /><code>{"float Evaluate("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" set)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-evaluate" /><code>{"float Evaluate("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" set)"}</code> |

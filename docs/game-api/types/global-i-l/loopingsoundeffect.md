@@ -17,35 +17,48 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LoopingSoundEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LoopingSoundEffect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-islooping" /><code>{"private bool isLooping"}</code> |  |
-| <Link id="m-loopingsfxdurationinmilliseconds" /><code>{"private int loopingSfxDurationInMilliseconds"}</code> |  |
-| <Link id="m-loopingsfxdurationinseconds" /><code>{"private float loopingSfxDurationInSeconds"}</code> |  |
-| <Link id="m-loopingsoundaudiocontrol" /><code>{"private "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" loopingSoundAudioControl"}</code> |  |
-| <Link id="m-loopsoundeffect" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" loopSoundEffect"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-islooping" /><code>{"private bool isLooping"}</code> |
+| <Link id="m-loopingsfxdurationinmilliseconds" /><code>{"private int loopingSfxDurationInMilliseconds"}</code> |
+| <Link id="m-loopingsfxdurationinseconds" /><code>{"private float loopingSfxDurationInSeconds"}</code> |
+| <Link id="m-loopingsoundaudiocontrol" /><code>{"private "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" loopingSoundAudioControl"}</code> |
+| <Link id="m-loopsoundeffect" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" loopSoundEffect"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isplaying" /><code>{"bool IsPlaying { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isplaying" /><code>{"bool IsPlaying { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cancelloop" /><code>{"void CancelLoop()"}</code> |  |
-| <Link id="m-startloop" /><code>{"void StartLoop()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-loopsound" /><code>{"private async void LoopSound()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cancelloop" /><code>{"void CancelLoop()"}</code> |
+| <Link id="m-startloop" /><code>{"void StartLoop()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-loopsound" /><code>{"private async void LoopSound()"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+
+</details>
 
 ## Used in
 

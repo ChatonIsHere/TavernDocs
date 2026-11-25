@@ -17,15 +17,15 @@ An **enum** in `Alta.PlatformInformation.Runtime`, `Alta.PlatformInformation`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-android" /><code>{"Android = 4"}</code> |  |
-| <Link id="m-androidpreview" /><code>{"AndroidPreview = 8"}</code> |  |
-| <Link id="m-linux" /><code>{"Linux = 2"}</code> |  |
-| <Link id="m-pico" /><code>{"Pico = 36"}</code> |  |
-| <Link id="m-quest" /><code>{"Quest = 20"}</code> |  |
-| <Link id="m-unknown" /><code>{"Unknown = 65536"}</code> |  |
-| <Link id="m-windows" /><code>{"Windows = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-android" /><code>{"Android = 4"}</code> |
+| <Link id="m-androidpreview" /><code>{"AndroidPreview = 8"}</code> |
+| <Link id="m-linux" /><code>{"Linux = 2"}</code> |
+| <Link id="m-pico" /><code>{"Pico = 36"}</code> |
+| <Link id="m-quest" /><code>{"Quest = 20"}</code> |
+| <Link id="m-unknown" /><code>{"Unknown = 65536"}</code> |
+| <Link id="m-windows" /><code>{"Windows = 1"}</code> |
 
 ## Used in
 

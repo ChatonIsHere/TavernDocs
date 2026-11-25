@@ -17,32 +17,37 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CategoryScrollManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CategoryScrollManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-available" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] available"}</code> |  |
-| <Link id="m-categories" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] categories"}</code> |  |
-| <Link id="m-customizationmanager" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" customizationManager"}</code> |  |
-| <Link id="m-purchased" /><code>{"private IEnumerable<"}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{"> purchased"}</code> |  |
-| <Link id="m-refresh" /><code>{"private Task refresh"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-available" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] available"}</code> |
+| <Link id="m-categories" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] categories"}</code> |
+| <Link id="m-customizationmanager" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" customizationManager"}</code> |
+| <Link id="m-purchased" /><code>{"private IEnumerable<"}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{"> purchased"}</code> |
+| <Link id="m-refresh" /><code>{"private Task refresh"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-customizationmanager-2" /><code><Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" CustomizationManager { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-customizationmanager-2" /><code><Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" CustomizationManager { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getallcategories" /><code><Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] GetAllCategories()"}</code> |  |
-| <Link id="m-getavailablecategories" /><code><Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] GetAvailableCategories()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getallcategories" /><code><Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] GetAllCategories()"}</code> |
+| <Link id="m-getavailablecategories" /><code><Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] GetAvailableCategories()"}</code> |
 
 ## Used in
 

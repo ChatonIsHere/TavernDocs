@@ -18,23 +18,28 @@ A **class** in `Root.Township`, `Alta.Environmental.Atmosphere`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AmbienceSpacePoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AmbienceSpacePoint()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-from" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" from"}</code> |  |
-| <Link id="m-to" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" to"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-from" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" from"}</code> |
+| <Link id="m-to" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" to"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-from-2" /><code><Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" From { get; }"}</code> |  |
-| <Link id="m-to-2" /><code><Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" To { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-from-2" /><code><Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" From { get; }"}</code> |
+| <Link id="m-to-2" /><code><Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" To { get; }"}</code> |
 
 ## Used in
 

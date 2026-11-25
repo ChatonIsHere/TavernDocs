@@ -18,23 +18,28 @@ A **internal class** in `Root.Township`, `Alta.ScreenshotCamera`. Reach it throu
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HandCameraViewfinderResizerSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HandCameraViewfinderResizerSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clampdistance" /><code>{"private float clampDistance"}</code> |  |
-| <Link id="m-currentresizer" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcameraviewfinderresizersettings-handcameraviewfinderresizer">{"HandCameraViewfinderResizerSettings.HandCameraViewfinderResizer"}</Link>{" currentResizer"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-clampdistance" /><code>{"private float clampDistance"}</code> |
+| <Link id="m-currentresizer" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcameraviewfinderresizersettings-handcameraviewfinderresizer">{"HandCameraViewfinderResizerSettings.HandCameraViewfinderResizer"}</Link>{" currentResizer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-disableresizing" /><code>{"void DisableResizing()"}</code> |  |
-| <Link id="m-enableresizingfortarget" /><code>{"void EnableResizingForTarget(Transform viewFinder)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-disableresizing" /><code>{"void DisableResizing()"}</code> |
+| <Link id="m-enableresizingfortarget" /><code>{"void EnableResizingForTarget(Transform viewFinder)"}</code> |
 
 ## Used in
 

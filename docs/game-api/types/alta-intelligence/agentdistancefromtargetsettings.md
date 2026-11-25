@@ -18,26 +18,31 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AgentDistanceFromTargetSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AgentDistanceFromTargetSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bestdotof" /><code>{"private int bestDotOf"}</code> |  |
-| <Link id="m-heuristicmaximum" /><code>{"private int heuristicMaximum"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bestdotof" /><code>{"private int bestDotOf"}</code> |
+| <Link id="m-heuristicmaximum" /><code>{"private int heuristicMaximum"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bestdotof-2" /><code>{"int BestDotOf { get; }"}</code> |  |
-| <Link id="m-heuristicmaximum-2" /><code>{"int HeuristicMaximum { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bestdotof-2" /><code>{"int BestDotOf { get; }"}</code> |
+| <Link id="m-heuristicmaximum-2" /><code>{"int HeuristicMaximum { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |

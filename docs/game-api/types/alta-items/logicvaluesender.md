@@ -20,9 +20,9 @@ Base for logic circuit components that hold a value in the global logic manager'
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected LogicValueSender()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected LogicValueSender()"}</code> |
 
 ## Fields
 

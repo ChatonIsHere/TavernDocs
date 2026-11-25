@@ -17,18 +17,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutPreparer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WoodcutPreparer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-previewmaterial" /><code>{"private Material previewMaterial"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-previewmaterial" /><code>{"private Material previewMaterial"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-previewmaterial-2" /><code>{"Material PreviewMaterial { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-previewmaterial-2" /><code>{"Material PreviewMaterial { get; }"}</code> |

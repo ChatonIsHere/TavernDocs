@@ -18,30 +18,35 @@ A **class** in `Root.Township`, `Alta.Environmental.Vegetation`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrassBlade()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrassBlade()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-blademesh" /><code>{"private "}<Link to="/game-api/types/alta-world/grassblademesh">{"GrassBladeMesh"}</Link>{" bladeMesh"}</code> |  |
-| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-blademesh" /><code>{"private "}<Link to="/game-api/types/alta-world/grassblademesh">{"GrassBladeMesh"}</Link>{" bladeMesh"}</code> |
+| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filter-2" /><code>{"MeshFilter Filter { get; }"}</code> |  |
-| <Link id="m-mesh" /><code><Link to="/game-api/types/alta-world/grassblademesh">{"GrassBladeMesh"}</Link>{" Mesh { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-filter-2" /><code>{"MeshFilter Filter { get; }"}</code> |
+| <Link id="m-mesh" /><code><Link to="/game-api/types/alta-world/grassblademesh">{"GrassBladeMesh"}</Link>{" Mesh { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getlocalvertices" /><code>{"List<Vector3> GetLocalVertices()"}</code> |  |
-| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/alta-world/grassblademesh">{"GrassBladeMesh"}</Link>{" mesh, Material grassMaterial, bool hasThickening)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getlocalvertices" /><code>{"List<Vector3> GetLocalVertices()"}</code> |
+| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/alta-world/grassblademesh">{"GrassBladeMesh"}</Link>{" mesh, Material grassMaterial, bool hasThickening)"}</code> |
 
 ## Used in
 

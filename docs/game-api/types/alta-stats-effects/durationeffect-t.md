@@ -18,26 +18,26 @@ An **abstract class** in `Root.Township`, `Alta.Alchemy`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected DurationEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected DurationEffect()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isduration" /><code>{"override bool IsDuration { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isduration" /><code>{"override bool IsDuration { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stopped" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/effecteventhandler-t">{"EffectEventHandler"}</Link>{"<T> Stopped"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-stopped" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/effecteventhandler-t">{"EffectEventHandler"}</Link>{"<T> Stopped"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkstackallowed" /><code>{"virtual bool CheckStackAllowed(T newEffect)"}</code> |  |
-| <Link id="m-stop" /><code>{"virtual void Stop()"}</code> |  |
-| <Link id="m-update" /><code>{"abstract void Update()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkstackallowed" /><code>{"virtual bool CheckStackAllowed(T newEffect)"}</code> |
+| <Link id="m-stop" /><code>{"virtual void Stop()"}</code> |
+| <Link id="m-update" /><code>{"abstract void Update()"}</code> |

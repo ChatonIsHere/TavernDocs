@@ -18,19 +18,19 @@ A **class** in `Root.Township`, `Alta.Trading`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TradeVendorSaveDataOld()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TradeVendorSaveDataOld()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-istaxing" /><code>{"bool isTaxing"}</code> |  |
-| <Link id="m-vendorowner" /><code>{"int vendorOwner"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-istaxing" /><code>{"bool isTaxing"}</code> |
+| <Link id="m-vendorowner" /><code>{"int vendorOwner"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

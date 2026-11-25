@@ -17,20 +17,20 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PipelineDistribution()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PipelineDistribution()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-description" /><code>{"override string Description { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"override string Name { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-description" /><code>{"override string Description { get; }"}</code> |
+| <Link id="m-name" /><code>{"override string Name { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-possibleresults" /><code>{"override IEnumerable<Object> PossibleResults(Object input) (iterator)"}</code> |  |
-| <Link id="m-process" /><code>{"override Object Process(Object input, Func<double> random, "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-possibleresults" /><code>{"override IEnumerable<Object> PossibleResults(Object input) (iterator)"}</code> |
+| <Link id="m-process" /><code>{"override Object Process(Object input, Func<double> random, "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |

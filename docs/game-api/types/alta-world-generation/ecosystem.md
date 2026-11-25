@@ -23,21 +23,26 @@ Component on a location chunk listing the creature populations that live there. 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Ecosystem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Ecosystem()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-averagetimebetweensoundeffects" /><code>{"private float averageTimeBetweenSoundEffects"}</code> |  |
-| <Link id="m-definitions" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ecosystem-populationapplication">{"Ecosystem.PopulationApplication"}</Link>{"[] definitions"}</code> |  |
-| <Link id="m-definitionsmap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-world-generation/ecosystem-populationapplication">{"Ecosystem.PopulationApplication"}</Link>{"> definitionsMap"}</code> |  |
-| <Link id="m-populationfolderprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" populationFolderPrefab"}</code> |  |
-| <Link id="m-populations" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{"> populations"}</code> |  |
-| <Link id="m-spawninformationmap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{"> spawnInformationMap"}</code> |  |
-| <Link id="m-streamer" /><code>{"private "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-averagetimebetweensoundeffects" /><code>{"private float averageTimeBetweenSoundEffects"}</code> |
+| <Link id="m-definitions" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ecosystem-populationapplication">{"Ecosystem.PopulationApplication"}</Link>{"[] definitions"}</code> |
+| <Link id="m-definitionsmap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-world-generation/ecosystem-populationapplication">{"Ecosystem.PopulationApplication"}</Link>{"> definitionsMap"}</code> |
+| <Link id="m-populationfolderprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" populationFolderPrefab"}</code> |
+| <Link id="m-populations" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{"> populations"}</code> |
+| <Link id="m-spawninformationmap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{"> spawnInformationMap"}</code> |
+| <Link id="m-streamer" /><code>{"private "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer"}</code> |
+
+</details>
 
 ## Properties
 
@@ -45,7 +50,15 @@ Component on a location chunk listing the creature populations that live there. 
 | --- | --- |
 | <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; private set; }"}</code> | The `LocationChunk` it is on. |
 | <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; private set; }"}</code> | True after server initialization. |
-| <Link id="m-alta-populations-ispawnsystem-item" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" this[uint populationHash] { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-populations-ispawnsystem-item" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" this[uint populationHash] { get; }"}</code> |
+
+</details>
 
 ## Methods
 
@@ -56,11 +69,19 @@ Component on a location chunk listing the creature populations that live there. 
 | <Link id="m-setpoints" /><code>{"void SetPoints(List<"}<Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{"> spawnPoints, uint populationHash)"}</code> | Sets the spawn points for a population, if none are set yet. |
 | <Link id="m-setpopulationvalue" /><code>{"void SetPopulationValue(uint populationHash, "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" value)"}</code> | Sets the spawn information for a population, if none is set yet. |
 | <Link id="m-trygetpopulationvalue" /><code>{"bool TryGetPopulationValue(uint populationHash, out "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" value)"}</code> | Gets a population's spawn information. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-chunkinitializepopulations" /><code>{"private void ChunkInitializePopulations("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-cleanspawnpoints" /><code>{"private void CleanSpawnPoints("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-unloadpopulations" /><code>{"private void UnloadPopulations("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-chunkinitializepopulations" /><code>{"private void ChunkInitializePopulations("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| <Link id="m-cleanspawnpoints" /><code>{"private void CleanSpawnPoints("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-unloadpopulations" /><code>{"private void UnloadPopulations("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+
+</details>
 
 ## Used in
 

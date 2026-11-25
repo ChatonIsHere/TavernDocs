@@ -17,12 +17,12 @@ An **interface** in `Root.Township`, `Alta.Heat`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isignoringsparks" /><code>{"bool IsIgnoringSparks { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isignoringsparks" /><code>{"bool IsIgnoringSparks { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-trylight" /><code>{"void TryLight()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-trylight" /><code>{"void TryLight()"}</code> |

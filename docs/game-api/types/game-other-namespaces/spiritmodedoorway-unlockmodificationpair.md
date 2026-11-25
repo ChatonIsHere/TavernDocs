@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, `Features.Gameplay.ClimbingTower`. Reac
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isgivingunlock" /><code>{"bool IsGivingUnlock"}</code> |  |
-| <Link id="m-newunlock" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" NewUnlock"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isgivingunlock" /><code>{"bool IsGivingUnlock"}</code> |
+| <Link id="m-newunlock" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" NewUnlock"}</code> |
 
 ## Used in
 

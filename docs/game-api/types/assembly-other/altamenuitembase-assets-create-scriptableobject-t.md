@@ -21,16 +21,21 @@ Editor menu item base that adds an "Assets/Create" entry for a ScriptableObject 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-path" /><code>{"private string path"}</code> |  |
-| <Link id="m-type" /><code>{"private string type"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-path" /><code>{"private string path"}</code> |
+| <Link id="m-type" /><code>{"private string type"}</code> |
+
+</details>
 
 ## Properties
 

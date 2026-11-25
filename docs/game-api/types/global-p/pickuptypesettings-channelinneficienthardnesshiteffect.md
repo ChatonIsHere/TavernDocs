@@ -17,16 +17,16 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChannelInneficientHardnessHitEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChannelInneficientHardnessHitEffect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channel" /><code><Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" channel"}</code> |  |
-| <Link id="m-settings" /><code><Link to="/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" settings"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-channel" /><code><Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" channel"}</code> |
+| <Link id="m-settings" /><code><Link to="/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" settings"}</code> |
 
 ## Used in
 

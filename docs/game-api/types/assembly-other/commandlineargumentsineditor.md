@@ -19,18 +19,23 @@ A **class** in `Alta.CommandLine`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CommandLineArgumentsInEditor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CommandLineArgumentsInEditor()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-extraarguments" /><code>{"private string extraArguments"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-extraarguments" /><code>{"private string extraArguments"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-extraarguments-2" /><code>{"string ExtraArguments { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-extraarguments-2" /><code>{"string ExtraArguments { get; }"}</code> |

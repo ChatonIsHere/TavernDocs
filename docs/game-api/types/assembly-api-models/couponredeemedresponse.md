@@ -16,14 +16,14 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CouponRedeemedResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CouponRedeemedResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-couponcode" /><code>{"string CouponCode { get; set; }"}</code> |  |
-| <Link id="m-virtualcurrencyamount" /><code>{"int VirtualCurrencyAmount { get; set; }"}</code> |  |
-| <Link id="m-virtualitems" /><code>{"object[] VirtualItems { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-couponcode" /><code>{"string CouponCode { get; set; }"}</code> |
+| <Link id="m-virtualcurrencyamount" /><code>{"int VirtualCurrencyAmount { get; set; }"}</code> |
+| <Link id="m-virtualitems" /><code>{"object[] VirtualItems { get; set; }"}</code> |

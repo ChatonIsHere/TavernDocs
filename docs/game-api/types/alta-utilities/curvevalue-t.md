@@ -17,21 +17,26 @@ A **class** in `Root.Township`, `Alta`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CurveValue()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"CurveValue(T topic, AnimationCurve curve)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CurveValue()"}</code> |
+| <Link id="m-ctor-2" /><code>{"CurveValue(T topic, AnimationCurve curve)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> |  |
-| <Link id="m-topic" /><code>{"private T topic"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> |
+| <Link id="m-topic" /><code>{"private T topic"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-curve-2" /><code>{"AnimationCurve Curve { get; }"}</code> |  |
-| <Link id="m-topic-2" /><code>{"T Topic { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-curve-2" /><code>{"AnimationCurve Curve { get; }"}</code> |
+| <Link id="m-topic-2" /><code>{"T Topic { get; }"}</code> |

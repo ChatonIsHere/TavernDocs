@@ -17,12 +17,12 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ColorApiResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ColorApiResponse()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code><Link to="/game-api/types/global-c-d/colorapiresponse-nameobject">{"ColorApiResponse.NameObject"}</Link>{" name"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code><Link to="/game-api/types/global-c-d/colorapiresponse-nameobject">{"ColorApiResponse.NameObject"}</Link>{" name"}</code> |

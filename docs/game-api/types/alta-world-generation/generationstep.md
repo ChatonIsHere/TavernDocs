@@ -18,12 +18,12 @@ An **abstract class** in `Root.Township`, `Alta.PAGaC`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected GenerationStep()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected GenerationStep()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-run" /><code>{"abstract void Run("}<Link to="/game-api/types/alta-world-generation/generationbase-alta-pagac">{"GenerationBase"}</Link>{" generationBase)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-run" /><code>{"abstract void Run("}<Link to="/game-api/types/alta-world-generation/generationbase-alta-pagac">{"GenerationBase"}</Link>{" generationBase)"}</code> |

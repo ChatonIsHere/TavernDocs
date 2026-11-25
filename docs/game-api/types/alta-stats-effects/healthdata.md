@@ -18,34 +18,47 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HealthData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HealthData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-healthinstances" /><code>{"private List<"}<Link to="/game-api/types/alta-stats-effects/instance">{"Instance"}</Link>{"> healthInstances"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-healthinstances" /><code>{"private List<"}<Link to="/game-api/types/alta-stats-effects/instance">{"Instance"}</Link>{"> healthInstances"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-count" /><code>{"int Count { get; }"}</code> |  |
-| <Link id="m-isreadonly" /><code>{"bool IsReadOnly { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-count" /><code>{"int Count { get; }"}</code> |
+| <Link id="m-isreadonly" /><code>{"bool IsReadOnly { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"void Add("}<Link to="/game-api/types/alta-stats-effects/instance">{"Instance"}</Link>{" item)"}</code> |  |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-contains" /><code>{"bool Contains("}<Link to="/game-api/types/alta-stats-effects/instance">{"Instance"}</Link>{" item)"}</code> |  |
-| <Link id="m-copyto" /><code>{"void CopyTo("}<Link to="/game-api/types/alta-stats-effects/instance">{"Instance"}</Link>{"[] array, int arrayIndex)"}</code> |  |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-stats-effects/instance">{"Instance"}</Link>{"> GetEnumerator()"}</code> |  |
-| <Link id="m-remove" /><code>{"bool Remove("}<Link to="/game-api/types/alta-stats-effects/instance">{"Instance"}</Link>{" item)"}</code> |  |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"void Add("}<Link to="/game-api/types/alta-stats-effects/instance">{"Instance"}</Link>{" item)"}</code> |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> |
+| <Link id="m-contains" /><code>{"bool Contains("}<Link to="/game-api/types/alta-stats-effects/instance">{"Instance"}</Link>{" item)"}</code> |
+| <Link id="m-copyto" /><code>{"void CopyTo("}<Link to="/game-api/types/alta-stats-effects/instance">{"Instance"}</Link>{"[] array, int arrayIndex)"}</code> |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-stats-effects/instance">{"Instance"}</Link>{"> GetEnumerator()"}</code> |
+| <Link id="m-remove" /><code>{"bool Remove("}<Link to="/game-api/types/alta-stats-effects/instance">{"Instance"}</Link>{" item)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |
+
+</details>
 
 ## Used in
 

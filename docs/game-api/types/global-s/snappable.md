@@ -17,28 +17,41 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Snappable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Snappable()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-issnappingrotations" /><code>{"private bool isSnappingRotations"}</code> |  |
-| <Link id="m-rotationsnaps" /><code>{"private float rotationSnaps"}</code> |  |
-| <Link id="m-snappoints" /><code>{"private List<Transform> snapPoints"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-issnappingrotations" /><code>{"private bool isSnappingRotations"}</code> |
+| <Link id="m-rotationsnaps" /><code>{"private float rotationSnaps"}</code> |
+| <Link id="m-snappoints" /><code>{"private List<Transform> snapPoints"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-snappoints-2" /><code>{"IEnumerable<Transform> SnapPoints { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-snappoints-2" /><code>{"IEnumerable<Transform> SnapPoints { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-refindsnappoints" /><code>{"void RefindSnapPoints()"}</code> |  |
-| <Link id="m-snaprotation" /><code>{"void SnapRotation()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-refindsnappoints" /><code>{"void RefindSnapPoints()"}</code> |
+| <Link id="m-snaprotation" /><code>{"void SnapRotation()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

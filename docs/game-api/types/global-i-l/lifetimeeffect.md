@@ -17,22 +17,27 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LifeTimeEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LifeTimeEffect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-effectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectDefinition"}</code> |  |
-| <Link id="m-pooledeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledEffect"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-effectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectDefinition"}</code> |
+| <Link id="m-pooledeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledEffect"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-releaseeffect" /><code>{"void ReleaseEffect()"}</code> |  |
-| <Link id="m-seteffect" /><code>{"void SetEffect("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectDefinition)"}</code> |  |
-| <Link id="m-spawnat" /><code>{"void SpawnAt(Transform target)"}</code> |  |
-| <Link id="m-spawnatparented" /><code>{"void SpawnAtParented(Transform target)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-releaseeffect" /><code>{"void ReleaseEffect()"}</code> |
+| <Link id="m-seteffect" /><code>{"void SetEffect("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectDefinition)"}</code> |
+| <Link id="m-spawnat" /><code>{"void SpawnAt(Transform target)"}</code> |
+| <Link id="m-spawnatparented" /><code>{"void SpawnAtParented(Transform target)"}</code> |

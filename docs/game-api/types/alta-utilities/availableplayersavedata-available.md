@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, `Alta.Utilities`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deckedout" /><code>{"DeckedOut = 1"}</code> |  |
-| <Link id="m-default" /><code>{"Default = 2"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deckedout" /><code>{"DeckedOut = 1"}</code> |
+| <Link id="m-default" /><code>{"Default = 2"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
 
 ## Used in
 

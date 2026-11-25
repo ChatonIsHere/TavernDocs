@@ -17,37 +17,50 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SkillOrbOperator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SkillOrbOperator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fillprogress" /><code>{"private readonly int _FillProgress"}</code> |  |
-| <Link id="m-animatingrenderer" /><code>{"private Renderer animatingRenderer"}</code> |  |
-| <Link id="m-currentjoint" /><code>{"private FixedJoint currentJoint"}</code> |  |
-| <Link id="m-currentreplacer" /><code>{"private "}<Link to="/game-api/types/global-s/skillorbreplacer">{"SkillOrbReplacer"}</Link>{" currentReplacer"}</code> |  |
-| <Link id="m-fadeanimation" /><code>{"private Coroutine fadeAnimation"}</code> |  |
-| <Link id="m-fadeduration" /><code>{"private float fadeDuration"}</code> |  |
-| <Link id="m-fillvisualizer" /><code>{"private "}<Link to="/game-api/types/global-e-h/experiencefillvisualizer">{"ExperienceFillVisualizer"}</Link>{" fillVisualizer"}</code> |  |
-| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidBody"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fillprogress" /><code>{"private readonly int _FillProgress"}</code> |
+| <Link id="m-animatingrenderer" /><code>{"private Renderer animatingRenderer"}</code> |
+| <Link id="m-currentjoint" /><code>{"private FixedJoint currentJoint"}</code> |
+| <Link id="m-currentreplacer" /><code>{"private "}<Link to="/game-api/types/global-s/skillorbreplacer">{"SkillOrbReplacer"}</Link>{" currentReplacer"}</code> |
+| <Link id="m-fadeanimation" /><code>{"private Coroutine fadeAnimation"}</code> |
+| <Link id="m-fadeduration" /><code>{"private float fadeDuration"}</code> |
+| <Link id="m-fillvisualizer" /><code>{"private "}<Link to="/game-api/types/global-e-h/experiencefillvisualizer">{"ExperienceFillVisualizer"}</Link>{" fillVisualizer"}</code> |
+| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidBody"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-rigidbody-2" /><code>{"Rigidbody Rigidbody { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-rigidbody-2" /><code>{"Rigidbody Rigidbody { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-breakjoint" /><code>{"void BreakJoint(bool confirmBuy)"}</code> |  |
-| <Link id="m-createjoint" /><code>{"void CreateJoint("}<Link to="/game-api/types/global-s/skillorbreplacer">{"SkillOrbReplacer"}</Link>{" replacer)"}</code> |  |
-| <Link id="m-setinternalprogress" /><code>{"void SetInternalProgress(float progress)"}</code> |  |
-| <Link id="m-fadeprogress" /><code>{"private IEnumerator FadeProgress() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-breakjoint" /><code>{"void BreakJoint(bool confirmBuy)"}</code> |
+| <Link id="m-createjoint" /><code>{"void CreateJoint("}<Link to="/game-api/types/global-s/skillorbreplacer">{"SkillOrbReplacer"}</Link>{" replacer)"}</code> |
+| <Link id="m-setinternalprogress" /><code>{"void SetInternalProgress(float progress)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-fadeprogress" /><code>{"private IEnumerator FadeProgress() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

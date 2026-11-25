@@ -18,25 +18,30 @@ A **class** in `Root.Township`, `Alta`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CurveRange()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"CurveRange(T topic, AnimationCurve curve, float value1, float value2)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CurveRange()"}</code> |
+| <Link id="m-ctor-2" /><code>{"CurveRange(T topic, AnimationCurve curve, float value1, float value2)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-curve-2" /><code>{"AnimationCurve Curve { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-curve-2" /><code>{"AnimationCurve Curve { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-evaluateasminmax" /><code>{"float EvaluateAsMinMax(float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-evaluateasminmax" /><code>{"float EvaluateAsMinMax(float value)"}</code> |

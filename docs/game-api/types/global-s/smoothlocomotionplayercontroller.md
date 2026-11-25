@@ -20,15 +20,20 @@ Base VR player controller for players that move with thumbstick (smooth) locomot
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SmoothLocomotionPlayerController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SmoothLocomotionPlayerController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-smoothlocomotion" /><code>{"private "}<Link to="/game-api/types/global-s/smoothlocomotion">{"SmoothLocomotion"}</Link>{" smoothLocomotion"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-smoothlocomotion" /><code>{"private "}<Link to="/game-api/types/global-s/smoothlocomotion">{"SmoothLocomotion"}</Link>{" smoothLocomotion"}</code> |
+
+</details>
 
 ## Properties
 

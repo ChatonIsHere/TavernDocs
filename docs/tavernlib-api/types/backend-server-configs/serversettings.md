@@ -20,9 +20,9 @@ The contents of `server_settings.json`. Unknown keys are kept. Read it through `
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerSettings()"}</code> |
 
 ## Fields
 
@@ -51,7 +51,15 @@ The contents of `server_settings.json`. Unknown keys are kept. Read it through `
 | <Link id="m-serverbackuptime" /><code>{"float ServerBackupTime { get; private set; }"}</code> | `server_backup_time`: hours between backups. 0 turns them off. |
 | <Link id="m-tutorialscene" /><code>{"bool TutorialScene { get; private set; }"}</code> | `tutorial_scene`: like `QuestScene`, for the tutorial scene. |
 | <Link id="m-whitelistenabled" /><code>{"bool WhitelistEnabled { get; private set; }"}</code> | `whitelist_enabled`: turns the whitelist on. Without `/launcherauth`, a non-empty whitelist is on regardless. |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |
+
+</details>
 
 ## Used in
 

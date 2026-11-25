@@ -16,15 +16,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OculusFriendsList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OculusFriendsList()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-oculusfriends" /><code>{"IEnumerable<ulong> OculusFriends { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-oculusfriends" /><code>{"IEnumerable<ulong> OculusFriends { get; set; }"}</code> |
 
 ## Used in
 

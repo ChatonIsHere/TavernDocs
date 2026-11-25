@@ -20,24 +20,29 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BiomeSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BiomeSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cumulativetransitionchance" /><code>{"private float cumulativeTransitionChance"}</code> |  |
-| <Link id="m-prosperityattribute" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" prosperityAttribute"}</code> |  |
-| <Link id="m-transitionprogressmax" /><code>{"private float transitionProgressMax"}</code> |  |
-| <Link id="m-transitionprogressmin" /><code>{"private float transitionProgressMin"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cumulativetransitionchance" /><code>{"private float cumulativeTransitionChance"}</code> |
+| <Link id="m-prosperityattribute" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" prosperityAttribute"}</code> |
+| <Link id="m-transitionprogressmax" /><code>{"private float transitionProgressMax"}</code> |
+| <Link id="m-transitionprogressmin" /><code>{"private float transitionProgressMin"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cumulativetransitionchance-2" /><code>{"float CumulativeTransitionChance { get; }"}</code> |  |
-| <Link id="m-prosperityattribute-2" /><code><Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" ProsperityAttribute { get; }"}</code> |  |
-| <Link id="m-transitionprogressmax-2" /><code>{"float TransitionProgressMax { get; }"}</code> |  |
-| <Link id="m-transitionprogressmin-2" /><code>{"float TransitionProgressMin { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cumulativetransitionchance-2" /><code>{"float CumulativeTransitionChance { get; }"}</code> |
+| <Link id="m-prosperityattribute-2" /><code><Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" ProsperityAttribute { get; }"}</code> |
+| <Link id="m-transitionprogressmax-2" /><code>{"float TransitionProgressMax { get; }"}</code> |
+| <Link id="m-transitionprogressmin-2" /><code>{"float TransitionProgressMin { get; }"}</code> |

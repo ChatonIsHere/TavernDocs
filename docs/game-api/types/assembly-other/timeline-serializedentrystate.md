@@ -17,11 +17,11 @@ An **enum** in `Alta.Timing.Runtime`, `Alta.Timing`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-future" /><code>{"Future = 2"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-past" /><code>{"Past = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-future" /><code>{"Future = 2"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-past" /><code>{"Past = 1"}</code> |
 
 ## Used in
 

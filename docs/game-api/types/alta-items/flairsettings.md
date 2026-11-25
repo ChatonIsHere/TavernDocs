@@ -19,27 +19,32 @@ How a book's cover is decorated: flair meshes for the spine, spine face and edge
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FlairSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FlairSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-baseedgeface" /><code>{"private "}<Link to="/game-api/types/alta-items/flairset">{"FlairSet"}</Link>{" baseEdgeFace"}</code> |  |
-| <Link id="m-basespine" /><code>{"private "}<Link to="/game-api/types/alta-items/flairset">{"FlairSet"}</Link>{" baseSpine"}</code> |  |
-| <Link id="m-basespineface" /><code>{"private "}<Link to="/game-api/types/alta-items/flairset">{"FlairSet"}</Link>{" baseSpineFace"}</code> |  |
-| <Link id="m-bookmaterial" /><code>{"private Material bookMaterial"}</code> |  |
-| <Link id="m-emblem" /><code>{"private "}<Link to="/game-api/types/alta-items/faceemblem">{"FaceEmblem"}</Link>{" emblem"}</code> |  |
-| <Link id="m-emblemframe" /><code>{"private "}<Link to="/game-api/types/alta-items/faceemblemframe">{"FaceEmblemFrame"}</Link>{" emblemFrame"}</code> |  |
-| <Link id="m-flairmaterial" /><code>{"private Material flairMaterial"}</code> |  |
-| <Link id="m-framematerialmode" /><code>{"private "}<Link to="/game-api/types/alta-items/flairsettings-framematerialmode">{"FlairSettings.FrameMaterialMode"}</Link>{" frameMaterialMode"}</code> |  |
-| <Link id="m-glyph" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph"}</code> |  |
-| <Link id="m-letter" /><code>{"private char letter"}</code> |  |
-| <Link id="m-overrideedgeface" /><code>{"private "}<Link to="/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" overrideEdgeFace"}</code> |  |
-| <Link id="m-overridespine" /><code>{"private "}<Link to="/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" overrideSpine"}</code> |  |
-| <Link id="m-overridespineface" /><code>{"private "}<Link to="/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" overrideSpineFace"}</code> |  |
+<details>
+<summary>13 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-baseedgeface" /><code>{"private "}<Link to="/game-api/types/alta-items/flairset">{"FlairSet"}</Link>{" baseEdgeFace"}</code> |
+| <Link id="m-basespine" /><code>{"private "}<Link to="/game-api/types/alta-items/flairset">{"FlairSet"}</Link>{" baseSpine"}</code> |
+| <Link id="m-basespineface" /><code>{"private "}<Link to="/game-api/types/alta-items/flairset">{"FlairSet"}</Link>{" baseSpineFace"}</code> |
+| <Link id="m-bookmaterial" /><code>{"private Material bookMaterial"}</code> |
+| <Link id="m-emblem" /><code>{"private "}<Link to="/game-api/types/alta-items/faceemblem">{"FaceEmblem"}</Link>{" emblem"}</code> |
+| <Link id="m-emblemframe" /><code>{"private "}<Link to="/game-api/types/alta-items/faceemblemframe">{"FaceEmblemFrame"}</Link>{" emblemFrame"}</code> |
+| <Link id="m-flairmaterial" /><code>{"private Material flairMaterial"}</code> |
+| <Link id="m-framematerialmode" /><code>{"private "}<Link to="/game-api/types/alta-items/flairsettings-framematerialmode">{"FlairSettings.FrameMaterialMode"}</Link>{" frameMaterialMode"}</code> |
+| <Link id="m-glyph" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph"}</code> |
+| <Link id="m-letter" /><code>{"private char letter"}</code> |
+| <Link id="m-overrideedgeface" /><code>{"private "}<Link to="/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" overrideEdgeFace"}</code> |
+| <Link id="m-overridespine" /><code>{"private "}<Link to="/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" overrideSpine"}</code> |
+| <Link id="m-overridespineface" /><code>{"private "}<Link to="/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" overrideSpineFace"}</code> |
+
+</details>
 
 ## Properties
 

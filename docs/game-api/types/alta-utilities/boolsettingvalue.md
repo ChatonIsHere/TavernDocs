@@ -16,22 +16,27 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BoolSettingValue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BoolSettingValue()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-expectedvalue" /><code>{"private bool expectedValue"}</code> |  |
-| <Link id="m-setting" /><code>{"private "}<Link to="/game-api/types/alta-utilities/togglegamesettingaccess">{"ToggleGameSettingAccess"}</Link>{" setting"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-expectedvalue" /><code>{"private bool expectedValue"}</code> |
+| <Link id="m-setting" /><code>{"private "}<Link to="/game-api/types/alta-utilities/togglegamesettingaccess">{"ToggleGameSettingAccess"}</Link>{" setting"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isvalid" /><code>{"bool IsValid { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isvalid" /><code>{"bool IsValid { get; }"}</code> |
 
 ## Used in
 

@@ -19,22 +19,27 @@ A **class** in `Alta.Coroutines`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RateLimiter(float targetTickRate)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RateLimiter(float targetTickRate)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-limit" /><code>{"private float limit"}</code> |  |
-| <Link id="m-targettickrate" /><code>{"private readonly float targetTickRate"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-limit" /><code>{"private float limit"}</code> |
+| <Link id="m-targettickrate" /><code>{"private readonly float targetTickRate"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isratelimited" /><code>{"bool IsRateLimited()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isratelimited" /><code>{"bool IsRateLimited()"}</code> |
 
 ## Used in
 

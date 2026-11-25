@@ -17,29 +17,42 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"XXHash(int seed)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"XXHash(int seed)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-prime32-1" /><code>{"private const uint PRIME32_1"}</code> |  |
-| <Link id="m-prime32-2" /><code>{"private const uint PRIME32_2"}</code> |  |
-| <Link id="m-prime32-3" /><code>{"private const uint PRIME32_3"}</code> |  |
-| <Link id="m-prime32-4" /><code>{"private const uint PRIME32_4"}</code> |  |
-| <Link id="m-prime32-5" /><code>{"private const uint PRIME32_5"}</code> |  |
-| <Link id="m-seed" /><code>{"private uint seed"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-prime32-1" /><code>{"private const uint PRIME32_1"}</code> |
+| <Link id="m-prime32-2" /><code>{"private const uint PRIME32_2"}</code> |
+| <Link id="m-prime32-3" /><code>{"private const uint PRIME32_3"}</code> |
+| <Link id="m-prime32-4" /><code>{"private const uint PRIME32_4"}</code> |
+| <Link id="m-prime32-5" /><code>{"private const uint PRIME32_5"}</code> |
+| <Link id="m-seed" /><code>{"private uint seed"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gethash" /><code>{"uint GetHash(byte[] buf)"}</code> |  |
-| <Link id="m-gethash-2" /><code>{"uint GetHash(params uint[] buf)"}</code> |  |
-| <Link id="m-gethash-3" /><code>{"override uint GetHash(params int[] buf)"}</code> |  |
-| <Link id="m-gethash-4" /><code>{"override uint GetHash(int buf)"}</code> |  |
-| <Link id="m-calcsubhash" /><code>{"private static uint CalcSubHash(uint value, byte[] buf, int index)"}</code> |  |
-| <Link id="m-calcsubhash-2" /><code>{"private static uint CalcSubHash(uint value, uint read_value)"}</code> |  |
-| <Link id="m-rotateleft" /><code>{"private static uint RotateLeft(uint value, int count)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gethash" /><code>{"uint GetHash(byte[] buf)"}</code> |
+| <Link id="m-gethash-2" /><code>{"uint GetHash(params uint[] buf)"}</code> |
+| <Link id="m-gethash-3" /><code>{"override uint GetHash(params int[] buf)"}</code> |
+| <Link id="m-gethash-4" /><code>{"override uint GetHash(int buf)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-calcsubhash" /><code>{"private static uint CalcSubHash(uint value, byte[] buf, int index)"}</code> |
+| <Link id="m-calcsubhash-2" /><code>{"private static uint CalcSubHash(uint value, uint read_value)"}</code> |
+| <Link id="m-rotateleft" /><code>{"private static uint RotateLeft(uint value, int count)"}</code> |
+
+</details>

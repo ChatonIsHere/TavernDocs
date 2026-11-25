@@ -19,15 +19,15 @@ A **internal class** in `Root.Township`, `Alta.Inventory`. Reach it through att-
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LockableHingeSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LockableHingeSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-haslock" /><code>{"bool hasLock"}</code> |  |
-| <Link id="m-isdetachable" /><code>{"bool isDetachable"}</code> |  |
-| <Link id="m-islocked" /><code>{"bool isLocked"}</code> |  |
-| <Link id="m-lockprefab" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" lockPrefab"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-haslock" /><code>{"bool hasLock"}</code> |
+| <Link id="m-isdetachable" /><code>{"bool isDetachable"}</code> |
+| <Link id="m-islocked" /><code>{"bool isLocked"}</code> |
+| <Link id="m-lockprefab" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" lockPrefab"}</code> |

@@ -17,24 +17,37 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Instance(GameObject prefab, float health)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Instance(GameObject prefab, float health)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-health" /><code>{"private float health"}</code> |  |
-| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-health" /><code>{"private float health"}</code> |
+| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apply" /><code>{"void Apply("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" healthStat, Transform parent)"}</code> |  |
-| <Link id="m-applyreference" /><code>{"void ApplyReference(FieldInfo field, Transform parent)"}</code> |  |
-| <Link id="m-getinstance" /><code>{"private GameObject GetInstance(GameObject prefab, Transform parent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apply" /><code>{"void Apply("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" healthStat, Transform parent)"}</code> |
+| <Link id="m-applyreference" /><code>{"void ApplyReference(FieldInfo field, Transform parent)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getinstance" /><code>{"private GameObject GetInstance(GameObject prefab, Transform parent)"}</code> |
+
+</details>
 
 ## Used in
 

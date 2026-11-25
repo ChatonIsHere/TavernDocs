@@ -17,16 +17,16 @@ A **private class** in `Root.Township`, `Alta.Blacksmithing`. Reach it through a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MeltingModelReference("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" meltingModel)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MeltingModelReference("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" meltingModel)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-affectingheatpoints" /><code>{"List<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> AffectingHeatPoints { get; }"}</code> |  |
-| <Link id="m-meltingmodel" /><code><Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" "}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-affectingheatpoints" /><code>{"List<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> AffectingHeatPoints { get; }"}</code> |
+| <Link id="m-meltingmodel" /><code><Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" "}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" { get; }"}</code> |
 
 ## Used in
 

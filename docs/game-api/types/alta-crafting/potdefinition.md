@@ -20,23 +20,28 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PotDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PotDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-minnumberofingredients" /><code>{"private int minNumberOfIngredients"}</code> |  |
-| <Link id="m-numberofgarnishes" /><code>{"private int numberOfGarnishes"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-minnumberofingredients" /><code>{"private int minNumberOfIngredients"}</code> |
+| <Link id="m-numberofgarnishes" /><code>{"private int numberOfGarnishes"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-minnumberofingredients-2" /><code>{"int MinNumberOfIngredients { get; }"}</code> |  |
-| <Link id="m-numberofgarnishes-2" /><code>{"int NumberOfGarnishes { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-minnumberofingredients-2" /><code>{"int MinNumberOfIngredients { get; }"}</code> |
+| <Link id="m-numberofgarnishes-2" /><code>{"int NumberOfGarnishes { get; }"}</code> |
 
 ## Used in
 

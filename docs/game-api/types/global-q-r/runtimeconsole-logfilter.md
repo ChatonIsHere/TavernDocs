@@ -18,14 +18,14 @@ An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-debug" /><code>{"Debug = 2"}</code> |  |
-| <Link id="m-error" /><code>{"Error = 16"}</code> |  |
-| <Link id="m-info" /><code>{"Info = 4"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-trace" /><code>{"Trace = 1"}</code> |  |
-| <Link id="m-warning" /><code>{"Warning = 8"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-debug" /><code>{"Debug = 2"}</code> |
+| <Link id="m-error" /><code>{"Error = 16"}</code> |
+| <Link id="m-info" /><code>{"Info = 4"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-trace" /><code>{"Trace = 1"}</code> |
+| <Link id="m-warning" /><code>{"Warning = 8"}</code> |
 
 ## Used in
 

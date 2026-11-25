@@ -16,13 +16,13 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GetShardsTokenRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GetShardsTokenRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-quantity" /><code>{"int Quantity { get; set; }"}</code> |  |
-| <Link id="m-shardspackageidentifier" /><code>{"int ShardsPackageIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-quantity" /><code>{"int Quantity { get; set; }"}</code> |
+| <Link id="m-shardspackageidentifier" /><code>{"int ShardsPackageIdentifier { get; set; }"}</code> |

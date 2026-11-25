@@ -19,23 +19,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionSurfaceDefinitionSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionSurfaceDefinitionSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-layermask" /><code>{"private LayerMask layerMask"}</code> |  |
-| <Link id="m-retries" /><code>{"private int retries"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-layermask" /><code>{"private LayerMask layerMask"}</code> |
+| <Link id="m-retries" /><code>{"private int retries"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-layermask-2" /><code>{"LayerMask LayerMask { get; }"}</code> |  |
-| <Link id="m-retries-2" /><code>{"int Retries { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-layermask-2" /><code>{"LayerMask LayerMask { get; }"}</code> |
+| <Link id="m-retries-2" /><code>{"int Retries { get; }"}</code> |
 
 ## Used in
 

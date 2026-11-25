@@ -17,12 +17,12 @@ A **class** in `Root.Township`, `Alta`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatDefinitionConverter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatDefinitionConverter()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getfromstring" /><code>{"protected override "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue-t">{"HashedGeneralValue"}</Link>{"<"}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{"> GetFromString(string input)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getfromstring" /><code>{"protected override "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue-t">{"HashedGeneralValue"}</Link>{"<"}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{"> GetFromString(string input)"}</code> |

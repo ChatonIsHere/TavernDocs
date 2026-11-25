@@ -18,26 +18,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"KeyboardSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"KeyboardSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-completionkeyboard" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" completionKeyboard"}</code> |  |
-| <Link id="m-defaultkeyboardindex" /><code>{"private int defaultKeyboardIndex"}</code> |  |
-| <Link id="m-keyboards" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{"[] keyboards"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-completionkeyboard" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" completionKeyboard"}</code> |
+| <Link id="m-defaultkeyboardindex" /><code>{"private int defaultKeyboardIndex"}</code> |
+| <Link id="m-keyboards" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{"[] keyboards"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-completionkeyboard-2" /><code><Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" CompletionKeyboard { get; }"}</code> |  |
-| <Link id="m-defaultkeyboardindex-2" /><code>{"int DefaultKeyboardIndex { get; }"}</code> |  |
-| <Link id="m-keyboards-2" /><code><Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{"[] Keyboards { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-completionkeyboard-2" /><code><Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" CompletionKeyboard { get; }"}</code> |
+| <Link id="m-defaultkeyboardindex-2" /><code>{"int DefaultKeyboardIndex { get; }"}</code> |
+| <Link id="m-keyboards-2" /><code><Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{"[] Keyboards { get; }"}</code> |
 
 ## Used in
 

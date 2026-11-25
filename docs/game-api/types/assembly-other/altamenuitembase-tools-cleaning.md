@@ -18,6 +18,6 @@ An **abstract class** in `Alta.MenuItem`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Cleaning()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Cleaning()"}</code> |

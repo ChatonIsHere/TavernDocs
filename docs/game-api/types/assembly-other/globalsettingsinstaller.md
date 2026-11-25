@@ -18,22 +18,27 @@ A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalSettingsInstaller()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GlobalSettingsInstaller()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-globalsettings" /><code>{"private List<"}<Link to="/game-api/types/assembly-other/globalsettings">{"GlobalSettings"}</Link>{"> globalSettings"}</code> |  |
-| <Link id="m-platformspecificinstallers" /><code>{"private "}<Link to="/game-api/types/assembly-other/globalsettingsinstaller-platformconstrainedinstallers">{"GlobalSettingsInstaller.PlatformConstrainedInstallers"}</Link>{"[] platformSpecificInstallers"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-globalsettings" /><code>{"private List<"}<Link to="/game-api/types/assembly-other/globalsettings">{"GlobalSettings"}</Link>{"> globalSettings"}</code> |
+| <Link id="m-platformspecificinstallers" /><code>{"private "}<Link to="/game-api/types/assembly-other/globalsettingsinstaller-platformconstrainedinstallers">{"GlobalSettingsInstaller.PlatformConstrainedInstallers"}</Link>{"[] platformSpecificInstallers"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-install" /><code>{"void Install(IContainerBuilder builder)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-install" /><code>{"void Install(IContainerBuilder builder)"}</code> |
 
 ## Used in
 

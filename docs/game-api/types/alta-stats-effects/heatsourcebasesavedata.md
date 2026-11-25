@@ -19,14 +19,14 @@ A **internal class** in `Root.Township`, `Alta.Heat`. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HeatSourceBaseSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HeatSourceBaseSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-islit" /><code>{"bool isLit"}</code> |  |
-| <Link id="m-progress" /><code>{"float progress"}</code> |  |
-| <Link id="m-time" /><code>{"TimeSpan time"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-islit" /><code>{"bool isLit"}</code> |
+| <Link id="m-progress" /><code>{"float progress"}</code> |
+| <Link id="m-time" /><code>{"TimeSpan time"}</code> |

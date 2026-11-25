@@ -17,15 +17,15 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LiveDataDisplayCollection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LiveDataDisplayCollection()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-datadisplays" /><code><Link to="/game-api/types/alta-utilities/livedatadisplaybase">{"LiveDataDisplayBase"}</Link>{"[] DataDisplays"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-datadisplays" /><code><Link to="/game-api/types/alta-utilities/livedatadisplaybase">{"LiveDataDisplayBase"}</Link>{"[] DataDisplays"}</code> |
 
 ## Used in
 

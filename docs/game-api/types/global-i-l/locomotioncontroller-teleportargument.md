@@ -17,34 +17,39 @@ A **protected class** in `Root.Township`, no namespace. Reach it through att-stu
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TeleportArgument()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"TeleportArgument(Vector3 position, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-player/teleportmode">{"TeleportMode"}</Link>{" mode, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TeleportArgument()"}</code> |
+| <Link id="m-ctor-2" /><code>{"TeleportArgument(Vector3 position, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-player/teleportmode">{"TeleportMode"}</Link>{" mode, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> |  |
-| <Link id="m-functionindex" /><code>{"private int functionIndex"}</code> |  |
-| <Link id="m-ispositionwithinchunk" /><code>{"private bool isPositionWithinChunk"}</code> |  |
-| <Link id="m-modeindex" /><code>{"private int modeIndex"}</code> |  |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> |
+| <Link id="m-functionindex" /><code>{"private int functionIndex"}</code> |
+| <Link id="m-ispositionwithinchunk" /><code>{"private bool isPositionWithinChunk"}</code> |
+| <Link id="m-modeindex" /><code>{"private int modeIndex"}</code> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-function" /><code><Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" Function { get; }"}</code> |  |
-| <Link id="m-mode" /><code><Link to="/game-api/types/alta-player/teleportmode">{"TeleportMode"}</Link>{" Mode { get; }"}</code> |  |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-function" /><code><Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" Function { get; }"}</code> |
+| <Link id="m-mode" /><code><Link to="/game-api/types/alta-player/teleportmode">{"TeleportMode"}</Link>{" Mode { get; }"}</code> |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
 
 ## Used in
 

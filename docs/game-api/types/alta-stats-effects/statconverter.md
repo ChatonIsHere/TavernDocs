@@ -17,19 +17,19 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StatConverter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StatConverter()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-last" /><code>{"static "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" Last { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-last" /><code>{"static "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" Last { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> |  |
-| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> |
+| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> |

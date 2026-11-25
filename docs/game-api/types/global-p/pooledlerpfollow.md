@@ -17,22 +17,35 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PooledLerpFollow()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PooledLerpFollow()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-issettingtargettoparent" /><code>{"private bool isSettingTargetToParent"}</code> |  |
-| <Link id="m-targetpooledobject" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" targetPooledObject"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-issettingtargettoparent" /><code>{"private bool isSettingTargetToParent"}</code> |
+| <Link id="m-targetpooledobject" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" targetPooledObject"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-stoplerp" /><code>{"void StopLerp()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-restart" /><code>{"private void Restart("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |  |
-| <Link id="m-waitforsetup" /><code>{"private IEnumerator WaitForSetup() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-stoplerp" /><code>{"void StopLerp()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-restart" /><code>{"private void Restart("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
+| <Link id="m-waitforsetup" /><code>{"private IEnumerator WaitForSetup() (iterator)"}</code> |
+
+</details>

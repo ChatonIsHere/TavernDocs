@@ -16,18 +16,18 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerJoinResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerJoinResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-banendtime" /><code>{"DateTime BanEndTime { get; set; }"}</code> |  |
-| <Link id="m-banreason" /><code>{"string BanReason { get; set; }"}</code> |  |
-| <Link id="m-bantype" /><code><Link to="/game-api/types/assembly-api-models/bantype">{"BanType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/bantype">{"BanType"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-isallowed" /><code>{"bool IsAllowed { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-banendtime" /><code>{"DateTime BanEndTime { get; set; }"}</code> |
+| <Link id="m-banreason" /><code>{"string BanReason { get; set; }"}</code> |
+| <Link id="m-bantype" /><code><Link to="/game-api/types/assembly-api-models/bantype">{"BanType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/bantype">{"BanType"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-isallowed" /><code>{"bool IsAllowed { get; set; }"}</code> |
 
 ## Used in
 

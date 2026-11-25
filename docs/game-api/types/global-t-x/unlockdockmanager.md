@@ -17,19 +17,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UnlockDockManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UnlockDockManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-smelterrecipeunlocks" /><code>{"private "}<Link to="/game-api/types/global-s/smelterrecipeunlock">{"SmelterRecipeUnlock"}</Link>{"[] smelterRecipeUnlocks"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-smelterrecipeunlocks" /><code>{"private "}<Link to="/game-api/types/global-s/smelterrecipeunlock">{"SmelterRecipeUnlock"}</Link>{"[] smelterRecipeUnlocks"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-refreshunlocks" /><code>{"private void RefreshUnlocks("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-refreshunlocks" /><code>{"private void RefreshUnlocks("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
+
+</details>

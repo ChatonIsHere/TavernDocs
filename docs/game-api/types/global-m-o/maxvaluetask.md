@@ -18,19 +18,19 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MaxValueTask()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MaxValueTask()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-receivenewvalue" /><code>{"override int ReceiveNewValue(int currentValue, int newValue)"}</code> |  |
-| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/game-api/types/global-m-o/maxvaluetaskargument">{"MaxValueTaskArgument"}</Link>{" argument)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-receivenewvalue" /><code>{"override int ReceiveNewValue(int currentValue, int newValue)"}</code> |
+| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/game-api/types/global-m-o/maxvaluetaskargument">{"MaxValueTaskArgument"}</Link>{" argument)"}</code> |

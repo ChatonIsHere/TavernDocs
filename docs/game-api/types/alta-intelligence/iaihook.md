@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.Intelligence`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> |

@@ -20,9 +20,9 @@ A creature AI choice: an action, the target it applies to and how strongly it's 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActionTarget("}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent> action, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target, float weight)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActionTarget("}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent> action, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target, float weight)"}</code> |
 
 ## Fields
 
@@ -34,10 +34,15 @@ A creature AI choice: an action, the target it applies to and how strongly it's 
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alta-intelligence-iactiontarget-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Alta.Intelligence.IActionTarget.Target { get; }"}</code> |  |
-| <Link id="m-alta-intelligence-iactiontarget-weight" /><code>{"private float Alta.Intelligence.IActionTarget.Weight { get; }"}</code> |  |
+<details>
+<summary>2 private and internal properties</summary>
+
+| Member |
+| --- |
+| <Link id="m-alta-intelligence-iactiontarget-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Alta.Intelligence.IActionTarget.Target { get; }"}</code> |
+| <Link id="m-alta-intelligence-iactiontarget-weight" /><code>{"private float Alta.Intelligence.IActionTarget.Weight { get; }"}</code> |
+
+</details>
 
 ## Used in
 

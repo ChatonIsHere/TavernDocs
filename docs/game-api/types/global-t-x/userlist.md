@@ -19,29 +19,42 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UserList(IEnumerable<"}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> range)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UserList(IEnumerable<"}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> range)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-players" /><code>{"private IEnumerable<"}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> players"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-players" /><code>{"private IEnumerable<"}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> players"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lastlist" /><code>{"static IEnumerable<"}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> LastList { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-lastlist" /><code>{"static IEnumerable<"}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> LastList { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-countorname" /><code>{"async Task<string> CountOrName()"}</code> |  |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> GetEnumerator()"}</code> |  |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-countorname" /><code>{"async Task<string> CountOrName()"}</code> |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> GetEnumerator()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |
+
+</details>
 
 ## Used in
 

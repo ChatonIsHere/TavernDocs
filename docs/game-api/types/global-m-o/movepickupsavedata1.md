@@ -18,27 +18,27 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MovePickupSaveData1()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MovePickupSaveData1()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fallspeedsaved" /><code>{"float fallSpeedSaved"}</code> |  |
-| <Link id="m-handsrequiredtoliftsaved" /><code>{"int handsRequiredToLiftSaved"}</code> |  |
-| <Link id="m-maxdistancepersecondperhandsaved" /><code>{"float maxDistancePerSecondPerHandSaved"}</code> |  |
-| <Link id="m-maxdistancepersecondtotalsaved" /><code>{"float maxDistancePerSecondTotalSaved"}</code> |  |
-| <Link id="m-maxdistancesaved" /><code>{"float maxDistanceSaved"}</code> |  |
-| <Link id="m-movementaxisxsaved" /><code>{"float movementAxisXSaved"}</code> |  |
-| <Link id="m-movementaxisysaved" /><code>{"float movementAxisYSaved"}</code> |  |
-| <Link id="m-movementaxiszsaved" /><code>{"float movementAxisZSaved"}</code> |  |
-| <Link id="m-readytodisablesaved" /><code>{"bool readyToDisableSaved"}</code> |  |
-| <Link id="m-totaldistancesaved" /><code>{"float totalDistanceSaved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fallspeedsaved" /><code>{"float fallSpeedSaved"}</code> |
+| <Link id="m-handsrequiredtoliftsaved" /><code>{"int handsRequiredToLiftSaved"}</code> |
+| <Link id="m-maxdistancepersecondperhandsaved" /><code>{"float maxDistancePerSecondPerHandSaved"}</code> |
+| <Link id="m-maxdistancepersecondtotalsaved" /><code>{"float maxDistancePerSecondTotalSaved"}</code> |
+| <Link id="m-maxdistancesaved" /><code>{"float maxDistanceSaved"}</code> |
+| <Link id="m-movementaxisxsaved" /><code>{"float movementAxisXSaved"}</code> |
+| <Link id="m-movementaxisysaved" /><code>{"float movementAxisYSaved"}</code> |
+| <Link id="m-movementaxiszsaved" /><code>{"float movementAxisZSaved"}</code> |
+| <Link id="m-readytodisablesaved" /><code>{"bool readyToDisableSaved"}</code> |
+| <Link id="m-totaldistancesaved" /><code>{"float totalDistanceSaved"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

@@ -20,20 +20,25 @@ A cacheable list of world-generation instructions for one chunk. Forest generati
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InstructionSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InstructionSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-adding" /><code>{"private ConcurrentQueue<"}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{"> adding"}</code> |  |
-| <Link id="m-instructions" /><code>{"private List<"}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{"> instructions"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-reader" /><code>{"private "}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" reader"}</code> |  |
-| <Link id="m-readeroffset" /><code>{"private uint readerOffset"}</code> |  |
-| <Link id="m-results" /><code>{"private List<"}<Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{"> results"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-adding" /><code>{"private ConcurrentQueue<"}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{"> adding"}</code> |
+| <Link id="m-instructions" /><code>{"private List<"}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{"> instructions"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-reader" /><code>{"private "}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" reader"}</code> |
+| <Link id="m-readeroffset" /><code>{"private uint readerOffset"}</code> |
+| <Link id="m-results" /><code>{"private List<"}<Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{"> results"}</code> |
+
+</details>
 
 ## Properties
 
@@ -52,7 +57,15 @@ A cacheable list of world-generation instructions for one chunk. Forest generati
 | <Link id="m-getinstructions" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{"> GetInstructions()"}</code> | Returns all instructions, decoding any still only in the loaded cache stream. |
 | <Link id="m-serializeasync" /><code>{"Task SerializeAsync(uint version, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes the instructions, or on read just remembers the stream so they're decoded when needed. |
 | <Link id="m-undo" /><code>{"void Undo()"}</code> | Undoes every result and clears the list. |
-| <Link id="m-executeinternal" /><code>{"private IEnumerator ExecuteInternal(object context, Task addingFinished, int instructionsPerFrame) (iterator)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-executeinternal" /><code>{"private IEnumerator ExecuteInternal(object context, Task addingFinished, int instructionsPerFrame) (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

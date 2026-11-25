@@ -18,31 +18,36 @@ A **class** in `Alta.XRManagement.Windows`, `Alta.XRLoaders`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WindowsXRLoaderSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WindowsXRLoaderSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-openxrloader" /><code>{"private OpenXRLoader openXrLoader"}</code> |  |
-| <Link id="m-valveopenvrloader" /><code>{"private OpenVRLoader valveOpenVrLoader"}</code> |  |
-| <Link id="m-xrmode" /><code>{"private "}<Link to="/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" xrMode"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-openxrloader" /><code>{"private OpenXRLoader openXrLoader"}</code> |
+| <Link id="m-valveopenvrloader" /><code>{"private OpenVRLoader valveOpenVrLoader"}</code> |
+| <Link id="m-xrmode" /><code>{"private "}<Link to="/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" xrMode"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-openxrloader-2" /><code>{"OpenXRLoader OpenXrLoader { get; }"}</code> |  |
-| <Link id="m-valveopenvrloader-2" /><code>{"OpenVRLoader ValveOpenVrLoader { get; }"}</code> |  |
-| <Link id="m-xrmode-2" /><code><Link to="/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" XrMode { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-openxrloader-2" /><code>{"OpenXRLoader OpenXrLoader { get; }"}</code> |
+| <Link id="m-valveopenvrloader-2" /><code>{"OpenVRLoader ValveOpenVrLoader { get; }"}</code> |
+| <Link id="m-xrmode-2" /><code><Link to="/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" XrMode { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setxrmode" /><code>{"void SetXrMode("}<Link to="/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" mode)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setxrmode" /><code>{"void SetXrMode("}<Link to="/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" mode)"}</code> |
 
 ## Used in
 

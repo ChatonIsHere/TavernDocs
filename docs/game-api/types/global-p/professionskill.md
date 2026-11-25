@@ -22,21 +22,29 @@ Base for a skill in a progression tree: a hashed asset that players unlock and p
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ProfessionSkill()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ProfessionSkill()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activeeffects" /><code>{"private static Dictionary<uint, "}<Link to="/game-api/types/global-p/professionskill-activeeffect">{"ProfessionSkill.ActiveEffect"}</Link>{"> activeEffects"}</code> |  |
-| <Link id="m-dynamiccontentprefabs" /><code>{"private List<"}<Link to="/game-api/types/global-p/positionednetworkprefab">{"PositionedNetworkPrefab"}</Link>{"> dynamicContentPrefabs"}</code> |  |
 | <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | NLog logger shared by profession skills. |
-| <Link id="m-practiceglyphsprites" /><code>{"private Sprite[] practiceGlyphSprites"}</code> |  |
-| <Link id="m-skillpracticetrigger" /><code>{"private uint skillPracticeTrigger"}</code> |  |
-| <Link id="m-staticcontentprefabs" /><code>{"private List<"}<Link to="/game-api/types/global-p/positionedstaticprefab">{"PositionedStaticPrefab"}</Link>{"> staticContentPrefabs"}</code> |  |
-| <Link id="m-targetachievement" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" targetAchievement"}</code> |  |
+
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activeeffects" /><code>{"private static Dictionary<uint, "}<Link to="/game-api/types/global-p/professionskill-activeeffect">{"ProfessionSkill.ActiveEffect"}</Link>{"> activeEffects"}</code> |
+| <Link id="m-dynamiccontentprefabs" /><code>{"private List<"}<Link to="/game-api/types/global-p/positionednetworkprefab">{"PositionedNetworkPrefab"}</Link>{"> dynamicContentPrefabs"}</code> |
+| <Link id="m-practiceglyphsprites" /><code>{"private Sprite[] practiceGlyphSprites"}</code> |
+| <Link id="m-skillpracticetrigger" /><code>{"private uint skillPracticeTrigger"}</code> |
+| <Link id="m-staticcontentprefabs" /><code>{"private List<"}<Link to="/game-api/types/global-p/positionedstaticprefab">{"PositionedStaticPrefab"}</Link>{"> staticContentPrefabs"}</code> |
+| <Link id="m-targetachievement" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" targetAchievement"}</code> |
+
+</details>
 
 ## Properties
 

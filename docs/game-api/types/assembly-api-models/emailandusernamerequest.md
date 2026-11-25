@@ -17,13 +17,13 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EmailAndUsernameRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EmailAndUsernameRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> |  |
-| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> |
+| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> |

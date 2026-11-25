@@ -21,17 +21,22 @@ A heat point on a metal item. Heat moves faster or slower based on its physical 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MetalHeatPoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MetalHeatPoint()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-changed" /><code>{"private Action<"}<Link to="/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{"> changed"}</code> |  |
-| <Link id="m-materialpart" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" materialPart"}</code> |  |
-| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-changed" /><code>{"private Action<"}<Link to="/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{"> changed"}</code> |
+| <Link id="m-materialpart" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" materialPart"}</code> |
+| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> |
+
+</details>
 
 ## Properties
 
@@ -48,12 +53,20 @@ A heat point on a metal item. Heat moves faster or slower based on its physical 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Finds the item's physical material and follows changes to it. Falls back to material 1 with no material part. |
-| <Link id="m-forwardchanged" /><code>{"private void ForwardChanged("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |  |
 | <Link id="m-nonambientchanged" /><code>{"protected override void NonAmbientChanged()"}</code> | Updates `Glow` when the temperature changes. |
 | <Link id="m-resettoambient" /><code>{"protected override void ResetToAmbient()"}</code> | Updates `Glow` after going back to ambient temperature. |
 | <Link id="m-showeffects" /><code>{"protected override void ShowEffects()"}</code> | Shows the material's fully heated effect above its particle temperature, otherwise removes it. |
-| <Link id="m-updateglow" /><code>{"private void UpdateGlow()"}</code> |  |
-| <Link id="m-updatematerial" /><code>{"private void UpdateMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial, "}<Link to="/game-api/types/global-p/physicalmaterialchannel">{"PhysicalMaterialChannel"}</Link>{" materialChannel)"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-forwardchanged" /><code>{"private void ForwardChanged("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |
+| <Link id="m-updateglow" /><code>{"private void UpdateGlow()"}</code> |
+| <Link id="m-updatematerial" /><code>{"private void UpdateMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial, "}<Link to="/game-api/types/global-p/physicalmaterialchannel">{"PhysicalMaterialChannel"}</Link>{" materialChannel)"}</code> |
+
+</details>
 
 ## Used in
 

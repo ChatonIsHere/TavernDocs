@@ -21,6 +21,6 @@ Non-generic version of `AiHook<T>` bound to `ActionComponent`. An AI hook listen
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AiHook()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AiHook()"}</code> |

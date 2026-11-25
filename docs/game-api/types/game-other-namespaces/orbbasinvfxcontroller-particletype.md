@@ -17,11 +17,11 @@ An **private enum** in `Root.Township`, `Features.Gameplay`. Reach it through at
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-orbobtained" /><code>{"OrbObtained = 0"}</code> |  |
-| <Link id="m-permanentunlock" /><code>{"PermanentUnlock = 1"}</code> |  |
-| <Link id="m-towercompletion" /><code>{"TowerCompletion = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-orbobtained" /><code>{"OrbObtained = 0"}</code> |
+| <Link id="m-permanentunlock" /><code>{"PermanentUnlock = 1"}</code> |
+| <Link id="m-towercompletion" /><code>{"TowerCompletion = 2"}</code> |
 
 ## Used in
 

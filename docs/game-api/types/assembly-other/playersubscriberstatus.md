@@ -19,12 +19,12 @@ An **enum** in `Alta.Authentication`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-altamod" /><code>{"AltaMod = 3"}</code> |  |
-| <Link id="m-developer" /><code>{"Developer = 2"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-subscriber" /><code>{"Subscriber = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-altamod" /><code>{"AltaMod = 3"}</code> |
+| <Link id="m-developer" /><code>{"Developer = 2"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-subscriber" /><code>{"Subscriber = 1"}</code> |
 
 ## Used in
 

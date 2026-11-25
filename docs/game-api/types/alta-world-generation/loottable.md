@@ -21,18 +21,23 @@ A loot table asset: item entries grouped by rarity, with extra entries for festi
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LootTable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LootTable()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entries" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/loottable-raritylist">{"LootTable.RarityList"}</Link>{"> entries"}</code> |  |
-| <Link id="m-triedorigins" /><code>{"private static List<"}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{"> triedOrigins"}</code> |  |
-| <Link id="m-triedrarities" /><code>{"private static List<"}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{"> triedRarities"}</code> |  |
-| <Link id="m-workinglist" /><code>{"private static List<"}<Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> workingList"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entries" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/loottable-raritylist">{"LootTable.RarityList"}</Link>{"> entries"}</code> |
+| <Link id="m-triedorigins" /><code>{"private static List<"}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{"> triedOrigins"}</code> |
+| <Link id="m-triedrarities" /><code>{"private static List<"}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{"> triedRarities"}</code> |
+| <Link id="m-workinglist" /><code>{"private static List<"}<Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> workingList"}</code> |
+
+</details>
 
 ## Properties
 

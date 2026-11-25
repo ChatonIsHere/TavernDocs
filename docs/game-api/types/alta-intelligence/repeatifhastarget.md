@@ -17,31 +17,44 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RepeatIfHasTarget()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RepeatIfHasTarget()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-agent" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent"}</code> |  |
-| <Link id="m-baserate" /><code>{"private float baseRate"}</code> |  |
-| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |  |
-| <Link id="m-nexttick" /><code>{"private float nextTick"}</code> |  |
-| <Link id="m-ticked" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" ticked"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-agent" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent"}</code> |
+| <Link id="m-baserate" /><code>{"private float baseRate"}</code> |
+| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |
+| <Link id="m-nexttick" /><code>{"private float nextTick"}</code> |
+| <Link id="m-ticked" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" ticked"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-baserate-2" /><code>{"float BaseRate { get; set; }"}</code> |  |
-| <Link id="m-ratemultiplier" /><code>{"float RateMultiplier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-baserate-2" /><code>{"float BaseRate { get; set; }"}</code> |
+| <Link id="m-ratemultiplier" /><code>{"float RateMultiplier { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-tick" /><code>{"protected virtual void Tick()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tick" /><code>{"protected virtual void Tick()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+
+</details>

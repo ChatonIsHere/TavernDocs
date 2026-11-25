@@ -17,35 +17,45 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CookingPotVolume()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CookingPotVolume()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-containedcolliders" /><code>{"private HashSet<Collider> containedColliders"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-containedcolliders" /><code>{"private HashSet<Collider> containedColliders"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-containedcookables" /><code>{"HashSet<GameObject> ContainedCookables { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-containedcookables" /><code>{"HashSet<GameObject> ContainedCookables { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ingredientadded" /><code>{"event Action<GameObject> IngredientAdded"}</code> |  |
-| <Link id="m-ingredientremoved" /><code>{"event Action<GameObject> IngredientRemoved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ingredientadded" /><code>{"event Action<GameObject> IngredientAdded"}</code> |
+| <Link id="m-ingredientremoved" /><code>{"event Action<GameObject> IngredientRemoved"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
-| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
+| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |
+
+</details>
 
 ## Used in
 

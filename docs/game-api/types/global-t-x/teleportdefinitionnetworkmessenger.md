@@ -18,27 +18,40 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TeleportDefinitionNetworkMessenger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TeleportDefinitionNetworkMessenger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-syncteleportfrom" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-t-x/teleportdefinitionnetworkmessenger-teleportdefinitionpositionpair">{"TeleportDefinitionNetworkMessenger.TeleportDefinitionPositionPair"}</Link>{"> syncTeleportFrom"}</code> |  |
-| <Link id="m-syncteleportto" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-t-x/teleportdefinitionnetworkmessenger-teleportdefinitionpositionpair">{"TeleportDefinitionNetworkMessenger.TeleportDefinitionPositionPair"}</Link>{"> syncTeleportTo"}</code> |  |
-| <Link id="m-teleportdefinitions" /><code>{"private "}<Link to="/game-api/types/global-t-x/teleportdefinition">{"TeleportDefinition"}</Link>{"[] teleportDefinitions"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-syncteleportfrom" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-t-x/teleportdefinitionnetworkmessenger-teleportdefinitionpositionpair">{"TeleportDefinitionNetworkMessenger.TeleportDefinitionPositionPair"}</Link>{"> syncTeleportFrom"}</code> |
+| <Link id="m-syncteleportto" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-t-x/teleportdefinitionnetworkmessenger-teleportdefinitionpositionpair">{"TeleportDefinitionNetworkMessenger.TeleportDefinitionPositionPair"}</Link>{"> syncTeleportTo"}</code> |
+| <Link id="m-teleportdefinitions" /><code>{"private "}<Link to="/game-api/types/global-t-x/teleportdefinition">{"TeleportDefinition"}</Link>{"[] teleportDefinitions"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-teleportfrom" /><code>{"void TeleportFrom("}<Link to="/game-api/types/global-t-x/teleportdefinition">{"TeleportDefinition"}</Link>{" teleportDefinition, Vector3 startPosition)"}</code> |  |
-| <Link id="m-teleportto" /><code>{"void TeleportTo("}<Link to="/game-api/types/global-t-x/teleportdefinition">{"TeleportDefinition"}</Link>{" teleportDefinition, Vector3 endPosition)"}</code> |  |
-| <Link id="m-syncteleportfrom-2" /><code>{"private void SyncTeleportFrom("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-t-x/teleportdefinitionnetworkmessenger-teleportdefinitionpositionpair">{"TeleportDefinitionNetworkMessenger.TeleportDefinitionPositionPair"}</Link>{" pair)"}</code> |  |
-| <Link id="m-syncteleportto-2" /><code>{"private void SyncTeleportTo("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-t-x/teleportdefinitionnetworkmessenger-teleportdefinitionpositionpair">{"TeleportDefinitionNetworkMessenger.TeleportDefinitionPositionPair"}</Link>{" pair)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+| <Link id="m-teleportfrom" /><code>{"void TeleportFrom("}<Link to="/game-api/types/global-t-x/teleportdefinition">{"TeleportDefinition"}</Link>{" teleportDefinition, Vector3 startPosition)"}</code> |
+| <Link id="m-teleportto" /><code>{"void TeleportTo("}<Link to="/game-api/types/global-t-x/teleportdefinition">{"TeleportDefinition"}</Link>{" teleportDefinition, Vector3 endPosition)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-syncteleportfrom-2" /><code>{"private void SyncTeleportFrom("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-t-x/teleportdefinitionnetworkmessenger-teleportdefinitionpositionpair">{"TeleportDefinitionNetworkMessenger.TeleportDefinitionPositionPair"}</Link>{" pair)"}</code> |
+| <Link id="m-syncteleportto-2" /><code>{"private void SyncTeleportTo("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-t-x/teleportdefinitionnetworkmessenger-teleportdefinitionpositionpair">{"TeleportDefinitionNetworkMessenger.TeleportDefinitionPositionPair"}</Link>{" pair)"}</code> |
+
+</details>
 
 ## Used in
 

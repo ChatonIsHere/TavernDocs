@@ -18,16 +18,16 @@ A **struct** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-active" /><code><Link to="/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent-vfxandsfxeventsplit">{"QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent.VfxAndSfxEventSplit"}</Link>{" active"}</code> |  |
-| <Link id="m-inactive" /><code><Link to="/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent-vfxandsfxeventsplit">{"QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent.VfxAndSfxEventSplit"}</Link>{" inactive"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-active" /><code><Link to="/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent-vfxandsfxeventsplit">{"QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent.VfxAndSfxEventSplit"}</Link>{" active"}</code> |
+| <Link id="m-inactive" /><code><Link to="/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent-vfxandsfxeventsplit">{"QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent.VfxAndSfxEventSplit"}</Link>{" inactive"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke("}<Link to="/game-api/types/alta-player/quickaccessmenububble">{"QuickAccessMenuBubble"}</Link>{" bubble)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invoke" /><code>{"void Invoke("}<Link to="/game-api/types/alta-player/quickaccessmenububble">{"QuickAccessMenuBubble"}</Link>{" bubble)"}</code> |
 
 ## Used in
 

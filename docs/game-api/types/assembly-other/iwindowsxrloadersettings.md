@@ -17,11 +17,11 @@ An **interface** in `Alta.XRManagement.Windows`, `Alta.XRLoaders`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-openxrloader" /><code>{"OpenXRLoader OpenXrLoader { get; }"}</code> |  |
-| <Link id="m-valveopenvrloader" /><code>{"OpenVRLoader ValveOpenVrLoader { get; }"}</code> |  |
-| <Link id="m-xrmode" /><code><Link to="/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" XrMode { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-openxrloader" /><code>{"OpenXRLoader OpenXrLoader { get; }"}</code> |
+| <Link id="m-valveopenvrloader" /><code>{"OpenVRLoader ValveOpenVrLoader { get; }"}</code> |
+| <Link id="m-xrmode" /><code><Link to="/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" XrMode { get; }"}</code> |
 
 ## Used in
 

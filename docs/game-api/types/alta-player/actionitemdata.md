@@ -20,22 +20,27 @@ Settings for an item summoned from the quick access menu: what to spawn, where, 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActionItemData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActionItemData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-action" /><code>{"private "}<Link to="/game-api/types/alta-player/summonactionitemquickaccess">{"SummonActionItemQuickAccess"}</Link>{" action"}</code> |  |
-| <Link id="m-actionitemprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" actionItemPrefab"}</code> |  |
-| <Link id="m-distancefromplayer" /><code>{"private float distanceFromPlayer"}</code> |  |
-| <Link id="m-maxdistancefromplayersquared" /><code>{"private float maxDistanceFromPlayerSquared"}</code> |  |
-| <Link id="m-onactionitemdisappeareffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onActionItemDisappearEffects"}</code> |  |
-| <Link id="m-onactionitemspawneffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onActionItemSpawnEffects"}</code> |  |
-| <Link id="m-outofrangehaptic" /><code>{"private float outOfRangeHaptic"}</code> |  |
-| <Link id="m-timetodespawn" /><code>{"private float timeToDespawn"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-action" /><code>{"private "}<Link to="/game-api/types/alta-player/summonactionitemquickaccess">{"SummonActionItemQuickAccess"}</Link>{" action"}</code> |
+| <Link id="m-actionitemprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" actionItemPrefab"}</code> |
+| <Link id="m-distancefromplayer" /><code>{"private float distanceFromPlayer"}</code> |
+| <Link id="m-maxdistancefromplayersquared" /><code>{"private float maxDistanceFromPlayerSquared"}</code> |
+| <Link id="m-onactionitemdisappeareffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onActionItemDisappearEffects"}</code> |
+| <Link id="m-onactionitemspawneffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onActionItemSpawnEffects"}</code> |
+| <Link id="m-outofrangehaptic" /><code>{"private float outOfRangeHaptic"}</code> |
+| <Link id="m-timetodespawn" /><code>{"private float timeToDespawn"}</code> |
+
+</details>
 
 ## Properties
 

@@ -18,6 +18,6 @@ A **class** in `Root.Township`, `Alta.Creatures`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DeathUnityEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DeathUnityEvent()"}</code> |

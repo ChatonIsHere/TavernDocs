@@ -20,18 +20,23 @@ Component front for an undo and redo history, raising bool events when undo or r
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected HistoryAccess()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected HistoryAccess()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cacheredopossible" /><code>{"private bool cacheRedoPossible"}</code> |  |
-| <Link id="m-cacheundopossible" /><code>{"private bool cacheUndoPossible"}</code> |  |
-| <Link id="m-redopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" redoPossibleChanged"}</code> |  |
-| <Link id="m-undopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" undoPossibleChanged"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cacheredopossible" /><code>{"private bool cacheRedoPossible"}</code> |
+| <Link id="m-cacheundopossible" /><code>{"private bool cacheUndoPossible"}</code> |
+| <Link id="m-redopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" redoPossibleChanged"}</code> |
+| <Link id="m-undopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" undoPossibleChanged"}</code> |
+
+</details>
 
 ## Properties
 
@@ -55,5 +60,13 @@ Component front for an undo and redo history, raising bool events when undo or r
 | <Link id="m-redo" /><code>{"void Redo()"}</code> | Redoes the last undone item. |
 | <Link id="m-undo" /><code>{"void Undo()"}</code> | Undoes the last item. |
 | <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Listens for new history items. |
-| <Link id="m-onitempushed" /><code>{"private void OnItemPushed()"}</code> |  |
-| <Link id="m-updatecache" /><code>{"private void UpdateCache()"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onitempushed" /><code>{"private void OnItemPushed()"}</code> |
+| <Link id="m-updatecache" /><code>{"private void UpdateCache()"}</code> |
+
+</details>

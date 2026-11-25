@@ -20,19 +20,27 @@ Base for components that fill a meta UI `Panel` with data. Refreshes when the pa
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PanelComponent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PanelComponent()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |  |
 | <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | NLog logger shared by panel components. |
 | <Link id="m-needstorefreshdata" /><code>{"protected bool needsToRefreshData"}</code> | True when data should be reloaded on the next panel state change. |
 | <Link id="m-panel" /><code>{"protected "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel"}</code> | The panel this component belongs to (set in the editor). |
-| <Link id="m-refreshtimer" /><code>{"private float refreshTimer"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |
+| <Link id="m-refreshtimer" /><code>{"private float refreshTimer"}</code> |
+
+</details>
 
 ## Properties
 
@@ -46,11 +54,19 @@ Base for components that fill a meta UI `Panel` with data. Refreshes when the pa
 | --- | --- |
 | <Link id="m-forcerefreshonnextload" /><code>{"void ForceRefreshOnNextLoad()"}</code> | Refreshes now if the panel is open, otherwise refreshes the next time it opens. |
 | <Link id="m-refreshdata" /><code>{"virtual void RefreshData()"}</code> | Override to reload the panel's data. Empty in the base. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-handlepanelstatechange" /><code>{"private void HandlePanelStateChange("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |  |
 | <Link id="m-handlestatechange" /><code>{"protected virtual void HandleStateChange("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> | Hook for subclasses, called each time the panel opens or closes. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-refreshagain" /><code>{"private void RefreshAgain()"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-handlepanelstatechange" /><code>{"private void HandlePanelStateChange("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-refreshagain" /><code>{"private void RefreshAgain()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -17,12 +17,12 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InversedIntAttribute(string label)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InversedIntAttribute(string label)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-label" /><code>{"string Label { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-label" /><code>{"string Label { get; }"}</code> |

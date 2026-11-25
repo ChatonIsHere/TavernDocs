@@ -16,17 +16,17 @@ A **internal struct** in `Root.Township`, `Alta.UserInterface.SocialTablet`. Rea
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actiontype" /><code><Link to="/game-api/types/alta-menus/socialtabletactiontype">{"SocialTabletActionType"}</Link>{" ActionType"}</code> |  |
-| <Link id="m-reason" /><code>{"string Reason"}</code> |  |
-| <Link id="m-targetplayerid" /><code>{"int TargetPlayerId"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-actiontype" /><code><Link to="/game-api/types/alta-menus/socialtabletactiontype">{"SocialTabletActionType"}</Link>{" ActionType"}</code> |
+| <Link id="m-reason" /><code>{"string Reason"}</code> |
+| <Link id="m-targetplayerid" /><code>{"int TargetPlayerId"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
 
 ## Used in
 

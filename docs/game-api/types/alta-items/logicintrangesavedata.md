@@ -19,20 +19,20 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntRangeSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicIntRangeSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactivewithinrange" /><code>{"bool isActiveWithinRange"}</code> |  |
-| <Link id="m-maximumvalueinclusive" /><code>{"int maximumValueInclusive"}</code> |  |
-| <Link id="m-minimumvalueinclusive" /><code>{"int minimumValueInclusive"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isactivewithinrange" /><code>{"bool isActiveWithinRange"}</code> |
+| <Link id="m-maximumvalueinclusive" /><code>{"int maximumValueInclusive"}</code> |
+| <Link id="m-minimumvalueinclusive" /><code>{"int minimumValueInclusive"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/alta-items/logicintsavedata">{"LogicIntSaveData"}</Link>{" Data { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data" /><code><Link to="/game-api/types/alta-items/logicintsavedata">{"LogicIntSaveData"}</Link>{" Data { get; set; }"}</code> |

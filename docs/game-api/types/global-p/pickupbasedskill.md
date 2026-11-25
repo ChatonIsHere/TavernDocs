@@ -21,9 +21,9 @@ Base for skills that work through a held tool, such as charged strikes. A per-pl
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PickupBasedSkill()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PickupBasedSkill()"}</code> |
 
 ## Fields
 
@@ -32,30 +32,46 @@ Base for skills that work through a held tool, such as charged strikes. A per-pl
 | <Link id="m-chunk" /><code>{"protected "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> | Chunk of the hit position in the last message. |
 | <Link id="m-hashitinformation" /><code>{"protected bool hasHitInformation"}</code> | Whether the current message carries a hit position and rotation. |
 | <Link id="m-hitposition" /><code>{"protected Vector3 hitPosition"}</code> | Hit position for the current message. |
-| <Link id="m-hitpositionandbladealignedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" hitPositionAndBladeAlignedEffect"}</code> |  |
-| <Link id="m-hitpositioneffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" hitPositionEffect"}</code> |  |
 | <Link id="m-hitrotation" /><code>{"protected Quaternion hitRotation"}</code> | Rotation facing back along the hit direction, used for blade-aligned effects. |
-| <Link id="m-inputstructure" /><code>{"private "}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" inputStructure"}</code> |  |
-| <Link id="m-localplayercanceledtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" localPlayerCanceledTransform"}</code> |  |
-| <Link id="m-localplayerchargedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" localPlayerChargedTransform"}</code> |  |
-| <Link id="m-localplayerexecutedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" localPlayerExecutedTransform"}</code> |  |
-| <Link id="m-localplayerhitpositionandbladealignedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" localPlayerHitPositionAndBladeAlignedEffect"}</code> |  |
-| <Link id="m-localplayerhitpositioneffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" localPlayerHitPositionEffect"}</code> |  |
 | <Link id="m-pickupidentifier" /><code>{"protected uint pickupIdentifier"}</code> | Entity id of the tool the current message is about. |
-| <Link id="m-requireshitinformation" /><code>{"private bool requiresHitInformation"}</code> |  |
-| <Link id="m-requireslocalplayeronlyeffect" /><code>{"private bool requiresLocalPlayerOnlyEffect"}</code> |  |
-| <Link id="m-skillcanceledtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillCanceledTransform"}</code> |  |
-| <Link id="m-skillchargedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillChargedTransform"}</code> |  |
-| <Link id="m-skillchargingstartedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillChargingStartedTransform"}</code> |  |
-| <Link id="m-skillexecutedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillExecutedTransform"}</code> |  |
 | <Link id="m-status" /><code>{"protected "}<Link to="/game-api/types/global-t-x/toolbasedskillstatus">{"ToolBasedSkillStatus"}</Link>{" status"}</code> | State being sent or received: charging started, charged, consumed or cancelled. |
+
+<details>
+<summary>14 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-hitpositionandbladealignedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" hitPositionAndBladeAlignedEffect"}</code> |
+| <Link id="m-hitpositioneffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" hitPositionEffect"}</code> |
+| <Link id="m-inputstructure" /><code>{"private "}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" inputStructure"}</code> |
+| <Link id="m-localplayercanceledtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" localPlayerCanceledTransform"}</code> |
+| <Link id="m-localplayerchargedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" localPlayerChargedTransform"}</code> |
+| <Link id="m-localplayerexecutedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" localPlayerExecutedTransform"}</code> |
+| <Link id="m-localplayerhitpositionandbladealignedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" localPlayerHitPositionAndBladeAlignedEffect"}</code> |
+| <Link id="m-localplayerhitpositioneffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" localPlayerHitPositionEffect"}</code> |
+| <Link id="m-requireshitinformation" /><code>{"private bool requiresHitInformation"}</code> |
+| <Link id="m-requireslocalplayeronlyeffect" /><code>{"private bool requiresLocalPlayerOnlyEffect"}</code> |
+| <Link id="m-skillcanceledtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillCanceledTransform"}</code> |
+| <Link id="m-skillchargedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillChargedTransform"}</code> |
+| <Link id="m-skillchargingstartedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillChargingStartedTransform"}</code> |
+| <Link id="m-skillexecutedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillExecutedTransform"}</code> |
+
+</details>
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-inputstructure-2" /><code><Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" InputStructure { get; }"}</code> | The input pattern (`SkillInputStructure`) that charges and fires this skill. |
-| <Link id="m-iinputbasedskill-skill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" IInputBasedSkill.Skill { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-iinputbasedskill-skill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" IInputBasedSkill.Skill { get; }"}</code> |
+
+</details>
 
 ## Methods
 

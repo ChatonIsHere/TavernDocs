@@ -21,15 +21,20 @@ A rule in the creature knowledge system: when the compound holds, the goal predi
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Definition("}<Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" compound, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal, float weighting)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Definition("}<Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" compound, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal, float weighting)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-weighting" /><code>{"private float weighting"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-weighting" /><code>{"private float weighting"}</code> |
+
+</details>
 
 ## Properties
 

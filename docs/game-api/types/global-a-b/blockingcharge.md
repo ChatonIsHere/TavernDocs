@@ -19,26 +19,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BlockingCharge()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BlockingCharge()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-minimumeffectiveness" /><code>{"private float minimumEffectiveness"}</code> |  |
-| <Link id="m-modifiedskill" /><code>{"private "}<Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" modifiedSkill"}</code> |  |
-| <Link id="m-validitems" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] validItems"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-minimumeffectiveness" /><code>{"private float minimumEffectiveness"}</code> |
+| <Link id="m-modifiedskill" /><code>{"private "}<Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" modifiedSkill"}</code> |
+| <Link id="m-validitems" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] validItems"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-istrikesuccessionmodifier-targetskill" /><code>{"private "}<Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" IStrikeSuccessionModifier.TargetSkill { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-istrikesuccessionmodifier-targetskill" /><code>{"private "}<Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" IStrikeSuccessionModifier.TargetSkill { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-applycharge" /><code>{"void ApplyCharge("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" hitPickup, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" bestHit)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-applycharge" /><code>{"void ApplyCharge("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" hitPickup, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" bestHit)"}</code> |

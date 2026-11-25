@@ -20,17 +20,22 @@ Asset for something an AI agent can measure about a target (distance, visibility
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Sense()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Sense()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-all" /><code>{"private static List<"}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{"> all"}</code> |  |
-| <Link id="m-oldequivalent" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{" oldEquivalent"}</code> |  |
-| <Link id="m-oldmapping" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{"> oldMapping"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-all" /><code>{"private static List<"}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{"> all"}</code> |
+| <Link id="m-oldequivalent" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{" oldEquivalent"}</code> |
+| <Link id="m-oldmapping" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{"> oldMapping"}</code> |
+
+</details>
 
 ## Properties
 
@@ -47,7 +52,15 @@ Asset for something an AI agent can measure about a target (distance, visibility
 | <Link id="m-getsense" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" GetSense("}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{" old)"}</code> | The sense that replaces an old `SenseOld` enum value, or null. |
 | <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | Adds the sense to `All` and maps its old enum value. |
 | <Link id="m-initializeall" /><code>{"static void InitializeAll()"}</code> | Loads every sense under `Resources/Senses` and initializes them. |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>
 
 ## Used in
 

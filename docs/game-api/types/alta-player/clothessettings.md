@@ -16,39 +16,44 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClothesSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClothesSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-headopaqueclothes" /><code>{"private SkinnedMeshRenderer[] headOpaqueClothes"}</code> |  |
-| <Link id="m-headtransparentclothes" /><code>{"private SkinnedMeshRenderer[] headTransparentClothes"}</code> |  |
-| <Link id="m-lod0" /><code>{"private Renderer[] lod0"}</code> |  |
-| <Link id="m-opaqueclothes" /><code>{"private SkinnedMeshRenderer[] opaqueClothes"}</code> |  |
-| <Link id="m-transparentclothes" /><code>{"private SkinnedMeshRenderer[] transparentClothes"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-headopaqueclothes" /><code>{"private SkinnedMeshRenderer[] headOpaqueClothes"}</code> |
+| <Link id="m-headtransparentclothes" /><code>{"private SkinnedMeshRenderer[] headTransparentClothes"}</code> |
+| <Link id="m-lod0" /><code>{"private Renderer[] lod0"}</code> |
+| <Link id="m-opaqueclothes" /><code>{"private SkinnedMeshRenderer[] opaqueClothes"}</code> |
+| <Link id="m-transparentclothes" /><code>{"private SkinnedMeshRenderer[] transparentClothes"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lod0-2" /><code>{"Renderer[] Lod0 { get; }"}</code> |  |
-| <Link id="m-renderers" /><code>{"IEnumerable<Renderer> Renderers { get; }"}</code> |  |
-| <Link id="m-specialeffects" /><code><Link to="/game-api/types/global-i-l/icharacterdummyspecialeffects">{"ICharacterDummySpecialEffects"}</Link>{" SpecialEffects { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-lod0-2" /><code>{"Renderer[] Lod0 { get; }"}</code> |
+| <Link id="m-renderers" /><code>{"IEnumerable<Renderer> Renderers { get; }"}</code> |
+| <Link id="m-specialeffects" /><code><Link to="/game-api/types/global-i-l/icharacterdummyspecialeffects">{"ICharacterDummySpecialEffects"}</Link>{" SpecialEffects { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bakemeshes" /><code>{"void BakeMeshes(Mesh[] meshes, Mesh[] headMeshes, Mesh[] transparentMeshes, Mesh[] transparentHeadMeshes)"}</code> |  |
-| <Link id="m-setmaterialinstance" /><code>{"void SetMaterialInstance(Material material)"}</code> |  |
-| <Link id="m-setopaque" /><code>{"void SetOpaque(Mesh[] meshes, Mesh[] headMeshes)"}</code> |  |
-| <Link id="m-settransparent" /><code>{"void SetTransparent(Mesh[] meshes, Mesh[] headMeshes)"}</code> |  |
-| <Link id="m-settransparentmaterialinstance" /><code>{"void SetTransparentMaterialInstance(Material material)"}</code> |  |
-| <Link id="m-togglebodyrenderers" /><code>{"void ToggleBodyRenderers(bool isEnabled)"}</code> |  |
-| <Link id="m-toggleheadrenderers" /><code>{"void ToggleHeadRenderers(bool isEnabled)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bakemeshes" /><code>{"void BakeMeshes(Mesh[] meshes, Mesh[] headMeshes, Mesh[] transparentMeshes, Mesh[] transparentHeadMeshes)"}</code> |
+| <Link id="m-setmaterialinstance" /><code>{"void SetMaterialInstance(Material material)"}</code> |
+| <Link id="m-setopaque" /><code>{"void SetOpaque(Mesh[] meshes, Mesh[] headMeshes)"}</code> |
+| <Link id="m-settransparent" /><code>{"void SetTransparent(Mesh[] meshes, Mesh[] headMeshes)"}</code> |
+| <Link id="m-settransparentmaterialinstance" /><code>{"void SetTransparentMaterialInstance(Material material)"}</code> |
+| <Link id="m-togglebodyrenderers" /><code>{"void ToggleBodyRenderers(bool isEnabled)"}</code> |
+| <Link id="m-toggleheadrenderers" /><code>{"void ToggleHeadRenderers(bool isEnabled)"}</code> |
 
 ## Used in
 

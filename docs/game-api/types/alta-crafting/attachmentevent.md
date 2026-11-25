@@ -17,9 +17,9 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AttachmentEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AttachmentEvent()"}</code> |
 
 ## Used in
 

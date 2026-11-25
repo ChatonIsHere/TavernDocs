@@ -18,17 +18,22 @@ One platform achievement stat (such as a Steam stat), as an int or a float. Sett
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Stat("}<Link to="/game-api/types/alta-player/istatmanager">{"IStatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-player/achievementstatdefinition">{"AchievementStatDefinition"}</Link>{" definition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Stat("}<Link to="/game-api/types/alta-player/istatmanager">{"IStatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-player/achievementstatdefinition">{"AchievementStatDefinition"}</Link>{" definition)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-floatvalue" /><code>{"private float floatValue"}</code> |  |
-| <Link id="m-intvalue" /><code>{"private int intValue"}</code> |  |
-| <Link id="m-manager" /><code>{"private "}<Link to="/game-api/types/alta-player/istatmanager">{"IStatManager"}</Link>{" manager"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-floatvalue" /><code>{"private float floatValue"}</code> |
+| <Link id="m-intvalue" /><code>{"private int intValue"}</code> |
+| <Link id="m-manager" /><code>{"private "}<Link to="/game-api/types/alta-player/istatmanager">{"IStatManager"}</Link>{" manager"}</code> |
+
+</details>
 
 ## Properties
 

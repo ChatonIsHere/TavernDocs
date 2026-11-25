@@ -17,25 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code><Link to="/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"("}<Link to="/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"<TIn, TOut> evaluate, IEqualityComparer<TIn> comparer = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code><Link to="/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"("}<Link to="/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"<TIn, TOut> evaluate, IEqualityComparer<TIn> comparer = null)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-evaluate" /><code>{"private "}<Link to="/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"<TIn, TOut> evaluate"}</code> |  |
-| <Link id="m-lookup" /><code>{"private Dictionary<TIn, TOut> lookup"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-evaluate" /><code>{"private "}<Link to="/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"<TIn, TOut> evaluate"}</code> |
+| <Link id="m-lookup" /><code>{"private Dictionary<TIn, TOut> lookup"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"bool Add(TIn input, out TOut result)"}</code> |  |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-get" /><code>{"bool Get(TIn input, out TOut result)"}</code> |  |
-| <Link id="m-remove" /><code>{"bool Remove(TIn input, out TOut result)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"bool Add(TIn input, out TOut result)"}</code> |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> |
+| <Link id="m-get" /><code>{"bool Get(TIn input, out TOut result)"}</code> |
+| <Link id="m-remove" /><code>{"bool Remove(TIn input, out TOut result)"}</code> |
 
 ## Used in
 

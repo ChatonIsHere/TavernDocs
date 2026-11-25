@@ -18,19 +18,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OneTimeUpgradeInteraction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OneTimeUpgradeInteraction()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-upgradedplayerids" /><code>{"private HashSet<int> upgradedPlayerIDs"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-upgradedplayerids" /><code>{"private HashSet<int> upgradedPlayerIDs"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onetimeupgrade" /><code>{"void OneTimeUpgrade("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-upgradeplayernovalidcheck" /><code>{"void UpgradePlayerNoValidCheck("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onetimeupgrade" /><code>{"void OneTimeUpgrade("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| <Link id="m-upgradeplayernovalidcheck" /><code>{"void UpgradePlayerNoValidCheck("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |

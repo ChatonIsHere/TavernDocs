@@ -17,32 +17,45 @@ A **class** in `Root.Township`, `Features`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerBoardFilter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerBoardFilter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-inputfield" /><code>{"private "}<Link to="/game-api/types/alta-menus/inputfieldwithkeyboard">{"InputFieldWithKeyboard"}</Link>{" inputField"}</code> |  |
-| <Link id="m-keyboard" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard">{"TouchScreenKeyboard"}</Link>{" keyboard"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-inputfield" /><code>{"private "}<Link to="/game-api/types/alta-menus/inputfieldwithkeyboard">{"InputFieldWithKeyboard"}</Link>{" inputField"}</code> |
+| <Link id="m-keyboard" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard">{"TouchScreenKeyboard"}</Link>{" keyboard"}</code> |
+
+</details>
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onfilterchanged" /><code>{"event Action OnFilterChanged"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onfilterchanged" /><code>{"event Action OnFilterChanged"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clearfilter" /><code>{"void ClearFilter()"}</code> |  |
-| <Link id="m-filter" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> Filter(IEnumerable<"}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> servers)"}</code> |  |
-| <Link id="m-doescurrentfiltermatch" /><code>{"private bool DoesCurrentFilterMatch(string serverName)"}</code> |  |
-| <Link id="m-refreshserverlist" /><code>{"private void RefreshServerList(string _)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clearfilter" /><code>{"void ClearFilter()"}</code> |
+| <Link id="m-filter" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> Filter(IEnumerable<"}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> servers)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-doescurrentfiltermatch" /><code>{"private bool DoesCurrentFilterMatch(string serverName)"}</code> |
+| <Link id="m-refreshserverlist" /><code>{"private void RefreshServerList(string _)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>
 
 ## Used in
 

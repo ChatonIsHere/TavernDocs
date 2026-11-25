@@ -19,9 +19,9 @@ Per-piece settings for nailing in generic crafting: where the nails go and how h
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NailSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NailSettings()"}</code> |
 
 ## Fields
 

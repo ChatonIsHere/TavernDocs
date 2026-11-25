@@ -16,20 +16,20 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-acceptinvite" /><code>{"AcceptInvite = 2"}</code> |  |
-| <Link id="m-ban" /><code>{"Ban = 3"}</code> |  |
-| <Link id="m-console" /><code>{"Console = 8"}</code> |  |
-| <Link id="m-controlserver" /><code>{"ControlServer = 9"}</code> |  |
-| <Link id="m-createserver" /><code>{"CreateServer = 5"}</code> |  |
-| <Link id="m-invite" /><code>{"Invite = 1"}</code> |  |
-| <Link id="m-kick" /><code>{"Kick = 4"}</code> |  |
-| <Link id="m-managereports" /><code>{"ManageReports = 11"}</code> |  |
-| <Link id="m-manageroles" /><code>{"ManageRoles = 10"}</code> |  |
-| <Link id="m-managesaves" /><code>{"ManageSaves = 12"}</code> |  |
-| <Link id="m-modifygroup" /><code>{"ModifyGroup = 6"}</code> |  |
-| <Link id="m-modifyserver" /><code>{"ModifyServer = 7"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-acceptinvite" /><code>{"AcceptInvite = 2"}</code> |
+| <Link id="m-ban" /><code>{"Ban = 3"}</code> |
+| <Link id="m-console" /><code>{"Console = 8"}</code> |
+| <Link id="m-controlserver" /><code>{"ControlServer = 9"}</code> |
+| <Link id="m-createserver" /><code>{"CreateServer = 5"}</code> |
+| <Link id="m-invite" /><code>{"Invite = 1"}</code> |
+| <Link id="m-kick" /><code>{"Kick = 4"}</code> |
+| <Link id="m-managereports" /><code>{"ManageReports = 11"}</code> |
+| <Link id="m-manageroles" /><code>{"ManageRoles = 10"}</code> |
+| <Link id="m-managesaves" /><code>{"ManageSaves = 12"}</code> |
+| <Link id="m-modifygroup" /><code>{"ModifyGroup = 6"}</code> |
+| <Link id="m-modifyserver" /><code>{"ModifyServer = 7"}</code> |
 
 ## Used in
 

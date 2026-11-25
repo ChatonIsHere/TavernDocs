@@ -17,20 +17,20 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ismarkedcomplete" /><code>{"bool IsMarkedComplete { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ismarkedcomplete" /><code>{"bool IsMarkedComplete { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-markedcompleted" /><code>{"event UnityAction MarkedCompleted"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-markedcompleted" /><code>{"event UnityAction MarkedCompleted"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-begin" /><code>{"void Begin()"}</code> |  |
-| <Link id="m-complete" /><code>{"void Complete()"}</code> |  |
-| <Link id="m-resetstate" /><code>{"void ResetState()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-begin" /><code>{"void Begin()"}</code> |
+| <Link id="m-complete" /><code>{"void Complete()"}</code> |
+| <Link id="m-resetstate" /><code>{"void ResetState()"}</code> |

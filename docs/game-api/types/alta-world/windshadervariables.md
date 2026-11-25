@@ -16,6 +16,11 @@ A **internal static class** in `Root.Township`, `Alta.Environmental.Vegetation`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-windparameters" /><code>{"internal static readonly int _WindParameters"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-windparameters" /><code>{"internal static readonly int _WindParameters"}</code> |
+
+</details>

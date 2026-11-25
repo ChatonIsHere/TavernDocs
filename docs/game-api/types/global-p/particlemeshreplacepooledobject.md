@@ -17,23 +17,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ParticleMeshReplacePooledObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ParticleMeshReplacePooledObject()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-releaseroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" releaseRoutine"}</code> |  |
-| <Link id="m-releasetime" /><code>{"private float releaseTime"}</code> |  |
-| <Link id="m-renderers" /><code>{"private ParticleSystemRenderer[] renderers"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-releaseroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" releaseRoutine"}</code> |
+| <Link id="m-releasetime" /><code>{"private float releaseTime"}</code> |
+| <Link id="m-renderers" /><code>{"private ParticleSystemRenderer[] renderers"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setup" /><code>{"override void Setup(Mesh mesh, Material material)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-delayedrelease" /><code>{"private IEnumerator DelayedRelease(float releaseTime) (iterator)"}</code> |  |
-| <Link id="m-delayrelease" /><code>{"private void DelayRelease("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"override void Setup(Mesh mesh, Material material)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-delayedrelease" /><code>{"private IEnumerator DelayedRelease(float releaseTime) (iterator)"}</code> |
+| <Link id="m-delayrelease" /><code>{"private void DelayRelease("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
+
+</details>

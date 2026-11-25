@@ -20,15 +20,20 @@ Base for player character rig components (arm IK, elbows and so on) that an owni
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected CharacterComponentController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected CharacterComponentController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> |
+
+</details>
 
 ## Properties
 

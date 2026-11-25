@@ -17,28 +17,41 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TouchScreenButtonOld()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TouchScreenButtonOld()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enabledbasedongameobject" /><code>{"private bool enabledBasedOnGameObject"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-enabledbasedongameobject" /><code>{"private bool enabledBasedOnGameObject"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isenabled" /><code>{"override bool IsEnabled { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isenabled" /><code>{"override bool IsEnabled { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-highlight" /><code>{"private IEnumerator Highlight() (iterator)"}</code> |  |
-| <Link id="m-internalpress" /><code>{"protected override void InternalPress()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-internalpress" /><code>{"protected override void InternalPress()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-highlight" /><code>{"private IEnumerator Highlight() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

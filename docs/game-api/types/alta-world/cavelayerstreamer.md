@@ -21,37 +21,45 @@ Streams one procedurally generated cave layer as its own location chunk below th
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CaveLayerStreamer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CaveLayerStreamer()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-maxnumberoflayers" /><code>{"const int MaxNumberOfLayers"}</code> | Upper bound used when syncing the layer number. |
-| <Link id="m-androidterrainmaterial" /><code>{"private Material androidTerrainMaterial"}</code> |  |
-| <Link id="m-androidterrainmateriallod1" /><code>{"private Material androidTerrainMaterialLOD1"}</code> |  |
-| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk"}</code> |  |
-| <Link id="m-chunkboundsextents" /><code>{"private Vector3 chunkBoundsExtents"}</code> |  |
-| <Link id="m-ecosystem" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ecosystem">{"Ecosystem"}</Link>{" ecosystem"}</code> |  |
-| <Link id="m-entrancedirection" /><code>{"private Vector2 entranceDirection"}</code> |  |
-| <Link id="m-generator" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" generator"}</code> |  |
-| <Link id="m-isconnect" /><code>{"private bool isConnect"}</code> |  |
-| <Link id="m-isgenerated" /><code>{"private bool isGenerated"}</code> |  |
-| <Link id="m-layer" /><code>{"private int layer"}</code> |  |
-| <Link id="m-layercontentoffset" /><code>{"private float layerContentOffset"}</code> |  |
-| <Link id="m-layerentity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" layerEntity"}</code> |  |
-| <Link id="m-loaded" /><code>{"private bool loaded"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-navgraph" /><code>{"private RecastGraph navGraph"}</code> |  |
-| <Link id="m-needsmatrix" /><code>{"private bool needsMatrix"}</code> |  |
-| <Link id="m-neighborstreamer" /><code>{"private "}<Link to="/game-api/types/alta-world/icavelayer">{"ICaveLayer"}</Link>{" neighborStreamer"}</code> |  |
-| <Link id="m-portal" /><code>{"private "}<Link to="/game-api/types/global-c-d/cullingportal">{"CullingPortal"}</Link>{" portal"}</code> |  |
-| <Link id="m-synclayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncLayer"}</code> |  |
-| <Link id="m-synclayersetup" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<Vector3> syncLayerSetup"}</code> |  |
-| <Link id="m-terrainrenderer" /><code>{"private Renderer terrainRenderer"}</code> |  |
-| <Link id="m-worldtolocal" /><code>{"private Matrix4x4 worldToLocal"}</code> |  |
+
+<details>
+<summary>22 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androidterrainmaterial" /><code>{"private Material androidTerrainMaterial"}</code> |
+| <Link id="m-androidterrainmateriallod1" /><code>{"private Material androidTerrainMaterialLOD1"}</code> |
+| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk"}</code> |
+| <Link id="m-chunkboundsextents" /><code>{"private Vector3 chunkBoundsExtents"}</code> |
+| <Link id="m-ecosystem" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ecosystem">{"Ecosystem"}</Link>{" ecosystem"}</code> |
+| <Link id="m-entrancedirection" /><code>{"private Vector2 entranceDirection"}</code> |
+| <Link id="m-generator" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" generator"}</code> |
+| <Link id="m-isconnect" /><code>{"private bool isConnect"}</code> |
+| <Link id="m-isgenerated" /><code>{"private bool isGenerated"}</code> |
+| <Link id="m-layer" /><code>{"private int layer"}</code> |
+| <Link id="m-layercontentoffset" /><code>{"private float layerContentOffset"}</code> |
+| <Link id="m-layerentity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" layerEntity"}</code> |
+| <Link id="m-loaded" /><code>{"private bool loaded"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-navgraph" /><code>{"private RecastGraph navGraph"}</code> |
+| <Link id="m-needsmatrix" /><code>{"private bool needsMatrix"}</code> |
+| <Link id="m-neighborstreamer" /><code>{"private "}<Link to="/game-api/types/alta-world/icavelayer">{"ICaveLayer"}</Link>{" neighborStreamer"}</code> |
+| <Link id="m-portal" /><code>{"private "}<Link to="/game-api/types/global-c-d/cullingportal">{"CullingPortal"}</Link>{" portal"}</code> |
+| <Link id="m-synclayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncLayer"}</code> |
+| <Link id="m-synclayersetup" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<Vector3> syncLayerSetup"}</code> |
+| <Link id="m-terrainrenderer" /><code>{"private Renderer terrainRenderer"}</code> |
+| <Link id="m-worldtolocal" /><code>{"private Matrix4x4 worldToLocal"}</code> |
+
+</details>
 
 ## Properties
 
@@ -98,20 +106,28 @@ Streams one procedurally generated cave layer as its own location chunk below th
 | <Link id="m-setentrance" /><code>{"void SetEntrance(float depth, Vector2 entrance, Vector2 direction)"}</code> | Moves the layer to the given depth and entrance and recentres its bounds. |
 | <Link id="m-setgeneratorchunk" /><code>{"void SetGeneratorChunk()"}</code> | Puts the spawned layer content into this layer's chunk. |
 | <Link id="m-toggleterrain" /><code>{"void ToggleTerrain(bool isToRenderTerrain)"}</code> | Shows or hides the terrain renderer; always shown while the local player is in the chunk. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-finishpositionportal" /><code>{"private void FinishPositionPortal()"}</code> |  |
-| <Link id="m-handlelocalplayer" /><code>{"private void HandleLocalPlayer()"}</code> |  |
-| <Link id="m-loaddynamic" /><code>{"private async Task Alta.Chunks.IProceduralGenerationStreamer.LoadDynamic(bool hasGenerated)"}</code> |  |
-| <Link id="m-loadstatic" /><code>{"private Task Alta.Chunks.IProceduralGenerationStreamer.LoadStatic(CancellationToken cancellationToken)"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
-| <Link id="m-positionportal" /><code>{"private void PositionPortal()"}</code> |  |
-| <Link id="m-recenterbounds" /><code>{"private void RecenterBounds(Vector3 boundsCenter)"}</code> |  |
-| <Link id="m-synclayer-2" /><code>{"private void SyncLayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-synclayersetup-2" /><code>{"private void SyncLayerSetup("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, Vector3 position)"}</code> |  |
-| <Link id="m-togglelocalplayer" /><code>{"private void ToggleLocalPlayer(bool hasLocalPlayer)"}</code> |  |
-| <Link id="m-unloaddynamic" /><code>{"private void Alta.Chunks.IProceduralGenerationStreamer.UnloadDynamic()"}</code> |  |
-| <Link id="m-unloaded" /><code>{"private void Unloaded("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-unloadstatic" /><code>{"private void Alta.Chunks.IProceduralGenerationStreamer.UnloadStatic()"}</code> |  |
+
+<details>
+<summary>14 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-finishpositionportal" /><code>{"private void FinishPositionPortal()"}</code> |
+| <Link id="m-handlelocalplayer" /><code>{"private void HandleLocalPlayer()"}</code> |
+| <Link id="m-loaddynamic" /><code>{"private async Task Alta.Chunks.IProceduralGenerationStreamer.LoadDynamic(bool hasGenerated)"}</code> |
+| <Link id="m-loadstatic" /><code>{"private Task Alta.Chunks.IProceduralGenerationStreamer.LoadStatic(CancellationToken cancellationToken)"}</code> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+| <Link id="m-positionportal" /><code>{"private void PositionPortal()"}</code> |
+| <Link id="m-recenterbounds" /><code>{"private void RecenterBounds(Vector3 boundsCenter)"}</code> |
+| <Link id="m-synclayer-2" /><code>{"private void SyncLayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-synclayersetup-2" /><code>{"private void SyncLayerSetup("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, Vector3 position)"}</code> |
+| <Link id="m-togglelocalplayer" /><code>{"private void ToggleLocalPlayer(bool hasLocalPlayer)"}</code> |
+| <Link id="m-unloaddynamic" /><code>{"private void Alta.Chunks.IProceduralGenerationStreamer.UnloadDynamic()"}</code> |
+| <Link id="m-unloaded" /><code>{"private void Unloaded("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| <Link id="m-unloadstatic" /><code>{"private void Alta.Chunks.IProceduralGenerationStreamer.UnloadStatic()"}</code> |
+
+</details>
 
 ## Used in
 

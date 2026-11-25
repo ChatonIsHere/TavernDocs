@@ -17,15 +17,15 @@ An **interface** in `Root.Township`, `Alta.Networking`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunker" /><code><Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chunker" /><code><Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onparentchanged" /><code>{"void OnParentChanged("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" oldParent, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onparentchanged" /><code>{"void OnParentChanged("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" oldParent, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent)"}</code> |
 
 ## Used in
 

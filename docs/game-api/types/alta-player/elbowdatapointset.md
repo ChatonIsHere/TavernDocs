@@ -17,28 +17,33 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ElbowDataPointSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ElbowDataPointSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-elbowdatapoints" /><code>{"private List<"}<Link to="/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{"> elbowDataPoints"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-elbowdatapoints" /><code>{"private List<"}<Link to="/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{"> elbowDataPoints"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-datapoints" /><code>{"List<"}<Link to="/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{"> DataPoints { get; }"}</code> |  |
-| <Link id="m-numberofdatapoints" /><code>{"int NumberOfDataPoints { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-datapoints" /><code>{"List<"}<Link to="/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{"> DataPoints { get; }"}</code> |
+| <Link id="m-numberofdatapoints" /><code>{"int NumberOfDataPoints { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deletedatapoint" /><code>{"void DeleteDataPoint("}<Link to="/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{" dataPoint)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deletedatapoint" /><code>{"void DeleteDataPoint("}<Link to="/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{" dataPoint)"}</code> |
 
 ## Used in
 

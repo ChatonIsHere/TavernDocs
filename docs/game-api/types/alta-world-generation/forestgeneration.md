@@ -20,34 +20,39 @@ A forest's generated layout: outline, entrances and a path graph of nodes, edges
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ForestGeneration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ForestGeneration()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-area" /><code>{"private float area"}</code> |  |
-| <Link id="m-chunkedges" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{", HashSet<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{">> chunkEdges"}</code> |  |
-| <Link id="m-chunknodes" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{", HashSet<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{">> chunkNodes"}</code> |  |
-| <Link id="m-delaunaymesh" /><code>{"private Mesh delaunayMesh"}</code> |  |
-| <Link id="m-edges" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> edges"}</code> |  |
-| <Link id="m-entrancenodes" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{"> entranceNodes"}</code> |  |
-| <Link id="m-entrancepositions" /><code>{"private Vector3[] entrancePositions"}</code> |  |
-| <Link id="m-groupsizex" /><code>{"private uint groupSizeX"}</code> |  |
-| <Link id="m-groupsizez" /><code>{"private uint groupSizeZ"}</code> |  |
-| <Link id="m-indices" /><code>{"private int[] indices"}</code> |  |
-| <Link id="m-lastresult" /><code>{"private Otri lastResult"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-nodes" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{"> nodes"}</code> |  |
-| <Link id="m-noise" /><code>{"private "}<Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" noise"}</code> |  |
-| <Link id="m-outlinepositions" /><code>{"private Vector3[] outlinePositions"}</code> |  |
-| <Link id="m-perimeter" /><code>{"private Vector2[] perimeter"}</code> |  |
-| <Link id="m-seed" /><code>{"private uint seed"}</code> |  |
-| <Link id="m-sortededges" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{">[,] sortedEdges"}</code> |  |
-| <Link id="m-sortednodes" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{">[,] sortedNodes"}</code> |  |
-| <Link id="m-spaces" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{"> spaces"}</code> |  |
+<details>
+<summary>20 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-area" /><code>{"private float area"}</code> |
+| <Link id="m-chunkedges" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{", HashSet<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{">> chunkEdges"}</code> |
+| <Link id="m-chunknodes" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{", HashSet<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{">> chunkNodes"}</code> |
+| <Link id="m-delaunaymesh" /><code>{"private Mesh delaunayMesh"}</code> |
+| <Link id="m-edges" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> edges"}</code> |
+| <Link id="m-entrancenodes" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{"> entranceNodes"}</code> |
+| <Link id="m-entrancepositions" /><code>{"private Vector3[] entrancePositions"}</code> |
+| <Link id="m-groupsizex" /><code>{"private uint groupSizeX"}</code> |
+| <Link id="m-groupsizez" /><code>{"private uint groupSizeZ"}</code> |
+| <Link id="m-indices" /><code>{"private int[] indices"}</code> |
+| <Link id="m-lastresult" /><code>{"private Otri lastResult"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-nodes" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{"> nodes"}</code> |
+| <Link id="m-noise" /><code>{"private "}<Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" noise"}</code> |
+| <Link id="m-outlinepositions" /><code>{"private Vector3[] outlinePositions"}</code> |
+| <Link id="m-perimeter" /><code>{"private Vector2[] perimeter"}</code> |
+| <Link id="m-seed" /><code>{"private uint seed"}</code> |
+| <Link id="m-sortededges" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{">[,] sortedEdges"}</code> |
+| <Link id="m-sortednodes" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{">[,] sortedNodes"}</code> |
+| <Link id="m-spaces" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{"> spaces"}</code> |
+
+</details>
 
 ## Properties
 
@@ -100,10 +105,18 @@ A forest's generated layout: outline, entrances and a path graph of nodes, edges
 | <Link id="m-setseed" /><code>{"void SetSeed(uint seed)"}</code> | Sets the generation seed. |
 | <Link id="m-sortnodes" /><code>{"async Task SortNodes()"}</code> | Async: files nodes and edges under their location chunks and a 51 by 51 grid for fast lookups. Also adds those chunks to `LocationChunk.ContentLocationChunks`. |
 | <Link id="m-updatedelaunay" /><code>{"void UpdateDelaunay(List<Vector3> overridePoints = null)"}</code> | Rebuilds the triangulation from the node positions, or from given points. |
-| <Link id="m-evaluatebounds" /><code>{"private void EvaluateBounds()"}</code> |  |
-| <Link id="m-getgroup" /><code>{"private Vector2 GetGroup(int groupX, int groupZ, out float distanceToCornerSquared)"}</code> |  |
-| <Link id="m-serializenodes" /><code>{"private void SerializeNodes("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-serializeoutline" /><code>{"private void SerializeOutline("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-evaluatebounds" /><code>{"private void EvaluateBounds()"}</code> |
+| <Link id="m-getgroup" /><code>{"private Vector2 GetGroup(int groupX, int groupZ, out float distanceToCornerSquared)"}</code> |
+| <Link id="m-serializenodes" /><code>{"private void SerializeNodes("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-serializeoutline" /><code>{"private void SerializeOutline("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

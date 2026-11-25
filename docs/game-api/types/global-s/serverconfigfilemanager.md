@@ -16,18 +16,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerConfigFileManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerConfigFileManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-configfilename" /><code>{"private static string configFileName"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-configfilename" /><code>{"private static string configFileName"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getconfigfile" /><code>{"static async Task<"}<Link to="/game-api/types/global-s/serverconfiguration">{"ServerConfiguration"}</Link>{"> GetConfigFile("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getconfigfile" /><code>{"static async Task<"}<Link to="/game-api/types/global-s/serverconfiguration">{"ServerConfiguration"}</Link>{"> GetConfigFile("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> |

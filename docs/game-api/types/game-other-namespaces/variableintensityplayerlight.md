@@ -17,28 +17,33 @@ A **class** in `Root.Township`, `Features`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VariableIntensityPlayerLight()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VariableIntensityPlayerLight()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxintensity" /><code>{"private float maxIntensity"}</code> |  |
-| <Link id="m-minintensity" /><code>{"private float minIntensity"}</code> |  |
-| <Link id="m-platformlight" /><code>{"private "}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" platformLight"}</code> |  |
-| <Link id="m-playerlightcolorwithorb" /><code>{"private Color playerLightColorWithOrb"}</code> |  |
-| <Link id="m-playerlightintensityperorb" /><code>{"private float playerLightIntensityPerOrb"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maxintensity" /><code>{"private float maxIntensity"}</code> |
+| <Link id="m-minintensity" /><code>{"private float minIntensity"}</code> |
+| <Link id="m-platformlight" /><code>{"private "}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" platformLight"}</code> |
+| <Link id="m-playerlightcolorwithorb" /><code>{"private Color playerLightColorWithOrb"}</code> |
+| <Link id="m-playerlightintensityperorb" /><code>{"private float playerLightIntensityPerOrb"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setlightcolor" /><code>{"void SetLightColor(Color color)"}</code> |  |
-| <Link id="m-setlightintensityfororbcount" /><code>{"void SetLightIntensityForOrbCount(int orbCount)"}</code> |  |
-| <Link id="m-setplayerlightenabled" /><code>{"void SetPlayerLightEnabled(bool shouldEnable)"}</code> |  |
-| <Link id="m-setplayerlightintensity" /><code>{"void SetPlayerLightIntensity(float intensity)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setlightcolor" /><code>{"void SetLightColor(Color color)"}</code> |
+| <Link id="m-setlightintensityfororbcount" /><code>{"void SetLightIntensityForOrbCount(int orbCount)"}</code> |
+| <Link id="m-setplayerlightenabled" /><code>{"void SetPlayerLightEnabled(bool shouldEnable)"}</code> |
+| <Link id="m-setplayerlightintensity" /><code>{"void SetPlayerLightIntensity(float intensity)"}</code> |
 
 ## Used in
 

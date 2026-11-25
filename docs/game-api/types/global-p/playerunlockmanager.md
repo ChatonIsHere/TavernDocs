@@ -21,21 +21,26 @@ A player's unlock progress for station chains such as the climbing tower: perman
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerUnlockManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerUnlockManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-analyticsservice" /><code>{"private "}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService"}</code> |  |
-| <Link id="m-checkpoint" /><code>{"private Vector3 checkpoint"}</code> |  |
-| <Link id="m-currentunlock" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" currentUnlock"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-orbs" /><code>{"private HashSet<uint> orbs"}</code> |  |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |  |
-| <Link id="m-unlocks" /><code>{"private HashSet<"}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> unlocks"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-analyticsservice" /><code>{"private "}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService"}</code> |
+| <Link id="m-checkpoint" /><code>{"private Vector3 checkpoint"}</code> |
+| <Link id="m-currentunlock" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" currentUnlock"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-orbs" /><code>{"private HashSet<uint> orbs"}</code> |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
+| <Link id="m-unlocks" /><code>{"private HashSet<"}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> unlocks"}</code> |
+
+</details>
 
 ## Properties
 
@@ -66,15 +71,23 @@ A player's unlock progress for station chains such as the climbing tower: perman
 | <Link id="m-setcheckpoint" /><code>{"void SetCheckpoint(Vector3 newCheckpoint)"}</code> | Server: sets the checkpoint position. |
 | <Link id="m-setcurrentunlock" /><code>{"void SetCurrentUnlock("}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock)"}</code> | Server: starts a run for an unlock if its prerequisites are met; null ends it and clears the checkpoint. |
 | <Link id="m-setpermanentunlock" /><code>{"void SetPermanentUnlock("}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock, bool isUnlocked = true)"}</code> | Server: grants (if prerequisites are met) or removes an unlock, applying or removing its effects, and syncs. |
-| <Link id="m-notifyplayerunlocksmodified" /><code>{"private void NotifyPlayerUnlocksModified()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
 | <Link id="m-playerloadcomplete" /><code>{"protected override void PlayerLoadComplete()"}</code> | After the player loads, applies every permanent unlock to them and syncs. |
-| <Link id="m-setupplayerunlockanalytics" /><code>{"private void SetupPlayerUnlockAnalytics("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" localPlayer)"}</code> |  |
-| <Link id="m-syncall" /><code>{"private void SyncAll("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-synccurrentunlock" /><code>{"private void SyncCurrentUnlock("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncorbs" /><code>{"private void SyncOrbs("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncpermanentunlocks" /><code>{"private void SyncPermanentUnlocks("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncplayerunlockstoclient" /><code>{"private void SyncPlayerUnlocksToClient()"}</code> |  |
+
+<details>
+<summary>8 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-notifyplayerunlocksmodified" /><code>{"private void NotifyPlayerUnlocksModified()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-setupplayerunlockanalytics" /><code>{"private void SetupPlayerUnlockAnalytics("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" localPlayer)"}</code> |
+| <Link id="m-syncall" /><code>{"private void SyncAll("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-synccurrentunlock" /><code>{"private void SyncCurrentUnlock("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-syncorbs" /><code>{"private void SyncOrbs("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-syncpermanentunlocks" /><code>{"private void SyncPermanentUnlocks("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-syncplayerunlockstoclient" /><code>{"private void SyncPlayerUnlocksToClient()"}</code> |
+
+</details>
 
 ## Used in
 

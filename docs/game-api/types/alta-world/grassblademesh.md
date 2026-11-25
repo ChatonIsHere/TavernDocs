@@ -21,18 +21,23 @@ A ScriptableObject holding one grass blade's mesh data and base colour, used by 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrassBladeMesh()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrassBladeMesh()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-basecolor" /><code>{"private Color baseColor"}</code> |  |
-| <Link id="m-isavailable" /><code>{"private bool isAvailable"}</code> |  |
-| <Link id="m-triangles" /><code>{"private int[] triangles"}</code> |  |
-| <Link id="m-vertices" /><code>{"private Vector3[] vertices"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-basecolor" /><code>{"private Color baseColor"}</code> |
+| <Link id="m-isavailable" /><code>{"private bool isAvailable"}</code> |
+| <Link id="m-triangles" /><code>{"private int[] triangles"}</code> |
+| <Link id="m-vertices" /><code>{"private Vector3[] vertices"}</code> |
+
+</details>
 
 ## Properties
 

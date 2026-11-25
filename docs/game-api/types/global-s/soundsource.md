@@ -20,23 +20,31 @@ Plays a sound effect on (or at) its object, optionally when enabled, and stops i
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SoundSource()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SoundSource()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-audiocontrol" /><code>{"protected "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" audioControl"}</code> | Handle to the playing sound. |
-| <Link id="m-isstatic" /><code>{"private bool isStatic"}</code> |  |
-| <Link id="m-isstopped" /><code>{"private bool isStopped"}</code> |  |
-| <Link id="m-play" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" play"}</code> |  |
-| <Link id="m-playonenable" /><code>{"private bool playOnEnable"}</code> |  |
-| <Link id="m-separatestopeffect" /><code>{"private bool separateStopEffect"}</code> |  |
-| <Link id="m-soundeffect" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" soundEffect"}</code> |  |
-| <Link id="m-stop" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" stop"}</code> |  |
-| <Link id="m-stopeffect" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" stopEffect"}</code> |  |
+
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isstatic" /><code>{"private bool isStatic"}</code> |
+| <Link id="m-isstopped" /><code>{"private bool isStopped"}</code> |
+| <Link id="m-play" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" play"}</code> |
+| <Link id="m-playonenable" /><code>{"private bool playOnEnable"}</code> |
+| <Link id="m-separatestopeffect" /><code>{"private bool separateStopEffect"}</code> |
+| <Link id="m-soundeffect" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" soundEffect"}</code> |
+| <Link id="m-stop" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" stop"}</code> |
+| <Link id="m-stopeffect" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" stopEffect"}</code> |
+
+</details>
 
 ## Properties
 
@@ -60,7 +68,15 @@ Plays a sound effect on (or at) its object, optionally when enabled, and stops i
 | <Link id="m-stop-2" /><code>{"void Stop()"}</code> | Stops the sound, or plays the separate stop effect if one is set. |
 | <Link id="m-ondisable" /><code>{"protected virtual void OnDisable()"}</code> | Stops the sound. |
 | <Link id="m-onenable" /><code>{"protected virtual void OnEnable()"}</code> | If `PlayOnEnable`, plays once the audio manager and Wwise are ready. |
-| <Link id="m-startafterinitialized" /><code>{"private IEnumerator StartAfterInitialized() (iterator)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-startafterinitialized" /><code>{"private IEnumerator StartAfterInitialized() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

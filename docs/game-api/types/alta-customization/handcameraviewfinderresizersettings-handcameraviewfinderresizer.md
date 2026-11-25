@@ -17,27 +17,40 @@ A **private class** in `Root.Township`, `Alta.ScreenshotCamera`. Reach it throug
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HandCameraViewfinderResizer(Transform targetTransform, "}<Link to="/game-api/types/alta-customization/handcameraviewfinderresizersettings">{"HandCameraViewfinderResizerSettings"}</Link>{" settings)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HandCameraViewfinderResizer(Transform targetTransform, "}<Link to="/game-api/types/alta-customization/handcameraviewfinderresizersettings">{"HandCameraViewfinderResizerSettings"}</Link>{" settings)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |  |
-| <Link id="m-parenttransform" /><code>{"private Transform parentTransform"}</code> |  |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcameraviewfinderresizersettings">{"HandCameraViewfinderResizerSettings"}</Link>{" settings"}</code> |  |
-| <Link id="m-targettransform" /><code>{"private Transform targetTransform"}</code> |  |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |
+| <Link id="m-parenttransform" /><code>{"private Transform parentTransform"}</code> |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcameraviewfinderresizersettings">{"HandCameraViewfinderResizerSettings"}</Link>{" settings"}</code> |
+| <Link id="m-targettransform" /><code>{"private Transform targetTransform"}</code> |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-disable" /><code>{"void Disable()"}</code> |  |
-| <Link id="m-updateloop" /><code>{"private void UpdateLoop()"}</code> |  |
-| <Link id="m-updatewithcameraposition" /><code>{"private void UpdateWithCameraPosition(Vector3 cameraPosition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-disable" /><code>{"void Disable()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-updateloop" /><code>{"private void UpdateLoop()"}</code> |
+| <Link id="m-updatewithcameraposition" /><code>{"private void UpdateWithCameraPosition(Vector3 cameraPosition)"}</code> |
+
+</details>
 
 ## Used in
 

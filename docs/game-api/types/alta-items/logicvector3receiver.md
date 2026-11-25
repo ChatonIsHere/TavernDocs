@@ -18,18 +18,23 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicVector3Receiver()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicVector3Receiver()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvaluechanged" /><code>{"private "}<Link to="/game-api/types/global-p/positionhandler">{"PositionHandler"}</Link>{" onValueChanged"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvaluechanged" /><code>{"private "}<Link to="/game-api/types/global-p/positionhandler">{"PositionHandler"}</Link>{" onValueChanged"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> |

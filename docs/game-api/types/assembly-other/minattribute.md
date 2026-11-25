@@ -17,12 +17,12 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MinAttribute(float min)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MinAttribute(float min)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-min" /><code>{"readonly float min"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-min" /><code>{"readonly float min"}</code> |

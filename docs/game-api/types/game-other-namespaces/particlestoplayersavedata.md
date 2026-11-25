@@ -19,15 +19,15 @@ A **class** in `Root.Township`, `Features.Visual_Effects.General_Scripts`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ParticlesToPlayerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ParticlesToPlayerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-vfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link></code> |  |
+| Member |
+| --- |
+| <Link id="m-vfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link></code> |
 
 ## Used in
 

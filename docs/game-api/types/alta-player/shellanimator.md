@@ -19,20 +19,28 @@ Client: draws an extra copy of a player's clothes with a shell material and anim
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShellAnimator("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, Material shellMaterialSample)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShellAnimator("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, Material shellMaterialSample)"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-progress" /><code>{"private readonly int _Progress"}</code> |  |
 | <Link id="m-currentanimation" /><code>{"protected Coroutine currentAnimation"}</code> | The running progress coroutine, if any. |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |  |
-| <Link id="m-renderers" /><code>{"private List<Renderer> renderers"}</code> |  |
-| <Link id="m-shellmaterial" /><code>{"private Material shellMaterial"}</code> |  |
-| <Link id="m-shellmaterialsample" /><code>{"private Material shellMaterialSample"}</code> |  |
+
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-progress" /><code>{"private readonly int _Progress"}</code> |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
+| <Link id="m-renderers" /><code>{"private List<Renderer> renderers"}</code> |
+| <Link id="m-shellmaterial" /><code>{"private Material shellMaterial"}</code> |
+| <Link id="m-shellmaterialsample" /><code>{"private Material shellMaterialSample"}</code> |
+
+</details>
 
 ## Properties
 

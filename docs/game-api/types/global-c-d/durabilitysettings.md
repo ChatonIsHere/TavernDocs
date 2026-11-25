@@ -19,26 +19,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DurabilitySettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DurabilitySettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-damageconversion" /><code>{"private float damageConversion"}</code> |  |
-| <Link id="m-durability" /><code>{"private float durability"}</code> |  |
-| <Link id="m-ischancebaseddurability" /><code>{"private bool isChanceBasedDurability"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-damageconversion" /><code>{"private float damageConversion"}</code> |
+| <Link id="m-durability" /><code>{"private float durability"}</code> |
+| <Link id="m-ischancebaseddurability" /><code>{"private bool isChanceBasedDurability"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-damageconversion-2" /><code>{"float DamageConversion { get; }"}</code> |  |
-| <Link id="m-durability-2" /><code>{"float Durability { get; }"}</code> |  |
-| <Link id="m-ischancebaseddurability-2" /><code>{"bool IsChanceBasedDurability { get; }"}</code> |  |
-| <Link id="m-subfolder" /><code>{"override string SubFolder { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-damageconversion-2" /><code>{"float DamageConversion { get; }"}</code> |
+| <Link id="m-durability-2" /><code>{"float Durability { get; }"}</code> |
+| <Link id="m-ischancebaseddurability-2" /><code>{"bool IsChanceBasedDurability { get; }"}</code> |
+| <Link id="m-subfolder" /><code>{"override string SubFolder { get; }"}</code> |
 
 ## Used in
 

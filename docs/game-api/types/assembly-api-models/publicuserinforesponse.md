@@ -18,13 +18,13 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PublicUserInfoResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PublicUserInfoResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-issupporter" /><code>{"bool IsSupporter { get; set; }"}</code> |  |
-| <Link id="m-statistics" /><code><Link to="/game-api/types/assembly-api-models/userstatistics">{"UserStatistics"}</Link>{" Statistics { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-issupporter" /><code>{"bool IsSupporter { get; set; }"}</code> |
+| <Link id="m-statistics" /><code><Link to="/game-api/types/assembly-api-models/userstatistics">{"UserStatistics"}</Link>{" Statistics { get; set; }"}</code> |

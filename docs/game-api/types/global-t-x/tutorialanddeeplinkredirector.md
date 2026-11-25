@@ -17,19 +17,29 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TutorialAndDeeplinkRedirector()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TutorialAndDeeplinkRedirector()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deeplinkpopup" /><code>{"private GameObject deeplinkPopup"}</code> |  |
-| <Link id="m-tutorialpopup" /><code>{"private GameObject tutorialPopup"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-deeplinkpopup" /><code>{"private GameObject deeplinkPopup"}</code> |
+| <Link id="m-tutorialpopup" /><code>{"private GameObject tutorialPopup"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+
+</details>

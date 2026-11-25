@@ -16,28 +16,38 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"internal PersonalGroups("}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"internal PersonalGroups("}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |
+
+</details>
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-api" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-api" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invited" /><code><Link to="/game-api/types/assembly-api-client/invitedgroups">{"InvitedGroups"}</Link>{" Invited { get; }"}</code> |  |
-| <Link id="m-requested" /><code><Link to="/game-api/types/assembly-api-client/requestedgroups">{"RequestedGroups"}</Link>{" Requested { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invited" /><code><Link to="/game-api/types/assembly-api-client/invitedgroups">{"InvitedGroups"}</Link>{" Invited { get; }"}</code> |
+| <Link id="m-requested" /><code><Link to="/game-api/types/assembly-api-client/requestedgroups">{"RequestedGroups"}</Link>{" Requested { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-joingroup" /><code>{"async Task<"}<Link to="/game-api/types/assembly-api-client/outgoingprivategroupjoinrequest">{"OutgoingPrivateGroupJoinRequest"}</Link>{"> JoinGroup(int groupIdentifier)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-joingroup" /><code>{"async Task<"}<Link to="/game-api/types/assembly-api-client/outgoingprivategroupjoinrequest">{"OutgoingPrivateGroupJoinRequest"}</Link>{"> JoinGroup(int groupIdentifier)"}</code> |
 
 ## Used in
 

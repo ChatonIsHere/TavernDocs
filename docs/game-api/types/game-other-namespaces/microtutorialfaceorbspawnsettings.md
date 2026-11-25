@@ -18,21 +18,26 @@ A **class** in `Root.Township`, `ATT.MicroTutorial`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MicroTutorialFaceOrbSpawnSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MicroTutorialFaceOrbSpawnSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allorbinjectordata" /><code>{"private List<"}<Link to="/game-api/types/game-other-namespaces/orbinjectordata">{"OrbInjectorData"}</Link>{"> allOrbInjectorData"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-allorbinjectordata" /><code>{"private List<"}<Link to="/game-api/types/game-other-namespaces/orbinjectordata">{"OrbInjectorData"}</Link>{"> allOrbInjectorData"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getallorbinjectordata" /><code>{"IEnumerable<"}<Link to="/game-api/types/game-other-namespaces/orbinjectordata">{"OrbInjectorData"}</Link>{"> GetAllOrbInjectorData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getallorbinjectordata" /><code>{"IEnumerable<"}<Link to="/game-api/types/game-other-namespaces/orbinjectordata">{"OrbInjectorData"}</Link>{"> GetAllOrbInjectorData()"}</code> |
 
 ## Used in
 

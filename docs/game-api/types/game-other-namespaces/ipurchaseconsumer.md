@@ -16,10 +16,10 @@ An **interface** in `Root.Township`, `Features.Shop`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-consumepurchases" /><code>{"Task<bool> ConsumePurchases()"}</code> |  |
-| <Link id="m-consumptiontask" /><code>{"Task ConsumptionTask()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-consumepurchases" /><code>{"Task<bool> ConsumePurchases()"}</code> |
+| <Link id="m-consumptiontask" /><code>{"Task ConsumptionTask()"}</code> |
 
 ## Used in
 

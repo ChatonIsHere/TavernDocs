@@ -16,6 +16,6 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-session" /><code>{"static readonly "}<Link to="/game-api/types/global-a-b/addressablesession">{"AddressableSession"}</Link>{" Session"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-session" /><code>{"static readonly "}<Link to="/game-api/types/global-a-b/addressablesession">{"AddressableSession"}</Link>{" Session"}</code> |

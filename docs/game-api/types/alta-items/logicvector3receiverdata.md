@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicVector3ReceiverData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicVector3ReceiverData()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/alta-items/logicvector3savedata">{"LogicVector3SaveData"}</Link>{" Data { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data" /><code><Link to="/game-api/types/alta-items/logicvector3savedata">{"LogicVector3SaveData"}</Link>{" Data { get; set; }"}</code> |

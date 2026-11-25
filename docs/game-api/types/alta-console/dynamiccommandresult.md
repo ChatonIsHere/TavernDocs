@@ -18,7 +18,7 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DynamicCommandResult("}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"DynamicCommandResult(string resultString, "}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DynamicCommandResult("}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> |
+| <Link id="m-ctor-2" /><code>{"DynamicCommandResult(string resultString, "}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> |

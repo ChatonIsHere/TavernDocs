@@ -18,23 +18,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DummyArrow()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DummyArrow()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-androidlodlevels" /><code>{"private float[] androidLodLevels"}</code> |  |
-| <Link id="m-feathersposition" /><code>{"private Transform feathersPosition"}</code> |  |
-| <Link id="m-lodlevels" /><code>{"private float[] lodLevels"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androidlodlevels" /><code>{"private float[] androidLodLevels"}</code> |
+| <Link id="m-feathersposition" /><code>{"private Transform feathersPosition"}</code> |
+| <Link id="m-lodlevels" /><code>{"private float[] lodLevels"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-configure" /><code>{"void Configure("}<Link to="/game-api/types/global-e-h/feather">{"Feather"}</Link>{" feather)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-configure" /><code>{"void Configure("}<Link to="/game-api/types/global-e-h/feather">{"Feather"}</Link>{" feather)"}</code> |
 
 ## Used in
 

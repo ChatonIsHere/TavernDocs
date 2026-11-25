@@ -16,17 +16,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HandTriangle()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HandTriangle()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-a" /><code>{"Transform a"}</code> |  |
-| <Link id="m-b" /><code>{"Transform b"}</code> |  |
-| <Link id="m-c" /><code>{"Transform c"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-a" /><code>{"Transform a"}</code> |
+| <Link id="m-b" /><code>{"Transform b"}</code> |
+| <Link id="m-c" /><code>{"Transform c"}</code> |
 
 ## Used in
 

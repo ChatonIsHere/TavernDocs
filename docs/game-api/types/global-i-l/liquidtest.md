@@ -17,20 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LiquidTest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LiquidTest()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-liquidtransform" /><code>{"private Transform liquidTransform"}</code> |  |
-| <Link id="m-rotationlimit" /><code>{"private float rotationLimit"}</code> |  |
-| <Link id="m-rotationmultiplier" /><code>{"private float rotationMultiplier"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-liquidtransform" /><code>{"private Transform liquidTransform"}</code> |
+| <Link id="m-rotationlimit" /><code>{"private float rotationLimit"}</code> |
+| <Link id="m-rotationmultiplier" /><code>{"private float rotationMultiplier"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
+
+</details>

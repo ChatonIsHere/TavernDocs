@@ -17,21 +17,26 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InverseLerpSenseTarget("}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" sense, float from, float to)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InverseLerpSenseTarget("}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" sense, float from, float to)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-from" /><code>{"private float from"}</code> |  |
-| <Link id="m-sense" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" sense"}</code> |  |
-| <Link id="m-to" /><code>{"private float to"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-from" /><code>{"private float from"}</code> |
+| <Link id="m-sense" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" sense"}</code> |
+| <Link id="m-to" /><code>{"private float to"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |

@@ -17,7 +17,7 @@ A **struct** in `Root.Township`, `Alta.Networking.Servers`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-errormessage" /><code>{"string ErrorMessage { get; set; }"}</code> |  |
-| <Link id="m-isvalid" /><code>{"bool IsValid { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-errormessage" /><code>{"string ErrorMessage { get; set; }"}</code> |
+| <Link id="m-isvalid" /><code>{"bool IsValid { get; set; }"}</code> |

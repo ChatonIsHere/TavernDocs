@@ -17,29 +17,42 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BottledLiquid()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BottledLiquid()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dynamicrenderertransform" /><code>{"private Transform dynamicRendererTransform"}</code> |  |
-| <Link id="m-finallevel" /><code>{"private float finalLevel"}</code> |  |
-| <Link id="m-materialcreator" /><code>{"private static "}<Link to="/game-api/types/alta-stats-effects/bottleliquidmaterialcreator">{"BottleLiquidMaterialCreator"}</Link>{" materialCreator"}</code> |  |
-| <Link id="m-maximumy" /><code>{"private float maximumY"}</code> |  |
-| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> |  |
-| <Link id="m-minimumy" /><code>{"private float minimumY"}</code> |  |
-| <Link id="m-vertices" /><code>{"private Vector3[] vertices"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-dynamicrenderertransform" /><code>{"private Transform dynamicRendererTransform"}</code> |
+| <Link id="m-finallevel" /><code>{"private float finalLevel"}</code> |
+| <Link id="m-materialcreator" /><code>{"private static "}<Link to="/game-api/types/alta-stats-effects/bottleliquidmaterialcreator">{"BottleLiquidMaterialCreator"}</Link>{" materialCreator"}</code> |
+| <Link id="m-maximumy" /><code>{"private float maximumY"}</code> |
+| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> |
+| <Link id="m-minimumy" /><code>{"private float minimumY"}</code> |
+| <Link id="m-vertices" /><code>{"private Vector3[] vertices"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
-| <Link id="m-evaluatebounds" /><code>{"private void EvaluateBounds()"}</code> |  |
-| <Link id="m-setlodrendererpropertyblockfromliquid" /><code>{"protected override void SetLODRendererPropertyBlockFromLiquid(MaterialPropertyBlock propertyBlock, "}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> |  |
-| <Link id="m-setpropertyblockfromliquid" /><code>{"protected override void SetPropertyBlockFromLiquid(MaterialPropertyBlock propertyBlock, "}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> |  |
-| <Link id="m-setupmaterialfromliquidvisualsettings" /><code>{"protected override Material SetupMaterialFromLiquidVisualSettings("}<Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" visualSettings, Material materialTemplate)"}</code> |  |
-| <Link id="m-updatevisual" /><code>{"protected override void UpdateVisual()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |
+| <Link id="m-setlodrendererpropertyblockfromliquid" /><code>{"protected override void SetLODRendererPropertyBlockFromLiquid(MaterialPropertyBlock propertyBlock, "}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> |
+| <Link id="m-setpropertyblockfromliquid" /><code>{"protected override void SetPropertyBlockFromLiquid(MaterialPropertyBlock propertyBlock, "}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> |
+| <Link id="m-setupmaterialfromliquidvisualsettings" /><code>{"protected override Material SetupMaterialFromLiquidVisualSettings("}<Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" visualSettings, Material materialTemplate)"}</code> |
+| <Link id="m-updatevisual" /><code>{"protected override void UpdateVisual()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-evaluatebounds" /><code>{"private void EvaluateBounds()"}</code> |
+
+</details>

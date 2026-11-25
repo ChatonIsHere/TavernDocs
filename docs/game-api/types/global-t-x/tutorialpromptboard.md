@@ -17,32 +17,42 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TutorialPromptBoard()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TutorialPromptBoard()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isjoining" /><code>{"private bool isJoining"}</code> |  |
-| <Link id="m-jointutorialbutton" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" joinTutorialButton"}</code> |  |
-| <Link id="m-skiptutorialbutton" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" skipTutorialButton"}</code> |  |
-| <Link id="m-skiptutorialfollowupmessage" /><code>{"private string skipTutorialFollowupMessage"}</code> |  |
-| <Link id="m-skiptutorialfollowuptitle" /><code>{"private string skipTutorialFollowupTitle"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isjoining" /><code>{"private bool isJoining"}</code> |
+| <Link id="m-jointutorialbutton" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" joinTutorialButton"}</code> |
+| <Link id="m-skiptutorialbutton" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" skipTutorialButton"}</code> |
+| <Link id="m-skiptutorialfollowupmessage" /><code>{"private string skipTutorialFollowupMessage"}</code> |
+| <Link id="m-skiptutorialfollowuptitle" /><code>{"private string skipTutorialFollowupTitle"}</code> |
+
+</details>
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-jointutorialselected" /><code>{"event Action JoinTutorialSelected"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-jointutorialselected" /><code>{"event Action JoinTutorialSelected"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-jointutorial" /><code>{"private async void JoinTutorial()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-jointutorial" /><code>{"private async void JoinTutorial()"}</code> |
+
+</details>
 
 ## Used in
 

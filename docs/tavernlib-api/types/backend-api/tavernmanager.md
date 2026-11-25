@@ -20,9 +20,9 @@ The server's config files, registered as a service: get it with `TavernServices.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TavernManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TavernManager()"}</code> |
 
 ## Properties
 
@@ -32,14 +32,27 @@ The server's config files, registered as a service: get it with `TavernServices.
 | <Link id="m-tavernconfig" /><code><Link to="/tavernlib-api/types/backend-server-configs/tavernserverconfig">{"TavernServerConfig"}</Link>{" TavernConfig { get; private set; }"}</code> | `tavern_server.json`, the ports. |
 | <Link id="m-userconfig" /><code><Link to="/tavernlib-api/types/backend-server-configs/userconfigfile">{"UserConfigFile"}</Link>{" UserConfig { get; private set; }"}</code> | `users.json`. Change it through `Update` on this object, which is the one TavernLib writes through. |
 | <Link id="m-whitelistrequests" /><code><Link to="/tavernlib-api/types/backend-server-configs/whitelistrequestsconfigfile">{"WhitelistRequestsConfigFile"}</Link>{" WhitelistRequests { get; private set; }"}</code> | `whitelist_requests.json`. |
-| <Link id="m-authmanager" /><code>{"internal "}<Link to="/tavernlib-api/types/backend-auth/authmanager">{"AuthManager"}</Link>{" "}<Link to="/tavernlib-api/types/backend-auth/authmanager">{"AuthManager"}</Link>{" { get; private set; }"}</code> | Internal: the login server on the auth port. `null` with `/launcherauth`. |
-| <Link id="m-listingcontroller" /><code>{"internal "}<Link to="/tavernlib-api/types/backend-server/serverlistingcontroller">{"ServerListingController"}</Link>{" ListingController { get; private set; }"}</code> | Internal: the Community Servers heartbeat. `null` unless `community_listed` was on at start. |
 
-## Methods
+<details>
+<summary>2 private and internal properties</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tryread" /><code>{"private static void TryRead(Action read, string path)"}</code> |  |
+| <Link id="m-authmanager" /><code>{"internal "}<Link to="/tavernlib-api/types/backend-auth/authmanager">{"AuthManager"}</Link>{" "}<Link to="/tavernlib-api/types/backend-auth/authmanager">{"AuthManager"}</Link>{" { get; private set; }"}</code> | Internal: the login server on the auth port. `null` with `/launcherauth`. |
+| <Link id="m-listingcontroller" /><code>{"internal "}<Link to="/tavernlib-api/types/backend-server/serverlistingcontroller">{"ServerListingController"}</Link>{" ListingController { get; private set; }"}</code> | Internal: the Community Servers heartbeat. `null` unless `community_listed` was on at start. |
+
+</details>
+
+## Methods
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-tryread" /><code>{"private static void TryRead(Action read, string path)"}</code> |
+
+</details>
 
 ## Used in
 

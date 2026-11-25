@@ -18,35 +18,48 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MultiHandPickup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MultiHandPickup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distancecheckcoroutine" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{", Coroutine> distanceCheckCoroutine"}</code> |  |
-| <Link id="m-iscreatingjoints" /><code>{"private bool isCreatingJoints"}</code> |  |
-| <Link id="m-maxdistancetoreleasesquared" /><code>{"private float maxDistanceToReleaseSquared"}</code> |  |
-| <Link id="m-minhandstopickup" /><code>{"private int minHandsToPickup"}</code> |  |
-| <Link id="m-syncvelocity" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncVelocity"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-distancecheckcoroutine" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{", Coroutine> distanceCheckCoroutine"}</code> |
+| <Link id="m-iscreatingjoints" /><code>{"private bool isCreatingJoints"}</code> |
+| <Link id="m-maxdistancetoreleasesquared" /><code>{"private float maxDistanceToReleaseSquared"}</code> |
+| <Link id="m-minhandstopickup" /><code>{"private int minHandsToPickup"}</code> |
+| <Link id="m-syncvelocity" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncVelocity"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-interactorstorelease" /><code>{"override int InteractorsToRelease { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-interactorstorelease" /><code>{"override int InteractorsToRelease { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-finishinteraction" /><code>{"override void FinishInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" oldInteractor)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-interact" /><code>{"override void Interact("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-networkstopinteraction" /><code>{"override void NetworkStopInteraction("}<Link to="/game-api/types/global-i-l/interactarguments">{"InteractArguments"}</Link>{" arguments, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, Action<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{"> handleInteractionEnd)"}</code> |  |
-| <Link id="m-addsecondarycollision" /><code>{"protected override void AddSecondaryCollision()"}</code> |  |
-| <Link id="m-checkdistance" /><code>{"private IEnumerator CheckDistance("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor) (iterator)"}</code> |  |
-| <Link id="m-createjoint" /><code>{"protected override void CreateJoint("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" newInteractor)"}</code> |  |
-| <Link id="m-syncvelocity-2" /><code>{"private void SyncVelocity("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-finishinteraction" /><code>{"override void FinishInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" oldInteractor)"}</code> |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+| <Link id="m-interact" /><code>{"override void Interact("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-networkstopinteraction" /><code>{"override void NetworkStopInteraction("}<Link to="/game-api/types/global-i-l/interactarguments">{"InteractArguments"}</Link>{" arguments, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, Action<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{"> handleInteractionEnd)"}</code> |
+| <Link id="m-addsecondarycollision" /><code>{"protected override void AddSecondaryCollision()"}</code> |
+| <Link id="m-createjoint" /><code>{"protected override void CreateJoint("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" newInteractor)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-checkdistance" /><code>{"private IEnumerator CheckDistance("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor) (iterator)"}</code> |
+| <Link id="m-syncvelocity-2" /><code>{"private void SyncVelocity("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>

@@ -16,10 +16,10 @@ An **interface** in `Alta.Platform`, `Alta.Platform.Models`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> |  |
-| <Link id="m-id" /><code>{"string Id { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> |
+| <Link id="m-id" /><code>{"string Id { get; }"}</code> |
 
 ## Used in
 

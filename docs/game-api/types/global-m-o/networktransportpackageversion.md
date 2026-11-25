@@ -19,20 +19,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportPackageVersion()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkTransportPackageVersion()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-servertransportversion" /><code>{"const string ServerTransportVersion"}</code> |  |
-| <Link id="m-packagename" /><code>{"private const string PackageName"}</code> |  |
-| <Link id="m-version" /><code>{"private string version"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-servertransportversion" /><code>{"const string ServerTransportVersion"}</code> |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-packagename" /><code>{"private const string PackageName"}</code> |
+| <Link id="m-version" /><code>{"private string version"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-version-2" /><code>{"string Version { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-version-2" /><code>{"string Version { get; }"}</code> |

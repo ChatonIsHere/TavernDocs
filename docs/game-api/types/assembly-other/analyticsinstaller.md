@@ -16,23 +16,28 @@ A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AnalyticsInstaller()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AnalyticsInstaller()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enterevent" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/zoneanalyticstriggerevent">{"ZoneAnalyticsTriggerEvent"}</Link>{" enterEvent"}</code> |  |
-| <Link id="m-exitevent" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/zoneanalyticstriggerevent">{"ZoneAnalyticsTriggerEvent"}</Link>{" exitEvent"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-enterevent" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/zoneanalyticstriggerevent">{"ZoneAnalyticsTriggerEvent"}</Link>{" enterEvent"}</code> |
+| <Link id="m-exitevent" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/zoneanalyticstriggerevent">{"ZoneAnalyticsTriggerEvent"}</Link>{" exitEvent"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-install" /><code>{"void Install(IContainerBuilder builder)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-install" /><code>{"void Install(IContainerBuilder builder)"}</code> |
 
 ## Used in
 

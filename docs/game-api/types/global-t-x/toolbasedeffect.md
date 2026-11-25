@@ -17,20 +17,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ToolBasedEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ToolBasedEffect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animationduration" /><code>{"private float animationDuration"}</code> |  |
-| <Link id="m-maxvalue" /><code>{"private float maxvalue"}</code> |  |
-| <Link id="m-minvalue" /><code>{"private float minValue"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animationduration" /><code>{"private float animationDuration"}</code> |
+| <Link id="m-maxvalue" /><code>{"private float maxvalue"}</code> |
+| <Link id="m-minvalue" /><code>{"private float minValue"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animate" /><code>{"protected override IEnumerator Animate(bool isIn) (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-animate" /><code>{"protected override IEnumerator Animate(bool isIn) (iterator)"}</code> |

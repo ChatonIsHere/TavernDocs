@@ -17,31 +17,41 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EnvironmentHandler()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EnvironmentHandler()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-adjustseconds" /><code>{"private float adjustSeconds"}</code> |  |
-| <Link id="m-defaultenvironment" /><code>{"private "}<Link to="/game-api/types/global-e-h/environmentnode">{"EnvironmentNode"}</Link>{" defaultEnvironment"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-adjustseconds" /><code>{"private float adjustSeconds"}</code> |
+| <Link id="m-defaultenvironment" /><code>{"private "}<Link to="/game-api/types/global-e-h/environmentnode">{"EnvironmentNode"}</Link>{" defaultEnvironment"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-environment" /><code><Link to="/game-api/types/global-e-h/environmentlerp">{"EnvironmentLerp"}</Link>{" Environment { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-environment" /><code><Link to="/game-api/types/global-e-h/environmentlerp">{"EnvironmentLerp"}</Link>{" Environment { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-targetchanged" /><code>{"private void TargetChanged()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
-| <Link id="m-updatereverb" /><code>{"private void UpdateReverb(float reverb)"}</code> |  |
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-targetchanged" /><code>{"private void TargetChanged()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| <Link id="m-updatereverb" /><code>{"private void UpdateReverb(float reverb)"}</code> |
+
+</details>
 
 ## Used in
 

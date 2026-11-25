@@ -17,7 +17,7 @@ An **interface** in `Root.Township`, `Alta.Blacksmithing`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-next" /><code>{"T Next { get; set; }"}</code> |  |
-| <Link id="m-previous" /><code>{"T Previous { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-next" /><code>{"T Next { get; set; }"}</code> |
+| <Link id="m-previous" /><code>{"T Previous { get; set; }"}</code> |

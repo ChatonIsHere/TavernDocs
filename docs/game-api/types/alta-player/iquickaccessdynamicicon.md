@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setupaction" /><code>{"void SetupAction("}<Link to="/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" action)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setupaction" /><code>{"void SetupAction("}<Link to="/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" action)"}</code> |

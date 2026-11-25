@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-resolve" /><code>{"static "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" Resolve("}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" effect, GameObject context)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-resolve" /><code>{"static "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" Resolve("}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" effect, GameObject context)"}</code> |

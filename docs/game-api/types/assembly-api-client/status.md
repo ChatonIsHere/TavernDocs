@@ -17,25 +17,25 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Status()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Status()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |  |
-| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> |  |
-| <Link id="m-platform" /><code><Link to="/game-api/types/assembly-api-client/status-statusplatform">{"Status.StatusPlatform"}</Link>{" Platform { get; set; }"}</code> |  |
-| <Link id="m-publishedat" /><code>{"DateTime PublishedAt { get; set; }"}</code> |  |
-| <Link id="m-region" /><code><Link to="/game-api/types/assembly-api-client/status-statusregion">{"Status.StatusRegion"}</Link>{" Region { get; set; }"}</code> |  |
-| <Link id="m-resolvedat" /><code>{"DateTime? ResolvedAt { get; set; }"}</code> |  |
-| <Link id="m-severity" /><code><Link to="/game-api/types/assembly-api-client/status-statusseverity">{"Status.StatusSeverity"}</Link>{" Severity { get; set; }"}</code> |  |
-| <Link id="m-title" /><code>{"string Title { get; set; }"}</code> |  |
-| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-client/status-statustype">{"Status.StatusType"}</Link>{" Type { get; set; }"}</code> |  |
-| <Link id="m-updatedat" /><code>{"DateTime UpdatedAt { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |
+| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> |
+| <Link id="m-platform" /><code><Link to="/game-api/types/assembly-api-client/status-statusplatform">{"Status.StatusPlatform"}</Link>{" Platform { get; set; }"}</code> |
+| <Link id="m-publishedat" /><code>{"DateTime PublishedAt { get; set; }"}</code> |
+| <Link id="m-region" /><code><Link to="/game-api/types/assembly-api-client/status-statusregion">{"Status.StatusRegion"}</Link>{" Region { get; set; }"}</code> |
+| <Link id="m-resolvedat" /><code>{"DateTime? ResolvedAt { get; set; }"}</code> |
+| <Link id="m-severity" /><code><Link to="/game-api/types/assembly-api-client/status-statusseverity">{"Status.StatusSeverity"}</Link>{" Severity { get; set; }"}</code> |
+| <Link id="m-title" /><code>{"string Title { get; set; }"}</code> |
+| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-client/status-statustype">{"Status.StatusType"}</Link>{" Type { get; set; }"}</code> |
+| <Link id="m-updatedat" /><code>{"DateTime UpdatedAt { get; set; }"}</code> |
 
 ## Used in
 

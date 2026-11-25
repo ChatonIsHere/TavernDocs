@@ -21,17 +21,22 @@ The player state while fighting, a sub-state of playing. Ends by itself after a 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CombatState("}<Link to="/game-api/types/alta-player/playingstate">{"PlayingState"}</Link>{" playingState)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CombatState("}<Link to="/game-api/types/alta-player/playingstate">{"PlayingState"}</Link>{" playingState)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentoutofcombattimer" /><code>{"private float currentOutOfCombatTimer"}</code> |  |
-| <Link id="m-getoutofcombatcoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" getOutOfCombatCoroutine"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentoutofcombattimer" /><code>{"private float currentOutOfCombatTimer"}</code> |
+| <Link id="m-getoutofcombatcoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" getOutOfCombatCoroutine"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
@@ -48,10 +53,18 @@ The player state while fighting, a sub-state of playing. Ends by itself after a 
 | <Link id="m-resetcurrentcombattimer" /><code>{"void ResetCurrentCombatTimer(float distanceSquared)"}</code> | Restarts the out of combat timer, scaled by a curve over how far apart the fighters are. |
 | <Link id="m-serializedisk" /><code>{"override void SerializeDisk("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Saves and loads the time left on the out of combat timer. |
 | <Link id="m-validatestateactivation" /><code>{"override bool ValidateStateActivation(bool isDuringLoading)"}</code> | Refuses to start combat while the player is loading. |
-| <Link id="m-getoutofcombat" /><code>{"private IEnumerator GetOutOfCombat() (iterator)"}</code> |  |
 | <Link id="m-onactivate" /><code>{"protected override void OnActivate()"}</code> | Server: allows combat to combat transitions and starts the out of combat timer. |
 | <Link id="m-onactivateremote" /><code>{"protected override void OnActivateRemote(bool isPlayerCharacterSpawned)"}</code> | Client: shows the combat shell and, for the local player, plays the enter combat sound. |
 | <Link id="m-ondeactivate" /><code>{"protected override void OnDeactivate()"}</code> | Server: clears the locomotion cooldown, refills the cripple stat and stops the timer. |
 | <Link id="m-ondeactivateremote" /><code>{"protected override void OnDeactivateRemote(bool isPlayerCharacterSpawned)"}</code> | Client: hides the combat shell (if alive) and plays the wave effect. |
-| <Link id="m-playsound" /><code>{"private void PlaySound()"}</code> |  |
-| <Link id="m-playsoundcoroutine" /><code>{"private IEnumerator PlaySoundCoroutine() (iterator)"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-getoutofcombat" /><code>{"private IEnumerator GetOutOfCombat() (iterator)"}</code> |
+| <Link id="m-playsound" /><code>{"private void PlaySound()"}</code> |
+| <Link id="m-playsoundcoroutine" /><code>{"private IEnumerator PlaySoundCoroutine() (iterator)"}</code> |
+
+</details>

@@ -19,22 +19,35 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" current"}</code> |  |
-| <Link id="m-forbiddensavemodes" /><code>{"private static readonly IEnumerable<"}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{"> forbiddenSaveModes"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" current"}</code> |
+| <Link id="m-forbiddensavemodes" /><code>{"private static readonly IEnumerable<"}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{"> forbiddenSaveModes"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-overridemode" /><code>{"static "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" OverrideMode { get; set; }"}</code> |  |
-| <Link id="m-playermode" /><code>{"static "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-overridemode" /><code>{"static "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" OverrideMode { get; set; }"}</code> |
+| <Link id="m-playermode" /><code>{"static "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isnormalplayermode" /><code>{"static bool IsNormalPlayerMode("}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerMode)"}</code> |  |
-| <Link id="m-geteditormode" /><code>{"private static "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" GetEditorMode("}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" input)"}</code> |  |
-| <Link id="m-trygetplayermodeforandroid" /><code>{"private static bool TryGetPlayerModeForAndroid(out "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerMode)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isnormalplayermode" /><code>{"static bool IsNormalPlayerMode("}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerMode)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-geteditormode" /><code>{"private static "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" GetEditorMode("}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" input)"}</code> |
+| <Link id="m-trygetplayermodeforandroid" /><code>{"private static bool TryGetPlayerModeForAndroid(out "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerMode)"}</code> |
+
+</details>

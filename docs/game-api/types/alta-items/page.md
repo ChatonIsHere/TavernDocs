@@ -22,9 +22,9 @@ Asset for a fixed (hand-made) page, such as a recipe or lore page, with its glyp
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Page()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Page()"}</code> |
 
 ## Fields
 
@@ -32,8 +32,16 @@ Asset for a fixed (hand-made) page, such as a recipe or lore page, with its glyp
 | --- | --- |
 | <Link id="m-pixelsize" /><code>{"static readonly Vector2 PixelSize"}</code> | Page size in pixels: 640 by 768. |
 | <Link id="m-sizeratio" /><code>{"static readonly float SizeRatio"}</code> | Height divided by width of a page. |
-| <Link id="m-components" /><code>{"private "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{"[] components"}</code> |  |
-| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-components" /><code>{"private "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{"[] components"}</code> |
+| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data"}</code> |
+
+</details>
 
 ## Properties
 
@@ -48,7 +56,15 @@ Asset for a fixed (hand-made) page, such as a recipe or lore page, with its glyp
 | --- | --- |
 | <Link id="m-gethash" /><code>{"uint GetHash()"}</code> | The asset's hash. |
 | <Link id="m-getproviderid" /><code>{"int GetProviderID(int preferredProvider)"}</code> | Always the static page provider's id, whatever is preferred. |
-| <Link id="m-createpage" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" Alta.Pages.IPageBasis.CreatePage(int preferredProvider)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-createpage" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" Alta.Pages.IPageBasis.CreatePage(int preferredProvider)"}</code> |
+
+</details>
 
 ## Used in
 

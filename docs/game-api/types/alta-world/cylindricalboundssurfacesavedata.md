@@ -19,19 +19,19 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CylindricalBoundsSurfaceSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CylindricalBoundsSurfaceSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-arc" /><code>{"float arc"}</code> |  |
-| <Link id="m-height" /><code>{"float height"}</code> |  |
-| <Link id="m-maxoffset" /><code>{"float maxOffset"}</code> |  |
-| <Link id="m-raycastendradius" /><code>{"float raycastEndRadius"}</code> |  |
-| <Link id="m-raycaststartradius" /><code>{"float raycastStartRadius"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-arc" /><code>{"float arc"}</code> |
+| <Link id="m-height" /><code>{"float height"}</code> |
+| <Link id="m-maxoffset" /><code>{"float maxOffset"}</code> |
+| <Link id="m-raycastendradius" /><code>{"float raycastEndRadius"}</code> |
+| <Link id="m-raycaststartradius" /><code>{"float raycastStartRadius"}</code> |
 
 ## Used in
 

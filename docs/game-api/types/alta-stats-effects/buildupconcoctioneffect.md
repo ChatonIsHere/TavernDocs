@@ -19,20 +19,33 @@ An **abstract class** in `Root.Township`, `Alta.Alchemy`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected BuildUpconcoctionEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected BuildUpconcoctionEffect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-buildupduration" /><code>{"private float buildupDuration"}</code> |  |
-| <Link id="m-buildupmap" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{", float> buildupMap"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-buildupduration" /><code>{"private float buildupDuration"}</code> |
+| <Link id="m-buildupmap" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{", float> buildupMap"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkapply" /><code>{"override void CheckApply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |  |
-| <Link id="m-runbuildup" /><code>{"private IEnumerator RunBuildup("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target) (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkapply" /><code>{"override void CheckApply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-runbuildup" /><code>{"private IEnumerator RunBuildup("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target) (iterator)"}</code> |
+
+</details>

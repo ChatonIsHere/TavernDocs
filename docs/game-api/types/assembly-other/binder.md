@@ -17,12 +17,12 @@ An **abstract class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Binder()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Binder()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-validentrypoints" /><code>{"protected static readonly HashSet<Type> ValidEntryPoints"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-validentrypoints" /><code>{"protected static readonly HashSet<Type> ValidEntryPoints"}</code> |

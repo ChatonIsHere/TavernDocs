@@ -19,18 +19,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EditorHotKeys()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EditorHotKeys()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hotkeys" /><code>{"private "}<Link to="/game-api/types/global-e-h/editorhotkeys-hotkey">{"EditorHotKeys.Hotkey"}</Link>{"[] hotkeys"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-hotkeys" /><code>{"private "}<Link to="/game-api/types/global-e-h/editorhotkeys-hotkey">{"EditorHotKeys.Hotkey"}</Link>{"[] hotkeys"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getmap" /><code>{"Dictionary<string, string> GetMap()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getmap" /><code>{"Dictionary<string, string> GetMap()"}</code> |

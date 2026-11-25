@@ -20,16 +20,29 @@ The server's mod snapshot for the auth port's ping, `mods_list` and the join's p
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cache" /><code>{"private static ValueTuple<string, DateTime, ValueTuple<string, List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{">>> _cache"}</code> |  |
-| <Link id="m-cachelock" /><code>{"private static readonly object CacheLock"}</code> |  |
-| <Link id="m-cachettlseconds" /><code>{"private const int CacheTtlSeconds"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-cache" /><code>{"private static ValueTuple<string, DateTime, ValueTuple<string, List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{">>> _cache"}</code> |
+| <Link id="m-cachelock" /><code>{"private static readonly object CacheLock"}</code> |
+| <Link id="m-cachettlseconds" /><code>{"private const int CacheTtlSeconds"}</code> |
+
+</details>
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-snapshot" /><code>{"static ValueTuple<string, List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{">> Snapshot(string gameDir)"}</code> | The enabled mods installed for `server`, sorted by id, the enabled untracked mods, and a hash of both. |
-| <Link id="m-buildsnapshot" /><code>{"private static ValueTuple<string, List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{">> BuildSnapshot(string gameDir)"}</code> |  |
-| <Link id="m-untrackedstamp" /><code>{"private static string UntrackedStamp(string gameDir, "}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{" mod)"}</code> |  |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-buildsnapshot" /><code>{"private static ValueTuple<string, List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{">> BuildSnapshot(string gameDir)"}</code> |
+| <Link id="m-untrackedstamp" /><code>{"private static string UntrackedStamp(string gameDir, "}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{" mod)"}</code> |
+
+</details>

@@ -18,23 +18,23 @@ A **class** in `Root.Township`, `Alta.Carpentry`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChisellingDeckSaveData2()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChisellingDeckSaveData2()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentsize" /><code>{"int currentSize"}</code> |  |
-| <Link id="m-donepieces" /><code>{"int[] donePieces"}</code> |  |
-| <Link id="m-hasfollowedrecipe" /><code>{"bool hasFollowedrecipe"}</code> |  |
-| <Link id="m-pieces" /><code><Link to="/game-api/types/alta-crafting/piecesavedata">{"PieceSaveData"}</Link>{"[] pieces"}</code> |  |
-| <Link id="m-spawned" /><code><Link to="/game-api/types/alta-crafting/chiseldefinition">{"ChiselDefinition"}</Link>{" spawned"}</code> |  |
-| <Link id="m-stage" /><code>{"int stage"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentsize" /><code>{"int currentSize"}</code> |
+| <Link id="m-donepieces" /><code>{"int[] donePieces"}</code> |
+| <Link id="m-hasfollowedrecipe" /><code>{"bool hasFollowedrecipe"}</code> |
+| <Link id="m-pieces" /><code><Link to="/game-api/types/alta-crafting/piecesavedata">{"PieceSaveData"}</Link>{"[] pieces"}</code> |
+| <Link id="m-spawned" /><code><Link to="/game-api/types/alta-crafting/chiseldefinition">{"ChiselDefinition"}</Link>{" spawned"}</code> |
+| <Link id="m-stage" /><code>{"int stage"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

@@ -19,12 +19,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AdditionalStaticContentSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AdditionalStaticContentSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-needstoinstantiate" /><code>{"bool needsToInstantiate"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-needstoinstantiate" /><code>{"bool needsToInstantiate"}</code> |

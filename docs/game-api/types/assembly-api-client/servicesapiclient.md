@@ -17,18 +17,23 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"internal ServicesApiClient("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"internal ServicesApiClient("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generateidentitytokenasync" /><code>{"async Task<JwtSecurityToken> GenerateIdentityTokenAsync(object userData)"}</code> |  |
-| <Link id="m-getpublicipaddressasync" /><code>{"async Task<IPAddress> GetPublicIpAddressAsync()"}</code> |  |
-| <Link id="m-isvalidshortlivedidentitytokenasync" /><code>{"async Task<bool> IsValidShortLivedIdentityTokenAsync(JwtSecurityToken token)"}</code> |  |
-| <Link id="m-requestpasswordresetasync" /><code>{"async Task RequestPasswordResetAsync(string email)"}</code> |  |
-| <Link id="m-requestsignupcodeasync" /><code>{"async Task RequestSignUpCodeAsync(string firstName, string lastName, string email, string referral, string campaign)"}</code> |  |
-| <Link id="m-resetpasswordasync" /><code>{"async Task ResetPasswordAsync(int userId, string newPasswordHash, string resetToken)"}</code> |  |
-| <Link id="m-verifyuserasync" /><code>{"async Task VerifyUserAsync(int userIdentifier, string verificationToken)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-generateidentitytokenasync" /><code>{"async Task<JwtSecurityToken> GenerateIdentityTokenAsync(object userData)"}</code> |
+| <Link id="m-getpublicipaddressasync" /><code>{"async Task<IPAddress> GetPublicIpAddressAsync()"}</code> |
+| <Link id="m-isvalidshortlivedidentitytokenasync" /><code>{"async Task<bool> IsValidShortLivedIdentityTokenAsync(JwtSecurityToken token)"}</code> |
+| <Link id="m-requestpasswordresetasync" /><code>{"async Task RequestPasswordResetAsync(string email)"}</code> |
+| <Link id="m-requestsignupcodeasync" /><code>{"async Task RequestSignUpCodeAsync(string firstName, string lastName, string email, string referral, string campaign)"}</code> |
+| <Link id="m-resetpasswordasync" /><code>{"async Task ResetPasswordAsync(int userId, string newPasswordHash, string resetToken)"}</code> |
+| <Link id="m-verifyuserasync" /><code>{"async Task VerifyUserAsync(int userIdentifier, string verificationToken)"}</code> |

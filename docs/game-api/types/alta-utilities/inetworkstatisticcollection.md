@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, `Alta.Utilities.Profiling.NetworkTransportM
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createsummarydump" /><code>{"string CreateSummaryDump(float dumpDuration)"}</code> |  |
-| <Link id="m-resetall" /><code>{"void ResetAll()"}</code> |  |
-| <Link id="m-updatetotalbytesperframe" /><code>{"void UpdateTotalBytesPerFrame()"}</code> |  |
-| <Link id="m-updatetotalbytesperlastsecond" /><code>{"void UpdateTotalBytesPerLastSecond()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createsummarydump" /><code>{"string CreateSummaryDump(float dumpDuration)"}</code> |
+| <Link id="m-resetall" /><code>{"void ResetAll()"}</code> |
+| <Link id="m-updatetotalbytesperframe" /><code>{"void UpdateTotalBytesPerFrame()"}</code> |
+| <Link id="m-updatetotalbytesperlastsecond" /><code>{"void UpdateTotalBytesPerLastSecond()"}</code> |

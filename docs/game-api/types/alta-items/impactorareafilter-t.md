@@ -18,26 +18,31 @@ An **abstract class** in `Root.Township`, `Alta.Impact`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ImpactorAreaFilter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ImpactorAreaFilter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-colliders" /><code>{"private static Collider[] colliders"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-targetlayer" /><code>{"private LayerMask targetLayer"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-colliders" /><code>{"private static Collider[] colliders"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-targetlayer" /><code>{"private LayerMask targetLayer"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-islogging" /><code>{"static bool IsLogging { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-islogging" /><code>{"static bool IsLogging { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkfilter" /><code>{"override bool CheckFilter("}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" contactPoint, out float multiplier)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkfilter" /><code>{"override bool CheckFilter("}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" contactPoint, out float multiplier)"}</code> |

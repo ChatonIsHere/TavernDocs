@@ -17,13 +17,13 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OfflineVoiceClient()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OfflineVoiceClient()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getjoinchanneltokenasync" /><code>{"Task<string> GetJoinChannelTokenAsync(int serverIdentifier)"}</code> |  |
-| <Link id="m-getlogintokenasync" /><code>{"Task<string> GetLoginTokenAsync()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getjoinchanneltokenasync" /><code>{"Task<string> GetJoinChannelTokenAsync(int serverIdentifier)"}</code> |
+| <Link id="m-getlogintokenasync" /><code>{"Task<string> GetLoginTokenAsync()"}</code> |

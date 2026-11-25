@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShopTokenResponse(string token, int transactionIdentifier)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShopTokenResponse(string token, int transactionIdentifier)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-shopurl" /><code>{"string ShopUrl { get; }"}</code> |  |
-| <Link id="m-token" /><code>{"string Token { get; set; }"}</code> |  |
-| <Link id="m-transactionidentifier" /><code>{"int TransactionIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-shopurl" /><code>{"string ShopUrl { get; }"}</code> |
+| <Link id="m-token" /><code>{"string Token { get; set; }"}</code> |
+| <Link id="m-transactionidentifier" /><code>{"int TransactionIdentifier { get; set; }"}</code> |
 
 ## Used in
 

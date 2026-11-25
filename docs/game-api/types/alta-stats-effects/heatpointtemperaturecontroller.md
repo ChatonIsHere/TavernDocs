@@ -21,20 +21,30 @@ Clamps a point between `minTemperature` and `maxTemperature` through its `Temper
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HeatPointTemperatureController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HeatPointTemperatureController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxtemperature" /><code>{"private float maxTemperature"}</code> |  |
-| <Link id="m-mintemperature" /><code>{"private float minTemperature"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maxtemperature" /><code>{"private float maxTemperature"}</code> |
+| <Link id="m-mintemperature" /><code>{"private float minTemperature"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clamptemperature" /><code>{"private void ClampTemperature(ref float newtemperature)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-clamptemperature" /><code>{"private void ClampTemperature(ref float newtemperature)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>

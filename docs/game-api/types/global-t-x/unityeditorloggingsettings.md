@@ -20,27 +20,40 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UnityEditorLoggingSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UnityEditorLoggingSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-islogging" /><code>{"bool IsLogging"}</code> |  |
-| <Link id="m-maxlevel" /><code>{"private "}<Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" maxLevel"}</code> |  |
-| <Link id="m-minlevel" /><code>{"private "}<Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" minLevel"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-islogging" /><code>{"bool IsLogging"}</code> |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maxlevel" /><code>{"private "}<Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" maxLevel"}</code> |
+| <Link id="m-minlevel" /><code>{"private "}<Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" minLevel"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxlevel-2" /><code><Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" MaxLevel { get; }"}</code> |  |
-| <Link id="m-minlevel-2" /><code><Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" MinLevel { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maxlevel-2" /><code><Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" MaxLevel { get; }"}</code> |
+| <Link id="m-minlevel-2" /><code><Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" MinLevel { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

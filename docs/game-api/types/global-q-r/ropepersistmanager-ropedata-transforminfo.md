@@ -19,9 +19,9 @@ Saved transform of one rope object, used by the Ultimate Rope editor asset to ke
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TransformInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TransformInfo()"}</code> |
 
 ## Fields
 

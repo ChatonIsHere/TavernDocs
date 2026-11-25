@@ -16,17 +16,17 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OptionsConfig(string text, Action action, "}<Link to="/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" type = 0)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OptionsConfig(string text, Action action, "}<Link to="/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" type = 0)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-action" /><code>{"Action Action { get; }"}</code> |  |
-| <Link id="m-text" /><code>{"string Text { get; }"}</code> |  |
-| <Link id="m-type" /><code><Link to="/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" Type { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-action" /><code>{"Action Action { get; }"}</code> |
+| <Link id="m-text" /><code>{"string Text { get; }"}</code> |
+| <Link id="m-type" /><code><Link to="/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" Type { get; }"}</code> |
 
 ## Used in
 

@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-auto" /><code>{"Auto = 0"}</code> |  |
-| <Link id="m-off" /><code>{"Off = 2"}</code> |  |
-| <Link id="m-on" /><code>{"On = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-auto" /><code>{"Auto = 0"}</code> |
+| <Link id="m-off" /><code>{"Off = 2"}</code> |
+| <Link id="m-on" /><code>{"On = 1"}</code> |
 
 ## Used in
 

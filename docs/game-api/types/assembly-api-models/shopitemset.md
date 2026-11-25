@@ -17,18 +17,18 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShopItemSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShopItemSet()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |  |
-| <Link id="m-items" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/shopitemidentifier">{"ShopItemIdentifier"}</Link>{"> Items { get; set; }"}</code> |  |
-| <Link id="m-sku" /><code>{"string Sku { get; set; }"}</code> |  |
-| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/itemsettype">{"ItemSetType"}</Link>{" Type { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |
+| <Link id="m-items" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/shopitemidentifier">{"ShopItemIdentifier"}</Link>{"> Items { get; set; }"}</code> |
+| <Link id="m-sku" /><code>{"string Sku { get; set; }"}</code> |
+| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/itemsettype">{"ItemSetType"}</Link>{" Type { get; set; }"}</code> |
 
 ## Used in
 

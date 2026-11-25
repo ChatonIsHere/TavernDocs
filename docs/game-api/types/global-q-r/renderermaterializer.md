@@ -17,33 +17,46 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RendererMaterializer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RendererMaterializer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dissolvetexture" /><code>{"private Texture dissolveTexture"}</code> |  |
-| <Link id="m-rendererstoadd" /><code>{"private "}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" renderersToAdd"}</code> |  |
-| <Link id="m-shader" /><code>{"private Shader shader"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-dissolvetexture" /><code>{"private Texture dissolveTexture"}</code> |
+| <Link id="m-rendererstoadd" /><code>{"private "}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" renderersToAdd"}</code> |
+| <Link id="m-shader" /><code>{"private Shader shader"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handler" /><code><Link to="/game-api/types/global-q-r/renderermaterializerhandler">{"RendererMaterializerHandler"}</Link>{" Handler { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-handler" /><code><Link to="/game-api/types/global-q-r/renderermaterializerhandler">{"RendererMaterializerHandler"}</Link>{" Handler { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-demateralizerenderers" /><code>{"void DemateralizeRenderers(float duration, Action animationFinishedCallback = null)"}</code> |  |
-| <Link id="m-materializerenderers" /><code>{"void MaterializeRenderers(float duration, Action animationFinishedCallback = null)"}</code> |  |
-| <Link id="m-settargetobject" /><code>{"void SetTargetObject(Transform rendererParent)"}</code> |  |
-| <Link id="m-settargets" /><code>{"void SetTargets(IEnumerable<Renderer> renderers)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-demateralizerenderers" /><code>{"void DemateralizeRenderers(float duration, Action animationFinishedCallback = null)"}</code> |
+| <Link id="m-materializerenderers" /><code>{"void MaterializeRenderers(float duration, Action animationFinishedCallback = null)"}</code> |
+| <Link id="m-settargetobject" /><code>{"void SetTargetObject(Transform rendererParent)"}</code> |
+| <Link id="m-settargets" /><code>{"void SetTargets(IEnumerable<Renderer> renderers)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>
 
 ## Used in
 

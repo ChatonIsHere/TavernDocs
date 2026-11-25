@@ -17,16 +17,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerTracker()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerTracker()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-beginnings" /><code>{"Dictionary<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{", int> Beginnings"}</code> |  |
-| <Link id="m-besttimes" /><code>{"Dictionary<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{", int> BestTimes"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-beginnings" /><code>{"Dictionary<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{", int> Beginnings"}</code> |
+| <Link id="m-besttimes" /><code>{"Dictionary<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{", int> BestTimes"}</code> |
 
 ## Used in
 

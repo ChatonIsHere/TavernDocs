@@ -16,7 +16,7 @@ A **static class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModel
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-identifier" /><code>{"static string Identifier { get; set; }"}</code> |  |
-| <Link id="m-platformtarget" /><code>{"static int PlatformTarget { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-identifier" /><code>{"static string Identifier { get; set; }"}</code> |
+| <Link id="m-platformtarget" /><code>{"static int PlatformTarget { get; set; }"}</code> |

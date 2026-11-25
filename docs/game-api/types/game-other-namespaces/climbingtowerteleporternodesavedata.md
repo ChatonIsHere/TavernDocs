@@ -19,14 +19,14 @@ A **class** in `Root.Township`, `Features.Gameplay.ClimbingTower`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterNodeSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterNodeSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isrootnode" /><code>{"bool isRootNode"}</code> |  |
-| <Link id="m-orbindextoactivateteleporternode" /><code>{"uint orbIndexToActivateTeleporterNode"}</code> |  |
-| <Link id="m-teleportoffset" /><code>{"Vector3 teleportOffset"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isrootnode" /><code>{"bool isRootNode"}</code> |
+| <Link id="m-orbindextoactivateteleporternode" /><code>{"uint orbIndexToActivateTeleporterNode"}</code> |
+| <Link id="m-teleportoffset" /><code>{"Vector3 teleportOffset"}</code> |

@@ -17,22 +17,22 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SavableInfoDump()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SavableInfoDump()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hash" /><code>{"uint Hash { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hash" /><code>{"uint Hash { get; set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-console/prefabinfodump-savableinfodump">{"PrefabInfoDump.SavableInfoDump"}</Link>{" op_Implicit(Type savable)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-console/prefabinfodump-savableinfodump">{"PrefabInfoDump.SavableInfoDump"}</Link>{" op_Implicit(Type savable)"}</code> |
 
 ## Used in
 

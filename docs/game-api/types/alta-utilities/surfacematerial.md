@@ -19,9 +19,9 @@ A **class** in `Root.Township`, `Alta`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SurfaceMaterial()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SurfaceMaterial()"}</code> |
 
 ## Used in
 

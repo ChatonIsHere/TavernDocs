@@ -16,7 +16,7 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getvisualdouble" /><code>{"static "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" GetVisualDouble(Component component)"}</code> |  |
-| <Link id="m-getvisualdouble-2" /><code>{"static "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" GetVisualDouble(GameObject gameObject)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getvisualdouble" /><code>{"static "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" GetVisualDouble(Component component)"}</code> |
+| <Link id="m-getvisualdouble-2" /><code>{"static "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" GetVisualDouble(GameObject gameObject)"}</code> |

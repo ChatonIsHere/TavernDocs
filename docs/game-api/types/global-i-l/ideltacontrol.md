@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deltaprovided" /><code>{"event Action<float> DeltaProvided"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deltaprovided" /><code>{"event Action<float> DeltaProvided"}</code> |

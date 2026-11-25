@@ -16,24 +16,29 @@ A **static class** in `Root.Township`, `Alta.Networking`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-id" /><code>{"private static uint id"}</code> |  |
-| <Link id="m-isresponse" /><code>{"private static bool isResponse"}</code> |  |
-| <Link id="m-time" /><code>{"private static uint time"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-id" /><code>{"private static uint id"}</code> |
+| <Link id="m-isresponse" /><code>{"private static bool isResponse"}</code> |
+| <Link id="m-time" /><code>{"private static uint time"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-id-2" /><code>{"static uint Id { get; }"}</code> |  |
-| <Link id="m-lastpinginseconds" /><code>{"static float LastPingInSeconds { get; private set; }"}</code> |  |
-| <Link id="m-time-2" /><code>{"static uint Time { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-id-2" /><code>{"static uint Id { get; }"}</code> |
+| <Link id="m-lastpinginseconds" /><code>{"static float LastPingInSeconds { get; private set; }"}</code> |
+| <Link id="m-time-2" /><code>{"static uint Time { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"static void Serialize("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-set" /><code>{"static void Set(uint sendId = 0)"}</code> |  |
-| <Link id="m-setelapsedticks" /><code>{"static void SetElapsedTicks()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"static void Serialize("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-set" /><code>{"static void Set(uint sendId = 0)"}</code> |
+| <Link id="m-setelapsedticks" /><code>{"static void SetElapsedTicks()"}</code> |

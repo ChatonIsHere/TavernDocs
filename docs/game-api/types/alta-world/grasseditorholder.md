@@ -17,35 +17,48 @@ A **class** in `Root.Township`, `Alta.Environmental.Vegetation`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GrassEditorHolder()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GrassEditorHolder()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-proceduralygenerated" /><code>{"private bool proceduralyGenerated"}</code> |  |
-| <Link id="m-spinepoints" /><code>{"private List<Vector3> spinePoints"}</code> |  |
-| <Link id="m-width" /><code>{"private List<float> width"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-proceduralygenerated" /><code>{"private bool proceduralyGenerated"}</code> |
+| <Link id="m-spinepoints" /><code>{"private List<Vector3> spinePoints"}</code> |
+| <Link id="m-width" /><code>{"private List<float> width"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxy" /><code>{"float MaxY { get; }"}</code> |  |
-| <Link id="m-spinepoints-2" /><code>{"List<Vector3> SpinePoints { get; }"}</code> |  |
-| <Link id="m-triangles" /><code>{"int[] Triangles { get; }"}</code> |  |
-| <Link id="m-width-2" /><code>{"List<float> Width { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maxy" /><code>{"float MaxY { get; }"}</code> |
+| <Link id="m-spinepoints-2" /><code>{"List<Vector3> SpinePoints { get; }"}</code> |
+| <Link id="m-triangles" /><code>{"int[] Triangles { get; }"}</code> |
+| <Link id="m-width-2" /><code>{"List<float> Width { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createblade" /><code>{"void CreateBlade(int numberOfVertices, float width, float height)"}</code> |  |
-| <Link id="m-loadstructure" /><code>{"void LoadStructure("}<Link to="/game-api/types/alta-world/grassblademesh">{"GrassBladeMesh"}</Link>{" newMesh)"}</code> |  |
-| <Link id="m-pushvertices" /><code>{"void PushVertices(int numberOfVertices)"}</code> |  |
-| <Link id="m-receiveproceduralblade" /><code>{"void ReceiveProceduralBlade(float frontBend, float sideBend, float height, float width, float widthTop)"}</code> |  |
-| <Link id="m-clearprocedural" /><code>{"private void ClearProcedural()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createblade" /><code>{"void CreateBlade(int numberOfVertices, float width, float height)"}</code> |
+| <Link id="m-loadstructure" /><code>{"void LoadStructure("}<Link to="/game-api/types/alta-world/grassblademesh">{"GrassBladeMesh"}</Link>{" newMesh)"}</code> |
+| <Link id="m-pushvertices" /><code>{"void PushVertices(int numberOfVertices)"}</code> |
+| <Link id="m-receiveproceduralblade" /><code>{"void ReceiveProceduralBlade(float frontBend, float sideBend, float height, float width, float widthTop)"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-clearprocedural" /><code>{"private void ClearProcedural()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+
+</details>

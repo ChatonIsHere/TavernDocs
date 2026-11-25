@@ -20,9 +20,9 @@ An **interface** in `Root.Township`, `Alta.Intelligence`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setjumping" /><code>{"void SetJumping(bool isJumping)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setjumping" /><code>{"void SetJumping(bool isJumping)"}</code> |
 
 ## Used in
 

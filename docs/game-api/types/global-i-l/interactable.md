@@ -21,22 +21,30 @@ Anything a hand can grab or use: the base class for `Pickup`, levers, buttons, c
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Interactable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Interactable()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" channels"}</code> |  |
 | <Link id="m-isduringinteract" /><code>{"protected bool isDuringInteract"}</code> | True while `CheckInteractAllowedAndReplace` is making other hands let go. |
-| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> |  |
-| <Link id="m-lastplayerinteractor" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" lastPlayerInteractor"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-multipleallowance" /><code>{"private "}<Link to="/game-api/types/global-m-o/multipleinteractionallowance">{"MultipleInteractionAllowance"}</Link>{" multipleAllowance"}</code> |  |
-| <Link id="m-multiplenotallowedaction" /><code>{"private "}<Link to="/game-api/types/global-m-o/multiplenotallowedaction">{"MultipleNotAllowedAction"}</Link>{" multipleNotAllowedAction"}</code> |  |
-| <Link id="m-overrideinteractionprioritymodifier" /><code>{"private float overrideInteractionPriorityModifier"}</code> |  |
+
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" channels"}</code> |
+| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> |
+| <Link id="m-lastplayerinteractor" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" lastPlayerInteractor"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-multipleallowance" /><code>{"private "}<Link to="/game-api/types/global-m-o/multipleinteractionallowance">{"MultipleInteractionAllowance"}</Link>{" multipleAllowance"}</code> |
+| <Link id="m-multiplenotallowedaction" /><code>{"private "}<Link to="/game-api/types/global-m-o/multiplenotallowedaction">{"MultipleNotAllowedAction"}</Link>{" multipleNotAllowedAction"}</code> |
+| <Link id="m-overrideinteractionprioritymodifier" /><code>{"private float overrideInteractionPriorityModifier"}</code> |
+
+</details>
 
 ## Properties
 
@@ -82,14 +90,22 @@ Anything a hand can grab or use: the base class for `Pickup`, levers, buttons, c
 | <Link id="m-replacedwith" /><code>{"virtual void ReplacedWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/replaceavoidflags">{"ReplaceAvoidFlags"}</Link>{" replaceAvoidFlags)"}</code> | Called when the entity is replaced: hands move to the new entity's interactable unless told not to. |
 | <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> | Moves every hand on this to another interactable, or to what a `Spawner` last spawned. Used when an item turns into another. |
 | <Link id="m-replacewith-2" /><code>{"virtual void ReplaceWith("}<Link to="/game-api/types/global-s/spawner">{"Spawner"}</Link>{" spawner)"}</code> | Moves every hand on this to another interactable, or to what a `Spawner` last spawned. Used when an item turns into another. |
-| <Link id="m-networkdestroyed" /><code>{"private void NetworkDestroyed("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> |  |
 | <Link id="m-onlastinteractorplayerchanged" /><code>{"protected virtual void OnLastInteractorPlayerChanged()"}</code> | Override hook, called when a different player interacts with this. |
 | <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Editor: fills in the multiple-interaction defaults if they were never set. |
 | <Link id="m-start" /><code>{"protected virtual void Start()"}</code> | Empty override hook. |
-| <Link id="m-testlefthand" /><code>{"private void TestLeftHand()"}</code> |  |
-| <Link id="m-testlefthandend" /><code>{"private void TestLeftHandEnd()"}</code> |  |
-| <Link id="m-testrighthand" /><code>{"private void TestRightHand()"}</code> |  |
-| <Link id="m-testrighthandend" /><code>{"private void TestRightHandEnd()"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-networkdestroyed" /><code>{"private void NetworkDestroyed("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> |
+| <Link id="m-testlefthand" /><code>{"private void TestLeftHand()"}</code> |
+| <Link id="m-testlefthandend" /><code>{"private void TestLeftHandEnd()"}</code> |
+| <Link id="m-testrighthand" /><code>{"private void TestRightHand()"}</code> |
+| <Link id="m-testrighthandend" /><code>{"private void TestRightHandEnd()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -17,15 +17,20 @@ A **internal class** in `Root.Township`, `Features.Climbing`. Reach it through a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClimbingMovementEvent(List<float> jumpValueRecords, List<"}<Link to="/game-api/types/game-other-namespaces/staminausagerecord">{"StaminaUsageRecord"}</Link>{"> staminaUsageRecords)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClimbingMovementEvent(List<float> jumpValueRecords, List<"}<Link to="/game-api/types/game-other-namespaces/staminausagerecord">{"StaminaUsageRecord"}</Link>{"> staminaUsageRecords)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distanceclimbedpropertyprefix" /><code>{"private const string DistanceClimbedPropertyPrefix"}</code> |  |
-| <Link id="m-eventtypekey" /><code>{"private const string EventTypeKey"}</code> |  |
-| <Link id="m-jumppropertyprefix" /><code>{"private const string JumpPropertyPrefix"}</code> |  |
-| <Link id="m-staminausagepropertyprefix" /><code>{"private const string StaminaUsagePropertyPrefix"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-distanceclimbedpropertyprefix" /><code>{"private const string DistanceClimbedPropertyPrefix"}</code> |
+| <Link id="m-eventtypekey" /><code>{"private const string EventTypeKey"}</code> |
+| <Link id="m-jumppropertyprefix" /><code>{"private const string JumpPropertyPrefix"}</code> |
+| <Link id="m-staminausagepropertyprefix" /><code>{"private const string StaminaUsagePropertyPrefix"}</code> |
+
+</details>

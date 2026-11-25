@@ -18,20 +18,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CopyToRenderTexture()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CopyToRenderTexture()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-camera" /><code>{"private Camera camera"}</code> |  |
-| <Link id="m-rendertexture" /><code>{"private RenderTexture renderTexture"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-camera" /><code>{"private Camera camera"}</code> |
+| <Link id="m-rendertexture" /><code>{"private RenderTexture renderTexture"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-onrenderimage" /><code>{"private void OnRenderImage(RenderTexture src, RenderTexture dest)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-onrenderimage" /><code>{"private void OnRenderImage(RenderTexture src, RenderTexture dest)"}</code> |
+
+</details>

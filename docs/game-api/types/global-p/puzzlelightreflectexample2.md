@@ -17,20 +17,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PuzzleLightReflectExample2()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PuzzleLightReflectExample2()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxreflectioncount" /><code>{"int maxReflectionCount"}</code> |  |
-| <Link id="m-maxstepdistance" /><code>{"float maxStepDistance"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maxreflectioncount" /><code>{"int maxReflectionCount"}</code> |
+| <Link id="m-maxstepdistance" /><code>{"float maxStepDistance"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-drawpredictedreflectionpattern" /><code>{"private void DrawPredictedReflectionPattern(Vector3 position, Vector3 direction, int reflectionRemaining)"}</code> |  |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-drawpredictedreflectionpattern" /><code>{"private void DrawPredictedReflectionPattern(Vector3 position, Vector3 direction, int reflectionRemaining)"}</code> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+
+</details>

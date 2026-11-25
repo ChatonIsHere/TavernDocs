@@ -21,15 +21,20 @@ Base for many of the game's ScriptableObject assets: just a description field an
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected GeneralValue()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected GeneralValue()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-description" /><code>{"private string description"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-description" /><code>{"private string description"}</code> |
+
+</details>
 
 ## Properties
 

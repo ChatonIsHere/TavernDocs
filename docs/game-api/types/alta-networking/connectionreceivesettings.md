@@ -22,20 +22,25 @@ Global settings for how a client spreads processing of received reliable message
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ConnectionReceiveSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConnectionReceiveSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxprocessingallowance" /><code>{"private float maxProcessingAllowance"}</code> |  |
-| <Link id="m-maxreliablemessageperframe" /><code>{"private int maxReliableMessagePerFrame"}</code> |  |
-| <Link id="m-maxreliablemessageprocessingdurationms" /><code>{"private float maxReliableMessageProcessingDurationMs"}</code> |  |
-| <Link id="m-minallowancetoprocess" /><code>{"private float minAllowanceToProcess"}</code> |  |
-| <Link id="m-minreliablemessageperframe" /><code>{"private int minReliableMessagePerFrame"}</code> |  |
-| <Link id="m-processingpercent" /><code>{"private float processingPercent"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maxprocessingallowance" /><code>{"private float maxProcessingAllowance"}</code> |
+| <Link id="m-maxreliablemessageperframe" /><code>{"private int maxReliableMessagePerFrame"}</code> |
+| <Link id="m-maxreliablemessageprocessingdurationms" /><code>{"private float maxReliableMessageProcessingDurationMs"}</code> |
+| <Link id="m-minallowancetoprocess" /><code>{"private float minAllowanceToProcess"}</code> |
+| <Link id="m-minreliablemessageperframe" /><code>{"private int minReliableMessagePerFrame"}</code> |
+| <Link id="m-processingpercent" /><code>{"private float processingPercent"}</code> |
+
+</details>
 
 ## Properties
 

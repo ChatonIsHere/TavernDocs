@@ -20,13 +20,13 @@ the player and the prefab hash
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ItemForgedEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, uint itemHash)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ItemForgedEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, uint itemHash)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-itemhash" /><code>{"uint ItemHash { get; }"}</code> |  |
-| <Link id="m-source" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-itemhash" /><code>{"uint ItemHash { get; }"}</code> |
+| <Link id="m-source" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; }"}</code> |

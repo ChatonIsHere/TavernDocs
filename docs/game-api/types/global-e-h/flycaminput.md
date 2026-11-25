@@ -20,29 +20,34 @@ Generated Unity Input System wrapper for the fly cam (spectator camera) controls
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FlyCamInput()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FlyCamInput()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-m-playing" /><code>{"private readonly InputActionMap m_Playing"}</code> |  |
-| <Link id="m-m-playing-changesenses" /><code>{"private readonly InputAction m_Playing_ChangeSenses"}</code> |  |
-| <Link id="m-m-playing-decreasesensitivity" /><code>{"private readonly InputAction m_Playing_DecreaseSensitivity"}</code> |  |
-| <Link id="m-m-playing-elevation" /><code>{"private readonly InputAction m_Playing_Elevation"}</code> |  |
-| <Link id="m-m-playing-explosionmodifier" /><code>{"private readonly InputAction m_Playing_ExplosionModifier"}</code> |  |
-| <Link id="m-m-playing-increasesensitivity" /><code>{"private readonly InputAction m_Playing_IncreaseSensitivity"}</code> |  |
-| <Link id="m-m-playing-look" /><code>{"private readonly InputAction m_Playing_Look"}</code> |  |
-| <Link id="m-m-playing-modsmuteaction" /><code>{"private readonly InputAction m_Playing_ModsMuteAction"}</code> |  |
-| <Link id="m-m-playing-motion" /><code>{"private readonly InputAction m_Playing_Motion"}</code> |  |
-| <Link id="m-m-playing-muteselfaction" /><code>{"private readonly InputAction m_Playing_MuteSelfAction"}</code> |  |
-| <Link id="m-m-playing-shownames" /><code>{"private readonly InputAction m_Playing_ShowNames"}</code> |  |
-| <Link id="m-m-playing-speeddirection" /><code>{"private readonly InputAction m_Playing_SpeedDirection"}</code> |  |
-| <Link id="m-m-playing-togglecinematicmovement" /><code>{"private readonly InputAction m_Playing_ToggleCinematicMovement"}</code> |  |
-| <Link id="m-m-playing-togglecursor" /><code>{"private readonly InputAction m_Playing_ToggleCursor"}</code> |  |
-| <Link id="m-m-playingactionscallbackinterface" /><code>{"private "}<Link to="/game-api/types/global-e-h/flycaminput-iplayingactions">{"FlyCamInput.IPlayingActions"}</Link>{" m_PlayingActionsCallbackInterface"}</code> |  |
+<details>
+<summary>15 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-m-playing" /><code>{"private readonly InputActionMap m_Playing"}</code> |
+| <Link id="m-m-playing-changesenses" /><code>{"private readonly InputAction m_Playing_ChangeSenses"}</code> |
+| <Link id="m-m-playing-decreasesensitivity" /><code>{"private readonly InputAction m_Playing_DecreaseSensitivity"}</code> |
+| <Link id="m-m-playing-elevation" /><code>{"private readonly InputAction m_Playing_Elevation"}</code> |
+| <Link id="m-m-playing-explosionmodifier" /><code>{"private readonly InputAction m_Playing_ExplosionModifier"}</code> |
+| <Link id="m-m-playing-increasesensitivity" /><code>{"private readonly InputAction m_Playing_IncreaseSensitivity"}</code> |
+| <Link id="m-m-playing-look" /><code>{"private readonly InputAction m_Playing_Look"}</code> |
+| <Link id="m-m-playing-modsmuteaction" /><code>{"private readonly InputAction m_Playing_ModsMuteAction"}</code> |
+| <Link id="m-m-playing-motion" /><code>{"private readonly InputAction m_Playing_Motion"}</code> |
+| <Link id="m-m-playing-muteselfaction" /><code>{"private readonly InputAction m_Playing_MuteSelfAction"}</code> |
+| <Link id="m-m-playing-shownames" /><code>{"private readonly InputAction m_Playing_ShowNames"}</code> |
+| <Link id="m-m-playing-speeddirection" /><code>{"private readonly InputAction m_Playing_SpeedDirection"}</code> |
+| <Link id="m-m-playing-togglecinematicmovement" /><code>{"private readonly InputAction m_Playing_ToggleCinematicMovement"}</code> |
+| <Link id="m-m-playing-togglecursor" /><code>{"private readonly InputAction m_Playing_ToggleCursor"}</code> |
+| <Link id="m-m-playingactionscallbackinterface" /><code>{"private "}<Link to="/game-api/types/global-e-h/flycaminput-iplayingactions">{"FlyCamInput.IPlayingActions"}</Link>{" m_PlayingActionsCallbackInterface"}</code> |
+
+</details>
 
 ## Properties
 
@@ -66,7 +71,15 @@ Generated Unity Input System wrapper for the fly cam (spectator camera) controls
 | <Link id="m-findaction" /><code>{"InputAction FindAction(string actionNameOrId, bool throwIfNotFound = false)"}</code> | Finds an action by name or ID in the asset. |
 | <Link id="m-findbinding" /><code>{"int FindBinding(InputBinding bindingMask, out InputAction action)"}</code> | Finds the first binding matching a mask and returns its index and action. |
 | <Link id="m-getenumerator" /><code>{"IEnumerator<InputAction> GetEnumerator()"}</code> | Iterates every action in the asset. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Iterates every action in the asset. |
+
+</details>
 
 ## Used in
 

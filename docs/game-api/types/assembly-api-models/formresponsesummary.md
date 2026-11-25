@@ -17,17 +17,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FormResponseSummary()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FormResponseSummary()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-formidentifier" /><code>{"int FormIdentifier { get; set; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |  |
-| <Link id="m-processed" /><code>{"DateTime Processed { get; set; }"}</code> |  |
-| <Link id="m-submitted" /><code>{"DateTime Submitted { get; set; }"}</code> |  |
-| <Link id="m-useridentifier" /><code>{"int UserIdentifier { get; set; }"}</code> |  |
-| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-formidentifier" /><code>{"int FormIdentifier { get; set; }"}</code> |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |
+| <Link id="m-processed" /><code>{"DateTime Processed { get; set; }"}</code> |
+| <Link id="m-submitted" /><code>{"DateTime Submitted { get; set; }"}</code> |
+| <Link id="m-useridentifier" /><code>{"int UserIdentifier { get; set; }"}</code> |
+| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> |

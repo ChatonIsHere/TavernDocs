@@ -16,13 +16,13 @@ A **static class** in `Root.Township`, `Alta.Networking`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-prepareforwritetimers" /><code>{"static Dictionary<string, "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{"> prepareForWriteTimers"}</code> |  |
-| <Link id="m-serializetimers" /><code>{"static Dictionary<string, "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{"> serializeTimers"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-prepareforwritetimers" /><code>{"static Dictionary<string, "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{"> prepareForWriteTimers"}</code> |
+| <Link id="m-serializetimers" /><code>{"static Dictionary<string, "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{"> serializeTimers"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-resetalltimers" /><code>{"static void ResetAllTimers()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-resetalltimers" /><code>{"static void ResetAllTimers()"}</code> |

@@ -17,15 +17,15 @@ An **internal interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`. Rea
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-apiclient" /><code><Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" ApiClient { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-apiclient" /><code><Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" ApiClient { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logout" /><code>{"void Logout()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-logout" /><code>{"void Logout()"}</code> |
 
 ## Used in
 

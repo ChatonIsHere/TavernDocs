@@ -16,15 +16,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ValidateItemOwnershipResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ValidateItemOwnershipResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isvalidlist" /><code>{"bool IsValidList { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isvalidlist" /><code>{"bool IsValidList { get; set; }"}</code> |
 
 ## Used in
 

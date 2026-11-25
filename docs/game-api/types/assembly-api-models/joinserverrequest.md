@@ -16,19 +16,19 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JoinServerRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JoinServerRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> |  |
-| <Link id="m-gameversion" /><code><Link to="/game-api/types/assembly-api-models/gameversion">{"GameVersion"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/gameversion">{"GameVersion"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-identitytoken" /><code>{"string IdentityToken { get; set; }"}</code> |  |
-| <Link id="m-isignoringoffline" /><code>{"bool IsIgnoringOffline { get; set; }"}</code> |  |
-| <Link id="m-shouldlaunchserver" /><code>{"bool ShouldLaunchServer { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> |
+| <Link id="m-gameversion" /><code><Link to="/game-api/types/assembly-api-models/gameversion">{"GameVersion"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/gameversion">{"GameVersion"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-identitytoken" /><code>{"string IdentityToken { get; set; }"}</code> |
+| <Link id="m-isignoringoffline" /><code>{"bool IsIgnoringOffline { get; set; }"}</code> |
+| <Link id="m-shouldlaunchserver" /><code>{"bool ShouldLaunchServer { get; set; }"}</code> |
 
 ## Used in
 

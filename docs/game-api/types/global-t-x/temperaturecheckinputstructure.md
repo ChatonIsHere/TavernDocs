@@ -21,19 +21,24 @@ Skill input settings that activate a skill when the held item (or its matching t
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TemperatureCheckInputStructure()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TemperatureCheckInputStructure()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activetime" /><code>{"private float activeTime"}</code> |  |
-| <Link id="m-haschannels" /><code>{"private bool hasChannels"}</code> |  |
-| <Link id="m-mintemperaturetoactivate" /><code>{"private float minTemperatureToActivate"}</code> |  |
-| <Link id="m-targetchannels" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] targetChannels"}</code> |  |
-| <Link id="m-timetoactivate" /><code>{"private float timeToActivate"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activetime" /><code>{"private float activeTime"}</code> |
+| <Link id="m-haschannels" /><code>{"private bool hasChannels"}</code> |
+| <Link id="m-mintemperaturetoactivate" /><code>{"private float minTemperatureToActivate"}</code> |
+| <Link id="m-targetchannels" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] targetChannels"}</code> |
+| <Link id="m-timetoactivate" /><code>{"private float timeToActivate"}</code> |
+
+</details>
 
 ## Properties
 
@@ -50,7 +55,15 @@ Skill input settings that activate a skill when the held item (or its matching t
 | <Link id="m-getnewinput" /><code>{"override "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> | Creates a `TemperatureCheckInput`. |
 | <Link id="m-validatecolliderimpactors" /><code>{"bool ValidateColliderImpactors(IEnumerable<"}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"> impactors)"}</code> | True if no channels are set, or any impactor on the collider has one of them. |
 | <Link id="m-validatepickup" /><code>{"override bool ValidatePickup("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> | True if no channels are set, or the held tool has one of them. |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>
 
 ## Used in
 

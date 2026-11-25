@@ -19,30 +19,35 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Section()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Section()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-attributemultipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributecurvevalue">{"AttributeCurveValue"}</Link>{"[] attributeMultipliers"}</code> |  |
-| <Link id="m-biomeweightings" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/biomesinglevalue">{"BiomeSingleValue"}</Link>{"[] biomeWeightings"}</code> |  |
-| <Link id="m-length" /><code>{"private int length"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-attributemultipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributecurvevalue">{"AttributeCurveValue"}</Link>{"[] attributeMultipliers"}</code> |
+| <Link id="m-biomeweightings" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/biomesinglevalue">{"BiomeSingleValue"}</Link>{"[] biomeWeightings"}</code> |
+| <Link id="m-length" /><code>{"private int length"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-length-2" /><code>{"int Length { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-length-2" /><code>{"int Length { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-applymultipliers" /><code>{"void ApplyMultipliers(int layer, "}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes)"}</code> |  |
-| <Link id="m-getrandombiome" /><code><Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" GetRandomBiome("}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" excluding = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-applymultipliers" /><code>{"void ApplyMultipliers(int layer, "}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes)"}</code> |
+| <Link id="m-getrandombiome" /><code><Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" GetRandomBiome("}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" excluding = null)"}</code> |
 
 ## Used in
 

@@ -19,17 +19,22 @@ Fetches indexes and manifests from the trusted mod sources over `NativeHttp`. Ru
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModRepoClient("}<Link to="/tavernlib-api/types/backend/nativehttp">{"NativeHttp"}</Link>{" http, List<string> repos, DateTime? deadlineUtc = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModRepoClient("}<Link to="/tavernlib-api/types/backend/nativehttp">{"NativeHttp"}</Link>{" http, List<string> repos, DateTime? deadlineUtc = null)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-jsontimeoutseconds" /><code>{"private const int JsonTimeoutSeconds"}</code> |  |
-| <Link id="m-maxjsonbytes" /><code>{"private const long MaxJsonBytes"}</code> |  |
-| <Link id="m-supportedindexmajor" /><code>{"private const int SupportedIndexMajor"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-jsontimeoutseconds" /><code>{"private const int JsonTimeoutSeconds"}</code> |
+| <Link id="m-maxjsonbytes" /><code>{"private const long MaxJsonBytes"}</code> |
+| <Link id="m-supportedindexmajor" /><code>{"private const int SupportedIndexMajor"}</code> |
+
+</details>
 
 ## Methods
 
@@ -40,10 +45,18 @@ Fetches indexes and manifests from the trusted mod sources over `NativeHttp`. Ru
 | <Link id="m-fetchmanifest" /><code><Link to="/tavernlib-api/types/backend-mods/modmanifest">{"ModManifest"}</Link>{" FetchManifest(string modId, string version, string preferRepo)"}</code> | One version's manifest, trying the preferred source first. Throws if no source serves the right id and version. |
 | <Link id="m-replacementsfrom" /><code>{"static List<"}<Link to="/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{"> ReplacementsFrom(JObject index, string baseUrl)"}</code> | Reads a source index's `replaced` section, skipping malformed entries and ones that replace a mod with itself. |
 | <Link id="m-validaterepoindex" /><code>{"static void ValidateRepoIndex(string url)"}</code> | Throws `ModManagerException` unless the URL serves a version 2 `repository.json` with a `mods` object. |
-| <Link id="m-fetchmanifestleaf" /><code>{"private "}<Link to="/tavernlib-api/types/backend-mods/modmanifest">{"ModManifest"}</Link>{" FetchManifestLeaf(string modId, string leaf, string preferRepo, string what, string expectedVersion)"}</code> |  |
-| <Link id="m-fetchrepoindex" /><code>{"private ValueTuple<List<"}<Link to="/tavernlib-api/types/backend-mods/modsummary">{"ModSummary"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{">> FetchRepoIndex(string baseUrl)"}</code> |  |
-| <Link id="m-getjson" /><code>{"private JObject GetJson(string url)"}</code> |  |
-| <Link id="m-issupported" /><code>{"private static bool IsSupported(JObject index)"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-fetchmanifestleaf" /><code>{"private "}<Link to="/tavernlib-api/types/backend-mods/modmanifest">{"ModManifest"}</Link>{" FetchManifestLeaf(string modId, string leaf, string preferRepo, string what, string expectedVersion)"}</code> |
+| <Link id="m-fetchrepoindex" /><code>{"private ValueTuple<List<"}<Link to="/tavernlib-api/types/backend-mods/modsummary">{"ModSummary"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{">> FetchRepoIndex(string baseUrl)"}</code> |
+| <Link id="m-getjson" /><code>{"private JObject GetJson(string url)"}</code> |
+| <Link id="m-issupported" /><code>{"private static bool IsSupported(JObject index)"}</code> |
+
+</details>
 
 ## Used in
 

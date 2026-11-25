@@ -18,22 +18,27 @@ Simulates which way a liquid surface points as its container moves and tips, wit
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LiquidGravity(Transform relativeTo)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LiquidGravity(Transform relativeTo)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-disableframes" /><code>{"private int disableFrames"}</code> |  |
-| <Link id="m-disableframeswhilestationary" /><code>{"private const int DisableFramesWhileStationary"}</code> |  |
-| <Link id="m-localup" /><code>{"private Vector3 localUp"}</code> |  |
-| <Link id="m-oldposition" /><code>{"private Vector3 oldPosition"}</code> |  |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> |  |
-| <Link id="m-velocity" /><code>{"private float velocity"}</code> |  |
-| <Link id="m-velocityaxis" /><code>{"private Vector3 velocityAxis"}</code> |  |
-| <Link id="m-worldup" /><code>{"private Vector3 worldUp"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-disableframes" /><code>{"private int disableFrames"}</code> |
+| <Link id="m-disableframeswhilestationary" /><code>{"private const int DisableFramesWhileStationary"}</code> |
+| <Link id="m-localup" /><code>{"private Vector3 localUp"}</code> |
+| <Link id="m-oldposition" /><code>{"private Vector3 oldPosition"}</code> |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> |
+| <Link id="m-velocity" /><code>{"private float velocity"}</code> |
+| <Link id="m-velocityaxis" /><code>{"private Vector3 velocityAxis"}</code> |
+| <Link id="m-worldup" /><code>{"private Vector3 worldUp"}</code> |
+
+</details>
 
 ## Properties
 

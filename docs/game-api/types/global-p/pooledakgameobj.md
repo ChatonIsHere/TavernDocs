@@ -17,16 +17,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PooledAkGameObj()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PooledAkGameObj()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deactivate" /><code>{"void Deactivate("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" deactivated)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deactivate" /><code>{"void Deactivate("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" deactivated)"}</code> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |
 
 ## Used in
 

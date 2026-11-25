@@ -21,17 +21,25 @@ Base for a running creature action: one go of an action on one agent, which ends
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected BasicActiveAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected BasicActiveAction()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finishentry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" finishEntry"}</code> |  |
-| <Link id="m-finishtime" /><code>{"private float finishTime"}</code> |  |
 | <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | Shared logger for actions. |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-finishentry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" finishEntry"}</code> |
+| <Link id="m-finishtime" /><code>{"private float finishTime"}</code> |
+
+</details>
 
 ## Properties
 

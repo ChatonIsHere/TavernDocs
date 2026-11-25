@@ -17,13 +17,13 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Vector4TypeConverter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Vector4TypeConverter()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-readjson" /><code>{"override Vector4 ReadJson(JsonReader reader, Type objectType, Vector4 existingValue, bool hasExistingValue, JsonSerializer serializer)"}</code> |  |
-| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, Vector4 value, JsonSerializer serializer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-readjson" /><code>{"override Vector4 ReadJson(JsonReader reader, Type objectType, Vector4 existingValue, bool hasExistingValue, JsonSerializer serializer)"}</code> |
+| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, Vector4 value, JsonSerializer serializer)"}</code> |

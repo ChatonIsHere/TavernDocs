@@ -18,15 +18,15 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected AdminTool()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected AdminTool()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loggedin" /><code>{"protected override void LoggedIn()"}</code> |  |
-| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> |  |
-| <Link id="m-setactive" /><code>{"protected abstract void SetActive(bool isActive)"}</code> |  |
-| <Link id="m-start" /><code>{"protected override void Start()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-loggedin" /><code>{"protected override void LoggedIn()"}</code> |
+| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> |
+| <Link id="m-setactive" /><code>{"protected abstract void SetActive(bool isActive)"}</code> |
+| <Link id="m-start" /><code>{"protected override void Start()"}</code> |

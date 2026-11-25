@@ -19,16 +19,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DrawBridgeRangeLogicSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DrawBridgeRangeLogicSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angle0" /><code>{"float angle0"}</code> |  |
-| <Link id="m-angle1" /><code>{"float angle1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-angle0" /><code>{"float angle0"}</code> |
+| <Link id="m-angle1" /><code>{"float angle1"}</code> |
 
 ## Used in
 

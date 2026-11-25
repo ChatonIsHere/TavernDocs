@@ -17,24 +17,24 @@ A **private class** in `Root.Township`, `Alta.Crafting`. Reach it through att-st
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PickupColliders("}<Link to="/game-api/types/alta-crafting/genericcraftingcomponent">{"GenericCraftingComponent"}</Link>{" component)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PickupColliders("}<Link to="/game-api/types/alta-crafting/igenericcraftingcomponent">{"IGenericCraftingComponent"}</Link>{" component, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PickupColliders("}<Link to="/game-api/types/alta-crafting/genericcraftingcomponent">{"GenericCraftingComponent"}</Link>{" component)"}</code> |
+| <Link id="m-ctor-2" /><code>{"PickupColliders("}<Link to="/game-api/types/alta-crafting/igenericcraftingcomponent">{"IGenericCraftingComponent"}</Link>{" component, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-colliders" /><code>{"HashSet<Collider> Colliders"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-colliders" /><code>{"HashSet<Collider> Colliders"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-component" /><code><Link to="/game-api/types/alta-crafting/igenericcraftingcomponent">{"IGenericCraftingComponent"}</Link>{" Component { get; }"}</code> |  |
-| <Link id="m-needstoremove" /><code>{"bool NeedsToRemove { get; }"}</code> |  |
-| <Link id="m-pickup" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-component" /><code><Link to="/game-api/types/alta-crafting/igenericcraftingcomponent">{"IGenericCraftingComponent"}</Link>{" Component { get; }"}</code> |
+| <Link id="m-needstoremove" /><code>{"bool NeedsToRemove { get; }"}</code> |
+| <Link id="m-pickup" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> |
 
 ## Used in
 

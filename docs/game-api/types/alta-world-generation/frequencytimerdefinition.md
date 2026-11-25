@@ -19,28 +19,33 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FrequencyTimerDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FrequencyTimerDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-elementdecaytime" /><code>{"private float elementDecayTime"}</code> |  |
-| <Link id="m-entries" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{", "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{"> entries"}</code> |  |
-| <Link id="m-ticktime" /><code>{"private float tickTime"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-elementdecaytime" /><code>{"private float elementDecayTime"}</code> |
+| <Link id="m-entries" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{", "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{"> entries"}</code> |
+| <Link id="m-ticktime" /><code>{"private float tickTime"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-elementdecaytime-2" /><code>{"override float ElementDecayTime { get; }"}</code> |  |
-| <Link id="m-spawnoninitialize" /><code>{"override bool SpawnOnInitialize { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-elementdecaytime-2" /><code>{"override float ElementDecayTime { get; }"}</code> |
+| <Link id="m-spawnoninitialize" /><code>{"override bool SpawnOnInitialize { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clean" /><code>{"override void Clean("}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> |  |
-| <Link id="m-setup" /><code>{"override void Setup("}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clean" /><code>{"override void Clean("}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> |
+| <Link id="m-setup" /><code>{"override void Setup("}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> |

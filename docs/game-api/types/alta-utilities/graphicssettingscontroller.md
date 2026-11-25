@@ -16,14 +16,27 @@ A **static class** in `Root.Township`, `Alta.Utility.Graphics`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-customdeferred" /><code>{"private const string CustomDeferred"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-customdeferred" /><code>{"private const string CustomDeferred"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setshaderstoandroidvariants" /><code>{"static void SetShadersToAndroidVariants()"}</code> |  |
-| <Link id="m-setshaderstowindowsvariants" /><code>{"static void SetShadersToWindowsVariants()"}</code> |  |
-| <Link id="m-setshadermode" /><code>{"private static void SetShaderMode(BuiltinShaderType shaderType, BuiltinShaderMode mode)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setshaderstoandroidvariants" /><code>{"static void SetShadersToAndroidVariants()"}</code> |
+| <Link id="m-setshaderstowindowsvariants" /><code>{"static void SetShadersToWindowsVariants()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-setshadermode" /><code>{"private static void SetShaderMode(BuiltinShaderType shaderType, BuiltinShaderMode mode)"}</code> |
+
+</details>

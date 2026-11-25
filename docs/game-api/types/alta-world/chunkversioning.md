@@ -18,16 +18,21 @@ The set of save format versions a chunk was written with: a map from save type h
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkVersioning()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ChunkVersioning(string version)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkVersioning()"}</code> |
+| <Link id="m-ctor-2" /><code>{"ChunkVersioning(string version)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 

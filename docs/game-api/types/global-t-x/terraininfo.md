@@ -20,20 +20,28 @@ Singleton (`SingletonBehaviour<TerrainInfo>.Instance`) wrapping the world's Unit
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TerrainInfo()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TerrainInfo()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-splatmapdivider" /><code>{"const int SplatMapDivider"}</code> | Constant 2. Probably the splat map's resolution divisor. |
-| <Link id="m-splatcontrol" /><code>{"private static readonly int _SplatControl"}</code> |  |
-| <Link id="m-instantiatedsplat" /><code>{"private Texture2D instantiatedSplat"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-sourcesplat" /><code>{"private Texture2D sourceSplat"}</code> |  |
-| <Link id="m-terrain" /><code>{"private Terrain terrain"}</code> |  |
+
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-splatcontrol" /><code>{"private static readonly int _SplatControl"}</code> |
+| <Link id="m-instantiatedsplat" /><code>{"private Texture2D instantiatedSplat"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-sourcesplat" /><code>{"private Texture2D sourceSplat"}</code> |
+| <Link id="m-terrain" /><code>{"private Terrain terrain"}</code> |
+
+</details>
 
 ## Properties
 
@@ -59,7 +67,15 @@ Singleton (`SingletonBehaviour<TerrainInfo>.Instance`) wrapping the world's Unit
 | <Link id="m-initializeeditor" /><code>{"void InitializeEditor()"}</code> | Editor: reads the terrain data without copying it. |
 | <Link id="m-isabove" /><code>{"bool IsAbove(Vector3 point, float lenience = 0)"}</code> | True if the point is above the terrain, allowing some lenience. |
 | <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Copies the terrain data (except on Android) and hooks it to the terrain and its collider. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>
 
 ## Used in
 

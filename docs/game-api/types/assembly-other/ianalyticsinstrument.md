@@ -17,9 +17,9 @@ An **interface** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-appendresult" /><code>{"void AppendResult("}<Link to="/game-api/types/assembly-other/ianalyticsdata">{"IAnalyticsData"}</Link>{" data)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-appendresult" /><code>{"void AppendResult("}<Link to="/game-api/types/assembly-other/ianalyticsdata">{"IAnalyticsData"}</Link>{" data)"}</code> |
 
 ## Used in
 

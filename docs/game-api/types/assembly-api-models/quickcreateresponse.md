@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"QuickCreateResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"QuickCreateResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-group" /><code><Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" Group { get; set; }"}</code> |  |
-| <Link id="m-server" /><code><Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" Server { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-group" /><code><Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" Group { get; set; }"}</code> |
+| <Link id="m-server" /><code><Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" Server { get; set; }"}</code> |
 
 ## Used in
 

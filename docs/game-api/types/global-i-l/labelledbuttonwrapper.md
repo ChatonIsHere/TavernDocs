@@ -19,17 +19,22 @@ A physical button with a text label that updates when the label changes.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LabelledButtonWrapper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LabelledButtonWrapper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-button" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" button"}</code> |  |
-| <Link id="m-label" /><code>{"private string label"}</code> |  |
-| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-button" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" button"}</code> |
+| <Link id="m-label" /><code>{"private string label"}</code> |
+| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> |
+
+</details>
 
 ## Properties
 
@@ -49,7 +54,15 @@ A physical button with a text label that updates when the label changes.
 | Member | What it is |
 | --- | --- |
 | <Link id="m-awake" /><code>{"protected void Awake()"}</code> | Shows the serialized label and starts updating the text on changes. |
-| <Link id="m-onlabelchanged" /><code>{"private void OnLabelChanged("}<Link to="/game-api/types/global-i-l/labelledbuttonwrapper">{"LabelledButtonWrapper"}</Link>{" buttonWrapper)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onlabelchanged" /><code>{"private void OnLabelChanged("}<Link to="/game-api/types/global-i-l/labelledbuttonwrapper">{"LabelledButtonWrapper"}</Link>{" buttonWrapper)"}</code> |
+
+</details>
 
 ## Used in
 

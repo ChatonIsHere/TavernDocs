@@ -17,18 +17,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShapeCollectorHelper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShapeCollectorHelper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-collector" /><code><Link to="/game-api/types/global-s/shapeimpactcollector">{"ShapeImpactCollector"}</Link>{" collector"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-collector" /><code><Link to="/game-api/types/global-s/shapeimpactcollector">{"ShapeImpactCollector"}</Link>{" collector"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+
+</details>

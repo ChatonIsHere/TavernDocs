@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BufferChangeRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BufferChangeRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fleet" /><code>{"string Fleet { get; set; }"}</code> |  |
-| <Link id="m-increase" /><code>{"int Increase { get; set; }"}</code> |  |
-| <Link id="m-region" /><code>{"string Region { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fleet" /><code>{"string Fleet { get; set; }"}</code> |
+| <Link id="m-increase" /><code>{"int Increase { get; set; }"}</code> |
+| <Link id="m-region" /><code>{"string Region { get; set; }"}</code> |
 
 ## Used in
 

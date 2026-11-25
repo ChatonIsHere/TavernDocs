@@ -17,9 +17,17 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getworldtojoint" /><code>{"static Quaternion GetWorldToJoint(ConfigurableJoint joint)"}</code> |  |
-| <Link id="m-settargetrotation" /><code>{"static void SetTargetRotation(ConfigurableJoint joint, Quaternion targetWorldRotation, Quaternion startWorldRotation)"}</code> |  |
-| <Link id="m-settargetrotationlocal" /><code>{"static void SetTargetRotationLocal(ConfigurableJoint joint, Quaternion targetLocalRotation, Quaternion startLocalRotation)"}</code> |  |
-| <Link id="m-settargetrotationinternal" /><code>{"private static void SetTargetRotationInternal(ConfigurableJoint joint, Quaternion targetRotation, Quaternion startRotation, Space space)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getworldtojoint" /><code>{"static Quaternion GetWorldToJoint(ConfigurableJoint joint)"}</code> |
+| <Link id="m-settargetrotation" /><code>{"static void SetTargetRotation(ConfigurableJoint joint, Quaternion targetWorldRotation, Quaternion startWorldRotation)"}</code> |
+| <Link id="m-settargetrotationlocal" /><code>{"static void SetTargetRotationLocal(ConfigurableJoint joint, Quaternion targetLocalRotation, Quaternion startLocalRotation)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-settargetrotationinternal" /><code>{"private static void SetTargetRotationInternal(ConfigurableJoint joint, Quaternion targetRotation, Quaternion startRotation, Space space)"}</code> |
+
+</details>

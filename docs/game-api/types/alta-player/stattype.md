@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, `Alta.Achievements`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-float" /><code>{"Float = 1"}</code> |  |
-| <Link id="m-int" /><code>{"Int = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-float" /><code>{"Float = 1"}</code> |
+| <Link id="m-int" /><code>{"Int = 0"}</code> |
 
 ## Used in
 

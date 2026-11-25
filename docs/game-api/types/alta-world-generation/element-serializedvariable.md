@@ -17,16 +17,16 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedVariable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SerializedVariable()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"string name"}</code> |  |
-| <Link id="m-value" /><code><Link to="/game-api/types/assembly-other/generalvalue">{"GeneralValue"}</Link>{" value"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"string name"}</code> |
+| <Link id="m-value" /><code><Link to="/game-api/types/assembly-other/generalvalue">{"GeneralValue"}</Link>{" value"}</code> |
 
 ## Used in
 

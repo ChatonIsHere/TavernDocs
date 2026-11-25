@@ -16,13 +16,13 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-indexfinger" /><code>{"IndexFinger = 2"}</code> |  |
-| <Link id="m-littlefinger" /><code>{"LittleFinger = 16"}</code> |  |
-| <Link id="m-middlefinger" /><code>{"MiddleFinger = 4"}</code> |  |
-| <Link id="m-ringfinger" /><code>{"RingFinger = 8"}</code> |  |
-| <Link id="m-thumb" /><code>{"Thumb = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-indexfinger" /><code>{"IndexFinger = 2"}</code> |
+| <Link id="m-littlefinger" /><code>{"LittleFinger = 16"}</code> |
+| <Link id="m-middlefinger" /><code>{"MiddleFinger = 4"}</code> |
+| <Link id="m-ringfinger" /><code>{"RingFinger = 8"}</code> |
+| <Link id="m-thumb" /><code>{"Thumb = 1"}</code> |
 
 ## Used in
 

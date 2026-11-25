@@ -20,21 +20,26 @@ Action settings for a wyrm's spit attack (`ActiveSpit`), scored by distance, hur
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WyrmSpitSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WyrmSpitSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animatedangle" /><code>{"private string animatedAngle"}</code> |  |
-| <Link id="m-bestrange" /><code>{"private float bestRange"}</code> |  |
-| <Link id="m-changetargetmultiplier" /><code>{"private float changeTargetMultiplier"}</code> |  |
-| <Link id="m-hurtweighting" /><code>{"private float hurtWeighting"}</code> |  |
-| <Link id="m-maximumrange" /><code>{"private float maximumRange"}</code> |  |
-| <Link id="m-sametargetmultiplier" /><code>{"private float sameTargetMultiplier"}</code> |  |
-| <Link id="m-spittriggers" /><code>{"private string[] spitTriggers"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animatedangle" /><code>{"private string animatedAngle"}</code> |
+| <Link id="m-bestrange" /><code>{"private float bestRange"}</code> |
+| <Link id="m-changetargetmultiplier" /><code>{"private float changeTargetMultiplier"}</code> |
+| <Link id="m-hurtweighting" /><code>{"private float hurtWeighting"}</code> |
+| <Link id="m-maximumrange" /><code>{"private float maximumRange"}</code> |
+| <Link id="m-sametargetmultiplier" /><code>{"private float sameTargetMultiplier"}</code> |
+| <Link id="m-spittriggers" /><code>{"private string[] spitTriggers"}</code> |
+
+</details>
 
 ## Properties
 

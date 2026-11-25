@@ -17,6 +17,6 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ReferenceEqualsComparer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ReferenceEqualsComparer()"}</code> |

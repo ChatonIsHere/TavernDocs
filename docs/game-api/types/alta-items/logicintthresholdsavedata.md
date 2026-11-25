@@ -19,19 +19,19 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntThresholdSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogicIntThresholdSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactiveabovethreshold" /><code>{"bool isActiveAboveThreshold"}</code> |  |
-| <Link id="m-threshold" /><code>{"int threshold"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isactiveabovethreshold" /><code>{"bool isActiveAboveThreshold"}</code> |
+| <Link id="m-threshold" /><code>{"int threshold"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/alta-items/logicintsavedata">{"LogicIntSaveData"}</Link>{" Data { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data" /><code><Link to="/game-api/types/alta-items/logicintsavedata">{"LogicIntSaveData"}</Link>{" Data { get; set; }"}</code> |

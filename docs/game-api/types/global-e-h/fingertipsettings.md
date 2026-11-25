@@ -16,25 +16,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FingerTipSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FingerTipSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-leftfingertip" /><code>{"private Transform leftFingerTip"}</code> |  |
-| <Link id="m-lefthandtriangle" /><code>{"private "}<Link to="/game-api/types/global-e-h/handtriangle">{"HandTriangle"}</Link>{" leftHandTriangle"}</code> |  |
-| <Link id="m-rightfingertip" /><code>{"private Transform rightFingerTip"}</code> |  |
-| <Link id="m-righthandtriangle" /><code>{"private "}<Link to="/game-api/types/global-e-h/handtriangle">{"HandTriangle"}</Link>{" rightHandTriangle"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-leftfingertip" /><code>{"private Transform leftFingerTip"}</code> |
+| <Link id="m-lefthandtriangle" /><code>{"private "}<Link to="/game-api/types/global-e-h/handtriangle">{"HandTriangle"}</Link>{" leftHandTriangle"}</code> |
+| <Link id="m-rightfingertip" /><code>{"private Transform rightFingerTip"}</code> |
+| <Link id="m-righthandtriangle" /><code>{"private "}<Link to="/game-api/types/global-e-h/handtriangle">{"HandTriangle"}</Link>{" rightHandTriangle"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getfingertip" /><code>{"Transform GetFingerTip(bool isLeftHand)"}</code> |  |
-| <Link id="m-gettriangle" /><code><Link to="/game-api/types/global-t-x/worldspacetriangle">{"WorldSpaceTriangle"}</Link>{" GetTriangle(bool isLeftHand)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getfingertip" /><code>{"Transform GetFingerTip(bool isLeftHand)"}</code> |
+| <Link id="m-gettriangle" /><code><Link to="/game-api/types/global-t-x/worldspacetriangle">{"WorldSpaceTriangle"}</Link>{" GetTriangle(bool isLeftHand)"}</code> |
 
 ## Used in
 

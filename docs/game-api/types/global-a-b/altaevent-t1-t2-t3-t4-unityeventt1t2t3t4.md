@@ -18,33 +18,43 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaEvent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-triggered" /><code>{"private UnityEventT1T2T3T4 triggered"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-triggered" /><code>{"private UnityEventT1T2T3T4 triggered"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ialtaeventvalidation-eventbase" /><code>{"private UnityEventBase IAltaEventValidation.EventBase { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-ialtaeventvalidation-eventbase" /><code>{"private UnityEventBase IAltaEventValidation.EventBase { get; }"}</code> |
+
+</details>
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-triggered-2" /><code>{"event Action<T1, T2, T3, T4> Triggered"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-triggered-2" /><code>{"event Action<T1, T2, T3, T4> Triggered"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-op-addition" /><code>{"static "}<Link to="/game-api/types/global-a-b/altaevent-t1-t2-t3-t4-unityeventt1t2t3t4">{"AltaEvent"}</Link>{"<T1, T2, T3, T4, UnityEventT1T2T3T4> op_Addition("}<Link to="/game-api/types/global-a-b/altaevent-t1-t2-t3-t4-unityeventt1t2t3t4">{"AltaEvent"}</Link>{"<T1, T2, T3, T4, UnityEventT1T2T3T4> altaEvent, Action<T1, T2, T3, T4> eventHandler)"}</code> |  |
-| <Link id="m-op-subtraction" /><code>{"static "}<Link to="/game-api/types/global-a-b/altaevent-t1-t2-t3-t4-unityeventt1t2t3t4">{"AltaEvent"}</Link>{"<T1, T2, T3, T4, UnityEventT1T2T3T4> op_Subtraction("}<Link to="/game-api/types/global-a-b/altaevent-t1-t2-t3-t4-unityeventt1t2t3t4">{"AltaEvent"}</Link>{"<T1, T2, T3, T4, UnityEventT1T2T3T4> altaEvent, Action<T1, T2, T3, T4> eventHandler)"}</code> |  |
-| <Link id="m-trigger" /><code>{"void Trigger(T1 argument1, T2 argument2, T3 argument3, T4 argument4)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-op-addition" /><code>{"static "}<Link to="/game-api/types/global-a-b/altaevent-t1-t2-t3-t4-unityeventt1t2t3t4">{"AltaEvent"}</Link>{"<T1, T2, T3, T4, UnityEventT1T2T3T4> op_Addition("}<Link to="/game-api/types/global-a-b/altaevent-t1-t2-t3-t4-unityeventt1t2t3t4">{"AltaEvent"}</Link>{"<T1, T2, T3, T4, UnityEventT1T2T3T4> altaEvent, Action<T1, T2, T3, T4> eventHandler)"}</code> |
+| <Link id="m-op-subtraction" /><code>{"static "}<Link to="/game-api/types/global-a-b/altaevent-t1-t2-t3-t4-unityeventt1t2t3t4">{"AltaEvent"}</Link>{"<T1, T2, T3, T4, UnityEventT1T2T3T4> op_Subtraction("}<Link to="/game-api/types/global-a-b/altaevent-t1-t2-t3-t4-unityeventt1t2t3t4">{"AltaEvent"}</Link>{"<T1, T2, T3, T4, UnityEventT1T2T3T4> altaEvent, Action<T1, T2, T3, T4> eventHandler)"}</code> |
+| <Link id="m-trigger" /><code>{"void Trigger(T1 argument1, T2 argument2, T3 argument3, T4 argument4)"}</code> |

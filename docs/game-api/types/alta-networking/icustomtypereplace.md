@@ -18,6 +18,6 @@ An **interface** in `Root.Township`, `Alta.Networking`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-replacetype" /><code>{"Type ReplaceType { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-replacetype" /><code>{"Type ReplaceType { get; }"}</code> |

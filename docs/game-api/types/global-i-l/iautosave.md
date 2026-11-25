@@ -20,9 +20,9 @@ Add yours to `StreamerManager.AutoSavingBehaviours` to run in every world save.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-autosave" /><code>{"void AutoSave()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-autosave" /><code>{"void AutoSave()"}</code> |
 
 ## Used in
 

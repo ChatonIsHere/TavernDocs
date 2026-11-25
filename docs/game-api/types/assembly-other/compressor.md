@@ -17,26 +17,26 @@ A **class** in `Alta.Serialization.Runtime`, `Alta.Serialization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Compressor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Compressor()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bitindex" /><code>{"override uint BitIndex { get; }"}</code> |  |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/assembly-other/compressor">{"Compressor"}</Link>{" Instance { get; private set; }"}</code> |  |
-| <Link id="m-totalbytecount" /><code>{"override uint TotalByteCount { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bitindex" /><code>{"override uint BitIndex { get; }"}</code> |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/assembly-other/compressor">{"Compressor"}</Link>{" Instance { get; private set; }"}</code> |
+| <Link id="m-totalbytecount" /><code>{"override uint TotalByteCount { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-align" /><code>{"override void Align()"}</code> |  |
-| <Link id="m-backtrack" /><code>{"override void BackTrack(uint bitCount)"}</code> |  |
-| <Link id="m-clone" /><code>{"override object Clone()"}</code> |  |
-| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> |  |
-| <Link id="m-serializebits" /><code>{"override void SerializeBits(ref uint value, int bitCount)"}</code> |  |
-| <Link id="m-serializestring" /><code>{"override void SerializeString(ref string value, "}<Link to="/game-api/types/assembly-other/stream-stringencoding">{"Stream.StringEncoding"}</Link>{" encoding = 0)"}</code> |  |
-| <Link id="m-serializebytes" /><code>{"protected override void SerializeBytes(byte[] value, int byteCount)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-align" /><code>{"override void Align()"}</code> |
+| <Link id="m-backtrack" /><code>{"override void BackTrack(uint bitCount)"}</code> |
+| <Link id="m-clone" /><code>{"override object Clone()"}</code> |
+| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> |
+| <Link id="m-serializebits" /><code>{"override void SerializeBits(ref uint value, int bitCount)"}</code> |
+| <Link id="m-serializestring" /><code>{"override void SerializeString(ref string value, "}<Link to="/game-api/types/assembly-other/stream-stringencoding">{"Stream.StringEncoding"}</Link>{" encoding = 0)"}</code> |
+| <Link id="m-serializebytes" /><code>{"protected override void SerializeBytes(byte[] value, int byteCount)"}</code> |

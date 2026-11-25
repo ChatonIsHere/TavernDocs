@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TreeSpawnerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TreeSpawnerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-waittorespawn" /><code>{"TimeSpan waitToRespawn"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-waittorespawn" /><code>{"TimeSpan waitToRespawn"}</code> |

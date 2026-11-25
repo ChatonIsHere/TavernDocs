@@ -17,9 +17,9 @@ A **class** in `Alta.IO`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerPreferenceString(string key)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerPreferenceString(string key)"}</code> |
 
 ## Used in
 

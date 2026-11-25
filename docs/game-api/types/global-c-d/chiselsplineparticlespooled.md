@@ -17,33 +17,38 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChiselSplineParticlesPooled()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChiselSplineParticlesPooled()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alignmentweigth" /><code>{"private float alignmentWeigth"}</code> |  |
-| <Link id="m-alphabasedonalignment" /><code>{"private AnimationCurve alphaBasedOnAlignment"}</code> |  |
-| <Link id="m-speedmultiplier" /><code>{"private float speedMultiplier"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-alignmentweigth" /><code>{"private float alignmentWeigth"}</code> |
+| <Link id="m-alphabasedonalignment" /><code>{"private AnimationCurve alphaBasedOnAlignment"}</code> |
+| <Link id="m-speedmultiplier" /><code>{"private float speedMultiplier"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-originpositionoverride" /><code>{"Vector3 OriginPositionOverride { get; set; }"}</code> |  |
-| <Link id="m-originrotation" /><code>{"Quaternion OriginRotation { get; set; }"}</code> |  |
-| <Link id="m-targetrotation" /><code>{"Quaternion TargetRotation { get; set; }"}</code> |  |
-| <Link id="m-alignmentmultiplier" /><code>{"protected override float AlignmentMultiplier { get; }"}</code> |  |
-| <Link id="m-originforward" /><code>{"protected override Vector3 OriginForward { get; }"}</code> |  |
-| <Link id="m-originposition" /><code>{"protected override Vector3 OriginPosition { get; }"}</code> |  |
-| <Link id="m-targetforward" /><code>{"protected override Vector3 TargetForward { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-originpositionoverride" /><code>{"Vector3 OriginPositionOverride { get; set; }"}</code> |
+| <Link id="m-originrotation" /><code>{"Quaternion OriginRotation { get; set; }"}</code> |
+| <Link id="m-targetrotation" /><code>{"Quaternion TargetRotation { get; set; }"}</code> |
+| <Link id="m-alignmentmultiplier" /><code>{"protected override float AlignmentMultiplier { get; }"}</code> |
+| <Link id="m-originforward" /><code>{"protected override Vector3 OriginForward { get; }"}</code> |
+| <Link id="m-originposition" /><code>{"protected override Vector3 OriginPosition { get; }"}</code> |
+| <Link id="m-targetforward" /><code>{"protected override Vector3 TargetForward { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
-| <Link id="m-multiplier" /><code>{"protected override float Multiplier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |
+| <Link id="m-multiplier" /><code>{"protected override float Multiplier()"}</code> |

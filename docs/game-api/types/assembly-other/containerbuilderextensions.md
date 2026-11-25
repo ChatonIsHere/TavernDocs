@@ -17,7 +17,7 @@ A **static class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bind" /><code>{"static "}<Link to="/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{"<TContract> Bind<TContract>(IContainerBuilder container)"}</code> |  |
-| <Link id="m-injectandisolate" /><code>{"static void InjectAndIsolate<TContract>(IContainerBuilder container)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bind" /><code>{"static "}<Link to="/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{"<TContract> Bind<TContract>(IContainerBuilder container)"}</code> |
+| <Link id="m-injectandisolate" /><code>{"static void InjectAndIsolate<TContract>(IContainerBuilder container)"}</code> |

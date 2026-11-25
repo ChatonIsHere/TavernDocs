@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, `Features.Gameplay.ClimbingTower`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addspiritmodeonenter" /><code>{"AddSpiritModeOnEnter = 1"}</code> |  |
-| <Link id="m-removespiritmodeonenter" /><code>{"RemoveSpiritModeOnEnter = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addspiritmodeonenter" /><code>{"AddSpiritModeOnEnter = 1"}</code> |
+| <Link id="m-removespiritmodeonenter" /><code>{"RemoveSpiritModeOnEnter = 0"}</code> |
 
 ## Used in
 

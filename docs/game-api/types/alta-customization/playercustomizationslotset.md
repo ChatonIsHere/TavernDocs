@@ -16,21 +16,26 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerCustomizationSlotSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerCustomizationSlotSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-slots" /><code>{"private int[] slots"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-slots" /><code>{"private int[] slots"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-slots-2" /><code>{"int[] Slots { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-slots-2" /><code>{"int[] Slots { get; }"}</code> |
 
 ## Used in
 

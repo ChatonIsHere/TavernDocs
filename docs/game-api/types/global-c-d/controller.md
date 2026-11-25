@@ -20,24 +20,29 @@ One hand of a player: the network behaviour that holds the grip point, the `Hand
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Controller()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Controller()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allextensions" /><code>{"private List<"}<Link to="/game-api/types/global-c-d/controllerextension">{"ControllerExtension"}</Link>{"> allExtensions"}</code> |  |
-| <Link id="m-existingextensions" /><code>{"private List<"}<Link to="/game-api/types/global-c-d/controllerextension">{"ControllerExtension"}</Link>{"> existingExtensions"}</code> |  |
-| <Link id="m-extensionsgroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" extensionsGroup"}</code> |  |
-| <Link id="m-extensionsonikhand" /><code>{"private Transform extensionsOnIKHand"}</code> |  |
-| <Link id="m-grippoint" /><code>{"private Transform gripPoint"}</code> |  |
-| <Link id="m-hand" /><code>{"private "}<Link to="/game-api/types/alta-player/hand">{"Hand"}</Link>{" hand"}</code> |  |
-| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> |  |
-| <Link id="m-localextensionsgroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" localExtensionsGroup"}</code> |  |
-| <Link id="m-networktransform" /><code>{"private "}<Link to="/game-api/types/alta-networking/networktransform">{"NetworkTransform"}</Link>{" networkTransform"}</code> |  |
-| <Link id="m-ownedextensionsonikhand" /><code>{"private Transform ownedExtensionsOnIKHand"}</code> |  |
+<details>
+<summary>10 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-allextensions" /><code>{"private List<"}<Link to="/game-api/types/global-c-d/controllerextension">{"ControllerExtension"}</Link>{"> allExtensions"}</code> |
+| <Link id="m-existingextensions" /><code>{"private List<"}<Link to="/game-api/types/global-c-d/controllerextension">{"ControllerExtension"}</Link>{"> existingExtensions"}</code> |
+| <Link id="m-extensionsgroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" extensionsGroup"}</code> |
+| <Link id="m-extensionsonikhand" /><code>{"private Transform extensionsOnIKHand"}</code> |
+| <Link id="m-grippoint" /><code>{"private Transform gripPoint"}</code> |
+| <Link id="m-hand" /><code>{"private "}<Link to="/game-api/types/alta-player/hand">{"Hand"}</Link>{" hand"}</code> |
+| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> |
+| <Link id="m-localextensionsgroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" localExtensionsGroup"}</code> |
+| <Link id="m-networktransform" /><code>{"private "}<Link to="/game-api/types/alta-networking/networktransform">{"NetworkTransform"}</Link>{" networkTransform"}</code> |
+| <Link id="m-ownedextensionsonikhand" /><code>{"private Transform ownedExtensionsOnIKHand"}</code> |
+
+</details>
 
 ## Properties
 
@@ -65,10 +70,18 @@ One hand of a player: the network behaviour that holds the grip point, the `Hand
 | <Link id="m-triggerhaptic" /><code>{"void TriggerHaptic(float strength, float duration, float frequency = 80)"}</code> | Vibrates this hand's controller, by strength and duration or by a curve. The strength version only acts on clients. |
 | <Link id="m-triggerhaptic-2" /><code>{"void TriggerHaptic(AnimationCurve curve, float strength = 1, float frequency = 80)"}</code> | Vibrates this hand's controller, by strength and duration or by a curve. The strength version only acts on clients. |
 | <Link id="m-trygetheldpickup" /><code>{"bool TryGetHeldPickup(out "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Returns the pickup this hand is holding, if the interactor is holding a `Pickup`. |
-| <Link id="m-addextension" /><code>{"private void AddExtension("}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" group)"}</code> |  |
-| <Link id="m-createextensionobject" /><code>{"private void CreateExtensionObject("}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" group, bool isIKHand)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-setupgrippointrigidbody" /><code>{"private bool SetupGripPointRigidbody()"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-addextension" /><code>{"private void AddExtension("}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" group)"}</code> |
+| <Link id="m-createextensionobject" /><code>{"private void CreateExtensionObject("}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" group, bool isIKHand)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-setupgrippointrigidbody" /><code>{"private bool SetupGripPointRigidbody()"}</code> |
+
+</details>
 
 ## Used in
 

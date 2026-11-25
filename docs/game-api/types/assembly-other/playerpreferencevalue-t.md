@@ -18,26 +18,31 @@ An **abstract class** in `Alta.IO`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PlayerPreferenceValue(string key, Action<string, T> setter, Func<string, T, T> getter)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PlayerPreferenceValue(string key, Action<string, T> setter, Func<string, T, T> getter)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getter" /><code>{"private readonly Func<string, T, T> getter"}</code> |  |
-| <Link id="m-key" /><code>{"private readonly string key"}</code> |  |
-| <Link id="m-setter" /><code>{"private readonly Action<string, T> setter"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-getter" /><code>{"private readonly Func<string, T, T> getter"}</code> |
+| <Link id="m-key" /><code>{"private readonly string key"}</code> |
+| <Link id="m-setter" /><code>{"private readonly Action<string, T> setter"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-value" /><code>{"T Value { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-value" /><code>{"T Value { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-op-implicit" /><code>{"static T op_Implicit("}<Link to="/game-api/types/assembly-other/playerpreferencevalue-t">{"PlayerPreferenceValue"}</Link>{"<T> value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-op-implicit" /><code>{"static T op_Implicit("}<Link to="/game-api/types/assembly-other/playerpreferencevalue-t">{"PlayerPreferenceValue"}</Link>{"<T> value)"}</code> |

@@ -22,19 +22,24 @@ An achievement asset: a player progress flag that can play an effect and lists c
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameAchievement()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameAchievement()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isshowingeffect" /><code>{"private bool isShowingEffect"}</code> |  |
-| <Link id="m-overridecompletedeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" overrideCompletedEffectDefinition"}</code> |  |
-| <Link id="m-rewardskus" /><code>{"private List<string> rewardSkus"}</code> |  |
-| <Link id="m-supporteronlyrewardskus" /><code>{"private List<string> supporterOnlyRewardSkus"}</code> |  |
-| <Link id="m-unlockdelayinseconds" /><code>{"private float unlockDelayInSeconds"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isshowingeffect" /><code>{"private bool isShowingEffect"}</code> |
+| <Link id="m-overridecompletedeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" overrideCompletedEffectDefinition"}</code> |
+| <Link id="m-rewardskus" /><code>{"private List<string> rewardSkus"}</code> |
+| <Link id="m-supporteronlyrewardskus" /><code>{"private List<string> supporterOnlyRewardSkus"}</code> |
+| <Link id="m-unlockdelayinseconds" /><code>{"private float unlockDelayInSeconds"}</code> |
+
+</details>
 
 ## Properties
 

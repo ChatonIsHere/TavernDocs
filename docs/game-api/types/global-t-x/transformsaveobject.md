@@ -17,33 +17,38 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TransformSaveObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TransformSaveObject()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-transformname" /><code>{"private string transformName"}</code> |  |
-| <Link id="m-transformsave" /><code>{"private TransformSave transformSave"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-transformname" /><code>{"private string transformName"}</code> |
+| <Link id="m-transformsave" /><code>{"private TransformSave transformSave"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> |  |
-| <Link id="m-rotation" /><code>{"Quaternion Rotation { get; }"}</code> |  |
-| <Link id="m-transformname-2" /><code>{"string TransformName { get; set; }"}</code> |  |
-| <Link id="m-transformsave-2" /><code>{"TransformSave TransformSave { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> |
+| <Link id="m-rotation" /><code>{"Quaternion Rotation { get; }"}</code> |
+| <Link id="m-transformname-2" /><code>{"string TransformName { get; set; }"}</code> |
+| <Link id="m-transformsave-2" /><code>{"TransformSave TransformSave { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loadinto" /><code>{"override bool LoadInto(Transform transform)"}</code> |  |
-| <Link id="m-save" /><code>{"override void Save(Transform transform, bool isLocalSave)"}</code> |  |
-| <Link id="m-updatename" /><code>{"void UpdateName(string newName)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-loadinto" /><code>{"override bool LoadInto(Transform transform)"}</code> |
+| <Link id="m-save" /><code>{"override void Save(Transform transform, bool isLocalSave)"}</code> |
+| <Link id="m-updatename" /><code>{"void UpdateName(string newName)"}</code> |
 
 ## Used in
 

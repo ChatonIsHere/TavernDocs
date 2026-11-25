@@ -19,17 +19,22 @@ A serializable pair of an object and a float, for inspector lists of weighted or
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SingleValue()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"SingleValue(T topic, float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SingleValue()"}</code> |
+| <Link id="m-ctor-2" /><code>{"SingleValue(T topic, float value)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-topic" /><code>{"private T topic"}</code> |  |
-| <Link id="m-value" /><code>{"private float value"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-topic" /><code>{"private T topic"}</code> |
+| <Link id="m-value" /><code>{"private float value"}</code> |
+
+</details>
 
 ## Properties
 

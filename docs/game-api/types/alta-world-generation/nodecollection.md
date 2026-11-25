@@ -18,15 +18,20 @@ A set of grid nodes from the PAGaC procedural generator, with a running bounding
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NodeCollection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NodeCollection()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-nodes" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> nodes"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-nodes" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> nodes"}</code> |
+
+</details>
 
 ## Properties
 
@@ -51,7 +56,15 @@ A set of grid nodes from the PAGaC procedural generator, with a running bounding
 | <Link id="m-remove" /><code>{"bool Remove("}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" node)"}</code> | Removes one or more nodes and recalculates any bound they were on. |
 | <Link id="m-remove-2" /><code>{"bool Remove(IEnumerable<"}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> removing)"}</code> | Removes one or more nodes and recalculates any bound they were on. |
 | <Link id="m-removeextents" /><code>{"bool RemoveExtents("}<Link to="/game-api/types/alta-world-generation/generator">{"Generator"}</Link>{" generator, int minX, int minY, int minZ, int maxX, int maxY, int maxZ)"}</code> | Removes the generator nodes in a box (upper edges exclusive) and recalculates the bounds. |
-| <Link id="m-removingfinished" /><code>{"private void RemovingFinished(int recalculating)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-removingfinished" /><code>{"private void RemovingFinished(int recalculating)"}</code> |
+
+</details>
 
 ## Used in
 

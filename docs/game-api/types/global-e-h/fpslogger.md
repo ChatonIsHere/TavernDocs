@@ -16,7 +16,7 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"static Logger Logger"}</code> |  |
-| <Link id="m-loggername" /><code>{"const string LoggerName"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"static Logger Logger"}</code> |
+| <Link id="m-loggername" /><code>{"const string LoggerName"}</code> |

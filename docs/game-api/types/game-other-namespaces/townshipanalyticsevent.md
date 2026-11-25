@@ -20,6 +20,6 @@ Base for the game's analytics events. Adds the player's ID if given and server i
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected TownshipAnalyticsEvent(string name, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected TownshipAnalyticsEvent(string name, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player = null)"}</code> |

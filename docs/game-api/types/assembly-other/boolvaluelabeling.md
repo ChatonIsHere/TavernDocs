@@ -17,13 +17,13 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BoolValueLabeling(string hasName, string dontHasName, string boolName)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"BoolValueLabeling(string hasName, string dontHasName, float hasDefaultValue, float dontHasDefaultValue, string boolName)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BoolValueLabeling(string hasName, string dontHasName, string boolName)"}</code> |
+| <Link id="m-ctor-2" /><code>{"BoolValueLabeling(string hasName, string dontHasName, float hasDefaultValue, float dontHasDefaultValue, string boolName)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-boolname" /><code>{"string BoolName { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-boolname" /><code>{"string BoolName { get; private set; }"}</code> |

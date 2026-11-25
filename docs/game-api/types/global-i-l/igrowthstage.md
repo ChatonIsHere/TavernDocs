@@ -17,7 +17,7 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentstage" /><code><Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" CurrentStage { get; }"}</code> |  |
-| <Link id="m-issetup" /><code>{"bool IsSetup { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentstage" /><code><Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" CurrentStage { get; }"}</code> |
+| <Link id="m-issetup" /><code>{"bool IsSetup { get; }"}</code> |

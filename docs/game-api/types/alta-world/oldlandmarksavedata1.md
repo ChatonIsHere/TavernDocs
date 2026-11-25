@@ -18,23 +18,23 @@ A **class** in `Root.Township`, `Alta.Map`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OldLandmarkSaveData1()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OldLandmarkSaveData1()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awareicon" /><code><Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" AwareIcon { get; set; }"}</code> |  |
-| <Link id="m-defaultstate" /><code><Link to="/game-api/types/alta-world/discoverystate">{"DiscoveryState"}</Link>{" DefaultState { get; set; }"}</code> |  |
-| <Link id="m-discovericon" /><code><Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" DiscoverIcon { get; set; }"}</code> |  |
-| <Link id="m-index" /><code>{"uint Index { get; set; }"}</code> |  |
-| <Link id="m-ismasked" /><code>{"bool IsMasked { get; set; }"}</code> |  |
-| <Link id="m-map" /><code><Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" "}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awareicon" /><code><Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" AwareIcon { get; set; }"}</code> |
+| <Link id="m-defaultstate" /><code><Link to="/game-api/types/alta-world/discoverystate">{"DiscoveryState"}</Link>{" DefaultState { get; set; }"}</code> |
+| <Link id="m-discovericon" /><code><Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" DiscoverIcon { get; set; }"}</code> |
+| <Link id="m-index" /><code>{"uint Index { get; set; }"}</code> |
+| <Link id="m-ismasked" /><code>{"bool IsMasked { get; set; }"}</code> |
+| <Link id="m-map" /><code><Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" "}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |

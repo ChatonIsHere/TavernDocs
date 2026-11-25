@@ -17,22 +17,35 @@ A **class** in `Root.Township`, `ATT.FeatureTestGymnasium`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GymnasiumTeleportTablet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GymnasiumTeleportTablet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-teleportpointpage" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/gymnasiumteleportpointpage">{"GymnasiumTeleportPointPage"}</Link>{" teleportPointPage"}</code> |  |
-| <Link id="m-touchscreen" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenmenubase">{"TouchScreenMenuBase"}</Link>{" touchScreen"}</code> |  |
-| <Link id="m-window" /><code>{"private "}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" window"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-teleportpointpage" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/gymnasiumteleportpointpage">{"GymnasiumTeleportPointPage"}</Link>{" teleportPointPage"}</code> |
+| <Link id="m-touchscreen" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenmenubase">{"TouchScreenMenuBase"}</Link>{" touchScreen"}</code> |
+| <Link id="m-window" /><code>{"private "}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" window"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-finishfadein" /><code>{"protected override void FinishFadeIn()"}</code> |  |
-| <Link id="m-startfade" /><code>{"protected override void StartFade(bool isFadingIn)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-finishfadein" /><code>{"protected override void FinishFadeIn()"}</code> |
+| <Link id="m-startfade" /><code>{"protected override void StartFade(bool isFadingIn)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>

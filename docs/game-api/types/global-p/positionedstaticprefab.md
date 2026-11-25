@@ -17,23 +17,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PositionedStaticPrefab()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PositionedStaticPrefab()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-load" /><code>{"override GameObject Load(Transform transformParent, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-save" /><code>{"override void Save(GameObject scenePrefab)"}</code> |  |
-| <Link id="m-gettransform" /><code>{"protected override Transform GetTransform(GameObject scenePrefab)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-load" /><code>{"override GameObject Load(Transform transformParent, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| <Link id="m-save" /><code>{"override void Save(GameObject scenePrefab)"}</code> |
+| <Link id="m-gettransform" /><code>{"protected override Transform GetTransform(GameObject scenePrefab)"}</code> |
 
 ## Used in
 

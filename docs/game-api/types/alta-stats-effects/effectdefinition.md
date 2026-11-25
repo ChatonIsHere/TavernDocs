@@ -22,9 +22,9 @@ Base asset for an alchemy or food effect applied to an `EffectHandler`. Stored u
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected EffectDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected EffectDefinition()"}</code> |
 
 ## Fields
 

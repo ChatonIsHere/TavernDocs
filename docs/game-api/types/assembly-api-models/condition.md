@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Condition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Condition()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-blacklist" /><code>{"List<string> Blacklist { get; set; }"}</code> |  |
-| <Link id="m-queryid" /><code>{"int QueryId { get; set; }"}</code> |  |
-| <Link id="m-whitelist" /><code>{"List<string> Whitelist { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-blacklist" /><code>{"List<string> Blacklist { get; set; }"}</code> |
+| <Link id="m-queryid" /><code>{"int QueryId { get; set; }"}</code> |
+| <Link id="m-whitelist" /><code>{"List<string> Whitelist { get; set; }"}</code> |
 
 ## Used in
 

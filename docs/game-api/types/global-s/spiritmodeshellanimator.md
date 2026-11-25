@@ -17,28 +17,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpiritModeShellAnimator("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, Material shellMaterialSample)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpiritModeShellAnimator("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, Material shellMaterialSample)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-progress" /><code>{"static readonly int _Progress"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-progress" /><code>{"static readonly int _Progress"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-meshname" /><code>{"protected override string MeshName { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-meshname" /><code>{"protected override string MeshName { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animatespiritmode" /><code>{"void AnimateSpiritMode(float start, float target, "}<Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" curve)"}</code> |  |
-| <Link id="m-resetshell" /><code>{"void ResetShell()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-animatespiritmode" /><code>{"void AnimateSpiritMode(float start, float target, "}<Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" curve)"}</code> |
+| <Link id="m-resetshell" /><code>{"void ResetShell()"}</code> |
 
 ## Used in
 

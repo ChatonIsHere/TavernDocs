@@ -21,35 +21,40 @@ A lever with a fixed number of positions between a min and max angle. Snaps to t
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SelectionLever()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SelectionLever()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-angleoffset" /><code>{"private float angleOffset"}</code> |  |
-| <Link id="m-clamplever" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" clampLever"}</code> |  |
-| <Link id="m-currentangle" /><code>{"private float currentAngle"}</code> |  |
-| <Link id="m-debugindex" /><code>{"private int debugIndex"}</code> |  |
-| <Link id="m-grippoint" /><code>{"private Transform gripPoint"}</code> |  |
-| <Link id="m-handle" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" handle"}</code> |  |
-| <Link id="m-handleparent" /><code>{"private Transform handleParent"}</code> |  |
-| <Link id="m-isresetvelocityonrelease" /><code>{"private bool isResetVelocityOnRelease"}</code> |  |
-| <Link id="m-issettingtodebugindex" /><code>{"private bool isSettingToDebugIndex"}</code> |  |
-| <Link id="m-isusingcustomangles" /><code>{"private bool isUsingCustomAngles"}</code> |  |
-| <Link id="m-lever" /><code>{"private Transform lever"}</code> |  |
-| <Link id="m-maxangle" /><code>{"private float maxAngle"}</code> |  |
-| <Link id="m-minangle" /><code>{"private float minAngle"}</code> |  |
-| <Link id="m-notzeroevent" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" notZeroEvent"}</code> |  |
-| <Link id="m-numberofoptions" /><code>{"private int numberOfOptions"}</code> |  |
-| <Link id="m-perindex" /><code>{"private float perIndex"}</code> |  |
-| <Link id="m-preventinteractionwhenoverzero" /><code>{"private bool preventInteractionWhenOverZero"}</code> |  |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |  |
-| <Link id="m-runselectiononlyonnotzero" /><code>{"private bool runSelectionOnlyOnNotZero"}</code> |  |
-| <Link id="m-selectionangles" /><code>{"private float[] selectionAngles"}</code> |  |
-| <Link id="m-selectionevent" /><code>{"private "}<Link to="/game-api/types/global-i-l/intevent">{"IntEvent"}</Link>{" selectionEvent"}</code> |  |
+<details>
+<summary>21 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-angleoffset" /><code>{"private float angleOffset"}</code> |
+| <Link id="m-clamplever" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" clampLever"}</code> |
+| <Link id="m-currentangle" /><code>{"private float currentAngle"}</code> |
+| <Link id="m-debugindex" /><code>{"private int debugIndex"}</code> |
+| <Link id="m-grippoint" /><code>{"private Transform gripPoint"}</code> |
+| <Link id="m-handle" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" handle"}</code> |
+| <Link id="m-handleparent" /><code>{"private Transform handleParent"}</code> |
+| <Link id="m-isresetvelocityonrelease" /><code>{"private bool isResetVelocityOnRelease"}</code> |
+| <Link id="m-issettingtodebugindex" /><code>{"private bool isSettingToDebugIndex"}</code> |
+| <Link id="m-isusingcustomangles" /><code>{"private bool isUsingCustomAngles"}</code> |
+| <Link id="m-lever" /><code>{"private Transform lever"}</code> |
+| <Link id="m-maxangle" /><code>{"private float maxAngle"}</code> |
+| <Link id="m-minangle" /><code>{"private float minAngle"}</code> |
+| <Link id="m-notzeroevent" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" notZeroEvent"}</code> |
+| <Link id="m-numberofoptions" /><code>{"private int numberOfOptions"}</code> |
+| <Link id="m-perindex" /><code>{"private float perIndex"}</code> |
+| <Link id="m-preventinteractionwhenoverzero" /><code>{"private bool preventInteractionWhenOverZero"}</code> |
+| <Link id="m-radius" /><code>{"private float radius"}</code> |
+| <Link id="m-runselectiononlyonnotzero" /><code>{"private bool runSelectionOnlyOnNotZero"}</code> |
+| <Link id="m-selectionangles" /><code>{"private float[] selectionAngles"}</code> |
+| <Link id="m-selectionevent" /><code>{"private "}<Link to="/game-api/types/global-i-l/intevent">{"IntEvent"}</Link>{" selectionEvent"}</code> |
+
+</details>
 
 ## Properties
 
@@ -74,17 +79,25 @@ A lever with a fixed number of positions between a min and max angle. Snaps to t
 | Member | What it is |
 | --- | --- |
 | <Link id="m-setlevertoindex" /><code>{"void SetLeverToIndex(int index)"}</code> | Moves the lever to a position, clamped to the range, and fires the events if it changed. |
-| <Link id="m-calculateperindex" /><code>{"private void CalculatePerIndex()"}</code> |  |
-| <Link id="m-clamplever-2" /><code>{"private void ClampLever()"}</code> |  |
-| <Link id="m-filterwhenactive" /><code>{"private void FilterWhenActive("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |  |
-| <Link id="m-getleverangle" /><code>{"private float GetLeverAngle()"}</code> |  |
-| <Link id="m-limitlever" /><code>{"private void LimitLever("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-resetvelocity" /><code>{"private void ResetVelocity()"}</code> |  |
-| <Link id="m-selectonrelease" /><code>{"private void SelectOnRelease("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |  |
-| <Link id="m-setdebugindex" /><code>{"private void SetDebugIndex()"}</code> |  |
-| <Link id="m-setleverangle" /><code>{"private void SetLeverAngle(float angle)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+
+<details>
+<summary>11 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-calculateperindex" /><code>{"private void CalculatePerIndex()"}</code> |
+| <Link id="m-clamplever-2" /><code>{"private void ClampLever()"}</code> |
+| <Link id="m-filterwhenactive" /><code>{"private void FilterWhenActive("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |
+| <Link id="m-getleverangle" /><code>{"private float GetLeverAngle()"}</code> |
+| <Link id="m-limitlever" /><code>{"private void LimitLever("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| <Link id="m-resetvelocity" /><code>{"private void ResetVelocity()"}</code> |
+| <Link id="m-selectonrelease" /><code>{"private void SelectOnRelease("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |
+| <Link id="m-setdebugindex" /><code>{"private void SetDebugIndex()"}</code> |
+| <Link id="m-setleverangle" /><code>{"private void SetLeverAngle(float angle)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>
 
 ## Used in
 

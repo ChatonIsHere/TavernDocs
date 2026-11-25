@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, `Alta.Trading`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-openforsale" /><code>{"OpenForSale = 2"}</code> |  |
-| <Link id="m-outofstock" /><code>{"OutOfStock = 1"}</code> |  |
-| <Link id="m-unoccupied" /><code>{"Unoccupied = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-openforsale" /><code>{"OpenForSale = 2"}</code> |
+| <Link id="m-outofstock" /><code>{"OutOfStock = 1"}</code> |
+| <Link id="m-unoccupied" /><code>{"Unoccupied = 0"}</code> |
 
 ## Used in
 

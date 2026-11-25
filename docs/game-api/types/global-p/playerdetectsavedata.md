@@ -19,14 +19,14 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerDetectSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerDetectSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-boundssizesaved" /><code>{"Vector3 boundsSizeSaved"}</code> |  |
-| <Link id="m-isusingboundssaved" /><code>{"bool isUsingBoundsSaved"}</code> |  |
-| <Link id="m-radiussaved" /><code>{"float radiusSaved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-boundssizesaved" /><code>{"Vector3 boundsSizeSaved"}</code> |
+| <Link id="m-isusingboundssaved" /><code>{"bool isUsingBoundsSaved"}</code> |
+| <Link id="m-radiussaved" /><code>{"float radiusSaved"}</code> |

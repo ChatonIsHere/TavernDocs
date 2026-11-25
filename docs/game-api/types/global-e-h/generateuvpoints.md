@@ -17,22 +17,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenerateUVPoints()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenerateUVPoints()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isgenerating" /><code>{"private bool isGenerating"}</code> |  |
-| <Link id="m-isyflipped" /><code>{"private bool isYFlipped"}</code> |  |
-| <Link id="m-meshfilters" /><code>{"private MeshFilter[] meshFilters"}</code> |  |
-| <Link id="m-texturesize" /><code>{"private Vector2 textureSize"}</code> |  |
-| <Link id="m-uvpoints" /><code>{"private Vector2[] uvPoints"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isgenerating" /><code>{"private bool isGenerating"}</code> |
+| <Link id="m-isyflipped" /><code>{"private bool isYFlipped"}</code> |
+| <Link id="m-meshfilters" /><code>{"private MeshFilter[] meshFilters"}</code> |
+| <Link id="m-texturesize" /><code>{"private Vector2 textureSize"}</code> |
+| <Link id="m-uvpoints" /><code>{"private Vector2[] uvPoints"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-generate" /><code>{"private void Generate()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-generate" /><code>{"private void Generate()"}</code> |
+
+</details>

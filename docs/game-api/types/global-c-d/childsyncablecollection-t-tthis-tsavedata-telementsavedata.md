@@ -20,9 +20,9 @@ Base for a component that holds a list of small child elements (heat points, for
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ChildSyncableCollection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ChildSyncableCollection()"}</code> |
 
 ## Methods
 
@@ -32,7 +32,15 @@ Base for a component that holds a list of small child elements (heat points, for
 | <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: passes the spawn data on to every child. |
 | <Link id="m-serializetostream" /><code>{"void SerializeToStream("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWriteFull)"}</code> | Writes or reads all children to a stream, optionally as a full sync. |
 | <Link id="m-syncchild" /><code>{"override void SyncChild(T child)"}</code> | Sends one child's state to the chunk's players, if the collection uses sync messages. |
-| <Link id="m-syncallchildren" /><code>{"private void SyncAllChildren("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncdifferent" /><code>{"private void SyncDifferent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncindividual" /><code>{"private void SyncIndividual("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, uint index)"}</code> |  |
-| <Link id="m-syncsame" /><code>{"private void SyncSame("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-syncallchildren" /><code>{"private void SyncAllChildren("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-syncdifferent" /><code>{"private void SyncDifferent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| <Link id="m-syncindividual" /><code>{"private void SyncIndividual("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, uint index)"}</code> |
+| <Link id="m-syncsame" /><code>{"private void SyncSame("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>

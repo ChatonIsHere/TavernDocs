@@ -17,6 +17,6 @@ A **static class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModel
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-safegetvalue" /><code>{"static T2 SafeGetValue<T, T2>(IDictionary<T, T2> dictionary, T key, T2 defaultValue)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-safegetvalue" /><code>{"static T2 SafeGetValue<T, T2>(IDictionary<T, T2> dictionary, T key, T2 defaultValue)"}</code> |

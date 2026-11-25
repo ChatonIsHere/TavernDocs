@@ -19,13 +19,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PickupSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PickupSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dockedmemory" /><code><Link to="/game-api/types/global-e-h/grabpointparameters">{"GrabPointParameters"}</Link>{"[] dockedMemory"}</code> |  |
-| <Link id="m-lastinteractorplayerid" /><code>{"int lastInteractorPlayerId"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dockedmemory" /><code><Link to="/game-api/types/global-e-h/grabpointparameters">{"GrabPointParameters"}</Link>{"[] dockedMemory"}</code> |
+| <Link id="m-lastinteractorplayerid" /><code>{"int lastInteractorPlayerId"}</code> |

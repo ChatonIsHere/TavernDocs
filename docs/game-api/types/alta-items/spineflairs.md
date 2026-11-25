@@ -16,25 +16,30 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpineFlairs()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpineFlairs()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bottom" /><code>{"private "}<Link to="/game-api/types/alta-items/spineedge">{"SpineEdge"}</Link>{" bottom"}</code> |  |
-| <Link id="m-middle" /><code>{"private "}<Link to="/game-api/types/alta-items/spinemiddle">{"SpineMiddle"}</Link>{" middle"}</code> |  |
-| <Link id="m-top" /><code>{"private "}<Link to="/game-api/types/alta-items/spineedge">{"SpineEdge"}</Link>{" top"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bottom" /><code>{"private "}<Link to="/game-api/types/alta-items/spineedge">{"SpineEdge"}</Link>{" bottom"}</code> |
+| <Link id="m-middle" /><code>{"private "}<Link to="/game-api/types/alta-items/spinemiddle">{"SpineMiddle"}</Link>{" middle"}</code> |
+| <Link id="m-top" /><code>{"private "}<Link to="/game-api/types/alta-items/spineedge">{"SpineEdge"}</Link>{" top"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bottom-2" /><code><Link to="/game-api/types/alta-items/spineedge">{"SpineEdge"}</Link>{" Bottom { get; }"}</code> |  |
-| <Link id="m-middle-2" /><code><Link to="/game-api/types/alta-items/spinemiddle">{"SpineMiddle"}</Link>{" Middle { get; }"}</code> |  |
-| <Link id="m-top-2" /><code><Link to="/game-api/types/alta-items/spineedge">{"SpineEdge"}</Link>{" Top { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bottom-2" /><code><Link to="/game-api/types/alta-items/spineedge">{"SpineEdge"}</Link>{" Bottom { get; }"}</code> |
+| <Link id="m-middle-2" /><code><Link to="/game-api/types/alta-items/spinemiddle">{"SpineMiddle"}</Link>{" Middle { get; }"}</code> |
+| <Link id="m-top-2" /><code><Link to="/game-api/types/alta-items/spineedge">{"SpineEdge"}</Link>{" Top { get; }"}</code> |
 
 ## Used in
 

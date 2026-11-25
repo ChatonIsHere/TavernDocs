@@ -17,23 +17,28 @@ A **class** in `Root.Township`, `Features`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HandTouchVfxController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HandTouchVfxController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activatingvfxindex" /><code>{"private int activatingVfxIndex"}</code> |  |
-| <Link id="m-completedvfxindex" /><code>{"private int completedVfxIndex"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-activatingvfxindex" /><code>{"private int activatingVfxIndex"}</code> |
+| <Link id="m-completedvfxindex" /><code>{"private int completedVfxIndex"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playactivatingeffect" /><code>{"void PlayActivatingEffect()"}</code> |  |
-| <Link id="m-playcompletedeffect" /><code>{"void PlayCompletedEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-playactivatingeffect" /><code>{"void PlayActivatingEffect()"}</code> |
+| <Link id="m-playcompletedeffect" /><code>{"void PlayCompletedEffect()"}</code> |
 
 ## Used in
 

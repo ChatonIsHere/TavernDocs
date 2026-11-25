@@ -16,14 +16,14 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-accepted" /><code>{"Accepted = 2"}</code> |  |
-| <Link id="m-banned" /><code>{"Banned = -1"}</code> |  |
-| <Link id="m-invited" /><code>{"Invited = 1"}</code> |  |
-| <Link id="m-kicked" /><code>{"Kicked = 4"}</code> |  |
-| <Link id="m-left" /><code>{"Left = 3"}</code> |  |
-| <Link id="m-requestedjoin" /><code>{"RequestedJoin = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-accepted" /><code>{"Accepted = 2"}</code> |
+| <Link id="m-banned" /><code>{"Banned = -1"}</code> |
+| <Link id="m-invited" /><code>{"Invited = 1"}</code> |
+| <Link id="m-kicked" /><code>{"Kicked = 4"}</code> |
+| <Link id="m-left" /><code>{"Left = 3"}</code> |
+| <Link id="m-requestedjoin" /><code>{"RequestedJoin = 0"}</code> |
 
 ## Used in
 

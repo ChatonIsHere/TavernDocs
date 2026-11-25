@@ -17,20 +17,28 @@ An **abstract class** in `Root.Township`, `Alta.Progression.Skills`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ItemLevitatorExtension()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ItemLevitatorExtension()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-levitator" /><code>{"protected "}<Link to="/game-api/types/alta-player/itemlevitator">{"ItemLevitator"}</Link>{" levitator"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-levitator" /><code>{"protected "}<Link to="/game-api/types/alta-player/itemlevitator">{"ItemLevitator"}</Link>{" levitator"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-checkhover" /><code>{"private void CheckHover(ref bool isValid)"}</code> |  |
-| <Link id="m-isvalid" /><code>{"protected abstract bool IsValid()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isvalid" /><code>{"protected abstract bool IsValid()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-checkhover" /><code>{"private void CheckHover(ref bool isValid)"}</code> |
+
+</details>

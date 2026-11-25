@@ -17,12 +17,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DebugLoader()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DebugLoader()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunks" /><code>{"List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> chunks"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chunks" /><code>{"List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> chunks"}</code> |

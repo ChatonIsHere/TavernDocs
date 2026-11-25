@@ -20,20 +20,25 @@ Tracks which chunk a network entity is in, its chunking parent and children, and
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Chunker("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" networkEntity)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Chunker("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" networkEntity)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-children" /><code>{"private readonly HashSet<"}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{"> children"}</code> |  |
-| <Link id="m-chunkedentity" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/ichunkedentity">{"IChunkedEntity"}</Link>{" chunkedEntity"}</code> |  |
-| <Link id="m-despawningfor" /><code>{"private readonly HashSet<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> despawningFor"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
-| <Link id="m-parent" /><code>{"private "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" parent"}</code> |  |
-| <Link id="m-spawningfor" /><code>{"private readonly HashSet<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> spawningFor"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-children" /><code>{"private readonly HashSet<"}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{"> children"}</code> |
+| <Link id="m-chunkedentity" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/ichunkedentity">{"IChunkedEntity"}</Link>{" chunkedEntity"}</code> |
+| <Link id="m-despawningfor" /><code>{"private readonly HashSet<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> despawningFor"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| <Link id="m-parent" /><code>{"private "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" parent"}</code> |
+| <Link id="m-spawningfor" /><code>{"private readonly HashSet<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> spawningFor"}</code> |
+
+</details>
 
 ## Properties
 
@@ -65,12 +70,20 @@ Tracks which chunk a network entity is in, its chunking parent and children, and
 | <Link id="m-setchunk" /><code>{"void SetChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" newChunk)"}</code> | Moves the entity (and its children) to a chunk. On the server this is ignored for entities with a chunking parent. |
 | <Link id="m-setparent" /><code>{"void SetParent("}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" target, bool isDestroying = false)"}</code> | Sets the chunking parent (null to clear) and moves to its chunk. |
 | <Link id="m-setserveronly" /><code>{"void SetServerOnly(bool isServerOnly)"}</code> | Hides the entity from every player, or spawns it for the players in its chunk again. |
-| <Link id="m-enddespawn" /><code>{"private void IChunker.EndDespawn("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target, bool isUnloading, bool isChunkSync)"}</code> |  |
-| <Link id="m-endspawn" /><code>{"private void IChunker.EndSpawn("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target, bool isChunkSync)"}</code> |  |
-| <Link id="m-posttoplayer" /><code>{"private async void PostToPlayer("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" oldChunk, Vector3 position, int playerId)"}</code> |  |
-| <Link id="m-setchunkinternal" /><code>{"private void SetChunkInternal("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" newChunk)"}</code> |  |
-| <Link id="m-startdespawn" /><code>{"private bool IChunker.StartDespawn("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target, bool hasMovedChunks, bool isChunkSync)"}</code> |  |
-| <Link id="m-startspawn" /><code>{"private bool IChunker.StartSpawn("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target, bool hasMovedChunks, bool isChunkSync)"}</code> |  |
+
+<details>
+<summary>6 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-enddespawn" /><code>{"private void IChunker.EndDespawn("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target, bool isUnloading, bool isChunkSync)"}</code> |
+| <Link id="m-endspawn" /><code>{"private void IChunker.EndSpawn("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target, bool isChunkSync)"}</code> |
+| <Link id="m-posttoplayer" /><code>{"private async void PostToPlayer("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" oldChunk, Vector3 position, int playerId)"}</code> |
+| <Link id="m-setchunkinternal" /><code>{"private void SetChunkInternal("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" newChunk)"}</code> |
+| <Link id="m-startdespawn" /><code>{"private bool IChunker.StartDespawn("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target, bool hasMovedChunks, bool isChunkSync)"}</code> |
+| <Link id="m-startspawn" /><code>{"private bool IChunker.StartSpawn("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target, bool hasMovedChunks, bool isChunkSync)"}</code> |
+
+</details>
 
 ## Used in
 

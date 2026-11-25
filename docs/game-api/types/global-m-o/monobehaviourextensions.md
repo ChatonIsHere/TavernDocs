@@ -17,7 +17,15 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-callactioninupdate" /><code>{"static void CallActionInUpdate(MonoBehaviour monoBehaviour, Action action)"}</code> |  |
-| <Link id="m-callactioninupdate-2" /><code>{"private static IEnumerator CallActionInUpdate(Action action) (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-callactioninupdate" /><code>{"static void CallActionInUpdate(MonoBehaviour monoBehaviour, Action action)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-callactioninupdate-2" /><code>{"private static IEnumerator CallActionInUpdate(Action action) (iterator)"}</code> |
+
+</details>

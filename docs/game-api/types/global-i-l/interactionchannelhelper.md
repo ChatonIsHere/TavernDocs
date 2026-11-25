@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-intersects" /><code>{"static bool Intersects("}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" channel, "}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" otherChannel)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-intersects" /><code>{"static bool Intersects("}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" channel, "}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" otherChannel)"}</code> |

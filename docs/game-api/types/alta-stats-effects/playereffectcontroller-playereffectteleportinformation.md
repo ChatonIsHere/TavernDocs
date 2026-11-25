@@ -17,10 +17,10 @@ A **private struct** in `Root.Township`, `Alta.Alchemy`. Reach it through att-st
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-teleporteffectposition" /><code>{"Vector3 teleportEffectPosition"}</code> |  |
-| <Link id="m-teleporttype" /><code><Link to="/game-api/types/alta-stats-effects/effecthandler-teleporttype">{"EffectHandler.TeleportType"}</Link>{" teleportType"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-teleporteffectposition" /><code>{"Vector3 teleportEffectPosition"}</code> |
+| <Link id="m-teleporttype" /><code><Link to="/game-api/types/alta-stats-effects/effecthandler-teleporttype">{"EffectHandler.TeleportType"}</Link>{" teleportType"}</code> |
 
 ## Used in
 

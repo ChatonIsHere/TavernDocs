@@ -17,16 +17,16 @@ An **interface** in `Root.Township`, `Alta.Customization`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targetposition" /><code>{"Vector3 TargetPosition { get; }"}</code> |  |
-| <Link id="m-targetrotation" /><code>{"Quaternion TargetRotation { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-targetposition" /><code>{"Vector3 TargetPosition { get; }"}</code> |
+| <Link id="m-targetrotation" /><code>{"Quaternion TargetRotation { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deregistertrophy" /><code>{"void DeregisterTrophy("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophy)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deregistertrophy" /><code>{"void DeregisterTrophy("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophy)"}</code> |
 
 ## Used in
 

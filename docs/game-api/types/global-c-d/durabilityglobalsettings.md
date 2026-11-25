@@ -22,20 +22,25 @@ Global settings for item durability feedback: break effects, damage popups and h
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DurabilityGlobalSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DurabilityGlobalSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-breakitemhapticcurve" /><code>{"private AnimationCurve breakItemHapticCurve"}</code> |  |
-| <Link id="m-defaultstatechangesound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" defaultStateChangeSound"}</code> |  |
-| <Link id="m-effectivenesstodurabilitydamage" /><code>{"private AnimationCurve effectivenessToDurabilityDamage"}</code> |  |
-| <Link id="m-popupcolorbydurability" /><code>{"private Gradient popupColorByDurability"}</code> |  |
-| <Link id="m-popupdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" popUpDefinition"}</code> |  |
-| <Link id="m-statechangeeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" stateChangeEffectDefinition"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-breakitemhapticcurve" /><code>{"private AnimationCurve breakItemHapticCurve"}</code> |
+| <Link id="m-defaultstatechangesound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" defaultStateChangeSound"}</code> |
+| <Link id="m-effectivenesstodurabilitydamage" /><code>{"private AnimationCurve effectivenessToDurabilityDamage"}</code> |
+| <Link id="m-popupcolorbydurability" /><code>{"private Gradient popupColorByDurability"}</code> |
+| <Link id="m-popupdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" popUpDefinition"}</code> |
+| <Link id="m-statechangeeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" stateChangeEffectDefinition"}</code> |
+
+</details>
 
 ## Properties
 

@@ -17,22 +17,22 @@ A **private class** in `Root.Township`, `Alta.PAGaC`. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlacingData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlacingData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-allofxcompressedflags" /><code>{"List<ulong[,]> allOfXCompressedFlags"}</code> |  |
-| <Link id="m-allofxzcompressedflags" /><code>{"List<ulong[]> allOfXzCompressedFlags"}</code> |  |
-| <Link id="m-allofzcompressedflags" /><code>{"List<ulong[,]> allOfZCompressedFlags"}</code> |  |
-| <Link id="m-anyofxcompressedflags" /><code>{"List<ulong[,]> anyOfXCompressedFlags"}</code> |  |
-| <Link id="m-anyofxzcompressedflags" /><code>{"List<ulong[]> anyOfXzCompressedFlags"}</code> |  |
-| <Link id="m-anyofzcompressedflags" /><code>{"List<ulong[,]> anyOfZCompressedFlags"}</code> |  |
-| <Link id="m-configurationindex" /><code>{"List<int> configurationIndex"}</code> |  |
-| <Link id="m-part" /><code>{"T part"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-allofxcompressedflags" /><code>{"List<ulong[,]> allOfXCompressedFlags"}</code> |
+| <Link id="m-allofxzcompressedflags" /><code>{"List<ulong[]> allOfXzCompressedFlags"}</code> |
+| <Link id="m-allofzcompressedflags" /><code>{"List<ulong[,]> allOfZCompressedFlags"}</code> |
+| <Link id="m-anyofxcompressedflags" /><code>{"List<ulong[,]> anyOfXCompressedFlags"}</code> |
+| <Link id="m-anyofxzcompressedflags" /><code>{"List<ulong[]> anyOfXzCompressedFlags"}</code> |
+| <Link id="m-anyofzcompressedflags" /><code>{"List<ulong[,]> anyOfZCompressedFlags"}</code> |
+| <Link id="m-configurationindex" /><code>{"List<int> configurationIndex"}</code> |
+| <Link id="m-part" /><code>{"T part"}</code> |
 
 ## Used in
 

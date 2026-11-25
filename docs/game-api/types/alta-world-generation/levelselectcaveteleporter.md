@@ -18,31 +18,44 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LevelSelectCaveTeleporter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LevelSelectCaveTeleporter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-connections" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/caveteleportconnection">{"CaveTeleportConnection"}</Link>{"[] connections"}</code> |  |
-| <Link id="m-distancebetweenlayers" /><code>{"private int distanceBetweenLayers"}</code> |  |
-| <Link id="m-levelselector" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/levelselector">{"LevelSelector"}</Link>{" levelSelector"}</code> |  |
-| <Link id="m-targetlayer" /><code>{"private int targetLayer"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-connections" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/caveteleportconnection">{"CaveTeleportConnection"}</Link>{"[] connections"}</code> |
+| <Link id="m-distancebetweenlayers" /><code>{"private int distanceBetweenLayers"}</code> |
+| <Link id="m-levelselector" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/levelselector">{"LevelSelector"}</Link>{" levelSelector"}</code> |
+| <Link id="m-targetlayer" /><code>{"private int targetLayer"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targetlayer-2" /><code>{"override int TargetLayer { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-targetlayer-2" /><code>{"override int TargetLayer { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-updatelevel" /><code>{"void UpdateLevel(int level)"}</code> |  |
-| <Link id="m-getlayer" /><code>{"private int GetLayer(int level)"}</code> |  |
-| <Link id="m-initializeconnection" /><code>{"protected override void InitializeConnection()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+| <Link id="m-updatelevel" /><code>{"void UpdateLevel(int level)"}</code> |
+| <Link id="m-initializeconnection" /><code>{"protected override void InitializeConnection()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-getlayer" /><code>{"private int GetLayer(int level)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>

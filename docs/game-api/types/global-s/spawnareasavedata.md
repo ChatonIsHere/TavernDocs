@@ -19,16 +19,16 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnAreaSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpawnAreaSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-avoidlayers" /><code>{"int avoidLayers"}</code> |  |
-| <Link id="m-groundlayers" /><code>{"int groundLayers"}</code> |  |
-| <Link id="m-isaligningnormal" /><code>{"bool isAligningNormal"}</code> |  |
-| <Link id="m-maxacceptableangledot" /><code>{"float maxAcceptableAngleDot"}</code> |  |
-| <Link id="m-size" /><code>{"float size"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-avoidlayers" /><code>{"int avoidLayers"}</code> |
+| <Link id="m-groundlayers" /><code>{"int groundLayers"}</code> |
+| <Link id="m-isaligningnormal" /><code>{"bool isAligningNormal"}</code> |
+| <Link id="m-maxacceptableangledot" /><code>{"float maxAcceptableAngleDot"}</code> |
+| <Link id="m-size" /><code>{"float size"}</code> |

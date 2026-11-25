@@ -18,12 +18,12 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EmissionRateOverDistanceOperator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EmissionRateOverDistanceOperator()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-set" /><code>{"override void Set(float value)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-set" /><code>{"override void Set(float value)"}</code> |

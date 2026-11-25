@@ -19,13 +19,13 @@ A **internal class** in `Root.Township`, `Alta.Pages`. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalPagesManagerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GlobalPagesManagerSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pages" /><code>{"uint[] pages"}</code> |  |
-| <Link id="m-providers" /><code>{"int[] providers"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-pages" /><code>{"uint[] pages"}</code> |
+| <Link id="m-providers" /><code>{"int[] providers"}</code> |

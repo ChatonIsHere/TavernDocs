@@ -18,21 +18,26 @@ An **abstract class** in `Alta.VContainerLayer.Runtime`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected FactoryAsync()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected FactoryAsync()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-assethandles" /><code>{"private readonly List<AsyncOperationHandle> assetHandles"}</code> |  |
-| <Link id="m-prefabreference" /><code>{"private AssetReference prefabReference"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-assethandles" /><code>{"private readonly List<AsyncOperationHandle> assetHandles"}</code> |
+| <Link id="m-prefabreference" /><code>{"private AssetReference prefabReference"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> |  |
-| <Link id="m-construct" /><code>{"protected void Construct(AssetReference prefabReference)"}</code> |  |
-| <Link id="m-loadasset" /><code>{"protected Task<GameObject> LoadAsset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> |
+| <Link id="m-construct" /><code>{"protected void Construct(AssetReference prefabReference)"}</code> |
+| <Link id="m-loadasset" /><code>{"protected Task<GameObject> LoadAsset()"}</code> |

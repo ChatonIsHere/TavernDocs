@@ -17,7 +17,7 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-despawnfor" /><code>{"static void DespawnFor("}<Link to="/game-api/types/global-i-l/ichunker">{"IChunker"}</Link>{" chunker, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, bool isUnload)"}</code> |  |
-| <Link id="m-spawnfor" /><code>{"static void SpawnFor("}<Link to="/game-api/types/global-i-l/ichunker">{"IChunker"}</Link>{" chunker, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-despawnfor" /><code>{"static void DespawnFor("}<Link to="/game-api/types/global-i-l/ichunker">{"IChunker"}</Link>{" chunker, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, bool isUnload)"}</code> |
+| <Link id="m-spawnfor" /><code>{"static void SpawnFor("}<Link to="/game-api/types/global-i-l/ichunker">{"IChunker"}</Link>{" chunker, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |

@@ -19,9 +19,9 @@ Extra settings for one customization part, such as colours (`TwoColors`). This b
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CustomizationArguments()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CustomizationArguments()"}</code> |
 
 ## Properties
 

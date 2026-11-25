@@ -21,17 +21,22 @@ Base for a creature AI that picks actions from an `ActionDecider`. The AI runs o
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Agent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Agent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actioncomponentsets" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<TThis>> actionComponentSets"}</code> |  |
-| <Link id="m-actions" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TThis>> actions"}</code> |  |
-| <Link id="m-currentaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actiontarget-tagent">{"ActionTarget"}</Link>{"<TThis> currentAction"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-actioncomponentsets" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<TThis>> actionComponentSets"}</code> |
+| <Link id="m-actions" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TThis>> actions"}</code> |
+| <Link id="m-currentaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actiontarget-tagent">{"ActionTarget"}</Link>{"<TThis> currentAction"}</code> |
+
+</details>
 
 ## Properties
 
@@ -52,8 +57,16 @@ Base for a creature AI that picks actions from an `ActionDecider`. The AI runs o
 | <Link id="m-useactioncomponentset" /><code>{"override void UseActionComponentSet("}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" set)"}</code> | Switches the decider to the actions from the given set, caching the built set. |
 | <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Counts the spawn and keeps the pathfinding walker off until the AI starts. |
 | <Link id="m-changeaction" /><code>{"protected override bool ChangeAction()"}</code> | Updates target collectors and starts the best action that beats the current one's cancel priority and weighting. |
-| <Link id="m-getbestaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actiontarget-tagent">{"ActionTarget"}</Link>{"<TThis> GetBestAction(int minimumPriority, float minimumWeighting)"}</code> |  |
 | <Link id="m-initializeai" /><code>{"protected override void InitializeAi()"}</code> | Server: runs `InitializeStatic` once per type, turns on the walker and creates the action decider. |
 | <Link id="m-initializestatic" /><code>{"protected virtual void InitializeStatic()"}</code> | Hook for shared setup, run once per agent type on the first spawn. |
 | <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> | Lowers `SpawnedCount`. |
 | <Link id="m-startaction" /><code>{"protected bool StartAction("}<Link to="/game-api/types/alta-intelligence/actiontarget-tagent">{"ActionTarget"}</Link>{"<TThis> newAction)"}</code> | Cancels the current action and starts a new one, or restarts it if it is the same action and target. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getbestaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actiontarget-tagent">{"ActionTarget"}</Link>{"<TThis> GetBestAction(int minimumPriority, float minimumWeighting)"}</code> |
+
+</details>

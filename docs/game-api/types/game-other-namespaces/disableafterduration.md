@@ -17,20 +17,30 @@ A **class** in `Root.Township`, `Features.Gameplay.ClimbingTower`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DisableAfterDuration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DisableAfterDuration()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-delayuntildisable" /><code>{"private float delayUntilDisable"}</code> |  |
-| <Link id="m-remainingdelay" /><code>{"private float remainingDelay"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-delayuntildisable" /><code>{"private float delayUntilDisable"}</code> |
+| <Link id="m-remainingdelay" /><code>{"private float remainingDelay"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>

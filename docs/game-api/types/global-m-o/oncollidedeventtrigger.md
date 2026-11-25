@@ -18,21 +18,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OnCollidedEventTrigger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OnCollidedEventTrigger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-layerfilter" /><code>{"private LayerMask layerFilter"}</code> |  |
-| <Link id="m-oncollided" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" OnCollided"}</code> |  |
-| <Link id="m-validevent" /><code>{"private "}<Link to="/game-api/types/global-m-o/oncollidedeventtrigger-collisiontype">{"OnCollidedEventTrigger.CollisionType"}</Link>{" validEvent"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-layerfilter" /><code>{"private LayerMask layerFilter"}</code> |
+| <Link id="m-oncollided" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" OnCollided"}</code> |
+| <Link id="m-validevent" /><code>{"private "}<Link to="/game-api/types/global-m-o/oncollidedeventtrigger-collisiontype">{"OnCollidedEventTrigger.CollisionType"}</Link>{" validEvent"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |  |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
+
+</details>

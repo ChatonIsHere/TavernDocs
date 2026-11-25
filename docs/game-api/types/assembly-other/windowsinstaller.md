@@ -16,19 +16,29 @@ A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WindowsInstaller(IContainerBuilder builder)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WindowsInstaller(IContainerBuilder builder)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isandroideditor" /><code>{"private static bool IsAndroidEditor()"}</code> |  |
-| <Link id="m-registerfakes" /><code>{"private static void RegisterFakes(IContainerBuilder builder)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-isandroideditor" /><code>{"private static bool IsAndroidEditor()"}</code> |
+| <Link id="m-registerfakes" /><code>{"private static void RegisterFakes(IContainerBuilder builder)"}</code> |
+
+</details>

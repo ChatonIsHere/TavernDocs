@@ -17,18 +17,18 @@ A **private struct** in `Root.Township`, `Alta.Intelligence`. Reach it through a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Point(Vector3 point)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"Point(Vector3 point, Vector3 normal)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Point(Vector3 point)"}</code> |
+| <Link id="m-ctor-2" /><code>{"Point(Vector3 point, Vector3 normal)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hasnormal" /><code>{"bool hasNormal"}</code> |  |
-| <Link id="m-normal" /><code>{"Vector3 normal"}</code> |  |
-| <Link id="m-point" /><code>{"Vector3 point"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hasnormal" /><code>{"bool hasNormal"}</code> |
+| <Link id="m-normal" /><code>{"Vector3 normal"}</code> |
+| <Link id="m-point" /><code>{"Vector3 point"}</code> |
 
 ## Used in
 

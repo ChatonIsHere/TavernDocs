@@ -17,31 +17,44 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GaugeProgressBar()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GaugeProgressBar()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alphalimit" /><code>{"private static readonly int _AlphaLimit"}</code> |  |
-| <Link id="m-fillprogress" /><code>{"private static readonly int _FillProgress"}</code> |  |
-| <Link id="m-alpha" /><code>{"private float alpha"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-alphalimit" /><code>{"private static readonly int _AlphaLimit"}</code> |
+| <Link id="m-fillprogress" /><code>{"private static readonly int _FillProgress"}</code> |
+| <Link id="m-alpha" /><code>{"private float alpha"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alpha-2" /><code>{"float Alpha { get; set; }"}</code> |  |
-| <Link id="m-progressvariable" /><code>{"override int ProgressVariable { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-alpha-2" /><code>{"float Alpha { get; set; }"}</code> |
+| <Link id="m-progressvariable" /><code>{"override int ProgressVariable { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
-| <Link id="m-updatealpha" /><code>{"private void UpdateAlpha()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-updatealpha" /><code>{"private void UpdateAlpha()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -17,16 +17,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TrackerData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TrackerData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-id" /><code>{"int id"}</code> |  |
-| <Link id="m-interactionsleft" /><code>{"int interactionsLeft"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-id" /><code>{"int id"}</code> |
+| <Link id="m-interactionsleft" /><code>{"int interactionsLeft"}</code> |
 
 ## Used in
 

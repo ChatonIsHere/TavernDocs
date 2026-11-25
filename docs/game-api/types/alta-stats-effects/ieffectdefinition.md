@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.Alchemy`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkapply" /><code>{"void CheckApply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkapply" /><code>{"void CheckApply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |

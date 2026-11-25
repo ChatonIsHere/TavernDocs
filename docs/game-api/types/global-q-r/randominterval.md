@@ -17,21 +17,31 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RandomInterval()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RandomInterval()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maximuminterval" /><code>{"private float maximumInterval"}</code> |  |
-| <Link id="m-minimuminterval" /><code>{"private float minimumInterval"}</code> |  |
-| <Link id="m-triggered" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" triggered"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maximuminterval" /><code>{"private float maximumInterval"}</code> |
+| <Link id="m-minimuminterval" /><code>{"private float minimumInterval"}</code> |
+| <Link id="m-triggered" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" triggered"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-trigger" /><code>{"private IEnumerator Trigger() (iterator)"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-trigger" /><code>{"private IEnumerator Trigger() (iterator)"}</code> |
+
+</details>

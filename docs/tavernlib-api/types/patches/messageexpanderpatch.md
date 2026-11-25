@@ -20,9 +20,9 @@ Replaces the game's network message type header with an 8-bit one, for 256 messa
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MessageExpanderPatch()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MessageExpanderPatch()"}</code> |
 
 ## Methods
 

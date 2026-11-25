@@ -17,21 +17,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ItemSmelterRecipeUnlock()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ItemSmelterRecipeUnlock()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-unlockdefinition" /><code>{"private "}<Link to="/game-api/types/alta-crafting/smelterupgrades">{"SmelterUpgrades"}</Link>{" unlockDefinition"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-unlockdefinition" /><code>{"private "}<Link to="/game-api/types/alta-crafting/smelterupgrades">{"SmelterUpgrades"}</Link>{" unlockDefinition"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-unlockdefinition-2" /><code><Link to="/game-api/types/alta-crafting/smelterupgrades">{"SmelterUpgrades"}</Link>{" UnlockDefinition { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-unlockdefinition-2" /><code><Link to="/game-api/types/alta-crafting/smelterupgrades">{"SmelterUpgrades"}</Link>{" UnlockDefinition { get; }"}</code> |
 
 ## Used in
 

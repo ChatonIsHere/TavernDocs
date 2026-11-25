@@ -17,32 +17,32 @@ A **class** in `Root.Township`, `Alta.PlayerEffects`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CombatShellAnimator("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, Material shellMaterialSample)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CombatShellAnimator("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, Material shellMaterialSample)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dissolve" /><code>{"static readonly int _Dissolve"}</code> |  |
-| <Link id="m-waves" /><code>{"static readonly int _Waves"}</code> |  |
-| <Link id="m-dissolvestrength" /><code>{"static readonly int dissolveStrength"}</code> |  |
-| <Link id="m-progress" /><code>{"static readonly int progress"}</code> |  |
-| <Link id="m-ramp1" /><code>{"static readonly int ramp1"}</code> |  |
-| <Link id="m-ramp2" /><code>{"static readonly int ramp2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dissolve" /><code>{"static readonly int _Dissolve"}</code> |
+| <Link id="m-waves" /><code>{"static readonly int _Waves"}</code> |
+| <Link id="m-dissolvestrength" /><code>{"static readonly int dissolveStrength"}</code> |
+| <Link id="m-progress" /><code>{"static readonly int progress"}</code> |
+| <Link id="m-ramp1" /><code>{"static readonly int ramp1"}</code> |
+| <Link id="m-ramp2" /><code>{"static readonly int ramp2"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-meshname" /><code>{"protected override string MeshName { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-meshname" /><code>{"protected override string MeshName { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animatecombatshield" /><code>{"void AnimateCombatShield("}<Link to="/game-api/types/alta-player/shellsetting">{"ShellSetting"}</Link>{" setting, "}<Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" curve, float targetProgress, float startProgress)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-animatecombatshield" /><code>{"void AnimateCombatShield("}<Link to="/game-api/types/alta-player/shellsetting">{"ShellSetting"}</Link>{" setting, "}<Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" curve, float targetProgress, float startProgress)"}</code> |
 
 ## Used in
 

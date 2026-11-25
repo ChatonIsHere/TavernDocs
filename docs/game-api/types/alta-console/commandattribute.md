@@ -19,18 +19,18 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CommandAttribute(string command, string description)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"CommandAttribute(string command)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CommandAttribute(string command, string description)"}</code> |
+| <Link id="m-ctor-2" /><code>{"CommandAttribute(string command)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-command" /><code>{"string Command { get; private set; }"}</code> |  |
-| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> |  |
-| <Link id="m-isloggingvaluesastable" /><code>{"bool IsLoggingValuesAsTable { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-command" /><code>{"string Command { get; private set; }"}</code> |
+| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> |
+| <Link id="m-isloggingvaluesastable" /><code>{"bool IsLoggingValuesAsTable { get; set; }"}</code> |
 
 ## Used in
 

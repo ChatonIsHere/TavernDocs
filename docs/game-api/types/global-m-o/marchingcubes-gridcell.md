@@ -17,17 +17,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GridCell()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GridCell()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-coordinate" /><code><Link to="/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{" coordinate"}</code> |  |
-| <Link id="m-points" /><code>{"Vector3[] points"}</code> |  |
-| <Link id="m-values" /><code>{"float[] values"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-coordinate" /><code><Link to="/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{" coordinate"}</code> |
+| <Link id="m-points" /><code>{"Vector3[] points"}</code> |
+| <Link id="m-values" /><code>{"float[] values"}</code> |
 
 ## Used in
 

@@ -21,29 +21,45 @@ The chunk's static scenery pointers. Servers load the collider-only version.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StaticChunkContentManager("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, bool isLogging = false)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StaticChunkContentManager("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, bool isLogging = false)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isloadingpointers" /><code>{"static bool IsLoadingPointers"}</code> |  |
-| <Link id="m-isloadingsequentially" /><code>{"static bool IsLoadingSequentially"}</code> |  |
-| <Link id="m-pointerstoloadperframe" /><code>{"static int PointersToLoadPerFrame"}</code> |  |
-| <Link id="m-islogging" /><code>{"private bool isLogging"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-pointercount" /><code>{"private int pointerCount"}</code> |  |
-| <Link id="m-pointers" /><code>{"private List<string> pointers"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isloadingpointers" /><code>{"static bool IsLoadingPointers"}</code> |
+| <Link id="m-isloadingsequentially" /><code>{"static bool IsLoadingSequentially"}</code> |
+| <Link id="m-pointerstoloadperframe" /><code>{"static int PointersToLoadPerFrame"}</code> |
+
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-islogging" /><code>{"private bool isLogging"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-pointercount" /><code>{"private int pointerCount"}</code> |
+| <Link id="m-pointers" /><code>{"private List<string> pointers"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loadinternal" /><code>{"protected override async Task LoadInternal()"}</code> |  |
-| <Link id="m-loadpointerasync" /><code>{"private async Task LoadPointerAsync(string pointer)"}</code> |  |
-| <Link id="m-unloadinternal" /><code>{"protected override async Task UnloadInternal()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-loadinternal" /><code>{"protected override async Task LoadInternal()"}</code> |
+| <Link id="m-unloadinternal" /><code>{"protected override async Task UnloadInternal()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-loadpointerasync" /><code>{"private async Task LoadPointerAsync(string pointer)"}</code> |
+
+</details>
 
 ## Used in
 

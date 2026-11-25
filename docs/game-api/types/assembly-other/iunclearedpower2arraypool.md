@@ -17,9 +17,9 @@ An **interface** in `Alta.ArrayPools.Runtime`, `Alta.ArrayPools`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-buckets" /><code>{"IEnumerable<Array>[] Buckets { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-buckets" /><code>{"IEnumerable<Array>[] Buckets { get; }"}</code> |
 
 ## Used in
 

@@ -16,18 +16,18 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DisplayArguments()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"DisplayArguments(int displayPageFound, int displayPageTotal, int pageNumber)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DisplayArguments()"}</code> |
+| <Link id="m-ctor-2" /><code>{"DisplayArguments(int displayPageFound, int displayPageTotal, int pageNumber)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-displaypagefound" /><code>{"int displayPageFound"}</code> |  |
-| <Link id="m-displaypagenumber" /><code>{"int displayPageNumber"}</code> |  |
-| <Link id="m-displaypagetotal" /><code>{"int displayPageTotal"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-displaypagefound" /><code>{"int displayPageFound"}</code> |
+| <Link id="m-displaypagenumber" /><code>{"int displayPageNumber"}</code> |
+| <Link id="m-displaypagetotal" /><code>{"int displayPageTotal"}</code> |
 
 ## Used in
 

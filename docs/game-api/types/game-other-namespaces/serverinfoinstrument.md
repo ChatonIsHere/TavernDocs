@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `ATT.Analytics.Instruments`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerInfoInstrument()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerInfoInstrument()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-noserverid" /><code>{"private const int NoServerId"}</code> |  |
-| <Link id="m-serveridkey" /><code>{"private const string ServerIdKey"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-noserverid" /><code>{"private const int NoServerId"}</code> |
+| <Link id="m-serveridkey" /><code>{"private const string ServerIdKey"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-appendresult" /><code>{"void AppendResult("}<Link to="/game-api/types/assembly-other/ianalyticsdata">{"IAnalyticsData"}</Link>{" data)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-appendresult" /><code>{"void AppendResult("}<Link to="/game-api/types/assembly-other/ianalyticsdata">{"IAnalyticsData"}</Link>{" data)"}</code> |

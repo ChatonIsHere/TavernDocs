@@ -17,21 +17,34 @@ A **class** in `Root.Township`, `Alta.Heat`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MovementHeatPoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MovementHeatPoint()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-followtoconductivity" /><code>{"private AnimationCurve followToConductivity"}</code> |  |
-| <Link id="m-shakeoff" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/handshakeoffdetector">{"HandShakeOffDetector"}</Link>{" shakeOff"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-followtoconductivity" /><code>{"private AnimationCurve followToConductivity"}</code> |
+| <Link id="m-shakeoff" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/handshakeoffdetector">{"HandShakeOffDetector"}</Link>{" shakeOff"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-conducttoambient" /><code>{"override void ConductToAmbient(float weight = 1)"}</code> |  |
-| <Link id="m-ondisable" /><code>{"protected override void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-conducttoambient" /><code>{"override void ConductToAmbient(float weight = 1)"}</code> |
+| <Link id="m-ondisable" /><code>{"protected override void OnDisable()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+
+</details>

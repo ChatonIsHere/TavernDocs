@@ -17,35 +17,48 @@ A **private class** in `Root.Township`, `Alta.StatSystem`. Reach it through att-
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HandStaminaView("}<Link to="/game-api/types/alta-stats-effects/statbarbase">{"StatBarBase"}</Link>{"[] staminaStatBars, Material notchesMaterial, float alphaLerpSpeed)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HandStaminaView("}<Link to="/game-api/types/alta-stats-effects/statbarbase">{"StatBarBase"}</Link>{"[] staminaStatBars, Material notchesMaterial, float alphaLerpSpeed)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alpha" /><code>{"private float alpha"}</code> |  |
-| <Link id="m-alphalerpspeed" /><code>{"private readonly float alphaLerpSpeed"}</code> |  |
-| <Link id="m-handstaminastat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" handStaminaStat"}</code> |  |
-| <Link id="m-notchalpha" /><code>{"private readonly int NotchAlpha"}</code> |  |
-| <Link id="m-notchesmaterial" /><code>{"private readonly Material notchesMaterial"}</code> |  |
-| <Link id="m-staminastatbars" /><code>{"private readonly "}<Link to="/game-api/types/alta-stats-effects/statbarbase">{"StatBarBase"}</Link>{"[] staminaStatBars"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-alpha" /><code>{"private float alpha"}</code> |
+| <Link id="m-alphalerpspeed" /><code>{"private readonly float alphaLerpSpeed"}</code> |
+| <Link id="m-handstaminastat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" handStaminaStat"}</code> |
+| <Link id="m-notchalpha" /><code>{"private readonly int NotchAlpha"}</code> |
+| <Link id="m-notchesmaterial" /><code>{"private readonly Material notchesMaterial"}</code> |
+| <Link id="m-staminastatbars" /><code>{"private readonly "}<Link to="/game-api/types/alta-stats-effects/statbarbase">{"StatBarBase"}</Link>{"[] staminaStatBars"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alpha-2" /><code>{"float Alpha { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-alpha-2" /><code>{"float Alpha { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-disablestaminabars" /><code>{"void DisableStaminaBars()"}</code> |  |
-| <Link id="m-updatestaminastatbaralpha" /><code>{"void UpdateStaminaStatBarAlpha()"}</code> |  |
-| <Link id="m-hidenotches" /><code>{"private void HideNotches()"}</code> |  |
-| <Link id="m-setupstamina" /><code>{"private void SetupStamina()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-disablestaminabars" /><code>{"void DisableStaminaBars()"}</code> |
+| <Link id="m-updatestaminastatbaralpha" /><code>{"void UpdateStaminaStatBarAlpha()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-hidenotches" /><code>{"private void HideNotches()"}</code> |
+| <Link id="m-setupstamina" /><code>{"private void SetupStamina()"}</code> |
+
+</details>
 
 ## Used in
 

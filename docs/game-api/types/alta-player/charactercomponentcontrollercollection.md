@@ -20,17 +20,22 @@ Character controller that runs a list of child controllers: owned ones only when
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterComponentControllerCollection()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CharacterComponentControllerCollection()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invertownedunownedorder" /><code>{"private bool invertOwnedUnownedOrder"}</code> |  |
-| <Link id="m-ownedcontrollers" /><code>{"private List<"}<Link to="/game-api/types/alta-player/charactercomponentcontroller">{"CharacterComponentController"}</Link>{"> ownedControllers"}</code> |  |
-| <Link id="m-unownedcontrollers" /><code>{"private List<"}<Link to="/game-api/types/alta-player/charactercomponentcontroller">{"CharacterComponentController"}</Link>{"> unownedControllers"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-invertownedunownedorder" /><code>{"private bool invertOwnedUnownedOrder"}</code> |
+| <Link id="m-ownedcontrollers" /><code>{"private List<"}<Link to="/game-api/types/alta-player/charactercomponentcontroller">{"CharacterComponentController"}</Link>{"> ownedControllers"}</code> |
+| <Link id="m-unownedcontrollers" /><code>{"private List<"}<Link to="/game-api/types/alta-player/charactercomponentcontroller">{"CharacterComponentController"}</Link>{"> unownedControllers"}</code> |
+
+</details>
 
 ## Properties
 

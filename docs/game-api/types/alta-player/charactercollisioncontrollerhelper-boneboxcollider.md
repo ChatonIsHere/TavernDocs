@@ -19,23 +19,28 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BoneBoxCollider()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BoneBoxCollider()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-center" /><code>{"private Vector3 center"}</code> |  |
-| <Link id="m-size" /><code>{"private Vector3 size"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-center" /><code>{"private Vector3 center"}</code> |
+| <Link id="m-size" /><code>{"private Vector3 size"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-center-2" /><code>{"Vector3 Center { get; }"}</code> |  |
-| <Link id="m-size-2" /><code>{"Vector3 Size { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-center-2" /><code>{"Vector3 Center { get; }"}</code> |
+| <Link id="m-size-2" /><code>{"Vector3 Size { get; }"}</code> |
 
 ## Used in
 

@@ -17,14 +17,14 @@ A **delegate** in `Root.Township`, `Alta.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunksChanged(object object, IntPtr method)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunksChanged(object object, IntPtr method)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> left, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" joined, AsyncCallback callback, object object)"}</code> |  |
-| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(IAsyncResult result)"}</code> |  |
-| <Link id="m-invoke" /><code>{"virtual void Invoke(List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> left, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" joined)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> left, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" joined, AsyncCallback callback, object object)"}</code> |
+| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(IAsyncResult result)"}</code> |
+| <Link id="m-invoke" /><code>{"virtual void Invoke(List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> left, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" joined)"}</code> |

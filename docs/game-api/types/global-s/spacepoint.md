@@ -20,17 +20,25 @@ A point in a network of connected points that defines an area attribute, such as
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpacePoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpacePoint()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-updatemodule" /><code>{"static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> | Shared update module for space defined attributes, also used by forest atmosphere. |
-| <Link id="m-connectedto" /><code>{"private "}<Link to="/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{"[] connectedTo"}</code> |  |
-| <Link id="m-setweight" /><code>{"private float setWeight"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-connectedto" /><code>{"private "}<Link to="/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{"[] connectedTo"}</code> |
+| <Link id="m-setweight" /><code>{"private float setWeight"}</code> |
+
+</details>
 
 ## Properties
 
@@ -41,9 +49,14 @@ A point in a network of connected points that defines an area attribute, such as
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -17,22 +17,22 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Range(float min, float max)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Range(float min, float max)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-max" /><code>{"float Max { get; set; }"}</code> |  |
-| <Link id="m-min" /><code>{"float Min { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-max" /><code>{"float Max { get; set; }"}</code> |
+| <Link id="m-min" /><code>{"float Min { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-random" /><code>{"float Random(Random random)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-random" /><code>{"float Random(Random random)"}</code> |
 
 ## Used in
 

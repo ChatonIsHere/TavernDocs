@@ -17,23 +17,28 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ProfilingPosition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProfilingPosition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name" /><code>{"private string name"}</code> |  |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-name" /><code>{"private string name"}</code> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; set; }"}</code> |
 
 ## Used in
 

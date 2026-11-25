@@ -17,23 +17,31 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InteractorPositions(Transform transform, Vector3 position, float distanceToPivot)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InteractorPositions(Transform transform, Vector3 position, float distanceToPivot)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distancetopivot" /><code>{"float distanceToPivot"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-distancetopivot" /><code>{"float distanceToPivot"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-movement" /><code>{"Vector3 Movement { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-movement" /><code>{"Vector3 Movement { get; }"}</code> |
 
 ## Used in
 

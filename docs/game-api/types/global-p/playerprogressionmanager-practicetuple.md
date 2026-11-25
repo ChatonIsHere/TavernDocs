@@ -17,30 +17,35 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PracticeTuple()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PracticeTuple("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, uint slotHash)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PracticeTuple()"}</code> |
+| <Link id="m-ctor-2" /><code>{"PracticeTuple("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, uint slotHash)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pathindex" /><code>{"private int pathIndex"}</code> |  |
-| <Link id="m-slothash" /><code>{"private uint slotHash"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-pathindex" /><code>{"private int pathIndex"}</code> |
+| <Link id="m-slothash" /><code>{"private uint slotHash"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-path" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" Path { get; }"}</code> |  |
-| <Link id="m-slothash-2" /><code>{"uint SlotHash { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-path" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" Path { get; }"}</code> |
+| <Link id="m-slothash-2" /><code>{"uint SlotHash { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
 
 ## Used in
 

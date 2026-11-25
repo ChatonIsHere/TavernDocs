@@ -16,16 +16,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OfflinePlayerProgress()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OfflinePlayerProgress()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-levels" /><code>{"int[] levels"}</code> |  |
-| <Link id="m-useridentifier" /><code>{"int userIdentifier"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-levels" /><code>{"int[] levels"}</code> |
+| <Link id="m-useridentifier" /><code>{"int userIdentifier"}</code> |
 
 ## Used in
 

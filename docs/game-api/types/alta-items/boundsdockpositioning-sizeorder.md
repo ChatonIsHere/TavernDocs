@@ -17,14 +17,14 @@ An **private enum** in `Root.Township`, `Alta.Inventory`. Reach it through att-s
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-xyz" /><code>{"XYZ = 0"}</code> |  |
-| <Link id="m-xzy" /><code>{"XZY = 1"}</code> |  |
-| <Link id="m-yxz" /><code>{"YXZ = 2"}</code> |  |
-| <Link id="m-yzx" /><code>{"YZX = 3"}</code> |  |
-| <Link id="m-zxy" /><code>{"ZXY = 4"}</code> |  |
-| <Link id="m-zyx" /><code>{"ZYX = 5"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-xyz" /><code>{"XYZ = 0"}</code> |
+| <Link id="m-xzy" /><code>{"XZY = 1"}</code> |
+| <Link id="m-yxz" /><code>{"YXZ = 2"}</code> |
+| <Link id="m-yzx" /><code>{"YZX = 3"}</code> |
+| <Link id="m-zxy" /><code>{"ZXY = 4"}</code> |
+| <Link id="m-zyx" /><code>{"ZYX = 5"}</code> |
 
 ## Used in
 

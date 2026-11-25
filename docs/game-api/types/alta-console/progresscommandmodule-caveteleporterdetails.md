@@ -17,16 +17,16 @@ A **private class** in `Root.Township`, `Alta.Console.Commands`. Reach it throug
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CaveTeleporterDetails("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxy">{"CaveTeleporterProxy"}</Link>{" proxy)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CaveTeleporterDetails("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxy">{"CaveTeleporterProxy"}</Link>{" proxy)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fuel" /><code>{"int Fuel { get; }"}</code> |  |
-| <Link id="m-level" /><code>{"int Level { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fuel" /><code>{"int Fuel { get; }"}</code> |
+| <Link id="m-level" /><code>{"int Level { get; }"}</code> |
 
 ## Used in
 

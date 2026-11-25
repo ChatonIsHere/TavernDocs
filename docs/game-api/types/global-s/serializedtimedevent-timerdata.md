@@ -17,22 +17,22 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TimerData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TimerData()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-index" /><code>{"int Index { get; set; }"}</code> |  |
-| <Link id="m-timer" /><code><Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" Timer { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-index" /><code>{"int Index { get; set; }"}</code> |
+| <Link id="m-timer" /><code><Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" Timer { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-save" /><code><Link to="/game-api/types/global-t-x/timedeventsavedata-timerdata">{"TimedEventSaveData.TimerData"}</Link>{" Save()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-save" /><code><Link to="/game-api/types/global-t-x/timedeventsavedata-timerdata">{"TimedEventSaveData.TimerData"}</Link>{" Save()"}</code> |
 
 ## Used in
 

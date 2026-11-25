@@ -19,15 +19,15 @@ A **class** in `Root.Township`, `Alta.Map`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MapBoardSaveData1()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MapBoardSaveData1()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-map" /><code><Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> |  |
-| <Link id="m-positionoffset" /><code>{"Vector2 positionOffset"}</code> |  |
-| <Link id="m-unlockpieceindex" /><code>{"int unlockPieceIndex"}</code> |  |
-| <Link id="m-zoom" /><code>{"float zoom"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-map" /><code><Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> |
+| <Link id="m-positionoffset" /><code>{"Vector2 positionOffset"}</code> |
+| <Link id="m-unlockpieceindex" /><code>{"int unlockPieceIndex"}</code> |
+| <Link id="m-zoom" /><code>{"float zoom"}</code> |

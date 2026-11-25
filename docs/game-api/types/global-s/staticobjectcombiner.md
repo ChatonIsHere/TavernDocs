@@ -22,22 +22,30 @@ Bake-time tool on static prefabs that merges LOD groups, joins meshes by materia
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StaticObjectCombiner()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StaticObjectCombiner()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-additionalcheckpoints" /><code>{"private Vector3[] additionalCheckPoints"}</code> |  |
-| <Link id="m-btnbake" /><code>{"private bool btnBake"}</code> |  |
 | <Link id="m-functions" /><code>{"protected "}<Link to="/game-api/types/global-s/staticobjectcombiner-combinefunctions">{"StaticObjectCombiner.CombineFunctions"}</Link>{" functions"}</code> | Flags for which bake steps to run (LOD join, mesh join, occlusion, collider joining and flattening, terrain occlusion). |
-| <Link id="m-impostorkey" /><code>{"private const string ImpostorKey"}</code> |  |
-| <Link id="m-isforcingjoinedmeshcollidersconvex" /><code>{"private bool isForcingJoinedMeshCollidersConvex"}</code> |  |
-| <Link id="m-isignoringautomatedmarking" /><code>{"private bool isIgnoringAutomatedMarking"}</code> |  |
-| <Link id="m-joinedlodvalues" /><code>{"private float[] joinedLODValues"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |  |
+
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-additionalcheckpoints" /><code>{"private Vector3[] additionalCheckPoints"}</code> |
+| <Link id="m-btnbake" /><code>{"private bool btnBake"}</code> |
+| <Link id="m-impostorkey" /><code>{"private const string ImpostorKey"}</code> |
+| <Link id="m-isforcingjoinedmeshcollidersconvex" /><code>{"private bool isForcingJoinedMeshCollidersConvex"}</code> |
+| <Link id="m-isignoringautomatedmarking" /><code>{"private bool isIgnoringAutomatedMarking"}</code> |
+| <Link id="m-joinedlodvalues" /><code>{"private float[] joinedLODValues"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |
+
+</details>
 
 ## Properties
 
@@ -67,14 +75,22 @@ Bake-time tool on static prefabs that merges LOD groups, joins meshes by materia
 | <Link id="m-gatherrenderers" /><code>{"static void GatherRenderers(GameObject prefab, LODGroup lodGroup, Dictionary<"}<Link to="/game-api/types/global-m-o/materiallod">{"MaterialLOD"}</Link>{", List<MeshFilter>> meshesByMaterial, Func<Renderer, bool> validateRenderer = null)"}</code> | Groups the prefab's mesh filters by material and LOD level, skipping impostors and parts on other rigidbodies. |
 | <Link id="m-joinmeshes" /><code>{"static List<GameObject> JoinMeshes(Transform baseTransform, LODGroup lodGroup, KeyValuePair<"}<Link to="/game-api/types/global-m-o/materiallod">{"MaterialLOD"}</Link>{", List<MeshFilter>> pair, out List<Mesh> newMeshes, bool isCleaningUp = false)"}</code> | Combines a group of meshes with the same material and LOD into new mesh objects under the base transform. |
 | <Link id="m-setupfull" /><code>{"void SetupFull()"}</code> | Turns on every bake step. |
-| <Link id="m-additionalcheckpoints-2" /><code>{"private IEnumerable<Vector3> AdditionalCheckPoints() (iterator)"}</code> |  |
-| <Link id="m-anychecks" /><code>{"private static bool AnyChecks(bool[] checks, List<int> triangles, int i)"}</code> |  |
-| <Link id="m-getlodlevel" /><code>{"private static int GetLODLevel(Renderer renderer, LOD[] lods)"}</code> |  |
-| <Link id="m-getmesh" /><code>{"private static void GetMesh(List<Vector3> vertices, List<int> triangles, ref bool needsNormal, List<Vector3> normals, ref bool needsTangents, List<Vector4> tangents, ref bool needsUV, List<Vector2> uv, ref bool needsUV2, List<Vector4> uv2, ref bool needsUV3, List<Vector4> uv3, ref bool needsUV4, List<Vector4> uv4, ref bool needsColor, List<Color> colors, "}<Link to="/game-api/types/global-m-o/materiallod">{"MaterialLOD"}</Link>{" materialLOD, List<Mesh> meshes, bool hasLOD, int finalLayer, List<GameObject> result, Transform baseTransform, List<Renderer> joinedRenderers)"}</code> |  |
-| <Link id="m-getnewparent" /><code>{"private static "}<Link to="/game-api/types/global-s/staticobjectcombiner-space">{"StaticObjectCombiner.Space"}</Link>{" GetNewParent(int layer, List<"}<Link to="/game-api/types/global-s/staticobjectcombiner-space">{"StaticObjectCombiner.Space"}</Link>{"> spaces, Quaternion rotation, Transform parent)"}</code> |  |
-| <Link id="m-isvalidateterrain" /><code>{"private bool IsValidateTerrain(Object terrain)"}</code> |  |
-| <Link id="m-joinmeshcolliders" /><code>{"private void JoinMeshColliders()"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-trianglevalidation" /><code>{"private static bool TriangleValidation(Vector3 a, Vector3 b, Vector3 c, Matrix4x4 localToWorld, Terrain terrain)"}</code> |  |
 | <Link id="m-validaterenderer" /><code>{"protected virtual bool ValidateRenderer(Renderer renderer)"}</code> | Subclass filter for which renderers may be joined. Allows all by default. |
-| <Link id="m-validation" /><code>{"private static bool Validation(Vector3 worldVertex, Matrix4x4 localToWorld, Terrain terrain)"}</code> |  |
+
+<details>
+<summary>10 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-additionalcheckpoints-2" /><code>{"private IEnumerable<Vector3> AdditionalCheckPoints() (iterator)"}</code> |
+| <Link id="m-anychecks" /><code>{"private static bool AnyChecks(bool[] checks, List<int> triangles, int i)"}</code> |
+| <Link id="m-getlodlevel" /><code>{"private static int GetLODLevel(Renderer renderer, LOD[] lods)"}</code> |
+| <Link id="m-getmesh" /><code>{"private static void GetMesh(List<Vector3> vertices, List<int> triangles, ref bool needsNormal, List<Vector3> normals, ref bool needsTangents, List<Vector4> tangents, ref bool needsUV, List<Vector2> uv, ref bool needsUV2, List<Vector4> uv2, ref bool needsUV3, List<Vector4> uv3, ref bool needsUV4, List<Vector4> uv4, ref bool needsColor, List<Color> colors, "}<Link to="/game-api/types/global-m-o/materiallod">{"MaterialLOD"}</Link>{" materialLOD, List<Mesh> meshes, bool hasLOD, int finalLayer, List<GameObject> result, Transform baseTransform, List<Renderer> joinedRenderers)"}</code> |
+| <Link id="m-getnewparent" /><code>{"private static "}<Link to="/game-api/types/global-s/staticobjectcombiner-space">{"StaticObjectCombiner.Space"}</Link>{" GetNewParent(int layer, List<"}<Link to="/game-api/types/global-s/staticobjectcombiner-space">{"StaticObjectCombiner.Space"}</Link>{"> spaces, Quaternion rotation, Transform parent)"}</code> |
+| <Link id="m-isvalidateterrain" /><code>{"private bool IsValidateTerrain(Object terrain)"}</code> |
+| <Link id="m-joinmeshcolliders" /><code>{"private void JoinMeshColliders()"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-trianglevalidation" /><code>{"private static bool TriangleValidation(Vector3 a, Vector3 b, Vector3 c, Matrix4x4 localToWorld, Terrain terrain)"}</code> |
+| <Link id="m-validation" /><code>{"private static bool Validation(Vector3 worldVertex, Matrix4x4 localToWorld, Terrain terrain)"}</code> |
+
+</details>

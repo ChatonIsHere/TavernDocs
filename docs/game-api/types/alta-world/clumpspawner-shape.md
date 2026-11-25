@@ -17,10 +17,10 @@ An **private enum** in `Root.Township`, `Alta.Environmental.Vegetation`. Reach i
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-circle" /><code>{"circle = 0"}</code> |  |
-| <Link id="m-square" /><code>{"square = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-circle" /><code>{"circle = 0"}</code> |
+| <Link id="m-square" /><code>{"square = 1"}</code> |
 
 ## Used in
 

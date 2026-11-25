@@ -17,10 +17,10 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fadedtoblack" /><code>{"FadedToBlack = 2"}</code> |  |
-| <Link id="m-playercontrollernotspawned" /><code>{"PlayerControllerNotSpawned = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fadedtoblack" /><code>{"FadedToBlack = 2"}</code> |
+| <Link id="m-playercontrollernotspawned" /><code>{"PlayerControllerNotSpawned = 1"}</code> |
 
 ## Used in
 

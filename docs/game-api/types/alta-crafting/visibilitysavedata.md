@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Alta.Scrapper`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VisibilitySaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VisibilitySaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/alta-crafting/visibilitydata">{"VisibilityData"}</Link>{" data"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data" /><code><Link to="/game-api/types/alta-crafting/visibilitydata">{"VisibilityData"}</Link>{" data"}</code> |

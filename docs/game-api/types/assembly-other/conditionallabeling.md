@@ -18,17 +18,17 @@ An **abstract class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ConditionalLabeling(string hasName, string dontHasName)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ConditionalLabeling(string hasName, string dontHasName, float hasDefaultValue, float dontHasDefaultValue)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConditionalLabeling(string hasName, string dontHasName)"}</code> |
+| <Link id="m-ctor-2" /><code>{"ConditionalLabeling(string hasName, string dontHasName, float hasDefaultValue, float dontHasDefaultValue)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-donthasdefault" /><code>{"float DontHasDefault { get; private set; }"}</code> |  |
-| <Link id="m-donthasname" /><code>{"string DontHasName { get; private set; }"}</code> |  |
-| <Link id="m-hasdefault" /><code>{"float HasDefault { get; private set; }"}</code> |  |
-| <Link id="m-hasdefaultvalues" /><code>{"bool HasDefaultValues { get; private set; }"}</code> |  |
-| <Link id="m-hasname" /><code>{"string HasName { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-donthasdefault" /><code>{"float DontHasDefault { get; private set; }"}</code> |
+| <Link id="m-donthasname" /><code>{"string DontHasName { get; private set; }"}</code> |
+| <Link id="m-hasdefault" /><code>{"float HasDefault { get; private set; }"}</code> |
+| <Link id="m-hasdefaultvalues" /><code>{"bool HasDefaultValues { get; private set; }"}</code> |
+| <Link id="m-hasname" /><code>{"string HasName { get; private set; }"}</code> |

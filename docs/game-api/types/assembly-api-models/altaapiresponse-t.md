@@ -16,13 +16,13 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaApiResponse(IEnumerable<T> data, "}<Link to="/game-api/types/assembly-api-models/querymeta">{"QueryMeta"}</Link>{" meta)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaApiResponse(IEnumerable<T> data, "}<Link to="/game-api/types/assembly-api-models/querymeta">{"QueryMeta"}</Link>{" meta)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-data" /><code>{"IEnumerable<T> Data { get; }"}</code> |  |
-| <Link id="m-meta" /><code><Link to="/game-api/types/assembly-api-models/querymeta">{"QueryMeta"}</Link>{" Meta { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-data" /><code>{"IEnumerable<T> Data { get; }"}</code> |
+| <Link id="m-meta" /><code><Link to="/game-api/types/assembly-api-models/querymeta">{"QueryMeta"}</Link>{" Meta { get; }"}</code> |

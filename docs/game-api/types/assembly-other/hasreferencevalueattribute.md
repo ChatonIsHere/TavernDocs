@@ -17,19 +17,24 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HasReferenceValueAttribute(string targetField)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HasReferenceValueAttribute(string targetField)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-flags" /><code>{"private static readonly BindingFlags flags"}</code> |  |
-| <Link id="m-targetfield" /><code>{"private string targetField"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-flags" /><code>{"private static readonly BindingFlags flags"}</code> |
+| <Link id="m-targetfield" /><code>{"private string targetField"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> |

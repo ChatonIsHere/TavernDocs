@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LODGroupWrapper()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LODGroupWrapper()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-addrendererstolod" /><code>{"void AddRenderersToLOD(int lodIndex, IEnumerable<Renderer> renderers)"}</code> |  |
-| <Link id="m-removerenderersfromlod" /><code>{"void RemoveRenderersFromLOD(int lodIndex, IEnumerable<Renderer> renderersToRemove)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-addrendererstolod" /><code>{"void AddRenderersToLOD(int lodIndex, IEnumerable<Renderer> renderers)"}</code> |
+| <Link id="m-removerenderersfromlod" /><code>{"void RemoveRenderersFromLOD(int lodIndex, IEnumerable<Renderer> renderersToRemove)"}</code> |

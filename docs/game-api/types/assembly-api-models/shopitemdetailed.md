@@ -18,18 +18,18 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShopItemDetailed()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShopItemDetailed()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-category" /><code><Link to="/game-api/types/assembly-api-models/itemcategory">{"ItemCategory"}</Link>{" Category { get; set; }"}</code> |  |
-| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |  |
-| <Link id="m-images" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/shopitemimage">{"ShopItemImage"}</Link>{"> Images { get; set; }"}</code> |  |
-| <Link id="m-xsollaitemid" /><code>{"int XsollaItemId { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-category" /><code><Link to="/game-api/types/assembly-api-models/itemcategory">{"ItemCategory"}</Link>{" Category { get; set; }"}</code> |
+| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |
+| <Link id="m-images" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/shopitemimage">{"ShopItemImage"}</Link>{"> Images { get; set; }"}</code> |
+| <Link id="m-xsollaitemid" /><code>{"int XsollaItemId { get; set; }"}</code> |
 
 ## Used in
 

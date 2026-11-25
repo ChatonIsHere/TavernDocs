@@ -18,14 +18,14 @@ A **class** in `Alta.Coroutines`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TaskYield(Task<T> task)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TaskYield(Task<T> task)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-keepwaiting" /><code>{"override bool keepWaiting { get; }"}</code> |  |
-| <Link id="m-result" /><code>{"T Result { get; }"}</code> |  |
-| <Link id="m-task" /><code>{"Task<T> Task { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-keepwaiting" /><code>{"override bool keepWaiting { get; }"}</code> |
+| <Link id="m-result" /><code>{"T Result { get; }"}</code> |
+| <Link id="m-task" /><code>{"Task<T> Task { get; set; }"}</code> |

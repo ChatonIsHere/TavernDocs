@@ -19,21 +19,26 @@ A **class** in `Root.Township`, `Alta.Loot`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DebugPackage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DebugPackage()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-package" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/debugpackage-prefabquantity">{"DebugPackage.PrefabQuantity"}</Link>{"> package"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-package" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/debugpackage-prefabquantity">{"DebugPackage.PrefabQuantity"}</Link>{"> package"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-package-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/debugpackage-prefabquantity">{"DebugPackage.PrefabQuantity"}</Link>{"> Package { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-package-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/debugpackage-prefabquantity">{"DebugPackage.PrefabQuantity"}</Link>{"> Package { get; }"}</code> |
 
 ## Used in
 

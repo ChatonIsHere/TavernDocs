@@ -17,12 +17,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TemperatureAffected()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TemperatureAffected()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-roomtemperature" /><code>{"private const float RoomTemperature"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-roomtemperature" /><code>{"private const float RoomTemperature"}</code> |
+
+</details>

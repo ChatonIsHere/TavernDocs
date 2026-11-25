@@ -17,36 +17,41 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EnvironmentLerp("}<Link to="/game-api/types/global-e-h/environmentnode">{"EnvironmentNode"}</Link>{" defaultEnvironment)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EnvironmentLerp("}<Link to="/game-api/types/global-e-h/environmentnode">{"EnvironmentNode"}</Link>{" defaultEnvironment)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-progress" /><code>{"private float progress"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-default" /><code><Link to="/game-api/types/global-e-h/environmentnode">{"EnvironmentNode"}</Link>{" Default { get; private set; }"}</code> |  |
-| <Link id="m-reverb" /><code><Link to="/game-api/types/global-e-h/environmentlerp-variable">{"EnvironmentLerp.Variable"}</Link>{" Reverb { get; }"}</code> |  |
-| <Link id="m-target" /><code><Link to="/game-api/types/global-e-h/environmentnode">{"EnvironmentNode"}</Link>{" Target { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-default" /><code><Link to="/game-api/types/global-e-h/environmentnode">{"EnvironmentNode"}</Link>{" Default { get; private set; }"}</code> |
+| <Link id="m-reverb" /><code><Link to="/game-api/types/global-e-h/environmentlerp-variable">{"EnvironmentLerp.Variable"}</Link>{" Reverb { get; }"}</code> |
+| <Link id="m-target" /><code><Link to="/game-api/types/global-e-h/environmentnode">{"EnvironmentNode"}</Link>{" Target { get; private set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-targetchanged" /><code>{"event Action TargetChanged"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-targetchanged" /><code>{"event Action TargetChanged"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setenvironment" /><code>{"void SetEnvironment("}<Link to="/game-api/types/global-e-h/environmentnode">{"EnvironmentNode"}</Link>{" environment, bool isSnapping)"}</code> |  |
-| <Link id="m-update" /><code>{"bool Update(float amount)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setenvironment" /><code>{"void SetEnvironment("}<Link to="/game-api/types/global-e-h/environmentnode">{"EnvironmentNode"}</Link>{" environment, bool isSnapping)"}</code> |
+| <Link id="m-update" /><code>{"bool Update(float amount)"}</code> |
 
 ## Used in
 

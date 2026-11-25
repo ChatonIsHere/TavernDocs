@@ -17,27 +17,32 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Attachment()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Attachment()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-attachmenthash" /><code>{"private uint attachmentHash"}</code> |  |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |  |
-| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |  |
-| <Link id="m-scale" /><code>{"private float scale"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-attachmenthash" /><code>{"private uint attachmentHash"}</code> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |
+| <Link id="m-scale" /><code>{"private float scale"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-attachmenthash-2" /><code>{"uint AttachmentHash { get; set; }"}</code> |  |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; set; }"}</code> |  |
-| <Link id="m-rotation-2" /><code>{"Quaternion Rotation { get; set; }"}</code> |  |
-| <Link id="m-scale-2" /><code>{"float Scale { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-attachmenthash-2" /><code>{"uint AttachmentHash { get; set; }"}</code> |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; set; }"}</code> |
+| <Link id="m-rotation-2" /><code>{"Quaternion Rotation { get; set; }"}</code> |
+| <Link id="m-scale-2" /><code>{"float Scale { get; set; }"}</code> |
 
 ## Used in
 

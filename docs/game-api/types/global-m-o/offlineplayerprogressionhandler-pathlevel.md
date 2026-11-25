@@ -17,16 +17,16 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PathLevel(int path, int level)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PathLevel(int path, int level)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-level" /><code>{"int level"}</code> |  |
-| <Link id="m-path" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-level" /><code>{"int level"}</code> |
+| <Link id="m-path" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> |
 
 ## Used in
 

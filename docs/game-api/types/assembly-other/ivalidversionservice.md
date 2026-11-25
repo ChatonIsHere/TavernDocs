@@ -17,16 +17,16 @@ An **interface** in `Alta.Platform`, `Alta.Platform`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentcode" /><code>{"int CurrentCode { get; }"}</code> |  |
-| <Link id="m-latestcode" /><code>{"int LatestCode { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentcode" /><code>{"int CurrentCode { get; }"}</code> |
+| <Link id="m-latestcode" /><code>{"int LatestCode { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isversionvalid" /><code>{"Task<IResult> IsVersionValid()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isversionvalid" /><code>{"Task<IResult> IsVersionValid()"}</code> |
 
 ## Used in
 

@@ -16,22 +16,27 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EditableEquipmentManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EditableEquipmentManager()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-slots" /><code>{"private "}<Link to="/game-api/types/alta-customization/editableequipmentslot">{"EditableEquipmentSlot"}</Link>{"[] slots"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-slots" /><code>{"private "}<Link to="/game-api/types/alta-customization/editableequipmentslot">{"EditableEquipmentSlot"}</Link>{"[] slots"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-activate" /><code>{"void Activate("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-deactivate" /><code>{"void Deactivate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-activate" /><code>{"void Activate("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| <Link id="m-deactivate" /><code>{"void Deactivate()"}</code> |
 
 ## Used in
 

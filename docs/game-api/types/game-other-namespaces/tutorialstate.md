@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, `ATT.MicroTutorial`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-completed" /><code>{"Completed = 2"}</code> |  |
-| <Link id="m-inactive" /><code>{"Inactive = 0"}</code> |  |
-| <Link id="m-started" /><code>{"Started = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-completed" /><code>{"Completed = 2"}</code> |
+| <Link id="m-inactive" /><code>{"Inactive = 0"}</code> |
+| <Link id="m-started" /><code>{"Started = 1"}</code> |
 
 ## Used in
 

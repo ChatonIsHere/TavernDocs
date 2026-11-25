@@ -18,18 +18,18 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected AvailablePointVisualizerManager()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected AvailablePointVisualizerManager()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cleantemporary" /><code>{"abstract void CleanTemporary()"}</code> |  |
-| <Link id="m-opentemporary" /><code>{"abstract void OpenTemporary(int index)"}</code> |  |
-| <Link id="m-openvisual" /><code>{"abstract void OpenVisual(int index)"}</code> |  |
-| <Link id="m-updateavailablepointsvisual" /><code>{"abstract void UpdateAvailablePointsVisual(int freePoints)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cleantemporary" /><code>{"abstract void CleanTemporary()"}</code> |
+| <Link id="m-opentemporary" /><code>{"abstract void OpenTemporary(int index)"}</code> |
+| <Link id="m-openvisual" /><code>{"abstract void OpenVisual(int index)"}</code> |
+| <Link id="m-updateavailablepointsvisual" /><code>{"abstract void UpdateAvailablePointsVisual(int freePoints)"}</code> |
 
 ## Used in
 

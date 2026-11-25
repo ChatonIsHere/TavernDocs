@@ -18,38 +18,51 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ScalePulsator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ScalePulsator()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-basesize" /><code>{"private float baseSize"}</code> |  |
-| <Link id="m-isstartingonawake" /><code>{"private bool isStartingOnAwake"}</code> |  |
-| <Link id="m-pulsespeed" /><code>{"private float pulseSpeed"}</code> |  |
-| <Link id="m-sizemultiplier" /><code>{"private float sizeMultiplier"}</code> |  |
-| <Link id="m-startsize" /><code>{"private Vector3 startSize"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-basesize" /><code>{"private float baseSize"}</code> |
+| <Link id="m-isstartingonawake" /><code>{"private bool isStartingOnAwake"}</code> |
+| <Link id="m-pulsespeed" /><code>{"private float pulseSpeed"}</code> |
+| <Link id="m-sizemultiplier" /><code>{"private float sizeMultiplier"}</code> |
+| <Link id="m-startsize" /><code>{"private Vector3 startSize"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-pulsespeed-2" /><code>{"float PulseSpeed { get; set; }"}</code> |  |
-| <Link id="m-sizemultiplier-2" /><code>{"float SizeMultiplier { get; set; }"}</code> |  |
-| <Link id="m-startsize-2" /><code>{"Vector3 StartSize { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-pulsespeed-2" /><code>{"float PulseSpeed { get; set; }"}</code> |
+| <Link id="m-sizemultiplier-2" /><code>{"float SizeMultiplier { get; set; }"}</code> |
+| <Link id="m-startsize-2" /><code>{"Vector3 StartSize { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-startpulsator" /><code>{"static void StartPulsator(GameObject gameobject)"}</code> |  |
-| <Link id="m-startpulsing" /><code>{"void StartPulsing()"}</code> |  |
-| <Link id="m-stoppulsator" /><code>{"static void StopPulsator(GameObject gameobject)"}</code> |  |
-| <Link id="m-stoppulsing" /><code>{"void StopPulsing()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-updatescale" /><code>{"private IEnumerator UpdateScale() (iterator)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-startpulsator" /><code>{"static void StartPulsator(GameObject gameobject)"}</code> |
+| <Link id="m-startpulsing" /><code>{"void StartPulsing()"}</code> |
+| <Link id="m-stoppulsator" /><code>{"static void StopPulsator(GameObject gameobject)"}</code> |
+| <Link id="m-stoppulsing" /><code>{"void StopPulsing()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-updatescale" /><code>{"private IEnumerator UpdateScale() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

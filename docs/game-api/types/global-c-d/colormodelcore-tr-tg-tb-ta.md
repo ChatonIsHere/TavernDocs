@@ -18,25 +18,30 @@ Works out vertex colours for a mesh from values on its bones, one channel per po
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ColorModelCore(MonoBehaviour subject)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ColorModelCore(MonoBehaviour subject)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isalphachanged" /><code>{"private bool isAlphaChanged"}</code> |  |
-| <Link id="m-isalphaoff" /><code>{"private bool isAlphaOff"}</code> |  |
-| <Link id="m-isbluechanged" /><code>{"private bool isBlueChanged"}</code> |  |
-| <Link id="m-isblueoff" /><code>{"private bool isBlueOff"}</code> |  |
-| <Link id="m-isgreenchanged" /><code>{"private bool isGreenChanged"}</code> |  |
-| <Link id="m-isgreenoff" /><code>{"private bool isGreenOff"}</code> |  |
-| <Link id="m-isneedingcheck" /><code>{"private bool isNeedingCheck"}</code> |  |
-| <Link id="m-isredchanged" /><code>{"private bool isRedChanged"}</code> |  |
-| <Link id="m-isredoff" /><code>{"private bool isRedOff"}</code> |  |
-| <Link id="m-iswaitingforcheck" /><code>{"private bool isWaitingForCheck"}</code> |  |
-| <Link id="m-subject" /><code>{"private MonoBehaviour subject"}</code> |  |
+<details>
+<summary>11 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isalphachanged" /><code>{"private bool isAlphaChanged"}</code> |
+| <Link id="m-isalphaoff" /><code>{"private bool isAlphaOff"}</code> |
+| <Link id="m-isbluechanged" /><code>{"private bool isBlueChanged"}</code> |
+| <Link id="m-isblueoff" /><code>{"private bool isBlueOff"}</code> |
+| <Link id="m-isgreenchanged" /><code>{"private bool isGreenChanged"}</code> |
+| <Link id="m-isgreenoff" /><code>{"private bool isGreenOff"}</code> |
+| <Link id="m-isneedingcheck" /><code>{"private bool isNeedingCheck"}</code> |
+| <Link id="m-isredchanged" /><code>{"private bool isRedChanged"}</code> |
+| <Link id="m-isredoff" /><code>{"private bool isRedOff"}</code> |
+| <Link id="m-iswaitingforcheck" /><code>{"private bool isWaitingForCheck"}</code> |
+| <Link id="m-subject" /><code>{"private MonoBehaviour subject"}</code> |
+
+</details>
 
 ## Properties
 
@@ -69,15 +74,23 @@ Works out vertex colours for a mesh from values on its bones, one channel per po
 | <Link id="m-checkatendofframe" /><code>{"void CheckAtEndOfFrame()"}</code> | Client: schedules `CheckForColor` at the end of the frame. |
 | <Link id="m-checkforcolor" /><code>{"void CheckForColor(bool? forceTo = null, bool isCheckingAll = true)"}</code> | Rechecks which channels differ from their defaults (or forces the result) and raises `Modified` if anything was flagged. |
 | <Link id="m-initialize" /><code>{"void Initialize()"}</code> | Starts listening to every point's `Changed` event. |
-| <Link id="m-alphavaluechanged" /><code>{"private void AlphaValueChanged(TA point)"}</code> |  |
-| <Link id="m-bluevaluechanged" /><code>{"private void BlueValueChanged(TB point)"}</code> |  |
-| <Link id="m-checkchanged" /><code>{"private bool CheckChanged<T>(List<T> points, float defaultValue)"}</code> |  |
-| <Link id="m-greenvaluechanged" /><code>{"private void GreenValueChanged(TG point)"}</code> |  |
-| <Link id="m-redvaluechanged" /><code>{"private void RedValueChanged(TR point)"}</code> |  |
-| <Link id="m-setlisteningto" /><code>{"private void SetListeningTo(bool isListening)"}</code> |  |
-| <Link id="m-setlisteningto-2" /><code>{"private void SetListeningTo<T>(List<T> points, Action<T> callback, bool isListening)"}</code> |  |
-| <Link id="m-updatecolors" /><code>{"private void UpdateColors<T>(List<T> points, List<Color> colors, int offset, int channel)"}</code> |  |
-| <Link id="m-waitforcheck" /><code>{"private IEnumerator WaitForCheck() (iterator)"}</code> |  |
+
+<details>
+<summary>9 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-alphavaluechanged" /><code>{"private void AlphaValueChanged(TA point)"}</code> |
+| <Link id="m-bluevaluechanged" /><code>{"private void BlueValueChanged(TB point)"}</code> |
+| <Link id="m-checkchanged" /><code>{"private bool CheckChanged<T>(List<T> points, float defaultValue)"}</code> |
+| <Link id="m-greenvaluechanged" /><code>{"private void GreenValueChanged(TG point)"}</code> |
+| <Link id="m-redvaluechanged" /><code>{"private void RedValueChanged(TR point)"}</code> |
+| <Link id="m-setlisteningto" /><code>{"private void SetListeningTo(bool isListening)"}</code> |
+| <Link id="m-setlisteningto-2" /><code>{"private void SetListeningTo<T>(List<T> points, Action<T> callback, bool isListening)"}</code> |
+| <Link id="m-updatecolors" /><code>{"private void UpdateColors<T>(List<T> points, List<Color> colors, int offset, int channel)"}</code> |
+| <Link id="m-waitforcheck" /><code>{"private IEnumerator WaitForCheck() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 

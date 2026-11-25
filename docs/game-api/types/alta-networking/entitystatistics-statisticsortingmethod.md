@@ -17,12 +17,12 @@ An **private enum** in `Root.Township`, `Alta.Profiling.Networking`. Reach it th
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-averagesendsize" /><code>{"AverageSendSize = 2"}</code> |  |
-| <Link id="m-bytesperframe" /><code>{"BytesPerFrame = 1"}</code> |  |
-| <Link id="m-bytespersecond" /><code>{"BytesPerSecond = 0"}</code> |  |
-| <Link id="m-sentcount" /><code>{"SentCount = 3"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-averagesendsize" /><code>{"AverageSendSize = 2"}</code> |
+| <Link id="m-bytesperframe" /><code>{"BytesPerFrame = 1"}</code> |
+| <Link id="m-bytespersecond" /><code>{"BytesPerSecond = 0"}</code> |
+| <Link id="m-sentcount" /><code>{"SentCount = 3"}</code> |
 
 ## Used in
 

@@ -19,15 +19,15 @@ A **class** in `Root.Township`, `Alta.Map`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LandmarkManagerSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LandmarkManagerSaveData()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-markers" /><code><Link to="/game-api/types/alta-world/markerinfo">{"MarkerInfo"}</Link>{"[] Markers { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-markers" /><code><Link to="/game-api/types/alta-world/markerinfo">{"MarkerInfo"}</Link>{"[] Markers { get; set; }"}</code> |
 
 ## Used in
 

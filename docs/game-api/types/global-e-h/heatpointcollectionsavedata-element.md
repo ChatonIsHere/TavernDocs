@@ -18,12 +18,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Element()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Element()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-temperature" /><code>{"float temperature"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-temperature" /><code>{"float temperature"}</code> |

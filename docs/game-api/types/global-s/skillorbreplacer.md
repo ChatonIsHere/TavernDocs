@@ -19,26 +19,31 @@ The orb a player pulls from a skill shrine to buy a skill. Holding it at the shr
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SkillOrbReplacer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SkillOrbReplacer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-acceleration" /><code>{"private float acceleration"}</code> |  |
-| <Link id="m-distancetosnapsquared" /><code>{"private float distanceToSnapSquared"}</code> |  |
-| <Link id="m-distancetounsnapsquared" /><code>{"private float distanceToUnSnapSquared"}</code> |  |
-| <Link id="m-fauxrigidbody" /><code>{"private "}<Link to="/game-api/types/global-e-h/fauxrigidbody">{"FauxRigidbody"}</Link>{" fauxRigidBody"}</code> |  |
-| <Link id="m-helddurationcheck" /><code>{"private Coroutine heldDurationCheck"}</code> |  |
-| <Link id="m-holdduration" /><code>{"private float holdDuration"}</code> |  |
-| <Link id="m-isoperating" /><code>{"private bool isOperating"}</code> |  |
-| <Link id="m-maxdistancefromtargetsquared" /><code>{"private float maxDistanceFromTargetSquared"}</code> |  |
-| <Link id="m-movespeed" /><code>{"private float moveSpeed"}</code> |  |
-| <Link id="m-returningtotargetcoroutine" /><code>{"private Coroutine returningToTargetCoroutine"}</code> |  |
-| <Link id="m-rotationlerpspeed" /><code>{"private float rotationLerpSpeed"}</code> |  |
-| <Link id="m-targetorb" /><code>{"private "}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" targetOrb"}</code> |  |
+<details>
+<summary>12 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-acceleration" /><code>{"private float acceleration"}</code> |
+| <Link id="m-distancetosnapsquared" /><code>{"private float distanceToSnapSquared"}</code> |
+| <Link id="m-distancetounsnapsquared" /><code>{"private float distanceToUnSnapSquared"}</code> |
+| <Link id="m-fauxrigidbody" /><code>{"private "}<Link to="/game-api/types/global-e-h/fauxrigidbody">{"FauxRigidbody"}</Link>{" fauxRigidBody"}</code> |
+| <Link id="m-helddurationcheck" /><code>{"private Coroutine heldDurationCheck"}</code> |
+| <Link id="m-holdduration" /><code>{"private float holdDuration"}</code> |
+| <Link id="m-isoperating" /><code>{"private bool isOperating"}</code> |
+| <Link id="m-maxdistancefromtargetsquared" /><code>{"private float maxDistanceFromTargetSquared"}</code> |
+| <Link id="m-movespeed" /><code>{"private float moveSpeed"}</code> |
+| <Link id="m-returningtotargetcoroutine" /><code>{"private Coroutine returningToTargetCoroutine"}</code> |
+| <Link id="m-rotationlerpspeed" /><code>{"private float rotationLerpSpeed"}</code> |
+| <Link id="m-targetorb" /><code>{"private "}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" targetOrb"}</code> |
+
+</details>
 
 ## Properties
 
@@ -56,10 +61,18 @@ The orb a player pulls from a skill shrine to buy a skill. Holding it at the shr
 | <Link id="m-endinteraction" /><code>{"protected override void EndInteraction("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> | On release, breaks any operator joint without buying and floats the orb back to its spot. |
 | <Link id="m-helddurationcheck-2" /><code>{"protected override IEnumerator HeldDurationCheck("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor) (iterator)"}</code> | Coroutine while held: snaps to the operator when close, fills the progress, and confirms the buy after the hold time. |
 | <Link id="m-operate" /><code>{"protected override void Operate("}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" targetManager)"}</code> | Unlocks the slot on the player's progression manager. |
-| <Link id="m-returnselectionorb" /><code>{"private IEnumerator ReturnSelectionOrb() (iterator)"}</code> |  |
-| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
 | <Link id="m-startinteraction" /><code>{"protected override void StartInteraction("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Stops the float back when grabbed again. |
 | <Link id="m-syncsetup" /><code>{"protected override void SyncSetup("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sends the linked skill orb's entity ID so clients can link to it. |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-returnselectionorb" /><code>{"private IEnumerator ReturnSelectionOrb() (iterator)"}</code> |
+| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+
+</details>
 
 ## Used in
 

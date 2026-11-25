@@ -17,25 +17,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InvokeEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InvokeEvent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-events" /><code>{"private UnityEvent[] events"}</code> |  |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-events" /><code>{"private UnityEvent[] events"}</code> |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke(int index)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invoke" /><code>{"void Invoke(int index)"}</code> |

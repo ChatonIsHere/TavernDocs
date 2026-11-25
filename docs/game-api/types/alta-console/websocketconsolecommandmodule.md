@@ -17,14 +17,14 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WebSocketConsoleCommandModule()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WebSocketConsoleCommandModule()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-subscribe" /><code>{"static "}<Link to="/game-api/types/alta-console/websocketcommandhandler-subscriptionresult">{"WebSocketCommandHandler.SubscriptionResult"}</Link>{" Subscribe(string eventType)"}</code> |  |
-| <Link id="m-subscriptions" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-console/iconsoleevent">{"IConsoleEvent"}</Link>{"> Subscriptions()"}</code> |  |
-| <Link id="m-unsubscribe" /><code>{"static "}<Link to="/game-api/types/alta-console/websocketcommandhandler-subscriptionresult">{"WebSocketCommandHandler.SubscriptionResult"}</Link>{" Unsubscribe(string eventType)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-subscribe" /><code>{"static "}<Link to="/game-api/types/alta-console/websocketcommandhandler-subscriptionresult">{"WebSocketCommandHandler.SubscriptionResult"}</Link>{" Subscribe(string eventType)"}</code> |
+| <Link id="m-subscriptions" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-console/iconsoleevent">{"IConsoleEvent"}</Link>{"> Subscriptions()"}</code> |
+| <Link id="m-unsubscribe" /><code>{"static "}<Link to="/game-api/types/alta-console/websocketcommandhandler-subscriptionresult">{"WebSocketCommandHandler.SubscriptionResult"}</Link>{" Unsubscribe(string eventType)"}</code> |

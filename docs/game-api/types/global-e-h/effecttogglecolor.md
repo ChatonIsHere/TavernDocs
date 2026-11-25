@@ -18,22 +18,35 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EffectToggleColor()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EffectToggleColor()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-btnvalidate" /><code>{"private bool btnValidate"}</code> |  |
-| <Link id="m-ison" /><code>{"private bool isOn"}</code> |  |
-| <Link id="m-lifetimecolorsystems" /><code>{"private List<"}<Link to="/game-api/types/global-e-h/effecttogglecolor-particlelifetimecolor">{"EffectToggleColor.ParticleLifetimeColor"}</Link>{"> lifetimeColorSystems"}</code> |  |
-| <Link id="m-startcolorsystems" /><code>{"private List<"}<Link to="/game-api/types/global-e-h/effecttogglecolor-particlestartcolor">{"EffectToggleColor.ParticleStartColor"}</Link>{"> startColorSystems"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-btnvalidate" /><code>{"private bool btnValidate"}</code> |
+| <Link id="m-ison" /><code>{"private bool isOn"}</code> |
+| <Link id="m-lifetimecolorsystems" /><code>{"private List<"}<Link to="/game-api/types/global-e-h/effecttogglecolor-particlelifetimecolor">{"EffectToggleColor.ParticleLifetimeColor"}</Link>{"> lifetimeColorSystems"}</code> |
+| <Link id="m-startcolorsystems" /><code>{"private List<"}<Link to="/game-api/types/global-e-h/effecttogglecolor-particlestartcolor">{"EffectToggleColor.ParticleStartColor"}</Link>{"> startColorSystems"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-settoggle" /><code>{"void SetToggle(bool isOn)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-settoggle" /><code>{"void SetToggle(bool isOn)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

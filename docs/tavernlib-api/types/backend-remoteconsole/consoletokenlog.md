@@ -19,13 +19,18 @@ Internal: writes `console_token_log.jsonl`, one JSON line per console connect, d
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filepath" /><code>{"private static readonly string FilePath"}</code> |  |
-| <Link id="m-maxcommandlength" /><code>{"private const int MaxCommandLength"}</code> |  |
-| <Link id="m-rollat" /><code>{"private const long RollAt"}</code> |  |
-| <Link id="m-sync" /><code>{"private static readonly object Sync"}</code> |  |
-| <Link id="m-tokentext" /><code>{"private static readonly Regex TokenText"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-filepath" /><code>{"private static readonly string FilePath"}</code> |
+| <Link id="m-maxcommandlength" /><code>{"private const int MaxCommandLength"}</code> |
+| <Link id="m-rollat" /><code>{"private const long RollAt"}</code> |
+| <Link id="m-sync" /><code>{"private static readonly object Sync"}</code> |
+| <Link id="m-tokentext" /><code>{"private static readonly Regex TokenText"}</code> |
+
+</details>
 
 ## Methods
 

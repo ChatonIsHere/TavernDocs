@@ -17,18 +17,18 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CreateGroupAndServerRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CreateGroupAndServerRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |  |
-| <Link id="m-grouptype" /><code><Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{"? "}<Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-target" /><code>{"int Target { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |
+| <Link id="m-grouptype" /><code><Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{"? "}<Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| <Link id="m-target" /><code>{"int Target { get; set; }"}</code> |
 
 ## Used in
 

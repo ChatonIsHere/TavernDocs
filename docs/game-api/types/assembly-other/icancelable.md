@@ -18,6 +18,6 @@ An **interface** in `Alta.LifecycleManagement.Runtime`, `Alta.LifecycleManagemen
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdisposed" /><code>{"bool IsDisposed { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isdisposed" /><code>{"bool IsDisposed { get; }"}</code> |

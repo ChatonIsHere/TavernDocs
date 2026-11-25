@@ -18,11 +18,11 @@ Which hand: `Left`, `Right` or `Both`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-both" /><code>{"Both = 2"}</code> |  |
-| <Link id="m-left" /><code>{"Left = 0"}</code> |  |
-| <Link id="m-right" /><code>{"Right = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-both" /><code>{"Both = 2"}</code> |
+| <Link id="m-left" /><code>{"Left = 0"}</code> |
+| <Link id="m-right" /><code>{"Right = 1"}</code> |
 
 ## Used in
 

@@ -19,22 +19,27 @@ A **class** in `Root.Township`, `Alta.Achievements`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AchievementStatDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AchievementStatDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-player/stattype">{"StatType"}</Link>{" type"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-player/stattype">{"StatType"}</Link>{" type"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-identifier" /><code>{"string Identifier { get; }"}</code> |  |
-| <Link id="m-type-2" /><code><Link to="/game-api/types/alta-player/stattype">{"StatType"}</Link>{" Type { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-identifier" /><code>{"string Identifier { get; }"}</code> |
+| <Link id="m-type-2" /><code><Link to="/game-api/types/alta-player/stattype">{"StatType"}</Link>{" Type { get; }"}</code> |
 
 ## Used in
 

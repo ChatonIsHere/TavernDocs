@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fingertips" /><code><Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" FingerTips { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fingertips" /><code><Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" FingerTips { get; }"}</code> |

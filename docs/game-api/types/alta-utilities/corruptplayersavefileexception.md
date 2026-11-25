@@ -17,7 +17,7 @@ A **internal class** in `Root.Township`, `Alta.Utilities`. Reach it through att-
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CorruptPlayerSaveFileException()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"CorruptPlayerSaveFileException(string message)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CorruptPlayerSaveFileException()"}</code> |
+| <Link id="m-ctor-2" /><code>{"CorruptPlayerSaveFileException(string message)"}</code> |

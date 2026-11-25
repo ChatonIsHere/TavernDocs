@@ -17,18 +17,18 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Encounter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Encounter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-edgea" /><code>{"int edgeA"}</code> |  |
-| <Link id="m-edgeb" /><code>{"int edgeB"}</code> |  |
-| <Link id="m-name" /><code>{"string name"}</code> |  |
-| <Link id="m-node" /><code>{"int node"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-edgea" /><code>{"int edgeA"}</code> |
+| <Link id="m-edgeb" /><code>{"int edgeB"}</code> |
+| <Link id="m-name" /><code>{"string name"}</code> |
+| <Link id="m-node" /><code>{"int node"}</code> |
 
 ## Used in
 

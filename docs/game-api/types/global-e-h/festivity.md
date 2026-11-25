@@ -23,18 +23,23 @@ A seasonal event asset with a start and end date. `FestivityManager` turns it on
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Festivity()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Festivity()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-end" /><code>{"private "}<Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" end"}</code> |  |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |  |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |  |
-| <Link id="m-start" /><code>{"private "}<Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" start"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-end" /><code>{"private "}<Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" end"}</code> |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
+| <Link id="m-start" /><code>{"private "}<Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" start"}</code> |
+
+</details>
 
 ## Properties
 
@@ -53,9 +58,14 @@ A seasonal event asset with a start and end date. `FestivityManager` turns it on
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setactive" /><code>{"private void SetActive(bool value)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-setactive" /><code>{"private void SetActive(bool value)"}</code> |
+
+</details>
 
 ## Used in
 

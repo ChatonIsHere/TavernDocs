@@ -16,22 +16,27 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactTypeFilter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactTypeFilter()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-types" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{"[] types"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-types" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{"[] types"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" type)"}</code> |  |
-| <Link id="m-validateimpactool" /><code>{"bool ValidateImpacTool("}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" type)"}</code> |
+| <Link id="m-validateimpactool" /><code>{"bool ValidateImpacTool("}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> |
 
 ## Used in
 

@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-consolecommand" /><code>{"ConsoleCommand = 0"}</code> |  |
-| <Link id="m-modupload" /><code>{"ModUpload = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-consolecommand" /><code>{"ConsoleCommand = 0"}</code> |
+| <Link id="m-modupload" /><code>{"ModUpload = 1"}</code> |
 
 ## Used in
 

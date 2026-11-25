@@ -18,24 +18,29 @@ A **class** in `Root.Township`, `Features.Gameplay.GameConditions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ManualCondition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ManualCondition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isconditionmet" /><code>{"private bool isConditionMet"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-isconditionmet" /><code>{"private bool isConditionMet"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onconditionchanged" /><code>{"Action OnConditionChanged { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onconditionchanged" /><code>{"Action OnConditionChanged { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isconditionmet-2" /><code>{"bool IsConditionMet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isconditionmet-2" /><code>{"bool IsConditionMet()"}</code> |

@@ -17,17 +17,17 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Atom(string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Atom(string name)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-define" /><code><Link to="/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(T1 term1, T2 term2, float weighting = 1)"}</code> |  |
-| <Link id="m-define-2" /><code><Link to="/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(T1 term1, T2 term2, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal, float weighting = 1)"}</code> |  |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/atom-t1-t2">{"Atom"}</Link>{"<T1, T2> op_Implicit(string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-define" /><code><Link to="/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(T1 term1, T2 term2, float weighting = 1)"}</code> |
+| <Link id="m-define-2" /><code><Link to="/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(T1 term1, T2 term2, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal, float weighting = 1)"}</code> |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/atom-t1-t2">{"Atom"}</Link>{"<T1, T2> op_Implicit(string name)"}</code> |
 
 ## Used in
 

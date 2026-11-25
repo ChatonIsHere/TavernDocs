@@ -19,16 +19,16 @@ A **class** in `Root.Township`, `Alta.Loot`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PresetLootModuleSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PresetLootModuleSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clearwhenspawn" /><code>{"bool clearWhenSpawn"}</code> |  |
-| <Link id="m-set" /><code><Link to="/game-api/types/alta-world-generation/presetlootset">{"PresetLootSet"}</Link>{" set"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-clearwhenspawn" /><code>{"bool clearWhenSpawn"}</code> |
+| <Link id="m-set" /><code><Link to="/game-api/types/alta-world-generation/presetlootset">{"PresetLootSet"}</Link>{" set"}</code> |
 
 ## Used in
 

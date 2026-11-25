@@ -17,6 +17,6 @@ A **class** in `Root.Township`, `Alta.Streaming`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ScriptAssignedStaticBatchingMarker()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ScriptAssignedStaticBatchingMarker()"}</code> |

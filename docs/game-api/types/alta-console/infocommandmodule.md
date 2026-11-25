@@ -17,18 +17,28 @@ A **static class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-all" /><code>{"private static void All()"}</code> |  |
-| <Link id="m-commandlinearguments" /><code>{"private static void CommandLineArguments()"}</code> |  |
-| <Link id="m-currentversion" /><code>{"private static void CurrentVersion()"}</code> |  |
-| <Link id="m-playermode" /><code>{"private static void PlayerMode()"}</code> |  |
-| <Link id="m-server" /><code>{"private static void Server()"}</code> |  |
-| <Link id="m-systeminfo" /><code>{"private static void SystemInfo()"}</code> |  |
-| <Link id="m-user" /><code>{"private static void User()"}</code> |  |
+<details>
+<summary>7 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-all" /><code>{"private static void All()"}</code> |
+| <Link id="m-commandlinearguments" /><code>{"private static void CommandLineArguments()"}</code> |
+| <Link id="m-currentversion" /><code>{"private static void CurrentVersion()"}</code> |
+| <Link id="m-playermode" /><code>{"private static void PlayerMode()"}</code> |
+| <Link id="m-server" /><code>{"private static void Server()"}</code> |
+| <Link id="m-systeminfo" /><code>{"private static void SystemInfo()"}</code> |
+| <Link id="m-user" /><code>{"private static void User()"}</code> |
+
+</details>

@@ -16,33 +16,33 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-armaccessories" /><code>{"ArmAccessories = 19"}</code> |  |
-| <Link id="m-beards" /><code>{"Beards = 10"}</code> |  |
-| <Link id="m-belts" /><code>{"Belts = 13"}</code> |  |
-| <Link id="m-bodytypes" /><code>{"BodyTypes = 1"}</code> |  |
-| <Link id="m-bundles" /><code>{"Bundles = 23"}</code> |  |
-| <Link id="m-earaccessories" /><code>{"EarAccessories = 17"}</code> |  |
-| <Link id="m-ears" /><code>{"Ears = 5"}</code> |  |
-| <Link id="m-eyeaccessories" /><code>{"EyeAccessories = 16"}</code> |  |
-| <Link id="m-eyebrows" /><code>{"Eyebrows = 7"}</code> |  |
-| <Link id="m-eyelashes" /><code>{"Eyelashes = 8"}</code> |  |
-| <Link id="m-eyes" /><code>{"Eyes = 3"}</code> |  |
-| <Link id="m-gloves" /><code>{"Gloves = 20"}</code> |  |
-| <Link id="m-hairs" /><code>{"Hairs = 6"}</code> |  |
-| <Link id="m-headaccessories" /><code>{"HeadAccessories = 15"}</code> |  |
-| <Link id="m-jackets" /><code>{"Jackets = 14"}</code> |  |
-| <Link id="m-moustaches" /><code>{"Moustaches = 9"}</code> |  |
-| <Link id="m-neckaccessories" /><code>{"NeckAccessories = 18"}</code> |  |
-| <Link id="m-noses" /><code>{"Noses = 4"}</code> |  |
-| <Link id="m-outfits" /><code>{"Outfits = 22"}</code> |  |
-| <Link id="m-sashes" /><code>{"Sashes = 24"}</code> |  |
-| <Link id="m-shirts" /><code>{"Shirts = 11"}</code> |  |
-| <Link id="m-skincolors" /><code>{"SkinColors = 2"}</code> |  |
-| <Link id="m-skirts" /><code>{"Skirts = 12"}</code> |  |
-| <Link id="m-toolbelts" /><code>{"Toolbelts = 21"}</code> |  |
-| <Link id="m-unknown" /><code>{"Unknown = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-armaccessories" /><code>{"ArmAccessories = 19"}</code> |
+| <Link id="m-beards" /><code>{"Beards = 10"}</code> |
+| <Link id="m-belts" /><code>{"Belts = 13"}</code> |
+| <Link id="m-bodytypes" /><code>{"BodyTypes = 1"}</code> |
+| <Link id="m-bundles" /><code>{"Bundles = 23"}</code> |
+| <Link id="m-earaccessories" /><code>{"EarAccessories = 17"}</code> |
+| <Link id="m-ears" /><code>{"Ears = 5"}</code> |
+| <Link id="m-eyeaccessories" /><code>{"EyeAccessories = 16"}</code> |
+| <Link id="m-eyebrows" /><code>{"Eyebrows = 7"}</code> |
+| <Link id="m-eyelashes" /><code>{"Eyelashes = 8"}</code> |
+| <Link id="m-eyes" /><code>{"Eyes = 3"}</code> |
+| <Link id="m-gloves" /><code>{"Gloves = 20"}</code> |
+| <Link id="m-hairs" /><code>{"Hairs = 6"}</code> |
+| <Link id="m-headaccessories" /><code>{"HeadAccessories = 15"}</code> |
+| <Link id="m-jackets" /><code>{"Jackets = 14"}</code> |
+| <Link id="m-moustaches" /><code>{"Moustaches = 9"}</code> |
+| <Link id="m-neckaccessories" /><code>{"NeckAccessories = 18"}</code> |
+| <Link id="m-noses" /><code>{"Noses = 4"}</code> |
+| <Link id="m-outfits" /><code>{"Outfits = 22"}</code> |
+| <Link id="m-sashes" /><code>{"Sashes = 24"}</code> |
+| <Link id="m-shirts" /><code>{"Shirts = 11"}</code> |
+| <Link id="m-skincolors" /><code>{"SkinColors = 2"}</code> |
+| <Link id="m-skirts" /><code>{"Skirts = 12"}</code> |
+| <Link id="m-toolbelts" /><code>{"Toolbelts = 21"}</code> |
+| <Link id="m-unknown" /><code>{"Unknown = 0"}</code> |
 
 ## Used in
 

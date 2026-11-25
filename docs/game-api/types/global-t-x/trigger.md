@@ -20,19 +20,24 @@ Base of on/off inputs like `Lever` and `TwoStepLever`. Fires turned on and turne
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Trigger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Trigger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-syncwithsender" /><code>{"private bool syncWithSender"}</code> |  |
-| <Link id="m-toggle" /><code>{"private bool toggle"}</code> |  |
-| <Link id="m-togglestate" /><code>{"private bool toggleState"}</code> |  |
-| <Link id="m-turnedoff" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" turnedOff"}</code> |  |
-| <Link id="m-turnedon" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" turnedOn"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-syncwithsender" /><code>{"private bool syncWithSender"}</code> |
+| <Link id="m-toggle" /><code>{"private bool toggle"}</code> |
+| <Link id="m-togglestate" /><code>{"private bool toggleState"}</code> |
+| <Link id="m-turnedoff" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" turnedOff"}</code> |
+| <Link id="m-turnedon" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" turnedOn"}</code> |
+
+</details>
 
 ## Properties
 
@@ -51,5 +56,13 @@ Base of on/off inputs like `Lever` and `TwoStepLever`. Fires turned on and turne
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checksendermatch" /><code>{"private bool CheckSenderMatch(bool value)"}</code> |  |
 | <Link id="m-set" /><code>{"protected void Set(bool isOn)"}</code> | Sets the state. In toggle mode each switch-on flips the output instead, optionally kept in step with a `LogicBoolSender`. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-checksendermatch" /><code>{"private bool CheckSenderMatch(bool value)"}</code> |
+
+</details>

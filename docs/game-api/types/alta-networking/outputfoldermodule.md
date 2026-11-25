@@ -18,28 +18,33 @@ A **class** in `Root.Township`, `Alta.WebServer`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"OutputFolderModule(string baseRoute)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"OutputFolderModule(string baseRoute)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filemodule" /><code>{"private FileModule fileModule"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-filemodule" /><code>{"private FileModule fileModule"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isfinalhandler" /><code>{"override bool IsFinalHandler { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isfinalhandler" /><code>{"override bool IsFinalHandler { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> |  |
-| <Link id="m-onrequestasync" /><code>{"protected override async Task OnRequestAsync(IHttpContext context)"}</code> |  |
-| <Link id="m-onstart" /><code>{"protected override void OnStart(CancellationToken cancellationToken)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
+| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> |
+| <Link id="m-onrequestasync" /><code>{"protected override async Task OnRequestAsync(IHttpContext context)"}</code> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart(CancellationToken cancellationToken)"}</code> |

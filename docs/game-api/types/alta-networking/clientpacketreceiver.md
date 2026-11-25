@@ -17,27 +17,45 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ClientPacketReceiver("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ClientPacketReceiver("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-socket" /><code>{"private "}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" Socket { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-socket" /><code>{"private "}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" Socket { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-receivepackets" /><code>{"void ReceivePackets()"}</code> |  |
-| <Link id="m-createconnection" /><code>{"private void CreateConnection("}<Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" client)"}</code> |  |
-| <Link id="m-destroyconnection" /><code>{"private void DestroyConnection("}<Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" client)"}</code> |  |
-| <Link id="m-process" /><code>{"private void Alta.NetworkingTransport.IPacketProcessor.Process("}<Link to="/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, int connectionId, ArraySegment<byte> data, int channel)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-receivepackets" /><code>{"void ReceivePackets()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-createconnection" /><code>{"private void CreateConnection("}<Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" client)"}</code> |
+| <Link id="m-destroyconnection" /><code>{"private void DestroyConnection("}<Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" client)"}</code> |
+| <Link id="m-process" /><code>{"private void Alta.NetworkingTransport.IPacketProcessor.Process("}<Link to="/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, int connectionId, ArraySegment<byte> data, int channel)"}</code> |
+
+</details>

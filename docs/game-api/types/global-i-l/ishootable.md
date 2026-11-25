@@ -17,17 +17,17 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> |  |
-| <Link id="m-rigidbody" /><code>{"Rigidbody Rigidbody { get; }"}</code> |  |
-| <Link id="m-transform" /><code>{"Transform transform { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> |
+| <Link id="m-rigidbody" /><code>{"Rigidbody Rigidbody { get; }"}</code> |
+| <Link id="m-transform" /><code>{"Transform transform { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-shoot" /><code>{"void Shoot(Vector3 velocity)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-shoot" /><code>{"void Shoot(Vector3 velocity)"}</code> |
 
 ## Used in
 

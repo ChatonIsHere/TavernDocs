@@ -19,14 +19,14 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WheelGrabSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WheelGrabSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentprogresssaved" /><code>{"float currentProgressSaved"}</code> |  |
-| <Link id="m-directionsaved" /><code>{"float directionSaved"}</code> |  |
-| <Link id="m-progressperrevolutionsaved" /><code>{"float progressPerRevolutionSaved"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-currentprogresssaved" /><code>{"float currentProgressSaved"}</code> |
+| <Link id="m-directionsaved" /><code>{"float directionSaved"}</code> |
+| <Link id="m-progressperrevolutionsaved" /><code>{"float progressPerRevolutionSaved"}</code> |

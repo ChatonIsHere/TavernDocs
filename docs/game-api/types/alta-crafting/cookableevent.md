@@ -17,9 +17,9 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CookableEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CookableEvent()"}</code> |
 
 ## Used in
 

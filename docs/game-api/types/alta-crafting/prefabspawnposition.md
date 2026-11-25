@@ -16,25 +16,30 @@ A **class** in `Root.Township`, `Alta.Carpentry`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PrefabSpawnPosition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PrefabSpawnPosition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |  |
-| <Link id="m-prefabhash" /><code>{"private uint prefabHash"}</code> |  |
-| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+| <Link id="m-prefabhash" /><code>{"private uint prefabHash"}</code> |
+| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> |  |
-| <Link id="m-prefabhash-2" /><code>{"uint PrefabHash { get; }"}</code> |  |
-| <Link id="m-rotation-2" /><code>{"Quaternion Rotation { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> |
+| <Link id="m-prefabhash-2" /><code>{"uint PrefabHash { get; }"}</code> |
+| <Link id="m-rotation-2" /><code>{"Quaternion Rotation { get; }"}</code> |
 
 ## Used in
 

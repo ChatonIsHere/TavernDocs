@@ -20,24 +20,32 @@ A circle on the ground where things (or players) spawn. Gives repeatable positio
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnArea()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpawnArea()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-instancemap" /><code>{"static Dictionary<"}<Link to="/game-api/types/global-s/spawnareaidentifier">{"SpawnAreaIdentifier"}</Link>{", "}<Link to="/game-api/types/global-s/spawnarea">{"SpawnArea"}</Link>{"> InstanceMap"}</code> | Every spawn area with a non-default identifier, by identifier. |
-| <Link id="m-avoidcastradius" /><code>{"private float avoidCastRadius"}</code> |  |
-| <Link id="m-avoidlayers" /><code>{"private LayerMask avoidLayers"}</code> |  |
-| <Link id="m-groundlayers" /><code>{"private LayerMask groundLayers"}</code> |  |
-| <Link id="m-identifier" /><code>{"private "}<Link to="/game-api/types/global-s/spawnareaidentifier">{"SpawnAreaIdentifier"}</Link>{" identifier"}</code> |  |
-| <Link id="m-isaligningnormal" /><code>{"private bool isAligningNormal"}</code> |  |
-| <Link id="m-maxacceptableangledot" /><code>{"private float maxAcceptableAngleDot"}</code> |  |
-| <Link id="m-maxiterations" /><code>{"private int maxIterations"}</code> |  |
-| <Link id="m-seed" /><code>{"private int seed"}</code> |  |
-| <Link id="m-size" /><code>{"private float size"}</code> |  |
+
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-avoidcastradius" /><code>{"private float avoidCastRadius"}</code> |
+| <Link id="m-avoidlayers" /><code>{"private LayerMask avoidLayers"}</code> |
+| <Link id="m-groundlayers" /><code>{"private LayerMask groundLayers"}</code> |
+| <Link id="m-identifier" /><code>{"private "}<Link to="/game-api/types/global-s/spawnareaidentifier">{"SpawnAreaIdentifier"}</Link>{" identifier"}</code> |
+| <Link id="m-isaligningnormal" /><code>{"private bool isAligningNormal"}</code> |
+| <Link id="m-maxacceptableangledot" /><code>{"private float maxAcceptableAngleDot"}</code> |
+| <Link id="m-maxiterations" /><code>{"private int maxIterations"}</code> |
+| <Link id="m-seed" /><code>{"private int seed"}</code> |
+| <Link id="m-size" /><code>{"private float size"}</code> |
+
+</details>
 
 ## Properties
 
@@ -52,9 +60,17 @@ A circle on the ground where things (or players) spawn. Gives repeatable positio
 | <Link id="m-awake" /><code>{"void Awake()"}</code> | Picks a random seed and adds the area to `InstanceMap` if it's named. |
 | <Link id="m-getrandomspawnposition" /><code>{"Vector3 GetRandomSpawnPosition()"}</code> | A valid position from a random index. |
 | <Link id="m-getspawnposition" /><code><Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" GetSpawnPosition(int index)"}</code> | The spawn point for an index. The same index gives the same point while the seed lasts. Falls back to the centre. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-setsize" /><code>{"private void ISpawnPositions.SetSize(float size)"}</code> |  |
-| <Link id="m-validposition" /><code>{"private bool ValidPosition(ref Vector3 position, ref Quaternion rotation)"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-setsize" /><code>{"private void ISpawnPositions.SetSize(float size)"}</code> |
+| <Link id="m-validposition" /><code>{"private bool ValidPosition(ref Vector3 position, ref Quaternion rotation)"}</code> |
+
+</details>
 
 ## Used in
 

@@ -18,15 +18,15 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ArrowFlightSettingsModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ArrowFlightSettingsModifier()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deviancemultiplier" /><code>{"virtual float DevianceMultiplier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deviancemultiplier" /><code>{"virtual float DevianceMultiplier { get; }"}</code> |
 
 ## Used in
 

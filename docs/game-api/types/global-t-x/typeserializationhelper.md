@@ -17,18 +17,31 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hashedtype" /><code>{"private static Type hashedType"}</code> |  |
-| <Link id="m-logicvaluedatatype" /><code>{"private static Type logicValueDataType"}</code> |  |
-| <Link id="m-map" /><code>{"private static Dictionary<Type, "}<Link to="/game-api/types/global-t-x/typeserializationhelper-itypeserialization">{"TypeSerializationHelper.ITypeSerialization"}</Link>{"> map"}</code> |  |
-| <Link id="m-savedatatype" /><code>{"private static Type saveDataType"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-hashedtype" /><code>{"private static Type hashedType"}</code> |
+| <Link id="m-logicvaluedatatype" /><code>{"private static Type logicValueDataType"}</code> |
+| <Link id="m-map" /><code>{"private static Dictionary<Type, "}<Link to="/game-api/types/global-t-x/typeserializationhelper-itypeserialization">{"TypeSerializationHelper.ITypeSerialization"}</Link>{"> map"}</code> |
+| <Link id="m-savedatatype" /><code>{"private static Type saveDataType"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getactivator" /><code>{"static "}<Link to="/game-api/types/global-t-x/typeserializationhelper-objectactivator">{"TypeSerializationHelper.ObjectActivator"}</Link>{" GetActivator(Type type)"}</code> |  |
-| <Link id="m-getserialization" /><code>{"static "}<Link to="/game-api/types/global-t-x/typeserializationhelper-itypeserialization">{"TypeSerializationHelper.ITypeSerialization"}</Link>{" GetSerialization(Type type)"}</code> |  |
-| <Link id="m-add" /><code>{"private static void Add(Type type, "}<Link to="/game-api/types/global-t-x/typeserializationhelper-itypeserialization">{"TypeSerializationHelper.ITypeSerialization"}</Link>{" serialization)"}</code> |  |
-| <Link id="m-add-2" /><code>{"private static void Add<T>("}<Link to="/game-api/types/global-t-x/typeserializationhelper-typeserialization-ttype">{"TypeSerializationHelper.TypeSerialization"}</Link>{"<T> serialization)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getactivator" /><code>{"static "}<Link to="/game-api/types/global-t-x/typeserializationhelper-objectactivator">{"TypeSerializationHelper.ObjectActivator"}</Link>{" GetActivator(Type type)"}</code> |
+| <Link id="m-getserialization" /><code>{"static "}<Link to="/game-api/types/global-t-x/typeserializationhelper-itypeserialization">{"TypeSerializationHelper.ITypeSerialization"}</Link>{" GetSerialization(Type type)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"private static void Add(Type type, "}<Link to="/game-api/types/global-t-x/typeserializationhelper-itypeserialization">{"TypeSerializationHelper.ITypeSerialization"}</Link>{" serialization)"}</code> |
+| <Link id="m-add-2" /><code>{"private static void Add<T>("}<Link to="/game-api/types/global-t-x/typeserializationhelper-typeserialization-ttype">{"TypeSerializationHelper.TypeSerialization"}</Link>{"<T> serialization)"}</code> |
+
+</details>

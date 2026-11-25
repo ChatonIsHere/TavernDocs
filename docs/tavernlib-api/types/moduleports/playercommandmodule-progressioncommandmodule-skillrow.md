@@ -20,9 +20,9 @@ One row of `player progression showskills`: a skill the player can buy now, numb
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SkillRow()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SkillRow()"}</code> |
 
 ## Properties
 

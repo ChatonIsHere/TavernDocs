@@ -17,16 +17,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Triangle()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Triangle()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-point4s" /><code><Link to="/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{"[] point4s"}</code> |  |
-| <Link id="m-points" /><code>{"Vector3[] points"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-point4s" /><code><Link to="/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{"[] point4s"}</code> |
+| <Link id="m-points" /><code>{"Vector3[] points"}</code> |
 
 ## Used in
 

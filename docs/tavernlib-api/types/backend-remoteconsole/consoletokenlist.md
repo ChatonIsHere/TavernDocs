@@ -20,9 +20,9 @@ The contents of `console_tokens.json`: the named tokens and the owner token's ge
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ConsoleTokenList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConsoleTokenList()"}</code> |
 
 ## Properties
 
@@ -30,7 +30,15 @@ The contents of `console_tokens.json`: the named tokens and the owner token's ge
 | --- | --- |
 | <Link id="m-ownergeneration" /><code>{"int OwnerGeneration { get; set; }"}</code> | Raised by `token rotate owner`, which makes the old owner token stop working. The launcher reads it to write `console_token.txt`. |
 | <Link id="m-tokens" /><code>{"List<"}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletoken">{"ConsoleToken"}</Link>{"> Tokens { get; set; }"}</code> | Every named token, revoked ones included. |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |
+
+</details>
 
 ## Used in
 

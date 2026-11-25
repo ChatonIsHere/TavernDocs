@@ -17,15 +17,28 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getfoldername" /><code>{"static string GetFolderName("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" serverInfo)"}</code> |  |
-| <Link id="m-getoldfoldername" /><code>{"static string GetOldFolderName("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" serverInfo)"}</code> |  |
-| <Link id="m-joinserverasync" /><code>{"static async Task<"}<Link to="/game-api/types/assembly-api-models/serverjoinresult">{"ServerJoinResult"}</Link>{"> JoinServerAsync("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" gameServer)"}</code> |  |
-| <Link id="m-getfoldername-2" /><code>{"private static string GetFolderName(int id, string name)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getfoldername" /><code>{"static string GetFolderName("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" serverInfo)"}</code> |
+| <Link id="m-getoldfoldername" /><code>{"static string GetOldFolderName("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" serverInfo)"}</code> |
+| <Link id="m-joinserverasync" /><code>{"static async Task<"}<Link to="/game-api/types/assembly-api-models/serverjoinresult">{"ServerJoinResult"}</Link>{"> JoinServerAsync("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" gameServer)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getfoldername-2" /><code>{"private static string GetFolderName(int id, string name)"}</code> |
+
+</details>

@@ -20,26 +20,34 @@ A light that registers with a platform lights controller. On PC it wraps a Unity
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformLight()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformLight()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-lastposition" /><code>{"Vector3 lastPosition"}</code> | Position recorded by the last `GetPosition` call. |
-| <Link id="m-androidmesh" /><code>{"private Mesh androidMesh"}</code> |  |
-| <Link id="m-androidmeshcolor" /><code>{"private Color androidMeshColor"}</code> |  |
-| <Link id="m-color" /><code>{"private Color color"}</code> |  |
-| <Link id="m-fakelightrenderer" /><code>{"private Renderer fakeLightRenderer"}</code> |  |
-| <Link id="m-hasfakelight" /><code>{"private bool hasFakeLight"}</code> |  |
-| <Link id="m-intensity" /><code>{"private float intensity"}</code> |  |
-| <Link id="m-isnotimportant" /><code>{"private bool isNotImportant"}</code> |  |
-| <Link id="m-issetup" /><code>{"private bool isSetup"}</code> |  |
-| <Link id="m-lightscontroller" /><code>{"private static "}<Link to="/game-api/types/alta-world/baselightscontroller">{"BaseLightsController"}</Link>{" lightsController"}</code> |  |
-| <Link id="m-range" /><code>{"private float range"}</code> |  |
-| <Link id="m-targetlight" /><code>{"private Light targetLight"}</code> |  |
+
+<details>
+<summary>11 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androidmesh" /><code>{"private Mesh androidMesh"}</code> |
+| <Link id="m-androidmeshcolor" /><code>{"private Color androidMeshColor"}</code> |
+| <Link id="m-color" /><code>{"private Color color"}</code> |
+| <Link id="m-fakelightrenderer" /><code>{"private Renderer fakeLightRenderer"}</code> |
+| <Link id="m-hasfakelight" /><code>{"private bool hasFakeLight"}</code> |
+| <Link id="m-intensity" /><code>{"private float intensity"}</code> |
+| <Link id="m-isnotimportant" /><code>{"private bool isNotImportant"}</code> |
+| <Link id="m-issetup" /><code>{"private bool isSetup"}</code> |
+| <Link id="m-lightscontroller" /><code>{"private static "}<Link to="/game-api/types/alta-world/baselightscontroller">{"BaseLightsController"}</Link>{" lightsController"}</code> |
+| <Link id="m-range" /><code>{"private float range"}</code> |
+| <Link id="m-targetlight" /><code>{"private Light targetLight"}</code> |
+
+</details>
 
 ## Properties
 
@@ -62,11 +70,19 @@ A light that registers with a platform lights controller. On PC it wraps a Unity
 | --- | --- |
 | <Link id="m-getposition" /><code>{"Vector3 GetPosition()"}</code> | Returns the current position and stores it in `lastPosition`. |
 | <Link id="m-setenablefakelight" /><code>{"void SetEnableFakeLight(bool isEnabled)"}</code> | Shows or hides the Android fake light mesh, if there is one. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |
-| <Link id="m-setup" /><code>{"private void Setup()"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+| <Link id="m-setup" /><code>{"private void Setup()"}</code> |
+
+</details>
 
 ## Used in
 

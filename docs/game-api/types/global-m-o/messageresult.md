@@ -17,13 +17,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MessageResult()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MessageResult()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-error" /><code>{"string Error"}</code> |  |
-| <Link id="m-issuccess" /><code>{"bool IsSuccess"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-error" /><code>{"string Error"}</code> |
+| <Link id="m-issuccess" /><code>{"bool IsSuccess"}</code> |

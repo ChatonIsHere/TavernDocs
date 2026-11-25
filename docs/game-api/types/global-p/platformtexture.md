@@ -18,13 +18,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformTexture()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlatformTexture()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-androidversion" /><code>{"private Texture2D androidVersion"}</code> |  |
-| <Link id="m-windowsversion" /><code>{"private Texture2D windowsVersion"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androidversion" /><code>{"private Texture2D androidVersion"}</code> |
+| <Link id="m-windowsversion" /><code>{"private Texture2D windowsVersion"}</code> |
+
+</details>

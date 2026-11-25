@@ -20,21 +20,26 @@ Settings asset that makes a creature animate in response to where its target is 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AttackDirectionCoreSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AttackDirectionCoreSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animationchangeduration" /><code>{"private float animationChangeDuration"}</code> |  |
-| <Link id="m-height" /><code>{"private float height"}</code> |  |
-| <Link id="m-isfacingtarget" /><code>{"private bool isFacingTarget"}</code> |  |
-| <Link id="m-layer" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/attackdirectionanimationsettings">{"AttackDirectionAnimationSettings"}</Link>{" layer"}</code> |  |
-| <Link id="m-mindamage" /><code>{"private float minDamage"}</code> |  |
-| <Link id="m-side" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/attackdirectionanimationsettings">{"AttackDirectionAnimationSettings"}</Link>{" side"}</code> |  |
-| <Link id="m-up" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/attackdirectionanimationsettings">{"AttackDirectionAnimationSettings"}</Link>{" up"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animationchangeduration" /><code>{"private float animationChangeDuration"}</code> |
+| <Link id="m-height" /><code>{"private float height"}</code> |
+| <Link id="m-isfacingtarget" /><code>{"private bool isFacingTarget"}</code> |
+| <Link id="m-layer" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/attackdirectionanimationsettings">{"AttackDirectionAnimationSettings"}</Link>{" layer"}</code> |
+| <Link id="m-mindamage" /><code>{"private float minDamage"}</code> |
+| <Link id="m-side" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/attackdirectionanimationsettings">{"AttackDirectionAnimationSettings"}</Link>{" side"}</code> |
+| <Link id="m-up" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/attackdirectionanimationsettings">{"AttackDirectionAnimationSettings"}</Link>{" up"}</code> |
+
+</details>
 
 ## Properties
 

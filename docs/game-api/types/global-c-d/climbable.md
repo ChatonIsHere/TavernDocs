@@ -20,23 +20,28 @@ Marks a surface players can climb. Hands add pressure each physics step, and the
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Climbable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Climbable()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-canmove" /><code>{"private bool canMove"}</code> |  |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
-| <Link id="m-grippriority" /><code>{"private float gripPriority"}</code> |  |
-| <Link id="m-lasttime" /><code>{"private float lastTime"}</code> |  |
-| <Link id="m-maximumpressure" /><code>{"private float maximumPressure"}</code> |  |
-| <Link id="m-oldpressuremagnitude" /><code>{"private float oldPressureMagnitude"}</code> |  |
-| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |  |
-| <Link id="m-totalpressure" /><code>{"private Vector3 totalPressure"}</code> |  |
-| <Link id="m-totalpressuremagnitude" /><code>{"private float totalPressureMagnitude"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-canmove" /><code>{"private bool canMove"}</code> |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| <Link id="m-grippriority" /><code>{"private float gripPriority"}</code> |
+| <Link id="m-lasttime" /><code>{"private float lastTime"}</code> |
+| <Link id="m-maximumpressure" /><code>{"private float maximumPressure"}</code> |
+| <Link id="m-oldpressuremagnitude" /><code>{"private float oldPressureMagnitude"}</code> |
+| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |
+| <Link id="m-totalpressure" /><code>{"private Vector3 totalPressure"}</code> |
+| <Link id="m-totalpressuremagnitude" /><code>{"private float totalPressureMagnitude"}</code> |
+
+</details>
 
 ## Properties
 
@@ -51,7 +56,15 @@ Marks a surface players can climb. Hands add pressure each physics step, and the
 | <Link id="m-maximumpressure-2" /><code>{"float MaximumPressure { get; }"}</code> | Pressure that breaks the grip. -1 means it never breaks. |
 | <Link id="m-oldpressureratio" /><code>{"float OldPressureRatio { get; }"}</code> | Last step's pressure as a share of the maximum. |
 | <Link id="m-releasesimmediately" /><code>{"bool ReleasesImmediately { get; }"}</code> | Always false. |
-| <Link id="m-fadetime" /><code>{"private float FadeTime { get; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-fadetime" /><code>{"private float FadeTime { get; }"}</code> |
+
+</details>
 
 ## Events
 

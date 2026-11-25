@@ -20,19 +20,19 @@ Runs an action on every `Updated` while applied.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UpdateModifier(Action<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> update)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UpdateModifier(Action<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> update)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-update" /><code>{"Action<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> Update { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-update" /><code>{"Action<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> Update { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-internalapply" /><code>{"protected override void InternalApply()"}</code> |  |
-| <Link id="m-internalremove" /><code>{"protected override void InternalRemove()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-internalapply" /><code>{"protected override void InternalApply()"}</code> |
+| <Link id="m-internalremove" /><code>{"protected override void InternalRemove()"}</code> |

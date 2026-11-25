@@ -18,24 +18,29 @@ A **class** in `Alta.Platform`, `Alta.Platform.Fakes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FakePlatformService()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FakePlatformService()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializeasync" /><code>{"async Task<bool> InitializeAsync()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializeasync" /><code>{"async Task<bool> InitializeAsync()"}</code> |

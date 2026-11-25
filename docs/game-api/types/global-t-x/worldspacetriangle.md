@@ -18,9 +18,9 @@ Three world positions copied from a `HandTriangle`'s transforms, that can be mov
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WorldSpaceTriangle("}<Link to="/game-api/types/global-e-h/handtriangle">{"HandTriangle"}</Link>{" handTriangle)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WorldSpaceTriangle("}<Link to="/game-api/types/global-e-h/handtriangle">{"HandTriangle"}</Link>{" handTriangle)"}</code> |
 
 ## Properties
 

@@ -18,9 +18,9 @@ One ghost piece in a generic crafting recipe: where it sits, its mesh, the item 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenericCraftingPieceDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenericCraftingPieceDefinition()"}</code> |
 
 ## Fields
 
@@ -40,7 +40,15 @@ One ghost piece in a generic crafting recipe: where it sits, its mesh, the item 
 | <Link id="m-position" /><code><Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" position"}</code> | Where the piece sits on the station. |
 | <Link id="m-resulthash" /><code>{"int resultHash"}</code> | Id of the matching part on the finished item, used to copy materials over. |
 | <Link id="m-source" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" source"}</code> | The item that fills this piece. |
-| <Link id="m-chancetopopbasedonfailurehealthratio" /><code>{"private AnimationCurve chanceToPopBasedOnFailureHealthRatio"}</code> |  |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-chancetopopbasedonfailurehealthratio" /><code>{"private AnimationCurve chanceToPopBasedOnFailureHealthRatio"}</code> |
+
+</details>
 
 ## Methods
 

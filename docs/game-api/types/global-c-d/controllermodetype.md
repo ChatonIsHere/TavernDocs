@@ -18,19 +18,19 @@ The kinds of controller mode the player's hands can be in, such as play, combat,
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-charactercustomizationmode" /><code>{"CharacterCustomizationMode = 2"}</code> |  |
-| <Link id="m-combatmode" /><code>{"CombatMode = 4"}</code> |  |
-| <Link id="m-debugmode" /><code>{"DebugMode = 3"}</code> |  |
-| <Link id="m-elbowdatapointeditor" /><code>{"ElbowDataPointEditor = 5"}</code> |  |
-| <Link id="m-equipmentmode" /><code>{"EquipmentMode = 10"}</code> |  |
-| <Link id="m-gesturemode" /><code>{"GestureMode = 8"}</code> |  |
-| <Link id="m-interactmode" /><code>{"InteractMode = 7"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-playmode" /><code>{"PlayMode = 1"}</code> |  |
-| <Link id="m-rotateroommode" /><code>{"RotateRoomMode = 9"}</code> |  |
-| <Link id="m-teleportmode" /><code>{"TeleportMode = 6"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-charactercustomizationmode" /><code>{"CharacterCustomizationMode = 2"}</code> |
+| <Link id="m-combatmode" /><code>{"CombatMode = 4"}</code> |
+| <Link id="m-debugmode" /><code>{"DebugMode = 3"}</code> |
+| <Link id="m-elbowdatapointeditor" /><code>{"ElbowDataPointEditor = 5"}</code> |
+| <Link id="m-equipmentmode" /><code>{"EquipmentMode = 10"}</code> |
+| <Link id="m-gesturemode" /><code>{"GestureMode = 8"}</code> |
+| <Link id="m-interactmode" /><code>{"InteractMode = 7"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-playmode" /><code>{"PlayMode = 1"}</code> |
+| <Link id="m-rotateroommode" /><code>{"RotateRoomMode = 9"}</code> |
+| <Link id="m-teleportmode" /><code>{"TeleportMode = 6"}</code> |
 
 ## Used in
 

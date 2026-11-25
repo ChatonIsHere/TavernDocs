@@ -16,24 +16,24 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ThresholdListener()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ThresholdListener()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-threshold" /><code>{"float Threshold { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-threshold" /><code>{"float Threshold { get; set; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-passed" /><code>{"event Action<bool> Passed"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-passed" /><code>{"event Action<bool> Passed"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onpassed" /><code>{"void OnPassed(bool isAbove)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onpassed" /><code>{"void OnPassed(bool isAbove)"}</code> |

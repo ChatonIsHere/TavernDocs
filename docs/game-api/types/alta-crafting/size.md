@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, `Alta.Crafting`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ignore" /><code>{"Ignore = -1"}</code> |  |
-| <Link id="m-insignificant" /><code>{"Insignificant = 0"}</code> |  |
-| <Link id="m-large" /><code>{"Large = 10"}</code> |  |
-| <Link id="m-medium" /><code>{"Medium = 4"}</code> |  |
-| <Link id="m-small" /><code>{"Small = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ignore" /><code>{"Ignore = -1"}</code> |
+| <Link id="m-insignificant" /><code>{"Insignificant = 0"}</code> |
+| <Link id="m-large" /><code>{"Large = 10"}</code> |
+| <Link id="m-medium" /><code>{"Medium = 4"}</code> |
+| <Link id="m-small" /><code>{"Small = 1"}</code> |

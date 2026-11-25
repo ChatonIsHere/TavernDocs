@@ -17,22 +17,27 @@ A **private struct** in `Root.Township`, `Alta.Character`. Reach it through att-
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EyeBlinker(Animator animator, float blinkSpeed, bool isLeftEye)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EyeBlinker(Animator animator, float blinkSpeed, bool isLeftEye)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |  |
-| <Link id="m-triggerid" /><code>{"private int triggerID"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
+| <Link id="m-triggerid" /><code>{"private int triggerID"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-blink" /><code>{"void Blink()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-blink" /><code>{"void Blink()"}</code> |
 
 ## Used in
 

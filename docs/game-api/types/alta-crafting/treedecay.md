@@ -21,30 +21,43 @@ A `BasicDecay` on a tree: once a felled tree has come loose from its spawner (no
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TreeDecay()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TreeDecay()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-lastdamage" /><code>{"private TimeSpan lastDamage"}</code> |  |
-| <Link id="m-tree" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-lastdamage" /><code>{"private TimeSpan lastDamage"}</code> |
+| <Link id="m-tree" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-timermultiplier" /><code>{"protected override float TimerMultiplier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-timermultiplier" /><code>{"protected override float TimerMultiplier { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-checkcut" /><code>{"private void CheckCut("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree)"}</code> |  |
-| <Link id="m-decayfailed" /><code>{"protected override void DecayFailed()"}</code> |  |
-| <Link id="m-finishinitialize" /><code>{"protected override void FinishInitialize()"}</code> |  |
-| <Link id="m-isdecayvalid" /><code>{"protected override bool IsDecayValid(bool isStarting)"}</code> |  |
-| <Link id="m-parttookdamage" /><code>{"private void PartTookDamage("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree, float damage)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+| <Link id="m-decayfailed" /><code>{"protected override void DecayFailed()"}</code> |
+| <Link id="m-finishinitialize" /><code>{"protected override void FinishInitialize()"}</code> |
+| <Link id="m-isdecayvalid" /><code>{"protected override bool IsDecayValid(bool isStarting)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-checkcut" /><code>{"private void CheckCut("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree)"}</code> |
+| <Link id="m-parttookdamage" /><code>{"private void PartTookDamage("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree, float damage)"}</code> |
+
+</details>

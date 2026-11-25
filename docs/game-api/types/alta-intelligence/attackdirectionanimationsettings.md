@@ -20,15 +20,20 @@ Asset that makes an attack direction animation helper for a creature's animator 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected AttackDirectionAnimationSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected AttackDirectionAnimationSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-parametername" /><code>{"private string parameterName"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-parametername" /><code>{"private string parameterName"}</code> |
+
+</details>
 
 ## Properties
 

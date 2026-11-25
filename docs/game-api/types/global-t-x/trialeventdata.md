@@ -17,16 +17,16 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TrialEventData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TrialEventData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-players" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> players"}</code> |  |
-| <Link id="m-trial" /><code>{"string trial"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-players" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> players"}</code> |
+| <Link id="m-trial" /><code>{"string trial"}</code> |
 
 ## Used in
 

@@ -17,18 +17,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RankedPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int time)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"RankedPlayer(int playerID, int time)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RankedPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int time)"}</code> |
+| <Link id="m-ctor-2" /><code>{"RankedPlayer(int playerID, int time)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-identifier" /><code>{"int Identifier { get; }"}</code> |  |
-| <Link id="m-time" /><code>{"int Time { get; }"}</code> |  |
-| <Link id="m-userinfo" /><code><Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" UserInfo { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-identifier" /><code>{"int Identifier { get; }"}</code> |
+| <Link id="m-time" /><code>{"int Time { get; }"}</code> |
+| <Link id="m-userinfo" /><code><Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" UserInfo { get; }"}</code> |
 
 ## Used in
 

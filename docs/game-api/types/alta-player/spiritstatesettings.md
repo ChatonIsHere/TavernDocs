@@ -19,30 +19,35 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpiritStateSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpiritStateSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enterspiritmodesfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" enterSpiritModeSfx"}</code> |  |
-| <Link id="m-exitspiritmodesfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" exitSpiritModeSfx"}</code> |  |
-| <Link id="m-falldamagesnapthreshold" /><code>{"private float fallDamageSnapThreshold"}</code> |  |
-| <Link id="m-hungerstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" hungerStat"}</code> |  |
-| <Link id="m-snapdistance" /><code>{"private float snapDistance"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-enterspiritmodesfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" enterSpiritModeSfx"}</code> |
+| <Link id="m-exitspiritmodesfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" exitSpiritModeSfx"}</code> |
+| <Link id="m-falldamagesnapthreshold" /><code>{"private float fallDamageSnapThreshold"}</code> |
+| <Link id="m-hungerstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" hungerStat"}</code> |
+| <Link id="m-snapdistance" /><code>{"private float snapDistance"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enterspiritmodesfx-2" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" EnterSpiritModeSfx { get; }"}</code> |  |
-| <Link id="m-exitspiritmodesfx-2" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" ExitSpiritModeSfx { get; }"}</code> |  |
-| <Link id="m-falldamagesnapthreshold-2" /><code>{"float FallDamageSnapThreshold { get; }"}</code> |  |
-| <Link id="m-hungerstat-2" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" HungerStat { get; }"}</code> |  |
-| <Link id="m-snapdistance-2" /><code>{"float SnapDistance { get; }"}</code> |  |
-| <Link id="m-statetype" /><code>{"override Type StateType { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-enterspiritmodesfx-2" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" EnterSpiritModeSfx { get; }"}</code> |
+| <Link id="m-exitspiritmodesfx-2" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" ExitSpiritModeSfx { get; }"}</code> |
+| <Link id="m-falldamagesnapthreshold-2" /><code>{"float FallDamageSnapThreshold { get; }"}</code> |
+| <Link id="m-hungerstat-2" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" HungerStat { get; }"}</code> |
+| <Link id="m-snapdistance-2" /><code>{"float SnapDistance { get; }"}</code> |
+| <Link id="m-statetype" /><code>{"override Type StateType { get; }"}</code> |
 
 ## Used in
 

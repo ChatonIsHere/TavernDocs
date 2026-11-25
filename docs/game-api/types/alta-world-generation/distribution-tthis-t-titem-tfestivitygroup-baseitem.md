@@ -19,28 +19,33 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BaseItem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BaseItem()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-basevalue" /><code>{"private float baseValue"}</code> |  |
-| <Link id="m-multipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"[] multipliers"}</code> |  |
-| <Link id="m-noattributevalue" /><code>{"private float noAttributeValue"}</code> |  |
-| <Link id="m-topic" /><code>{"private T topic"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-basevalue" /><code>{"private float baseValue"}</code> |
+| <Link id="m-multipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"[] multipliers"}</code> |
+| <Link id="m-noattributevalue" /><code>{"private float noAttributeValue"}</code> |
+| <Link id="m-topic" /><code>{"private T topic"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-topic-2" /><code>{"T Topic { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-topic-2" /><code>{"T Topic { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getvalue" /><code>{"float GetValue("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes = null)"}</code> |  |
-| <Link id="m-migrate" /><code>{"void Migrate<TThisOther, TOther, TItemOther, TFestivityGroupOther>(TItemOther other, Func<TOther, T> convert)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getvalue" /><code>{"float GetValue("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes = null)"}</code> |
+| <Link id="m-migrate" /><code>{"void Migrate<TThisOther, TOther, TItemOther, TFestivityGroupOther>(TItemOther other, Func<TOther, T> convert)"}</code> |

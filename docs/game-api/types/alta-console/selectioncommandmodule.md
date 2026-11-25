@@ -18,21 +18,31 @@ A **static class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-clearselection" /><code>{"private static void ClearSelection()"}</code> |  |
-| <Link id="m-destroyselection" /><code>{"private static void DestroySelection()"}</code> |  |
-| <Link id="m-exporttostring" /><code>{"private static string ExportToString()"}</code> |  |
-| <Link id="m-findobjects" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> FindObjects("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, float distance = 10)"}</code> |  |
-| <Link id="m-findprefab" /><code>{"private static void FindPrefab("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-get" /><code>{"private static "}<Link to="/game-api/types/alta-console/entityinfo">{"EntityInfo"}</Link>{" Get(uint identifier = 0)"}</code> |  |
-| <Link id="m-lookat" /><code>{"private static void LookAt("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, bool isRotatingAllAxis = false)"}</code> |  |
-| <Link id="m-selectentity" /><code>{"private static string SelectEntity(uint identifier)"}</code> |  |
-| <Link id="m-snaptoground" /><code>{"private static void SnapToGround()"}</code> |  |
-| <Link id="m-snaptootherobject" /><code>{"private static void SnapToOtherObject(uint identifier)"}</code> |  |
+<details>
+<summary>10 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-clearselection" /><code>{"private static void ClearSelection()"}</code> |
+| <Link id="m-destroyselection" /><code>{"private static void DestroySelection()"}</code> |
+| <Link id="m-exporttostring" /><code>{"private static string ExportToString()"}</code> |
+| <Link id="m-findobjects" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> FindObjects("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, float distance = 10)"}</code> |
+| <Link id="m-findprefab" /><code>{"private static void FindPrefab("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| <Link id="m-get" /><code>{"private static "}<Link to="/game-api/types/alta-console/entityinfo">{"EntityInfo"}</Link>{" Get(uint identifier = 0)"}</code> |
+| <Link id="m-lookat" /><code>{"private static void LookAt("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, bool isRotatingAllAxis = false)"}</code> |
+| <Link id="m-selectentity" /><code>{"private static string SelectEntity(uint identifier)"}</code> |
+| <Link id="m-snaptoground" /><code>{"private static void SnapToGround()"}</code> |
+| <Link id="m-snaptootherobject" /><code>{"private static void SnapToOtherObject(uint identifier)"}</code> |
+
+</details>

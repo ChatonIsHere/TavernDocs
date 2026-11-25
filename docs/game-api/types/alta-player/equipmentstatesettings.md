@@ -21,32 +21,37 @@ Settings for the equipment player state, where a dummy copy of the player appear
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EquipmentStateSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EquipmentStateSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-animationstageoverlap" /><code>{"private float animationStageOverlap"}</code> |  |
-| <Link id="m-customizationroom" /><code>{"private "}<Link to="/game-api/types/alta-customization/equipmentcustomizationroom">{"EquipmentCustomizationRoom"}</Link>{" customizationRoom"}</code> |  |
-| <Link id="m-dummymaterializationduration" /><code>{"private float dummyMaterializationDuration"}</code> |  |
-| <Link id="m-dummyposeanimationduration" /><code>{"private float dummyPoseAnimationDuration"}</code> |  |
-| <Link id="m-flashduration" /><code>{"private float flashDuration"}</code> |  |
-| <Link id="m-flashexposure" /><code>{"private float flashExposure"}</code> |  |
-| <Link id="m-flashfadeoutduration" /><code>{"private float flashFadeoutDuration"}</code> |  |
-| <Link id="m-isusingcameraflashonposecopy" /><code>{"private bool isUsingCameraFlashOnPoseCopy"}</code> |  |
-| <Link id="m-isusingdummyposes" /><code>{"private bool isUsingDummyPoses"}</code> |  |
-| <Link id="m-maxpositiondeltatotriggerpose" /><code>{"private float maxPositionDeltaToTriggerPose"}</code> |  |
-| <Link id="m-maxrotationdeltatotriggerpose" /><code>{"private float maxRotationDeltaToTriggerPose"}</code> |  |
-| <Link id="m-minfreezetimetotriggerpose" /><code>{"private float minFreezeTimeToTriggerPose"}</code> |  |
-| <Link id="m-mintimebetweenposes" /><code>{"private float minTimeBetweenPoses"}</code> |  |
-| <Link id="m-posecheckingstartdelay" /><code>{"private float poseCheckingStartDelay"}</code> |  |
-| <Link id="m-remotedummyeffects" /><code>{"private "}<Link to="/game-api/types/global-q-r/remoteequipmentmodevisuals">{"RemoteEquipmentModeVisuals"}</Link>{" remoteDummyEffects"}</code> |  |
-| <Link id="m-spawndistancefromplayer" /><code>{"private float spawnDistanceFromPlayer"}</code> |  |
-| <Link id="m-timetobeforcedoutofmodewhenoutsideboundary" /><code>{"private float timeToBeForcedOutOfModeWhenOutsideBoundary"}</code> |  |
-| <Link id="m-timetotoggleequipmentstate" /><code>{"private float timeToToggleEquipmentState"}</code> |  |
+<details>
+<summary>18 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animationstageoverlap" /><code>{"private float animationStageOverlap"}</code> |
+| <Link id="m-customizationroom" /><code>{"private "}<Link to="/game-api/types/alta-customization/equipmentcustomizationroom">{"EquipmentCustomizationRoom"}</Link>{" customizationRoom"}</code> |
+| <Link id="m-dummymaterializationduration" /><code>{"private float dummyMaterializationDuration"}</code> |
+| <Link id="m-dummyposeanimationduration" /><code>{"private float dummyPoseAnimationDuration"}</code> |
+| <Link id="m-flashduration" /><code>{"private float flashDuration"}</code> |
+| <Link id="m-flashexposure" /><code>{"private float flashExposure"}</code> |
+| <Link id="m-flashfadeoutduration" /><code>{"private float flashFadeoutDuration"}</code> |
+| <Link id="m-isusingcameraflashonposecopy" /><code>{"private bool isUsingCameraFlashOnPoseCopy"}</code> |
+| <Link id="m-isusingdummyposes" /><code>{"private bool isUsingDummyPoses"}</code> |
+| <Link id="m-maxpositiondeltatotriggerpose" /><code>{"private float maxPositionDeltaToTriggerPose"}</code> |
+| <Link id="m-maxrotationdeltatotriggerpose" /><code>{"private float maxRotationDeltaToTriggerPose"}</code> |
+| <Link id="m-minfreezetimetotriggerpose" /><code>{"private float minFreezeTimeToTriggerPose"}</code> |
+| <Link id="m-mintimebetweenposes" /><code>{"private float minTimeBetweenPoses"}</code> |
+| <Link id="m-posecheckingstartdelay" /><code>{"private float poseCheckingStartDelay"}</code> |
+| <Link id="m-remotedummyeffects" /><code>{"private "}<Link to="/game-api/types/global-q-r/remoteequipmentmodevisuals">{"RemoteEquipmentModeVisuals"}</Link>{" remoteDummyEffects"}</code> |
+| <Link id="m-spawndistancefromplayer" /><code>{"private float spawnDistanceFromPlayer"}</code> |
+| <Link id="m-timetobeforcedoutofmodewhenoutsideboundary" /><code>{"private float timeToBeForcedOutOfModeWhenOutsideBoundary"}</code> |
+| <Link id="m-timetotoggleequipmentstate" /><code>{"private float timeToToggleEquipmentState"}</code> |
+
+</details>
 
 ## Properties
 

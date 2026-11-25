@@ -17,19 +17,19 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"KnobInspector("}<Link to="/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"KnobInspector("}<Link to="/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-canmove" /><code>{"override bool CanMove { get; }"}</code> |  |
-| <Link id="m-canrotate" /><code>{"override bool CanRotate { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-canmove" /><code>{"override bool CanMove { get; }"}</code> |
+| <Link id="m-canrotate" /><code>{"override bool CanRotate { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-rotate" /><code>{"override void Rotate(float angle, Component target)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-rotate" /><code>{"override void Rotate(float angle, Component target)"}</code> |

@@ -18,23 +18,36 @@ A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GameLifetimeScope()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GameLifetimeScope()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-domaincontroller" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/domaincontroller">{"DomainController"}</Link>{" domainController"}</code> |  |
-| <Link id="m-istutorialscene" /><code>{"private bool isTutorialScene"}</code> |  |
-| <Link id="m-microtutorialsystem" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/microtutorialsystem">{"MicroTutorialSystem"}</Link>{" microTutorialSystem"}</code> |  |
-| <Link id="m-respawnsystem" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/respawnsystem">{"RespawnSystem"}</Link>{" respawnSystem"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-domaincontroller" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/domaincontroller">{"DomainController"}</Link>{" domainController"}</code> |
+| <Link id="m-istutorialscene" /><code>{"private bool isTutorialScene"}</code> |
+| <Link id="m-microtutorialsystem" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/microtutorialsystem">{"MicroTutorialSystem"}</Link>{" microTutorialSystem"}</code> |
+| <Link id="m-respawnsystem" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/respawnsystem">{"RespawnSystem"}</Link>{" respawnSystem"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-configurescope" /><code>{"protected override void ConfigureScope(IContainerBuilder builder)"}</code> |  |
-| <Link id="m-registermicrotutorialdependencies" /><code>{"private void RegisterMicroTutorialDependencies(IContainerBuilder builder)"}</code> |  |
-| <Link id="m-registerrespawnsystemdependencies" /><code>{"private void RegisterRespawnSystemDependencies(IContainerBuilder builder)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-configurescope" /><code>{"protected override void ConfigureScope(IContainerBuilder builder)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-registermicrotutorialdependencies" /><code>{"private void RegisterMicroTutorialDependencies(IContainerBuilder builder)"}</code> |
+| <Link id="m-registerrespawnsystemdependencies" /><code>{"private void RegisterRespawnSystemDependencies(IContainerBuilder builder)"}</code> |
+
+</details>

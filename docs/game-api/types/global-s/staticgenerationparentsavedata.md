@@ -19,13 +19,13 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StaticGenerationParentSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StaticGenerationParentSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isserveronly" /><code>{"bool isServerOnly"}</code> |  |
-| <Link id="m-seed" /><code>{"int seed"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isserveronly" /><code>{"bool isServerOnly"}</code> |
+| <Link id="m-seed" /><code>{"int seed"}</code> |

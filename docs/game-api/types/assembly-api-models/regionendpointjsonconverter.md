@@ -17,14 +17,14 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Conve
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RegionEndpointJsonConverter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RegionEndpointJsonConverter()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-canconvert" /><code>{"override bool CanConvert(Type objectType)"}</code> |  |
-| <Link id="m-readjson" /><code>{"override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)"}</code> |  |
-| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-canconvert" /><code>{"override bool CanConvert(Type objectType)"}</code> |
+| <Link id="m-readjson" /><code>{"override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)"}</code> |
+| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)"}</code> |

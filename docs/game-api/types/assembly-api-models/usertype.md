@@ -16,11 +16,11 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-alta" /><code>{"Alta = 0"}</code> |  |
-| <Link id="m-discord" /><code>{"Discord = 2"}</code> |  |
-| <Link id="m-oculus" /><code>{"Oculus = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-alta" /><code>{"Alta = 0"}</code> |
+| <Link id="m-discord" /><code>{"Discord = 2"}</code> |
+| <Link id="m-oculus" /><code>{"Oculus = 1"}</code> |
 
 ## Used in
 

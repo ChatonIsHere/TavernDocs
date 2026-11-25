@@ -17,10 +17,10 @@ A **struct** in `Root.Township`, `Alta.Console`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-content" /><code>{"string content"}</code> |  |
-| <Link id="m-id" /><code>{"uint id"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-content" /><code>{"string content"}</code> |
+| <Link id="m-id" /><code>{"uint id"}</code> |
 
 ## Used in
 

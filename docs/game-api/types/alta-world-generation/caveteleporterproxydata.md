@@ -18,9 +18,9 @@ Light record of one cave teleporter: its cave layer, position and fuel. Used by 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CaveTeleporterProxyData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CaveTeleporterProxyData()"}</code> |
 
 ## Fields
 

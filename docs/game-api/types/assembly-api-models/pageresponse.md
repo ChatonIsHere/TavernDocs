@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PageResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PageResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |  |
-| <Link id="m-queryresponses" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/queryresponse">{"QueryResponse"}</Link>{"> QueryResponses { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |
+| <Link id="m-queryresponses" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/queryresponse">{"QueryResponse"}</Link>{"> QueryResponses { get; set; }"}</code> |
 
 ## Used in
 

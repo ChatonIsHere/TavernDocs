@@ -16,13 +16,13 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-couldntaccesscluster" /><code>{"CouldntAccessCluster = 5"}</code> |  |
-| <Link id="m-couldntallocate" /><code>{"CouldntAllocate = 7"}</code> |  |
-| <Link id="m-lockedserver" /><code>{"LockedServer = 8"}</code> |  |
-| <Link id="m-nothing" /><code>{"Nothing = 0"}</code> |  |
-| <Link id="m-webrequestfailed" /><code>{"WebRequestFailed = 6"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-couldntaccesscluster" /><code>{"CouldntAccessCluster = 5"}</code> |
+| <Link id="m-couldntallocate" /><code>{"CouldntAllocate = 7"}</code> |
+| <Link id="m-lockedserver" /><code>{"LockedServer = 8"}</code> |
+| <Link id="m-nothing" /><code>{"Nothing = 0"}</code> |
+| <Link id="m-webrequestfailed" /><code>{"WebRequestFailed = 6"}</code> |
 
 ## Used in
 

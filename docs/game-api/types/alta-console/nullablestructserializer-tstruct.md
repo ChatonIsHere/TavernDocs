@@ -17,13 +17,13 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NullableStructSerializer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NullableStructSerializer()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-readjson" /><code>{"override TStruct? ReadJson(JsonReader reader, Type objectType, TStruct? existingValue, bool hasExistingValue, JsonSerializer serializer)"}</code> |  |
-| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, TStruct? value, JsonSerializer serializer)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-readjson" /><code>{"override TStruct? ReadJson(JsonReader reader, Type objectType, TStruct? existingValue, bool hasExistingValue, JsonSerializer serializer)"}</code> |
+| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, TStruct? value, JsonSerializer serializer)"}</code> |

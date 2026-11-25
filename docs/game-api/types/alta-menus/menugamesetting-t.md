@@ -20,17 +20,25 @@ Base for one setting row in the in-game settings panel, showing a setting of typ
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected MenuGameSetting()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected MenuGameSetting()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-displaynametext" /><code>{"protected "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" displayNameText"}</code> | Text that shows the setting's display name. |
-| <Link id="m-settingspanel" /><code>{"private "}<Link to="/game-api/types/global-s/settingspanel">{"SettingsPanel"}</Link>{" settingsPanel"}</code> |  |
 | <Link id="m-settingtodisplay" /><code>{"protected T settingToDisplay"}</code> | The setting this row shows. Touching the row with a hand shows its description. |
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-settingspanel" /><code>{"private "}<Link to="/game-api/types/global-s/settingspanel">{"SettingsPanel"}</Link>{" settingsPanel"}</code> |
+
+</details>
 
 ## Properties
 
@@ -43,8 +51,16 @@ Base for one setting row in the in-game settings panel, showing a setting of typ
 | Member | What it is |
 | --- | --- |
 | <Link id="m-setsettings" /><code>{"override void SetSettings("}<Link to="/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" newSettingToDisplay)"}</code> | Points the row at another setting and sets it up again. |
-| <Link id="m-checksetup" /><code>{"private void CheckSetup()"}</code> |  |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Editor hook for subclasses. Empty by default. |
 | <Link id="m-setup" /><code>{"protected virtual void Setup()"}</code> | Fills the row from the setting. The base writes the display name. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-checksetup" /><code>{"private void CheckSetup()"}</code> |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>

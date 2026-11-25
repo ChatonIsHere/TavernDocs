@@ -17,25 +17,25 @@ A **class** in `Root.Township`, `Alta.Utilities.Atlas`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AtlasedMaterial()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AtlasedMaterial()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-custompadding" /><code>{"int customPadding"}</code> |  |
-| <Link id="m-material" /><code>{"Material material"}</code> |  |
-| <Link id="m-rect" /><code>{"Vector4 rect"}</code> |  |
-| <Link id="m-scale" /><code><Link to="/game-api/types/alta-utilities/scale">{"Scale"}</Link>{" scale"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-custompadding" /><code>{"int customPadding"}</code> |
+| <Link id="m-material" /><code>{"Material material"}</code> |
+| <Link id="m-rect" /><code>{"Vector4 rect"}</code> |
+| <Link id="m-scale" /><code><Link to="/game-api/types/alta-utilities/scale">{"Scale"}</Link>{" scale"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |  |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |
 
 ## Used in
 

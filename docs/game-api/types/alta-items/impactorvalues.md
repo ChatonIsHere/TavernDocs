@@ -20,23 +20,28 @@ Asset of numbers for an `Impactor` (the part of a tool that deals hits): impact 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactorValues()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactorValues()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channels" /><code>{"private List<"}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"> channels"}</code> |  |
-| <Link id="m-crippledamagemodifier" /><code>{"private float crippleDamageModifier"}</code> |  |
-| <Link id="m-directionpower" /><code>{"private float directionPower"}</code> |  |
-| <Link id="m-edgelength" /><code>{"private float edgeLength"}</code> |  |
-| <Link id="m-healthdamagemodifier" /><code>{"private float healthDamageModifier"}</code> |  |
-| <Link id="m-lerpvalue" /><code>{"private float lerpValue"}</code> |  |
-| <Link id="m-maximumfollow" /><code>{"private float maximumFollow"}</code> |  |
-| <Link id="m-minimumfollow" /><code>{"private float minimumFollow"}</code> |  |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" type"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-channels" /><code>{"private List<"}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"> channels"}</code> |
+| <Link id="m-crippledamagemodifier" /><code>{"private float crippleDamageModifier"}</code> |
+| <Link id="m-directionpower" /><code>{"private float directionPower"}</code> |
+| <Link id="m-edgelength" /><code>{"private float edgeLength"}</code> |
+| <Link id="m-healthdamagemodifier" /><code>{"private float healthDamageModifier"}</code> |
+| <Link id="m-lerpvalue" /><code>{"private float lerpValue"}</code> |
+| <Link id="m-maximumfollow" /><code>{"private float maximumFollow"}</code> |
+| <Link id="m-minimumfollow" /><code>{"private float minimumFollow"}</code> |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" type"}</code> |
+
+</details>
 
 ## Properties
 

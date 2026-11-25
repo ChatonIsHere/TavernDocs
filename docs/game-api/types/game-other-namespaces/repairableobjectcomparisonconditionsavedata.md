@@ -19,13 +19,13 @@ A **class** in `Root.Township`, `Features.Gameplay.GameConditions`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RepairableObjectComparisonConditionSaveData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RepairableObjectComparisonConditionSaveData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isbuilt" /><code>{"uint[] IsBuilt"}</code> |  |
-| <Link id="m-isnotbuilt" /><code>{"uint[] IsNotBuilt"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isbuilt" /><code>{"uint[] IsBuilt"}</code> |
+| <Link id="m-isnotbuilt" /><code>{"uint[] IsNotBuilt"}</code> |

@@ -17,13 +17,13 @@ A **private class** in `Root.Township`, `Alta.Map`. Reach it through att-stubs' 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MapElement()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MapElement()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-element" /><code>{"Texture2D element"}</code> |  |
-| <Link id="m-offsetscale" /><code>{"Vector3 offsetScale"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-element" /><code>{"Texture2D element"}</code> |
+| <Link id="m-offsetscale" /><code>{"Vector3 offsetScale"}</code> |

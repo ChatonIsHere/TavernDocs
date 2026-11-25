@@ -18,20 +18,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TerrainModificationRegister()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TerrainModificationRegister()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-nextid" /><code>{"private uint nextId"}</code> |  |
-| <Link id="m-spawned" /><code>{"private HashSet<uint> spawned"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-nextid" /><code>{"private uint nextId"}</code> |
+| <Link id="m-spawned" /><code>{"private HashSet<uint> spawned"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-checkmodify" /><code>{"bool CheckModify(uint id)"}</code> |  |
-| <Link id="m-getnextid" /><code>{"uint GetNextId()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-checkmodify" /><code>{"bool CheckModify(uint id)"}</code> |
+| <Link id="m-getnextid" /><code>{"uint GetNextId()"}</code> |

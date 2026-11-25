@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, `ATT.MicroTutorial`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-entry" /><code>{"Entry = 1"}</code> |  |
-| <Link id="m-exit" /><code>{"Exit = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-entry" /><code>{"Entry = 1"}</code> |
+| <Link id="m-exit" /><code>{"Exit = 0"}</code> |
 
 ## Used in
 

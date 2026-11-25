@@ -19,33 +19,38 @@ A **class** in `Root.Township`, `Alta.Combat`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DeathAnimationSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DeathAnimationSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ashesmaterial" /><code>{"private Material ashesMaterial"}</code> |  |
-| <Link id="m-deathvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" deathVisual"}</code> |  |
-| <Link id="m-deathvisualgroundposition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" deathVisualGroundPosition"}</code> |  |
-| <Link id="m-defaultduration" /><code>{"private float defaultDuration"}</code> |  |
-| <Link id="m-firstburstshellsettings" /><code>{"private "}<Link to="/game-api/types/alta-player/combatshellsetting">{"CombatShellSetting"}</Link>{" firstBurstShellSettings"}</code> |  |
-| <Link id="m-predeathvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" preDeathVisual"}</code> |  |
-| <Link id="m-secondburstshellsettings" /><code>{"private "}<Link to="/game-api/types/alta-player/combatshellsetting">{"CombatShellSetting"}</Link>{" secondBurstShellSettings"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ashesmaterial" /><code>{"private Material ashesMaterial"}</code> |
+| <Link id="m-deathvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" deathVisual"}</code> |
+| <Link id="m-deathvisualgroundposition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" deathVisualGroundPosition"}</code> |
+| <Link id="m-defaultduration" /><code>{"private float defaultDuration"}</code> |
+| <Link id="m-firstburstshellsettings" /><code>{"private "}<Link to="/game-api/types/alta-player/combatshellsetting">{"CombatShellSetting"}</Link>{" firstBurstShellSettings"}</code> |
+| <Link id="m-predeathvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" preDeathVisual"}</code> |
+| <Link id="m-secondburstshellsettings" /><code>{"private "}<Link to="/game-api/types/alta-player/combatshellsetting">{"CombatShellSetting"}</Link>{" secondBurstShellSettings"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ashesmaterial-2" /><code>{"Material AshesMaterial { get; }"}</code> |  |
-| <Link id="m-deathvisual-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DeathVisual { get; }"}</code> |  |
-| <Link id="m-deathvisualgroundposition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DeathVisualGroundPosition { get; }"}</code> |  |
-| <Link id="m-defaultduration-2" /><code>{"float DefaultDuration { get; }"}</code> |  |
-| <Link id="m-firstburstshellsettings-2" /><code><Link to="/game-api/types/alta-player/combatshellsetting">{"CombatShellSetting"}</Link>{" FirstBurstShellSettings { get; }"}</code> |  |
-| <Link id="m-predeathvisual-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" PreDeathVisual { get; }"}</code> |  |
-| <Link id="m-secondburstshellsettings-2" /><code><Link to="/game-api/types/alta-player/combatshellsetting">{"CombatShellSetting"}</Link>{" SecondBurstShellSettings { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ashesmaterial-2" /><code>{"Material AshesMaterial { get; }"}</code> |
+| <Link id="m-deathvisual-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DeathVisual { get; }"}</code> |
+| <Link id="m-deathvisualgroundposition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DeathVisualGroundPosition { get; }"}</code> |
+| <Link id="m-defaultduration-2" /><code>{"float DefaultDuration { get; }"}</code> |
+| <Link id="m-firstburstshellsettings-2" /><code><Link to="/game-api/types/alta-player/combatshellsetting">{"CombatShellSetting"}</Link>{" FirstBurstShellSettings { get; }"}</code> |
+| <Link id="m-predeathvisual-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" PreDeathVisual { get; }"}</code> |
+| <Link id="m-secondburstshellsettings-2" /><code><Link to="/game-api/types/alta-player/combatshellsetting">{"CombatShellSetting"}</Link>{" SecondBurstShellSettings { get; }"}</code> |
 
 ## Used in
 

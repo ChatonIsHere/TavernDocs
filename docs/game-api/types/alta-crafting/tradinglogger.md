@@ -17,14 +17,19 @@ A **static class** in `Root.Township`, `Alta.Trading`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-log" /><code>{"static void Log(string message)"}</code> |  |
-| <Link id="m-log-2" /><code>{"static void Log(string message, params object[] parameters)"}</code> |  |
-| <Link id="m-recordsale" /><code>{"static void RecordSale("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" item, int outputQuantity, int askPrice, int askAmount, int buyer, int seller)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-log" /><code>{"static void Log(string message)"}</code> |
+| <Link id="m-log-2" /><code>{"static void Log(string message, params object[] parameters)"}</code> |
+| <Link id="m-recordsale" /><code>{"static void RecordSale("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" item, int outputQuantity, int askPrice, int askAmount, int buyer, int seller)"}</code> |

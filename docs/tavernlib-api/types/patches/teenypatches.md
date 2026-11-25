@@ -20,9 +20,9 @@ Small Harmony patches that let the game run without Alta's services: local cosme
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TeenyPatches()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TeenyPatches()"}</code> |
 
 ## Methods
 
@@ -40,6 +40,14 @@ Small Harmony patches that let the game run without Alta's services: local cosme
 | <Link id="m-localgetallcosmeticpresets" /><code>{"static bool LocalGetAllCosmeticPresets(ref Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/userpresetdatainfo">{"UserPresetDataInfo"}</Link>{">> __result)"}</code> | Prefix on `UserApiClient.GetAllCosmeticsPresets` that reads every `.preset` file in `A Township Tale\presets` instead. |
 | <Link id="m-localjoinarg" /><code>{"static bool LocalJoinArg()"}</code> | Prefix on `ApplicationStartupManager.RunStartupActions`: with `/join_local_server`, skips startup and joins the server from the command line. |
 | <Link id="m-quitonmenureturn" /><code>{"static bool QuitOnMenuReturn("}<Link to="/game-api/types/alta-player/returntomainmenuaction">{"ReturnToMainMenuAction"}</Link>{" __instance)"}</code> | Prefix on `ReturnToMainMenuAction.LetGoValid` that quits the game instead of going back to the main menu. |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-joinresult" /><code>{"private static ServerPlayerConnectionHandlerOld.PlayerJoinResult JoinResult(string tokenString, int playerId)"}</code> |  |
 | <Link id="m-memberstatusfromroles" /><code>{"internal static "}<Link to="/game-api/types/assembly-other/playersubscriberstatus">{"PlayerSubscriberStatus"}</Link>{" MemberStatusFromRoles(string username)"}</code> | Internal: the game status for a username from its roles: `dev` is Developer, `mod` is AltaMod, `supporter` is Subscriber. |
 | <Link id="m-webportarg" /><code>{"private static int? WebPortArg()"}</code> |  |
+
+</details>

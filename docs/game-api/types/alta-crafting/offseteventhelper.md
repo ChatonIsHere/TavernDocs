@@ -17,6 +17,6 @@ A **static class** in `Root.Township`, `Alta.Woodcutting`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-createoffset" /><code>{"static "}<Link to="/game-api/types/alta-crafting/offsetevent">{"OffsetEvent"}</Link>{" CreateOffset("}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline, TimeSpan minimumDelay, TimeSpan offsetDelay, Action delayedEvent)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-createoffset" /><code>{"static "}<Link to="/game-api/types/alta-crafting/offsetevent">{"OffsetEvent"}</Link>{" CreateOffset("}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline, TimeSpan minimumDelay, TimeSpan offsetDelay, Action delayedEvent)"}</code> |

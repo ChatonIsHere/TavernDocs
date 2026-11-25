@@ -18,21 +18,26 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected PickupTypeSetting()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected PickupTypeSetting()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" type"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" type"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-type-2" /><code><Link to="/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" Type { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-type-2" /><code><Link to="/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" Type { get; }"}</code> |
 
 ## Used in
 

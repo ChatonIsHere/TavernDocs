@@ -16,13 +16,13 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LogoutRequest()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"LogoutRequest(JwtSecurityToken refreshToken)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LogoutRequest()"}</code> |
+| <Link id="m-ctor-2" /><code>{"LogoutRequest(JwtSecurityToken refreshToken)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-refreshtoken" /><code>{"string RefreshToken { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-refreshtoken" /><code>{"string RefreshToken { get; private set; }"}</code> |

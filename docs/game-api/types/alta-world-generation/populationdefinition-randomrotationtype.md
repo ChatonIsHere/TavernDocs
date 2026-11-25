@@ -17,10 +17,10 @@ An **private enum** in `Root.Township`, `Alta.Populations`. Reach it through att
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-xyz" /><code>{"XYZ = 1"}</code> |  |
-| <Link id="m-y" /><code>{"Y = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-xyz" /><code>{"XYZ = 1"}</code> |
+| <Link id="m-y" /><code>{"Y = 0"}</code> |
 
 ## Used in
 

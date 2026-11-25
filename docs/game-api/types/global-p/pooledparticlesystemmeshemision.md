@@ -17,22 +17,35 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PooledParticleSystemMeshEmision()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PooledParticleSystemMeshEmision()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-system" /><code>{"private ParticleSystem system"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-system" /><code>{"private ParticleSystem system"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setmesh" /><code>{"void SetMesh(MeshRenderer targetMeshRenderer)"}</code> |  |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setmesh" /><code>{"void SetMesh(MeshRenderer targetMeshRenderer)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+
+</details>
 
 ## Used in
 

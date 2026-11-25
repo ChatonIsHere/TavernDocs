@@ -18,10 +18,10 @@ A copy of one collision contact (point, normal, colliders, separation) plus the 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ContactPointStructure(Vector3 normal, Vector3 point, Collider thisCollider, Collider otherCollider, float separation, "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector = null)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ContactPointStructure(ContactPoint contactPoint, "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ContactPointStructure(Vector3 normal, Vector3 point, Collider thisCollider, Collider otherCollider, float separation, "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector = null)"}</code> |
+| <Link id="m-ctor-2" /><code>{"ContactPointStructure(ContactPoint contactPoint, "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector = null)"}</code> |
 
 ## Properties
 

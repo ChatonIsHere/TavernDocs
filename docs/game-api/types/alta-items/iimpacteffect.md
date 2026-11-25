@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.Impact`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-trigger" /><code>{"void Trigger("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" hit)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-trigger" /><code>{"void Trigger("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" hit)"}</code> |

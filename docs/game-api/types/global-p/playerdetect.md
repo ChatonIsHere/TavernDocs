@@ -18,44 +18,54 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerDetect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerDetect()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-boundsize" /><code>{"private Vector3 boundSize"}</code> |  |
-| <Link id="m-firstentered" /><code>{"private UnityEvent firstEntered"}</code> |  |
-| <Link id="m-inarea" /><code>{"private HashSet<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> inArea"}</code> |  |
-| <Link id="m-isusingbounds" /><code>{"private bool isUsingBounds"}</code> |  |
-| <Link id="m-lastleft" /><code>{"private UnityEvent lastLeft"}</code> |  |
-| <Link id="m-playerentered" /><code>{"private "}<Link to="/game-api/types/global-p/playerunityevent">{"PlayerUnityEvent"}</Link>{" playerEntered"}</code> |  |
-| <Link id="m-playerinareadebug" /><code>{"private bool playerInAreaDebug"}</code> |  |
-| <Link id="m-playerleft" /><code>{"private "}<Link to="/game-api/types/global-p/playerunityevent">{"PlayerUnityEvent"}</Link>{" playerLeft"}</code> |  |
-| <Link id="m-radiussquared" /><code>{"private float radiusSquared"}</code> |  |
+<details>
+<summary>9 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-boundsize" /><code>{"private Vector3 boundSize"}</code> |
+| <Link id="m-firstentered" /><code>{"private UnityEvent firstEntered"}</code> |
+| <Link id="m-inarea" /><code>{"private HashSet<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> inArea"}</code> |
+| <Link id="m-isusingbounds" /><code>{"private bool isUsingBounds"}</code> |
+| <Link id="m-lastleft" /><code>{"private UnityEvent lastLeft"}</code> |
+| <Link id="m-playerentered" /><code>{"private "}<Link to="/game-api/types/global-p/playerunityevent">{"PlayerUnityEvent"}</Link>{" playerEntered"}</code> |
+| <Link id="m-playerinareadebug" /><code>{"private bool playerInAreaDebug"}</code> |
+| <Link id="m-playerleft" /><code>{"private "}<Link to="/game-api/types/global-p/playerunityevent">{"PlayerUnityEvent"}</Link>{" playerLeft"}</code> |
+| <Link id="m-radiussquared" /><code>{"private float radiusSquared"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-inarea-2" /><code>{"IReadOnlyCollection<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> InArea { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-inarea-2" /><code>{"IReadOnlyCollection<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> InArea { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-playerentered-2" /><code>{"event UnityAction<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> PlayerEntered"}</code> |  |
-| <Link id="m-playerleft-2" /><code>{"event UnityAction<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> PlayerLeft"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-playerentered-2" /><code>{"event UnityAction<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> PlayerEntered"}</code> |
+| <Link id="m-playerleft-2" /><code>{"event UnityAction<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> PlayerLeft"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |
+
+</details>
 
 ## Used in
 

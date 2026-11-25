@@ -19,6 +19,6 @@ An **abstract class** in `Alta.MenuItem`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected Rope_Tools()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected Rope_Tools()"}</code> |

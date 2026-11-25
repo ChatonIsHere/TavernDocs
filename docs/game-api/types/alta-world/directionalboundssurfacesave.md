@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DirectionalBoundsSurfaceSave()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DirectionalBoundsSurfaceSave()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-extents" /><code>{"Vector3 extents"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-extents" /><code>{"Vector3 extents"}</code> |

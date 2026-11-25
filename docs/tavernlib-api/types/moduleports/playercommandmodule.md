@@ -21,15 +21,26 @@ TavernLib's `player` console module, a port of the game's player commands plus i
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-teleport-2" /><code>{"static void Teleport("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, "}<Link to="/game-api/types/global-s/spawnareaidentifier">{"SpawnAreaIdentifier"}</Link>{" target = 1)"}</code> | The `player teleport` overload that sends players to a spawn area (their respawn point by default). A player with no body makes it throw. |
+
+<details>
+<summary>28 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-ban" /><code>{"private static string Ban(string username, string reason = \"Banned\")"}</code> |  |
 | <Link id="m-banlist" /><code>{"private static string BanList()"}</code> |  |
 | <Link id="m-changeusers" /><code>{"private static void ChangeUsers(Func<"}<Link to="/tavernlib-api/types/backend-server-configs/userconfig">{"UserConfig"}</Link>{", bool> change)"}</code> |  |
@@ -58,3 +69,5 @@ TavernLib's `player` console module, a port of the game's player commands plus i
 | <Link id="m-teleport" /><code>{"private static string Teleport("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" targetPlayer)"}</code> | The `player teleport` overload that sends players to a spawn area (their respawn point by default). A player with no body makes it throw. |
 | <Link id="m-unban" /><code>{"private static string Unban(string username)"}</code> |  |
 | <Link id="m-unlockcancel" /><code>{"private static void UnlockCancel("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+
+</details>

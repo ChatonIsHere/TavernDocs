@@ -20,29 +20,34 @@ Skill shrine visual that fills with a player's XP toward the next level on one p
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ExperienceFillVisualizer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ExperienceFillVisualizer()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fillprogress" /><code>{"private static readonly int _FillProgress"}</code> |  |
-| <Link id="m-negativechangeprogress" /><code>{"private static readonly int _NegativeChangeProgress"}</code> |  |
-| <Link id="m-positivechangeprogress" /><code>{"private static readonly int _PositiveChangeProgress"}</code> |  |
-| <Link id="m-animationcoroutine" /><code>{"private Coroutine animationCoroutine"}</code> |  |
-| <Link id="m-availablepointvisualizer" /><code>{"private "}<Link to="/game-api/types/global-a-b/availablepointvisualizermanager">{"AvailablePointVisualizerManager"}</Link>{" availablePointVisualizer"}</code> |  |
-| <Link id="m-currentfillvalue" /><code>{"private float currentFillValue"}</code> |  |
-| <Link id="m-currentfreepoints" /><code>{"private int currentFreePoints"}</code> |  |
-| <Link id="m-fillingcurve" /><code>{"private AnimationCurve fillingCurve"}</code> |  |
-| <Link id="m-filltotargettime" /><code>{"private float fillToTargetTime"}</code> |  |
-| <Link id="m-hassold" /><code>{"private bool hasSold"}</code> |  |
-| <Link id="m-isopen" /><code>{"private bool isOpen"}</code> |  |
-| <Link id="m-openinganimationtime" /><code>{"private float openingAnimationTime"}</code> |  |
-| <Link id="m-renderertoanimate" /><code>{"private Renderer rendererToAnimate"}</code> |  |
-| <Link id="m-sellingprogress" /><code>{"private AnimationCurve sellingProgress"}</code> |  |
-| <Link id="m-soldfillprogress" /><code>{"private float soldFillProgress"}</code> |  |
+<details>
+<summary>15 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-fillprogress" /><code>{"private static readonly int _FillProgress"}</code> |
+| <Link id="m-negativechangeprogress" /><code>{"private static readonly int _NegativeChangeProgress"}</code> |
+| <Link id="m-positivechangeprogress" /><code>{"private static readonly int _PositiveChangeProgress"}</code> |
+| <Link id="m-animationcoroutine" /><code>{"private Coroutine animationCoroutine"}</code> |
+| <Link id="m-availablepointvisualizer" /><code>{"private "}<Link to="/game-api/types/global-a-b/availablepointvisualizermanager">{"AvailablePointVisualizerManager"}</Link>{" availablePointVisualizer"}</code> |
+| <Link id="m-currentfillvalue" /><code>{"private float currentFillValue"}</code> |
+| <Link id="m-currentfreepoints" /><code>{"private int currentFreePoints"}</code> |
+| <Link id="m-fillingcurve" /><code>{"private AnimationCurve fillingCurve"}</code> |
+| <Link id="m-filltotargettime" /><code>{"private float fillToTargetTime"}</code> |
+| <Link id="m-hassold" /><code>{"private bool hasSold"}</code> |
+| <Link id="m-isopen" /><code>{"private bool isOpen"}</code> |
+| <Link id="m-openinganimationtime" /><code>{"private float openingAnimationTime"}</code> |
+| <Link id="m-renderertoanimate" /><code>{"private Renderer rendererToAnimate"}</code> |
+| <Link id="m-sellingprogress" /><code>{"private AnimationCurve sellingProgress"}</code> |
+| <Link id="m-soldfillprogress" /><code>{"private float soldFillProgress"}</code> |
+
+</details>
 
 ## Properties
 
@@ -61,13 +66,21 @@ Skill shrine visual that fills with a player's XP toward the next level on one p
 | <Link id="m-serialize" /><code>{"override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" manager)"}</code> | Server writes free points, fill toward the next level and the fill after a sale; clients read them and animate. |
 | <Link id="m-setbuyprogress" /><code>{"void SetBuyProgress(float progress)"}</code> | Shows the fill draining while a buy is held. |
 | <Link id="m-setsellprogress" /><code>{"void SetSellProgress(float progress)"}</code> | Shows the fill rising toward the after-sale value while a sell is held. |
-| <Link id="m-animate" /><code>{"private void Animate(float percentageToNextLevel)"}</code> |  |
-| <Link id="m-animatebuyfinish" /><code>{"private IEnumerator AnimateBuyFinish(bool wasConfirmed) (iterator)"}</code> |  |
-| <Link id="m-animateopenforplayer" /><code>{"private IEnumerator AnimateOpenForPlayer(int levels, float percentageToNextLevel) (iterator)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-fadeto" /><code>{"private IEnumerator FadeTo(float target) (iterator)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
 | <Link id="m-openinternal" /><code>{"protected virtual void OpenInternal()"}</code> | Hook for subclasses when the visualizer first opens. Empty in the base class. |
+
+<details>
+<summary>6 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-animate" /><code>{"private void Animate(float percentageToNextLevel)"}</code> |
+| <Link id="m-animatebuyfinish" /><code>{"private IEnumerator AnimateBuyFinish(bool wasConfirmed) (iterator)"}</code> |
+| <Link id="m-animateopenforplayer" /><code>{"private IEnumerator AnimateOpenForPlayer(int levels, float percentageToNextLevel) (iterator)"}</code> |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-fadeto" /><code>{"private IEnumerator FadeTo(float target) (iterator)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>
 
 ## Used in
 

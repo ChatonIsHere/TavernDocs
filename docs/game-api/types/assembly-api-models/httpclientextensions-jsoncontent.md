@@ -18,15 +18,20 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Exten
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JsonContent(object obj)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JsonContent(object obj)"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-convert" /><code>{"private static string Convert(object obj)"}</code> |  |
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-convert" /><code>{"private static string Convert(object obj)"}</code> |
+
+</details>
 
 ## Used in
 

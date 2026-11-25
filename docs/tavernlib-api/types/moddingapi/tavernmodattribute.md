@@ -21,9 +21,9 @@ Put on a mod's `MelonMod` class to label which side it's for. A label only: wher
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TavernModAttribute("}<Link to="/tavernlib-api/types/moddingapi/modside">{"ModSide"}</Link>{" side)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TavernModAttribute("}<Link to="/tavernlib-api/types/moddingapi/modside">{"ModSide"}</Link>{" side)"}</code> |
 
 ## Properties
 

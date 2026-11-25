@@ -19,9 +19,9 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MiningEchoIntensity()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MiningEchoIntensity()"}</code> |
 
 ## Used in
 

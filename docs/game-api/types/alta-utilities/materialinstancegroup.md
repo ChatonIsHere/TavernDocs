@@ -17,29 +17,42 @@ A **class** in `Root.Township`, `Alta.Rendering`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialInstanceGroup(IEnumerable<Renderer> renderers)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MaterialInstanceGroup(IEnumerable<Renderer> renderers)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instances" /><code>{"private readonly List<"}<Link to="/game-api/types/alta-utilities/materialinstance">{"MaterialInstance"}</Link>{"> instances"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-instances" /><code>{"private readonly List<"}<Link to="/game-api/types/alta-utilities/materialinstance">{"MaterialInstance"}</Link>{"> instances"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-count" /><code>{"int Count { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-count" /><code>{"int Count { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-utilities/materialinstance">{"MaterialInstance"}</Link>{"> GetEnumerator()"}</code> |  |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-utilities/materialinstance">{"MaterialInstance"}</Link>{"> GetEnumerator()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |
+
+</details>
 
 ## Used in
 

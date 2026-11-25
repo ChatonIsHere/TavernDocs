@@ -16,15 +16,15 @@ A **static class** in `Root.Township`, `Alta.AssetBaking`.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-atlasmeshcachename" /><code>{"const string AtlasMeshCacheName"}</code> |  |
-| <Link id="m-atlasmeshcachenamefullpath" /><code>{"const string AtlasMeshCacheNameFullPath"}</code> |  |
-| <Link id="m-unbakedbakeablefolder" /><code>{"const string UnbakedBakeableFolder"}</code> |  |
-| <Link id="m-unbakedresourcesfolder" /><code>{"const string UnbakedResourcesFolder"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-atlasmeshcachename" /><code>{"const string AtlasMeshCacheName"}</code> |
+| <Link id="m-atlasmeshcachenamefullpath" /><code>{"const string AtlasMeshCacheNameFullPath"}</code> |
+| <Link id="m-unbakedbakeablefolder" /><code>{"const string UnbakedBakeableFolder"}</code> |
+| <Link id="m-unbakedresourcesfolder" /><code>{"const string UnbakedResourcesFolder"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-projecttounbakeddirectoriesmap" /><code>{"static "}<Link to="/game-api/types/alta-utilities/cacheddirectory">{"CachedDirectory"}</Link>{"[] ProjectToUnbakedDirectoriesMap { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-projecttounbakeddirectoriesmap" /><code>{"static "}<Link to="/game-api/types/alta-utilities/cacheddirectory">{"CachedDirectory"}</Link>{"[] ProjectToUnbakedDirectoriesMap { get; }"}</code> |

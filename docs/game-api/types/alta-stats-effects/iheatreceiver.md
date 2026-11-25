@@ -18,18 +18,18 @@ An **interface** in `Root.Township`, `Alta.Heat`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-internalenergy" /><code>{"float InternalEnergy { get; set; }"}</code> |  |
-| <Link id="m-isconductionallowed" /><code>{"bool IsConductionAllowed { get; set; }"}</code> |  |
-| <Link id="m-isignoringambient" /><code>{"bool IsIgnoringAmbient { get; set; }"}</code> |  |
-| <Link id="m-volume" /><code>{"float Volume { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-internalenergy" /><code>{"float InternalEnergy { get; set; }"}</code> |
+| <Link id="m-isconductionallowed" /><code>{"bool IsConductionAllowed { get; set; }"}</code> |
+| <Link id="m-isignoringambient" /><code>{"bool IsIgnoringAmbient { get; set; }"}</code> |
+| <Link id="m-volume" /><code>{"float Volume { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-conduct" /><code>{"void Conduct(float temperature, bool isIgnoringAmbient, float weight = 1)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-conduct" /><code>{"void Conduct(float temperature, bool isIgnoringAmbient, float weight = 1)"}</code> |
 
 ## Used in
 

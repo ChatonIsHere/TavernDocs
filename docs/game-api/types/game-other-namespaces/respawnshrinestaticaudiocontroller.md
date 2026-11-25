@@ -17,21 +17,26 @@ A **class** in `Root.Township`, `ATT.Respawn`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RespawnShrineStaticAudioController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RespawnShrineStaticAudioController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-loopingsoundeffect" /><code>{"private "}<Link to="/game-api/types/global-i-l/loopingsoundeffect">{"LoopingSoundEffect"}</Link>{" loopingSoundEffect"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-loopingsoundeffect" /><code>{"private "}<Link to="/game-api/types/global-i-l/loopingsoundeffect">{"LoopingSoundEffect"}</Link>{" loopingSoundEffect"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-setfuelconsumptionaudioplaystate" /><code>{"void SetFuelConsumptionAudioPlayState(int numberOfSubscribers)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-setfuelconsumptionaudioplaystate" /><code>{"void SetFuelConsumptionAudioPlayState(int numberOfSubscribers)"}</code> |
 
 ## Used in
 

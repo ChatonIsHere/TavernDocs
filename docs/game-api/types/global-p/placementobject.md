@@ -17,26 +17,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlacementObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlacementObject()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bounds" /><code>{"private Vector3 bounds"}</code> |  |
-| <Link id="m-getbounds" /><code>{"private bool getBounds"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bounds" /><code>{"private Vector3 bounds"}</code> |
+| <Link id="m-getbounds" /><code>{"private bool getBounds"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-size" /><code>{"Vector3 Size { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-size" /><code>{"Vector3 Size { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+
+</details>

@@ -20,17 +20,25 @@ Base for something built along a parent `BezierSpline` (a mesh, fence and so on)
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SplineDisplay()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SplineDisplay()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-isgenerated" /><code>{"protected bool isGenerated"}</code> | True once it has been built. |
-| <Link id="m-isupdating" /><code>{"private bool isUpdating"}</code> |  |
-| <Link id="m-spline" /><code>{"private "}<Link to="/game-api/types/alta-utilities/bezierspline">{"BezierSpline"}</Link>{" spline"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isupdating" /><code>{"private bool isUpdating"}</code> |
+| <Link id="m-spline" /><code>{"private "}<Link to="/game-api/types/alta-utilities/bezierspline">{"BezierSpline"}</Link>{" spline"}</code> |
+
+</details>
 
 ## Properties
 
@@ -49,6 +57,14 @@ Base for something built along a parent `BezierSpline` (a mesh, fence and so on)
 | <Link id="m-generate" /><code>{"void Generate()"}</code> | Builds the display. |
 | <Link id="m-onvalidate" /><code>{"virtual void OnValidate()"}</code> | Editor hook. Empty here. |
 | <Link id="m-generateinternal" /><code>{"protected abstract void GenerateInternal()"}</code> | Subclass: does the building. |
-| <Link id="m-splinechanged" /><code>{"private void SplineChanged("}<Link to="/game-api/types/alta-utilities/bezierspline">{"BezierSpline"}</Link>{" spline)"}</code> |  |
 | <Link id="m-start" /><code>{"protected virtual void Start()"}</code> | Builds once and starts listening to spline changes, unless skipped on headless. |
 | <Link id="m-update" /><code>{"protected virtual void Update()"}</code> | Empty here. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-splinechanged" /><code>{"private void SplineChanged("}<Link to="/game-api/types/alta-utilities/bezierspline">{"BezierSpline"}</Link>{" spline)"}</code> |
+
+</details>

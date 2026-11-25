@@ -18,31 +18,36 @@ A **class** in `Root.Township`, `Alta.Menu`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerMultiOptionCommandDefinition()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerMultiOptionCommandDefinition()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-commands" /><code>{"private "}<Link to="/game-api/types/alta-menus/servermultioptioncommanddefinition-commandoptioninfo">{"ServerMultiOptionCommandDefinition.CommandOptionInfo"}</Link>{"[] commands"}</code> |  |
-| <Link id="m-currentcommandindex" /><code>{"private int currentCommandIndex"}</code> |  |
-| <Link id="m-settingdescription" /><code>{"private string settingDescription"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-commands" /><code>{"private "}<Link to="/game-api/types/alta-menus/servermultioptioncommanddefinition-commandoptioninfo">{"ServerMultiOptionCommandDefinition.CommandOptionInfo"}</Link>{"[] commands"}</code> |
+| <Link id="m-currentcommandindex" /><code>{"private int currentCommandIndex"}</code> |
+| <Link id="m-settingdescription" /><code>{"private string settingDescription"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-labels" /><code>{"virtual string[] Labels { get; }"}</code> |  |
-| <Link id="m-settingdescription-2" /><code>{"override string SettingDescription { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-labels" /><code>{"virtual string[] Labels { get; }"}</code> |
+| <Link id="m-settingdescription-2" /><code>{"override string SettingDescription { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-runcommandonclient" /><code>{"override void RunCommandOnClient()"}</code> |  |
-| <Link id="m-setcommandindex" /><code>{"void SetCommandIndex(int index)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-runcommandonclient" /><code>{"override void RunCommandOnClient()"}</code> |
+| <Link id="m-setcommandindex" /><code>{"void SetCommandIndex(int index)"}</code> |
 
 ## Used in
 

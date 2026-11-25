@@ -16,24 +16,29 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedGeneratedBiome()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SerializedGeneratedBiome()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-from" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" from"}</code> |  |
-| <Link id="m-seed" /><code>{"private int seed"}</code> |  |
-| <Link id="m-to" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" to"}</code> |  |
-| <Link id="m-transition" /><code>{"private float transition"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-from" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" from"}</code> |
+| <Link id="m-seed" /><code>{"private int seed"}</code> |
+| <Link id="m-to" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" to"}</code> |
+| <Link id="m-transition" /><code>{"private float transition"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getgenerated" /><code><Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" GetGenerated()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getgenerated" /><code><Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" GetGenerated()"}</code> |
 
 ## Used in
 

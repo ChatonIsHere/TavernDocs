@@ -17,19 +17,19 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeNodeBakerLod0Only()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WoodcutTreeNodeBakerLod0Only()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/alta-crafting/woodcuttreenodebakerlod0only">{"WoodcutTreeNodeBakerLod0Only"}</Link>{" Instance { get; }"}</code> |  |
-| <Link id="m-maxlods" /><code>{"override int MaxLods { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/alta-crafting/woodcuttreenodebakerlod0only">{"WoodcutTreeNodeBakerLod0Only"}</Link>{" Instance { get; }"}</code> |
+| <Link id="m-maxlods" /><code>{"override int MaxLods { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getlodcount" /><code>{"override int GetLodCount("}<Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getlodcount" /><code>{"override int GetLodCount("}<Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item)"}</code> |

@@ -16,17 +16,25 @@ A **static class** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maximummessagesize" /><code>{"const int MaximumMessageSize"}</code> |  |
-| <Link id="m-maximumpoolsize" /><code>{"const int MaximumPoolSize"}</code> |  |
-| <Link id="m-ismonitoring" /><code>{"private static bool isMonitoring"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |  |
-| <Link id="m-pool" /><code>{"private static readonly ConcurrentBag<byte[]> Pool"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-maximummessagesize" /><code>{"const int MaximumMessageSize"}</code> |
+| <Link id="m-maximumpoolsize" /><code>{"const int MaximumPoolSize"}</code> |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-ismonitoring" /><code>{"private static bool isMonitoring"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |
+| <Link id="m-pool" /><code>{"private static readonly ConcurrentBag<byte[]> Pool"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-get" /><code>{"static byte[] Get()"}</code> |  |
-| <Link id="m-put" /><code>{"static void Put(byte[] bytes)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-get" /><code>{"static byte[] Get()"}</code> |
+| <Link id="m-put" /><code>{"static void Put(byte[] bytes)"}</code> |

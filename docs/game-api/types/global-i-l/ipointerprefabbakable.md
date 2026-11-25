@@ -16,6 +16,6 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bake" /><code>{"void Bake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"void Bake()"}</code> |

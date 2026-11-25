@@ -19,16 +19,29 @@ A copied rectangle of a terrain's heightmap and splat (paint) map that can be ed
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TerrainAccess("}<Link to="/game-api/types/global-t-x/terraininfo">{"TerrainInfo"}</Link>{" terrain)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"internal TerrainAccess("}<Link to="/game-api/types/global-t-x/terraininfo">{"TerrainInfo"}</Link>{" terrain, int x, int y, int width, int height, bool isHeight, bool isSplat)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TerrainAccess("}<Link to="/game-api/types/global-t-x/terraininfo">{"TerrainInfo"}</Link>{" terrain)"}</code> |
+
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor-2" /><code>{"internal TerrainAccess("}<Link to="/game-api/types/global-t-x/terraininfo">{"TerrainInfo"}</Link>{" terrain, int x, int y, int width, int height, bool isHeight, bool isSplat)"}</code> |
+
+</details>
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Properties
 
@@ -60,7 +73,15 @@ A copied rectangle of a terrain's heightmap and splat (paint) map that can be ed
 | <Link id="m-getmaxdifference" /><code>{"float GetMaxDifference(int x, int y)"}</code> | Highest minus lowest of the four heights around a splat cell. The static overload reads a given array instead. |
 | <Link id="m-getmaxdifference-2" /><code>{"static float GetMaxDifference(int x, int y, float[,] customSource)"}</code> | Highest minus lowest of the four heights around a splat cell. The static overload reads a given array instead. |
 | <Link id="m-samplesplat" /><code>{"void SampleSplat()"}</code> | Reads the terrain's splat texture into `Splat`. |
-| <Link id="m-serializeasync" /><code>{"private Task Alta.Static.ICacheable.SerializeAsync(uint version, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-serializeasync" /><code>{"private Task Alta.Static.ICacheable.SerializeAsync(uint version, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+
+</details>
 
 ## Used in
 

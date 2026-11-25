@@ -17,40 +17,53 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ColoredParticleSystem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ColoredParticleSystem()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> |  |
-| <Link id="m-issettingtrailmaterial" /><code>{"private bool isSettingTrailMaterial"}</code> |  |
-| <Link id="m-isupdatingallmaterials" /><code>{"private bool isUpdatingAllMaterials"}</code> |  |
-| <Link id="m-lighttocolor" /><code>{"private "}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" lightToColor"}</code> |  |
-| <Link id="m-materialtargets" /><code>{"private ParticleSystemRenderer[] materialTargets"}</code> |  |
-| <Link id="m-materialtoupdate" /><code>{"private Material materialToUpdate"}</code> |  |
-| <Link id="m-systems" /><code>{"private ParticleSystem[] systems"}</code> |  |
-| <Link id="m-trailmaterial" /><code>{"private Material trailMaterial"}</code> |  |
+<details>
+<summary>8 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> |
+| <Link id="m-issettingtrailmaterial" /><code>{"private bool isSettingTrailMaterial"}</code> |
+| <Link id="m-isupdatingallmaterials" /><code>{"private bool isUpdatingAllMaterials"}</code> |
+| <Link id="m-lighttocolor" /><code>{"private "}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" lightToColor"}</code> |
+| <Link id="m-materialtargets" /><code>{"private ParticleSystemRenderer[] materialTargets"}</code> |
+| <Link id="m-materialtoupdate" /><code>{"private Material materialToUpdate"}</code> |
+| <Link id="m-systems" /><code>{"private ParticleSystem[] systems"}</code> |
+| <Link id="m-trailmaterial" /><code>{"private Material trailMaterial"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-particlesystems" /><code>{"IEnumerable<ParticleSystem> ParticleSystems { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-particlesystems" /><code>{"IEnumerable<ParticleSystem> ParticleSystems { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-multiplycolor" /><code>{"void MultiplyColor(Color color)"}</code> |  |
-| <Link id="m-setcolor" /><code>{"void SetColor(Color color, bool isIgnoringAlpha = false)"}</code> |  |
-| <Link id="m-usegradient" /><code>{"void UseGradient(Gradient gradient)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-initialize" /><code>{"private void Initialize()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-multiplycolor" /><code>{"void MultiplyColor(Color color)"}</code> |
+| <Link id="m-setcolor" /><code>{"void SetColor(Color color, bool isIgnoringAlpha = false)"}</code> |
+| <Link id="m-usegradient" /><code>{"void UseGradient(Gradient gradient)"}</code> |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-initialize" /><code>{"private void Initialize()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+
+</details>
 
 ## Used in
 

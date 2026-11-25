@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MembershipStatusResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MembershipStatusResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-expirytime" /><code>{"DateTime? ExpiryTime { get; set; }"}</code> |  |
-| <Link id="m-ismember" /><code>{"bool IsMember { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-expirytime" /><code>{"DateTime? ExpiryTime { get; set; }"}</code> |
+| <Link id="m-ismember" /><code>{"bool IsMember { get; set; }"}</code> |
 
 ## Used in
 

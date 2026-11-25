@@ -17,9 +17,9 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getposition" /><code>{"void GetPosition(float value, out Vector3 position, out Quaternion rotation, bool isNormalized = true)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getposition" /><code>{"void GetPosition(float value, out Vector3 position, out Quaternion rotation, bool isNormalized = true)"}</code> |
 
 ## Used in
 

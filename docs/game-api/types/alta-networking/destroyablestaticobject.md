@@ -20,26 +20,39 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DestroyableStaticObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DestroyableStaticObject()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currenthealth" /><code>{"private float currentHealth"}</code> |  |
-| <Link id="m-detectors" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{"[] detectors"}</code> |  |
-| <Link id="m-impacttypemultipliers" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{", float> impactTypeMultipliers"}</code> |  |
-| <Link id="m-modifiedhealth" /><code>{"private float modifiedHealth"}</code> |  |
-| <Link id="m-multipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attacktypemultiplier">{"AttackTypeMultiplier"}</Link>{"[] multipliers"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currenthealth" /><code>{"private float currentHealth"}</code> |
+| <Link id="m-detectors" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{"[] detectors"}</code> |
+| <Link id="m-impacttypemultipliers" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{", float> impactTypeMultipliers"}</code> |
+| <Link id="m-modifiedhealth" /><code>{"private float modifiedHealth"}</code> |
+| <Link id="m-multipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attacktypemultiplier">{"AttackTypeMultiplier"}</Link>{"[] multipliers"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hit" /><code>{"private void Hit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |  |
-| <Link id="m-initialize" /><code>{"private void Initialize("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity = null)"}</code> |  |
-| <Link id="m-modified" /><code>{"private void Modified("}<Link to="/game-api/types/alta-networking/modifiablestaticobject">{"ModifiableStaticObject"}</Link>{" self)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
-| <Link id="m-start" /><code>{"protected override void Start()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |
+| <Link id="m-start" /><code>{"protected override void Start()"}</code> |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-hit" /><code>{"private void Hit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |
+| <Link id="m-initialize" /><code>{"private void Initialize("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity = null)"}</code> |
+| <Link id="m-modified" /><code>{"private void Modified("}<Link to="/game-api/types/alta-networking/modifiablestaticobject">{"ModifiableStaticObject"}</Link>{" self)"}</code> |
+
+</details>

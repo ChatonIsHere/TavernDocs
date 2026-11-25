@@ -21,21 +21,29 @@ A simple button component for the in-game (meta) UI. Holds a label, enabled flag
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Button()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Button()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-btnpressed" /><code>{"private bool btnPressed"}</code> |  |
-| <Link id="m-btnreleased" /><code>{"private bool btnReleased"}</code> |  |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |  |
-| <Link id="m-label" /><code>{"private string label"}</code> |  |
 | <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | NLog logger shared by all buttons. |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-menus/buttonsettings">{"ButtonSettings"}</Link>{" settings"}</code> |  |
-| <Link id="m-sounds" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttonsoundsettings">{"ButtonSoundSettings"}</Link>{" sounds"}</code> |  |
+
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-btnpressed" /><code>{"private bool btnPressed"}</code> |
+| <Link id="m-btnreleased" /><code>{"private bool btnReleased"}</code> |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
+| <Link id="m-label" /><code>{"private string label"}</code> |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-menus/buttonsettings">{"ButtonSettings"}</Link>{" settings"}</code> |
+| <Link id="m-sounds" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttonsoundsettings">{"ButtonSoundSettings"}</Link>{" sounds"}</code> |
+
+</details>
 
 ## Properties
 
@@ -64,7 +72,15 @@ A simple button component for the in-game (meta) UI. Holds a label, enabled flag
 | <Link id="m-onreleased" /><code>{"void OnReleased()"}</code> | Same as `Release`; exists so the inspector debug button can call it. |
 | <Link id="m-press" /><code>{"void Press()"}</code> | Logs the press, sets `State` to true and raises `Pressed`. |
 | <Link id="m-release" /><code>{"void Release()"}</code> | Logs the release, sets `State` to false and raises `Released`. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+
+</details>
 
 ## Used in
 

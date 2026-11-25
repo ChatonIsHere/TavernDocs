@@ -20,12 +20,12 @@ A `HeatSourceBase` whose `ConductToHeatPoint` adds nothing. Looks unfinished.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EnergyBasedHeatSource()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EnergyBasedHeatSource()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-conducttoheatpoint" /><code>{"protected override void ConductToHeatPoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-conducttoheatpoint" /><code>{"protected override void ConductToHeatPoint()"}</code> |

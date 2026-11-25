@@ -18,11 +18,16 @@ Static helpers for finding location chunks by position or bounds, and for workin
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunklookup" /><code>{"private static "}<Link to="/game-api/types/alta-world/fastchunklookup">{"FastChunkLookup"}</Link>{" chunkLookup"}</code> |  |
-| <Link id="m-isdelaying" /><code>{"private static bool isDelaying"}</code> |  |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-chunklookup" /><code>{"private static "}<Link to="/game-api/types/alta-world/fastchunklookup">{"FastChunkLookup"}</Link>{" chunkLookup"}</code> |
+| <Link id="m-isdelaying" /><code>{"private static bool isDelaying"}</code> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+
+</details>
 
 ## Methods
 

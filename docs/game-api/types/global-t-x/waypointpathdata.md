@@ -19,13 +19,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WayPointPathData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WayPointPathData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-positions" /><code>{"Vector3[] positions"}</code> |  |
-| <Link id="m-rotations" /><code>{"Quaternion[] rotations"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-positions" /><code>{"Vector3[] positions"}</code> |
+| <Link id="m-rotations" /><code>{"Quaternion[] rotations"}</code> |

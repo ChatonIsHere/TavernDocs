@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MigrationDetailsResponse()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MigrationDetailsResponse()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hasmigrated" /><code>{"bool HasMigrated { get; set; }"}</code> |  |
-| <Link id="m-migrationdatetime" /><code>{"DateTime MigrationDateTime { get; set; }"}</code> |  |
-| <Link id="m-serverid" /><code>{"int ServerId { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hasmigrated" /><code>{"bool HasMigrated { get; set; }"}</code> |
+| <Link id="m-migrationdatetime" /><code>{"DateTime MigrationDateTime { get; set; }"}</code> |
+| <Link id="m-serverid" /><code>{"int ServerId { get; set; }"}</code> |
 
 ## Used in
 

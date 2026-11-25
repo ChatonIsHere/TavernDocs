@@ -17,22 +17,35 @@ A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FocusButton()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FocusButton()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-focuspuller" /><code>{"private "}<Link to="/game-api/types/alta-customization/focuspuller">{"FocusPuller"}</Link>{" focusPuller"}</code> |  |
-| <Link id="m-modetext" /><code>{"private string[] modeText"}</code> |  |
-| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-focuspuller" /><code>{"private "}<Link to="/game-api/types/alta-customization/focuspuller">{"FocusPuller"}</Link>{" focusPuller"}</code> |
+| <Link id="m-modetext" /><code>{"private string[] modeText"}</code> |
+| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
-| <Link id="m-onfocusmodechanged" /><code>{"private void OnFocusModeChanged("}<Link to="/game-api/types/alta-customization/focuspuller-focusmode">{"FocusPuller.FocusMode"}</Link>{" currentFocus)"}</code> |  |
-| <Link id="m-updatesettings" /><code>{"protected override void UpdateSettings("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |
+| <Link id="m-updatesettings" /><code>{"protected override void UpdateSettings("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-onfocusmodechanged" /><code>{"private void OnFocusModeChanged("}<Link to="/game-api/types/alta-customization/focuspuller-focusmode">{"FocusPuller.FocusMode"}</Link>{" currentFocus)"}</code> |
+
+</details>

@@ -17,9 +17,9 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EditableEquipmentSlot()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EditableEquipmentSlot()"}</code> |
 
 ## Used in
 

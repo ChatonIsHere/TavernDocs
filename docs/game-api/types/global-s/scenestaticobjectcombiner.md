@@ -17,29 +17,42 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SceneStaticObjectCombiner()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SceneStaticObjectCombiner()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-androidbakedcache" /><code>{"private GameObject androidBakedCache"}</code> |  |
-| <Link id="m-bakedcache" /><code>{"private GameObject bakedCache"}</code> |  |
-| <Link id="m-issettingtoterrainlayer" /><code>{"private bool isSettingToTerrainLayer"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androidbakedcache" /><code>{"private GameObject androidBakedCache"}</code> |
+| <Link id="m-bakedcache" /><code>{"private GameObject bakedCache"}</code> |
+| <Link id="m-issettingtoterrainlayer" /><code>{"private bool isSettingToTerrainLayer"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bakedcache-2" /><code>{"GameObject BakedCache { get; set; }"}</code> |  |
-| <Link id="m-issettingtoterrainlayer-2" /><code>{"protected override bool IsSettingToTerrainLayer { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bakedcache-2" /><code>{"GameObject BakedCache { get; set; }"}</code> |
+| <Link id="m-issettingtoterrainlayer-2" /><code>{"protected override bool IsSettingToTerrainLayer { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bake" /><code>{"override void Bake()"}</code> |  |
-| <Link id="m-instantiateprebakedobject" /><code>{"private void InstantiatePreBakedObject()"}</code> |  |
-| <Link id="m-removechildrenstaticcombiners" /><code>{"private void RemoveChildrenStaticCombiners()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-bake" /><code>{"override void Bake()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-instantiateprebakedobject" /><code>{"private void InstantiatePreBakedObject()"}</code> |
+| <Link id="m-removechildrenstaticcombiners" /><code>{"private void RemoveChildrenStaticCombiners()"}</code> |
+
+</details>

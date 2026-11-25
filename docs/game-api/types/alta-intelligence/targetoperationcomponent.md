@@ -20,9 +20,9 @@ Base component that supplies a `TargetOperation` for AI target scoring. Its obje
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected TargetOperationComponent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected TargetOperationComponent()"}</code> |
 
 ## Methods
 

@@ -16,31 +16,36 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EdgeFaceFlairs()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EdgeFaceFlairs()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-backbottom" /><code>{"private "}<Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" backBottom"}</code> |  |
-| <Link id="m-backmiddle" /><code>{"private "}<Link to="/game-api/types/alta-items/faceedgemiddle">{"FaceEdgeMiddle"}</Link>{" backMiddle"}</code> |  |
-| <Link id="m-backtop" /><code>{"private "}<Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" backTop"}</code> |  |
-| <Link id="m-frontbottom" /><code>{"private "}<Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" frontBottom"}</code> |  |
-| <Link id="m-frontmiddle" /><code>{"private "}<Link to="/game-api/types/alta-items/faceedgemiddle">{"FaceEdgeMiddle"}</Link>{" frontMiddle"}</code> |  |
-| <Link id="m-fronttop" /><code>{"private "}<Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" frontTop"}</code> |  |
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-backbottom" /><code>{"private "}<Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" backBottom"}</code> |
+| <Link id="m-backmiddle" /><code>{"private "}<Link to="/game-api/types/alta-items/faceedgemiddle">{"FaceEdgeMiddle"}</Link>{" backMiddle"}</code> |
+| <Link id="m-backtop" /><code>{"private "}<Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" backTop"}</code> |
+| <Link id="m-frontbottom" /><code>{"private "}<Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" frontBottom"}</code> |
+| <Link id="m-frontmiddle" /><code>{"private "}<Link to="/game-api/types/alta-items/faceedgemiddle">{"FaceEdgeMiddle"}</Link>{" frontMiddle"}</code> |
+| <Link id="m-fronttop" /><code>{"private "}<Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" frontTop"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-backbottom-2" /><code><Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" BackBottom { get; }"}</code> |  |
-| <Link id="m-backmiddle-2" /><code><Link to="/game-api/types/alta-items/faceedgemiddle">{"FaceEdgeMiddle"}</Link>{" BackMiddle { get; }"}</code> |  |
-| <Link id="m-backtop-2" /><code><Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" BackTop { get; }"}</code> |  |
-| <Link id="m-frontbottom-2" /><code><Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" FrontBottom { get; }"}</code> |  |
-| <Link id="m-frontmiddle-2" /><code><Link to="/game-api/types/alta-items/faceedgemiddle">{"FaceEdgeMiddle"}</Link>{" FrontMiddle { get; }"}</code> |  |
-| <Link id="m-fronttop-2" /><code><Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" FrontTop { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-backbottom-2" /><code><Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" BackBottom { get; }"}</code> |
+| <Link id="m-backmiddle-2" /><code><Link to="/game-api/types/alta-items/faceedgemiddle">{"FaceEdgeMiddle"}</Link>{" BackMiddle { get; }"}</code> |
+| <Link id="m-backtop-2" /><code><Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" BackTop { get; }"}</code> |
+| <Link id="m-frontbottom-2" /><code><Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" FrontBottom { get; }"}</code> |
+| <Link id="m-frontmiddle-2" /><code><Link to="/game-api/types/alta-items/faceedgemiddle">{"FaceEdgeMiddle"}</Link>{" FrontMiddle { get; }"}</code> |
+| <Link id="m-fronttop-2" /><code><Link to="/game-api/types/alta-items/faceedgecorner">{"FaceEdgeCorner"}</Link>{" FrontTop { get; }"}</code> |
 
 ## Used in
 

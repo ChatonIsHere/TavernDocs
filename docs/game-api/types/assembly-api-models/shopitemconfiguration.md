@@ -16,20 +16,20 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShopItemConfiguration()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShopItemConfiguration()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-discountpercentage" /><code>{"decimal? DiscountPercentage { get; set; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"string Identifier { get; set; }"}</code> |  |
-| <Link id="m-issupporteronlydiscount" /><code>{"bool IsSupporterOnlyDiscount { get; set; }"}</code> |  |
-| <Link id="m-itemsku" /><code>{"string ItemSku { get; set; }"}</code> |  |
-| <Link id="m-promo" /><code>{"string Promo { get; set; }"}</code> |  |
-| <Link id="m-shards" /><code>{"int? Shards { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-discountpercentage" /><code>{"decimal? DiscountPercentage { get; set; }"}</code> |
+| <Link id="m-identifier" /><code>{"string Identifier { get; set; }"}</code> |
+| <Link id="m-issupporteronlydiscount" /><code>{"bool IsSupporterOnlyDiscount { get; set; }"}</code> |
+| <Link id="m-itemsku" /><code>{"string ItemSku { get; set; }"}</code> |
+| <Link id="m-promo" /><code>{"string Promo { get; set; }"}</code> |
+| <Link id="m-shards" /><code>{"int? Shards { get; set; }"}</code> |
 
 ## Used in
 

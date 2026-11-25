@@ -16,18 +16,18 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NewPageArguments()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"NewPageArguments("}<Link to="/game-api/types/alta-items/pageinstance">{"PageInstance"}</Link>{" page, int spawnedIndex, bool isInserting)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NewPageArguments()"}</code> |
+| <Link id="m-ctor-2" /><code>{"NewPageArguments("}<Link to="/game-api/types/alta-items/pageinstance">{"PageInstance"}</Link>{" page, int spawnedIndex, bool isInserting)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-instance" /><code>{"uint instance"}</code> |  |
-| <Link id="m-isinserting" /><code>{"bool isInserting"}</code> |  |
-| <Link id="m-spawnedindex" /><code>{"int spawnedIndex"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-instance" /><code>{"uint instance"}</code> |
+| <Link id="m-isinserting" /><code>{"bool isInserting"}</code> |
+| <Link id="m-spawnedindex" /><code>{"int spawnedIndex"}</code> |
 
 ## Used in
 

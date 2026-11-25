@@ -19,21 +19,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StructureType()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StructureType()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tilesize" /><code>{"private Vector3 tileSize"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-tilesize" /><code>{"private Vector3 tileSize"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tilesize-2" /><code>{"Vector3 TileSize { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tilesize-2" /><code>{"Vector3 TileSize { get; }"}</code> |
 
 ## Used in
 

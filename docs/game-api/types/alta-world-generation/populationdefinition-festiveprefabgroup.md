@@ -17,23 +17,28 @@ A **private class** in `Root.Township`, `Alta.Populations`. Reach it through att
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FestivePrefabGroup()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FestivePrefabGroup()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-festivity" /><code>{"private "}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity"}</code> |  |
-| <Link id="m-prefabhashes" /><code>{"private uint[] prefabHashes"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-festivity" /><code>{"private "}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity"}</code> |
+| <Link id="m-prefabhashes" /><code>{"private uint[] prefabHashes"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> |  |
-| <Link id="m-prefabhashes-2" /><code>{"uint[] PrefabHashes { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> |
+| <Link id="m-prefabhashes-2" /><code>{"uint[] PrefabHashes { get; }"}</code> |
 
 ## Used in
 

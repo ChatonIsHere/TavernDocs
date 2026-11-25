@@ -20,9 +20,9 @@ Asset for something that happens when the local player enters or leaves a `Locat
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected ChunkEffect()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected ChunkEffect()"}</code> |
 
 ## Methods
 

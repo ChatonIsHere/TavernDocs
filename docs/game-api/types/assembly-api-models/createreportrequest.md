@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CreateReportRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CreateReportRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reporteduser" /><code>{"int ReportedUser { get; set; }"}</code> |  |
-| <Link id="m-server" /><code>{"int Server { get; set; }"}</code> |  |
-| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/reporttype">{"ReportType"}</Link>{" Type { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-reporteduser" /><code>{"int ReportedUser { get; set; }"}</code> |
+| <Link id="m-server" /><code>{"int Server { get; set; }"}</code> |
+| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/reporttype">{"ReportType"}</Link>{" Type { get; set; }"}</code> |
 
 ## Used in
 

@@ -17,12 +17,12 @@ A **static class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-foldersaveformat" /><code>{"const string FolderSaveFormat"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-foldersaveformat" /><code>{"const string FolderSaveFormat"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tofolderfriendlystring" /><code>{"static string ToFolderFriendlyString(DateTime dateTime)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tofolderfriendlystring" /><code>{"static string ToFolderFriendlyString(DateTime dateTime)"}</code> |

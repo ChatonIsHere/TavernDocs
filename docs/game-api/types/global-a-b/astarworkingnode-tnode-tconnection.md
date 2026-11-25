@@ -16,18 +16,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AStarWorkingNode(TNode node)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AStarWorkingNode(TNode node)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-aproximatetotalcost" /><code>{"float AproximateTotalCost { get; set; }"}</code> |  |
-| <Link id="m-lowestcost" /><code>{"float LowestCost { get; set; }"}</code> |  |
-| <Link id="m-node" /><code>{"TNode Node { get; set; }"}</code> |  |
-| <Link id="m-nodescount" /><code>{"int NodesCount { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-aproximatetotalcost" /><code>{"float AproximateTotalCost { get; set; }"}</code> |
+| <Link id="m-lowestcost" /><code>{"float LowestCost { get; set; }"}</code> |
+| <Link id="m-node" /><code>{"TNode Node { get; set; }"}</code> |
+| <Link id="m-nodescount" /><code>{"int NodesCount { get; set; }"}</code> |
 
 ## Used in
 

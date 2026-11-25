@@ -16,23 +16,28 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CookingTemperatureDuration(float temperature, float duration)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CookingTemperatureDuration(float temperature, float duration)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |  |
-| <Link id="m-temperature" /><code>{"private float temperature"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-duration" /><code>{"private float duration"}</code> |
+| <Link id="m-temperature" /><code>{"private float temperature"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> |  |
-| <Link id="m-temperature-2" /><code>{"float Temperature { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> |
+| <Link id="m-temperature-2" /><code>{"float Temperature { get; }"}</code> |
 
 ## Used in
 

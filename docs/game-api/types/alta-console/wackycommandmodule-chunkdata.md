@@ -17,12 +17,12 @@ A **private class** in `Root.Township`, `Alta.Console.Commands`. Reach it throug
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChunkData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunklootdata" /><code><Link to="/game-api/types/alta-console/wackycommandmodule-chunklootdata">{"WackyCommandModule.ChunkLootData"}</Link>{"[] chunkLootData"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chunklootdata" /><code><Link to="/game-api/types/alta-console/wackycommandmodule-chunklootdata">{"WackyCommandModule.ChunkLootData"}</Link>{"[] chunkLootData"}</code> |

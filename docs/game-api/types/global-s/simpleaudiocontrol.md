@@ -17,15 +17,15 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SimpleAudioControl()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SimpleAudioControl()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-play" /><code>{"virtual void Play(Event soundEvent, AkGameObj akGameObj, Action endAction = null, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-play" /><code>{"virtual void Play(Event soundEvent, AkGameObj akGameObj, Action endAction = null, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> |
 
 ## Used in
 

@@ -16,14 +16,27 @@ A **static class** in `Root.Township`, `Alta.UnityWrappers`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-skinnedmeshweights" /><code>{"private static SkinWeights SkinnedMeshWeights { get; set; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-skinnedmeshweights" /><code>{"private static SkinWeights SkinnedMeshWeights { get; set; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-initialize" /><code>{"static void Initialize()"}</code> |  |
-| <Link id="m-updateandroidsettings" /><code>{"private static void UpdateAndroidSettings()"}</code> |  |
-| <Link id="m-updatestandalonesettings" /><code>{"private static void UpdateStandaloneSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-initialize" /><code>{"static void Initialize()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-updateandroidsettings" /><code>{"private static void UpdateAndroidSettings()"}</code> |
+| <Link id="m-updatestandalonesettings" /><code>{"private static void UpdateStandaloneSettings()"}</code> |
+
+</details>

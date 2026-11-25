@@ -17,18 +17,23 @@ A **class** in `Root.Township`, `Alta.Enchantments`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DamageMultiplierApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, "}<Link to="/game-api/types/alta-crafting/damagemultiplier">{"DamageMultiplier"}</Link>{" settings)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DamageMultiplierApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, "}<Link to="/game-api/types/alta-crafting/damagemultiplier">{"DamageMultiplier"}</Link>{" settings)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invoke" /><code>{"override void Invoke(object data)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invoke" /><code>{"override void Invoke(object data)"}</code> |

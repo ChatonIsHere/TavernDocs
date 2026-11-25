@@ -17,10 +17,10 @@ An **interface** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dig" /><code>{"void Dig(float diggingDamage)"}</code> |  |
-| <Link id="m-diggingtoolhit" /><code>{"void DiggingToolHit()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dig" /><code>{"void Dig(float diggingDamage)"}</code> |
+| <Link id="m-diggingtoolhit" /><code>{"void DiggingToolHit()"}</code> |
 
 ## Used in
 

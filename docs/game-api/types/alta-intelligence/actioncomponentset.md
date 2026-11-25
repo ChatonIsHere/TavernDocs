@@ -20,15 +20,20 @@ A component whose children are `ActionComponent`s; it builds the set of actions 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActionComponentSet()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActionComponentSet()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actionset" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{"> actionSet"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-actionset" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{"> actionSet"}</code> |
+
+</details>
 
 ## Methods
 

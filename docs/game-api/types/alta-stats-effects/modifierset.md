@@ -20,31 +20,44 @@ A group applied and removed together (one per threshold level).
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ModifierSet("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ModifierSet("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modifiers" /><code>{"private List<"}<Link to="/game-api/types/alta-stats-effects/modifier">{"Modifier"}</Link>{"> modifiers"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-modifiers" /><code>{"private List<"}<Link to="/game-api/types/alta-stats-effects/modifier">{"Modifier"}</Link>{"> modifiers"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-manager" /><code><Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" Manager { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-manager" /><code><Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" Manager { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"void Add("}<Link to="/game-api/types/alta-stats-effects/modifier">{"Modifier"}</Link>{" modifier)"}</code> |  |
-| <Link id="m-apply" /><code>{"void Apply()"}</code> |  |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-stats-effects/modifier">{"Modifier"}</Link>{"> GetEnumerator()"}</code> |  |
-| <Link id="m-remove" /><code>{"void Remove()"}</code> |  |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"void Add("}<Link to="/game-api/types/alta-stats-effects/modifier">{"Modifier"}</Link>{" modifier)"}</code> |
+| <Link id="m-apply" /><code>{"void Apply()"}</code> |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-stats-effects/modifier">{"Modifier"}</Link>{"> GetEnumerator()"}</code> |
+| <Link id="m-remove" /><code>{"void Remove()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |
+
+</details>
 
 ## Used in
 

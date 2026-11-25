@@ -17,16 +17,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShopItemDetailedForUser()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShopItemDetailedForUser()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-finalprice" /><code>{"decimal FinalPrice { get; set; }"}</code> |  |
-| <Link id="m-isowned" /><code>{"bool IsOwned { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-finalprice" /><code>{"decimal FinalPrice { get; set; }"}</code> |
+| <Link id="m-isowned" /><code>{"bool IsOwned { get; set; }"}</code> |
 
 ## Used in
 

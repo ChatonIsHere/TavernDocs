@@ -16,9 +16,9 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-default" /><code>{"Default = 0"}</code> |  |
-| <Link id="m-member" /><code>{"Member = 1"}</code> |  |
-| <Link id="m-moderator" /><code>{"Moderator = 2"}</code> |  |
-| <Link id="m-owner" /><code>{"Owner = 7"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-default" /><code>{"Default = 0"}</code> |
+| <Link id="m-member" /><code>{"Member = 1"}</code> |
+| <Link id="m-moderator" /><code>{"Moderator = 2"}</code> |
+| <Link id="m-owner" /><code>{"Owner = 7"}</code> |

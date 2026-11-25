@@ -18,23 +18,36 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FallbackCamera()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FallbackCamera()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-localcamera" /><code>{"private Camera localCamera"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-localcamera" /><code>{"private Camera localCamera"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-create" /><code>{"static "}<Link to="/game-api/types/global-e-h/fallbackcamera">{"FallbackCamera"}</Link>{" Create()"}</code> |  |
-| <Link id="m-createcamera" /><code>{"private static Camera CreateCamera(GameObject gameObject)"}</code> |  |
-| <Link id="m-oncurrentplayercontrollerchanged" /><code>{"private void OnCurrentPlayerControllerChanged("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-updatecamera" /><code>{"private void UpdateCamera()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-create" /><code>{"static "}<Link to="/game-api/types/global-e-h/fallbackcamera">{"FallbackCamera"}</Link>{" Create()"}</code> |
+
+<details>
+<summary>4 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-createcamera" /><code>{"private static Camera CreateCamera(GameObject gameObject)"}</code> |
+| <Link id="m-oncurrentplayercontrollerchanged" /><code>{"private void OnCurrentPlayerControllerChanged("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-updatecamera" /><code>{"private void UpdateCamera()"}</code> |
+
+</details>

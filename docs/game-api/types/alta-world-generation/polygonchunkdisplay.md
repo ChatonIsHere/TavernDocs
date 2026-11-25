@@ -18,33 +18,51 @@ A **class** in `Root.Township`, `Alta.Caves.Displays`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PolygonChunkDisplay()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PolygonChunkDisplay()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> |  |
-| <Link id="m-lowerlimit" /><code>{"private float lowerLimit"}</code> |  |
-| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> |  |
-| <Link id="m-minimumvertexcount" /><code>{"private const int MinimumVertexCount"}</code> |  |
-| <Link id="m-scale" /><code>{"private float scale"}</code> |  |
-| <Link id="m-upperlimit" /><code>{"private float upperLimit"}</code> |  |
-| <Link id="m-yindex" /><code>{"private int yIndex"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> |
+| <Link id="m-lowerlimit" /><code>{"private float lowerLimit"}</code> |
+| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> |
+| <Link id="m-minimumvertexcount" /><code>{"private const int MinimumVertexCount"}</code> |
+| <Link id="m-scale" /><code>{"private float scale"}</code> |
+| <Link id="m-upperlimit" /><code>{"private float upperLimit"}</code> |
+| <Link id="m-yindex" /><code>{"private int yIndex"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-renderer" /><code>{"private MeshRenderer Renderer { get; set; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-renderer" /><code>{"private MeshRenderer Renderer { get; set; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getdepth" /><code>{"float GetDepth("}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int x, int z)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-render" /><code>{"override IEnumerator Render() (iterator)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getdepth" /><code>{"float GetDepth("}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int x, int z)"}</code> |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+| <Link id="m-render" /><code>{"override IEnumerator Render() (iterator)"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>

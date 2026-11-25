@@ -22,17 +22,22 @@ Server: one player's postbox contents, saved items waiting to be taken out. Get 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerPostboxStorage()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerPostboxStorage()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isnew" /><code>{"private bool isNew"}</code> |  |
-| <Link id="m-latest" /><code>{"private "}<Link to="/game-api/types/alta-utilities/chunksaveformat-version">{"ChunkSaveFormat.Version"}</Link>{" latest"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isnew" /><code>{"private bool isNew"}</code> |
+| <Link id="m-latest" /><code>{"private "}<Link to="/game-api/types/alta-utilities/chunksaveformat-version">{"ChunkSaveFormat.Version"}</Link>{" latest"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+
+</details>
 
 ## Events
 
@@ -51,7 +56,15 @@ Server: one player's postbox contents, saved items waiting to be taken out. Get 
 | <Link id="m-pop" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Pop()"}</code> | Spawns the oldest item as a server entity and removes it from the postbox. Returns null if empty or if spawning failed. |
 | <Link id="m-push" /><code>{"void Push("}<Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" content)"}</code> | Adds an item, from a saved object or a live entity. A live entity is saved without position and destroyed unless told not to. |
 | <Link id="m-push-2" /><code>{"void Push("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isDestroying = true)"}</code> | Adds an item, from a saved object or a live entity. A live entity is saved without position and destroyed unless told not to. |
-| <Link id="m-readasync" /><code>{"private async Task<"}<Link to="/game-api/types/global-p/playerpostboxstoragefileformat">{"PlayerPostboxStorageFileFormat"}</Link>{"> ReadAsync()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-readasync" /><code>{"private async Task<"}<Link to="/game-api/types/global-p/playerpostboxstoragefileformat">{"PlayerPostboxStorageFileFormat"}</Link>{"> ReadAsync()"}</code> |
+
+</details>
 
 ## Used in
 

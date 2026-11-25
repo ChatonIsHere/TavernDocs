@@ -18,32 +18,45 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DebuggingCollectionEnumerator(IEnumerator<TInnerType> enumerator, Action enumerationFinishedCallback)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DebuggingCollectionEnumerator(IEnumerator<TInnerType> enumerator, Action enumerationFinishedCallback)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-enumerationfinishedcallback" /><code>{"private Action enumerationFinishedCallback"}</code> |  |
-| <Link id="m-internalenumerator" /><code>{"private IEnumerator<TInnerType> internalEnumerator"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-enumerationfinishedcallback" /><code>{"private Action enumerationFinishedCallback"}</code> |
+| <Link id="m-internalenumerator" /><code>{"private IEnumerator<TInnerType> internalEnumerator"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-current" /><code>{"TInnerType Current { get; }"}</code> |  |
-| <Link id="m-isenumerating" /><code>{"bool IsEnumerating { get; private set; }"}</code> |  |
-| <Link id="m-system-collections-ienumerator-current" /><code>{"private object System.Collections.IEnumerator.Current { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-current" /><code>{"TInnerType Current { get; }"}</code> |
+| <Link id="m-isenumerating" /><code>{"bool IsEnumerating { get; private set; }"}</code> |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-system-collections-ienumerator-current" /><code>{"private object System.Collections.IEnumerator.Current { get; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-movenext" /><code>{"bool MoveNext()"}</code> |  |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
+| <Link id="m-movenext" /><code>{"bool MoveNext()"}</code> |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> |
 
 ## Used in
 

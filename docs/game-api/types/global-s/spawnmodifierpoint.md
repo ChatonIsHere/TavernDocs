@@ -20,9 +20,9 @@ Base for spawn modifiers in forest generation that work on point edges.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected SpawnModifierPoint()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected SpawnModifierPoint()"}</code> |
 
 ## Used in
 

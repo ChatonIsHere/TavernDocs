@@ -17,47 +17,60 @@ A **class** in `Root.Township`, `Features.Gameplay.Progression.QuestMarkers`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"QuestMarker()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"QuestMarker()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-distanceheightcurvesquared" /><code>{"private AnimationCurve distanceHeightCurveSquared"}</code> |  |
-| <Link id="m-distancescalingcurvesquared" /><code>{"private AnimationCurve distanceScalingCurveSquared"}</code> |  |
-| <Link id="m-distancesqr" /><code>{"private float distanceSqr"}</code> |  |
-| <Link id="m-height" /><code>{"private float height"}</code> |  |
-| <Link id="m-heighttarget" /><code>{"private float heightTarget"}</code> |  |
-| <Link id="m-interpolationspeed" /><code>{"private float interpolationSpeed"}</code> |  |
-| <Link id="m-lookdirection" /><code>{"private Vector3 lookDirection"}</code> |  |
-| <Link id="m-markerlocalposition" /><code>{"private Vector3 markerLocalPosition"}</code> |  |
-| <Link id="m-markerposition" /><code>{"private Vector3 markerPosition"}</code> |  |
-| <Link id="m-markertransform" /><code>{"private Transform markerTransform"}</code> |  |
-| <Link id="m-ratelimiter" /><code>{"private "}<Link to="/game-api/types/assembly-other/ratelimiter">{"RateLimiter"}</Link>{" rateLimiter"}</code> |  |
-| <Link id="m-scale" /><code>{"private float scale"}</code> |  |
-| <Link id="m-scaletarget" /><code>{"private float scaleTarget"}</code> |  |
-| <Link id="m-targettickspersecond" /><code>{"private int targetTicksPerSecond"}</code> |  |
-| <Link id="m-visibilityconditions" /><code>{"private Object[] visibilityConditions"}</code> |  |
+<details>
+<summary>15 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-distanceheightcurvesquared" /><code>{"private AnimationCurve distanceHeightCurveSquared"}</code> |
+| <Link id="m-distancescalingcurvesquared" /><code>{"private AnimationCurve distanceScalingCurveSquared"}</code> |
+| <Link id="m-distancesqr" /><code>{"private float distanceSqr"}</code> |
+| <Link id="m-height" /><code>{"private float height"}</code> |
+| <Link id="m-heighttarget" /><code>{"private float heightTarget"}</code> |
+| <Link id="m-interpolationspeed" /><code>{"private float interpolationSpeed"}</code> |
+| <Link id="m-lookdirection" /><code>{"private Vector3 lookDirection"}</code> |
+| <Link id="m-markerlocalposition" /><code>{"private Vector3 markerLocalPosition"}</code> |
+| <Link id="m-markerposition" /><code>{"private Vector3 markerPosition"}</code> |
+| <Link id="m-markertransform" /><code>{"private Transform markerTransform"}</code> |
+| <Link id="m-ratelimiter" /><code>{"private "}<Link to="/game-api/types/assembly-other/ratelimiter">{"RateLimiter"}</Link>{" rateLimiter"}</code> |
+| <Link id="m-scale" /><code>{"private float scale"}</code> |
+| <Link id="m-scaletarget" /><code>{"private float scaleTarget"}</code> |
+| <Link id="m-targettickspersecond" /><code>{"private int targetTicksPerSecond"}</code> |
+| <Link id="m-visibilityconditions" /><code>{"private Object[] visibilityConditions"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-updatemarker" /><code>{"void UpdateMarker(Vector3 newPlayerHeadPosition)"}</code> |  |
-| <Link id="m-allconditionsmet" /><code>{"private void AllConditionsMet(bool areAllConditionsMet)"}</code> |  |
-| <Link id="m-areallconditionsmet" /><code>{"private bool AreAllConditionsMet()"}</code> |  |
-| <Link id="m-conditionchanged" /><code>{"private void ConditionChanged()"}</code> |  |
-| <Link id="m-listenforconditionchanges" /><code>{"private void ListenForConditionChanges()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-stoplisteningforcompletionchanges" /><code>{"private void StopListeningForCompletionChanges()"}</code> |  |
-| <Link id="m-updatelookposition" /><code>{"private void UpdateLookPosition(Vector3 newPlayerHeadPosition)"}</code> |  |
-| <Link id="m-updatemarkerheight" /><code>{"private void UpdateMarkerHeight()"}</code> |  |
-| <Link id="m-updatemarkerscale" /><code>{"private void UpdateMarkerScale()"}</code> |  |
-| <Link id="m-updatemarkeryrotationtolookatplayer" /><code>{"private void UpdateMarkerYRotationToLookAtPlayer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-updatemarker" /><code>{"void UpdateMarker(Vector3 newPlayerHeadPosition)"}</code> |
+
+<details>
+<summary>12 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-allconditionsmet" /><code>{"private void AllConditionsMet(bool areAllConditionsMet)"}</code> |
+| <Link id="m-areallconditionsmet" /><code>{"private bool AreAllConditionsMet()"}</code> |
+| <Link id="m-conditionchanged" /><code>{"private void ConditionChanged()"}</code> |
+| <Link id="m-listenforconditionchanges" /><code>{"private void ListenForConditionChanges()"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-stoplisteningforcompletionchanges" /><code>{"private void StopListeningForCompletionChanges()"}</code> |
+| <Link id="m-updatelookposition" /><code>{"private void UpdateLookPosition(Vector3 newPlayerHeadPosition)"}</code> |
+| <Link id="m-updatemarkerheight" /><code>{"private void UpdateMarkerHeight()"}</code> |
+| <Link id="m-updatemarkerscale" /><code>{"private void UpdateMarkerScale()"}</code> |
+| <Link id="m-updatemarkeryrotationtolookatplayer" /><code>{"private void UpdateMarkerYRotationToLookAtPlayer()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -21,6 +21,11 @@ Status `needs_password`: the server has a password and the join gave none.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> |  |
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> |
+
+</details>

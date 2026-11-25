@@ -22,18 +22,23 @@ A named world generation value, such as prosperity, elevation or slope, that bio
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BiomeAttribute()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BiomeAttribute()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-defaultmaximum" /><code>{"private float defaultMaximum"}</code> |  |
-| <Link id="m-defaultminimum" /><code>{"private float defaultMinimum"}</code> |  |
-| <Link id="m-extraperlayer" /><code>{"private float extraPerLayer"}</code> |  |
-| <Link id="m-isprocedural" /><code>{"private bool isProcedural"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-defaultmaximum" /><code>{"private float defaultMaximum"}</code> |
+| <Link id="m-defaultminimum" /><code>{"private float defaultMinimum"}</code> |
+| <Link id="m-extraperlayer" /><code>{"private float extraPerLayer"}</code> |
+| <Link id="m-isprocedural" /><code>{"private bool isProcedural"}</code> |
+
+</details>
 
 ## Properties
 

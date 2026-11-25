@@ -16,24 +16,24 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ShutdownReason(string reason, bool isExpected)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"ShutdownReason(string reason)"}</code> |  |
-| <Link id="m-ctor-3" /><code>{"ShutdownReason()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ShutdownReason(string reason, bool isExpected)"}</code> |
+| <Link id="m-ctor-2" /><code>{"ShutdownReason(string reason)"}</code> |
+| <Link id="m-ctor-3" /><code>{"ShutdownReason()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isexpected" /><code>{"bool IsExpected { get; set; }"}</code> |  |
-| <Link id="m-reason" /><code>{"string Reason { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isexpected" /><code>{"bool IsExpected { get; set; }"}</code> |
+| <Link id="m-reason" /><code>{"string Reason { get; set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
 
 ## Used in
 

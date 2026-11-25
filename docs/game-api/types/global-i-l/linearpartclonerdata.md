@@ -19,15 +19,15 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"LinearPartClonerData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LinearPartClonerData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-count" /><code>{"int count"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-count" /><code>{"int count"}</code> |
 
 ## Used in
 

@@ -20,15 +20,20 @@ Wraps a Json.NET `IValueProvider` so values are clamped to a range both when rea
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"JsonRangeValueProviderFilter(IValueProvider baseProvider)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JsonRangeValueProviderFilter(IValueProvider baseProvider)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-baseprovider" /><code>{"private IValueProvider baseProvider"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-baseprovider" /><code>{"private IValueProvider baseProvider"}</code> |
+
+</details>
 
 ## Methods
 

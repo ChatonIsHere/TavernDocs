@@ -16,17 +16,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AccountLinkData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AccountLinkData()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-identifier" /><code>{"ulong Identifier { get; set; }"}</code> |  |
-| <Link id="m-region" /><code><Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-userproof" /><code>{"string UserProof { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-identifier" /><code>{"ulong Identifier { get; set; }"}</code> |
+| <Link id="m-region" /><code><Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" { get; set; }"}</code> |
+| <Link id="m-userproof" /><code>{"string UserProof { get; set; }"}</code> |
 
 ## Used in
 

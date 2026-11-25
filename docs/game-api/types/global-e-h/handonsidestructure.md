@@ -18,20 +18,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HandOnSideStructure()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HandOnSideStructure()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxheightdifferencefromhead" /><code>{"private float maxHeightDifferenceFromHead"}</code> |  |
-| <Link id="m-minanglefromforward" /><code>{"private float minAngleFromForward"}</code> |  |
-| <Link id="m-minhorizontaldistancefromhead" /><code>{"private float minHorizontalDistanceFromHead"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-maxheightdifferencefromhead" /><code>{"private float maxHeightDifferenceFromHead"}</code> |
+| <Link id="m-minanglefromforward" /><code>{"private float minAngleFromForward"}</code> |
+| <Link id="m-minhorizontaldistancefromhead" /><code>{"private float minHorizontalDistanceFromHead"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isinpositioninternal" /><code>{"protected override bool IsInPositionInternal("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isinpositioninternal" /><code>{"protected override bool IsInPositionInternal("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> |

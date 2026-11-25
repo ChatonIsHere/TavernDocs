@@ -17,22 +17,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AltaPxrManagerCameraController()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AltaPxrManagerCameraController()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-eyecamerafieldinfo" /><code>{"private PropertyInfo eyeCameraFieldInfo"}</code> |  |
-| <Link id="m-eyecamerafieldname" /><code>{"private const string EyeCameraFieldName"}</code> |  |
-| <Link id="m-pxrmanager" /><code>{"private MonoBehaviour pxrManager"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-eyecamerafieldinfo" /><code>{"private PropertyInfo eyeCameraFieldInfo"}</code> |
+| <Link id="m-eyecamerafieldname" /><code>{"private const string EyeCameraFieldName"}</code> |
+| <Link id="m-pxrmanager" /><code>{"private MonoBehaviour pxrManager"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cacheeyecamerafieldinfo" /><code>{"private void CacheEyeCameraFieldInfo()"}</code> |  |
-| <Link id="m-onplayercontrollerchanged" /><code>{"private void OnPlayerControllerChanged("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-cacheeyecamerafieldinfo" /><code>{"private void CacheEyeCameraFieldInfo()"}</code> |
+| <Link id="m-onplayercontrollerchanged" /><code>{"private void OnPlayerControllerChanged("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+
+</details>

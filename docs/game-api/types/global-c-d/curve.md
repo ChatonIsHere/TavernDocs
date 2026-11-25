@@ -22,15 +22,20 @@ A hashed asset wrapping an `AnimationCurve`, stored under `StatDefinition/Curves
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Curve()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Curve()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> |
+
+</details>
 
 ## Methods
 

@@ -17,21 +17,26 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SilenceAnimationEvents()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SilenceAnimationEvents()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-islogging" /><code>{"private bool isLogging"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-islogging" /><code>{"private bool isLogging"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-actionin" /><code>{"void ActionIn()"}</code> |  |
-| <Link id="m-actionout" /><code>{"void ActionOut()"}</code> |  |
-| <Link id="m-animationended" /><code>{"void AnimationEnded()"}</code> |  |
-| <Link id="m-playsound" /><code>{"void PlaySound()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-actionin" /><code>{"void ActionIn()"}</code> |
+| <Link id="m-actionout" /><code>{"void ActionOut()"}</code> |
+| <Link id="m-animationended" /><code>{"void AnimationEnded()"}</code> |
+| <Link id="m-playsound" /><code>{"void PlaySound()"}</code> |

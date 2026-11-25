@@ -19,9 +19,9 @@ Tuning values for a schmeechee (mushroom critter): floor checks, push and turn f
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MushroomCritter()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MushroomCritter()"}</code> |
 
 ## Fields
 
@@ -60,10 +60,15 @@ Tuning values for a schmeechee (mushroom critter): floor checks, push and turn f
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+
+</details>
 
 ## Used in
 

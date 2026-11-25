@@ -22,18 +22,23 @@ A ScriptableObject that defines a network message channel: reliable or not, qual
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ConnectionChannel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConnectionChannel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isreliable" /><code>{"private bool isReliable"}</code> |  |
-| <Link id="m-maximumsendinterval" /><code>{"private float maximumSendInterval"}</code> |  |
-| <Link id="m-qualityofservice" /><code>{"private QosType qualityOfService"}</code> |  |
-| <Link id="m-receivertype" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionreceivertype">{"ConnectionReceiverType"}</Link>{" receiverType"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isreliable" /><code>{"private bool isReliable"}</code> |
+| <Link id="m-maximumsendinterval" /><code>{"private float maximumSendInterval"}</code> |
+| <Link id="m-qualityofservice" /><code>{"private QosType qualityOfService"}</code> |
+| <Link id="m-receivertype" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionreceivertype">{"ConnectionReceiverType"}</Link>{" receiverType"}</code> |
+
+</details>
 
 ## Properties
 

@@ -17,11 +17,11 @@ A **private struct** in `Root.Township`, `Features.Gameplay.ClimbingTower`. Reac
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-gaugeheight" /><code>{"float GaugeHeight"}</code> |  |
-| <Link id="m-orbindextounlockrune" /><code>{"uint OrbIndexToUnlockRune"}</code> |  |
-| <Link id="m-runeparticles" /><code>{"GameObject RuneParticles"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-gaugeheight" /><code>{"float GaugeHeight"}</code> |
+| <Link id="m-orbindextounlockrune" /><code>{"uint OrbIndexToUnlockRune"}</code> |
+| <Link id="m-runeparticles" /><code>{"GameObject RuneParticles"}</code> |
 
 ## Used in
 

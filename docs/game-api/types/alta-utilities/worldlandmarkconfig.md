@@ -16,19 +16,24 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"WorldLandmarkConfig()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"WorldLandmarkConfig()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-androidchunkloaddistance" /><code>{"private int androidChunkLoadDistance"}</code> |  |
-| <Link id="m-chunkloaddistance" /><code>{"private int chunkLoadDistance"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-androidchunkloaddistance" /><code>{"private int androidChunkLoadDistance"}</code> |
+| <Link id="m-chunkloaddistance" /><code>{"private int chunkLoadDistance"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunkloaddistance-2" /><code>{"int ChunkLoadDistance { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chunkloaddistance-2" /><code>{"int ChunkLoadDistance { get; }"}</code> |

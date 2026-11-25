@@ -16,13 +16,13 @@ An **enum** in `Root.Township`, no namespace.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-coordinated" /><code>{"Coordinated = 3"}</code> |  |
-| <Link id="m-deeplink" /><code>{"Deeplink = 4"}</code> |  |
-| <Link id="m-invite" /><code>{"Invite = 2"}</code> |  |
-| <Link id="m-normal" /><code>{"Normal = 1"}</code> |  |
-| <Link id="m-unknown" /><code>{"Unknown = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-coordinated" /><code>{"Coordinated = 3"}</code> |
+| <Link id="m-deeplink" /><code>{"Deeplink = 4"}</code> |
+| <Link id="m-invite" /><code>{"Invite = 2"}</code> |
+| <Link id="m-normal" /><code>{"Normal = 1"}</code> |
+| <Link id="m-unknown" /><code>{"Unknown = 0"}</code> |
 
 ## Used in
 

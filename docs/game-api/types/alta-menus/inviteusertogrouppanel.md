@@ -17,27 +17,40 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InviteUserToGroupPanel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InviteUserToGroupPanel()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-elementtemplate" /><code>{"private "}<Link to="/game-api/types/alta-menus/listelementwithbutton">{"ListElementWithButton"}</Link>{" elementTemplate"}</code> |  |
-| <Link id="m-uilist" /><code>{"private "}<Link to="/game-api/types/alta-menus/uilist">{"UIList"}</Link>{" uiList"}</code> |  |
-| <Link id="m-user" /><code>{"private "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-elementtemplate" /><code>{"private "}<Link to="/game-api/types/alta-menus/listelementwithbutton">{"ListElementWithButton"}</Link>{" elementTemplate"}</code> |
+| <Link id="m-uilist" /><code>{"private "}<Link to="/game-api/types/alta-menus/uilist">{"UIList"}</Link>{" uiList"}</code> |
+| <Link id="m-user" /><code>{"private "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-invitetogroup" /><code>{"void InviteToGroup("}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" group)"}</code> |  |
-| <Link id="m-refreshdata" /><code>{"override async void RefreshData()"}</code> |  |
-| <Link id="m-setupforuser" /><code>{"void SetupForUser("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user)"}</code> |  |
-| <Link id="m-finishinvite" /><code>{"private async void FinishInvite("}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" group)"}</code> |  |
-| <Link id="m-setupgroupslist" /><code>{"private async Task SetupGroupsList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-invitetogroup" /><code>{"void InviteToGroup("}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" group)"}</code> |
+| <Link id="m-refreshdata" /><code>{"override async void RefreshData()"}</code> |
+| <Link id="m-setupforuser" /><code>{"void SetupForUser("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user)"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-finishinvite" /><code>{"private async void FinishInvite("}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" group)"}</code> |
+| <Link id="m-setupgroupslist" /><code>{"private async Task SetupGroupsList()"}</code> |
+
+</details>
 
 ## Used in
 

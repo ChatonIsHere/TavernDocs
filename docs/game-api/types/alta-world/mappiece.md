@@ -22,16 +22,21 @@ One piece of a map that players discover: a sprite and where it sits on the map.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MapPiece()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MapPiece()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-offset" /><code>{"private Vector2 offset"}</code> |  |
-| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-offset" /><code>{"private Vector2 offset"}</code> |
+| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> |
+
+</details>
 
 ## Properties
 

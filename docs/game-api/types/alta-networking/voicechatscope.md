@@ -16,11 +16,11 @@ An **enum** in `Root.Township`, `Alta.Voice`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-everyone" /><code>{"Everyone = 2"}</code> |  |
-| <Link id="m-friends" /><code>{"Friends = 1"}</code> |  |
-| <Link id="m-noone" /><code>{"Noone = 0"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-everyone" /><code>{"Everyone = 2"}</code> |
+| <Link id="m-friends" /><code>{"Friends = 1"}</code> |
+| <Link id="m-noone" /><code>{"Noone = 0"}</code> |
 
 ## Used in
 

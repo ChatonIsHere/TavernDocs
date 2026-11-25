@@ -20,9 +20,9 @@ Base for a logic component that listens to one logic value sender and reacts whe
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected LogicValueReceiver()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected LogicValueReceiver()"}</code> |
 
 ## Fields
 
@@ -43,9 +43,17 @@ Base for a logic component that listens to one logic value sender and reacts whe
 | --- | --- |
 | <Link id="m-editorpresave" /><code>{"void EditorPreSave("}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" manager)"}</code> | Editor: sets the logic manager and points the sender input at it before saving. |
 | <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: subscribes to the sender, finds the logic manager (parent or global) and calls `ValueUpdated` once. |
-| <Link id="m-attemptlink" /><code>{"private bool Alta.Logic.ILogicValueLinkReceiver.AttemptLink("}<Link to="/game-api/types/alta-items/logicvaluesender">{"LogicValueSender"}</Link>{" sender)"}</code> |  |
-| <Link id="m-findlogicmanager" /><code>{"private void FindLogicManager()"}</code> |  |
 | <Link id="m-loadcontext" /><code>{"protected void LoadContext()"}</code> | Sets `LogicManager` to `GlobalLogicManager.Current`. |
 | <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> | Cleans up the sender input subscription. |
 | <Link id="m-ondrawgizmos" /><code>{"protected virtual void OnDrawGizmos()"}</code> | Draws the link to the sender in the editor. |
 | <Link id="m-valueupdated" /><code>{"protected abstract void ValueUpdated()"}</code> | Called when the sender's value changes, and once at server start. Implement the reaction here. |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-attemptlink" /><code>{"private bool Alta.Logic.ILogicValueLinkReceiver.AttemptLink("}<Link to="/game-api/types/alta-items/logicvaluesender">{"LogicValueSender"}</Link>{" sender)"}</code> |
+| <Link id="m-findlogicmanager" /><code>{"private void FindLogicManager()"}</code> |
+
+</details>

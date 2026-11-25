@@ -17,27 +17,32 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactorStatParameters()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactorStatParameters()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-impactmodifier" /><code>{"private "}<Link to="/game-api/types/alta-items/impactmodifiercomponent">{"ImpactModifierComponent"}</Link>{" impactModifier"}</code> |  |
-| <Link id="m-impactmodifiervaluemultiplier" /><code>{"private float impactModifierValueMultiplier"}</code> |  |
-| <Link id="m-istriggeredbyothers" /><code>{"private bool isTriggeredByOthers"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-impactmodifier" /><code>{"private "}<Link to="/game-api/types/alta-items/impactmodifiercomponent">{"ImpactModifierComponent"}</Link>{" impactModifier"}</code> |
+| <Link id="m-impactmodifiervaluemultiplier" /><code>{"private float impactModifierValueMultiplier"}</code> |
+| <Link id="m-istriggeredbyothers" /><code>{"private bool isTriggeredByOthers"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-impactmodifier-2" /><code><Link to="/game-api/types/alta-items/impactmodifiercomponent">{"ImpactModifierComponent"}</Link>{" ImpactModifier { get; }"}</code> |  |
-| <Link id="m-impactmodifiervaluemultiplier-2" /><code>{"float ImpactModifierValueMultiplier { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-impactmodifier-2" /><code><Link to="/game-api/types/alta-items/impactmodifiercomponent">{"ImpactModifierComponent"}</Link>{" ImpactModifier { get; }"}</code> |
+| <Link id="m-impactmodifiervaluemultiplier-2" /><code>{"float ImpactModifierValueMultiplier { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-confirmsettings" /><code>{"bool ConfirmSettings("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" otherInteractor, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" interactor)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-confirmsettings" /><code>{"bool ConfirmSettings("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" otherInteractor, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" interactor)"}</code> |

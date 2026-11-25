@@ -18,21 +18,26 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"internal OutgoingGroupJoinRequest("}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api, "}<Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" group)"}</code> |  |
+<details>
+<summary>1 private and internal constructor</summary>
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"internal OutgoingGroupJoinRequest("}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api, "}<Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" group)"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-groupinfo" /><code><Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-groupinfo" /><code><Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-revoke" /><code>{"override Task Revoke()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-revoke" /><code>{"override Task Revoke()"}</code> |
 
 ## Used in
 

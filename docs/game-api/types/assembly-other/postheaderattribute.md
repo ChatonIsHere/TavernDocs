@@ -17,12 +17,12 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PostHeaderAttribute(string headerText)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PostHeaderAttribute(string headerText)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-headertext" /><code>{"string HeaderText { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-headertext" /><code>{"string HeaderText { get; }"}</code> |

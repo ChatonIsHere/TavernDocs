@@ -20,9 +20,9 @@ A whitelist or blacklist in `users.json`. A player matches on any of their name,
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ListConfig()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ListConfig()"}</code> |
 
 ## Properties
 
@@ -31,7 +31,15 @@ A whitelist or blacklist in `users.json`. A player matches on any of their name,
 | <Link id="m-ips" /><code>{"List<string> Ips { get; set; }"}</code> | IP addresses. On the whitelist, an address also lets in accounts registered from it. |
 | <Link id="m-userids" /><code>{"List<ulong> UserIds { get; set; }"}</code> | User ids. |
 | <Link id="m-usernames" /><code>{"List<string> Usernames { get; set; }"}</code> | Usernames, compared without case. |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |  |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |
+
+</details>
 
 ## Used in
 

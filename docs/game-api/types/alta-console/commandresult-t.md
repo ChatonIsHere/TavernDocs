@@ -21,21 +21,21 @@ For an object result, `Log()` serializes it to JSON and, in the same line, copie
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected CommandResult("}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"protected CommandResult(string resultString, "}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected CommandResult("}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> |
+| <Link id="m-ctor-2" /><code>{"protected CommandResult(string resultString, "}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-result" /><code>{"T Result { get; set; }"}</code> |  |
-| <Link id="m-resultstring" /><code>{"override string ResultString { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-result" /><code>{"T Result { get; set; }"}</code> |
+| <Link id="m-resultstring" /><code>{"override string ResultString { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-log" /><code>{"override void Log()"}</code> |  |
-| <Link id="m-logobjectsvaluesastable" /><code>{"void LogObjectsValuesAsTable()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-log" /><code>{"override void Log()"}</code> |
+| <Link id="m-logobjectsvaluesastable" /><code>{"void LogObjectsValuesAsTable()"}</code> |

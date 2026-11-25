@@ -17,23 +17,28 @@ A **class** in `Root.Township`, `Features`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PooledParticleSystem()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PooledParticleSystem()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |  |
-| <Link id="m-shouldautodisable" /><code>{"private bool shouldAutoDisable"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-duration" /><code>{"private float duration"}</code> |
+| <Link id="m-shouldautodisable" /><code>{"private bool shouldAutoDisable"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> |  |
-| <Link id="m-shouldautodisable-2" /><code>{"bool ShouldAutoDisable { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> |
+| <Link id="m-shouldautodisable-2" /><code>{"bool ShouldAutoDisable { get; }"}</code> |
 
 ## Used in
 

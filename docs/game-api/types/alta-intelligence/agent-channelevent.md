@@ -17,23 +17,28 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ChannelEvent()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ChannelEvent()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-eventfired" /><code>{"private UnityEvent eventFired"}</code> |  |
-| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-eventfired" /><code>{"private UnityEvent eventFired"}</code> |
+| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-eventfired-2" /><code>{"UnityEvent EventFired { get; }"}</code> |  |
-| <Link id="m-isnetworked-2" /><code>{"bool IsNetworked { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-eventfired-2" /><code>{"UnityEvent EventFired { get; }"}</code> |
+| <Link id="m-isnetworked-2" /><code>{"bool IsNetworked { get; }"}</code> |
 
 ## Used in
 

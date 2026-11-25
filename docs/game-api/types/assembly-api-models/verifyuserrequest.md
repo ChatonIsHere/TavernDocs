@@ -16,16 +16,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VerifyUserRequest(string verificationToken)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"VerifyUserRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VerifyUserRequest(string verificationToken)"}</code> |
+| <Link id="m-ctor-2" /><code>{"VerifyUserRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-verificationtoken" /><code>{"string VerificationToken { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-verificationtoken" /><code>{"string VerificationToken { get; set; }"}</code> |
 
 ## Used in
 

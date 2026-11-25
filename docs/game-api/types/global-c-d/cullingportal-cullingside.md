@@ -17,28 +17,41 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CullingSide(Transform cachedTransform, "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer, Bounds bounds)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CullingSide(Transform cachedTransform, "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer, Bounds bounds)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bounds" /><code>{"private readonly Bounds bounds"}</code> |  |
-| <Link id="m-cachedtransform" /><code>{"private readonly Transform cachedTransform"}</code> |  |
-| <Link id="m-isvisible" /><code>{"private bool isVisible"}</code> |  |
-| <Link id="m-renderers" /><code>{"private List<Renderer> renderers"}</code> |  |
-| <Link id="m-streamer" /><code>{"private readonly "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer"}</code> |  |
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bounds" /><code>{"private readonly Bounds bounds"}</code> |
+| <Link id="m-cachedtransform" /><code>{"private readonly Transform cachedTransform"}</code> |
+| <Link id="m-isvisible" /><code>{"private bool isVisible"}</code> |
+| <Link id="m-renderers" /><code>{"private List<Renderer> renderers"}</code> |
+| <Link id="m-streamer" /><code>{"private readonly "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cull" /><code>{"void Cull()"}</code> |  |
-| <Link id="m-uncull" /><code>{"void Uncull()"}</code> |  |
-| <Link id="m-clear" /><code>{"private void Clear()"}</code> |  |
-| <Link id="m-populaterendererslist" /><code>{"private void PopulateRenderersList()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cull" /><code>{"void Cull()"}</code> |
+| <Link id="m-uncull" /><code>{"void Uncull()"}</code> |
+
+<details>
+<summary>2 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-clear" /><code>{"private void Clear()"}</code> |
+| <Link id="m-populaterendererslist" /><code>{"private void PopulateRenderersList()"}</code> |
+
+</details>
 
 ## Used in
 

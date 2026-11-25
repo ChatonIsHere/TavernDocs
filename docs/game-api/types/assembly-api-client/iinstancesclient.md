@@ -17,9 +17,9 @@ An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getallrunninginstance" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/instanceinfo">{"InstanceInfo"}</Link>{">> GetAllRunningInstance(string region = null, string fleet = null, bool? onlyGetVisibleRegions = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getallrunninginstance" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/instanceinfo">{"InstanceInfo"}</Link>{">> GetAllRunningInstance(string region = null, string fleet = null, bool? onlyGetVisibleRegions = null)"}</code> |
 
 ## Used in
 

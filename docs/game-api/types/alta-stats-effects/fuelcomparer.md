@@ -17,12 +17,12 @@ A **class** in `Root.Township`, `Alta.Heat`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FuelComparer()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FuelComparer()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-compare" /><code>{"int Compare("}<Link to="/game-api/types/global-e-h/fuel">{"Fuel"}</Link>{" x, "}<Link to="/game-api/types/global-e-h/fuel">{"Fuel"}</Link>{" y)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-compare" /><code>{"int Compare("}<Link to="/game-api/types/global-e-h/fuel">{"Fuel"}</Link>{" x, "}<Link to="/game-api/types/global-e-h/fuel">{"Fuel"}</Link>{" y)"}</code> |

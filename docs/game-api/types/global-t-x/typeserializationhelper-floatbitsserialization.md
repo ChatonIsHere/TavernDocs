@@ -18,20 +18,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FloatBitsSerialization(float minimum, float maximum, int bits)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FloatBitsSerialization(float minimum, float maximum, int bits)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bits" /><code>{"private int bits"}</code> |  |
-| <Link id="m-maximum" /><code>{"private float maximum"}</code> |  |
-| <Link id="m-minimum" /><code>{"private float minimum"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-bits" /><code>{"private int bits"}</code> |
+| <Link id="m-maximum" /><code>{"private float maximum"}</code> |
+| <Link id="m-minimum" /><code>{"private float minimum"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref float value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref float value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |

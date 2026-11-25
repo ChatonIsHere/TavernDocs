@@ -17,19 +17,24 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"EditorCommandCaller()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"EditorCommandCaller()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-command" /><code>{"private string command"}</code> |  |
-| <Link id="m-isrunning" /><code>{"private bool isRunning"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-command" /><code>{"private string command"}</code> |
+| <Link id="m-isrunning" /><code>{"private bool isRunning"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-runcommandasync" /><code>{"async void RunCommandAsync()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-runcommandasync" /><code>{"async void RunCommandAsync()"}</code> |

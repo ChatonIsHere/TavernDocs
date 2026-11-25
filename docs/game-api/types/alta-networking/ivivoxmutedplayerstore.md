@@ -17,11 +17,11 @@ An **internal interface** in `Root.Township`, `Alta.Voice`. Reach it through att
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-add" /><code>{"bool Add(int userId)"}</code> |  |
-| <Link id="m-contains" /><code>{"bool Contains(int userId)"}</code> |  |
-| <Link id="m-remove" /><code>{"bool Remove(int userId)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-add" /><code>{"bool Add(int userId)"}</code> |
+| <Link id="m-contains" /><code>{"bool Contains(int userId)"}</code> |
+| <Link id="m-remove" /><code>{"bool Remove(int userId)"}</code> |
 
 ## Used in
 

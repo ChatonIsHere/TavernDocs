@@ -19,18 +19,23 @@ Lists of modifiers that forest fill runs on a spawn candidate at each stage (poi
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnModifiers()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpawnModifiers()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-networkentitymodifiers" /><code>{"private "}<Link to="/game-api/types/global-m-o/networkentitymodifiers">{"NetworkEntityModifiers"}</Link>{"[] networkEntityModifiers"}</code> |  |
-| <Link id="m-pointmodifiers" /><code>{"private "}<Link to="/game-api/types/global-s/spawnmodifierpoint">{"SpawnModifierPoint"}</Link>{"[] pointModifiers"}</code> |  |
-| <Link id="m-pointnormalmodifiers" /><code>{"private "}<Link to="/game-api/types/global-s/spawnmodifierpointnormal">{"SpawnModifierPointNormal"}</Link>{"[] pointNormalModifiers"}</code> |  |
-| <Link id="m-spawnparametermodifiers" /><code>{"private "}<Link to="/game-api/types/global-s/spawnmodifierspawnparameters">{"SpawnModifierSpawnParameters"}</Link>{"[] spawnParameterModifiers"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-networkentitymodifiers" /><code>{"private "}<Link to="/game-api/types/global-m-o/networkentitymodifiers">{"NetworkEntityModifiers"}</Link>{"[] networkEntityModifiers"}</code> |
+| <Link id="m-pointmodifiers" /><code>{"private "}<Link to="/game-api/types/global-s/spawnmodifierpoint">{"SpawnModifierPoint"}</Link>{"[] pointModifiers"}</code> |
+| <Link id="m-pointnormalmodifiers" /><code>{"private "}<Link to="/game-api/types/global-s/spawnmodifierpointnormal">{"SpawnModifierPointNormal"}</Link>{"[] pointNormalModifiers"}</code> |
+| <Link id="m-spawnparametermodifiers" /><code>{"private "}<Link to="/game-api/types/global-s/spawnmodifierspawnparameters">{"SpawnModifierSpawnParameters"}</Link>{"[] spawnParameterModifiers"}</code> |
+
+</details>
 
 ## Methods
 

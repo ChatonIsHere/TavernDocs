@@ -17,19 +17,24 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticHairPart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CosmeticHairPart()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-feminineremovechance" /><code>{"private float feminineRemoveChance"}</code> |  |
-| <Link id="m-masculineremovechance" /><code>{"private float masculineRemoveChance"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-feminineremovechance" /><code>{"private float feminineRemoveChance"}</code> |
+| <Link id="m-masculineremovechance" /><code>{"private float masculineRemoveChance"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-postrandomize" /><code>{"override async Task PostRandomize("}<Link to="/game-api/types/alta-customization/playercosmeticwrapper">{"PlayerCosmeticWrapper"}</Link>{" cosmeticWrapper)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-postrandomize" /><code>{"override async Task PostRandomize("}<Link to="/game-api/types/alta-customization/playercosmeticwrapper">{"PlayerCosmeticWrapper"}</Link>{" cosmeticWrapper)"}</code> |

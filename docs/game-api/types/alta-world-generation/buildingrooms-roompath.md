@@ -17,17 +17,17 @@ A **private class** in `Root.Township`, `Alta.PAGaC`. Reach it through att-stubs
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"RoomPath("}<Link to="/game-api/types/alta-world-generation/buildingrooms-roomnode">{"BuildingRooms.RoomNode"}</Link>{" from, "}<Link to="/game-api/types/alta-world-generation/buildingrooms-roomnode">{"BuildingRooms.RoomNode"}</Link>{" to)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"RoomPath("}<Link to="/game-api/types/alta-world-generation/buildingrooms-roomnode">{"BuildingRooms.RoomNode"}</Link>{" from, "}<Link to="/game-api/types/alta-world-generation/buildingrooms-roomnode">{"BuildingRooms.RoomNode"}</Link>{" to)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-from" /><code><Link to="/game-api/types/alta-world-generation/buildingrooms-roomnode">{"BuildingRooms.RoomNode"}</Link>{" From { get; private set; }"}</code> |  |
-| <Link id="m-overlap" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> Overlap { get; set; }"}</code> |  |
-| <Link id="m-to" /><code><Link to="/game-api/types/alta-world-generation/buildingrooms-roomnode">{"BuildingRooms.RoomNode"}</Link>{" To { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-from" /><code><Link to="/game-api/types/alta-world-generation/buildingrooms-roomnode">{"BuildingRooms.RoomNode"}</Link>{" From { get; private set; }"}</code> |
+| <Link id="m-overlap" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> Overlap { get; set; }"}</code> |
+| <Link id="m-to" /><code><Link to="/game-api/types/alta-world-generation/buildingrooms-roomnode">{"BuildingRooms.RoomNode"}</Link>{" To { get; private set; }"}</code> |
 
 ## Used in
 

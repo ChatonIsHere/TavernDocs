@@ -20,40 +20,53 @@ A drive belt between pulleys in mechanisms. Not the player's belt.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Belt()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Belt()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-exterior" /><code>{"private List<"}<Link to="/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> exterior"}</code> |  |
-| <Link id="m-offset" /><code>{"private float offset"}</code> |  |
-| <Link id="m-rotation" /><code>{"private float rotation"}</code> |  |
-| <Link id="m-speedmultiplier" /><code>{"private float speedMultiplier"}</code> |  |
+<details>
+<summary>4 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-exterior" /><code>{"private List<"}<Link to="/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> exterior"}</code> |
+| <Link id="m-offset" /><code>{"private float offset"}</code> |
+| <Link id="m-rotation" /><code>{"private float rotation"}</code> |
+| <Link id="m-speedmultiplier" /><code>{"private float speedMultiplier"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-offset-2" /><code>{"float Offset { get; }"}</code> |  |
-| <Link id="m-rotation-2" /><code>{"float Rotation { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-offset-2" /><code>{"float Offset { get; }"}</code> |
+| <Link id="m-rotation-2" /><code>{"float Rotation { get; }"}</code> |
 
 ## Events
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-rotated" /><code>{"event Action Rotated"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-rotated" /><code>{"event Action Rotated"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-branchupdate" /><code>{"override void BranchUpdate("}<Link to="/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{" from, ref float totalTorque, ref float totalMoi, HashSet<"}<Link to="/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> cluster, ref bool isJammed, bool isFlipped = false)"}</code> |  |
-| <Link id="m-branchtoconnected" /><code>{"protected override void BranchToConnected(ref float totalTorque, ref float totalMoi, HashSet<"}<Link to="/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> cluster, ref bool isJammed, bool isFlipped)"}</code> |  |
-| <Link id="m-evaluateexterior" /><code>{"private bool EvaluateExterior()"}</code> |  |
-| <Link id="m-rotate" /><code>{"protected override void Rotate()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-branchupdate" /><code>{"override void BranchUpdate("}<Link to="/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{" from, ref float totalTorque, ref float totalMoi, HashSet<"}<Link to="/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> cluster, ref bool isJammed, bool isFlipped = false)"}</code> |
+| <Link id="m-branchtoconnected" /><code>{"protected override void BranchToConnected(ref float totalTorque, ref float totalMoi, HashSet<"}<Link to="/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> cluster, ref bool isJammed, bool isFlipped)"}</code> |
+| <Link id="m-rotate" /><code>{"protected override void Rotate()"}</code> |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-evaluateexterior" /><code>{"private bool EvaluateExterior()"}</code> |
+
+</details>
 
 ## Used in
 

@@ -17,14 +17,14 @@ A **class** in `Root.Township`, `Alta.Intelligence.Wyrms`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveDodge()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ActiveDodge()"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getaction" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/activedodge">{"ActiveDodge"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/wyrmdodgesettings">{"WyrmDodgeSettings"}</Link>{"> GetAction("}<Link to="/game-api/types/alta-intelligence/wyrmdodgesettings">{"WyrmDodgeSettings"}</Link>{" settings)"}</code> |  |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |  |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getaction" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/activedodge">{"ActiveDodge"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/wyrmdodgesettings">{"WyrmDodgeSettings"}</Link>{"> GetAction("}<Link to="/game-api/types/alta-intelligence/wyrmdodgesettings">{"WyrmDodgeSettings"}</Link>{" settings)"}</code> |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |

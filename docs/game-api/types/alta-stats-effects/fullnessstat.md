@@ -20,20 +20,25 @@ While fullness is above 0, a timer counts down by `1 / tickRatePerHungerThreshol
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"FullnessStat()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"FullnessStat()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hungerdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/hungerstat">{"HungerStat"}</Link>{" hungerDefinition"}</code> |  |
-| <Link id="m-tickrateperhungerthreshold" /><code>{"private int[] tickRatePerHungerThreshold"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-hungerdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/hungerstat">{"HungerStat"}</Link>{" hungerDefinition"}</code> |
+| <Link id="m-tickrateperhungerthreshold" /><code>{"private int[] tickRatePerHungerThreshold"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |  |
-| <Link id="m-checkserialize" /><code>{"override bool CheckSerialize(float oldValue, float newValue)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |
+| <Link id="m-checkserialize" /><code>{"override bool CheckSerialize(float oldValue, float newValue)"}</code> |

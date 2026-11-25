@@ -17,17 +17,17 @@ An **interface** in `Alta.IO`, `Alta.Utilities`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-haschanged" /><code>{"bool HasChanged { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-haschanged" /><code>{"bool HasChanged { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-backupinstant" /><code>{"void BackupInstant()"}</code> |  |
-| <Link id="m-backuptoremote" /><code>{"Task BackupToRemote()"}</code> |  |
-| <Link id="m-ensurecopied" /><code>{"Task EnsureCopied()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-backupinstant" /><code>{"void BackupInstant()"}</code> |
+| <Link id="m-backuptoremote" /><code>{"Task BackupToRemote()"}</code> |
+| <Link id="m-ensurecopied" /><code>{"Task EnsureCopied()"}</code> |
 
 ## Used in
 

@@ -17,15 +17,15 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"KilledData("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"KilledData("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-killerplayer" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" killerPlayer"}</code> |  |
-| <Link id="m-source" /><code><Link to="/game-api/types/alta-items/damagesource">{"DamageSource"}</Link>{" source"}</code> |  |
-| <Link id="m-toolwielder" /><code>{"string toolWielder"}</code> |  |
-| <Link id="m-usedtool" /><code>{"string usedTool"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-killerplayer" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" killerPlayer"}</code> |
+| <Link id="m-source" /><code><Link to="/game-api/types/alta-items/damagesource">{"DamageSource"}</Link>{" source"}</code> |
+| <Link id="m-toolwielder" /><code>{"string toolWielder"}</code> |
+| <Link id="m-usedtool" /><code>{"string usedTool"}</code> |

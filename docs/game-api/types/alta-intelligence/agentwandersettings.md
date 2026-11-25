@@ -18,27 +18,32 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"AgentWanderSettings()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AgentWanderSettings()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-heuristicmaximum" /><code>{"private int heuristicMaximum"}</code> |  |
-| <Link id="m-iscancelingonblocked" /><code>{"private bool isCancelingOnBlocked"}</code> |  |
-| <Link id="m-isusingtarget" /><code>{"private bool isUsingTarget"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-heuristicmaximum" /><code>{"private int heuristicMaximum"}</code> |
+| <Link id="m-iscancelingonblocked" /><code>{"private bool isCancelingOnBlocked"}</code> |
+| <Link id="m-isusingtarget" /><code>{"private bool isUsingTarget"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-heuristicmaximum-2" /><code>{"int HeuristicMaximum { get; }"}</code> |  |
-| <Link id="m-isusingtarget-2" /><code>{"bool IsUsingTarget { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-heuristicmaximum-2" /><code>{"int HeuristicMaximum { get; }"}</code> |
+| <Link id="m-isusingtarget-2" /><code>{"bool IsUsingTarget { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |

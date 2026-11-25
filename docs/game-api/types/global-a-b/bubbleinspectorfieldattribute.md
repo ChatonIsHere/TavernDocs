@@ -18,12 +18,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BubbleInspectorFieldAttribute("}<Link to="/game-api/types/global-i-l/interactiontype">{"InteractionType"}</Link>{" interaction = 0)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BubbleInspectorFieldAttribute("}<Link to="/game-api/types/global-i-l/interactiontype">{"InteractionType"}</Link>{" interaction = 0)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-interaction" /><code><Link to="/game-api/types/global-i-l/interactiontype">{"InteractionType"}</Link>{" Interaction { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-interaction" /><code><Link to="/game-api/types/global-i-l/interactiontype">{"InteractionType"}</Link>{" Interaction { get; }"}</code> |

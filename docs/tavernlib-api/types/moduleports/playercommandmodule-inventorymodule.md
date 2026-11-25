@@ -21,8 +21,13 @@ The `player inventory` submodule: view an online player's inventory, and save or
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-inventory" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/inventory">{"Inventory"}</Link>{"> "}<Link to="/game-api/types/alta-console/inventory">{"Inventory"}</Link>{"("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players) (iterator)"}</code> |  |
-| <Link id="m-load" /><code>{"private static async Task Load("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user, string save)"}</code> |  |
-| <Link id="m-save" /><code>{"private static async Task<string> Save("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user)"}</code> |  |
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-inventory" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/inventory">{"Inventory"}</Link>{"> "}<Link to="/game-api/types/alta-console/inventory">{"Inventory"}</Link>{"("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players) (iterator)"}</code> |
+| <Link id="m-load" /><code>{"private static async Task Load("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user, string save)"}</code> |
+| <Link id="m-save" /><code>{"private static async Task<string> Save("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user)"}</code> |
+
+</details>

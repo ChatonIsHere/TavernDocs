@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta.Networking`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-serializer" /><code><Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" Serializer { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-serializer" /><code><Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" Serializer { get; }"}</code> |

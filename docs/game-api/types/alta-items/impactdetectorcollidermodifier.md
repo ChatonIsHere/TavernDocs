@@ -19,15 +19,20 @@ Component on a collider that changes how hits on it are treated, through a list 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactDetectorColliderModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ImpactDetectorColliderModifier()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-items/collidermodifiersettings">{"ColliderModifierSettings"}</Link>{"[] settings"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-items/collidermodifiersettings">{"ColliderModifierSettings"}</Link>{"[] settings"}</code> |
+
+</details>
 
 ## Methods
 

@@ -16,15 +16,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UnlinkAccountRequest()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UnlinkAccountRequest()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-useridentifier" /><code>{"int? UserIdentifier { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-useridentifier" /><code>{"int? UserIdentifier { get; set; }"}</code> |
 
 ## Used in
 

@@ -20,15 +20,20 @@ Base for game task actions whose filters are sets built on first use. An empty s
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected HashSetAction()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected HashSetAction()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> |
+
+</details>
 
 ## Methods
 

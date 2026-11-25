@@ -18,18 +18,23 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"StandingStillPositionModifier()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"StandingStillPositionModifier()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-maxvelocitysquared" /><code>{"private float maxVelocitySquared"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-maxvelocitysquared" /><code>{"private float maxVelocitySquared"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-modifyisinposition" /><code>{"override void ModifyIsInPosition("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler, ref bool isInPosition)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-modifyisinposition" /><code>{"override void ModifyIsInPosition("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler, ref bool isInPosition)"}</code> |

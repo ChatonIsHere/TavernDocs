@@ -16,22 +16,22 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"HomeElement()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"HomeElement()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-address" /><code>{"string Address { get; set; }"}</code> |  |
-| <Link id="m-component" /><code>{"string Component { get; set; }"}</code> |  |
-| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> |  |
-| <Link id="m-initial" /><code>{"int? Initial { get; set; }"}</code> |  |
-| <Link id="m-limit" /><code>{"int? Limit { get; set; }"}</code> |  |
-| <Link id="m-pages" /><code><Link to="/game-api/types/assembly-api-models/homeelementpage">{"HomeElementPage"}</Link>{"[] Pages { get; set; }"}</code> |  |
-| <Link id="m-target" /><code>{"string Target { get; set; }"}</code> |  |
-| <Link id="m-type" /><code>{"string Type { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-address" /><code>{"string Address { get; set; }"}</code> |
+| <Link id="m-component" /><code>{"string Component { get; set; }"}</code> |
+| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> |
+| <Link id="m-initial" /><code>{"int? Initial { get; set; }"}</code> |
+| <Link id="m-limit" /><code>{"int? Limit { get; set; }"}</code> |
+| <Link id="m-pages" /><code><Link to="/game-api/types/assembly-api-models/homeelementpage">{"HomeElementPage"}</Link>{"[] Pages { get; set; }"}</code> |
+| <Link id="m-target" /><code>{"string Target { get; set; }"}</code> |
+| <Link id="m-type" /><code>{"string Type { get; set; }"}</code> |
 
 ## Used in
 

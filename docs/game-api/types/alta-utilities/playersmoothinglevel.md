@@ -16,10 +16,10 @@ An **enum** in `Root.Township`, `Alta.Utilities`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-default" /><code>{"Default = 0"}</code> |  |
-| <Link id="m-low" /><code>{"Low = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-default" /><code>{"Default = 0"}</code> |
+| <Link id="m-low" /><code>{"Low = 1"}</code> |
 
 ## Used in
 

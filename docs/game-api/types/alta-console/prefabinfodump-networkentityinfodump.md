@@ -17,23 +17,23 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityInfoDump()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkEntityInfoDump()"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-hash" /><code>{"uint Hash { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-savables" /><code>{"List<"}<Link to="/game-api/types/alta-console/prefabinfodump-savableinfodump">{"PrefabInfoDump.SavableInfoDump"}</Link>{"> Savables { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-hash" /><code>{"uint Hash { get; set; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| <Link id="m-savables" /><code>{"List<"}<Link to="/game-api/types/alta-console/prefabinfodump-savableinfodump">{"PrefabInfoDump.SavableInfoDump"}</Link>{"> Savables { get; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-console/prefabinfodump-networkentityinfodump">{"PrefabInfoDump.NetworkEntityInfoDump"}</Link>{" op_Implicit("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-console/prefabinfodump-networkentityinfodump">{"PrefabInfoDump.NetworkEntityInfoDump"}</Link>{" op_Implicit("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
 
 ## Used in
 

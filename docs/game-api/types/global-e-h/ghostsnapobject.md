@@ -19,17 +19,22 @@ An item that shows a ghost preview at a matching `GhostSnapSlot` while held, and
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GhostSnapObject()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GhostSnapObject()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-channel" /><code>{"private "}<Link to="/game-api/types/global-e-h/ghostsnapchannel">{"GhostSnapChannel"}</Link>{" channel"}</code> |  |
-| <Link id="m-ghostversion" /><code>{"private GameObject ghostVersion"}</code> |  |
-| <Link id="m-parentslotindex" /><code>{"private uint parentSlotIndex"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-channel" /><code>{"private "}<Link to="/game-api/types/global-e-h/ghostsnapchannel">{"GhostSnapChannel"}</Link>{" channel"}</code> |
+| <Link id="m-ghostversion" /><code>{"private GameObject ghostVersion"}</code> |
+| <Link id="m-parentslotindex" /><code>{"private uint parentSlotIndex"}</code> |
+
+</details>
 
 ## Properties
 
@@ -47,11 +52,19 @@ An item that shows a ghost preview at a matching `GhostSnapSlot` while held, and
 | --- | --- |
 | <Link id="m-hideghost" /><code>{"void HideGhost()"}</code> | Clears the slot and hides the ghost. |
 | <Link id="m-showghost" /><code>{"void ShowGhost("}<Link to="/game-api/types/global-e-h/ghostsnapslot">{"GhostSnapSlot"}</Link>{" target)"}</code> | Remembers the slot and, while held, shows the ghost copy there. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-ensureghost" /><code>{"private bool EnsureGhost()"}</code> |  |
-| <Link id="m-interactionended" /><code>{"private void InteractionEnded("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-interactionstarted" /><code>{"private void InteractionStarted("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| <Link id="m-ensureghost" /><code>{"private bool EnsureGhost()"}</code> |
+| <Link id="m-interactionended" /><code>{"private void InteractionEnded("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-interactionstarted" /><code>{"private void InteractionStarted("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+
+</details>
 
 ## Used in
 

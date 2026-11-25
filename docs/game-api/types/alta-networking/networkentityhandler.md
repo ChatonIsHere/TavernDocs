@@ -19,9 +19,9 @@ Callback that takes a `NetworkEntity`. Used by events such as `Cookable.SwappedT
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityHandler(object object, IntPtr method)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NetworkEntityHandler(object object, IntPtr method)"}</code> |
 
 ## Methods
 

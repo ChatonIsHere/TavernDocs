@@ -20,20 +20,28 @@ A text input field in the game's world-space menus, showing its text through a `
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"InputField()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"InputField()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-issecret" /><code>{"bool isSecret"}</code> | Whether the text is shown masked with `*`. |
-| <Link id="m-caret" /><code>{"private Transform caret"}</code> |  |
-| <Link id="m-inputtext" /><code>{"private string inputText"}</code> |  |
-| <Link id="m-maxlength" /><code>{"private int maxLength"}</code> |  |
-| <Link id="m-onsubmit" /><code>{"private UnityEvent onSubmit"}</code> |  |
-| <Link id="m-textvisuals" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textVisuals"}</code> |  |
+
+<details>
+<summary>5 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-caret" /><code>{"private Transform caret"}</code> |
+| <Link id="m-inputtext" /><code>{"private string inputText"}</code> |
+| <Link id="m-maxlength" /><code>{"private int maxLength"}</code> |
+| <Link id="m-onsubmit" /><code>{"private UnityEvent onSubmit"}</code> |
+| <Link id="m-textvisuals" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textVisuals"}</code> |
+
+</details>
 
 ## Properties
 
@@ -58,7 +66,15 @@ A text input field in the game's world-space menus, showing its text through a `
 | <Link id="m-settext-2" /><code>{"void SetText(string newText, bool toggleSecret)"}</code> | Sets the text and updates the display (masked with `*` if secret, cut to the max length otherwise). |
 | <Link id="m-setupcaret" /><code>{"void SetupCaret(Transform caret)"}</code> | Attaches a caret transform that follows the end of the text. |
 | <Link id="m-togglesecret" /><code>{"void ToggleSecret()"}</code> | Flips secret mode and redraws the text. |
-| <Link id="m-updatecaret" /><code>{"private void UpdateCaret()"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-updatecaret" /><code>{"private void UpdateCaret()"}</code> |
+
+</details>
 
 ## Used in
 

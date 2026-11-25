@@ -17,7 +17,7 @@ A **static class** in `Root.Township`, `Alta.Utilities`.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-delay" /><code>{"static void Delay(Action callback, float duration)"}</code> |  |
-| <Link id="m-runat" /><code>{"static void RunAt(Action callback, float time)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-delay" /><code>{"static void Delay(Action callback, float duration)"}</code> |
+| <Link id="m-runat" /><code>{"static void RunAt(Action callback, float time)"}</code> |

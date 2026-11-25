@@ -20,17 +20,25 @@ One page of a meta UI `Window`. Shows or hides itself, playing an optional scale
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"Panel()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Panel()"}</code> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animation" /><code>{"private "}<Link to="/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" animation"}</code> |  |
 | <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | NLog logger shared by panels. |
-| <Link id="m-window" /><code>{"private "}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" window"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-animation" /><code>{"private "}<Link to="/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" animation"}</code> |
+| <Link id="m-window" /><code>{"private "}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" window"}</code> |
+
+</details>
 
 ## Properties
 

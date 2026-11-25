@@ -19,28 +19,33 @@ A player's save file: position data plus binary blobs for their body, state stac
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerSave()"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"PlayerSave(int identifier)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerSave()"}</code> |
+| <Link id="m-ctor-2" /><code>{"PlayerSave(int identifier)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-customization" /><code>{"private uint[] customization"}</code> |  |
-| <Link id="m-customizationbytes" /><code>{"private int customizationBytes"}</code> |  |
-| <Link id="m-lastsafeposition" /><code>{"private Vector3 lastSafePosition"}</code> |  |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
-| <Link id="m-player" /><code>{"private uint[] player"}</code> |  |
-| <Link id="m-playerbytes" /><code>{"private int playerBytes"}</code> |  |
-| <Link id="m-prefab" /><code>{"private uint[] prefab"}</code> |  |
-| <Link id="m-prefabbytes" /><code>{"private int prefabBytes"}</code> |  |
-| <Link id="m-progression" /><code>{"private uint[] progression"}</code> |  |
-| <Link id="m-progressionbytes" /><code>{"private int progressionBytes"}</code> |  |
-| <Link id="m-savedata" /><code>{"private "}<Link to="/game-api/types/alta-world/basicsavedatawrapper-tdata">{"BasicSaveDataWrapper"}</Link>{"<"}<Link to="/game-api/types/alta-utilities/playersavefiledata">{"PlayerSaveFileData"}</Link>{"> saveData"}</code> |  |
-| <Link id="m-state" /><code>{"private uint[] state"}</code> |  |
-| <Link id="m-statebytes" /><code>{"private int stateBytes"}</code> |  |
+<details>
+<summary>13 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-customization" /><code>{"private uint[] customization"}</code> |
+| <Link id="m-customizationbytes" /><code>{"private int customizationBytes"}</code> |
+| <Link id="m-lastsafeposition" /><code>{"private Vector3 lastSafePosition"}</code> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| <Link id="m-player" /><code>{"private uint[] player"}</code> |
+| <Link id="m-playerbytes" /><code>{"private int playerBytes"}</code> |
+| <Link id="m-prefab" /><code>{"private uint[] prefab"}</code> |
+| <Link id="m-prefabbytes" /><code>{"private int prefabBytes"}</code> |
+| <Link id="m-progression" /><code>{"private uint[] progression"}</code> |
+| <Link id="m-progressionbytes" /><code>{"private int progressionBytes"}</code> |
+| <Link id="m-savedata" /><code>{"private "}<Link to="/game-api/types/alta-world/basicsavedatawrapper-tdata">{"BasicSaveDataWrapper"}</Link>{"<"}<Link to="/game-api/types/alta-utilities/playersavefiledata">{"PlayerSaveFileData"}</Link>{"> saveData"}</code> |
+| <Link id="m-state" /><code>{"private uint[] state"}</code> |
+| <Link id="m-statebytes" /><code>{"private int stateBytes"}</code> |
+
+</details>
 
 ## Properties
 
@@ -69,7 +74,15 @@ A player's save file: position data plus binary blobs for their body, state stac
 | <Link id="m-dispose" /><code>{"override void Dispose()"}</code> | Returns all arrays to the pool. Warns if any were missing. |
 | <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> | Reads the file, handling the current and three older formats. Older formats may drop cosmetics or state. |
 | <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> | Writes the file in the current format. |
-| <Link id="m-releasearray" /><code>{"private bool ReleaseArray(ref uint[] array)"}</code> |  |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member |
+| --- |
+| <Link id="m-releasearray" /><code>{"private bool ReleaseArray(ref uint[] array)"}</code> |
+
+</details>
 
 ## Used in
 

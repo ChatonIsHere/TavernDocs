@@ -17,6 +17,6 @@ An **interface** in `Alta.VContainerLayer.Runtime`, no namespace.
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-onspawn" /><code>{"void OnSpawn(TParam param)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-onspawn" /><code>{"void OnSpawn(TParam param)"}</code> |

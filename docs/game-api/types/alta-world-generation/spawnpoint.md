@@ -19,16 +19,21 @@ A position and rotation a population can spawn at, with a free flag and an optio
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnPoint(Vector3 position, Quaternion rotation, int index)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"SpawnPoint(Vector3 position, Quaternion rotation, int index)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isfree" /><code>{"private bool isFree"}</code> |  |
-| <Link id="m-occupieduntil" /><code>{"private float occupiedUntil"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isfree" /><code>{"private bool isFree"}</code> |
+| <Link id="m-occupieduntil" /><code>{"private float occupiedUntil"}</code> |
+
+</details>
 
 ## Properties
 

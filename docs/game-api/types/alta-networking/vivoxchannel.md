@@ -16,18 +16,18 @@ A **class** in `Root.Township`, `Alta.Voice`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"VivoxChannel(string name, bool isTextEnabled, bool isVoiceEnabled, Channel3DProperties positionalProperties = null)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"VivoxChannel(string name, bool isTextEnabled, bool isVoiceEnabled, Channel3DProperties positionalProperties = null)"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-id" /><code>{"ChannelId Id { get; }"}</code> |  |
-| <Link id="m-istextenabled" /><code>{"bool IsTextEnabled { get; }"}</code> |  |
-| <Link id="m-isvoiceenabled" /><code>{"bool IsVoiceEnabled { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-id" /><code>{"ChannelId Id { get; }"}</code> |
+| <Link id="m-istextenabled" /><code>{"bool IsTextEnabled { get; }"}</code> |
+| <Link id="m-isvoiceenabled" /><code>{"bool IsVoiceEnabled { get; }"}</code> |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> |
 
 ## Used in
 

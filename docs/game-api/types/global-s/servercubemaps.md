@@ -19,25 +19,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ServerCubeMaps()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ServerCubeMaps()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currenthandle" /><code>{"private AsyncOperationHandle<Cubemap> currentHandle"}</code> |  |
-| <Link id="m-currentloaded" /><code>{"private int currentLoaded"}</code> |  |
-| <Link id="m-scenebasedcubemaps" /><code>{"private "}<Link to="/game-api/types/global-s/scenecubemaps">{"SceneCubeMaps"}</Link>{"[] sceneBasedcubemaps"}</code> |  |
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currenthandle" /><code>{"private AsyncOperationHandle<Cubemap> currentHandle"}</code> |
+| <Link id="m-currentloaded" /><code>{"private int currentLoaded"}</code> |
+| <Link id="m-scenebasedcubemaps" /><code>{"private "}<Link to="/game-api/types/global-s/scenecubemaps">{"SceneCubeMaps"}</Link>{"[] sceneBasedcubemaps"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-applycubemap" /><code>{"async void ApplyCubeMap(int sceneIndex, int mapIndex, Action<Cubemap> useMap)"}</code> |  |
-| <Link id="m-clean" /><code>{"void Clean()"}</code> |  |
-| <Link id="m-cubemapslength" /><code>{"int CubemapsLength(int sceneIndex)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-applycubemap" /><code>{"async void ApplyCubeMap(int sceneIndex, int mapIndex, Action<Cubemap> useMap)"}</code> |
+| <Link id="m-clean" /><code>{"void Clean()"}</code> |
+| <Link id="m-cubemapslength" /><code>{"int CubemapsLength(int sceneIndex)"}</code> |
 
 ## Used in
 

@@ -17,19 +17,19 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"CustomData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"CustomData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-chunks" /><code><Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{"[] chunks"}</code> |  |
-| <Link id="m-color" /><code>{"Color color"}</code> |  |
-| <Link id="m-effects" /><code><Link to="/game-api/types/alta-stats-effects/liquidcontainersavedata-effect">{"LiquidContainerSaveData.Effect"}</Link>{"[] effects"}</code> |  |
-| <Link id="m-isconsumablethroughskin" /><code>{"bool isConsumableThroughSkin"}</code> |  |
-| <Link id="m-liquidvisualdata" /><code><Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" liquidVisualData"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-chunks" /><code><Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{"[] chunks"}</code> |
+| <Link id="m-color" /><code>{"Color color"}</code> |
+| <Link id="m-effects" /><code><Link to="/game-api/types/alta-stats-effects/liquidcontainersavedata-effect">{"LiquidContainerSaveData.Effect"}</Link>{"[] effects"}</code> |
+| <Link id="m-isconsumablethroughskin" /><code>{"bool isConsumableThroughSkin"}</code> |
+| <Link id="m-liquidvisualdata" /><code><Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" liquidVisualData"}</code> |
 
 ## Used in
 

@@ -19,12 +19,12 @@ A **class** in `Root.Township`, `Alta.Crafting`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"GenericAssemblyStationData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"GenericAssemblyStationData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdockpositionup" /><code>{"bool isDockPositionUp"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isdockpositionup" /><code>{"bool isDockPositionUp"}</code> |

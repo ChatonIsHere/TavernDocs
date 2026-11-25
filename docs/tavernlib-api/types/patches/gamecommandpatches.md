@@ -27,6 +27,12 @@ Patches for game console commands that answered Success having done nothing: `ti
 | <Link id="m-checkrotateselection" /><code>{"static void CheckRotateSelection()"}</code> | Prefix on `SelectionCommandModule.RotatingModule.Exact` that throws "Nothing is selected" when the console's context has no selection. |
 | <Link id="m-checktimeset" /><code>{"static void CheckTimeSet(string time)"}</code> | Prefix on `TimeCommandModule.Set`: throws for a word that isn't a time keyword, or when there's no `GameTimeManager`. Numbers pass. |
 | <Link id="m-replacecaveteleport" /><code>{"static bool ReplaceCaveTeleport("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, int layer, ref Task __result)"}</code> | Prefix on `WorldCommandModule.CaveCommandModule.CaveTeleport` that skips it, making the layer if needed and teleporting the players to its portal. |
+
+<details>
+<summary>7 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
 | <Link id="m-apply" /><code>{"internal static void Apply(Harmony harmony)"}</code> | Internal: patches each command, and swaps `time ofday` for a version that returns the time. Logs a warning and skips any method the game lacks. |
 | <Link id="m-patch" /><code>{"private static void Patch(Harmony harmony, Type type, string name, string prefix = null, string postfix = null)"}</code> |  |
 | <Link id="m-replace" /><code>{"private static void Replace(string moduleName, string name, MethodInfo method)"}</code> |  |
@@ -34,3 +40,5 @@ Patches for game console commands that answered Success having done nothing: `ti
 | <Link id="m-teleporttocavelayer" /><code>{"private static async Task<string> TeleportToCaveLayer("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, int layer)"}</code> |  |
 | <Link id="m-timemanager" /><code>{"private static "}<Link to="/game-api/types/global-e-h/gametimemanager">{"GameTimeManager"}</Link>{" TimeManager()"}</code> |  |
 | <Link id="m-timeofday" /><code>{"private static float TimeOfDay(bool isNormalised = false)"}</code> |  |
+
+</details>

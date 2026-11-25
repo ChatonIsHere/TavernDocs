@@ -18,17 +18,17 @@ The player states: none, first join, playing, combat, customization, equipment, 
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-combat" /><code>{"Combat = 3"}</code> |  |
-| <Link id="m-customization" /><code>{"Customization = 4"}</code> |  |
-| <Link id="m-dead" /><code>{"Dead = 6"}</code> |  |
-| <Link id="m-downed" /><code>{"Downed = 8"}</code> |  |
-| <Link id="m-equipment" /><code>{"Equipment = 5"}</code> |  |
-| <Link id="m-firstjoin" /><code>{"FirstJoin = 1"}</code> |  |
-| <Link id="m-none" /><code>{"None = 0"}</code> |  |
-| <Link id="m-playing" /><code>{"Playing = 2"}</code> |  |
-| <Link id="m-spirit" /><code>{"Spirit = 7"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-combat" /><code>{"Combat = 3"}</code> |
+| <Link id="m-customization" /><code>{"Customization = 4"}</code> |
+| <Link id="m-dead" /><code>{"Dead = 6"}</code> |
+| <Link id="m-downed" /><code>{"Downed = 8"}</code> |
+| <Link id="m-equipment" /><code>{"Equipment = 5"}</code> |
+| <Link id="m-firstjoin" /><code>{"FirstJoin = 1"}</code> |
+| <Link id="m-none" /><code>{"None = 0"}</code> |
+| <Link id="m-playing" /><code>{"Playing = 2"}</code> |
+| <Link id="m-spirit" /><code>{"Spirit = 7"}</code> |
 
 ## Used in
 

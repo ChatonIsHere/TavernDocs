@@ -20,9 +20,9 @@ Base for one chiselable piece of a timber block in carpentry. Starts disabled; a
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"protected TimberPieceBase()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"protected TimberPieceBase()"}</code> |
 
 ## Fields
 
@@ -30,8 +30,16 @@ Base for one chiselable piece of a timber block in carpentry. Starts disabled; a
 | --- | --- |
 | <Link id="m-onchanged" /><code><Link to="/game-api/types/alta-crafting/timberpiecedelegate">{"TimberPieceDelegate"}</Link>{" OnChanged"}</code> | Delegate called when the piece changes. |
 | <Link id="m-ondone" /><code><Link to="/game-api/types/alta-crafting/timberpiecedelegate">{"TimberPieceDelegate"}</Link>{" OnDone"}</code> | Delegate called when the piece is finished. |
-| <Link id="m-hittineffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" hittinEffect"}</code> |  |
-| <Link id="m-hittingsound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" hittingSound"}</code> |  |
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-hittineffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" hittinEffect"}</code> |
+| <Link id="m-hittingsound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" hittingSound"}</code> |
+
+</details>
 
 ## Properties
 

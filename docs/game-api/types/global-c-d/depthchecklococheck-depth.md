@@ -18,11 +18,11 @@ An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-deep" /><code>{"Deep = 2"}</code> |  |
-| <Link id="m-out" /><code>{"Out = 0"}</code> |  |
-| <Link id="m-shallow" /><code>{"Shallow = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-deep" /><code>{"Deep = 2"}</code> |
+| <Link id="m-out" /><code>{"Out = 0"}</code> |
+| <Link id="m-shallow" /><code>{"Shallow = 1"}</code> |
 
 ## Used in
 

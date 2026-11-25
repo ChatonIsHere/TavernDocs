@@ -17,11 +17,11 @@ An **enum** in `Root.Township`, `Alta.Enchantments`.
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-cancelled" /><code>{"Cancelled = 2"}</code> |  |
-| <Link id="m-charged" /><code>{"Charged = 0"}</code> |  |
-| <Link id="m-executed" /><code>{"Executed = 1"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-cancelled" /><code>{"Cancelled = 2"}</code> |
+| <Link id="m-charged" /><code>{"Charged = 0"}</code> |
+| <Link id="m-executed" /><code>{"Executed = 1"}</code> |
 
 ## Used in
 

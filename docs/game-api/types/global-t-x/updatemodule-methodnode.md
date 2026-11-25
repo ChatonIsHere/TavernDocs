@@ -18,30 +18,30 @@ A **protected class** in `Root.Township`, no namespace. Reach it through att-stu
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MethodNode()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MethodNode()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-method" /><code>{"Action Method"}</code> |  |
-| <Link id="m-module" /><code><Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" Module"}</code> |  |
-| <Link id="m-next" /><code><Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" Next"}</code> |  |
-| <Link id="m-previous" /><code><Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" Previous"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-method" /><code>{"Action Method"}</code> |
+| <Link id="m-module" /><code><Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" Module"}</code> |
+| <Link id="m-next" /><code><Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" Next"}</code> |
+| <Link id="m-previous" /><code><Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" Previous"}</code> |
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isrunning" /><code>{"bool IsRunning { get; private set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isrunning" /><code>{"bool IsRunning { get; private set; }"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> |
 
 ## Used in
 

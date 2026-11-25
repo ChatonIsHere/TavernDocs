@@ -18,23 +18,36 @@ A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"ApplicationLifetimeScope()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ApplicationLifetimeScope()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+<details>
+<summary>1 private and internal field</summary>
+
+| Member |
+| --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-bindserverhostcontroller" /><code>{"private static void BindServerHostController(IContainerBuilder builder)"}</code> |  |
-| <Link id="m-configurescope" /><code>{"protected override void ConfigureScope(IContainerBuilder builder)"}</code> |  |
-| <Link id="m-registeraltaplatformdependencies" /><code>{"private void RegisterAltaPlatformDependencies(IContainerBuilder builder)"}</code> |  |
-| <Link id="m-registerplatformdependencies" /><code>{"private void RegisterPlatformDependencies(IContainerBuilder builder)"}</code> |  |
-| <Link id="m-registerplatformspecificdependencies" /><code>{"private void RegisterPlatformSpecificDependencies(IContainerBuilder builder)"}</code> |  |
-| <Link id="m-registerplayerdependencies" /><code>{"private void RegisterPlayerDependencies(IContainerBuilder builder)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-configurescope" /><code>{"protected override void ConfigureScope(IContainerBuilder builder)"}</code> |
+
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-bindserverhostcontroller" /><code>{"private static void BindServerHostController(IContainerBuilder builder)"}</code> |
+| <Link id="m-registeraltaplatformdependencies" /><code>{"private void RegisterAltaPlatformDependencies(IContainerBuilder builder)"}</code> |
+| <Link id="m-registerplatformdependencies" /><code>{"private void RegisterPlatformDependencies(IContainerBuilder builder)"}</code> |
+| <Link id="m-registerplatformspecificdependencies" /><code>{"private void RegisterPlatformSpecificDependencies(IContainerBuilder builder)"}</code> |
+| <Link id="m-registerplayerdependencies" /><code>{"private void RegisterPlayerDependencies(IContainerBuilder builder)"}</code> |
+
+</details>

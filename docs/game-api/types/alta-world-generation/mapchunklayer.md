@@ -22,16 +22,21 @@ A 3D grid of float values for one cave generator plugin over one map chunk, with
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"MapChunkLayer("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"MapChunkLayer("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isnonzerolistcreated" /><code>{"private bool isNonZeroListCreated"}</code> |  |
-| <Link id="m-values" /><code>{"private float[,,] values"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-isnonzerolistcreated" /><code>{"private bool isNonZeroListCreated"}</code> |
+| <Link id="m-values" /><code>{"private float[,,] values"}</code> |
+
+</details>
 
 ## Properties
 

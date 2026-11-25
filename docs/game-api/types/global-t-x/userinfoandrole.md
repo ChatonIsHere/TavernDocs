@@ -19,10 +19,10 @@ A user's info plus their member status, worked out from their roles (developer, 
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"UserInfoAndRole("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo, "}<Link to="/game-api/types/assembly-api-models/userroles">{"UserRoles"}</Link>{" userRoles)"}</code> |  |
-| <Link id="m-ctor-2" /><code>{"UserInfoAndRole("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo, "}<Link to="/game-api/types/assembly-other/playersubscriberstatus">{"PlayerSubscriberStatus"}</Link>{" memberStatus)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"UserInfoAndRole("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo, "}<Link to="/game-api/types/assembly-api-models/userroles">{"UserRoles"}</Link>{" userRoles)"}</code> |
+| <Link id="m-ctor-2" /><code>{"UserInfoAndRole("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo, "}<Link to="/game-api/types/assembly-other/playersubscriberstatus">{"PlayerSubscriberStatus"}</Link>{" memberStatus)"}</code> |
 
 ## Properties
 

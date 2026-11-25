@@ -17,6 +17,6 @@ An **interface** in `Root.Township`, `Alta`.
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-isdisabledonsimpleserver" /><code>{"bool IsDisabledOnSimpleServer { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-isdisabledonsimpleserver" /><code>{"bool IsDisabledOnSimpleServer { get; }"}</code> |

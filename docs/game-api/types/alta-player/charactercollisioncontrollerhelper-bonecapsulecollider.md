@@ -18,23 +18,28 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"BoneCapsuleCollider()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"BoneCapsuleCollider()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-height" /><code>{"private float height"}</code> |  |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |  |
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-height" /><code>{"private float height"}</code> |
+| <Link id="m-radius" /><code>{"private float radius"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-height-2" /><code>{"float Height { get; }"}</code> |  |
-| <Link id="m-radius-2" /><code>{"float Radius { get; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-height-2" /><code>{"float Height { get; }"}</code> |
+| <Link id="m-radius-2" /><code>{"float Radius { get; }"}</code> |
 
 ## Used in
 

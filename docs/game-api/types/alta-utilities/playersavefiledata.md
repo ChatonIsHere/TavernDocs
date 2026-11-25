@@ -19,22 +19,22 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerSaveFileData()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerSaveFileData()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-home" /><code>{"Vector3 home"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-home" /><code>{"Vector3 home"}</code> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> |
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-copyto" /><code>{"protected override void CopyTo("}<Link to="/game-api/types/alta-utilities/playersavefiledata">{"PlayerSaveFileData"}</Link>{" target)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-copyto" /><code>{"protected override void CopyTo("}<Link to="/game-api/types/alta-utilities/playersavefiledata">{"PlayerSaveFileData"}</Link>{" target)"}</code> |
 
 ## Used in
 

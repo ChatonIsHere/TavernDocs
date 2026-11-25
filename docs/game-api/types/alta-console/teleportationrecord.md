@@ -17,14 +17,14 @@ A **struct** in `Root.Township`, `Alta.Analytics`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"TeleportationRecord(Vector3 from, Vector3 to, int fps)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"TeleportationRecord(Vector3 from, Vector3 to, int fps)"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-fps" /><code>{"int FPS"}</code> |  |
-| <Link id="m-fromlocation" /><code>{"Vector3 FromLocation"}</code> |  |
-| <Link id="m-tolocation" /><code>{"Vector3 ToLocation"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-fps" /><code>{"int FPS"}</code> |
+| <Link id="m-fromlocation" /><code>{"Vector3 FromLocation"}</code> |
+| <Link id="m-tolocation" /><code>{"Vector3 ToLocation"}</code> |

@@ -16,12 +16,12 @@ An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Values
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-group" /><code>{"Group = 1"}</code> |  |
-| <Link id="m-groupadmins" /><code>{"GroupAdmins = 1"}</code> |  |
-| <Link id="m-individual" /><code>{"Individual = 0"}</code> |  |
-| <Link id="m-world" /><code>{"World = 2"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-group" /><code>{"Group = 1"}</code> |
+| <Link id="m-groupadmins" /><code>{"GroupAdmins = 1"}</code> |
+| <Link id="m-individual" /><code>{"Individual = 0"}</code> |
+| <Link id="m-world" /><code>{"World = 2"}</code> |
 
 ## Used in
 

@@ -17,6 +17,6 @@ A **class** in `Root.Township`, `Features.Main_Menu.Scripts.TalemShop.Errors`.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"NotLoggedInOnPlatformError("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime)"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"NotLoggedInOnPlatformError("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime)"}</code> |

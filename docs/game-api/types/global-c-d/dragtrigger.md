@@ -17,38 +17,56 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ctor" /><code>{"DragTrigger()"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"DragTrigger()"}</code> |
 
 ## Fields
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-currentdragger" /><code>{"private Collider currentDragger"}</code> |  |
-| <Link id="m-dragupdater" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" dragUpdater"}</code> |  |
-| <Link id="m-intersectingcolliders" /><code>{"private HashSet<Collider> intersectingColliders"}</code> |  |
-| <Link id="m-maxdistancedropoff" /><code>{"private float maxDistanceDropoff"}</code> |  |
-| <Link id="m-maxdragdistance" /><code>{"private float maxDragDistance"}</code> |  |
-| <Link id="m-maxdragspeed" /><code>{"private float maxDragSpeed"}</code> |  |
-| <Link id="m-olddraggerposition" /><code>{"private Vector3 oldDraggerPosition"}</code> |  |
+<details>
+<summary>7 private and internal fields</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentdragger" /><code>{"private Collider currentDragger"}</code> |
+| <Link id="m-dragupdater" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" dragUpdater"}</code> |
+| <Link id="m-intersectingcolliders" /><code>{"private HashSet<Collider> intersectingColliders"}</code> |
+| <Link id="m-maxdistancedropoff" /><code>{"private float maxDistanceDropoff"}</code> |
+| <Link id="m-maxdragdistance" /><code>{"private float maxDragDistance"}</code> |
+| <Link id="m-maxdragspeed" /><code>{"private float maxDragSpeed"}</code> |
+| <Link id="m-olddraggerposition" /><code>{"private Vector3 oldDraggerPosition"}</code> |
+
+</details>
 
 ## Properties
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-dragpull" /><code>{"Vector3 DragPull { get; private set; }"}</code> |  |
-| <Link id="m-currentdragger-2" /><code>{"private Collider CurrentDragger { get; set; }"}</code> |  |
+| Member |
+| --- |
+| <Link id="m-dragpull" /><code>{"Vector3 DragPull { get; private set; }"}</code> |
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member |
+| --- |
+| <Link id="m-currentdragger-2" /><code>{"private Collider CurrentDragger { get; set; }"}</code> |
+
+</details>
 
 ## Methods
 
-| Member | What it is |
-| --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
-| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-updatedragpull" /><code>{"private IEnumerator UpdateDragPull() (iterator)"}</code> |  |
+<details>
+<summary>5 private and internal methods</summary>
+
+| Member |
+| --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
+| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| <Link id="m-updatedragpull" /><code>{"private IEnumerator UpdateDragPull() (iterator)"}</code> |
+
+</details>
 
 ## Used in
 
