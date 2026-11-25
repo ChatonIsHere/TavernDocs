@@ -163,7 +163,7 @@ A crafted item is measured by its `CraftingPart.Size` instead of the item's size
 
 `maxContainedStacks` times the item's `DockedStackSize` is how many fit in one slot: a Standard Storage slot holds 100 sticks (stack size 50) or 60 flint (stack size 30). Bags have no size limit on their slots.
 
-There are 69 `PickupDockSettings` assets in all; the reference tables list every one.
+There are 69 `PickupDockSettings` assets in all. The reference tables don't list them; these were read from the asset dump.
 
 ## Hooking it
 

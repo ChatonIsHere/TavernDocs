@@ -66,7 +66,7 @@ Setting a state of the type that's already current logs "State of type: ... alre
 - States activate with `OnActivate` on the server and `OnActivateRemote(bool isPlayerCharacterSpawned)` on clients. Same for deactivate and decorate. In local test, both run.
 - A joining client gets each player's whole stack with `PlayerStateSyncToRemote`.
 - A client asks the server for a transition with `PlayerStateTransitionRequest` on its `Player`. Each state swaps its own handlers for `PlayerStateSync` and `PlayerStateTransitionRequest` on the `Player` while it's active, and puts the old ones back after.
-- Every activation on the server raises `ConsoleEvents.PlayerStateChanged` for the remote console.
+- Every activation and deactivation on the server raises `ConsoleEvents.PlayerStateChanged` for the remote console (`isEnter` tells them apart). See [Console events](../console-and-utilities/console-events.md).
 
 ## PlayerStateBase
 

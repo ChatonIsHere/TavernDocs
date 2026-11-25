@@ -22,7 +22,7 @@ Every property is read-only from a mod: the setters are `private` or `internal`.
 | `string PasswordHash` | `password_hash` | `""` (no password) |
 | `string Password` | `password` | `null`. Never set after a read, see below. |
 | `bool WhitelistEnabled` | `whitelist_enabled` | `false` |
-| `bool EnforceIpLimit` | `enforce_ip_limit` | `false` |
+| `bool EnforceIpLimit` | `enforce_ip_limit` | `true` (at most 5 accounts registered from one address, as in the Windows launcher) |
 | `bool CommunityListed` | `community_listed` | `false` |
 | `int MaxPlayers` | `max_players` | `24` |
 | `string CommunityListingToken` | `community_listing_token` | `""`, then made for you |
@@ -46,35 +46,9 @@ Unknown keys are kept and written back.
 
 TavernLib postfixes the game's `ServerHandler.PlayerLimit` getter to return `ServerConfig.LastRead.PlayerLimit`. So a new value shows the next time TavernLib reads the file, which is the next login or join (see [How fresh is LastRead?](tavern-manager.md#how-fresh-is-lastread)). The listing reports `ServerHandler.Current.PlayerLimit`.
 
-:::warning[Joins don't check the limit]
+TavernLib's join check (its replacement for the game's `CheckIfPlayerIsAllowedCustom`, see [Internals](../internals.md#server)) refuses a join once the socket's connection count goes past the limit, with the game's own message, "Reached player limit of: 24". The joining player's connection is already counted, so with `max_players` at 24 the 25th player is the one turned away.
 
-In the game, the only check against `PlayerLimit` is inside `ServerPlayerConnectionHandlerOld.CheckIfPlayerIsAllowedCustom` (`CheckConnectionLimit`, which compares the socket's connection count). TavernLib replaces that method with its own token check (see [Internals](../internals.md#server)), and neither its login server nor its join filter counts players. So a TavernLib server doesn't turn players away when it's full: `max_players` only reaches the listing and anything else that reads `ServerHandler.PlayerLimit`.
-
-:::
-
-If your mod needs a real cap, refuse the join yourself. This postfix wraps the result of TavernLib's check. `CheckIfPlayerIsAllowedCustom` and its `PlayerJoinResult` struct are both `protected`, so this only compiles against att-stubs' publicized `Root.Township` (against the real game DLL, you'd need `AccessTools` and reflection instead). Not tested on a live server:
-
-```csharp
-using System.Threading.Tasks;
-using Alta.Networking.Servers;
-using HarmonyLib;
-
-[HarmonyPatch(typeof(ServerPlayerConnectionHandlerOld), "CheckIfPlayerIsAllowedCustom")]
-static class EnforceLimit
-{
-    static void Postfix(ref Task<ServerPlayerConnectionHandlerOld.PlayerJoinResult> __result) => __result = Check(__result);
-
-    static async Task<ServerPlayerConnectionHandlerOld.PlayerJoinResult> Check(Task<ServerPlayerConnectionHandlerOld.PlayerJoinResult> pending)
-    {
-        var result = await pending;
-        if (result.Error == null && Player.AllPlayers.Count >= ServerHandler.Current.PlayerLimit)
-            return ServerPlayerConnectionHandlerOld.PlayerJoinResult.CreateDeniedResult("The server is full");
-        return result;
-    }
-}
-```
-
-The joining player isn't in `Player.AllPlayers` yet, hence `>=`.
+To refuse joins for your own reasons, postfix `CheckIfPlayerIsAllowedCustom`. The [Joining](../../game-api/networking/joining.md) page has an example.
 
 If your mod patches `ServerHandler.PlayerLimit` too, both postfixes run, and whichever runs last wins. Harmony runs lower priorities later, so `[HarmonyPriority(Priority.Low)]` on yours makes it win. Hosts expect `max_players` to work, so think twice.
 

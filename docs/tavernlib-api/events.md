@@ -27,10 +27,10 @@ To unsubscribe later, subscribe a method or a stored delegate, not an inline lam
 
 `public static readonly TavernEvent<ISocket> SocketCreated`
 
-Raised each time the game makes its network socket (`Alta.Networking.Socket`), with that socket. TavernLib raises it from a Harmony postfix on the `Socket` constructor, after the constructor has set `Socket.Current` to the new socket.
+Raised each time the game makes its network socket (`Alta.Networking.Socket`, see [Sockets and connections](../game-api/networking/connections.md#socket)), with that socket. TavernLib raises it from a Harmony postfix on the `Socket` constructor, after the constructor has set `Socket.Current` to the new socket.
 
 - **Client:** the first time you join a server, from `ConnectToServerUtility.ConnectToServer`. The game keeps that socket for later joins until it's destroyed, then makes a new one.
-- **Server:** once, when it starts hosting. `ServerLifetimePipeline.StartServerHandler` makes the socket on the game port, then sets `NetworkSceneManager.IsServer` and creates the `ServerHandler`. So when your handler runs, `ServerHandler.Current` isn't the new server yet.
+- **Server:** once, when it starts hosting. `ServerLifetimePipeline.StartServerHandler` ([Server lifecycle](../game-api/networking/server-lifecycle.md#starting)) makes the socket on the game port, then sets `NetworkSceneManager.IsServer` and creates the `ServerHandler`. So when your handler runs, `ServerHandler.Current` isn't the new server yet.
 - **Threading:** it runs inside `NetworkManager.CreateSocket`, on whatever thread called that. Both callers are `async` game methods in the game's own start-up and join flow, so as far as we can tell that's the main thread.
 
 It's mostly useful for its `ConnectionCreated` event, which fires for each new `Connection` on that socket. That's where you set handlers for your own [network messages](network-messages.md), the way TavernLib sets up its roles message.

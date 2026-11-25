@@ -15,12 +15,12 @@ It keeps every live agent in a linked list and runs them all from one update mod
 It registers one method on the update module **"AI Agent Updater"** (`UpdateSegment.FixedUpdate`, included in server profiling) when the server starts. Each physics tick it:
 
 1. Copies each player's head position into `Player.Position` (null if they have no controller).
-2. Raises each agent's priority. Every agent gains at least `minPriorityIncrement` (1), plus up to `maxPriorityIncrement` (100) the nearer the closest player it's spawned for is. Past `furthestDistanceSquared` (10,000, so 100 m) it only gets the minimum.
+2. Raises each agent's priority. Every agent gains at least `minPriorityIncrement` (1), and up to `maxPriorityIncrement` (100) in total the nearer the closest player it's spawned for is. The extra falls off with the squared distance, and past `furthestDistanceSquared` (10,000, so 100 m) it only gets the minimum. Agents whose entity is gone or being destroyed are dropped from the list here.
 3. Sorts the list so the highest priority comes first. The time for steps 2 and 3 goes into `SortingAgentsTimeMs`.
-4. Goes down the list letting agents decide. It wants `updateCount` (5) agents to actually make a decision. An agent that isn't due yet (its `UpdateInterval` hasn't passed, or its action can't be cancelled) doesn't count, so it keeps going. Each agent it looks at gets its priority reset to 0 and moves to the end of the list.
+4. Goes down the list letting agents decide. It wants `updateCount` agents to actually make a decision (see below for the value). An agent that isn't due yet (its `UpdateInterval` hasn't passed, or its action can't be cancelled) doesn't count, so it keeps going. Each agent it looks at gets its priority reset to 0 and moves to the end of the list.
 5. Calls `UpdateAgent` on **every** agent: hurt fades, and the running action gets its `Update`. This time goes into `UpdatingAgentsTimeMs`.
 
-The numbers are the serialized defaults. The scene's copy may set others.
+The numbers are the serialized defaults. The scenes set their own `updateCount` (asset values): **15 in the main world scene** (`level4`, and `level6`) and 3 in the tutorial islands (`level5`, and `level8`). The other three fields keep the defaults in every scene. See [The scenes](../world/overview.md#the-scenes) for which scene is which.
 
 So near a player, creatures re-think quickly; far away they wait their turn. But every agent's action updates every tick, however far it is. An exception in an agent's priority, decision or update is logged and removes that agent from the list, so it stops thinking for good (it isn't re-registered).
 
@@ -48,7 +48,7 @@ Path searches don't count here: they run on the A* library's own threads (see [M
 ## Hooking it
 
 - Don't patch `UpdateAgents` itself unless you must: it's private and runs every physics tick.
-- To change how many creatures think per tick or how far priority reaches, set the private fields `updateCount`, `furthestDistanceSquared`, `minPriorityIncrement` and `maxPriorityIncrement` on `AgentUpdater.Instance` with `Traverse` or `AccessTools.FieldRefAccess`, after the scene loads. They're read every tick.
+- To change how many creatures think per tick (15 on the main world) or how far priority reaches, set the private fields `updateCount`, `furthestDistanceSquared`, `minPriorityIncrement` and `maxPriorityIncrement` on `AgentUpdater.Instance` with `Traverse` or `AccessTools.FieldRefAccess`, after the scene loads. They're read every tick.
 - To slow one creature's thinking, change its `updateInterval` field (private, on `Agent`). Thinking less often makes it slower to react, not cheaper to update.
 
 ## See also

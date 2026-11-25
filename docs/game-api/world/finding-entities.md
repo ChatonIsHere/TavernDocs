@@ -11,7 +11,7 @@ There's no "find all chests" call. You either walk the scene's entity table, wal
 | Way | Side | Covers | Cost |
 | --- | --- | --- | --- |
 | `EntityManager.IterateEntities()` | Both | Every entity with an id, in or out of a chunk, embedded parts included. | Walks a linked list of the used slots. Cheap per entity. |
-| `Chunk.ChunksByIndex` then `chunk.Entities.Entities` | Server | Entities directly in a chunk (not their chunking children). | One list per chunk. |
+| `Chunk.ChunksByIndex` then `chunk.Entities.Entities` | Server | Entities in a chunk, including docked items and other chunking children. | One list per chunk. |
 | `NetworkSceneManager.Current.GetEntity(id)` | Both | One entity by runtime id. | An array lookup. |
 | `Object.FindObjectsOfType<T>()` | Both | Every live component of a type. | Slow; it searches the whole scene. `select prefab` does this. |
 
@@ -98,12 +98,12 @@ public static List<NetworkEntity> Near(Vector3 point, float radius)
 
 | Member | What it does |
 | --- | --- |
-| `IEnumerable<NetworkEntity> Entities { get; }`, `int Count { get; }` | Entities whose `Chunk` is this one. |
+| `IEnumerable<NetworkEntity> Entities { get; }`, `int Count { get; }` | Entities whose `Chunk` is this one, chunking children included. |
 | `bool Contains(NetworkEntity entity)` | Linear search. |
 | `event Action<NetworkEntity> Added`, `Removed` | An entity entered or left. |
 | `event Action<NetworkEntity> EnteredWhileUnloaded` | An entity was put in this chunk while it wasn't loaded. |
 
-Entities riding on a chunking parent (docked items, a bag's contents, mine parts) aren't in the list; they're in `entity.Children`. A docked item's `Chunk` is still its parent's chunk.
+Entities riding on a chunking parent (docked items, a bag's contents, mine parts) are in the list too: they take their parent's chunk, and `Chunker` adds each child to the chunk's list along with its parent. Skip them with `entity.ChunkingParent != null` if you only want top-level things, or reach them from the parent through `entity.Children`. The chunk's save only writes the `Base` ones; children save inside their parent.
 
 A chunk that isn't loaded has no entities in memory. They're in its save. Loaded on demand with `ForceLoad`, see [Chunk loading and saving](chunk-loading-and-saving.md).
 

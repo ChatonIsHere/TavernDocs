@@ -6,7 +6,7 @@ sidebar_position: 11
 
 # Settings and files
 
-Where the game keeps its settings and files, and the helpers it uses to read and write them. Both sides; server settings themselves (`ServerHandler.Current.ServerConfig`) belong to the Networking and game systems areas.
+Where the game keeps its settings and files, and the helpers it uses to read and write them. Both sides. Server settings themselves (`ServerHandler.Current.ServerConfig`) are on [Server settings](../networking/server-settings.md) in the Networking area, and [Game systems](../game-systems/overview.md) lists which systems read them.
 
 ## SettingsManager
 
@@ -30,7 +30,7 @@ SettingsManager.GameConfig.SettingsChanged += changed => MelonLogger.Msg("GameCo
 
 `Alta.Utilities.GameSettings : Settings, ICloneable` in `Root.Township`. Marked `[Obsolete("Use GlobalConstants instead.")]`, but it's still what `GameConfig` holds and the game still reads it everywhere. Suppress warning CS0618 where you use it.
 
-Mostly client comfort and controls (locomotion, rotation, haptics, volumes, resolution scales, accessibility). The field-by-field list is in the GameConfiguration.json field reference; three matter to modders:
+Mostly client comfort and controls (locomotion, rotation, haptics, volumes, resolution scales, accessibility). The player-facing list is on [Game settings](../../help/game-settings.md); three fields matter to modders:
 
 - `ModsDirectoryPath` (`mods_directory_path` in the JSON): the folder for the game's own script mods.
 - `ApiEndpoint`: which web API to use, unless a command-line flag picks one.

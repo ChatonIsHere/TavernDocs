@@ -65,11 +65,11 @@ The client for Alta's dead web API, and the data types it used (`UserInfo`, `Use
 
 ## Alta.Serialization.Runtime
 
-The bit-level serializer behind every network message and save: `Alta.Serialization.Stream` (abstract, with `IsReading` and `IsWriting` and `Serialize...(ref value)` methods that read or write depending on the direction), `BitReader`, `BitWriter`, `StreamReader`, `StreamWriter`, `StreamCounter`, `Compressor`. Covered in the Networking area.
+The bit-level serializer behind every network message and save: `Alta.Serialization.Stream` (abstract, with `IsReading` and `IsWriting` and `Serialize...(ref value)` methods that read or write depending on the direction), `BitReader`, `BitWriter`, `StreamReader`, `StreamWriter`, `StreamCounter`, `Compressor`. See [Stream](../networking/stream.md) in the Networking area.
 
 ## Alta.NetworkTransport.Runtime
 
-The transport layer under the game's networking: `ITransport`, `ITransportClient`, `ITransportServer`, `ITransportConnection`, `ITransportSocket`, `IPacketProcessor`, `MessageReceivePool`, `AltaNetworkError`, and a kcp transport (`Alta.NetworkingTransport.Kcp`: `KcpTransport`, `KcpClientWrapper`, `KcpServerWrapper`, `KcpSettings`). `Alta.Networking.Connection` itself is in `Root.Township`, but its constructor and members use these types, so you need this reference to compile code that touches a `Connection`. Covered in the Networking area.
+The transport layer under the game's networking: `ITransport`, `ITransportClient`, `ITransportServer`, `ITransportConnection`, `ITransportSocket`, `IPacketProcessor`, `MessageReceivePool`, `AltaNetworkError`, and a kcp transport (`Alta.NetworkingTransport.Kcp`: `KcpTransport`, `KcpClientWrapper`, `KcpServerWrapper`, `KcpSettings`). `Alta.Networking.Connection` itself is in `Root.Township`, but its constructor and members use these types, so you need this reference to compile code that touches a `Connection`. See [Sockets and connections](../networking/connections.md) in the Networking area.
 
 ## Alta.PlatformInformation.Runtime
 
@@ -160,4 +160,4 @@ The game's editor menu system: `AltaMenuItem` (an `ISearchableTool` with a `Run`
 ## See also
 
 - [Overview](overview.md) for where the most-used types live.
-- The Networking area for `Alta.Serialization.Runtime` and `Alta.NetworkTransport.Runtime` in depth.
+- [Stream](../networking/stream.md) and [Sockets and connections](../networking/connections.md) for `Alta.Serialization.Runtime` and `Alta.NetworkTransport.Runtime` in depth.

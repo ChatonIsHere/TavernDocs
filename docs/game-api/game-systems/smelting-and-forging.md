@@ -67,7 +67,7 @@ The server build also has a `smelter` console command ("fixes the smelter", in `
 ## What the game ships
 
 :::note[Asset values]
-Build `main-1.7.2.1.42203`. The reference tables list every recipe, mould and ingot. Item names in recipes are read from the recipe names where the asset points into another file.
+Build `main-1.7.2.1.42203`, checked against a live server's registries. [Recipes](../reference/recipes.md#smelting) lists every smelting recipe and [mould](../reference/recipes.md#moulds), and [Items and materials](../reference/items-and-materials.md#ingots) every ingot.
 :::
 
 The `Smelter` prefab has 2 ore docks, 1 fuel dock and a mould dock. Its `SmelterUnlockManager` starts with `DefaultUpgrades`, or `SimpleServerDefaultUpgrades` (hash 5674) on a simple server:
@@ -94,7 +94,7 @@ Representative recipes (fuel seconds is `Duration`):
 
 A `Darksteel Ingot` recipe exists but no bundle contains it, so no smelter can make it.
 
-For moulds, `Ingot.SmeltingDuration` is 3 for copper, iron, gold, silver, mythril and orchi, 4 for red iron, 6 for white gold, 7 for carsi and 8 for evinon steel and darksteel. A mould costs `Cost` ingots (from 2 for the chisel mould to 8 for the great curve axe head), so an iron axe head curve mould (cost 4) needs 12 fuel seconds, a bit over one fuel item. The plain `Mould` prefab has `usage` -1 (never wears out); `Hebios Crafted Mould` has 3 uses.
+For moulds, `Ingot.SmeltingDuration` is 3 for copper, iron, gold, silver, mythril and orchi, 4 for red iron, 6 for white gold, 7 for carsi and 8 for evinon steel and darksteel. A mould costs `Cost` ingots (from 2 for the chisel and dagger blade moulds to 13 for the war hammer head), so an iron axe head curve mould (cost 4) needs 12 fuel seconds: two fuel items at 10 seconds each. The plain `Mould` prefab has `usage` -1 (never wears out); `Hebios Crafted Mould` has 3 uses.
 
 ## Moulds
 
@@ -153,6 +153,9 @@ On every valid hit (`HandleHit`, from the part's `ImpactDetector.Hit`):
 - **Forging XP** goes through `GainSharedExperience`, then `GainExperience`. See [Progression](progression.md).
 
 ```csharp
+using Alta.Blacksmithing;
+using HarmonyLib;
+
 [HarmonyPatch(typeof(Smelter), nameof(Smelter.InitializeAsServer))]
 static class SmelterFuelPatch
 {

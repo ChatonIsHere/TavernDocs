@@ -36,9 +36,10 @@ On GitHub Actions, TavernLib isn't in att-stubs, so download it first. See [Depe
 
 TavernLib is a plugin, so MelonLoader starts it before any mod. It sets itself up in `OnEarlyInitializeMelon`:
 
-1. On a server, it loads console tokens, runs the `/modlist` reconcile if there is one, and tells MelonLoader which mod folders to load.
-2. On a server, it creates `TavernManager` (which reads the config files) and starts the roles poll.
-3. On both sides, it registers `EntranceMessageHandler`.
+1. On a server, it loads console tokens and runs the `/modlist` reconcile if there is one.
+2. On both sides, it tells MelonLoader which mod build folders to load (`.server` or `.client_windows`). A client also sets up its Quick join preference.
+3. On a server, it creates `TavernManager` (which reads the config files), starts the roles poll and, unless the launcher runs the server, the log archive and backup timers.
+4. On both sides, it registers `EntranceMessageHandler`.
 
 So by your mod's `OnInitializeMelon`, the services are there. Its Harmony patches are applied with the plugin too, except a handful of game command fixes that wait for `OnLateInitializeMelon` (see [Internals](internals.md#patching-from-a-plugin)).
 

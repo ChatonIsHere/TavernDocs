@@ -77,7 +77,7 @@ A target is the build a process runs, not a game scene.
 | `changelog` | Optional text, at most 2000 characters: what changed in this version. Launchers show it when offering the update. |
 | `icons` | Optional list of `{"size", "url"}`, one per size, sizes out of `128`, `256` and `512`. Each `url` is a square PNG of that size, at most 1 MB, under the same rules as `screenshots`. |
 | `screenshots` | Optional list of image URLs for your mod's page. Installers ignore it. |
-| `parity_required` | **Required** `true` or `false`: whether a player needs this mod, at the server's exact version, to join a server running it. It compares versions, not files, so separate client and server builds don't affect it. |
+| `parity_required` | **Required** `true` or `false`: whether a player needs this mod, at the server's exact version, to join a server running it. It compares versions, not files, so separate client and server builds don't affect it. Only a mod with a `client_windows` build can stop a player joining. See [Versions and parity](../../tavernlib-api/mod-manager/versions-and-parity.md#modparity). |
 | `scenes` | Optional list of the scenes the mod works in, out of `normal`, `quest`, `tutorial`. Leave it out to mean all. |
 | `dependencies` | Always present. `{}` or `{"<mod id>": "<minimum version>"}`, versions as strings. |
 | `incompatible_with` | Optional. `{"<mod id>": {"note": "<why, at most 300 characters>", "below": "<first version of that mod that works>"}}`, `below` optional. Each id must be in TavernMods and not one the mod depends on. See [Incompatible mods](submitting.md#incompatible-mods). |

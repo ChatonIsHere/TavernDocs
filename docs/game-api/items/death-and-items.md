@@ -6,7 +6,7 @@ sidebar_position: 13
 
 # Death and items
 
-A player at 0 health isn't dead yet: they're **downed**. They die when the downed timer runs out, and respawn a while after. Each step does something to their items. All of it is decided on the server, in the player state classes in `Alta.PlayerStates` (the states themselves belong to the game systems area; this page covers the items).
+A player at 0 health isn't dead yet: they're **downed**. They die when the downed timer runs out, and respawn a while after. Each step does something to their items. All of it is decided on the server, in the player state classes in `Alta.PlayerStates` (the states themselves are on [Player states](../networking/player-states.md); this page covers the items).
 
 One server setting decides most of it: `ServerSettings.DropAllOnDeath` (`ServerHandler.Current.ServerConfig.Settings.DropAllOnDeath`).
 
@@ -53,7 +53,7 @@ From the server settings (code defaults) and the `DownedStateSettings` and `Dead
 | Revive orbs around the grave | 3, each adds 15 s to the downed timer | `numberOfRevivalOrbsToSpawn`, `secondsAddedToRevivalTimerPerOrb` |
 | Health after a revive | 50 % of maximum | `healthPercentageForRevivedPlayers` |
 | Debuff after a revive | Speed × 0.7 for 30 s | `respawnDebuffs`, `respawnDebuffDurationInSeconds` |
-| From death to respawn | 1 s of fog, 5 s wait, 0.5 s fade | `timeToIncreaseFog`, `timeToRespawn`, `fadeInOutTime` |
+| From death to respawn | 1 s of fog, 5 s wait, 0.5 s fade | `timeToIncreaseFog`, `timeToRespawn`, `fadeInOutTime`. The server's `RespawnTimeSeconds` setting (4) isn't read by `DeadState`. |
 | Stats reset on death | Cripple health, health, poison, nightmare, both hand staminas | `statsToResetOnDeath` |
 | Stats changed on death | Hunger below 0.6 is raised to 0.6, and fullness is then set to 0. With the server's `IsResetingHungerOnDeath` setting on, hunger is then reset to its default as well. | `statsToModifyOnDeath`, `StatManager.DeathReset` |
 
@@ -72,6 +72,9 @@ The methods are private, so patch them by name (or against att-stubs' publicized
 | `DeadState.OnActivate` | Server, on death. | Anything at the moment of death. It's `protected override`. |
 
 ```csharp
+using HarmonyLib;
+using MelonLoader;
+
 [HarmonyPatch(typeof(Alta.PlayerStates.DeadState), "DropPickups")]
 static class BeforeDeathDrop
 {
@@ -85,7 +88,7 @@ static class BeforeDeathDrop
 A prefix that returns false on `DropPickups` leaves the items in the old body's docks when the player is saved, so the new body gets them back. The old body is later removed with `DestroyPlayerControllerAndOldEntities(isUndocking: true, ...)`, which looks like it can drop those same items into the world: a duplication risk. Test it on a real server before you ship it.
 
 :::tip
-For a mod that only needs to know a player died, `ConsoleEvents.PlayerKilled` and the downed and dead states are covered in the console and game systems areas. `PlayerHealth.Downed` is the server's first signal.
+For a mod that only needs to know a player died, see [Console events](../console-and-utilities/console-events.md) for `ConsoleEvents.PlayerKilled` and [Player states](../networking/player-states.md) for the downed and dead states. `PlayerHealth.Downed` is the server's first signal.
 :::
 
 ## See also

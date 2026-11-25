@@ -71,7 +71,7 @@ public static class Register
 
 ## Module names
 
-The game keeps one top-level module per name. When `Collect` finds a module whose name is already taken, it **removes the old module and keeps the new one**, commands and all. Whichever is collected last wins.
+The game keeps one top-level module per name. When `Collect` finds a module whose name is already taken, it **removes the old module and keeps the new one**, commands and all. Whichever is collected last wins (see [CommandCollection](../game-api/console-and-utilities/commands.md#commandcollection)).
 
 So never reuse a module name that's already there. These are taken:
 
@@ -84,7 +84,7 @@ So never reuse a module name that's already there. These are taken:
 | `chunks` | TavernLib |
 | `document` | TavernLib: writes an HTML page of every command |
 
-TavernLib collects its commands in its `OnInitializeMelon`, which runs before mods start, so a mod that reuses `player` would replace TavernLib's whole `player` module. The game has many more (`help`, `time`, `select`, `settings`, `wacky`, `world` and so on); run `document` on a server for the full list.
+TavernLib collects its commands in its `OnInitializeMelon`, which runs before mods start, so a mod that reuses `player` would replace TavernLib's whole `player` module. The game has many more (`help`, `time`, `select`, `settings`, `wacky`, `world` and so on); [Built-in commands](../game-api/console-and-utilities/built-in-commands.md) lists them, and `document` on a server writes the full list. The server build has no `player`, `chunks` or `document` module of its own, so TavernLib's replace nothing.
 
 Submodules don't clash this way. Add your own top-level module, and use submodules inside it.
 
@@ -98,7 +98,7 @@ Hosts can make [named tokens](../host/console-and-tokens.md#named-tokens) that m
 - **`repeat` and anything under `token` can't be granted.** `token whoami` is always allowed. A `full` token can run everything else.
 - **Hidden, not just refused.** TavernLib checks every module and command as the game searches and lists them (a postfix on `CommandPart.RequirementsAreMet`), so a token doesn't see what it can't run.
 - **Paths are checked when the token is made.** `token create` refuses a path the server doesn't have. Collect your commands at start, so a host can make a token for them right away.
-- **Only on the websocket console (1760).** Port 1758 runs every command as the server itself.
+- **Only on the websocket console (1760).** The game's other console, TCP port 1758, would run every command as the server itself, so TavernLib closes it as soon as it starts. [Remote console](../game-api/console-and-utilities/remote-console.md) covers both.
 
 So, for your mod:
 
@@ -118,12 +118,12 @@ That policy name is how TavernLib's `internal` `ConsoleAuth` works, not an API, 
 
 ## Threading
 
-Websocket console commands are queued onto the main thread (`MainThreadDispatcher.Run` in `WebSocketCommandHandler`), so your command runs there and can touch the game. A command that returns a `Task` can await, but anything after the first `await` may not be on the main thread.
+Websocket console commands are queued onto the main thread (`MainThreadDispatcher.Run` in `WebSocketCommandHandler`), so your command runs there and can touch the game. A command that returns a `Task` can await: Unity's synchronization context brings the rest of it back to the main thread, unless you leave it with `Task.Run` or `ConfigureAwait(false)`. See [Threads, coroutines and the timeline](../game-api/console-and-utilities/threads-coroutines-and-timeline.md).
 
 ## What else TavernLib does to the console
 
 - **Logging.** Every command run on 1760 is written to `console_token_log.jsonl` with the token id, address and result. Anything shaped like a token in a command or its output is replaced with `[token]`. The `token` module's own results are kept out of the game's log.
-- **The game's broken commands.** `GameCommandPatches` makes these answer properly instead of saying Success having done nothing: `time set` (an unknown keyword), `time ofday` (replaced, so it answers the time), `settings ... possible`, `select move exact`, `select rotate exact`, `wacky destroy` (an id that doesn't exist, or something it can't destroy) and `world caves teleport` (replaced, so it moves the players and says who it moved). If a game build is missing one of these methods, TavernLib logs a warning and skips that patch. A MonoMod hook fixes the selection search behind `select`.
+- **The game's broken commands.** `GameCommandPatches` makes these answer properly instead of saying Success having done nothing: `time set` (an unknown keyword), `time ofday` (replaced, so it answers the time), `settings possible`, `select move exact`, `select rotate exact`, `wacky destroy` (an id that doesn't exist, or something it can't destroy) and `world caves teleport` (replaced, so it moves the players and says who it moved). If a game build is missing one of these methods, TavernLib logs a warning and skips that patch. A MonoMod hook fixes the selection search behind `select`.
 - **Things TavernLib turns off.** `ServerConsoleManager.StartRemoteConsole` is postfixed to close the game's `remoteConsole` straight away, `CommandSync.RouteCommand` is cancelled, and the console's Alta permission and identity checks are skipped (TavernLib's token check replaces them).
 
 ## See also

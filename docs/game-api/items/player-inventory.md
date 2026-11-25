@@ -24,7 +24,7 @@ There's no inventory list in ATT. What a player carries is whatever sits in thei
 `ComponentGroup<T>` implements interfaces from `Alta.Build`. Using `BackDocks` or `BeltDocks` from your mod needs a reference to `Alta.Build.dll` as well as `Root.Township.dll`.
 :::
 
-The four belt entries, in the group's order (asset values, build main-1.7.2.1.42203):
+The four belt entries (asset values, build main-1.7.2.1.42203). The order is the order of the objects under `Belt Docks` in the prefab; the asset dump doesn't name the group's own references, so check `dock.Settings.name` or the object name if the order matters to you:
 
 | Index | Object in the prefab | Settings | Takes |
 | --- | --- | --- | --- |
@@ -38,6 +38,9 @@ The four belt entries, in the group's order (asset values, build main-1.7.2.1.42
 ## Reading it
 
 ```csharp
+// Your own names for the four belt entries, in index order.
+static readonly string[] BeltNames = { "right tool", "right pouch", "left pouch", "left tool" };
+
 public static IEnumerable<string> Describe(PlayerCharacter character)
 {
     foreach (var (name, controller) in new[] { ("left hand", character.LeftController), ("right hand", character.RightController) })
@@ -61,7 +64,7 @@ public static IEnumerable<string> Describe(PlayerCharacter character)
 }
 ```
 
-`BeltNames` is a `string[]` with your own names for the four entries, for example the object names above. Read quantities on the server: clients only learn them through sync. A pouch in a belt slot shows up as one pouch; its contents are in the pouch's own dock.
+`BeltNames` holds your own names for the four entries, here taken from the object names above. Read quantities on the server: clients only learn them through sync. A pouch in a belt slot shows up as one pouch; its contents are in the pouch's own dock.
 
 ## Bags
 
@@ -130,7 +133,7 @@ Other helpers in `SpawnHelper` (no namespace):
 | `bool SpawnDocked(uint prefabHash, int count, ...)` | Same, by prefab hash. |
 | `NetworkEntity SpawnPouchOrPickup(Item, int count, SpawnData, Chunk, Vector3 position, Quaternion rotation = default)` | A loose item, or a pouch of them if `count > 1` and it stacks. |
 
-To put an existing item into a hand, see [Interactor and hands](interactor-and-hands.md#driving-hands-from-the-server). To move a held item into a slot, see [Docks](docks.md#docking-from-code). Spawning in general is in the world area.
+To put an existing item into a hand, see [Interactor and hands](interactor-and-hands.md#driving-hands-from-the-server). To move a held item into a slot, see [Docks](docks.md#docking-from-code). Spawning in general is in [Spawning](../world/spawning.md).
 
 ## Alta.Character.Inventory
 

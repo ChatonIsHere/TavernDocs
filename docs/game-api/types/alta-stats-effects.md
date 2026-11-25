@@ -6,7 +6,7 @@ sidebar_position: 8
 
 # Stats, effects, heat and liquid
 
-Types in Alta.StatSystem, Alta.Alchemy, Alta.Heat and Alta.Liquid. 185 types, 72 with a hand-written page.
+Types in Alta.StatSystem, Alta.Alchemy, Alta.Heat and Alta.Liquid. 185 types, 73 with a hand-written page.
 
 See [the overview](overview.md) for what the columns mean and how this list is made.
 
@@ -34,7 +34,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | `EnvironmentalEffect<T>` | abstract class | `DurationEffect<T>` | 4 |  |
 | `FireExtinguishingFluid` | class | `MonoBehaviour` | 0 | [Heat](../game-systems/heat.md) |
 | `IEffectDefinition` | interface |  | 1 |  |
-| `InateEffect` | class | `EffectDefinition` | 0 |  |
+| `InateEffect` | class | `EffectDefinition` | 0 | [Effects](../game-systems/effects.md) |
 | `PlayerEffectController` | class | `EffectHandler` | 3 |  |
 | `PoisonEffect` | class | `EffectDefinition` | 1 | [Effects](../game-systems/effects.md): Positive strength adds a poison stack, negative removes one. Needs `target.Health`. |
 | `RevealEffect` | class | `EffectDefinition` | 0 | [Effects](../game-systems/effects.md): Raises the handler's `OnReveal`. |

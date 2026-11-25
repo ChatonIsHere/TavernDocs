@@ -39,6 +39,10 @@ That makes a prefix on `ActionExecuted` a cheap way to hear about many actions. 
 - `ActionExecuted` catches and logs any exception from its own work. `Eater` calls it on clients too, so check `NetworkSceneManager.IsServer` if you only want the server's report.
 
 ```csharp
+using Alta.Networking.Scripts.Player;
+using HarmonyLib;
+using MelonLoader;
+
 [HarmonyPatch(typeof(GameTaskManager), nameof(GameTaskManager.ActionExecuted))]
 static class ActionPatch
 {

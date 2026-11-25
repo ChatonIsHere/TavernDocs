@@ -11,7 +11,7 @@ Both sides. Everything networked in the world is a `NetworkEntity` (`Alta.Networ
 - **Entity messages**: one-off calls addressed to one entity, like "this player teleported" or "this stat changed". They travel inside the `EntityInternal` [connection message](messages.md). This is what you'd use from a mod.
 - **Serialized state**: each frame, behaviours that implement `INetworkSerialized` write their state (positions, rotations) into the `SceneSerialize` connection message, for entities that changed.
 
-What entities are and how they're spawned and chunked is covered more in the world area. This page is about the networking side.
+What entities are and how they're spawned and chunked is covered in [World, entities and spawning](../world/overview.md), starting with [NetworkEntity](../world/network-entity.md). This page is about the networking side.
 
 ## Who owns what
 
@@ -182,10 +182,10 @@ The base class for networked components. `Entity` gets the `NetworkEntity`. Over
 | Member | What it does | Notes |
 | --- | --- | --- |
 | `NetworkEntity Spawn(NetworkPrefab prefab)`, `NetworkEntity SpawnInternal(uint prefabHash)` | Spawn a prefab. | Server only. A client logs "Cant spawn as client" and returns `null`. |
-| `void Destroy(NetworkEntity entity, bool isUnload = false)` | Destroy it everywhere. | |
+| `void Destroy(NetworkEntity entity, bool isUnload = false)` | Destroy it everywhere. | Server only. A client logs "Destroy should not be called on clients". |
 | `bool WaitForSpawn(uint entityIdentifier, EntitySpawnedHandler handler)`, `Task<NetworkEntity> WaitForSpawnAsync(uint id)` | Run something once an entity id exists. | Mostly for clients. |
 
-`NetworkSceneManager.Current.GetEntity(uint id)` finds an entity by id. Spawning items, where they go and how they're set up is covered in the items and world areas.
+`NetworkSceneManager.Current.GetEntity(uint id)` finds an entity by id. How to spawn things and set them up is on [Spawning](../world/spawning.md) and [Destroying and despawning](../world/destroying.md); items into docks and as pouches are on [Player inventory](../items/player-inventory.md).
 
 ## See also
 

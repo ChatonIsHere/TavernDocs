@@ -18,7 +18,7 @@ Get one with `GetComponent<HealthObject>()` on the entity, `detector.HealthTarge
 | --- | --- | --- |
 | `float Health { get; set; }` | Current health. Setting it sets the health stat's base. | Set it on the server. |
 | `float MaxHealth { get; set; }` | Maximum. If health was full, setting this keeps it full. | |
-| `StatManager StatManager { get; }` | The entity's stats. Health is the stat named `health`. | Stat system area. |
+| `StatManager StatManager { get; }` | The entity's stats. Health is the stat named `health`. | See [Stats](../game-systems/stats.md). |
 | `bool HasCrippleStat { get; }` / `Stat CrippleStat { get; }` | The cripple stat, if any (players have one). | |
 | `DamageData LastHit { get; }` | The last thing that changed health. | On the server it's cleared right after each impact. |
 | `bool IsCombatant { get; }` | Being hurt by a player puts that player in combat. | |
@@ -39,7 +39,7 @@ Get one with `GetComponent<HealthObject>()` on the entity, `detector.HealthTarge
 
 For a weapon hit, the numbers multiply up like this:
 
-1. `ImpactHit.HealthDamage`: the impactor's health modifier, times effectiveness, times the server's `DamageX` setting, times the hit's multipliers (tool damage, material, one-off multiplier).
+1. `ImpactHit.HealthDamage`: the impactor's health modifier, times effectiveness, times the server's `DamageX` setting, times the hit's `Multipliers` and `HealthMultiplier`. The impactor's modifier already includes the material's damage multiplier (or a creature's damage stat, for a `FixedImpactor`). The hit's `Multipliers` is the tool's `Damage` times its `OneOffMultiplier`, times the wielder's `damage` stat when the hit was worked out by `GenerateHit` (not for hits rebuilt from `SyncImpact`, see [Impacts](impacts.md#who-works-it-out)).
 2. `HealthObject.DetectImpact`: times the target's multiplier for that `ImpactType`, times the armour on the struck detector.
 3. `ReceiveDamage`: divided by the target's damage protection stat, if it has one. Cripple damage the same, with the cripple protection stat.
 4. For players, `PlayerHealth.ReceiveDamage` applies the PvP and player-damage settings first (below).
@@ -56,7 +56,7 @@ When health reaches 0 on the server, a `HealthObject` calls `OnKilled`: `Killed`
 | `event Action<DamageState> HandleDamage` | Runs before each hit is applied. Call `SetAsHandled()` to cancel it. | Server only. |
 | `event Action<DamageData> Downed` | Health reached 0. | Server. A player isn't killed at 0, they're downed. See [Death and items](death-and-items.md). |
 | `static ToggleBool ArePlayersAvoidingDamage` | The `immortals` toggle: while on, every player's health can't drop below its maximum. | Server. |
-| `void GrantInvincibilityToImpacts(float seconds)` | Ignores weapon hits for a while. | Server. An `async void`; it runs on the main thread. |
+| `void GrantInvincibilityToImpacts(float seconds)` | Ignores weapon hits (`DamageSource.Impact`) for a while. | Server. An `async void`; it runs on the main thread. The game calls it when a body is linked to its player (so after every spawn and respawn) and after a cave teleport, for the server's `ImpactInvincibilityTime` (12 s by default). |
 | `override void ReceiveDamage(...)` | See below. | |
 
 `PlayerHealth.ReceiveDamage` (server), in order:
@@ -83,7 +83,7 @@ The settings come from `ServerHandler.Current.ServerConfig.Settings` (`Alta.Util
 | `Poison` | Poison effects (`EffectHandler`, `PoisonStat`). |
 | `Hunger` | Starving (`HungerStat`). |
 | `Fire` | Heat (`HeatManager`). |
-| `Command` | Console commands. TavernLib's kill command uses it. |
+| `Command` | Not created anywhere in the game's own code. TavernLib's kill command uses it. |
 | `Unknown` | Fallback in kill logs. |
 
 ## AOEDamage
@@ -92,26 +92,13 @@ The settings come from `ServerHandler.Current.ServerConfig.Settings` (`Alta.Util
 
 ## Asset values
 
-Asset values (build main-1.7.2.1.42203). The reference tables have the creatures and breakables in full.
+Asset values (build main-1.7.2.1.42203). Every creature's health and multipliers are in the [Creatures](../reference/creatures.md) reference table; breakables and resource nodes are listed in [Spawnable prefabs](../reference/spawnable-prefabs.md#breakable-or-resource-node), without their health.
 
 ### Players
 
-The player prefab `VR Player Character New` puts its `PlayerHealth` and `StatManager` on `Static Controllers/Health`, with 9 `ImpactDetector`s (head, chest, `Cog` at the hips, both shoulders, elbows and wrists), all with `Player Body Impact` settings and hardness 0. Its stats include:
+The player prefab `VR Player Character New` puts its `PlayerHealth` and `StatManager` on `Static Controllers/Health`, with 9 `ImpactDetector`s (head, chest, `Cog` at the hips, both shoulders, elbows and wrists), all with `Player Body Impact` settings and hardness 0. A new player has `health` 2 (maximum 2, and `maxhealth` can lift the cap to 31), `cripplehealth` 1, and `damage`, damage protection and cripple damage protection all at 1. Every player stat is in [Player defaults](../reference/stats.md#player-defaults).
 
-| Stat name | Start | Min | Max |
-| --- | --- | --- | --- |
-| `health` | 2 | 0 | 2 |
-| `maxhealth` | 2 | 0 | 31 |
-| `cripplehealth` | 1 | 0 | 1 |
-| `damage` (the wielder's damage stat) | 1 | 0 | 15 |
-| `damageprotection` (damage protection) | 1 | 0.1 | 10 |
-| `damageprotection` (cripple damage protection) | 1 | 0.1 | 10 |
-| `poison` | 0 | 0 | 31 |
-| `hunger` | 2 | 0 | 2 |
-| `fullness` | 3 | 0 | 6 |
-| `speed` | 1 | 0 | 15 |
-
-Two stats share the name `damageprotection`. The game finds them by definition asset (`PickupTypeSettings.DamageProtectionDefinition` and `CrippleDamageProtectionDefinition`), so that works, but looking one up by name gets you whichever comes first.
+The two protection stats share the name `damageprotection` in the assets. The game finds them by definition asset (`PickupTypeSettings.DamageProtectionDefinition` and `CrippleDamageProtectionDefinition`), so that works, but looking one up by name gets you whichever comes first. TavernLib renames the cripple one to `crippledamageprotection` (see [Stats](../game-systems/stats.md)).
 
 `PlayerHealth.multipliers` is one entry: `Spiritual` × 0.2. A player is a combatant.
 
@@ -133,6 +120,9 @@ So a Wyrm takes 4 perfect Short Sword slashes, and a Breakable Box breaks to any
 No fall damage, on the server:
 
 ```csharp
+using Alta.Impact;
+using HarmonyLib;
+
 [HarmonyPatch(typeof(PlayerHealth), nameof(PlayerHealth.ReceiveDamage))]
 static class NoFallDamage
 {
@@ -157,6 +147,10 @@ You need to subscribe for each player body as it spawns, and a new body comes wi
 Log kills:
 
 ```csharp
+using Alta.Impact;
+using HarmonyLib;
+using MelonLoader;
+
 [HarmonyPatch(typeof(HealthObject), nameof(HealthObject.OnKilled))]
 static class LogKills
 {

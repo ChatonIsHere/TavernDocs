@@ -43,7 +43,7 @@ TavernLib tells MelonLoader which build folder to load at start: `.server` on a 
 Lists everything in `Mods`, the way the launcher's Mod Manager does:
 
 - A folder is **installed** (ours) if it has a `manifest.json` or `manifest.disabled.json` whose `id` is the folder's name and whose `parity_required` is a boolean.
-- A folder with a `manifest.json` that isn't ours, a `.dll`, or a `.dll.disabled` is **untracked**.
+- A folder with a `manifest.json` or `manifest.disabled.json` that isn't ours, a `.dll`, or a `.dll.disabled` is **untracked** (off when it's the `.disabled` one).
 - Names starting with `.` or `~` are skipped.
 - No `Mods` folder gives two empty lists.
 

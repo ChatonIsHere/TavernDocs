@@ -47,9 +47,9 @@ foreach (IPlayer player in Player.AllPlayers)
 | `PlayerCharacter PlayerCharacter { get; }` | The body cast to the VR body. Throws (invalid cast) if the body is a fly cam. | Both. |
 | `Transform PlayerTransform { get; }` | The body's transform if there is one, else the `Player`'s. | Both. |
 | `PlayerStateManager StateManager { get; }` | Their states. See [Player states](player-states.md). | Both. |
-| `PlayerProgressionManager ProgressionManager`, `PlayerUnlockManager UnlockManager` | Skills and unlocks. | Covered in the game systems area. |
+| `PlayerProgressionManager ProgressionManager`, `PlayerUnlockManager UnlockManager` | Skills and unlocks. | See [Progression](../game-systems/progression.md) and [Skills and unlocks](../game-systems/skills-and-unlocks.md). |
 | `PlayerEventsManager PlayerEventsManager { get; }` | Gameplay events about this player (armed, and others). | |
-| `PlayerChunkManager ChunkManager { get; }` | Which chunks are loaded for them. | Server mostly. Covered in the world area. |
+| `PlayerChunkManager ChunkManager { get; }` | Which chunks are loaded for them. | Server mostly. See [Chunk loading and saving](../world/chunk-loading-and-saving.md). |
 | `PlayerCharacterCustomizationManager Customization { get; }` | Their cosmetics. | |
 | `FriendshipManager FriendshipManager { get; }` | Friends (Alta's API, dead). | |
 | `PlayerSave Save { get; }` | Their save data. See [Saving](saving.md). | Server. |

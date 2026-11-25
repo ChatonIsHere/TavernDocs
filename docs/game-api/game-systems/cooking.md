@@ -25,7 +25,7 @@ It's disabled until, on the server, its `CookingPoint` goes above the weak cooki
 - **Cooking** (if `IsCookable`): above `WeakCookingTemperature`, `CookedProgress` rises. The time to cook goes from the weak duration at the weak temperature to the optimal duration at the optimal temperature. Below the weak temperature, progress decays over `CookingSettings.CookableDecayDuration` seconds. At 1 it swaps to `cookedVersion`.
 - Docking the item resets cooked progress and turns it off again.
 
-The code's `CookingTemperatures` defaults are weak 80 for 60 s, optimal 180 for 30 s, burning 200 for 10 s, instant burn 220. In the assets (build `main-1.7.2.1.42203`), 141 of the 159 `Cookable` components use exactly those. The exceptions are slower or hotter foods, for example:
+The code's `CookingTemperatures` defaults are weak 80 for 60 s, optimal 180 for 30 s, burning 200 for 10 s, instant burn 220. In the assets (build `main-1.7.2.1.42203`), about 140 of the 160 `Cookable` components use exactly those. The exceptions are slower or hotter foods, for example:
 
 | Food | Weak | Optimal | Burning | Instant burn |
 | --- | --- | --- | --- | --- |
@@ -35,7 +35,7 @@ The code's `CookingTemperatures` defaults are weak 80 for 60 s, optimal 180 for 
 | Potato Full Ripe and Cooked | 110 for 60 s | 180 for 30 s | 200 for 60 s | 220 |
 | Apple core | 60 for 60 s | 150 for 30 s | 180 for 10 s | 250 |
 
-So a typical food over a fire at 180 or more cooks in 30 seconds, and if it gets above 200 it burns 10 seconds later. The reference tables have every food.
+So a typical food over a fire at 180 or more cooks in 30 seconds, and if it gets above 200 it burns 10 seconds later. [Cookables and garnishes](../reference/recipes.md#cookables-and-garnishes) lists every food's stew category and effects (not its temperatures).
 
 | Member | What it does | Notes |
 | --- | --- | --- |
@@ -101,7 +101,7 @@ Private steps worth knowing (CookingLib patches most of them):
 `GlobalSettings<CookingSettings>.Instance`. `CookableDecayDuration`, `MinimumStewingTemperature`, `DefaultStew`, `NonRecipeStewPrefab`, `GlobalStewEffects`, `MaxNumberOfItemsInStew` (the network limit), `IsAssumingNoEffectModificationOnMissing` and the dissolve effects.
 
 :::note[Asset values]
-Build `main-1.7.2.1.42203`.
+Build `main-1.7.2.1.42203`, checked against a live server's `CookingSettings`.
 :::
 
 | Setting | Value |
@@ -121,7 +121,7 @@ There are 15 stew recipes. Two examples:
 | Poultry Potato Stew | 2 Poultry, 2 Potato | none | damage buff x1.3, `Nourish` x1.1 |
 | Vegetable Ragu | Eggplant, Onion, Carrot, Tomato | `Nourish` 0.3 | damage protection buff x1.35, `Nourish` x1.1 |
 
-Ingredient slots are categories (Berries, Fruit, Garnish, Mushrooms, Pork, Poultry, Vegetables) or collections (Brown, Red, Cave and Glowing Mushroom, Carrot, Eggplant, Onion, Potato, Pumpkin, Tomato). Each recipe lists one possible liquid, a reference the dump can't name; it's probably water. The reference tables list all 15 recipes.
+Ingredient slots are categories (Berries, Fruit, Garnish, Mushrooms, Pork, Poultry, Vegetables) or collections (Brown, Red, Cave and Glowing Mushroom, Carrot, Eggplant, Onion, Potato, Pumpkin, Tomato). Every recipe takes `Water` as its only liquid (checked against a live server). [Recipes](../reference/recipes.md#stews) lists all 15, with their ingredients and effects.
 
 ## Hooking it
 
@@ -131,6 +131,12 @@ Ingredient slots are categories (Berries, Fruit, Garnish, Mushrooms, Pork, Poult
 - **New ingredients or recipes** need `CookableItem`s and `StewRecipe` assets that exist on clients too, since stews and their effects are sent by hash. That's what CookingLib provides.
 
 ```csharp
+using System.Collections.Generic;
+using System.Linq;
+using Alta.Alchemy;
+using Alta.Cooking;
+using HarmonyLib;
+
 [HarmonyPatch(typeof(StewRecipe), nameof(StewRecipe.GetStewEffects))]
 static class StrongerStewPatch
 {
@@ -150,6 +156,9 @@ static class StrongerStewPatch
 Food roasts a quarter faster with this. The method and the `cookedProgress` field are private, so the patch names them by string:
 
 ```csharp
+using Alta.Cooking;
+using HarmonyLib;
+
 [HarmonyPatch(typeof(Cookable), "AdvanceCookedProgressForTemperature")]
 static class FasterRoastPatch
 {

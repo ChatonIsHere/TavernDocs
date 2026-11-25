@@ -12,18 +12,9 @@ The game sends everything between server and players as messages, each starting 
 
 ## The 8-bit message type
 
-The game writes a message's type in 5 bits, so it can only have 32 types (0 to 31). Its own `Alta.Networking.MessageType` enum goes up to `VoiceChat = 30`.
+The game writes a message's type in 5 bits (0 to 31). Its own `Alta.Networking.MessageType` enum goes up to `VoiceChat = 30`. TavernLib's `MessageExpanderPatch` replaces `MessageProcessor.ProcessSingleMessageFromData` (reading) and `OutgoingPacketManager.StartSerialize` (writing) with prefixes that return `false`, so the type is read and written in 8 bits (0 to 255) and the originals never run.
 
-TavernLib replaces two game methods so the type is written and read in 8 bits instead, which allows 0 to 255:
-
-| Patched | What TavernLib does |
-| --- | --- |
-| `MessageProcessor.ProcessSingleMessageFromData` (prefix, skips the original) | Reads the type as 8 bits, then hands the message to the connection's handler as the game would. |
-| `OutgoingPacketManager.StartSerialize` (prefix, skips the original) | Writes the type as 8 bits. |
-
-This is a change to the wire format. A server and a client only understand each other if both have TavernLib, which every Tavern install does. A game without TavernLib can't talk to a TavernLib server. Rover's notes (`Rover\docs\findings.md`) say the same.
-
-If you patch either method yourself, know that TavernLib's prefix returns `false`, so the original body never runs.
+This changes the wire format: a server and a client only understand each other if both have TavernLib, which every Tavern install does. [Connection messages](../game-api/networking/messages.md#on-the-wire) has the wire layout and the full `MessageType` list.
 
 ## TavernLib's numbers
 
@@ -36,7 +27,7 @@ If you patch either method yourself, know that TavernLib's prefix returns `false
 
 Cast them to the game's type to use them: `(MessageType)TavernMessages.ReceiveRoles`.
 
-Don't use 0 to 31 (the game's) or 32 and 33. There's no registry for the rest, so pick a number, and say which one on your mod's page so other authors can avoid it.
+Don't use 0 to 31 (the game's, though a few are unused) or 32 and 33. Other mods we know of use 18 (SyncLib) and 35 (TavernEssentials); [Connection messages](../game-api/networking/messages.md#messagetype) keeps the list. There's no registry, so pick a number, and say which one on your mod's page so other authors can avoid it.
 
 ## Sending your own
 
@@ -90,10 +81,11 @@ public static class Toast
 - **Threading.** The game receives in an update loop it registers with its `UpdateModule`, so handlers run on the main thread.
 - **A type with no handler** is logged as an error (`Unsupported message type: 120`) and skipped. The rest of the packet still reads, since each message carries its length. So a player without your mod gets an error line, not a crash. Make your mod `parity_required` if both sides must have it (see [Parity](../mod/tavernlib/client-server-or-both.md#parity)).
 - **A handler that throws** is caught and logged by the game.
-- **Size.** Keep messages small. TavernLib's own notes put one game message at about 1100 bytes, which is why its mod refusal text is capped at 700.
+- **Size.** Keep messages small. One game message tops out a little under 1100 bytes (see [Size](../game-api/networking/messages.md#size)), which is why TavernLib caps its mod refusal text at 700 bytes.
 - **The server's handlers.** TavernLib replaces the server's `RequestJoin` handler on each connection to run its join checks. Don't set a handler for the game's own types unless you mean to replace the game's.
 
 ## See also
 
+- [Connection messages](../game-api/networking/messages.md) for the game's side: handlers, `Stream`, size limits
 - [Events](events.md)
 - [Roles](roles.md)

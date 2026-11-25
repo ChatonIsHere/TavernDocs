@@ -7,7 +7,7 @@ description: What TavernLib is, how it loads mods, and how to use it from your o
 
 TavernLib is a MelonLoader plugin that keeps A Township Tale's servers working without Alta. Every Tavern client and server has it, because the launcher's Setup installs it. It handles:
 
-- **Logins.** It runs the login port (1762), makes each player's account and token, and checks passwords, the whitelist and the blacklist.
+- **Logins.** It runs the login port (1762), makes each player's account and token, and checks passwords, the whitelist and the blacklist. When the Windows Server launcher runs the server, the launcher does this part instead.
 - **Mods.** It installs mods from mod sources, picks which build MelonLoader loads, and checks players have the right mods when they join.
 - **Roles.** It reads players' roles from `users.json` and tells the game who's a moderator.
 - **The console.** It runs the websocket console and its tokens.
@@ -35,7 +35,7 @@ You don't need to do anything for this. Publish one build for both targets, or s
 
 ## Using it from your mod
 
-You don't need TavernLib to make a mod. Most mods only use the game and Harmony. Reference it when you want what's on these pages: [roles](roles.md), [events and services](events-and-services.md) and [its folders](folders-and-files.md).
+You don't need TavernLib to make a mod. Most mods only use the game and Harmony. Reference it when you want what's on these pages: [roles](roles.md), [events and services](events-and-services.md) and [its folders](folders-and-files.md). Every part a mod can use is in the [TavernLib API](../../tavernlib-api/overview.md) reference.
 
 Setup installs it at `Plugins\TavernLib.dll` in the game folder. Add to your `.csproj`:
 

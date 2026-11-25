@@ -286,7 +286,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | `StatType` | enum |  | 2 |  |
 | `StatUpgradeEffect` | class | `PooledObject` | 2 |  |
 | `SteamVRDeviceController` | class | `XrDeviceSdkController` | 4 |  |
-| `SteamVRDeviceLifecycle` | class | `VirtualRealityDeviceLifecycle(player, platformDevice)` | 2 |  |
+| `SteamVRDeviceLifecycle` | class | `VirtualRealityDeviceLifecycle` | 2 |  |
 | `SteamVRInputController` | class | `DeviceInputController` | 3 |  |
 | `SteamVRPose` | class |  | 13 |  |
 | `SteelSong` | class | `PickupBasedSkill` | 4 |  |

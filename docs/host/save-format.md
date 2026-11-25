@@ -22,10 +22,11 @@ Servers/-1/
     ├── Players/<id>/Personal Chunk Storage <id>.bytes    Their lockbox
     ├── PlayerGoldBankAccountData/<id>.bytes             Gold in their bank
     ├── PlayerPostboxStorageFileFormat/<id>.bytes        Their postbox
-    ├── LandmarkSaveFormat/<id>.bytes                    Landmarks they've found
+    ├── LandmarkSaveFormat/<id>.bytes                    Landmarks they know of or have found
     ├── MapSaveFormat/<id>.bytes                         Map pieces they've uncovered
     ├── ClimbingTowerTeleporterSaveData/<id>.bytes       Their climbing tower teleporter
     ├── InfoBoard/<name>                                 Text on info boards
+    ├── Global Communal Storage                          The town's shared storage (ore, sticks and so on)
     └── Cache/                        Forest and terrain data made from the world seed
 ```
 
@@ -91,7 +92,7 @@ A player's file is written when they leave, at every autosave, and when the serv
 | --- | --- | --- |
 | `PlayerGoldBankAccountData` | Gold in the bank. | One 32-bit whole number. The file is 4 bytes. |
 | `ClimbingTowerTeleporterSaveData` | The climbing tower teleporter they last went to. | Two 32-bit whole numbers: a version (`1`), then the destination (`-1` for none). |
-| `LandmarkSaveFormat` | Landmarks they've found. | A version (`0`), a count, then a landmark hash and a yes/no for each. |
+| `LandmarkSaveFormat` | Landmarks they know of or have found. | A version (`0`), a count, then for each landmark its index on the map (32 bits) and a yes/no byte: no means they know of it, yes means they've found it. |
 | `MapSaveFormat` | Which pieces of each map they've uncovered. | A version (`0`), a count, then each map's hash and one byte per piece. |
 | `PlayerPostboxStorageFileFormat` | What's in their postbox. | The same list of saved objects as a chunk. |
 
@@ -137,10 +138,12 @@ These are the game's own, under `save`. Run them on the server's console. See [C
 | `save now` | Saves everything at once. The server pauses until it's done. |
 | `save wipecache` | Deletes `Cache/`. |
 | `save wipecaves` | Moves everyone in the caves to the surface and clears the caves. |
+| `save wipe-storage` | Empties the town's shared storage (`Global Communal Storage`). |
 | `save player-wipe <player>` | Deletes one player's character, lockbox, bank, postbox, landmarks and map. |
 | `save player-wipe-all` | The same for every player. |
 | `save wipe` | Kicks everyone, deletes `Chunks/` and `Cache/`, moves every player to the spawn point and clears their home, then stops the server. Players keep their characters and what they carry, but lose the map markers they made. |
 | `save full-wipe` | Kicks everyone, deletes the whole `Servers/-1/` folder, then stops the server. |
+| `save wipe-forced` | Deletes `Chunks/`, `Cache/` and the shared storage, kicks everyone and stops the server, without moving players or clearing homes. `save wipe-forced false` deletes the whole `Servers/-1/` folder instead. |
 
 :::danger[full-wipe deletes your backups]
 

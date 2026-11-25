@@ -29,7 +29,7 @@ There are two classes called `EventBus`, and they behave differently:
 
 ### The game's events
 
-All in `ATT.EventBus.TownshipEvents`. Every one is broadcast only on the server (or in a local test), by code that checks `NetworkSceneManager.IsServer || NetworkSceneManager.IsLocalTest`.
+All in `ATT.EventBus.TownshipEvents`. The crafting, forging and grabbing events are broadcast only on the server (or in a local test): the code that sends them checks `NetworkSceneManager.IsServer || NetworkSceneManager.IsLocalTest`. The micro tutorial ones don't check the side themselves; they come from tutorial code that probably only runs on the server.
 
 | Event | Members | Broadcast when |
 | --- | --- | --- |
@@ -48,7 +48,7 @@ bus.AddListener<PlayerGrabbedPrefabEvent>(e => MelonLogger.Msg($"{e.Source?.User
 
 The listener runs a little after the event, in the same or the next frame, on the main thread. An exception in one listener is logged and the bus moves on to the next event, so later listeners for that same event are skipped.
 
-For anything else (docking, damage, joins), patch the game's own method; the Items and Networking areas list good targets.
+For anything else (docking, damage, joins), patch the game's own method. [Items, interaction and damage](../items/overview.md) and the Networking area's [hook points](../networking/overview.md#most-useful-hook-points) list good targets.
 
 ## Analytics events
 
@@ -67,7 +67,7 @@ StaticLifetimeScope<ProjectLifetimeScopeStatic>.ResolveWithCallback<IAnalyticsSe
 | `void AddListener(Action<IReadonlyAnalyticsData>)`, `RemoveListener(...)` | Adding the same delegate twice logs an error. Removing a listener from inside a listener throws, since the list is being walked. |
 | `IReadonlyAnalyticsData` | `string EventName`, `int? UserId`, and the properties (`IAnalyticsProperty`) as a collection. |
 
-Listeners run on whatever thread sent the event. Which side sends a given event depends on the event; I didn't trace every one, so check the sender before relying on it. Steady skips `AltaAnalyticsDispatcher.OnAnalyticsEvent` so the dead posts stop; that doesn't affect your listener.
+Listeners run on whatever thread sent the event. Which side sends a given event depends on the event. Not every sender has been traced, so check the one you need before relying on it. Steady skips `AltaAnalyticsDispatcher.OnAnalyticsEvent` so the dead posts stop; that doesn't affect your listener.
 
 ## VContainer scopes
 

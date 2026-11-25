@@ -23,7 +23,7 @@ The one big exception is **creature melee hits on players**. Hits from collision
 ## How a creature thinks
 
 1. `AgentUpdater` ticks every registered agent in the physics update (`FixedUpdate`), under the update module "AI Agent Updater".
-2. Each tick, every agent updates its current action. A few agents (5 by default) also get to make a new decision: whoever has waited longest, weighted toward creatures near players.
+2. Each tick, every agent updates its current action. A few agents (15 a tick in the main world scene, 5 by the code's default) also get to make a new decision: whoever has waited longest, weighted toward creatures near players.
 3. To decide, the agent's `ActionDecider` scores every action in its current `ActionSet` against every possible target, and starts the best one.
 4. Possible targets come from `TargetCollector`s (anything alive within a radius, 20 m by default) and from whoever hurt the creature.
 5. Actions move the creature through `Director`, `Navigator` and `Walker` (pathfinding on the server's navmesh), play animations, and fire channel events that the prefab turns into attacks and effects.
@@ -58,7 +58,7 @@ All in `Alta.Intelligence`, all derived from `Agent<TThis>`:
 | `Schmeechee` | Mushroom critter you can pick up |
 | `Babu`, `Dragonfly`, `DeathFern` | The babu, a tusked animal that gives off the "Swine" sense; `Dragonfly` also drives the Dais herd animals; `DeathFern` drives ferns, geysers and other stationary hazards |
 
-[Creature data](creature-data.md#which-prefab-uses-which-class) lists which shipped prefab uses which class. Find creatures by component type rather than by name: one class covers many prefabs. At runtime `agent.Entity.OriginalName` gives the prefab's name.
+[Creature data](creature-data.md#which-prefab-uses-which-class) lists which shipped prefab uses which class, and the generated [Creatures reference](../reference/creatures.md) has every creature prefab with its hash, health, stats and action sets. Find creatures by component type rather than by name: one class covers many prefabs. At runtime `agent.Entity.OriginalName` gives the prefab's name.
 
 ## Finding creatures
 
@@ -128,6 +128,6 @@ Most of the framework is generic: `Agent<TThis>`, `ActionDecider<TAgent>`, `Basi
 ## Not covered here
 
 - The A* Pathfinding Project library itself (`Pathfinding`, `AstarPath`, `Seeker`, `RichPath`). This section only covers how the game uses it.
-- The population system as a whole (ecosystems, spawn areas, saving). That's in the World area; [Spawning and despawning](spawning-and-despawning.md) covers what matters for creatures.
-- The impact system in general (weapons, tools, detectors). That's in the Items area; [Combat, damage and death](combat-and-damage.md) covers the creature side.
+- The population system as a whole (ecosystems, spawn areas, saving). That's in [Populations and spawners](../world/populations.md); [Spawning and despawning](spawning-and-despawning.md) covers what matters for creatures.
+- The impact system in general (weapons, tools, detectors). That's in [Impacts and hit detection](../items/impacts.md); [Combat, damage and death](combat-and-damage.md) covers the creature side.
 - `Intelligence`, `KnowledgeHolder`, `Atom`, `Term`, `Compound` and `History` in `Alta.Intelligence` are an unfinished logic system. The only code using them is a test in `Intelligence.Awake`. Creatures don't use it.

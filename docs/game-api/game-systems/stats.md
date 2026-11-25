@@ -16,7 +16,7 @@ Every number on a body is a `Stat`: health, hunger, fullness, damage protection,
 StatManager stats = player.PlayerController.Health.StatManager;
 ```
 
-`PlayerController.Health` is the body's `HealthObject`, and `HealthObject.StatManager` is the manager. Other things with a `HealthObject` (creatures, for one; see the creatures area) can have a `StatManager` too, but it may be null. `PlayerController` is null while a player has no body (loading, between bodies), so check it.
+`PlayerController.Health` is the body's `HealthObject`, and `HealthObject.StatManager` is the manager. Other things with a `HealthObject` (creatures, for one; see [Creatures](../creatures/overview.md)) can have a `StatManager` too, but it may be null. `PlayerController` is null while a player has no body (loading, between bodies), so check it.
 
 Stats are found by their definition's `Name` (its `statName` field), not the asset name. The player names the game itself looks up are `"health"`, `"hunger"` and `"fullness"`. TavernLib's `player list-stats` console command lists every stat on a player.
 
@@ -32,36 +32,14 @@ public static bool TryGet(Player player, string name, out Stat stat)
 ## The player's stats
 
 :::note[Asset values]
-From the game's assets, build `main-1.7.2.1.42203`: the `StatManager` on the player body prefab `VR Player Character New`. The full list of stat assets is in the reference tables.
+From the game's assets, build `main-1.7.2.1.42203`, checked against a live server: the `StatManager` on the player body prefab `VR Player Character New`. [Player defaults](../reference/stats.md#player-defaults) lists every player stat with its default, minimum and maximum, and [Stat definitions](../reference/stats.md#stat-definitions) has each one's class, hash, save flag and sync step.
 :::
 
-The body ticks every `tickTime` = 1 second and runs incremental stats every `incrementalTickTime` = 0.1 seconds. Both are `Timeline` seconds, so they speed up with the host's `TimeSpeedMultiplier`. Its stats, in list (and network) order:
+The body ticks every `tickTime` = 1 second and runs incremental stats every `incrementalTickTime` = 0.1 seconds. Both are `Timeline` seconds, so they speed up with the host's `TimeSpeedMultiplier`. A player has 20 stats, in this list (and network) order: `health`, `maxhealth`, `speed`, `damage`, `poison`, `hunger`, `recentdamage`, `damageprotection`, `luminosity`, `cripplehealth`, `xpboost`, `damageprotection` (the cripple one), `nightmare`, `fullness`, `playerweight`, `left-hand-stamina`, `right-hand-stamina`, `aggro`, `maxHandStamina` and `Frost`. Health and hunger run from 0 to 2 and start full, fullness runs from 0 to 6 and starts at 3. `maxhealth` (a `MaxStatDefinition`) sets health's maximum, and `maxHandStamina` sets both hand staminas' maximum (0.2). `Frost` is an `IncrementingStat` that drops by 0.5 a second while above 0, so it wears off.
 
-| Name | Definition asset (type) | Default | Min | Max |
-| --- | --- | --- | --- | --- |
-| `health` | Health Stat | 2 | 0 | 2 |
-| `maxhealth` | MaxHealth Stat (`MaxStatDefinition`, sets health's maximum) | 2 | 0 | 31 |
-| `speed` | Speed Stat | 1 | 0 | 15 |
-| `damage` | Damage Stat | 1 | 0 | 15 |
-| `poison` | Poison Stat (`PoisonStat`) | 0 | 0 | 31 |
-| `hunger` | Hunger Stat (`HungerStat`) | 2 | 0 | 2 |
-| `recentdamage` | RecentDamageStat | 0 | 0 | 1 |
-| `damageprotection` | Damage Protection Stat | 1 | 0.1 | 10 |
-| `luminosity` | Luminosity | 1 | 0 | 15 |
-| `cripplehealth` | Cripple Health Stat (`CrippleStatDefinition`) | 1 | 0 | 1 |
-| `xpboost` | ExperienceBoost (multiplies all XP) | 1 | 0.1 | 10 |
-| `damageprotection` | Cripple Damage Protection Stat | 1 | 0.1 | 10 |
-| `nightmare` | Nightmare (`OnFullAffectTargetStatDefinition`) | 0 | 0 | 1 |
-| `fullness` | Fullness Stat (`FullnessStat`) | 3 | 0 | 6 |
-| `playerweight` | Player Weight Stat (`PlayerWeightStat`) | 0 | 0 | 99999 |
-| `left-hand-stamina`, `right-hand-stamina` | Hand Stamina Left/Right Stat | 0.2 | 0 | 0.2 |
-| `aggro` | Aggroing Stat (`CrippleStatDefinition`) | 1 | 1 | 10 |
-| `maxHandStamina` | MaxHandStamina (`MaxStatDefinition`, sets both hand staminas' maximum) | 0.2 | 0.2 | 0.2 |
-| `Frost` | Frost (`IncrementingStat`, -0.5 per second while above 0, so it wears off) | 0 | 0 | 1 |
+Things to know:
 
-Things this shows:
-
-- **Two stats share the name `damageprotection`.** `GetStat("damageprotection")` returns whichever the dictionary yields first. TavernLib renames the cripple one (hash 44538) to `crippledamageprotection` for this reason.
+- **Two stats share the name `damageprotection`.** `GetStat("damageprotection")` returns whichever the dictionary yields first. TavernLib renames the cripple one (hash 44538) to `crippledamageprotection` for this reason, so on a Tavern server look it up by that name.
 - **`playerweight` can go far past 127**, the top of the network range for `Base`, so its synced copy on clients is clamped. Read it on the server.
 - Health, hunger, fullness, the hand staminas, poison, cripple health, nightmare, weight and the two max stats are saved with the body (`isSaveSerialized`). Speed, damage, damage protection, luminosity, XP boost and aggro aren't, so their `Base` resets to the default on load.
 - Health, hunger, the hand staminas, cripple health, nightmare and weight resend at a change of 0.01 (`changeToSync`), fullness at every whole number, and the rest at 0.1.
@@ -180,6 +158,9 @@ if (stats.GetStat("health", out Stat health))
 - **Loaded timed modifiers** are re-registered with `StatModifier.Remove` as the timer callback rather than `TimedStatModifier.Remove`, so after a load they never leave the manager's list (their effect is still removed on time).
 
 ```csharp
+using Alta.StatSystem;
+using HarmonyLib;
+
 [HarmonyPatch(typeof(StatManager), "Tick")]
 static class StatTickPatch
 {

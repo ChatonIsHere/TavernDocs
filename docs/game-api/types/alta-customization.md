@@ -99,7 +99,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | `PlayerCosmeticCategory` | class | `CustomizationCategory` | 3 |  |
 | `PlayerCosmeticDefinition` | class | `Purchasable`, `ICustomizationDefinition` | 8 | [Customization](../game-systems/customization.md): A `Purchasable` (`ScriptableObject` loaded through Addressables) with a `Hash`, `Sku`, `DisplayName`, category and visual. |
 | `PlayerCosmeticDefinitionSet` | class | `ScriptableObject` | 1 |  |
-| `PlayerCosmeticWrapper` | class | `CustomizationWrapper(manager)` | 3 |  |
+| `PlayerCosmeticWrapper` | class | `CustomizationWrapper` | 3 |  |
 | `PlayerCustomizationHandler` | class | `MonoBehaviour`, `ICustomizationHandler` | 15 | [Customization](../game-systems/customization.md): On a body: applies the visuals, finds bones, first-person mode. `ArmorManager`, `EditableEquipmentManager`. |
 | `PlayerCustomizationSlot` | enum |  | 148 |  |
 | `PlayerCustomizationSlotSet` | class |  | 1 |  |

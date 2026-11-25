@@ -41,6 +41,7 @@ Spawnable prefabs that carry one of the game's `Agent<T>` AI classes (`Alta.Inte
 | `Greater Gotera` | 19034 | `GreaterGotera` | 150 | 1 | yes |  | 1 | `Greater Gotera Passive Set` (passiveActions), `Greater Gotera Stunned Set` (stunnedAction) |
 | `Mother Fern` | 65004 | `DeathFern` | 5 |  |  | Slash x1, Pierce x0.4, Blunt x0.4, Spiritual x1.5 |  | `Death Fern AI` (passiveActions) |
 | `Phantom` | 17772 | `Phantom` | 2 |  |  |  | 4 | `Phantom Passive Set AI` (passiveActions), `Phantom Materialize Action` (materializeAction), `Phantom Dematerialize Action` (deMaterializeAction), `Phantom Materialized Hit Action` (materializedHitAction) |
+| `Phantom Head` | 43960 | `Phantom` | 0.5 |  |  | Spiritual x2, Slash x1.2 | 4 | `Phantom Head Aggro Set AI` (passiveActions), `Phantom Head Materialize Action` (materializeAction), `Phantom Head Dematerialize Action` (deMaterializeAction), `Phantom Head Materialized Hit Action` (materializedHitAction) |
 | `Schmeechee Glowing` | 53576 | `Schmeechee` | 2 |  |  |  |  | `Schmeechee AI` (passiveActions) |
 | `Schmeechee Orange` | 63728 | `Schmeechee` | 0.5 |  |  |  |  | `Schmeechee AI` (passiveActions) |
 | `Schmeechee Poisonous` | 31646 | `Schmeechee` | 0.3 |  |  |  |  | `Schmeechee AI` (passiveActions) |
@@ -120,6 +121,10 @@ Every stat on each creature's `StatManager`: the stat name the code looks up, th
 | `Phantom` | `cripplehealth` | `Cripple Health Stat` | 1 | 0 | 1 |
 | `Phantom` | `visibility` | `Visibility` | 0 | 0 | 1 |
 | `Phantom` | `speed` | `Speed Stat` | 1 | 0 | 1 |
+| `Phantom Head` | `health` | `Health Stat` | 0.5 | 0 | 0.5 |
+| `Phantom Head` | `cripplehealth` | `Cripple Health Stat` | 1 | 0 | 1 |
+| `Phantom Head` | `visibility` | `Visibility` | 0 | 0 | 1 |
+| `Phantom Head` | `speed` | `Speed Stat` | 1 | 0 | 1 |
 | `Schmeechee Glowing` | `health` | `Health Stat` | 2 | 0 | 2 |
 | `Schmeechee Orange` | `health` | `Health Stat` | 0.5 | 0 | 0.5 |
 | `Schmeechee Poisonous` | `health` | `Health Stat` | 0.3 | 0 | 0.3 |

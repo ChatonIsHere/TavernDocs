@@ -69,6 +69,7 @@ The websocket console uses `Run` for every request, and the settings files use i
 The cancellation token is checked after each `yield`, not while waiting.
 
 ```csharp
+// CountDown() is your own IEnumerator method.
 var routine = AltaCoroutine.Start(CountDown());
 routine.OnError = e => MelonLogger.Error(e);
 routine.OnFinished = () => MelonLogger.Msg("Done");
@@ -130,7 +131,7 @@ The priority queues in `Alta.Timing.PriorityQueue` (`FastPriorityQueue`, `Simple
 
 ## RateLimiter
 
-`Alta.Utilities.RateLimiter` in `Alta.Coroutines`. `new RateLimiter(float targetTickRate)` then `bool IsRateLimited()`: false at most `targetTickRate` times a second (by `Time.realtimeSinceStartup`), true in between. A rate of zero or less never limits.
+`Alta.Utilities.RateLimiter` in `Alta.Coroutines`. `new RateLimiter(float targetTickRate)` then `bool IsRateLimited()`: false at most `targetTickRate` times a second (by `Time.realtimeSinceStartup`), true in between. A negative rate never limits. A rate of exactly zero lets the first call through and limits every call after it, for good (the constructor stores `1 / rate`, which is infinite).
 
 ```csharp
 private static readonly RateLimiter limiter = new RateLimiter(2f); // at most twice a second

@@ -29,9 +29,10 @@ Subclasses in `Alta.Alchemy`:
 | `StatSetEffect` | Sets the stat's `Base` to `strength`. |
 | `StatMultiplierEffect` | Applies a timed `StatModifier` of its own `modifierValue`, lasting `strength` seconds. |
 | `PoisonEffect` | Positive strength adds a poison stack, negative removes one. Needs `target.Health`. |
-| `BurnEffect` | Positive strength starts adding to the `"burn"` stat every tick, negative stops it. |
+| `BurnEffect` | Positive strength starts adding to the `"burn"` stat every tick, negative stops it. The game has no `BurnEffect` asset and the player body has no `"burn"` stat, so it does nothing in vanilla. |
 | `TeleportEffect` | A `ChanceBasedEffectDefinition`: with chance `strength * chanceMultiplier`, teleports the target home or to a spawn area. |
 | `RevealEffect` | Raises the handler's `OnReveal`. |
+| `InateEffect` | Does nothing. |
 | `ChanceBasedEffectDefinition`, `BuildUpconcoctionEffect` | Bases that gate on a random roll, or add strengths applied within `buildupDuration`. |
 
 `IndirectStatModifierDefinition` (in `Alta.StatSystem`) is also an `EffectDefinition`: it adds an indirect, curve-shaped modifier to a stat.
@@ -39,7 +40,7 @@ Subclasses in `Alta.Alchemy`:
 ## The game's effect assets
 
 :::note[Asset values]
-Build `main-1.7.2.1.42203`. The reference tables list every effect and liquid.
+Build `main-1.7.2.1.42203`, checked against a live server's registry (13 effects). The stat effects are also in [Stats](../reference/stats.md#stat-effects).
 :::
 
 | Asset | Type | What it does |
@@ -52,8 +53,9 @@ Build `main-1.7.2.1.42203`. The reference tables list every effect and liquid.
 | `Teleport Home`, `Teleport Original Respawn` | `TeleportEffect` | The teleport potion. |
 | `Reveal Effect` | `RevealEffect` | |
 | `BuildupTeleportToOverworld` | `BuildupTeleportEffect` | Builds up, then teleports. |
+| `Inate` | `InateEffect` | Nothing. |
 
-`Nourish` and `Heal` point at their stats through cross-file references; which stat each changes is read from their names and icons. Liquids carry these too: the `Health Potion` liquid is one `Heal` at strength 1 (half of the 2 health), with `isConsumableThroughSkin` set.
+Liquids carry these too: the `Health Potion` liquid is one `Heal` at strength 1 (half of the 2 health), with `isConsumableThroughSkin` set.
 
 ## EffectDefinitionApplication
 

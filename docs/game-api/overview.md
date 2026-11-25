@@ -13,7 +13,7 @@ The game was never meant to be modded. There's no API, no events for mods and no
 Everything here comes from reading the decompiled game, the patches in working mods and the notes from Rover's testing. Some pages also use the game's asset data (prefab and scene object names, components and field values), only as names and values. Where a page infers something rather than reading it in the code, it says so.
 
 :::note
-None of this is TavernLib. TavernLib's own API (roles, events, services) is in its own section. When TavernLib changes how a game method behaves, the page for that method says so.
+None of this is TavernLib. TavernLib's own API (roles, events, services) is in its own section, the [TavernLib API](../tavernlib-api/overview.md). When TavernLib changes how a game method behaves, the page for that method says so.
 :::
 
 ## Two builds, one of them everywhere
@@ -71,9 +71,9 @@ The game's code runs on Unity's main thread: `Update`, coroutines, spawning, and
 
 On a modded server, TavernLib has already changed a lot of the game's behaviour. The main ones:
 
-- **Joining**: it replaces the join check with its own (fly-camera players, TavernLib account tokens, mod parity, whitelist and blacklist), then hands over to the game's own check.
+- **Joining**: it puts its own filter in front of the game's join check (fly-camera players, TavernLib account tokens, mod parity, whitelist and blacklist), then hands over to the game's check, whose allow step it also replaces (token user id, player limit, roles). See [Joining a server](networking/joining.md#what-tavernlib-changes).
 - **Message types**: 8 bits instead of 5 (above).
-- **Player limit** from `server_settings.json`, and the server's web and console ports from `tavern_server.json`.
+- **Player limit** from `server_settings.json` (`max_players`), enforced at join, and the server's web and console ports from `tavern_server.json`.
 - **Alta's dead web services**: cosmetics presets are kept in local files, every cosmetic is owned by everyone, and the internet check always answers yes.
 - **The console**: its own token logins, refusing commands given an empty player list, and fixes for several built-in commands that answered Success having done nothing.
 - **Garbage collection**: the server's forced collection interval is read from `server_settings.json`.

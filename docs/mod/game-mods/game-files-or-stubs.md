@@ -37,7 +37,7 @@ git clone -b full https://github.com/ChatonIsHere/att-stubs
 
 ### Private members are public
 
-In att-stubs, the private members of `Root.Township` are made public, so your code can use them directly. That's handy, but it means code using them **only builds against att-stubs**, not against your game folder. If you build both ways, stick to public members, or use Harmony's `AccessTools` and `Traverse` to reach private ones.
+In att-stubs, the private members of `Root.Township` are made public, so your code can use them directly. That's handy, but it means code using them **only builds against att-stubs**, not against your game folder. If you build both ways, stick to public members, or use Harmony's `AccessTools` and `Traverse` to reach private ones. See [Private members](../../game-api/patching/harmony.md#private-members).
 
 ### It's for building, not running
 

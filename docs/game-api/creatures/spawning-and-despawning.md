@@ -8,38 +8,34 @@ sidebar_position: 8
 
 `Alta.Populations` in `Root.Township`. Server only.
 
-Creatures come from the **population system**, which also spawns things like plants and ore. The system as a whole (definitions, folders, spawn areas, ecosystems, saving) is in the World area. This page covers what happens to creatures.
+Creatures come from the **population system**, which also spawns things like plants and ore. The system as a whole (definitions, folders, spawn areas, ecosystems, saving, respawn times) is in [Populations and spawners](../world/populations.md). This page covers what happens to creatures.
 
 ## PopulationSample
 
 One population of one `PopulationDefinition` in one chunk: a count, a maximum, and the entities it has spawned. It keeps a virtual population (`CurrentPopulation`) that grows over time, and spawns real entities to match while its chunk is loaded.
 
+The members a creature mod usually needs (the full list is on [PopulationSample](../world/populations.md#populationsample)):
+
 | Member | What it does | Notes |
 | --- | --- | --- |
-| `PopulationDefinition Definition { get; }` | What it spawns and how. | |
 | `int CurrentPopulation { get; }`, `int MaximumPopulation { get; }` | The virtual count and its cap. | |
 | `Dictionary<NetworkEntity, PopulationItem> SpawnedEntities { get; }` | The entities it has out right now. | |
-| `LocationChunk Chunk { get; }` | Its chunk. | |
-| `PopulationFolderBase Parent { get; }` | What owns it. | |
 | `void CheckSpawned()` | Spawns until the spawned count reaches `CurrentPopulation × PercentageOfPopulationSpawned` (rounded up). Each failed spawn lowers `CurrentPopulation`; three failures stop it. | Public. The best spawn hook. |
-| `void ForceSpawn(int targetPopulation)` | Raises the count (up to the maximum) and spawns. | |
-| `void ForceKillAll()` | Destroys everything it spawned, sets the count to 0, and checks again. | |
 | `bool RequestMove(NetworkEntity entity, bool isAllowingSame = true)` | Teleports one of its entities to another free spawn point. | `ActiveIdle` can call this. |
 | `void LoseMember(NetworkEntity entity)` | Counts an entity as lost: removes it, lowers the count, occupies its spawn point for a while. | |
 | `event PopulationItemSpawnHandler NewEntitySpawned` | `(PopulationSample population, NetworkEntity newItem)` after each spawn. | |
-| `PopulationDelegate OnPopulationDiedOut`, `OnPopulationStarted`, `OnPopulationMaxed` | Count reached 0, rose from 0, reached the maximum. | Public fields. |
 
 ### The growth tick
 
 `Initialize` sets a repeating `Timeline` call to the private `CheckPopulation` every `Definition.TickFrequency` seconds. Each tick:
 
-1. If the count is over the maximum and not all of it is spawned, lower it by one and stop.
-2. Otherwise grow: up to `MaxPopulationGrowth` times, roll against `PopulationGrowthCurve` (evaluated at count ÷ maximum) and add one on success.
+1. If the maximum is 0, nothing. If the count is over the maximum and not all of it is spawned, lower it by one and stop.
+2. Otherwise, if under the maximum, grow: start from `PopulationGrowthCurve` evaluated at count ÷ maximum, take a random 0 to 1 off it for each roll (up to `MaxPopulationGrowth` rolls), and add one while it stays above 0. So each extra one in a tick is less likely than the last.
 3. If the chunk is fully loaded, `CheckSpawned`.
 
 `TickFrequency` is the definition's base tick (through `PopulationDefinitionManager`) divided by `NetworkSceneManager.Current.SpawnRateMultiplier`, which on a server is the host's `SpawningRateMultiplier` setting. Raise that and populations grow faster; it doesn't change how many spawn at once.
 
-Hosts can change one definition's base tick from the console with `settings population set-time <population> <seconds>` (also `check-time` and `reset-time`), which sets the value `PopulationDefinitionManager.GetValue` returns. In the shipped definitions the base tick is 1800 s for almost every creature population (asset values; see [Creature data](creature-data.md#populations)), so a population grows (and replaces its dead) only once every 30 minutes of `Timeline` time, and only spawns while its chunk is loaded.
+Hosts can change one definition's base tick from the console with `settings population set-time <population> <seconds>` (also `check-time` and `reset-time`), which sets the value `PopulationDefinitionManager.GetValue` returns. See [Changing respawn rates](../world/populations.md#changing-respawn-rates) for doing it from code. In the shipped definitions the base tick is 1800 s for almost every creature population (asset values; see [Creature data](creature-data.md#populations)), so a population grows (and replaces its dead) only once every 30 minutes of `Timeline` time, and only spawns while its chunk is loaded.
 
 ### Spawning one
 

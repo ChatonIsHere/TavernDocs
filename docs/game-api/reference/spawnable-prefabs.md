@@ -15,36 +15,36 @@ Every prefab the game's `PrefabManager` loads. On startup it calls `Resources.Lo
 
 The console accepts a prefab by hash, by its lower-case name, or by its lower-case name with the spaces removed.
 
-1313 prefabs in total.
+1346 prefabs in total.
 
 | Kind | Count |
 | --- | --- |
-| [item](#item) | 402 |
-| [pickup without an Item asset](#pickup-without-an-item-asset) | 55 |
-| [creature](#creature) | 47 |
+| [item](#item) | 428 |
+| [pickup without an Item asset](#pickup-without-an-item-asset) | 38 |
+| [creature](#creature) | 48 |
 | [AI-driven object](#ai-driven-object) | 2 |
 | [projectile](#projectile) | 14 |
-| [stew](#stew) | 48 |
-| [plant or tree](#plant-or-tree) | 239 |
-| [breakable or resource node](#breakable-or-resource-node) | 96 |
+| [stew](#stew) | 54 |
+| [plant or tree](#plant-or-tree) | 240 |
+| [breakable or resource node](#breakable-or-resource-node) | 98 |
 | [spawner or population](#spawner-or-population) | 61 |
-| [station, structure or other](#station-structure-or-other) | 127 |
+| [station, structure or other](#station-structure-or-other) | 133 |
 | [logic and puzzle](#logic-and-puzzle) | 70 |
 | [world and cave pieces](#world-and-cave-pieces) | 45 |
 | [effect](#effect) | 16 |
 | [debris or timed effect](#debris-or-timed-effect) | 31 |
-| [static object (no scripts)](#static-object-no-scripts) | 60 |
+| [static object (no scripts)](#static-object-no-scripts) | 68 |
 
 ## Item
 
-The **Item** column is the `Item` asset whose `prefabHash` points at this prefab. See [Items and materials](items-and-materials.md) for its settings.
+The **Item** column is the `Item` asset the prefab's `Pickup` names (`Pickup.Item`), then any other `Item` whose `prefabHash` points at this prefab. The two usually agree. Training and debug copies reuse the real item, so several prefabs can share one. See [Items and materials](items-and-materials.md) for its settings.
 
 | Prefab | Hash | Item | Spawn command | Main scripts |
 | --- | --- | --- | --- | --- |
 | `Apple Core Burnt` | 50484 | `Apple Core Burnt` |  | `Pickup`, `ImpactDetector`, `ImpactHitTrigger` |
 | `Apple Core Cooked` | 15500 | `Apple Core Cooked` |  | `Pickup`, `ImpactDetector`, `ImpactHitTrigger` |
 | `Apple Core Ripe` | 902 | `Apple Core Ripe` |  | `Pickup`, `ImpactDetector`, `ImpactHitTrigger`, `Target` |
-| `Apple Core Unripe` | 31614 | `Apple Core Unripe` |  | `Pickup`, `ImpactDetector`, `ImpactHitTrigger`, `RaycastCrafter` |
+| `Apple Core Unripe` | 31614 | `Apple Core Ripe`, `Apple Core Unripe` |  | `Pickup`, `ImpactDetector`, `ImpactHitTrigger`, `RaycastCrafter` |
 | `Apple Full Burnt` | 62102 | `Apple Full Burnt` |  | `Pickup`, `EdibleObject`, `ImpactDetector`, `ImpactHitTrigger`, `Spawner` |
 | `Apple Full Cooked` | 14844 | `Apple Full Cooked` |  | `Pickup`, `EdibleObject`, `ImpactDetector`, `ImpactHitTrigger`, `Spawner` |
 | `Apple Full Ripe` | 40010 | `Apple Full Ripe` |  | `Pickup`, `EdibleObject`, `ImpactDetector`, `ImpactHitTrigger`, `Spawner`, `EmbeddableManager` |
@@ -53,10 +53,13 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Apple Half Cooked` | 2000 | `Apple Half Cooked` |  | `Pickup`, `EdibleObject` |
 | `Apple Half Ripe` | 7278 | `Apple Half Ripe` |  | `Pickup`, `EdibleObject` |
 | `Apple Half Unripe` | 62012 | `Apple Half Unripe` |  | `Pickup`, `EdibleObject` |
-| `Arrow` | 56460 | `Arrow Training`, `Arrow` |  | `Pickup`, `Arrow`, `ThrowableArrow`, `Embeddable`, `ImpactTool`, `Surface` (+3) |
+| `Arrow` | 56460 | `Arrow`, `Arrow Training` |  | `Pickup`, `Arrow`, `ThrowableArrow`, `Embeddable`, `ImpactTool`, `Surface` (+3) |
+| `Arrow Shaft Wooden` | 29772 | `Arrow Shaft` |  | `Pickup`, `CraftingPart`, `ImpactTool`, `Surface`, `DurabilityModule`, `Embeddable` (+5) |
 | `Arrow Shaft Wooden Training` | 36772 | `Arrow Shaft Training` |  | `Pickup`, `PracticeObjectFader` |
+| `Arrow Training` | 36190 | `Arrow Training` |  | `Pickup`, `ImpactTool`, `Surface`, `ItemLevitator`, `Embeddable`, `Arrow` (+2) |
 | `Arrow Training Dud` | 8858 | `Arrow Dud Training` |  | `Pickup`, `PracticeObjectFader` |
 | `Ash Tree Seed` | 35274 | `Ash Tree Seed` |  | `Pickup`, `RaycastCrafter` |
+| `Axe Head` | 34412 | `Axe Head Curve` |  | `Pickup`, `ImpactDetector`, `CraftingPart`, `PhysicalMaterialPart`, `ForgedPointCollection`, `MeltingModelPart` |
 | `Axe Head Curve` | 50322 | `Axe Head Curve` |  | `Pickup`, `ImpactDetector`, `CraftingPart`, `PhysicalMaterialPart`, `ForgedPointCollection`, `DurabilityModule` (+1) |
 | `Axe Head Felling` | 9918 | `Axe Head Felling` |  | `Pickup`, `ImpactDetector`, `CraftingPart`, `PhysicalMaterialPart`, `ForgedPointCollection`, `DurabilityModule` (+1) |
 | `Axe Head GreatCurve` | 10056 | `Axe Head GreatCurve` |  | `Pickup`, `ImpactDetector`, `CraftingPart`, `PhysicalMaterialPart`, `ForgedPointCollection`, `DurabilityModule` (+1) |
@@ -76,6 +79,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Blueberry Full Ripe` | 45012 | `Blueberry Full Ripe` |  | `Pickup`, `EdibleObject` |
 | `Blueberry Full Unripe` | 42556 | `Blueberry Full Unripe` |  | `Pickup`, `EdibleObject`, `RaycastCrafter` |
 | `Book` | 44174 | `Book` | no | `Book`, `Pickup` |
+| `Bought Skill Orb Replacer` | 42842 | `Select Server Orb` | no | `BoughtSkillOrbReplacer`, `SkillOrbMovement`, `Pickup` |
 | `Bow` | 56546 | `Bow` |  | `Pickup`, `Bow`, `DurabilityModule`, `PhysicalMaterialPart`, `DockArray` |
 | `Bow Blade` | 27416 | `Bow Blade` |  | `Pickup`, `ImpactDetector`, `CraftingPart`, `PhysicalMaterialPart`, `ForgedPointCollection`, `DurabilityModule` (+1) |
 | `Bronze Alloy Ingot` | 26316 | `Bronze Ingot` | no | `Pickup`, `StackingComponent` |
@@ -107,8 +111,10 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Craft Piece Side 4Way` | 32160 | `Craft Piece Side 4Way Item` |  | `Pickup`, `PhysicalMaterialPart`, `CraftingPart`, `DurabilityModule`, `MeltingModelPart`, `TemperatureToMaterial` |
 | `Craft Piece Side Flat 1Way` | 38606 | `Craft Piece SideFlat 1Way Item` |  | `Pickup`, `PhysicalMaterialPart`, `CraftingPart`, `DurabilityModule`, `MeltingModelPart`, `TemperatureToMaterial` |
 | `Craft Piece SideFlat 2Way` | 26748 | `Craft Piece SideFlat 2Way Item` |  | `Pickup`, `PhysicalMaterialPart`, `CraftingPart`, `DurabilityModule`, `MeltingModelPart`, `TemperatureToMaterial` |
+| `Crystal Gem Blue` | 8002 | `Crystal Gem Blue` |  | `Pickup`, `ImpactTool`, `HealthObject`, `MultiSpawner`, `ImpactDetector`, `DisableLightOnDock` (+1) |
 | `Crystal Lance Blue` | 23400 | `Crystal Lance Blue` |  | `Pickup`, `ImpactTool`, `DisableLightOnDock`, `DurabilityModule` |
 | `Crystal Pick Blue` | 2924 | `Crystal Pick Blue` |  | `Pickup`, `ImpactTool`, `DisableLightOnDock`, `DurabilityModule` |
+| `Crystal Shard Blue` | 7092 | `Crystal Shard Blue` |  | `Pickup`, `CraftingPart`, `DisableLightOnDock`, `DurabilityModule` |
 | `Crystal Sword Blue` | 56894 | `Crystal Sword Blue` |  | `Pickup`, `ImpactTool`, `DisableLightOnDock`, `DurabilityModule` |
 | `Curled Wooden Handle` | 64172 | `Curled Wooden Handle` |  | `Pickup`, `ImpactTool`, `CraftingPart`, `DurabilityModule`, `PhysicalMaterialPart` |
 | `Dagger Blade Curved` | 9704 | `Dagger Blade Curved` |  | `Pickup`, `ImpactDetector`, `CraftingPart`, `PhysicalMaterialPart`, `ForgedPointCollection`, `DurabilityModule` (+1) |
@@ -125,6 +131,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `DebugArrow` | 34892 | `DebugArrow` |  | `Pickup`, `Arrow`, `ThrowableArrow`, `Embeddable`, `ImpactTool`, `Surface` (+1) |
 | `DebugPlayerStone` | 62120 | `DebugPlayerStone` |  | `Pickup`, `Impactor`, `ImpactTool`, `AddonCraftingPart`, `SparkImpactDetector`, `DurabilityModule` |
 | `Dragonfly Corpse` | 43552 | `Dragonfly Corpse` |  | `Pickup`, `EdibleObject`, `HealthObject`, `StatManager`, `ImpactDetector`, `Target` |
+| `Duplicate Paper Variant` | 11048 | `Duplicate Paper` | no | `Pickup`, `PaperPageInstance` |
 | `Dynamite` | 31326 | `Dynamite` |  | `Pickup`, `ImpactDetector` |
 | `Easter Egg 01` | 55462 | `Easter Egg 01` |  | `Pickup`, `HealthObject`, `StatManager`, `ImpactDetector`, `BreakOnImpact`, `Spawner` |
 | `Easter Egg 02` | 57998 | `Easter Egg 02` |  | `Pickup`, `HealthObject`, `StatManager`, `ImpactDetector`, `BreakOnImpact`, `Spawner` |
@@ -167,10 +174,12 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Geode Tier 1 Half 02` | 38512 | `Geode Half 02` |  | `MultiHandPickup`, `ImpactDetector`, `HealthObject`, `StatManager`, `BasicChiselable` |
 | `Gold Ingot` | 30092 | `Gold Ingot` |  | `Pickup`, `BasicMeltingModel`, `TemperatureToMaterial`, `StackingComponent`, `PhysicalMaterialPart` |
 | `Gold Ore` | 61650 | `Gold Ore` |  | `Pickup`, `ImpactTool`, `Impactor`, `SparkImpactDetector`, `StackingComponent` |
+| `GoldCoin` | 61648 | `Coin` |  | `Pickup`, `TossRandom`, `BasicMeltingModel`, `TemperatureToMaterial` |
 | `Gotera Seedling Orb` | 59342 | `Gotera Seedling Orb` |  | `Pickup`, `BreakOnImpact` |
 | `Gourd Canteen` | 29032 | `Gourd Canteen` |  | `Pickup`, `ShakeDetector`, `LiquidContainer`, `PourableContainer`, `BreakOnImpact`, `LiquidContainerLid` (+7) |
 | `Grass Clump` | 57872 | `Grass Clump` |  | `CraftingPart`, `Pickup`, `RaycastCrafter`, `PhysicalMaterialPart`, `GenericCraftingComponent`, `InteractableLastPlayerInteractorHandler` |
 | `Great Sword Blade` | 63886 | `Great Sword Blade` |  | `Pickup`, `CraftingPart`, `PhysicalMaterialPart`, `ImpactDetector`, `ForgedPointCollection`, `DurabilityModule` (+1) |
+| `Greataxe (Debug)` | 54612 | `Rusty Greataxe` | no | `Pickup`, `ImpactTool`, `DurabilityModule` |
 | `Guard` | 51672 | `Guard` |  | `Pickup`, `CraftingPart`, `DurabilityModule`, `PhysicalMaterialPart`, `MeltingModelPart`, `TemperatureToMaterial` |
 | `Guard Fancy` | 62140 | `Guard Fancy` |  | `Pickup`, `CraftingPart`, `DurabilityModule`, `PhysicalMaterialPart`, `MeltingModelPart`, `TemperatureToMaterial` |
 | `Guard Handle` | 43186 | `Guard Handle` |  | `Pickup`, `CraftingPart` |
@@ -199,12 +208,13 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Handle Short Cool` | 5920 | `Handle Short Cool` |  | `Pickup`, `CraftingPart`, `ImpactTool`, `DurabilityModule`, `BasicMeltingModel`, `TemperatureToMaterial` |
 | `Handle Short Pointy End` | 28636 | `Handle Short Pointy End` |  | `Pickup`, `CraftingPart`, `ImpactTool`, `DurabilityModule`, `BasicMeltingModel`, `TemperatureToMaterial` |
 | `Handle Short S Curve` | 27820 | `Handle Short S Curve` |  | `Pickup`, `CraftingPart`, `ImpactTool` |
-| `Handle Short Taper` | 24198 | `Handle Short Taper` |  | `Pickup`, `CraftingPart`, `ImpactTool` |
+| `Handle Short Taper` | 24198 | `Dagger Blade Curved`, `Handle Short Taper` |  | `Pickup`, `CraftingPart`, `ImpactTool` |
 | `Handle Spear` | 20640 | `Handle Spear` |  | `Pickup`, `CraftingPart`, `ImpactTool` |
 | `Handle Tonfa` | 57838 | `Handle Tonfa` |  | `Pickup`, `CraftingPart`, `ImpactTool`, `DurabilityModule`, `PhysicalMaterialPart` |
 | `Hard Metal Small Bits` | 62594 | `Hard Metal Small Bits` |  | `Pickup`, `PhysicalMaterialPart`, `HeatPointCollection`, `MeltingModelPart`, `GenericCraftingComponent` |
 | `Hard Plate Metal Medium Square` | 50988 | `Hard Plate Metal Medium Square` |  | `Pickup`, `ForgedPointCollection`, `PhysicalMaterialPart`, `ImpactDetector`, `GenericCraftingComponent`, `MeltingModelPart` |
 | `Healing Pod` | 44360 | `Healing Pod` |  | `Pickup`, `CraftingPart`, `DurabilityModule`, `BreakOnImpact` |
+| `Hebios Bag Medallion` | 11582 | `Standard Side Pouch Attachment` | no | `Pickup`, `ConfirmationCraftingPart`, `HierarchyInteractionFilter` |
 | `Hebios Crafted Mould` | 22498 | `Mould Hebios` |  | `Pickup`, `Mould`, `GenericCraftingResult` |
 | `Hebios Guard` | 5144 | `Hebios Guard` |  | `Pickup`, `DurabilityModule`, `CraftingPart`, `PhysicalMaterialPart`, `MeltingModelPart`, `TemperatureToMaterial` |
 | `Hebios Handle Katana` | 53200 | `Hebios Handle Katana` |  | `Pickup`, `ImpactTool`, `DurabilityModule`, `CraftingPart`, `Enchantable` |
@@ -219,8 +229,10 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Hebios Naginata Blade Part Full` | 17420 | `Naginata Blade Part Full` |  | `Pickup`, `GenericCraftingResult`, `CraftingPart`, `DurabilityModule` |
 | `Hebios Sai Blade Part 01` | 57048 | `Hebios Sai Blade Part 01` |  | `Pickup`, `GenericCraftingComponent`, `BasicMeltingModel`, `HeatPointCollection` |
 | `Hebios Sai Blade Part 02` | 56830 | `Hebios Sai Blade Part 02` |  | `Pickup`, `GenericCraftingComponent`, `BasicMeltingModel`, `HeatPointCollection` |
+| `Hebios Sai Blade Part Full` | 1600 | `Sai Blade Part Full` |  | `Pickup`, `GenericCraftingResult`, `CraftingPart`, `DurabilityModule` |
 | `Hebios Wakizashi Blade Part 01` | 49774 | `Hebios Wakizashi Blade Part 01` |  | `Pickup`, `GenericCraftingComponent`, `BasicMeltingModel`, `HeatPointCollection` |
 | `Hebios Wakizashi Blade Part 02` | 50184 | `Hebios Wakizashi Blade Part 02` |  | `Pickup`, `GenericCraftingComponent`, `BasicMeltingModel`, `HeatPointCollection` |
+| `Hebios Wakizashi Blade Part Full` | 9018 | `Wakizashi Blade Part Full` |  | `Pickup`, `GenericCraftingResult`, `CraftingPart`, `DurabilityModule` |
 | `Hoarder Bag` | 54214 | `Hoarder Bag` |  | `Pickup`, `StabilizeJointContainer`, `PickupDockingSoundPlayer`, `GenericCraftingResult`, `CraftingPart`, `DockArray` (+2) |
 | `Iron Ingot` | 23012 | `Iron Ingot` |  | `Pickup`, `ImpactTool`, `BasicMeltingModel`, `TemperatureToMaterial`, `StackingComponent`, `PhysicalMaterialPart` |
 | `Iron Ore` | 61652 | `Iron Ore` |  | `Pickup`, `ImpactTool`, `Impactor`, `SparkImpactDetector`, `StackingComponent` |
@@ -243,6 +255,8 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Metal Hebios Sai Blade` | 53124 | `Hebios Sai Blade` |  | `Pickup`, `HeatPointCollection`, `ForgedPointCollection`, `DurabilityModule`, `CraftingPart`, `PhysicalMaterialPart` (+2) |
 | `Metal Hebios Wakizashi Blade` | 48902 | `Hebios Wakizashi Blade` |  | `Pickup`, `HeatPointCollection`, `ForgedPointCollection`, `DurabilityModule`, `CraftingPart`, `PhysicalMaterialPart` (+2) |
 | `Metal Tap` | 17334 | `Metal Tap` |  | `Pickup` |
+| `Metal Wall Hook` | 61180 | `Metal Wall Hook` | no | `Pickup`, `RaycastCrafter`, `PhysicalMaterialPart`, `MeltingModelPart`, `TemperatureToMaterial`, `InteractableEvents` (+3) |
+| `MicroTutorial Face Orb` | 8108 | `Select Server Orb` | no | `Pickup`, `ActionOrb`, `MicroTutorialFaceOrb`, `GameObjectLifetimeScope` |
 | `Mould` | 14826 | `Mould` |  | `Pickup`, `Mould` |
 | `MRK Fuel Core` | 65358 | `MRK Fuel Core` |  | `Pickup` |
 | `MRK Molten Core` | 51764 | `MRK Molten Core` |  | `Pickup` |
@@ -291,7 +305,8 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Ore Bag` | 64560 | `Ore Bag` |  | `Pickup`, `StabilizeJointContainer`, `PickupDockingSoundPlayer`, `GenericCraftingResult`, `CraftingPart`, `DockArray` (+2) |
 | `Ore Side Pouch Attachment` | 61020 | `Ore Bag Side Attachment` |  | `Pickup`, `GenericCraftingResult`, `ConfirmationCraftingPart`, `CraftedDocks`, `HierarchyInteractionFilter` |
 | `Ore Training` | 56300 | `Ore Training` |  | `Pickup`, `PracticeObjectFader` |
-| `Paper` | 37066 | `Duplicate Paper`, `Paper` |  | `Pickup`, `PaperPageInstance` |
+| `Paper` | 37066 | `Paper`, `Duplicate Paper` |  | `Pickup`, `PaperPageInstance` |
+| `Phantom Guard` | 6940 | `Phantom Guard` |  | `Pickup`, `CraftingPart`, `DurabilityModule`, `PhysicalMaterialPart`, `MeltingModelPart`, `TemperatureToMaterial` (+2) |
 | `Pick Axe` | 61654 | `Pick` |  | `Pickup`, `ImpactTool` |
 | `Pickaxe Head` | 35878 | `Pickaxe Head` |  | `Pickup`, `CraftingPart`, `PhysicalMaterialPart`, `DurabilityModule`, `MeltingModelPart`, `TemperatureToMaterial` |
 | `Pole Hugger Edgy` | 17828 | `Pole Hugger Edgy` |  | `Pickup`, `CraftingPart` |
@@ -338,7 +353,9 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Red Mushroom Shield` | 49188 | `Red Mushroom Shield` |  | `Pickup`, `DurabilityModule`, `EmbeddableManager` |
 | `Redwood Gotera Core` | 41402 | `Redwood Gotera Core` |  | `Pickup`, `GenericCraftingComponent` |
 | `Redwood Tree Seed` | 55054 | `Redwood Tree Seed` |  | `Pickup`, `RaycastCrafter` |
+| `Revive Orb` | 4546 | `Revive Orb` | no | `Pickup`, `ActionOrb`, `ReviveOrb` |
 | `Rod Long` | 44066 | `Rod Long` |  | `Pickup`, `CraftingPart`, `ImpactTool`, `DurabilityModule`, `PhysicalMaterialPart`, `DockArray` |
+| `Rod Medium` | 44204 | `Rod Medium` |  | `Pickup`, `CraftingPart`, `ImpactTool`, `DurabilityModule`, `PhysicalMaterialPart`, `DockArray` |
 | `Rod Slim 40cm` | 59588 | `Rod Slim 40cm` |  | `Pickup`, `CraftingPart`, `ImpactTool`, `DurabilityModule`, `PhysicalMaterialPart` |
 | `Rope Clump` | 43836 | `Rope Clump` |  | `Pickup`, `PhysicalMaterialPart`, `GenericCraftingComponent` |
 | `Rusty Axe` | 4412 | `Rusty Axe` |  | `Pickup`, `ImpactTool`, `DurabilityModule` |
@@ -355,6 +372,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Salt` | 49578 | `Salt` |  | `Pickup`, `CookingGarnishComponent` |
 | `Sandstone Stone` | 55930 | `Sandstone Stone` |  | `Pickup`, `Impactor`, `ImpactTool` |
 | `Scythe Blade` | 26788 | `Scythe Blade` |  | `Pickup`, `ImpactDetector`, `CraftingPart`, `PhysicalMaterialPart`, `ForgedPointCollection`, `DurabilityModule` (+1) |
+| `Select Server Orb` | 55760 | `Select Server Orb` | no | `Pickup`, `ServerSelectionOrb`, `CurveScaler`, `ActionOrb` |
 | `Shield` | 61656 | `Shield` |  | `Pickup`, `DurabilityModule`, `EmbeddableManager` |
 | `Shield Core Bent Middle` | 7232 | `Shield Core Bent Middle` |  | `Pickup`, `CraftingPart`, `DurabilityModule`, `EmbeddableManager`, `PhysicalMaterialPart` |
 | `Shield Core Circle Middle` | 52756 | `Shield Core Circle Middle` |  | `Pickup`, `CraftingPart`, `DurabilityModule`, `EmbeddableManager`, `PhysicalMaterialPart` |
@@ -365,12 +383,18 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Shield Part Half Hole` | 12416 | `Shield Part Half Hole` |  | `Pickup`, `CraftingPart`, `DurabilityModule`, `EmbeddableManager`, `PhysicalMaterialPart` |
 | `Shield Part Half Point 01` | 59936 | `Shield Part Half Point` |  | `Pickup`, `CraftingPart`, `DurabilityModule`, `EmbeddableManager`, `PhysicalMaterialPart` |
 | `Short Sword` | 38566 | `Short Sword` |  | `Pickup`, `ImpactTool`, `DurabilityModule` |
+| `Short Sword (God Mode)(Debug Only)` | 21226 | `Short Sword` | no | `Pickup`, `ImpactTool`, `DurabilityModule` |
+| `Short Sword Blade` | 55310 | `Short Sword Blade` |  | `Pickup`, `ImpactDetector`, `CraftingPart`, `PhysicalMaterialPart`, `ForgedPointCollection`, `DurabilityModule` (+1) |
+| `Short Sword Blade_MT` | 3376 | `Short Sword Blade` |  | `Pickup`, `ImpactDetector`, `CraftingPart`, `PhysicalMaterialPart`, `ForgedPointCollection`, `DurabilityModule` (+1) |
 | `Shotel Blade` | 36438 | `Shotel Blade` |  | `PhysicalMaterialPart`, `Pickup`, `ImpactDetector`, `CraftingPart`, `ForgedPointCollection`, `DurabilityModule` (+1) |
 | `Silver Ingot` | 23528 | `Silver Ingot` |  | `Pickup`, `ImpactTool`, `BasicMeltingModel`, `TemperatureToMaterial`, `StackingComponent`, `PhysicalMaterialPart` |
 | `Silver Ore` | 9586 | `Silver Ore` |  | `Pickup`, `Impactor`, `ImpactTool`, `SparkImpactDetector`, `StackingComponent` |
+| `Skill Orb` | 17270 | `Select Server Orb` |  | `SkillOrb`, `SkillOrbMovement`, `Pickup` |
+| `Skill Orb Replacer` | 23526 | `Select Server Orb` |  | `SkillOrbReplacer`, `SkillOrbMovement`, `Pickup` |
 | `Slingshot` | 13142 | `Slingshot` |  | `Pickup`, `Bow`, `DurabilityModule`, `PhysicalMaterialPart` |
 | `Small Bone Spike` | 61488 | `Bone Spike` |  | `Pickup`, `CraftingPart`, `DurabilityModule` |
-| `Small Shield` | 63498 | `Shield Small Training`, `Shield Small` |  | `Pickup`, `CraftingPart`, `DurabilityModule`, `EmbeddableManager` |
+| `Small Shield` | 63498 | `Shield Small`, `Shield Small Training` |  | `Pickup`, `CraftingPart`, `DurabilityModule`, `EmbeddableManager` |
+| `Small Shield Training` | 21312 | `Shield Small Training` |  | `Pickup`, `ItemLevitator`, `PracticeObjectFader` |
 | `Smelter Gem 1` | 34986 | `Smelter Gem 1` |  | `Pickup`, `DisableLightOnDock`, `ItemSmelterRecipeUnlock` |
 | `Smelter Gem 2` | 41638 | `Smelter Gem 2` |  | `Pickup`, `DisableLightOnDock`, `ItemSmelterRecipeUnlock` |
 | `Smelter Gem 3` | 46508 | `Smelter Gem 3` |  | `Pickup`, `DisableLightOnDock`, `ItemSmelterRecipeUnlock` |
@@ -404,6 +428,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Standard Side Pouch Attachment` | 7852 | `Standard Side Pouch Attachment` |  | `Pickup`, `GenericCraftingResult`, `ConfirmationCraftingPart`, `CraftedDocks`, `HierarchyInteractionFilter` |
 | `Standard Side Tool Attachment` | 59468 | `Standard Side Tool Attachment` |  | `Pickup`, `GenericCraftingResult`, `ConfirmationCraftingPart`, `CraftedDocks`, `HierarchyInteractionFilter` |
 | `Steel Alloy Ingot` | 22222 | `Steel Ingot` | no | `Pickup`, `ImpactTool`, `StackingComponent` |
+| `Stick` | 61674 | `Stick` |  | `Pickup`, `CraftingPart`, `ImpactTool`, `HealthObject`, `MultiSpawner`, `ImpactDetector` (+6) |
 | `Stick Charred` | 20564 | `Stick Charred` |  | `Pickup`, `DurabilityModule`, `PhysicalMaterialPart` |
 | `Stick Training` | 61414 | `Stick Training` |  | `Pickup`, `PracticeObjectFader` |
 | `Stone` | 61670 | `Stone` |  | `Pickup`, `Impactor`, `ImpactTool`, `AddonCraftingPart`, `SparkImpactDetector`, `DurabilityModule` |
@@ -430,6 +455,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `WarHammer` | 9630 | `War Hammer Head` |  | `Pickup`, `CraftingPart`, `PhysicalMaterialPart`, `DurabilityModule`, `MeltingModelPart`, `TemperatureToMaterial` |
 | `Wedge Training` | 53570 | `Wedge Training` |  | `Pickup`, `PracticeObjectFader` |
 | `White Gold Ingot` | 13158 | `White Gold Ingot` |  | `Pickup`, `ImpactTool`, `BasicMeltingModel`, `TemperatureToMaterial`, `StackingComponent`, `PhysicalMaterialPart` |
+| `Woodcut Wedge` | 47118 | `Woodcut Wedge` |  | `Pickup`, `DurabilityModule`, `GenericCraftingComponent`, `PhysicalMaterialPart`, `StackingComponent` |
 | `Woodcut Wedge Ashen` | 232 | `Woodcut Wedge Ashen` |  | `Pickup`, `DurabilityModule`, `PhysicalMaterialPart` |
 | `Woodcut Wedge Burnt` | 290 | `Woodcut Wedge Burnt` |  | `Pickup`, `DurabilityModule`, `PhysicalMaterialPart` |
 | `Woodcut Wedge Charred` | 58068 | `Woodcut Wedge Charred` |  | `Pickup`, `DurabilityModule`, `PhysicalMaterialPart` |
@@ -448,10 +474,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 
 | Prefab | Hash | Spawn command | Main scripts |
 | --- | --- | --- | --- |
-| `Arrow Training` | 36190 |  | `Pickup`, `ImpactTool`, `Surface`, `ItemLevitator`, `Embeddable`, `Arrow` (+2) |
-| `Axe Head` | 34412 |  | `Pickup`, `ImpactDetector`, `CraftingPart`, `PhysicalMaterialPart`, `ForgedPointCollection`, `MeltingModelPart` |
 | `Axe Training` | 57010 | no | `Pickup`, `ImpactTool`, `ItemLevitator`, `PracticeObjectFader` |
-| `Bought Skill Orb Replacer` | 42842 | no | `BoughtSkillOrbReplacer`, `SkillOrbMovement`, `Pickup` |
 | `Bow Training` | 42340 |  | `Pickup`, `Bow`, `ItemLevitator`, `PracticeObjectFader`, `PhysicalMaterialPart` |
 | `Breakable Box` | 19624 |  | `ImpactDetector`, `HealthObject`, `MultiHandPickup`, `PickupBreakOnImpact`, `StatManager`, `EmbeddableManager` |
 | `Breakable Pot` | 60800 |  | `ImpactDetector`, `HealthObject`, `Instantiator`, `EmbeddableManager`, `MultiHandPickup`, `PickupBreakOnImpact` (+1) |
@@ -475,29 +498,15 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Christmas Gift Mail Box 01` | 24764 |  | `ImpactDetector`, `HealthObject`, `MultiHandPickup`, `PickupBreakOnImpact`, `StatManager`, `EmbeddableManager` (+1) |
 | `Christmas Gift Mail Box 02` | 16494 |  | `ImpactDetector`, `HealthObject`, `MultiHandPickup`, `PickupBreakOnImpact`, `StatManager`, `EmbeddableManager` (+1) |
 | `Christmas Gift Mail Box 03` | 1080 |  | `ImpactDetector`, `HealthObject`, `MultiHandPickup`, `PickupBreakOnImpact`, `StatManager`, `EmbeddableManager` (+1) |
-| `Duplicate Paper Variant` | 11048 | no | `Pickup`, `PaperPageInstance` |
 | `Friend Request Token` | 15314 | no | `FriendRequestToken`, `HoverPickup`, `Pickup`, `RendererMaterializer`, `GameObjectLifetimeScope` |
 | `Garlic Leaves` | 1266 |  | `Pickup`, `DisposablePickup`, `InteractableEvents` |
 | `Garlic Roots` | 57564 |  | `Pickup`, `DisposablePickup`, `InteractableEvents` |
 | `Gift Mail Box` | 56348 |  | `ImpactDetector`, `HealthObject`, `MultiHandPickup`, `PickupBreakOnImpact`, `StatManager`, `EmbeddableManager` (+1) |
-| `Greataxe (Debug)` | 54612 | no | `Pickup`, `ImpactTool`, `DurabilityModule` |
 | `Hammer Training` | 47018 |  | `Pickup`, `ImpactTool`, `ItemLevitator`, `PracticeObjectFader` |
-| `Hebios Bag Medallion` | 11582 | no | `Pickup`, `ConfirmationCraftingPart`, `HierarchyInteractionFilter` |
-| `Hebios Sai Blade Part Full` | 1600 |  | `Pickup`, `GenericCraftingResult`, `CraftingPart`, `DurabilityModule` |
-| `Hebios Wakizashi Blade Part Full` | 9018 |  | `Pickup`, `GenericCraftingResult`, `CraftingPart`, `DurabilityModule` |
-| `Metal Wall Hook` | 61180 | no | `Pickup`, `RaycastCrafter`, `PhysicalMaterialPart`, `MeltingModelPart`, `TemperatureToMaterial`, `InteractableEvents` (+3) |
-| `MicroTutorial Face Orb` | 8108 | no | `Pickup`, `ActionOrb`, `MicroTutorialFaceOrb`, `GameObjectLifetimeScope` |
 | `Onion Leaves` | 29078 |  | `Pickup`, `DisposablePickup`, `InteractableEvents` |
 | `Onion Roots` | 32068 |  | `Pickup`, `DisposablePickup`, `InteractableEvents` |
 | `Pickaxe Training` | 29706 | no | `Pickup`, `ImpactTool`, `ItemLevitator`, `PracticeObjectFader` |
-| `Revive Orb` | 4546 | no | `Pickup`, `ActionOrb`, `ReviveOrb` |
-| `Select Server Orb` | 55760 | no | `Pickup`, `ServerSelectionOrb`, `CurveScaler`, `ActionOrb` |
-| `Short Sword (God Mode)(Debug Only)` | 21226 | no | `Pickup`, `ImpactTool`, `DurabilityModule` |
-| `Short Sword Blade_MT` | 3376 |  | `Pickup`, `ImpactDetector`, `CraftingPart`, `PhysicalMaterialPart`, `ForgedPointCollection`, `DurabilityModule` (+1) |
 | `Short Sword Training` | 1150 |  | `Pickup`, `ImpactTool`, `ItemLevitator`, `PracticeObjectFader` |
-| `Skill Orb` | 17270 |  | `SkillOrb`, `SkillOrbMovement`, `Pickup` |
-| `Skill Orb Replacer` | 23526 |  | `SkillOrbReplacer`, `SkillOrbMovement`, `Pickup` |
-| `Small Shield Training` | 21312 |  | `Pickup`, `ItemLevitator`, `PracticeObjectFader` |
 | `Social Tablet` | 51668 | no | `RendererMaterializer`, `Window`, `SocialTablet`, `HoverPickup`, `Pickup`, `GameObjectLifetimeScope` |
 | `Spriggull Egg` | 7014 |  | `Pickup`, `PickupBreakOnImpact`, `HealthObject`, `StatManager`, `ImpactDetector` |
 | `Training Short Sword Blade COLD` | 1850 |  | `Pickup`, `PhysicalMaterialPart`, `ForgedPointCollection`, `DurabilityModule`, `ImpactDetector`, `PracticeObjectFader` (+2) |
@@ -530,6 +539,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Greater Gotera` | 19034 | no | `HealthObject`, `StatManager`, `ColliderGroup`, `StatTrigger` |
 | `Mother Fern` | 65004 |  | `HealthObject`, `StatManager`, `ColliderGroup`, `ImpactDetector`, `TargetPointer`, `EmbeddableManager` (+1) |
 | `Phantom` | 17772 |  | `HealthObject`, `StatManager`, `EffectHandler`, `FullEmptyStatTrigger`, `ColliderGroup`, `DelayedEvent` (+2) |
+| `Phantom Head` | 43960 |  | `HealthObject`, `StatManager`, `EffectHandler`, `FullEmptyStatTrigger`, `ColliderGroup`, `DelayedEvent` (+3) |
 | `Schmeechee Glowing` | 53576 |  | `Pickup`, `MushroomCritter`, `EdibleObject`, `HealthObject`, `ImpactDetector`, `DeathEffect` (+2) |
 | `Schmeechee Orange` | 63728 |  | `Pickup`, `MushroomCritter`, `EdibleObject`, `HealthObject`, `ImpactDetector`, `DeathEffect` (+2) |
 | `Schmeechee Poisonous` | 31646 |  | `Pickup`, `MushroomCritter`, `EdibleObject`, `DeathEffect`, `HealthObject`, `ImpactDetector` (+2) |
@@ -592,6 +602,9 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Blueberry Recipe Burnt Stew` | 36830 | no | `StewComponent` |
 | `Blueberry Recipe Cooked Stew` | 36086 | no | `Cookable`, `CookingPoint`, `HeatPointCollection`, `StewComponent` |
 | `Blueberry Recipe Raw Stew` | 35338 | no | `Cookable`, `CookingPoint`, `HeatPointCollection`, `StewComponent` |
+| `Default Burnt Stew` | 20108 | no | `StewComponent` |
+| `Default Cooked Stew` | 19398 | no | `Cookable`, `CookingPoint`, `HeatPointCollection`, `StewComponent` |
+| `Default Raw Stew` | 43078 | no | `Cookable`, `CookingPoint`, `HeatPointCollection`, `StewComponent` |
 | `Eggplant Potato Recipe Burnt Stew` | 57688 | no | `StewComponent` |
 | `Eggplant Potato Recipe Cooked Stew` | 57712 | no | `Cookable`, `CookingPoint`, `HeatPointCollection`, `StewComponent` |
 | `Eggplant Potato Recipe Raw Stew` | 57736 | no | `Cookable`, `CookingPoint`, `HeatPointCollection`, `StewComponent` |
@@ -607,6 +620,9 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Mushroom-Poultry Recipe Burnt Stew` | 54614 | no | `StewComponent` |
 | `Mushroom-Poultry Recipe Cooked Stew` | 55358 | no | `Cookable`, `CookingPoint`, `HeatPointCollection`, `StewComponent` |
 | `Mushroom-Poultry Recipe Raw Stew` | 55978 | no | `Cookable`, `CookingPoint`, `HeatPointCollection`, `StewComponent` |
+| `Non Recipe Burnt Stew` | 48634 | no | `StewComponent` |
+| `Non Recipe Cooked Stew` | 49314 | no | `Cookable`, `CookingPoint`, `HeatPointCollection`, `StewComponent` |
+| `Non Recipe Raw Stew` | 49962 | no | `Cookable`, `CookingPoint`, `HeatPointCollection`, `StewComponent` |
 | `Potato Puree Recipe Burnt Stew` | 57936 | no | `StewComponent` |
 | `Potato Puree Recipe Cooked Stew` | 57960 | no | `Cookable`, `CookingPoint`, `HeatPointCollection`, `StewComponent` |
 | `Potato Puree Recipe Raw Stew` | 57918 | no | `Cookable`, `CookingPoint`, `HeatPointCollection`, `StewComponent` |
@@ -699,6 +715,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Tomato Tree Stage 1` | 2384 |  | `BasicDigable`, `Spawner`, `Interactable`, `InteractableEvents` |
 | `Tomato Tree Stage 2` | 2542 |  | `HealthObject`, `StatManager`, `ImpactDetector` |
 | `Tomato Tree Stage 3` | 2892 |  | `HealthObject`, `StatManager`, `ImpactDetector` |
+| `Tree` | 8860 |  | `ImpactDetector`, `WoodcutTree`, `HealthObject`, `StatManager`, `TreeDecay`, `WoodcutTreeBaker` (+3) |
 | `Tree Grower` | 25934 |  | `TimeBasedStagedPrefab` |
 | `Tree Grown` | 30572 |  |  |
 | `Tree Spawner - Any Ash` | 50794 |  | `TreeSpawner`, `NavmeshCut` |
@@ -884,6 +901,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | Prefab | Hash | Spawn command | Main scripts |
 | --- | --- | --- | --- |
 | `Ash Pile` | 53398 |  | `HealthObject`, `StatManager`, `BasicDecay` |
+| `Auto Cam Player` | 61644 | no | `AutoCamPlayer`, `AutoCamLocomotionController`, `HealthObject`, `StatManager`, `CullingController`, `PlayerMessageDisplay` (+2) |
 | `Breakable Root 2.5m Bendy` | 35896 |  | `ImpactDetector`, `HealthObject`, `Spawner`, `StatManager`, `Surface` |
 | `Breakable Root 2.5m Curved` | 35738 |  | `ImpactDetector`, `HealthObject`, `Spawner`, `StatManager`, `Surface` |
 | `Breakable Root 2.5m Straight` | 34564 |  | `ImpactDetector`, `HealthObject`, `Spawner`, `StatManager`, `Surface` |
@@ -950,6 +968,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Explosion Boulder` | 44162 |  | `HealthObject`, `MultiSpawner`, `StatManager`, `ModifiableAdditionalStaticContent`, `EmbeddableManager` |
 | `Explosion Boulder Large` | 30854 |  | `HealthObject`, `MultiSpawner`, `StatManager`, `ModifiableAdditionalStaticContent`, `EmbeddableManager` |
 | `Fake Player combat_dummy` | 45454 |  | `FakePlayerHealth`, `SphereVisibilityCheck`, `NetworkedJointDrivenRig`, `StatManager`, `Surface`, `ColliderGroup` |
+| `FlyCam Player` | 44058 | no | `FlyCamPlayer`, `LocalPlayer`, `FlyCamLocomotionController`, `HealthObject`, `CullingController`, `PlayerMessageDisplay` (+3) |
 | `Gold Boulder` | 2584 |  | `HealthObject`, `StatManager`, `MultiSpawner`, `ImpactDetector`, `NavmeshCut`, `CaveLayerStaticObject` |
 | `Gotera Walnut Bomb` | 35174 |  | `HealthObject`, `StatManager`, `ImpactDetector`, `DelayedEvent` |
 | `Hanging Loot Box Platform` | 54462 |  | `HealthObject`, `StatManager`, `DelayedEvent`, `Spawner` |
@@ -1076,6 +1095,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Concoction Crate` | 23304 |  | `LiquidContainer`, `LiquidStencilShaderController`, `LiquidHeatAreaController`, `HeatPointCollection`, `AdditionalStaticContent` |
 | `Cooking Stand` | 6742 |  | `AdditionalStaticContent` |
 | `Crafting Deck` | 28396 |  | `GenericCraftingStation`, `AdditionalStaticContent` |
+| `Customization Controller` | 5526 | no | `CustomizationPlayerController`, `LocomotionController`, `ExposurePlayerScreenFader`, `PlayerMessageDisplay`, `PlayerControllerLifetimeScope` |
 | `Decrafting Deck` | 62244 |  | `DecraftingDeck`, `AdditionalStaticContent` |
 | `Discovery Landmark` | 37940 | no | `LandmarkDiscoverZone`, `Landmark` |
 | `Forge` | 11872 |  | `AdditionalStaticContent` |
@@ -1098,9 +1118,12 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Lectern` | 59986 |  | `BookRestrictor`, `AdditionalStaticContent` |
 | `Lockbox` | 6974 |  | `AdditionalStaticContent` |
 | `Locked Crafting Deck` | 48390 | no | `GenericCraftingStation`, `AdditionalStaticContent` |
+| `LocomotionLess Controller` | 26514 | no | `LocomotionlessPlayerController`, `LocomotionController`, `ExposurePlayerScreenFader`, `PlayerMessageDisplay`, `PlayerControllerLifetimeScope` |
 | `Logic Context` | 34630 |  | `GlobalLogicManager` |
 | `Loot Module` | 29544 | no | `LootModule` |
 | `Mail Deposit Box` | 64204 |  | `PostboxSender`, `NearbyPlayerTracker`, `AdditionalStaticContent` |
+| `Main Menu Controller` | 58810 | no | `MainMenuPlayerController`, `LocomotionController`, `ExposurePlayerScreenFader`, `PlayerMessageDisplay`, `PlayerControllerLifetimeScope` |
+| `Main Menu Desktop Controller` | 19644 | no | `MainMenuDesktopController`, `PlayerMessageDisplay`, `ExposurePlayerScreenFader`, `PlayerControllerLifetimeScope` |
 | `Map Board` | 60974 |  | `MapBoard`, `MapLandmarkDisplay`, `Landmark`, `EditorEventPanel`, `LandmarkDiscoverZone`, `AdditionalStaticContent` |
 | `Mould Press Hebios` | 2594 |  | `MouldPress`, `NetworkedEvent`, `AdditionalStaticContent` |
 | `Mould Press Standard` | 13362 |  | `MouldPress`, `NetworkedEvent`, `AdditionalStaticContent` |
@@ -1119,6 +1142,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `PlacedMetalWallHook` | 25662 | no | `PhysicalMaterialPart`, `ChiselableSurfaceDock` |
 | `PlacedSurfaceDockTemplate` | 32713 | no | `PhysicalMaterialPart`, `ChiselableSurfaceDock` |
 | `Player Grave` | 28202 |  | `Gravestone` |
+| `Player Template` | 61646 | no | `Player`, `PlayerStateManager`, `PlayerEventsManager`, `PlayerProgressionManager`, `PlayerUnlockManager`, `PlayerToolBasedSkillHelper` (+1) |
 | `PlayerInPosition Observer` | 64252 | no | `PlayerInPositionObserver` |
 | `Poison Vent` | 37252 |  | `Spawner` |
 | `Pond Test` | 58844 |  | `LiquidContainer`, `LiquidHeatAreaController`, `HeatPointCollection` |
@@ -1141,7 +1165,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Safe Point` | 33004 |  | `SafePositionSetter`, `CheckPoint` |
 | `Send Post` | 53190 |  | `PostboxSender` |
 | `Set Piece` | 62334 | no | `SetPiece` |
-| `Set Piece` | 9684 (live: 62334) | no | `SetPiece` |
+| `Set Piece` | 9684 | no | `SetPiece` |
 | `Shelf` | 23630 |  | `AdditionalStaticContent` |
 | `Shelf Short` | 20452 |  | `AdditionalStaticContent` |
 | `Slow Grass` | 59062 |  | `LocomotionModifier` |
@@ -1171,6 +1195,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `Trial 1 Logic` | 31544 | no | `TrialLogic` |
 | `Trial 2 Logic` | 47734 | no | `TrialLogic` |
 | `Trial 3 Logic` | 25118 | no | `TrialLogic` |
+| `VR Player Character New` | 49582 | no | `PlayerCharacter`, `CharacterLocalityController`, `SceneChangeTimer`, `CharacterIKController`, `PlayerEffectController`, `PlayerSpecialEffectsController` (+15) |
 | `Walk Air` | 50936 | no | `StructurePart` |
 | `Wall Street Post` | 50078 |  | `AdditionalStaticContent` |
 | `Wall Torch Holder` | 3786 |  | `AdditionalStaticContent` |
@@ -1224,7 +1249,7 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `MRK Wheel Bridge` | 61844 |  | `LogicFloatSender`, `RotatePickup`, `LogicFloatReceiver` |
 | `MRK_activation_lever` | 35030 |  | `LogicBoolSender`, `LogicBoolReceiver`, `MRK_ActivationLever`, `NonClimbable` |
 | `mrk_extensionBridge_01` | 34038 |  | `LogicFloatReceiver`, `NetworkedFloatStream` |
-| `MRK_gate_01` | 3094 (live: 34734) |  | `SlidingDoor`, `LogicBoolReceiver`, `NonClimbable` |
+| `MRK_gate_01` | 3094 |  | `SlidingDoor`, `LogicBoolReceiver`, `NonClimbable` |
 | `MRK_gate_01` | 34734 |  | `SlidingDoor`, `LogicBoolReceiver`, `NavmeshCut` |
 | `MRK_gate_01 1.5x Variant` | 64136 |  | `SlidingDoor`, `LogicBoolReceiver`, `NonClimbable` |
 | `MRK_gate_02` | 54328 |  | `SlidingDoor`, `LogicBoolReceiver`, `NavmeshCut`, `NonClimbable` |
@@ -1406,6 +1431,14 @@ The **Item** column is the `Item` asset whose `prefabHash` points at this prefab
 | `SnowfallEffect` | 16090 | no |  |
 | `Spawn Point` | 63844 |  |  |
 | `Spriggull Nest` | 16680 |  |  |
+| `Static Content - Blacksmithing - Step 1 - SpawnStep` | 61364 | no |  |
+| `Static Content - Blacksmithing - Step 2 - PlayerGrabbedPrefab` | 59680 | no |  |
+| `Static Content - Blacksmithing - Step 3 - PrefabInPositionStep` | 57404 | no |  |
+| `Static Content - Blacksmithing - Step 4 - PlayerGrabbedPrefab` | 55252 | no |  |
+| `Static Content - Blacksmithing - Step 5 - PlayerGrabbedPrefab` | 52052 | no |  |
+| `Static Content - Blacksmithing - Step 6 - SpawnStep` | 47858 | no |  |
+| `Static Content - Blacksmithing - Step 7 - ItemForgedStep` | 44212 | no |  |
+| `Static Content - Blacksmithing - Step 8 - SpawnStep` | 40854 | no |  |
 | `Storage Chest Static Content TrialProxy` | 44136 | no |  |
 | `Tab Lever` | 3354 | no |  |
 | `tallPot` | 23320 | no |  |

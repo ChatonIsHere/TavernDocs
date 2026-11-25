@@ -8,6 +8,8 @@ sidebar_position: 11
 
 Everything on this page comes from the game's assets (prefabs and ScriptableObjects in build `main-1.7.2.1.42203`), not from code. These are **asset values**: an update to the game can change them, and a mod can change them at runtime. The other pages in this section say what the fields do.
 
+This page picks out what explains creature behaviour. For the complete lists (every creature prefab with its hash, every stat with its range, every action set and its swaps) use the generated [Creatures reference](../reference/creatures.md), and [Spawnable prefabs](../reference/spawnable-prefabs.md) for hashes of everything else.
+
 ## Which prefab uses which class
 
 | Class | Prefabs |
@@ -37,7 +39,7 @@ Turabada variants each have their own variant sets ("Turabada Gold Passive Set V
 
 ## Health and damage
 
-Player health is 2 (the "health" stat on the player prefab), for scale.
+Player health is 2 (the "health" stat on the player prefab), for scale. The [Creatures reference](../reference/creatures.md#creature-prefabs) has health and impact multipliers for every variant; this table adds the cripple health and the attack hitboxes.
 
 | Prefab | Health | Cripple health | Impact type multipliers | Attack hitboxes |
 | --- | --- | --- | --- | --- |
@@ -54,9 +56,9 @@ Player health is 2 (the "health" stat on the player prefab), for scale.
 | Phantom / Phantom Head | 2 / 0.5 | 1 / 1 | Head: Spiritual 2, Slash 1.2 | Vision attack |
 | Spectral Ghost | 2 | 1 | | |
 | Firebug | 0.5 | | | |
-| Schmeechee | 2 | | | |
+| Schmeechee Red / Glowing / Orange / Poisonous | 2 / 2 / 0.5 / 0.3 | | | |
 | Dragonfly | 0.1 | | | |
-| Dais Base / Dais Variant | 5 | 5 | | |
+| Dais Base, Variant and Red / Antler and Antler Red / Child and Child Red | 5 / 15 / 2 | 5 / 12 / 1 | | |
 | Death Fern / Vine Attack Fern / Mother Fern | 1 / 1 / 5 | | Blunt 0 on the death fern | Poison cloud on death; vine whips |
 
 Turabadas, babus and Greater Gotera also have a "damage" stat (1) that their impactors use as a multiplier, and turabadas a "damage protection" stat (1, up to 7) that their blocking stance and spheres raise for a while. Only creatures marked combatant put players in combat when hit: spriggull, turabadas, wyrms, goteras, Greater Gotera and babu.

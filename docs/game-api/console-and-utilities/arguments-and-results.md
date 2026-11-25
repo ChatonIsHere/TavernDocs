@@ -47,7 +47,7 @@ And the game adds these:
 
 | Type | Typed as | Notes |
 | --- | --- | --- |
-| `Vector3` | `x,y,z` with no spaces | A bad value logs an error and gives `Vector3.zero` instead of failing. |
+| `Vector3` | `x,y,z` with no spaces | Three parts that don't parse log an error and give `Vector3.zero` instead of failing. Fewer than three parts throw, so it's `IncorrectParameterTypes`. |
 | `Player`, `IPlayer` | A username or user id of an online player | Case is ignored; a second try ignores spaces and underscores. Nobody online by that name gives null, so the argument fails. |
 | `PlayerList` | Names or ids separated by commas, or `*` for everyone | Names that match nobody are skipped, so the list can be empty. TavernLib refuses an empty list with "No online player matches". |
 | `UserInfoAccess`, `UserList` | A username or user id, online or not | Nothing is looked up while parsing. The lookup happens when the command asks, through Alta's dead web API, unless TavernEssentials answers it. See [Alta's web API](alta-web-api.md). |
@@ -98,7 +98,8 @@ public class ColourNameConverter : TypeConverter
 For a type you don't own, register the converter at runtime, the way the game does for `Vector3`. This changes the type's converter for the whole process, so pick types nobody else converts:
 
 ```csharp
-TypeDescriptor.AddAttributes(typeof(Vector2), new TypeConverterAttribute(typeof(Vector2Converter)));
+// MyVector2Converter is your own TypeConverter, written like ColourNameConverter above.
+TypeDescriptor.AddAttributes(typeof(Vector2), new TypeConverterAttribute(typeof(MyVector2Converter)));
 ```
 
 ## What a command returns
@@ -141,7 +142,7 @@ For an object result, `Log()` serializes it to JSON and, in the same line, copie
 - Any exception becomes `CommandResult.ErrorResult` with `Exception` set. Nothing reaches the game loop.
 - A **synchronous** command's exception arrives wrapped in a `TargetInvocationException` by reflection, even a `CommandException`. In the unpatched game the caller sees "Exception has been thrown by the target of an invocation." TavernLib's `CommandResultPatches.UnwrapCommandError` unwraps it, so on TavernLib servers the caller sees your message.
 - An **async** command's exception isn't wrapped: the `await` rethrows it as itself.
-- Parse failures and "not found" are error results with a plain `Exception` and a null `Command`.
+- "Not found" is an error result with a plain `Exception` and a null `Command`. A parameter parsing failure is the same, but `Command` is the command that failed to parse.
 
 ## Watching every command
 

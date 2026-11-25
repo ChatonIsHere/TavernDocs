@@ -42,9 +42,9 @@ Made with the defaults on the first start. Keys you leave out use the default.
 | `name` | `"My Tavern Server"` | The name players see. |
 | `password` | | Set a password here in plain text. On its next read, the server hashes it into `password_hash` and removes this line. |
 | `password_hash` | `""` | The password, hashed. Empty means no password. Set it to `""` to remove a password. |
-| `max_players` | `24` | How many players can be on at once. |
-| `whitelist_enabled` | `false` | Only players on the whitelist can join. Others can ask to join. |
-| `enforce_ip_limit` | `false` | At most 5 accounts from one IP address. Stops one person making loads of accounts. |
+| `max_players` | `24` | How many players can be on at once. Anyone past that is told "Reached player limit of: 24". |
+| `whitelist_enabled` | `false` | Only players on the whitelist can join. Others can ask to join. Without the Windows launcher, the whitelist is also on whenever it has anything in it. |
+| `enforce_ip_limit` | `true` | At most 5 new names can be made from one IP address. Stops one person making loads of accounts. Players who already have a name keep joining. |
 | `community_listed` | `false` | Show the server on Community Servers. Needs a restart. See [Getting listed](getting-listed.md). |
 | `region` | `"unknown"` | `EU`, `NA`, `SA`, `Asia`, `Oceania`, `Africa` or `unknown`. Shown on the list. |
 | `public_hostname` | none | A name to show on the list instead of your IP. It has to point at your server. |
@@ -53,7 +53,7 @@ Made with the defaults on the first start. Keys you leave out use the default.
 | `tutorial_scene` | `false` | Run the tutorial scene. Beats `quest_scene` if both are on. Needs a restart. |
 | `server_backup_time` | `0` | Hours between automatic world backups on a headless server. `0` is off. The Windows launcher does its own backups. |
 | `server_backup_max_backups` | `0` | How many automatic backups to keep. `0` keeps them all. |
-| `garbage_collection_timer` | `30` | How often the game cleans up dropped items and other leftovers. |
+| `garbage_collection_timer` | `30` | Seconds between the game's memory clean-ups (.NET garbage collection) on a server running without graphics. It doesn't touch items in the world. Needs a restart. |
 | `console_owner_local_only` | `false` | Only accept the owner console token from the server itself. |
 
 The Windows Server launcher has a **Settings** window for all of these. In Docker, `SCENE` in `.env` sets the two scene keys for you.
@@ -123,7 +123,7 @@ The world is in `Servers/-1/` inside the game's folder:
 | `Save/` | The world save. |
 | `Backups/` | Automatic backups. |
 | `ServerConfiguration.json` | The game's own settings: autosave, time speed, spawn rates, death rules and so on. |
-| `Logs/logs/unity-log.csv` | The game's log. Older ones are in `Archives/`, 20 at most. |
+| `Logs/logs/unity-log.csv` | The game's log. Older ones are in `archives/`, 20 of each kind at most. |
 
 `ServerConfiguration.json` is written on the first start. AMP shows its settings in its UI. Elsewhere, stop the server and edit it by hand. Every key is [below](#serverconfigurationjson). What's in `Save/` is in [Save format](save-format.md).
 
@@ -240,6 +240,7 @@ The server lowers how often it runs physics when its frame rate drops, so a busy
 | `MinimumPhysicsFixedFramesPerSecond` | whole number | `15` | Physics steps a second at worst. | No |
 | `FPSForMaximumFixedFrameCount` | whole number | `20` | At this server frame rate or above, physics runs at the maximum. | No |
 | `FPSForMinimumFixedFrameCount` | whole number | `5` | At this server frame rate or below, physics runs at the minimum. | No |
+
 ### Other
 
 | Key | Type | Default | What it does | Restart |

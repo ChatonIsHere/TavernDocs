@@ -49,14 +49,14 @@ Everything here was checked against the decompiled server build that Tavern inst
 
 - **Command and alias names must be lower case.** The typed line is lower-cased before matching, but your names aren't. `[Command("Ping")]` can never be run.
 - **A module with the same name as another replaces it.** `Collect` removes any top-level module with the same name first. Call yours `player` and the game's (or TavernLib's) `player` is gone.
-- **A failed requirement hides the command.** `[ServerOnly]` on a client, or a missing permission, gives "Command not found", not "not allowed".
-- **`PlatformProvider.IsServer()` only means "running on Linux".** A Windows server is a client by that test. Check `ServerHandler.Current` or the `/start_server` flag instead.
+- **A failed requirement hides the command.** `[ServerOnly]` on a client in a game, or a missing permission, gives "Command not found", not "not allowed". (In a client's main menu `[ServerOnly]` passes: the menu runs a dummy `ServerHandler`.)
+- **`PlatformProvider.IsServer()` only means "running on Linux".** A Windows server is a client by that test. Check the `/start_server` flag instead, or `ServerHandler.Current` (which is a dummy in a client's main menu: check `IsDummyLocalServer`).
 - **A method that throws in an `UpdateModule` is removed for good.** The game logs the error once and never calls it again.
-- **`MainThreadDispatcher.Run` always waits for the next `Update`,** even when you're already on the main thread.
+- **`MainThreadDispatcher.Run` always queues,** even when you're already on the main thread. The action runs in the dispatcher's next `Update`, not straight away.
 - **Alta's web services are gone.** Anything that calls `ApiAccess.ApiClient` waits for a timeout unless a mod answers first. See [Alta's web API](alta-web-api.md).
 
 ## See also
 
 - The guide pages [Console commands](../../mod/tavernlib/console-commands.md) and [Client, server or both](../../mod/tavernlib/client-server-or-both.md).
 - [Console and tokens](../../host/console-and-tokens.md) for the host's side of the console.
-- The Networking area for `ServerHandler`, `Connection` and `Alta.Serialization`.
+- The Networking area: [ServerHandler](../networking/server-handler.md), [Sockets and connections](../networking/connections.md) for `Connection`, and [Stream](../networking/stream.md) for `Alta.Serialization`.

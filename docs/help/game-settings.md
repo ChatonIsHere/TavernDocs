@@ -11,8 +11,6 @@ The launcher's **Game Settings** window edits this file. You can also edit it by
 
 **Close the game first.** The game writes the file when you change a setting in the game, so it can write over your edit. A key you leave out keeps its default.
 
-The launcher's **Defaults** button doesn't match the game's own defaults for three keys: `ViewFinderResolutionScale`, `HasAccessibilityFeatures` and `HeightAssistValue`. The defaults below are the game's.
-
 ## Moving
 
 | Key | Default | What it does |

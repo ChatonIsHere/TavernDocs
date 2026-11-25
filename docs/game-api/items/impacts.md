@@ -83,12 +83,12 @@ From the code, a hit rebuilt from `SyncImpact` uses the tool's `Damage` and the 
 | `bool IsWieldedByLocalPlayer()` | | |
 | `event OnGeneratedHit OnHit` | A hit was made with this tool. | `delegate void OnGeneratedHit(ImpactHitWithTool, ImpactTool)` |
 | `static event OnGeneratedHit OnHitAny` | A hit was made with any tool. | |
-| `event OnGeneratedHit OnBlocked` | This tool was blocked by an item. | |
+| `event OnGeneratedHit OnBlocked` | This tool, on a held item, blocked another tool's swing. | Raised on the blocker's `ImpactTool` with the striker's hit; the tool argument is the blocker. |
 | `event OnCollidedHit OnCollided` | Any collision, hit or not. | `delegate void OnCollidedHit(Collision, bool isHitting, ImpactTool)` |
 | `event CollisionFilter CollisionFilter` | Lets this tool swallow a block collision. | |
 | `event Action<ImpactHitWithTool> OnHittingImpactDetector` | The hit reached a detector. | |
 
-Blocking: when a held tool hits another item (not a detector), the struck item's `Pickup.BlockLevel` decides. Shields and weapons that block take durability damage equal to the hit's damage, and the striking tool's `OnBlocked` fires.
+Blocking: when a held tool hits another item (not a detector), the struck item's `Pickup.BlockLevel` decides. Shields and weapons that block take durability damage equal to the hit's damage, and if the blocking item has an `ImpactTool`, that tool's `OnBlocked` fires (not the striker's).
 
 ## ImpactDetector
 
@@ -113,7 +113,7 @@ Blocking: when a held tool hits another item (not a detector), the struck item's
 
 | Member | What it does |
 | --- | --- |
-| `float HealthDamage { get; }` | `BaseHealthDamage × Effectiveness × DamageMultiplier × Multipliers × HealthMultiplier`, or 0 if not valid. Worked out each time you read it. |
+| `float HealthDamage { get; }` | `BaseHealthDamage × Effectiveness × DamageMultiplier × Multipliers × HealthMultiplier`, or 0 if not valid. Worked out each time you read it. `BaseHealthDamage` is the impactor's `HealthDamageModifier`: its `ImpactorValues` number times the impactor's own `Multipliers` (the material's damage multiplier). |
 | `float CrippleDamage { get; }` | Same with the cripple values. |
 | `static float DamageMultiplier { get; }` | The server's `DamageX` setting on a server, 1 on a client. |
 | `float Effectiveness { get; set; }` / `bool IsValid { get; }` | 0 to 1; valid when above 0. |
@@ -127,7 +127,7 @@ Blocking: when a held tool hits another item (not a detector), the struck item's
 
 ## Asset values
 
-Asset values (build main-1.7.2.1.42203). The reference tables cover every weapon.
+Asset values (build main-1.7.2.1.42203). [Items and materials](../reference/items-and-materials.md) lists every item with its material and durability; impactor values aren't in the reference tables, so the ones below were read from the prefabs.
 
 ### ImpactorValues
 
@@ -153,9 +153,12 @@ Hardness comes from `ImpactorSettings.hardnessLevel`, overridden by the item's m
 | Katana | 1 | 0.8 / 1.1 | Slash, edge 0.95 m | 1.3 / 0.65 | 0.4 to 2.1 m | 2 |
 | Rusty Greataxe | 1 | 0.3 / 1 | Slash | 0.75 / 0.5 | 0.7 to 2.2 m | 0.45 |
 | Pick Axe | 10 | 1 / 1 | Pierce, Mining channel | 1 / 1 | 0.35 to 0.7 m | 1 |
-| Arrow | 1 | 1 / 1 | Pierce, ignores the speed check | 0.1 / 0.1 | 0.3 to 0.6 m | 2 |
+| Arrow (`Damage` impactor) | 1 | 1 / 1 | Pierce, ignores the speed check | 0.1 / 0.1 | 0.3 to 0.6 m | 2 |
+| Arrow (`Damage (Archery)` impactor) | | | Pierce | 0.6 / 0.6 | 2.5 to 9.5 m | 2 |
 | Wyrm (each scythe) | 0.5 | | Pierce, `FixedImpactor` | 1 / 1 | none (fixed) | 0 |
 | Spriggull | 1 | | Blunt | 0.5 / 0.2 | 0.35 to 1.35 m | 1 |
+
+An arrow has two impactors. Going by its name and its long follow distances, `Damage (Archery)` is probably the one that counts for bow shots; that wasn't traced in the code.
 
 Every tool here has `timeToSelfHit` 1.5 s and `requiredBlockLevel` `BlockPhysicalOnly`. Swords and the greataxe block at `BlockPhysicalOnly`; bags, the pick and arrows can't block (`CantBlock`). A `FixedImpactor` reports effectiveness 1 while charged, so a Wyrm's scythe hit is 0.5 × 1 before the target's multipliers (a `FixedImpactor` with a damage stat uses that stat as its multiplier, so a stronger creature hits harder).
 
@@ -183,6 +186,9 @@ Types not listed are taken at full damage.
 See every hit this machine resolves:
 
 ```csharp
+using Alta.Impact;
+using MelonLoader;
+
 public class HitLogger : MelonMod
 {
     public override void OnInitializeMelon()
@@ -205,6 +211,9 @@ On a server, `OnHitAny` fires for PvP hits it resolved and for hits clients repo
 Refuse reported hits from too far away, on the server:
 
 ```csharp
+using Alta.Impact;
+using HarmonyLib;
+
 [HarmonyPatch(typeof(ImpactTool), nameof(ImpactTool.GenerateImpactOnDetector))]
 static class RejectFarHits
 {
@@ -224,6 +233,9 @@ The detector's transform can be some way from where a big creature was struck, s
 Change the damage of reported hits:
 
 ```csharp
+using Alta.Impact;
+using HarmonyLib;
+
 [HarmonyPatch(typeof(ImpactTool), nameof(ImpactTool.GenerateImpactOnDetector))]
 static class ReportedHitDamage
 {

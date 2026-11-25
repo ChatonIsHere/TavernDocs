@@ -33,14 +33,15 @@ entity.PrefabRoot.SceneDestroy();
 
 What a destroy does, in order:
 
-1. `PreDestroy` on the prefab: raises `NetworkPrefab.PreDestroyed`, clears its chunking parent, then sets its chunk to null. Leaving the chunk sends a destroy message to every player who had it.
-2. `IsBeingDestroyed = true`, then `DestroyedByScene(entity, isUnload)` on the entity.
-3. Frees its id.
-4. The same for every embedded entity.
-5. Its chunking children: on the server, `Child`, `Creature` and `Ignore` children are destroyed too (with the same `isUnload`). Others are unparented, with an error.
-6. `Object.Destroy` on the game object.
+1. `IsBeingDestroyed = true`.
+2. `PreDestroy` on the prefab: raises `NetworkPrefab.PreDestroyed`, clears its chunking parent, then sets its chunk to null. Leaving the chunk sends a destroy message to every player who had it.
+3. `DestroyedByScene(entity, isUnload)` on the entity.
+4. Frees its id.
+5. The same for every embedded entity.
+6. Prefabs nested under it in the transform hierarchy (docked items, for example): on the server, `Child`, `Creature` and `Ignore` ones are destroyed too (with the same `isUnload`). Others are moved to `DefaultSpawnedFolder`, with the error "Unchilding child of destroyed prefab".
+7. `Object.Destroy` on the game object.
 
-Destroying an embedded entity on its own logs "Attempted to destroy child ... without parent" and leaves things in a bad state. Destroy the `PrefabRoot`.
+Destroying an embedded entity on its own logs "Attempted to destroy child ... without parent", then "Why is a non-prefab being destroyed?", and stops there. Destroy the `PrefabRoot`.
 
 :::danger[Don't use Object.Destroy]
 `UnityEngine.Object.Destroy` on an entity skips all of the above. Clients keep a ghost of it and the chunk still lists it. `NetworkEntity.OnDisable` logs "Entity being unofficially destroyed" when this happens.
@@ -51,6 +52,10 @@ Destroying an embedded entity on its own logs "Attempted to destroy child ... wi
 `isUnload` is true when the destroy is part of a chunk unloading (or another non-final removal). Game code that cleans up for good checks it. For example a population counts a real destroy as a lost member (it respawns later), but an unload only frees the spawn point.
 
 ```csharp
+using Alta.Networking;
+using HarmonyLib;
+using MelonLoader;
+
 // Tell real destroys from chunk unloads. Runs on server and clients.
 [HarmonyPatch(typeof(SpawnManager), nameof(SpawnManager.DestroyLocal))]
 static class WatchDestroys
@@ -69,10 +74,12 @@ Or per entity, `entity.DestroyedByScene += (e, isUnload) => ...`. It fires once 
 
 ## Falling out of the world
 
-On the server, an entity that moves checks which chunk it's in (`Chunker.EvaluateChunk`, run by `ChunkDetector` every frame its transform has changed, by `NetworkRigidbody`, and by `ForcePositionSync`). If its position is in no chunk at all:
+On the server, an entity that moves checks which chunk it's in (`Chunker.EvaluateChunk`, run by `ChunkDetector` every frame its transform has changed, by `NetworkRigidbody`, and by `ForcePositionSync`). If its position is in no chunk at all, it happens in two steps. The first check moves it out of its old chunk into no chunk, so players lose it but it stays on the server. The next check that finds it still chunkless acts:
 
 - A loose pickup that a player last touched is posted to that player's postbox (`PostboxManager`) instead. If it's docked, nothing happens.
 - Anything else is destroyed with `isUnload: true` and a warning: "ran out of chunks".
+
+`ChunkDetector` only checks when the transform has changed, so something that comes to rest just outside the world can stay there chunkless, unseen and unsaved.
 
 Entities with a chunking parent don't check; they follow the parent.
 
@@ -90,4 +97,4 @@ The edges of the world are where the chunk boxes end. `LocationChunkHelper.GetBe
 
 - [Spawning](spawning.md)
 - [NetworkEntity](network-entity.md)
-- The Networking area, for the `EntityDestroyed` message
+- [Entity sync](../networking/entity-sync.md), for the entity messages

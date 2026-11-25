@@ -6,7 +6,7 @@ sidebar_position: 26
 
 # Other Alta assemblies
 
-Types in the smaller `Alta.*` assemblies, one section per assembly. 288 types, 39 with a hand-written page.
+Types in the smaller `Alta.*` assemblies, one section per assembly. 288 types, 38 with a hand-written page.
 
 See [the overview](overview.md) for what the columns mean and how this list is made.
 
@@ -505,7 +505,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
 | `GeneralValue` | abstract class | `ScriptableObject` | 2 | [Alta assemblies](../console-and-utilities/alta-assemblies.md): A `ScriptableObject` with a `Description` and a `Type`. |
-| `HashedGeneralValue` | abstract class | `GeneralValue` | 2 | [Alta assemblies](../console-and-utilities/alta-assemblies.md): A `GeneralValue` with a stable `uint Hash`. `Item`, `PageCollection`, `PopulationDefinition`, `MouldDefinition`, `Festivity`, `GameAction` and many more derive from it. |
+| `HashedGeneralValue` | abstract class | `GeneralValue` | 2 |  |
 | `HashedGeneralValue<T>` | abstract class | `HashedGeneralValue` | 8 | [Alta assemblies](../console-and-utilities/alta-assemblies.md): A `GeneralValue` with a stable `uint Hash`. `Item`, `PageCollection`, `PopulationDefinition`, `MouldDefinition`, `Festivity`, `GameAction` and many more derive from it. |
 | `HashedGeneralValueComparer` | class | `IEqualityComparer<HashedGeneralValue>` | 1 | [Alta assemblies](../console-and-utilities/alta-assemblies.md): Compares by hash. |
 | `HashedGeneralValueConverter<T>` | class | `TypeConverter` | 2 | [Alta assemblies](../console-and-utilities/alta-assemblies.md): The console converter for those types: a hash, or a name. |

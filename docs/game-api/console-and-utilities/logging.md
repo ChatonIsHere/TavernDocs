@@ -59,7 +59,7 @@ public static void Hello(string name, Exception error)
 }
 ```
 
-Use your mod's name as the logger name so hosts can filter it. Don't start it with `Alta.Console.`: those loggers only go to the console, not to the log files (see below).
+Use your mod's name as the logger name so hosts can filter it. Don't start it with `Alta.Console.` unless you mean to: Trace lines from those loggers go only to the console, never to the log files (see below).
 
 ## NLog.config
 
@@ -79,7 +79,7 @@ Targets it defines:
 
 Rules, in order:
 
-1. `Alta.Console.*` at Trace and above goes to `MinServerConsole` and `ConsoleCommands`, and stops there (`final`). Command results are logged here at Trace.
+1. `Alta.Console.*` at Trace only (`level="Trace"`, not `minlevel`) goes to `MinServerConsole` and `ConsoleCommands`, and stops there (`final`). Command results are logged here at Trace. Their Debug and higher lines don't match this rule, so they go on to the rules below like any other logger's.
 2. Everything at Debug and above goes to `logFile` and `ServerConsole`.
 3. Everything at Error and above also goes to `errorLogFile`.
 4. The `Unhandled` logger goes to `unhandledLogFile`.
@@ -126,4 +126,4 @@ Registered by `Debug`, usable in your own NLog config:
 
 - [Console events](console-events.md#log-events) for streaming logs to a console client.
 - [Startup and app state](startup-and-app-state.md) for `-logFile` and `/logging_config_path`.
-- The log line index, for what individual lines in these logs mean.
+- [Log line index](../patching/log-messages.md), for what individual lines in these logs mean.

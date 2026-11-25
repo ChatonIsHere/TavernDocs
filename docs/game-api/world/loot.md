@@ -18,7 +18,7 @@ Chests, crates, sacks and cave containers fill themselves from loot tables when 
 
 1. **Empties every dock first** (`DestroyAmount(QuantityStored)`). A refill throws away what's there.
 2. Works out the prosperity from the `SpawnData`'s biome attributes (or a random default) as the rarity weighting power.
-3. Loops: adds `incrementingFailChance` to a running fail chance and stops when a random roll falls under it; otherwise picks a random dock, and if it's empty rolls an item for it (`LootTable.GetLoot`) and spawns it docked. It stops when every dock has been filled once.
+3. Loops: adds `incrementingFailChance` to a running fail chance and stops when a random roll falls under it; otherwise picks a random dock, and if it's empty rolls an item for it (`LootTable.GetLoot`) and spawns it docked. It stops when every dock has been filled once. On a simple server, items marked `IsDisabledOnSimpleServer` are skipped (the roll counts as a miss).
 4. In a biome blend (`GeneratedBiome.From` and `To`), each roll uses the `To` biome's tables with chance `Transition`.
 
 So the number of items is random: with the shipped loot modules' `incrementingFailChance` of 0.025 the chance of stopping goes up 2.5% per roll, and with crates' 0.1 it goes up 10%.
@@ -46,6 +46,11 @@ If an origin gives nothing it tries another; if a rarity gives nothing it tries 
 ### Hooking a roll
 
 ```csharp
+using Alta.Inventory;
+using Alta.Loot;
+using HarmonyLib;
+using MelonLoader;
+
 // See what the loot roll picked for each dock.
 [HarmonyPatch(typeof(LootTable), nameof(LootTable.GetLoot),
     new[] { typeof(PickupDock), typeof(LootTable[]), typeof(float), typeof(int), typeof(Rarity), typeof(Origin) },
@@ -92,4 +97,5 @@ Timeline time is real time multiplied by the server's time speed, so a 12 hour r
 ## See also
 
 - [Spawning](spawning.md#spawndata)
-- The Items area, for `Item`, `PickupDock` and `PickupDockGroup`
+- [Items and materials](../items/items-and-materials.md) and [Docks](../items/docks.md), for `Item`, `PickupDock` and `PickupDockGroup`
+- The [reference tables](../reference/items-and-materials.md), for every item's name and hash

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Harmony in A Township Tale
 
-The game has no hooks for mods, so nearly every mod changes it with [Harmony](https://harmony.pardeike.net/articles/intro.html). MelonLoader ships Harmony (`0Harmony.dll`, version 2.10) and gives every mod and plugin its own instance, `HarmonyInstance`. This page is about what's particular to this game. Harmony's own docs cover the rest.
+The game has no hooks for mods, so nearly every mod changes it with [Harmony](https://harmony.pardeike.net/articles/intro.html). MelonLoader ships HarmonyX (`0Harmony.dll`, version 2.10.2), BepInEx's fork of Harmony 2 with the same `HarmonyLib` API, and gives every mod and plugin its own instance, `HarmonyInstance`. This page is about what's particular to this game. Harmony's own docs cover the rest, and the [HarmonyX wiki](https://github.com/BepInEx/HarmonyX/wiki) lists where the fork differs.
 
 Every example here compiles against att-stubs. Examples that use a private member say so.
 
@@ -309,7 +309,7 @@ Patches run on whatever thread calls the original. For most of the game that's U
 - Saving can write chunk files off the main thread (Steady's `ChunkSaveFormat.WriteTo` patch runs there).
 - Your own `Task.ContinueWith` callbacks and `Task.Run` work run on the thread pool.
 
-Unity objects must only be touched from the main thread. Hand the work back with the game's `MainThreadDispatcher`, which runs it on the next frame:
+Unity objects must only be touched from the main thread. Hand the work back with the game's `MainThreadDispatcher`, which queues it for its next `Update` (even when you're already on the main thread):
 
 ```csharp
 static class Threads
@@ -325,7 +325,7 @@ Patches on methods that run every frame, or for every entity, cost every frame. 
 
 ## Server or client
 
-A patch applied with attributes runs on both sides, so check where you are:
+A patch applied with attributes runs on both sides, so check where you are. The [Game API overview](../overview.md#two-builds-one-of-them-everywhere) has the full table of checks; these are the ones that matter in a patch:
 
 ```csharp
 static class Side

@@ -160,3 +160,4 @@ A CORS module on `/` answers every origin. If the web server fails to start, it 
 
 - [Console events](console-events.md) for subscriptions.
 - [Console and tokens](../../host/console-and-tokens.md) for owner and named tokens.
+- [TavernLib's console](../../tavernlib-api/console.md) for named token paths and what TavernLib logs.

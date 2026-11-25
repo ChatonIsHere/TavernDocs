@@ -6,7 +6,7 @@ sidebar_position: 23
 
 # No namespace: T to X
 
-Types in `Root.Township` with no namespace (the global namespace), from T to X. 249 types, 14 with a hand-written page.
+Types in `Root.Township` with no namespace (the global namespace), from T to X. 249 types, 13 with a hand-written page.
 
 See [the overview](overview.md) for what the columns mean and how this list is made.
 
@@ -18,7 +18,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | `TargetBasedSkill` | abstract class | `PickupBasedSkill` | 5 |  |
 | `TaskCompletedEvent` | class | `MonoBehaviour`, `IAchievementItem` | 1 |  |
 | `TaskLock` | class |  | 3 |  |
-| `TaskYield` | class | `CustomYieldInstruction` | 3 | [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#coroutineyields-and-taskyield) |
+| `TaskYield` | class | `CustomYieldInstruction` | 3 |  |
 | `TeleportationPoint` | class | `CustomTeleportation`, `ISavable<TeleportationPointSaveData>`, `ISavableSave<TeleportationPointSaveData>`, +1 more | 7 |  |
 | `TeleportationPointSaveData` | class | `NewSaveData<TeleportationPoint, TeleportationPointSaveData>` | 2 |  |
 | `TeleportAwareTriggerExample` | abstract class | `MonoBehaviour`, `ITeleportAwareTrigger` | 2 |  |

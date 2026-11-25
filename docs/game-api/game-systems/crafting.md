@@ -97,6 +97,11 @@ The server counts the rigidbodies within 0.1 m of the landing point. If 10 or mo
 - **Recipes are assets.** To add a generic recipe you'd need a new `GenericCraftingRecipe` registered in `HashedGeneralValue`'s table, a page that carries it, and the result prefab on clients. Changing an existing recipe's result on the server only changes what spawns.
 
 ```csharp
+using Alta.Crafting;
+using Alta.Networking;
+using HarmonyLib;
+using MelonLoader;
+
 [HarmonyPatch(typeof(GenericCraftingStation), "SpawnResult")]
 static class StationResultPatch
 {
@@ -142,4 +147,4 @@ static class PartsJoinedPatch
 ## See also
 
 - [Smelting and forging](smelting-and-forging.md)
-- The items area, for `Pickup`, `Item` and docks
+- [Items](../items/overview.md), for `Pickup`, `Item` and [docks](../items/docks.md)

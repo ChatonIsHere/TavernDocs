@@ -56,9 +56,9 @@ On a TavernLib server, the join goes through more checks first:
 - **Fly cam filter**: `Fly`, `AutoCam` and `Unassigned` modes are refused ("Bizarre mode detected.") unless `users.json` lets that user fly.
 - **Token check**: the token must have exactly one `TavernToken`, `UserId` and `Username` claim, and the `TavernToken` must match the user's token in `users.json`. Blacklist and whitelist are applied here.
 - **Mod parity**: the client's mod list (sent earlier over TavernLib's auth handshake) must match the server's required mods ("Mod mismatch").
-- Then the game's own `CheckApproved` runs. TavernLib replaces `CheckIfPlayerIsAllowedCustom` completely (a prefix returning `false`): it checks the token's user id matches and gives the player a `PlayerSubscriberStatus` from their roles (`dev`, `mod`, `supporter`). So **none of the checks in the table above run on a TavernLib server**, including the player limit and the game version. We found nothing else in TavernLib's source that checks the player count at join, so `PlayerLimit` there looks like it only reaches the server listing. If your mod needs a hard limit, add it yourself (see [Hooking it](#hooking-it)).
+- Then the game's own `CheckApproved` runs. TavernLib replaces `CheckIfPlayerIsAllowedCustom` completely (a prefix returning `false`): it checks the token's user id matches, refuses the join once the server is past `PlayerLimit` ("Reached player limit of: ...", counting connections the way the game does), and gives the player a `PlayerSubscriberStatus` from their roles (`dev`, `mod`, `supporter`). The rest of the table above **doesn't run on a TavernLib server**: no game version check, no `Config` list, no "already on the server" check and no fly-mode check (TavernLib's fly cam filter does that job). The "Already connected to this server." check in `CheckApproved` still runs.
 
-See [Roles](../../mod/tavernlib/roles.md) and the host [config reference](../../host/config-reference.md#roles).
+The player limit comes from `server_settings.json` (see [ServerHandler](server-handler.md#members)). See [Roles](../../mod/tavernlib/roles.md) and the host [config reference](../../host/config-reference.md#roles).
 
 ## The client side
 
@@ -163,26 +163,28 @@ static class LogJoinResult
 
 `ContinueWith` without a scheduler runs on a thread-pool thread, so don't touch Unity objects in it.
 
-- **Your own allow rule, server side**: a postfix on `CheckIfPlayerIsAllowedCustom` sees TavernLib's `Task<PlayerJoinResult>` as `__result` and can replace it with a denial. Harmony runs postfixes even when a prefix skipped the original. Both the method and `PlayerJoinResult` are `protected`, so this compiles against att-stubs only. This one puts the player limit back:
+- **Your own allow rule, server side**: a postfix on `CheckIfPlayerIsAllowedCustom` sees TavernLib's `Task<PlayerJoinResult>` as `__result` and can replace it with a denial. Harmony runs postfixes even when a prefix skipped the original. Both the method and `PlayerJoinResult` are `protected`, so this compiles against att-stubs only. This one closes the server to new players while a flag is set:
 
 ```csharp
 using System.Threading.Tasks;
-using Alta.Networking;
 using Alta.Networking.Servers;
 using HarmonyLib;
 
 [HarmonyPatch(typeof(ServerPlayerConnectionHandlerOld), nameof(ServerPlayerConnectionHandlerOld.CheckIfPlayerIsAllowedCustom))]
-static class HardPlayerLimit
+static class MaintenanceMode
 {
+    public static bool Closed;
+
     static void Postfix(ref Task<ServerPlayerConnectionHandlerOld.PlayerJoinResult> __result)
     {
-        // The connection asking to join counts itself, as in the game's own check.
-        int limit = ServerHandler.Current.PlayerLimit;
-        if (limit > 0 && Socket.Current.ConnectionCount > limit)
-            __result = Task.FromResult(ServerPlayerConnectionHandlerOld.PlayerJoinResult.CreateDeniedResult("The server is full"));
+        if (Closed)
+            __result = Task.FromResult(ServerPlayerConnectionHandlerOld.PlayerJoinResult.CreateDeniedResult("Closed for maintenance"));
     }
 }
 ```
+
+A join lock in `ServerHandler.Current.ServerLocks` (see [Server lifecycle](server-lifecycle.md#other-types)) refuses joins without a patch, but adds ", check Discord" to the message.
+
 - **`CheckApproved`** and **`SpawnPlayerToClient`** are `async void`: a patch only covers the code up to the first `await`. Prefer the events and steps above.
 - Don't patch `InitializeConnection` with a prefix that returns `false` as well: TavernLib's already does, and only one of you would install a handler.
 

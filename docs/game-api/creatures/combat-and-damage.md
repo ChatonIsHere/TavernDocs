@@ -6,7 +6,7 @@ sidebar_position: 7
 
 # Combat, damage and death
 
-Creature combat uses the same impact system as player weapons (`Alta.Impact`, covered in the Items area), plus `HealthObject` for health. This page covers the parts that matter for creatures. Most of it is server side, with one big exception: **some creature melee hits on a player are detected only by that player's client.**
+Creature combat uses the same impact system as player weapons (`Alta.Impact`, see [Impacts and hit detection](../items/impacts.md)), plus `HealthObject` for health ([Health and damage](../items/health-and-damage.md)). This page covers the parts that matter for creatures. Most of it is server side, with one big exception: **some creature melee hits on a player are detected only by that player's client.**
 
 Everything here was checked against the server build (`src-tavern`): the AI, impact, health and population code there is the same as in the client download, so the server has no extra checks on creature hits. Values marked as asset values come from the shipped prefabs (build `main-1.7.2.1.42203`); [Creature data](creature-data.md) has the full tables.
 
@@ -39,7 +39,7 @@ No code calls `Charge`, `Reset`, `Shoot` or `Stun` for these creatures. The pref
 | Wyrm, Crystal Wyrm | Scythes (`FixedImpactor` on `ImpactTool`s, collision) | `AnimationTrigger` objects that the attack animations switch on and off (`switch_l_attack`, `switch_r_attack`). The spit is fired by `ProjectileShooter.Shoot` when the spit-charge animation object switches off. |
 | Gotera | Vine whip (`TriggerImpactTool` on an `EruptAreaAttack` that erupts near the target, 12 m radius), seed spray, darts | `AnimationTrigger` and `NetworkedEvent` components call `SeedSprayManager.Shoot` and `ProjectileShooter.Shoot` |
 
-Stuns come from `StatTrigger` components: when a turabada's cripple health drops to 0.1 or less, its `StatTrigger` calls `Turabada.Stun` on the server. Babus (0.05), Greater Gotera and the gotera variants (0.1; the plain Gotera has no stun trigger) and the Dais animals (5% of their cripple health) work the same way.
+Stuns come from `StatTrigger` components: when a turabada's cripple health drops to 0.1 or less, its `StatTrigger` calls `Turabada.Stun` on the server. Babus (0.05), Greater Gotera and the gotera variants (0.1, but 10% of cripple health for the redwood; the plain Gotera has no stun trigger) and the Dais animals (5% of their cripple health) work the same way.
 
 Animation-driven hitboxes are charged by whichever machine plays the animation, which includes every client that can see the creature, because `NetworkAnimator` syncs the animator.
 
@@ -65,19 +65,12 @@ The other way round, the attacker's client works it out and sends `SyncImpact` t
 
 ## How much damage
 
-For a hit with a tool:
+The numbers multiply up the same way as for any weapon hit: the impactor's health modifier (times its `Multipliers`, which is where a `FixedImpactor`'s damage stat goes), times effectiveness, times the server's `DamageX`, times the tool's damage, then the victim's multiplier for that `ImpactType` and armour, divided by its damage protection stat. [Health and damage](../items/health-and-damage.md#how-damage-is-worked-out) has the full chain, and [ImpactHit](../items/impacts.md#impacthit-and-impacthitwithtool) the members.
 
-- `ImpactHit.HealthDamage` = the impactor's base damage × `Effectiveness` × `ImpactHit.DamageMultiplier` × `Multipliers` × `HealthMultiplier`.
-- `ImpactHit.DamageMultiplier` is the server's `DamageX` setting on the server, and 1 on a client.
-- `Multipliers` comes from the tool's damage (and `OneOffMultiplier`). The impactor's own base damage already includes its `Multipliers`, which is where a `FixedImpactor`'s damage stat goes.
+What matters for creatures:
 
-Then the victim's side:
-
-| Step | Where | What it does |
-| --- | --- | --- |
-| `HealthObject.DetectImpact(ImpactHit impact)` | Both sides get the event | Multiplies by the health object's multiplier for that impact type and by any armour on the detector, then calls `ReceiveDamage`. |
-| `HealthObject.ReceiveDamage(float healthDamage, float crippleDamage, DamageData impact = null)` | Server only (returns on clients) | If the creature is a combatant and the hit was by a player, puts that player in combat. Divides by the damage protection stat, then takes it off the health stat. |
-| `PlayerHealth.ReceiveDamage(...)` | Server only | For players: raises `HandleDamage` (a handler can mark the damage handled), skips dead, damage-ignoring or invincible players, applies PvP multipliers to player hits, multiplies by the server's `PlayerDamageTakenMultiplier`, then calls the base. |
+- `HealthObject.ReceiveDamage(float healthDamage, float crippleDamage, DamageData impact = null)` does nothing on a client. On the server, if the creature is a combatant and a player's held tool landed the hit, it puts that player in combat.
+- For hits on players, `PlayerHealth.ReceiveDamage` runs first: `HandleDamage`, the invincibility checks, PvP multipliers (player hits only) and the server's `PlayerDamageTakenMultiplier`. See [PlayerHealth](../items/health-and-damage.md#playerhealth).
 
 Both `ReceiveDamage` methods are public and virtual, and good Harmony targets for changing damage.
 
@@ -154,7 +147,7 @@ To kill a creature from code, call `agent.HealthObject.Die()` on the server. It 
 
 ## Loot
 
-There's no creature loot table in the code. Drops are wired in each prefab: its `HealthObject.Destroyed` event calls `Spawner.Spawn()` or `MultiSpawner.Spawn()` on spawner components, which roll `Distribution` assets or spawn fixed prefabs, server only. [Creature data](creature-data.md#drops) lists what each creature drops. To change drops, patch `MultiSpawner.Spawn()` and `Spawner.Spawn()` (check that the spawner is on a creature), or edit the `Distribution` assets. To add your own drops, postfix `Agent.Killed`, check `NetworkSceneManager.IsServer`, and spawn items at `agent.Position` (spawning is in the Items area). `SpawnOnDestroyed` is only a visual effect: it spawns a pooled object when the GameObject is destroyed, and never on a headless server.
+There's no creature loot table in the code. Drops are wired in each prefab: its `HealthObject.Destroyed` event calls `Spawner.Spawn()` or `MultiSpawner.Spawn()` on spawner components, which roll `Distribution` assets or spawn fixed prefabs, server only. [Creature data](creature-data.md#drops) lists what each creature drops. To change drops, patch `MultiSpawner.Spawn()` and `Spawner.Spawn()` (check that the spawner is on a creature), or edit the `Distribution` assets. To add your own drops, postfix `Agent.Killed`, check `NetworkSceneManager.IsServer`, and spawn items at `agent.Position` (see [Spawning](../world/spawning.md)). `SpawnOnDestroyed` is only a visual effect: it spawns a pooled object when the GameObject is destroyed, and never on a headless server.
 
 ## See also
 

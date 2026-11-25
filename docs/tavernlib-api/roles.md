@@ -110,7 +110,7 @@ A client has no `users.json`. What it has is the list the server sent, in `Taver
 | Member | What it is |
 | --- | --- |
 | `UserConfig.User LocalUser { get; }` | Your user on the server you're on. Only `Roles` is filled in. |
-| `LocalUser.Roles` | `List<string>`, replaced each time the server sends roles. |
+| `LocalUser.Roles` | `List<string>`, cleared and filled again each time the server sends roles. |
 | `LocalUser.HasRole(string role)` | Without case. |
 | `LocalUser.IsModerator` | Has `moderator` or `owner`. |
 | `LocalUser.CanEnterFlyMode` | `IsModerator`, or has `fly`. |

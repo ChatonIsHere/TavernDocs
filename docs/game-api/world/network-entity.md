@@ -48,8 +48,8 @@ Never save an `Identifier`. Save a prefab hash and a position, or let the chunk 
 | `INetworkScene Scene { get; }` | The scene it belongs to. | |
 | `bool IsInitialized { get; }` | True after `Initialize`. | |
 | `bool IsBeingDestroyed { get; set; }` | True once a destroy or unload has started. | Check it in delayed callbacks. |
-| `Pickup CommonPickup`, `Interactable CommonInteractable`, `ImpactTool CommonImpactTool` | Cached components, or null. | See the Items area. |
-| `EntitySerializer Serializer`, `bool IsSerialized` | State sync for its `INetworkSerialized` behaviours. | See the Networking area. |
+| `Pickup CommonPickup`, `Interactable CommonInteractable`, `ImpactTool CommonImpactTool` | Cached components, or null. | See [Pickup](../items/pickup.md). |
+| `EntitySerializer Serializer`, `bool IsSerialized` | State sync for its `INetworkSerialized` behaviours. | See [Entity sync](../networking/entity-sync.md#serialized-state). |
 | `int SyncPriority { get; }` | Lower syncs first when a chunk is sent to a player. | |
 | `Vector3 FramePosition { get; }` | `transform.position`, cached once per frame. | Cheap in hot loops. |
 | `static int SpawnedCount { get; }` | Live `NetworkEntity` components in the process. | Counts embedded parts too. |
@@ -100,6 +100,10 @@ On a client the spawn message does steps 1 and 2. Clients never run `InitializeA
 | Your behaviour's own `InitializeAsServer` override | If you patch one game behaviour, patch its override, not the base. | Many game classes override it; patch the declared method (`AccessTools.DeclaredMethod`), as CookingLib does for `Cookable`. |
 
 ```csharp
+using Alta.Networking;
+using HarmonyLib;
+using MelonLoader;
+
 // See every entity the server sets up, spawned or loaded from a save.
 [HarmonyPatch(typeof(NetworkEntity), nameof(NetworkEntity.InitializeAsServer))]
 static class WatchServerSpawns
@@ -126,4 +130,4 @@ static class WatchServerSpawns
 
 - [Prefabs and prefab hashes](prefabs.md)
 - [Chunks](chunks.md), for `Chunker` and chunk events
-- The Networking area, for `MethodSync`, `EntitySerializer` and entity messages
+- [Entity sync](../networking/entity-sync.md), for `MethodSync`, `EntitySerializer` and entity messages

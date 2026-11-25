@@ -34,7 +34,7 @@ So a server mod sees every grab, dock and hit, but it sees most of them after a 
 
 All of this was checked against the server build that Tavern servers run (assembly 0.0.39.2). For the classes in this area it's the same code as the client download, so these server checks are the only ones there are.
 
-Numbers marked "asset values" come from the game's prefabs and settings assets in build main-1.7.2.1.42203. They're a few examples. The reference tables list every item, material and dock setting.
+Numbers marked "asset values" come from the game's prefabs and settings assets in build main-1.7.2.1.42203. They're a few examples. The [reference tables](../reference/overview.md) list every item, material and durability setting.
 
 Everything in this area runs on Unity's main thread, from Unity callbacks (`Update`, `LateUpdate`, collisions) and network message handlers. The few `async` methods (`PlayerHealth.GrantInvincibilityToImpacts`, the start delay on `PhysicalButton`) use `Task.Delay` and carry on through Unity's synchronisation context, so also on the main thread. See [Impacts and hit detection](impacts.md) and [Interactor and hands](interactor-and-hands.md) for the details.
 
@@ -58,7 +58,7 @@ Everything in this area runs on Unity's main thread, from Unity callbacks (`Upda
 | [Quick access menu](quick-access-menu.md) | The wrist menu and summoned action items. |
 | [Pages and books](pages-and-books.md) | Recipe pages, books and the town's shared page list. |
 
-Spawning in general belongs to the world area. Item-specific spawning (into a dock, as a pouch) is on [Player inventory](player-inventory.md).
+Spawning in general is in [Spawning](../world/spawning.md). Item-specific spawning (into a dock, as a pouch) is on [Player inventory](player-inventory.md).
 
 ## Other types in this area
 

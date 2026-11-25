@@ -22,7 +22,7 @@ What happens, in order:
 2. On login, `ApplicationStartupManager.RunStartupActions` runs. It reads `/start_server` and expects three values after it: **server id**, **isHeadless** (`true`/`false`) and **port**. Bad values log "Could not parse ..." and the server doesn't start.
 3. Server id `-1` means a local server, made from `MenuSettings.LocalGameServerAccess(0)`. Any other id asks Alta's API for that server, which no longer exists.
 4. `GameModeManager.StartServer` makes a `ServerHostingGameMode` and activates it. It loads the server's scene (`ServerInfo.SceneIndex`).
-5. If isHeadless is `true` but the process isn't already headless, the game relaunches itself with `-batchmode -nographics` and quits. TavernLib's servers pass `false` and add `-batchmode` themselves, so this never happens.
+5. If isHeadless is `true` but the process isn't already headless, the game relaunches itself with `-batchmode -nographics` and quits (only when `/login` or `/login_hash` is on the command line; otherwise it logs an error and does nothing). TavernLib's servers pass `false` and add `-batchmode` themselves, so this never happens.
 6. `ServerLifetimePipeline.AttemptToStartServer` opens a server socket on the port (`NetworkManager.CreateSocket(isServer: true, ...)`), sets `NetworkSceneManager.IsServer = true` and makes the `ServerHandler`.
 7. `ServerHandler`'s constructor sets `ServerHandler.Current`, picks the save folder, loads `ServerConfiguration.json`, starts the world autosave (if saving is on) and queues its first bootup step.
 8. `ServerHandler.Bootup()` runs the bootup steps one at a time: first the handler's own `Initialize` (registers with the API, starts the web server on 1761, raises `GeneralGameEvents.ServerStarted`, starts the API ping loop), then the scene's `Initialize` (loads the global and void chunks, spawns the scene's embedded entities as server, raises `NetworkScene.ServerStarted`).
@@ -93,7 +93,7 @@ A player is saved when they leave (see [Saving](saving.md)). Players still conne
 | `GameMode` | Abstract base: `IsClient`, `IsServer`, `ActivateAsync()`, `StopModeAsync`. Subclasses: `ServerHostingGameMode`, `JoinedServerGameMode`, `LocalTestGameMode`. |
 | `ServerLifetimePipeline` | Static. Opens the server socket and makes the handler. `GetServerRegion()`, `GetServerFleet()`. |
 | `ServerLockCollection`, `ServerJoinLock` | `ServerHandler.ServerLocks`. While any lock is in it, every join is refused with the highest lock's message plus ", check Discord". TavernLib's chunk merge command uses one. |
-| `GarbageCollectTimer` | On the scene. Enabled on servers; runs a full GC every interval (30 s shipped). TavernLib makes the interval configurable. |
+| `GarbageCollectTimer` | On the scene. Only runs when the process is headless: every interval it asks for a non-blocking, optimized `GC.Collect` of every generation. The interval is prefab data (30 s going by TavernLib's notes; the code default is 2 s). TavernLib makes it configurable with `garbage_collection_timer` in `server_settings.json`. |
 
 ## See also
 

@@ -49,13 +49,13 @@ All are in `Alta.Chunks` in `Root.Township`. Rover's capture of a live server ha
 | Member | What it does | Notes |
 | --- | --- | --- |
 | `Bounds Bounds { get; set; }` | The chunk's box. | |
-| `Bounds BufferBounds { get; }` | The box grown by 10 m. Positions in this chunk are packed into this range at 1 mm steps on the wire. | |
+| `Bounds BufferBounds { get; }` | The box made 10 m bigger on each axis (5 m past each face). Positions in this chunk are packed into this range at 1 mm steps on the wire. | |
 | `int Priority { get; }` | Where boxes overlap, the highest priority wins. Interiors sit inside overworld chunks this way. | |
 | `ChunkRegion ChunkRegion { get; }` | Which named area it is (`town`, `tavern`, `caves`, and so on, in `Alta.FriendLocation`). | |
 | `ChunkEnvironment Environment { get; }` | Biome and environment. `SpawnData` comes from here. | |
 | `ChunkConnections Connections { get; }` | Forced neighbours with a load cost. Cave layers connect to the layer above this way. | |
 | `ChunkPositions Positions { get; }` | Spawn surfaces. Chunks with surfaces are in `ContentLocationChunks`. | |
-| `float DynamicLoadStrength`, `StaticLoadStrength` | How far loading spreads from this chunk. | See loading. |
+| `float DynamicLoadStrength`, `StaticLoadStrength` | How far loading spreads from this chunk. | See [Chunk loading and saving](chunk-loading-and-saving.md). |
 | `void SetOverrideLoadDistance(float distance, bool isOverriding = true)` | Give this chunk its own load distance. | |
 | `ChunkEffect[] chunkEffects` | `ScriptableObject`s whose `Apply(bool isContained)` runs when the local player enters or leaves. | Client only; skipped on headless. |
 | `bool HasLocalPlayer`, `static LocationChunk ChunkWithLocalPlayer`, `event Action<bool> HasLocalPlayerChanged`, `static Action<LocationChunk> OnChunkWithLocalPlayerChanged` | The local player's chunk. | Client |
@@ -124,7 +124,7 @@ Moving to a chunk adds the entity to the new chunk's `Entities` (which sends it 
 | `ChunkEntityManager.Add` / `Remove` | Every entity entering or leaving any chunk. | Very hot during loads and with physics objects moving about. |
 | `LocationChunk.PlayerEnteredChunk(Player)` | A player's current chunk changed. | Virtual, overridden by `CaveLayerChunk`; patch the base and the override if you need both. |
 | `Chunker.EvaluateChunk(bool)` | Avoid. | Runs for every moving entity every frame it moves. |
-| `ConsoleEvents.PlayerMovedChunk` | Server: a player moved from one chunk to another, as a console event. | See the Console area. |
+| `ConsoleEvents.PlayerMovedChunk` | Server: a player moved from one chunk to another, as a console event. | See [Console events](../console-and-utilities/console-events.md). |
 
 ## See also
 

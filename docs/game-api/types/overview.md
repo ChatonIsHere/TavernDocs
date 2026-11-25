@@ -8,22 +8,22 @@ sidebar_position: 1
 
 A list of every type in Alta's code: `Root.Township` and the `Alta.*` assemblies of the server build. It's for finding things. Most types have no page of their own; when one does, the last column links to it.
 
-5722 types are listed, 691 of them with a hand-written page.
+5722 types are listed, 690 of them with a hand-written page.
 
 ## Pages
 
 | Page | Types | With a page |
 | --- | --- | --- |
 | [Networking and servers](alta-networking.md) | 201 | 31 |
-| [World, chunks and saving](alta-world.md) | 172 | 24 |
+| [World, chunks and saving](alta-world.md) | 172 | 25 |
 | [World generation](alta-world-generation.md) | 339 | 74 |
 | [Creatures and AI](alta-intelligence.md) | 267 | 76 |
 | [Items, inventory and logic](alta-items.md) | 289 | 82 |
 | [Crafting and making](alta-crafting.md) | 252 | 75 |
-| [Stats, effects, heat and liquid](alta-stats-effects.md) | 185 | 72 |
+| [Stats, effects, heat and liquid](alta-stats-effects.md) | 185 | 73 |
 | [Players and characters](alta-player.md) | 250 | 20 |
 | [Customization and screenshots](alta-customization.md) | 144 | 9 |
-| [Console, logging and analytics](alta-console.md) | 139 | 15 |
+| [Console, logging and analytics](alta-console.md) | 139 | 14 |
 | [Menus, UI and platforms](alta-menus.md) | 128 | 0 |
 | [Utilities and other Alta namespaces](alta-utilities.md) | 206 | 6 |
 | [ATT, Features and other game namespaces](game-other-namespaces.md) | 233 | 16 |
@@ -35,10 +35,10 @@ A list of every type in Alta's code: `Root.Township` and the `Alta.*` assemblies
 | [No namespace: P](global-p.md) | 327 | 39 |
 | [No namespace: Q to R](global-q-r.md) | 114 | 4 |
 | [No namespace: S](global-s.md) | 315 | 16 |
-| [No namespace: T to X](global-t-x.md) | 249 | 14 |
+| [No namespace: T to X](global-t-x.md) | 249 | 13 |
 | [Alta.Api.Client](assembly-api-client.md) | 121 | 2 |
 | [Alta.Api.DataTransferModels](assembly-api-models.md) | 277 | 4 |
-| [Other Alta assemblies](assembly-other.md) | 288 | 39 |
+| [Other Alta assemblies](assembly-other.md) | 288 | 38 |
 
 ## The columns
 

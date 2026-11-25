@@ -14,10 +14,10 @@ The map is a set of pieces players uncover as they explore, plus landmarks (icon
 | --- | --- |
 | `Map` | A `HashedGeneralValue` asset: `MapPiece[] Pieces`, `GlobalMapPieces`, the world rectangle it covers (`WorldPositionBottomLeft`, `WorldPositionTopRight`) and `FirstNonReservedIndex` (1,000 by default: landmarks registered at runtime get indices from there up, and a player landmark wipe keeps the ones below it). `event Action<int, MapPiece> PieceDiscovered`. |
 | `MapPiece` | One piece: a `Sprite` and an `Offset`. |
-
-The game has one map, `MainMap` (hash 21174): 17 pieces (`MainMapPiece-0` and on), no global pieces, covering x -1688 to 190 and z -805 to 1073.
 | `MapManager` | Scene behaviour, `static MapManager Instance`. Holds each player's `PlayerMapManager`, or one shared one if `IsUsingSharedMap`. |
 | `PlayerMapManager` | One player's discovered pieces. `IsThisMapPieceDiscovered(Map, int)`, `GetUndiscoveredMapPieces(Map)`, `DiscoverPiece(Map, int)`. |
+
+The game has one map, `MainMap` (hash 21174): 17 pieces (`MainMapPiece-0` and on, except that index 7 is named `Hacked Map Piece`), no global pieces, covering x -1688 to 190 and z -805 to 1073.
 
 `MapManager` members:
 

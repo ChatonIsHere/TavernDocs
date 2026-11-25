@@ -76,16 +76,19 @@ A fuel-based fire burns a little `baseFuel` first, then fuel from its `fuelDock`
 | `float DockedBurnDuration` | How long one item lasts in a fuel dock (75 for almost every fuel in the assets). |
 | `Item BurningItem`, `float Volume`, `float ParentDuration` | What it turns into while burning, and related values. |
 
-Representative values from the `Fuel` assets (build `main-1.7.2.1.42203`; every item is in the reference tables):
+Representative values from the `Fuel` components (build `main-1.7.2.1.42203`, checked against a live server). An item made of several woods carries one `Fuel` per wood, all with the same numbers. Every fuel is in the [Fuel table](../reference/items-and-materials.md#fuel).
 
-| Fuel | `EfficiencyValue` | `EfficiencyCap` | `BurnDuration` | `BurnPriorityMultiplier` | `DockedBurnDuration` |
+| Item | `EfficiencyValue` | `EfficiencyCap` | `BurnDuration` | `BurnPriorityMultiplier` | `DockedBurnDuration` |
 | --- | --- | --- | --- | --- | --- |
-| Coal | 1 | 3 | 800 | 0.8 | 75 |
-| Sticks (each wood) | 1 | 7 | 10 (a second variant 1) | 1.2 | 75 |
-| Woodcut wedges, fresh | 0.2 | 10 | 10 | 1 | 75 |
-| Woodcut wedges, burnt | 0.2 | 10 | 200 | 1 | 75 |
-| Woodcut wedges, charred | 0.2 | 10 | 350 | 1 | 75 |
-| MRK Fuel Core | 1 | 10 | 8000 | 1 | 750 |
+| `Coal` | 1 | 3 | 800 | 0.8 | 75 |
+| `Stick` | 1 | 7 | 10 | 1.2 | 75 |
+| `Stick Charred` | 1 | 7 | 1 | 1.2 | 75 |
+| `Woodcut Wedge` | 0.2 | 10 | 10 | 1 | 75 |
+| `Woodcut Wedge Charred` | 0.2 | 10 | 350 | 1 | 75 |
+| `Woodcut Wedge Burnt` | 0.2 | 10 | 200 | 1 | 75 |
+| `MRK Fuel Core` | 1 | 10 | 8000 | 1 | 750 |
+
+A burning wedge turns into the next stage (`BurningItem`): fresh, then charred, then burnt, then ashen.
 
 `Tinder` is a fuel-based `Fire` with `litDuration` 600, `ignitionTemperature` 60, `putOutTemperature` 50 and a short `baseFuel` burn (0.3 for 4 seconds). Lanterns light at 60 and go out at 50 too.
 

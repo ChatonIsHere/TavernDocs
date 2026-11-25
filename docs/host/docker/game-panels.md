@@ -83,7 +83,7 @@ With Controller/Target, every target that hosts an instance needs the repository
 
 **Auto patch**, **Debug helper**, **Mod list** and the three token fields are the same as the compose setup's `AUTO_PATCH`, `DEBUG`, `MODLIST` and `ATT_*_TOKEN`. Leave the tokens empty.
 
-The rest of the **A Township Tale** settings edit the server's own config files. **Listing** and **Access** (name, password, player limit, region, whitelist, scenes) are TavernLib's `server_settings.json`. **Saving** through **Performance** are the game's `ServerConfiguration.json`. Both files are written on the first successful start, so the values show up after that.
+The rest of the **A Township Tale** settings edit the server's own config files. **Listing** and **Access** (name, password, player limit, region, whitelist, scenes) are TavernLib's `server_settings.json`. **Saving** through **Performance** are the game's `ServerConfiguration.json`. Both files are written on the first successful start, so the values show up after that. The defaults are the same as the other setups: 24 players, not listed, IP limit on.
 
 You can type commands into AMP's console. They go to TavernLib's console, and replies show up next to the log once the server has started.
 

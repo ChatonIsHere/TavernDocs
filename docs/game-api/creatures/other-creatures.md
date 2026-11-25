@@ -48,7 +48,7 @@ A catchable bug that lights up when shaken.
 
 `public class Schmeechee : Agent<Schmeechee>`
 
-A mushroom critter that runs about, plants itself in the ground and can be picked up. It's a rigidbody that steers itself with forces, not a walker. Prefabs: Schmeechee Red, Orange, Glowing and Poisonous, each with its own `MushroomCritter` settings, 2 health, and the senses Flesh, Life and Food, so they pass the Food rule of the spriggull's and babu's Find Food actions. It notices things within 3 m.
+A mushroom critter that runs about, plants itself in the ground and can be picked up. It's a rigidbody that steers itself with forces, not a walker. Prefabs: Schmeechee Red, Orange, Glowing and Poisonous, each with its own `MushroomCritter` settings, 2 health (0.5 for the orange, 0.3 for the poisonous), and the senses Flesh, Life and Food, so they pass the Food rule of the spriggull's and babu's Find Food actions. It notices things within 3 m.
 
 | Member | What it does |
 | --- | --- |
@@ -75,7 +75,7 @@ Thin classes with a body and a passive set:
 What the shipped prefabs do with them (asset values):
 
 - **Babu** (one prefab, 45 health): its passive set ("Babu Passive AI") idles, wanders, digs (channel C spawns a Schmeechee Glowing from the ground), finds and eats food, sleeps in a nest, evades hazards, and turns aggressive at once or after being hurt ("Threaten If Hurt"). Aggro ("Babu Aggro AI") chases and keeps its distance; its tusks and head are charged by channels A and B. Its hurt fades at 0.001 a second, so it stays angry with you for a long time, and its collector reaches 75 m.
-- **Dragonfly** drives the Dragonfly (0.1 health, drops a Dragonfly Corpse) and the Dais herd animals (Dais Base and six variants, 5 health). Their sets only idle, wander and flee; Dais animals are stunned by a `StatTrigger` at 5% cripple health.
+- **Dragonfly** drives the Dragonfly (0.1 health, drops a Dragonfly Corpse) and the Dais herd animals (Dais Base and six variants: 5 health, 15 for the antlered ones, 2 for the children). Their sets only idle, wander and flee; Dais animals are stunned by a `StatTrigger` at 5% cripple health.
 - **DeathFern** drives the Death Fern, Mother Fern and Vine Attack Fern (each releases a poison cloud on death; the vine attack fern whips with vines and the mother fern fires a seed spray from a channel event), and also hazards and spawners with no creature body: Targeted Geyser, Gotera Ash Bomb and Turabada Spawner Reactive. Their sets just alternate "Idle" and "Act".
 
 ## PickupAgent

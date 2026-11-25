@@ -35,7 +35,7 @@ Almost all game rules run on the server. The pattern is the same everywhere:
 - The server sends results to clients with the entity's `MethodSync` messages (stat syncs, smelter icons, stew changes). A client never decides an outcome. Changing a value on a client changes only what that player sees until the next sync overwrites it.
 - Clients run visuals: particles, sounds, the stat bar, the bellows' light. Most visual code is skipped when `ApplicationManager.IsHeadless` is true, which it is on a dedicated server.
 
-So a mod that changes rules (recipe results, XP, hunger, fuel) only needs to be on the server. A mod that adds something players must see in a new way (a new stat bar, a new liquid colour no client knows) needs a client part too, and the client half has to handle a server without it. See the networking area for how messages work.
+So a mod that changes rules (recipe results, XP, hunger, fuel) only needs to be on the server. A mod that adds something players must see in a new way (a new stat bar, a new liquid colour no client knows) needs a client part too, and the client half has to handle a server without it. See [Networking](../networking/overview.md) for how messages work, and [Entity sync](../networking/entity-sync.md) for `MethodSync`.
 
 ## Shared building blocks
 
@@ -58,7 +58,7 @@ You meet these in every system:
 
 ## Real values
 
-Pages in this area quote values from the game's assets (build `main-1.7.2.1.42203`) where they matter, marked as asset values: player stats, hunger levels, cooking temperatures, stew and smelting recipes, fuel, the XP curve, skill trees and trading costs. The full generated lists of items, recipes and stats are in the reference tables.
+Pages in this area quote values from the game's assets (build `main-1.7.2.1.42203`) where they matter, marked as asset values: player stats, hunger levels, cooking temperatures, stew and smelting recipes, fuel, the XP curve, skill trees and trading costs. The full generated lists of items, recipes and stats are in the [reference tables](../reference/overview.md): [Items and materials](../reference/items-and-materials.md), [Recipes](../reference/recipes.md) and [Stats](../reference/stats.md).
 
 ## Hooks that cover a lot
 

@@ -17,23 +17,12 @@ There's no weather system in this build. Fog, ambience and the sky come from the
 
 `Alta.Timing.Timeline` in `Alta.Timing.Runtime` (not `Root.Township`; add a reference). Both sides, main thread.
 
-`Timeline.Instance` is a static singleton. The first call makes it and a `TimelineUpdater` game object, which adds the real time since the last frame (from `DateTime.Now`) every `Update`.
+`Timeline.Instance` is a static singleton, stepped every frame by the wall-clock time since the last one. The calls you'll use are `CallAfterDuration`, `CallRepeatableAfterDuration`, `InsertCallbackAtTime` and `Timeline.Cancel(ref entry)`. [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#timeline) has the full member list and its traps. The ones that matter for the world:
 
-| Member | What it does | Notes |
-| --- | --- | --- |
-| `static Timeline Instance { get; }` | The game's timeline. | |
-| `TimeSpan Time { get; }` | Current timeline time. | On the server it's loaded from the save. On a client it starts at zero, so don't compare times across sides. |
-| `TimeSpan DeltaTime { get; }` | The last step, after `TimeSpeed`. | |
-| `float TimeSpeed { get; set; }` | Multiplier on every step. | `TimeManager` sets it from the server's `TimeSpeedMultiplier` setting, on the server. |
-| `event Action<TimeSpan> TimeChanged` | After every step, with the step. | Every frame. |
-| `IEntry CallAfterDuration(Action callback, float durationSeconds)` | Run once after that much timeline time. Also takes a `TimeSpan`. | |
-| `IEntry InsertCallbackAtTime(Action callback, TimeSpan time)` | Run once at a timeline time. | |
-| `IEntry CallRepeatableAfterDuration(Action callback, float durationSeconds, float repeatIntervalSeconds)` | Run after a delay, then every interval. | An interval under 0.01 s becomes a one-off. |
-| `static void Cancel(ref IEntry entry)` | Stops it and nulls your reference. | |
-| `void Update(TimeSpan deltaTime)` | Advances time, running every callback that comes due. | The `time future` command calls it. |
-| `static TimeSpan SaveEntry(IEntry entry)`, `static int LoadRepeatableEntry(out IEntry entry, Action callback, TimeSpan targetTime, TimeSpan interval)`, `static SerializedEntryState LoadEntry(...)` | Save and restore a scheduled callback. | `LoadRepeatableEntry` returns how many intervals were missed. |
-
-A callback that throws is logged ("Timeline action failed") and dropped, repeating or not.
+- `TimeSpeed` scales every step. On the server `TimeManager` sets it from the `TimeSpeedMultiplier` setting.
+- `Time` is loaded from the save on the server. A client's starts at zero, so don't compare times across sides.
+- A callback that throws is logged ("Timeline action failed") and dropped, repeating or not.
+- `time future` calls `Update` to skip ahead, so everything due in between runs in one frame.
 
 ```csharp
 // Run something later on the game's timeline.
@@ -140,4 +129,4 @@ A chunk's `ChunkEnvironment` (`locationChunk.Environment`) has its biome, its `S
 ## See also
 
 - [Populations and spawners](populations.md), [Loot](loot.md): the main timeline users
-- `ServerSettings` (in `Alta.Utilities`) has `TimeSpeedMultiplier` (default 1), `IsAdvancingTimeWhenOffline` (default true) and `FixedDaytime` (default -1)
+- [Server settings](../networking/server-settings.md): `ServerSettings` (in `Alta.Utilities`) has `TimeSpeedMultiplier` (default 1), `IsAdvancingTimeWhenOffline` (default true) and `FixedDaytime` (default -1)

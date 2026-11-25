@@ -57,10 +57,10 @@ The character room uses `CustomizationPlayerController` (also a `SmoothLocomotio
 | `virtual Vector3 RealFeetPosition`, `PlayerSavePosition`, `BodyCenter` | | |
 | `Vector3 HeadOffset`, `FeetOffset`, `RealFeetOffset` | Offsets from the root. | |
 | `virtual float HeadHeight { get; }` | | `1` on the base class; the head's local height on `PlayerCharacter`. |
-| `Controller LeftController`, `RightController` | The hands. Each has an `Interactor` (what it holds). | Items area. |
+| `Controller LeftController`, `RightController` | The hands. Each has an `Interactor` (what it holds). | See [Interactor and hands](../items/interactor-and-hands.md). |
 | `LocomotionController LocomotionController { get; }` | Moving it. See [Locomotion](locomotion.md). | |
-| `HealthObject Health { get; }` | Its health and stats. | Game systems area. |
-| `Target Target { get; }` | What creatures see (senses). | Creatures area. |
+| `HealthObject Health { get; }` | Its health and stats. | See [Health and damage](../items/health-and-damage.md) and [Stats](../game-systems/stats.md). |
+| `Target Target { get; }` | What creatures see (senses). | See [Targets and senses](../creatures/targets-and-senses.md). |
 | `bool IsAlive`, `IsDowned`, `IsSpirit`, `IsIgnoringDamage` | Set by the player states. | Read them; let the states set them. |
 | `NetworkPrefab NetworkPrefab { get; }` | The body's prefab. | |
 | `Camera Camera { get; }`, `PlayerScreenFader ScreenFader`, `PlayerMessageDisplay MessageDisplay`, `VariableIntensityPlayerLight PlayerLight` | Local view, fader, the message in front of your face, the player's light. | Client. `MessageDisplay.Display(text, seconds)` shows a message. |
@@ -81,7 +81,7 @@ The character room uses `CustomizationPlayerController` (also a `SmoothLocomotio
 | `SmoothLocomotion SmoothLocomotion` | From `SmoothLocomotionPlayerController`. Stick movement, local player only. |
 | `new PlayerHealth Health` | |
 | `Inventory Inventory` | An `Alta.Character.Inventory` over the docks below. |
-| `PickupDockGroup BackDocks`, `BeltDocks` | The back slot and the belt slots. Items area. |
+| `PickupDockGroup BackDocks`, `BeltDocks` | The back slot and the belt slots. See [Player inventory](../items/player-inventory.md). |
 | `BodyController BodyController`, `CharacterIKController IKController`, `CharacterLocalityController LocalityController` | Body, IK, and the locality controller, which holds the head transform and switches parts between local and remote. |
 | `CharacterDummy Dummy`, `Animator BodyAnimator` | The visible body and its animator. |
 | `PlayerCustomizationHandler CustomizationHandler` | Its cosmetics on the body. |
@@ -96,7 +96,7 @@ Its `Update` and a `FixedUpdate` coroutine run the body's IK, with no side check
 
 1. On the server, a player state (normally `PlayingState`) calls `Player.SpawnNewController`, which waits for the client to say the spawn chunk is loaded, spawns the prefab with `SpawnInternal`, puts it in position and links it (`LinkPlayerControllerToPlayer`).
 2. The server sends each client a `PlayerStateSync` message on the body, carrying the `Player`'s entity id. On receiving it, a client links the body to that `Player`.
-3. `LinkToPlayer` sets `NetworkPlayer`, and on the owner's client sets `Current`. It raises `LinkedToLocalPlayer` and `LinkedToRemotePlayer`, gives the body's entities their authority (see [Entity sync](entity-sync.md#who-owns-what)), and runs the body's local-player behaviours (`IInitializeAsLocalPlayer`) or remote-player ones (`IInitializeAsRemotePlayer`). The server runs the remote ones. Then `LocalPlayerSet`, `WaitForChunkLoad` and a reposition, on the owner's client only.
+3. `LinkToPlayer` sets `NetworkPlayer`, and on the owner's client sets `Current`. It raises `LinkedToLocalPlayer` and `LinkedToRemotePlayer`, gives the body's entities their authority (see [Entity sync](entity-sync.md#who-owns-what)), and runs the body's local-player behaviours (`IInitializeAsLocalPlayer`) or remote-player ones (`IInitializeAsRemotePlayer`). The server runs the remote ones. Then `LocalPlayerSet`, `WaitForChunkLoad` and a reposition, on the owner's client only. On the server, it ends by making the body immune to impacts for `ServerSettings.ImpactInvincibilityTime` seconds (12 by default).
 4. `Player.PlayerControllerSet` is raised.
 
 :::note[Headless clients]

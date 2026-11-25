@@ -8,7 +8,7 @@ sidebar_position: 4
 
 Every `[Module]` in `Root.Township`, from the decompiled server build (the one Tavern installs, on clients too) and the original client download. Use it to pick a module name nobody uses (a module with the same name replaces the other one, see [Writing commands](commands.md#commandcollection)) and to know what a host already has.
 
-Requirements in brackets apply to the whole module. `help <module>` lists a module's commands; `help full <module>` also lists the ones whose requirements fail.
+Requirements in brackets apply to the whole module. Most modules also carry `[PlayOnly]`, which only means "not in the Unity editor" (it checks `Application.isPlaying`), so the tables leave it out. The names, aliases, parameters and requirements here were checked against the full command tree dumped from a running TavernLib server. `help <module>` lists a module's commands; `help full <module>` also lists the ones whose requirements fail.
 
 ## In both builds
 
@@ -16,14 +16,14 @@ Requirements in brackets apply to the whole module. `help <module>` lists a modu
 | --- | --- |
 | `help` | `help` lists the modules you can use, `help <path>` shows a module or command, `help full`, `help search <text>`, and `help modules` (every module as JSON). |
 | `websocket` | `subscriptions`, `subscribe <event>`, `unsubscribe <event>`. Only works over the websocket console. See [Console events](console-events.md). |
-| `debug` | Diagnostics: prefab and script counts, `server-stats`, `entity-health`, `entities`, `prefabcounts`, `lag <fps>` (slows the game to a frame rate), `fixedtime`, `remote-console`, `open-logs`, `nameid`. Sub-modules `tracking` (`server_owner`; names an entity to look up later) and `static` (server; modifiable statics such as bridges). |
-| `game` (alias `g`) | The menu's actions as commands: join or connect to servers, start local tests and servers, list servers. Logged-in only, and not from a remote console. Most of it asks Alta's web API, so it no longer works. |
+| `debug` | Diagnostics: prefab and script counts (`count`, `count-all`, `count-behaviours`, `count-scripts`, `print-names`), `server-stats`, `entity-health`, `entities`, `prefabcounts`, `lag <targetFPS>` (slows the game to a frame rate), `fixedtime`, `remote-console`, `open-logs`, `nameid <id>`, `export-navmesh [output]`, `turabada-ai`. Server and `server_owner` only: `set <player> [index]` (spawns a QA test set for the player) and `load-marker <player>` (spawns an unsaved Rusty Spade as a load marker in front of them). Sub-modules `tracking` (`server_owner`: `track`, `get`, `remove`; names an entity to look up later) and `static` (server; modifiable statics such as bridges: `check-current`, `list`, `modify`, `fix`). |
+| `game` (alias `g`) | The menu's actions as commands: join or connect to servers, start local tests and servers, list servers. Logged-in only, and not from a remote console. Most of it asks Alta's web API, so it no longer works. `join-ip <serverIp> [sceneIndex] [playerMode] [port]` (alias `ip`) and `ip-local` join by address without asking the API, so they probably still work. |
 | `info` (`server_owner`) | Logs the logged-in user, the server, the command line, the version, the player mode and system info. |
 | `leaderboard` (server) | Leaderboard definitions, boards and checkpoints, set on the selected entity. |
-| `logs` | `logs` opens the logs folder, `config` prints the NLog rules, `change-target <target> <minLevel>` changes a rule's levels, `destroy-trace`, `warn-stack`. |
+| `logs` | `logs` (alias `open`) opens the logs folder, `config [isPrintingAll]` prints the NLog rules, `change-target <targetName> <minLevel> [maxLevel] [loggerNamePattern]` changes a rule's levels, `destroy-trace [isEnabled]`, `warn-stack [isEnabled]`. |
 | `login` | `login <username> <password>` logs in to Alta. Dead. |
 | `logout` | Logs the game's account out. |
-| `maintenance` | `gc` runs a full garbage collection, `resources` unloads unused Unity assets. |
+| `maintenance` | `garbage` (alias `gc`) runs a full garbage collection, `resources` unloads unused Unity assets. |
 | `mods` (`server_owner`) | The game's own C# script mods (`CSharpCompiler`, compiled from the mods folder), not MelonLoader mods: list, `start`, `stop`, `restart`, `add`, `remove`, `refresh`, `path`. |
 | `profiling` (`server_owner`) | Profiler samples, heap and memory dumps. `cleanslatememory` kicks everyone and unloads every chunk first. |
 | `progress` (server) | World progress: finish repair boxes, fill books, forge every unforged blade, fill and list cave teleporters, fill community boxes, `generatecaves <layer>`, `repaircaveteleporters <layer>`. |
@@ -32,7 +32,7 @@ Requirements in brackets apply to the whole module. `help <module>` lists a modu
 | `repair-box` (server, non-simple server) | Spawns a repair box for a player with up to three items; `list-items`. |
 | `repeat` | `repeat <count> <seconds>` captures the next command you type and runs it that many times; `repeat last`, `stop <id>`, `stopall`. |
 | `select` (alias `s`, non-simple server) | Picks an entity (by id, nearest prefab, objects near a player) and moves (`move`), rotates (`rotate`), snaps, exports to a spawn string or destroys it. Each console session has its own selection. |
-| `settings` | Game and server settings: `list`, `possible`, `changesetting` (alias `set`), `toggle`, `settoggle`, `save`, `reset`, `heat`, `enable-board` and `disable-board`. Sub-module `population` sets respawn times. |
+| `settings` | Game and server settings: `list <target>`, `possible <target> <setting>`, `changesetting <target> <setting> <value>` (aliases `set`, `change`), `toggle`, `settoggle` (server), `save [isServer]`, `reset` (server), `heat`, `enable-board` and `disable-board` (server). `<target>` is `game` or `server`. Sub-module `population` (server) sets respawn times: `set-time`, `check-time`, `reset-time`. |
 | `social` (`server_owner`, logged-in) | Friends, through Alta's web API. Dead. |
 | `spawn` (non-simple server) | Spawns prefabs for players or at a position, from spawn strings, populations, packages, moulds and page collections; finds and lists prefabs. |
 | `time` (server) | `set <time or keyword>`, `keywords`, `ofday`, `toggle` day and night, `future <amount> <s, m, h or d>` pushes the [timeline](threads-coroutines-and-timeline.md#timeline) forward. |
@@ -81,7 +81,7 @@ A wipe ends with `ApplicationManager.ExternalOnApplicationQuit`, so plan for the
 | --- | --- |
 | `server start <serverId> ...` | Fetches the server from the web API and starts it, like `game start-server`. Dead. |
 | `server proxy <serverId> <command>` | Asks the web API for another server's console and sends it one command over its websocket. Dead. |
-| `server migrate [seconds]` | `[ServerOnly]`. Warns players, locks joins, stops the server for migration, then asks the web API for a new machine **every 5 seconds until it gets one**. With the API gone that never happens, so don't run it: the server is left stopped and looping. |
+| `server migrate [seconds]` | `[ServerOnly]`. `seconds` defaults to 120. Warns players, locks joins, stops the server for migration, then asks the web API for a new machine **every 5 seconds until it gets one**. With the API gone that never happens, so don't run it: the server is left stopped and looping. |
 
 ### trade
 
@@ -105,7 +105,7 @@ A wipe ends with `ApplicationManager.ExternalOnApplicationQuit`, so plan for the
 | `world forest list` | The forests' cache names. |
 | `world forest info <forest>` | The forest's generation (seed, bounds, outline, entrances, biomes, encounters, nodes, edges) as an object, also logged as JSON. |
 | `world forest teleport <players> <forest> [node]` (alias `tp`) | Teleports players to the forest's first entrance, or to a node. A node index past the end throws. |
-| `world forest reset <forest>` (alias `wipe`) | Wipes the forest so it generates again. |
+| `world forest reset <forest>` (alias `wipe`) | Wipes the forest's saved data. From the code, the layout doesn't change until the server restarts. See [Resetting the forest](../world/forest.md#resetting-the-forest). |
 
 ### Also only in the server build
 

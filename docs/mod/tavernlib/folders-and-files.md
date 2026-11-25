@@ -27,7 +27,7 @@ string gameData = TavernDirectories.ATTSave;         // %APPDATA%\A Township Tal
 | `ModRepos` | `mod_repos.json`, added mod sources |
 | `WhitelistRequests` | `whitelist_requests.json` |
 
-See [Config reference](../../host/config-reference.md) for what's in each.
+See [Config reference](../../host/config-reference.md) for what's in each, and [Folders](../../tavernlib-api/directories.md) and [Files](../../tavernlib-api/files.md) for every path TavernLib uses.
 
 Read these, don't write them. TavernLib and the Server launcher both write to them, and a half-written file from your mod can break a server. If you need to change something, use the console or ask for an API.
 

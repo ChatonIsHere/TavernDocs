@@ -49,7 +49,7 @@ A `MonoBehaviour` that needs a `Seeker` on the same GameObject.
 | Member | What it does | Notes |
 | --- | --- | --- |
 | `void NavigateTo(Vector3 position, float targetReachedDistance = 0.1f)` | Cancels any request and asks for a path. If already there, finishes at once. | Asynchronous. |
-| `void Wander(int searchLength, float targetReachedDistance = 0.2f)` and overloads | Asks the library for every node within `searchLength` (a `ConstantPath`), picks a point, then asks for a path there. | Two searches. `AgentWanderSettings` uses a `searchLength` of 20,000 by default, in the library's cost units. |
+| `void Wander(int searchLength, float targetReachedDistance = 0.2f)` and overloads | Asks the library for every node within `searchLength` (a `ConstantPath`), picks a point, then asks for a path there. | Two searches. `ActiveWander` passes its settings' `HeuristicMaximum` (20,000 by default, in the library's cost units) as `searchLength`. |
 | `Vector3 TeleportTo(Vector3 position, bool isSnappingY)` | Clears the path and returns where the body should go. | `Director.TeleportTo` moves the body. |
 | `void Stop()` | Cancels the request and finishes. | |
 | `void ContinuePath()`, `void UpdatePosition()` | Step along the path. | The walker calls these. |
@@ -71,7 +71,7 @@ A `MonoBehaviour` with a `FixedUpdate`. Moves `topic` (the creature's `Rigidbody
 
 | Member | What it does |
 | --- | --- |
-| `float MaximumSpeed { get; set; }` | Top speed. Navigation actions set it from their settings when they start, so the walker's own serialized value only matters until the first one runs. Shipped chase speeds (asset values): spriggull 3.5, turabada 5, gotera 10. |
+| `float MaximumSpeed { get; set; }` | Top speed. Navigation actions set it from their settings when they start, so the walker's own serialized value only matters until the first one runs. Shipped chase speeds (asset values): spriggull 3.5, turabada 5, gotera 10, Greater Gotera 15, babu 30. |
 | `float Acceleration`, `float RotationSpeed`, `float TargetSlowdown`, `float GravityMultiplier` | Movement tuning. Navigation actions set `Acceleration` too. |
 | `float Power { get; set; }` | How much control it has, 0 to 1. Below 1 it recovers by `PowerPerSecond` each second and drag is reduced; at 0 or below it doesn't move or ground itself. A jump sets it to -1; a spriggull hit hard sets it to `1 - strength`. |
 | `float PowerPerSecond { get; set; }` | Recovery rate. |

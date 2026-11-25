@@ -6,7 +6,7 @@ sidebar_position: 11
 
 # Console, logging and analytics
 
-Types in Alta.Console, Alta.Console.Commands, Alta.Logging, Alta.Analytics and Alta.QATools. 139 types, 15 with a hand-written page.
+Types in Alta.Console, Alta.Console.Commands, Alta.Logging, Alta.Analytics and Alta.QATools. 139 types, 14 with a hand-written page.
 
 See [the overview](overview.md) for what the columns mean and how this list is made.
 
@@ -39,7 +39,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | `AllowNullAttribute` | class | `Attribute` | 0 |  |
 | `BasePart` | class |  | 6 |  |
 | `ClientOnlyAttribute` | class | `RequirementAttribute` | 2 |  |
-| `Command` | class | `CommandPart` | 9 | [Writing commands](../console-and-utilities/commands.md#module-and-command), [Health and damage](../items/health-and-damage.md): TavernLib's kill command uses it. |
+| `Command` | class | `CommandPart` | 9 | [Writing commands](../console-and-utilities/commands.md#module-and-command), [Health and damage](../items/health-and-damage.md): Not created anywhere in the game's own code. TavernLib's kill command uses it. |
 | `CommandAttribute` | class | `Attribute` | 5 | [Console, utilities and Alta assemblies](../console-and-utilities/overview.md) |
 | `CommandCollection` | class |  | 8 | [Writing commands](../console-and-utilities/commands.md#commandcollection): Get it from `CommandService.CommandCollection`. |
 | `CommandContext` | class |  | 7 | [Writing commands](../console-and-utilities/commands.md#commandcontext): One per console session: each websocket connection has its own, and `Handle` without a context uses one shared default. |
@@ -51,7 +51,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | `CommandResultSuccess` | enum |  | 5 |  |
 | `CommandSearchResult` | struct |  | 8 |  |
 | `CommandService` | static class |  | 8 | [Writing commands](../console-and-utilities/commands.md#commandservice), [Console, utilities and Alta assemblies](../console-and-utilities/overview.md): Main thread: every console the game has calls it from Unity's main thread, and you should too. |
-| `ConsoleEvent` | abstract class |  | 5 | [Console, utilities and Alta assemblies](../console-and-utilities/overview.md) |
+| `ConsoleEvent` | abstract class |  | 5 |  |
 | `ConsoleEvent.Processor` | class | `IDisposable` | 2 |  |
 | `ConsoleEvent<T>` | class | `ConsoleEvent`, `IConsoleEvent` | 4 | [Console, utilities and Alta assemblies](../console-and-utilities/overview.md) |
 | `ConsoleEventProcessor` | static class |  | 5 |  |

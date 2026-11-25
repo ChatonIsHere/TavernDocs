@@ -77,12 +77,12 @@ Some targets, like `ServerPlayerConnectionHandlerOld`, `ServerHandler.PlayerLimi
 | --- | --- | --- | --- | --- |
 | `Alta.Networking.Servers.ServerPlayerConnectionHandlerOld.InitializeConnection(Connection)` | Pre, always skips | TavernLib | Server | Puts TavernLib's join filter on `RequestJoin`: fly-camera check, account token, mod parity, blacklist and whitelist, then the game's own check. |
 | `ServerPlayerConnectionHandlerOld` constructor `(ServerHandler)` | Post | TavernLib | Server | Raises TavernLib's player-left console event from the handler's `UserLeft`. |
-| `ServerPlayerConnectionHandlerOld.CheckIfPlayerIsAllowedCustom(...)` (async) | Pre, always skips | TavernLib | Server | Reads the token's single `UserId` and `Username`, refuses a mismatch, and maps `users.json` roles to the game's subscriber statuses. Never asks Alta. |
+| `ServerPlayerConnectionHandlerOld.CheckIfPlayerIsAllowedCustom(...)` (async) | Pre, always skips | TavernLib | Server | Reads the token's single `UserId` and `Username`, refuses a mismatch, refuses once the server is past `PlayerLimit` ("Reached player limit of: N"), and maps `users.json` roles to the game's subscriber statuses. Never asks Alta, and skips the game's version and allow-list checks. |
 | same | Post | TavernEssentials | Server | Join guard: logs, or with `refuse` mode refuses, a join whose token id differs from the player id. |
 | `Alta.Networking.ConfirmJoinMessage` constructor | Post | TavernLib | Server | Logs every refusal. |
 | `Player.InitializePlayerOnServer(...)` (async) | Post | TavernLib | Server | Raises the player-joined console event. Runs at the method's first await. |
 | same | Post | TavernLib | Server | Sends the player their roles (TavernLib message `ReceiveRoles`). |
-| `Alta.Networking.Servers.ServerHandler.PlayerLimit` (getter) | Post | TavernLib | Server | Player limit from `server_settings.json`. |
+| `Alta.Networking.Servers.ServerHandler.PlayerLimit` (getter) | Post | TavernLib | Server | Player limit from `server_settings.json`'s `max_players` (24 when it's missing or 0). TavernLib's join check enforces it. |
 | `ServerHostingGameMode.OnStartSucceeded` | Post | TavernLib | Server | Loads all cosmetics into memory once the server is up. |
 | `UserInfoAccess.SearchForUserAsync()` (private, async) | Pre, skips when nobody matches | TavernEssentials | Server | Names players from connections and TavernLib's accounts, never Alta. |
 
@@ -367,7 +367,7 @@ Most of these work together. The ones that clash, or that make another mod's pat
 | `PurchasedList.UpdateCurrentRotation` | TavernLib, TavernEssentials | TavernLib's method is never applied (no prefix name or attribute), so only TE's runs. |
 | `JoinResult.ErrorMessage` | TavernLib, TavernEssentials | Both postfixes. TavernLib only replaces the text when it doesn't already contain its own line, so TE's line, which quotes it, stays. |
 | `JoinServerPipeline.OnServerRejectedRequest` | TavernLib, Rover | Compatible (prefix and postfix). Rover also tries to block TavernLib's `last_rejection.json` by patching `JoinRejectionRecorder.WriteRejectionFile`, but current TavernLib has no such method (it writes through `Save`), so that guard no longer applies. |
-| `ServerPlayerConnectionHandlerOld.CheckIfPlayerIsAllowedCustom` | TavernLib, TavernEssentials | TavernLib's prefix replaces it; TE's postfix still runs after and can only turn an accept into a refusal. Whether the game still reaches this method after TavernLib's own join filter wasn't checked. |
+| `ServerPlayerConnectionHandlerOld.CheckIfPlayerIsAllowedCustom` | TavernLib, TavernEssentials | TavernLib's prefix replaces it; TE's postfix still runs after and can only turn an accept into a refusal. The game reaches this method on every TavernLib server: the join filter hands over to `CheckApproved`, which calls it because the server's id is -1. |
 | `MessageProcessor.ProcessSingleMessageFromData` | TavernLib, Rover | TavernLib replaces it; Rover's capture postfix reads what it did. TE checks TavernLib's prefix is there before using message types over 31. |
 | `ConnectToServerUtility.SetupConnectionToServer` | TavernEssentials, `TheRavenSeb.hydrateordiedrate` | Both postfixes, different message types (TE 35, hydrate 40). |
 | The seven Alta API methods marked "TavernEssentials, Steady" above | TavernEssentials, Steady | Steady's prefixes run last and step aside when TE (or TavernLib) already answered. On a server, where TE's Backend doesn't run, Steady's answer stands. |

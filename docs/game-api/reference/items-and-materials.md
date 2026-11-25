@@ -481,7 +481,7 @@ An `Item` (`Alta.Inventory.Item`, a `HashedGeneralValue<Item>`) is the asset tha
 
 ## Physical materials
 
-`PhysicalMaterial` assets. Prefabs and crafted parts point at one. The multipliers change weight, durability and damage of things made from it.
+`PhysicalMaterial` assets. Prefabs and crafted parts point at one. The multipliers change the weight and damage of things made from it. The durability multiplier does nothing in this version of the game (see [Durability](../items/durability.md)).
 
 | Material | Hash | Density | Weight mult. | Durability mult. | Damage mult. | Max crafting damage mult. | Melting point | Forge mult. | Hardness | Thermal conductivity | In list | Description |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

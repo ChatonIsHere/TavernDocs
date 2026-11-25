@@ -26,7 +26,7 @@ Two separate systems give players new abilities:
 ### The trees in the game
 
 :::note[Asset values]
-The `ProfessionSkillTree` assets, build `main-1.7.2.1.42203`. Every slot costs 1 point. The reference tables have every slot.
+The `ProfessionSkillTree` assets, build `main-1.7.2.1.42203`. Every slot costs 1 point, except the two DevDebug slots, which cost 0. The names are the slot names; several slots share one skill asset (both Charged Axe slots use `Charged Axe Strike`, for example).
 :::
 
 | Tree | Enabled | Slots | Examples |

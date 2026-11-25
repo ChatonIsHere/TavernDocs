@@ -59,7 +59,7 @@ Asset values (build main-1.7.2.1.42203):
 | Hoarder Bag | 15 | 4 | 1 | no | Back, Wall Hangable, Bag |
 | Pouch | 1 | none | 30 | no | All, Small, Projectile |
 
-"Size none" is `size = -1`: `HasSize` is false and docks skip the size check. There are 456 `Item` assets; the reference tables list them all.
+"Size none" is `size = -1`: `HasSize` is false and docks skip the size check. There are 456 `Item` assets; [Items and materials](../reference/items-and-materials.md) lists them all.
 
 Items are shared assets. Changing one (through its private fields) changes every copy on that machine, and the other side won't know. Things like weight and size feed checks on both sides, so change them on server and clients alike or not at all.
 
@@ -82,7 +82,7 @@ Copper, iron, wood types and so on. A material changes how an item behaves:
 
 ### Material values
 
-Asset values for some of the 29 `PhysicalMaterial` assets (build main-1.7.2.1.42203). The reference tables have all of them.
+Asset values for some of the 29 `PhysicalMaterial` assets (build main-1.7.2.1.42203). [Physical materials](../reference/items-and-materials.md#physical-materials) has all of them.
 
 | Material | Hardness | Damage × | Durability × | Weight × | Melting point |
 | --- | --- | --- | --- | --- | --- |
@@ -96,9 +96,9 @@ Asset values for some of the 29 `PhysicalMaterial` assets (build main-1.7.2.1.42
 | Mythril | 4 | 2.5 | 3 | 0.75 | 961 |
 | Orchi Alloy | 5 | 1.75 | 1.5 | 1.75 | 600 |
 | Evinon Steel Alloy | 5 | 3 | 3.5 | 3 | 961 |
-| Oak | 0 | 1 | 1 | 1 | |
-| Walnut | 2 | 1.5 | 1.4 | 1.25 | |
-| Redwood | 4 | 1 | 1.4 | 0.75 | |
+| Oak | 0 | 1 | 1 | 1 | 660 |
+| Walnut | 2 | 1.5 | 1.4 | 1.25 | 660 |
+| Redwood | 4 | 1 | 1.4 | 0.75 | 660 |
 
 Hardness is what lets a pickaxe mine: an `Iron Boulder`'s detector has hardness 1, so a pickaxe head of Copper (hardness 1) or anything harder works on it, while an impactor left at hardness 0 only gets the "ineffective" effect.
 

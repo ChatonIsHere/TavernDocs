@@ -81,13 +81,13 @@ Clients never generate: `ClientCacheManager.GetCache` downloads each cache file 
 
 `ForestGenerator.Wipe(int newSeed = -1)` (server; `world forest reset`, alias `wipe`, just calls it):
 
-1. Picks a new random seed. **It ignores `newSeed`**: a value of 0 or more doesn't set the seed, so you can't pick one through this method. Set the private `seed` field first if you need a particular one.
-2. Deletes the node and terrain caches for the old seed.
-3. For every chunk in the forest's bounds: stops force-loading it, waits a second, saves it, clears its save, and deletes its static cache.
+1. With `newSeed` below 0 (the default), picks a new random seed. **It never uses `newSeed`**: a value of 0 or more just keeps the current seed, so you can't pick one through this method. Set the private `seed` field first if you need a particular one.
+2. Deletes the node and terrain cache files. The names are built after step 1, so they carry the new seed: the old seed's files stay on disk.
+3. For every chunk in the forest's bounds: stops force-loading it, waits a second, saves it, clears its save, and deletes its static cache (again under the new seed's name).
 4. Teleports every player in those chunks to the `OutsideForest` spawn area.
-5. Resets the rivers, then generates again.
+5. Resets the rivers, then awaits `GetGenerationAsync()` again. Nothing clears the stored generation task, so this returns the old layout at once.
 
-The players' games still have the old terrain and scenery loaded. Forest Performance (ATT-Optimizations) treats a reset as maintenance (disconnect players, lock joins, restart after); its ForestResetFix exists to make the reset wait for cache work before it commits the new seed. A separate ForestSeedUtil mod handles seed preferences; it isn't covered here.
+So in this build a reset clears the chunk saves and changes the saved seed, but the layout itself looks like it only changes when the server restarts. Chunks that load before then name their static caches after the new seed while building them from the old layout. The players' games also still have the old terrain and scenery loaded. Forest Performance (ATT-Optimizations) treats a reset as maintenance (disconnect players, lock joins, restart after); its ForestResetFix exists to make the reset wait for cache work before it commits the new seed. A separate ForestSeedUtil mod handles seed preferences; it isn't covered here.
 
 ## Cost
 

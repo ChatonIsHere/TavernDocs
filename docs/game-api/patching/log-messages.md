@@ -854,7 +854,7 @@ Every line the game logs at `Fatal`. They also appear in their own area below.
 | Error | MapBoard.WorldToMapPosition() requires a valid map to function properly, returning default value. | `MapBoard.WorldToMapPosition` |  |
 | Error | `{name}` cannot setup the map because the map is null | `MapBoard.SetupMap` |  |
 | Error | Target is null `{PluginInstance.Name}` | `MapGeneratorPartInstance<T>.MapGeneratorPartInstance` |  |
-| Error | Map Manager cannot get map manager for null player. | `MapManager.GetMapManager` |  |
+| Error | Map Manager cannot get map manager for null player. | `MapManager.GetMapManager` ([Map and landmarks](../world/map-and-landmarks.md)) |  |
 | Error | Attempted to destroy child `{name}` without parent `{Parent.name}` | `NetworkEntity.PrepareForDestroy` ([NetworkEntity](../world/network-entity.md)) |  |
 | Error | Encountered error during Entity Destroyed by Scene callback: `{name}` | `NetworkEntity.OnDestroyedByScene` ([NetworkEntity](../world/network-entity.md)) |  |
 | Error | Entity being unofficially destroyed `{name}` | `NetworkEntity.OnDisable` ([NetworkEntity](../world/network-entity.md)) | An entity's GameObject was destroyed without going through the spawner, which sets `IsBeingDestroyed` first. From a mod, destroy entities with `SceneDestroy()` on the server, not `Object.Destroy`. |
@@ -1050,7 +1050,7 @@ Every line the game logs at `Fatal`. They also appear in their own area below.
 | Info | Local player moved to `{ChunkIdentifier}` | `LocationChunk.OnLocalPlayerChange` ([Chunks](../world/chunks.md#locationchunk)) |  |
 | Info | X: `{layer.Chunk.X}` Z: `{layer.Chunk.Z}` Min: `{a}` Max: `{a2}` Avg: `{num2}` | `LogRangeInstance.Modify` |  |
 | Info | Cannot update the map while the game is playing. | `MapBoard.OnValidate` |  |
-| Info | `{player.UserInfo.Username}` discovered `{pieceIndex}` on `{map.name}` | `MapManager.DiscoverPiece` |  |
+| Info | `{player.UserInfo.Username}` discovered `{pieceIndex}` on `{map.name}` | `MapManager.DiscoverPiece` ([Map and landmarks](../world/map-and-landmarks.md)) |  |
 | Info | Already smoothed | `MarchingCubesChunkDisplay.SmoothNormals` |  |
 | Info | Mesh Missing A: `{above.mesh?}` B: `{below.mesh}` | `MarchingCubesChunkDisplay.SmoothNormals` |  |
 | Info | Handler Lambda, number: `{number}` | `OneTimeEventTest.Awake` |  |
@@ -1432,7 +1432,7 @@ Every line the game logs at `Fatal`. They also appear in their own area below.
 
 ## Console, commands and logging
 
-149 errors and warnings, 215 other lines.
+147 errors and warnings, 215 other lines.
 
 | Level | Message | Written by | Notes |
 | --- | --- | --- | --- |
@@ -1477,8 +1477,6 @@ Every line the game logs at `Fatal`. They also appear in their own area below.
 | Error | `{"Duplicate listener subscription"}` `{listener}` for `{typeof(T)}` | `EventBus<T>.AddListener` ([Event buses and services](../console-and-utilities/event-buses-and-services.md)) |  |
 | Error | No event bus of type `{typeFromHandle}` could be found. | `EventBusLocator.Get` ([Console, utilities and Alta assemblies](../console-and-utilities/overview.md)) |  |
 | Error | To connect to a local server please use "game ip-local \[sceneIndex\]" | `GameCommandModule.JoinServerAtIpAsync` |  |
-| Error | Couldn't find CheckItems method for `{type.Name}` | `HashedGeneralValue.OfType` ([Alta assemblies](../console-and-utilities/alta-assemblies.md)) |  |
-| Error | Failed to load hashed values from `{type.Name}` | `HashedGeneralValue.OfType` ([Alta assemblies](../console-and-utilities/alta-assemblies.md)) |  |
 | Error | Couldn't find `{name}` for type `{typeof(T).Name}` | `HashedGeneralValue<T>.Get` ([Alta assemblies](../console-and-utilities/alta-assemblies.md)) |  |
 | Error | Missing hash `{hash}` for type `{typeof(T).Name}` | `HashedGeneralValue<T>.Get` ([Alta assemblies](../console-and-utilities/alta-assemblies.md)) |  |
 | Error | No `{typeof(T).Name}` found at `{string.Join(", ", paths)}` | `HashedGeneralValue<T>.CheckItems` ([Alta assemblies](../console-and-utilities/alta-assemblies.md)) |  |
@@ -2267,7 +2265,7 @@ Every line the game logs at `Fatal`. They also appear in their own area below.
 
 ## Everything else
 
-87 errors and warnings, 29 other lines.
+89 errors and warnings, 29 other lines.
 
 | Level | Message | Written by | Notes |
 | --- | --- | --- | --- |
@@ -2316,6 +2314,8 @@ Every line the game logs at `Fatal`. They also appear in their own area below.
 | Error | `{prefab}` - Couldnt fine any `{field.FieldType.Name}` which component is looking for in: `{component.GetType().Name}`.`{field.Name}` | `GetComponentsInterfaceAttribute.HandleApply` |  |
 | Error | GhostSnapObject must have a ghostVersion set: `{name}` | `GhostSnapObject.EnsureGhost` |  |
 | Error | Failed to find path for `{this}` | `GuidedMovement.Awake` |  |
+| Error | Couldn't find CheckItems method for `{type.Name}` | `HashedGeneralValue.OfType` |  |
+| Error | Failed to load hashed values from `{type.Name}` | `HashedGeneralValue.OfType` |  |
 | Error | Legacy Asset Spawned: `{name}` | `Legacy.Start` |  |
 | Error | Failed to link `{logicValueSender.name}` to `{((Component)logicValueLinkReceiver).name}` | `LinkerPart.GenerateDynamic` |  |
 | Error | Invalid receiver : `{spawnerPart2.name}` | `LinkerPart.GenerateDynamic` |  |

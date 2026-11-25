@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # World, chunks and saving
 
-Types in Alta.Chunks, Alta.Static, Alta.Saving, Alta.Map and the environment namespaces of Root.Township. 172 types, 24 with a hand-written page.
+Types in Alta.Chunks, Alta.Static, Alta.Saving, Alta.Map and the environment namespaces of Root.Township. 172 types, 25 with a hand-written page.
 
 See [the overview](overview.md) for what the columns mean and how this list is made.
 
@@ -168,7 +168,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | `MapBoardRenderer` | class | `MonoBehaviour` | 0 |  |
 | `MapBoardSaveData1` | class | `NewSaveData<MapBoard, MapBoardSaveData1>` | 4 |  |
 | `MapLandmarkDisplay` | class | `NetworkEntityBehaviour` | 3 |  |
-| `MapManager` | class | `NetworkEntityBehaviour` | 8 |  |
+| `MapManager` | class | `NetworkEntityBehaviour` | 8 | [Map and landmarks](../world/map-and-landmarks.md): Scene behaviour, `static MapManager Instance`. Holds each player's `PlayerMapManager`, or one shared one if `IsUsingSharedMap`. |
 | `MapPiece` | class | `HashedGeneralValue<MapPiece>` | 2 | [Map and landmarks](../world/map-and-landmarks.md): One piece: a `Sprite` and an `Offset`. |
 | `MapSaveFormat` | class | `IAltaFileFormat` | 5 |  |
 | `MarkerInfo` | class |  | 8 |  |

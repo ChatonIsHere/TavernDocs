@@ -51,7 +51,7 @@ Each time a creature decides, `Agent<TThis>.ChangeAction` calls `TargetCollector
 - within the radius and, for a player, not downed: `agent.AddTarget(target)`
 - otherwise: `agent.RemoveTarget(target)`
 
-So creatures only notice things when they decide, and each decision costs a pass over every target on the server. Dead and destroyed targets are dropped from the list as it's walked.
+So creatures only notice things when they decide, and each decision costs a pass over every target on the server. A target that doesn't exist or isn't alive when the list is walked is dropped from it **for good**: only `Target.Initialize` (and the flycam's debug toggle) registers a target again. A player counts as not alive while dead or a spirit (`PlayerCharacterTarget.IsAlive`), so whether a revived player's target gets back on the list depends on whether their body is respawned; that hasn't been checked.
 
 | Member | What it does | Notes |
 | --- | --- | --- |

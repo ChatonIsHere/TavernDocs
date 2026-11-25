@@ -21,6 +21,7 @@ If you patch one of these, your patch runs alongside TavernLib's. "Skips the ori
 | `OutgoingPacketManager.StartSerialize` | Prefix, skips the original | The same, for sending. |
 | `StatManager.Awake` | Prefix | Renames a stat whose name clashes (`damageprotection` to `crippledamageprotection`), once. |
 | `ApiAccess.IsConnectedToInternetInternal` | Postfix | Always `true`. |
+| `CommandSync.RouteCommand` | Prefix, skips the original | Drops wrist-menu console commands: a server would run them at once, a client would send them to the server. TavernLib's own comment isn't sure it's needed. |
 | `Player.SyncCosmetics` | Prefix, skips the original | TavernLib's own version. On the server it copies the cosmetics straight from the player's save. |
 | `SelectionCommandModule.FindObjects` | MonoMod `Hook` | Replaces the object search behind `select`. Applied in `OnLateInitializeMelon`. |
 | Several console commands | Prefix or postfix | See [Console](console.md#what-else-tavernlib-does-to-the-console). Applied in `OnLateInitializeMelon`. |
@@ -30,7 +31,7 @@ If you patch one of these, your patch runs alongside TavernLib's. "Skips the ori
 | Method | Patch | What it does |
 | --- | --- | --- |
 | `ServerPlayerConnectionHandlerOld.InitializeConnection` | Prefix, skips the original | The original only sets `CheckApproved` as the `RequestJoin` handler. TavernLib sets its own instead: Fly mode check, account token check, mod parity, then it calls the game's `CheckApproved` itself. So `CheckApproved` still runs, with its wipe-lock refusal and its "Already connected" check. |
-| `ServerPlayerConnectionHandlerOld.CheckIfPlayerIsAllowedCustom` | Prefix, skips the original | Accepts a join token with one user id that matches the join, and sets the player's status from their roles. Nothing else: see below. |
+| `ServerPlayerConnectionHandlerOld.CheckIfPlayerIsAllowedCustom` | Prefix, skips the original | Accepts a join token with one user id that matches the join, refuses the join if the server is full, and sets the player's status from their roles. Nothing else: see below. |
 | `ServerPlayerConnectionHandlerOld` constructor | Postfix | Raises the game's `ConsoleEvents.PlayerLeft` when a player leaves. |
 | `Player.InitializePlayerOnServer` | Postfix (twice) | Raises `ConsoleEvents.PlayerJoined`, and sends the player their roles. |
 | `ServerHandler.PlayerLimit` getter | Postfix | `max_players`. See [Server settings](config/server-settings.md#the-player-limit). |
@@ -43,21 +44,22 @@ If you patch one of these, your patch runs alongside TavernLib's. "Skips the ori
 | `WebSocketCommandHandler.ProcessAuthorization` | Prefix and finalizer | Marks a login as coming through the websocket console. |
 | `CommandPart.RequirementsAreMet` | Postfix | The named token gate. See [Console](console.md#named-token-paths). |
 | `CommandService.HandleMatchedCommand` | Prefix (can skip) and postfix | Refuses empty player lists, unwraps command errors. |
+| `PlayerListConverter.ConvertFrom` | Postfix | Remembers what was typed for a player list, for the "No online player matches" refusal. |
 | `WebSocketCommandHandler.TryLogConsoleCommandExecutionWithEventStream` | Prefix | Logs and redacts console commands. |
 | `CommandResult.Log` | Prefix, skips for the `token` module | Keeps token text out of the game's log. |
 | `ServerConsoleManager.StartRemoteConsole` | Postfix | Closes the game's `remoteConsole`. |
-| `CommandSync.RouteCommand` | Prefix, skips the original | |
 | `WebSocketCommandHandler.GetCurrentServerPermissionsForLoggedInUser` | Prefix, skips the original | Every console login gets console permission. |
 | `LowLevelApiClient.ValidateIdentityToken` | Prefix, skips the original | Always valid: there's no Alta to ask. |
+| `PurchasedList.ValidatePlayersOwnedItems` | Prefix, skips the original | Every cosmetic is allowed when the server checks a player's look after customizing. |
 | `ConfirmJoinMessage` constructor | Postfix | Logs refused joins. |
 
 #### What the join check no longer does
 
-A Tavern server's id is `-1`, so `CheckApproved` calls `CheckIfPlayerIsAllowedCustom`, not the Alta-backed `CheckIfPlayerIsAllowed`. The game's version of it did all of these, and TavernLib's replacement does none of them:
+A Tavern server's id is `-1`, so `CheckApproved` calls `CheckIfPlayerIsAllowedCustom`, not the Alta-backed `CheckIfPlayerIsAllowed`. The game's version of it did all of these. TavernLib's replacement only keeps the player limit:
 
 | Game check | On a TavernLib server |
 | --- | --- |
-| Player limit (`CheckConnectionLimit`: connection count against `ServerHandler.PlayerLimit`) | **Not checked anywhere.** `max_players` doesn't stop a join. See [Server settings](config/server-settings.md#the-player-limit). |
+| Player limit (`CheckConnectionLimit`: connection count against `ServerHandler.PlayerLimit`) | Checked, with the game's message "Reached player limit of: N". See [Server settings](config/server-settings.md#the-player-limit). |
 | Game version (`BuildVersion.CurrentVersion` against the client's) | Not checked. TavernLib's mod parity check doesn't look at the game version. |
 | The game's own allow list (`server.Config.IsPlayerAllowed`, when `IsUsingConfig`) | Not checked. TavernLib's whitelist and blacklist in `users.json` are checked on the auth port and again in its join filter. |
 | Already on the server (a `Player` with that id) | Covered by `CheckApproved`'s own "Already connected" check, which looks at connections. |
@@ -70,7 +72,8 @@ If you want one of these back, postfix `CheckIfPlayerIsAllowedCustom` (it's `pro
 | Method | Patch | What it does |
 | --- | --- | --- |
 | `UserApiClient.GetAllCosmeticsPresets`, `CreateCosmeticsPreset`, `DeleteCosmeticPreset` | Prefix, skips the original | Keeps presets in `A Township Tale\presets`. |
-| `PurchasedList.UpdateCurrentRotation`, `ValidatePlayersOwnedItems`, `Refresh` | Prefix, skips the original | No store rotation; everyone owns the free items. |
+| `PurchasedList.Refresh` | Prefix, skips the original | Owned and available cosmetics are just the free-for-all set. |
+| `PurchasedList.UpdateCurrentRotation` | Not applied | Meant to empty the store rotation, but the method has neither a `Prefix` name nor `[HarmonyPrefix]`, so Harmony never uses it. TavernEssentials patches it instead. |
 | `ReturnToMainMenuAction.LetGoValid` | Prefix, skips the original | Quits the game instead of going back to the menu. |
 | `ApplicationStartupManager.RunStartupActions` | Prefix, skips with `/join_local_server` | Joins the server from the command line. |
 | `MenuSettings.LocalGameServerInfo` | Postfix | Points a local server join at the right scene and ports. |
@@ -112,3 +115,5 @@ TavernEssentials' log guard finds it by name (`TavernLib.TavernLogger`, private 
 ## See also
 
 - [TavernLib API](overview.md#stable-api-and-internals)
+- [Known patch points](../game-api/patching/known-patch-points.md) for what other mods patch
+- [Joining a server](../game-api/networking/joining.md#what-tavernlib-changes) for the join checks from the game's side

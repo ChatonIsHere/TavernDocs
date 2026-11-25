@@ -6,15 +6,7 @@ sidebar_position: 15
 
 # Command-line flags
 
-The game reads its command line through `CommandLineArguments` (no namespace, in `Alta.CommandLine.dll`). Flags are matched **without caring about case**, and the values after a flag keep their case.
-
-| Member | What it does |
-| --- | --- |
-| `static bool Contains(string argument)` | Is the flag there. |
-| `static bool TryGetNextArguments(string argument, int numberOfArgumentsExpected, out string[] nextArguments, bool isOptionalArgs = false)` | The values after a flag. `false` if the flag is missing or there aren't enough values after it. |
-| `static List<string> AllArguments` | Every argument, lowercased. |
-| `static string RawCommandLine` | The command line without the program's path. |
-| `const string StartServerArgument = "/start_server"` and others | The flag names. They're `const`, so they're compiled into your mod. |
+The game reads its command line through `CommandLineArguments` (no namespace, in `Alta.CommandLine.dll`). Flags are matched **without caring about case**, and the values after a flag keep their case. Its members, its quirks and how to read your own flags are on [Startup and app state](../console-and-utilities/startup-and-app-state.md#commandlinearguments). This page is the server's view of the flags.
 
 ```csharp
 public static bool IsServer => CommandLineArguments.Contains(CommandLineArguments.StartServerArgument);
@@ -35,7 +27,7 @@ public static int? ServerPort =>
 | `-batchmode`, `-nographics` | Unity's own. Either makes `ApplicationManager.IsHeadless` true: no main menu after startup, server garbage collection timer, things that need a GPU switched off. |
 | `/console` | Opens the game's own console window on start, for accounts with the `debug_features` permission. |
 | `/wipe` | **Wipes the world** when the server starts. |
-| `/heartbeat` | Starts Alta's heartbeat monitor. |
+| `/heartbeat <program> <ms>` | Once the server starts, launches `<program>` as a watchdog, passing it the interval, the server's name, the process id and the command line, and sends it heartbeats. |
 | `/db_settings` | Read server settings from Alta's database, not `ServerConfiguration.json`. |
 | `/app_data_path <path>` | Where saves and the game's data go, instead of `%APPDATA%\A Township Tale`. Rover gives each bot its own. |
 | `/remote_saves <type> <path>`, `/s3_credentials <key> <secret>` | Keep saves in S3 (`s3`, `bucket:path`) or another folder. |
@@ -68,22 +60,13 @@ Defined in `CommandLineArguments` but not read anywhere we found in this build: 
 
 ## Added by TavernLib
 
-`TavernLib.TavernArgs` holds these names.
+TavernLib reads its own flags with the same `CommandLineArguments`, and `TavernLib.TavernArgs` holds their names. The ones that change how the game networks:
 
-| Flag | Side | What it does |
-| --- | --- | --- |
-| `/join_local_server` | client | Instead of the main menu, join a server straight away (a prefix on `ApplicationStartupManager.RunStartupActions`). Address from `/dev_server_ip` (default 127.0.0.1), port from `/dev_server_port` (default 1757). |
-| `/dev_server_ip <ip>` | client | The address for `/join_local_server`. |
-| `/dev_server_port <port>` | client | The game port for `/join_local_server`, and for the local `GameServerInfo`. |
-| `/dev_server_web_port <port>` | client | The server's web port (from TavernLib's auth reply), if it isn't 1761. |
-| `/tutorialScene`, `/questScene` | both | Force scene index 1 (tutorial) or 4 (quest; also marks the server as allowing Quest). On a server, also what the listing says. |
-| `/modlist <file>` | server | A mod list to make the `Mods` folder match before loading. |
-| `/launcherauth` | server | TavernLauncher manages logins, the whitelist, backups and `Mods` for this server, so TavernLib doesn't. |
-| `/listing_api <url>` | server | The server list to report to. |
-| `/tavern_rejoin` | client | Set by the launcher on a rejoin after installing a server's mods. |
-| `/debug_helper` | both | Copies the game's own NLog output into MelonLoader's log. |
+- `/join_local_server` (client) skips the main menu and joins a server straight away, at `/dev_server_ip` (default 127.0.0.1) and `/dev_server_port` (default 1757). It's a prefix on `ApplicationStartupManager.RunStartupActions`.
+- `/tutorialScene` and `/questScene` force scene index 1 or 4. Scene 4 also adds Quest to the server's `Target`, which makes it a "simple server" (see [Player](player.md#platformtarget)).
+- `/launcherauth` (server) hands logins, the whitelist, backups and `Mods` to the Windows launcher.
 
-TavernLib's own server mode is decided by `/start_server`, the same as the game's.
+TavernLib's own server mode is decided by `/start_server`, the same as the game's. Every TavernLib flag, with its `TavernArgs` name, is on [TavernLib's command-line arguments](../../tavernlib-api/command-line.md).
 
 ## The Docker image's server line
 

@@ -56,10 +56,10 @@ So anything you set before step 6 reaches clients in the first spawn, and anythi
 | `static NetworkEntity Spawn(NetworkPrefab prefab, SpawnData spawnData, Chunk chunk, Transform parent, Vector3 localPosition = default, Quaternion localRotation = default, SpawningCallback preChunking = null)` | Parent its transform under `parent` first. |
 | `static NetworkEntity Spawn(NetworkPrefab prefab, SpawnData spawnData, NetworkEntity chunkingParent, SaveMode saveMode, ...)` | The same three shapes, but it rides with `chunkingParent` (and its chunk) and gets `saveMode`. Use `SaveMode.Child` so it saves with the parent. |
 | `static NetworkEntity SpawnUnchunked(NetworkPrefab prefab, SpawnData spawnData)` | Steps 1 and 4 only. No position, no chunk: nobody sees it until you set `Chunk` yourself. |
-| `static NetworkEntity SpawnPouchOrPickup(Item item, int count, SpawnData spawnData, Chunk chunk, Vector3 position, Quaternion rotation = default)` | A stackable item with `count` above 1 comes as a pouch holding the stack. Otherwise one item. |
+| `static NetworkEntity SpawnPouchOrPickup(Item item, int count, SpawnData spawnData, Chunk chunk, Vector3 position, Quaternion rotation = default)` | A stackable item with `count` above 1 comes as a pouch holding the stack, with a random yaw if you pass no rotation. Otherwise one item. If the stack won't dock, the pouch is destroyed but still returned, so check `IsBeingDestroyed`. |
 | `static bool SpawnDocked(Item item, int count, SpawnData spawnData, PickupDock dock, Chunk fallbackChunk = null, Action<Pickup> preDockModify = null)` | Spawns straight into a dock. If the dock refuses, the item is dropped at the dock into `fallbackChunk` (or the dock's chunk), or destroyed if there's no chunk. Returns false then. |
 
-Each overload that takes a `NetworkPrefab` also has a `uint prefabHash` version. `SpawningCallback` is `delegate void SpawningCallback(NetworkEntity networkEntity)`.
+Most overloads that take a `NetworkPrefab` also have a `uint prefabHash` version. Two don't: the chunking-parent one with a position and rotation, and the chunk one with a parent transform. `SpawningCallback` is `delegate void SpawningCallback(NetworkEntity networkEntity)`.
 
 ### Stacks
 
@@ -76,7 +76,7 @@ public static NetworkEntity SpawnStack(uint prefabHash, int count, Vector3 posit
 }
 ```
 
-For a whole player inventory or a specific dock, see the Items area.
+For a whole player inventory or a specific dock, see [Player inventory](../items/player-inventory.md) and [Docks](../items/docks.md).
 
 ## SpawnData
 
@@ -126,14 +126,14 @@ The scene's entity table has 100,000 slots, with two in every 50 reserved. When 
 
 ## What the spawn commands call
 
-`SpawnCommandModule` (`Alta.Console.Commands`) is the `spawn` console module. All its spawning commands are `[ServerOnly]`.
+`SpawnCommandModule` (`Alta.Console.Commands`) is the `spawn` console module. Most of its spawning commands are `[ServerOnly]`; `multi`, `string` and `string-raw` aren't marked, but the whole module needs a running `ServerHandler` (`[NonSimpleServer]`), and only the server can spawn anyway.
 
 | Command | What it does in code |
 | --- | --- |
 | `spawn <players> <prefab> [args...]` | For each player with a body, two metres in front of the head at head height. With no players, at a random point of the `OriginalSpawnPoint` spawn area. Calls `SpawnHelper.Spawn(prefab, SpawnData.Default, null, position, rotation)`, then the args, then sets `Chunk` to `LocationChunkHelper.GetBestContaining(position)`. |
 | `spawn exact <position> <rotation> <prefab> [args...]` | The same at an exact position and Euler rotation. Alias `e`. |
 | `spawn multi <players> <text> [args...]` | Spawns every prefab whose name contains the text. |
-| `spawn string <players> [string]` | Spawns a saved object from text (see [Cloning](#cloning-an-entity)), from the clipboard if no string. |
+| `spawn string <players> [string]` | Spawns a saved object from text (see [Cloning](#cloning-an-entity)), from the clipboard if no string. Two metres in front of each player, put in the chunk of the player's body rather than the chunk at that point. |
 | `spawn list`, `spawn find <text>`, `spawn infodump` | Read only. Only prefabs with `CanBeSpawnedThroughCommand`. |
 | `spawn population <player> <population> [type] [size] [start] [max]` | Spawns a population spawn area on the ground in front of the player. See [Populations](populations.md). |
 | `spawn package drop <players> <name> [args...]` | Spawns a debug package (`PackageManager.DropPackage`). See [Loot](loot.md). |
@@ -184,7 +184,7 @@ The entity's own `Chunk` property still says the new chunk until it's gone, so c
 | `ChunkEntityManager.Add(NetworkEntity)` | An entity entering a chunk (spawn, load or move). Server. Returns false when refused. |
 | A specific behaviour's `InitializeAsServer` override | Change one kind of thing as it spawns. |
 
-`ClientSpawnManager.SpawnAsClient(...)` is the client side of a spawn message, if you need to see things arrive on a client. It's covered with the messages in the Networking area.
+`ClientSpawnManager.SpawnAsClient(...)` is the client side of a spawn message, if you need to see things arrive on a client. It's covered in [Entity sync](../networking/entity-sync.md#spawning).
 
 ## See also
 

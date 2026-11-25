@@ -36,7 +36,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | `MaterialLOD` | class |  | 5 |  |
 | `MaterialSwapper` | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 |  |
 | `MaterialToggler` | class | `MonoBehaviour` | 6 |  |
-| `MaxLimitPooledObjectPool` | class | `BasicPooledObjectPool(definition)` | 2 |  |
+| `MaxLimitPooledObjectPool` | class | `BasicPooledObjectPool` | 2 |  |
 | `MaxValueTask` | class | `CustomArgumentGameAction<MaxValueTaskArgument>` | 2 |  |
 | `MaxValueTaskArgument` | class | `GameTaskActionArgument` | 2 | [Other systems](../game-systems/other-systems.md): `CaveLayerChunk`, the deepest cave layer reached |
 | `MeasureDistance` | class | `MonoBehaviour` | 0 |  |

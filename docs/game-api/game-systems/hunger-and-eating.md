@@ -36,7 +36,7 @@ While fullness is above 0, a timer counts down by `1 / tickRatePerHungerThreshol
 From the `Hunger Stat` and `Fullness Stat` assets and the player body prefab, build `main-1.7.2.1.42203`.
 :::
 
-Hunger runs from 0 to 2 (it starts full at 2). At the default `HungerTick` it empties in 4,000 stat ticks, about 67 minutes at the default `TimeSpeedMultiplier` (stat ticks run on the game's `Timeline`, which the host can speed up). Its levels (a level applies while the value is above its threshold) put non-buff multipliers on speed and damage:
+Hunger runs from 0 to 2 (it starts full at 2). At the default `HungerTick` it empties in 4,000 stat ticks, about 67 minutes at the default `TimeSpeedMultiplier` (stat ticks run on the game's `Timeline`, which the host can speed up). Its levels (a level applies while the value is above its threshold) put non-buff multipliers on speed and damage. [Threshold levels](../reference/stats.md#threshold-levels) has both stats' levels:
 
 | Level | Hunger above | Speed | Damage |
 | --- | --- | --- | --- |
@@ -82,20 +82,20 @@ Steps 1 and 2 run on whichever side sees the trigger, the client included. Only 
 
 On the player body (asset values, build `main-1.7.2.1.42203`) the monitored stat is `Fullness Stat`, `effectHandlingStrength` is 1, and both `canConsumeWastefully` and `canConsumeWhenStatIsFull` are off. So food is refused when its effects on fullness would take it past 6.
 
-What food does, from a few food prefabs (each item's own values are in the reference tables):
+What food does when eaten (`EdibleObject.ConsumptionEffects` on a few food prefabs). The [cookables table](../reference/recipes.md#cookables-and-garnishes) lists a different set, the `CookableItem` effects an item adds to a stew, so don't read eating values from it:
 
 | Food | Effects |
 | --- | --- |
-| Potato Full Ripe | `Heal` 0.05, `Nourish` 0.1, and a third effect at 1 |
-| Potato Full Cooked | `Heal` 0.15, `Nourish` 0.2, third effect at 1 |
-| Apple Full Ripe | `Heal` 0.1 over 10 seconds, `Nourish` 0.2, third effect at 1 |
-| Apple Full Cooked | `Heal` 0.3 over 10 seconds, `Nourish` 0.15, third effect at 1 |
+| Potato Full Ripe | `Heal` 0.05, `Nourish` 0.1, `Feed` 1 |
+| Potato Full Cooked | `Heal` 0.15, `Nourish` 0.2, `Feed` 1 |
+| Apple Full Ripe | `Heal` 0.1 over 10 seconds, `Nourish` 0.2, `Feed` 1 |
+| Apple Full Cooked | `Heal` 0.3 over 10 seconds, `Nourish` 0.15, `Feed` 1 |
 
-`Nourish` adds to hunger, `Heal` to health and `Feed` to fullness (see [Effects](effects.md)). The third effect points into another asset file that the dump can't resolve by name; it's very likely `Feed`, one point of fullness. Cooked food heals more, but doesn't always nourish more (the cooked apple nourishes less than the ripe one).
+`Nourish` adds to hunger, `Heal` to health and `Feed` to fullness (see [Effects](effects.md)), so each of these fills one point of fullness. Cooked food heals more, but doesn't always nourish more (the cooked apple nourishes less than the ripe one).
 
 ### On death
 
-`DeadStateSettings` lists the stats `DeathReset` puts back to default and one stat it adjusts: if that stat is below 0.6 it's set to 0.6, and in that case a second stat is set to 0. Matching the asset references against the `Heal` and `Nourish` effects, health is among the reset stats and the 0.6 one is hunger, so a player who died starving comes back at 0.6 hunger. The second stat (probably fullness) couldn't be resolved. With the host's `IsResetingHungerOnDeath` on, hunger is then reset to its default of 2.
+`DeadStateSettings` (asset values) lists the stats `DeathReset` puts back to default: health, cripple health, poison, nightmare and both hand staminas. It also adjusts hunger: if hunger is below 0.6 it's set to 0.6, and in that case fullness is set to 0. So a player who died starving comes back at 0.6 hunger with an empty stomach, and one who died fed keeps both. With the host's `IsResetingHungerOnDeath` on, hunger is then reset to its default of 2.
 
 ## EdibleObject
 
@@ -117,6 +117,11 @@ What food does, from a few food prefabs (each item's own values are in the refer
 - Hosts can already change drain, regeneration and starvation with `HungerTick`, `HealthRegenMultiplier`, `HungerDealsDamage` and `IsResetingHungerOnDeath`. Check those before writing a patch.
 
 ```csharp
+using System.Collections.Generic;
+using Alta.Alchemy;
+using HarmonyLib;
+using MelonLoader;
+
 [HarmonyPatch(typeof(ConsumptionManager), "HandleConsumptionEffects")]
 static class ConsumedPatch
 {
@@ -141,6 +146,8 @@ static class ConsumedPatch
 The strength printed is before `ConsumptionManager`'s own `effectHandlingStrength` and any duration split. To let players eat when full:
 
 ```csharp
+using HarmonyLib;
+
 [HarmonyPatch(typeof(ConsumptionManager), nameof(ConsumptionManager.AreValidEffects))]
 static class AlwaysHungryPatch
 {

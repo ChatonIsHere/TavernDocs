@@ -157,7 +157,7 @@ All in `Alta.Console`.
 | Attribute | Goes on | What it does |
 | --- | --- | --- |
 | `[Module(string name, string description)]` | class | Makes the class a module. Both arguments are required. |
-| `[Command(string command, string description)]`, `[Command(string command)]` | static method | Makes the method a command. A null name makes it the module's default command: `help` runs `help`'s null-named `List`. `IsLoggingValuesAsTable = true` only changes how the result is written to the log. |
+| `[Command(string command, string description)]`, `[Command(string command)]` | static method | Makes the method a command. A null name makes it the module's default command: `help` runs `help`'s null-named `List`. `IsLoggingValuesAsTable = true` only changes how the result is written to the log (as a table, which also keeps it off the clipboard; see [Arguments and results](arguments-and-results.md#commandresult)). |
 | `[Alias(params string[] aliases)]` | class, method | Extra names. Must be lower case like the name. |
 | `[Param(string description)]` | parameter | A description for `help`. No effect on parsing. |
 | `[Priority(int priority = 0)]` | method | Breaks ties when several commands match the same line. Higher wins. |
@@ -169,7 +169,7 @@ Every requirement derives from `RequirementAttribute` (class or method). A modul
 
 | Attribute | Passes when | Notes |
 | --- | --- | --- |
-| `[ServerOnly]` | `ServerHandler.Current != null` | False until the server has started, so a server's commands are hidden during startup. |
+| `[ServerOnly]` | `ServerHandler.Current != null` | False until the server has started, so a server's commands are hidden during startup. True in a client's main menu, where `LocalNetworkScene` makes a dummy `ServerHandler`. |
 | `[ClientOnly]` | There's no game mode yet, or the current game mode is a client one. | True in the main menu. |
 | `[PlayOnly]` | `Application.isPlaying` | Always true in a build. |
 | `[EditorOnly]` | `!Application.isPlaying` | Never true in a build. |
@@ -237,3 +237,4 @@ Call it from the main thread. `save now` is a server-build command; on a client 
 - [Arguments and results](arguments-and-results.md) for parsing and return values.
 - [Built-in commands](built-in-commands.md) before you pick a module name.
 - [Canary's commands](https://github.com/ChatonIsHere/Canary/tree/main/src/Commands) for a full real module.
+- [TavernLib's console](../../tavernlib-api/console.md) for what TavernLib changes: error messages, empty player lists, named tokens and the module names it takes.

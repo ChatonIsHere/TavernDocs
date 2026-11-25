@@ -25,7 +25,7 @@ if (server == null || server.IsDummyLocalServer) return; // not a real server
 | `bool IsDummyLocalServer { get; }` | The main menu's stand-in. | |
 | `bool IsRunning { get; }` | True from the end of `Initialize` until stop. Controls the API ping loop. | |
 | `bool IsBottingUp { get; }` | True while bootup steps run. (Alta's spelling.) | |
-| `int PlayerLimit { get; }` | `ServerConfig.Settings.PlayerLimit`, capped at 8 on a Quest ("simple") server. `0` or less means no limit. | TavernLib replaces it with `server_settings.json`'s limit. |
+| `int PlayerLimit { get; }` | `ServerConfig.Settings.PlayerLimit`. `0` or less means no limit, except on a Quest ("simple") server, where anything outside 1 to 8 becomes 8. | TavernLib replaces it with `server_settings.json`'s `max_players` (24 if that's missing or 0 or less), so a TavernLib server always has a limit. |
 | `int Connections { get; }` | Open connections on the socket, including ones still joining. | |
 | `SettingsFileAccess<ServerSettings> ServerConfig { get; }` | The game's settings, from `ServerConfiguration.json`. | See [Server settings](server-settings.md). |
 | `ServerSaveUtility SaveUtility { get; }` | Save folders and player save loading. | See [Saving](saving.md). |
@@ -115,7 +115,7 @@ The game doesn't raise `ConsoleEvents.PlayerJoined` or `ConsoleEvents.PlayerLeft
 
 ## Hooking it
 
-- **`PlayerLimit` getter**: TavernLib's postfix sets it from `server_settings.json` (or its default). Your own postfix on it runs in Harmony's order with TavernLib's, so give yours a `[HarmonyPriority]` lower than normal if you want the last word. The join check that reads it is `ServerPlayerConnectionHandlerOld.CheckConnectionLimit`, which compares against `Socket.Current.ConnectionCount` (so players still in the character room count).
+- **`PlayerLimit` getter**: TavernLib's postfix sets it from `server_settings.json` (or its default). Your own postfix on it runs in Harmony's order with TavernLib's, so give yours a `[HarmonyPriority]` lower than normal if you want the last word. The game's join check that reads it is `ServerPlayerConnectionHandlerOld.CheckConnectionLimit`, which compares against `Socket.Current.ConnectionCount` (so connections still joining count, including the one asking). TavernLib replaces that check with its own, which counts the same way (see [Joining a server](joining.md#what-tavernlib-changes)).
 - **`SpawnPlayerToClient`** is a private `async void`. A prefix or postfix runs only as far as its first `await` (waiting for the scene, then loading the save). Use `PlayerJoined` instead, or a postfix on `Player.InitializePlayerOnServer` (also async, so the postfix runs at its first `await`, after `UserInfo`, the connection and the save are set).
 - **`ConnectionCreated(Connection)`** is private and runs for every new connection, before the join request. It sets the connection's message handlers. A postfix is the place to add your own handler to every connection (SyncLib does this). See [Connection messages](messages.md#your-own-message-type).
 - **The constructor** `ServerHandler(ISocket, IServerAccess, bool)` is the place to add bootup steps.

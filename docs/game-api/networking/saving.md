@@ -112,7 +112,7 @@ public static async Task SaveEverything()
 | `SaveMode` (`ATT.Saving`) | Per prefab: how an entity is saved (`Base`, `Child`, `Ignore`, `Player`, `Creature`). |
 | `ServerWipeManager` | Wipes. `IsWiping` stops saves. |
 
-Chunk saving itself (what a chunk writes, versioning, migration) belongs to the world area.
+Chunk saving itself (what a chunk writes, versioning, migration) is on [Chunk loading and saving](../world/chunk-loading-and-saving.md).
 
 ## See also
 

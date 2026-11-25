@@ -42,7 +42,7 @@ Prefix your flags with your mod's name. Unity and MelonLoader read the same comm
 
 ### Flags the game reads
 
-From the decompiled server build, which Tavern installs. The launchers start a server with something like `/force_offline /access_token <a> /refresh_token <r> /identity_token <i> -batchmode -nographics /fly /start_server -1 false <port> -logFile <file>`.
+From the decompiled server build, which Tavern installs. [Command-line flags](../networking/command-line.md) in the Networking area covers the same flags from the server's side, plus the ones TavernLib adds and the Docker image's server line. The launchers start a server with something like `/force_offline /access_token <a> /refresh_token <r> /identity_token <i> -batchmode -nographics /fly /start_server -1 false <port> -logFile <file>`.
 
 | Flag | Read by | What it does |
 | --- | --- | --- |
@@ -65,7 +65,7 @@ From the decompiled server build, which Tavern installs. The launchers start a s
 | `/mods_path <folder>` | `DemoLoadScripts` | The folder for the game's own C# script mods (not MelonLoader). |
 | `/heartbeat <program> <ms>` | `ServerHeartbeat` | Starts a watchdog program with the server's name, process id and command line. |
 | `/vivox_sandbox` | `VivoxUtility` | Vivox's test servers. Voice is dead. |
-| `/agones`, `/source <name>` | `ApplicationStartupManager` | Analytics for the game's launch. |
+| `/agones`, `/source <name>` | `ApplicationStartupManager` | Launch analytics. `/agones` (Alta's hosting) skips the game-launched event; `/source` names where the launch came from. |
 
 Read only in the server build: `/wipe` (wipes the world as soon as the server has started, through `ServerHandler.WipeServer`, which ends by quitting) and `/db_settings` (reads and writes server settings through Alta's web API `SettingsClient`, keyed by the server id, instead of `ServerConfiguration.json`; dead). Defined but never read in either build: `/listen_to_api`, `/autocam`, `/remote_console`, `/version`, `/spot_instance`, `/skip-tests` and `/hosting_platform`.
 
@@ -75,8 +75,8 @@ There are several tests and they don't mean the same thing.
 
 | Test | True when |
 | --- | --- |
-| `ServerHandler.Current != null` | A server is running in this process. The usual check, and what `[ServerOnly]` uses. False during startup. |
-| `NetworkSceneManager.IsServer` | The networking side's view; see the Networking area. |
+| `ServerHandler.Current != null` | A server is running in this process. The usual check, and what `[ServerOnly]` uses. False during startup. Also true on a client in the main menu, where `LocalNetworkScene` makes a dummy one (`ServerHandler.Current.IsDummyLocalServer` is true). |
+| `NetworkSceneManager.IsServer` | This process hosts the current scene. Also true in a client's main menu. See [Which side am I on?](../networking/overview.md#which-side-am-i-on) in the Networking area. |
 | `CommandLineArguments.Contains("/start_server")` | The process was started as a server. True from the first line of your mod. |
 | `ApplicationManager.IsHeadless` | No window (`-batchmode` or `-nographics`). Servers usually are, but a headless client is possible (Rover's bots). |
 | `PlatformProvider.IsServer()` | **Running on Linux.** Nothing else. A Windows server is a client by this test. Don't use it. |
@@ -85,7 +85,8 @@ There are several tests and they don't mean the same thing.
 // Don't use PlatformProvider.IsServer(): it only means "running on Linux".
 public static bool IsServerProcess => CommandLineArguments.Contains("/start_server");
 
-public static bool IsServerRunning => Alta.Networking.Servers.ServerHandler.Current != null;
+// The main menu's dummy server doesn't count.
+public static bool IsServerRunning => Alta.Networking.Servers.ServerHandler.Current is { IsDummyLocalServer: false };
 ```
 
 ## ApplicationManager

@@ -117,6 +117,10 @@ Cooking has XP code (`ProgressionSettings.GainStewingExperience`, `Cookable.expe
 - For a server-wide flat change, tell hosts about `XPX` and the per-path settings first.
 
 ```csharp
+using System;
+using Alta.Networking.Scripts.Player;
+using HarmonyLib;
+
 [HarmonyPatch(typeof(PlayerProgressionManager), nameof(PlayerProgressionManager.GainExperience),
     new Type[] { typeof(IPlayer), typeof(ProgressionPath), typeof(int) })]
 static class GainExperiencePatch

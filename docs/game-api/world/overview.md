@@ -26,7 +26,7 @@ Everything you can see, hold or fight in A Township Tale is a networked object c
 | Spawning and destroying entities | Server | `ClientSpawnManager.SpawnInternal` and `Destroy` only log an error. |
 | Which chunk an entity is in | Server | Clients don't keep chunk entity lists at all: `Chunk.Entities` and `Chunk.Players` are null there. |
 | Which chunks load | Server, per player | `PlayerChunkManager` on the server works out the chunks around each player and tells their game which to load. |
-| Where an object is | Mostly server | The server moves loose objects and sends `MoveEntity` (`ForcePositionSync`). How held items and physics sync is in the Networking and Items areas. |
+| Where an object is | Mostly server | The server moves loose objects and sends `MoveEntity` (`ForcePositionSync`). How held items and physics sync is in [Entity sync](../networking/entity-sync.md) and [Items](../items/overview.md). |
 | Where a player is | That player's client | The server asks the client to move (`PlayerEffectController.Teleport`, `LocomotionController.MoveTo`). See [Moving and teleporting](moving-and-teleporting.md). |
 | Forest and cave layout | Server | Clients download the forest's cache files from the server. For caves they get the seed and build the same rock themselves. |
 | Populations, loot, ore respawns | Server | All run from `Timeline` callbacks on the server. |
@@ -83,4 +83,4 @@ The game's scenes, going by the scene dumps: `level4` is the main world (one `Ne
 
 ## Related areas
 
-Messages, `MethodSync` and how entity state reaches clients are in the Networking area. Items, docks and pickups are in [Items, interaction and damage](../items/overview.md). Creature AI is in the Creatures area, and console commands in general are in the Console and utilities area.
+Messages, `MethodSync` and how entity state reaches clients are in [Networking](../networking/overview.md). Items, docks and pickups are in [Items, interaction and damage](../items/overview.md). Creature AI is in [Creatures](../creatures/overview.md), and console commands in general are in [Console and utilities](../console-and-utilities/overview.md). The generated [reference tables](../reference/overview.md) list every spawnable prefab with its hash.

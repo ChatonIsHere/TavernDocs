@@ -71,7 +71,7 @@ Recipe assets, by the station that uses them. Each is a `HashedGeneralValue`, so
 
 ### Cookables and garnishes
 
-`CookableItem` and `CookingGarnish` item components: the cooking category of each food item and the effects it gives when eaten or added to a stew.
+`CookableItem` and `CookingGarnish` item components: the cooking category of each food item and the effects it gives when added to a stew. Eating a food on its own uses the food's own values, not these.
 
 | Item | Type | Category | Effects | Effect multipliers |
 | --- | --- | --- | --- | --- |

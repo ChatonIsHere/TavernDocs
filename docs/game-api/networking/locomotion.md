@@ -45,7 +45,7 @@ A `NetworkEntityBehaviour` and `INetworkSerialized`. Its serialized state is the
 ### MoveTo on each side
 
 - **Owner's client**: moves the body and sends `PlayerMovementMessage` to the server. The server checks it came from the body's own player, moves its copy, counts distance for the achievement stat, and passes it on to everyone else.
-- **Server, someone else's body**: `MoveTo(position, function)` only does anything when `function` is `Reposition`: then it sends the move to the owner, who moves. Anything else is ignored. The three-argument `MoveTo` moves the server's copy only, and the owner's next update puts it back.
+- **Server, someone else's body**: on the VR body (`PlayerLocomotionController`, which overrides it), `MoveTo(position, function)` sends the move to the owner whatever `function` is, and the owner moves. On the base `LocomotionController` (fly cam, auto cam) it only does that when `function` is `Reposition`; anything else is ignored. The three-argument `MoveTo` moves the server's copy only, and the owner's next update puts it back.
 
 ## Moving a player from the server
 

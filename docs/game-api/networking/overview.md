@@ -27,14 +27,14 @@ Everything here is in `Root.Township` unless a page says otherwise. The transpor
 
 | Check | True when |
 | --- | --- |
-| `NetworkSceneManager.IsServer` | This process is running the server (also in local test mode). |
+| `NetworkSceneManager.IsServer` | This process is running the server (also in local test mode). Also true on a client in the main menu, whose `LocalNetworkScene` sets it. |
 | `NetworkSceneManager.IsLocalTest` | Local test mode: server and player in one process. |
 | `NetworkSceneManager.IsRemoteServer` | A real server, not local test. |
 | `ServerHandler.Current != null` | A server has started. Also true in the main menu's dummy server, so check `IsDummyLocalServer`. |
 | `CommandLineArguments.Contains("/start_server")` | The process was started as a server. Works before anything else has loaded. |
 | `ApplicationManager.IsHeadless` | `-batchmode` or `-nographics` was given. Rover's bots are headless clients, so this alone doesn't mean "server". |
 
-`NetworkSceneManager.IsServer` is set when the server socket opens, and set to `false` on a client as it loads into a server, so it isn't meaningful at mod load. Use the command line then. [Client, server or both](../../mod/tavernlib/client-server-or-both.md) shows the pattern.
+`NetworkSceneManager.IsServer` is set when the server socket opens (or the main menu loads), and set to `false` on a client as it loads into a server, so it isn't meaningful at mod load. Use the command line then. [Client, server or both](../../mod/tavernlib/client-server-or-both.md) shows the pattern.
 
 :::warning[Two builds of Root.Township]
 
@@ -61,7 +61,7 @@ Alta shipped a client build of `Root.Township` with most server code compiled ou
 | [Server settings](server-settings.md) | `ServerSettings`, `ServerConfiguration.json`, the in-game settings board, server info types. |
 | [Command-line flags](command-line.md) | Every flag the game reads that matters for servers and clients, and the ones TavernLib adds. |
 
-Chunks, streaming and what's spawned where belong to the world area. Items, docks and inventories belong to the items area. Console commands and `ConsoleEvents` belong to the console and utilities area.
+Chunks, streaming and what's spawned where belong to [World, entities and spawning](../world/overview.md). Items, docks and inventories belong to [Items, interaction and damage](../items/overview.md). Console commands and `ConsoleEvents` belong to [Console, utilities and Alta assemblies](../console-and-utilities/overview.md). TavernLib's own messages (32 and 33) and how it widens the message type are on [TavernLib's network messages](../../tavernlib-api/network-messages.md).
 
 ## Most useful hook points
 

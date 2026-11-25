@@ -40,7 +40,7 @@ TavernLib reads its arguments with the game's `CommandLineArguments` (in `Alta.C
 
 ## Checking for a server
 
-The guides check `Environment.GetCommandLineArgs()` for `/start_server`, which works without any references. If you already reference `Alta.CommandLine`, this is the same check TavernLib makes:
+The guides ([Client, server or both](../mod/tavernlib/client-server-or-both.md#telling-them-apart-in-code)) check `Environment.GetCommandLineArgs()` for `/start_server`, which works without any references. If you already reference `Alta.CommandLine`, this is the same check TavernLib makes:
 
 ```csharp
 using TavernLib;
@@ -63,4 +63,6 @@ public static class Launch
 ## See also
 
 - [Client, server or both](../mod/tavernlib/client-server-or-both.md)
+- [Command-line flags](../game-api/networking/command-line.md) for the game's own flags
+- [CommandLineArguments](../game-api/console-and-utilities/startup-and-app-state.md#commandlinearguments) in the game API
 - [Files](files.md)

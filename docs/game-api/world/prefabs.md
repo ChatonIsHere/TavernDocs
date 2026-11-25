@@ -45,7 +45,7 @@ It loads every `NetworkPrefab` under `Resources/Network Prefabs` the first time 
 | `static NetworkPrefab GetPrefab(uint hash)` | The prefab with that hash, or null. | Dictionary lookup. |
 | `static NetworkPrefab GetPrefab(string name)` | Matches the hash as text, the lowercase name, or the lowercase name with spaces removed. | Your text must already be lowercase. A linear search over every prefab, so cache the result. |
 | `static bool Exists(uint hash)` | Whether a hash is known. | |
-| `static IEnumerable<NetworkPrefab> AllPrefabs { get; }` | Every prefab. | Call `PrepareSpawnSetups()` first, or it can be null. |
+| `static IEnumerable<NetworkPrefab> AllPrefabs { get; }` | Every prefab. | Call `PrepareSpawnSetups()` first: before the map is built this throws a `NullReferenceException`. |
 | `static void PrepareSpawnSetups()` | Loads the prefabs if they aren't loaded. | Slow the first time. |
 
 Two prefabs with the same hash: the first one wins and an error is logged ("share a prefab hash").
@@ -84,7 +84,7 @@ Docks switch what they hold to `Child`, and back to the pickup's `BaseSaveMode` 
 
 The chunk also drops `Base` entities with a y position under -15,000 when it saves. See [Chunk loading and saving](chunk-loading-and-saving.md).
 
-When an entity's chunking parent is destroyed, its `Child`, `Creature` and `Ignore` children are destroyed too. A `Base` child is unparented and an error logged.
+When a prefab is destroyed, the prefabs nested under it in the transform hierarchy that are `Child`, `Creature` or `Ignore` are destroyed too. A `Base` one is moved out and an error logged. See [Destroying](destroying.md).
 
 ## See also
 

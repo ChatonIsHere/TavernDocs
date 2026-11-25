@@ -32,7 +32,7 @@ What this shows:
 
 ### The forced garbage collection
 
-`GarbageCollectTimer` (no namespace, a `MonoBehaviour` in the scene) starts a coroutine on headless builds only, so on every server and on no client. It calls `GC.Collect(GC.MaxGeneration, mode, blocking: false)` every `interval` seconds. The interval is in the game's data: 30 seconds.
+`GarbageCollectTimer` (no namespace, a `MonoBehaviour` in the scene) starts a coroutine on headless builds only, so on every server and on no client. It calls `GC.Collect(GC.MaxGeneration, mode, blocking: false)` every `interval` seconds. The field's code default is 2 seconds, but the object in the boot scene sets 30 (going by Rover's and Steady's measurements; the scene dump doesn't record the value). On a Tavern server TavernLib sets it from `garbage_collection_timer` anyway, which defaults to 30.
 
 Unity's Mono uses the Boehm collector, which ignores "optimized" and "not blocking" and stops the whole game for a full collection. The pause grows with the size of the heap, not with how much garbage there is:
 
@@ -72,7 +72,7 @@ The autosave (every 5 minutes by default) runs `StreamerManager.SaveWorld`:
 
 ### Other things the game does every frame
 
-- `DelayedImpactResolver` resolves hits by held items once a frame (on a server, players hitting players). If it throws once, its update module drops it and it never comes back: from then on those hits do no damage until a restart, and they pile up in memory. See [Exceptions remove your update](#exceptions-remove-your-update) below.
+- `DelayedImpactResolver` resolves hits by held items once a frame (on a server, players hitting players). If it throws once, its update module drops it and it never comes back: from then on those hits do no damage until a restart, and they pile up in memory. See [Exceptions remove your update](#exceptions-remove-your-update) below, and [Impacts](items/impacts.md) for how hits are resolved.
 - `DynamicPhysicsTimeSet` adjusts the physics rate every 5 seconds from the frame rate (the [physics settings](../host/config-reference.md#physics)). Each time `ServerConfiguration.json` is read again, it registers its update again without removing the old one.
 - The game logs at Debug level, and pathfinding logs every path it finds.
 - The game still calls Alta's web services, which are gone. Each call hangs until it times out (40 seconds or more). A first-time player can wait in the character room for about a minute because of them.

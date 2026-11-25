@@ -28,7 +28,7 @@ Plants grow through stages. A `GrowthDefinition` lists the stages, and something
 | `ObjectPipeline Prefabs`, `bool IsUsingPreviousPrefab` | What to spawn for this stage. |
 | `KinematicForceMode ForceKinematic` | Force the spawned body kinematic or not. |
 
-Representative stage timings from the `GrowthDefinition` assets (build `main-1.7.2.1.42203`; all 17 are in the reference tables). Durations are `Timeline` seconds, so they shorten with the host's `TimeSpeedMultiplier`:
+Representative stage timings from the `GrowthDefinition` assets (build `main-1.7.2.1.42203`, 17 in all, checked against a live server; the reference tables don't list them). Durations are `Timeline` seconds, so they shorten with the host's `TimeSpeedMultiplier`:
 
 | Definition | Stages (duration, survival rate) |
 | --- | --- |
@@ -58,7 +58,7 @@ To speed up growth, a prefix on `GoToStage` can't change the delay (it's schedul
 
 | Type | What it is |
 | --- | --- |
-| `TreeSpawner` | A spot in the world that grows a tree. On the server it spawns a random `PresetTree` with a random species and size, and when the tree is cut down at the base or split, waits 300 to 600 seconds (code defaults) and spawns a new one. The wait is saved. |
+| `TreeSpawner` | A spot in the world that grows a tree. On the server it spawns a random `PresetTree` with a random species and size, and when the tree is cut down at the base or split, waits 300 to 600 seconds (the code defaults, which every spawner in the dumped prefabs and scenes keeps) and spawns a new one. The wait is saved. |
 | `WoodcutTree` | The tree: a tree of `MapNode`s (`Root`), each with a `WoodcutTreeModel` segment. `HealthObject`, `Rigidbody`, `TotalSize`, `Species`. Raises `Cut`. |
 | `WoodcutTreeModel` | One segment. Takes hits on its `WoodcutPoints`; when chopped through (`PieceChopped`, server) it spawns the species' wedge or stick drops at its drop locations and destroys itself. |
 | `TreeSpecies` | Species asset: physical material, hit effects, `Wedge` and `Stick` drop distributions, damage and break multipliers, `DropVelocity`, leaf materials. |
@@ -85,4 +85,4 @@ Woodcutting XP comes from tool hits through the impact channel system; see [Prog
 
 - [Progression](progression.md)
 - [Crafting](crafting.md)
-- The world area, for spawning, chunks and decay
+- [World](../world/overview.md), for spawning, chunks and decay

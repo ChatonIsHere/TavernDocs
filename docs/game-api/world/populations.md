@@ -25,7 +25,7 @@ Anything that grows back (creatures, ore boulders, sandstone, crystals, plants, 
 ## How a population ticks
 
 1. When a sample is set up in its chunk (`PopulationSample.Initialize(chunk, spawner)`), it registers a repeating `Timeline` callback every `Definition.TickFrequency` seconds.
-2. Each tick (`CheckPopulation`, private): if the count is under the maximum, it rolls growth up to `MaxPopulationGrowth` times, each roll succeeding while a value from `PopulationGrowthCurve` (at the current fill fraction) stays above a random number. Then, if the chunk is fully loaded, `CheckSpawned`.
+2. Each tick (`CheckPopulation`, private): nothing happens if the maximum is 0. If the count is over the maximum (and not all of it is spawned), it drops by one. If it's under, it reads `PopulationGrowthCurve` once at the current fill fraction, then up to `MaxPopulationGrowth` times takes a random 0 to 1 off that value and adds one while what's left stays above 0. The rolls are cumulative, so each extra growth in one tick is less likely than the last. Then, if the chunk is fully loaded, `CheckSpawned`.
 3. `CheckSpawned` spawns until the spawned count reaches `ceil(CurrentPopulation * PercentageOfPopulationSpawned)`. Each spawn takes a free spawn point that passes `IsPositionValid`, picks a prefab (`GetRandom(spawnData)`, through a biome `Distribution` if the definition has one), places it, and runs `InitializeWithChildrenAsServer`. After three failed spawns in one go it stops, and each failure lowers `CurrentPopulation` by one.
 4. Creatures go into the chunk with `SaveMode.Creature`, so they aren't saved. Everything else rides on the spawn area (`ChunkingParent`) with `SaveMode.Child`, so it saves inside it.
 
@@ -126,6 +126,9 @@ The console has it as `settings population set-time <population> <seconds>`, `ch
 For rules the switch can't express, patch the getter. It's read whenever a tick is scheduled, so keep the postfix cheap:
 
 ```csharp
+using Alta.Populations;
+using HarmonyLib;
+
 // Halve how often one population ticks.
 [HarmonyPatch(typeof(PopulationDefinition), nameof(PopulationDefinition.TickFrequency), MethodType.Getter)]
 static class FasterPopulation
@@ -150,6 +153,11 @@ static class FasterPopulation
 | `PopulationDefinition.TickFrequency`, `MaxPopulationGrowth` getters | Rates. |
 
 ```csharp
+using Alta.Networking;
+using Alta.Populations;
+using HarmonyLib;
+using MelonLoader;
+
 // Hear about everything a population spawns.
 [HarmonyPatch(typeof(PopulationSample), nameof(PopulationSample.Initialize))]
 static class WatchPopulation
@@ -190,4 +198,4 @@ Separate from populations, the root namespace has `SpawnerBase` and its kinds (`
 
 - [Spawning](spawning.md)
 - [Caves](caves.md), whose layers each have an `Ecosystem`
-- The Creatures area, for what a spawned creature does
+- [Creature spawning and despawning](../creatures/spawning-and-despawning.md), for what a spawned creature does and how it leaves its population

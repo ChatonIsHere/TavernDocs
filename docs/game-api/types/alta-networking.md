@@ -26,7 +26,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | `ChunksChanged` | delegate |  | 0 |  |
 | `ClientOnly` | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 0 | [Entity sync](../networking/entity-sync.md#clientonly): `Alta.Networking.ClientOnly` is a component that lists behaviours to switch off on a real server (renderers, audio, effects) and on everywhere else. It runs in `Awake`. |
 | `ClientPacketReceiver` | class | `IPacketReceiver`, `IPacketProcessor` | 2 |  |
-| `ClientSpawnManager` | class | `SpawnManager(networkScene, linkProvider)` | 5 | [Spawning](../world/spawning.md) |
+| `ClientSpawnManager` | class | `SpawnManager` | 5 | [Spawning](../world/spawning.md) |
 | `ClientSync` | class | `BaseSync`, `ISync` | 8 |  |
 | `ConfirmJoinMessage` | internal struct |  | 8 |  |
 | `Connection` | class | `IConnection` | 30 | [Sockets and connections](../networking/connections.md#connection): One per peer. On a server, a player's is `player.ConnectionToRemotePlayer`. |

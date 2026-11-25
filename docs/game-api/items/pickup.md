@@ -25,7 +25,7 @@ A `Pickup` is anything a hand can hold: tools, logs, ore, food, bags, pouches. I
 | `PickupDock Dock { get; }` | The dock it's in, or null. | |
 | `bool IsDocked { get; }` | `Dock != null`. | |
 | `Rigidbody Rigidbody { get; }` | Its rigidbody. | A pickup with none can't be grabbed. |
-| `NetworkRigidbody NetworkRigidbody { get; }` | Syncs its physics. | Networking area. |
+| `NetworkRigidbody NetworkRigidbody { get; }` | Syncs its physics. | See [Entity sync](../networking/entity-sync.md). |
 | `GrabPoint[] GrabPoints { get; }` | Where hands may hold it. | See [Grab points](grab-points.md). |
 | `GrabPoint BestGrab { get; }` | The grab point the last assessment picked. | |
 | `PickUpJointType JointType { get; }` | How it's joined to the hand: `FixedJoint`, `SpringJoint`, `VelocityJoint` (default), `CustomFixedJoint`, `EmptyJoint`, `RegularUpdateFixedJoint`. | `EmptyJoint` items don't move to the hand. |
@@ -38,7 +38,7 @@ A `Pickup` is anything a hand can hold: tools, logs, ore, food, bags, pouches. I
 | `float TotalWeight { get; }` | Itself, crafted parts, and everything in its sub docks. | Feeds the player's carry weight. |
 | `PhysicalMaterialPart PhysicalMaterial { get; }` | Its material, if it has one. | |
 | `DurabilityModule DurabilityModule { get; }` | Its wear, if it has any. | See [Durability](durability.md). |
-| `CraftingPart CraftingPart { get; }` / `bool IsCrafted { get; set; }` | Crafting data. | Crafting area. |
+| `CraftingPart CraftingPart { get; }` / `bool IsCrafted { get; set; }` | Crafting data. | See [Crafting](../game-systems/crafting.md). |
 | `bool IsSwingable { get; }` / `BlockLevel BlockLevel { get; set; }` | Combat flags. `BlockLevel` decides whether it blocks hits. | |
 | `bool IsDockingBlocked { get; set; }` | Stops it docking when let go. | |
 | `bool IsTransient { get; set; }` | Marks a temporary pickup. Most docks refuse these. | |
@@ -91,6 +91,9 @@ On the server, a grab by a player also broadcasts a `PlayerGrabbedPrefabEvent` (
 Log every grab on the server:
 
 ```csharp
+using HarmonyLib;
+using MelonLoader;
+
 [HarmonyPatch(typeof(Pickup), nameof(Pickup.Interact))]
 static class LogGrabs
 {

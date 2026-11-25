@@ -10,7 +10,7 @@ A stat is a `StatDefinition` asset (`Alta.StatSystem`, a `HashedGeneralValue`) t
 
 ## Stat definitions
 
-- **Stat** is `statName`, the name `StatManager` uses.
+- **Stat** is `statName`, the name `StatManager` uses. In the game's assets two definitions share `damageprotection`. TavernLib renames the cripple one (hash 44538) to `crippledamageprotection` when the first `StatManager` wakes, so on a TavernLib server look it up by that name (see [Stats](../game-systems/stats.md)).
 - **Saved** means `isSaveSerialized`: the value goes into the save.
 - **Sync step** is `changeToSync`, the change needed before a new value is sent to clients.
 - **Command range** is `commandMinimumAndMaximumValues`: when it's turned on, `IsValueValidForCommands` only accepts values in this range. Nothing in the server build calls that method, so the range isn't enforced.

@@ -6,7 +6,7 @@ sidebar_position: 14
 
 # Server settings
 
-The game's own server settings are `Alta.Utilities.ServerSettings`, kept in `Servers\-1\ServerConfiguration.json` (see [Saving](saving.md#where-the-files-are)). They're separate from TavernLib's `server_settings.json` (name, player limit, whitelist), which TavernLib reads itself; see the host [config reference](../../host/config-reference.md).
+The game's own server settings are `Alta.Utilities.ServerSettings`, kept in `Servers\-1\ServerConfiguration.json` (see [Saving](saving.md#where-the-files-are)). They're separate from TavernLib's `server_settings.json` (name, player limit, whitelist), which TavernLib reads itself; see TavernLib's [ServerSettings](../../tavernlib-api/config/server-settings.md) and the host [config reference](../../host/config-reference.md).
 
 ## Reading and watching them
 
@@ -44,7 +44,7 @@ All instance properties with public getters and setters. Default values from the
 | --- | --- |
 | Saving | `IsSaving` (true), `IsAutoSaving` (true), `MinutesBetweenAutoSaving` (5), `WipesWhenEmpty`, `HasRunRepairBoxFix` |
 | Players | `PlayerLimit` (-1, no limit; TavernLib overrides it), `EmptyServerShutdownTimeInSeconds` (300), `HasAFKTimer` (true), `IsCustomizationEnabled` (true), `InitialPlayerInventory` (Default), `PlayerSmoothingLevel`, `PlayerLandmarkMode` |
-| Death | `DropAllOnDeath`, `RespawnTimeSeconds` (4), `DownedStateDuration` (60), `UnspentExperienceLostOnDeath`, `IsResetingHungerOnDeath`, `ImpactInvincibilityTime` (12, after a body is linked) |
+| Death | `DropAllOnDeath`, `RespawnTimeSeconds` (4, nothing reads it), `DownedStateDuration` (60), `UnspentExperienceLostOnDeath`, `IsResetingHungerOnDeath`, `ImpactInvincibilityTime` (12, after a body is linked) |
 | Combat | `IsPVPEnabled`, `PVPMultiplier` (0.1), `PVPCrippleMultiplier` (0.3), `DamageX` (1), `PlayerDamageTakenMultiplier` (1) |
 | Survival | `HungerTick` (0.0005), `HungerDealsDamage` (true), `HealthRegenMultiplier` (1) |
 | Time | `TimeSpeedMultiplier` (1), `IsAdvancingTimeWhenOffline` (true), `FixedDaytime` (-1, off) |

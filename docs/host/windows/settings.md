@@ -35,7 +35,7 @@ Name and password changes work straight away. Listing changes need the server to
 
 | Setting | What it does |
 | --- | --- |
-| **GarbageCollectionTime** | How often the game cleans up leftovers like dropped items. Default 30. |
+| **GarbageCollectionTime** | Seconds between the game's memory clean-ups. It doesn't touch items in the world. Default 30. Needs a restart. |
 | **ServerBackupTime** | Hours between automatic world backups. 0 is off. |
 | **ServerBackupMaxBackups** | How many backups to keep. 0 keeps them all. |
 

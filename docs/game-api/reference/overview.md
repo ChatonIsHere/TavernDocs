@@ -12,10 +12,10 @@ They are generated, so don't edit them by hand. The game's own data stays Alta's
 
 | Page | What's in it |
 | --- | --- |
-| [Spawnable prefabs](spawnable-prefabs.md) | 1313 network prefabs with hash, kind and main scripts |
+| [Spawnable prefabs](spawnable-prefabs.md) | 1346 network prefabs with hash, kind and main scripts |
 | [Items and materials](items-and-materials.md) | 456 items, 29 physical materials, durability settings, fuel and ingots |
 | [Recipes](recipes.md) | 138 smelting, stew, crafting deck, chisel and mould recipes, plus cookables |
-| [Creatures](creatures.md) | 49 prefabs with an AI class, their stats and 61 action sets |
+| [Creatures](creatures.md) | 50 prefabs with an AI class, their stats and 61 action sets |
 | [Stats](stats.md) | 22 stat definitions, player defaults and stat effects |
 
 ## Where the data comes from
@@ -24,7 +24,7 @@ The tables are read from the game's own asset files (build `main-1.7.2.1.42203`)
 
 "Spawnable" means what `PrefabManager.PrepareSpawnSetups` loads: GameObjects under the `Network Prefabs` Resources folder that have a `NetworkPrefab` on the root. The Resources paths come from the `ResourceManager` in `globalgamemanagers`.
 
-Hashes were checked against a runtime dump from a live server: 2 differ (shown as "live" in the table) and 0 prefabs weren't in it.
+Hashes were checked against a runtime dump from a live server: 0 differ (shown as "live" in the table) and 0 prefabs weren't in it.
 
 ## How to regenerate
 
@@ -39,7 +39,7 @@ After a game update, run all three steps again and diff the pages.
 The **kind** column on [Spawnable prefabs](spawnable-prefabs.md) is a guess made from the scripts on the prefab's root object, tested in this order:
 
 1. **creature**: an `Agent<T>` AI class anywhere in the prefab, and a `HealthObject` on the root. Without the `HealthObject` it's an **AI-driven object**.
-2. **item**: some `Item` asset's `prefabHash` names this prefab. A `Pickup`, `MultiHandPickup` or `KeyItem` with no item asset is a **pickup without an Item asset**.
+2. **item**: the root `Pickup` names an `Item` asset, or some `Item` asset's `prefabHash` names this prefab. A `Pickup`, `MultiHandPickup` or `KeyItem` with neither is a **pickup without an Item asset**.
 3. **stew** (`StewComponent`), **projectile** (`Projectile`, `Arrow`, `SeedSpray`), **plant or tree** (`GrowerComponent`, `WoodcutTreeModel`, `BasicDigable`, or Tree, Flower, Sapling or Bush in the name).
 4. **spawner or population** (`PopulationSpawnArea`, `SpawnArea`, cluster generators), **breakable or resource node** (a `HealthObject`), **world and cave pieces** (cave chunks, generation cores).
 5. **debris or timed effect** (`NetworkDestroyTimed`), **logic and puzzle** (`Logic*` senders and receivers, levers, doors), **effect**.

@@ -30,11 +30,11 @@ public static void MoveObject(NetworkEntity entity, Vector3 position)
 - An object with a chunking parent (docked, or part of a structure) moves with its parent. Undock it first.
 - Moving into a chunk that isn't loaded hands the object to that chunk's save, or destroys it. See [Spawning](spawning.md#into-an-unloaded-chunk).
 - Moving outside every chunk destroys it (or posts it to the player who last held it). See [Destroying](destroying.md#falling-out-of-the-world).
-- Physics objects keep syncing through their own `NetworkRigidbody` afterwards. That's in the Networking area.
+- Physics objects keep syncing through their own `NetworkRigidbody` afterwards. See [Entity sync](../networking/entity-sync.md#serialized-state).
 
 ## Teleporting a player
 
-The calls, from shortest to longest trip. All are called on the server.
+The calls, from shortest to longest trip. All are called on the server. [Locomotion](../networking/locomotion.md#moving-a-player-from-the-server) covers the body side in more depth.
 
 | Call | What it does | Use it for |
 | --- | --- | --- |
@@ -113,4 +113,5 @@ Portal Gun is a good worked example: it moves objects on the server (position, v
 ## See also
 
 - [Chunks](chunks.md)
-- The Creatures area, for moving creatures (`Director.TeleportTo`)
+- [Locomotion](../networking/locomotion.md), for how a player's body moves and `MoveTo` on each side
+- [Movement and pathfinding](../creatures/movement-and-pathfinding.md), for moving creatures (`Director.TeleportTo`)

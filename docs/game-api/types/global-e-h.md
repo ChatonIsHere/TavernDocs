@@ -188,7 +188,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | `GameTimeManager.TimeName` | class |  | 2 |  |
 | `GameTimeManagerSaveData` | internal class | `NewSaveData<GameTimeManager, GameTimeManagerSaveData>` | 1 |  |
 | `GameTimeManagerSaveDataOld` | internal class | `OldSaveData` | 2 |  |
-| `GarbageCollectTimer` | class | `MonoBehaviour` | 0 | [Server lifecycle](../networking/server-lifecycle.md): On the scene. Enabled on servers; runs a full GC every interval (30 s shipped). TavernLib makes the interval configurable. |
+| `GarbageCollectTimer` | class | `MonoBehaviour` | 0 | [Server lifecycle](../networking/server-lifecycle.md): On the scene. Only runs when the process is headless: every interval it asks for a non-blocking, optimized `GC.Collect` of every generation. |
 | `Garnisher` | class | `ProfessionSkill<Garnisher>` | 0 |  |
 | `Garnisher.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<Garnisher>` | 0 |  |
 | `Gatherer` | class | `PickupBasedSkill` | 3 |  |

@@ -61,7 +61,7 @@ Compiler-made names (`<ScanAsync>d__42`, `<>c__DisplayClass12_0`, `<Wander>b__3`
 - `LocationChunk.Initialize` doesn't hook up chunk effects, including the one that turns the master terrain off in the mine, so a headless client walks into terrain no player touches.
 - `GarbageCollectTimer` only starts its forced collection when headless.
 
-A headless client (a bot, a test client) gets all of that, and every mod that takes "headless" to mean "server" runs its server half there. ATT-Optimizations' mods check `Application.isBatchMode`, which is true for any `-batchmode` game. To mean "server", check for `/start_server`.
+A headless client (a bot, a test client) gets all of that, and every mod that takes "headless" to mean "server" runs its server half there. ATT-Optimizations' mods check `Application.isBatchMode`, which is true for any `-batchmode` game. To mean "server", check for `/start_server`. Every side check, and when each is true, is in [Startup and app state](../console-and-utilities/startup-and-app-state.md#server-or-client).
 
 Without a GPU or audio, more breaks. Rover found:
 
@@ -93,7 +93,7 @@ TavernEssentials and Steady answer most of them at once (see [Known patch points
 
 ### The server pauses every 30 seconds
 
-`GarbageCollectTimer` calls `GC.Collect` on a fixed beat on servers. Unity's Mono uses the Boehm collector, which stops the world for the whole collection whatever the "not blocking" flag says, and the pause grows with the heap: about 280 to 460 ms on a fresh server, 650 to 700 ms after the caves have loaded. TavernLib makes the interval configurable and Steady can turn it off.
+`GarbageCollectTimer` calls `GC.Collect` on a fixed beat on servers. Unity's Mono uses the Boehm collector, which stops the world for the whole collection whatever the "not blocking" flag says, and the pause grows with the heap: about 280 to 460 ms on a fresh server, 650 to 700 ms after the caves have loaded. TavernLib makes the interval configurable and Steady can turn it off. See `GarbageCollectTimer` in [Server lifecycle](../networking/server-lifecycle.md#other-types).
 
 ### Patch timing
 

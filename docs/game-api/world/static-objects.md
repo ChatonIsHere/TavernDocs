@@ -71,7 +71,7 @@ public static void WatchStatics()
 
 ### DestroyableStaticObject
 
-`Alta.Networking.DestroyableStaticObject` derives from `ModifiableStaticObject` and adds health. On the server it listens to its `ImpactDetector`s. While modified it has `modifiedHealth`; hits take health off (with per-impact-type multipliers and armour), and at zero it calls `ChangeModifications(Hash, false)`, putting it back to its original look for everyone. So "modified" is the built or blocking state, and breaking it returns it to normal. See the Items area for impacts.
+`Alta.Networking.DestroyableStaticObject` derives from `ModifiableStaticObject` and adds health. On the server it listens to its `ImpactDetector`s. While modified it has `modifiedHealth`; hits take health off (with per-impact-type multipliers and armour), and at zero it calls `ChangeModifications(Hash, false)`, putting it back to its original look for everyone. So "modified" is the built or blocking state, and breaking it returns it to normal. See [Impacts](../items/impacts.md) and [Health and damage](../items/health-and-damage.md).
 
 ## Static instructions
 

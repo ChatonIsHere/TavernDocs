@@ -47,4 +47,4 @@ The server holds the list of hashes but never shows anything, so visual changes 
 
 ## See also
 
-- The items area, for armour as an item
+- [Health and damage](../items/health-and-damage.md), for what armour does to damage

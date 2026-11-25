@@ -38,26 +38,13 @@ Because the remaining durability goes down by the same amount each time, an item
 
 ## Asset values
 
-Asset values (build main-1.7.2.1.42203). Every `DurabilitySettings` asset:
-
-| Asset | `isChanceBasedDurability` | `durability` | `damageConversion` |
-| --- | --- | --- | --- |
-| `1 - Very Weak Durability` | no | 10 | 0.3 |
-| `2 - Weak Durability` | no | 30 | 0.3 |
-| `3 - Standard Durability` | no | 60 | 0.3 |
-| `4 - Strong Durability` | no | 130 | 0.3 |
-| `5 - Very Strong Durability` | no | 170 | 0.3 |
-| `Break next hit` | yes | 1 | 1 |
-| `High Chance` | yes | 0.3 | 1 |
-| `Standard Chance` | yes | 0.1 | 1 |
-| `Low Chance` | yes | 0.005 | 1 |
-| `unbreakable` | yes | 0 | 1 |
+Asset values (build main-1.7.2.1.42203). There are 10 `DurabilitySettings` assets, all in [Durability settings](../reference/items-and-materials.md#durability-settings). The five that wear down (`1 - Very Weak Durability` to `5 - Very Strong Durability`) have `durability` 10, 30, 60, 130 and 170, all with `damageConversion` 0.3. The other five are chance-based with `damageConversion` 1: `Break next hit` (1), `High Chance` (0.3), `Standard Chance` (0.1), `Low Chance` (0.005) and `unbreakable` (0).
 
 For chance-based items, `durability` is the chance threshold: a hit breaks the item when a random roll (raised to `1 / damage`) falls below it, so 0 never breaks and 1 almost always does.
 
 `DurabilityGlobalSettings.effectivenessToDurabilityDamage` turns a hit's effectiveness into wear. Its keys are (0, 0), (0.2, 0.75), (0.4, 1) and (1, 0.35): a middling hit wears a tool more than a perfect one.
 
-Some items: Short Sword uses `2 - Weak Durability`; Katana and Rusty Greataxe use `3 - Standard Durability`; Arrow uses `1 - Very Weak Durability`. The ready-made `Pick Axe` prefab (item `Pick`) has no `DurabilityModule` and never wears; crafted tools get their durability from their parts (see `AttachedTo`). Worked out from those numbers, a Short Sword lasts about 286 perfect hits (30 / (0.35 × 0.3)) or 100 hits at effectiveness 0.4. The reference tables list the settings of every item.
+Some items: Short Sword uses `2 - Weak Durability`; Katana and Rusty Greataxe use `3 - Standard Durability`; Arrow uses `1 - Very Weak Durability`. The ready-made `Pick Axe` prefab (item `Pick`) has no `DurabilityModule` and never wears; crafted tools get their durability from their parts (see `AttachedTo`). Worked out from those numbers, a Short Sword lasts about 286 perfect hits (30 / (0.35 × 0.3)) or 100 hits at effectiveness 0.4. [Items and materials](../reference/items-and-materials.md) lists the durability settings of every item.
 
 Integrity is saved with the item.
 
@@ -77,6 +64,8 @@ Stacking: an item with damage stages that's been worn can't stack onto a fresh o
 Make tools last forever, on the server:
 
 ```csharp
+using HarmonyLib;
+
 [HarmonyPatch(typeof(DurabilityModule), nameof(DurabilityModule.AffectDurability))]
 static class Unbreakable
 {

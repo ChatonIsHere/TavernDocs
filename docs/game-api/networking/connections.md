@@ -34,7 +34,7 @@ Everything here runs on Unity's main thread. `NetworkManager` registers its `Rec
 
 ## Socket
 
-`Alta.Networking.Socket`, which implements `ISocket`. Get the current one from `Socket.Current` (a static `ISocket`, the last socket made). TavernLib raises `TavernEvents.SocketCreated` with it each time one is made; see [Events and services](../../mod/tavernlib/events-and-services.md).
+`Alta.Networking.Socket`, which implements `ISocket`. Get the current one from `Socket.Current` (a static `ISocket`, the last socket made). TavernLib raises `TavernEvents.SocketCreated` with it each time one is made; see [TavernEvents](../../tavernlib-api/events.md#socketcreated) and the guide [Events and services](../../mod/tavernlib/events-and-services.md).
 
 | Member | What it does | Notes |
 | --- | --- | --- |
@@ -68,7 +68,7 @@ Everything here runs on Unity's main thread. `NetworkManager` registers its `Rec
 | `ISocket Socket { get; }` | The socket it belongs to. | |
 | `ConnectionChannel DefaultChannel { get; set; }` | Channel used for `null`. | |
 | `event ConnectionEventHandler Approved` | The transport connected. | |
-| `event ConnectionEventHandler Disconnected` | The connection is being disposed. Exceptions in handlers are logged and swallowed. | Not raised if the transport has already stopped. |
+| `event ConnectionEventHandler Disconnected` | The connection is being disposed. An exception in a handler is logged and swallowed, but the handlers after it don't run. | Not raised if the transport has already stopped. |
 | `event Action<IPlayer> PlayerSet` | `Player` was set. Raised just before the new value is stored. | |
 | `event PacketSentHandler PacketSent` | | |
 | `void SetHandler(MessageType message, SerializeConnectionMethod handler)` | Handle a message type on this connection. Replacing one logs a warning. | See [Connection messages](messages.md). |

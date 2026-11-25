@@ -23,6 +23,8 @@ void OnSocket(Alta.Networking.ISocket socket) { /* ... */ }
 | `TavernEvents.SocketCreated` | The game makes its network socket. You get the `ISocket`. |
 | `Roles.RolesChanged` | A player's roles change on the server. See [Roles](roles.md#when-roles-change). |
 
+Subscribe in `OnInitializeMelon`. Don't let an exception escape a `SocketCreated` handler: nothing catches it, and the game fails to make its socket. Details are in [Events](../../tavernlib-api/events.md).
+
 ## Services
 
 TavernLib keeps its main parts as services you can look up by type:
@@ -46,7 +48,7 @@ public class MyService : IService { /* ... */ }
 TavernServices.AddService(new MyService());
 ```
 
-There's one of each type. Adding a second one of the same type is ignored, with a warning in the log.
+There's one of each type. Adding a second one of the same type is ignored, with a warning in the log. A service is found by the exact type it was added as, not by a base class or interface. See [Services](../../tavernlib-api/services.md).
 
 :::note
 

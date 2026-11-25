@@ -52,7 +52,7 @@ From the prefabs, build `main-1.7.2.1.42203`:
 
 - The `Trade Deck` prefab's `TaxManager` takes `taxedAmount` 1 coin every `taxingTime` 7200 seconds of the game's `Timeline`: two hours at the host's default `TimeSpeedMultiplier` of 1, shorter when time runs faster. The tax dock's coins decide how long a stall stays open.
 - The `Mail Deposit Box` (`PostboxSender`) has 3 sending docks and costs `sendingCostPerDock` 5 coins per filled dock.
-- The `Coin Press` turns 1 input (`requiredInput`) into 5 of its output item (`output`). The output item points into another asset file the dump can't name; it's presumably a coin.
+- The `Coin Press` turns 1 input (`requiredInput`) into 5 `Coin` items (`output`, `outputItem`).
 
 ## ATMMachine
 
@@ -102,5 +102,5 @@ The friend picker uses Alta's friends service, which is gone. TavernEssentials p
 
 ## See also
 
-- The items area, for docks and pouches
+- [Docks](../items/docks.md), for the docks coins sit in
 - [Other systems](other-systems.md), for `GameTaskManager`
