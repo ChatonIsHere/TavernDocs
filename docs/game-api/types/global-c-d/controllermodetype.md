@@ -1,6 +1,6 @@
 ---
 title: "ControllerModeType"
-description: "enum ControllerModeType in Root.Township."
+description: "The kinds of controller mode the player's hands can be in, such as play, combat, teleport, interact, customization and debug."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ControllerModeType
 
 An **enum** in `Root.Township`, no namespace.
+
+The kinds of controller mode the player's hands can be in, such as play, combat, teleport, interact, customization and debug.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 

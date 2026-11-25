@@ -1,6 +1,6 @@
 ---
 title: "MapGeneratorPartInstance<T>"
-description: "abstract class MapGeneratorPartInstance<T> in Root.Township."
+description: "Runtime instance of a MapGeneratorPart for one cave generator plugin run. It works out the target plugin layer and a seeded identifier, and subclasses"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MapGeneratorPartInstance&lt;T&gt;
 
 An **abstract class** in `Root.Township`, `Alta.Caves.PluginParts`.
+
+Runtime instance of a `MapGeneratorPart` for one cave generator plugin run. It works out the target plugin layer and a seeded identifier, and subclasses change map chunk layers.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`IPartInstance`](/game-api/types/alta-world-generation/ipartinstance)
@@ -26,15 +28,15 @@ An **abstract class** in `Root.Township`, `Alta.Caves.PluginParts`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-part" /><code>{"T Part { get; private set; }"}</code> |  |
-| <Link id="m-partidentifier" /><code>{"int PartIdentifier { get; private set; }"}</code> |  |
-| <Link id="m-plugin" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-plugininstance" /><code><Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-target" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" Target { get; private set; }"}</code> |  |
+| <Link id="m-part" /><code>{"T Part { get; private set; }"}</code> | The part asset this instance was made from. |
+| <Link id="m-partidentifier" /><code>{"int PartIdentifier { get; private set; }"}</code> | Random identifier from the generator's hash function, seeded by the plugin's random identifier and the part's identifier. |
+| <Link id="m-plugin" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" { get; private set; }"}</code> | The plugin asset of the owning plugin instance. |
+| <Link id="m-plugininstance" /><code><Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" { get; private set; }"}</code> | The plugin instance that created this part instance. |
+| <Link id="m-target" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" Target { get; private set; }"}</code> | Plugin whose layer this part changes: the part's `OverrideTarget`, or the owning plugin if none. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modify" /><code>{"void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-modify-2" /><code>{"abstract void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" target, int offX, int offY)"}</code> |  |
+| <Link id="m-modify" /><code>{"void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> | Changes the target layer of a map chunk. The chunk overload finds the layer and passes on the chunk offsets. |
+| <Link id="m-modify-2" /><code>{"abstract void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" target, int offX, int offY)"}</code> | Changes the target layer of a map chunk. The chunk overload finds the layer and passes on the chunk offsets. |

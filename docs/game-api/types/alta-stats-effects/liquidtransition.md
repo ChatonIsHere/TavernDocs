@@ -1,6 +1,6 @@
 ---
 title: "LiquidTransition"
-description: "class LiquidTransition in Root.Township."
+description: "One pour in progress from a source liquid container into a receiving one. Progress builds up and each time it reaches 1, one unit of liquid moves over"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LiquidTransition
 
 A **class** in `Root.Township`, `Alta.Liquid`.
+
+One pour in progress from a source liquid container into a receiving one. Progress builds up and each time it reaches 1, one unit of liquid moves over.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 
@@ -34,26 +36,26 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isfinished" /><code>{"bool IsFinished { get; internal set; }"}</code> |  |
-| <Link id="m-progress" /><code>{"float Progress { get; private set; }"}</code> |  |
-| <Link id="m-receivingcontainer-2" /><code><Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" ReceivingContainer { get; }"}</code> |  |
-| <Link id="m-sourcecontainer-2" /><code><Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" SourceContainer { get; }"}</code> |  |
+| <Link id="m-isfinished" /><code>{"bool IsFinished { get; internal set; }"}</code> | True once the transfer ended, was cancelled or the target was removed. |
+| <Link id="m-progress" /><code>{"float Progress { get; private set; }"}</code> | How far the current unit has got, from 0 to 1. |
+| <Link id="m-receivingcontainer-2" /><code><Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" ReceivingContainer { get; }"}</code> | The container being poured into, or null when there's no target. |
+| <Link id="m-sourcecontainer-2" /><code><Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" SourceContainer { get; }"}</code> | The container pouring. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-transitioncancelled" /><code>{"event Action<"}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{"> TransitionCancelled"}</code> |  |
-| <Link id="m-transitionfinished" /><code>{"event Action TransitionFinished"}</code> |  |
-| <Link id="m-transitionstarted" /><code>{"event Action TransitionStarted"}</code> |  |
+| <Link id="m-transitioncancelled" /><code>{"event Action<"}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{"> TransitionCancelled"}</code> | Raised when the target changes before finishing, or the target's liquid stops being compatible. |
+| <Link id="m-transitionfinished" /><code>{"event Action TransitionFinished"}</code> | Raised after a unit of liquid was moved. |
+| <Link id="m-transitionstarted" /><code>{"event Action TransitionStarted"}</code> | Raised when a new target is set. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-progresstransition" /><code>{"void ProgressTransition(float transitionProgress, "}<Link to="/game-api/types/alta-stats-effects/iliquidtransitioncontroller">{"ILiquidTransitionController"}</Link>{" controller)"}</code> |  |
-| <Link id="m-resetandremovereceivingcontainer" /><code>{"void ResetAndRemoveReceivingContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidtransitioncontroller">{"ILiquidTransitionController"}</Link>{" controller)"}</code> |  |
-| <Link id="m-settarget" /><code>{"void SetTarget("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" newReceivingContainer, "}<Link to="/game-api/types/alta-stats-effects/iliquidtransitioncontroller">{"ILiquidTransitionController"}</Link>{" controller)"}</code> |  |
+| <Link id="m-progresstransition" /><code>{"void ProgressTransition(float transitionProgress, "}<Link to="/game-api/types/alta-stats-effects/iliquidtransitioncontroller">{"ILiquidTransitionController"}</Link>{" controller)"}</code> | Adds progress, scaled by the target's receive multiplier and the global liquid speed. Ignored unless called by the current controller. |
+| <Link id="m-resetandremovereceivingcontainer" /><code>{"void ResetAndRemoveReceivingContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidtransitioncontroller">{"ILiquidTransitionController"}</Link>{" controller)"}</code> | Clears the target and progress and marks the pour finished, if called by the current controller. |
+| <Link id="m-settarget" /><code>{"void SetTarget("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" newReceivingContainer, "}<Link to="/game-api/types/alta-stats-effects/iliquidtransitioncontroller">{"ILiquidTransitionController"}</Link>{" controller)"}</code> | Starts pouring into a new compatible container, cancelling any pour to a previous one. |
 | <Link id="m-checkiftransitionisstillvalid" /><code>{"private void CheckIfTransitionIsStillValid("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" oldType, "}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" newType)"}</code> |  |
 | <Link id="m-ontransitionfinished" /><code>{"private void OnTransitionFinished()"}</code> |  |
 

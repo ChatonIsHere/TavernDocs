@@ -1,6 +1,6 @@
 ---
 title: "KnowledgeHolder"
-description: "class KnowledgeHolder in Root.Township."
+description: "A store of known events and rule definitions for the creature knowledge system. It can have a parent, whose knowledge also counts."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # KnowledgeHolder
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+A store of known events and rule definitions for the creature knowledge system. It can have a parent, whose knowledge also counts.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 
@@ -31,17 +33,17 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-parent" /><code><Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{" Parent { get; private set; }"}</code> |  |
+| <Link id="m-parent" /><code><Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{" Parent { get; private set; }"}</code> | The holder whose knowledge this one also uses, or null. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definitions-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{"> Definitions("}<Link to="/game-api/types/alta-intelligence/baseatom">{"BaseAtom"}</Link>{" atom) (iterator)"}</code> |  |
-| <Link id="m-inform" /><code>{"void Inform("}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" definition)"}</code> |  |
-| <Link id="m-inform-2" /><code>{"void Inform("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" newEvent)"}</code> |  |
-| <Link id="m-knowsabout" /><code>{"bool KnowsAbout("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" event)"}</code> |  |
-| <Link id="m-query" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-intelligence/result">{"Result"}</Link>{"> Query("}<Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" query)"}</code> |  |
+| <Link id="m-definitions-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{"> Definitions("}<Link to="/game-api/types/alta-intelligence/baseatom">{"BaseAtom"}</Link>{" atom) (iterator)"}</code> | Every definition for an atom, from this holder and then its parents. |
+| <Link id="m-inform" /><code>{"void Inform("}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" definition)"}</code> | Adds a definition, or adds an event and all the knowledge it carries. Already known items are skipped. |
+| <Link id="m-inform-2" /><code>{"void Inform("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" newEvent)"}</code> | Adds a definition, or adds an event and all the knowledge it carries. Already known items are skipped. |
+| <Link id="m-knowsabout" /><code>{"bool KnowsAbout("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" event)"}</code> | True if this holder or a parent already knows the event. |
+| <Link id="m-query" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-intelligence/result">{"Result"}</Link>{"> Query("}<Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" query)"}</code> | Evaluates a compound query against this holder's knowledge. |
 
 ## Used in
 

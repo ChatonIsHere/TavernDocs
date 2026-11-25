@@ -1,6 +1,6 @@
 ---
 title: "WoodcutConnection"
-description: "class WoodcutConnection in Root.Township."
+description: "Marks a joint between two pieces of a choppable tree model: which connection type it is and which woodcut points break it. Sits on a networked tree pi"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WoodcutConnection
 
 A **class** in `Root.Township`, `Alta.Woodcutting`.
+
+Marks a joint between two pieces of a choppable tree model: which connection type it is and which woodcut points break it. Sits on a networked tree piece.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,7 +28,7 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-model" /><code><Link to="/game-api/types/alta-crafting/woodcuttreemodel">{"WoodcutTreeModel"}</Link>{" model"}</code> |  |
+| <Link id="m-model" /><code><Link to="/game-api/types/alta-crafting/woodcuttreemodel">{"WoodcutTreeModel"}</Link>{" model"}</code> | Serialized backing field for `Model`. Public, but use `Model`. |
 | <Link id="m-breakthresholdmultiplier" /><code>{"private float breakThresholdMultiplier"}</code> |  |
 | <Link id="m-connectiontype" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnectiontype">{"WoodcutConnectionType"}</Link>{" connectionType"}</code> |  |
 | <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
@@ -37,12 +39,12 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-breakpoints" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{"> BreakPoints { get; }"}</code> |  |
-| <Link id="m-breakthresholdmultiplier-2" /><code>{"float BreakThresholdMultiplier { get; }"}</code> |  |
-| <Link id="m-connectiontype-2" /><code><Link to="/game-api/types/alta-crafting/woodcutconnectiontype">{"WoodcutConnectionType"}</Link>{" ConnectionType { get; }"}</code> |  |
-| <Link id="m-entity-2" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> |  |
-| <Link id="m-model-2" /><code><Link to="/game-api/types/alta-crafting/woodcuttreemodel">{"WoodcutTreeModel"}</Link>{" Model { get; }"}</code> |  |
-| <Link id="m-rotations-2" /><code>{"int Rotations { get; }"}</code> |  |
+| <Link id="m-breakpoints" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{"> BreakPoints { get; }"}</code> | The woodcut points of the model that belong to this connection, as many as the connection type has bones. |
+| <Link id="m-breakthresholdmultiplier-2" /><code>{"float BreakThresholdMultiplier { get; }"}</code> | Scales how much cutting it takes to break this connection. |
+| <Link id="m-connectiontype-2" /><code><Link to="/game-api/types/alta-crafting/woodcutconnectiontype">{"WoodcutConnectionType"}</Link>{" ConnectionType { get; }"}</code> | The connection type, which sets how many bones (break points) it has. |
+| <Link id="m-entity-2" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | The network entity on the same object. |
+| <Link id="m-model-2" /><code><Link to="/game-api/types/alta-crafting/woodcuttreemodel">{"WoodcutTreeModel"}</Link>{" Model { get; }"}</code> | The tree model this connection belongs to. |
+| <Link id="m-rotations-2" /><code>{"int Rotations { get; }"}</code> | Rotation count for the connection, set in the prefab. |
 
 ## Used in
 

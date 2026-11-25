@@ -1,6 +1,6 @@
 ---
 title: "Instruction"
-description: "Subclasses include SpawnInstruction (place a StaticEnvironmentPiece at a position, rotation and scale) and the forest's own instructions."
+description: "One cached world-generation step (spawn, spline, forest core or river core) that can be saved to a stream and replayed later. Subclasses are SpawnInst"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **abstract class** in `Root.Township`, `Alta.Static`.
 
-Subclasses include `SpawnInstruction` (place a `StaticEnvironmentPiece` at a position, rotation and scale) and the forest's own instructions.
+One cached world-generation step (spawn, spline, forest core or river core) that can be saved to a stream and replayed later. Subclasses are `SpawnInstruction`, `SplineInstruction`, `ForestGCoreInstruction` and `RiverGCoreInstruction`.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Derived types** [`ForestGCoreInstruction`](/game-api/types/alta-world-generation/forestgcoreinstruction), [`RiverGCoreInstruction`](/game-api/types/alta-world-generation/rivergcoreinstruction), [`SplineInstruction`](/game-api/types/alta-world-generation/splineinstruction), [`SpawnInstruction`](/game-api/types/alta-world/spawninstruction)
@@ -38,12 +38,12 @@ Subclasses include `SpawnInstruction` (place a `StaticEnvironmentPiece` at a pos
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-execute-2" /><code>{"static "}<Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{" Execute("}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" stream, object context)"}</code> |  |
-| <Link id="m-execute-3" /><code>{"abstract "}<Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{" Execute(object context)"}</code> |  |
-| <Link id="m-reconstruct" /><code>{"static "}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{" Reconstruct("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-save" /><code>{"void Save("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-serializeandexecute" /><code><Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{" SerializeAndExecute("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, object context)"}</code> |  |
-| <Link id="m-serializeinternal" /><code>{"protected abstract void SerializeInternal("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-execute-2" /><code>{"static "}<Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{" Execute("}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" stream, object context)"}</code> | Runs the instruction. The static overload reads type and data from a stream and runs it without keeping the object. |
+| <Link id="m-execute-3" /><code>{"abstract "}<Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{" Execute(object context)"}</code> | Runs the instruction. The static overload reads type and data from a stream and runs it without keeping the object. |
+| <Link id="m-reconstruct" /><code>{"static "}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{" Reconstruct("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads a type id from a stream and builds that instruction from the data that follows. |
+| <Link id="m-save" /><code>{"void Save("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes the instruction's type id, then its own data. |
+| <Link id="m-serializeandexecute" /><code><Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{" SerializeAndExecute("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, object context)"}</code> | Reads the instruction's fields from a stream and runs it straight away. |
+| <Link id="m-serializeinternal" /><code>{"protected abstract void SerializeInternal("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the instruction's own fields. |
 
 ## Used in
 

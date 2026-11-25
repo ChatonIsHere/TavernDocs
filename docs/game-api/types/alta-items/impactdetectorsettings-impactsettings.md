@@ -1,6 +1,6 @@
 ---
 title: "ImpactDetectorSettings.ImpactSettings"
-description: "class ImpactDetectorSettings.ImpactSettings in Root.Township."
+description: "The effect and sound for one impact outcome (critical, good or bad) in ImpactDetectorSettings."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactDetectorSettings.ImpactSettings
 
 A **class** in `Root.Township`, `Alta.Impact`.
+
+The effect and sound for one impact outcome (critical, good or bad) in `ImpactDetectorSettings`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`ImpactDetectorSettings`](/game-api/types/alta-items/impactdetectorsettings)
@@ -34,16 +36,16 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-objectdefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" ObjectDefinition { get; }"}</code> |  |
-| <Link id="m-sound-2" /><code><Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" Sound { get; }"}</code> |  |
-| <Link id="m-soundeffectset-2" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-objectdefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" ObjectDefinition { get; }"}</code> | Pooled effect spawned at the hit point. Its scale follows hit effectiveness. |
+| <Link id="m-sound-2" /><code><Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" Sound { get; }"}</code> | Sound played at the hit point, or `None`. |
+| <Link id="m-soundeffectset-2" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" { get; }"}</code> | A sound effect set for this outcome. Not used by `PlayEffects`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |  |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |  |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | True if the sound and pooled effect match. Ignores `SoundEffectSet`. |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Hash of the sound and pooled effect. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "InstructionSet"
-description: "A list of Instructions and the results of running them. Cached on disk."
+description: "A cacheable list of world-generation instructions for one chunk. Forest generation fills it, it saves to the cache, and later replays the instructions"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Static`.
 
-A list of `Instruction`s and the results of running them. Cached on disk.
+A cacheable list of world-generation instructions for one chunk. Forest generation fills it, it saves to the cache, and later replays the instructions a few per frame.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** [`ICacheable`](/game-api/types/alta-world/icacheable)
@@ -39,19 +39,19 @@ A list of `Instruction`s and the results of running them. Cached on disk.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-results-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{"> Results { get; }"}</code> |  |
-| <Link id="m-version" /><code>{"uint Version { get; }"}</code> |  |
+| <Link id="m-results-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{"> Results { get; }"}</code> | Results of the instructions run so far, kept so they can be undone. |
+| <Link id="m-version" /><code>{"uint Version { get; }"}</code> | Cache format version, always 1. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-add" /><code>{"void Add("}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{" instruction)"}</code> |  |
-| <Link id="m-execute" /><code>{"Task Execute(object context, int instructionsPerFrame = 10)"}</code> |  |
-| <Link id="m-execute-2" /><code>{"Task Execute(object context, Task addingFinished, int instructionsPerFrame = 10)"}</code> |  |
-| <Link id="m-getinstructions" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{"> GetInstructions()"}</code> |  |
-| <Link id="m-serializeasync" /><code>{"Task SerializeAsync(uint version, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-undo" /><code>{"void Undo()"}</code> |  |
+| <Link id="m-add" /><code>{"void Add("}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{" instruction)"}</code> | Queues an instruction. Safe to call from other threads. |
+| <Link id="m-execute" /><code>{"Task Execute(object context, int instructionsPerFrame = 10)"}</code> | Runs all instructions over several frames (10 per frame by default), also running ones still being added until the given task finishes. |
+| <Link id="m-execute-2" /><code>{"Task Execute(object context, Task addingFinished, int instructionsPerFrame = 10)"}</code> | Runs all instructions over several frames (10 per frame by default), also running ones still being added until the given task finishes. |
+| <Link id="m-getinstructions" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{"> GetInstructions()"}</code> | Returns all instructions, decoding any still only in the loaded cache stream. |
+| <Link id="m-serializeasync" /><code>{"Task SerializeAsync(uint version, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes the instructions, or on read just remembers the stream so they're decoded when needed. |
+| <Link id="m-undo" /><code>{"void Undo()"}</code> | Undoes every result and clears the list. |
 | <Link id="m-executeinternal" /><code>{"private IEnumerator ExecuteInternal(object context, Task addingFinished, int instructionsPerFrame) (iterator)"}</code> |  |
 
 ## Used in

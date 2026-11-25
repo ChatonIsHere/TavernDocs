@@ -1,6 +1,6 @@
 ---
 title: "OperationType"
-description: "enum OperationType in Root.Township."
+description: "How to combine two floats, turned into a function by MathfOperation.GetOperation: Set (take the new value), Max, Min, Add, Subtract, Multiply, or Mult"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OperationType
 
 An **enum** in `Root.Township`, `Alta`.
+
+How to combine two floats, turned into a function by `MathfOperation.GetOperation`: Set (take the new value), Max, Min, Add, Subtract, Multiply, or Multiply1Minus (`a * (1 - b)`).
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 

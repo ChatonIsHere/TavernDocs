@@ -1,6 +1,6 @@
 ---
 title: "StaticCaveChunk"
-description: "class StaticCaveChunk in Root.Township."
+description: "A hand-built cave layer placed under a cave entrance by the CaveLayerManager. Positions itself under the entrance, links its culling portal, and on th"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StaticCaveChunk
 
 A **class** in `Root.Township`, `Alta.Chunks`.
+
+A hand-built cave layer placed under a cave entrance by the `CaveLayerManager`. Positions itself under the entrance, links its culling portal, and on the server builds its pathfinding graph before the chunk finishes loading. Both sides.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ICaveLayer`](/game-api/types/alta-world/icavelayer), [`IPortalApplier`](/game-api/types/alta-world/iportalapplier), [`IProceduralGenerationStreamer`](/game-api/types/alta-world/iproceduralgenerationstreamer)
@@ -41,33 +43,33 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allstaticrenderers" /><code>{"Dictionary<Renderer, Vector3> AllStaticRenderers { get; set; }"}</code> |  |
-| <Link id="m-chunk-2" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; }"}</code> |  |
-| <Link id="m-depth" /><code>{"float Depth { get; private set; }"}</code> |  |
-| <Link id="m-entrance-2" /><code>{"Vector2 Entrance { get; private set; }"}</code> |  |
-| <Link id="m-entrancedirection" /><code>{"Vector2 EntranceDirection { get; private set; }"}</code> |  |
-| <Link id="m-layeridentifier" /><code>{"int LayerIdentifier { get; private set; }"}</code> |  |
-| <Link id="m-manager" /><code><Link to="/game-api/types/alta-world-generation/cavelayermanager">{"CaveLayerManager"}</Link>{" Manager { get; private set; }"}</code> |  |
-| <Link id="m-portaltransform" /><code>{"Transform PortalTransform { get; }"}</code> |  |
+| <Link id="m-allstaticrenderers" /><code>{"Dictionary<Renderer, Vector3> AllStaticRenderers { get; set; }"}</code> | Static renderers of the cave, with their positions. Client only; they are hidden while the local player is not in the chunk. |
+| <Link id="m-chunk-2" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; }"}</code> | The location chunk for this cave layer. |
+| <Link id="m-depth" /><code>{"float Depth { get; private set; }"}</code> | How deep below the surface this layer sits, set by `SetEntrance`. |
+| <Link id="m-entrance-2" /><code>{"Vector2 Entrance { get; private set; }"}</code> | The 2D (XZ) entrance point set by `SetEntrance`. |
+| <Link id="m-entrancedirection" /><code>{"Vector2 EntranceDirection { get; private set; }"}</code> | The 2D (XZ) direction of the entrance. |
+| <Link id="m-layeridentifier" /><code>{"int LayerIdentifier { get; private set; }"}</code> | This layer's number in the cave layer manager. |
+| <Link id="m-manager" /><code><Link to="/game-api/types/alta-world-generation/cavelayermanager">{"CaveLayerManager"}</Link>{" Manager { get; private set; }"}</code> | The cave layer manager that placed this layer. |
+| <Link id="m-portaltransform" /><code>{"Transform PortalTransform { get; }"}</code> | Transform of the cave's culling portal. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clientloadingfinished" /><code>{"event Action ClientLoadingFinished"}</code> |  |
-| <Link id="m-exitready" /><code>{"event Action<int, float, Vector2, Vector2> ExitReady"}</code> |  |
+| <Link id="m-clientloadingfinished" /><code>{"event Action ClientLoadingFinished"}</code> | Client: raised when the chunk's static content load step runs. |
+| <Link id="m-exitready" /><code>{"event Action<int, float, Vector2, Vector2> ExitReady"}</code> | Raised after `SetEntrance` with the layer ID, the next layer's depth, and the exit position and direction. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getidentifier" /><code>{"string GetIdentifier(int layer)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializecavelayer" /><code>{"void InitializeCaveLayer("}<Link to="/game-api/types/alta-world-generation/cavelayermanager">{"CaveLayerManager"}</Link>{" manager, int layer)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-registerportal" /><code>{"void RegisterPortal("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world/icavelayer">{"ICaveLayer"}</Link>{" other)"}</code> |  |
-| <Link id="m-setentrance" /><code>{"void SetEntrance(float depth, Vector2 entrance, Vector2 direction)"}</code> |  |
-| <Link id="m-toggleterrain" /><code>{"void ToggleTerrain(bool isEnabled)"}</code> |  |
+| <Link id="m-getidentifier" /><code>{"string GetIdentifier(int layer)"}</code> | Returns the chunk's identifier, whatever layer is asked for. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the setup sync and, on clients, hides the cave's renderers until the local player is in the chunk. |
+| <Link id="m-initializecavelayer" /><code>{"void InitializeCaveLayer("}<Link to="/game-api/types/alta-world-generation/cavelayermanager">{"CaveLayerManager"}</Link>{" manager, int layer)"}</code> | Stores the manager and layer number. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends this layer's position, rotation and layer number to the joining player. |
+| <Link id="m-registerportal" /><code>{"void RegisterPortal("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world/icavelayer">{"ICaveLayer"}</Link>{" other)"}</code> | Points the culling portal's front at the given chunk. |
+| <Link id="m-setentrance" /><code>{"void SetEntrance(float depth, Vector2 entrance, Vector2 direction)"}</code> | Server: moves and rotates the layer so its entrance lines up, syncs it to clients, raises `ExitReady` and starts building pathfinding. |
+| <Link id="m-toggleterrain" /><code>{"void ToggleTerrain(bool isEnabled)"}</code> | Shows or hides the cave terrain renderers. Always shown while the local player is in the chunk. |
 | <Link id="m-activateportal" /><code>{"private void ActivatePortal()"}</code> |  |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-generatepathfinding" /><code>{"private IEnumerator GeneratePathfinding() (iterator)"}</code> |  |

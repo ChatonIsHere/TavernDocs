@@ -1,6 +1,6 @@
 ---
 title: "IRiverDecorationSegment"
-description: "interface IRiverDecorationSegment in Root.Township."
+description: "One piece of a river's path (a straight line or a bend) that the river generator places bank decorations along."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Forests`.
 
+One piece of a river's path (a straight line or a bend) that the river generator places bank decorations along.
+
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Derived types** [`RiverDecorationArc`](/game-api/types/alta-world-generation/riverdecorationarc), [`RiverDecorationLine`](/game-api/types/alta-world-generation/riverdecorationline)
 
@@ -19,16 +21,16 @@ An **interface** in `Root.Township`, `Alta.Forests`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-iswaterfall" /><code>{"bool IsWaterfall { get; }"}</code> |  |
-| <Link id="m-referencepoint" /><code>{"Vector2 ReferencePoint { get; }"}</code> |  |
+| <Link id="m-iswaterfall" /><code>{"bool IsWaterfall { get; }"}</code> | True if this segment is a waterfall. |
+| <Link id="m-referencepoint" /><code>{"Vector2 ReferencePoint { get; }"}</code> | A 2D point the segment is anchored at (the start, for a straight line). |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-drawgizmos" /><code>{"void DrawGizmos(float radius)"}</code> |  |
-| <Link id="m-getpointcount" /><code>{"int GetPointCount(float radius, float interval)"}</code> |  |
-| <Link id="m-getpoints" /><code>{"IEnumerable<Vector2> GetPoints(float radius, float interval)"}</code> |  |
+| <Link id="m-drawgizmos" /><code>{"void DrawGizmos(float radius)"}</code> | Editor: draws the segment at the given distance from the river centre. |
+| <Link id="m-getpointcount" /><code>{"int GetPointCount(float radius, float interval)"}</code> | How many decoration points `GetPoints` returns for this offset and spacing. |
+| <Link id="m-getpoints" /><code>{"IEnumerable<Vector2> GetPoints(float radius, float interval)"}</code> | Decoration points along the segment, offset sideways by the radius and spaced by the interval. |
 
 ## Used in
 

@@ -13,14 +13,25 @@ const STOP = new Set(['Action', 'Func', 'Path', 'Random', 'Debug', 'Object', 'Ti
     'Directory', 'Color', 'Transform', 'Component', 'Camera', 'Light', 'Animation', 'Collider', 'Rigidbody', 'Event', 'Timer',
     'Type', 'Attribute', 'Exception', 'Thread', 'Stream', 'Task', 'Result', 'Message', 'Version', 'Mode', 'State', 'Data', 'Info']);
 
+// game.json and tavernlib.json share a few simple names (ServerSettings). TavernLib's pages prefer
+// TavernLib's types, every other page the game's.
+const TAVERNLIB_PAGES = /[\\/]docs[\\/](tavernlib-api|mod[\\/]tavernlib)[\\/]/;
+const indexes = {};
 let index;
-function load() {
-    if (index) return index;
-    index = {};
-    const dir = path.join(here, '..', 'api-index');
-    for (const f of fs.existsSync(dir) ? fs.readdirSync(dir) : []) {
-        if (f.endsWith('.json')) Object.assign(index, JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
+function readIndex(name) {
+    const f = path.join(here, '..', 'api-index', name + '.json');
+    return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {};
+}
+function useIndexFor(filePath) {
+    const key = TAVERNLIB_PAGES.test(filePath) ? 'tavernlib' : 'game';
+    if (!indexes[key]) {
+        const game = readIndex('game');
+        const tavernlib = readIndex('tavernlib');
+        indexes[key] = key === 'tavernlib' ? {...game, ...tavernlib} : {...tavernlib, ...game};
     }
+    index = indexes[key];
+}
+function load() {
     return index;
 }
 
@@ -80,6 +91,7 @@ export default function apiLinks() {
     return (tree, file) => {
         const p = file.path || (file.history && file.history[0]) || '';
         if (!SECTIONS.test(p) || TYPE_PAGES.test(p)) return;
+        useIndexFor(p);
         const walk = (node, skip) => {
             if (!node.children) return;
             const inSkip = skip || node.type === 'link' || node.type === 'linkReference' || node.type === 'heading';

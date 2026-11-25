@@ -1,6 +1,6 @@
 ---
 title: "SpawnModifierSpawnParameters"
-description: "abstract class SpawnModifierSpawnParameters in Root.Township."
+description: "Base for spawn modifiers in forest generation that work on spawn parameters."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpawnModifierSpawnParameters
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for spawn modifiers in forest generation that work on spawn parameters.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`SpawnModifier<SpawnParameters>`](/game-api/types/global-s/spawnmodifier-t)

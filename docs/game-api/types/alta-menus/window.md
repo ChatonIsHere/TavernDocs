@@ -1,6 +1,6 @@
 ---
 title: "Window"
-description: "class Window in Root.Township."
+description: "Client: a menu screen made of panels. Shows one panel at a time plus popups (confirm, options, loading)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Window
 
 A **class** in `Root.Township`, `Alta.Meta.UI`.
+
+Client: a menu screen made of panels. Shows one panel at a time plus popups (confirm, options, loading).
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** `MonoBehaviour`
@@ -39,29 +41,29 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentpanel" /><code><Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" CurrentPanel { get; private set; }"}</code> |  |
-| <Link id="m-currentpopup" /><code><Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" CurrentPopup { get; private set; }"}</code> |  |
+| <Link id="m-currentpanel" /><code><Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" CurrentPanel { get; private set; }"}</code> | The panel being shown. |
+| <Link id="m-currentpopup" /><code><Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" CurrentPopup { get; private set; }"}</code> | The popup being shown, such as the confirm popup. Null when none is open. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-started" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{"> Started"}</code> |  |
+| <Link id="m-started" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{"> Started"}</code> | Raised when `StartWindow` runs. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-closeallpopups" /><code>{"void CloseAllPopups()"}</code> |  |
-| <Link id="m-setloadingactive" /><code>{"void SetLoadingActive(bool loadingState)"}</code> |  |
-| <Link id="m-showconfirmpopup" /><code>{"Task<bool> ShowConfirmPopup(string message, string confirm = \"Confirm\", string cancel = \"Cancel\", Action confirmAction = null, Action cancelAction = null)"}</code> |  |
-| <Link id="m-showloadingfortask" /><code>{"async Task<T> ShowLoadingForTask<T>(Task<T> task)"}</code> |  |
-| <Link id="m-showloadingfortask-2" /><code>{"async Task ShowLoadingForTask(Task task, bool propogateErrors = false)"}</code> |  |
-| <Link id="m-showoptions" /><code>{"void ShowOptions(IEnumerable<"}<Link to="/game-api/types/alta-menus/optionsconfig">{"OptionsConfig"}</Link>{"> optionsConfig, string message = null)"}</code> |  |
-| <Link id="m-showtextpanel" /><code>{"void ShowTextPanel(string text)"}</code> |  |
-| <Link id="m-startwindow" /><code>{"void StartWindow()"}</code> |  |
-| <Link id="m-stopwindow" /><code>{"void StopWindow()"}</code> |  |
-| <Link id="m-switchtopanel" /><code>{"void SwitchToPanel("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |  |
+| <Link id="m-closeallpopups" /><code>{"void CloseAllPopups()"}</code> | Hides the current popup and the options panel. |
+| <Link id="m-setloadingactive" /><code>{"void SetLoadingActive(bool loadingState)"}</code> | Shows or hides the loading UI. |
+| <Link id="m-showconfirmpopup" /><code>{"Task<bool> ShowConfirmPopup(string message, string confirm = \"Confirm\", string cancel = \"Cancel\", Action confirmAction = null, Action cancelAction = null)"}</code> | Shows a confirm popup with the given text and button labels. The task returns true if confirmed, false if cancelled. |
+| <Link id="m-showloadingfortask" /><code>{"async Task<T> ShowLoadingForTask<T>(Task<T> task)"}</code> | Shows the loading UI until the task finishes. Errors are logged, and only rethrown if asked. |
+| <Link id="m-showloadingfortask-2" /><code>{"async Task ShowLoadingForTask(Task task, bool propogateErrors = false)"}</code> | Shows the loading UI until the task finishes. Errors are logged, and only rethrown if asked. |
+| <Link id="m-showoptions" /><code>{"void ShowOptions(IEnumerable<"}<Link to="/game-api/types/alta-menus/optionsconfig">{"OptionsConfig"}</Link>{"> optionsConfig, string message = null)"}</code> | Shows the options panel with the given choices and an optional message. |
+| <Link id="m-showtextpanel" /><code>{"void ShowTextPanel(string text)"}</code> | Sets the text of the simple text panel. |
+| <Link id="m-startwindow" /><code>{"void StartWindow()"}</code> | Switches to the starting panel and raises `Started`. Called on Start unless auto start is off. |
+| <Link id="m-stopwindow" /><code>{"void StopWindow()"}</code> | Hides the current panel. |
+| <Link id="m-switchtopanel" /><code>{"void SwitchToPanel("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> | Closes popups, hides the current panel and shows the new one once the old one has finished hiding. |
 | <Link id="m-closecurrentpopupcancelled" /><code>{"private void CloseCurrentPopupCancelled("}<Link to="/game-api/types/alta-menus/confirmpopuppanel">{"ConfirmPopupPanel"}</Link>{" obj)"}</code> |  |
 | <Link id="m-closecurrentpopupconfirmed" /><code>{"private void CloseCurrentPopupConfirmed("}<Link to="/game-api/types/alta-menus/confirmpopuppanel">{"ConfirmPopupPanel"}</Link>{" obj)"}</code> |  |
 | <Link id="m-finishpopupswitch" /><code>{"private void FinishPopupSwitch("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |  |

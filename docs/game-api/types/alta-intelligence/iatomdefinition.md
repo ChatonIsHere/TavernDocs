@@ -1,6 +1,6 @@
 ---
 title: "IAtomDefinition"
-description: "interface IAtomDefinition in Root.Township."
+description: "A piece of knowledge in the creature knowledge system: a compound and a goal, with a weight that fades as the event it came from ages."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Intelligence`.
 
+A piece of knowledge in the creature knowledge system: a compound and a goal, with a weight that fades as the event it came from ages.
+
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Derived types** [`BaseAtom.Definition`](/game-api/types/alta-intelligence/baseatom-definition)
 
@@ -19,10 +21,10 @@ An **interface** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ageweighting" /><code>{"float AgeWeighting { get; set; }"}</code> |  |
-| <Link id="m-compound" /><code><Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" "}<Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-goal" /><code><Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" Goal { get; }"}</code> |  |
-| <Link id="m-weighting" /><code>{"float Weighting { get; }"}</code> |  |
+| <Link id="m-ageweighting" /><code>{"float AgeWeighting { get; set; }"}</code> | A 0 to 1 multiplier set by the owning event as it ages. |
+| <Link id="m-compound" /><code><Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" "}<Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" { get; }"}</code> | The compound this definition belongs to. |
+| <Link id="m-goal" /><code><Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" Goal { get; }"}</code> | The predicate that must hold for this definition to apply. |
+| <Link id="m-weighting" /><code>{"float Weighting { get; }"}</code> | How much this definition counts. In the base definition, its weight times `AgeWeighting`. |
 
 ## Used in
 

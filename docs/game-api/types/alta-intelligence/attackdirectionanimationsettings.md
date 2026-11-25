@@ -1,6 +1,6 @@
 ---
 title: "AttackDirectionAnimationSettings"
-description: "abstract class AttackDirectionAnimationSettings in Root.Township."
+description: "Asset that makes an attack direction animation helper for a creature's animator parameter."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AttackDirectionAnimationSettings
 
 An **abstract class** in `Root.Township`, `Alta.Intelligence`.
+
+Asset that makes an attack direction animation helper for a creature's animator parameter.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** `ScriptableObject`
@@ -32,14 +34,14 @@ An **abstract class** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-parametername-2" /><code>{"string ParameterName { get; }"}</code> |  |
-| <Link id="m-getanimation" /><code>{"protected abstract "}<Link to="/game-api/types/alta-intelligence/iattackdirectionanimation">{"IAttackDirectionAnimation"}</Link>{" GetAnimation { get; }"}</code> |  |
+| <Link id="m-parametername-2" /><code>{"string ParameterName { get; }"}</code> | The animator parameter the helper drives. |
+| <Link id="m-getanimation" /><code>{"protected abstract "}<Link to="/game-api/types/alta-intelligence/iattackdirectionanimation">{"IAttackDirectionAnimation"}</Link>{" GetAnimation { get; }"}</code> | Subclasses return a new, not yet set up animation helper. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getnewanimation" /><code><Link to="/game-api/types/alta-intelligence/iattackdirectionanimation">{"IAttackDirectionAnimation"}</Link>{" GetNewAnimation("}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator)"}</code> |  |
+| <Link id="m-getnewanimation" /><code><Link to="/game-api/types/alta-intelligence/iattackdirectionanimation">{"IAttackDirectionAnimation"}</Link>{" GetNewAnimation("}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator)"}</code> | Makes a helper and sets it up on the given network animator and `ParameterName`. |
 
 ## Used in
 

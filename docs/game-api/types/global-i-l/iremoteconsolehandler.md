@@ -1,6 +1,6 @@
 ---
 title: "IRemoteConsoleHandler"
-description: "interface IRemoteConsoleHandler in Root.Township."
+description: "One connected remote console session (WebSocket console or client handler). Passed with the ConsoleConnected and ConsoleDisconnected events of ServerR"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+One connected remote console session (WebSocket console or client handler). Passed with the `ConsoleConnected` and `ConsoleDisconnected` events of `ServerRemoteConsole`.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`WebSocketCommandHandler`](/game-api/types/alta-console/websocketcommandhandler), [`ClientHandler`](/game-api/types/global-c-d/clienthandler)
 
@@ -19,7 +21,7 @@ An **interface** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-userinfo" /><code><Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" UserInfo { get; }"}</code> |  |
+| <Link id="m-userinfo" /><code><Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" UserInfo { get; }"}</code> | The user behind this console session, with their permissions. |
 
 ## Used in
 

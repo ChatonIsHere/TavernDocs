@@ -1,6 +1,6 @@
 ---
 title: "MethodSyncClass<T>"
-description: "class MethodSyncClass<T> in Root.Township."
+description: "An entity network method whose handler gets a class instance to read into or write from, as well as the stream. It can make a fresh instance when read"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MethodSyncClass&lt;T&gt;
 
 A **class** in `Root.Township`, `Alta.Networking`.
+
+An entity network method whose handler gets a class instance to read into or write from, as well as the stream. It can make a fresh instance when reading.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`Sync<T>`](/game-api/types/alta-networking/sync-t)
@@ -32,7 +34,7 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handler" /><code>{"override "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" Handler { get; }"}</code> |  |
+| <Link id="m-handler" /><code>{"override "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" Handler { get; }"}</code> | The method run when the message is sent or received. It creates `Value` when reading if the mode says to, then calls your method. |
 
 ## Methods
 

@@ -1,6 +1,6 @@
 ---
 title: "SkillShrineTestingArea"
-description: "class SkillShrineTestingArea in Root.Township."
+description: "The practice area of a skill shrine. When a skill orb is opened it spawns that skill's practice objects, shows the border and moves a copy of the orb "
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SkillShrineTestingArea
 
 A **class** in `Root.Township`, no namespace.
+
+The practice area of a skill shrine. When a skill orb is opened it spawns that skill's practice objects, shows the border and moves a copy of the orb into place. Get it from `SkillShrine.TestingArea`.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour)
@@ -67,23 +69,23 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-istestingorbinplace" /><code>{"bool IsTestingOrbInPlace { get; private set; }"}</code> |  |
-| <Link id="m-maxdistanceforitemssquared-2" /><code>{"float MaxDistanceForItemsSquared { get; }"}</code> |  |
-| <Link id="m-objectfadeouteffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" ObjectFadeOutEffect { get; }"}</code> |  |
-| <Link id="m-objectfadeoutmaterial-2" /><code>{"Material ObjectFadeOutMaterial { get; }"}</code> |  |
-| <Link id="m-spawnfolder-2" /><code>{"Transform SpawnFolder { get; }"}</code> |  |
-| <Link id="m-testingorbtarget" /><code>{"Vector3 TestingOrbTarget { get; }"}</code> |  |
-| <Link id="m-trainingorbreachedposition-2" /><code><Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" TrainingOrbReachedPosition { get; }"}</code> |  |
+| <Link id="m-istestingorbinplace" /><code>{"bool IsTestingOrbInPlace { get; private set; }"}</code> | Client: true once the orb copy has reached `TestingOrbTarget`. |
+| <Link id="m-maxdistanceforitemssquared-2" /><code>{"float MaxDistanceForItemsSquared { get; }"}</code> | Squared horizontal distance a movable practice object may wander before it's respawned. |
+| <Link id="m-objectfadeouteffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" ObjectFadeOutEffect { get; }"}</code> | Pooled effect played when practice content fades out. |
+| <Link id="m-objectfadeoutmaterial-2" /><code>{"Material ObjectFadeOutMaterial { get; }"}</code> | Material used to fade practice content out. |
+| <Link id="m-spawnfolder-2" /><code>{"Transform SpawnFolder { get; }"}</code> | Parent transform for spawned practice content. Its position is the centre for the distance check. |
+| <Link id="m-testingorbtarget" /><code>{"Vector3 TestingOrbTarget { get; }"}</code> | World position the orb copy flies to. |
+| <Link id="m-trainingorbreachedposition-2" /><code><Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" TrainingOrbReachedPosition { get; }"}</code> | Event raised when the orb copy reaches its target. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disable" /><code>{"void Disable()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initialsync" /><code>{"void InitialSync("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-open" /><code>{"void Open("}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" orb)"}</code> |  |
-| <Link id="m-practiced" /><code>{"void Practiced(bool isFirstTime)"}</code> |  |
+| <Link id="m-disable" /><code>{"void Disable()"}</code> | Closes the area: clears spawned content, fades the border out and, on the server, syncs the closed state. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the network method that syncs which skill is open. |
+| <Link id="m-initialsync" /><code>{"void InitialSync("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the open or closed state (and the open orb) to one player. |
+| <Link id="m-open" /><code>{"void Open("}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" orb)"}</code> | Opens the area for a skill orb. The server spawns the skill's practice entities; reopening the same skill just respawns the movable ones. |
+| <Link id="m-practiced" /><code>{"void Practiced(bool isFirstTime)"}</code> | Client: plays the practiced animation, with the border scale effect on the first time only. |
 | <Link id="m-animatearea" /><code>{"private IEnumerator AnimateArea(bool isFadingIn) (iterator)"}</code> |  |
 | <Link id="m-animateorb" /><code>{"private IEnumerator AnimateOrb() (iterator)"}</code> |  |
 | <Link id="m-borderscaleanimation" /><code>{"private IEnumerator BorderScaleAnimation(bool needToReadjust) (iterator)"}</code> |  |
@@ -93,7 +95,7 @@ A **class** in `Root.Township`, no namespace.
 | <Link id="m-drawcapsulegizmos" /><code>{"private void DrawCapsuleGizmos(float radius, Color color)"}</code> |  |
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
 | <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-open-2" /><code>{"private void Open()"}</code> |  |
+| <Link id="m-open-2" /><code>{"private void Open()"}</code> | Opens the area for a skill orb. The server spawns the skill's practice entities; reopening the same skill just respawns the movable ones. |
 | <Link id="m-spawnentities" /><code>{"private void SpawnEntities()"}</code> |  |
 | <Link id="m-spawnstaticcontent" /><code>{"private void SpawnStaticContent()"}</code> |  |
 | <Link id="m-syncskill-2" /><code>{"private void SyncSkill("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |

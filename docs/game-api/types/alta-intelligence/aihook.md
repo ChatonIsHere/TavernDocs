@@ -1,6 +1,6 @@
 ---
 title: "AiHook"
-description: "Base: runs code when the action starts, finishes or is cancelled."
+description: "Non-generic version of AiHook<T> bound to ActionComponent. An AI hook listens for its action being used and gets a callback when that use finishes or "
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
 
-Base: runs code when the action starts, finishes or is cancelled.
+Non-generic version of `AiHook<T>` bound to `ActionComponent`. An AI hook listens for its action being used and gets a callback when that use finishes or is cancelled.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`AiHook<ActionComponent>`](/game-api/types/alta-intelligence/aihook-t)

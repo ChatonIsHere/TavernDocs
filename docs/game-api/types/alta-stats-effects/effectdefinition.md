@@ -1,6 +1,6 @@
 ---
 title: "EffectDefinition"
-description: "Alta.Alchemy.EffectDefinition : HashedGeneralValue<EffectDefinition>, abstract. Assets live under Cooking/Effects."
+description: "Base asset for an alchemy or food effect applied to an EffectHandler. Stored under the hashed path Cooking/Effects."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **abstract class** in `Root.Township`, `Alta.Alchemy`.
 
-`Alta.Alchemy.EffectDefinition : HashedGeneralValue<EffectDefinition>`, abstract. Assets live under `Cooking/Effects`.
+Base asset for an alchemy or food effect applied to an `EffectHandler`. Stored under the hashed path `Cooking/Effects`.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`HashedGeneralValue<EffectDefinition>`](/game-api/types/assembly-other/hashedgeneralvalue-t), [`IEffectDefinition`](/game-api/types/alta-stats-effects/ieffectdefinition)
@@ -30,14 +30,14 @@ An **abstract class** in `Root.Township`, `Alta.Alchemy`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-effectglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" effectGlyph"}</code> |  |
+| <Link id="m-effectglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" effectGlyph"}</code> | Glyph shown for this effect. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkapply" /><code>{"virtual void CheckApply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |  |
-| <Link id="m-apply" /><code>{"protected abstract void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |  |
+| <Link id="m-checkapply" /><code>{"virtual void CheckApply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | Entry point for applying the effect. The base version just calls `Apply`; subclasses can add checks. |
+| <Link id="m-apply" /><code>{"protected abstract void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | Applies the effect at the given strength. Subclasses implement it. |
 
 ## Used in
 

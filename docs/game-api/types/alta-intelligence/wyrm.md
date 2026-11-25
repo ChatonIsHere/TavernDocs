@@ -1,6 +1,6 @@
 ---
 title: "Wyrm"
-description: "A wyrm lives underground. Its body and colliders are hidden until it emerges. It has no walker: it turns its body in place toward its target."
+description: "The wyrm creature's AI agent. It switches between a burrowed and an emerged action set, and syncs whether its body and collision are visible. The AI r"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
 
-A wyrm lives underground. Its body and colliders are hidden until it emerges. It has no walker: it turns its body in place toward its target.
+The wyrm creature's AI agent. It switches between a burrowed and an emerged action set, and syncs whether its body and collision are visible. The AI runs on the server.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`Agent<Wyrm>`](/game-api/types/alta-intelligence/agent-tthis)
@@ -45,32 +45,32 @@ A wyrm lives underground. Its body and colliders are hidden until it emerges. It
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-body-2" /><code>{"Transform Body { get; }"}</code> |  |
-| <Link id="m-burrowedpossibilityset" /><code><Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{"> BurrowedPossibilitySet { get; set; }"}</code> |  |
-| <Link id="m-emergedpossibilityset" /><code><Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{"> EmergedPossibilitySet { get; set; }"}</code> |  |
-| <Link id="m-flurrychance" /><code>{"float FlurryChance { get; set; }"}</code> |  |
-| <Link id="m-idlestart" /><code>{"float IdleStart { get; private set; }"}</code> |  |
-| <Link id="m-position" /><code>{"override Vector3 Position { get; }"}</code> |  |
-| <Link id="m-sametargetmultiplier-2" /><code>{"float SameTargetMultiplier { get; }"}</code> |  |
-| <Link id="m-burrowedactions-2" /><code>{"protected static Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{">> BurrowedActions { get; private set; }"}</code> |  |
-| <Link id="m-emergedactions-2" /><code>{"protected static Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{">> EmergedActions { get; private set; }"}</code> |  |
+| <Link id="m-body-2" /><code>{"Transform Body { get; }"}</code> | The body transform that `RotateToTarget` turns. |
+| <Link id="m-burrowedpossibilityset" /><code><Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{"> BurrowedPossibilitySet { get; set; }"}</code> | Actions this wyrm can pick while underground. |
+| <Link id="m-emergedpossibilityset" /><code><Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{"> EmergedPossibilitySet { get; set; }"}</code> | Actions this wyrm can pick while above ground. |
+| <Link id="m-flurrychance" /><code>{"float FlurryChance { get; set; }"}</code> | Current chance of a follow-up melee flurry. Melee attacks raise it each hit and reset it to 0 when a flurry fires. |
+| <Link id="m-idlestart" /><code>{"float IdleStart { get; private set; }"}</code> | Time the wyrm went idle. The dig action uses the idle time to decide when to burrow; set far in the future while busy. |
+| <Link id="m-position" /><code>{"override Vector3 Position { get; }"}</code> | The head's position, used as the wyrm's position for targeting. |
+| <Link id="m-sametargetmultiplier-2" /><code>{"float SameTargetMultiplier { get; }"}</code> | Configured weighting for keeping the same target. |
+| <Link id="m-burrowedactions-2" /><code>{"protected static Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{">> BurrowedActions { get; private set; }"}</code> | Shared cache of burrowed action sets, one per `ActionComponentSet` asset, across all wyrms. |
+| <Link id="m-emergedactions-2" /><code>{"protected static Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{">> EmergedActions { get; private set; }"}</code> | Shared cache of emerged action sets, one per `ActionComponentSet` asset, across all wyrms. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attacks" /><code>{"override IEnumerable<"}<Link to="/game-api/types/alta-intelligence/attackparameters">{"AttackParameters"}</Link>{"> Attacks() (iterator)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-rotatetotarget" /><code>{"void RotateToTarget(float speedMultiplier = 1)"}</code> |  |
-| <Link id="m-setgameobjectsactive" /><code>{"void SetGameObjectsActive(bool isActive)"}</code> |  |
-| <Link id="m-useburrowedactions" /><code>{"void UseBurrowedActions()"}</code> |  |
-| <Link id="m-useemergedactions" /><code>{"void UseEmergedActions()"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
-| <Link id="m-changeaction" /><code>{"protected override bool ChangeAction()"}</code> |  |
-| <Link id="m-initializeai" /><code>{"protected override void InitializeAi()"}</code> |  |
-| <Link id="m-initializestatic" /><code>{"protected override void InitializeStatic()"}</code> |  |
-| <Link id="m-killed" /><code>{"protected override void Killed("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthobject)"}</code> |  |
+| <Link id="m-attacks" /><code>{"override IEnumerable<"}<Link to="/game-api/types/alta-intelligence/attackparameters">{"AttackParameters"}</Link>{"> Attacks() (iterator)"}</code> | Yields the current attack of each of the wyrm's impactors. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the network message that syncs body visibility. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends a joining player whether the body is currently shown. |
+| <Link id="m-rotatetotarget" /><code>{"void RotateToTarget(float speedMultiplier = 1)"}</code> | Turns the body on the horizontal plane towards the current target at the configured speed. |
+| <Link id="m-setgameobjectsactive" /><code>{"void SetGameObjectsActive(bool isActive)"}</code> | Shows or hides the body and collision objects. On the server it also syncs the change to the chunk. |
+| <Link id="m-useburrowedactions" /><code>{"void UseBurrowedActions()"}</code> | Switches the action decider to the burrowed set. Called when the wyrm digs. |
+| <Link id="m-useemergedactions" /><code>{"void UseEmergedActions()"}</code> | Switches the action decider to the emerged set. Called when the wyrm emerges. |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Turns collision off, makes its colliders ignore each other and hides the body. |
+| <Link id="m-changeaction" /><code>{"protected override bool ChangeAction()"}</code> | Picks a new action and tracks `IdleStart`, so idle time counts from when it went idle. |
+| <Link id="m-initializeai" /><code>{"protected override void InitializeAi()"}</code> | Builds or reuses the burrowed and emerged action sets and starts in burrowed mode. |
+| <Link id="m-initializestatic" /><code>{"protected override void InitializeStatic()"}</code> | Creates the shared action set caches. |
+| <Link id="m-killed" /><code>{"protected override void Killed("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthobject)"}</code> | Turns off collision and sets the death animator parameters. |
 | <Link id="m-syncgameobjects-2" /><code>{"private void SyncGameObjects("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool value)"}</code> |  |
 
 ## Used in

@@ -1,6 +1,6 @@
 ---
 title: "TriggerShape"
-description: "class TriggerShape in Root.Township."
+description: "Turns a trigger collider's enter and exit messages into C# events, so other scripts can listen without their own collider."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TriggerShape
 
 A **class** in `Root.Township`, no namespace.
+
+Turns a trigger collider's enter and exit messages into C# events, so other scripts can listen without their own collider.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `MonoBehaviour`
@@ -32,20 +34,20 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-thiscollider-2" /><code>{"Collider ThisCollider { get; }"}</code> |  |
+| <Link id="m-thiscollider-2" /><code>{"Collider ThisCollider { get; }"}</code> | The collider on this GameObject, looked up once and cached. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entered" /><code>{"event "}<Link to="/game-api/types/global-t-x/triggerhandler">{"TriggerHandler"}</Link>{" Entered"}</code> |  |
-| <Link id="m-exited" /><code>{"event "}<Link to="/game-api/types/global-t-x/triggerhandler">{"TriggerHandler"}</Link>{" Exited"}</code> |  |
+| <Link id="m-entered" /><code>{"event "}<Link to="/game-api/types/global-t-x/triggerhandler">{"TriggerHandler"}</Link>{" Entered"}</code> | Raised with the other collider when something enters the trigger. |
+| <Link id="m-exited" /><code>{"event "}<Link to="/game-api/types/global-t-x/triggerhandler">{"TriggerHandler"}</Link>{" Exited"}</code> | Raised with the other collider when something leaves the trigger. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | Removes every listener from both events. |
 | <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider collider)"}</code> |  |
 | <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider collider)"}</code> |  |
 

@@ -1,6 +1,6 @@
 ---
 title: "BaseAtom.Definition"
-description: "class BaseAtom.Definition in Root.Township."
+description: "A rule in the creature knowledge system: when the compound holds, the goal predicate follows, with a weight that fades as the event it came from ages."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BaseAtom.Definition
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+A rule in the creature knowledge system: when the compound holds, the goal predicate follows, with a weight that fades as the event it came from ages.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Nested in** [`BaseAtom`](/game-api/types/alta-intelligence/baseatom)
@@ -33,16 +35,16 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ageweighting" /><code>{"float AgeWeighting { get; set; }"}</code> |  |
-| <Link id="m-compound" /><code><Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" "}<Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-goal" /><code><Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" Goal { get; private set; }"}</code> |  |
-| <Link id="m-weighting-2" /><code>{"float Weighting { get; }"}</code> |  |
+| <Link id="m-ageweighting" /><code>{"float AgeWeighting { get; set; }"}</code> | Age factor, from 1 down to 0, set by the owning `Event` as it gets older. |
+| <Link id="m-compound" /><code><Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" "}<Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" { get; private set; }"}</code> | The condition side of the rule. |
+| <Link id="m-goal" /><code><Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" Goal { get; private set; }"}</code> | The predicate the rule leads to. |
+| <Link id="m-weighting-2" /><code>{"float Weighting { get; }"}</code> | The base weight times `AgeWeighting`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | The rule as `compound => goal`. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "FastChunkLookup"
-description: "class FastChunkLookup in Root.Township."
+description: "Fast lookup from positions or bounds to location chunks. Overworld chunks sit in a grid indexed by position; other chunks (caves and so on) are checke"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FastChunkLookup
 
 A **class** in `Root.Township`, `Alta.Chunks`.
+
+Fast lookup from positions or bounds to location chunks. Overworld chunks sit in a grid indexed by position; other chunks (caves and so on) are checked one by one. `LocationChunkHelper` holds the one the game uses.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 
@@ -37,25 +39,25 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-emptylookup" /><code>{"static "}<Link to="/game-api/types/alta-world/fastchunklookup">{"FastChunkLookup"}</Link>{" EmptyLookup { get; }"}</code> |  |
+| <Link id="m-emptylookup" /><code>{"static "}<Link to="/game-api/types/alta-world/fastchunklookup">{"FastChunkLookup"}</Link>{" EmptyLookup { get; }"}</code> | A shared lookup with no chunks. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deregisterotherchunk" /><code>{"void DeregisterOtherChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-getallchunksbyindex" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GetAllChunksByIndex(int xIndex, int zIndex, int xMaxIndex, int zMaxIndex) (iterator)"}</code> |  |
-| <Link id="m-getallchunkscontainingposition" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GetAllChunksContainingPosition(Vector3 position, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk = null) (iterator)"}</code> |  |
-| <Link id="m-getallchunksintersectingbounds" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GetAllChunksIntersectingBounds(Bounds bounds) (iterator)"}</code> |  |
-| <Link id="m-getbestchunkcontainingposition" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" GetBestChunkContainingPosition(Vector3 position, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk = null)"}</code> |  |
-| <Link id="m-getbestchunkintersectingbounds" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" GetBestChunkIntersectingBounds(Bounds bounds)"}</code> |  |
-| <Link id="m-getchunkstoloadwithinradius" /><code>{"void GetChunksToLoadWithinRadius("}<Link to="/game-api/types/alta-world/overworldchunk">{"OverworldChunk"}</Link>{" center, float radius, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> result)"}</code> |  |
-| <Link id="m-getoverworldchunkatposition" /><code><Link to="/game-api/types/alta-world/overworldchunk">{"OverworldChunk"}</Link>{" GetOverworldChunkAtPosition(Vector3 position)"}</code> |  |
-| <Link id="m-isinoverworldchunk" /><code>{"bool IsInOverworldChunk(Vector3 position)"}</code> |  |
-| <Link id="m-isoutdated" /><code>{"bool IsOutdated()"}</code> |  |
-| <Link id="m-registerotherchunk" /><code>{"void RegisterOtherChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-removeotherchunk" /><code>{"void RemoveOtherChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" otherChunk)"}</code> |  |
-| <Link id="m-resetotherchunksbounds" /><code>{"void ResetOtherChunksBounds()"}</code> |  |
+| <Link id="m-deregisterotherchunk" /><code>{"void DeregisterOtherChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Removes a non-overworld chunk from the lookup. |
+| <Link id="m-getallchunksbyindex" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GetAllChunksByIndex(int xIndex, int zIndex, int xMaxIndex, int zMaxIndex) (iterator)"}</code> | Overworld chunks in a range of grid indexes, clamped to the grid. |
+| <Link id="m-getallchunkscontainingposition" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GetAllChunksContainingPosition(Vector3 position, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk = null) (iterator)"}</code> | Chunks whose bounds contain the position. Checks the current chunk and its neighbours first and stops there if any match. |
+| <Link id="m-getallchunksintersectingbounds" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GetAllChunksIntersectingBounds(Bounds bounds) (iterator)"}</code> | Overworld grid chunks overlapping the bounds, plus other chunks that intersect them. |
+| <Link id="m-getbestchunkcontainingposition" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" GetBestChunkContainingPosition(Vector3 position, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk = null)"}</code> | The highest priority chunk containing the position, or null. |
+| <Link id="m-getbestchunkintersectingbounds" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" GetBestChunkIntersectingBounds(Bounds bounds)"}</code> | The highest priority chunk intersecting the bounds, or null. |
+| <Link id="m-getchunkstoloadwithinradius" /><code>{"void GetChunksToLoadWithinRadius("}<Link to="/game-api/types/alta-world/overworldchunk">{"OverworldChunk"}</Link>{" center, float radius, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> result)"}</code> | Adds overworld chunks within a radius (in chunks) of a centre chunk to the set, plus chunks reached through forced adjacent connections. |
+| <Link id="m-getoverworldchunkatposition" /><code><Link to="/game-api/types/alta-world/overworldchunk">{"OverworldChunk"}</Link>{" GetOverworldChunkAtPosition(Vector3 position)"}</code> | The overworld grid chunk at the position, or null if it is outside the grid or its height range. |
+| <Link id="m-isinoverworldchunk" /><code>{"bool IsInOverworldChunk(Vector3 position)"}</code> | True unless the position is inside a non-overworld chunk. |
+| <Link id="m-isoutdated" /><code>{"bool IsOutdated()"}</code> | True if the grid is empty or its first chunk has been destroyed. |
+| <Link id="m-registerotherchunk" /><code>{"void RegisterOtherChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Adds a non-overworld chunk to the lookup. |
+| <Link id="m-removeotherchunk" /><code>{"void RemoveOtherChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" otherChunk)"}</code> | Same as `DeregisterOtherChunk`. |
+| <Link id="m-resetotherchunksbounds" /><code>{"void ResetOtherChunksBounds()"}</code> | Recomputes the combined bounds of all non-overworld chunks. |
 | <Link id="m-addchunksingrid" /><code>{"private void AddChunksInGrid(HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> chunks, int xMin, int xMax, int z, int xCenter, int zCenter, float totalRadius)"}</code> |  |
 | <Link id="m-getbestchunk" /><code>{"private static "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" GetBestChunk(IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> chunks)"}</code> |  |
 | <Link id="m-getxindex" /><code>{"private int GetXIndex(float x)"}</code> |  |

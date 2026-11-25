@@ -1,6 +1,6 @@
 ---
 title: "HandPositionStructure"
-description: "abstract class HandPositionStructure in Root.Township."
+description: "Base asset for skill inputs triggered by holding a hand in a set position (such as hand to heart) for a time. Subclasses decide what counts as in posi"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandPositionStructure
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base asset for skill inputs triggered by holding a hand in a set position (such as hand to heart) for a time. Subclasses decide what counts as in position.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`SkillInputStructure`](/game-api/types/global-s/skillinputstructure)
@@ -34,16 +36,16 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activetime-2" /><code>{"float ActiveTime { get; }"}</code> |  |
-| <Link id="m-timeinpositiontoactivate-2" /><code>{"float TimeInPositionToActivate { get; }"}</code> |  |
+| <Link id="m-activetime-2" /><code>{"float ActiveTime { get; }"}</code> | Seconds the input stays active once triggered. 0 means it doesn't time out. |
+| <Link id="m-timeinpositiontoactivate-2" /><code>{"float TimeInPositionToActivate { get; }"}</code> | Seconds the hand must stay in position before the input activates. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getnewinput" /><code>{"override "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> |  |
-| <Link id="m-isinposition" /><code>{"bool IsInPosition("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> |  |
-| <Link id="m-isinpositioninternal" /><code>{"protected abstract bool IsInPositionInternal("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> |  |
+| <Link id="m-getnewinput" /><code>{"override "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> | Creates a new `HandPositionInput` that tracks this structure. |
+| <Link id="m-isinposition" /><code>{"bool IsInPosition("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> | Whether the hand is in position, after the configured modifiers have had their say. |
+| <Link id="m-isinpositioninternal" /><code>{"protected abstract bool IsInPositionInternal("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> | Subclass check for the raw hand position, before modifiers. |
 
 ## Used in
 

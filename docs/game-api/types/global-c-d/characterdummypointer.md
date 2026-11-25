@@ -1,6 +1,6 @@
 ---
 title: "CharacterDummyPointer"
-description: "class CharacterDummyPointer in Root.Township."
+description: "Component that points at a CharacterDummy, so other code can find the dummy from this object."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CharacterDummyPointer
 
 A **class** in `Root.Township`, no namespace.
+
+Component that points at a `CharacterDummy`, so other code can find the dummy from this object.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MonoBehaviour`
@@ -32,7 +34,7 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-characterdummy-2" /><code>{"virtual "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" { get; set; }"}</code> |  |
+| <Link id="m-characterdummy-2" /><code>{"virtual "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" { get; set; }"}</code> | The dummy this points to. Subclasses can override it. |
 
 ## Used in
 

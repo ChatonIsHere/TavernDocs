@@ -1,6 +1,6 @@
 ---
 title: "PageProvider"
-description: "abstract class PageProvider in Root.Township."
+description: "Base for a kind of page content (for books and notes). Each provider registers itself by Identifier on Awake and makes, saves and syncs its own page d"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PageProvider
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for a kind of page content (for books and notes). Each provider registers itself by `Identifier` on Awake and makes, saves and syncs its own page data.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MonoBehaviour`
@@ -30,29 +32,29 @@ An **abstract class** in `Root.Township`, no namespace.
 | <Link id="m-btntest" /><code>{"private bool btnTest"}</code> |  |
 | <Link id="m-providers" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/global-p/pageprovider">{"PageProvider"}</Link>{"> providers"}</code> |  |
 | <Link id="m-spawnweight" /><code>{"private float spawnWeight"}</code> |  |
-| <Link id="m-testrenderer" /><code>{"protected "}<Link to="/game-api/types/alta-items/pagerenderer">{"PageRenderer"}</Link>{" testRenderer"}</code> |  |
+| <Link id="m-testrenderer" /><code>{"protected "}<Link to="/game-api/types/alta-items/pagerenderer">{"PageRenderer"}</Link>{" testRenderer"}</code> | A page renderer used by the editor test buttons. |
 | <Link id="m-totalspawnweight" /><code>{"private static float totalSpawnWeight"}</code> |  |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-identifier" /><code>{"abstract int Identifier { get; }"}</code> |  |
-| <Link id="m-providers-2" /><code>{"static Dictionary<int, "}<Link to="/game-api/types/global-p/pageprovider">{"PageProvider"}</Link>{"> Providers { get; }"}</code> |  |
+| <Link id="m-identifier" /><code>{"abstract int Identifier { get; }"}</code> | The provider's ID, stored with page data to find the provider again. |
+| <Link id="m-providers-2" /><code>{"static Dictionary<int, "}<Link to="/game-api/types/global-p/pageprovider">{"PageProvider"}</Link>{"> Providers { get; }"}</code> | All registered providers, keyed by `Identifier`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-findproviders" /><code>{"static void FindProviders()"}</code> |  |
-| <Link id="m-getrandom" /><code>{"abstract "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" GetRandom()"}</code> |  |
-| <Link id="m-getrandomspawn" /><code>{"static "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" GetRandomSpawn()"}</code> |  |
-| <Link id="m-load" /><code>{"abstract "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" Load("}<Link to="/game-api/types/alta-items/pageinstancesavedata">{"PageInstanceSaveData"}</Link>{" saveData)"}</code> |  |
-| <Link id="m-save" /><code>{"abstract void Save("}<Link to="/game-api/types/alta-items/pageinstancesavedata">{"PageInstanceSaveData"}</Link>{" saveData, "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" page)"}</code> |  |
-| <Link id="m-serialize" /><code>{"abstract void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" page)"}</code> |  |
+| <Link id="m-findproviders" /><code>{"static void FindProviders()"}</code> | Editor only: finds every provider in the scene and registers it. Does nothing in play mode. |
+| <Link id="m-getrandom" /><code>{"abstract "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" GetRandom()"}</code> | Makes a random page of this provider's kind. May return null. |
+| <Link id="m-getrandomspawn" /><code>{"static "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" GetRandomSpawn()"}</code> | Picks a provider by spawn weight and returns a random page from it, retrying a few times. Used when a page spawns with no content. |
+| <Link id="m-load" /><code>{"abstract "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" Load("}<Link to="/game-api/types/alta-items/pageinstancesavedata">{"PageInstanceSaveData"}</Link>{" saveData)"}</code> | Rebuilds page data from saved page data. |
+| <Link id="m-save" /><code>{"abstract void Save("}<Link to="/game-api/types/alta-items/pageinstancesavedata">{"PageInstanceSaveData"}</Link>{" saveData, "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" page)"}</code> | Writes page data into saved page data. |
+| <Link id="m-serialize" /><code>{"abstract void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" page)"}</code> | Reads or writes page data on a stream, for network sync. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-test" /><code>{"protected abstract void Test()"}</code> |  |
-| <Link id="m-testrandom" /><code>{"protected void TestRandom()"}</code> |  |
+| <Link id="m-test" /><code>{"protected abstract void Test()"}</code> | Editor test button: shows sample content on `testRenderer`. |
+| <Link id="m-testrandom" /><code>{"protected void TestRandom()"}</code> | Editor test button: loads a random page onto `testRenderer`. |
 
 ## Used in
 

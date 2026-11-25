@@ -1,6 +1,6 @@
 ---
 title: "DistanceLODGroup"
-description: "class DistanceLODGroup in Root.Township."
+description: "Client: a simple LOD group that switches renderer sets on and off by the local player's distance, driven by a shared DistanceLODGroupManager. Removes "
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DistanceLODGroup
 
 A **class** in `Root.Township`, no namespace.
+
+Client: a simple LOD group that switches renderer sets on and off by the local player's distance, driven by a shared `DistanceLODGroupManager`. Removes itself on a headless server.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MonoBehaviour`
@@ -35,21 +37,21 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lodcount" /><code>{"int LODCount { get; }"}</code> |  |
-| <Link id="m-lods-2" /><code><Link to="/game-api/types/global-c-d/distancelod">{"DistanceLOD"}</Link>{"[] LODs { get; }"}</code> |  |
-| <Link id="m-maxdistancesquared" /><code>{"float MaxDistanceSquared { get; }"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> |  |
+| <Link id="m-lodcount" /><code>{"int LODCount { get; }"}</code> | Number of LOD levels. |
+| <Link id="m-lods-2" /><code><Link to="/game-api/types/global-c-d/distancelod">{"DistanceLOD"}</Link>{"[] LODs { get; }"}</code> | The LOD levels, each with a squared distance and renderers. |
+| <Link id="m-maxdistancesquared" /><code>{"float MaxDistanceSquared { get; }"}</code> | Squared distance of the last level. Beyond this nothing is shown. |
+| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> | World position of the group, refreshed only when the transform has moved. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addrendererstolod" /><code>{"void AddRenderersToLOD(int level, IEnumerable<Renderer> renderersToModify)"}</code> |  |
-| <Link id="m-addrenderertolod" /><code>{"void AddRendererToLOD(int level, Renderer rendererToModify)"}</code> |  |
-| <Link id="m-getlevel" /><code>{"int GetLevel(float distanceSquared)"}</code> |  |
-| <Link id="m-removerendererfromlod" /><code>{"void RemoveRendererFromLOD(int level, Renderer rendererToModify)"}</code> |  |
-| <Link id="m-removerenderersfromlod" /><code>{"void RemoveRenderersFromLOD(int level, IEnumerable<Renderer> renderersToModify)"}</code> |  |
-| <Link id="m-updatelod" /><code>{"void UpdateLOD(Vector3 referencePosition)"}</code> |  |
+| <Link id="m-addrendererstolod" /><code>{"void AddRenderersToLOD(int level, IEnumerable<Renderer> renderersToModify)"}</code> | Adds several renderers to one LOD level. |
+| <Link id="m-addrenderertolod" /><code>{"void AddRendererToLOD(int level, Renderer rendererToModify)"}</code> | Adds a renderer to one LOD level. |
+| <Link id="m-getlevel" /><code>{"int GetLevel(float distanceSquared)"}</code> | LOD level for a squared distance: the first level whose distance is larger, or -1 when beyond all of them. |
+| <Link id="m-removerendererfromlod" /><code>{"void RemoveRendererFromLOD(int level, Renderer rendererToModify)"}</code> | Removes a renderer from one LOD level. |
+| <Link id="m-removerenderersfromlod" /><code>{"void RemoveRenderersFromLOD(int level, IEnumerable<Renderer> renderersToModify)"}</code> | Removes several renderers from one LOD level. |
+| <Link id="m-updatelod" /><code>{"void UpdateLOD(Vector3 referencePosition)"}</code> | Shows the level matching the distance to the given point and hides the previous one. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-modifylodlevelrenderers" /><code>{"private void ModifyLODLevelRenderers(int lodIndex, Func<HashSet<Renderer>, bool> modifyFunction)"}</code> |  |
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |

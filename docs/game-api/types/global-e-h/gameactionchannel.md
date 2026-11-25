@@ -1,6 +1,6 @@
 ---
 title: "GameActionChannel"
-description: "enum GameActionChannel in Root.Township."
+description: "Channel a game action is filed under, such as destroying, crafting, repairing, docking, spawning, transferring or eating."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GameActionChannel
 
 An **enum** in `Root.Township`, no namespace.
+
+Channel a game action is filed under, such as destroying, crafting, repairing, docking, spawning, transferring or eating.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 

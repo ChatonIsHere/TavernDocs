@@ -1,6 +1,6 @@
 ---
 title: "DockVisual"
-description: "class DockVisual in Root.Township."
+description: "The bubble and item count label on a pickup dock. Switches materials by distance to the local player's head, pulses while hovered, and can hide from t"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DockVisual
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+The bubble and item count label on a pickup dock. Switches materials by distance to the local player's head, pulses while hovered, and can hide from the hand camera. Client only; does nothing on a headless server.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `MonoBehaviour`, [`IBuildRendererBakeable`](/game-api/types/assembly-other/ibuildrendererbakeable), [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable)
@@ -44,21 +46,21 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distant-2" /><code>{"int Distant { get; set; }"}</code> |  |
-| <Link id="m-dock-2" /><code><Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" Dock { get; }"}</code> |  |
-| <Link id="m-dockbubble-2" /><code>{"MeshRenderer DockBubble { get; }"}</code> |  |
-| <Link id="m-needstogetfrompool" /><code>{"bool NeedsToGetFromPool { get; private set; }"}</code> |  |
+| <Link id="m-distant-2" /><code>{"int Distant { get; set; }"}</code> | Distance bucket used to throttle updates: -1 when near, otherwise frames to skip before the next distance check. |
+| <Link id="m-dock-2" /><code><Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" Dock { get; }"}</code> | The pickup dock this visual belongs to. |
+| <Link id="m-dockbubble-2" /><code>{"MeshRenderer DockBubble { get; }"}</code> | The bubble mesh renderer whose material changes with distance. |
+| <Link id="m-needstogetfrompool" /><code>{"bool NeedsToGetFromPool { get; private set; }"}</code> | Pooled visual flag. Nothing in this build sets it. |
 | <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |  |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-beginnearplayer" /><code>{"void BeginNearPlayer()"}</code> |  |
-| <Link id="m-clearvisual" /><code>{"void ClearVisual()"}</code> |  |
-| <Link id="m-endnearplayer" /><code>{"void EndNearPlayer()"}</code> |  |
-| <Link id="m-setisscaledup" /><code>{"void SetIsScaledUp(bool isScaledUp)"}</code> |  |
-| <Link id="m-updatequantitystoredtext" /><code>{"void UpdateQuantityStoredText(int quantityStored, bool isCountHidden)"}</code> |  |
+| <Link id="m-beginnearplayer" /><code>{"void BeginNearPlayer()"}</code> | Called when the local player's head comes within range. Turns on the nearby scaler for client docks. |
+| <Link id="m-clearvisual" /><code>{"void ClearVisual()"}</code> | Destroys the visual's game object. |
+| <Link id="m-endnearplayer" /><code>{"void EndNearPlayer()"}</code> | Called when the local player's head leaves range. Turns off the nearby scaler. |
+| <Link id="m-setisscaledup" /><code>{"void SetIsScaledUp(bool isScaledUp)"}</code> | Hook for when the dock scales up. Its pooling work is empty in this build. |
+| <Link id="m-updatequantitystoredtext" /><code>{"void UpdateQuantityStoredText(int quantityStored, bool isCountHidden)"}</code> | Shows the stored count on the 3D label, or clears it when the count is hidden. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |  |
 | <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |  |

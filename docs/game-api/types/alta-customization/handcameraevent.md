@@ -1,6 +1,6 @@
 ---
 title: "HandCameraEvent"
-description: "enum HandCameraEvent in Root.Township."
+description: "Flags for what the hand-held screenshot camera is doing: idle or taking a photo."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandCameraEvent
 
 An **enum** in `Root.Township`, `Alta.ScreenshotCamera`.
+
+Flags for what the hand-held screenshot camera is doing: `idle` or taking a `photo`.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Attributes** `Flags`

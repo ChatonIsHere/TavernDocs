@@ -1,6 +1,6 @@
 ---
 title: "IRespawnShrineSettings"
-description: "interface IRespawnShrineSettings in Root.Township."
+description: "Fixed settings for one respawn shrine: its id, what it burns as fuel and where players and its beacon appear."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `ATT.Respawn`.
 
+Fixed settings for one respawn shrine: its id, what it burns as fuel and where players and its beacon appear.
+
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Derived types** [`IRespawnSystemSettings`](/game-api/types/game-other-namespaces/irespawnsystemsettings), [`RespawnShrineData`](/game-api/types/game-other-namespaces/respawnshrinedata), [`RespawnSystemSettings`](/game-api/types/game-other-namespaces/respawnsystemsettings)
 
@@ -19,20 +21,20 @@ An **interface** in `Root.Township`, `ATT.Respawn`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-beaconposition" /><code>{"Vector3 BeaconPosition { get; }"}</code> |  |
-| <Link id="m-beaconprefabdefinition" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" BeaconPrefabDefinition { get; }"}</code> |  |
-| <Link id="m-fuelconsumedperhour" /><code>{"float FuelConsumedPerHour { get; }"}</code> |  |
-| <Link id="m-isglobalrespawnshrine" /><code>{"bool IsGlobalRespawnShrine { get; }"}</code> |  |
-| <Link id="m-maxfuelcapacity" /><code>{"int MaxFuelCapacity { get; }"}</code> |  |
-| <Link id="m-resourcetype" /><code><Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" ResourceType { get; }"}</code> |  |
-| <Link id="m-shrineid" /><code>{"Guid ShrineId { get; }"}</code> |  |
-| <Link id="m-spawnposition" /><code>{"Vector3 SpawnPosition { get; }"}</code> |  |
+| <Link id="m-beaconposition" /><code>{"Vector3 BeaconPosition { get; }"}</code> | World position the shrine's beacon is placed at. |
+| <Link id="m-beaconprefabdefinition" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" BeaconPrefabDefinition { get; }"}</code> | Pooled prefab spawned as the shrine's beacon. |
+| <Link id="m-fuelconsumedperhour" /><code>{"float FuelConsumedPerHour { get; }"}</code> | How much fuel the shrine burns per hour. |
+| <Link id="m-isglobalrespawnshrine" /><code>{"bool IsGlobalRespawnShrine { get; }"}</code> | True for a shrine that acts as a global spawn point rather than a player-owned one. |
+| <Link id="m-maxfuelcapacity" /><code>{"int MaxFuelCapacity { get; }"}</code> | Most fuel units the shrine can hold. |
+| <Link id="m-resourcetype" /><code><Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" ResourceType { get; }"}</code> | The dock settings that say which item the shrine accepts as fuel. |
+| <Link id="m-shrineid" /><code>{"Guid ShrineId { get; }"}</code> | Unique id of the shrine, used to match it with its saved model. |
+| <Link id="m-spawnposition" /><code>{"Vector3 SpawnPosition { get; }"}</code> | World position players respawn at. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getresourcetypehash" /><code>{"uint GetResourceTypeHash()"}</code> |  |
+| <Link id="m-getresourcetypehash" /><code>{"uint GetResourceTypeHash()"}</code> | Hash of the fuel resource type, for saving and comparing. |
 
 ## Used in
 

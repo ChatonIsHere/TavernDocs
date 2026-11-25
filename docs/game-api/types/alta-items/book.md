@@ -1,6 +1,6 @@
 ---
 title: "Book"
-description: "A book pickup."
+description: "A networked book item that holds pages (recipe books, journals) from a PageCollection. The server keeps the page list and turns pages; clients see the"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Pages`.
 
-A book pickup.
+A networked book item that holds pages (recipe books, journals) from a `PageCollection`. The server keeps the page list and turns pages; clients see the spawned page objects and the page count it sends.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<BookSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<BookSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase), [`IBuildRendererBakeable`](/game-api/types/assembly-other/ibuildrendererbakeable), [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable)
@@ -103,31 +103,31 @@ A book pickup.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-collection-2" /><code><Link to="/game-api/types/alta-items/pagecollection">{"PageCollection"}</Link>{" Collection { get; }"}</code> |  |
-| <Link id="m-isatback" /><code>{"bool IsAtBack { get; private set; }"}</code> |  |
-| <Link id="m-isatfront" /><code>{"bool IsAtFront { get; private set; }"}</code> |  |
-| <Link id="m-ischangingopenstate" /><code>{"bool IsChangingOpenState { get; private set; }"}</code> |  |
-| <Link id="m-isinserting" /><code>{"bool IsInserting { get; }"}</code> |  |
-| <Link id="m-isopen-2" /><code>{"bool IsOpen { get; private set; }"}</code> |  |
-| <Link id="m-pagecount-2" /><code>{"int PageCount { get; }"}</code> |  |
-| <Link id="m-pickup-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-collection-2" /><code><Link to="/game-api/types/alta-items/pagecollection">{"PageCollection"}</Link>{" Collection { get; }"}</code> | The `PageCollection` that defines which pages this book can hold and their order. A book spawned without one destroys itself. |
+| <Link id="m-isatback" /><code>{"bool IsAtBack { get; private set; }"}</code> | True when the open book shows its last page. |
+| <Link id="m-isatfront" /><code>{"bool IsAtFront { get; private set; }"}</code> | True when the open book shows its first page. |
+| <Link id="m-ischangingopenstate" /><code>{"bool IsChangingOpenState { get; private set; }"}</code> | True while the open or close animation runs. Page turns are refused then. |
+| <Link id="m-isinserting" /><code>{"bool IsInserting { get; }"}</code> | True while pages are queued to be animated into the open book. |
+| <Link id="m-isopen-2" /><code>{"bool IsOpen { get; private set; }"}</code> | Whether the book is open. The server opens it while held facing up and slow, and closes it otherwise. |
+| <Link id="m-pagecount-2" /><code>{"int PageCount { get; }"}</code> | Number of pages in the book. On clients this is the count last sent by the server. |
+| <Link id="m-pickup-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> | The book's `Pickup`. Holding it blocks locomotion and lets the holder turn pages. |
 | <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |  |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addnewpage" /><code>{"bool AddNewPage("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" page)"}</code> |  |
-| <Link id="m-bookremovepage" /><code>{"void BookRemovePage("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" pageData)"}</code> |  |
-| <Link id="m-close" /><code>{"void Close()"}</code> |  |
-| <Link id="m-duplicatepage" /><code><Link to="/game-api/types/alta-items/paperpageinstance">{"PaperPageInstance"}</Link>{" DuplicatePage("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" pageData, ref bool isDuplicate)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-open-2" /><code>{"void Open()"}</code> |  |
-| <Link id="m-setcollection" /><code>{"void SetCollection("}<Link to="/game-api/types/alta-items/pagecollection">{"PageCollection"}</Link>{" collection)"}</code> |  |
-| <Link id="m-turnleft" /><code>{"bool TurnLeft(bool isSkipping = false)"}</code> |  |
-| <Link id="m-turnright" /><code>{"bool TurnRight(bool isSkipping = false)"}</code> |  |
+| <Link id="m-addnewpage" /><code>{"bool AddNewPage("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" page)"}</code> | Server: inserts a page in collection order (or at the open spread if there is no collection) and animates it in if open. False on clients or if the page is not in the collection. |
+| <Link id="m-bookremovepage" /><code>{"void BookRemovePage("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" pageData)"}</code> | Removes a page from the book's list and refreshes the open spread and page display. Called when a page is pulled out. |
+| <Link id="m-close" /><code>{"void Close()"}</code> | Closes the book if it is open and not already opening or closing. The server closes it when it is dropped or tilted away. |
+| <Link id="m-duplicatepage" /><code><Link to="/game-api/types/alta-items/paperpageinstance">{"PaperPageInstance"}</Link>{" DuplicatePage("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" pageData, ref bool isDuplicate)"}</code> | Server: spawns a loose paper page with the given page data at the book. Forced to a duplicate if the collection does not allow removal. Null on clients. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the network messages for sync, adding, removing and turning pages, opening, highlighting and flipping. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: destroys the book if it has no collection, otherwise adds every collection page already unlocked globally and listens for new ones. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends a joining player the book's state, its spawned pages, page display and open state. |
+| <Link id="m-open-2" /><code>{"void Open()"}</code> | Opens the book if it is closed and not already changing state. |
+| <Link id="m-setcollection" /><code>{"void SetCollection("}<Link to="/game-api/types/alta-items/pagecollection">{"PageCollection"}</Link>{" collection)"}</code> | Server: sets the page collection. Ignored on clients. |
+| <Link id="m-turnleft" /><code>{"bool TurnLeft(bool isSkipping = false)"}</code> | Server: turns forward one page if the book is open and not at the back. Returns whether a turn started. |
+| <Link id="m-turnright" /><code>{"bool TurnRight(bool isSkipping = false)"}</code> | Server: turns back one page if the book is open and not at the front. Returns whether a turn started. |
 | <Link id="m-addflair" /><code>{"private void AddFlair("}<Link to="/game-api/types/alta-items/bookflair">{"BookFlair"}</Link>{" baseFlair, "}<Link to="/game-api/types/alta-items/bookflair">{"BookFlair"}</Link>{" overrideFlair, Transform parent, Material material, List<Renderer>[] renderers)"}</code> |  |
 | <Link id="m-addpage-2" /><code>{"private void AddPage("}<Link to="/game-api/types/alta-items/bookpageinstance">{"BookPageInstance"}</Link>{" newPage, int spawnedIndex, bool isFromMiddle = false)"}</code> |  |
 | <Link id="m-addpage-3" /><code>{"private void AddPage("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-items/newpagearguments">{"NewPageArguments"}</Link>{" newPage)"}</code> |  |

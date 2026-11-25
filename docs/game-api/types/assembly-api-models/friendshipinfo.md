@@ -1,6 +1,6 @@
 ---
 title: "FriendshipInfo"
-description: "class FriendshipInfo in Alta.Api.DataTransferModels."
+description: "A user returned by the Alta web API's friends endpoints, with when the friendship started and its state."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FriendshipInfo
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+A user returned by the Alta web API's friends endpoints, with when the friendship started and its state.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Inherits or implements** [`UserInfo`](/game-api/types/assembly-api-models/userinfo)
@@ -26,9 +28,9 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> |  |
-| <Link id="m-iconindex" /><code>{"int IconIndex { get; set; }"}</code> |  |
-| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/friendshiptype">{"FriendshipType"}</Link>{" Type { get; set; }"}</code> |  |
+| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> | When the friendship (or request) was created. |
+| <Link id="m-iconindex" /><code>{"int IconIndex { get; set; }"}</code> | The user's chosen profile icon, as an index. |
+| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/friendshiptype">{"FriendshipType"}</Link>{" Type { get; set; }"}</code> | The state of the friendship, such as a pending request or an accepted friend. |
 
 ## Used in
 

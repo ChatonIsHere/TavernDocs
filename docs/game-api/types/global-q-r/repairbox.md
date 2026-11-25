@@ -1,6 +1,6 @@
 ---
 title: "RepairBox"
-description: "class RepairBox in Root.Township."
+description: "A build or repair box that takes up to three item costs in docks and, when filled, repairs a static building, destroys an old object or spawns a prefa"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RepairBox
 
 A **class** in `Root.Township`, no namespace.
+
+A build or repair box that takes up to three item costs in docks and, when filled, repairs a static building, destroys an old object or spawns a prefab. The server runs the logic and saves it; clients show counts and effects.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavableFull<RepairBoxSaveData>`](/game-api/types/alta-world/isavablefull-t), [`ISavable<RepairBoxSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<RepairBoxSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase), [`ISavableFull`](/game-api/types/alta-world/isavablefull-t)
@@ -94,22 +96,22 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isrepairboxdone" /><code>{"bool IsRepairBoxDone { get; }"}</code> |  |
-| <Link id="m-onrepaired-2" /><code>{"Action OnRepaired { get; set; }"}</code> |  |
+| <Link id="m-isrepairboxdone" /><code>{"bool IsRepairBoxDone { get; }"}</code> | True when the box has been completed by players. A box completed through the dev tool reports false. |
+| <Link id="m-onrepaired-2" /><code>{"Action OnRepaired { get; set; }"}</code> | Callback run when all costs are met, and on clients when an item docks into a finished box. |
 | <Link id="m-buildinganimationwrapper-2" /><code>{"private "}<Link to="/game-api/types/global-a-b/buildinganimationwrapper">{"BuildingAnimationWrapper"}</Link>{" "}<Link to="/game-api/types/global-a-b/buildinganimationwrapper">{"BuildingAnimationWrapper"}</Link>{" { get; set; }"}</code> |  |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-act" /><code>{"void Act()"}</code> |  |
-| <Link id="m-checkfinished" /><code>{"void CheckFinished()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-senddevtoolcommandtoserver" /><code>{"void SendDevToolCommandToServer("}<Link to="/game-api/types/alta-menus/repairboxdevcommand">{"RepairBoxDevCommand"}</Link>{" devCommand)"}</code> |  |
-| <Link id="m-setupinput" /><code>{"void SetupInput("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item1, uint count1, "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item2 = null, uint count2 = 0, "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item3 = null, uint count3 = 0)"}</code> |  |
-| <Link id="m-setupoutput" /><code>{"void SetupOutput("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" spawning, Vector3 spawnPosition = null, bool isRepeatable = true)"}</code> |  |
+| <Link id="m-act" /><code>{"void Act()"}</code> | Server: applies the result. Destroys the linked object, marks the static building modified, and spawns the output. |
+| <Link id="m-checkfinished" /><code>{"void CheckFinished()"}</code> | If every dock holds its full cost, fires `OnRepaired` and finishes the repair. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the network syncs for state, completion, docked items and dev tool commands. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Prepares the cost docks and animator, and destroys the box if its static building is already built. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends the box state to a joining player. |
+| <Link id="m-senddevtoolcommandtoserver" /><code>{"void SendDevToolCommandToServer("}<Link to="/game-api/types/alta-menus/repairboxdevcommand">{"RepairBoxDevCommand"}</Link>{" devCommand)"}</code> | Sends a dev panel build or destroy command, which skips the build animation or undoes the building. |
+| <Link id="m-setupinput" /><code>{"void SetupInput("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item1, uint count1, "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item2 = null, uint count2 = 0, "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item3 = null, uint count3 = 0)"}</code> | Sets up to three required items and counts. |
+| <Link id="m-setupoutput" /><code>{"void SetupOutput("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" spawning, Vector3 spawnPosition = null, bool isRepeatable = true)"}</code> | Sets the prefab to spawn, where to spawn it and whether the box can be used again. |
 | <Link id="m-checkforstaticcontentalreadycompleted" /><code>{"private void CheckForStaticContentAlreadyCompleted()"}</code> |  |
 | <Link id="m-checkspawn" /><code>{"private void CheckSpawn()"}</code> |  |
 | <Link id="m-consumealldockcontents" /><code>{"private void ConsumeAllDockContents()"}</code> |  |

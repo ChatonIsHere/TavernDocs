@@ -1,6 +1,6 @@
 ---
 title: "AmplifyImpostorAsset"
-description: "class AmplifyImpostorAsset in Root.Township."
+description: "Asset from the third-party Amplify Impostors tool: the bake settings and result (mesh and material) for a billboard impostor of a model."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AmplifyImpostorAsset
 
 A **class** in `Root.Township`, no namespace.
+
+Asset from the third-party Amplify Impostors tool: the bake settings and result (mesh and material) for a billboard impostor of a model.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `ScriptableObject`
@@ -26,20 +28,20 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-decoupleaxisframes" /><code>{"bool DecoupleAxisFrames"}</code> |  |
-| <Link id="m-horizontalframes" /><code>{"int HorizontalFrames"}</code> |  |
-| <Link id="m-impostortype" /><code><Link to="/game-api/types/global-i-l/impostortype">{"ImpostorType"}</Link>{" "}<Link to="/game-api/types/global-i-l/impostortype">{"ImpostorType"}</Link></code> |  |
-| <Link id="m-lockedsizes" /><code>{"bool LockedSizes"}</code> |  |
-| <Link id="m-material" /><code>{"Material Material"}</code> |  |
-| <Link id="m-maxvertices" /><code>{"int MaxVertices"}</code> |  |
-| <Link id="m-mesh" /><code>{"Mesh Mesh"}</code> |  |
-| <Link id="m-normalscale" /><code>{"float NormalScale"}</code> |  |
-| <Link id="m-overrideoutput" /><code>{"List<"}<Link to="/game-api/types/global-t-x/textureoutput">{"TextureOutput"}</Link>{"> OverrideOutput"}</code> |  |
-| <Link id="m-pixelpadding" /><code>{"int PixelPadding"}</code> |  |
-| <Link id="m-preset" /><code><Link to="/game-api/types/global-a-b/amplifyimpostorbakepreset">{"AmplifyImpostorBakePreset"}</Link>{" Preset"}</code> |  |
-| <Link id="m-selectedsize" /><code>{"int SelectedSize"}</code> |  |
-| <Link id="m-shapepoints" /><code>{"Vector2[] ShapePoints"}</code> |  |
-| <Link id="m-texsize" /><code>{"Vector2 TexSize"}</code> |  |
-| <Link id="m-tolerance" /><code>{"float Tolerance"}</code> |  |
-| <Link id="m-version" /><code>{"int Version"}</code> |  |
-| <Link id="m-verticalframes" /><code>{"int VerticalFrames"}</code> |  |
+| <Link id="m-decoupleaxisframes" /><code>{"bool DecoupleAxisFrames"}</code> | Whether horizontal and vertical frame counts are set separately. |
+| <Link id="m-horizontalframes" /><code>{"int HorizontalFrames"}</code> | How many views are baked around the horizontal axis (1 to 32). |
+| <Link id="m-impostortype" /><code><Link to="/game-api/types/global-i-l/impostortype">{"ImpostorType"}</Link>{" "}<Link to="/game-api/types/global-i-l/impostortype">{"ImpostorType"}</Link></code> | The impostor layout, such as octahedron (the default). |
+| <Link id="m-lockedsizes" /><code>{"bool LockedSizes"}</code> | Whether the texture width and height are locked to the same size. |
+| <Link id="m-material" /><code>{"Material Material"}</code> | The baked impostor material. |
+| <Link id="m-maxvertices" /><code>{"int MaxVertices"}</code> | Most vertices the impostor's outline mesh may use (4 to 16). |
+| <Link id="m-mesh" /><code>{"Mesh Mesh"}</code> | The baked impostor mesh. |
+| <Link id="m-normalscale" /><code>{"float NormalScale"}</code> | Scale applied to the baked normals. |
+| <Link id="m-overrideoutput" /><code>{"List<"}<Link to="/game-api/types/global-t-x/textureoutput">{"TextureOutput"}</Link>{"> OverrideOutput"}</code> | Texture outputs that replace the preset's. |
+| <Link id="m-pixelpadding" /><code>{"int PixelPadding"}</code> | Padding in pixels around each baked frame. |
+| <Link id="m-preset" /><code><Link to="/game-api/types/global-a-b/amplifyimpostorbakepreset">{"AmplifyImpostorBakePreset"}</Link>{" Preset"}</code> | The bake preset that sets which textures are produced. |
+| <Link id="m-selectedsize" /><code>{"int SelectedSize"}</code> | The chosen texture size, 2048 by default. |
+| <Link id="m-shapepoints" /><code>{"Vector2[] ShapePoints"}</code> | The outline of the impostor mesh in 0 to 1 space, an octagon by default. |
+| <Link id="m-texsize" /><code>{"Vector2 TexSize"}</code> | The baked texture's width and height. |
+| <Link id="m-tolerance" /><code>{"float Tolerance"}</code> | How closely the outline mesh follows the model's shape. |
+| <Link id="m-version" /><code>{"int Version"}</code> | Format version of the asset. |
+| <Link id="m-verticalframes" /><code>{"int VerticalFrames"}</code> | How many views are baked around the vertical axis (1 to 33). |

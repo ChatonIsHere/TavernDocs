@@ -1,6 +1,6 @@
 ---
 title: "Node"
-description: "class Node in Root.Township."
+description: "One cell in a PAGaC generation grid: its position and the tag it currently holds."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Node
 
 A **class** in `Root.Township`, `Alta.PAGaC`.
+
+One cell in a PAGaC generation grid: its position and the tag it currently holds.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 
@@ -24,16 +26,16 @@ A **class** in `Root.Township`, `Alta.PAGaC`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tag" /><code><Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-x" /><code>{"int X { get; private set; }"}</code> |  |
-| <Link id="m-y" /><code>{"int Y { get; private set; }"}</code> |  |
-| <Link id="m-z" /><code>{"int Z { get; private set; }"}</code> |  |
+| <Link id="m-tag" /><code><Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{" { get; set; }"}</code> | The tag in the cell. |
+| <Link id="m-x" /><code>{"int X { get; private set; }"}</code> | Cell x. |
+| <Link id="m-y" /><code>{"int Y { get; private set; }"}</code> | Cell y. |
+| <Link id="m-z" /><code>{"int Z { get; private set; }"}</code> | Cell z. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tagif" /><code>{"void TagIf("}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{" newTag, "}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{" oldTag)"}</code> |  |
+| <Link id="m-tagif" /><code>{"void TagIf("}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{" newTag, "}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{" oldTag)"}</code> | Swaps the tag to a new one only if it currently has the given old tag. |
 
 ## Used in
 

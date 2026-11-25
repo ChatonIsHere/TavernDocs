@@ -1,6 +1,6 @@
 ---
 title: "Enchantment"
-description: "class Enchantment in Root.Township."
+description: "An enchantment asset: a list of bindings, each linking triggers to the effects they cause."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Enchantment
 
 A **class** in `Root.Township`, `Alta.Enchantments`.
+
+An enchantment asset: a list of bindings, each linking triggers to the effects they cause.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`HashedGeneralValue<Enchantment>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -33,7 +35,7 @@ A **class** in `Root.Township`, `Alta.Enchantments`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bindings-2" /><code><Link to="/game-api/types/alta-crafting/enchantment-binding">{"Enchantment.Binding"}</Link>{"[] Bindings { get; }"}</code> |  |
+| <Link id="m-bindings-2" /><code><Link to="/game-api/types/alta-crafting/enchantment-binding">{"Enchantment.Binding"}</Link>{"[] Bindings { get; }"}</code> | The trigger and effect pairs that make up the enchantment. |
 
 ## Used in
 

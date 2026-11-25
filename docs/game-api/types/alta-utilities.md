@@ -156,7 +156,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`Screenshot`](/game-api/types/alta-utilities/screenshot) | class |  | 8 |  |
 | [`ScriptHelper`](/game-api/types/alta-utilities/scripthelper) | abstract class | `MonoBehaviour` | 0 |  |
 | [`ServerSaveUtility`](/game-api/types/alta-utilities/serversaveutility) | class |  | 12 |  |
-| [`ServerSettings`](/game-api/types/alta-utilities/serversettings) | class | `Settings`, `ICloneable` | 49 | [Server settings](../networking/server-settings.md#serversettings), [Server settings](../../tavernlib-api/config/server-settings.md#serversettings): All instance properties with public getters and setters. Default values from the code. |
+| [`ServerSettings`](/game-api/types/alta-utilities/serversettings) | class | `Settings`, `ICloneable` | 49 | [ServerSettings](../../tavernlib-api/types/backend-server-configs/serversettings.md), [Server settings](../networking/server-settings.md#serversettings): A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
 | [`SetRenderQueue`](/game-api/types/alta-utilities/setrenderqueue) | class | `MonoBehaviour` | 0 |  |
 | [`SettingBasedToggler`](/game-api/types/alta-utilities/settingbasedtoggler) | class | `MonoBehaviour` | 0 |  |
 | [`SettingsFieldAccess`](/game-api/types/alta-utilities/settingsfieldaccess) | class | `ScriptableObject`, `ISettingsFieldAccess` | 7 |  |

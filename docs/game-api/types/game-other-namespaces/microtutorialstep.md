@@ -1,6 +1,6 @@
 ---
 title: "MicroTutorialStep"
-description: "abstract class MicroTutorialStep in Root.Township."
+description: "Base asset for one step of a micro tutorial. Subclasses say which player events finish the step or run their own server logic; the server's step insta"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MicroTutorialStep
 
 An **abstract class** in `Root.Township`, `ATT.MicroTutorial.Steps`.
+
+Base asset for one step of a micro tutorial. Subclasses say which player events finish the step or run their own server logic; the server's step instance spawns the step's content and watches for completion.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`HashedGeneralValue<MicroTutorialStep>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -33,21 +35,21 @@ An **abstract class** in `Root.Township`, `ATT.MicroTutorial.Steps`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroyoncomplete" /><code>{"bool DestroyOnComplete { get; set; }"}</code> |  |
-| <Link id="m-dynamiccontent" /><code><Link to="/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" DynamicContent { get; set; }"}</code> |  |
-| <Link id="m-playereventsearchdepth" /><code>{"virtual int PlayerEventSearchDepth { get; }"}</code> |  |
-| <Link id="m-requiredplayereventtypes" /><code>{"virtual IEnumerable<Type> RequiredPlayerEventTypes { get; }"}</code> |  |
-| <Link id="m-staticcontent" /><code>{"GameObject StaticContent { get; set; }"}</code> |  |
-| <Link id="m-stepname" /><code>{"string StepName { get; set; }"}</code> |  |
+| <Link id="m-destroyoncomplete" /><code>{"bool DestroyOnComplete { get; set; }"}</code> | If true, the server despawns the step's dynamic and static content when the step stops. |
+| <Link id="m-dynamiccontent" /><code><Link to="/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" DynamicContent { get; set; }"}</code> | Set piece whose saved network entities the server loads into the tutorial entity when the step starts. Can be null. |
+| <Link id="m-playereventsearchdepth" /><code>{"virtual int PlayerEventSearchDepth { get; }"}</code> | How many earlier steps' buffered player events still count for this step. -1 (default) means all earlier steps. |
+| <Link id="m-requiredplayereventtypes" /><code>{"virtual IEnumerable<Type> RequiredPlayerEventTypes { get; }"}</code> | Player event types the step listens to on the event bus. Empty by default. |
+| <Link id="m-staticcontent" /><code>{"GameObject StaticContent { get; set; }"}</code> | Prefab instantiated locally (not networked) as the step's static content. Can be null. |
+| <Link id="m-stepname" /><code>{"string StepName { get; set; }"}</code> | Display name for the step, used in its `ToString` and log messages. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-iscompletedbyevent" /><code>{"virtual bool IsCompletedByEvent("}<Link to="/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{" eventInfo)"}</code> |  |
-| <Link id="m-isconfigurationvalid" /><code>{"virtual IResult IsConfigurationValid()"}</code> |  |
-| <Link id="m-runforinstance" /><code>{"virtual async Task RunForInstance("}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" stepInstance)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| <Link id="m-iscompletedbyevent" /><code>{"virtual bool IsCompletedByEvent("}<Link to="/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{" eventInfo)"}</code> | Server: returns true if the given player event finishes the step. Base returns false. |
+| <Link id="m-isconfigurationvalid" /><code>{"virtual IResult IsConfigurationValid()"}</code> | Checks the step's settings. The base version always succeeds; subclasses report missing fields. |
+| <Link id="m-runforinstance" /><code>{"virtual async Task RunForInstance("}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" stepInstance)"}</code> | Server: custom async logic run for a step instance, such as a delay or a spawn. Does nothing by default. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Returns the step name and hash code, for logs. |
 
 ## Used in
 

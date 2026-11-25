@@ -1,6 +1,6 @@
 ---
 title: "LiquidVisualChunkDefinition"
-description: "class LiquidVisualChunkDefinition in Root.Township."
+description: "An asset that spawns floating chunk visuals in a liquid (such as pieces in a stew), with random count and size variation."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LiquidVisualChunkDefinition
 
 A **class** in `Root.Township`, `Alta.Cooking`.
+
+An asset that spawns floating chunk visuals in a liquid (such as pieces in a stew), with random count and size variation.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`HashedGeneralValue<LiquidVisualChunkDefinition>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -39,8 +41,8 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getorcreate" /><code>{"static "}<Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{" GetOrCreate(string name, out bool wasCreated)"}</code> |  |
-| <Link id="m-spawnvisuals" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> SpawnVisuals(Transform targetTransform, float sizeMultiplier) (iterator)"}</code> |  |
+| <Link id="m-getorcreate" /><code>{"static "}<Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{" GetOrCreate(string name, out bool wasCreated)"}</code> | Editor helper to find or create the asset by name. Returns null in this build. |
+| <Link id="m-spawnvisuals" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> SpawnVisuals(Transform targetTransform, float sizeMultiplier) (iterator)"}</code> | Spawns pooled chunk objects under the target, about `numberPerServing` of them, each scaled by the random size times the multiplier. |
 | <Link id="m-getvaluewithrandomvariation" /><code>{"private float GetValueWithRandomVariation(float value, float variation)"}</code> |  |
 
 ## Used in

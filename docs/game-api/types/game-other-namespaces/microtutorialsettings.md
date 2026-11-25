@@ -1,6 +1,6 @@
 ---
 title: "MicroTutorialSettings"
-description: "class MicroTutorialSettings in Root.Township."
+description: "One micro tutorial asset: a name, a list of steps and a completion message. It is a PlayerProgressFlag, so completion is stored per player."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MicroTutorialSettings
 
 A **class** in `Root.Township`, `ATT.MicroTutorial`.
+
+One micro tutorial asset: a name, a list of steps and a completion message. It is a `PlayerProgressFlag`, so completion is stored per player.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`PlayerProgressFlag`](/game-api/types/global-p/playerprogressflag), [`IMicroTutorialSettings`](/game-api/types/game-other-namespaces/imicrotutorialsettings)
@@ -34,23 +36,23 @@ A **class** in `Root.Township`, `ATT.MicroTutorial`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-all" /><code>{"static IEnumerable<"}<Link to="/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{"> All { get; }"}</code> |  |
-| <Link id="m-completedmessage" /><code><Link to="/game-api/types/game-other-namespaces/tutorialcompletedmessage">{"TutorialCompletedMessage"}</Link>{" CompletedMessage { get; private set; }"}</code> |  |
-| <Link id="m-steps-2" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{"[] Steps { get; set; }"}</code> |  |
-| <Link id="m-tutorialname-2" /><code>{"string TutorialName { get; set; }"}</code> |  |
+| <Link id="m-all" /><code>{"static IEnumerable<"}<Link to="/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{"> All { get; }"}</code> | Every micro tutorial asset loaded. |
+| <Link id="m-completedmessage" /><code><Link to="/game-api/types/game-other-namespaces/tutorialcompletedmessage">{"TutorialCompletedMessage"}</Link>{" CompletedMessage { get; private set; }"}</code> | Message shown when the tutorial is completed. |
+| <Link id="m-steps-2" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{"[] Steps { get; set; }"}</code> | The tutorial steps in order. |
+| <Link id="m-tutorialname-2" /><code>{"string TutorialName { get; set; }"}</code> | Display name of the tutorial. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-completedbyplayer" /><code>{"event Action<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{", "}<Link to="/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{"> CompletedByPlayer"}</code> |  |
+| <Link id="m-completedbyplayer" /><code>{"event Action<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{", "}<Link to="/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{"> CompletedByPlayer"}</code> | Raised when a player completes the tutorial. Achievements and boards listen to it. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-recordcompletedbyplayer" /><code>{"void RecordCompletedByPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| <Link id="m-recordcompletedbyplayer" /><code>{"void RecordCompletedByPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Server: raises `CompletedByPlayer` for the player. Called by the tutorial `ServerController`. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Short text with the tutorial name and step count. |
 
 ## Used in
 

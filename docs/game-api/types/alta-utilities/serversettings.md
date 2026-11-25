@@ -1,6 +1,6 @@
 ---
 title: "ServerSettings"
-description: "All instance properties with public getters and setters. Default values from the code."
+description: "A class in TavernLib, TavernLib.Backend.Server.Configs."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,12 +12,12 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Utilities`.
 
-All instance properties with public getters and setters. Default values from the code.
+A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** `Settings`, `ICloneable`
 - **Attributes** `Obsolete`
-- **Documented in** [Server settings](/game-api/networking/server-settings#serversettings), [Server settings](/tavernlib-api/config/server-settings#serversettings), [Folders](/tavernlib-api/directories)
+- **Documented in** [ServerSettings](/tavernlib-api/types/backend-server-configs/serversettings), [Server settings](/game-api/networking/server-settings#serversettings), [Server settings](/tavernlib-api/config/server-settings#serversettings), [Folders](/tavernlib-api/directories)
 
 ## Constructors
 

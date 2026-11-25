@@ -1,6 +1,6 @@
 ---
 title: "GlobalPopulationDefinition"
-description: "class GlobalPopulationDefinition in Root.Township."
+description: "Server-only asset for a world-wide population: spawns its prefabs in random location chunks weighted by biome attributes, up to a cap. Also the global"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GlobalPopulationDefinition
 
 A **class** in `Root.Township`, `Alta.Populations`.
+
+Server-only asset for a world-wide population: spawns its prefabs in random location chunks weighted by biome attributes, up to a cap. Also the `global-population` (`globalpop`) console module with list, spawned, set-size, teleport and teleport-to commands.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`HashedGeneralValue<GlobalPopulationDefinition>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -44,19 +46,19 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isspawningonastar-2" /><code>{"bool IsSpawningOnAStar { get; }"}</code> |  |
-| <Link id="m-iterations-2" /><code>{"int Iterations { get; }"}</code> |  |
-| <Link id="m-maxanglefromupdot-2" /><code>{"float MaxAngleFromUpDot { get; }"}</code> |  |
+| <Link id="m-isspawningonastar-2" /><code>{"bool IsSpawningOnAStar { get; }"}</code> | If true, spawns snap to the nearest `A*` pathfinding node and face a random way instead of aligning to the ground. |
+| <Link id="m-iterations-2" /><code>{"int Iterations { get; }"}</code> | How many tries to find a valid spawn position in a chunk. |
+| <Link id="m-maxanglefromupdot-2" /><code>{"float MaxAngleFromUpDot { get; }"}</code> | Steepest ground (as a dot product with up) a spawn position may have. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkspawned" /><code>{"void CheckSpawned()"}</code> |  |
-| <Link id="m-clean" /><code>{"void Clean()"}</code> |  |
-| <Link id="m-cleanelement" /><code>{"void CleanElement("}<Link to="/game-api/types/alta-world-generation/spawnedelement">{"SpawnedElement"}</Link>{" element)"}</code> |  |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> |  |
-| <Link id="m-startup" /><code>{"void StartUp()"}</code> |  |
+| <Link id="m-checkspawned" /><code>{"void CheckSpawned()"}</code> | If below the cap, spawns a random amount taken from the per-tick growth curve. |
+| <Link id="m-clean" /><code>{"void Clean()"}</code> | Tears down the population's timer. |
+| <Link id="m-cleanelement" /><code>{"void CleanElement("}<Link to="/game-api/types/alta-world-generation/spawnedelement">{"SpawnedElement"}</Link>{" element)"}</code> | Removes one spawned element from the population, freeing a slot. |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | Creates the set of spawned elements if it doesn't exist yet. |
+| <Link id="m-startup" /><code>{"void StartUp()"}</code> | Spawns the starting population if the timer says to, then sets up the growth timer. |
 | <Link id="m-getspawned" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GetSpawned("}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> |  |
 | <Link id="m-listpopulations" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition-populationinfo">{"GlobalPopulationDefinition.PopulationInfo"}</Link>{"> ListPopulations()"}</code> |  |
 | <Link id="m-setsize" /><code>{"private static void SetSize("}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population, int maxSpawned)"}</code> |  |

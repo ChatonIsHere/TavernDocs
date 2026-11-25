@@ -1,6 +1,6 @@
 ---
 title: "Phantom"
-description: "A night creature that can be solid or immaterial. Prefabs: Phantom (2 health) and Phantom Head (0.5 health, takes double spiritual damage)."
+description: "The phantom creature agent. It switches between solid and immaterial, gets knocked back by tool hits, cracks when a mining echo goes off near it, and "
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
 
-A night creature that can be solid or immaterial. Prefabs: Phantom (2 health) and Phantom Head (0.5 health, takes double spiritual damage).
+The phantom creature agent. It switches between solid and immaterial, gets knocked back by tool hits, cracks when a mining echo goes off near it, and fades away at daytime. The server runs its AI and syncs its state.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`Agent<Phantom>`](/game-api/types/alta-intelligence/agent-tthis), [`IHasViewCone`](/game-api/types/alta-intelligence/ihasviewcone), [`IListenToMiningEcho`](/game-api/types/global-i-l/ilistentominingecho)
@@ -76,29 +76,29 @@ A night creature that can be solid or immaterial. Prefabs: Phantom (2 health) an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ismaterialized" /><code>{"bool IsMaterialized { get; private set; }"}</code> |  |
-| <Link id="m-speedstat" /><code><Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" SpeedStat { get; private set; }"}</code> |  |
+| <Link id="m-ismaterialized" /><code>{"bool IsMaterialized { get; private set; }"}</code> | True while the phantom is solid. An immaterial phantom is on a different collision layer. |
+| <Link id="m-speedstat" /><code><Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" SpeedStat { get; private set; }"}</code> | The phantom's `speed` stat. Knockback sets it to zero and it recovers over time. |
 | <Link id="m-alta-intelligence-ihasviewcone-viewcone" /><code>{"private "}<Link to="/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" Alta.Intelligence.IHasViewCone.ViewCone { get; }"}</code> |  |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activevisionattackeffect-2" /><code>{"void ActiveVisionAttackEffect()"}</code> |  |
-| <Link id="m-crack" /><code>{"void Crack()"}</code> |  |
-| <Link id="m-deactivevisionattackeffect" /><code>{"void DeactiveVisionAttackEffect()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-knockback" /><code>{"void KnockBack("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-setmarialized" /><code>{"void SetMarialized(bool isMaterialized)"}</code> |  |
+| <Link id="m-activevisionattackeffect-2" /><code>{"void ActiveVisionAttackEffect()"}</code> | Client: starts the vision attack effect, replacing any one already playing. |
+| <Link id="m-crack" /><code>{"void Crack()"}</code> | While immaterial, cracks the phantom for a set time (30 seconds by default) and syncs the crack effect. |
+| <Link id="m-deactivevisionattackeffect" /><code>{"void DeactiveVisionAttackEffect()"}</code> | Stops the vision attack effect if it's playing. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the sync methods and starts the phantom immaterial if its prefab says so. |
+| <Link id="m-knockback" /><code>{"void KnockBack("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | Server: pushes the phantom away from a tool hit and slows it, recovering speed over time. Hitting a cracked phantom instead ends the crack. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends the materialized state to a player who has just spawned the phantom. |
+| <Link id="m-setmarialized" /><code>{"void SetMarialized(bool isMaterialized)"}</code> | Switches between solid and immaterial while alive. The server also plays the matching action, sets visibility and syncs it. |
 | <Link id="m-fadenoaction" /><code>{"private void FadeNoAction()"}</code> |  |
 | <Link id="m-fadeonday" /><code>{"private void FadeOnDay(bool isNight)"}</code> |  |
 | <Link id="m-finishcracked" /><code>{"private void FinishCracked()"}</code> |  |
-| <Link id="m-initializeai" /><code>{"protected override void InitializeAi()"}</code> |  |
-| <Link id="m-initializestatic" /><code>{"protected override void InitializeStatic()"}</code> |  |
-| <Link id="m-killed" /><code>{"protected override void Killed("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthobject)"}</code> |  |
-| <Link id="m-knockback-2" /><code>{"private void KnockBack()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> |  |
+| <Link id="m-initializeai" /><code>{"protected override void InitializeAi()"}</code> | Server: sets up its actions, fading at daytime or when no action is found, reveal, hit knockback and mining echo listening. |
+| <Link id="m-initializestatic" /><code>{"protected override void InitializeStatic()"}</code> | Creates the shared action lookup tables for all phantoms. |
+| <Link id="m-killed" /><code>{"protected override void Killed("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthobject)"}</code> | Sets the killed animation parameter as well as the normal death handling. |
+| <Link id="m-knockback-2" /><code>{"private void KnockBack()"}</code> | Server: pushes the phantom away from a tool hit and slows it, recovering speed over time. Hitting a cracked phantom instead ends the crack. |
+| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> | Server: cancels the crack timer and stops listening for mining echoes. |
 | <Link id="m-onimpactreceived" /><code>{"private void OnImpactReceived("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" hit)"}</code> |  |
 | <Link id="m-onscenedestroy" /><code>{"private void OnSceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
 | <Link id="m-recoverspeed-2" /><code>{"private void RecoverSpeed()"}</code> |  |

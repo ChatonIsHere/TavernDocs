@@ -1,6 +1,6 @@
 ---
 title: "PhysicalMaterialPart"
-description: "A networked behaviour on items that have a material. The server picks and syncs the material; clients follow."
+description: "Gives an item its physical material (iron, wood and so on): sets renderer materials, scales impact damage and hardness, updates durability, and syncs "
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-A networked behaviour on items that have a material. The server picks and syncs the material; clients follow.
+Gives an item its physical material (iron, wood and so on): sets renderer materials, scales impact damage and hardness, updates durability, and syncs and saves the choice. Server picks a random one from its distribution on spawn.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`GeneratedNetworkEntityBehaviour`](/game-api/types/alta-networking/generatednetworkentitybehaviour), [`ISavable<PhysicalMaterialPartSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<PhysicalMaterialPartSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase), [`IEntityReplaceHandler`](/game-api/types/alta-networking/ientityreplacehandler), [`ISpawnArguments`](/game-api/types/alta-utilities/ispawnarguments), [`IInterfereWithDocking`](/game-api/types/alta-items/iinterferewithdocking), [`IPreventAtlasing`](/game-api/types/alta-utilities/ipreventatlasing), [`IBuildRendererPostBake`](/game-api/types/assembly-other/ibuildrendererpostbake), [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable)
@@ -44,25 +44,25 @@ A networked behaviour on items that have a material. The server picks and syncs 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-physicalmaterial-2" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-physicalmaterial-2" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" { get; }"}</code> | The item's current physical material. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-materialchanged" /><code>{"event "}<Link to="/game-api/types/global-p/physicalmaterialpart-changedmaterial">{"PhysicalMaterialPart.ChangedMaterial"}</Link>{" MaterialChanged"}</code> |  |
+| <Link id="m-materialchanged" /><code>{"event "}<Link to="/game-api/types/global-p/physicalmaterialpart-changedmaterial">{"PhysicalMaterialPart.ChangedMaterial"}</Link>{" MaterialChanged"}</code> | Raised after the material is set, with the material and the channel used. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-setmaterial" /><code>{"void SetMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial)"}</code> |  |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Creates the material sync. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: applies the starting material. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends the current material to a joining player. |
+| <Link id="m-setmaterial" /><code>{"void SetMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial)"}</code> | Applies a material: impactors, listeners, renderers (not on headless) and durability. Server: syncs to clients. Null is ignored. |
 | <Link id="m-checkallowed" /><code>{"private bool Alta.Inventory.IInterfereWithDocking.CheckAllowed("}<Link to="/game-api/types/alta-items/iinterferewithdocking">{"IInterfereWithDocking"}</Link>{" other)"}</code> |  |
 | <Link id="m-checkarguments" /><code>{"private void Alta.Utilities.ISpawnArguments.CheckArguments(string[] arguments)"}</code> |  |
-| <Link id="m-generate" /><code>{"protected override void Generate("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
+| <Link id="m-generate" /><code>{"protected override void Generate("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Picks a random material from the distribution using the spawn attributes. |
 | <Link id="m-ispreventatlasing" /><code>{"private bool Alta.Utilities.Atlas.IPreventAtlasing.IsPreventAtlasing(Renderer renderer)"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
 | <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |

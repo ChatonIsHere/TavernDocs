@@ -1,12 +1,14 @@
 ---
 title: Type browser
-description: "Every type in the game's own code, by namespace, with its kind, base type, public member count and the page that documents it."
+description: "Every type in the game's own code, by area, with a page per type listing every member."
 sidebar_position: 1
 ---
 
 # Type browser
 
-A list of every type in Alta's code: `Root.Township` and the `Alta.*` assemblies of the server build. It's for finding things. Most types have no page of their own; when one does, the last column links to it.
+Every type in Alta's code: `Root.Township` and the `Alta.*` assemblies of the server build. The lists below are by area. Click a type for its own page: every field, property, event and method with its signature and whether it's public, what it inherits and what inherits it, which guide covers it, and every member elsewhere that uses it. The type names in signatures link on, so you can follow the code from type to type. The last column links to the guide that covers a type, when one does.
+
+Type and member names in code across the Mod, TavernLib API and Game API sections link here too, like `PlayerChunkManager` or `ServerHandler.PlayerLimit`. The type pages are made from the game's own assemblies, so they include private members, marked as such: a mod reaches those through att-stubs' publicized assemblies or Harmony's `AccessTools`.
 
 5722 types are listed, 692 of them with a hand-written page.
 

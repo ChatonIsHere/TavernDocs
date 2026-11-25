@@ -1,6 +1,6 @@
 ---
 title: "PlayerPostboxStorage"
-description: "The per-player file, above."
+description: "Server: one player's postbox contents, saved items waiting to be taken out. Get it through PostboxManager."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-The per-player file, above.
+Server: one player's postbox contents, saved items waiting to be taken out. Get it through `PostboxManager`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`PerPlayerContent<PlayerPostboxStorageFileFormat>`](/game-api/types/global-p/perplayercontent-tsaveformat)
@@ -38,19 +38,19 @@ The per-player file, above.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-itemadded" /><code>{"event "}<Link to="/game-api/types/global-p/playerpostboxstorageeventhandler">{"PlayerPostboxStorageEventHandler"}</Link>{" ItemAdded"}</code> |  |
-| <Link id="m-itemremoved" /><code>{"event "}<Link to="/game-api/types/global-p/playerpostboxstorageeventhandler">{"PlayerPostboxStorageEventHandler"}</Link>{" ItemRemoved"}</code> |  |
+| <Link id="m-itemadded" /><code>{"event "}<Link to="/game-api/types/global-p/playerpostboxstorageeventhandler">{"PlayerPostboxStorageEventHandler"}</Link>{" ItemAdded"}</code> | Raised after an item is pushed, with the new count. |
+| <Link id="m-itemremoved" /><code>{"event "}<Link to="/game-api/types/global-p/playerpostboxstorageeventhandler">{"PlayerPostboxStorageEventHandler"}</Link>{" ItemRemoved"}</code> | Raised after an item is popped, with the new count. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcount" /><code>{"int GetCount()"}</code> |  |
-| <Link id="m-initializeifnew" /><code>{"void InitializeIfNew("}<Link to="/game-api/types/global-p/playerpostboxstorage-initialcontent">{"PlayerPostboxStorage.InitialContent"}</Link>{"[] initialContent)"}</code> |  |
-| <Link id="m-loadasync" /><code>{"override async Task LoadAsync(int playerIdentifier, "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player = null)"}</code> |  |
-| <Link id="m-pop" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Pop()"}</code> |  |
-| <Link id="m-push" /><code>{"void Push("}<Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" content)"}</code> |  |
-| <Link id="m-push-2" /><code>{"void Push("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isDestroying = true)"}</code> |  |
+| <Link id="m-getcount" /><code>{"int GetCount()"}</code> | How many items are in the postbox. |
+| <Link id="m-initializeifnew" /><code>{"void InitializeIfNew("}<Link to="/game-api/types/global-p/playerpostboxstorage-initialcontent">{"PlayerPostboxStorage.InitialContent"}</Link>{"[] initialContent)"}</code> | Fills a brand new postbox with starting items, each with its own chance. Does nothing for an existing one. |
+| <Link id="m-loadasync" /><code>{"override async Task LoadAsync(int playerIdentifier, "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player = null)"}</code> | Loads the file and remembers whether it was new. |
+| <Link id="m-pop" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Pop()"}</code> | Spawns the oldest item as a server entity and removes it from the postbox. Returns null if empty or if spawning failed. |
+| <Link id="m-push" /><code>{"void Push("}<Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" content)"}</code> | Adds an item, from a saved object or a live entity. A live entity is saved without position and destroyed unless told not to. |
+| <Link id="m-push-2" /><code>{"void Push("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isDestroying = true)"}</code> | Adds an item, from a saved object or a live entity. A live entity is saved without position and destroyed unless told not to. |
 | <Link id="m-readasync" /><code>{"private async Task<"}<Link to="/game-api/types/global-p/playerpostboxstoragefileformat">{"PlayerPostboxStorageFileFormat"}</Link>{"> ReadAsync()"}</code> |  |
 
 ## Used in

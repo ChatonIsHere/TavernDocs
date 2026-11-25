@@ -1,6 +1,6 @@
 ---
 title: "InfoDisplayerAccess"
-description: "class InfoDisplayerAccess in Root.Township."
+description: "A debug text asset that code writes a line of text to and an InfoDisplayer shows on screen. Wraps the text in a set prefix and suffix."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InfoDisplayerAccess
 
 A **class** in `Root.Township`, no namespace.
+
+A debug text asset that code writes a line of text to and an `InfoDisplayer` shows on screen. Wraps the text in a set prefix and suffix.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `ScriptableObject`
@@ -34,22 +36,22 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; private set; }"}</code> |  |
-| <Link id="m-text" /><code>{"string Text { get; private set; }"}</code> |  |
+| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; private set; }"}</code> | Whether the text should be shown. Turned on automatically by `UpdateText`. |
+| <Link id="m-text" /><code>{"string Text { get; private set; }"}</code> | The current text, prefix and suffix included. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enabledupdated" /><code>{"event "}<Link to="/game-api/types/global-i-l/infodisplayeraccess-accessupdate">{"InfoDisplayerAccess.AccessUpdate"}</Link>{" EnabledUpdated"}</code> |  |
-| <Link id="m-textupdated" /><code>{"event "}<Link to="/game-api/types/global-i-l/infodisplayeraccess-accessupdate">{"InfoDisplayerAccess.AccessUpdate"}</Link>{" TextUpdated"}</code> |  |
+| <Link id="m-enabledupdated" /><code>{"event "}<Link to="/game-api/types/global-i-l/infodisplayeraccess-accessupdate">{"InfoDisplayerAccess.AccessUpdate"}</Link>{" EnabledUpdated"}</code> | Raised when `IsEnabled` changes. |
+| <Link id="m-textupdated" /><code>{"event "}<Link to="/game-api/types/global-i-l/infodisplayeraccess-accessupdate">{"InfoDisplayerAccess.AccessUpdate"}</Link>{" TextUpdated"}</code> | Raised when the text changes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setenabled" /><code>{"void SetEnabled(bool isEnabled)"}</code> |  |
-| <Link id="m-updatetext" /><code>{"void UpdateText(string text)"}</code> |  |
+| <Link id="m-setenabled" /><code>{"void SetEnabled(bool isEnabled)"}</code> | Shows or hides the text. |
+| <Link id="m-updatetext" /><code>{"void UpdateText(string text)"}</code> | Sets the text (adding prefix and suffix) and enables it. Ignores changes that differ only in case. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "SmelterUpgrades"
-description: "class SmelterUpgrades in Root.Township."
+description: "An unlockable set of smelter abilities: extra recipes, metals it can melt for moulds, and a speed bonus. Applied through SmelterUnlockManager."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SmelterUpgrades
 
 A **class** in `Root.Township`, `Alta.Blacksmithing`.
+
+An unlockable set of smelter abilities: extra recipes, metals it can melt for moulds, and a speed bonus. Applied through `SmelterUnlockManager`.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`HashedGeneralValue<SmelterUpgrades>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -36,9 +38,9 @@ A **class** in `Root.Township`, `Alta.Blacksmithing`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bonussmelterspeed-2" /><code>{"float BonusSmelterSpeed { get; }"}</code> |  |
-| <Link id="m-physicalmaterials-2" /><code>{"IReadOnlyCollection<"}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"> PhysicalMaterials { get; }"}</code> |  |
-| <Link id="m-recipes-2" /><code>{"IReadOnlyCollection<"}<Link to="/game-api/types/alta-crafting/smeltingrecipe">{"SmeltingRecipe"}</Link>{"> Recipes { get; }"}</code> |  |
+| <Link id="m-bonussmelterspeed-2" /><code>{"float BonusSmelterSpeed { get; }"}</code> | Added to the smelter's speed multiplier while this upgrade is unlocked, and taken off again when it is locked. |
+| <Link id="m-physicalmaterials-2" /><code>{"IReadOnlyCollection<"}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"> PhysicalMaterials { get; }"}</code> | Metal materials whose ingots the smelter may pour into moulds once this is unlocked. |
+| <Link id="m-recipes-2" /><code>{"IReadOnlyCollection<"}<Link to="/game-api/types/alta-crafting/smeltingrecipe">{"SmeltingRecipe"}</Link>{"> Recipes { get; }"}</code> | Smelting recipes the smelter can run once this is unlocked. |
 
 ## Used in
 

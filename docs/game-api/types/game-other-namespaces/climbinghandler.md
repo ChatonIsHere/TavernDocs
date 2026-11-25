@@ -1,6 +1,6 @@
 ---
 title: "ClimbingHandler"
-description: "class ClimbingHandler in Root.Township."
+description: "Runs climbing for one player's smooth locomotion: tracks both hands' grips and stamina, moves and turns the body as the hands move, and holds the body"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ClimbingHandler
 
 A **class** in `Root.Township`, `Features.Climbing`.
+
+Runs climbing for one player's smooth locomotion: tracks both hands' grips and stamina, moves and turns the body as the hands move, and holds the body up against gravity.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 
@@ -39,23 +41,23 @@ A **class** in `Root.Township`, `Features.Climbing`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bodyheight" /><code>{"float BodyHeight { get; private set; }"}</code> |  |
-| <Link id="m-friction" /><code>{"float Friction { get; }"}</code> |  |
-| <Link id="m-isclimbing" /><code>{"bool IsClimbing { get; }"}</code> |  |
-| <Link id="m-layermask" /><code>{"LayerMask LayerMask { get; }"}</code> |  |
-| <Link id="m-lefthand" /><code><Link to="/game-api/types/game-other-namespaces/climbinghand">{"ClimbingHand"}</Link>{" LeftHand { get; }"}</code> |  |
-| <Link id="m-leftstamina" /><code><Link to="/game-api/types/global-i-l/ihandstaminamanager">{"IHandStaminaManager"}</Link>{" LeftStamina { get; }"}</code> |  |
-| <Link id="m-righthand" /><code><Link to="/game-api/types/game-other-namespaces/climbinghand">{"ClimbingHand"}</Link>{" RightHand { get; }"}</code> |  |
-| <Link id="m-rightstamina" /><code><Link to="/game-api/types/global-i-l/ihandstaminamanager">{"IHandStaminaManager"}</Link>{" RightStamina { get; }"}</code> |  |
-| <Link id="m-settings" /><code><Link to="/game-api/types/global-c-d/climbingsettings">{"ClimbingSettings"}</Link>{" Settings { get; set; }"}</code> |  |
-| <Link id="m-smoothlocomotion" /><code><Link to="/game-api/types/global-s/smoothlocomotion">{"SmoothLocomotion"}</Link>{" "}<Link to="/game-api/types/global-s/smoothlocomotion">{"SmoothLocomotion"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-bodyheight" /><code>{"float BodyHeight { get; private set; }"}</code> | The current body height. Moves toward the climbing height while climbing and back to normal after. |
+| <Link id="m-friction" /><code>{"float Friction { get; }"}</code> | Ground friction from the settings' fade curve, low just after letting go and rising over time. |
+| <Link id="m-isclimbing" /><code>{"bool IsClimbing { get; }"}</code> | True while either hand is holding a climbable surface. |
+| <Link id="m-layermask" /><code>{"LayerMask LayerMask { get; }"}</code> | Layers that can be climbed. A current unlock that overrides climbing replaces the settings' mask. |
+| <Link id="m-lefthand" /><code><Link to="/game-api/types/game-other-namespaces/climbinghand">{"ClimbingHand"}</Link>{" LeftHand { get; }"}</code> | Climbing state for the left hand. |
+| <Link id="m-leftstamina" /><code><Link to="/game-api/types/global-i-l/ihandstaminamanager">{"IHandStaminaManager"}</Link>{" LeftStamina { get; }"}</code> | Stamina for the left hand. A fake one that never runs out when the character has no health. |
+| <Link id="m-righthand" /><code><Link to="/game-api/types/game-other-namespaces/climbinghand">{"ClimbingHand"}</Link>{" RightHand { get; }"}</code> | Climbing state for the right hand. |
+| <Link id="m-rightstamina" /><code><Link to="/game-api/types/global-i-l/ihandstaminamanager">{"IHandStaminaManager"}</Link>{" RightStamina { get; }"}</code> | Stamina for the right hand. A fake one that never runs out when the character has no health. |
+| <Link id="m-settings" /><code><Link to="/game-api/types/global-c-d/climbingsettings">{"ClimbingSettings"}</Link>{" Settings { get; set; }"}</code> | The climbing settings, `ClimbingSettings.Instance` by default. |
+| <Link id="m-smoothlocomotion" /><code><Link to="/game-api/types/global-s/smoothlocomotion">{"SmoothLocomotion"}</Link>{" "}<Link to="/game-api/types/global-s/smoothlocomotion">{"SmoothLocomotion"}</Link>{" { get; }"}</code> | The locomotion this handler moves. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lateupdate" /><code>{"void LateUpdate()"}</code> |  |
-| <Link id="m-process" /><code>{"void Process()"}</code> |  |
+| <Link id="m-lateupdate" /><code>{"void LateUpdate()"}</code> | While climbing, moves the body so the head stays where it was relative to the grip. |
+| <Link id="m-process" /><code>{"void Process()"}</code> | Runs one frame of climbing: updates hands, body height, movement, hand pressure and stamina. |
 | <Link id="m-adjustheight" /><code>{"private void AdjustHeight(float deltaTime)"}</code> |  |
 | <Link id="m-handleclimbing" /><code>{"private void HandleClimbing(float deltaTime)"}</code> |  |
 | <Link id="m-handlehandpressure" /><code>{"private void HandleHandPressure(float deltaTime)"}</code> |  |

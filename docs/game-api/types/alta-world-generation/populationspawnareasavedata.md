@@ -1,6 +1,6 @@
 ---
 title: "PopulationSpawnAreaSaveData"
-description: "class PopulationSpawnAreaSaveData in Root.Township."
+description: "Save data for a PopulationSpawnArea: which population it holds, its counts, spawn timer and children."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PopulationSpawnAreaSaveData
 
 A **class** in `Root.Township`, `Alta.Populations`.
+
+Save data for a `PopulationSpawnArea`: which population it holds, its counts, spawn timer and children.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`NewSaveData<PopulationSpawnArea, PopulationSpawnAreaSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata), [`IPopulationFolderSaveDataBase`](/game-api/types/alta-world-generation/ipopulationfoldersavedatabase)
@@ -31,22 +33,22 @@ A **class** in `Root.Township`, `Alta.Populations`.
 | <Link id="m-children" /><code><Link to="/game-api/types/alta-world-generation/populationsavedatachild">{"PopulationSaveDataChild"}</Link>{"[] children"}</code> |  |
 | <Link id="m-currentpopulation" /><code>{"int currentPopulation"}</code> |  |
 | <Link id="m-definition" /><code><Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition"}</code> |  |
-| <Link id="m-isoneoff" /><code>{"bool isOneOff"}</code> |  |
+| <Link id="m-isoneoff" /><code>{"bool isOneOff"}</code> | If true, the area spawns once and doesn't refill. |
 | <Link id="m-ispopulationstarted" /><code>{"bool isPopulationStarted"}</code> |  |
 | <Link id="m-maxpopulation" /><code>{"int maxPopulation"}</code> |  |
-| <Link id="m-numberofspawnpoints" /><code>{"int numberOfSpawnPoints"}</code> |  |
-| <Link id="m-startingpopulation" /><code>{"int startingPopulation"}</code> |  |
+| <Link id="m-numberofspawnpoints" /><code>{"int numberOfSpawnPoints"}</code> | How many static spawn points the area picks. |
+| <Link id="m-startingpopulation" /><code>{"int startingPopulation"}</code> | How many members spawn when the area first starts. |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkpopulationtime-2" /><code>{"TimeSpan CheckPopulationTime { get; set; }"}</code> |  |
-| <Link id="m-children-2" /><code><Link to="/game-api/types/alta-world-generation/populationsavedatachild">{"PopulationSaveDataChild"}</Link>{"[] Children { get; set; }"}</code> |  |
-| <Link id="m-currentpopulation-2" /><code>{"int CurrentPopulation { get; set; }"}</code> |  |
-| <Link id="m-definition-2" /><code><Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" Definition { get; set; }"}</code> |  |
-| <Link id="m-ispopulationstarted-2" /><code>{"bool IsPopulationStarted { get; set; }"}</code> |  |
-| <Link id="m-maximumpopulation" /><code>{"int MaximumPopulation { get; set; }"}</code> |  |
+| <Link id="m-checkpopulationtime-2" /><code>{"TimeSpan CheckPopulationTime { get; set; }"}</code> | When the area next checks whether to spawn more. |
+| <Link id="m-children-2" /><code><Link to="/game-api/types/alta-world-generation/populationsavedatachild">{"PopulationSaveDataChild"}</Link>{"[] Children { get; set; }"}</code> | Saved data for the area's spawned children. |
+| <Link id="m-currentpopulation-2" /><code>{"int CurrentPopulation { get; set; }"}</code> | How many members were alive when saved. |
+| <Link id="m-definition-2" /><code><Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" Definition { get; set; }"}</code> | The population definition this area spawns. |
+| <Link id="m-ispopulationstarted-2" /><code>{"bool IsPopulationStarted { get; set; }"}</code> | Whether the area has already started spawning. |
+| <Link id="m-maximumpopulation" /><code>{"int MaximumPopulation { get; set; }"}</code> | Most members the area allows at once. |
 
 ## Used in
 

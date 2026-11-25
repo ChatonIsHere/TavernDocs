@@ -1,6 +1,6 @@
 ---
 title: "PlayerCosmeticCategory"
-description: "class PlayerCosmeticCategory in Root.Township."
+description: "A category of player cosmetics (a slot such as a hat or shirt), loaded from Resources/Cosmetic Categories. Picks random items for random outfits."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerCosmeticCategory
 
 A **class** in `Root.Township`, `Alta.Customization`.
+
+A category of player cosmetics (a slot such as a hat or shirt), loaded from `Resources/Cosmetic Categories`. Picks random items for random outfits.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** [`CustomizationCategory`](/game-api/types/alta-customization/customizationcategory)
@@ -35,14 +37,14 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allcategories-2" /><code>{"static "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] AllCategories { get; }"}</code> |  |
+| <Link id="m-allcategories-2" /><code>{"static "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] AllCategories { get; }"}</code> | Every active category, sorted by priority. Loaded once, or every time in the editor. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getrandom" /><code>{"override uint GetRandom(ICollection<uint> items, bool canUseNonOwnedItems)"}</code> |  |
-| <Link id="m-getrandom-2" /><code>{"override "}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" GetRandom(ICollection<"}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{"> items)"}</code> |  |
+| <Link id="m-getrandom" /><code>{"override uint GetRandom(ICollection<uint> items, bool canUseNonOwnedItems)"}</code> | Picks a random item, or none by the category's null chances. The ID version only picks owned items, or available ones if allowed. |
+| <Link id="m-getrandom-2" /><code>{"override "}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" GetRandom(ICollection<"}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{"> items)"}</code> | Picks a random item, or none by the category's null chances. The ID version only picks owned items, or available ones if allowed. |
 | <Link id="m-loadallcategories" /><code>{"private static void LoadAllCategories()"}</code> |  |
 
 ## Used in

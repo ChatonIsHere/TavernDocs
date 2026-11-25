@@ -1,6 +1,6 @@
 ---
 title: "CommandResult"
-description: "For an object result, Log() serializes it to JSON and, in the same line, copies that JSON to the system clipboard of the machine running the game."
+description: "What a console command returns: a result string or an exception, plus the command that ran. The generic CommandResult<T> subclass carries a typed resu"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Console`.
 
-For an object result, `Log()` serializes it to JSON and, in the same line, copies that JSON to the system clipboard of the machine running the game.
+What a console command returns: a result string or an exception, plus the command that ran. The generic `CommandResult<T>` subclass carries a typed result.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Derived types** [`CommandResult<T>`](/game-api/types/alta-console/commandresult-t)
@@ -29,23 +29,23 @@ For an object result, `Log()` serializes it to JSON and, in the same line, copie
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | Shared NLog logger the results are written to. |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-command" /><code><Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" "}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-exception" /><code>{"Exception Exception { get; set; }"}</code> |  |
-| <Link id="m-resultstring" /><code>{"virtual string ResultString { get; }"}</code> |  |
+| <Link id="m-command" /><code><Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" "}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" { get; private set; }"}</code> | The console command that produced this result. |
+| <Link id="m-exception" /><code>{"Exception Exception { get; set; }"}</code> | The exception the command threw, or null if it succeeded. |
+| <Link id="m-resultstring" /><code>{"virtual string ResultString { get; }"}</code> | The result as text. `VoidResult` uses "Success"; the generic version uses its result's `ToString`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-errorresult" /><code>{"static "}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{" ErrorResult(Exception exception, "}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> |  |
-| <Link id="m-log" /><code>{"virtual void Log()"}</code> |  |
-| <Link id="m-voidresult" /><code>{"static "}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{" VoidResult("}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> |  |
+| <Link id="m-errorresult" /><code>{"static "}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{" ErrorResult(Exception exception, "}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> | Makes a result that wraps an exception thrown by the command. |
+| <Link id="m-log" /><code>{"virtual void Log()"}</code> | Writes the result to the console log at trace level. The generic version can print tables or JSON. |
+| <Link id="m-voidresult" /><code>{"static "}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{" VoidResult("}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> | Makes a plain "Success" result for commands that return nothing. |
 
 ## Used in
 

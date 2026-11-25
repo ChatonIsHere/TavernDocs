@@ -1,6 +1,6 @@
 ---
 title: "ChisellingDeck"
-description: "Holds the current TimberBlock (CurrentBlock), the Guide (ChiselDefinition), its size and MaxSize. Resize(ChiselBlockSize) is server only."
+description: "The carpentry bench: holds a timber block whose size grows as wood is docked into it, spawns the matching block prefab and syncs which block is curren"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Carpentry`.
 
-Holds the current `TimberBlock` (`CurrentBlock`), the `Guide` (`ChiselDefinition`), its size and `MaxSize`. `Resize(ChiselBlockSize)` is server only.
+The carpentry bench: holds a timber block whose size grows as wood is docked into it, spawns the matching block prefab and syncs which block is current. Server drives it; saves the block's carving.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavableFull<ChisellingDeckSaveData>`](/game-api/types/alta-world/isavablefull-t), [`ISavable<ChisellingDeckSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<ChisellingDeckSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase), [`ISavableFull`](/game-api/types/alta-world/isavablefull-t)
@@ -30,8 +30,8 @@ Holds the current `TimberBlock` (`CurrentBlock`), the `Guide` (`ChiselDefinition
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-blockmodified" /><code><Link to="/game-api/types/alta-crafting/timberblockevent">{"TimberBlockEvent"}</Link>{" blockModified"}</code> |  |
-| <Link id="m-changedblock" /><code><Link to="/game-api/types/alta-crafting/timberblockevent">{"TimberBlockEvent"}</Link>{" changedBlock"}</code> |  |
+| <Link id="m-blockmodified" /><code><Link to="/game-api/types/alta-crafting/timberblockevent">{"TimberBlockEvent"}</Link>{" blockModified"}</code> | Event raised when the current block is carved. |
+| <Link id="m-changedblock" /><code><Link to="/game-api/types/alta-crafting/timberblockevent">{"TimberBlockEvent"}</Link>{" changedBlock"}</code> | Event raised when the current block is replaced or removed. |
 | <Link id="m-blockmap" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"[] blockMap"}</code> |  |
 | <Link id="m-blockpositioner" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberblockspawner">{"TimberBlockSpawner"}</Link>{" blockPositioner"}</code> |  |
 | <Link id="m-collidergroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" colliderGroup"}</code> |  |
@@ -46,25 +46,25 @@ Holds the current `TimberBlock` (`CurrentBlock`), the `Guide` (`ChiselDefinition
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-blockpositioner-2" /><code><Link to="/game-api/types/alta-crafting/timberblockspawner">{"TimberBlockSpawner"}</Link>{" BlockPositioner { get; }"}</code> |  |
-| <Link id="m-currentblock" /><code><Link to="/game-api/types/alta-crafting/timberblock">{"TimberBlock"}</Link>{" CurrentBlock { get; private set; }"}</code> |  |
-| <Link id="m-currentrequiredsize" /><code>{"int CurrentRequiredSize { get; }"}</code> |  |
-| <Link id="m-currentsize-2" /><code>{"int CurrentSize { get; set; }"}</code> |  |
-| <Link id="m-guide" /><code><Link to="/game-api/types/alta-crafting/chiseldefinition">{"ChiselDefinition"}</Link>{" Guide { get; private set; }"}</code> |  |
-| <Link id="m-hasspace" /><code>{"bool HasSpace { get; }"}</code> |  |
-| <Link id="m-isblocknotmodified" /><code>{"bool IsBlockNotModified { get; }"}</code> |  |
-| <Link id="m-maxsize-2" /><code>{"int MaxSize { get; }"}</code> |  |
-| <Link id="m-wedgesperblock-2" /><code>{"int WedgesPerBlock { get; }"}</code> |  |
+| <Link id="m-blockpositioner-2" /><code><Link to="/game-api/types/alta-crafting/timberblockspawner">{"TimberBlockSpawner"}</Link>{" BlockPositioner { get; }"}</code> | Spawner that gives the spot each block size sits at. |
+| <Link id="m-currentblock" /><code><Link to="/game-api/types/alta-crafting/timberblock">{"TimberBlock"}</Link>{" CurrentBlock { get; private set; }"}</code> | The timber block on the bench, or null when empty. |
+| <Link id="m-currentrequiredsize" /><code>{"int CurrentRequiredSize { get; }"}</code> | Current size plus one if the dock is currently holding wood, capped at the max. |
+| <Link id="m-currentsize-2" /><code>{"int CurrentSize { get; set; }"}</code> | Block size as a number (0 means empty). Setting it on the server despawns the old block and spawns one of the new size. |
+| <Link id="m-guide" /><code><Link to="/game-api/types/alta-crafting/chiseldefinition">{"ChiselDefinition"}</Link>{" Guide { get; private set; }"}</code> | The chisel guide (recipe) currently set on the bench. Private setter. |
+| <Link id="m-hasspace" /><code>{"bool HasSpace { get; }"}</code> | True while the block is below its maximum size. |
+| <Link id="m-isblocknotmodified" /><code>{"bool IsBlockNotModified { get; }"}</code> | True if there's no block or it hasn't been carved yet. |
+| <Link id="m-maxsize-2" /><code>{"int MaxSize { get; }"}</code> | Largest block size allowed, as a number. |
+| <Link id="m-wedgesperblock-2" /><code>{"int WedgesPerBlock { get; }"}</code> | How many wedges one size step of block is worth, used when shrinking a block into refuse. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-resize" /><code>{"void Resize("}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" toSize)"}</code> |  |
-| <Link id="m-setupblockmap" /><code>{"bool SetupBlockMap()"}</code> |  |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Creates the sync for the current block. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: makes sure the block spawner has room straight away. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends the current block to a joining player. |
+| <Link id="m-resize" /><code>{"void Resize("}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" toSize)"}</code> | Server: shrinks the block down to a size, dropping wedges as refuse. A carved block is cleared entirely and refunds part of its wood. |
+| <Link id="m-setupblockmap" /><code>{"bool SetupBlockMap()"}</code> | Editor: fills the size-to-prefab map from the levels list if it's empty. True if it changed. |
 | <Link id="m-blockdone" /><code>{"private void BlockDone("}<Link to="/game-api/types/alta-crafting/timberblock">{"TimberBlock"}</Link>{" block)"}</code> |  |
 | <Link id="m-blockmodified-2" /><code>{"private void BlockModified("}<Link to="/game-api/types/alta-crafting/timberblock">{"TimberBlock"}</Link>{" block)"}</code> |  |
 | <Link id="m-loadsetup" /><code>{"private void Alta.Chunks.ISavableFull.LoadSetup()"}</code> |  |

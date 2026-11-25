@@ -1,6 +1,6 @@
 ---
 title: "ImpactType"
-description: "enum ImpactType in Root.Township."
+description: "Kind of damage an impact does: pierce, slash, blunt, caustic, poison, explosive or spiritual."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactType
 
 An **enum** in `Root.Township`, `Alta.Impact`.
+
+Kind of damage an impact does: pierce, slash, blunt, caustic, poison, explosive or spiritual.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 

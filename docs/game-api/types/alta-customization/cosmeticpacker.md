@@ -1,6 +1,6 @@
 ---
 title: "CosmeticPacker"
-description: "class CosmeticPacker in Root.Township."
+description: "Client: merges a character's cosmetic parts into a few meshes and one packed texture, then applies them to the character's clothes. Packing is queued "
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CosmeticPacker
 
 A **class** in `Root.Township`, `Alta.Customization`.
+
+Client: merges a character's cosmetic parts into a few meshes and one packed texture, then applies them to the character's clothes. Packing is queued on `CosmeticPackScheduler`.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** `MonoBehaviour`
@@ -58,10 +60,10 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-androidtexturesizemultiplier" /><code>{"float AndroidTextureSizeMultiplier { get; set; }"}</code> |  |
-| <Link id="m-bodytypeindex" /><code>{"int BodyTypeIndex { get; set; }"}</code> |  |
-| <Link id="m-inputs-2" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-customization/cosmeticpacker-partid">{"CosmeticPacker.PartId"}</Link>{", "}<Link to="/game-api/types/alta-customization/cosmeticpacker-input">{"CosmeticPacker.Input"}</Link>{"> Inputs { get; }"}</code> |  |
-| <Link id="m-istexturesharingallowed" /><code>{"bool IsTextureSharingAllowed { get; set; }"}</code> |  |
+| <Link id="m-androidtexturesizemultiplier" /><code>{"float AndroidTextureSizeMultiplier { get; set; }"}</code> | Scale applied to the packed texture size on Android. |
+| <Link id="m-bodytypeindex" /><code>{"int BodyTypeIndex { get; set; }"}</code> | The body type used when baking bones on Android. |
+| <Link id="m-inputs-2" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-customization/cosmeticpacker-partid">{"CosmeticPacker.PartId"}</Link>{", "}<Link to="/game-api/types/alta-customization/cosmeticpacker-input">{"CosmeticPacker.Input"}</Link>{"> Inputs { get; }"}</code> | The parts to pack, by part ID. Change these, then call `PackAndApply`. |
+| <Link id="m-istexturesharingallowed" /><code>{"bool IsTextureSharingAllowed { get; set; }"}</code> | Whether parts may share texture space when packing. |
 | <Link id="m-startinglod" /><code>{"private int StartingLOD { get; }"}</code> |  |
 | <Link id="m-texturesizemultiplier" /><code>{"private float TextureSizeMultiplier { get; }"}</code> |  |
 
@@ -69,18 +71,18 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-androidprebonesbaking" /><code>{"event Action AndroidPreBonesBaking"}</code> |  |
-| <Link id="m-finishedpacking" /><code>{"event Action FinishedPacking"}</code> |  |
+| <Link id="m-androidprebonesbaking" /><code>{"event Action AndroidPreBonesBaking"}</code> | Raised once on Android before bones are baked into the packed meshes. Cleared after it fires. |
+| <Link id="m-finishedpacking" /><code>{"event Action FinishedPacking"}</code> | Raised once when packing finishes and the result is applied. Cleared after it fires. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clean" /><code>{"void Clean()"}</code> |  |
-| <Link id="m-packandapply" /><code>{"void PackAndApply()"}</code> |  |
-| <Link id="m-packfromscheduler" /><code>{"async Task PackFromScheduler("}<Link to="/game-api/types/global-a-b/addressablesession">{"AddressableSession"}</Link>{" session, CancellationToken cancellation)"}</code> |  |
-| <Link id="m-pause" /><code>{"void Pause()"}</code> |  |
-| <Link id="m-unpause" /><code>{"void Unpause()"}</code> |  |
+| <Link id="m-clean" /><code>{"void Clean()"}</code> | Cancels any queued pack and frees the inputs, textures, materials and meshes. Called on destroy. |
+| <Link id="m-packandapply" /><code>{"void PackAndApply()"}</code> | Queues a pack for the next frame. While paused, it waits until `Unpause`. |
+| <Link id="m-packfromscheduler" /><code>{"async Task PackFromScheduler("}<Link to="/game-api/types/global-a-b/addressablesession">{"AddressableSession"}</Link>{" session, CancellationToken cancellation)"}</code> | Runs the pack. Called by the scheduler, not by your code. |
+| <Link id="m-pause" /><code>{"void Pause()"}</code> | Holds back `PackAndApply` until `Unpause`. |
+| <Link id="m-unpause" /><code>{"void Unpause()"}</code> | Ends a pause, and packs if a pack was asked for meanwhile. |
 | <Link id="m-bakingmeshes" /><code>{"private IEnumerable<Mesh> BakingMeshes(int startingLOD) (iterator)"}</code> |  |
 | <Link id="m-fillpartmap" /><code>{"private async Task FillPartMap("}<Link to="/game-api/types/global-a-b/addressablesession">{"AddressableSession"}</Link>{" session, CancellationToken cancellationToken)"}</code> |  |
 | <Link id="m-getsafeenumerable" /><code>{"private IEnumerable<T> GetSafeEnumerable<T>(T[] elements, int start, int end) (iterator)"}</code> |  |

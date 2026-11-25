@@ -1,6 +1,6 @@
 ---
 title: "Stat"
-description: "class Stat in Root.Township."
+description: "One platform achievement stat (such as a Steam stat), as an int or a float. Setting a value passes it on to AchievementManager, which sends it to the "
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Stat
 
 A **class** in `Root.Township`, `Alta.Achievements`.
+
+One platform achievement stat (such as a Steam stat), as an int or a float. Setting a value passes it on to `AchievementManager`, which sends it to the platform.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 
@@ -32,18 +34,18 @@ A **class** in `Root.Township`, `Alta.Achievements`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-player/achievementstatdefinition">{"AchievementStatDefinition"}</Link>{" Definition { get; private set; }"}</code> |  |
-| <Link id="m-floatvalue-2" /><code>{"float FloatValue { get; set; }"}</code> |  |
-| <Link id="m-intvalue-2" /><code>{"int IntValue { get; set; }"}</code> |  |
-| <Link id="m-isdefined" /><code>{"bool IsDefined { get; private set; }"}</code> |  |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-player/achievementstatdefinition">{"AchievementStatDefinition"}</Link>{" Definition { get; private set; }"}</code> | The stat's definition asset. |
+| <Link id="m-floatvalue-2" /><code>{"float FloatValue { get; set; }"}</code> | The float value. Setting it tells the manager the stat changed. |
+| <Link id="m-intvalue-2" /><code>{"int IntValue { get; set; }"}</code> | The int value. Setting it tells the manager the stat changed. |
+| <Link id="m-isdefined" /><code>{"bool IsDefined { get; private set; }"}</code> | True once a value has come back from the platform through `ServerUpdate`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-requestupdate" /><code>{"void RequestUpdate()"}</code> |  |
-| <Link id="m-serverupdate" /><code>{"void ServerUpdate(int value)"}</code> |  |
-| <Link id="m-serverupdate-2" /><code>{"void ServerUpdate(float value)"}</code> |  |
+| <Link id="m-requestupdate" /><code>{"void RequestUpdate()"}</code> | Asks the platform for the stat's current value. |
+| <Link id="m-serverupdate" /><code>{"void ServerUpdate(int value)"}</code> | Sets the value received from the platform and marks the stat as defined. |
+| <Link id="m-serverupdate-2" /><code>{"void ServerUpdate(float value)"}</code> | Sets the value received from the platform and marks the stat as defined. |
 
 ## Used in
 

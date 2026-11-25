@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<T>"
-description: "abstract class AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<T> in Alta.MenuItem."
+description: "Editor menu marker: a settings asset's nested Create class inherits it to appear under Assets/Create/Township/Features/Player. Does nothing at runtime"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject&lt;T&gt;
 
 An **abstract class** in `Alta.MenuItem`, no namespace.
+
+Editor menu marker: a settings asset's nested `Create` class inherits it to appear under Assets/Create/Township/Features/Player. Does nothing at runtime.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`AltaMenuItemBase.Assets.Create.Township.Features.Player`](/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-player)

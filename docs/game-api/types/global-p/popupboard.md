@@ -1,6 +1,6 @@
 ---
 title: "PopupBoard"
-description: "class PopupBoard in Root.Township."
+description: "A world space popup with a title and a message. Destroys its own GameObject when closed, unless set not to."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PopupBoard
 
 A **class** in `Root.Township`, no namespace.
+
+A world space popup with a title and a message. Destroys its own GameObject when closed, unless set not to.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MonoBehaviour`, [`IPopupBoard`](/game-api/types/global-i-l/ipopupboard)
@@ -34,22 +36,22 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> |  |
-| <Link id="m-title" /><code>{"string Title { get; set; }"}</code> |  |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |  |
+| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> | The body text shown on the popup. |
+| <Link id="m-title" /><code>{"string Title { get; set; }"}</code> | The title text shown on the popup. |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | The popup's transform, so callers can place it. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-closed" /><code>{"event Action<"}<Link to="/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{"> Closed"}</code> |  |
+| <Link id="m-closed" /><code>{"event Action<"}<Link to="/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{"> Closed"}</code> | Raised when `Close` is called, before the popup is destroyed. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-close" /><code>{"void Close()"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| <Link id="m-close" /><code>{"void Close()"}</code> | Raises `Closed`, then destroys the popup's GameObject if it's set to. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Returns the popup's title and object name, for logs. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "ScaleLerpPooledObject"
-description: "class ScaleLerpPooledObject in Root.Township."
+description: "A pooled object that grows from tiny to its start size when taken from the pool and shrinks away before it goes back. Client-side visual effect."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ScaleLerpPooledObject
 
 A **class** in `Root.Township`, no namespace.
+
+A pooled object that grows from tiny to its start size when taken from the pool and shrinks away before it goes back. Client-side visual effect.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`PooledObject`](/game-api/types/global-p/pooledobject)
@@ -35,17 +37,17 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isalwaysupdating" /><code>{"protected virtual bool IsAlwaysUpdating { get; }"}</code> |  |
-| <Link id="m-isreleasing" /><code>{"protected bool IsReleasing { get; private set; }"}</code> |  |
+| <Link id="m-isalwaysupdating" /><code>{"protected virtual bool IsAlwaysUpdating { get; }"}</code> | When true, subclasses keep `UpdateLerp` registered themselves, so this class does not register or deregister it. False by default. |
+| <Link id="m-isreleasing" /><code>{"protected bool IsReleasing { get; private set; }"}</code> | True while the object is shrinking on its way back to the pool. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-release" /><code>{"override void Release()"}</code> |  |
+| <Link id="m-release" /><code>{"override void Release()"}</code> | Unparents the object and starts shrinking it. The real pool release happens in `FadeFinished` once the shrink ends. |
 | <Link id="m-animatestart" /><code>{"private void AnimateStart("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
-| <Link id="m-fadefinished" /><code>{"protected virtual void FadeFinished()"}</code> |  |
-| <Link id="m-lerp" /><code>{"protected void Lerp(float target, float speed)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> |  |
-| <Link id="m-updatelerp" /><code>{"protected virtual void UpdateLerp()"}</code> |  |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Sets up the scale lerp, snaps the scale to 0.01 and hooks the grow animation to the pool's `Requested` event. |
+| <Link id="m-fadefinished" /><code>{"protected virtual void FadeFinished()"}</code> | Called when the shrink finishes. Stops updating and returns the object to the pool. |
+| <Link id="m-lerp" /><code>{"protected void Lerp(float target, float speed)"}</code> | Starts a scale lerp to a target size at the given speed, registering the update if needed. |
+| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> | Deregisters the update method before the base clean-up. |
+| <Link id="m-updatelerp" /><code>{"protected virtual void UpdateLerp()"}</code> | Steps the scale lerp each frame and deregisters itself when the lerp ends (unless `IsAlwaysUpdating`). |

@@ -1,6 +1,6 @@
 ---
 title: "Predicate"
-description: "abstract class Predicate in Root.Township."
+description: "Base for a logic term in the AI knowledge system: a functor with argument terms that is evaluated against a KnowledgeHolder to produce weighted result"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Predicate
 
 An **abstract class** in `Root.Township`, `Alta.Intelligence`.
+
+Base for a logic term in the AI knowledge system: a functor with argument terms that is evaluated against a `KnowledgeHolder` to produce weighted results. Operators combine predicates.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`ITerm`](/game-api/types/alta-intelligence/iterm), [`ICompoundPart`](/game-api/types/alta-intelligence/icompoundpart)
@@ -27,8 +29,8 @@ An **abstract class** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-functor" /><code><Link to="/game-api/types/alta-intelligence/baseatom">{"BaseAtom"}</Link>{" Functor { get; private set; }"}</code> |  |
-| <Link id="m-terms" /><code><Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] Terms { get; private set; }"}</code> |  |
+| <Link id="m-functor" /><code><Link to="/game-api/types/alta-intelligence/baseatom">{"BaseAtom"}</Link>{" Functor { get; private set; }"}</code> | The predicate's head atom. |
+| <Link id="m-terms" /><code><Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] Terms { get; private set; }"}</code> | The predicate's arguments. |
 | <Link id="m-alta-intelligence-icompoundpart-first" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" Alta.Intelligence.ICompoundPart.First { get; }"}</code> |  |
 | <Link id="m-alta-intelligence-icompoundpart-remaining" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] Alta.Intelligence.ICompoundPart.Remaining { get; }"}</code> |  |
 
@@ -36,18 +38,18 @@ An **abstract class** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkbind" /><code><Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" CheckBind(Dictionary<"}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"> bindings)"}</code> |  |
-| <Link id="m-constantinitialize" /><code>{"void ConstantInitialize("}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" definition)"}</code> |  |
-| <Link id="m-contains" /><code>{"bool Contains("}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" other)"}</code> |  |
-| <Link id="m-evaluate" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-intelligence/result">{"Result"}</Link>{"> Evaluate("}<Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{" knowledgeHolder) (iterator)"}</code> |  |
-| <Link id="m-op-addition" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" op_Addition("}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" left, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> |  |
-| <Link id="m-op-bitwiseand" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" op_BitwiseAnd("}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" left, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> |  |
-| <Link id="m-op-bitwiseor" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" op_BitwiseOr("}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" left, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> |  |
-| <Link id="m-op-exclusiveor" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" op_ExclusiveOr("}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" left, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> |  |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" op_Implicit(bool value)"}</code> |  |
-| <Link id="m-op-logicalnot" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" op_LogicalNot("}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> |  |
-| <Link id="m-evaluateinternal" /><code>{"protected abstract IEnumerable<"}<Link to="/game-api/types/alta-intelligence/result">{"Result"}</Link>{"> EvaluateInternal("}<Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{" knowledgeHolder)"}</code> |  |
-| <Link id="m-fromcompoundpart" /><code>{"protected abstract "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" FromCompoundPart("}<Link to="/game-api/types/alta-intelligence/compoundpart">{"CompoundPart"}</Link>{" compoundPart)"}</code> |  |
+| <Link id="m-checkbind" /><code><Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" CheckBind(Dictionary<"}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"> bindings)"}</code> | Returns this predicate with any bound variables replaced, or itself if nothing is bound. |
+| <Link id="m-constantinitialize" /><code>{"void ConstantInitialize("}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" definition)"}</code> | Initializes constant terms from an atom definition. |
+| <Link id="m-contains" /><code>{"bool Contains("}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" other)"}</code> | True if the given term is this predicate, its functor or inside any of its terms. |
+| <Link id="m-evaluate" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-intelligence/result">{"Result"}</Link>{"> Evaluate("}<Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{" knowledgeHolder) (iterator)"}</code> | Evaluates against a knowledge holder and merges results with the same bindings, keeping the highest weighting. |
+| <Link id="m-op-addition" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" op_Addition("}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" left, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> | Combines two predicates with `Plus`. |
+| <Link id="m-op-bitwiseand" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" op_BitwiseAnd("}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" left, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> | Combines two predicates with `And`. |
+| <Link id="m-op-bitwiseor" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" op_BitwiseOr("}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" left, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> | Combines two predicates with `Or`. |
+| <Link id="m-op-exclusiveor" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" op_ExclusiveOr("}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" left, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> | Combines two predicates with `Xor`. |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" op_Implicit(bool value)"}</code> | Converts a bool: true becomes a `True` predicate, false becomes null. |
+| <Link id="m-op-logicalnot" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" op_LogicalNot("}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> | Wraps a predicate in `Not`. |
+| <Link id="m-evaluateinternal" /><code>{"protected abstract IEnumerable<"}<Link to="/game-api/types/alta-intelligence/result">{"Result"}</Link>{"> EvaluateInternal("}<Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{" knowledgeHolder)"}</code> | Subclass evaluation. Results are deduplicated by `Evaluate`. |
+| <Link id="m-fromcompoundpart" /><code>{"protected abstract "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" FromCompoundPart("}<Link to="/game-api/types/alta-intelligence/compoundpart">{"CompoundPart"}</Link>{" compoundPart)"}</code> | Builds a predicate of the same kind from a rebuilt functor and terms. |
 
 ## Used in
 

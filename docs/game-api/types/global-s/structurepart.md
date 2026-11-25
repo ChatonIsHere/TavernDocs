@@ -1,6 +1,6 @@
 ---
 title: "StructurePart"
-description: "class StructurePart in Root.Township."
+description: "A piece that MiningBaseGenerator can place in a generated mine: its size in tiles, the sides that are gates, solid or air, and limits on how low it ca"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StructurePart
 
 A **class** in `Root.Township`, no namespace.
+
+A piece that `MiningBaseGenerator` can place in a generated mine: its size in tiles, the sides that are gates, solid or air, and limits on how low it can be placed.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`, [`IIgnoreForStaticFlatten`](/game-api/types/alta-utilities/iignoreforstaticflatten), [`IDontSplit`](/game-api/types/global-i-l/idontsplit)
@@ -26,9 +28,9 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-x" /><code>{"int x"}</code> |  |
-| <Link id="m-y" /><code>{"int y"}</code> |  |
-| <Link id="m-z" /><code>{"int z"}</code> |  |
+| <Link id="m-x" /><code>{"int x"}</code> | Public grid coordinate field; not used in this class. |
+| <Link id="m-y" /><code>{"int y"}</code> | Public grid coordinate field; not used in this class. |
+| <Link id="m-z" /><code>{"int z"}</code> | Public grid coordinate field; not used in this class. |
 | <Link id="m-air" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] air"}</code> |  |
 | <Link id="m-connecttoair" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] connectToAir"}</code> |  |
 | <Link id="m-connecttosolid" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] connectToSolid"}</code> |  |
@@ -51,21 +53,21 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-air-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] Air { get; }"}</code> |  |
-| <Link id="m-connecttoair-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] ConnectToAir { get; }"}</code> |  |
-| <Link id="m-connecttosolid-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] ConnectToSolid { get; }"}</code> |  |
-| <Link id="m-depth-2" /><code>{"int Depth { get; }"}</code> |  |
-| <Link id="m-gates-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] Gates { get; }"}</code> |  |
-| <Link id="m-height-2" /><code>{"int Height { get; }"}</code> |  |
-| <Link id="m-isrequiringgate-2" /><code>{"bool IsRequiringGate { get; }"}</code> |  |
-| <Link id="m-maximumdrop-2" /><code>{"int MaximumDrop { get; }"}</code> |  |
-| <Link id="m-maximumy-2" /><code>{"int MaximumY { get; }"}</code> |  |
-| <Link id="m-minimumdrop-2" /><code>{"int MinimumDrop { get; }"}</code> |  |
-| <Link id="m-minimumy-2" /><code>{"int MinimumY { get; }"}</code> |  |
-| <Link id="m-solid-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] Solid { get; }"}</code> |  |
-| <Link id="m-structurecubes-2" /><code><Link to="/game-api/types/global-s/structurecube">{"StructureCube"}</Link>{"[] StructureCubes { get; }"}</code> |  |
-| <Link id="m-structuretype-2" /><code><Link to="/game-api/types/global-s/structuretype">{"StructureType"}</Link>{" "}<Link to="/game-api/types/global-s/structuretype">{"StructureType"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-width-2" /><code>{"int Width { get; }"}</code> |  |
+| <Link id="m-air-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] Air { get; }"}</code> | Per-tile flags of sides that are open air. |
+| <Link id="m-connecttoair-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] ConnectToAir { get; }"}</code> | Per-tile flags of sides that must touch air. |
+| <Link id="m-connecttosolid-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] ConnectToSolid { get; }"}</code> | Per-tile flags of sides that must touch solid ground. |
+| <Link id="m-depth-2" /><code>{"int Depth { get; }"}</code> | Size in tiles along z. |
+| <Link id="m-gates-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] Gates { get; }"}</code> | Per-tile flags of sides that are openings, built from the cubes. |
+| <Link id="m-height-2" /><code>{"int Height { get; }"}</code> | Size in tiles along y. |
+| <Link id="m-isrequiringgate-2" /><code>{"bool IsRequiringGate { get; }"}</code> | If true, the generator only places this part where a path connects to one of its gates. |
+| <Link id="m-maximumdrop-2" /><code>{"int MaximumDrop { get; }"}</code> | Highest drop the generator will try. No limit when left at `int.MaxValue`. |
+| <Link id="m-maximumy-2" /><code>{"int MaximumY { get; }"}</code> | Highest tile row the part may be placed at, or -1 for no limit. |
+| <Link id="m-minimumdrop-2" /><code>{"int MinimumDrop { get; }"}</code> | Lowest drop (in tiles) below the connecting point the generator will try. |
+| <Link id="m-minimumy-2" /><code>{"int MinimumY { get; }"}</code> | Lowest tile row the part may be placed at. |
+| <Link id="m-solid-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] Solid { get; }"}</code> | Per-tile flags of sides that are solid. |
+| <Link id="m-structurecubes-2" /><code><Link to="/game-api/types/global-s/structurecube">{"StructureCube"}</Link>{"[] StructureCubes { get; }"}</code> | The `StructureCube` children that describe each tile's sides. Found once and cached. |
+| <Link id="m-structuretype-2" /><code><Link to="/game-api/types/global-s/structuretype">{"StructureType"}</Link>{" "}<Link to="/game-api/types/global-s/structuretype">{"StructureType"}</Link>{" { get; }"}</code> | The structure type this part belongs to, which sets tile size. |
+| <Link id="m-width-2" /><code>{"int Width { get; }"}</code> | Size in tiles along x. |
 
 ## Methods
 

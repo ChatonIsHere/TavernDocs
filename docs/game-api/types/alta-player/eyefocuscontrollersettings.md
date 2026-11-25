@@ -1,6 +1,6 @@
 ---
 title: "EyeFocusControllerSettings"
-description: "class EyeFocusControllerSettings in Root.Township."
+description: "Settings asset for EyeFocusController, which picks what a character's eyes look at. Nearby colliders are scored by adding up penalties (detriments) an"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EyeFocusControllerSettings
 
 A **class** in `Root.Township`, `Alta.Character`.
+
+Settings asset for `EyeFocusController`, which picks what a character's eyes look at. Nearby colliders are scored by adding up penalties (detriments) and the lowest score under the maximum wins.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `ScriptableObject`
@@ -53,27 +55,27 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-baseupdateinterval-2" /><code>{"float BaseUpdateInterval { get; }"}</code> |  |
-| <Link id="m-defaultfocusoffset-2" /><code>{"Vector3 DefaultFocusOffset { get; }"}</code> |  |
-| <Link id="m-detectionoffset-2" /><code>{"Vector3 DetectionOffset { get; }"}</code> |  |
-| <Link id="m-detectionrange-2" /><code>{"float DetectionRange { get; }"}</code> |  |
-| <Link id="m-disconnecthorizontalangletan-2" /><code>{"float DisconnectHorizontalAngleTan { get; }"}</code> |  |
-| <Link id="m-disconnectverticalangletan-2" /><code>{"float DisconnectVerticalAngleTan { get; }"}</code> |  |
-| <Link id="m-distancedetriment-2" /><code>{"AnimationCurve DistanceDetriment { get; }"}</code> |  |
-| <Link id="m-horizontalangledetriment-2" /><code>{"AnimationCurve HorizontalAngleDetriment { get; }"}</code> |  |
-| <Link id="m-isusingrotationlimits-2" /><code>{"bool IsUsingRotationLimits { get; }"}</code> |  |
-| <Link id="m-layerdetrimentmask-2" /><code>{"float[] LayerDetrimentMask { get; }"}</code> |  |
-| <Link id="m-lefteyesplinerotationlimitpoints-2" /><code>{"AnimationCurve LeftEyeSplineRotationLimitPoints { get; }"}</code> |  |
-| <Link id="m-lookat-2" /><code>{"LayerMask LookAt { get; }"}</code> |  |
-| <Link id="m-maximumdetriment-2" /><code>{"float MaximumDetriment { get; }"}</code> |  |
-| <Link id="m-maximumoverlap-2" /><code>{"int MaximumOverlap { get; }"}</code> |  |
-| <Link id="m-missingrigidbodydetriment-2" /><code>{"float MissingRigidbodyDetriment { get; }"}</code> |  |
-| <Link id="m-righteyesplinerotationlimitpoints-2" /><code>{"AnimationCurve RightEyeSplineRotationLimitPoints { get; }"}</code> |  |
-| <Link id="m-updatemaximum-2" /><code>{"float UpdateMaximum { get; }"}</code> |  |
-| <Link id="m-updateminimum-2" /><code>{"float UpdateMinimum { get; }"}</code> |  |
-| <Link id="m-updateweaknessmultiplier-2" /><code>{"float UpdateWeaknessMultiplier { get; }"}</code> |  |
-| <Link id="m-velocitydetriment-2" /><code>{"AnimationCurve VelocityDetriment { get; }"}</code> |  |
-| <Link id="m-verticalangledetriment-2" /><code>{"AnimationCurve VerticalAngleDetriment { get; }"}</code> |  |
+| <Link id="m-baseupdateinterval-2" /><code>{"float BaseUpdateInterval { get; }"}</code> | Base time before the focus target is re-chosen. The winning score times `UpdateWeaknessMultiplier` is subtracted from it. |
+| <Link id="m-defaultfocusoffset-2" /><code>{"Vector3 DefaultFocusOffset { get; }"}</code> | Local position the focus handle returns to when there is no target. |
+| <Link id="m-detectionoffset-2" /><code>{"Vector3 DetectionOffset { get; }"}</code> | Local offset of the centre of the detection sphere from the head. |
+| <Link id="m-detectionrange-2" /><code>{"float DetectionRange { get; }"}</code> | Radius of the detection sphere, scaled by the head's world scale. |
+| <Link id="m-disconnecthorizontalangletan-2" /><code>{"float DisconnectHorizontalAngleTan { get; }"}</code> | Tangent of the horizontal angle past which a target is dropped or ignored (about 50 degrees by default). |
+| <Link id="m-disconnectverticalangletan-2" /><code>{"float DisconnectVerticalAngleTan { get; }"}</code> | Tangent of the vertical angle past which a target is dropped or ignored (about 30 degrees by default). |
+| <Link id="m-distancedetriment-2" /><code>{"AnimationCurve DistanceDetriment { get; }"}</code> | Penalty curve by distance from the head. |
+| <Link id="m-horizontalangledetriment-2" /><code>{"AnimationCurve HorizontalAngleDetriment { get; }"}</code> | Penalty curve by horizontal angle (degrees) off straight ahead. |
+| <Link id="m-isusingrotationlimits-2" /><code>{"bool IsUsingRotationLimits { get; }"}</code> | Inspector flag for eye rotation limits. Not read anywhere in this build. |
+| <Link id="m-layerdetrimentmask-2" /><code>{"float[] LayerDetrimentMask { get; }"}</code> | Extra penalty per physics layer, indexed by layer number (32 entries). |
+| <Link id="m-lefteyesplinerotationlimitpoints-2" /><code>{"AnimationCurve LeftEyeSplineRotationLimitPoints { get; }"}</code> | Curve for the left eye's rotation limit. Not read anywhere in this build. |
+| <Link id="m-lookat-2" /><code>{"LayerMask LookAt { get; }"}</code> | Layers searched for things to look at. |
+| <Link id="m-maximumdetriment-2" /><code>{"float MaximumDetriment { get; }"}</code> | Score ceiling. Candidates scoring above it are never picked. |
+| <Link id="m-maximumoverlap-2" /><code>{"int MaximumOverlap { get; }"}</code> | Size of the collider buffer, so the most colliders checked per search. |
+| <Link id="m-missingrigidbodydetriment-2" /><code>{"float MissingRigidbodyDetriment { get; }"}</code> | Penalty for colliders with no attached rigidbody (static scenery). |
+| <Link id="m-righteyesplinerotationlimitpoints-2" /><code>{"AnimationCurve RightEyeSplineRotationLimitPoints { get; }"}</code> | Curve for the right eye's rotation limit. Not read anywhere in this build. |
+| <Link id="m-updatemaximum-2" /><code>{"float UpdateMaximum { get; }"}</code> | Longest time allowed between re-choosing the focus target. |
+| <Link id="m-updateminimum-2" /><code>{"float UpdateMinimum { get; }"}</code> | Shortest time allowed between re-choosing the focus target. |
+| <Link id="m-updateweaknessmultiplier-2" /><code>{"float UpdateWeaknessMultiplier { get; }"}</code> | How much the winning score shortens the time until the next search. |
+| <Link id="m-velocitydetriment-2" /><code>{"AnimationCurve VelocityDetriment { get; }"}</code> | Penalty curve by the candidate's speed. By default faster objects score lower (better). |
+| <Link id="m-verticalangledetriment-2" /><code>{"AnimationCurve VerticalAngleDetriment { get; }"}</code> | Penalty curve by vertical angle (degrees) off straight ahead. |
 
 ## Used in
 

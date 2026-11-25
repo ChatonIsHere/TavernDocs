@@ -1,6 +1,6 @@
 ---
 title: "UserInfoWithPermissions"
-description: "class UserInfoWithPermissions in Alta.Api.DataTransferModels."
+description: "A user plus the policies (permissions) and verified flag read from their Alta JWT."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UserInfoWithPermissions
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+A user plus the policies (permissions) and verified flag read from their Alta JWT.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Inherits or implements** [`UserInfo`](/game-api/types/assembly-api-models/userinfo)
@@ -25,15 +27,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isverified" /><code>{"bool IsVerified { get; private set; }"}</code> |  |
-| <Link id="m-policies" /><code>{"HashSet<string> Policies { get; private set; }"}</code> |  |
+| <Link id="m-isverified" /><code>{"bool IsVerified { get; private set; }"}</code> | Whether the token carried an `is_verified` claim, or `SetVerified` was called. |
+| <Link id="m-policies" /><code>{"HashSet<string> Policies { get; private set; }"}</code> | The permission policy names from the token's `Policy` claims. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fromtoken" /><code>{"static "}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" FromToken(JwtSecurityToken token)"}</code> |  |
-| <Link id="m-setverified" /><code>{"void SetVerified()"}</code> |  |
+| <Link id="m-fromtoken" /><code>{"static "}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" FromToken(JwtSecurityToken token)"}</code> | Builds one from a JWT's `UserId`, `Username`, `is_verified` and `Policy` claims. Comma separated policies are split. |
+| <Link id="m-setverified" /><code>{"void SetVerified()"}</code> | Marks the user as verified. |
 
 ## Used in
 

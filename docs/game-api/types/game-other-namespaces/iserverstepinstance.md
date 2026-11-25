@@ -1,6 +1,6 @@
 ---
 title: "IServerStepInstance"
-description: "interface IServerStepInstance in Root.Township."
+description: "Server side of one step in a micro tutorial: starts, stops, spawns and removes its content, and reports when done."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `ATT.MicroTutorial`.
 
+Server side of one step in a micro tutorial: starts, stops, spawns and removes its content, and reports when done.
+
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`IStepInstance`](/game-api/types/game-other-namespaces/istepinstance)
 - **Derived types** [`ServerStepInstance`](/game-api/types/game-other-namespaces/serverstepinstance)
@@ -20,22 +22,22 @@ An **interface** in `Root.Township`, `ATT.MicroTutorial`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tutorial" /><code><Link to="/game-api/types/game-other-namespaces/imicrotutorial">{"IMicroTutorial"}</Link>{" Tutorial { get; }"}</code> |  |
+| <Link id="m-tutorial" /><code><Link to="/game-api/types/game-other-namespaces/imicrotutorial">{"IMicroTutorial"}</Link>{" Tutorial { get; }"}</code> | The tutorial this step belongs to. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stepcompleted" /><code>{"event Action<"}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{"> StepCompleted"}</code> |  |
+| <Link id="m-stepcompleted" /><code>{"event Action<"}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{"> StepCompleted"}</code> | Raised when the step is completed. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-complete" /><code>{"void Complete()"}</code> |  |
-| <Link id="m-despawncontent" /><code>{"void DespawnContent()"}</code> |  |
-| <Link id="m-start" /><code>{"void Start()"}</code> |  |
-| <Link id="m-stop" /><code>{"void Stop()"}</code> |  |
+| <Link id="m-complete" /><code>{"void Complete()"}</code> | Marks the step done. |
+| <Link id="m-despawncontent" /><code>{"void DespawnContent()"}</code> | Removes anything the step spawned. |
+| <Link id="m-start" /><code>{"void Start()"}</code> | Starts the step. |
+| <Link id="m-stop" /><code>{"void Stop()"}</code> | Stops the step without completing it. |
 
 ## Used in
 

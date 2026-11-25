@@ -1,6 +1,6 @@
 ---
 title: "FlyCamInput"
-description: "class FlyCamInput in Root.Township."
+description: "Generated Unity Input System wrapper for the fly cam (spectator camera) controls, with a single Playing action map (move, look, elevation, sensitivity"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FlyCamInput
 
 A **class** in `Root.Township`, no namespace.
+
+Generated Unity Input System wrapper for the fly cam (spectator camera) controls, with a single `Playing` action map (move, look, elevation, sensitivity, show names, mute and so on). Client only.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `IInputActionCollection2`, `IInputActionCollection`, `IEnumerable<InputAction>`, `IEnumerable`, `IDisposable`
@@ -46,25 +48,25 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-asset" /><code>{"InputActionAsset asset { get; }"}</code> |  |
-| <Link id="m-bindingmask" /><code>{"InputBinding? bindingMask { get; set; }"}</code> |  |
-| <Link id="m-bindings" /><code>{"IEnumerable<InputBinding> bindings { get; }"}</code> |  |
-| <Link id="m-controlschemes" /><code>{"ReadOnlyArray<InputControlScheme> controlSchemes { get; }"}</code> |  |
-| <Link id="m-devices" /><code>{"ReadOnlyArray<InputDevice>? devices { get; set; }"}</code> |  |
-| <Link id="m-playing" /><code><Link to="/game-api/types/global-e-h/flycaminput-playingactions">{"FlyCamInput.PlayingActions"}</Link>{" Playing { get; }"}</code> |  |
+| <Link id="m-asset" /><code>{"InputActionAsset asset { get; }"}</code> | The input action asset built from the embedded JSON. |
+| <Link id="m-bindingmask" /><code>{"InputBinding? bindingMask { get; set; }"}</code> | Binding mask applied to the whole asset. |
+| <Link id="m-bindings" /><code>{"IEnumerable<InputBinding> bindings { get; }"}</code> | Every binding in the asset. |
+| <Link id="m-controlschemes" /><code>{"ReadOnlyArray<InputControlScheme> controlSchemes { get; }"}</code> | The asset's control schemes (none are defined). |
+| <Link id="m-devices" /><code>{"ReadOnlyArray<InputDevice>? devices { get; set; }"}</code> | Restricts the asset to these devices, if set. |
+| <Link id="m-playing" /><code><Link to="/game-api/types/global-e-h/flycaminput-playingactions">{"FlyCamInput.PlayingActions"}</Link>{" Playing { get; }"}</code> | The `Playing` action map: WASD/left stick motion, mouse/right stick look, Q/E elevation, N to show names, M to mute and more. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-contains" /><code>{"bool Contains(InputAction action)"}</code> |  |
-| <Link id="m-disable" /><code>{"void Disable()"}</code> |  |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-enable" /><code>{"void Enable()"}</code> |  |
-| <Link id="m-findaction" /><code>{"InputAction FindAction(string actionNameOrId, bool throwIfNotFound = false)"}</code> |  |
-| <Link id="m-findbinding" /><code>{"int FindBinding(InputBinding bindingMask, out InputAction action)"}</code> |  |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<InputAction> GetEnumerator()"}</code> |  |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |  |
+| <Link id="m-contains" /><code>{"bool Contains(InputAction action)"}</code> | True if the action is in this input asset. |
+| <Link id="m-disable" /><code>{"void Disable()"}</code> | Disables every action in the asset. |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Destroys the underlying input action asset. |
+| <Link id="m-enable" /><code>{"void Enable()"}</code> | Enables every action in the asset. |
+| <Link id="m-findaction" /><code>{"InputAction FindAction(string actionNameOrId, bool throwIfNotFound = false)"}</code> | Finds an action by name or ID in the asset. |
+| <Link id="m-findbinding" /><code>{"int FindBinding(InputBinding bindingMask, out InputAction action)"}</code> | Finds the first binding matching a mask and returns its index and action. |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<InputAction> GetEnumerator()"}</code> | Iterates every action in the asset. |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Iterates every action in the asset. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "CosmeticPacker.PartId"
-description: "struct CosmeticPacker.PartId in Root.Township."
+description: "Identifies one mesh part of a cosmetic: the cosmetic's hash and the part's index in its visual."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `Root.Township`, `Alta.Customization`.
 
+Identifies one mesh part of a cosmetic: the cosmetic's hash and the part's index in its visual.
+
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Nested in** [`CosmeticPacker`](/game-api/types/alta-customization/cosmeticpacker)
 - **Inherits or implements** `IEquatable<CosmeticPacker.PartId>`
@@ -21,16 +23,16 @@ A **struct** in `Root.Township`, `Alta.Customization`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hash" /><code>{"uint hash"}</code> |  |
-| <Link id="m-index" /><code>{"int index"}</code> |  |
+| <Link id="m-hash" /><code>{"uint hash"}</code> | The cosmetic's hash (its purchasable ID). |
+| <Link id="m-index" /><code>{"int index"}</code> | Which part of the cosmetic's visual this is. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |  |
-| <Link id="m-equals-2" /><code>{"bool Equals("}<Link to="/game-api/types/alta-customization/cosmeticpacker-partid">{"CosmeticPacker.PartId"}</Link>{" other)"}</code> |  |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |  |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | Equal when both the hash and the index match. |
+| <Link id="m-equals-2" /><code>{"bool Equals("}<Link to="/game-api/types/alta-customization/cosmeticpacker-partid">{"CosmeticPacker.PartId"}</Link>{" other)"}</code> | Equal when both the hash and the index match. |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Combines the hash and the index. |
 
 ## Used in
 

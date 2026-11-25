@@ -1,6 +1,6 @@
 ---
 title: "StaticEnvironmentPiece"
-description: "A ScriptableObject with an index, a surface material and a StaticEnvironmentPieceInstance prefab. Spawn(position, rotation, scale) makes one."
+description: "An asset for a non-networked environment piece, with its prefab and surface material. Instances are pooled and spawned by ID."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Static`.
 
-A `ScriptableObject` with an index, a surface material and a `StaticEnvironmentPieceInstance` prefab. `Spawn(position, rotation, scale)` makes one.
+An asset for a non-networked environment piece, with its prefab and surface material. Instances are pooled and spawned by ID.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** [`IndexedScriptableObject`](/game-api/types/alta-world/indexedscriptableobject), [`ICollisionStandard`](/game-api/types/alta-utilities/icollisionstandard), [`IStaticEnvironmentPiecePool`](/game-api/types/alta-world/istaticenvironmentpiecepool)
@@ -41,16 +41,16 @@ A `ScriptableObject` with an index, a surface material and a `StaticEnvironmentP
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-material-2" /><code><Link to="/game-api/types/alta-utilities/surfacematerial">{"SurfaceMaterial"}</Link>{" Material { get; }"}</code> |  |
-| <Link id="m-prefab-2" /><code><Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" Prefab { get; }"}</code> |  |
+| <Link id="m-material-2" /><code><Link to="/game-api/types/alta-utilities/surfacematerial">{"SurfaceMaterial"}</Link>{" Material { get; }"}</code> | The piece's surface material, for impacts and sounds. |
+| <Link id="m-prefab-2" /><code><Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" Prefab { get; }"}</code> | The instance prefab spawned for this piece. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-load" /><code>{"static "}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" Load(uint id)"}</code> |  |
-| <Link id="m-setprefab" /><code>{"void SetPrefab("}<Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" prefab)"}</code> |  |
-| <Link id="m-spawn" /><code><Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" Spawn(Vector3 position, Quaternion rotation, Vector3 scale)"}</code> |  |
+| <Link id="m-load" /><code>{"static "}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" Load(uint id)"}</code> | Gets the piece with this ID, loading it from `Resources/StaticEnvironmentPiece` the first time. |
+| <Link id="m-setprefab" /><code>{"void SetPrefab("}<Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" prefab)"}</code> | Editor: sets the prefab. |
+| <Link id="m-spawn" /><code><Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" Spawn(Vector3 position, Quaternion rotation, Vector3 scale)"}</code> | Places an instance at the given position, rotation and scale, reusing a released one if there is one. |
 | <Link id="m-release" /><code>{"private void Alta.Static.IStaticEnvironmentPiecePool.Release("}<Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" instance)"}</code> |  |
 
 ## Used in

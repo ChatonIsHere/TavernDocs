@@ -1,6 +1,6 @@
 ---
 title: "MapGeneratorPart"
-description: "abstract class MapGeneratorPart in Root.Township."
+description: "Base asset for one part of a cave generator plugin. It makes a MapGeneratorPartInstance for each plugin run."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MapGeneratorPart
 
 An **abstract class** in `Root.Township`, `Alta.Caves.PluginParts`.
+
+Base asset for one part of a cave generator plugin. It makes a `MapGeneratorPartInstance` for each plugin run.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`GeneralValue`](/game-api/types/assembly-other/generalvalue)
@@ -33,15 +35,15 @@ An **abstract class** in `Root.Township`, `Alta.Caves.PluginParts`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-overridetarget-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" OverrideTarget { get; }"}</code> |  |
-| <Link id="m-partidentifier-2" /><code>{"int PartIdentifier { get; }"}</code> |  |
+| <Link id="m-overridetarget-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" OverrideTarget { get; }"}</code> | Plugin whose layer this part writes to instead of its own plugin. Null means the owning plugin. |
+| <Link id="m-partidentifier-2" /><code>{"int PartIdentifier { get; }"}</code> | Seed value for the part. Generated from the instance ID when missing. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getinstance" /><code>{"abstract "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> |  |
-| <Link id="m-regenerateidentifier" /><code>{"void RegenerateIdentifier()"}</code> |  |
+| <Link id="m-getinstance" /><code>{"abstract "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> | Creates the runtime instance of this part for a plugin instance. |
+| <Link id="m-regenerateidentifier" /><code>{"void RegenerateIdentifier()"}</code> | Sets the identifier from the asset's instance ID. |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
 
 ## Used in

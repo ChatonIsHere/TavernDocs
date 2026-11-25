@@ -1,6 +1,6 @@
 ---
 title: "PlayerStateManager"
-description: "Alta.PlayerStates.PlayerStateManager, a MonoBehaviour on the Player."
+description: "Component on each player that holds its current state (first join, alive, dead and so on) as a stack of nested states, switches between them, syncs ch"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.PlayerStates`.
 
-`Alta.PlayerStates.PlayerStateManager`, a `MonoBehaviour` on the `Player`.
+Component on each player that holds its current state (first join, alive, dead and so on) as a stack of nested states, switches between them, syncs changes to clients and saves them. Get it with `Player.StateManager`.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `MonoBehaviour`
@@ -42,36 +42,36 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentstate-2" /><code><Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" CurrentState { get; private set; }"}</code> |  |
-| <Link id="m-currentstatetype" /><code><Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" CurrentStateType { get; private set; }"}</code> |  |
-| <Link id="m-isleavingcurrentstate" /><code>{"bool IsLeavingCurrentState { get; private set; }"}</code> |  |
+| <Link id="m-currentstate-2" /><code><Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" CurrentState { get; private set; }"}</code> | The innermost active state. Its base states are reached through `BaseState`. |
+| <Link id="m-currentstatetype" /><code><Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" CurrentStateType { get; private set; }"}</code> | Type of the current state, or `None` if there is none. |
+| <Link id="m-isleavingcurrentstate" /><code>{"bool IsLeavingCurrentState { get; private set; }"}</code> | True while a state is being deactivated during a switch. |
 | <Link id="m-playername" /><code>{"private string PlayerName { get; }"}</code> |  |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stateactivated" /><code>{"event "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" StateActivated"}</code> |  |
-| <Link id="m-statedeactivated" /><code>{"event "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" StateDeactivated"}</code> |  |
-| <Link id="m-statemadecurrent" /><code>{"event "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" StateMadeCurrent"}</code> |  |
+| <Link id="m-stateactivated" /><code>{"event "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" StateActivated"}</code> | Raised after a state's `Activate` runs. |
+| <Link id="m-statedeactivated" /><code>{"event "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" StateDeactivated"}</code> | Raised after a state's `Deactivate` runs while leaving it. |
+| <Link id="m-statemadecurrent" /><code>{"event "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" StateMadeCurrent"}</code> | Raised after a new state becomes current, whether or not it was freshly activated. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loadfrom" /><code>{"void LoadFrom("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> |  |
-| <Link id="m-saveto" /><code>{"void SaveTo("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> |  |
-| <Link id="m-setplayer" /><code>{"void SetPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-setstate" /><code>{"void SetState("}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" stateType, "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" beforeStateLeaveCallback = null, "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" beforeStateEnterCallback = null)"}</code> |  |
-| <Link id="m-setstate-2" /><code>{"void SetState("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" newState, "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" beforeStateLeaveCallback = null, "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" beforeStateEnterCallback = null)"}</code> |  |
-| <Link id="m-startwithdefaultstate" /><code>{"void StartWithDefaultState()"}</code> |  |
-| <Link id="m-syncstatestoremoteplayer" /><code>{"void SyncStatesToRemotePlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" remotePlayer)"}</code> |  |
+| <Link id="m-loadfrom" /><code>{"void LoadFrom("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> | Rebuilds the state stack from the player save, or starts the default state if none was saved. |
+| <Link id="m-saveto" /><code>{"void SaveTo("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> | Writes the whole state stack to the player save. |
+| <Link id="m-setplayer" /><code>{"void SetPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Binds the manager to its player and creates the network method syncs. Call before loading. |
+| <Link id="m-setstate" /><code>{"void SetState("}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" stateType, "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" beforeStateLeaveCallback = null, "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" beforeStateEnterCallback = null)"}</code> | Switches to a state by type or instance. Shared base states are kept, others deactivated. Server validates the new state and sends the change to chunks. |
+| <Link id="m-setstate-2" /><code>{"void SetState("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" newState, "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" beforeStateLeaveCallback = null, "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" beforeStateEnterCallback = null)"}</code> | Switches to a state by type or instance. Shared base states are kept, others deactivated. Server validates the new state and sends the change to chunks. |
+| <Link id="m-startwithdefaultstate" /><code>{"void StartWithDefaultState()"}</code> | Sets the player into `FirstJoinState`. Used when there's no saved state. |
+| <Link id="m-syncstatestoremoteplayer" /><code>{"void SyncStatesToRemotePlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" remotePlayer)"}</code> | Sends the full state stack to one remote player, if there is a current state. |
 | <Link id="m-deactivatecurrentstateandfindcommonbase" /><code>{"private void DeactivateCurrentStateAndFindCommonBase<T>("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" leavingState, T newState)"}</code> |  |
 | <Link id="m-doubledatasize" /><code>{"private uint[] DoubleDataSize(uint[] oldData, ref uint wordIndex)"}</code> |  |
 | <Link id="m-enternewstate" /><code>{"private void EnterNewState("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" newState, "}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" stateSyncingStream, "}<Link to="/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" beforeStateEnterCallback)"}</code> |  |
 | <Link id="m-getcurrentstateorbase" /><code>{"private "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" GetCurrentStateOrBase("}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" stateType)"}</code> |  |
 | <Link id="m-getsyncstreamforleavingstate" /><code>{"private "}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" GetSyncStreamForLeavingState("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" leavingState)"}</code> |  |
-| <Link id="m-inject" /><code>{"protected void Inject("}<Link to="/game-api/types/alta-player/iplayerstatefactory">{"IPlayerStateFactory"}</Link>{" playerStateFactory)"}</code> |  |
+| <Link id="m-inject" /><code>{"protected void Inject("}<Link to="/game-api/types/alta-player/iplayerstatefactory">{"IPlayerStateFactory"}</Link>{" playerStateFactory)"}</code> | VContainer injection of the factory that creates states by type. |
 | <Link id="m-loadfromstream" /><code>{"private void LoadFromStream("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, Action<"}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{", "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{"> serializationMethod)"}</code> |  |
 | <Link id="m-serializedisk" /><code>{"private void SerializeDisk("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 | <Link id="m-serializestatetodisk" /><code>{"private void SerializeStateToDisk("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" state, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "BaseAtom"
-description: "class BaseAtom in Root.Township."
+description: "A named constant term in the AI's logic system (predicates, compounds and variables used for creature reasoning). Its nested Definition pairs a compou"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BaseAtom
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+A named constant term in the AI's logic system (predicates, compounds and variables used for creature reasoning). Its nested `Definition` pairs a compound with a goal and a weighting.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`Term`](/game-api/types/alta-intelligence/term)
@@ -28,15 +30,15 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> |  |
+| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> | The name given when the atom was created; also what `ToString` returns. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-contains" /><code>{"override bool Contains("}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" other)"}</code> |  |
-| <Link id="m-test" /><code><Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" Test(params "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| <Link id="m-contains" /><code>{"override bool Contains("}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" other)"}</code> | True only when the other term is this same atom object. |
+| <Link id="m-test" /><code><Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" Test(params "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms)"}</code> | Builds a new `Compound` of this atom applied to the given terms. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Returns the atom's name. |
 
 ## Used in
 
