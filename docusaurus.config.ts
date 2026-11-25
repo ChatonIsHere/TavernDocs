@@ -7,6 +7,7 @@ const discord = 'https://discord.gg/jNQUUDAYSj';
 const config: Config = {
     title: 'The Modding Tavern',
     tagline: 'Play, host and mod A Township Tale',
+    titleDelimiter: '-',
     favicon: 'img/favicon.png',
 
     url: 'https://moddingtavern.github.io',
