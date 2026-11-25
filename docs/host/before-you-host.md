@@ -35,10 +35,9 @@ What matters most isn't how many people play, it's where they go. Around Town th
 | --- | --- | --- | --- | --- |
 | **Minimum** | Up to about 5, mostly around Town | 2 cores | 3.5 GB | 4 GB, plus [swap](troubleshooting.md#docker) |
 | **Recommended** | Up to about 12, exploring the forest and caves | 4 cores | 7.5 GB | 8 GB |
-| **Big** | Up to 20 | 4 fast cores | 11 GB | 12 GB |
+| **Big** | About 20 | 4 fast cores | 11 GB | 12 GB |
 
 - **Faster cores beat more cores.** The game does most of its work on one main thread. Past 4 cores, more don't help, but a faster CPU does.
-- **20 players is about as many as the game copes with.** In testing the server kept up, but its slowest frames took 50 to 100 ms, whatever it ran on.
 - **A busy server's memory keeps climbing**, by up to about 1 GB an hour with 20 players. The Big row has room for a few hours of that.
 - **A new world uses all the CPU it can** for its first few minutes while it makes the forest. If you cap the server's CPU, keep at least 4 cores.
 - **On Windows**, with the Server launcher, the server uses a little less memory, since it doesn't need Wine.
