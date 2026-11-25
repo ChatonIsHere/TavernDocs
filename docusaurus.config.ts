@@ -1,0 +1,123 @@
+import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
+
+const discord = 'https://discord.gg/jNQUUDAYSj';
+
+const config: Config = {
+    title: 'The Modding Tavern',
+    tagline: 'Play, host and mod A Township Tale',
+    favicon: 'img/favicon.png',
+
+    url: 'https://moddingtavern.github.io',
+    baseUrl: '/TavernDocs/',
+    organizationName: 'ModdingTavern',
+    projectName: 'TavernDocs',
+    trailingSlash: false,
+
+    onBrokenLinks: 'throw',
+    onBrokenAnchors: 'throw',
+    markdown: {
+        hooks: {
+            onBrokenMarkdownLinks: 'throw',
+            onBrokenMarkdownImages: 'throw',
+        },
+    },
+
+    future: {
+        v4: true,
+        faster: true,
+    },
+
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en'],
+    },
+
+    presets: [
+        [
+            'classic',
+            {
+                docs: {
+                    routeBasePath: '/',
+                    sidebarPath: './sidebars.ts',
+                    editUrl: 'https://github.com/ModdingTavern/TavernDocs/edit/main/',
+                },
+                blog: false,
+                theme: {
+                    customCss: './src/css/custom.css',
+                },
+            } satisfies Preset.Options,
+        ],
+    ],
+
+    themes: [
+        [
+            require.resolve('@easyops-cn/docusaurus-search-local'),
+            {
+                hashed: true,
+                docsRouteBasePath: '/',
+                indexBlog: false,
+                highlightSearchTermsOnTargetPage: true,
+                explicitSearchResultPath: true,
+            },
+        ],
+    ],
+
+    themeConfig: {
+        colorMode: {
+            defaultMode: 'dark',
+            disableSwitch: true,
+            respectPrefersColorScheme: false,
+        },
+        navbar: {
+            title: 'The Modding Tavern',
+            items: [
+                {type: 'docSidebar', sidebarId: 'play', position: 'left', label: 'Play'},
+                {type: 'docSidebar', sidebarId: 'host', position: 'left', label: 'Host'},
+                {type: 'docSidebar', sidebarId: 'mod', position: 'left', label: 'Mod'},
+                {type: 'docSidebar', sidebarId: 'help', position: 'left', label: 'Help'},
+                {href: discord, label: 'Discord', position: 'right'},
+                {href: 'https://github.com/ModdingTavern', label: 'GitHub', position: 'right'},
+            ],
+        },
+        footer: {
+            style: 'dark',
+            links: [
+                {
+                    title: 'Docs',
+                    items: [
+                        {label: 'Play', to: '/play/welcome'},
+                        {label: 'Host a server', to: '/host/before-you-host'},
+                        {label: 'Make mods', to: '/mod/welcome'},
+                        {label: 'Help', to: '/help/getting-help'},
+                    ],
+                },
+                {
+                    title: 'Projects',
+                    items: [
+                        {label: 'TavernLauncher', href: 'https://github.com/ModdingTavern/TavernLauncher'},
+                        {label: 'TavernLib', href: 'https://github.com/ModdingTavern/TavernLib'},
+                        {label: 'TavernMods', href: 'https://moddingtavern.github.io/TavernMods/'},
+                        {label: 'a-township-container', href: 'https://github.com/ChatonIsHere/a-township-container'},
+                    ],
+                },
+                {
+                    title: 'Community',
+                    items: [
+                        {label: 'Discord', href: discord},
+                        {label: 'GitHub', href: 'https://github.com/ModdingTavern'},
+                    ],
+                },
+            ],
+            copyright: 'The Modding Tavern. Not affiliated with Alta.',
+        },
+        prism: {
+            theme: prismThemes.vsDark,
+            darkTheme: prismThemes.vsDark,
+            additionalLanguages: ['bash', 'powershell', 'json', 'ini', 'csharp', 'python', 'docker'],
+        },
+    } satisfies Preset.ThemeConfig,
+};
+
+export default config;

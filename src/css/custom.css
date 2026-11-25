@@ -1,0 +1,209 @@
+/*
+ * The Modding Tavern theme, from TavernMods' web/src/index.css: TavernLauncher's warm palette,
+ * tuned so every text colour is 5:1 or more on every surface. Dark only.
+ */
+
+:root {
+    --tavern-background: #15100d;
+    --tavern-foreground: #ede3d1;
+    --tavern-card: #1f1814;
+    --tavern-popover: #271e19;
+    --tavern-primary: #f0b24a;
+    --tavern-primary-foreground: #1d140c;
+    --tavern-secondary: #33281f;
+    --tavern-muted: #2b221c;
+    --tavern-muted-foreground: #b8a78d;
+    --tavern-accent: #3d3027;
+    --tavern-destructive: #f2877c;
+    --tavern-success: #8acb91;
+    --tavern-warning: #e8c56a;
+    --tavern-info: #80c8c1;
+    --tavern-border: #3f3127;
+    --tavern-input: #806952;
+
+    --ifm-font-family-base: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    --ifm-heading-font-family: Georgia, 'Times New Roman', serif;
+    --ifm-font-family-monospace: Consolas, 'Cascadia Mono', 'SF Mono', Menlo, monospace;
+    --ifm-font-size-base: 100%;
+    --ifm-line-height-base: 1.6;
+    --ifm-heading-line-height: 1.25;
+    --ifm-code-font-size: 92%;
+    --ifm-global-radius: 0.5rem;
+    --ifm-navbar-height: 3.5rem;
+}
+
+[data-theme='dark'] {
+    --ifm-color-primary: #f0b24a;
+    --ifm-color-primary-dark: #d8a043;
+    --ifm-color-primary-darker: #cc973f;
+    --ifm-color-primary-darkest: #a87d34;
+    --ifm-color-primary-light: #f2ba5c;
+    --ifm-color-primary-lighter: #f2be65;
+    --ifm-color-primary-lightest: #f5c980;
+
+    --ifm-background-color: var(--tavern-background);
+    --ifm-background-surface-color: var(--tavern-card);
+    --ifm-font-color-base: var(--tavern-foreground);
+    --ifm-font-color-base-inverse: var(--tavern-primary-foreground);
+    --ifm-font-color-secondary: var(--tavern-muted-foreground);
+    --ifm-heading-color: var(--tavern-foreground);
+    --ifm-color-content: var(--tavern-foreground);
+    --ifm-color-content-secondary: var(--tavern-muted-foreground);
+    --ifm-link-color: var(--tavern-primary);
+    --ifm-link-hover-color: var(--ifm-color-primary-lightest);
+
+    --ifm-color-emphasis-0: var(--tavern-background);
+    --ifm-color-emphasis-100: var(--tavern-card);
+    --ifm-color-emphasis-200: var(--tavern-muted);
+    --ifm-color-emphasis-300: var(--tavern-border);
+    --ifm-color-emphasis-400: var(--tavern-input);
+    --ifm-color-emphasis-500: var(--tavern-input);
+    --ifm-color-emphasis-600: var(--tavern-muted-foreground);
+    --ifm-color-emphasis-700: var(--tavern-muted-foreground);
+    --ifm-color-emphasis-800: var(--tavern-foreground);
+    --ifm-color-emphasis-900: var(--tavern-foreground);
+    --ifm-color-emphasis-1000: var(--tavern-foreground);
+
+    --ifm-hr-background-color: var(--tavern-border);
+    --ifm-toc-border-color: var(--tavern-border);
+    --ifm-table-border-color: var(--tavern-border);
+    --ifm-table-stripe-background: var(--tavern-card);
+    --ifm-table-head-background: var(--tavern-muted);
+    --ifm-code-background: var(--tavern-muted);
+    --ifm-card-background-color: var(--tavern-card);
+
+    --ifm-navbar-background-color: var(--tavern-card);
+    --ifm-navbar-link-color: var(--tavern-foreground);
+    --ifm-navbar-link-hover-color: var(--tavern-primary);
+    --ifm-footer-background-color: var(--tavern-card);
+    --ifm-footer-color: var(--tavern-muted-foreground);
+    --ifm-footer-link-color: var(--tavern-foreground);
+    --ifm-footer-title-color: var(--tavern-foreground);
+
+    --ifm-menu-color: var(--tavern-foreground);
+    --ifm-menu-color-active: var(--tavern-primary);
+    --ifm-menu-color-background-active: var(--tavern-accent);
+    --ifm-menu-color-background-hover: var(--tavern-muted);
+
+    --ifm-color-success: var(--tavern-success);
+    --ifm-color-success-dark: var(--tavern-success);
+    --ifm-color-success-contrast-background: #2e3126;
+    --ifm-color-success-contrast-foreground: var(--tavern-foreground);
+    --ifm-color-warning: var(--tavern-warning);
+    --ifm-color-warning-dark: var(--tavern-warning);
+    --ifm-color-warning-contrast-background: #3b3020;
+    --ifm-color-warning-contrast-foreground: var(--tavern-foreground);
+    --ifm-color-info: var(--tavern-info);
+    --ifm-color-info-dark: var(--tavern-info);
+    --ifm-color-info-contrast-background: #2d312c;
+    --ifm-color-info-contrast-foreground: var(--tavern-foreground);
+    --ifm-color-danger: var(--tavern-destructive);
+    --ifm-color-danger-dark: var(--tavern-destructive);
+    --ifm-color-danger-contrast-background: #3d2823;
+    --ifm-color-danger-contrast-foreground: var(--tavern-foreground);
+    --ifm-color-secondary: var(--tavern-secondary);
+    --ifm-color-secondary-dark: var(--tavern-muted-foreground);
+    --ifm-color-secondary-contrast-background: #342c25;
+    --ifm-color-secondary-contrast-foreground: var(--tavern-foreground);
+
+    --docusaurus-highlighted-code-line-bg: rgba(240, 178, 74, 0.12);
+    --docsearch-text-color: var(--tavern-foreground);
+}
+
+html {
+    color-scheme: dark;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+/* Small text never goes under 14px. */
+small,
+.footer__copyright,
+.table-of-contents,
+.breadcrumbs,
+.pagination-nav__sublabel {
+    font-size: max(0.875rem, 1em * 0.875);
+}
+
+:focus-visible {
+    outline: 2px solid var(--tavern-primary);
+    outline-offset: 2px;
+}
+
+::selection {
+    background: color-mix(in srgb, var(--tavern-primary) 40%, transparent);
+    color: var(--tavern-foreground);
+}
+
+/* The classic footer--dark sets its own colours, including a link colour taken from secondary. */
+.footer--dark {
+    --ifm-footer-background-color: var(--tavern-card);
+    --ifm-footer-color: var(--tavern-muted-foreground);
+    --ifm-footer-link-color: var(--tavern-foreground);
+    --ifm-footer-link-hover-color: var(--tavern-primary);
+    --ifm-footer-title-color: var(--tavern-foreground);
+    border-top: 1px solid var(--tavern-border);
+}
+
+.navbar__title {
+    font-family: var(--ifm-heading-font-family);
+    color: var(--tavern-primary);
+    font-weight: 700;
+}
+
+/* The current page is underlined, not bolder, so picking one doesn't shift its neighbours. */
+.navbar__link--active {
+    text-decoration: underline;
+    text-decoration-color: var(--tavern-primary);
+    text-underline-offset: 0.35em;
+    text-decoration-thickness: 2px;
+}
+
+.markdown a {
+    text-underline-offset: 0.15em;
+}
+
+/* Inputs get a 3:1 border. */
+.navbar__search-input,
+input,
+select,
+textarea {
+    border: 1px solid var(--tavern-input);
+}
+
+/* Screenshots sit on a card with a border so their edges read against the page. */
+.markdown img {
+    border: 1px solid var(--tavern-border);
+    border-radius: var(--ifm-global-radius);
+    background: var(--tavern-card);
+}
+
+/* Buttons and UI labels quoted in steps. */
+.markdown kbd {
+    background: var(--tavern-secondary);
+    border: 1px solid var(--tavern-input);
+    box-shadow: none;
+    color: var(--tavern-foreground);
+}
+
+/* PC and Quest tabs. */
+.tabs__item--active {
+    border-bottom-color: var(--tavern-primary);
+    color: var(--tavern-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

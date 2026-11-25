@@ -1,0 +1,45 @@
+.hero {
+    padding: 4rem 0 2rem;
+}
+
+.lead {
+    font-size: 1.2rem;
+    max-width: 44rem;
+    color: var(--tavern-foreground);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    display: block;
+    padding: 1.5rem;
+    background: var(--tavern-card);
+    border: 1px solid var(--tavern-border);
+    border-radius: var(--ifm-global-radius);
+    color: var(--tavern-foreground);
+}
+
+.card:hover {
+    border-color: var(--tavern-primary);
+    text-decoration: none;
+    color: var(--tavern-foreground);
+}
+
+.card h2 {
+    color: var(--tavern-primary);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    margin: 0;
+}
+
+.note {
+    color: var(--tavern-muted-foreground);
+    margin-bottom: 4rem;
+}
