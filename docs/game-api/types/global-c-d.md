@@ -14,283 +14,283 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `CachedSyncChannel` | internal class | `IDisposable` | 3 |  |
-| `CameraClaimer` | class | `MonoBehaviour` | 0 |  |
-| `CameraStabelizer` | class | `MonoBehaviour` | 1 |  |
-| `CapPickup` | class | `Pickup` | 2 | [Items, interaction and damage](../items/overview.md) |
-| `CaptainsWheel` | class | `MonoBehaviour` | 2 |  |
-| `CastToSurfaceEffect` | class | `DestroyByTime`, `IBuildRendererPostBake`, `IBuildBakeable` | 0 |  |
-| `CaveSeedArguments` | struct |  | 7 |  |
-| `CaveTeleporterReplacer` | class | `GenericReplacer` | 2 |  |
-| `CaveTeleporterReplacerAnimator` | class |  | 1 |  |
-| `CenterOfMassSetter` | class | `MonoBehaviour` | 4 |  |
-| `CentralGoldCoinBank` | class | `PerPlayerManager<CentralGoldCoinBank, PlayerGoldBankAccount, PlayerGoldBankAccountData>` | 0 | [Trading](../game-systems/trading.md) |
-| `CharacterControllerEvent` | class | `AltaEvent<PlayerController, CharacterControllerUnityEvent>` | 0 |  |
-| `CharacterControllerUnityEvent` | class | `UnityEvent<PlayerController>` | 0 |  |
-| `CharacterDummyController` | class | `PlayerController` | 2 |  |
-| `CharacterDummyPointer` | class | `MonoBehaviour` | 1 |  |
-| `CharacterDummySpawner` | class | `CharacterDummyPointer` | 1 |  |
-| `CharacterIKController` | class | `NetworkEntityBehaviour`, `IInitializeAsLocalPlayer` | 13 |  |
-| `CharacterInfo` | class |  | 10 |  |
-| `CharacterPoseSaver` | class | `ControllerInputButtonPressed` | 0 |  |
-| `CharacterRigPoser` | class |  | 2 |  |
-| `CharacterShellHelper` | class | `ScriptHelper` | 1 |  |
-| `CheckPoint` | class | `NetworkEntityBehaviour`, `ISavable<CheckPointData>`, `ISavableSave<CheckPointData>`, +1 more | 4 |  |
-| `CheckPointData` | class | `NewSaveData<CheckPoint, CheckPointData>` | 2 |  |
-| `ChildCheckOnOwned` | class | `NetworkEntityBehaviour` | 1 |  |
-| `ChildSyncableCollection<T, TThis, TSaveData, TElementSaveData>` | abstract class | `ChildSyncableCollectionBase<T>`, `ISavable<TSaveData>`, `ISavableSave<TSaveData>`, +1 more | 4 |  |
-| `ChildSyncableCollectionBase<T>` | abstract class | `NetworkEntityBehaviour` | 7 |  |
-| `ChildSyncableCollectionSaveData<TThis, TSavable, TData>` | class | `NewSaveData<TSavable, TThis>` | 1 |  |
-| `ChiselRecipePageProvider` | class | `GeneratedPageProvider<ChiselDefinition>` | 5 |  |
-| `ChiselRecipePageSettings` | class | `GlobalSettings<ChiselRecipePageSettings>` | 4 |  |
-| `ChiselRecipePageSettings.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.ScriptableObject<ChiselRecipePageSettings>` | 0 |  |
-| `ChiselSplineParticlesPooled` | class | `SplineParticlesPooled` | 3 |  |
-| `ChooseRandomChild` | class | `MonoBehaviour` | 0 |  |
-| `ChunkBasedEnvironment` | class | `MonoBehaviour` | 0 |  |
-| `ChunkConverter` | class | `TypeConverter` | 2 |  |
-| `ChunkDetector` | class | `NetworkEntityBehaviour` | 4 | [Chunks](../world/chunks.md#chunkdetector): `ChunkDetector` (a `NetworkEntityBehaviour`, no namespace) is how most moving things keep their chunk right. |
-| `Chunker` | class | `IChunker` | 17 | [Chunks](../world/chunks.md#chunker-how-an-entity-belongs-to-a-chunk): Every `NetworkEntity` makes one in its constructor. It's `protected` on `NetworkEntity` (reach it as `((IChunkedEntity)entity).Chunker`). |
-| `ChunkerChangedHandler` | delegate |  | 0 |  |
-| `ChunkerHelper` | static class |  | 2 |  |
-| `ChunkEventHandler` | delegate |  | 0 |  |
-| `ChunkingParent` | class | `MonoBehaviour` | 0 |  |
-| `ChunkingPrefabFolder` | class | `MonoBehaviour`, `IDestroyOnBake` | 0 |  |
-| `ChunkingPrefabReplace` | class | `MonoBehaviour`, `IBakeable` | 5 |  |
-| `ChunkPhysicsResolver` | class | `NetworkEntityBehaviour` | 3 |  |
-| `ChunkSetEventHandler` | delegate |  | 0 |  |
-| `ChunksToSync` | internal struct |  | 2 |  |
-| `ClassSerializationHelper` | static class |  | 4 |  |
-| `ClassSerializationHelper.Finalize<T>` | delegate |  | 0 |  |
-| `ClassSerializationHelper.MemberHandler<T>` | delegate |  | 0 |  |
-| `ClassSerializer<T>` | class | `Sync` | 3 |  |
-| `CleaningHelper` | class | `NetworkEntityBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 0 |  |
-| `ClickedEndEventHandler` | delegate |  | 0 |  |
-| `ClickedEventHandler` | delegate |  | 0 |  |
-| `ClientCommandHandler` | class |  | 4 |  |
-| `ClientHandler` | class | `IRemoteConsoleHandler` | 7 |  |
-| `ClientJoinResult` | enum |  | 19 | [Joining a server](../networking/joining.md): Enum of join outcomes, 1 to 13 from Alta's API, 30 to 35 from the connection. |
-| `ClientLogSender` | class |  | 2 | [Remote console](../console-and-utilities/remote-console.md) |
-| `Climbable` | class | `MonoBehaviour`, `IClimbable` | 12 |  |
-| `Climber` | class | `SmoothLocomotionModifier` | 10 |  |
-| `ClimberActivator` | class | `MonoBehaviour` | 0 |  |
-| `ClimberSettings` | class | `GlobalSettings<ClimberSettings>` | 27 |  |
-| `ClimberSettings.Raycast` | class |  | 2 |  |
-| `ClimbingSettings` | class | `GlobalSettings<ClimbingSettings>` | 31 |  |
-| `ClothManager` | class | `MonoBehaviour` | 0 |  |
-| `Cluster` | class | `NetworkEntityBehaviour` | 5 |  |
-| `ClusterEntitiesRegisterArguments` | struct |  | 4 |  |
-| `CoinPress` | class | `NetworkEntityBehaviour` | 1 | [Smelting and forging](../game-systems/smelting-and-forging.md): A lever press that turns what's in its input dock into its `outputItem`. |
-| `CoinPressGear` | class | `MonoBehaviour` | 0 |  |
-| `ColliderAltaEvent` | class | `AltaEvent<Collider, ColliderUnityEvent>` | 0 |  |
-| `ColliderDebugger` | class | `MonoBehaviour` | 0 |  |
-| `ColliderExtension` | static class |  | 2 |  |
-| `ColliderGroup` | class | `ComponentGroup<Collider>` | 8 |  |
-| `ColliderPositionHelper` | class | `PositionFromOriginHelper` | 1 |  |
-| `ColliderUnityEvent` | class | `UnityEvent<Collider>` | 0 |  |
-| `CollisionHaptic` | class | `MonoBehaviour` | 1 |  |
-| `CollisionSoundEmitter` | class | `MonoBehaviour` | 0 |  |
-| `ColorApiResponse` | internal class |  | 1 |  |
-| `ColorBoard` | class | `MonoBehaviour` | 0 |  |
-| `ColorBoardItem` | class | `MonoBehaviour` | 2 |  |
-| `ColoredExplosive` | class | `Explosive`, `ISavable<ColoredExplosiveData>`, `ISavableSave<ColoredExplosiveData>`, +2 more | 3 |  |
-| `ColoredExplosiveData` | class | `NewSaveData<ColoredExplosive, ColoredExplosiveData>` | 1 |  |
-| `ColoredParticleSystem` | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 4 |  |
-| `ColoredPooledParticleSpawner` | class | `MonoBehaviour` | 5 |  |
-| `ColorEvent` | class | `AltaEvent<Color, ColorUnityEvent>` | 0 |  |
-| `ColorFadeRelease` | class | `DelayedPooledObject` | 0 |  |
-| `ColorLerp` | class | `MonoBehaviour` | 2 |  |
-| `ColorModel<TR, TG, TB, TA>` | class | `NetworkEntityBehaviour` | 7 |  |
-| `ColorModelCore<TR, TG, TB, TA>` | class |  | 18 |  |
-| `ColorUnityEvent` | class | `UnityEvent<Color>` | 0 |  |
-| `CombatEventHandler` | delegate |  | 0 |  |
-| `CombatImpactProgressionFilter` | class | `BaseImpactChannelProgressionFilter` | 1 |  |
-| `CombatImpactProgressionFilter.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Filters.ScriptableObject<CombatImpactProgressionFilter>` | 0 |  |
-| `CombinedMeshSource` | class | `MonoBehaviour`, `IEditorProcessable` | 1 |  |
-| `CommonPrefabs` | class | `GlobalSettings<CommonPrefabs>` | 8 |  |
-| `CommonPrefabs.Create` | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<CommonPrefabs>` | 0 |  |
-| `ComponentCounter` | class | `MonoBehaviour` | 0 |  |
-| `ComponentEventSubscriber` | class | `IDisposable` | 2 |  |
-| `ComponentGroup<T>` | class | `MonoBehaviour`, `IReadOnlyCollection<T>`, `IEnumerable<T>`, +3 more | 8 |  |
-| `ComponentGroup<T>.GroupModifiedHandler` | delegate |  | 0 |  |
-| `ComponentHistoryAccess` | class | `HistoryAccess` | 1 |  |
-| `ComponentInspector` | class | `InspectorBase` | 7 |  |
-| `CompressionUtilities` | class | `MonoBehaviour` | 2 |  |
-| `ComputeShaderDarknessReader` | class | `DarknessReaderMethod` | 1 |  |
-| `ConfigurableJointExtensions` | static class |  | 3 |  |
-| `ConglomerateDestroyByTime` | class | `DestroyByTime` | 1 |  |
-| `ConsoleDisplay` | class | `MonoBehaviour` | 0 |  |
-| `ConsoleOption` | class |  | 5 |  |
-| `ConsumptionManager` | class | `MonoBehaviour` | 4 | [Hunger, eating and drinking](../game-systems/hunger-and-eating.md#consumptionmanager): `ConsumptionManager : MonoBehaviour`, top level, no namespace. One per player body. `Player` gives the body's `PlayerController`. |
-| `ControlledAnimation` | class | `MonoBehaviour` | 1 |  |
-| `ControlledRotateAndShake` | class | `MonoBehaviour` | 2 |  |
-| `Controller` | class | `NetworkEntityBehaviour` | 17 |  |
-| `ControllerAction` | class | `IControllerAction` | 10 |  |
-| `ControllerActionEventHandler` | delegate |  | 0 |  |
-| `ControllerActionMode` | class |  | 7 |  |
-| `ControllerActionProxy` | class | `IControllerAction` | 10 |  |
-| `ControllerActions` | class |  | 8 |  |
-| `ControllerActionsManager` | class | `MonoBehaviour` | 7 |  |
-| `ControllerActionsManagerProxy` | class |  | 5 |  |
-| `ControllerActionType` | enum |  | 35 |  |
-| `ControllerDPad` | class |  | 11 |  |
-| `ControllerExtension` | abstract class | `MonoBehaviour` | 9 |  |
-| `ControllerExtensionGroup` | class | `ComponentGroup<ControllerExtension>` | 0 |  |
-| `ControllerInput` | class |  | 33 |  |
-| `ControllerInputButtonPressed` | abstract class | `MonoBehaviour` | 0 |  |
-| `ControllerMod` | abstract class | `ModBase` | 0 |  |
-| `ControllerModeSettings` | class | `ScriptableObject` | 6 |  |
-| `ControllerModeType` | enum |  | 11 |  |
-| `ControllerOffsetSettings` | class | `ScriptableObject` | 1 |  |
-| `CopyBone` | class | `MonoBehaviour` | 0 |  |
-| `CopyBoneGroup` | class | `ComponentGroup<CopyBone>` | 1 |  |
-| `CopyToRenderTexture` | class | `MonoBehaviour` | 0 |  |
-| `CopyTransform` | class | `MonoBehaviour` | 0 |  |
-| `CoroutineAwaiter` | static class |  | 2 |  |
-| `CorrectedRotationSlerp` | class | `MonoBehaviour` | 1 |  |
-| `CosmeticDefinitionSku` | class |  | 4 |  |
-| `CosmeticFilterSkuAttribute` | class | `CosmeticFilterAttribute` | 1 |  |
-| `CosmeticPackingManager` | class | `MonoBehaviour` | 0 |  |
-| `CosmeticParticleColorer` | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 |  |
-| `CosmeticSkuAttribute` | class | `PropertyAttribute` | 0 |  |
-| `CountTracker<T>` | class | `IEnumerable<T>`, `IEnumerable` | 6 |  |
-| `Crank` | class | `NetworkEntityBehaviour`, `ISavable<CrankSaveData>`, `ISavableSave<CrankSaveData>`, +2 more | 5 |  |
-| `CrankControlledRope` | class | `MonoBehaviour` | 0 |  |
-| `CrankController` | class | `MonoBehaviour` | 0 |  |
-| `CrankSaveData` | internal class | `NewSaveData<Crank, CrankSaveData>` | 1 |  |
-| `CreateLOD` | class | `MonoBehaviour` | 0 |  |
-| `CrippleStatDefinition` | class | `StatDefinition` | 1 | [Stats](../game-systems/stats.md) |
-| `CrippleStatDefinition.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Stats.ScriptableObject<CrippleStatDefinition>` | 0 |  |
-| `CrystalsAvailablePointManager` | class | `AvailablePointVisualizerManager` | 4 |  |
-| `CsvWriter` | static class |  | 2 |  |
-| `CubeMapUpdater` | class | `MonoBehaviour` | 1 |  |
-| `CullingController` | class | `NetworkEntityBehaviour`, `IInitializeAsLocalPlayer` | 0 |  |
-| `CullingGroupHandler` | class | `MonoBehaviour` | 2 |  |
-| `CullingPortal` | class | `MonoBehaviour` | 8 |  |
-| `Curve` | class | `HashedGeneralValue<Curve>` | 1 |  |
-| `Curve.Create` | class | `AltaMenuItemBase.Assets.Create.Utility.ScriptableObject<Curve>` | 0 |  |
-| `CurveElevation` | class | `MonoBehaviour` | 1 |  |
-| `CurveOutput` | class | `NetworkEntityBehaviour`, `ISavable<CurveOutputSaveData>`, `ISavableSave<CurveOutputSaveData>`, +1 more | 7 |  |
-| `CurveOutputSaveData` | class | `NewSaveData<CurveOutput, CurveOutputSaveData>` | 2 |  |
-| `CurveScaler` | class | `MonoBehaviour` | 5 |  |
-| `CurveWall` | class | `MonoBehaviour`, `IBakeable` | 5 |  |
-| `CurveWall.CurvePoint` | class |  | 4 |  |
-| `CustomArgumentGameAction<T>` | abstract class | `GameAction` | 1 |  |
-| `CustomFixedJoint` | class | `MonoBehaviour` | 4 |  |
-| `CustomizationPlayerController` | class | `SmoothLocomotionPlayerController` | 3 |  |
-| `CustomTeleportation` | abstract class | `NetworkEntityBehaviour` | 3 |  |
-| `CylinderImpactCollector` | class | `ShapeImpactCollector` | 3 |  |
-| `CylinderImpactCollector.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Shape.ScriptableObject<CylinderImpactCollector>` | 0 |  |
+| [`CachedSyncChannel`](/game-api/types/global-c-d/cachedsyncchannel) | internal class | `IDisposable` | 3 |  |
+| [`CameraClaimer`](/game-api/types/global-c-d/cameraclaimer) | class | `MonoBehaviour` | 0 |  |
+| [`CameraStabelizer`](/game-api/types/global-c-d/camerastabelizer) | class | `MonoBehaviour` | 1 |  |
+| [`CapPickup`](/game-api/types/global-c-d/cappickup) | class | `Pickup` | 2 | [Items, interaction and damage](../items/overview.md) |
+| [`CaptainsWheel`](/game-api/types/global-c-d/captainswheel) | class | `MonoBehaviour` | 2 |  |
+| [`CastToSurfaceEffect`](/game-api/types/global-c-d/casttosurfaceeffect) | class | `DestroyByTime`, `IBuildRendererPostBake`, `IBuildBakeable` | 0 |  |
+| [`CaveSeedArguments`](/game-api/types/global-c-d/caveseedarguments) | struct |  | 7 |  |
+| [`CaveTeleporterReplacer`](/game-api/types/global-c-d/caveteleporterreplacer) | class | `GenericReplacer` | 2 |  |
+| [`CaveTeleporterReplacerAnimator`](/game-api/types/global-c-d/caveteleporterreplaceranimator) | class |  | 1 |  |
+| [`CenterOfMassSetter`](/game-api/types/global-c-d/centerofmasssetter) | class | `MonoBehaviour` | 4 |  |
+| [`CentralGoldCoinBank`](/game-api/types/global-c-d/centralgoldcoinbank) | class | `PerPlayerManager<CentralGoldCoinBank, PlayerGoldBankAccount, PlayerGoldBankAccountData>` | 0 | [Trading](../game-systems/trading.md) |
+| [`CharacterControllerEvent`](/game-api/types/global-c-d/charactercontrollerevent) | class | `AltaEvent<PlayerController, CharacterControllerUnityEvent>` | 0 |  |
+| [`CharacterControllerUnityEvent`](/game-api/types/global-c-d/charactercontrollerunityevent) | class | `UnityEvent<PlayerController>` | 0 |  |
+| [`CharacterDummyController`](/game-api/types/global-c-d/characterdummycontroller) | class | `PlayerController` | 2 |  |
+| [`CharacterDummyPointer`](/game-api/types/global-c-d/characterdummypointer) | class | `MonoBehaviour` | 1 |  |
+| [`CharacterDummySpawner`](/game-api/types/global-c-d/characterdummyspawner) | class | `CharacterDummyPointer` | 1 |  |
+| [`CharacterIKController`](/game-api/types/global-c-d/characterikcontroller) | class | `NetworkEntityBehaviour`, `IInitializeAsLocalPlayer` | 13 |  |
+| [`CharacterInfo`](/game-api/types/global-c-d/characterinfo) | class |  | 10 |  |
+| [`CharacterPoseSaver`](/game-api/types/global-c-d/characterposesaver) | class | `ControllerInputButtonPressed` | 0 |  |
+| [`CharacterRigPoser`](/game-api/types/global-c-d/characterrigposer) | class |  | 2 |  |
+| [`CharacterShellHelper`](/game-api/types/global-c-d/charactershellhelper) | class | `ScriptHelper` | 1 |  |
+| [`CheckPoint`](/game-api/types/global-c-d/checkpoint) | class | `NetworkEntityBehaviour`, `ISavable<CheckPointData>`, `ISavableSave<CheckPointData>`, +1 more | 4 |  |
+| [`CheckPointData`](/game-api/types/global-c-d/checkpointdata) | class | `NewSaveData<CheckPoint, CheckPointData>` | 2 |  |
+| [`ChildCheckOnOwned`](/game-api/types/global-c-d/childcheckonowned) | class | `NetworkEntityBehaviour` | 1 |  |
+| [`ChildSyncableCollection<T, TThis, TSaveData, TElementSaveData>`](/game-api/types/global-c-d/childsyncablecollection-t-tthis-tsavedata-telementsavedata) | abstract class | `ChildSyncableCollectionBase<T>`, `ISavable<TSaveData>`, `ISavableSave<TSaveData>`, +1 more | 4 |  |
+| [`ChildSyncableCollectionBase<T>`](/game-api/types/global-c-d/childsyncablecollectionbase-t) | abstract class | `NetworkEntityBehaviour` | 7 |  |
+| [`ChildSyncableCollectionSaveData<TThis, TSavable, TData>`](/game-api/types/global-c-d/childsyncablecollectionsavedata-tthis-tsavable-tdata) | class | `NewSaveData<TSavable, TThis>` | 1 |  |
+| [`ChiselRecipePageProvider`](/game-api/types/global-c-d/chiselrecipepageprovider) | class | `GeneratedPageProvider<ChiselDefinition>` | 5 |  |
+| [`ChiselRecipePageSettings`](/game-api/types/global-c-d/chiselrecipepagesettings) | class | `GlobalSettings<ChiselRecipePageSettings>` | 4 |  |
+| [`ChiselRecipePageSettings.Create`](/game-api/types/global-c-d/chiselrecipepagesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.ScriptableObject<ChiselRecipePageSettings>` | 0 |  |
+| [`ChiselSplineParticlesPooled`](/game-api/types/global-c-d/chiselsplineparticlespooled) | class | `SplineParticlesPooled` | 3 |  |
+| [`ChooseRandomChild`](/game-api/types/global-c-d/chooserandomchild) | class | `MonoBehaviour` | 0 |  |
+| [`ChunkBasedEnvironment`](/game-api/types/global-c-d/chunkbasedenvironment) | class | `MonoBehaviour` | 0 |  |
+| [`ChunkConverter`](/game-api/types/global-c-d/chunkconverter) | class | `TypeConverter` | 2 |  |
+| [`ChunkDetector`](/game-api/types/global-c-d/chunkdetector) | class | `NetworkEntityBehaviour` | 4 | [Chunks](../world/chunks.md#chunkdetector): `ChunkDetector` (a `NetworkEntityBehaviour`, no namespace) is how most moving things keep their chunk right. |
+| [`Chunker`](/game-api/types/global-c-d/chunker) | class | `IChunker` | 17 | [Chunks](../world/chunks.md#chunker-how-an-entity-belongs-to-a-chunk): Every `NetworkEntity` makes one in its constructor. It's `protected` on `NetworkEntity` (reach it as `((IChunkedEntity)entity).Chunker`). |
+| [`ChunkerChangedHandler`](/game-api/types/global-c-d/chunkerchangedhandler) | delegate |  | 0 |  |
+| [`ChunkerHelper`](/game-api/types/global-c-d/chunkerhelper) | static class |  | 2 |  |
+| [`ChunkEventHandler`](/game-api/types/global-c-d/chunkeventhandler) | delegate |  | 0 |  |
+| [`ChunkingParent`](/game-api/types/global-c-d/chunkingparent) | class | `MonoBehaviour` | 0 |  |
+| [`ChunkingPrefabFolder`](/game-api/types/global-c-d/chunkingprefabfolder) | class | `MonoBehaviour`, `IDestroyOnBake` | 0 |  |
+| [`ChunkingPrefabReplace`](/game-api/types/global-c-d/chunkingprefabreplace) | class | `MonoBehaviour`, `IBakeable` | 5 |  |
+| [`ChunkPhysicsResolver`](/game-api/types/global-c-d/chunkphysicsresolver) | class | `NetworkEntityBehaviour` | 3 |  |
+| [`ChunkSetEventHandler`](/game-api/types/global-c-d/chunkseteventhandler) | delegate |  | 0 |  |
+| [`ChunksToSync`](/game-api/types/global-c-d/chunkstosync) | internal struct |  | 2 |  |
+| [`ClassSerializationHelper`](/game-api/types/global-c-d/classserializationhelper) | static class |  | 4 |  |
+| [`ClassSerializationHelper.Finalize<T>`](/game-api/types/global-c-d/classserializationhelper-finalize-t) | delegate |  | 0 |  |
+| [`ClassSerializationHelper.MemberHandler<T>`](/game-api/types/global-c-d/classserializationhelper-memberhandler-t) | delegate |  | 0 |  |
+| [`ClassSerializer<T>`](/game-api/types/global-c-d/classserializer-t) | class | `Sync` | 3 |  |
+| [`CleaningHelper`](/game-api/types/global-c-d/cleaninghelper) | class | `NetworkEntityBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 0 |  |
+| [`ClickedEndEventHandler`](/game-api/types/global-c-d/clickedendeventhandler) | delegate |  | 0 |  |
+| [`ClickedEventHandler`](/game-api/types/global-c-d/clickedeventhandler) | delegate |  | 0 |  |
+| [`ClientCommandHandler`](/game-api/types/global-c-d/clientcommandhandler) | class |  | 4 |  |
+| [`ClientHandler`](/game-api/types/global-c-d/clienthandler) | class | `IRemoteConsoleHandler` | 7 |  |
+| [`ClientJoinResult`](/game-api/types/global-c-d/clientjoinresult) | enum |  | 19 | [Joining a server](../networking/joining.md): Enum of join outcomes, 1 to 13 from Alta's API, 30 to 35 from the connection. |
+| [`ClientLogSender`](/game-api/types/global-c-d/clientlogsender) | class |  | 2 | [Remote console](../console-and-utilities/remote-console.md) |
+| [`Climbable`](/game-api/types/global-c-d/climbable) | class | `MonoBehaviour`, `IClimbable` | 12 |  |
+| [`Climber`](/game-api/types/global-c-d/climber) | class | `SmoothLocomotionModifier` | 10 |  |
+| [`ClimberActivator`](/game-api/types/global-c-d/climberactivator) | class | `MonoBehaviour` | 0 |  |
+| [`ClimberSettings`](/game-api/types/global-c-d/climbersettings) | class | `GlobalSettings<ClimberSettings>` | 27 |  |
+| [`ClimberSettings.Raycast`](/game-api/types/global-c-d/climbersettings-raycast) | class |  | 2 |  |
+| [`ClimbingSettings`](/game-api/types/global-c-d/climbingsettings) | class | `GlobalSettings<ClimbingSettings>` | 31 |  |
+| [`ClothManager`](/game-api/types/global-c-d/clothmanager) | class | `MonoBehaviour` | 0 |  |
+| [`Cluster`](/game-api/types/global-c-d/cluster) | class | `NetworkEntityBehaviour` | 5 |  |
+| [`ClusterEntitiesRegisterArguments`](/game-api/types/global-c-d/clusterentitiesregisterarguments) | struct |  | 4 |  |
+| [`CoinPress`](/game-api/types/global-c-d/coinpress) | class | `NetworkEntityBehaviour` | 1 | [Smelting and forging](../game-systems/smelting-and-forging.md): A lever press that turns what's in its input dock into its `outputItem`. |
+| [`CoinPressGear`](/game-api/types/global-c-d/coinpressgear) | class | `MonoBehaviour` | 0 |  |
+| [`ColliderAltaEvent`](/game-api/types/global-c-d/collideraltaevent) | class | `AltaEvent<Collider, ColliderUnityEvent>` | 0 |  |
+| [`ColliderDebugger`](/game-api/types/global-c-d/colliderdebugger) | class | `MonoBehaviour` | 0 |  |
+| [`ColliderExtension`](/game-api/types/global-c-d/colliderextension) | static class |  | 2 |  |
+| [`ColliderGroup`](/game-api/types/global-c-d/collidergroup) | class | `ComponentGroup<Collider>` | 8 |  |
+| [`ColliderPositionHelper`](/game-api/types/global-c-d/colliderpositionhelper) | class | `PositionFromOriginHelper` | 1 |  |
+| [`ColliderUnityEvent`](/game-api/types/global-c-d/colliderunityevent) | class | `UnityEvent<Collider>` | 0 |  |
+| [`CollisionHaptic`](/game-api/types/global-c-d/collisionhaptic) | class | `MonoBehaviour` | 1 |  |
+| [`CollisionSoundEmitter`](/game-api/types/global-c-d/collisionsoundemitter) | class | `MonoBehaviour` | 0 |  |
+| [`ColorApiResponse`](/game-api/types/global-c-d/colorapiresponse) | internal class |  | 1 |  |
+| [`ColorBoard`](/game-api/types/global-c-d/colorboard) | class | `MonoBehaviour` | 0 |  |
+| [`ColorBoardItem`](/game-api/types/global-c-d/colorboarditem) | class | `MonoBehaviour` | 2 |  |
+| [`ColoredExplosive`](/game-api/types/global-c-d/coloredexplosive) | class | `Explosive`, `ISavable<ColoredExplosiveData>`, `ISavableSave<ColoredExplosiveData>`, +2 more | 3 |  |
+| [`ColoredExplosiveData`](/game-api/types/global-c-d/coloredexplosivedata) | class | `NewSaveData<ColoredExplosive, ColoredExplosiveData>` | 1 |  |
+| [`ColoredParticleSystem`](/game-api/types/global-c-d/coloredparticlesystem) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 4 |  |
+| [`ColoredPooledParticleSpawner`](/game-api/types/global-c-d/coloredpooledparticlespawner) | class | `MonoBehaviour` | 5 |  |
+| [`ColorEvent`](/game-api/types/global-c-d/colorevent) | class | `AltaEvent<Color, ColorUnityEvent>` | 0 |  |
+| [`ColorFadeRelease`](/game-api/types/global-c-d/colorfaderelease) | class | `DelayedPooledObject` | 0 |  |
+| [`ColorLerp`](/game-api/types/global-c-d/colorlerp) | class | `MonoBehaviour` | 2 |  |
+| [`ColorModel<TR, TG, TB, TA>`](/game-api/types/global-c-d/colormodel-tr-tg-tb-ta) | class | `NetworkEntityBehaviour` | 7 |  |
+| [`ColorModelCore<TR, TG, TB, TA>`](/game-api/types/global-c-d/colormodelcore-tr-tg-tb-ta) | class |  | 18 |  |
+| [`ColorUnityEvent`](/game-api/types/global-c-d/colorunityevent) | class | `UnityEvent<Color>` | 0 |  |
+| [`CombatEventHandler`](/game-api/types/global-c-d/combateventhandler) | delegate |  | 0 |  |
+| [`CombatImpactProgressionFilter`](/game-api/types/global-c-d/combatimpactprogressionfilter) | class | `BaseImpactChannelProgressionFilter` | 1 |  |
+| [`CombatImpactProgressionFilter.Create`](/game-api/types/global-c-d/combatimpactprogressionfilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Filters.ScriptableObject<CombatImpactProgressionFilter>` | 0 |  |
+| [`CombinedMeshSource`](/game-api/types/global-c-d/combinedmeshsource) | class | `MonoBehaviour`, `IEditorProcessable` | 1 |  |
+| [`CommonPrefabs`](/game-api/types/global-c-d/commonprefabs) | class | `GlobalSettings<CommonPrefabs>` | 8 |  |
+| [`CommonPrefabs.Create`](/game-api/types/global-c-d/commonprefabs-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<CommonPrefabs>` | 0 |  |
+| [`ComponentCounter`](/game-api/types/global-c-d/componentcounter) | class | `MonoBehaviour` | 0 |  |
+| [`ComponentEventSubscriber`](/game-api/types/global-c-d/componenteventsubscriber) | class | `IDisposable` | 2 |  |
+| [`ComponentGroup<T>`](/game-api/types/global-c-d/componentgroup-t) | class | `MonoBehaviour`, `IReadOnlyCollection<T>`, `IEnumerable<T>`, +3 more | 8 |  |
+| [`ComponentGroup<T>.GroupModifiedHandler`](/game-api/types/global-c-d/componentgroup-t-groupmodifiedhandler) | delegate |  | 0 |  |
+| [`ComponentHistoryAccess`](/game-api/types/global-c-d/componenthistoryaccess) | class | `HistoryAccess` | 1 |  |
+| [`ComponentInspector`](/game-api/types/global-c-d/componentinspector) | class | `InspectorBase` | 7 |  |
+| [`CompressionUtilities`](/game-api/types/global-c-d/compressionutilities) | class | `MonoBehaviour` | 2 |  |
+| [`ComputeShaderDarknessReader`](/game-api/types/global-c-d/computeshaderdarknessreader) | class | `DarknessReaderMethod` | 1 |  |
+| [`ConfigurableJointExtensions`](/game-api/types/global-c-d/configurablejointextensions) | static class |  | 3 |  |
+| [`ConglomerateDestroyByTime`](/game-api/types/global-c-d/conglomeratedestroybytime) | class | `DestroyByTime` | 1 |  |
+| [`ConsoleDisplay`](/game-api/types/global-c-d/consoledisplay) | class | `MonoBehaviour` | 0 |  |
+| [`ConsoleOption`](/game-api/types/global-c-d/consoleoption) | class |  | 5 |  |
+| [`ConsumptionManager`](/game-api/types/global-c-d/consumptionmanager) | class | `MonoBehaviour` | 4 | [Hunger, eating and drinking](../game-systems/hunger-and-eating.md#consumptionmanager): `ConsumptionManager : MonoBehaviour`, top level, no namespace. One per player body. `Player` gives the body's `PlayerController`. |
+| [`ControlledAnimation`](/game-api/types/global-c-d/controlledanimation) | class | `MonoBehaviour` | 1 |  |
+| [`ControlledRotateAndShake`](/game-api/types/global-c-d/controlledrotateandshake) | class | `MonoBehaviour` | 2 |  |
+| [`Controller`](/game-api/types/global-c-d/controller) | class | `NetworkEntityBehaviour` | 17 |  |
+| [`ControllerAction`](/game-api/types/global-c-d/controlleraction) | class | `IControllerAction` | 10 |  |
+| [`ControllerActionEventHandler`](/game-api/types/global-c-d/controlleractioneventhandler) | delegate |  | 0 |  |
+| [`ControllerActionMode`](/game-api/types/global-c-d/controlleractionmode) | class |  | 7 |  |
+| [`ControllerActionProxy`](/game-api/types/global-c-d/controlleractionproxy) | class | `IControllerAction` | 10 |  |
+| [`ControllerActions`](/game-api/types/global-c-d/controlleractions) | class |  | 8 |  |
+| [`ControllerActionsManager`](/game-api/types/global-c-d/controlleractionsmanager) | class | `MonoBehaviour` | 7 |  |
+| [`ControllerActionsManagerProxy`](/game-api/types/global-c-d/controlleractionsmanagerproxy) | class |  | 5 |  |
+| [`ControllerActionType`](/game-api/types/global-c-d/controlleractiontype) | enum |  | 35 |  |
+| [`ControllerDPad`](/game-api/types/global-c-d/controllerdpad) | class |  | 11 |  |
+| [`ControllerExtension`](/game-api/types/global-c-d/controllerextension) | abstract class | `MonoBehaviour` | 9 |  |
+| [`ControllerExtensionGroup`](/game-api/types/global-c-d/controllerextensiongroup) | class | `ComponentGroup<ControllerExtension>` | 0 |  |
+| [`ControllerInput`](/game-api/types/global-c-d/controllerinput) | class |  | 33 |  |
+| [`ControllerInputButtonPressed`](/game-api/types/global-c-d/controllerinputbuttonpressed) | abstract class | `MonoBehaviour` | 0 |  |
+| [`ControllerMod`](/game-api/types/global-c-d/controllermod) | abstract class | `ModBase` | 0 |  |
+| [`ControllerModeSettings`](/game-api/types/global-c-d/controllermodesettings) | class | `ScriptableObject` | 6 |  |
+| [`ControllerModeType`](/game-api/types/global-c-d/controllermodetype) | enum |  | 11 |  |
+| [`ControllerOffsetSettings`](/game-api/types/global-c-d/controlleroffsetsettings) | class | `ScriptableObject` | 1 |  |
+| [`CopyBone`](/game-api/types/global-c-d/copybone) | class | `MonoBehaviour` | 0 |  |
+| [`CopyBoneGroup`](/game-api/types/global-c-d/copybonegroup) | class | `ComponentGroup<CopyBone>` | 1 |  |
+| [`CopyToRenderTexture`](/game-api/types/global-c-d/copytorendertexture) | class | `MonoBehaviour` | 0 |  |
+| [`CopyTransform`](/game-api/types/global-c-d/copytransform) | class | `MonoBehaviour` | 0 |  |
+| [`CoroutineAwaiter`](/game-api/types/global-c-d/coroutineawaiter) | static class |  | 2 |  |
+| [`CorrectedRotationSlerp`](/game-api/types/global-c-d/correctedrotationslerp) | class | `MonoBehaviour` | 1 |  |
+| [`CosmeticDefinitionSku`](/game-api/types/global-c-d/cosmeticdefinitionsku) | class |  | 4 |  |
+| [`CosmeticFilterSkuAttribute`](/game-api/types/global-c-d/cosmeticfilterskuattribute) | class | `CosmeticFilterAttribute` | 1 |  |
+| [`CosmeticPackingManager`](/game-api/types/global-c-d/cosmeticpackingmanager) | class | `MonoBehaviour` | 0 |  |
+| [`CosmeticParticleColorer`](/game-api/types/global-c-d/cosmeticparticlecolorer) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 |  |
+| [`CosmeticSkuAttribute`](/game-api/types/global-c-d/cosmeticskuattribute) | class | `PropertyAttribute` | 0 |  |
+| [`CountTracker<T>`](/game-api/types/global-c-d/counttracker-t) | class | `IEnumerable<T>`, `IEnumerable` | 6 |  |
+| [`Crank`](/game-api/types/global-c-d/crank) | class | `NetworkEntityBehaviour`, `ISavable<CrankSaveData>`, `ISavableSave<CrankSaveData>`, +2 more | 5 |  |
+| [`CrankControlledRope`](/game-api/types/global-c-d/crankcontrolledrope) | class | `MonoBehaviour` | 0 |  |
+| [`CrankController`](/game-api/types/global-c-d/crankcontroller) | class | `MonoBehaviour` | 0 |  |
+| [`CrankSaveData`](/game-api/types/global-c-d/cranksavedata) | internal class | `NewSaveData<Crank, CrankSaveData>` | 1 |  |
+| [`CreateLOD`](/game-api/types/global-c-d/createlod) | class | `MonoBehaviour` | 0 |  |
+| [`CrippleStatDefinition`](/game-api/types/global-c-d/cripplestatdefinition) | class | `StatDefinition` | 1 | [Stats](../game-systems/stats.md) |
+| [`CrippleStatDefinition.Create`](/game-api/types/global-c-d/cripplestatdefinition-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Stats.ScriptableObject<CrippleStatDefinition>` | 0 |  |
+| [`CrystalsAvailablePointManager`](/game-api/types/global-c-d/crystalsavailablepointmanager) | class | `AvailablePointVisualizerManager` | 4 |  |
+| [`CsvWriter`](/game-api/types/global-c-d/csvwriter) | static class |  | 2 |  |
+| [`CubeMapUpdater`](/game-api/types/global-c-d/cubemapupdater) | class | `MonoBehaviour` | 1 |  |
+| [`CullingController`](/game-api/types/global-c-d/cullingcontroller) | class | `NetworkEntityBehaviour`, `IInitializeAsLocalPlayer` | 0 |  |
+| [`CullingGroupHandler`](/game-api/types/global-c-d/cullinggrouphandler) | class | `MonoBehaviour` | 2 |  |
+| [`CullingPortal`](/game-api/types/global-c-d/cullingportal) | class | `MonoBehaviour` | 8 |  |
+| [`Curve`](/game-api/types/global-c-d/curve) | class | `HashedGeneralValue<Curve>` | 1 |  |
+| [`Curve.Create`](/game-api/types/global-c-d/curve-create) | class | `AltaMenuItemBase.Assets.Create.Utility.ScriptableObject<Curve>` | 0 |  |
+| [`CurveElevation`](/game-api/types/global-c-d/curveelevation) | class | `MonoBehaviour` | 1 |  |
+| [`CurveOutput`](/game-api/types/global-c-d/curveoutput) | class | `NetworkEntityBehaviour`, `ISavable<CurveOutputSaveData>`, `ISavableSave<CurveOutputSaveData>`, +1 more | 7 |  |
+| [`CurveOutputSaveData`](/game-api/types/global-c-d/curveoutputsavedata) | class | `NewSaveData<CurveOutput, CurveOutputSaveData>` | 2 |  |
+| [`CurveScaler`](/game-api/types/global-c-d/curvescaler) | class | `MonoBehaviour` | 5 |  |
+| [`CurveWall`](/game-api/types/global-c-d/curvewall) | class | `MonoBehaviour`, `IBakeable` | 5 |  |
+| [`CurveWall.CurvePoint`](/game-api/types/global-c-d/curvewall-curvepoint) | class |  | 4 |  |
+| [`CustomArgumentGameAction<T>`](/game-api/types/global-c-d/customargumentgameaction-t) | abstract class | `GameAction` | 1 |  |
+| [`CustomFixedJoint`](/game-api/types/global-c-d/customfixedjoint) | class | `MonoBehaviour` | 4 |  |
+| [`CustomizationPlayerController`](/game-api/types/global-c-d/customizationplayercontroller) | class | `SmoothLocomotionPlayerController` | 3 |  |
+| [`CustomTeleportation`](/game-api/types/global-c-d/customteleportation) | abstract class | `NetworkEntityBehaviour` | 3 |  |
+| [`CylinderImpactCollector`](/game-api/types/global-c-d/cylinderimpactcollector) | class | `ShapeImpactCollector` | 3 |  |
+| [`CylinderImpactCollector.Create`](/game-api/types/global-c-d/cylinderimpactcollector-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Shape.ScriptableObject<CylinderImpactCollector>` | 0 |  |
 
 ## D
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `DamageDebugDisplay` | class | `MonoBehaviour` | 1 |  |
-| `DamageDisplayer` | class |  | 3 | [Items, interaction and damage](../items/overview.md) |
-| `DarknessArea` | class | `SpaceDefinedAttribute<SpacePoint>` | 1 |  |
-| `DarknessChunkData` | class | `ChunkEffect` | 1 |  |
-| `DarknessReader` | class | `NetworkEntityBehaviour`, `IInitializeAsLocalPlayer` | 1 |  |
-| `DarknessReaderMethod` | abstract class |  | 4 |  |
-| `DarknessSpawnerSettings` | class | `GlobalSettings<DarknessSpawnerSettings>` | 8 |  |
-| `DarknessTrigger` | static class |  | 3 |  |
-| `DateTimeExtensions` | static class |  | 2 |  |
-| `Debug` | static class |  | 15 | [Startup and app state](../console-and-utilities/startup-and-app-state.md), [Connection messages](../networking/messages.md) |
-| `DebugClimbable` | class | `Climbable` | 1 |  |
-| `DebugExtension` | static class |  | 24 |  |
-| `DebugLoader` | class | `MonoBehaviour` | 1 |  |
-| `DebugLogger` | class | `MonoBehaviour` | 2 |  |
-| `DebugQASetManager` | static class |  | 1 |  |
-| `DebugWidget` | abstract class | `MonoBehaviour` | 1 |  |
-| `DecaySettings` | class | `ScriptableObject` | 4 |  |
-| `DecaySettings.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Decay.ScriptableObject<DecaySettings>` | 0 |  |
-| `DeepLinkAnalyticsService` | class | `MonoBehaviour` | 6 |  |
-| `DeepLinkAnalyticsService.DeepLinkEventCancelReason` | enum |  | 2 |  |
-| `DeepLinkAnalyticsService.DeeplinkEventCancelReason` | enum |  | 1 |  |
-| `DeeplinkEventFailReason` | enum |  | 5 |  |
-| `DeepLinkFailureController` | static class |  | 1 |  |
-| `DefaultClimbable` | class | `IClimbable` | 12 |  |
-| `DeferredBuffers` | enum |  | 4 |  |
-| `DeferredSynchronizeInvoke` | class | `ISynchronizeInvoke` | 6 |  |
-| `DefineProvider` | static class |  | 1 |  |
-| `DelayedEnableLerp` | class | `EnableLerp` | 0 |  |
-| `DelayedEvent` | class | `MonoBehaviour` | 1 |  |
-| `DelayedHoverPickup` | class | `HoverPickup` | 0 |  |
-| `DelayedPooledObject` | class | `PooledObject` | 1 |  |
-| `DelayEnable` | class | `MonoBehaviour` | 0 |  |
-| `DelayEnable.DelayMode` | enum |  | 2 |  |
-| `DeleteMe` | class | `MonoBehaviour` | 0 |  |
-| `DepthCheckLocoCheck` | class | `LocomotionModifierCheck` | 3 |  |
-| `DestroyActionArgument` | class | `GameTaskActionArgument` | 3 | [Other systems](../game-systems/other-systems.md): `HealthObject`, when a player's tool destroys something |
-| `DestroyByTime` | class | `PooledObject` | 3 |  |
-| `DestroyedEventCaller` | class | `MonoBehaviour` | 3 |  |
-| `DestroyHealthObjectTask` | class | `CustomArgumentGameAction<DestroyActionArgument>` | 1 |  |
-| `DestroyIfInIncorrectChunk` | class | `NetworkEntityBehaviour` | 1 |  |
-| `DevGameServerInfo` | class | `GameServerInfo` | 2 | [Joining a server](../networking/joining.md), [Server settings](../networking/server-settings.md): A `GameServerInfo` with a fixed `ConnectionInfo`. `GetDevServer(ip, port, sceneIndex)`. TavernLib's `/join_local_server` uses it. |
-| `DeviceControllerFactory` | static class |  | 1 |  |
-| `DeviceInputController` | abstract class |  | 4 |  |
-| `DeviceLifecycle` | abstract class | `IDeviceLifecycle` | 7 |  |
-| `DialSetting` | class | `MonoBehaviour` | 2 |  |
-| `DiggingImpactor` | class | `NetworkEntityBehaviour`, `ISavable<DiggingImpactorSaveStructure>`, `ISavableSave<DiggingImpactorSaveStructure>`, +2 more | 4 |  |
-| `DiggingImpactorSaveStructure` | class | `NewSaveData<DiggingImpactor, DiggingImpactorSaveStructure>` | 2 |  |
-| `DiggingImpactorSettings` | class | `ScriptableObject` | 11 |  |
-| `DirectionConstrainedRandomMovement` | class | `NetworkEntityBehaviour` | 2 |  |
-| `DirectionMode` | enum |  | 4 |  |
-| `DirectReplacer` | class | `BaseReplacer` | 2 |  |
-| `DiscordController` | class | `MonoBehaviour` | 9 |  |
-| `DiscordLarge` | enum |  | 5 |  |
-| `DiscordSmall` | enum |  | 1 |  |
-| `DisplayMessageType` | enum |  | 4 |  |
-| `DisposablePickup` | class | `NetworkEntityBehaviour`, `IDisposablePickup` | 3 |  |
-| `DisposablePickupHolder` | class | `MonoBehaviour`, `IDisposablePickup`, `IGetChild` | 1 |  |
-| `DissipateToolBasedEffect` | class | `ToolBasedEffectBase` | 0 |  |
-| `DissolvingEffect` | class | `DestroyByTime`, `IBuildRendererPostBake`, `IBuildBakeable` | 0 |  |
-| `DistanceFilter` | abstract class | `SpawnModifierPoint` | 1 |  |
-| `DistanceLOD` | class |  | 4 |  |
-| `DistanceLODGroup` | class | `MonoBehaviour` | 10 |  |
-| `DistanceLODGroupManager` | class |  | 2 |  |
-| `DistanceToEdgeFilter` | class | `DistanceFilter` | 0 |  |
-| `DistanceToEdgeFilter.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<DistanceToEdgeFilter>` | 0 |  |
-| `DistanceToLine` | static class |  | 12 |  |
-| `DistanceToLineTest` | class | `MonoBehaviour` | 0 |  |
-| `DistanceToPathFilter` | class | `DistanceFilter` | 0 |  |
-| `DistanceToPathFilter.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<DistanceToPathFilter>` | 0 |  |
-| `DistanceToRiverFilter` | class | `DistanceFilter` | 0 |  |
-| `DistanceToRiverFilter.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<DistanceToRiverFilter>` | 0 |  |
-| `DmgTDisplay` | class | `MonoBehaviour` | 0 |  |
-| `DockableJoints` | class | `Pickup` | 0 |  |
-| `DockByDefault` | class | `GeneratedNetworkEntityBehaviour` | 0 | [Items, interaction and damage](../items/overview.md) |
-| `DockCounter` | class | `MonoBehaviour` | 0 |  |
-| `DockedFireLogic` | class | `MonoBehaviour` | 1 |  |
-| `DockEvents` | class | `AbstractDockEvents` | 0 |  |
-| `DockObjectTask` | class | `HashSetAction<DockObjectTaskArgument>` | 1 |  |
-| `DockObjectTaskArgument` | class | `GameTaskActionArgument` | 6 | [Other systems](../game-systems/other-systems.md) |
-| `DontDestroyOnLoad` | class | `MonoBehaviour` | 1 |  |
-| `DontGoThroughObjects` | class | `MonoBehaviour` | 3 |  |
-| `Door` | abstract class | `NetworkEntityBehaviour`, `ISavable<DoorSaveData>`, `ISavableSave<DoorSaveData>`, +1 more | 4 |  |
-| `DoorSaveData` | internal class | `NewSaveData<Door, DoorSaveData>` | 1 |  |
-| `DownwardSwingInput` | class | `ISkillInputMethod` | 4 |  |
-| `DownwardSwingInputStructure` | class | `SkillInputStructure` | 6 |  |
-| `DownwardSwingInputStructure.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input.ScriptableObject<DownwardSwingInputStructure>` | 0 |  |
-| `DPadInputSource` | class | `InputSource` | 4 |  |
-| `DragTrigger` | class | `MonoBehaviour` | 1 |  |
-| `DrawBridgeLogic` | class | `MonoBehaviour`, `ISavable<DrawBridgeLogicSaveData>`, `ISavableSave<DrawBridgeLogicSaveData>`, +1 more | 2 |  |
-| `DrawBridgeLogicSaveData` | class | `NewSaveData<DrawBridgeLogic, DrawBridgeLogicSaveData>` | 3 |  |
-| `DrawBridgeRangeLogic` | class | `NetworkEntityBehaviour`, `ISavable<DrawBridgeRangeLogicSaveData>`, `ISavableSave<DrawBridgeRangeLogicSaveData>`, +2 more | 5 |  |
-| `DrawBridgeRangeLogicSaveData` | class | `NewSaveData<DrawBridgeRangeLogic, DrawBridgeRangeLogicSaveData>` | 2 |  |
-| `DrawBridgeRangeLogicSaveData1` | class | `OldSaveData` | 3 |  |
-| `DropTarget` | class | `MonoBehaviour` | 0 |  |
-| `DummyArrow` | class | `MonoBehaviour` | 1 |  |
-| `DummyPlayerController` | class | `PlayerController` | 2 |  |
-| `DurabilityGlobalSettings` | class | `GlobalSettings<DurabilityGlobalSettings>` | 6 |  |
-| `DurabilityGlobalSettings.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Generation.Loot.ScriptableObject<DurabilityGlobalSettings>` | 0 |  |
-| `DurabilityModule` | class | `NetworkEntityBehaviour`, `ISavable<DurabilityModuleSaveData>`, `ISavableSave<DurabilityModuleSaveData>`, +5 more | 14 |  |
-| `DurabilityModule.DurabilityVisual` | class | `IReferenceRenderer` | 5 |  |
-| `DurabilityModuleSaveData` | internal class | `NewSaveData<DurabilityModule, DurabilityModuleSaveData>` | 1 |  |
-| `DurabilitySettings` | class | `PopupScriptableObject` | 4 |  |
-| `DurabilitySettings.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Durability.ScriptableObject<DurabilitySettings>` | 0 |  |
-| `DurabilityStateChangeEffect` | class | `PooledObject` | 2 |  |
-| `DurationCurve` | class |  | 3 |  |
-| `DynamicObjectCombiner` | class | `StaticObjectCombiner` | 1 |  |
-| `DynamicPathPart` | class | `GeneratablePart` | 1 |  |
-| `DynamiteStrike` | class | `AreaAttackSkill` | 4 |  |
-| `DynamiteStrike.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<DynamiteStrike>` | 0 |  |
+| [`DamageDebugDisplay`](/game-api/types/global-c-d/damagedebugdisplay) | class | `MonoBehaviour` | 1 |  |
+| [`DamageDisplayer`](/game-api/types/global-c-d/damagedisplayer) | class |  | 3 | [Items, interaction and damage](../items/overview.md) |
+| [`DarknessArea`](/game-api/types/global-c-d/darknessarea) | class | `SpaceDefinedAttribute<SpacePoint>` | 1 |  |
+| [`DarknessChunkData`](/game-api/types/global-c-d/darknesschunkdata) | class | `ChunkEffect` | 1 |  |
+| [`DarknessReader`](/game-api/types/global-c-d/darknessreader) | class | `NetworkEntityBehaviour`, `IInitializeAsLocalPlayer` | 1 |  |
+| [`DarknessReaderMethod`](/game-api/types/global-c-d/darknessreadermethod) | abstract class |  | 4 |  |
+| [`DarknessSpawnerSettings`](/game-api/types/global-c-d/darknessspawnersettings) | class | `GlobalSettings<DarknessSpawnerSettings>` | 8 |  |
+| [`DarknessTrigger`](/game-api/types/global-c-d/darknesstrigger) | static class |  | 3 |  |
+| [`DateTimeExtensions`](/game-api/types/global-c-d/datetimeextensions) | static class |  | 2 |  |
+| [`Debug`](/game-api/types/global-c-d/debug) | static class |  | 15 | [Startup and app state](../console-and-utilities/startup-and-app-state.md), [Connection messages](../networking/messages.md) |
+| [`DebugClimbable`](/game-api/types/global-c-d/debugclimbable) | class | `Climbable` | 1 |  |
+| [`DebugExtension`](/game-api/types/global-c-d/debugextension) | static class |  | 24 |  |
+| [`DebugLoader`](/game-api/types/global-c-d/debugloader) | class | `MonoBehaviour` | 1 |  |
+| [`DebugLogger`](/game-api/types/global-c-d/debuglogger) | class | `MonoBehaviour` | 2 |  |
+| [`DebugQASetManager`](/game-api/types/global-c-d/debugqasetmanager) | static class |  | 1 |  |
+| [`DebugWidget`](/game-api/types/global-c-d/debugwidget) | abstract class | `MonoBehaviour` | 1 |  |
+| [`DecaySettings`](/game-api/types/global-c-d/decaysettings) | class | `ScriptableObject` | 4 |  |
+| [`DecaySettings.Create`](/game-api/types/global-c-d/decaysettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Decay.ScriptableObject<DecaySettings>` | 0 |  |
+| [`DeepLinkAnalyticsService`](/game-api/types/global-c-d/deeplinkanalyticsservice) | class | `MonoBehaviour` | 6 |  |
+| [`DeepLinkAnalyticsService.DeepLinkEventCancelReason`](/game-api/types/global-c-d/deeplinkanalyticsservice-deeplinkeventcancelreason) | enum |  | 2 |  |
+| [`DeepLinkAnalyticsService.DeeplinkEventCancelReason`](/game-api/types/global-c-d/deeplinkanalyticsservice-deeplinkeventcancelreason-global) | enum |  | 1 |  |
+| [`DeeplinkEventFailReason`](/game-api/types/global-c-d/deeplinkeventfailreason) | enum |  | 5 |  |
+| [`DeepLinkFailureController`](/game-api/types/global-c-d/deeplinkfailurecontroller) | static class |  | 1 |  |
+| [`DefaultClimbable`](/game-api/types/global-c-d/defaultclimbable) | class | `IClimbable` | 12 |  |
+| [`DeferredBuffers`](/game-api/types/global-c-d/deferredbuffers) | enum |  | 4 |  |
+| [`DeferredSynchronizeInvoke`](/game-api/types/global-c-d/deferredsynchronizeinvoke) | class | `ISynchronizeInvoke` | 6 |  |
+| [`DefineProvider`](/game-api/types/global-c-d/defineprovider) | static class |  | 1 |  |
+| [`DelayedEnableLerp`](/game-api/types/global-c-d/delayedenablelerp) | class | `EnableLerp` | 0 |  |
+| [`DelayedEvent`](/game-api/types/global-c-d/delayedevent) | class | `MonoBehaviour` | 1 |  |
+| [`DelayedHoverPickup`](/game-api/types/global-c-d/delayedhoverpickup) | class | `HoverPickup` | 0 |  |
+| [`DelayedPooledObject`](/game-api/types/global-c-d/delayedpooledobject) | class | `PooledObject` | 1 |  |
+| [`DelayEnable`](/game-api/types/global-c-d/delayenable) | class | `MonoBehaviour` | 0 |  |
+| [`DelayEnable.DelayMode`](/game-api/types/global-c-d/delayenable-delaymode) | enum |  | 2 |  |
+| [`DeleteMe`](/game-api/types/global-c-d/deleteme) | class | `MonoBehaviour` | 0 |  |
+| [`DepthCheckLocoCheck`](/game-api/types/global-c-d/depthchecklococheck) | class | `LocomotionModifierCheck` | 3 |  |
+| [`DestroyActionArgument`](/game-api/types/global-c-d/destroyactionargument) | class | `GameTaskActionArgument` | 3 | [Other systems](../game-systems/other-systems.md): `HealthObject`, when a player's tool destroys something |
+| [`DestroyByTime`](/game-api/types/global-c-d/destroybytime) | class | `PooledObject` | 3 |  |
+| [`DestroyedEventCaller`](/game-api/types/global-c-d/destroyedeventcaller) | class | `MonoBehaviour` | 3 |  |
+| [`DestroyHealthObjectTask`](/game-api/types/global-c-d/destroyhealthobjecttask) | class | `CustomArgumentGameAction<DestroyActionArgument>` | 1 |  |
+| [`DestroyIfInIncorrectChunk`](/game-api/types/global-c-d/destroyifinincorrectchunk) | class | `NetworkEntityBehaviour` | 1 |  |
+| [`DevGameServerInfo`](/game-api/types/global-c-d/devgameserverinfo) | class | `GameServerInfo` | 2 | [Joining a server](../networking/joining.md), [Server settings](../networking/server-settings.md): A `GameServerInfo` with a fixed `ConnectionInfo`. `GetDevServer(ip, port, sceneIndex)`. TavernLib's `/join_local_server` uses it. |
+| [`DeviceControllerFactory`](/game-api/types/global-c-d/devicecontrollerfactory) | static class |  | 1 |  |
+| [`DeviceInputController`](/game-api/types/global-c-d/deviceinputcontroller) | abstract class |  | 4 |  |
+| [`DeviceLifecycle`](/game-api/types/global-c-d/devicelifecycle) | abstract class | `IDeviceLifecycle` | 7 |  |
+| [`DialSetting`](/game-api/types/global-c-d/dialsetting) | class | `MonoBehaviour` | 2 |  |
+| [`DiggingImpactor`](/game-api/types/global-c-d/diggingimpactor) | class | `NetworkEntityBehaviour`, `ISavable<DiggingImpactorSaveStructure>`, `ISavableSave<DiggingImpactorSaveStructure>`, +2 more | 4 |  |
+| [`DiggingImpactorSaveStructure`](/game-api/types/global-c-d/diggingimpactorsavestructure) | class | `NewSaveData<DiggingImpactor, DiggingImpactorSaveStructure>` | 2 |  |
+| [`DiggingImpactorSettings`](/game-api/types/global-c-d/diggingimpactorsettings) | class | `ScriptableObject` | 11 |  |
+| [`DirectionConstrainedRandomMovement`](/game-api/types/global-c-d/directionconstrainedrandommovement) | class | `NetworkEntityBehaviour` | 2 |  |
+| [`DirectionMode`](/game-api/types/global-c-d/directionmode) | enum |  | 4 |  |
+| [`DirectReplacer`](/game-api/types/global-c-d/directreplacer) | class | `BaseReplacer` | 2 |  |
+| [`DiscordController`](/game-api/types/global-c-d/discordcontroller) | class | `MonoBehaviour` | 9 |  |
+| [`DiscordLarge`](/game-api/types/global-c-d/discordlarge) | enum |  | 5 |  |
+| [`DiscordSmall`](/game-api/types/global-c-d/discordsmall) | enum |  | 1 |  |
+| [`DisplayMessageType`](/game-api/types/global-c-d/displaymessagetype) | enum |  | 4 |  |
+| [`DisposablePickup`](/game-api/types/global-c-d/disposablepickup) | class | `NetworkEntityBehaviour`, `IDisposablePickup` | 3 |  |
+| [`DisposablePickupHolder`](/game-api/types/global-c-d/disposablepickupholder) | class | `MonoBehaviour`, `IDisposablePickup`, `IGetChild` | 1 |  |
+| [`DissipateToolBasedEffect`](/game-api/types/global-c-d/dissipatetoolbasedeffect) | class | `ToolBasedEffectBase` | 0 |  |
+| [`DissolvingEffect`](/game-api/types/global-c-d/dissolvingeffect) | class | `DestroyByTime`, `IBuildRendererPostBake`, `IBuildBakeable` | 0 |  |
+| [`DistanceFilter`](/game-api/types/global-c-d/distancefilter) | abstract class | `SpawnModifierPoint` | 1 |  |
+| [`DistanceLOD`](/game-api/types/global-c-d/distancelod) | class |  | 4 |  |
+| [`DistanceLODGroup`](/game-api/types/global-c-d/distancelodgroup) | class | `MonoBehaviour` | 10 |  |
+| [`DistanceLODGroupManager`](/game-api/types/global-c-d/distancelodgroupmanager) | class |  | 2 |  |
+| [`DistanceToEdgeFilter`](/game-api/types/global-c-d/distancetoedgefilter) | class | `DistanceFilter` | 0 |  |
+| [`DistanceToEdgeFilter.Create`](/game-api/types/global-c-d/distancetoedgefilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<DistanceToEdgeFilter>` | 0 |  |
+| [`DistanceToLine`](/game-api/types/global-c-d/distancetoline) | static class |  | 12 |  |
+| [`DistanceToLineTest`](/game-api/types/global-c-d/distancetolinetest) | class | `MonoBehaviour` | 0 |  |
+| [`DistanceToPathFilter`](/game-api/types/global-c-d/distancetopathfilter) | class | `DistanceFilter` | 0 |  |
+| [`DistanceToPathFilter.Create`](/game-api/types/global-c-d/distancetopathfilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<DistanceToPathFilter>` | 0 |  |
+| [`DistanceToRiverFilter`](/game-api/types/global-c-d/distancetoriverfilter) | class | `DistanceFilter` | 0 |  |
+| [`DistanceToRiverFilter.Create`](/game-api/types/global-c-d/distancetoriverfilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<DistanceToRiverFilter>` | 0 |  |
+| [`DmgTDisplay`](/game-api/types/global-c-d/dmgtdisplay) | class | `MonoBehaviour` | 0 |  |
+| [`DockableJoints`](/game-api/types/global-c-d/dockablejoints) | class | `Pickup` | 0 |  |
+| [`DockByDefault`](/game-api/types/global-c-d/dockbydefault) | class | `GeneratedNetworkEntityBehaviour` | 0 | [Items, interaction and damage](../items/overview.md) |
+| [`DockCounter`](/game-api/types/global-c-d/dockcounter) | class | `MonoBehaviour` | 0 |  |
+| [`DockedFireLogic`](/game-api/types/global-c-d/dockedfirelogic) | class | `MonoBehaviour` | 1 |  |
+| [`DockEvents`](/game-api/types/global-c-d/dockevents) | class | `AbstractDockEvents` | 0 |  |
+| [`DockObjectTask`](/game-api/types/global-c-d/dockobjecttask) | class | `HashSetAction<DockObjectTaskArgument>` | 1 |  |
+| [`DockObjectTaskArgument`](/game-api/types/global-c-d/dockobjecttaskargument) | class | `GameTaskActionArgument` | 6 | [Other systems](../game-systems/other-systems.md) |
+| [`DontDestroyOnLoad`](/game-api/types/global-c-d/dontdestroyonload) | class | `MonoBehaviour` | 1 |  |
+| [`DontGoThroughObjects`](/game-api/types/global-c-d/dontgothroughobjects) | class | `MonoBehaviour` | 3 |  |
+| [`Door`](/game-api/types/global-c-d/door) | abstract class | `NetworkEntityBehaviour`, `ISavable<DoorSaveData>`, `ISavableSave<DoorSaveData>`, +1 more | 4 |  |
+| [`DoorSaveData`](/game-api/types/global-c-d/doorsavedata) | internal class | `NewSaveData<Door, DoorSaveData>` | 1 |  |
+| [`DownwardSwingInput`](/game-api/types/global-c-d/downwardswinginput) | class | `ISkillInputMethod` | 4 |  |
+| [`DownwardSwingInputStructure`](/game-api/types/global-c-d/downwardswinginputstructure) | class | `SkillInputStructure` | 6 |  |
+| [`DownwardSwingInputStructure.Create`](/game-api/types/global-c-d/downwardswinginputstructure-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input.ScriptableObject<DownwardSwingInputStructure>` | 0 |  |
+| [`DPadInputSource`](/game-api/types/global-c-d/dpadinputsource) | class | `InputSource` | 4 |  |
+| [`DragTrigger`](/game-api/types/global-c-d/dragtrigger) | class | `MonoBehaviour` | 1 |  |
+| [`DrawBridgeLogic`](/game-api/types/global-c-d/drawbridgelogic) | class | `MonoBehaviour`, `ISavable<DrawBridgeLogicSaveData>`, `ISavableSave<DrawBridgeLogicSaveData>`, +1 more | 2 |  |
+| [`DrawBridgeLogicSaveData`](/game-api/types/global-c-d/drawbridgelogicsavedata) | class | `NewSaveData<DrawBridgeLogic, DrawBridgeLogicSaveData>` | 3 |  |
+| [`DrawBridgeRangeLogic`](/game-api/types/global-c-d/drawbridgerangelogic) | class | `NetworkEntityBehaviour`, `ISavable<DrawBridgeRangeLogicSaveData>`, `ISavableSave<DrawBridgeRangeLogicSaveData>`, +2 more | 5 |  |
+| [`DrawBridgeRangeLogicSaveData`](/game-api/types/global-c-d/drawbridgerangelogicsavedata) | class | `NewSaveData<DrawBridgeRangeLogic, DrawBridgeRangeLogicSaveData>` | 2 |  |
+| [`DrawBridgeRangeLogicSaveData1`](/game-api/types/global-c-d/drawbridgerangelogicsavedata1) | class | `OldSaveData` | 3 |  |
+| [`DropTarget`](/game-api/types/global-c-d/droptarget) | class | `MonoBehaviour` | 0 |  |
+| [`DummyArrow`](/game-api/types/global-c-d/dummyarrow) | class | `MonoBehaviour` | 1 |  |
+| [`DummyPlayerController`](/game-api/types/global-c-d/dummyplayercontroller) | class | `PlayerController` | 2 |  |
+| [`DurabilityGlobalSettings`](/game-api/types/global-c-d/durabilityglobalsettings) | class | `GlobalSettings<DurabilityGlobalSettings>` | 6 |  |
+| [`DurabilityGlobalSettings.Create`](/game-api/types/global-c-d/durabilityglobalsettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.Loot.ScriptableObject<DurabilityGlobalSettings>` | 0 |  |
+| [`DurabilityModule`](/game-api/types/global-c-d/durabilitymodule) | class | `NetworkEntityBehaviour`, `ISavable<DurabilityModuleSaveData>`, `ISavableSave<DurabilityModuleSaveData>`, +5 more | 14 |  |
+| [`DurabilityModule.DurabilityVisual`](/game-api/types/global-c-d/durabilitymodule-durabilityvisual) | class | `IReferenceRenderer` | 5 |  |
+| [`DurabilityModuleSaveData`](/game-api/types/global-c-d/durabilitymodulesavedata) | internal class | `NewSaveData<DurabilityModule, DurabilityModuleSaveData>` | 1 |  |
+| [`DurabilitySettings`](/game-api/types/global-c-d/durabilitysettings) | class | `PopupScriptableObject` | 4 |  |
+| [`DurabilitySettings.Create`](/game-api/types/global-c-d/durabilitysettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Durability.ScriptableObject<DurabilitySettings>` | 0 |  |
+| [`DurabilityStateChangeEffect`](/game-api/types/global-c-d/durabilitystatechangeeffect) | class | `PooledObject` | 2 |  |
+| [`DurationCurve`](/game-api/types/global-c-d/durationcurve) | class |  | 3 |  |
+| [`DynamicObjectCombiner`](/game-api/types/global-c-d/dynamicobjectcombiner) | class | `StaticObjectCombiner` | 1 |  |
+| [`DynamicPathPart`](/game-api/types/global-c-d/dynamicpathpart) | class | `GeneratablePart` | 1 |  |
+| [`DynamiteStrike`](/game-api/types/global-c-d/dynamitestrike) | class | `AreaAttackSkill` | 4 |  |
+| [`DynamiteStrike.Create`](/game-api/types/global-c-d/dynamitestrike-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<DynamiteStrike>` | 0 |  |

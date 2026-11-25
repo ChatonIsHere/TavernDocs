@@ -1,0 +1,28 @@
+---
+title: "ActiveHandIndex"
+description: "enum ActiveHandIndex in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# ActiveHandIndex
+
+An **enum** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
+
+## Values
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-left" /><code>{"Left = 0"}</code> |  |
+| <Link id="m-right" /><code>{"Right = 1"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `ActiveHandIndex`:
+
+[`GameSettings.SmoothLocomotionActiveHand`](/game-api/types/alta-utilities/gamesettings#m-smoothlocomotionactivehand).

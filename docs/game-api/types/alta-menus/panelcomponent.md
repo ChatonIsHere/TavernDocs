@@ -1,0 +1,57 @@
+---
+title: "PanelComponent"
+description: "abstract class PanelComponent in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# PanelComponent
+
+An **abstract class** in `Root.Township`, `Alta.Meta.UI`.
+
+- **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
+- **Inherits or implements** `MonoBehaviour`
+- **Derived types** [`FriendsInvitesPanel`](/game-api/types/alta-menus/friendsinvitespanel), [`FriendsListPanel`](/game-api/types/alta-menus/friendslistpanel), [`FriendsRequestsPanel`](/game-api/types/alta-menus/friendsrequestspanel), [`GroupPage`](/game-api/types/alta-menus/grouppage), [`InboxPanel`](/game-api/types/alta-menus/inboxpanel), [`InviteUserToGroupPanel`](/game-api/types/alta-menus/inviteusertogrouppanel), [`InviteUserToGroupViaFriendsPanel`](/game-api/types/alta-menus/inviteusertogroupviafriendspanel), [`JoinedGroupsList`](/game-api/types/alta-menus/joinedgroupslist), [`OculusFriendsListPanel`](/game-api/types/alta-menus/oculusfriendslistpanel), [`RecentPlayersListPanel`](/game-api/types/alta-menus/recentplayerslistpanel), [`ReportsPanel`](/game-api/types/alta-menus/reportspanel), [`ServerDetailsPanel`](/game-api/types/alta-menus/serverdetailspanel), [`RecentPlayersPage`](/game-api/types/alta-menus/recentplayerspage), [`GymnasiumTeleportPointPage`](/game-api/types/game-other-namespaces/gymnasiumteleportpointpage), [`RecentPlayerActionPage`](/game-api/types/global-q-r/recentplayeractionpage)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected PanelComponent()"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |  |
+| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> |  |
+| <Link id="m-needstorefreshdata" /><code>{"protected bool needsToRefreshData"}</code> |  |
+| <Link id="m-panel" /><code>{"protected "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel"}</code> |  |
+| <Link id="m-refreshtimer" /><code>{"private float refreshTimer"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-panel-2" /><code><Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" { get; }"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-forcerefreshonnextload" /><code>{"void ForceRefreshOnNextLoad()"}</code> |  |
+| <Link id="m-refreshdata" /><code>{"virtual void RefreshData()"}</code> |  |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| <Link id="m-handlepanelstatechange" /><code>{"private void HandlePanelStateChange("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |  |
+| <Link id="m-handlestatechange" /><code>{"protected virtual void HandleStateChange("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |  |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+| <Link id="m-refreshagain" /><code>{"private void RefreshAgain()"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `PanelComponent`:
+
+[`FriendsListPanel.friendInvitesPanel`](/game-api/types/alta-menus/friendslistpanel#m-friendinvitespanel), [`FriendsRequestsPanel.friendsList`](/game-api/types/alta-menus/friendsrequestspanel#m-friendslist), [`GroupInfoTab.serverListPanel`](/game-api/types/alta-menus/groupinfotab#m-serverlistpanel), [`GroupMembersPage.invitesPanel`](/game-api/types/alta-menus/groupmemberspage#m-invitespanel), [`InboxPanel.panelsToRefresh`](/game-api/types/alta-menus/inboxpanel#m-panelstorefresh), [`OculusFriendsListPanel.friendsList`](/game-api/types/alta-menus/oculusfriendslistpanel#m-friendslist), [`RecentPlayersListPanel.outgoingRequestsList`](/game-api/types/alta-menus/recentplayerslistpanel#m-outgoingrequestslist), [`ServerDetailsPanel.joinedServersPage`](/game-api/types/alta-menus/serverdetailspanel#m-joinedserverspage).

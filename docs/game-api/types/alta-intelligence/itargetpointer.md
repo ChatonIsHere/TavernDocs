@@ -1,0 +1,22 @@
+---
+title: "ITargetPointer"
+description: "interface ITargetPointer in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# ITargetPointer
+
+An **interface** in `Root.Township`, `Alta.Intelligence`.
+
+- **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
+- **Derived types** [`Agent`](/game-api/types/alta-intelligence/agent), [`Babu`](/game-api/types/alta-intelligence/babu), [`GreaterGotera`](/game-api/types/alta-intelligence/greatergotera), [`IAgent`](/game-api/types/alta-intelligence/iagent), [`IInteractAgent`](/game-api/types/alta-intelligence/iinteractagent), [`ITarget`](/game-api/types/alta-intelligence/itarget), [`SeedSpray`](/game-api/types/alta-intelligence/seedspray), [`Spriggull`](/game-api/types/alta-intelligence/spriggull), [`Target`](/game-api/types/alta-intelligence/target), [`TargetPointer`](/game-api/types/alta-intelligence/targetpointer), [`Projectile`](/game-api/types/global-p/projectile)
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-target" /><code><Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target { get; }"}</code> |  |

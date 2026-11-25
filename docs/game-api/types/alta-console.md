@@ -14,172 +14,172 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `Analytics` | static class |  | 2 |  |
-| `AnalyticsOptions` | enum |  | 5 |  |
-| `AnalyticsRecordAttribute` | class | `Attribute` | 0 |  |
-| `AnalyticsRecordForAllAttribute` | class | `Attribute` | 2 |  |
-| `AnalyticsTools` | static class |  | 1 |  |
-| `AnalyticsType` | enum |  | 6 |  |
-| `DeviceStatRecord` | class |  | 19 |  |
-| `TeleportationRecord` | struct |  | 3 |  |
+| [`Analytics`](/game-api/types/alta-console/analytics) | static class |  | 2 |  |
+| [`AnalyticsOptions`](/game-api/types/alta-console/analyticsoptions) | enum |  | 5 |  |
+| [`AnalyticsRecordAttribute`](/game-api/types/alta-console/analyticsrecordattribute) | class | `Attribute` | 0 |  |
+| [`AnalyticsRecordForAllAttribute`](/game-api/types/alta-console/analyticsrecordforallattribute) | class | `Attribute` | 2 |  |
+| [`AnalyticsTools`](/game-api/types/alta-console/analyticstools) | static class |  | 1 |  |
+| [`AnalyticsType`](/game-api/types/alta-console/analyticstype) | enum |  | 6 |  |
+| [`DeviceStatRecord`](/game-api/types/alta-console/devicestatrecord) | class |  | 19 |  |
+| [`TeleportationRecord`](/game-api/types/alta-console/teleportationrecord) | struct |  | 3 |  |
 
 ## Alta.Analytics.UserSettingsAnalytics
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `UserSettingsAnalyticsReporter` | class | `IInitializable`, `IIsolate` | 3 |  |
-| `UserSettingsAnalyticsReporterConfiguration` | class | `ScriptableObject` | 2 |  |
-| `UserSettingsReport` | class |  | 3 |  |
+| [`UserSettingsAnalyticsReporter`](/game-api/types/alta-console/usersettingsanalyticsreporter) | class | `IInitializable`, `IIsolate` | 3 |  |
+| [`UserSettingsAnalyticsReporterConfiguration`](/game-api/types/alta-console/usersettingsanalyticsreporterconfiguration) | class | `ScriptableObject` | 2 |  |
+| [`UserSettingsReport`](/game-api/types/alta-console/usersettingsreport) | class |  | 3 |  |
 
 ## Alta.Console
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `AliasAttribute` | class | `Attribute` | 2 |  |
-| `AllowNullAttribute` | class | `Attribute` | 0 |  |
-| `BasePart` | class |  | 6 |  |
-| `ClientOnlyAttribute` | class | `RequirementAttribute` | 2 |  |
-| `Command` | class | `CommandPart` | 9 | [Writing commands](../console-and-utilities/commands.md#module-and-command), [Health and damage](../items/health-and-damage.md): Not created anywhere in the game's own code. TavernLib's kill command uses it. |
-| `CommandAttribute` | class | `Attribute` | 5 | [Console, utilities and Alta assemblies](../console-and-utilities/overview.md) |
-| `CommandCollection` | class |  | 8 | [Writing commands](../console-and-utilities/commands.md#commandcollection): Get it from `CommandService.CommandCollection`. |
-| `CommandContext` | class |  | 7 | [Writing commands](../console-and-utilities/commands.md#commandcontext): One per console session: each websocket connection has its own, and `Handle` without a context uses one shared default. |
-| `CommandContextExtensions` | static class |  | 1 |  |
-| `CommandException` | class | `Exception` | 1 |  |
-| `CommandPart` | abstract class | `BasePart` | 10 |  |
-| `CommandResult` | class |  | 8 | [Arguments and results](../console-and-utilities/arguments-and-results.md#commandresult): For an object result, `Log()` serializes it to JSON and, in the same line, copies that JSON to the system clipboard of the machine running the game. |
-| `CommandResult<T>` | class | `CommandResult` | 4 | [Arguments and results](../console-and-utilities/arguments-and-results.md#commandresult): For an object result, `Log()` serializes it to JSON and, in the same line, copies that JSON to the system clipboard of the machine running the game. |
-| `CommandResultSuccess` | enum |  | 5 |  |
-| `CommandSearchResult` | struct |  | 8 |  |
-| `CommandService` | static class |  | 8 | [Writing commands](../console-and-utilities/commands.md#commandservice), [Console, utilities and Alta assemblies](../console-and-utilities/overview.md): Main thread: every console the game has calls it from Unity's main thread, and you should too. |
-| `ConsoleEvent` | abstract class |  | 5 |  |
-| `ConsoleEvent.Processor` | class | `IDisposable` | 2 |  |
-| `ConsoleEvent<T>` | class | `ConsoleEvent`, `IConsoleEvent` | 4 | [Console, utilities and Alta assemblies](../console-and-utilities/overview.md) |
-| `ConsoleEventProcessor` | static class |  | 5 |  |
-| `ConsoleEvents` | static class |  | 16 |  |
-| `ConsoleLogEvents` | static class |  | 1 |  |
-| `DevOnlyAttribute` | class | `RequirementAttribute` | 2 |  |
-| `DynamicCommandResult` | class | `CommandResult<object>` | 2 | [Arguments and results](../console-and-utilities/arguments-and-results.md) |
-| `EditorOnlyAttribute` | class | `RequirementAttribute` | 2 |  |
-| `GroupPermissionAttribute` | class | `RequirementAttribute` | 2 |  |
-| `HashedItemInfo` | class |  | 5 |  |
-| `IConsoleEvent` | interface |  | 3 |  |
-| `JsonSerializerSettingsExtensions` | static class |  | 1 |  |
-| `LoggedInOnlyAttribute` | class | `RequirementAttribute` | 2 |  |
-| `Module` | class | `CommandPart` | 5 | [Writing commands](../console-and-utilities/commands.md#module-and-command) |
-| `ModuleAttribute` | class | `Attribute` | 3 | [Console, utilities and Alta assemblies](../console-and-utilities/overview.md) |
-| `NonSimpleServerAttribute` | class | `RequirementAttribute` | 3 |  |
-| `NotAllowedInRemoteAttribute` | class | `RequirementAttribute` | 2 |  |
-| `NullableStructSerializer<TStruct>` | class | `JsonConverter<TStruct?>` | 2 |  |
-| `ParamAttribute` | class | `Attribute` | 2 |  |
-| `Parameter` | class | `BasePart` | 9 |  |
-| `PlayOnlyAttribute` | class | `RequirementAttribute` | 2 |  |
-| `PriorityAttribute` | class | `Attribute` | 2 |  |
-| `ProgressiveHandler` | class |  | 0 |  |
-| `RequirementAttribute` | abstract class | `Attribute` | 2 |  |
-| `ServerOnlyAttribute` | class | `RequirementAttribute` | 2 |  |
-| `StringTypeConverter` | class | `JsonConverter<Type>` | 3 |  |
-| `Vector2TypeConverter` | class | `JsonConverter<Vector2>` | 2 |  |
-| `Vector3Converter` | class | `TypeConverter` | 2 |  |
-| `Vector3TypeConverter` | class | `JsonConverter<Vector3>` | 2 |  |
-| `Vector4TypeConverter` | class | `JsonConverter<Vector4>` | 2 |  |
-| `WebSocketCommandHandler` | class | `IRemoteConsoleHandler` | 8 | [Remote console](../console-and-utilities/remote-console.md#websocketcommandhandler): One per websocket connection. `WebSocketRemoteConsole.Handlers` (a static list) holds every one, logged in or not. |
-| `WebSocketCommandHandler.Request` | struct |  | 2 |  |
-| `WebSocketCommandHandler.ResponseData` | class |  | 7 |  |
-| `WebSocketCommandHandler.ResponseType` | enum |  | 3 |  |
-| `WebSocketCommandHandler.SubscriptionResult` | enum |  | 3 |  |
-| `WebSocketConsoleCommandModule` | class |  | 3 |  |
-| `WebsocketContractResolver` | class | `DefaultContractResolver` | 1 |  |
-| `WebSocketRemoteConsole` | class | `IRemoteConsole` | 7 |  |
-| `WithGroupPermissionsOnlyAttribute` | class | `RequirementAttribute` | 3 |  |
-| `WithPermissionOnlyAttribute` | class | `RequirementAttribute` | 4 |  |
+| [`AliasAttribute`](/game-api/types/alta-console/aliasattribute) | class | `Attribute` | 2 |  |
+| [`AllowNullAttribute`](/game-api/types/alta-console/allownullattribute) | class | `Attribute` | 0 |  |
+| [`BasePart`](/game-api/types/alta-console/basepart) | class |  | 6 |  |
+| [`ClientOnlyAttribute`](/game-api/types/alta-console/clientonlyattribute) | class | `RequirementAttribute` | 2 |  |
+| [`Command`](/game-api/types/alta-console/command) | class | `CommandPart` | 9 | [Writing commands](../console-and-utilities/commands.md#module-and-command), [Health and damage](../items/health-and-damage.md): Not created anywhere in the game's own code. TavernLib's kill command uses it. |
+| [`CommandAttribute`](/game-api/types/alta-console/commandattribute) | class | `Attribute` | 5 | [Console, utilities and Alta assemblies](../console-and-utilities/overview.md) |
+| [`CommandCollection`](/game-api/types/alta-console/commandcollection) | class |  | 8 | [Writing commands](../console-and-utilities/commands.md#commandcollection): Get it from `CommandService.CommandCollection`. |
+| [`CommandContext`](/game-api/types/alta-console/commandcontext) | class |  | 7 | [Writing commands](../console-and-utilities/commands.md#commandcontext): One per console session: each websocket connection has its own, and `Handle` without a context uses one shared default. |
+| [`CommandContextExtensions`](/game-api/types/alta-console/commandcontextextensions) | static class |  | 1 |  |
+| [`CommandException`](/game-api/types/alta-console/commandexception) | class | `Exception` | 1 |  |
+| [`CommandPart`](/game-api/types/alta-console/commandpart) | abstract class | `BasePart` | 10 |  |
+| [`CommandResult`](/game-api/types/alta-console/commandresult) | class |  | 8 | [Arguments and results](../console-and-utilities/arguments-and-results.md#commandresult): For an object result, `Log()` serializes it to JSON and, in the same line, copies that JSON to the system clipboard of the machine running the game. |
+| [`CommandResult<T>`](/game-api/types/alta-console/commandresult-t) | class | `CommandResult` | 4 | [Arguments and results](../console-and-utilities/arguments-and-results.md#commandresult): For an object result, `Log()` serializes it to JSON and, in the same line, copies that JSON to the system clipboard of the machine running the game. |
+| [`CommandResultSuccess`](/game-api/types/alta-console/commandresultsuccess) | enum |  | 5 |  |
+| [`CommandSearchResult`](/game-api/types/alta-console/commandsearchresult) | struct |  | 8 |  |
+| [`CommandService`](/game-api/types/alta-console/commandservice) | static class |  | 8 | [Writing commands](../console-and-utilities/commands.md#commandservice), [Console, utilities and Alta assemblies](../console-and-utilities/overview.md): Main thread: every console the game has calls it from Unity's main thread, and you should too. |
+| [`ConsoleEvent`](/game-api/types/alta-console/consoleevent) | abstract class |  | 5 |  |
+| [`ConsoleEvent.Processor`](/game-api/types/alta-console/consoleevent-processor) | class | `IDisposable` | 2 |  |
+| [`ConsoleEvent<T>`](/game-api/types/alta-console/consoleevent-t) | class | `ConsoleEvent`, `IConsoleEvent` | 4 | [Console, utilities and Alta assemblies](../console-and-utilities/overview.md) |
+| [`ConsoleEventProcessor`](/game-api/types/alta-console/consoleeventprocessor) | static class |  | 5 |  |
+| [`ConsoleEvents`](/game-api/types/alta-console/consoleevents) | static class |  | 16 |  |
+| [`ConsoleLogEvents`](/game-api/types/alta-console/consolelogevents) | static class |  | 1 |  |
+| [`DevOnlyAttribute`](/game-api/types/alta-console/devonlyattribute) | class | `RequirementAttribute` | 2 |  |
+| [`DynamicCommandResult`](/game-api/types/alta-console/dynamiccommandresult) | class | `CommandResult<object>` | 2 | [Arguments and results](../console-and-utilities/arguments-and-results.md) |
+| [`EditorOnlyAttribute`](/game-api/types/alta-console/editoronlyattribute) | class | `RequirementAttribute` | 2 |  |
+| [`GroupPermissionAttribute`](/game-api/types/alta-console/grouppermissionattribute) | class | `RequirementAttribute` | 2 |  |
+| [`HashedItemInfo`](/game-api/types/alta-console/hashediteminfo) | class |  | 5 |  |
+| [`IConsoleEvent`](/game-api/types/alta-console/iconsoleevent) | interface |  | 3 |  |
+| [`JsonSerializerSettingsExtensions`](/game-api/types/alta-console/jsonserializersettingsextensions) | static class |  | 1 |  |
+| [`LoggedInOnlyAttribute`](/game-api/types/alta-console/loggedinonlyattribute) | class | `RequirementAttribute` | 2 |  |
+| [`Module`](/game-api/types/alta-console/module) | class | `CommandPart` | 5 | [Writing commands](../console-and-utilities/commands.md#module-and-command) |
+| [`ModuleAttribute`](/game-api/types/alta-console/moduleattribute) | class | `Attribute` | 3 | [Console, utilities and Alta assemblies](../console-and-utilities/overview.md) |
+| [`NonSimpleServerAttribute`](/game-api/types/alta-console/nonsimpleserverattribute) | class | `RequirementAttribute` | 3 |  |
+| [`NotAllowedInRemoteAttribute`](/game-api/types/alta-console/notallowedinremoteattribute) | class | `RequirementAttribute` | 2 |  |
+| [`NullableStructSerializer<TStruct>`](/game-api/types/alta-console/nullablestructserializer-tstruct) | class | `JsonConverter<TStruct?>` | 2 |  |
+| [`ParamAttribute`](/game-api/types/alta-console/paramattribute) | class | `Attribute` | 2 |  |
+| [`Parameter`](/game-api/types/alta-console/parameter) | class | `BasePart` | 9 |  |
+| [`PlayOnlyAttribute`](/game-api/types/alta-console/playonlyattribute) | class | `RequirementAttribute` | 2 |  |
+| [`PriorityAttribute`](/game-api/types/alta-console/priorityattribute) | class | `Attribute` | 2 |  |
+| [`ProgressiveHandler`](/game-api/types/alta-console/progressivehandler) | class |  | 0 |  |
+| [`RequirementAttribute`](/game-api/types/alta-console/requirementattribute) | abstract class | `Attribute` | 2 |  |
+| [`ServerOnlyAttribute`](/game-api/types/alta-console/serveronlyattribute) | class | `RequirementAttribute` | 2 |  |
+| [`StringTypeConverter`](/game-api/types/alta-console/stringtypeconverter) | class | `JsonConverter<Type>` | 3 |  |
+| [`Vector2TypeConverter`](/game-api/types/alta-console/vector2typeconverter) | class | `JsonConverter<Vector2>` | 2 |  |
+| [`Vector3Converter`](/game-api/types/alta-console/vector3converter) | class | `TypeConverter` | 2 |  |
+| [`Vector3TypeConverter`](/game-api/types/alta-console/vector3typeconverter) | class | `JsonConverter<Vector3>` | 2 |  |
+| [`Vector4TypeConverter`](/game-api/types/alta-console/vector4typeconverter) | class | `JsonConverter<Vector4>` | 2 |  |
+| [`WebSocketCommandHandler`](/game-api/types/alta-console/websocketcommandhandler) | class | `IRemoteConsoleHandler` | 8 | [Remote console](../console-and-utilities/remote-console.md#websocketcommandhandler): One per websocket connection. `WebSocketRemoteConsole.Handlers` (a static list) holds every one, logged in or not. |
+| [`WebSocketCommandHandler.Request`](/game-api/types/alta-console/websocketcommandhandler-request) | struct |  | 2 |  |
+| [`WebSocketCommandHandler.ResponseData`](/game-api/types/alta-console/websocketcommandhandler-responsedata) | class |  | 7 |  |
+| [`WebSocketCommandHandler.ResponseType`](/game-api/types/alta-console/websocketcommandhandler-responsetype) | enum |  | 3 |  |
+| [`WebSocketCommandHandler.SubscriptionResult`](/game-api/types/alta-console/websocketcommandhandler-subscriptionresult) | enum |  | 3 |  |
+| [`WebSocketConsoleCommandModule`](/game-api/types/alta-console/websocketconsolecommandmodule) | class |  | 3 |  |
+| [`WebsocketContractResolver`](/game-api/types/alta-console/websocketcontractresolver) | class | `DefaultContractResolver` | 1 |  |
+| [`WebSocketRemoteConsole`](/game-api/types/alta-console/websocketremoteconsole) | class | `IRemoteConsole` | 7 |  |
+| [`WithGroupPermissionsOnlyAttribute`](/game-api/types/alta-console/withgrouppermissionsonlyattribute) | class | `RequirementAttribute` | 3 |  |
+| [`WithPermissionOnlyAttribute`](/game-api/types/alta-console/withpermissiononlyattribute) | class | `RequirementAttribute` | 4 |  |
 
 ## Alta.Console.Commands
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `AltaSelection` | class |  | 2 |  |
-| `AudioCommandModule` | static class |  | 0 |  |
-| `AudioCommandModule.Microphone` | static class |  | 0 |  |
-| `BaseCommands` | static class |  | 5 |  |
-| `ChunkInfo` | class |  | 2 |  |
-| `DebuggingCommandModule` | static class |  | 0 |  |
-| `DebuggingCommandModule.StaticCommandSubModule` | static class |  | 0 |  |
-| `DebuggingCommandModule.Tracking` | static class |  | 3 |  |
-| `EntityInfo` | class |  | 8 |  |
-| `GameCommandModule` | static class |  | 1 |  |
-| `InfoCommandModule` | static class |  | 0 |  |
-| `Inventory` | class |  | 6 |  |
-| `LeaderboardCommandModule` | static class |  | 6 |  |
-| `LoggingCommandModule` | static class |  | 1 |  |
-| `LoginCommandModule` | static class |  | 0 |  |
-| `LogoutCommandModule` | static class |  | 0 |  |
-| `MaintenanceCommandModule` | static class |  | 0 |  |
-| `ModCommands` | static class |  | 8 |  |
-| `ModInfo` | class |  | 4 |  |
-| `NetworkEntityInfo` | class |  | 3 |  |
-| `PrefabInfoDump` | class |  | 4 |  |
-| `PrefabInfoDump.NetworkEntityInfoDump` | class |  | 4 |  |
-| `PrefabInfoDump.SavableInfoDump` | class |  | 3 |  |
-| `ProfilingCommandModule` | static class |  | 1 |  |
-| `ProgressCommandModule` | static class |  | 1 |  |
-| `QualityCommandModule` | class |  | 3 |  |
-| `QuitCommandModule` | static class |  | 0 |  |
-| `RepairBoxModule` | static class |  | 5 |  |
-| `RepeatCommandModule` | static class |  | 0 |  |
-| `SavingCommandModule` | static class |  | 1 |  |
-| `SelectionCommandModule` | static class |  | 0 |  |
-| `SelectionCommandModule.MovingModule` | static class |  | 0 |  |
-| `SelectionCommandModule.RotatingModule` | static class |  | 0 |  |
-| `ServerCommandModule` | static class |  | 0 |  |
-| `SettingsCommandModules` | static class |  | 0 |  |
-| `SettingsCommandModules.PopulationSettings` | static class |  | 3 |  |
-| `SocialCommandModule` | static class |  | 3 |  |
-| `SpawnCommandModule` | static class |  | 3 |  |
-| `SpawnCommandModule.MouldDefinitionInfo` | class |  | 2 |  |
-| `SpawnCommandModule.Moulds` | static class |  | 0 |  |
-| `SpawnCommandModule.Packages` | static class |  | 0 |  |
-| `SpawnCommandModule.PageCollectionInfo` | class |  | 3 |  |
-| `SpawnCommandModule.Pages` | static class |  | 0 |  |
-| `SpawnCommandModule.PopulationType` | enum |  | 3 |  |
-| `SpawnCommandModule.SpawnLists` | static class |  | 0 |  |
-| `TimeCommandModule` | static class |  | 0 |  |
-| `TradeCommandModule` | static class |  | 0 |  |
-| `TradeCommandModule.ATMCommandModule` | static class |  | 3 |  |
-| `TrialCommandModule` | static class |  | 0 |  |
-| `UserInfoDetailed` | class | `UserInfo` | 13 |  |
-| `UsersCommandModule` | static class |  | 0 |  |
-| `WackyCommandModule` | static class |  | 1 |  |
-| `WorldCommandModule` | static class |  | 0 |  |
-| `WorldCommandModule.CaveCommandModule` | static class |  | 1 | [Caves](../world/caves.md#console-commands-worldcommandmodulecavecommandmodule): The `world caves` module. |
-| `WorldCommandModule.ForestCommandModule` | static class |  | 2 | [Forest](../world/forest.md#console-commands-worldcommandmoduleforestcommandmodule): The `world forest` module. |
+| [`AltaSelection`](/game-api/types/alta-console/altaselection) | class |  | 2 |  |
+| [`AudioCommandModule`](/game-api/types/alta-console/audiocommandmodule) | static class |  | 0 |  |
+| [`AudioCommandModule.Microphone`](/game-api/types/alta-console/audiocommandmodule-microphone) | static class |  | 0 |  |
+| [`BaseCommands`](/game-api/types/alta-console/basecommands) | static class |  | 5 |  |
+| [`ChunkInfo`](/game-api/types/alta-console/chunkinfo) | class |  | 2 |  |
+| [`DebuggingCommandModule`](/game-api/types/alta-console/debuggingcommandmodule) | static class |  | 0 |  |
+| [`DebuggingCommandModule.StaticCommandSubModule`](/game-api/types/alta-console/debuggingcommandmodule-staticcommandsubmodule) | static class |  | 0 |  |
+| [`DebuggingCommandModule.Tracking`](/game-api/types/alta-console/debuggingcommandmodule-tracking) | static class |  | 3 |  |
+| [`EntityInfo`](/game-api/types/alta-console/entityinfo) | class |  | 8 |  |
+| [`GameCommandModule`](/game-api/types/alta-console/gamecommandmodule) | static class |  | 1 |  |
+| [`InfoCommandModule`](/game-api/types/alta-console/infocommandmodule) | static class |  | 0 |  |
+| [`Inventory`](/game-api/types/alta-console/inventory) | class |  | 6 |  |
+| [`LeaderboardCommandModule`](/game-api/types/alta-console/leaderboardcommandmodule) | static class |  | 6 |  |
+| [`LoggingCommandModule`](/game-api/types/alta-console/loggingcommandmodule) | static class |  | 1 |  |
+| [`LoginCommandModule`](/game-api/types/alta-console/logincommandmodule) | static class |  | 0 |  |
+| [`LogoutCommandModule`](/game-api/types/alta-console/logoutcommandmodule) | static class |  | 0 |  |
+| [`MaintenanceCommandModule`](/game-api/types/alta-console/maintenancecommandmodule) | static class |  | 0 |  |
+| [`ModCommands`](/game-api/types/alta-console/modcommands) | static class |  | 8 |  |
+| [`ModInfo`](/game-api/types/alta-console/modinfo) | class |  | 4 |  |
+| [`NetworkEntityInfo`](/game-api/types/alta-console/networkentityinfo) | class |  | 3 |  |
+| [`PrefabInfoDump`](/game-api/types/alta-console/prefabinfodump) | class |  | 4 |  |
+| [`PrefabInfoDump.NetworkEntityInfoDump`](/game-api/types/alta-console/prefabinfodump-networkentityinfodump) | class |  | 4 |  |
+| [`PrefabInfoDump.SavableInfoDump`](/game-api/types/alta-console/prefabinfodump-savableinfodump) | class |  | 3 |  |
+| [`ProfilingCommandModule`](/game-api/types/alta-console/profilingcommandmodule) | static class |  | 1 |  |
+| [`ProgressCommandModule`](/game-api/types/alta-console/progresscommandmodule) | static class |  | 1 |  |
+| [`QualityCommandModule`](/game-api/types/alta-console/qualitycommandmodule) | class |  | 3 |  |
+| [`QuitCommandModule`](/game-api/types/alta-console/quitcommandmodule) | static class |  | 0 |  |
+| [`RepairBoxModule`](/game-api/types/alta-console/repairboxmodule) | static class |  | 5 |  |
+| [`RepeatCommandModule`](/game-api/types/alta-console/repeatcommandmodule) | static class |  | 0 |  |
+| [`SavingCommandModule`](/game-api/types/alta-console/savingcommandmodule) | static class |  | 1 |  |
+| [`SelectionCommandModule`](/game-api/types/alta-console/selectioncommandmodule) | static class |  | 0 |  |
+| [`SelectionCommandModule.MovingModule`](/game-api/types/alta-console/selectioncommandmodule-movingmodule) | static class |  | 0 |  |
+| [`SelectionCommandModule.RotatingModule`](/game-api/types/alta-console/selectioncommandmodule-rotatingmodule) | static class |  | 0 |  |
+| [`ServerCommandModule`](/game-api/types/alta-console/servercommandmodule) | static class |  | 0 |  |
+| [`SettingsCommandModules`](/game-api/types/alta-console/settingscommandmodules) | static class |  | 0 |  |
+| [`SettingsCommandModules.PopulationSettings`](/game-api/types/alta-console/settingscommandmodules-populationsettings) | static class |  | 3 |  |
+| [`SocialCommandModule`](/game-api/types/alta-console/socialcommandmodule) | static class |  | 3 |  |
+| [`SpawnCommandModule`](/game-api/types/alta-console/spawncommandmodule) | static class |  | 3 |  |
+| [`SpawnCommandModule.MouldDefinitionInfo`](/game-api/types/alta-console/spawncommandmodule-moulddefinitioninfo) | class |  | 2 |  |
+| [`SpawnCommandModule.Moulds`](/game-api/types/alta-console/spawncommandmodule-moulds) | static class |  | 0 |  |
+| [`SpawnCommandModule.Packages`](/game-api/types/alta-console/spawncommandmodule-packages) | static class |  | 0 |  |
+| [`SpawnCommandModule.PageCollectionInfo`](/game-api/types/alta-console/spawncommandmodule-pagecollectioninfo) | class |  | 3 |  |
+| [`SpawnCommandModule.Pages`](/game-api/types/alta-console/spawncommandmodule-pages) | static class |  | 0 |  |
+| [`SpawnCommandModule.PopulationType`](/game-api/types/alta-console/spawncommandmodule-populationtype) | enum |  | 3 |  |
+| [`SpawnCommandModule.SpawnLists`](/game-api/types/alta-console/spawncommandmodule-spawnlists) | static class |  | 0 |  |
+| [`TimeCommandModule`](/game-api/types/alta-console/timecommandmodule) | static class |  | 0 |  |
+| [`TradeCommandModule`](/game-api/types/alta-console/tradecommandmodule) | static class |  | 0 |  |
+| [`TradeCommandModule.ATMCommandModule`](/game-api/types/alta-console/tradecommandmodule-atmcommandmodule) | static class |  | 3 |  |
+| [`TrialCommandModule`](/game-api/types/alta-console/trialcommandmodule) | static class |  | 0 |  |
+| [`UserInfoDetailed`](/game-api/types/alta-console/userinfodetailed) | class | `UserInfo` | 13 |  |
+| [`UsersCommandModule`](/game-api/types/alta-console/userscommandmodule) | static class |  | 0 |  |
+| [`WackyCommandModule`](/game-api/types/alta-console/wackycommandmodule) | static class |  | 1 |  |
+| [`WorldCommandModule`](/game-api/types/alta-console/worldcommandmodule) | static class |  | 0 |  |
+| [`WorldCommandModule.CaveCommandModule`](/game-api/types/alta-console/worldcommandmodule-cavecommandmodule) | static class |  | 1 | [Caves](../world/caves.md#console-commands-worldcommandmodulecavecommandmodule): The `world caves` module. |
+| [`WorldCommandModule.ForestCommandModule`](/game-api/types/alta-console/worldcommandmodule-forestcommandmodule) | static class |  | 2 | [Forest](../world/forest.md#console-commands-worldcommandmoduleforestcommandmodule): The `world forest` module. |
 
 ## Alta.Logging
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `CommandLineArgsLogger` | class | `MonoBehaviour` | 0 |  |
+| [`CommandLineArgsLogger`](/game-api/types/alta-console/commandlineargslogger) | class | `MonoBehaviour` | 0 |  |
 
 ## Alta.Logging.Targets
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `ConsoleCommandsLogTarget` | class | `TargetWithLayout` | 2 |  |
-| `FullStackTraceRenderer` | class | `LayoutRenderer`, `IUsesStackTrace` | 1 |  |
-| `LogHandler` | delegate |  | 0 |  |
-| `MainMenuTarget` | class | `TargetWithLayout` | 0 | [Logging](../console-and-utilities/logging.md) |
-| `NetworkEntityChunkRenderer` | class | `NetworkEntityRenderer` | 0 |  |
-| `NetworkEntityIdentifierRenderer` | class | `NetworkEntityRenderer` | 0 |  |
-| `NetworkEntityOwnedRenderer` | class | `NetworkEntityRenderer` | 0 |  |
-| `NetworkEntityParentRenderer` | class | `NetworkEntityRenderer` | 0 |  |
-| `NetworkEntityPrefabRenderer` | class | `NetworkEntityRenderer` | 0 |  |
-| `NetworkEntityRenderer` | abstract class | `LayoutRenderer` | 0 |  |
-| `RawLogHandler` | delegate |  | 0 |  |
-| `ServerConsoleLogTarget` | class | `TargetWithLayout` | 2 |  |
-| `UnityConsoleLogTarget` | class | `TargetWithLayout` | 2 | [Logging](../console-and-utilities/logging.md) |
+| [`ConsoleCommandsLogTarget`](/game-api/types/alta-console/consolecommandslogtarget) | class | `TargetWithLayout` | 2 |  |
+| [`FullStackTraceRenderer`](/game-api/types/alta-console/fullstacktracerenderer) | class | `LayoutRenderer`, `IUsesStackTrace` | 1 |  |
+| [`LogHandler`](/game-api/types/alta-console/loghandler) | delegate |  | 0 |  |
+| [`MainMenuTarget`](/game-api/types/alta-console/mainmenutarget) | class | `TargetWithLayout` | 0 | [Logging](../console-and-utilities/logging.md) |
+| [`NetworkEntityChunkRenderer`](/game-api/types/alta-console/networkentitychunkrenderer) | class | `NetworkEntityRenderer` | 0 |  |
+| [`NetworkEntityIdentifierRenderer`](/game-api/types/alta-console/networkentityidentifierrenderer) | class | `NetworkEntityRenderer` | 0 |  |
+| [`NetworkEntityOwnedRenderer`](/game-api/types/alta-console/networkentityownedrenderer) | class | `NetworkEntityRenderer` | 0 |  |
+| [`NetworkEntityParentRenderer`](/game-api/types/alta-console/networkentityparentrenderer) | class | `NetworkEntityRenderer` | 0 |  |
+| [`NetworkEntityPrefabRenderer`](/game-api/types/alta-console/networkentityprefabrenderer) | class | `NetworkEntityRenderer` | 0 |  |
+| [`NetworkEntityRenderer`](/game-api/types/alta-console/networkentityrenderer) | abstract class | `LayoutRenderer` | 0 |  |
+| [`RawLogHandler`](/game-api/types/alta-console/rawloghandler) | delegate |  | 0 |  |
+| [`ServerConsoleLogTarget`](/game-api/types/alta-console/serverconsolelogtarget) | class | `TargetWithLayout` | 2 |  |
+| [`UnityConsoleLogTarget`](/game-api/types/alta-console/unityconsolelogtarget) | class | `TargetWithLayout` | 2 | [Logging](../console-and-utilities/logging.md) |
 
 ## Alta.QATools
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `DebugLoadMarker` | class |  | 1 |  |
-| `DebugLoadMarker.IChunkLoader` | interface |  | 1 |  |
+| [`DebugLoadMarker`](/game-api/types/alta-console/debugloadmarker) | class |  | 1 |  |
+| [`DebugLoadMarker.IChunkLoader`](/game-api/types/alta-console/debugloadmarker-ichunkloader) | interface |  | 1 |  |

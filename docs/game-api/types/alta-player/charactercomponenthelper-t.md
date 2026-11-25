@@ -1,0 +1,41 @@
+---
+title: "CharacterComponentHelper<T>"
+description: "abstract class CharacterComponentHelper<T> in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# CharacterComponentHelper&lt;T&gt;
+
+An **abstract class** in `Root.Township`, `Alta.Character`.
+
+- **Listed in** [Players and characters](/game-api/types/alta-player)
+- **Inherits or implements** [`ScriptHelper`](/game-api/types/alta-utilities/scripthelper)
+- **Derived types** [`ArmIKControllerHelper`](/game-api/types/alta-player/armikcontrollerhelper), [`CharacterCollisionControllerHelper`](/game-api/types/alta-player/charactercollisioncontrollerhelper), [`NeckIKControllerHelper`](/game-api/types/alta-player/neckikcontrollerhelper), [`ShoulderTwistControllerHelper`](/game-api/types/alta-player/shouldertwistcontrollerhelper), [`TwistRelaxerControllerHelper`](/game-api/types/alta-player/twistrelaxercontrollerhelper)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected CharacterComponentHelper()"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-componentcontroller" /><code>{"private T componentController"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-componentcontroller-2" /><code>{"protected T ComponentController { get; }"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onvalidate" /><code>{"protected abstract void OnValidate()"}</code> |  |

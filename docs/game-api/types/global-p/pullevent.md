@@ -1,0 +1,28 @@
+---
+title: "PullEvent"
+description: "class PullEvent in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# PullEvent
+
+A **class** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: P](/game-api/types/global-p)
+- **Inherits or implements** [`AltaEvent<PullPickup, PullEventHandler>`](/game-api/types/global-a-b/altaevent-t-unityeventt)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PullEvent()"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `PullEvent`:
+
+[`PullPickup.pulledOnClient`](/game-api/types/global-p/pullpickup#m-pulledonclient), [`PullPickup.pulledOnServer`](/game-api/types/global-p/pullpickup#m-pulledonserver).

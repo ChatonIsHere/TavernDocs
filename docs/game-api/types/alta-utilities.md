@@ -14,264 +14,264 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `CurveRange<T>` | class | `DoubleValue<T>` | 4 |  |
-| `CurveValue<T>` | class |  | 4 |  |
-| `DoubleValue<T>` | class | `SingleValue<T>` | 3 |  |
-| `FileDownload` | class |  | 6 |  |
-| `ICollisionStandard` | interface |  | 1 |  |
-| `IDisableOnSimpleServer` | interface |  | 1 |  |
-| `Math2d` | static class |  | 1 |  |
-| `MathfOperation` | static class |  | 6 |  |
-| `Operation` | delegate |  | 0 |  |
-| `OperationType` | enum |  | 7 |  |
-| `SerializeHashedObject` | static class |  | 3 |  |
-| `SimpleHashedGeneralValue<T>` | abstract class | `HashedGeneralValue<T>`, `IDisableOnSimpleServer` | 2 |  |
-| `SingleValue<T>` | class |  | 4 |  |
-| `StatDefinitionConverter` | class | `HashedGeneralValueConverter<StatDefinition>` | 0 |  |
-| `SurfaceMaterial` | class | `ScriptableObject` | 0 |  |
-| `SurfaceMaterial.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Environmental.ScriptableObject<SurfaceMaterial>` | 0 |  |
+| [`CurveRange<T>`](/game-api/types/alta-utilities/curverange-t) | class | `DoubleValue<T>` | 4 |  |
+| [`CurveValue<T>`](/game-api/types/alta-utilities/curvevalue-t) | class |  | 4 |  |
+| [`DoubleValue<T>`](/game-api/types/alta-utilities/doublevalue-t) | class | `SingleValue<T>` | 3 |  |
+| [`FileDownload`](/game-api/types/alta-utilities/filedownload) | class |  | 6 |  |
+| [`ICollisionStandard`](/game-api/types/alta-utilities/icollisionstandard) | interface |  | 1 |  |
+| [`IDisableOnSimpleServer`](/game-api/types/alta-utilities/idisableonsimpleserver) | interface |  | 1 |  |
+| [`Math2d`](/game-api/types/alta-utilities/math2d) | static class |  | 1 |  |
+| [`MathfOperation`](/game-api/types/alta-utilities/mathfoperation) | static class |  | 6 |  |
+| [`Operation`](/game-api/types/alta-utilities/operation) | delegate |  | 0 |  |
+| [`OperationType`](/game-api/types/alta-utilities/operationtype) | enum |  | 7 |  |
+| [`SerializeHashedObject`](/game-api/types/alta-utilities/serializehashedobject) | static class |  | 3 |  |
+| [`SimpleHashedGeneralValue<T>`](/game-api/types/alta-utilities/simplehashedgeneralvalue-t) | abstract class | `HashedGeneralValue<T>`, `IDisableOnSimpleServer` | 2 |  |
+| [`SingleValue<T>`](/game-api/types/alta-utilities/singlevalue-t) | class |  | 4 |  |
+| [`StatDefinitionConverter`](/game-api/types/alta-utilities/statdefinitionconverter) | class | `HashedGeneralValueConverter<StatDefinition>` | 0 |  |
+| [`SurfaceMaterial`](/game-api/types/alta-utilities/surfacematerial) | class | `ScriptableObject` | 0 |  |
+| [`SurfaceMaterial.Create`](/game-api/types/alta-utilities/surfacematerial-create) | class | `AltaMenuItemBase.Assets.Create.Township.Environmental.ScriptableObject<SurfaceMaterial>` | 0 |  |
 
 ## Alta.AssetBaking
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `AssetBakingSettings` | static class |  | 5 |  |
-| `CachedDirectory` | class |  | 3 |  |
+| [`AssetBakingSettings`](/game-api/types/alta-utilities/assetbakingsettings) | static class |  | 5 |  |
+| [`CachedDirectory`](/game-api/types/alta-utilities/cacheddirectory) | class |  | 3 |  |
 
 ## Alta.Bezier
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `Bezier` | static class |  | 4 |  |
-| `BezierSpline` | class | `MonoBehaviour`, `IInstructionResult` | 19 |  |
-| `ItemModifier` | abstract class | `SplineDisplayModifier` | 2 |  |
-| `Skip` | class | `ItemModifier`, `IIgnoreForStaticFlatten`, `IDontSplit` | 1 |  |
-| `SplineChangedHandler` | delegate |  | 0 |  |
-| `SplineCylinder` | class | `SplineDisplay` | 0 |  |
-| `SplineDecorator` | class | `SplineDisplay` | 1 |  |
-| `SplineDecorator.ForwardMode` | enum |  | 2 |  |
-| `SplineDecorator.Part` | struct |  | 5 |  |
-| `SplineDecorator.RotationMode` | enum |  | 4 |  |
-| `SplineDecorator.ScaleMode` | enum |  | 2 |  |
-| `SplineDecorator.UpMode` | enum |  | 2 |  |
-| `SplineDisplay` | abstract class | `MonoBehaviour`, `IBakeable` | 5 |  |
-| `SplineDisplayModifier` | abstract class | `MonoBehaviour`, `IDestroyOnBake` | 0 |  |
-| `SplineMesh` | class | `SplineDisplay` | 0 |  |
-| `WedgeChooser` | class | `ItemModifier` | 2 |  |
-| `WedgeChooser.Wedge` | class |  | 5 |  |
+| [`Bezier`](/game-api/types/alta-utilities/bezier) | static class |  | 4 |  |
+| [`BezierSpline`](/game-api/types/alta-utilities/bezierspline) | class | `MonoBehaviour`, `IInstructionResult` | 19 |  |
+| [`ItemModifier`](/game-api/types/alta-utilities/itemmodifier) | abstract class | `SplineDisplayModifier` | 2 |  |
+| [`Skip`](/game-api/types/alta-utilities/skip) | class | `ItemModifier`, `IIgnoreForStaticFlatten`, `IDontSplit` | 1 |  |
+| [`SplineChangedHandler`](/game-api/types/alta-utilities/splinechangedhandler) | delegate |  | 0 |  |
+| [`SplineCylinder`](/game-api/types/alta-utilities/splinecylinder) | class | `SplineDisplay` | 0 |  |
+| [`SplineDecorator`](/game-api/types/alta-utilities/splinedecorator) | class | `SplineDisplay` | 1 |  |
+| [`SplineDecorator.ForwardMode`](/game-api/types/alta-utilities/splinedecorator-forwardmode) | enum |  | 2 |  |
+| [`SplineDecorator.Part`](/game-api/types/alta-utilities/splinedecorator-part) | struct |  | 5 |  |
+| [`SplineDecorator.RotationMode`](/game-api/types/alta-utilities/splinedecorator-rotationmode) | enum |  | 4 |  |
+| [`SplineDecorator.ScaleMode`](/game-api/types/alta-utilities/splinedecorator-scalemode) | enum |  | 2 |  |
+| [`SplineDecorator.UpMode`](/game-api/types/alta-utilities/splinedecorator-upmode) | enum |  | 2 |  |
+| [`SplineDisplay`](/game-api/types/alta-utilities/splinedisplay) | abstract class | `MonoBehaviour`, `IBakeable` | 5 |  |
+| [`SplineDisplayModifier`](/game-api/types/alta-utilities/splinedisplaymodifier) | abstract class | `MonoBehaviour`, `IDestroyOnBake` | 0 |  |
+| [`SplineMesh`](/game-api/types/alta-utilities/splinemesh) | class | `SplineDisplay` | 0 |  |
+| [`WedgeChooser`](/game-api/types/alta-utilities/wedgechooser) | class | `ItemModifier` | 2 |  |
+| [`WedgeChooser.Wedge`](/game-api/types/alta-utilities/wedgechooser-wedge) | class |  | 5 |  |
 
 ## Alta.Rendering
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `MaterialInstance` | class | `IDisposable` | 4 |  |
-| `MaterialInstanceGroup` | class | `IDisposable`, `IReadOnlyCollection<MaterialInstance>`, `IEnumerable<MaterialInstance>`, +1 more | 4 |  |
+| [`MaterialInstance`](/game-api/types/alta-utilities/materialinstance) | class | `IDisposable` | 4 |  |
+| [`MaterialInstanceGroup`](/game-api/types/alta-utilities/materialinstancegroup) | class | `IDisposable`, `IReadOnlyCollection<MaterialInstance>`, `IEnumerable<MaterialInstance>`, +1 more | 4 |  |
 
 ## Alta.UnityWrappers
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `UnityQualitySettingsController` | static class |  | 1 |  |
+| [`UnityQualitySettingsController`](/game-api/types/alta-utilities/unityqualitysettingscontroller) | static class |  | 1 |  |
 
 ## Alta.Utilities
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `AltaContractResolver` | class | `DefaultContractResolver` | 1 |  |
-| `AltaGizmos` | class |  | 2 |  |
-| `AndroidExtensions` | static class |  | 1 |  |
-| `AsyncPump` | static class |  | 2 |  |
-| `AvailablePlayerSaveData` | class |  | 0 |  |
-| `AvailablePlayerSaveData.Available` | enum |  | 3 |  |
-| `BakeLODGroupGrouper` | class | `MonoBehaviour`, `IBakeable` | 2 |  |
-| `BoolSettingValue` | class |  | 1 |  |
-| `BuildVersionException` | class | `Exception` | 1 |  |
-| `BuildVersionExtensions` | static class |  | 2 |  |
-| `ChunkSaveFormat` | class | `IAltaFileFormat` | 13 |  |
-| `ChunkSaveFormat.Version` | class |  | 5 |  |
-| `ColorMaterialProperty` | class | `MaterialProperty<Color>` | 3 |  |
-| `CorruptPlayerSaveFileException` | internal class | `PlayerSaveException` | 2 |  |
-| `CursorUtilities` | static class |  | 1 |  |
-| `DamagePopup` | class | `TextPopup` | 3 | [Items, interaction and damage](../items/overview.md) |
-| `DatabaseSettingsFile` | class | `IAltaFile` | 20 |  |
-| `DebuggingCollection<T>` | class | `IEnumerable`, `ICollection<T>`, `IEnumerable<T>` | 9 |  |
-| `DebuggingCollection<T>.DebuggingCollectionEnumerator<TInnerType>` | class | `IEnumerator<TInnerType>`, `IEnumerator`, `IDisposable` | 6 |  |
-| `DevOnlyAttribute` | class | `Attribute` | 0 |  |
-| `DynamicPhysicsTimeSet` | class |  | 1 |  |
-| `EnumFloatGameSettingsAccess` | class | `FloatGameSettingsAccess` | 2 |  |
-| `EnumFloatGameSettingsAccess.CreateEnum` | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<EnumFloatGameSettingsAccess>` | 0 |  |
-| `EnumGameSettingAccess` | class | `EnumSettingAccess` | 3 |  |
-| `EnumGameSettingAccess.Create` | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<EnumGameSettingAccess>` | 0 |  |
-| `EnumSettingAccess` | abstract class | `StringGameSettingsAccess` | 1 |  |
-| `FloatGameSettingsAccess` | class | `SettingsFieldAccess<float>` | 0 |  |
-| `FloatGameSettingsAccess.Create` | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<FloatGameSettingsAccess>` | 0 |  |
-| `FloatMaterialProperty` | class | `MaterialProperty<float>` | 3 |  |
-| `ForwardedList<T>` | class | `IListenedList<T>`, `IEnumerable<T>`, `IEnumerable` | 9 |  |
-| `GameSettings` | class | `Settings`, `ICloneable` | 37 | [Settings and files](../console-and-utilities/settings-and-files.md#gamesettings): Marked `[Obsolete("Use GlobalConstants instead.")]`, but it's still what `GameConfig` holds and the game still reads it everywhere. |
-| `GeneralDelegates` | static class |  | 0 |  |
-| `GeneralDelegates.BoolUpdater` | delegate |  | 0 |  |
-| `GeneralDelegates.ValueUpdater` | delegate |  | 0 |  |
-| `GeometryHelperMethods` | static class |  | 1 |  |
-| `IIgnoreForStaticFlatten` | interface | `IDontSplit` | 0 |  |
-| `IListenedList<T>` | interface | `IEnumerable<T>`, `IEnumerable` | 7 |  |
-| `IntGameSettingsAccess` | class | `SettingsFieldAccess<int>` | 0 |  |
-| `IntGameSettingsAccess.Create` | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<IntGameSettingsAccess>` | 0 |  |
-| `ISettingsFieldAccess` | interface |  | 3 |  |
-| `ISpawnArguments` | interface |  | 1 |  |
-| `JsonAltaFormat<T>` | class | `IAltaFileFormat` | 4 |  |
-| `JsonMaxAttribute` | class | `JsonPropertyFilterAttribute` | 2 |  |
-| `JsonMaxValueProvider` | class | `JsonRangeValueProviderFilter<float>` | 2 |  |
-| `JsonMinAttribute` | class | `JsonPropertyFilterAttribute` | 2 |  |
-| `JsonMinValueProvider` | class | `JsonRangeValueProviderFilter<float>` | 2 |  |
-| `JsonPropertyFilterAttribute` | abstract class | `Attribute` | 2 |  |
-| `JsonRangeAttribute` | class | `JsonPropertyFilterAttribute` | 2 |  |
-| `JsonRangeFloatAttribute` | class | `JsonPropertyFilterAttribute` | 2 |  |
-| `JsonRangeFloatValueProvider` | class | `JsonRangeValueProviderFilter<float>` | 2 |  |
-| `JsonRangeValueProvider` | class | `JsonRangeValueProviderFilter<int>` | 2 |  |
-| `JsonRangeValueProviderFilter<T>` | abstract class | `IValueProvider` | 4 |  |
-| `LandmarkCandidateFinder` | class | `MonoBehaviour` | 0 |  |
-| `LauncherSettings` | class | `Settings`, `ICloneable` | 1 |  |
-| `LerpingControlledFloatValue` | class |  | 12 |  |
-| `LerpingFloatGetValue` | class |  | 8 |  |
-| `LerpingFloatValue` | class |  | 10 |  |
-| `LerpingValue<T>` | abstract class |  | 9 |  |
-| `Line` | struct |  | 3 |  |
-| `ListenedList<T>` | class | `IListenedList<T>`, `IEnumerable<T>`, `IEnumerable`, +1 more | 12 |  |
-| `ListItemChangedHandler<T>` | delegate |  | 0 |  |
-| `LoggingWatch` | class |  | 4 |  |
-| `MaterialProperty<T>` | abstract class |  | 3 |  |
-| `MaterialPropertyBlockSettings<T>` | class | `HashedGeneralValue<T>` | 0 |  |
-| `MeshFilterExtensions` | static class |  | 1 |  |
-| `MicrophoneEnumSettingAccess` | class | `EnumSettingAccess` | 3 |  |
-| `PlayerSave` | class | `IAltaFileFormat` | 20 |  |
-| `PlayerSaveData` | class | `HashedGeneralValue<PlayerSaveData>` | 2 | [Saving](../networking/saving.md): The starting inventory for new players (`InitialPlayerInventory` in the settings picks which). |
-| `PlayerSaveData.Create` | class | `AltaMenuItemBase.Assets.Create.Utility.ScriptableObject<PlayerSaveData>` | 0 |  |
-| `PlayerSaveException` | internal abstract class | `Exception` | 2 |  |
-| `PlayerSaveFileData` | class | `BasicSaveData<PlayerSaveFileData>` | 2 |  |
-| `PlayerSaveFileData1` | class | `OldSaveData` | 3 |  |
-| `PlayerSaveFileData2` | class | `OldSaveData` | 3 |  |
-| `PlayerSaveUtility` | class |  | 4 |  |
-| `PlayerSmoothingLevel` | enum |  | 2 |  |
-| `RotateOverTime` | class | `TransformScriptAnimation`, `IIgnoreForStaticFlatten`, `IDontSplit` | 0 |  |
-| `Screenshot` | class |  | 8 |  |
-| `ScriptHelper` | abstract class | `MonoBehaviour` | 0 |  |
-| `ServerSaveUtility` | class |  | 12 |  |
-| `ServerSettings` | class | `Settings`, `ICloneable` | 49 | [Server settings](../networking/server-settings.md#serversettings), [Server settings](../../tavernlib-api/config/server-settings.md#serversettings): All instance properties with public getters and setters. Default values from the code. |
-| `SetRenderQueue` | class | `MonoBehaviour` | 0 |  |
-| `SettingBasedToggler` | class | `MonoBehaviour` | 0 |  |
-| `SettingsFieldAccess` | class | `ScriptableObject`, `ISettingsFieldAccess` | 7 |  |
-| `SettingsFieldAccess<TFieldType>` | abstract class | `SettingsFieldAccess` | 4 |  |
-| `SettingsFileAccess<TSettings>` | class | `ISettingsFileAccess`, `ISettings` | 12 | [Settings and files](../console-and-utilities/settings-and-files.md#settingsfileaccess): When it's made it: |
-| `SettingsFilesHandler` | static class |  | 0 |  |
-| `SettingsManager` | class | `ISettingsManager` | 5 | [Settings and files](../console-and-utilities/settings-and-files.md#settingsmanager): Static members, plus an instance that VContainer hands out as `ISettingsManager`. |
-| `SettingType` | enum |  | 6 |  |
-| `Show_Workspace` | class | `AltaMenuItemBase.Township.Utility` | 0 |  |
-| `SortedEnumerator<T>` | class | `IEnumerator<T>`, `IEnumerator`, `IDisposable` | 6 |  |
-| `SortedList<T>` | class | `IEnumerable<T>`, `IEnumerable` | 7 |  |
-| `SpawnPoint` | struct |  | 2 |  |
-| `StringGameSettingsAccess` | class | `SettingsFieldAccess<string>` | 0 |  |
-| `StringGameSettingsAccess.Create` | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<StringGameSettingsAccess>` | 0 |  |
-| `StringSettingValue` | class |  | 1 |  |
-| `TargetChangedHandler<T>` | delegate |  | 0 |  |
-| `TextPopup` | class | `MonoBehaviour` | 3 |  |
-| `TimelineExtension` | static class |  | 2 |  |
-| `ToggleGameSettingAccess` | class | `SettingsFieldAccess<bool>` | 0 |  |
-| `ToggleGameSettingAccess.Create` | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<ToggleGameSettingAccess>` | 0 |  |
-| `Vector3MaterialProperty` | class | `MaterialProperty<Vector3>` | 3 |  |
-| `VertexColorUtility` | static class |  | 1 |  |
-| `WorldLandmarkConfig` | class |  | 1 |  |
-| `WorldLandmarkConfigMarker` | class | `MonoBehaviour` | 0 |  |
-| `WorldLandmarkMarker` | class | `WorldLandmarkConfigMarker` | 0 |  |
+| [`AltaContractResolver`](/game-api/types/alta-utilities/altacontractresolver) | class | `DefaultContractResolver` | 1 |  |
+| [`AltaGizmos`](/game-api/types/alta-utilities/altagizmos) | class |  | 2 |  |
+| [`AndroidExtensions`](/game-api/types/alta-utilities/androidextensions) | static class |  | 1 |  |
+| [`AsyncPump`](/game-api/types/alta-utilities/asyncpump) | static class |  | 2 |  |
+| [`AvailablePlayerSaveData`](/game-api/types/alta-utilities/availableplayersavedata) | class |  | 0 |  |
+| [`AvailablePlayerSaveData.Available`](/game-api/types/alta-utilities/availableplayersavedata-available) | enum |  | 3 |  |
+| [`BakeLODGroupGrouper`](/game-api/types/alta-utilities/bakelodgroupgrouper) | class | `MonoBehaviour`, `IBakeable` | 2 |  |
+| [`BoolSettingValue`](/game-api/types/alta-utilities/boolsettingvalue) | class |  | 1 |  |
+| [`BuildVersionException`](/game-api/types/alta-utilities/buildversionexception) | class | `Exception` | 1 |  |
+| [`BuildVersionExtensions`](/game-api/types/alta-utilities/buildversionextensions) | static class |  | 2 |  |
+| [`ChunkSaveFormat`](/game-api/types/alta-utilities/chunksaveformat) | class | `IAltaFileFormat` | 13 |  |
+| [`ChunkSaveFormat.Version`](/game-api/types/alta-utilities/chunksaveformat-version) | class |  | 5 |  |
+| [`ColorMaterialProperty`](/game-api/types/alta-utilities/colormaterialproperty) | class | `MaterialProperty<Color>` | 3 |  |
+| [`CorruptPlayerSaveFileException`](/game-api/types/alta-utilities/corruptplayersavefileexception) | internal class | `PlayerSaveException` | 2 |  |
+| [`CursorUtilities`](/game-api/types/alta-utilities/cursorutilities) | static class |  | 1 |  |
+| [`DamagePopup`](/game-api/types/alta-utilities/damagepopup) | class | `TextPopup` | 3 | [Items, interaction and damage](../items/overview.md) |
+| [`DatabaseSettingsFile`](/game-api/types/alta-utilities/databasesettingsfile) | class | `IAltaFile` | 20 |  |
+| [`DebuggingCollection<T>`](/game-api/types/alta-utilities/debuggingcollection-t) | class | `IEnumerable`, `ICollection<T>`, `IEnumerable<T>` | 9 |  |
+| [`DebuggingCollection<T>.DebuggingCollectionEnumerator<TInnerType>`](/game-api/types/alta-utilities/debuggingcollection-t-debuggingcollectionenumerator-tinnertype) | class | `IEnumerator<TInnerType>`, `IEnumerator`, `IDisposable` | 6 |  |
+| [`DevOnlyAttribute`](/game-api/types/alta-utilities/devonlyattribute) | class | `Attribute` | 0 |  |
+| [`DynamicPhysicsTimeSet`](/game-api/types/alta-utilities/dynamicphysicstimeset) | class |  | 1 |  |
+| [`EnumFloatGameSettingsAccess`](/game-api/types/alta-utilities/enumfloatgamesettingsaccess) | class | `FloatGameSettingsAccess` | 2 |  |
+| [`EnumFloatGameSettingsAccess.CreateEnum`](/game-api/types/alta-utilities/enumfloatgamesettingsaccess-createenum) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<EnumFloatGameSettingsAccess>` | 0 |  |
+| [`EnumGameSettingAccess`](/game-api/types/alta-utilities/enumgamesettingaccess) | class | `EnumSettingAccess` | 3 |  |
+| [`EnumGameSettingAccess.Create`](/game-api/types/alta-utilities/enumgamesettingaccess-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<EnumGameSettingAccess>` | 0 |  |
+| [`EnumSettingAccess`](/game-api/types/alta-utilities/enumsettingaccess) | abstract class | `StringGameSettingsAccess` | 1 |  |
+| [`FloatGameSettingsAccess`](/game-api/types/alta-utilities/floatgamesettingsaccess) | class | `SettingsFieldAccess<float>` | 0 |  |
+| [`FloatGameSettingsAccess.Create`](/game-api/types/alta-utilities/floatgamesettingsaccess-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<FloatGameSettingsAccess>` | 0 |  |
+| [`FloatMaterialProperty`](/game-api/types/alta-utilities/floatmaterialproperty) | class | `MaterialProperty<float>` | 3 |  |
+| [`ForwardedList<T>`](/game-api/types/alta-utilities/forwardedlist-t) | class | `IListenedList<T>`, `IEnumerable<T>`, `IEnumerable` | 9 |  |
+| [`GameSettings`](/game-api/types/alta-utilities/gamesettings) | class | `Settings`, `ICloneable` | 37 | [Settings and files](../console-and-utilities/settings-and-files.md#gamesettings): Marked `[Obsolete("Use GlobalConstants instead.")]`, but it's still what `GameConfig` holds and the game still reads it everywhere. |
+| [`GeneralDelegates`](/game-api/types/alta-utilities/generaldelegates) | static class |  | 0 |  |
+| [`GeneralDelegates.BoolUpdater`](/game-api/types/alta-utilities/generaldelegates-boolupdater) | delegate |  | 0 |  |
+| [`GeneralDelegates.ValueUpdater`](/game-api/types/alta-utilities/generaldelegates-valueupdater) | delegate |  | 0 |  |
+| [`GeometryHelperMethods`](/game-api/types/alta-utilities/geometryhelpermethods) | static class |  | 1 |  |
+| [`IIgnoreForStaticFlatten`](/game-api/types/alta-utilities/iignoreforstaticflatten) | interface | `IDontSplit` | 0 |  |
+| [`IListenedList<T>`](/game-api/types/alta-utilities/ilistenedlist-t) | interface | `IEnumerable<T>`, `IEnumerable` | 7 |  |
+| [`IntGameSettingsAccess`](/game-api/types/alta-utilities/intgamesettingsaccess) | class | `SettingsFieldAccess<int>` | 0 |  |
+| [`IntGameSettingsAccess.Create`](/game-api/types/alta-utilities/intgamesettingsaccess-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<IntGameSettingsAccess>` | 0 |  |
+| [`ISettingsFieldAccess`](/game-api/types/alta-utilities/isettingsfieldaccess) | interface |  | 3 |  |
+| [`ISpawnArguments`](/game-api/types/alta-utilities/ispawnarguments) | interface |  | 1 |  |
+| [`JsonAltaFormat<T>`](/game-api/types/alta-utilities/jsonaltaformat-t) | class | `IAltaFileFormat` | 4 |  |
+| [`JsonMaxAttribute`](/game-api/types/alta-utilities/jsonmaxattribute) | class | `JsonPropertyFilterAttribute` | 2 |  |
+| [`JsonMaxValueProvider`](/game-api/types/alta-utilities/jsonmaxvalueprovider) | class | `JsonRangeValueProviderFilter<float>` | 2 |  |
+| [`JsonMinAttribute`](/game-api/types/alta-utilities/jsonminattribute) | class | `JsonPropertyFilterAttribute` | 2 |  |
+| [`JsonMinValueProvider`](/game-api/types/alta-utilities/jsonminvalueprovider) | class | `JsonRangeValueProviderFilter<float>` | 2 |  |
+| [`JsonPropertyFilterAttribute`](/game-api/types/alta-utilities/jsonpropertyfilterattribute) | abstract class | `Attribute` | 2 |  |
+| [`JsonRangeAttribute`](/game-api/types/alta-utilities/jsonrangeattribute) | class | `JsonPropertyFilterAttribute` | 2 |  |
+| [`JsonRangeFloatAttribute`](/game-api/types/alta-utilities/jsonrangefloatattribute) | class | `JsonPropertyFilterAttribute` | 2 |  |
+| [`JsonRangeFloatValueProvider`](/game-api/types/alta-utilities/jsonrangefloatvalueprovider) | class | `JsonRangeValueProviderFilter<float>` | 2 |  |
+| [`JsonRangeValueProvider`](/game-api/types/alta-utilities/jsonrangevalueprovider) | class | `JsonRangeValueProviderFilter<int>` | 2 |  |
+| [`JsonRangeValueProviderFilter<T>`](/game-api/types/alta-utilities/jsonrangevalueproviderfilter-t) | abstract class | `IValueProvider` | 4 |  |
+| [`LandmarkCandidateFinder`](/game-api/types/alta-utilities/landmarkcandidatefinder) | class | `MonoBehaviour` | 0 |  |
+| [`LauncherSettings`](/game-api/types/alta-utilities/launchersettings) | class | `Settings`, `ICloneable` | 1 |  |
+| [`LerpingControlledFloatValue`](/game-api/types/alta-utilities/lerpingcontrolledfloatvalue) | class |  | 12 |  |
+| [`LerpingFloatGetValue`](/game-api/types/alta-utilities/lerpingfloatgetvalue) | class |  | 8 |  |
+| [`LerpingFloatValue`](/game-api/types/alta-utilities/lerpingfloatvalue) | class |  | 10 |  |
+| [`LerpingValue<T>`](/game-api/types/alta-utilities/lerpingvalue-t) | abstract class |  | 9 |  |
+| [`Line`](/game-api/types/alta-utilities/line) | struct |  | 3 |  |
+| [`ListenedList<T>`](/game-api/types/alta-utilities/listenedlist-t) | class | `IListenedList<T>`, `IEnumerable<T>`, `IEnumerable`, +1 more | 12 |  |
+| [`ListItemChangedHandler<T>`](/game-api/types/alta-utilities/listitemchangedhandler-t) | delegate |  | 0 |  |
+| [`LoggingWatch`](/game-api/types/alta-utilities/loggingwatch) | class |  | 4 |  |
+| [`MaterialProperty<T>`](/game-api/types/alta-utilities/materialproperty-t) | abstract class |  | 3 |  |
+| [`MaterialPropertyBlockSettings<T>`](/game-api/types/alta-utilities/materialpropertyblocksettings-t) | class | `HashedGeneralValue<T>` | 0 |  |
+| [`MeshFilterExtensions`](/game-api/types/alta-utilities/meshfilterextensions) | static class |  | 1 |  |
+| [`MicrophoneEnumSettingAccess`](/game-api/types/alta-utilities/microphoneenumsettingaccess) | class | `EnumSettingAccess` | 3 |  |
+| [`PlayerSave`](/game-api/types/alta-utilities/playersave) | class | `IAltaFileFormat` | 20 |  |
+| [`PlayerSaveData`](/game-api/types/alta-utilities/playersavedata) | class | `HashedGeneralValue<PlayerSaveData>` | 2 | [Saving](../networking/saving.md): The starting inventory for new players (`InitialPlayerInventory` in the settings picks which). |
+| [`PlayerSaveData.Create`](/game-api/types/alta-utilities/playersavedata-create) | class | `AltaMenuItemBase.Assets.Create.Utility.ScriptableObject<PlayerSaveData>` | 0 |  |
+| [`PlayerSaveException`](/game-api/types/alta-utilities/playersaveexception) | internal abstract class | `Exception` | 2 |  |
+| [`PlayerSaveFileData`](/game-api/types/alta-utilities/playersavefiledata) | class | `BasicSaveData<PlayerSaveFileData>` | 2 |  |
+| [`PlayerSaveFileData1`](/game-api/types/alta-utilities/playersavefiledata1) | class | `OldSaveData` | 3 |  |
+| [`PlayerSaveFileData2`](/game-api/types/alta-utilities/playersavefiledata2) | class | `OldSaveData` | 3 |  |
+| [`PlayerSaveUtility`](/game-api/types/alta-utilities/playersaveutility) | class |  | 4 |  |
+| [`PlayerSmoothingLevel`](/game-api/types/alta-utilities/playersmoothinglevel) | enum |  | 2 |  |
+| [`RotateOverTime`](/game-api/types/alta-utilities/rotateovertime) | class | `TransformScriptAnimation`, `IIgnoreForStaticFlatten`, `IDontSplit` | 0 |  |
+| [`Screenshot`](/game-api/types/alta-utilities/screenshot) | class |  | 8 |  |
+| [`ScriptHelper`](/game-api/types/alta-utilities/scripthelper) | abstract class | `MonoBehaviour` | 0 |  |
+| [`ServerSaveUtility`](/game-api/types/alta-utilities/serversaveutility) | class |  | 12 |  |
+| [`ServerSettings`](/game-api/types/alta-utilities/serversettings) | class | `Settings`, `ICloneable` | 49 | [Server settings](../networking/server-settings.md#serversettings), [Server settings](../../tavernlib-api/config/server-settings.md#serversettings): All instance properties with public getters and setters. Default values from the code. |
+| [`SetRenderQueue`](/game-api/types/alta-utilities/setrenderqueue) | class | `MonoBehaviour` | 0 |  |
+| [`SettingBasedToggler`](/game-api/types/alta-utilities/settingbasedtoggler) | class | `MonoBehaviour` | 0 |  |
+| [`SettingsFieldAccess`](/game-api/types/alta-utilities/settingsfieldaccess) | class | `ScriptableObject`, `ISettingsFieldAccess` | 7 |  |
+| [`SettingsFieldAccess<TFieldType>`](/game-api/types/alta-utilities/settingsfieldaccess-tfieldtype) | abstract class | `SettingsFieldAccess` | 4 |  |
+| [`SettingsFileAccess<TSettings>`](/game-api/types/alta-utilities/settingsfileaccess-tsettings) | class | `ISettingsFileAccess`, `ISettings` | 12 | [Settings and files](../console-and-utilities/settings-and-files.md#settingsfileaccess): When it's made it: |
+| [`SettingsFilesHandler`](/game-api/types/alta-utilities/settingsfileshandler) | static class |  | 0 |  |
+| [`SettingsManager`](/game-api/types/alta-utilities/settingsmanager) | class | `ISettingsManager` | 5 | [Settings and files](../console-and-utilities/settings-and-files.md#settingsmanager): Static members, plus an instance that VContainer hands out as `ISettingsManager`. |
+| [`SettingType`](/game-api/types/alta-utilities/settingtype) | enum |  | 6 |  |
+| [`Show_Workspace`](/game-api/types/alta-utilities/show_workspace) | class | `AltaMenuItemBase.Township.Utility` | 0 |  |
+| [`SortedEnumerator<T>`](/game-api/types/alta-utilities/sortedenumerator-t) | class | `IEnumerator<T>`, `IEnumerator`, `IDisposable` | 6 |  |
+| [`SortedList<T>`](/game-api/types/alta-utilities/sortedlist-t) | class | `IEnumerable<T>`, `IEnumerable` | 7 |  |
+| [`SpawnPoint`](/game-api/types/alta-utilities/spawnpoint) | struct |  | 2 |  |
+| [`StringGameSettingsAccess`](/game-api/types/alta-utilities/stringgamesettingsaccess) | class | `SettingsFieldAccess<string>` | 0 |  |
+| [`StringGameSettingsAccess.Create`](/game-api/types/alta-utilities/stringgamesettingsaccess-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<StringGameSettingsAccess>` | 0 |  |
+| [`StringSettingValue`](/game-api/types/alta-utilities/stringsettingvalue) | class |  | 1 |  |
+| [`TargetChangedHandler<T>`](/game-api/types/alta-utilities/targetchangedhandler-t) | delegate |  | 0 |  |
+| [`TextPopup`](/game-api/types/alta-utilities/textpopup) | class | `MonoBehaviour` | 3 |  |
+| [`TimelineExtension`](/game-api/types/alta-utilities/timelineextension) | static class |  | 2 |  |
+| [`ToggleGameSettingAccess`](/game-api/types/alta-utilities/togglegamesettingaccess) | class | `SettingsFieldAccess<bool>` | 0 |  |
+| [`ToggleGameSettingAccess.Create`](/game-api/types/alta-utilities/togglegamesettingaccess-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<ToggleGameSettingAccess>` | 0 |  |
+| [`Vector3MaterialProperty`](/game-api/types/alta-utilities/vector3materialproperty) | class | `MaterialProperty<Vector3>` | 3 |  |
+| [`VertexColorUtility`](/game-api/types/alta-utilities/vertexcolorutility) | static class |  | 1 |  |
+| [`WorldLandmarkConfig`](/game-api/types/alta-utilities/worldlandmarkconfig) | class |  | 1 |  |
+| [`WorldLandmarkConfigMarker`](/game-api/types/alta-utilities/worldlandmarkconfigmarker) | class | `MonoBehaviour` | 0 |  |
+| [`WorldLandmarkMarker`](/game-api/types/alta-utilities/worldlandmarkmarker) | class | `WorldLandmarkConfigMarker` | 0 |  |
 
 ## Alta.Utilities.Atlas
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `AtlasDefinition` | class | `ScriptableObject` | 28 |  |
-| `AtlasDefinition.AtlasedMaterial` | class |  | 6 |  |
-| `AtlasSettings` | class | `ScriptableObject` | 4 |  |
-| `AtlasTarget` | enum |  | 2 |  |
-| `AtlasType` | enum |  | 5 |  |
-| `BasicBlit` | internal class | `ShaderBlit` | 1 |  |
-| `IPreventAtlasing` | interface |  | 1 |  |
-| `IPreventNoLongerReadable` | interface |  | 1 |  |
-| `MaterialRect` | struct |  | 6 |  |
-| `MeshFilterExtensions` | static class |  | 1 |  |
-| `MetalNonForgingBlit` | internal class | `ShaderBlit` | 1 |  |
-| `NoWindFoliageRampLerp3Blit` | internal class | `ShaderBlit` | 1 |  |
-| `PreventAtlas` | class | `MonoBehaviour`, `IPreventAtlasing` | 0 |  |
-| `RampLerp3Blit` | internal class | `ShaderBlit` | 1 |  |
-| `RampLerp_CosmeticTestBlit` | internal class | `ShaderBlit` | 1 |  |
-| `RampLerpBlit` | internal class | `ShaderBlit` | 1 |  |
-| `RampLerpNoCullCutoutBlit` | internal class | `ShaderBlit` | 1 |  |
-| `Scale` | enum |  | 5 |  |
-| `ShaderBlit` | internal abstract class |  | 1 |  |
-| `SimpleStandardBlit` | internal class | `ShaderBlit` | 1 |  |
-| `StandardHeatBlit` | internal class | `ShaderBlit` | 1 |  |
-| `UVFixType` | enum |  | 2 |  |
-| `WindFoliageBlit` | internal class | `ShaderBlit` | 1 |  |
-| `WindFoliageRampLerp3Blit` | internal class | `ShaderBlit` | 1 |  |
-| `WindFoliageTextureSwayBlit` | internal class | `ShaderBlit` | 1 |  |
-| `WindFoliageVertexColorBlit` | internal class | `ShaderBlit` | 1 |  |
-| `WindFoliageVertexColorColorRampBlit` | internal class | `ShaderBlit` | 1 |  |
+| [`AtlasDefinition`](/game-api/types/alta-utilities/atlasdefinition) | class | `ScriptableObject` | 28 |  |
+| [`AtlasDefinition.AtlasedMaterial`](/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial) | class |  | 6 |  |
+| [`AtlasSettings`](/game-api/types/alta-utilities/atlassettings) | class | `ScriptableObject` | 4 |  |
+| [`AtlasTarget`](/game-api/types/alta-utilities/atlastarget) | enum |  | 2 |  |
+| [`AtlasType`](/game-api/types/alta-utilities/atlastype) | enum |  | 5 |  |
+| [`BasicBlit`](/game-api/types/alta-utilities/basicblit) | internal class | `ShaderBlit` | 1 |  |
+| [`IPreventAtlasing`](/game-api/types/alta-utilities/ipreventatlasing) | interface |  | 1 |  |
+| [`IPreventNoLongerReadable`](/game-api/types/alta-utilities/ipreventnolongerreadable) | interface |  | 1 |  |
+| [`MaterialRect`](/game-api/types/alta-utilities/materialrect) | struct |  | 6 |  |
+| [`MeshFilterExtensions`](/game-api/types/alta-utilities/meshfilterextensions-alta-utilities-atlas) | static class |  | 1 |  |
+| [`MetalNonForgingBlit`](/game-api/types/alta-utilities/metalnonforgingblit) | internal class | `ShaderBlit` | 1 |  |
+| [`NoWindFoliageRampLerp3Blit`](/game-api/types/alta-utilities/nowindfoliageramplerp3blit) | internal class | `ShaderBlit` | 1 |  |
+| [`PreventAtlas`](/game-api/types/alta-utilities/preventatlas) | class | `MonoBehaviour`, `IPreventAtlasing` | 0 |  |
+| [`RampLerp3Blit`](/game-api/types/alta-utilities/ramplerp3blit) | internal class | `ShaderBlit` | 1 |  |
+| [`RampLerp_CosmeticTestBlit`](/game-api/types/alta-utilities/ramplerp_cosmetictestblit) | internal class | `ShaderBlit` | 1 |  |
+| [`RampLerpBlit`](/game-api/types/alta-utilities/ramplerpblit) | internal class | `ShaderBlit` | 1 |  |
+| [`RampLerpNoCullCutoutBlit`](/game-api/types/alta-utilities/ramplerpnocullcutoutblit) | internal class | `ShaderBlit` | 1 |  |
+| [`Scale`](/game-api/types/alta-utilities/scale) | enum |  | 5 |  |
+| [`ShaderBlit`](/game-api/types/alta-utilities/shaderblit) | internal abstract class |  | 1 |  |
+| [`SimpleStandardBlit`](/game-api/types/alta-utilities/simplestandardblit) | internal class | `ShaderBlit` | 1 |  |
+| [`StandardHeatBlit`](/game-api/types/alta-utilities/standardheatblit) | internal class | `ShaderBlit` | 1 |  |
+| [`UVFixType`](/game-api/types/alta-utilities/uvfixtype) | enum |  | 2 |  |
+| [`WindFoliageBlit`](/game-api/types/alta-utilities/windfoliageblit) | internal class | `ShaderBlit` | 1 |  |
+| [`WindFoliageRampLerp3Blit`](/game-api/types/alta-utilities/windfoliageramplerp3blit) | internal class | `ShaderBlit` | 1 |  |
+| [`WindFoliageTextureSwayBlit`](/game-api/types/alta-utilities/windfoliagetextureswayblit) | internal class | `ShaderBlit` | 1 |  |
+| [`WindFoliageVertexColorBlit`](/game-api/types/alta-utilities/windfoliagevertexcolorblit) | internal class | `ShaderBlit` | 1 |  |
+| [`WindFoliageVertexColorColorRampBlit`](/game-api/types/alta-utilities/windfoliagevertexcolorcolorrampblit) | internal class | `ShaderBlit` | 1 |  |
 
 ## Alta.Utilities.Hierarchy
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `AltaHierarchyData` | class | `ScriptableObject` | 5 |  |
-| `AltaHierarchyData.Pocket` | class |  | 2 |  |
+| [`AltaHierarchyData`](/game-api/types/alta-utilities/altahierarchydata) | class | `ScriptableObject` | 5 |  |
+| [`AltaHierarchyData.Pocket`](/game-api/types/alta-utilities/altahierarchydata-pocket) | class |  | 2 |  |
 
 ## Alta.Utilities.Profiling
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `ChunkDisplay` | class | `LiveDataDisplayBase` | 1 |  |
-| `FpsDisplay` | class | `LiveDataDisplayBase` | 0 |  |
-| `GraphicsLevelDisplay` | class | `LiveDataDisplayBase` | 1 |  |
-| `LastCombatHit` | class | `LiveDataDisplayBase` | 2 |  |
-| `LiveDataDisplayBase` | abstract class | `ScriptableObject` | 6 |  |
-| `LiveDataDisplayCollection` | class | `ScriptableObject` | 1 |  |
-| `LiveDataDisplayView` | class | `MonoBehaviour` | 1 |  |
-| `NetworkBytesDisplay` | class | `LiveDataDisplayBase` | 2 |  |
-| `NetworkMessagesDisplay` | class | `LiveDataDisplayBase` | 2 |  |
-| `NetworkPacketsDisplay` | class | `LiveDataDisplayBase` | 2 |  |
-| `PingDisplay` | class | `LiveDataDisplayBase` | 2 |  |
-| `PlayerCountDisplay` | class | `LiveDataDisplayBase` | 0 |  |
-| `ServerDiagnosticsDisplay` | class | `LiveDataDisplayBase` | 3 |  |
-| `ServerFpsDisplay` | class | `LiveDataDisplayBase` | 0 |  |
-| `TotalDamageDisplay` | class | `LiveDataDisplayBase` | 0 |  |
+| [`ChunkDisplay`](/game-api/types/alta-utilities/chunkdisplay) | class | `LiveDataDisplayBase` | 1 |  |
+| [`FpsDisplay`](/game-api/types/alta-utilities/fpsdisplay) | class | `LiveDataDisplayBase` | 0 |  |
+| [`GraphicsLevelDisplay`](/game-api/types/alta-utilities/graphicsleveldisplay) | class | `LiveDataDisplayBase` | 1 |  |
+| [`LastCombatHit`](/game-api/types/alta-utilities/lastcombathit) | class | `LiveDataDisplayBase` | 2 |  |
+| [`LiveDataDisplayBase`](/game-api/types/alta-utilities/livedatadisplaybase) | abstract class | `ScriptableObject` | 6 |  |
+| [`LiveDataDisplayCollection`](/game-api/types/alta-utilities/livedatadisplaycollection) | class | `ScriptableObject` | 1 |  |
+| [`LiveDataDisplayView`](/game-api/types/alta-utilities/livedatadisplayview) | class | `MonoBehaviour` | 1 |  |
+| [`NetworkBytesDisplay`](/game-api/types/alta-utilities/networkbytesdisplay) | class | `LiveDataDisplayBase` | 2 |  |
+| [`NetworkMessagesDisplay`](/game-api/types/alta-utilities/networkmessagesdisplay) | class | `LiveDataDisplayBase` | 2 |  |
+| [`NetworkPacketsDisplay`](/game-api/types/alta-utilities/networkpacketsdisplay) | class | `LiveDataDisplayBase` | 2 |  |
+| [`PingDisplay`](/game-api/types/alta-utilities/pingdisplay) | class | `LiveDataDisplayBase` | 2 |  |
+| [`PlayerCountDisplay`](/game-api/types/alta-utilities/playercountdisplay) | class | `LiveDataDisplayBase` | 0 |  |
+| [`ServerDiagnosticsDisplay`](/game-api/types/alta-utilities/serverdiagnosticsdisplay) | class | `LiveDataDisplayBase` | 3 |  |
+| [`ServerFpsDisplay`](/game-api/types/alta-utilities/serverfpsdisplay) | class | `LiveDataDisplayBase` | 0 |  |
+| [`TotalDamageDisplay`](/game-api/types/alta-utilities/totaldamagedisplay) | class | `LiveDataDisplayBase` | 0 |  |
 
 ## Alta.Utilities.Profiling.NetworkTransportMetrics
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `ConnectionChannelStatistic` | class | `NetworkingStatistic` | 2 |  |
-| `ConnectionChannelStatistics` | class | `NetworkingStatisticsList<ConnectionChannelStatistic, KeyValuePair<ConnectionChannel, ConnectionChannelStatistic>>` | 1 |  |
-| `INetworkStatistic` | interface |  | 4 |  |
-| `INetworkStatisticCollection` | interface |  | 4 |  |
-| `NetworkingProfiler` | class | `SingletonBehaviour<NetworkingProfiler>` | 2 |  |
-| `NetworkingStatistic` | class | `INetworkStatistic` | 9 |  |
-| `NetworkingStatisticsList<T>` | abstract class | `INetworkStatisticCollection` | 6 |  |
-| `NetworkingStatisticsList<TStatistic, TInternalObject>` | class | `NetworkingStatisticsList<TStatistic>` | 1 |  |
-| `NetworkingStatisticsListNonSerialized<T>` | abstract class | `INetworkStatisticCollection` | 6 |  |
-| `NetworkStatisticWithIncomingPackets` | abstract class | `NetworkTransportStatistic` | 2 |  |
-| `NetworkTransportConnectionStatistic` | class | `NetworkStatisticWithIncomingPackets` | 4 |  |
-| `NetworkTransportCountStatisticField` | class | `NetworkTransportStatisticField` | 2 |  |
-| `NetworkTransportHostStatistic` | class | `NetworkTransportStatistic` | 5 |  |
-| `NetworkTransportOverallStatistics` | class | `NetworkStatisticWithIncomingPackets` | 1 |  |
-| `NetworkTransportStatistic` | abstract class | `INetworkStatisticCollection` | 6 |  |
-| `NetworkTransportStatisticField` | class | `INetworkStatistic` | 9 |  |
-| `NetworkTransportStatisticType` | enum |  | 2 |  |
+| [`ConnectionChannelStatistic`](/game-api/types/alta-utilities/connectionchannelstatistic) | class | `NetworkingStatistic` | 2 |  |
+| [`ConnectionChannelStatistics`](/game-api/types/alta-utilities/connectionchannelstatistics) | class | `NetworkingStatisticsList<ConnectionChannelStatistic, KeyValuePair<ConnectionChannel, ConnectionChannelStatistic>>` | 1 |  |
+| [`INetworkStatistic`](/game-api/types/alta-utilities/inetworkstatistic) | interface |  | 4 |  |
+| [`INetworkStatisticCollection`](/game-api/types/alta-utilities/inetworkstatisticcollection) | interface |  | 4 |  |
+| [`NetworkingProfiler`](/game-api/types/alta-utilities/networkingprofiler) | class | `SingletonBehaviour<NetworkingProfiler>` | 2 |  |
+| [`NetworkingStatistic`](/game-api/types/alta-utilities/networkingstatistic) | class | `INetworkStatistic` | 9 |  |
+| [`NetworkingStatisticsList<T>`](/game-api/types/alta-utilities/networkingstatisticslist-t) | abstract class | `INetworkStatisticCollection` | 6 |  |
+| [`NetworkingStatisticsList<TStatistic, TInternalObject>`](/game-api/types/alta-utilities/networkingstatisticslist-tstatistic-tinternalobject) | class | `NetworkingStatisticsList<TStatistic>` | 1 |  |
+| [`NetworkingStatisticsListNonSerialized<T>`](/game-api/types/alta-utilities/networkingstatisticslistnonserialized-t) | abstract class | `INetworkStatisticCollection` | 6 |  |
+| [`NetworkStatisticWithIncomingPackets`](/game-api/types/alta-utilities/networkstatisticwithincomingpackets) | abstract class | `NetworkTransportStatistic` | 2 |  |
+| [`NetworkTransportConnectionStatistic`](/game-api/types/alta-utilities/networktransportconnectionstatistic) | class | `NetworkStatisticWithIncomingPackets` | 4 |  |
+| [`NetworkTransportCountStatisticField`](/game-api/types/alta-utilities/networktransportcountstatisticfield) | class | `NetworkTransportStatisticField` | 2 |  |
+| [`NetworkTransportHostStatistic`](/game-api/types/alta-utilities/networktransporthoststatistic) | class | `NetworkTransportStatistic` | 5 |  |
+| [`NetworkTransportOverallStatistics`](/game-api/types/alta-utilities/networktransportoverallstatistics) | class | `NetworkStatisticWithIncomingPackets` | 1 |  |
+| [`NetworkTransportStatistic`](/game-api/types/alta-utilities/networktransportstatistic) | abstract class | `INetworkStatisticCollection` | 6 |  |
+| [`NetworkTransportStatisticField`](/game-api/types/alta-utilities/networktransportstatisticfield) | class | `INetworkStatistic` | 9 |  |
+| [`NetworkTransportStatisticType`](/game-api/types/alta-utilities/networktransportstatistictype) | enum |  | 2 |  |
 
 ## Alta.Utilities.Profiling.NetworkTransportMetrics.ABTesting
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `ServerPingProfiler` | class | `NetworkEntityBehaviour` | 3 |  |
+| [`ServerPingProfiler`](/game-api/types/alta-utilities/serverpingprofiler) | class | `NetworkEntityBehaviour` | 3 |  |
 
 ## Alta.Utility.Graphics
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `GraphicsSettingsController` | static class |  | 2 |  |
+| [`GraphicsSettingsController`](/game-api/types/alta-utilities/graphicssettingscontroller) | static class |  | 2 |  |

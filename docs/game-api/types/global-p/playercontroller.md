@@ -1,0 +1,144 @@
+---
+title: "PlayerController"
+description: "A player's body is its own networked entity, spawned by the server after the Player and destroyed and respawned around death."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# PlayerController
+
+An **abstract class** in `Root.Township`, no namespace.
+
+A player's body is its own networked entity, spawned by the server after the `Player` and destroyed and respawned around death.
+
+- **Listed in** [No namespace: P](/game-api/types/global-p)
+- **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`IHasHead`](/game-api/types/global-i-l/ihashead), [`IBuildRendererBakeable`](/game-api/types/assembly-other/ibuildrendererbakeable), [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable)
+- **Derived types** [`AutoCamPlayer`](/game-api/types/global-a-b/autocamplayer), [`CharacterControllerEvent`](/game-api/types/global-c-d/charactercontrollerevent), [`CharacterControllerUnityEvent`](/game-api/types/global-c-d/charactercontrollerunityevent), [`CharacterDummyController`](/game-api/types/global-c-d/characterdummycontroller), [`DummyPlayerController`](/game-api/types/global-c-d/dummyplayercontroller), [`FlyCamPlayer`](/game-api/types/global-e-h/flycamplayer), [`MainMenuDesktopController`](/game-api/types/global-m-o/mainmenudesktopcontroller), [`ScaledLerpFollow`](/game-api/types/global-s/scaledlerpfollow), [`VRPlayerController`](/game-api/types/global-t-x/vrplayercontroller)
+- **Attributes** `RequireComponent`
+- **Documented in** [PlayerController and the body](/game-api/networking/player-controller)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected PlayerController()"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-androidculldistances" /><code>{"private float[] androidCullDistances"}</code> |  |
+| <Link id="m-androidfarclipingplane" /><code>{"private float androidFarClipingPlane"}</code> |  |
+| <Link id="m-cleargbuffer" /><code>{"private ClearGBuffer clearGBuffer"}</code> |  |
+| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" current"}</code> |  |
+| <Link id="m-healthtarget" /><code>{"private "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthTarget"}</code> |  |
+| <Link id="m-leftcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" leftController"}</code> |  |
+| <Link id="m-localplayerbehaviours" /><code>{"private MonoBehaviour[] localPlayerBehaviours"}</code> |  |
+| <Link id="m-locomotioncontroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" locomotionController"}</code> |  |
+| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> |  |
+| <Link id="m-messagedisplay" /><code>{"private "}<Link to="/game-api/types/global-p/playermessagedisplay">{"PlayerMessageDisplay"}</Link>{" messageDisplay"}</code> |  |
+| <Link id="m-playercamera" /><code>{"private Camera playerCamera"}</code> |  |
+| <Link id="m-playerlight" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/variableintensityplayerlight">{"VariableIntensityPlayerLight"}</Link>{" playerLight"}</code> |  |
+| <Link id="m-playersettings" /><code>{"private "}<Link to="/game-api/types/alta-player/playercontrollersettings">{"PlayerControllerSettings"}</Link>{" playerSettings"}</code> |  |
+| <Link id="m-postprocesscontroller" /><code>{"protected IPostProcessController postProcessController"}</code> |  |
+| <Link id="m-remoteplayerbehaviours" /><code>{"private MonoBehaviour[] remotePlayerBehaviours"}</code> |  |
+| <Link id="m-rightcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" rightController"}</code> |  |
+| <Link id="m-screenfader" /><code>{"private "}<Link to="/game-api/types/global-p/playerscreenfader">{"PlayerScreenFader"}</Link>{" screenFader"}</code> |  |
+| <Link id="m-setentityownerhandler" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" setEntityOwnerHandler"}</code> |  |
+| <Link id="m-syncplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPlayer"}</code> |  |
+| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/target">{"Target"}</Link>{" target"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bodycenter" /><code>{"virtual Vector3 BodyCenter { get; }"}</code> |  |
+| <Link id="m-bodycontroller" /><code>{"virtual "}<Link to="/game-api/types/alta-player/bodycontroller">{"BodyController"}</Link>{" "}<Link to="/game-api/types/alta-player/bodycontroller">{"BodyController"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-camera" /><code>{"Camera Camera { get; }"}</code> |  |
+| <Link id="m-current-2" /><code>{"static "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" Current { get; private set; }"}</code> |  |
+| <Link id="m-feetoffset" /><code>{"Vector3 FeetOffset { get; }"}</code> |  |
+| <Link id="m-head" /><code>{"abstract Transform Head { get; }"}</code> |  |
+| <Link id="m-headfollow" /><code>{"abstract Transform HeadFollow { get; }"}</code> |  |
+| <Link id="m-headheight" /><code>{"virtual float HeadHeight { get; }"}</code> |  |
+| <Link id="m-headoffset" /><code>{"Vector3 HeadOffset { get; }"}</code> |  |
+| <Link id="m-health" /><code><Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" Health { get; }"}</code> |  |
+| <Link id="m-info" /><code><Link to="/game-api/types/global-c-d/characterinfo">{"CharacterInfo"}</Link>{" Info { get; private set; }"}</code> |  |
+| <Link id="m-inputscale" /><code>{"virtual float InputScale { get; }"}</code> |  |
+| <Link id="m-isalive" /><code>{"bool IsAlive { get; set; }"}</code> |  |
+| <Link id="m-isdowned" /><code>{"bool IsDowned { get; set; }"}</code> |  |
+| <Link id="m-isignoringdamage" /><code>{"bool IsIgnoringDamage { get; set; }"}</code> |  |
+| <Link id="m-islocalplayer" /><code>{"virtual bool IsLocalPlayer { get; private set; }"}</code> |  |
+| <Link id="m-isshowingname" /><code>{"virtual bool IsShowingName { get; }"}</code> |  |
+| <Link id="m-isspirit" /><code>{"bool IsSpirit { get; set; }"}</code> |  |
+| <Link id="m-leftcontroller-2" /><code><Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" LeftController { get; }"}</code> |  |
+| <Link id="m-locomotioncontroller-2" /><code><Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" "}<Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-messagedisplay-2" /><code><Link to="/game-api/types/global-p/playermessagedisplay">{"PlayerMessageDisplay"}</Link>{" MessageDisplay { get; }"}</code> |  |
+| <Link id="m-networkplayer" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" NetworkPlayer { get; private set; }"}</code> |  |
+| <Link id="m-networkprefab" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-playerfeetposition" /><code>{"virtual Vector3 PlayerFeetPosition { get; }"}</code> |  |
+| <Link id="m-playerlight-2" /><code><Link to="/game-api/types/game-other-namespaces/variableintensityplayerlight">{"VariableIntensityPlayerLight"}</Link>{" PlayerLight { get; }"}</code> |  |
+| <Link id="m-playersaveposition" /><code>{"virtual Vector3 PlayerSavePosition { get; }"}</code> |  |
+| <Link id="m-realfeetoffset" /><code>{"Vector3 RealFeetOffset { get; }"}</code> |  |
+| <Link id="m-realfeetposition" /><code>{"virtual Vector3 RealFeetPosition { get; }"}</code> |  |
+| <Link id="m-rightcontroller-2" /><code><Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" RightController { get; }"}</code> |  |
+| <Link id="m-scale" /><code>{"virtual float Scale { get; }"}</code> |  |
+| <Link id="m-screenfader-2" /><code><Link to="/game-api/types/global-p/playerscreenfader">{"PlayerScreenFader"}</Link>{" ScreenFader { get; }"}</code> |  |
+| <Link id="m-settings" /><code><Link to="/game-api/types/alta-player/playercontrollersettings">{"PlayerControllerSettings"}</Link>{" Settings { get; }"}</code> |  |
+| <Link id="m-target-2" /><code><Link to="/game-api/types/alta-intelligence/target">{"Target"}</Link>{" "}<Link to="/game-api/types/alta-intelligence/target">{"Target"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |  |
+| <Link id="m-savemode" /><code>{"protected virtual "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" { get; }"}</code> |  |
+
+## Events
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-causedcombat" /><code>{"event "}<Link to="/game-api/types/global-c-d/combateventhandler">{"CombatEventHandler"}</Link>{" CausedCombat"}</code> |  |
+| <Link id="m-currentplayerchanged" /><code>{"static event Action<"}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{"> CurrentPlayerChanged"}</code> |  |
+| <Link id="m-hasbeenmoved" /><code>{"event Action hasBeenMoved"}</code> |  |
+| <Link id="m-linkedtolocalplayer" /><code>{"event Action LinkedToLocalPlayer"}</code> |  |
+| <Link id="m-linkedtoremoteplayer" /><code>{"static event Action<"}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{"> LinkedToRemotePlayer"}</code> |  |
+| <Link id="m-localplayerset" /><code>{"static event "}<Link to="/game-api/types/alta-player/playercontrollerhandler">{"PlayerControllerHandler"}</Link>{" LocalPlayerSet"}</code> |  |
+| <Link id="m-onabouttoleave" /><code>{"event "}<Link to="/game-api/types/alta-player/playercontrollerhandler">{"PlayerControllerHandler"}</Link>{" OnAboutToLeave"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bake" /><code>{"virtual void Bake(bool isSaving)"}</code> |  |
+| <Link id="m-forceteleportto" /><code>{"void ForceTeleportTo(Vector3 target)"}</code> |  |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
+| <Link id="m-initializeplayerbehaviours" /><code>{"void InitializePlayerBehaviours()"}</code> |  |
+| <Link id="m-injectpostprocess" /><code>{"void InjectPostProcess(IPostProcessController postProcessController)"}</code> |  |
+| <Link id="m-issavinginteractor" /><code>{"static bool IsSavingInteractor("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
+| <Link id="m-linktoplayer" /><code>{"void LinkToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" networkPlayer, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" left, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" right)"}</code> |  |
+| <Link id="m-loadfrom" /><code>{"virtual void LoadFrom("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> |  |
+| <Link id="m-markmovedforviewcomfort" /><code>{"void MarkMovedForViewComfort()"}</code> |  |
+| <Link id="m-oncausedcombat" /><code>{"void OnCausedCombat("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" attackee, float distanceBetweenCombatantsSquared, float damage)"}</code> |  |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| <Link id="m-onplayerleaving" /><code>{"void OnPlayerLeaving()"}</code> |  |
+| <Link id="m-onpreplayerleaving" /><code>{"void OnPrePlayerLeaving()"}</code> |  |
+| <Link id="m-saveto" /><code>{"virtual void SaveTo("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> |  |
+| <Link id="m-unlinkfromplayer" /><code>{"virtual void UnlinkFromPlayer()"}</code> |  |
+| <Link id="m-waitforchunkload" /><code>{"void WaitForChunkLoad("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" previousChunk = null)"}</code> |  |
+| <Link id="m-waitforchunkload-2" /><code>{"void WaitForChunkLoad("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" currentChunk, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" previousChunk)"}</code> |  |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
+| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |  |
+| <Link id="m-delayreposition" /><code>{"protected virtual void DelayReposition()"}</code> |  |
+| <Link id="m-loadforchunk" /><code>{"protected virtual void LoadForChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" currentChunk)"}</code> |  |
+| <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> |  |
+| <Link id="m-resetstandardvisuals" /><code>{"private void ResetStandardVisuals()"}</code> |  |
+| <Link id="m-savenetworkprefabtoplayersave" /><code>{"protected void SaveNetworkPrefabToPlayerSave("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save, bool isBeingDestroyed = false)"}</code> |  |
+| <Link id="m-serializehands" /><code>{"protected void SerializeHands("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning)"}</code> |  |
+| <Link id="m-serializeinteractor" /><code>{"private bool SerializeInteractor("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" otherInteractor)"}</code> |  |
+| <Link id="m-syncplayer-2" /><code>{"private void SyncPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-triggeredfadein" /><code>{"private void TriggeredFadeIn("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
+| <Link id="m-updatecameraculling" /><code>{"private void UpdateCameraCulling("}<Link to="/game-api/types/alta-utilities/gamesettings">{"GameSettings"}</Link>{" settings)"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `PlayerController`:
+
+[`ActionOrb.controller`](/game-api/types/global-a-b/actionorb#m-controller), [`AfkTimer.PlayerControllerSet`](/game-api/types/global-a-b/afktimer#m-playercontrollerset), [`AfkTimer.PositionChanged`](/game-api/types/global-a-b/afktimer#m-positionchanged), [`TimberBlockSpawner.CheckRelease`](/game-api/types/alta-crafting/timberblockspawner#m-checkrelease), [`AccessibleDocks.InitializeAsLocalPlayer`](/game-api/types/alta-player/accessibledocks#m-initializeaslocalplayer), [`AccessibleDocks.playerController`](/game-api/types/alta-player/accessibledocks#m-playercontroller), [`CharacterComponentController.playerController`](/game-api/types/alta-player/charactercomponentcontroller#m-playercontroller), [`CharacterComponentController.PlayerController`](/game-api/types/alta-player/charactercomponentcontroller#m-playercontroller-2), [`CustomControllerOffsetReader.OnLocalPlayerSet`](/game-api/types/alta-player/customcontrolleroffsetreader#m-onlocalplayerset), [`PersonalSpace.character`](/game-api/types/alta-player/personalspace#m-character), [`PersonalSpace.Character`](/game-api/types/alta-player/personalspace#m-character-2), [`PlayerControllerHandler.BeginInvoke`](/game-api/types/alta-player/playercontrollerhandler#m-begininvoke), [`PlayerControllerHandler.Invoke`](/game-api/types/alta-player/playercontrollerhandler#m-invoke), [`PlayerText.DeleteIfLocalPlayer`](/game-api/types/alta-player/playertext#m-deleteiflocalplayer), [`PositionChangedHandler.BeginInvoke`](/game-api/types/alta-player/positionchangedhandler#m-begininvoke), [`PositionChangedHandler.Invoke`](/game-api/types/alta-player/positionchangedhandler#m-invoke), [`RotationChangedHandler.BeginInvoke`](/game-api/types/alta-player/rotationchangedhandler#m-begininvoke), [`RotationChangedHandler.Invoke`](/game-api/types/alta-player/rotationchangedhandler#m-invoke), [`ScaleChangedHandler.BeginInvoke`](/game-api/types/alta-player/scalechangedhandler#m-begininvoke), [`ScaleChangedHandler.Invoke`](/game-api/types/alta-player/scalechangedhandler#m-invoke), [`OcclusionChunkEffectData.DisableForPlayer`](/game-api/types/alta-world/occlusionchunkeffectdata#m-disableforplayer), [`CraftingOptions.CraftingOptions`](/game-api/types/alta-crafting/craftingoptions#m-ctor), [`CraftingOptions.Create`](/game-api/types/alta-crafting/craftingoptions#m-create), [`CraftingOptions.player`](/game-api/types/alta-crafting/craftingoptions#m-player), [`JointInsert.linesPlayer`](/game-api/types/alta-crafting/jointinsert#m-linesplayer), [`JointInsert.ShowLines`](/game-api/types/alta-crafting/jointinsert#m-showlines), [`AtmosphereManager.OverrideAtmosphere`](/game-api/types/alta-world/atmospheremanager#m-overrideatmosphere), [`BorderDefinedAtmosphere.OnLocalPlayerSet`](/game-api/types/alta-world/borderdefinedatmosphere#m-onlocalplayerset), [`RiverAudio.LocalPlayerSet`](/game-api/types/alta-world-generation/riveraudio#m-localplayerset), [`RiverAudio.player`](/game-api/types/alta-world-generation/riveraudio#m-player), [`HandShakeOffDetector.UpdatePosition`](/game-api/types/alta-stats-effects/handshakeoffdetector#m-updateposition), [`ImpactDetector.InitializeAsLocalPlayer`](/game-api/types/alta-items/impactdetector#m-initializeaslocalplayer), [`ImpactDetector.InitializeAsRemotePlayer`](/game-api/types/alta-items/impactdetector#m-initializeasremoteplayer), [`ImpactDetector.IsImpactClientSideOnly`](/game-api/types/alta-items/impactdetector#m-isimpactclientsideonly), [`ImpactHit.ImpactHit`](/game-api/types/alta-items/impacthit#m-ctor-2), [`ImpactHit.PlayerWielder`](/game-api/types/alta-items/impacthit#m-playerwielder), [`ImpactTool.GetCurrentPlayerWielder`](/game-api/types/alta-items/impacttool#m-getcurrentplayerwielder), [`ImpactTool.PlayerWielder`](/game-api/types/alta-items/impacttool#m-playerwielder), [`PlayerCharacterTarget.character`](/game-api/types/alta-intelligence/playercharactertarget#m-character), [`PlayerCharacterTarget.Character`](/game-api/types/alta-intelligence/playercharactertarget#m-character-2), [`Chest.SetLocalPlayer`](/game-api/types/alta-items/chest#m-setlocalplayer), [`Chest.UpdateDistance`](/game-api/types/alta-items/chest#m-updatedistance), [`PickupDock.InitializeAsLocalPlayer`](/game-api/types/alta-items/pickupdock#m-initializeaslocalplayer), [`PickupDock.InitializeAsRemotePlayer`](/game-api/types/alta-items/pickupdock#m-initializeasremoteplayer), [`PickupDock.PlayerController`](/game-api/types/alta-items/pickupdock#m-playercontroller), [`PickupDock.UpdatePlayerOwnership`](/game-api/types/alta-items/pickupdock#m-updateplayerownership), [`PlayerDocks.owner`](/game-api/types/alta-items/playerdocks#m-owner), [`StabilizePickupJoint.MoveWithPlayer`](/game-api/types/alta-items/stabilizepickupjoint#m-movewithplayer), [`StabilizePickupJoint.RecordLocalPositionBeforeMoving`](/game-api/types/alta-items/stabilizepickupjoint#m-recordlocalpositionbeforemoving), [`PlayerLandmark.playerController`](/game-api/types/alta-world/playerlandmark#m-playercontroller), [`NetworkEntity.InitializeAsPlayer`](/game-api/types/alta-networking/networkentity#m-initializeasplayer), [`NetworkEntityComponentController.InitializeAsLocalPlayer`](/game-api/types/alta-networking/networkentitycomponentcontroller#m-initializeaslocalplayer), [`NetworkEntityComponentController.InitializeAsRemotePlayer`](/game-api/types/alta-networking/networkentitycomponentcontroller#m-initializeasremoteplayer), [`NetworkTransform.InitializeAsLocalPlayer`](/game-api/types/alta-networking/networktransform#m-initializeaslocalplayer), [`PlayerComponentController.InitializeAsLocalPlayer`](/game-api/types/alta-networking/playercomponentcontroller#m-initializeaslocalplayer), [`IPlayer.PlayerController`](/game-api/types/alta-networking/iplayer#m-playercontroller), [`VoiceChatMouthController.controller`](/game-api/types/alta-networking/voicechatmouthcontroller#m-controller), [`GlobalPagesManager.DissolvePage`](/game-api/types/alta-items/globalpagesmanager#m-dissolvepage-2), [`PaperPageInstance.AutoAdd`](/game-api/types/alta-items/paperpageinstance#m-autoadd-2), [`DownedState.OnPlayerControllerSetRemote`](/game-api/types/alta-player/downedstate#m-onplayercontrollersetremote) and 173 more.

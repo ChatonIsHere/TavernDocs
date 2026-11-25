@@ -14,203 +14,203 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `AccessibilityFeaturesBoard` | class | `PopupBoard` | 0 |  |
-| `AccessibilityFeaturesChecker` | class | `MonoBehaviour` | 0 |  |
-| `AccountSetupSceneLoader` | class | `ISceneLoader` | 1 |  |
-| `AchievementBoard` | class | `MonoBehaviour` | 0 |  |
-| `AchievementEffectHandler` | static class |  | 1 |  |
-| `AchievementGroupAchievement` | class | `GameAchievement` | 1 |  |
-| `AchievementItem` | class | `MonoBehaviour`, `IAchievementItem` | 1 |  |
-| `ActionGlyphAnimator` | class | `PooledObject` | 2 |  |
-| `ActionGlyphsPlacer` | class | `MonoBehaviour` | 3 |  |
-| `ActionItem` | class | `NetworkEntityBehaviour` | 9 |  |
-| `ActionOrb` | class | `HoverPickup` | 4 |  |
-| `ActiveHandIndex` | enum |  | 2 |  |
-| `AdditionalStaticContent` | class | `NetworkEntityBehaviour`, `ISavable<AdditionalStaticContentSaveData>`, `ISavableSave<AdditionalStaticContentSaveData>`, +2 more | 5 |  |
-| `AdditionalStaticContentMarker` | class | `MonoBehaviour` | 0 |  |
-| `AdditionalStaticContentSaveData` | class | `NewSaveData<AdditionalStaticContent, AdditionalStaticContentSaveData>` | 1 |  |
-| `AddonCraftingPart` | class | `CraftingPart` | 0 | [Crafting](../game-systems/crafting.md): A part that shows an extra visual (`jointAddon`) while it's inserted. |
-| `AddressableLoader` | class | `MonoBehaviour` | 0 |  |
-| `AddressableSession` | class | `IDisposable` | 5 |  |
-| `AddressableSystemWarmer` | class | `MonoBehaviour` | 0 |  |
-| `AdjustHeight` | class | `MonoBehaviour` | 2 |  |
-| `AdminTool` | abstract class | `LoggedInTool` | 0 |  |
-| `Aesthetics` | static class |  | 1 |  |
-| `AfkTimer` | class | `MonoBehaviour` | 0 |  |
-| `AgonesLogger` | class | `Agones.Utility.ILogger` | 3 |  |
-| `AlignWithNormalModifier` | class | `SpawnModifierSpawnParameters` | 1 |  |
-| `AlignWithNormalModifier.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<AlignWithNormalModifier>` | 0 |  |
-| `AlignWithPath` | class | `GeneratablePart` | 1 |  |
-| `AlignWithPathSlope` | class | `GeneratablePart` | 1 |  |
-| `AlignWithTerrainSlope` | class | `GeneratablePart` | 1 |  |
-| `AlphanumComparator` | class | `IComparer` | 1 |  |
-| `AltaEvent` | class | `IAltaEventValidation` | 5 |  |
-| `AltaEvent<T, UnityEventT>` | class | `IAltaEvent<T>`, `IAltaEventValidation` | 5 |  |
-| `AltaEvent<T1, T2, T3, T4, UnityEventT1T2T3T4>` | class | `IAltaEvent<T1, T2, T3, T4>`, `IAltaEventValidation` | 4 |  |
-| `AltaEvent<T1, T2, T3, UnityEventT1T2T3>` | class | `IAltaEvent<T1, T2, T3>`, `IAltaEventValidation` | 4 |  |
-| `AltaEvent<T1, T2, UnityEventT1T2>` | class | `IAltaEvent<T1, T2>`, `IAltaEventValidation` | 4 |  |
-| `AltaEventValidationExtensions` | static class |  | 1 |  |
-| `AltaPxrManagerCameraController` | class | `MonoBehaviour` | 0 |  |
-| `AltaSceneManager` | static class |  | 10 | [Startup and app state](../console-and-utilities/startup-and-app-state.md#altascenemanager): Every scene is loaded additively. Main thread; the async methods poll with `Task.Delay` and continue on the main thread. |
-| `AltaVisionAttribute` | class | `PropertyAttribute` | 0 |  |
-| `AlwaysFacePlayer` | class | `MonoBehaviour` | 0 |  |
-| `AmbienceAudio` | class | `SoundSource` | 2 |  |
-| `AmbienceManager` | class | `SingletonBehaviour<AmbienceManager>` | 1 |  |
-| `AmbientTemperatureChecker` | class |  | 7 |  |
-| `AmplifyImpostorAsset` | class | `ScriptableObject` | 17 |  |
-| `AmplifyImpostorBakePreset` | class | `ScriptableObject` | 4 |  |
-| `AnalyticalButton` | class | `MonoBehaviour`, `IPreventAtlasing` | 8 |  |
-| `AnalyticalButtonGroupAutoEnabler` | class | `MonoBehaviour` | 0 |  |
-| `AnalyticsTest` | class | `MonoBehaviour` | 0 |  |
-| `AndroidLightSettings` | class | `GlobalSettings<AndroidLightSettings>` | 1 |  |
-| `AnimatedRagdoll` | class | `MonoBehaviour` | 0 |  |
-| `AnimateProgress` | class | `MonoBehaviour` | 2 |  |
-| `AnimateScaleOverTime` | class | `TransformScriptAnimation` | 2 |  |
-| `AnimateTime` | class | `MonoBehaviour` | 0 |  |
-| `AnimationBasedEffect` | class | `AnimationBasedTrigger` | 1 |  |
-| `AnimationBasedTrigger` | class | `MonoBehaviour` | 1 |  |
-| `AnimationEnded` | class | `StateMachineBehaviour` | 1 |  |
-| `AnimationPart` | class |  | 14 |  |
-| `AnimationRandomStart` | class | `MonoBehaviour` | 0 |  |
-| `AnimationTrigger` | class | `MonoBehaviour` | 2 |  |
-| `AnimatorForcerTool` | class | `MonoBehaviour` | 0 |  |
-| `AnimatorSetup` | class |  | 1 |  |
-| `AnvilArea` | class | `MonoBehaviour` | 0 |  |
-| `AnvilFilter` | class | `MonoBehaviour` | 0 |  |
-| `AnvilFilterSettings` | class | `ImpactorAreaFilter<AnvilArea>` | 0 |  |
-| `AOEDamage` | class | `MonoBehaviour` | 0 | [Health and damage](../items/health-and-damage.md#aoedamage): `AOEDamage`, no namespace, a `MonoBehaviour`. |
-| `ApiAccess` | static class |  | 7 | [Alta's web API](../console-and-utilities/alta-web-api.md#apiaccess), [Startup and app state](../console-and-utilities/startup-and-app-state.md): Which client and address it picks: |
-| `ApiEndpoint` | enum |  | 6 |  |
-| `AppDataCacheHandler` | static class |  | 4 |  |
-| `ApplicationManager` | class | `SingletonBehaviour<ApplicationManager>` | 14 | [Startup and app state](../console-and-utilities/startup-and-app-state.md#applicationmanager): Most members are static. (There's an unrelated `Discord.ApplicationManager` too.) |
-| `ApplicationShutdownOrderAttribute` | class | `Attribute` | 3 |  |
-| `ApplicationStartupManager` | class | `MonoBehaviour` | 8 | [Startup and app state](../console-and-utilities/startup-and-app-state.md#applicationstartupmanager): Runs once at launch. |
-| `AreaAttackSkill` | class | `PickupBasedSkill` | 3 |  |
-| `AreaAttackSkill.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<AreaAttackSkill>` | 0 |  |
-| `AreaOfInfluenceReceiver` | class | `MonoBehaviour`, `ISavable<AreaOfInfluenceReceiverData>`, `ISavableSave<AreaOfInfluenceReceiverData>`, +1 more | 0 |  |
-| `AreaOfInfluenceReceiverData` | class | `NewSaveData<AreaOfInfluenceReceiver, AreaOfInfluenceReceiverData>` | 1 |  |
-| `AreaOfInfluenceSender` | class | `LogicIntSet` | 0 |  |
-| `Arrow` | class | `NetworkEntityBehaviour`, `IShootable`, `IToolHitDependant` | 16 |  |
-| `ArrowEvent` | class | `AltaEvent<Arrow, ArrowUnityEvent>` | 0 |  |
-| `ArrowFlightModifierComponent` | class | `MonoBehaviour` | 1 |  |
-| `ArrowFlightSettings` | class | `ScriptableObject` | 0 |  |
-| `ArrowFlightSettingsDevianceMultiplierModifier` | class | `ArrowFlightSettingsModifier` | 1 |  |
-| `ArrowFlightSettingsModifier` | abstract class | `ScriptableObject` | 1 |  |
-| `ArrowUnityEvent` | class | `UnityEvent<Arrow>` | 0 |  |
-| `AssistGrabInteractable` | class | `Interactable`, `ICustomTypeReplace`, `IEntityReplaceHandler` | 0 | [Items, interaction and damage](../items/overview.md) |
-| `AStar<TNode, TConnection>` | static class |  | 4 |  |
-| `AStarDestinationCondition<TNode, TConnection>` | delegate |  | 0 |  |
-| `AStarTravelCondition<TNode, TConnection>` | delegate |  | 0 |  |
-| `AStarWorkingNode<TNode, TConnection>` | class |  | 5 |  |
-| `ATMMachine` | class | `NetworkEntityBehaviour` | 8 | [Trading](../game-systems/trading.md#atmmachine): A bank teller for one player at a time. |
-| `AttackTest` | class | `MonoBehaviour` | 0 |  |
-| `AttackTypeMultiplier` | class |  | 2 |  |
-| `AttributeCurveRange` | class | `CurveRange<BiomeAttribute>` | 2 |  |
-| `AttributeCurveValue` | class | `CurveValue<BiomeAttribute>` | 2 |  |
-| `AttributeDoubleValue` | class | `DoubleValue<BiomeAttribute>` | 2 |  |
-| `AttributeEvaluation` | static class |  | 1 |  |
-| `AttributeSet` | class | `IEnumerable<KeyValuePair<BiomeAttribute, float>>`, `IEnumerable` | 7 | [Caves](../world/caves.md) |
-| `AttributeSingleValue` | class | `SingleValue<BiomeAttribute>` | 0 |  |
-| `AttributeUsage` | class |  | 1 |  |
-| `AudioControl` | class | `SimpleAudioControl` | 8 |  |
-| `AudioEnvironmentBlendSettings` | class | `GlobalSettings<AudioEnvironmentBlendSettings>` | 1 |  |
-| `AudioEnvironmentBlendSettings.Create` | class | `AltaMenuItemBase.Assets.Create.Audio.ScriptableObject<AudioEnvironmentBlendSettings>` | 0 |  |
-| `AudioManager` | class | `SingletonBehaviour<AudioManager>` | 12 |  |
-| `AudioMuteEvent` | delegate |  | 0 |  |
-| `AutoCamDeviceController` | class | `XrDeviceSdkController` | 4 |  |
-| `AutoCamDeviceLifecycle` | class | `DeviceLifecycle` | 3 |  |
-| `AutoCamLocomotionController` | class | `LocomotionController` | 0 |  |
-| `AutoCamPlayer` | class | `PlayerController` | 10 |  |
-| `AutoContainerLid` | class | `NetworkEntityBehaviour` | 1 |  |
-| `AutoFindAttribute` | class | `PropertyAttribute` | 2 |  |
-| `AvailablePointBar` | class | `MonoBehaviour` | 3 |  |
-| `AvailablePointCrystal` | class | `PooledObject` | 1 |  |
-| `AvailablePointVisualizerManager` | abstract class | `MonoBehaviour` | 4 |  |
-| `AvoidBakingMarker` | class | `MonoBehaviour` | 0 |  |
+| [`AccessibilityFeaturesBoard`](/game-api/types/global-a-b/accessibilityfeaturesboard) | class | `PopupBoard` | 0 |  |
+| [`AccessibilityFeaturesChecker`](/game-api/types/global-a-b/accessibilityfeatureschecker) | class | `MonoBehaviour` | 0 |  |
+| [`AccountSetupSceneLoader`](/game-api/types/global-a-b/accountsetupsceneloader) | class | `ISceneLoader` | 1 |  |
+| [`AchievementBoard`](/game-api/types/global-a-b/achievementboard) | class | `MonoBehaviour` | 0 |  |
+| [`AchievementEffectHandler`](/game-api/types/global-a-b/achievementeffecthandler) | static class |  | 1 |  |
+| [`AchievementGroupAchievement`](/game-api/types/global-a-b/achievementgroupachievement) | class | `GameAchievement` | 1 |  |
+| [`AchievementItem`](/game-api/types/global-a-b/achievementitem) | class | `MonoBehaviour`, `IAchievementItem` | 1 |  |
+| [`ActionGlyphAnimator`](/game-api/types/global-a-b/actionglyphanimator) | class | `PooledObject` | 2 |  |
+| [`ActionGlyphsPlacer`](/game-api/types/global-a-b/actionglyphsplacer) | class | `MonoBehaviour` | 3 |  |
+| [`ActionItem`](/game-api/types/global-a-b/actionitem) | class | `NetworkEntityBehaviour` | 9 |  |
+| [`ActionOrb`](/game-api/types/global-a-b/actionorb) | class | `HoverPickup` | 4 |  |
+| [`ActiveHandIndex`](/game-api/types/global-a-b/activehandindex) | enum |  | 2 |  |
+| [`AdditionalStaticContent`](/game-api/types/global-a-b/additionalstaticcontent) | class | `NetworkEntityBehaviour`, `ISavable<AdditionalStaticContentSaveData>`, `ISavableSave<AdditionalStaticContentSaveData>`, +2 more | 5 |  |
+| [`AdditionalStaticContentMarker`](/game-api/types/global-a-b/additionalstaticcontentmarker) | class | `MonoBehaviour` | 0 |  |
+| [`AdditionalStaticContentSaveData`](/game-api/types/global-a-b/additionalstaticcontentsavedata) | class | `NewSaveData<AdditionalStaticContent, AdditionalStaticContentSaveData>` | 1 |  |
+| [`AddonCraftingPart`](/game-api/types/global-a-b/addoncraftingpart) | class | `CraftingPart` | 0 | [Crafting](../game-systems/crafting.md): A part that shows an extra visual (`jointAddon`) while it's inserted. |
+| [`AddressableLoader`](/game-api/types/global-a-b/addressableloader) | class | `MonoBehaviour` | 0 |  |
+| [`AddressableSession`](/game-api/types/global-a-b/addressablesession) | class | `IDisposable` | 5 |  |
+| [`AddressableSystemWarmer`](/game-api/types/global-a-b/addressablesystemwarmer) | class | `MonoBehaviour` | 0 |  |
+| [`AdjustHeight`](/game-api/types/global-a-b/adjustheight) | class | `MonoBehaviour` | 2 |  |
+| [`AdminTool`](/game-api/types/global-a-b/admintool) | abstract class | `LoggedInTool` | 0 |  |
+| [`Aesthetics`](/game-api/types/global-a-b/aesthetics) | static class |  | 1 |  |
+| [`AfkTimer`](/game-api/types/global-a-b/afktimer) | class | `MonoBehaviour` | 0 |  |
+| [`AgonesLogger`](/game-api/types/global-a-b/agoneslogger) | class | `Agones.Utility.ILogger` | 3 |  |
+| [`AlignWithNormalModifier`](/game-api/types/global-a-b/alignwithnormalmodifier) | class | `SpawnModifierSpawnParameters` | 1 |  |
+| [`AlignWithNormalModifier.Create`](/game-api/types/global-a-b/alignwithnormalmodifier-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<AlignWithNormalModifier>` | 0 |  |
+| [`AlignWithPath`](/game-api/types/global-a-b/alignwithpath) | class | `GeneratablePart` | 1 |  |
+| [`AlignWithPathSlope`](/game-api/types/global-a-b/alignwithpathslope) | class | `GeneratablePart` | 1 |  |
+| [`AlignWithTerrainSlope`](/game-api/types/global-a-b/alignwithterrainslope) | class | `GeneratablePart` | 1 |  |
+| [`AlphanumComparator`](/game-api/types/global-a-b/alphanumcomparator) | class | `IComparer` | 1 |  |
+| [`AltaEvent`](/game-api/types/global-a-b/altaevent) | class | `IAltaEventValidation` | 5 |  |
+| [`AltaEvent<T, UnityEventT>`](/game-api/types/global-a-b/altaevent-t-unityeventt) | class | `IAltaEvent<T>`, `IAltaEventValidation` | 5 |  |
+| [`AltaEvent<T1, T2, T3, T4, UnityEventT1T2T3T4>`](/game-api/types/global-a-b/altaevent-t1-t2-t3-t4-unityeventt1t2t3t4) | class | `IAltaEvent<T1, T2, T3, T4>`, `IAltaEventValidation` | 4 |  |
+| [`AltaEvent<T1, T2, T3, UnityEventT1T2T3>`](/game-api/types/global-a-b/altaevent-t1-t2-t3-unityeventt1t2t3) | class | `IAltaEvent<T1, T2, T3>`, `IAltaEventValidation` | 4 |  |
+| [`AltaEvent<T1, T2, UnityEventT1T2>`](/game-api/types/global-a-b/altaevent-t1-t2-unityeventt1t2) | class | `IAltaEvent<T1, T2>`, `IAltaEventValidation` | 4 |  |
+| [`AltaEventValidationExtensions`](/game-api/types/global-a-b/altaeventvalidationextensions) | static class |  | 1 |  |
+| [`AltaPxrManagerCameraController`](/game-api/types/global-a-b/altapxrmanagercameracontroller) | class | `MonoBehaviour` | 0 |  |
+| [`AltaSceneManager`](/game-api/types/global-a-b/altascenemanager) | static class |  | 10 | [Startup and app state](../console-and-utilities/startup-and-app-state.md#altascenemanager): Every scene is loaded additively. Main thread; the async methods poll with `Task.Delay` and continue on the main thread. |
+| [`AltaVisionAttribute`](/game-api/types/global-a-b/altavisionattribute) | class | `PropertyAttribute` | 0 |  |
+| [`AlwaysFacePlayer`](/game-api/types/global-a-b/alwaysfaceplayer) | class | `MonoBehaviour` | 0 |  |
+| [`AmbienceAudio`](/game-api/types/global-a-b/ambienceaudio) | class | `SoundSource` | 2 |  |
+| [`AmbienceManager`](/game-api/types/global-a-b/ambiencemanager) | class | `SingletonBehaviour<AmbienceManager>` | 1 |  |
+| [`AmbientTemperatureChecker`](/game-api/types/global-a-b/ambienttemperaturechecker) | class |  | 7 |  |
+| [`AmplifyImpostorAsset`](/game-api/types/global-a-b/amplifyimpostorasset) | class | `ScriptableObject` | 17 |  |
+| [`AmplifyImpostorBakePreset`](/game-api/types/global-a-b/amplifyimpostorbakepreset) | class | `ScriptableObject` | 4 |  |
+| [`AnalyticalButton`](/game-api/types/global-a-b/analyticalbutton) | class | `MonoBehaviour`, `IPreventAtlasing` | 8 |  |
+| [`AnalyticalButtonGroupAutoEnabler`](/game-api/types/global-a-b/analyticalbuttongroupautoenabler) | class | `MonoBehaviour` | 0 |  |
+| [`AnalyticsTest`](/game-api/types/global-a-b/analyticstest) | class | `MonoBehaviour` | 0 |  |
+| [`AndroidLightSettings`](/game-api/types/global-a-b/androidlightsettings) | class | `GlobalSettings<AndroidLightSettings>` | 1 |  |
+| [`AnimatedRagdoll`](/game-api/types/global-a-b/animatedragdoll) | class | `MonoBehaviour` | 0 |  |
+| [`AnimateProgress`](/game-api/types/global-a-b/animateprogress) | class | `MonoBehaviour` | 2 |  |
+| [`AnimateScaleOverTime`](/game-api/types/global-a-b/animatescaleovertime) | class | `TransformScriptAnimation` | 2 |  |
+| [`AnimateTime`](/game-api/types/global-a-b/animatetime) | class | `MonoBehaviour` | 0 |  |
+| [`AnimationBasedEffect`](/game-api/types/global-a-b/animationbasedeffect) | class | `AnimationBasedTrigger` | 1 |  |
+| [`AnimationBasedTrigger`](/game-api/types/global-a-b/animationbasedtrigger) | class | `MonoBehaviour` | 1 |  |
+| [`AnimationEnded`](/game-api/types/global-a-b/animationended) | class | `StateMachineBehaviour` | 1 |  |
+| [`AnimationPart`](/game-api/types/global-a-b/animationpart) | class |  | 14 |  |
+| [`AnimationRandomStart`](/game-api/types/global-a-b/animationrandomstart) | class | `MonoBehaviour` | 0 |  |
+| [`AnimationTrigger`](/game-api/types/global-a-b/animationtrigger) | class | `MonoBehaviour` | 2 |  |
+| [`AnimatorForcerTool`](/game-api/types/global-a-b/animatorforcertool) | class | `MonoBehaviour` | 0 |  |
+| [`AnimatorSetup`](/game-api/types/global-a-b/animatorsetup) | class |  | 1 |  |
+| [`AnvilArea`](/game-api/types/global-a-b/anvilarea) | class | `MonoBehaviour` | 0 |  |
+| [`AnvilFilter`](/game-api/types/global-a-b/anvilfilter) | class | `MonoBehaviour` | 0 |  |
+| [`AnvilFilterSettings`](/game-api/types/global-a-b/anvilfiltersettings) | class | `ImpactorAreaFilter<AnvilArea>` | 0 |  |
+| [`AOEDamage`](/game-api/types/global-a-b/aoedamage) | class | `MonoBehaviour` | 0 | [Health and damage](../items/health-and-damage.md#aoedamage): `AOEDamage`, no namespace, a `MonoBehaviour`. |
+| [`ApiAccess`](/game-api/types/global-a-b/apiaccess) | static class |  | 7 | [Alta's web API](../console-and-utilities/alta-web-api.md#apiaccess), [Startup and app state](../console-and-utilities/startup-and-app-state.md): Which client and address it picks: |
+| [`ApiEndpoint`](/game-api/types/global-a-b/apiendpoint) | enum |  | 6 |  |
+| [`AppDataCacheHandler`](/game-api/types/global-a-b/appdatacachehandler) | static class |  | 4 |  |
+| [`ApplicationManager`](/game-api/types/global-a-b/applicationmanager) | class | `SingletonBehaviour<ApplicationManager>` | 14 | [Startup and app state](../console-and-utilities/startup-and-app-state.md#applicationmanager): Most members are static. (There's an unrelated `Discord.ApplicationManager` too.) |
+| [`ApplicationShutdownOrderAttribute`](/game-api/types/global-a-b/applicationshutdownorderattribute) | class | `Attribute` | 3 |  |
+| [`ApplicationStartupManager`](/game-api/types/global-a-b/applicationstartupmanager) | class | `MonoBehaviour` | 8 | [Startup and app state](../console-and-utilities/startup-and-app-state.md#applicationstartupmanager): Runs once at launch. |
+| [`AreaAttackSkill`](/game-api/types/global-a-b/areaattackskill) | class | `PickupBasedSkill` | 3 |  |
+| [`AreaAttackSkill.Create`](/game-api/types/global-a-b/areaattackskill-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<AreaAttackSkill>` | 0 |  |
+| [`AreaOfInfluenceReceiver`](/game-api/types/global-a-b/areaofinfluencereceiver) | class | `MonoBehaviour`, `ISavable<AreaOfInfluenceReceiverData>`, `ISavableSave<AreaOfInfluenceReceiverData>`, +1 more | 0 |  |
+| [`AreaOfInfluenceReceiverData`](/game-api/types/global-a-b/areaofinfluencereceiverdata) | class | `NewSaveData<AreaOfInfluenceReceiver, AreaOfInfluenceReceiverData>` | 1 |  |
+| [`AreaOfInfluenceSender`](/game-api/types/global-a-b/areaofinfluencesender) | class | `LogicIntSet` | 0 |  |
+| [`Arrow`](/game-api/types/global-a-b/arrow) | class | `NetworkEntityBehaviour`, `IShootable`, `IToolHitDependant` | 16 |  |
+| [`ArrowEvent`](/game-api/types/global-a-b/arrowevent) | class | `AltaEvent<Arrow, ArrowUnityEvent>` | 0 |  |
+| [`ArrowFlightModifierComponent`](/game-api/types/global-a-b/arrowflightmodifiercomponent) | class | `MonoBehaviour` | 1 |  |
+| [`ArrowFlightSettings`](/game-api/types/global-a-b/arrowflightsettings) | class | `ScriptableObject` | 0 |  |
+| [`ArrowFlightSettingsDevianceMultiplierModifier`](/game-api/types/global-a-b/arrowflightsettingsdeviancemultipliermodifier) | class | `ArrowFlightSettingsModifier` | 1 |  |
+| [`ArrowFlightSettingsModifier`](/game-api/types/global-a-b/arrowflightsettingsmodifier) | abstract class | `ScriptableObject` | 1 |  |
+| [`ArrowUnityEvent`](/game-api/types/global-a-b/arrowunityevent) | class | `UnityEvent<Arrow>` | 0 |  |
+| [`AssistGrabInteractable`](/game-api/types/global-a-b/assistgrabinteractable) | class | `Interactable`, `ICustomTypeReplace`, `IEntityReplaceHandler` | 0 | [Items, interaction and damage](../items/overview.md) |
+| [`AStar<TNode, TConnection>`](/game-api/types/global-a-b/astar-tnode-tconnection) | static class |  | 4 |  |
+| [`AStarDestinationCondition<TNode, TConnection>`](/game-api/types/global-a-b/astardestinationcondition-tnode-tconnection) | delegate |  | 0 |  |
+| [`AStarTravelCondition<TNode, TConnection>`](/game-api/types/global-a-b/astartravelcondition-tnode-tconnection) | delegate |  | 0 |  |
+| [`AStarWorkingNode<TNode, TConnection>`](/game-api/types/global-a-b/astarworkingnode-tnode-tconnection) | class |  | 5 |  |
+| [`ATMMachine`](/game-api/types/global-a-b/atmmachine) | class | `NetworkEntityBehaviour` | 8 | [Trading](../game-systems/trading.md#atmmachine): A bank teller for one player at a time. |
+| [`AttackTest`](/game-api/types/global-a-b/attacktest) | class | `MonoBehaviour` | 0 |  |
+| [`AttackTypeMultiplier`](/game-api/types/global-a-b/attacktypemultiplier) | class |  | 2 |  |
+| [`AttributeCurveRange`](/game-api/types/global-a-b/attributecurverange) | class | `CurveRange<BiomeAttribute>` | 2 |  |
+| [`AttributeCurveValue`](/game-api/types/global-a-b/attributecurvevalue) | class | `CurveValue<BiomeAttribute>` | 2 |  |
+| [`AttributeDoubleValue`](/game-api/types/global-a-b/attributedoublevalue) | class | `DoubleValue<BiomeAttribute>` | 2 |  |
+| [`AttributeEvaluation`](/game-api/types/global-a-b/attributeevaluation) | static class |  | 1 |  |
+| [`AttributeSet`](/game-api/types/global-a-b/attributeset) | class | `IEnumerable<KeyValuePair<BiomeAttribute, float>>`, `IEnumerable` | 7 | [Caves](../world/caves.md) |
+| [`AttributeSingleValue`](/game-api/types/global-a-b/attributesinglevalue) | class | `SingleValue<BiomeAttribute>` | 0 |  |
+| [`AttributeUsage`](/game-api/types/global-a-b/attributeusage) | class |  | 1 |  |
+| [`AudioControl`](/game-api/types/global-a-b/audiocontrol) | class | `SimpleAudioControl` | 8 |  |
+| [`AudioEnvironmentBlendSettings`](/game-api/types/global-a-b/audioenvironmentblendsettings) | class | `GlobalSettings<AudioEnvironmentBlendSettings>` | 1 |  |
+| [`AudioEnvironmentBlendSettings.Create`](/game-api/types/global-a-b/audioenvironmentblendsettings-create) | class | `AltaMenuItemBase.Assets.Create.Audio.ScriptableObject<AudioEnvironmentBlendSettings>` | 0 |  |
+| [`AudioManager`](/game-api/types/global-a-b/audiomanager) | class | `SingletonBehaviour<AudioManager>` | 12 |  |
+| [`AudioMuteEvent`](/game-api/types/global-a-b/audiomuteevent) | delegate |  | 0 |  |
+| [`AutoCamDeviceController`](/game-api/types/global-a-b/autocamdevicecontroller) | class | `XrDeviceSdkController` | 4 |  |
+| [`AutoCamDeviceLifecycle`](/game-api/types/global-a-b/autocamdevicelifecycle) | class | `DeviceLifecycle` | 3 |  |
+| [`AutoCamLocomotionController`](/game-api/types/global-a-b/autocamlocomotioncontroller) | class | `LocomotionController` | 0 |  |
+| [`AutoCamPlayer`](/game-api/types/global-a-b/autocamplayer) | class | `PlayerController` | 10 |  |
+| [`AutoContainerLid`](/game-api/types/global-a-b/autocontainerlid) | class | `NetworkEntityBehaviour` | 1 |  |
+| [`AutoFindAttribute`](/game-api/types/global-a-b/autofindattribute) | class | `PropertyAttribute` | 2 |  |
+| [`AvailablePointBar`](/game-api/types/global-a-b/availablepointbar) | class | `MonoBehaviour` | 3 |  |
+| [`AvailablePointCrystal`](/game-api/types/global-a-b/availablepointcrystal) | class | `PooledObject` | 1 |  |
+| [`AvailablePointVisualizerManager`](/game-api/types/global-a-b/availablepointvisualizermanager) | abstract class | `MonoBehaviour` | 4 |  |
+| [`AvoidBakingMarker`](/game-api/types/global-a-b/avoidbakingmarker) | class | `MonoBehaviour` | 0 |  |
 
 ## B
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `BakeableTextureDecimator` | class | `ScriptableObject` | 0 |  |
-| `BanRole` | enum |  | 2 |  |
-| `BaseImpactChannelProgressionFilter` | abstract class | `ScriptableObject` | 2 |  |
-| `BasemapDistanceSet` | class | `MonoBehaviour` | 1 |  |
-| `BaseOpenXRInputController` | class | `OpenXRInputController` | 1 |  |
-| `BaseReplacer` | abstract class |  | 2 |  |
-| `BaseStatisticsMeasurer` | class |  | 6 |  |
-| `BasicDecay` | class | `NetworkEntityBehaviour`, `ISavable<BasicDecayData>`, `ISavableSave<BasicDecayData>`, +2 more | 2 |  |
-| `BasicDecayData` | class | `NewSaveData<BasicDecay, BasicDecayData>` | 2 |  |
-| `BasicDecayData1` | class | `OldSaveData` | 2 |  |
-| `BasicDecayData2` | class | `OldSaveData` | 2 |  |
-| `BasicDigable` | class | `NetworkEntityBehaviour`, `IDigable` | 3 |  |
-| `BasicDynamicPath` | class | `NetworkEntityBehaviour`, `IDynamicPath`, `ISavable<BasicDynamicPathSaveData>`, +2 more | 3 |  |
-| `BasicDynamicPathSaveData` | class | `NewSaveData<BasicDynamicPath, BasicDynamicPathSaveData>` | 3 |  |
-| `BasicPooledObjectPool` | abstract class |  | 3 |  |
-| `BasicSaveData<TData>` | abstract class | `SaveData`, `ISavable<TData>`, `ISavableSave<TData>`, +1 more | 3 |  |
-| `BasicTouchScreenButton` | abstract class | `MonoBehaviour`, `ITouchScreenButton` | 12 |  |
-| `Beam` | class |  | 9 |  |
-| `Bellows` | class | `MonoBehaviour` | 4 | [Smelting and forging](../game-systems/smelting-and-forging.md#bellows): Part of a smelter. Updates while its handle is held and until it settles. |
-| `Belt` | class | `Turnable` | 4 | [Items, interaction and damage](../items/overview.md): A drive belt between pulleys in mechanisms. Not the player's belt. |
-| `BeltVisual` | class | `MonoBehaviour` | 2 |  |
-| `BezierControlPointMode` | enum |  | 3 |  |
-| `BillboardParticle` | class | `MonoBehaviour` | 0 |  |
-| `BillboardToPlayer` | class | `MonoBehaviour` | 1 |  |
-| `BiomeAttribute` | class | `GeneralValue` | 4 | [Caves](../world/caves.md) |
-| `BiomeAttribute.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<BiomeAttribute>` | 0 |  |
-| `BiomePreset` | class | `HashedGeneralValue<BiomePreset>` | 1 |  |
-| `BiomePreset.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<BiomePreset>` | 0 |  |
-| `BiomeSphere` | class |  | 9 |  |
-| `BiomeSphereComponent` | class | `MonoBehaviour` | 1 |  |
-| `BiomeSphereGenerator` | class | `NodeMapModifier` | 3 |  |
-| `BiomeSphereManager` | class |  | 6 |  |
-| `BiomeSwitchFilter` | class | `SpawnModifierPointNormal` | 2 |  |
-| `BiomeSwitchFilter.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<BiomeSwitchFilter>` | 0 |  |
-| `BlockingCharge` | class | `ProfessionSkill<BlockingCharge>`, `IStrikeSuccessionModifier` | 1 |  |
-| `BlockingCharge.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<BlockingCharge>` | 0 |  |
-| `BlockLevel` | enum |  | 4 |  |
-| `BobbingController` | class | `MonoBehaviour` | 4 |  |
-| `Bone` | class | `MonoBehaviour` | 0 |  |
-| `BoneIdentifier` | class | `ScriptableObject` | 0 |  |
-| `BooleanInput` | class | `InputSource` | 3 |  |
-| `BoolEvent` | class | `AltaEvent<bool, BoolUnityEvent>` | 0 |  |
-| `BoolUnityEvent` | class | `UnityEvent<bool>` | 0 |  |
-| `BoughtSkillCrystal` | class | `MonoBehaviour` | 4 |  |
-| `BoughtSkillOrbReplacer` | class | `ProgressionSlotContainer` | 6 |  |
-| `BoughtSkillVisualizer` | class | `SkillShrineVisualizer`, `IBuildRendererPostBake`, `IBuildBakeable` | 7 |  |
-| `BouncingValue` | class | `MonoBehaviour` | 0 |  |
-| `BoundExtensions` | static class |  | 1 |  |
-| `BoundsContainer` | class |  | 3 |  |
-| `BoundsDisplay` | class | `MonoBehaviour` | 0 |  |
-| `Bow` | class | `NetworkEntityBehaviour` | 4 |  |
-| `BowString` | class | `NetworkEntityBehaviour` | 8 |  |
-| `BowStringPullbackInputMethod` | class | `ISkillInputMethod` | 2 |  |
-| `BowStringPullbackStructure` | class | `SkillInputStructure` | 5 |  |
-| `BowStringPullbackStructure.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input.ScriptableObject<BowStringPullbackStructure>` | 0 |  |
-| `BreakOnImpact` | class | `NetworkEntityBehaviour`, `IToolHitDependant` | 3 |  |
-| `BreakOnImpact.TransformProxyEvent` | class | `AltaEvent<TransformProxy, TransformProxyHandler>` | 0 |  |
-| `BreakOnImpact.TransformProxyHandler` | class | `UnityEvent<TransformProxy>` | 0 |  |
-| `BubbleInspector` | class |  | 3 |  |
-| `BubbleInspectorFieldAttribute` | class | `Attribute` | 2 |  |
-| `BubbleInspectorMethodAttribute` | class | `Attribute` | 0 |  |
-| `BudgetedUpdateModule` | class | `UpdateModule` | 5 | [Update modules](../console-and-utilities/update-modules.md#budgetedupdatemodule): Each frame it calls methods until `MsAllowance` milliseconds have passed, then stops and carries on from there next frame. |
-| `BudgetedUpdateModuleProfiler` | class |  | 2 |  |
-| `BudgetedUpdateModuleProfiler.BudgetedData` | class |  | 7 |  |
-| `BudgetedUpdateModuleProfilerComponent` | class | `MonoBehaviour` | 0 |  |
-| `BuildingAnimation` | class | `MonoBehaviour`, `IIgnoreForStaticFlatten`, `IDontSplit` | 10 |  |
-| `BuildingAnimationEvent` | class | `AltaEvent<BuildingAnimation, BuildingAnimationUnityEvent>` | 0 |  |
-| `BuildingAnimationUnityEvent` | class | `UnityEvent<BuildingAnimation>` | 0 |  |
-| `BuildingAnimationWrapper` | class | `MonoBehaviour`, `IChangeWithChunking` | 5 |  |
-| `BuildPipelinePathData` | class | `ScriptableObject` | 3 |  |
-| `BuildupChild` | class | `NetworkEntityBehaviour` | 7 |  |
-| `BuildupPickup` | class | `NetworkEntityBehaviour`, `ISavable<BuildupPickupSaveData>`, `ISavableSave<BuildupPickupSaveData>`, +1 more | 4 |  |
-| `BuildupPickupEvent` | class | `AltaEvent<BuildupPickup, BuildupPickupHandler>` | 0 |  |
-| `BuildupPickupHandler` | class | `UnityEvent<BuildupPickup>` | 0 |  |
-| `BuildupPickupSaveData` | internal class | `NewSaveData<BuildupPickup, BuildupPickupSaveData>` | 1 |  |
-| `BuriedItemTag` | class | `ItemComponent` | 3 |  |
-| `ButtonCounter` | class | `NetworkEntityBehaviour`, `ISavable<ButtonCounterSaveData>`, `ISavableSave<ButtonCounterSaveData>`, +1 more | 15 |  |
-| `ButtonCounter.AmountChangedHandler` | delegate |  | 0 |  |
-| `ButtonCounter.CounterMode` | enum |  | 2 |  |
-| `ButtonCounter.CountSyncMode` | enum |  | 2 |  |
-| `ButtonCounterSaveData` | class | `NewSaveData<ButtonCounter, ButtonCounterSaveData>` | 1 |  |
-| `ButtonSoundSettings` | class | `ButtonSettings` | 2 |  |
+| [`BakeableTextureDecimator`](/game-api/types/global-a-b/bakeabletexturedecimator) | class | `ScriptableObject` | 0 |  |
+| [`BanRole`](/game-api/types/global-a-b/banrole) | enum |  | 2 |  |
+| [`BaseImpactChannelProgressionFilter`](/game-api/types/global-a-b/baseimpactchannelprogressionfilter) | abstract class | `ScriptableObject` | 2 |  |
+| [`BasemapDistanceSet`](/game-api/types/global-a-b/basemapdistanceset) | class | `MonoBehaviour` | 1 |  |
+| [`BaseOpenXRInputController`](/game-api/types/global-a-b/baseopenxrinputcontroller) | class | `OpenXRInputController` | 1 |  |
+| [`BaseReplacer`](/game-api/types/global-a-b/basereplacer) | abstract class |  | 2 |  |
+| [`BaseStatisticsMeasurer`](/game-api/types/global-a-b/basestatisticsmeasurer) | class |  | 6 |  |
+| [`BasicDecay`](/game-api/types/global-a-b/basicdecay) | class | `NetworkEntityBehaviour`, `ISavable<BasicDecayData>`, `ISavableSave<BasicDecayData>`, +2 more | 2 |  |
+| [`BasicDecayData`](/game-api/types/global-a-b/basicdecaydata) | class | `NewSaveData<BasicDecay, BasicDecayData>` | 2 |  |
+| [`BasicDecayData1`](/game-api/types/global-a-b/basicdecaydata1) | class | `OldSaveData` | 2 |  |
+| [`BasicDecayData2`](/game-api/types/global-a-b/basicdecaydata2) | class | `OldSaveData` | 2 |  |
+| [`BasicDigable`](/game-api/types/global-a-b/basicdigable) | class | `NetworkEntityBehaviour`, `IDigable` | 3 |  |
+| [`BasicDynamicPath`](/game-api/types/global-a-b/basicdynamicpath) | class | `NetworkEntityBehaviour`, `IDynamicPath`, `ISavable<BasicDynamicPathSaveData>`, +2 more | 3 |  |
+| [`BasicDynamicPathSaveData`](/game-api/types/global-a-b/basicdynamicpathsavedata) | class | `NewSaveData<BasicDynamicPath, BasicDynamicPathSaveData>` | 3 |  |
+| [`BasicPooledObjectPool`](/game-api/types/global-a-b/basicpooledobjectpool) | abstract class |  | 3 |  |
+| [`BasicSaveData<TData>`](/game-api/types/global-a-b/basicsavedata-tdata) | abstract class | `SaveData`, `ISavable<TData>`, `ISavableSave<TData>`, +1 more | 3 |  |
+| [`BasicTouchScreenButton`](/game-api/types/global-a-b/basictouchscreenbutton) | abstract class | `MonoBehaviour`, `ITouchScreenButton` | 12 |  |
+| [`Beam`](/game-api/types/global-a-b/beam) | class |  | 9 |  |
+| [`Bellows`](/game-api/types/global-a-b/bellows) | class | `MonoBehaviour` | 4 | [Smelting and forging](../game-systems/smelting-and-forging.md#bellows): Part of a smelter. Updates while its handle is held and until it settles. |
+| [`Belt`](/game-api/types/global-a-b/belt) | class | `Turnable` | 4 | [Items, interaction and damage](../items/overview.md): A drive belt between pulleys in mechanisms. Not the player's belt. |
+| [`BeltVisual`](/game-api/types/global-a-b/beltvisual) | class | `MonoBehaviour` | 2 |  |
+| [`BezierControlPointMode`](/game-api/types/global-a-b/beziercontrolpointmode) | enum |  | 3 |  |
+| [`BillboardParticle`](/game-api/types/global-a-b/billboardparticle) | class | `MonoBehaviour` | 0 |  |
+| [`BillboardToPlayer`](/game-api/types/global-a-b/billboardtoplayer) | class | `MonoBehaviour` | 1 |  |
+| [`BiomeAttribute`](/game-api/types/global-a-b/biomeattribute) | class | `GeneralValue` | 4 | [Caves](../world/caves.md) |
+| [`BiomeAttribute.Create`](/game-api/types/global-a-b/biomeattribute-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<BiomeAttribute>` | 0 |  |
+| [`BiomePreset`](/game-api/types/global-a-b/biomepreset) | class | `HashedGeneralValue<BiomePreset>` | 1 |  |
+| [`BiomePreset.Create`](/game-api/types/global-a-b/biomepreset-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<BiomePreset>` | 0 |  |
+| [`BiomeSphere`](/game-api/types/global-a-b/biomesphere) | class |  | 9 |  |
+| [`BiomeSphereComponent`](/game-api/types/global-a-b/biomespherecomponent) | class | `MonoBehaviour` | 1 |  |
+| [`BiomeSphereGenerator`](/game-api/types/global-a-b/biomespheregenerator) | class | `NodeMapModifier` | 3 |  |
+| [`BiomeSphereManager`](/game-api/types/global-a-b/biomespheremanager) | class |  | 6 |  |
+| [`BiomeSwitchFilter`](/game-api/types/global-a-b/biomeswitchfilter) | class | `SpawnModifierPointNormal` | 2 |  |
+| [`BiomeSwitchFilter.Create`](/game-api/types/global-a-b/biomeswitchfilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<BiomeSwitchFilter>` | 0 |  |
+| [`BlockingCharge`](/game-api/types/global-a-b/blockingcharge) | class | `ProfessionSkill<BlockingCharge>`, `IStrikeSuccessionModifier` | 1 |  |
+| [`BlockingCharge.Create`](/game-api/types/global-a-b/blockingcharge-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<BlockingCharge>` | 0 |  |
+| [`BlockLevel`](/game-api/types/global-a-b/blocklevel) | enum |  | 4 |  |
+| [`BobbingController`](/game-api/types/global-a-b/bobbingcontroller) | class | `MonoBehaviour` | 4 |  |
+| [`Bone`](/game-api/types/global-a-b/bone) | class | `MonoBehaviour` | 0 |  |
+| [`BoneIdentifier`](/game-api/types/global-a-b/boneidentifier) | class | `ScriptableObject` | 0 |  |
+| [`BooleanInput`](/game-api/types/global-a-b/booleaninput) | class | `InputSource` | 3 |  |
+| [`BoolEvent`](/game-api/types/global-a-b/boolevent) | class | `AltaEvent<bool, BoolUnityEvent>` | 0 |  |
+| [`BoolUnityEvent`](/game-api/types/global-a-b/boolunityevent) | class | `UnityEvent<bool>` | 0 |  |
+| [`BoughtSkillCrystal`](/game-api/types/global-a-b/boughtskillcrystal) | class | `MonoBehaviour` | 4 |  |
+| [`BoughtSkillOrbReplacer`](/game-api/types/global-a-b/boughtskillorbreplacer) | class | `ProgressionSlotContainer` | 6 |  |
+| [`BoughtSkillVisualizer`](/game-api/types/global-a-b/boughtskillvisualizer) | class | `SkillShrineVisualizer`, `IBuildRendererPostBake`, `IBuildBakeable` | 7 |  |
+| [`BouncingValue`](/game-api/types/global-a-b/bouncingvalue) | class | `MonoBehaviour` | 0 |  |
+| [`BoundExtensions`](/game-api/types/global-a-b/boundextensions) | static class |  | 1 |  |
+| [`BoundsContainer`](/game-api/types/global-a-b/boundscontainer) | class |  | 3 |  |
+| [`BoundsDisplay`](/game-api/types/global-a-b/boundsdisplay) | class | `MonoBehaviour` | 0 |  |
+| [`Bow`](/game-api/types/global-a-b/bow) | class | `NetworkEntityBehaviour` | 4 |  |
+| [`BowString`](/game-api/types/global-a-b/bowstring) | class | `NetworkEntityBehaviour` | 8 |  |
+| [`BowStringPullbackInputMethod`](/game-api/types/global-a-b/bowstringpullbackinputmethod) | class | `ISkillInputMethod` | 2 |  |
+| [`BowStringPullbackStructure`](/game-api/types/global-a-b/bowstringpullbackstructure) | class | `SkillInputStructure` | 5 |  |
+| [`BowStringPullbackStructure.Create`](/game-api/types/global-a-b/bowstringpullbackstructure-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input.ScriptableObject<BowStringPullbackStructure>` | 0 |  |
+| [`BreakOnImpact`](/game-api/types/global-a-b/breakonimpact) | class | `NetworkEntityBehaviour`, `IToolHitDependant` | 3 |  |
+| [`BreakOnImpact.TransformProxyEvent`](/game-api/types/global-a-b/breakonimpact-transformproxyevent) | class | `AltaEvent<TransformProxy, TransformProxyHandler>` | 0 |  |
+| [`BreakOnImpact.TransformProxyHandler`](/game-api/types/global-a-b/breakonimpact-transformproxyhandler) | class | `UnityEvent<TransformProxy>` | 0 |  |
+| [`BubbleInspector`](/game-api/types/global-a-b/bubbleinspector) | class |  | 3 |  |
+| [`BubbleInspectorFieldAttribute`](/game-api/types/global-a-b/bubbleinspectorfieldattribute) | class | `Attribute` | 2 |  |
+| [`BubbleInspectorMethodAttribute`](/game-api/types/global-a-b/bubbleinspectormethodattribute) | class | `Attribute` | 0 |  |
+| [`BudgetedUpdateModule`](/game-api/types/global-a-b/budgetedupdatemodule) | class | `UpdateModule` | 5 | [Update modules](../console-and-utilities/update-modules.md#budgetedupdatemodule): Each frame it calls methods until `MsAllowance` milliseconds have passed, then stops and carries on from there next frame. |
+| [`BudgetedUpdateModuleProfiler`](/game-api/types/global-a-b/budgetedupdatemoduleprofiler) | class |  | 2 |  |
+| [`BudgetedUpdateModuleProfiler.BudgetedData`](/game-api/types/global-a-b/budgetedupdatemoduleprofiler-budgeteddata) | class |  | 7 |  |
+| [`BudgetedUpdateModuleProfilerComponent`](/game-api/types/global-a-b/budgetedupdatemoduleprofilercomponent) | class | `MonoBehaviour` | 0 |  |
+| [`BuildingAnimation`](/game-api/types/global-a-b/buildinganimation) | class | `MonoBehaviour`, `IIgnoreForStaticFlatten`, `IDontSplit` | 10 |  |
+| [`BuildingAnimationEvent`](/game-api/types/global-a-b/buildinganimationevent) | class | `AltaEvent<BuildingAnimation, BuildingAnimationUnityEvent>` | 0 |  |
+| [`BuildingAnimationUnityEvent`](/game-api/types/global-a-b/buildinganimationunityevent) | class | `UnityEvent<BuildingAnimation>` | 0 |  |
+| [`BuildingAnimationWrapper`](/game-api/types/global-a-b/buildinganimationwrapper) | class | `MonoBehaviour`, `IChangeWithChunking` | 5 |  |
+| [`BuildPipelinePathData`](/game-api/types/global-a-b/buildpipelinepathdata) | class | `ScriptableObject` | 3 |  |
+| [`BuildupChild`](/game-api/types/global-a-b/buildupchild) | class | `NetworkEntityBehaviour` | 7 |  |
+| [`BuildupPickup`](/game-api/types/global-a-b/builduppickup) | class | `NetworkEntityBehaviour`, `ISavable<BuildupPickupSaveData>`, `ISavableSave<BuildupPickupSaveData>`, +1 more | 4 |  |
+| [`BuildupPickupEvent`](/game-api/types/global-a-b/builduppickupevent) | class | `AltaEvent<BuildupPickup, BuildupPickupHandler>` | 0 |  |
+| [`BuildupPickupHandler`](/game-api/types/global-a-b/builduppickuphandler) | class | `UnityEvent<BuildupPickup>` | 0 |  |
+| [`BuildupPickupSaveData`](/game-api/types/global-a-b/builduppickupsavedata) | internal class | `NewSaveData<BuildupPickup, BuildupPickupSaveData>` | 1 |  |
+| [`BuriedItemTag`](/game-api/types/global-a-b/burieditemtag) | class | `ItemComponent` | 3 |  |
+| [`ButtonCounter`](/game-api/types/global-a-b/buttoncounter) | class | `NetworkEntityBehaviour`, `ISavable<ButtonCounterSaveData>`, `ISavableSave<ButtonCounterSaveData>`, +1 more | 15 |  |
+| [`ButtonCounter.AmountChangedHandler`](/game-api/types/global-a-b/buttoncounter-amountchangedhandler) | delegate |  | 0 |  |
+| [`ButtonCounter.CounterMode`](/game-api/types/global-a-b/buttoncounter-countermode) | enum |  | 2 |  |
+| [`ButtonCounter.CountSyncMode`](/game-api/types/global-a-b/buttoncounter-countsyncmode) | enum |  | 2 |  |
+| [`ButtonCounterSaveData`](/game-api/types/global-a-b/buttoncountersavedata) | class | `NewSaveData<ButtonCounter, ButtonCounterSaveData>` | 1 |  |
+| [`ButtonSoundSettings`](/game-api/types/global-a-b/buttonsoundsettings) | class | `ButtonSettings` | 2 |  |

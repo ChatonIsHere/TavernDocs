@@ -1,0 +1,69 @@
+---
+title: "SettingsQuickAccessMenu"
+description: "class SettingsQuickAccessMenu in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# SettingsQuickAccessMenu
+
+A **class** in `Root.Township`, `Alta.QuickAccessActions`.
+
+- **Listed in** [Players and characters](/game-api/types/alta-player)
+- **Inherits or implements** [`QuickAccessMenuAction`](/game-api/types/alta-player/quickaccessmenuaction)
+- **Attributes** `CreateAssetMenu`
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SettingsQuickAccessMenu()"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activeboard" /><code>{"private "}<Link to="/game-api/types/alta-player/iquickaccesssettingsboard">{"IQuickAccessSettingsBoard"}</Link>{" activeBoard"}</code> |  |
+| <Link id="m-boarddefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" boardDefinition"}</code> |  |
+| <Link id="m-boarddistancefromhead" /><code>{"private float boardDistanceFromHead"}</code> |  |
+| <Link id="m-boardheight" /><code>{"private float boardHeight"}</code> |  |
+| <Link id="m-haspermission" /><code>{"private bool hasPermission"}</code> |  |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |  |
+| <Link id="m-isignored" /><code>{"private bool isIgnored"}</code> |  |
+| <Link id="m-isserversettings" /><code>{"private bool isServerSettings"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-settingsdefinitions" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{"[] settingsDefinitions"}</code> |  |
+| <Link id="m-settingstodisplay" /><code>{"private "}<Link to="/game-api/types/alta-utilities/settingsfieldaccess">{"SettingsFieldAccess"}</Link>{"[] settingsToDisplay"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isactive-2" /><code>{"override bool IsActive { get; }"}</code> |  |
+| <Link id="m-isignored-2" /><code>{"override bool IsIgnored { get; }"}</code> |  |
+| <Link id="m-isserversettings-2" /><code>{"bool IsServerSettings { get; }"}</code> |  |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> |  |
+| <Link id="m-serversettings" /><code><Link to="/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" "}<Link to="/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" { get; private set; }"}</code> |  |
+| <Link id="m-settingsdefinitions-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{"[] SettingsDefinitions { get; }"}</code> |  |
+| <Link id="m-settingstodisplay-2" /><code><Link to="/game-api/types/alta-utilities/settingsfieldaccess">{"SettingsFieldAccess"}</Link>{"[] SettingsToDisplay { get; }"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initializeforplayer" /><code>{"override async void InitializeForPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, bool isDev)"}</code> |  |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |  |
+| <Link id="m-activate" /><code>{"private void Activate()"}</code> |  |
+| <Link id="m-deregisterboard" /><code>{"private void DeregisterBoard()"}</code> |  |
+| <Link id="m-playerdied" /><code>{"private void PlayerDied("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" obj)"}</code> |  |
+| <Link id="m-positionboardforplayer" /><code>{"private void PositionBoardForPlayer(Transform boardTransform)"}</code> |  |
+| <Link id="m-validateaccessandgetserversettings" /><code>{"private async void ValidateAccessAndGetServerSettings()"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `SettingsQuickAccessMenu`:
+
+[`DevToolsBoard.settings`](/game-api/types/alta-player/devtoolsboard#m-settings), [`DevToolsBoard.Setup`](/game-api/types/alta-player/devtoolsboard#m-setup), [`IQuickAccessSettingsBoard.Setup`](/game-api/types/alta-player/iquickaccesssettingsboard#m-setup), [`QuickAccessSettingsBoard.settings`](/game-api/types/alta-player/quickaccesssettingsboard#m-settings), [`QuickAccessSettingsBoard.Setup`](/game-api/types/alta-player/quickaccesssettingsboard#m-setup).

@@ -1,0 +1,28 @@
+---
+title: "InventoryType"
+description: "enum InventoryType in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# InventoryType
+
+An **enum** in `Root.Township`, `ATT.PlayerStates`.
+
+- **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
+
+## Values
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-player" /><code>{"Player = 1"}</code> |  |
+| <Link id="m-world" /><code>{"World = 0"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `InventoryType`:
+
+[`PickupActionData.InventoryType`](/game-api/types/alta-items/pickupactiondata#m-inventorytype), [`InventoryChangeData.InventoryType`](/game-api/types/game-other-namespaces/inventorychangedata#m-inventorytype).

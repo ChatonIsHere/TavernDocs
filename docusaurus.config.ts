@@ -1,3 +1,4 @@
+import apiLinks from './src/remark/api-links.mjs';
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -42,6 +43,18 @@ const config: Config = {
                 docs: {
                     routeBasePath: '/',
                     sidebarPath: './sidebars.ts',
+                    remarkPlugins: [apiLinks],
+                    // The type reference pages (game-api/types/<group>/<type>) stay out of the sidebar; the
+                    // browser tables and the links in the guides lead to them.
+                    async sidebarItemsGenerator({defaultSidebarItemsGenerator, ...args}) {
+                        const isTypePage = (id: string) => /^(game-api|tavernlib-api)\/types\/[^/]+\//.test(id);
+                        const prune = (items: any[]): any[] =>
+                            items
+                                .filter((i) => !(i.type === 'doc' && isTypePage(i.id)))
+                                .map((i) => (i.type === 'category' ? {...i, items: prune(i.items)} : i))
+                                .filter((i) => !(i.type === 'category' && i.items.length === 0 && !i.link));
+                        return prune(await defaultSidebarItemsGenerator(args));
+                    },
                     editUrl: 'https://github.com/ModdingTavern/TavernDocs/edit/main/',
                 },
                 blog: false,

@@ -1,0 +1,28 @@
+---
+title: "LoadingStatus"
+description: "enum LoadingStatus in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# LoadingStatus
+
+An **enum** in `Root.Township`, `ATT.MicroTutorial`.
+
+- **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
+
+## Values
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-completed" /><code>{"Completed = 1"}</code> |  |
+| <Link id="m-inprogress" /><code>{"InProgress = 0"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `LoadingStatus`:
+
+[`MicroTutorial.clientLoadStatus`](/game-api/types/game-other-namespaces/microtutorial#m-clientloadstatus).

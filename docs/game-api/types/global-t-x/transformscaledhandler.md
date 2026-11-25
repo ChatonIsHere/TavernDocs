@@ -1,0 +1,23 @@
+---
+title: "TransformScaledHandler"
+description: "class TransformScaledHandler in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# TransformScaledHandler
+
+A **class** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
+- **Inherits or implements** `UnityEvent<Transform, float>`
+- **Derived types** [`TransformScaledEvent`](/game-api/types/global-t-x/transformscaledevent)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TransformScaledHandler()"}</code> |  |

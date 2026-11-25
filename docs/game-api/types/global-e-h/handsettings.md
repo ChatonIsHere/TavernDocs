@@ -1,0 +1,50 @@
+---
+title: "HandSettings"
+description: "class HandSettings in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# HandSettings
+
+A **class** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
+- **Inherits or implements** `ScriptableObject`
+- **Derived types** [`HandSettings.Create`](/game-api/types/global-e-h/handsettings-create)
+- **Nested types** [`Create`](/game-api/types/global-e-h/handsettings-create)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandSettings()"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-armlength" /><code>{"private float armLength"}</code> |  |
+| <Link id="m-isalwaysrenderingpickupatikhand" /><code>{"private bool isAlwaysRenderingPickupAtIKHand"}</code> |  |
+| <Link id="m-isdebugging" /><code>{"private bool isDebugging"}</code> |  |
+| <Link id="m-isfixingikhandtopickups" /><code>{"private bool isFixingIKHandToPickups"}</code> |  |
+| <Link id="m-ismovingcenterofmasstogrippoint" /><code>{"private bool isMovingCenterOfMassToGripPoint"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-armlength-2" /><code>{"float ArmLength { get; }"}</code> |  |
+| <Link id="m-isalwaysrenderingpickupatikhand-2" /><code>{"bool IsAlwaysRenderingPickupAtIKHand { get; }"}</code> |  |
+| <Link id="m-isdebugging-2" /><code>{"bool IsDebugging { get; }"}</code> |  |
+| <Link id="m-isfixingikhandtopickups-2" /><code>{"bool IsFixingIKHandToPickups { get; }"}</code> |  |
+| <Link id="m-ismovingcenterofmasstogrippoint-2" /><code>{"bool IsMovingCenterOfMassToGripPoint { get; }"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `HandSettings`:
+
+[`Hand.Settings`](/game-api/types/alta-player/hand#m-settings), [`PlayerControllerSettings.controllerSettings`](/game-api/types/alta-player/playercontrollersettings#m-controllersettings), [`PlayerControllerSettings.ControllerSettings`](/game-api/types/alta-player/playercontrollersettings#m-controllersettings-2), [`PlayerControllerSettings.handSettings`](/game-api/types/alta-player/playercontrollersettings#m-handsettings), [`PlayerControllerSettings.HandSettings`](/game-api/types/alta-player/playercontrollersettings#m-handsettings-2).

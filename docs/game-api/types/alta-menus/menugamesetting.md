@@ -1,0 +1,35 @@
+---
+title: "MenuGameSetting"
+description: "abstract class MenuGameSetting in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# MenuGameSetting
+
+An **abstract class** in `Root.Township`, `Alta.Menu`.
+
+- **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
+- **Inherits or implements** `MonoBehaviour`
+- **Derived types** [`MenuGameSetting<T>`](/game-api/types/alta-menus/menugamesetting-t), [`ServerCommandAction`](/game-api/types/alta-menus/servercommandaction), [`ServerMultiCommandAction`](/game-api/types/alta-menus/servermulticommandaction)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected MenuGameSetting()"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setsettings" /><code>{"abstract void SetSettings("}<Link to="/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" newSettingToDisplay)"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `MenuGameSetting`:
+
+[`PooledMenuSettings.menuGameSetting`](/game-api/types/alta-player/pooledmenusettings#m-menugamesetting).

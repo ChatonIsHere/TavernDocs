@@ -229,3 +229,14 @@ html.docs-wrapper main .container {
         padding-right: 2rem;
     }
 }
+
+/* A code span whose type names link to the API reference (src/remark/api-links.mjs). */
+.api-sig {
+    font-family: var(--ifm-font-family-monospace);
+    font-size: var(--ifm-code-font-size);
+    background: var(--ifm-code-background);
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--ifm-code-border-radius);
+    padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
+    vertical-align: middle;
+}

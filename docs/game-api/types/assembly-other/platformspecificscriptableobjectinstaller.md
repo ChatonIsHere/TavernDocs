@@ -1,0 +1,35 @@
+---
+title: "PlatformSpecificScriptableObjectInstaller"
+description: "class PlatformSpecificScriptableObjectInstaller in Alta.LifetimeScopes."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# PlatformSpecificScriptableObjectInstaller
+
+A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
+
+- **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
+- **Inherits or implements** `ScriptableObject`
+- **Derived types** [`WindowsGlobalSettingsInstaller`](/game-api/types/assembly-other/windowsglobalsettingsinstaller)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformSpecificScriptableObjectInstaller()"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-install" /><code>{"virtual void Install(IContainerBuilder builder)"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `PlatformSpecificScriptableObjectInstaller`:
+
+[`GlobalSettingsInstaller.PlatformConstrainedInstallers.installers`](/game-api/types/assembly-other/globalsettingsinstaller-platformconstrainedinstallers#m-installers).

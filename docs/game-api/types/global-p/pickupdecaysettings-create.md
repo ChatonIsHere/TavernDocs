@@ -1,0 +1,23 @@
+---
+title: "PickupDecaySettings.Create"
+description: "class PickupDecaySettings.Create in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# PickupDecaySettings.Create
+
+A **class** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: P](/game-api/types/global-p)
+- **Nested in** [`PickupDecaySettings`](/game-api/types/global-p/pickupdecaysettings)
+- **Inherits or implements** [`AltaMenuItemBase.Assets.Create.Township.Features.Decay.ScriptableObject<PickupDecaySettings>`](/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-decay-scriptableobject-t)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> |  |

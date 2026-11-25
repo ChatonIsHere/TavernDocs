@@ -1,0 +1,24 @@
+---
+title: "TriggerEnterEvents.ColliderUnityEvent"
+description: "class TriggerEnterEvents.ColliderUnityEvent in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# TriggerEnterEvents.ColliderUnityEvent
+
+A **class** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
+- **Nested in** [`TriggerEnterEvents`](/game-api/types/global-t-x/triggerenterevents)
+- **Inherits or implements** `UnityEvent<Collider>`
+- **Derived types** [`TriggerEnterEvents.ColliderEvent`](/game-api/types/global-t-x/triggerenterevents-colliderevent)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ColliderUnityEvent()"}</code> |  |

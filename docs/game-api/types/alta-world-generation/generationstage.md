@@ -1,0 +1,35 @@
+---
+title: "GenerationStage"
+description: "enum GenerationStage in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# GenerationStage
+
+An **enum** in `Root.Township`, `Alta.Caves`.
+
+- **Listed in** [World generation](/game-api/types/alta-world-generation)
+
+## Values
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-aesth" /><code>{"Aesth = 8000"}</code> |  |
+| <Link id="m-dynamic" /><code>{"Dynamic = 7000"}</code> |  |
+| <Link id="m-floorroof" /><code>{"FloorRoof = 1000"}</code> |  |
+| <Link id="m-marchingcubes" /><code>{"MarchingCubes = 4000"}</code> |  |
+| <Link id="m-mask" /><code>{"Mask = 5000"}</code> |  |
+| <Link id="m-none" /><code>{"None = 0"}</code> |  |
+| <Link id="m-static" /><code>{"Static = 6000"}</code> |  |
+| <Link id="m-stretch" /><code>{"Stretch = 2000"}</code> |  |
+| <Link id="m-voxels" /><code>{"Voxels = 3000"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `GenerationStage`:
+
+[`Plugin.generationStage`](/game-api/types/alta-world-generation/plugin#m-generationstage), [`Plugin.Stage`](/game-api/types/alta-world-generation/plugin#m-stage).

@@ -1,0 +1,62 @@
+---
+title: "RiverGeneration"
+description: "class RiverGeneration in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# RiverGeneration
+
+A **class** in `Root.Township`, `Alta.Forests`.
+
+- **Listed in** [World generation](/game-api/types/alta-world-generation)
+- **Inherits or implements** [`ICacheable`](/game-api/types/alta-world/icacheable)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RiverGeneration("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, float overgroundVolumeThreshold, float nodeWidthMultiplier, float maxVolume)"}</code> |  |
+| <Link id="m-ctor-2" /><code>{"RiverGeneration("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-maxvolume" /><code>{"private float maxVolume"}</code> |  |
+| <Link id="m-nodes" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{"> nodes"}</code> |  |
+| <Link id="m-nodewidthmultiplier" /><code>{"private float nodeWidthMultiplier"}</code> |  |
+| <Link id="m-overground" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{"> overground"}</code> |  |
+| <Link id="m-overgroundvolumethreshold" /><code>{"private float overgroundVolumeThreshold"}</code> |  |
+| <Link id="m-waterfalls" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/waterfall">{"Waterfall"}</Link>{"> waterfalls"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-forest" /><code><Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" Forest { get; }"}</code> |  |
+| <Link id="m-maxvolume-2" /><code>{"float MaxVolume { get; }"}</code> |  |
+| <Link id="m-nodes-2" /><code>{"IReadOnlyList<"}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{"> Nodes { get; }"}</code> |  |
+| <Link id="m-nodewidthmultiplier-2" /><code>{"float NodeWidthMultiplier { get; }"}</code> |  |
+| <Link id="m-overground-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{"> Overground { get; }"}</code> |  |
+| <Link id="m-overgroundvolumethreshold-2" /><code>{"float OvergroundVolumeThreshold { get; }"}</code> |  |
+| <Link id="m-waterfalls-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/waterfall">{"Waterfall"}</Link>{"> Waterfalls { get; }"}</code> |  |
+| <Link id="m-workingnodes" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{"> WorkingNodes { get; }"}</code> |  |
+| <Link id="m-workingoverground" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{"> WorkingOverground { get; }"}</code> |  |
+| <Link id="m-workingwaterfalls" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/waterfall">{"Waterfall"}</Link>{"> WorkingWaterfalls { get; }"}</code> |  |
+| <Link id="m-alta-static-icacheable-version" /><code>{"private uint Alta.Static.ICacheable.Version { get; }"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serializeasync" /><code>{"private Task Alta.Static.ICacheable.SerializeAsync(uint version, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `RiverGeneration`:
+
+[`IRiverVisual.Generate`](/game-api/types/alta-world-generation/irivervisual#m-generate), [`RiverGenerator.Calculate`](/game-api/types/alta-world-generation/rivergenerator#m-calculate), [`RiverGenerator.calculateTask`](/game-api/types/alta-world-generation/rivergenerator#m-calculatetask), [`RiverGenerator.GetGenerationAsync`](/game-api/types/alta-world-generation/rivergenerator#m-getgenerationasync), [`RiverGenerator.TryGetGenerated`](/game-api/types/alta-world-generation/rivergenerator#m-trygetgenerated), [`RiverIntersections.Evaluate`](/game-api/types/alta-world-generation/riverintersections#m-evaluate), [`RiverMeshTest.Generate`](/game-api/types/alta-world-generation/rivermeshtest#m-generate), [`RiverNode.CacheVolume`](/game-api/types/alta-world-generation/rivernode#m-cachevolume), [`WaterfallEffectGenerator.Generate`](/game-api/types/alta-world-generation/waterfalleffectgenerator#m-generate).

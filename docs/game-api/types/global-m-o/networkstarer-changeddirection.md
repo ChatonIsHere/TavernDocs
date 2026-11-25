@@ -1,0 +1,37 @@
+---
+title: "NetworkStarer.ChangedDirection"
+description: "delegate NetworkStarer.ChangedDirection in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# NetworkStarer.ChangedDirection
+
+A **delegate** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
+- **Nested in** [`NetworkStarer`](/game-api/types/global-m-o/networkstarer)
+- **Inherits or implements** `MulticastDelegate`
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChangedDirection(object object, IntPtr method)"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(int newDirection, AsyncCallback callback, object object)"}</code> |  |
+| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(IAsyncResult result)"}</code> |  |
+| <Link id="m-invoke" /><code>{"virtual void Invoke(int newDirection)"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `ChangedDirection`:
+
+[`NetworkStarer.ChangedTurningDirection`](/game-api/types/global-m-o/networkstarer#m-changedturningdirection).

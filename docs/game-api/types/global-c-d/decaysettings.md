@@ -1,0 +1,47 @@
+---
+title: "DecaySettings"
+description: "class DecaySettings in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# DecaySettings
+
+A **class** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
+- **Inherits or implements** `ScriptableObject`
+- **Derived types** [`DecaySettings.Create`](/game-api/types/global-c-d/decaysettings-create), [`PickupDecaySettings`](/game-api/types/global-p/pickupdecaysettings)
+- **Nested types** [`Create`](/game-api/types/global-c-d/decaysettings-create)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DecaySettings()"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |  |
+| <Link id="m-maximumdecaytime" /><code>{"private float maximumDecayTime"}</code> |  |
+| <Link id="m-minimumdecaytime" /><code>{"private float minimumDecayTime"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-decaytime" /><code>{"float DecayTime { get; }"}</code> |  |
+| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; }"}</code> |  |
+| <Link id="m-maximumdecaytime-2" /><code>{"float MaximumDecayTime { get; }"}</code> |  |
+| <Link id="m-minimumdecaytime-2" /><code>{"float MinimumDecayTime { get; }"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `DecaySettings`:
+
+[`BasicDecay.settings`](/game-api/types/global-a-b/basicdecay#m-settings), [`BasicDecay.Settings`](/game-api/types/global-a-b/basicdecay#m-settings-2).

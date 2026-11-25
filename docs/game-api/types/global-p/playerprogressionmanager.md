@@ -1,0 +1,105 @@
+---
+title: "PlayerProgressionManager"
+description: "One per Player (not per body), so it survives respawns. Get it with player.ProgressionManager (it's on IPlayer too)."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# PlayerProgressionManager
+
+A **class** in `Root.Township`, no namespace.
+
+One per `Player` (not per body), so it survives respawns. Get it with `player.ProgressionManager` (it's on `IPlayer` too).
+
+- **Listed in** [No namespace: P](/game-api/types/global-p)
+- **Inherits or implements** [`PlayerComponent`](/game-api/types/global-p/playercomponent)
+- **Nested types** [`PracticeTuple`](/game-api/types/global-p/playerprogressionmanager-practicetuple)
+- **Documented in** [Progression](/game-api/game-systems/progression#playerprogressionmanager)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerProgressionManager()"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-canbuymoreskills" /><code>{"private bool canBuyMoreSkills"}</code> |  |
+| <Link id="m-currentlyownedskillscount" /><code>{"private int currentlyOwnedSkillsCount"}</code> |  |
+| <Link id="m-experiencebooststat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" experienceBoostStat"}</code> |  |
+| <Link id="m-experiencepopup" /><code>{"private static "}<Link to="/game-api/types/global-t-x/togglebool">{"ToggleBool"}</Link>{" experiencePopup"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-sendingskill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" sendingSkill"}</code> |  |
+| <Link id="m-skilllevel" /><code>{"private Dictionary<uint, int> skillLevel"}</code> |  |
+| <Link id="m-skillmessage" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" skillMessage"}</code> |  |
+| <Link id="m-synclevelupeffect" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncLevelUpEffect"}</code> |  |
+| <Link id="m-syncpracticedfull" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPracticedFull"}</code> |  |
+| <Link id="m-syncslotpractice" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncclass-t">{"MethodSyncClass"}</Link>{"<"}<Link to="/game-api/types/global-p/playerprogressionmanager-practicetuple">{"PlayerProgressionManager.PracticeTuple"}</Link>{"> syncSlotPractice"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-pathexperiences" /><code>{"Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", "}<Link to="/game-api/types/global-p/pathexperience">{"PathExperience"}</Link>{"> PathExperiences { get; }"}</code> |  |
+| <Link id="m-practicingorb" /><code><Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" PracticingOrb { get; private set; }"}</code> |  |
+
+## Events
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onpracticingchanged" /><code>{"event "}<Link to="/game-api/types/global-s/skillorbdelegate">{"SkillOrbDelegate"}</Link>{" OnPracticingChanged"}</code> |  |
+| <Link id="m-onslotpracticed" /><code>{"event Action<bool> OnSlotPracticed"}</code> |  |
+| <Link id="m-updatedfreepoints" /><code>{"event Action<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{", "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{"> UpdatedFreePoints"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-endpractice" /><code>{"void EndPractice()"}</code> |  |
+| <Link id="m-experiencelog" /><code>{"IEnumerable<string> ExperienceLog() (iterator)"}</code> |  |
+| <Link id="m-gainexperience" /><code>{"static void GainExperience("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" targetPlayer, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, float experience)"}</code> |  |
+| <Link id="m-gainexperience-2" /><code>{"static bool GainExperience("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" targetPlayer, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, int experience)"}</code> |  |
+| <Link id="m-gainsharedexperience" /><code>{"static void GainSharedExperience("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" mainPlayer, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" supportPlayer, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, float experience)"}</code> |  |
+| <Link id="m-getfreepoints" /><code>{"int GetFreePoints("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
+| <Link id="m-getlevel" /><code>{"int GetLevel("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> |  |
+| <Link id="m-getlevel-2" /><code>{"uint GetLevel("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
+| <Link id="m-getpaths" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{"> GetPaths() (iterator)"}</code> |  |
+| <Link id="m-getpercentagetonextlevel" /><code>{"float GetPercentageToNextLevel("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
+| <Link id="m-getslots" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> GetSlots() (iterator)"}</code> |  |
+| <Link id="m-isslotavailable" /><code><Link to="/game-api/types/global-s/skillstatus">{"SkillStatus"}</Link>{" IsSlotAvailable("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> |  |
+| <Link id="m-isslotpracticed" /><code>{"bool IsSlotPracticed("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> |  |
+| <Link id="m-loadfrom" /><code>{"void LoadFrom("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> |  |
+| <Link id="m-lockslot" /><code>{"void LockSlot("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> |  |
+| <Link id="m-markslotpracticed" /><code>{"bool MarkSlotPracticed("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, uint slotHash)"}</code> |  |
+| <Link id="m-practiceslot" /><code>{"void PracticeSlot("}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" orb)"}</code> |  |
+| <Link id="m-saveto" /><code>{"void SaveTo("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> |  |
+| <Link id="m-sendmessage" /><code>{"void SendMessage("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill, params "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"[] except)"}</code> |  |
+| <Link id="m-sendmessagetoplayer" /><code>{"void SendMessageToPlayer("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| <Link id="m-skillunlocked" /><code>{"bool SkillUnlocked("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> |  |
+| <Link id="m-syncpracticedtoplayer" /><code>{"void SyncPracticedToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| <Link id="m-unlockslot" /><code>{"void UnlockSlot("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot, bool isConsumingPoints = true, bool isFromLoad = false)"}</code> |  |
+| <Link id="m-updatecounts" /><code>{"void UpdateCounts()"}</code> |  |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
+| <Link id="m-characterdied" /><code>{"private void CharacterDied("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingBlow)"}</code> |  |
+| <Link id="m-createpathexperience" /><code>{"private "}<Link to="/game-api/types/global-p/pathexperience">{"PathExperience"}</Link>{" CreatePathExperience("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
+| <Link id="m-initialize" /><code>{"private void Initialize("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
+| <Link id="m-networklevelupeffect" /><code>{"private void NetworkLevelUpEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isLevelCap)"}</code> |  |
+| <Link id="m-networkskillmessage" /><code>{"private void NetworkSkillMessage("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" connectionPlayer, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-onleveledup" /><code>{"private void OnLeveledUp(bool isLevelCap)"}</code> |  |
+| <Link id="m-onupdatedpoints" /><code>{"private void OnUpdatedPoints("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
+| <Link id="m-registerstat" /><code>{"private void RegisterStat("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter)"}</code> |  |
+| <Link id="m-saveserialize" /><code>{"private void SaveSerialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-serializeallpracticedslots" /><code>{"private void SerializeAllPracticedSlots("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-syncpracticedfull-2" /><code>{"private void SyncPracticedFull("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-syncslotpracticed" /><code>{"private void SyncSlotPracticed("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/playerprogressionmanager-practicetuple">{"PlayerProgressionManager.PracticeTuple"}</Link>{" arguments)"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `PlayerProgressionManager`:
+
+[`IPlayer.ProgressionManager`](/game-api/types/alta-networking/iplayer#m-progressionmanager), [`BoughtSkillOrbReplacer.Operate`](/game-api/types/global-a-b/boughtskillorbreplacer#m-operate), [`BoughtSkillOrbReplacer.UpdateDependencyLock`](/game-api/types/global-a-b/boughtskillorbreplacer#m-updatedependencylock), [`BoughtSkillVisualizer.manager`](/game-api/types/global-a-b/boughtskillvisualizer#m-manager), [`BoughtSkillVisualizer.PrepareOnServer`](/game-api/types/global-a-b/boughtskillvisualizer#m-prepareonserver), [`BoughtSkillVisualizer.Serialize`](/game-api/types/global-a-b/boughtskillvisualizer#m-serialize), [`BoughtSkillVisualizer.UpdateOrbsOnServer`](/game-api/types/global-a-b/boughtskillvisualizer#m-updateorbsonserver), [`ExperienceFillVisualizer.PrepareOnServer`](/game-api/types/global-e-h/experiencefillvisualizer#m-prepareonserver), [`ExperienceFillVisualizer.Serialize`](/game-api/types/global-e-h/experiencefillvisualizer#m-serialize), [`PathExperience.PathExperience`](/game-api/types/global-p/pathexperience#m-ctor), [`PathExperience.targetPlayer`](/game-api/types/global-p/pathexperience#m-targetplayer), [`PathModelDisplay.PrepareOnServer`](/game-api/types/global-p/pathmodeldisplay#m-prepareonserver), [`PathModelDisplay.Serialize`](/game-api/types/global-p/pathmodeldisplay#m-serialize), [`PickupBasedSkill.Lock`](/game-api/types/global-p/pickupbasedskill#m-lock), [`PickupBasedSkill.Unlock`](/game-api/types/global-p/pickupbasedskill#m-unlock), [`PickupBasedSkillModifier.Lock`](/game-api/types/global-p/pickupbasedskillmodifier#m-lock), [`PickupBasedSkillModifier.Unlock`](/game-api/types/global-p/pickupbasedskillmodifier#m-unlock), [`Player.progressionManager`](/game-api/types/global-p/player#m-progressionmanager), [`Player.ProgressionManager`](/game-api/types/global-p/player#m-progressionmanager-2), [`ProfessionSkill.CompleteTargetAchievement`](/game-api/types/global-p/professionskill#m-completetargetachievement), [`ProfessionSkill.Lock`](/game-api/types/global-p/professionskill#m-lock), [`ProfessionSkill.Unlock`](/game-api/types/global-p/professionskill#m-unlock), [`ProfessionSkill<T>.PlayerLevel`](/game-api/types/global-p/professionskill-t#m-playerlevel-2), [`ProfessionSkill<T>.PlayerUnlocked`](/game-api/types/global-p/professionskill-t#m-playerunlocked-2), [`ProfessionSkill<T>.Unlock`](/game-api/types/global-p/professionskill-t#m-unlock), [`ProgressionShrine.currentManager`](/game-api/types/global-p/progressionshrine#m-currentmanager), [`ProgressionShrine.CurrentManager`](/game-api/types/global-p/progressionshrine#m-currentmanager-2), [`ProgressionShrine.Open`](/game-api/types/global-p/progressionshrine#m-open-2), [`ProgressionSlotContainer.Operate`](/game-api/types/global-p/progressionslotcontainer#m-operate), [`SkillOrbDelegate.BeginInvoke`](/game-api/types/global-s/skillorbdelegate#m-begininvoke), [`SkillOrbDelegate.Invoke`](/game-api/types/global-s/skillorbdelegate#m-invoke), [`SkillOrbReplacer.Operate`](/game-api/types/global-s/skillorbreplacer#m-operate), [`SkillOrbScaler.PrepareOnServer`](/game-api/types/global-s/skillorbscaler#m-prepareonserver), [`SkillOrbScaler.Serialize`](/game-api/types/global-s/skillorbscaler#m-serialize), [`SkillShrine.UpdatePracticing`](/game-api/types/global-s/skillshrine#m-updatepracticing), [`SkillShrineVisualizer.PrepareOnServer`](/game-api/types/global-s/skillshrinevisualizer#m-prepareonserver), [`SkillShrineVisualizer.Serialize`](/game-api/types/global-s/skillshrinevisualizer#m-serialize), [`StatBonusSkill.Lock`](/game-api/types/global-s/statbonusskill#m-lock), [`StatBonusSkill.Unlock`](/game-api/types/global-s/statbonusskill#m-unlock).

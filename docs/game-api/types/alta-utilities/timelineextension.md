@@ -1,0 +1,23 @@
+---
+title: "TimelineExtension"
+description: "static class TimelineExtension in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# TimelineExtension
+
+A **static class** in `Root.Township`, `Alta.Utilities`.
+
+- **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
+- **Attributes** `Extension`
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-delay" /><code>{"static void Delay(Action callback, float duration)"}</code> |  |
+| <Link id="m-runat" /><code>{"static void RunAt(Action callback, float time)"}</code> |  |

@@ -1,0 +1,62 @@
+---
+title: "Festivity"
+description: "class Festivity in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# Festivity
+
+A **class** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
+- **Inherits or implements** [`HashedGeneralValue<Festivity>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
+- **Derived types** [`Festivity`](/game-api/types/global-e-h/festivity), [`Festivity.Create`](/game-api/types/global-e-h/festivity-create)
+- **Nested types** [`Create`](/game-api/types/global-e-h/festivity-create)
+- **Attributes** `TypeConverter`
+- **Documented in** [Arguments and results](/game-api/console-and-utilities/arguments-and-results)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Festivity()"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-end" /><code>{"private "}<Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" end"}</code> |  |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |  |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |  |
+| <Link id="m-start" /><code>{"private "}<Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" start"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-end-2" /><code><Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" End { get; }"}</code> |  |
+| <Link id="m-isactivated" /><code>{"bool IsActivated { get; set; }"}</code> |  |
+| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; }"}</code> |  |
+| <Link id="m-start-2" /><code><Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" Start { get; }"}</code> |  |
+
+## Events
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activationchanged" /><code>{"event Action<"}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{"> ActivationChanged"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setactive" /><code>{"private void SetActive(bool value)"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `Festivity`:
+
+[`Distribution<TThis, T, TItem, TFestivityGroup>.BaseFestivityGroup.festivity`](/game-api/types/alta-world-generation/distribution-tthis-t-titem-tfestivitygroup-basefestivitygroup#m-festivity), [`Distribution<TThis, T, TItem, TFestivityGroup>.BaseFestivityGroup.Festivity`](/game-api/types/alta-world-generation/distribution-tthis-t-titem-tfestivitygroup-basefestivitygroup#m-festivity-2), [`LootTable.FestivityList.festivity`](/game-api/types/alta-world-generation/loottable-festivitylist#m-festivity), [`LootTable.FestivityList.Festivity`](/game-api/types/alta-world-generation/loottable-festivitylist#m-festivity-2), [`PopulationDefinition.FestivePrefabGroup.festivity`](/game-api/types/alta-world-generation/populationdefinition-festiveprefabgroup#m-festivity), [`Filter.targetFestivity`](/game-api/types/alta-customization/filter#m-targetfestivity), [`AutoFestiveAchievement.festivity`](/game-api/types/game-other-namespaces/autofestiveachievement#m-festivity), [`FestiveFeature.festivity`](/game-api/types/global-e-h/festivefeature#m-festivity), [`FestiveFeature.OnFestivityActivationChanged`](/game-api/types/global-e-h/festivefeature#m-onfestivityactivationchanged), [`FestivityCommandModule.Inspect`](/game-api/types/global-e-h/festivitycommandmodule#m-inspect), [`FestivityCommandModule.StartFestivity`](/game-api/types/global-e-h/festivitycommandmodule#m-startfestivity), [`FestivityCommandModule.StopFestivity`](/game-api/types/global-e-h/festivitycommandmodule#m-stopfestivity), [`FestivityManager.SetFestivityActive`](/game-api/types/global-e-h/festivitymanager#m-setfestivityactive), [`FestivityManager.sync`](/game-api/types/global-e-h/festivitymanager#m-sync), [`FestivityManager.SyncFestivity`](/game-api/types/global-e-h/festivitymanager#m-syncfestivity).

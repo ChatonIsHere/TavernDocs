@@ -1,0 +1,23 @@
+---
+title: "SerializedFullEmptyStatTrigger"
+description: "class SerializedFullEmptyStatTrigger in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# SerializedFullEmptyStatTrigger
+
+A **class** in `Root.Township`, `Alta.StatSystem`.
+
+- **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
+- **Inherits or implements** [`FullEmptyStatTrigger`](/game-api/types/alta-stats-effects/fullemptystattrigger), [`ISavable<SerializedFullEmptyStatTriggerData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<SerializedFullEmptyStatTriggerData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
+- **Derived types** [`SerializedFullEmptyStatTriggerData`](/game-api/types/alta-stats-effects/serializedfullemptystattriggerdata)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerializedFullEmptyStatTrigger()"}</code> |  |

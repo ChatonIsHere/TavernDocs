@@ -1,0 +1,63 @@
+---
+title: "FastPriorityQueueTimeSpan<T>"
+description: "class FastPriorityQueueTimeSpan<T> in Alta.Timing.Runtime."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# FastPriorityQueueTimeSpan&lt;T&gt;
+
+A **class** in `Alta.Timing.Runtime`, `Alta.Timing.PriorityQueue`.
+
+- **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
+- **Inherits or implements** [`IFixedSizePriorityQueue<T, TimeSpan>`](/game-api/types/assembly-other/ifixedsizepriorityqueue-titem-intpriority), [`IPriorityQueue<T, TimeSpan>`](/game-api/types/assembly-other/ipriorityqueue-titem-intpriority), `IEnumerable<T>`, `IEnumerable`
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FastPriorityQueueTimeSpan(int maxNodes)"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-nodes" /><code>{"private T[] _nodes"}</code> |  |
+| <Link id="m-numnodes" /><code>{"private int _numNodes"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-count" /><code>{"int Count { get; }"}</code> |  |
+| <Link id="m-first" /><code>{"T First { get; }"}</code> |  |
+| <Link id="m-maxsize" /><code>{"int MaxSize { get; }"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
+| <Link id="m-contains" /><code>{"bool Contains(T node)"}</code> |  |
+| <Link id="m-dequeue" /><code>{"T Dequeue()"}</code> |  |
+| <Link id="m-enqueue" /><code>{"void Enqueue(T node, TimeSpan priority)"}</code> |  |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<T> GetEnumerator() (iterator)"}</code> |  |
+| <Link id="m-isvalidqueue" /><code>{"bool IsValidQueue()"}</code> |  |
+| <Link id="m-remove" /><code>{"void Remove(T node)"}</code> |  |
+| <Link id="m-resize" /><code>{"void Resize(int maxNodes)"}</code> |  |
+| <Link id="m-updatepriority" /><code>{"void UpdatePriority(T node, TimeSpan priority)"}</code> |  |
+| <Link id="m-cascadedown" /><code>{"private void CascadeDown(T node)"}</code> |  |
+| <Link id="m-cascadeup" /><code>{"private void CascadeUp(T node)"}</code> |  |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |  |
+| <Link id="m-hashigherorequalpriority" /><code>{"private bool HasHigherOrEqualPriority(T higher, T lower)"}</code> |  |
+| <Link id="m-hashigherpriority" /><code>{"private bool HasHigherPriority(T higher, T lower)"}</code> |  |
+| <Link id="m-onnodeupdated" /><code>{"private void OnNodeUpdated(T node)"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `FastPriorityQueueTimeSpan&lt;T>`:
+
+[`Timeline.entries`](/game-api/types/assembly-other/timeline#m-entries).

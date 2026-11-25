@@ -1,0 +1,47 @@
+---
+title: "ArmorManager<TSlot>.SlotPairing"
+description: "class ArmorManager<TSlot>.SlotPairing in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# ArmorManager&lt;TSlot&gt;.SlotPairing
+
+A **class** in `Root.Township`, `Alta.Customization`.
+
+- **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
+- **Nested in** [`ArmorManager<TSlot>`](/game-api/types/alta-customization/armormanager-tslot)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SlotPairing()"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-detectors" /><code>{"private "}<Link to="/game-api/types/alta-items/equipmentreference">{"EquipmentReference"}</Link>{"[] detectors"}</code> |  |
+| <Link id="m-slot" /><code>{"private TSlot slot"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-slot-2" /><code>{"TSlot Slot { get; }"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-apply" /><code>{"void Apply("}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" armor)"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `SlotPairing`:
+
+[`ArmorManager<TSlot>.slotPairings`](/game-api/types/alta-customization/armormanager-tslot#m-slotpairings), [`ArmorManager<TSlot>.slots`](/game-api/types/alta-customization/armormanager-tslot#m-slots).

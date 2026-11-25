@@ -1,0 +1,38 @@
+---
+title: "DistanceSense"
+description: "class DistanceSense in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# DistanceSense
+
+A **class** in `Root.Township`, `Alta.Intelligence`.
+
+- **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
+- **Inherits or implements** [`Sense`](/game-api/types/alta-intelligence/sense)
+- **Derived types** [`DistanceSense.Create`](/game-api/types/alta-intelligence/distancesense-create)
+- **Nested types** [`Create`](/game-api/types/alta-intelligence/distancesense-create)
+- **Documented in** [Targets and senses](/game-api/creatures/targets-and-senses)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DistanceSense()"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-yflexibility" /><code>{"private float yFlexibility"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-get" /><code>{"override float Get("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |  |
+| <Link id="m-getinverselerp" /><code>{"override float GetInverseLerp("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target, float from, float to)"}</code> |  |

@@ -14,330 +14,330 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in |
 | --- | --- | --- | --- | --- |
-| `PageAutoAddEffect` | class | `PooledObject` | 3 |  |
-| `PageLootSettings` | class | `GlobalSettings<PageLootSettings>` | 1 |  |
-| `PageLootSettings.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.ScriptableObject<PageLootSettings>` | 0 |  |
-| `PageProvider` | abstract class | `MonoBehaviour` | 8 |  |
-| `PaintBrush` | class | `MonoBehaviour` | 2 |  |
-| `ParticleDestination` | enum |  | 3 |  |
-| `ParticleEffectDistanceController` | class | `MonoBehaviour` | 1 |  |
-| `ParticleMeshReplacePooledObject` | class | `MeshReplacePooledObject` | 1 |  |
-| `ParticleSystemGroup` | class | `MonoBehaviour` | 2 |  |
-| `ParticleSystemToHand` | class | `MonoBehaviour` | 0 |  |
-| `PathEndsPart` | class | `GeneratablePart` | 2 |  |
-| `PathEndsPart.Arrangement` | enum |  | 4 |  |
-| `PathExperience` | class |  | 18 | [Progression](../game-systems/progression.md#pathexperience): One per player per path. |
-| `PathModelDisplay` | class | `SkillShrineVisualizer` | 3 |  |
-| `PathWalker` | class | `MonoBehaviour` | 12 |  |
-| `PathWalker.OnTargetReached` | delegate |  | 0 |  |
-| `PauseEditor` | class | `ControllerInputButtonPressed` | 0 |  |
-| `PerPlayerContent<TSaveFormat>` | class | `IPerPlayerContent<TSaveFormat>` | 10 |  |
-| `PerPlayerManager<TThis, TContent, TSaveFormat>` | class | `NetworkEntityBehaviour`, `IAutoSave` | 8 |  |
-| `Phase` | class | `MonoBehaviour`, `IPhase` | 3 |  |
-| `PhysicalButton` | class | `Interactable`, `IPreventAtlasing` | 7 | [Buttons and levers](../items/buttons-and-levers.md#physicalbutton): Runs on every machine that simulates the press; not networked. |
-| `PhysicalMaterial` | class | `HashedGeneralValue<PhysicalMaterial>` | 31 | [Items and materials](../items/items-and-materials.md#physicalmaterial): A `HashedGeneralValue<PhysicalMaterial>` asset. Data, same on both sides. |
-| `PhysicalMaterial.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Misc.ScriptableObject<PhysicalMaterial>` | 0 |  |
-| `PhysicalMaterialChannel` | enum |  | 6 |  |
-| `PhysicalMaterialPart` | class | `GeneratedNetworkEntityBehaviour`, `ISavable<PhysicalMaterialPartSaveData>`, `ISavableSave<PhysicalMaterialPartSaveData>`, +7 more | 6 | [Items and materials](../items/items-and-materials.md#physicalmaterialpart): A networked behaviour on items that have a material. The server picks and syncs the material; clients follow. |
-| `PhysicalMaterialPart.ChangedMaterial` | delegate |  | 0 |  |
-| `PhysicalMaterialPartSaveData` | internal class | `NewSaveData<PhysicalMaterialPart, PhysicalMaterialPartSaveData>` | 1 |  |
-| `PhysicsAcceleration` | class | `MonoBehaviour` | 1 |  |
-| `PhysicsLock` | class | `MonoBehaviour` | 0 |  |
-| `Pickup` | class | `Interactable`, `IGetRigidbody`, `IPopulationRemovalMethod`, +5 more | 80 | [Pickup](../items/pickup.md): Runs on both sides; docking on release starts on the holder's client, breaking is the server's. |
-| `Pickup.PickupHandler` | delegate |  | 0 |  |
-| `PickupArea` | class | `MonoBehaviour` | 3 | [Items, interaction and damage](../items/overview.md): Tracks the pickups inside a trigger. |
-| `PickupBasedSkill` | abstract class | `ProfessionSkill`, `IInputBasedSkill`, `IChargeableProfessionSkill` | 15 | [Items, interaction and damage](../items/overview.md) |
-| `PickupBasedSkillModifier` | abstract class | `ProfessionSkill`, `IInputBasedSkill`, `IChargeableProfessionSkill` | 14 |  |
-| `PickupButtons` | class | `MonoBehaviour` | 0 |  |
-| `PickupClamp` | class | `MonoBehaviour` | 1 |  |
-| `PickupContainer` | class | `Interactable` | 7 | [Player inventory](../items/player-inventory.md#pouches-and-pickupcontainer), [Other systems](../game-systems/other-systems.md) |
-| `PickupDecay` | class | `BasicDecay` | 2 | [Items, interaction and damage](../items/overview.md): Server-side decay timer for pickups, paused while held or docked. |
-| `PickupDecaySettings` | class | `DecaySettings` | 3 |  |
-| `PickupDecaySettings.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Decay.ScriptableObject<PickupDecaySettings>` | 0 |  |
-| `PickupDockedEvent` | class | `AltaEvent<Interactor, Pickup, PickupDock, PickupDockedUnityEvent>` | 0 |  |
-| `PickupDockedFilter` | class | `MonoBehaviour` | 0 |  |
-| `PickupDockedUnityEvent` | class | `UnityEvent<Interactor, Pickup, PickupDock>` | 0 |  |
-| `PickupDockGroup` | class | `ComponentGroup<PickupDock>` | 1 |  |
-| `PickupDockingChecker` | class |  | 7 |  |
-| `PickupDockingSoundPlayer` | class | `MonoBehaviour` | 0 |  |
-| `PickupDockPedestalSpawn` | class | `PickupDock` | 1 | [Items, interaction and damage](../items/overview.md) |
-| `PickupDockScaleCompare` | class | `MonoBehaviour` | 0 |  |
-| `PickupEvent` | class | `AltaEvent<Pickup, UnityPickupEvent>` | 0 |  |
-| `PickupExtension` | class | `Interactable` | 2 |  |
-| `PickupFromDockRestriction` | enum |  | 3 |  |
-| `PickupGrabInputMethod` | class | `ISkillInputMethod` | 1 |  |
-| `PickupGrabInputStructure` | class | `SkillInputStructure` | 1 |  |
-| `PickupGrabInputStructure.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input.ScriptableObject<PickupGrabInputStructure>` | 0 |  |
-| `PickupHolder` | class | `NetworkEntityBehaviour` | 7 | [Items, interaction and damage](../items/overview.md): Holds one pickup in place (server decides, synced). |
-| `PickupHolderFilter` | delegate |  | 0 |  |
-| `PickupInteractionScaler` | class |  | 2 |  |
-| `PickupJoints` | class |  | 6 |  |
-| `PickUpJointType` | enum |  | 6 |  |
-| `PickupOwnershipLogger` | static class |  | 2 |  |
-| `PickupSaveData` | class | `NewSaveData<Pickup, PickupSaveData>` | 2 |  |
-| `PickupSaveDataOld1` | class | `OldSaveData` | 2 |  |
-| `PickupTypeSetting` | abstract class | `OverridableSettings` | 1 |  |
-| `PickupTypeSettings` | class | `GlobalSettings<PickupTypeSettings>` | 43 |  |
-| `PickupTypeSettings.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Items.ScriptableObject<PickupTypeSettings>` | 0 |  |
-| `PickupWeightScale` | class | `MonoBehaviour` | 0 |  |
-| `PipAvailablePointManager` | class | `AvailablePointVisualizerManager` | 4 |  |
-| `PipelineDistribution` | class | `PipelineElement` | 4 |  |
-| `PipelineElement` | abstract class |  | 4 |  |
-| `PipelineFlattenDistribution` | class | `PipelineElement` | 4 |  |
-| `PipelineResultAttribute` | class | `Attribute` | 2 |  |
-| `PlaceItemNoDockFirePuzzleLogic` | class | `MonoBehaviour`, `ISavable<PlaceItemNoDockFirePuzzleLogicSaveData>`, `ISavableSave<PlaceItemNoDockFirePuzzleLogicSaveData>`, +1 more | 1 |  |
-| `PlaceItemNoDockFirePuzzleLogicSaveData` | class | `NewSaveData<PlaceItemNoDockFirePuzzleLogic, PlaceItemNoDockFirePuzzleLogicSaveData>` | 3 |  |
-| `PlaceItemNoDockFirePuzzleLogicSaveData.Option` | class |  | 1 |  |
-| `PlaceItemNoDockFirePuzzleLogicSaveData1` | class | `OldSaveData` | 1 |  |
-| `PlaceItemNoDockPuzzleLogic` | class | `MonoBehaviour`, `ISavable<PlaceItemNoDockPuzzleLogicSaveData>`, `ISavableSave<PlaceItemNoDockPuzzleLogicSaveData>`, +1 more | 0 |  |
-| `PlaceItemNoDockPuzzleLogicSaveData` | class | `NewSaveData<PlaceItemNoDockPuzzleLogic, PlaceItemNoDockPuzzleLogicSaveData>` | 3 |  |
-| `PlaceItemNoDockPuzzleLogicSaveData.Option` | class |  | 2 |  |
-| `PlaceItemNoDockPuzzleLogicSaveData1` | class | `OldSaveData` | 2 |  |
-| `PlaceItemPuzzleLogic` | class | `MonoBehaviour`, `ISavable<PlaceItemPuzzleLogicSaveData>`, `ISavableSave<PlaceItemPuzzleLogicSaveData>`, +1 more | 1 |  |
-| `PlaceItemPuzzleLogicSaveData` | class | `NewSaveData<PlaceItemPuzzleLogic, PlaceItemPuzzleLogicSaveData>` | 3 |  |
-| `PlaceItemPuzzleLogicSaveData.Option` | class |  | 2 |  |
-| `PlaceItemPuzzleLogicSaveData1` | class | `OldSaveData` | 2 |  |
-| `PlacementObject` | class | `MonoBehaviour` | 1 |  |
-| `PlatformActionMapping` | class |  | 10 |  |
-| `PlatformComponents` | class | `BuildRendererBakeable` | 2 |  |
-| `PlatformDefines` | static class |  | 2 |  |
-| `PlatformDistanceLODModifier` | class | `BuildRendererBakeable` | 1 |  |
-| `PlatformDriver` | class | `SingletonBehaviour<PlatformDriver>` | 5 |  |
-| `PlatformHandler` | delegate |  | 0 |  |
-| `PlatformHeightOffset` | struct |  | 3 |  |
-| `PlatformHeightOffsetSettings` | class | `ScriptableObject` | 1 |  |
-| `PlatformHierarchyShuffler` | class | `MonoBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 0 |  |
-| `PlatformLaunchType` | enum |  | 5 |  |
-| `PlatformLightDarknessReader` | class | `DarknessReaderMethod` | 1 |  |
-| `PlatformLoader` | abstract class | `MonoBehaviour` | 1 |  |
-| `PlatformLODController` | class | `BuildRendererBakeable` | 1 |  |
-| `PlatformLODModifier` | class | `BuildRendererBakeable` | 1 |  |
-| `PlatformMaterial` | class | `ScriptableObject` | 0 |  |
-| `PlatformMeshController` | class | `BuildRendererBakeable` | 2 |  |
-| `PlatformModeHandler` | delegate |  | 0 |  |
-| `PlatformObjects` | class | `BuildRendererBakeable` | 3 |  |
-| `PlatformObjects.PlatformObjectSetup` | class |  | 3 |  |
-| `PlatformTexture` | class | `ScriptableObject` | 0 |  |
-| `Player` | class | `NetworkEntity`, `IPlatformPlayer`, `IPlayer`, +1 more | 66 | [Player](../networking/player.md), [Arguments and results](../console-and-utilities/arguments-and-results.md): A `NetworkEntity`, and it implements `IPlayer` (`Alta.Networking.Scripts.Player`). |
-| `PlayerAdjustableHeightFixerSettings` | class | `ScriptableObject` | 5 |  |
-| `PlayerChunkManager` | class |  | 5 |  |
-| `PlayerCommunicationManager` | class | `NetworkEntityBehaviour` | 4 |  |
-| `PlayerCommunityAnalytics` | static class |  | 9 |  |
-| `PlayerComponent` | class | `NetworkEntityBehaviour` | 2 |  |
-| `PlayerController` | abstract class | `NetworkEntityBehaviour`, `IHasHead`, `IBuildRendererBakeable`, +1 more | 57 | [PlayerController and the body](../networking/player-controller.md): A player's body is its own networked entity, spawned by the server after the `Player` and destroyed and respawned around death. |
-| `PlayerControllerHandler` | delegate |  | 0 |  |
-| `PlayerControllerLocalityController` | class | `MonoBehaviour` | 4 |  |
-| `PlayerControllerMultiLockModel` | class | `NetworkEntityBehaviour`, `IPlayerControllerMultiLockModel` | 4 |  |
-| `PlayerConverter` | class | `TypeConverter` | 3 |  |
-| `PlayerCrippleController` | class | `MonoBehaviour` | 0 |  |
-| `PlayerData` | struct |  | 5 |  |
-| `PlayerDataInfo` | class |  | 3 |  |
-| `PlayerDebugMessager` | class | `MonoBehaviour` | 1 |  |
-| `PlayerDetect` | class | `NetworkEntityBehaviour`, `ISavable<PlayerDetectSaveData>`, `ISavableSave<PlayerDetectSaveData>`, +1 more | 3 |  |
-| `PlayerDetectSaveData` | internal class | `NewSaveData<PlayerDetect, PlayerDetectSaveData>` | 3 |  |
-| `PlayerDetectSaveDataOld1` | internal class | `OldSaveData` | 2 |  |
-| `PlayerDockDropper` | class | `MonoBehaviour` | 0 | [Player inventory](../items/player-inventory.md): Empties a dock when the player's scale changes. |
-| `PlayerDrinkingMouth` | class | `NetworkEntityBehaviour` | 1 |  |
-| `PlayerEffectManager` | class | `MonoBehaviour` | 1 |  |
-| `PlayerEffectManager.EffectPosition` | class |  | 8 |  |
-| `PlayerEffectManager.OverrideSettings` | enum |  | 3 |  |
-| `PlayerEffectParticle` | class | `EffectReleaseOnFade` | 2 |  |
-| `PlayerEvent` | class | `AltaEvent<IPlayer, PlayerUnityEvent>` | 0 |  |
-| `PlayerEventsManager` | class | `PlayerComponent` | 13 |  |
-| `PlayerEventsManager.OnPathHitGenerated` | delegate |  | 0 |  |
-| `PlayerGoldBankAccount` | class | `PerPlayerContent<PlayerGoldBankAccountData>` | 0 |  |
-| `PlayerGoldBankAccountData` | class | `IAltaFileFormat` | 5 |  |
-| `PlayerHandler` | delegate |  | 0 |  |
-| `PlayerHealth` | class | `HealthObject` | 10 | [Health and damage](../items/health-and-damage.md#playerhealth): `PlayerHealth : HealthObject`, no namespace. Get it with `playerCharacter.Health` (typed `PlayerHealth`) or `playerController.Health as PlayerHealth`. |
-| `PlayerHealthVisualEffectsSettings` | class | `ScriptableObject` | 16 |  |
-| `PlayerHeightFixer` | class | `MonoBehaviour` | 1 |  |
-| `PlayerInput` | class | `MonoBehaviour` | 14 |  |
-| `PlayerInteractionManager` | class | `NetworkEntityBehaviour`, `ISavable<PlayerInteractionManagerData>`, `ISavableSave<PlayerInteractionManagerData>`, +1 more | 13 | [Items, interaction and damage](../items/overview.md) |
-| `PlayerInteractionManager.Tracker` | class |  | 4 |  |
-| `PlayerInteractionManagerData` | class | `NewSaveData<PlayerInteractionManager, PlayerInteractionManagerData>` | 2 |  |
-| `PlayerInteractionManagerData.PlayerData` | class |  | 4 |  |
-| `PlayerInteractionManagerData.TrackerData` | class |  | 2 |  |
-| `PlayerInteractionRestrictor` | class | `NetworkEntityBehaviour`, `ISavable<PlayerInteractionRestrictorData>`, `ISavableSave<PlayerInteractionRestrictorData>`, +1 more | 9 | [Items, interaction and damage](../items/overview.md) |
-| `PlayerInteractionRestrictorData` | class | `NewSaveData<PlayerInteractionRestrictor, PlayerInteractionRestrictorData>` | 2 |  |
-| `PlayerList` | class | `IEnumerable<IPlayer>`, `IEnumerable` | 4 | [Arguments and results](../console-and-utilities/arguments-and-results.md): Names or ids separated by commas, or `*` for everyone |
-| `PlayerListConverter` | class | `TypeConverter` | 2 |  |
-| `PlayerLocomotionController` | class | `LocomotionController`, `INetworkSerialized` | 8 | [Locomotion](../networking/locomotion.md#playerlocomotioncontroller): The VR body's. |
-| `PlayerMessageDisplay` | class | `MonoBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 3 |  |
-| `PlayerModeOverride` | class | `ScriptableObject` | 1 |  |
-| `PlayerModeOverride.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Debug.ScriptableObject<PlayerModeOverride>` | 0 |  |
-| `PlayerModeUtilities` | static class |  | 3 | [Joining a server](../networking/joining.md), [Startup and app state](../console-and-utilities/startup-and-app-state.md): `PlayerMode` (what this client will join as), `OverrideMode` (set it before joining to join as something else; Rover does), `IsNormalPlayerMode(mode)` (false for Fly and AutoCam, which aren't saved). |
-| `PlayerMoveChunkData` | class |  | 4 | [Console events](../console-and-utilities/console-events.md) |
-| `PlayerOrbLight` | class |  | 1 |  |
-| `PlayerPositionHelper` | class | `PositionFromOriginHelper` | 1 |  |
-| `PlayerPositionRestrictor` | class | `MonoBehaviour` | 1 |  |
-| `PlayerPostboxStorage` | class | `PerPlayerContent<PlayerPostboxStorageFileFormat>` | 8 | [Trading](../game-systems/trading.md): The per-player file, above. |
-| `PlayerPostboxStorage.InitialContent` | class |  | 2 |  |
-| `PlayerPostboxStorageEventHandler` | delegate |  | 0 |  |
-| `PlayerPostboxStorageFileFormat` | class | `IAltaFileFormat` | 4 |  |
-| `PlayerProgressFlag` | abstract class | `HashedGeneralValue<PlayerProgressFlag>` | 2 |  |
-| `PlayerProgressFlagConverter<T>` | class | `TypeConverter` | 2 |  |
-| `PlayerProgression` | class |  | 6 |  |
-| `PlayerProgression.EventTypeEnum` | enum |  | 3 |  |
-| `PlayerProgressionManager` | class | `PlayerComponent` | 29 | [Progression](../game-systems/progression.md#playerprogressionmanager): One per `Player` (not per body), so it survives respawns. Get it with `player.ProgressionManager` (it's on `IPlayer` too). |
-| `PlayerProgressionManager.PracticeTuple` | class |  | 5 |  |
-| `PlayerRoleProvider` | class | `MonoBehaviour` | 1 |  |
-| `PlayerScreenFader` | abstract class | `MonoBehaviour` | 10 |  |
-| `PlayerSmoothManager` | class | `NetworkEntityBehaviour` | 5 |  |
-| `PlayerSpecialEffectsController` | class | `MonoBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable`, +1 more | 26 |  |
-| `PlayerSystemHandler` | delegate |  | 0 |  |
-| `PlayerTextMessage` | struct |  | 4 |  |
-| `PlayerTimeUpdate` | delegate |  | 0 |  |
-| `PlayerToolBasedSkillHelper` | class | `PlayerComponent` | 9 |  |
-| `PlayerTracker` | class |  | 8 |  |
-| `PlayerUnityEvent` | class | `UnityEvent<IPlayer>` | 0 |  |
-| `PlayerUnlock` | class | `HashedGeneralValue<PlayerUnlock>` | 5 | [Arguments and results](../console-and-utilities/arguments-and-results.md), [Skills and unlocks](../game-systems/skills-and-unlocks.md): Has `Prerequisites`, `Orbs`, and `UnlockingPermissions` (teleport layer, climb layer, and an optional `MaxStatDefinition` to raise). |
-| `PlayerUnlock.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<PlayerUnlock>` | 0 |  |
-| `PlayerUnlock.OrbProperties` | class |  | 5 |  |
-| `PlayerUnlock.UnlockingPermissionsSetup` | class |  | 7 |  |
-| `PlayerUnlockConverter` | class | `HashedGeneralValueConverter<PlayerUnlock>` | 0 |  |
-| `PlayerUnlockManager` | class | `PlayerComponent`, `ISavable<PlayerUnlockManagerSaveData>`, `ISavableSave<PlayerUnlockManagerSaveData>`, +1 more | 15 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): `PlayerComponent`, one per player (`player.UnlockManager`, also on `IPlayer`). |
-| `PlayerUnlockManagerSaveData` | class | `NewSaveData<PlayerUnlockManager, PlayerUnlockManagerSaveData>` | 4 |  |
-| `PlayerUnlockStation` | class | `NetworkEntityBehaviour`, `ISavable<PlayerUnlockStationSaveData>`, `ISavableSave<PlayerUnlockStationSaveData>`, +1 more | 8 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): A station in the world. Its `UnlockStationType` is `Start`, `Normal`, `Unlock` or `Completion`. |
-| `PlayerUnlockStation.NetworkEffect` | enum |  | 3 |  |
-| `PlayerUnlockStation.UnlockStationType` | enum |  | 4 |  |
-| `PlayerUnlockStationSaveData` | class | `NewSaveData<PlayerUnlockStation, PlayerUnlockStationSaveData>` | 3 |  |
-| `PlayerUnlockStationSaveDataOld1` | class | `OldSaveData` | 5 |  |
-| `PlayerUnlockStationSaveDataOld2` | class | `OldSaveData` | 6 |  |
-| `PlayerVisionComfort` | class |  | 2 |  |
-| `PlayerVisionComfortSettings` | class | `GlobalSettings<PlayerVisionComfortSettings>` | 4 |  |
-| `PlayerVisionComfortSettings.Create` | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<PlayerVisionComfortSettings>` | 0 |  |
-| `PlayerWeight` | class | `NetworkEntityBehaviour` | 5 |  |
-| `PlayingOpenXRInputController` | class | `OpenXRInputController` | 1 |  |
-| `PlaySound` | class | `StateMachineBehaviour` | 1 |  |
-| `PlayTutorialChecker` | class | `LoggedInTool` | 0 |  |
-| `Pointer` | class | `ControllerExtension` | 11 |  |
-| `PointerChunkReference` | class | `MonoBehaviour` | 2 |  |
-| `PointerEventHandler` | delegate |  | 0 |  |
-| `PointerGameObjectExtensions` | static class |  | 3 |  |
-| `PointTowardsEachotherPart` | class | `GeneratablePart` | 1 |  |
-| `PoolChangedHandler` | delegate |  | 0 |  |
-| `PooledAkGameObj` | class | `AkGameObj` | 1 |  |
-| `PooledEffectParent` | class | `MonoBehaviour` | 0 |  |
-| `PooledFireEffect` | class | `PooledObject` | 8 |  |
-| `PooledLerpFollow` | class | `LerpFollow` | 1 |  |
-| `PooledMeshReplaceObjectDefinition` | class | `PooledObjectDefinition` | 3 |  |
-| `PooledMeshReplaceObjectDefinition.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Misc.ScriptableObject<PooledMeshReplaceObjectDefinition>` | 0 |  |
-| `PooledObject` | class | `MonoBehaviour` | 9 |  |
-| `PooledObjectDefinition` | class | `PooledObjectDefinitionBase` | 6 |  |
-| `PooledObjectDefinition.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Misc.ScriptableObject<PooledObjectDefinition>` | 0 |  |
-| `PooledObjectDefinitionBase` | abstract class | `ScriptableObject` | 15 |  |
-| `PooledObjectDefinitionTrigger` | class | `MonoBehaviour` | 0 |  |
-| `PooledObjectPool` | class | `BasicPooledObjectPool` | 3 |  |
-| `PooledObjectSoundHook` | class | `MonoBehaviour` | 0 |  |
-| `PooledParticleSystemMeshEmision` | class | `DestroyByTime`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 |  |
-| `PooledTempWwiseAudio` | class | `PooledObject` | 1 |  |
-| `PooledTextRenderer` | class | `PooledObject` | 1 |  |
-| `PopulationPath` | class | `BasicDynamicPath`, `IPopulationFolder`, `IPointNormalEvaluator`, +3 more | 11 |  |
-| `PopulationPathSaveData` | class | `NewSaveData<PopulationPath, PopulationPathSaveData>` | 4 |  |
-| `PopupBoard` | class | `MonoBehaviour`, `IPopupBoard` | 6 |  |
-| `PopupManager` | class | `SingletonBehaviour<PopupManager>` | 6 |  |
-| `PopupManager.IPopupConfig` | interface |  | 5 |  |
-| `PopupScriptableObject` | class | `ScriptableObject` | 1 |  |
-| `PortalBasedCullingCamera` | class | `MonoBehaviour` | 4 |  |
-| `PoseChangedHandler` | delegate |  | 0 |  |
-| `PosedObject` | class | `MonoBehaviour` | 0 |  |
-| `PositionAndRotationTarget` | struct |  | 4 |  |
-| `PositionedNetworkPrefab` | class | `PositionedPrefab<NetworkEntity>` | 3 |  |
-| `PositionedPrefab<T>` | abstract class |  | 2 |  |
-| `PositionedStaticPrefab` | class | `PositionedPrefab<GameObject>` | 2 |  |
-| `PositionEvent` | class | `AltaEvent<Vector3, PositionHandler>` | 0 |  |
-| `PositionFromOriginHandler` | class |  | 2 |  |
-| `PositionFromOriginHelper` | abstract class | `MonoBehaviour` | 1 |  |
-| `PositionHandler` | class | `UnityEvent<Vector3>` | 0 |  |
-| `PositioningMode` | enum |  | 3 |  |
-| `PositionLerp` | class | `MonoBehaviour` | 1 |  |
-| `PositionRecord` | struct |  | 5 |  |
-| `PositionRecorder` | class |  | 6 |  |
-| `PositionRotationEvent` | class | `AltaEvent<Vector3, Quaternion, PositionRotationHandler>` | 0 |  |
-| `PositionRotationHandler` | class | `UnityEvent<Vector3, Quaternion>` | 0 |  |
-| `PositionSerializer` | class |  | 10 |  |
-| `PositionSerializer<T>` | class | `PositionSerializer` | 2 |  |
-| `PositionSurfaceDefinitionSettings` | class | `GlobalSettings<PositionSurfaceDefinitionSettings>` | 2 |  |
-| `PositionSwapper` | class | `MonoBehaviour` | 0 |  |
-| `Postbox` | class | `NetworkEntityBehaviour` | 4 | [Trading](../game-systems/trading.md): Shows each player whether their `PlayerPostboxStorage` has anything, and gives items out when its handle lever is turned (server). |
-| `PostboxManager` | class | `PerPlayerManager<PostboxManager, PlayerPostboxStorage, PlayerPostboxStorageFileFormat>` | 5 | [Trading](../game-systems/trading.md) |
-| `PostboxManager.TradeVendorData` | class |  | 4 |  |
-| `PostboxSender` | class | `NetworkEntityBehaviour` | 4 | [Trading](../game-systems/trading.md): Sends items from its sending docks to another player's postbox, for a coin cost. |
-| `PostBoxSenderManager` | class | `NetworkEntityBehaviour` | 7 | [Trading](../game-systems/trading.md): Tracks how many items one player may still send another (`GetAvailableQuantity(from, to)`). |
-| `PostRenderNotifier` | class | `MonoBehaviour` | 2 |  |
-| `PotatoSapling` | class | `GeneratedNetworkEntityBehaviour` | 1 |  |
-| `PotionVisuals` | class | `MonoBehaviour` | 0 |  |
-| `PouchSpawner` | class | `SpawnerBase` | 1 |  |
-| `PowerCrossSlash` | class | `TargetBasedSkill` | 2 |  |
-| `PowerCrossSlash.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<PowerCrossSlash>` | 0 |  |
-| `PowerHit` | class | `PickupBasedSkill` | 3 | [Items, interaction and damage](../items/overview.md) |
-| `PowerHit.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<PowerHit>` | 0 |  |
-| `PowerStinger` | class | `TargetBasedSkill` | 4 |  |
-| `PowerStrike` | class | `PickupBasedSkill`, `IStrikeSuccessionModifier` | 4 |  |
-| `PowerStrike.Create` | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<PowerStrike>` | 0 |  |
-| `PowerStrikeTester` | class | `NetworkEntityBehaviour`, `IProfessionSkillTester` | 3 |  |
-| `PracticeAreaShrinkFader` | abstract class | `FadeInOutBase` | 2 |  |
-| `PracticeObjectFader` | class | `FadeInOutNetworkEntity`, `INetworkEntityBehaviour` | 1 |  |
-| `PrefabHashAttribute` | class | `PropertyAttribute` | 0 |  |
-| `PrefabLODSettings` | class | `ScriptableObject` | 2 |  |
-| `PrefabStageDefinition` | class | `HashedGeneralValue<PrefabStageDefinition>` | 2 |  |
-| `PrefabStageDefinition.PrefabSetup` | class |  | 3 |  |
-| `PresetWayPointPath` | class | `NetworkEntityBehaviour`, `IPositionRotationPath` | 1 |  |
-| `PreventStaticBatchingCollisionSplitting` | class | `MonoBehaviour`, `IDontSplit` | 0 |  |
-| `ProcessDiagnostics` | class |  | 4 |  |
-| `ProcessMetrics` | class |  | 4 |  |
-| `ProcessMetrics.MemoryCounters` | struct |  | 10 |  |
-| `ProcessRunner` | class | `IDisposable` | 3 |  |
-| `ProfessionDiskAvailablePointsVisualizer` | class | `ExperienceFillVisualizer` | 2 |  |
-| `ProfessionSkill` | abstract class | `HashedGeneralValue<ProfessionSkill>` | 12 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): The ability itself. `virtual void Unlock(PlayerProgressionManager)` and `Lock(...)` run when a player gains or loses it. |
-| `ProfessionSkill<T>` | abstract class | `ProfessionSkill` | 6 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): The ability itself. `virtual void Unlock(PlayerProgressionManager)` and `Lock(...)` run when a player gains or loses it. |
-| `ProfessionSkillDelegate` | delegate |  | 0 |  |
-| `ProfessionSkillTree` | class | `ScriptableObject` | 8 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): `ScriptableObject`, one per path, loaded from `Resources/ProgressionTrees/`. |
-| `ProfessionsProgressShrine` | class | `ProgressionShrine` | 2 |  |
-| `ProfileChunkLoading` | class | `MonoBehaviour` | 3 |  |
-| `ProfileChunkLoading.GameData` | class |  | 15 |  |
-| `ProfileChunkLoading.ProfileData` | class |  | 7 |  |
-| `ProfileChunkLoading.ProfilingPosition` | class |  | 2 |  |
-| `ProfilingLoader` | class | `ScriptableObject` | 6 |  |
-| `ProfilingPositionCycler` | class | `GlobalSettings<ProfilingPositionCycler>` | 5 |  |
-| `ProfilingPositionCycler.Create` | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<ProfilingPositionCycler>` | 0 |  |
-| `ProfilingPositionCycler.ProfilingPosition` | class |  | 4 |  |
-| `ProfilingTrigger` | class | `MonoBehaviour` | 1 |  |
-| `ProgressBar` | abstract class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 5 |  |
-| `ProgressCorrection` | class | `MonoBehaviour` | 1 |  |
-| `ProgressionPath` | enum |  | 8 | [Progression](../game-systems/progression.md#progressionpath): A path only takes XP if its skill tree is enabled (`ProfessionSkillTree.GetProfessionTree(path).IsEnabled`). The trees are loaded from `Resources/ProgressionTrees/`. |
-| `ProgressionSettings` | class | `GlobalSettings<ProgressionSettings>` | 20 | [Progression](../game-systems/progression.md#progressionsettings): Get it with `GlobalSettings<ProgressionSettings>.Instance` (`Alta.Global`). |
-| `ProgressionSettings.Create` | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<ProgressionSettings>` | 0 |  |
-| `ProgressionSettings.InputSystemSound` | class |  | 2 |  |
-| `ProgressionShrine` | abstract class | `NetworkEntityBehaviour` | 11 |  |
-| `ProgressionSlot` | class |  | 15 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): A node in a tree: `uint Hash`, `uint Cost`, `List<uint> Dependencies` (slot hashes), `ProfessionSkill Skill`, `ProgressionPath Path`. |
-| `ProgressionSlotContainer` | abstract class | `NetworkEntityBehaviour`, `ISkillOrb` | 8 |  |
-| `ProgressMaterialEffect` | class | `DestroyByTime` | 2 |  |
-| `Projectile` | class | `NetworkEntityBehaviour`, `IToolHitDependant`, `IImpactorResetEffect`, +2 more | 13 | [Combat, damage and death](../creatures/combat-and-damage.md): A spawned projectile. Its collisions are handled by the server (`OnCollision` returns early on clients). |
-| `ProjectileAltaEvent` | class | `AltaEvent<Projectile, ProjectileUnityEvent>` | 0 |  |
-| `ProjectileComponent` | abstract class | `MonoBehaviour` | 1 |  |
-| `ProjectileEffect` | class | `ProjectileComponent` | 0 |  |
-| `ProjectileUnityEvent` | class | `UnityEvent<Projectile>` | 0 |  |
-| `PropelledProjectile` | class | `MonoBehaviour` | 1 |  |
-| `PropertyBlockColorAccessor` | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 |  |
-| `PullCord` | class | `MonoBehaviour` | 0 |  |
-| `PullEvent` | class | `AltaEvent<PullPickup, PullEventHandler>` | 0 |  |
-| `PullEventHandler` | class | `UnityEvent<PullPickup>` | 0 |  |
-| `PulleyBeltHelper` | static class |  | 2 |  |
-| `PullingHandle` | class | `NetworkEntityBehaviour` | 1 |  |
-| `PullPickup` | class | `NetworkEntityBehaviour` | 5 | [Items, interaction and damage](../items/overview.md) |
-| `PullPickupGroup` | class | `NetworkEntityBehaviour` | 7 |  |
-| `Pump` | class | `MonoBehaviour` | 0 |  |
-| `PumpingMechanism` | class | `MonoBehaviour` | 4 |  |
-| `Puzzle` | class | `PuzzleCondition` | 0 |  |
-| `PuzzleCondition` | class | `MonoBehaviour` | 2 |  |
-| `PuzzleConditionHandler` | delegate |  | 0 |  |
-| `PuzzleConditionHandlerTemp` | delegate |  | 0 |  |
-| `PuzzleConditionsAND` | class | `PuzzleCondition` | 0 |  |
-| `PuzzleConditionsANDTemp` | class | `PuzzleConditionTemp` | 0 |  |
-| `PuzzleConditionTemp` | class | `MonoBehaviour` | 2 |  |
-| `PuzzleDoor` | class | `MonoBehaviour` | 0 |  |
-| `PuzzleLightBeam` | class | `MonoBehaviour`, `ILightEmitter` | 2 |  |
-| `PuzzleLightMirror` | class | `PuzzleLightBeam`, `ILightDetector`, `ILightEmitter` | 2 |  |
-| `PuzzleLightReflectExample2` | class | `MonoBehaviour` | 2 |  |
-| `PuzzleLightTarget` | class | `PuzzleCondition`, `ILightDetector` | 2 |  |
+| [`PageAutoAddEffect`](/game-api/types/global-p/pageautoaddeffect) | class | `PooledObject` | 3 |  |
+| [`PageLootSettings`](/game-api/types/global-p/pagelootsettings) | class | `GlobalSettings<PageLootSettings>` | 1 |  |
+| [`PageLootSettings.Create`](/game-api/types/global-p/pagelootsettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.ScriptableObject<PageLootSettings>` | 0 |  |
+| [`PageProvider`](/game-api/types/global-p/pageprovider) | abstract class | `MonoBehaviour` | 8 |  |
+| [`PaintBrush`](/game-api/types/global-p/paintbrush) | class | `MonoBehaviour` | 2 |  |
+| [`ParticleDestination`](/game-api/types/global-p/particledestination) | enum |  | 3 |  |
+| [`ParticleEffectDistanceController`](/game-api/types/global-p/particleeffectdistancecontroller) | class | `MonoBehaviour` | 1 |  |
+| [`ParticleMeshReplacePooledObject`](/game-api/types/global-p/particlemeshreplacepooledobject) | class | `MeshReplacePooledObject` | 1 |  |
+| [`ParticleSystemGroup`](/game-api/types/global-p/particlesystemgroup) | class | `MonoBehaviour` | 2 |  |
+| [`ParticleSystemToHand`](/game-api/types/global-p/particlesystemtohand) | class | `MonoBehaviour` | 0 |  |
+| [`PathEndsPart`](/game-api/types/global-p/pathendspart) | class | `GeneratablePart` | 2 |  |
+| [`PathEndsPart.Arrangement`](/game-api/types/global-p/pathendspart-arrangement) | enum |  | 4 |  |
+| [`PathExperience`](/game-api/types/global-p/pathexperience) | class |  | 18 | [Progression](../game-systems/progression.md#pathexperience): One per player per path. |
+| [`PathModelDisplay`](/game-api/types/global-p/pathmodeldisplay) | class | `SkillShrineVisualizer` | 3 |  |
+| [`PathWalker`](/game-api/types/global-p/pathwalker) | class | `MonoBehaviour` | 12 |  |
+| [`PathWalker.OnTargetReached`](/game-api/types/global-p/pathwalker-ontargetreached) | delegate |  | 0 |  |
+| [`PauseEditor`](/game-api/types/global-p/pauseeditor) | class | `ControllerInputButtonPressed` | 0 |  |
+| [`PerPlayerContent<TSaveFormat>`](/game-api/types/global-p/perplayercontent-tsaveformat) | class | `IPerPlayerContent<TSaveFormat>` | 10 |  |
+| [`PerPlayerManager<TThis, TContent, TSaveFormat>`](/game-api/types/global-p/perplayermanager-tthis-tcontent-tsaveformat) | class | `NetworkEntityBehaviour`, `IAutoSave` | 8 |  |
+| [`Phase`](/game-api/types/global-p/phase) | class | `MonoBehaviour`, `IPhase` | 3 |  |
+| [`PhysicalButton`](/game-api/types/global-p/physicalbutton) | class | `Interactable`, `IPreventAtlasing` | 7 | [Buttons and levers](../items/buttons-and-levers.md#physicalbutton): Runs on every machine that simulates the press; not networked. |
+| [`PhysicalMaterial`](/game-api/types/global-p/physicalmaterial) | class | `HashedGeneralValue<PhysicalMaterial>` | 31 | [Items and materials](../items/items-and-materials.md#physicalmaterial): A `HashedGeneralValue<PhysicalMaterial>` asset. Data, same on both sides. |
+| [`PhysicalMaterial.Create`](/game-api/types/global-p/physicalmaterial-create) | class | `AltaMenuItemBase.Assets.Create.Township.Misc.ScriptableObject<PhysicalMaterial>` | 0 |  |
+| [`PhysicalMaterialChannel`](/game-api/types/global-p/physicalmaterialchannel) | enum |  | 6 |  |
+| [`PhysicalMaterialPart`](/game-api/types/global-p/physicalmaterialpart) | class | `GeneratedNetworkEntityBehaviour`, `ISavable<PhysicalMaterialPartSaveData>`, `ISavableSave<PhysicalMaterialPartSaveData>`, +7 more | 6 | [Items and materials](../items/items-and-materials.md#physicalmaterialpart): A networked behaviour on items that have a material. The server picks and syncs the material; clients follow. |
+| [`PhysicalMaterialPart.ChangedMaterial`](/game-api/types/global-p/physicalmaterialpart-changedmaterial) | delegate |  | 0 |  |
+| [`PhysicalMaterialPartSaveData`](/game-api/types/global-p/physicalmaterialpartsavedata) | internal class | `NewSaveData<PhysicalMaterialPart, PhysicalMaterialPartSaveData>` | 1 |  |
+| [`PhysicsAcceleration`](/game-api/types/global-p/physicsacceleration) | class | `MonoBehaviour` | 1 |  |
+| [`PhysicsLock`](/game-api/types/global-p/physicslock) | class | `MonoBehaviour` | 0 |  |
+| [`Pickup`](/game-api/types/global-p/pickup) | class | `Interactable`, `IGetRigidbody`, `IPopulationRemovalMethod`, +5 more | 80 | [Pickup](../items/pickup.md): Runs on both sides; docking on release starts on the holder's client, breaking is the server's. |
+| [`Pickup.PickupHandler`](/game-api/types/global-p/pickup-pickuphandler) | delegate |  | 0 |  |
+| [`PickupArea`](/game-api/types/global-p/pickuparea) | class | `MonoBehaviour` | 3 | [Items, interaction and damage](../items/overview.md): Tracks the pickups inside a trigger. |
+| [`PickupBasedSkill`](/game-api/types/global-p/pickupbasedskill) | abstract class | `ProfessionSkill`, `IInputBasedSkill`, `IChargeableProfessionSkill` | 15 | [Items, interaction and damage](../items/overview.md) |
+| [`PickupBasedSkillModifier`](/game-api/types/global-p/pickupbasedskillmodifier) | abstract class | `ProfessionSkill`, `IInputBasedSkill`, `IChargeableProfessionSkill` | 14 |  |
+| [`PickupButtons`](/game-api/types/global-p/pickupbuttons) | class | `MonoBehaviour` | 0 |  |
+| [`PickupClamp`](/game-api/types/global-p/pickupclamp) | class | `MonoBehaviour` | 1 |  |
+| [`PickupContainer`](/game-api/types/global-p/pickupcontainer) | class | `Interactable` | 7 | [Player inventory](../items/player-inventory.md#pouches-and-pickupcontainer), [Other systems](../game-systems/other-systems.md) |
+| [`PickupDecay`](/game-api/types/global-p/pickupdecay) | class | `BasicDecay` | 2 | [Items, interaction and damage](../items/overview.md): Server-side decay timer for pickups, paused while held or docked. |
+| [`PickupDecaySettings`](/game-api/types/global-p/pickupdecaysettings) | class | `DecaySettings` | 3 |  |
+| [`PickupDecaySettings.Create`](/game-api/types/global-p/pickupdecaysettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Decay.ScriptableObject<PickupDecaySettings>` | 0 |  |
+| [`PickupDockedEvent`](/game-api/types/global-p/pickupdockedevent) | class | `AltaEvent<Interactor, Pickup, PickupDock, PickupDockedUnityEvent>` | 0 |  |
+| [`PickupDockedFilter`](/game-api/types/global-p/pickupdockedfilter) | class | `MonoBehaviour` | 0 |  |
+| [`PickupDockedUnityEvent`](/game-api/types/global-p/pickupdockedunityevent) | class | `UnityEvent<Interactor, Pickup, PickupDock>` | 0 |  |
+| [`PickupDockGroup`](/game-api/types/global-p/pickupdockgroup) | class | `ComponentGroup<PickupDock>` | 1 |  |
+| [`PickupDockingChecker`](/game-api/types/global-p/pickupdockingchecker) | class |  | 7 |  |
+| [`PickupDockingSoundPlayer`](/game-api/types/global-p/pickupdockingsoundplayer) | class | `MonoBehaviour` | 0 |  |
+| [`PickupDockPedestalSpawn`](/game-api/types/global-p/pickupdockpedestalspawn) | class | `PickupDock` | 1 | [Items, interaction and damage](../items/overview.md) |
+| [`PickupDockScaleCompare`](/game-api/types/global-p/pickupdockscalecompare) | class | `MonoBehaviour` | 0 |  |
+| [`PickupEvent`](/game-api/types/global-p/pickupevent) | class | `AltaEvent<Pickup, UnityPickupEvent>` | 0 |  |
+| [`PickupExtension`](/game-api/types/global-p/pickupextension) | class | `Interactable` | 2 |  |
+| [`PickupFromDockRestriction`](/game-api/types/global-p/pickupfromdockrestriction) | enum |  | 3 |  |
+| [`PickupGrabInputMethod`](/game-api/types/global-p/pickupgrabinputmethod) | class | `ISkillInputMethod` | 1 |  |
+| [`PickupGrabInputStructure`](/game-api/types/global-p/pickupgrabinputstructure) | class | `SkillInputStructure` | 1 |  |
+| [`PickupGrabInputStructure.Create`](/game-api/types/global-p/pickupgrabinputstructure-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input.ScriptableObject<PickupGrabInputStructure>` | 0 |  |
+| [`PickupHolder`](/game-api/types/global-p/pickupholder) | class | `NetworkEntityBehaviour` | 7 | [Items, interaction and damage](../items/overview.md): Holds one pickup in place (server decides, synced). |
+| [`PickupHolderFilter`](/game-api/types/global-p/pickupholderfilter) | delegate |  | 0 |  |
+| [`PickupInteractionScaler`](/game-api/types/global-p/pickupinteractionscaler) | class |  | 2 |  |
+| [`PickupJoints`](/game-api/types/global-p/pickupjoints) | class |  | 6 |  |
+| [`PickUpJointType`](/game-api/types/global-p/pickupjointtype) | enum |  | 6 |  |
+| [`PickupOwnershipLogger`](/game-api/types/global-p/pickupownershiplogger) | static class |  | 2 |  |
+| [`PickupSaveData`](/game-api/types/global-p/pickupsavedata) | class | `NewSaveData<Pickup, PickupSaveData>` | 2 |  |
+| [`PickupSaveDataOld1`](/game-api/types/global-p/pickupsavedataold1) | class | `OldSaveData` | 2 |  |
+| [`PickupTypeSetting`](/game-api/types/global-p/pickuptypesetting) | abstract class | `OverridableSettings` | 1 |  |
+| [`PickupTypeSettings`](/game-api/types/global-p/pickuptypesettings) | class | `GlobalSettings<PickupTypeSettings>` | 43 |  |
+| [`PickupTypeSettings.Create`](/game-api/types/global-p/pickuptypesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Items.ScriptableObject<PickupTypeSettings>` | 0 |  |
+| [`PickupWeightScale`](/game-api/types/global-p/pickupweightscale) | class | `MonoBehaviour` | 0 |  |
+| [`PipAvailablePointManager`](/game-api/types/global-p/pipavailablepointmanager) | class | `AvailablePointVisualizerManager` | 4 |  |
+| [`PipelineDistribution`](/game-api/types/global-p/pipelinedistribution) | class | `PipelineElement` | 4 |  |
+| [`PipelineElement`](/game-api/types/global-p/pipelineelement) | abstract class |  | 4 |  |
+| [`PipelineFlattenDistribution`](/game-api/types/global-p/pipelineflattendistribution) | class | `PipelineElement` | 4 |  |
+| [`PipelineResultAttribute`](/game-api/types/global-p/pipelineresultattribute) | class | `Attribute` | 2 |  |
+| [`PlaceItemNoDockFirePuzzleLogic`](/game-api/types/global-p/placeitemnodockfirepuzzlelogic) | class | `MonoBehaviour`, `ISavable<PlaceItemNoDockFirePuzzleLogicSaveData>`, `ISavableSave<PlaceItemNoDockFirePuzzleLogicSaveData>`, +1 more | 1 |  |
+| [`PlaceItemNoDockFirePuzzleLogicSaveData`](/game-api/types/global-p/placeitemnodockfirepuzzlelogicsavedata) | class | `NewSaveData<PlaceItemNoDockFirePuzzleLogic, PlaceItemNoDockFirePuzzleLogicSaveData>` | 3 |  |
+| [`PlaceItemNoDockFirePuzzleLogicSaveData.Option`](/game-api/types/global-p/placeitemnodockfirepuzzlelogicsavedata-option) | class |  | 1 |  |
+| [`PlaceItemNoDockFirePuzzleLogicSaveData1`](/game-api/types/global-p/placeitemnodockfirepuzzlelogicsavedata1) | class | `OldSaveData` | 1 |  |
+| [`PlaceItemNoDockPuzzleLogic`](/game-api/types/global-p/placeitemnodockpuzzlelogic) | class | `MonoBehaviour`, `ISavable<PlaceItemNoDockPuzzleLogicSaveData>`, `ISavableSave<PlaceItemNoDockPuzzleLogicSaveData>`, +1 more | 0 |  |
+| [`PlaceItemNoDockPuzzleLogicSaveData`](/game-api/types/global-p/placeitemnodockpuzzlelogicsavedata) | class | `NewSaveData<PlaceItemNoDockPuzzleLogic, PlaceItemNoDockPuzzleLogicSaveData>` | 3 |  |
+| [`PlaceItemNoDockPuzzleLogicSaveData.Option`](/game-api/types/global-p/placeitemnodockpuzzlelogicsavedata-option) | class |  | 2 |  |
+| [`PlaceItemNoDockPuzzleLogicSaveData1`](/game-api/types/global-p/placeitemnodockpuzzlelogicsavedata1) | class | `OldSaveData` | 2 |  |
+| [`PlaceItemPuzzleLogic`](/game-api/types/global-p/placeitempuzzlelogic) | class | `MonoBehaviour`, `ISavable<PlaceItemPuzzleLogicSaveData>`, `ISavableSave<PlaceItemPuzzleLogicSaveData>`, +1 more | 1 |  |
+| [`PlaceItemPuzzleLogicSaveData`](/game-api/types/global-p/placeitempuzzlelogicsavedata) | class | `NewSaveData<PlaceItemPuzzleLogic, PlaceItemPuzzleLogicSaveData>` | 3 |  |
+| [`PlaceItemPuzzleLogicSaveData.Option`](/game-api/types/global-p/placeitempuzzlelogicsavedata-option) | class |  | 2 |  |
+| [`PlaceItemPuzzleLogicSaveData1`](/game-api/types/global-p/placeitempuzzlelogicsavedata1) | class | `OldSaveData` | 2 |  |
+| [`PlacementObject`](/game-api/types/global-p/placementobject) | class | `MonoBehaviour` | 1 |  |
+| [`PlatformActionMapping`](/game-api/types/global-p/platformactionmapping) | class |  | 10 |  |
+| [`PlatformComponents`](/game-api/types/global-p/platformcomponents) | class | `BuildRendererBakeable` | 2 |  |
+| [`PlatformDefines`](/game-api/types/global-p/platformdefines) | static class |  | 2 |  |
+| [`PlatformDistanceLODModifier`](/game-api/types/global-p/platformdistancelodmodifier) | class | `BuildRendererBakeable` | 1 |  |
+| [`PlatformDriver`](/game-api/types/global-p/platformdriver) | class | `SingletonBehaviour<PlatformDriver>` | 5 |  |
+| [`PlatformHandler`](/game-api/types/global-p/platformhandler) | delegate |  | 0 |  |
+| [`PlatformHeightOffset`](/game-api/types/global-p/platformheightoffset) | struct |  | 3 |  |
+| [`PlatformHeightOffsetSettings`](/game-api/types/global-p/platformheightoffsetsettings) | class | `ScriptableObject` | 1 |  |
+| [`PlatformHierarchyShuffler`](/game-api/types/global-p/platformhierarchyshuffler) | class | `MonoBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 0 |  |
+| [`PlatformLaunchType`](/game-api/types/global-p/platformlaunchtype) | enum |  | 5 |  |
+| [`PlatformLightDarknessReader`](/game-api/types/global-p/platformlightdarknessreader) | class | `DarknessReaderMethod` | 1 |  |
+| [`PlatformLoader`](/game-api/types/global-p/platformloader) | abstract class | `MonoBehaviour` | 1 |  |
+| [`PlatformLODController`](/game-api/types/global-p/platformlodcontroller) | class | `BuildRendererBakeable` | 1 |  |
+| [`PlatformLODModifier`](/game-api/types/global-p/platformlodmodifier) | class | `BuildRendererBakeable` | 1 |  |
+| [`PlatformMaterial`](/game-api/types/global-p/platformmaterial) | class | `ScriptableObject` | 0 |  |
+| [`PlatformMeshController`](/game-api/types/global-p/platformmeshcontroller) | class | `BuildRendererBakeable` | 2 |  |
+| [`PlatformModeHandler`](/game-api/types/global-p/platformmodehandler) | delegate |  | 0 |  |
+| [`PlatformObjects`](/game-api/types/global-p/platformobjects) | class | `BuildRendererBakeable` | 3 |  |
+| [`PlatformObjects.PlatformObjectSetup`](/game-api/types/global-p/platformobjects-platformobjectsetup) | class |  | 3 |  |
+| [`PlatformTexture`](/game-api/types/global-p/platformtexture) | class | `ScriptableObject` | 0 |  |
+| [`Player`](/game-api/types/global-p/player) | class | `NetworkEntity`, `IPlatformPlayer`, `IPlayer`, +1 more | 66 | [Player](../networking/player.md), [Arguments and results](../console-and-utilities/arguments-and-results.md): A `NetworkEntity`, and it implements `IPlayer` (`Alta.Networking.Scripts.Player`). |
+| [`PlayerAdjustableHeightFixerSettings`](/game-api/types/global-p/playeradjustableheightfixersettings) | class | `ScriptableObject` | 5 |  |
+| [`PlayerChunkManager`](/game-api/types/global-p/playerchunkmanager) | class |  | 5 |  |
+| [`PlayerCommunicationManager`](/game-api/types/global-p/playercommunicationmanager) | class | `NetworkEntityBehaviour` | 4 |  |
+| [`PlayerCommunityAnalytics`](/game-api/types/global-p/playercommunityanalytics) | static class |  | 9 |  |
+| [`PlayerComponent`](/game-api/types/global-p/playercomponent) | class | `NetworkEntityBehaviour` | 2 |  |
+| [`PlayerController`](/game-api/types/global-p/playercontroller) | abstract class | `NetworkEntityBehaviour`, `IHasHead`, `IBuildRendererBakeable`, +1 more | 57 | [PlayerController and the body](../networking/player-controller.md): A player's body is its own networked entity, spawned by the server after the `Player` and destroyed and respawned around death. |
+| [`PlayerControllerHandler`](/game-api/types/global-p/playercontrollerhandler) | delegate |  | 0 |  |
+| [`PlayerControllerLocalityController`](/game-api/types/global-p/playercontrollerlocalitycontroller) | class | `MonoBehaviour` | 4 |  |
+| [`PlayerControllerMultiLockModel`](/game-api/types/global-p/playercontrollermultilockmodel) | class | `NetworkEntityBehaviour`, `IPlayerControllerMultiLockModel` | 4 |  |
+| [`PlayerConverter`](/game-api/types/global-p/playerconverter) | class | `TypeConverter` | 3 |  |
+| [`PlayerCrippleController`](/game-api/types/global-p/playercripplecontroller) | class | `MonoBehaviour` | 0 |  |
+| [`PlayerData`](/game-api/types/global-p/playerdata) | struct |  | 5 |  |
+| [`PlayerDataInfo`](/game-api/types/global-p/playerdatainfo) | class |  | 3 |  |
+| [`PlayerDebugMessager`](/game-api/types/global-p/playerdebugmessager) | class | `MonoBehaviour` | 1 |  |
+| [`PlayerDetect`](/game-api/types/global-p/playerdetect) | class | `NetworkEntityBehaviour`, `ISavable<PlayerDetectSaveData>`, `ISavableSave<PlayerDetectSaveData>`, +1 more | 3 |  |
+| [`PlayerDetectSaveData`](/game-api/types/global-p/playerdetectsavedata) | internal class | `NewSaveData<PlayerDetect, PlayerDetectSaveData>` | 3 |  |
+| [`PlayerDetectSaveDataOld1`](/game-api/types/global-p/playerdetectsavedataold1) | internal class | `OldSaveData` | 2 |  |
+| [`PlayerDockDropper`](/game-api/types/global-p/playerdockdropper) | class | `MonoBehaviour` | 0 | [Player inventory](../items/player-inventory.md): Empties a dock when the player's scale changes. |
+| [`PlayerDrinkingMouth`](/game-api/types/global-p/playerdrinkingmouth) | class | `NetworkEntityBehaviour` | 1 |  |
+| [`PlayerEffectManager`](/game-api/types/global-p/playereffectmanager) | class | `MonoBehaviour` | 1 |  |
+| [`PlayerEffectManager.EffectPosition`](/game-api/types/global-p/playereffectmanager-effectposition) | class |  | 8 |  |
+| [`PlayerEffectManager.OverrideSettings`](/game-api/types/global-p/playereffectmanager-overridesettings) | enum |  | 3 |  |
+| [`PlayerEffectParticle`](/game-api/types/global-p/playereffectparticle) | class | `EffectReleaseOnFade` | 2 |  |
+| [`PlayerEvent`](/game-api/types/global-p/playerevent) | class | `AltaEvent<IPlayer, PlayerUnityEvent>` | 0 |  |
+| [`PlayerEventsManager`](/game-api/types/global-p/playereventsmanager) | class | `PlayerComponent` | 13 |  |
+| [`PlayerEventsManager.OnPathHitGenerated`](/game-api/types/global-p/playereventsmanager-onpathhitgenerated) | delegate |  | 0 |  |
+| [`PlayerGoldBankAccount`](/game-api/types/global-p/playergoldbankaccount) | class | `PerPlayerContent<PlayerGoldBankAccountData>` | 0 |  |
+| [`PlayerGoldBankAccountData`](/game-api/types/global-p/playergoldbankaccountdata) | class | `IAltaFileFormat` | 5 |  |
+| [`PlayerHandler`](/game-api/types/global-p/playerhandler) | delegate |  | 0 |  |
+| [`PlayerHealth`](/game-api/types/global-p/playerhealth) | class | `HealthObject` | 10 | [Health and damage](../items/health-and-damage.md#playerhealth): `PlayerHealth : HealthObject`, no namespace. Get it with `playerCharacter.Health` (typed `PlayerHealth`) or `playerController.Health as PlayerHealth`. |
+| [`PlayerHealthVisualEffectsSettings`](/game-api/types/global-p/playerhealthvisualeffectssettings) | class | `ScriptableObject` | 16 |  |
+| [`PlayerHeightFixer`](/game-api/types/global-p/playerheightfixer) | class | `MonoBehaviour` | 1 |  |
+| [`PlayerInput`](/game-api/types/global-p/playerinput) | class | `MonoBehaviour` | 14 |  |
+| [`PlayerInteractionManager`](/game-api/types/global-p/playerinteractionmanager) | class | `NetworkEntityBehaviour`, `ISavable<PlayerInteractionManagerData>`, `ISavableSave<PlayerInteractionManagerData>`, +1 more | 13 | [Items, interaction and damage](../items/overview.md) |
+| [`PlayerInteractionManager.Tracker`](/game-api/types/global-p/playerinteractionmanager-tracker) | class |  | 4 |  |
+| [`PlayerInteractionManagerData`](/game-api/types/global-p/playerinteractionmanagerdata) | class | `NewSaveData<PlayerInteractionManager, PlayerInteractionManagerData>` | 2 |  |
+| [`PlayerInteractionManagerData.PlayerData`](/game-api/types/global-p/playerinteractionmanagerdata-playerdata) | class |  | 4 |  |
+| [`PlayerInteractionManagerData.TrackerData`](/game-api/types/global-p/playerinteractionmanagerdata-trackerdata) | class |  | 2 |  |
+| [`PlayerInteractionRestrictor`](/game-api/types/global-p/playerinteractionrestrictor) | class | `NetworkEntityBehaviour`, `ISavable<PlayerInteractionRestrictorData>`, `ISavableSave<PlayerInteractionRestrictorData>`, +1 more | 9 | [Items, interaction and damage](../items/overview.md) |
+| [`PlayerInteractionRestrictorData`](/game-api/types/global-p/playerinteractionrestrictordata) | class | `NewSaveData<PlayerInteractionRestrictor, PlayerInteractionRestrictorData>` | 2 |  |
+| [`PlayerList`](/game-api/types/global-p/playerlist) | class | `IEnumerable<IPlayer>`, `IEnumerable` | 4 | [Arguments and results](../console-and-utilities/arguments-and-results.md): Names or ids separated by commas, or `*` for everyone |
+| [`PlayerListConverter`](/game-api/types/global-p/playerlistconverter) | class | `TypeConverter` | 2 |  |
+| [`PlayerLocomotionController`](/game-api/types/global-p/playerlocomotioncontroller) | class | `LocomotionController`, `INetworkSerialized` | 8 | [Locomotion](../networking/locomotion.md#playerlocomotioncontroller): The VR body's. |
+| [`PlayerMessageDisplay`](/game-api/types/global-p/playermessagedisplay) | class | `MonoBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 3 |  |
+| [`PlayerModeOverride`](/game-api/types/global-p/playermodeoverride) | class | `ScriptableObject` | 1 |  |
+| [`PlayerModeOverride.Create`](/game-api/types/global-p/playermodeoverride-create) | class | `AltaMenuItemBase.Assets.Create.Township.Debug.ScriptableObject<PlayerModeOverride>` | 0 |  |
+| [`PlayerModeUtilities`](/game-api/types/global-p/playermodeutilities) | static class |  | 3 | [Joining a server](../networking/joining.md), [Startup and app state](../console-and-utilities/startup-and-app-state.md): `PlayerMode` (what this client will join as), `OverrideMode` (set it before joining to join as something else; Rover does), `IsNormalPlayerMode(mode)` (false for Fly and AutoCam, which aren't saved). |
+| [`PlayerMoveChunkData`](/game-api/types/global-p/playermovechunkdata) | class |  | 4 | [Console events](../console-and-utilities/console-events.md) |
+| [`PlayerOrbLight`](/game-api/types/global-p/playerorblight) | class |  | 1 |  |
+| [`PlayerPositionHelper`](/game-api/types/global-p/playerpositionhelper) | class | `PositionFromOriginHelper` | 1 |  |
+| [`PlayerPositionRestrictor`](/game-api/types/global-p/playerpositionrestrictor) | class | `MonoBehaviour` | 1 |  |
+| [`PlayerPostboxStorage`](/game-api/types/global-p/playerpostboxstorage) | class | `PerPlayerContent<PlayerPostboxStorageFileFormat>` | 8 | [Trading](../game-systems/trading.md): The per-player file, above. |
+| [`PlayerPostboxStorage.InitialContent`](/game-api/types/global-p/playerpostboxstorage-initialcontent) | class |  | 2 |  |
+| [`PlayerPostboxStorageEventHandler`](/game-api/types/global-p/playerpostboxstorageeventhandler) | delegate |  | 0 |  |
+| [`PlayerPostboxStorageFileFormat`](/game-api/types/global-p/playerpostboxstoragefileformat) | class | `IAltaFileFormat` | 4 |  |
+| [`PlayerProgressFlag`](/game-api/types/global-p/playerprogressflag) | abstract class | `HashedGeneralValue<PlayerProgressFlag>` | 2 |  |
+| [`PlayerProgressFlagConverter<T>`](/game-api/types/global-p/playerprogressflagconverter-t) | class | `TypeConverter` | 2 |  |
+| [`PlayerProgression`](/game-api/types/global-p/playerprogression) | class |  | 6 |  |
+| [`PlayerProgression.EventTypeEnum`](/game-api/types/global-p/playerprogression-eventtypeenum) | enum |  | 3 |  |
+| [`PlayerProgressionManager`](/game-api/types/global-p/playerprogressionmanager) | class | `PlayerComponent` | 29 | [Progression](../game-systems/progression.md#playerprogressionmanager): One per `Player` (not per body), so it survives respawns. Get it with `player.ProgressionManager` (it's on `IPlayer` too). |
+| [`PlayerProgressionManager.PracticeTuple`](/game-api/types/global-p/playerprogressionmanager-practicetuple) | class |  | 5 |  |
+| [`PlayerRoleProvider`](/game-api/types/global-p/playerroleprovider) | class | `MonoBehaviour` | 1 |  |
+| [`PlayerScreenFader`](/game-api/types/global-p/playerscreenfader) | abstract class | `MonoBehaviour` | 10 |  |
+| [`PlayerSmoothManager`](/game-api/types/global-p/playersmoothmanager) | class | `NetworkEntityBehaviour` | 5 |  |
+| [`PlayerSpecialEffectsController`](/game-api/types/global-p/playerspecialeffectscontroller) | class | `MonoBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable`, +1 more | 26 |  |
+| [`PlayerSystemHandler`](/game-api/types/global-p/playersystemhandler) | delegate |  | 0 |  |
+| [`PlayerTextMessage`](/game-api/types/global-p/playertextmessage) | struct |  | 4 |  |
+| [`PlayerTimeUpdate`](/game-api/types/global-p/playertimeupdate) | delegate |  | 0 |  |
+| [`PlayerToolBasedSkillHelper`](/game-api/types/global-p/playertoolbasedskillhelper) | class | `PlayerComponent` | 9 |  |
+| [`PlayerTracker`](/game-api/types/global-p/playertracker) | class |  | 8 |  |
+| [`PlayerUnityEvent`](/game-api/types/global-p/playerunityevent) | class | `UnityEvent<IPlayer>` | 0 |  |
+| [`PlayerUnlock`](/game-api/types/global-p/playerunlock) | class | `HashedGeneralValue<PlayerUnlock>` | 5 | [Arguments and results](../console-and-utilities/arguments-and-results.md), [Skills and unlocks](../game-systems/skills-and-unlocks.md): Has `Prerequisites`, `Orbs`, and `UnlockingPermissions` (teleport layer, climb layer, and an optional `MaxStatDefinition` to raise). |
+| [`PlayerUnlock.Create`](/game-api/types/global-p/playerunlock-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<PlayerUnlock>` | 0 |  |
+| [`PlayerUnlock.OrbProperties`](/game-api/types/global-p/playerunlock-orbproperties) | class |  | 5 |  |
+| [`PlayerUnlock.UnlockingPermissionsSetup`](/game-api/types/global-p/playerunlock-unlockingpermissionssetup) | class |  | 7 |  |
+| [`PlayerUnlockConverter`](/game-api/types/global-p/playerunlockconverter) | class | `HashedGeneralValueConverter<PlayerUnlock>` | 0 |  |
+| [`PlayerUnlockManager`](/game-api/types/global-p/playerunlockmanager) | class | `PlayerComponent`, `ISavable<PlayerUnlockManagerSaveData>`, `ISavableSave<PlayerUnlockManagerSaveData>`, +1 more | 15 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): `PlayerComponent`, one per player (`player.UnlockManager`, also on `IPlayer`). |
+| [`PlayerUnlockManagerSaveData`](/game-api/types/global-p/playerunlockmanagersavedata) | class | `NewSaveData<PlayerUnlockManager, PlayerUnlockManagerSaveData>` | 4 |  |
+| [`PlayerUnlockStation`](/game-api/types/global-p/playerunlockstation) | class | `NetworkEntityBehaviour`, `ISavable<PlayerUnlockStationSaveData>`, `ISavableSave<PlayerUnlockStationSaveData>`, +1 more | 8 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): A station in the world. Its `UnlockStationType` is `Start`, `Normal`, `Unlock` or `Completion`. |
+| [`PlayerUnlockStation.NetworkEffect`](/game-api/types/global-p/playerunlockstation-networkeffect) | enum |  | 3 |  |
+| [`PlayerUnlockStation.UnlockStationType`](/game-api/types/global-p/playerunlockstation-unlockstationtype) | enum |  | 4 |  |
+| [`PlayerUnlockStationSaveData`](/game-api/types/global-p/playerunlockstationsavedata) | class | `NewSaveData<PlayerUnlockStation, PlayerUnlockStationSaveData>` | 3 |  |
+| [`PlayerUnlockStationSaveDataOld1`](/game-api/types/global-p/playerunlockstationsavedataold1) | class | `OldSaveData` | 5 |  |
+| [`PlayerUnlockStationSaveDataOld2`](/game-api/types/global-p/playerunlockstationsavedataold2) | class | `OldSaveData` | 6 |  |
+| [`PlayerVisionComfort`](/game-api/types/global-p/playervisioncomfort) | class |  | 2 |  |
+| [`PlayerVisionComfortSettings`](/game-api/types/global-p/playervisioncomfortsettings) | class | `GlobalSettings<PlayerVisionComfortSettings>` | 4 |  |
+| [`PlayerVisionComfortSettings.Create`](/game-api/types/global-p/playervisioncomfortsettings-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<PlayerVisionComfortSettings>` | 0 |  |
+| [`PlayerWeight`](/game-api/types/global-p/playerweight) | class | `NetworkEntityBehaviour` | 5 |  |
+| [`PlayingOpenXRInputController`](/game-api/types/global-p/playingopenxrinputcontroller) | class | `OpenXRInputController` | 1 |  |
+| [`PlaySound`](/game-api/types/global-p/playsound) | class | `StateMachineBehaviour` | 1 |  |
+| [`PlayTutorialChecker`](/game-api/types/global-p/playtutorialchecker) | class | `LoggedInTool` | 0 |  |
+| [`Pointer`](/game-api/types/global-p/pointer) | class | `ControllerExtension` | 11 |  |
+| [`PointerChunkReference`](/game-api/types/global-p/pointerchunkreference) | class | `MonoBehaviour` | 2 |  |
+| [`PointerEventHandler`](/game-api/types/global-p/pointereventhandler) | delegate |  | 0 |  |
+| [`PointerGameObjectExtensions`](/game-api/types/global-p/pointergameobjectextensions) | static class |  | 3 |  |
+| [`PointTowardsEachotherPart`](/game-api/types/global-p/pointtowardseachotherpart) | class | `GeneratablePart` | 1 |  |
+| [`PoolChangedHandler`](/game-api/types/global-p/poolchangedhandler) | delegate |  | 0 |  |
+| [`PooledAkGameObj`](/game-api/types/global-p/pooledakgameobj) | class | `AkGameObj` | 1 |  |
+| [`PooledEffectParent`](/game-api/types/global-p/pooledeffectparent) | class | `MonoBehaviour` | 0 |  |
+| [`PooledFireEffect`](/game-api/types/global-p/pooledfireeffect) | class | `PooledObject` | 8 |  |
+| [`PooledLerpFollow`](/game-api/types/global-p/pooledlerpfollow) | class | `LerpFollow` | 1 |  |
+| [`PooledMeshReplaceObjectDefinition`](/game-api/types/global-p/pooledmeshreplaceobjectdefinition) | class | `PooledObjectDefinition` | 3 |  |
+| [`PooledMeshReplaceObjectDefinition.Create`](/game-api/types/global-p/pooledmeshreplaceobjectdefinition-create) | class | `AltaMenuItemBase.Assets.Create.Township.Misc.ScriptableObject<PooledMeshReplaceObjectDefinition>` | 0 |  |
+| [`PooledObject`](/game-api/types/global-p/pooledobject) | class | `MonoBehaviour` | 9 |  |
+| [`PooledObjectDefinition`](/game-api/types/global-p/pooledobjectdefinition) | class | `PooledObjectDefinitionBase` | 6 |  |
+| [`PooledObjectDefinition.Create`](/game-api/types/global-p/pooledobjectdefinition-create) | class | `AltaMenuItemBase.Assets.Create.Township.Misc.ScriptableObject<PooledObjectDefinition>` | 0 |  |
+| [`PooledObjectDefinitionBase`](/game-api/types/global-p/pooledobjectdefinitionbase) | abstract class | `ScriptableObject` | 15 |  |
+| [`PooledObjectDefinitionTrigger`](/game-api/types/global-p/pooledobjectdefinitiontrigger) | class | `MonoBehaviour` | 0 |  |
+| [`PooledObjectPool`](/game-api/types/global-p/pooledobjectpool) | class | `BasicPooledObjectPool` | 3 |  |
+| [`PooledObjectSoundHook`](/game-api/types/global-p/pooledobjectsoundhook) | class | `MonoBehaviour` | 0 |  |
+| [`PooledParticleSystemMeshEmision`](/game-api/types/global-p/pooledparticlesystemmeshemision) | class | `DestroyByTime`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 |  |
+| [`PooledTempWwiseAudio`](/game-api/types/global-p/pooledtempwwiseaudio) | class | `PooledObject` | 1 |  |
+| [`PooledTextRenderer`](/game-api/types/global-p/pooledtextrenderer) | class | `PooledObject` | 1 |  |
+| [`PopulationPath`](/game-api/types/global-p/populationpath) | class | `BasicDynamicPath`, `IPopulationFolder`, `IPointNormalEvaluator`, +3 more | 11 |  |
+| [`PopulationPathSaveData`](/game-api/types/global-p/populationpathsavedata) | class | `NewSaveData<PopulationPath, PopulationPathSaveData>` | 4 |  |
+| [`PopupBoard`](/game-api/types/global-p/popupboard) | class | `MonoBehaviour`, `IPopupBoard` | 6 |  |
+| [`PopupManager`](/game-api/types/global-p/popupmanager) | class | `SingletonBehaviour<PopupManager>` | 6 |  |
+| [`PopupManager.IPopupConfig`](/game-api/types/global-p/popupmanager-ipopupconfig) | interface |  | 5 |  |
+| [`PopupScriptableObject`](/game-api/types/global-p/popupscriptableobject) | class | `ScriptableObject` | 1 |  |
+| [`PortalBasedCullingCamera`](/game-api/types/global-p/portalbasedcullingcamera) | class | `MonoBehaviour` | 4 |  |
+| [`PoseChangedHandler`](/game-api/types/global-p/posechangedhandler) | delegate |  | 0 |  |
+| [`PosedObject`](/game-api/types/global-p/posedobject) | class | `MonoBehaviour` | 0 |  |
+| [`PositionAndRotationTarget`](/game-api/types/global-p/positionandrotationtarget) | struct |  | 4 |  |
+| [`PositionedNetworkPrefab`](/game-api/types/global-p/positionednetworkprefab) | class | `PositionedPrefab<NetworkEntity>` | 3 |  |
+| [`PositionedPrefab<T>`](/game-api/types/global-p/positionedprefab-t) | abstract class |  | 2 |  |
+| [`PositionedStaticPrefab`](/game-api/types/global-p/positionedstaticprefab) | class | `PositionedPrefab<GameObject>` | 2 |  |
+| [`PositionEvent`](/game-api/types/global-p/positionevent) | class | `AltaEvent<Vector3, PositionHandler>` | 0 |  |
+| [`PositionFromOriginHandler`](/game-api/types/global-p/positionfromoriginhandler) | class |  | 2 |  |
+| [`PositionFromOriginHelper`](/game-api/types/global-p/positionfromoriginhelper) | abstract class | `MonoBehaviour` | 1 |  |
+| [`PositionHandler`](/game-api/types/global-p/positionhandler) | class | `UnityEvent<Vector3>` | 0 |  |
+| [`PositioningMode`](/game-api/types/global-p/positioningmode) | enum |  | 3 |  |
+| [`PositionLerp`](/game-api/types/global-p/positionlerp) | class | `MonoBehaviour` | 1 |  |
+| [`PositionRecord`](/game-api/types/global-p/positionrecord) | struct |  | 5 |  |
+| [`PositionRecorder`](/game-api/types/global-p/positionrecorder) | class |  | 6 |  |
+| [`PositionRotationEvent`](/game-api/types/global-p/positionrotationevent) | class | `AltaEvent<Vector3, Quaternion, PositionRotationHandler>` | 0 |  |
+| [`PositionRotationHandler`](/game-api/types/global-p/positionrotationhandler) | class | `UnityEvent<Vector3, Quaternion>` | 0 |  |
+| [`PositionSerializer`](/game-api/types/global-p/positionserializer) | class |  | 10 |  |
+| [`PositionSerializer<T>`](/game-api/types/global-p/positionserializer-t) | class | `PositionSerializer` | 2 |  |
+| [`PositionSurfaceDefinitionSettings`](/game-api/types/global-p/positionsurfacedefinitionsettings) | class | `GlobalSettings<PositionSurfaceDefinitionSettings>` | 2 |  |
+| [`PositionSwapper`](/game-api/types/global-p/positionswapper) | class | `MonoBehaviour` | 0 |  |
+| [`Postbox`](/game-api/types/global-p/postbox) | class | `NetworkEntityBehaviour` | 4 | [Trading](../game-systems/trading.md): Shows each player whether their `PlayerPostboxStorage` has anything, and gives items out when its handle lever is turned (server). |
+| [`PostboxManager`](/game-api/types/global-p/postboxmanager) | class | `PerPlayerManager<PostboxManager, PlayerPostboxStorage, PlayerPostboxStorageFileFormat>` | 5 | [Trading](../game-systems/trading.md) |
+| [`PostboxManager.TradeVendorData`](/game-api/types/global-p/postboxmanager-tradevendordata) | class |  | 4 |  |
+| [`PostboxSender`](/game-api/types/global-p/postboxsender) | class | `NetworkEntityBehaviour` | 4 | [Trading](../game-systems/trading.md): Sends items from its sending docks to another player's postbox, for a coin cost. |
+| [`PostBoxSenderManager`](/game-api/types/global-p/postboxsendermanager) | class | `NetworkEntityBehaviour` | 7 | [Trading](../game-systems/trading.md): Tracks how many items one player may still send another (`GetAvailableQuantity(from, to)`). |
+| [`PostRenderNotifier`](/game-api/types/global-p/postrendernotifier) | class | `MonoBehaviour` | 2 |  |
+| [`PotatoSapling`](/game-api/types/global-p/potatosapling) | class | `GeneratedNetworkEntityBehaviour` | 1 |  |
+| [`PotionVisuals`](/game-api/types/global-p/potionvisuals) | class | `MonoBehaviour` | 0 |  |
+| [`PouchSpawner`](/game-api/types/global-p/pouchspawner) | class | `SpawnerBase` | 1 |  |
+| [`PowerCrossSlash`](/game-api/types/global-p/powercrossslash) | class | `TargetBasedSkill` | 2 |  |
+| [`PowerCrossSlash.Create`](/game-api/types/global-p/powercrossslash-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<PowerCrossSlash>` | 0 |  |
+| [`PowerHit`](/game-api/types/global-p/powerhit) | class | `PickupBasedSkill` | 3 | [Items, interaction and damage](../items/overview.md) |
+| [`PowerHit.Create`](/game-api/types/global-p/powerhit-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<PowerHit>` | 0 |  |
+| [`PowerStinger`](/game-api/types/global-p/powerstinger) | class | `TargetBasedSkill` | 4 |  |
+| [`PowerStrike`](/game-api/types/global-p/powerstrike) | class | `PickupBasedSkill`, `IStrikeSuccessionModifier` | 4 |  |
+| [`PowerStrike.Create`](/game-api/types/global-p/powerstrike-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<PowerStrike>` | 0 |  |
+| [`PowerStrikeTester`](/game-api/types/global-p/powerstriketester) | class | `NetworkEntityBehaviour`, `IProfessionSkillTester` | 3 |  |
+| [`PracticeAreaShrinkFader`](/game-api/types/global-p/practiceareashrinkfader) | abstract class | `FadeInOutBase` | 2 |  |
+| [`PracticeObjectFader`](/game-api/types/global-p/practiceobjectfader) | class | `FadeInOutNetworkEntity`, `INetworkEntityBehaviour` | 1 |  |
+| [`PrefabHashAttribute`](/game-api/types/global-p/prefabhashattribute) | class | `PropertyAttribute` | 0 |  |
+| [`PrefabLODSettings`](/game-api/types/global-p/prefablodsettings) | class | `ScriptableObject` | 2 |  |
+| [`PrefabStageDefinition`](/game-api/types/global-p/prefabstagedefinition) | class | `HashedGeneralValue<PrefabStageDefinition>` | 2 |  |
+| [`PrefabStageDefinition.PrefabSetup`](/game-api/types/global-p/prefabstagedefinition-prefabsetup) | class |  | 3 |  |
+| [`PresetWayPointPath`](/game-api/types/global-p/presetwaypointpath) | class | `NetworkEntityBehaviour`, `IPositionRotationPath` | 1 |  |
+| [`PreventStaticBatchingCollisionSplitting`](/game-api/types/global-p/preventstaticbatchingcollisionsplitting) | class | `MonoBehaviour`, `IDontSplit` | 0 |  |
+| [`ProcessDiagnostics`](/game-api/types/global-p/processdiagnostics) | class |  | 4 |  |
+| [`ProcessMetrics`](/game-api/types/global-p/processmetrics) | class |  | 4 |  |
+| [`ProcessMetrics.MemoryCounters`](/game-api/types/global-p/processmetrics-memorycounters) | struct |  | 10 |  |
+| [`ProcessRunner`](/game-api/types/global-p/processrunner) | class | `IDisposable` | 3 |  |
+| [`ProfessionDiskAvailablePointsVisualizer`](/game-api/types/global-p/professiondiskavailablepointsvisualizer) | class | `ExperienceFillVisualizer` | 2 |  |
+| [`ProfessionSkill`](/game-api/types/global-p/professionskill) | abstract class | `HashedGeneralValue<ProfessionSkill>` | 12 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): The ability itself. `virtual void Unlock(PlayerProgressionManager)` and `Lock(...)` run when a player gains or loses it. |
+| [`ProfessionSkill<T>`](/game-api/types/global-p/professionskill-t) | abstract class | `ProfessionSkill` | 6 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): The ability itself. `virtual void Unlock(PlayerProgressionManager)` and `Lock(...)` run when a player gains or loses it. |
+| [`ProfessionSkillDelegate`](/game-api/types/global-p/professionskilldelegate) | delegate |  | 0 |  |
+| [`ProfessionSkillTree`](/game-api/types/global-p/professionskilltree) | class | `ScriptableObject` | 8 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): `ScriptableObject`, one per path, loaded from `Resources/ProgressionTrees/`. |
+| [`ProfessionsProgressShrine`](/game-api/types/global-p/professionsprogressshrine) | class | `ProgressionShrine` | 2 |  |
+| [`ProfileChunkLoading`](/game-api/types/global-p/profilechunkloading) | class | `MonoBehaviour` | 3 |  |
+| [`ProfileChunkLoading.GameData`](/game-api/types/global-p/profilechunkloading-gamedata) | class |  | 15 |  |
+| [`ProfileChunkLoading.ProfileData`](/game-api/types/global-p/profilechunkloading-profiledata) | class |  | 7 |  |
+| [`ProfileChunkLoading.ProfilingPosition`](/game-api/types/global-p/profilechunkloading-profilingposition) | class |  | 2 |  |
+| [`ProfilingLoader`](/game-api/types/global-p/profilingloader) | class | `ScriptableObject` | 6 |  |
+| [`ProfilingPositionCycler`](/game-api/types/global-p/profilingpositioncycler) | class | `GlobalSettings<ProfilingPositionCycler>` | 5 |  |
+| [`ProfilingPositionCycler.Create`](/game-api/types/global-p/profilingpositioncycler-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<ProfilingPositionCycler>` | 0 |  |
+| [`ProfilingPositionCycler.ProfilingPosition`](/game-api/types/global-p/profilingpositioncycler-profilingposition) | class |  | 4 |  |
+| [`ProfilingTrigger`](/game-api/types/global-p/profilingtrigger) | class | `MonoBehaviour` | 1 |  |
+| [`ProgressBar`](/game-api/types/global-p/progressbar) | abstract class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 5 |  |
+| [`ProgressCorrection`](/game-api/types/global-p/progresscorrection) | class | `MonoBehaviour` | 1 |  |
+| [`ProgressionPath`](/game-api/types/global-p/progressionpath) | enum |  | 8 | [Progression](../game-systems/progression.md#progressionpath): A path only takes XP if its skill tree is enabled (`ProfessionSkillTree.GetProfessionTree(path).IsEnabled`). The trees are loaded from `Resources/ProgressionTrees/`. |
+| [`ProgressionSettings`](/game-api/types/global-p/progressionsettings) | class | `GlobalSettings<ProgressionSettings>` | 20 | [Progression](../game-systems/progression.md#progressionsettings): Get it with `GlobalSettings<ProgressionSettings>.Instance` (`Alta.Global`). |
+| [`ProgressionSettings.Create`](/game-api/types/global-p/progressionsettings-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<ProgressionSettings>` | 0 |  |
+| [`ProgressionSettings.InputSystemSound`](/game-api/types/global-p/progressionsettings-inputsystemsound) | class |  | 2 |  |
+| [`ProgressionShrine`](/game-api/types/global-p/progressionshrine) | abstract class | `NetworkEntityBehaviour` | 11 |  |
+| [`ProgressionSlot`](/game-api/types/global-p/progressionslot) | class |  | 15 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): A node in a tree: `uint Hash`, `uint Cost`, `List<uint> Dependencies` (slot hashes), `ProfessionSkill Skill`, `ProgressionPath Path`. |
+| [`ProgressionSlotContainer`](/game-api/types/global-p/progressionslotcontainer) | abstract class | `NetworkEntityBehaviour`, `ISkillOrb` | 8 |  |
+| [`ProgressMaterialEffect`](/game-api/types/global-p/progressmaterialeffect) | class | `DestroyByTime` | 2 |  |
+| [`Projectile`](/game-api/types/global-p/projectile) | class | `NetworkEntityBehaviour`, `IToolHitDependant`, `IImpactorResetEffect`, +2 more | 13 | [Combat, damage and death](../creatures/combat-and-damage.md): A spawned projectile. Its collisions are handled by the server (`OnCollision` returns early on clients). |
+| [`ProjectileAltaEvent`](/game-api/types/global-p/projectilealtaevent) | class | `AltaEvent<Projectile, ProjectileUnityEvent>` | 0 |  |
+| [`ProjectileComponent`](/game-api/types/global-p/projectilecomponent) | abstract class | `MonoBehaviour` | 1 |  |
+| [`ProjectileEffect`](/game-api/types/global-p/projectileeffect) | class | `ProjectileComponent` | 0 |  |
+| [`ProjectileUnityEvent`](/game-api/types/global-p/projectileunityevent) | class | `UnityEvent<Projectile>` | 0 |  |
+| [`PropelledProjectile`](/game-api/types/global-p/propelledprojectile) | class | `MonoBehaviour` | 1 |  |
+| [`PropertyBlockColorAccessor`](/game-api/types/global-p/propertyblockcoloraccessor) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 |  |
+| [`PullCord`](/game-api/types/global-p/pullcord) | class | `MonoBehaviour` | 0 |  |
+| [`PullEvent`](/game-api/types/global-p/pullevent) | class | `AltaEvent<PullPickup, PullEventHandler>` | 0 |  |
+| [`PullEventHandler`](/game-api/types/global-p/pulleventhandler) | class | `UnityEvent<PullPickup>` | 0 |  |
+| [`PulleyBeltHelper`](/game-api/types/global-p/pulleybelthelper) | static class |  | 2 |  |
+| [`PullingHandle`](/game-api/types/global-p/pullinghandle) | class | `NetworkEntityBehaviour` | 1 |  |
+| [`PullPickup`](/game-api/types/global-p/pullpickup) | class | `NetworkEntityBehaviour` | 5 | [Items, interaction and damage](../items/overview.md) |
+| [`PullPickupGroup`](/game-api/types/global-p/pullpickupgroup) | class | `NetworkEntityBehaviour` | 7 |  |
+| [`Pump`](/game-api/types/global-p/pump) | class | `MonoBehaviour` | 0 |  |
+| [`PumpingMechanism`](/game-api/types/global-p/pumpingmechanism) | class | `MonoBehaviour` | 4 |  |
+| [`Puzzle`](/game-api/types/global-p/puzzle) | class | `PuzzleCondition` | 0 |  |
+| [`PuzzleCondition`](/game-api/types/global-p/puzzlecondition) | class | `MonoBehaviour` | 2 |  |
+| [`PuzzleConditionHandler`](/game-api/types/global-p/puzzleconditionhandler) | delegate |  | 0 |  |
+| [`PuzzleConditionHandlerTemp`](/game-api/types/global-p/puzzleconditionhandlertemp) | delegate |  | 0 |  |
+| [`PuzzleConditionsAND`](/game-api/types/global-p/puzzleconditionsand) | class | `PuzzleCondition` | 0 |  |
+| [`PuzzleConditionsANDTemp`](/game-api/types/global-p/puzzleconditionsandtemp) | class | `PuzzleConditionTemp` | 0 |  |
+| [`PuzzleConditionTemp`](/game-api/types/global-p/puzzleconditiontemp) | class | `MonoBehaviour` | 2 |  |
+| [`PuzzleDoor`](/game-api/types/global-p/puzzledoor) | class | `MonoBehaviour` | 0 |  |
+| [`PuzzleLightBeam`](/game-api/types/global-p/puzzlelightbeam) | class | `MonoBehaviour`, `ILightEmitter` | 2 |  |
+| [`PuzzleLightMirror`](/game-api/types/global-p/puzzlelightmirror) | class | `PuzzleLightBeam`, `ILightDetector`, `ILightEmitter` | 2 |  |
+| [`PuzzleLightReflectExample2`](/game-api/types/global-p/puzzlelightreflectexample2) | class | `MonoBehaviour` | 2 |  |
+| [`PuzzleLightTarget`](/game-api/types/global-p/puzzlelighttarget) | class | `PuzzleCondition`, `ILightDetector` | 2 |  |

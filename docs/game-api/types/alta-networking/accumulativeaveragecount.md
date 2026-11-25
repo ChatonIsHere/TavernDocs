@@ -1,0 +1,48 @@
+---
+title: "AccumulativeAverageCount"
+description: "class AccumulativeAverageCount in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# AccumulativeAverageCount
+
+A **class** in `Root.Township`, `Alta.Networking`.
+
+- **Listed in** [Networking and servers](/game-api/types/alta-networking)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AccumulativeAverageCount()"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-count" /><code>{"private int count"}</code> |  |
+| <Link id="m-counts" /><code>{"private "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" counts"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-count-2" /><code>{"double Count { get; }"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clearrecord" /><code>{"void ClearRecord()"}</code> |  |
+| <Link id="m-increment" /><code>{"void Increment()"}</code> |  |
+| <Link id="m-recordandresetcount" /><code>{"void RecordAndResetCount()"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `AccumulativeAverageCount`:
+
+[`LevelSelector.Alta.Networking.INetworkSerialized.PrepareForWriteTimer`](/game-api/types/alta-world-generation/levelselector#m-alta-networking-inetworkserialized-prepareforwritetimer), [`LevelSelector.Alta.Networking.INetworkSerialized.SerializeTimer`](/game-api/types/alta-world-generation/levelselector#m-alta-networking-inetworkserialized-serializetimer), [`LevelSelector.prepareForWriteTimer`](/game-api/types/alta-world-generation/levelselector#m-prepareforwritetimer), [`LevelSelector.serializeTimer`](/game-api/types/alta-world-generation/levelselector#m-serializetimer), [`HeatPointCollection.Alta.Networking.INetworkSerialized.PrepareForWriteTimer`](/game-api/types/alta-stats-effects/heatpointcollection#m-alta-networking-inetworkserialized-prepareforwritetimer), [`HeatPointCollection.Alta.Networking.INetworkSerialized.SerializeTimer`](/game-api/types/alta-stats-effects/heatpointcollection#m-alta-networking-inetworkserialized-serializetimer), [`HeatPointCollection.prepareForWriteTimer`](/game-api/types/alta-stats-effects/heatpointcollection#m-prepareforwritetimer), [`HeatPointCollection.serializeTimer`](/game-api/types/alta-stats-effects/heatpointcollection#m-serializetimer), [`FaceTarget.Alta.Networking.INetworkSerialized.PrepareForWriteTimer`](/game-api/types/alta-intelligence/facetarget#m-alta-networking-inetworkserialized-prepareforwritetimer), [`FaceTarget.Alta.Networking.INetworkSerialized.SerializeTimer`](/game-api/types/alta-intelligence/facetarget#m-alta-networking-inetworkserialized-serializetimer), [`FaceTarget.prepareForWriteTimer`](/game-api/types/alta-intelligence/facetarget#m-prepareforwritetimer), [`FaceTarget.serializeTimer`](/game-api/types/alta-intelligence/facetarget#m-serializetimer), [`RotateToTargetWorldXZ.Alta.Networking.INetworkSerialized.PrepareForWriteTimer`](/game-api/types/alta-intelligence/rotatetotargetworldxz#m-alta-networking-inetworkserialized-prepareforwritetimer), [`RotateToTargetWorldXZ.Alta.Networking.INetworkSerialized.SerializeTimer`](/game-api/types/alta-intelligence/rotatetotargetworldxz#m-alta-networking-inetworkserialized-serializetimer), [`RotateToTargetWorldXZ.prepareForWriteTimer`](/game-api/types/alta-intelligence/rotatetotargetworldxz#m-prepareforwritetimer), [`RotateToTargetWorldXZ.serializeTimer`](/game-api/types/alta-intelligence/rotatetotargetworldxz#m-serializetimer), [`NetworkAnimator.Alta.Networking.INetworkSerialized.PrepareForWriteTimer`](/game-api/types/alta-networking/networkanimator#m-alta-networking-inetworkserialized-prepareforwritetimer), [`NetworkAnimator.Alta.Networking.INetworkSerialized.SerializeTimer`](/game-api/types/alta-networking/networkanimator#m-alta-networking-inetworkserialized-serializetimer), [`NetworkAnimator.prepareForWriteTimer`](/game-api/types/alta-networking/networkanimator#m-prepareforwritetimer), [`NetworkAnimator.serializeTimer`](/game-api/types/alta-networking/networkanimator#m-serializetimer), [`INetworkSerialized.PrepareForWriteTimer`](/game-api/types/alta-networking/inetworkserialized#m-prepareforwritetimer), [`INetworkSerialized.SerializeTimer`](/game-api/types/alta-networking/inetworkserialized#m-serializetimer), [`NetworkAxisValue.Alta.Networking.INetworkSerialized.PrepareForWriteTimer`](/game-api/types/alta-networking/networkaxisvalue#m-alta-networking-inetworkserialized-prepareforwritetimer), [`NetworkAxisValue.Alta.Networking.INetworkSerialized.SerializeTimer`](/game-api/types/alta-networking/networkaxisvalue#m-alta-networking-inetworkserialized-serializetimer), [`NetworkAxisValue.prepareForWriteTimer`](/game-api/types/alta-networking/networkaxisvalue#m-prepareforwritetimer), [`NetworkAxisValue.serializeTimer`](/game-api/types/alta-networking/networkaxisvalue#m-serializetimer), [`NetworkRigidbody.Alta.Networking.INetworkSerialized.PrepareForWriteTimer`](/game-api/types/alta-networking/networkrigidbody#m-alta-networking-inetworkserialized-prepareforwritetimer), [`NetworkRigidbody.Alta.Networking.INetworkSerialized.SerializeTimer`](/game-api/types/alta-networking/networkrigidbody#m-alta-networking-inetworkserialized-serializetimer), [`NetworkRigidbody.prepareForWriteTimer`](/game-api/types/alta-networking/networkrigidbody#m-prepareforwritetimer), [`NetworkRigidbody.serializeTimer`](/game-api/types/alta-networking/networkrigidbody#m-serializetimer), [`NetworkSerializedProfiler.prepareForWriteTimers`](/game-api/types/alta-networking/networkserializedprofiler#m-prepareforwritetimers), [`NetworkSerializedProfiler.serializeTimers`](/game-api/types/alta-networking/networkserializedprofiler#m-serializetimers), [`NetworkTransform.Alta.Networking.INetworkSerialized.PrepareForWriteTimer`](/game-api/types/alta-networking/networktransform#m-alta-networking-inetworkserialized-prepareforwritetimer), [`NetworkTransform.Alta.Networking.INetworkSerialized.SerializeTimer`](/game-api/types/alta-networking/networktransform#m-alta-networking-inetworkserialized-serializetimer), [`NetworkTransform.prepareForWriteTimer`](/game-api/types/alta-networking/networktransform#m-prepareforwritetimer), [`NetworkTransform.serializeTimer`](/game-api/types/alta-networking/networktransform#m-serializetimer), [`HandGestureController.Alta.Networking.INetworkSerialized.PrepareForWriteTimer`](/game-api/types/global-e-h/handgesturecontroller#m-alta-networking-inetworkserialized-prepareforwritetimer), [`HandGestureController.Alta.Networking.INetworkSerialized.SerializeTimer`](/game-api/types/global-e-h/handgesturecontroller#m-alta-networking-inetworkserialized-serializetimer), [`HandGestureController.prepareForWriteTimer`](/game-api/types/global-e-h/handgesturecontroller#m-prepareforwritetimer), [`HandGestureController.serializeTimer`](/game-api/types/global-e-h/handgesturecontroller#m-serializetimer), [`LocomotionController.Alta.Networking.INetworkSerialized.PrepareForWriteTimer`](/game-api/types/global-i-l/locomotioncontroller#m-alta-networking-inetworkserialized-prepareforwritetimer), [`LocomotionController.Alta.Networking.INetworkSerialized.SerializeTimer`](/game-api/types/global-i-l/locomotioncontroller#m-alta-networking-inetworkserialized-serializetimer), [`LocomotionController.prepareForWriteTimer`](/game-api/types/global-i-l/locomotioncontroller#m-prepareforwritetimer), [`LocomotionController.serializeTimer`](/game-api/types/global-i-l/locomotioncontroller#m-serializetimer), [`MovePickup.Alta.Networking.INetworkSerialized.PrepareForWriteTimer`](/game-api/types/global-m-o/movepickup#m-alta-networking-inetworkserialized-prepareforwritetimer), [`MovePickup.Alta.Networking.INetworkSerialized.SerializeTimer`](/game-api/types/global-m-o/movepickup#m-alta-networking-inetworkserialized-serializetimer), [`MovePickup.prepareForWriteTimer`](/game-api/types/global-m-o/movepickup#m-prepareforwritetimer), [`MovePickup.serializeTimer`](/game-api/types/global-m-o/movepickup#m-serializetimer), [`NetworkedFloatStream.prepareForWriteTimer`](/game-api/types/global-m-o/networkedfloatstream#m-prepareforwritetimer), [`NetworkedFloatStream.PrepareForWriteTimer`](/game-api/types/global-m-o/networkedfloatstream#m-prepareforwritetimer-2), [`NetworkedFloatStream.serializeTimer`](/game-api/types/global-m-o/networkedfloatstream#m-serializetimer), [`NetworkedFloatStream.SerializeTimer`](/game-api/types/global-m-o/networkedfloatstream#m-serializetimer-2), [`NetworkedIKBody.Alta.Networking.INetworkSerialized.PrepareForWriteTimer`](/game-api/types/global-m-o/networkedikbody#m-alta-networking-inetworkserialized-prepareforwritetimer), [`NetworkedIKBody.Alta.Networking.INetworkSerialized.SerializeTimer`](/game-api/types/global-m-o/networkedikbody#m-alta-networking-inetworkserialized-serializetimer), [`NetworkedIKBody.prepareForWriteTimer`](/game-api/types/global-m-o/networkedikbody#m-prepareforwritetimer), [`NetworkedIKBody.serializeTimer`](/game-api/types/global-m-o/networkedikbody#m-serializetimer), [`NetworkedIKBone.Alta.Networking.INetworkSerialized.PrepareForWriteTimer`](/game-api/types/global-m-o/networkedikbone#m-alta-networking-inetworkserialized-prepareforwritetimer), [`NetworkedIKBone.Alta.Networking.INetworkSerialized.SerializeTimer`](/game-api/types/global-m-o/networkedikbone#m-alta-networking-inetworkserialized-serializetimer), [`NetworkedIKBone.prepareForWriteTimer`](/game-api/types/global-m-o/networkedikbone#m-prepareforwritetimer), [`NetworkedIKBone.serializeTimer`](/game-api/types/global-m-o/networkedikbone#m-serializetimer) and 22 more.

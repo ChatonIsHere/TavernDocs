@@ -1,0 +1,41 @@
+---
+title: "NullColorModelPoint"
+description: "class NullColorModelPoint in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# NullColorModelPoint
+
+A **class** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
+- **Inherits or implements** [`IColorModelPoint<NullColorModelPoint>`](/game-api/types/global-i-l/icolormodelpoint-outt)
+- **Derived types** [`ForgedModel`](/game-api/types/alta-crafting/forgedmodel), [`HeatModel`](/game-api/types/alta-crafting/heatmodel), [`NullColorModelPoint`](/game-api/types/global-m-o/nullcolormodelpoint)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NullColorModelPoint()"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-colormodelvalue" /><code>{"float ColorModelValue { get; }"}</code> |  |
+
+## Events
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-changed" /><code>{"event Action<"}<Link to="/game-api/types/global-m-o/nullcolormodelpoint">{"NullColorModelPoint"}</Link>{"> Changed"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `NullColorModelPoint`:
+
+[`WoodcutTreeBaker.NodeModified`](/game-api/types/alta-crafting/woodcuttreebaker#m-nodemodified), [`WoodcutTreeBakingHandler.ModifyColors`](/game-api/types/alta-crafting/woodcuttreebakinghandler#m-modifycolors), [`WoodcutTreeModel.Core`](/game-api/types/alta-crafting/woodcuttreemodel#m-core).

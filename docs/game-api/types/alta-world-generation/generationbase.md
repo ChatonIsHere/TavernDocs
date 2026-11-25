@@ -1,0 +1,99 @@
+---
+title: "GenerationBase"
+description: "class GenerationBase in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# GenerationBase
+
+A **class** in `Root.Township`, `Alta.Caves`.
+
+- **Listed in** [World generation](/game-api/types/alta-world-generation)
+- **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`IGenerator`](/game-api/types/alta-world-generation/igenerator)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GenerationBase()"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chunks" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{"[,] chunks"}</code> |  |
+| <Link id="m-chunksgenerating" /><code>{"private int chunksGenerating"}</code> |  |
+| <Link id="m-chunkshigh" /><code>{"private int chunksHigh"}</code> |  |
+| <Link id="m-chunksize" /><code>{"private int chunkSize"}</code> |  |
+| <Link id="m-chunksparent" /><code>{"private Transform chunksParent"}</code> |  |
+| <Link id="m-chunkswide" /><code>{"private int chunksWide"}</code> |  |
+| <Link id="m-clientspawn" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-c-d/caveseedarguments">{"CaveSeedArguments"}</Link>{"> clientSpawn"}</code> |  |
+| <Link id="m-currentrendering" /><code>{"private IEnumerator<bool> currentRendering"}</code> |  |
+| <Link id="m-deletingentities" /><code>{"private Transform deletingEntities"}</code> |  |
+| <Link id="m-floorplugin" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" floorPlugin"}</code> |  |
+| <Link id="m-isgenerationstarted" /><code>{"private bool isGenerationStarted"}</code> |  |
+| <Link id="m-isseedrandomonregenerate" /><code>{"private bool isSeedRandomOnRegenerate"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-pluginlist" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/pluginlist">{"PluginList"}</Link>{" pluginList"}</code> |  |
+| <Link id="m-rendering" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{"> rendering"}</code> |  |
+| <Link id="m-seed" /><code>{"private int seed"}</code> |  |
+| <Link id="m-stepindex" /><code>{"private int stepIndex"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chunks-2" /><code><Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{"[,] Chunks { get; }"}</code> |  |
+| <Link id="m-chunksize-2" /><code>{"int ChunkSize { get; }"}</code> |  |
+| <Link id="m-currentlyrendering" /><code>{"static "}<Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" CurrentlyRendering { get; set; }"}</code> |  |
+| <Link id="m-entrance" /><code>{"Vector2 Entrance { get; private set; }"}</code> |  |
+| <Link id="m-entrancedirection" /><code>{"Vector2 EntranceDirection { get; private set; }"}</code> |  |
+| <Link id="m-floorplugin-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" FloorPlugin { get; }"}</code> |  |
+| <Link id="m-hashfunction" /><code><Link to="/game-api/types/global-e-h/hashfunction">{"HashFunction"}</Link>{" "}<Link to="/game-api/types/global-e-h/hashfunction">{"HashFunction"}</Link>{" { get; private set; }"}</code> |  |
+| <Link id="m-isgeneratingdynamic" /><code>{"bool IsGeneratingDynamic { get; }"}</code> |  |
+| <Link id="m-layer" /><code>{"int Layer { get; private set; }"}</code> |  |
+| <Link id="m-layerstreamer" /><code><Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" LayerStreamer { get; private set; }"}</code> |  |
+| <Link id="m-plugininstances" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{"> PluginInstances { get; private set; }"}</code> |  |
+| <Link id="m-pluginlist-2" /><code><Link to="/game-api/types/alta-world-generation/pluginlist">{"PluginList"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/pluginlist">{"PluginList"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-seed-2" /><code>{"int Seed { get; set; }"}</code> |  |
+| <Link id="m-simplexnoise" /><code><Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" "}<Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" { get; private set; }"}</code> |  |
+| <Link id="m-snap" /><code>{"Vector2 Snap { get; set; }"}</code> |  |
+| <Link id="m-spawndata" /><code><Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" { get; private set; }"}</code> |  |
+
+## Events
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-renderingcomplete" /><code>{"event Action RenderingComplete"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-decrementgenerating" /><code>{"void DecrementGenerating()"}</code> |  |
+| <Link id="m-getchunkcoord" /><code>{"int GetChunkCoord(float position)"}</code> |  |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| <Link id="m-releasechunk" /><code>{"void ReleaseChunk(int x, int y)"}</code> |  |
+| <Link id="m-requestchunk" /><code>{"void RequestChunk(int x, int y)"}</code> |  |
+| <Link id="m-setuplayer" /><code>{"async Task SetupLayer("}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer, int layer, int seed, Vector2 entrance, Vector2 entranceDirection)"}</code> |  |
+| <Link id="m-startgenerating" /><code>{"async Task StartGenerating()"}</code> |  |
+| <Link id="m-startrendering" /><code>{"void StartRendering("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> |  |
+| <Link id="m-clear" /><code>{"private void Clear()"}</code> |  |
+| <Link id="m-clientspawn-2" /><code>{"private async void ClientSpawn("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-c-d/caveseedarguments">{"CaveSeedArguments"}</Link>{" args)"}</code> |  |
+| <Link id="m-decrementsceneloading" /><code>{"private void DecrementSceneLoading()"}</code> |  |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
+| <Link id="m-prepareandstart" /><code>{"private async Task PrepareAndStart()"}</code> |  |
+| <Link id="m-render" /><code>{"private IEnumerator<bool> Render("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk) (iterator)"}</code> |  |
+| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
+| <Link id="m-updaterendering" /><code>{"private void UpdateRendering()"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `GenerationBase`:
+
+[`EveryXLayersConstrain.SpawnParameters`](/game-api/types/alta-world-generation/everyxlayersconstrain#m-spawnparameters), [`MapChunk.RenderGenerator`](/game-api/types/alta-world-generation/mapchunk#m-rendergenerator), [`PluginInstance.RenderGenerator`](/game-api/types/alta-world-generation/plugininstance#m-rendergenerator), [`SpawnConstrain.SpawnParameters`](/game-api/types/alta-world-generation/spawnconstrain#m-spawnparameters), [`CaveLayerStreamer.generator`](/game-api/types/alta-world/cavelayerstreamer#m-generator), [`CaveLayerStreamer.Generator`](/game-api/types/alta-world/cavelayerstreamer#m-generator-2).

@@ -1,0 +1,51 @@
+---
+title: "Edge"
+description: "class Edge in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# Edge
+
+A **class** in `Root.Township`, `Alta.Forests`.
+
+- **Listed in** [World generation](/game-api/types/alta-world-generation)
+- **Documented in** [Forest](/game-api/world/forest)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Edge("}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" nodeA, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" nodeB, "}<Link to="/game-api/types/alta-world-generation/edgetype">{"EdgeType"}</Link>{" type)"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-a" /><code><Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" A { get; private set; }"}</code> |  |
+| <Link id="m-ab" /><code><Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" AB { get; private set; }"}</code> |  |
+| <Link id="m-attributes" /><code><Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" Attributes { get; }"}</code> |  |
+| <Link id="m-averageheight" /><code>{"float AverageHeight { get; }"}</code> |  |
+| <Link id="m-averageradius" /><code>{"float AverageRadius { get; }"}</code> |  |
+| <Link id="m-b" /><code><Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" B { get; private set; }"}</code> |  |
+| <Link id="m-ba" /><code><Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" BA { get; private set; }"}</code> |  |
+| <Link id="m-length2d" /><code>{"float Length2d { get; }"}</code> |  |
+| <Link id="m-type" /><code><Link to="/game-api/types/alta-world-generation/edgetype">{"EdgeType"}</Link>{" Type { get; set; }"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-is" /><code>{"bool Is("}<Link to="/game-api/types/alta-world-generation/edgetype">{"EdgeType"}</Link>{" type)"}</code> |  |
+| <Link id="m-ischeck" /><code>{"static Predicate<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> IsCheck("}<Link to="/game-api/types/alta-world-generation/edgetype">{"EdgeType"}</Link>{" type)"}</code> |  |
+| <Link id="m-ison" /><code>{"bool IsOn("}<Link to="/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" type)"}</code> |  |
+| <Link id="m-isonright" /><code>{"bool IsOnRight(Vector2 point)"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `Edge`:
+
+[`ForestAttributeEvaluator.EvaluateEdge`](/game-api/types/alta-world-generation/forestattributeevaluator#m-evaluateedge), [`ForestBridges.GetOverlap`](/game-api/types/alta-world-generation/forestbridges#m-getoverlap), [`ForestCliffEvaluator.evaluated`](/game-api/types/alta-world-generation/forestcliffevaluator#m-evaluated), [`ForestCliffEvaluator.IsLegitimateEdge`](/game-api/types/alta-world-generation/forestcliffevaluator#m-islegitimateedge), [`ForestGCoreInstruction.ForestGCoreInstruction`](/game-api/types/alta-world-generation/forestgcoreinstruction#m-ctor-2), [`ForestGeneration.chunkEdges`](/game-api/types/alta-world-generation/forestgeneration#m-chunkedges), [`ForestGeneration.CreateEdge`](/game-api/types/alta-world-generation/forestgeneration#m-createedge), [`ForestGeneration.DistanceToPath`](/game-api/types/alta-world-generation/forestgeneration#m-distancetopath), [`ForestGeneration.DistanceToPathOrNode`](/game-api/types/alta-world-generation/forestgeneration#m-distancetopathornode), [`ForestGeneration.edges`](/game-api/types/alta-world-generation/forestgeneration#m-edges), [`ForestGeneration.Edges`](/game-api/types/alta-world-generation/forestgeneration#m-edges-2), [`ForestGeneration.EvaluateNearest`](/game-api/types/alta-world-generation/forestgeneration#m-evaluatenearest), [`ForestGeneration.GetEdge`](/game-api/types/alta-world-generation/forestgeneration#m-getedge), [`ForestGeneration.GetEdgesWithinChunk`](/game-api/types/alta-world-generation/forestgeneration#m-getedgeswithinchunk), [`ForestGeneration.sortedEdges`](/game-api/types/alta-world-generation/forestgeneration#m-sortededges), [`ForestGeneration.WorkingEdges`](/game-api/types/alta-world-generation/forestgeneration#m-workingedges), [`ForestGenerator.NearestInfo.nearestEdge`](/game-api/types/alta-world-generation/forestgenerator-nearestinfo#m-nearestedge), [`ForestPopulationArea.edges`](/game-api/types/alta-world-generation/forestpopulationarea#m-edges), [`LandBridgeModifier.landBridges`](/game-api/types/alta-world-generation/landbridgemodifier#m-landbridges), [`Path.Edge`](/game-api/types/alta-world-generation/path#m-edge), [`Path.Path`](/game-api/types/alta-world-generation/path#m-ctor), [`PointEdge.EvaluateEdge`](/game-api/types/alta-world-generation/pointedge#m-evaluateedge), [`PointEdge.GetEdge`](/game-api/types/alta-world-generation/pointedge#m-getedge), [`PointEdge.nearestEdge`](/game-api/types/alta-world-generation/pointedge#m-nearestedge), [`PointNormal.GetEdge`](/game-api/types/alta-world-generation/pointnormal#m-getedge), [`PointNormal.nearestEdge`](/game-api/types/alta-world-generation/pointnormal#m-nearestedge), [`RiverIntersections.Intersection.edge`](/game-api/types/alta-world-generation/riverintersections-intersection#m-edge), [`BasicDynamicPath.Edge`](/game-api/types/global-a-b/basicdynamicpath#m-edge), [`BasicDynamicPath.Initialize`](/game-api/types/global-a-b/basicdynamicpath#m-initialize), [`DistanceToPathFilter.EdgePredicate`](/game-api/types/global-c-d/distancetopathfilter#m-edgepredicate), [`ForestNodeMapSpawnData.Edge`](/game-api/types/global-e-h/forestnodemapspawndata#m-edge), [`ForestNodeMapSpawnData.ForestNodeMapSpawnData`](/game-api/types/global-e-h/forestnodemapspawndata#m-ctor), [`IDynamicPath.Initialize`](/game-api/types/global-i-l/idynamicpath#m-initialize).

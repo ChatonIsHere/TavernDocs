@@ -1,0 +1,28 @@
+---
+title: "VisualEffectType"
+description: "enum VisualEffectType in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# VisualEffectType
+
+An **enum** in `Root.Township`, `ATT.PlayerStates`.
+
+- **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
+
+## Values
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-exposure" /><code>{"Exposure = 1"}</code> |  |
+| <Link id="m-frost" /><code>{"Frost = 0"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `VisualEffectType`:
+
+[`PlayerStatBasedVisualEffect.effectType`](/game-api/types/game-other-namespaces/playerstatbasedvisualeffect#m-effecttype).

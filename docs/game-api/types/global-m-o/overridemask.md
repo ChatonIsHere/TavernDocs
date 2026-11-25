@@ -1,0 +1,33 @@
+---
+title: "OverrideMask"
+description: "enum OverrideMask in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# OverrideMask
+
+An **enum** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
+- **Attributes** `Flags`
+
+## Values
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-colorspace" /><code>{"ColorSpace = 8"}</code> |  |
+| <Link id="m-fileformat" /><code>{"FileFormat = 32"}</code> |  |
+| <Link id="m-namesuffix" /><code>{"NameSuffix = 2"}</code> |  |
+| <Link id="m-outputtoggle" /><code>{"OutputToggle = 1"}</code> |  |
+| <Link id="m-qualitycompression" /><code>{"QualityCompression = 16"}</code> |  |
+| <Link id="m-relativescale" /><code>{"RelativeScale = 4"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `OverrideMask`:
+
+[`TextureOutput.OverrideMask`](/game-api/types/global-t-x/textureoutput#m-overridemask).

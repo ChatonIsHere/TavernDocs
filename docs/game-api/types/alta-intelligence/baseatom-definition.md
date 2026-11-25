@@ -1,0 +1,51 @@
+---
+title: "BaseAtom.Definition"
+description: "class BaseAtom.Definition in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# BaseAtom.Definition
+
+A **class** in `Root.Township`, `Alta.Intelligence`.
+
+- **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
+- **Nested in** [`BaseAtom`](/game-api/types/alta-intelligence/baseatom)
+- **Inherits or implements** [`IAtomDefinition`](/game-api/types/alta-intelligence/iatomdefinition)
+- **Attributes** `DebuggerDisplay`
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Definition("}<Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" compound, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal, float weighting)"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-weighting" /><code>{"private float weighting"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ageweighting" /><code>{"float AgeWeighting { get; set; }"}</code> |  |
+| <Link id="m-compound" /><code><Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" "}<Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" { get; private set; }"}</code> |  |
+| <Link id="m-goal" /><code><Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" Goal { get; private set; }"}</code> |  |
+| <Link id="m-weighting-2" /><code>{"float Weighting { get; }"}</code> |  |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+
+## Used in
+
+Members of other types that take, return or hold a `Definition`:
+
+[`Atom.Define`](/game-api/types/alta-intelligence/atom#m-define), [`Atom<T1, T2, T3, T4>.Define`](/game-api/types/alta-intelligence/atom-t1-t2-t3-t4#m-define), [`Atom<T1, T2, T3>.Define`](/game-api/types/alta-intelligence/atom-t1-t2-t3#m-define), [`Atom<T1, T2>.Define`](/game-api/types/alta-intelligence/atom-t1-t2#m-define), [`Atom<T>.Define`](/game-api/types/alta-intelligence/atom-t#m-define).

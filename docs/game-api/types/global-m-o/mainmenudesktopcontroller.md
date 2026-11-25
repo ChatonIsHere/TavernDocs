@@ -1,0 +1,35 @@
+---
+title: "MainMenuDesktopController"
+description: "class MainMenuDesktopController in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# MainMenuDesktopController
+
+A **class** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
+- **Inherits or implements** [`PlayerController`](/game-api/types/global-p/playercontroller)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MainMenuDesktopController()"}</code> |  |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-head" /><code>{"private Transform head"}</code> |  |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-head-2" /><code>{"override Transform Head { get; }"}</code> |  |
+| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> |  |
