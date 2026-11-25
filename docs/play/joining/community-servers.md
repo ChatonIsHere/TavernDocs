@@ -56,6 +56,10 @@ Finding servers in the standalone Quest version.
 
 With the **TavernEssentials** mod, the game's main menu has server boards too. Install it from [Get Mods](../mods/getting-mods.md). A **Main Menu** button then appears next to **Join Server**, which starts the game at the main menu instead of joining a server.
 
+![The main menu's server board listing three servers, with the Description board beside it showing the picked server's region, version and address](img/in-game-boards.png)
+
+The big board in the middle lists servers. **My Servers** shows the ones you've joined before, and the levers on the table switch to the other lists, like every listed server. The **Description** board on the left shows the server you've picked.
+
 ## Something went wrong?
 
 - **The list is empty or says "Could not reach community list".** The list service might be down, or your internet or firewall is blocking it. You can still join servers [by their address](address-or-name.md).

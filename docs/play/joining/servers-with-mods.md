@@ -49,7 +49,9 @@ Sometimes you get into the game and it says:
 
 > You are missing mods that are required for this server. Try joining again to automatically install missing mods.
 
-![The game showing "You are missing mods that are required for this server. Try joining again to..." in front of the main menu](img/in-game-refused.png)
+With TavernEssentials it starts with "Server refused the join:".
+
+![The game showing "Server refused the join: You are missing mods that are required for this server. Try joining again to automatically install missing mods." in front of the main menu](img/in-game-refused.png)
 
 That happens if you joined from inside the game (like from a server board), or the server changed its mods while you were away. To fix it, **try joining the same server again from the game**, within 10 minutes. The game closes, the launcher installs what's needed, and you go straight back in.
 
