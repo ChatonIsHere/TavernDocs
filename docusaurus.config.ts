@@ -76,7 +76,16 @@ const config: Config = {
             items: [
                 {type: 'docSidebar', sidebarId: 'play', position: 'left', label: 'Play'},
                 {type: 'docSidebar', sidebarId: 'host', position: 'left', label: 'Host'},
-                {type: 'docSidebar', sidebarId: 'mod', position: 'left', label: 'Mod'},
+                {
+                    type: 'dropdown',
+                    label: 'Mod',
+                    position: 'left',
+                    items: [
+                        {type: 'docSidebar', sidebarId: 'mod', label: 'Guides'},
+                        {type: 'docSidebar', sidebarId: 'tavernlib', label: 'TavernLib API'},
+                        {type: 'docSidebar', sidebarId: 'game', label: 'Game API'},
+                    ],
+                },
                 {type: 'docSidebar', sidebarId: 'help', position: 'left', label: 'Help'},
                 {href: discord, label: 'Discord', position: 'right'},
                 {href: 'https://github.com/ModdingTavern', label: 'GitHub', position: 'right'},
@@ -91,6 +100,8 @@ const config: Config = {
                         {label: 'Play', to: '/play/welcome'},
                         {label: 'Host a server', to: '/host/before-you-host'},
                         {label: 'Make mods', to: '/mod/welcome'},
+                        {label: 'TavernLib API', to: '/tavernlib-api/overview'},
+                        {label: 'Game API', to: '/game-api/overview'},
                         {label: 'Help', to: '/help/getting-help'},
                     ],
                 },

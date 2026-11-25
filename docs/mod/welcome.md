@@ -13,6 +13,13 @@ There are three kinds of thing you can make:
 
 When it's ready, [publish it on TavernMods](publishing/submitting.md) so players and servers can install it from the launcher.
 
+## Reference
+
+These pages are guides. For the details, there are two reference sections, also under **Mod** in the menu:
+
+- [TavernLib API](../tavernlib-api/overview.md): every part of TavernLib a mod can use.
+- [Game API](../game-api/overview.md): what's inside `Root.Township.dll` and the `Alta.*` assemblies, and how to hook it with Harmony.
+
 ## What you should know
 
 These pages assume you can already write some C# (or Python, for addons) and use Git. They cover what's specific to A Township Tale, not programming in general.

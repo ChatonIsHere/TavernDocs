@@ -20,11 +20,7 @@ if (Roles.HasRole(connection, "moderator"))
 }
 ```
 
-`connection` is the player's `Alta.Networking.Connection`, for example `player.ConnectionToRemotePlayer`. Names are matched without caring about case. `Connection` is in `Alta.NetworkTransport.Runtime`, so add that to your references:
-
-```xml
-<Reference Include="Alta.NetworkTransport.Runtime" HintPath="$(Managed)Alta.NetworkTransport.Runtime.dll" Private="false" />
-```
+`connection` is the player's `Alta.Networking.Connection`, for example `player.ConnectionToRemotePlayer`. Names are matched without caring about case. `Connection` is in `Root.Township`, which your mod already references.
 
 To get all of them:
 
