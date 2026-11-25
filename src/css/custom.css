@@ -150,6 +150,16 @@ small,
     border-top: 1px solid var(--tavern-border);
 }
 
+/* Infima's 1.25 line height on sidebar links, and the hidden overflow on category labels, clip the tails
+   of letters like g and y at some zoom levels. */
+.menu__link {
+    line-height: 1.5;
+}
+
+.menu__list-item-collapsible .menu__link {
+    overflow: visible;
+}
+
 .navbar__title {
     font-family: var(--ifm-heading-font-family);
     color: var(--tavern-primary);
