@@ -28,7 +28,9 @@ A few things worth knowing up front:
 
 - The game runs on Unity with Mono and .NET Framework 4.x. Mods target `net48`.
 - Mods are loaded by [MelonLoader](https://melonwiki.xyz/) and usually patch the game with [Harmony](https://harmony.pardeike.net/).
-- The game's code is in `Root.Township.dll` and the `Alta.*` assemblies. There are no official docs for it, so you'll be reading decompiled code. [ILSpy](https://github.com/icsharpcode/ILSpy) or [dnSpyEx](https://github.com/dnSpyEx/dnSpy) work well.
+- The game's code is in `Root.Township.dll` and the `Alta.*` assemblies. Alta never published docs for it, but we've written our own from the decompiled code: the [Game API](../game-api/overview.md) reference. It's unofficial, so treat it as a map and check the code when it matters.
+- For anything the Game API pages don't cover, decompile the DLLs yourself. [ILSpy](https://github.com/icsharpcode/ILSpy) or [dnSpyEx](https://github.com/dnSpyEx/dnSpy) work well, and [Finding your way around](../game-api/patching/finding-your-way-around.md) shows where to start.
+- TavernLib's own classes are covered in the [TavernLib API](../tavernlib-api/overview.md) reference.
 - The same game runs as a client (a player) and as a server. A mod can run on either or both.
 
 ## Getting help
