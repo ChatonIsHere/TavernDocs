@@ -282,6 +282,9 @@ All client side unless marked.
 | same | Pre, lowers the per-frame count | Forest Performance | Server | Forest instructions per frame down from 10 to 1. |
 | `InstructionSet` `<ExecuteInternal>d__N.MoveNext` | Pre, Trans, Fin | Forest Performance | Server | Counts every forest instruction toward the batch. |
 | `Alta.Forests.ForestGenerator.Wipe(int)` (async) | Pre (`Priority.Last`), always skips | Forest Performance (reset fix) | Server | Replaces the forest reset with an ordered one. |
+| `Alta.Forests.ForestGenerator.Wipe(int)` (async) | Pre, skips unless another mod also replaces it | TavernLib | Server | Queues the reset for the next start: clears the forest's chunks now, keeps the running seed, saves the new one. |
+| `ForestGenerator`'s `ISavableSave<ForestGeneratorSaveData>.Save` and `ISavable<ForestGeneratorSaveData>.Load` (explicit interface methods) | Post | TavernLib | Server | Save writes a queued seed. Load deletes cache files named after any other seed. |
+| `WorldCommandModule.ForestCommandModule.Reset` | Pre, always skips | TavernLib | Server | Runs the reset and says what happened. |
 | `Alta.Forests.RiverGenerator.GetGenerationAsync` | Pre | Forest Performance (reset fix) | Server | Clears failed river tasks and supplies terrain on the main thread. |
 | `ServerCacheManager.CleanCache(string)` (async) | Pre (`Priority.Last`) | Forest Performance (reset fix) | Server | Removes failed cache entries first. |
 | `ForestChunk` `LoadStatic`, `LoadDynamic`; `ForestGenerator.RequestStatic`, `RequestDynamic`, `GenerateTerrain`, `GenerateAsync`, `GenerateInternalAsync`; `Alta.Forests.ForestGeneration.SortNodes` and its lambdas; `TerrainAccess.ApplyHeights`, `ApplySplat`, `SampleSplat` (state machine `MoveNext`s and methods) | Pre, Fin | Forest Performance (step diagnostics) | Server | Logs slow forest steps. |
@@ -362,7 +365,8 @@ Most of these work together. The ones that clash, or that make another mod's pat
 
 | Method | Mods | How they combine |
 | --- | --- | --- |
-| `GarbageCollectTimer.Start` | TavernLib, Steady | **Clash.** With Steady's `ForcedGc` off (its default), the timer never starts, so TavernLib's `garbage_collection_timer` does nothing. |
+| `GarbageCollectTimer.Start` | TavernLib, Steady | Steady stops the timer unless `garbage_collection_timer` is set to something other than 30 (the default every launcher writes), or its own `ForcedGc` is on. Then TavernLib's interval applies. |
+| `ForestGenerator.Wipe` | TavernLib, Forest Performance | TavernLib steps aside when another mod also prefixes it, so Forest Performance's reset runs. |
 | `ReturnToMainMenuAction.LetGoValid` | TavernLib, TavernEssentials | **Replaced on purpose.** With `board_leave_orb=1`, TE removes TavernLib's quit prefix and returns to the menu. It removes it again after each mode change, since TavernLib's may land later. |
 | `PurchasedList.UpdateCurrentRotation` | TavernLib, TavernEssentials | TavernLib's method is never applied (no prefix name or attribute), so only TE's runs. |
 | `JoinResult.ErrorMessage` | TavernLib, TavernEssentials | Both postfixes. TavernLib only replaces the text when it doesn't already contain its own line, so TE's line, which quotes it, stays. |

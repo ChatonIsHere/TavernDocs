@@ -6,7 +6,7 @@ sidebar_position: 11
 
 # Console, logging and analytics
 
-Types in Alta.Console, Alta.Console.Commands, Alta.Logging, Alta.Analytics and Alta.QATools. 139 types, 14 with a hand-written page.
+Types in Alta.Console, Alta.Console.Commands, Alta.Logging, Alta.Analytics and Alta.QATools. 139 types, 16 with a hand-written page.
 
 See [the overview](overview.md) for what the columns mean and how this list is made.
 
@@ -150,8 +150,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | `UsersCommandModule` | static class |  | 0 |  |
 | `WackyCommandModule` | static class |  | 1 |  |
 | `WorldCommandModule` | static class |  | 0 |  |
-| `WorldCommandModule.CaveCommandModule` | static class |  | 1 |  |
-| `WorldCommandModule.ForestCommandModule` | static class |  | 2 |  |
+| `WorldCommandModule.CaveCommandModule` | static class |  | 1 | [Caves](../world/caves.md#console-commands-worldcommandmodulecavecommandmodule): The `world caves` module. |
+| `WorldCommandModule.ForestCommandModule` | static class |  | 2 | [Forest](../world/forest.md#console-commands-worldcommandmoduleforestcommandmodule): The `world forest` module. |
 
 ## Alta.Logging
 

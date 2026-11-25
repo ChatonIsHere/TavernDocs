@@ -105,7 +105,7 @@ A wipe ends with `ApplicationManager.ExternalOnApplicationQuit`, so plan for the
 | `world forest list` | The forests' cache names. |
 | `world forest info <forest>` | The forest's generation (seed, bounds, outline, entrances, biomes, encounters, nodes, edges) as an object, also logged as JSON. |
 | `world forest teleport <players> <forest> [node]` (alias `tp`) | Teleports players to the forest's first entrance, or to a node. A node index past the end throws. |
-| `world forest reset <forest>` (alias `wipe`) | Wipes the forest's saved data. From the code, the layout doesn't change until the server restarts. See [Resetting the forest](../world/forest.md#resetting-the-forest). |
+| `world forest reset <forest>` (alias `wipe`) | Clears the forest's chunks and moves the players in it out. With TavernLib, the new forest is made at the next restart; in the unpatched game the reset is half done until then. See [Resetting the forest](../world/forest.md#resetting-the-forest). |
 
 ### Also only in the server build
 

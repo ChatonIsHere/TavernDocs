@@ -41,6 +41,9 @@ If you really need it open, forward the console port too and use a [named token]
 | --- | --- |
 | `player list` | Who's online |
 | `player kick <player>` | Kicks a player |
+| `player ban <name> [reason]` | Adds the name (and its user id, if it has played) to the blacklist and kicks them |
+| `player unban <name>` | Takes the name and its user id off the blacklist |
+| `player banlist` | Shows the blacklisted names, user ids and IP addresses |
 | `save now` | Saves the world |
 | `modmanager list` | Every installed mod and whether it's on |
 | `modmanager addrepo <url>` | Adds a mod source, see [Mods on your server](mods-on-your-server.md#mods-from-other-sources) |

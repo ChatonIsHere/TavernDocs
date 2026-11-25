@@ -27,7 +27,7 @@ Everything you can see, hold or fight in A Township Tale is a networked object c
 | Which chunk an entity is in | Server | Clients don't keep chunk entity lists at all: `Chunk.Entities` and `Chunk.Players` are null there. |
 | Which chunks load | Server, per player | `PlayerChunkManager` on the server works out the chunks around each player and tells their game which to load. |
 | Where an object is | Mostly server | The server moves loose objects and sends `MoveEntity` (`ForcePositionSync`). How held items and physics sync is in [Entity sync](../networking/entity-sync.md) and [Items](../items/overview.md). |
-| Where a player is | That player's client | The server asks the client to move (`PlayerEffectController.Teleport`, `LocomotionController.MoveTo`). See [Moving and teleporting](moving-and-teleporting.md). |
+| Where a player is | That player's client | The server asks the client to move (`PlayerEffectController.Teleport`, `LocomotionController.MoveTo`). See [Moving and teleporting](moving-and-teleporting.md), and [Where is a player?](where-is-a-player.md) to find out. |
 | Forest and cave layout | Server | Clients download the forest's cache files from the server. For caves they get the seed and build the same rock themselves. |
 | Populations, loot, ore respawns | Server | All run from `Timeline` callbacks on the server. |
 | Time of day | Server | It syncs `GameTimeManager` every 10 seconds (the `syncRefreshRate` default). Clients ease towards it. |

@@ -53,7 +53,7 @@ Made with the defaults on the first start. Keys you leave out use the default.
 | `tutorial_scene` | `false` | Run the tutorial scene. Beats `quest_scene` if both are on. Needs a restart. |
 | `server_backup_time` | `0` | Hours between automatic world backups on a headless server. `0` is off. The Windows launcher does its own backups. |
 | `server_backup_max_backups` | `0` | How many automatic backups to keep. `0` keeps them all. |
-| `garbage_collection_timer` | `30` | Seconds between the game's memory clean-ups (.NET garbage collection) on a server running without graphics. It doesn't touch items in the world. Needs a restart. |
+| `garbage_collection_timer` | `30` | Seconds between the game's memory clean-ups (.NET garbage collection) on a server running without graphics. It doesn't touch items in the world. Needs a restart. With Steady installed, the clean-ups only run if this is set to something other than 30. |
 | `console_owner_local_only` | `false` | Only accept the owner console token from the server itself. |
 
 The Windows Server launcher has a **Settings** window for all of these. In Docker, `SCENE` in `.env` sets the two scene keys for you.
@@ -170,7 +170,7 @@ Ranges are given where the game has one. The game keeps a value inside its range
 | `PlayerLimit` | whole number | `-1` | Ignored on a Tavern server: TavernLib uses `max_players` from [server_settings.json](#server_settingsjson) instead. Without TavernLib, `0` or less means no limit. | |
 | `IsCustomizationEnabled` | true/false | `true` | New players go to the character room on their first join. `false` skips it. | No |
 | `InitialPlayerInventory` | text | `Default` | What a new player starts with: `Default`, `DeckedOut` or `None` (empty hands). Only players joining for the first time get it. | No |
-| `HasAFKTimer` | true/false | `true` | Warns players who haven't moved or hit anything for a while, then kicks them 30 seconds later. | No |
+| `HasAFKTimer` | true/false | `true` | Warns players who haven't moved or hit anything for 10 minutes, then kicks them 35 seconds later. The warning says "in 600 seconds", which is wrong. | No |
 | `PlayerLandmarkMode` | text | `ShowAll` | Other players on the map: `ShowAll`, `FriendsOnly` or `Hidden`. With `FriendsOnly`, players see only their friends. | No |
 | `PlayerSmoothingLevel` | text | `Default` | How much players' movement is smoothed: `Default` or `Low`. | No |
 | `HandoverRequireConfirmation` | true/false | `true` | Not used by this version of the game. | |

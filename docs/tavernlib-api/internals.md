@@ -38,6 +38,9 @@ If you patch one of these, your patch runs alongside TavernLib's. "Skips the ori
 | `ServerSettingsSync.IsServerSyncPermitted` | Postfix | Only `owner` and `moderator` may change settings from the settings board. |
 | `ServerHostingGameMode.OnStartSucceeded` | Postfix | Loads every cosmetic into memory once. |
 | `GarbageCollectTimer.Start` | Prefix | Sets its interval from `garbage_collection_timer`. |
+| `ForestGenerator.Wipe` | Prefix, skips the original | Queues the forest reset for the next start, unless another mod also replaces `Wipe`. See [Resetting the forest](../game-api/world/forest.md#resetting-the-forest). |
+| `ForestGenerator` save and load (explicit `ISavableSave`/`ISavable` methods) | Postfix | Save writes the queued seed; load deletes other seeds' cache files. |
+| `WorldCommandModule.ForestCommandModule.Reset` | Prefix, skips the original | Answers what the reset did. |
 | `WebServerThread` constructor | Prefix | Moves the web server to `web_port`. |
 | `WebSocketRemoteConsole.Start` | Transpiler | Moves the console to `console_port`. |
 | `ServerConsoleManager.ValidateConsoleToken` | Prefix, skips the original, and a postfix | TavernLib's console token check. The postfix puts TavernLib's verdict back, so another mod's prefix can't change it. |

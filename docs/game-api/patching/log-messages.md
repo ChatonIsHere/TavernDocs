@@ -744,7 +744,7 @@ Every line the game logs at `Fatal`. They also appear in their own area below.
 
 ## World, chunks and saving
 
-247 errors and warnings, 85 other lines.
+248 errors and warnings, 86 other lines.
 
 | Level | Message | Written by | Notes |
 | --- | --- | --- | --- |
@@ -995,9 +995,10 @@ Every line the game logs at `Fatal`. They also appear in their own area below.
 | Warn | This save does not contain the root transform | `TransformSaveCollection.LoadInto` |  |
 | Warn | This save contains a different name than the one loading into | `TransformSaveObject.LoadInto` |  |
 | Warn | This save contains no data | `TransformSaveObject.LoadInto` |  |
+| Warn | Cave layers must be generaterd. Check Quick Access Menu FPS for server updates on cave gen progress | `WorldCommandModule.CaveCommandModule.CaveTeleport` ([Caves](../world/caves.md#console-commands-worldcommandmodulecavecommandmodule)) |  |
 
 <details>
-<summary>Info and debug lines (85)</summary>
+<summary>Info and debug lines (86)</summary>
 
 | Level | Message | Written by | Notes |
 | --- | --- | --- | --- |
@@ -1085,6 +1086,7 @@ Every line the game logs at `Fatal`. They also appear in their own area below.
 | Debug | `{this}` Loaded with time: `{data.startedTime}` current: `{time}` | `TimeBasedStagedPrefab.Load` |  |
 | Debug | `{this}` Started | `TimeBasedStagedPrefab.StartTimer` |  |
 | Debug | `{this}` Stopped | `TimeBasedStagedPrefab.StopTimers` |  |
+| Debug | Teleported player: `{player.UserInfo.Username}` to cavelayer: `{caveLayer.LayerIdentifier}` | `WorldCommandModule.CaveCommandModule.CaveTeleport` ([Caves](../world/caves.md#console-commands-worldcommandmodulecavecommandmodule)) |  |
 | Debug | `{this}` - Unload but dont have a spawned prefab | `WorldLandmark.Unload` |  |
 
 </details>
@@ -1432,7 +1434,7 @@ Every line the game logs at `Fatal`. They also appear in their own area below.
 
 ## Console, commands and logging
 
-147 errors and warnings, 215 other lines.
+146 errors and warnings, 214 other lines.
 
 | Level | Message | Written by | Notes |
 | --- | --- | --- | --- |
@@ -1581,11 +1583,10 @@ Every line the game logs at `Fatal`. They also appear in their own area below.
 | Warn | Loading timeline entry too far in the future. Fixing! Either spawn durations were reduced, or the timeline was reset while the world wasn't. | `Timeline.LoadRepeatableEntry` ([Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#timeline)) |  |
 | Warn | \[WebSocketCommandHandler\]: Already authorized. Using context: `{context.GetDebugInfo()}` | `WebSocketCommandHandler.ProcessPreAuthorizedRequest` ([Remote console](../console-and-utilities/remote-console.md#websocketcommandhandler)) |  |
 | Warn | \[WebSocketCommandHandler\]: Authorization failed for `{connectionString}` Message: `{message}` | `WebSocketCommandHandler.ProcessAuthorization` ([Remote console](../console-and-utilities/remote-console.md#websocketcommandhandler)) |  |
-| Warn | Cave layers must be generaterd. Check Quick Access Menu FPS for server updates on cave gen progress | `WorldCommandModule.CaveCommandModule.CaveTeleport` |  |
 | Warn | Unknown VR mode: `{text}` | `XRUtility.GetCommandMode` ([Startup and app state](../console-and-utilities/startup-and-app-state.md)) |  |
 
 <details>
-<summary>Info and debug lines (215)</summary>
+<summary>Info and debug lines (214)</summary>
 
 | Level | Message | Written by | Notes |
 | --- | --- | --- | --- |
@@ -1735,7 +1736,6 @@ Every line the game logs at `Fatal`. They also appear in their own area below.
 | Debug | Got response | `VivoxUtility.End` ([Startup and app state](../console-and-utilities/startup-and-app-state.md)) |  |
 | Debug | Replacing smelter | `WackyCommandModule.Smelter` |  |
 | Debug | Replacing the Chisel Deck | `WackyCommandModule.ChiselDeck` |  |
-| Debug | Teleported player: `{player.UserInfo.Username}` to cavelayer: `{caveLayer.LayerIdentifier}` | `WorldCommandModule.CaveCommandModule.CaveTeleport` |  |
 | Trace (console) | \[CommandService.HandleMatchedCommand\] Encountered exception when invoking command: `{ex2.GetType()}` - `{ex2.Message}` - `{ex2.StackTrace}` | `CommandService.HandleMatchedCommand` ([Writing commands](../console-and-utilities/commands.md#commandservice)) |  |
 | Trace (console) | \[CommandService.HandleMatchedCommand\] Encountered inner exception when invoking command: `{innerException.GetType()}` - `{innerException.Message}` - `{innerException.StackTrace}` | `CommandService.HandleMatchedCommand` ([Writing commands](../console-and-utilities/commands.md#commandservice)) |  |
 | Trace (console) | \[CommandService.HandleMatchedCommand\] Finished command `{matchedCommand.command.FullName}` | `CommandService.HandleMatchedCommand` ([Writing commands](../console-and-utilities/commands.md#commandservice)) |  |

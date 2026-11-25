@@ -79,7 +79,7 @@ Clients never generate: `ClientCacheManager.GetCache` downloads each cache file 
 
 ## Resetting the forest
 
-`ForestGenerator.Wipe(int newSeed = -1)` (server; `world forest reset`, alias `wipe`, just calls it):
+`ForestGenerator.Wipe(int newSeed = -1)` (server; `world forest reset`, alias `wipe`, just calls it). In the unpatched game:
 
 1. With `newSeed` below 0 (the default), picks a new random seed. **It never uses `newSeed`**: a value of 0 or more just keeps the current seed, so you can't pick one through this method. Set the private `seed` field first if you need a particular one.
 2. Deletes the node and terrain cache files. The names are built after step 1, so they carry the new seed: the old seed's files stay on disk.
@@ -88,6 +88,30 @@ Clients never generate: `ClientCacheManager.GetCache` downloads each cache file 
 5. Resets the rivers, then awaits `GetGenerationAsync()` again. Nothing clears the stored generation task, so this returns the old layout at once.
 
 So in this build a reset clears the chunk saves and changes the saved seed, but the layout itself looks like it only changes when the server restarts. Chunks that load before then name their static caches after the new seed while building them from the old layout. The players' games also still have the old terrain and scenery loaded. Forest Performance (ATT-Optimizations) treats a reset as maintenance (disconnect players, lock joins, restart after); its ForestResetFix exists to make the reset wait for cache work before it commits the new seed. A separate ForestSeedUtil mod handles seed preferences; it isn't covered here.
+
+### With TavernLib
+
+TavernLib replaces `Wipe` so a reset is never half done. Tested on a server:
+
+1. The forest's chunks are cleared and the players in it are moved to `OutsideForest`, as above. Their static caches are deleted under the seed that built them.
+2. The running world keeps its seed, so nothing is cached under a name that doesn't match its contents. The forest's node, terrain and river caches stay, since joining players download them.
+3. The new seed is only written into the forest's save. `newSeed` works: 0 or more is the seed to use, below 0 picks one at random.
+4. At the next start the forest loads the new seed and builds the new layout. Every forest cache file named after another seed is deleted then, including ones left by the game's own reset.
+
+`world forest reset` says what it did and that a restart finishes it. If another mod also replaces `Wipe` (Forest Performance's reset fix does), TavernLib leaves the reset to that mod. `ForestResetPatches.IsQueued(forest)` tells a mod whether a reset is waiting for the restart.
+
+## Console commands: `WorldCommandModule.ForestCommandModule`
+
+The `world forest` module. Server.
+
+| Command | What it does |
+| --- | --- |
+| `world forest list` | The name (`Cache`) of every forest. The main world has one, `The Forest`. |
+| `world forest info <forest>` | The forest's seed, area, bounds, entrances and outline, its encounters (`GCore`s with their node or edge), biome spheres, nodes, edges and spaces. It also writes the whole thing to the log as JSON. |
+| `world forest teleport <players> <forest> [node]` (alias `tp`) | Teleports the players to the forest's first entrance, or to node `node`. A node index past the end throws. |
+| `world forest reset <forest>` (alias `wipe`) | Calls `Wipe()`. See [Resetting the forest](#resetting-the-forest). |
+
+A forest is named by its `Cache` string, so the usual argument is `"The Forest"`, in quotes.
 
 ## Cost
 

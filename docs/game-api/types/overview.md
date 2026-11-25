@@ -8,7 +8,7 @@ sidebar_position: 1
 
 A list of every type in Alta's code: `Root.Township` and the `Alta.*` assemblies of the server build. It's for finding things. Most types have no page of their own; when one does, the last column links to it.
 
-5722 types are listed, 690 of them with a hand-written page.
+5722 types are listed, 692 of them with a hand-written page.
 
 ## Pages
 
@@ -23,7 +23,7 @@ A list of every type in Alta's code: `Root.Township` and the `Alta.*` assemblies
 | [Stats, effects, heat and liquid](alta-stats-effects.md) | 185 | 73 |
 | [Players and characters](alta-player.md) | 250 | 20 |
 | [Customization and screenshots](alta-customization.md) | 144 | 9 |
-| [Console, logging and analytics](alta-console.md) | 139 | 14 |
+| [Console, logging and analytics](alta-console.md) | 139 | 16 |
 | [Menus, UI and platforms](alta-menus.md) | 128 | 0 |
 | [Utilities and other Alta namespaces](alta-utilities.md) | 206 | 6 |
 | [ATT, Features and other game namespaces](game-other-namespaces.md) | 233 | 16 |

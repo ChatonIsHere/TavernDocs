@@ -118,12 +118,23 @@ How the numbers become a sample (`Ecosystem.PopulationApplication.InitializeSamp
 
 `ClusterGenerator` (in `Alta.Caves.Displays`) places clusters of children (ore boulders, for one). CheetosOreSpawnFix patches its `Generate` and `PositionChild` to choose ore and keep boulders out of the rock.
 
+## Console commands: `WorldCommandModule.CaveCommandModule`
+
+The `world caves` module. Server.
+
+| Command | What it does |
+| --- | --- |
+| `world caves reset` | Calls `ServerWipeManager.WipeCaves()` unless a wipe is already running: locks joins, moves everyone in the caves to the surface (the online players now, the offline ones in their saves), then `ClearCaveSystem()`. |
+| `world caves teleport <players> <layer>` | Makes the layers down to `layer` if they don't exist yet (100 at most), then teleports the players to that layer's portal. In the unpatched game it does nothing for a layer that already exists. TavernLib's replacement works either way and says who it moved. |
+
+`progress generatecaves <layer>` (in `ProgressCommandModule`) makes the layers without moving anyone.
+
 ## Costs and traps
 
 - **Generation is the expensive part.** Rock data on threads, rendering a few ms a frame, a pathfinding scan on the server. Generating many layers in a row (the `generatecaves` command) is slow.
 - **Rover's measurements:** three players on layer 1 cost little (75 to 78 fps on the server). Ten bots going down to layer 4 needed god mode; creatures on layers 1 and 2 kill unarmed bots.
 - **The rock isn't saved, only rebuilt.** Anything that depends on exact rock shape (a buried check, a spawn point) is recomputed each load. Things placed in the rock by dynamic plugins aren't placed again.
-- **`world caves teleport` only works for a layer that hasn't generated** (Rover). For an existing layer, use `SafeMoveToChunk` to a point in it.
+- **In the unpatched game, `world caves teleport` only works for a layer that hasn't generated.** For an existing one it does nothing. TavernLib's replacement works either way. Without TavernLib, use `SafeMoveToChunk` to a point in the layer.
 - **Cave chunks get their indices at runtime.** A server with many layers uses many chunk indices; the limit is 8,192 chunks, and running out shuts the server down ("Ran out of chunk indices").
 
 ## Other types in this area

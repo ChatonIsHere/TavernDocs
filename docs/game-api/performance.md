@@ -41,7 +41,7 @@ Unity's Mono uses the Boehm collector, which ignores "optimized" and "not blocki
 
 Because the heap never shrinks, a server that has loaded the forest or caves keeps the longer pause after everyone leaves.
 
-TavernLib's `garbage_collection_timer` in [server_settings.json](../host/config-reference.md#server_settingsjson) changes the interval. A longer one means fewer pauses, but each is still as long. Steady's `ForcedGc` setting stops the timer and leaves collection to the runtime.
+TavernLib's `garbage_collection_timer` in [server_settings.json](../host/config-reference.md#server_settingsjson) changes the interval. A longer one means fewer pauses, but each is still as long. Steady stops the timer and leaves collection to the runtime, unless `garbage_collection_timer` is set to something other than 30 or Steady's `ForcedGc` setting is on.
 
 ### The forest
 
@@ -105,7 +105,7 @@ Both are MelonLoader mods that patch the game with Harmony and leave gameplay al
 
 | Area | What it changes |
 | --- | --- |
-| Freezes | Stops the 30 s forced GC (`ForcedGc`) and the GC after each navmesh scan (`ScanGc`). Re-cuts only the rebuilt navmesh tiles (`RebuiltTilesOnly`). Shares a few milliseconds a frame between all loading forest chunks (`ForestBudgetMs`). Spreads saved entities from neighbouring chunks over frames (`ChunkLoadBudgetMs`) and player saves over the autosave (`SpreadPlayerSaves`). |
+| Freezes | Stops the 30 s forced GC (`ForcedGc`, unless the host set `garbage_collection_timer`) and the GC after each navmesh scan (`ScanGc`). Re-cuts only the rebuilt navmesh tiles (`RebuiltTilesOnly`). Shares a few milliseconds a frame between all loading forest chunks (`ForestBudgetMs`). Spreads saved entities from neighbouring chunks over frames (`ChunkLoadBudgetMs`) and player saves over the autosave (`SpreadPlayerSaves`). |
 | Pathfinding | Relabels only the changed part of the navmesh when it can prove nothing joined or split, falling back to the full fill (`LocalAreaFill`). Faster full fills and nearest-node searches. Checks navmesh cuts once a frame instead of twice. Runs cave scans one at a time and retries a failed one (`CaveScanFix`). Fixes graph masks for cave graphs from 32 up (`GraphMaskFix`). |
 | Memory and saves | `DropDeadReferences` (above). Serializes each component once when saving, with the same bytes (`SinglePassSaves`). Skips writing chunks that haven't changed (`SkipUnchangedChunks`). Smaller fixes to network spawn checks, stream finalizers and the receive buffer pool. |
 | Logging | Raises the game's log level to Info and quietens pathfinding logs. |

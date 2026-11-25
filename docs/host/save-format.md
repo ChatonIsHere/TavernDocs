@@ -139,6 +139,7 @@ These are the game's own, under `save`. Run them on the server's console. See [C
 | `save wipecache` | Deletes `Cache/`. |
 | `save wipecaves` | Moves everyone in the caves to the surface and clears the caves. |
 | `save wipe-storage` | Empties the town's shared storage (`Global Communal Storage`). |
+| `save backup [isInstant]` | Copies changed save files to a second copy, but only on a server started with `/remote_saves <type> <path>`. Any type except `s3` and `gcs` means a plain folder at `<path>`. On a normal server it does nothing. Read from the code, not tested. |
 | `save player-wipe <player>` | Deletes one player's character, lockbox, bank, postbox, landmarks and map. |
 | `save player-wipe-all` | The same for every player. |
 | `save wipe` | Kicks everyone, deletes `Chunks/` and `Cache/`, moves every player to the spawn point and clears their home, then stops the server. Players keep their characters and what they carry, but lose the map markers they made. |
