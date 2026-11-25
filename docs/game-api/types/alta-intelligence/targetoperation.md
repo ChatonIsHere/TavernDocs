@@ -1,6 +1,6 @@
 ---
 title: "TargetOperation"
-description: "One scoring rule. float Evaluate(Agent agent, ITarget target), plus a Weight."
+description: "One scoring rule a creature action uses to rate a possible target (a sense, a stat, distance and so on)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **abstract class** in `Root.Township`, `Alta.Intelligence`.
 
-One scoring rule. `float Evaluate(Agent agent, ITarget target)`, plus a `Weight`.
+One scoring rule a creature action uses to rate a possible target (a sense, a stat, distance and so on). The decider multiplies each result by `Weight`.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Derived types** [`Chance`](/game-api/types/alta-intelligence/chance), [`FailTargetOperation`](/game-api/types/alta-intelligence/failtargetoperation), [`Formula<T>`](/game-api/types/alta-intelligence/formula-t), [`Grounded`](/game-api/types/alta-intelligence/grounded), [`InverseLerpSenseSelf`](/game-api/types/alta-intelligence/inverselerpsenseself), [`InverseLerpSenseTarget`](/game-api/types/alta-intelligence/inverselerpsensetarget), [`Lifetime`](/game-api/types/alta-intelligence/lifetime), [`RaycastGrounded`](/game-api/types/alta-intelligence/raycastgrounded), [`RVOBlockedValue`](/game-api/types/alta-intelligence/rvoblockedvalue), [`SameTarget`](/game-api/types/alta-intelligence/sametarget), [`Schmeechee.Operation`](/game-api/types/alta-intelligence/schmeechee-operation), [`StatValue`](/game-api/types/alta-intelligence/statvalue), [`VelocityLimit`](/game-api/types/alta-intelligence/velocitylimit)
@@ -28,14 +28,14 @@ One scoring rule. `float Evaluate(Agent agent, ITarget target)`, plus a `Weight`
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-weight" /><code>{"float Weight { get; private set; }"}</code> |  |
+| <Link id="m-weight" /><code>{"float Weight { get; private set; }"}</code> | Multiplier on this operation's result. 1 by default. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-evaluate" /><code>{"abstract float Evaluate("}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |  |
-| <Link id="m-setweight" /><code><Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" SetWeight(float weight)"}</code> |  |
+| <Link id="m-evaluate" /><code>{"abstract float Evaluate("}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | Scores a target for an agent. |
+| <Link id="m-setweight" /><code><Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" SetWeight(float weight)"}</code> | Sets `Weight` and returns the operation, for chaining. |
 
 ## Used in
 

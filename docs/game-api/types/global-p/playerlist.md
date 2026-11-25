@@ -1,6 +1,6 @@
 ---
 title: "PlayerList"
-description: "Names or ids separated by commas, or  for everyone"
+description: "A list of players parsed from a console command argument (names or ids separated by commas, or )."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-Names or ids separated by commas, or `*` for everyone
+A list of players parsed from a console command argument (names or ids separated by commas, or `*`). See the arguments guide.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `IEnumerable<IPlayer>`, `IEnumerable`
@@ -35,15 +35,15 @@ Names or ids separated by commas, or `*` for everyone
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lastlist" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> LastList { get; private set; }"}</code> |  |
+| <Link id="m-lastlist" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> LastList { get; private set; }"}</code> | The players from the most recently made list. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-countorname" /><code>{"string CountOrName()"}</code> |  |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> GetEnumerator()"}</code> |  |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |  |
+| <Link id="m-countorname" /><code>{"string CountOrName()"}</code> | "no one", the one player's name, or "N players", for log messages. |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> GetEnumerator()"}</code> | Enumerates the players. |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Enumerates the players. |
 
 ## Used in
 

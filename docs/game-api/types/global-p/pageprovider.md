@@ -1,6 +1,6 @@
 ---
 title: "PageProvider"
-description: "Base for a kind of page content (for books and notes). Each provider registers itself by Identifier on Awake and makes, saves and syncs its own page d"
+description: "Base for a kind of page content (for books and notes)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

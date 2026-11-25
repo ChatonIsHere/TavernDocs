@@ -1,6 +1,6 @@
 ---
 title: "Interactable"
-description: "Runs on both sides."
+description: "Anything a hand can grab or use: the base class for Pickup, levers, buttons, containers and more."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-Runs on both sides.
+Anything a hand can grab or use: the base class for `Pickup`, levers, buttons, containers and more. A `NetworkEntityBehaviour` on the item; interactions start on the client and are synced through the `Interactor`.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`IEntityReplaceHandler`](/game-api/types/alta-networking/ientityreplacehandler)
@@ -30,7 +30,7 @@ Runs on both sides.
 | Member | What it is |
 | --- | --- |
 | <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" channels"}</code> |  |
-| <Link id="m-isduringinteract" /><code>{"protected bool isDuringInteract"}</code> |  |
+| <Link id="m-isduringinteract" /><code>{"protected bool isDuringInteract"}</code> | True while `CheckInteractAllowedAndReplace` is making other hands let go. |
 | <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> |  |
 | <Link id="m-lastplayerinteractor" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" lastPlayerInteractor"}</code> |  |
 | <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
@@ -42,50 +42,50 @@ Runs on both sides.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-basesavemode" /><code><Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" BaseSaveMode { get; set; }"}</code> |  |
-| <Link id="m-channels-2" /><code><Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" Channels { get; set; }"}</code> |  |
-| <Link id="m-forwardto" /><code>{"List<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{"> ForwardTo { get; }"}</code> |  |
-| <Link id="m-interactors" /><code>{"List<"}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{"> Interactors { get; }"}</code> |  |
-| <Link id="m-isinteractable" /><code>{"bool IsInteractable { get; set; }"}</code> |  |
-| <Link id="m-isinteractedwith" /><code>{"bool IsInteractedWith { get; protected set; }"}</code> |  |
-| <Link id="m-isnetworked-2" /><code>{"bool IsNetworked { get; set; }"}</code> |  |
-| <Link id="m-lastinteractorplayerid" /><code>{"int LastInteractorPlayerId { get; protected set; }"}</code> |  |
-| <Link id="m-lastinteractorroot" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" LastInteractorRoot { get; private set; }"}</code> |  |
-| <Link id="m-lastplayerinteractor-2" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" LastPlayerInteractor { get; set; }"}</code> |  |
-| <Link id="m-multipleallowance-2" /><code><Link to="/game-api/types/global-m-o/multipleinteractionallowance">{"MultipleInteractionAllowance"}</Link>{" MultipleAllowance { get; }"}</code> |  |
-| <Link id="m-defaultmultipleblockedaction" /><code>{"protected virtual "}<Link to="/game-api/types/global-m-o/multiplenotallowedaction">{"MultipleNotAllowedAction"}</Link>{" DefaultMultipleBlockedAction { get; }"}</code> |  |
-| <Link id="m-defaultmultipleinteractionallowance" /><code>{"protected virtual "}<Link to="/game-api/types/global-m-o/multipleinteractionallowance">{"MultipleInteractionAllowance"}</Link>{" DefaultMultipleInteractionAllowance { get; }"}</code> |  |
+| <Link id="m-basesavemode" /><code><Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" BaseSaveMode { get; set; }"}</code> | The save mode to go back to after being held. `Child` for embedded parts. |
+| <Link id="m-channels-2" /><code><Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" Channels { get; set; }"}</code> | Which interaction channels this listens on. A hand only sees it if their channels overlap. |
+| <Link id="m-forwardto" /><code>{"List<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{"> ForwardTo { get; }"}</code> | Interactables to pass interactions on to. The last one added wins. |
+| <Link id="m-interactors" /><code>{"List<"}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{"> Interactors { get; }"}</code> | The hands interacting with this now. |
+| <Link id="m-isinteractable" /><code>{"bool IsInteractable { get; set; }"}</code> | Whether hands can find this. Same as the component being enabled. |
+| <Link id="m-isinteractedwith" /><code>{"bool IsInteractedWith { get; protected set; }"}</code> | True while at least one hand is on it. |
+| <Link id="m-isnetworked-2" /><code>{"bool IsNetworked { get; set; }"}</code> | When false, interactions on this are not started or stopped from network messages. |
+| <Link id="m-lastinteractorplayerid" /><code>{"int LastInteractorPlayerId { get; protected set; }"}</code> | User id of the last player who interacted with this. 0 if none. |
+| <Link id="m-lastinteractorroot" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" LastInteractorRoot { get; private set; }"}</code> | The body entity of the last player who interacted with this. |
+| <Link id="m-lastplayerinteractor-2" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" LastPlayerInteractor { get; set; }"}</code> | The body of the last player who interacted with this. Setting it updates the id and root. |
+| <Link id="m-multipleallowance-2" /><code><Link to="/game-api/types/global-m-o/multipleinteractionallowance">{"MultipleInteractionAllowance"}</Link>{" MultipleAllowance { get; }"}</code> | Flags for whether two hands of one player, or several players, can hold this at once. |
+| <Link id="m-defaultmultipleblockedaction" /><code>{"protected virtual "}<Link to="/game-api/types/global-m-o/multiplenotallowedaction">{"MultipleNotAllowedAction"}</Link>{" DefaultMultipleBlockedAction { get; }"}</code> | What a subclass does by default when a second hand isn't allowed. `Block` here. |
+| <Link id="m-defaultmultipleinteractionallowance" /><code>{"protected virtual "}<Link to="/game-api/types/global-m-o/multipleinteractionallowance">{"MultipleInteractionAllowance"}</Link>{" DefaultMultipleInteractionAllowance { get; }"}</code> | Which multiple interactions a subclass allows by default. None here. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-interactionended" /><code>{"event Action<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{", "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{"> InteractionEnded"}</code> |  |
-| <Link id="m-interactionfilter" /><code>{"event "}<Link to="/game-api/types/global-i-l/interactionfilter">{"InteractionFilter"}</Link>{" "}<Link to="/game-api/types/global-i-l/interactionfilter">{"InteractionFilter"}</Link></code> |  |
-| <Link id="m-interactionstarted" /><code>{"event Action<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{", "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{"> InteractionStarted"}</code> |  |
+| <Link id="m-interactionended" /><code>{"event Action<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{", "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{"> InteractionEnded"}</code> | Raised when a hand stops interacting with this. |
+| <Link id="m-interactionfilter" /><code>{"event "}<Link to="/game-api/types/global-i-l/interactionfilter">{"InteractionFilter"}</Link>{" "}<Link to="/game-api/types/global-i-l/interactionfilter">{"InteractionFilter"}</Link></code> | Handlers can set the result to false to stop a hand picking this. |
+| <Link id="m-interactionstarted" /><code>{"event Action<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{", "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{"> InteractionStarted"}</code> | Raised when a hand starts interacting with this. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-assessinteraction" /><code>{"virtual bool AssessInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out float score)"}</code> |  |
-| <Link id="m-assessscore" /><code>{"virtual bool AssessScore("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out float score)"}</code> |  |
-| <Link id="m-checkforward" /><code>{"virtual "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" CheckForward("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out bool isForced)"}</code> |  |
-| <Link id="m-checkinteractallowedandreplace" /><code>{"virtual bool CheckInteractAllowedAndReplace("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-finishinteraction" /><code>{"virtual void FinishInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-forcedrop" /><code>{"void ForceDrop(bool isForcingClient = false)"}</code> |  |
-| <Link id="m-forcelastinteractedplayerid" /><code>{"void ForceLastInteractedPlayerID(int id, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" lastPayerInteractor)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-interact" /><code>{"virtual void Interact("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-networkstartinteraction" /><code>{"virtual void NetworkStartInteraction("}<Link to="/game-api/types/global-i-l/inetworkinteractargument">{"INetworkInteractArgument"}</Link>{" message, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, Action<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{"> handleInteractionStart)"}</code> |  |
-| <Link id="m-networkstopinteraction" /><code>{"virtual void NetworkStopInteraction("}<Link to="/game-api/types/global-i-l/interactarguments">{"InteractArguments"}</Link>{" message, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, Action<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{"> handleInteractionEnd)"}</code> |  |
-| <Link id="m-replacedwith" /><code>{"virtual void ReplacedWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/replaceavoidflags">{"ReplaceAvoidFlags"}</Link>{" replaceAvoidFlags)"}</code> |  |
-| <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> |  |
-| <Link id="m-replacewith-2" /><code>{"virtual void ReplaceWith("}<Link to="/game-api/types/global-s/spawner">{"Spawner"}</Link>{" spawner)"}</code> |  |
+| <Link id="m-assessinteraction" /><code>{"virtual bool AssessInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out float score)"}</code> | Runs the `InteractionFilter` handlers, then `AssessScore`. Returns false if a filter blocked it. |
+| <Link id="m-assessscore" /><code>{"virtual bool AssessScore("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out float score)"}</code> | Scores this for a hand: squared distance from the grip point, times a per-prefab modifier. Lower wins; containers count double. |
+| <Link id="m-checkforward" /><code>{"virtual "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" CheckForward("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out bool isForced)"}</code> | Returns the interactable an interaction should really go to: the last entry in `ForwardTo`, or itself. |
+| <Link id="m-checkinteractallowedandreplace" /><code>{"virtual bool CheckInteractAllowedAndReplace("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Checks multiple-hand and multiple-player rules. Depending on settings, either blocks the new hand or makes the old ones let go. |
+| <Link id="m-finishinteraction" /><code>{"virtual void FinishInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Removes the hand, clears `IsInteractedWith` when none are left and raises `InteractionEnded`. |
+| <Link id="m-forcedrop" /><code>{"void ForceDrop(bool isForcingClient = false)"}</code> | Makes every hand on this let go. |
+| <Link id="m-forcelastinteractedplayerid" /><code>{"void ForceLastInteractedPlayerID(int id, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" lastPayerInteractor)"}</code> | Sets the last interacting player id and body directly. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Hooks the prefab's destroy so every hand lets go when it is destroyed. Embedded parts get `Child` save mode. |
+| <Link id="m-interact" /><code>{"virtual void Interact("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Adds the hand, sets `IsInteractedWith`, records the player and raises `InteractionStarted`. |
+| <Link id="m-networkstartinteraction" /><code>{"virtual void NetworkStartInteraction("}<Link to="/game-api/types/global-i-l/inetworkinteractargument">{"INetworkInteractArgument"}</Link>{" message, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, Action<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{"> handleInteractionStart)"}</code> | Starts an interaction that came over the network, logging if the hand wouldn't normally be allowed. |
+| <Link id="m-networkstopinteraction" /><code>{"virtual void NetworkStopInteraction("}<Link to="/game-api/types/global-i-l/interactarguments">{"InteractArguments"}</Link>{" message, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, Action<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{"> handleInteractionEnd)"}</code> | Ends an interaction that came over the network. |
+| <Link id="m-replacedwith" /><code>{"virtual void ReplacedWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/replaceavoidflags">{"ReplaceAvoidFlags"}</Link>{" replaceAvoidFlags)"}</code> | Called when the entity is replaced: hands move to the new entity's interactable unless told not to. |
+| <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> | Moves every hand on this to another interactable, or to what a `Spawner` last spawned. Used when an item turns into another. |
+| <Link id="m-replacewith-2" /><code>{"virtual void ReplaceWith("}<Link to="/game-api/types/global-s/spawner">{"Spawner"}</Link>{" spawner)"}</code> | Moves every hand on this to another interactable, or to what a `Spawner` last spawned. Used when an item turns into another. |
 | <Link id="m-networkdestroyed" /><code>{"private void NetworkDestroyed("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> |  |
-| <Link id="m-onlastinteractorplayerchanged" /><code>{"protected virtual void OnLastInteractorPlayerChanged()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> |  |
-| <Link id="m-start" /><code>{"protected virtual void Start()"}</code> |  |
+| <Link id="m-onlastinteractorplayerchanged" /><code>{"protected virtual void OnLastInteractorPlayerChanged()"}</code> | Override hook, called when a different player interacts with this. |
+| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Editor: fills in the multiple-interaction defaults if they were never set. |
+| <Link id="m-start" /><code>{"protected virtual void Start()"}</code> | Empty override hook. |
 | <Link id="m-testlefthand" /><code>{"private void TestLeftHand()"}</code> |  |
 | <Link id="m-testlefthandend" /><code>{"private void TestLeftHandEnd()"}</code> |  |
 | <Link id="m-testrighthand" /><code>{"private void TestRightHand()"}</code> |  |

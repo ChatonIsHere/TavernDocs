@@ -14,7 +14,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.Analytics
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AbstractAnalyticsDispatcher`](/game-api/types/assembly-other/abstractanalyticsdispatcher) | abstract class | `IInitializable` | 1 |  |
 | [`AnalyticsData`](/game-api/types/assembly-other/analyticsdata) | class | `IAnalyticsData`, `IAnalyticsPropertyWriter`, `IReadonlyAnalyticsData`, +3 more | 7 |  |
@@ -26,14 +26,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`IAnalyticsInstrument`](/game-api/types/assembly-other/ianalyticsinstrument) | interface |  | 1 |  |
 | [`IAnalyticsProperty`](/game-api/types/assembly-other/ianalyticsproperty) | interface |  | 2 |  |
 | [`IAnalyticsPropertyWriter`](/game-api/types/assembly-other/ianalyticspropertywriter) | interface |  | 1 |  |
-| [`IAnalyticsService`](/game-api/types/assembly-other/ianalyticsservice) | interface | `IEventSource<IReadonlyAnalyticsData>` | 1 |  |
+| [`IAnalyticsService`](/game-api/types/assembly-other/ianalyticsservice) | interface | `IEventSource<IReadonlyAnalyticsData>` | 1 | The game's analytics event bus. Listeners (dispatchers) receive each event's data. |
 | [`IReadonlyAnalyticsData`](/game-api/types/assembly-other/ireadonlyanalyticsdata) | interface | `IReadOnlyCollection<IAnalyticsProperty>`, `IEnumerable<IAnalyticsProperty>`, `IEnumerable` | 2 | [Event buses and services](../console-and-utilities/event-buses-and-services.md): `string EventName`, `int? UserId`, and the properties (`IAnalyticsProperty`) as a collection. |
 
 ## Alta.ArrayPools.Runtime
 
 ### Alta.ArrayPools
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ArrayPoolManager`](/game-api/types/assembly-other/arraypoolmanager) | static class |  | 4 |  |
 | [`IUnclearedPower2ArrayPool`](/game-api/types/assembly-other/iunclearedpower2arraypool) | interface |  | 1 |  |
@@ -43,7 +43,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### (no namespace)
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`BoolValueLabeling`](/game-api/types/assembly-other/boolvaluelabeling) | class | `ConditionalLabeling` | 3 |  |
 | [`BuildTestAttribute`](/game-api/types/assembly-other/buildtestattribute) | class | `Attribute` | 0 |  |
@@ -108,14 +108,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### (no namespace)
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`PlayerSubscriberStatus`](/game-api/types/assembly-other/playersubscriberstatus) | enum |  | 4 | [Player](../networking/player.md#playersubscriberstatus), [Alta assemblies](../console-and-utilities/alta-assemblies.md): `None`, `Subscriber`, `Developer`, `AltaMod` (0 to 3). |
 | [`UserPermissions`](/game-api/types/assembly-other/userpermissions) | static class |  | 7 |  |
 
 ### Alta.Authentication
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AuthenticationUtility`](/game-api/types/assembly-other/authenticationutility) | class | `IAuthenticationUtility` | 6 | [Alta assemblies](../console-and-utilities/alta-assemblies.md), [Startup and app state](../console-and-utilities/startup-and-app-state.md): Logs in from the command line (`/login`, `/login_hash`, `/access_token`, `/oauth_login`), with a username and password, or with a stored refresh token. |
 | [`Constants`](/game-api/types/assembly-other/constants) | static class |  | 3 | [Alta assemblies](../console-and-utilities/alta-assemblies.md): The `PlayerPreferences` key names for the three tokens. |
@@ -127,18 +127,18 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### (no namespace)
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`BuildRendererBakeable`](/game-api/types/assembly-other/buildrendererbakeable) | abstract class | `MonoBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 3 |  |
-| [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable) | interface |  | 0 |  |
-| [`IBuildRendererBakeable`](/game-api/types/assembly-other/ibuildrendererbakeable) | interface | `IBuildBakeable` | 3 |  |
-| [`IBuildRendererPostBake`](/game-api/types/assembly-other/ibuildrendererpostbake) | interface | `IBuildBakeable` | 1 |  |
+| [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable) | interface |  | 0 | Empty marker interface for components that the build process bakes. `IBuildRendererBakeable` and `IBuildRendererPostBake` extend it. |
+| [`IBuildRendererBakeable`](/game-api/types/assembly-other/ibuildrendererbakeable) | interface | `IBuildBakeable` | 3 | Build-time hook for components that bake renderer data into a prefab. Bakers run in `SortingOrder` order. |
+| [`IBuildRendererPostBake`](/game-api/types/assembly-other/ibuildrendererpostbake) | interface | `IBuildBakeable` | 1 | For components that need a step after a build renderer bake. `BuildRendererBakeable` calls `PostBake` on every one under the target once baking finishes. Build-time only. |
 
 ## Alta.CommandLine
 
 ### (no namespace)
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`CommandLineArguments`](/game-api/types/assembly-other/commandlinearguments) | static class |  | 45 | [Startup and app state](../console-and-utilities/startup-and-app-state.md#commandlinearguments): Reads `Environment.GetCommandLineArgs()` once, on first use. |
 | [`CommandLineArgumentsInEditor`](/game-api/types/assembly-other/commandlineargumentsineditor) | class | `GlobalSettings<CommandLineArgumentsInEditor>` | 1 |  |
@@ -147,7 +147,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.Core.Runtime
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AverageNumber`](/game-api/types/assembly-other/averagenumber) | class |  | 8 |  |
 
@@ -155,7 +155,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### (no namespace)
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AltaCoroutine`](/game-api/types/assembly-other/altacoroutine) | class |  | 14 | [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#altacoroutine), [Alta assemblies](../console-and-utilities/alta-assemblies.md): A wrapper around a Unity coroutine that catches exceptions and tells you how it ended. |
 | [`AltaCoroutineState`](/game-api/types/assembly-other/altacoroutinestate) | enum |  | 5 |  |
@@ -165,7 +165,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.Utilities
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AltaCoroutineHandler`](/game-api/types/assembly-other/altacoroutinehandler) | internal class | `SingletonBehaviour<AltaCoroutineHandler>` | 0 |  |
 | [`RateLimiter`](/game-api/types/assembly-other/ratelimiter) | class |  | 2 | [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#ratelimiter), [Alta assemblies](../console-and-utilities/alta-assemblies.md): `new RateLimiter(float targetTickRate)` then `bool IsRateLimited()`: false at most `targetTickRate` times a second (by `Time.realtimeSinceStartup`), true in between. |
@@ -174,7 +174,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.EventBusSystem
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`EventBus<T>`](/game-api/types/assembly-other/eventbus-t) | class | `IEventBus<T>`, `IEventSource<T>` | 4 | [Event buses and services](../console-and-utilities/event-buses-and-services.md) |
 | [`IEventBus<T>`](/game-api/types/assembly-other/ieventbus-t) | interface | `IEventSource<T>` | 1 |  |
@@ -184,7 +184,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.Global
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`GlobalSettings`](/game-api/types/assembly-other/globalsettings) | abstract class | `ScriptableObject` | 1 | [Settings and files](../console-and-utilities/settings-and-files.md#globalsettings): The game's design data as `ScriptableObject` assets: `MenuSettings`, `NetworkingSettings`, `SmoothLocomotionSettings`, `PickupTypeSettings` and many more. |
 | [`GlobalSettings<T>`](/game-api/types/assembly-other/globalsettings-t) | class | `GlobalSettings` | 2 | [Settings and files](../console-and-utilities/settings-and-files.md#globalsettings): The game's design data as `ScriptableObject` assets: `MenuSettings`, `NetworkingSettings`, `SmoothLocomotionSettings`, `PickupTypeSettings` and many more. |
@@ -196,7 +196,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### (no namespace)
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`IPlayerPreferenceValue<T>`](/game-api/types/assembly-other/iplayerpreferencevalue-t) | interface |  | 1 |  |
 | [`PlayerPreferenceBool`](/game-api/types/assembly-other/playerpreferencebool) | class | `PlayerPreferenceValue<bool>` | 1 |  |
@@ -209,7 +209,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.Utilities
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AltaFile`](/game-api/types/assembly-other/altafile) | class | `IAltaFile` | 24 |  |
 | [`AltaFolder`](/game-api/types/assembly-other/altafolder) | class | `IAltaFolder` | 16 |  |
@@ -218,7 +218,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`FileInfoWrapper`](/game-api/types/assembly-other/fileinfowrapper) | class | `IFileAccess` | 8 |  |
 | [`FileSystemExtensions`](/game-api/types/assembly-other/filesystemextensions) | static class |  | 2 |  |
 | [`IAltaFile`](/game-api/types/assembly-other/ialtafile) | interface |  | 19 | [Settings and files](../console-and-utilities/settings-and-files.md#ialtafolder-and-ialtafile) |
-| [`IAltaFileFormat`](/game-api/types/assembly-other/ialtafileformat) | abstract class | `IDisposable` | 5 |  |
+| [`IAltaFileFormat`](/game-api/types/assembly-other/ialtafileformat) | abstract class | `IDisposable` | 5 | Base for a file format the game can read from and write to a stream, such as a save file's contents. Disposable. |
 | [`IAltaFolder`](/game-api/types/assembly-other/ialtafolder) | interface |  | 15 | [Settings and files](../console-and-utilities/settings-and-files.md#ialtafolder-and-ialtafile) |
 | [`IFileAccess`](/game-api/types/assembly-other/ifileaccess) | interface |  | 7 |  |
 | [`IRemoteAltaFile`](/game-api/types/assembly-other/iremotealtafile) | interface |  | 4 |  |
@@ -238,7 +238,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.LifecycleManagement
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`CompositeDisposable`](/game-api/types/assembly-other/compositedisposable) | class | `ICollection<IDisposable>`, `IEnumerable<IDisposable>`, `IEnumerable`, +2 more | 14 |  |
 | [`Disposable`](/game-api/types/assembly-other/disposable) | static class |  | 3 |  |
@@ -250,7 +250,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### System
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`IDisposer`](/game-api/types/assembly-other/idisposer) | interface | `IDisposable` | 1 |  |
 
@@ -258,7 +258,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.ATT.LifetimeScopes
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AbstractAltaLifetimeScope`](/game-api/types/assembly-other/abstractaltalifetimescope) | abstract class | `LifetimeScope` | 1 |  |
 | [`AnalyticsInstaller`](/game-api/types/assembly-other/analyticsinstaller) | class |  | 1 |  |
@@ -283,16 +283,16 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### (no namespace)
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AltaMenuItem`](/game-api/types/assembly-other/altamenuitem) | abstract class | `ISearchableTool` | 12 |  |
+| [`AltaMenuItem`](/game-api/types/assembly-other/altamenuitem) | abstract class | `ISearchableTool` | 12 | Base for Alta's editor menu commands. Subclasses nest inside an `AltaMenuItemBase` path class, and editor tooling generates a Unity menu entry for each one. Editor only, does nothing in a running server. |
 | [`AltaMenuItemBase`](/game-api/types/assembly-other/altamenuitembase) (and 172 nested types) | class |  | 1 |  |
 
 ## Alta.NetworkTransport.Runtime
 
 ### Alta.NetworkingTransport
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AltaNetworkError`](/game-api/types/assembly-other/altanetworkerror) | enum |  | 9 |  |
 | [`INetworkTransportResult`](/game-api/types/assembly-other/inetworktransportresult) | interface |  | 2 |  |
@@ -308,7 +308,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.NetworkingTransport.Kcp
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`KcpClientConnection`](/game-api/types/assembly-other/kcpclientconnection) | class | `ITransportConnection` | 10 |  |
 | [`KcpClientWrapper`](/game-api/types/assembly-other/kcpclientwrapper) | class | `ITransportClient`, `ITransportSocket` | 14 |  |
@@ -320,7 +320,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.NetworkingTransport.Parallel
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`LlapiMetric`](/game-api/types/assembly-other/llapimetric) | class |  | 6 |  |
 
@@ -328,7 +328,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### (no namespace)
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`FfvSource`](/game-api/types/assembly-other/ffvsource) | enum |  | 4 |  |
 | [`PlatformTarget`](/game-api/types/assembly-other/platformtarget) | enum |  | 2 | [Player](../networking/player.md#platformtarget): `PC = 1`, `Quest = 2` (flags, in `Alta.Platform.dll`). The client sends it in its join request. |
@@ -337,7 +337,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.Platform
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AccessTokenMode`](/game-api/types/assembly-other/accesstokenmode) | enum |  | 3 |  |
 | [`IAuthenticationFeatures`](/game-api/types/assembly-other/iauthenticationfeatures) | interface |  | 3 |  |
@@ -349,7 +349,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.Platform.Fakes
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`FakePlatformDevice`](/game-api/types/assembly-other/fakeplatformdevice) | class | `IPlatformDevice` | 1 |  |
 | [`FakePlatformService`](/game-api/types/assembly-other/fakeplatformservice) | class | `IPlatformService` | 2 |  |
@@ -357,7 +357,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.Platform.Models
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`IUser`](/game-api/types/assembly-other/iuser) | interface |  | 2 |  |
 
@@ -365,7 +365,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.Platform.Generic
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AuthenticationFeatures`](/game-api/types/assembly-other/authenticationfeatures) | class | `IAuthenticationFeatures` | 3 |  |
 | [`AuthenticationService`](/game-api/types/assembly-other/authenticationservice) | class | `IAuthenticationService` | 10 |  |
@@ -375,7 +375,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.PlatformInformation
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`LocalPlatformProvider`](/game-api/types/assembly-other/localplatformprovider) | internal class |  | 1 |  |
 | [`OverridePlatformProvider`](/game-api/types/assembly-other/overrideplatformprovider) | internal class |  | 4 |  |
@@ -386,7 +386,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.Profiling
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ProfileMarker`](/game-api/types/assembly-other/profilemarker) | static class |  | 2 |  |
 | [`ProfilingSession`](/game-api/types/assembly-other/profilingsession) | class | `IDisposable` | 6 |  |
@@ -395,7 +395,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### (no namespace)
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ISearchableTool`](/game-api/types/assembly-other/isearchabletool) | interface |  | 6 |  |
 
@@ -403,7 +403,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.Serialization
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`BitDisplay`](/game-api/types/assembly-other/bitdisplay) | static class |  | 2 |  |
 | [`BitReader`](/game-api/types/assembly-other/bitreader) | class |  | 12 |  |
@@ -422,25 +422,25 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.Utilities
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`SingletonBehaviour<T>`](/game-api/types/assembly-other/singletonbehaviour-t) | class | `MonoBehaviour` | 2 |  |
+| [`SingletonBehaviour<T>`](/game-api/types/assembly-other/singletonbehaviour-t) | class | `MonoBehaviour` | 2 | Base for a component that should exist once. The first one to wake becomes `Instance`; any later copy destroys itself. |
 
 ## Alta.Timing.Runtime
 
 ### Alta.Timing
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ITimeline`](/game-api/types/assembly-other/itimeline) | interface |  | 1 |  |
 | [`Timeline`](/game-api/types/assembly-other/timeline) | class | `ITimeline` | 21 | [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#timeline), [Time and environment](../world/time-and-environment.md#timeline): A scheduler for "call this in N seconds" and "every N seconds", used for respawns, decay, loot refills, taxes, timed stat changes and the like. Main thread. |
-| [`Timeline.IEntry`](/game-api/types/assembly-other/timeline-ientry) | interface |  | 2 |  |
+| [`Timeline.IEntry`](/game-api/types/assembly-other/timeline-ientry) | interface |  | 2 | Handle to a callback scheduled on the game `Timeline` (from `CallAfterDuration`, `CallRepeatableAfterDuration` and so on). Pass it to `Timeline.Cancel` to stop it. |
 | [`Timeline.SerializedEntryState`](/game-api/types/assembly-other/timeline-serializedentrystate) | enum |  | 3 |  |
 | [`TimelineUpdater`](/game-api/types/assembly-other/timelineupdater) | class | `MonoBehaviour` | 0 |  |
 
 ### Alta.Timing.PriorityQueue
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`FastPriorityQueue<T>`](/game-api/types/assembly-other/fastpriorityqueue-t) | class | `IFixedSizePriorityQueue<T, float>`, `IPriorityQueue<T, float>`, `IEnumerable<T>`, +1 more | 14 |  |
 | [`FastPriorityQueueNode`](/game-api/types/assembly-other/fastpriorityqueuenode) | class |  | 2 |  |
@@ -459,7 +459,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### (no namespace)
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`Factory`](/game-api/types/assembly-other/factory) | abstract class | `IFactory`, `IDisposable` | 1 |  |
 | [`Factory<TInterface>`](/game-api/types/assembly-other/factory-tinterface) | abstract class | `Factory`, `IFactory<TInterface>`, `IFactory`, +1 more | 1 |  |
@@ -476,7 +476,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`FactoryAsyncPooled<TParam1, TParam2, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasyncpooled-tparam1-tparam2-tconcrete-tinterface) | abstract class | `FactoryAsyncPooled<TConcrete, TInterface>`, `IFactoryAsyncPooled<TParam1, TParam2, TInterface>`, `IFactory`, +1 more | 1 |  |
 | [`FactoryAsyncPooled<TParam1, TParam2, TParam3, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasyncpooled-tparam1-tparam2-tparam3-tconcrete-tinterface) | abstract class | `FactoryAsyncPooled<TConcrete, TInterface>`, `IFactoryAsyncPooled<TParam1, TParam2, TParam3, TInterface>`, `IFactory`, +1 more | 1 |  |
 | [`IDespawnable`](/game-api/types/assembly-other/idespawnable) | interface |  | 1 |  |
-| [`IFactory`](/game-api/types/assembly-other/ifactory) | interface | `IDisposable` | 0 |  |
+| [`IFactory`](/game-api/types/assembly-other/ifactory) | interface | `IDisposable` | 0 | Base interface for the VContainer layer's factories. The generic versions add `Create` with zero to three parameters; all are disposable. |
 | [`IFactory<in TParam, out TInterface>`](/game-api/types/assembly-other/ifactory-intparam-outtinterface) | interface | `IFactory`, `IDisposable` | 1 |  |
 | [`IFactory<in TParam1, in TParam2, in TParam3, out TInterface>`](/game-api/types/assembly-other/ifactory-intparam1-intparam2-intparam3-outtinterface) | interface | `IFactory`, `IDisposable` | 1 |  |
 | [`IFactory<in TParam1, in TParam2, out TInterface>`](/game-api/types/assembly-other/ifactory-intparam1-intparam2-outtinterface) | interface | `IFactory`, `IDisposable` | 1 |  |
@@ -502,7 +502,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`GeneralValue`](/game-api/types/assembly-other/generalvalue) | abstract class | `ScriptableObject` | 2 | [Alta assemblies](../console-and-utilities/alta-assemblies.md): A `ScriptableObject` with a `Description` and a `Type`. |
 | [`HashedGeneralValue`](/game-api/types/assembly-other/hashedgeneralvalue) | abstract class | `GeneralValue` | 2 |  |
@@ -513,7 +513,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.Networking
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`HashHelper`](/game-api/types/assembly-other/hashhelper) | static class |  | 7 | [Alta assemblies](../console-and-utilities/alta-assemblies.md): The hashing the game uses: `Hash(string)`, `HashCompressed`, `GetHashCodeForString`, and the editor-side hash validation. Hashes are 16 bits (`MaxHash` 65535). |
 
@@ -521,13 +521,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### (no namespace)
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`XRUtility`](/game-api/types/assembly-other/xrutility) | static class |  | 1 | [Startup and app state](../console-and-utilities/startup-and-app-state.md) |
 
 ### Alta.XRLoaders
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`IXRLoaderInitializer`](/game-api/types/assembly-other/ixrloaderinitializer) | interface |  | 0 |  |
 | [`IXRManagerSettingsController`](/game-api/types/assembly-other/ixrmanagersettingscontroller) | interface |  | 3 |  |
@@ -539,7 +539,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ### Alta.XRLoaders
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`IWindowsXRLoaderSettings`](/game-api/types/assembly-other/iwindowsxrloadersettings) | interface |  | 3 |  |
 | [`IXRSupportSystem`](/game-api/types/assembly-other/ixrsupportsystem) | interface |  | 2 |  |

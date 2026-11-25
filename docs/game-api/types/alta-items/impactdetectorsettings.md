@@ -1,6 +1,6 @@
 ---
 title: "ImpactDetectorSettings"
-description: "Detector data: hit effects, whether it gives XP, whether it wears tools."
+description: "Asset for how an impact detector reacts to hits: the sounds and effects for critical, good and bad hits, and whether hits wear the tool or give experience."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Impact`.
 
-Detector data: hit effects, whether it gives XP, whether it wears tools.
+Asset for how an impact detector reacts to hits: the sounds and effects for critical, good and bad hits, and whether hits wear the tool or give experience.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `ScriptableObject`
@@ -45,16 +45,16 @@ Detector data: hit effects, whether it gives XP, whether it wears tools.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-affectsdurabilitywhenstruck-2" /><code>{"bool AffectsDurabilityWhenStruck { get; }"}</code> |  |
-| <Link id="m-lasteffect" /><code><Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" LastEffect { get; private set; }"}</code> |  |
-| <Link id="m-provideexperiencewhenhit-2" /><code>{"bool ProvideExperienceWhenHit { get; }"}</code> |  |
+| <Link id="m-affectsdurabilitywhenstruck-2" /><code>{"bool AffectsDurabilityWhenStruck { get; }"}</code> | Whether hitting this wears down the tool. True by default. |
+| <Link id="m-lasteffect" /><code><Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" LastEffect { get; private set; }"}</code> | The effect object spawned by the last `PlayEffects`, or null. |
+| <Link id="m-provideexperiencewhenhit-2" /><code>{"bool ProvideExperienceWhenHit { get; }"}</code> | Whether hitting this can give experience. True by default. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playeffects" /><code>{"void PlayEffects("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" hit)"}</code> |  |
-| <Link id="m-playeffects-2" /><code>{"void PlayEffects("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" hit, float scale)"}</code> |  |
+| <Link id="m-playeffects" /><code>{"void PlayEffects("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" hit)"}</code> | Plays the critical, good or bad sound and effect for a hit, scaled by how effective it was. Without a scale, skips hits with no effect. |
+| <Link id="m-playeffects-2" /><code>{"void PlayEffects("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" hit, float scale)"}</code> | Plays the critical, good or bad sound and effect for a hit, scaled by how effective it was. Without a scale, skips hits with no effect. |
 
 ## Used in
 

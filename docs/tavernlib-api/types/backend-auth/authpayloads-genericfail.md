@@ -1,6 +1,6 @@
 ---
 title: "AuthPayloads.GenericFail"
-description: "A struct in TavernLib, TavernLib.Backend.Auth."
+description: "Status error with a message, for every other refusal (blacklisted, name taken, too many attempts and so on)."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `TavernLib`, `TavernLib.Backend.Auth`.
 
-A **struct** in `TavernLib`, `TavernLib.Backend.Auth`.
+Status `error` with a message, for every other refusal (blacklisted, name taken, too many attempts and so on).
 
 - **Listed in** [TavernLib.Backend.Auth](/tavernlib-api/types/backend-auth)
 - **Nested in** [`AuthPayloads`](/tavernlib-api/types/backend-auth/authpayloads)

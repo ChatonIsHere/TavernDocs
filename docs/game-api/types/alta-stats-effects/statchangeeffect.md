@@ -1,6 +1,6 @@
 ---
 title: "StatChangeEffect"
-description: "Adds strength to the stat's Base. This is how food fills hunger and fullness."
+description: "Adds strength to the stat's Base."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

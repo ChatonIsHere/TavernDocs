@@ -1,6 +1,6 @@
 ---
 title: "GameTaskManager"
-description: "The singleton behind achievements, action stats and micro tutorial flags. static GameTaskManager Instance."
+description: "Singleton behind achievements, action stats and micro tutorial completion."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-The singleton behind achievements, action stats and micro tutorial flags. `static GameTaskManager Instance`.
+Singleton behind achievements, action stats and micro tutorial completion. The server keeps a tracker per player loaded from Alta's achievement service and syncs completed flags to that player. See the Other systems guide.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`IAutoSave`](/game-api/types/global-i-l/iautosave)
@@ -39,30 +39,30 @@ The singleton behind achievements, action stats and micro tutorial flags. `stati
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-e-h/gametaskmanager">{"GameTaskManager"}</Link>{" Instance { get; private set; }"}</code> |  |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-e-h/gametaskmanager">{"GameTaskManager"}</Link>{" Instance { get; private set; }"}</code> | The manager in the scene. Extra copies destroy themselves. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-receivedsync" /><code>{"static event Action ReceivedSync"}</code> |  |
+| <Link id="m-receivedsync" /><code>{"static event Action ReceivedSync"}</code> | Client: raised after the initial list of completed flags arrives. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-actionexecuted" /><code>{"static void ActionExecuted("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> |  |
-| <Link id="m-clearachievementforplayer" /><code>{"void ClearAchievementForPlayer(int userId, "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> |  |
-| <Link id="m-clearactionstatforplayer" /><code>{"void ClearActionStatForPlayer(int userId, "}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" action)"}</code> |  |
-| <Link id="m-clearallachievementsforplayer" /><code>{"void ClearAllAchievementsForPlayer(int userIdentifier)"}</code> |  |
-| <Link id="m-incrementforplayer" /><code>{"void IncrementForPlayer("}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" gameTask, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-isachievementcompletedbyplayer" /><code>{"static bool IsAchievementCompletedByPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> |  |
-| <Link id="m-isachievementlocallycompleted" /><code>{"static bool IsAchievementLocallyCompleted("}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> |  |
-| <Link id="m-istutorialcompletedbyplayer" /><code>{"static bool IsTutorialCompletedByPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/game-other-namespaces/imicrotutorialsettings">{"IMicroTutorialSettings"}</Link>{" tutorialSettings)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override async void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-ondisconnected" /><code>{"override void OnDisconnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| <Link id="m-actionexecuted" /><code>{"static void ActionExecuted("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> | Reports a player action. Updates every matching game action for that player; errors are logged, not thrown. |
+| <Link id="m-clearachievementforplayer" /><code>{"void ClearAchievementForPlayer(int userId, "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> | Server: un-completes an achievement for a user id and resets its target stat, locally and in the achievement service. |
+| <Link id="m-clearactionstatforplayer" /><code>{"void ClearActionStatForPlayer(int userId, "}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" action)"}</code> | Server: sets one action stat to 0 for a user id, locally and in the achievement service. |
+| <Link id="m-clearallachievementsforplayer" /><code>{"void ClearAllAchievementsForPlayer(int userIdentifier)"}</code> | Server: resets every stat and achievement for a user id, online or not. |
+| <Link id="m-incrementforplayer" /><code>{"void IncrementForPlayer("}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" gameTask, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Server: adds 1 to a game action's value for a player who has a tracker. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the initial flag sync and the single flag update sync. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Maps game actions valid for this scene by channel and hooks every achievement's completion. Registers for autosave. |
+| <Link id="m-isachievementcompletedbyplayer" /><code>{"static bool IsAchievementCompletedByPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> | Whether a player has the achievement. Clients only know about the local player. |
+| <Link id="m-isachievementlocallycompleted" /><code>{"static bool IsAchievementLocallyCompleted("}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> | Whether the local player has the achievement. |
+| <Link id="m-istutorialcompletedbyplayer" /><code>{"static bool IsTutorialCompletedByPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/game-other-namespaces/imicrotutorialsettings">{"IMicroTutorialSettings"}</Link>{" tutorialSettings)"}</code> | Whether a player has finished a micro tutorial. Clients only know about the local player. |
+| <Link id="m-onconnected" /><code>{"override async void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: loads the player's stats and achievements from the achievement service, then makes a tracker and syncs. No tracker if that fails. |
+| <Link id="m-ondisconnected" /><code>{"override void OnDisconnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the player's progress to the achievement service. |
 | <Link id="m-autosave" /><code>{"private void IAutoSave.AutoSave()"}</code> |  |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-finishsync" /><code>{"private static void FinishSync()"}</code> |  |

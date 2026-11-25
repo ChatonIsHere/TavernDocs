@@ -1,6 +1,6 @@
 ---
 title: "BasicPopulationItem"
-description: "Added to a spawned population entity (such as an animal) to tie it to its BasicPopulation. Moving ones follow chunk changes and switch population. Ser"
+description: "Added to a spawned population entity (such as an animal) to tie it to its BasicPopulation."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

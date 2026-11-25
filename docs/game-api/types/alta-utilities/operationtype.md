@@ -1,6 +1,6 @@
 ---
 title: "OperationType"
-description: "How to combine two floats, turned into a function by MathfOperation.GetOperation: Set (take the new value), Max, Min, Add, Subtract, Multiply, or Mult"
+description: "How to combine two floats, turned into a function by MathfOperation.GetOperation: Set (take the new value), Max, Min, Add, Subtract, Multiply, or..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

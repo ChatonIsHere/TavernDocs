@@ -1,6 +1,6 @@
 ---
 title: "ConsoleTokenLog"
-description: "A internal static class in TavernLib, TavernLib.Backend.RemoteConsole. Reach it through att-stubs' publicized assemblies or Harmony's AccessTools."
+description: "Internal: writes console_token_log.jsonl, one JSON line per console connect, disconnect, command and refused login."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **internal static class** in `TavernLib`, `TavernLib.Backend.RemoteConsole`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
 
-A **internal static class** in `TavernLib`, `TavernLib.Backend.RemoteConsole`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+Internal: writes `console_token_log.jsonl`, one JSON line per console connect, disconnect, command and refused login. Never a token's text; rolls to `.1` past 5 MB.
 
 - **Listed in** [TavernLib.Backend.RemoteConsole](/tavernlib-api/types/backend-remoteconsole)
 - **Documented in** [ConsoleTokenLog](/tavernlib-api/types/backend-remoteconsole/consoletokenlog)
@@ -31,6 +31,6 @@ A **internal static class** in `TavernLib`, `TavernLib.Backend.RemoteConsole`. R
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-redact" /><code>{"static string Redact(string text)"}</code> |  |
-| <Link id="m-tail" /><code>{"static List<JObject> Tail(string tokenId, int count)"}</code> |  |
-| <Link id="m-write" /><code>{"static void Write(string type, string tokenId, string address, string command = null, string result = null, string reason = null)"}</code> |  |
+| <Link id="m-redact" /><code>{"static string Redact(string text)"}</code> | Replaces anything shaped like a token in the text with `[token]`. |
+| <Link id="m-tail" /><code>{"static List<JObject> Tail(string tokenId, int count)"}</code> | The newest entries, oldest first, for one token id (`owner` for the owner token) or all of them. |
+| <Link id="m-write" /><code>{"static void Write(string type, string tokenId, string address, string command = null, string result = null, string reason = null)"}</code> | Appends one entry with the time, event, token id and name, address, and the redacted command, result or reason. |

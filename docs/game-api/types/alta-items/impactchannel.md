@@ -1,6 +1,6 @@
 ---
 title: "ImpactChannel"
-description: "class ImpactChannel in Root.Township."
+description: "Asset naming a damage channel that impactors can deal on."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactChannel
 
 A **class** in `Root.Township`, `Alta.Impact`.
+
+Asset naming a damage channel that impactors can deal on.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `ScriptableObject`
@@ -34,7 +36,7 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-popupcolor-2" /><code>{"Color PopupColor { get; }"}</code> |  |
+| <Link id="m-popupcolor-2" /><code>{"Color PopupColor { get; }"}</code> | Colour of the damage popup for this channel. Grey by default. |
 
 ## Used in
 

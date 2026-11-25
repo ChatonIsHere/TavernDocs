@@ -1,6 +1,6 @@
 ---
 title: "PathExperience"
-description: "A player's progress on one progression path (forging, mining and so on): XP, level, free points, bought skills and practiced skills. Held by PlayerPro"
+description: "A player's progress on one progression path (forging, mining and so on): XP, level, free points, bought skills and practiced skills."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

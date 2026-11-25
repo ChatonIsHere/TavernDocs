@@ -1,6 +1,6 @@
 ---
 title: "IFactory"
-description: "interface IFactory in Alta.VContainerLayer.Runtime."
+description: "Base interface for the VContainer layer's factories."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IFactory
 
 An **interface** in `Alta.VContainerLayer.Runtime`, no namespace.
+
+Base interface for the VContainer layer's factories. The generic versions add `Create` with zero to three parameters; all are disposable.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `IDisposable`

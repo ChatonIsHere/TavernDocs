@@ -1,6 +1,6 @@
 ---
 title: "GenericCraftingRecipe"
-description: "Get one with GenericCraftingRecipe.All, or by the result with static GenericCraftingRecipe GetRecipe(NetworkPrefab prefab) (the result map is built on"
+description: "Recipe asset for a generic crafting station: the ghost pieces to fill and the prefab made at the end."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Crafting`.
 
-Get one with `GenericCraftingRecipe.All`, or by the result with `static GenericCraftingRecipe GetRecipe(NetworkPrefab prefab)` (the result map is built once, on first use).
+Recipe asset for a generic crafting station: the ghost pieces to fill and the prefab made at the end. Also a page basis, so it can go in a recipe book.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`SimpleHashedGeneralValue<GenericCraftingRecipe>`](/game-api/types/alta-utilities/simplehashedgeneralvalue-t), [`IPageBasis`](/game-api/types/alta-items/ipagebasis), [`ICraftingIngredientProvider`](/game-api/types/global-i-l/icraftingingredientprovider)
@@ -40,22 +40,22 @@ Get one with `GenericCraftingRecipe.All`, or by the result with `static GenericC
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pieces-2" /><code><Link to="/game-api/types/alta-crafting/genericcraftingpiecedefinition">{"GenericCraftingPieceDefinition"}</Link>{"[] Pieces { get; }"}</code> |  |
-| <Link id="m-prefabquantities" /><code>{"Dictionary<uint, int> PrefabQuantities { get; }"}</code> |  |
-| <Link id="m-resulthash-2" /><code>{"uint ResultHash { get; }"}</code> |  |
-| <Link id="m-spawnoffset-2" /><code><Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" SpawnOffset { get; }"}</code> |  |
-| <Link id="m-uniqueglyphs-2" /><code><Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] UniqueGlyphs { get; }"}</code> |  |
+| <Link id="m-pieces-2" /><code><Link to="/game-api/types/alta-crafting/genericcraftingpiecedefinition">{"GenericCraftingPieceDefinition"}</Link>{"[] Pieces { get; }"}</code> | The ghost pieces the recipe needs. |
+| <Link id="m-prefabquantities" /><code>{"Dictionary<uint, int> PrefabQuantities { get; }"}</code> | How many pieces of each prefab the recipe needs, by prefab hash. Built fresh on each read. |
+| <Link id="m-resulthash-2" /><code>{"uint ResultHash { get; }"}</code> | Hash of the prefab made when the recipe is finished. |
+| <Link id="m-spawnoffset-2" /><code><Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" SpawnOffset { get; }"}</code> | Where the result spawns relative to the station. |
+| <Link id="m-uniqueglyphs-2" /><code><Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] UniqueGlyphs { get; }"}</code> | Glyph positions drawn on the recipe's page. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createpage" /><code><Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" CreatePage(int preferredProvider)"}</code> |  |
-| <Link id="m-getdefinition" /><code><Link to="/game-api/types/alta-crafting/genericcraftingpiecedefinition">{"GenericCraftingPieceDefinition"}</Link>{" GetDefinition(uint hash)"}</code> |  |
-| <Link id="m-gethash" /><code>{"uint GetHash()"}</code> |  |
-| <Link id="m-getproviderid" /><code>{"int GetProviderID(int preferredProvider)"}</code> |  |
-| <Link id="m-getrecipe" /><code>{"static "}<Link to="/game-api/types/alta-crafting/genericcraftingrecipe">{"GenericCraftingRecipe"}</Link>{" GetRecipe("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> |  |
-| <Link id="m-initializeproject" /><code><Link to="/game-api/types/alta-crafting/genericcraftingproject">{"GenericCraftingProject"}</Link>{" InitializeProject("}<Link to="/game-api/types/alta-crafting/genericcraftingstation">{"GenericCraftingStation"}</Link>{" station)"}</code> |  |
+| <Link id="m-createpage" /><code><Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" CreatePage(int preferredProvider)"}</code> | Makes the recipe's page data with the generic crafting page provider. |
+| <Link id="m-getdefinition" /><code><Link to="/game-api/types/alta-crafting/genericcraftingpiecedefinition">{"GenericCraftingPieceDefinition"}</Link>{" GetDefinition(uint hash)"}</code> | The piece definition with the given hash, or null. |
+| <Link id="m-gethash" /><code>{"uint GetHash()"}</code> | The recipe's hash. |
+| <Link id="m-getproviderid" /><code>{"int GetProviderID(int preferredProvider)"}</code> | Identifier of the generic crafting page provider. |
+| <Link id="m-getrecipe" /><code>{"static "}<Link to="/game-api/types/alta-crafting/genericcraftingrecipe">{"GenericCraftingRecipe"}</Link>{" GetRecipe("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> | Finds the recipe that makes a prefab. The lookup is built on first use. |
+| <Link id="m-initializeproject" /><code><Link to="/game-api/types/alta-crafting/genericcraftingproject">{"GenericCraftingProject"}</Link>{" InitializeProject("}<Link to="/game-api/types/alta-crafting/genericcraftingstation">{"GenericCraftingStation"}</Link>{" station)"}</code> | Starts a crafting project for this recipe at a station. |
 | <Link id="m-mapresults" /><code>{"private static void MapResults()"}</code> |  |
 
 ## Used in

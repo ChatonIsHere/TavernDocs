@@ -1,6 +1,6 @@
 ---
 title: "PoweredRespawnShrine"
-description: "A respawn shrine that runs on fuel. Players toggle it as their spawn point, and it only works while it has power. Both sides: the server owns the resp"
+description: "A respawn shrine that runs on fuel."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

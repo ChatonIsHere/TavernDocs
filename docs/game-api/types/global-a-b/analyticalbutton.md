@@ -1,6 +1,6 @@
 ---
 title: "AnalyticalButton"
-description: "class AnalyticalButton in Root.Township."
+description: "A button pressed by the local player's fingertips, worked out geometrically each frame instead of with physics."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AnalyticalButton
 
 A **class** in `Root.Township`, no namespace.
+
+A button pressed by the local player's fingertips, worked out geometrically each frame instead of with physics. Client side.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `MonoBehaviour`, [`IPreventAtlasing`](/game-api/types/alta-utilities/ipreventatlasing)
@@ -70,24 +72,24 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buttoncollider-2" /><code>{"Collider ButtonCollider { get; }"}</code> |  |
-| <Link id="m-buttonrenderer-2" /><code>{"Renderer ButtonRenderer { get; }"}</code> |  |
-| <Link id="m-holdbuttonpresses" /><code>{"static bool HoldButtonPresses { get; set; }"}</code> |  |
-| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; set; }"}</code> |  |
-| <Link id="m-state" /><code>{"bool State { get; private set; }"}</code> |  |
+| <Link id="m-buttoncollider-2" /><code>{"Collider ButtonCollider { get; }"}</code> | The moving part of the button, pushed in by the fingers. |
+| <Link id="m-buttonrenderer-2" /><code>{"Renderer ButtonRenderer { get; }"}</code> | Renderer recoloured or re-materialed when enabled or disabled. |
+| <Link id="m-holdbuttonpresses" /><code>{"static bool HoldButtonPresses { get; set; }"}</code> | Static: while true every button stays up and shows as inactive. |
+| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; set; }"}</code> | Whether it can be pressed. Setting it updates the collider, visuals and position. |
+| <Link id="m-state" /><code>{"bool State { get; private set; }"}</code> | True while pressed. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pressed-2" /><code>{"event Action Pressed"}</code> |  |
-| <Link id="m-released-2" /><code>{"event Action Released"}</code> |  |
+| <Link id="m-pressed-2" /><code>{"event Action Pressed"}</code> | Fired when pushed in. |
+| <Link id="m-released-2" /><code>{"event Action Released"}</code> | Fired when let out. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setstateinternal" /><code>{"void SetStateInternal(bool state)"}</code> |  |
+| <Link id="m-setstateinternal" /><code>{"void SetStateInternal(bool state)"}</code> | Sets `State` directly without firing events. |
 | <Link id="m-buttonenableanimation" /><code>{"private IEnumerator ButtonEnableAnimation() (iterator)"}</code> |  |
 | <Link id="m-changevisuals" /><code>{"private void ChangeVisuals(bool isActive)"}</code> |  |
 | <Link id="m-checkintersection" /><code>{"private static bool CheckIntersection("}<Link to="/game-api/types/global-t-x/worldspacetriangle">{"WorldSpaceTriangle"}</Link>{" triangle, Matrix4x4 matrix, Bounds bounds)"}</code> |  |

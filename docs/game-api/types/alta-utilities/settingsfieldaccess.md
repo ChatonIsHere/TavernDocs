@@ -1,6 +1,6 @@
 ---
 title: "SettingsFieldAccess"
-description: "class SettingsFieldAccess in Root.Township."
+description: "Asset that ties a settings menu entry to one game or server setting, read and written by reflection in the generic subclass."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SettingsFieldAccess
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+Asset that ties a settings menu entry to one game or server setting, read and written by reflection in the generic subclass.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** `ScriptableObject`, [`ISettingsFieldAccess`](/game-api/types/alta-utilities/isettingsfieldaccess)
@@ -33,19 +35,19 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-displayname-2" /><code>{"string DisplayName { get; }"}</code> |  |
-| <Link id="m-settingdescription" /><code>{"virtual string SettingDescription { get; }"}</code> |  |
-| <Link id="m-settings" /><code>{"Settings Settings { get; set; }"}</code> |  |
-| <Link id="m-settingtype-2" /><code><Link to="/game-api/types/alta-utilities/settingtype">{"SettingType"}</Link>{" "}<Link to="/game-api/types/alta-utilities/settingtype">{"SettingType"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-onmodifed" /><code>{"protected Action OnModifed { get; private set; }"}</code> |  |
+| <Link id="m-displayname-2" /><code>{"string DisplayName { get; }"}</code> | Name shown in the settings menu. |
+| <Link id="m-settingdescription" /><code>{"virtual string SettingDescription { get; }"}</code> | Help text for the setting. Empty in the base class. |
+| <Link id="m-settings" /><code>{"Settings Settings { get; set; }"}</code> | The settings object values are read from and written to. |
+| <Link id="m-settingtype-2" /><code><Link to="/game-api/types/alta-utilities/settingtype">{"SettingType"}</Link>{" "}<Link to="/game-api/types/alta-utilities/settingtype">{"SettingType"}</Link>{" { get; }"}</code> | The kind of control: toggle, scroll, enum, command and so on. |
+| <Link id="m-onmodifed" /><code>{"protected Action OnModifed { get; private set; }"}</code> | Called after a value is set. For game settings it notifies listeners and saves. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"virtual bool IsValid()"}</code> |  |
-| <Link id="m-setupfromgamesettings" /><code>{"void SetupFromGameSettings()"}</code> |  |
-| <Link id="m-setupfromserversettings" /><code>{"void SetupFromServerSettings("}<Link to="/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" settings)"}</code> |  |
+| <Link id="m-isvalid" /><code>{"virtual bool IsValid()"}</code> | Whether the entry can be used. The generic version also needs the named property to exist. |
+| <Link id="m-setupfromgamesettings" /><code>{"void SetupFromGameSettings()"}</code> | Points the entry at the local game settings, saving them on every change. |
+| <Link id="m-setupfromserversettings" /><code>{"void SetupFromServerSettings("}<Link to="/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" settings)"}</code> | Points the entry at a server's settings. Changes aren't saved automatically. |
 
 ## Used in
 

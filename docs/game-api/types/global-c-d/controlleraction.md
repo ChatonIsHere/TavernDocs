@@ -1,6 +1,6 @@
 ---
 title: "ControllerAction"
-description: "Client: one input action (such as interact or jump) for a player's hand, bound to one or more buttons, key pairs, D-pad directions or swipes from the "
+description: "Client: one input action (such as interact or jump) for a player's hand, bound to one or more buttons, key pairs, D-pad directions or swipes from the..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

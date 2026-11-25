@@ -1,6 +1,6 @@
 ---
 title: "DamageState"
-description: "class DamageState in Root.Township."
+description: "Damage about to be applied to a player, passed to PlayerHealth.HandleDamage listeners."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DamageState
 
 A **class** in `Root.Township`, `Alta.PlayerEffects.General.Health`.
+
+Damage about to be applied to a player, passed to `PlayerHealth.HandleDamage` listeners. A listener can mark it handled to cancel it. One object is reused for each hit.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 
@@ -24,18 +26,18 @@ A **class** in `Root.Township`, `Alta.PlayerEffects.General.Health`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cripple" /><code>{"float Cripple { get; private set; }"}</code> |  |
-| <Link id="m-damage" /><code>{"float Damage { get; private set; }"}</code> |  |
-| <Link id="m-damageimpact" /><code><Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" DamageImpact { get; private set; }"}</code> |  |
-| <Link id="m-ishandled" /><code>{"bool IsHandled { get; private set; }"}</code> |  |
+| <Link id="m-cripple" /><code>{"float Cripple { get; private set; }"}</code> | Cripple damage of the hit. |
+| <Link id="m-damage" /><code>{"float Damage { get; private set; }"}</code> | Health damage of the hit. |
+| <Link id="m-damageimpact" /><code><Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" DamageImpact { get; private set; }"}</code> | Where the damage came from. |
+| <Link id="m-ishandled" /><code>{"bool IsHandled { get; private set; }"}</code> | True if a listener cancelled the damage. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setashandled" /><code>{"void SetAsHandled()"}</code> |  |
-| <Link id="m-setup" /><code>{"void Setup(float damage, float cripple, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" impact)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| <Link id="m-setashandled" /><code>{"void SetAsHandled()"}</code> | Cancels the damage. `PlayerHealth` then skips applying it. |
+| <Link id="m-setup" /><code>{"void Setup(float damage, float cripple, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" impact)"}</code> | Fills in a new hit and clears the handled flag. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Shows damage, cripple and source. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "WoodcutPointData"
-description: "class WoodcutPointData in Root.Township."
+description: "One damage point on a woodcut tree: a local position and how far it has been chopped (0 to 1)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WoodcutPointData
 
 A **class** in `Root.Township`, no namespace.
+
+One damage point on a woodcut tree: a local position and how far it has been chopped (0 to 1). Synced as a child of the tree, saved with it, and drives the tree's damage colouring.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** [`IColorModelPoint<WoodcutPointData>`](/game-api/types/global-i-l/icolormodelpoint-outt), [`IChildSyncable<WoodcutPointData, WoodcutPointCollectionSaveData.Element>`](/game-api/types/global-i-l/ichildsyncable-t-telementsavedata), [`IChildSyncable<WoodcutPointData>`](/game-api/types/global-i-l/ichildsyncable-t-telementsavedata)
@@ -26,7 +28,7 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | Backing field for `Position`, set in the inspector. |
 | <Link id="m-haschangedsincelastwrite" /><code>{"private bool hasChangedSinceLastWrite"}</code> |  |
 | <Link id="m-progress" /><code>{"private float progress"}</code> |  |
 
@@ -34,27 +36,27 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> |  |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> |  |
-| <Link id="m-progress-2" /><code>{"float Progress { get; set; }"}</code> |  |
+| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> | The tree entity this point belongs to. |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> | The point's local position on the tree. |
+| <Link id="m-progress-2" /><code>{"float Progress { get; set; }"}</code> | How chopped this point is, from 0 to 1. Setting it raises `Changed` and marks it for sync. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changed" /><code>{"event Action<"}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{"> Changed"}</code> |  |
+| <Link id="m-changed" /><code>{"event Action<"}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{"> Changed"}</code> | Raised when `Progress` changes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-copyfrom" /><code>{"void CopyFrom("}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{" other)"}</code> |  |
-| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/global-c-d/childsyncablecollectionbase-t">{"ChildSyncableCollectionBase"}</Link>{"<"}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{"> collection)"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-isequal" /><code>{"bool IsEqual("}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{" other)"}</code> |  |
-| <Link id="m-isneedingsync" /><code>{"bool IsNeedingSync()"}</code> |  |
-| <Link id="m-sync" /><code>{"void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-takedamage" /><code>{"void TakeDamage(float damage)"}</code> |  |
+| <Link id="m-copyfrom" /><code>{"void CopyFrom("}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{" other)"}</code> | Copies another point's progress. |
+| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/global-c-d/childsyncablecollectionbase-t">{"ChildSyncableCollectionBase"}</Link>{"<"}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{"> collection)"}</code> | Does nothing. |
+| <Link id="m-initializeasserver" /><code>{"void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Does nothing. |
+| <Link id="m-isequal" /><code>{"bool IsEqual("}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{" other)"}</code> | True if both points have the same progress. |
+| <Link id="m-isneedingsync" /><code>{"bool IsNeedingSync()"}</code> | True if progress changed since it was last written to the network. |
+| <Link id="m-sync" /><code>{"void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the progress (7 bits). Clients apply what they read. |
+| <Link id="m-takedamage" /><code>{"void TakeDamage(float damage)"}</code> | Server: adds the damage to the progress, clamped to 1. |
 | <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
 

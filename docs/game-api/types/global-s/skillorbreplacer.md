@@ -1,6 +1,6 @@
 ---
 title: "SkillOrbReplacer"
-description: "class SkillOrbReplacer in Root.Township."
+description: "The orb a player pulls from a skill shrine to buy a skill."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SkillOrbReplacer
 
 A **class** in `Root.Township`, no namespace.
+
+The orb a player pulls from a skill shrine to buy a skill. Holding it at the shrine's operator for a few seconds unlocks the slot; letting go floats it back and destroys it.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`ProgressionSlotContainer`](/game-api/types/global-p/progressionslotcontainer)
@@ -42,22 +44,22 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroyafteroperate" /><code>{"protected override bool DestroyAfterOperate { get; }"}</code> |  |
+| <Link id="m-destroyafteroperate" /><code>{"protected override bool DestroyAfterOperate { get; }"}</code> | True: the orb is destroyed once the skill is unlocked. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeorb" /><code>{"void InitializeOrb("}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" orb)"}</code> |  |
-| <Link id="m-stopoperating" /><code>{"void StopOperating()"}</code> |  |
-| <Link id="m-endinteraction" /><code>{"protected override void EndInteraction("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |  |
-| <Link id="m-helddurationcheck-2" /><code>{"protected override IEnumerator HeldDurationCheck("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor) (iterator)"}</code> |  |
-| <Link id="m-operate" /><code>{"protected override void Operate("}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" targetManager)"}</code> |  |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | On clients, plays the orb destroy effect when it is destroyed other than by unloading. |
+| <Link id="m-initializeorb" /><code>{"void InitializeOrb("}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" orb)"}</code> | Links to the shrine's skill orb and takes its slot and player. |
+| <Link id="m-stopoperating" /><code>{"void StopOperating()"}</code> | Ends the operating effect and state. |
+| <Link id="m-endinteraction" /><code>{"protected override void EndInteraction("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> | On release, breaks any operator joint without buying and floats the orb back to its spot. |
+| <Link id="m-helddurationcheck-2" /><code>{"protected override IEnumerator HeldDurationCheck("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor) (iterator)"}</code> | Coroutine while held: snaps to the operator when close, fills the progress, and confirms the buy after the hold time. |
+| <Link id="m-operate" /><code>{"protected override void Operate("}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" targetManager)"}</code> | Unlocks the slot on the player's progression manager. |
 | <Link id="m-returnselectionorb" /><code>{"private IEnumerator ReturnSelectionOrb() (iterator)"}</code> |  |
 | <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-startinteraction" /><code>{"protected override void StartInteraction("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-syncsetup" /><code>{"protected override void SyncSetup("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-startinteraction" /><code>{"protected override void StartInteraction("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Stops the float back when grabbed again. |
+| <Link id="m-syncsetup" /><code>{"protected override void SyncSetup("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sends the linked skill orb's entity ID so clients can link to it. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "IUserApiClient"
-description: "The user account part of Alta's web API: user lookups, verification, roles and cosmetic presets. Reached through ApiAccess.ApiClient.UserClient. Every"
+description: "The user account part of Alta's web API: user lookups, verification, roles and cosmetic presets."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

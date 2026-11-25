@@ -1,6 +1,6 @@
 ---
 title: "MapBoard"
-description: "class MapBoard in Root.Township."
+description: "A board in the world that shows a map and, when a player touches its hover point, reveals one map piece for them."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MapBoard
 
 A **class** in `Root.Township`, `Alta.Map`.
+
+A board in the world that shows a map and, when a player touches its hover point, reveals one map piece for them. The server saves which map, piece, offset and zoom; clients get them synced.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<MapBoardSaveData1>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<MapBoardSaveData1>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -40,26 +42,26 @@ A **class** in `Root.Township`, `Alta.Map`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activemappieces-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"> ActiveMapPieces { get; }"}</code> |  |
-| <Link id="m-map-2" /><code><Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" "}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-mapoffsetscale" /><code>{"Vector4 MapOffsetScale { get; }"}</code> |  |
-| <Link id="m-resolutionx" /><code>{"float ResolutionX { get; }"}</code> |  |
+| <Link id="m-activemappieces-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"> ActiveMapPieces { get; }"}</code> | Client: map pieces the shared map manager had not discovered when the board was set up. Each is removed when discovered. |
+| <Link id="m-map-2" /><code><Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" "}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" { get; }"}</code> | The map this board shows. |
+| <Link id="m-mapoffsetscale" /><code>{"Vector4 MapOffsetScale { get; }"}</code> | Offset (divided by resolution) and zoom packed into a `Vector4` for the map shader. |
+| <Link id="m-resolutionx" /><code>{"float ResolutionX { get; }"}</code> | The board's horizontal resolution (2048 by default), also used to scale `MapOffsetScale`. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setupasclient" /><code>{"event Action<"}<Link to="/game-api/types/alta-world/mapboard">{"MapBoard"}</Link>{"> SetupAsClient"}</code> |  |
+| <Link id="m-setupasclient" /><code>{"event Action<"}<Link to="/game-api/types/alta-world/mapboard">{"MapBoard"}</Link>{"> SetupAsClient"}</code> | Raised on the client once the board has its settings and map pieces. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-interactionstarted" /><code>{"void InteractionStarted("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-worldtomapposition" /><code>{"Vector2 WorldToMapPosition(Vector2 worldPosition)"}</code> |  |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the board sync message. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: discovers the board's map piece for whoever activates its hand hover point. |
+| <Link id="m-interactionstarted" /><code>{"void InteractionStarted("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Discovers the board's unlock piece for the player through the `MapManager`. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the board settings to the joining player. |
+| <Link id="m-worldtomapposition" /><code>{"Vector2 WorldToMapPosition(Vector2 worldPosition)"}</code> | Turns a world XZ position into a board position centred on 0, scaled by zoom. |
 | <Link id="m-discovermappiece" /><code>{"private void DiscoverMapPiece(int index, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{" mapPiece)"}</code> |  |
 | <Link id="m-initializeforclient" /><code>{"private void InitializeForClient()"}</code> |  |
 | <Link id="m-ismapcontentavailable" /><code>{"private bool IsMapContentAvailable()"}</code> |  |

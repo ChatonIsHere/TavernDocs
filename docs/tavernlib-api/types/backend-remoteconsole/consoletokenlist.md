@@ -1,6 +1,6 @@
 ---
 title: "ConsoleTokenList"
-description: "A class in TavernLib, TavernLib.Backend.RemoteConsole."
+description: "The contents of console_tokens.json: the named tokens and the owner token's generation."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.RemoteConsole`.
 
-A **class** in `TavernLib`, `TavernLib.Backend.RemoteConsole`.
+The contents of `console_tokens.json`: the named tokens and the owner token's generation. Unknown fields are kept.
 
 - **Listed in** [TavernLib.Backend.RemoteConsole](/tavernlib-api/types/backend-remoteconsole)
 - **Derived types** [`ConsoleTokenFile`](/tavernlib-api/types/backend-remoteconsole/consoletokenfile)
@@ -28,8 +28,8 @@ A **class** in `TavernLib`, `TavernLib.Backend.RemoteConsole`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ownergeneration" /><code>{"int OwnerGeneration { get; set; }"}</code> |  |
-| <Link id="m-tokens" /><code>{"List<"}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletoken">{"ConsoleToken"}</Link>{"> Tokens { get; set; }"}</code> |  |
+| <Link id="m-ownergeneration" /><code>{"int OwnerGeneration { get; set; }"}</code> | Raised by `token rotate owner`, which makes the old owner token stop working. The launcher reads it to write `console_token.txt`. |
+| <Link id="m-tokens" /><code>{"List<"}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletoken">{"ConsoleToken"}</Link>{"> Tokens { get; set; }"}</code> | Every named token, revoked ones included. |
 | <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |  |
 
 ## Used in

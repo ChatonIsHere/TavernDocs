@@ -1,6 +1,6 @@
 ---
 title: "DamageData"
-description: "class DamageData in Root.Township."
+description: "Information passed along with damage, currently just its source."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DamageData
 
 A **class** in `Root.Township`, `Alta.Impact`.
+
+Information passed along with damage, currently just its source. Given to `ReceiveDamage` and the `Killed` events.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Derived types** [`ImpactHit`](/game-api/types/alta-items/impacthit)
@@ -26,7 +28,7 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-source" /><code><Link to="/game-api/types/alta-items/damagesource">{"DamageSource"}</Link>{" Source { get; }"}</code> |  |
+| <Link id="m-source" /><code><Link to="/game-api/types/alta-items/damagesource">{"DamageSource"}</Link>{" Source { get; }"}</code> | What caused the damage, for example `DamageSource.AreaOfEffect`. |
 
 ## Used in
 

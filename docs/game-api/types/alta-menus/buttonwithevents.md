@@ -1,6 +1,6 @@
 ---
 title: "ButtonWithEvents"
-description: "class ButtonWithEvents in Root.Township."
+description: "A menu Button that also fires Unity events set in the inspector when pressed, released, enabled or disabled."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ButtonWithEvents
 
 A **class** in `Root.Township`, `Alta.Meta.UI`.
+
+A menu `Button` that also fires Unity events set in the inspector when pressed, released, enabled or disabled.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** [`Button`](/game-api/types/alta-menus/button)
@@ -36,7 +38,7 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Hooks the press, release and enabled change events to the inspector Unity events. |
 | <Link id="m-handleenabledchanged" /><code>{"private void HandleEnabledChanged("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" obj)"}</code> |  |
 
 ## Used in

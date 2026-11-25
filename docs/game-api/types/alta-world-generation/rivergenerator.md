@@ -1,6 +1,6 @@
 ---
 title: "RiverGenerator"
-description: "class RiverGenerator in Root.Township."
+description: "Part of a procedural forest: works out the river network from the forest's spaces and terrain heights, carves it into the terrain, paints the river bed and..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RiverGenerator
 
 A **class** in `Root.Township`, `Alta.Forests`.
+
+Part of a procedural forest: works out the river network from the forest's spaces and terrain heights, carves it into the terrain, paints the river bed and spawns the river visuals. The result is cached per forest seed.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** `MonoBehaviour`, [`ISplatPainter`](/game-api/types/alta-world-generation/isplatpainter)
@@ -60,22 +62,22 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-edgesegments-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/iriverdecorationsegment">{"IRiverDecorationSegment"}</Link>{"> EdgeSegments { get; }"}</code> |  |
-| <Link id="m-forest-2" /><code><Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" Forest { get; }"}</code> |  |
-| <Link id="m-intersections-2" /><code><Link to="/game-api/types/alta-world-generation/riverintersections">{"RiverIntersections"}</Link>{" Intersections { get; }"}</code> |  |
-| <Link id="m-segments-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/iriverdecorationsegment">{"IRiverDecorationSegment"}</Link>{"> Segments { get; }"}</code> |  |
+| <Link id="m-edgesegments-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/iriverdecorationsegment">{"IRiverDecorationSegment"}</Link>{"> EdgeSegments { get; }"}</code> | Decoration segments at river ends, filled when the river is worked out. |
+| <Link id="m-forest-2" /><code><Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" Forest { get; }"}</code> | The forest generator this river belongs to. |
+| <Link id="m-intersections-2" /><code><Link to="/game-api/types/alta-world-generation/riverintersections">{"RiverIntersections"}</Link>{" Intersections { get; }"}</code> | Where rivers cross things, worked out on first use. Needs the river to be generated first. |
+| <Link id="m-segments-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/iriverdecorationsegment">{"IRiverDecorationSegment"}</Link>{"> Segments { get; }"}</code> | Decoration segments along the rivers. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distance" /><code>{"float Distance(Vector2 point, bool isIncludingRadius)"}</code> |  |
-| <Link id="m-getgenerationasync" /><code>{"Task<"}<Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{"> GetGenerationAsync("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/global-t-x/terrainaccess">{"TerrainAccess"}</Link>{" access)"}</code> |  |
-| <Link id="m-modify" /><code>{"async Task Modify("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/global-t-x/terrainaccess">{"TerrainAccess"}</Link>{" access)"}</code> |  |
-| <Link id="m-paint" /><code>{"void Paint("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, Random rowRandom, "}<Link to="/game-api/types/global-t-x/terrainaccess">{"TerrainAccess"}</Link>{" access, int x, int z, Vector2 position, ref "}<Link to="/game-api/types/alta-world-generation/splatdata">{"SplatData"}</Link>{" data)"}</code> |  |
-| <Link id="m-spawnvisuals" /><code>{"async Task SpawnVisuals("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> |  |
-| <Link id="m-trygetgenerated" /><code><Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{" TryGetGenerated(bool isError = true)"}</code> |  |
-| <Link id="m-wipe" /><code>{"async Task Wipe("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> |  |
+| <Link id="m-distance" /><code>{"float Distance(Vector2 point, bool isIncludingRadius)"}</code> | Distance from a point to the nearest overground river, optionally measured from the river's edge. |
+| <Link id="m-getgenerationasync" /><code>{"Task<"}<Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{"> GetGenerationAsync("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/global-t-x/terrainaccess">{"TerrainAccess"}</Link>{" access)"}</code> | Works out the river network, or loads it from the cache. The same task is reused after the first call. |
+| <Link id="m-modify" /><code>{"async Task Modify("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/global-t-x/terrainaccess">{"TerrainAccess"}</Link>{" access)"}</code> | Carves the rivers and waterfalls into a terrain height map, in parallel per column. |
+| <Link id="m-paint" /><code>{"void Paint("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, Random rowRandom, "}<Link to="/game-api/types/global-t-x/terrainaccess">{"TerrainAccess"}</Link>{" access, int x, int z, Vector2 position, ref "}<Link to="/game-api/types/alta-world-generation/splatdata">{"SplatData"}</Link>{" data)"}</code> | Paints river splat layers onto a terrain cell from the carved river values. |
+| <Link id="m-spawnvisuals" /><code>{"async Task SpawnVisuals("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | Client: has every `IRiverVisual` child build its visuals from the river network. Does nothing on a headless server. |
+| <Link id="m-trygetgenerated" /><code><Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{" TryGetGenerated(bool isError = true)"}</code> | The river network if it's finished, otherwise null (logging an error unless told not to). |
+| <Link id="m-wipe" /><code>{"async Task Wipe("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | Deletes the cached river network for a forest. |
 | <Link id="m-calculate" /><code>{"private async Task<"}<Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{"> Calculate("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/global-t-x/terrainaccess">{"TerrainAccess"}</Link>{" access)"}</code> |  |
 | <Link id="m-getcatmullromposition" /><code>{"private Vector2 GetCatmullRomPosition(float t, Vector2 p0, Vector2 p1, Vector2 p2, Vector2 p3, float tangentStrength)"}</code> |  |
 | <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "SkillInputStructure"
-description: "abstract class SkillInputStructure in Root.Township."
+description: "Asset describing how a tool-based skill is triggered (the input gesture), with default effects for charging, using and cancelling."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SkillInputStructure
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Asset describing how a tool-based skill is triggered (the input gesture), with default effects for charging, using and cancelling.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `ScriptableObject`
@@ -34,9 +36,9 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getnewinput" /><code>{"abstract "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> |  |
-| <Link id="m-playsoundat" /><code>{"void PlaySoundAt(Transform target, "}<Link to="/game-api/types/global-t-x/toolbasedskillstatus">{"ToolBasedSkillStatus"}</Link>{" status)"}</code> |  |
-| <Link id="m-validatepickup" /><code>{"virtual bool ValidatePickup("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> |  |
+| <Link id="m-getnewinput" /><code>{"abstract "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> | Creates a fresh input tracker for one use of the skill. |
+| <Link id="m-playsoundat" /><code>{"void PlaySoundAt(Transform target, "}<Link to="/game-api/types/global-t-x/toolbasedskillstatus">{"ToolBasedSkillStatus"}</Link>{" status)"}</code> | Plays the default charged, used or cancelled effect at a transform. Nothing for charging started. |
+| <Link id="m-validatepickup" /><code>{"virtual bool ValidatePickup("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> | Whether the held item allows this input. True by default. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "Arrow"
-description: "class Arrow in Root.Township."
+description: "An arrow item's flight: aligns it with its velocity while flying and, with the newer precision mode, applies seeded deviation from ArrowFlightSettings that..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Arrow
 
 A **class** in `Root.Township`, no namespace.
+
+An arrow item's flight: aligns it with its velocity while flying and, with the newer precision mode, applies seeded deviation from `ArrowFlightSettings` that the server syncs so every side flies the same path.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`IShootable`](/game-api/types/global-i-l/ishootable), [`IToolHitDependant`](/game-api/types/alta-items/itoolhitdependant)
@@ -52,32 +54,32 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-arrowsettings-2" /><code><Link to="/game-api/types/global-a-b/arrowflightsettings">{"ArrowFlightSettings"}</Link>{" ArrowSettings { get; set; }"}</code> |  |
-| <Link id="m-arrowtip-2" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" ArrowTip { get; }"}</code> |  |
-| <Link id="m-finalweight" /><code>{"float FinalWeight { get; }"}</code> |  |
-| <Link id="m-flightmodifiers" /><code>{"List<"}<Link to="/game-api/types/global-a-b/arrowflightsettingsmodifier">{"ArrowFlightSettingsModifier"}</Link>{"> FlightModifiers { get; }"}</code> |  |
-| <Link id="m-hasbeenshot" /><code>{"bool HasBeenShot { get; private set; }"}</code> |  |
-| <Link id="m-impacttool-2" /><code><Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-isinflight" /><code>{"bool IsInFlight { get; private set; }"}</code> |  |
-| <Link id="m-rigidbody" /><code>{"Rigidbody Rigidbody { get; }"}</code> |  |
+| <Link id="m-arrowsettings-2" /><code><Link to="/game-api/types/global-a-b/arrowflightsettings">{"ArrowFlightSettings"}</Link>{" ArrowSettings { get; set; }"}</code> | Flight settings used by the newer precision mode. |
+| <Link id="m-arrowtip-2" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" ArrowTip { get; }"}</code> | The entity at the arrow's tip. Defaults to the arrow itself. |
+| <Link id="m-finalweight" /><code>{"float FinalWeight { get; }"}</code> | The pickup's total weight, or 0.1 if there is no pickup. |
+| <Link id="m-flightmodifiers" /><code>{"List<"}<Link to="/game-api/types/global-a-b/arrowflightsettingsmodifier">{"ArrowFlightSettingsModifier"}</Link>{"> FlightModifiers { get; }"}</code> | Extra modifiers applied to the flight settings each step. |
+| <Link id="m-hasbeenshot" /><code>{"bool HasBeenShot { get; private set; }"}</code> | True from being shot until the flight stops. |
+| <Link id="m-impacttool-2" /><code><Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" { get; }"}</code> | The arrow's `ImpactTool`. |
+| <Link id="m-isinflight" /><code>{"bool IsInFlight { get; private set; }"}</code> | True while the flight update is running. |
+| <Link id="m-rigidbody" /><code>{"Rigidbody Rigidbody { get; }"}</code> | The arrow's rigidbody. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-shotonserver" /><code>{"event Action<"}<Link to="/game-api/types/global-a-b/arrow">{"Arrow"}</Link>{"> ShotOnServer"}</code> |  |
+| <Link id="m-shotonserver" /><code>{"event Action<"}<Link to="/game-api/types/global-a-b/arrow">{"Arrow"}</Link>{"> ShotOnServer"}</code> | Raised on the server when the arrow is shot. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-shoot" /><code>{"Vector3 Shoot(Vector3 baseDirection, float strength, bool isApplyingDeviation)"}</code> |  |
-| <Link id="m-shoot-2" /><code>{"void Shoot(Vector3 velocity)"}</code> |  |
-| <Link id="m-shootarrowwithvelocity" /><code>{"void ShootArrowWithVelocity(Vector3 velocity)"}</code> |  |
-| <Link id="m-starthandlingarrowdeviance" /><code>{"void StartHandlingArrowDeviance(float speed, int randomSeed = -1)"}</code> |  |
-| <Link id="m-startsimplearrowflight" /><code>{"void StartSimpleArrowFlight()"}</code> |  |
-| <Link id="m-stopupdatingarrowflight" /><code>{"void StopUpdatingArrowFlight()"}</code> |  |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Hooks destruction and sets up the flight sync message. |
+| <Link id="m-shoot" /><code>{"Vector3 Shoot(Vector3 baseDirection, float strength, bool isApplyingDeviation)"}</code> | Fires the arrow along a direction with a strength, or with a velocity. The older mode can add random spread. |
+| <Link id="m-shoot-2" /><code>{"void Shoot(Vector3 velocity)"}</code> | Fires the arrow along a direction with a strength, or with a velocity. The older mode can add random spread. |
+| <Link id="m-shootarrowwithvelocity" /><code>{"void ShootArrowWithVelocity(Vector3 velocity)"}</code> | Sets the velocity and starts the flight. Server: raises `ShotOnServer`. |
+| <Link id="m-starthandlingarrowdeviance" /><code>{"void StartHandlingArrowDeviance(float speed, int randomSeed = -1)"}</code> | Starts the seeded deviation flight at a speed. Server: syncs the speed and seed to clients. |
+| <Link id="m-startsimplearrowflight" /><code>{"void StartSimpleArrowFlight()"}</code> | Starts the plain flight that only aligns the arrow with its velocity. |
+| <Link id="m-stopupdatingarrowflight" /><code>{"void StopUpdatingArrowFlight()"}</code> | Stops the flight update and clears `HasBeenShot`. Called on hit, embed or destroy. |
 | <Link id="m-alignwithflightdirection" /><code>{"private void AlignWithFlightDirection()"}</code> |  |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-complexarrowflight" /><code>{"private void ComplexArrowFlight()"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "HandHoverPoint"
-description: "Needs an Interactable on the same object. The hand tracking runs on the server and on the hovering player's client; the server decides activation."
+description: "Needs an Interactable on the same object."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

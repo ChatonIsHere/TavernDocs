@@ -1,6 +1,6 @@
 ---
 title: "StatManager"
-description: "Instance, one per body. PlayerStatManager is a subclass that also lists stats to keep on death."
+description: "Holds an entity's stats (health, hunger, speed and so on), ticks them on the server, saves them, and syncs changed stats to clients."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
 
-Instance, one per body. `PlayerStatManager` is a subclass that also lists stats to keep on death.
+Holds an entity's stats (health, hunger, speed and so on), ticks them on the server, saves them, and syncs changed stats to clients. A component on players and creatures.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), `IEnumerable`, [`ISavable<StatManagerSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<StatManagerSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -43,33 +43,33 @@ Instance, one per body. `PlayerStatManager` is a subclass that also lists stats 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definitionapplications-2" /><code>{"List<"}<Link to="/game-api/types/alta-stats-effects/statdefinitionapplication">{"StatDefinitionApplication"}</Link>{"> DefinitionApplications { get; }"}</code> |  |
-| <Link id="m-incrementalticktime-2" /><code>{"float IncrementalTickTime { get; }"}</code> |  |
-| <Link id="m-stats" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{"> Stats { get; }"}</code> |  |
+| <Link id="m-definitionapplications-2" /><code>{"List<"}<Link to="/game-api/types/alta-stats-effects/statdefinitionapplication">{"StatDefinitionApplication"}</Link>{"> DefinitionApplications { get; }"}</code> | The stats this manager has, as set up on the prefab. Their order is the sync index. |
+| <Link id="m-incrementalticktime-2" /><code>{"float IncrementalTickTime { get; }"}</code> | Seconds between incremental ticks for incrementing stats; 0 turns them off. |
+| <Link id="m-stats" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{"> Stats { get; }"}</code> | All stats on this manager, keyed by definition. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reset" /><code>{"event Action<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> Reset"}</code> |  |
-| <Link id="m-updated" /><code>{"event Action<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> Updated"}</code> |  |
-| <Link id="m-updatedincremental" /><code>{"event Action<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> UpdatedIncremental"}</code> |  |
+| <Link id="m-reset" /><code>{"event Action<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> Reset"}</code> | Raised after `DeathReset` runs. |
+| <Link id="m-updated" /><code>{"event Action<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> Updated"}</code> | Raised on each tick. |
+| <Link id="m-updatedincremental" /><code>{"event Action<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> UpdatedIncremental"}</code> | Raised on each incremental tick. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applyindirectmodifier" /><code>{"void ApplyIndirectModifier(string statName, "}<Link to="/game-api/types/alta-stats-effects/indirectmodifier">{"IndirectModifier"}</Link>{" modifier)"}</code> |  |
-| <Link id="m-applyindirectmodifier-2" /><code>{"void ApplyIndirectModifier("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statDefinition, "}<Link to="/game-api/types/alta-stats-effects/indirectmodifier">{"IndirectModifier"}</Link>{" modifier)"}</code> |  |
-| <Link id="m-applyindirectmodifier-3" /><code>{"void ApplyIndirectModifier("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, "}<Link to="/game-api/types/alta-stats-effects/indirectmodifier">{"IndirectModifier"}</Link>{" modifier)"}</code> |  |
-| <Link id="m-applytimedmodifier" /><code><Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{" ApplyTimedModifier("}<Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" modifier, float duration)"}</code> |  |
-| <Link id="m-deathreset" /><code>{"void DeathReset(IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{"> statsToReset, IEnumerable<"}<Link to="/game-api/types/alta-player/statthresholdvalue">{"StatThresholdValue"}</Link>{"> statsToModify)"}</code> |  |
-| <Link id="m-getenumerator" /><code>{"IEnumerator GetEnumerator() (iterator)"}</code> |  |
-| <Link id="m-getstat" /><code>{"bool GetStat("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition, out "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |  |
-| <Link id="m-getstat-2" /><code>{"bool GetStat(string name, out "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| <Link id="m-applyindirectmodifier" /><code>{"void ApplyIndirectModifier(string statName, "}<Link to="/game-api/types/alta-stats-effects/indirectmodifier">{"IndirectModifier"}</Link>{" modifier)"}</code> | Adds an indirect modifier to a stat (found by stat, definition or name). Indirect modifiers are saved. |
+| <Link id="m-applyindirectmodifier-2" /><code>{"void ApplyIndirectModifier("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statDefinition, "}<Link to="/game-api/types/alta-stats-effects/indirectmodifier">{"IndirectModifier"}</Link>{" modifier)"}</code> | Adds an indirect modifier to a stat (found by stat, definition or name). Indirect modifiers are saved. |
+| <Link id="m-applyindirectmodifier-3" /><code>{"void ApplyIndirectModifier("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, "}<Link to="/game-api/types/alta-stats-effects/indirectmodifier">{"IndirectModifier"}</Link>{" modifier)"}</code> | Adds an indirect modifier to a stat (found by stat, definition or name). Indirect modifiers are saved. |
+| <Link id="m-applytimedmodifier" /><code><Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{" ApplyTimedModifier("}<Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" modifier, float duration)"}</code> | Applies a stat modifier now and removes it after the duration. Returns the timed modifier; it is saved with the entity. |
+| <Link id="m-deathreset" /><code>{"void DeathReset(IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{"> statsToReset, IEnumerable<"}<Link to="/game-api/types/alta-player/statthresholdvalue">{"StatThresholdValue"}</Link>{"> statsToModify)"}</code> | On death: resets some stats, sets others to threshold values, resets hunger if the server setting says so, and cancels timed modifiers. |
+| <Link id="m-getenumerator" /><code>{"IEnumerator GetEnumerator() (iterator)"}</code> | Yields a single item, the whole `Stats.Values` collection, not each stat. Iterate `Stats` instead. |
+| <Link id="m-getstat" /><code>{"bool GetStat("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition, out "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | Finds a stat by definition, or by definition name ignoring case. Returns false if it is not on this manager. |
+| <Link id="m-getstat-2" /><code>{"bool GetStat(string name, out "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | Finds a stat by definition, or by definition name ignoring case. Returns false if it is not on this manager. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up full and single stat sync. On the server, starts the tick timers and syncs each stat when it changes. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: forces every stat to push its value once. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends every stat to a newly connected player. |
 | <Link id="m-add" /><code>{"private void Add("}<Link to="/game-api/types/alta-stats-effects/statdefinitionapplication">{"StatDefinitionApplication"}</Link>{" application)"}</code> |  |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
@@ -78,7 +78,7 @@ Instance, one per body. `PlayerStatManager` is a subclass that also lists stats 
 | <Link id="m-syncfull-2" /><code>{"private void SyncFull("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 | <Link id="m-syncsinglestat" /><code>{"private void SyncSingleStat("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int definitionIndex)"}</code> |  |
 | <Link id="m-syncstat-2" /><code>{"private void SyncStat("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |  |
-| <Link id="m-tick" /><code>{"protected virtual void Tick()"}</code> |  |
+| <Link id="m-tick" /><code>{"protected virtual void Tick()"}</code> | Server: runs every tick time (1 second by default). Raises `Updated`, then raises external change events for changed stats. |
 | <Link id="m-tickincremental" /><code>{"private void TickIncremental()"}</code> |  |
 
 ## Used in

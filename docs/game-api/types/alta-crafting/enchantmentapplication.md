@@ -1,6 +1,6 @@
 ---
 title: "EnchantmentApplication"
-description: "An enchantment active on one item."
+description: "An enchantment applied to one Enchantable: the live triggers and effects built from the enchantment's bindings."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Enchantments`.
 
-An enchantment active on one item.
+An enchantment applied to one `Enchantable`: the live triggers and effects built from the enchantment's bindings. Each binding's triggers fire that binding's effects.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Documented in** [Other systems](/game-api/game-systems/other-systems)
@@ -27,27 +27,27 @@ An enchantment active on one item.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alleffects" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/ienchantmenteffectapplication">{"IEnchantmentEffectApplication"}</Link>{"> allEffects"}</code> |  |
-| <Link id="m-alltriggers" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/ienchantmenttriggerapplication">{"IEnchantmentTriggerApplication"}</Link>{"> allTriggers"}</code> |  |
+| <Link id="m-alleffects" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/ienchantmenteffectapplication">{"IEnchantmentEffectApplication"}</Link>{"> allEffects"}</code> | The effect instances created from the bindings. |
+| <Link id="m-alltriggers" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/ienchantmenttriggerapplication">{"IEnchantmentTriggerApplication"}</Link>{"> allTriggers"}</code> | The trigger instances created from the bindings. |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enchantable" /><code><Link to="/game-api/types/alta-crafting/enchantable">{"Enchantable"}</Link>{" "}<Link to="/game-api/types/alta-crafting/enchantable">{"Enchantable"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-settings" /><code><Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{" Settings { get; }"}</code> |  |
+| <Link id="m-enchantable" /><code><Link to="/game-api/types/alta-crafting/enchantable">{"Enchantable"}</Link>{" "}<Link to="/game-api/types/alta-crafting/enchantable">{"Enchantable"}</Link>{" { get; }"}</code> | The object this enchantment is applied to. |
+| <Link id="m-settings" /><code><Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{" Settings { get; }"}</code> | The `Enchantment` asset this was built from. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-removed" /><code>{"event Action<"}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{"> Removed"}</code> |  |
+| <Link id="m-removed" /><code>{"event Action<"}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{"> Removed"}</code> | Raised once when the enchantment is removed. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-remove" /><code>{"void Remove()"}</code> |  |
+| <Link id="m-remove" /><code>{"void Remove()"}</code> | Removes every trigger, raises `Removed` and clears its listeners. |
 
 ## Used in
 

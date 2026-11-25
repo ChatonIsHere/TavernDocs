@@ -1,6 +1,6 @@
 ---
 title: "OverworldChunk"
-description: "A LocationChunk in the square grid that covers the outdoor map. Named \"Chunk <x>-<z>\"."
+description: "A LocationChunk in the square grid that covers the outdoor map."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

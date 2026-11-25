@@ -1,6 +1,6 @@
 ---
 title: "StewManager"
-description: "Next to the pot, saved with it. Holds the stew."
+description: "Runs the stew in a cooking pot: liquid base, ingredients, garnishes, matching a stew recipe, and swapping the stew entity as it cooks."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Cooking`.
 
-Next to the pot, saved with it. Holds the stew.
+Runs the stew in a cooking pot: liquid base, ingredients, garnishes, matching a stew recipe, and swapping the stew entity as it cooks. Probably server driven; the stew entity and ingredient fades are synced to clients.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<StewManagerSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<StewManagerSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -47,28 +47,28 @@ Next to the pot, saved with it. Holds the stew.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-garnishes-2" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/cookinggarnish">{"CookingGarnish"}</Link>{"> Garnishes { get; }"}</code> |  |
-| <Link id="m-ingredients-2" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> Ingredients { get; }"}</code> |  |
-| <Link id="m-stewliquidbase-2" /><code><Link to="/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" StewLiquidBase { get; }"}</code> |  |
+| <Link id="m-garnishes-2" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/cookinggarnish">{"CookingGarnish"}</Link>{"> Garnishes { get; }"}</code> | Garnishes added so far. |
+| <Link id="m-ingredients-2" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> Ingredients { get; }"}</code> | Ingredients added so far. |
+| <Link id="m-stewliquidbase-2" /><code><Link to="/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" StewLiquidBase { get; }"}</code> | The liquid the stew is made from. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addedingredient" /><code>{"event Action<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> AddedIngredient"}</code> |  |
+| <Link id="m-addedingredient" /><code>{"event Action<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> AddedIngredient"}</code> | Raised with the cookable item when an ingredient is added. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addcookabletostew" /><code>{"void AddCookableToStew("}<Link to="/game-api/types/alta-crafting/cookable">{"Cookable"}</Link>{" cookable)"}</code> |  |
-| <Link id="m-addgarnishtostew" /><code>{"void AddGarnishToStew("}<Link to="/game-api/types/alta-crafting/icookinggarnishmarker">{"ICookingGarnishMarker"}</Link>{" garnish)"}</code> |  |
-| <Link id="m-createdefaultstew" /><code>{"void CreateDefaultStew()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-removeanystew" /><code>{"void RemoveAnyStew(bool isDestroyingStewEntity = true)"}</code> |  |
-| <Link id="m-setbaseliquid" /><code>{"void SetBaseLiquid("}<Link to="/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" liquid)"}</code> |  |
-| <Link id="m-setstewfromentity" /><code>{"void SetStewFromEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" stewEntity, bool isUsingLiquidBaseTint = false)"}</code> |  |
+| <Link id="m-addcookabletostew" /><code>{"void AddCookableToStew("}<Link to="/game-api/types/alta-crafting/cookable">{"Cookable"}</Link>{" cookable)"}</code> | Adds a cookable's item as an ingredient, fades it out and destroys it. Checks for a recipe once the pot's minimum ingredient count is reached. |
+| <Link id="m-addgarnishtostew" /><code>{"void AddGarnishToStew("}<Link to="/game-api/types/alta-crafting/icookinggarnishmarker">{"ICookingGarnishMarker"}</Link>{" garnish)"}</code> | Adds a garnish and fades it out, or raises `garnishRejected` if the pot already has its maximum garnishes. |
+| <Link id="m-createdefaultstew" /><code>{"void CreateDefaultStew()"}</code> | Spawns the default stew from the cooking settings and sets it as this pot's stew. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the stew created and ingredient fade out sync messages. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: tells the joining player which entity is the current stew. |
+| <Link id="m-removeanystew" /><code>{"void RemoveAnyStew(bool isDestroyingStewEntity = true)"}</code> | Clears the stew, ingredients, garnishes, liquid base and recipe, and by default destroys the stew entity. |
+| <Link id="m-setbaseliquid" /><code>{"void SetBaseLiquid("}<Link to="/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" liquid)"}</code> | Sets the stew's liquid base. Ignores null. |
+| <Link id="m-setstewfromentity" /><code>{"void SetStewFromEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" stewEntity, bool isUsingLiquidBaseTint = false)"}</code> | Makes an entity the pot's stew: parents it to the liquid surface, updates the liquid, syncs it and follows its cooking stages. |
 | <Link id="m-addgarnish" /><code>{"private void AddGarnish("}<Link to="/game-api/types/alta-crafting/cookinggarnish">{"CookingGarnish"}</Link>{" garnishItem)"}</code> |  |
 | <Link id="m-addingredient" /><code>{"private void AddIngredient("}<Link to="/game-api/types/alta-crafting/cookable">{"Cookable"}</Link>{" cookable)"}</code> |  |
 | <Link id="m-checkforrecipe" /><code>{"private bool CheckForRecipe()"}</code> |  |

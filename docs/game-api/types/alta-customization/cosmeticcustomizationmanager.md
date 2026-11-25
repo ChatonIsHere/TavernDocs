@@ -1,6 +1,6 @@
 ---
 title: "CosmeticCustomizationManager"
-description: "Runs the cosmetic customization room: attaches a player's cosmetics to the dummy, wires up the editable slots and handles undo, redo, randomize and ex"
+description: "Runs the cosmetic customization room: attaches a player's cosmetics to the dummy, wires up the editable slots and handles undo, redo, randomize and exit."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -66,8 +66,8 @@ Runs the cosmetic customization room: attaches a player's cosmetics to the dummy
 | <Link id="m-exitcustomizationroom" /><code>{"void ExitCustomizationRoom("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" input)"}</code> | Raises `EndButtonPressed`. Does not unload anything itself. |
 | <Link id="m-exitcustomizationroom-2" /><code>{"void ExitCustomizationRoom()"}</code> | Raises `EndButtonPressed`. Does not unload anything itself. |
 | <Link id="m-getmoredata" /><code>{"static uint[] GetMoreData(uint[] oldData, ref uint wordIndex)"}</code> | Returns a pooled `uint` buffer twice the size of the old one (128 if none), copying the old data across and releasing it. |
-| <Link id="m-initializeforplayer" /><code>{"async void InitializeForPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-customization/cosmeticownershipmanager">{"CosmeticOwnershipManager"}</Link>{" owned)"}</code> | Starts an addressable session, attaches the manager's cosmetics to the dummy and activates the slots. The `Player` overload also randomizes empty outfits and binds debug inputs. |
-| <Link id="m-initializeforplayer-2" /><code>{"async Task InitializeForPlayer("}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-customization/cosmeticownershipmanager">{"CosmeticOwnershipManager"}</Link>{" owned)"}</code> | Starts an addressable session, attaches the manager's cosmetics to the dummy and activates the slots. The `Player` overload also randomizes empty outfits and binds debug inputs. |
+| <Link id="m-initializeforplayer" /><code>{"async void InitializeForPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-customization/cosmeticownershipmanager">{"CosmeticOwnershipManager"}</Link>{" owned)"}</code> | Attaches a player's cosmetics to the dummy and activates the slots. The `Player` overload also randomizes an empty outfit. |
+| <Link id="m-initializeforplayer-2" /><code>{"async Task InitializeForPlayer("}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-customization/cosmeticownershipmanager">{"CosmeticOwnershipManager"}</Link>{" owned)"}</code> | Attaches a player's cosmetics to the dummy and activates the slots. The `Player` overload also randomizes an empty outfit. |
 | <Link id="m-isusingonlyowneditems" /><code>{"bool IsUsingOnlyOwnedItems()"}</code> | True if every equipped cosmetic item is in the player's purchased list. |
 | <Link id="m-randomize" /><code>{"async void Randomize()"}</code> | Randomizes the outfit using only owned items. Ignored while a randomize is already running. |
 | <Link id="m-redo" /><code>{"void Redo()"}</code> | Redoes the last undone cosmetic change and updates the undo and redo button events. |

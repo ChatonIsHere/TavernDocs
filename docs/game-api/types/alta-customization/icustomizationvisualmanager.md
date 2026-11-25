@@ -1,6 +1,6 @@
 ---
 title: "ICustomizationVisualManager"
-description: "Keeps track of which cosmetics and equipment are worn and shows them on every attached character (handler). CustomizationVisualManager is the implemen"
+description: "Keeps track of which cosmetics and equipment are worn and shows them on every attached character (handler)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

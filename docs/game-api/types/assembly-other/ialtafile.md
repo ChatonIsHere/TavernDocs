@@ -1,6 +1,6 @@
 ---
 title: "IAltaFile"
-description: "interface IAltaFile in Alta.IO."
+description: "A file in the game's save and settings storage, with async reads into a typed format and safe writes."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.IO`, `Alta.Utilities`.
 
+A file in the game's save and settings storage, with async reads into a typed format and safe writes. `AltaFile` is the disk version: it writes to a temp file, then swaps it in and keeps the old one as a `_backup` copy.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Derived types** [`AltaFile`](/game-api/types/assembly-other/altafile), [`DatabaseSettingsFile`](/game-api/types/alta-utilities/databasesettingsfile), [`RemoteFiles.RemoteAltaFile<TFileType>`](/game-api/types/assembly-other/remotefiles-remotealtafile-tfiletype)
 - **Documented in** [Settings and files](/game-api/console-and-utilities/settings-and-files#ialtafolder-and-ialtafile)
@@ -20,30 +22,30 @@ An **interface** in `Alta.IO`, `Alta.Utilities`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-content" /><code><Link to="/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Content { get; set; }"}</code> |  |
-| <Link id="m-fullname" /><code>{"string FullName { get; }"}</code> |  |
-| <Link id="m-haschanged" /><code>{"bool HasChanged { get; }"}</code> |  |
-| <Link id="m-isexisting" /><code>{"bool IsExisting { get; }"}</code> |  |
-| <Link id="m-isreading" /><code>{"bool IsReading { get; }"}</code> |  |
-| <Link id="m-iswriting" /><code>{"bool IsWriting { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
+| <Link id="m-content" /><code><Link to="/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Content { get; set; }"}</code> | The loaded content. Setting a new value disposes the old one. |
+| <Link id="m-fullname" /><code>{"string FullName { get; }"}</code> | Full path on disk. |
+| <Link id="m-haschanged" /><code>{"bool HasChanged { get; }"}</code> | Set to true after a write completes. Cleared with `ResetHasChanged`. |
+| <Link id="m-isexisting" /><code>{"bool IsExisting { get; }"}</code> | True if the file exists on disk. |
+| <Link id="m-isreading" /><code>{"bool IsReading { get; }"}</code> | True while a read is running. |
+| <Link id="m-iswriting" /><code>{"bool IsWriting { get; }"}</code> | True while a write is running. |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | File name with extension. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-delete" /><code>{"void Delete(bool isDeletingBackup = false)"}</code> |  |
-| <Link id="m-deleteasync" /><code>{"Task DeleteAsync(bool isDeletingBackup = false)"}</code> |  |
-| <Link id="m-finishreading" /><code>{"void FinishReading()"}</code> |  |
-| <Link id="m-finishwriting" /><code>{"void FinishWriting()"}</code> |  |
-| <Link id="m-moveto" /><code>{"void MoveTo("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder)"}</code> |  |
-| <Link id="m-queueunload" /><code>{"void QueueUnload()"}</code> |  |
-| <Link id="m-queueunloadasync" /><code>{"Task QueueUnloadAsync()"}</code> |  |
-| <Link id="m-readasync" /><code>{"Task<T> ReadAsync<T>()"}</code> |  |
-| <Link id="m-readasync-2" /><code>{"Task<T> ReadAsync<T>(Func<T> create)"}</code> |  |
-| <Link id="m-refresh" /><code>{"void Refresh()"}</code> |  |
-| <Link id="m-resethaschanged" /><code>{"void ResetHasChanged()"}</code> |  |
-| <Link id="m-writeasync" /><code>{"void WriteAsync()"}</code> |  |
+| <Link id="m-delete" /><code>{"void Delete(bool isDeletingBackup = false)"}</code> | Deletes the file from disk and its folder, and drops the content. Can also delete the backup. |
+| <Link id="m-deleteasync" /><code>{"Task DeleteAsync(bool isDeletingBackup = false)"}</code> | Same as `Delete`, but the disk work runs on a background task. |
+| <Link id="m-finishreading" /><code>{"void FinishReading()"}</code> | Blocks until any running read finishes. |
+| <Link id="m-finishwriting" /><code>{"void FinishWriting()"}</code> | Blocks until any running write finishes. |
+| <Link id="m-moveto" /><code>{"void MoveTo("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder)"}</code> | Moves the file, and its backup if there is one, into another folder. |
+| <Link id="m-queueunload" /><code>{"void QueueUnload()"}</code> | Drops the loaded content now, or after the current write finishes. Refused while reading. |
+| <Link id="m-queueunloadasync" /><code>{"Task QueueUnloadAsync()"}</code> | Like `QueueUnload`, but waits for the current write when there is one. |
+| <Link id="m-readasync" /><code>{"Task<T> ReadAsync<T>()"}</code> | Reads the file into the given format on a background task, or returns the content if already loaded. Content is null if the file is missing. |
+| <Link id="m-readasync-2" /><code>{"Task<T> ReadAsync<T>(Func<T> create)"}</code> | Reads the file into the given format on a background task, or returns the content if already loaded. Content is null if the file is missing. |
+| <Link id="m-refresh" /><code>{"void Refresh()"}</code> | Refreshes the cached file info from disk. |
+| <Link id="m-resethaschanged" /><code>{"void ResetHasChanged()"}</code> | Clears `HasChanged`. |
+| <Link id="m-writeasync" /><code>{"void WriteAsync()"}</code> | Writes a copy of the current content on a background task. A newer write cancels one still running. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "VirtualKeyboardSetup"
-description: "class VirtualKeyboardSetup in Root.Township."
+description: "Layout asset for the in-game virtual keyboard: its keys and whether each row is ordered."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VirtualKeyboardSetup
 
 A **class** in `Root.Township`, no namespace.
+
+Layout asset for the in-game virtual keyboard: its keys and whether each row is ordered.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `ScriptableObject`
@@ -34,8 +36,8 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-keysinfo-2" /><code><Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{"[] KeysInfo { get; }"}</code> |  |
-| <Link id="m-rowisordered-2" /><code>{"bool[] RowIsOrdered { get; }"}</code> |  |
+| <Link id="m-keysinfo-2" /><code><Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{"[] KeysInfo { get; }"}</code> | The keys on the keyboard. |
+| <Link id="m-rowisordered-2" /><code>{"bool[] RowIsOrdered { get; }"}</code> | Per row, whether the keys keep their set order. |
 
 ## Used in
 

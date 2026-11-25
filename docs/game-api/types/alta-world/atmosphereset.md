@@ -1,6 +1,6 @@
 ---
 title: "AtmosphereSet"
-description: "A set of colours, fog and audio. A chunk's Environment.OverrideSet can force one."
+description: "An asset listing which atmosphere plugins (sky, fog, ambient audio) to turn on or off for an area."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Environmental.Atmosphere`.
 
-A set of colours, fog and audio. A chunk's `Environment.OverrideSet` can force one.
+An asset listing which atmosphere plugins (sky, fog, ambient audio) to turn on or off for an area. Applied by `AtmosphereManager.ReadAtmosphereSet`.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** `ScriptableObject`
@@ -31,9 +31,9 @@ A set of colours, fog and audio. A chunk's `Environment.OverrideSet` can force o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disabledindices" /><code>{"List<int> disabledIndices"}</code> |  |
-| <Link id="m-disableeverythingelse" /><code>{"bool disableEverythingElse"}</code> |  |
-| <Link id="m-enabledindices" /><code>{"List<int> enabledIndices"}</code> |  |
+| <Link id="m-disabledindices" /><code>{"List<int> disabledIndices"}</code> | Plugin indexes to turn off when `disableEverythingElse` is off. |
+| <Link id="m-disableeverythingelse" /><code>{"bool disableEverythingElse"}</code> | Turns off every plugin not in `enabledIndices`. |
+| <Link id="m-enabledindices" /><code>{"List<int> enabledIndices"}</code> | Plugin indexes to turn on. |
 | <Link id="m-atmosphereauxbus" /><code>{"private AuxBus atmosphereAuxBus"}</code> |  |
 | <Link id="m-targetaudiosource" /><code>{"private int targetAudioSource"}</code> |  |
 
@@ -41,14 +41,14 @@ A set of colours, fog and audio. A chunk's `Environment.OverrideSet` can force o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-atmosphereauxbus-2" /><code>{"AuxBus AtmosphereAuxBus { get; }"}</code> |  |
-| <Link id="m-hasoverridenambience" /><code>{"bool HasOverridenAmbience { get; set; }"}</code> |  |
+| <Link id="m-atmosphereauxbus-2" /><code>{"AuxBus AtmosphereAuxBus { get; }"}</code> | Wwise aux bus for this atmosphere. |
+| <Link id="m-hasoverridenambience" /><code>{"bool HasOverridenAmbience { get; set; }"}</code> | Set by the manager when this set was applied with an ambient colour override. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaudioplayer" /><code><Link to="/game-api/types/alta-world/atmosphereplugin">{"AtmospherePlugin"}</Link>{" GetAudioPlayer(IList<"}<Link to="/game-api/types/alta-world/atmosphereplugin">{"AtmospherePlugin"}</Link>{"> plugins)"}</code> |  |
+| <Link id="m-getaudioplayer" /><code><Link to="/game-api/types/alta-world/atmosphereplugin">{"AtmospherePlugin"}</Link>{" GetAudioPlayer(IList<"}<Link to="/game-api/types/alta-world/atmosphereplugin">{"AtmospherePlugin"}</Link>{"> plugins)"}</code> | The plugin to play ambient audio from: the target one if set, else the first enabled one. Null on headless. |
 
 ## Used in
 

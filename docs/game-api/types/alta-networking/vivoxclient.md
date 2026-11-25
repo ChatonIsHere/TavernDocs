@@ -1,6 +1,6 @@
 ---
 title: "VivoxClient"
-description: "class VivoxClient in Root.Township."
+description: "Wrapper around the Vivox voice and text chat client: login, audio devices, channels and muting."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VivoxClient
 
 A **class** in `Root.Township`, `Alta.Voice`.
+
+Wrapper around the Vivox voice and text chat client: login, audio devices, channels and muting. Client only; one is made by `VivoxManager` and reached through `VivoxManager.Instance.Client`.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 
@@ -24,7 +26,7 @@ A **class** in `Root.Township`, `Alta.Voice`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loginsession" /><code>{"ILoginSession loginSession"}</code> |  |
+| <Link id="m-loginsession" /><code>{"ILoginSession loginSession"}</code> | The Vivox login session, or null when logged out. |
 | <Link id="m-account" /><code>{"private AccountId account"}</code> |  |
 | <Link id="m-channels" /><code>{"private readonly Dictionary<string, "}<Link to="/game-api/types/alta-networking/vivoxsession">{"VivoxSession"}</Link>{"> channels"}</code> |  |
 | <Link id="m-client" /><code>{"private Client client"}</code> |  |
@@ -38,41 +40,41 @@ A **class** in `Root.Township`, `Alta.Voice`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activeinputdevice" /><code>{"IAudioDevice ActiveInputDevice { get; }"}</code> |  |
-| <Link id="m-activeoutputdevice" /><code>{"IAudioDevice ActiveOutputDevice { get; }"}</code> |  |
-| <Link id="m-effectiveinputdevice" /><code>{"IAudioDevice EffectiveInputDevice { get; }"}</code> |  |
-| <Link id="m-effectiveoutputdevice" /><code>{"IAudioDevice EffectiveOutputDevice { get; }"}</code> |  |
-| <Link id="m-inputdevices" /><code>{"IEnumerable<IAudioDevice> InputDevices { get; }"}</code> |  |
-| <Link id="m-isloggedin" /><code>{"bool IsLoggedIn { get; private set; }"}</code> |  |
-| <Link id="m-ismicmuted" /><code>{"bool IsMicMuted { get; }"}</code> |  |
-| <Link id="m-outputdevices" /><code>{"IEnumerable<IAudioDevice> OutputDevices { get; }"}</code> |  |
+| <Link id="m-activeinputdevice" /><code>{"IAudioDevice ActiveInputDevice { get; }"}</code> | The microphone chosen in Vivox. |
+| <Link id="m-activeoutputdevice" /><code>{"IAudioDevice ActiveOutputDevice { get; }"}</code> | The speaker or headset chosen in Vivox. |
+| <Link id="m-effectiveinputdevice" /><code>{"IAudioDevice EffectiveInputDevice { get; }"}</code> | The microphone Vivox is actually using. |
+| <Link id="m-effectiveoutputdevice" /><code>{"IAudioDevice EffectiveOutputDevice { get; }"}</code> | The output device Vivox is actually using. |
+| <Link id="m-inputdevices" /><code>{"IEnumerable<IAudioDevice> InputDevices { get; }"}</code> | Available microphones. |
+| <Link id="m-isloggedin" /><code>{"bool IsLoggedIn { get; private set; }"}</code> | Whether login succeeded and no logout has happened since. |
+| <Link id="m-ismicmuted" /><code>{"bool IsMicMuted { get; }"}</code> | Whether the microphone is muted. |
+| <Link id="m-outputdevices" /><code>{"IEnumerable<IAudioDevice> OutputDevices { get; }"}</code> | Available output devices. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channeljoined" /><code>{"event Action ChannelJoined"}</code> |  |
-| <Link id="m-loginfailed" /><code>{"event Action LoginFailed"}</code> |  |
-| <Link id="m-loginsucceeded" /><code>{"event Action LoginSucceeded"}</code> |  |
-| <Link id="m-playerjoinedchannel" /><code>{"event Action<IParticipant> PlayerJoinedChannel"}</code> |  |
+| <Link id="m-channeljoined" /><code>{"event Action ChannelJoined"}</code> | Raised after a channel is joined. |
+| <Link id="m-loginfailed" /><code>{"event Action LoginFailed"}</code> | Raised when the login attempt fails. |
+| <Link id="m-loginsucceeded" /><code>{"event Action LoginSucceeded"}</code> | Raised when login succeeds. |
+| <Link id="m-playerjoinedchannel" /><code>{"event Action<IParticipant> PlayerJoinedChannel"}</code> | Raised when a participant in a channel is paired with a player. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-joinchannel" /><code>{"void JoinChannel("}<Link to="/game-api/types/alta-networking/vivoxchannel">{"VivoxChannel"}</Link>{" channel, Action<"}<Link to="/game-api/types/alta-networking/vivoxtext">{"VivoxText"}</Link>{"> textCreated, Action<"}<Link to="/game-api/types/alta-networking/vivoxvoice">{"VivoxVoice"}</Link>{"> voiceCreated)"}</code> |  |
-| <Link id="m-leavechannel" /><code>{"void LeaveChannel("}<Link to="/game-api/types/alta-networking/vivoxchannel">{"VivoxChannel"}</Link>{" channel)"}</code> |  |
-| <Link id="m-login" /><code>{"async Task<bool> Login(int userId, string displayName)"}</code> |  |
-| <Link id="m-logout" /><code>{"void Logout()"}</code> |  |
-| <Link id="m-refreshdevices" /><code>{"async Task<bool> RefreshDevices()"}</code> |  |
-| <Link id="m-setinputdevice" /><code>{"async Task<bool> SetInputDevice(IAudioDevice device)"}</code> |  |
-| <Link id="m-setmodsmute" /><code>{"void SetModsMute(bool isMutedByMods)"}</code> |  |
-| <Link id="m-setmuted" /><code>{"void SetMuted(bool isMuted)"}</code> |  |
-| <Link id="m-setmuted-2" /><code>{"void SetMuted(int userId, bool isMuted)"}</code> |  |
-| <Link id="m-setoutputdevice" /><code>{"async Task<bool> SetOutputDevice(IAudioDevice device)"}</code> |  |
-| <Link id="m-terminate" /><code>{"void Terminate()"}</code> |  |
-| <Link id="m-togglemute" /><code>{"void ToggleMute()"}</code> |  |
-| <Link id="m-update" /><code>{"void Update()"}</code> |  |
+| <Link id="m-joinchannel" /><code>{"void JoinChannel("}<Link to="/game-api/types/alta-networking/vivoxchannel">{"VivoxChannel"}</Link>{" channel, Action<"}<Link to="/game-api/types/alta-networking/vivoxtext">{"VivoxText"}</Link>{"> textCreated, Action<"}<Link to="/game-api/types/alta-networking/vivoxvoice">{"VivoxVoice"}</Link>{"> voiceCreated)"}</code> | Joins a channel and calls back when its text or voice part connects. A voice channel becomes the positional one. |
+| <Link id="m-leavechannel" /><code>{"void LeaveChannel("}<Link to="/game-api/types/alta-networking/vivoxchannel">{"VivoxChannel"}</Link>{" channel)"}</code> | Leaves a joined channel and removes its session. |
+| <Link id="m-login" /><code>{"async Task<bool> Login(int userId, string displayName)"}</code> | Logs in to Vivox for a user id and display name, then refreshes devices. Logging in twice logs an error and returns true. |
+| <Link id="m-logout" /><code>{"void Logout()"}</code> | Logs out and clears the session. |
+| <Link id="m-refreshdevices" /><code>{"async Task<bool> RefreshDevices()"}</code> | Refreshes the input and output device lists; true if both worked. |
+| <Link id="m-setinputdevice" /><code>{"async Task<bool> SetInputDevice(IAudioDevice device)"}</code> | Chooses the microphone. |
+| <Link id="m-setmodsmute" /><code>{"void SetModsMute(bool isMutedByMods)"}</code> | Mutes the mic while moderators require it, then restores the player's own mute choice. |
+| <Link id="m-setmuted" /><code>{"void SetMuted(bool isMuted)"}</code> | Mutes or unmutes your mic; with a user id, mutes that user in every joined channel. |
+| <Link id="m-setmuted-2" /><code>{"void SetMuted(int userId, bool isMuted)"}</code> | Mutes or unmutes your mic; with a user id, mutes that user in every joined channel. |
+| <Link id="m-setoutputdevice" /><code>{"async Task<bool> SetOutputDevice(IAudioDevice device)"}</code> | Chooses the output device. |
+| <Link id="m-terminate" /><code>{"void Terminate()"}</code> | Shuts the Vivox client down. |
+| <Link id="m-togglemute" /><code>{"void ToggleMute()"}</code> | Flips the player's chosen mute; it only takes effect if moderators aren't muting them. |
+| <Link id="m-update" /><code>{"void Update()"}</code> | Runs Vivox once and updates the positional voice position. Call every frame. |
 | <Link id="m-handlesessionstatechanged" /><code>{"private void HandleSessionStateChanged()"}</code> |  |
 | <Link id="m-logdeviceinfo" /><code>{"private void LogDeviceInfo()"}</code> |  |
 | <Link id="m-onplayerpaired" /><code>{"private void OnPlayerPaired(IParticipant player)"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "SpawnParameters"
-description: "struct SpawnParameters in Root.Township."
+description: "Where and what to spawn during forest generation."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpawnParameters
 
 A **struct** in `Root.Township`, `Alta.Forests`.
+
+Where and what to spawn during forest generation. The constructor fills the spawn data with location attributes: elevation, slope, distance from path and from the forest border.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Derived types** [`SpawnModifierSpawnParameters`](/game-api/types/global-s/spawnmodifierspawnparameters)
@@ -25,12 +27,12 @@ A **struct** in `Root.Township`, `Alta.Forests`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-normal" /><code>{"Vector3 normal"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-prefab" /><code>{"Object prefab"}</code> |  |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |  |
-| <Link id="m-scale" /><code>{"Vector3 scale"}</code> |  |
-| <Link id="m-spawndata" /><code><Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData"}</code> |  |
+| <Link id="m-normal" /><code>{"Vector3 normal"}</code> | Ground normal at the spawn point. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | World position to spawn at. |
+| <Link id="m-prefab" /><code>{"Object prefab"}</code> | The prefab or asset to spawn. Null until set. |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | Spawn rotation. Identity by default. |
+| <Link id="m-scale" /><code>{"Vector3 scale"}</code> | Spawn scale. One by default. |
+| <Link id="m-spawndata" /><code><Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData"}</code> | Spawn data with the location attributes set. |
 
 ## Used in
 

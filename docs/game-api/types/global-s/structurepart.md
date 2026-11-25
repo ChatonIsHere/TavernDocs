@@ -1,6 +1,6 @@
 ---
 title: "StructurePart"
-description: "A piece that MiningBaseGenerator can place in a generated mine: its size in tiles, the sides that are gates, solid or air, and limits on how low it ca"
+description: "A piece that MiningBaseGenerator can place in a generated mine: its size in tiles, the sides that are gates, solid or air, and limits on how low it can be..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

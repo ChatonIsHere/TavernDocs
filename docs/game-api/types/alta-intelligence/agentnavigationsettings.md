@@ -1,6 +1,6 @@
 ---
 title: "AgentNavigationSettings"
-description: "abstract class AgentNavigationSettings in Root.Township."
+description: "Base for a creature action component with movement settings for getting to its target."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AgentNavigationSettings
 
 An **abstract class** in `Root.Township`, `Alta.Intelligence`.
+
+Base for a creature action component with movement settings for getting to its target.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`ActionComponent`](/game-api/types/alta-intelligence/actioncomponent)
@@ -36,8 +38,8 @@ An **abstract class** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-acceleration-2" /><code>{"float Acceleration { get; }"}</code> |  |
-| <Link id="m-isovershooting-2" /><code>{"bool IsOvershooting { get; }"}</code> |  |
-| <Link id="m-istargetremovedonfail-2" /><code>{"bool IsTargetRemovedOnFail { get; }"}</code> |  |
-| <Link id="m-removalseconds-2" /><code>{"float RemovalSeconds { get; }"}</code> |  |
-| <Link id="m-speed-2" /><code>{"float Speed { get; }"}</code> |  |
+| <Link id="m-acceleration-2" /><code>{"float Acceleration { get; }"}</code> | How fast the creature speeds up. |
+| <Link id="m-isovershooting-2" /><code>{"bool IsOvershooting { get; }"}</code> | Whether the creature may move past the target, probably. |
+| <Link id="m-istargetremovedonfail-2" /><code>{"bool IsTargetRemovedOnFail { get; }"}</code> | If true, a target that can't be reached is dropped for a while, probably. |
+| <Link id="m-removalseconds-2" /><code>{"float RemovalSeconds { get; }"}</code> | How long a failed target is dropped for. 5 by default. |
+| <Link id="m-speed-2" /><code>{"float Speed { get; }"}</code> | Move speed for this action. |

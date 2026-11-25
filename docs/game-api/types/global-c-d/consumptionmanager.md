@@ -1,6 +1,6 @@
 ---
 title: "ConsumptionManager"
-description: "ConsumptionManager : MonoBehaviour, top level, no namespace. One per player body. Player gives the body's PlayerController."
+description: "ConsumptionManager : MonoBehaviour, top level, no namespace."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

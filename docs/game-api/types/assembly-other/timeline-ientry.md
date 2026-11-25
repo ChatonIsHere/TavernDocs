@@ -1,6 +1,6 @@
 ---
 title: "Timeline.IEntry"
-description: "interface Timeline.IEntry in Alta.Timing.Runtime."
+description: "Handle to a callback scheduled on the game Timeline (from CallAfterDuration, CallRepeatableAfterDuration and so on)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Timing.Runtime`, `Alta.Timing`.
 
+Handle to a callback scheduled on the game `Timeline` (from `CallAfterDuration`, `CallRepeatableAfterDuration` and so on). Pass it to `Timeline.Cancel` to stop it.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`Timeline`](/game-api/types/assembly-other/timeline)
 - **Derived types** [`Timeline.Entry`](/game-api/types/assembly-other/timeline-entry)
@@ -20,8 +22,8 @@ An **interface** in `Alta.Timing.Runtime`, `Alta.Timing`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> |  |
-| <Link id="m-time" /><code>{"TimeSpan Time { get; }"}</code> |  |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> | False once the entry has been cancelled or released. |
+| <Link id="m-time" /><code>{"TimeSpan Time { get; }"}</code> | Timeline time the callback is due. For a repeating entry, the next due time. |
 
 ## Used in
 

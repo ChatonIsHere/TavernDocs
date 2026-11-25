@@ -1,6 +1,6 @@
 ---
 title: "NetworkTransportStatisticField"
-description: "One network traffic counter for the profiler. Reads a running total from a function you pass in and reports it relative to the last reset."
+description: "One network traffic counter for the profiler."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

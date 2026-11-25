@@ -1,6 +1,6 @@
 ---
 title: "LeaderboardDefinitionData"
-description: "class LeaderboardDefinitionData in Root.Township."
+description: "A leaderboard's settings: course name, size and whether lower scores win."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LeaderboardDefinitionData
 
 A **class** in `Root.Township`, no namespace.
+
+A leaderboard's settings: course name, size and whether lower scores win. A static list holds one per `LeaderboardDefinition` asset plus any added by the leaderboard console commands.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`LeaderboardComparer`](/game-api/types/global-i-l/leaderboardcomparer)
@@ -25,29 +27,29 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-coursename" /><code>{"string courseName"}</code> |  |
-| <Link id="m-definition" /><code><Link to="/game-api/types/global-i-l/leaderboarddefinition">{"LeaderboardDefinition"}</Link>{" definition"}</code> |  |
-| <Link id="m-hash" /><code>{"uint hash"}</code> |  |
-| <Link id="m-islowest" /><code>{"bool isLowest"}</code> |  |
-| <Link id="m-size" /><code>{"int size"}</code> |  |
+| <Link id="m-coursename" /><code>{"string courseName"}</code> | Display name of the course. |
+| <Link id="m-definition" /><code><Link to="/game-api/types/global-i-l/leaderboarddefinition">{"LeaderboardDefinition"}</Link>{" definition"}</code> | The asset it came from, or null if made by command. |
+| <Link id="m-hash" /><code>{"uint hash"}</code> | Identifier: the asset's hash, or the course name's hash code for command-made ones. |
+| <Link id="m-islowest" /><code>{"bool isLowest"}</code> | True if lower scores (such as times) rank higher. |
+| <Link id="m-size" /><code>{"int size"}</code> | Number of entries kept. |
 | <Link id="m-mapped" /><code>{"private static List<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"> mapped"}</code> |  |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-trimmedcoursename" /><code>{"string TrimmedCourseName { get; }"}</code> |  |
+| <Link id="m-trimmedcoursename" /><code>{"string TrimmedCourseName { get; }"}</code> | Course name with spaces removed, used for lookups. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-adddata" /><code>{"static void AddData("}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" newData)"}</code> |  |
-| <Link id="m-compare" /><code>{"bool Compare(float a, float b)"}</code> |  |
-| <Link id="m-getdata" /><code>{"static "}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" GetData(string courseName)"}</code> |  |
-| <Link id="m-listavailable" /><code>{"static IEnumerable<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondatainfo">{"LeaderboardDefinitionDataInfo"}</Link>{"> ListAvailable() (iterator)"}</code> |  |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondatainfo">{"LeaderboardDefinitionDataInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" data)"}</code> |  |
-| <Link id="m-setdata" /><code>{"static "}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" SetData(string courseName, int size, bool isLowest)"}</code> |  |
+| <Link id="m-adddata" /><code>{"static void AddData("}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" newData)"}</code> | Adds a leaderboard, replacing any with the same hash. |
+| <Link id="m-compare" /><code>{"bool Compare(float a, float b)"}</code> | True if score `b` beats score `a`, taking `isLowest` into account. |
+| <Link id="m-getdata" /><code>{"static "}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" GetData(string courseName)"}</code> | Finds a leaderboard by course name, ignoring spaces and case. Null if none. |
+| <Link id="m-listavailable" /><code>{"static IEnumerable<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondatainfo">{"LeaderboardDefinitionDataInfo"}</Link>{"> ListAvailable() (iterator)"}</code> | Lists every known leaderboard as `LeaderboardDefinitionDataInfo`. |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondatainfo">{"LeaderboardDefinitionDataInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" data)"}</code> | Converts to a `LeaderboardDefinitionDataInfo` with just the name. |
+| <Link id="m-setdata" /><code>{"static "}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" SetData(string courseName, int size, bool isLowest)"}</code> | Finds or creates a leaderboard by course name. Size and order only change for ones without an asset. |
 | <Link id="m-prepare" /><code>{"private static void Prepare()"}</code> |  |
 
 ## Used in

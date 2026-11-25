@@ -1,6 +1,6 @@
 ---
 title: "GenerationBase"
-description: "class GenerationBase in Root.Township."
+description: "Generates one procedural cave layer from a seed: splits it into map chunks and runs each generation plugin on them, spread over frames."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GenerationBase
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+Generates one procedural cave layer from a seed: splits it into map chunks and runs each generation plugin on them, spread over frames. The server picks the seed and sends it so clients build the same cave.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`IGenerator`](/game-api/types/alta-world-generation/igenerator)
@@ -47,42 +49,42 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunks-2" /><code><Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{"[,] Chunks { get; }"}</code> |  |
-| <Link id="m-chunksize-2" /><code>{"int ChunkSize { get; }"}</code> |  |
-| <Link id="m-currentlyrendering" /><code>{"static "}<Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" CurrentlyRendering { get; set; }"}</code> |  |
-| <Link id="m-entrance" /><code>{"Vector2 Entrance { get; private set; }"}</code> |  |
-| <Link id="m-entrancedirection" /><code>{"Vector2 EntranceDirection { get; private set; }"}</code> |  |
-| <Link id="m-floorplugin-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" FloorPlugin { get; }"}</code> |  |
-| <Link id="m-hashfunction" /><code><Link to="/game-api/types/global-e-h/hashfunction">{"HashFunction"}</Link>{" "}<Link to="/game-api/types/global-e-h/hashfunction">{"HashFunction"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-isgeneratingdynamic" /><code>{"bool IsGeneratingDynamic { get; }"}</code> |  |
-| <Link id="m-layer" /><code>{"int Layer { get; private set; }"}</code> |  |
-| <Link id="m-layerstreamer" /><code><Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" LayerStreamer { get; private set; }"}</code> |  |
-| <Link id="m-plugininstances" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{"> PluginInstances { get; private set; }"}</code> |  |
-| <Link id="m-pluginlist-2" /><code><Link to="/game-api/types/alta-world-generation/pluginlist">{"PluginList"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/pluginlist">{"PluginList"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-seed-2" /><code>{"int Seed { get; set; }"}</code> |  |
-| <Link id="m-simplexnoise" /><code><Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" "}<Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" { get; private set; }"}</code> |  |
+| <Link id="m-chunks-2" /><code><Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{"[,] Chunks { get; }"}</code> | The grid of map chunks, null before generation. |
+| <Link id="m-chunksize-2" /><code>{"int ChunkSize { get; }"}</code> | Size of one map chunk in generator units. |
+| <Link id="m-currentlyrendering" /><code>{"static "}<Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" CurrentlyRendering { get; set; }"}</code> | The generator allowed to render this frame, so only one renders at a time. |
+| <Link id="m-entrance" /><code>{"Vector2 Entrance { get; private set; }"}</code> | Where the layer's entrance is. |
+| <Link id="m-entrancedirection" /><code>{"Vector2 EntranceDirection { get; private set; }"}</code> | Direction of the layer's entrance. |
+| <Link id="m-floorplugin-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" FloorPlugin { get; }"}</code> | The plugin that makes the floor. |
+| <Link id="m-hashfunction" /><code><Link to="/game-api/types/global-e-h/hashfunction">{"HashFunction"}</Link>{" "}<Link to="/game-api/types/global-e-h/hashfunction">{"HashFunction"}</Link>{" { get; private set; }"}</code> | Seeded hash function for the plugins, made at generation start. |
+| <Link id="m-isgeneratingdynamic" /><code>{"bool IsGeneratingDynamic { get; }"}</code> | Whether the layer streamer is generating dynamic content. |
+| <Link id="m-layer" /><code>{"int Layer { get; private set; }"}</code> | The cave layer number. |
+| <Link id="m-layerstreamer" /><code><Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" LayerStreamer { get; private set; }"}</code> | The streamer that owns this cave layer. |
+| <Link id="m-plugininstances" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{"> PluginInstances { get; private set; }"}</code> | One plugin instance per plugin in `PluginList`, made at generation start. |
+| <Link id="m-pluginlist-2" /><code><Link to="/game-api/types/alta-world-generation/pluginlist">{"PluginList"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/pluginlist">{"PluginList"}</Link>{" { get; }"}</code> | The plugins that make up this cave. |
+| <Link id="m-seed-2" /><code>{"int Seed { get; set; }"}</code> | The generation seed. A negative value is replaced with a random one at start. |
+| <Link id="m-simplexnoise" /><code><Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" "}<Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" { get; private set; }"}</code> | Seeded noise for the plugins, made at generation start. |
 | <Link id="m-snap" /><code>{"Vector2 Snap { get; set; }"}</code> |  |
-| <Link id="m-spawndata" /><code><Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" { get; private set; }"}</code> |  |
+| <Link id="m-spawndata" /><code><Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" { get; private set; }"}</code> | Spawn data built from the layer's biome. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-renderingcomplete" /><code>{"event Action RenderingComplete"}</code> |  |
+| <Link id="m-renderingcomplete" /><code>{"event Action RenderingComplete"}</code> | Raised once when all chunks are generated and rendered. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-decrementgenerating" /><code>{"void DecrementGenerating()"}</code> |  |
-| <Link id="m-getchunkcoord" /><code>{"int GetChunkCoord(float position)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-releasechunk" /><code>{"void ReleaseChunk(int x, int y)"}</code> |  |
-| <Link id="m-requestchunk" /><code>{"void RequestChunk(int x, int y)"}</code> |  |
-| <Link id="m-setuplayer" /><code>{"async Task SetupLayer("}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer, int layer, int seed, Vector2 entrance, Vector2 entranceDirection)"}</code> |  |
-| <Link id="m-startgenerating" /><code>{"async Task StartGenerating()"}</code> |  |
-| <Link id="m-startrendering" /><code>{"void StartRendering("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> |  |
+| <Link id="m-decrementgenerating" /><code>{"void DecrementGenerating()"}</code> | Called by a map chunk when it finishes generating. |
+| <Link id="m-getchunkcoord" /><code>{"int GetChunkCoord(float position)"}</code> | Map chunk index for a position along one axis. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the synced seed message clients use to start generating. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the seed and entrance to a player who joins after generation started. |
+| <Link id="m-releasechunk" /><code>{"void ReleaseChunk(int x, int y)"}</code> | Drops one request for a map chunk and destroys it when none are left. |
+| <Link id="m-requestchunk" /><code>{"void RequestChunk(int x, int y)"}</code> | Creates and starts generating a map chunk, or adds a request to an existing one. |
+| <Link id="m-setuplayer" /><code>{"async Task SetupLayer("}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer, int layer, int seed, Vector2 entrance, Vector2 entranceDirection)"}</code> | Sets the layer, seed, streamer and entrance, then generates. |
+| <Link id="m-startgenerating" /><code>{"async Task StartGenerating()"}</code> | Generates every chunk and waits until rendering is complete. The server also sends the seed to clients. |
+| <Link id="m-startrendering" /><code>{"void StartRendering("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> | Queues a generated map chunk for rendering. |
 | <Link id="m-clear" /><code>{"private void Clear()"}</code> |  |
 | <Link id="m-clientspawn-2" /><code>{"private async void ClientSpawn("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-c-d/caveseedarguments">{"CaveSeedArguments"}</Link>{" args)"}</code> |  |
 | <Link id="m-decrementsceneloading" /><code>{"private void DecrementSceneLoading()"}</code> |  |

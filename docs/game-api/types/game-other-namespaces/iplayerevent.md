@@ -1,6 +1,6 @@
 ---
 title: "IPlayerEvent"
-description: "interface IPlayerEvent in Root.Township."
+description: "An event bus event caused by a player."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `ATT.EventBus.TownshipEvents`.
 
+An event bus event caused by a player.
+
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`IEventBusEventData`](/game-api/types/game-other-namespaces/ieventbuseventdata)
 - **Derived types** [`ForceCompleteTutorialStepEvent`](/game-api/types/game-other-namespaces/forcecompletetutorialstepevent), [`ItemCraftedEvent`](/game-api/types/game-other-namespaces/itemcraftedevent), [`ItemForgedEvent`](/game-api/types/game-other-namespaces/itemforgedevent), [`PlayerGrabbedPrefabEvent`](/game-api/types/game-other-namespaces/playergrabbedprefabevent), [`PlayerInPositionEvent`](/game-api/types/game-other-namespaces/playerinpositionevent), [`PrefabInPositionEvent`](/game-api/types/game-other-namespaces/prefabinpositionevent)
@@ -20,7 +22,7 @@ An **interface** in `Root.Township`, `ATT.EventBus.TownshipEvents`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-source" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; }"}</code> |  |
+| <Link id="m-source" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; }"}</code> | The player who caused the event. |
 
 ## Used in
 

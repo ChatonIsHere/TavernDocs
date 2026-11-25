@@ -1,6 +1,6 @@
 ---
 title: "SteamVRPose"
-description: "Tracks the pose of one SteamVR tracked device index. SteamVRDeviceLifecycle keeps a list of these and feeds them new poses each frame. Client only."
+description: "Tracks the pose of one SteamVR tracked device index."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

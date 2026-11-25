@@ -1,6 +1,6 @@
 ---
 title: "PlayerProgressionManager"
-description: "One per Player (not per body), so it survives respawns. Get it with player.ProgressionManager (it's on IPlayer too)."
+description: "Per-player component that holds experience, levels and unlocked skill slots for each progression path, and saves them in the player save."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-One per `Player` (not per body), so it survives respawns. Get it with `player.ProgressionManager` (it's on `IPlayer` too).
+Per-player component that holds experience, levels and unlocked skill slots for each progression path, and saves them in the player save. Reach it through `Player.ProgressionManager`; experience is only granted on the server.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`PlayerComponent`](/game-api/types/global-p/playercomponent)
@@ -45,45 +45,45 @@ One per `Player` (not per body), so it survives respawns. Get it with `player.Pr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pathexperiences" /><code>{"Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", "}<Link to="/game-api/types/global-p/pathexperience">{"PathExperience"}</Link>{"> PathExperiences { get; }"}</code> |  |
-| <Link id="m-practicingorb" /><code><Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" PracticingOrb { get; private set; }"}</code> |  |
+| <Link id="m-pathexperiences" /><code>{"Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", "}<Link to="/game-api/types/global-p/pathexperience">{"PathExperience"}</Link>{"> PathExperiences { get; }"}</code> | Experience state per progression path. Entries are created on first use. |
+| <Link id="m-practicingorb" /><code><Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" PracticingOrb { get; private set; }"}</code> | The skill orb currently being practised, or null. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onpracticingchanged" /><code>{"event "}<Link to="/game-api/types/global-s/skillorbdelegate">{"SkillOrbDelegate"}</Link>{" OnPracticingChanged"}</code> |  |
-| <Link id="m-onslotpracticed" /><code>{"event Action<bool> OnSlotPracticed"}</code> |  |
-| <Link id="m-updatedfreepoints" /><code>{"event Action<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{", "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{"> UpdatedFreePoints"}</code> |  |
+| <Link id="m-onpracticingchanged" /><code>{"event "}<Link to="/game-api/types/global-s/skillorbdelegate">{"SkillOrbDelegate"}</Link>{" OnPracticingChanged"}</code> | Raised when practising of a skill orb starts or stops. |
+| <Link id="m-onslotpracticed" /><code>{"event Action<bool> OnSlotPracticed"}</code> | Raised by `MarkSlotPracticed` with whether the slot was newly practised. |
+| <Link id="m-updatedfreepoints" /><code>{"event Action<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{", "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{"> UpdatedFreePoints"}</code> | Raised when free points on a path change. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-endpractice" /><code>{"void EndPractice()"}</code> |  |
-| <Link id="m-experiencelog" /><code>{"IEnumerable<string> ExperienceLog() (iterator)"}</code> |  |
-| <Link id="m-gainexperience" /><code>{"static void GainExperience("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" targetPlayer, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, float experience)"}</code> |  |
-| <Link id="m-gainexperience-2" /><code>{"static bool GainExperience("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" targetPlayer, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, int experience)"}</code> |  |
-| <Link id="m-gainsharedexperience" /><code>{"static void GainSharedExperience("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" mainPlayer, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" supportPlayer, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, float experience)"}</code> |  |
-| <Link id="m-getfreepoints" /><code>{"int GetFreePoints("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
-| <Link id="m-getlevel" /><code>{"int GetLevel("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> |  |
-| <Link id="m-getlevel-2" /><code>{"uint GetLevel("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
-| <Link id="m-getpaths" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{"> GetPaths() (iterator)"}</code> |  |
-| <Link id="m-getpercentagetonextlevel" /><code>{"float GetPercentageToNextLevel("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
-| <Link id="m-getslots" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> GetSlots() (iterator)"}</code> |  |
-| <Link id="m-isslotavailable" /><code><Link to="/game-api/types/global-s/skillstatus">{"SkillStatus"}</Link>{" IsSlotAvailable("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> |  |
-| <Link id="m-isslotpracticed" /><code>{"bool IsSlotPracticed("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> |  |
-| <Link id="m-loadfrom" /><code>{"void LoadFrom("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> |  |
-| <Link id="m-lockslot" /><code>{"void LockSlot("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> |  |
-| <Link id="m-markslotpracticed" /><code>{"bool MarkSlotPracticed("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, uint slotHash)"}</code> |  |
-| <Link id="m-practiceslot" /><code>{"void PracticeSlot("}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" orb)"}</code> |  |
-| <Link id="m-saveto" /><code>{"void SaveTo("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> |  |
-| <Link id="m-sendmessage" /><code>{"void SendMessage("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill, params "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"[] except)"}</code> |  |
-| <Link id="m-sendmessagetoplayer" /><code>{"void SendMessageToPlayer("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-skillunlocked" /><code>{"bool SkillUnlocked("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> |  |
-| <Link id="m-syncpracticedtoplayer" /><code>{"void SyncPracticedToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-unlockslot" /><code>{"void UnlockSlot("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot, bool isConsumingPoints = true, bool isFromLoad = false)"}</code> |  |
-| <Link id="m-updatecounts" /><code>{"void UpdateCounts()"}</code> |  |
+| <Link id="m-endpractice" /><code>{"void EndPractice()"}</code> | Stops practising the current skill orb and locks the skill again if practice was the only thing unlocking it. |
+| <Link id="m-experiencelog" /><code>{"IEnumerable<string> ExperienceLog() (iterator)"}</code> | One text line per path with level, free points and experience, for debug output. |
+| <Link id="m-gainexperience" /><code>{"static void GainExperience("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" targetPlayer, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, float experience)"}</code> | Server: static. Adds experience to a player's path, scaled by their experience boost stat. Does nothing for disabled paths or amounts of zero or less. |
+| <Link id="m-gainexperience-2" /><code>{"static bool GainExperience("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" targetPlayer, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, int experience)"}</code> | Server: static. Adds experience to a player's path, scaled by their experience boost stat. Does nothing for disabled paths or amounts of zero or less. |
+| <Link id="m-gainsharedexperience" /><code>{"static void GainSharedExperience("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" mainPlayer, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" supportPlayer, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, float experience)"}</code> | Server: static. Splits experience between a main and a supporting player using the shared multipliers from `ProgressionSettings`. |
+| <Link id="m-getfreepoints" /><code>{"int GetFreePoints("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | Unspent skill points the player has on a path. |
+| <Link id="m-getlevel" /><code>{"int GetLevel("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> | For a `ProfessionSkill`, how many times it is unlocked (0 when not). For a path, the player's current level. |
+| <Link id="m-getlevel-2" /><code>{"uint GetLevel("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | For a `ProfessionSkill`, how many times it is unlocked (0 when not). For a path, the player's current level. |
+| <Link id="m-getpaths" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{"> GetPaths() (iterator)"}</code> | Yields each path once per slot unlocked on it. |
+| <Link id="m-getpercentagetonextlevel" /><code>{"float GetPercentageToNextLevel("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | Current experience on a path as a fraction of what the current level needs. |
+| <Link id="m-getslots" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> GetSlots() (iterator)"}</code> | Every skill tree slot the player has unlocked, across all paths. |
+| <Link id="m-isslotavailable" /><code><Link to="/game-api/types/global-s/skillstatus">{"SkillStatus"}</Link>{" IsSlotAvailable("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> | The `SkillStatus` of a slot for this player (owned, allowed, can't buy, and testing variants while it is being practised). |
+| <Link id="m-isslotpracticed" /><code>{"bool IsSlotPracticed("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> | Whether the slot has been practised. Always true unless the server setting `CanOnlyBuySkillsAfterPracticing` is on. |
+| <Link id="m-loadfrom" /><code>{"void LoadFrom("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> | Reads path experience and practised slots from a `PlayerSave`. |
+| <Link id="m-lockslot" /><code>{"void LockSlot("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> | Removes an unlocked slot and lowers the skill's level, letting the player buy skills again if they were at the cap. |
+| <Link id="m-markslotpracticed" /><code>{"bool MarkSlotPracticed("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, uint slotHash)"}</code> | Marks a slot as practised and raises `OnSlotPracticed`. On the server it also syncs that to clients. |
+| <Link id="m-practiceslot" /><code>{"void PracticeSlot("}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" orb)"}</code> | Starts practising a skill orb at a shrine. The skill is unlocked for the player while they practise it. |
+| <Link id="m-saveto" /><code>{"void SaveTo("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> | Writes path experience and practised slots into a `PlayerSave`. |
+| <Link id="m-sendmessage" /><code>{"void SendMessage("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill, params "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"[] except)"}</code> | Sends a skill's network message to everyone in the player's chunks, except the listed players. |
+| <Link id="m-sendmessagetoplayer" /><code>{"void SendMessageToPlayer("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends a skill's network message to one player. |
+| <Link id="m-skillunlocked" /><code>{"bool SkillUnlocked("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> | True when the player has the skill at any level, including while practising it. |
+| <Link id="m-syncpracticedtoplayer" /><code>{"void SyncPracticedToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends all practised slots to one player; called when that player connects. |
+| <Link id="m-unlockslot" /><code>{"void UnlockSlot("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot, bool isConsumingPoints = true, bool isFromLoad = false)"}</code> | Unlocks a slot, spending points unless told not to. Refuses (and logs) when dependencies are missing, except when loading. |
+| <Link id="m-updatecounts" /><code>{"void UpdateCounts()"}</code> | Rebuilds the owned skill count and skill levels from the unlocked slots. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-characterdied" /><code>{"private void CharacterDied("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingBlow)"}</code> |  |
 | <Link id="m-createpathexperience" /><code>{"private "}<Link to="/game-api/types/global-p/pathexperience">{"PathExperience"}</Link>{" CreatePathExperience("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |

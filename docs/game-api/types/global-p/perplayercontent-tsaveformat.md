@@ -1,6 +1,6 @@
 ---
 title: "PerPlayerContent<TSaveFormat>"
-description: "Server: a save file that belongs to one player (by user ID), loaded whether or not they're online. Tracks the player while they're in the server. Base"
+description: "Server: a save file that belongs to one player (by user ID), loaded whether or not they're online."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "MeltingModel"
-description: "abstract class MeltingModel in Root.Township."
+description: "Base for items that can be melted down in a smelter (ingots, forged parts)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MeltingModel
 
 An **abstract class** in `Root.Township`, `Alta.Blacksmithing`.
+
+Base for items that can be melted down in a smelter (ingots, forged parts). The smelter checks whether every counted heat point is hot enough, then adds `IngotValue` of the material.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour)
@@ -37,30 +39,30 @@ An **abstract class** in `Root.Township`, `Alta.Blacksmithing`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filtertransform" /><code>{"Transform FilterTransform { get; }"}</code> |  |
-| <Link id="m-ingotvalue-2" /><code>{"float IngotValue { get; }"}</code> |  |
-| <Link id="m-isatmeltingpoint" /><code>{"bool IsAtMeltingPoint { get; }"}</code> |  |
-| <Link id="m-ismeltingallowed" /><code>{"bool IsMeltingAllowed { get; }"}</code> |  |
-| <Link id="m-istriggeringabilities-2" /><code>{"bool IsTriggeringAbilities { get; }"}</code> |  |
-| <Link id="m-meshbounds" /><code>{"Bounds MeshBounds { get; }"}</code> |  |
-| <Link id="m-physicalmaterial" /><code>{"abstract "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-filtertransform" /><code>{"Transform FilterTransform { get; }"}</code> | Transform of the main mesh. |
+| <Link id="m-ingotvalue-2" /><code>{"float IngotValue { get; }"}</code> | Amount of material it melts into, after `yieldMultiplierFilter` handlers. Default 0.3. |
+| <Link id="m-isatmeltingpoint" /><code>{"bool IsAtMeltingPoint { get; }"}</code> | True when every heat point counted for melting is at or above the material's glowing end temperature. |
+| <Link id="m-ismeltingallowed" /><code>{"bool IsMeltingAllowed { get; }"}</code> | True unless an `isAllowedFilter` handler says no. The smelter skips items that are not allowed. |
+| <Link id="m-istriggeringabilities-2" /><code>{"bool IsTriggeringAbilities { get; }"}</code> | Whether ember composers treat this item as triggering abilities. Default true. |
+| <Link id="m-meshbounds" /><code>{"Bounds MeshBounds { get; }"}</code> | Bounds of the main mesh. |
+| <Link id="m-physicalmaterial" /><code>{"abstract "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" { get; }"}</code> | Material the item is made of. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isallowedfilter" /><code>{"event "}<Link to="/game-api/types/alta-crafting/meltingmodelallowed">{"MeltingModelAllowed"}</Link>{" isAllowedFilter"}</code> |  |
-| <Link id="m-yieldmultiplierfilter" /><code>{"event "}<Link to="/game-api/types/alta-crafting/meltingmodelyield">{"MeltingModelYield"}</Link>{" yieldMultiplierFilter"}</code> |  |
+| <Link id="m-isallowedfilter" /><code>{"event "}<Link to="/game-api/types/alta-crafting/meltingmodelallowed">{"MeltingModelAllowed"}</Link>{" isAllowedFilter"}</code> | Lets other code block melting for this item. |
+| <Link id="m-yieldmultiplierfilter" /><code>{"event "}<Link to="/game-api/types/alta-crafting/meltingmodelyield">{"MeltingModelYield"}</Link>{" yieldMultiplierFilter"}</code> | Lets other code change the melt yield. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"virtual void OnValidate()"}</code> |  |
-| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material, float ingotValue)"}</code> |  |
-| <Link id="m-setup-2" /><code>{"void Setup("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material)"}</code> |  |
-| <Link id="m-internalsetup" /><code>{"protected abstract void InternalSetup("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material)"}</code> |  |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: starts the item's melting modifiers. |
+| <Link id="m-onvalidate" /><code>{"virtual void OnValidate()"}</code> | Finds the heat point collection and main mesh in the editor. |
+| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material, float ingotValue)"}</code> | Sets the material, and optionally the ingot value. |
+| <Link id="m-setup-2" /><code>{"void Setup("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material)"}</code> | Sets the material, and optionally the ingot value. |
+| <Link id="m-internalsetup" /><code>{"protected abstract void InternalSetup("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material)"}</code> | Sets the item's material. Subclasses implement it. |
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
 | <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
 

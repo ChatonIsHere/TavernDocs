@@ -1,6 +1,6 @@
 ---
 title: "TwoStepLever"
-description: "A lever with an on and off position. Value, ForceVisualSet(float)."
+description: "A lever with an on and off position."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "IPlayerStateTransition"
-description: "interface IPlayerStateTransition in Root.Township."
+description: "A possible move from one player state to another."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.PlayerStates.Transitions`.
 
+A possible move from one player state to another. While active it listens for its trigger, then asks the transitions manager to switch states.
+
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Derived types** [`StateTransition<TFrom, TTo>`](/game-api/types/alta-player/statetransition-tfrom-tto)
 
@@ -19,17 +21,17 @@ An **interface** in `Root.Township`, `Alta.PlayerStates.Transitions`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destinationstatetype" /><code><Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" DestinationStateType { get; }"}</code> |  |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; set; }"}</code> |  |
-| <Link id="m-sourcestate" /><code><Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" SourceState { set; }"}</code> |  |
-| <Link id="m-statetransitionsmanager" /><code><Link to="/game-api/types/alta-player/istatetransitionsmanager">{"IStateTransitionsManager"}</Link>{" StateTransitionsManager { get; set; }"}</code> |  |
+| <Link id="m-destinationstatetype" /><code><Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" DestinationStateType { get; }"}</code> | The state this transition leads to. |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; set; }"}</code> | Whether the transition is listening for its trigger. Setting it adds or removes the listeners. |
+| <Link id="m-sourcestate" /><code><Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" SourceState { set; }"}</code> | The state this transition leads away from. Setting it also picks up that state's player and manager. |
+| <Link id="m-statetransitionsmanager" /><code><Link to="/game-api/types/alta-player/istatetransitionsmanager">{"IStateTransitionsManager"}</Link>{" StateTransitionsManager { get; set; }"}</code> | The manager that performs the switch. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-transitiontodestinationstateexternal" /><code>{"void TransitionToDestinationStateExternal()"}</code> |  |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | Clears the source state. |
+| <Link id="m-transitiontodestinationstateexternal" /><code>{"void TransitionToDestinationStateExternal()"}</code> | Switches to the destination state now, from outside the transition. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "OldSaveData"
-description: "abstract class OldSaveData in Root.Township."
+description: "Base for retired save data formats."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OldSaveData
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for retired save data formats. Its `Apply` refuses to load them.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** [`SaveData`](/game-api/types/alta-world/savedata)
@@ -32,4 +34,4 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"override bool Apply(object component, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> |  |
+| <Link id="m-apply" /><code>{"override bool Apply(object component, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Logs an error that old save data was used and returns false, so nothing is applied. |

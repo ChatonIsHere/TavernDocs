@@ -1,6 +1,6 @@
 ---
 title: "CaveLayerStreamer"
-description: "Alta.Chunks.CaveLayerStreamer, on the streamer prefab. It's the layer's ICaveLayer and its chunk's IProceduralGenerationStreamer."
+description: "Streams one procedurally generated cave layer as its own location chunk below the surface."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Chunks`.
 
-`Alta.Chunks.CaveLayerStreamer`, on the streamer prefab. It's the layer's `ICaveLayer` and its chunk's `IProceduralGenerationStreamer`.
+Streams one procedurally generated cave layer as its own location chunk below the surface. The `CaveLayerManager` places it at its entrance; it spawns the layer's generator content, positions the culling portal and syncs the layout to clients.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<CaveLayerStreamerSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<CaveLayerStreamerSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase), [`ICaveLayer`](/game-api/types/alta-world/icavelayer), [`IPortalApplier`](/game-api/types/alta-world/iportalapplier), [`IProceduralGenerationStreamer`](/game-api/types/alta-world/iproceduralgenerationstreamer)
@@ -29,7 +29,7 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxnumberoflayers" /><code>{"const int MaxNumberOfLayers"}</code> |  |
+| <Link id="m-maxnumberoflayers" /><code>{"const int MaxNumberOfLayers"}</code> | Upper bound used when syncing the layer number. |
 | <Link id="m-androidterrainmaterial" /><code>{"private Material androidTerrainMaterial"}</code> |  |
 | <Link id="m-androidterrainmateriallod1" /><code>{"private Material androidTerrainMaterialLOD1"}</code> |  |
 | <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk"}</code> |  |
@@ -57,47 +57,47 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allstaticrenderers" /><code>{"Dictionary<Renderer, Vector3> AllStaticRenderers { get; }"}</code> |  |
-| <Link id="m-bounds" /><code>{"Bounds Bounds { get; set; }"}</code> |  |
-| <Link id="m-chunk-2" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; private set; }"}</code> |  |
-| <Link id="m-depth" /><code>{"float Depth { get; set; }"}</code> |  |
-| <Link id="m-ecosystem-2" /><code><Link to="/game-api/types/alta-world-generation/ecosystem">{"Ecosystem"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/ecosystem">{"Ecosystem"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-entrance" /><code>{"Vector2 Entrance { get; set; }"}</code> |  |
-| <Link id="m-entrancedirection-2" /><code>{"Vector2 EntranceDirection { get; }"}</code> |  |
-| <Link id="m-generator-2" /><code><Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" Generator { get; }"}</code> |  |
-| <Link id="m-isgeneratingdynamic" /><code>{"bool IsGeneratingDynamic { get; private set; }"}</code> |  |
-| <Link id="m-layeridentifier" /><code>{"int LayerIdentifier { get; }"}</code> |  |
-| <Link id="m-manager" /><code><Link to="/game-api/types/alta-world-generation/cavelayermanager">{"CaveLayerManager"}</Link>{" Manager { get; private set; }"}</code> |  |
-| <Link id="m-needtogeneratepathfinding" /><code>{"bool NeedToGeneratePathFinding { get; }"}</code> |  |
-| <Link id="m-portaltransform" /><code>{"Transform PortalTransform { get; private set; }"}</code> |  |
+| <Link id="m-allstaticrenderers" /><code>{"Dictionary<Renderer, Vector3> AllStaticRenderers { get; }"}</code> | Static renderers in the layer's band, with their positions. Clients only; shown only while the local player is in the chunk. |
+| <Link id="m-bounds" /><code>{"Bounds Bounds { get; set; }"}</code> | Bounds used for the layer's pathfinding graph. |
+| <Link id="m-chunk-2" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; private set; }"}</code> | The location chunk on the same object. |
+| <Link id="m-depth" /><code>{"float Depth { get; set; }"}</code> | Depth of the layer below the manager. Set with `SetEntrance`. |
+| <Link id="m-ecosystem-2" /><code><Link to="/game-api/types/alta-world-generation/ecosystem">{"Ecosystem"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/ecosystem">{"Ecosystem"}</Link>{" { get; }"}</code> | Ecosystem asset for this layer. |
+| <Link id="m-entrance" /><code>{"Vector2 Entrance { get; set; }"}</code> | Horizontal position of the layer's entrance. |
+| <Link id="m-entrancedirection-2" /><code>{"Vector2 EntranceDirection { get; }"}</code> | Horizontal direction the entrance faces. |
+| <Link id="m-generator-2" /><code><Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" Generator { get; }"}</code> | The generation component in the spawned layer content, or null before `Generate`. |
+| <Link id="m-isgeneratingdynamic" /><code>{"bool IsGeneratingDynamic { get; private set; }"}</code> | True on the server when the layer is being generated for the first time. |
+| <Link id="m-layeridentifier" /><code>{"int LayerIdentifier { get; }"}</code> | The layer number. |
+| <Link id="m-manager" /><code><Link to="/game-api/types/alta-world-generation/cavelayermanager">{"CaveLayerManager"}</Link>{" Manager { get; private set; }"}</code> | The cave layer manager that owns this layer. |
+| <Link id="m-needtogeneratepathfinding" /><code>{"bool NeedToGeneratePathFinding { get; }"}</code> | True until the pathfinding graph has been built. |
+| <Link id="m-portaltransform" /><code>{"Transform PortalTransform { get; private set; }"}</code> | Transform of the culling portal between this layer and the one above. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clientloadingfinished" /><code>{"event Action ClientLoadingFinished"}</code> |  |
-| <Link id="m-exitready" /><code>{"event Action<int, float, Vector2, Vector2> ExitReady"}</code> |  |
-| <Link id="m-hasmodifiedrenderers" /><code>{"event Action hasModifiedRenderers"}</code> |  |
+| <Link id="m-clientloadingfinished" /><code>{"event Action ClientLoadingFinished"}</code> | Raised by `OnClientLoadingFinished`. |
+| <Link id="m-exitready" /><code>{"event Action<int, float, Vector2, Vector2> ExitReady"}</code> | Raised with the layer, the next layer's depth, and the exit position and direction when the exit is placed. |
+| <Link id="m-hasmodifiedrenderers" /><code>{"event Action hasModifiedRenderers"}</code> | Raised when the set of static renderers changes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deregisterrenderers" /><code>{"void DeregisterRenderers(Renderer[] renderers)"}</code> |  |
-| <Link id="m-generate" /><code>{"async Task Generate()"}</code> |  |
-| <Link id="m-generatepathfinding" /><code>{"IEnumerator GeneratePathfinding() (iterator)"}</code> |  |
-| <Link id="m-getidentifier" /><code>{"string GetIdentifier(int layer)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializecavelayer" /><code>{"void InitializeCaveLayer("}<Link to="/game-api/types/alta-world-generation/cavelayermanager">{"CaveLayerManager"}</Link>{" manager, int layerId)"}</code> |  |
-| <Link id="m-onclientloadingfinished" /><code>{"void OnClientLoadingFinished()"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-onexitready" /><code>{"void OnExitReady(Vector2 exit, Vector2 exitDirection)"}</code> |  |
-| <Link id="m-registerportal" /><code>{"void RegisterPortal("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world/icavelayer">{"ICaveLayer"}</Link>{" other)"}</code> |  |
-| <Link id="m-registerrenderers" /><code>{"void RegisterRenderers(Renderer[] renderers)"}</code> |  |
-| <Link id="m-registerterrainrenderer" /><code>{"void RegisterTerrainRenderer(Renderer renderer)"}</code> |  |
-| <Link id="m-setentrance" /><code>{"void SetEntrance(float depth, Vector2 entrance, Vector2 direction)"}</code> |  |
-| <Link id="m-setgeneratorchunk" /><code>{"void SetGeneratorChunk()"}</code> |  |
-| <Link id="m-toggleterrain" /><code>{"void ToggleTerrain(bool isToRenderTerrain)"}</code> |  |
+| <Link id="m-deregisterrenderers" /><code>{"void DeregisterRenderers(Renderer[] renderers)"}</code> | Removes renderers from `AllStaticRenderers`. Does nothing on a headless server. |
+| <Link id="m-generate" /><code>{"async Task Generate()"}</code> | Spawns the layer content prefab once, positions the portal, syncs setup to clients and runs the generator. |
+| <Link id="m-generatepathfinding" /><code>{"IEnumerator GeneratePathfinding() (iterator)"}</code> | Coroutine that scans an A* graph over the layer's bounds, if not already built. |
+| <Link id="m-getidentifier" /><code>{"string GetIdentifier(int layer)"}</code> | Returns the chunk identifier for a layer number, such as "Cave Layer 2". |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the network messages for the layer number and layout. |
+| <Link id="m-initializecavelayer" /><code>{"void InitializeCaveLayer("}<Link to="/game-api/types/alta-world-generation/cavelayermanager">{"CaveLayerManager"}</Link>{" manager, int layerId)"}</code> | Links the streamer to its manager and layer number and sets the chunk's bounds and identifier. |
+| <Link id="m-onclientloadingfinished" /><code>{"void OnClientLoadingFinished()"}</code> | Raises `ClientLoadingFinished`. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the layer number and layout to a joining player. |
+| <Link id="m-onexitready" /><code>{"void OnExitReady(Vector2 exit, Vector2 exitDirection)"}</code> | Called by the generator when the exit is placed; raises `ExitReady` for the layer below. |
+| <Link id="m-registerportal" /><code>{"void RegisterPortal("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world/icavelayer">{"ICaveLayer"}</Link>{" other)"}</code> | Links the portal to the chunk in front of it and its cave layer. |
+| <Link id="m-registerrenderers" /><code>{"void RegisterRenderers(Renderer[] renderers)"}</code> | Adds renderers that sit in the layer's vertical band to `AllStaticRenderers`. Does nothing on a headless server. |
+| <Link id="m-registerterrainrenderer" /><code>{"void RegisterTerrainRenderer(Renderer renderer)"}</code> | Stores the layer's terrain renderer and sets its visibility and Android material. |
+| <Link id="m-setentrance" /><code>{"void SetEntrance(float depth, Vector2 entrance, Vector2 direction)"}</code> | Moves the layer to the given depth and entrance and recentres its bounds. |
+| <Link id="m-setgeneratorchunk" /><code>{"void SetGeneratorChunk()"}</code> | Puts the spawned layer content into this layer's chunk. |
+| <Link id="m-toggleterrain" /><code>{"void ToggleTerrain(bool isToRenderTerrain)"}</code> | Shows or hides the terrain renderer; always shown while the local player is in the chunk. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-finishpositionportal" /><code>{"private void FinishPositionPortal()"}</code> |  |
 | <Link id="m-handlelocalplayer" /><code>{"private void HandleLocalPlayer()"}</code> |  |

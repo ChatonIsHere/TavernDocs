@@ -1,6 +1,6 @@
 ---
 title: "GrassBladeMesh"
-description: "class GrassBladeMesh in Root.Township."
+description: "A ScriptableObject holding one grass blade's mesh data and base colour, used by the grass system."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GrassBladeMesh
 
 A **class** in `Root.Township`, `Alta.Environmental.Vegetation`.
+
+A ScriptableObject holding one grass blade's mesh data and base colour, used by the grass system.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** `ScriptableObject`
@@ -36,11 +38,11 @@ A **class** in `Root.Township`, `Alta.Environmental.Vegetation`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-color" /><code>{"Color Color { get; }"}</code> |  |
-| <Link id="m-isavailable-2" /><code>{"bool IsAvailable { get; set; }"}</code> |  |
-| <Link id="m-maxy" /><code>{"float MaxY { get; }"}</code> |  |
-| <Link id="m-triangles-2" /><code>{"int[] Triangles { get; set; }"}</code> |  |
-| <Link id="m-vertices-2" /><code>{"Vector3[] Vertices { get; set; }"}</code> |  |
+| <Link id="m-color" /><code>{"Color Color { get; }"}</code> | Base colour of the blade. |
+| <Link id="m-isavailable-2" /><code>{"bool IsAvailable { get; set; }"}</code> | Serialized availability flag for this blade mesh. |
+| <Link id="m-maxy" /><code>{"float MaxY { get; }"}</code> | Height of the tallest vertex (at least 0). |
+| <Link id="m-triangles-2" /><code>{"int[] Triangles { get; set; }"}</code> | Triangle indices of the blade mesh. |
+| <Link id="m-vertices-2" /><code>{"Vector3[] Vertices { get; set; }"}</code> | Vertex positions of the blade mesh. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "ServerSelectionMenu"
-description: "class ServerSelectionMenu in Root.Township."
+description: "The main menu server picker: switches between server boards (my servers, open servers and so on), scrolls them by rope or wheel, and joins the selected server."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerSelectionMenu
 
 A **class** in `Root.Township`, no namespace.
+
+The main menu server picker: switches between server boards (my servers, open servers and so on), scrolls them by rope or wheel, and joins the selected server. Sets up once logged in.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`
@@ -45,25 +47,25 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentboard-2" /><code><Link to="/game-api/types/global-s/serverboard">{"ServerBoard"}</Link>{" CurrentBoard { get; }"}</code> |  |
+| <Link id="m-currentboard-2" /><code><Link to="/game-api/types/global-s/serverboard">{"ServerBoard"}</Link>{" CurrentBoard { get; }"}</code> | The board being shown. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-selectedchanged" /><code>{"event "}<Link to="/game-api/types/global-s/selectedelementchanged">{"SelectedElementChanged"}</Link>{" SelectedChanged"}</code> |  |
+| <Link id="m-selectedchanged" /><code>{"event "}<Link to="/game-api/types/global-s/selectedelementchanged">{"SelectedElementChanged"}</Link>{" SelectedChanged"}</code> | Raised when the selected server element changes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disableupdate" /><code>{"void DisableUpdate()"}</code> |  |
-| <Link id="m-joincurrentserver" /><code>{"void JoinCurrentServer("}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" serverElement)"}</code> |  |
-| <Link id="m-refreshserverslist" /><code>{"Task RefreshServersList()"}</code> |  |
-| <Link id="m-resumeupdate" /><code>{"void ResumeUpdate()"}</code> |  |
-| <Link id="m-selectserver" /><code>{"void SelectServer("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server, "}<Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{" board)"}</code> |  |
-| <Link id="m-switchtoboard" /><code>{"void SwitchToBoard(int boardType)"}</code> |  |
-| <Link id="m-switchtoboard-2" /><code>{"void SwitchToBoard("}<Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{" board)"}</code> |  |
+| <Link id="m-disableupdate" /><code>{"void DisableUpdate()"}</code> | Pauses the current board's updates. |
+| <Link id="m-joincurrentserver" /><code>{"void JoinCurrentServer("}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" serverElement)"}</code> | Joins the given element's server through the VR main menu. |
+| <Link id="m-refreshserverslist" /><code>{"Task RefreshServersList()"}</code> | Refreshes the current board's server list. |
+| <Link id="m-resumeupdate" /><code>{"void ResumeUpdate()"}</code> | Resumes the current board's updates. |
+| <Link id="m-selectserver" /><code>{"void SelectServer("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server, "}<Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{" board)"}</code> | Switches to a board and selects a server on it. |
+| <Link id="m-switchtoboard" /><code>{"void SwitchToBoard(int boardType)"}</code> | Shows another board and updates the heading, lever and info board. |
+| <Link id="m-switchtoboard-2" /><code>{"void SwitchToBoard("}<Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{" board)"}</code> | Shows another board and updates the heading, lever and info board. |
 | <Link id="m-checkforempty" /><code>{"private void CheckForEmpty()"}</code> |  |
 | <Link id="m-clear" /><code>{"private void Clear()"}</code> |  |
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "EntitySerializer"
-description: "class EntitySerializer in Root.Township."
+description: "Writes and reads an entity's streamed state: the combined bits of all its INetworkSerialized behaviours."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EntitySerializer
 
 A **class** in `Root.Township`, `Alta.Networking`.
+
+Writes and reads an entity's streamed state: the combined bits of all its `INetworkSerialized` behaviours. The side that owns the state writes it when something changed and resends it a limited number of times. Get it from `NetworkEntity.Serializer`.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Derived types** [`SerializedEnumerable`](/game-api/types/alta-networking/serializedenumerable)
@@ -25,10 +27,10 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-authorityplayer" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" AuthorityPlayer"}</code> |  |
-| <Link id="m-isauthoritative" /><code>{"bool IsAuthoritative"}</code> |  |
-| <Link id="m-prepareduration" /><code>{"static "}<Link to="/game-api/types/alta-networking/accumulativeaveragenumber">{"AccumulativeAverageNumber"}</Link>{" PrepareDuration"}</code> |  |
-| <Link id="m-serializationduration" /><code>{"static "}<Link to="/game-api/types/alta-networking/accumulativeaveragenumber">{"AccumulativeAverageNumber"}</Link>{" SerializationDuration"}</code> |  |
+| <Link id="m-authorityplayer" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" AuthorityPlayer"}</code> | The player who owns the state (their own body), or null. |
+| <Link id="m-isauthoritative" /><code>{"bool IsAuthoritative"}</code> | True if this side writes the state. |
+| <Link id="m-prepareduration" /><code>{"static "}<Link to="/game-api/types/alta-networking/accumulativeaveragenumber">{"AccumulativeAverageNumber"}</Link>{" PrepareDuration"}</code> | Shared timing average for the prepare step. |
+| <Link id="m-serializationduration" /><code>{"static "}<Link to="/game-api/types/alta-networking/accumulativeaveragenumber">{"AccumulativeAverageNumber"}</Link>{" SerializationDuration"}</code> | Shared timing average for the write step. |
 | <Link id="m-behaviours" /><code>{"private "}<Link to="/game-api/types/alta-networking/inetworkserialized">{"INetworkSerialized"}</Link>{"[] behaviours"}</code> |  |
 | <Link id="m-chunker" /><code>{"private "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" chunker"}</code> |  |
 | <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitystreamerdata">{"EntityStreamerData"}</Link>{" data"}</code> |  |
@@ -46,30 +48,30 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-databitcount" /><code>{"uint DataBitCount { get; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"uint Identifier { get; private set; }"}</code> |  |
-| <Link id="m-issending" /><code>{"bool IsSending { get; }"}</code> |  |
+| <Link id="m-databitcount" /><code>{"uint DataBitCount { get; }"}</code> | Size in bits of the last written delta data. |
+| <Link id="m-identifier" /><code>{"uint Identifier { get; private set; }"}</code> | The entity's identifier. |
+| <Link id="m-issending" /><code>{"bool IsSending { get; }"}</code> | True while the entity is enabled and the data has been sent fewer than 30 times since it last changed. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-readentity" /><code>{"static event "}<Link to="/game-api/types/alta-networking/serializedentityhandler">{"SerializedEntityHandler"}</Link>{" ReadEntity"}</code> |  |
-| <Link id="m-wroteentity" /><code>{"static event "}<Link to="/game-api/types/alta-networking/serializedentityhandler">{"SerializedEntityHandler"}</Link>{" WroteEntity"}</code> |  |
+| <Link id="m-readentity" /><code>{"static event "}<Link to="/game-api/types/alta-networking/serializedentityhandler">{"SerializedEntityHandler"}</Link>{" ReadEntity"}</code> | Raised for every entity state read. Called very often. |
+| <Link id="m-wroteentity" /><code>{"static event "}<Link to="/game-api/types/alta-networking/serializedentityhandler">{"SerializedEntityHandler"}</Link>{" WroteEntity"}</code> | Raised for every entity state written. Called very often. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isentityspawnedfor" /><code>{"bool IsEntitySpawnedFor("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-markdataaschanged" /><code>{"void MarkDataAsChanged()"}</code> |  |
-| <Link id="m-readdatafromstream" /><code>{"void ReadDataFromStream("}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" reader, uint messageSize)"}</code> |  |
-| <Link id="m-readfulldatafromstream" /><code>{"void ReadFullDataFromStream("}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" reader, uint messageSize)"}</code> |  |
-| <Link id="m-releasearrays" /><code>{"void ReleaseArrays()"}</code> |  |
-| <Link id="m-serializedata" /><code>{"void SerializeData(bool isOffFrame)"}</code> |  |
-| <Link id="m-serializefulldata" /><code>{"void SerializeFullData()"}</code> |  |
-| <Link id="m-writedataintostream" /><code>{"void WriteDataIntoStream("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" writer)"}</code> |  |
-| <Link id="m-writefulldataintostream" /><code>{"void WriteFullDataIntoStream("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" writer)"}</code> |  |
+| <Link id="m-isentityspawnedfor" /><code>{"bool IsEntitySpawnedFor("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | True if the entity has been spawned for the given player. |
+| <Link id="m-markdataaschanged" /><code>{"void MarkDataAsChanged()"}</code> | Forces the state to be written and sent again. |
+| <Link id="m-readdatafromstream" /><code>{"void ReadDataFromStream("}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" reader, uint messageSize)"}</code> | Reads delta state into the behaviours from a network stream. |
+| <Link id="m-readfulldatafromstream" /><code>{"void ReadFullDataFromStream("}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" reader, uint messageSize)"}</code> | Reads full state into the behaviours from a network stream. |
+| <Link id="m-releasearrays" /><code>{"void ReleaseArrays()"}</code> | Returns the data buffers to the pool. The serializer can't be used after. |
+| <Link id="m-serializedata" /><code>{"void SerializeData(bool isOffFrame)"}</code> | Writes the delta state into the internal buffer if a behaviour reports a change. |
+| <Link id="m-serializefulldata" /><code>{"void SerializeFullData()"}</code> | Writes the full state (for newly spawned players) into the internal buffer. |
+| <Link id="m-writedataintostream" /><code>{"void WriteDataIntoStream("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" writer)"}</code> | Copies the delta buffer into an outgoing stream. |
+| <Link id="m-writefulldataintostream" /><code>{"void WriteFullDataIntoStream("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" writer)"}</code> | Copies the full buffer into an outgoing stream. |
 | <Link id="m-readfromstreaminternal" /><code>{"private void ReadFromStreamInternal("}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" reader, bool isFull, uint messageSize)"}</code> |  |
 | <Link id="m-serializedatainternal" /><code>{"private void SerializeDataInternal(bool isFull, "}<Link to="/game-api/types/alta-networking/entitystreamerdata">{"EntityStreamerData"}</Link>{" data, bool isOffFrame)"}</code> |  |
 | <Link id="m-setupdataarrays" /><code>{"private void SetupDataArrays()"}</code> |  |

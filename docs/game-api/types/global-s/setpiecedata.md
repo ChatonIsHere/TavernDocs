@@ -1,6 +1,6 @@
 ---
 title: "SetPieceData"
-description: "class SetPieceData in Root.Township."
+description: "An asset holding a saved dynamic object (a set piece) that can be spawned whole."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SetPieceData
 
 A **class** in `Root.Township`, no namespace.
+
+An asset holding a saved dynamic object (a set piece) that can be spawned whole. `RepairBox` can spawn one when finished.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`HashedGeneralValue<SetPieceData>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -32,7 +34,7 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dynamicdata-2" /><code><Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" DynamicData { get; set; }"}</code> |  |
+| <Link id="m-dynamicdata-2" /><code><Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" DynamicData { get; set; }"}</code> | The saved object data to spawn from. |
 
 ## Used in
 

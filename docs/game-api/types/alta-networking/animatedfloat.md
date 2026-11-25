@@ -1,6 +1,6 @@
 ---
 title: "AnimatedFloat"
-description: "class AnimatedFloat in Root.Township."
+description: "A synced float parameter on a NetworkAnimator, sent compressed within a range and precision."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AnimatedFloat
 
 A **class** in `Root.Township`, `Alta.Networking.Animation`.
+
+A synced float parameter on a `NetworkAnimator`, sent compressed within a range and precision.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`AnimatedValue<float>`](/game-api/types/alta-networking/animatedvalue-t)
@@ -26,23 +28,23 @@ A **class** in `Root.Township`, `Alta.Networking.Animation`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maximum" /><code>{"protected float maximum"}</code> |  |
-| <Link id="m-minimum" /><code>{"protected float minimum"}</code> |  |
-| <Link id="m-precision" /><code>{"protected float precision"}</code> |  |
+| <Link id="m-maximum" /><code>{"protected float maximum"}</code> | Highest value sent. |
+| <Link id="m-minimum" /><code>{"protected float minimum"}</code> | Lowest value sent. |
+| <Link id="m-precision" /><code>{"protected float precision"}</code> | Step size used to compress the value. |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changedcounter" /><code>{"override int ChangedCounter { get; }"}</code> |  |
+| <Link id="m-changedcounter" /><code>{"override int ChangedCounter { get; }"}</code> | How many syncs a change is sent for: 2 here (the base default is 10). |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize("}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator, int index)"}</code> |  |
-| <Link id="m-serialize" /><code>{"protected override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-update" /><code>{"protected override void Update()"}</code> |  |
+| <Link id="m-initialize" /><code>{"override void Initialize("}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator, int index)"}</code> | Binds to the animator and reads the parameter's current value. |
+| <Link id="m-serialize" /><code>{"protected override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the value within the range; clients apply it. |
+| <Link id="m-update" /><code>{"protected override void Update()"}</code> | Pushes the value to the Unity animator. |
 
 ## Used in
 

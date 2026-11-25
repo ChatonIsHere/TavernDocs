@@ -10,5 +10,5 @@ Every type in `TavernLib.Utils`, from TavernLib's own assembly. See [the overvie
 
 | Type | Kind | Public members | What it is |
 | --- | --- | --- | --- |
-| [`TavernEvents`](/tavernlib-api/types/utils/tavernevents) | static class | 1 | A **static class** in `TavernLib`, `TavernLib.Utils`. |
-| [`TavernEvents.TavernEvent<T>`](/tavernlib-api/types/utils/tavernevents-tavernevent-t) | class | 3 |  |
+| [`TavernEvents`](/tavernlib-api/types/utils/tavernevents) | static class | 1 | TavernLib's static events, which mods subscribe to. Both sides. |
+| [`TavernEvents.TavernEvent<T>`](/tavernlib-api/types/utils/tavernevents-tavernevent-t) | class | 3 | An event mods can subscribe to but only TavernLib can raise. Used for `TavernEvents.SocketCreated` and `Roles.RolesChanged`. |

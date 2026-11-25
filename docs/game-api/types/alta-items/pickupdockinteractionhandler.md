@@ -1,6 +1,6 @@
 ---
 title: "PickupDockInteractionHandler"
-description: "delegate PickupDockInteractionHandler in Root.Township."
+description: "Callback with the interactor, pickup and dock, used by PickupDocker's PreDocked, Docked and Undocked events."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupDockInteractionHandler
 
 A **delegate** in `Root.Township`, `Alta.Inventory`.
+
+Callback with the interactor, pickup and dock, used by `PickupDocker`'s `PreDocked`, `Docked` and `Undocked` events.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `MulticastDelegate`

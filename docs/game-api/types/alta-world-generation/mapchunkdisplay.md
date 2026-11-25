@@ -1,6 +1,6 @@
 ---
 title: "MapChunkDisplay"
-description: "abstract class MapChunkDisplay in Root.Township."
+description: "Base for a component that draws one cave generation plugin's output in one map chunk."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MapChunkDisplay
 
 An **abstract class** in `Root.Township`, `Alta.Caves`.
+
+Base for a component that draws one cave generation plugin's output in one map chunk. Subclasses implement `Initialize` and the `Render` coroutine.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,23 +28,23 @@ An **abstract class** in `Root.Township`, `Alta.Caves`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunk" /><code>{"protected "}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk"}</code> |  |
-| <Link id="m-layer" /><code>{"protected "}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer"}</code> |  |
-| <Link id="m-renderindex" /><code>{"protected int renderIndex"}</code> |  |
+| <Link id="m-chunk" /><code>{"protected "}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk"}</code> | The map chunk being drawn. |
+| <Link id="m-layer" /><code>{"protected "}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer"}</code> | The map chunk layer being drawn. |
+| <Link id="m-renderindex" /><code>{"protected int renderIndex"}</code> | Index of this display in the render order. |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-plugin" /><code><Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" Plugin { get; private set; }"}</code> |  |
+| <Link id="m-plugin" /><code><Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" Plugin { get; private set; }"}</code> | The plugin instance this display renders for. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"virtual void Initialize("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, "}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, int renderIndex)"}</code> |  |
-| <Link id="m-initialize-2" /><code>{"abstract void Initialize()"}</code> |  |
-| <Link id="m-render" /><code>{"abstract IEnumerator Render()"}</code> |  |
+| <Link id="m-initialize" /><code>{"virtual void Initialize("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, "}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, int renderIndex)"}</code> | With arguments: stores the plugin, layer, chunk and render index, then calls the parameterless version for subclass setup. |
+| <Link id="m-initialize-2" /><code>{"abstract void Initialize()"}</code> | With arguments: stores the plugin, layer, chunk and render index, then calls the parameterless version for subclass setup. |
+| <Link id="m-render" /><code>{"abstract IEnumerator Render()"}</code> | Coroutine that builds the display, run step by step by the generator. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "Enchantable"
-description: "On an item. EnchantmentApplication Add(Enchantment), EnchantmentApplication Get(Enchantment). Adds its initial enchantments on the server at spawn."
+description: "Component on an item that holds its enchantments and syncs their trigger and effect messages to clients."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Enchantments`.
 
-On an item. `EnchantmentApplication Add(Enchantment)`, `EnchantmentApplication Get(Enchantment)`. Adds its `initial` enchantments on the server at spawn.
+Component on an item that holds its enchantments and syncs their trigger and effect messages to clients. The server adds the prefab's initial enchantments; loading ignores the saved list.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<EnchantableData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<EnchantableData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -43,18 +43,18 @@ On an item. `EnchantmentApplication Add(Enchantment)`, `EnchantmentApplication G
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pickup-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-pickup-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> | The item's pickup. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-add" /><code><Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" Add("}<Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{" enchantment)"}</code> |  |
-| <Link id="m-get" /><code><Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" Get("}<Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{" enchantment)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-sendeffectmessage" /><code>{"void SendEffectMessage("}<Link to="/game-api/types/alta-crafting/ienchantmenteffectapplication">{"IEnchantmentEffectApplication"}</Link>{" effectApplication)"}</code> |  |
-| <Link id="m-sendtriggermessage" /><code>{"void SendTriggerMessage("}<Link to="/game-api/types/alta-crafting/ienchantmenttriggerapplication">{"IEnchantmentTriggerApplication"}</Link>{" triggerApplication)"}</code> |  |
+| <Link id="m-add" /><code><Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" Add("}<Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{" enchantment)"}</code> | Adds an enchantment and returns its application, or null if the item already has it. |
+| <Link id="m-get" /><code><Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" Get("}<Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{" enchantment)"}</code> | Returns the application of an enchantment on this item, or null. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Creates the enchantment list and the sync message. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: adds the initial enchantments. |
+| <Link id="m-sendeffectmessage" /><code>{"void SendEffectMessage("}<Link to="/game-api/types/alta-crafting/ienchantmenteffectapplication">{"IEnchantmentEffectApplication"}</Link>{" effectApplication)"}</code> | Sends one effect application's message to players in the chunk. |
+| <Link id="m-sendtriggermessage" /><code>{"void SendTriggerMessage("}<Link to="/game-api/types/alta-crafting/ienchantmenttriggerapplication">{"IEnchantmentTriggerApplication"}</Link>{" triggerApplication)"}</code> | Sends one trigger application's message to players in the chunk. |
 | <Link id="m-enchantmentremoved" /><code>{"private void EnchantmentRemoved("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" application)"}</code> |  |
 | <Link id="m-synceffect" /><code>{"private void SyncEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 

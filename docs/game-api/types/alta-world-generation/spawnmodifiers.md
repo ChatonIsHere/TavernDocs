@@ -1,6 +1,6 @@
 ---
 title: "SpawnModifiers"
-description: "class SpawnModifiers in Root.Township."
+description: "Lists of modifiers that forest fill runs on a spawn candidate at each stage (point, point with normal, spawn parameters, spawned entity)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpawnModifiers
 
 A **class** in `Root.Township`, `Alta.Forests`.
+
+Lists of modifiers that forest fill runs on a spawn candidate at each stage (point, point with normal, spawn parameters, spawned entity). Each can adjust the candidate and lower its score.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Derived types** [`PaintModifiers`](/game-api/types/alta-world-generation/paintmodifiers)
@@ -34,11 +36,11 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> |  |
-| <Link id="m-process" /><code>{"bool Process("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, float score, ref float currentScore)"}</code> |  |
-| <Link id="m-process-2" /><code>{"bool Process("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" point, float score, ref float currentScore)"}</code> |  |
-| <Link id="m-process-3" /><code>{"bool Process("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/spawnparameters">{"SpawnParameters"}</Link>{" parameters, float score, ref float currentScore)"}</code> |  |
-| <Link id="m-process-4" /><code>{"bool Process("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, float score, ref float currentScore)"}</code> |  |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | Initializes the point, point normal and spawn parameter modifiers. |
+| <Link id="m-process" /><code>{"bool Process("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, float score, ref float currentScore)"}</code> | Runs this stage's modifiers on the candidate. Returns false once the score drops to the threshold; hands off if a modifier switched the setup's modifiers. |
+| <Link id="m-process-2" /><code>{"bool Process("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" point, float score, ref float currentScore)"}</code> | Runs this stage's modifiers on the candidate. Returns false once the score drops to the threshold; hands off if a modifier switched the setup's modifiers. |
+| <Link id="m-process-3" /><code>{"bool Process("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/spawnparameters">{"SpawnParameters"}</Link>{" parameters, float score, ref float currentScore)"}</code> | Runs this stage's modifiers on the candidate. Returns false once the score drops to the threshold; hands off if a modifier switched the setup's modifiers. |
+| <Link id="m-process-4" /><code>{"bool Process("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, float score, ref float currentScore)"}</code> | Runs this stage's modifiers on the candidate. Returns false once the score drops to the threshold; hands off if a modifier switched the setup's modifiers. |
 
 ## Used in
 

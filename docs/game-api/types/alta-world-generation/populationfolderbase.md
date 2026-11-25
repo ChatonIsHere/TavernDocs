@@ -1,6 +1,6 @@
 ---
 title: "PopulationFolderBase"
-description: "Base for a networked object that owns a population (a group of spawned creatures or objects), and raises inspector events when it starts, dies out or "
+description: "Base for a networked object that owns a population (a group of spawned creatures or objects), and raises inspector events when it starts, dies out or is full."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "DarknessSpawnerSettings"
-description: "class DarknessSpawnerSettings in Root.Township."
+description: "Global settings for spawning creatures in the dark around players."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DarknessSpawnerSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Global settings for spawning creatures in the dark around players. The local client measures screen darkness and asks the server, which spawns near the player.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`GlobalSettings<DarknessSpawnerSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -53,22 +55,22 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colorfilter-2" /><code>{"Vector3 ColorFilter { get; }"}</code> |  |
-| <Link id="m-computeshader-2" /><code>{"ComputeShader ComputeShader { get; }"}</code> |  |
-| <Link id="m-darkdefinition-2" /><code>{"float DarkDefinition { get; }"}</code> |  |
-| <Link id="m-downsamplescale-2" /><code>{"float DownSampleScale { get; }"}</code> |  |
-| <Link id="m-maxtotaldarkness-2" /><code>{"float MaxTotalDarkness { get; }"}</code> |  |
-| <Link id="m-platformlightrangeratio-2" /><code>{"float PlatformLightRangeRatio { get; }"}</code> |  |
-| <Link id="m-readdarknessfrequency-2" /><code>{"float ReadDarknessFrequency { get; }"}</code> |  |
+| <Link id="m-colorfilter-2" /><code>{"Vector3 ColorFilter { get; }"}</code> | Weights for the colour channels when the compute shader measures darkness. |
+| <Link id="m-computeshader-2" /><code>{"ComputeShader ComputeShader { get; }"}</code> | The compute shader that reads screen darkness. |
+| <Link id="m-darkdefinition-2" /><code>{"float DarkDefinition { get; }"}</code> | Brightness below which a pixel counts as dark. |
+| <Link id="m-downsamplescale-2" /><code>{"float DownSampleScale { get; }"}</code> | Fraction of screen resolution the darkness is read at. |
+| <Link id="m-maxtotaldarkness-2" /><code>{"float MaxTotalDarkness { get; }"}</code> | When the measured darkness is above this, the client asks the server to spawn. |
+| <Link id="m-platformlightrangeratio-2" /><code>{"float PlatformLightRangeRatio { get; }"}</code> | Scales light ranges in the platform light darkness reader. |
+| <Link id="m-readdarknessfrequency-2" /><code>{"float ReadDarknessFrequency { get; }"}</code> | Seconds between darkness reads. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawnforplayer" /><code>{"bool SpawnForPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerCharacter)"}</code> |  |
+| <Link id="m-spawnforplayer" /><code>{"bool SpawnForPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerCharacter)"}</code> | Server: raycasts ahead of the player's view and spawns the prefab on suitable surfaces, up to the per-player limit. Returns whether any spawned. |
 | <Link id="m-clearforplayer" /><code>{"private void ClearForPlayer("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-spawnforplayer-2" /><code>{"private IEnumerator SpawnForPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerCharacter, List<"}<Link to="/game-api/types/global-c-d/darknessspawnersettings-spawninstructure">{"DarknessSpawnerSettings.SpawnInstructure"}</Link>{"> spawnPositions) (iterator)"}</code> |  |
+| <Link id="m-spawnforplayer-2" /><code>{"private IEnumerator SpawnForPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerCharacter, List<"}<Link to="/game-api/types/global-c-d/darknessspawnersettings-spawninstructure">{"DarknessSpawnerSettings.SpawnInstructure"}</Link>{"> spawnPositions) (iterator)"}</code> | Server: raycasts ahead of the player's view and spawns the prefab on suitable surfaces, up to the per-player limit. Returns whether any spawned. |
 
 ## Used in
 

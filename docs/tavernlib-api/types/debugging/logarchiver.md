@@ -1,6 +1,6 @@
 ---
 title: "LogArchiver"
-description: "A static class in TavernLib, TavernLib.Debugging."
+description: "Moves the game's unity-log.csv into a numbered file in an Archives folder next to it, keeping 20."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `TavernLib`, `TavernLib.Debugging`.
 
-A **static class** in `TavernLib`, `TavernLib.Debugging`.
+Moves the game's `unity-log.csv` into a numbered file in an `Archives` folder next to it, keeping 20. TavernLib runs it on servers it manages (not with `/launcherauth`).
 
 - **Listed in** [TavernLib.Debugging](/tavernlib-api/types/debugging)
 - **Documented in** [LogArchiver](/tavernlib-api/types/debugging/logarchiver), [Internals](/tavernlib-api/internals)
@@ -29,8 +29,8 @@ A **static class** in `TavernLib`, `TavernLib.Debugging`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-archivelognow" /><code>{"static string ArchiveLogNow()"}</code> |  |
-| <Link id="m-shouldautoarchive" /><code>{"static bool ShouldAutoArchive()"}</code> |  |
+| <Link id="m-archivelognow" /><code>{"static string ArchiveLogNow()"}</code> | Moves the log now, briefly clearing NLog's configuration to free the file. Returns the archive's path, or `null` if nothing was moved. |
+| <Link id="m-shouldautoarchive" /><code>{"static bool ShouldAutoArchive()"}</code> | True when `unity-log.csv` is 10 MB or more. |
 | <Link id="m-findunitylogtarget" /><code>{"private static FileTarget FindUnityLogTarget()"}</code> |  |
 | <Link id="m-renderfilepath" /><code>{"private static string RenderFilePath(FileTarget target)"}</code> |  |
 | <Link id="m-tryparsesequencenumber" /><code>{"private static int? TryParseSequenceNumber(string path, string stem, string ext)"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "SpawnHelper.SpawningCallback"
-description: "delegate SpawnHelper.SpawningCallback in Root.Township."
+description: "Callback used by SpawnHelper.Spawn."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpawnHelper.SpawningCallback
 
 A **delegate** in `Root.Township`, no namespace.
+
+Callback used by `SpawnHelper.Spawn`. One is called just after the entity is created (to position it), the other after server initialization and before it is put in a chunk.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Nested in** [`SpawnHelper`](/game-api/types/global-s/spawnhelper)
@@ -28,7 +30,7 @@ A **delegate** in `Root.Township`, no namespace.
 | --- | --- |
 | <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" networkEntity, AsyncCallback callback, object object)"}</code> |  |
 | <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(IAsyncResult result)"}</code> |  |
-| <Link id="m-invoke" /><code>{"virtual void Invoke("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" networkEntity)"}</code> |  |
+| <Link id="m-invoke" /><code>{"virtual void Invoke("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" networkEntity)"}</code> | Calls the callback with the new entity. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "JsonPropertyFilterAttribute"
-description: "abstract class JsonPropertyFilterAttribute in Root.Township."
+description: "Base of the JsonMin, JsonMax and JsonRange attributes on settings properties, which clamp values when JSON is read or a value is set from the console."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # JsonPropertyFilterAttribute
 
 An **abstract class** in `Root.Township`, `Alta.Utilities`.
+
+Base of the `JsonMin`, `JsonMax` and `JsonRange` attributes on settings properties, which clamp values when JSON is read or a value is set from the console.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** `Attribute`
@@ -26,5 +28,5 @@ An **abstract class** in `Root.Township`, `Alta.Utilities`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"abstract IValueProvider Filter(IValueProvider baseProvider)"}</code> |  |
-| <Link id="m-filtervalue" /><code>{"T FilterValue<T>(T value)"}</code> |  |
+| <Link id="m-filter" /><code>{"abstract IValueProvider Filter(IValueProvider baseProvider)"}</code> | Wraps the JSON value provider so values are clamped. |
+| <Link id="m-filtervalue" /><code>{"T FilterValue<T>(T value)"}</code> | Clamps a value to the attribute's range. The console settings command uses it, but for int settings it throws the clamped result away. |

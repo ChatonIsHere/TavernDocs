@@ -1,6 +1,6 @@
 ---
 title: "PooledObjectDefinition"
-description: "class PooledObjectDefinition in Root.Township."
+description: "A ScriptableObject asset describing an object pool: which PooledObject prefab to reuse and how many to keep."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PooledObjectDefinition
 
 A **class** in `Root.Township`, no namespace.
+
+A ScriptableObject asset describing an object pool: which `PooledObject` prefab to reuse and how many to keep. Call `Get` to take an instance from the pool.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`PooledObjectDefinitionBase`](/game-api/types/global-p/pooledobjectdefinitionbase)
@@ -39,17 +41,17 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializepoolsize" /><code>{"int InitializePoolSize { get; }"}</code> |  |
-| <Link id="m-maximumpoolsize-2" /><code>{"int MaximumPoolSize { get; }"}</code> |  |
-| <Link id="m-pool" /><code><Link to="/game-api/types/global-a-b/basicpooledobjectpool">{"BasicPooledObjectPool"}</Link>{" Pool { get; private set; }"}</code> |  |
-| <Link id="m-prefab-2" /><code><Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" Prefab { get; }"}</code> |  |
+| <Link id="m-initializepoolsize" /><code>{"int InitializePoolSize { get; }"}</code> | How many instances are created up front, inactive, when the pool is made. |
+| <Link id="m-maximumpoolsize-2" /><code>{"int MaximumPoolSize { get; }"}</code> | How many released instances the pool keeps. With limiting on, also the most that can be active at once (the oldest gets recycled). The Android size field is never read. |
+| <Link id="m-pool" /><code><Link to="/game-api/types/global-a-b/basicpooledobjectpool">{"BasicPooledObjectPool"}</Link>{" Pool { get; private set; }"}</code> | The pool, created on first `InitializePool` or `Get`. A max-limit pool if the asset has size limiting on, otherwise a plain pool. |
+| <Link id="m-prefab-2" /><code><Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" Prefab { get; }"}</code> | The `PooledObject` prefab the pool instantiates. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-get" /><code>{"override "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" Get(Vector3 position, Quaternion rotation)"}</code> |  |
-| <Link id="m-initializepool" /><code>{"override void InitializePool()"}</code> |  |
+| <Link id="m-get" /><code>{"override "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" Get(Vector3 position, Quaternion rotation)"}</code> | Takes an instance from the pool (or makes a new one), places it at the given position and rotation and activates it. |
+| <Link id="m-initializepool" /><code>{"override void InitializePool()"}</code> | Creates the pool if it doesn't exist yet. |
 
 ## Used in
 

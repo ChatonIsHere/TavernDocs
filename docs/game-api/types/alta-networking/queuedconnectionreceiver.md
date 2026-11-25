@@ -1,6 +1,6 @@
 ---
 title: "QueuedConnectionReceiver"
-description: "A connection receiver that can hold packets back and process them later, so incoming messages can be spread over frames. Subclasses decide when to que"
+description: "A connection receiver that can hold packets back and process them later, so incoming messages can be spread over frames."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

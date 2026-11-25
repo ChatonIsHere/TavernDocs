@@ -1,6 +1,6 @@
 ---
 title: "ModsList"
-description: "A class in TavernLib, TavernLib.Backend.Server.Configs."
+description: "A modlist file, as /modlist reads it: the mod ids, each optionally pinned to a version."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
-A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
+A modlist file, as `/modlist` reads it: the mod ids, each optionally pinned to a version. Its `repos` and `untracked` keys are not read.
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/tavernlib-api/types/backend-server-configs)
 - **Derived types** [`ModsListConfig`](/tavernlib-api/types/backend-server-configs/modslistconfig)
@@ -28,13 +28,13 @@ A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-mods" /><code>{"List<string> Mods { get; set; }"}</code> |  |
+| <Link id="m-mods" /><code>{"List<string> Mods { get; set; }"}</code> | The entries, each `id` or `id@version`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-parseentry" /><code>{"static ValueTuple<string, string> ParseEntry(string entry)"}</code> |  |
+| <Link id="m-parseentry" /><code>{"static ValueTuple<string, string> ParseEntry(string entry)"}</code> | Splits an entry into the id and the pinned version. A bare `id@` or no `@` means latest (`null`). |
 
 ## Used in
 

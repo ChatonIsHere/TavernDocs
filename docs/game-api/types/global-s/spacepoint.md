@@ -1,6 +1,6 @@
 ---
 title: "SpacePoint"
-description: "class SpacePoint in Root.Township."
+description: "A point in a network of connected points that defines an area attribute, such as darkness or ambience, by weight."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpacePoint
 
 A **class** in `Root.Township`, no namespace.
+
+A point in a network of connected points that defines an area attribute, such as darkness or ambience, by weight.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,7 +28,7 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatemodule" /><code>{"static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> |  |
+| <Link id="m-updatemodule" /><code>{"static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> | Shared update module for space defined attributes, also used by forest atmosphere. |
 | <Link id="m-connectedto" /><code>{"private "}<Link to="/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{"[] connectedTo"}</code> |  |
 | <Link id="m-setweight" /><code>{"private float setWeight"}</code> |  |
 
@@ -34,8 +36,8 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-connectedto-2" /><code><Link to="/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{"[] ConnectedTo { get; }"}</code> |  |
-| <Link id="m-setweight-2" /><code>{"float SetWeight { get; }"}</code> |  |
+| <Link id="m-connectedto-2" /><code><Link to="/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{"[] ConnectedTo { get; }"}</code> | The neighbouring points. Drawn as lines in the editor. |
+| <Link id="m-setweight-2" /><code>{"float SetWeight { get; }"}</code> | The attribute value at this point. |
 
 ## Methods
 

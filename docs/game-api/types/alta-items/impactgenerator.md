@@ -1,6 +1,6 @@
 ---
 title: "ImpactGenerator"
-description: "Base component for the part of an item or creature that deals hits (a blade edge, a point, a creature attack). It holds the damage values and settings"
+description: "Base component for the part of an item or creature that deals hits (a blade edge, a point, a creature attack)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

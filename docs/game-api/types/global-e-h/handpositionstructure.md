@@ -1,6 +1,6 @@
 ---
 title: "HandPositionStructure"
-description: "Base asset for skill inputs triggered by holding a hand in a set position (such as hand to heart) for a time. Subclasses decide what counts as in posi"
+description: "Base asset for skill inputs triggered by holding a hand in a set position (such as hand to heart) for a time."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

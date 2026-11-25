@@ -1,6 +1,6 @@
 ---
 title: "EventPatches"
-description: "A class in TavernLib, TavernLib.Patches."
+description: "The Harmony patch behind TavernEvents.SocketCreated: a postfix on the Alta.Networking.Socket constructor."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Patches`.
 
-A **class** in `TavernLib`, `TavernLib.Patches`.
+The Harmony patch behind `TavernEvents.SocketCreated`: a postfix on the `Alta.Networking.Socket` constructor. Both sides.
 
 - **Listed in** [TavernLib.Patches](/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
@@ -28,4 +28,4 @@ A **class** in `TavernLib`, `TavernLib.Patches`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-socketcreatedevent" /><code>{"static void SocketCreatedEvent()"}</code> |  |
+| <Link id="m-socketcreatedevent" /><code>{"static void SocketCreatedEvent()"}</code> | Postfix on the `Socket` constructor that raises `TavernEvents.SocketCreated` with `Socket.Current`, the socket just made. |

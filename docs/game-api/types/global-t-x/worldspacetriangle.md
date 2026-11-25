@@ -1,6 +1,6 @@
 ---
 title: "WorldSpaceTriangle"
-description: "struct WorldSpaceTriangle in Root.Township."
+description: "Three world positions copied from a HandTriangle's transforms, that can be moved or transformed as one."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WorldSpaceTriangle
 
 A **struct** in `Root.Township`, no namespace.
+
+Three world positions copied from a `HandTriangle`'s transforms, that can be moved or transformed as one.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 
@@ -24,17 +26,17 @@ A **struct** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-a" /><code>{"Vector3 A { get; private set; }"}</code> |  |
-| <Link id="m-b" /><code>{"Vector3 B { get; private set; }"}</code> |  |
-| <Link id="m-c" /><code>{"Vector3 C { get; private set; }"}</code> |  |
+| <Link id="m-a" /><code>{"Vector3 A { get; private set; }"}</code> | First corner. |
+| <Link id="m-b" /><code>{"Vector3 B { get; private set; }"}</code> | Second corner. |
+| <Link id="m-c" /><code>{"Vector3 C { get; private set; }"}</code> | Third corner. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-convert" /><code>{"void Convert(Matrix4x4 conversion)"}</code> |  |
-| <Link id="m-op-addition" /><code>{"static "}<Link to="/game-api/types/global-t-x/worldspacetriangle">{"WorldSpaceTriangle"}</Link>{" op_Addition("}<Link to="/game-api/types/global-t-x/worldspacetriangle">{"WorldSpaceTriangle"}</Link>{" triangle, Vector3 offset)"}</code> |  |
-| <Link id="m-op-subtraction" /><code>{"static "}<Link to="/game-api/types/global-t-x/worldspacetriangle">{"WorldSpaceTriangle"}</Link>{" op_Subtraction("}<Link to="/game-api/types/global-t-x/worldspacetriangle">{"WorldSpaceTriangle"}</Link>{" triangle, Vector3 offset)"}</code> |  |
+| <Link id="m-convert" /><code>{"void Convert(Matrix4x4 conversion)"}</code> | Transforms all three corners by a matrix. |
+| <Link id="m-op-addition" /><code>{"static "}<Link to="/game-api/types/global-t-x/worldspacetriangle">{"WorldSpaceTriangle"}</Link>{" op_Addition("}<Link to="/game-api/types/global-t-x/worldspacetriangle">{"WorldSpaceTriangle"}</Link>{" triangle, Vector3 offset)"}</code> | Returns the triangle moved by an offset. |
+| <Link id="m-op-subtraction" /><code>{"static "}<Link to="/game-api/types/global-t-x/worldspacetriangle">{"WorldSpaceTriangle"}</Link>{" op_Subtraction("}<Link to="/game-api/types/global-t-x/worldspacetriangle">{"WorldSpaceTriangle"}</Link>{" triangle, Vector3 offset)"}</code> | Returns the triangle moved back by an offset. |
 
 ## Used in
 

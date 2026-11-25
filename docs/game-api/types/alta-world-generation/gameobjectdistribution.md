@@ -1,6 +1,6 @@
 ---
 title: "GameObjectDistribution"
-description: "class GameObjectDistribution in Root.Township."
+description: "A weighted distribution of GameObjects used by cave generation, with festivity groups."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GameObjectDistribution
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+A weighted distribution of GameObjects used by cave generation, with festivity groups. A `Distribution` asset.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`Distribution<GameObjectDistribution, GameObject, GameObjectDistribution.Item, GameObjectDistribution.FestivityGroup>`](/game-api/types/alta-world-generation/distribution-tthis-t-titem-tfestivitygroup)
@@ -28,7 +30,7 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migratetostaticenvironmentpiece" /><code>{"static "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" MigrateToStaticEnvironmentPiece<TThis, T, TItem, TFestivityGroup>(TThis old, Func<T, "}<Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{"> migrate)"}</code> |  |
+| <Link id="m-migratetostaticenvironmentpiece" /><code>{"static "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" MigrateToStaticEnvironmentPiece<TThis, T, TItem, TFestivityGroup>(TThis old, Func<T, "}<Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{"> migrate)"}</code> | Stub that returns null in this build. |
 
 ## Used in
 

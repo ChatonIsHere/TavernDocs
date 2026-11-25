@@ -1,6 +1,6 @@
 ---
 title: "NetworkEntityRenderer"
-description: "Base for NLog layout renderers that print something about a NetworkEntity passed as the log message's first parameter (its prefab, parent, owner, iden"
+description: "Base for NLog layout renderers that print something about a NetworkEntity passed as the log message's first parameter (its prefab, parent, owner, identifier..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

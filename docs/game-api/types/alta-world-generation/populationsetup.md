@@ -1,6 +1,6 @@
 ---
 title: "PopulationSetup"
-description: "class PopulationSetup in Root.Township."
+description: "Asset defining a population: how fast it spawns and where its members may be placed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PopulationSetup
 
 A **class** in `Root.Township`, `Alta.Populations`.
+
+Asset defining a population: how fast it spawns and where its members may be placed. Looked up by hash; also used as a fill set when placing members.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`HashedGeneralValue<PopulationSetup>`](/game-api/types/assembly-other/hashedgeneralvalue-t), [`IFillSet`](/game-api/types/alta-world-generation/ifillset)
@@ -37,12 +39,12 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isclearingonunload" /><code>{"bool IsClearingOnUnload { get; }"}</code> |  |
-| <Link id="m-ismoving-2" /><code>{"bool IsMoving { get; }"}</code> |  |
-| <Link id="m-maximumfailscore-2" /><code>{"float MaximumFailScore { get; }"}</code> |  |
-| <Link id="m-minimumfailscore-2" /><code>{"float MinimumFailScore { get; }"}</code> |  |
-| <Link id="m-spawnmodifiers-2" /><code><Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-spawnrate-2" /><code><Link to="/game-api/types/alta-world-generation/spawnrate">{"SpawnRate"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnrate">{"SpawnRate"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-isclearingonunload" /><code>{"bool IsClearingOnUnload { get; }"}</code> | Always false. |
+| <Link id="m-ismoving-2" /><code>{"bool IsMoving { get; }"}</code> | Whether the members move around (turn on for creatures). |
+| <Link id="m-maximumfailscore-2" /><code>{"float MaximumFailScore { get; }"}</code> | Top of the random score range a spot must beat when placing. |
+| <Link id="m-minimumfailscore-2" /><code>{"float MinimumFailScore { get; }"}</code> | Bottom of the random score range a spot must beat when placing. |
+| <Link id="m-spawnmodifiers-2" /><code><Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> | Rules that score and adjust spawn spots. The first (point) modifiers are not used. |
+| <Link id="m-spawnrate-2" /><code><Link to="/game-api/types/alta-world-generation/spawnrate">{"SpawnRate"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnrate">{"SpawnRate"}</Link>{" { get; }"}</code> | Spawn rate settings: density, respawn interval, growth and emerge rate. |
 
 ## Used in
 

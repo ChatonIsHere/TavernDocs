@@ -1,6 +1,6 @@
 ---
 title: "GlobalPopulationDefinition"
-description: "Server-only asset for a world-wide population: spawns its prefabs in random location chunks weighted by biome attributes, up to a cap. Also the global"
+description: "Server-only asset for a world-wide population: spawns its prefabs in random location chunks weighted by biome attributes, up to a cap."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

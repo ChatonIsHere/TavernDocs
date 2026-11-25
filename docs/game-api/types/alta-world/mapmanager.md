@@ -1,6 +1,6 @@
 ---
 title: "MapManager"
-description: "Scene behaviour, static MapManager Instance. Holds each player's PlayerMapManager, or one shared one if IsUsingSharedMap."
+description: "Scene behaviour, static MapManager Instance."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

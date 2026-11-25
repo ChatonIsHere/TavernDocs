@@ -1,6 +1,6 @@
 ---
 title: "TerrainAccess"
-description: "class TerrainAccess in Root.Township."
+description: "A copied rectangle of a terrain's heightmap and splat (paint) map that can be edited and written back."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TerrainAccess
 
 A **class** in `Root.Township`, no namespace.
+
+A copied rectangle of a terrain's heightmap and splat (paint) map that can be edited and written back. Made by `TerrainInfo` for forest generation and cached to disk as an `ICacheable`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** [`ICacheable`](/game-api/types/alta-world/icacheable)
@@ -32,32 +34,32 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-heights" /><code>{"float[,] Heights { get; private set; }"}</code> |  |
-| <Link id="m-heightsheight" /><code>{"int HeightsHeight { get; private set; }"}</code> |  |
-| <Link id="m-heightswidth" /><code>{"int HeightsWidth { get; private set; }"}</code> |  |
-| <Link id="m-offset" /><code>{"Vector3 Offset { get; private set; }"}</code> |  |
-| <Link id="m-scale" /><code>{"Vector3 Scale { get; private set; }"}</code> |  |
-| <Link id="m-splat" /><code><Link to="/game-api/types/alta-world-generation/splatdata">{"SplatData"}</Link>{"[,] Splat { get; private set; }"}</code> |  |
-| <Link id="m-splatheight" /><code>{"int SplatHeight { get; private set; }"}</code> |  |
-| <Link id="m-splatwidth" /><code>{"int SplatWidth { get; private set; }"}</code> |  |
-| <Link id="m-terrain" /><code><Link to="/game-api/types/global-t-x/terraininfo">{"TerrainInfo"}</Link>{" Terrain { get; }"}</code> |  |
-| <Link id="m-version" /><code>{"uint Version { get; }"}</code> |  |
-| <Link id="m-x" /><code>{"int X { get; private set; }"}</code> |  |
-| <Link id="m-y" /><code>{"int Y { get; private set; }"}</code> |  |
+| <Link id="m-heights" /><code>{"float[,] Heights { get; private set; }"}</code> | The copied heights, indexed `[row, column]` like Unity's `GetHeights`. |
+| <Link id="m-heightsheight" /><code>{"int HeightsHeight { get; private set; }"}</code> | Number of height rows in the region. |
+| <Link id="m-heightswidth" /><code>{"int HeightsWidth { get; private set; }"}</code> | Number of height columns in the region. |
+| <Link id="m-offset" /><code>{"Vector3 Offset { get; private set; }"}</code> | World offset of the region's corner. |
+| <Link id="m-scale" /><code>{"Vector3 Scale { get; private set; }"}</code> | The terrain's heightmap scale. |
+| <Link id="m-splat" /><code><Link to="/game-api/types/alta-world-generation/splatdata">{"SplatData"}</Link>{"[,] Splat { get; private set; }"}</code> | Splat cells for the region, one per two height samples, or null if not requested. |
+| <Link id="m-splatheight" /><code>{"int SplatHeight { get; private set; }"}</code> | Splat rows in the region. |
+| <Link id="m-splatwidth" /><code>{"int SplatWidth { get; private set; }"}</code> | Splat columns in the region. |
+| <Link id="m-terrain" /><code><Link to="/game-api/types/global-t-x/terraininfo">{"TerrainInfo"}</Link>{" Terrain { get; }"}</code> | The terrain this region was taken from. |
+| <Link id="m-version" /><code>{"uint Version { get; }"}</code> | Cache format version (1). |
+| <Link id="m-x" /><code>{"int X { get; private set; }"}</code> | Heightmap X of the region's corner. |
+| <Link id="m-y" /><code>{"int Y { get; private set; }"}</code> | Heightmap Y of the region's corner. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applyheights" /><code>{"void ApplyHeights()"}</code> |  |
-| <Link id="m-applysplat" /><code>{"void ApplySplat()"}</code> |  |
-| <Link id="m-applyto" /><code>{"void ApplyTo("}<Link to="/game-api/types/global-t-x/terraininfo">{"TerrainInfo"}</Link>{" other)"}</code> |  |
-| <Link id="m-fillsplat" /><code>{"void FillSplat("}<Link to="/game-api/types/alta-world-generation/splatdata">{"SplatData"}</Link>{" splatData)"}</code> |  |
-| <Link id="m-getaverage" /><code>{"float GetAverage(int x, int y)"}</code> |  |
-| <Link id="m-getaverage-2" /><code>{"static float GetAverage(int x, int y, float[,] customSource)"}</code> |  |
-| <Link id="m-getmaxdifference" /><code>{"float GetMaxDifference(int x, int y)"}</code> |  |
-| <Link id="m-getmaxdifference-2" /><code>{"static float GetMaxDifference(int x, int y, float[,] customSource)"}</code> |  |
-| <Link id="m-samplesplat" /><code>{"void SampleSplat()"}</code> |  |
+| <Link id="m-applyheights" /><code>{"void ApplyHeights()"}</code> | Writes `Heights` back to the terrain at `X`, `Y`. |
+| <Link id="m-applysplat" /><code>{"void ApplySplat()"}</code> | Writes `Splat` back into the terrain's splat texture and applies it. |
+| <Link id="m-applyto" /><code>{"void ApplyTo("}<Link to="/game-api/types/global-t-x/terraininfo">{"TerrainInfo"}</Link>{" other)"}</code> | Writes the same heights and splat region onto another terrain. |
+| <Link id="m-fillsplat" /><code>{"void FillSplat("}<Link to="/game-api/types/alta-world-generation/splatdata">{"SplatData"}</Link>{" splatData)"}</code> | Sets every splat cell to one value. |
+| <Link id="m-getaverage" /><code>{"float GetAverage(int x, int y)"}</code> | Average of the four heights around a splat cell. The static overload reads a given array instead. |
+| <Link id="m-getaverage-2" /><code>{"static float GetAverage(int x, int y, float[,] customSource)"}</code> | Average of the four heights around a splat cell. The static overload reads a given array instead. |
+| <Link id="m-getmaxdifference" /><code>{"float GetMaxDifference(int x, int y)"}</code> | Highest minus lowest of the four heights around a splat cell. The static overload reads a given array instead. |
+| <Link id="m-getmaxdifference-2" /><code>{"static float GetMaxDifference(int x, int y, float[,] customSource)"}</code> | Highest minus lowest of the four heights around a splat cell. The static overload reads a given array instead. |
+| <Link id="m-samplesplat" /><code>{"void SampleSplat()"}</code> | Reads the terrain's splat texture into `Splat`. |
 | <Link id="m-serializeasync" /><code>{"private Task Alta.Static.ICacheable.SerializeAsync(uint version, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 
 ## Used in

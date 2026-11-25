@@ -1,6 +1,6 @@
 ---
 title: "WebSocketCommandHandler"
-description: "One per websocket connection. WebSocketRemoteConsole.Handlers (a static list) holds every one, logged in or not."
+description: "One per websocket connection."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

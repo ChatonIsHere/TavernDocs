@@ -1,6 +1,6 @@
 ---
 title: "DocumentModule"
-description: "A class in TavernLib, TavernLib.Debugging."
+description: "TavernLib's document console module: writes an HTML page of every console command into Documentation.zip and opens it."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Debugging`.
 
-A **class** in `TavernLib`, `TavernLib.Debugging`.
+TavernLib's `document` console module: writes an HTML page of every console command into `Documentation.zip` and opens it. The first run downloads the page template from Alta's cloud storage. Its command is private.
 
 - **Listed in** [TavernLib.Debugging](/tavernlib-api/types/debugging)
 - **Attributes** `Module`

@@ -1,6 +1,6 @@
 ---
 title: "ConnectionChannel"
-description: "The channels come from GlobalSettings<NetworkingSettings>.Instance.Channels; each connection has one outgoing queue per channel."
+description: "A ScriptableObject that defines a network message channel: reliable or not, quality of service, and how clients queue what they receive."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Networking`.
 
-The channels come from `GlobalSettings<NetworkingSettings>.Instance.Channels`; each connection has one outgoing queue per channel.
+A ScriptableObject that defines a network message channel: reliable or not, quality of service, and how clients queue what they receive.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `ScriptableObject`
@@ -39,18 +39,18 @@ The channels come from `GlobalSettings<NetworkingSettings>.Instance.Channels`; e
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-identifier" /><code>{"int Identifier { get; private set; }"}</code> |  |
-| <Link id="m-isreliable-2" /><code>{"bool IsReliable { get; }"}</code> |  |
-| <Link id="m-maximumsendinterval-2" /><code>{"float MaximumSendInterval { get; }"}</code> |  |
-| <Link id="m-qualityofservice-2" /><code>{"QosType QualityOfService { get; }"}</code> |  |
-| <Link id="m-transportchannel" /><code>{"int TransportChannel { get; protected set; }"}</code> |  |
+| <Link id="m-identifier" /><code>{"int Identifier { get; private set; }"}</code> | Index given to the channel by `Initialize`. |
+| <Link id="m-isreliable-2" /><code>{"bool IsReliable { get; }"}</code> | Whether messages on this channel are reliable. |
+| <Link id="m-maximumsendinterval-2" /><code>{"float MaximumSendInterval { get; }"}</code> | Longest time in seconds between sends on this channel (default 0.03). |
+| <Link id="m-qualityofservice-2" /><code>{"QosType QualityOfService { get; }"}</code> | The Unity networking QoS type set on the asset. |
+| <Link id="m-transportchannel" /><code>{"int TransportChannel { get; protected set; }"}</code> | The transport channel used: 0 for reliable, 1 for unreliable. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createconnectionreceiver" /><code>{"virtual "}<Link to="/game-api/types/alta-networking/connectionreceiver">{"ConnectionReceiver"}</Link>{" CreateConnectionReceiver("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |  |
-| <Link id="m-initialize" /><code>{"void Initialize(int identifier)"}</code> |  |
+| <Link id="m-createconnectionreceiver" /><code>{"virtual "}<Link to="/game-api/types/alta-networking/connectionreceiver">{"ConnectionReceiver"}</Link>{" CreateConnectionReceiver("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | Makes the receiver for a connection. The server always uses a normal receiver; clients use the timed, counted or normal type set on the asset. |
+| <Link id="m-initialize" /><code>{"void Initialize(int identifier)"}</code> | Sets the channel's identifier and picks the transport channel (0 for reliable, 1 for unreliable). |
 
 ## Used in
 

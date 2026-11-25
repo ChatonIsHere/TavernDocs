@@ -1,6 +1,6 @@
 ---
 title: "AltaEvent<T, UnityEventT>"
-description: "class AltaEvent<T, UnityEventT> in Root.Township."
+description: "A serializable event with one argument that fires both an inspector UnityEvent and a C# event."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaEvent&lt;T, UnityEventT&gt;
 
 A **class** in `Root.Township`, no namespace.
+
+A serializable event with one argument that fires both an inspector UnityEvent and a C# event. Exceptions in either are caught and logged, so one bad handler does not stop the other side.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`IAltaEvent<T>`](/game-api/types/global-i-l/ialtaevent-t), [`IAltaEventValidation`](/game-api/types/global-i-l/ialtaeventvalidation)
@@ -33,19 +35,19 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-haslisteners" /><code>{"bool HasListeners { get; }"}</code> |  |
+| <Link id="m-haslisteners" /><code>{"bool HasListeners { get; }"}</code> | True if the inspector UnityEvent has persistent listeners. C# handlers added with `+=` do not count. |
 | <Link id="m-ialtaeventvalidation-eventbase" /><code>{"private UnityEventBase IAltaEventValidation.EventBase { get; }"}</code> |  |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoked" /><code>{"event Action<T> Invoked"}</code> |  |
+| <Link id="m-invoked" /><code>{"event Action<T> Invoked"}</code> | The C# side of the event. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke(T argument)"}</code> |  |
-| <Link id="m-op-addition" /><code>{"static "}<Link to="/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> op_Addition("}<Link to="/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> altaEvent, Action<T> eventHandler)"}</code> |  |
-| <Link id="m-op-subtraction" /><code>{"static "}<Link to="/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> op_Subtraction("}<Link to="/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> altaEvent, Action<T> eventHandler)"}</code> |  |
+| <Link id="m-invoke" /><code>{"void Invoke(T argument)"}</code> | Fires the inspector event, then the C# `Invoked` event, logging any exception from each. |
+| <Link id="m-op-addition" /><code>{"static "}<Link to="/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> op_Addition("}<Link to="/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> altaEvent, Action<T> eventHandler)"}</code> | `+` adds a C# handler to `Invoked`. |
+| <Link id="m-op-subtraction" /><code>{"static "}<Link to="/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> op_Subtraction("}<Link to="/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> altaEvent, Action<T> eventHandler)"}</code> | `-` removes a C# handler from `Invoked`. |

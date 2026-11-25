@@ -1,6 +1,6 @@
 ---
 title: "ArmorDefinition"
-description: "class ArmorDefinition in Root.Township."
+description: "Armour asset: damage multipliers per attack type and a conductivity multiplier."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ArmorDefinition
 
 A **class** in `Root.Township`, `Alta.Impact`.
+
+Armour asset: damage multipliers per attack type and a conductivity multiplier.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `ScriptableObject`
@@ -35,13 +37,13 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-conductivitymultiplier-2" /><code>{"float ConductivityMultiplier { get; }"}</code> |  |
+| <Link id="m-conductivitymultiplier-2" /><code>{"float ConductivityMultiplier { get; }"}</code> | Multiplier for conductivity. Defaults to 1. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getmultiplier" /><code>{"float GetMultiplier("}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" damageType)"}</code> |  |
+| <Link id="m-getmultiplier" /><code>{"float GetMultiplier("}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" damageType)"}</code> | Damage multiplier for an impact type, or 1 if the armour has none for it. |
 
 ## Used in
 

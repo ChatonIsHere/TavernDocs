@@ -1,6 +1,6 @@
 ---
 title: "Element"
-description: "class Element in Root.Township."
+description: "A cave generation element asset: a map chunk display prefab chosen by how well it suits a set of attributes, plus named variables."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Element
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+A cave generation element asset: a map chunk display prefab chosen by how well it suits a set of attributes, plus named variables.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`GeneralValue`](/game-api/types/assembly-other/generalvalue), `ISerializationCallbackReceiver`
@@ -37,14 +39,14 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-prefab-2" /><code><Link to="/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{" Prefab { get; }"}</code> |  |
-| <Link id="m-variables-2" /><code>{"Dictionary<string, "}<Link to="/game-api/types/assembly-other/generalvalue">{"GeneralValue"}</Link>{"> Variables { get; }"}</code> |  |
+| <Link id="m-prefab-2" /><code><Link to="/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{" Prefab { get; }"}</code> | The map chunk display prefab for this element. |
+| <Link id="m-variables-2" /><code>{"Dictionary<string, "}<Link to="/game-api/types/assembly-other/generalvalue">{"GeneralValue"}</Link>{"> Variables { get; }"}</code> | Named values set on the element. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getefficiency" /><code>{"float GetEfficiency("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes)"}</code> |  |
+| <Link id="m-getefficiency" /><code>{"float GetEfficiency("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes)"}</code> | How well this element suits the given attributes, from its weighting curves. |
 | <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> |  |
 | <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> |  |
 

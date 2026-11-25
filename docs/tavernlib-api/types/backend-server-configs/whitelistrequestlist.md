@@ -1,6 +1,6 @@
 ---
 title: "WhitelistRequestList"
-description: "A class in TavernLib, TavernLib.Backend.Server.Configs."
+description: "The contents of whitelist_requests.json: players who asked to be whitelisted from the launcher."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
-A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
+The contents of `whitelist_requests.json`: players who asked to be whitelisted from the launcher.
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/tavernlib-api/types/backend-server-configs)
 - **Derived types** [`WhitelistRequestsConfigFile`](/tavernlib-api/types/backend-server-configs/whitelistrequestsconfigfile)
@@ -29,5 +29,5 @@ A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-requests" /><code>{"List<"}<Link to="/tavernlib-api/types/backend-server-configs/whitelistrequestlist-whitelistrequest">{"WhitelistRequestList.WhitelistRequest"}</Link>{"> Requests { get; set; }"}</code> |  |
+| <Link id="m-requests" /><code>{"List<"}<Link to="/tavernlib-api/types/backend-server-configs/whitelistrequestlist-whitelistrequest">{"WhitelistRequestList.WhitelistRequest"}</Link>{"> Requests { get; set; }"}</code> | The pending applications. At most 3 per address and 100 in all are taken. |
 | <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "TimedActionComponent"
-description: "abstract class TimedActionComponent in Root.Township."
+description: "Base for a creature action component that runs for a set duration."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TimedActionComponent
 
 An **abstract class** in `Root.Township`, `Alta.Intelligence`.
+
+Base for a creature action component that runs for a set duration.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`ActionComponent`](/game-api/types/alta-intelligence/actioncomponent)
@@ -32,4 +34,4 @@ An **abstract class** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> |  |
+| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> | How long the action runs, in seconds probably. 5 by default. |

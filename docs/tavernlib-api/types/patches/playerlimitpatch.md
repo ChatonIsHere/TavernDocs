@@ -1,6 +1,6 @@
 ---
 title: "PlayerLimitPatch"
-description: "A class in TavernLib, TavernLib.Patches."
+description: "Postfixes the ServerHandler.PlayerLimit getter so the limit comes from server_settings.json."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Patches`.
 
-A **class** in `TavernLib`, `TavernLib.Patches`.
+Postfixes the `ServerHandler.PlayerLimit` getter so the limit comes from `server_settings.json`. Server.
 
 - **Listed in** [TavernLib.Patches](/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
@@ -28,4 +28,4 @@ A **class** in `TavernLib`, `TavernLib.Patches`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setplayerlimit" /><code>{"static void SetPlayerLimit(ref int __result)"}</code> |  |
+| <Link id="m-setplayerlimit" /><code>{"static void SetPlayerLimit(ref int __result)"}</code> | Returns the last-read server settings' `PlayerLimit`, or `DefaultMaxPlayers` if none were read. Needs `TavernManager` registered. |

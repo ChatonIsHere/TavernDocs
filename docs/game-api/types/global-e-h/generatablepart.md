@@ -1,6 +1,6 @@
 ---
 title: "GeneratablePart"
-description: "abstract class GeneratablePart in Root.Township."
+description: "Base for parts of a GenerationCore (a procedurally placed static piece) that adjust or add to it when it generates, such as aligning to a path or the..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GeneratablePart
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for parts of a `GenerationCore` (a procedurally placed static piece) that adjust or add to it when it generates, such as aligning to a path or the terrain slope.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,8 +28,8 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generatedynamic" /><code>{"virtual void GenerateDynamic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> |  |
-| <Link id="m-generatestatic" /><code>{"virtual void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> |  |
+| <Link id="m-generatedynamic" /><code>{"virtual void GenerateDynamic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> | Called after `GenerateStatic`, only when the spawn data is generating (first time). Use it to make saved, dynamic content. |
+| <Link id="m-generatestatic" /><code>{"virtual void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> | Called every time the piece generates, with whether terrain may be changed. Use it for the parts rebuilt on each load. |
 
 ## Used in
 

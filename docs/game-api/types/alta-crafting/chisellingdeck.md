@@ -1,6 +1,6 @@
 ---
 title: "ChisellingDeck"
-description: "The carpentry bench: holds a timber block whose size grows as wood is docked into it, spawns the matching block prefab and syncs which block is curren"
+description: "The carpentry bench: holds a timber block whose size grows as wood is docked into it, spawns the matching block prefab and syncs which block is current."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

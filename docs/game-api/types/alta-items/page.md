@@ -1,6 +1,6 @@
 ---
 title: "Page"
-description: "class Page in Root.Township."
+description: "Asset for a fixed (hand-made) page, such as a recipe or lore page, with its glyph layout."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Page
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+Asset for a fixed (hand-made) page, such as a recipe or lore page, with its glyph layout. Served by the static page provider.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`SimpleHashedGeneralValue<Page>`](/game-api/types/alta-utilities/simplehashedgeneralvalue-t), [`IPageBasis`](/game-api/types/alta-items/ipagebasis)
@@ -28,8 +30,8 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pixelsize" /><code>{"static readonly Vector2 PixelSize"}</code> |  |
-| <Link id="m-sizeratio" /><code>{"static readonly float SizeRatio"}</code> |  |
+| <Link id="m-pixelsize" /><code>{"static readonly Vector2 PixelSize"}</code> | Page size in pixels: 640 by 768. |
+| <Link id="m-sizeratio" /><code>{"static readonly float SizeRatio"}</code> | Height divided by width of a page. |
 | <Link id="m-components" /><code>{"private "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{"[] components"}</code> |  |
 | <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data"}</code> |  |
 
@@ -37,15 +39,15 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-components-2" /><code><Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{"[] Components { get; }"}</code> |  |
-| <Link id="m-data-2" /><code><Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" Data { get; }"}</code> |  |
+| <Link id="m-components-2" /><code><Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{"[] Components { get; }"}</code> | Hashed assets the page refers to. |
+| <Link id="m-data-2" /><code><Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" Data { get; }"}</code> | The page's layout data, linked back to this asset before it's returned. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gethash" /><code>{"uint GetHash()"}</code> |  |
-| <Link id="m-getproviderid" /><code>{"int GetProviderID(int preferredProvider)"}</code> |  |
+| <Link id="m-gethash" /><code>{"uint GetHash()"}</code> | The asset's hash. |
+| <Link id="m-getproviderid" /><code>{"int GetProviderID(int preferredProvider)"}</code> | Always the static page provider's id, whatever is preferred. |
 | <Link id="m-createpage" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" Alta.Pages.IPageBasis.CreatePage(int preferredProvider)"}</code> |  |
 
 ## Used in

@@ -1,6 +1,6 @@
 ---
 title: "DestroyByTime"
-description: "class DestroyByTime in Root.Township."
+description: "A pooled object that releases itself back to its pool a set time after it is requested."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DestroyByTime
 
 A **class** in `Root.Township`, no namespace.
+
+A pooled object that releases itself back to its pool a set time after it is requested. Used for short-lived effects.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`PooledObject`](/game-api/types/global-p/pooledobject)
@@ -33,14 +35,14 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-time-2" /><code>{"float Time { get; set; }"}</code> |  |
+| <Link id="m-time-2" /><code>{"float Time { get; set; }"}</code> | Seconds before release. Setting it restarts the timer. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-release" /><code>{"override void Release()"}</code> |  |
-| <Link id="m-resetrun" /><code>{"override void ResetRun()"}</code> |  |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
-| <Link id="m-destroy" /><code>{"protected virtual IEnumerator Destroy() (iterator)"}</code> |  |
-| <Link id="m-startruning" /><code>{"protected void StartRuning("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |  |
+| <Link id="m-release" /><code>{"override void Release()"}</code> | Returns the object to the pool if not already released. |
+| <Link id="m-resetrun" /><code>{"override void ResetRun()"}</code> | Resets the object and restarts the timer. |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Starts the timer each time the object is taken from the pool. |
+| <Link id="m-destroy" /><code>{"protected virtual IEnumerator Destroy() (iterator)"}</code> | Coroutine that waits `Time` seconds then releases the object. |
+| <Link id="m-startruning" /><code>{"protected void StartRuning("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | Restarts the release timer. |

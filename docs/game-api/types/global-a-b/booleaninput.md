@@ -1,6 +1,6 @@
 ---
 title: "BooleanInput"
-description: "class BooleanInput in Root.Township."
+description: "An on or off controller input value (a button), usable directly as a bool."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BooleanInput
 
 A **class** in `Root.Township`, no namespace.
+
+An on or off controller input value (a button), usable directly as a `bool`.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`InputSource`](/game-api/types/global-i-l/inputsource)
@@ -25,9 +27,9 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-op-explicit" /><code>{"static "}<Link to="/game-api/types/global-a-b/booleaninput">{"BooleanInput"}</Link>{" op_Explicit(bool value)"}</code> |  |
-| <Link id="m-op-implicit" /><code>{"static bool op_Implicit("}<Link to="/game-api/types/global-a-b/booleaninput">{"BooleanInput"}</Link>{" input)"}</code> |  |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-op-explicit" /><code>{"static "}<Link to="/game-api/types/global-a-b/booleaninput">{"BooleanInput"}</Link>{" op_Explicit(bool value)"}</code> | Makes a `BooleanInput` with the given state. |
+| <Link id="m-op-implicit" /><code>{"static bool op_Implicit("}<Link to="/game-api/types/global-a-b/booleaninput">{"BooleanInput"}</Link>{" input)"}</code> | Converts to `bool`: the current state. |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the state as one bool. |
 
 ## Used in
 

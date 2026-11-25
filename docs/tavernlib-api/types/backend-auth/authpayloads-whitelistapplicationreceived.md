@@ -1,6 +1,6 @@
 ---
 title: "AuthPayloads.WhitelistApplicationReceived"
-description: "A struct in TavernLib, TavernLib.Backend.Auth."
+description: "Status whitelist_application_received, with already_pending true when the same name and address had already applied."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `TavernLib`, `TavernLib.Backend.Auth`.
 
-A **struct** in `TavernLib`, `TavernLib.Backend.Auth`.
+Status `whitelist_application_received`, with `already_pending` true when the same name and address had already applied.
 
 - **Listed in** [TavernLib.Backend.Auth](/tavernlib-api/types/backend-auth)
 - **Nested in** [`AuthPayloads`](/tavernlib-api/types/backend-auth/authpayloads)

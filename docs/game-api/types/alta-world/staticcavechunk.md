@@ -1,6 +1,6 @@
 ---
 title: "StaticCaveChunk"
-description: "A hand-built cave layer placed under a cave entrance by the CaveLayerManager. Positions itself under the entrance, links its culling portal, and on th"
+description: "A hand-built cave layer placed under a cave entrance by the CaveLayerManager."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

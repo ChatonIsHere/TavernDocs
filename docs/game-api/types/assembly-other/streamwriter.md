@@ -1,6 +1,6 @@
 ---
 title: "StreamWriter"
-description: "The writing side of the game's bit stream, backed by a BitWriter over a uint buffer. Network messages and saves are written with it."
+description: "The writing side of the game's bit stream, backed by a BitWriter over a uint buffer."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "BlockableCamera"
-description: "abstract class BlockableCamera in Root.Township."
+description: "Base for a hand camera view that switches its camera off while something is in the way (a sphere or capsule check, in the subclasses)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BlockableCamera
 
 An **abstract class** in `Root.Township`, `Alta.ScreenshotCamera`.
+
+Base for a hand camera view that switches its camera off while something is in the way (a sphere or capsule check, in the subclasses). Client side.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** `MonoBehaviour`
@@ -34,18 +36,18 @@ An **abstract class** in `Root.Township`, `Alta.ScreenshotCamera`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isblocked" /><code>{"bool IsBlocked { get; private set; }"}</code> |  |
-| <Link id="m-postprocesslayer-2" /><code>{"PostProcessLayer PostProcessLayer { get; }"}</code> |  |
-| <Link id="m-targetcamera-2" /><code>{"Camera TargetCamera { get; }"}</code> |  |
-| <Link id="m-layermask" /><code>{"protected LayerMask LayerMask { get; }"}</code> |  |
+| <Link id="m-isblocked" /><code>{"bool IsBlocked { get; private set; }"}</code> | True while the camera is blocked and turned off. |
+| <Link id="m-postprocesslayer-2" /><code>{"PostProcessLayer PostProcessLayer { get; }"}</code> | The camera's post processing layer. |
+| <Link id="m-targetcamera-2" /><code>{"Camera TargetCamera { get; }"}</code> | The camera being switched. |
+| <Link id="m-layermask" /><code>{"protected LayerMask LayerMask { get; }"}</code> | Layers that block the camera, from the hand camera settings. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setenabled" /><code>{"void SetEnabled(bool isEnabled)"}</code> |  |
-| <Link id="m-updateblock" /><code>{"void UpdateBlock()"}</code> |  |
-| <Link id="m-updateblockinternal" /><code>{"protected abstract bool UpdateBlockInternal()"}</code> |  |
+| <Link id="m-setenabled" /><code>{"void SetEnabled(bool isEnabled)"}</code> | Turns the camera off, or on if nothing blocks it. |
+| <Link id="m-updateblock" /><code>{"void UpdateBlock()"}</code> | Checks for blocking and turns the camera on or off when that changes. |
+| <Link id="m-updateblockinternal" /><code>{"protected abstract bool UpdateBlockInternal()"}</code> | Returns true if something blocks the camera now. |
 
 ## Used in
 

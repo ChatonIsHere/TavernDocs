@@ -1,6 +1,6 @@
 ---
 title: "Result"
-description: "class Result in Root.Township."
+description: "One answer to a creature AI logic query: the term bindings that make it true and its weight."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Result
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+One answer to a creature AI logic query: the term bindings that make it true and its weight.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 
@@ -25,14 +27,14 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bindings" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"> Bindings { get; private set; }"}</code> |  |
-| <Link id="m-weighting" /><code>{"float Weighting { get; set; }"}</code> |  |
+| <Link id="m-bindings" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"> Bindings { get; private set; }"}</code> | Which variable terms were bound to which values. |
+| <Link id="m-weighting" /><code>{"float Weighting { get; set; }"}</code> | How strong this answer is. 1 by default. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Text listing the weight and each binding. |
 
 ## Used in
 

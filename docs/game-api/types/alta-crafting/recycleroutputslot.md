@@ -1,6 +1,6 @@
 ---
 title: "RecyclerOutputSlot"
-description: "Collects recycled metal per material and spawns the material's source item (SourceMaterialHash) from it."
+description: "One output slot of the recycler."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Blacksmithing`.
 
-Collects recycled metal per material and spawns the material's source item (`SourceMaterialHash`) from it.
+One output slot of the recycler. It fills up with molten metal of one material and drops a whole piece of that material into its dock each time it reaches 1.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** `MonoBehaviour`, [`IDynamicQueueElement<RecyclerOutputSlot>`](/game-api/types/alta-crafting/idynamicqueueelement-t), [`IBuildRendererPostBake`](/game-api/types/assembly-other/ibuildrendererpostbake), [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable)
@@ -51,24 +51,24 @@ Collects recycled metal per material and spawns the material's source item (`Sou
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentmaterial" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" CurrentMaterial { get; private set; }"}</code> |  |
-| <Link id="m-isempty" /><code>{"bool IsEmpty { get; }"}</code> |  |
-| <Link id="m-next" /><code><Link to="/game-api/types/alta-crafting/recycleroutputslot">{"RecyclerOutputSlot"}</Link>{" Next { get; set; }"}</code> |  |
-| <Link id="m-previous" /><code><Link to="/game-api/types/alta-crafting/recycleroutputslot">{"RecyclerOutputSlot"}</Link>{" Previous { get; set; }"}</code> |  |
-| <Link id="m-totalcontent" /><code>{"float TotalContent { get; }"}</code> |  |
+| <Link id="m-currentmaterial" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" CurrentMaterial { get; private set; }"}</code> | The material this slot is collecting. |
+| <Link id="m-isempty" /><code>{"bool IsEmpty { get; }"}</code> | True when the partial fill is near zero. Whole pieces in the dock don't count. |
+| <Link id="m-next" /><code><Link to="/game-api/types/alta-crafting/recycleroutputslot">{"RecyclerOutputSlot"}</Link>{" Next { get; set; }"}</code> | Next slot in the recycler's usage order. |
+| <Link id="m-previous" /><code><Link to="/game-api/types/alta-crafting/recycleroutputslot">{"RecyclerOutputSlot"}</Link>{" Previous { get; set; }"}</code> | Previous slot in the recycler's usage order. |
+| <Link id="m-totalcontent" /><code>{"float TotalContent { get; }"}</code> | Partial fill plus the number of whole pieces in the dock. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addcontent" /><code>{"void AddContent(float content)"}</code> |  |
-| <Link id="m-load" /><code>{"void Load("}<Link to="/game-api/types/alta-crafting/recycleroutputslot-savedata">{"RecyclerOutputSlot.SaveData"}</Link>{" data)"}</code> |  |
-| <Link id="m-reappropriate" /><code>{"void Reappropriate("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material)"}</code> |  |
-| <Link id="m-save" /><code><Link to="/game-api/types/alta-crafting/recycleroutputslot-savedata">{"RecyclerOutputSlot.SaveData"}</Link>{" Save()"}</code> |  |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isFull)"}</code> |  |
-| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncMethod, int index)"}</code> |  |
-| <Link id="m-updatecontentremote" /><code>{"void UpdateContentRemote()"}</code> |  |
-| <Link id="m-updatevisual" /><code>{"void UpdateVisual()"}</code> |  |
+| <Link id="m-addcontent" /><code>{"void AddContent(float content)"}</code> | Server: adds metal, docking a new piece for each whole unit, then syncs and updates the display. |
+| <Link id="m-load" /><code>{"void Load("}<Link to="/game-api/types/alta-crafting/recycleroutputslot-savedata">{"RecyclerOutputSlot.SaveData"}</Link>{" data)"}</code> | Restores the fill and material from save data. |
+| <Link id="m-reappropriate" /><code>{"void Reappropriate("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material)"}</code> | Switches the slot to a new material: pops out docked pieces, clears the fill and display. |
+| <Link id="m-save" /><code><Link to="/game-api/types/alta-crafting/recycleroutputslot-savedata">{"RecyclerOutputSlot.SaveData"}</Link>{" Save()"}</code> | Makes save data with the slot index, fill and material. |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isFull)"}</code> | Reads or writes the fill, and plays the fill animation when reading. |
+| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncMethod, int index)"}</code> | Gives the slot its sync method and index. On clients, also sets up its fill material. |
+| <Link id="m-updatecontentremote" /><code>{"void UpdateContentRemote()"}</code> | Client: animates the fill bar to the current content. |
+| <Link id="m-updatevisual" /><code>{"void UpdateVisual()"}</code> | Shows a display piece while partly filled, or removes it when empty. |
 | <Link id="m-cleandisplay" /><code>{"private void CleanDisplay()"}</code> |  |
 | <Link id="m-contentanimation-2" /><code>{"private IEnumerator ContentAnimation() (iterator)"}</code> |  |
 | <Link id="m-newsource" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" NewSource()"}</code> |  |

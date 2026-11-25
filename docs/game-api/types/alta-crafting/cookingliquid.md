@@ -1,6 +1,6 @@
 ---
 title: "CookingLiquid"
-description: "The pot's liquid: its heat point, boiling effects and conversion to stew liquid."
+description: "The liquid inside a cooking pot: links the pot's liquid container to its heat point, boiling visuals and sounds."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Cooking`.
 
-The pot's liquid: its heat point, boiling effects and conversion to stew liquid.
+The liquid inside a cooking pot: links the pot's liquid container to its heat point, boiling visuals and sounds. Found on the cooking pot prefab under an `ILiquidContainer`.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour)
@@ -38,27 +38,27 @@ The pot's liquid: its heat point, boiling effects and conversion to stew liquid.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-heatpoint" /><code><Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-isnotempty" /><code>{"bool IsNotEmpty { get; }"}</code> |  |
-| <Link id="m-isrejectingmoreliquid" /><code>{"bool IsRejectingMoreLiquid { get; set; }"}</code> |  |
-| <Link id="m-liquidcontainer-2" /><code><Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" LiquidContainer { get; }"}</code> |  |
-| <Link id="m-surface" /><code>{"Transform Surface { get; }"}</code> |  |
-| <Link id="m-temperature" /><code>{"float Temperature { get; }"}</code> |  |
+| <Link id="m-heatpoint" /><code><Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" { get; }"}</code> | The heat point that holds the water's temperature. |
+| <Link id="m-isnotempty" /><code>{"bool IsNotEmpty { get; }"}</code> | True when the parent liquid container has any content. |
+| <Link id="m-isrejectingmoreliquid" /><code>{"bool IsRejectingMoreLiquid { get; set; }"}</code> | Set by `CookingPot` to stop more liquid being added, for example while it holds a stew. |
+| <Link id="m-liquidcontainer-2" /><code><Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" LiquidContainer { get; }"}</code> | The liquid container found in the parent objects. |
+| <Link id="m-surface" /><code>{"Transform Surface { get; }"}</code> | The transform at the visible liquid surface. Boiling sounds play from here. |
+| <Link id="m-temperature" /><code>{"float Temperature { get; }"}</code> | The current water temperature from the heat point. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-liquidadded" /><code>{"event Action LiquidAdded"}</code> |  |
-| <Link id="m-liquidemptied" /><code>{"event Action LiquidEmptied"}</code> |  |
-| <Link id="m-waterremoved" /><code>{"event Action WaterRemoved"}</code> |  |
+| <Link id="m-liquidadded" /><code>{"event Action LiquidAdded"}</code> | Server: raised when the content level goes up, after the water's temperature is pulled to ambient. |
+| <Link id="m-liquidemptied" /><code>{"event Action LiquidEmptied"}</code> | Server: raised when liquid is removed and the container is now empty. |
+| <Link id="m-waterremoved" /><code>{"event Action WaterRemoved"}</code> | Server: raised whenever the content level goes down. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-convertcontainerliquidtostewliquid" /><code>{"void ConvertContainerLiquidToStewLiquid("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" stewLiquidContent)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
+| <Link id="m-convertcontainerliquidtostewliquid" /><code>{"void ConvertContainerLiquidToStewLiquid("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" stewLiquidContent)"}</code> | Replaces the container's content with the given stew liquid. Called by `StewManager` when a stew forms. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Hooks scene destroy so the pooled boiling sound is released. |
 | <Link id="m-adjustwatertemperature" /><code>{"private void AdjustWaterTemperature()"}</code> |  |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-liquidcontainercontentlevelchanged" /><code>{"private void LiquidContainerContentLevelChanged("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container, int oldLevel, int newLevel)"}</code> |  |

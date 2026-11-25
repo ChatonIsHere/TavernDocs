@@ -1,6 +1,6 @@
 ---
 title: "ListElement"
-description: "class ListElement in Root.Township."
+description: "Empty component, probably a marker for items in a UI list."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ListElement
 
 A **class** in `Root.Township`, `Alta.Meta.UI`.
+
+Empty component, probably a marker for items in a UI list.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** `MonoBehaviour`

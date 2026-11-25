@@ -1,6 +1,6 @@
 ---
 title: "TextRenderer"
-description: "class TextRenderer in Root.Township."
+description: "Draws 3D text in the world (signs, labels, dock counts) by building a mesh per letter from a TextFont."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TextRenderer
 
 A **class** in `Root.Township`, no namespace.
+
+Draws 3D text in the world (signs, labels, dock counts) by building a mesh per letter from a `TextFont`. Client side visuals only: on a headless server setting `Text` stores the string but builds nothing.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `MonoBehaviour`, [`IBakeable`](/game-api/types/global-i-l/ibakeable), [`IBuildRendererBakeable`](/game-api/types/assembly-other/ibuildrendererbakeable), [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable)
@@ -74,27 +76,27 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alignment-2" /><code>{"TextAlignment Alignment { get; set; }"}</code> |  |
-| <Link id="m-color" /><code>{"Color Color { get; set; }"}</code> |  |
-| <Link id="m-currentcenter-2" /><code>{"Vector2 CurrentCenter { get; }"}</code> |  |
-| <Link id="m-currentheight" /><code>{"float CurrentHeight { get; private set; }"}</code> |  |
-| <Link id="m-currentlinewidth" /><code>{"float CurrentLineWidth { get; private set; }"}</code> |  |
-| <Link id="m-currentlinewidthscaled" /><code>{"float CurrentLineWidthScaled { get; }"}</code> |  |
-| <Link id="m-editormaterial" /><code>{"Material EditorMaterial { set; }"}</code> |  |
-| <Link id="m-editortintcolor" /><code>{"Color EditorTintColor { set; }"}</code> |  |
-| <Link id="m-font-2" /><code><Link to="/game-api/types/global-t-x/textfont">{"TextFont"}</Link>{" Font { get; set; }"}</code> |  |
-| <Link id="m-isduringeditorbake" /><code>{"bool IsDuringEditorBake { get; set; }"}</code> |  |
-| <Link id="m-isqueued" /><code>{"bool IsQueued { get; private set; }"}</code> |  |
-| <Link id="m-isvisible" /><code>{"bool IsVisible { get; private set; }"}</code> |  |
-| <Link id="m-material-2" /><code>{"Material Material { get; }"}</code> |  |
-| <Link id="m-maxlines-2" /><code>{"int MaxLines { get; set; }"}</code> |  |
-| <Link id="m-maxscale-2" /><code>{"float MaxScale { get; set; }"}</code> |  |
-| <Link id="m-maxwidth-2" /><code>{"float MaxWidth { get; set; }"}</code> |  |
-| <Link id="m-minscale-2" /><code>{"float MinScale { get; set; }"}</code> |  |
-| <Link id="m-renderers-2" /><code>{"IEnumerable<Renderer> Renderers { get; }"}</code> |  |
-| <Link id="m-scale-2" /><code>{"float Scale { get; set; }"}</code> |  |
-| <Link id="m-supportshtmltags-2" /><code>{"bool SupportsHtmlTags { get; set; }"}</code> |  |
-| <Link id="m-text-2" /><code>{"string Text { get; set; }"}</code> |  |
+| <Link id="m-alignment-2" /><code>{"TextAlignment Alignment { get; set; }"}</code> | Horizontal alignment (left, centre, right). Takes effect on the next refresh. |
+| <Link id="m-color" /><code>{"Color Color { get; set; }"}</code> | Tint colour (a separate value on Android). Setting a new colour forces a rebuild. |
+| <Link id="m-currentcenter-2" /><code>{"Vector2 CurrentCenter { get; }"}</code> | Centre of the rendered text in local space, worked out on the last rebuild. |
+| <Link id="m-currentheight" /><code>{"float CurrentHeight { get; private set; }"}</code> | Height of the rendered text after scaling, from the last rebuild. |
+| <Link id="m-currentlinewidth" /><code>{"float CurrentLineWidth { get; private set; }"}</code> | Width of the rendered line before scaling, from the last rebuild. |
+| <Link id="m-currentlinewidthscaled" /><code>{"float CurrentLineWidthScaled { get; }"}</code> | `CurrentLineWidth` times `Scale`. |
+| <Link id="m-editormaterial" /><code>{"Material EditorMaterial { set; }"}</code> | Write only. Sets both the normal and Android material. |
+| <Link id="m-editortintcolor" /><code>{"Color EditorTintColor { set; }"}</code> | Write only. Sets both the normal and Android tint colour. |
+| <Link id="m-font-2" /><code><Link to="/game-api/types/global-t-x/textfont">{"TextFont"}</Link>{" Font { get; set; }"}</code> | The `TextFont` used to build letters. |
+| <Link id="m-isduringeditorbake" /><code>{"bool IsDuringEditorBake { get; set; }"}</code> | Set while the text is being baked into static meshes at build time. Clearing is skipped during it. |
+| <Link id="m-isqueued" /><code>{"bool IsQueued { get; private set; }"}</code> | Android only: true while the text waits in the shared queue that spreads rebuilds over frames. |
+| <Link id="m-isvisible" /><code>{"bool IsVisible { get; private set; }"}</code> | Whether the text is shown. With a max render distance set, it turns off when the local player is far away. |
+| <Link id="m-material-2" /><code>{"Material Material { get; }"}</code> | Material for the letters, with a separate one on Android. |
+| <Link id="m-maxlines-2" /><code>{"int MaxLines { get; set; }"}</code> | Line limit for multi-line text. Unlimited unless the line limit option is on. |
+| <Link id="m-maxscale-2" /><code>{"float MaxScale { get; set; }"}</code> | Largest scale best fit to width may use. |
+| <Link id="m-maxwidth-2" /><code>{"float MaxWidth { get; set; }"}</code> | Width best fit to width scales the text into. |
+| <Link id="m-minscale-2" /><code>{"float MinScale { get; set; }"}</code> | Smallest scale best fit to width may use. |
+| <Link id="m-renderers-2" /><code>{"IEnumerable<Renderer> Renderers { get; }"}</code> | The renderers of the generated letters. |
+| <Link id="m-scale-2" /><code>{"float Scale { get; set; }"}</code> | Text scale. Takes effect on the next refresh. |
+| <Link id="m-supportshtmltags-2" /><code>{"bool SupportsHtmlTags { get; set; }"}</code> | When on, `c` colour tags in the text are applied. Needs a vertex colour material. |
+| <Link id="m-text-2" /><code>{"string Text { get; set; }"}</code> | The text to show. Setting it unescapes sequences such as `\n` and refreshes. |
 | <Link id="m-ibakeable-isbaked" /><code>{"private bool IBakeable.IsBaked { get; set; }"}</code> |  |
 | <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |  |
 
@@ -102,19 +104,19 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onfinishedrendering" /><code>{"event Action OnFinishedRendering"}</code> |  |
-| <Link id="m-onupdatedtext" /><code>{"event Action OnUpdatedText"}</code> |  |
+| <Link id="m-onfinishedrendering" /><code>{"event Action OnFinishedRendering"}</code> | Android only: raised when a queued rebuild finishes. |
+| <Link id="m-onupdatedtext" /><code>{"event Action OnUpdatedText"}</code> | Raised after each rebuild of the text mesh. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-onvalidatesettext" /><code>{"void OnValidateSetText(string text)"}</code> |  |
-| <Link id="m-refresh" /><code>{"void Refresh(bool isForced = false)"}</code> |  |
-| <Link id="m-setcolor" /><code>{"void SetColor(Color color)"}</code> |  |
-| <Link id="m-setuptextandcolor" /><code>{"void SetupTextAndColor(string text, Color color)"}</code> |  |
-| <Link id="m-setvisibility" /><code>{"void SetVisibility(bool isVisible)"}</code> |  |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | Removes the generated letters and empties the text. |
+| <Link id="m-onvalidatesettext" /><code>{"void OnValidateSetText(string text)"}</code> | Sets the text without unescaping and refreshes. |
+| <Link id="m-refresh" /><code>{"void Refresh(bool isForced = false)"}</code> | Rebuilds the letters if the text changed and the text is visible, or always when forced. Skipped on headless servers unless forced. |
+| <Link id="m-setcolor" /><code>{"void SetColor(Color color)"}</code> | Changes the tint and swaps the material on existing letters without rebuilding them. |
+| <Link id="m-setuptextandcolor" /><code>{"void SetupTextAndColor(string text, Color color)"}</code> | Sets the tint without a rebuild, then sets `Text`. If the text is unchanged the new colour does not show until a forced refresh. |
+| <Link id="m-setvisibility" /><code>{"void SetVisibility(bool isVisible)"}</code> | Shows or hides the letter renderers, and refreshes when shown. |
 | <Link id="m-aligntextline" /><code>{"private void AlignTextLine(float lineWidth, int lineNumber, int lineCount, Transform lineParent)"}</code> |  |
 | <Link id="m-aligntextline-2" /><code>{"private void AlignTextLine(float lineWidth, int lineNumber, int lineCount, List<Vector3> vertices, int startIndex)"}</code> |  |
 | <Link id="m-bake" /><code>{"private void IBakeable.Bake()"}</code> |  |

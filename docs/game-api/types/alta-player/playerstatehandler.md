@@ -1,6 +1,6 @@
 ---
 title: "PlayerStateHandler"
-description: "delegate PlayerStateHandler in Root.Township."
+description: "Callback that receives a player state, such as the pre-activation callback of SetToState."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerStateHandler
 
 A **delegate** in `Root.Township`, `Alta.PlayerStates`.
+
+Callback that receives a player state, such as the pre-activation callback of `SetToState`.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `MulticastDelegate`

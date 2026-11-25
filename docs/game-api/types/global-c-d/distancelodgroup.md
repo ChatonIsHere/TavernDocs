@@ -1,6 +1,6 @@
 ---
 title: "DistanceLODGroup"
-description: "Client: a simple LOD group that switches renderer sets on and off by the local player's distance, driven by a shared DistanceLODGroupManager. Removes "
+description: "Client: a simple LOD group that switches renderer sets on and off by the local player's distance, driven by a shared DistanceLODGroupManager."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

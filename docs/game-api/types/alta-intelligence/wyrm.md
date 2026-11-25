@@ -1,6 +1,6 @@
 ---
 title: "Wyrm"
-description: "The wyrm creature's AI agent. It switches between a burrowed and an emerged action set, and syncs whether its body and collision are visible. The AI r"
+description: "The wyrm creature's AI agent."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "Target"
-description: "A networked thing that AI creatures can sense and attack, with optional health and interactable links. Only active on the server: on clients it disabl"
+description: "A networked thing that AI creatures can sense and attack, with optional health and interactable links."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "GeneralValue"
-description: "A ScriptableObject with a Description and a Type."
+description: "Base for many of the game's ScriptableObject assets: just a description field and a type slot."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **abstract class** in `Alta.Values`, `Alta`.
 
-A `ScriptableObject` with a `Description` and a `Type`.
+Base for many of the game's ScriptableObject assets: just a description field and a type slot.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `ScriptableObject`
@@ -35,8 +35,8 @@ A `ScriptableObject` with a `Description` and a `Type`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-description-2" /><code>{"string Description { get; }"}</code> |  |
-| <Link id="m-type" /><code>{"virtual Type Type { get; set; }"}</code> |  |
+| <Link id="m-description-2" /><code>{"string Description { get; }"}</code> | Free text description of the asset. "No description" by default. |
+| <Link id="m-type" /><code>{"virtual Type Type { get; set; }"}</code> | A `System.Type` that subclasses can use. Null by default. |
 
 ## Used in
 

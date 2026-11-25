@@ -1,6 +1,6 @@
 ---
 title: "StructurePart.Cube"
-description: "Old per-tile side data for a StructurePart. Now only read in the editor to convert into StructureCube children."
+description: "Old per-tile side data for a StructurePart."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

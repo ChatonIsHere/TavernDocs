@@ -1,6 +1,6 @@
 ---
 title: "Debug"
-description: "static class Debug in Root.Township."
+description: "The game's own global Debug class, which hides UnityEngine.Debug in the game code."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `Root.Township`, no namespace.
 
+The game's own global `Debug` class, which hides `UnityEngine.Debug` in the game code. Sets up NLog logging on first use and sends Unity's log output and these calls through NLog.
+
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Attributes** `ApplicationShutdownOrder`
 - **Documented in** [Startup and app state](/game-api/console-and-utilities/startup-and-app-state), [Connection messages](/game-api/networking/messages)
@@ -20,7 +22,7 @@ A **static class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logconfigpath" /><code>{"static string LogConfigPath"}</code> |  |
+| <Link id="m-logconfigpath" /><code>{"static string LogConfigPath"}</code> | Path of the NLog config file in use. Defaults to `StreamingAssets/NLog.config` unless `/logging_config_path` is given. |
 | <Link id="m-commandlinepath" /><code>{"private static string commandLinePath"}</code> |  |
 | <Link id="m-defaultunitylogger" /><code>{"private static ILogHandler defaultUnityLogger"}</code> |  |
 | <Link id="m-issetup" /><code>{"private static bool isSetup"}</code> |  |
@@ -33,25 +35,25 @@ A **static class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdebugbuild" /><code>{"static bool isDebugBuild { get; }"}</code> |  |
-| <Link id="m-logfolderpath" /><code>{"static string LogFolderPath { get; private set; }"}</code> |  |
+| <Link id="m-isdebugbuild" /><code>{"static bool isDebugBuild { get; }"}</code> | Always false. |
+| <Link id="m-logfolderpath" /><code>{"static string LogFolderPath { get; private set; }"}</code> | The log folder as worked out from the NLog config's `logFolderPath` variable. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-assert" /><code>{"static void Assert(bool condition, string errorMessage = \"Assert Failed\", Object context = null)"}</code> |  |
-| <Link id="m-break" /><code>{"static void Break()"}</code> |  |
-| <Link id="m-drawline" /><code>{"static void DrawLine(Vector3 start, Vector3 end, Color color)"}</code> |  |
-| <Link id="m-log" /><code>{"static void Log(object message, Object context = null)"}</code> |  |
-| <Link id="m-logerror" /><code>{"static void LogError(object message, Object context = null)"}</code> |  |
-| <Link id="m-logerrorformat" /><code>{"static void LogErrorFormat(string format, params object[] args)"}</code> |  |
-| <Link id="m-logexception" /><code>{"static void LogException(Exception exception, Object context = null)"}</code> |  |
-| <Link id="m-logformat" /><code>{"static void LogFormat(string format, params object[] args)"}</code> |  |
-| <Link id="m-logwarning" /><code>{"static void LogWarning(object message, Object context = null)"}</code> |  |
-| <Link id="m-logwarningformat" /><code>{"static void LogWarningFormat(string format, params object[] args)"}</code> |  |
-| <Link id="m-setuplogging" /><code>{"static void SetupLogging()"}</code> |  |
-| <Link id="m-updatelogfolderpath" /><code>{"static void UpdateLogFolderPath(string newLogFolder)"}</code> |  |
+| <Link id="m-assert" /><code>{"static void Assert(bool condition, string errorMessage = \"Assert Failed\", Object context = null)"}</code> | Logs the error message if the condition is false. Doesn't throw or break. |
+| <Link id="m-break" /><code>{"static void Break()"}</code> | Does nothing. |
+| <Link id="m-drawline" /><code>{"static void DrawLine(Vector3 start, Vector3 end, Color color)"}</code> | Draws a debug line through Unity's `Debug.DrawLine`. |
+| <Link id="m-log" /><code>{"static void Log(object message, Object context = null)"}</code> | Logs the message at Info level. |
+| <Link id="m-logerror" /><code>{"static void LogError(object message, Object context = null)"}</code> | Logs the message at Error level. |
+| <Link id="m-logerrorformat" /><code>{"static void LogErrorFormat(string format, params object[] args)"}</code> | Logs a formatted message at Error level. |
+| <Link id="m-logexception" /><code>{"static void LogException(Exception exception, Object context = null)"}</code> | Logs the exception and its message at Error level. |
+| <Link id="m-logformat" /><code>{"static void LogFormat(string format, params object[] args)"}</code> | Logs a formatted message at Info level. |
+| <Link id="m-logwarning" /><code>{"static void LogWarning(object message, Object context = null)"}</code> | Logs the message at Warn level. |
+| <Link id="m-logwarningformat" /><code>{"static void LogWarningFormat(string format, params object[] args)"}</code> | Logs a formatted message at Warn level. |
+| <Link id="m-setuplogging" /><code>{"static void SetupLogging()"}</code> | Loads the NLog config, registers the game's targets and layout renderers and takes over Unity's log handler. Runs once. |
+| <Link id="m-updatelogfolderpath" /><code>{"static void UpdateLogFolderPath(string newLogFolder)"}</code> | Changes the base log folder and reloads the NLog config. |
 | <Link id="m-addcsvtargetwithname" /><code>{"private static void AddCsvTargetWithName(LoggingConfiguration config, CsvLayout csvLayout, string name)"}</code> |  |
 | <Link id="m-addcustomtarget" /><code>{"private static void AddCustomTarget(LoggingConfiguration config, string fileName, params string[] fields)"}</code> |  |
 | <Link id="m-addcustomtargetsandrenderers" /><code>{"private static void AddCustomTargetsAndRenderers()"}</code> |  |

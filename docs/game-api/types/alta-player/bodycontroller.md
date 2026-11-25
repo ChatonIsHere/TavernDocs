@@ -1,6 +1,6 @@
 ---
 title: "BodyController"
-description: "class BodyController in Root.Township."
+description: "Moves and turns a player's body to follow the head and hands, using BodyControllerSettings that can be overridden."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BodyController
 
 A **class** in `Root.Township`, `Alta.Character`.
+
+Moves and turns a player's body to follow the head and hands, using `BodyControllerSettings` that can be overridden.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`CharacterComponentController`](/game-api/types/alta-player/charactercomponentcontroller)
@@ -55,19 +57,19 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bodytarget-2" /><code>{"Transform BodyTarget { get; }"}</code> |  |
-| <Link id="m-bodytransform" /><code>{"Transform BodyTransform { get; }"}</code> |  |
-| <Link id="m-head-2" /><code>{"Transform Head { get; set; }"}</code> |  |
-| <Link id="m-settings" /><code><Link to="/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" Settings { get; }"}</code> |  |
+| <Link id="m-bodytarget-2" /><code>{"Transform BodyTarget { get; }"}</code> | Transform whose pitch is set for the body's forward bend. |
+| <Link id="m-bodytransform" /><code>{"Transform BodyTransform { get; }"}</code> | The body transform it moves. |
+| <Link id="m-head-2" /><code>{"Transform Head { get; set; }"}</code> | The head transform the body follows. Setting it reparents the head target. |
+| <Link id="m-settings" /><code><Link to="/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" Settings { get; }"}</code> | The newest relevant override, or the default from `PlayerSettings`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addoverridesetting" /><code>{"void AddOverrideSetting("}<Link to="/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" overrideSettings, Func<bool> relevantCheck)"}</code> |  |
-| <Link id="m-disabletracking" /><code>{"void DisableTracking()"}</code> |  |
-| <Link id="m-enabletracking" /><code>{"void EnableTracking()"}</code> |  |
-| <Link id="m-updatecharactercomponent" /><code>{"override void UpdateCharacterComponent()"}</code> |  |
+| <Link id="m-addoverridesetting" /><code>{"void AddOverrideSetting("}<Link to="/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" overrideSettings, Func<bool> relevantCheck)"}</code> | Adds override settings, used while the given check returns true. The newest relevant override wins. |
+| <Link id="m-disabletracking" /><code>{"void DisableTracking()"}</code> | Swaps the head for a loose physics box at the same spot, so the body stops following the real head. |
+| <Link id="m-enabletracking" /><code>{"void EnableTracking()"}</code> | Puts the real head back and destroys the stand-in. |
+| <Link id="m-updatecharactercomponent" /><code>{"override void UpdateCharacterComponent()"}</code> | Each frame moves the body towards the head and turns it from head heading, hand positions and head pitch. |
 | <Link id="m-constrainangle" /><code>{"private float ConstrainAngle(float angle)"}</code> |  |
 
 ## Used in

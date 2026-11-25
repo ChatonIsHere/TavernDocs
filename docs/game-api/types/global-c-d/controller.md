@@ -1,6 +1,6 @@
 ---
 title: "Controller"
-description: "class Controller in Root.Township."
+description: "One hand of a player: the network behaviour that holds the grip point, the Hand, the input and the controller extensions such as the Interactor."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Controller
 
 A **class** in `Root.Township`, no namespace.
+
+One hand of a player: the network behaviour that holds the grip point, the `Hand`, the input and the controller extensions such as the `Interactor`. Both sides; reach one through `PlayerController.LeftController` or `RightController`.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour)
@@ -41,28 +43,28 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-actionsmanager" /><code><Link to="/game-api/types/global-c-d/controlleractionsmanagerproxy">{"ControllerActionsManagerProxy"}</Link>{" ActionsManager { get; }"}</code> |  |
-| <Link id="m-allextensions-2" /><code>{"List<"}<Link to="/game-api/types/global-c-d/controllerextension">{"ControllerExtension"}</Link>{"> AllExtensions { get; }"}</code> |  |
-| <Link id="m-characterinfo" /><code><Link to="/game-api/types/global-c-d/characterinfo">{"CharacterInfo"}</Link>{" "}<Link to="/game-api/types/global-c-d/characterinfo">{"CharacterInfo"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-grippoint-2" /><code>{"Transform GripPoint { get; set; }"}</code> |  |
-| <Link id="m-hand-2" /><code><Link to="/game-api/types/alta-player/hand">{"Hand"}</Link>{" "}<Link to="/game-api/types/alta-player/hand">{"Hand"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-interactor-2" /><code><Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-islocomotingblocked" /><code>{"bool IsLocomotingBlocked { get; set; }"}</code> |  |
-| <Link id="m-networktransform-2" /><code><Link to="/game-api/types/alta-networking/networktransform">{"NetworkTransform"}</Link>{" "}<Link to="/game-api/types/alta-networking/networktransform">{"NetworkTransform"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-playercontroller" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-playerinput" /><code><Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" { get; private set; }"}</code> |  |
+| <Link id="m-actionsmanager" /><code><Link to="/game-api/types/global-c-d/controlleractionsmanagerproxy">{"ControllerActionsManagerProxy"}</Link>{" ActionsManager { get; }"}</code> | Proxy to this hand's input actions; linked to the `PlayerInput` actions manager on initialize. |
+| <Link id="m-allextensions-2" /><code>{"List<"}<Link to="/game-api/types/global-c-d/controllerextension">{"ControllerExtension"}</Link>{"> AllExtensions { get; }"}</code> | Every controller extension on this hand, including the ones spawned from extension groups. |
+| <Link id="m-characterinfo" /><code><Link to="/game-api/types/global-c-d/characterinfo">{"CharacterInfo"}</Link>{" "}<Link to="/game-api/types/global-c-d/characterinfo">{"CharacterInfo"}</Link>{" { get; private set; }"}</code> | The owning player controller's `Info`. |
+| <Link id="m-grippoint-2" /><code>{"Transform GripPoint { get; set; }"}</code> | Transform held items attach to; given a kinematic rigidbody at build time. |
+| <Link id="m-hand-2" /><code><Link to="/game-api/types/alta-player/hand">{"Hand"}</Link>{" "}<Link to="/game-api/types/alta-player/hand">{"Hand"}</Link>{" { get; }"}</code> | The hand model this controller drives. |
+| <Link id="m-interactor-2" /><code><Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" { get; }"}</code> | This hand's `Interactor` extension, cached on first use. |
+| <Link id="m-islocomotingblocked" /><code>{"bool IsLocomotingBlocked { get; set; }"}</code> | Flag set by other code to stop this hand's input driving locomotion. |
+| <Link id="m-networktransform-2" /><code><Link to="/game-api/types/alta-networking/networktransform">{"NetworkTransform"}</Link>{" "}<Link to="/game-api/types/alta-networking/networktransform">{"NetworkTransform"}</Link>{" { get; }"}</code> | The `NetworkTransform` on this hand, cached on first use. |
+| <Link id="m-playercontroller" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; private set; }"}</code> | The player controller this hand belongs to. |
+| <Link id="m-playerinput" /><code><Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" { get; private set; }"}</code> | The input for this hand. Disabled on hands that are not the local player's. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcontrollerextension" /><code>{"T GetControllerExtension<T>()"}</code> |  |
-| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" input)"}</code> |  |
-| <Link id="m-moveextensionsobjects" /><code>{"void MoveExtensionsObjects(bool isToMasterHand)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-triggerhaptic" /><code>{"void TriggerHaptic(float strength, float duration, float frequency = 80)"}</code> |  |
-| <Link id="m-triggerhaptic-2" /><code>{"void TriggerHaptic(AnimationCurve curve, float strength = 1, float frequency = 80)"}</code> |  |
-| <Link id="m-trygetheldpickup" /><code>{"bool TryGetHeldPickup(out "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
+| <Link id="m-getcontrollerextension" /><code>{"T GetControllerExtension<T>()"}</code> | Returns the first extension of the given type, or null with a warning. |
+| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" input)"}</code> | Links the hand to its player controller and input, spawns extension groups (local-only ones only for the local player) and initializes them. |
+| <Link id="m-moveextensionsobjects" /><code>{"void MoveExtensionsObjects(bool isToMasterHand)"}</code> | Reparents the IK-hand extension objects to the master hand root or the IK hand root. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Calls `OnConnectedToPlayer` on every extension one frame later. |
+| <Link id="m-triggerhaptic" /><code>{"void TriggerHaptic(float strength, float duration, float frequency = 80)"}</code> | Vibrates this hand's controller, by strength and duration or by a curve. The strength version only acts on clients. |
+| <Link id="m-triggerhaptic-2" /><code>{"void TriggerHaptic(AnimationCurve curve, float strength = 1, float frequency = 80)"}</code> | Vibrates this hand's controller, by strength and duration or by a curve. The strength version only acts on clients. |
+| <Link id="m-trygetheldpickup" /><code>{"bool TryGetHeldPickup(out "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Returns the pickup this hand is holding, if the interactor is holding a `Pickup`. |
 | <Link id="m-addextension" /><code>{"private void AddExtension("}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" group)"}</code> |  |
 | <Link id="m-createextensionobject" /><code>{"private void CreateExtensionObject("}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" group, bool isIKHand)"}</code> |  |
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |

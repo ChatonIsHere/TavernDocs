@@ -1,6 +1,6 @@
 ---
 title: "Stat"
-description: "Plain class, one per stat per body."
+description: "One stat's live value on a StatManager."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
 
-Plain class, one per stat per body.
+One stat's live value on a `StatManager`. The value is (base plus extras, clamped to min and max) times the multipliers. Changes raise `Changed` and, past the definition's threshold, `NetworkChanged`.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Attributes** `TypeConverter`
@@ -43,45 +43,45 @@ Plain class, one per stat per body.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-application" /><code><Link to="/game-api/types/alta-stats-effects/statdefinitionapplication">{"StatDefinitionApplication"}</Link>{" Application { get; private set; }"}</code> |  |
-| <Link id="m-base" /><code>{"float Base { get; set; }"}</code> |  |
-| <Link id="m-buffmultiplier-2" /><code>{"float BuffMultiplier { get; set; }"}</code> |  |
-| <Link id="m-changedata" /><code>{"object ChangeData { get; set; }"}</code> |  |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" Definition { get; private set; }"}</code> |  |
-| <Link id="m-extra" /><code>{"float Extra { get; set; }"}</code> |  |
-| <Link id="m-ischanged" /><code>{"bool IsChanged { get; private set; }"}</code> |  |
-| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; set; }"}</code> |  |
-| <Link id="m-lastvalue" /><code>{"float LastValue { get; private set; }"}</code> |  |
-| <Link id="m-maximum-2" /><code>{"float Maximum { get; set; }"}</code> |  |
-| <Link id="m-minimum-2" /><code>{"float Minimum { get; set; }"}</code> |  |
-| <Link id="m-multiplier" /><code>{"float Multiplier { get; }"}</code> |  |
-| <Link id="m-nonbuffextra-2" /><code>{"float NonBuffExtra { get; set; }"}</code> |  |
-| <Link id="m-nonbuffmultiplier-2" /><code>{"float NonBuffMultiplier { get; set; }"}</code> |  |
-| <Link id="m-value" /><code>{"float Value { get; private set; }"}</code> |  |
+| <Link id="m-application" /><code><Link to="/game-api/types/alta-stats-effects/statdefinitionapplication">{"StatDefinitionApplication"}</Link>{" Application { get; private set; }"}</code> | The `StatDefinitionApplication` this stat came from, holding its defaults. |
+| <Link id="m-base" /><code>{"float Base { get; set; }"}</code> | The stat's own value. Setting it clamps to `Minimum` and `Maximum`. This is the part that is saved. |
+| <Link id="m-buffmultiplier-2" /><code>{"float BuffMultiplier { get; set; }"}</code> | Multiplier from buffs. Part of `Multiplier`. |
+| <Link id="m-changedata" /><code>{"object ChangeData { get; set; }"}</code> | Context for the change that is about to happen (for example the damage), read by `Changed` handlers. Cleared after each change. |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" Definition { get; private set; }"}</code> | The `StatDefinition` this stat is for. |
+| <Link id="m-extra" /><code>{"float Extra { get; set; }"}</code> | Flat bonus added to `Base`. Reading gives the buff extra plus `NonBuffExtra`; setting sets only the buff extra. |
+| <Link id="m-ischanged" /><code>{"bool IsChanged { get; private set; }"}</code> | True after a change until the next `OnChangedExternal`. |
+| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; set; }"}</code> | Whether the stat is enabled. Setting it forces a network update. |
+| <Link id="m-lastvalue" /><code>{"float LastValue { get; private set; }"}</code> | The value at the previous change. |
+| <Link id="m-maximum-2" /><code>{"float Maximum { get; set; }"}</code> | Upper limit for `Base` plus extras. Lowering it pulls `Base` down. |
+| <Link id="m-minimum-2" /><code>{"float Minimum { get; set; }"}</code> | Lower limit for `Base` plus extras. Raising it pushes `Base` up. |
+| <Link id="m-multiplier" /><code>{"float Multiplier { get; }"}</code> | Total multiplier, `BuffMultiplier` times `NonBuffMultiplier`. |
+| <Link id="m-nonbuffextra-2" /><code>{"float NonBuffExtra { get; set; }"}</code> | Flat bonus that does not come from buffs. |
+| <Link id="m-nonbuffmultiplier-2" /><code>{"float NonBuffMultiplier { get; set; }"}</code> | Multiplier that does not come from buffs. |
+| <Link id="m-value" /><code>{"float Value { get; private set; }"}</code> | The final calculated value. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changed" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/stathandler">{"StatHandler"}</Link>{" Changed"}</code> |  |
-| <Link id="m-changedexternal" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/stathandler">{"StatHandler"}</Link>{" ChangedExternal"}</code> |  |
-| <Link id="m-definitionevent" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/stathandler">{"StatHandler"}</Link>{" DefinitionEvent"}</code> |  |
-| <Link id="m-networkchanged" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/stathandler">{"StatHandler"}</Link>{" NetworkChanged"}</code> |  |
+| <Link id="m-changed" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/stathandler">{"StatHandler"}</Link>{" Changed"}</code> | Raised whenever `Value` changes. |
+| <Link id="m-changedexternal" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/stathandler">{"StatHandler"}</Link>{" ChangedExternal"}</code> | Raised on the stat manager's tick for stats that changed since the last tick. |
+| <Link id="m-definitionevent" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/stathandler">{"StatHandler"}</Link>{" DefinitionEvent"}</code> | Raised by `RunEvent`; burn uses it to signal stat-specific events. |
+| <Link id="m-networkchanged" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/stathandler">{"StatHandler"}</Link>{" NetworkChanged"}</code> | Raised when a change passes the definition's sync threshold. The server's stat manager sends the stat to clients on it. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bind" /><code>{"void Bind("}<Link to="/game-api/types/alta-stats-effects/stathandler">{"StatHandler"}</Link>{" handler)"}</code> |  |
-| <Link id="m-forceserverupdate" /><code>{"void ForceServerUpdate()"}</code> |  |
-| <Link id="m-load" /><code>{"void Load("}<Link to="/game-api/types/alta-stats-effects/statmanagersavedatastat">{"StatManagerSaveDataStat"}</Link>{" data)"}</code> |  |
-| <Link id="m-onchangedexternal" /><code>{"void OnChangedExternal()"}</code> |  |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |  |
-| <Link id="m-runevent" /><code>{"void RunEvent()"}</code> |  |
-| <Link id="m-save" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedatastat">{"StatManagerSaveDataStat"}</Link>{" Save()"}</code> |  |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWritingFull)"}</code> |  |
-| <Link id="m-setrange" /><code>{"void SetRange(float minimum, float maximum)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| <Link id="m-bind" /><code>{"void Bind("}<Link to="/game-api/types/alta-stats-effects/stathandler">{"StatHandler"}</Link>{" handler)"}</code> | Calls the handler once now, then on every `Changed`. |
+| <Link id="m-forceserverupdate" /><code>{"void ForceServerUpdate()"}</code> | Recalculates and raises both `Changed` and `NetworkChanged` even if nothing changed. |
+| <Link id="m-load" /><code>{"void Load("}<Link to="/game-api/types/alta-stats-effects/statmanagersavedatastat">{"StatManagerSaveDataStat"}</Link>{" data)"}</code> | Restores `Base` from save data, rounded to 2 decimals. |
+| <Link id="m-onchangedexternal" /><code>{"void OnChangedExternal()"}</code> | Clears `IsChanged` and raises `ChangedExternal`. The stat manager calls it on its tick. |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> | Sets min, max and base back to the defaults from `Application`. |
+| <Link id="m-runevent" /><code>{"void RunEvent()"}</code> | Raises `DefinitionEvent`. |
+| <Link id="m-save" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedatastat">{"StatManagerSaveDataStat"}</Link>{" Save()"}</code> | Returns save data holding the definition and `Base` only. |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWritingFull)"}</code> | Reads or writes the stat. Full writes include range, extras and multipliers. Values are packed to fixed ranges (base and range 0 to 127) and rounded to 0.01. |
+| <Link id="m-setrange" /><code>{"void SetRange(float minimum, float maximum)"}</code> | Sets `Minimum` and `Maximum` together and forces a network update. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | The value with at most one decimal. |
 | <Link id="m-onchanged" /><code>{"private void OnChanged(bool forceNetwork = false, bool forceEvent = false)"}</code> |  |
 
 ## Used in

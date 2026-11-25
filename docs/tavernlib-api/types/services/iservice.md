@@ -1,6 +1,6 @@
 ---
 title: "IService"
-description: "An interface in TavernLib, TavernLib.Services."
+description: "An empty marker interface for anything registered with TavernServices."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `TavernLib`, `TavernLib.Services`.
 
-An **interface** in `TavernLib`, `TavernLib.Services`.
+An empty marker interface for anything registered with `TavernServices`. It has nothing to implement.
 
 - **Listed in** [TavernLib.Services](/tavernlib-api/types/services)
 - **Derived types** [`TavernManager`](/tavernlib-api/types/backend-api/tavernmanager), [`EntranceMessageHandler`](/tavernlib-api/types/backend/entrancemessagehandler), [`DebugHelper`](/tavernlib-api/types/debugging/debughelper)

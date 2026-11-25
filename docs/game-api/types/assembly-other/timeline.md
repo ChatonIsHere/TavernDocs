@@ -1,6 +1,6 @@
 ---
 title: "Timeline"
-description: "A scheduler for \"call this in N seconds\" and \"every N seconds\", used for respawns, decay, loot refills, taxes, timed stat changes and the like. Main t"
+description: "A scheduler for \"call this in N seconds\" and \"every N seconds\", used for respawns, decay, loot refills, taxes, timed stat changes and the like."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

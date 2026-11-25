@@ -1,6 +1,6 @@
 ---
 title: "MicroTutorialStep"
-description: "Base asset for one step of a micro tutorial. Subclasses say which player events finish the step or run their own server logic; the server's step insta"
+description: "Base asset for one step of a micro tutorial."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

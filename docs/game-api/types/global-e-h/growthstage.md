@@ -1,6 +1,6 @@
 ---
 title: "GrowthStage"
-description: "class GrowthStage in Root.Township."
+description: "One stage in a GrowthDefinition (plants, trees and other things that grow): what prefab to show, how long it lasts and the space checks it needs."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GrowthStage
 
 A **class** in `Root.Township`, no namespace.
+
+One stage in a `GrowthDefinition` (plants, trees and other things that grow): what prefab to show, how long it lasts and the space checks it needs. Server side, run by `GrowthItem`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Documented in** [Farming, woodcutting and carpentry](/game-api/game-systems/farming-and-woodcutting#growthdefinition-and-growthstage)
@@ -46,22 +48,22 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> |  |
-| <Link id="m-forcekinematic-2" /><code><Link to="/game-api/types/global-i-l/kinematicforcemode">{"KinematicForceMode"}</Link>{" ForceKinematic { get; }"}</code> |  |
-| <Link id="m-isusingpreviousprefab" /><code>{"bool IsUsingPreviousPrefab { get; }"}</code> |  |
-| <Link id="m-isusingradius-2" /><code>{"bool IsUsingRadius { get; }"}</code> |  |
-| <Link id="m-isusingraycastcheck-2" /><code>{"bool IsUsingRaycastCheck { get; }"}</code> |  |
-| <Link id="m-localposition-2" /><code>{"Vector3 LocalPosition { get; }"}</code> |  |
-| <Link id="m-localrotation-2" /><code>{"Vector3 LocalRotation { get; }"}</code> |  |
-| <Link id="m-minseparationradius-2" /><code>{"float MinSeparationRadius { get; }"}</code> |  |
-| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-prefabs-2" /><code><Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" Prefabs { get; }"}</code> |  |
-| <Link id="m-radiuschecklayers-2" /><code>{"LayerMask RadiusCheckLayers { get; }"}</code> |  |
-| <Link id="m-raycastdirection-2" /><code>{"Vector3 RaycastDirection { get; }"}</code> |  |
-| <Link id="m-raycastdistance-2" /><code>{"float RaycastDistance { get; }"}</code> |  |
-| <Link id="m-raycastlayers-2" /><code>{"LayerMask RaycastLayers { get; }"}</code> |  |
-| <Link id="m-retrystage-2" /><code>{"bool RetryStage { get; }"}</code> |  |
-| <Link id="m-survivalrate-2" /><code>{"float SurvivalRate { get; }"}</code> |  |
+| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> | Seconds before moving to the next stage, or before retrying this one. |
+| <Link id="m-forcekinematic-2" /><code><Link to="/game-api/types/global-i-l/kinematicforcemode">{"KinematicForceMode"}</Link>{" ForceKinematic { get; }"}</code> | Whether to force the spawned prefab's rigidbody kinematic, non-kinematic, or leave it. |
+| <Link id="m-isusingpreviousprefab" /><code>{"bool IsUsingPreviousPrefab { get; }"}</code> | Keeps the previous stage's object instead of spawning a new one. |
+| <Link id="m-isusingradius-2" /><code>{"bool IsUsingRadius { get; }"}</code> | Whether the stage needs clear space of `MinSeparationRadius` around it. |
+| <Link id="m-isusingraycastcheck-2" /><code>{"bool IsUsingRaycastCheck { get; }"}</code> | Whether the stage needs a clear ray in `RaycastDirection`. |
+| <Link id="m-localposition-2" /><code>{"Vector3 LocalPosition { get; }"}</code> | Offset of the spawned prefab from the grow point. |
+| <Link id="m-localrotation-2" /><code>{"Vector3 LocalRotation { get; }"}</code> | Rotation (Euler angles) of the spawned prefab from the grow point. |
+| <Link id="m-minseparationradius-2" /><code>{"float MinSeparationRadius { get; }"}</code> | Clear radius needed around this stage. |
+| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> | Stage name, used in log messages. |
+| <Link id="m-prefabs-2" /><code><Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" Prefabs { get; }"}</code> | Pipeline that picks this stage's `NetworkPrefab` or `PresetTree`. |
+| <Link id="m-radiuschecklayers-2" /><code>{"LayerMask RadiusCheckLayers { get; }"}</code> | Layers the radius check looks at. |
+| <Link id="m-raycastdirection-2" /><code>{"Vector3 RaycastDirection { get; }"}</code> | Local direction of the space check ray. |
+| <Link id="m-raycastdistance-2" /><code>{"float RaycastDistance { get; }"}</code> | Length of the space check ray. |
+| <Link id="m-raycastlayers-2" /><code>{"LayerMask RaycastLayers { get; }"}</code> | Layers the ray check looks at. |
+| <Link id="m-retrystage-2" /><code>{"bool RetryStage { get; }"}</code> | If the checks fail, try this stage again after `Duration` (at least 5 s) instead of stopping. |
+| <Link id="m-survivalrate-2" /><code>{"float SurvivalRate { get; }"}</code> | Chance (0 to 1) of growing on to the next stage. Failing stops the growth. |
 
 ## Used in
 

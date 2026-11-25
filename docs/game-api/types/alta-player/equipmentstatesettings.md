@@ -1,6 +1,6 @@
 ---
 title: "EquipmentStateSettings"
-description: "class EquipmentStateSettings in Root.Township."
+description: "Settings for the equipment player state, where a dummy copy of the player appears in front of them to change gear, and copies their pose when they hold still."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EquipmentStateSettings
 
 A **class** in `Root.Township`, `Alta.PlayerStates`.
+
+Settings for the equipment player state, where a dummy copy of the player appears in front of them to change gear, and copies their pose when they hold still.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`PlayerStateSettings`](/game-api/types/alta-player/playerstatesettings)
@@ -50,25 +52,25 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animationstageoverlap-2" /><code>{"float AnimationStageOverlap { get; }"}</code> |  |
-| <Link id="m-customizationroom-2" /><code><Link to="/game-api/types/alta-customization/equipmentcustomizationroom">{"EquipmentCustomizationRoom"}</Link>{" CustomizationRoom { get; }"}</code> |  |
-| <Link id="m-dummymaterializationduration-2" /><code>{"float DummyMaterializationDuration { get; }"}</code> |  |
-| <Link id="m-dummyposeanimationduration-2" /><code>{"float DummyPoseAnimationDuration { get; }"}</code> |  |
-| <Link id="m-dummyspawndistancefromplayer" /><code>{"float DummySpawnDistanceFromPlayer { get; }"}</code> |  |
-| <Link id="m-flashduration-2" /><code>{"float FlashDuration { get; }"}</code> |  |
-| <Link id="m-flashexposure-2" /><code>{"float FlashExposure { get; }"}</code> |  |
-| <Link id="m-flashfadeoutduration-2" /><code>{"float FlashFadeoutDuration { get; }"}</code> |  |
-| <Link id="m-isusingcameraflashonposecopy-2" /><code>{"bool IsUsingCameraFlashOnPoseCopy { get; }"}</code> |  |
-| <Link id="m-isusingdummyposes-2" /><code>{"bool IsUsingDummyPoses { get; }"}</code> |  |
-| <Link id="m-maxpositiondeltatotriggerpose-2" /><code>{"float MaxPositionDeltaToTriggerPose { get; }"}</code> |  |
-| <Link id="m-maxrotationdeltatotriggerpose-2" /><code>{"float MaxRotationDeltaToTriggerPose { get; }"}</code> |  |
-| <Link id="m-minfreezetimetotriggerpose-2" /><code>{"float MinFreezeTimeToTriggerPose { get; }"}</code> |  |
-| <Link id="m-mintimebetweenposes-2" /><code>{"float MinTimeBetweenPoses { get; }"}</code> |  |
-| <Link id="m-posecheckingstartdelay-2" /><code>{"float PoseCheckingStartDelay { get; }"}</code> |  |
-| <Link id="m-remotedummyeffects-2" /><code><Link to="/game-api/types/global-q-r/remoteequipmentmodevisuals">{"RemoteEquipmentModeVisuals"}</Link>{" RemoteDummyEffects { get; }"}</code> |  |
-| <Link id="m-statetype" /><code>{"override Type StateType { get; }"}</code> |  |
-| <Link id="m-timetobeforcedoutofmodewhenoutsideboundary-2" /><code>{"float TimeToBeForcedOutOfModeWhenOutsideBoundary { get; }"}</code> |  |
-| <Link id="m-timetotoggleequipmentstate-2" /><code>{"float TimeToToggleEquipmentState { get; }"}</code> |  |
+| <Link id="m-animationstageoverlap-2" /><code>{"float AnimationStageOverlap { get; }"}</code> | How much the dummy's pose animation stages overlap (0 to 1). |
+| <Link id="m-customizationroom-2" /><code><Link to="/game-api/types/alta-customization/equipmentcustomizationroom">{"EquipmentCustomizationRoom"}</Link>{" CustomizationRoom { get; }"}</code> | The room prefab with the dummy, spawned for the local player. |
+| <Link id="m-dummymaterializationduration-2" /><code>{"float DummyMaterializationDuration { get; }"}</code> | How long the room takes to appear and disappear, in seconds. |
+| <Link id="m-dummyposeanimationduration-2" /><code>{"float DummyPoseAnimationDuration { get; }"}</code> | How long the dummy takes to copy the player's pose. |
+| <Link id="m-dummyspawndistancefromplayer" /><code>{"float DummySpawnDistanceFromPlayer { get; }"}</code> | How far in front of the player's feet the dummy appears. |
+| <Link id="m-flashduration-2" /><code>{"float FlashDuration { get; }"}</code> | How long the camera flash lasts when the pose is copied. |
+| <Link id="m-flashexposure-2" /><code>{"float FlashExposure { get; }"}</code> | Brightness of the camera flash. |
+| <Link id="m-flashfadeoutduration-2" /><code>{"float FlashFadeoutDuration { get; }"}</code> | How long the camera flash takes to fade. |
+| <Link id="m-isusingcameraflashonposecopy-2" /><code>{"bool IsUsingCameraFlashOnPoseCopy { get; }"}</code> | Whether a camera flash plays when the dummy copies the pose. |
+| <Link id="m-isusingdummyposes-2" /><code>{"bool IsUsingDummyPoses { get; }"}</code> | Whether the dummy copies the player's pose at all. |
+| <Link id="m-maxpositiondeltatotriggerpose-2" /><code>{"float MaxPositionDeltaToTriggerPose { get; }"}</code> | Most the player's bones may move and still count as holding still. |
+| <Link id="m-maxrotationdeltatotriggerpose-2" /><code>{"float MaxRotationDeltaToTriggerPose { get; }"}</code> | Most the player's bones may rotate (degrees) and still count as holding still. |
+| <Link id="m-minfreezetimetotriggerpose-2" /><code>{"float MinFreezeTimeToTriggerPose { get; }"}</code> | How long the player must hold still before the pose is copied. |
+| <Link id="m-mintimebetweenposes-2" /><code>{"float MinTimeBetweenPoses { get; }"}</code> | Shortest time between two pose copies. |
+| <Link id="m-posecheckingstartdelay-2" /><code>{"float PoseCheckingStartDelay { get; }"}</code> | Delay after entering the state before pose checking starts. |
+| <Link id="m-remotedummyeffects-2" /><code><Link to="/game-api/types/global-q-r/remoteequipmentmodevisuals">{"RemoteEquipmentModeVisuals"}</Link>{" RemoteDummyEffects { get; }"}</code> | Effect other players see in front of someone in this state. |
+| <Link id="m-statetype" /><code>{"override Type StateType { get; }"}</code> | Always `EquipmentState`. |
+| <Link id="m-timetobeforcedoutofmodewhenoutsideboundary-2" /><code>{"float TimeToBeForcedOutOfModeWhenOutsideBoundary { get; }"}</code> | How long the player can stay outside the room's boundary before leaving the state. |
+| <Link id="m-timetotoggleequipmentstate-2" /><code>{"float TimeToToggleEquipmentState { get; }"}</code> | Time setting for toggling the state. Not read anywhere in this build. |
 
 ## Used in
 

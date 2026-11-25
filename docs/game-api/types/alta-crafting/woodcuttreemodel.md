@@ -1,6 +1,6 @@
 ---
 title: "WoodcutTreeModel"
-description: "Takes hits on its WoodcutPoints; when chopped through (PieceChopped, server) it spawns the species' wedge or stick drops at its drop locations and des"
+description: "One choppable segment of a WoodcutTree (a trunk or branch piece)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Woodcutting`.
 
-Takes hits on its `WoodcutPoints`; when chopped through (`PieceChopped`, server) it spawns the species' wedge or stick drops at its drop locations and destroys itself.
+One choppable segment of a `WoodcutTree` (a trunk or branch piece). Hits from the tree's impact detector damage its woodcut points; on the server, enough damage around the bottom chops it off.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour)
@@ -47,37 +47,37 @@ Takes hits on its `WoodcutPoints`; when chopped through (`PieceChopped`, server)
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bottompoints" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{"> BottomPoints { get; }"}</code> |  |
-| <Link id="m-colors-2" /><code>{"Color[] Colors { get; }"}</code> |  |
-| <Link id="m-connections-2" /><code><Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{"[] Connections { get; }"}</code> |  |
-| <Link id="m-core" /><code><Link to="/game-api/types/global-c-d/colormodelcore-tr-tg-tb-ta">{"ColorModelCore"}</Link>{"<"}<Link to="/game-api/types/global-m-o/nullcolormodelpoint">{"NullColorModelPoint"}</Link>{", "}<Link to="/game-api/types/global-m-o/nullcolormodelpoint">{"NullColorModelPoint"}</Link>{", "}<Link to="/game-api/types/global-m-o/nullcolormodelpoint">{"NullColorModelPoint"}</Link>{", "}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{"> Core { get; private set; }"}</code> |  |
-| <Link id="m-droplocations-2" /><code>{"PositionRotation[] DropLocations { set; }"}</code> |  |
-| <Link id="m-dynamicmultiplier" /><code>{"float DynamicMultiplier { get; set; }"}</code> |  |
-| <Link id="m-finisheddirection-2" /><code>{"int FinishedDirection { get; }"}</code> |  |
-| <Link id="m-mapnode" /><code><Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" "}<Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"MapNode"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-mass-2" /><code>{"float Mass { get; }"}</code> |  |
-| <Link id="m-mesheffect" /><code><Link to="/game-api/types/global-p/pooledparticlesystemmeshemision">{"PooledParticleSystemMeshEmision"}</Link>{" MeshEffect { get; set; }"}</code> |  |
-| <Link id="m-meshes-2" /><code>{"Mesh[] Meshes { get; }"}</code> |  |
-| <Link id="m-tree" /><code><Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" Tree { get; }"}</code> |  |
-| <Link id="m-type-2" /><code><Link to="/game-api/types/alta-crafting/woodcutconnectiontype">{"WoodcutConnectionType"}</Link>{" Type { get; }"}</code> |  |
-| <Link id="m-woodcutpoints" /><code>{"List<"}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{"> WoodcutPoints { get; }"}</code> |  |
+| <Link id="m-bottompoints" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{"> BottomPoints { get; }"}</code> | The woodcut points around the bottom of the segment, where it is chopped off. |
+| <Link id="m-colors-2" /><code>{"Color[] Colors { get; }"}</code> | Colour data for the segment's mesh. |
+| <Link id="m-connections-2" /><code><Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{"[] Connections { get; }"}</code> | Connection points where child segments attach. |
+| <Link id="m-core" /><code><Link to="/game-api/types/global-c-d/colormodelcore-tr-tg-tb-ta">{"ColorModelCore"}</Link>{"<"}<Link to="/game-api/types/global-m-o/nullcolormodelpoint">{"NullColorModelPoint"}</Link>{", "}<Link to="/game-api/types/global-m-o/nullcolormodelpoint">{"NullColorModelPoint"}</Link>{", "}<Link to="/game-api/types/global-m-o/nullcolormodelpoint">{"NullColorModelPoint"}</Link>{", "}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{"> Core { get; private set; }"}</code> | Colour model that shows the chop marks on the mesh. Null on a headless server. |
+| <Link id="m-droplocations-2" /><code>{"PositionRotation[] DropLocations { set; }"}</code> | Where sticks or wedges spawn when the segment is chopped up. Set only. |
+| <Link id="m-dynamicmultiplier" /><code>{"float DynamicMultiplier { get; set; }"}</code> | Damage multiplier, raised for segments of a felled (non-kinematic) tree. |
+| <Link id="m-finisheddirection-2" /><code>{"int FinishedDirection { get; }"}</code> | Index of the point the segment was chopped from, or -1. |
+| <Link id="m-mapnode" /><code><Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" "}<Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"MapNode"}</Link>{" { get; set; }"}</code> | This segment's node in the tree's layout. |
+| <Link id="m-mass-2" /><code>{"float Mass { get; }"}</code> | Mass of this segment. |
+| <Link id="m-mesheffect" /><code><Link to="/game-api/types/global-p/pooledparticlesystemmeshemision">{"PooledParticleSystemMeshEmision"}</Link>{" MeshEffect { get; set; }"}</code> | Particle effect for the segment's mesh. |
+| <Link id="m-meshes-2" /><code>{"Mesh[] Meshes { get; }"}</code> | LOD meshes for the segment. |
+| <Link id="m-tree" /><code><Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" Tree { get; }"}</code> | The tree this segment belongs to. |
+| <Link id="m-type-2" /><code><Link to="/game-api/types/alta-crafting/woodcutconnectiontype">{"WoodcutConnectionType"}</Link>{" Type { get; }"}</code> | The connection type, which says how many bones it has and whether it is a stick. |
+| <Link id="m-woodcutpoints" /><code>{"List<"}<Link to="/game-api/types/global-t-x/woodcutpointdata">{"WoodcutPointData"}</Link>{"> WoodcutPoints { get; }"}</code> | All woodcut points on the segment. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chopped" /><code>{"event "}<Link to="/game-api/types/alta-crafting/woodcuttreemodelchopped">{"WoodcutTreeModelChopped"}</Link>{" Chopped"}</code> |  |
-| <Link id="m-tookdamage" /><code>{"event "}<Link to="/game-api/types/alta-crafting/woodcuttreemodeldamaged">{"WoodcutTreeModelDamaged"}</Link>{" TookDamage"}</code> |  |
+| <Link id="m-chopped" /><code>{"event "}<Link to="/game-api/types/alta-crafting/woodcuttreemodelchopped">{"WoodcutTreeModelChopped"}</Link>{" Chopped"}</code> | Raised when the segment is chopped off its parent. The tree splits it into a new tree. |
+| <Link id="m-tookdamage" /><code>{"event "}<Link to="/game-api/types/alta-crafting/woodcuttreemodeldamaged">{"WoodcutTreeModelDamaged"}</Link>{" TookDamage"}</code> | Raised with the total damage when a hit damages the segment. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkcomplete" /><code>{"bool CheckComplete()"}</code> |  |
-| <Link id="m-chop" /><code>{"void Chop(int side)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-piecechopped" /><code>{"void PieceChopped()"}</code> |  |
-| <Link id="m-setimpactdetector" /><code>{"void SetImpactDetector("}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector)"}</code> |  |
+| <Link id="m-checkcomplete" /><code>{"bool CheckComplete()"}</code> | Server: checks the bottom points against the species thresholds and chops the segment if they are cut deep enough. |
+| <Link id="m-chop" /><code>{"void Chop(int side)"}</code> | Marks the segment as chopped from a side and raises `Chopped`, unless it is the root segment. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the colour model for chop marks, except on a headless server. |
+| <Link id="m-piecechopped" /><code>{"void PieceChopped()"}</code> | Server: spawns the species' sticks or wedges at the drop locations and destroys the segment. |
+| <Link id="m-setimpactdetector" /><code>{"void SetImpactDetector("}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector)"}</code> | Switches which impact detector's hits damage this segment. |
 | <Link id="m-handlehit" /><code>{"private void HandleHit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |  |
 | <Link id="m-randomdamage" /><code>{"private void RandomDamage()"}</code> |  |
 

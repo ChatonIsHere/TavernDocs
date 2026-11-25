@@ -1,6 +1,6 @@
 ---
 title: "WyrmSpitSettings"
-description: "class WyrmSpitSettings in Root.Township."
+description: "Action settings for a wyrm's spit attack (ActiveSpit), scored by distance, hurt and whether the target is the same as before."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WyrmSpitSettings
 
 A **class** in `Root.Township`, `Alta.Intelligence.Wyrms`.
+
+Action settings for a wyrm's spit attack (`ActiveSpit`), scored by distance, hurt and whether the target is the same as before.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`TimedActionComponent`](/game-api/types/alta-intelligence/timedactioncomponent)
@@ -38,19 +40,19 @@ A **class** in `Root.Township`, `Alta.Intelligence.Wyrms`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animatedangle-2" /><code>{"string AnimatedAngle { get; }"}</code> |  |
-| <Link id="m-bestrange-2" /><code>{"float BestRange { get; }"}</code> |  |
-| <Link id="m-changetargetmultiplier-2" /><code>{"float ChangeTargetMultiplier { get; }"}</code> |  |
-| <Link id="m-hurtweighting-2" /><code>{"float HurtWeighting { get; }"}</code> |  |
-| <Link id="m-maximumrange-2" /><code>{"float MaximumRange { get; }"}</code> |  |
-| <Link id="m-sametargetmultiplier-2" /><code>{"float SameTargetMultiplier { get; }"}</code> |  |
+| <Link id="m-animatedangle-2" /><code>{"string AnimatedAngle { get; }"}</code> | Animator float for the aim angle. |
+| <Link id="m-bestrange-2" /><code>{"float BestRange { get; }"}</code> | Distance it most likes to spit from. |
+| <Link id="m-changetargetmultiplier-2" /><code>{"float ChangeTargetMultiplier { get; }"}</code> | Score multiplier when the target is a new one. |
+| <Link id="m-hurtweighting-2" /><code>{"float HurtWeighting { get; }"}</code> | Weight of the hurt rule, so targets that hurt it score higher. |
+| <Link id="m-maximumrange-2" /><code>{"float MaximumRange { get; }"}</code> | Furthest distance it spits from. |
+| <Link id="m-sametargetmultiplier-2" /><code>{"float SameTargetMultiplier { get; }"}</code> | Score multiplier when the target is the same as before. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getrandomspittrigger" /><code>{"string GetRandomSpitTrigger()"}</code> |  |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |  |
+| <Link id="m-getrandomspittrigger" /><code>{"string GetRandomSpitTrigger()"}</code> | Picks one of the spit animator triggers at random. |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Creates the `ActiveSpit` action. |
 
 ## Used in
 

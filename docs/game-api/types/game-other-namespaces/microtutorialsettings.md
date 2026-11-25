@@ -1,6 +1,6 @@
 ---
 title: "MicroTutorialSettings"
-description: "One micro tutorial asset: a name, a list of steps and a completion message. It is a PlayerProgressFlag, so completion is stored per player."
+description: "One micro tutorial asset: a name, a list of steps and a completion message."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

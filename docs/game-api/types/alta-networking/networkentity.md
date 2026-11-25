@@ -1,6 +1,6 @@
 ---
 title: "NetworkEntity"
-description: "Runs on server and clients."
+description: "A networked object: anything the server spawns, saves and syncs to players, including embedded parts of a prefab."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Networking`.
 
-Runs on server and clients.
+A networked object: anything the server spawns, saves and syncs to players, including embedded parts of a prefab. Both sides; the server owns it. Get one from a component with `GetComponent<NetworkEntity>()` or a behaviour's `Entity`.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MonoBehaviour`, [`IChunkedEntity`](/game-api/types/alta-networking/ichunkedentity), [`IEntitySerialized`](/game-api/types/alta-networking/ientityserialized), [`INetworkEntity`](/game-api/types/alta-networking/inetworkentity)
@@ -31,7 +31,7 @@ Runs on server and clients.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializationfinished" /><code><Link to="/game-api/types/global-m-o/onetimeevent-t">{"OneTimeEvent"}</Link>{"<"}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{"> InitializationFinished"}</code> |  |
+| <Link id="m-initializationfinished" /><code><Link to="/game-api/types/global-m-o/onetimeevent-t">{"OneTimeEvent"}</Link>{"<"}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{"> InitializationFinished"}</code> | A one-time event raised after `Initialize`. Handlers added later run straight away. |
 | <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |  |
 | <Link id="m-chunker" /><code>{"private "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" chunker"}</code> |  |
 | <Link id="m-commonimpacttool" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" commonImpactTool"}</code> |  |
@@ -58,88 +58,88 @@ Runs on server and clients.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-childcount" /><code>{"int ChildCount { get; }"}</code> |  |
-| <Link id="m-children" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> Children { get; }"}</code> |  |
-| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-chunkingparent" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" ChunkingParent { get; set; }"}</code> |  |
-| <Link id="m-commonimpacttool-2" /><code><Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" CommonImpactTool { get; }"}</code> |  |
-| <Link id="m-commoninteractable-2" /><code><Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" CommonInteractable { get; }"}</code> |  |
-| <Link id="m-commonpickup-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" CommonPickup { get; }"}</code> |  |
-| <Link id="m-currentprioritymodifiers" /><code><Link to="/game-api/types/alta-networking/networkentity-syncprioritymodifiers">{"NetworkEntity.SyncPriorityModifiers"}</Link>{" CurrentPriorityModifiers { get; set; }"}</code> |  |
-| <Link id="m-editorsafescene" /><code><Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" EditorSafeScene { get; }"}</code> |  |
-| <Link id="m-embeddedid-2" /><code>{"int EmbeddedId { get; set; }"}</code> |  |
-| <Link id="m-frameposition" /><code>{"Vector3 FramePosition { get; }"}</code> |  |
-| <Link id="m-hash-2" /><code>{"uint Hash { get; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"uint Identifier { get; private set; }"}</code> |  |
-| <Link id="m-isbeingdestroyed" /><code>{"bool IsBeingDestroyed { get; set; }"}</code> |  |
-| <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; private set; }"}</code> |  |
-| <Link id="m-isonclientorlocaltest" /><code>{"bool IsOnClientOrLocalTest { get; }"}</code> |  |
-| <Link id="m-issendingmessages-2" /><code>{"bool IsSendingMessages { get; set; }"}</code> |  |
-| <Link id="m-isserialized" /><code>{"bool IsSerialized { get; }"}</code> |  |
-| <Link id="m-isserializerauthoritative" /><code>{"bool IsSerializerAuthoritative { get; }"}</code> |  |
-| <Link id="m-messagehandler-2" /><code><Link to="/game-api/types/alta-networking/entitymessagehandler">{"EntityMessageHandler"}</Link>{" MessageHandler { get; }"}</code> |  |
-| <Link id="m-originalname" /><code>{"string OriginalName { get; set; }"}</code> |  |
-| <Link id="m-parent" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Parent { get; private set; }"}</code> |  |
-| <Link id="m-playersspawnedfor" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> PlayersSpawnedFor { get; }"}</code> |  |
-| <Link id="m-playersspawnedforcount" /><code>{"int PlayersSpawnedForCount { get; }"}</code> |  |
-| <Link id="m-positionchunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" PositionChunk { get; }"}</code> |  |
-| <Link id="m-prefab-2" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Prefab { get; }"}</code> |  |
-| <Link id="m-prefabroot" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" PrefabRoot { get; private set; }"}</code> |  |
-| <Link id="m-safename" /><code>{"string SafeName { get; }"}</code> |  |
-| <Link id="m-scene" /><code><Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" Scene { get; protected set; }"}</code> |  |
-| <Link id="m-serializer-2" /><code><Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" Serializer { get; }"}</code> |  |
-| <Link id="m-spawnedcount" /><code>{"static int SpawnedCount { get; private set; }"}</code> |  |
-| <Link id="m-spawner" /><code><Link to="/game-api/types/alta-networking/spawnmanager">{"SpawnManager"}</Link>{" Spawner { get; private set; }"}</code> |  |
-| <Link id="m-spawnindex" /><code><Link to="/game-api/types/alta-networking/spawnindex">{"SpawnIndex"}</Link>{" "}<Link to="/game-api/types/alta-networking/spawnindex">{"SpawnIndex"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-syncchannel" /><code>{"static "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" SyncChannel { get; set; }"}</code> |  |
-| <Link id="m-syncpriority-2" /><code>{"int SyncPriority { get; }"}</code> |  |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |  |
+| <Link id="m-childcount" /><code>{"int ChildCount { get; }"}</code> | How many entities have this one as their `ChunkingParent`. |
+| <Link id="m-children" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> Children { get; }"}</code> | Entities that have this one as their `ChunkingParent`, such as docked items and a bag's contents. |
+| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" { get; set; }"}</code> | The chunk the entity is in. Setting it moves it there; on the server this is ignored while it has a `ChunkingParent`. |
+| <Link id="m-chunkingparent" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" ChunkingParent { get; set; }"}</code> | The entity this one rides with (a dock's owner, a part's structure). It takes that parent's chunk. |
+| <Link id="m-commonimpacttool-2" /><code><Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" CommonImpactTool { get; }"}</code> | The `ImpactTool` on the same object, cached at bake time, or null. |
+| <Link id="m-commoninteractable-2" /><code><Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" CommonInteractable { get; }"}</code> | The `Interactable` on the same object, cached at bake time, or null. |
+| <Link id="m-commonpickup-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" CommonPickup { get; }"}</code> | The `Pickup` on the same object, cached at bake time, or null. |
+| <Link id="m-currentprioritymodifiers" /><code><Link to="/game-api/types/alta-networking/networkentity-syncprioritymodifiers">{"NetworkEntity.SyncPriorityModifiers"}</Link>{" CurrentPriorityModifiers { get; set; }"}</code> | Flags that raise sync priority. `DockedOrInteracted` is set while held or docked and lowers `SyncPriority` by 5. |
+| <Link id="m-editorsafescene" /><code><Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" EditorSafeScene { get; }"}</code> | The entity's scene, or in the editor outside play mode, the first `NetworkScene` found. |
+| <Link id="m-embeddedid-2" /><code>{"int EmbeddedId { get; set; }"}</code> | Its index in its prefab's embedded entity list. |
+| <Link id="m-frameposition" /><code>{"Vector3 FramePosition { get; }"}</code> | `transform.position`, cached once per frame. Cheap in hot loops. |
+| <Link id="m-hash-2" /><code>{"uint Hash { get; }"}</code> | The entity's own hash inside its prefab, set in the editor. Used to match embedded entities when a save loads. |
+| <Link id="m-identifier" /><code>{"uint Identifier { get; private set; }"}</code> | The runtime id used by messages and commands. Changes on every spawn or chunk load, so never save it. |
+| <Link id="m-isbeingdestroyed" /><code>{"bool IsBeingDestroyed { get; set; }"}</code> | True once a destroy or unload has started. Check it in delayed callbacks. |
+| <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; private set; }"}</code> | True after `Initialize` has run. |
+| <Link id="m-isonclientorlocaltest" /><code>{"bool IsOnClientOrLocalTest { get; }"}</code> | True on a client once initialized, or in a local test. False on a dedicated server. |
+| <Link id="m-issendingmessages-2" /><code>{"bool IsSendingMessages { get; set; }"}</code> | When false, messages from this entity are dropped with a warning. |
+| <Link id="m-isserialized" /><code>{"bool IsSerialized { get; }"}</code> | True if the entity has any `INetworkSerialized` behaviours and so a `Serializer`. |
+| <Link id="m-isserializerauthoritative" /><code>{"bool IsSerializerAuthoritative { get; }"}</code> | Whether this side owns the entity's serialized state. Throws if there's no serializer. |
+| <Link id="m-messagehandler-2" /><code><Link to="/game-api/types/alta-networking/entitymessagehandler">{"EntityMessageHandler"}</Link>{" MessageHandler { get; }"}</code> | Sends this entity's messages to its players or to the server. Created on first use. |
+| <Link id="m-originalname" /><code>{"string OriginalName { get; set; }"}</code> | The object's name before `Initialize` prefixed it with the id. |
+| <Link id="m-parent" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Parent { get; private set; }"}</code> | For an embedded entity, the prefab entity it's part of. Null otherwise. Not the same as `ChunkingParent`. |
+| <Link id="m-playersspawnedfor" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> PlayersSpawnedFor { get; }"}</code> | Server: the players whose game currently has this entity. |
+| <Link id="m-playersspawnedforcount" /><code>{"int PlayersSpawnedForCount { get; }"}</code> | Server: how many players currently have this entity. |
+| <Link id="m-positionchunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" PositionChunk { get; }"}</code> | The chunk its position is written against: the chunking parent's, or its own. Populations can override how it's found. |
+| <Link id="m-prefab-2" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Prefab { get; }"}</code> | The `NetworkPrefab` on the same object. Null for embedded entities. |
+| <Link id="m-prefabroot" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" PrefabRoot { get; private set; }"}</code> | The top entity of the prefab this belongs to. Itself for a prefab, the prefab entity for an embedded part. |
+| <Link id="m-safename" /><code>{"string SafeName { get; }"}</code> | `id - OriginalName`, handy for logs. |
+| <Link id="m-scene" /><code><Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" Scene { get; protected set; }"}</code> | The network scene the entity belongs to. |
+| <Link id="m-serializer-2" /><code><Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" Serializer { get; }"}</code> | The state sync for its `INetworkSerialized` behaviours, or null if it has none. |
+| <Link id="m-spawnedcount" /><code>{"static int SpawnedCount { get; private set; }"}</code> | Static. Live `NetworkEntity` components in the process, embedded parts included. |
+| <Link id="m-spawner" /><code><Link to="/game-api/types/alta-networking/spawnmanager">{"SpawnManager"}</Link>{" Spawner { get; private set; }"}</code> | The scene's spawn manager, used to spawn and destroy entities. |
+| <Link id="m-spawnindex" /><code><Link to="/game-api/types/alta-networking/spawnindex">{"SpawnIndex"}</Link>{" "}<Link to="/game-api/types/alta-networking/spawnindex">{"SpawnIndex"}</Link>{" { get; }"}</code> | A spawn counter used to ignore stale destroy messages for an id that has been reused. |
+| <Link id="m-syncchannel" /><code>{"static "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" SyncChannel { get; set; }"}</code> | Static. The connection channel entity messages go on; swapped temporarily while chunks are synced. |
+| <Link id="m-syncpriority-2" /><code>{"int SyncPriority { get; }"}</code> | Lower syncs first when a chunk is sent to a player. Set per prefab (10 by default), 5 less while held or docked. |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | The entity's transform, cached. |
 | <Link id="m-alta-networking-ichunkedentity-chunker" /><code>{"private "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" Alta.Networking.IChunkedEntity.Chunker { get; }"}</code> |  |
-| <Link id="m-chunker-2" /><code>{"protected "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-chunker-2" /><code>{"protected "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" { get; }"}</code> | Protected. The helper that tracks this entity's chunk, chunking parent, children and the players it's spawned for. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addedtochunk" /><code>{"event "}<Link to="/game-api/types/global-c-d/chunkeventhandler">{"ChunkEventHandler"}</Link>{" AddedToChunk"}</code> |  |
-| <Link id="m-childadded" /><code>{"event "}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" ChildAdded"}</code> |  |
-| <Link id="m-childremoved" /><code>{"event "}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" ChildRemoved"}</code> |  |
-| <Link id="m-destroyedbyscene" /><code>{"event "}<Link to="/game-api/types/alta-networking/entitydespawnedhandler">{"EntityDespawnedHandler"}</Link>{" DestroyedByScene"}</code> |  |
-| <Link id="m-parentchanged" /><code>{"event "}<Link to="/game-api/types/alta-networking/parentchangedhandler">{"ParentChangedHandler"}</Link>{" ParentChanged"}</code> |  |
-| <Link id="m-removedfromchunk" /><code>{"event "}<Link to="/game-api/types/global-c-d/chunkeventhandler">{"ChunkEventHandler"}</Link>{" RemovedFromChunk"}</code> |  |
+| <Link id="m-addedtochunk" /><code>{"event "}<Link to="/game-api/types/global-c-d/chunkeventhandler">{"ChunkEventHandler"}</Link>{" AddedToChunk"}</code> | Raised when the entity enters a chunk. |
+| <Link id="m-childadded" /><code>{"event "}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" ChildAdded"}</code> | Raised when another entity takes this one as its `ChunkingParent`. |
+| <Link id="m-childremoved" /><code>{"event "}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" ChildRemoved"}</code> | Raised when a child entity stops riding on this one. |
+| <Link id="m-destroyedbyscene" /><code>{"event "}<Link to="/game-api/types/alta-networking/entitydespawnedhandler">{"EntityDespawnedHandler"}</Link>{" DestroyedByScene"}</code> | Raised when the spawner destroys or unloads the entity, with whether it was an unload. Cleared after it fires. |
+| <Link id="m-parentchanged" /><code>{"event "}<Link to="/game-api/types/alta-networking/parentchangedhandler">{"ParentChangedHandler"}</Link>{" ParentChanged"}</code> | Raised when the `ChunkingParent` changes, with the old and new parent. |
+| <Link id="m-removedfromchunk" /><code>{"event "}<Link to="/game-api/types/global-c-d/chunkeventhandler">{"ChunkEventHandler"}</Link>{" RemovedFromChunk"}</code> | Raised when the entity leaves a chunk. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-delayedscenedestroy" /><code>{"void DelayedSceneDestroy()"}</code> |  |
-| <Link id="m-editorevaluatechunk" /><code>{"void EditorEvaluateChunk("}<Link to="/game-api/types/alta-world/fastchunklookup">{"FastChunkLookup"}</Link>{" chunkLookup)"}</code> |  |
-| <Link id="m-embededdedinitialize" /><code>{"void EmbededdedInitialize("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent)"}</code> |  |
-| <Link id="m-evaluatechunk" /><code>{"void EvaluateChunk(bool isLoggingOnFailure = true)"}</code> |  |
-| <Link id="m-forcepositionsync" /><code>{"void ForcePositionSync()"}</code> |  |
-| <Link id="m-forcesetisinitialized" /><code>{"void ForceSetIsInitialized()"}</code> |  |
-| <Link id="m-getcomponentonentity" /><code>{"T GetComponentOnEntity<T>()"}</code> |  |
-| <Link id="m-getcomponentsonentity" /><code>{"IEnumerable<T> GetComponentsOnEntity<T>() (iterator)"}</code> |  |
-| <Link id="m-initialize" /><code>{"virtual void Initialize("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, uint identifier, uint[] embeddedIdentifiers, bool isInitializingBehaviours)"}</code> |  |
-| <Link id="m-initializeasplayer" /><code>{"void InitializeAsPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-initializebehaviours" /><code>{"void InitializeBehaviours()"}</code> |  |
-| <Link id="m-initializewithchildrenasserver" /><code>{"void InitializeWithChildrenAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-isspawnedfor" /><code>{"bool IsSpawnedFor("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"virtual void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-ondestroyedbyscene" /><code>{"void OnDestroyedByScene(bool isUnload)"}</code> |  |
-| <Link id="m-ondisconnected" /><code>{"virtual void OnDisconnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"void OnValidate()"}</code> |  |
-| <Link id="m-ownassingleplayer" /><code>{"void OwnAsSinglePlayer()"}</code> |  |
-| <Link id="m-preparefordestroy" /><code>{"void PrepareForDestroy()"}</code> |  |
-| <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/replaceavoidflags">{"ReplaceAvoidFlags"}</Link>{" replaceAvoidFlags = 0)"}</code> |  |
-| <Link id="m-scenedestroy" /><code>{"void SceneDestroy()"}</code> |  |
-| <Link id="m-setupgetpositionchunk" /><code>{"void SetupGetPositionChunk(Func<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{", "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> newMethod)"}</code> |  |
-| <Link id="m-setupgetpositionchunk-2" /><code>{"void SetupGetPositionChunk()"}</code> |  |
-| <Link id="m-spawnandreplacewith" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnAndReplaceWith("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, bool isDestroying = true)"}</code> |  |
-| <Link id="m-spawnandreplacewith-2" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnAndReplaceWith(uint prefabHash, bool isDestroying = true)"}</code> |  |
-| <Link id="m-startcoroutine" /><code><Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" StartCoroutine(IEnumerator enumerator)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
+| <Link id="m-delayedscenedestroy" /><code>{"void DelayedSceneDestroy()"}</code> | Calls `SceneDestroy` 0.1 seconds later. |
+| <Link id="m-editorevaluatechunk" /><code>{"void EditorEvaluateChunk("}<Link to="/game-api/types/alta-world/fastchunklookup">{"FastChunkLookup"}</Link>{" chunkLookup)"}</code> | Editor tool: puts the entity in a chunk using a prebuilt chunk lookup. |
+| <Link id="m-embededdedinitialize" /><code>{"void EmbededdedInitialize("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent)"}</code> | Sets the parent prefab entity for an embedded entity and makes that parent its `ChunkingParent` and `PrefabRoot`. |
+| <Link id="m-evaluatechunk" /><code>{"void EvaluateChunk(bool isLoggingOnFailure = true)"}</code> | Server: moves the entity to the chunk that holds its position. Can destroy it if no chunk does. |
+| <Link id="m-forcepositionsync" /><code>{"void ForcePositionSync()"}</code> | Server: re-evaluates its chunk and sends its position and rotation to every player who has it. Use after moving it. |
+| <Link id="m-forcesetisinitialized" /><code>{"void ForceSetIsInitialized()"}</code> | Marks the entity initialized without running `Initialize`. |
+| <Link id="m-getcomponentonentity" /><code>{"T GetComponentOnEntity<T>()"}</code> | The first component of that type in the entity's behaviour list. Faster than `GetComponent` but only finds network behaviours. |
+| <Link id="m-getcomponentsonentity" /><code>{"IEnumerable<T> GetComponentsOnEntity<T>() (iterator)"}</code> | Every component of that type in the entity's behaviour list. |
+| <Link id="m-initialize" /><code>{"virtual void Initialize("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, uint identifier, uint[] embeddedIdentifiers, bool isInitializingBehaviours)"}</code> | Gives the entity its scene and id, renames it to `id - name`, builds its serializer and initializes embedded entities and behaviours. |
+| <Link id="m-initializeasplayer" /><code>{"void InitializeAsPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> | Hands sync authority for this entity to a player's body. Called when a `PlayerController` links to its player. |
+| <Link id="m-initializeasserver" /><code>{"void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: makes the server authoritative and calls `InitializeAsServer` on every behaviour. Runs once; later calls return early. |
+| <Link id="m-initializebehaviours" /><code>{"void InitializeBehaviours()"}</code> | Calls `Initialize` on every behaviour in the entity's list, logging any exception. |
+| <Link id="m-initializewithchildrenasserver" /><code>{"void InitializeWithChildrenAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: runs `InitializeAsServer` on this entity and then on every child, recursively. |
+| <Link id="m-isspawnedfor" /><code>{"bool IsSpawnedFor("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: whether that player's game currently has this entity. |
+| <Link id="m-onconnected" /><code>{"virtual void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: calls `OnConnected` on every behaviour when the entity is sent to a player. |
+| <Link id="m-ondestroyedbyscene" /><code>{"void OnDestroyedByScene(bool isUnload)"}</code> | Called by the spawner on destroy or unload: frees the serializer and raises `DestroyedByScene`. |
+| <Link id="m-ondisconnected" /><code>{"virtual void OnDisconnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: calls `OnDisconnected` on every behaviour when a player loses the entity. |
+| <Link id="m-onvalidate" /><code>{"void OnValidate()"}</code> | Editor: makes sure the entity has a hash. |
+| <Link id="m-ownassingleplayer" /><code>{"void OwnAsSinglePlayer()"}</code> | Not implemented; throws. |
+| <Link id="m-preparefordestroy" /><code>{"void PrepareForDestroy()"}</code> | Server: frees the entity's id link before destroy. Logs an error instead for a child still attached to a parent in a chunk. |
+| <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/replaceavoidflags">{"ReplaceAvoidFlags"}</Link>{" replaceAvoidFlags = 0)"}</code> | Copies this entity's position, chunk and component state (through `IEntityReplaceHandler`s) onto another entity. Flags skip position or chunk. |
+| <Link id="m-scenedestroy" /><code>{"void SceneDestroy()"}</code> | Server: destroys the entity properly, on every client too. Does nothing on clients. |
+| <Link id="m-setupgetpositionchunk" /><code>{"void SetupGetPositionChunk(Func<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{", "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> newMethod)"}</code> | Sets how `PositionChunk` is worked out. With no argument, uses the chunking parent's chunk or its own. |
+| <Link id="m-setupgetpositionchunk-2" /><code>{"void SetupGetPositionChunk()"}</code> | Sets how `PositionChunk` is worked out. With no argument, uses the chunking parent's chunk or its own. |
+| <Link id="m-spawnandreplacewith" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnAndReplaceWith("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, bool isDestroying = true)"}</code> | Server: spawns another prefab in its place with this one's position, state, chunk and chunking parent, then destroys this one by default. |
+| <Link id="m-spawnandreplacewith-2" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnAndReplaceWith(uint prefabHash, bool isDestroying = true)"}</code> | Server: spawns another prefab in its place with this one's position, state, chunk and chunking parent, then destroys this one by default. |
+| <Link id="m-startcoroutine" /><code><Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" StartCoroutine(IEnumerator enumerator)"}</code> | Starts an `AltaCoroutine` that stops when the entity is destroyed by the scene. Hides the Unity method. |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Sets `PrefabRoot` to itself until initialized and counts the entity in `SpawnedCount`. |
 | <Link id="m-checkfornetworkbehaviour" /><code>{"private bool CheckForNetworkBehaviour()"}</code> |  |
 | <Link id="m-createserializer" /><code>{"private void CreateSerializer(MonoBehaviour[] behaviours)"}</code> |  |
 | <Link id="m-onchildadded" /><code>{"private void OnChildAdded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" child)"}</code> |  |

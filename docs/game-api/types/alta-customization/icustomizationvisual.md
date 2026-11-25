@@ -1,6 +1,6 @@
 ---
 title: "ICustomizationVisual"
-description: "interface ICustomizationVisual in Root.Township."
+description: "The visual for a cosmetic or equipment item: its parts and which customization slots it fills or disables."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Customization`.
 
+The visual for a cosmetic or equipment item: its parts and which customization slots it fills or disables. Used by `CustomizationVisualManager`.
+
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Derived types** [`CustomizationVisual`](/game-api/types/alta-customization/customizationvisual)
 
@@ -19,10 +21,10 @@ An **interface** in `Root.Township`, `Alta.Customization`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" Definition { get; set; }"}</code> |  |
-| <Link id="m-disableslots" /><code>{"IEnumerable<int> DisableSlots { get; }"}</code> |  |
-| <Link id="m-parts" /><code><Link to="/game-api/types/alta-customization/icustomizationpart">{"ICustomizationPart"}</Link>{"[] Parts { get; }"}</code> |  |
-| <Link id="m-primaryslots" /><code>{"IEnumerable<int> PrimarySlots { get; }"}</code> |  |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" Definition { get; set; }"}</code> | The cosmetic or equipment definition this visual belongs to. |
+| <Link id="m-disableslots" /><code>{"IEnumerable<int> DisableSlots { get; }"}</code> | Slots this item hides while worn. |
+| <Link id="m-parts" /><code><Link to="/game-api/types/alta-customization/icustomizationpart">{"ICustomizationPart"}</Link>{"[] Parts { get; }"}</code> | The visual's parts, each with its own slots and arguments. |
+| <Link id="m-primaryslots" /><code>{"IEnumerable<int> PrimarySlots { get; }"}</code> | Slots the item as a whole sits in. |
 
 ## Used in
 

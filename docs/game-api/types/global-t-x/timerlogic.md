@@ -1,6 +1,6 @@
 ---
 title: "TimerLogic"
-description: "class TimerLogic in Root.Township."
+description: "Saved component that runs a timer for a set duration and fires an event when it ends."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TimerLogic
 
 A **class** in `Root.Township`, no namespace.
+
+Saved component that runs a timer for a set duration and fires an event when it ends. Base for `ImpactDetectionLogic`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `MonoBehaviour`, [`ISavable<TimerLogicSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<TimerLogicSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -29,20 +31,20 @@ A **class** in `Root.Township`, no namespace.
 | --- | --- |
 | <Link id="m-activeduration" /><code>{"private float activeDuration"}</code> |  |
 | <Link id="m-activeonload" /><code>{"private bool activeOnLoad"}</code> |  |
-| <Link id="m-activeprogress" /><code>{"protected float activeProgress"}</code> |  |
-| <Link id="m-timeralreadyactive" /><code>{"protected bool timerAlreadyActive"}</code> |  |
+| <Link id="m-activeprogress" /><code>{"protected float activeProgress"}</code> | Timer progress from 0 to 1. |
+| <Link id="m-timeralreadyactive" /><code>{"protected bool timerAlreadyActive"}</code> | True while the timer runs. |
 | <Link id="m-timerover" /><code>{"private UnityEvent timerOver"}</code> |  |
-| <Link id="m-timerresetswhenretriggered" /><code>{"protected bool timerResetsWhenRetriggered"}</code> |  |
+| <Link id="m-timerresetswhenretriggered" /><code>{"protected bool timerResetsWhenRetriggered"}</code> | Whether starting the timer again resets its progress. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-timertoggle" /><code>{"protected event "}<Link to="/game-api/types/global-t-x/timerlogic-timeevent">{"TimerLogic.TimeEvent"}</Link>{" timerToggle"}</code> |  |
+| <Link id="m-timertoggle" /><code>{"protected event "}<Link to="/game-api/types/global-t-x/timerlogic-timeevent">{"TimerLogic.TimeEvent"}</Link>{" timerToggle"}</code> | Raised with true when the timer starts and false when it ends. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-starttimer" /><code>{"void StartTimer()"}</code> |  |
-| <Link id="m-waitactivetimer" /><code>{"protected IEnumerator WaitActiveTimer() (iterator)"}</code> |  |
+| <Link id="m-starttimer" /><code>{"void StartTimer()"}</code> | Starts the timer. If it is already running, it restarts the progress when `timerResetsWhenRetriggered` is set. |
+| <Link id="m-waitactivetimer" /><code>{"protected IEnumerator WaitActiveTimer() (iterator)"}</code> | The timer coroutine. Raises `timerToggle` at start and end, then fires the timer over event. |

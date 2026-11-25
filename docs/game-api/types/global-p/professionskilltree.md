@@ -1,6 +1,6 @@
 ---
 title: "ProfessionSkillTree"
-description: "ScriptableObject, one per path, loaded from Resources/ProgressionTrees/."
+description: "A skill tree asset for one progression path: its slots, icon and model."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-`ScriptableObject`, one per path, loaded from `Resources/ProgressionTrees/`.
+A skill tree asset for one progression path: its slots, icon and model. Loaded from `Resources/ProgressionTrees/`; get one with `GetProfessionTree`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `ScriptableObject`
@@ -40,19 +40,19 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; }"}</code> |  |
-| <Link id="m-path-2" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" Path { get; }"}</code> |  |
-| <Link id="m-pathmodel-2" /><code>{"GameObject PathModel { get; }"}</code> |  |
-| <Link id="m-slots-2" /><code>{"List<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> Slots { get; }"}</code> |  |
-| <Link id="m-treeicon-2" /><code>{"Sprite TreeIcon { get; }"}</code> |  |
+| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; }"}</code> | Whether the tree is turned on. |
+| <Link id="m-path-2" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" Path { get; }"}</code> | The progression path this tree belongs to. |
+| <Link id="m-pathmodel-2" /><code>{"GameObject PathModel { get; }"}</code> | Model shown for the path. |
+| <Link id="m-slots-2" /><code>{"List<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> Slots { get; }"}</code> | The tree's skill slots. |
+| <Link id="m-treeicon-2" /><code>{"Sprite TreeIcon { get; }"}</code> | Icon sprite for the tree. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getprofessiontree" /><code>{"static "}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{" GetProfessionTree("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
-| <Link id="m-getslot" /><code>{"bool GetSlot(uint hash, out "}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"void OnValidate()"}</code> |  |
+| <Link id="m-getprofessiontree" /><code>{"static "}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{" GetProfessionTree("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | Returns the tree for a path, loading all trees on first call. Logs an error if there is none. |
+| <Link id="m-getslot" /><code>{"bool GetSlot(uint hash, out "}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> | Finds a slot in this tree by its hash. |
+| <Link id="m-onvalidate" /><code>{"void OnValidate()"}</code> | Editor: validates slots and changes any duplicate slot hashes. |
 | <Link id="m-ensurefullmap" /><code>{"private void EnsureFullMap()"}</code> |  |
 | <Link id="m-forwardload" /><code>{"private void ForwardLoad()"}</code> |  |
 

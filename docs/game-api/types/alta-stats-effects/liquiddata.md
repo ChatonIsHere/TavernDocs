@@ -1,6 +1,6 @@
 ---
 title: "LiquidData"
-description: "Serializable class: Effects (EffectDefinitionApplications), ColorTint, LiquidVisual, ChunkVisuals, CookablesUsed, IsConsumableThroughSkin."
+description: "Describes a liquid: its colour and visual, the alchemy effects it applies, and any chunk visuals."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Liquid`.
 
-`[Serializable]` class: `Effects` (`EffectDefinitionApplication`s), `ColorTint`, `LiquidVisual`, `ChunkVisuals`, `CookablesUsed`, `IsConsumableThroughSkin`.
+Describes a liquid: its colour and visual, the alchemy effects it applies, and any chunk visuals. Liquid containers hold it, save it and sync it.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Documented in** [Liquids](/game-api/game-systems/liquids#liquiddefinition-liquidcontent-and-liquiddata)
@@ -28,7 +28,7 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxnumberofeffects" /><code>{"const int MaxNumberOfEffects"}</code> |  |
+| <Link id="m-maxnumberofeffects" /><code>{"const int MaxNumberOfEffects"}</code> | Upper bound for the number of effects. The network code allows up to 1023. |
 | <Link id="m-chunkvisuals" /><code>{"private "}<Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{"[] chunkVisuals"}</code> |  |
 | <Link id="m-colortint" /><code>{"private Color colorTint"}</code> |  |
 | <Link id="m-cookablesused" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"[] cookablesUsed"}</code> |  |
@@ -42,27 +42,27 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunkvisuals-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{"> ChunkVisuals { get; }"}</code> |  |
-| <Link id="m-colortint-2" /><code>{"Color ColorTint { get; }"}</code> |  |
-| <Link id="m-cookablesused-2" /><code><Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"[] CookablesUsed { get; }"}</code> |  |
-| <Link id="m-effects-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"> Effects { get; }"}</code> |  |
-| <Link id="m-isconsumablethroughskin-2" /><code>{"bool IsConsumableThroughSkin { get; }"}</code> |  |
-| <Link id="m-liquidvisual-2" /><code><Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" LiquidVisual { get; }"}</code> |  |
-| <Link id="m-splashparticlesstrength-2" /><code>{"float SplashParticlesStrength { get; }"}</code> |  |
-| <Link id="m-tintedliquidcolor" /><code>{"Color TintedLiquidColor { get; }"}</code> |  |
+| <Link id="m-chunkvisuals-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{"> ChunkVisuals { get; }"}</code> | Visuals for solid chunks floating in the liquid. |
+| <Link id="m-colortint-2" /><code>{"Color ColorTint { get; }"}</code> | Tint applied over the visual's colour. |
+| <Link id="m-cookablesused-2" /><code><Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"[] CookablesUsed { get; }"}</code> | Cookable ingredients that went into the liquid. Not saved or synced. |
+| <Link id="m-effects-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"> Effects { get; }"}</code> | Effects applied when the liquid is consumed or splashed. |
+| <Link id="m-isconsumablethroughskin-2" /><code>{"bool IsConsumableThroughSkin { get; }"}</code> | True for splash liquids (such as the teleport potion) that work on contact. |
+| <Link id="m-liquidvisual-2" /><code><Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" LiquidVisual { get; }"}</code> | Base visual data for the liquid. |
+| <Link id="m-splashparticlesstrength-2" /><code>{"float SplashParticlesStrength { get; }"}</code> | Strength for splash particles when consumable through skin. |
+| <Link id="m-tintedliquidcolor" /><code>{"Color TintedLiquidColor { get; }"}</code> | The visual's colour times the tint. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |  |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |  |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |  |
-| <Link id="m-getsave" /><code><Link to="/game-api/types/alta-stats-effects/liquidcontainersavedata-customdata">{"LiquidContainerSaveData.CustomData"}</Link>{" GetSave()"}</code> |  |
-| <Link id="m-load" /><code>{"void Load("}<Link to="/game-api/types/alta-stats-effects/liquidcontainersavedata-customdata">{"LiquidContainerSaveData.CustomData"}</Link>{" data)"}</code> |  |
-| <Link id="m-op-equality" /><code>{"static bool op_Equality("}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" a, "}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" b)"}</code> |  |
-| <Link id="m-op-inequality" /><code>{"static bool op_Inequality("}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" a, "}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" b)"}</code> |  |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-apply" /><code>{"void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | Server: applies all its effects to a target at the given strength. Logs an error on a client. |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | True if colour, visual, skin flag, effects and chunk visuals all match (effects and chunks in any order). |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Hash of the colour, visual, skin flag and the effect and chunk arrays. |
+| <Link id="m-getsave" /><code><Link to="/game-api/types/alta-stats-effects/liquidcontainersavedata-customdata">{"LiquidContainerSaveData.CustomData"}</Link>{" GetSave()"}</code> | Builds save data with the colour, skin flag, visual, effects and chunks. |
+| <Link id="m-load" /><code>{"void Load("}<Link to="/game-api/types/alta-stats-effects/liquidcontainersavedata-customdata">{"LiquidContainerSaveData.CustomData"}</Link>{" data)"}</code> | Fills the liquid from save data. |
+| <Link id="m-op-equality" /><code>{"static bool op_Equality("}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" a, "}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" b)"}</code> | Compares with `Equals`; two nulls are equal. |
+| <Link id="m-op-inequality" /><code>{"static bool op_Inequality("}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" a, "}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" b)"}</code> | Opposite of `==`. |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the colour, skin flag, visual, effects and chunk visuals on a network stream. |
 | <Link id="m-serializechunksarray" /><code>{"private void SerializeChunksArray("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 | <Link id="m-serializeeffectsarray" /><code>{"private void SerializeEffectsArray("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 

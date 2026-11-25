@@ -1,6 +1,6 @@
 ---
 title: "GrabAssistSettings"
-description: "class GrabAssistSettings in Root.Township."
+description: "Global settings for grab assist, which searches a short path from the hand to find an item to grab and draws the path and target."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GrabAssistSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Global settings for grab assist, which searches a short path from the hand to find an item to grab and draws the path and target. Get it with `GlobalSettings<GrabAssistSettings>.Instance`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`GlobalSettings<GrabAssistSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -53,25 +55,25 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-assistgrabdirection-2" /><code>{"Vector3 AssistGrabDirection { get; }"}</code> |  |
-| <Link id="m-assistlength-2" /><code>{"float AssistLength { get; }"}</code> |  |
-| <Link id="m-assistpathmaterial-2" /><code>{"Material AssistPathMaterial { get; }"}</code> |  |
-| <Link id="m-assistpathmesh-2" /><code>{"Mesh AssistPathMesh { get; }"}</code> |  |
-| <Link id="m-assisttargetmaterial-2" /><code>{"Material AssistTargetMaterial { get; }"}</code> |  |
-| <Link id="m-assisttargetmesh-2" /><code>{"Mesh AssistTargetMesh { get; }"}</code> |  |
-| <Link id="m-detectionradius-2" /><code>{"float DetectionRadius { get; }"}</code> |  |
-| <Link id="m-foundtargetcolor-2" /><code>{"Color FoundTargetColor { get; }"}</code> |  |
-| <Link id="m-maximumanglefromdowntobeactivedot-2" /><code>{"float MaximumAngleFromDownToBeActiveDot { get; }"}</code> |  |
-| <Link id="m-notargetcolor-2" /><code>{"Color NoTargetColor { get; }"}</code> |  |
-| <Link id="m-obstaclelayermask-2" /><code>{"LayerMask ObstacleLayerMask { get; }"}</code> |  |
-| <Link id="m-pathindicatorscale-2" /><code>{"Vector3 PathIndicatorScale { get; }"}</code> |  |
-| <Link id="m-pathinterval-2" /><code>{"float PathInterval { get; }"}</code> |  |
-| <Link id="m-smoothdamptime-2" /><code>{"float SmoothDampTime { get; }"}</code> |  |
-| <Link id="m-startdelay-2" /><code>{"float StartDelay { get; }"}</code> |  |
-| <Link id="m-targetindicatorscale-2" /><code>{"Vector3 TargetIndicatorScale { get; }"}</code> |  |
-| <Link id="m-targetindicatorscalecurve-2" /><code>{"AnimationCurve TargetIndicatorScaleCurve { get; }"}</code> |  |
-| <Link id="m-targetnotfoundmaterial" /><code>{"Material TargetNotFoundMaterial { get; }"}</code> |  |
-| <Link id="m-verticalpower-2" /><code>{"float VerticalPower { get; }"}</code> |  |
+| <Link id="m-assistgrabdirection-2" /><code>{"Vector3 AssistGrabDirection { get; }"}</code> | Local direction from the hand the assist searches along (mirrored for the right hand). |
+| <Link id="m-assistlength-2" /><code>{"float AssistLength { get; }"}</code> | Longest search distance, reduced as the direction points less downward. |
+| <Link id="m-assistpathmaterial-2" /><code>{"Material AssistPathMaterial { get; }"}</code> | Material for the path indicator (an Android version on Android). |
+| <Link id="m-assistpathmesh-2" /><code>{"Mesh AssistPathMesh { get; }"}</code> | Mesh for the path indicator (an Android version on Android). |
+| <Link id="m-assisttargetmaterial-2" /><code>{"Material AssistTargetMaterial { get; }"}</code> | Material for the target indicator when a target is found. |
+| <Link id="m-assisttargetmesh-2" /><code>{"Mesh AssistTargetMesh { get; }"}</code> | Mesh for the target indicator. |
+| <Link id="m-detectionradius-2" /><code>{"float DetectionRadius { get; }"}</code> | Radius of the sphere cast used to find targets. |
+| <Link id="m-foundtargetcolor-2" /><code>{"Color FoundTargetColor { get; }"}</code> | Path colour when a target is found. |
+| <Link id="m-maximumanglefromdowntobeactivedot-2" /><code>{"float MaximumAngleFromDownToBeActiveDot { get; }"}</code> | The search direction must be at least this close to straight down (as a dot product) for the assist to run. |
+| <Link id="m-notargetcolor-2" /><code>{"Color NoTargetColor { get; }"}</code> | Path colour when nothing is found. |
+| <Link id="m-obstaclelayermask-2" /><code>{"LayerMask ObstacleLayerMask { get; }"}</code> | Layers that block the search. |
+| <Link id="m-pathindicatorscale-2" /><code>{"Vector3 PathIndicatorScale { get; }"}</code> | Scale of each path indicator mesh. |
+| <Link id="m-pathinterval-2" /><code>{"float PathInterval { get; }"}</code> | Spacing between path indicator meshes, and the shortest search length. |
+| <Link id="m-smoothdamptime-2" /><code>{"float SmoothDampTime { get; }"}</code> | Smoothing time for the path indicator's movement. |
+| <Link id="m-startdelay-2" /><code>{"float StartDelay { get; }"}</code> | Delay before the assist starts searching. |
+| <Link id="m-targetindicatorscale-2" /><code>{"Vector3 TargetIndicatorScale { get; }"}</code> | Scale of the target indicator. |
+| <Link id="m-targetindicatorscalecurve-2" /><code>{"AnimationCurve TargetIndicatorScaleCurve { get; }"}</code> | Curve animating the target indicator's scale. |
+| <Link id="m-targetnotfoundmaterial" /><code>{"Material TargetNotFoundMaterial { get; }"}</code> | Material for the target indicator when nothing is found. |
+| <Link id="m-verticalpower-2" /><code>{"float VerticalPower { get; }"}</code> | Power applied to the direction's downward part when working out the search length. |
 
 ## Used in
 

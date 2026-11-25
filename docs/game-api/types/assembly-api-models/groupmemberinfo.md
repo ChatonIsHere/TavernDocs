@@ -1,6 +1,6 @@
 ---
 title: "GroupMemberInfo"
-description: "class GroupMemberInfo in Alta.Api.DataTransferModels."
+description: "API response describing one member of a group (server group), with their role and permissions."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GroupMemberInfo
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+API response describing one member of a group (server group), with their role and permissions.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
@@ -24,16 +26,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> |  |
-| <Link id="m-groupidentifier" /><code>{"int GroupIdentifier { get; set; }"}</code> |  |
-| <Link id="m-iconindex" /><code>{"int IconIndex { get; set; }"}</code> |  |
-| <Link id="m-isbot" /><code>{"bool IsBot { get; set; }"}</code> |  |
-| <Link id="m-permissions" /><code><Link to="/game-api/types/assembly-api-models/setgrouppermissionsrequest-oldgrouppermission">{"SetGroupPermissionsRequest.OldGroupPermission"}</Link>{" Permissions { get; set; }"}</code> |  |
-| <Link id="m-roleidentifier" /><code>{"int RoleIdentifier { get; set; }"}</code> |  |
-| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/groupmembertype">{"GroupMemberType"}</Link>{" Type { get; set; }"}</code> |  |
-| <Link id="m-useridentifier" /><code>{"int UserIdentifier { get; set; }"}</code> |  |
-| <Link id="m-userinfo" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> |  |
+| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> | When the user joined the group. |
+| <Link id="m-groupidentifier" /><code>{"int GroupIdentifier { get; set; }"}</code> | The group's ID (`group_id`). |
+| <Link id="m-iconindex" /><code>{"int IconIndex { get; set; }"}</code> | The member's icon index. |
+| <Link id="m-isbot" /><code>{"bool IsBot { get; set; }"}</code> | True if the member is a bot account. |
+| <Link id="m-permissions" /><code><Link to="/game-api/types/assembly-api-models/setgrouppermissionsrequest-oldgrouppermission">{"SetGroupPermissionsRequest.OldGroupPermission"}</Link>{" Permissions { get; set; }"}</code> | The member's permissions in the old group permission format. |
+| <Link id="m-roleidentifier" /><code>{"int RoleIdentifier { get; set; }"}</code> | The ID of the member's role in the group. |
+| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/groupmembertype">{"GroupMemberType"}</Link>{" Type { get; set; }"}</code> | The member's membership type. |
+| <Link id="m-useridentifier" /><code>{"int UserIdentifier { get; set; }"}</code> | The member's user ID. |
+| <Link id="m-userinfo" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" { get; }"}</code> | A `UserInfo` built from the user ID and username. Not serialized. |
+| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | The member's username. |
 
 ## Used in
 

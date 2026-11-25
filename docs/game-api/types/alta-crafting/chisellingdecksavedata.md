@@ -1,6 +1,6 @@
 ---
 title: "ChisellingDeckSaveData"
-description: "class ChisellingDeckSaveData in Root.Township."
+description: "Save data for a ChisellingDeck, the carpentry chiselling station."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChisellingDeckSaveData
 
 A **class** in `Root.Township`, `Alta.Carpentry`.
+
+Save data for a `ChisellingDeck`, the carpentry chiselling station. The deck saves its size; its current `TimberBlock` fills in the rest.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`NewSaveData<ChisellingDeck, ChisellingDeckSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -27,13 +29,13 @@ A **class** in `Root.Township`, `Alta.Carpentry`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentsize" /><code>{"int currentSize"}</code> |  |
-| <Link id="m-donepieces" /><code>{"int[] donePieces"}</code> |  |
-| <Link id="m-hasfollowedrecipe" /><code>{"bool hasFollowedrecipe"}</code> |  |
-| <Link id="m-physicalmaterial" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> |  |
-| <Link id="m-pieces" /><code><Link to="/game-api/types/alta-crafting/piecesavedata">{"PieceSaveData"}</Link>{"[] pieces"}</code> |  |
-| <Link id="m-spawned" /><code><Link to="/game-api/types/alta-crafting/chiseldefinition">{"ChiselDefinition"}</Link>{" spawned"}</code> |  |
-| <Link id="m-stage" /><code>{"int stage"}</code> |  |
+| <Link id="m-currentsize" /><code>{"int currentSize"}</code> | How much timber is on the deck. The deck has space while this is below its max size. |
+| <Link id="m-donepieces" /><code>{"int[] donePieces"}</code> | Indexes of the block's pieces that have been chiselled off. |
+| <Link id="m-hasfollowedrecipe" /><code>{"bool hasFollowedrecipe"}</code> | Whether the block has followed the recipe so far. |
+| <Link id="m-physicalmaterial" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> | The wood material of the block. |
+| <Link id="m-pieces" /><code><Link to="/game-api/types/alta-crafting/piecesavedata">{"PieceSaveData"}</Link>{"[] pieces"}</code> | Save data for each piece of the timber block. |
+| <Link id="m-spawned" /><code><Link to="/game-api/types/alta-crafting/chiseldefinition">{"ChiselDefinition"}</Link>{" spawned"}</code> | The chisel definition the block has recorded as spawned. |
+| <Link id="m-stage" /><code>{"int stage"}</code> | The block's chiselling stage level. Loading steps the block forward to this stage. |
 
 ## Used in
 

@@ -12,9 +12,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## S
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`SABoneCollider`](/game-api/types/global-s/sabonecollider) | class | `MonoBehaviour` | 22 |  |
+| [`SABoneCollider`](/game-api/types/global-s/sabonecollider) | class | `MonoBehaviour` | 22 | Editor tool component (from the SAColliderBuilder asset) that holds settings for generating colliders on a bone, and marks the object's name with `*` or `+` when it or its children were edited. |
 | [`SABoneColliderBuilder`](/game-api/types/global-s/sabonecolliderbuilder) | class | `MonoBehaviour` | 8 |  |
 | [`SABoneColliderChild`](/game-api/types/global-s/sabonecolliderchild) | class | `MonoBehaviour` | 0 |  |
 | [`SABoneColliderCommon`](/game-api/types/global-s/sabonecollidercommon) | class |  | 0 |  |
@@ -26,20 +26,20 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SABoneColliderCommon.SplitProperty`](/game-api/types/global-s/sabonecollidercommon-splitproperty) | class |  | 7 |  |
 | [`SAColliderBuilderCommon`](/game-api/types/global-s/sacolliderbuildercommon) | class |  | 0 |  |
 | [`SAColliderBuilderCommon.Bool3`](/game-api/types/global-s/sacolliderbuildercommon-bool3) | struct |  | 4 |  |
-| [`SAColliderBuilderCommon.ColliderProperty`](/game-api/types/global-s/sacolliderbuildercommon-colliderproperty) | class |  | 5 |  |
+| [`SAColliderBuilderCommon.ColliderProperty`](/game-api/types/global-s/sacolliderbuildercommon-colliderproperty) | class |  | 5 | Editor collider builder options for generated colliders. |
 | [`SAColliderBuilderCommon.ColliderToChild`](/game-api/types/global-s/sacolliderbuildercommon-collidertochild) | enum |  | 3 |  |
 | [`SAColliderBuilderCommon.ElementType`](/game-api/types/global-s/sacolliderbuildercommon-elementtype) | enum |  | 2 |  |
 | [`SAColliderBuilderCommon.FitType`](/game-api/types/global-s/sacolliderbuildercommon-fittype) | enum |  | 2 |  |
 | [`SAColliderBuilderCommon.MeshType`](/game-api/types/global-s/sacolliderbuildercommon-meshtype) | enum |  | 4 |  |
-| [`SAColliderBuilderCommon.ReducerProperty`](/game-api/types/global-s/sacolliderbuildercommon-reducerproperty) | class |  | 17 |  |
-| [`SAColliderBuilderCommon.RigidbodyProperty`](/game-api/types/global-s/sacolliderbuildercommon-rigidbodyproperty) | class |  | 10 |  |
+| [`SAColliderBuilderCommon.ReducerProperty`](/game-api/types/global-s/sacolliderbuildercommon-reducerproperty) | class |  | 17 | Mesh reduction settings for the third-party SA Collider Builder editor tool (how a mesh is simplified into colliders). Editor-time data. |
+| [`SAColliderBuilderCommon.RigidbodyProperty`](/game-api/types/global-s/sacolliderbuildercommon-rigidbodyproperty) | class |  | 10 | Editor tool settings from the SAColliderBuilder package: the Rigidbody to add when building colliders. |
 | [`SAColliderBuilderCommon.ShapeType`](/game-api/types/global-s/sacolliderbuildercommon-shapetype) | enum |  | 5 |  |
 | [`SAColliderBuilderCommon.SliceMode`](/game-api/types/global-s/sacolliderbuildercommon-slicemode) | enum |  | 4 |  |
 | [`SafePositionSetter`](/game-api/types/global-s/safepositionsetter) | class | `NetworkEntityBehaviour`, `ISavable<SafePositionSetterData>`, `ISavableSave<SafePositionSetterData>`, +1 more | 3 |  |
 | [`SafePositionSetterData`](/game-api/types/global-s/safepositionsetterdata) | class | `NewSaveData<SafePositionSetter, SafePositionSetterData>` | 1 |  |
 | [`SafetySpline`](/game-api/types/global-s/safetyspline) | class | `TerrainSpline` | 1 |  |
-| [`SAMeshCollider`](/game-api/types/global-s/sameshcollider) | class | `MonoBehaviour` | 26 |  |
-| [`SAMeshColliderBuilder`](/game-api/types/global-s/sameshcolliderbuilder) | class | `MonoBehaviour` | 12 |  |
+| [`SAMeshCollider`](/game-api/types/global-s/sameshcollider) | class | `MonoBehaviour` | 26 | Component from the third-party SA Collider Builder editor tool: holds the settings used to build mesh colliders for an object. Editor-time data; nothing in the game reads it at runtime. |
+| [`SAMeshColliderBuilder`](/game-api/types/global-s/sameshcolliderbuilder) | class | `MonoBehaviour` | 12 | Editor component from the SA Collider Builder tool that builds mesh colliders for its object. The properties are shortcuts into `meshColliderBuilderProperty`. |
 | [`SAMeshColliderCommon`](/game-api/types/global-s/sameshcollidercommon) | class |  | 0 |  |
 | [`SAMeshColliderCommon.SAMeshColliderBuilderProperty`](/game-api/types/global-s/sameshcollidercommon-sameshcolliderbuilderproperty) | class |  | 7 |  |
 | [`SAMeshColliderCommon.SAMeshColliderProperty`](/game-api/types/global-s/sameshcollidercommon-sameshcolliderproperty) | class |  | 6 |  |
@@ -49,10 +49,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SaveableTransform`](/game-api/types/global-s/saveabletransform) | abstract class | `ScriptableObject` | 3 |  |
 | [`SavePrefabAtButton`](/game-api/types/global-s/saveprefabatbutton) | class | `MonoBehaviour` | 2 |  |
 | [`SaveStructureAttribute`](/game-api/types/global-s/savestructureattribute) | class | `Attribute` | 3 |  |
-| [`ScaleAnimator`](/game-api/types/global-s/scaleanimator) | class |  | 8 |  |
+| [`ScaleAnimator`](/game-api/types/global-s/scaleanimator) | class |  | 8 | Helper that scales a behaviour's transform in or out along "on" and "off" curves, using a coroutine on that behaviour. |
 | [`ScaledLerpFollow`](/game-api/types/global-s/scaledlerpfollow) | class | `LerpFollowBase<PlayerController>` | 5 |  |
 | [`ScaleLerp`](/game-api/types/global-s/scalelerp) | class | `MonoBehaviour` | 1 |  |
-| [`ScaleLerpPooledObject`](/game-api/types/global-s/scalelerppooledobject) | class | `PooledObject` | 1 |  |
+| [`ScaleLerpPooledObject`](/game-api/types/global-s/scalelerppooledobject) | class | `PooledObject` | 1 | A pooled object that grows from tiny to its start size when taken from the pool and shrinks away before it goes back. Client-side visual effect. |
 | [`ScalePulsator`](/game-api/types/global-s/scalepulsator) | class | `MonoBehaviour` | 7 |  |
 | [`ScaleTracker`](/game-api/types/global-s/scaletracker) | class | `MonoBehaviour` | 0 |  |
 | [`ScaleWithScoreModifier`](/game-api/types/global-s/scalewithscoremodifier) | class | `SpawnModifierSpawnParameters` | 1 |  |
@@ -70,7 +70,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ScreenshotTaker`](/game-api/types/global-s/screenshottaker) | class |  | 6 |  |
 | [`ScreenshotTaker.ImageFormat`](/game-api/types/global-s/screenshottaker-imageformat) | enum |  | 3 |  |
 | [`ScriptedRotation`](/game-api/types/global-s/scriptedrotation) | class | `MonoBehaviour` | 1 |  |
-| [`ScrollElement`](/game-api/types/global-s/scrollelement) | class | `MonoBehaviour` | 4 |  |
+| [`ScrollElement`](/game-api/types/global-s/scrollelement) | class | `MonoBehaviour` | 4 | Base for an item in a scrolling list that is shown or hidden by index. |
 | [`ScrollWheel`](/game-api/types/global-s/scrollwheel) | class | `MonoBehaviour` | 0 |  |
 | [`SeasonalLeaves`](/game-api/types/global-s/seasonalleaves) | class | `NetworkEntityBehaviour` | 2 |  |
 | [`SecondaryCollisionCheck`](/game-api/types/global-s/secondarycollisioncheck) | class | `MonoBehaviour` | 0 |  |
@@ -86,11 +86,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SerializableServerSettings`](/game-api/types/global-s/serializableserversettings) | class |  | 5 |  |
 | [`SerializedImpactHit`](/game-api/types/global-s/serializedimpacthit) | struct |  | 8 |  |
 | [`SerializedRenderTextureDescriptor`](/game-api/types/global-s/serializedrendertexturedescriptor) | class |  | 7 |  |
-| [`SerializedSavedDynamicObject`](/game-api/types/global-s/serializedsaveddynamicobject) | class | `SavedDynamicObject` | 11 |  |
+| [`SerializedSavedDynamicObject`](/game-api/types/global-s/serializedsaveddynamicobject) | class | `SavedDynamicObject` | 11 | A saved object (prefab hash plus its serialized state) in a form Unity can serialize, with the chunk versioning it was saved under. Used for postboxes, set pieces and spawn strings. |
 | [`SerializedTimedEvent`](/game-api/types/global-s/serializedtimedevent) | class | `NetworkEntityBehaviour`, `ISavable<TimedEventSaveData>`, `ISavableSave<TimedEventSaveData>`, +1 more | 3 |  |
 | [`SerializeValue<T>`](/game-api/types/global-s/serializevalue-t) | delegate |  | 0 |  |
 | [`ServerAchievementEvent`](/game-api/types/global-s/serverachievementevent) | class | `MonoBehaviour` | 0 |  |
-| [`ServerBoard`](/game-api/types/global-s/serverboard) | class | `MonoBehaviour` | 12 |  |
+| [`ServerBoard`](/game-api/types/global-s/serverboard) | class | `MonoBehaviour` | 12 | A server list board in the main menu (public, my servers, open or discover). Fetches its list from the Alta API every `updateInterval` seconds while logged in, filters and shows it. Client only. |
 | [`ServerBoardType`](/game-api/types/global-s/serverboardtype) | enum |  | 4 |  |
 | [`ServerCacheManager`](/game-api/types/global-s/servercachemanager) | class | `CacheManager` | 4 |  |
 | [`ServerConfigFileManager`](/game-api/types/global-s/serverconfigfilemanager) | class |  | 1 |  |
@@ -103,17 +103,17 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ServerDiagnosticsManager`](/game-api/types/global-s/serverdiagnosticsmanager) | class | `MonoBehaviour` | 3 |  |
 | [`ServerDiagnosticsSettings`](/game-api/types/global-s/serverdiagnosticssettings) | class | `GlobalSettings<ServerDiagnosticsSettings>` | 2 |  |
 | [`ServerDowntimeData`](/game-api/types/global-s/serverdowntimedata) | class |  | 6 |  |
-| [`ServerElement`](/game-api/types/global-s/serverelement) | class | `Interactable`, `IBuildRendererPostBake`, `IBuildBakeable` | 5 |  |
+| [`ServerElement`](/game-api/types/global-s/serverelement) | class | `Interactable`, `IBuildRendererPostBake`, `IBuildBakeable` | 5 | One entry on the main menu's server list: shows a server's name, player count and playability colour, and can be selected. |
 | [`ServerElementEvent`](/game-api/types/global-s/serverelementevent) | class | `AltaEvent<ServerElement, ServerElementUnityEvent>` | 0 |  |
 | [`ServerElementUnityEvent`](/game-api/types/global-s/serverelementunityevent) | class | `UnityEvent<ServerElement>` | 0 |  |
 | [`ServerHeartbeat`](/game-api/types/global-s/serverheartbeat) | class |  | 3 | [Startup and app state](../console-and-utilities/startup-and-app-state.md) |
 | [`ServerHostingGameMode`](/game-api/types/global-s/serverhostinggamemode) | class | `GameMode` | 7 |  |
 | [`ServerInfoBoard`](/game-api/types/global-s/serverinfoboard) | class | `MonoBehaviour` | 2 |  |
 | [`ServerListType`](/game-api/types/global-s/serverlisttype) | enum |  | 3 |  |
-| [`ServerProfilingData`](/game-api/types/global-s/serverprofilingdata) | class |  | 61 |  |
+| [`ServerProfilingData`](/game-api/types/global-s/serverprofilingdata) | class |  | 61 | A snapshot of server performance numbers (FPS, networking, serialization, entity and creature counts, CPU and RAM) sent out by `ServerDiagnosticsManager` as the `ProfilingData` console event. Obsolete in favour of the analytics system; server only. |
 | [`ServerRemoteConsole`](/game-api/types/global-s/serverremoteconsole) | class | `IRemoteConsole` | 7 | [Remote console](../console-and-utilities/remote-console.md) |
-| [`ServerSelectionDisplay`](/game-api/types/global-s/serverselectiondisplay) | class | `MonoBehaviour` | 8 |  |
-| [`ServerSelectionMenu`](/game-api/types/global-s/serverselectionmenu) | class | `MonoBehaviour` | 9 |  |
+| [`ServerSelectionDisplay`](/game-api/types/global-s/serverselectiondisplay) | class | `MonoBehaviour` | 8 | Main menu server list laid out along a spline. Scrolling moves the elements along it; the one nearest the selection point is selected. Client only. |
+| [`ServerSelectionMenu`](/game-api/types/global-s/serverselectionmenu) | class | `MonoBehaviour` | 9 | The main menu server picker: switches between server boards (my servers, open servers and so on), scrolls them by rope or wheel, and joins the selected server. Sets up once logged in. |
 | [`ServerSelectionOrb`](/game-api/types/global-s/serverselectionorb) | class | `MonoBehaviour` | 1 |  |
 | [`ServerSelector`](/game-api/types/global-s/serverselector) | class | `MonoBehaviour` | 0 |  |
 | [`ServerUtilities`](/game-api/types/global-s/serverutilities) | class |  | 6 | [Startup and app state](../console-and-utilities/startup-and-app-state.md#serverutilities), [Server settings](../networking/server-settings.md) |
@@ -125,7 +125,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SetNetworkPrefabModifier`](/game-api/types/global-s/setnetworkprefabmodifier) | class | `SpawnModifierSpawnParameters` | 1 |  |
 | [`SetNetworkPrefabModifier.Create`](/game-api/types/global-s/setnetworkprefabmodifier-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<SetNetworkPrefabModifier>` | 0 |  |
 | [`SetPiece`](/game-api/types/global-s/setpiece) | class | `NetworkEntityBehaviour`, `ISavable<SetPieceSaveData>`, `ISavableSave<SetPieceSaveData>`, +1 more | 5 |  |
-| [`SetPieceData`](/game-api/types/global-s/setpiecedata) | class | `HashedGeneralValue<SetPieceData>` | 1 |  |
+| [`SetPieceData`](/game-api/types/global-s/setpiecedata) | class | `HashedGeneralValue<SetPieceData>` | 1 | An asset holding a saved dynamic object (a set piece) that can be spawned whole. `RepairBox` can spawn one when finished. |
 | [`SetPieceSaveData`](/game-api/types/global-s/setpiecesavedata) | class | `NewSaveData<SetPiece, SetPieceSaveData>` | 1 |  |
 | [`SetPrefabModifier`](/game-api/types/global-s/setprefabmodifier) | class | `SpawnModifierSpawnParameters` | 1 |  |
 | [`SetPrefabModifier.Create`](/game-api/types/global-s/setprefabmodifier-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<SetPrefabModifier>` | 0 |  |
@@ -155,10 +155,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SimpleNetworkedPivot`](/game-api/types/global-s/simplenetworkedpivot) | class | `NetworkEntityBehaviour`, `INetworkSerialized` | 3 |  |
 | [`SimpleNoiseFilter`](/game-api/types/global-s/simplenoisefilter) | class | `SpawnModifierPoint` | 1 |  |
 | [`SimpleNoiseFilter.Create`](/game-api/types/global-s/simplenoisefilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<SimpleNoiseFilter>` | 0 |  |
-| [`SimplexNoise`](/game-api/types/global-s/simplexnoise) | class |  | 7 |  |
+| [`SimplexNoise`](/game-api/types/global-s/simplexnoise) | class |  | 7 | Simplex noise in 2, 3 or 4 dimensions, with per-instance offsets added to the inputs. |
 | [`SkillHitTarget`](/game-api/types/global-s/skillhittarget) | class | `PooledObject` | 1 |  |
-| [`SkillInputStructure`](/game-api/types/global-s/skillinputstructure) | abstract class | `ScriptableObject` | 3 |  |
-| [`SkillOrb`](/game-api/types/global-s/skillorb) | class | `NetworkEntityBehaviour`, `ISkillOrb` | 18 |  |
+| [`SkillInputStructure`](/game-api/types/global-s/skillinputstructure) | abstract class | `ScriptableObject` | 3 | Asset describing how a tool-based skill is triggered (the input gesture), with default effects for charging, using and cancelling. |
+| [`SkillOrb`](/game-api/types/global-s/skillorb) | class | `NetworkEntityBehaviour`, `ISkillOrb` | 18 | One orb at a skill shrine standing for a skill slot. Players grab it to practise the skill and pull it away to buy or sell. Spawned by `SkillShrine` on the server and not saved. |
 | [`SkillOrbConnectionline`](/game-api/types/global-s/skillorbconnectionline) | class |  | 4 |  |
 | [`SkillOrbDelegate`](/game-api/types/global-s/skillorbdelegate) | delegate |  | 0 |  |
 | [`SkillOrbDestroyEffect`](/game-api/types/global-s/skillorbdestroyeffect) | class | `SkillOrbEffect` | 0 |  |
@@ -168,14 +168,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SkillOrbInteractionSpline.SplineParamaters`](/game-api/types/global-s/skillorbinteractionspline-splineparamaters) | enum |  | 4 |  |
 | [`SkillOrbMovement`](/game-api/types/global-s/skillorbmovement) | class | `MonoBehaviour` | 6 |  |
 | [`SkillOrbOperator`](/game-api/types/global-s/skillorboperator) | class | `MonoBehaviour` | 4 |  |
-| [`SkillOrbReplacer`](/game-api/types/global-s/skillorbreplacer) | class | `ProgressionSlotContainer` | 3 |  |
+| [`SkillOrbReplacer`](/game-api/types/global-s/skillorbreplacer) | class | `ProgressionSlotContainer` | 3 | The orb a player pulls from a skill shrine to buy a skill. Holding it at the shrine's operator for a few seconds unlocks the slot; letting go floats it back and destroys it. |
 | [`SkillOrbScaler`](/game-api/types/global-s/skillorbscaler) | class | `SkillShrineVisualizer` | 3 |  |
 | [`SkillOrbStatusUpdateDelegate`](/game-api/types/global-s/skillorbstatusupdatedelegate) | delegate |  | 0 |  |
-| [`SkillShrine`](/game-api/types/global-s/skillshrine) | class | `ProgressionShrine`, `ISavable<SkillShrineSaveData>`, `ISavableSave<SkillShrineSaveData>`, +1 more | 15 |  |
+| [`SkillShrine`](/game-api/types/global-s/skillshrine) | class | `ProgressionShrine`, `ISavable<SkillShrineSaveData>`, `ISavableSave<SkillShrineSaveData>`, +1 more | 15 | A progression shrine showing one path's skill tree. When a player opens it, the server spawns a `SkillOrb` per slot and lines between them; closing removes them. The current path is saved. |
 | [`SkillShrineRotator`](/game-api/types/global-s/skillshrinerotator) | class | `MonoBehaviour` | 0 |  |
 | [`SkillShrineSaveData`](/game-api/types/global-s/skillshrinesavedata) | class | `NewSaveData<SkillShrine, SkillShrineSaveData>` | 1 |  |
-| [`SkillShrineTestingArea`](/game-api/types/global-s/skillshrinetestingarea) | class | `NetworkEntityBehaviour` | 12 |  |
-| [`SkillShrineVisualizer`](/game-api/types/global-s/skillshrinevisualizer) | abstract class | `MonoBehaviour` | 5 |  |
+| [`SkillShrineTestingArea`](/game-api/types/global-s/skillshrinetestingarea) | class | `NetworkEntityBehaviour` | 12 | The practice area of a skill shrine. When a skill orb is opened it spawns that skill's practice objects, shows the border and moves a copy of the orb into place. Get it from `SkillShrine.TestingArea`. |
+| [`SkillShrineVisualizer`](/game-api/types/global-s/skillshrinevisualizer) | abstract class | `MonoBehaviour` | 5 | Base for the display on a skill shrine that shows one progression path for the player using it. Server prepares the data, which is then synced to clients. |
 | [`SkillsStructureRotator`](/game-api/types/global-s/skillsstructurerotator) | class | `MonoBehaviour` | 0 |  |
 | [`SkillStatus`](/game-api/types/global-s/skillstatus) | enum |  | 10 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): The `Testing` values mean the player is practising that orb. |
 | [`SkillStatusUtil`](/game-api/types/global-s/skillstatusutil) | static class |  | 1 |  |
@@ -185,9 +185,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SmallProjectile`](/game-api/types/global-s/smallprojectile) | class | `MonoBehaviour` | 0 |  |
 | [`SmelterRecipeUnlock`](/game-api/types/global-s/smelterrecipeunlock) | class | `MonoBehaviour` | 2 |  |
 | [`SmoothLocomotion`](/game-api/types/global-s/smoothlocomotion) | class | `MonoBehaviour` | 29 | [Locomotion](../networking/locomotion.md#smoothlocomotion): On the VR body (and the character room's). |
-| [`SmoothLocomotionModifier`](/game-api/types/global-s/smoothlocomotionmodifier) | abstract class | `MonoBehaviour`, `ISmoothLocomotionModifier` | 9 |  |
-| [`SmoothLocomotionPlayerController`](/game-api/types/global-s/smoothlocomotionplayercontroller) | abstract class | `VRPlayerController` | 3 |  |
-| [`SmoothLocomotionSettings`](/game-api/types/global-s/smoothlocomotionsettings) | class | `GlobalSettings<SmoothLocomotionSettings>` | 42 |  |
+| [`SmoothLocomotionModifier`](/game-api/types/global-s/smoothlocomotionmodifier) | abstract class | `MonoBehaviour`, `ISmoothLocomotionModifier` | 9 | Base for components next to `SmoothLocomotion` that change the local player's smooth movement: friction, height, upward grip, or taking over movement entirely. Registered with `SmoothLocomotion.InitializeModifier`. |
+| [`SmoothLocomotionPlayerController`](/game-api/types/global-s/smoothlocomotionplayercontroller) | abstract class | `VRPlayerController` | 3 | Base VR player controller for players that move with thumbstick (smooth) locomotion, through a `SmoothLocomotion` component. |
+| [`SmoothLocomotionSettings`](/game-api/types/global-s/smoothlocomotionsettings) | class | `GlobalSettings<SmoothLocomotionSettings>` | 42 | Global tuning for the player's smooth (stick) locomotion: speeds, step and slope handling, falling, fall damage and safety recovery. Get it with `GlobalSettings<SmoothLocomotionSettings>.Instance`; read by `SmoothLocomotion`. |
 | [`SmoothRotationMode`](/game-api/types/global-s/smoothrotationmode) | enum |  | 2 |  |
 | [`SmoothRotationSpeed`](/game-api/types/global-s/smoothrotationspeed) | enum |  | 4 |  |
 | [`Snappable`](/game-api/types/global-s/snappable) | class | `MonoBehaviour` | 3 |  |
@@ -198,20 +198,20 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SocialAnalyticsEventOrigin`](/game-api/types/global-s/socialanalyticseventorigin) | enum |  | 3 |  |
 | [`SocialService`](/game-api/types/global-s/socialservice) | static class |  | 7 |  |
 | [`SocialTablet`](/game-api/types/global-s/socialtablet) | class | `ActionItem` | 0 |  |
-| [`SoundEffect`](/game-api/types/global-s/soundeffect) | enum |  | 256 |  |
+| [`SoundEffect`](/game-api/types/global-s/soundeffect) | enum |  | 256 | A numbered list of game sound effects (teleport, docking, mining, combat, footsteps and more). |
 | [`SoundEffectExtensions`](/game-api/types/global-s/soundeffectextensions) | static class |  | 1 |  |
-| [`SoundEffectSet`](/game-api/types/global-s/soundeffectset) | class | `ScriptableObject` | 8 |  |
+| [`SoundEffectSet`](/game-api/types/global-s/soundeffectset) | class | `ScriptableObject` | 8 | A ScriptableObject pairing a `SoundEffect` type with a Wwise event. Plays through the `AudioManager` singleton, so it only makes sound where audio runs. |
 | [`SoundEffectSet.Create`](/game-api/types/global-s/soundeffectset-create) | class | `AltaMenuItemBase.Assets.Create.Audio.ScriptableObject<SoundEffectSet>` | 0 |  |
 | [`SoundEffectsMap`](/game-api/types/global-s/soundeffectsmap) | class | `ScriptableObject` | 1 |  |
 | [`SoundEffectsMap.Create`](/game-api/types/global-s/soundeffectsmap-create) | class | `AltaMenuItemBase.Assets.Create.Audio.ScriptableObject<SoundEffectsMap>` | 0 |  |
-| [`SoundSource`](/game-api/types/global-s/soundsource) | class | `MonoBehaviour` | 6 |  |
+| [`SoundSource`](/game-api/types/global-s/soundsource) | class | `MonoBehaviour` | 6 | Plays a sound effect on (or at) its object, optionally when enabled, and stops it when disabled. Does nothing when headless. |
 | [`SoundSourceEvent`](/game-api/types/global-s/soundsourceevent) | delegate |  | 0 |  |
-| [`SpaceDefinedAttribute<T>`](/game-api/types/global-s/spacedefinedattribute-t) | abstract class | `MonoBehaviour` | 1 |  |
+| [`SpaceDefinedAttribute<T>`](/game-api/types/global-s/spacedefinedattribute-t) | abstract class | `MonoBehaviour` | 1 | Base for trigger areas whose effect follows a network of connected `SpacePoint`s, such as atmosphere and darkness areas. While the local player is inside, it finds the nearest point pair and reports progress between them. |
 | [`SpaceFilter`](/game-api/types/global-s/spacefilter) | class | `SpawnModifierPoint` | 1 |  |
 | [`SpaceFilter.Create`](/game-api/types/global-s/spacefilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<SpaceFilter>` | 0 |  |
 | [`SpaceFilter.Redirect`](/game-api/types/global-s/spacefilter-redirect) | class |  | 2 |  |
-| [`SpacePoint`](/game-api/types/global-s/spacepoint) | class | `MonoBehaviour` | 3 |  |
-| [`SpawnArea`](/game-api/types/global-s/spawnarea) | class | `MonoBehaviour`, `ISavable<SpawnAreaSaveData>`, `ISavableSave<SpawnAreaSaveData>`, +2 more | 5 |  |
+| [`SpacePoint`](/game-api/types/global-s/spacepoint) | class | `MonoBehaviour` | 3 | A point in a network of connected points that defines an area attribute, such as darkness or ambience, by weight. |
+| [`SpawnArea`](/game-api/types/global-s/spawnarea) | class | `MonoBehaviour`, `ISavable<SpawnAreaSaveData>`, `ISavableSave<SpawnAreaSaveData>`, +2 more | 5 | A circle on the ground where things (or players) spawn. Gives repeatable positions by index, raycast onto valid ground away from blocking layers. Named areas are listed in `InstanceMap`. |
 | [`SpawnAreaIdentifier`](/game-api/types/global-s/spawnareaidentifier) | enum |  | 28 |  |
 | [`SpawnAreaSaveData`](/game-api/types/global-s/spawnareasavedata) | internal class | `NewSaveData<SpawnArea, SpawnAreaSaveData>` | 5 |  |
 | [`SpawnAsSaveIgnore`](/game-api/types/global-s/spawnassaveignore) | class | `NetworkEntityBehaviour` | 1 |  |
@@ -219,11 +219,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SpawnBuriedSaveData`](/game-api/types/global-s/spawnburiedsavedata) | internal class | `NewSaveData<SpawnBuried, SpawnBuriedSaveData>` | 3 |  |
 | [`SpawnData`](/game-api/types/global-s/spawndata) | class |  | 12 | [Spawning](../world/spawning.md#spawndata): Passed to every `InitializeAsServer`. It says whether the thing should generate its contents, and which biome it's in. |
 | [`Spawner`](/game-api/types/global-s/spawner) | class | `SpawnerBase` | 2 |  |
-| [`SpawnerBase`](/game-api/types/global-s/spawnerbase) | abstract class | `NetworkEntityBehaviour`, `ISpawner` | 5 |  |
+| [`SpawnerBase`](/game-api/types/global-s/spawnerbase) | abstract class | `NetworkEntityBehaviour`, `ISpawner` | 5 | Base for networked spawners that spawn a prefab at themselves, at random or sequential spawn points, or at a forced position, with optional attribute overrides and material. Server side. |
 | [`SpawnerGrab`](/game-api/types/global-s/spawnergrab) | class | `NetworkEntityBehaviour` | 2 | [Items, interaction and damage](../items/overview.md): Grabbing it spawns a fresh item into your hand (a dispenser). |
 | [`SpawnerPart`](/game-api/types/global-s/spawnerpart) | class | `GeneratablePart`, `ISpawner` | 2 |  |
 | [`SpawnHelper`](/game-api/types/global-s/spawnhelper) | static class |  | 16 | [Spawning](../world/spawning.md#spawnhelper): Server only (it calls `SpawnManager.SpawnInternal`, which only works on the server). |
-| [`SpawnHelper.SpawningCallback`](/game-api/types/global-s/spawnhelper-spawningcallback) | delegate |  | 0 |  |
+| [`SpawnHelper.SpawningCallback`](/game-api/types/global-s/spawnhelper-spawningcallback) | delegate |  | 0 | Callback used by `SpawnHelper.Spawn`. One is called just after the entity is created (to position it), the other after server initialization and before it is put in a chunk. |
 | [`SpawnIfEmpty`](/game-api/types/global-s/spawnifempty) | class | `NetworkEntityBehaviour` | 1 |  |
 | [`SpawnIn`](/game-api/types/global-s/spawnin) | class | `MonoBehaviour` | 0 |  |
 | [`SpawnInCircle`](/game-api/types/global-s/spawnincircle) | class | `NetworkEntityBehaviour`, `ISavable<SpawnInCircleSaveData>`, `ISavableSave<SpawnInCircleSaveData>`, +1 more | 2 |  |
@@ -233,16 +233,16 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SpawningTimer`](/game-api/types/global-s/spawningtimer) | class | `MonoBehaviour` | 0 |  |
 | [`SpawningTimerNew`](/game-api/types/global-s/spawningtimernew) | class | `IDisposable` | 2 |  |
 | [`SpawnMethod`](/game-api/types/global-s/spawnmethod) | enum |  | 2 |  |
-| [`SpawnModifier<T>`](/game-api/types/global-s/spawnmodifier-t) | abstract class | `ScriptableObject` | 2 |  |
-| [`SpawnModifierPoint`](/game-api/types/global-s/spawnmodifierpoint) | abstract class | `SpawnModifier<PointEdge>` | 0 |  |
-| [`SpawnModifierPointNormal`](/game-api/types/global-s/spawnmodifierpointnormal) | abstract class | `SpawnModifier<PointNormal>` | 0 |  |
+| [`SpawnModifier<T>`](/game-api/types/global-s/spawnmodifier-t) | abstract class | `ScriptableObject` | 2 | Base asset for filters in the forest fill spawner that adjust a candidate point and its weight before spawning. Subclasses fix `T`, for example `SpawnModifierPoint`. |
+| [`SpawnModifierPoint`](/game-api/types/global-s/spawnmodifierpoint) | abstract class | `SpawnModifier<PointEdge>` | 0 | Base for spawn modifiers in forest generation that work on point edges. |
+| [`SpawnModifierPointNormal`](/game-api/types/global-s/spawnmodifierpointnormal) | abstract class | `SpawnModifier<PointNormal>` | 0 | Base for a spawn modifier that works on `PointNormal` ground points, as used by forest spawning. |
 | [`SpawnModifierPointNormalRedirect`](/game-api/types/global-s/spawnmodifierpointnormalredirect) | class | `SpawnModifierPointNormal` | 2 |  |
 | [`SpawnModifierPointRedirect`](/game-api/types/global-s/spawnmodifierpointredirect) | class | `SpawnModifierPoint` | 2 |  |
-| [`SpawnModifierSpawnParameters`](/game-api/types/global-s/spawnmodifierspawnparameters) | abstract class | `SpawnModifier<SpawnParameters>` | 0 |  |
+| [`SpawnModifierSpawnParameters`](/game-api/types/global-s/spawnmodifierspawnparameters) | abstract class | `SpawnModifier<SpawnParameters>` | 0 | Base for spawn modifiers in forest generation that work on spawn parameters. |
 | [`SpawnModifierSpawnParametersRedirect`](/game-api/types/global-s/spawnmodifierspawnparametersredirect) | class | `SpawnModifierSpawnParameters` | 2 |  |
 | [`SpawnOnDestroyed`](/game-api/types/global-s/spawnondestroyed) | class | `MonoBehaviour` | 1 |  |
 | [`SpawnPositions`](/game-api/types/global-s/spawnpositions) | class | `MonoBehaviour`, `ISpawnPositions` | 4 |  |
-| [`SpecialBiomeAttributes`](/game-api/types/global-s/specialbiomeattributes) | class | `GlobalSettings<SpecialBiomeAttributes>` | 9 |  |
+| [`SpecialBiomeAttributes`](/game-api/types/global-s/specialbiomeattributes) | class | `GlobalSettings<SpecialBiomeAttributes>` | 9 | Global settings asset listing the biome attributes forest generation fills in for each node and path (depth, radius, elevation, slope and so on). Get it with `GlobalSettings<SpecialBiomeAttributes>.Instance`. |
 | [`SpecialBiomeAttributes.Create`](/game-api/types/global-s/specialbiomeattributes-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<SpecialBiomeAttributes>` | 0 |  |
 | [`SpecificCraftTask`](/game-api/types/global-s/specificcrafttask) | class | `HashSetAction<SpecificCraftTaskArgument>` | 1 |  |
 | [`SpecificCraftTaskArgument`](/game-api/types/global-s/specificcrafttaskargument) | class | `GameTaskActionArgument` | 4 | [Other systems](../game-systems/other-systems.md): `JointSlot.TryConnect`, when a held item gets a part |
@@ -258,10 +258,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SphereVisibilityCheck`](/game-api/types/global-s/spherevisibilitycheck) | class | `MonoBehaviour` | 2 |  |
 | [`Spinner`](/game-api/types/global-s/spinner) | class | `MonoBehaviour` | 0 |  |
 | [`SpiritModeShellAnimator`](/game-api/types/global-s/spiritmodeshellanimator) | class | `ShellAnimator` | 4 |  |
-| [`SplineParticlesPooled`](/game-api/types/global-s/splineparticlespooled) | class | `PooledObject` | 3 |  |
-| [`SplineProfile`](/game-api/types/global-s/splineprofile) | class | `ScriptableObject` | 10 |  |
+| [`SplineParticlesPooled`](/game-api/types/global-s/splineparticlespooled) | class | `PooledObject` | 3 | Client: a pooled curved line with particles running along it between two transforms, such as the crafting line between parts. |
+| [`SplineProfile`](/game-api/types/global-s/splineprofile) | class | `ScriptableObject` | 10 | A preset of river mesh settings that a `RamSpline` can load (from the R.A.M. river tool). |
 | [`SplitVector3`](/game-api/types/global-s/splitvector3) | struct |  | 8 |  |
-| [`StageBasedPrefab`](/game-api/types/global-s/stagebasedprefab) | class | `NetworkEntityBehaviour`, `ISavable<StageBasedPrefabSaveData>`, `ISavableSave<StageBasedPrefabSaveData>`, +1 more | 6 |  |
+| [`StageBasedPrefab`](/game-api/types/global-s/stagebasedprefab) | class | `NetworkEntityBehaviour`, `ISavable<StageBasedPrefabSaveData>`, `ISavableSave<StageBasedPrefabSaveData>`, +1 more | 6 | Saved component that shows one stage prefab at a time from a `PrefabStageDefinition`, spawning it as a saved child. Base of `TimeBasedStagedPrefab`. |
 | [`StageBasedPrefabSaveData`](/game-api/types/global-s/stagebasedprefabsavedata) | class | `NewSaveData<StageBasedPrefab, StageBasedPrefabSaveData>` | 3 |  |
 | [`StalactiteFall`](/game-api/types/global-s/stalactitefall) | class | `MonoBehaviour` | 1 |  |
 | [`StandingStillPositionModifier`](/game-api/types/global-s/standingstillpositionmodifier) | class | `HandPositionInputModifier` | 1 |  |
@@ -288,27 +288,27 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SteamVRDeviceController`](/game-api/types/global-s/steamvrdevicecontroller) | class | `XrDeviceSdkController` | 4 |  |
 | [`SteamVRDeviceLifecycle`](/game-api/types/global-s/steamvrdevicelifecycle) | class | `VirtualRealityDeviceLifecycle` | 2 |  |
 | [`SteamVRInputController`](/game-api/types/global-s/steamvrinputcontroller) | class | `DeviceInputController` | 3 |  |
-| [`SteamVRPose`](/game-api/types/global-s/steamvrpose) | class |  | 13 |  |
+| [`SteamVRPose`](/game-api/types/global-s/steamvrpose) | class |  | 13 | Tracks the pose of one SteamVR tracked device index. `SteamVRDeviceLifecycle` keeps a list of these and feeds them new poses each frame. Client only. |
 | [`SteelSong`](/game-api/types/global-s/steelsong) | class | `PickupBasedSkill` | 4 |  |
 | [`SteelSong.Create`](/game-api/types/global-s/steelsong-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<SteelSong>` | 0 |  |
 | [`SteelSongEffect`](/game-api/types/global-s/steelsongeffect) | class | `PooledObject` | 4 |  |
 | [`StencilBufferNumberPool`](/game-api/types/global-s/stencilbuffernumberpool) | static class |  | 2 |  |
 | [`StewRecipePageProvider`](/game-api/types/global-s/stewrecipepageprovider) | class | `GeneratedPageProvider<StewRecipe>` | 5 |  |
-| [`StewRecipePageSettings`](/game-api/types/global-s/stewrecipepagesettings) | class | `GlobalSettings<StewRecipePageSettings>` | 7 |  |
+| [`StewRecipePageSettings`](/game-api/types/global-s/stewrecipepagesettings) | class | `GlobalSettings<StewRecipePageSettings>` | 7 | Global settings for generated stew recipe pages: the page template and where ingredient and effect glyphs go. |
 | [`StewRecipePageSettings.Create`](/game-api/types/global-s/stewrecipepagesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.ScriptableObject<StewRecipePageSettings>` | 0 |  |
 | [`StorageStatParameters`](/game-api/types/global-s/storagestatparameters) | class | `ItemComponent` | 2 |  |
 | [`StoreRotationPopup`](/game-api/types/global-s/storerotationpopup) | class | `LoggedInTool` | 0 |  |
 | [`StreamerManager`](/game-api/types/global-s/streamermanager) | class | `MonoBehaviour` | 5 |  |
 | [`StreamSettings`](/game-api/types/global-s/streamsettings) | class |  | 6 |  |
 | [`StrikeSuccessionInput`](/game-api/types/global-s/strikesuccessioninput) | class | `ISkillInputMethod` | 5 |  |
-| [`StrikeSuccessionInputStructure`](/game-api/types/global-s/strikesuccessioninputstructure) | class | `SkillInputStructure` | 9 |  |
+| [`StrikeSuccessionInputStructure`](/game-api/types/global-s/strikesuccessioninputstructure) | class | `SkillInputStructure` | 9 | Skill input asset for skills that trigger after a number of good strikes in a row (a combo leading to a power strike). |
 | [`StrikeSuccessionInputStructure.Create`](/game-api/types/global-s/strikesuccessioninputstructure-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input.ScriptableObject<StrikeSuccessionInputStructure>` | 0 |  |
 | [`StringBuilderReplacer`](/game-api/types/global-s/stringbuilderreplacer) | class | `BaseReplacer` | 4 |  |
 | [`StringHandler`](/game-api/types/global-s/stringhandler) | class | `UnityEvent<string>` | 0 |  |
-| [`StructureCube`](/game-api/types/global-s/structurecube) | class | `MonoBehaviour`, `IIgnoreForStaticFlatten`, `IDontSplit` | 10 |  |
-| [`StructurePart`](/game-api/types/global-s/structurepart) | class | `MonoBehaviour`, `IIgnoreForStaticFlatten`, `IDontSplit` | 18 |  |
-| [`StructurePart.Cube`](/game-api/types/global-s/structurepart-cube) | class |  | 18 |  |
-| [`StructureSide`](/game-api/types/global-s/structureside) | enum |  | 6 |  |
+| [`StructureCube`](/game-api/types/global-s/structurecube) | class | `MonoBehaviour`, `IIgnoreForStaticFlatten`, `IDontSplit` | 10 | One grid cell of a `StructurePart` used by the mining base generator. Its side flags say where it connects and what must be next to it. |
+| [`StructurePart`](/game-api/types/global-s/structurepart) | class | `MonoBehaviour`, `IIgnoreForStaticFlatten`, `IDontSplit` | 18 | A piece that `MiningBaseGenerator` can place in a generated mine: its size in tiles, the sides that are gates, solid or air, and limits on how low it can be placed. |
+| [`StructurePart.Cube`](/game-api/types/global-s/structurepart-cube) | class |  | 18 | Old per-tile side data for a `StructurePart`. Now only read in the editor to convert into `StructureCube` children. |
+| [`StructureSide`](/game-api/types/global-s/structureside) | enum |  | 6 | Flags for the six sides of a `StructureCube`: forward, right, backward, left, up and down. Used by the mining base generator. |
 | [`StructureType`](/game-api/types/global-s/structuretype) | class | `ScriptableObject` | 1 |  |
 | [`StructureType.Create`](/game-api/types/global-s/structuretype-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.Caves.ScriptableObject<StructureType>` | 0 |  |
 | [`SubscriptionManager`](/game-api/types/global-s/subscriptionmanager) | class | `LoggedInTool` | 0 |  |
@@ -323,7 +323,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SwipePromptController`](/game-api/types/global-s/swipepromptcontroller) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 |  |
 | [`SwipeSensitivityLevel`](/game-api/types/global-s/swipesensitivitylevel) | enum |  | 3 |  |
 | [`SwordTrail`](/game-api/types/global-s/swordtrail) | class | `MonoBehaviour` | 0 |  |
-| [`SyncAttribute`](/game-api/types/global-s/syncattribute) | abstract class | `Attribute` | 1 |  |
+| [`SyncAttribute`](/game-api/types/global-s/syncattribute) | abstract class | `Attribute` | 1 | Obsolete base attribute for automatic member syncing. |
 | [`SyncBoolAttribute`](/game-api/types/global-s/syncboolattribute) | class | `SyncAttribute` | 1 |  |
 | [`SyncedColor`](/game-api/types/global-s/syncedcolor) | class | `NetworkEntityBehaviour` | 3 |  |
 | [`SyncFloatAttribute`](/game-api/types/global-s/syncfloatattribute) | class | `SyncAttribute` | 3 |  |

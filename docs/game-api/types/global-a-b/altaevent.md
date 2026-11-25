@@ -1,6 +1,6 @@
 ---
 title: "AltaEvent"
-description: "class AltaEvent in Root.Township."
+description: "A serializable event with no arguments that fires both an inspector UnityEvent and a C# event."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaEvent
 
 A **class** in `Root.Township`, no namespace.
+
+A serializable event with no arguments that fires both an inspector UnityEvent and a C# event. Exceptions in either are caught and logged.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`IAltaEventValidation`](/game-api/types/global-i-l/ialtaeventvalidation)
@@ -32,22 +34,22 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger-2" /><code>{"static Logger Logger { get; }"}</code> |  |
+| <Link id="m-logger-2" /><code>{"static Logger Logger { get; }"}</code> | Shared logger, also used by the generic `AltaEvent` types. |
 | <Link id="m-ialtaeventvalidation-eventbase" /><code>{"private UnityEventBase IAltaEventValidation.EventBase { get; }"}</code> |  |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoked" /><code>{"event Action Invoked"}</code> |  |
+| <Link id="m-invoked" /><code>{"event Action Invoked"}</code> | The C# side of the event. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke()"}</code> |  |
-| <Link id="m-op-addition" /><code>{"static "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" op_Addition("}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" altaEvent, Action eventHandler)"}</code> |  |
-| <Link id="m-op-subtraction" /><code>{"static "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" op_Subtraction("}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" altaEvent, Action eventHandler)"}</code> |  |
+| <Link id="m-invoke" /><code>{"void Invoke()"}</code> | Fires the inspector event, then the C# `Invoked` event, logging any exception from each. |
+| <Link id="m-op-addition" /><code>{"static "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" op_Addition("}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" altaEvent, Action eventHandler)"}</code> | `+` adds a C# handler to `Invoked`. |
+| <Link id="m-op-subtraction" /><code>{"static "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" op_Subtraction("}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" altaEvent, Action eventHandler)"}</code> | `-` removes a C# handler from `Invoked`. |
 
 ## Used in
 

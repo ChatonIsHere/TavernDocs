@@ -1,6 +1,6 @@
 ---
 title: "HandGestureDefinition"
-description: "class HandGestureDefinition in Root.Township."
+description: "A hand gesture asset (such as pointing), matched to a transition on the hand animator."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandGestureDefinition
 
 A **class** in `Root.Township`, no namespace.
+
+A hand gesture asset (such as pointing), matched to a transition on the hand animator. All of them are loaded from `Resources/Gesture Definitions`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `ScriptableObject`
@@ -35,10 +37,10 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activefingers-2" /><code><Link to="/game-api/types/global-e-h/handfingers">{"HandFingers"}</Link>{" ActiveFingers { get; }"}</code> |  |
-| <Link id="m-animatortransitionindex-2" /><code>{"int AnimatorTransitionIndex { get; }"}</code> |  |
-| <Link id="m-gestureforanimationindex-2" /><code>{"static Dictionary<int, "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{"> GestureForAnimationIndex { get; }"}</code> |  |
-| <Link id="m-nogesture" /><code>{"static "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{" NoGesture { get; }"}</code> |  |
+| <Link id="m-activefingers-2" /><code><Link to="/game-api/types/global-e-h/handfingers">{"HandFingers"}</Link>{" ActiveFingers { get; }"}</code> | Fingers whose collisions are turned on while the gesture is active. |
+| <Link id="m-animatortransitionindex-2" /><code>{"int AnimatorTransitionIndex { get; }"}</code> | Number of the hand animator transition this gesture uses. |
+| <Link id="m-gestureforanimationindex-2" /><code>{"static Dictionary<int, "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{"> GestureForAnimationIndex { get; }"}</code> | Every gesture by animator transition index, loaded on first use. |
+| <Link id="m-nogesture" /><code>{"static "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{" NoGesture { get; }"}</code> | Always null, standing for no gesture. |
 
 ## Used in
 

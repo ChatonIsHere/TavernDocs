@@ -1,6 +1,6 @@
 ---
 title: "ModReconciler"
-description: "A static class in TavernLib, TavernLib.Backend.Mods."
+description: "Brings Mods in line with a modlist before mods load on a headless server: installs or updates listed mods and their dependencies, and disables unlisted..."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `TavernLib`, `TavernLib.Backend.Mods`.
 
-A **static class** in `TavernLib`, `TavernLib.Backend.Mods`.
+Brings `Mods` in line with a modlist before mods load on a headless server: installs or updates listed mods and their dependencies, and disables unlisted server mods (never deletes). Server.
 
 - **Listed in** [TavernLib.Backend.Mods](/tavernlib-api/types/backend-mods)
 - **Nested types** [`Pass`](/tavernlib-api/types/backend-mods/modreconciler-pass)
@@ -29,5 +29,5 @@ A **static class** in `TavernLib`, `TavernLib.Backend.Mods`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reconcile" /><code>{"static void Reconcile(string gameDir, "}<Link to="/tavernlib-api/types/backend-server-configs/modslist">{"ModsList"}</Link>{" modsList, List<string> repos, string scene)"}</code> |  |
-| <Link id="m-reconcilemodlist" /><code>{"static void ReconcileModList(string modsListPathArg)"}</code> |  |
+| <Link id="m-reconcile" /><code>{"static void Reconcile(string gameDir, "}<Link to="/tavernlib-api/types/backend-server-configs/modslist">{"ModsList"}</Link>{" modsList, List<string> repos, string scene)"}</code> | Runs one pass for a scene against the given sources, with a 300 second budget. |
+| <Link id="m-reconcilemodlist" /><code>{"static void ReconcileModList(string modsListPathArg)"}</code> | What `/modlist` runs. Reads the modlist and `mod_repos.json`, then reconciles. Never throws; a failure leaves `Mods` as it was. |

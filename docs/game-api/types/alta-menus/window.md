@@ -1,6 +1,6 @@
 ---
 title: "Window"
-description: "Client: a menu screen made of panels. Shows one panel at a time plus popups (confirm, options, loading)."
+description: "Client: a menu screen made of panels."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

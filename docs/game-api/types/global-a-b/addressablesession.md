@@ -1,6 +1,6 @@
 ---
 title: "AddressableSession"
-description: "class AddressableSession in Root.Township."
+description: "Loads Unity Addressable assets and keeps them loaded until every user of the session is removed, then releases them all."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AddressableSession
 
 A **class** in `Root.Township`, no namespace.
+
+Loads Unity Addressable assets and keeps them loaded until every user of the session is removed, then releases them all.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `IDisposable`
@@ -38,10 +40,10 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-adduser" /><code>{"void AddUser(object user)"}</code> |  |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-loadasync" /><code>{"async Task<T> LoadAsync<T>(string address)"}</code> |  |
-| <Link id="m-removeuser" /><code>{"void RemoveUser(object user)"}</code> |  |
+| <Link id="m-adduser" /><code>{"void AddUser(object user)"}</code> | Registers something that still needs the loaded assets. |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Removes the session itself as a user. |
+| <Link id="m-loadasync" /><code>{"async Task<T> LoadAsync<T>(string address)"}</code> | Loads an asset by address, reusing the handle if already loaded. Throws once the session has ended. |
+| <Link id="m-removeuser" /><code>{"void RemoveUser(object user)"}</code> | Removes a user. When none are left, releases every asset and ends the session. |
 
 ## Used in
 

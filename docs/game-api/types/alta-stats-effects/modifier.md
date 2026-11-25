@@ -1,6 +1,6 @@
 ---
 title: "Modifier"
-description: "Apply() and Remove() call InternalApply and InternalRemove once each."
+description: "Base for something that changes stats on a StatManager, with apply and remove that only run once each."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **abstract class** in `Root.Township`, `Alta.StatSystem`.
 
-`Apply()` and `Remove()` call `InternalApply` and `InternalRemove` once each.
+Base for something that changes stats on a `StatManager`, with apply and remove that only run once each.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Derived types** [`FullEmptyUpdateModifier`](/game-api/types/alta-stats-effects/fullemptyupdatemodifier), [`ModifierSet`](/game-api/types/alta-stats-effects/modifierset), [`StatModifier`](/game-api/types/alta-stats-effects/statmodifier), [`UpdateModifier`](/game-api/types/alta-stats-effects/updatemodifier)
@@ -28,18 +28,18 @@ An **abstract class** in `Root.Township`, `Alta.StatSystem`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isapplied" /><code>{"bool IsApplied { get; private set; }"}</code> |  |
-| <Link id="m-manager" /><code><Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" Manager { get; private set; }"}</code> |  |
+| <Link id="m-isapplied" /><code>{"bool IsApplied { get; private set; }"}</code> | True while the modifier is applied. |
+| <Link id="m-manager" /><code><Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" Manager { get; private set; }"}</code> | The stat manager it works on. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"void Apply()"}</code> |  |
-| <Link id="m-initialize" /><code>{"virtual bool Initialize("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |  |
-| <Link id="m-remove" /><code>{"void Remove()"}</code> |  |
-| <Link id="m-internalapply" /><code>{"protected abstract void InternalApply()"}</code> |  |
-| <Link id="m-internalremove" /><code>{"protected abstract void InternalRemove()"}</code> |  |
+| <Link id="m-apply" /><code>{"void Apply()"}</code> | Applies the modifier if not already applied. |
+| <Link id="m-initialize" /><code>{"virtual bool Initialize("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> | Binds it to a stat manager. False means it can't be used, probably. |
+| <Link id="m-remove" /><code>{"void Remove()"}</code> | Removes the modifier if applied. |
+| <Link id="m-internalapply" /><code>{"protected abstract void InternalApply()"}</code> | Subclass: does the actual change. |
+| <Link id="m-internalremove" /><code>{"protected abstract void InternalRemove()"}</code> | Subclass: undoes the change. |
 
 ## Used in
 

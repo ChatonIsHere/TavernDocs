@@ -1,6 +1,6 @@
 ---
 title: "FlyCamPlayer"
-description: "class FlyCamPlayer in Root.Township."
+description: "A keyboard-and-mouse fly camera that acts as a player controller (for spectating or filming)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FlyCamPlayer
 
 A **class** in `Root.Township`, no namespace.
+
+A keyboard-and-mouse fly camera that acts as a player controller (for spectating or filming). It can hide itself from other players.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`PlayerController`](/game-api/types/global-p/playercontroller), [`INetworkEntityBehaviour`](/game-api/types/alta-networking/inetworkentitybehaviour)
@@ -25,7 +27,7 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvisibilitychanged" /><code>{"Action<bool> OnVisibilityChanged"}</code> |  |
+| <Link id="m-onvisibilitychanged" /><code>{"Action<bool> OnVisibilityChanged"}</code> | Called when the camera is shown or hidden to others. |
 | <Link id="m-cameratoenableforlocal" /><code>{"private GameObject cameraToEnableForLocal"}</code> |  |
 | <Link id="m-cinematiclerp" /><code>{"private float cinematicLerp"}</code> |  |
 | <Link id="m-cinematicstoplerp" /><code>{"private float cinematicStopLerp"}</code> |  |
@@ -42,27 +44,27 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-camerasensitivity" /><code>{"float CameraSensitivity { get; }"}</code> |  |
-| <Link id="m-cinematiclerp-2" /><code>{"float CinematicLerp { get; }"}</code> |  |
-| <Link id="m-cinematiclerpstop" /><code>{"float CinematicLerpStop { get; }"}</code> |  |
-| <Link id="m-climbspeed-2" /><code>{"float ClimbSpeed { get; }"}</code> |  |
-| <Link id="m-currentsensitivity-2" /><code>{"int CurrentSensitivity { get; set; }"}</code> |  |
-| <Link id="m-fastmovefactor-2" /><code>{"float FastMoveFactor { get; }"}</code> |  |
-| <Link id="m-head" /><code>{"override Transform Head { get; }"}</code> |  |
-| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> |  |
-| <Link id="m-iscinematicmovement" /><code>{"bool IsCinematicMovement { get; set; }"}</code> |  |
-| <Link id="m-isshowingname" /><code>{"override bool IsShowingName { get; }"}</code> |  |
-| <Link id="m-isvisible" /><code>{"bool IsVisible { get; private set; }"}</code> |  |
-| <Link id="m-normalmovespeed-2" /><code>{"float NormalMoveSpeed { get; }"}</code> |  |
-| <Link id="m-slowmovefactor-2" /><code>{"float SlowMoveFactor { get; }"}</code> |  |
+| <Link id="m-camerasensitivity" /><code>{"float CameraSensitivity { get; }"}</code> | Look speed at the current sensitivity level (120, 90 or 45 by default). |
+| <Link id="m-cinematiclerp-2" /><code>{"float CinematicLerp { get; }"}</code> | Smoothing amount while moving in cinematic mode. |
+| <Link id="m-cinematiclerpstop" /><code>{"float CinematicLerpStop { get; }"}</code> | Smoothing amount when stopping in cinematic mode. |
+| <Link id="m-climbspeed-2" /><code>{"float ClimbSpeed { get; }"}</code> | Up and down speed. |
+| <Link id="m-currentsensitivity-2" /><code>{"int CurrentSensitivity { get; set; }"}</code> | Index into the sensitivity levels, clamped. Starts in the middle. |
+| <Link id="m-fastmovefactor-2" /><code>{"float FastMoveFactor { get; }"}</code> | Speed multiplier when moving fast. |
+| <Link id="m-head" /><code>{"override Transform Head { get; }"}</code> | The camera's transform. |
+| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> | The fly cam's own transform. |
+| <Link id="m-iscinematicmovement" /><code>{"bool IsCinematicMovement { get; set; }"}</code> | Whether smoothed cinematic movement is on. |
+| <Link id="m-isshowingname" /><code>{"override bool IsShowingName { get; }"}</code> | Shows its name only while visible. |
+| <Link id="m-isvisible" /><code>{"bool IsVisible { get; private set; }"}</code> | Whether the fly cam's renderers are shown. |
+| <Link id="m-normalmovespeed-2" /><code>{"float NormalMoveSpeed { get; }"}</code> | Base move speed. |
+| <Link id="m-slowmovefactor-2" /><code>{"float SlowMoveFactor { get; }"}</code> | Speed multiplier when moving slowly. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatevisibility" /><code>{"void UpdateVisibility(bool isVisible)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> |  |
+| <Link id="m-updatevisibility" /><code>{"void UpdateVisibility(bool isVisible)"}</code> | Shows or hides the fly cam's renderers (not on headless) and raises the change. |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Marks it alive, sets the middle sensitivity and hooks linking to the local player. |
+| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> | Hides the cursor again if this was the local player. |
 | <Link id="m-onlinkedtoplayer" /><code>{"private void OnLinkedToPlayer()"}</code> |  |
 
 ## Used in

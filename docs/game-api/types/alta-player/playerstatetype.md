@@ -1,6 +1,6 @@
 ---
 title: "PlayerStateType"
-description: "enum PlayerStateType in Root.Township."
+description: "The player states: none, first join, playing, combat, customization, equipment, dead, spirit and downed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerStateType
 
 An **enum** in `Root.Township`, `Alta.PlayerStates`.
+
+The player states: none, first join, playing, combat, customization, equipment, dead, spirit and downed.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 

@@ -1,6 +1,6 @@
 ---
 title: "ActiveDeleted"
-description: "Destroys the creature's whole entity, through AltaCoroutine.DelayCall. A creature can despawn itself this way."
+description: "Destroys the creature's whole entity, through AltaCoroutine.DelayCall."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "BuildupPickup"
-description: "class BuildupPickup in Root.Township."
+description: "A pickup with child items attached in slots, which slash hits knock off."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BuildupPickup
 
 A **class** in `Root.Township`, no namespace.
+
+A pickup with child items attached in slots, which slash hits knock off. While it has children it can't be docked and some components are disabled. Server controlled and saved.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<BuildupPickupSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<BuildupPickupSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -48,10 +50,10 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-loserandomchild" /><code>{"void LoseRandomChild()"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the sync messages for children, enabled state and losing a child. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: on first generation fills the child slots (all of them, whatever the min and max counts say) and destroys stray children. |
+| <Link id="m-loserandomchild" /><code>{"void LoseRandomChild()"}</code> | Server: knocks off one random attached child, if any. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends a joining player the attached children and enabled state. |
 | <Link id="m-cutchild" /><code>{"private void CutChild("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |  |
 | <Link id="m-dockfilter" /><code>{"private void DockFilter("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, ref bool result)"}</code> |  |
 | <Link id="m-losechild" /><code>{"private void LoseChild(int index, bool isForced = false)"}</code> |  |

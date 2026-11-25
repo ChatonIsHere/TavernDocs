@@ -1,6 +1,6 @@
 ---
 title: "Lines<T>"
-description: "A list that answers as one item per line in a text console, and as a JSON array in TavernKeeper. None when it's empty."
+description: "A list for console answers: one item per line in a text console, and a JSON array in TavernKeeper."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.ModulePorts`.
 
-A list that answers as one item per line in a text console, and as a JSON array in TavernKeeper. `None` when it's empty.
+A list for console answers: one item per line in a text console, and a JSON array in TavernKeeper. Return it instead of a plain `IEnumerable`.
 
 - **Listed in** [TavernLib.ModulePorts](/tavernlib-api/types/moduleports)
 - **Inherits or implements** `List<T>`
@@ -28,7 +28,7 @@ A list that answers as one item per line in a text console, and as a JSON array 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Each item on its own line, or `None` when the list is empty. |
 
 ## Used in
 

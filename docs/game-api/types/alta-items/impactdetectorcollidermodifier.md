@@ -1,6 +1,6 @@
 ---
 title: "ImpactDetectorColliderModifier"
-description: "class ImpactDetectorColliderModifier in Root.Township."
+description: "Component on a collider that changes how hits on it are treated, through a list of ColliderModifierSettings."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactDetectorColliderModifier
 
 A **class** in `Root.Township`, `Alta.Impact`.
+
+Component on a collider that changes how hits on it are treated, through a list of `ColliderModifierSettings`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `MonoBehaviour`
@@ -31,8 +33,8 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdamaging" /><code>{"bool IsDamaging("}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool, "}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" point)"}</code> |  |
-| <Link id="m-modifyhit" /><code>{"void ModifyHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" point)"}</code> |  |
+| <Link id="m-isdamaging" /><code>{"bool IsDamaging("}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool, "}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" point)"}</code> | True only if every setting agrees the hit at this point should do damage. |
+| <Link id="m-modifyhit" /><code>{"void ModifyHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" point)"}</code> | Lets each setting change the hit at this contact point. |
 
 ## Used in
 

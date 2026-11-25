@@ -1,6 +1,6 @@
 ---
 title: "LiquidContainer"
-description: "class LiquidContainer in Root.Township."
+description: "Holds a whole number of units of one liquid (a bucket, a flask, a pond)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LiquidContainer
 
 A **class** in `Root.Township`, `Alta.Liquid`.
+
+Holds a whole number of units of one liquid (a bucket, a flask, a pond). Only the server changes the contents; the level and liquid are synced, saved, and shown through an optional surface visual. Pours in progress show as fractional amounts.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`GeneratedNetworkEntityBehaviour`](/game-api/types/alta-networking/generatednetworkentitybehaviour), [`ILiquidContainer`](/game-api/types/alta-stats-effects/iliquidcontainer), [`ILiquidContainerInternal`](/game-api/types/alta-stats-effects/iliquidcontainerinternal), [`ISavable<LiquidContainerSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<LiquidContainerSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase), [`IEntityReplaceHandler`](/game-api/types/alta-networking/ientityreplacehandler), [`IBlockGenericDecrafting`](/game-api/types/alta-crafting/iblockgenericdecrafting), [`IInterfereWithDocking`](/game-api/types/alta-items/iinterferewithdocking)
@@ -50,18 +52,18 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canremovefrom-2" /><code>{"bool CanRemoveFrom { get; set; }"}</code> |  |
-| <Link id="m-containedliquid" /><code><Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" ContainedLiquid { get; protected set; }"}</code> |  |
-| <Link id="m-containerpriority-2" /><code>{"int ContainerPriority { get; }"}</code> |  |
-| <Link id="m-containersize-2" /><code>{"int ContainerSize { get; }"}</code> |  |
-| <Link id="m-currentcontentlevel-2" /><code>{"int CurrentContentLevel { get; }"}</code> |  |
-| <Link id="m-isallowinggradualconsumption-2" /><code>{"bool IsAllowingGradualConsumption { get; }"}</code> |  |
-| <Link id="m-isempty" /><code>{"bool IsEmpty { get; }"}</code> |  |
-| <Link id="m-isfull" /><code>{"bool IsFull { get; }"}</code> |  |
-| <Link id="m-receivetransitionmultiplier" /><code>{"virtual float ReceiveTransitionMultiplier { get; }"}</code> |  |
-| <Link id="m-spaceleft" /><code>{"int SpaceLeft { get; }"}</code> |  |
-| <Link id="m-surfacevisual-2" /><code><Link to="/game-api/types/alta-stats-effects/liquidsurfacevisual">{"LiquidSurfaceVisual"}</Link>{" SurfaceVisual { get; }"}</code> |  |
-| <Link id="m-totalliquidamountshown" /><code>{"float TotalLiquidAmountShown { get; }"}</code> |  |
+| <Link id="m-canremovefrom-2" /><code>{"bool CanRemoveFrom { get; set; }"}</code> | Whether liquid can be taken out. Saved. |
+| <Link id="m-containedliquid" /><code><Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" ContainedLiquid { get; protected set; }"}</code> | The liquid inside, or null when empty. |
+| <Link id="m-containerpriority-2" /><code>{"int ContainerPriority { get; }"}</code> | A container only pours into containers of lower priority (checked by `LiquidContainerTrigger`). Default 1. |
+| <Link id="m-containersize-2" /><code>{"int ContainerSize { get; }"}</code> | Number of units it holds. |
+| <Link id="m-currentcontentlevel-2" /><code>{"int CurrentContentLevel { get; }"}</code> | Units of liquid inside. `int.MaxValue` for an infinite source. |
+| <Link id="m-isallowinggradualconsumption-2" /><code>{"bool IsAllowingGradualConsumption { get; }"}</code> | Whether drinking can take the liquid out bit by bit. |
+| <Link id="m-isempty" /><code>{"bool IsEmpty { get; }"}</code> | True with no liquid. Never true for an infinite source. |
+| <Link id="m-isfull" /><code>{"bool IsFull { get; }"}</code> | True at full capacity. Never true for an infinite source. |
+| <Link id="m-receivetransitionmultiplier" /><code>{"virtual float ReceiveTransitionMultiplier { get; }"}</code> | Speed factor for pours into this container. 1 by default. |
+| <Link id="m-spaceleft" /><code>{"int SpaceLeft { get; }"}</code> | Units of free space. `int.MaxValue` for an infinite source. |
+| <Link id="m-surfacevisual-2" /><code><Link to="/game-api/types/alta-stats-effects/liquidsurfacevisual">{"LiquidSurfaceVisual"}</Link>{" SurfaceVisual { get; }"}</code> | The visual that shows the liquid's surface, or null. |
+| <Link id="m-totalliquidamountshown" /><code>{"float TotalLiquidAmountShown { get; }"}</code> | Level plus the progress of pours in and out, for display. |
 | <Link id="m-alta-crafting-iblockgenericdecrafting-candecraft" /><code>{"private bool Alta.Crafting.IBlockGenericDecrafting.CanDecraft { get; }"}</code> |  |
 | <Link id="m-alta-liquid-iliquidcontainerinternal-outtransition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" Alta.Liquid.ILiquidContainerInternal.OutTransition { get; }"}</code> |  |
 
@@ -69,31 +71,31 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addfilter" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidfillfilter">{"LiquidFillFilter"}</Link>{" AddFilter"}</code> |  |
-| <Link id="m-containedliquidchanged" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidtypechangedhandler">{"LiquidTypeChangedHandler"}</Link>{" ContainedLiquidChanged"}</code> |  |
-| <Link id="m-contentlevelchanged" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidcontaineramountchangedhandler">{"LiquidContainerAmountChangedHandler"}</Link>{" ContentLevelChanged"}</code> |  |
-| <Link id="m-totalamountshownchanged" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidcontainerhandler">{"LiquidContainerHandler"}</Link>{" TotalAmountShownChanged"}</code> |  |
+| <Link id="m-addfilter" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidfillfilter">{"LiquidFillFilter"}</Link>{" AddFilter"}</code> | Lets other components refuse a liquid before it is added. |
+| <Link id="m-containedliquidchanged" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidtypechangedhandler">{"LiquidTypeChangedHandler"}</Link>{" ContainedLiquidChanged"}</code> | Raised with the old and new liquid when it changes. |
+| <Link id="m-contentlevelchanged" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidcontaineramountchangedhandler">{"LiquidContainerAmountChangedHandler"}</Link>{" ContentLevelChanged"}</code> | Raised with the old and new level when the level changes. |
+| <Link id="m-totalamountshownchanged" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidcontainerhandler">{"LiquidContainerHandler"}</Link>{" TotalAmountShownChanged"}</code> | Raised when the shown amount changes, including during pours. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canaddto-2" /><code>{"bool CanAddTo("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" liquid)"}</code> |  |
-| <Link id="m-fillinto" /><code>{"static bool FillInto("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" from, "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" to, int amountToFill, bool isForced = false)"}</code> |  |
-| <Link id="m-fillintocontainer" /><code>{"bool FillIntoContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" otherContainer, int amountToFill, bool isForced = false)"}</code> |  |
-| <Link id="m-forceempty" /><code>{"void ForceEmpty()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-iscompatiblewithothercontainer" /><code>{"virtual bool IsCompatibleWithOtherContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" otherContainer)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| <Link id="m-canaddto-2" /><code>{"bool CanAddTo("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" liquid)"}</code> | True if adding is allowed and no `AddFilter` handler refuses this liquid. |
+| <Link id="m-fillinto" /><code>{"static bool FillInto("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" from, "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" to, int amountToFill, bool isForced = false)"}</code> | Server: moves units from one container to another if they are compatible and there is room. Static. |
+| <Link id="m-fillintocontainer" /><code>{"bool FillIntoContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" otherContainer, int amountToFill, bool isForced = false)"}</code> | Server: pours units from this container into another. |
+| <Link id="m-forceempty" /><code>{"void ForceEmpty()"}</code> | Removes all liquid, ignoring `CanRemoveFrom`. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the level and content sync messages. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: syncs the starting level. |
+| <Link id="m-iscompatiblewithothercontainer" /><code>{"virtual bool IsCompatibleWithOtherContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" otherContainer)"}</code> | True unless both containers hold different liquids. The global container always matches. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the level and liquid to a joining player. |
 | <Link id="m-addliquid" /><code>{"private bool Alta.Liquid.ILiquidContainerInternal.AddLiquid("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" containedLiquid, int amountToAdd, bool isForced)"}</code> |  |
 | <Link id="m-addliquidintransition" /><code>{"private void Alta.Liquid.ILiquidContainerInternal.AddLiquidInTransition("}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" liquidTransition)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Sets up the pour-out transition. Disables updates if there is no surface visual. |
 | <Link id="m-checkallowed" /><code>{"private bool Alta.Inventory.IInterfereWithDocking.CheckAllowed("}<Link to="/game-api/types/alta-items/iinterferewithdocking">{"IInterfereWithDocking"}</Link>{" other)"}</code> |  |
 | <Link id="m-checktodisableupdateloop" /><code>{"private void CheckToDisableUpdateLoop()"}</code> |  |
 | <Link id="m-clearcontainedliquidduetofailedtransition" /><code>{"private void ClearContainedLiquidDueToFailedTransition("}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" failedTransition)"}</code> |  |
 | <Link id="m-enableupdateloop" /><code>{"private void EnableUpdateLoop()"}</code> |  |
-| <Link id="m-generate" /><code>{"protected override void Generate("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
+| <Link id="m-generate" /><code>{"protected override void Generate("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | On first spawn, fills a random amount of a liquid picked from the distribution, if one is set. |
 | <Link id="m-oncontainedliquidchanged" /><code>{"private void OnContainedLiquidChanged("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" oldContent, "}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" newContent)"}</code> |  |
 | <Link id="m-oncontentlevelchanged" /><code>{"private void OnContentLevelChanged()"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
@@ -107,7 +109,7 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 | <Link id="m-syncliquidamount-2" /><code>{"private void SyncLiquidAmount("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 | <Link id="m-syncliquidcontent-2" /><code>{"private void SyncLiquidContent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 | <Link id="m-update" /><code>{"private void Update()"}</code> |  |
-| <Link id="m-updatecontentrenderer" /><code>{"protected virtual void UpdateContentRenderer()"}</code> |  |
+| <Link id="m-updatecontentrenderer" /><code>{"protected virtual void UpdateContentRenderer()"}</code> | Sets the surface visual's fullness from the shown amount. |
 | <Link id="m-updatetotalliquidamountshown" /><code>{"private bool UpdateTotalLiquidAmountShown()"}</code> |  |
 | <Link id="m-updatetotaltransitionamount" /><code>{"private bool UpdateTotalTransitionAmount()"}</code> |  |
 | <Link id="m-updatetransitionamountandrenderers" /><code>{"private void UpdateTransitionAmountAndRenderers(bool isForced)"}</code> |  |

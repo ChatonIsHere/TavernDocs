@@ -1,6 +1,6 @@
 ---
 title: "SmoothLocomotion"
-description: "On the VR body (and the character room's)."
+description: "Thumbstick movement for a VR player: moves a character controller with gravity, slopes and fall damage, tracks a last safe position and puts the player back..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-On the VR body (and the character room's).
+Thumbstick movement for a VR player: moves a character controller with gravity, slopes and fall damage, tracks a last safe position and puts the player back there after a bad fall. Runs on the local player's client; the result goes through `LocomotionController`.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`
@@ -29,7 +29,7 @@ On the VR body (and the character room's).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-velocity" /><code>{"Vector3 velocity"}</code> |  |
+| <Link id="m-velocity" /><code>{"Vector3 velocity"}</code> | Current physics velocity (gravity and momentum) applied on top of input. |
 | <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |  |
 | <Link id="m-character" /><code>{"private "}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" character"}</code> |  |
 | <Link id="m-charactercontroller" /><code>{"private CharacterController characterController"}</code> |  |
@@ -72,21 +72,21 @@ On the VR body (and the character room's).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activehand" /><code><Link to="/game-api/types/global-e-h/handhandler">{"HandHandler"}</Link>{" ActiveHand { get; private set; }"}</code> |  |
-| <Link id="m-bodycenter" /><code>{"Vector3 BodyCenter { get; }"}</code> |  |
-| <Link id="m-character-2" /><code><Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" Character { get; }"}</code> |  |
-| <Link id="m-charactercontroller-2" /><code>{"CharacterController CharacterController { get; }"}</code> |  |
-| <Link id="m-currentmovingvelocity" /><code>{"Vector3 CurrentMovingVelocity { get; private set; }"}</code> |  |
-| <Link id="m-hands" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-e-h/handhandler">{"HandHandler"}</Link>{"> Hands { get; }"}</code> |  |
-| <Link id="m-isdebugmovement" /><code>{"bool IsDebugMovement { get; private set; }"}</code> |  |
-| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; set; }"}</code> |  |
-| <Link id="m-isgrounded" /><code>{"bool IsGrounded { get; }"}</code> |  |
-| <Link id="m-issafe" /><code>{"bool IsSafe { get; set; }"}</code> |  |
-| <Link id="m-lastsafeposition" /><code>{"Vector3 LastSafePosition { get; set; }"}</code> |  |
-| <Link id="m-lefthand" /><code><Link to="/game-api/types/global-e-h/handhandler">{"HandHandler"}</Link>{" LeftHand { get; private set; }"}</code> |  |
-| <Link id="m-otherhand" /><code><Link to="/game-api/types/global-e-h/handhandler">{"HandHandler"}</Link>{" OtherHand { get; private set; }"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> |  |
-| <Link id="m-righthand" /><code><Link to="/game-api/types/global-e-h/handhandler">{"HandHandler"}</Link>{" RightHand { get; private set; }"}</code> |  |
+| <Link id="m-activehand" /><code><Link to="/game-api/types/global-e-h/handhandler">{"HandHandler"}</Link>{" ActiveHand { get; private set; }"}</code> | Hand used for smooth movement, from the player's settings. |
+| <Link id="m-bodycenter" /><code>{"Vector3 BodyCenter { get; }"}</code> | Centre of the character controller in world space. |
+| <Link id="m-character-2" /><code><Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" Character { get; }"}</code> | The player controller this belongs to. |
+| <Link id="m-charactercontroller-2" /><code>{"CharacterController CharacterController { get; }"}</code> | The Unity character controller used for collision. |
+| <Link id="m-currentmovingvelocity" /><code>{"Vector3 CurrentMovingVelocity { get; private set; }"}</code> | Velocity from stick input this frame. |
+| <Link id="m-hands" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-e-h/handhandler">{"HandHandler"}</Link>{"> Hands { get; }"}</code> | The right then left hand handlers. |
+| <Link id="m-isdebugmovement" /><code>{"bool IsDebugMovement { get; private set; }"}</code> | True in debug movement mode (no gravity). |
+| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; set; }"}</code> | Whether smooth movement is on. Setting it calls `SetEnableController`. |
+| <Link id="m-isgrounded" /><code>{"bool IsGrounded { get; }"}</code> | True if the last move touched something below. |
+| <Link id="m-issafe" /><code>{"bool IsSafe { get; set; }"}</code> | Whether the current spot may be saved as a safe position. |
+| <Link id="m-lastsafeposition" /><code>{"Vector3 LastSafePosition { get; set; }"}</code> | Last spot judged safe to stand on. Checked every 5 seconds and sent to the server. |
+| <Link id="m-lefthand" /><code><Link to="/game-api/types/global-e-h/handhandler">{"HandHandler"}</Link>{" LeftHand { get; private set; }"}</code> | Left hand handler. |
+| <Link id="m-otherhand" /><code><Link to="/game-api/types/global-e-h/handhandler">{"HandHandler"}</Link>{" OtherHand { get; private set; }"}</code> | The hand not used for smooth movement. |
+| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> | Position of the locomotion object. |
+| <Link id="m-righthand" /><code><Link to="/game-api/types/global-e-h/handhandler">{"HandHandler"}</Link>{" RightHand { get; private set; }"}</code> | Right hand handler. |
 
 ## Events
 
@@ -102,19 +102,19 @@ On the VR body (and the character room's).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applymovement" /><code>{"void ApplyMovement(Vector3 velocityXYZ, bool isApplyingGravity)"}</code> |  |
-| <Link id="m-forcesetisloaded" /><code>{"void ForceSetIsLoaded()"}</code> |  |
-| <Link id="m-getdefaultheight" /><code>{"float GetDefaultHeight(out float headHeight)"}</code> |  |
-| <Link id="m-initializemodifier" /><code>{"void InitializeModifier("}<Link to="/game-api/types/global-i-l/ismoothlocomotionmodifier">{"ISmoothLocomotionModifier"}</Link>{" modifier)"}</code> |  |
-| <Link id="m-movetosafety" /><code>{"void MoveToSafety()"}</code> |  |
-| <Link id="m-removemodifier" /><code>{"void RemoveModifier("}<Link to="/game-api/types/global-i-l/ismoothlocomotionmodifier">{"ISmoothLocomotionModifier"}</Link>{" modifier)"}</code> |  |
-| <Link id="m-repositioncharacter" /><code>{"void RepositionCharacter()"}</code> |  |
-| <Link id="m-repositioncharacter-2" /><code>{"void RepositionCharacter(Vector3 headOffset)"}</code> |  |
-| <Link id="m-repositioncharacter-3" /><code>{"void RepositionCharacter(float xzLimit)"}</code> |  |
-| <Link id="m-setenablecontroller" /><code>{"void SetEnableController(bool isEnabled)"}</code> |  |
-| <Link id="m-toggledebug" /><code>{"void ToggleDebug()"}</code> |  |
-| <Link id="m-treatasgrounded" /><code>{"void TreatAsGrounded()"}</code> |  |
-| <Link id="m-waitforchunkfinishload" /><code>{"void WaitForChunkFinishLoad("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
+| <Link id="m-applymovement" /><code>{"void ApplyMovement(Vector3 velocityXYZ, bool isApplyingGravity)"}</code> | Moves the character controller, with gravity and friction when allowed. Debug mode moves without either. |
+| <Link id="m-forcesetisloaded" /><code>{"void ForceSetIsLoaded()"}</code> | Marks the chunk as loaded so movement can start. |
+| <Link id="m-getdefaultheight" /><code>{"float GetDefaultHeight(out float headHeight)"}</code> | Controller height from the head height and settings; also returns the head height. |
+| <Link id="m-initializemodifier" /><code>{"void InitializeModifier("}<Link to="/game-api/types/global-i-l/ismoothlocomotionmodifier">{"ISmoothLocomotionModifier"}</Link>{" modifier)"}</code> | Adds a modifier (such as climbing) that changes friction, height, upward grip or overrides movement. |
+| <Link id="m-movetosafety" /><code>{"void MoveToSafety()"}</code> | Moves the player back to the last safe position (nudged away from edges), or to the respawn point if that is no longer safe. |
+| <Link id="m-removemodifier" /><code>{"void RemoveModifier("}<Link to="/game-api/types/global-i-l/ismoothlocomotionmodifier">{"ISmoothLocomotionModifier"}</Link>{" modifier)"}</code> | Removes a modifier's hooks. For a modifier that overrides movement it destroys this object instead. |
+| <Link id="m-repositioncharacter" /><code>{"void RepositionCharacter()"}</code> | Moves the player rig so its feet match the character controller, optionally with a head offset or a horizontal limit. |
+| <Link id="m-repositioncharacter-2" /><code>{"void RepositionCharacter(Vector3 headOffset)"}</code> | Moves the player rig so its feet match the character controller, optionally with a head offset or a horizontal limit. |
+| <Link id="m-repositioncharacter-3" /><code>{"void RepositionCharacter(float xzLimit)"}</code> | Moves the player rig so its feet match the character controller, optionally with a head offset or a horizontal limit. |
+| <Link id="m-setenablecontroller" /><code>{"void SetEnableController(bool isEnabled)"}</code> | Turns smooth movement on or off (never in flat modes). Swaps the active hand between teleport or turning and smooth movement. |
+| <Link id="m-toggledebug" /><code>{"void ToggleDebug()"}</code> | Toggles debug movement. |
+| <Link id="m-treatasgrounded" /><code>{"void TreatAsGrounded()"}</code> | Resets the fall start height to now, so no fall damage is counted from earlier. |
+| <Link id="m-waitforchunkfinishload" /><code>{"void WaitForChunkFinishLoad("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Holds movement until the given chunk is fully loaded. |
 | <Link id="m-applygravityandmovement" /><code>{"private void ApplyGravityAndMovement(Vector3 velocityXYZ)"}</code> |  |
 | <Link id="m-assignsmoothlocohand" /><code>{"private void AssignSmoothLocoHand()"}</code> |  |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
@@ -132,7 +132,7 @@ On the VR body (and the character room's).
 | <Link id="m-generalsetup" /><code>{"private bool GeneralSetup()"}</code> |  |
 | <Link id="m-handleteleport" /><code>{"private void HandleTeleport("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |  |
 | <Link id="m-increaseslip" /><code>{"private void IncreaseSlip(Vector3 normal, ref Vector3 gravityAndSlide)"}</code> |  |
-| <Link id="m-inject" /><code>{"protected void Inject("}<Link to="/game-api/types/global-i-l/iplayercontrollermultilockmodel">{"IPlayerControllerMultiLockModel"}</Link>{" playerControllerMultiLockModel)"}</code> |  |
+| <Link id="m-inject" /><code>{"protected void Inject("}<Link to="/game-api/types/global-i-l/iplayercontrollermultilockmodel">{"IPlayerControllerMultiLockModel"}</Link>{" playerControllerMultiLockModel)"}</code> | Dependency injection hook for the player controller lock model. |
 | <Link id="m-isclosetoground" /><code>{"private bool IsCloseToGround(Vector3 position, out Vector3 gravityAndSlide)"}</code> |  |
 | <Link id="m-ishitnormalsafe" /><code>{"private bool IsHitNormalSafe(Vector3 normal)"}</code> |  |
 | <Link id="m-issafeposition" /><code>{"private bool IsSafePosition(Vector3 position)"}</code> |  |

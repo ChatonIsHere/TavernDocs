@@ -1,6 +1,6 @@
 ---
 title: "IPartInstance"
-description: "interface IPartInstance in Root.Township."
+description: "An instance of a cave generation plugin part that changes a map chunk."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Caves.PluginParts`.
 
+An instance of a cave generation plugin part that changes a map chunk.
+
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Derived types** [`MapGeneratorPartInstance<T>`](/game-api/types/alta-world-generation/mapgeneratorpartinstance-t)
 
@@ -19,7 +21,7 @@ An **interface** in `Root.Township`, `Alta.Caves.PluginParts`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modify" /><code>{"void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> |  |
+| <Link id="m-modify" /><code>{"void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> | Applies the part's changes to a cave map chunk. |
 
 ## Used in
 

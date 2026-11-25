@@ -1,6 +1,6 @@
 ---
 title: "TreeDecay"
-description: "A BasicDecay on a tree: once a felled tree has come loose from its spawner (no chunking parent), it decays, but not while it's kinematic or within 120"
+description: "A BasicDecay on a tree: once a felled tree has come loose from its spawner (no chunking parent), it decays, but not while it's kinematic or within 120..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

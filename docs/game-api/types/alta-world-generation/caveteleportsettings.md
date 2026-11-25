@@ -1,6 +1,6 @@
 ---
 title: "CaveTeleportSettings"
-description: "class CaveTeleportSettings in Root.Township."
+description: "Global settings for cave teleporters: fuel costs between layers, effects, sounds and delays."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CaveTeleportSettings
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+Global settings for cave teleporters: fuel costs between layers, effects, sounds and delays. Get it with `GlobalSettings<CaveTeleportSettings>.Instance`.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`GlobalSettings<CaveTeleportSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -48,21 +50,21 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animationduration-2" /><code>{"float AnimationDuration { get; }"}</code> |  |
-| <Link id="m-basematerial-2" /><code>{"Material BaseMaterial { get; }"}</code> |  |
-| <Link id="m-fadeincurve-2" /><code>{"AnimationCurve FadeInCurve { get; }"}</code> |  |
-| <Link id="m-fadeoutcurve-2" /><code>{"AnimationCurve FadeOutCurve { get; }"}</code> |  |
-| <Link id="m-fuelprefab-2" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" FuelPrefab { get; }"}</code> |  |
-| <Link id="m-localsoundcooldown-2" /><code>{"float LocalSoundCooldown { get; set; }"}</code> |  |
-| <Link id="m-teleportdelay-2" /><code>{"float TeleportDelay { get; }"}</code> |  |
-| <Link id="m-teleportsoundeffect-2" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" TeleportSoundEffect { get; }"}</code> |  |
+| <Link id="m-animationduration-2" /><code>{"float AnimationDuration { get; }"}</code> | Duration of the teleporter repair animation. |
+| <Link id="m-basematerial-2" /><code>{"Material BaseMaterial { get; }"}</code> | Material for the repair animation. |
+| <Link id="m-fadeincurve-2" /><code>{"AnimationCurve FadeInCurve { get; }"}</code> | Fade in curve for the repair animation. |
+| <Link id="m-fadeoutcurve-2" /><code>{"AnimationCurve FadeOutCurve { get; }"}</code> | Fade out curve for the repair animation. |
+| <Link id="m-fuelprefab-2" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" FuelPrefab { get; }"}</code> | The fuel item prefab. |
+| <Link id="m-localsoundcooldown-2" /><code>{"float LocalSoundCooldown { get; set; }"}</code> | Seconds (default 4) before the local player can hear the teleport sound again. |
+| <Link id="m-teleportdelay-2" /><code>{"float TeleportDelay { get; }"}</code> | Seconds (default 1) between the departure effect and the player being moved. The screen fades for half of it. |
+| <Link id="m-teleportsoundeffect-2" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" TeleportSoundEffect { get; }"}</code> | Sound played when a player teleports. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-calculatecost" /><code>{"static void CalculateCost(int fromLayer, int targetLayer, out int fromCost, out int toCost)"}</code> |  |
-| <Link id="m-playeffects" /><code>{"static void PlayEffects("}<Link to="/game-api/types/alta-world-generation/teleporteffectargument">{"TeleportEffectArgument"}</Link>{" effectArgument)"}</code> |  |
+| <Link id="m-calculatecost" /><code>{"static void CalculateCost(int fromLayer, int targetLayer, out int fromCost, out int toCost)"}</code> | Fuel cost at each end for a trip between two layers (0 is the surface). Uses the from-surface, to-surface or within-caves cost table. |
+| <Link id="m-playeffects" /><code>{"static void PlayEffects("}<Link to="/game-api/types/alta-world-generation/teleporteffectargument">{"TeleportEffectArgument"}</Link>{" effectArgument)"}</code> | Client: spawns the arrive or depart effect for a surface or cave teleport at the given position. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "ModIndex"
-description: "A class in TavernLib, TavernLib.Backend.Mods."
+description: "Every trusted source's repository.json merged: a list of ModSummary plus the replacements they list."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 
-A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
+Every trusted source's `repository.json` merged: a list of `ModSummary` plus the replacements they list.
 
 - **Listed in** [TavernLib.Backend.Mods](/tavernlib-api/types/backend-mods)
 - **Inherits or implements** `List<ModSummary>`
@@ -29,13 +29,13 @@ A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-replaced" /><code>{"List<"}<Link to="/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{"> Replaced { get; }"}</code> |  |
+| <Link id="m-replaced" /><code>{"List<"}<Link to="/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{"> Replaced { get; }"}</code> | Every source's replaced-mod entries. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-replacementofunlisted" /><code>{"static "}<Link to="/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{" ReplacementOfUnlisted(IReadOnlyList<"}<Link to="/tavernlib-api/types/backend-mods/modsummary">{"ModSummary"}</Link>{"> index, string modId)"}</code> |  |
+| <Link id="m-replacementofunlisted" /><code>{"static "}<Link to="/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{" ReplacementOfUnlisted(IReadOnlyList<"}<Link to="/tavernlib-api/types/backend-mods/modsummary">{"ModSummary"}</Link>{"> index, string modId)"}</code> | The replacement for an id no source lists any more, if a source lists its replacement. The default source's entry wins. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "IColorModelPoint<T>"
-description: "interface IColorModelPoint<T> in Root.Township."
+description: "A point whose value drives one colour channel of a ColorModel, written into mesh vertex colours by bone weight."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+A point whose value drives one colour channel of a `ColorModel`, written into mesh vertex colours by bone weight. Used for forging and heat (for example `ForgedPoint`).
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`ForgedPoint`](/game-api/types/alta-crafting/forgedpoint), [`MetalHeatPoint`](/game-api/types/alta-crafting/metalheatpoint), [`NullColorModelPoint`](/game-api/types/global-m-o/nullcolormodelpoint), [`WoodcutPointData`](/game-api/types/global-t-x/woodcutpointdata)
 
@@ -19,10 +21,10 @@ An **interface** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colormodelvalue" /><code>{"float ColorModelValue { get; }"}</code> |  |
+| <Link id="m-colormodelvalue" /><code>{"float ColorModelValue { get; }"}</code> | The value written into the colour channel. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changed" /><code>{"event Action<T> Changed"}</code> |  |
+| <Link id="m-changed" /><code>{"event Action<T> Changed"}</code> | Fired when the value changes, so the model can update its colours. |

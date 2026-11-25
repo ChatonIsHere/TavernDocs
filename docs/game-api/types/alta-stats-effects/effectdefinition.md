@@ -1,6 +1,6 @@
 ---
 title: "EffectDefinition"
-description: "Base asset for an alchemy or food effect applied to an EffectHandler. Stored under the hashed path Cooking/Effects."
+description: "Base asset for an alchemy or food effect applied to an EffectHandler."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

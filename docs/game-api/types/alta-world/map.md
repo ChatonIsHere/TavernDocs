@@ -1,6 +1,6 @@
 ---
 title: "Map"
-description: "The map is a set of pieces players uncover as they explore, plus landmarks (icons) they become aware of and then discover."
+description: "A hashed map asset: the map pieces players can uncover and the world area it covers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Map`.
 
-The map is a set of pieces players uncover as they explore, plus landmarks (icons) they become aware of and then discover.
+A hashed map asset: the map pieces players can uncover and the world area it covers.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** [`HashedGeneralValue<Map>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -40,23 +40,23 @@ The map is a set of pieces players uncover as they explore, plus landmarks (icon
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-firstnonreservedindex-2" /><code>{"uint FirstNonReservedIndex { get; }"}</code> |  |
-| <Link id="m-globalmappieces-2" /><code><Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"[] GlobalMapPieces { get; }"}</code> |  |
-| <Link id="m-pieces-2" /><code><Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"[] Pieces { get; }"}</code> |  |
-| <Link id="m-worldpositionbottomleft-2" /><code>{"Vector2 WorldPositionBottomLeft { get; }"}</code> |  |
-| <Link id="m-worldpositiontopright-2" /><code>{"Vector2 WorldPositionTopRight { get; }"}</code> |  |
+| <Link id="m-firstnonreservedindex-2" /><code>{"uint FirstNonReservedIndex { get; }"}</code> | First landmark index not reserved for fixed landmarks (default 1000). |
+| <Link id="m-globalmappieces-2" /><code><Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"[] GlobalMapPieces { get; }"}</code> | Map pieces shown to everyone. |
+| <Link id="m-pieces-2" /><code><Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"[] Pieces { get; }"}</code> | The map pieces that can be uncovered. |
+| <Link id="m-worldpositionbottomleft-2" /><code>{"Vector2 WorldPositionBottomLeft { get; }"}</code> | World XZ of the map's bottom-left corner. |
+| <Link id="m-worldpositiontopright-2" /><code>{"Vector2 WorldPositionTopRight { get; }"}</code> | World XZ of the map's top-right corner. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-piecediscovered" /><code>{"event Action<int, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"> PieceDiscovered"}</code> |  |
+| <Link id="m-piecediscovered" /><code>{"event Action<int, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"> PieceDiscovered"}</code> | Raised with the index and piece when a map piece is uncovered. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onpiecediscovered" /><code>{"void OnPieceDiscovered(int pieceIndex)"}</code> |  |
+| <Link id="m-onpiecediscovered" /><code>{"void OnPieceDiscovered(int pieceIndex)"}</code> | Raises `PieceDiscovered` for a piece index. |
 
 ## Used in
 

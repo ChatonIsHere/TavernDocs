@@ -1,6 +1,6 @@
 ---
 title: "ITarget"
-description: "Anything a creature can consider. Target implements it, so every creature is also a target for other creatures."
+description: "Something creature AI can target: a creature (through Target) or a player."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Intelligence`.
 
-Anything a creature can consider. `Target` implements it, so every creature is also a target for other creatures.
+Something creature AI can target: a creature (through `Target`) or a player. Gives position, health stats, senses and attacks.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`ITargetPointer`](/game-api/types/alta-intelligence/itargetpointer)
@@ -23,24 +23,24 @@ Anything a creature can consider. `Target` implements it, so every creature is a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-groundposition" /><code>{"Vector3 GroundPosition { get; }"}</code> |  |
-| <Link id="m-interactable" /><code><Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-isalive" /><code>{"bool IsAlive { get; }"}</code> |  |
-| <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> |  |
-| <Link id="m-senses" /><code><Link to="/game-api/types/alta-intelligence/basicsenseset">{"BasicSenseSet"}</Link>{" Senses { get; }"}</code> |  |
-| <Link id="m-statmanager" /><code><Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |  |
+| <Link id="m-groundposition" /><code>{"Vector3 GroundPosition { get; }"}</code> | Position on the ground used for distances. The transform position in the base `Target`. |
+| <Link id="m-interactable" /><code><Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" { get; }"}</code> | The `Interactable` on the target, if any. |
+| <Link id="m-isalive" /><code>{"bool IsAlive { get; }"}</code> | Whether the target is alive. |
+| <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; }"}</code> | Whether the target is set up and usable. |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | Display name of the target. |
+| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> | Current world position. |
+| <Link id="m-senses" /><code><Link to="/game-api/types/alta-intelligence/basicsenseset">{"BasicSenseSet"}</Link>{" Senses { get; }"}</code> | The target's senses (sight, hearing and so on). |
+| <Link id="m-statmanager" /><code><Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" { get; }"}</code> | The target's stat manager, from its health object. Can be null. |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | The target's transform. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attacks" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-intelligence/attackparameters">{"AttackParameters"}</Link>{"> Attacks()"}</code> |  |
-| <Link id="m-getdistance" /><code>{"float GetDistance("}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" other, float yFlexibility = 0)"}</code> |  |
-| <Link id="m-getsquaredistance" /><code>{"float GetSquareDistance("}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" other, float yFlexibility = 0)"}</code> |  |
-| <Link id="m-getvelocity" /><code>{"float GetVelocity()"}</code> |  |
+| <Link id="m-attacks" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-intelligence/attackparameters">{"AttackParameters"}</Link>{"> Attacks()"}</code> | The attacks this target can make. Empty in the base `Target`. |
+| <Link id="m-getdistance" /><code>{"float GetDistance("}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" other, float yFlexibility = 0)"}</code> | Distance between ground positions. `yFlexibility` ignores that much height difference. |
+| <Link id="m-getsquaredistance" /><code>{"float GetSquareDistance("}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" other, float yFlexibility = 0)"}</code> | Squared distance between ground positions, ignoring up to `yFlexibility` of height difference. |
+| <Link id="m-getvelocity" /><code>{"float GetVelocity()"}</code> | The target's speed. 0 in the base `Target`. |
 
 ## Used in
 

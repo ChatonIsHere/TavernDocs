@@ -1,6 +1,6 @@
 ---
 title: "BasePart"
-description: "class BasePart in Root.Township."
+description: "Base of console command pieces that have a name and description: CommandPart and Parameter."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BasePart
 
 A **class** in `Root.Township`, `Alta.Console`.
+
+Base of console command pieces that have a name and description: `CommandPart` and `Parameter`.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Derived types** [`CommandPart`](/game-api/types/alta-console/commandpart), [`Parameter`](/game-api/types/alta-console/parameter)
@@ -25,16 +27,16 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attributes" /><code>{"List<"}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{"> Attributes { get; }"}</code> |  |
-| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> |  |
-| <Link id="m-fullname" /><code>{"virtual string FullName { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> |  |
+| <Link id="m-attributes" /><code>{"List<"}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{"> Attributes { get; }"}</code> | Attributes attached to this part. |
+| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> | Help text. |
+| <Link id="m-fullname" /><code>{"virtual string FullName { get; }"}</code> | Full name. Same as `Name` here; subclasses can add more. |
+| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> | Short name. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | The name. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "StaticChunkContentManager"
-description: "The chunk's static scenery pointers. Servers load the collider-only version."
+description: "The chunk's static scenery pointers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "ColorMaterialProperty"
-description: "class ColorMaterialProperty in Root.Township."
+description: "A colour shader property, looked up by name once, that can be set on a material or a property block."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ColorMaterialProperty
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+A colour shader property, looked up by name once, that can be set on a material or a property block.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`MaterialProperty<Color>`](/game-api/types/alta-utilities/materialproperty-t)
@@ -25,8 +27,8 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setonmaterial" /><code>{"override void SetOnMaterial(Color value, Material material)"}</code> |  |
-| <Link id="m-setonpropertyblock" /><code>{"override void SetOnPropertyBlock(Color value, MaterialPropertyBlock propertyBlock)"}</code> |  |
+| <Link id="m-setonmaterial" /><code>{"override void SetOnMaterial(Color value, Material material)"}</code> | Sets the colour on a material. |
+| <Link id="m-setonpropertyblock" /><code>{"override void SetOnPropertyBlock(Color value, MaterialPropertyBlock propertyBlock)"}</code> | Sets the colour on a material property block. |
 
 ## Used in
 

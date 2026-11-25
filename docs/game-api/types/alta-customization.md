@@ -12,7 +12,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Customization
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ArmorManager<TSlot>`](/game-api/types/alta-customization/armormanager-tslot) | class | `MonoBehaviour` | 1 | [Customization](../game-systems/customization.md): `Set(TSlot slot, ArmorDefinition armor)`: shows armour on a slot. |
 | [`ArmorManager<TSlot>.SlotPairing`](/game-api/types/alta-customization/armormanager-tslot-slotpairing) | class |  | 2 |  |
@@ -23,29 +23,29 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CategoryScrubberController`](/game-api/types/alta-customization/categoryscrubbercontroller) | class | `MonoBehaviour` | 0 |  |
 | [`ColoredMeshes`](/game-api/types/alta-customization/coloredmeshes) | class | `MonoBehaviour` | 1 |  |
 | [`CosmeticBodyType`](/game-api/types/alta-customization/cosmeticbodytype) | class | `CustomizationVisualPart<CustomizationArguments>` | 6 |  |
-| [`CosmeticColor`](/game-api/types/alta-customization/cosmeticcolor) | class | `HashedGeneralValue<CosmeticColor>` | 6 |  |
+| [`CosmeticColor`](/game-api/types/alta-customization/cosmeticcolor) | class | `HashedGeneralValue<CosmeticColor>` | 6 | A hashed asset holding a three-colour set for cosmetics, written into material colour slots A or B. |
 | [`CosmeticCustomizationManager`](/game-api/types/alta-customization/cosmeticcustomizationmanager) | class | `MonoBehaviour` | 16 | [Customization](../game-systems/customization.md): Runs the customization room for the local player: randomize, undo, redo, exit. |
 | [`CosmeticEyePart`](/game-api/types/alta-customization/cosmeticeyepart) | class | `CosmeticMeshPartBase<TwoColors>` | 1 |  |
 | [`CosmeticFilterAttribute`](/game-api/types/alta-customization/cosmeticfilterattribute) | class | `PropertyAttribute` | 3 |  |
 | [`CosmeticHairPart`](/game-api/types/alta-customization/cosmetichairpart) | class | `CosmeticMeshPart` | 1 |  |
 | [`CosmeticMeshPart`](/game-api/types/alta-customization/cosmeticmeshpart) | class | `CosmeticMeshPartBase<TwoColors>` | 0 |  |
-| [`CosmeticMeshPartBase<T>`](/game-api/types/alta-customization/cosmeticmeshpartbase-t) | class | `CustomizationVisualPart<T>`, `ICosmeticMeshPartBase`, `ICustomizationPart` | 12 |  |
+| [`CosmeticMeshPartBase<T>`](/game-api/types/alta-customization/cosmeticmeshpartbase-t) | class | `CustomizationVisualPart<T>`, `ICosmeticMeshPartBase`, `ICustomizationPart` | 12 | A cosmetic part that adds a mesh with its own texture to the character, coloured with two cosmetic colours. Attaching it adds an input to the character's cosmetic packer and repacks. |
 | [`CosmeticOwnershipManager`](/game-api/types/alta-customization/cosmeticownershipmanager) | class |  | 10 | [Customization](../game-systems/customization.md): What a player owns and may use, by category. |
-| [`CosmeticPacker`](/game-api/types/alta-customization/cosmeticpacker) | class | `MonoBehaviour` | 11 |  |
-| [`CosmeticPacker.Input`](/game-api/types/alta-customization/cosmeticpacker-input) | class |  | 10 |  |
-| [`CosmeticPacker.PartId`](/game-api/types/alta-customization/cosmeticpacker-partid) | struct | `IEquatable<PartId>` | 5 |  |
+| [`CosmeticPacker`](/game-api/types/alta-customization/cosmeticpacker) | class | `MonoBehaviour` | 11 | Client: merges a character's cosmetic parts into a few meshes and one packed texture, then applies them to the character's clothes. Packing is queued on `CosmeticPackScheduler`. |
+| [`CosmeticPacker.Input`](/game-api/types/alta-customization/cosmeticpacker-input) | class |  | 10 | One cosmetic part to pack into a character's combined mesh and texture, with its colours and blit materials. |
+| [`CosmeticPacker.PartId`](/game-api/types/alta-customization/cosmeticpacker-partid) | struct | `IEquatable<PartId>` | 5 | Identifies one mesh part of a cosmetic: the cosmetic's hash and the part's index in its visual. |
 | [`CosmeticPackScheduler`](/game-api/types/alta-customization/cosmeticpackscheduler) | class |  | 3 |  |
 | [`CosmeticPalette`](/game-api/types/alta-customization/cosmeticpalette) | class | `GeneralValue` | 1 |  |
 | [`CosmeticPickup`](/game-api/types/alta-customization/cosmeticpickup) | class | `CustomizationPickup` | 1 |  |
 | [`CosmeticPickupType`](/game-api/types/alta-customization/cosmeticpickuptype) | enum |  | 5 |  |
 | [`CosmeticPresetApplier`](/game-api/types/alta-customization/cosmeticpresetapplier) | class | `MonoBehaviour` | 1 |  |
-| [`CosmeticPresetData`](/game-api/types/alta-customization/cosmeticpresetdata) | class |  | 5 |  |
+| [`CosmeticPresetData`](/game-api/types/alta-customization/cosmeticpresetdata) | class |  | 5 | A player's whole cosmetic setup written out as packed bits, so it can be stored or sent as a preset. |
 | [`CosmeticPresetDestroyer`](/game-api/types/alta-customization/cosmeticpresetdestroyer) | class | `MonoBehaviour` | 0 |  |
 | [`CosmeticPresetSlot`](/game-api/types/alta-customization/cosmeticpresetslot) | class | `MonoBehaviour`, `ICosmeticPresetSlot` | 8 |  |
 | [`CosmeticPresetsManager`](/game-api/types/alta-customization/cosmeticpresetsmanager) | class | `LoggedInTool` | 2 |  |
-| [`CosmeticPresetTrophy`](/game-api/types/alta-customization/cosmeticpresettrophy) | class | `MonoBehaviour` | 12 |  |
+| [`CosmeticPresetTrophy`](/game-api/types/alta-customization/cosmeticpresettrophy) | class | `MonoBehaviour` | 12 | A small character figure that shows a saved cosmetic preset and can be picked up and placed in a preset slot. Client-side (not a network entity); it burns away when destroyed. |
 | [`CosmeticPresetTrophyTrigger`](/game-api/types/alta-customization/cosmeticpresettrophytrigger) | class | `MonoBehaviour` | 5 |  |
-| [`CosmeticRotatingSlot`](/game-api/types/alta-customization/cosmeticrotatingslot) | class | `MonoBehaviour`, `ICosmeticPresetSlot` | 12 |  |
+| [`CosmeticRotatingSlot`](/game-api/types/alta-customization/cosmeticrotatingslot) | class | `MonoBehaviour`, `ICosmeticPresetSlot` | 12 | The cosmetic preset shelf slot in the customization room: ten numbered preset slots shown one at a time, each saved to the API as a trophy. Client side; used by `CosmeticPresetsManager`. |
 | [`CosmeticScrollElement`](/game-api/types/alta-customization/cosmeticscrollelement) | class | `ScrollElement` | 2 |  |
 | [`CosmeticScrollManager`](/game-api/types/alta-customization/cosmeticscrollmanager) | class | `ScrollManager` | 1 |  |
 | [`CosmeticScrollSource`](/game-api/types/alta-customization/cosmeticscrollsource) | class | `MonoBehaviour` | 3 |  |
@@ -53,21 +53,21 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CosmeticSetFilterAttribute`](/game-api/types/alta-customization/cosmeticsetfilterattribute) | class | `PropertyAttribute` | 0 |  |
 | [`CosmeticSkinColor`](/game-api/types/alta-customization/cosmeticskincolor) | class | `CustomizationVisualPart<CustomizationArguments>` | 1 |  |
 | [`CurrentTalemBalance`](/game-api/types/alta-customization/currenttalembalance) | static class |  | 3 |  |
-| [`CustomizationArguments`](/game-api/types/alta-customization/customizationarguments) | class |  | 5 |  |
-| [`CustomizationCategory`](/game-api/types/alta-customization/customizationcategory) | abstract class | `ScriptableObject`, `ICustomizationCategory` | 10 |  |
+| [`CustomizationArguments`](/game-api/types/alta-customization/customizationarguments) | class |  | 5 | Extra settings for one customization part, such as colours (`TwoColors`). This base class carries nothing; subclasses add fields and serialize them. |
+| [`CustomizationCategory`](/game-api/types/alta-customization/customizationcategory) | abstract class | `ScriptableObject`, `ICustomizationCategory` | 10 | Asset for one cosmetic category (hair, hats and so on) in the character customizer: its database item category, ordering, icon and how random picks are made. |
 | [`CustomizationHistoryAccess`](/game-api/types/alta-customization/customizationhistoryaccess) | class | `HistoryAccess` | 1 |  |
 | [`CustomizationHistoryAction`](/game-api/types/alta-customization/customizationhistoryaction) | class | `IHistoryAction` | 1 |  |
 | [`CustomizationItemAndArguments`](/game-api/types/alta-customization/customizationitemandarguments) | struct |  | 2 |  |
 | [`CustomizationPackingSettings`](/game-api/types/alta-customization/customizationpackingsettings) | class | `GlobalSettings<CustomizationPackingSettings>` | 2 |  |
-| [`CustomizationPickup`](/game-api/types/alta-customization/customizationpickup) | class | `MonoBehaviour` | 7 |  |
+| [`CustomizationPickup`](/game-api/types/alta-customization/customizationpickup) | class | `MonoBehaviour` | 7 | Base for the grabbable items in the character customization area (cosmetics, body types, eyes, equipment). Client side; spawned from a template with `Spawn`. |
 | [`CustomizationSettings`](/game-api/types/alta-customization/customizationsettings) | class | `GlobalSettings<CustomizationSettings>` | 6 |  |
 | [`CustomizationSlot`](/game-api/types/alta-customization/customizationslot) | class |  | 6 |  |
-| [`CustomizationSlotEntry`](/game-api/types/alta-customization/customizationslotentry) | class |  | 13 |  |
+| [`CustomizationSlotEntry`](/game-api/types/alta-customization/customizationslotentry) | class |  | 13 | One part of a cosmetic or equipment visual placed in a customization slot. Tracks whether other items cover it (impeded) or a slot disables it (hidden). |
 | [`CustomizationTester`](/game-api/types/alta-customization/customizationtester) | class | `MonoBehaviour` | 0 |  |
 | [`CustomizationVisual`](/game-api/types/alta-customization/customizationvisual) | class | `MonoBehaviour`, `ICustomizationVisual` | 6 |  |
 | [`CustomizationVisualManager`](/game-api/types/alta-customization/customizationvisualmanager) | class | `ICustomizationVisualManager` | 10 |  |
-| [`CustomizationVisualPart`](/game-api/types/alta-customization/customizationvisualpart) | abstract class | `MonoBehaviour`, `ICustomizationPart` | 12 |  |
-| [`CustomizationVisualPart<TArguments>`](/game-api/types/alta-customization/customizationvisualpart-targuments) | abstract class | `CustomizationVisualPart` | 2 |  |
+| [`CustomizationVisualPart`](/game-api/types/alta-customization/customizationvisualpart) | abstract class | `MonoBehaviour`, `ICustomizationPart` | 12 | Base component for a cosmetic visual part. Handles show, hide and argument changes across handlers, skipping first-person handlers if the part isn't shown in first person. |
+| [`CustomizationVisualPart<TArguments>`](/game-api/types/alta-customization/customizationvisualpart-targuments) | abstract class | `CustomizationVisualPart` | 2 | A `CustomizationVisualPart` whose default arguments of type `TArguments` are set on the prefab. |
 | [`CustomizationWrapper`](/game-api/types/alta-customization/customizationwrapper) | abstract class | `IHasHistory`, `ICustomizationWrapper` | 26 | [Customization](../game-systems/customization.md): Base of both wrappers. `IEnumerable<uint> Items`, `Arguments`, `Task<bool> Add(uint item, CustomizationArguments[] arguments)`, undo history. |
 | [`CustomizationWrapperSerializer`](/game-api/types/alta-customization/customizationwrapperserializer) | static class |  | 7 | [Customization](../game-systems/customization.md): Writes and reads a wrapper to a stream or a save (`Save`, `LoadAsync`, `SerializeStreamAsync`). |
 | [`DefaultCosmeticInfo`](/game-api/types/alta-customization/defaultcosmeticinfo) | class | `ISerializationCallbackReceiver` | 9 |  |
@@ -80,15 +80,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`EquipmentPickup`](/game-api/types/alta-customization/equipmentpickup) | class | `CustomizationPickup` | 2 |  |
 | [`EquipmentSlot`](/game-api/types/alta-customization/equipmentslot) | enum |  | 9 |  |
 | [`EyePickup`](/game-api/types/alta-customization/eyepickup) | class | `CustomizationPickup` | 1 |  |
-| [`ICosmeticMeshPartBase`](/game-api/types/alta-customization/icosmeticmeshpartbase) | interface | `ICustomizationPart` | 14 |  |
+| [`ICosmeticMeshPartBase`](/game-api/types/alta-customization/icosmeticmeshpartbase) | interface | `ICustomizationPart` | 14 | A cosmetic part made of meshes and textures that gets packed into the character's combined cosmetic mesh, with two colours. |
 | [`ICosmeticPresetSlot`](/game-api/types/alta-customization/icosmeticpresetslot) | interface |  | 3 |  |
-| [`ICustomizationCategory`](/game-api/types/alta-customization/icustomizationcategory) | interface |  | 10 |  |
-| [`ICustomizationDefinition`](/game-api/types/alta-customization/icustomizationdefinition) | interface |  | 8 |  |
-| [`ICustomizationHandler`](/game-api/types/alta-customization/icustomizationhandler) | interface |  | 11 |  |
-| [`ICustomizationPart`](/game-api/types/alta-customization/icustomizationpart) | interface |  | 9 |  |
-| [`ICustomizationVisual`](/game-api/types/alta-customization/icustomizationvisual) | interface |  | 4 |  |
-| [`ICustomizationVisualManager`](/game-api/types/alta-customization/icustomizationvisualmanager) | interface |  | 10 |  |
-| [`ICustomizationWrapper`](/game-api/types/alta-customization/icustomizationwrapper) | interface |  | 10 |  |
+| [`ICustomizationCategory`](/game-api/types/alta-customization/icustomizationcategory) | interface |  | 10 | A category of customization items, such as a cosmetic slot, as shown in the customization menus. |
+| [`ICustomizationDefinition`](/game-api/types/alta-customization/icustomizationdefinition) | interface |  | 8 | One cosmetic option for the character customiser: it can be shown on a character, spawned as a pickup for preview and given default arguments. |
+| [`ICustomizationHandler`](/game-api/types/alta-customization/icustomizationhandler) | interface |  | 11 | Something that shows a customised player body, such as a player character or a dummy, and that the customization manager applies outfits to. |
+| [`ICustomizationPart`](/game-api/types/alta-customization/icustomizationpart) | interface |  | 9 | One visual piece of a cosmetic that attaches to character models (third person body, first person hands and so on) in given slots. |
+| [`ICustomizationVisual`](/game-api/types/alta-customization/icustomizationvisual) | interface |  | 4 | The visual for a cosmetic or equipment item: its parts and which customization slots it fills or disables. Used by `CustomizationVisualManager`. |
+| [`ICustomizationVisualManager`](/game-api/types/alta-customization/icustomizationvisualmanager) | interface |  | 10 | Keeps track of which cosmetics and equipment are worn and shows them on every attached character (handler). `CustomizationVisualManager` is the implementation. |
+| [`ICustomizationWrapper`](/game-api/types/alta-customization/icustomizationwrapper) | interface |  | 10 | Holds a character's set of cosmetic items and their arguments, and loads their assets in sessions. |
 | [`MainMenuCustomizationInterface`](/game-api/types/alta-customization/mainmenucustomizationinterface) | class | `LoggedInTool` | 0 |  |
 | [`MainMenuShopInterface`](/game-api/types/alta-customization/mainmenushopinterface) | class | `LoggedInTool` | 1 |  |
 | [`MainMenuShopItem`](/game-api/types/alta-customization/mainmenushopitem) | class | `MonoBehaviour` | 3 |  |
@@ -96,7 +96,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PackingWatch`](/game-api/types/alta-customization/packingwatch) | static class |  | 3 |  |
 | [`PlayerArmorManager`](/game-api/types/alta-customization/playerarmormanager) | class | `ArmorManager<EquipmentSlot>` | 0 |  |
 | [`PlayerCharacterCustomizationManager`](/game-api/types/alta-customization/playercharactercustomizationmanager) | class |  | 7 | [Customization](../game-systems/customization.md): One per `Player`: `player.Customization`. |
-| [`PlayerCosmeticCategory`](/game-api/types/alta-customization/playercosmeticcategory) | class | `CustomizationCategory` | 3 |  |
+| [`PlayerCosmeticCategory`](/game-api/types/alta-customization/playercosmeticcategory) | class | `CustomizationCategory` | 3 | A category of player cosmetics (a slot such as a hat or shirt), loaded from `Resources/Cosmetic Categories`. Picks random items for random outfits. |
 | [`PlayerCosmeticDefinition`](/game-api/types/alta-customization/playercosmeticdefinition) | class | `Purchasable`, `ICustomizationDefinition` | 8 | [Customization](../game-systems/customization.md): A `Purchasable` (`ScriptableObject` loaded through Addressables) with a `Hash`, `Sku`, `DisplayName`, category and visual. |
 | [`PlayerCosmeticDefinitionSet`](/game-api/types/alta-customization/playercosmeticdefinitionset) | class | `ScriptableObject` | 1 |  |
 | [`PlayerCosmeticWrapper`](/game-api/types/alta-customization/playercosmeticwrapper) | class | `CustomizationWrapper` | 3 |  |
@@ -106,11 +106,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PlayerEquipmentCategory`](/game-api/types/alta-customization/playerequipmentcategory) | class | `CustomizationCategory` | 2 |  |
 | [`PlayerEquipmentDefinition`](/game-api/types/alta-customization/playerequipmentdefinition) | class | `HashedGeneralValue<PlayerEquipmentDefinition>`, `ICustomizationDefinition` | 12 | [Customization](../game-systems/customization.md): `HashedGeneralValue<PlayerEquipmentDefinition>`: an armour piece's look, with its `ArmorDefinition` and `ArmorSlot`. |
 | [`PlayerEquipmentWrapper`](/game-api/types/alta-customization/playerequipmentwrapper) | class | `CustomizationWrapper` | 2 |  |
-| [`Purchasable`](/game-api/types/alta-customization/purchasable) | class | `ScriptableObject` | 14 |  |
+| [`Purchasable`](/game-api/types/alta-customization/purchasable) | class | `ScriptableObject` | 14 | Base asset for a shop item or cosmetic that can be owned, loaded through Addressables by its hash. With external cosmetics on, the catalog comes from Alta's DigitalOcean bundle store. |
 | [`PurchasableMap`](/game-api/types/alta-customization/purchasablemap) | class | `GlobalSettings<PurchasableMap>` | 6 |  |
 | [`PurchasableMap.CosmeticCategory`](/game-api/types/alta-customization/purchasablemap-cosmeticcategory) | class |  | 2 |  |
 | [`PurchasableMap.CosmeticSet`](/game-api/types/alta-customization/purchasablemap-cosmeticset) | class |  | 4 |  |
-| [`PurchasedList`](/game-api/types/alta-customization/purchasedlist) | class |  | 17 |  |
+| [`PurchasedList`](/game-api/types/alta-customization/purchasedlist) | class |  | 17 | Which cosmetic hashes the local player owns or can pick, built from default cosmetics, the shop API's owned items and developer items. The owned and available sets are static, so every instance shares them. Does nothing on a dedicated server. |
 | [`ScrollManager`](/game-api/types/alta-customization/scrollmanager) | abstract class | `MonoBehaviour` | 4 |  |
 | [`ShopConfigUtility`](/game-api/types/alta-customization/shopconfigutility) | static class |  | 2 |  |
 | [`ShopConfigUtility.ShopItemConfigurations`](/game-api/types/alta-customization/shopconfigutility-shopitemconfigurations) | class |  | 2 |  |
@@ -122,13 +122,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`StaticRandomCustomization`](/game-api/types/alta-customization/staticrandomcustomization) | static class |  | 3 |  |
 | [`StoreScrollManager`](/game-api/types/alta-customization/storescrollmanager) | class | `ScrollManager` | 1 |  |
 | [`TexturePacker`](/game-api/types/alta-customization/texturepacker) | static class |  | 2 |  |
-| [`TwoColors`](/game-api/types/alta-customization/twocolors) | class | `CustomizationArguments` | 9 |  |
+| [`TwoColors`](/game-api/types/alta-customization/twocolors) | class | `CustomizationArguments` | 9 | Customization arguments holding a primary and secondary cosmetic colour for a cosmetic item. |
 
 ## Alta.ScreenshotCamera
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`BlockableCamera`](/game-api/types/alta-customization/blockablecamera) | abstract class | `MonoBehaviour` | 5 |  |
+| [`BlockableCamera`](/game-api/types/alta-customization/blockablecamera) | abstract class | `MonoBehaviour` | 5 | Base for a hand camera view that switches its camera off while something is in the way (a sphere or capsule check, in the subclasses). Client side. |
 | [`ButtonGroup`](/game-api/types/alta-customization/buttongroup) | class | `MonoBehaviour` | 1 |  |
 | [`CameraButton`](/game-api/types/alta-customization/camerabutton) | abstract class | `MonoBehaviour` | 0 |  |
 | [`CameraEventsListener`](/game-api/types/alta-customization/cameraeventslistener) | class | `MonoBehaviour` | 0 |  |
@@ -142,8 +142,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`FocusButton`](/game-api/types/alta-customization/focusbutton) | class | `CameraButton` | 0 |  |
 | [`FocusPuller`](/game-api/types/alta-customization/focuspuller) | class | `MonoBehaviour` | 3 |  |
 | [`FocusPuller.FocusMode`](/game-api/types/alta-customization/focuspuller-focusmode) | enum |  | 3 |  |
-| [`HandCamera`](/game-api/types/alta-customization/handcamera) | class | `NetworkEntityBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 29 |  |
-| [`HandCameraEvent`](/game-api/types/alta-customization/handcameraevent) | enum |  | 2 |  |
+| [`HandCamera`](/game-api/types/alta-customization/handcamera) | class | `NetworkEntityBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 29 | The handheld photo camera a player spawns from the quick access menu. Only its owner can pick it up; photos, selfie mode and streaming sync to others. Never saved. `HandCamera.Current` is the local player's. |
+| [`HandCameraEvent`](/game-api/types/alta-customization/handcameraevent) | enum |  | 2 | Flags for what the hand-held screenshot camera is doing: `idle` or taking a `photo`. |
 | [`HandCameraRender`](/game-api/types/alta-customization/handcamerarender) | delegate |  | 0 |  |
 | [`HandCameraSettings`](/game-api/types/alta-customization/handcamerasettings) | class | `ScriptableObject` | 9 |  |
 | [`HandCameraStreamer`](/game-api/types/alta-customization/handcamerastreamer) | class | `MonoBehaviour` | 2 |  |

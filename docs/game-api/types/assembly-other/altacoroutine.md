@@ -1,6 +1,6 @@
 ---
 title: "AltaCoroutine"
-description: "A wrapper around a Unity coroutine that catches exceptions and tells you how it ended."
+description: "A wrapper around a Unity coroutine that tracks its state, catches exceptions and supports cancellation and awaiting."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Coroutines`, no namespace.
 
-A wrapper around a Unity coroutine that catches exceptions and tells you how it ended.
+A wrapper around a Unity coroutine that tracks its state, catches exceptions and supports cancellation and awaiting. Runs on the given MonoBehaviour, or on the global `AltaCoroutineHandler` singleton if none is given.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Derived types** [`EditorCoroutine`](/game-api/types/assembly-other/editorcoroutine)
@@ -37,28 +37,28 @@ A wrapper around a Unity coroutine that catches exceptions and tells you how it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-coroutine" /><code>{"Coroutine Coroutine { get; private set; }"}</code> |  |
-| <Link id="m-isinitialized" /><code>{"static bool IsInitialized { get; }"}</code> |  |
-| <Link id="m-onerror" /><code>{"Action<Exception> OnError { get; set; }"}</code> |  |
-| <Link id="m-onfinished" /><code>{"Action OnFinished { get; set; }"}</code> |  |
-| <Link id="m-onstopped" /><code>{"Action OnStopped { get; set; }"}</code> |  |
-| <Link id="m-state" /><code><Link to="/game-api/types/assembly-other/altacoroutinestate">{"AltaCoroutineState"}</Link>{" State { get; protected set; }"}</code> |  |
+| <Link id="m-coroutine" /><code>{"Coroutine Coroutine { get; private set; }"}</code> | The underlying Unity coroutine once started. |
+| <Link id="m-isinitialized" /><code>{"static bool IsInitialized { get; }"}</code> | Static: true once the global `AltaCoroutineHandler` exists. |
+| <Link id="m-onerror" /><code>{"Action<Exception> OnError { get; set; }"}</code> | Called with the exception if the coroutine throws. When unset, the error is logged instead. |
+| <Link id="m-onfinished" /><code>{"Action OnFinished { get; set; }"}</code> | Called when the enumerator runs to the end. |
+| <Link id="m-onstopped" /><code>{"Action OnStopped { get; set; }"}</code> | Called when the coroutine is stopped or its cancellation token fires. |
+| <Link id="m-state" /><code><Link to="/game-api/types/assembly-other/altacoroutinestate">{"AltaCoroutineState"}</Link>{" State { get; protected set; }"}</code> | Running, finished, stopped or error. |
 | <Link id="m-altacoroutinehandler" /><code>{"private static "}<Link to="/game-api/types/assembly-other/altacoroutinehandler">{"AltaCoroutineHandler"}</Link>{" "}<Link to="/game-api/types/assembly-other/altacoroutinehandler">{"AltaCoroutineHandler"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-enumerator" /><code>{"protected IEnumerator Enumerator { get; set; }"}</code> |  |
+| <Link id="m-enumerator" /><code>{"protected IEnumerator Enumerator { get; set; }"}</code> | The enumerator the coroutine steps through. |
 | <Link id="m-targetobject" /><code>{"private MonoBehaviour TargetObject { get; set; }"}</code> |  |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"static "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" Create(IEnumerator enumerator, MonoBehaviour targetObject = null, CancellationToken cancellation = null)"}</code> |  |
-| <Link id="m-delaycall" /><code>{"static void DelayCall(Action call)"}</code> |  |
-| <Link id="m-delaycall-2" /><code>{"static void DelayCall(float delaySeconds, Action call)"}</code> |  |
-| <Link id="m-duodelaycall" /><code>{"static void DuoDelayCall(Action call)"}</code> |  |
-| <Link id="m-gettask" /><code>{"Task<bool> GetTask()"}</code> |  |
-| <Link id="m-start" /><code>{"static "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" Start(IEnumerator enumerator, MonoBehaviour targetObject = null, CancellationToken cancellation = null)"}</code> |  |
-| <Link id="m-start-2" /><code>{"virtual "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" Start()"}</code> |  |
-| <Link id="m-stop" /><code>{"virtual void Stop()"}</code> |  |
+| <Link id="m-create" /><code>{"static "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" Create(IEnumerator enumerator, MonoBehaviour targetObject = null, CancellationToken cancellation = null)"}</code> | Static: makes a coroutine without starting it. Call `Start` on the result later. |
+| <Link id="m-delaycall" /><code>{"static void DelayCall(Action call)"}</code> | Static: runs an action at the end of the current frame (all such calls are batched), or after a number of seconds with the delay overload. |
+| <Link id="m-delaycall-2" /><code>{"static void DelayCall(float delaySeconds, Action call)"}</code> | Static: runs an action at the end of the current frame (all such calls are batched), or after a number of seconds with the delay overload. |
+| <Link id="m-duodelaycall" /><code>{"static void DuoDelayCall(Action call)"}</code> | Static: runs an action after the end of this frame and the next fixed update. |
+| <Link id="m-gettask" /><code>{"Task<bool> GetTask()"}</code> | Returns a task that completes true when finished, false when stopped, or faults on an error. Adding it also replaces the default error log. |
+| <Link id="m-start" /><code>{"static "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" Start(IEnumerator enumerator, MonoBehaviour targetObject = null, CancellationToken cancellation = null)"}</code> | Static version creates and starts a coroutine. The instance version starts it, warning if it is already running. |
+| <Link id="m-start-2" /><code>{"virtual "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" Start()"}</code> | Static version creates and starts a coroutine. The instance version starts it, warning if it is already running. |
+| <Link id="m-stop" /><code>{"virtual void Stop()"}</code> | Stops a running coroutine and calls `OnStopped`. |
 | <Link id="m-coroutinehandler" /><code>{"private IEnumerator CoroutineHandler(IEnumerator enumerator) (iterator)"}</code> |  |
 | <Link id="m-delay" /><code>{"private static IEnumerator Delay() (iterator)"}</code> |  |
 | <Link id="m-delay-2" /><code>{"private static IEnumerator Delay(float delaySeconds, Action callback) (iterator)"}</code> |  |

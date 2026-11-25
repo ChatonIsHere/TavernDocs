@@ -1,6 +1,6 @@
 ---
 title: "TransformScriptAnimation"
-description: "Base for simple code-driven transform animations that tick through the budgeted update module. By default they don't run on a dedicated server."
+description: "Base for simple code-driven transform animations that tick through the budgeted update module."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

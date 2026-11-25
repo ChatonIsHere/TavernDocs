@@ -1,6 +1,6 @@
 ---
 title: "PlayerCommandModule.ProgressionCommandModule"
-description: "A static class in TavernLib, TavernLib.ModulePorts."
+description: "The player progression submodule: list paths, give and check experience, clear progress, and show and buy skills."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `TavernLib`, `TavernLib.ModulePorts`.
 
-A **static class** in `TavernLib`, `TavernLib.ModulePorts`.
+The `player progression` submodule: list paths, give and check experience, clear progress, and show and buy skills. Its commands are private.
 
 - **Listed in** [TavernLib.ModulePorts](/tavernlib-api/types/moduleports)
 - **Nested in** [`PlayerCommandModule`](/tavernlib-api/types/moduleports/playercommandmodule)

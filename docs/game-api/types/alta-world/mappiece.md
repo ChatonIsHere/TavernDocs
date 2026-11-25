@@ -1,6 +1,6 @@
 ---
 title: "MapPiece"
-description: "One piece: a Sprite and an Offset."
+description: "One piece of a map that players discover: a sprite and where it sits on the map."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Map`.
 
-One piece: a `Sprite` and an `Offset`.
+One piece of a map that players discover: a sprite and where it sits on the map.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** [`HashedGeneralValue<MapPiece>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -37,8 +37,8 @@ One piece: a `Sprite` and an `Offset`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-offset-2" /><code>{"Vector2 Offset { get; set; }"}</code> |  |
-| <Link id="m-sprite-2" /><code>{"Sprite Sprite { get; }"}</code> |  |
+| <Link id="m-offset-2" /><code>{"Vector2 Offset { get; set; }"}</code> | Where the piece sits on the map. |
+| <Link id="m-sprite-2" /><code>{"Sprite Sprite { get; }"}</code> | The piece's image. |
 
 ## Used in
 

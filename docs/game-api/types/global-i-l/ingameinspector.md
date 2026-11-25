@@ -1,6 +1,6 @@
 ---
 title: "InGameInspector"
-description: "class InGameInspector in Root.Township."
+description: "A debug tool item with 12 modes (LOD tools, chunk bounds, teleporters, console command runner, cloner, bubble inspector)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InGameInspector
 
 A **class** in `Root.Township`, no namespace.
+
+A debug tool item with 12 modes (LOD tools, chunk bounds, teleporters, console command runner, cloner, bubble inspector). Only players with the `debug_features` permission can hold it; others are forced to drop it.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour)
@@ -50,8 +52,8 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-counttools" /><code>{"int CountTools { get; private set; }"}</code> |  |
-| <Link id="m-currenttool-2" /><code>{"int CurrentTool { get; set; }"}</code> |  |
+| <Link id="m-counttools" /><code>{"int CountTools { get; private set; }"}</code> | Number of tools (12). |
+| <Link id="m-currenttool-2" /><code>{"int CurrentTool { get; set; }"}</code> | Index of the active tool. Setting it disables the old tool, enables the new one if held, and shows its name. |
 | <Link id="m-displaytext" /><code>{"private string DisplayText { get; set; }"}</code> |  |
 | <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; set; }"}</code> |  |
 | <Link id="m-pointing" /><code>{"private Vector3 Pointing { get; set; }"}</code> |  |
@@ -61,14 +63,14 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changetooldown" /><code>{"void ChangeToolDown()"}</code> |  |
-| <Link id="m-changetoolup" /><code>{"void ChangeToolUp()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-pressclear" /><code>{"void PressClear()"}</code> |  |
-| <Link id="m-pressdown" /><code>{"void PressDown()"}</code> |  |
-| <Link id="m-pressup" /><code>{"void PressUp()"}</code> |  |
-| <Link id="m-sendmessage" /><code>{"void SendMessage()"}</code> |  |
-| <Link id="m-toggleraycasting" /><code>{"void ToggleRaycasting(bool isEnabled)"}</code> |  |
+| <Link id="m-changetooldown" /><code>{"void ChangeToolDown()"}</code> | Switches to the previous tool, wrapping round. Only for the local player holding it. |
+| <Link id="m-changetoolup" /><code>{"void ChangeToolUp()"}</code> | Switches to the next tool, wrapping round. Only for the local player holding it. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the network message that syncs the active tool's data. |
+| <Link id="m-pressclear" /><code>{"void PressClear()"}</code> | Sends the clear press to the active tool. Only for the local player holding it. |
+| <Link id="m-pressdown" /><code>{"void PressDown()"}</code> | Sends the down press to the active tool. Only for the local player holding it. |
+| <Link id="m-pressup" /><code>{"void PressUp()"}</code> | Sends the up press to the active tool. Only for the local player holding it. |
+| <Link id="m-sendmessage" /><code>{"void SendMessage()"}</code> | Sends the active tool's data to everyone in the item's chunks. |
+| <Link id="m-toggleraycasting" /><code>{"void ToggleRaycasting(bool isEnabled)"}</code> | Shows or hides the pointer line. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-checkinput" /><code>{"private void CheckInput("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |  |
 | <Link id="m-displaymessage" /><code>{"private IEnumerator DisplayMessage(string message) (iterator)"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "IMicroTutorialSystem"
-description: "The micro tutorial system (short in-game tutorials), giving access to its client, server and sync controllers. Implemented by MicroTutorialSystem and "
+description: "The micro tutorial system (short in-game tutorials), giving access to its client, server and sync controllers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

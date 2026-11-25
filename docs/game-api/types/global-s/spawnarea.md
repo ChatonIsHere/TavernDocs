@@ -1,6 +1,6 @@
 ---
 title: "SpawnArea"
-description: "class SpawnArea in Root.Township."
+description: "A circle on the ground where things (or players) spawn."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpawnArea
 
 A **class** in `Root.Township`, no namespace.
+
+A circle on the ground where things (or players) spawn. Gives repeatable positions by index, raycast onto valid ground away from blocking layers. Named areas are listed in `InstanceMap`.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`, [`ISavable<SpawnAreaSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<SpawnAreaSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase), [`ISpawnPositions`](/game-api/types/global-i-l/ispawnpositions)
@@ -26,7 +28,7 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instancemap" /><code>{"static Dictionary<"}<Link to="/game-api/types/global-s/spawnareaidentifier">{"SpawnAreaIdentifier"}</Link>{", "}<Link to="/game-api/types/global-s/spawnarea">{"SpawnArea"}</Link>{"> InstanceMap"}</code> |  |
+| <Link id="m-instancemap" /><code>{"static Dictionary<"}<Link to="/game-api/types/global-s/spawnareaidentifier">{"SpawnAreaIdentifier"}</Link>{", "}<Link to="/game-api/types/global-s/spawnarea">{"SpawnArea"}</Link>{"> InstanceMap"}</code> | Every spawn area with a non-default identifier, by identifier. |
 | <Link id="m-avoidcastradius" /><code>{"private float avoidCastRadius"}</code> |  |
 | <Link id="m-avoidlayers" /><code>{"private LayerMask avoidLayers"}</code> |  |
 | <Link id="m-groundlayers" /><code>{"private LayerMask groundLayers"}</code> |  |
@@ -41,15 +43,15 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-identifier-2" /><code><Link to="/game-api/types/global-s/spawnareaidentifier">{"SpawnAreaIdentifier"}</Link>{" Identifier { get; }"}</code> |  |
+| <Link id="m-identifier-2" /><code><Link to="/game-api/types/global-s/spawnareaidentifier">{"SpawnAreaIdentifier"}</Link>{" Identifier { get; }"}</code> | Which named spawn area this is. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"void Awake()"}</code> |  |
-| <Link id="m-getrandomspawnposition" /><code>{"Vector3 GetRandomSpawnPosition()"}</code> |  |
-| <Link id="m-getspawnposition" /><code><Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" GetSpawnPosition(int index)"}</code> |  |
+| <Link id="m-awake" /><code>{"void Awake()"}</code> | Picks a random seed and adds the area to `InstanceMap` if it's named. |
+| <Link id="m-getrandomspawnposition" /><code>{"Vector3 GetRandomSpawnPosition()"}</code> | A valid position from a random index. |
+| <Link id="m-getspawnposition" /><code><Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" GetSpawnPosition(int index)"}</code> | The spawn point for an index. The same index gives the same point while the seed lasts. Falls back to the centre. |
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
 | <Link id="m-setsize" /><code>{"private void ISpawnPositions.SetSize(float size)"}</code> |  |
 | <Link id="m-validposition" /><code>{"private bool ValidPosition(ref Vector3 position, ref Quaternion rotation)"}</code> |  |

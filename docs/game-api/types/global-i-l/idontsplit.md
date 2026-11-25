@@ -1,6 +1,6 @@
 ---
 title: "IDontSplit"
-description: "Empty marker interface. Components such as ModifiableStaticObject and RotateOverTime carry it, probably so build-time static splitting leaves their ob"
+description: "Empty marker interface."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

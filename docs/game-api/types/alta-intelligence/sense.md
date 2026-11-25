@@ -1,6 +1,6 @@
 ---
 title: "Sense"
-description: "abstract class Sense in Root.Township."
+description: "Asset for something an AI agent can measure about a target (distance, visibility and so on) as a number."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Sense
 
 An **abstract class** in `Root.Township`, `Alta.Intelligence`.
+
+Asset for something an AI agent can measure about a target (distance, visibility and so on) as a number. Sense assets are loaded from `Resources/Senses`.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`GeneralValue`](/game-api/types/assembly-other/generalvalue)
@@ -34,17 +36,17 @@ An **abstract class** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-all-2" /><code>{"static List<"}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{"> All { get; }"}</code> |  |
+| <Link id="m-all-2" /><code>{"static List<"}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{"> All { get; }"}</code> | Every sense that has been initialized. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-get" /><code>{"abstract float Get("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |  |
-| <Link id="m-getinverselerp" /><code>{"virtual float GetInverseLerp("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target, float from, float to)"}</code> |  |
-| <Link id="m-getsense" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" GetSense("}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{" old)"}</code> |  |
-| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> |  |
-| <Link id="m-initializeall" /><code>{"static void InitializeAll()"}</code> |  |
+| <Link id="m-get" /><code>{"abstract float Get("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | The sense's value for a target, from the asking agent's point of view. |
+| <Link id="m-getinverselerp" /><code>{"virtual float GetInverseLerp("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target, float from, float to)"}</code> | The value mapped to 0 to 1 between `from` and `to`, clamped. |
+| <Link id="m-getsense" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" GetSense("}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{" old)"}</code> | The sense that replaces an old `SenseOld` enum value, or null. |
+| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | Adds the sense to `All` and maps its old enum value. |
+| <Link id="m-initializeall" /><code>{"static void InitializeAll()"}</code> | Loads every sense under `Resources/Senses` and initializes them. |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
 
 ## Used in

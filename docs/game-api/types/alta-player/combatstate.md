@@ -1,6 +1,6 @@
 ---
 title: "CombatState"
-description: "class CombatState in Root.Township."
+description: "The player state while fighting, a sub-state of playing."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CombatState
 
 A **class** in `Root.Township`, `Alta.PlayerStates`.
+
+The player state while fighting, a sub-state of playing. Ends by itself after a timer that resets whenever the player is in combat again; shows a combat shell on clients.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`PlayerStateBase<PlayingState>`](/game-api/types/alta-player/playerstatebase-t)
@@ -35,21 +37,21 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> |  |
-| <Link id="m-settings" /><code><Link to="/game-api/types/alta-player/combatstatesettings">{"CombatStateSettings"}</Link>{" Settings { get; }"}</code> |  |
-| <Link id="m-statetype" /><code>{"override "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> |  |
+| <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> | "Combat State". |
+| <Link id="m-settings" /><code><Link to="/game-api/types/alta-player/combatstatesettings">{"CombatStateSettings"}</Link>{" Settings { get; }"}</code> | The combat state's settings (timer, distance curve, shell, cripple stat). |
+| <Link id="m-statetype" /><code>{"override "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> | `PlayerStateType.Combat`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-resetcurrentcombattimer" /><code>{"void ResetCurrentCombatTimer(float distanceSquared)"}</code> |  |
-| <Link id="m-serializedisk" /><code>{"override void SerializeDisk("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-validatestateactivation" /><code>{"override bool ValidateStateActivation(bool isDuringLoading)"}</code> |  |
+| <Link id="m-resetcurrentcombattimer" /><code>{"void ResetCurrentCombatTimer(float distanceSquared)"}</code> | Restarts the out of combat timer, scaled by a curve over how far apart the fighters are. |
+| <Link id="m-serializedisk" /><code>{"override void SerializeDisk("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Saves and loads the time left on the out of combat timer. |
+| <Link id="m-validatestateactivation" /><code>{"override bool ValidateStateActivation(bool isDuringLoading)"}</code> | Refuses to start combat while the player is loading. |
 | <Link id="m-getoutofcombat" /><code>{"private IEnumerator GetOutOfCombat() (iterator)"}</code> |  |
-| <Link id="m-onactivate" /><code>{"protected override void OnActivate()"}</code> |  |
-| <Link id="m-onactivateremote" /><code>{"protected override void OnActivateRemote(bool isPlayerCharacterSpawned)"}</code> |  |
-| <Link id="m-ondeactivate" /><code>{"protected override void OnDeactivate()"}</code> |  |
-| <Link id="m-ondeactivateremote" /><code>{"protected override void OnDeactivateRemote(bool isPlayerCharacterSpawned)"}</code> |  |
+| <Link id="m-onactivate" /><code>{"protected override void OnActivate()"}</code> | Server: allows combat to combat transitions and starts the out of combat timer. |
+| <Link id="m-onactivateremote" /><code>{"protected override void OnActivateRemote(bool isPlayerCharacterSpawned)"}</code> | Client: shows the combat shell and, for the local player, plays the enter combat sound. |
+| <Link id="m-ondeactivate" /><code>{"protected override void OnDeactivate()"}</code> | Server: clears the locomotion cooldown, refills the cripple stat and stops the timer. |
+| <Link id="m-ondeactivateremote" /><code>{"protected override void OnDeactivateRemote(bool isPlayerCharacterSpawned)"}</code> | Client: hides the combat shell (if alive) and plays the wave effect. |
 | <Link id="m-playsound" /><code>{"private void PlaySound()"}</code> |  |
 | <Link id="m-playsoundcoroutine" /><code>{"private IEnumerator PlaySoundCoroutine() (iterator)"}</code> |  |

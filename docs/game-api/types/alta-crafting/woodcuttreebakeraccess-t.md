@@ -1,6 +1,6 @@
 ---
 title: "WoodcutTreeBakerAccess<T>"
-description: "Adapter the woodcutting tree baker uses to read meshes, materials and LODs from some source type T. Build-time tooling."
+description: "Adapter the woodcutting tree baker uses to read meshes, materials and LODs from some source type T."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

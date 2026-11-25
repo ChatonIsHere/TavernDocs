@@ -1,6 +1,6 @@
 ---
 title: "PlayerCosmeticDefinition"
-description: "A Purchasable (ScriptableObject loaded through Addressables) with a Hash, Sku, DisplayName, category and visual."
+description: "A purchasable cosmetic asset: its category, pickup and visual prefab."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Customization`.
 
-A `Purchasable` (`ScriptableObject` loaded through Addressables) with a `Hash`, `Sku`, `DisplayName`, category and visual.
+A purchasable cosmetic asset: its category, pickup and visual prefab.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** [`Purchasable`](/game-api/types/alta-customization/purchasable), [`ICustomizationDefinition`](/game-api/types/alta-customization/icustomizationdefinition)
@@ -39,19 +39,19 @@ A `Purchasable` (`ScriptableObject` loaded through Addressables) with a `Hash`, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-category-2" /><code><Link to="/game-api/types/alta-customization/icustomizationcategory">{"ICustomizationCategory"}</Link>{" Category { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-pickuptype-2" /><code><Link to="/game-api/types/alta-customization/cosmeticpickuptype">{"CosmeticPickupType"}</Link>{" PickupType { get; }"}</code> |  |
-| <Link id="m-uiselectionboardscale-2" /><code>{"float UISelectionBoardScale { get; }"}</code> |  |
+| <Link id="m-category-2" /><code><Link to="/game-api/types/alta-customization/icustomizationcategory">{"ICustomizationCategory"}</Link>{" Category { get; set; }"}</code> | The cosmetic's category. The setter only works in the editor, and as written it throws even after a valid set. |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | The display name. |
+| <Link id="m-pickuptype-2" /><code><Link to="/game-api/types/alta-customization/cosmeticpickuptype">{"CosmeticPickupType"}</Link>{" PickupType { get; }"}</code> | What kind of pickup this cosmetic uses. |
+| <Link id="m-uiselectionboardscale-2" /><code>{"float UISelectionBoardScale { get; }"}</code> | Scale of the item on the customization selection board. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createdefaultarguments" /><code><Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] CreateDefaultArguments()"}</code> |  |
-| <Link id="m-getvisual" /><code><Link to="/game-api/types/alta-customization/icustomizationvisual">{"ICustomizationVisual"}</Link>{" GetVisual()"}</code> |  |
-| <Link id="m-spawnpickup" /><code><Link to="/game-api/types/alta-customization/customizationpickup">{"CustomizationPickup"}</Link>{" SpawnPickup("}<Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments, Transform parent)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| <Link id="m-createdefaultarguments" /><code><Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] CreateDefaultArguments()"}</code> | Default customization arguments for each part of the visual. |
+| <Link id="m-getvisual" /><code><Link to="/game-api/types/alta-customization/icustomizationvisual">{"ICustomizationVisual"}</Link>{" GetVisual()"}</code> | Points the visual prefab at this definition, initializes it and returns it. |
+| <Link id="m-spawnpickup" /><code><Link to="/game-api/types/alta-customization/customizationpickup">{"CustomizationPickup"}</Link>{" SpawnPickup("}<Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments, Transform parent)"}</code> | Spawns the cosmetic's pickup with the given arguments under a parent. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Type, category and name, for logs. |
 
 ## Used in
 

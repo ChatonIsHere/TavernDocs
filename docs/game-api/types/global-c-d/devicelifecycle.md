@@ -1,6 +1,6 @@
 ---
 title: "DeviceLifecycle"
-description: "abstract class DeviceLifecycle in Root.Township."
+description: "Base for the game's device lifecycles (VR, fly cam, auto cam): hooks for SDK start and stop and the Unity update loop, plus which platform player the device..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DeviceLifecycle
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for the game's device lifecycles (VR, fly cam, auto cam): hooks for SDK start and stop and the Unity update loop, plus which platform player the device drives.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`IDeviceLifecycle`](/game-api/types/global-i-l/idevicelifecycle)
@@ -26,25 +28,25 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-platformdevice" /><code>{"protected "}<Link to="/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice"}</code> |  |
+| <Link id="m-platformdevice" /><code>{"protected "}<Link to="/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice"}</code> | The platform device this lifecycle runs. |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-player" /><code><Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" Player { get; private set; }"}</code> |  |
+| <Link id="m-player" /><code><Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" Player { get; private set; }"}</code> | The platform player this device drives. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disablesdk" /><code>{"virtual void DisableSDK()"}</code> |  |
-| <Link id="m-enablesdk" /><code>{"virtual void EnableSDK()"}</code> |  |
-| <Link id="m-fixedupdate" /><code>{"virtual void FixedUpdate()"}</code> |  |
-| <Link id="m-lateupdate" /><code>{"virtual void LateUpdate()"}</code> |  |
-| <Link id="m-setdeviceplayer" /><code>{"void SetDevicePlayer("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" newPlayer)"}</code> |  |
-| <Link id="m-update" /><code>{"virtual void Update()"}</code> |  |
-| <Link id="m-onplatformplayerset" /><code>{"protected virtual void OnPlatformPlayerSet("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" oldPlayer, "}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" newPlayer)"}</code> |  |
+| <Link id="m-disablesdk" /><code>{"virtual void DisableSDK()"}</code> | Hook to shut the device's SDK down. Empty in the base class. |
+| <Link id="m-enablesdk" /><code>{"virtual void EnableSDK()"}</code> | Hook to start the device's SDK. Empty in the base class. |
+| <Link id="m-fixedupdate" /><code>{"virtual void FixedUpdate()"}</code> | Per physics step hook. Empty in the base class. |
+| <Link id="m-lateupdate" /><code>{"virtual void LateUpdate()"}</code> | Late update hook. Empty in the base class. |
+| <Link id="m-setdeviceplayer" /><code>{"void SetDevicePlayer("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" newPlayer)"}</code> | Switches to a new platform player, disconnecting the old one if it differs. |
+| <Link id="m-update" /><code>{"virtual void Update()"}</code> | Per frame hook. Empty in the base class. |
+| <Link id="m-onplatformplayerset" /><code>{"protected virtual void OnPlatformPlayerSet("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" oldPlayer, "}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" newPlayer)"}</code> | Called when the player changes. The base disables the old player's hand inputs. |
 
 ## Used in
 

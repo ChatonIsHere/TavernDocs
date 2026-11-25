@@ -1,6 +1,6 @@
 ---
 title: "AuthPayloads.ModsListResponse"
-description: "A struct in TavernLib, TavernLib.Backend.Auth."
+description: "The answer to mods_list: the server's mods and enabled untracked mods, sent with a 4-byte big-endian length in front."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `TavernLib`, `TavernLib.Backend.Auth`.
 
-A **struct** in `TavernLib`, `TavernLib.Backend.Auth`.
+The answer to `mods_list`: the server's mods and enabled untracked mods, sent with a 4-byte big-endian length in front.
 
 - **Listed in** [TavernLib.Backend.Auth](/tavernlib-api/types/backend-auth)
 - **Nested in** [`AuthPayloads`](/tavernlib-api/types/backend-auth/authpayloads)

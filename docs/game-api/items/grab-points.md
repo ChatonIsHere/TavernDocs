@@ -22,7 +22,7 @@ An item with no grab points is held wherever the hand closed on it.
 | `RotationMode RotationMode { get; }` | How the hand's rotation is fitted to the point. | See below. |
 | `bool IsDisabled { get; set; }` | Turns the point off. | |
 | `bool IsOcupied { get; set; }` | Taken by a hand. Only set for points that refuse a second hand. | The spelling is the game's. |
-| `List<PickupDockSettings> EnabledFromDocks { get; }` | If not empty, the point can only be used while the item sits in one of these kinds of dock. | So a bag on your back has a strap you can reach. |
+| `List<PickupDockSettings> EnabledFromDocks { get; }` | While the item is docked, the point can only be used if this is empty or lists that kind of dock. Out of a dock, the point is always usable. | So a bag on your back has a strap you can reach. |
 | `PickupFromDockRestriction NonDockedRestriction { get; set; }` | Flags for when the item isn't docked: `NoLeftHand`, `NoRightHand`, `Fixed` (force fixed rotation). | There's a matching private `dockedRestriction`. |
 | `float CheckScore(Transform pickup, float scale, float distanceWeighting, float angleWeighting, Vector3 localHandPosition, Quaternion localHandRotation, bool isLeft, bool isDocked)` | Scores a hand against this point and remembers the fitted pose in `LastPosition` / `LastRotation`. | Infinity means not allowed. |
 | `void ApplyTo(float scale, Interactor holder, Transform target)` | Moves the item so the hand sits on the fitted pose. | |

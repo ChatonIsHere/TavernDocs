@@ -1,6 +1,6 @@
 ---
 title: "CommandResult"
-description: "What a console command returns: a result string or an exception, plus the command that ran. The generic CommandResult<T> subclass carries a typed resu"
+description: "What a console command returns: a result string or an exception, plus the command that ran."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

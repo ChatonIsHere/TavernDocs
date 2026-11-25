@@ -1,6 +1,6 @@
 ---
 title: "InstructionSet"
-description: "A cacheable list of world-generation instructions for one chunk. Forest generation fills it, it saves to the cache, and later replays the instructions"
+description: "A cacheable list of world-generation instructions for one chunk."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "PlayerUnlockManager"
-description: "PlayerComponent, one per player (player.UnlockManager, also on IPlayer)."
+description: "A player's unlock progress for station chains such as the climbing tower: permanent unlocks, the run in progress, collected orbs and a checkpoint."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-`PlayerComponent`, one per player (`player.UnlockManager`, also on `IPlayer`).
+A player's unlock progress for station chains such as the climbing tower: permanent unlocks, the run in progress, collected orbs and a checkpoint. One per player (`player.UnlockManager`); the server changes it, syncs it and saves it with the player.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`PlayerComponent`](/game-api/types/global-p/playercomponent), [`ISavable<PlayerUnlockManagerSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<PlayerUnlockManagerSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -41,34 +41,34 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkpoint-2" /><code>{"Vector3 Checkpoint { get; }"}</code> |  |
-| <Link id="m-currentunlock-2" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" CurrentUnlock { get; }"}</code> |  |
-| <Link id="m-orbs-2" /><code>{"HashSet<uint> Orbs { get; }"}</code> |  |
-| <Link id="m-unlocks-2" /><code>{"HashSet<"}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> Unlocks { get; }"}</code> |  |
+| <Link id="m-checkpoint-2" /><code>{"Vector3 Checkpoint { get; }"}</code> | The run's checkpoint position. Saved but not synced to clients. |
+| <Link id="m-currentunlock-2" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" CurrentUnlock { get; }"}</code> | The unlock run in progress, or null. |
+| <Link id="m-orbs-2" /><code>{"HashSet<uint> Orbs { get; }"}</code> | Orb indexes collected in the current run. |
+| <Link id="m-unlocks-2" /><code>{"HashSet<"}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> Unlocks { get; }"}</code> | Unlocks the player has permanently. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modified" /><code>{"event Action Modified"}</code> |  |
+| <Link id="m-modified" /><code>{"event Action Modified"}</code> | Raised whenever unlocks, the current run or orbs change. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addorb" /><code>{"void AddOrb(uint orbIndex)"}</code> |  |
-| <Link id="m-cancelunlock" /><code>{"void CancelUnlock()"}</code> |  |
-| <Link id="m-check" /><code>{"bool Check("}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-inject" /><code>{"void Inject("}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" newAnalyticsService)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-removeorb" /><code>{"void RemoveOrb(uint orb)"}</code> |  |
-| <Link id="m-setcheckpoint" /><code>{"void SetCheckpoint(Vector3 newCheckpoint)"}</code> |  |
-| <Link id="m-setcurrentunlock" /><code>{"void SetCurrentUnlock("}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock)"}</code> |  |
-| <Link id="m-setpermanentunlock" /><code>{"void SetPermanentUnlock("}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock, bool isUnlocked = true)"}</code> |  |
+| <Link id="m-addorb" /><code>{"void AddOrb(uint orbIndex)"}</code> | Server: adds a collected orb index and syncs. Indexes and count sync in 4 bits, so only 0 to 15 survive. |
+| <Link id="m-cancelunlock" /><code>{"void CancelUnlock()"}</code> | Server: ends the current run and clears the checkpoint. |
+| <Link id="m-check" /><code>{"bool Check("}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock)"}</code> | Whether the player has an unlock permanently or is currently running it. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the synced message and the orb light, and analytics for the local player. |
+| <Link id="m-inject" /><code>{"void Inject("}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" newAnalyticsService)"}</code> | Receives the analytics service through dependency injection. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends this player's unlock state to a new player. |
+| <Link id="m-removeorb" /><code>{"void RemoveOrb(uint orb)"}</code> | Server: removes an orb index and syncs. |
+| <Link id="m-setcheckpoint" /><code>{"void SetCheckpoint(Vector3 newCheckpoint)"}</code> | Server: sets the checkpoint position. |
+| <Link id="m-setcurrentunlock" /><code>{"void SetCurrentUnlock("}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock)"}</code> | Server: starts a run for an unlock if its prerequisites are met; null ends it and clears the checkpoint. |
+| <Link id="m-setpermanentunlock" /><code>{"void SetPermanentUnlock("}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock, bool isUnlocked = true)"}</code> | Server: grants (if prerequisites are met) or removes an unlock, applying or removing its effects, and syncs. |
 | <Link id="m-notifyplayerunlocksmodified" /><code>{"private void NotifyPlayerUnlocksModified()"}</code> |  |
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-playerloadcomplete" /><code>{"protected override void PlayerLoadComplete()"}</code> |  |
+| <Link id="m-playerloadcomplete" /><code>{"protected override void PlayerLoadComplete()"}</code> | After the player loads, applies every permanent unlock to them and syncs. |
 | <Link id="m-setupplayerunlockanalytics" /><code>{"private void SetupPlayerUnlockAnalytics("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" localPlayer)"}</code> |  |
 | <Link id="m-syncall" /><code>{"private void SyncAll("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 | <Link id="m-synccurrentunlock" /><code>{"private void SyncCurrentUnlock("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |

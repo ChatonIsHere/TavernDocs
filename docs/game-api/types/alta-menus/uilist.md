@@ -1,6 +1,6 @@
 ---
 title: "UIList"
-description: "abstract class UIList in Root.Township."
+description: "Base for a list of elements in the game's world-space menus."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UIList
 
 An **abstract class** in `Root.Township`, `Alta.Meta.UI`.
+
+Base for a list of elements in the game's world-space menus. Subclasses decide how elements are laid out.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** `MonoBehaviour`
@@ -32,17 +34,17 @@ An **abstract class** in `Root.Township`, `Alta.Meta.UI`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentvalue" /><code>{"virtual float CurrentValue { get; set; }"}</code> |  |
-| <Link id="m-elements" /><code>{"List<"}<Link to="/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{"> Elements { get; }"}</code> |  |
+| <Link id="m-currentvalue" /><code>{"virtual float CurrentValue { get; set; }"}</code> | The list's current value, such as a scroll position. Meaning depends on the subclass. |
+| <Link id="m-elements" /><code>{"List<"}<Link to="/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{"> Elements { get; }"}</code> | The elements in the list. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addelement" /><code>{"abstract void AddElement("}<Link to="/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{" element)"}</code> |  |
-| <Link id="m-clearlist" /><code>{"virtual void ClearList(bool isDestroyingElements = false)"}</code> |  |
-| <Link id="m-completereset" /><code>{"virtual void CompleteReset(IEnumerable<"}<Link to="/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{"> newElements, bool isDestroyingElements = false)"}</code> |  |
-| <Link id="m-removeelement" /><code>{"virtual void RemoveElement("}<Link to="/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{" element)"}</code> |  |
+| <Link id="m-addelement" /><code>{"abstract void AddElement("}<Link to="/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{" element)"}</code> | Adds an element to the list. Implemented by each list type. |
+| <Link id="m-clearlist" /><code>{"virtual void ClearList(bool isDestroyingElements = false)"}</code> | Empties the list, optionally destroying the element objects. |
+| <Link id="m-completereset" /><code>{"virtual void CompleteReset(IEnumerable<"}<Link to="/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{"> newElements, bool isDestroyingElements = false)"}</code> | Clears the list and adds the given elements. |
+| <Link id="m-removeelement" /><code>{"virtual void RemoveElement("}<Link to="/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{" element)"}</code> | Removes an element from the list and destroys it. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "PlayerEventsManager"
-description: "class PlayerEventsManager in Root.Township."
+description: "Gameplay events about one player gathered in one place: interactions, tool hits, health, downed, killed, combat and whether they are armed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerEventsManager
 
 A **class** in `Root.Township`, no namespace.
+
+Gameplay events about one player gathered in one place: interactions, tool hits, health, downed, killed, combat and whether they are armed. A component on the player template; get it from `Player.PlayerEventsManager`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`PlayerComponent`](/game-api/types/global-p/playercomponent)
@@ -32,29 +34,29 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-heldtools" /><code>{"Dictionary<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{", "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{"> HeldTools { get; }"}</code> |  |
-| <Link id="m-isarmed" /><code>{"bool IsArmed { get; private set; }"}</code> |  |
+| <Link id="m-heldtools" /><code>{"Dictionary<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{", "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{"> HeldTools { get; }"}</code> | Impact tools the player is holding, by the interactable they hold. |
+| <Link id="m-isarmed" /><code>{"bool IsArmed { get; private set; }"}</code> | True while the player holds a tool that has impactors (a weapon or other hitting tool). |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-causedcombat" /><code>{"event "}<Link to="/game-api/types/global-c-d/combateventhandler">{"CombatEventHandler"}</Link>{" CausedCombat"}</code> |  |
-| <Link id="m-downed" /><code>{"event Action<"}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{"> Downed"}</code> |  |
-| <Link id="m-healthchanged" /><code>{"event "}<Link to="/game-api/types/global-e-h/healthobject-healthchangedhandler">{"HealthObject.HealthChangedHandler"}</Link>{" HealthChanged"}</code> |  |
-| <Link id="m-interactionended" /><code>{"event "}<Link to="/game-api/types/global-i-l/interactionhandler">{"InteractionHandler"}</Link>{" InteractionEnded"}</code> |  |
-| <Link id="m-interactionstarted" /><code>{"event "}<Link to="/game-api/types/global-i-l/interactionhandler">{"InteractionHandler"}</Link>{" InteractionStarted"}</code> |  |
-| <Link id="m-killed" /><code>{"event Action<"}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{"> Killed"}</code> |  |
-| <Link id="m-onarmedchanged" /><code>{"event Action<bool> OnArmedChanged"}</code> |  |
-| <Link id="m-oncharacteradded" /><code>{"event Action<"}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{"> OnCharacterAdded"}</code> |  |
-| <Link id="m-onhitwithtool" /><code>{"event "}<Link to="/game-api/types/alta-items/impacttool-ongeneratedhit">{"ImpactTool.OnGeneratedHit"}</Link>{" OnHitWithTool"}</code> |  |
-| <Link id="m-pathhitgenerated" /><code>{"event "}<Link to="/game-api/types/global-p/playereventsmanager-onpathhitgenerated">{"PlayerEventsManager.OnPathHitGenerated"}</Link>{" PathHitGenerated"}</code> |  |
+| <Link id="m-causedcombat" /><code>{"event "}<Link to="/game-api/types/global-c-d/combateventhandler">{"CombatEventHandler"}</Link>{" CausedCombat"}</code> | Raised when the player's character causes combat with another entity. |
+| <Link id="m-downed" /><code>{"event Action<"}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{"> Downed"}</code> | Raised when the player's character is downed. |
+| <Link id="m-healthchanged" /><code>{"event "}<Link to="/game-api/types/global-e-h/healthobject-healthchangedhandler">{"HealthObject.HealthChangedHandler"}</Link>{" HealthChanged"}</code> | Raised when the player's character health changes. |
+| <Link id="m-interactionended" /><code>{"event "}<Link to="/game-api/types/global-i-l/interactionhandler">{"InteractionHandler"}</Link>{" InteractionEnded"}</code> | Raised when either hand ends an interaction. |
+| <Link id="m-interactionstarted" /><code>{"event "}<Link to="/game-api/types/global-i-l/interactionhandler">{"InteractionHandler"}</Link>{" InteractionStarted"}</code> | Raised when either hand starts an interaction. |
+| <Link id="m-killed" /><code>{"event Action<"}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{"> Killed"}</code> | Raised when the player's character is killed. |
+| <Link id="m-onarmedchanged" /><code>{"event Action<bool> OnArmedChanged"}</code> | Raised when `IsArmed` changes. |
+| <Link id="m-oncharacteradded" /><code>{"event Action<"}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{"> OnCharacterAdded"}</code> | Raised when a new player character is linked and its events are hooked up. |
+| <Link id="m-onhitwithtool" /><code>{"event "}<Link to="/game-api/types/alta-items/impacttool-ongeneratedhit">{"ImpactTool.OnGeneratedHit"}</Link>{" OnHitWithTool"}</code> | Raised when a held impact tool generates a hit. |
+| <Link id="m-pathhitgenerated" /><code>{"event "}<Link to="/game-api/types/global-p/playereventsmanager-onpathhitgenerated">{"PlayerEventsManager.OnPathHitGenerated"}</Link>{" PathHitGenerated"}</code> | Raised by `PathImpactHit` when a hit counts toward a progression path (forging and so on). |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pathimpacthit" /><code>{"void PathImpactHit("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" hitPickup)"}</code> |  |
+| <Link id="m-pathimpacthit" /><code>{"void PathImpactHit("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" hitPickup)"}</code> | Raises `PathHitGenerated`. Called by impact detectors and forged models. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-checkarmed" /><code>{"private void CheckArmed()"}</code> |  |
 | <Link id="m-hit" /><code>{"private void Hit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> |  |

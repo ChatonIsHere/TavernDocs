@@ -1,6 +1,6 @@
 ---
 title: "IToolHitDependant"
-description: "A component on an impact tool or crafting part that wants to know when the tool hits or collides with something, such as arrows or breakable items. Fo"
+description: "A component on an impact tool or crafting part that wants to know when the tool hits or collides with something, such as arrows or breakable items."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

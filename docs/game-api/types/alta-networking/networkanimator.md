@@ -1,6 +1,6 @@
 ---
 title: "NetworkAnimator"
-description: "class NetworkAnimator in Root.Township."
+description: "Syncs chosen Animator parameters (floats, ints, bools, triggers, layer weights) from the server to clients as streamed state, and sends the current..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NetworkAnimator
 
 A **class** in `Root.Township`, `Alta.Networking.Animation`.
+
+Syncs chosen Animator parameters (floats, ints, bools, triggers, layer weights) from the server to clients as streamed state, and sends the current animation states to joining players. Set values through the `Get` methods' objects on the server.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`INetworkSerialized`](/game-api/types/alta-networking/inetworkserialized), [`IBuildRendererPostBake`](/game-api/types/assembly-other/ibuildrendererpostbake), [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable)
@@ -27,8 +29,8 @@ A **class** in `Root.Township`, `Alta.Networking.Animation`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-prepareforwritetimer" /><code>{"static "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" prepareForWriteTimer"}</code> |  |
-| <Link id="m-serializetimer" /><code>{"static "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" serializeTimer"}</code> |  |
+| <Link id="m-prepareforwritetimer" /><code>{"static "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" prepareForWriteTimer"}</code> | Shared profiling timer. |
+| <Link id="m-serializetimer" /><code>{"static "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" serializeTimer"}</code> | Shared profiling timer. |
 | <Link id="m-boolmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{"> boolMap"}</code> |  |
 | <Link id="m-bools" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{"> bools"}</code> |  |
 | <Link id="m-floatlerpmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedfloatlerp">{"AnimatedFloatLerp"}</Link>{"> floatLerpMap"}</code> |  |
@@ -52,8 +54,8 @@ A **class** in `Root.Township`, `Alta.Networking.Animation`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animator" /><code>{"Animator Animator { get; }"}</code> |  |
-| <Link id="m-haschanged" /><code>{"bool HasChanged { get; private set; }"}</code> |  |
+| <Link id="m-animator" /><code>{"Animator Animator { get; }"}</code> | The Unity Animator on this object. |
+| <Link id="m-haschanged" /><code>{"bool HasChanged { get; private set; }"}</code> | True if any synced value changed and needs sending. |
 | <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> |  |
 | <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> |  |
 | <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> |  |
@@ -62,18 +64,18 @@ A **class** in `Root.Township`, `Alta.Networking.Animation`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ensureawake" /><code>{"void EnsureAwake()"}</code> |  |
-| <Link id="m-forcechanged" /><code>{"void ForceChanged()"}</code> |  |
-| <Link id="m-getbool" /><code><Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{" GetBool(string name)"}</code> |  |
-| <Link id="m-getfloat" /><code><Link to="/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{" GetFloat(string name)"}</code> |  |
-| <Link id="m-getfloatlerp" /><code><Link to="/game-api/types/alta-networking/animatedfloatlerp">{"AnimatedFloatLerp"}</Link>{" GetFloatLerp(string name)"}</code> |  |
-| <Link id="m-getint" /><code><Link to="/game-api/types/alta-networking/animatedint">{"AnimatedInt"}</Link>{" GetInt(string name)"}</code> |  |
-| <Link id="m-getlayerweight" /><code><Link to="/game-api/types/alta-networking/animatedlayerweight">{"AnimatedLayerWeight"}</Link>{" GetLayerWeight(string name)"}</code> |  |
-| <Link id="m-getlayerweightlerp" /><code><Link to="/game-api/types/alta-networking/animatedlayerweightlerp">{"AnimatedLayerWeightLerp"}</Link>{" GetLayerWeightLerp(string name)"}</code> |  |
-| <Link id="m-gettrigger" /><code><Link to="/game-api/types/alta-networking/animatedtrigger">{"AnimatedTrigger"}</Link>{" GetTrigger(string name)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-updatechanged" /><code>{"void UpdateChanged()"}</code> |  |
+| <Link id="m-ensureawake" /><code>{"void EnsureAwake()"}</code> | Builds the parameter lookups, logging any listed parameter the animator does not have. Safe to call more than once. |
+| <Link id="m-forcechanged" /><code>{"void ForceChanged()"}</code> | Marks the parameters as changed so they are sent. |
+| <Link id="m-getbool" /><code><Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{" GetBool(string name)"}</code> | The synced bool parameter with this name. Throws if not listed. |
+| <Link id="m-getfloat" /><code><Link to="/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{" GetFloat(string name)"}</code> | The synced float parameter with this name. Throws if not listed. |
+| <Link id="m-getfloatlerp" /><code><Link to="/game-api/types/alta-networking/animatedfloatlerp">{"AnimatedFloatLerp"}</Link>{" GetFloatLerp(string name)"}</code> | The synced smoothed float parameter with this name. Throws if not listed. |
+| <Link id="m-getint" /><code><Link to="/game-api/types/alta-networking/animatedint">{"AnimatedInt"}</Link>{" GetInt(string name)"}</code> | The synced int parameter with this name. Throws if not listed. |
+| <Link id="m-getlayerweight" /><code><Link to="/game-api/types/alta-networking/animatedlayerweight">{"AnimatedLayerWeight"}</Link>{" GetLayerWeight(string name)"}</code> | The synced layer weight with this name. Throws if not listed. |
+| <Link id="m-getlayerweightlerp" /><code><Link to="/game-api/types/alta-networking/animatedlayerweightlerp">{"AnimatedLayerWeightLerp"}</Link>{" GetLayerWeightLerp(string name)"}</code> | The synced smoothed layer weight with this name. Throws if not listed. |
+| <Link id="m-gettrigger" /><code><Link to="/game-api/types/alta-networking/animatedtrigger">{"AnimatedTrigger"}</Link>{" GetTrigger(string name)"}</code> | The synced trigger with this name. Throws if not listed. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the message that sends current animation states. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends a joining player each layer's current state and time. |
+| <Link id="m-updatechanged" /><code>{"void UpdateChanged()"}</code> | Recomputes `HasChanged` from the parameters. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-logmissingparameter" /><code>{"private void LogMissingParameter(string parameterType, string parameterName)"}</code> |  |
 | <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |  |

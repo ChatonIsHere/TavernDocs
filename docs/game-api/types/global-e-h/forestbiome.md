@@ -1,6 +1,6 @@
 ---
 title: "ForestBiome"
-description: "class ForestBiome in Root.Township."
+description: "A forest generation biome asset, with weighting and noise settings used to score which biome wins at a point."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ForestBiome
 
 A **class** in `Root.Township`, no namespace.
+
+A forest generation biome asset, with weighting and noise settings used to score which biome wins at a point. Looked up by hash like other `HashedGeneralValue` assets.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`HashedGeneralValue<ForestBiome>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -42,23 +44,23 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-biomedefinition-2" /><code><Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" BiomeDefinition { get; }"}</code> |  |
-| <Link id="m-color-2" /><code>{"Color Color { get; }"}</code> |  |
-| <Link id="m-maximumradius-2" /><code>{"float MaximumRadius { get; }"}</code> |  |
-| <Link id="m-minimumradius-2" /><code>{"float MinimumRadius { get; }"}</code> |  |
-| <Link id="m-parent-2" /><code><Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{" Parent { get; }"}</code> |  |
-| <Link id="m-parents-2" /><code><Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{"[] Parents { get; }"}</code> |  |
-| <Link id="m-randomextraweight-2" /><code>{"float RandomExtraWeight { get; }"}</code> |  |
-| <Link id="m-simplexscale-2" /><code>{"float SimplexScale { get; }"}</code> |  |
-| <Link id="m-weighting-2" /><code>{"float Weighting { get; }"}</code> |  |
-| <Link id="m-woffset-2" /><code>{"int WOffset { get; }"}</code> |  |
+| <Link id="m-biomedefinition-2" /><code><Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" BiomeDefinition { get; }"}</code> | The `Biome` this forest biome is tied to. |
+| <Link id="m-color-2" /><code>{"Color Color { get; }"}</code> | Display colour for the biome, probably for debug maps. |
+| <Link id="m-maximumradius-2" /><code>{"float MaximumRadius { get; }"}</code> | Largest radius setting for a patch of this biome (500 by default). |
+| <Link id="m-minimumradius-2" /><code>{"float MinimumRadius { get; }"}</code> | Smallest radius setting for a patch of this biome (100 by default). |
+| <Link id="m-parent-2" /><code><Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{" Parent { get; }"}</code> | A single parent biome. |
+| <Link id="m-parents-2" /><code><Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{"[] Parents { get; }"}</code> | Parent biomes this one can appear inside. |
+| <Link id="m-randomextraweight-2" /><code>{"float RandomExtraWeight { get; }"}</code> | Most random weight added to the score per call (0.2 by default). |
+| <Link id="m-simplexscale-2" /><code>{"float SimplexScale { get; }"}</code> | Noise scale. Larger values make bigger, smoother patches. |
+| <Link id="m-weighting-2" /><code>{"float Weighting { get; }"}</code> | Multiplier on the noise when scoring. |
+| <Link id="m-woffset-2" /><code>{"int WOffset { get; }"}</code> | Fourth noise coordinate (divided by 10000), so each biome gets different noise. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getscore" /><code>{"float GetScore("}<Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" noise, Random random, Vector3 point, float strengthMultiplier = 1)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| <Link id="m-getscore" /><code>{"float GetScore("}<Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" noise, Random random, Vector3 point, float strengthMultiplier = 1)"}</code> | Simplex noise at the point (scaled by `SimplexScale`, offset by `WOffset`) times the weighting plus a random extra. |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor: gives the biome a random noise offset if it has none. |
 
 ## Used in
 

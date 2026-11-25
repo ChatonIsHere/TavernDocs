@@ -1,6 +1,6 @@
 ---
 title: "ListElementWithButton"
-description: "class ListElementWithButton in Root.Township."
+description: "A text list entry with a button."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ListElementWithButton
 
 A **class** in `Root.Township`, `Alta.Meta.UI`.
+
+A text list entry with a button. Pressing the button selects it.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** [`TextListElement`](/game-api/types/alta-menus/textlistelement)
@@ -34,23 +36,23 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-button-2" /><code><Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" Button { get; }"}</code> |  |
+| <Link id="m-button-2" /><code><Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" Button { get; }"}</code> | The entry's button. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deselected-2" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/listelementwithbutton">{"ListElementWithButton"}</Link>{"> Deselected"}</code> |  |
-| <Link id="m-selected-2" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/listelementwithbutton">{"ListElementWithButton"}</Link>{"> Selected"}</code> |  |
+| <Link id="m-deselected-2" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/listelementwithbutton">{"ListElementWithButton"}</Link>{"> Deselected"}</code> | Raised by `Deselect`. |
+| <Link id="m-selected-2" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/listelementwithbutton">{"ListElementWithButton"}</Link>{"> Selected"}</code> | Raised by `Select`, including when the button is pressed. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deselect" /><code>{"void Deselect()"}</code> |  |
-| <Link id="m-select" /><code>{"void Select()"}</code> |  |
+| <Link id="m-deselect" /><code>{"void Deselect()"}</code> | Raises `Deselected` and the deselected Unity event. |
+| <Link id="m-select" /><code>{"void Select()"}</code> | Raises `Selected` and the selected Unity event. |
 | <Link id="m-onpressed" /><code>{"private void OnPressed("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" button)"}</code> |  |
-| <Link id="m-start" /><code>{"protected virtual void Start()"}</code> |  |
+| <Link id="m-start" /><code>{"protected virtual void Start()"}</code> | Hooks the button press to `Select`. |
 
 ## Used in
 

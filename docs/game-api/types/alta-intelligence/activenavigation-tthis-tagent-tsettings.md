@@ -1,6 +1,6 @@
 ---
 title: "ActiveNavigation<TThis, TAgent, TSettings>"
-description: "Base for creature actions that walk the agent to its target. Applies speed and acceleration from the settings and finishes when the navigator reaches "
+description: "Base for creature actions that walk the agent to its target."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

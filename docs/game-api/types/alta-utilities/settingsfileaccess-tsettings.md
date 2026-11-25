@@ -1,6 +1,6 @@
 ---
 title: "SettingsFileAccess<TSettings>"
-description: "When it's made it:"
+description: "Loads a settings class from a JSON file (with Resources defaults), watches the file for changes and saves it back."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Utilities`.
 
-When it's made it:
+Loads a settings class from a JSON file (with `Resources` defaults), watches the file for changes and saves it back. `SettingsManager.GameConfig` is one. See Settings and files.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** `ISettingsFileAccess`, `ISettings`
@@ -40,28 +40,28 @@ When it's made it:
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-settings-2" /><code>{"TSettings Settings { get; }"}</code> |  |
+| <Link id="m-settings-2" /><code>{"TSettings Settings { get; }"}</code> | The current settings. Blocks to finish a read that is still in progress. |
 | <Link id="m-alta-core-settings-isettingsfileaccess-basesettings" /><code>{"private ISettings Alta.Core.Settings.ISettingsFileAccess.BaseSettings { get; }"}</code> |  |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changed" /><code>{"event Action<ISettings> Changed"}</code> |  |
-| <Link id="m-settingschanged" /><code>{"event Action<TSettings> SettingsChanged"}</code> |  |
+| <Link id="m-changed" /><code>{"event Action<ISettings> Changed"}</code> | Raised with the settings as `ISettings` after each read or `SetAllSettings`. |
+| <Link id="m-settingschanged" /><code>{"event Action<TSettings> SettingsChanged"}</code> | Raised on the main thread after each read or `SetAllSettings`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changefile" /><code>{"void ChangeFile("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string name = null)"}</code> |  |
-| <Link id="m-notifysettingschanged" /><code>{"void NotifySettingsChanged()"}</code> |  |
-| <Link id="m-save" /><code>{"void Save()"}</code> |  |
-| <Link id="m-saveasync" /><code>{"async void SaveAsync()"}</code> |  |
-| <Link id="m-setallsettings" /><code>{"void SetAllSettings(TSettings newSettings)"}</code> |  |
-| <Link id="m-tryget" /><code>{"bool TryGet<TValue>(string name, out TValue value)"}</code> |  |
+| <Link id="m-changefile" /><code>{"void ChangeFile("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string name = null)"}</code> | Loads defaults, then reads `name.json` from the folder and watches it for changes. |
+| <Link id="m-notifysettingschanged" /><code>{"void NotifySettingsChanged()"}</code> | Raises `SettingsChanged` on the main thread. Does nothing for dummy settings. |
+| <Link id="m-save" /><code>{"void Save()"}</code> | Writes the settings file. Does nothing for dummy settings. |
+| <Link id="m-saveasync" /><code>{"async void SaveAsync()"}</code> | Waits for any read in progress, then writes the file. |
+| <Link id="m-setallsettings" /><code>{"void SetAllSettings(TSettings newSettings)"}</code> | Replaces the whole settings object, saves it and raises the change events. |
+| <Link id="m-tryget" /><code>{"bool TryGet<TValue>(string name, out TValue value)"}</code> | Reads a settings property by name. |
 | <Link id="m-createwatcher" /><code>{"private void CreateWatcher("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string fileName)"}</code> |  |
-| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> |  |
+| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> | Destructor: stops and disposes the file watcher. |
 | <Link id="m-loaddefaults" /><code>{"private void LoadDefaults(string name)"}</code> |  |
 | <Link id="m-onfilechanged" /><code>{"private void OnFileChanged(object sender, FileSystemEventArgs e)"}</code> |  |
 | <Link id="m-startread" /><code>{"private async void StartRead()"}</code> |  |

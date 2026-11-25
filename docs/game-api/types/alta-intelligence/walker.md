@@ -1,6 +1,6 @@
 ---
 title: "Walker"
-description: "A MonoBehaviour with a FixedUpdate. Moves topic (the creature's Rigidbody)."
+description: "Moves a creature's rigidbody along its Navigator path with acceleration, turning, pivoting, gravity and optional RVO avoidance."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Pathfinding`.
 
-A `MonoBehaviour` with a `FixedUpdate`. Moves `topic` (the creature's `Rigidbody`).
+Moves a creature's rigidbody along its `Navigator` path with acceleration, turning, pivoting, gravity and optional RVO avoidance. A component on walking creatures; runs in `FixedUpdate`.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** `MonoBehaviour`
@@ -28,9 +28,9 @@ A `MonoBehaviour` with a `FixedUpdate`. Moves `topic` (the creature's `Rigidbody
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chosen" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/walker">{"Walker"}</Link>{" chosen"}</code> |  |
-| <Link id="m-current" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/walker">{"Walker"}</Link>{" current"}</code> |  |
-| <Link id="m-topic" /><code>{"Rigidbody topic"}</code> |  |
+| <Link id="m-chosen" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/walker">{"Walker"}</Link>{" chosen"}</code> | Static slot for a chosen walker; nothing sets it in this build. |
+| <Link id="m-current" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/walker">{"Walker"}</Link>{" current"}</code> | Static, set to the walker clamping itself to the navmesh during that call. |
+| <Link id="m-topic" /><code>{"Rigidbody topic"}</code> | The rigidbody being moved. |
 | <Link id="m-acceleration" /><code>{"private float acceleration"}</code> |  |
 | <Link id="m-angulardrag" /><code>{"private float angularDrag"}</code> |  |
 | <Link id="m-blockeduntil" /><code>{"private float blockedUntil"}</code> |  |
@@ -87,37 +87,37 @@ A `MonoBehaviour` with a `FixedUpdate`. Moves `topic` (the creature's `Rigidbody
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-acceleration-2" /><code>{"float Acceleration { get; set; }"}</code> |  |
-| <Link id="m-distancetoground" /><code>{"float DistanceToGround { get; private set; }"}</code> |  |
-| <Link id="m-gravitymultiplier-2" /><code>{"float GravityMultiplier { get; set; }"}</code> |  |
-| <Link id="m-groundlayers" /><code>{"LayerMask GroundLayers { get; }"}</code> |  |
-| <Link id="m-hasforwarddefined" /><code>{"bool HasForwardDefined { get; set; }"}</code> |  |
-| <Link id="m-isblocked" /><code>{"bool IsBlocked { get; }"}</code> |  |
-| <Link id="m-isgrounded" /><code>{"bool IsGrounded { get; private set; }"}</code> |  |
-| <Link id="m-isovershooting" /><code>{"bool IsOvershooting { get; set; }"}</code> |  |
-| <Link id="m-ispaused" /><code>{"bool IsPaused { get; set; }"}</code> |  |
-| <Link id="m-isslowedwhennotmoving" /><code>{"bool IsSlowedWhenNotMoving { get; set; }"}</code> |  |
-| <Link id="m-maximumspeed-2" /><code>{"float MaximumSpeed { get; set; }"}</code> |  |
-| <Link id="m-power" /><code>{"float Power { get; set; }"}</code> |  |
-| <Link id="m-powerpersecond-2" /><code>{"float PowerPerSecond { get; set; }"}</code> |  |
-| <Link id="m-rotationspeed-2" /><code>{"float RotationSpeed { get; set; }"}</code> |  |
-| <Link id="m-targetslowdown-2" /><code>{"float TargetSlowdown { get; set; }"}</code> |  |
+| <Link id="m-acceleration-2" /><code>{"float Acceleration { get; set; }"}</code> | How fast it speeds up. |
+| <Link id="m-distancetoground" /><code>{"float DistanceToGround { get; private set; }"}</code> | Distance from the body to the ground below, from the last ground check. |
+| <Link id="m-gravitymultiplier-2" /><code>{"float GravityMultiplier { get; set; }"}</code> | Gravity multiplier; jump actions swap it while jumping. |
+| <Link id="m-groundlayers" /><code>{"LayerMask GroundLayers { get; }"}</code> | Layers counted as ground. |
+| <Link id="m-hasforwarddefined" /><code>{"bool HasForwardDefined { get; set; }"}</code> | Set by circling actions when they set the facing. Not read by the walker itself in this build. |
+| <Link id="m-isblocked" /><code>{"bool IsBlocked { get; }"}</code> | True for 0.2 s after RVO avoidance stopped it while it wanted to move. |
+| <Link id="m-isgrounded" /><code>{"bool IsGrounded { get; private set; }"}</code> | Whether it was on the ground at the last check. |
+| <Link id="m-isovershooting" /><code>{"bool IsOvershooting { get; set; }"}</code> | Lets it keep moving past the target instead of stopping exactly on it. Set by navigation actions. |
+| <Link id="m-ispaused" /><code>{"bool IsPaused { get; set; }"}</code> | Holds it still without dropping the path. Cleared when the path finishes. |
+| <Link id="m-isslowedwhennotmoving" /><code>{"bool IsSlowedWhenNotMoving { get; set; }"}</code> | Whether it slows while not facing where it is going. |
+| <Link id="m-maximumspeed-2" /><code>{"float MaximumSpeed { get; set; }"}</code> | Top speed. |
+| <Link id="m-power" /><code>{"float Power { get; set; }"}</code> | How much control it has (1 is full). Below 1 it recovers at `PowerPerSecond`; 0 or less stops it moving itself, as when jumping. |
+| <Link id="m-powerpersecond-2" /><code>{"float PowerPerSecond { get; set; }"}</code> | How fast `Power` recovers toward 1. |
+| <Link id="m-rotationspeed-2" /><code>{"float RotationSpeed { get; set; }"}</code> | Turn speed in degrees per second. |
+| <Link id="m-targetslowdown-2" /><code>{"float TargetSlowdown { get; set; }"}</code> | How much it slows near the target. |
 | <Link id="m-velocityy-2" /><code>{"private float VelocityY { get; set; }"}</code> |  |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stopped" /><code>{"event Action Stopped"}</code> |  |
-| <Link id="m-updated" /><code>{"event Action<"}<Link to="/game-api/types/alta-intelligence/walkerstate">{"WalkerState"}</Link>{"> Updated"}</code> |  |
+| <Link id="m-stopped" /><code>{"event Action Stopped"}</code> | Raised when it stops walking because the path finished. |
+| <Link id="m-updated" /><code>{"event Action<"}<Link to="/game-api/types/alta-intelligence/walkerstate">{"WalkerState"}</Link>{"> Updated"}</code> | Raised every physics step with its velocity, forward and turn speed, pivoting, final stretch and grounded state. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clearblocked" /><code>{"void ClearBlocked()"}</code> |  |
-| <Link id="m-normalizedmove" /><code>{"void NormalizedMove(float duration)"}</code> |  |
-| <Link id="m-stopnormalizedmove" /><code>{"void StopNormalizedMove()"}</code> |  |
+| <Link id="m-clearblocked" /><code>{"void ClearBlocked()"}</code> | Clears the blocked timer. |
+| <Link id="m-normalizedmove" /><code>{"void NormalizedMove(float duration)"}</code> | Makes the next path take a set number of seconds overall instead of moving at normal speed. |
+| <Link id="m-stopnormalizedmove" /><code>{"void StopNormalizedMove()"}</code> | Goes back to normal speed movement. |
 | <Link id="m-applygravity" /><code>{"private void ApplyGravity()"}</code> |  |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-calculatewallforce" /><code>{"private Vector2 CalculateWallForce(Vector3 position, Vector2 directionToTargetXZ)"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "ServerCommandDefinitionBase"
-description: "Base for quick access menu settings that run a server command when used, such as ServerCommandDefinition, ServerMultiOptionCommandDefinition and Assis"
+description: "Base for quick access menu settings that run a server command when used, such as ServerCommandDefinition, ServerMultiOptionCommandDefinition and..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

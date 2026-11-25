@@ -1,6 +1,6 @@
 ---
 title: "Instruction"
-description: "One cached world-generation step (spawn, spline, forest core or river core) that can be saved to a stream and replayed later. Subclasses are SpawnInst"
+description: "One cached world-generation step (spawn, spline, forest core or river core) that can be saved to a stream and replayed later."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "Distribution<TThis, T, TItem, TFestivityGroup>"
-description: "A weighted random table of assets, used by world and cave generation. Weights can depend on location attributes, and festivity groups add items while "
+description: "A weighted random table of assets, used by world and cave generation."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

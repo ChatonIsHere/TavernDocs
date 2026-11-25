@@ -1,6 +1,6 @@
 ---
 title: "RolesChange"
-description: "A class in TavernLib, TavernLib.ModdingApi."
+description: "What Roles.RolesChanged hands its handlers: one user whose roles in users.json changed."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.ModdingApi`.
 
-A **class** in `TavernLib`, `TavernLib.ModdingApi`.
+What `Roles.RolesChanged` hands its handlers: one user whose roles in `users.json` changed.
 
 - **Listed in** [TavernLib.ModdingApi](/tavernlib-api/types/moddingapi)
 - **Documented in** [RolesChange](/tavernlib-api/types/moddingapi/roleschange)
@@ -27,9 +27,9 @@ A **class** in `TavernLib`, `TavernLib.ModdingApi`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-newroles" /><code>{"IReadOnlyList<string> NewRoles { get; }"}</code> |  |
-| <Link id="m-oldroles" /><code>{"IReadOnlyList<string> OldRoles { get; }"}</code> |  |
-| <Link id="m-username" /><code>{"string Username { get; }"}</code> |  |
+| <Link id="m-newroles" /><code>{"IReadOnlyList<string> NewRoles { get; }"}</code> | Their roles now. Empty if they have none left or were removed from the file. |
+| <Link id="m-oldroles" /><code>{"IReadOnlyList<string> OldRoles { get; }"}</code> | Their roles before the change. Empty if they had none. |
+| <Link id="m-username" /><code>{"string Username { get; }"}</code> | The name as it's written in `users.json`. |
 
 ## Used in
 

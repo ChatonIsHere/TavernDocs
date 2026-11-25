@@ -1,6 +1,6 @@
 ---
 title: "RespawnSystemSettings"
-description: "Global settings for respawn shrines: per-shrine data by GUID, tick rates, beacon sizes, subscriber marks, glyph colours and sounds. Get it with Respaw"
+description: "Global settings for respawn shrines: per-shrine data by GUID, tick rates, beacon sizes, subscriber marks, glyph colours and sounds."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

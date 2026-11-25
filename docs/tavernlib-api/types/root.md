@@ -10,7 +10,7 @@ Every type in `TavernLib`, from TavernLib's own assembly. See [the overview](ove
 
 | Type | Kind | Public members | What it is |
 | --- | --- | --- | --- |
-| [`Tavern`](/tavernlib-api/types/root/tavern) | class | 5 | The `MelonPlugin` itself. `const string Version` (see Which TavernLib is running). |
-| [`TavernArgs`](/tavernlib-api/types/root/tavernargs) | static class | 10 | A **static class** in `TavernLib`, `TavernLib`. |
-| [`TavernDirectories`](/tavernlib-api/types/root/taverndirectories) | static class | 13 | A **static class** in `TavernLib`, `TavernLib`. |
-| [`TavernLogger`](/tavernlib-api/types/root/tavernlogger) | internal static class | 3 | A **internal static class** in `TavernLib`, `TavernLib`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`. |
+| [`Tavern`](/tavernlib-api/types/root/tavern) | class | 5 | TavernLib's `MelonPlugin`. It registers TavernLib's services, collects its console commands and applies its late patches. Both sides; MelonLoader creates it. |
+| [`TavernArgs`](/tavernlib-api/types/root/tavernargs) | static class | 10 | The names of TavernLib's own command-line arguments, as constants, so a mod can check for them with the game's `CommandLineArguments`. Both sides. |
+| [`TavernDirectories`](/tavernlib-api/types/root/taverndirectories) | static class | 13 | The folder and file paths TavernLib uses, worked out each time you read them. None of them creates the folder or file. Both sides. |
+| [`TavernLogger`](/tavernlib-api/types/root/tavernlogger) | internal static class | 3 | TavernLib's internal log helper. Writes through `Tavern.Logger` as `[Type.Method]: message`, finding the caller from the stack trace. |

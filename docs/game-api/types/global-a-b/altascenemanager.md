@@ -1,6 +1,6 @@
 ---
 title: "AltaSceneManager"
-description: "Every scene is loaded additively. Main thread; the async methods poll with Task.Delay and continue on the main thread."
+description: "Every scene is loaded additively."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

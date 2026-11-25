@@ -1,6 +1,6 @@
 ---
 title: "EffectDefinitionApplication"
-description: "An effect with a strength and an optional duration."
+description: "An effect with a strength multiplier and optional duration, as carried by liquids, food and potions."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Alchemy`.
 
-An effect with a strength and an optional duration.
+An effect with a strength multiplier and optional duration, as carried by liquids, food and potions. Applies at once or spread over time.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`IEffectDefinition`](/game-api/types/alta-stats-effects/ieffectdefinition)
@@ -37,19 +37,19 @@ An effect with a strength and an optional duration.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-effecttomodify-2" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" EffectToModify { get; }"}</code> |  |
-| <Link id="m-strengthmultiplier-2" /><code>{"float StrengthMultiplier { get; set; }"}</code> |  |
+| <Link id="m-effecttomodify-2" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" EffectToModify { get; }"}</code> | The effect definition this applies. |
+| <Link id="m-strengthmultiplier-2" /><code>{"float StrengthMultiplier { get; set; }"}</code> | Multiplier on the strength passed in. Settable. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkapply" /><code>{"virtual void CheckApply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |  |
-| <Link id="m-copy" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{" Copy()"}</code> |  |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |  |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |  |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-apply" /><code>{"protected void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |  |
+| <Link id="m-checkapply" /><code>{"virtual void CheckApply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | Applies the effect now, or over its duration in seconds when that is above 0. |
+| <Link id="m-copy" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{" Copy()"}</code> | Returns a copy. |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | True when effect, multiplier and duration all match. |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Hash from effect, multiplier and duration. |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the effect and multiplier. The duration is not sent. |
+| <Link id="m-apply" /><code>{"protected void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | Applies the effect to a handler at the given strength times the multiplier. |
 
 ## Used in
 

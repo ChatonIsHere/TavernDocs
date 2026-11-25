@@ -1,6 +1,6 @@
 ---
 title: "TransformEvent"
-description: "class TransformEvent in Root.Township."
+description: "A serialisable AltaEvent that passes a Transform, for inspector-wired callbacks such as where a skill effect should play."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TransformEvent
 
 A **class** in `Root.Township`, no namespace.
+
+A serialisable `AltaEvent` that passes a `Transform`, for inspector-wired callbacks such as where a skill effect should play.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** [`AltaEvent<Transform, TransformHandler>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

@@ -1,6 +1,6 @@
 ---
 title: "HashSetAction<T>"
-description: "Base for game task actions whose filters are sets built on first use. An empty set matches anything."
+description: "Base for game task actions whose filters are sets built on first use."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

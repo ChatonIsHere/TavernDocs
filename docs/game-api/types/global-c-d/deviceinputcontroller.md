@@ -1,6 +1,6 @@
 ---
 title: "DeviceInputController"
-description: "abstract class DeviceInputController in Root.Township."
+description: "Base for a VR device or fly cam input source (SteamVR, OpenXR, fly cam)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DeviceInputController
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for a VR device or fly cam input source (SteamVR, OpenXR, fly cam). Fills a `ControllerInput` each update and pushes it into a `PlayerInput`. Client side.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Derived types** [`FlyCamInputController`](/game-api/types/global-e-h/flycaminputcontroller), [`OpenXRInputController`](/game-api/types/global-m-o/openxrinputcontroller), [`SteamVRInputController`](/game-api/types/global-s/steamvrinputcontroller)
@@ -36,19 +38,19 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playerinput" /><code><Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-input-2" /><code>{"protected virtual "}<Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" Input { get; }"}</code> |  |
+| <Link id="m-playerinput" /><code><Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" { get; }"}</code> | The `PlayerInput` (hand) this device feeds. |
+| <Link id="m-input-2" /><code>{"protected virtual "}<Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" Input { get; }"}</code> | The reused `ControllerInput` this device fills each update. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sendinputto" /><code>{"void SendInputTo("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |  |
-| <Link id="m-triggerhaptics" /><code>{"abstract void TriggerHaptics(float strength, float frequency, float remainingTime)"}</code> |  |
-| <Link id="m-updateposition" /><code>{"virtual void UpdatePosition()"}</code> |  |
-| <Link id="m-calculatedoubletap" /><code>{"protected bool CalculateDoubleTap(bool isTapping)"}</code> |  |
-| <Link id="m-calculatephoto" /><code>{"protected bool CalculatePhoto("}<Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" input, bool photoAction)"}</code> |  |
-| <Link id="m-populateinput" /><code>{"protected abstract void PopulateInput("}<Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" input)"}</code> |  |
+| <Link id="m-sendinputto" /><code>{"void SendInputTo("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Fills the input from the device and applies it to the given `PlayerInput`, firing its events. |
+| <Link id="m-triggerhaptics" /><code>{"abstract void TriggerHaptics(float strength, float frequency, float remainingTime)"}</code> | Plays a vibration with the given strength, frequency and duration. |
+| <Link id="m-updateposition" /><code>{"virtual void UpdatePosition()"}</code> | Per-device hook to update the tracked position. Does nothing in the base class. |
+| <Link id="m-calculatedoubletap" /><code>{"protected bool CalculateDoubleTap(bool isTapping)"}</code> | Helper for subclasses: true on the second tap within one second. |
+| <Link id="m-calculatephoto" /><code>{"protected bool CalculatePhoto("}<Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" input, bool photoAction)"}</code> | Helper for subclasses: true once the photo action has been held for half a second. |
+| <Link id="m-populateinput" /><code>{"protected abstract void PopulateInput("}<Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" input)"}</code> | Implemented per device to read the hardware into the input. |
 
 ## Used in
 

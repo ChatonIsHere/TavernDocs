@@ -1,6 +1,6 @@
 ---
 title: "LogicSaveData"
-description: "class LogicSaveData in Root.Township."
+description: "Saved state of a logic value with an identifier and change events."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LogicSaveData
 
 A **class** in `Root.Township`, `Alta.Logic`.
+
+Saved state of a logic value with an identifier and change events.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`BasicSaveData<LogicSaveData>`](/game-api/types/global-a-b/basicsavedata-tdata)
@@ -27,22 +29,22 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-identifier" /><code>{"uint identifier"}</code> |  |
+| <Link id="m-identifier" /><code>{"uint identifier"}</code> | Identifier of the logic value this belongs to. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changedexternally" /><code>{"event Action ChangedExternally"}</code> |  |
-| <Link id="m-updatedvalue" /><code>{"event Action UpdatedValue"}</code> |  |
+| <Link id="m-changedexternally" /><code>{"event Action ChangedExternally"}</code> | Raised by `OnUpdatedExternal`, before `UpdatedValue`. |
+| <Link id="m-updatedvalue" /><code>{"event Action UpdatedValue"}</code> | Raised whenever the value updates. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onupdated" /><code>{"void OnUpdated()"}</code> |  |
-| <Link id="m-onupdatedexternal" /><code>{"void OnUpdatedExternal()"}</code> |  |
-| <Link id="m-copyto" /><code>{"protected override void CopyTo("}<Link to="/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" target)"}</code> |  |
+| <Link id="m-onupdated" /><code>{"void OnUpdated()"}</code> | Raises `UpdatedValue`. |
+| <Link id="m-onupdatedexternal" /><code>{"void OnUpdatedExternal()"}</code> | Raises `ChangedExternally` then `UpdatedValue`. |
+| <Link id="m-copyto" /><code>{"protected override void CopyTo("}<Link to="/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" target)"}</code> | Copies the identifier to another save data. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "Distribution"
-description: "A weighted list (of prefabs, materials) whose weights depend on biome attributes. GetRandomAs<T>(AttributeSet). Populations and material parts use it."
+description: "Weighted random table of assets (prefabs, presets, liquids) under the hashed path Distributions."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Caves`.
 
-A weighted list (of prefabs, materials) whose weights depend on biome attributes. `GetRandomAs<T>(AttributeSet)`. Populations and material parts use it.
+Weighted random table of assets (prefabs, presets, liquids) under the hashed path `Distributions`. Item weights can depend on spawn attributes, and festivity groups add items while a festivity is active.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`Distribution<Distribution, Object, Distribution.Item, Distribution.FestivityGroup>`](/game-api/types/alta-world-generation/distribution-tthis-t-titem-tfestivitygroup)
@@ -31,9 +31,9 @@ A weighted list (of prefabs, materials) whose weights depend on biome attributes
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getrandomas" /><code>{"T GetRandomAs<T>("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes = null)"}</code> |  |
-| <Link id="m-getrandomas-2" /><code>{"T GetRandomAs<T>(Func<double> randomValue, "}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes = null)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| <Link id="m-getrandomas" /><code>{"T GetRandomAs<T>("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes = null)"}</code> | Picks a random entry, weighted by the given attributes, and casts it. Null on the null chance, no match or wrong type. |
+| <Link id="m-getrandomas-2" /><code>{"T GetRandomAs<T>(Func<double> randomValue, "}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes = null)"}</code> | Picks a random entry, weighted by the given attributes, and casts it. Null on the null chance, no match or wrong type. |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Logs errors for empty entries and empty festivity groups. |
 
 ## Used in
 

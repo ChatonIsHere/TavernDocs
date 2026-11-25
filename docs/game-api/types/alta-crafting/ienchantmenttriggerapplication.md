@@ -1,6 +1,6 @@
 ---
 title: "IEnchantmentTriggerApplication"
-description: "interface IEnchantmentTriggerApplication in Root.Township."
+description: "A trigger of an enchantment applied to one enchanted object."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Enchantments`.
 
+A trigger of an enchantment applied to one enchanted object. It watches for its condition and raises `Invoked` when it fires.
+
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Derived types** [`EnchantmentTriggerApplication<T>`](/game-api/types/alta-crafting/enchantmenttriggerapplication-t)
 
@@ -19,22 +21,22 @@ An **interface** in `Root.Township`, `Alta.Enchantments`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enchantmentapp" /><code><Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" EnchantmentApp { get; }"}</code> |  |
-| <Link id="m-settings" /><code><Link to="/game-api/types/alta-crafting/enchantmenttrigger">{"EnchantmentTrigger"}</Link>{" Settings { get; }"}</code> |  |
+| <Link id="m-enchantmentapp" /><code><Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" EnchantmentApp { get; }"}</code> | The applied enchantment this trigger belongs to. |
+| <Link id="m-settings" /><code><Link to="/game-api/types/alta-crafting/enchantmenttrigger">{"EnchantmentTrigger"}</Link>{" Settings { get; }"}</code> | The trigger asset. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoked" /><code>{"event Action<object> Invoked"}</code> |  |
+| <Link id="m-invoked" /><code>{"event Action<object> Invoked"}</code> | Raised when the trigger fires, with trigger-specific data. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"void Apply()"}</code> |  |
-| <Link id="m-remove" /><code>{"void Remove()"}</code> |  |
-| <Link id="m-sendmessage" /><code>{"void SendMessage("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-apply" /><code>{"void Apply()"}</code> | Starts watching for the trigger. Does nothing if already applied. |
+| <Link id="m-remove" /><code>{"void Remove()"}</code> | Stops watching for the trigger. |
+| <Link id="m-sendmessage" /><code>{"void SendMessage("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the trigger's effect type. Remote clients then play the trigger's effects. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "CommandSecurityPatches"
-description: "A class in TavernLib, TavernLib.Patches."
+description: "Harmony patches on the game's console and API checks: they turn off wrist-menu command routing and the TCP remote console, and skip the Alta permission and..."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Patches`.
 
-A **class** in `TavernLib`, `TavernLib.Patches`.
+Harmony patches on the game's console and API checks: they turn off wrist-menu command routing and the TCP remote console, and skip the Alta permission and identity checks. Mostly matters on a server.
 
 - **Listed in** [TavernLib.Patches](/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
@@ -28,7 +28,7 @@ A **class** in `TavernLib`, `TavernLib.Patches`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cancelroutecommand" /><code>{"static bool CancelRouteCommand()"}</code> |  |
-| <Link id="m-instantcloseremoteconsole" /><code>{"static void InstantCloseRemoteConsole("}<Link to="/game-api/types/global-s/serverconsolemanager">{"ServerConsoleManager"}</Link>{" __instance)"}</code> |  |
-| <Link id="m-skipvalidateidentitytoken" /><code>{"static bool SkipValidateIdentityToken(ref Task<"}<Link to="/game-api/types/assembly-api-models/booleanresponse">{"BooleanResponse"}</Link>{"> __result)"}</code> |  |
-| <Link id="m-sortpermissions" /><code>{"static bool SortPermissions(ref Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{">> __result)"}</code> |  |
+| <Link id="m-cancelroutecommand" /><code>{"static bool CancelRouteCommand()"}</code> | Prefix on `CommandSync.RouteCommand` that skips it, so wrist-menu console commands are dropped. TavernLib's comment isn't sure it's needed. |
+| <Link id="m-instantcloseremoteconsole" /><code>{"static void InstantCloseRemoteConsole("}<Link to="/game-api/types/global-s/serverconsolemanager">{"ServerConsoleManager"}</Link>{" __instance)"}</code> | Postfix on `ServerConsoleManager.StartRemoteConsole` that closes the game's `remoteConsole` (the TCP console on 1758) straight away. |
+| <Link id="m-skipvalidateidentitytoken" /><code>{"static bool SkipValidateIdentityToken(ref Task<"}<Link to="/game-api/types/assembly-api-models/booleanresponse">{"BooleanResponse"}</Link>{"> __result)"}</code> | Prefix on `LowLevelApiClient.ValidateIdentityToken` that answers valid without calling anything, since there's no Alta to ask. |
+| <Link id="m-sortpermissions" /><code>{"static bool SortPermissions(ref Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{">> __result)"}</code> | Prefix on `WebSocketCommandHandler.GetCurrentServerPermissionsForLoggedInUser` that gives every console login the `Console` permission only. |

@@ -1,6 +1,6 @@
 ---
 title: "PlayerCosmeticCategory"
-description: "A category of player cosmetics (a slot such as a hat or shirt), loaded from Resources/Cosmetic Categories. Picks random items for random outfits."
+description: "A category of player cosmetics (a slot such as a hat or shirt), loaded from Resources/Cosmetic Categories."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

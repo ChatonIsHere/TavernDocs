@@ -1,6 +1,6 @@
 ---
 title: "Path"
-description: "class Path in Root.Township."
+description: "One direction of an Edge in the forest generator's node graph, with links to the spaces on either side and the next paths around each node."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Path
 
 A **class** in `Root.Township`, `Alta.Forests`.
+
+One direction of an `Edge` in the forest generator's node graph, with links to the spaces on either side and the next paths around each node. Used during forest generation.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`Path<Node, Path>`](/game-api/types/alta-world-generation/path-tnode-tpath)
@@ -27,25 +29,25 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-anticlockwise" /><code><Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" AntiClockwise { get; internal set; }"}</code> |  |
-| <Link id="m-clockwise" /><code><Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" Clockwise { get; internal set; }"}</code> |  |
-| <Link id="m-edge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-isab" /><code>{"bool IsAB { get; }"}</code> |  |
-| <Link id="m-left" /><code><Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{" Left { get; internal set; }"}</code> |  |
-| <Link id="m-reverse" /><code><Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" Reverse { get; }"}</code> |  |
-| <Link id="m-right" /><code><Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{" Right { get; internal set; }"}</code> |  |
+| <Link id="m-anticlockwise" /><code><Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" AntiClockwise { get; internal set; }"}</code> | The next path anticlockwise around the graph, set by the generator. |
+| <Link id="m-clockwise" /><code><Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" Clockwise { get; internal set; }"}</code> | The next path clockwise around the graph, set by the generator. |
+| <Link id="m-edge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" { get; }"}</code> | The undirected edge this path is one direction of. |
+| <Link id="m-isab" /><code>{"bool IsAB { get; }"}</code> | True when this path runs from the edge's A node to its B node. |
+| <Link id="m-left" /><code><Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{" Left { get; internal set; }"}</code> | The space on this path's left, set by the generator. |
+| <Link id="m-reverse" /><code><Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" Reverse { get; }"}</code> | The same edge in the other direction. |
+| <Link id="m-right" /><code><Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{" Right { get; internal set; }"}</code> | The space on this path's right, set by the generator. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getadjacent" /><code>{"void GetAdjacent(out "}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" fromCC, out "}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" fromC, out "}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" toCC, out "}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" toC)"}</code> |  |
-| <Link id="m-getsides" /><code>{"void GetSides(float additionalRadius, out float startLeft, out float endLeft, out float startRight, out float endRight)"}</code> |  |
-| <Link id="m-insidedot" /><code>{"float InsideDot("}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" path, Vector2 position, out float angleDot)"}</code> |  |
-| <Link id="m-isinside" /><code>{"bool IsInside("}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" path, Vector2 position, out float angleDot)"}</code> |  |
-| <Link id="m-lerp3d" /><code>{"Vector3 Lerp3d(float t)"}</code> |  |
-| <Link id="m-progressfromangle" /><code>{"void ProgressFromAngle("}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" path, ref float thisProgress, ref float pathProgress)"}</code> |  |
-| <Link id="m-insidedot-2" /><code>{"private float InsideDot(Vector2 origin, Vector2 arm1, Vector2 arm2, Vector2 position, out float armsDot)"}</code> |  |
+| <Link id="m-getadjacent" /><code>{"void GetAdjacent(out "}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" fromCC, out "}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" fromC, out "}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" toCC, out "}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" toC)"}</code> | Finds the nearest neighbouring paths on each side at both the start and end nodes. |
+| <Link id="m-getsides" /><code>{"void GetSides(float additionalRadius, out float startLeft, out float endLeft, out float startRight, out float endRight)"}</code> | Works out where along the path (0 to 1) each side clears the node radii plus extra radius, using the adjacent paths' angles. |
+| <Link id="m-insidedot" /><code>{"float InsideDot("}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" path, Vector2 position, out float angleDot)"}</code> | For a path sharing a node, dot between the corner's bisector and the direction to a position. Also outputs the corner's dot. |
+| <Link id="m-isinside" /><code>{"bool IsInside("}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" path, Vector2 position, out float angleDot)"}</code> | Whether a position lies inside the corner this path forms with another path that shares a node. |
+| <Link id="m-lerp3d" /><code>{"Vector3 Lerp3d(float t)"}</code> | Point along the path in 3D, from start (0) to end (1). |
+| <Link id="m-progressfromangle" /><code>{"void ProgressFromAngle("}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" path, ref float thisProgress, ref float pathProgress)"}</code> | Flips the two progress values so both measure from the shared node of the corner. |
+| <Link id="m-insidedot-2" /><code>{"private float InsideDot(Vector2 origin, Vector2 arm1, Vector2 arm2, Vector2 position, out float armsDot)"}</code> | For a path sharing a node, dot between the corner's bisector and the direction to a position. Also outputs the corner's dot. |
 | <Link id="m-iswithin" /><code>{"private bool IsWithin(Vector2 origin, Vector2 arm1, Vector2 arm2, Vector2 position, out float armsDot)"}</code> |  |
 
 ## Used in

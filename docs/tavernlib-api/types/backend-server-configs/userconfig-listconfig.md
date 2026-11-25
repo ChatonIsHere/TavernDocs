@@ -1,6 +1,6 @@
 ---
 title: "UserConfig.ListConfig"
-description: "A class in TavernLib, TavernLib.Backend.Server.Configs."
+description: "A whitelist or blacklist in users.json."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
-A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
+A whitelist or blacklist in `users.json`. A player matches on any of their name, id or address.
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/tavernlib-api/types/backend-server-configs)
 - **Nested in** [`UserConfig`](/tavernlib-api/types/backend-server-configs/userconfig)
@@ -28,9 +28,9 @@ A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ips" /><code>{"List<string> Ips { get; set; }"}</code> |  |
-| <Link id="m-userids" /><code>{"List<ulong> UserIds { get; set; }"}</code> |  |
-| <Link id="m-usernames" /><code>{"List<string> Usernames { get; set; }"}</code> |  |
+| <Link id="m-ips" /><code>{"List<string> Ips { get; set; }"}</code> | IP addresses. On the whitelist, an address also lets in accounts registered from it. |
+| <Link id="m-userids" /><code>{"List<ulong> UserIds { get; set; }"}</code> | User ids. |
+| <Link id="m-usernames" /><code>{"List<string> Usernames { get; set; }"}</code> | Usernames, compared without case. |
 | <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |  |
 
 ## Used in

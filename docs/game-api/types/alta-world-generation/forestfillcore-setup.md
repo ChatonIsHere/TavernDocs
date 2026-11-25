@@ -1,6 +1,6 @@
 ---
 title: "ForestFillCore.Setup"
-description: "class ForestFillCore.Setup in Root.Township."
+description: "Per-row state handed to forest fill code: the forest layout, a seeded random and the spawn modifiers in use."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ForestFillCore.Setup
 
 A **class** in `Root.Township`, `Alta.Forests`.
+
+Per-row state handed to forest fill code: the forest layout, a seeded random and the spawn modifiers in use.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`ForestFillCore`](/game-api/types/alta-world-generation/forestfillcore)
@@ -25,9 +27,9 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-forest" /><code><Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" Forest { get; private set; }"}</code> |  |
-| <Link id="m-random" /><code>{"Random Random { get; private set; }"}</code> |  |
-| <Link id="m-spawnmodifiers" /><code><Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; set; }"}</code> |  |
+| <Link id="m-forest" /><code><Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" Forest { get; private set; }"}</code> | The forest layout being filled. |
+| <Link id="m-random" /><code>{"Random Random { get; private set; }"}</code> | Random generator for this row, seeded so results repeat. |
+| <Link id="m-spawnmodifiers" /><code><Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; set; }"}</code> | Spawn modifiers applied to what this row places. |
 
 ## Used in
 

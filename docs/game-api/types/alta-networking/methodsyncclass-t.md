@@ -1,6 +1,6 @@
 ---
 title: "MethodSyncClass<T>"
-description: "An entity network method whose handler gets a class instance to read into or write from, as well as the stream. It can make a fresh instance when read"
+description: "An entity network method whose handler gets a class instance to read into or write from, as well as the stream."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

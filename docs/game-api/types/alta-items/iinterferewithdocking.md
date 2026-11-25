@@ -1,6 +1,6 @@
 ---
 title: "IInterfereWithDocking"
-description: "interface IInterfereWithDocking in Root.Township."
+description: "A component that can stop two items from stacking in one dock, such as liquid containers with different contents."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Inventory`.
 
+A component that can stop two items from stacking in one dock, such as liquid containers with different contents. Checked when an item is docked onto one already there.
+
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Derived types** [`ForgedModel`](/game-api/types/alta-crafting/forgedmodel), [`LiquidContainer`](/game-api/types/alta-stats-effects/liquidcontainer), [`ColoredExplosive`](/game-api/types/global-c-d/coloredexplosive), [`PhysicalMaterialPart`](/game-api/types/global-p/physicalmaterialpart)
 
@@ -19,7 +21,7 @@ An **interface** in `Root.Township`, `Alta.Inventory`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkallowed" /><code>{"bool CheckAllowed("}<Link to="/game-api/types/alta-items/iinterferewithdocking">{"IInterfereWithDocking"}</Link>{" other)"}</code> |  |
+| <Link id="m-checkallowed" /><code>{"bool CheckAllowed("}<Link to="/game-api/types/alta-items/iinterferewithdocking">{"IInterfereWithDocking"}</Link>{" other)"}</code> | Whether this item can stack with another item's matching component. |
 
 ## Used in
 

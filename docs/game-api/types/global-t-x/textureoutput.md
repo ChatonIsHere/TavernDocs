@@ -1,6 +1,6 @@
 ---
 title: "TextureOutput"
-description: "Settings for one texture a texture-baking tool writes out: name, size, channels, compression and file format. Editor or tool data, not gameplay."
+description: "Settings for one texture a texture-baking tool writes out: name, size, channels, compression and file format."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

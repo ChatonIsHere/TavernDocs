@@ -1,6 +1,6 @@
 ---
 title: "CosmeticOwnershipManager"
-description: "What a player owns and may use, by category."
+description: "Which cosmetics a player has bought, owns and may pick from, by category."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Customization`.
 
-What a player owns and may use, by category.
+Which cosmetics a player has bought, owns and may pick from, by category. Get one with the async `LoadFor`.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Documented in** [Customization](/game-api/game-systems/customization)
@@ -38,21 +38,21 @@ What a player owns and may use, by category.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-available-2" /><code>{"IReadOnlyDictionary<"}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{", HashSet<uint>> Available { get; }"}</code> |  |
-| <Link id="m-owned-2" /><code>{"IReadOnlyDictionary<"}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{", HashSet<uint>> Owned { get; }"}</code> |  |
-| <Link id="m-purchased-2" /><code>{"IReadOnlyCollection<uint> Purchased { get; }"}</code> |  |
+| <Link id="m-available-2" /><code>{"IReadOnlyDictionary<"}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{", HashSet<uint>> Available { get; }"}</code> | Cosmetic IDs the player can choose from per category: owned ones plus ones made available without buying. |
+| <Link id="m-owned-2" /><code>{"IReadOnlyDictionary<"}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{", HashSet<uint>> Owned { get; }"}</code> | Cosmetic IDs the player owns per category, including items from the current store rotation. |
+| <Link id="m-purchased-2" /><code>{"IReadOnlyCollection<uint> Purchased { get; }"}</code> | Every purchased cosmetic ID (only purchasables that are cosmetics). |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcategoryoptions" /><code>{"ICollection<uint> GetCategoryOptions("}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" category)"}</code> |  |
-| <Link id="m-getpurchases" /><code>{"List<uint> GetPurchases()"}</code> |  |
-| <Link id="m-loadfor" /><code>{"static async Task<"}<Link to="/game-api/types/alta-customization/cosmeticownershipmanager">{"CosmeticOwnershipManager"}</Link>{"> LoadFor("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-loadfor-2" /><code>{"static async Task<"}<Link to="/game-api/types/alta-customization/cosmeticownershipmanager">{"CosmeticOwnershipManager"}</Link>{"> LoadFor(int userId, bool isLocalPlayer, "}<Link to="/game-api/types/assembly-other/playersubscriberstatus">{"PlayerSubscriberStatus"}</Link>{" status, "}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager)"}</code> |  |
-| <Link id="m-randomize-2" /><code>{"async Task Randomize(bool canUseNonOwned)"}</code> |  |
-| <Link id="m-randomize-3" /><code>{"async Task Randomize("}<Link to="/game-api/types/alta-customization/playercosmeticwrapper">{"PlayerCosmeticWrapper"}</Link>{" cosmeticWrapper, bool canUseNonOwned)"}</code> |  |
-| <Link id="m-refreshstore" /><code>{"async Task RefreshStore()"}</code> |  |
+| <Link id="m-getcategoryoptions" /><code>{"ICollection<uint> GetCategoryOptions("}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" category)"}</code> | Returns the available cosmetic IDs for one category. |
+| <Link id="m-getpurchases" /><code>{"List<uint> GetPurchases()"}</code> | Returns the list of purchased cosmetic IDs. |
+| <Link id="m-loadfor" /><code>{"static async Task<"}<Link to="/game-api/types/alta-customization/cosmeticownershipmanager">{"CosmeticOwnershipManager"}</Link>{"> LoadFor("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Loads a player's or user ID's purchases and builds a manager, adding the current store rotation for the local player. The user ID overload returns null on failure. |
+| <Link id="m-loadfor-2" /><code>{"static async Task<"}<Link to="/game-api/types/alta-customization/cosmeticownershipmanager">{"CosmeticOwnershipManager"}</Link>{"> LoadFor(int userId, bool isLocalPlayer, "}<Link to="/game-api/types/assembly-other/playersubscriberstatus">{"PlayerSubscriberStatus"}</Link>{" status, "}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager)"}</code> | Loads a player's or user ID's purchases and builds a manager, adding the current store rotation for the local player. The user ID overload returns null on failure. |
+| <Link id="m-randomize-2" /><code>{"async Task Randomize(bool canUseNonOwned)"}</code> | Replaces the character's cosmetics with a random pick per category, from owned items or all available ones. Concurrent calls wait for the running one. |
+| <Link id="m-randomize-3" /><code>{"async Task Randomize("}<Link to="/game-api/types/alta-customization/playercosmeticwrapper">{"PlayerCosmeticWrapper"}</Link>{" cosmeticWrapper, bool canUseNonOwned)"}</code> | Replaces the character's cosmetics with a random pick per category, from owned items or all available ones. Concurrent calls wait for the running one. |
+| <Link id="m-refreshstore" /><code>{"async Task RefreshStore()"}</code> | Removes the old store rotation's items, fetches the current rotation and adds its items (expanding sets) as owned. |
 | <Link id="m-additem" /><code>{"private void AddItem(uint purchasable)"}</code> |  |
 | <Link id="m-wasdestroyed" /><code>{"private bool WasDestroyed()"}</code> |  |
 

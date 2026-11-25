@@ -1,6 +1,6 @@
 ---
 title: "IEnchantmentEffectApplication"
-description: "interface IEnchantmentEffectApplication in Root.Township."
+description: "Runtime part of an EnchantmentEffect on one item."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Enchantments`.
 
+Runtime part of an `EnchantmentEffect` on one item. Run when the enchantment's trigger fires.
+
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Derived types** [`EnchantmentEffectApplication<T>`](/game-api/types/alta-crafting/enchantmenteffectapplication-t)
 
@@ -19,15 +21,15 @@ An **interface** in `Root.Township`, `Alta.Enchantments`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enchantmentapp" /><code><Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" EnchantmentApp { get; }"}</code> |  |
-| <Link id="m-settings" /><code><Link to="/game-api/types/alta-crafting/enchantmenteffect">{"EnchantmentEffect"}</Link>{" Settings { get; }"}</code> |  |
+| <Link id="m-enchantmentapp" /><code><Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" EnchantmentApp { get; }"}</code> | The enchantment this effect belongs to. |
+| <Link id="m-settings" /><code><Link to="/game-api/types/alta-crafting/enchantmenteffect">{"EnchantmentEffect"}</Link>{" Settings { get; }"}</code> | The effect asset. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke(object data)"}</code> |  |
-| <Link id="m-sendmessage" /><code>{"void SendMessage("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-invoke" /><code>{"void Invoke(object data)"}</code> | Runs the effect with the trigger's data. The base version plays and syncs hit effects for a tool hit. |
+| <Link id="m-sendmessage" /><code>{"void SendMessage("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the effect's sync data, such as the hit position. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "CustomizationVisualPart<TArguments>"
-description: "abstract class CustomizationVisualPart<TArguments> in Root.Township."
+description: "A CustomizationVisualPart whose default arguments of type TArguments are set on the prefab."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CustomizationVisualPart&lt;TArguments&gt;
 
 An **abstract class** in `Root.Township`, `Alta.Customization`.
+
+A `CustomizationVisualPart` whose default arguments of type `TArguments` are set on the prefab.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** [`CustomizationVisualPart`](/game-api/types/alta-customization/customizationvisualpart)
@@ -33,10 +35,10 @@ An **abstract class** in `Root.Township`, `Alta.Customization`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-arguments" /><code>{"TArguments Arguments { get; }"}</code> |  |
+| <Link id="m-arguments" /><code>{"TArguments Arguments { get; }"}</code> | The default arguments set on the prefab. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createdefaultarguments" /><code>{"override "}<Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" CreateDefaultArguments()"}</code> |  |
+| <Link id="m-createdefaultarguments" /><code>{"override "}<Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" CreateDefaultArguments()"}</code> | A clone of the default arguments. |

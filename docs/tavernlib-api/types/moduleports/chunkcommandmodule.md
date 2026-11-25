@@ -1,6 +1,6 @@
 ---
 title: "ChunkCommandModule"
-description: "A static class in TavernLib, TavernLib.ModulePorts."
+description: "TavernLib's chunks console module, a port of the game's chunk commands: receive and sync tuning, load distances, listing, wiping, merging and force-loading..."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `TavernLib`, `TavernLib.ModulePorts`.
 
-A **static class** in `TavernLib`, `TavernLib.ModulePorts`.
+TavernLib's `chunks` console module, a port of the game's chunk commands: receive and sync tuning, load distances, listing, wiping, merging and force-loading chunks. Its commands are private.
 
 - **Listed in** [TavernLib.ModulePorts](/tavernlib-api/types/moduleports)
 - **Attributes** `PlayOnly`, `Module`

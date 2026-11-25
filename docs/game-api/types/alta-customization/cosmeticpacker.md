@@ -1,6 +1,6 @@
 ---
 title: "CosmeticPacker"
-description: "Client: merges a character's cosmetic parts into a few meshes and one packed texture, then applies them to the character's clothes. Packing is queued "
+description: "Client: merges a character's cosmetic parts into a few meshes and one packed texture, then applies them to the character's clothes."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

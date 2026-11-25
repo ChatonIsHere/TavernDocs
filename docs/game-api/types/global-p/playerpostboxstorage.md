@@ -1,6 +1,6 @@
 ---
 title: "PlayerPostboxStorage"
-description: "Server: one player's postbox contents, saved items waiting to be taken out. Get it through PostboxManager."
+description: "Server: one player's postbox contents, saved items waiting to be taken out."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "DeathAnimationSettings"
-description: "class DeathAnimationSettings in Root.Township."
+description: "Settings for a two-burst death dissolve effect."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DeathAnimationSettings
 
 A **class** in `Root.Township`, `Alta.PlayerStates`.
+
+Settings for a two-burst death dissolve effect. `DeadStateSettings.AnimationSettings` holds one, but nothing reads it; the effect in use takes `Alta.Combat.DeathAnimationSettings`.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 
@@ -40,17 +42,17 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ashesmaterial-2" /><code>{"Material AshesMaterial { get; }"}</code> |  |
-| <Link id="m-deathvisual-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DeathVisual { get; }"}</code> |  |
-| <Link id="m-deathvisualgroundposition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DeathVisualGroundPosition { get; }"}</code> |  |
-| <Link id="m-defaultduration-2" /><code>{"float DefaultDuration { get; }"}</code> |  |
-| <Link id="m-firstdissolvestrength-2" /><code>{"float FirstDissolveStrength { get; }"}</code> |  |
-| <Link id="m-firstramp1-2" /><code>{"Texture2D FirstRamp1 { get; }"}</code> |  |
-| <Link id="m-firstramp2-2" /><code>{"Texture2D FirstRamp2 { get; }"}</code> |  |
-| <Link id="m-predeathvisual-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" PreDeathVisual { get; }"}</code> |  |
-| <Link id="m-seconddissolvestrength-2" /><code>{"float SecondDissolveStrength { get; }"}</code> |  |
-| <Link id="m-secondramp1-2" /><code>{"Texture2D SecondRamp1 { get; }"}</code> |  |
-| <Link id="m-secondramp2-2" /><code>{"Texture2D SecondRamp2 { get; }"}</code> |  |
+| <Link id="m-ashesmaterial-2" /><code>{"Material AshesMaterial { get; }"}</code> | Material for the ashes. |
+| <Link id="m-deathvisual-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DeathVisual { get; }"}</code> | Pooled particles for the second burst. |
+| <Link id="m-deathvisualgroundposition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DeathVisualGroundPosition { get; }"}</code> | Pooled visual placed at ground level. |
+| <Link id="m-defaultduration-2" /><code>{"float DefaultDuration { get; }"}</code> | Default duration in seconds (3). |
+| <Link id="m-firstdissolvestrength-2" /><code>{"float FirstDissolveStrength { get; }"}</code> | Shell dissolve strength for the first burst. |
+| <Link id="m-firstramp1-2" /><code>{"Texture2D FirstRamp1 { get; }"}</code> | First colour ramp texture for the first burst. |
+| <Link id="m-firstramp2-2" /><code>{"Texture2D FirstRamp2 { get; }"}</code> | Second colour ramp texture for the first burst. |
+| <Link id="m-predeathvisual-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" PreDeathVisual { get; }"}</code> | Pooled particles for the first burst. |
+| <Link id="m-seconddissolvestrength-2" /><code>{"float SecondDissolveStrength { get; }"}</code> | Shell dissolve strength for the second burst. |
+| <Link id="m-secondramp1-2" /><code>{"Texture2D SecondRamp1 { get; }"}</code> | First colour ramp texture for the second burst. |
+| <Link id="m-secondramp2-2" /><code>{"Texture2D SecondRamp2 { get; }"}</code> | Second colour ramp texture for the second burst. |
 
 ## Used in
 

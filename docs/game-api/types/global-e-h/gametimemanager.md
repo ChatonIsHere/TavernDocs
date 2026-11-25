@@ -1,6 +1,6 @@
 ---
 title: "GameTimeManager"
-description: "A scene NetworkEntityBehaviour. public static GameTimeManager Instance (a field)."
+description: "Keeps the time of day and month and decides when it's night."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-A scene `NetworkEntityBehaviour`. `public static GameTimeManager Instance` (a field).
+Keeps the time of day and month and decides when it's night. One timeline second is one game day. The server runs it and syncs clients every few seconds; get it from `GameTimeManager.Instance`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<GameTimeManagerSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<GameTimeManagerSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -30,7 +30,7 @@ A scene `NetworkEntityBehaviour`. `public static GameTimeManager Instance` (a fi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-e-h/gametimemanager">{"GameTimeManager"}</Link>{" Instance"}</code> |  |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-e-h/gametimemanager">{"GameTimeManager"}</Link>{" Instance"}</code> | The current manager, set on `Awake`. |
 | <Link id="m-availablekeywords" /><code>{"private "}<Link to="/game-api/types/global-e-h/gametimemanager-timename">{"GameTimeManager.TimeName"}</Link>{"[] availableKeyWords"}</code> |  |
 | <Link id="m-daydurationminutes" /><code>{"private float dayDurationMinutes"}</code> |  |
 | <Link id="m-dayprogress" /><code>{"private float dayProgress"}</code> |  |
@@ -54,37 +54,37 @@ A scene `NetworkEntityBehaviour`. `public static GameTimeManager Instance` (a fi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-availablekeywords-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-e-h/gametimemanager-timename">{"GameTimeManager.TimeName"}</Link>{"> AvailableKeyWords { get; }"}</code> |  |
-| <Link id="m-currentnormalizedtime" /><code>{"float CurrentNormalizedTime { get; }"}</code> |  |
-| <Link id="m-currenttime" /><code>{"float CurrentTime { get; }"}</code> |  |
-| <Link id="m-dayduration" /><code>{"float DayDuration { get; }"}</code> |  |
-| <Link id="m-daydurationminutes-2" /><code>{"float DayDurationMinutes { get; }"}</code> |  |
-| <Link id="m-dayprogress-2" /><code>{"float DayProgress { get; }"}</code> |  |
-| <Link id="m-daytonightratio-2" /><code>{"float DayToNightRatio { get; }"}</code> |  |
-| <Link id="m-defaulttimeline" /><code><Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" DefaultTimeline { get; private set; }"}</code> |  |
-| <Link id="m-isnight" /><code>{"static bool IsNight { get; private set; }"}</code> |  |
-| <Link id="m-monthprogress-2" /><code>{"float MonthProgress { get; }"}</code> |  |
-| <Link id="m-nightduration" /><code>{"float NightDuration { get; }"}</code> |  |
-| <Link id="m-normalizedtimeline" /><code><Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" NormalizedTimeline { get; private set; }"}</code> |  |
+| <Link id="m-availablekeywords-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-e-h/gametimemanager-timename">{"GameTimeManager.TimeName"}</Link>{"> AvailableKeyWords { get; }"}</code> | Named times (such as dawn or noon) for `UpdateTimeByKeyWord`. |
+| <Link id="m-currentnormalizedtime" /><code>{"float CurrentNormalizedTime { get; }"}</code> | Time of day from 0 to 1 where the day half and night half are equal length. |
+| <Link id="m-currenttime" /><code>{"float CurrentTime { get; }"}</code> | Time of day from 0 to 1 as the fraction of the current day. |
+| <Link id="m-dayduration" /><code>{"float DayDuration { get; }"}</code> | Real seconds of daylight in one game day, counting the small hours as day. |
+| <Link id="m-daydurationminutes-2" /><code>{"float DayDurationMinutes { get; }"}</code> | Real minutes in one game day. |
+| <Link id="m-dayprogress-2" /><code>{"float DayProgress { get; }"}</code> | Progress through the current day, 0 to 1. |
+| <Link id="m-daytonightratio-2" /><code>{"float DayToNightRatio { get; }"}</code> | Share of the day (0 to 1) that is the day part before night starts. |
+| <Link id="m-defaulttimeline" /><code><Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" DefaultTimeline { get; private set; }"}</code> | Timeline of game days: the whole part counts days, the fraction is the time of day. |
+| <Link id="m-isnight" /><code>{"static bool IsNight { get; private set; }"}</code> | Whether it is night now. Static. |
+| <Link id="m-monthprogress-2" /><code>{"float MonthProgress { get; }"}</code> | Progress through the current month, 0 to 1. |
+| <Link id="m-nightduration" /><code>{"float NightDuration { get; }"}</code> | Real seconds of night in one game day, not counting the small hours. |
+| <Link id="m-normalizedtimeline" /><code><Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" NormalizedTimeline { get; private set; }"}</code> | Timeline with the day and night halves stretched to equal length. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dawnreached" /><code>{"static event Action DawnReached"}</code> |  |
-| <Link id="m-duskreached" /><code>{"static event Action DuskReached"}</code> |  |
-| <Link id="m-nightchanged" /><code>{"static event Action<bool> NightChanged"}</code> |  |
+| <Link id="m-dawnreached" /><code>{"static event Action DawnReached"}</code> | Raised when night ends. Static. |
+| <Link id="m-duskreached" /><code>{"static event Action DuskReached"}</code> | Raised when night starts. Static. |
+| <Link id="m-nightchanged" /><code>{"static event Action<bool> NightChanged"}</code> | Raised with the new night state when it changes. Static. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getkeywords" /><code>{"string GetKeywords()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-rushtotime" /><code>{"void RushToTime(float time)"}</code> |  |
-| <Link id="m-updatetimebykeyword" /><code>{"void UpdateTimeByKeyWord(string name)"}</code> |  |
+| <Link id="m-getkeywords" /><code>{"string GetKeywords()"}</code> | Text listing the available time keywords. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the sync and picks the server or client update; clients start a timeline at the initial time. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: makes the timeline if loading didn't, and starts following the main timeline. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the time to a new player and makes them snap to it. |
+| <Link id="m-rushtotime" /><code>{"void RushToTime(float time)"}</code> | Server: fast-forwards to a normalized time (0 to 0.5 day part, 0.5 to 1 night part) at the rushing speed. |
+| <Link id="m-updatetimebykeyword" /><code>{"void UpdateTimeByKeyWord(string name)"}</code> | Server: rushes to a named time; logs an error for an unknown name. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-clientupdate" /><code>{"private float ClientUpdate(float dayDelta)"}</code> |  |
 | <Link id="m-createtimeline" /><code>{"private void CreateTimeline(TimeSpan startTime)"}</code> |  |

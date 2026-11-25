@@ -1,6 +1,6 @@
 ---
 title: "CommandContext"
-description: "One per console session: each websocket connection has its own, and Handle without a context uses one shared default."
+description: "Who ran a console command and with what: the calling user, their group permissions, the raw text and a selection."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Console`.
 
-One per console session: each websocket connection has its own, and `Handle` without a context uses one shared default.
+Who ran a console command and with what: the calling user, their group permissions, the raw text and a selection. Passed to requirement checks.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Documented in** [Writing commands](/game-api/console-and-utilities/commands#commandcontext)
@@ -28,11 +28,11 @@ One per console session: each websocket connection has its own, and `Handle` wit
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-callinguser" /><code><Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" CallingUser { get; }"}</code> |  |
-| <Link id="m-creationtime" /><code>{"DateTime CreationTime { get; }"}</code> |  |
-| <Link id="m-grouppermissions" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"> "}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-rawcommand" /><code>{"string RawCommand { get; set; }"}</code> |  |
-| <Link id="m-selection" /><code><Link to="/game-api/types/alta-console/altaselection">{"AltaSelection"}</Link>{" Selection { get; }"}</code> |  |
+| <Link id="m-callinguser" /><code><Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" CallingUser { get; }"}</code> | The user who ran the command, with their permissions. |
+| <Link id="m-creationtime" /><code>{"DateTime CreationTime { get; }"}</code> | When the context was made. |
+| <Link id="m-grouppermissions" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"> "}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{" { get; }"}</code> | The caller's group permissions; empty if none were given. |
+| <Link id="m-rawcommand" /><code>{"string RawCommand { get; set; }"}</code> | The command text as typed. |
+| <Link id="m-selection" /><code><Link to="/game-api/types/alta-console/altaselection">{"AltaSelection"}</Link>{" Selection { get; }"}</code> | Selection state commands can read or change. |
 
 ## Used in
 

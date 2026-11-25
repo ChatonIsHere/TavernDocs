@@ -1,6 +1,6 @@
 ---
 title: "PlayerCommandModule.StatApplicationType"
-description: "An enum in TavernLib, TavernLib.ModulePorts."
+description: "Which part of a stat player set-stat changes: its base value, its minimum or its maximum."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **enum** in `TavernLib`, `TavernLib.ModulePorts`.
 
-An **enum** in `TavernLib`, `TavernLib.ModulePorts`.
+Which part of a stat `player set-stat` changes: its base value, its minimum or its maximum.
 
 - **Listed in** [TavernLib.ModulePorts](/tavernlib-api/types/moduleports)
 - **Nested in** [`PlayerCommandModule`](/tavernlib-api/types/moduleports/playercommandmodule)

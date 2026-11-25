@@ -1,6 +1,6 @@
 ---
 title: "IPopupBoard"
-description: "interface IPopupBoard in Root.Township."
+description: "A popup board with a title and message that can be closed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+A popup board with a title and message that can be closed.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`PopupBoard`](/game-api/types/global-p/popupboard)
 
@@ -19,21 +21,21 @@ An **interface** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> |  |
-| <Link id="m-title" /><code>{"string Title { get; set; }"}</code> |  |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |  |
+| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> | The body text shown on the board. |
+| <Link id="m-title" /><code>{"string Title { get; set; }"}</code> | The title shown on the board. |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | The board's transform, for placing it. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-closed" /><code>{"event Action<"}<Link to="/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{"> Closed"}</code> |  |
+| <Link id="m-closed" /><code>{"event Action<"}<Link to="/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{"> Closed"}</code> | Raised when the board closes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-close" /><code>{"void Close()"}</code> |  |
+| <Link id="m-close" /><code>{"void Close()"}</code> | Closes the board. |
 
 ## Used in
 

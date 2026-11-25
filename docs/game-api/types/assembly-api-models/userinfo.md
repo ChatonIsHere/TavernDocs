@@ -1,6 +1,6 @@
 ---
 title: "UserInfo"
-description: "Two are equal when their ids are equal, whatever the names."
+description: "A user as returned by the Alta web API: id and username."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
-Two are equal when their ids are equal, whatever the names.
+A user as returned by the Alta web API: id and username. Equal when the ids match.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Inherits or implements** [`INamedEntity`](/game-api/types/assembly-api-models/inamedentity)
@@ -30,17 +30,17 @@ Two are equal when their ids are equal, whatever the names.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |  |
-| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> |  |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | The user's account id. |
+| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | The user's name. |
 | <Link id="m-alta-api-datatransfermodels-models-responses-inamedentity-name" /><code>{"private string Alta.Api.DataTransferModels.Models.Responses.INamedEntity.Name { get; }"}</code> |  |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |  |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | True if the other object is a `UserInfo` with the same id; the username is ignored. |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Based on the id only. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Formats as `(Username:Identifier)`. |
 
 ## Used in
 

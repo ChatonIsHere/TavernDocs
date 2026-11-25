@@ -1,6 +1,6 @@
 ---
 title: "StateTransition<TFrom, TTo>"
-description: "Base for a rule that moves a player from one player state to another. Subclasses hook up listeners while the transition is active and call TransitionT"
+description: "Base for a rule that moves a player from one player state to another."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "HeatArea"
-description: "A trigger volume around a heat source (above a fire, inside a smelter or a pot's base)."
+description: "Server: a trigger area that heats or cools heat points inside it, toward a set temperature or from a heat source such as a fire."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Heat`.
 
-A trigger volume around a heat source (above a fire, inside a smelter or a pot's base).
+Server: a trigger area that heats or cools heat points inside it, toward a set temperature or from a heat source such as a fire. Removed on clients. Only the highest priority area touching a point affects it.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour)
@@ -46,28 +46,28 @@ A trigger volume around a heat source (above a fire, inside a smelter or a pot's
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-affectheatpointcount" /><code>{"int AffectHeatPointCount { get; }"}</code> |  |
-| <Link id="m-gettemperaturemultiplier" /><code>{"Func<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{", float> GetTemperatureMultiplier { get; set; }"}</code> |  |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> |  |
-| <Link id="m-targettemperature-2" /><code>{"float TargetTemperature { get; set; }"}</code> |  |
+| <Link id="m-affectheatpointcount" /><code>{"int AffectHeatPointCount { get; }"}</code> | How many heat points are being affected. |
+| <Link id="m-gettemperaturemultiplier" /><code>{"Func<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{", float> GetTemperatureMultiplier { get; set; }"}</code> | Function giving each point a 0 to 1 weight for how strongly the area affects it. Always 1 by default. |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> | Whether the area's trigger object is active. |
+| <Link id="m-targettemperature-2" /><code>{"float TargetTemperature { get; set; }"}</code> | The temperature points are pulled toward when there's no heat source. 23 by default. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addedheatpoint" /><code>{"event Action<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> AddedHeatPoint"}</code> |  |
-| <Link id="m-pointfilter" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/heatarea-pointfilterdelegate">{"HeatArea.PointFilterDelegate"}</Link>{" PointFilter"}</code> |  |
-| <Link id="m-removedheatpoint" /><code>{"event Action<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> RemovedHeatPoint"}</code> |  |
+| <Link id="m-addedheatpoint" /><code>{"event Action<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> AddedHeatPoint"}</code> | Raised when a heat point starts being affected. |
+| <Link id="m-pointfilter" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/heatarea-pointfilterdelegate">{"HeatArea.PointFilterDelegate"}</Link>{" PointFilter"}</code> | Lets listeners reject a heat point that enters the trigger. |
+| <Link id="m-removedheatpoint" /><code>{"event Action<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> RemovedHeatPoint"}</code> | Raised when a heat point stops being affected. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deregisterheatpointexternal" /><code>{"void DeregisterHeatPointExternal("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-registerheatpointexternal" /><code>{"void RegisterHeatPointExternal("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> |  |
-| <Link id="m-setactive" /><code>{"void SetActive(bool isActive)"}</code> |  |
+| <Link id="m-deregisterheatpointexternal" /><code>{"void DeregisterHeatPointExternal("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> | Stops affecting a heat point added with `RegisterHeatPointExternal`. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Server: picks heat source or target temperature mode. On clients the component removes itself. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: starts updating if points are already inside. |
+| <Link id="m-registerheatpointexternal" /><code>{"void RegisterHeatPointExternal("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> | Affects a heat point without it being in the trigger. |
+| <Link id="m-setactive" /><code>{"void SetActive(bool isActive)"}</code> | Turns the area's trigger on or off. Turning it off forgets the points inside. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-baseheatpointupdate" /><code>{"private void BaseHeatPointUpdate("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint, float multiplier)"}</code> |  |
 | <Link id="m-checkfordisabled" /><code>{"private void CheckForDisabled()"}</code> |  |

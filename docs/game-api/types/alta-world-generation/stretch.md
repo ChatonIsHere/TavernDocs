@@ -1,6 +1,6 @@
 ---
 title: "Stretch"
-description: "class Stretch in Root.Township."
+description: "Cave map generator part that shapes a layer vertically from a height map, using a curve from floor (or roof) upward."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Stretch
 
 A **class** in `Root.Township`, `Alta.Caves.PluginParts`.
+
+Cave map generator part that shapes a layer vertically from a height map, using a curve from floor (or roof) upward. Settings only; the work is done in `StretchInstance`.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`MapGeneratorPart`](/game-api/types/alta-world-generation/mapgeneratorpart)
@@ -39,20 +41,20 @@ A **class** in `Root.Township`, `Alta.Caves.PluginParts`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-floorvalue-2" /><code>{"float FloorValue { get; }"}</code> |  |
-| <Link id="m-heightmaplayer-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" HeightMapLayer { get; }"}</code> |  |
-| <Link id="m-heightmapyindex-2" /><code>{"int HeightMapYIndex { get; }"}</code> |  |
-| <Link id="m-isfromroof-2" /><code>{"bool IsFromRoof { get; }"}</code> |  |
-| <Link id="m-maximumvalue-2" /><code>{"float MaximumValue { get; }"}</code> |  |
-| <Link id="m-minimumvalue-2" /><code>{"float MinimumValue { get; }"}</code> |  |
-| <Link id="m-operationtype-2" /><code><Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-stretchcurve-2" /><code>{"AnimationCurve StretchCurve { get; }"}</code> |  |
+| <Link id="m-floorvalue-2" /><code>{"float FloorValue { get; }"}</code> | Added to the height map value before it is scaled by the curve. |
+| <Link id="m-heightmaplayer-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" HeightMapLayer { get; }"}</code> | Layer plugin read as the height map. |
+| <Link id="m-heightmapyindex-2" /><code>{"int HeightMapYIndex { get; }"}</code> | Which Y slice of the height map layer is read. |
+| <Link id="m-isfromroof-2" /><code>{"bool IsFromRoof { get; }"}</code> | When true, the curve runs from the top of the layer downward instead of from the bottom. |
+| <Link id="m-maximumvalue-2" /><code>{"float MaximumValue { get; }"}</code> | Upper clamp for each written value. |
+| <Link id="m-minimumvalue-2" /><code>{"float MinimumValue { get; }"}</code> | Lower clamp for each written value. |
+| <Link id="m-operationtype-2" /><code><Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" { get; }"}</code> | How the curve value combines with the existing layer value. |
+| <Link id="m-stretchcurve-2" /><code>{"AnimationCurve StretchCurve { get; }"}</code> | Curve over the layer's height (0 at the start, 1 at the end) that scales the height map value. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getinstance" /><code>{"override "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> |  |
+| <Link id="m-getinstance" /><code>{"override "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> | Creates the `StretchInstance` that runs this part on a plugin. |
 
 ## Used in
 

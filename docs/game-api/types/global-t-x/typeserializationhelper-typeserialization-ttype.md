@@ -1,6 +1,6 @@
 ---
 title: "TypeSerializationHelper.TypeSerialization<TType>"
-description: "abstract class TypeSerializationHelper.TypeSerialization<TType> in Root.Township."
+description: "Base for a serializer of one value type (float, vector, prefab, save data and so on) used to build read and write delegates for synced save fields."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TypeSerializationHelper.TypeSerialization&lt;TType&gt;
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for a serializer of one value type (float, vector, prefab, save data and so on) used to build read and write delegates for synced save fields.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`TypeSerializationHelper`](/game-api/types/global-t-x/typeserializationhelper)
@@ -27,10 +29,10 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handle" /><code>{"virtual void Handle<T>(Type type, Delegate get, Delegate set, ref Action<T, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncWrite, ref Action<T, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncRead)"}</code> |  |
-| <Link id="m-handlearray" /><code>{"virtual void HandleArray<T>(Type type, Delegate get, Delegate set, ref Action<T, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncWrite, ref Action<T, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncRead)"}</code> |  |
-| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> |  |
-| <Link id="m-serialize" /><code>{"protected abstract void Serialize(Type type, ref TType value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |  |
+| <Link id="m-handle" /><code>{"virtual void Handle<T>(Type type, Delegate get, Delegate set, ref Action<T, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncWrite, ref Action<T, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncRead)"}</code> | Adds read and write steps for a single field of this type, given its getter and setter. Logs an error on a type mismatch. |
+| <Link id="m-handlearray" /><code>{"virtual void HandleArray<T>(Type type, Delegate get, Delegate set, ref Action<T, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncWrite, ref Action<T, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncRead)"}</code> | Same as `Handle` for an array field: writes the length, then each element. |
+| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | Optional setup hook. Empty by default. |
+| <Link id="m-serialize" /><code>{"protected abstract void Serialize(Type type, ref TType value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Subclasses read or write one value of the type to the stream here. |
 
 ## Used in
 

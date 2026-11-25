@@ -1,6 +1,6 @@
 ---
 title: "CookableItem"
-description: "class CookableItem in Root.Township."
+description: "Item component for a cooking ingredient: its cooking category, how it looks floating in a liquid and the effects it adds."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CookableItem
 
 A **class** in `Root.Township`, `Alta.Cooking`.
+
+Item component for a cooking ingredient: its cooking category, how it looks floating in a liquid and the effects it adds. Read through `Cookable` and the ingredient recipe pages.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`ItemComponent`](/game-api/types/global-i-l/itemcomponent)
@@ -34,9 +36,9 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-category-2" /><code><Link to="/game-api/types/alta-crafting/cookablecategorydefinition">{"CookableCategoryDefinition"}</Link>{" Category { get; }"}</code> |  |
-| <Link id="m-chunkvisual-2" /><code><Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{" ChunkVisual { get; }"}</code> |  |
-| <Link id="m-effects-2" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] Effects { get; }"}</code> |  |
+| <Link id="m-category-2" /><code><Link to="/game-api/types/alta-crafting/cookablecategorydefinition">{"CookableCategoryDefinition"}</Link>{" Category { get; }"}</code> | Cooking category the item counts as. |
+| <Link id="m-chunkvisual-2" /><code><Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{" ChunkVisual { get; }"}</code> | How pieces of it look floating in a liquid. |
+| <Link id="m-effects-2" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] Effects { get; }"}</code> | Effects it adds to the dish. |
 
 ## Used in
 

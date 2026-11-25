@@ -1,6 +1,6 @@
 ---
 title: "PresetTree"
-description: "class PresetTree in Root.Township."
+description: "Asset that records a tree's full shape (each trunk or branch piece, how they connect, and attachments like leaves or fruit) so it can be rebuilt exactly, at..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PresetTree
 
 A **class** in `Root.Township`, `Alta.Woodcutting`.
+
+Asset that records a tree's full shape (each trunk or branch piece, how they connect, and attachments like leaves or fruit) so it can be rebuilt exactly, at run time or in the editor.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`HashedGeneralValue<PresetTree>`](/game-api/types/assembly-other/hashedgeneralvalue-t), `ISerializationCallbackReceiver`
@@ -38,18 +40,18 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-size-2" /><code><Link to="/game-api/types/alta-crafting/treesize">{"TreeSize"}</Link>{" Size { get; }"}</code> |  |
-| <Link id="m-species-2" /><code><Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{"[] Species { get; }"}</code> |  |
+| <Link id="m-size-2" /><code><Link to="/game-api/types/alta-crafting/treesize">{"TreeSize"}</Link>{" Size { get; }"}</code> | The tree size this preset is for. |
+| <Link id="m-species-2" /><code><Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{"[] Species { get; }"}</code> | Species this preset can be used with. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generateeditortreeonexisting" /><code>{"void GenerateEditorTreeOnExisting("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree)"}</code> |  |
-| <Link id="m-generateruntimetree" /><code><Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" GenerateRunTimeTree("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" treePrefab, "}<Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species, Transform parent, Vector3 localPosition, Quaternion localRotation, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parentEntity)"}</code> |  |
-| <Link id="m-generateruntimetreeonexisting" /><code>{"void GenerateRunTimeTreeOnExisting("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree)"}</code> |  |
-| <Link id="m-generateruntimetreewithoutparent" /><code><Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" GenerateRunTimeTreeWithoutParent("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" treePrefab, "}<Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species, Vector3 position, Quaternion rotation, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-savefrom" /><code>{"void SaveFrom("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree)"}</code> |  |
+| <Link id="m-generateeditortreeonexisting" /><code>{"void GenerateEditorTreeOnExisting("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree)"}</code> | Editor: builds the recorded pieces onto a tree in the scene, using the first species. |
+| <Link id="m-generateruntimetree" /><code><Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" GenerateRunTimeTree("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" treePrefab, "}<Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species, Transform parent, Vector3 localPosition, Quaternion localRotation, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parentEntity)"}</code> | Server: spawns a tree prefab of a species and places it under a parent entity, saved as its child. |
+| <Link id="m-generateruntimetreeonexisting" /><code>{"void GenerateRunTimeTreeOnExisting("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree)"}</code> | Server: builds the recorded pieces onto an existing tree entity and initializes it. |
+| <Link id="m-generateruntimetreewithoutparent" /><code><Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" GenerateRunTimeTreeWithoutParent("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" treePrefab, "}<Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species, Vector3 position, Quaternion rotation, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Server: spawns a tree prefab of a species at a world position in a chunk. |
+| <Link id="m-savefrom" /><code>{"void SaveFrom("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree)"}</code> | Marks a tree to record. Its shape is written into the asset when Unity next serializes it. |
 | <Link id="m-handleeditorstep" /><code>{"private void HandleEditorStep("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree, "}<Link to="/game-api/types/alta-crafting/presettree-step">{"PresetTree.Step"}</Link>{" step, "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" parent)"}</code> |  |
 | <Link id="m-handlestep" /><code>{"private void HandleStep("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree, "}<Link to="/game-api/types/alta-crafting/presettree-step">{"PresetTree.Step"}</Link>{" step, "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" parent)"}</code> |  |
 | <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> |  |

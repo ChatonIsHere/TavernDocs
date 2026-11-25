@@ -1,6 +1,6 @@
 ---
 title: "Predicate"
-description: "Base for a logic term in the AI knowledge system: a functor with argument terms that is evaluated against a KnowledgeHolder to produce weighted result"
+description: "Base for a logic term in the AI knowledge system: a functor with argument terms that is evaluated against a KnowledgeHolder to produce weighted results."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

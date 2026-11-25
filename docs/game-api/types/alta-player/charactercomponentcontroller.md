@@ -1,6 +1,6 @@
 ---
 title: "CharacterComponentController"
-description: "abstract class CharacterComponentController in Root.Township."
+description: "Base for player character rig components (arm IK, elbows and so on) that an owning controller updates in a set order instead of through Unity's Update."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CharacterComponentController
 
 An **abstract class** in `Root.Township`, `Alta.Character`.
+
+Base for player character rig components (arm IK, elbows and so on) that an owning controller updates in a set order instead of through Unity's `Update`. Finds its `PlayerController` in a parent.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `MonoBehaviour`
@@ -32,24 +34,24 @@ An **abstract class** in `Root.Township`, `Alta.Character`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islocal" /><code>{"virtual bool IsLocal { get; set; }"}</code> |  |
-| <Link id="m-playercontroller-2" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-playersettings" /><code><Link to="/game-api/types/alta-player/playercontrollersettings">{"PlayerControllerSettings"}</Link>{" PlayerSettings { get; }"}</code> |  |
+| <Link id="m-islocal" /><code>{"virtual bool IsLocal { get; set; }"}</code> | Whether this belongs to the local player. `PreComponentUpdate` only fires when true. |
+| <Link id="m-playercontroller-2" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; }"}</code> | The `PlayerController` found in the parents. |
+| <Link id="m-playersettings" /><code><Link to="/game-api/types/alta-player/playercontrollersettings">{"PlayerControllerSettings"}</Link>{" PlayerSettings { get; }"}</code> | The player controller's settings, or null without a controller. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-postcomponentupdate" /><code>{"event "}<Link to="/game-api/types/global-t-x/updatehandler">{"UpdateHandler"}</Link>{" PostComponentUpdate"}</code> |  |
-| <Link id="m-precomponentupdate" /><code>{"event "}<Link to="/game-api/types/global-t-x/updatehandler">{"UpdateHandler"}</Link>{" PreComponentUpdate"}</code> |  |
+| <Link id="m-postcomponentupdate" /><code>{"event "}<Link to="/game-api/types/global-t-x/updatehandler">{"UpdateHandler"}</Link>{" PostComponentUpdate"}</code> | Raised after each fixed update of the component. |
+| <Link id="m-precomponentupdate" /><code>{"event "}<Link to="/game-api/types/global-t-x/updatehandler">{"UpdateHandler"}</Link>{" PreComponentUpdate"}</code> | Raised by subclasses before they update, local player only. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fixedupdatecharactercomponent" /><code>{"virtual void FixedUpdateCharacterComponent()"}</code> |  |
-| <Link id="m-updatecharactercomponent" /><code>{"virtual void UpdateCharacterComponent()"}</code> |  |
-| <Link id="m-onprecomponentupdate" /><code>{"protected void OnPreComponentUpdate()"}</code> |  |
+| <Link id="m-fixedupdatecharactercomponent" /><code>{"virtual void FixedUpdateCharacterComponent()"}</code> | Called each fixed step by the owner. The base version raises `PostComponentUpdate`. |
+| <Link id="m-updatecharactercomponent" /><code>{"virtual void UpdateCharacterComponent()"}</code> | Called each frame by the owner. Empty in the base. |
+| <Link id="m-onprecomponentupdate" /><code>{"protected void OnPreComponentUpdate()"}</code> | Raises `PreComponentUpdate`, but only for the local player. |
 
 ## Used in
 

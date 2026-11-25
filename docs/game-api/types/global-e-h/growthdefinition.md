@@ -1,6 +1,6 @@
 ---
 title: "GrowthDefinition"
-description: "class GrowthDefinition in Root.Township."
+description: "Asset listing the stages something grows through, used by GrowerComponent."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GrowthDefinition
 
 A **class** in `Root.Township`, no namespace.
+
+Asset listing the stages something grows through, used by `GrowerComponent`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`HashedGeneralValue<GrowthDefinition>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -35,8 +37,8 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ischildingtoparentatend-2" /><code>{"bool IsChildingToParentAtEnd { get; }"}</code> |  |
-| <Link id="m-stages-2" /><code><Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{"[] Stages { get; }"}</code> |  |
+| <Link id="m-ischildingtoparentatend-2" /><code>{"bool IsChildingToParentAtEnd { get; }"}</code> | Whether the grown object is chunk-childed to the grower's chunking parent when growth ends, instead of standing on its own. |
+| <Link id="m-stages-2" /><code><Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{"[] Stages { get; }"}</code> | The growth stages in order. |
 
 ## Used in
 

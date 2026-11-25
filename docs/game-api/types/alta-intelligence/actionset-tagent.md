@@ -1,6 +1,6 @@
 ---
 title: "ActionSet<TAgent>"
-description: "The actions to choose from, split into BaseActions (no target) and TargetActions."
+description: "An agent's available AI actions, split into actions that need a target and actions that do not."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
 
-The actions to choose from, split into `BaseActions` (no target) and `TargetActions`.
+An agent's available AI actions, split into actions that need a target and actions that do not.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Documented in** [Actions and decisions](/game-api/creatures/actions-and-decisions)
@@ -34,15 +34,15 @@ The actions to choose from, split into `BaseActions` (no target) and `TargetActi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-baseactions-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent>> BaseActions { get; }"}</code> |  |
-| <Link id="m-targetactions-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent>> TargetActions { get; }"}</code> |  |
+| <Link id="m-baseactions-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent>> BaseActions { get; }"}</code> | Actions that do not need a target. |
+| <Link id="m-targetactions-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent>> TargetActions { get; }"}</code> | Actions that need a target. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addaction" /><code>{"void AddAction("}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent> action)"}</code> |  |
-| <Link id="m-removeaction" /><code>{"void RemoveAction("}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent> action)"}</code> |  |
+| <Link id="m-addaction" /><code>{"void AddAction("}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent> action)"}</code> | Adds an action to the target or base set, by its `IsUsingTarget`. |
+| <Link id="m-removeaction" /><code>{"void RemoveAction("}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent> action)"}</code> | Removes an action from its set. |
 
 ## Used in
 

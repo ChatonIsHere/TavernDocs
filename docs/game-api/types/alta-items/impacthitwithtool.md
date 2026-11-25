@@ -1,6 +1,6 @@
 ---
 title: "ImpactHitWithTool"
-description: "class ImpactHitWithTool in Root.Township."
+description: "An ImpactHit made by an ImpactTool (a weapon or tool swing, or a thrown or dropped item)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactHitWithTool
 
 A **class** in `Root.Township`, `Alta.Impact`.
+
+An `ImpactHit` made by an `ImpactTool` (a weapon or tool swing, or a thrown or dropped item). Adds the tool, the impactor, the contact point and who was holding it.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`ImpactHit`](/game-api/types/alta-items/impacthit)
@@ -29,24 +31,24 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distance" /><code>{"float Distance { get; private set; }"}</code> |  |
-| <Link id="m-durabilitylostmultiplier" /><code>{"float DurabilityLostMultiplier { get; set; }"}</code> |  |
-| <Link id="m-end" /><code>{"Vector3 End { get; private set; }"}</code> |  |
-| <Link id="m-firstchannel" /><code><Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" FirstChannel { get; private set; }"}</code> |  |
-| <Link id="m-hittingplayer" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" HittingPlayer { get; }"}</code> |  |
-| <Link id="m-impactor" /><code><Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{" Impactor { get; private set; }"}</code> |  |
-| <Link id="m-impactpoint" /><code><Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" ImpactPoint { get; private set; }"}</code> |  |
-| <Link id="m-normal" /><code>{"override Vector3 Normal { get; }"}</code> |  |
-| <Link id="m-point" /><code>{"override Vector3 Point { get; }"}</code> |  |
-| <Link id="m-start" /><code>{"Vector3 Start { get; private set; }"}</code> |  |
-| <Link id="m-tool" /><code><Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" Tool { get; private set; }"}</code> |  |
-| <Link id="m-wasbyplayer" /><code>{"bool WasByPlayer { get; }"}</code> |  |
+| <Link id="m-distance" /><code>{"float Distance { get; private set; }"}</code> | Length of the swept path from `Start` to `End`. 1 for a plain collision hit, 0 for a point hit. |
+| <Link id="m-durabilitylostmultiplier" /><code>{"float DurabilityLostMultiplier { get; set; }"}</code> | Multiplier on durability the tool loses from this hit, 1 by default. |
+| <Link id="m-end" /><code>{"Vector3 End { get; private set; }"}</code> | Where the impactor's swept path ended. |
+| <Link id="m-firstchannel" /><code><Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" FirstChannel { get; private set; }"}</code> | The impact channel the hit came through, or null for plain collision hits. |
+| <Link id="m-hittingplayer" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" HittingPlayer { get; }"}</code> | The player responsible: the wielder, else the tool's owner. Null if neither. |
+| <Link id="m-impactor" /><code><Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{" Impactor { get; private set; }"}</code> | The `ImpactGenerator` on the tool that made the hit, or null for plain collision hits. |
+| <Link id="m-impactpoint" /><code><Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" ImpactPoint { get; private set; }"}</code> | The contact point (point, normal, colliders) of the hit. |
+| <Link id="m-normal" /><code>{"override Vector3 Normal { get; }"}</code> | Surface normal at the contact point. |
+| <Link id="m-point" /><code>{"override Vector3 Point { get; }"}</code> | World position of the contact point. |
+| <Link id="m-start" /><code>{"Vector3 Start { get; private set; }"}</code> | Where the impactor's swept path started. |
+| <Link id="m-tool" /><code><Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" Tool { get; private set; }"}</code> | The `ImpactTool` that made the hit. |
+| <Link id="m-wasbyplayer" /><code>{"bool WasByPlayer { get; }"}</code> | True when the tool had a player wielder or owner when the hit was made (not set for plain collision hits). |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hit" /><code>{"void Hit()"}</code> |  |
+| <Link id="m-hit" /><code>{"void Hit()"}</code> | Runs the hit: tells the impactor and tool, then raises `ImpactDetector.OnToolHit`. |
 
 ## Used in
 

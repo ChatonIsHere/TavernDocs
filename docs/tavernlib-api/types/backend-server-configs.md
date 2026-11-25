@@ -10,19 +10,19 @@ Every type in `TavernLib.Backend.Server.Configs`, from TavernLib's own assembly.
 
 | Type | Kind | Public members | What it is |
 | --- | --- | --- | --- |
-| [`ModsList`](/tavernlib-api/types/backend-server-configs/modslist) | class | 3 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
-| [`ModsListConfig`](/tavernlib-api/types/backend-server-configs/modslistconfig) | class | 1 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
-| [`ServerConfigFile<T>`](/tavernlib-api/types/backend-server-configs/serverconfigfile-t) | abstract class | 6 | The base class every TavernLib config file uses. |
-| [`ServerSettings`](/tavernlib-api/types/backend-server-configs/serversettings) | class | 19 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
-| [`ServerSettingsConfig`](/tavernlib-api/types/backend-server-configs/serversettingsconfig) | class | 2 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
-| [`TavernServer`](/tavernlib-api/types/backend-server-configs/tavernserver) | class | 14 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
-| [`TavernServerConfig`](/tavernlib-api/types/backend-server-configs/tavernserverconfig) | class | 1 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
-| [`TrustedRepos`](/tavernlib-api/types/backend-server-configs/trustedrepos) | class | 4 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
-| [`TrustedReposConfig`](/tavernlib-api/types/backend-server-configs/trustedreposconfig) | class | 1 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
-| [`UserConfig`](/tavernlib-api/types/backend-server-configs/userconfig) | class | 4 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
-| [`UserConfig.ListConfig`](/tavernlib-api/types/backend-server-configs/userconfig-listconfig) | class | 4 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
-| [`UserConfig.User`](/tavernlib-api/types/backend-server-configs/userconfig-user) | class | 9 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
-| [`UserConfigFile`](/tavernlib-api/types/backend-server-configs/userconfigfile) | class | 5 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
-| [`WhitelistRequestList`](/tavernlib-api/types/backend-server-configs/whitelistrequestlist) | class | 2 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
-| [`WhitelistRequestList.WhitelistRequest`](/tavernlib-api/types/backend-server-configs/whitelistrequestlist-whitelistrequest) | class | 4 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
-| [`WhitelistRequestsConfigFile`](/tavernlib-api/types/backend-server-configs/whitelistrequestsconfigfile) | class | 1 | A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
+| [`ModsList`](/tavernlib-api/types/backend-server-configs/modslist) | class | 3 | A modlist file, as `/modlist` reads it: the mod ids, each optionally pinned to a version. Its `repos` and `untracked` keys are not read. |
+| [`ModsListConfig`](/tavernlib-api/types/backend-server-configs/modslistconfig) | class | 1 | The `ServerConfigFile` for a modlist file, read by `ModReconciler.ReconcileModList`. |
+| [`ServerConfigFile<T>`](/tavernlib-api/types/backend-server-configs/serverconfigfile-t) | abstract class | 6 | The base class for TavernLib's JSON files. Reads into a `T`, writes through a temp file with a `.bak`, and holds a per-object lock so changes don't interleave. Subclass it for your own mod's file. |
+| [`ServerSettings`](/tavernlib-api/types/backend-server-configs/serversettings) | class | 19 | The contents of `server_settings.json`. Unknown keys are kept. Read it through `TavernManager.ServerConfig`. |
+| [`ServerSettingsConfig`](/tavernlib-api/types/backend-server-configs/serversettingsconfig) | class | 2 | The `ServerConfigFile` for `server_settings.json`. Hashes plain passwords and makes a listing token when there is none. |
+| [`TavernServer`](/tavernlib-api/types/backend-server-configs/tavernserver) | class | 14 | The contents of `tavern_server.json`: the game, auth, web and console ports. Use the checked properties (`Game`, `Auth`, `Web`, `Console`), which fall back to the defaults. |
+| [`TavernServerConfig`](/tavernlib-api/types/backend-server-configs/tavernserverconfig) | class | 1 | The `ServerConfigFile` for `tavern_server.json`. |
+| [`TrustedRepos`](/tavernlib-api/types/backend-server-configs/trustedrepos) | class | 4 | The contents of `mod_repos.json`: the mod sources reconcile may pull from. Only `modmanager addrepo` adds one. |
+| [`TrustedReposConfig`](/tavernlib-api/types/backend-server-configs/trustedreposconfig) | class | 1 | The `ServerConfigFile` for `mod_repos.json`. |
+| [`UserConfig`](/tavernlib-api/types/backend-server-configs/userconfig) | class | 4 | The contents of `users.json`: registered players, and the whitelist and blacklist. Unknown keys are kept and written back. |
+| [`UserConfig.ListConfig`](/tavernlib-api/types/backend-server-configs/userconfig-listconfig) | class | 4 | A whitelist or blacklist in `users.json`. A player matches on any of their name, id or address. |
+| [`UserConfig.User`](/tavernlib-api/types/backend-server-configs/userconfig-user) | class | 9 | One registered player in `users.json`, made the first time they join through the auth port. On a client, `EntranceMessageHandler.LocalUser` uses it for the local player's roles. |
+| [`UserConfigFile`](/tavernlib-api/types/backend-server-configs/userconfigfile) | class | 5 | The `ServerConfigFile` for `users.json`, with lookups on the last read. Use the one on `TavernManager`, not a new one. |
+| [`WhitelistRequestList`](/tavernlib-api/types/backend-server-configs/whitelistrequestlist) | class | 2 | The contents of `whitelist_requests.json`: players who asked to be whitelisted from the launcher. |
+| [`WhitelistRequestList.WhitelistRequest`](/tavernlib-api/types/backend-server-configs/whitelistrequestlist-whitelistrequest) | class | 4 | One whitelist application. |
+| [`WhitelistRequestsConfigFile`](/tavernlib-api/types/backend-server-configs/whitelistrequestsconfigfile) | class | 1 | The `ServerConfigFile` for `whitelist_requests.json`. |

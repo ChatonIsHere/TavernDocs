@@ -1,6 +1,6 @@
 ---
 title: "BodyControllerSettings"
-description: "class BodyControllerSettings in Root.Township."
+description: "Settings asset for how a player's body follows the head and hands: heading, pitch and roll from head movement, bending when moving, and smoothing speeds."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BodyControllerSettings
 
 A **class** in `Root.Township`, `Alta.Character`.
+
+Settings asset for how a player's body follows the head and hands: heading, pitch and roll from head movement, bending when moving, and smoothing speeds.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`OverridableSettings`](/game-api/types/global-m-o/overridablesettings)
@@ -60,34 +62,34 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bodyforwardbendmultiplier-2" /><code>{"float BodyForwardBendMultiplier { get; }"}</code> |  |
-| <Link id="m-bodypitchmultiplier-2" /><code>{"float BodyPitchMultiplier { get; }"}</code> |  |
-| <Link id="m-bodyrollmultiplier-2" /><code>{"float BodyRollMultiplier { get; }"}</code> |  |
-| <Link id="m-bodysidebendmultiplier-2" /><code>{"float BodySideBendMultiplier { get; }"}</code> |  |
-| <Link id="m-distancetomovedtobendangle-2" /><code>{"AnimationCurve DistanceToMovedToBendAngle { get; }"}</code> |  |
-| <Link id="m-handpositionheadingimpact-2" /><code>{"AnimationCurve HandPositionHeadingImpact { get; }"}</code> |  |
-| <Link id="m-handpositionweight-2" /><code>{"float HandPositionWeight { get; }"}</code> |  |
-| <Link id="m-handweightbydistancefrombody-2" /><code>{"AnimationCurve HandWeightByDistanceFromBody { get; }"}</code> |  |
-| <Link id="m-headforwardlimit-2" /><code>{"float HeadForwardLimit { get; }"}</code> |  |
-| <Link id="m-headheadingimpactonroll-2" /><code>{"AnimationCurve HeadHeadingImpactOnRoll { get; }"}</code> |  |
-| <Link id="m-headheadingpitchimpact-2" /><code>{"AnimationCurve HeadHeadingPitchImpact { get; }"}</code> |  |
-| <Link id="m-headingheadrotationweight-2" /><code>{"float HeadingHeadRotationWeight { get; }"}</code> |  |
-| <Link id="m-headoffset-2" /><code>{"Vector3 HeadOffset { get; }"}</code> |  |
-| <Link id="m-headpitchimpactonbodypitch-2" /><code>{"AnimationCurve HeadPitchImpactOnBodyPitch { get; }"}</code> |  |
-| <Link id="m-headpositionpitchangle-2" /><code>{"AnimationCurve HeadPositionPitchAngle { get; }"}</code> |  |
-| <Link id="m-headpositionweight-2" /><code>{"float HeadPositionWeight { get; }"}</code> |  |
-| <Link id="m-headrolltobodyrollimpact-2" /><code>{"AnimationCurve HeadRollToBodyRollImpact { get; }"}</code> |  |
-| <Link id="m-headrotationheadingimpact-2" /><code>{"AnimationCurve HeadRotationHeadingImpact { get; }"}</code> |  |
-| <Link id="m-isbendingwithmovement-2" /><code>{"bool IsBendingWithMovement { get; }"}</code> |  |
-| <Link id="m-ischangingheading-2" /><code>{"bool IsChangingHeading { get; }"}</code> |  |
-| <Link id="m-ischangingpitch-2" /><code>{"bool IsChangingPitch { get; }"}</code> |  |
-| <Link id="m-ischangingroll-2" /><code>{"bool IsChangingRoll { get; }"}</code> |  |
-| <Link id="m-minmovementtobend-2" /><code>{"float MinMovementToBend { get; }"}</code> |  |
-| <Link id="m-movementbendlerpspeed-2" /><code>{"float MovementBendLerpSpeed { get; }"}</code> |  |
-| <Link id="m-pitchheadpositionweight-2" /><code>{"float PitchHeadPositionWeight { get; }"}</code> |  |
-| <Link id="m-pitchheadrotationweight-2" /><code>{"float PitchHeadRotationWeight { get; }"}</code> |  |
-| <Link id="m-positionlerpspeed-2" /><code>{"AnimationCurve PositionLerpSpeed { get; }"}</code> |  |
-| <Link id="m-rotationlerpspeed-2" /><code>{"AnimationCurve RotationLerpSpeed { get; }"}</code> |  |
+| <Link id="m-bodyforwardbendmultiplier-2" /><code>{"float BodyForwardBendMultiplier { get; }"}</code> | How much the body bends the other way when the head nods. Default 1.5. |
+| <Link id="m-bodypitchmultiplier-2" /><code>{"float BodyPitchMultiplier { get; }"}</code> | Multiplier on body pitch. Default 1. |
+| <Link id="m-bodyrollmultiplier-2" /><code>{"float BodyRollMultiplier { get; }"}</code> | Multiplier on body roll. Default -1. |
+| <Link id="m-bodysidebendmultiplier-2" /><code>{"float BodySideBendMultiplier { get; }"}</code> | How much the body bends the other way when the head tilts sideways. Default 1.5. |
+| <Link id="m-distancetomovedtobendangle-2" /><code>{"AnimationCurve DistanceToMovedToBendAngle { get; }"}</code> | Curve from distance moved to body bend angle. |
+| <Link id="m-handpositionheadingimpact-2" /><code>{"AnimationCurve HandPositionHeadingImpact { get; }"}</code> | Curve for how much hand position turns the body. |
+| <Link id="m-handpositionweight-2" /><code>{"float HandPositionWeight { get; }"}</code> | Weight of hand position on body heading. |
+| <Link id="m-handweightbydistancefrombody-2" /><code>{"AnimationCurve HandWeightByDistanceFromBody { get; }"}</code> | Curve weighting each hand by how far it is from the body. |
+| <Link id="m-headforwardlimit-2" /><code>{"float HeadForwardLimit { get; }"}</code> | Limit on how far forward the head can lead. Default 0.2. |
+| <Link id="m-headheadingimpactonroll-2" /><code>{"AnimationCurve HeadHeadingImpactOnRoll { get; }"}</code> | Curve for how much head roll is used, by head heading. |
+| <Link id="m-headheadingpitchimpact-2" /><code>{"AnimationCurve HeadHeadingPitchImpact { get; }"}</code> | Curve for how much head pitch is used, by head heading. |
+| <Link id="m-headingheadrotationweight-2" /><code>{"float HeadingHeadRotationWeight { get; }"}</code> | Weight of head rotation on body heading. |
+| <Link id="m-headoffset-2" /><code>{"Vector3 HeadOffset { get; }"}</code> | Offset from the head to the body. |
+| <Link id="m-headpitchimpactonbodypitch-2" /><code>{"AnimationCurve HeadPitchImpactOnBodyPitch { get; }"}</code> | Curve from head pitch to body pitch. |
+| <Link id="m-headpositionpitchangle-2" /><code>{"AnimationCurve HeadPositionPitchAngle { get; }"}</code> | Curve from head position to pitch angle. |
+| <Link id="m-headpositionweight-2" /><code>{"float HeadPositionWeight { get; }"}</code> | Marked in the inspector as no longer used. |
+| <Link id="m-headrolltobodyrollimpact-2" /><code>{"AnimationCurve HeadRollToBodyRollImpact { get; }"}</code> | Curve from head roll to body roll. |
+| <Link id="m-headrotationheadingimpact-2" /><code>{"AnimationCurve HeadRotationHeadingImpact { get; }"}</code> | Curve for how much head rotation turns the body. |
+| <Link id="m-isbendingwithmovement-2" /><code>{"bool IsBendingWithMovement { get; }"}</code> | Whether the body leans when moving. Default true. |
+| <Link id="m-ischangingheading-2" /><code>{"bool IsChangingHeading { get; }"}</code> | Whether the body turns with the head and hands. Default true. |
+| <Link id="m-ischangingpitch-2" /><code>{"bool IsChangingPitch { get; }"}</code> | Whether the body pitches with the head. Default true. |
+| <Link id="m-ischangingroll-2" /><code>{"bool IsChangingRoll { get; }"}</code> | Whether the body rolls with the head. Default true. |
+| <Link id="m-minmovementtobend-2" /><code>{"float MinMovementToBend { get; }"}</code> | Smallest movement (squared) that causes a lean. |
+| <Link id="m-movementbendlerpspeed-2" /><code>{"float MovementBendLerpSpeed { get; }"}</code> | Smoothing speed for the movement lean. Default 0.2. |
+| <Link id="m-pitchheadpositionweight-2" /><code>{"float PitchHeadPositionWeight { get; }"}</code> | Weight of head position on pitch. Default 1. |
+| <Link id="m-pitchheadrotationweight-2" /><code>{"float PitchHeadRotationWeight { get; }"}</code> | Weight of head rotation on pitch. Default 1. |
+| <Link id="m-positionlerpspeed-2" /><code>{"AnimationCurve PositionLerpSpeed { get; }"}</code> | Curve for position smoothing speed. |
+| <Link id="m-rotationlerpspeed-2" /><code>{"AnimationCurve RotationLerpSpeed { get; }"}</code> | Curve for rotation smoothing speed. |
 
 ## Used in
 

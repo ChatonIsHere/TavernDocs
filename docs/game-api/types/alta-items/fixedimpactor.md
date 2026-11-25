@@ -1,6 +1,6 @@
 ---
 title: "FixedImpactor"
-description: "An impact source that only hurts while charged, such as a creature's beak or a seed projectile. The charged state syncs from server to clients."
+description: "An impact source that only hurts while charged, such as a creature's beak or a seed projectile."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

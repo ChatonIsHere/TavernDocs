@@ -1,6 +1,6 @@
 ---
 title: "SkillShrineTestingArea"
-description: "The practice area of a skill shrine. When a skill orb is opened it spawns that skill's practice objects, shows the border and moves a copy of the orb "
+description: "The practice area of a skill shrine."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

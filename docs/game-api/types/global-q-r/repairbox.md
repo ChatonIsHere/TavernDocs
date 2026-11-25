@@ -1,6 +1,6 @@
 ---
 title: "RepairBox"
-description: "A build or repair box that takes up to three item costs in docks and, when filled, repairs a static building, destroys an old object or spawns a prefa"
+description: "A build or repair box that takes up to three item costs in docks and, when filled, repairs a static building, destroys an old object or spawns a prefab."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

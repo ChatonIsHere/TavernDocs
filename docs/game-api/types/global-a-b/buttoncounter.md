@@ -1,6 +1,6 @@
 ---
 title: "ButtonCounter"
-description: "class ButtonCounter in Root.Township."
+description: "A networked number set with up and down buttons (or a throttle) and shown on text labels, such as a quantity picker."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ButtonCounter
 
 A **class** in `Root.Township`, no namespace.
+
+A networked number set with up and down buttons (or a throttle) and shown on text labels, such as a quantity picker. Either the server or a single active player owns the changes; the value is saved.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<ButtonCounterSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<ButtonCounterSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -50,31 +52,31 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activeplayer-2" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" ActivePlayer { get; set; }"}</code> |  |
-| <Link id="m-amount-2" /><code>{"int Amount { get; set; }"}</code> |  |
-| <Link id="m-cap-2" /><code>{"int Cap { get; set; }"}</code> |  |
-| <Link id="m-maximum-2" /><code>{"int Maximum { get; }"}</code> |  |
-| <Link id="m-minimum-2" /><code>{"int Minimum { get; }"}</code> |  |
-| <Link id="m-mode-2" /><code><Link to="/game-api/types/global-a-b/buttoncounter-countermode">{"ButtonCounter.CounterMode"}</Link>{" Mode { get; }"}</code> |  |
-| <Link id="m-syncmode-2" /><code><Link to="/game-api/types/global-a-b/buttoncounter-countsyncmode">{"ButtonCounter.CountSyncMode"}</Link>{" SyncMode { get; }"}</code> |  |
+| <Link id="m-activeplayer-2" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" ActivePlayer { get; set; }"}</code> | The player allowed to change it in single client mode. The server syncs it. |
+| <Link id="m-amount-2" /><code>{"int Amount { get; set; }"}</code> | The current value. Setting it clamps it, updates the labels and raises `AmountChanged`. |
+| <Link id="m-cap-2" /><code>{"int Cap { get; set; }"}</code> | Extra upper limit on top of `Maximum`. |
+| <Link id="m-maximum-2" /><code>{"int Maximum { get; }"}</code> | Highest allowed value (250 by default). |
+| <Link id="m-minimum-2" /><code>{"int Minimum { get; }"}</code> | Lowest allowed value (1 by default). |
+| <Link id="m-mode-2" /><code><Link to="/game-api/types/global-a-b/buttoncounter-countermode">{"ButtonCounter.CounterMode"}</Link>{" Mode { get; }"}</code> | Who owns changes: the server, or a single client (the active player). |
+| <Link id="m-syncmode-2" /><code><Link to="/game-api/types/global-a-b/buttoncounter-countsyncmode">{"ButtonCounter.CountSyncMode"}</Link>{" SyncMode { get; }"}</code> | Whether changes sync at once or after the buttons stop being pressed for a moment. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-amountchanged" /><code>{"event "}<Link to="/game-api/types/global-a-b/buttoncounter-amountchangedhandler">{"ButtonCounter.AmountChangedHandler"}</Link>{" AmountChanged"}</code> |  |
+| <Link id="m-amountchanged" /><code>{"event "}<Link to="/game-api/types/global-a-b/buttoncounter-amountchangedhandler">{"ButtonCounter.AmountChangedHandler"}</Link>{" AmountChanged"}</code> | Raised whenever the amount changes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-decrement" /><code>{"void Decrement()"}</code> |  |
-| <Link id="m-forceamount" /><code>{"void ForceAmount(int amount)"}</code> |  |
-| <Link id="m-increment" /><code>{"void Increment()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-load" /><code>{"void Load("}<Link to="/game-api/types/global-a-b/buttoncountersavedata">{"ButtonCounterSaveData"}</Link>{" data, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-save" /><code><Link to="/game-api/types/global-a-b/buttoncountersavedata">{"ButtonCounterSaveData"}</Link>{" Save("}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> |  |
+| <Link id="m-decrement" /><code>{"void Decrement()"}</code> | Lowers the amount by one, if this side owns changes. |
+| <Link id="m-forceamount" /><code>{"void ForceAmount(int amount)"}</code> | Sets the amount and syncs it, if this side owns changes (or on the server with no active player). |
+| <Link id="m-increment" /><code>{"void Increment()"}</code> | Raises the amount by one, if this side owns changes. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Hooks the buttons and throttle and sets up the sync messages. |
+| <Link id="m-load" /><code>{"void Load("}<Link to="/game-api/types/global-a-b/buttoncountersavedata">{"ButtonCounterSaveData"}</Link>{" data, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Restores the saved amount. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the amount and active player to a joining player. |
+| <Link id="m-save" /><code><Link to="/game-api/types/global-a-b/buttoncountersavedata">{"ButtonCounterSaveData"}</Link>{" Save("}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Saves the amount. |
 | <Link id="m-changeby" /><code>{"private void ChangeBy(int delta)"}</code> |  |
 | <Link id="m-checksync" /><code>{"private void CheckSync("}<Link to="/game-api/types/global-a-b/buttoncounter-countsyncmode">{"ButtonCounter.CountSyncMode"}</Link>{" mode)"}</code> |  |
 | <Link id="m-iscorrectmode" /><code>{"private bool IsCorrectMode()"}</code> |  |

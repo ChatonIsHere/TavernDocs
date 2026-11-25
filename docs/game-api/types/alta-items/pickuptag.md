@@ -1,6 +1,6 @@
 ---
 title: "PickupTag"
-description: "class PickupTag in Root.Township."
+description: "An empty asset used as a tag for marking and matching pickups."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupTag
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+An empty asset used as a tag for marking and matching pickups.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `ScriptableObject`

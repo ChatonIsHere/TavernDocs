@@ -1,6 +1,6 @@
 ---
 title: "ConsoleAuth.LoginPath"
-description: "An enum in TavernLib, TavernLib.Backend.RemoteConsole."
+description: "Which console a login came through: the websocket console, or another one."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **enum** in `TavernLib`, `TavernLib.Backend.RemoteConsole`.
 
-An **enum** in `TavernLib`, `TavernLib.Backend.RemoteConsole`.
+Which console a login came through: the websocket console, or another one. Named tokens only work on the websocket console.
 
 - **Listed in** [TavernLib.Backend.RemoteConsole](/tavernlib-api/types/backend-remoteconsole)
 - **Nested in** [`ConsoleAuth`](/tavernlib-api/types/backend-remoteconsole/consoleauth)

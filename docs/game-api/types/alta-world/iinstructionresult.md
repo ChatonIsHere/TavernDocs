@@ -1,6 +1,6 @@
 ---
 title: "IInstructionResult"
-description: "interface IInstructionResult in Root.Township."
+description: "The result of one world generation instruction (such as a spline or river), which the forest generator can undo."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Static`.
 
+The result of one world generation instruction (such as a spline or river), which the forest generator can undo.
+
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Derived types** [`BezierSpline`](/game-api/types/alta-utilities/bezierspline), [`StaticEnvironmentPieceInstance`](/game-api/types/alta-world/staticenvironmentpieceinstance)
 
@@ -19,7 +21,7 @@ An **interface** in `Root.Township`, `Alta.Static`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-undo" /><code>{"void Undo()"}</code> |  |
+| <Link id="m-undo" /><code>{"void Undo()"}</code> | Reverts what the instruction did. |
 
 ## Used in
 

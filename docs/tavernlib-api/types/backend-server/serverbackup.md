@@ -1,6 +1,6 @@
 ---
 title: "ServerBackup"
-description: "A static class in TavernLib, TavernLib.Backend.Server."
+description: "Timed zip backups of the server's world folder (Servers\\-1) into its Backups folder, for servers not run by the launcher."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `TavernLib`, `TavernLib.Backend.Server`.
 
-A **static class** in `TavernLib`, `TavernLib.Backend.Server`.
+Timed zip backups of the server's world folder (`Servers\-1`) into its `Backups` folder, for servers not run by the launcher. Server; started from `Tavern` unless `/launcherauth` is given.
 
 - **Listed in** [TavernLib.Backend.Server](/tavernlib-api/types/backend-server)
 - **Nested types** [`BackupResult`](/tavernlib-api/types/backend-server/serverbackup-backupresult)
@@ -35,19 +35,19 @@ A **static class** in `TavernLib`, `TavernLib.Backend.Server`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serverdirectory" /><code>{"static string ServerDirectory { get; }"}</code> |  |
+| <Link id="m-serverdirectory" /><code>{"static string ServerDirectory { get; }"}</code> | `A Township Tale\Servers\-1`, the Tavern server's world folder. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createbackup" /><code>{"internal static "}<Link to="/tavernlib-api/types/backend-server/serverbackup-backupresult">{"ServerBackup.BackupResult"}</Link>{" CreateBackup(string serverDir, DateTime now)"}</code> |  |
+| <Link id="m-createbackup" /><code>{"internal static "}<Link to="/tavernlib-api/types/backend-server/serverbackup-backupresult">{"ServerBackup.BackupResult"}</Link>{" CreateBackup(string serverDir, DateTime now)"}</code> | Internal: zips the folder (leaving out `Backups` and `Logs`) to `ServerBackup_<time>.zip`. Files in use are skipped; any other failure leaves no zip. |
 | <Link id="m-enumeratebackupfiles" /><code>{"private static IEnumerable<string> EnumerateBackupFiles(string root) (iterator)"}</code> |  |
 | <Link id="m-formatsize" /><code>{"private static string FormatSize(long bytes)"}</code> |  |
-| <Link id="m-isdue" /><code>{"internal static bool IsDue(string serverDir, float hours, DateTime nowUtc)"}</code> |  |
-| <Link id="m-listbackups" /><code>{"internal static string[] ListBackups(string serverDir)"}</code> |  |
-| <Link id="m-prune" /><code>{"internal static int Prune(string serverDir, int maxBackups)"}</code> |  |
-| <Link id="m-start" /><code>{"internal static void Start()"}</code> |  |
-| <Link id="m-tick" /><code>{"internal static void Tick()"}</code> |  |
+| <Link id="m-isdue" /><code>{"internal static bool IsDue(string serverDir, float hours, DateTime nowUtc)"}</code> | Internal: true when backups are on and the newest backup is at least that many hours old, or there is none yet. |
+| <Link id="m-listbackups" /><code>{"internal static string[] ListBackups(string serverDir)"}</code> | Internal: the finished backup zips in the `Backups` folder, oldest first. |
+| <Link id="m-prune" /><code>{"internal static int Prune(string serverDir, int maxBackups)"}</code> | Internal: deletes the oldest backups so at most that many remain (0 keeps all). Returns how many it removed. |
+| <Link id="m-start" /><code>{"internal static void Start()"}</code> | Internal: starts a timer that checks once a minute whether a backup is due. |
+| <Link id="m-tick" /><code>{"internal static void Tick()"}</code> | Internal: one check. Re-reads `server_backup_time` and `server_backup_max_backups`, backs up if due, then prunes. Never runs two at once. |
 | <Link id="m-tryreadsettings" /><code>{"private static bool TryReadSettings(out float hours, out int maxBackups)"}</code> |  |
 | <Link id="m-ziptime" /><code>{"private static DateTimeOffset ZipTime(DateTime time)"}</code> |  |

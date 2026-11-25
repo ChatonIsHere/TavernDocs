@@ -1,6 +1,6 @@
 ---
 title: "MethodSyncStruct<T>"
-description: "class MethodSyncStruct<T> in Root.Township."
+description: "A Sync for struct values that hands the read or write to a method you pass in."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MethodSyncStruct&lt;T&gt;
 
 A **class** in `Root.Township`, `Alta.Networking`.
+
+A `Sync` for struct values that hands the read or write to a method you pass in. Optionally resets the value to a new struct before each read.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`Sync<T>`](/game-api/types/alta-networking/sync-t)
@@ -32,7 +34,7 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handler" /><code>{"override "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" Handler { get; }"}</code> |  |
+| <Link id="m-handler" /><code>{"override "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" Handler { get; }"}</code> | The serialize method the sync system calls. It resets the value first when reading with `isAlwaysRecreating`, then calls your method with the current value. |
 
 ## Methods
 

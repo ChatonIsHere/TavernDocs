@@ -1,6 +1,6 @@
 ---
 title: "IAction"
-description: "interface IAction in Root.Township."
+description: "One thing an AI creature can do, as used by the action decider."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Intelligence`.
 
+One thing an AI creature can do, as used by the action decider. Its lists of target operations score the action, and `IAction<TAgent>.Start` begins it on an agent.
+
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Derived types** [`Action<TAgent>`](/game-api/types/alta-intelligence/action-tagent), [`IAction<TAgent>`](/game-api/types/alta-intelligence/iaction-intagent)
 - **Documented in** [Actions and decisions](/game-api/creatures/actions-and-decisions)
@@ -20,14 +22,14 @@ An **interface** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-calculatebasepreferred" /><code>{"List<"}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateBasePreferred { get; }"}</code> |  |
-| <Link id="m-calculatebaserequired" /><code>{"List<"}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateBaseRequired { get; }"}</code> |  |
-| <Link id="m-calculatetargetpreferred" /><code>{"List<"}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateTargetPreferred { get; }"}</code> |  |
-| <Link id="m-calculatetargetrequired" /><code>{"List<"}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateTargetRequired { get; }"}</code> |  |
-| <Link id="m-generalsettings" /><code><Link to="/game-api/types/alta-intelligence/iactionsettings">{"IActionSettings"}</Link>{" GeneralSettings { get; }"}</code> |  |
-| <Link id="m-isusingtarget" /><code>{"bool IsUsingTarget { get; }"}</code> |  |
-| <Link id="m-multiplier" /><code>{"float Multiplier { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
+| <Link id="m-calculatebasepreferred" /><code>{"List<"}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateBasePreferred { get; }"}</code> | Operations that add to or take from the action's score, without a target. Each result is weighted and summed. |
+| <Link id="m-calculatebaserequired" /><code>{"List<"}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateBaseRequired { get; }"}</code> | Operations that must pass without a target. A negative result rules the action out; others multiply its score. |
+| <Link id="m-calculatetargetpreferred" /><code>{"List<"}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateTargetPreferred { get; }"}</code> | Like `CalculateBasePreferred`, but scored against each possible target. |
+| <Link id="m-calculatetargetrequired" /><code>{"List<"}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateTargetRequired { get; }"}</code> | Like `CalculateBaseRequired`, but checked against each possible target. |
+| <Link id="m-generalsettings" /><code><Link to="/game-api/types/alta-intelligence/iactionsettings">{"IActionSettings"}</Link>{" GeneralSettings { get; }"}</code> | Shared settings such as cancel priority and whether the action can be cancelled. |
+| <Link id="m-isusingtarget" /><code>{"bool IsUsingTarget { get; }"}</code> | Whether the action is aimed at a target. |
+| <Link id="m-multiplier" /><code>{"float Multiplier { get; }"}</code> | Starting score for the action before operations are applied. |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | The action's name. |
 
 ## Used in
 

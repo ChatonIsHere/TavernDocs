@@ -1,6 +1,6 @@
 ---
 title: "ILiquidContainer"
-description: "Implemented by LiquidContainer (the usual one, a network entity), StaticLiquidContainer (a plain MonoBehaviour one, probably for fixed bodies of water"
+description: "Anything that can hold liquid in whole units: buckets, flasks, cauldrons (LiquidContainer) and endless sources such as water (StaticLiquidContainer)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Liquid`.
 
-Implemented by `LiquidContainer` (the usual one, a network entity), `StaticLiquidContainer` (a plain `MonoBehaviour` one, probably for fixed bodies of water) and whatever the drinking mouth carries.
+Anything that can hold liquid in whole units: buckets, flasks, cauldrons (`LiquidContainer`) and endless sources such as water (`StaticLiquidContainer`). Filling and emptying only works on the server.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Derived types** [`LiquidContainer`](/game-api/types/alta-stats-effects/liquidcontainer), [`StaticLiquidContainer`](/game-api/types/alta-stats-effects/staticliquidcontainer)
@@ -22,38 +22,38 @@ Implemented by `LiquidContainer` (the usual one, a network entity), `StaticLiqui
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canremovefrom" /><code>{"bool CanRemoveFrom { get; set; }"}</code> |  |
-| <Link id="m-containedliquid" /><code><Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" ContainedLiquid { get; }"}</code> |  |
-| <Link id="m-containerpriority" /><code>{"int ContainerPriority { get; }"}</code> |  |
-| <Link id="m-containersize" /><code>{"int ContainerSize { get; }"}</code> |  |
-| <Link id="m-currentcontentlevel" /><code>{"int CurrentContentLevel { get; }"}</code> |  |
-| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> |  |
-| <Link id="m-gameobject" /><code>{"GameObject gameObject { get; }"}</code> |  |
-| <Link id="m-isallowinggradualconsumption" /><code>{"bool IsAllowingGradualConsumption { get; }"}</code> |  |
-| <Link id="m-isempty" /><code>{"bool IsEmpty { get; }"}</code> |  |
-| <Link id="m-isfull" /><code>{"bool IsFull { get; }"}</code> |  |
-| <Link id="m-receivetransitionmultiplier" /><code>{"float ReceiveTransitionMultiplier { get; }"}</code> |  |
-| <Link id="m-spaceleft" /><code>{"int SpaceLeft { get; }"}</code> |  |
-| <Link id="m-surfacevisual" /><code><Link to="/game-api/types/alta-stats-effects/liquidsurfacevisual">{"LiquidSurfaceVisual"}</Link>{" SurfaceVisual { get; }"}</code> |  |
-| <Link id="m-totalliquidamountshown" /><code>{"float TotalLiquidAmountShown { get; }"}</code> |  |
+| <Link id="m-canremovefrom" /><code>{"bool CanRemoveFrom { get; set; }"}</code> | Whether liquid can be taken out of this container (unless the fill is forced). |
+| <Link id="m-containedliquid" /><code><Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" ContainedLiquid { get; }"}</code> | The liquid currently inside, or null when empty. |
+| <Link id="m-containerpriority" /><code>{"int ContainerPriority { get; }"}</code> | Higher priority containers fill lower ones they touch, not the other way round. Static sources use 1000. |
+| <Link id="m-containersize" /><code>{"int ContainerSize { get; }"}</code> | How many units the container holds. `int.MaxValue` for static sources. |
+| <Link id="m-currentcontentlevel" /><code>{"int CurrentContentLevel { get; }"}</code> | How many units are inside now. |
+| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | The network entity of the container, or null for static sources. |
+| <Link id="m-gameobject" /><code>{"GameObject gameObject { get; }"}</code> | The Unity object the container lives on. |
+| <Link id="m-isallowinggradualconsumption" /><code>{"bool IsAllowingGradualConsumption { get; }"}</code> | Whether a gradual drinker (sipping) can drink from it. False for static sources. |
+| <Link id="m-isempty" /><code>{"bool IsEmpty { get; }"}</code> | True when no liquid is inside. |
+| <Link id="m-isfull" /><code>{"bool IsFull { get; }"}</code> | True when there is no space left. |
+| <Link id="m-receivetransitionmultiplier" /><code>{"float ReceiveTransitionMultiplier { get; }"}</code> | Speeds up liquid transitions (such as heating into another liquid) while in this container. 1 by default. |
+| <Link id="m-spaceleft" /><code>{"int SpaceLeft { get; }"}</code> | Units that still fit. |
+| <Link id="m-surfacevisual" /><code><Link to="/game-api/types/alta-stats-effects/liquidsurfacevisual">{"LiquidSurfaceVisual"}</Link>{" SurfaceVisual { get; }"}</code> | The visual that shows the liquid surface, or null. |
+| <Link id="m-totalliquidamountshown" /><code>{"float TotalLiquidAmountShown { get; }"}</code> | Amount used for the fill visual: the content level plus any transitions in progress. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addfilter" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidfillfilter">{"LiquidFillFilter"}</Link>{" AddFilter"}</code> |  |
-| <Link id="m-containedliquidchanged" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidtypechangedhandler">{"LiquidTypeChangedHandler"}</Link>{" ContainedLiquidChanged"}</code> |  |
-| <Link id="m-contentlevelchanged" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidcontaineramountchangedhandler">{"LiquidContainerAmountChangedHandler"}</Link>{" ContentLevelChanged"}</code> |  |
-| <Link id="m-totalamountshownchanged" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidcontainerhandler">{"LiquidContainerHandler"}</Link>{" TotalAmountShownChanged"}</code> |  |
+| <Link id="m-addfilter" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidfillfilter">{"LiquidFillFilter"}</Link>{" AddFilter"}</code> | Event that can veto a liquid before it is added; `CanAddTo` runs it. |
+| <Link id="m-containedliquidchanged" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidtypechangedhandler">{"LiquidTypeChangedHandler"}</Link>{" ContainedLiquidChanged"}</code> | Raised when the type of liquid inside changes. |
+| <Link id="m-contentlevelchanged" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidcontaineramountchangedhandler">{"LiquidContainerAmountChangedHandler"}</Link>{" ContentLevelChanged"}</code> | Raised when the amount inside changes. |
+| <Link id="m-totalamountshownchanged" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/liquidcontainerhandler">{"LiquidContainerHandler"}</Link>{" TotalAmountShownChanged"}</code> | Raised when `TotalLiquidAmountShown` changes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canaddto" /><code>{"bool CanAddTo("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" liquid)"}</code> |  |
-| <Link id="m-fillintocontainer" /><code>{"bool FillIntoContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" otherContainer, int otherContainerSpace, bool isForced = false)"}</code> |  |
-| <Link id="m-forceempty" /><code>{"void ForceEmpty()"}</code> |  |
-| <Link id="m-iscompatiblewithothercontainer" /><code>{"bool IsCompatibleWithOtherContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" liquidContainer)"}</code> |  |
+| <Link id="m-canaddto" /><code>{"bool CanAddTo("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" liquid)"}</code> | Whether this container accepts the given liquid: the container must allow adding and no `AddFilter` handler may refuse. |
+| <Link id="m-fillintocontainer" /><code>{"bool FillIntoContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" otherContainer, int otherContainerSpace, bool isForced = false)"}</code> | Server: moves a number of units into another container. Fails if incompatible, refused, or there is not enough liquid or space. |
+| <Link id="m-forceempty" /><code>{"void ForceEmpty()"}</code> | Empties the container regardless of `CanRemoveFrom`. |
+| <Link id="m-iscompatiblewithothercontainer" /><code>{"bool IsCompatibleWithOtherContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" liquidContainer)"}</code> | True if either side is empty or both hold the same liquid. |
 
 ## Used in
 

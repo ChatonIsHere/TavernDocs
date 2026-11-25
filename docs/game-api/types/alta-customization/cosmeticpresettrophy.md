@@ -1,6 +1,6 @@
 ---
 title: "CosmeticPresetTrophy"
-description: "class CosmeticPresetTrophy in Root.Township."
+description: "A small character figure that shows a saved cosmetic preset and can be picked up and placed in a preset slot."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CosmeticPresetTrophy
 
 A **class** in `Root.Township`, `Alta.Customization`.
+
+A small character figure that shows a saved cosmetic preset and can be picked up and placed in a preset slot. Client-side (not a network entity); it burns away when destroyed.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** `MonoBehaviour`
@@ -46,28 +48,28 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" Data { get; private set; }"}</code> |  |
-| <Link id="m-dummy" /><code><Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" Dummy { get; }"}</code> |  |
-| <Link id="m-manager" /><code><Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" Manager { get; }"}</code> |  |
-| <Link id="m-pickup-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-slot" /><code><Link to="/game-api/types/alta-customization/icosmeticpresetslot">{"ICosmeticPresetSlot"}</Link>{" Slot { get; private set; }"}</code> |  |
+| <Link id="m-data" /><code><Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" Data { get; private set; }"}</code> | The cosmetic data last applied. |
+| <Link id="m-dummy" /><code><Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" Dummy { get; }"}</code> | The character dummy that wears the cosmetics. |
+| <Link id="m-manager" /><code><Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" Manager { get; }"}</code> | Customisation manager for the figure's cosmetics. Uses a trophy body in place of the standard body. |
+| <Link id="m-pickup-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> | The pickup used to hold the figure. |
+| <Link id="m-slot" /><code><Link to="/game-api/types/alta-customization/icosmeticpresetslot">{"ICosmeticPresetSlot"}</Link>{" Slot { get; private set; }"}</code> | The preset slot the figure belongs to, or null. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroyed" /><code>{"event Action<"}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{"> Destroyed"}</code> |  |
+| <Link id="m-destroyed" /><code>{"event Action<"}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{"> Destroyed"}</code> | Raised when the burn finishes, just before the object is destroyed. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"async void Apply(uint[] cosmeticData, int cosmeticBytes)"}</code> |  |
-| <Link id="m-burn" /><code>{"void Burn()"}</code> |  |
-| <Link id="m-destroy" /><code>{"void Destroy()"}</code> |  |
-| <Link id="m-forceretreat" /><code>{"void ForceRetreat()"}</code> |  |
-| <Link id="m-reenablecolliders" /><code>{"void ReenableColliders()"}</code> |  |
-| <Link id="m-registerslot" /><code>{"void RegisterSlot("}<Link to="/game-api/types/alta-customization/icosmeticpresetslot">{"ICosmeticPresetSlot"}</Link>{" slot)"}</code> |  |
+| <Link id="m-apply" /><code>{"async void Apply(uint[] cosmeticData, int cosmeticBytes)"}</code> | Loads packed cosmetic data onto the figure's dummy character and remembers it as `Data`. |
+| <Link id="m-burn" /><code>{"void Burn()"}</code> | Drops the figure, turns off its colliders and plays the burn effect, then destroys it. |
+| <Link id="m-destroy" /><code>{"void Destroy()"}</code> | Takes the figure out of its slot and burns it. |
+| <Link id="m-forceretreat" /><code>{"void ForceRetreat()"}</code> | Fades the figure out and back in at its slot, or burns it if it has no slot. |
+| <Link id="m-reenablecolliders" /><code>{"void ReenableColliders()"}</code> | Turns the figure's colliders back on. |
+| <Link id="m-registerslot" /><code>{"void RegisterSlot("}<Link to="/game-api/types/alta-customization/icosmeticpresetslot">{"ICosmeticPresetSlot"}</Link>{" slot)"}</code> | Sets the slot the figure belongs to and points its hover target at the slot. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-burnanimation" /><code>{"private IEnumerator BurnAnimation() (iterator)"}</code> |  |
 | <Link id="m-disableghosthands" /><code>{"private void DisableGhostHands("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |

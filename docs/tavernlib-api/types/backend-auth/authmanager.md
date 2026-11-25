@@ -1,6 +1,6 @@
 ---
 title: "AuthManager"
-description: "A internal class in TavernLib, TavernLib.Backend.Auth. Reach it through att-stubs' publicized assemblies or Harmony's AccessTools."
+description: "Internal: TavernLib's login server on the auth port (1762 by default)."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **internal class** in `TavernLib`, `TavernLib.Backend.Auth`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
 
-A **internal class** in `TavernLib`, `TavernLib.Backend.Auth`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+Internal: TavernLib's login server on the auth port (1762 by default). Answers pings, mod lists, `set_mods`, whitelist applications and joins, registering new players in `users.json`. Server; not run with `/launcherauth`.
 
 - **Listed in** [TavernLib.Backend.Auth](/tavernlib-api/types/backend-auth)
 - **Documented in** [AuthManager](/tavernlib-api/types/backend-auth/authmanager)

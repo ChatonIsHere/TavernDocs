@@ -1,6 +1,6 @@
 ---
 title: "ServerSelectionDisplay"
-description: "class ServerSelectionDisplay in Root.Township."
+description: "Main menu server list laid out along a spline."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerSelectionDisplay
 
 A **class** in `Root.Township`, no namespace.
+
+Main menu server list laid out along a spline. Scrolling moves the elements along it; the one nearest the selection point is selected. Client only.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`
@@ -44,24 +46,24 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentselection" /><code><Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" CurrentSelection { get; private set; }"}</code> |  |
-| <Link id="m-serverelements-2" /><code>{"List<"}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{"> ServerElements { get; }"}</code> |  |
-| <Link id="m-value" /><code>{"float Value { get; set; }"}</code> |  |
+| <Link id="m-currentselection" /><code><Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" CurrentSelection { get; private set; }"}</code> | The element at the selection point, or null. |
+| <Link id="m-serverelements-2" /><code>{"List<"}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{"> ServerElements { get; }"}</code> | The elements in display order. |
+| <Link id="m-value" /><code>{"float Value { get; set; }"}</code> | Scroll position along the spline, clamped to the list's range. Setting it stops any scroll animation. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-selectedchanged" /><code>{"event "}<Link to="/game-api/types/global-s/selectedelementchanged">{"SelectedElementChanged"}</Link>{" SelectedChanged"}</code> |  |
+| <Link id="m-selectedchanged" /><code>{"event "}<Link to="/game-api/types/global-s/selectedelementchanged">{"SelectedElementChanged"}</Link>{" SelectedChanged"}</code> | Raised with the old and new selection. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addserverelement" /><code>{"void AddServerElement("}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" serverElement)"}</code> |  |
-| <Link id="m-removeserverelement" /><code>{"void RemoveServerElement("}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" serverElement)"}</code> |  |
-| <Link id="m-selectelement" /><code>{"void SelectElement("}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" serverElement, bool isInstant)"}</code> |  |
-| <Link id="m-selectfirst" /><code>{"void SelectFirst()"}</code> |  |
+| <Link id="m-addserverelement" /><code>{"void AddServerElement("}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" serverElement)"}</code> | Adds an element to the end of the list. |
+| <Link id="m-removeserverelement" /><code>{"void RemoveServerElement("}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" serverElement)"}</code> | Removes an element, clearing the selection first if it was selected. |
+| <Link id="m-selectelement" /><code>{"void SelectElement("}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" serverElement, bool isInstant)"}</code> | Scrolls so an element sits at the selection point, instantly or animated. |
+| <Link id="m-selectfirst" /><code>{"void SelectFirst()"}</code> | Scrolls to the first element. |
 | <Link id="m-calculatestartvalue" /><code>{"private void CalculateStartValue()"}</code> |  |
 | <Link id="m-movetotime" /><code>{"private IEnumerator MoveToTime(float targetTime, float moveToTimeAnimationDuration) (iterator)"}</code> |  |
 | <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |

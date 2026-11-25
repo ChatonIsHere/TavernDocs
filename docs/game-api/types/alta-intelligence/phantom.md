@@ -1,6 +1,6 @@
 ---
 title: "Phantom"
-description: "The phantom creature agent. It switches between solid and immaterial, gets knocked back by tool hits, cracks when a mining echo goes off near it, and "
+description: "The phantom creature agent."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

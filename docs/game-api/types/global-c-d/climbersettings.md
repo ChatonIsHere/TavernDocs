@@ -1,6 +1,6 @@
 ---
 title: "ClimberSettings"
-description: "class ClimberSettings in Root.Township."
+description: "Global settings for an older climbing setup."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ClimberSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Global settings for an older climbing setup. Nothing else in this build reads it; climbing now uses `ClimbingSettings` through `ClimbingHandler`.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`GlobalSettings<ClimberSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -28,10 +30,10 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gripaccess" /><code><Link to="/game-api/types/global-i-l/infodisplayeraccess">{"InfoDisplayerAccess"}</Link>{" gripAccess"}</code> |  |
-| <Link id="m-raycasts" /><code><Link to="/game-api/types/global-c-d/climbersettings-raycast">{"ClimberSettings.Raycast"}</Link>{"[] raycasts"}</code> |  |
-| <Link id="m-strengthaccessleft" /><code><Link to="/game-api/types/global-i-l/infodisplayeraccess">{"InfoDisplayerAccess"}</Link>{" strengthAccessLeft"}</code> |  |
-| <Link id="m-strengthaccessright" /><code><Link to="/game-api/types/global-i-l/infodisplayeraccess">{"InfoDisplayerAccess"}</Link>{" strengthAccessRight"}</code> |  |
+| <Link id="m-gripaccess" /><code><Link to="/game-api/types/global-i-l/infodisplayeraccess">{"InfoDisplayerAccess"}</Link>{" gripAccess"}</code> | Debug info display for grip. |
+| <Link id="m-raycasts" /><code><Link to="/game-api/types/global-c-d/climbersettings-raycast">{"ClimberSettings.Raycast"}</Link>{"[] raycasts"}</code> | Backing field for `Raycasts`. |
+| <Link id="m-strengthaccessleft" /><code><Link to="/game-api/types/global-i-l/infodisplayeraccess">{"InfoDisplayerAccess"}</Link>{" strengthAccessLeft"}</code> | Debug info display for left hand strength. |
+| <Link id="m-strengthaccessright" /><code><Link to="/game-api/types/global-i-l/infodisplayeraccess">{"InfoDisplayerAccess"}</Link>{" strengthAccessRight"}</code> | Debug info display for right hand strength. |
 | <Link id="m-activetightgriplayer" /><code>{"private int activeTightGripLayer"}</code> |  |
 | <Link id="m-breakdistancesquared" /><code>{"private float breakDistanceSquared"}</code> |  |
 | <Link id="m-climbingfriction" /><code>{"private float climbingFriction"}</code> |  |
@@ -61,31 +63,31 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activetightgriplayer-2" /><code>{"int ActiveTightGripLayer { get; }"}</code> |  |
-| <Link id="m-breakdistancesquared-2" /><code>{"float BreakDistanceSquared { get; }"}</code> |  |
-| <Link id="m-climbingfriction-2" /><code>{"float ClimbingFriction { get; }"}</code> |  |
-| <Link id="m-climbingheight-2" /><code>{"float ClimbingHeight { get; }"}</code> |  |
-| <Link id="m-climbingmask-2" /><code>{"LayerMask ClimbingMask { get; }"}</code> |  |
-| <Link id="m-climbingstepheight-2" /><code>{"float ClimbingStepHeight { get; }"}</code> |  |
-| <Link id="m-climbvelocitymultiplier-2" /><code>{"float ClimbVelocityMultiplier { get; }"}</code> |  |
-| <Link id="m-cornerangledotgrip-2" /><code>{"AnimationCurve CornerAngleDotGrip { get; }"}</code> |  |
-| <Link id="m-cornerdotgrip-2" /><code>{"AnimationCurve CornerDotGrip { get; }"}</code> |  |
-| <Link id="m-defaultclimbable-2" /><code><Link to="/game-api/types/global-c-d/climbable">{"Climbable"}</Link>{" DefaultClimbable { get; }"}</code> |  |
-| <Link id="m-downgripoffsety-2" /><code>{"float DownGripOffsetY { get; }"}</code> |  |
-| <Link id="m-downgripoffsetz-2" /><code>{"float DownGripOffsetZ { get; }"}</code> |  |
-| <Link id="m-gripmultiplier-2" /><code>{"float GripMultiplier { get; }"}</code> |  |
-| <Link id="m-isrequiringclimbable-2" /><code>{"bool IsRequiringClimbable { get; }"}</code> |  |
-| <Link id="m-lowermultiplier-2" /><code>{"float LowerMultiplier { get; }"}</code> |  |
-| <Link id="m-mindistancetoapplyforcesquared-2" /><code>{"float MinDistanceToApplyForceSquared { get; }"}</code> |  |
-| <Link id="m-raycasts-2" /><code><Link to="/game-api/types/global-c-d/climbersettings-raycast">{"ClimberSettings.Raycast"}</Link>{"[] Raycasts { get; }"}</code> |  |
-| <Link id="m-upgripoffsety-2" /><code>{"float UpGripOffsetY { get; }"}</code> |  |
-| <Link id="m-upgripoffsetz-2" /><code>{"float UpGripOffsetZ { get; }"}</code> |  |
+| <Link id="m-activetightgriplayer-2" /><code>{"int ActiveTightGripLayer { get; }"}</code> | Layer index for tight grip checks. |
+| <Link id="m-breakdistancesquared-2" /><code>{"float BreakDistanceSquared { get; }"}</code> | Squared distance at which a grip breaks. |
+| <Link id="m-climbingfriction-2" /><code>{"float ClimbingFriction { get; }"}</code> | Friction while climbing. |
+| <Link id="m-climbingheight-2" /><code>{"float ClimbingHeight { get; }"}</code> | Height used for climbing checks. |
+| <Link id="m-climbingmask-2" /><code>{"LayerMask ClimbingMask { get; }"}</code> | Layers that can be climbed. |
+| <Link id="m-climbingstepheight-2" /><code>{"float ClimbingStepHeight { get; }"}</code> | Step height while climbing. |
+| <Link id="m-climbvelocitymultiplier-2" /><code>{"float ClimbVelocityMultiplier { get; }"}</code> | Multiplier on climbing velocity. |
+| <Link id="m-cornerangledotgrip-2" /><code>{"AnimationCurve CornerAngleDotGrip { get; }"}</code> | Curve of grip strength against corner angle. |
+| <Link id="m-cornerdotgrip-2" /><code>{"AnimationCurve CornerDotGrip { get; }"}</code> | Curve of grip strength against corner alignment. |
+| <Link id="m-defaultclimbable-2" /><code><Link to="/game-api/types/global-c-d/climbable">{"Climbable"}</Link>{" DefaultClimbable { get; }"}</code> | Climbable used for colliders that have none. |
+| <Link id="m-downgripoffsety-2" /><code>{"float DownGripOffsetY { get; }"}</code> | Vertical grip offset when gripping downwards. |
+| <Link id="m-downgripoffsetz-2" /><code>{"float DownGripOffsetZ { get; }"}</code> | Forward grip offset when gripping downwards. |
+| <Link id="m-gripmultiplier-2" /><code>{"float GripMultiplier { get; }"}</code> | Overall grip strength multiplier. |
+| <Link id="m-isrequiringclimbable-2" /><code>{"bool IsRequiringClimbable { get; }"}</code> | Whether only objects with a climbable can be climbed. |
+| <Link id="m-lowermultiplier-2" /><code>{"float LowerMultiplier { get; }"}</code> | Multiplier for enabling gravity while lowering oneself. |
+| <Link id="m-mindistancetoapplyforcesquared-2" /><code>{"float MinDistanceToApplyForceSquared { get; }"}</code> | Squared distance below which no climbing force is applied. |
+| <Link id="m-raycasts-2" /><code><Link to="/game-api/types/global-c-d/climbersettings-raycast">{"ClimberSettings.Raycast"}</Link>{"[] Raycasts { get; }"}</code> | Ray start and end points used for climbing checks. |
+| <Link id="m-upgripoffsety-2" /><code>{"float UpGripOffsetY { get; }"}</code> | Vertical grip offset when gripping upwards. |
+| <Link id="m-upgripoffsetz-2" /><code>{"float UpGripOffsetZ { get; }"}</code> | Forward grip offset when gripping upwards. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getgripstrengthmultiplier" /><code>{"float GetGripStrengthMultiplier("}<Link to="/game-api/types/global-s/splitvector3">{"SplitVector3"}</Link>{" offset)"}</code> |  |
-| <Link id="m-gethapticoverupwardalignment" /><code>{"void GetHapticOverUpwardAlignment("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller, float upwardAlignment)"}</code> |  |
-| <Link id="m-gethapticstrengthoverdistance" /><code>{"void GetHapticStrengthOverDistance("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller, float distance)"}</code> |  |
-| <Link id="m-getupwardgripmultiplier" /><code>{"float GetUpwardGripMultiplier("}<Link to="/game-api/types/global-s/splitvector3">{"SplitVector3"}</Link>{" offset)"}</code> |  |
+| <Link id="m-getgripstrengthmultiplier" /><code>{"float GetGripStrengthMultiplier("}<Link to="/game-api/types/global-s/splitvector3">{"SplitVector3"}</Link>{" offset)"}</code> | Grip strength for a hand offset, from verticality and distance curves, times `GripMultiplier`. |
+| <Link id="m-gethapticoverupwardalignment" /><code>{"void GetHapticOverUpwardAlignment("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller, float upwardAlignment)"}</code> | Plays a haptic on the controller scaled by how upward the grip is. |
+| <Link id="m-gethapticstrengthoverdistance" /><code>{"void GetHapticStrengthOverDistance("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller, float distance)"}</code> | Plays a haptic on the controller scaled by grip distance. |
+| <Link id="m-getupwardgripmultiplier" /><code>{"float GetUpwardGripMultiplier("}<Link to="/game-api/types/global-s/splitvector3">{"SplitVector3"}</Link>{" offset)"}</code> | Upward grip factor for a hand offset, from verticality and distance curves. |

@@ -1,6 +1,6 @@
 ---
 title: "FireSettings"
-description: "Effects and timings for fire."
+description: "An asset describing how a fire looks: light intensity, range and shadows, and how light and particles change as the fire burns."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Heat`.
 
-Effects and timings for fire.
+An asset describing how a fire looks: light intensity, range and shadows, and how light and particles change as the fire burns. A heat source holds one and `PooledFireEffect` applies it.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** `ScriptableObject`
@@ -44,22 +44,22 @@ Effects and timings for fire.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialparticlesscale-2" /><code>{"float InitialParticlesScale { get; }"}</code> |  |
-| <Link id="m-intensity-2" /><code>{"float Intensity { get; }"}</code> |  |
-| <Link id="m-islightbrightnessmodified-2" /><code>{"bool IsLightBrightnessModified { get; }"}</code> |  |
-| <Link id="m-isparticlesscalemodified-2" /><code>{"bool IsParticlesScaleModified { get; }"}</code> |  |
-| <Link id="m-particlesscale-2" /><code>{"AnimationCurve ParticlesScale { get; }"}</code> |  |
-| <Link id="m-particlesystemparametersoverlifetime-2" /><code>{"AnimationCurve ParticleSystemParametersOverLifetime { get; }"}</code> |  |
-| <Link id="m-progressbrightnessmultiplier-2" /><code>{"AnimationCurve ProgressBrightnessMultiplier { get; }"}</code> |  |
-| <Link id="m-range-2" /><code>{"float Range { get; }"}</code> |  |
-| <Link id="m-shadows-2" /><code>{"LightShadows Shadows { get; }"}</code> |  |
+| <Link id="m-initialparticlesscale-2" /><code>{"float InitialParticlesScale { get; }"}</code> | Particle scale when the fire effect starts. |
+| <Link id="m-intensity-2" /><code>{"float Intensity { get; }"}</code> | Light intensity of the fire. |
+| <Link id="m-islightbrightnessmodified-2" /><code>{"bool IsLightBrightnessModified { get; }"}</code> | Whether light brightness follows `ProgressBrightnessMultiplier` as the fire burns. |
+| <Link id="m-isparticlesscalemodified-2" /><code>{"bool IsParticlesScaleModified { get; }"}</code> | Whether particle scale and parameters follow their curves as the fire burns. |
+| <Link id="m-particlesscale-2" /><code>{"AnimationCurve ParticlesScale { get; }"}</code> | Curve over burn progress for particle scale. |
+| <Link id="m-particlesystemparametersoverlifetime-2" /><code>{"AnimationCurve ParticleSystemParametersOverLifetime { get; }"}</code> | Curve over burn progress for the particle system multiplier. |
+| <Link id="m-progressbrightnessmultiplier-2" /><code>{"AnimationCurve ProgressBrightnessMultiplier { get; }"}</code> | Curve over burn progress for light brightness. |
+| <Link id="m-range-2" /><code>{"float Range { get; }"}</code> | Light range of the fire. |
+| <Link id="m-shadows-2" /><code>{"LightShadows Shadows { get; }"}</code> | Shadow type of the fire's light. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-comparecurve" /><code>{"bool CompareCurve(AnimationCurve curveA, AnimationCurve curveB)"}</code> |  |
-| <Link id="m-setup" /><code>{"void Setup(float intensity, float range, LightShadows shadows, float initialParticleScale, bool isLightBrightnessModified, AnimationCurve progressBrightnessMultiplier, bool isParticlesScaleModified, AnimationCurve particlesScale, AnimationCurve particleSystemParametersOverLifetime)"}</code> |  |
+| <Link id="m-comparecurve" /><code>{"bool CompareCurve(AnimationCurve curveA, AnimationCurve curveB)"}</code> | True if two curves have the same number of keys at roughly the same times and values. |
+| <Link id="m-setup" /><code>{"void Setup(float intensity, float range, LightShadows shadows, float initialParticleScale, bool isLightBrightnessModified, AnimationCurve progressBrightnessMultiplier, bool isParticlesScaleModified, AnimationCurve particlesScale, AnimationCurve particleSystemParametersOverLifetime)"}</code> | Sets every field at once. |
 
 ## Used in
 

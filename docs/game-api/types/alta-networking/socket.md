@@ -1,6 +1,6 @@
 ---
 title: "Socket"
-description: "The game's network socket over a transport: holds all connections, pumps receiving and sending, and sends messages to many players at once. The live o"
+description: "The game's network socket over a transport: holds all connections, pumps receiving and sending, and sends messages to many players at once."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "SelectFixPatch"
-description: "A static class in TavernLib, TavernLib.Patches."
+description: "A MonoMod hook (applied in Tavern.OnLateInitializeMelon) that replaces SelectionCommandModule.FindObjects, the object search behind select find."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `TavernLib`, `TavernLib.Patches`.
 
-A **static class** in `TavernLib`, `TavernLib.Patches`.
+A MonoMod hook (applied in `Tavern.OnLateInitializeMelon`) that replaces `SelectionCommandModule.FindObjects`, the object search behind `select find`. Server.
 
 - **Listed in** [TavernLib.Patches](/tavernlib-api/types/patches)
 - **Nested types** [`FindObjects`](/tavernlib-api/types/patches/selectfixpatch-findobjects)
@@ -22,4 +22,4 @@ A **static class** in `TavernLib`, `TavernLib.Patches`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-selectionfix" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> SelectionFix("}<Link to="/tavernlib-api/types/patches/selectfixpatch-findobjects">{"SelectFixPatch.FindObjects"}</Link>{" orig, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, float distance = 10)"}</code> |  |
+| <Link id="m-selectionfix" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> SelectionFix("}<Link to="/tavernlib-api/types/patches/selectfixpatch-findobjects">{"SelectFixPatch.FindObjects"}</Link>{" orig, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, float distance = 10)"}</code> | Returns the prefab roots of every entity in every loaded chunk within `distance` of the player, or none with no player body. |

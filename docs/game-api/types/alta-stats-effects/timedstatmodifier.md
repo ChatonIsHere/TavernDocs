@@ -1,6 +1,6 @@
 ---
 title: "TimedStatModifier"
-description: "A StatModifier removed after a time. Made by ApplyTimedModifier. Cancel() stops the timer."
+description: "A stat modifier that removes itself after a duration, using the Timeline."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
 
-A `StatModifier` removed after a time. Made by `ApplyTimedModifier`. `Cancel()` stops the timer.
+A stat modifier that removes itself after a duration, using the `Timeline`. Can be sent over the network and saved.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Documented in** [Stats](/game-api/game-systems/stats)
@@ -28,24 +28,24 @@ A `StatModifier` removed after a time. Made by `ApplyTimedModifier`. `Cancel()` 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onremoved" /><code>{"Action<"}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{"> OnRemoved"}</code> |  |
+| <Link id="m-onremoved" /><code>{"Action<"}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{"> OnRemoved"}</code> | Called when `Remove` runs. Not called when a loaded or received modifier expires, since those call the modifier's own remove. |
 | <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |  |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modifier" /><code><Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" Modifier { get; private set; }"}</code> |  |
+| <Link id="m-modifier" /><code><Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" Modifier { get; private set; }"}</code> | The stat modifier being timed. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cancel" /><code>{"void Cancel()"}</code> |  |
-| <Link id="m-load" /><code>{"static "}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{" Load("}<Link to="/game-api/types/alta-stats-effects/statmanagersavedata-timedmodifier">{"StatManagerSaveData.TimedModifier"}</Link>{" data)"}</code> |  |
-| <Link id="m-remove" /><code>{"void Remove()"}</code> |  |
-| <Link id="m-save" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedata-timedmodifier">{"StatManagerSaveData.TimedModifier"}</Link>{" Save()"}</code> |  |
-| <Link id="m-serialize" /><code>{"static "}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{" Serialize("}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{" baseValue, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-cancel" /><code>{"void Cancel()"}</code> | Cancels the timed removal. The modifier stays applied. |
+| <Link id="m-load" /><code>{"static "}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{" Load("}<Link to="/game-api/types/alta-stats-effects/statmanagersavedata-timedmodifier">{"StatManagerSaveData.TimedModifier"}</Link>{" data)"}</code> | Rebuilds a timed modifier from save data. Returns null if its time has already run out. |
+| <Link id="m-remove" /><code>{"void Remove()"}</code> | Removes the modifier from its stat and calls `OnRemoved`. |
+| <Link id="m-save" /><code><Link to="/game-api/types/alta-stats-effects/statmanagersavedata-timedmodifier">{"StatManagerSaveData.TimedModifier"}</Link>{" Save()"}</code> | Returns save data with the stat, value, multiplier flag and remaining time. |
+| <Link id="m-serialize" /><code>{"static "}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{" Serialize("}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{" baseValue, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes a timed modifier on a network stream. Returns null when read with no time left. |
 
 ## Used in
 

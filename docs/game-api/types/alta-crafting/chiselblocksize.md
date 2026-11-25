@@ -1,6 +1,6 @@
 ---
 title: "ChiselBlockSize"
-description: "enum ChiselBlockSize in Root.Township."
+description: "Size of a timber block, or the size a chisel cuts: Empty, Small, Medium or Large."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChiselBlockSize
 
 An **enum** in `Root.Township`, `Alta.Carpentry`.
+
+Size of a timber block, or the size a chisel cuts: Empty, Small, Medium or Large.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 

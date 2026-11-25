@@ -1,6 +1,6 @@
 ---
 title: "PositionEvent"
-description: "class PositionEvent in Root.Township."
+description: "A serializable AltaEvent that carries a Vector3 position, for wiring in the inspector."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PositionEvent
 
 A **class** in `Root.Township`, no namespace.
+
+A serializable `AltaEvent` that carries a `Vector3` position, for wiring in the inspector.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`AltaEvent<Vector3, PositionHandler>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

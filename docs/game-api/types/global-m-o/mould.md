@@ -1,6 +1,6 @@
 ---
 title: "Mould"
-description: "A casting mould item that holds a MouldDefinition (what it casts and how many ingots it costs) and optionally a limited number of uses. Both sides; th"
+description: "A casting mould item that holds a MouldDefinition (what it casts and how many ingots it costs) and optionally a limited number of uses."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

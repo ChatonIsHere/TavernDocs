@@ -1,6 +1,6 @@
 ---
 title: "NewSaveData<TSavable, TData>"
-description: "abstract class NewSaveData<TSavable, TData> in Root.Township."
+description: "Base for the current version of a component's save data."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NewSaveData&lt;TSavable, TData&gt;
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for the current version of a component's save data. `Apply` hands the data to the component's `ISavable<TData>.Load`.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** [`SaveData`](/game-api/types/alta-world/savedata)
@@ -32,5 +34,5 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"override bool Apply(object target, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> |  |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| <Link id="m-apply" /><code>{"override bool Apply(object target, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Calls `Load` on the target with this data. Logs and returns false if loading throws. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Logs an error and returns null: the latest version has nothing to migrate to. |

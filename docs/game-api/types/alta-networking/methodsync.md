@@ -1,6 +1,6 @@
 ---
 title: "MethodSync"
-description: "These wrap a type and a handler, register the handler on the entity in their constructor, and give you SendToChunks and SendToPlayer. All in Alta.Netw"
+description: "A simple network sync: registers a handler for one entity message type on an entity's message handler."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Networking`.
 
-These wrap a type and a handler, register the handler on the entity in their constructor, and give you `SendToChunks` and `SendToPlayer`. All in `Alta.Networking`:
+A simple network sync: registers a handler for one entity message type on an entity's message handler. Calling `SendToChunks` or `SendToPlayer` (from the base `Sync`) runs the same method to write, and receivers run it to read.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`Sync`](/game-api/types/alta-networking/sync)

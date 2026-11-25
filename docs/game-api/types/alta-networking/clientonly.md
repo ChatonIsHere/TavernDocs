@@ -1,6 +1,6 @@
 ---
 title: "ClientOnly"
-description: "Alta.Networking.ClientOnly is a component that lists behaviours to switch off on a real server (renderers, audio, effects) and on everywhere else. It "
+description: "Alta.Networking.ClientOnly is a component that lists behaviours to switch off on a real server (renderers, audio, effects) and on everywhere else."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

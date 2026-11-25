@@ -1,6 +1,6 @@
 ---
 title: "EnergyBasedHeatSource"
-description: "A HeatSourceBase whose ConductToHeatPoint adds nothing. Looks unfinished."
+description: "A HeatSourceBase whose ConductToHeatPoint adds nothing."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

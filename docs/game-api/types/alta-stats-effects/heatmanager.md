@@ -1,6 +1,6 @@
 ---
 title: "HeatManager"
-description: "Burns a body: it watches a HeatPointCollection's points and, on the server, damages its HealthObject when they pass burnDamageThreshold, and lights it"
+description: "Burns a body: it watches a HeatPointCollection's points and, on the server, damages its HealthObject when they pass burnDamageThreshold, and lights it above..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

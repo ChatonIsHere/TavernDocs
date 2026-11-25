@@ -1,6 +1,6 @@
 ---
 title: "Bellows"
-description: "Part of a smelter. Updates while its handle is held and until it settles."
+description: "Part of a smelter."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

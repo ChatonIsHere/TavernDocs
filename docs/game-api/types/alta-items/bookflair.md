@@ -1,6 +1,6 @@
 ---
 title: "BookFlair"
-description: "abstract class BookFlair in Root.Township."
+description: "Base asset for a decoration (spine, edge, emblem) added to a book's model, with renderers for each LOD."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BookFlair
 
 An **abstract class** in `Root.Township`, `Alta.Pages`.
+
+Base asset for a decoration (spine, edge, emblem) added to a book's model, with renderers for each LOD.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `ScriptableObject`
@@ -32,7 +34,7 @@ An **abstract class** in `Root.Township`, `Alta.Pages`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addto" /><code>{"virtual "}<Link to="/game-api/types/alta-items/flairlodset">{"FlairLodSet"}</Link>{" AddTo(Transform parent, List<Renderer>[] lods)"}</code> |  |
+| <Link id="m-addto" /><code>{"virtual "}<Link to="/game-api/types/alta-items/flairlodset">{"FlairLodSet"}</Link>{" AddTo(Transform parent, List<Renderer>[] lods)"}</code> | Spawns the flair prefab under the given transform and adds its renderers to the book's LOD lists. |
 
 ## Used in
 

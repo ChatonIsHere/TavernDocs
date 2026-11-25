@@ -1,6 +1,6 @@
 ---
 title: "PositionRestrictor"
-description: "class PositionRestrictor in Root.Township."
+description: "Server component that keeps pickups near a spot, such as tutorial items or moulds."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PositionRestrictor
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+Server component that keeps pickups near a spot, such as tutorial items or moulds. Loose items outside the radius (or box) snap back or re-dock; held items outside it buzz, then snap back after a time.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<PositionRestrictorSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<PositionRestrictorSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -60,29 +62,29 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-radius-2" /><code>{"float Radius { get; }"}</code> |  |
+| <Link id="m-radius-2" /><code>{"float Radius { get; }"}</code> | How far a loose item may go from the spawn spot before it's returned. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clientderegister" /><code>{"void ClientDeregister("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-clientderegister-2" /><code>{"void ClientDeregister("}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" dockGroup)"}</code> |  |
-| <Link id="m-clientregister" /><code>{"void ClientRegister("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-clientregister-2" /><code>{"void ClientRegister("}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" dockGroup)"}</code> |  |
-| <Link id="m-deregister-2" /><code>{"virtual void Deregister("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-forcereset" /><code>{"void ForceReset()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-register-2" /><code>{"virtual void Register("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
+| <Link id="m-clientderegister" /><code>{"void ClientDeregister("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Client: undoes `ClientRegister`. |
+| <Link id="m-clientderegister-2" /><code>{"void ClientDeregister("}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" dockGroup)"}</code> | Client: undoes `ClientRegister`. |
+| <Link id="m-clientregister" /><code>{"void ClientRegister("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Client: limits where a tracked pickup may dock, or adds a dock group's docks to the allowed list. |
+| <Link id="m-clientregister-2" /><code>{"void ClientRegister("}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" dockGroup)"}</code> | Client: limits where a tracked pickup may dock, or adds a dock group's docks to the allowed list. |
+| <Link id="m-deregister-2" /><code>{"virtual void Deregister("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Server: stops tracking a pickup and makes it a normal saved entity again. |
+| <Link id="m-forcereset" /><code>{"void ForceReset()"}</code> | Returns every tracked pickup straight away. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Remembers the reset spot and creates the syncs. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: starts tracking child entities (or a chosen list) and their docks, if docks are used. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends the tracked items to a joining player. |
+| <Link id="m-register-2" /><code>{"virtual void Register("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Server: starts tracking a pickup. It becomes a saved child of this entity and is checked each budgeted update. |
 | <Link id="m-attemptdock" /><code>{"private bool AttemptDock("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
 | <Link id="m-checkbounds" /><code>{"private void CheckBounds()"}</code> |  |
 | <Link id="m-checkdestroy" /><code>{"private void CheckDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
 | <Link id="m-checkdistances" /><code>{"private void CheckDistances()"}</code> |  |
 | <Link id="m-childadded" /><code>{"private void ChildAdded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
 | <Link id="m-childremoved" /><code>{"private void ChildRemoved("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
-| <Link id="m-deregister" /><code>{"private void Deregister("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" groupEntity, "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" group)"}</code> |  |
+| <Link id="m-deregister" /><code>{"private void Deregister("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" groupEntity, "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" group)"}</code> | Server: stops tracking a pickup and makes it a normal saved entity again. |
 | <Link id="m-disablehaptic" /><code>{"private void DisableHaptic("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
 | <Link id="m-itemdocked" /><code>{"private void ItemDocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
 | <Link id="m-limitdocks" /><code>{"private void LimitDocks("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, ref bool result)"}</code> |  |
@@ -90,8 +92,8 @@ A **class** in `Root.Township`, `Alta.Pages`.
 | <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
 | <Link id="m-pickupdestroyed" /><code>{"private void PickupDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
 | <Link id="m-recorddock" /><code>{"private void RecordDock("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
-| <Link id="m-register" /><code>{"private void Register("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" groupEntity, "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" group)"}</code> |  |
-| <Link id="m-resetlocation-2" /><code>{"protected void ResetLocation("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, Vector3 position, bool isPlayingEffect, bool isDocking)"}</code> |  |
+| <Link id="m-register" /><code>{"private void Register("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" groupEntity, "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" group)"}</code> | Server: starts tracking a pickup. It becomes a saved child of this entity and is checked each budgeted update. |
+| <Link id="m-resetlocation-2" /><code>{"protected void ResetLocation("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, Vector3 position, bool isPlayingEffect, bool isDocking)"}</code> | Drops a pickup and, on the server, docks it back or moves it to the reset spot, with effects. |
 | <Link id="m-resetsync" /><code>{"private void ResetSync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-items/positionrestrictor-syncargs">{"PositionRestrictor.SyncArgs"}</Link>{" args)"}</code> |  |
 | <Link id="m-sethaptic-2" /><code>{"private void SetHaptic("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-items/positionrestrictor-syncargs">{"PositionRestrictor.SyncArgs"}</Link>{" args)"}</code> |  |
 | <Link id="m-stophaptic" /><code>{"private void StopHaptic("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |

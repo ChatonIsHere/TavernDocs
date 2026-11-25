@@ -1,6 +1,6 @@
 ---
 title: "PopulationSample"
-description: "One population of one PopulationDefinition in one chunk: a count, a maximum, and the entities it has spawned."
+description: "Server: one population (creatures or items of one PopulationDefinition) in one chunk."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Populations`.
 
-One population of one `PopulationDefinition` in one chunk: a count, a maximum, and the entities it has spawned.
+Server: one population (creatures or items of one `PopulationDefinition`) in one chunk. It ticks on the timeline to grow the population count towards its maximum, spawns members at free spawn points while the chunk is loaded, and tracks deaths.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Derived types** [`PopulationEvent`](/game-api/types/alta-world-generation/populationevent), [`PopulationUnityEvent`](/game-api/types/alta-world-generation/populationunityevent)
@@ -29,9 +29,9 @@ One population of one `PopulationDefinition` in one chunk: a count, a maximum, a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onpopulationdiedout" /><code><Link to="/game-api/types/alta-world-generation/populationdelegate">{"PopulationDelegate"}</Link>{" OnPopulationDiedOut"}</code> |  |
-| <Link id="m-onpopulationmaxed" /><code><Link to="/game-api/types/alta-world-generation/populationdelegate">{"PopulationDelegate"}</Link>{" OnPopulationMaxed"}</code> |  |
-| <Link id="m-onpopulationstarted" /><code><Link to="/game-api/types/alta-world-generation/populationdelegate">{"PopulationDelegate"}</Link>{" OnPopulationStarted"}</code> |  |
+| <Link id="m-onpopulationdiedout" /><code><Link to="/game-api/types/alta-world-generation/populationdelegate">{"PopulationDelegate"}</Link>{" OnPopulationDiedOut"}</code> | Called when the count reaches 0. |
+| <Link id="m-onpopulationmaxed" /><code><Link to="/game-api/types/alta-world-generation/populationdelegate">{"PopulationDelegate"}</Link>{" OnPopulationMaxed"}</code> | Called when the count reaches the maximum. |
+| <Link id="m-onpopulationstarted" /><code><Link to="/game-api/types/alta-world-generation/populationdelegate">{"PopulationDelegate"}</Link>{" OnPopulationStarted"}</code> | Called when the count goes from 0 to above 0. |
 | <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |  |
 | <Link id="m-isoneoff" /><code>{"private bool isOneOff"}</code> |  |
 | <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
@@ -41,38 +41,38 @@ One population of one `PopulationDefinition` in one chunk: a count, a maximum, a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; private set; }"}</code> |  |
-| <Link id="m-currentpopulation" /><code>{"int CurrentPopulation { get; private set; }"}</code> |  |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" Definition { get; }"}</code> |  |
-| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> |  |
-| <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; private set; }"}</code> |  |
-| <Link id="m-maximumpopulation" /><code>{"int MaximumPopulation { get; private set; }"}</code> |  |
-| <Link id="m-parent" /><code><Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" Parent { get; }"}</code> |  |
-| <Link id="m-spawnedentities" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{", "}<Link to="/game-api/types/alta-world-generation/populationitem">{"PopulationItem"}</Link>{"> SpawnedEntities { get; private set; }"}</code> |  |
+| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; private set; }"}</code> | The location chunk the population lives in. |
+| <Link id="m-currentpopulation" /><code>{"int CurrentPopulation { get; private set; }"}</code> | Population count, including members not currently spawned. |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" Definition { get; }"}</code> | The population definition. |
+| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> | Hash of the population definition. |
+| <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; private set; }"}</code> | True after `Initialize`. |
+| <Link id="m-maximumpopulation" /><code>{"int MaximumPopulation { get; private set; }"}</code> | Largest population count. |
+| <Link id="m-parent" /><code><Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" Parent { get; }"}</code> | The population folder that owns this sample. Non-creature members are chunked under its entity. |
+| <Link id="m-spawnedentities" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{", "}<Link to="/game-api/types/alta-world-generation/populationitem">{"PopulationItem"}</Link>{"> SpawnedEntities { get; private set; }"}</code> | Spawned members, with their `PopulationItem` components. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-newentityspawned" /><code>{"event "}<Link to="/game-api/types/alta-world-generation/populationitemspawnhandler">{"PopulationItemSpawnHandler"}</Link>{" NewEntitySpawned"}</code> |  |
+| <Link id="m-newentityspawned" /><code>{"event "}<Link to="/game-api/types/alta-world-generation/populationitemspawnhandler">{"PopulationItemSpawnHandler"}</Link>{" NewEntitySpawned"}</code> | Raised when a member is spawned. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addentity" /><code>{"void AddEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, int pointIndex)"}</code> |  |
-| <Link id="m-checkspawned" /><code>{"void CheckSpawned()"}</code> |  |
-| <Link id="m-destroy" /><code>{"void Destroy()"}</code> |  |
-| <Link id="m-forcekillall" /><code>{"void ForceKillAll()"}</code> |  |
-| <Link id="m-forcespawn" /><code>{"void ForceSpawn(int targetPopulation)"}</code> |  |
-| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/ispawnsystem">{"ISpawnSystem"}</Link>{" spawner)"}</code> |  |
-| <Link id="m-loadtime" /><code>{"void LoadTime(TimeSpan time)"}</code> |  |
-| <Link id="m-losemember" /><code>{"void LoseMember("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
-| <Link id="m-replace" /><code>{"void Replace("}<Link to="/game-api/types/alta-world-generation/populationitem">{"PopulationItem"}</Link>{" populationItem, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
-| <Link id="m-requestmove" /><code>{"bool RequestMove("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isAllowingSame = true)"}</code> |  |
-| <Link id="m-savetime" /><code>{"TimeSpan SaveTime()"}</code> |  |
-| <Link id="m-serializetime" /><code>{"void SerializeTime("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-addentity-2" /><code>{"private void AddEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" point)"}</code> |  |
+| <Link id="m-addentity" /><code>{"void AddEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, int pointIndex)"}</code> | Adds an existing entity as a member at the spawn point with the given index. |
+| <Link id="m-checkspawned" /><code>{"void CheckSpawned()"}</code> | Spawns members until the spawned count matches the population times the definition's spawned percentage. Gives up after three failed spawns. |
+| <Link id="m-destroy" /><code>{"void Destroy()"}</code> | Stops the population's timer. |
+| <Link id="m-forcekillall" /><code>{"void ForceKillAll()"}</code> | Destroys every spawned member, sets the population to 0 and rechecks spawning. |
+| <Link id="m-forcespawn" /><code>{"void ForceSpawn(int targetPopulation)"}</code> | Raises the population to the target (capped at the maximum) and spawns to match. |
+| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/ispawnsystem">{"ISpawnSystem"}</Link>{" spawner)"}</code> | Server: sets the chunk and spawner and starts the growth tick. |
+| <Link id="m-loadtime" /><code>{"void LoadTime(TimeSpan time)"}</code> | Restores the tick timer from a save and runs the ticks missed while unloaded. |
+| <Link id="m-losemember" /><code>{"void LoseMember("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Removes a member that died, occupies its spawn point for a while and lowers the count. |
+| <Link id="m-replace" /><code>{"void Replace("}<Link to="/game-api/types/alta-world-generation/populationitem">{"PopulationItem"}</Link>{" populationItem, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Swaps a member's entity for a new one at the same spawn point. |
+| <Link id="m-requestmove" /><code>{"bool RequestMove("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isAllowingSame = true)"}</code> | Moves a member to another random free spawn point. False if none is available. |
+| <Link id="m-savetime" /><code>{"TimeSpan SaveTime()"}</code> | Returns the tick timer for saving. |
+| <Link id="m-serializetime" /><code>{"void SerializeTime("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Obsolete: old way of saving the tick timer to a stream. |
+| <Link id="m-addentity-2" /><code>{"private void AddEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" point)"}</code> | Adds an existing entity as a member at the spawn point with the given index. |
 | <Link id="m-additemto" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationitem">{"PopulationItem"}</Link>{" AddItemTo(GameObject gameObject)"}</code> |  |
 | <Link id="m-checkpopulation" /><code>{"private void CheckPopulation()"}</code> |  |
 | <Link id="m-checktimeupdated" /><code>{"private void CheckTimeUpdated("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" changedPopulation)"}</code> |  |

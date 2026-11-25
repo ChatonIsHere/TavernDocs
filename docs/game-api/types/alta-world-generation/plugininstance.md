@@ -1,6 +1,6 @@
 ---
 title: "PluginInstance"
-description: "class PluginInstance in Root.Township."
+description: "One cave generation Plugin running for one generator (cave layer)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PluginInstance
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+One cave generation `Plugin` running for one generator (cave layer). Made by `Plugin.GetInstance`; holds the plugin's part instances and runs them on each map chunk. Both sides build the rock from the same seed.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Derived types** [`RoomFixPluginInstance`](/game-api/types/alta-world-generation/roomfixplugininstance)
@@ -32,19 +34,19 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generator" /><code><Link to="/game-api/types/alta-world-generation/igenerator">{"IGenerator"}</Link>{" Generator { get; private set; }"}</code> |  |
-| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; private set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> |  |
-| <Link id="m-plugin" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-randompluginidentifier" /><code>{"int RandomPluginIdentifier { get; private set; }"}</code> |  |
-| <Link id="m-rendergenerator" /><code><Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" RenderGenerator { get; private set; }"}</code> |  |
+| <Link id="m-generator" /><code><Link to="/game-api/types/alta-world-generation/igenerator">{"IGenerator"}</Link>{" Generator { get; private set; }"}</code> | The generator (cave layer) this instance belongs to. |
+| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; private set; }"}</code> | Whether it runs. A dynamic plugin is only enabled while the generator is generating dynamic content (on the server, the first time a layer ever generates). |
+| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> | The plugin asset's name, used in logs. |
+| <Link id="m-plugin" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" { get; private set; }"}</code> | The plugin asset. |
+| <Link id="m-randompluginidentifier" /><code>{"int RandomPluginIdentifier { get; private set; }"}</code> | A random number from the generator's seeded hash and the plugin id, the same on every machine. |
+| <Link id="m-rendergenerator" /><code><Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" RenderGenerator { get; private set; }"}</code> | The generator cast to `GenerationBase`, or null if it isn't one. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modifychunk" /><code>{"bool ModifyChunk("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-renderchunk" /><code>{"IEnumerator RenderChunk("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk) (iterator)"}</code> |  |
+| <Link id="m-modifychunk" /><code>{"bool ModifyChunk("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> | Adds this plugin's layer to the map chunk and runs its parts. Returns false and logs if a part throws. |
+| <Link id="m-renderchunk" /><code>{"IEnumerator RenderChunk("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk) (iterator)"}</code> | Coroutine that renders the plugin's output for a map chunk, if enabled. |
 
 ## Used in
 

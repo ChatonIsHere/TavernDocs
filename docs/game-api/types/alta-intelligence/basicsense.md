@@ -1,6 +1,6 @@
 ---
 title: "BasicSense"
-description: "A fixed value the target gives off, from its BasicSenseSet. Up to 32 of these."
+description: "A fixed value the target gives off, from its BasicSenseSet."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

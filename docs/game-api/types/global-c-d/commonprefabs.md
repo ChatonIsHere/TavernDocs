@@ -1,6 +1,6 @@
 ---
 title: "CommonPrefabs"
-description: "class CommonPrefabs in Root.Township."
+description: "Global settings asset with shortcuts to prefabs and items used everywhere: pouch, coin, pages and the player template."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CommonPrefabs
 
 A **class** in `Root.Township`, no namespace.
+
+Global settings asset with shortcuts to prefabs and items used everywhere: pouch, coin, pages and the player template. Read through the static properties.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`GlobalSettings<CommonPrefabs>`](/game-api/types/assembly-other/globalsettings-t)
@@ -40,11 +42,11 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-blurshader-2" /><code>{"static Shader BlurShader { get; }"}</code> |  |
-| <Link id="m-coinprefab-2" /><code>{"static "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" CoinPrefab { get; }"}</code> |  |
-| <Link id="m-duplicatepageitem-2" /><code>{"static "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" DuplicatePageItem { get; }"}</code> |  |
-| <Link id="m-pageitem-2" /><code>{"static "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" PageItem { get; }"}</code> |  |
-| <Link id="m-playertemplate-2" /><code>{"static "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" PlayerTemplate { get; }"}</code> |  |
-| <Link id="m-pouchdocksettings-2" /><code>{"static "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" PouchDockSettings { get; }"}</code> |  |
-| <Link id="m-pouchitem-2" /><code>{"static "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" PouchItem { get; }"}</code> |  |
-| <Link id="m-pouchprefab" /><code>{"static "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" PouchPrefab { get; }"}</code> |  |
+| <Link id="m-blurshader-2" /><code>{"static Shader BlurShader { get; }"}</code> | The blur shader. |
+| <Link id="m-coinprefab-2" /><code>{"static "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" CoinPrefab { get; }"}</code> | The coin prefab. |
+| <Link id="m-duplicatepageitem-2" /><code>{"static "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" DuplicatePageItem { get; }"}</code> | Item for a duplicate page. |
+| <Link id="m-pageitem-2" /><code>{"static "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" PageItem { get; }"}</code> | Item for a page. |
+| <Link id="m-playertemplate-2" /><code>{"static "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" PlayerTemplate { get; }"}</code> | The player prefab template. |
+| <Link id="m-pouchdocksettings-2" /><code>{"static "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" PouchDockSettings { get; }"}</code> | Dock settings used by pouches. |
+| <Link id="m-pouchitem-2" /><code>{"static "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" PouchItem { get; }"}</code> | The pouch item. Docking it is ignored by several systems, such as repair boxes. |
+| <Link id="m-pouchprefab" /><code>{"static "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" PouchPrefab { get; }"}</code> | Network prefab of the pouch item, used by `SpawnHelper.SpawnPouchOrPickup`. |

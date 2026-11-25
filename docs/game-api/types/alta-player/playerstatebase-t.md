@@ -1,6 +1,6 @@
 ---
 title: "PlayerStateBase<T>"
-description: "Alta.PlayerStates.PlayerStateBase (and PlayerStateBase<T> for a decorating state with base T). What a state can override:"
+description: "A player state that decorates a base state of type T, for example SpiritState on PlayingState."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **abstract class** in `Root.Township`, `Alta.PlayerStates`.
 
-`Alta.PlayerStates.PlayerStateBase` (and `PlayerStateBase<T>` for a decorating state with base `T`). What a state can override:
+A player state that decorates a base state of type `T`, for example `SpiritState` on `PlayingState`.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`PlayerStateBase`](/game-api/types/alta-player/playerstatebase)
@@ -29,4 +29,4 @@ An **abstract class** in `Root.Township`, `Alta.PlayerStates`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-basestate" /><code>{"T BaseState { get; set; }"}</code> |  |
+| <Link id="m-basestate" /><code>{"T BaseState { get; set; }"}</code> | The typed base state. Setting it in the constructor also sets the untyped one. |

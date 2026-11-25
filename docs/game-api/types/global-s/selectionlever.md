@@ -1,6 +1,6 @@
 ---
 title: "SelectionLever"
-description: "A lever with several positions."
+description: "A lever with a fixed number of positions between a min and max angle."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-A lever with several positions.
+A lever with a fixed number of positions between a min and max angle. Snaps to the nearest position on release and fires events. Not networked by itself.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`
@@ -55,25 +55,25 @@ A lever with several positions.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentangle-2" /><code>{"float CurrentAngle { get; }"}</code> |  |
-| <Link id="m-currentselection" /><code>{"int CurrentSelection { get; private set; }"}</code> |  |
-| <Link id="m-handle-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" Handle { get; }"}</code> |  |
-| <Link id="m-maxangle-2" /><code>{"float MaxAngle { get; }"}</code> |  |
-| <Link id="m-minangle-2" /><code>{"float MinAngle { get; }"}</code> |  |
-| <Link id="m-numberofoptions-2" /><code>{"int NumberOfOptions { get; }"}</code> |  |
-| <Link id="m-selection" /><code>{"float[] Selection { get; }"}</code> |  |
+| <Link id="m-currentangle-2" /><code>{"float CurrentAngle { get; }"}</code> | The lever's angle while being held, clamped to the range. |
+| <Link id="m-currentselection" /><code>{"int CurrentSelection { get; private set; }"}</code> | Index of the position the lever is set to. |
+| <Link id="m-handle-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" Handle { get; }"}</code> | The `Pickup` the player grabs to move the lever. |
+| <Link id="m-maxangle-2" /><code>{"float MaxAngle { get; }"}</code> | Angle of the last position. |
+| <Link id="m-minangle-2" /><code>{"float MinAngle { get; }"}</code> | Angle of the first position. |
+| <Link id="m-numberofoptions-2" /><code>{"int NumberOfOptions { get; }"}</code> | How many positions the lever has. |
+| <Link id="m-selection" /><code>{"float[] Selection { get; }"}</code> | The angle of each position. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-selectionchanged" /><code>{"event Action<"}<Link to="/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{", int, int> SelectionChanged"}</code> |  |
+| <Link id="m-selectionchanged" /><code>{"event Action<"}<Link to="/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{", int, int> SelectionChanged"}</code> | Raised with the lever, old index and new index when the selection changes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setlevertoindex" /><code>{"void SetLeverToIndex(int index)"}</code> |  |
+| <Link id="m-setlevertoindex" /><code>{"void SetLeverToIndex(int index)"}</code> | Moves the lever to a position, clamped to the range, and fires the events if it changed. |
 | <Link id="m-calculateperindex" /><code>{"private void CalculatePerIndex()"}</code> |  |
 | <Link id="m-clamplever-2" /><code>{"private void ClampLever()"}</code> |  |
 | <Link id="m-filterwhenactive" /><code>{"private void FilterWhenActive("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |  |

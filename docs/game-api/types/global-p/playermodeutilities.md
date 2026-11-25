@@ -1,6 +1,6 @@
 ---
 title: "PlayerModeUtilities"
-description: "PlayerMode (what this client will join as), OverrideMode (set it before joining to join as something else; Rover does), IsNormalPlayerMode(mode) (fals"
+description: "PlayerMode (what this client will join as), OverrideMode (set it before joining to join as something else; Rover does), IsNormalPlayerMode(mode) (false for..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

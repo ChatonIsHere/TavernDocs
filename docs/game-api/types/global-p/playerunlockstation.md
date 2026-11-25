@@ -1,6 +1,6 @@
 ---
 title: "PlayerUnlockStation"
-description: "A station in the world. Its UnlockStationType is Start, Normal, Unlock or Completion."
+description: "A station in a climbing challenge (PlayerUnlock): start, orb checkpoint, completion, or a permanent unlock."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-A station in the world. Its `UnlockStationType` is `Start`, `Normal`, `Unlock` or `Completion`.
+A station in a climbing challenge (`PlayerUnlock`): start, orb checkpoint, completion, or a permanent unlock. Server side; touching it sets the player's checkpoint and adds its orb.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<PlayerUnlockStationSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<PlayerUnlockStationSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -52,19 +52,19 @@ A station in the world. Its `UnlockStationType` is `Start`, `Normal`, `Unlock` o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-orbindex-2" /><code>{"int OrbIndex { get; }"}</code> |  |
-| <Link id="m-stationtype-2" /><code><Link to="/game-api/types/global-p/playerunlockstation-unlockstationtype">{"PlayerUnlockStation.UnlockStationType"}</Link>{" StationType { get; }"}</code> |  |
+| <Link id="m-orbindex-2" /><code>{"int OrbIndex { get; }"}</code> | Orb this station gives, or -1. Normal stations need the previous orb before you can use them. |
+| <Link id="m-stationtype-2" /><code><Link to="/game-api/types/global-p/playerunlockstation-unlockstationtype">{"PlayerUnlockStation.UnlockStationType"}</Link>{" StationType { get; }"}</code> | Normal, Start, Completion or Unlock. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-inject" /><code>{"void Inject("}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" newAnalyticsService)"}</code> |  |
-| <Link id="m-interact" /><code>{"async void Interact("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-playerhasallorbs" /><code>{"bool PlayerHasAllOrbs("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up sync messages and the interaction filter. Clients set up the hand hover hint. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: spawns the orb visual and handles the hand hover activation. |
+| <Link id="m-inject" /><code>{"void Inject("}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" newAnalyticsService)"}</code> | Receives the analytics service. |
+| <Link id="m-interact" /><code>{"async void Interact("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Server: with a cooldown and optional delay, runs the station for the player (start, checkpoint and orb, or completion) and sends the result to them. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the station's unlock, orb index and type to a joining player. |
+| <Link id="m-playerhasallorbs" /><code>{"bool PlayerHasAllOrbs("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | True if the player has this station's orb. On a completion station that orb index stands for the last one. |
 | <Link id="m-addorb" /><code>{"private void AddOrb("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
 | <Link id="m-cancelunlock" /><code>{"private void CancelUnlock("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-p/playerunlockstation-networkeffect">{"PlayerUnlockStation.NetworkEffect"}</Link>{" effect)"}</code> |  |
 | <Link id="m-caninteractwithunlockstation" /><code>{"private bool CanInteractWithUnlockStation("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |

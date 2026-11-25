@@ -1,6 +1,6 @@
 ---
 title: "PooledObjectDefinitionBase"
-description: "Asset for a pooled object (usually a visual effect) with helpers to spawn it at transforms, hits or positions. Most helpers do nothing on a headless s"
+description: "Asset for a pooled object (usually a visual effect) with helpers to spawn it at transforms, hits or positions."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

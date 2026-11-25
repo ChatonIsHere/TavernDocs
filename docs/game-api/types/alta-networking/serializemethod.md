@@ -1,6 +1,6 @@
 ---
 title: "SerializeMethod"
-description: "delegate SerializeMethod in Root.Township."
+description: "Handler for a network message: gets the sending or receiving player and the stream, and both reads and writes the message with the same calls."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SerializeMethod
 
 A **delegate** in `Root.Township`, `Alta.Networking`.
+
+Handler for a network message: gets the sending or receiving player and the stream, and both reads and writes the message with the same calls. The generic version also gets a typed argument.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MulticastDelegate`
@@ -25,9 +27,9 @@ A **delegate** in `Root.Township`, `Alta.Networking`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, AsyncCallback callback, object object)"}</code> |  |
-| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(IAsyncResult result)"}</code> |  |
-| <Link id="m-invoke" /><code>{"virtual void Invoke("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, AsyncCallback callback, object object)"}</code> | Standard delegate method for async invoke. |
+| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(IAsyncResult result)"}</code> | Standard delegate method for async invoke. |
+| <Link id="m-invoke" /><code>{"virtual void Invoke("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Calls the handler. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "MiningEcho"
-description: "class MiningEcho in Root.Township."
+description: "Progression skill: a strong pickaxe hit sends out an echo pulse whose radius grows over time, shown to the player and passed to IListenToMiningEcho..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MiningEcho
 
 A **class** in `Root.Township`, no namespace.
+
+Progression skill: a strong pickaxe hit sends out an echo pulse whose radius grows over time, shown to the player and passed to `IListenToMiningEcho` listeners (probably to reveal ore).
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** [`PickupBasedSkill`](/game-api/types/global-p/pickupbasedskill)
@@ -44,15 +46,15 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deregister" /><code>{"override void Deregister("}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> |  |
-| <Link id="m-executewithhit" /><code>{"override void ExecuteWithHit("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool, bool hasHit = true)"}</code> |  |
-| <Link id="m-register" /><code>{"override void Register("}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> |  |
-| <Link id="m-seteffectactive" /><code>{"override void SetEffectActive("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, bool isEffectActive)"}</code> |  |
-| <Link id="m-startlistening" /><code>{"static void StartListening("}<Link to="/game-api/types/global-i-l/ilistentominingecho">{"IListenToMiningEcho"}</Link>{" listener)"}</code> |  |
-| <Link id="m-stoplistening" /><code>{"static void StopListening("}<Link to="/game-api/types/global-i-l/ilistentominingecho">{"IListenToMiningEcho"}</Link>{" listener)"}</code> |  |
-| <Link id="m-validateexecutionhit" /><code>{"override bool ValidateExecutionHit("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> |  |
-| <Link id="m-validatepickup" /><code>{"override bool ValidatePickup("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" pickupHandler)"}</code> |  |
+| <Link id="m-deregister" /><code>{"override void Deregister("}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> | Forgets the input and stops listening for its tool's collisions. |
+| <Link id="m-executewithhit" /><code>{"override void ExecuteWithHit("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool, bool hasHit = true)"}</code> | Starts an echo at the hit point for the player's level, then runs the normal skill execution. |
+| <Link id="m-register" /><code>{"override void Register("}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> | Remembers the input for its tool. |
+| <Link id="m-seteffectactive" /><code>{"override void SetEffectActive("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, bool isEffectActive)"}</code> | Starts or stops listening for the tool's collisions. |
+| <Link id="m-startlistening" /><code>{"static void StartListening("}<Link to="/game-api/types/global-i-l/ilistentominingecho">{"IListenToMiningEcho"}</Link>{" listener)"}</code> | Adds a listener that gets every running echo's centre and radius each frame. |
+| <Link id="m-stoplistening" /><code>{"static void StopListening("}<Link to="/game-api/types/global-i-l/ilistentominingecho">{"IListenToMiningEcho"}</Link>{" listener)"}</code> | Removes a listener. |
+| <Link id="m-validateexecutionhit" /><code>{"override bool ValidateExecutionHit("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | Always false. The skill fires from tool collisions instead. |
+| <Link id="m-validatepickup" /><code>{"override bool ValidatePickup("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" pickupHandler)"}</code> | True if the held tool has all the target channels. |
 | <Link id="m-collided" /><code>{"private void Collided(Collision collision, bool isHitting, "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> |  |
-| <Link id="m-effectsrequested" /><code>{"protected override void EffectsRequested("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" targetEntity, "}<Link to="/game-api/types/global-t-x/toolbasedskillstatus">{"ToolBasedSkillStatus"}</Link>{" status, bool isLocalPlayer)"}</code> |  |
-| <Link id="m-serializeinternal" /><code>{"protected override void SerializeInternal("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-effectsrequested" /><code>{"protected override void EffectsRequested("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" targetEntity, "}<Link to="/game-api/types/global-t-x/toolbasedskillstatus">{"ToolBasedSkillStatus"}</Link>{" status, bool isLocalPlayer)"}</code> | For the local player, shows the echolocation effect at the hit for the used level. |
+| <Link id="m-serializeinternal" /><code>{"protected override void SerializeInternal("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | When consumed, sends the level and whether the intensity upgrade skill is owned. |
 | <Link id="m-updateechoes-2" /><code>{"private static void UpdateEchoes()"}</code> |  |

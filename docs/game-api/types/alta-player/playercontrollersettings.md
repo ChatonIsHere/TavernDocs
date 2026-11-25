@@ -1,6 +1,6 @@
 ---
 title: "PlayerControllerSettings"
-description: "class PlayerControllerSettings in Root.Township."
+description: "An asset holding the settings for the parts of a player's body rig: body, clavicles, elbows, eye focus, hands and ghost hands."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerControllerSettings
 
 A **class** in `Root.Township`, `Alta.Character`.
+
+An asset holding the settings for the parts of a player's body rig: body, clavicles, elbows, eye focus, hands and ghost hands.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `ScriptableObject`
@@ -44,14 +46,14 @@ A **class** in `Root.Township`, `Alta.Character`.
 | --- | --- |
 | <Link id="m-bodycontrollersettings-2" /><code><Link to="/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" "}<Link to="/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" { get; }"}</code> |  |
 | <Link id="m-claviclecontrollersettings-2" /><code><Link to="/game-api/types/alta-player/claviclecontrollersettings">{"ClavicleControllerSettings"}</Link>{" "}<Link to="/game-api/types/alta-player/claviclecontrollersettings">{"ClavicleControllerSettings"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-controllersettings-2" /><code><Link to="/game-api/types/global-e-h/handsettings">{"HandSettings"}</Link>{" ControllerSettings { get; }"}</code> |  |
+| <Link id="m-controllersettings-2" /><code><Link to="/game-api/types/global-e-h/handsettings">{"HandSettings"}</Link>{" ControllerSettings { get; }"}</code> | Hand settings for the controllers. A separate field from `HandSettings`. |
 | <Link id="m-elbowcontrollersettings-2" /><code><Link to="/game-api/types/alta-player/elbowcontrollersettings">{"ElbowControllerSettings"}</Link>{" "}<Link to="/game-api/types/alta-player/elbowcontrollersettings">{"ElbowControllerSettings"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-elbowdatapointset-2" /><code><Link to="/game-api/types/alta-player/elbowdatapointset">{"ElbowDataPointSet"}</Link>{" "}<Link to="/game-api/types/alta-player/elbowdatapointset">{"ElbowDataPointSet"}</Link>{" { get; set; }"}</code> |  |
+| <Link id="m-elbowdatapointset-2" /><code><Link to="/game-api/types/alta-player/elbowdatapointset">{"ElbowDataPointSet"}</Link>{" "}<Link to="/game-api/types/alta-player/elbowdatapointset">{"ElbowDataPointSet"}</Link>{" { get; set; }"}</code> | Recorded elbow data points used to place the elbows. |
 | <Link id="m-eyefocusdetectionsettings-2" /><code><Link to="/game-api/types/alta-player/eyefocuscontrollersettings">{"EyeFocusControllerSettings"}</Link>{" EyeFocusDetectionSettings { get; }"}</code> |  |
 | <Link id="m-ghosthandsettings-2" /><code><Link to="/game-api/types/global-e-h/ghosthandsettings">{"GhostHandSettings"}</Link>{" "}<Link to="/game-api/types/global-e-h/ghosthandsettings">{"GhostHandSettings"}</Link>{" { get; }"}</code> |  |
 | <Link id="m-handsettings-2" /><code><Link to="/game-api/types/global-e-h/handsettings">{"HandSettings"}</Link>{" "}<Link to="/game-api/types/global-e-h/handsettings">{"HandSettings"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-isdebugging-2" /><code>{"bool IsDebugging { get; }"}</code> |  |
-| <Link id="m-saveraycastlayer-2" /><code>{"LayerMask SaveRaycastLayer { get; }"}</code> |  |
+| <Link id="m-isdebugging-2" /><code>{"bool IsDebugging { get; }"}</code> | Debug flag set in the asset. |
+| <Link id="m-saveraycastlayer-2" /><code>{"LayerMask SaveRaycastLayer { get; }"}</code> | Layer mask set in the asset for save raycasts. |
 
 ## Used in
 

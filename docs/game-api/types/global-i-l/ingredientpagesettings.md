@@ -1,6 +1,6 @@
 ---
 title: "IngredientPageSettings"
-description: "class IngredientPageSettings in Root.Township."
+description: "Global settings for the generated pages that describe a cooking ingredient."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IngredientPageSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Global settings for the generated pages that describe a cooking ingredient. Same fields as `EdiblePageSettings`, used by `IngredientPageProvider`.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`GlobalSettings<IngredientPageSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -28,15 +30,15 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-borderglyphscale" /><code>{"float borderGlyphScale"}</code> |  |
-| <Link id="m-burntglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" burntGlyph"}</code> |  |
-| <Link id="m-circlesegment10scale" /><code>{"float circleSegment10Scale"}</code> |  |
-| <Link id="m-circlesegment1scale" /><code>{"float circleSegment1Scale"}</code> |  |
-| <Link id="m-cookedglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" cookedGlyph"}</code> |  |
-| <Link id="m-cookingstageposition" /><code><Link to="/game-api/types/global-e-h/glyphposition">{"GlyphPosition"}</Link>{" cookingStagePosition"}</code> |  |
-| <Link id="m-effects" /><code><Link to="/game-api/types/global-e-h/glyphposition">{"GlyphPosition"}</Link>{"[] effects"}</code> |  |
-| <Link id="m-itemposition" /><code><Link to="/game-api/types/global-e-h/glyphposition">{"GlyphPosition"}</Link>{" itemPosition"}</code> |  |
-| <Link id="m-ripeglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" ripeGlyph"}</code> |  |
-| <Link id="m-template" /><code><Link to="/game-api/types/alta-items/page">{"Page"}</Link>{" template"}</code> |  |
-| <Link id="m-unripeglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" unripeGlyph"}</code> |  |
-| <Link id="m-valuepersegment" /><code>{"float valuePerSegment"}</code> |  |
+| <Link id="m-borderglyphscale" /><code>{"float borderGlyphScale"}</code> | Scale of the border glyph drawn around each effect glyph. |
+| <Link id="m-burntglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" burntGlyph"}</code> | Glyph shown for a burnt item. |
+| <Link id="m-circlesegment10scale" /><code>{"float circleSegment10Scale"}</code> | Scale of the circle segment glyph that stands for ten. |
+| <Link id="m-circlesegment1scale" /><code>{"float circleSegment1Scale"}</code> | Scale of the circle segment glyph that stands for one. |
+| <Link id="m-cookedglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" cookedGlyph"}</code> | Glyph shown for a cooked item. |
+| <Link id="m-cookingstageposition" /><code><Link to="/game-api/types/global-e-h/glyphposition">{"GlyphPosition"}</Link>{" cookingStagePosition"}</code> | Where the cooking stage glyph goes. |
+| <Link id="m-effects" /><code><Link to="/game-api/types/global-e-h/glyphposition">{"GlyphPosition"}</Link>{"[] effects"}</code> | Where each effect goes, in order. |
+| <Link id="m-itemposition" /><code><Link to="/game-api/types/global-e-h/glyphposition">{"GlyphPosition"}</Link>{" itemPosition"}</code> | Where the item's own glyph goes. |
+| <Link id="m-ripeglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" ripeGlyph"}</code> | Glyph shown for a ripe item. |
+| <Link id="m-template" /><code><Link to="/game-api/types/alta-items/page">{"Page"}</Link>{" template"}</code> | The page whose glyphs every ingredient page starts with. |
+| <Link id="m-unripeglyph" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" unripeGlyph"}</code> | Glyph shown for an unripe item. |
+| <Link id="m-valuepersegment" /><code>{"float valuePerSegment"}</code> | Effect strength per circle segment. |

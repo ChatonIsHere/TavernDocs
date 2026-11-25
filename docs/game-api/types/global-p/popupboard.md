@@ -1,6 +1,6 @@
 ---
 title: "PopupBoard"
-description: "A world space popup with a title and a message. Destroys its own GameObject when closed, unless set not to."
+description: "A world space popup with a title and a message."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

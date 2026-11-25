@@ -1,6 +1,6 @@
 ---
 title: "TrustedRepos"
-description: "A class in TavernLib, TavernLib.Backend.Server.Configs."
+description: "The contents of mod_repos.json: the mod sources reconcile may pull from."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
-A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
+The contents of `mod_repos.json`: the mod sources reconcile may pull from. Only `modmanager addrepo` adds one.
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/tavernlib-api/types/backend-server-configs)
 - **Derived types** [`TrustedReposConfig`](/tavernlib-api/types/backend-server-configs/trustedreposconfig)
@@ -28,11 +28,11 @@ A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-repos" /><code>{"Dictionary<string, string> Repos { get; set; }"}</code> |  |
-| <Link id="m-schema" /><code>{"int Schema { get; set; }"}</code> |  |
+| <Link id="m-repos" /><code>{"Dictionary<string, string> Repos { get; set; }"}</code> | Added sources, by shorthand (`user/repo`) to raw-content base URL. |
+| <Link id="m-schema" /><code>{"int Schema { get; set; }"}</code> | The file's schema number, 1. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-effectiverepourls" /><code>{"List<string> EffectiveRepoUrls()"}</code> |  |
+| <Link id="m-effectiverepourls" /><code>{"List<string> EffectiveRepoUrls()"}</code> | The default TavernMods source first, then every other added source. |

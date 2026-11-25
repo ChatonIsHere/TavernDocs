@@ -1,6 +1,6 @@
 ---
 title: "HealthObject"
-description: "A NetworkEntityBehaviour on creatures, players, breakable things, ore and trees. PlayerHealth and FakePlayerHealth derive from it."
+description: "Gives an entity health."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-A `NetworkEntityBehaviour` on creatures, players, breakable things, ore and trees. `PlayerHealth` and `FakePlayerHealth` derive from it.
+Gives an entity health. Listens to its impact detectors, applies damage on the server through the `health` stat of its `StatManager`, and syncs death to clients. A component on creatures, players and breakable objects.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour)
@@ -38,8 +38,8 @@ A `NetworkEntityBehaviour` on creatures, players, breakable things, ore and tree
 | <Link id="m-effecthandler" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" effectHandler"}</code> |  |
 | <Link id="m-hascrippledamageprotection" /><code>{"private bool hasCrippleDamageProtection"}</code> |  |
 | <Link id="m-hasdamageprotection" /><code>{"private bool hasDamageProtection"}</code> |  |
-| <Link id="m-healthstat" /><code>{"protected "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" healthStat"}</code> |  |
-| <Link id="m-impactdetectors" /><code>{"protected List<"}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{"> impactDetectors"}</code> |  |
+| <Link id="m-healthstat" /><code>{"protected "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" healthStat"}</code> | Cached health stat backing `HealthStat`. |
+| <Link id="m-impactdetectors" /><code>{"protected List<"}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{"> impactDetectors"}</code> | Serialized list of impact detectors behind `ImpactDetectors`. |
 | <Link id="m-impacttypemultipliers" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{", float> impactTypeMultipliers"}</code> |  |
 | <Link id="m-iscombatant" /><code>{"private bool isCombatant"}</code> |  |
 | <Link id="m-multipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attacktypemultiplier">{"AttackTypeMultiplier"}</Link>{"[] multipliers"}</code> |  |
@@ -51,48 +51,48 @@ A `NetworkEntityBehaviour` on creatures, players, breakable things, ore and tree
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-core-2" /><code>{"Transform Core { get; }"}</code> |  |
-| <Link id="m-cripplestat-2" /><code><Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" CrippleStat { get; }"}</code> |  |
-| <Link id="m-destroyed-2" /><code><Link to="/game-api/types/global-e-h/healthobjectevent">{"HealthObjectEvent"}</Link>{" Destroyed { get; }"}</code> |  |
-| <Link id="m-effecthandler-2" /><code><Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-hascripplestat" /><code>{"bool HasCrippleStat { get; private set; }"}</code> |  |
-| <Link id="m-health" /><code>{"float Health { get; set; }"}</code> |  |
-| <Link id="m-impactdetectors-2" /><code>{"IEnumerable ImpactDetectors { get; }"}</code> |  |
-| <Link id="m-iscombatant-2" /><code>{"bool IsCombatant { get; }"}</code> |  |
-| <Link id="m-lasthit" /><code><Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" LastHit { get; protected set; }"}</code> |  |
-| <Link id="m-maxhealth" /><code>{"float MaxHealth { get; set; }"}</code> |  |
-| <Link id="m-multipliers-2" /><code><Link to="/game-api/types/global-a-b/attacktypemultiplier">{"AttackTypeMultiplier"}</Link>{"[] Multipliers { get; }"}</code> |  |
-| <Link id="m-positionhandler" /><code><Link to="/game-api/types/global-p/positionfromoriginhandler">{"PositionFromOriginHandler"}</Link>{" PositionHandler { get; private set; }"}</code> |  |
-| <Link id="m-statmanager-2" /><code><Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-analyticsrecord" /><code>{"protected virtual "}<Link to="/game-api/types/global-e-h/healthobject-deathanalytics">{"HealthObject.DeathAnalytics"}</Link>{" AnalyticsRecord { get; }"}</code> |  |
-| <Link id="m-healthstat-2" /><code>{"protected "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" HealthStat { get; }"}</code> |  |
+| <Link id="m-core-2" /><code>{"Transform Core { get; }"}</code> | The central transform of the object, used as its main position. |
+| <Link id="m-cripplestat-2" /><code><Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" CrippleStat { get; }"}</code> | The cripple health stat, if the stat manager has one. |
+| <Link id="m-destroyed-2" /><code><Link to="/game-api/types/global-e-h/healthobjectevent">{"HealthObjectEvent"}</Link>{" Destroyed { get; }"}</code> | Unity event invoked when the object is killed, on both sides. |
+| <Link id="m-effecthandler-2" /><code><Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" { get; }"}</code> | The alchemy effect handler for this object, if set. |
+| <Link id="m-hascripplestat" /><code>{"bool HasCrippleStat { get; private set; }"}</code> | True if a cripple health stat was found on initialize. |
+| <Link id="m-health" /><code>{"float Health { get; set; }"}</code> | Current health value. Setting it sets the stat's base value. |
+| <Link id="m-impactdetectors-2" /><code>{"IEnumerable ImpactDetectors { get; }"}</code> | The impact detectors that feed hits into this object. |
+| <Link id="m-iscombatant-2" /><code>{"bool IsCombatant { get; }"}</code> | If true, a player hitting this object is marked as having caused combat. |
+| <Link id="m-lasthit" /><code><Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" LastHit { get; protected set; }"}</code> | The most recent damage data, used to work out who or what killed it. |
+| <Link id="m-maxhealth" /><code>{"float MaxHealth { get; set; }"}</code> | Maximum health. Setting it keeps the object at full health if it was full. |
+| <Link id="m-multipliers-2" /><code><Link to="/game-api/types/global-a-b/attacktypemultiplier">{"AttackTypeMultiplier"}</Link>{"[] Multipliers { get; }"}</code> | Damage multipliers per attack type (blunt, slash and so on). |
+| <Link id="m-positionhandler" /><code><Link to="/game-api/types/global-p/positionfromoriginhandler">{"PositionFromOriginHandler"}</Link>{" PositionHandler { get; private set; }"}</code> | Gives the object's position relative to the world origin. |
+| <Link id="m-statmanager-2" /><code><Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" { get; }"}</code> | The stat manager that holds health and related stats. |
+| <Link id="m-analyticsrecord" /><code>{"protected virtual "}<Link to="/game-api/types/global-e-h/healthobject-deathanalytics">{"HealthObject.DeathAnalytics"}</Link>{" AnalyticsRecord { get; }"}</code> | Death analytics data (victim, killer name, position) built from the last hit. |
+| <Link id="m-healthstat-2" /><code>{"protected "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" HealthStat { get; }"}</code> | The `health` stat. If there is no stat manager or no such stat, a temporary stat with max 1 is made. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-healthchanged" /><code>{"event "}<Link to="/game-api/types/global-e-h/healthobject-healthchangedhandler">{"HealthObject.HealthChangedHandler"}</Link>{" HealthChanged"}</code> |  |
-| <Link id="m-killed" /><code>{"event Action<"}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{"> Killed"}</code> |  |
-| <Link id="m-onhit" /><code>{"event "}<Link to="/game-api/types/global-i-l/impacthandler">{"ImpactHandler"}</Link>{" OnHit"}</code> |  |
+| <Link id="m-healthchanged" /><code>{"event "}<Link to="/game-api/types/global-e-h/healthobject-healthchangedhandler">{"HealthObject.HealthChangedHandler"}</Link>{" HealthChanged"}</code> | Raised when health changes, with the change amount (negative for damage) and the last hit. |
+| <Link id="m-killed" /><code>{"event Action<"}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{"> Killed"}</code> | Raised when the object dies, with the killing hit. |
+| <Link id="m-onhit" /><code>{"event "}<Link to="/game-api/types/global-i-l/impacthandler">{"ImpactHandler"}</Link>{" OnHit"}</code> | Raised after each valid hit has been applied. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-detectimpact" /><code>{"void DetectImpact("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |  |
-| <Link id="m-die" /><code>{"void Die()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-onkilled" /><code>{"void OnKilled()"}</code> |  |
-| <Link id="m-onvalidate2" /><code>{"virtual void OnValidate2()"}</code> |  |
-| <Link id="m-receivedamage" /><code>{"virtual void ReceiveDamage(float healthDamage, float crippleDamage, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" impact = null)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
-| <Link id="m-handleobjectreachedzerohealth" /><code>{"protected virtual void HandleObjectReachedZeroHealth()"}</code> |  |
-| <Link id="m-markassailant" /><code>{"protected void MarkAssailant("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" assailant, float damage)"}</code> |  |
-| <Link id="m-markassailant-2" /><code>{"private void MarkAssailant("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" assailant, float damage)"}</code> |  |
+| <Link id="m-detectimpact" /><code>{"void DetectImpact("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> | Handles a valid hit from a detector: applies attack type and armour multipliers, then `ReceiveDamage`, then raises `OnHit`. |
+| <Link id="m-die" /><code>{"void Die()"}</code> | Sets health to zero, which kills the object on the server. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up death sync and looks up the cripple and damage protection stats. |
+| <Link id="m-onkilled" /><code>{"void OnKilled()"}</code> | Raises `Killed`. On the server also fires the console kill event, counts a task kill for the wielder and sends death to clients. |
+| <Link id="m-onvalidate2" /><code>{"virtual void OnValidate2()"}</code> | Empty validation hook for subclasses. |
+| <Link id="m-receivedamage" /><code>{"virtual void ReceiveDamage(float healthDamage, float crippleDamage, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" impact = null)"}</code> | Server: lowers health and cripple health, divided by any damage protection stats. Does nothing once health is zero. |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Points each listed impact detector's `HealthTarget` at this object. |
+| <Link id="m-handleobjectreachedzerohealth" /><code>{"protected virtual void HandleObjectReachedZeroHealth()"}</code> | Server: called when health hits zero. Calls `OnKilled` by default; subclasses override it (for example to down a player). |
+| <Link id="m-markassailant" /><code>{"protected void MarkAssailant("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" assailant, float damage)"}</code> | Tells the attacking player's character they caused combat, with the distance and damage. |
+| <Link id="m-markassailant-2" /><code>{"private void MarkAssailant("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" assailant, float damage)"}</code> | Tells the attacking player's character they caused combat, with the distance and damage. |
 | <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
 | <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-onhealthchanged" /><code>{"protected void OnHealthChanged(float changeAmount, "}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |  |
-| <Link id="m-start" /><code>{"protected virtual void Start()"}</code> |  |
+| <Link id="m-onhealthchanged" /><code>{"protected void OnHealthChanged(float changeAmount, "}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> | Raises `HealthChanged` with a given amount and hit. |
+| <Link id="m-start" /><code>{"protected virtual void Start()"}</code> | Builds the attack type multiplier table and starts listening to the health stat. |
 | <Link id="m-statchanged" /><code>{"private void StatChanged("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |  |
 | <Link id="m-syncdeath-2" /><code>{"private void SyncDeath("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 

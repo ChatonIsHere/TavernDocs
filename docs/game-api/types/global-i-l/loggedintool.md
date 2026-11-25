@@ -1,6 +1,6 @@
 ---
 title: "LoggedInTool"
-description: "abstract class LoggedInTool in Root.Township."
+description: "Base for menu tools that only work while logged in to Alta's account services, such as the shop and cosmetics interfaces."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LoggedInTool
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for menu tools that only work while logged in to Alta's account services, such as the shop and cosmetics interfaces. It follows `LoginManager`'s login and logout events.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,7 +28,7 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loggedin" /><code>{"protected abstract void LoggedIn()"}</code> |  |
-| <Link id="m-loggedout" /><code>{"protected abstract void LoggedOut()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> |  |
-| <Link id="m-start" /><code>{"protected virtual void Start()"}</code> |  |
+| <Link id="m-loggedin" /><code>{"protected abstract void LoggedIn()"}</code> | Called on login, and on `Start` if already logged in. |
+| <Link id="m-loggedout" /><code>{"protected abstract void LoggedOut()"}</code> | Called on logout. |
+| <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> | Unsubscribes from the login events. |
+| <Link id="m-start" /><code>{"protected virtual void Start()"}</code> | Subscribes to the login events. |

@@ -1,6 +1,6 @@
 ---
 title: "UpdateHandler"
-description: "delegate UpdateHandler in Root.Township."
+description: "A no-argument callback, used for the IK update events on CharacterIKController."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UpdateHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+A no-argument callback, used for the IK update events on `CharacterIKController`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `MulticastDelegate`

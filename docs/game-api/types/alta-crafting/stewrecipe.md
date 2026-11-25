@@ -1,6 +1,6 @@
 ---
 title: "StewRecipe"
-description: "Assets under Cooking/Stew Recipes."
+description: "A stew recipe asset: which liquids and ingredients make it, its base prefab and how it changes the stew's effects."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Cooking`.
 
-Assets under `Cooking/Stew Recipes`.
+A stew recipe asset: which liquids and ingredients make it, its base prefab and how it changes the stew's effects. Looked up by hash; also a page basis for recipe books.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`HashedGeneralValue<StewRecipe>`](/game-api/types/assembly-other/hashedgeneralvalue-t), [`IPageBasis`](/game-api/types/alta-items/ipagebasis), [`ICraftingIngredientProvider`](/game-api/types/global-i-l/icraftingingredientprovider)
@@ -43,30 +43,30 @@ Assets under `Cooking/Stew Recipes`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-baseversionhash-2" /><code>{"uint BaseVersionHash { get; }"}</code> |  |
-| <Link id="m-effectmodifiers-2" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] EffectModifiers { get; }"}</code> |  |
-| <Link id="m-effectmodifiersmap-2" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", float> EffectModifiersMap { get; }"}</code> |  |
-| <Link id="m-extraeffects-2" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] ExtraEffects { get; }"}</code> |  |
-| <Link id="m-isdisabledonsimpleserver" /><code>{"bool IsDisabledOnSimpleServer { get; }"}</code> |  |
-| <Link id="m-prefabquantities" /><code>{"Dictionary<uint, int> PrefabQuantities { get; }"}</code> |  |
-| <Link id="m-stewingredients-2" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/stewingredientbase">{"StewIngredientBase"}</Link>{"> StewIngredients { get; }"}</code> |  |
+| <Link id="m-baseversionhash-2" /><code>{"uint BaseVersionHash { get; }"}</code> | Hash of the prefab for this recipe's stew. |
+| <Link id="m-effectmodifiers-2" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] EffectModifiers { get; }"}</code> | Multipliers for effects this recipe changes. |
+| <Link id="m-effectmodifiersmap-2" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", float> EffectModifiersMap { get; }"}</code> | `EffectModifiers` as a dictionary by effect, built on first read. |
+| <Link id="m-extraeffects-2" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] ExtraEffects { get; }"}</code> | Effects the recipe adds on top of its ingredients. |
+| <Link id="m-isdisabledonsimpleserver" /><code>{"bool IsDisabledOnSimpleServer { get; }"}</code> | Always false. |
+| <Link id="m-prefabquantities" /><code>{"Dictionary<uint, int> PrefabQuantities { get; }"}</code> | Ingredient counts by prefab hash. Only counts cookables whose prefab name contains "Ripe". |
+| <Link id="m-stewingredients-2" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/stewingredientbase">{"StewIngredientBase"}</Link>{"> StewIngredients { get; }"}</code> | The ingredients the recipe needs, one entry each. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createpage" /><code><Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" CreatePage(int preferredProvider)"}</code> |  |
-| <Link id="m-findstewrecipeforingredients" /><code>{"static "}<Link to="/game-api/types/alta-crafting/stewrecipe">{"StewRecipe"}</Link>{" FindStewRecipeForIngredients("}<Link to="/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" liquid, IEnumerable<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> ingredients)"}</code> |  |
-| <Link id="m-gethash" /><code>{"uint GetHash()"}</code> |  |
-| <Link id="m-getproviderid" /><code>{"int GetProviderID(int preferredProvider)"}</code> |  |
-| <Link id="m-getsteweffects" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"> GetStewEffects("}<Link to="/game-api/types/alta-crafting/stewcontentarguments">{"StewContentArguments"}</Link>{" arguments) (iterator)"}</code> |  |
+| <Link id="m-createpage" /><code><Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" CreatePage(int preferredProvider)"}</code> | Makes the recipe's page data with the stew recipe page provider. |
+| <Link id="m-findstewrecipeforingredients" /><code>{"static "}<Link to="/game-api/types/alta-crafting/stewrecipe">{"StewRecipe"}</Link>{" FindStewRecipeForIngredients("}<Link to="/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" liquid, IEnumerable<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> ingredients)"}</code> | Best scoring recipe for a liquid and ingredient list (same count, every ingredient matched), or null. |
+| <Link id="m-gethash" /><code>{"uint GetHash()"}</code> | The recipe's hash. |
+| <Link id="m-getproviderid" /><code>{"int GetProviderID(int preferredProvider)"}</code> | Identifier of the stew recipe page provider. |
+| <Link id="m-getsteweffects" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"> GetStewEffects("}<Link to="/game-api/types/alta-crafting/stewcontentarguments">{"StewContentArguments"}</Link>{" arguments) (iterator)"}</code> | Works out a stew's final effects: global, ingredients, liquid, recipe extras and garnishes, then recipe modifiers. Zero strengths are skipped. |
 | <Link id="m-checkforduplicates" /><code>{"private void CheckForDuplicates("}<Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] effectsList, string listName)"}</code> |  |
 | <Link id="m-getingredients" /><code>{"private Dictionary<uint, int> GetIngredients()"}</code> |  |
 | <Link id="m-getmodifiedstrength" /><code>{"private static float GetModifiedStrength("}<Link to="/game-api/types/alta-crafting/stewrecipe">{"StewRecipe"}</Link>{" currentRecipe, "}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effect, float multiplier)"}</code> |  |
 | <Link id="m-handleeffectapplication" /><code>{"private static void HandleEffectApplication(Dictionary<"}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", float> combined, IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"> effectApplications, float multiplier)"}</code> |  |
 | <Link id="m-handlegarnishmodifiers" /><code>{"private static void HandleGarnishModifiers(Dictionary<"}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", float> combined, List<"}<Link to="/game-api/types/alta-crafting/cookinggarnish">{"CookingGarnish"}</Link>{"> garnishes)"}</code> |  |
 | <Link id="m-isvalidingredientlist" /><code>{"private bool IsValidIngredientList(IEnumerable<"}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> ingredients, out int recipeScore)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor: fills in a default liquid and logs duplicate effects. |
 
 ## Used in
 

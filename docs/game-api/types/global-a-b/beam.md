@@ -1,6 +1,6 @@
 ---
 title: "Beam"
-description: "One light beam cast from an ILightEmitter, tracking which ILightDetector it is hitting. Plain class, not a component."
+description: "One light beam cast from an ILightEmitter, tracking which ILightDetector it is hitting."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

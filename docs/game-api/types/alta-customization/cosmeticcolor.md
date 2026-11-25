@@ -1,6 +1,6 @@
 ---
 title: "CosmeticColor"
-description: "class CosmeticColor in Root.Township."
+description: "A hashed asset holding a three-colour set for cosmetics, written into material colour slots A or B."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CosmeticColor
 
 A **class** in `Root.Township`, `Alta.Customization`.
+
+A hashed asset holding a three-colour set for cosmetics, written into material colour slots A or B.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** [`HashedGeneralValue<CosmeticColor>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -41,17 +43,17 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-color0-2" /><code>{"Color Color0 { get; }"}</code> |  |
-| <Link id="m-color1-2" /><code>{"Color Color1 { get; }"}</code> |  |
-| <Link id="m-color2-2" /><code>{"Color Color2 { get; }"}</code> |  |
+| <Link id="m-color0-2" /><code>{"Color Color0 { get; }"}</code> | First colour of the set. |
+| <Link id="m-color1-2" /><code>{"Color Color1 { get; }"}</code> | Second colour of the set. |
+| <Link id="m-color2-2" /><code>{"Color Color2 { get; }"}</code> | Third colour of the set. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applya" /><code>{"void ApplyA(Material material)"}</code> |  |
-| <Link id="m-applyb" /><code>{"void ApplyB(Material material)"}</code> |  |
-| <Link id="m-togradient" /><code>{"Gradient ToGradient()"}</code> |  |
+| <Link id="m-applya" /><code>{"void ApplyA(Material material)"}</code> | Writes the three colours to the material's `_ColorA1` to `_ColorA3` properties. |
+| <Link id="m-applyb" /><code>{"void ApplyB(Material material)"}</code> | Writes the three colours to the material's `_ColorB1` to `_ColorB3` properties. |
+| <Link id="m-togradient" /><code>{"Gradient ToGradient()"}</code> | Builds a fully opaque gradient from the three colours, using each colour's alpha as its key position. |
 | <Link id="m-copycolors" /><code>{"private void CopyColors()"}</code> |  |
 | <Link id="m-resetalphas" /><code>{"private void ResetAlphas()"}</code> |  |
 

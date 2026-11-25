@@ -1,6 +1,6 @@
 ---
 title: "ForestResetPatches.SaveQueuedSeed"
-description: "A static class in TavernLib, TavernLib.Patches."
+description: "Postfixes ForestGenerator's explicit Save method so the save holds a queued reset's new seed, and the next start builds that forest."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `TavernLib`, `TavernLib.Patches`.
 
-A **static class** in `TavernLib`, `TavernLib.Patches`.
+Postfixes `ForestGenerator`'s explicit `Save` method so the save holds a queued reset's new seed, and the next start builds that forest. Server.
 
 - **Listed in** [TavernLib.Patches](/tavernlib-api/types/patches)
 - **Nested in** [`ForestResetPatches`](/tavernlib-api/types/patches/forestresetpatches)
@@ -23,5 +23,5 @@ A **static class** in `TavernLib`, `TavernLib.Patches`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-postfix" /><code>{"static void Postfix("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" __instance, "}<Link to="/game-api/types/alta-world-generation/forestgeneratorsavedata">{"ForestGeneratorSaveData"}</Link>{" __result)"}</code> |  |
-| <Link id="m-targetmethod" /><code>{"static MethodBase TargetMethod()"}</code> |  |
+| <Link id="m-postfix" /><code>{"static void Postfix("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" __instance, "}<Link to="/game-api/types/alta-world-generation/forestgeneratorsavedata">{"ForestGeneratorSaveData"}</Link>{" __result)"}</code> | Writes the queued seed into the returned `ForestGeneratorSaveData`, when a reset is queued. |
+| <Link id="m-targetmethod" /><code>{"static MethodBase TargetMethod()"}</code> | Finds `ForestGenerator`'s explicit `Save` method that returns `ForestGeneratorSaveData`. |

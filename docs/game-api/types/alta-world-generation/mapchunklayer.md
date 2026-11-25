@@ -1,6 +1,6 @@
 ---
 title: "MapChunkLayer"
-description: "class MapChunkLayer in Root.Township."
+description: "A 3D grid of float values for one cave generator plugin over one map chunk, with an overflow border around the chunk on the horizontal axes."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MapChunkLayer
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+A 3D grid of float values for one cave generator plugin over one map chunk, with an overflow border around the chunk on the horizontal axes. Plugin parts read and write it with the indexer.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** `IDisposable`
@@ -35,22 +37,22 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" Chunk { get; }"}</code> |  |
-| <Link id="m-item" /><code>{"float this[int x, int y, int z] { get; set; }"}</code> |  |
-| <Link id="m-layeroverflowxz" /><code>{"int LayerOverflowXZ { get; }"}</code> |  |
-| <Link id="m-maxxz" /><code>{"int MaxXZ { get; }"}</code> |  |
-| <Link id="m-maxy" /><code>{"int MaxY { get; }"}</code> |  |
-| <Link id="m-minxz" /><code>{"int MinXZ { get; }"}</code> |  |
-| <Link id="m-miny" /><code>{"int MinY { get; }"}</code> |  |
-| <Link id="m-nonzero" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/mapchunklayer-value">{"MapChunkLayer.Value"}</Link>{"> NonZero { get; private set; }"}</code> |  |
-| <Link id="m-plugin" /><code><Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" Plugin { get; }"}</code> |  |
+| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" Chunk { get; }"}</code> | The map chunk the layer belongs to. |
+| <Link id="m-item" /><code>{"float this[int x, int y, int z] { get; set; }"}</code> | Value at x, y, z. X and z can go from `MinXZ` to `MaxXZ` (into the overflow border). |
+| <Link id="m-layeroverflowxz" /><code>{"int LayerOverflowXZ { get; }"}</code> | Width of the extra border around the chunk, from the plugin settings. |
+| <Link id="m-maxxz" /><code>{"int MaxXZ { get; }"}</code> | Exclusive upper bound for x and z: chunk size plus the overflow. |
+| <Link id="m-maxy" /><code>{"int MaxY { get; }"}</code> | Exclusive upper bound for y: the plugin's layer height. |
+| <Link id="m-minxz" /><code>{"int MinXZ { get; }"}</code> | Lowest x and z index: minus the overflow. |
+| <Link id="m-miny" /><code>{"int MinY { get; }"}</code> | Lowest y index: 0. |
+| <Link id="m-nonzero" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/mapchunklayer-value">{"MapChunkLayer.Value"}</Link>{"> NonZero { get; private set; }"}</code> | The list from the last `CreateAllNonZeroList` call. |
+| <Link id="m-plugin" /><code><Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" Plugin { get; }"}</code> | The plugin instance that owns this layer. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createallnonzerolist" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/mapchunklayer-value">{"MapChunkLayer.Value"}</Link>{"> CreateAllNonZeroList()"}</code> |  |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
+| <Link id="m-createallnonzerolist" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/mapchunklayer-value">{"MapChunkLayer.Value"}</Link>{"> CreateAllNonZeroList()"}</code> | Builds and stores the list of cells above 0, if the plugin asks for one. Returns null otherwise. |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Drops the value grid. |
 
 ## Used in
 

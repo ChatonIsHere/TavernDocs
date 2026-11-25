@@ -59,7 +59,7 @@ Armour changes a body's heat points' conductivity (`ArmorDefinition.Conductivity
 | Member | What it does |
 | --- | --- |
 | `void TryLight()` | Lights it if it can. |
-| `void CheckExtinguish(Interactor, Pickup, PickupDock)` | Rechecks fuel and goes out if there's none. Used as a dock event handler. |
+| `void CheckExtinguish(Interactor, Pickup, PickupDock)` | If lit, goes out when the item is put in a dock that doesn't allow fire, or when called with no dock (as on disable). Used as a dock event handler. |
 | `void ForceProgress(float progress)` | Sets burn progress. |
 | `static void SimulateSparks(Vector3 position, float radius, float chance)` | Tries to light flammable things near a point. |
 

@@ -1,6 +1,6 @@
 ---
 title: "PopulationItem"
-description: "A component the population adds to everything it spawns."
+description: "Marks an entity as spawned by a PopulationSample, with the spawn point it used."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Populations`.
 
-A component the population adds to everything it spawns.
+Marks an entity as spawned by a `PopulationSample`, with the spawn point it used. Server side.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** `MonoBehaviour`, [`IPopulationItem`](/game-api/types/alta-world-generation/ipopulationitem)
@@ -29,16 +29,16 @@ A component the population adds to everything it spawns.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> |  |
-| <Link id="m-population" /><code><Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" Population { get; set; }"}</code> |  |
-| <Link id="m-spawnpoint" /><code><Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" { get; set; }"}</code> |  |
+| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> | The spawned entity. |
+| <Link id="m-population" /><code><Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" Population { get; set; }"}</code> | The population sample that spawned it. |
+| <Link id="m-spawnpoint" /><code><Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" { get; set; }"}</code> | The spawn point the item was spawned at. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> |  |
-| <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
+| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | Makes the entity work out its chunk from its own position. |
+| <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Asks the population to swap this item for another entity. |
 | <Link id="m-getpositionchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" GetPositionChunk("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
 
 ## Used in

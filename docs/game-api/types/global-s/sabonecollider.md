@@ -1,6 +1,6 @@
 ---
 title: "SABoneCollider"
-description: "Editor tool component (from the SAColliderBuilder asset) that holds settings for generating colliders on a bone, and marks the object's name with  or "
+description: "Editor tool component (from the SAColliderBuilder asset) that holds settings for generating colliders on a bone, and marks the object's name with  or + when..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

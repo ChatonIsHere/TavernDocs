@@ -1,6 +1,6 @@
 ---
 title: "PlayerEventStep"
-description: "class PlayerEventStep in Root.Township."
+description: "A micro tutorial step completed by player events, with a setting for how far back to look for events that already happened."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerEventStep
 
 A **class** in `Root.Township`, `ATT.MicroTutorial.Steps`.
+
+A micro tutorial step completed by player events, with a setting for how far back to look for events that already happened.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`MicroTutorialStep`](/game-api/types/game-other-namespaces/microtutorialstep)
@@ -32,4 +34,4 @@ A **class** in `Root.Township`, `ATT.MicroTutorial.Steps`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playereventsearchdepth-2" /><code>{"override int PlayerEventSearchDepth { get; }"}</code> |  |
+| <Link id="m-playereventsearchdepth-2" /><code>{"override int PlayerEventSearchDepth { get; }"}</code> | How many earlier steps' player events can complete this step. 1 by default; -1 searches all earlier steps. |

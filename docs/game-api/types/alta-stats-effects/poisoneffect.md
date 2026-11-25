@@ -1,6 +1,6 @@
 ---
 title: "PoisonEffect"
-description: "Positive strength adds a poison stack, negative removes one. Needs target.Health."
+description: "Positive strength adds a poison stack, negative removes one."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

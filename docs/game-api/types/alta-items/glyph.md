@@ -1,6 +1,6 @@
 ---
 title: "Glyph"
-description: "class Glyph in Root.Township."
+description: "A hashed sprite asset that can be stamped onto a page (book or paper)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Glyph
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+A hashed sprite asset that can be stamped onto a page (book or paper). Stored under `Pages/Glyphs`; placement is held by its nested `Positioning` class.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`HashedGeneralValue<Glyph>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -29,18 +31,18 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-positioninterval" /><code>{"const float PositionInterval"}</code> |  |
-| <Link id="m-rotationinterval" /><code>{"const float RotationInterval"}</code> |  |
-| <Link id="m-scaleinterval" /><code>{"const float ScaleInterval"}</code> |  |
-| <Link id="m-scalemaximum" /><code>{"const float ScaleMaximum"}</code> |  |
-| <Link id="m-scaleminimum" /><code>{"const float ScaleMinimum"}</code> |  |
+| <Link id="m-positioninterval" /><code>{"const float PositionInterval"}</code> | Step a glyph's position is rounded to and synced at (0.01 of page width). |
+| <Link id="m-rotationinterval" /><code>{"const float RotationInterval"}</code> | Step a glyph's rotation is rounded to, in degrees (10). |
+| <Link id="m-scaleinterval" /><code>{"const float ScaleInterval"}</code> | Step a glyph's scale is rounded to (0.1). |
+| <Link id="m-scalemaximum" /><code>{"const float ScaleMaximum"}</code> | Largest allowed glyph scale (4.5). |
+| <Link id="m-scaleminimum" /><code>{"const float ScaleMinimum"}</code> | Smallest allowed glyph scale (0.25). |
 | <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> |  |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sprite-2" /><code>{"Sprite Sprite { get; }"}</code> |  |
+| <Link id="m-sprite-2" /><code>{"Sprite Sprite { get; }"}</code> | The sprite drawn for this glyph. |
 
 ## Used in
 

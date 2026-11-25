@@ -1,6 +1,6 @@
 ---
 title: "Curve"
-description: "class Curve in Root.Township."
+description: "A hashed asset wrapping an AnimationCurve, stored under StatDefinition/Curves."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Curve
 
 A **class** in `Root.Township`, no namespace.
+
+A hashed asset wrapping an `AnimationCurve`, stored under `StatDefinition/Curves`.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`HashedGeneralValue<Curve>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -34,7 +36,7 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-evaluate" /><code>{"float Evaluate(float time)"}</code> |  |
+| <Link id="m-evaluate" /><code>{"float Evaluate(float time)"}</code> | Returns the curve's value at a time. |
 
 ## Used in
 

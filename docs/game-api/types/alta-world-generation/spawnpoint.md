@@ -1,6 +1,6 @@
 ---
 title: "SpawnPoint"
-description: "One place, with Position, Rotation and IsFree."
+description: "A position and rotation a population can spawn at, with a free flag and an optional busy-until time."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Populations`.
 
-One place, with `Position`, `Rotation` and `IsFree`.
+A position and rotation a population can spawn at, with a free flag and an optional busy-until time.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Documented in** [Populations and spawners](/game-api/world/populations)
@@ -34,16 +34,16 @@ One place, with `Position`, `Rotation` and `IsFree`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-index" /><code>{"int Index { get; private set; }"}</code> |  |
-| <Link id="m-isfree-2" /><code>{"bool IsFree { get; set; }"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 Position { get; private set; }"}</code> |  |
-| <Link id="m-rotation" /><code>{"Quaternion Rotation { get; private set; }"}</code> |  |
+| <Link id="m-index" /><code>{"int Index { get; private set; }"}</code> | The point's index in its list. |
+| <Link id="m-isfree-2" /><code>{"bool IsFree { get; set; }"}</code> | True when marked free and no busy time is running. Setting it clears the busy time. |
+| <Link id="m-position" /><code>{"Vector3 Position { get; private set; }"}</code> | Spawn position. |
+| <Link id="m-rotation" /><code>{"Quaternion Rotation { get; private set; }"}</code> | Spawn rotation. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-markoccupiedforduration" /><code>{"void MarkOccupiedForDuration(float duration)"}</code> |  |
+| <Link id="m-markoccupiedforduration" /><code>{"void MarkOccupiedForDuration(float duration)"}</code> | Marks the point free but busy for a number of seconds; 0 or less makes it free now. |
 
 ## Used in
 

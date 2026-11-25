@@ -1,6 +1,6 @@
 ---
 title: "AiHook"
-description: "Non-generic version of AiHook<T> bound to ActionComponent. An AI hook listens for its action being used and gets a callback when that use finishes or "
+description: "Non-generic version of AiHook<T> bound to ActionComponent."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

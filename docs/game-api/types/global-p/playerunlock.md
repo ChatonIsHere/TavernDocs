@@ -1,6 +1,6 @@
 ---
 title: "PlayerUnlock"
-description: "Has Prerequisites, Orbs, and UnlockingPermissions (teleport layer, climb layer, and an optional MaxStatDefinition to raise)."
+description: "Asset for something a player can unlock."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-Has `Prerequisites`, `Orbs`, and `UnlockingPermissions` (teleport layer, climb layer, and an optional `MaxStatDefinition` to raise).
+Asset for something a player can unlock. It can raise the maximum of a stat on the player, list prerequisite unlocks and describe orb visuals on the body.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`HashedGeneralValue<PlayerUnlock>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -39,16 +39,16 @@ Has `Prerequisites`, `Orbs`, and `UnlockingPermissions` (teleport layer, climb l
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-orbs-2" /><code><Link to="/game-api/types/global-p/playerunlock-orbproperties">{"PlayerUnlock.OrbProperties"}</Link>{"[] Orbs { get; }"}</code> |  |
-| <Link id="m-prerequisites-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> Prerequisites { get; }"}</code> |  |
-| <Link id="m-unlockingpermissions-2" /><code><Link to="/game-api/types/global-p/playerunlock-unlockingpermissionssetup">{"PlayerUnlock.UnlockingPermissionsSetup"}</Link>{" UnlockingPermissions { get; }"}</code> |  |
+| <Link id="m-orbs-2" /><code><Link to="/game-api/types/global-p/playerunlock-orbproperties">{"PlayerUnlock.OrbProperties"}</Link>{"[] Orbs { get; }"}</code> | Orb visuals for this unlock: prefab, weight, bone, position and scale. |
+| <Link id="m-prerequisites-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> Prerequisites { get; }"}</code> | Unlocks needed before this one. |
+| <Link id="m-unlockingpermissions-2" /><code><Link to="/game-api/types/global-p/playerunlock-unlockingpermissionssetup">{"PlayerUnlock.UnlockingPermissionsSetup"}</Link>{" UnlockingPermissions { get; }"}</code> | What the unlock changes: optional teleport and climb layer overrides, and the max stat change. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applyto" /><code>{"void ApplyTo("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-removefrom" /><code>{"void RemoveFrom("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| <Link id="m-applyto" /><code>{"void ApplyTo("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Adds the configured amount to the stat's maximum and base value, and again whenever the player gets a new controller. |
+| <Link id="m-removefrom" /><code>{"void RemoveFrom("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Takes back the stat change and stops reapplying it on new controllers. |
 | <Link id="m-canupdatemaxstat" /><code>{"private bool CanUpdateMaxStat("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
 | <Link id="m-canupdatemaxstat-2" /><code>{"private bool CanUpdateMaxStat("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |
 | <Link id="m-updateplayercontroller" /><code>{"private void UpdatePlayerController("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |

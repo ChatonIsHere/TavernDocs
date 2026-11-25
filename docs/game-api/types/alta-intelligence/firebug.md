@@ -1,6 +1,6 @@
 ---
 title: "FireBug"
-description: "A catchable bug that lights up when shaken."
+description: "The firebug creature: a catchable bug that glows and trails when shaken and throws sparks when killed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
 
-A catchable bug that lights up when shaken.
+The firebug creature: a catchable bug that glows and trails when shaken and throws sparks when killed. Its AI switches between emerge, regain-control and lose-control action sets.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`Agent<FireBug>`](/game-api/types/alta-intelligence/agent-tthis), [`IReceiveImpulseFromCollision`](/game-api/types/alta-intelligence/ireceiveimpulsefromcollision)
@@ -58,19 +58,19 @@ A catchable bug that lights up when shaken.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-decreasedrag" /><code>{"void DecreaseDrag()"}</code> |  |
-| <Link id="m-enabledragtracking" /><code>{"void EnableDragTracking(bool hasDrag)"}</code> |  |
-| <Link id="m-endshakeupdate" /><code>{"void EndShakeUpdate()"}</code> |  |
-| <Link id="m-increasedrag" /><code>{"void IncreaseDrag()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
+| <Link id="m-decreasedrag" /><code>{"void DecreaseDrag()"}</code> | Sets the rigidbody to zero drag and low angular drag. |
+| <Link id="m-enabledragtracking" /><code>{"void EnableDragTracking(bool hasDrag)"}</code> | Turns the drag tracking object on or off. The server syncs it to clients. |
+| <Link id="m-endshakeupdate" /><code>{"void EndShakeUpdate()"}</code> | Stops the shake or light-fade update. |
+| <Link id="m-increasedrag" /><code>{"void IncreaseDrag()"}</code> | Sets the rigidbody to the flailing drag values. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the drag sync message. |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Stops effects and hooks the `PickupAgent` caught and released events. Sets up the shake detector when not headless. |
 | <Link id="m-caught" /><code>{"private void Caught()"}</code> |  |
 | <Link id="m-fadelight" /><code>{"private void FadeLight()"}</code> |  |
-| <Link id="m-initializeai" /><code>{"protected override void InitializeAi()"}</code> |  |
-| <Link id="m-initializestatic" /><code>{"protected override void InitializeStatic()"}</code> |  |
-| <Link id="m-killed" /><code>{"protected override void Killed("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthobject)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| <Link id="m-initializeai" /><code>{"protected override void InitializeAi()"}</code> | Starts on the emerge action set and makes the pickup not save. |
+| <Link id="m-initializestatic" /><code>{"protected override void InitializeStatic()"}</code> | Builds the shared emerge, regain and lose control action sets. |
+| <Link id="m-killed" /><code>{"protected override void Killed("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthobject)"}</code> | Plays the death spark. On the server, simulates fire sparks within `sparkRadius` and sets the animator's IsAlive to false. |
+| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> | Stops the shake update. |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor: rebuilds the shake detector. |
 | <Link id="m-receivedimpulse" /><code>{"private void Alta.Intelligence.IReceiveImpulseFromCollision.ReceivedImpulse(float strength)"}</code> |  |
 | <Link id="m-released" /><code>{"private void Released("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
 | <Link id="m-syncdrag-2" /><code>{"private void SyncDrag("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool hasDrag)"}</code> |  |

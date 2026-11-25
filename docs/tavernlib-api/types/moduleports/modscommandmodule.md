@@ -1,6 +1,6 @@
 ---
 title: "ModsCommandModule"
-description: "A static class in TavernLib, TavernLib.ModulePorts."
+description: "TavernLib's modmanager console module, with list (every mod in Mods and its state) and addrepo (adds a trusted mod source after checking its index)."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `TavernLib`, `TavernLib.ModulePorts`.
 
-A **static class** in `TavernLib`, `TavernLib.ModulePorts`.
+TavernLib's `modmanager` console module, with `list` (every mod in `Mods` and its state) and `addrepo` (adds a trusted mod source after checking its index). Server.
 
 - **Listed in** [TavernLib.ModulePorts](/tavernlib-api/types/moduleports)
 - **Attributes** `Module`
@@ -24,7 +24,7 @@ A **static class** in `TavernLib`, `TavernLib.ModulePorts`.
 | --- | --- |
 | <Link id="m-addrepo" /><code>{"private static string AddRepo(string url)"}</code> |  |
 | <Link id="m-list" /><code>{"private static string List()"}</code> |  |
-| <Link id="m-listfor" /><code>{"internal static string ListFor(string gameDir)"}</code> |  |
+| <Link id="m-listfor" /><code>{"internal static string ListFor(string gameDir)"}</code> | Internal: the `modmanager list` text for a game folder: tracked mods with version, state and targets, then untracked ones. Flags damaged installs. |
 | <Link id="m-reposhorthand" /><code>{"private static string RepoShorthand(string url)"}</code> |  |
 | <Link id="m-state" /><code>{"private static string State(bool enabled)"}</code> |  |
 | <Link id="m-targets" /><code>{"private static string Targets("}<Link to="/tavernlib-api/types/backend-mods/modrecord">{"ModRecord"}</Link>{" record)"}</code> |  |

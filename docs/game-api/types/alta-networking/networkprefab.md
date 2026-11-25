@@ -1,6 +1,6 @@
 ---
 title: "NetworkPrefab"
-description: "A MonoBehaviour next to the prefab's NetworkEntity."
+description: "Root component of a spawnable networked prefab."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Networking`.
 
-A `MonoBehaviour` next to the prefab's `NetworkEntity`.
+Root component of a spawnable networked prefab. It holds the prefab hash used to spawn and save it, its embedded child entities, and how it saves (`SaveMode`). Sits next to the root `NetworkEntity`; reach it with `entity.Prefab` or `PrefabRoot.Prefab`.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`NetworkEntityParent`](/game-api/types/alta-networking/networkentityparent), [`INetworkEntityBehaviour`](/game-api/types/alta-networking/inetworkentitybehaviour), [`ISerializeChildren`](/game-api/types/alta-networking/iserializechildren)
@@ -48,13 +48,13 @@ A `MonoBehaviour` next to the prefab's `NetworkEntity`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canbespawnedthroughcommand-2" /><code>{"bool CanBeSpawnedThroughCommand { get; }"}</code> |  |
-| <Link id="m-entity-2" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> |  |
-| <Link id="m-hash-2" /><code>{"uint Hash { get; }"}</code> |  |
-| <Link id="m-isserveronly" /><code>{"bool IsServerOnly { get; set; }"}</code> |  |
-| <Link id="m-issyncingposition" /><code>{"bool IsSyncingPosition { get; }"}</code> |  |
-| <Link id="m-savemode" /><code><Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-spawnedcount" /><code>{"static int SpawnedCount { get; private set; }"}</code> |  |
+| <Link id="m-canbespawnedthroughcommand-2" /><code>{"bool CanBeSpawnedThroughCommand { get; }"}</code> | Whether the prefab shows up for the `spawn` console command. |
+| <Link id="m-entity-2" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | The root `NetworkEntity` of the prefab. |
+| <Link id="m-hash-2" /><code>{"uint Hash { get; }"}</code> | The prefab's unique hash. This is what spawn messages, saves and `PrefabManager` use to identify it. |
+| <Link id="m-isserveronly" /><code>{"bool IsServerOnly { get; set; }"}</code> | Whether the prefab and its embedded entities are hidden from clients. Setting it true despawns them for every player; false spawns them for players in the chunk. |
+| <Link id="m-issyncingposition" /><code>{"bool IsSyncingPosition { get; }"}</code> | False while any position sync blocker is set (for example while docked), so position updates aren't sent. |
+| <Link id="m-savemode" /><code><Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" { get; set; }"}</code> | How this prefab saves: on its own (`Base`), as part of its parent (`Child`), not at all (`Ignore`), or with a player or creature. |
+| <Link id="m-spawnedcount" /><code>{"static int SpawnedCount { get; private set; }"}</code> | Static count of prefab instances currently alive. |
 | <Link id="m-alta-networking-iserializechildren-childcount" /><code>{"private int Alta.Networking.ISerializeChildren.ChildCount { get; }"}</code> |  |
 | <Link id="m-alta-networking-iserializechildren-childprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> Alta.Networking.ISerializeChildren.ChildPrefabs { get; }"}</code> |  |
 
@@ -62,29 +62,29 @@ A `MonoBehaviour` next to the prefab's `NetworkEntity`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-predestroyed" /><code>{"event "}<Link to="/game-api/types/alta-networking/networkprefabeventhandler">{"NetworkPrefabEventHandler"}</Link>{" PreDestroyed"}</code> |  |
+| <Link id="m-predestroyed" /><code>{"event "}<Link to="/game-api/types/alta-networking/networkprefabeventhandler">{"NetworkPrefabEventHandler"}</Link>{" PreDestroyed"}</code> | Raised just before the prefab is destroyed. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disablespawnthroughcommands" /><code>{"void DisableSpawnThroughCommands()"}</code> |  |
-| <Link id="m-getcomponentinprefab" /><code>{"T GetComponentInPrefab<T>()"}</code> |  |
-| <Link id="m-getcomponentsinprefab" /><code>{"IEnumerable<T> GetComponentsInPrefab<T>() (iterator)"}</code> |  |
-| <Link id="m-getembedded" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" GetEmbedded(uint hash)"}</code> |  |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-initializechildren" /><code>{"void InitializeChildren(uint[] embeddedIdentifiers)"}</code> |  |
-| <Link id="m-initializechildrenbehaviours" /><code>{"void InitializeChildrenBehaviours()"}</code> |  |
-| <Link id="m-lockpositionsync" /><code>{"void LockPositionSync("}<Link to="/game-api/types/alta-networking/positionsyncblocker">{"PositionSyncBlocker"}</Link>{" blocker)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target)"}</code> |  |
-| <Link id="m-ondisconnected" /><code>{"void OnDisconnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"override void OnValidate()"}</code> |  |
-| <Link id="m-predestroy" /><code>{"void PreDestroy()"}</code> |  |
-| <Link id="m-saveserialize" /><code>{"void SaveSerialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning)"}</code> |  |
-| <Link id="m-saveserializeempty" /><code>{"static void SaveSerializeEmpty("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning)"}</code> |  |
-| <Link id="m-unlockpositionsync" /><code>{"void UnlockPositionSync("}<Link to="/game-api/types/alta-networking/positionsyncblocker">{"PositionSyncBlocker"}</Link>{" blocker)"}</code> |  |
-| <Link id="m-validateembeddedhashes" /><code>{"void ValidateEmbeddedHashes()"}</code> |  |
+| <Link id="m-disablespawnthroughcommands" /><code>{"void DisableSpawnThroughCommands()"}</code> | Hides this prefab from the `spawn` command. |
+| <Link id="m-getcomponentinprefab" /><code>{"T GetComponentInPrefab<T>()"}</code> | First component of that type on the root entity or any embedded entity, without looking into separate child prefabs. |
+| <Link id="m-getcomponentsinprefab" /><code>{"IEnumerable<T> GetComponentsInPrefab<T>() (iterator)"}</code> | All components of that type on the root entity and its embedded entities. |
+| <Link id="m-getembedded" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" GetEmbedded(uint hash)"}</code> | Finds an embedded entity by its hash, or null. |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | Rebuilds the embedded entity hash lookup. |
+| <Link id="m-initializeasserver" /><code>{"void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Does nothing. |
+| <Link id="m-initializechildren" /><code>{"void InitializeChildren(uint[] embeddedIdentifiers)"}</code> | Registers and initialises the embedded entities. The server assigns new ids; a client uses the ids sent in the spawn message. |
+| <Link id="m-initializechildrenbehaviours" /><code>{"void InitializeChildrenBehaviours()"}</code> | Initialises the behaviours on every embedded entity. |
+| <Link id="m-lockpositionsync" /><code>{"void LockPositionSync("}<Link to="/game-api/types/alta-networking/positionsyncblocker">{"PositionSyncBlocker"}</Link>{" blocker)"}</code> | Adds a reason to stop syncing this prefab's position. |
+| <Link id="m-onconnected" /><code>{"void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target)"}</code> | Server: tells a newly connected player about embedded entities that have been destroyed. |
+| <Link id="m-ondisconnected" /><code>{"void OnDisconnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target)"}</code> | Does nothing. |
+| <Link id="m-onvalidate" /><code>{"override void OnValidate()"}</code> | Makes sure the prefab has a valid hash. |
+| <Link id="m-predestroy" /><code>{"void PreDestroy()"}</code> | Raises `PreDestroyed`, then detaches the entity from its parent and chunk. |
+| <Link id="m-saveserialize" /><code>{"void SaveSerialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning)"}</code> | Writes or reads the prefab's full save: its savable components, embedded entities and child prefabs with `SaveMode.Child`. |
+| <Link id="m-saveserializeempty" /><code>{"static void SaveSerializeEmpty("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning)"}</code> | Reads past a saved prefab without loading it, used when the saved prefab no longer exists. |
+| <Link id="m-unlockpositionsync" /><code>{"void UnlockPositionSync("}<Link to="/game-api/types/alta-networking/positionsyncblocker">{"PositionSyncBlocker"}</Link>{" blocker)"}</code> | Removes a reason added with `LockPositionSync`. |
+| <Link id="m-validateembeddedhashes" /><code>{"void ValidateEmbeddedHashes()"}</code> | Empty in this build. |
 | <Link id="m-accumulatechildprefabs" /><code>{"private void AccumulateChildPrefabs("}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" parent)"}</code> |  |
 | <Link id="m-addchild" /><code>{"private void Alta.Networking.ISerializeChildren.AddChild("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child)"}</code> |  |
 | <Link id="m-addemptychildatindex" /><code>{"private void Alta.Networking.ISerializeChildren.AddEmptyChildAtIndex(int index)"}</code> |  |
@@ -95,10 +95,10 @@ A `MonoBehaviour` next to the prefab's `NetworkEntity`.
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
 | <Link id="m-processemptyindices" /><code>{"private void ProcessEmptyIndices()"}</code> |  |
 | <Link id="m-reset" /><code>{"private void Reset()"}</code> |  |
-| <Link id="m-saveserializeempty-2" /><code>{"private static void SaveSerializeEmpty("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-saveserializeempty-2" /><code>{"private static void SaveSerializeEmpty("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads past a saved prefab without loading it, used when the saved prefab no longer exists. |
 | <Link id="m-saveserializeentity" /><code>{"private void SaveSerializeEntity("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning, uint hash)"}</code> |  |
 | <Link id="m-saveserializeentity-2" /><code>{"private void SaveSerializeEntity("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
-| <Link id="m-updateentityembeddedids" /><code>{"protected override void UpdateEntityEmbeddedIds()"}</code> |  |
+| <Link id="m-updateentityembeddedids" /><code>{"protected override void UpdateEntityEmbeddedIds()"}</code> | Refreshes the embedded entity ids and the hash to entity lookup. |
 
 ## Used in
 

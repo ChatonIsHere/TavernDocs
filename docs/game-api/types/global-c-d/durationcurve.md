@@ -1,6 +1,6 @@
 ---
 title: "DurationCurve"
-description: "class DurationCurve in Root.Township."
+description: "A serializable animation curve paired with a duration in seconds."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DurationCurve
 
 A **class** in `Root.Township`, no namespace.
+
+A serializable animation curve paired with a duration in seconds.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 
@@ -31,8 +33,8 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-curve-2" /><code>{"AnimationCurve Curve { get; }"}</code> |  |
-| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> |  |
+| <Link id="m-curve-2" /><code>{"AnimationCurve Curve { get; }"}</code> | The curve. |
+| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> | How long the curve plays for, in seconds. |
 
 ## Used in
 

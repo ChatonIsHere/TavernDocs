@@ -1,6 +1,6 @@
 ---
 title: "HeldPickupHandler"
-description: "class HeldPickupHandler in Root.Township."
+description: "Tracks one pickup a player is holding and the skill inputs registered for it, and passes tool hits to those skills."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HeldPickupHandler
 
 A **class** in `Root.Township`, no namespace.
+
+Tracks one pickup a player is holding and the skill inputs registered for it, and passes tool hits to those skills. Created by `PlayerToolBasedSkillHelper` when an interaction starts.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Documented in** [Items, interaction and damage](/game-api/items/overview)
@@ -31,23 +33,23 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hastool" /><code>{"bool HasTool { get; }"}</code> |  |
-| <Link id="m-inputs" /><code>{"Dictionary<"}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{", "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> Inputs { get; }"}</code> |  |
-| <Link id="m-isupdating" /><code>{"bool IsUpdating { get; private set; }"}</code> |  |
-| <Link id="m-pickup" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-playerhelper" /><code><Link to="/game-api/types/global-p/playertoolbasedskillhelper">{"PlayerToolBasedSkillHelper"}</Link>{" PlayerHelper { get; }"}</code> |  |
-| <Link id="m-skillstoinputs" /><code>{"Dictionary<"}<Link to="/game-api/types/global-i-l/iinputbasedskill">{"IInputBasedSkill"}</Link>{", "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> SkillsToInputs { get; }"}</code> |  |
-| <Link id="m-tool" /><code><Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" Tool { get; }"}</code> |  |
+| <Link id="m-hastool" /><code>{"bool HasTool { get; }"}</code> | True if the pickup has an `ImpactTool`. |
+| <Link id="m-inputs" /><code>{"Dictionary<"}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{", "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> Inputs { get; }"}</code> | Input methods by input structure, shared by skills that use the same structure. |
+| <Link id="m-isupdating" /><code>{"bool IsUpdating { get; private set; }"}</code> | True while the handler is registered for per-frame updates. |
+| <Link id="m-pickup" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> | The held pickup. |
+| <Link id="m-playerhelper" /><code><Link to="/game-api/types/global-p/playertoolbasedskillhelper">{"PlayerToolBasedSkillHelper"}</Link>{" PlayerHelper { get; }"}</code> | The player's tool skill helper that owns this handler. |
+| <Link id="m-skillstoinputs" /><code>{"Dictionary<"}<Link to="/game-api/types/global-i-l/iinputbasedskill">{"IInputBasedSkill"}</Link>{", "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> SkillsToInputs { get; }"}</code> | Which input each registered skill listens to. |
+| <Link id="m-tool" /><code><Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" Tool { get; }"}</code> | The pickup's `ImpactTool`, or null. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-deregisterskill" /><code>{"void DeregisterSkill("}<Link to="/game-api/types/global-i-l/iinputbasedskill">{"IInputBasedSkill"}</Link>{" skill)"}</code> |  |
-| <Link id="m-receivehit" /><code>{"void ReceiveHit("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> |  |
-| <Link id="m-registertoinput" /><code><Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" RegisterToInput("}<Link to="/game-api/types/global-i-l/iinputbasedskill">{"IInputBasedSkill"}</Link>{" skill)"}</code> |  |
-| <Link id="m-update" /><code>{"void Update()"}</code> |  |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | Clears every input and deregisters every skill from it. |
+| <Link id="m-deregisterskill" /><code>{"void DeregisterSkill("}<Link to="/game-api/types/global-i-l/iinputbasedskill">{"IInputBasedSkill"}</Link>{" skill)"}</code> | Removes one skill. The input is dropped once no skill uses it, and updates stop when no input needs them. |
+| <Link id="m-receivehit" /><code>{"void ReceiveHit("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | Passes a tool hit to each skill. Active inputs whose skill accepts the hit execute it, then reset. |
+| <Link id="m-registertoinput" /><code><Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" RegisterToInput("}<Link to="/game-api/types/global-i-l/iinputbasedskill">{"IInputBasedSkill"}</Link>{" skill)"}</code> | Gets or creates the input for a skill's input structure and links the skill to it. |
+| <Link id="m-update" /><code>{"void Update()"}</code> | Updates every input that needs per-frame updates. |
 
 ## Used in
 

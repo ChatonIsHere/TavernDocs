@@ -1,6 +1,6 @@
 ---
 title: "RiverPath"
-description: "class RiverPath in Root.Township."
+description: "A river segment between two RiverNodes in the forest generator, with its spline mesh, any waterfall and its neighbouring segments at each end."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RiverPath
 
 A **class** in `Root.Township`, `Alta.Forests`.
+
+A river segment between two `RiverNode`s in the forest generator, with its spline mesh, any waterfall and its neighbouring segments at each end.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`Path<RiverNode, RiverPath>`](/game-api/types/alta-world-generation/path-tnode-tpath)
@@ -26,26 +28,26 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-anticlockwiseangleend" /><code>{"float AnticlockwiseAngleEnd { get; set; }"}</code> |  |
-| <Link id="m-anticlockwiseanglestart" /><code>{"float AnticlockwiseAngleStart { get; set; }"}</code> |  |
-| <Link id="m-anticlockwiseend" /><code><Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" AnticlockwiseEnd { get; set; }"}</code> |  |
-| <Link id="m-anticlockwisestart" /><code><Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" AnticlockwiseStart { get; set; }"}</code> |  |
-| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; set; }"}</code> |  |
-| <Link id="m-clockwiseangleend" /><code>{"float ClockwiseAngleEnd { get; set; }"}</code> |  |
-| <Link id="m-clockwiseanglestart" /><code>{"float ClockwiseAngleStart { get; set; }"}</code> |  |
-| <Link id="m-clockwiseend" /><code><Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" ClockwiseEnd { get; set; }"}</code> |  |
-| <Link id="m-clockwisestart" /><code><Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" ClockwiseStart { get; set; }"}</code> |  |
-| <Link id="m-isunderground" /><code>{"bool IsUnderground { get; }"}</code> |  |
-| <Link id="m-mesh" /><code><Link to="/game-api/types/global-q-r/ramspline">{"RamSpline"}</Link>{" Mesh { get; set; }"}</code> |  |
-| <Link id="m-waterfall" /><code><Link to="/game-api/types/alta-world-generation/waterfall">{"Waterfall"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/waterfall">{"Waterfall"}</Link>{" { get; set; }"}</code> |  |
+| <Link id="m-anticlockwiseangleend" /><code>{"float AnticlockwiseAngleEnd { get; set; }"}</code> | Angle to the next segment anticlockwise at the end node. |
+| <Link id="m-anticlockwiseanglestart" /><code>{"float AnticlockwiseAngleStart { get; set; }"}</code> | Angle to the next segment anticlockwise at the start node. |
+| <Link id="m-anticlockwiseend" /><code><Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" AnticlockwiseEnd { get; set; }"}</code> | Neighbouring segment anticlockwise at the end node. |
+| <Link id="m-anticlockwisestart" /><code><Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" AnticlockwiseStart { get; set; }"}</code> | Neighbouring segment anticlockwise at the start node. |
+| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; set; }"}</code> | The location chunk the segment's mesh belongs to. |
+| <Link id="m-clockwiseangleend" /><code>{"float ClockwiseAngleEnd { get; set; }"}</code> | Angle to the next segment clockwise at the end node. |
+| <Link id="m-clockwiseanglestart" /><code>{"float ClockwiseAngleStart { get; set; }"}</code> | Angle to the next segment clockwise at the start node. |
+| <Link id="m-clockwiseend" /><code><Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" ClockwiseEnd { get; set; }"}</code> | Neighbouring segment clockwise at the end node. |
+| <Link id="m-clockwisestart" /><code><Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" ClockwiseStart { get; set; }"}</code> | Neighbouring segment clockwise at the start node. |
+| <Link id="m-isunderground" /><code>{"bool IsUnderground { get; }"}</code> | True if the start node is underground. |
+| <Link id="m-mesh" /><code><Link to="/game-api/types/global-q-r/ramspline">{"RamSpline"}</Link>{" Mesh { get; set; }"}</code> | The river spline mesh. |
+| <Link id="m-waterfall" /><code><Link to="/game-api/types/alta-world-generation/waterfall">{"Waterfall"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/waterfall">{"Waterfall"}</Link>{" { get; set; }"}</code> | Waterfall on this segment, if any. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disableriver" /><code>{"void DisableRiver("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-enableriver" /><code>{"void EnableRiver("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"void OnDestroy()"}</code> |  |
+| <Link id="m-disableriver" /><code>{"void DisableRiver("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Hides the river mesh. Hooked to the chunk unloading. |
+| <Link id="m-enableriver" /><code>{"void EnableRiver("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Shows the river mesh. Hooked to the chunk finishing loading. |
+| <Link id="m-ondestroy" /><code>{"void OnDestroy()"}</code> | Unhooks the mesh from the chunk's load and unload events. |
 | <Link id="m-foreach" /><code>{"internal void ForEach(Func<object, object> p)"}</code> |  |
 
 ## Used in

@@ -1,6 +1,6 @@
 ---
 title: "DayTimeManager"
-description: "The sun and moon from GameTimeManager's day and month progress, and the day's ambience and fog. Handles FixedDaytime."
+description: "Client: the atmosphere plugin for the day and night cycle."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Environmental.Atmosphere`.
 
-The sun and moon from `GameTimeManager`'s day and month progress, and the day's ambience and fog. Handles `FixedDaytime`.
+Client: the atmosphere plugin for the day and night cycle. Turns the sun and moon and sets sky, ambient light, fog and ambience audio from game time. Follows the server's fixed daytime setting when set.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** [`AtmospherePlugin`](/game-api/types/alta-world/atmosphereplugin)
@@ -30,9 +30,9 @@ The sun and moon from `GameTimeManager`'s day and month progress, and the day's 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fullcycle" /><code>{"float fullCycle"}</code> |  |
-| <Link id="m-halfcycle" /><code>{"float halfCycle"}</code> |  |
-| <Link id="m-quartercycle" /><code>{"float quarterCycle"}</code> |  |
+| <Link id="m-fullcycle" /><code>{"float fullCycle"}</code> | Editor readout: position in the full day cycle. |
+| <Link id="m-halfcycle" /><code>{"float halfCycle"}</code> | Editor readout: position in the sun's half cycle. |
+| <Link id="m-quartercycle" /><code>{"float quarterCycle"}</code> | Editor readout: how high the moon is. |
 | <Link id="m-androidmoondistance" /><code>{"private float androidMoonDistance"}</code> |  |
 | <Link id="m-androidmoonmaterial" /><code>{"private Material androidMoonMaterial"}</code> |  |
 | <Link id="m-androidmoonsize" /><code>{"private float androidMoonSize"}</code> |  |
@@ -97,10 +97,10 @@ The sun and moon from `GameTimeManager`'s day and month progress, and the day's 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ambiencevolume" /><code>{"override float AmbienceVolume { get; set; }"}</code> |  |
-| <Link id="m-currentambience-2" /><code>{"override Color CurrentAmbience { get; }"}</code> |  |
-| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> |  |
-| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> |  |
+| <Link id="m-ambiencevolume" /><code>{"override float AmbienceVolume { get; set; }"}</code> | Total ambience volume, split between day and night sources by time of day. 0 on a headless server. |
+| <Link id="m-currentambience-2" /><code>{"override Color CurrentAmbience { get; }"}</code> | The ambient light colour for the current time. |
+| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> | The fog colour for the current time. |
+| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> | The fog density for the current time, scaled on Android. |
 | <Link id="m-androidmoonmaterial-2" /><code>{"private Material AndroidMoonMaterial { get; }"}</code> |  |
 | <Link id="m-skyboxmaterial-2" /><code>{"private Material SkyboxMaterial { get; }"}</code> |  |
 
@@ -108,18 +108,18 @@ The sun and moon from `GameTimeManager`'s day and month progress, and the day's 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disable" /><code>{"override void Disable()"}</code> |  |
-| <Link id="m-evaluatefogcolor" /><code>{"Color EvaluateFogColor()"}</code> |  |
-| <Link id="m-evaluatefogdensity" /><code>{"float EvaluateFogDensity()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize("}<Link to="/game-api/types/alta-world/atmospheremanager">{"AtmosphereManager"}</Link>{" manager)"}</code> |  |
-| <Link id="m-mute" /><code>{"override void Mute(bool isMuted)"}</code> |  |
-| <Link id="m-onconnect" /><code>{"override void OnConnect("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-startaudio" /><code>{"override void StartAudio()"}</code> |  |
-| <Link id="m-stopaudio" /><code>{"override void StopAudio()"}</code> |  |
+| <Link id="m-disable" /><code>{"override void Disable()"}</code> | Fades the lights and sky colour out when another atmosphere takes over. |
+| <Link id="m-evaluatefogcolor" /><code>{"Color EvaluateFogColor()"}</code> | Fog colour for the last worked out time of day. |
+| <Link id="m-evaluatefogdensity" /><code>{"float EvaluateFogDensity()"}</code> | Fog density for the last worked out time of day. |
+| <Link id="m-initialize" /><code>{"override void Initialize("}<Link to="/game-api/types/alta-world/atmospheremanager">{"AtmosphereManager"}</Link>{" manager)"}</code> | Reads the server's fixed daytime (below 0 means the normal cycle) and sets the starting sun and moon. |
+| <Link id="m-mute" /><code>{"override void Mute(bool isMuted)"}</code> | Mutes or unmutes the night source as well. |
+| <Link id="m-onconnect" /><code>{"override void OnConnect("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends the fixed daytime state to a joining player. |
+| <Link id="m-startaudio" /><code>{"override void StartAudio()"}</code> | Starts the night source as well. |
+| <Link id="m-stopaudio" /><code>{"override void StopAudio()"}</code> | Stops the night source as well. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-createmoonmeshifneeded" /><code>{"private void CreateMoonMeshIfNeeded()"}</code> |  |
 | <Link id="m-disableskycolor" /><code>{"private void DisableSkyColor()"}</code> |  |
-| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> |  |
+| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> | Fades the lights and sky back in when this atmosphere becomes active. |
 | <Link id="m-getdotproductbetweensunandmoonvectors" /><code>{"private float GetDotProductBetweenSunAndMoonVectors(Vector3 sunVector)"}</code> |  |
 | <Link id="m-getsunrotation" /><code>{"private float GetSunRotation(float dayProgress)"}</code> |  |
 | <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |

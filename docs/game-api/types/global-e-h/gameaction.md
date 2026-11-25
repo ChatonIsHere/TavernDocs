@@ -1,6 +1,6 @@
 ---
 title: "GameAction"
-description: "abstract class GameAction in Root.Township."
+description: "Asset for a tracked player action (docking an item, destroying something and so on) that feeds tasks and achievements."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GameAction
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Asset for a tracked player action (docking an item, destroying something and so on) that feeds tasks and achievements. Server: `GameTaskManager` collects the ones valid for the current scene and counts them per player.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`HashedGeneralValue<GameAction>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -36,26 +38,26 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code>{"abstract "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |  |
-| <Link id="m-stattype-2" /><code><Link to="/game-api/types/global-s/stattype">{"StatType"}</Link>{" "}<Link to="/game-api/types/global-s/stattype">{"StatType"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-channel" /><code>{"abstract "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Which kind of action this listens for. Only actions reported on this channel are checked. |
+| <Link id="m-stattype-2" /><code><Link to="/game-api/types/global-s/stattype">{"StatType"}</Link>{" "}<Link to="/game-api/types/global-s/stattype">{"StatType"}</Link>{" { get; }"}</code> | The kind of stat this action tracks. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-incrementvalue" /><code>{"event "}<Link to="/game-api/types/global-i-l/incrementstat">{"IncrementStat"}</Link>{" IncrementValue"}</code> |  |
-| <Link id="m-valueupdate" /><code>{"event "}<Link to="/game-api/types/global-t-x/updatestat">{"UpdateStat"}</Link>{" ValueUpdate"}</code> |  |
+| <Link id="m-incrementvalue" /><code>{"event "}<Link to="/game-api/types/global-i-l/incrementstat">{"IncrementStat"}</Link>{" IncrementValue"}</code> | Raised by `IncrementForPlayer`. The task manager listens to it. |
+| <Link id="m-valueupdate" /><code>{"event "}<Link to="/game-api/types/global-t-x/updatestat">{"UpdateStat"}</Link>{" ValueUpdate"}</code> | Raised by `UpdateForPlayer`. The task manager listens to it. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-incrementforplayer" /><code>{"void IncrementForPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-isvalid" /><code>{"abstract bool IsValid("}<Link to="/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> |  |
-| <Link id="m-receivenewvalue" /><code>{"virtual int ReceiveNewValue(int currentValue, int newValue)"}</code> |  |
-| <Link id="m-updateforplayer" /><code>{"void UpdateForPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int value)"}</code> |  |
-| <Link id="m-updateforplayer-2" /><code>{"void UpdateForPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, float value)"}</code> |  |
-| <Link id="m-validatescene" /><code>{"bool ValidateScene(int sceneIndex)"}</code> |  |
+| <Link id="m-incrementforplayer" /><code>{"void IncrementForPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Adds one to this action's count for a player. |
+| <Link id="m-isvalid" /><code>{"abstract bool IsValid("}<Link to="/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> | Whether a reported action argument counts for this action. |
+| <Link id="m-receivenewvalue" /><code>{"virtual int ReceiveNewValue(int currentValue, int newValue)"}</code> | Combines the current count with a new one. Adds them by default. |
+| <Link id="m-updateforplayer" /><code>{"void UpdateForPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int value)"}</code> | Sets this action's value for a player. |
+| <Link id="m-updateforplayer-2" /><code>{"void UpdateForPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, float value)"}</code> | Sets this action's value for a player. |
+| <Link id="m-validatescene" /><code>{"bool ValidateScene(int sceneIndex)"}</code> | True if the action applies in the given scene index. An empty scene list means every scene. |
 
 ## Used in
 

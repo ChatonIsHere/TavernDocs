@@ -1,6 +1,6 @@
 ---
 title: "LogicValueReceiverArray<TSenderInput>"
-description: "Base for logic receivers that listen to a list of senders and react when any of them changes, such as gates and sums. Server side."
+description: "Base for logic receivers that listen to a list of senders and react when any of them changes, such as gates and sums."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

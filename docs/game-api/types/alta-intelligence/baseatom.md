@@ -1,6 +1,6 @@
 ---
 title: "BaseAtom"
-description: "A named constant term in the AI's logic system (predicates, compounds and variables used for creature reasoning). Its nested Definition pairs a compou"
+description: "A named constant term in the AI's logic system (predicates, compounds and variables used for creature reasoning)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

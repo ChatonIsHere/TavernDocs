@@ -1,6 +1,6 @@
 ---
 title: "InstalledModInfo"
-description: "A class in TavernLib, TavernLib.Backend.Mods."
+description: "A tracked mod from ModInstaller.ScanMods: its record and whether it's enabled."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 
-A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
+A tracked mod from `ModInstaller.ScanMods`: its record and whether it's enabled.
 
 - **Listed in** [TavernLib.Backend.Mods](/tavernlib-api/types/backend-mods)
 - **Documented in** [InstalledModInfo](/tavernlib-api/types/backend-mods/installedmodinfo)
@@ -27,8 +27,8 @@ A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enabled" /><code>{"bool Enabled { get; set; }"}</code> |  |
-| <Link id="m-record" /><code><Link to="/tavernlib-api/types/backend-mods/modrecord">{"ModRecord"}</Link>{" Record { get; set; }"}</code> |  |
+| <Link id="m-enabled" /><code>{"bool Enabled { get; set; }"}</code> | True when the record is `manifest.json`, not `manifest.disabled.json`. |
+| <Link id="m-record" /><code><Link to="/tavernlib-api/types/backend-mods/modrecord">{"ModRecord"}</Link>{" Record { get; set; }"}</code> | The mod's parsed record. |
 
 ## Used in
 

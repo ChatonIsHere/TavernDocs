@@ -1,6 +1,6 @@
 ---
 title: "InputMap"
-description: "class InputMap in Root.Township."
+description: "Unity Input System wrapper generated from the game's input actions asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InputMap
 
 A **class** in `Root.Township`, no namespace.
+
+Unity Input System wrapper generated from the game's input actions asset. It has four action maps: `Playing` (per-device bindings for Oculus, Vive, WMR and Index), `PlayingBase`, `PlayingGeneric` (generic XR controller) and `PlayingPico`. The OpenXR input controller holds one shared instance.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `IInputActionCollection2`, `IInputActionCollection`, `IEnumerable<InputAction>`, `IEnumerable`, `IDisposable`
@@ -122,28 +124,28 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-asset" /><code>{"InputActionAsset asset { get; }"}</code> |  |
-| <Link id="m-bindingmask" /><code>{"InputBinding? bindingMask { get; set; }"}</code> |  |
-| <Link id="m-bindings" /><code>{"IEnumerable<InputBinding> bindings { get; }"}</code> |  |
-| <Link id="m-controlschemes" /><code>{"ReadOnlyArray<InputControlScheme> controlSchemes { get; }"}</code> |  |
-| <Link id="m-devices" /><code>{"ReadOnlyArray<InputDevice>? devices { get; set; }"}</code> |  |
-| <Link id="m-playing" /><code><Link to="/game-api/types/global-i-l/inputmap-playingactions">{"InputMap.PlayingActions"}</Link>{" Playing { get; }"}</code> |  |
-| <Link id="m-playingbase" /><code><Link to="/game-api/types/global-i-l/inputmap-playingbaseactions">{"InputMap.PlayingBaseActions"}</Link>{" PlayingBase { get; }"}</code> |  |
-| <Link id="m-playinggeneric" /><code><Link to="/game-api/types/global-i-l/inputmap-playinggenericactions">{"InputMap.PlayingGenericActions"}</Link>{" PlayingGeneric { get; }"}</code> |  |
-| <Link id="m-playingpico" /><code><Link to="/game-api/types/global-i-l/inputmap-playingpicoactions">{"InputMap.PlayingPicoActions"}</Link>{" PlayingPico { get; }"}</code> |  |
+| <Link id="m-asset" /><code>{"InputActionAsset asset { get; }"}</code> | The `InputActionAsset` built from the embedded JSON. |
+| <Link id="m-bindingmask" /><code>{"InputBinding? bindingMask { get; set; }"}</code> | Binding mask applied to the whole asset. |
+| <Link id="m-bindings" /><code>{"IEnumerable<InputBinding> bindings { get; }"}</code> | Every binding in the asset. |
+| <Link id="m-controlschemes" /><code>{"ReadOnlyArray<InputControlScheme> controlSchemes { get; }"}</code> | The asset's control schemes (none are defined). |
+| <Link id="m-devices" /><code>{"ReadOnlyArray<InputDevice>? devices { get; set; }"}</code> | Devices the asset is limited to, or null for all. |
+| <Link id="m-playing" /><code><Link to="/game-api/types/global-i-l/inputmap-playingactions">{"InputMap.PlayingActions"}</Link>{" Playing { get; }"}</code> | The main map, with bindings per controller type (Oculus Touch, Vive, WMR, Index). |
+| <Link id="m-playingbase" /><code><Link to="/game-api/types/global-i-l/inputmap-playingbaseactions">{"InputMap.PlayingBaseActions"}</Link>{" PlayingBase { get; }"}</code> | A smaller map with per-device bindings and a single `DirectionInput` stick action. |
+| <Link id="m-playinggeneric" /><code><Link to="/game-api/types/global-i-l/inputmap-playinggenericactions">{"InputMap.PlayingGenericActions"}</Link>{" PlayingGeneric { get; }"}</code> | Map bound to the generic XR controller layout. |
+| <Link id="m-playingpico" /><code><Link to="/game-api/types/global-i-l/inputmap-playingpicoactions">{"InputMap.PlayingPicoActions"}</Link>{" PlayingPico { get; }"}</code> | Map for Pico, like the generic one but reading the trigger from the Pico controller. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-contains" /><code>{"bool Contains(InputAction action)"}</code> |  |
-| <Link id="m-disable" /><code>{"void Disable()"}</code> |  |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-enable" /><code>{"void Enable()"}</code> |  |
-| <Link id="m-findaction" /><code>{"InputAction FindAction(string actionNameOrId, bool throwIfNotFound = false)"}</code> |  |
-| <Link id="m-findbinding" /><code>{"int FindBinding(InputBinding bindingMask, out InputAction action)"}</code> |  |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<InputAction> GetEnumerator()"}</code> |  |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |  |
+| <Link id="m-contains" /><code>{"bool Contains(InputAction action)"}</code> | True if the action belongs to this asset. |
+| <Link id="m-disable" /><code>{"void Disable()"}</code> | Disables every action in every map. |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Destroys the underlying input actions asset. |
+| <Link id="m-enable" /><code>{"void Enable()"}</code> | Enables every action in every map. |
+| <Link id="m-findaction" /><code>{"InputAction FindAction(string actionNameOrId, bool throwIfNotFound = false)"}</code> | Finds an action by name or id across all maps. |
+| <Link id="m-findbinding" /><code>{"int FindBinding(InputBinding bindingMask, out InputAction action)"}</code> | Finds the first binding matching a mask and returns its index and action. |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<InputAction> GetEnumerator()"}</code> | Enumerates every action in the asset. |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Enumerates every action in the asset. |
 
 ## Used in
 

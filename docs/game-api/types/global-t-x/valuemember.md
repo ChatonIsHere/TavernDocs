@@ -1,6 +1,6 @@
 ---
 title: "ValueMember"
-description: "class ValueMember in Root.Township."
+description: "Inspector entry for one field or property marked with BubbleInspectorFieldAttribute, shown in an InteractableInspector bubble."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ValueMember
 
 A **class** in `Root.Township`, no namespace.
+
+Inspector entry for one field or property marked with `BubbleInspectorFieldAttribute`, shown in an `InteractableInspector` bubble.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** [`InspectorBase`](/game-api/types/global-i-l/inspectorbase)
@@ -36,18 +38,18 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-inspectortype" /><code>{"override "}<Link to="/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" "}<Link to="/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-interactiontype" /><code><Link to="/game-api/types/global-i-l/interactiontype">{"InteractionType"}</Link>{" "}<Link to="/game-api/types/global-i-l/interactiontype">{"InteractionType"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"override string Name { get; }"}</code> |  |
+| <Link id="m-inspectortype" /><code>{"override "}<Link to="/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" "}<Link to="/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" { get; }"}</code> | Always `InspectorType.Value`. |
+| <Link id="m-interactiontype" /><code><Link to="/game-api/types/global-i-l/interactiontype">{"InteractionType"}</Link>{" "}<Link to="/game-api/types/global-i-l/interactiontype">{"InteractionType"}</Link>{" { get; }"}</code> | How the value can be edited, from the attribute. |
+| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | The member name followed by a colon. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clean" /><code>{"override void Clean()"}</code> |  |
-| <Link id="m-getvalue" /><code>{"object GetValue(object target)"}</code> |  |
-| <Link id="m-interact" /><code>{"override void Interact(Component target, "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" interactable)"}</code> |  |
-| <Link id="m-setnumericvalue" /><code>{"void SetNumericValue(float value, object target)"}</code> |  |
+| <Link id="m-clean" /><code>{"override void Clean()"}</code> | Cleans up its knob bubble if it is the one open. |
+| <Link id="m-getvalue" /><code>{"object GetValue(object target)"}</code> | Reads the value from the target. |
+| <Link id="m-interact" /><code>{"override void Interact(Component target, "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" interactable)"}</code> | Shows the current value, and for knob fields opens a knob bubble to change it. |
+| <Link id="m-setnumericvalue" /><code>{"void SetNumericValue(float value, object target)"}</code> | Writes a float to the target and updates the label. |
 
 ## Used in
 

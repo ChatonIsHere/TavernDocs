@@ -1,6 +1,6 @@
 ---
 title: "IReadonlyAnalyticsData"
-description: "string EventName, int? UserId, and the properties (IAnalyticsProperty) as a collection."
+description: "string EventName, int?"
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

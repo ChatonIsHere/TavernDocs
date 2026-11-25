@@ -1,6 +1,6 @@
 ---
 title: "TavernManager"
-description: "The service that owns the server's config files. Get it from the service registry. It isn't there on a client."
+description: "The server's config files, registered as a service: get it with TavernServices.GetService<TavernManager>()."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.Api`.
 
-The service that owns the server's config files. Get it from the service registry. It isn't there on a client.
+The server's config files, registered as a service: get it with `TavernServices.GetService<TavernManager>()`. Server only, also with `/launcherauth`.
 
 - **Listed in** [TavernLib.Backend.Api](/tavernlib-api/types/backend-api)
 - **Inherits or implements** [`IService`](/tavernlib-api/types/services/iservice)
@@ -28,12 +28,12 @@ The service that owns the server's config files. Get it from the service registr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serverconfig" /><code><Link to="/tavernlib-api/types/backend-server-configs/serversettingsconfig">{"ServerSettingsConfig"}</Link>{" ServerConfig { get; private set; }"}</code> |  |
-| <Link id="m-tavernconfig" /><code><Link to="/tavernlib-api/types/backend-server-configs/tavernserverconfig">{"TavernServerConfig"}</Link>{" TavernConfig { get; private set; }"}</code> |  |
-| <Link id="m-userconfig" /><code><Link to="/tavernlib-api/types/backend-server-configs/userconfigfile">{"UserConfigFile"}</Link>{" UserConfig { get; private set; }"}</code> |  |
-| <Link id="m-whitelistrequests" /><code><Link to="/tavernlib-api/types/backend-server-configs/whitelistrequestsconfigfile">{"WhitelistRequestsConfigFile"}</Link>{" WhitelistRequests { get; private set; }"}</code> |  |
-| <Link id="m-authmanager" /><code>{"internal "}<Link to="/tavernlib-api/types/backend-auth/authmanager">{"AuthManager"}</Link>{" "}<Link to="/tavernlib-api/types/backend-auth/authmanager">{"AuthManager"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-listingcontroller" /><code>{"internal "}<Link to="/tavernlib-api/types/backend-server/serverlistingcontroller">{"ServerListingController"}</Link>{" ListingController { get; private set; }"}</code> |  |
+| <Link id="m-serverconfig" /><code><Link to="/tavernlib-api/types/backend-server-configs/serversettingsconfig">{"ServerSettingsConfig"}</Link>{" ServerConfig { get; private set; }"}</code> | `server_settings.json`. |
+| <Link id="m-tavernconfig" /><code><Link to="/tavernlib-api/types/backend-server-configs/tavernserverconfig">{"TavernServerConfig"}</Link>{" TavernConfig { get; private set; }"}</code> | `tavern_server.json`, the ports. |
+| <Link id="m-userconfig" /><code><Link to="/tavernlib-api/types/backend-server-configs/userconfigfile">{"UserConfigFile"}</Link>{" UserConfig { get; private set; }"}</code> | `users.json`. Change it through `Update` on this object, which is the one TavernLib writes through. |
+| <Link id="m-whitelistrequests" /><code><Link to="/tavernlib-api/types/backend-server-configs/whitelistrequestsconfigfile">{"WhitelistRequestsConfigFile"}</Link>{" WhitelistRequests { get; private set; }"}</code> | `whitelist_requests.json`. |
+| <Link id="m-authmanager" /><code>{"internal "}<Link to="/tavernlib-api/types/backend-auth/authmanager">{"AuthManager"}</Link>{" "}<Link to="/tavernlib-api/types/backend-auth/authmanager">{"AuthManager"}</Link>{" { get; private set; }"}</code> | Internal: the login server on the auth port. `null` with `/launcherauth`. |
+| <Link id="m-listingcontroller" /><code>{"internal "}<Link to="/tavernlib-api/types/backend-server/serverlistingcontroller">{"ServerListingController"}</Link>{" ListingController { get; private set; }"}</code> | Internal: the Community Servers heartbeat. `null` unless `community_listed` was on at start. |
 
 ## Methods
 

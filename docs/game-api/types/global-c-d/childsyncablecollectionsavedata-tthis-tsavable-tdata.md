@@ -1,6 +1,6 @@
 ---
 title: "ChildSyncableCollectionSaveData<TThis, TSavable, TData>"
-description: "class ChildSyncableCollectionSaveData<TThis, TSavable, TData> in Root.Township."
+description: "Save data for a ChildSyncableCollection: one saved element per child, in child order."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChildSyncableCollectionSaveData&lt;TThis, TSavable, TData&gt;
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for a `ChildSyncableCollection`: one saved element per child, in child order.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`NewSaveData<TSavable, TThis>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -26,4 +28,4 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-elements" /><code>{"TData[] elements"}</code> |  |
+| <Link id="m-elements" /><code>{"TData[] elements"}</code> | Saved data for each child, by index. |

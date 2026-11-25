@@ -1,6 +1,6 @@
 ---
 title: "EntityMessageType"
-description: "Alta.Networking.EntityMessageType is written as 8 bits, so 0 to 255."
+description: "Identifiers for messages sent through an entity's EntityMessageHandler."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **enum** in `Root.Township`, `Alta.Networking`.
 
-`Alta.Networking.EntityMessageType` is written as 8 bits, so 0 to 255.
+Identifiers for messages sent through an entity's `EntityMessageHandler`. Each entity has one handler per type, and setting a second one replaces the first, so the generic `SyncA` to `SyncE` must not clash between components on the same entity.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Derived types** [`EntityMessageStatistics`](/game-api/types/alta-networking/entitymessagestatistics)

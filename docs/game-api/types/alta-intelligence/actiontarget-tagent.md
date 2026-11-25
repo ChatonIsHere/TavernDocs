@@ -1,6 +1,6 @@
 ---
 title: "ActionTarget<TAgent>"
-description: "A struct: an action, its target (or null) and its score."
+description: "A creature AI choice: an action, the target it applies to and how strongly it's weighted."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `Root.Township`, `Alta.Intelligence`.
 
-A struct: an action, its target (or null) and its score.
+A creature AI choice: an action, the target it applies to and how strongly it's weighted.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`IActionTarget`](/game-api/types/alta-intelligence/iactiontarget)
@@ -28,9 +28,9 @@ A struct: an action, its target (or null) and its score.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-action" /><code>{"readonly "}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent> Action"}</code> |  |
-| <Link id="m-target" /><code>{"readonly "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target"}</code> |  |
-| <Link id="m-weight" /><code>{"readonly float Weight"}</code> |  |
+| <Link id="m-action" /><code>{"readonly "}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent> Action"}</code> | The action to do. |
+| <Link id="m-target" /><code>{"readonly "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target"}</code> | What the action is aimed at. |
+| <Link id="m-weight" /><code>{"readonly float Weight"}</code> | The choice's score. |
 
 ## Properties
 

@@ -1,6 +1,6 @@
 ---
 title: "BowDrawSkill"
-description: "class BowDrawSkill in Root.Township."
+description: "Bow skill that boosts the damage of the next arrow shot from a bow while the skill is active, scaled by the player's skill level."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BowDrawSkill
 
 A **class** in `Root.Township`, `Alta.Progression.Skills`.
+
+Bow skill that boosts the damage of the next arrow shot from a bow while the skill is active, scaled by the player's skill level.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`SpecificPickupBasedSkill`](/game-api/types/alta-player/specificpickupbasedskill)
@@ -27,17 +29,17 @@ A **class** in `Root.Township`, `Alta.Progression.Skills`.
 | Member | What it is |
 | --- | --- |
 | <Link id="m-bowstrings" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{", "}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{"> bowStrings"}</code> |  |
-| <Link id="m-damagemultiplierperlevel" /><code>{"protected "}<Link to="/game-api/types/alta-player/floatvaluesperlevel">{"FloatValuesPerLevel"}</Link>{" damageMultiplierPerLevel"}</code> |  |
+| <Link id="m-damagemultiplierperlevel" /><code>{"protected "}<Link to="/game-api/types/alta-player/floatvaluesperlevel">{"FloatValuesPerLevel"}</Link>{" damageMultiplierPerLevel"}</code> | Damage multiplier for each skill level. |
 | <Link id="m-inputs" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{", "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> inputs"}</code> |  |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deregister" /><code>{"override void Deregister("}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> |  |
-| <Link id="m-inputchangedstate" /><code>{"override void InputChangedState(bool isEnabled, "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> |  |
-| <Link id="m-register" /><code>{"override void Register("}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> |  |
-| <Link id="m-getdamagemultiplier" /><code>{"protected float GetDamageMultiplier("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-gettransformtocallat" /><code>{"protected override Transform GetTransformToCallAt("}<Link to="/game-api/types/global-t-x/toolbasedskillstatus">{"ToolBasedSkillStatus"}</Link>{" status, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
-| <Link id="m-handleinputchanged" /><code>{"protected virtual void HandleInputChanged(bool isEnabled, "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input, "}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{" bowString)"}</code> |  |
+| <Link id="m-deregister" /><code>{"override void Deregister("}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> | Stops tracking the input's bow string, one frame later. |
+| <Link id="m-inputchangedstate" /><code>{"override void InputChangedState(bool isEnabled, "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> | Listens for the bow string shooting while the input is enabled. A shot applies the multiplier to the arrow, uses the skill and resets the input. |
+| <Link id="m-register" /><code>{"override void Register("}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> | Starts tracking the bow string of the held bow for this input. |
+| <Link id="m-getdamagemultiplier" /><code>{"protected float GetDamageMultiplier("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | The damage multiplier for the player's level in this skill. |
+| <Link id="m-gettransformtocallat" /><code>{"protected override Transform GetTransformToCallAt("}<Link to="/game-api/types/global-t-x/toolbasedskillstatus">{"ToolBasedSkillStatus"}</Link>{" status, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Where to show skill effects: the arrow's tip if it has one, otherwise the entity itself. |
+| <Link id="m-handleinputchanged" /><code>{"protected virtual void HandleInputChanged(bool isEnabled, "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input, "}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{" bowString)"}</code> | Turns the skill effect on or off for the arrow docked on the bow string, if there is one. |
 | <Link id="m-onarrowshot" /><code>{"private void OnArrowShot("}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{" bowString, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" shotEntity, Vector3 shotVelocity)"}</code> |  |

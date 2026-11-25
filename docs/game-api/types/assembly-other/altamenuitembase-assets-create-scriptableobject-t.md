@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItemBase.Assets.Create.ScriptableObject<T>"
-description: "abstract class AltaMenuItemBase.Assets.Create.ScriptableObject<T> in Alta.MenuItem."
+description: "Editor menu item base that adds an \"Assets/Create\" entry for a ScriptableObject type T."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaMenuItemBase.Assets.Create.ScriptableObject&lt;T&gt;
 
 An **abstract class** in `Alta.MenuItem`, no namespace.
+
+Editor menu item base that adds an "Assets/Create" entry for a ScriptableObject type `T`. Asset types nest a `Create` class deriving from it. Editor-only; does nothing at runtime.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`AltaMenuItemBase.Assets.Create`](/game-api/types/assembly-other/altamenuitembase-assets-create)
@@ -34,15 +36,15 @@ An **abstract class** in `Alta.MenuItem`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-created" /><code>{"T Created { get; private set; }"}</code> |  |
-| <Link id="m-name" /><code>{"override string Name { get; }"}</code> |  |
-| <Link id="m-defaultname" /><code>{"protected virtual string DefaultName { get; }"}</code> |  |
+| <Link id="m-created" /><code>{"T Created { get; private set; }"}</code> | The asset created by the last run of the menu item. |
+| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | Menu label, the type name of `T` with spaces before capitals. |
+| <Link id="m-defaultname" /><code>{"protected virtual string DefaultName { get; }"}</code> | Default file name for new assets, "New TypeName.asset". |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-content" /><code>{"override void Content(TextWriter writer)"}</code> |  |
-| <Link id="m-externalcontent" /><code>{"override void ExternalContent(TextWriter writer)"}</code> |  |
-| <Link id="m-getpath" /><code>{"override string GetPath()"}</code> |  |
-| <Link id="m-run" /><code>{"protected override void Run()"}</code> |  |
+| <Link id="m-content" /><code>{"override void Content(TextWriter writer)"}</code> | Writes the generated editor code that creates the asset when the menu item runs. |
+| <Link id="m-externalcontent" /><code>{"override void ExternalContent(TextWriter writer)"}</code> | Writes the helper class the generated menu code needs. |
+| <Link id="m-getpath" /><code>{"override string GetPath()"}</code> | Builds the menu path from the nesting of the declaring class under `AltaMenuItemBase`. |
+| <Link id="m-run" /><code>{"protected override void Run()"}</code> | Empty in this build. |

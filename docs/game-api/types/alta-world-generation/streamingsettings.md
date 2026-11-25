@@ -1,6 +1,6 @@
 ---
 title: "StreamingSettings"
-description: "class StreamingSettings in Root.Township."
+description: "Cave settings for chunk loading distances, the cave layer prefabs, and the A graph used for cave pathfinding."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StreamingSettings
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+Cave settings for chunk loading distances, the cave layer prefabs, and the A* graph used for cave pathfinding. Get it with `CaveSettings<StreamingSettings>.Instance`.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`CaveSettings<StreamingSettings>`](/game-api/types/alta-world-generation/cavesettings-t)
@@ -55,18 +57,18 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-caveconnectioncost-2" /><code>{"float CaveConnectionCost { get; }"}</code> |  |
-| <Link id="m-cavestreamerprefab-2" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" CaveStreamerPrefab { get; }"}</code> |  |
-| <Link id="m-dynamicchunkloadradius-2" /><code>{"float DynamicChunkLoadRadius { get; }"}</code> |  |
-| <Link id="m-dynamicloaddistancemultiplier" /><code>{"float DynamicLoadDistanceMultiplier { get; set; }"}</code> |  |
-| <Link id="m-loadbounds-2" /><code>{"Vector3 LoadBounds { get; set; }"}</code> |  |
-| <Link id="m-speciallayers-2" /><code><Link to="/game-api/types/alta-world-generation/streamingsettings-speciallayer">{"StreamingSettings.SpecialLayer"}</Link>{"[] SpecialLayers { get; }"}</code> |  |
-| <Link id="m-staticchunkloadradius-2" /><code>{"float StaticChunkLoadRadius { get; }"}</code> |  |
-| <Link id="m-staticloaddistancemultiplier" /><code>{"float StaticLoadDistanceMultiplier { get; set; }"}</code> |  |
-| <Link id="m-unloadbounds-2" /><code>{"Vector3 UnloadBounds { get; set; }"}</code> |  |
+| <Link id="m-caveconnectioncost-2" /><code>{"float CaveConnectionCost { get; }"}</code> | Cost of the connections between cave layers. Not read anywhere else in this build. |
+| <Link id="m-cavestreamerprefab-2" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" CaveStreamerPrefab { get; }"}</code> | The cave layer prefab used by default and always on simple servers. |
+| <Link id="m-dynamicchunkloadradius-2" /><code>{"float DynamicChunkLoadRadius { get; }"}</code> | Default dynamic load radius of a location chunk. |
+| <Link id="m-dynamicloaddistancemultiplier" /><code>{"float DynamicLoadDistanceMultiplier { get; set; }"}</code> | Multiplies every chunk's dynamic load strength. Set by the `dynamic-load-multiplier` command. |
+| <Link id="m-loadbounds-2" /><code>{"Vector3 LoadBounds { get; set; }"}</code> | Box size for loading chunks on an optimised client. |
+| <Link id="m-speciallayers-2" /><code><Link to="/game-api/types/alta-world-generation/streamingsettings-speciallayer">{"StreamingSettings.SpecialLayer"}</Link>{"[] SpecialLayers { get; }"}</code> | Cave layers that use their own prefab, by layer number. |
+| <Link id="m-staticchunkloadradius-2" /><code>{"float StaticChunkLoadRadius { get; }"}</code> | Default static load radius of a location chunk. |
+| <Link id="m-staticloaddistancemultiplier" /><code>{"float StaticLoadDistanceMultiplier { get; set; }"}</code> | Multiplies every chunk's static load strength. Set by the `static-load-multiplier` command. |
+| <Link id="m-unloadbounds-2" /><code>{"Vector3 UnloadBounds { get; set; }"}</code> | Box size for unloading chunks on an optimised client. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcavepathfindinggraph" /><code>{"RecastGraph GetCavePathfindingGraph()"}</code> |  |
+| <Link id="m-getcavepathfindinggraph" /><code>{"RecastGraph GetCavePathfindingGraph()"}</code> | Adds a new recast graph to A* with the cave pathfinding settings and returns it. |

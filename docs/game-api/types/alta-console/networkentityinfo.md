@@ -1,6 +1,6 @@
 ---
 title: "NetworkEntityInfo"
-description: "class NetworkEntityInfo in Root.Township."
+description: "A short summary of a network entity (ID and name) returned by console commands such as spawn."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NetworkEntityInfo
 
 A **class** in `Root.Township`, `Alta.Console.Commands`.
+
+A short summary of a network entity (ID and name) returned by console commands such as spawn. Any `NetworkEntity` converts to it.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 
@@ -24,14 +26,14 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-identifier" /><code>{"uint Identifier { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
+| <Link id="m-identifier" /><code>{"uint Identifier { get; set; }"}</code> | The entity's network ID. |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The entity's original name, without the ID prefix added when it's initialized. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Builds the summary from a network entity. |
 
 ## Used in
 

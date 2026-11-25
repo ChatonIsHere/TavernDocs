@@ -1,6 +1,6 @@
 ---
 title: "PhysicalMaterial"
-description: "A HashedGeneralValue<PhysicalMaterial> asset. Data, same on both sides."
+description: "A material asset (iron, oak, copper and so on) that holds the heat, crafting, impact and bow numbers for items made of it, plus the render materials per..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-A `HashedGeneralValue<PhysicalMaterial>` asset. Data, same on both sides.
+A material asset (iron, oak, copper and so on) that holds the heat, crafting, impact and bow numbers for items made of it, plus the render materials per channel. A hashed `ScriptableObject`; look one up through `HashedGeneralValue`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`HashedGeneralValue<PhysicalMaterial>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -65,42 +65,42 @@ A `HashedGeneralValue<PhysicalMaterial>` asset. Data, same on both sides.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-damagemultiplier-2" /><code>{"float DamageMultiplier { get; }"}</code> |  |
-| <Link id="m-density-2" /><code>{"float Density { get; }"}</code> |  |
-| <Link id="m-durabilitymultiplier-2" /><code>{"float DurabilityMultiplier { get; }"}</code> |  |
-| <Link id="m-effectonfullyheated-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" EffectOnFullyHeated { get; }"}</code> |  |
-| <Link id="m-firstisdoneimpacteffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" FirstIsDoneImpactEffect { get; }"}</code> |  |
-| <Link id="m-firstisdonemesheffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" FirstIsDoneMeshEffect { get; }"}</code> |  |
-| <Link id="m-followingdoneimpactseffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" FollowingDoneImpactsEffect { get; }"}</code> |  |
-| <Link id="m-followingdonemesheffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" FollowingDoneMeshEffect { get; }"}</code> |  |
-| <Link id="m-forgemultiplier-2" /><code>{"float ForgeMultiplier { get; }"}</code> |  |
-| <Link id="m-glowingend-2" /><code>{"float GlowingEnd { get; }"}</code> |  |
-| <Link id="m-glowingstart-2" /><code>{"float GlowingStart { get; }"}</code> |  |
-| <Link id="m-hardnesslevel-2" /><code>{"uint HardnessLevel { get; }"}</code> |  |
-| <Link id="m-internalthermalconductivity-2" /><code>{"float InternalThermalConductivity { get; }"}</code> |  |
-| <Link id="m-isshowinginlist-2" /><code>{"bool IsShowingInList { get; }"}</code> |  |
-| <Link id="m-maxcraftingdamagemultiplier-2" /><code>{"float MaxCraftingDamageMultiplier { get; }"}</code> |  |
-| <Link id="m-maxinvalidprojectilevelocitymultiplier-2" /><code>{"float MaxInvalidProjectileVelocityMultiplier { get; }"}</code> |  |
-| <Link id="m-maxtemperatureforparticles-2" /><code>{"float MaxTemperatureForParticles { get; }"}</code> |  |
-| <Link id="m-meltingpoint-2" /><code>{"float MeltingPoint { get; }"}</code> |  |
-| <Link id="m-minimumprojectileweight-2" /><code>{"float MinimumProjectileWeight { get; }"}</code> |  |
-| <Link id="m-nailhealthmultiplier-2" /><code>{"float NailHealthMultiplier { get; }"}</code> |  |
-| <Link id="m-noisemultiplier-2" /><code>{"float NoiseMultiplier { get; }"}</code> |  |
-| <Link id="m-receivethermalconductivity-2" /><code>{"float ReceiveThermalConductivity { get; }"}</code> |  |
-| <Link id="m-sourcematerialhash-2" /><code>{"uint SourceMaterialHash { get; }"}</code> |  |
-| <Link id="m-sourcethermalconductivity-2" /><code>{"float SourceThermalConductivity { get; }"}</code> |  |
-| <Link id="m-tightnessbowimpact-2" /><code>{"float TightnessBowImpact { get; }"}</code> |  |
-| <Link id="m-tightnessmultiplier-2" /><code>{"float TightnessMultiplier { get; }"}</code> |  |
-| <Link id="m-weightmultiplier-2" /><code>{"float WeightMultiplier { get; }"}</code> |  |
+| <Link id="m-damagemultiplier-2" /><code>{"float DamageMultiplier { get; }"}</code> | Multiplies the damage of tools and weapons made of this material (also used for chiselling and digging). |
+| <Link id="m-density-2" /><code>{"float Density { get; }"}</code> | Divides chisel damage on timber made of this material, so denser wood takes longer to carve. |
+| <Link id="m-durabilitymultiplier-2" /><code>{"float DurabilityMultiplier { get; }"}</code> | Multiplies the base durability of a `DurabilityModule` on items of this material. |
+| <Link id="m-effectonfullyheated-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" EffectOnFullyHeated { get; }"}</code> | Pooled effect a metal or melting heat point spawns once its temperature passes `MaxTemperatureForParticles`. |
+| <Link id="m-firstisdoneimpacteffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" FirstIsDoneImpactEffect { get; }"}</code> | Pooled effect spawned at the hit point the first time a forged model is finished by a hammer blow. |
+| <Link id="m-firstisdonemesheffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" FirstIsDoneMeshEffect { get; }"}</code> | Pooled mesh effect for the first time a forged model is finished. |
+| <Link id="m-followingdoneimpactseffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" FollowingDoneImpactsEffect { get; }"}</code> | Pooled effect spawned on hits to a forged model that is already finished. |
+| <Link id="m-followingdonemesheffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" FollowingDoneMeshEffect { get; }"}</code> | Pooled mesh effect for hits after a forged model is finished. |
+| <Link id="m-forgemultiplier-2" /><code>{"float ForgeMultiplier { get; }"}</code> | Multiplies how much shaping progress each anvil hit gives a forged model of this material. |
+| <Link id="m-glowingend-2" /><code>{"float GlowingEnd { get; }"}</code> | Temperature where glow caps out. Also the temperature every melting heat point must reach before the recycler melts the item. |
+| <Link id="m-glowingstart-2" /><code>{"float GlowingStart { get; }"}</code> | Temperature where a heated metal item starts to glow. |
+| <Link id="m-hardnesslevel-2" /><code>{"uint HardnessLevel { get; }"}</code> | Hardness tier copied to impact generators and detectors. A tool cannot damage a detector with a higher hardness level. |
+| <Link id="m-internalthermalconductivity-2" /><code>{"float InternalThermalConductivity { get; }"}</code> | Conductivity (W/m.k) between heat points inside the same item; used by metal and melting heat points. |
+| <Link id="m-isshowinginlist-2" /><code>{"bool IsShowingInList { get; }"}</code> | Whether the spawn command lists this material as an option. |
+| <Link id="m-maxcraftingdamagemultiplier-2" /><code>{"float MaxCraftingDamageMultiplier { get; }"}</code> | Raises the damage threshold at which a crafting nail breaks, so strong nails stay valid. |
+| <Link id="m-maxinvalidprojectilevelocitymultiplier-2" /><code>{"float MaxInvalidProjectileVelocityMultiplier { get; }"}</code> | Velocity multiplier a bow uses for a projectile lighter than `MinimumProjectileWeight`. |
+| <Link id="m-maxtemperatureforparticles-2" /><code>{"float MaxTemperatureForParticles { get; }"}</code> | Above this temperature metal and melting heat points spawn `EffectOnFullyHeated`. |
+| <Link id="m-meltingpoint-2" /><code>{"float MeltingPoint { get; }"}</code> | Serialized as the temperature at which the recycler consumes the item, but nothing in this build reads it; melting checks `GlowingEnd` instead. |
+| <Link id="m-minimumprojectileweight-2" /><code>{"float MinimumProjectileWeight { get; }"}</code> | Projectiles lighter than this fire at reduced speed from a bow of this material. -1 turns the check off. |
+| <Link id="m-nailhealthmultiplier-2" /><code>{"float NailHealthMultiplier { get; }"}</code> | Damage resistance when nailing a crafting part made of this material. |
+| <Link id="m-noisemultiplier-2" /><code>{"float NoiseMultiplier { get; }"}</code> | Multiplies the stat impact value of hits from a pickup of this material (for example shield bashing). |
+| <Link id="m-receivethermalconductivity-2" /><code>{"float ReceiveThermalConductivity { get; }"}</code> | Conductivity (W/m.k) used when this material takes heat from another object. |
+| <Link id="m-sourcematerialhash-2" /><code>{"uint SourceMaterialHash { get; }"}</code> | Prefab hash of the raw material (ingot or similar) the recycler spawns when melting items of this material. |
+| <Link id="m-sourcethermalconductivity-2" /><code>{"float SourceThermalConductivity { get; }"}</code> | Conductivity (W/m.k) used when this material gives heat to another object. |
+| <Link id="m-tightnessbowimpact-2" /><code>{"float TightnessBowImpact { get; }"}</code> | How much `TightnessMultiplier` affects a bow string's pull speed. |
+| <Link id="m-tightnessmultiplier-2" /><code>{"float TightnessMultiplier { get; }"}</code> | Multiplies bow string tightness, which changes how far a bow of this wood fires. |
+| <Link id="m-weightmultiplier-2" /><code>{"float WeightMultiplier { get; }"}</code> | Multiplies a pickup's raw weight to give its physical weight. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getmaterial" /><code>{"Material GetMaterial("}<Link to="/game-api/types/global-p/physicalmaterialchannel">{"PhysicalMaterialChannel"}</Link>{" channel)"}</code> |  |
-| <Link id="m-getnonatlasednondeformingmaterial" /><code>{"Material GetNonAtlasedNonDeformingMaterial("}<Link to="/game-api/types/global-p/physicalmaterialchannel">{"PhysicalMaterialChannel"}</Link>{" channel)"}</code> |  |
-| <Link id="m-getnondeformingmaterial" /><code><Link to="/game-api/types/alta-utilities/materialrect">{"MaterialRect"}</Link>{" GetNonDeformingMaterial("}<Link to="/game-api/types/global-p/physicalmaterialchannel">{"PhysicalMaterialChannel"}</Link>{" channel)"}</code> |  |
-| <Link id="m-setup" /><code>{"bool Setup("}<Link to="/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{" definition)"}</code> |  |
+| <Link id="m-getmaterial" /><code>{"Material GetMaterial("}<Link to="/game-api/types/global-p/physicalmaterialchannel">{"PhysicalMaterialChannel"}</Link>{" channel)"}</code> | Returns the Unity render material for a `PhysicalMaterialChannel`. Falls back to channel 0 if the channel is out of range. |
+| <Link id="m-getnonatlasednondeformingmaterial" /><code>{"Material GetNonAtlasedNonDeformingMaterial("}<Link to="/game-api/types/global-p/physicalmaterialchannel">{"PhysicalMaterialChannel"}</Link>{" channel)"}</code> | Returns the plain non-deforming render material for a channel, without the atlas offset. |
+| <Link id="m-getnondeformingmaterial" /><code><Link to="/game-api/types/alta-utilities/materialrect">{"MaterialRect"}</Link>{" GetNonDeformingMaterial("}<Link to="/game-api/types/global-p/physicalmaterialchannel">{"PhysicalMaterialChannel"}</Link>{" channel)"}</code> | Returns the atlased non-deforming material for a channel as a `MaterialRect` (atlas material plus offset and scale). |
+| <Link id="m-setup" /><code>{"bool Setup("}<Link to="/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{" definition)"}</code> | Editor/build: fills in atlas offsets for each channel from an `AtlasDefinition`. Returns true if any channel matched. |
 | <Link id="m-getchannel" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial-materialchannel">{"PhysicalMaterial.MaterialChannel"}</Link>{" GetChannel(int index)"}</code> |  |
 
 ## Used in

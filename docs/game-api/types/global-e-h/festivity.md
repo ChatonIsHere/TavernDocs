@@ -1,6 +1,6 @@
 ---
 title: "Festivity"
-description: "class Festivity in Root.Township."
+description: "A seasonal event asset with a start and end date."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Festivity
 
 A **class** in `Root.Township`, no namespace.
+
+A seasonal event asset with a start and end date. `FestivityManager` turns it on and off on the server and syncs the state to clients.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`HashedGeneralValue<Festivity>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -38,16 +40,16 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-end-2" /><code><Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" End { get; }"}</code> |  |
-| <Link id="m-isactivated" /><code>{"bool IsActivated { get; set; }"}</code> |  |
-| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; }"}</code> |  |
-| <Link id="m-start-2" /><code><Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" Start { get; }"}</code> |  |
+| <Link id="m-end-2" /><code><Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" End { get; }"}</code> | Month, day and hour the festivity ends. |
+| <Link id="m-isactivated" /><code>{"bool IsActivated { get; set; }"}</code> | Whether the festivity is running now. Set by `FestivityManager`, which resets it from the dates every second. |
+| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; }"}</code> | Inspector switch. The server only activates enabled festivities, rechecking the dates every second. |
+| <Link id="m-start-2" /><code><Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" Start { get; }"}</code> | Month, day and hour the festivity starts. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activationchanged" /><code>{"event Action<"}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{"> ActivationChanged"}</code> |  |
+| <Link id="m-activationchanged" /><code>{"event Action<"}<Link to="/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{"> ActivationChanged"}</code> | Raised when `IsActivated` changes. |
 
 ## Methods
 

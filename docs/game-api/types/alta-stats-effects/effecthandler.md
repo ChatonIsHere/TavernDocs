@@ -1,6 +1,6 @@
 ---
 title: "EffectHandler"
-description: "On anything effects can reach."
+description: "Component next to a HealthObject that receives potion and alchemy effects: poison over time, teleporting and reveal."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Alchemy`.
 
-On anything effects can reach.
+Component next to a `HealthObject` that receives potion and alchemy effects: poison over time, teleporting and reveal. Reach it through `HealthObject.EffectHandler`; players use the `PlayerEffectController` subclass.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** `MonoBehaviour`
@@ -33,7 +33,7 @@ On anything effects can reach.
 | <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |  |
 | <Link id="m-health" /><code>{"private "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" health"}</code> |  |
 | <Link id="m-immuneto" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effecthandler-effecttypes">{"EffectHandler.EffectTypes"}</Link>{" immuneTo"}</code> |  |
-| <Link id="m-isteleportable" /><code>{"protected bool isTeleportable"}</code> |  |
+| <Link id="m-isteleportable" /><code>{"protected bool isTeleportable"}</code> | False during the teleport cooldown. |
 | <Link id="m-poisoncoroutine" /><code>{"private Coroutine poisonCoroutine"}</code> |  |
 | <Link id="m-poisonfrequency" /><code>{"private float poisonFrequency"}</code> |  |
 | <Link id="m-poisonmultiplier" /><code>{"private float poisonMultiplier"}</code> |  |
@@ -45,29 +45,29 @@ On anything effects can reach.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity-2" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> |  |
-| <Link id="m-health-2" /><code><Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" Health { get; }"}</code> |  |
-| <Link id="m-poisonstacks" /><code>{"int PoisonStacks { get; protected set; }"}</code> |  |
-| <Link id="m-statmanager-2" /><code><Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-entity-2" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | The `NetworkEntity` this handler belongs to. |
+| <Link id="m-health-2" /><code><Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" Health { get; }"}</code> | The health object poison damages. |
+| <Link id="m-poisonstacks" /><code>{"int PoisonStacks { get; protected set; }"}</code> | How many poison effects are active. Poison stops when it reaches 0. |
+| <Link id="m-statmanager-2" /><code><Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" { get; }"}</code> | The stat manager that stat effects change. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onreveal" /><code>{"event Action OnReveal"}</code> |  |
+| <Link id="m-onreveal" /><code>{"event Action OnReveal"}</code> | Raised by `Reveal`. Phantoms listen to it to become visible. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-poisonovertime" /><code>{"virtual void PoisonOverTime(float strength)"}</code> |  |
-| <Link id="m-reveal" /><code>{"virtual void Reveal()"}</code> |  |
-| <Link id="m-teleport" /><code>{"virtual void Teleport(Vector3 position, float strength, "}<Link to="/game-api/types/alta-stats-effects/effecthandler-teleporttype">{"EffectHandler.TeleportType"}</Link>{" teleportType = 0)"}</code> |  |
+| <Link id="m-poisonovertime" /><code>{"virtual void PoisonOverTime(float strength)"}</code> | A positive strength adds a poison stack (damage each second at the strongest strength so far); zero or less removes one. |
+| <Link id="m-reveal" /><code>{"virtual void Reveal()"}</code> | Raises `OnReveal`, unless immune to reveal. |
+| <Link id="m-teleport" /><code>{"virtual void Teleport(Vector3 position, float strength, "}<Link to="/game-api/types/alta-stats-effects/effecthandler-teleporttype">{"EffectHandler.TeleportType"}</Link>{" teleportType = 0)"}</code> | Moves the object to a position (the move happens on the server), then blocks further teleports for 2 seconds. Ignored if immune. |
 | <Link id="m-effectovertime" /><code>{"internal void EffectOverTime("}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectToModify, float strength, int duration, Action<"}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", float> handleUpdate)"}</code> |  |
 | <Link id="m-effectovertimeloop" /><code>{"private IEnumerator EffectOverTimeLoop(Queue<"}<Link to="/game-api/types/alta-stats-effects/effecthandler-effectovertimedata">{"EffectHandler.EffectOverTimeData"}</Link>{"> queue) (iterator)"}</code> |  |
 | <Link id="m-runpoison" /><code>{"private IEnumerator RunPoison() (iterator)"}</code> |  |
 | <Link id="m-start" /><code>{"private void Start()"}</code> |  |
-| <Link id="m-teleportcooldown" /><code>{"protected IEnumerator TeleportCooldown() (iterator)"}</code> |  |
+| <Link id="m-teleportcooldown" /><code>{"protected IEnumerator TeleportCooldown() (iterator)"}</code> | Coroutine that re-enables teleporting after 2 seconds. |
 
 ## Used in
 

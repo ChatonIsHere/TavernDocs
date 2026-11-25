@@ -12,13 +12,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Api.Client
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`LoginCredentials`](/game-api/types/assembly-api-client/logincredentials) | class |  | 4 |  |
 
 ## Alta.Api.Client.HighLevel
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AcceptReject`](/game-api/types/assembly-api-client/acceptreject) | abstract class |  | 2 |  |
 | [`AccountClient`](/game-api/types/assembly-api-client/accountclient) | internal class | `HighLevelApiClientBase`, `IAccountClient` | 6 |  |
@@ -39,7 +39,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`GroupRoles`](/game-api/types/assembly-api-client/grouproles) | class |  | 2 |  |
 | [`GroupsClient`](/game-api/types/assembly-api-client/groupsclient) | internal class | `HighLevelApiClientBase`, `IGroupsClient` | 7 |  |
 | [`HighLevelApiClient`](/game-api/types/assembly-api-client/highlevelapiclient) | class | `IHighLevelApiClientManager`, `IHighLevelApiClient` | 35 |  |
-| [`HighLevelApiClientBase`](/game-api/types/assembly-api-client/highlevelapiclientbase) | abstract class |  | 0 |  |
+| [`HighLevelApiClientBase`](/game-api/types/assembly-api-client/highlevelapiclientbase) | abstract class |  | 0 | Internal base for the high level web API client parts; each holds a reference to the low level client manager. Not constructible outside the API client assembly. |
 | [`HighLevelApiClientFactory`](/game-api/types/assembly-api-client/highlevelapiclientfactory) | static class |  | 16 |  |
 | [`IAccountClient`](/game-api/types/assembly-api-client/iaccountclient) | interface |  | 5 |  |
 | [`IAchievementClient`](/game-api/types/assembly-api-client/iachievementclient) | interface |  | 4 |  |
@@ -70,7 +70,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`IShopEditor`](/game-api/types/assembly-api-client/ishopeditor) | interface |  | 9 |  |
 | [`IShopPurchase`](/game-api/types/assembly-api-client/ishoppurchase) | interface |  | 1 |  |
 | [`ISocialClient`](/game-api/types/assembly-api-client/isocialclient) | interface |  | 9 |  |
-| [`IUserApiClient`](/game-api/types/assembly-api-client/iuserapiclient) | interface |  | 21 |  |
+| [`IUserApiClient`](/game-api/types/assembly-api-client/iuserapiclient) | interface |  | 21 | The user account part of Alta's web API: user lookups, verification, roles and cosmetic presets. Reached through `ApiAccess.ApiClient.UserClient`. Every method except `Logout` makes a web request. |
 | [`IVoiceApiClient`](/game-api/types/assembly-api-client/ivoiceapiclient) | interface |  | 2 |  |
 | [`JoinableGroupInfo`](/game-api/types/assembly-api-client/joinablegroupinfo) | class |  | 2 |  |
 | [`JoinedGroupManager`](/game-api/types/assembly-api-client/joinedgroupmanager) | class |  | 7 |  |
@@ -130,14 +130,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Api.Client.HighLevel.Subscriptions
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`Test`](/game-api/types/assembly-api-client/test) | static class |  | 1 |  |
 | [`WebSocketManager`](/game-api/types/assembly-api-client/websocketmanager) | class |  | 3 |  |
 
 ## Alta.Api.Client.LowLevel
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ApiBatchRequestService`](/game-api/types/assembly-api-client/apibatchrequestservice) | static class |  | 1 |  |
 | [`BatchedRequestEntry`](/game-api/types/assembly-api-client/batchedrequestentry) | class |  | 2 |  |
@@ -145,13 +145,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`DoubleBufferedQueue<T>`](/game-api/types/assembly-api-client/doublebufferedqueue-t) | class |  | 3 |  |
 | [`IPagedResult<T>`](/game-api/types/assembly-api-client/ipagedresult-t) | interface |  | 4 |  |
 | [`LoginCredentialsChangedHandler`](/game-api/types/assembly-api-client/logincredentialschangedhandler) | delegate |  | 0 |  |
-| [`LowLevelApiClient`](/game-api/types/assembly-api-client/lowlevelapiclient) | class |  | 164 |  |
+| [`LowLevelApiClient`](/game-api/types/assembly-api-client/lowlevelapiclient) | class |  | 164 | The HTTP layer under `IHighLevelApiClient`: one method per endpoint of Alta's web API, which no longer answers. Most methods first refresh the login if needed (throwing `AuthorizationException` with none), and failed responses throw `ApiErrorException`, `ForbiddenException` or `HttpException`. |
 | [`PagedConfig`](/game-api/types/assembly-api-client/pagedconfig) | class |  | 4 |  |
 | [`PagedResult<T>`](/game-api/types/assembly-api-client/pagedresult-t) | class | `IPagedResult<T>` | 5 |  |
 
 ## Alta.Api.Client.Utility
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ClientTokenUtility`](/game-api/types/assembly-api-client/clienttokenutility) | static class |  | 1 |  |
 | [`LoginUtilities`](/game-api/types/assembly-api-client/loginutilities) | static class |  | 1 |  |

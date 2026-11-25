@@ -1,6 +1,6 @@
 ---
 title: "HeatPoint"
-description: "Implements IHeatReceiver (and so IHeatSource). Usually several per item, held by a HeatPointCollection on the entity, which saves and syncs them."
+description: "One point of temperature on an object."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Heat`.
 
-Implements `IHeatReceiver` (and so `IHeatSource`). Usually several per item, held by a `HeatPointCollection` on the entity, which saves and syncs them.
+One point of temperature on an object. The server conducts heat between neighbouring points, heat areas and the ambient air every physics step and syncs the temperature to clients. A component on a prefab, usually under a heat point collection.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** `MonoBehaviour`, [`IChildSyncable<HeatPoint, HeatPointCollectionSaveData.Element>`](/game-api/types/global-i-l/ichildsyncable-t-telementsavedata), [`IChildSyncable<HeatPoint>`](/game-api/types/global-i-l/ichildsyncable-t-telementsavedata), [`IHeatReceiver`](/game-api/types/alta-stats-effects/iheatreceiver), [`IHeatSource`](/game-api/types/alta-stats-effects/iheatsource), [`IBuildRendererBakeable`](/game-api/types/assembly-other/ibuildrendererbakeable), [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable)
@@ -36,63 +36,63 @@ Implements `IHeatReceiver` (and so `IHeatSource`). Usually several per item, hel
 | <Link id="m-equipmentslot" /><code>{"private "}<Link to="/game-api/types/alta-items/equipmentreference">{"EquipmentReference"}</Link>{" equipmentSlot"}</code> |  |
 | <Link id="m-haschangedsynclastsync" /><code>{"private bool hasChangedSyncLastSync"}</code> |  |
 | <Link id="m-heatareapriorities" /><code>{"private List<int> heatAreaPriorities"}</code> |  |
-| <Link id="m-internalconductivitymultiplier" /><code>{"protected float internalConductivityMultiplier"}</code> |  |
+| <Link id="m-internalconductivitymultiplier" /><code>{"protected float internalConductivityMultiplier"}</code> | Serialized base for internal conduction. `ConductTo` squares this raw field for same-entity points, skipping the global and armour multipliers. |
 | <Link id="m-ischanged" /><code>{"private bool isChanged"}</code> |  |
 | <Link id="m-neighbours" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint-neighbour">{"HeatPoint.Neighbour"}</Link>{"[] neighbours"}</code> |  |
 | <Link id="m-positionhelper" /><code>{"private "}<Link to="/game-api/types/global-p/positionfromoriginhelper">{"PositionFromOriginHelper"}</Link>{" positionHelper"}</code> |  |
-| <Link id="m-receiveconductivitymultiplier" /><code>{"protected float receiveConductivityMultiplier"}</code> |  |
-| <Link id="m-sourceconductivitymultiplier" /><code>{"protected float sourceConductivityMultiplier"}</code> |  |
+| <Link id="m-receiveconductivitymultiplier" /><code>{"protected float receiveConductivityMultiplier"}</code> | Serialized base for `ReceiveConductivityMultiplier`. |
+| <Link id="m-sourceconductivitymultiplier" /><code>{"protected float sourceConductivityMultiplier"}</code> | Serialized base for `SourceConductivityMultiplier`. |
 | <Link id="m-temperature" /><code>{"private float temperature"}</code> |  |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ambientchecker" /><code><Link to="/game-api/types/global-a-b/ambienttemperaturechecker">{"AmbientTemperatureChecker"}</Link>{" AmbientChecker { get; }"}</code> |  |
-| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> |  |
-| <Link id="m-globalconductivitymultiplier" /><code>{"static float GlobalConductivityMultiplier { get; set; }"}</code> |  |
-| <Link id="m-highestpriorityheatarea" /><code>{"int HighestPriorityHeatArea { get; private set; }"}</code> |  |
-| <Link id="m-internalenergy" /><code>{"float InternalEnergy { get; set; }"}</code> |  |
-| <Link id="m-isambienttemperature" /><code>{"bool IsAmbientTemperature { get; private set; }"}</code> |  |
-| <Link id="m-isconductionallowed" /><code>{"bool IsConductionAllowed { get; set; }"}</code> |  |
-| <Link id="m-iscountedformelting" /><code>{"virtual bool IsCountedforMelting { get; }"}</code> |  |
-| <Link id="m-isdisplayingtemperature" /><code>{"static bool IsDisplayingTemperature { get; set; }"}</code> |  |
-| <Link id="m-isignoringambienceforced" /><code>{"bool IsIgnoringAmbienceForced { get; set; }"}</code> |  |
-| <Link id="m-isignoringambient" /><code>{"bool IsIgnoringAmbient { get; set; }"}</code> |  |
-| <Link id="m-positionhelper-2" /><code><Link to="/game-api/types/global-p/positionfromoriginhandler">{"PositionFromOriginHandler"}</Link>{" PositionHelper { get; private set; }"}</code> |  |
-| <Link id="m-receiveconductivitymultiplier-2" /><code>{"virtual float ReceiveConductivityMultiplier { get; }"}</code> |  |
-| <Link id="m-sourceconductivitymultiplier-2" /><code>{"virtual float SourceConductivityMultiplier { get; }"}</code> |  |
-| <Link id="m-temperature-2" /><code>{"float Temperature { get; set; }"}</code> |  |
-| <Link id="m-volume" /><code>{"float Volume { get; set; }"}</code> |  |
-| <Link id="m-activeeffect" /><code>{"protected "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" ActiveEffect { get; private set; }"}</code> |  |
+| <Link id="m-ambientchecker" /><code><Link to="/game-api/types/global-a-b/ambienttemperaturechecker">{"AmbientTemperatureChecker"}</Link>{" AmbientChecker { get; }"}</code> | Works out the ambient temperature for the entity's position and whether a temperature counts as ambient. |
+| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> | The network entity this point belongs to; set by its collection. |
+| <Link id="m-globalconductivitymultiplier" /><code>{"static float GlobalConductivityMultiplier { get; set; }"}</code> | Static multiplier on all conduction, set by a settings console command. |
+| <Link id="m-highestpriorityheatarea" /><code>{"int HighestPriorityHeatArea { get; private set; }"}</code> | Priority of the strongest heat area affecting this point, or -1 when none. Lower priority areas skip it. |
+| <Link id="m-internalenergy" /><code>{"float InternalEnergy { get; set; }"}</code> | Temperature times volume. Conduction moves energy, so bigger points change temperature more slowly. |
+| <Link id="m-isambienttemperature" /><code>{"bool IsAmbientTemperature { get; private set; }"}</code> | True when the temperature matches ambient. Ambient points with ambient neighbours disable themselves to save work. |
+| <Link id="m-isconductionallowed" /><code>{"bool IsConductionAllowed { get; set; }"}</code> | When false this point's own energy is not changed by conduction. Heat sources turn it off while burning. |
+| <Link id="m-iscountedformelting" /><code>{"virtual bool IsCountedforMelting { get; }"}</code> | Whether this point must reach `GlowingEnd` before a melting model counts as melted. |
+| <Link id="m-isdisplayingtemperature" /><code>{"static bool IsDisplayingTemperature { get; set; }"}</code> | Static debug flag for showing temperatures. |
+| <Link id="m-isignoringambienceforced" /><code>{"bool IsIgnoringAmbienceForced { get; set; }"}</code> | When true the point never conducts to ambient air. Set while embers or a burning heat source hold it. |
+| <Link id="m-isignoringambient" /><code>{"bool IsIgnoringAmbient { get; set; }"}</code> | Skips ambient conduction for the next physics step; reset to `IsIgnoringAmbienceForced` after each step. |
+| <Link id="m-positionhelper-2" /><code><Link to="/game-api/types/global-p/positionfromoriginhandler">{"PositionFromOriginHandler"}</Link>{" PositionHelper { get; private set; }"}</code> | Gives the point's position relative to the world origin, used for ambient lookups. |
+| <Link id="m-receiveconductivitymultiplier-2" /><code>{"virtual float ReceiveConductivityMultiplier { get; }"}</code> | Multiplier when this point takes heat, including the global multiplier and worn armour. |
+| <Link id="m-sourceconductivitymultiplier-2" /><code>{"virtual float SourceConductivityMultiplier { get; }"}</code> | Multiplier when this point gives heat, including the global multiplier and worn armour. |
+| <Link id="m-temperature-2" /><code>{"float Temperature { get; set; }"}</code> | Current temperature. Setting it runs `TemperatureModifier`, then on the server marks the entity for sync. |
+| <Link id="m-volume" /><code>{"float Volume { get; set; }"}</code> | Heat capacity of the point. Starts at the serialized base volume. |
+| <Link id="m-activeeffect" /><code>{"protected "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" ActiveEffect { get; private set; }"}</code> | The pooled visual effect currently attached (glow, smoke and so on), or null. |
 | <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |  |
-| <Link id="m-internalconductivitymultiplier-2" /><code>{"protected virtual float InternalConductivityMultiplier { get; }"}</code> |  |
+| <Link id="m-internalconductivitymultiplier-2" /><code>{"protected virtual float InternalConductivityMultiplier { get; }"}</code> | Conductivity between points on the same entity, including global and armour multipliers. Overridden by metal heat points. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changed" /><code>{"event Action<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> Changed"}</code> |  |
-| <Link id="m-temperaturemodifier" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/temperaturemodifier">{"TemperatureModifier"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/temperaturemodifier">{"TemperatureModifier"}</Link></code> |  |
+| <Link id="m-changed" /><code>{"event Action<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> Changed"}</code> | Raised when the temperature changes, including when it falls back to ambient. |
+| <Link id="m-temperaturemodifier" /><code>{"event "}<Link to="/game-api/types/alta-stats-effects/temperaturemodifier">{"TemperatureModifier"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/temperaturemodifier">{"TemperatureModifier"}</Link></code> | Event that can change a temperature before it is stored (passed by ref). |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-conduct" /><code>{"void Conduct(float temperature, bool isIgnoringAmbient, float weight = 1)"}</code> |  |
-| <Link id="m-conductto" /><code>{"void ConductTo("}<Link to="/game-api/types/alta-stats-effects/iheatreceiver">{"IHeatReceiver"}</Link>{" receiver, bool isSource, bool isIgnoringAmbient = false, float weight = 1)"}</code> |  |
-| <Link id="m-conducttoambient" /><code>{"virtual void ConductToAmbient(float weight = 1)"}</code> |  |
-| <Link id="m-copyfrom" /><code>{"void CopyFrom("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" other)"}</code> |  |
-| <Link id="m-deregisterheatareapriority" /><code>{"void DeregisterHeatAreaPriority(int heatAreaPriority)"}</code> |  |
-| <Link id="m-forcetemperature" /><code>{"void ForceTemperature(float temperature)"}</code> |  |
-| <Link id="m-initialize" /><code>{"virtual void Initialize("}<Link to="/game-api/types/global-c-d/childsyncablecollectionbase-t">{"ChildSyncableCollectionBase"}</Link>{"<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> collection)"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-isequal" /><code>{"bool IsEqual("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" other)"}</code> |  |
-| <Link id="m-isneedingsync" /><code>{"bool IsNeedingSync()"}</code> |  |
-| <Link id="m-registerheatareapriority" /><code>{"void RegisterHeatAreaPriority(int heatAreaPriority)"}</code> |  |
-| <Link id="m-sync" /><code>{"void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-addeffect" /><code>{"protected void AddEffect("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effect)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
+| <Link id="m-conduct" /><code>{"void Conduct(float temperature, bool isIgnoringAmbient, float weight = 1)"}</code> | Server: moves this point toward a given temperature, scaled by weight, frame time and the receive or source multiplier. |
+| <Link id="m-conductto" /><code>{"void ConductTo("}<Link to="/game-api/types/alta-stats-effects/iheatreceiver">{"IHeatReceiver"}</Link>{" receiver, bool isSource, bool isIgnoringAmbient = false, float weight = 1)"}</code> | Exchanges heat energy with another receiver, limited so neither overshoots. Points on the same entity use the internal multiplier. |
+| <Link id="m-conducttoambient" /><code>{"virtual void ConductToAmbient(float weight = 1)"}</code> | Conducts toward the ambient temperature and marks the point as ignoring ambient for this step. |
+| <Link id="m-copyfrom" /><code>{"void CopyFrom("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" other)"}</code> | Sets this point's temperature to another point's. |
+| <Link id="m-deregisterheatareapriority" /><code>{"void DeregisterHeatAreaPriority(int heatAreaPriority)"}</code> | Removes a heat area's priority when that area stops affecting this point. |
+| <Link id="m-forcetemperature" /><code>{"void ForceTemperature(float temperature)"}</code> | Sets the temperature directly (through internal energy). |
+| <Link id="m-initialize" /><code>{"virtual void Initialize("}<Link to="/game-api/types/global-c-d/childsyncablecollectionbase-t">{"ChildSyncableCollectionBase"}</Link>{"<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> collection)"}</code> | Hooks up neighbour and ambient change events on the server. On clients the component is disabled, so no conduction runs there. |
+| <Link id="m-initializeasserver" /><code>{"void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: enables the point if it or a neighbour is away from ambient, and pushes the first change. |
+| <Link id="m-isequal" /><code>{"bool IsEqual("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" other)"}</code> | True if another point's temperature is within 0.0001. |
+| <Link id="m-isneedingsync" /><code>{"bool IsNeedingSync()"}</code> | True if the temperature changed since the last sync. |
+| <Link id="m-registerheatareapriority" /><code>{"void RegisterHeatAreaPriority(int heatAreaPriority)"}</code> | Called by a heat area when it starts affecting this point; updates `HighestPriorityHeatArea`. |
+| <Link id="m-sync" /><code>{"void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the temperature (or just an is-ambient flag) for network sync. Clients apply the read value. |
+| <Link id="m-addeffect" /><code>{"protected void AddEffect("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effect)"}</code> | Spawns a pooled effect under the effect parent if no effect is active yet. |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Sets up the position helper, sets `Volume` to the base volume and listens for armour changes on the linked equipment slot. |
 | <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |  |
 | <Link id="m-checkambientchange" /><code>{"private void CheckAmbientChange()"}</code> |  |
 | <Link id="m-checkenable" /><code>{"private void CheckEnable()"}</code> |  |
@@ -100,15 +100,15 @@ Implements `IHeatReceiver` (and so `IHeatSource`). Usually several per item, hel
 | <Link id="m-euipmentchanged" /><code>{"private void EuipmentChanged("}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" definition)"}</code> |  |
 | <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |  |
 | <Link id="m-neighbourchanged" /><code>{"private void NeighbourChanged("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" neighbour)"}</code> |  |
-| <Link id="m-nonambientchanged" /><code>{"protected virtual void NonAmbientChanged()"}</code> |  |
+| <Link id="m-nonambientchanged" /><code>{"protected virtual void NonAmbientChanged()"}</code> | Called when the temperature changes while not ambient. Shows effects (not on headless servers) and raises `Changed`. |
 | <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"protected virtual void OnDisable()"}</code> |  |
+| <Link id="m-ondisable" /><code>{"protected virtual void OnDisable()"}</code> | Resets the temperature to ambient whenever the component is disabled. |
 | <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> |  |
+| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Empty hook for subclasses. |
 | <Link id="m-releaseeffect" /><code>{"private void ReleaseEffect("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-removeeffect" /><code>{"protected void RemoveEffect()"}</code> |  |
-| <Link id="m-resettoambient" /><code>{"protected virtual void ResetToAmbient()"}</code> |  |
-| <Link id="m-showeffects" /><code>{"protected virtual void ShowEffects()"}</code> |  |
+| <Link id="m-removeeffect" /><code>{"protected void RemoveEffect()"}</code> | Releases the active pooled effect, if any. |
+| <Link id="m-resettoambient" /><code>{"protected virtual void ResetToAmbient()"}</code> | Called when the point returns to ambient: removes effects and raises `Changed`. |
+| <Link id="m-showeffects" /><code>{"protected virtual void ShowEffects()"}</code> | Empty hook that subclasses use to show glow or particles for the current temperature. |
 
 ## Used in
 

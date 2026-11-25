@@ -1,6 +1,6 @@
 ---
 title: "StaticEnvironmentPiece"
-description: "An asset for a non-networked environment piece, with its prefab and surface material. Instances are pooled and spawned by ID."
+description: "An asset for a non-networked environment piece, with its prefab and surface material."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

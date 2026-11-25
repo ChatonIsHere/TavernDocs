@@ -1,6 +1,6 @@
 ---
 title: "UserInfoAccess"
-description: "class UserInfoAccess in Root.Township."
+description: "A user given by id or username, looked up through Alta's web API on first use and cached."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UserInfoAccess
 
 A **class** in `Root.Township`, no namespace.
+
+A user given by id or username, looked up through Alta's web API on first use and cached. Console commands use it for user arguments. The API is gone, so lookups wait for the timeout unless a mod answers them.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Derived types** [`UserList`](/game-api/types/global-t-x/userlist)
@@ -41,17 +43,17 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-userinfo-2" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-userinfo-2" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" { get; }"}</code> | The user info, or null before the lookup or if not found. |
 | <Link id="m-doesuserexist" /><code>{"private bool DoesUserExist { get; }"}</code> |  |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getidentifier" /><code>{"async Task<int> GetIdentifier()"}</code> |  |
-| <Link id="m-getusername" /><code>{"async Task<string> GetUsername()"}</code> |  |
-| <Link id="m-isvalid" /><code>{"async Task<bool> IsValid()"}</code> |  |
-| <Link id="m-providedargument" /><code>{"string ProvidedArgument()"}</code> |  |
+| <Link id="m-getidentifier" /><code>{"async Task<int> GetIdentifier()"}</code> | The user's id, looking it up if needed. -1 if not found. |
+| <Link id="m-getusername" /><code>{"async Task<string> GetUsername()"}</code> | The user's name, looking it up if needed. Empty if not found. |
+| <Link id="m-isvalid" /><code>{"async Task<bool> IsValid()"}</code> | Looks up the user if needed and returns whether they exist. |
+| <Link id="m-providedargument" /><code>{"string ProvidedArgument()"}</code> | The id or lowercased username it was made from. |
 | <Link id="m-addtocache" /><code>{"private void AddToCache()"}</code> |  |
 | <Link id="m-searchforuserasync" /><code>{"private async Task SearchForUserAsync()"}</code> |  |
 

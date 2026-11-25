@@ -1,6 +1,6 @@
 ---
 title: "BowString"
-description: "class BowString in Root.Township."
+description: "The grabbable string of a bow."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BowString
 
 A **class** in `Root.Township`, no namespace.
+
+The grabbable string of a bow. Pulling it moves the string within limits, drives the bow's draw animation and haptics, and an arrow docked in it is shot on release.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour)
@@ -60,25 +62,25 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bow-2" /><code><Link to="/game-api/types/global-a-b/bow">{"Bow"}</Link>{" "}<Link to="/game-api/types/global-a-b/bow">{"Bow"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-extraarrowupdater-2" /><code><Link to="/game-api/types/global-e-h/extraarrowupdater">{"ExtraArrowUpdater"}</Link>{" "}<Link to="/game-api/types/global-e-h/extraarrowupdater">{"ExtraArrowUpdater"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-isignoringcollisiononshoot" /><code>{"bool IsIgnoringCollisionOnShoot { get; set; }"}</code> |  |
-| <Link id="m-pickup-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-stringdock" /><code><Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" StringDock { get; }"}</code> |  |
+| <Link id="m-bow-2" /><code><Link to="/game-api/types/global-a-b/bow">{"Bow"}</Link>{" "}<Link to="/game-api/types/global-a-b/bow">{"Bow"}</Link>{" { get; }"}</code> | The bow this string belongs to. |
+| <Link id="m-extraarrowupdater-2" /><code><Link to="/game-api/types/global-e-h/extraarrowupdater">{"ExtraArrowUpdater"}</Link>{" "}<Link to="/game-api/types/global-e-h/extraarrowupdater">{"ExtraArrowUpdater"}</Link>{" { get; }"}</code> | Component that handles extra arrows shot along with the main one. |
+| <Link id="m-isignoringcollisiononshoot" /><code>{"bool IsIgnoringCollisionOnShoot { get; set; }"}</code> | If true, a shot arrow briefly ignores collisions with the bow and the shooter's body. |
+| <Link id="m-pickup-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> | The string's own pickup that the hand grabs. |
+| <Link id="m-stringdock" /><code><Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" StringDock { get; }"}</code> | The dock an arrow is knocked into. |
 | <Link id="m-tightnessmultiplier-2" /><code>{"private float TightnessMultiplier { get; }"}</code> |  |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onshootingentity" /><code>{"event Action<"}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{", "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{", Vector3> OnShootingEntity"}</code> |  |
-| <Link id="m-onupdatedstringpull" /><code>{"event Action<float> OnUpdatedStringPull"}</code> |  |
+| <Link id="m-onshootingentity" /><code>{"event Action<"}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{", "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{", Vector3> OnShootingEntity"}</code> | Raised when an arrow entity is shot, with the string, the arrow and a vector from the shooter. |
+| <Link id="m-onupdatedstringpull" /><code>{"event Action<float> OnUpdatedStringPull"}</code> | Raised with the draw strength each time the string moves. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Hooks grab, release, dock and bow pickup events. |
 | <Link id="m-arrowknocked" /><code>{"private void ArrowKnocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-bowdocked" /><code>{"private void BowDocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" bowPickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |

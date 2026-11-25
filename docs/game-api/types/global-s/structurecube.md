@@ -1,6 +1,6 @@
 ---
 title: "StructureCube"
-description: "class StructureCube in Root.Township."
+description: "One grid cell of a StructurePart used by the mining base generator."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StructureCube
 
 A **class** in `Root.Township`, no namespace.
+
+One grid cell of a `StructurePart` used by the mining base generator. Its side flags say where it connects and what must be next to it.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`, [`IIgnoreForStaticFlatten`](/game-api/types/alta-utilities/iignoreforstaticflatten), [`IDontSplit`](/game-api/types/global-i-l/idontsplit)
@@ -40,21 +42,21 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-air-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" Air { get; }"}</code> |  |
-| <Link id="m-connecttoair-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" ConnectToAir { get; }"}</code> |  |
-| <Link id="m-connecttosolid-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" ConnectToSolid { get; }"}</code> |  |
-| <Link id="m-gates-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" Gates { get; }"}</code> |  |
-| <Link id="m-minimumgatesforculling-2" /><code>{"int MinimumGatesForCulling { get; }"}</code> |  |
-| <Link id="m-solid-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" Solid { get; }"}</code> |  |
-| <Link id="m-x-2" /><code>{"int X { get; }"}</code> |  |
-| <Link id="m-y-2" /><code>{"int Y { get; }"}</code> |  |
-| <Link id="m-z-2" /><code>{"int Z { get; }"}</code> |  |
+| <Link id="m-air-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" Air { get; }"}</code> | Sides that are open air. |
+| <Link id="m-connecttoair-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" ConnectToAir { get; }"}</code> | Sides that need air next to them. |
+| <Link id="m-connecttosolid-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" ConnectToSolid { get; }"}</code> | Sides that need something solid next to them. |
+| <Link id="m-gates-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" Gates { get; }"}</code> | Sides that are openings other parts can connect to. |
+| <Link id="m-minimumgatesforculling-2" /><code>{"int MinimumGatesForCulling { get; }"}</code> | If above 0, a placed part is dropped when fewer than this many of the cube's gates connect. |
+| <Link id="m-solid-2" /><code><Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" Solid { get; }"}</code> | Sides that are solid. |
+| <Link id="m-x-2" /><code>{"int X { get; }"}</code> | Cell X position in the part's grid. |
+| <Link id="m-y-2" /><code>{"int Y { get; }"}</code> | Cell Y position in the part's grid. |
+| <Link id="m-z-2" /><code>{"int Z { get; }"}</code> | Cell Z position in the part's grid. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loadfrom" /><code>{"void LoadFrom("}<Link to="/game-api/types/global-s/structurepart-cube">{"StructurePart.Cube"}</Link>{" cube)"}</code> |  |
+| <Link id="m-loadfrom" /><code>{"void LoadFrom("}<Link to="/game-api/types/global-s/structurepart-cube">{"StructurePart.Cube"}</Link>{" cube)"}</code> | Copies position and side flags from a `StructurePart.Cube`. |
 | <Link id="m-drawsides" /><code>{"private void DrawSides(Color color, Vector3 size, Vector3 position, "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{" sides)"}</code> |  |
 | <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
 

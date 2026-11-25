@@ -1,6 +1,6 @@
 ---
 title: "QuickAccessMenuBubble"
-description: "class QuickAccessMenuBubble in Root.Township."
+description: "One bubble in the quick access menu, showing an action and running it when chosen."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # QuickAccessMenuBubble
 
 A **class** in `Root.Township`, `Alta.QuickAccessActions`.
+
+One bubble in the quick access menu, showing an action and running it when chosen. A pooled object that faces the local player's head; client only.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`ScaleLerpPooledObject`](/game-api/types/global-s/scalelerppooledobject)
@@ -43,25 +45,25 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-controller" /><code><Link to="/game-api/types/alta-player/quickaccessmenucontroller">{"QuickAccessMenuController"}</Link>{" Controller { get; private set; }"}</code> |  |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> |  |
-| <Link id="m-nestinglevel" /><code>{"int NestingLevel { get; }"}</code> |  |
-| <Link id="m-parent" /><code><Link to="/game-api/types/alta-player/quickaccessmenububble">{"QuickAccessMenuBubble"}</Link>{" Parent { get; set; }"}</code> |  |
-| <Link id="m-isalwaysupdating" /><code>{"protected override bool IsAlwaysUpdating { get; }"}</code> |  |
+| <Link id="m-controller" /><code><Link to="/game-api/types/alta-player/quickaccessmenucontroller">{"QuickAccessMenuController"}</Link>{" Controller { get; private set; }"}</code> | The quick access menu controller that owns this bubble. |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> | Whether the bubble's action can be used now. |
+| <Link id="m-nestinglevel" /><code>{"int NestingLevel { get; }"}</code> | How many parent bubbles this one is nested under. |
+| <Link id="m-parent" /><code><Link to="/game-api/types/alta-player/quickaccessmenububble">{"QuickAccessMenuBubble"}</Link>{" Parent { get; set; }"}</code> | The bubble this one opened from, or null. |
+| <Link id="m-isalwaysupdating" /><code>{"protected override bool IsAlwaysUpdating { get; }"}</code> | Always true, so the bubble keeps turning to face the player. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-markselected" /><code>{"void MarkSelected()"}</code> |  |
-| <Link id="m-playsfx" /><code>{"bool PlaySfx()"}</code> |  |
-| <Link id="m-release" /><code>{"override void Release()"}</code> |  |
-| <Link id="m-run" /><code>{"bool Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |  |
-| <Link id="m-unmarkselected" /><code>{"void UnmarkSelected()"}</code> |  |
-| <Link id="m-updatecontent" /><code>{"void UpdateContent("}<Link to="/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" content, "}<Link to="/game-api/types/alta-player/quickaccessmenucontroller">{"QuickAccessMenuController"}</Link>{" controller)"}</code> |  |
-| <Link id="m-fadefinished" /><code>{"protected override void FadeFinished()"}</code> |  |
+| <Link id="m-markselected" /><code>{"void MarkSelected()"}</code> | Highlights the bubble (grows it) and shows its title, if the action is usable. |
+| <Link id="m-playsfx" /><code>{"bool PlaySfx()"}</code> | Whether the default selection sound should play. |
+| <Link id="m-release" /><code>{"override void Release()"}</code> | Closes the action, clears the parent and returns the bubble to the pool. |
+| <Link id="m-run" /><code>{"bool Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Runs the action if usable; returns whether it has a run effect. |
+| <Link id="m-unmarkselected" /><code>{"void UnmarkSelected()"}</code> | Shrinks the bubble back and clears the title. |
+| <Link id="m-updatecontent" /><code>{"void UpdateContent("}<Link to="/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" content, "}<Link to="/game-api/types/alta-player/quickaccessmenucontroller">{"QuickAccessMenuController"}</Link>{" controller)"}</code> | Fills the bubble with an action: name, preview object, material, and opens the action. |
+| <Link id="m-fadefinished" /><code>{"protected override void FadeFinished()"}</code> | Destroys the action's preview object when the bubble has faded out. |
 | <Link id="m-updateactive" /><code>{"private void UpdateActive(bool isActive)"}</code> |  |
-| <Link id="m-updatelerp" /><code>{"protected override void UpdateLerp()"}</code> |  |
+| <Link id="m-updatelerp" /><code>{"protected override void UpdateLerp()"}</code> | Turns the bubble to face the local player's head, then updates its scale. |
 | <Link id="m-updatetitledisplay" /><code>{"private void UpdateTitleDisplay(bool showTitle)"}</code> |  |
 
 ## Used in

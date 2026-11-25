@@ -1,6 +1,6 @@
 ---
 title: "AtmospherePlugin"
-description: "Base for an atmosphere source (such as a zone or weather) that supplies ambient light, fog and ambience audio. The AtmosphereManager initializes plugi"
+description: "Base for an atmosphere source (such as a zone or weather) that supplies ambient light, fog and ambience audio."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

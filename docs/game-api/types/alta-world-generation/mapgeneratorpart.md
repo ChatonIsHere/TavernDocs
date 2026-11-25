@@ -1,6 +1,6 @@
 ---
 title: "MapGeneratorPart"
-description: "Base asset for one part of a cave generator plugin. It makes a MapGeneratorPartInstance for each plugin run."
+description: "Base asset for one part of a cave generator plugin."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

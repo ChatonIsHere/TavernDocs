@@ -1,6 +1,6 @@
 ---
 title: "FloatEvent"
-description: "class FloatEvent in Root.Township."
+description: "A serializable AltaEvent carrying a float, for wiring in the inspector."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FloatEvent
 
 A **class** in `Root.Township`, no namespace.
+
+A serializable `AltaEvent` carrying a `float`, for wiring in the inspector.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`AltaEvent<float, FloatUnityEvent>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

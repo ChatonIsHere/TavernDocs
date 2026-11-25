@@ -1,6 +1,6 @@
 ---
 title: "Lever"
-description: "Reads its handle's angle each physics step while the handle is awake."
+description: "A physical lever Trigger: reads the handle's X rotation each physics step and is on while it sits inside its angle range."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-Reads its handle's angle each physics step while the handle is awake.
+A physical lever `Trigger`: reads the handle's X rotation each physics step and is on while it sits inside its angle range.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`Trigger`](/game-api/types/global-t-x/trigger)
@@ -39,13 +39,13 @@ Reads its handle's angle each physics step while the handle is awake.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-value" /><code>{"float Value { get; set; }"}</code> |  |
+| <Link id="m-value" /><code>{"float Value { get; set; }"}</code> | Handle position as 0 to 1 across the angle range. Setting a new value raises `ValueChanged`. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-valuechanged" /><code>{"event Action<"}<Link to="/game-api/types/global-i-l/lever">{"Lever"}</Link>{", float, float> ValueChanged"}</code> |  |
+| <Link id="m-valuechanged" /><code>{"event Action<"}<Link to="/game-api/types/global-i-l/lever">{"Lever"}</Link>{", float, float> ValueChanged"}</code> | Raised with the lever, old value and new value. |
 
 ## Methods
 

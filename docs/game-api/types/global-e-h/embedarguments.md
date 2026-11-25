@@ -1,6 +1,6 @@
 ---
 title: "EmbedArguments"
-description: "class EmbedArguments in Root.Township."
+description: "Network state of an Embeddable item: whether it is stuck in something and where, or its scale when free."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EmbedArguments
 
 A **class** in `Root.Township`, no namespace.
+
+Network state of an `Embeddable` item: whether it is stuck in something and where, or its scale when free.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 
@@ -25,19 +27,19 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hasother" /><code>{"bool hasOther"}</code> |  |
-| <Link id="m-isembedded" /><code>{"bool isEmbedded"}</code> |  |
-| <Link id="m-other" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" other"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-rigidbodyindex" /><code>{"int rigidbodyIndex"}</code> |  |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |  |
-| <Link id="m-scale" /><code>{"float scale"}</code> |  |
+| <Link id="m-hasother" /><code>{"bool hasOther"}</code> | True when embedded in another entity rather than the world. |
+| <Link id="m-isembedded" /><code>{"bool isEmbedded"}</code> | True when the item is stuck in something. |
+| <Link id="m-other" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" other"}</code> | The entity it is embedded in, if any. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | Embed position. |
+| <Link id="m-rigidbodyindex" /><code>{"int rigidbodyIndex"}</code> | Which rigidbody of the other entity it is attached to. |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | Embed rotation. |
+| <Link id="m-scale" /><code>{"float scale"}</code> | The item's scale. Only sent when not embedded. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the state on a network stream. |
 
 ## Used in
 

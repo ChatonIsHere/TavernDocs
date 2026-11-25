@@ -1,6 +1,6 @@
 ---
 title: "Stat"
-description: "One platform achievement stat (such as a Steam stat), as an int or a float. Setting a value passes it on to AchievementManager, which sends it to the "
+description: "One platform achievement stat (such as a Steam stat), as an int or a float."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

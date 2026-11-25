@@ -1,6 +1,6 @@
 ---
 title: "IXrDeviceSdkController"
-description: "interface IXrDeviceSdkController in Root.Township."
+description: "One device SDK the game can drive the player with: SteamVR, OpenXR, the fly cam or the auto cam."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+One device SDK the game can drive the player with: SteamVR, OpenXR, the fly cam or the auto cam. The platform driver starts it and it creates the device lifecycle and per-hand input controllers. Client only.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`XrDeviceSdkController`](/game-api/types/global-t-x/xrdevicesdkcontroller)
 
@@ -19,21 +21,21 @@ An **interface** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isprovidingposition" /><code>{"bool IsProvidingPosition { get; }"}</code> |  |
-| <Link id="m-mode" /><code><Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Mode { get; }"}</code> |  |
+| <Link id="m-isprovidingposition" /><code>{"bool IsProvidingPosition { get; }"}</code> | Whether this SDK supplies tracked head and hand positions. |
+| <Link id="m-mode" /><code><Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Mode { get; }"}</code> | The player mode this SDK runs in. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createcontroller" /><code><Link to="/game-api/types/global-c-d/deviceinputcontroller">{"DeviceInputController"}</Link>{" CreateController("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |  |
-| <Link id="m-createinterface" /><code><Link to="/game-api/types/global-c-d/devicelifecycle">{"DeviceLifecycle"}</Link>{" CreateInterface("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice)"}</code> |  |
-| <Link id="m-fixedupdate" /><code>{"void FixedUpdate()"}</code> |  |
-| <Link id="m-lateupdate" /><code>{"void LateUpdate()"}</code> |  |
-| <Link id="m-setdeviceplayer" /><code>{"void SetDevicePlayer("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-startdevice" /><code>{"IEnumerator StartDevice("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice)"}</code> |  |
-| <Link id="m-stopdevice" /><code>{"void StopDevice()"}</code> |  |
-| <Link id="m-update" /><code>{"void Update()"}</code> |  |
+| <Link id="m-createcontroller" /><code><Link to="/game-api/types/global-c-d/deviceinputcontroller">{"DeviceInputController"}</Link>{" CreateController("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Makes the input controller for one hand. |
+| <Link id="m-createinterface" /><code><Link to="/game-api/types/global-c-d/devicelifecycle">{"DeviceLifecycle"}</Link>{" CreateInterface("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice)"}</code> | Makes the device lifecycle object for a player and device. |
+| <Link id="m-fixedupdate" /><code>{"void FixedUpdate()"}</code> | Passes the fixed update on to the device lifecycle. |
+| <Link id="m-lateupdate" /><code>{"void LateUpdate()"}</code> | Passes the late update on to the device lifecycle. |
+| <Link id="m-setdeviceplayer" /><code>{"void SetDevicePlayer("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player)"}</code> | Changes the platform player the device belongs to and gives each hand a new input controller. |
+| <Link id="m-startdevice" /><code>{"IEnumerator StartDevice("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice)"}</code> | Coroutine that starts the SDK, creates its device lifecycle and enables it. |
+| <Link id="m-stopdevice" /><code>{"void StopDevice()"}</code> | Disables the SDK's device lifecycle. |
+| <Link id="m-update" /><code>{"void Update()"}</code> | Passes the frame update on to the device lifecycle. |
 
 ## Used in
 

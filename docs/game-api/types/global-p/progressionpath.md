@@ -1,6 +1,6 @@
 ---
 title: "ProgressionPath"
-description: "A path only takes XP if its skill tree is enabled (ProfessionSkillTree.GetProfessionTree(path).IsEnabled). The trees are loaded from Resources/Progres"
+description: "The skill trees a player can progress in: Forging, Woodcutting, Mining, Chiseling, Cooking, Melee, Ranged, plus a DevDebug path."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **enum** in `Root.Township`, no namespace.
 
-A path only takes XP if its skill tree is enabled (`ProfessionSkillTree.GetProfessionTree(path).IsEnabled`). The trees are loaded from `Resources/ProgressionTrees/`.
+The skill trees a player can progress in: Forging, Woodcutting, Mining, Chiseling, Cooking, Melee, Ranged, plus a DevDebug path.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Documented in** [Progression](/game-api/game-systems/progression#progressionpath)

@@ -1,6 +1,6 @@
 ---
 title: "PooledObject"
-description: "class PooledObject in Root.Township."
+description: "Component on a prefab that can be reused through a PooledObjectDefinition pool instead of being destroyed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PooledObject
 
 A **class** in `Root.Township`, no namespace.
+
+Component on a prefab that can be reused through a `PooledObjectDefinition` pool instead of being destroyed. Used for short-lived local effects.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,26 +28,26 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isreleased" /><code>{"bool IsReleased { get; private set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> |  |
-| <Link id="m-pool" /><code><Link to="/game-api/types/global-a-b/basicpooledobjectpool">{"BasicPooledObjectPool"}</Link>{" Pool { get; private set; }"}</code> |  |
+| <Link id="m-isreleased" /><code>{"bool IsReleased { get; private set; }"}</code> | True while the instance sits in the pool unused. |
+| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> | The GameObject name, captured when the pool created it. |
+| <Link id="m-pool" /><code><Link to="/game-api/types/global-a-b/basicpooledobjectpool">{"BasicPooledObjectPool"}</Link>{" Pool { get; private set; }"}</code> | The pool this instance belongs to. Null if it was not made by a pool. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-released" /><code>{"event "}<Link to="/game-api/types/global-p/poolchangedhandler">{"PoolChangedHandler"}</Link>{" Released"}</code> |  |
-| <Link id="m-requested" /><code>{"event "}<Link to="/game-api/types/global-p/poolchangedhandler">{"PoolChangedHandler"}</Link>{" Requested"}</code> |  |
+| <Link id="m-released" /><code>{"event "}<Link to="/game-api/types/global-p/poolchangedhandler">{"PoolChangedHandler"}</Link>{" Released"}</code> | Raised after the instance goes back to the pool. |
+| <Link id="m-requested" /><code>{"event "}<Link to="/game-api/types/global-p/poolchangedhandler">{"PoolChangedHandler"}</Link>{" Requested"}</code> | Raised when the instance is taken from the pool. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finishrequest" /><code>{"virtual void FinishRequest()"}</code> |  |
-| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/global-a-b/basicpooledobjectpool">{"BasicPooledObjectPool"}</Link>{" pool)"}</code> |  |
-| <Link id="m-release" /><code>{"virtual void Release()"}</code> |  |
-| <Link id="m-resetrun" /><code>{"virtual void ResetRun()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> |  |
+| <Link id="m-finishrequest" /><code>{"virtual void FinishRequest()"}</code> | Called by the pool after placing a requested instance. Marks it in use and raises `Requested`. |
+| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/global-a-b/basicpooledobjectpool">{"BasicPooledObjectPool"}</Link>{" pool)"}</code> | Called by the pool on a new instance. Links it to the pool and marks it released. |
+| <Link id="m-release" /><code>{"virtual void Release()"}</code> | Returns the instance to its pool (deactivating it, or destroying it if the pool is full). Destroys it if it has no pool. |
+| <Link id="m-resetrun" /><code>{"virtual void ResetRun()"}</code> | Hook for subclasses to restart their effect. Empty in the base class. |
+| <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> | Clears the `Released` and `Requested` handlers. |
 | <Link id="m-onreleased" /><code>{"private void OnReleased()"}</code> |  |
 
 ## Used in

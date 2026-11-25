@@ -1,6 +1,6 @@
 ---
 title: "IPlayerState"
-description: "interface IPlayerState in Root.Township."
+description: "One player state (first join, playing, combat, downed, dead, spirit and so on) held by a player's PlayerStateManager."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.PlayerStates`.
 
+One player state (first join, playing, combat, downed, dead, spirit and so on) held by a player's `PlayerStateManager`. States can decorate a base state. Implemented by `PlayerStateBase`; the server decides, clients follow.
+
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Derived types** [`PlayerStateBase`](/game-api/types/alta-player/playerstatebase)
 
@@ -19,32 +21,32 @@ An **interface** in `Root.Township`, `Alta.PlayerStates`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alltransitions" /><code><Link to="/game-api/types/alta-player/alltransitions">{"AllTransitions"}</Link>{" "}<Link to="/game-api/types/alta-player/alltransitions">{"AllTransitions"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-basestate" /><code><Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" BaseState { get; set; }"}</code> |  |
-| <Link id="m-decorator" /><code><Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" Decorator { get; set; }"}</code> |  |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> |  |
-| <Link id="m-isdecorated" /><code>{"bool IsDecorated { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-player" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-settings" /><code><Link to="/game-api/types/alta-player/iplayerstatesettings">{"IPlayerStateSettings"}</Link>{" Settings { get; }"}</code> |  |
-| <Link id="m-statemanager" /><code><Link to="/game-api/types/alta-player/playerstatemanager">{"PlayerStateManager"}</Link>{" StateManager { get; set; }"}</code> |  |
-| <Link id="m-statetype" /><code><Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> |  |
+| <Link id="m-alltransitions" /><code><Link to="/game-api/types/alta-player/alltransitions">{"AllTransitions"}</Link>{" "}<Link to="/game-api/types/alta-player/alltransitions">{"AllTransitions"}</Link>{" { get; }"}</code> | The transitions this state allows out of it. |
+| <Link id="m-basestate" /><code><Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" BaseState { get; set; }"}</code> | The state underneath, when this one decorates another (for example `PlayingState` under combat). |
+| <Link id="m-decorator" /><code><Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" Decorator { get; set; }"}</code> | The state sitting on top of this one, or null. |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> | True while the state is active. |
+| <Link id="m-isdecorated" /><code>{"bool IsDecorated { get; }"}</code> | In `PlayerStateBase` this returns true when `Decorator` is null, so it reads the opposite of its name. Check `Decorator` instead. |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | Display name for logs. |
+| <Link id="m-player" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" { get; set; }"}</code> | The player this state belongs to. |
+| <Link id="m-settings" /><code><Link to="/game-api/types/alta-player/iplayerstatesettings">{"IPlayerStateSettings"}</Link>{" Settings { get; }"}</code> | This state's settings from the state settings manager. |
+| <Link id="m-statemanager" /><code><Link to="/game-api/types/alta-player/playerstatemanager">{"PlayerStateManager"}</Link>{" StateManager { get; set; }"}</code> | The player's state manager. |
+| <Link id="m-statetype" /><code><Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> | Which `PlayerStateType` this is. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activate" /><code>{"void Activate()"}</code> |  |
-| <Link id="m-deactivate" /><code>{"void Deactivate()"}</code> |  |
-| <Link id="m-decorate" /><code>{"void Decorate("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> |  |
-| <Link id="m-editordrawinspectorgui" /><code>{"void EditorDrawInspectorGUI()"}</code> |  |
-| <Link id="m-requeststatechange" /><code>{"void RequestStateChange("}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" destinationStateType)"}</code> |  |
-| <Link id="m-serializedisk" /><code>{"void SerializeDisk("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-serializetoremote" /><code>{"void SerializeToRemote("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncstateenter" /><code>{"void SyncStateEnter("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncstateleave" /><code>{"void SyncStateLeave("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-undecorate" /><code>{"void Undecorate("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> |  |
-| <Link id="m-validatestateactivation" /><code>{"bool ValidateStateActivation(bool isDuringLoading)"}</code> |  |
+| <Link id="m-activate" /><code>{"void Activate()"}</code> | Starts the state. Runs the server or remote activation hooks depending on side. |
+| <Link id="m-deactivate" /><code>{"void Deactivate()"}</code> | Ends the state and runs the matching deactivation hooks. |
+| <Link id="m-decorate" /><code>{"void Decorate("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | Called when a decorating state goes on top; sets `Decorator` if this is the base state. |
+| <Link id="m-editordrawinspectorgui" /><code>{"void EditorDrawInspectorGUI()"}</code> | Editor-only hook for drawing debug info; empty by default. |
+| <Link id="m-requeststatechange" /><code>{"void RequestStateChange("}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" destinationStateType)"}</code> | Client: asks the server to move this player to another state type. The server calls `SetState` with it. |
+| <Link id="m-serializedisk" /><code>{"void SerializeDisk("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes extra state data for the player save. Empty in the base class. |
+| <Link id="m-serializetoremote" /><code>{"void SerializeToRemote("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Extra data for remote sync; only logs in the base class. |
+| <Link id="m-syncstateenter" /><code>{"void SyncStateEnter("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes extra data sent when the state is entered. |
+| <Link id="m-syncstateleave" /><code>{"void SyncStateLeave("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes extra data sent when the state is left. |
+| <Link id="m-undecorate" /><code>{"void Undecorate("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | Called when a decorating state comes off. |
+| <Link id="m-validatestateactivation" /><code>{"bool ValidateStateActivation(bool isDuringLoading)"}</code> | Server: run before activating. Return false to refuse, or switch to another state from here. |
 
 ## Used in
 

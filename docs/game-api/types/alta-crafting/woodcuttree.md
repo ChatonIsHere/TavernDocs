@@ -1,6 +1,6 @@
 ---
 title: "WoodcutTree"
-description: "The tree: a tree of MapNodes (Root), each with a WoodcutTreeModel segment. HealthObject, Rigidbody, TotalSize, Species. Raises Cut."
+description: "The root of a choppable tree: a physics body holding a tree of WoodcutTreeModel segments joined by connections."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Woodcutting`.
 
-The tree: a tree of `MapNode`s (`Root`), each with a `WoodcutTreeModel` segment. `HealthObject`, `Rigidbody`, `TotalSize`, `Species`. Raises `Cut`.
+The root of a choppable tree: a physics body holding a tree of `WoodcutTreeModel` segments joined by connections. The server generates it from a preset, splits off a new `WoodcutTree` when a segment is chopped through, and syncs the shape to clients.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<WoodcutTreeSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<WoodcutTreeSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -54,35 +54,35 @@ The tree: a tree of `MapNode`s (`Root`), each with a `WoodcutTreeModel` segment.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-healthobject-2" /><code><Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-mass" /><code>{"float Mass { get; }"}</code> |  |
-| <Link id="m-rigidbody" /><code>{"Rigidbody Rigidbody { get; }"}</code> |  |
-| <Link id="m-root" /><code><Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" Root { get; private set; }"}</code> |  |
-| <Link id="m-spawnparticular-2" /><code><Link to="/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" SpawnParticular { get; set; }"}</code> |  |
-| <Link id="m-species-2" /><code><Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" Species { get; set; }"}</code> |  |
-| <Link id="m-totalsize" /><code>{"float TotalSize { get; }"}</code> |  |
+| <Link id="m-healthobject-2" /><code><Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" { get; }"}</code> | Health of the last segment; enabled only when the root has no children. Its death destroys the tree. |
+| <Link id="m-mass" /><code>{"float Mass { get; }"}</code> | Total mass of all segments, from the root node. 1 if there is no root. |
+| <Link id="m-rigidbody" /><code>{"Rigidbody Rigidbody { get; }"}</code> | The tree's rigidbody. Its mass follows `Mass`. |
+| <Link id="m-root" /><code><Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" Root { get; private set; }"}</code> | Node of the bottom segment, or null before the tree is built. |
+| <Link id="m-spawnparticular-2" /><code><Link to="/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" SpawnParticular { get; set; }"}</code> | Preset tree to generate. Saved with the tree; picked from the distribution if empty. |
+| <Link id="m-species-2" /><code><Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" Species { get; set; }"}</code> | Tree species. Setting it updates the impact hardness and the health. |
+| <Link id="m-totalsize" /><code>{"float TotalSize { get; }"}</code> | Number of segments in the tree, from the root node. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chopped" /><code>{"event Action Chopped"}</code> |  |
-| <Link id="m-cut-2" /><code>{"event Action<"}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{"> Cut"}</code> |  |
-| <Link id="m-parttookdamage" /><code>{"event Action<"}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{", float> PartTookDamage"}</code> |  |
-| <Link id="m-readyforbake" /><code>{"event Action ReadyForBake"}</code> |  |
-| <Link id="m-thump" /><code>{"event Action<"}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{"> Thump"}</code> |  |
+| <Link id="m-chopped" /><code>{"event Action Chopped"}</code> | Raised when a piece splits off this tree. |
+| <Link id="m-cut-2" /><code>{"event Action<"}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{"> Cut"}</code> | Raised when a segment of this tree is chopped through. Also fires on clients. |
+| <Link id="m-parttookdamage" /><code>{"event Action<"}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{", float> PartTookDamage"}</code> | Server: raised with the damage when any segment takes damage. |
+| <Link id="m-readyforbake" /><code>{"event Action ReadyForBake"}</code> | Raised when the segment layout is ready or changed, so the baker can rebuild the visuals. |
+| <Link id="m-thump" /><code>{"event Action<"}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{"> Thump"}</code> | Raised when a falling tree hits the ground layer within the thump time window. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-add" /><code><Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" Add("}<Link to="/game-api/types/alta-crafting/woodcuttreemodel">{"WoodcutTreeModel"}</Link>{" model, "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" parentConnection, int rotation)"}</code> |  |
-| <Link id="m-editorclear" /><code>{"void EditorClear()"}</code> |  |
-| <Link id="m-fixtree" /><code>{"void FixTree()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-rebake" /><code>{"void Rebake()"}</code> |  |
+| <Link id="m-add" /><code><Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" Add("}<Link to="/game-api/types/alta-crafting/woodcuttreemodel">{"WoodcutTreeModel"}</Link>{" model, "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" parentConnection, int rotation)"}</code> | Adds a segment model under a parent connection (or as the root), updating mass and size. Re-parenting can split a piece off another tree. |
+| <Link id="m-editorclear" /><code>{"void EditorClear()"}</code> | Destroys the generated segments and clears `Root`. |
+| <Link id="m-fixtree" /><code>{"void FixTree()"}</code> | Builds the node map from segment models already under the tree, if it has none. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the sync messages and starts the fall window for the thump event. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: builds the node map, or generates a tree from the preset or distribution on first spawn, then raises `ReadyForBake`. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the tree's species and segment layout to a joining player. |
+| <Link id="m-rebake" /><code>{"void Rebake()"}</code> | Raises `ReadyForBake` again. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-breakattachments" /><code>{"private void BreakAttachments("}<Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" node)"}</code> |  |
 | <Link id="m-checkattachment" /><code>{"private void CheckAttachment("}<Link to="/game-api/types/alta-crafting/woodcuttreemodel">{"WoodcutTreeModel"}</Link>{" parent, Transform childTransform)"}</code> |  |

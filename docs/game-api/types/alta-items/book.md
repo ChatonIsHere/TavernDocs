@@ -1,6 +1,6 @@
 ---
 title: "Book"
-description: "A networked book item that holds pages (recipe books, journals) from a PageCollection. The server keeps the page list and turns pages; clients see the"
+description: "A networked book item that holds pages (recipe books, journals) from a PageCollection."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -117,10 +117,10 @@ A networked book item that holds pages (recipe books, journals) from a `PageColl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addnewpage" /><code>{"bool AddNewPage("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" page)"}</code> | Server: inserts a page in collection order (or at the open spread if there is no collection) and animates it in if open. False on clients or if the page is not in the collection. |
+| <Link id="m-addnewpage" /><code>{"bool AddNewPage("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" page)"}</code> | Server: adds a page in collection order and animates it in if the book is open. False on clients or if the collection lacks the page. |
 | <Link id="m-bookremovepage" /><code>{"void BookRemovePage("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" pageData)"}</code> | Removes a page from the book's list and refreshes the open spread and page display. Called when a page is pulled out. |
 | <Link id="m-close" /><code>{"void Close()"}</code> | Closes the book if it is open and not already opening or closing. The server closes it when it is dropped or tilted away. |
-| <Link id="m-duplicatepage" /><code><Link to="/game-api/types/alta-items/paperpageinstance">{"PaperPageInstance"}</Link>{" DuplicatePage("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" pageData, ref bool isDuplicate)"}</code> | Server: spawns a loose paper page with the given page data at the book. Forced to a duplicate if the collection does not allow removal. Null on clients. |
+| <Link id="m-duplicatepage" /><code><Link to="/game-api/types/alta-items/paperpageinstance">{"PaperPageInstance"}</Link>{" DuplicatePage("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" pageData, ref bool isDuplicate)"}</code> | Server: spawns a loose paper copy of a page at the book. Always a duplicate if the collection forbids removal. Null on clients. |
 | <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the network messages for sync, adding, removing and turning pages, opening, highlighting and flipping. |
 | <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: destroys the book if it has no collection, otherwise adds every collection page already unlocked globally and listens for new ones. |
 | <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends a joining player the book's state, its spawned pages, page display and open state. |

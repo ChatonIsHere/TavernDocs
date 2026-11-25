@@ -1,6 +1,6 @@
 ---
 title: "GarbageCollectTimer"
-description: "On the scene. Only runs when the process is headless: every interval it asks for a non-blocking, optimized GC.Collect of every generation."
+description: "On the scene."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

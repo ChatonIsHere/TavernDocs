@@ -1,6 +1,6 @@
 ---
 title: "MapGeneratorPartInstance<T>"
-description: "Runtime instance of a MapGeneratorPart for one cave generator plugin run. It works out the target plugin layer and a seeded identifier, and subclasses"
+description: "Runtime instance of a MapGeneratorPart for one cave generator plugin run."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

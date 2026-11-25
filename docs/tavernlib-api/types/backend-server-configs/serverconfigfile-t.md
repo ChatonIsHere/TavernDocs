@@ -1,6 +1,6 @@
 ---
 title: "ServerConfigFile<T>"
-description: "The base class every TavernLib config file uses."
+description: "The base class for TavernLib's JSON files."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **abstract class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
-The base class every TavernLib config file uses.
+The base class for TavernLib's JSON files. Reads into a `T`, writes through a temp file with a `.bak`, and holds a per-object lock so changes don't interleave. Subclass it for your own mod's file.
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/tavernlib-api/types/backend-server-configs)
 - **Derived types** [`ConsoleTokenFile`](/tavernlib-api/types/backend-remoteconsole/consoletokenfile), [`ModsListConfig`](/tavernlib-api/types/backend-server-configs/modslistconfig), [`ServerSettingsConfig`](/tavernlib-api/types/backend-server-configs/serversettingsconfig), [`TavernServerConfig`](/tavernlib-api/types/backend-server-configs/tavernserverconfig), [`TrustedReposConfig`](/tavernlib-api/types/backend-server-configs/trustedreposconfig), [`UserConfigFile`](/tavernlib-api/types/backend-server-configs/userconfigfile), [`WhitelistRequestsConfigFile`](/tavernlib-api/types/backend-server-configs/whitelistrequestsconfigfile)
@@ -34,8 +34,8 @@ The base class every TavernLib config file uses.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lastread" /><code>{"T LastRead { get; private set; }"}</code> |  |
-| <Link id="m-readable" /><code>{"bool Readable { get; private set; }"}</code> |  |
+| <Link id="m-lastread" /><code>{"T LastRead { get; private set; }"}</code> | The object from the last good read. `new T()` before the first one. |
+| <Link id="m-readable" /><code>{"bool Readable { get; private set; }"}</code> | False until the file has been read once, and again after any read fails. |
 | <Link id="m-filename" /><code>{"private string FileName { get; }"}</code> |  |
 | <Link id="m-filepath" /><code>{"private string FilePath { get; set; }"}</code> |  |
 
@@ -43,10 +43,10 @@ The base class every TavernLib config file uses.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-read" /><code>{"T Read()"}</code> |  |
-| <Link id="m-readfromfile" /><code>{"virtual void ReadFromFile()"}</code> |  |
-| <Link id="m-update" /><code>{"void Update(Func<T, bool> change)"}</code> |  |
-| <Link id="m-writetofile" /><code>{"virtual void WriteToFile()"}</code> |  |
+| <Link id="m-read" /><code>{"T Read()"}</code> | Reads the file into a new object and makes it `LastRead`. A missing file is created with defaults; an empty or broken one throws. |
+| <Link id="m-readfromfile" /><code>{"virtual void ReadFromFile()"}</code> | Calls `Read`. Subclasses may add to it, as `ServerSettingsConfig` does. |
+| <Link id="m-update" /><code>{"void Update(Func<T, bool> change)"}</code> | Reads the file, passes it to the change, and writes it back if the change returns true, all under the lock. |
+| <Link id="m-writetofile" /><code>{"virtual void WriteToFile()"}</code> | Writes `LastRead` as it is, which can throw away changes made to the file since. Prefer `Update`. |
 | <Link id="m-accept" /><code>{"private T Accept(T config)"}</code> |  |
-| <Link id="m-tidy" /><code>{"protected virtual bool Tidy(T config)"}</code> |  |
+| <Link id="m-tidy" /><code>{"protected virtual bool Tidy(T config)"}</code> | Called after each read to fix the object up. Return true to have it written back. Does nothing in the base. |
 | <Link id="m-write" /><code>{"private void Write(T config)"}</code> |  |

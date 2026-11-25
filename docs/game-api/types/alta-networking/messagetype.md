@@ -1,6 +1,6 @@
 ---
 title: "MessageType"
-description: "Free below 32: 3, 5, 8, 14, 16, 19, 27, 31."
+description: "The kind of a connection-level network message: joining, spawning, entity updates, scene sync, voice and so on."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **enum** in `Root.Township`, `Alta.Networking`.
 
-Free below 32: 3, 5, 8, 14, 16, 19, 27, 31.
+The kind of a connection-level network message: joining, spawning, entity updates, scene sync, voice and so on. Each has a handler on the receiving connection.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Derived types** [`MessageStatistics`](/game-api/types/alta-networking/messagestatistics)

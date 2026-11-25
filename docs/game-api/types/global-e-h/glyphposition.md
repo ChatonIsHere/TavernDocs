@@ -1,6 +1,6 @@
 ---
 title: "GlyphPosition"
-description: "struct GlyphPosition in Root.Township."
+description: "Where a glyph goes on a page: position, rotation and scale."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GlyphPosition
 
 A **struct** in `Root.Township`, no namespace.
+
+Where a glyph goes on a page: position, rotation and scale. Used by the generated page settings.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 
@@ -24,15 +26,15 @@ A **struct** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-position" /><code>{"Vector2 position"}</code> |  |
-| <Link id="m-rotation" /><code>{"float rotation"}</code> |  |
-| <Link id="m-scale" /><code>{"float scale"}</code> |  |
+| <Link id="m-position" /><code>{"Vector2 position"}</code> | Position on the page. |
+| <Link id="m-rotation" /><code>{"float rotation"}</code> | Rotation on the page. |
+| <Link id="m-scale" /><code>{"float scale"}</code> | Size on the page. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code><Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{" Create("}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph)"}</code> |  |
+| <Link id="m-create" /><code><Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{" Create("}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph)"}</code> | Places a glyph at this position. |
 
 ## Used in
 

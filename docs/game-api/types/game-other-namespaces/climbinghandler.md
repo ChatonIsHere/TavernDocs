@@ -1,6 +1,6 @@
 ---
 title: "ClimbingHandler"
-description: "Runs climbing for one player's smooth locomotion: tracks both hands' grips and stamina, moves and turns the body as the hands move, and holds the body"
+description: "Runs climbing for one player's smooth locomotion: tracks both hands' grips and stamina, moves and turns the body as the hands move, and holds the body up..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

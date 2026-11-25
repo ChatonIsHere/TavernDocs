@@ -12,13 +12,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Api.DataTransferModels.Constants
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`CustomClaimTypes`](/game-api/types/assembly-api-models/customclaimtypes) | static class |  | 13 |  |
 
 ## Alta.Api.DataTransferModels.Converters
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ForceDefaultConverter`](/game-api/types/assembly-api-models/forcedefaultconverter) | class | `JsonConverter` | 5 |  |
 | [`IPAddressJsonConverter`](/game-api/types/assembly-api-models/ipaddressjsonconverter) | class | `JsonConverter` | 3 |  |
@@ -29,7 +29,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Api.DataTransferModels.Enums
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AssignableRoles`](/game-api/types/assembly-api-models/assignableroles) | enum |  | 1 |  |
 | [`GameServerStatus`](/game-api/types/assembly-api-models/gameserverstatus) | enum |  | 3 |  |
@@ -42,13 +42,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Api.DataTransferModels.Enums.Alta.WebApi.Models
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`FormQueryType`](/game-api/types/assembly-api-models/formquerytype) | enum |  | 11 |  |
 
 ## Alta.Api.DataTransferModels.Errors
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ApiError`](/game-api/types/assembly-api-models/apierror) | class |  | 11 |  |
 | [`ErrorCode`](/game-api/types/assembly-api-models/errorcode) | enum |  | 60 |  |
@@ -57,7 +57,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Api.DataTransferModels.Exceptions
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ApiErrorException`](/game-api/types/assembly-api-models/apierrorexception) | class | `Exception` | 4 |  |
 | [`AuthorizationException`](/game-api/types/assembly-api-models/authorizationexception) | class | `Exception` | 3 |  |
@@ -67,7 +67,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Api.DataTransferModels.Extensions
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`EnumerableExtensions`](/game-api/types/assembly-api-models/enumerableextensions) | static class |  | 6 |  |
 | [`GuidExtensions`](/game-api/types/assembly-api-models/guidextensions) | static class |  | 3 |  |
@@ -80,19 +80,19 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Api.DataTransferModels.Helpers
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ShopHelper`](/game-api/types/assembly-api-models/shophelper) | static class |  | 3 |  |
 
 ## Alta.Api.DataTransferModels.Interfaces
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`IIdentifiable`](/game-api/types/assembly-api-models/iidentifiable) | interface |  | 1 |  |
 
 ## Alta.Api.DataTransferModels.Models.Agones
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AgonesAllocationFailureType`](/game-api/types/assembly-api-models/agonesallocationfailuretype) | enum |  | 5 |  |
 | [`AgonesGameServer`](/game-api/types/assembly-api-models/agonesgameserver) | class | `AgonesObject` | 3 |  |
@@ -115,7 +115,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Api.DataTransferModels.Models.Requests
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AccountLinkData`](/game-api/types/assembly-api-models/accountlinkdata) | class |  | 3 |  |
 | [`AccountRequestBase`](/game-api/types/assembly-api-models/accountrequestbase) | class |  | 3 |  |
@@ -206,13 +206,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Api.DataTransferModels.Models.Requests.DTOs.Requests
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`FriendRequestResponse`](/game-api/types/assembly-api-models/friendrequestresponse) | class |  | 1 |  |
 
 ## Alta.Api.DataTransferModels.Models.Responses
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AltaApiResponse<T>`](/game-api/types/assembly-api-models/altaapiresponse-t) | class |  | 3 |  |
 | [`BanInfo`](/game-api/types/assembly-api-models/baninfo) | class |  | 10 |  |
@@ -229,7 +229,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`FormResponse`](/game-api/types/assembly-api-models/formresponse) | class | `FormResponseSummary` | 4 |  |
 | [`FormResponseSummary`](/game-api/types/assembly-api-models/formresponsesummary) | class |  | 6 |  |
 | [`FriendRequestedType`](/game-api/types/assembly-api-models/friendrequestedtype) | enum |  | 4 |  |
-| [`FriendshipInfo`](/game-api/types/assembly-api-models/friendshipinfo) | class | `UserInfo` | 3 |  |
+| [`FriendshipInfo`](/game-api/types/assembly-api-models/friendshipinfo) | class | `UserInfo` | 3 | A user returned by the Alta web API's friends endpoints, with when the friendship started and its state. |
 | [`FriendshipType`](/game-api/types/assembly-api-models/friendshiptype) | enum |  | 4 |  |
 | [`GameHomeConfiguration`](/game-api/types/assembly-api-models/gamehomeconfiguration) | class |  | 1 |  |
 | [`GameServerInfo`](/game-api/types/assembly-api-models/gameserverinfo) | class | `GameServerInfoMinimal` | 30 | [Server settings](../networking/server-settings.md) |
@@ -240,7 +240,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`GiftRewardComment`](/game-api/types/assembly-api-models/giftrewardcomment) | class |  | 1 |  |
 | [`GroupInfo`](/game-api/types/assembly-api-models/groupinfo) | class |  | 8 |  |
 | [`GroupInfoDetailed`](/game-api/types/assembly-api-models/groupinfodetailed) | class | `GroupInfo` | 3 |  |
-| [`GroupMemberInfo`](/game-api/types/assembly-api-models/groupmemberinfo) | class |  | 10 |  |
+| [`GroupMemberInfo`](/game-api/types/assembly-api-models/groupmemberinfo) | class |  | 10 | API response describing one member of a group (server group), with their role and permissions. |
 | [`GroupMemberType`](/game-api/types/assembly-api-models/groupmembertype) | enum |  | 6 |  |
 | [`GroupPermissions`](/game-api/types/assembly-api-models/grouppermissions) | enum |  | 12 |  |
 | [`GroupRoleIdentifier`](/game-api/types/assembly-api-models/grouproleidentifier) | enum |  | 4 |  |
@@ -307,7 +307,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`TokenResultResponse`](/game-api/types/assembly-api-models/tokenresultresponse) | class |  | 4 |  |
 | [`Transitions`](/game-api/types/assembly-api-models/transitions) | class |  | 2 |  |
 | [`UserInfo`](/game-api/types/assembly-api-models/userinfo) | class | `INamedEntity` | 7 | [Player](../networking/player.md#userinfo): Two are equal when their ids are equal, whatever the names. |
-| [`UserInfoWithPermissions`](/game-api/types/assembly-api-models/userinfowithpermissions) | class | `UserInfo` | 5 |  |
+| [`UserInfoWithPermissions`](/game-api/types/assembly-api-models/userinfowithpermissions) | class | `UserInfo` | 5 | A user plus the policies (permissions) and verified flag read from their Alta JWT. |
 | [`UserPresetDataInfo`](/game-api/types/assembly-api-models/userpresetdatainfo) | class |  | 5 |  |
 | [`UserStatistics`](/game-api/types/assembly-api-models/userstatistics) | class |  | 2 |  |
 | [`ValidateItemOwnershipResponse`](/game-api/types/assembly-api-models/validateitemownershipresponse) | class |  | 1 |  |
@@ -316,14 +316,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Api.DataTransferModels.Models.Responses.DTOs.Responses
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`FriendRequestResult`](/game-api/types/assembly-api-models/friendrequestresult) | class |  | 3 |  |
 | [`InstallationEventInfo`](/game-api/types/assembly-api-models/installationeventinfo) | class |  | 8 |  |
 
 ## Alta.Api.DataTransferModels.Models.Shared
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AnalyticsEventData`](/game-api/types/assembly-api-models/analyticseventdata) | class |  | 9 |  |
 | [`BanMethod`](/game-api/types/assembly-api-models/banmethod) | enum |  | 3 |  |
@@ -357,14 +357,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Api.DataTransferModels.Settings
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`GameServerSettings`](/game-api/types/assembly-api-models/gameserversettings) | static class |  | 8 |  |
 | [`NamingSettings`](/game-api/types/assembly-api-models/namingsettings) | static class |  | 7 |  |
 
 ## Alta.Api.DataTransferModels.Utility
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`Device`](/game-api/types/assembly-api-models/device) | static class |  | 2 |  |
 | [`JsonUtility`](/game-api/types/assembly-api-models/jsonutility) | static class |  | 3 |  |

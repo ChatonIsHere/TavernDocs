@@ -1,6 +1,6 @@
 ---
 title: "VolumeTrigger"
-description: "abstract class VolumeTrigger in Root.Township."
+description: "Base for a trigger volume that tracks what is inside it: rigidbodies, players, pickups and effect handlers, each reported once on first enter and last leave."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VolumeTrigger
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for a trigger volume that tracks what is inside it: rigidbodies, players, pickups and effect handlers, each reported once on first enter and last leave. Subclasses turn on the kinds they need.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,7 +28,7 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activeeffecttargets" /><code>{"protected readonly List<"}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{"> ActiveEffectTargets"}</code> |  |
+| <Link id="m-activeeffecttargets" /><code>{"protected readonly List<"}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{"> ActiveEffectTargets"}</code> | Effect handlers a subclass has applied effects to. `EffectHandlerLeft` is called on each when the volume is disabled. |
 | <Link id="m-colliders" /><code>{"private readonly HashSet<Collider> colliders"}</code> |  |
 | <Link id="m-effecthandlers" /><code>{"private "}<Link to="/game-api/types/global-m-o/memoizehashsetcounttracker-tin-tout">{"MemoizeHashsetCountTracker"}</Link>{"<Rigidbody, "}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{"> effectHandlers"}</code> |  |
 | <Link id="m-pickups" /><code>{"private "}<Link to="/game-api/types/global-m-o/memoizehashsetcounttracker-tin-tout">{"MemoizeHashsetCountTracker"}</Link>{"<Rigidbody, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> pickups"}</code> |  |
@@ -38,31 +40,31 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ischeckingforeffecthandler" /><code>{"virtual bool IsCheckingForEffectHandler { get; }"}</code> |  |
-| <Link id="m-ischeckingforpickup" /><code>{"virtual bool IsCheckingForPickup { get; }"}</code> |  |
-| <Link id="m-ischeckingforplayer" /><code>{"virtual bool IsCheckingForPlayer { get; }"}</code> |  |
-| <Link id="m-ischeckingforrigidbody" /><code>{"virtual bool IsCheckingForRigidbody { get; }"}</code> |  |
+| <Link id="m-ischeckingforeffecthandler" /><code>{"virtual bool IsCheckingForEffectHandler { get; }"}</code> | Override to true to track effect handlers. Also needs `IsCheckingForRigidbody`. |
+| <Link id="m-ischeckingforpickup" /><code>{"virtual bool IsCheckingForPickup { get; }"}</code> | Override to true to track pickups. Also needs `IsCheckingForRigidbody`. |
+| <Link id="m-ischeckingforplayer" /><code>{"virtual bool IsCheckingForPlayer { get; }"}</code> | Override to true to track players (by their character controller). |
+| <Link id="m-ischeckingforrigidbody" /><code>{"virtual bool IsCheckingForRigidbody { get; }"}</code> | Override to true to track rigidbodies. Pickup and effect handler tracking go through this. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-clear" /><code>{"private void Clear()"}</code> |  |
-| <Link id="m-effecthandlerentered" /><code>{"protected virtual void EffectHandlerEntered("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> |  |
-| <Link id="m-effecthandlerleft" /><code>{"protected virtual void EffectHandlerLeft("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> |  |
+| <Link id="m-effecthandlerentered" /><code>{"protected virtual void EffectHandlerEntered("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> | Called when an effect handler's body first enters. Needs rigidbody and effect handler checking on. |
+| <Link id="m-effecthandlerleft" /><code>{"protected virtual void EffectHandlerLeft("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> | Called when an effect handler's body leaves, or the volume is disabled. |
 | <Link id="m-geteffecthandler" /><code>{"private bool GetEffectHandler(Rigidbody rigidbody, out "}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" result)"}</code> |  |
 | <Link id="m-getplayer" /><code>{"private bool GetPlayer(Collider collider, out "}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" result)"}</code> |  |
 | <Link id="m-getrigidbody" /><code>{"private bool GetRigidbody(Collider collider, out Rigidbody result)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"protected virtual void OnDisable()"}</code> |  |
+| <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> | Clears everything tracked. |
+| <Link id="m-ondisable" /><code>{"protected virtual void OnDisable()"}</code> | Clears everything tracked and calls the leave hooks. |
 | <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |  |
 | <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |  |
-| <Link id="m-pickupentered" /><code>{"protected virtual void PickupEntered("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-pickupleft" /><code>{"protected virtual void PickupLeft("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-playerentered" /><code>{"protected virtual void PlayerEntered("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> |  |
-| <Link id="m-playerleft" /><code>{"protected virtual void PlayerLeft("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> |  |
+| <Link id="m-pickupentered" /><code>{"protected virtual void PickupEntered("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Called when a pickup first enters. |
+| <Link id="m-pickupleft" /><code>{"protected virtual void PickupLeft("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Called when a pickup leaves. |
+| <Link id="m-playerentered" /><code>{"protected virtual void PlayerEntered("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Called when a player's character first enters. |
+| <Link id="m-playerleft" /><code>{"protected virtual void PlayerLeft("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Called when a player's character leaves. |
 | <Link id="m-removeinternal" /><code>{"private bool RemoveInternal(Collider other)"}</code> |  |
-| <Link id="m-rigidbodyentered" /><code>{"protected virtual void RigidbodyEntered(Rigidbody rigidbody)"}</code> |  |
-| <Link id="m-rigidbodyleft" /><code>{"protected virtual void RigidbodyLeft(Rigidbody rigidbody)"}</code> |  |
+| <Link id="m-rigidbodyentered" /><code>{"protected virtual void RigidbodyEntered(Rigidbody rigidbody)"}</code> | Called when a rigidbody's first collider enters. The base passes it on to pickup and effect handler tracking. |
+| <Link id="m-rigidbodyleft" /><code>{"protected virtual void RigidbodyLeft(Rigidbody rigidbody)"}</code> | Called when a rigidbody's last collider leaves. |
 | <Link id="m-triggereffecthandlerleftonallactivetargets" /><code>{"private void TriggerEffectHandlerLeftOnAllActiveTargets()"}</code> |  |
 | <Link id="m-trygetpickup" /><code>{"private bool TryGetPickup(Rigidbody rigidbody, out "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" result)"}</code> |  |

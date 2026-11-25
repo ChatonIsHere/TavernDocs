@@ -1,6 +1,6 @@
 ---
 title: "IHistoryManager"
-description: "interface IHistoryManager in Root.Township."
+description: "An undo and redo history."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+An undo and redo history. The cosmetics editor uses one for outfit changes.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`EmptyHistory<T>`](/game-api/types/global-e-h/emptyhistory-t), [`HistoryAccess`](/game-api/types/global-e-h/historyaccess), [`HistoryManager<T>`](/game-api/types/global-e-h/historymanager-t), [`IHistoryManager<T>`](/game-api/types/global-i-l/ihistorymanager-t)
 
@@ -19,22 +21,22 @@ An **interface** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isredopossible" /><code>{"bool IsRedoPossible { get; }"}</code> |  |
-| <Link id="m-isundopossible" /><code>{"bool IsUndoPossible { get; }"}</code> |  |
+| <Link id="m-isredopossible" /><code>{"bool IsRedoPossible { get; }"}</code> | True if there is an undone action to redo. |
+| <Link id="m-isundopossible" /><code>{"bool IsUndoPossible { get; }"}</code> | True if there is an action to undo. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-itempushed" /><code>{"event Action ItemPushed"}</code> |  |
+| <Link id="m-itempushed" /><code>{"event Action ItemPushed"}</code> | Raised when a new action is added. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-redo" /><code>{"void Redo()"}</code> |  |
-| <Link id="m-undo" /><code>{"void Undo()"}</code> |  |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | Empties the history. |
+| <Link id="m-redo" /><code>{"void Redo()"}</code> | Redoes the last undone action. |
+| <Link id="m-undo" /><code>{"void Undo()"}</code> | Undoes the last action. |
 
 ## Used in
 

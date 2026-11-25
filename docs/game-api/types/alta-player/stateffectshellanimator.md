@@ -1,6 +1,6 @@
 ---
 title: "StatEffectShellAnimator"
-description: "class StatEffectShellAnimator in Root.Township."
+description: "Client: the shell animator for stat effect shields around a player."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StatEffectShellAnimator
 
 A **class** in `Root.Township`, `Alta.PlayerEffects`.
+
+Client: the shell animator for stat effect shields around a player. Several shields can be asked for at once; the highest priority shows and the rest wait in a queue.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`ShellAnimator`](/game-api/types/alta-player/shellanimator)
@@ -26,16 +28,16 @@ A **class** in `Root.Township`, `Alta.PlayerEffects`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colora" /><code>{"static readonly int _ColorA"}</code> |  |
-| <Link id="m-colorb" /><code>{"static readonly int _ColorB"}</code> |  |
-| <Link id="m-progress" /><code>{"static readonly int _Progress"}</code> |  |
-| <Link id="m-speed" /><code>{"static readonly int _Speed"}</code> |  |
-| <Link id="m-utile" /><code>{"static readonly int _UTile"}</code> |  |
-| <Link id="m-vtile" /><code>{"static readonly int _VTile"}</code> |  |
-| <Link id="m-wavealpha" /><code>{"static readonly int _WaveAlpha"}</code> |  |
-| <Link id="m-wavecolor" /><code>{"static readonly int _WaveColor"}</code> |  |
-| <Link id="m-wavetexture" /><code>{"static readonly int _WaveTexture"}</code> |  |
-| <Link id="m-width" /><code>{"static readonly int _Width"}</code> |  |
+| <Link id="m-colora" /><code>{"static readonly int _ColorA"}</code> | Shader ID of `_ColorA`. |
+| <Link id="m-colorb" /><code>{"static readonly int _ColorB"}</code> | Shader ID of `_ColorB`. |
+| <Link id="m-progress" /><code>{"static readonly int _Progress"}</code> | Shader ID of `_Progress`. |
+| <Link id="m-speed" /><code>{"static readonly int _Speed"}</code> | Shader ID of `_Speed`. |
+| <Link id="m-utile" /><code>{"static readonly int _UTile"}</code> | Shader ID of `_UTile`. |
+| <Link id="m-vtile" /><code>{"static readonly int _VTile"}</code> | Shader ID of `_VTile`. |
+| <Link id="m-wavealpha" /><code>{"static readonly int _WaveAlpha"}</code> | Shader ID of `_WaveAlpha`. |
+| <Link id="m-wavecolor" /><code>{"static readonly int _WaveColor"}</code> | Shader ID of `_WaveColor`. |
+| <Link id="m-wavetexture" /><code>{"static readonly int _WaveTexture"}</code> | Shader ID of `_WaveTexture`. |
+| <Link id="m-width" /><code>{"static readonly int _Width"}</code> | Shader ID of `_Width`. |
 | <Link id="m-animationqueue" /><code>{"private "}<Link to="/game-api/types/assembly-other/fastpriorityqueue-t">{"FastPriorityQueue"}</Link>{"<"}<Link to="/game-api/types/alta-player/stateffectshellanimator-shellanimationhandlernode">{"StatEffectShellAnimator.ShellAnimationHandlerNode"}</Link>{"> animationQueue"}</code> |  |
 | <Link id="m-currenthandler" /><code>{"private "}<Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" currentHandler"}</code> |  |
 
@@ -43,14 +45,14 @@ A **class** in `Root.Township`, `Alta.PlayerEffects`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currenthandler-2" /><code><Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" CurrentHandler { get; set; }"}</code> |  |
-| <Link id="m-meshname" /><code>{"protected override string MeshName { get; }"}</code> |  |
+| <Link id="m-currenthandler-2" /><code><Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" CurrentHandler { get; set; }"}</code> | The shield being shown. |
+| <Link id="m-meshname" /><code>{"protected override string MeshName { get; }"}</code> | "_Stat EffectS Shell". |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animateshield" /><code><Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" AnimateShield("}<Link to="/game-api/types/alta-player/stateffectshellsetting">{"StatEffectShellSetting"}</Link>{" setting, float startProgress, float priority)"}</code> |  |
+| <Link id="m-animateshield" /><code><Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" AnimateShield("}<Link to="/game-api/types/alta-player/stateffectshellsetting">{"StatEffectShellSetting"}</Link>{" setting, float startProgress, float priority)"}</code> | Asks for a shield with a setting and priority (higher shows first). It plays now or queues; the returned handler ends it. |
 | <Link id="m-animatecurrenthandler" /><code>{"private void AnimateCurrentHandler()"}</code> |  |
 | <Link id="m-followqueue" /><code>{"private void FollowQueue()"}</code> |  |
 | <Link id="m-handlerdeactivated" /><code>{"private void HandlerDeactivated("}<Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" handler)"}</code> |  |

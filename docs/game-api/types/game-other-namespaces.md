@@ -12,36 +12,36 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## ATT
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`PrefabReference`](/game-api/types/game-other-namespaces/prefabreference) | struct |  | 1 |  |
 
 ## ATT.Analytics
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AltaAnalyticsDispatcher`](/game-api/types/game-other-namespaces/altaanalyticsdispatcher) | class | `AbstractAnalyticsDispatcher`, `IIsolate` | 1 | [Alta's web API](../console-and-utilities/alta-web-api.md) |
 | [`AreaTriggerAnalyticsEvent`](/game-api/types/game-other-namespaces/areatriggeranalyticsevent) | class | `TownshipAnalyticsEvent` | 2 |  |
 | [`ChallengeAnalyticsEvent`](/game-api/types/game-other-namespaces/challengeanalyticsevent) | class | `TownshipAnalyticsEvent` | 9 |  |
-| [`TownshipAnalyticsEvent`](/game-api/types/game-other-namespaces/townshipanalyticsevent) | class | `AnalyticsEvent` | 0 |  |
+| [`TownshipAnalyticsEvent`](/game-api/types/game-other-namespaces/townshipanalyticsevent) | class | `AnalyticsEvent` | 0 | Base for the game's analytics events. Adds the player's ID if given and server info to every event. |
 | [`UserSettingsAnalyticsEvent`](/game-api/types/game-other-namespaces/usersettingsanalyticsevent) | class | `TownshipAnalyticsEvent` | 1 |  |
 
 ## ATT.Analytics.Instruments
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ServerInfoInstrument`](/game-api/types/game-other-namespaces/serverinfoinstrument) | class | `IAnalyticsInstrument` | 1 |  |
 
 ## ATT.Analytics.Social
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`BanPlayerSocialAnalyticsEvent`](/game-api/types/game-other-namespaces/banplayersocialanalyticsevent) | class | `SocialAnalyticsEvent` | 3 |  |
 | [`SocialAnalyticsEvent`](/game-api/types/game-other-namespaces/socialanalyticsevent) | class | `AnalyticsEvent` | 7 |  |
 
 ## ATT.Character.QuickAccessMenu
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`CommandSync`](/game-api/types/game-other-namespaces/commandsync) | class | `NetworkEntityBehaviour` | 3 |  |
 | [`PermissionsHelper`](/game-api/types/game-other-namespaces/permissionshelper) | static class |  | 2 |  |
@@ -50,23 +50,23 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## ATT.ClimbingTower
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`SpiritModeDoorwaySaveData`](/game-api/types/game-other-namespaces/spiritmodedoorwaysavedata) | internal class | `NewSaveData<SpiritModeDoorway, SpiritModeDoorwaySaveData>` | 4 |  |
 | [`SpiritModeDoorwaySaveDataOld1`](/game-api/types/game-other-namespaces/spiritmodedoorwaysavedataold1) | internal class | `OldSaveData` | 4 |  |
 
 ## ATT.Domains
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`Domain`](/game-api/types/game-other-namespaces/domain) | class | `NetworkEntityBehaviour` | 11 |  |
+| [`Domain`](/game-api/types/game-other-namespaces/domain) | class | `NetworkEntityBehaviour` | 11 | A private space for one player, spawned by `DomainController` below the map (y -200, spaced 400 apart). The micro tutorial uses one: the player's body is despawned and respawned inside, then returned to where they entered. |
 | [`DomainController`](/game-api/types/game-other-namespaces/domaincontroller) | class | `NetworkEntityBehaviour`, `IDomainController` | 6 |  |
 | [`DomainPlayerSpawnSetter`](/game-api/types/game-other-namespaces/domainplayerspawnsetter) | class | `MonoBehaviour` | 0 |  |
-| [`IDomainController`](/game-api/types/game-other-namespaces/idomaincontroller) | interface |  | 3 |  |
+| [`IDomainController`](/game-api/types/game-other-namespaces/idomaincontroller) | interface |  | 3 | Creates and tracks per-player domains (spawned areas tied to one player). Implemented by `DomainController` and bound in `GameLifetimeScope`. Create and destroy are server only. |
 
 ## ATT.EventBus
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`EventBusLocator`](/game-api/types/game-other-namespaces/eventbuslocator) | class |  | 2 | [Console, utilities and Alta assemblies](../console-and-utilities/overview.md) |
 | [`ITownshipEventBus`](/game-api/types/game-other-namespaces/itownshipeventbus) | interface | `IEventBus` | 0 |  |
@@ -74,11 +74,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## ATT.EventBus.TownshipEvents
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ForceCompleteTutorialStepEvent`](/game-api/types/game-other-namespaces/forcecompletetutorialstepevent) | class | `IPlayerEvent`, `IEventBusEventData` | 2 | [Event buses and services](../console-and-utilities/event-buses-and-services.md) |
-| [`IEventBusEventData`](/game-api/types/game-other-namespaces/ieventbuseventdata) | interface |  | 0 |  |
-| [`IPlayerEvent`](/game-api/types/game-other-namespaces/iplayerevent) | interface | `IEventBusEventData` | 1 |  |
+| [`IEventBusEventData`](/game-api/types/game-other-namespaces/ieventbuseventdata) | interface |  | 0 | Marker interface for data sent on the Township event bus. |
+| [`IPlayerEvent`](/game-api/types/game-other-namespaces/iplayerevent) | interface | `IEventBusEventData` | 1 | An event bus event caused by a player. |
 | [`ItemCraftedEvent`](/game-api/types/game-other-namespaces/itemcraftedevent) | class | `IPlayerEvent`, `IEventBusEventData` | 3 | [Event buses and services](../console-and-utilities/event-buses-and-services.md), [Console, utilities and Alta assemblies](../console-and-utilities/overview.md) |
 | [`ItemForgedEvent`](/game-api/types/game-other-namespaces/itemforgedevent) | class | `IPlayerEvent`, `IEventBusEventData` | 3 | [Event buses and services](../console-and-utilities/event-buses-and-services.md): the player and the prefab hash |
 | [`PlayerGrabbedPrefabEvent`](/game-api/types/game-other-namespaces/playergrabbedprefabevent) | class | `IPlayerEvent`, `IEventBusEventData` | 2 | [Event buses and services](../console-and-utilities/event-buses-and-services.md) |
@@ -88,7 +88,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## ATT.FeatureTestGymnasium
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ChunkDisplayTool`](/game-api/types/game-other-namespaces/chunkdisplaytool) | class | `SingletonBehaviour<ChunkDisplayTool>` | 2 |  |
 | [`GymnasiumOnDemandPrefabSpawner`](/game-api/types/game-other-namespaces/gymnasiumondemandprefabspawner) | class | `NetworkEntityBehaviour`, `ISavable<GymnasiumOnDemandPrefabSpawnerData>`, `ISavableSave<GymnasiumOnDemandPrefabSpawnerData>`, +1 more | 4 |  |
@@ -99,33 +99,33 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## ATT.MainMenu.Scripts
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`EventOrb`](/game-api/types/game-other-namespaces/eventorb) | class | `NetworkEntityBehaviour` | 3 |  |
+| [`EventOrb`](/game-api/types/game-other-namespaces/eventorb) | class | `NetworkEntityBehaviour` | 3 | A menu orb that runs a set action when the player lets go of it in a valid place. Wraps an `ActionOrb`. |
 
 ## ATT.MicroTutorial
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ClientController`](/game-api/types/game-other-namespaces/clientcontroller) | class |  | 1 |  |
 | [`ClientStepInstanceMap`](/game-api/types/game-other-namespaces/clientstepinstancemap) | class |  | 5 |  |
 | [`DespawnStepContentCommand`](/game-api/types/game-other-namespaces/despawnstepcontentcommand) | struct |  | 1 |  |
-| [`IMicroTutorial`](/game-api/types/game-other-namespaces/imicrotutorial) | interface |  | 16 |  |
+| [`IMicroTutorial`](/game-api/types/game-other-namespaces/imicrotutorial) | interface |  | 16 | Server: one run of a micro tutorial for one player. It moves the player into a tutorial domain, runs the steps in order and brings them back afterwards. `MicroTutorial` is the implementation. |
 | [`IMicroTutorialFactory`](/game-api/types/game-other-namespaces/imicrotutorialfactory) | interface |  | 1 |  |
-| [`IMicroTutorialSettings`](/game-api/types/game-other-namespaces/imicrotutorialsettings) | interface |  | 4 |  |
-| [`IMicroTutorialSystem`](/game-api/types/game-other-namespaces/imicrotutorialsystem) | interface |  | 4 |  |
-| [`IServerStepInstance`](/game-api/types/game-other-namespaces/iserverstepinstance) | interface | `IStepInstance` | 6 |  |
-| [`IStepInstance`](/game-api/types/game-other-namespaces/istepinstance) | interface |  | 4 |  |
-| [`ISyncController`](/game-api/types/game-other-namespaces/isynccontroller) | interface |  | 9 |  |
+| [`IMicroTutorialSettings`](/game-api/types/game-other-namespaces/imicrotutorialsettings) | interface |  | 4 | Settings for a micro tutorial: a named set of steps and a message when finished. Implemented by `MicroTutorialSettings`. |
+| [`IMicroTutorialSystem`](/game-api/types/game-other-namespaces/imicrotutorialsystem) | interface |  | 4 | The micro tutorial system (short in-game tutorials), giving access to its client, server and sync controllers. Implemented by `MicroTutorialSystem` and bound in the game's dependency injection scope. |
+| [`IServerStepInstance`](/game-api/types/game-other-namespaces/iserverstepinstance) | interface | `IStepInstance` | 6 | Server side of one step in a micro tutorial: starts, stops, spawns and removes its content, and reports when done. |
+| [`IStepInstance`](/game-api/types/game-other-namespaces/istepinstance) | interface |  | 4 | One step of a running micro tutorial and the content it has spawned. `StepInstance` and its subclass `ServerStepInstance` implement it. |
+| [`ISyncController`](/game-api/types/game-other-namespaces/isynccontroller) | interface |  | 9 | Messages between server and client for micro tutorials: the server tells a player's client to spawn, add to or remove step content, and the client says when it has loaded. `SyncController` is the implementation. |
 | [`LoadingStatus`](/game-api/types/game-other-namespaces/loadingstatus) | enum |  | 2 |  |
-| [`MicroTutorial`](/game-api/types/game-other-namespaces/microtutorial) | class | `IMicroTutorial` | 18 |  |
+| [`MicroTutorial`](/game-api/types/game-other-namespaces/microtutorial) | class | `IMicroTutorial` | 18 | Server: one run of a micro tutorial for one player. It moves the player into a private domain, runs the steps in order, and returns them to the overworld when despawned. |
 | [`MicroTutorialAnalyticsEvent`](/game-api/types/game-other-namespaces/microtutorialanalyticsevent) | class | `TownshipAnalyticsEvent` | 4 |  |
 | [`MicroTutorialFaceOrb`](/game-api/types/game-other-namespaces/microtutorialfaceorb) | class | `NetworkEntityBehaviour`, `ISavable<MicroTutorialFaceOrbSaveData>`, `ISavableSave<MicroTutorialFaceOrbSaveData>`, +1 more | 3 |  |
 | [`MicroTutorialFaceOrbSaveData`](/game-api/types/game-other-namespaces/microtutorialfaceorbsavedata) | internal class | `NewSaveData<MicroTutorialFaceOrb, MicroTutorialFaceOrbSaveData>` | 2 |  |
 | [`MicroTutorialFaceOrbSpawnSettings`](/game-api/types/game-other-namespaces/microtutorialfaceorbspawnsettings) | class | `GlobalSettings<MicroTutorialFaceOrbSpawnSettings>` | 1 |  |
 | [`MicroTutorialFaceOrbType`](/game-api/types/game-other-namespaces/microtutorialfaceorbtype) | enum |  | 2 |  |
 | [`MicroTutorialFactory`](/game-api/types/game-other-namespaces/microtutorialfactory) | class | `IMicroTutorialFactory` | 2 |  |
-| [`MicroTutorialLogger`](/game-api/types/game-other-namespaces/microtutoriallogger) | class |  | 7 |  |
+| [`MicroTutorialLogger`](/game-api/types/game-other-namespaces/microtutoriallogger) | class |  | 7 | Wrapper around a logger for the micro tutorial code that drops messages below a shared level (Warn by default). |
 | [`MicroTutorialModule`](/game-api/types/game-other-namespaces/microtutorialmodule) | static class |  | 0 |  |
 | [`MicroTutorialOrbInjector`](/game-api/types/game-other-namespaces/microtutorialorbinjector) | class | `NetworkEntityBehaviour` | 1 |  |
 | [`MicroTutorialOrbSpawner`](/game-api/types/game-other-namespaces/microtutorialorbspawner) | class | `NetworkEntityBehaviour` | 1 |  |
@@ -139,22 +139,22 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ServerController`](/game-api/types/game-other-namespaces/servercontroller) | class |  | 4 |  |
 | [`ServerStepInstance`](/game-api/types/game-other-namespaces/serverstepinstance) | class | `StepInstance`, `IServerStepInstance`, `IStepInstance` | 8 |  |
 | [`SpawnStepContentCommand`](/game-api/types/game-other-namespaces/spawnstepcontentcommand) | struct |  | 2 |  |
-| [`StepInstance`](/game-api/types/game-other-namespaces/stepinstance) | class | `IStepInstance` | 6 |  |
+| [`StepInstance`](/game-api/types/game-other-namespaces/stepinstance) | class | `IStepInstance` | 6 | One running step of a micro tutorial on the client: makes a step object with static and dynamic content folders and spawns the step's static content. |
 | [`SyncController`](/game-api/types/game-other-namespaces/synccontroller) | class | `ISyncController` | 10 |  |
 | [`TutorialCompletedMessage`](/game-api/types/game-other-namespaces/tutorialcompletedmessage) | class |  | 2 |  |
 | [`TutorialState`](/game-api/types/game-other-namespaces/tutorialstate) | enum |  | 3 |  |
 
 ## ATT.MicroTutorial.Steps
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AutoCompleteAfterDelayStep`](/game-api/types/game-other-namespaces/autocompleteafterdelaystep) | class | `MicroTutorialStep` | 1 |  |
 | [`AutoCompleteStep`](/game-api/types/game-other-namespaces/autocompletestep) | class | `MicroTutorialStep` | 1 |  |
 | [`DestroyStepContentStep`](/game-api/types/game-other-namespaces/destroystepcontentstep) | class | `MicroTutorialStep` | 2 |  |
 | [`ItemCraftedStep`](/game-api/types/game-other-namespaces/itemcraftedstep) | class | `PlayerEventStep` | 3 |  |
 | [`ItemForgedStep`](/game-api/types/game-other-namespaces/itemforgedstep) | class | `PlayerEventStep` | 3 |  |
-| [`MicroTutorialStep`](/game-api/types/game-other-namespaces/microtutorialstep) | abstract class | `HashedGeneralValue<MicroTutorialStep>` | 10 |  |
-| [`PlayerEventStep`](/game-api/types/game-other-namespaces/playereventstep) | class | `MicroTutorialStep` | 1 |  |
+| [`MicroTutorialStep`](/game-api/types/game-other-namespaces/microtutorialstep) | abstract class | `HashedGeneralValue<MicroTutorialStep>` | 10 | Base asset for one step of a micro tutorial. Subclasses say which player events finish the step or run their own server logic; the server's step instance spawns the step's content and watches for completion. |
+| [`PlayerEventStep`](/game-api/types/game-other-namespaces/playereventstep) | class | `MicroTutorialStep` | 1 | A micro tutorial step completed by player events, with a setting for how far back to look for events that already happened. |
 | [`PlayerGrabbedPrefab`](/game-api/types/game-other-namespaces/playergrabbedprefab) | class | `PlayerEventStep` | 3 |  |
 | [`PlayerInPositionObserver`](/game-api/types/game-other-namespaces/playerinpositionobserver) | class | `MonoBehaviour` | 0 |  |
 | [`PlayerInPositionStep`](/game-api/types/game-other-namespaces/playerinpositionstep) | class | `PlayerEventStep` | 3 |  |
@@ -164,14 +164,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## ATT.PlayerStates
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AtmBalanceChangeData`](/game-api/types/game-other-namespaces/atmbalancechangedata) | class |  | 3 | [Console events](../console-and-utilities/console-events.md) |
 | [`CommandExecutedData`](/game-api/types/game-other-namespaces/commandexecuteddata) | class |  | 3 | [Console events](../console-and-utilities/console-events.md) |
-| [`CustomizationStateSettings`](/game-api/types/game-other-namespaces/customizationstatesettings) | class | `PlayerStateSettings` | 7 |  |
+| [`CustomizationStateSettings`](/game-api/types/game-other-namespaces/customizationstatesettings) | class | `PlayerStateSettings` | 7 | Settings for the character customization player state: the room prefab to spawn, where, and what happens when the player finishes. |
 | [`CustomizationStateSettings.Create`](/game-api/types/game-other-namespaces/customizationstatesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<CustomizationStateSettings>` | 0 |  |
 | [`DownedStateDebuffManager`](/game-api/types/game-other-namespaces/downedstatedebuffmanager) | class |  | 3 |  |
-| [`DownedStateSettings`](/game-api/types/game-other-namespaces/downedstatesettings) | class | `PlayerStateSettings` | 26 |  |
+| [`DownedStateSettings`](/game-api/types/game-other-namespaces/downedstatesettings) | class | `PlayerStateSettings` | 26 | Asset with the tuning for the downed state: gravestone, revive orbs other players collect, respawn orb, effects, and the health and debuffs a revived player gets back. Read by `DownedState` and the revive activity. |
 | [`Gravestone`](/game-api/types/game-other-namespaces/gravestone) | class | `NetworkEntityBehaviour` | 3 |  |
 | [`InventoryChangeData`](/game-api/types/game-other-namespaces/inventorychangedata) | class |  | 9 | [Console events](../console-and-utilities/console-events.md) |
 | [`InventoryChangeType`](/game-api/types/game-other-namespaces/inventorychangetype) | enum |  | 4 |  |
@@ -187,13 +187,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## ATT.Progression
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`PlayerUnlockAnalytics`](/game-api/types/game-other-namespaces/playerunlockanalytics) | class |  | 2 |  |
 
 ## ATT.Respawn
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`DefaultPlayerRespawnPositionProvider`](/game-api/types/game-other-namespaces/defaultplayerrespawnpositionprovider) | class | `IPlayerRespawnPositionProvider` | 1 |  |
 | [`GlobalRespawnShrine`](/game-api/types/game-other-namespaces/globalrespawnshrine) | class | `RespawnShrine` | 1 |  |
@@ -201,16 +201,16 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`IRespawnBeaconController`](/game-api/types/game-other-namespaces/irespawnbeaconcontroller) | interface |  | 1 |  |
 | [`IRespawnBeaconView`](/game-api/types/game-other-namespaces/irespawnbeaconview) | interface |  | 2 |  |
 | [`IRespawnShrine`](/game-api/types/game-other-namespaces/irespawnshrine) | interface |  | 1 |  |
-| [`IRespawnShrineModel`](/game-api/types/game-other-namespaces/irespawnshrinemodel) | interface |  | 9 |  |
-| [`IRespawnShrineSettings`](/game-api/types/game-other-namespaces/irespawnshrinesettings) | interface |  | 9 |  |
-| [`IRespawnSystem`](/game-api/types/game-other-namespaces/irespawnsystem) | interface | `IPlayerRespawnPositionProvider` | 8 |  |
-| [`IRespawnSystemModel`](/game-api/types/game-other-namespaces/irespawnsystemmodel) | interface | `IEnumerable<IRespawnShrineModel>`, `IEnumerable` | 12 |  |
-| [`IRespawnSystemSettings`](/game-api/types/game-other-namespaces/irespawnsystemsettings) | interface | `IEnumerable<IRespawnShrineSettings>`, `IEnumerable` | 15 |  |
-| [`PoweredRespawnShrine`](/game-api/types/game-other-namespaces/poweredrespawnshrine) | class | `RespawnShrine`, `ISavable<PoweredRespawnShrineSaveData>`, `ISavableSave<PoweredRespawnShrineSaveData>`, +1 more | 7 |  |
+| [`IRespawnShrineModel`](/game-api/types/game-other-namespaces/irespawnshrinemodel) | interface |  | 9 | Saved state of one respawn shrine: fuel left and the players who use it as their spawn point. |
+| [`IRespawnShrineSettings`](/game-api/types/game-other-namespaces/irespawnshrinesettings) | interface |  | 9 | Fixed settings for one respawn shrine: its id, what it burns as fuel and where players and its beacon appear. |
+| [`IRespawnSystem`](/game-api/types/game-other-namespaces/irespawnsystem) | interface | `IPlayerRespawnPositionProvider` | 8 | The respawn shrine system: which shrine each player respawns at and how much fuel each shrine has. Implemented by `RespawnSystem`, a network entity behaviour run by the server. |
+| [`IRespawnSystemModel`](/game-api/types/game-other-namespaces/irespawnsystemmodel) | interface | `IEnumerable<IRespawnShrineModel>`, `IEnumerable` | 12 | The respawn shrines' state: fuel per shrine and which players are subscribed to which shrine. `RespawnSystem` owns it, ticks it on the server and syncs it to clients as JSON. |
+| [`IRespawnSystemSettings`](/game-api/types/game-other-namespaces/irespawnsystemsettings) | interface | `IEnumerable<IRespawnShrineSettings>`, `IEnumerable` | 15 | Settings for respawn shrines and the respawn system, plus the list of shrine settings by id. `RespawnSystemSettings` is the global settings asset that implements it. |
+| [`PoweredRespawnShrine`](/game-api/types/game-other-namespaces/poweredrespawnshrine) | class | `RespawnShrine`, `ISavable<PoweredRespawnShrineSaveData>`, `ISavableSave<PoweredRespawnShrineSaveData>`, +1 more | 7 | A respawn shrine that runs on fuel. Players toggle it as their spawn point, and it only works while it has power. Both sides: the server owns the respawn data, clients update glyphs, fuel display and sounds. |
 | [`PoweredRespawnShrineSaveData`](/game-api/types/game-other-namespaces/poweredrespawnshrinesavedata) | class | `NewSaveData<PoweredRespawnShrine, PoweredRespawnShrineSaveData>` | 1 |  |
 | [`RespawnBeaconController`](/game-api/types/game-other-namespaces/respawnbeaconcontroller) | class | `NetworkEntityBehaviour`, `IRespawnBeaconController` | 2 |  |
 | [`RespawnBeaconView`](/game-api/types/game-other-namespaces/respawnbeaconview) | class | `MonoBehaviour`, `IRespawnBeaconView` | 2 |  |
-| [`RespawnShrine`](/game-api/types/game-other-namespaces/respawnshrine) | abstract class | `NetworkEntityBehaviour`, `IRespawnShrine` | 1 |  |
+| [`RespawnShrine`](/game-api/types/game-other-namespaces/respawnshrine) | abstract class | `NetworkEntityBehaviour`, `IRespawnShrine` | 1 | Base for a respawn shrine in the world that players touch to set as their spawn point. Listens to the respawn system model and shows a glyph colour for whether the local player is linked. |
 | [`RespawnShrineData`](/game-api/types/game-other-namespaces/respawnshrinedata) | class | `ScriptableObject`, `IRespawnShrineSettings` | 9 |  |
 | [`RespawnShrineFuelDisplay`](/game-api/types/game-other-namespaces/respawnshrinefueldisplay) | class | `NetworkEntityBehaviour` | 1 |  |
 | [`RespawnShrineFuelDockController`](/game-api/types/game-other-namespaces/respawnshrinefueldockcontroller) | class | `MonoBehaviour` | 0 |  |
@@ -218,33 +218,33 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`RespawnShrinePowerIndicator`](/game-api/types/game-other-namespaces/respawnshrinepowerindicator) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 |  |
 | [`RespawnShrineStaticAudioController`](/game-api/types/game-other-namespaces/respawnshrinestaticaudiocontroller) | class | `MonoBehaviour` | 1 |  |
 | [`RespawnShrineSubscriberMarkController`](/game-api/types/game-other-namespaces/respawnshrinesubscribermarkcontroller) | class | `MonoBehaviour` | 2 |  |
-| [`RespawnSystem`](/game-api/types/game-other-namespaces/respawnsystem) | class | `NetworkEntityBehaviour`, `IRespawnSystem`, `IPlayerRespawnPositionProvider`, +3 more | 14 |  |
-| [`RespawnSystemModel`](/game-api/types/game-other-namespaces/respawnsystemmodel) | class | `IRespawnSystemModel`, `IEnumerable<IRespawnShrineModel>`, `IEnumerable` | 15 |  |
-| [`RespawnSystemSaveData`](/game-api/types/game-other-namespaces/respawnsystemsavedata) | class | `NewSaveData<RespawnSystem, RespawnSystemSaveData>` | 2 |  |
-| [`RespawnSystemSettings`](/game-api/types/game-other-namespaces/respawnsystemsettings) | class | `GlobalSettings<RespawnSystemSettings>`, `IRespawnSystemSettings`, `IEnumerable<IRespawnShrineSettings>`, +1 more | 16 |  |
+| [`RespawnSystem`](/game-api/types/game-other-namespaces/respawnsystem) | class | `NetworkEntityBehaviour`, `IRespawnSystem`, `IPlayerRespawnPositionProvider`, +3 more | 14 | The networked object that tracks respawn shrines: which shrine each player is subscribed to, shrine fuel, and where a player respawns. The server burns fuel on a timer and syncs the model to clients. Get it as `IRespawnSystem` through dependency injection. |
+| [`RespawnSystemModel`](/game-api/types/game-other-namespaces/respawnsystemmodel) | class | `IRespawnSystemModel`, `IEnumerable<IRespawnShrineModel>`, `IEnumerable` | 15 | State of every respawn shrine (fuel and bound players), saved and sent to clients as JSON. Made from the shrine list in `RespawnSystemSettings` or from a save. |
+| [`RespawnSystemSaveData`](/game-api/types/game-other-namespaces/respawnsystemsavedata) | class | `NewSaveData<RespawnSystem, RespawnSystemSaveData>` | 2 | Save data for the `RespawnSystem`: the global shrine and every respawn shrine's model. |
+| [`RespawnSystemSettings`](/game-api/types/game-other-namespaces/respawnsystemsettings) | class | `GlobalSettings<RespawnSystemSettings>`, `IRespawnSystemSettings`, `IEnumerable<IRespawnShrineSettings>`, +1 more | 16 | Global settings for respawn shrines: per-shrine data by GUID, tick rates, beacon sizes, subscriber marks, glyph colours and sounds. Get it with `RespawnSystemSettings.Instance`. |
 
 ## ATT.Saving
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`SaveMode`](/game-api/types/game-other-namespaces/savemode) | enum |  | 5 | [Prefabs and prefab hashes](../world/prefabs.md#savemode): What happens to a spawned instance when its chunk saves or unloads. It's set on the instance (`prefab.SaveMode`); the spawn helpers that take a `SaveMode` set it for you. |
 
 ## ATT.TaskTracking
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AutoFestiveAchievement`](/game-api/types/game-other-namespaces/autofestiveachievement) | class | `GameAchievement` | 1 |  |
 
 ## ATT.TownshipServer
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`FeatureSetFlags`](/game-api/types/game-other-namespaces/featuresetflags) | enum |  | 2 |  |
 | [`ServerFeatureSetProvider`](/game-api/types/game-other-namespaces/serverfeaturesetprovider) | static class |  | 3 |  |
 
 ## ATT.Triggers
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`DebugTriggerEvent`](/game-api/types/game-other-namespaces/debugtriggerevent) | class | `ZoneEvent` | 1 |  |
 | [`ITriggerEventData`](/game-api/types/game-other-namespaces/itriggereventdata) | interface |  | 1 |  |
@@ -256,14 +256,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## ATT.Utilities
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ICompletableActivity`](/game-api/types/game-other-namespaces/icompletableactivity) | interface |  | 4 |  |
 | [`Rotator`](/game-api/types/game-other-namespaces/rotator) | class | `NetworkEntityBehaviour` | 1 |  |
 
 ## Features
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`GenericVFXController`](/game-api/types/game-other-namespaces/genericvfxcontroller) | class | `NetworkEntityBehaviour` | 5 |  |
 | [`HandTouchVfxController`](/game-api/types/game-other-namespaces/handtouchvfxcontroller) | class | `GenericVFXController` | 2 |  |
@@ -274,24 +274,24 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Features.Analytics.ClimbingTower
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ClimbingTowerAnalyticEventType`](/game-api/types/game-other-namespaces/climbingtoweranalyticeventtype) | enum |  | 6 |  |
 | [`TowerAnalyticsReporter`](/game-api/types/game-other-namespaces/toweranalyticsreporter) | class | `MonoBehaviour` | 2 |  |
 
 ## Features.Analytics.Registration
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AccountRequiredPopupAnalytics`](/game-api/types/game-other-namespaces/accountrequiredpopupanalytics) | class | `MonoBehaviour` | 0 |  |
 | [`SignupAnalyticsReporter`](/game-api/types/game-other-namespaces/signupanalyticsreporter) | class | `MonoBehaviour` | 10 |  |
 
 ## Features.Climbing
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ClimbingHand`](/game-api/types/game-other-namespaces/climbinghand) | class |  | 20 |  |
-| [`ClimbingHandler`](/game-api/types/game-other-namespaces/climbinghandler) | class |  | 13 |  |
+| [`ClimbingHand`](/game-api/types/game-other-namespaces/climbinghand) | class |  | 20 | One hand's climbing state: grabbing a climbable surface, holding the grip and working out how hard the hand pulls the body. Made per hand by `ClimbingHandler`; the grip is synced to other players. |
+| [`ClimbingHandler`](/game-api/types/game-other-namespaces/climbinghandler) | class |  | 13 | Runs climbing for one player's smooth locomotion: tracks both hands' grips and stamina, moves and turns the body as the hands move, and holds the body up against gravity. |
 | [`ClimbingHandlerAnalytics`](/game-api/types/game-other-namespaces/climbinghandleranalytics) | class |  | 2 |  |
 | [`ClimbingMovementEvent`](/game-api/types/game-other-namespaces/climbingmovementevent) | internal class | `AnalyticsEvent` | 1 |  |
 | [`ClimbingPressureCalculator`](/game-api/types/game-other-namespaces/climbingpressurecalculator) | class |  | 4 |  |
@@ -301,13 +301,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Features.Core.Device.Pico
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`PicoLoginController`](/game-api/types/game-other-namespaces/picologincontroller) | class | `MonoBehaviour` | 2 |  |
 
 ## Features.Gameplay
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AddUnlockToPlayer`](/game-api/types/game-other-namespaces/addunlocktoplayer) | class | `NetworkEntityBehaviour`, `ISavable<AddUnlockToPlayerSaveData>`, `ISavableSave<AddUnlockToPlayerSaveData>`, +1 more | 3 |  |
 | [`AddUnlockToPlayerSaveData`](/game-api/types/game-other-namespaces/addunlocktoplayersavedata) | class | `NewSaveData<AddUnlockToPlayer, AddUnlockToPlayerSaveData>` | 1 |  |
@@ -317,13 +317,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Features.Gameplay.Activities.Carpentry
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`BasicChiselable`](/game-api/types/game-other-namespaces/basicchiselable) | class | `NetworkEntityBehaviour`, `IChiselable` | 5 |  |
 
 ## Features.Gameplay.ClimbingTower
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ClimbingTowerProgressionVisualizer`](/game-api/types/game-other-namespaces/climbingtowerprogressionvisualizer) | class | `NetworkEntityBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable`, +3 more | 4 |  |
 | [`ClimbingTowerProgressionVisualizerSaveData`](/game-api/types/game-other-namespaces/climbingtowerprogressionvisualizersavedata) | class | `NewSaveData<ClimbingTowerProgressionVisualizer, ClimbingTowerProgressionVisualizerSaveData>` | 2 |  |
@@ -340,9 +340,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Features.Gameplay.GameConditions
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`IGameCondition`](/game-api/types/game-other-namespaces/igamecondition) | interface |  | 2 |  |
+| [`IGameCondition`](/game-api/types/game-other-namespaces/igamecondition) | interface |  | 2 | A condition in the game that can be checked and tells listeners when it changes. |
 | [`ManualCondition`](/game-api/types/game-other-namespaces/manualcondition) | class | `NetworkEntityBehaviour`, `IGameCondition`, `ISavable<ManualConditionSaveData>`, +2 more | 2 |  |
 | [`ManualConditionSaveData`](/game-api/types/game-other-namespaces/manualconditionsavedata) | class | `NewSaveData<ManualCondition, ManualConditionSaveData>` | 1 |  |
 | [`NetworkedGameConditionEvaluator`](/game-api/types/game-other-namespaces/networkedgameconditionevaluator) | class | `NetworkEntityBehaviour`, `IGameCondition` | 4 |  |
@@ -353,31 +353,31 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Features.Gameplay.GameConditions.StaticObjectMapped
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`RepairableObjectBuildState`](/game-api/types/game-other-namespaces/repairableobjectbuildstate) | enum |  | 2 |  |
 
 ## Features.Gameplay.Inventory.SurfaceDock
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ChiselableSurfaceDock`](/game-api/types/game-other-namespaces/chiselablesurfacedock) | class | `BasicChiselable` | 0 |  |
 
 ## Features.Gameplay.Progression.QuestMarkers
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`QuestMarker`](/game-api/types/game-other-namespaces/questmarker) | class | `MonoBehaviour` | 1 |  |
 
 ## Features.Main_Menu.Scripts
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AccessibilitySeatedStandingBoard`](/game-api/types/game-other-namespaces/accessibilityseatedstandingboard) | class | `PopupBoard` | 0 |  |
 
 ## Features.Main_Menu.Scripts.TalemShop
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`IAPViewModel`](/game-api/types/game-other-namespaces/iapviewmodel) | class | `LoggedInTool` | 1 |  |
 | [`IShopController`](/game-api/types/game-other-namespaces/ishopcontroller) | interface |  | 2 |  |
@@ -385,38 +385,38 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Features.Main_Menu.Scripts.TalemShop.Errors
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`NoShopForPlatformError`](/game-api/types/game-other-namespaces/noshopforplatformerror) | internal class | `PurchaseError` | 1 |  |
 | [`NotLoggedInOnPlatformError`](/game-api/types/game-other-namespaces/notloggedinonplatformerror) | class | `PurchaseError` | 1 |  |
 | [`PendingPurchasesError`](/game-api/types/game-other-namespaces/pendingpurchaseserror) | class | `PurchaseError` | 1 |  |
-| [`PurchaseError`](/game-api/types/game-other-namespaces/purchaseerror) | class |  | 2 |  |
+| [`PurchaseError`](/game-api/types/game-other-namespaces/purchaseerror) | class |  | 2 | Base for an error from the Talem shop (the in-game store), made from an exception or a message. |
 | [`UnknownPurchaseError`](/game-api/types/game-other-namespaces/unknownpurchaseerror) | class | `PurchaseError` | 1 |  |
 | [`UnknownPurchaseExceptionError`](/game-api/types/game-other-namespaces/unknownpurchaseexceptionerror) | class | `PurchaseError` | 1 |  |
 | [`UserCancelledError`](/game-api/types/game-other-namespaces/usercancellederror) | class | `PurchaseError` | 1 |  |
 
 ## Features.Meta.Platform.Oculus
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`IOculusWrapper`](/game-api/types/game-other-namespaces/ioculuswrapper) | interface |  | 16 |  |
+| [`IOculusWrapper`](/game-api/types/game-other-namespaces/ioculuswrapper) | interface |  | 16 | Wraps the Meta Quest platform SDK: user ID and proof, launch details, deep links and rich presence. Reached through `InterfaceResolver.IOculusWrapper`; only does anything on Quest. |
 
 ## Features.Meta.Resolvers
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AddressableResolverSettings`](/game-api/types/game-other-namespaces/addressableresolversettings) | class | `GlobalSettings<AddressableResolverSettings>` | 1 |  |
 | [`InterfaceResolver`](/game-api/types/game-other-namespaces/interfaceresolver) | class |  | 7 |  |
 
 ## Features.Shop
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`IPurchaseConsumer`](/game-api/types/game-other-namespaces/ipurchaseconsumer) | interface |  | 2 |  |
 
 ## Features.Utility.UnityWrappers
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ITestUnityApplicationWrapper`](/game-api/types/game-other-namespaces/itestunityapplicationwrapper) | interface |  | 1 |  |
 | [`IUnityApplicationWrapper`](/game-api/types/game-other-namespaces/iunityapplicationwrapper) | interface |  | 1 |  |
@@ -424,7 +424,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Features.Visual_Effects.General_Scripts
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ParticlesToPlayer`](/game-api/types/game-other-namespaces/particlestoplayer) | class | `NetworkEntityBehaviour`, `ISavable<ParticlesToPlayerSaveData>`, `ISavableSave<ParticlesToPlayerSaveData>`, +1 more | 5 |  |
 | [`ParticlesToPlayerSaveData`](/game-api/types/game-other-namespaces/particlestoplayersavedata) | class | `NewSaveData<ParticlesToPlayer, ParticlesToPlayerSaveData>` | 1 |  |
@@ -432,19 +432,19 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Features.Visual_Effects.VFXData
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`VfxData`](/game-api/types/game-other-namespaces/vfxdata) | class | `HashedGeneralValue<VfxData>` | 7 |  |
+| [`VfxData`](/game-api/types/game-other-namespaces/vfxdata) | class | `HashedGeneralValue<VfxData>` | 7 | Settings asset for a two-part particle effect: particles that spawn, fly to a destination (usually the player) and trigger an arrival effect. Used for effects like gaining a skill orb. Looked up by hash. |
 
 ## Features.World.Environmental.Atmosphere
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`InteriorFogAmbience`](/game-api/types/game-other-namespaces/interiorfogambience) | class | `AtmospherePlugin` | 4 |  |
 
 ## GameCommands.Messages
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`CommandType`](/game-api/types/game-other-namespaces/commandtype) | enum |  | 1 |  |
 | [`GameCommandMessage`](/game-api/types/game-other-namespaces/gamecommandmessage) | class |  | 1 |  |
@@ -452,20 +452,20 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## TableParser
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`TableOrderAttribute`](/game-api/types/game-other-namespaces/tableorderattribute) | class | `Attribute` | 2 |  |
 | [`TableParserExtensions`](/game-api/types/game-other-namespaces/tableparserextensions) | static class |  | 5 |  |
 
 ## Township.Climbing
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ClimbingEditorSettings`](/game-api/types/game-other-namespaces/climbingeditorsettings) | class | `ScriptableObject` | 4 |  |
 
 ## Township.Downed
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`RespawnOrb`](/game-api/types/game-other-namespaces/respawnorb) | class | `EventOrb` | 2 |  |
 | [`ReviveCompletableActivity`](/game-api/types/game-other-namespaces/revivecompletableactivity) | class | `ICompletableActivity` | 9 |  |
@@ -474,19 +474,19 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Township.PostProcessing
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`TextureFormatUtilities`](/game-api/types/game-other-namespaces/textureformatutilities) | static class |  | 0 |  |
 
 ## UnityEngine.UI
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`CustomOutline`](/game-api/types/game-other-namespaces/customoutline) | class | `Shadow` | 6 |  |
 
 ## WindowsConsole
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ConsoleInput`](/game-api/types/game-other-namespaces/consoleinput) | class |  | 8 |  |
 | [`ConsoleWindow`](/game-api/types/game-other-namespaces/consolewindow) | class |  | 5 |  |

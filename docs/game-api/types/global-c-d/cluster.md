@@ -1,6 +1,6 @@
 ---
 title: "Cluster"
-description: "A network entity that groups child entities (its parts) and destroys itself on the server once every part is gone. On server spawn it collects the net"
+description: "A network entity that groups child entities (its parts) and destroys itself on the server once every part is gone."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

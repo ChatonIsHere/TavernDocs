@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<T>"
-description: "abstract class AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<T> in Alta.MenuItem."
+description: "Editor-only menu item base that adds an Assets/Create entry under Township/Features/Progression/Skills for making a new T ScriptableObject asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject&lt;T&gt;
 
 An **abstract class** in `Alta.MenuItem`, no namespace.
+
+Editor-only menu item base that adds an Assets/Create entry under Township/Features/Progression/Skills for making a new `T` ScriptableObject asset. Nothing for a mod at runtime.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills`](/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-progression-skills)

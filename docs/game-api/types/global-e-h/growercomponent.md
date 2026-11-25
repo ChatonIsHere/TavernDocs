@@ -1,6 +1,6 @@
 ---
 title: "GrowerComponent"
-description: "Each stage, the private GoToStage rolls survival and runs the checks."
+description: "Server: grows something through the stages of a GrowthDefinition (sapling to tree, for example), spawning each stage's prefab as a child and moving on after..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-Each stage, the private `GoToStage` rolls survival and runs the checks.
+Server: grows something through the stages of a `GrowthDefinition` (sapling to tree, for example), spawning each stage's prefab as a child and moving on after each stage's duration. Saved, and catches up on load.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`IGrowthStage`](/game-api/types/global-i-l/igrowthstage), [`ISavable<GrowthSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<GrowthSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -42,20 +42,20 @@ Each stage, the private `GoToStage` rolls survival and runs the checks.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentstage" /><code><Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" CurrentStage { get; }"}</code> |  |
-| <Link id="m-currentstageentity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" CurrentStageEntity { get; private set; }"}</code> |  |
-| <Link id="m-currentstageindex" /><code>{"int CurrentStageIndex { get; private set; }"}</code> |  |
-| <Link id="m-isrunning" /><code>{"bool IsRunning { get; private set; }"}</code> |  |
-| <Link id="m-issetup" /><code>{"bool IsSetup { get; }"}</code> |  |
-| <Link id="m-spawnedprefabstageindex" /><code>{"int SpawnedPrefabStageIndex { get; private set; }"}</code> |  |
+| <Link id="m-currentstage" /><code><Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" CurrentStage { get; }"}</code> | The current stage's settings. |
+| <Link id="m-currentstageentity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" CurrentStageEntity { get; private set; }"}</code> | The spawned object for the current stage, or null. |
+| <Link id="m-currentstageindex" /><code>{"int CurrentStageIndex { get; private set; }"}</code> | Index of the current stage. |
+| <Link id="m-isrunning" /><code>{"bool IsRunning { get; private set; }"}</code> | True once growth has started. |
+| <Link id="m-issetup" /><code>{"bool IsSetup { get; }"}</code> | True when the grower has a growth definition. |
+| <Link id="m-spawnedprefabstageindex" /><code>{"int SpawnedPrefabStageIndex { get; private set; }"}</code> | Stage whose prefab is spawned now, or -1. Can lag behind for stages that reuse the previous prefab. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-startgrowing" /><code>{"void StartGrowing()"}</code> |  |
-| <Link id="m-stopgrowth" /><code>{"void StopGrowth(bool isKeepingChild)"}</code> |  |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Starts growing on the next frame if auto start is on. |
+| <Link id="m-startgrowing" /><code>{"void StartGrowing()"}</code> | Starts at stage 0. Each stage checks survival chance, spacing and a raycast, retrying or dying if they fail. |
+| <Link id="m-stopgrowth" /><code>{"void StopGrowth(bool isKeepingChild)"}</code> | Destroys the grower. Pass true to keep the grown object, which is then moved out to the chunk or the parent. |
 | <Link id="m-checkradius" /><code>{"private bool CheckRadius("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage)"}</code> |  |
 | <Link id="m-checkraycast" /><code>{"private bool CheckRaycast("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage)"}</code> |  |
 | <Link id="m-destroycurrentstage" /><code>{"private void DestroyCurrentStage()"}</code> |  |

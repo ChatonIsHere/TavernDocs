@@ -10,4 +10,4 @@ Every type in `TavernLib.Backend.Api`, from TavernLib's own assembly. See [the o
 
 | Type | Kind | Public members | What it is |
 | --- | --- | --- | --- |
-| [`TavernManager`](/tavernlib-api/types/backend-api/tavernmanager) | class | 5 | The service that owns the server's config files. Get it from the service registry. It isn't there on a client. |
+| [`TavernManager`](/tavernlib-api/types/backend-api/tavernmanager) | class | 5 | The server's config files, registered as a service: get it with `TavernServices.GetService<TavernManager>()`. Server only, also with `/launcherauth`. |

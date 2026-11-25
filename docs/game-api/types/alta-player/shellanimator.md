@@ -1,6 +1,6 @@
 ---
 title: "ShellAnimator"
-description: "Client: draws an extra copy of a player's clothes with a shell material and animates its _Progress value, for effects like combat, stat effects and sp"
+description: "Client: draws an extra copy of a player's clothes with a shell material and animates its _Progress value, for effects like combat, stat effects and spirit mode."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

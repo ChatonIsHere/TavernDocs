@@ -1,6 +1,6 @@
 ---
 title: "SoundEffect"
-description: "enum SoundEffect in Root.Township."
+description: "A numbered list of game sound effects (teleport, docking, mining, combat, footsteps and more)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SoundEffect
 
 An **enum** in `Root.Township`, no namespace.
+
+A numbered list of game sound effects (teleport, docking, mining, combat, footsteps and more).
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 

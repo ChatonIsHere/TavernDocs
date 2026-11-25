@@ -1,6 +1,6 @@
 ---
 title: "CaveTeleporterProxyData"
-description: "class CaveTeleporterProxyData in Root.Township."
+description: "Light record of one cave teleporter: its cave layer, position and fuel."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CaveTeleporterProxyData
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+Light record of one cave teleporter: its cave layer, position and fuel. Used by `CaveTeleportConnection` and `CaveTeleporterManager`.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 
@@ -24,15 +26,15 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fuel" /><code>{"int fuel"}</code> |  |
-| <Link id="m-layer" /><code>{"int layer"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
+| <Link id="m-fuel" /><code>{"int fuel"}</code> | Fuel stored in the teleporter. |
+| <Link id="m-layer" /><code>{"int layer"}</code> | Cave layer it is on. 0 is the surface. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | World position. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcopy" /><code><Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" GetCopy()"}</code> |  |
+| <Link id="m-getcopy" /><code><Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" GetCopy()"}</code> | A copy with the same values. |
 
 ## Used in
 

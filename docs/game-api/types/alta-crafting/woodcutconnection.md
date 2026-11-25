@@ -1,6 +1,6 @@
 ---
 title: "WoodcutConnection"
-description: "Marks a joint between two pieces of a choppable tree model: which connection type it is and which woodcut points break it. Sits on a networked tree pi"
+description: "Marks a joint between two pieces of a choppable tree model: which connection type it is and which woodcut points break it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

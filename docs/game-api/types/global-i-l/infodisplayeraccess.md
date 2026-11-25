@@ -1,6 +1,6 @@
 ---
 title: "InfoDisplayerAccess"
-description: "A debug text asset that code writes a line of text to and an InfoDisplayer shows on screen. Wraps the text in a set prefix and suffix."
+description: "A debug text asset that code writes a line of text to and an InfoDisplayer shows on screen."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

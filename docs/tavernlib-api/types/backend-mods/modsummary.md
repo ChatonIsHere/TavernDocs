@@ -1,6 +1,6 @@
 ---
 title: "ModSummary"
-description: "A class in TavernLib, TavernLib.Backend.Mods."
+description: "One mod's entry in a source's repository.json for one major version: the versions it lists."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 
-A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
+One mod's entry in a source's `repository.json` for one major version: the versions it lists.
 
 - **Listed in** [TavernLib.Backend.Mods](/tavernlib-api/types/backend-mods)
 - **Derived types** [`ModIndex`](/tavernlib-api/types/backend-mods/modindex)
@@ -28,17 +28,17 @@ A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-highest" /><code><Link to="/tavernlib-api/types/backend-mods/modversion">{"ModVersion"}</Link>{" Highest { get; private set; }"}</code> |  |
-| <Link id="m-id" /><code>{"string Id { get; private set; }"}</code> |  |
-| <Link id="m-major" /><code>{"int Major { get; }"}</code> |  |
-| <Link id="m-sourcerepo" /><code>{"string SourceRepo { get; private set; }"}</code> |  |
-| <Link id="m-versions" /><code>{"List<string> Versions { get; private set; }"}</code> |  |
+| <Link id="m-highest" /><code><Link to="/tavernlib-api/types/backend-mods/modversion">{"ModVersion"}</Link>{" Highest { get; private set; }"}</code> | The highest listed version. |
+| <Link id="m-id" /><code>{"string Id { get; private set; }"}</code> | The mod id. |
+| <Link id="m-major" /><code>{"int Major { get; }"}</code> | The major version this entry is for, from `Highest`. |
+| <Link id="m-sourcerepo" /><code>{"string SourceRepo { get; private set; }"}</code> | The source the index came from. |
+| <Link id="m-versions" /><code>{"List<string> Versions { get; private set; }"}</code> | Every valid version listed, as text. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fromjson" /><code>{"static "}<Link to="/tavernlib-api/types/backend-mods/modsummary">{"ModSummary"}</Link>{" FromJson(JObject d, string modId, string sourceRepo)"}</code> |  |
+| <Link id="m-fromjson" /><code>{"static "}<Link to="/tavernlib-api/types/backend-mods/modsummary">{"ModSummary"}</Link>{" FromJson(JObject d, string modId, string sourceRepo)"}</code> | Parses one entry. `null` (with a warning) with no versions list, no valid version or no `parity_required`. Bad versions are skipped. |
 
 ## Used in
 

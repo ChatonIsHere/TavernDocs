@@ -1,6 +1,6 @@
 ---
 title: "Embeddable"
-description: "class Embeddable in Root.Township."
+description: "Lets a pointed item (arrow, knife, spear) stick into what it hits and parents it there, saved across restarts."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Embeddable
 
 A **class** in `Root.Township`, no namespace.
+
+Lets a pointed item (arrow, knife, spear) stick into what it hits and parents it there, saved across restarts. The server decides when it embeds; clients follow a synced message. Get it with `GetComponent<Embeddable>()` on the item.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<EmbeddableSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<EmbeddableSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase), [`IToolHitDependant`](/game-api/types/alta-items/itoolhitdependant)
@@ -56,31 +58,31 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colliders" /><code>{"IEnumerable<Collider> Colliders { get; }"}</code> |  |
-| <Link id="m-embeddedentity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" EmbeddedEntity { get; private set; }"}</code> |  |
-| <Link id="m-embeddedinto" /><code>{"Rigidbody EmbeddedInto { get; private set; }"}</code> |  |
-| <Link id="m-embeddedrigidbodyindex" /><code>{"int EmbeddedRigidbodyIndex { get; private set; }"}</code> |  |
-| <Link id="m-haspickup" /><code>{"bool HasPickup { get; }"}</code> |  |
-| <Link id="m-isallowedtoembed-2" /><code>{"bool IsAllowedToEmbed { get; set; }"}</code> |  |
-| <Link id="m-isembedded" /><code>{"bool IsEmbedded { get; private set; }"}</code> |  |
+| <Link id="m-colliders" /><code>{"IEnumerable<Collider> Colliders { get; }"}</code> | The item's pickup colliders, or empty when the entity has no `Pickup`. Used to ignore collisions with what it is stuck in. |
+| <Link id="m-embeddedentity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" EmbeddedEntity { get; private set; }"}</code> | The entity the item is stuck in, or null when stuck in the static world or not embedded. |
+| <Link id="m-embeddedinto" /><code>{"Rigidbody EmbeddedInto { get; private set; }"}</code> | The rigidbody the item is stuck in, or null when stuck in the static world or not embedded. |
+| <Link id="m-embeddedrigidbodyindex" /><code>{"int EmbeddedRigidbodyIndex { get; private set; }"}</code> | Index of the struck rigidbody in the target's `EmbeddableManager` list, or -1 when it has none or is not embedded. |
+| <Link id="m-haspickup" /><code>{"bool HasPickup { get; }"}</code> | Whether the entity has a common `Pickup`. |
+| <Link id="m-isallowedtoembed-2" /><code>{"bool IsAllowedToEmbed { get; set; }"}</code> | Turns embedding on or off for this item. Set it on the server. |
+| <Link id="m-isembedded" /><code>{"bool IsEmbedded { get; private set; }"}</code> | Whether the item is currently stuck in something. |
 | <Link id="m-totipdirection" /><code>{"private Vector3 ToTipDirection { get; }"}</code> |  |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkembed" /><code>{"event "}<Link to="/game-api/types/global-q-r/refbooldelegate">{"RefBoolDelegate"}</Link>{" CheckEmbed"}</code> |  |
-| <Link id="m-embedded-2" /><code>{"event Action<"}<Link to="/game-api/types/global-e-h/embeddable">{"Embeddable"}</Link>{"> Embedded"}</code> |  |
-| <Link id="m-unembedded-2" /><code>{"event Action<"}<Link to="/game-api/types/global-e-h/embeddable">{"Embeddable"}</Link>{"> Unembedded"}</code> |  |
+| <Link id="m-checkembed" /><code>{"event "}<Link to="/game-api/types/global-q-r/refbooldelegate">{"RefBoolDelegate"}</Link>{" CheckEmbed"}</code> | Raised before an embed; set the `ref bool` to false to refuse it. Pickups add a handler that refuses while held or docked. |
+| <Link id="m-embedded-2" /><code>{"event Action<"}<Link to="/game-api/types/global-e-h/embeddable">{"Embeddable"}</Link>{"> Embedded"}</code> | Raised on both sides when the item sticks into something. |
+| <Link id="m-unembedded-2" /><code>{"event Action<"}<Link to="/game-api/types/global-e-h/embeddable">{"Embeddable"}</Link>{"> Unembedded"}</code> | Raised on both sides when the item comes free. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-externalcollision" /><code>{"void ExternalCollision(Collider collider, Vector3 hitPoint, Vector3 hitNormal)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-unembed" /><code>{"void UnEmbed()"}</code> |  |
+| <Link id="m-externalcollision" /><code>{"void ExternalCollision(Collider collider, Vector3 hitPoint, Vector3 hitNormal)"}</code> | Lets other code (such as `EmbeddableRaycastProjectile`) report a collision; embeds if angle, speed and surface allow it. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the synced embed message (`FixedJoint` entity message type). |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the current embed state to a newly connected player. |
+| <Link id="m-unembed" /><code>{"void UnEmbed()"}</code> | Frees the item, unparents it and restores physics. Only syncs to clients when called on the server. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-childtostruckrigidbody" /><code>{"private void ChildToStruckRigidbody("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" otherEntity, Transform parent)"}</code> |  |
 | <Link id="m-cleargizmos" /><code>{"private void ClearGizmos()"}</code> |  |

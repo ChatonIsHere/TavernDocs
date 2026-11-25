@@ -1,6 +1,6 @@
 ---
 title: "HashHelper"
-description: "The hashing the game uses: Hash(string), HashCompressed, GetHashCodeForString, and the editor-side hash validation. Hashes are 16 bits (MaxHash 65535)"
+description: "The hashing the game uses: Hash(string), HashCompressed, GetHashCodeForString, and the editor-side hash validation."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

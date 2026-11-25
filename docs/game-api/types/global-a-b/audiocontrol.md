@@ -1,6 +1,6 @@
 ---
 title: "AudioControl"
-description: "Plays one Wwise event on a game object and lets you stop, seek or reapply sound properties while it plays. Builds on SimpleAudioControl."
+description: "Plays one Wwise event on a game object and lets you stop, seek or reapply sound properties while it plays."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

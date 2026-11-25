@@ -1,6 +1,6 @@
 ---
 title: "ForestGenerator"
-description: "Alta.Forests.ForestGenerator, a NetworkEntityBehaviour placed in the scene. One per forest; ForestGenerator.All lists them."
+description: "Generates the procedural forest from a seed: a path graph inside an outline, reshaped and painted terrain, rivers, and per-chunk content."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Forests`.
 
-`Alta.Forests.ForestGenerator`, a `NetworkEntityBehaviour` placed in the scene. One per forest; `ForestGenerator.All` lists them.
+Generates the procedural forest from a seed: a path graph inside an outline, reshaped and painted terrain, rivers, and per-chunk content. Most results are cached on disk by seed. A scene component on both sides; `All` lists them.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<ForestGeneratorSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<ForestGeneratorSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -99,39 +99,39 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-all-2" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{"> All { get; }"}</code> |  |
-| <Link id="m-cache-2" /><code>{"string Cache { get; }"}</code> |  |
-| <Link id="m-entrances-2" /><code>{"ICollection<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{"> Entrances { get; }"}</code> |  |
-| <Link id="m-gizmosversion" /><code>{"int GizmosVersion { get; private set; }"}</code> |  |
-| <Link id="m-isduringcalculate" /><code>{"bool IsDuringCalculate { get; }"}</code> |  |
-| <Link id="m-rivergenerator" /><code><Link to="/game-api/types/alta-world-generation/rivergenerator">{"RiverGenerator"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/rivergenerator">{"RiverGenerator"}</Link>{" { get; private set; }"}</code> |  |
+| <Link id="m-all-2" /><code>{"static IEnumerable<"}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{"> All { get; }"}</code> | Every forest generator in the scene. |
+| <Link id="m-cache-2" /><code>{"string Cache { get; }"}</code> | The forest's name in cache file names, such as "The Forest". |
+| <Link id="m-entrances-2" /><code>{"ICollection<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{"> Entrances { get; }"}</code> | The entrance nodes of the path graph. |
+| <Link id="m-gizmosversion" /><code>{"int GizmosVersion { get; private set; }"}</code> | Counter bumped when debug gizmo data changes. |
+| <Link id="m-isduringcalculate" /><code>{"bool IsDuringCalculate { get; }"}</code> | True while generation is running. |
+| <Link id="m-rivergenerator" /><code><Link to="/game-api/types/alta-world-generation/rivergenerator">{"RiverGenerator"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/rivergenerator">{"RiverGenerator"}</Link>{" { get; private set; }"}</code> | The river, lake and waterfall generator under this forest. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generateddynamic" /><code>{"event Action<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GeneratedDynamic"}</code> |  |
+| <Link id="m-generateddynamic" /><code>{"event Action<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GeneratedDynamic"}</code> | Raised when a chunk has had its dynamic content (creatures, items) generated. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-get" /><code>{"static async Task<"}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{"> Get(Vector2 position)"}</code> |  |
-| <Link id="m-getallgcores" /><code>{"async Task<IEnumerable<"}<Link to="/game-api/types/alta-world-generation/forestgcoreinstruction">{"ForestGCoreInstruction"}</Link>{">> GetAllGCores("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" generating)"}</code> |  |
-| <Link id="m-getgenerated" /><code><Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" GetGenerated(bool isThrowingError = true)"}</code> |  |
-| <Link id="m-getgenerationasync" /><code>{"Task<"}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{"> GetGenerationAsync()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-regeneratenavmesh" /><code>{"async void RegenerateNavmesh()"}</code> |  |
-| <Link id="m-reheight" /><code>{"async void Reheight()"}</code> |  |
-| <Link id="m-releasedynamic" /><code>{"void ReleaseDynamic("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-releasestatic" /><code>{"void ReleaseStatic("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-requestdynamic" /><code>{"async Task RequestDynamic("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-requeststatic" /><code>{"async Task RequestStatic("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, bool isRequiringTerrain, CancellationToken cancellationToken)"}</code> |  |
-| <Link id="m-resplat" /><code>{"async void Resplat()"}</code> |  |
-| <Link id="m-wipe" /><code>{"async Task Wipe(int newSeed = -1)"}</code> |  |
-| <Link id="m-zeroheights" /><code>{"void ZeroHeights()"}</code> |  |
+| <Link id="m-get" /><code>{"static async Task<"}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{"> Get(Vector2 position)"}</code> | Finds the forest whose outline contains an x/z point. Waits for generation. |
+| <Link id="m-getallgcores" /><code>{"async Task<IEnumerable<"}<Link to="/game-api/types/alta-world-generation/forestgcoreinstruction">{"ForestGCoreInstruction"}</Link>{">> GetAllGCores("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" generating)"}</code> | Collects the generation core instructions of every chunk in a layout. |
+| <Link id="m-getgenerated" /><code><Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" GetGenerated(bool isThrowingError = true)"}</code> | The layout if generation has finished, else null (logging an error unless told not to). |
+| <Link id="m-getgenerationasync" /><code>{"Task<"}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{"> GetGenerationAsync()"}</code> | The generated layout. Starts generation the first time and returns the same task after. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the message that syncs the seed. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: picks a random seed if none is saved. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the seed to a joining player. |
+| <Link id="m-regeneratenavmesh" /><code>{"async void RegenerateNavmesh()"}</code> | Rebuilds the A* navmesh inside the forest outline. |
+| <Link id="m-reheight" /><code>{"async void Reheight()"}</code> | Editor tool: recomputes terrain heights inside the forest. |
+| <Link id="m-releasedynamic" /><code>{"void ReleaseDynamic("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Clears a chunk's dynamic content from every generation step. |
+| <Link id="m-releasestatic" /><code>{"void ReleaseStatic("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Clears a chunk's static content and undoes its instructions. |
+| <Link id="m-requestdynamic" /><code>{"async Task RequestDynamic("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Generates a chunk's dynamic content and raises `GeneratedDynamic`. |
+| <Link id="m-requeststatic" /><code>{"async Task RequestStatic("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, bool isRequiringTerrain, CancellationToken cancellationToken)"}</code> | Runs a chunk's static instructions (trees, rocks). On the server it can also update the navmesh for the chunk. |
+| <Link id="m-resplat" /><code>{"async void Resplat()"}</code> | Editor tool: repaints terrain textures inside the forest. |
+| <Link id="m-wipe" /><code>{"async Task Wipe(int newSeed = -1)"}</code> | Server: clears the forest's caches and chunk saves, moves players out and regenerates. A seed passed in is ignored; negative picks a random one. TavernLib replaces it with a reset that takes effect at the next restart. |
+| <Link id="m-zeroheights" /><code>{"void ZeroHeights()"}</code> | Editor tool: flattens the terrain inside the outline to 0. |
 | <Link id="m-addrandomintriangle" /><code>{"private void AddRandomInTriangle("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" result, Random random, int startIndex, float additionalRadius)"}</code> |  |
 | <Link id="m-addrandompoint" /><code>{"private void AddRandomPoint("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" result, Random random, float additionalRadius)"}</code> |  |
 | <Link id="m-areastartingat" /><code>{"private float AreaStartingAt("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" result, int index)"}</code> |  |

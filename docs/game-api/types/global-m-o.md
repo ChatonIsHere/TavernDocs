@@ -12,7 +12,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## M
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`MainMenuControllerSpawner`](/game-api/types/global-m-o/mainmenucontrollerspawner) | class | `MonoBehaviour` | 0 |  |
 | [`MainMenuCraft`](/game-api/types/global-m-o/mainmenucraft) | class | `NetworkEntityBehaviour` | 1 |  |
@@ -46,7 +46,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`MemoizeHashset<TIn, TOut>.Evaluate`](/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate) | delegate |  | 0 |  |
 | [`MemoizeHashsetCountTracker<TIn, TOut>`](/game-api/types/global-m-o/memoizehashsetcounttracker-tin-tout) | class | `IEnumerable<TOut>`, `IEnumerable` | 8 |  |
 | [`MemoizeOne<TInput, TOutput>`](/game-api/types/global-m-o/memoizeone-tinput-toutput) | class |  | 3 |  |
-| [`MenuSettings`](/game-api/types/global-m-o/menusettings) | class | `GlobalSettings<MenuSettings>` | 37 |  |
+| [`MenuSettings`](/game-api/types/global-m-o/menusettings) | class | `GlobalSettings<MenuSettings>` | 37 | Global settings asset for the menu and startup: scene names, server list colours and materials, selection orb tuning and editor-only startup flags. Get it with `GlobalSettings<MenuSettings>.Instance`. |
 | [`MenuSettings.AfterStartActionType`](/game-api/types/global-m-o/menusettings-afterstartactiontype) | enum |  | 4 |  |
 | [`MenuSettings.Create`](/game-api/types/global-m-o/menusettings-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<MenuSettings>` | 0 |  |
 | [`MeshColorBaker`](/game-api/types/global-m-o/meshcolorbaker) | class | `BuildRendererBakeable` | 3 |  |
@@ -63,7 +63,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`MiningBaseGenerator.PartOption`](/game-api/types/global-m-o/miningbasegenerator-partoption) | class |  | 4 |  |
 | [`MiningBaseGenerator.Point`](/game-api/types/global-m-o/miningbasegenerator-point) | struct |  | 6 |  |
 | [`MiningBaseGenerator.Possibility`](/game-api/types/global-m-o/miningbasegenerator-possibility) | struct |  | 6 |  |
-| [`MiningEcho`](/game-api/types/global-m-o/miningecho) | class | `PickupBasedSkill` | 8 |  |
+| [`MiningEcho`](/game-api/types/global-m-o/miningecho) | class | `PickupBasedSkill` | 8 | Progression skill: a strong pickaxe hit sends out an echo pulse whose radius grows over time, shown to the player and passed to `IListenToMiningEcho` listeners (probably to reveal ore). |
 | [`MiningEcho.Create`](/game-api/types/global-m-o/miningecho-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<MiningEcho>` | 0 |  |
 | [`MiningEchoIntensity`](/game-api/types/global-m-o/miningechointensity) | class | `ProfessionSkill` | 0 |  |
 | [`MiningEchoIntensity.Create`](/game-api/types/global-m-o/miningechointensity-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<MiningEchoIntensity>` | 0 |  |
@@ -77,7 +77,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ModifiableAdditionalStaticContentSaveData`](/game-api/types/global-m-o/modifiableadditionalstaticcontentsavedata) | class | `NewSaveData<ModifiableAdditionalStaticContent, ModifiableAdditionalStaticContentSaveData>` | 2 |  |
 | [`MonoBehaviourExtensions`](/game-api/types/global-m-o/monobehaviourextensions) | static class |  | 1 |  |
 | [`Month`](/game-api/types/global-m-o/month) | enum |  | 12 |  |
-| [`MonthDayHour`](/game-api/types/global-m-o/monthdayhour) | struct | `IComparable<MonthDayHour>`, `IEquatable<MonthDayHour>` | 14 |  |
+| [`MonthDayHour`](/game-api/types/global-m-o/monthdayhour) | struct | `IComparable<MonthDayHour>`, `IEquatable<MonthDayHour>` | 14 | A point in the year (month, day, hour) with no year, used for seasonal or dated events. Compares in month, day, hour order. |
 | [`Motor`](/game-api/types/global-m-o/motor) | class | `MonoBehaviour` | 3 |  |
 | [`Mould`](/game-api/types/global-m-o/mould) | class | `GeneratedNetworkEntityBehaviour`, `IBlockGenericDecrafting`, `ISavable<MouldSaveData>`, +2 more | 7 | [Smelting and forging](../game-systems/smelting-and-forging.md): The mould item. `Definition`, `Usage` (uses left; -1 never runs out), `bool Consume()` (uses one, true when used up). |
 | [`Mould.IBlockGenericDecrafting`](/game-api/types/global-m-o/mould-iblockgenericdecrafting) | interface |  | 1 |  |
@@ -112,11 +112,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`MultipleSpawner.SimpleSpawner`](/game-api/types/global-m-o/multiplespawner-simplespawner) | class |  | 9 |  |
 | [`MultiPositionTypeLabel`](/game-api/types/global-m-o/multipositiontypelabel) | enum |  | 3 |  |
 | [`MultiSpawner`](/game-api/types/global-m-o/multispawner) | class | `SpawnerBase` | 5 |  |
-| [`MushroomCritter`](/game-api/types/global-m-o/mushroomcritter) | class | `NetworkEntityBehaviour` | 25 |  |
+| [`MushroomCritter`](/game-api/types/global-m-o/mushroomcritter) | class | `NetworkEntityBehaviour` | 25 | Tuning values for a schmeechee (mushroom critter): floor checks, push and turn forces, flipping and planting. A component read by `Schmeechee` and its actions. |
 
 ## N
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`NameBoardsSettings`](/game-api/types/global-m-o/nameboardssettings) | class | `GlobalSettings<NameBoardsSettings>` | 3 |  |
 | [`NamedProgressBar`](/game-api/types/global-m-o/namedprogressbar) | class | `ProgressBar` | 1 |  |
@@ -124,7 +124,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`NearbyPlayerTracker`](/game-api/types/global-m-o/nearbyplayertracker) | class | `MonoBehaviour` | 2 |  |
 | [`NetworkDestroyTimed`](/game-api/types/global-m-o/networkdestroytimed) | class | `NetworkEntityBehaviour` | 1 |  |
 | [`NetworkedEvent`](/game-api/types/global-m-o/networkedevent) | class | `NetworkEntityBehaviour` | 2 |  |
-| [`NetworkedFloatStream`](/game-api/types/global-m-o/networkedfloatstream) | class | `NetworkEntityBehaviour`, `INetworkSerialized`, `ISavable<NetworkedFloatStreamSaveData>`, +2 more | 10 |  |
+| [`NetworkedFloatStream`](/game-api/types/global-m-o/networkedfloatstream) | class | `NetworkEntityBehaviour`, `INetworkSerialized`, `ISavable<NetworkedFloatStreamSaveData>`, +2 more | 10 | Component holding one float between a min and max. The server sets it and it reaches clients in the regular entity stream using a set number of bits. Saved with the entity. |
 | [`NetworkedFloatStreamSaveData`](/game-api/types/global-m-o/networkedfloatstreamsavedata) | class | `NewSaveData<NetworkedFloatStream, NetworkedFloatStreamSaveData>` | 1 |  |
 | [`NetworkedIKBody`](/game-api/types/global-m-o/networkedikbody) | class | `CharacterComponentController`, `INetworkSerialized`, `INetworkEntityBehaviour`, +1 more | 10 |  |
 | [`NetworkedIKBone`](/game-api/types/global-m-o/networkedikbone) | class | `NetworkEntityBehaviour`, `INetworkSerialized` | 6 |  |
@@ -139,7 +139,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`NetworkStarer.ChangedState`](/game-api/types/global-m-o/networkstarer-changedstate) | delegate |  | 0 |  |
 | [`NetworkTransportPackageVersion`](/game-api/types/global-m-o/networktransportpackageversion) | class | `GlobalSettings<NetworkTransportPackageVersion>` | 2 |  |
 | [`NewNetworkingProfiler`](/game-api/types/global-m-o/newnetworkingprofiler) | static class |  | 5 |  |
-| [`NewSaveData<TSavable, TData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata) | abstract class | `SaveData` | 2 |  |
+| [`NewSaveData<TSavable, TData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata) | abstract class | `SaveData` | 2 | Base for the current version of a component's save data. `Apply` hands the data to the component's `ISavable<TData>.Load`. |
 | [`NoMigrationProvidedException`](/game-api/types/global-m-o/nomigrationprovidedexception) | class | `Exception` | 0 |  |
 | [`NonClimbable`](/game-api/types/global-m-o/nonclimbable) | class | `MonoBehaviour`, `IClimbable`, `IIgnoreColliderFlattening`, +1 more | 1 |  |
 | [`NonHashedData`](/game-api/types/global-m-o/nonhasheddata) | class | `ScriptableObject` | 1 |  |
@@ -149,18 +149,18 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`NormalFilter`](/game-api/types/global-m-o/normalfilter) | class | `SpawnModifierPointNormal` | 1 |  |
 | [`NormalFilter.Create`](/game-api/types/global-m-o/normalfilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<NormalFilter>` | 0 |  |
 | [`NullChecker`](/game-api/types/global-m-o/nullchecker) | class | `MonoBehaviour` | 1 |  |
-| [`NullColorModelPoint`](/game-api/types/global-m-o/nullcolormodelpoint) | class | `IColorModelPoint<NullColorModelPoint>` | 2 |  |
+| [`NullColorModelPoint`](/game-api/types/global-m-o/nullcolormodelpoint) | class | `IColorModelPoint<NullColorModelPoint>` | 2 | A colour model point that always gives 0 and never changes. A placeholder for when no real point is needed. |
 | [`NullConsole`](/game-api/types/global-m-o/nullconsole) | class | `ServerConsole` | 2 |  |
 | [`NumericalWidget`](/game-api/types/global-m-o/numericalwidget) | class | `DebugWidget` | 0 |  |
 
 ## O
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ObjectDestroyedException`](/game-api/types/global-m-o/objectdestroyedexception) | internal class | `Exception` | 3 |  |
-| [`ObjectIssueLog`](/game-api/types/global-m-o/objectissuelog) | class | `GlobalSettings<ObjectIssueLog>` | 5 |  |
+| [`ObjectIssueLog`](/game-api/types/global-m-o/objectissuelog) | class | `GlobalSettings<ObjectIssueLog>` | 5 | Editor-only list of problems found on assets. Its `Add` and assert methods are marked editor-only, so calls to them are compiled out of game builds. |
 | [`ObjectIssueLog.Issue`](/game-api/types/global-m-o/objectissuelog-issue) | class |  | 2 |  |
-| [`ObjectPipeline`](/game-api/types/global-m-o/objectpipeline) | class |  | 6 |  |
+| [`ObjectPipeline`](/game-api/types/global-m-o/objectpipeline) | class |  | 6 | A serializable chain that turns an input object (usually a `Distribution`) into one result, such as picking a random prefab. Used by cave cluster generators and forest encounters. |
 | [`ObjectVisualDouble`](/game-api/types/global-m-o/objectvisualdouble) | class | `PooledObject` | 2 |  |
 | [`OculusCloudStorage`](/game-api/types/global-m-o/oculuscloudstorage) | static class |  | 2 |  |
 | [`OculusDeepLinkService`](/game-api/types/global-m-o/oculusdeeplinkservice) | static class |  | 3 |  |
@@ -168,7 +168,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`OfflinePlayerProgress`](/game-api/types/global-m-o/offlineplayerprogress) | class |  | 2 |  |
 | [`OfflinePlayerProgressionHandler`](/game-api/types/global-m-o/offlineplayerprogressionhandler) | class | `NetworkEntityBehaviour`, `ISavable<OfflinePlayerProgressionHandlerSaveData>`, `ISavableSave<OfflinePlayerProgressionHandlerSaveData>`, +1 more | 6 |  |
 | [`OfflinePlayerProgressionHandlerSaveData`](/game-api/types/global-m-o/offlineplayerprogressionhandlersavedata) | class | `NewSaveData<OfflinePlayerProgressionHandler, OfflinePlayerProgressionHandlerSaveData>` | 1 |  |
-| [`OldSaveData`](/game-api/types/global-m-o/oldsavedata) | abstract class | `SaveData` | 1 |  |
+| [`OldSaveData`](/game-api/types/global-m-o/oldsavedata) | abstract class | `SaveData` | 1 | Base for retired save data formats. Its `Apply` refuses to load them. |
 | [`OldVisibilityTest`](/game-api/types/global-m-o/oldvisibilitytest) | static class |  | 1 |  |
 | [`OnCollidedEventTrigger`](/game-api/types/global-m-o/oncollidedeventtrigger) | class | `MonoBehaviour` | 0 |  |
 | [`OnDestroyEvent`](/game-api/types/global-m-o/ondestroyevent) | class | `NetworkEntityBehaviour` | 1 |  |
@@ -184,8 +184,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`OpenXRControllerInput`](/game-api/types/global-m-o/openxrcontrollerinput) | class | `ControllerInput` | 5 |  |
 | [`OpenXRDeviceController`](/game-api/types/global-m-o/openxrdevicecontroller) | class | `XrDeviceSdkController` | 4 |  |
 | [`OpenXRDeviceLifecycle`](/game-api/types/global-m-o/openxrdevicelifecycle) | class | `VirtualRealityDeviceLifecycle` | 1 |  |
-| [`OpenXRInputController`](/game-api/types/global-m-o/openxrinputcontroller) | abstract class | `DeviceInputController` | 3 |  |
-| [`OpenXRWrapper`](/game-api/types/global-m-o/openxrwrapper) | class | `InputMap.IPlayingActions`, `InputMap.IPlayingGenericActions`, `InputMap.IPlayingBaseActions`, +1 more | 37 |  |
+| [`OpenXRInputController`](/game-api/types/global-m-o/openxrinputcontroller) | abstract class | `DeviceInputController` | 3 | Client: reads one hand's controller through OpenXR and fills the game's controller input, including velocity, finger curl and pose. |
+| [`OpenXRWrapper`](/game-api/types/global-m-o/openxrwrapper) | class | `InputMap.IPlayingActions`, `InputMap.IPlayingGenericActions`, `InputMap.IPlayingBaseActions`, +1 more | 37 | Receives OpenXR input action callbacks and turns them into per-hand `OpenXRControllerInput` state. Implements the callback interfaces of all four playing action maps; client only. |
 | [`OperatedValue`](/game-api/types/global-m-o/operatedvalue) | class | `MonoBehaviour` | 6 |  |
 | [`OptimisedChunkLoader`](/game-api/types/global-m-o/optimisedchunkloader) | class | `IChunkLoader` | 1 |  |
 | [`OptimizationManager`](/game-api/types/global-m-o/optimizationmanager) | class | `MonoBehaviour` | 4 |  |

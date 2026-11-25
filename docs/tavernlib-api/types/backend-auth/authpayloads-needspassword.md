@@ -1,6 +1,6 @@
 ---
 title: "AuthPayloads.NeedsPassword"
-description: "A struct in TavernLib, TavernLib.Backend.Auth."
+description: "Status needs_password: the server has a password and the join gave none."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `TavernLib`, `TavernLib.Backend.Auth`.
 
-A **struct** in `TavernLib`, `TavernLib.Backend.Auth`.
+Status `needs_password`: the server has a password and the join gave none.
 
 - **Listed in** [TavernLib.Backend.Auth](/tavernlib-api/types/backend-auth)
 - **Nested in** [`AuthPayloads`](/tavernlib-api/types/backend-auth/authpayloads)

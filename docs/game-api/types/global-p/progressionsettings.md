@@ -1,6 +1,6 @@
 ---
 title: "ProgressionSettings"
-description: "Get it with GlobalSettings<ProgressionSettings>.Instance (Alta.Global)."
+description: "Global settings for XP, levels and skill points."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-Get it with `GlobalSettings<ProgressionSettings>.Instance` (`Alta.Global`).
+Global settings for XP, levels and skill points. Get it with `GlobalSettings<ProgressionSettings>.Instance`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`GlobalSettings<ProgressionSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -66,31 +66,31 @@ Get it with `GlobalSettings<ProgressionSettings>.Instance` (`Alta.Global`).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bellowspumptoexperience-2" /><code>{"float BellowsPumpToExperience { get; }"}</code> |  |
-| <Link id="m-dissipatetoolbasedeffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DissipateToolBasedEffect { get; }"}</code> |  |
-| <Link id="m-experiencebooststat-2" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" ExperienceBoostStat { get; }"}</code> |  |
-| <Link id="m-get8skillsachievement-2" /><code><Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" Get8SkillsAchievement { get; }"}</code> |  |
-| <Link id="m-isclearingpracticeobjectsonfirstpractice-2" /><code>{"bool IsClearingPracticeObjectsOnFirstPractice { get; }"}</code> |  |
-| <Link id="m-levelupaction-2" /><code><Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" LevelUpAction { get; }"}</code> |  |
-| <Link id="m-maxboughtskills-2" /><code>{"uint MaxBoughtSkills { get; }"}</code> |  |
-| <Link id="m-maxfreepoints-2" /><code>{"uint MaxFreePoints { get; }"}</code> |  |
-| <Link id="m-sellingskillpointsrefundpercentage-2" /><code>{"float SellingSkillPointsRefundPercentage { get; }"}</code> |  |
-| <Link id="m-skillorbinteractioneffectdefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" SkillOrbInteractionEffectDefinition { get; }"}</code> |  |
-| <Link id="m-toolbasedeffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" ToolBasedEffect { get; }"}</code> |  |
+| <Link id="m-bellowspumptoexperience-2" /><code>{"float BellowsPumpToExperience { get; }"}</code> | Forging XP per unit of bellows pumping (0 in the shipped asset). |
+| <Link id="m-dissipatetoolbasedeffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DissipateToolBasedEffect { get; }"}</code> | Pooled effect played when a profession skill's tool effect fades. |
+| <Link id="m-experiencebooststat-2" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" ExperienceBoostStat { get; }"}</code> | The stat that multiplies all XP a player gains. |
+| <Link id="m-get8skillsachievement-2" /><code><Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" Get8SkillsAchievement { get; }"}</code> | Achievement completed on the server when a player owns `MaxBoughtSkills` skills. |
+| <Link id="m-isclearingpracticeobjectsonfirstpractice-2" /><code>{"bool IsClearingPracticeObjectsOnFirstPractice { get; }"}</code> | Whether a skill shrine clears practice objects once a slot is first practised. |
+| <Link id="m-levelupaction-2" /><code><Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" LevelUpAction { get; }"}</code> | Game action counted for the player each time they level up. |
+| <Link id="m-maxboughtskills-2" /><code>{"uint MaxBoughtSkills { get; }"}</code> | How many skills a player may own. Below 1 means no limit. |
+| <Link id="m-maxfreepoints-2" /><code>{"uint MaxFreePoints { get; }"}</code> | Most unspent points per path. XP stops at the cap. 0 means no cap. |
+| <Link id="m-sellingskillpointsrefundpercentage-2" /><code>{"float SellingSkillPointsRefundPercentage { get; }"}</code> | Fraction of the levels' XP given back when a skill is sold. |
+| <Link id="m-skillorbinteractioneffectdefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" SkillOrbInteractionEffectDefinition { get; }"}</code> | Pooled effect for interacting with a skill orb. |
+| <Link id="m-toolbasedeffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" ToolBasedEffect { get; }"}</code> | Pooled effect shown while a profession skill's tool effect is active. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-experienceperlevel" /><code>{"uint ExperiencePerLevel(uint currentLevel)"}</code> |  |
-| <Link id="m-gainstewingexperience" /><code>{"void GainStewingExperience(List<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> cookingPlayers, int ingredientCount, bool isRealRecipe, bool hasGarnish)"}</code> |  |
-| <Link id="m-getdamageexperience" /><code>{"float GetDamageExperience(float damage, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
-| <Link id="m-getexperiencesharedmultiplier" /><code>{"float GetExperienceSharedMultiplier(bool isSupport, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
-| <Link id="m-getpathpopupcolor" /><code>{"Color GetPathPopupColor("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
-| <Link id="m-levelupeffect-2" /><code>{"void LevelUpEffect("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, bool isLevelCap)"}</code> |  |
-| <Link id="m-orbdestroyeffect" /><code>{"void OrbDestroyEffect("}<Link to="/game-api/types/global-i-l/iskillorb">{"ISkillOrb"}</Link>{" orb)"}</code> |  |
-| <Link id="m-uncapskillpoints" /><code>{"void UncapSkillPoints(out int maxXp)"}</code> |  |
-| <Link id="m-validatepathhit" /><code>{"bool ValidatePathHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, bool isGettingExperience, out "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
+| <Link id="m-experienceperlevel" /><code>{"uint ExperiencePerLevel(uint currentLevel)"}</code> | XP needed to go from the given level to the next, from a step curve. |
+| <Link id="m-gainstewingexperience" /><code>{"void GainStewingExperience(List<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> cookingPlayers, int ingredientCount, bool isRealRecipe, bool hasGarnish)"}</code> | Gives cooking XP to the cooking players based on ingredients, recipe and garnish, shared by player count. Not called in this build. |
+| <Link id="m-getdamageexperience" /><code>{"float GetDamageExperience(float damage, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | XP for a hit on a path: the damage times that path's XP per damage (0 if not set). |
+| <Link id="m-getexperiencesharedmultiplier" /><code>{"float GetExperienceSharedMultiplier(bool isSupport, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | The self or support share multiplier for a path, used when forging with a holder. 1 if the path has none. |
+| <Link id="m-getpathpopupcolor" /><code>{"Color GetPathPopupColor("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | Colour of the XP popup text for a path. White if none is set. |
+| <Link id="m-levelupeffect-2" /><code>{"void LevelUpEffect("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, bool isLevelCap)"}</code> | Plays the level up effect (or the point cap version) on a character's body and feet. |
+| <Link id="m-orbdestroyeffect" /><code>{"void OrbDestroyEffect("}<Link to="/game-api/types/global-i-l/iskillorb">{"ISkillOrb"}</Link>{" orb)"}</code> | Spawns the skill orb destroy effect at an orb's position. |
+| <Link id="m-uncapskillpoints" /><code>{"void UncapSkillPoints(out int maxXp)"}</code> | Sets `MaxFreePoints` and `MaxBoughtSkills` to 0 (no limits) on the shared asset and outputs the curve's last XP value. |
+| <Link id="m-validatepathhit" /><code>{"bool ValidatePathHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, bool isGettingExperience, out "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | Maps a tool hit to a progression path by its impact channel and applies that channel's filter. False if the channel is not mapped. |
 | <Link id="m-fillandvalidatemaps" /><code>{"private void FillAndValidateMaps()"}</code> |  |
 | <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "NLogCatcher.MelonTarget"
-description: "A class in TavernLib, TavernLib.Debugging."
+description: "An NLog target that writes the game's log lines to TavernLib's MelonLoader log, coloured by level."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Debugging`.
 
-A **class** in `TavernLib`, `TavernLib.Debugging`.
+An NLog target that writes the game's log lines to TavernLib's MelonLoader log, coloured by level.
 
 - **Listed in** [TavernLib.Debugging](/tavernlib-api/types/debugging)
 - **Nested in** [`NLogCatcher`](/tavernlib-api/types/debugging/nlogcatcher)
@@ -29,13 +29,13 @@ A **class** in `TavernLib`, `TavernLib.Debugging`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logginglevels" /><code>{"Dictionary<string, bool> LoggingLevels { get; }"}</code> |  |
+| <Link id="m-logginglevels" /><code>{"Dictionary<string, bool> LoggingLevels { get; }"}</code> | Which NLog levels are copied, by level name. All on at first; `DebugHelper`'s toggles change them. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-write" /><code>{"protected override void Write(LogEventInfo logEvent)"}</code> |  |
+| <Link id="m-write" /><code>{"protected override void Write(LogEventInfo logEvent)"}</code> | Copies one log line, skipping a few noisy loggers (`Connection`, `MessageDebug`, `SpawingLogger`) and levels that are off. |
 
 ## Used in
 

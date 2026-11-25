@@ -1,6 +1,6 @@
 ---
 title: "ControllerActionMode"
-description: "class ControllerActionMode in Root.Township."
+description: "One controller input mode (for example a held item's mode) with action mappings per player mode (Oculus, OpenVR, fly cam, auto cam) plus a shared..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ControllerActionMode
 
 A **class** in `Root.Township`, no namespace.
+
+One controller input mode (for example a held item's mode) with action mappings per player mode (Oculus, OpenVR, fly cam, auto cam) plus a shared all-platform mapping.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 
@@ -34,17 +36,17 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allplatformsactionmapping-2" /><code><Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{" AllPlatformsActionMapping { get; }"}</code> |  |
-| <Link id="m-modename-2" /><code>{"string ModeName { get; set; }"}</code> |  |
-| <Link id="m-platformactionmappings-2" /><code>{"Dictionary<"}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{", "}<Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{"> PlatformActionMappings { get; }"}</code> |  |
-| <Link id="m-type-2" /><code><Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" Type { get; }"}</code> |  |
+| <Link id="m-allplatformsactionmapping-2" /><code><Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{" AllPlatformsActionMapping { get; }"}</code> | Mapping that applies on every player mode. |
+| <Link id="m-modename-2" /><code>{"string ModeName { get; set; }"}</code> | Name of the mode. |
+| <Link id="m-platformactionmappings-2" /><code>{"Dictionary<"}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{", "}<Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{"> PlatformActionMappings { get; }"}</code> | Mappings by player mode, built on first use. |
+| <Link id="m-type-2" /><code><Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" Type { get; }"}</code> | The `ControllerModeType`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getmapping" /><code><Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{" GetMapping("}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" platform)"}</code> |  |
-| <Link id="m-setupplatformactionmappingslist" /><code>{"void SetupPlatformActionMappingsList()"}</code> |  |
+| <Link id="m-getmapping" /><code><Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{" GetMapping("}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" platform)"}</code> | The mapping for a player mode, or null. |
+| <Link id="m-setupplatformactionmappingslist" /><code>{"void SetupPlatformActionMappingsList()"}</code> | Links each platform mapping to this mode and to the all-platform mapping. |
 | <Link id="m-initializedictionary" /><code>{"private void InitializeDictionary()"}</code> |  |
 
 ## Used in

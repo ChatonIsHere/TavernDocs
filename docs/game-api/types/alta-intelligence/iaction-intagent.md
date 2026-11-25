@@ -1,6 +1,6 @@
 ---
 title: "IAction<TAgent>"
-description: "interface IAction<TAgent> in Root.Township."
+description: "An AI action that can be started on a given agent type."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Intelligence`.
 
+An AI action that can be started on a given agent type.
+
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`IAction`](/game-api/types/alta-intelligence/iaction)
 - **Derived types** [`Action<TAgent>`](/game-api/types/alta-intelligence/action-tagent)
@@ -21,7 +23,7 @@ An **interface** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code><Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" Start(TAgent agent)"}</code> |  |
+| <Link id="m-start" /><code><Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" Start(TAgent agent)"}</code> | Starts the action on the agent and returns the running `IActiveAction`. |
 
 ## Used in
 

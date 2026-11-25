@@ -1,6 +1,6 @@
 ---
 title: "Plugin"
-description: "class Plugin in Root.Township."
+description: "A cave generation step asset (blob, tunnels, crystals, structures and so on), made of MapGeneratorParts that write values into a per-chunk layer."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Plugin
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+A cave generation step asset (blob, tunnels, crystals, structures and so on), made of `MapGeneratorPart`s that write values into a per-chunk layer. Run through a `PluginInstance` for each cave layer.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`GeneralValue`](/game-api/types/assembly-other/generalvalue)
@@ -42,24 +44,24 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-element-2" /><code><Link to="/game-api/types/alta-world-generation/element">{"Element"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/element">{"Element"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-isdynamic-2" /><code>{"bool IsDynamic { get; }"}</code> |  |
-| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; }"}</code> |  |
-| <Link id="m-isnonzerolistcreated-2" /><code>{"bool IsNonZeroListCreated { get; }"}</code> |  |
-| <Link id="m-layerheight-2" /><code>{"int LayerHeight { get; }"}</code> |  |
-| <Link id="m-layeroverflowxz-2" /><code>{"int LayerOverflowXZ { get; }"}</code> |  |
-| <Link id="m-parts-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/mapgeneratorpart">{"MapGeneratorPart"}</Link>{"> Parts { get; }"}</code> |  |
-| <Link id="m-pluginidentifier-2" /><code>{"int PluginIdentifier { get; }"}</code> |  |
-| <Link id="m-stage" /><code><Link to="/game-api/types/alta-world-generation/generationstage">{"GenerationStage"}</Link>{" Stage { get; }"}</code> |  |
+| <Link id="m-element-2" /><code><Link to="/game-api/types/alta-world-generation/element">{"Element"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/element">{"Element"}</Link>{" { get; }"}</code> | Optional element whose prefab the default `Render` spawns. |
+| <Link id="m-isdynamic-2" /><code>{"bool IsDynamic { get; }"}</code> | Marks plugins that place saved things (crystals, structures, totems). They only run when a layer is first generated on the server. |
+| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; }"}</code> | Turns the plugin off entirely when false. |
+| <Link id="m-isnonzerolistcreated-2" /><code>{"bool IsNonZeroListCreated { get; }"}</code> | When true, the chunk layer builds a list of its non-zero values for later passes such as spawners. |
+| <Link id="m-layerheight-2" /><code>{"int LayerHeight { get; }"}</code> | Height in cells of this plugin's value layer in each map chunk. |
+| <Link id="m-layeroverflowxz-2" /><code>{"int LayerOverflowXZ { get; }"}</code> | Extra cells kept around each chunk edge in this plugin's layer, so parts can read past the border. |
+| <Link id="m-parts-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/mapgeneratorpart">{"MapGeneratorPart"}</Link>{"> Parts { get; }"}</code> | The generator parts run in order by `Modify`. |
+| <Link id="m-pluginidentifier-2" /><code>{"int PluginIdentifier { get; }"}</code> | Stable id that seeds the plugin's randomness. Set from the instance id if it is 0 or less. |
+| <Link id="m-stage" /><code><Link to="/game-api/types/alta-world-generation/generationstage">{"GenerationStage"}</Link>{" Stage { get; }"}</code> | Which generation stage the plugin belongs to. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getinstance" /><code>{"virtual "}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" GetInstance("}<Link to="/game-api/types/alta-world-generation/igenerator">{"IGenerator"}</Link>{" generator)"}</code> |  |
-| <Link id="m-modify" /><code>{"virtual void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{"[] parts)"}</code> |  |
-| <Link id="m-regenerateidentifier" /><code>{"void RegenerateIdentifier()"}</code> |  |
-| <Link id="m-render" /><code>{"virtual IEnumerator Render("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" pluginInstance) (iterator)"}</code> |  |
+| <Link id="m-getinstance" /><code>{"virtual "}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" GetInstance("}<Link to="/game-api/types/alta-world-generation/igenerator">{"IGenerator"}</Link>{" generator)"}</code> | Makes a `PluginInstance` of this plugin for a generator. |
+| <Link id="m-modify" /><code>{"virtual void Modify("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{"[] parts)"}</code> | Runs each part on the map chunk. Subclasses can change this. |
+| <Link id="m-regenerateidentifier" /><code>{"void RegenerateIdentifier()"}</code> | Editor: sets `PluginIdentifier` from the asset's instance id. |
+| <Link id="m-render" /><code>{"virtual IEnumerator Render("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" pluginInstance) (iterator)"}</code> | Coroutine that spawns `Element`'s prefab for the chunk, if there is one. |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
 
 ## Used in

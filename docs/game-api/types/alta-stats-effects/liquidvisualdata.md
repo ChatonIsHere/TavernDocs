@@ -1,6 +1,6 @@
 ---
 title: "LiquidVisualData"
-description: "class LiquidVisualData in Root.Township."
+description: "Asset with the look of a liquid (colours, rim, fresnel, highlight, waves) that liquid surfaces apply as material properties."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LiquidVisualData
 
 A **class** in `Root.Township`, `Alta.Liquid`.
+
+Asset with the look of a liquid (colours, rim, fresnel, highlight, waves) that liquid surfaces apply as material properties. Client visuals only.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`MaterialPropertyBlockSettings<LiquidVisualData>`](/game-api/types/alta-utilities/materialpropertyblocksettings-t)
@@ -27,7 +29,7 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxthickness" /><code>{"const int MaxThickness"}</code> |  |
+| <Link id="m-maxthickness" /><code>{"const int MaxThickness"}</code> | Constant 100, the top of the `Thickness` range. |
 | <Link id="m-androidliquidcolor" /><code>{"private Color androidLiquidColor"}</code> |  |
 | <Link id="m-depth" /><code>{"private float depth"}</code> |  |
 | <Link id="m-fresnelcolor" /><code>{"private Color fresnelColor"}</code> |  |
@@ -57,34 +59,34 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-depth-2" /><code>{"float Depth { get; }"}</code> |  |
-| <Link id="m-fresnelcolor-2" /><code>{"Color FresnelColor { get; }"}</code> |  |
-| <Link id="m-fresnelexponent-2" /><code>{"float FresnelExponent { get; }"}</code> |  |
-| <Link id="m-glossiness-2" /><code>{"float Glossiness { get; }"}</code> |  |
-| <Link id="m-liquidcolor-2" /><code>{"Color LiquidColor { get; }"}</code> |  |
-| <Link id="m-liquiddepthcolor-2" /><code>{"Color LiquidDepthColor { get; }"}</code> |  |
-| <Link id="m-refractionamount-2" /><code>{"float RefractionAmount { get; }"}</code> |  |
-| <Link id="m-rimcolor-2" /><code>{"Color RimColor { get; }"}</code> |  |
-| <Link id="m-rimfalloff-2" /><code>{"float RimFalloff { get; }"}</code> |  |
-| <Link id="m-rimsize-2" /><code>{"float RimSize { get; }"}</code> |  |
-| <Link id="m-rimtiling-2" /><code>{"float RimTiling { get; }"}</code> |  |
-| <Link id="m-surfacehighlight-2" /><code>{"float SurfaceHighlight { get; }"}</code> |  |
-| <Link id="m-surfacehighlightcolor-2" /><code>{"Color SurfaceHighlightColor { get; }"}</code> |  |
-| <Link id="m-surfacehighlightsize-2" /><code>{"float SurfaceHighlightSize { get; }"}</code> |  |
-| <Link id="m-surfacehighlighttiling-2" /><code>{"float SurfaceHighlightTiling { get; }"}</code> |  |
-| <Link id="m-thickness-2" /><code>{"int Thickness { get; }"}</code> |  |
-| <Link id="m-tiling-2" /><code>{"float Tiling { get; }"}</code> |  |
-| <Link id="m-transparency-2" /><code>{"float Transparency { get; }"}</code> |  |
-| <Link id="m-wavespeed-2" /><code>{"float WaveSpeed { get; }"}</code> |  |
-| <Link id="m-wavespeedbytemperature-2" /><code>{"AnimationCurve WaveSpeedByTemperature { get; }"}</code> |  |
-| <Link id="m-wavestrength-2" /><code>{"float WaveStrength { get; }"}</code> |  |
-| <Link id="m-wavestrengthbytemperature-2" /><code>{"AnimationCurve WaveStrengthByTemperature { get; }"}</code> |  |
+| <Link id="m-depth-2" /><code>{"float Depth { get; }"}</code> | Shader depth value for the liquid. |
+| <Link id="m-fresnelcolor-2" /><code>{"Color FresnelColor { get; }"}</code> | Colour of the fresnel edge glow. |
+| <Link id="m-fresnelexponent-2" /><code>{"float FresnelExponent { get; }"}</code> | Sharpness of the fresnel effect. |
+| <Link id="m-glossiness-2" /><code>{"float Glossiness { get; }"}</code> | Surface glossiness. |
+| <Link id="m-liquidcolor-2" /><code>{"Color LiquidColor { get; }"}</code> | Main colour of the liquid. |
+| <Link id="m-liquiddepthcolor-2" /><code>{"Color LiquidDepthColor { get; }"}</code> | Colour used deeper in the liquid. |
+| <Link id="m-refractionamount-2" /><code>{"float RefractionAmount { get; }"}</code> | How much the liquid distorts what is behind it. |
+| <Link id="m-rimcolor-2" /><code>{"Color RimColor { get; }"}</code> | Colour of the rim where the liquid meets the container. |
+| <Link id="m-rimfalloff-2" /><code>{"float RimFalloff { get; }"}</code> | How quickly the rim colour fades. |
+| <Link id="m-rimsize-2" /><code>{"float RimSize { get; }"}</code> | Width of the rim. |
+| <Link id="m-rimtiling-2" /><code>{"float RimTiling { get; }"}</code> | Texture tiling of the rim. |
+| <Link id="m-surfacehighlight-2" /><code>{"float SurfaceHighlight { get; }"}</code> | Strength of the surface highlight. |
+| <Link id="m-surfacehighlightcolor-2" /><code>{"Color SurfaceHighlightColor { get; }"}</code> | Colour of the surface highlight. |
+| <Link id="m-surfacehighlightsize-2" /><code>{"float SurfaceHighlightSize { get; }"}</code> | Size of the surface highlight. |
+| <Link id="m-surfacehighlighttiling-2" /><code>{"float SurfaceHighlightTiling { get; }"}</code> | Texture tiling of the surface highlight. |
+| <Link id="m-thickness-2" /><code>{"int Thickness { get; }"}</code> | How thick the liquid is, passed to the liquid gravity effect when pouring and sloshing (default 1). |
+| <Link id="m-tiling-2" /><code>{"float Tiling { get; }"}</code> | Main texture tiling. |
+| <Link id="m-transparency-2" /><code>{"float Transparency { get; }"}</code> | How see-through the liquid is. |
+| <Link id="m-wavespeed-2" /><code>{"float WaveSpeed { get; }"}</code> | Speed of surface waves. |
+| <Link id="m-wavespeedbytemperature-2" /><code>{"AnimationCurve WaveSpeedByTemperature { get; }"}</code> | Wave speed by temperature, for boiling. |
+| <Link id="m-wavestrength-2" /><code>{"float WaveStrength { get; }"}</code> | Height of surface waves. |
+| <Link id="m-wavestrengthbytemperature-2" /><code>{"AnimationCurve WaveStrengthByTemperature { get; }"}</code> | Wave strength by temperature, for boiling. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getsharedmaterial" /><code>{"Material GetSharedMaterial(Material materialTemplate, Func<"}<Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{", Material, Material> createNewMaterialFromSettings)"}</code> |  |
+| <Link id="m-getsharedmaterial" /><code>{"Material GetSharedMaterial(Material materialTemplate, Func<"}<Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{", Material, Material> createNewMaterialFromSettings)"}</code> | Returns one shared material per template for this liquid, creating it on first use with the given function. Logs an error on clients if the template is null. |
 
 ## Used in
 

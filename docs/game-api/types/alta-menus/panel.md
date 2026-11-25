@@ -1,6 +1,6 @@
 ---
 title: "Panel"
-description: "class Panel in Root.Township."
+description: "One page of a meta UI Window."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Panel
 
 A **class** in `Root.Township`, `Alta.Meta.UI`.
+
+One page of a meta UI `Window`. Shows or hides itself, playing an optional scale animation, and raises `StateChanged`.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** `MonoBehaviour`
@@ -27,30 +29,30 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 | Member | What it is |
 | --- | --- |
 | <Link id="m-animation" /><code>{"private "}<Link to="/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" animation"}</code> |  |
-| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | NLog logger shared by panels. |
 | <Link id="m-window" /><code>{"private "}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" window"}</code> |  |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; private set; }"}</code> |  |
-| <Link id="m-window-2" /><code><Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" "}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; private set; }"}</code> | Whether the panel is currently shown. |
+| <Link id="m-window-2" /><code><Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" "}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" { get; }"}</code> | The window that owns this panel. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-statechanged" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{"> StateChanged"}</code> |  |
+| <Link id="m-statechanged" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{"> StateChanged"}</code> | Raised when the panel is shown or hidden. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setactive" /><code>{"void SetActive(bool state)"}</code> |  |
-| <Link id="m-setactive-2" /><code>{"void SetActive(bool state, Action onFinished = null)"}</code> |  |
-| <Link id="m-switchto" /><code>{"void SwitchTo()"}</code> |  |
-| <Link id="m-internalsetstate" /><code>{"protected virtual async void InternalSetState(bool state, Action onFinished = null)"}</code> |  |
+| <Link id="m-setactive" /><code>{"void SetActive(bool state)"}</code> | Shows or hides the panel and raises `StateChanged`. Logs a warning and does nothing if already in that state. |
+| <Link id="m-setactive-2" /><code>{"void SetActive(bool state, Action onFinished = null)"}</code> | Shows or hides the panel and raises `StateChanged`. Logs a warning and does nothing if already in that state. |
+| <Link id="m-switchto" /><code>{"void SwitchTo()"}</code> | Asks the parent window to switch to this panel. |
+| <Link id="m-internalsetstate" /><code>{"protected virtual async void InternalSetState(bool state, Action onFinished = null)"}</code> | Turns the object on or off, through the animation if set, otherwise after a 50 ms delay, then calls the finish callback. |
 
 ## Used in
 

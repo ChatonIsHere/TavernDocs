@@ -1,6 +1,6 @@
 ---
 title: "SpawnModifierPointNormal"
-description: "abstract class SpawnModifierPointNormal in Root.Township."
+description: "Base for a spawn modifier that works on PointNormal ground points, as used by forest spawning."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpawnModifierPointNormal
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for a spawn modifier that works on `PointNormal` ground points, as used by forest spawning.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`SpawnModifier<PointNormal>`](/game-api/types/global-s/spawnmodifier-t)

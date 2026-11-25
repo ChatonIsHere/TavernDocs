@@ -1,6 +1,6 @@
 ---
 title: "AudioManager"
-description: "class AudioManager in Root.Township."
+description: "Plays Wwise sound effects, one shot at a point, on an object, or on a given Wwise game object."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AudioManager
 
 A **class** in `Root.Township`, no namespace.
+
+Plays Wwise sound effects, one shot at a point, on an object, or on a given Wwise game object. Muted and disabled on a headless server. Get it with `SingletonBehaviour<AudioManager>.Instance`.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`SingletonBehaviour<AudioManager>`](/game-api/types/assembly-other/singletonbehaviour-t)
@@ -40,29 +42,29 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ismuted-2" /><code>{"bool IsMuted { get; private set; }"}</code> |  |
+| <Link id="m-ismuted-2" /><code>{"bool IsMuted { get; private set; }"}</code> | True while sound is suspended, for example after the server starts. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-audiomutedevent" /><code>{"event "}<Link to="/game-api/types/global-a-b/audiomuteevent">{"AudioMuteEvent"}</Link>{" AudioMutedEvent"}</code> |  |
+| <Link id="m-audiomutedevent" /><code>{"event "}<Link to="/game-api/types/global-a-b/audiomuteevent">{"AudioMuteEvent"}</Link>{" AudioMutedEvent"}</code> | Raised when `IsMuted` changes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playsoundeffect" /><code>{"void PlaySoundEffect("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, GameObject caller, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> |  |
-| <Link id="m-playsoundeffect-2" /><code>{"void PlaySoundEffect("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, AkGameObj akGameObj, GameObject caller, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> |  |
-| <Link id="m-playsoundeffect-3" /><code>{"void PlaySoundEffect("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, GameObject caller, out "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" audioControl, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> |  |
-| <Link id="m-playsoundeffect-4" /><code>{"void PlaySoundEffect("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, AkGameObj akGameObj, GameObject caller, out "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" audioControl, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> |  |
-| <Link id="m-playsoundeffectat" /><code>{"void PlaySoundEffectAt("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, Vector3 position, GameObject caller, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> |  |
-| <Link id="m-playsoundeffectat-2" /><code>{"void PlaySoundEffectAt("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, Vector3 position, GameObject caller, out "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" audioControl, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> |  |
-| <Link id="m-playsoundeffectonobject" /><code>{"void PlaySoundEffectOnObject("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, GameObject targetObject, GameObject caller, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> |  |
-| <Link id="m-playsoundeffectonobject-2" /><code>{"void PlaySoundEffectOnObject("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, GameObject targetObject, GameObject caller, out "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" audioControl, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> |  |
-| <Link id="m-resolve" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" Resolve("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" effect, "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" fallback, GameObject caller)"}</code> |  |
-| <Link id="m-whenready" /><code>{"async void WhenReady(Action callback)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
+| <Link id="m-playsoundeffect" /><code>{"void PlaySoundEffect("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, GameObject caller, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> | Plays a sound effect set on a pooled temporary emitter or a given Wwise object. The `out` overloads return an `AudioControl` to stop or change it. |
+| <Link id="m-playsoundeffect-2" /><code>{"void PlaySoundEffect("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, AkGameObj akGameObj, GameObject caller, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> | Plays a sound effect set on a pooled temporary emitter or a given Wwise object. The `out` overloads return an `AudioControl` to stop or change it. |
+| <Link id="m-playsoundeffect-3" /><code>{"void PlaySoundEffect("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, GameObject caller, out "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" audioControl, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> | Plays a sound effect set on a pooled temporary emitter or a given Wwise object. The `out` overloads return an `AudioControl` to stop or change it. |
+| <Link id="m-playsoundeffect-4" /><code>{"void PlaySoundEffect("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, AkGameObj akGameObj, GameObject caller, out "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" audioControl, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> | Plays a sound effect set on a pooled temporary emitter or a given Wwise object. The `out` overloads return an `AudioControl` to stop or change it. |
+| <Link id="m-playsoundeffectat" /><code>{"void PlaySoundEffectAt("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, Vector3 position, GameObject caller, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> | Plays a sound effect set at a world position. The same caller can only trigger each sound once per frame. |
+| <Link id="m-playsoundeffectat-2" /><code>{"void PlaySoundEffectAt("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, Vector3 position, GameObject caller, out "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" audioControl, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> | Plays a sound effect set at a world position. The same caller can only trigger each sound once per frame. |
+| <Link id="m-playsoundeffectonobject" /><code>{"void PlaySoundEffectOnObject("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, GameObject targetObject, GameObject caller, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> | Plays a sound effect set attached to an object's transform, so it follows the object. |
+| <Link id="m-playsoundeffectonobject-2" /><code>{"void PlaySoundEffectOnObject("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, GameObject targetObject, GameObject caller, out "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" audioControl, params "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties)"}</code> | Plays a sound effect set attached to an object's transform, so it follows the object. |
+| <Link id="m-resolve" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" Resolve("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" effect, "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" fallback, GameObject caller)"}</code> | Returns the sound effect set, or falls back to the old `SoundEffect` enum mapping (with a warning) when it is null. |
+| <Link id="m-whenready" /><code>{"async void WhenReady(Action callback)"}</code> | Runs the callback once Wwise has started. Never runs on a headless build. |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | On a headless build, suspends sound and disables the component. Otherwise waits for Wwise to start. |
 | <Link id="m-disablesound" /><code>{"private void DisableSound()"}</code> |  |
 | <Link id="m-enablesound" /><code>{"private void EnableSound()"}</code> |  |
 | <Link id="m-getsoundeventobject" /><code>{"private "}<Link to="/game-api/types/global-p/pooledtempwwiseaudio">{"PooledTempWwiseAudio"}</Link>{" GetSoundEventObject("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" set, Vector3 position)"}</code> |  |

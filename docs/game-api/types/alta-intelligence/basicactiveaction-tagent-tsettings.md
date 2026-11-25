@@ -1,6 +1,6 @@
 ---
 title: "BasicActiveAction<TAgent, TSettings>"
-description: "abstract class BasicActiveAction<TAgent, TSettings> in Root.Township."
+description: "Base for a running creature action that has a settings object."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BasicActiveAction&lt;TAgent, TSettings&gt;
 
 An **abstract class** in `Root.Township`, `Alta.Intelligence`.
+
+Base for a running creature action that has a settings object. Instances are pooled and reused by `BasicAction`, so reset your state in `OnStart`.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`BasicActiveAction<TAgent>`](/game-api/types/alta-intelligence/basicactiveaction-tagent)
@@ -27,10 +29,10 @@ An **abstract class** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-settings" /><code>{"TSettings Settings { get; set; }"}</code> |  |
+| <Link id="m-settings" /><code>{"TSettings Settings { get; set; }"}</code> | The settings this action runs with; set by the `BasicAction` that created it. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<TAgent, TActive, TSettings> GetAction<TActive>(TSettings settings, bool isUsingTarget)"}</code> |  |
+| <Link id="m-getaction" /><code>{"static "}<Link to="/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<TAgent, TActive, TSettings> GetAction<TActive>(TSettings settings, bool isUsingTarget)"}</code> | Makes a `BasicAction` that starts this active action type with the given settings, optionally using the agent's target. |

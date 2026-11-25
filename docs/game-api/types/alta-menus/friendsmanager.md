@@ -1,6 +1,6 @@
 ---
 title: "FriendsManager"
-description: "class FriendsManager in Root.Township."
+description: "Main menu friends board: lists friends or friend requests from the Alta API as user tokens on a rope board."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FriendsManager
 
 A **class** in `Root.Township`, `Alta.Meta.Friends`.
+
+Main menu friends board: lists friends or friend requests from the Alta API as user tokens on a rope board. Client side.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** [`LoggedInTool`](/game-api/types/global-i-l/loggedintool)
@@ -46,18 +48,18 @@ A **class** in `Root.Township`, `Alta.Meta.Friends`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addfriend" /><code>{"async void AddFriend("}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{" token)"}</code> |  |
-| <Link id="m-changetab" /><code>{"void ChangeTab(int index)"}</code> |  |
-| <Link id="m-changetab-2" /><code>{"void ChangeTab("}<Link to="/game-api/types/alta-menus/friendsmanager-tab">{"FriendsManager.Tab"}</Link>{" tab)"}</code> |  |
-| <Link id="m-inject" /><code>{"void Inject("}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> |  |
-| <Link id="m-joinfriendserver" /><code>{"void JoinFriendServer("}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{" token)"}</code> |  |
-| <Link id="m-removefriend" /><code>{"async void RemoveFriend("}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{" token)"}</code> |  |
+| <Link id="m-addfriend" /><code>{"async void AddFriend("}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{" token)"}</code> | Sends or accepts a friend request and removes the token. Leaves `isProcessing` set, so later add and remove clicks do nothing. |
+| <Link id="m-changetab" /><code>{"void ChangeTab(int index)"}</code> | Switches between the friends, requests and Oculus tabs and redraws the board. The Oculus tab always shows nothing. |
+| <Link id="m-changetab-2" /><code>{"void ChangeTab("}<Link to="/game-api/types/alta-menus/friendsmanager-tab">{"FriendsManager.Tab"}</Link>{" tab)"}</code> | Switches between the friends, requests and Oculus tabs and redraws the board. The Oculus tab always shows nothing. |
+| <Link id="m-inject" /><code>{"void Inject("}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> | Receives the analytics service by dependency injection. |
+| <Link id="m-joinfriendserver" /><code>{"void JoinFriendServer("}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{" token)"}</code> | Empty in this build; does nothing. |
+| <Link id="m-removefriend" /><code>{"async void RemoveFriend("}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{" token)"}</code> | Removes the friendship through the API and removes the token. The list refresh is skipped, since `isProcessing` is already set. |
 | <Link id="m-configuretokenfortab" /><code>{"private void ConfigureTokenForTab("}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{" token, "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user)"}</code> |  |
 | <Link id="m-displayuser" /><code>{"private void DisplayUser("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user)"}</code> |  |
 | <Link id="m-getuserinfotodisplay" /><code>{"private IEnumerable<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> GetUserInfoToDisplay()"}</code> |  |
-| <Link id="m-loggedin" /><code>{"protected override async void LoggedIn()"}</code> |  |
-| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> |  |
+| <Link id="m-loggedin" /><code>{"protected override async void LoggedIn()"}</code> | Loads friends and requests and shows the friends tab. |
+| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> | Clears the friends list. |
+| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> | Destroys all user tokens, shown and pooled. |
 | <Link id="m-releasetoken" /><code>{"private void ReleaseToken("}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{" token)"}</code> |  |
 | <Link id="m-resetdisplay" /><code>{"private void ResetDisplay()"}</code> |  |
 | <Link id="m-updatedisplay" /><code>{"private void UpdateDisplay()"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "UserConfig"
-description: "A class in TavernLib, TavernLib.Backend.Server.Configs."
+description: "The contents of users.json: registered players, and the whitelist and blacklist."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
-A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
+The contents of `users.json`: registered players, and the whitelist and blacklist. Unknown keys are kept and written back.
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/tavernlib-api/types/backend-server-configs)
 - **Derived types** [`UserConfigFile`](/tavernlib-api/types/backend-server-configs/userconfigfile)
@@ -29,9 +29,9 @@ A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-blacklist" /><code><Link to="/tavernlib-api/types/backend-server-configs/userconfig-listconfig">{"UserConfig.ListConfig"}</Link>{" Blacklist { get; set; }"}</code> |  |
-| <Link id="m-users" /><code>{"Dictionary<string, "}<Link to="/tavernlib-api/types/backend-server-configs/userconfig-user">{"UserConfig.User"}</Link>{"> Users { get; set; }"}</code> |  |
-| <Link id="m-whitelist" /><code><Link to="/tavernlib-api/types/backend-server-configs/userconfig-listconfig">{"UserConfig.ListConfig"}</Link>{" Whitelist { get; set; }"}</code> |  |
+| <Link id="m-blacklist" /><code><Link to="/tavernlib-api/types/backend-server-configs/userconfig-listconfig">{"UserConfig.ListConfig"}</Link>{" Blacklist { get; set; }"}</code> | Names, ids and addresses that may never join. |
+| <Link id="m-users" /><code>{"Dictionary<string, "}<Link to="/tavernlib-api/types/backend-server-configs/userconfig-user">{"UserConfig.User"}</Link>{"> Users { get; set; }"}</code> | Registered players by lower-case username. |
+| <Link id="m-whitelist" /><code><Link to="/tavernlib-api/types/backend-server-configs/userconfig-listconfig">{"UserConfig.ListConfig"}</Link>{" Whitelist { get; set; }"}</code> | Names, ids and addresses allowed in while the whitelist is on. |
 | <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |  |
 
 ## Used in

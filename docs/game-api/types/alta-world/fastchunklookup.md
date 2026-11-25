@@ -1,6 +1,6 @@
 ---
 title: "FastChunkLookup"
-description: "Fast lookup from positions or bounds to location chunks. Overworld chunks sit in a grid indexed by position; other chunks (caves and so on) are checke"
+description: "Fast lookup from positions or bounds to location chunks."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

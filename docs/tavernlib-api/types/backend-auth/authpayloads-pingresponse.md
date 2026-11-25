@@ -1,6 +1,6 @@
 ---
 title: "AuthPayloads.PingResponse"
-description: "A struct in TavernLib, TavernLib.Backend.Auth."
+description: "The auth port's answer to a ping: status pong, the server name, whether a password and the whitelist are on, the game, web and console ports, and the mods..."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `TavernLib`, `TavernLib.Backend.Auth`.
 
-A **struct** in `TavernLib`, `TavernLib.Backend.Auth`.
+The auth port's answer to a ping: status `pong`, the server name, whether a password and the whitelist are on, the game, web and console ports, and the mods hash and count.
 
 - **Listed in** [TavernLib.Backend.Auth](/tavernlib-api/types/backend-auth)
 - **Nested in** [`AuthPayloads`](/tavernlib-api/types/backend-auth/authpayloads)

@@ -1,6 +1,6 @@
 ---
 title: "PointNormal"
-description: "struct PointNormal in Root.Township."
+description: "A point on the ground with its normal, plus cached info about the nearest forest edge and biome."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PointNormal
 
 A **struct** in `Root.Township`, `Alta.Forests`.
+
+A point on the ground with its normal, plus cached info about the nearest forest edge and biome. Passed through forest spawning and spawn modifiers.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Derived types** [`SpawnModifierPointNormal`](/game-api/types/global-s/spawnmodifierpointnormal)
@@ -26,20 +28,20 @@ A **struct** in `Root.Township`, `Alta.Forests`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-biome" /><code><Link to="/game-api/types/global-a-b/biomesphere">{"BiomeSphere"}</Link>{" biome"}</code> |  |
-| <Link id="m-edgedistance" /><code>{"float edgeDistance"}</code> |  |
-| <Link id="m-edgeprogress" /><code>{"float edgeProgress"}</code> |  |
-| <Link id="m-ishit" /><code>{"bool isHit"}</code> |  |
-| <Link id="m-nearestedge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" nearestEdge"}</code> |  |
-| <Link id="m-normal" /><code>{"Vector3 normal"}</code> |  |
-| <Link id="m-point" /><code>{"Vector3 point"}</code> |  |
+| <Link id="m-biome" /><code><Link to="/game-api/types/global-a-b/biomesphere">{"BiomeSphere"}</Link>{" biome"}</code> | The biome sphere this point is in, if one has been set. |
+| <Link id="m-edgedistance" /><code>{"float edgeDistance"}</code> | Cached distance to `nearestEdge`; only valid once the edge is set. |
+| <Link id="m-edgeprogress" /><code>{"float edgeProgress"}</code> | Cached position along `nearestEdge` (0 to 1). |
+| <Link id="m-ishit" /><code>{"bool isHit"}</code> | Whether this point came from a valid ground hit. Both constructors set it true. |
+| <Link id="m-nearestedge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" nearestEdge"}</code> | Cached nearest edge, or null until worked out. |
+| <Link id="m-normal" /><code>{"Vector3 normal"}</code> | The ground normal at the point. |
+| <Link id="m-point" /><code>{"Vector3 point"}</code> | The world position. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getedge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" GetEdge("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> |  |
-| <Link id="m-getedgedistance" /><code>{"float GetEdgeDistance("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> |  |
+| <Link id="m-getedge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" GetEdge("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | The nearest forest edge, worked out and cached on first call. |
+| <Link id="m-getedgedistance" /><code>{"float GetEdgeDistance("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | Distance to the nearest forest edge, worked out and cached on first call. |
 
 ## Used in
 

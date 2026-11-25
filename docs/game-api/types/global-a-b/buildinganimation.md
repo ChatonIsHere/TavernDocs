@@ -1,6 +1,6 @@
 ---
 title: "BuildingAnimation"
-description: "class BuildingAnimation in Root.Township."
+description: "Plays a build-up animation where an object's parts fly in one by one along a direction, with sounds and effects."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BuildingAnimation
 
 A **class** in `Root.Township`, no namespace.
+
+Plays a build-up animation where an object's parts fly in one by one along a direction, with sounds and effects. Parts are set up in the editor.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `MonoBehaviour`, [`IIgnoreForStaticFlatten`](/game-api/types/alta-utilities/iignoreforstaticflatten), [`IDontSplit`](/game-api/types/global-i-l/idontsplit)
@@ -50,26 +52,26 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animationparent-2" /><code>{"Transform AnimationParent { get; }"}</code> |  |
-| <Link id="m-movingparts-2" /><code>{"List<"}<Link to="/game-api/types/global-a-b/animationpart">{"AnimationPart"}</Link>{"> MovingParts { get; }"}</code> |  |
-| <Link id="m-preinsertanimation" /><code>{"Func<"}<Link to="/game-api/types/global-a-b/animationpart">{"AnimationPart"}</Link>{", float, bool, IEnumerator, IEnumerator> PreInsertAnimation { get; set; }"}</code> |  |
+| <Link id="m-animationparent-2" /><code>{"Transform AnimationParent { get; }"}</code> | Parent transform for the animated parts. |
+| <Link id="m-movingparts-2" /><code>{"List<"}<Link to="/game-api/types/global-a-b/animationpart">{"AnimationPart"}</Link>{"> MovingParts { get; }"}</code> | The parts that fly in, in release order. |
+| <Link id="m-preinsertanimation" /><code>{"Func<"}<Link to="/game-api/types/global-a-b/animationpart">{"AnimationPart"}</Link>{", float, bool, IEnumerator, IEnumerator> PreInsertAnimation { get; set; }"}</code> | Optional hook that wraps each part's animation, for an extra step before it flies in. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animationfinished-2" /><code>{"event Action AnimationFinished"}</code> |  |
+| <Link id="m-animationfinished-2" /><code>{"event Action AnimationFinished"}</code> | Raised when the last part lands, or straight away with `PlayInstant`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generateparts" /><code>{"void GenerateParts(Transform[] components)"}</code> |  |
-| <Link id="m-ordercomponents" /><code>{"void OrderComponents(Component[] components)"}</code> |  |
-| <Link id="m-play" /><code>{"void Play()"}</code> |  |
-| <Link id="m-playinstant" /><code>{"void PlayInstant()"}</code> |  |
-| <Link id="m-setisskippinganimation" /><code>{"void SetIsSkippingAnimation(bool isSkipping)"}</code> |  |
-| <Link id="m-stop" /><code>{"void Stop()"}</code> |  |
+| <Link id="m-generateparts" /><code>{"void GenerateParts(Transform[] components)"}</code> | Editor: makes an animation part for each transform, moving out sideways from the animation direction. |
+| <Link id="m-ordercomponents" /><code>{"void OrderComponents(Component[] components)"}</code> | Editor: sorts components along the animation direction. |
+| <Link id="m-play" /><code>{"void Play()"}</code> | Plays the animation from the start, or finishes instantly if skipping is set. |
+| <Link id="m-playinstant" /><code>{"void PlayInstant()"}</code> | Finishes at once. The temporary parts are hidden if repeatable or skipping, otherwise destroyed. |
+| <Link id="m-setisskippinganimation" /><code>{"void SetIsSkippingAnimation(bool isSkipping)"}</code> | Makes the next `Play` finish instantly. Resets after the animation finishes. |
+| <Link id="m-stop" /><code>{"void Stop()"}</code> | Stops the animation and hides all parts again. |
 | <Link id="m-animatepart" /><code>{"private IEnumerator AnimatePart("}<Link to="/game-api/types/global-a-b/animationpart">{"AnimationPart"}</Link>{" part, float duration, bool isLast) (iterator)"}</code> |  |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-onanimationfinished" /><code>{"private void OnAnimationFinished()"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "ContactPointStructure"
-description: "struct ContactPointStructure in Root.Township."
+description: "A copy of one collision contact (point, normal, colliders, separation) plus the impact detector that saw it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ContactPointStructure
 
 A **struct** in `Root.Township`, `Alta.Impact`.
+
+A copy of one collision contact (point, normal, colliders, separation) plus the impact detector that saw it. Passed around the impact system.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 
@@ -25,12 +27,12 @@ A **struct** in `Root.Township`, `Alta.Impact`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-detector" /><code><Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" Detector { get; private set; }"}</code> |  |
-| <Link id="m-normal" /><code>{"Vector3 Normal { get; private set; }"}</code> |  |
-| <Link id="m-othercollider" /><code>{"Collider OtherCollider { get; private set; }"}</code> |  |
-| <Link id="m-point" /><code>{"Vector3 Point { get; private set; }"}</code> |  |
-| <Link id="m-separation" /><code>{"float Separation { get; private set; }"}</code> |  |
-| <Link id="m-thiscollider" /><code>{"Collider ThisCollider { get; private set; }"}</code> |  |
+| <Link id="m-detector" /><code><Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" Detector { get; private set; }"}</code> | The impact detector that recorded the contact, or null. |
+| <Link id="m-normal" /><code>{"Vector3 Normal { get; private set; }"}</code> | Contact normal. |
+| <Link id="m-othercollider" /><code>{"Collider OtherCollider { get; private set; }"}</code> | The other collider in the contact. |
+| <Link id="m-point" /><code>{"Vector3 Point { get; private set; }"}</code> | Contact point in world space. |
+| <Link id="m-separation" /><code>{"float Separation { get; private set; }"}</code> | Distance between the colliders at the contact. |
+| <Link id="m-thiscollider" /><code>{"Collider ThisCollider { get; private set; }"}</code> | This side's collider. |
 
 ## Used in
 

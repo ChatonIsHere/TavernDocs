@@ -1,6 +1,6 @@
 ---
 title: "ModReconciler.Pass"
-description: "A private class in TavernLib, TavernLib.Backend.Mods. Reach it through att-stubs' publicized assemblies or Harmony's AccessTools."
+description: "Private: one reconcile pass, with its deadline, the fetched index and per-pass verify results."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **private class** in `TavernLib`, `TavernLib.Backend.Mods`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
 
-A **private class** in `TavernLib`, `TavernLib.Backend.Mods`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+Private: one reconcile pass, with its deadline, the fetched index and per-pass verify results.
 
 - **Listed in** [TavernLib.Backend.Mods](/tavernlib-api/types/backend-mods)
 - **Nested in** [`ModReconciler`](/tavernlib-api/types/backend-mods/modreconciler)
@@ -47,7 +47,7 @@ A **private class** in `TavernLib`, `TavernLib.Backend.Mods`. Reach it through a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"void Run("}<Link to="/tavernlib-api/types/backend-server-configs/modslist">{"ModsList"}</Link>{" modsList)"}</code> |  |
+| <Link id="m-run" /><code>{"void Run("}<Link to="/tavernlib-api/types/backend-server-configs/modslist">{"ModsList"}</Link>{" modsList)"}</code> | Reconciles each entry, re-enables what's kept and disables every other enabled server mod. Entries not reached in time keep what's installed. |
 | <Link id="m-addinstalledclosure" /><code>{"private void AddInstalledClosure(string modId, HashSet<string> into)"}</code> |  |
 | <Link id="m-fetchindex" /><code>{"private "}<Link to="/tavernlib-api/types/backend-mods/modindex">{"ModIndex"}</Link>{" FetchIndex()"}</code> |  |
 | <Link id="m-finddamage" /><code>{"private string FindDamage(string rootId)"}</code> |  |

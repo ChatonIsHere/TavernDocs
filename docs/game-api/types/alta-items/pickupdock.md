@@ -1,6 +1,6 @@
 ---
 title: "PickupDock"
-description: "class PickupDock in Root.Township."
+description: "A slot that holds pickups: backpack and belt slots, pouches, racks, crafting station inputs."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupDock
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+A slot that holds pickups: backpack and belt slots, pouches, racks, crafting station inputs. A stack is one real docked `Pickup` plus a count in `QuantityStored`; the server spawns a fresh copy when one is taken out. Both sides; the server owns the count and syncs it.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`Interactable`](/game-api/types/global-i-l/interactable), [`ISavableFull<PickupDockSaveData>`](/game-api/types/alta-world/isavablefull-t), [`ISavable<PickupDockSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<PickupDockSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase), [`ISavableFull`](/game-api/types/alta-world/isavablefull-t), [`IDockable`](/game-api/types/global-i-l/idockable), [`IBlockGenericDecrafting`](/game-api/types/alta-crafting/iblockgenericdecrafting), [`IInitializeAsLocalPlayer`](/game-api/types/global-i-l/iinitializeaslocalplayer), [`IInitializeAsRemotePlayer`](/game-api/types/global-i-l/iinitializeasremoteplayer), [`IBuildRendererBakeable`](/game-api/types/assembly-other/ibuildrendererbakeable), [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable)
@@ -29,7 +31,7 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dockedtype" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" dockedType"}</code> |  |
+| <Link id="m-dockedtype" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" dockedType"}</code> | The `Item` type stored in the dock. Saved, and used to respawn the docked pickup on load. |
 | <Link id="m-clientdocked" /><code>{"private List<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> clientDocked"}</code> |  |
 | <Link id="m-dockvisual" /><code>{"private "}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{" dockVisual"}</code> |  |
 | <Link id="m-hapticcoroutine" /><code>{"private Coroutine hapticCoroutine"}</code> |  |
@@ -51,20 +53,20 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allowcontainerinteraction" /><code>{"virtual bool AllowContainerInteraction { get; }"}</code> |  |
-| <Link id="m-dockedpickup" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" DockedPickup { get; private set; }"}</code> |  |
-| <Link id="m-hasdockedpickup" /><code>{"bool HasDockedPickup { get; }"}</code> |  |
-| <Link id="m-hovercount-2" /><code>{"int HoverCount { get; set; }"}</code> |  |
-| <Link id="m-isownedbyplayer" /><code>{"bool IsOwnedByPlayer { get; protected set; }"}</code> |  |
-| <Link id="m-maxquantitycurrentlypossible" /><code>{"int MaxQuantityCurrentlyPossible { get; }"}</code> |  |
-| <Link id="m-overridepositioning" /><code><Link to="/game-api/types/alta-items/dockpositioning">{"DockPositioning"}</Link>{" OverridePositioning { get; set; }"}</code> |  |
-| <Link id="m-pickuprange-2" /><code>{"Collider PickupRange { get; }"}</code> |  |
-| <Link id="m-playercontroller" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; protected set; }"}</code> |  |
-| <Link id="m-quantitystored-2" /><code>{"int QuantityStored { get; set; }"}</code> |  |
-| <Link id="m-settings-2" /><code><Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" Settings { get; }"}</code> |  |
-| <Link id="m-snappoint-2" /><code>{"Transform SnapPoint { get; }"}</code> |  |
-| <Link id="m-syncquantity" /><code><Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" SyncQuantity { get; private set; }"}</code> |  |
-| <Link id="m-totalweight" /><code>{"float TotalWeight { get; }"}</code> |  |
+| <Link id="m-allowcontainerinteraction" /><code>{"virtual bool AllowContainerInteraction { get; }"}</code> | Whether the dock lets you interact through it to a container, taken from its settings. |
+| <Link id="m-dockedpickup" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" DockedPickup { get; private set; }"}</code> | The one real pickup shown in the dock, standing in for the whole stack. Null when empty. |
+| <Link id="m-hasdockedpickup" /><code>{"bool HasDockedPickup { get; }"}</code> | True if there is a docked pickup that is not being destroyed. |
+| <Link id="m-hovercount-2" /><code>{"int HoverCount { get; set; }"}</code> | How many hands are hovering over the dock. Drives the hover scale animation and raises `HoverCountChanged`. |
+| <Link id="m-isownedbyplayer" /><code>{"bool IsOwnedByPlayer { get; protected set; }"}</code> | True for docks on a player body (backpack, belt and so on). Set when the player controller initialises. |
+| <Link id="m-maxquantitycurrentlypossible" /><code>{"int MaxQuantityCurrentlyPossible { get; }"}</code> | Most the dock can hold right now: the docked item's stack size times the max stacks setting, or unlimited when empty or uncapped. |
+| <Link id="m-overridepositioning" /><code><Link to="/game-api/types/alta-items/dockpositioning">{"DockPositioning"}</Link>{" OverridePositioning { get; set; }"}</code> | Optional callback that replaces the default docked position, rotation and scale. |
+| <Link id="m-pickuprange-2" /><code>{"Collider PickupRange { get; }"}</code> | Collider for the area where pickups can be dropped into the dock. Disabled on headless servers. |
+| <Link id="m-playercontroller" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; protected set; }"}</code> | The player that owns this dock, if `IsOwnedByPlayer`. |
+| <Link id="m-quantitystored-2" /><code>{"int QuantityStored { get; set; }"}</code> | How many items are in the stack. Setting it clamps at zero and runs `OnQuantityChanged`. Only the server's value is authoritative. |
+| <Link id="m-settings-2" /><code><Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" Settings { get; }"}</code> | The `PickupDockSettings` asset with this dock's rules (what it accepts, stacking, sizes, haptics, sounds). |
+| <Link id="m-snappoint-2" /><code>{"Transform SnapPoint { get; }"}</code> | Transform docked pickups are parented to. |
+| <Link id="m-syncquantity" /><code><Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" SyncQuantity { get; private set; }"}</code> | The network sync that sends the stored count to clients. |
+| <Link id="m-totalweight" /><code>{"float TotalWeight { get; }"}</code> | Weight of the docked pickup times the stored count. |
 | <Link id="m-alta-crafting-iblockgenericdecrafting-candecraft" /><code>{"private bool Alta.Crafting.IBlockGenericDecrafting.CanDecraft { get; }"}</code> |  |
 | <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |  |
 
@@ -72,52 +74,52 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dockfilter" /><code>{"event "}<Link to="/game-api/types/alta-items/dockfilter">{"DockFilter"}</Link>{" "}<Link to="/game-api/types/alta-items/dockfilter">{"DockFilter"}</Link></code> |  |
-| <Link id="m-hovercountchanged" /><code>{"event "}<Link to="/game-api/types/alta-items/pickupdockhoverhandler">{"PickupDockHoverHandler"}</Link>{" HoverCountChanged"}</code> |  |
-| <Link id="m-itemdocked" /><code>{"event "}<Link to="/game-api/types/alta-items/pickupdockinteractionhandler">{"PickupDockInteractionHandler"}</Link>{" ItemDocked"}</code> |  |
-| <Link id="m-itemundocked" /><code>{"event "}<Link to="/game-api/types/alta-items/pickupdockinteractionhandler">{"PickupDockInteractionHandler"}</Link>{" ItemUndocked"}</code> |  |
-| <Link id="m-onsubdocked" /><code>{"event "}<Link to="/game-api/types/alta-items/subdockhandler">{"SubDockHandler"}</Link>{" OnSubDocked"}</code> |  |
-| <Link id="m-onsubundocked" /><code>{"event "}<Link to="/game-api/types/alta-items/subdockhandler">{"SubDockHandler"}</Link>{" OnSubUndocked"}</code> |  |
-| <Link id="m-preitemdocked" /><code>{"event "}<Link to="/game-api/types/alta-items/pickupdockinteractionhandler">{"PickupDockInteractionHandler"}</Link>{" PreItemDocked"}</code> |  |
-| <Link id="m-quantitychanged" /><code>{"event "}<Link to="/game-api/types/alta-items/quantitychangehandler">{"QuantityChangeHandler"}</Link>{" QuantityChanged"}</code> |  |
-| <Link id="m-updatecontent" /><code>{"event Action UpdateContent"}</code> |  |
-| <Link id="m-updatedplayerownership" /><code>{"event "}<Link to="/game-api/types/alta-items/pickupdockhandler">{"PickupDockHandler"}</Link>{" UpdatedPlayerOwnership"}</code> |  |
-| <Link id="m-weightchanged" /><code>{"event Action WeightChanged"}</code> |  |
+| <Link id="m-dockfilter" /><code>{"event "}<Link to="/game-api/types/alta-items/dockfilter">{"DockFilter"}</Link>{" "}<Link to="/game-api/types/alta-items/dockfilter">{"DockFilter"}</Link></code> | Event for extra rules. Handlers can set the result to false to refuse a pickup, giving `FilterFail`. |
+| <Link id="m-hovercountchanged" /><code>{"event "}<Link to="/game-api/types/alta-items/pickupdockhoverhandler">{"PickupDockHoverHandler"}</Link>{" HoverCountChanged"}</code> | Raised when `HoverCount` changes, with the old count. |
+| <Link id="m-itemdocked" /><code>{"event "}<Link to="/game-api/types/alta-items/pickupdockinteractionhandler">{"PickupDockInteractionHandler"}</Link>{" ItemDocked"}</code> | Raised after a pickup is docked. |
+| <Link id="m-itemundocked" /><code>{"event "}<Link to="/game-api/types/alta-items/pickupdockinteractionhandler">{"PickupDockInteractionHandler"}</Link>{" ItemUndocked"}</code> | Raised after a pickup is undocked. |
+| <Link id="m-onsubdocked" /><code>{"event "}<Link to="/game-api/types/alta-items/subdockhandler">{"SubDockHandler"}</Link>{" OnSubDocked"}</code> | Raised when something docks into a dock on the pickup this dock belongs to. |
+| <Link id="m-onsubundocked" /><code>{"event "}<Link to="/game-api/types/alta-items/subdockhandler">{"SubDockHandler"}</Link>{" OnSubUndocked"}</code> | Raised when something undocks from a dock on the pickup this dock belongs to. |
+| <Link id="m-preitemdocked" /><code>{"event "}<Link to="/game-api/types/alta-items/pickupdockinteractionhandler">{"PickupDockInteractionHandler"}</Link>{" PreItemDocked"}</code> | Raised during docking, after the pickup is parented to the snap point but before it is counted. |
+| <Link id="m-quantitychanged" /><code>{"event "}<Link to="/game-api/types/alta-items/quantitychangehandler">{"QuantityChangeHandler"}</Link>{" QuantityChanged"}</code> | Raised after the stored count changes and the text updates. |
+| <Link id="m-updatecontent" /><code>{"event Action UpdateContent"}</code> | Raised by `UpdateChangedContent`. |
+| <Link id="m-updatedplayerownership" /><code>{"event "}<Link to="/game-api/types/alta-items/pickupdockhandler">{"PickupDockHandler"}</Link>{" UpdatedPlayerOwnership"}</code> | Raised when the dock is linked to its owning player. |
+| <Link id="m-weightchanged" /><code>{"event Action WeightChanged"}</code> | Raised when the docked weight changes (docking, undocking, or the docked pickup's weight changing). |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-assessscore" /><code>{"override bool AssessScore("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out float score)"}</code> |  |
-| <Link id="m-canaccept" /><code>{"bool CanAccept("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-canacceptuntyped" /><code>{"bool CanAcceptUntyped("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-candockamount" /><code>{"bool CanDockAmount(int amount)"}</code> |  |
-| <Link id="m-checkallowed" /><code><Link to="/game-api/types/alta-items/pickupdock-allowedresult">{"PickupDock.AllowedResult"}</Link>{" CheckAllowed("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-checkallowed-2" /><code><Link to="/game-api/types/alta-items/pickupdock-allowedresult">{"PickupDock.AllowedResult"}</Link>{" CheckAllowed("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int quantity, out "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" finalDock)"}</code> |  |
-| <Link id="m-checkallowed-3" /><code><Link to="/game-api/types/alta-items/pickupdock-allowedresult">{"PickupDock.AllowedResult"}</Link>{" CheckAllowed("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> |  |
-| <Link id="m-checkforward" /><code>{"override "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" CheckForward("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out bool isForced)"}</code> |  |
-| <Link id="m-cleardocked" /><code>{"void ClearDocked()"}</code> |  |
-| <Link id="m-destroyamount" /><code>{"void DestroyAmount(int count)"}</code> |  |
-| <Link id="m-destroyamounttoempty" /><code>{"void DestroyAmountToEmpty()"}</code> |  |
-| <Link id="m-destroypickupifstackedindock" /><code>{"bool DestroyPickupIfStackedInDock("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-getpositioning" /><code>{"void GetPositioning("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, bool isScaling, out Vector3 position, out Quaternion rotation, out Vector3 scale)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-isscaling" /><code>{"bool IsScaling("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-movetodock" /><code>{"static IEnumerator MoveToDock("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, Transform target, "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup = null, bool isScaling = true, bool isScaleInstant = true) (iterator)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-onquantitychanged" /><code>{"void OnQuantityChanged()"}</code> |  |
-| <Link id="m-triggerhaptic" /><code>{"void TriggerHaptic("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |  |
-| <Link id="m-triggerhoverhaptic" /><code>{"void TriggerHoverHaptic("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |  |
-| <Link id="m-undockall" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" UndockAll("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor = null, Transform target = null)"}</code> |  |
-| <Link id="m-undockallunityevent" /><code>{"void UndockAllUnityEvent()"}</code> |  |
-| <Link id="m-undockmaximum" /><code>{"bool UndockMaximum(out "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int max = 2147483647)"}</code> |  |
-| <Link id="m-undockquantity" /><code>{"bool UndockQuantity(int quantity, out "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-undockto" /><code>{"void UndockTo(Transform target)"}</code> |  |
-| <Link id="m-undockunlimitedpouches" /><code>{"bool UndockUnlimitedPouches(int quantity, out List<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> pickups)"}</code> |  |
-| <Link id="m-updatechangedcontent" /><code>{"void UpdateChangedContent()"}</code> |  |
-| <Link id="m-updatequantitystoredtext" /><code>{"void UpdateQuantityStoredText()"}</code> |  |
+| <Link id="m-assessscore" /><code>{"override bool AssessScore("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out float score)"}</code> | Hand scoring for grabbing from the dock. A local hand without a hard grab is refused; otherwise the base score times ten. |
+| <Link id="m-canaccept" /><code>{"bool CanAccept("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | True if the pickup is the same item type as what is docked and passes the transient check. |
+| <Link id="m-canacceptuntyped" /><code>{"bool CanAcceptUntyped("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | True unless the pickup is transient and the dock's settings refuse transient pickups. |
+| <Link id="m-candockamount" /><code>{"bool CanDockAmount(int amount)"}</code> | Whether adding that many would stay within `MaxQuantityCurrentlyPossible`. |
+| <Link id="m-checkallowed" /><code><Link to="/game-api/types/alta-items/pickupdock-allowedresult">{"PickupDock.AllowedResult"}</Link>{" CheckAllowed("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Checks if a pickup or item may go in this dock and returns an `AllowedResult` reason. Covers pouches, filters, tags, crafting size and sub docks. |
+| <Link id="m-checkallowed-2" /><code><Link to="/game-api/types/alta-items/pickupdock-allowedresult">{"PickupDock.AllowedResult"}</Link>{" CheckAllowed("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int quantity, out "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" finalDock)"}</code> | Checks if a pickup or item may go in this dock and returns an `AllowedResult` reason. Covers pouches, filters, tags, crafting size and sub docks. |
+| <Link id="m-checkallowed-3" /><code><Link to="/game-api/types/alta-items/pickupdock-allowedresult">{"PickupDock.AllowedResult"}</Link>{" CheckAllowed("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> | Checks if a pickup or item may go in this dock and returns an `AllowedResult` reason. Covers pouches, filters, tags, crafting size and sub docks. |
+| <Link id="m-checkforward" /><code>{"override "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" CheckForward("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out bool isForced)"}</code> | Grabbing the dock forwards to the docked pickup. A dock owned by a player refuses other players. |
+| <Link id="m-cleardocked" /><code>{"void ClearDocked()"}</code> | Forgets the docked pickup without undocking it or changing the count. |
+| <Link id="m-destroyamount" /><code>{"void DestroyAmount(int count)"}</code> | Server: removes that many from the stack, destroying the docked pickup if the count runs out. |
+| <Link id="m-destroyamounttoempty" /><code>{"void DestroyAmountToEmpty()"}</code> | Server: destroys the whole stored stack. |
+| <Link id="m-destroypickupifstackedindock" /><code>{"bool DestroyPickupIfStackedInDock("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Server: destroys a pickup that was stacked into this dock (count above one and not the docked pickup). Returns true if it did. |
+| <Link id="m-getpositioning" /><code>{"void GetPositioning("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, bool isScaling, out Vector3 position, out Quaternion rotation, out Vector3 scale)"}</code> | Works out the local position, rotation and scale a pickup should have in the dock, using `OverridePositioning` if set and the item's positioning otherwise. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Creates the quantity sync, hooks cleanup when the parent is destroyed and forwards sub dock events from the parent pickup. |
+| <Link id="m-isscaling" /><code>{"bool IsScaling("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Whether a pickup shrinks when docked here, based on the settings' scaling tags. |
+| <Link id="m-movetodock" /><code>{"static IEnumerator MoveToDock("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, Transform target, "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup = null, bool isScaling = true, bool isScaleInstant = true) (iterator)"}</code> | Coroutine that moves a transform smoothly to its docked position, rotation and scale. Stops if it gets undocked meanwhile. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the stored count to a player who just loaded the dock. |
+| <Link id="m-onquantitychanged" /><code>{"void OnQuantityChanged()"}</code> | Updates the contents colliders and count text, raises `QuantityChanged`, and on the server syncs the count to the chunk. |
+| <Link id="m-triggerhaptic" /><code>{"void TriggerHaptic("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Client: plays the pass-through haptic on a controller, unless toggle-holding haptics are off. |
+| <Link id="m-triggerhoverhaptic" /><code>{"void TriggerHoverHaptic("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Client: plays the hover haptic on a controller if the settings have one. |
+| <Link id="m-undockall" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" UndockAll("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor = null, Transform target = null)"}</code> | Takes everything out. One item comes out as itself; on the server more than one is moved into a new pouch, which is returned. |
+| <Link id="m-undockallunityevent" /><code>{"void UndockAllUnityEvent()"}</code> | `UndockAll` with no arguments, for wiring from Unity events. |
+| <Link id="m-undockmaximum" /><code>{"bool UndockMaximum(out "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int max = 2147483647)"}</code> | Takes out as much as one stack allows (up to the given max) via `UndockQuantity`. |
+| <Link id="m-undockquantity" /><code>{"bool UndockQuantity(int quantity, out "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Takes out that many. One comes out as the docked pickup itself; more are moved into a new pouch. |
+| <Link id="m-undockto" /><code>{"void UndockTo(Transform target)"}</code> | Server: undocks everything to the given transform and forces a position sync. |
+| <Link id="m-undockunlimitedpouches" /><code>{"bool UndockUnlimitedPouches(int quantity, out List<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> pickups)"}</code> | Splits that quantity into as many pickups or pouches as needed, one stack each. False if there isn't enough. |
+| <Link id="m-updatechangedcontent" /><code>{"void UpdateChangedContent()"}</code> | Re-places the docked pickup, refreshes the count text and raises `UpdateContent`. |
+| <Link id="m-updatequantitystoredtext" /><code>{"void UpdateQuantityStoredText()"}</code> | Client: refreshes the count shown on the dock, hiding it for empty, non-stackable or unique crafted items. |
 | <Link id="m-addsoundlisteners" /><code>{"private void AddSoundListeners()"}</code> |  |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Clears a stored count that has no item, sets up the hover scale animation and turns off the pickup range collider on a headless server. |
 | <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |  |
 | <Link id="m-changepickupssavemode" /><code>{"private void ChangePickupsSaveMode("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, bool isSavingNormaly)"}</code> |  |
 | <Link id="m-checkcraftingflip" /><code>{"private static Quaternion CheckCraftingFlip("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, Quaternion rotation)"}</code> |  |
@@ -140,7 +142,7 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 | <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
 | <Link id="m-ondocked" /><code>{"private void OnDocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
 | <Link id="m-onundocked" /><code>{"private void OnUndocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Defaults the snap point to the dock's own transform. |
 | <Link id="m-onweightchanged" /><code>{"private void OnWeightChanged()"}</code> |  |
 | <Link id="m-removesoundlisteners" /><code>{"private void RemoveSoundListeners()"}</code> |  |
 | <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |

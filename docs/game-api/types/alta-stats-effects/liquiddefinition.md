@@ -1,6 +1,6 @@
 ---
 title: "LiquidDefinition"
-description: "HashedGeneralValue<LiquidDefinition> asset under Cooking/Liquids: a named liquid (water, a potion). LiquidData Data, LiquidContent GetAsLiquidContent("
+description: "A hashed asset for a liquid used in cooking, under Cooking/Liquids."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Liquid`.
 
-`HashedGeneralValue<LiquidDefinition>` asset under `Cooking/Liquids`: a named liquid (water, a potion). `LiquidData Data`, `LiquidContent GetAsLiquidContent()` (cached).
+A hashed asset for a liquid used in cooking, under `Cooking/Liquids`.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`HashedGeneralValue<LiquidDefinition>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -37,13 +37,13 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data-2" /><code><Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" Data { get; }"}</code> |  |
+| <Link id="m-data-2" /><code><Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" Data { get; }"}</code> | The liquid's data. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getasliquidcontent" /><code><Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" GetAsLiquidContent()"}</code> |  |
+| <Link id="m-getasliquidcontent" /><code><Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" GetAsLiquidContent()"}</code> | This liquid as liquid content, made once and then reused. Don't change the returned object. |
 
 ## Used in
 

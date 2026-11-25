@@ -1,6 +1,6 @@
 ---
 title: "HandSettings"
-description: "class HandSettings in Root.Township."
+description: "Settings asset for player hands, read by Hand from the player controller's settings."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Settings asset for player hands, read by `Hand` from the player controller's settings.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `ScriptableObject`
@@ -37,11 +39,11 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-armlength-2" /><code>{"float ArmLength { get; }"}</code> |  |
-| <Link id="m-isalwaysrenderingpickupatikhand-2" /><code>{"bool IsAlwaysRenderingPickupAtIKHand { get; }"}</code> |  |
-| <Link id="m-isdebugging-2" /><code>{"bool IsDebugging { get; }"}</code> |  |
-| <Link id="m-isfixingikhandtopickups-2" /><code>{"bool IsFixingIKHandToPickups { get; }"}</code> |  |
-| <Link id="m-ismovingcenterofmasstogrippoint-2" /><code>{"bool IsMovingCenterOfMassToGripPoint { get; }"}</code> |  |
+| <Link id="m-armlength-2" /><code>{"float ArmLength { get; }"}</code> | Arm length (default 0.3). Limits how far a held item's joint target can be from the shoulder. |
+| <Link id="m-isalwaysrenderingpickupatikhand-2" /><code>{"bool IsAlwaysRenderingPickupAtIKHand { get; }"}</code> | Draws held items at the IK hand. |
+| <Link id="m-isdebugging-2" /><code>{"bool IsDebugging { get; }"}</code> | Debug flag. |
+| <Link id="m-isfixingikhandtopickups-2" /><code>{"bool IsFixingIKHandToPickups { get; }"}</code> | Fixes the IK hand to held items. |
+| <Link id="m-ismovingcenterofmasstogrippoint-2" /><code>{"bool IsMovingCenterOfMassToGripPoint { get; }"}</code> | Moves a held item's centre of mass to the grip point. |
 
 ## Used in
 

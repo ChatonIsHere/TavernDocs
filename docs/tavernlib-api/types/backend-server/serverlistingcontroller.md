@@ -1,6 +1,6 @@
 ---
 title: "ServerListingController"
-description: "A class in TavernLib, TavernLib.Backend.Server."
+description: "Sends the server to the Community Servers listing every 3 seconds from a background loop, backing off after failures, and removes it when the game quits."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.Server`.
 
-A **class** in `TavernLib`, `TavernLib.Backend.Server`.
+Sends the server to the Community Servers listing every 3 seconds from a background loop, backing off after failures, and removes it when the game quits. Server; `TavernManager` makes one when `community_listed` is on at start.
 
 - **Listed in** [TavernLib.Backend.Server](/tavernlib-api/types/backend-server)
 - **Documented in** [ServerListingController](/tavernlib-api/types/backend-server/serverlistingcontroller), [Internals](/tavernlib-api/internals)
@@ -37,10 +37,10 @@ A **class** in `TavernLib`, `TavernLib.Backend.Server`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-closelisting" /><code>{"void CloseListing()"}</code> |  |
-| <Link id="m-openlisting" /><code>{"async Task OpenListing()"}</code> |  |
-| <Link id="m-ping" /><code>{"async Task Ping()"}</code> |  |
-| <Link id="m-startclosinglisting" /><code>{"bool StartClosingListing()"}</code> |  |
+| <Link id="m-closelisting" /><code>{"void CloseListing()"}</code> | Sends the listing a remove request with the listing token and stops the loop. Waits up to two seconds for it. |
+| <Link id="m-openlisting" /><code>{"async Task OpenListing()"}</code> | Sends one heartbeat now, the same as `Ping`. |
+| <Link id="m-ping" /><code>{"async Task Ping()"}</code> | Sends one heartbeat now. Throws `HttpRequestException` with the listing's answer if it isn't accepted. |
+| <Link id="m-startclosinglisting" /><code>{"bool StartClosingListing()"}</code> | The `Application.wantsToQuit` handler: closes the listing and returns true so the quit goes on. |
 | <Link id="m-heartbeatasync" /><code>{"private async Task HeartbeatAsync()"}</code> |  |
 | <Link id="m-jsonbody" /><code>{"private static StringContent JsonBody(object payload)"}</code> |  |
 | <Link id="m-post" /><code>{"private async Task<string> Post()"}</code> |  |

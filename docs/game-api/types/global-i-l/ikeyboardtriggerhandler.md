@@ -1,6 +1,6 @@
 ---
 title: "IKeyBoardTriggerHandler"
-description: "interface IKeyBoardTriggerHandler in Root.Township."
+description: "An empty marker interface."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IKeyBoardTriggerHandler
 
 An **interface** in `Root.Township`, no namespace.
+
+An empty marker interface.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`KeyboardEventTriggers.KeyBoardTriggerHandler`](/game-api/types/global-i-l/keyboardeventtriggers-keyboardtriggerhandler)

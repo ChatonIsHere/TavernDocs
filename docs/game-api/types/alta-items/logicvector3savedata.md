@@ -1,6 +1,6 @@
 ---
 title: "LogicVector3SaveData"
-description: "class LogicVector3SaveData in Root.Township."
+description: "Save data for LogicVector3Sender: the shared logic data and the current vector."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LogicVector3SaveData
 
 A **class** in `Root.Township`, `Alta.Logic`.
+
+Save data for `LogicVector3Sender`: the shared logic data and the current vector.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`NewSaveData<LogicVector3Sender, LogicVector3SaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata), [`ILogicValueData`](/game-api/types/alta-items/ilogicvaluedata)
@@ -27,14 +29,14 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logicdata" /><code><Link to="/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> |  |
-| <Link id="m-value" /><code>{"Vector3 value"}</code> |  |
+| <Link id="m-logicdata" /><code><Link to="/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | Backing field for `LogicSaveData`. |
+| <Link id="m-value" /><code>{"Vector3 value"}</code> | The vector being sent. |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logicsavedata" /><code><Link to="/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> |  |
+| <Link id="m-logicsavedata" /><code><Link to="/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | The shared logic data. |
 
 ## Used in
 

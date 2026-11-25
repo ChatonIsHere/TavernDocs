@@ -1,6 +1,6 @@
 ---
 title: "PlatformLight"
-description: "class PlatformLight in Root.Township."
+description: "A light that registers with a platform lights controller."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlatformLight
 
 A **class** in `Root.Township`, `Alta.Lighting`.
+
+A light that registers with a platform lights controller. On PC it wraps a Unity `Light`; on Android it uses a fake light mesh instead. Enabling and disabling it adds and removes it from the controller.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** `MonoBehaviour`, [`IBuildRendererPostBake`](/game-api/types/assembly-other/ibuildrendererpostbake), [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable)
@@ -26,7 +28,7 @@ A **class** in `Root.Township`, `Alta.Lighting`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lastposition" /><code>{"Vector3 lastPosition"}</code> |  |
+| <Link id="m-lastposition" /><code>{"Vector3 lastPosition"}</code> | Position recorded by the last `GetPosition` call. |
 | <Link id="m-androidmesh" /><code>{"private Mesh androidMesh"}</code> |  |
 | <Link id="m-androidmeshcolor" /><code>{"private Color androidMeshColor"}</code> |  |
 | <Link id="m-color" /><code>{"private Color color"}</code> |  |
@@ -43,23 +45,23 @@ A **class** in `Root.Township`, `Alta.Lighting`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-avoidbake" /><code>{"static bool AvoidBake { get; set; }"}</code> |  |
-| <Link id="m-color-2" /><code>{"Color Color { get; set; }"}</code> |  |
-| <Link id="m-intensity-2" /><code>{"float Intensity { get; set; }"}</code> |  |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; set; }"}</code> |  |
-| <Link id="m-isnotimportant-2" /><code>{"bool IsNotImportant { get; }"}</code> |  |
-| <Link id="m-lightscontroller-2" /><code>{"static "}<Link to="/game-api/types/alta-world/baselightscontroller">{"BaseLightsController"}</Link>{" LightsController { get; }"}</code> |  |
-| <Link id="m-maxlightcount" /><code>{"static int MaxLightCount { get; }"}</code> |  |
-| <Link id="m-range-2" /><code>{"float Range { get; set; }"}</code> |  |
-| <Link id="m-shadows" /><code>{"LightShadows Shadows { get; set; }"}</code> |  |
-| <Link id="m-targetlight-2" /><code>{"Light TargetLight { get; }"}</code> |  |
+| <Link id="m-avoidbake" /><code>{"static bool AvoidBake { get; set; }"}</code> | Static flag read during the build bake. Has no effect in this code. |
+| <Link id="m-color-2" /><code>{"Color Color { get; set; }"}</code> | Colour of the Unity light. |
+| <Link id="m-intensity-2" /><code>{"float Intensity { get; set; }"}</code> | Intensity of the Unity light. |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; set; }"}</code> | Set by the lights controller, probably to say whether the light is currently in use. |
+| <Link id="m-isnotimportant-2" /><code>{"bool IsNotImportant { get; }"}</code> | If true, it is a low priority pixel light on PC and does not count against darkness on Android. |
+| <Link id="m-lightscontroller-2" /><code>{"static "}<Link to="/game-api/types/alta-world/baselightscontroller">{"BaseLightsController"}</Link>{" LightsController { get; }"}</code> | The shared controller for the platform: Android or PC. Made on first use. |
+| <Link id="m-maxlightcount" /><code>{"static int MaxLightCount { get; }"}</code> | Pixel light budget from quality settings, minus one. |
+| <Link id="m-range-2" /><code>{"float Range { get; set; }"}</code> | Range of the Unity light. |
+| <Link id="m-shadows" /><code>{"LightShadows Shadows { get; set; }"}</code> | Shadow mode of the Unity light. |
+| <Link id="m-targetlight-2" /><code>{"Light TargetLight { get; }"}</code> | The Unity `Light` on this object. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getposition" /><code>{"Vector3 GetPosition()"}</code> |  |
-| <Link id="m-setenablefakelight" /><code>{"void SetEnableFakeLight(bool isEnabled)"}</code> |  |
+| <Link id="m-getposition" /><code>{"Vector3 GetPosition()"}</code> | Returns the current position and stores it in `lastPosition`. |
+| <Link id="m-setenablefakelight" /><code>{"void SetEnableFakeLight(bool isEnabled)"}</code> | Shows or hides the Android fake light mesh, if there is one. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
 | <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |

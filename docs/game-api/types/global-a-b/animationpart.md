@@ -1,6 +1,6 @@
 ---
 title: "AnimationPart"
-description: "class AnimationPart in Root.Township."
+description: "One moving piece in a building animation: it slides in from an offset to its final transform, with optional sound and effect overrides."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AnimationPart
 
 A **class** in `Root.Township`, no namespace.
+
+One moving piece in a building animation: it slides in from an offset to its final transform, with optional sound and effect overrides.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 
@@ -37,24 +39,24 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distance-2" /><code>{"float Distance { get; set; }"}</code> |  |
-| <Link id="m-finalposition" /><code>{"Vector3 FinalPosition { get; private set; }"}</code> |  |
-| <Link id="m-finalrotation" /><code>{"Quaternion FinalRotation { get; private set; }"}</code> |  |
-| <Link id="m-finalscale" /><code>{"Vector3 FinalScale { get; private set; }"}</code> |  |
-| <Link id="m-movedirection-2" /><code>{"Vector3 MoveDirection { get; set; }"}</code> |  |
-| <Link id="m-overrideeffectonappear-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" OverrideEffectOnAppear { get; set; }"}</code> |  |
-| <Link id="m-overrideeffectonposition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" OverrideEffectOnPosition { get; set; }"}</code> |  |
-| <Link id="m-overridesoundonappear-2" /><code><Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" OverrideSoundOnAppear { get; set; }"}</code> |  |
-| <Link id="m-overridesoundonposition-2" /><code><Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" OverrideSoundOnPosition { get; set; }"}</code> |  |
-| <Link id="m-repairboxscale-2" /><code>{"float RepairBoxScale { get; set; }"}</code> |  |
-| <Link id="m-startposition" /><code>{"Vector3 StartPosition { get; private set; }"}</code> |  |
-| <Link id="m-transform-2" /><code>{"Transform Transform { get; }"}</code> |  |
+| <Link id="m-distance-2" /><code>{"float Distance { get; set; }"}</code> | How far away the piece starts. |
+| <Link id="m-finalposition" /><code>{"Vector3 FinalPosition { get; private set; }"}</code> | World position the piece ends at. |
+| <Link id="m-finalrotation" /><code>{"Quaternion FinalRotation { get; private set; }"}</code> | World rotation the piece ends at. |
+| <Link id="m-finalscale" /><code>{"Vector3 FinalScale { get; private set; }"}</code> | Local scale the piece ends at. |
+| <Link id="m-movedirection-2" /><code>{"Vector3 MoveDirection { get; set; }"}</code> | Local direction the piece comes in from. |
+| <Link id="m-overrideeffectonappear-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" OverrideEffectOnAppear { get; set; }"}</code> | Effect to spawn when the piece appears instead of the default. |
+| <Link id="m-overrideeffectonposition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" OverrideEffectOnPosition { get; set; }"}</code> | Effect to spawn when the piece reaches its place instead of the default. |
+| <Link id="m-overridesoundonappear-2" /><code><Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" OverrideSoundOnAppear { get; set; }"}</code> | Sound to play when the piece appears instead of the default. |
+| <Link id="m-overridesoundonposition-2" /><code><Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" OverrideSoundOnPosition { get; set; }"}</code> | Sound to play when the piece reaches its place instead of the default. |
+| <Link id="m-repairboxscale-2" /><code>{"float RepairBoxScale { get; set; }"}</code> | Scale of the piece shown in a repair box, as a fraction of its final scale. |
+| <Link id="m-startposition" /><code>{"Vector3 StartPosition { get; private set; }"}</code> | Where the piece starts: final position plus the move direction times the distance. |
+| <Link id="m-transform-2" /><code>{"Transform Transform { get; }"}</code> | The piece being animated. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-recalculatepositions" /><code>{"void RecalculatePositions()"}</code> |  |
+| <Link id="m-recalculatepositions" /><code>{"void RecalculatePositions()"}</code> | Takes the transform's current pose as final and works out the start position. |
 
 ## Used in
 

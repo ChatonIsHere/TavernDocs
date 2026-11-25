@@ -1,6 +1,6 @@
 ---
 title: "ViewConeSense"
-description: "How far inside the creature's ViewCone the target is. Only for creatures with IHasViewCone (turabada, gotera, babu, dragonfly, phantom)."
+description: "How far inside the creature's ViewCone the target is."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

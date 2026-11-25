@@ -1,6 +1,6 @@
 ---
 title: "CustomArgumentGameAction<T>"
-description: "abstract class CustomArgumentGameAction<T> in Root.Township."
+description: "Base for a game task action that only checks one kind of task argument."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CustomArgumentGameAction&lt;T&gt;
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for a game task action that only checks one kind of task argument.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`GameAction`](/game-api/types/global-e-h/gameaction)
@@ -26,5 +28,5 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"override bool IsValid("}<Link to="/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> |  |
-| <Link id="m-isvalid-2" /><code>{"protected abstract bool IsValid(T argument)"}</code> |  |
+| <Link id="m-isvalid" /><code>{"override bool IsValid("}<Link to="/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> | Casts the argument to the expected type (null if it's another type) and checks it. |
+| <Link id="m-isvalid-2" /><code>{"protected abstract bool IsValid(T argument)"}</code> | Casts the argument to the expected type (null if it's another type) and checks it. |

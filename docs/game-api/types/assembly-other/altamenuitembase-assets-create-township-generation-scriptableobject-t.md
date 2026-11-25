@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<T>"
-description: "abstract class AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<T> in Alta.MenuItem."
+description: "Editor menu helper: nest a Create class deriving from this inside a ScriptableObject type to add an Assets/Create/Township/Generation menu entry for it..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject&lt;T&gt;
 
 An **abstract class** in `Alta.MenuItem`, no namespace.
+
+Editor menu helper: nest a `Create` class deriving from this inside a ScriptableObject type to add an `Assets/Create/Township/Generation` menu entry for it (used by generation assets such as `BiomeAttribute`). Editor only, does nothing at runtime.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`AltaMenuItemBase.Assets.Create.Township.Generation`](/game-api/types/assembly-other/altamenuitembase-assets-create-township-generation)

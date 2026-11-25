@@ -1,6 +1,6 @@
 ---
 title: "SelectFixPatch.FindObjects"
-description: "A delegate in TavernLib, TavernLib.Patches."
+description: "The delegate for the original SelectionCommandModule.FindObjects, handed to SelectionFix by the hook."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **delegate** in `TavernLib`, `TavernLib.Patches`.
 
-A **delegate** in `TavernLib`, `TavernLib.Patches`.
+The delegate for the original `SelectionCommandModule.FindObjects`, handed to `SelectionFix` by the hook.
 
 - **Listed in** [TavernLib.Patches](/tavernlib-api/types/patches)
 - **Nested in** [`SelectFixPatch`](/tavernlib-api/types/patches/selectfixpatch)
@@ -29,9 +29,9 @@ A **delegate** in `TavernLib`, `TavernLib.Patches`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, float distance, AsyncCallback callback, object object)"}</code> |  |
-| <Link id="m-endinvoke" /><code>{"virtual IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> EndInvoke(IAsyncResult result)"}</code> |  |
-| <Link id="m-invoke" /><code>{"virtual IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> Invoke("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, float distance = 10)"}</code> |  |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, float distance, AsyncCallback callback, object object)"}</code> | Standard delegate method that starts an asynchronous call. |
+| <Link id="m-endinvoke" /><code>{"virtual IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> EndInvoke(IAsyncResult result)"}</code> | Standard delegate method that finishes an asynchronous call. |
+| <Link id="m-invoke" /><code>{"virtual IEnumerable<"}<Link to="/game-api/types/alta-console/networkentityinfo">{"NetworkEntityInfo"}</Link>{"> Invoke("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, float distance = 10)"}</code> | Calls the original `FindObjects`. |
 
 ## Used in
 

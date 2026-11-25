@@ -1,6 +1,6 @@
 ---
 title: "WebSocketCommandHandler.ResponseData"
-description: "class WebSocketCommandHandler.ResponseData in Root.Township."
+description: "One message sent to a remote console client over the WebSocket: a system message, subscription event or command result, serialized to JSON."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WebSocketCommandHandler.ResponseData
 
 A **class** in `Root.Township`, `Alta.Console`.
+
+One message sent to a remote console client over the WebSocket: a system message, subscription event or command result, serialized to JSON.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`WebSocketCommandHandler`](/game-api/types/alta-console/websocketcommandhandler)
@@ -25,18 +27,18 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-commandid" /><code>{"uint? commandId"}</code> |  |
-| <Link id="m-data" /><code>{"object data"}</code> |  |
-| <Link id="m-eventtype" /><code>{"string eventType"}</code> |  |
-| <Link id="m-timestamp" /><code>{"DateTime timeStamp"}</code> |  |
-| <Link id="m-type" /><code><Link to="/game-api/types/alta-console/websocketcommandhandler-responsetype">{"WebSocketCommandHandler.ResponseType"}</Link>{" type"}</code> |  |
+| <Link id="m-commandid" /><code>{"uint? commandId"}</code> | The request ID this answers, for command results. Null otherwise. |
+| <Link id="m-data" /><code>{"object data"}</code> | The payload, such as the command result or event data. |
+| <Link id="m-eventtype" /><code>{"string eventType"}</code> | The subscription event name, or the log type for system messages. |
+| <Link id="m-timestamp" /><code>{"DateTime timeStamp"}</code> | UTC time the message was created. |
+| <Link id="m-type" /><code><Link to="/game-api/types/alta-console/websocketcommandhandler-responsetype">{"WebSocketCommandHandler.ResponseType"}</Link>{" type"}</code> | Whether this is a system message, subscription event or command result. |
 | <Link id="m-serialized" /><code>{"private string serialized"}</code> |  |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getserialized" /><code>{"string GetSerialized()"}</code> |  |
+| <Link id="m-getserialized" /><code>{"string GetSerialized()"}</code> | Returns the JSON for this message, serialized once and cached. |
 
 ## Used in
 

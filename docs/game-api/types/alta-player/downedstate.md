@@ -1,6 +1,6 @@
 ---
 title: "DownedState"
-description: "class DownedState in Root.Township."
+description: "The player state between being knocked down and dying, used when the server's downed state duration is above 0."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DownedState
 
 A **class** in `Root.Township`, `Alta.PlayerStates`.
+
+The player state between being knocked down and dying, used when the server's downed state duration is above 0. The server spawns a gravestone and runs a revive activity and a countdown to death; the downed player gets a respawn orb.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`PlayerStateBase<PlayingState>`](/game-api/types/alta-player/playerstatebase-t)
@@ -51,16 +53,16 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-killingimpact" /><code><Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" KillingImpact { get; set; }"}</code> |  |
-| <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> |  |
-| <Link id="m-settings" /><code><Link to="/game-api/types/game-other-namespaces/downedstatesettings">{"DownedStateSettings"}</Link>{" Settings { get; }"}</code> |  |
-| <Link id="m-statetype" /><code>{"override "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> |  |
+| <Link id="m-killingimpact" /><code><Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" KillingImpact { get; set; }"}</code> | The damage that downed the player. |
+| <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> | "Downed State". |
+| <Link id="m-settings" /><code><Link to="/game-api/types/game-other-namespaces/downedstatesettings">{"DownedStateSettings"}</Link>{" Settings { get; }"}</code> | The downed state settings: timers, effects, gravestone, orbs, health returned and debuffs. |
+| <Link id="m-statetype" /><code>{"override "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> | `PlayerStateType.Downed`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-forcedeactivateactions" /><code>{"void ForceDeactivateActions()"}</code> |  |
+| <Link id="m-forcedeactivateactions" /><code>{"void ForceDeactivateActions()"}</code> | Runs the server leave logic straight away (gravestone, held items, health and debuffs). |
 | <Link id="m-applyrespawndebuffs" /><code>{"private void ApplyRespawnDebuffs()"}</code> |  |
 | <Link id="m-calculatespawnposition" /><code>{"private void CalculateSpawnPosition()"}</code> |  |
 | <Link id="m-canplaypooledparticleeffect" /><code>{"private bool CanPlayPooledParticleEffect("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" pooledObjectDefinition)"}</code> |  |
@@ -78,13 +80,13 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 | <Link id="m-isholdinglocalentity" /><code>{"private bool IsHoldingLocalEntity("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
 | <Link id="m-loadinteractables" /><code>{"private void LoadInteractables()"}</code> |  |
 | <Link id="m-loadinteractablesonstateexit" /><code>{"private void LoadInteractablesOnStateExit()"}</code> |  |
-| <Link id="m-onactivate" /><code>{"protected override void OnActivate()"}</code> |  |
+| <Link id="m-onactivate" /><code>{"protected override void OnActivate()"}</code> | Server: stores held items, spawns the gravestone and starts the revive countdown. If the downed duration is 0 the player dies at once. |
 | <Link id="m-onactivateactions" /><code>{"private void OnActivateActions()"}</code> |  |
-| <Link id="m-onactivateremote" /><code>{"protected override void OnActivateRemote(bool isPlayerCharacterSpawned)"}</code> |  |
+| <Link id="m-onactivateremote" /><code>{"protected override void OnActivateRemote(bool isPlayerCharacterSpawned)"}</code> | Clients: hides the body and docks and limits the hands to downed interactions. The downed player always sees ghost hands. |
 | <Link id="m-onactivateremoteactions" /><code>{"private void OnActivateRemoteActions()"}</code> |  |
 | <Link id="m-onactivitycompleted" /><code>{"private void OnActivityCompleted()"}</code> |  |
-| <Link id="m-ondeactivate" /><code>{"protected override void OnDeactivate()"}</code> |  |
-| <Link id="m-ondeactivateremote" /><code>{"protected override void OnDeactivateRemote(bool isPlayerCharacterSpawned)"}</code> |  |
+| <Link id="m-ondeactivate" /><code>{"protected override void OnDeactivate()"}</code> | Server: removes the gravestone and revive objects and gives back held items. A revived player gets some health back and respawn debuffs. |
+| <Link id="m-ondeactivateremote" /><code>{"protected override void OnDeactivateRemote(bool isPlayerCharacterSpawned)"}</code> | Clients: shows the body again, restores hand interactions and removes the respawn orb. |
 | <Link id="m-onplayercontrollersetremote" /><code>{"private void OnPlayerControllerSetRemote("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" setPlayerController)"}</code> |  |
 | <Link id="m-onplayercontrollersetserver" /><code>{"private void OnPlayerControllerSetServer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller)"}</code> |  |
 | <Link id="m-playparticleeffectforplayer" /><code>{"private async void PlayParticleEffectForPlayer("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" pooledObjectDefinition)"}</code> |  |

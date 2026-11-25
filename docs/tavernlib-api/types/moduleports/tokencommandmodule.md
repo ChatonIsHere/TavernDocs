@@ -1,6 +1,6 @@
 ---
 title: "TokenCommandModule"
-description: "A static class in TavernLib, TavernLib.ModulePorts."
+description: "TavernLib's token console module for named console tokens: whoami, list, create, edit, revoke, rotate, show and log."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `TavernLib`, `TavernLib.ModulePorts`.
 
-A **static class** in `TavernLib`, `TavernLib.ModulePorts`.
+TavernLib's `token` console module for named console tokens: `whoami`, `list`, `create`, `edit`, `revoke`, `rotate`, `show` and `log`. Server; only the owner token manages tokens.
 
 - **Listed in** [TavernLib.ModulePorts](/tavernlib-api/types/moduleports)
 - **Nested types** [`LogLines`](/tavernlib-api/types/moduleports/tokencommandmodule-loglines), [`TokenInfo`](/tavernlib-api/types/moduleports/tokencommandmodule-tokeninfo), [`TokenList`](/tavernlib-api/types/moduleports/tokencommandmodule-tokenlist)
@@ -23,7 +23,7 @@ A **static class** in `TavernLib`, `TavernLib.ModulePorts`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modulename" /><code>{"const string ModuleName"}</code> |  |
+| <Link id="m-modulename" /><code>{"const string ModuleName"}</code> | The module's name, `token`. Named tokens can never be given anything under it except `token whoami`. |
 | <Link id="m-idalphabet" /><code>{"private const string IdAlphabet"}</code> |  |
 | <Link id="m-maxdays" /><code>{"private const int MaxDays"}</code> |  |
 | <Link id="m-namemaxlength" /><code>{"private const int NameMaxLength"}</code> |  |

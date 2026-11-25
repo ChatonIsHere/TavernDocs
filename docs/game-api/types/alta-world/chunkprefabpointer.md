@@ -1,6 +1,6 @@
 ---
 title: "ChunkPrefabPointer"
-description: "Points at static chunk content loaded through Addressables. The static methods reference count which chunks use each piece and spawn or destroy it a l"
+description: "Points at static chunk content loaded through Addressables."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

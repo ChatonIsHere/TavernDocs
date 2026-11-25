@@ -1,6 +1,6 @@
 ---
 title: "ControllerActionType"
-description: "enum ControllerActionType in Root.Township."
+description: "Every action a hand controller can trigger: interact, grab, teleport, rotate, quick access menu, mute, screenshot, and a set of debug actions."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ControllerActionType
 
 An **enum** in `Root.Township`, no namespace.
+
+Every action a hand controller can trigger: interact, grab, teleport, rotate, quick access menu, mute, screenshot, and a set of debug actions. The numbers are fixed IDs.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 

@@ -1,6 +1,6 @@
 ---
 title: "PathWalker"
-description: "Moves a rigidbody along an A path towards a target transform or position, steering and slowing near the end. Uses the A Pathfinding Seeker on the same"
+description: "Moves a rigidbody along an A path towards a target transform or position, steering and slowing near the end."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

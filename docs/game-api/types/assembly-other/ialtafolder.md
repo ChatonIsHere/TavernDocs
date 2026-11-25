@@ -1,6 +1,6 @@
 ---
 title: "IAltaFolder"
-description: "interface IAltaFolder in Alta.IO."
+description: "A folder in the game's file storage that hands out IAltaFile and child IAltaFolder objects by name."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.IO`, `Alta.Utilities`.
 
+A folder in the game's file storage that hands out `IAltaFile` and child `IAltaFolder` objects by name. `AltaFolder` is the disk version.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Derived types** [`AltaFolder`](/game-api/types/assembly-other/altafolder)
 - **Documented in** [Settings and files](/game-api/console-and-utilities/settings-and-files#ialtafolder-and-ialtafile)
@@ -20,26 +22,26 @@ An **interface** in `Alta.IO`, `Alta.Utilities`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allfiles" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{"> AllFiles { get; }"}</code> |  |
-| <Link id="m-allsubfolders" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{"> AllSubFolders { get; }"}</code> |  |
-| <Link id="m-directoryinfo" /><code>{"DirectoryInfo DirectoryInfo { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-parent" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" Parent { get; }"}</code> |  |
-| <Link id="m-path" /><code>{"string Path { get; }"}</code> |  |
+| <Link id="m-allfiles" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{"> AllFiles { get; }"}</code> | Files in this folder. |
+| <Link id="m-allsubfolders" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{"> AllSubFolders { get; }"}</code> | Folders inside this folder. |
+| <Link id="m-directoryinfo" /><code>{"DirectoryInfo DirectoryInfo { get; }"}</code> | The folder on disk. |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | Folder name. |
+| <Link id="m-parent" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" Parent { get; }"}</code> | The parent folder. |
+| <Link id="m-path" /><code>{"string Path { get; }"}</code> | Full path of the folder. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-delete" /><code>{"void Delete()"}</code> |  |
-| <Link id="m-deleteasync" /><code>{"Task DeleteAsync()"}</code> |  |
-| <Link id="m-fileexists" /><code>{"bool FileExists(string name, out "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file)"}</code> |  |
-| <Link id="m-getfile" /><code><Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" GetFile(string name)"}</code> |  |
-| <Link id="m-getsubfolder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" GetSubfolder(string name)"}</code> |  |
-| <Link id="m-removefile" /><code>{"void RemoveFile("}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file)"}</code> |  |
-| <Link id="m-removesubfolder" /><code>{"void RemoveSubFolder(string name)"}</code> |  |
-| <Link id="m-subfolderexists" /><code>{"bool SubfolderExists(string name, out "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder)"}</code> |  |
-| <Link id="m-unloadallfiles" /><code>{"void UnloadAllFiles()"}</code> |  |
+| <Link id="m-delete" /><code>{"void Delete()"}</code> | Deletes the folder. |
+| <Link id="m-deleteasync" /><code>{"Task DeleteAsync()"}</code> | Deletes the folder on a background task. |
+| <Link id="m-fileexists" /><code>{"bool FileExists(string name, out "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file)"}</code> | True if a file with this name exists, and returns it. |
+| <Link id="m-getfile" /><code><Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" GetFile(string name)"}</code> | Gets a file by name. |
+| <Link id="m-getsubfolder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" GetSubfolder(string name)"}</code> | Gets a child folder by name. |
+| <Link id="m-removefile" /><code>{"void RemoveFile("}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file)"}</code> | Forgets a file. Called by the file when it is deleted. |
+| <Link id="m-removesubfolder" /><code>{"void RemoveSubFolder(string name)"}</code> | Forgets a child folder by name. |
+| <Link id="m-subfolderexists" /><code>{"bool SubfolderExists(string name, out "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder)"}</code> | True if a child folder with this name exists, and returns it. |
+| <Link id="m-unloadallfiles" /><code>{"void UnloadAllFiles()"}</code> | Drops the loaded content of every file. |
 
 ## Used in
 

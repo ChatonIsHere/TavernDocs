@@ -1,6 +1,6 @@
 ---
 title: "LootTable.Entry"
-description: "class LootTable.Entry in Root.Township."
+description: "One item in a loot table with a count range."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LootTable.Entry
 
 A **class** in `Root.Township`, `Alta.Loot`.
+
+One item in a loot table with a count range.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`LootTable`](/game-api/types/alta-world-generation/loottable)
@@ -33,9 +35,9 @@ A **class** in `Root.Township`, `Alta.Loot`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-item-2" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-maximum-2" /><code>{"int Maximum { get; }"}</code> |  |
-| <Link id="m-minimum-2" /><code>{"int Minimum { get; }"}</code> |  |
+| <Link id="m-item-2" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" { get; }"}</code> | The item to give. |
+| <Link id="m-maximum-2" /><code>{"int Maximum { get; }"}</code> | Upper count. Exclusive in `GetLoot`, unless equal to `Minimum`. |
+| <Link id="m-minimum-2" /><code>{"int Minimum { get; }"}</code> | Lowest count. |
 
 ## Used in
 

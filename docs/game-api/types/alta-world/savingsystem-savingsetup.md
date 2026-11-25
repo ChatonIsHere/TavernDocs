@@ -1,6 +1,6 @@
 ---
 title: "SavingSystem.SavingSetup"
-description: "class SavingSystem.SavingSetup in Root.Township."
+description: "How one savable type is saved: its hash, every save data version registered with SaveStructure, and its parent type's setup."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SavingSystem.SavingSetup
 
 A **class** in `Root.Township`, `Alta.Saving`.
+
+How one savable type is saved: its hash, every save data version registered with `SaveStructure`, and its parent type's setup. Built by `SavingSystem` at startup.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Nested in** [`SavingSystem`](/game-api/types/alta-world/savingsystem)
@@ -36,23 +38,23 @@ A **class** in `Root.Township`, `Alta.Saving`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hash" /><code>{"uint Hash { get; private set; }"}</code> |  |
-| <Link id="m-iscomponent" /><code>{"bool IsComponent { get; private set; }"}</code> |  |
-| <Link id="m-istag" /><code>{"bool IsTag { get; private set; }"}</code> |  |
-| <Link id="m-latestsetup-2" /><code><Link to="/game-api/types/alta-world/savingsystem-versionsetup">{"SavingSystem.VersionSetup"}</Link>{" LatestSetup { get; }"}</code> |  |
-| <Link id="m-latestversion-2" /><code>{"uint LatestVersion { get; }"}</code> |  |
-| <Link id="m-parent" /><code><Link to="/game-api/types/alta-world/savingsystem-savingsetup">{"SavingSystem.SavingSetup"}</Link>{" Parent { get; private set; }"}</code> |  |
-| <Link id="m-save" /><code>{"Func<object, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{", "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{"> Save { get; private set; }"}</code> |  |
-| <Link id="m-topic" /><code>{"Type Topic { get; }"}</code> |  |
+| <Link id="m-hash" /><code>{"uint Hash { get; private set; }"}</code> | The type's save hash, from `SavingInfo` or the hash of its class name. |
+| <Link id="m-iscomponent" /><code>{"bool IsComponent { get; private set; }"}</code> | Whether the type is a Unity component. |
+| <Link id="m-istag" /><code>{"bool IsTag { get; private set; }"}</code> | Whether the type is a tag, added to the entity on load if missing. |
+| <Link id="m-latestsetup-2" /><code><Link to="/game-api/types/alta-world/savingsystem-versionsetup">{"SavingSystem.VersionSetup"}</Link>{" LatestSetup { get; }"}</code> | The version setup for the latest version. |
+| <Link id="m-latestversion-2" /><code>{"uint LatestVersion { get; }"}</code> | The highest registered version. |
+| <Link id="m-parent" /><code><Link to="/game-api/types/alta-world/savingsystem-savingsetup">{"SavingSystem.SavingSetup"}</Link>{" Parent { get; private set; }"}</code> | The setup of the nearest base type that is also saved, written after this one. |
+| <Link id="m-save" /><code>{"Func<object, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{", "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{"> Save { get; private set; }"}</code> | Calls the target's `ISavable.Save` for the latest data type. |
+| <Link id="m-topic" /><code>{"Type Topic { get; }"}</code> | The savable type this setup is for. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-add" /><code>{"void Add(uint version, Type dataType)"}</code> |  |
-| <Link id="m-finishinitialization" /><code>{"void FinishInitialization(Dictionary<Type, "}<Link to="/game-api/types/alta-world/savingsystem-savingsetup">{"SavingSystem.SavingSetup"}</Link>{"> map)"}</code> |  |
-| <Link id="m-getsetup" /><code><Link to="/game-api/types/alta-world/savingsystem-versionsetup">{"SavingSystem.VersionSetup"}</Link>{" GetSetup(uint version)"}</code> |  |
-| <Link id="m-getversion" /><code>{"uint GetVersion("}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" data)"}</code> |  |
+| <Link id="m-add" /><code>{"void Add(uint version, Type dataType)"}</code> | Registers a save data type for a version. The highest version becomes the latest. |
+| <Link id="m-finishinitialization" /><code>{"void FinishInitialization(Dictionary<Type, "}<Link to="/game-api/types/alta-world/savingsystem-savingsetup">{"SavingSystem.SavingSetup"}</Link>{"> map)"}</code> | Links the parent setup and builds `Save`. Logs an error if the type doesn't implement `ISavable` for its latest data type. |
+| <Link id="m-getsetup" /><code><Link to="/game-api/types/alta-world/savingsystem-versionsetup">{"SavingSystem.VersionSetup"}</Link>{" GetSetup(uint version)"}</code> | The version setup for a version number, or null. |
+| <Link id="m-getversion" /><code>{"uint GetVersion("}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" data)"}</code> | The version number of a save data object's type, or 0. |
 | <Link id="m-cast" /><code>{"private static T Cast<T>(object value)"}</code> |  |
 | <Link id="m-processinfo" /><code>{"private void ProcessInfo()"}</code> |  |
 | <Link id="m-saveinternal" /><code>{"private static "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" SaveInternal<T>(object target, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" children)"}</code> |  |

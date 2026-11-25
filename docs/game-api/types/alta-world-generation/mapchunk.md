@@ -1,6 +1,6 @@
 ---
 title: "MapChunk"
-description: "class MapChunk in Root.Township."
+description: "One square of a cave generator's map."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MapChunk
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+One square of a cave generator's map. It holds a `MapChunkLayer` per plugin, runs its generation on a worker thread, then hands itself to the generator to render through `MapChunkDisplay` objects.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** `MonoBehaviour`
@@ -34,26 +36,26 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-displays-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{"> Displays { get; }"}</code> |  |
-| <Link id="m-generator" /><code><Link to="/game-api/types/alta-world-generation/igenerator">{"IGenerator"}</Link>{" Generator { get; private set; }"}</code> |  |
-| <Link id="m-offx" /><code>{"int OffX { get; private set; }"}</code> |  |
-| <Link id="m-offz" /><code>{"int OffZ { get; private set; }"}</code> |  |
-| <Link id="m-rendergenerator" /><code><Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" RenderGenerator { get; private set; }"}</code> |  |
-| <Link id="m-requestcount" /><code>{"int RequestCount { get; set; }"}</code> |  |
-| <Link id="m-x" /><code>{"int X { get; private set; }"}</code> |  |
-| <Link id="m-z" /><code>{"int Z { get; private set; }"}</code> |  |
+| <Link id="m-displays-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{"> Displays { get; }"}</code> | Displays spawned to render this chunk. |
+| <Link id="m-generator" /><code><Link to="/game-api/types/alta-world-generation/igenerator">{"IGenerator"}</Link>{" Generator { get; private set; }"}</code> | The generator this chunk belongs to. |
+| <Link id="m-offx" /><code>{"int OffX { get; private set; }"}</code> | X offset in cells: `X` times the chunk size. |
+| <Link id="m-offz" /><code>{"int OffZ { get; private set; }"}</code> | Z offset in cells: `Z` times the chunk size. |
+| <Link id="m-rendergenerator" /><code><Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" RenderGenerator { get; private set; }"}</code> | The generator as a `GenerationBase`, or null. |
+| <Link id="m-requestcount" /><code>{"int RequestCount { get; set; }"}</code> | Number of outstanding requests for this chunk. |
+| <Link id="m-x" /><code>{"int X { get; private set; }"}</code> | Chunk grid x. |
+| <Link id="m-z" /><code>{"int Z { get; private set; }"}</code> | Chunk grid z. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlayer" /><code>{"void AddLayer("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" pluginInstance)"}</code> |  |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-createallnonzerolists" /><code>{"void CreateAllNonZeroLists()"}</code> |  |
-| <Link id="m-getlayer" /><code><Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" GetLayer("}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" plugin)"}</code> |  |
-| <Link id="m-initialize" /><code><Link to="/game-api/types/alta-world-generation/chunkthread">{"ChunkThread"}</Link>{" Initialize("}<Link to="/game-api/types/alta-world-generation/igenerator">{"IGenerator"}</Link>{" generator, int x, int z)"}</code> |  |
-| <Link id="m-prepare" /><code>{"void Prepare()"}</code> |  |
-| <Link id="m-render" /><code>{"IEnumerator Render("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" pluginInstance, "}<Link to="/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{" displayPrefab, int renderIndex)"}</code> |  |
+| <Link id="m-addlayer" /><code>{"void AddLayer("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" pluginInstance)"}</code> | Adds a layer for a plugin instance. |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | Disposes all layers. |
+| <Link id="m-createallnonzerolists" /><code>{"void CreateAllNonZeroLists()"}</code> | Builds the non-zero cell list on every layer. |
+| <Link id="m-getlayer" /><code><Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" GetLayer("}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" plugin)"}</code> | The layer for a plugin. Throws if there is none. |
+| <Link id="m-initialize" /><code><Link to="/game-api/types/alta-world-generation/chunkthread">{"ChunkThread"}</Link>{" Initialize("}<Link to="/game-api/types/alta-world-generation/igenerator">{"IGenerator"}</Link>{" generator, int x, int z)"}</code> | Sets the generator and grid position, works out the offsets and creates the generation thread. |
+| <Link id="m-prepare" /><code>{"void Prepare()"}</code> | Clears any old layers and starts a fresh set. |
+| <Link id="m-render" /><code>{"IEnumerator Render("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" pluginInstance, "}<Link to="/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{" displayPrefab, int renderIndex)"}</code> | Spawns a display for a plugin's layer and returns its render coroutine, or null without a prefab. |
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
 | <Link id="m-update" /><code>{"private void Update()"}</code> |  |
 

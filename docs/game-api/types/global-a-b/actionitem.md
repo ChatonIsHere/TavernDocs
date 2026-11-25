@@ -1,6 +1,6 @@
 ---
 title: "ActionItem"
-description: "class ActionItem in Root.Township."
+description: "Base for an item that belongs to one player and fades in and out with a materialize effect (the friend request token, the gymnasium teleport tablet)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ActionItem
 
 A **class** in `Root.Township`, no namespace.
+
+Base for an item that belongs to one player and fades in and out with a materialize effect (the friend request token, the gymnasium teleport tablet). The server sets the owner and syncs it.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour)
@@ -38,28 +40,28 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islocalplayer" /><code>{"bool IsLocalPlayer { get; private set; }"}</code> |  |
-| <Link id="m-materializer-2" /><code><Link to="/game-api/types/global-q-r/renderermaterializer">{"RendererMaterializer"}</Link>{" Materializer { get; }"}</code> |  |
-| <Link id="m-owner-2" /><code>{"int Owner { get; }"}</code> |  |
-| <Link id="m-rendererstomaterialize-2" /><code><Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" RenderersToMaterialize { get; }"}</code> |  |
-| <Link id="m-hasreceivedownermessage" /><code>{"protected bool HasReceivedOwnerMessage { get; private set; }"}</code> |  |
+| <Link id="m-islocalplayer" /><code>{"bool IsLocalPlayer { get; private set; }"}</code> | True if the owner is the local player. |
+| <Link id="m-materializer-2" /><code><Link to="/game-api/types/global-q-r/renderermaterializer">{"RendererMaterializer"}</Link>{" Materializer { get; }"}</code> | The materializer that plays the fade. |
+| <Link id="m-owner-2" /><code>{"int Owner { get; }"}</code> | User id of the owning player. |
+| <Link id="m-rendererstomaterialize-2" /><code><Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" RenderersToMaterialize { get; }"}</code> | The renderers the fade applies to. |
+| <Link id="m-hasreceivedownermessage" /><code>{"protected bool HasReceivedOwnerMessage { get; private set; }"}</code> | True once a client has been told the owner. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ownerupdated" /><code>{"event Action<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> OwnerUpdated"}</code> |  |
+| <Link id="m-ownerupdated" /><code>{"event Action<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> OwnerUpdated"}</code> | Raised when the owner is set or received. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fade" /><code>{"virtual void Fade(bool isFadingIn)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-setupowner" /><code>{"virtual void SetupOwner("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-finishfadein" /><code>{"protected virtual void FinishFadeIn()"}</code> |  |
-| <Link id="m-startfade" /><code>{"protected virtual void StartFade(bool isFadingIn)"}</code> |  |
+| <Link id="m-fade" /><code>{"virtual void Fade(bool isFadingIn)"}</code> | Fades in or out. Server: syncs it, and destroys the entity after fading out. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the owner and fade messages and the materializer targets. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the owner to a joining player. |
+| <Link id="m-setupowner" /><code>{"virtual void SetupOwner("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Sets the owner and syncs it to the chunk. |
+| <Link id="m-finishfadein" /><code>{"protected virtual void FinishFadeIn()"}</code> | Hook called when fading in finishes. Empty in the base class. |
+| <Link id="m-startfade" /><code>{"protected virtual void StartFade(bool isFadingIn)"}</code> | Hook called when a fade starts. Empty in the base class. |
 | <Link id="m-synceffect-2" /><code>{"private void SyncEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isFadingIn)"}</code> |  |
 | <Link id="m-syncowner-2" /><code>{"private void SyncOwner("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 

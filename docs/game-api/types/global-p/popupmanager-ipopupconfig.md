@@ -1,6 +1,6 @@
 ---
 title: "PopupManager.IPopupConfig"
-description: "Handle to a popup queued with PopupManager.Show. Lets you cancel it or swap its board prefab before it appears."
+description: "Handle to a popup queued with PopupManager.Show."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

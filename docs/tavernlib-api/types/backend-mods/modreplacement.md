@@ -1,6 +1,6 @@
 ---
 title: "ModReplacement"
-description: "A class in TavernLib, TavernLib.Backend.Mods."
+description: "One entry of a source's replaced list: a retired mod id and the mod that takes its place."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 
-A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
+One entry of a source's `replaced` list: a retired mod id and the mod that takes its place.
 
 - **Listed in** [TavernLib.Backend.Mods](/tavernlib-api/types/backend-mods)
 - **Documented in** [ModReplacement](/tavernlib-api/types/backend-mods/modreplacement)
@@ -27,10 +27,10 @@ A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-by" /><code>{"string By { get; }"}</code> |  |
-| <Link id="m-note" /><code>{"string Note { get; }"}</code> |  |
-| <Link id="m-oldid" /><code>{"string OldId { get; }"}</code> |  |
-| <Link id="m-sourcerepo" /><code>{"string SourceRepo { get; }"}</code> |  |
+| <Link id="m-by" /><code>{"string By { get; }"}</code> | The id of the mod that replaces it. |
+| <Link id="m-note" /><code>{"string Note { get; }"}</code> | The source's note on why. Empty if none. |
+| <Link id="m-oldid" /><code>{"string OldId { get; }"}</code> | The retired mod id. |
+| <Link id="m-sourcerepo" /><code>{"string SourceRepo { get; }"}</code> | The source that listed it. |
 
 ## Used in
 

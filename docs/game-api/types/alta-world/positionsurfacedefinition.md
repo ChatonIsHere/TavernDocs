@@ -1,6 +1,6 @@
 ---
 title: "PositionSurfaceDefinition"
-description: "abstract class PositionSurfaceDefinition in Root.Township."
+description: "Base for components that pick random points (with normals) on a shape, used as spawn positions and population spawn points."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PositionSurfaceDefinition
 
 An **abstract class** in `Root.Township`, `Alta.Chunks`.
+
+Base for components that pick random points (with normals) on a shape, used as spawn positions and population spawn points. Subclasses define the shape.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** `MonoBehaviour`, [`ISpawnPositions`](/game-api/types/global-i-l/ispawnpositions), [`IPointNormalEvaluator`](/game-api/types/alta-world-generation/ipointnormalevaluator)
@@ -29,17 +31,17 @@ An **abstract class** in `Root.Township`, `Alta.Chunks`.
 | --- | --- |
 | <Link id="m-rotationmode" /><code>{"private "}<Link to="/game-api/types/alta-world/positionsurfacedefinition-rotationmode">{"PositionSurfaceDefinition.RotationMode"}</Link>{" rotationMode"}</code> |  |
 | <Link id="m-seed" /><code>{"private int seed"}</code> |  |
-| <Link id="m-settings" /><code>{"protected "}<Link to="/game-api/types/global-p/positionsurfacedefinitionsettings">{"PositionSurfaceDefinitionSettings"}</Link>{" settings"}</code> |  |
+| <Link id="m-settings" /><code>{"protected "}<Link to="/game-api/types/global-p/positionsurfacedefinitionsettings">{"PositionSurfaceDefinitionSettings"}</Link>{" settings"}</code> | The global `PositionSurfaceDefinitionSettings`, set in `Awake`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-failed" /><code>{"static bool Failed(out Vector3 position, out Vector3 normal)"}</code> |  |
-| <Link id="m-getpoint" /><code><Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{"? GetPoint()"}</code> |  |
-| <Link id="m-getposition" /><code>{"abstract bool GetPosition(out Vector3 position, out Vector3 normal)"}</code> |  |
-| <Link id="m-setsize" /><code>{"abstract void SetSize(float size)"}</code> |  |
+| <Link id="m-failed" /><code>{"static bool Failed(out Vector3 position, out Vector3 normal)"}</code> | Helper that zeroes the outputs and returns false, for a `GetPosition` that found nothing. |
+| <Link id="m-getpoint" /><code><Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{"? GetPoint()"}</code> | A random point with its normal, or null if `GetPosition` failed. |
+| <Link id="m-getposition" /><code>{"abstract bool GetPosition(out Vector3 position, out Vector3 normal)"}</code> | Picks a random position and normal on the shape. False if none was found. |
+| <Link id="m-setsize" /><code>{"abstract void SetSize(float size)"}</code> | Resizes the shape. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-drawarrow" /><code>{"protected void DrawArrow(Vector3 from, Vector3 to, Vector3 normal)"}</code> |  |
+| <Link id="m-drawarrow" /><code>{"protected void DrawArrow(Vector3 from, Vector3 to, Vector3 normal)"}</code> | Editor: draws an arrow gizmo, raycast onto the surface layers (blue on a hit, red on a miss). |
 | <Link id="m-getspawnposition" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" ISpawnPositions.GetSpawnPosition(int index)"}</code> |  |
-| <Link id="m-previewarrows" /><code>{"protected bool PreviewArrows()"}</code> |  |
+| <Link id="m-previewarrows" /><code>{"protected bool PreviewArrows()"}</code> | Always false in this build. |

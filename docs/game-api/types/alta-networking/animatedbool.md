@@ -1,6 +1,6 @@
 ---
 title: "AnimatedBool"
-description: "class AnimatedBool in Root.Township."
+description: "A synced bool parameter on a NetworkAnimator."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AnimatedBool
 
 A **class** in `Root.Township`, `Alta.Networking.Animation`.
+
+A synced bool parameter on a `NetworkAnimator`. Setting it updates the Unity animator and marks it to be sent to clients for the next few syncs.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`AnimatedValue<bool>`](/game-api/types/alta-networking/animatedvalue-t)
@@ -31,17 +33,17 @@ A **class** in `Root.Township`, `Alta.Networking.Animation`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-value" /><code>{"override bool Value { get; set; }"}</code> |  |
+| <Link id="m-value" /><code>{"override bool Value { get; set; }"}</code> | The bool. Setting a new value updates the animator and flags it as changed. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize("}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator, int index)"}</code> |  |
-| <Link id="m-serialize" /><code>{"override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isSendingAll)"}</code> |  |
-| <Link id="m-updatechanged" /><code>{"void UpdateChanged(bool isSendingAll)"}</code> |  |
-| <Link id="m-serialize-2" /><code>{"protected override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-update" /><code>{"protected override void Update()"}</code> |  |
+| <Link id="m-initialize" /><code>{"override void Initialize("}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator, int index)"}</code> | Binds to the animator and reads the parameter's current value. |
+| <Link id="m-serialize" /><code>{"override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isSendingAll)"}</code> | Writes or reads the value; clients apply what they receive. Counts down the changed flag on partial sends. |
+| <Link id="m-updatechanged" /><code>{"void UpdateChanged(bool isSendingAll)"}</code> | Counts down the changed flag without writing. |
+| <Link id="m-serialize-2" /><code>{"protected override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the value; clients apply what they receive. Counts down the changed flag on partial sends. |
+| <Link id="m-update" /><code>{"protected override void Update()"}</code> | Pushes the value to the Unity animator. |
 
 ## Used in
 

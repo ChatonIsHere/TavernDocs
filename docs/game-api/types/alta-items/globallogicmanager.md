@@ -1,6 +1,6 @@
 ---
 title: "GlobalLogicManager"
-description: "Holds every logic value (GetData<TData>(ref uint identifier)). Saved."
+description: "Holds the shared data records for logic components (switches, wires and so on), keyed by id, and saves them."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Logic`.
 
-Holds every logic value (`GetData<TData>(ref uint identifier)`). Saved.
+Holds the shared data records for logic components (switches, wires and so on), keyed by id, and saves them. One is the global manager; others can act as a saving context for a group of components.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<LogicManagerData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<LogicManagerData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase), [`ISavingContext`](/game-api/types/global-i-l/isavingcontext)
@@ -42,17 +42,17 @@ Holds every logic value (`GetData<TData>(ref uint identifier)`). Saved.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-current" /><code>{"static "}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" Current { get; }"}</code> |  |
-| <Link id="m-global" /><code>{"static "}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" Global { get; }"}</code> |  |
+| <Link id="m-current" /><code>{"static "}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" Current { get; }"}</code> | The manager on top of the saving context stack, or the global one if the stack is empty. |
+| <Link id="m-global" /><code>{"static "}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" Global { get; }"}</code> | The manager marked as global, set when it wakes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getdata" /><code>{"TData GetData<TData>(ref uint identifier)"}</code> |  |
-| <Link id="m-getdata-2" /><code><Link to="/game-api/types/alta-items/ilogicvaluedata">{"ILogicValueData"}</Link>{" GetData(uint identifier)"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-restore" /><code>{"void Restore<TData>(ref TData saveData)"}</code> |  |
+| <Link id="m-getdata" /><code>{"TData GetData<TData>(ref uint identifier)"}</code> | Gets a record by id. The generic form assigns a new id if 0 and creates missing records; the plain form returns null. |
+| <Link id="m-getdata-2" /><code><Link to="/game-api/types/alta-items/ilogicvaluedata">{"ILogicValueData"}</Link>{" GetData(uint identifier)"}</code> | Gets a record by id. The generic form assigns a new id if 0 and creates missing records; the plain form returns null. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: loads the default data set into its entity if it has no records yet. |
+| <Link id="m-restore" /><code>{"void Restore<TData>(ref TData saveData)"}</code> | On load: keeps the existing record for an id if there is one, otherwise stores the loaded one. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-popcontext" /><code>{"private void ISavingContext.PopContext()"}</code> |  |
 | <Link id="m-pushcontext" /><code>{"private void ISavingContext.PushContext()"}</code> |  |

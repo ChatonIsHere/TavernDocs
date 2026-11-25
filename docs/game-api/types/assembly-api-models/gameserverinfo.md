@@ -1,6 +1,6 @@
 ---
 title: "GameServerInfo"
-description: "class GameServerInfo in Alta.Api.DataTransferModels."
+description: "A game server as returned by the Alta web API: id, name, status, region, owner, fleet and online players."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GameServerInfo
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+A game server as returned by the Alta web API: id, name, status, region, owner, fleet and online players. A plain JSON model.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Inherits or implements** [`GameServerInfoMinimal`](/game-api/types/assembly-api-models/gameserverinfominimal)
@@ -27,47 +29,47 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultfleetname" /><code>{"const string DefaultFleetName"}</code> |  |
-| <Link id="m-publicservers" /><code>{"static readonly HashSet<int> PublicServers"}</code> |  |
+| <Link id="m-defaultfleetname" /><code>{"const string DefaultFleetName"}</code> | The fallback fleet name, "att-release". |
+| <Link id="m-publicservers" /><code>{"static readonly HashSet<int> PublicServers"}</code> | Hard-coded set of server ids treated as official public servers. |
 | <Link id="m-fleetmapping" /><code>{"private static readonly Dictionary<int, string> FleetMapping"}</code> |  |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> |  |
-| <Link id="m-currentplayercount" /><code>{"int CurrentPlayerCount { get; set; }"}</code> |  |
-| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |  |
-| <Link id="m-finalstatus" /><code><Link to="/game-api/types/assembly-api-models/gameserverstatus">{"GameServerStatus"}</Link>{" FinalStatus { get; set; }"}</code> |  |
-| <Link id="m-fleetname" /><code>{"string FleetName { get; set; }"}</code> |  |
-| <Link id="m-groupidentifier" /><code>{"int? GroupIdentifier { get; set; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |  |
-| <Link id="m-jointype" /><code><Link to="/game-api/types/assembly-api-models/serverjointype">{"ServerJoinType"}</Link>{" JoinType { get; set; }"}</code> |  |
-| <Link id="m-lastonline" /><code>{"DateTime? LastOnline { get; set; }"}</code> |  |
-| <Link id="m-lastonlineping" /><code>{"DateTime? LastOnlinePing { get; set; }"}</code> |  |
-| <Link id="m-laststartedversion" /><code>{"string LastStartedVersion { get; set; }"}</code> |  |
-| <Link id="m-launchregion" /><code>{"string LaunchRegion { get; set; }"}</code> |  |
-| <Link id="m-localserver" /><code>{"static "}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" LocalServer { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
-| <Link id="m-offlineserver" /><code>{"static "}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" OfflineServer { get; }"}</code> |  |
-| <Link id="m-onlineplayers" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> OnlinePlayers { get; set; }"}</code> |  |
-| <Link id="m-owneridentifier" /><code>{"int OwnerIdentifier { get; set; }"}</code> |  |
-| <Link id="m-ownertype" /><code><Link to="/game-api/types/assembly-api-models/serverownertype">{"ServerOwnerType"}</Link>{" OwnerType { get; set; }"}</code> |  |
-| <Link id="m-playability" /><code>{"float Playability { get; set; }"}</code> |  |
-| <Link id="m-playerlimit" /><code>{"int? PlayerLimit { get; set; }"}</code> |  |
-| <Link id="m-sceneindex" /><code>{"int SceneIndex { get; set; }"}</code> |  |
-| <Link id="m-serverstatus" /><code><Link to="/game-api/types/assembly-api-models/gameserverstatus">{"GameServerStatus"}</Link>{" ServerStatus { get; set; }"}</code> |  |
-| <Link id="m-servertype" /><code><Link to="/game-api/types/assembly-api-models/servertype">{"ServerType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/servertype">{"ServerType"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-target" /><code>{"int Target { get; set; }"}</code> |  |
-| <Link id="m-transportsystem" /><code>{"int? TransportSystem { get; set; }"}</code> |  |
-| <Link id="m-uptime" /><code>{"TimeSpan Uptime { get; set; }"}</code> |  |
+| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> | When the server was created. |
+| <Link id="m-currentplayercount" /><code>{"int CurrentPlayerCount { get; set; }"}</code> | Number of players on the server, as reported by the API. |
+| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> | The server's description text. |
+| <Link id="m-finalstatus" /><code><Link to="/game-api/types/assembly-api-models/gameserverstatus">{"GameServerStatus"}</Link>{" FinalStatus { get; set; }"}</code> | Status the server is heading toward (for example while it starts or stops). |
+| <Link id="m-fleetname" /><code>{"string FleetName { get; set; }"}</code> | Which server fleet hosts it (for example "att-release" or "att-quest"). |
+| <Link id="m-groupidentifier" /><code>{"int? GroupIdentifier { get; set; }"}</code> | Id of the group that owns the server, if any. |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | The server's id. |
+| <Link id="m-jointype" /><code><Link to="/game-api/types/assembly-api-models/serverjointype">{"ServerJoinType"}</Link>{" JoinType { get; set; }"}</code> | How players can join the server. |
+| <Link id="m-lastonline" /><code>{"DateTime? LastOnline { get; set; }"}</code> | When the server was last online. |
+| <Link id="m-lastonlineping" /><code>{"DateTime? LastOnlinePing { get; set; }"}</code> | When the server last pinged the API as online. |
+| <Link id="m-laststartedversion" /><code>{"string LastStartedVersion { get; set; }"}</code> | Game version the server last started with. |
+| <Link id="m-launchregion" /><code>{"string LaunchRegion { get; set; }"}</code> | Region the server runs in. |
+| <Link id="m-localserver" /><code>{"static "}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" LocalServer { get; }"}</code> | Static placeholder named "Local Server" with id -1. |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The server's name. |
+| <Link id="m-offlineserver" /><code>{"static "}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" OfflineServer { get; }"}</code> | Static placeholder named "Offline Server" with id -1. |
+| <Link id="m-onlineplayers" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> OnlinePlayers { get; set; }"}</code> | Users currently on the server. |
+| <Link id="m-owneridentifier" /><code>{"int OwnerIdentifier { get; set; }"}</code> | Id of the owner (user or group, see `OwnerType`). |
+| <Link id="m-ownertype" /><code><Link to="/game-api/types/assembly-api-models/serverownertype">{"ServerOwnerType"}</Link>{" OwnerType { get; set; }"}</code> | Whether a user or a group owns the server. |
+| <Link id="m-playability" /><code>{"float Playability { get; set; }"}</code> | A float score the API reports for the server. |
+| <Link id="m-playerlimit" /><code>{"int? PlayerLimit { get; set; }"}</code> | Maximum players, if set. |
+| <Link id="m-sceneindex" /><code>{"int SceneIndex { get; set; }"}</code> | Index of the scene (map) the server runs. |
+| <Link id="m-serverstatus" /><code><Link to="/game-api/types/assembly-api-models/gameserverstatus">{"GameServerStatus"}</Link>{" ServerStatus { get; set; }"}</code> | Current status of the server. |
+| <Link id="m-servertype" /><code><Link to="/game-api/types/assembly-api-models/servertype">{"ServerType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/servertype">{"ServerType"}</Link>{" { get; set; }"}</code> | The kind of server. |
+| <Link id="m-target" /><code>{"int Target { get; set; }"}</code> | Platform target bit mask. Joining checks it against the player's platform. |
+| <Link id="m-transportsystem" /><code>{"int? TransportSystem { get; set; }"}</code> | Network transport the server uses, if set; read when connecting. |
+| <Link id="m-uptime" /><code>{"TimeSpan Uptime { get; set; }"}</code> | How long the server has been up. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getfleetname" /><code>{"static string GetFleetName(int target)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
+| <Link id="m-getfleetname" /><code>{"static string GetFleetName(int target)"}</code> | Maps a target number to a fleet name: 1 is "att-release", 2 is "att-quest", anything else "att-release". |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Multi-line text listing the server's main fields, for logs. |
 
 ## Used in
 

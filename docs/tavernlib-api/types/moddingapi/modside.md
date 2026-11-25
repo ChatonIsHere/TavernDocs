@@ -1,6 +1,6 @@
 ---
 title: "ModSide"
-description: "An enum in TavernLib, TavernLib.ModdingApi."
+description: "Which side a mod says it's for, given to TavernModAttribute."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **enum** in `TavernLib`, `TavernLib.ModdingApi`.
 
-An **enum** in `TavernLib`, `TavernLib.ModdingApi`.
+Which side a mod says it's for, given to `TavernModAttribute`. `None` means not set. TavernLib itself never reads it.
 
 - **Listed in** [TavernLib.ModdingApi](/tavernlib-api/types/moddingapi)
 - **Documented in** [ModSide](/tavernlib-api/types/moddingapi/modside), [TavernLib API](/tavernlib-api/overview)

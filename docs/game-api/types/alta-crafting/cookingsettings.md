@@ -1,6 +1,6 @@
 ---
 title: "CookingSettings"
-description: "CookableDecayDuration, MinimumStewingTemperature, DefaultStew, NonRecipeStewPrefab, GlobalStewEffects, MaxNumberOfItemsInStew (the network limit), IsA"
+description: "Global settings for cooking and stews."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Cooking`.
 
-`CookableDecayDuration`, `MinimumStewingTemperature`, `DefaultStew`, `NonRecipeStewPrefab`, `GlobalStewEffects`, `MaxNumberOfItemsInStew` (the network limit), `IsAssumingNoEffectModificationOnMissing` and the dissolve effects.
+Global settings for cooking and stews. Get it with `GlobalSettings<CookingSettings>.Instance`.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`GlobalSettings<CookingSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -55,26 +55,26 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-boilingparticlesdefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" BoilingParticlesDefinition { get; }"}</code> |  |
-| <Link id="m-cookableaddedtostewfadeoutduration-2" /><code>{"float CookableAddedToStewFadeoutDuration { get; }"}</code> |  |
-| <Link id="m-cookabledecayduration-2" /><code>{"float CookableDecayDuration { get; }"}</code> |  |
-| <Link id="m-cookingbubblestransparencybyliquidtransparency-2" /><code>{"AnimationCurve CookingBubblesTransparencyByLiquidTransparency { get; }"}</code> |  |
-| <Link id="m-cookingtemperaturertpc-2" /><code>{"RTPC CookingTemperatureRTPC { get; }"}</code> |  |
-| <Link id="m-defaultstew-2" /><code><Link to="/game-api/types/alta-crafting/stewcomponent">{"StewComponent"}</Link>{" DefaultStew { get; }"}</code> |  |
-| <Link id="m-globalsteweffects-2" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] GlobalStewEffects { get; }"}</code> |  |
-| <Link id="m-isassumingnoeffectmodificationonmissing-2" /><code>{"bool IsAssumingNoEffectModificationOnMissing { get; }"}</code> |  |
-| <Link id="m-isdisplayingheatpointdebugtext-2" /><code>{"bool IsDisplayingHeatPointDebugText { get; }"}</code> |  |
-| <Link id="m-maxnumberofitemsinstew-2" /><code>{"int MaxNumberOfItemsInStew { get; }"}</code> |  |
-| <Link id="m-minimumstewingtemperature-2" /><code>{"float MinimumStewingTemperature { get; }"}</code> |  |
-| <Link id="m-nonrecipestewprefab-2" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" NonRecipeStewPrefab { get; }"}</code> |  |
-| <Link id="m-stewingredientdissolveshader-2" /><code>{"Shader StewIngredientDissolveShader { get; }"}</code> |  |
-| <Link id="m-stewingredientdissolvetexture-2" /><code>{"Texture StewIngredientDissolveTexture { get; }"}</code> |  |
-| <Link id="m-stewingredientsfilledeffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" StewIngredientsFilledEffect { get; }"}</code> |  |
-| <Link id="m-stewrecipestartedeffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" StewRecipeStartedEffect { get; }"}</code> |  |
-| <Link id="m-textpopupdefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" TextPopupDefinition { get; }"}</code> |  |
+| <Link id="m-boilingparticlesdefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" BoilingParticlesDefinition { get; }"}</code> | Pooled boiling particle effect for hot liquid. |
+| <Link id="m-cookableaddedtostewfadeoutduration-2" /><code>{"float CookableAddedToStewFadeoutDuration { get; }"}</code> | How long an ingredient takes to dissolve into a stew, in seconds. |
+| <Link id="m-cookabledecayduration-2" /><code>{"float CookableDecayDuration { get; }"}</code> | Seconds for a cookable's cooked progress to fall from 1 to 0 once it stops being heated. |
+| <Link id="m-cookingbubblestransparencybyliquidtransparency-2" /><code>{"AnimationCurve CookingBubblesTransparencyByLiquidTransparency { get; }"}</code> | Curve mapping the liquid's transparency to the bubbles' transparency. |
+| <Link id="m-cookingtemperaturertpc-2" /><code>{"RTPC CookingTemperatureRTPC { get; }"}</code> | Wwise parameter set from the cooking temperature, for sound. |
+| <Link id="m-defaultstew-2" /><code><Link to="/game-api/types/alta-crafting/stewcomponent">{"StewComponent"}</Link>{" DefaultStew { get; }"}</code> | The stew prefab spawned when a pot starts stewing. |
+| <Link id="m-globalsteweffects-2" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] GlobalStewEffects { get; }"}</code> | Effects every stew gets, added before ingredient effects. |
+| <Link id="m-isassumingnoeffectmodificationonmissing-2" /><code>{"bool IsAssumingNoEffectModificationOnMissing { get; }"}</code> | If true, effects a recipe does not list keep their strength; if false, they drop to 0. |
+| <Link id="m-isdisplayingheatpointdebugtext-2" /><code>{"bool IsDisplayingHeatPointDebugText { get; }"}</code> | Debug flag for heat point text. Not read anywhere in this build. |
+| <Link id="m-maxnumberofitemsinstew-2" /><code>{"int MaxNumberOfItemsInStew { get; }"}</code> | Most items in a stew, for networking (31). Not read anywhere in this build. |
+| <Link id="m-minimumstewingtemperature-2" /><code>{"float MinimumStewingTemperature { get; }"}</code> | Temperature the liquid and an ingredient must pass before the ingredient goes into the stew. |
+| <Link id="m-nonrecipestewprefab-2" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" NonRecipeStewPrefab { get; }"}</code> | Prefab for a stew that matches no recipe. |
+| <Link id="m-stewingredientdissolveshader-2" /><code>{"Shader StewIngredientDissolveShader { get; }"}</code> | Shader used while an ingredient dissolves into a stew. |
+| <Link id="m-stewingredientdissolvetexture-2" /><code>{"Texture StewIngredientDissolveTexture { get; }"}</code> | Texture used while an ingredient dissolves into a stew. |
+| <Link id="m-stewingredientsfilledeffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" StewIngredientsFilledEffect { get; }"}</code> | Effect played when a stew's ingredients are all in. |
+| <Link id="m-stewrecipestartedeffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" StewRecipeStartedEffect { get; }"}</code> | Effect played when a stew matches a recipe. |
+| <Link id="m-textpopupdefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" TextPopupDefinition { get; }"}</code> | Pooled debug text popup. Not read anywhere in this build. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generateingredientrejectionforce" /><code>{"Vector3 GenerateIngredientRejectionForce()"}</code> |  |
+| <Link id="m-generateingredientrejectionforce" /><code>{"Vector3 GenerateIngredientRejectionForce()"}</code> | A random force, each axis between half and all of the rejection force, for throwing an ingredient out of a pot. |

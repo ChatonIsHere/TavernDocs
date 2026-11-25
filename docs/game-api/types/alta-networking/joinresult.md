@@ -1,6 +1,6 @@
 ---
 title: "JoinResult"
-description: "class JoinResult in Root.Township."
+description: "Client: the outcome of trying to join a server, with a player-facing message for each failure."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # JoinResult
 
 A **class** in `Root.Township`, `Alta.Networking.Servers`.
+
+Client: the outcome of trying to join a server, with a player-facing message for each failure.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 
@@ -24,20 +26,20 @@ A **class** in `Root.Township`, `Alta.Networking.Servers`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-connectiontoserver" /><code><Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" ConnectionToServer { get; private set; }"}</code> |  |
-| <Link id="m-errormessage" /><code>{"string ErrorMessage { get; }"}</code> |  |
-| <Link id="m-isrecoverablefailure" /><code>{"bool IsRecoverableFailure { get; }"}</code> |  |
-| <Link id="m-message" /><code>{"string Message { get; private set; }"}</code> |  |
-| <Link id="m-result" /><code><Link to="/game-api/types/global-c-d/clientjoinresult">{"ClientJoinResult"}</Link>{" Result { get; private set; }"}</code> |  |
-| <Link id="m-serverinfo" /><code><Link to="/game-api/types/alta-networking/joinedserverinfo">{"JoinedServerInfo"}</Link>{" ServerInfo { get; private set; }"}</code> |  |
-| <Link id="m-wassuccessful" /><code>{"bool WasSuccessful { get; private set; }"}</code> |  |
+| <Link id="m-connectiontoserver" /><code><Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" ConnectionToServer { get; private set; }"}</code> | The connection on success. |
+| <Link id="m-errormessage" /><code>{"string ErrorMessage { get; }"}</code> | The text shown to the player for this result. |
+| <Link id="m-isrecoverablefailure" /><code>{"bool IsRecoverableFailure { get; }"}</code> | True for results worth retrying, such as the server starting up, lost connection or busy. |
+| <Link id="m-message" /><code>{"string Message { get; private set; }"}</code> | Extra message passed with a failure. |
+| <Link id="m-result" /><code><Link to="/game-api/types/global-c-d/clientjoinresult">{"ClientJoinResult"}</Link>{" Result { get; private set; }"}</code> | The join result code. |
+| <Link id="m-serverinfo" /><code><Link to="/game-api/types/alta-networking/joinedserverinfo">{"JoinedServerInfo"}</Link>{" ServerInfo { get; private set; }"}</code> | Info about the joined server on success. |
+| <Link id="m-wassuccessful" /><code>{"bool WasSuccessful { get; private set; }"}</code> | True if the join worked. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-failedresult" /><code>{"static "}<Link to="/game-api/types/alta-networking/joinresult">{"JoinResult"}</Link>{" FailedResult("}<Link to="/game-api/types/global-c-d/clientjoinresult">{"ClientJoinResult"}</Link>{" result, string message = null)"}</code> |  |
-| <Link id="m-successresult" /><code>{"static "}<Link to="/game-api/types/alta-networking/joinresult">{"JoinResult"}</Link>{" SuccessResult("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connectionToServer, "}<Link to="/game-api/types/alta-networking/joinedserverinfo">{"JoinedServerInfo"}</Link>{" serverInfo)"}</code> |  |
+| <Link id="m-failedresult" /><code>{"static "}<Link to="/game-api/types/alta-networking/joinresult">{"JoinResult"}</Link>{" FailedResult("}<Link to="/game-api/types/global-c-d/clientjoinresult">{"ClientJoinResult"}</Link>{" result, string message = null)"}</code> | Makes a failed result with a code and optional message. |
+| <Link id="m-successresult" /><code>{"static "}<Link to="/game-api/types/alta-networking/joinresult">{"JoinResult"}</Link>{" SuccessResult("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connectionToServer, "}<Link to="/game-api/types/alta-networking/joinedserverinfo">{"JoinedServerInfo"}</Link>{" serverInfo)"}</code> | Makes a successful result with the connection and server info. |
 
 ## Used in
 

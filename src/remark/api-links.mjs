@@ -7,7 +7,6 @@ import {fileURLToPath} from 'node:url';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const SECTIONS = /[\\/]docs[\\/](game-api|tavernlib-api|mod)[\\/]/;
-const TYPE_PAGES = /[\\/]docs[\\/](game-api|tavernlib-api)[\\/]types[\\/][^\\/]+[\\/]/;
 // Game type names that usually mean the .NET or Unity type of the same name in prose.
 const STOP = new Set(['Action', 'Func', 'Path', 'Random', 'Debug', 'Object', 'Time', 'Settings', 'Status', 'Logger', 'File',
     'Directory', 'Color', 'Transform', 'Component', 'Camera', 'Light', 'Animation', 'Collider', 'Rigidbody', 'Event', 'Timer',
@@ -43,6 +42,7 @@ function lookup(raw) {
     if (STOP.has(head)) return null;
     const idx = load();
     if (idx[v]) return idx[v];
+    if (subject && /^\w+$/.test(v) && idx[subject + '.' + v]) return idx[subject + '.' + v];
     let base = v;
     while (/<[^<>]*>/.test(base)) base = base.replace(/<[^<>]*>/g, '');
     return base !== v ? idx[base] || null : null;
@@ -61,6 +61,7 @@ function splitSignature(value) {
     while ((m = re.exec(value))) {
         let name = m[0];
         let url = STOP.has(name.split('.')[0]) ? null : idx[name];
+        if (!url && subject && !name.includes('.')) url = idx[subject + '.' + name] || null;
         if (!url && name.includes('.')) {
             // `ServerHandler.Current.PlayerLimit`: link the longest known start
             const bits = name.split('.');
@@ -87,11 +88,25 @@ function splitSignature(value) {
     return {type: 'apiSignature', data: {hName: 'span', hProperties: {className: ['api-sig']}}, children};
 }
 
+let subject = null;
+
+function textOf(node) {
+    if (node.value) return node.value;
+    return (node.children || []).map(textOf).join('');
+}
+
 export default function apiLinks() {
     return (tree, file) => {
         const p = file.path || (file.history && file.history[0]) || '';
-        if (!SECTIONS.test(p) || TYPE_PAGES.test(p)) return;
+        // Type pages too: their signatures are already links (JSX, which this leaves alone), and the code
+        // spans in their descriptions get linked like anywhere else.
+        if (!SECTIONS.test(p)) return;
         useIndexFor(p);
+        // A page titled with a type name (`# Player`) is about that type, so its members' bare names
+        // (`AllPlayers`, `Current`) link to them.
+        const h1 = tree.children.find((n) => n.type === 'heading' && n.depth === 1);
+        const title = h1 ? textOf(h1).trim() : '';
+        subject = title && load()[title] && !load()[title].includes('#') ? title : null;
         const walk = (node, skip) => {
             if (!node.children) return;
             const inSkip = skip || node.type === 'link' || node.type === 'linkReference' || node.type === 'heading';

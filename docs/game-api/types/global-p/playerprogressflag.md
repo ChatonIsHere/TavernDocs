@@ -1,6 +1,6 @@
 ---
 title: "PlayerProgressFlag"
-description: "abstract class PlayerProgressFlag in Root.Township."
+description: "Base for per-player completion flags looked up by hash: game achievements and micro tutorials."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerProgressFlag
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for per-player completion flags looked up by hash: game achievements and micro tutorials.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`HashedGeneralValue<PlayerProgressFlag>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -27,8 +29,8 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tryget" /><code>{"static bool TryGet<TProgressFlagType>(uint hash, out TProgressFlagType flag)"}</code> |  |
-| <Link id="m-tryget-2" /><code>{"static bool TryGet<T>(string input, out T flag, bool isLogging = true)"}</code> |  |
+| <Link id="m-tryget" /><code>{"static bool TryGet<TProgressFlagType>(uint hash, out TProgressFlagType flag)"}</code> | Looks up a flag by hash or name and checks it is the type you asked for. |
+| <Link id="m-tryget-2" /><code>{"static bool TryGet<T>(string input, out T flag, bool isLogging = true)"}</code> | Looks up a flag by hash or name and checks it is the type you asked for. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "PopulationSpawnArea"
-description: "Server: a placed spawner that keeps a population of one definition alive at fixed or generated spawn points, with a starting and maximum count. Also a"
+description: "Server: a placed spawner that keeps a population of one definition alive at fixed or generated spawn points, with a starting and maximum count."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

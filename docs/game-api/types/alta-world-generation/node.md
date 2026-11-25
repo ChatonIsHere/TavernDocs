@@ -1,6 +1,6 @@
 ---
 title: "Node"
-description: "class Node in Root.Township."
+description: "A point in the forest generator's graph, with a radius."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Node
 
 A **class** in `Root.Township`, `Alta.Forests`.
+
+A point in the forest generator's graph, with a radius. Paths join it to other nodes, and it can be used for A* searches.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`Node<Node, Path>`](/game-api/types/alta-world-generation/node-tnode-tpath)
@@ -27,13 +29,13 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-radius" /><code>{"float Radius { get; private set; }"}</code> |  |
+| <Link id="m-radius" /><code>{"float Radius { get; private set; }"}</code> | The node's radius. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ison" /><code>{"bool IsOn("}<Link to="/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" type)"}</code> |  |
+| <Link id="m-ison" /><code>{"bool IsOn("}<Link to="/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" type)"}</code> | True if the space to the right of any of its paths has any of the given `SpaceType` flags. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "ExperienceFillVisualizer"
-description: "class ExperienceFillVisualizer in Root.Township."
+description: "Skill shrine visual that fills with a player's XP toward the next level on one path, and animates buying and selling skills."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ExperienceFillVisualizer
 
 A **class** in `Root.Township`, no namespace.
+
+Skill shrine visual that fills with a player's XP toward the next level on one path, and animates buying and selling skills. The server sends the values; clients animate.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`SkillShrineVisualizer`](/game-api/types/global-s/skillshrinevisualizer)
@@ -46,26 +48,26 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-renderertoanimate-2" /><code>{"Renderer RendererToAnimate { get; }"}</code> |  |
+| <Link id="m-renderertoanimate-2" /><code>{"Renderer RendererToAnimate { get; }"}</code> | The renderer whose fill shader values are animated. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disable" /><code>{"override void Disable()"}</code> |  |
-| <Link id="m-finishbuy" /><code>{"void FinishBuy(bool wasConfirmed)"}</code> |  |
-| <Link id="m-finishsell" /><code>{"void FinishSell()"}</code> |  |
-| <Link id="m-prepareonserver" /><code>{"override void PrepareOnServer("}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" manager)"}</code> |  |
-| <Link id="m-serialize" /><code>{"override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" manager)"}</code> |  |
-| <Link id="m-setbuyprogress" /><code>{"void SetBuyProgress(float progress)"}</code> |  |
-| <Link id="m-setsellprogress" /><code>{"void SetSellProgress(float progress)"}</code> |  |
+| <Link id="m-disable" /><code>{"override void Disable()"}</code> | Empties the fill and hides the available points. |
+| <Link id="m-finishbuy" /><code>{"void FinishBuy(bool wasConfirmed)"}</code> | Animates the end of a buy, confirmed or cancelled. |
+| <Link id="m-finishsell" /><code>{"void FinishSell()"}</code> | Clears the sell preview and restores the normal fill. |
+| <Link id="m-prepareonserver" /><code>{"override void PrepareOnServer("}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" manager)"}</code> | On a non-headless host, reads the player's progress and animates. |
+| <Link id="m-serialize" /><code>{"override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" manager)"}</code> | Server writes free points, fill toward the next level and the fill after a sale; clients read them and animate. |
+| <Link id="m-setbuyprogress" /><code>{"void SetBuyProgress(float progress)"}</code> | Shows the fill draining while a buy is held. |
+| <Link id="m-setsellprogress" /><code>{"void SetSellProgress(float progress)"}</code> | Shows the fill rising toward the after-sale value while a sell is held. |
 | <Link id="m-animate" /><code>{"private void Animate(float percentageToNextLevel)"}</code> |  |
 | <Link id="m-animatebuyfinish" /><code>{"private IEnumerator AnimateBuyFinish(bool wasConfirmed) (iterator)"}</code> |  |
 | <Link id="m-animateopenforplayer" /><code>{"private IEnumerator AnimateOpenForPlayer(int levels, float percentageToNextLevel) (iterator)"}</code> |  |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-fadeto" /><code>{"private IEnumerator FadeTo(float target) (iterator)"}</code> |  |
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-openinternal" /><code>{"protected virtual void OpenInternal()"}</code> |  |
+| <Link id="m-openinternal" /><code>{"protected virtual void OpenInternal()"}</code> | Hook for subclasses when the visualizer first opens. Empty in the base class. |
 
 ## Used in
 

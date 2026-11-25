@@ -1,6 +1,6 @@
 ---
 title: "AuthPayloads.Ok"
-description: "A struct in TavernLib, TavernLib.Backend.Auth."
+description: "A plain ok status, the answer to an accepted set_mods."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `TavernLib`, `TavernLib.Backend.Auth`.
 
-A **struct** in `TavernLib`, `TavernLib.Backend.Auth`.
+A plain `ok` status, the answer to an accepted `set_mods`.
 
 - **Listed in** [TavernLib.Backend.Auth](/tavernlib-api/types/backend-auth)
 - **Nested in** [`AuthPayloads`](/tavernlib-api/types/backend-auth/authpayloads)

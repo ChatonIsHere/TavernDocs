@@ -1,6 +1,6 @@
 ---
 title: "MicroTutorial"
-description: "Server: one run of a micro tutorial for one player. It moves the player into a private domain, runs the steps in order, and returns them to the overwo"
+description: "Server: one run of a micro tutorial for one player."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -68,7 +68,7 @@ Server: one run of a micro tutorial for one player. It moves the player into a p
 | Member | What it is |
 | --- | --- |
 | <Link id="m-despawn" /><code>{"async Task Despawn()"}</code> | Respawns the player at the domain's entry point in the overworld, then despawns step content and destroys the domain. Also runs if the player disconnects. |
-| <Link id="m-spawn" /><code>{"async Task Spawn()"}</code> | Docks or drops held items, creates the domain, starts the first step and waits for the client to finish loading. Player damage is ignored from then on. |
+| <Link id="m-spawn" /><code>{"async Task Spawn()"}</code> | Docks or drops held items, creates the domain, starts step one and waits for the client to load. Damage to the player is then ignored. |
 | <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Tutorial name and step progress, for logs. |
 | <Link id="m-cleanuptutorialcontent" /><code>{"private async Task CleanUpTutorialContent()"}</code> |  |
 | <Link id="m-createdomain" /><code>{"private async Task CreateDomain()"}</code> |  |

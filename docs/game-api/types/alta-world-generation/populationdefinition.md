@@ -1,6 +1,6 @@
 ---
 title: "PopulationDefinition"
-description: "Alta.Populations.PopulationDefinition, a HashedGeneralValue asset."
+description: "An asset describing one kind of population (creatures, plants, ore and so on): which prefabs to spawn, how fast it grows and how spawns are placed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Populations`.
 
-`Alta.Populations.PopulationDefinition`, a `HashedGeneralValue` asset.
+An asset describing one kind of population (creatures, plants, ore and so on): which prefabs to spawn, how fast it grows and how spawns are placed. Used by population samples on the server.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`HashedGeneralValue<PopulationDefinition>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -57,31 +57,31 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attributes-2" /><code><Link to="/game-api/types/alta-world-generation/attributeimpact">{"AttributeImpact"}</Link>{"[] Attributes { get; }"}</code> |  |
-| <Link id="m-basetickfrequency" /><code>{"float BaseTickFrequency { get; }"}</code> |  |
-| <Link id="m-disconnectradius-2" /><code>{"float DisconnectRadius { get; }"}</code> |  |
-| <Link id="m-isallowingdisconnect-2" /><code>{"bool IsAllowingDisconnect { get; }"}</code> |  |
-| <Link id="m-iscreature-2" /><code>{"bool IsCreature { get; }"}</code> |  |
-| <Link id="m-iskinematiconspawn-2" /><code>{"bool IsKinematicOnSpawn { get; }"}</code> |  |
-| <Link id="m-isusingpointrotation-2" /><code>{"bool IsUsingPointRotation { get; }"}</code> |  |
-| <Link id="m-isusingrandomrotation-2" /><code>{"bool IsUsingRandomRotation { get; }"}</code> |  |
-| <Link id="m-isusingsafespawning-2" /><code>{"bool IsUsingSafeSpawning { get; }"}</code> |  |
-| <Link id="m-maxpopulationgrowth-2" /><code>{"int MaxPopulationGrowth { get; }"}</code> |  |
-| <Link id="m-ondeathoccupypointfor-2" /><code>{"float OnDeathOccupyPointFor { get; }"}</code> |  |
-| <Link id="m-percentageofpopulationspawned-2" /><code>{"float PercentageOfPopulationSpawned { get; }"}</code> |  |
-| <Link id="m-populationgrowthcurve-2" /><code>{"AnimationCurve PopulationGrowthCurve { get; }"}</code> |  |
-| <Link id="m-tickfrequency-2" /><code>{"float TickFrequency { get; }"}</code> |  |
+| <Link id="m-attributes-2" /><code><Link to="/game-api/types/alta-world-generation/attributeimpact">{"AttributeImpact"}</Link>{"[] Attributes { get; }"}</code> | Biome attribute impacts that scale the population for the area's biome. |
+| <Link id="m-basetickfrequency" /><code>{"float BaseTickFrequency { get; }"}</code> | Seconds between population ticks as set on the asset (default 5). |
+| <Link id="m-disconnectradius-2" /><code>{"float DisconnectRadius { get; }"}</code> | When disconnecting is allowed, how far a member can move from the spawner before leaving the population. 0 uses bounds instead. |
+| <Link id="m-isallowingdisconnect-2" /><code>{"bool IsAllowingDisconnect { get; }"}</code> | Whether members leave the population (and stop counting) when they move far away. |
+| <Link id="m-iscreature-2" /><code>{"bool IsCreature { get; }"}</code> | Whether members are creatures. Creatures save as creatures and are skipped on simple servers. |
+| <Link id="m-iskinematiconspawn-2" /><code>{"bool IsKinematicOnSpawn { get; }"}</code> | Makes the spawned rigidbody kinematic. |
+| <Link id="m-isusingpointrotation-2" /><code>{"bool IsUsingPointRotation { get; }"}</code> | Whether spawns use the spawn point's rotation. |
+| <Link id="m-isusingrandomrotation-2" /><code>{"bool IsUsingRandomRotation { get; }"}</code> | Whether a random rotation is added to spawns. |
+| <Link id="m-isusingsafespawning-2" /><code>{"bool IsUsingSafeSpawning { get; }"}</code> | Raises spawns by their largest collider size so they don't start inside the ground. |
+| <Link id="m-maxpopulationgrowth-2" /><code>{"int MaxPopulationGrowth { get; }"}</code> | Most members the population can grow by in one tick. |
+| <Link id="m-ondeathoccupypointfor-2" /><code>{"float OnDeathOccupyPointFor { get; }"}</code> | Seconds a spawn point stays occupied after its member dies. |
+| <Link id="m-percentageofpopulationspawned-2" /><code>{"float PercentageOfPopulationSpawned { get; }"}</code> | Fraction of the current population that is actually spawned as entities. |
+| <Link id="m-populationgrowthcurve-2" /><code>{"AnimationCurve PopulationGrowthCurve { get; }"}</code> | Chance of growing per tick, by current population as a fraction of max. Values above 1 can add several at once. |
+| <Link id="m-tickfrequency-2" /><code>{"float TickFrequency { get; }"}</code> | Seconds between ticks: the current (possibly overridden) value divided by the server's spawn rate multiplier. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getrandom" /><code>{"uint GetRandom("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-getrandomrotation" /><code>{"Quaternion GetRandomRotation()"}</code> |  |
-| <Link id="m-ispositionvalid" /><code>{"bool IsPositionValid("}<Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" point)"}</code> |  |
-| <Link id="m-load" /><code><Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" Load("}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" parent, "}<Link to="/game-api/types/alta-world-generation/ipopulationfoldersavedatabase">{"IPopulationFolderSaveDataBase"}</Link>{" data)"}</code> |  |
-| <Link id="m-save" /><code>{"void Save("}<Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" sample, "}<Link to="/game-api/types/alta-world-generation/ipopulationfoldersavedatabase">{"IPopulationFolderSaveDataBase"}</Link>{" data)"}</code> |  |
-| <Link id="m-serialize" /><code><Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" Serialize("}<Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" baseSample, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" parent)"}</code> |  |
+| <Link id="m-getrandom" /><code>{"uint GetRandom("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Picks a prefab hash to spawn, from the distribution if set, otherwise from the prefab list (or an active festive group's list). |
+| <Link id="m-getrandomrotation" /><code>{"Quaternion GetRandomRotation()"}</code> | A random rotation around Y only, or fully random, depending on the asset. |
+| <Link id="m-ispositionvalid" /><code>{"bool IsPositionValid("}<Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" point)"}</code> | False when a sphere check at the spawn point hits the avoided layers. Always true if the sphere radius is 0 or less. |
+| <Link id="m-load" /><code><Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" Load("}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" parent, "}<Link to="/game-api/types/alta-world-generation/ipopulationfoldersavedatabase">{"IPopulationFolderSaveDataBase"}</Link>{" data)"}</code> | Creates a population sample from saved data. |
+| <Link id="m-save" /><code>{"void Save("}<Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" sample, "}<Link to="/game-api/types/alta-world-generation/ipopulationfoldersavedatabase">{"IPopulationFolderSaveDataBase"}</Link>{" data)"}</code> | Writes a sample's current and max population and check time to save data. |
+| <Link id="m-serialize" /><code><Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" Serialize("}<Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" baseSample, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" parent)"}</code> | Obsolete stream format for population samples. |
 
 ## Used in
 

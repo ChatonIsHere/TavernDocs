@@ -1,6 +1,6 @@
 ---
 title: "GameAchievement"
-description: "class GameAchievement in Root.Township."
+description: "An achievement asset: a player progress flag that can play an effect and lists cosmetic SKUs to reward."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GameAchievement
 
 A **class** in `Root.Township`, no namespace.
+
+An achievement asset: a player progress flag that can play an effect and lists cosmetic SKUs to reward. Get all of them through `All`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`PlayerProgressFlag`](/game-api/types/global-p/playerprogressflag)
@@ -38,25 +40,25 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-all" /><code>{"static IEnumerable<"}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{"> All { get; }"}</code> |  |
-| <Link id="m-effectdefinition" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" EffectDefinition { get; }"}</code> |  |
-| <Link id="m-isshowingeffect-2" /><code>{"bool IsShowingEffect { get; }"}</code> |  |
-| <Link id="m-rewardskus-2" /><code>{"IEnumerable<string> RewardSkus { get; }"}</code> |  |
-| <Link id="m-supporteronlyrewardskus-2" /><code>{"IEnumerable<string> SupporterOnlyRewardSkus { get; }"}</code> |  |
-| <Link id="m-unlockdelayinseconds-2" /><code>{"float UnlockDelayInSeconds { get; }"}</code> |  |
+| <Link id="m-all" /><code>{"static IEnumerable<"}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{"> All { get; }"}</code> | Every loaded `GameAchievement` asset. |
+| <Link id="m-effectdefinition" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" EffectDefinition { get; }"}</code> | Effect played on completion: the override, or the default from `GameAchievementSettings`. |
+| <Link id="m-isshowingeffect-2" /><code>{"bool IsShowingEffect { get; }"}</code> | Whether completing it plays the effect. |
+| <Link id="m-rewardskus-2" /><code>{"IEnumerable<string> RewardSkus { get; }"}</code> | Cosmetic SKUs given as rewards. |
+| <Link id="m-supporteronlyrewardskus-2" /><code>{"IEnumerable<string> SupporterOnlyRewardSkus { get; }"}</code> | Cosmetic SKUs given only to supporters. |
+| <Link id="m-unlockdelayinseconds-2" /><code>{"float UnlockDelayInSeconds { get; }"}</code> | Configured delay before the unlock. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-completedbyplayer" /><code>{"event Action<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{", "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{"> CompletedByPlayer"}</code> |  |
+| <Link id="m-completedbyplayer" /><code>{"event Action<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{", "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{"> CompletedByPlayer"}</code> | Raised when a player completes the achievement. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-complete" /><code>{"virtual void Complete("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> |  |
+| <Link id="m-complete" /><code>{"virtual void Complete("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Raises `CompletedByPlayer` for the player. Subclasses can add their own checks. |
+| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | Setup hook for subclasses. Empty by default. |
 
 ## Used in
 

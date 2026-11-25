@@ -1,6 +1,6 @@
 ---
 title: "PageInstanceSaveData"
-description: "class PageInstanceSaveData in Root.Township."
+description: "Save data for a PageInstance: either a reference to a page from a page provider, or a list of custom glyph positions."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PageInstanceSaveData
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+Save data for a `PageInstance`: either a reference to a page from a page provider, or a list of custom glyph positions.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`NewSaveData<PageInstance, PageInstanceSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -27,11 +29,11 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-custom" /><code><Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] custom"}</code> |  |
-| <Link id="m-isduplicate" /><code>{"bool isDuplicate"}</code> |  |
-| <Link id="m-ispredefined" /><code>{"bool isPredefined"}</code> |  |
-| <Link id="m-pageprovider" /><code>{"int pageProvider"}</code> |  |
-| <Link id="m-predefinedhash" /><code>{"uint predefinedHash"}</code> |  |
+| <Link id="m-custom" /><code><Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] custom"}</code> | Glyph positions of a custom page, used when `isPredefined` is false. |
+| <Link id="m-isduplicate" /><code>{"bool isDuplicate"}</code> | Whether the page is marked as a duplicate. Restored to the instance's `IsDuplicate` on load. |
+| <Link id="m-ispredefined" /><code>{"bool isPredefined"}</code> | True if the page comes from a page provider, false for a custom glyph page. |
+| <Link id="m-pageprovider" /><code>{"int pageProvider"}</code> | Index into `PageProvider.Providers` of the provider that loads the page. |
+| <Link id="m-predefinedhash" /><code>{"uint predefinedHash"}</code> | Hash of the predefined page, filled in by the page provider. |
 
 ## Used in
 

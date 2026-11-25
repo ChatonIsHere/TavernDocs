@@ -1,6 +1,6 @@
 ---
 title: "AgentUpdater"
-description: "A scene MonoBehaviour. Ticks only on the server."
+description: "A scene MonoBehaviour."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

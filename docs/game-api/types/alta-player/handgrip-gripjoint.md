@@ -1,6 +1,6 @@
 ---
 title: "HandGrip.GripJoint"
-description: "One finger joint of a hand grip. It curls in steps until it touches a grabbed object, and blends between open, splayed, closed and saved poses."
+description: "One finger joint of a hand grip."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

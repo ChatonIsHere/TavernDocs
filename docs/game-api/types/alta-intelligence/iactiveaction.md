@@ -1,6 +1,6 @@
 ---
 title: "IActiveAction"
-description: "interface IActiveAction in Root.Township."
+description: "A creature action that is running right now, started from an IAction for one agent."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Intelligence`.
 
+A creature action that is running right now, started from an `IAction` for one agent. Raises `Finished` or `Cancelled` once, when it ends.
+
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Derived types** [`BasicActiveAction<TAgent>`](/game-api/types/alta-intelligence/basicactiveaction-tagent), [`IBasicActiveAction<TAgent>`](/game-api/types/alta-intelligence/ibasicactiveaction-intagent)
 - **Documented in** [Actions and decisions](/game-api/creatures/actions-and-decisions)
@@ -20,24 +22,24 @@ An **interface** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-action" /><code><Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" Action { get; }"}</code> |  |
-| <Link id="m-editorduration" /><code>{"float EditorDuration { get; }"}</code> |  |
-| <Link id="m-generaltopic" /><code><Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" GeneralTopic { get; }"}</code> |  |
-| <Link id="m-isfinished" /><code>{"bool IsFinished { get; }"}</code> |  |
+| <Link id="m-action" /><code><Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" Action { get; }"}</code> | The action this was started from. |
+| <Link id="m-editorduration" /><code>{"float EditorDuration { get; }"}</code> | The duration set for the action, including the agent's base action duration. For display. |
+| <Link id="m-generaltopic" /><code><Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" GeneralTopic { get; }"}</code> | The agent running the action. |
+| <Link id="m-isfinished" /><code>{"bool IsFinished { get; }"}</code> | True once the action has finished or been cancelled. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cancelled" /><code>{"event "}<Link to="/game-api/types/alta-intelligence/actionfinishedhandler">{"ActionFinishedHandler"}</Link>{" Cancelled"}</code> |  |
-| <Link id="m-finished" /><code>{"event "}<Link to="/game-api/types/alta-intelligence/actionfinishedhandler">{"ActionFinishedHandler"}</Link>{" Finished"}</code> |  |
+| <Link id="m-cancelled" /><code>{"event "}<Link to="/game-api/types/alta-intelligence/actionfinishedhandler">{"ActionFinishedHandler"}</Link>{" Cancelled"}</code> | Raised when the action is cancelled. |
+| <Link id="m-finished" /><code>{"event "}<Link to="/game-api/types/alta-intelligence/actionfinishedhandler">{"ActionFinishedHandler"}</Link>{" Finished"}</code> | Raised when the action completes normally. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cancel" /><code>{"void Cancel()"}</code> |  |
-| <Link id="m-update" /><code>{"void Update(bool hasTarget)"}</code> |  |
+| <Link id="m-cancel" /><code>{"void Cancel()"}</code> | Stops the action early and raises `Cancelled` if it had not ended yet. |
+| <Link id="m-update" /><code>{"void Update(bool hasTarget)"}</code> | Called by the agent while the action runs, with whether it has a target. |
 
 ## Used in
 

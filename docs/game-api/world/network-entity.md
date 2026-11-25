@@ -50,7 +50,7 @@ Never save an `Identifier`. Save a prefab hash and a position, or let the chunk 
 | `bool IsBeingDestroyed { get; set; }` | True once a destroy or unload has started. | Check it in delayed callbacks. |
 | `Pickup CommonPickup`, `Interactable CommonInteractable`, `ImpactTool CommonImpactTool` | Cached components, or null. | See [Pickup](../items/pickup.md). |
 | `EntitySerializer Serializer`, `bool IsSerialized` | State sync for its `INetworkSerialized` behaviours. | See [Entity sync](../networking/entity-sync.md#serialized-state). |
-| `int SyncPriority { get; }` | Lower syncs first when a chunk is sent to a player. | |
+| `int SyncPriority { get; }` | Order within a chunk's batch (`ChunkEntityManager.Cache`): higher goes first when a chunk's entities are spawned for a player, lower first when they're removed. | |
 | `Vector3 FramePosition { get; }` | `transform.position`, cached once per frame. | Cheap in hot loops. |
 | `static int SpawnedCount { get; }` | Live `NetworkEntity` components in the process. | Counts embedded parts too. |
 | `void EvaluateChunk(bool isLoggingOnFailure = true)` | Server: puts it in the chunk that holds its position. | See [Chunks](chunks.md). Can destroy it. |

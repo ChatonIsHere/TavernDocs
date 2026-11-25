@@ -1,6 +1,6 @@
 ---
 title: "Fire"
-description: "Fires that use fuel (campfires, and the smelter's innerFire)."
+description: "A heat source that burns, either on a timer or on fuel from a dock and a fuel area (campfires, the smelter's inner fire, tinder)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Heat`.
 
-Fires that use fuel (campfires, and the smelter's `innerFire`).
+A heat source that burns, either on a timer or on fuel from a dock and a fuel area (campfires, the smelter's inner fire, tinder). The server lights and puts it out; it goes out if docked somewhere that doesn't allow fire.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`HeatSourceBase`](/game-api/types/alta-stats-effects/heatsourcebase), [`IFlammable`](/game-api/types/alta-stats-effects/iflammable), [`IEntityReplaceHandler`](/game-api/types/alta-networking/ientityreplacehandler), [`ISavable<FireSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<FireSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -57,40 +57,40 @@ Fires that use fuel (campfires, and the smelter's `innerFire`).
 | Member | What it is |
 | --- | --- |
 | <Link id="m-alta-heat-iflammable-isignoringsparks" /><code>{"private bool Alta.Heat.IFlammable.IsIgnoringSparks { get; }"}</code> |  |
-| <Link id="m-lightcoroutine" /><code>{"protected override IEnumerator LightCoroutine { get; }"}</code> |  |
+| <Link id="m-lightcoroutine" /><code>{"protected override IEnumerator LightCoroutine { get; }"}</code> | What runs while lit: the lit timer, or the fuel burn for fuel-based fires. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkextinguish" /><code>{"void CheckExtinguish("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
-| <Link id="m-forceprogress" /><code>{"void ForceProgress(float progress)"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-simulatesparks" /><code>{"static void SimulateSparks(Vector3 position, float radius, float chance)"}</code> |  |
-| <Link id="m-stopextinguish" /><code>{"void StopExtinguish("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
-| <Link id="m-trylight" /><code>{"void TryLight()"}</code> |  |
+| <Link id="m-checkextinguish" /><code>{"void CheckExtinguish("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Dock handler: puts the fire out when its item is docked where fire isn't allowed (or called with no dock, as on disable). |
+| <Link id="m-forceprogress" /><code>{"void ForceProgress(float progress)"}</code> | Sets how far through its burn the fire is; a fuel fire instead shortens its base fuel time. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Hooks dock events on the item's pickup, or on the crafting root once it is known. |
+| <Link id="m-simulatesparks" /><code>{"static void SimulateSparks(Vector3 position, float radius, float chance)"}</code> | Tries to light every flammable thing within a radius, with a chance. |
+| <Link id="m-stopextinguish" /><code>{"void StopExtinguish("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Undock handler: stops watching the dock's sub-docks. |
+| <Link id="m-trylight" /><code>{"void TryLight()"}</code> | Server: lights the fire if it isn't lit, isn't in a no-fire dock and, for fuel fires, has base fuel or fuel to burn. |
 | <Link id="m-allowlighting" /><code>{"private void AllowLighting("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |
 | <Link id="m-calculateefficiency" /><code>{"private static void CalculateEfficiency("}<Link to="/game-api/types/alta-stats-effects/fire-fuelconsumptionstate">{"Fire.FuelConsumptionState"}</Link>{" consumptionState, ref float efficiency, ref float distribution)"}</code> |  |
 | <Link id="m-consumefuel" /><code>{"private void ConsumeFuel("}<Link to="/game-api/types/alta-stats-effects/fire-fuelconsumptionstate">{"Fire.FuelConsumptionState"}</Link>{" consumptionState, "}<Link to="/game-api/types/global-e-h/fuel">{"Fuel"}</Link>{" fuel, float fuelDamage, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
 | <Link id="m-delayedfuelsimulation" /><code>{"private IEnumerator DelayedFuelSimulation(float timeDifference) (iterator)"}</code> |  |
 | <Link id="m-delayreenablecollider" /><code>{"private IEnumerator DelayReenableCollider() (iterator)"}</code> |  |
 | <Link id="m-fueldock-2" /><code>{"private IEnumerator FuelDock() (iterator)"}</code> |  |
-| <Link id="m-geteffect" /><code>{"protected override void GetEffect()"}</code> |  |
+| <Link id="m-geteffect" /><code>{"protected override void GetEffect()"}</code> | Gets the fire effect (not on headless) and sets it lit. |
 | <Link id="m-getfuel" /><code>{"private "}<Link to="/game-api/types/global-e-h/fuel">{"Fuel"}</Link>{" GetFuel("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
 | <Link id="m-graduallyconsumefuel" /><code>{"private IEnumerator GraduallyConsumeFuel() (iterator)"}</code> |  |
 | <Link id="m-handlefueladded" /><code>{"private void HandleFuelAdded("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-stats-effects/fire-fuelconsumptionstate">{"Fire.FuelConsumptionState"}</Link>{" consumptionState, bool isSimulation)"}</code> |  |
 | <Link id="m-handlefuelremoved" /><code>{"private void HandleFuelRemoved("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-stats-effects/fire-fuelconsumptionstate">{"Fire.FuelConsumptionState"}</Link>{" consumptionState)"}</code> |  |
-| <Link id="m-light" /><code>{"protected override void Light()"}</code> |  |
+| <Link id="m-light" /><code>{"protected override void Light()"}</code> | Lights the fire, unless on the server while it sits in a no-fire dock. |
 | <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
 | <Link id="m-pickupset" /><code>{"private void PickupSet("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" newPickup)"}</code> |  |
-| <Link id="m-releaseeffect" /><code>{"protected override void ReleaseEffect()"}</code> |  |
+| <Link id="m-releaseeffect" /><code>{"protected override void ReleaseEffect()"}</code> | Releases the fire effect. |
 | <Link id="m-replacedwith" /><code>{"private void Alta.Networking.IEntityReplaceHandler.ReplacedWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/replaceavoidflags">{"ReplaceAvoidFlags"}</Link>{" replaceAvoidFlags)"}</code> |  |
-| <Link id="m-reset" /><code>{"protected override void Reset()"}</code> |  |
-| <Link id="m-rootset" /><code>{"protected virtual void RootSet("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" root)"}</code> |  |
+| <Link id="m-reset" /><code>{"protected override void Reset()"}</code> | Resets the fire; a timer fire also restarts its timer. |
+| <Link id="m-rootset" /><code>{"protected virtual void RootSet("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" root)"}</code> | Hooks dock events on the crafting root's pickup. |
 | <Link id="m-runfuel" /><code>{"private IEnumerator RunFuel() (iterator)"}</code> |  |
-| <Link id="m-serializeproperties" /><code>{"protected override void SerializeProperties("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-setprogress" /><code>{"protected override void SetProgress(float progress)"}</code> |  |
-| <Link id="m-simulatetime" /><code>{"protected override void SimulateTime(float timeDifference)"}</code> |  |
+| <Link id="m-serializeproperties" /><code>{"protected override void SerializeProperties("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Adds the fuel consumption progress to the synced heat source state. |
+| <Link id="m-setprogress" /><code>{"protected override void SetProgress(float progress)"}</code> | Sets burn progress and updates the fire effect. |
+| <Link id="m-simulatetime" /><code>{"protected override void SimulateTime(float timeDifference)"}</code> | Catches up after time away: a fuel fire burns off fuel if the gap is long enough, a timer fire moves its timer. |
 | <Link id="m-subdocked" /><code>{"private void Subdocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" subDock, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" subDockPickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" topDock)"}</code> |  |
 | <Link id="m-tickfuelconsumption" /><code>{"private void TickFuelConsumption("}<Link to="/game-api/types/alta-stats-effects/fire-fuelconsumptionstate">{"Fire.FuelConsumptionState"}</Link>{" consumptionState, float deltaTime)"}</code> |  |
 

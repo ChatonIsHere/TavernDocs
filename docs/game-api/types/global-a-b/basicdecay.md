@@ -1,6 +1,6 @@
 ---
 title: "BasicDecay"
-description: "Server component that destroys its entity after a decay time, using a saved timeline entry so the timer carries over saves. Subclasses add conditions."
+description: "Server component that destroys its entity after a decay time, using a saved timeline entry so the timer carries over saves."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

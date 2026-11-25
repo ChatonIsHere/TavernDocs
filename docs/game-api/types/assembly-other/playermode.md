@@ -1,6 +1,6 @@
 ---
 title: "PlayerMode"
-description: "PlayerMode (no namespace, in Alta.Platform.dll), a flags enum:"
+description: "Flags for how a player is playing: flat modes (Fly, AutoCam) or a VR runtime (OpenVR, Oculus, OpenXR, Meta Quest, Pico)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **enum** in `Alta.Platform`, no namespace.
 
-`PlayerMode` (no namespace, in `Alta.Platform.dll`), a flags enum:
+Flags for how a player is playing: flat modes (`Fly`, `AutoCam`) or a VR runtime (OpenVR, Oculus, OpenXR, Meta Quest, Pico). `Unassigned` (0) means not yet known. `ControllerExtension` and the `game` commands use it.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Attributes** `Flags`

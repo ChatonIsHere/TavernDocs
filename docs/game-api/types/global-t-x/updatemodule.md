@@ -1,6 +1,6 @@
 ---
 title: "UpdateModule"
-description: "Make one with new UpdateModule(string name, UpdateSegment segment, bool includeInServerProfiling = false); it registers itself."
+description: "A named list of update callbacks that UnityUpdateManager runs once per frame in a given UpdateSegment, so many objects can share one update loop."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-Make one with `new UpdateModule(string name, UpdateSegment segment, bool includeInServerProfiling = false)`; it registers itself.
+A named list of update callbacks that `UnityUpdateManager` runs once per frame in a given `UpdateSegment`, so many objects can share one update loop. A callback that throws is logged and removed from the list.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Derived types** [`BudgetedUpdateModule`](/game-api/types/global-a-b/budgetedupdatemodule)
@@ -29,36 +29,36 @@ Make one with `new UpdateModule(string name, UpdateSegment segment, bool include
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkediterationmethod" /><code>{"protected Action<"}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{", Func<"}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{", bool>> checkedIterationMethod"}</code> |  |
-| <Link id="m-duration" /><code>{"protected "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" duration"}</code> |  |
-| <Link id="m-first" /><code>{"protected "}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" first"}</code> |  |
-| <Link id="m-iterationmethod" /><code>{"protected Action<"}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{"> iterationMethod"}</code> |  |
+| <Link id="m-checkediterationmethod" /><code>{"protected Action<"}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{", Func<"}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{", bool>> checkedIterationMethod"}</code> | The loop used by subclasses that stop early when a check fails. |
+| <Link id="m-duration" /><code>{"protected "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" duration"}</code> | Rolling average of how long `Update` takes, in milliseconds. |
+| <Link id="m-first" /><code>{"protected "}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" first"}</code> | Head of the callback list. New callbacks are added here, so they run first. |
+| <Link id="m-iterationmethod" /><code>{"protected Action<"}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{"> iterationMethod"}</code> | The loop `Update` uses, set by `SetProfiling`. |
 | <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
 | <Link id="m-methodspernode" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{", MethodInfo> methodsPerNode"}</code> |  |
 | <Link id="m-profilingstrings" /><code>{"private static Dictionary<MethodInfo, string> profilingStrings"}</code> |  |
-| <Link id="m-timer" /><code>{"protected static Stopwatch timer"}</code> |  |
+| <Link id="m-timer" /><code>{"protected static Stopwatch timer"}</code> | Shared stopwatch used to time updates. |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-includeinserverprofiling" /><code>{"bool IncludeInServerProfiling { get; }"}</code> |  |
-| <Link id="m-moduleinfo" /><code><Link to="/game-api/types/global-t-x/updatemoduleinfo">{"UpdateModuleInfo"}</Link>{" ModuleInfo { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
+| <Link id="m-includeinserverprofiling" /><code>{"bool IncludeInServerProfiling { get; }"}</code> | Whether this module is listed in server profiling output. |
+| <Link id="m-moduleinfo" /><code><Link to="/game-api/types/global-t-x/updatemoduleinfo">{"UpdateModuleInfo"}</Link>{" ModuleInfo { get; }"}</code> | Registered count and average run time, for profiling displays. |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | The module's name, used in logs and profiling. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-actualcount" /><code>{"int ActualCount()"}</code> |  |
-| <Link id="m-deregistermethod" /><code>{"static void DeregisterMethod(ref "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" methodNode)"}</code> |  |
-| <Link id="m-registermethod" /><code>{"virtual "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" RegisterMethod(Action method)"}</code> |  |
-| <Link id="m-setprofiling" /><code>{"void SetProfiling(bool isProfiling)"}</code> |  |
-| <Link id="m-update" /><code>{"virtual void Update()"}</code> |  |
+| <Link id="m-actualcount" /><code>{"int ActualCount()"}</code> | Counts the registered callbacks by walking the list. |
+| <Link id="m-deregistermethod" /><code>{"static void DeregisterMethod(ref "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" methodNode)"}</code> | Static: removes a callback using the handle `RegisterMethod` gave you, and clears the handle. Safe to call with null. |
+| <Link id="m-registermethod" /><code>{"virtual "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" RegisterMethod(Action method)"}</code> | Adds a callback to the front of the list and returns a handle to deregister it later. Returns null for a null callback. |
+| <Link id="m-setprofiling" /><code>{"void SetProfiling(bool isProfiling)"}</code> | Switches between the plain and profiling loops. In this build they behave the same. |
+| <Link id="m-update" /><code>{"virtual void Update()"}</code> | Runs every registered callback once and records how long it took. |
 | <Link id="m-addmethodtoprofiling" /><code>{"private void AddMethodToProfiling("}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" node)"}</code> |  |
 | <Link id="m-checkediterateoverlinkedlist" /><code>{"private void CheckedIterateOverLinkedList("}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" startNode, Func<"}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{", bool> check)"}</code> |  |
 | <Link id="m-checkediterateoverlinkedlistwithprofiling" /><code>{"private void CheckedIterateOverLinkedListWithProfiling("}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" startNode, Func<"}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{", bool> check)"}</code> |  |
-| <Link id="m-deregistermethod-2" /><code>{"protected virtual void DeregisterMethod("}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" node)"}</code> |  |
+| <Link id="m-deregistermethod-2" /><code>{"protected virtual void DeregisterMethod("}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" node)"}</code> | Static: removes a callback using the handle `RegisterMethod` gave you, and clears the handle. Safe to call with null. |
 | <Link id="m-iterateoverlinkedlist" /><code>{"private void IterateOverLinkedList("}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" startNode)"}</code> |  |
 | <Link id="m-iterateoverlinkedlistwithprofiling" /><code>{"private void IterateOverLinkedListWithProfiling("}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" startNode)"}</code> |  |
 | <Link id="m-removemethodfromprofiling" /><code>{"private void RemoveMethodFromProfiling("}<Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" node)"}</code> |  |

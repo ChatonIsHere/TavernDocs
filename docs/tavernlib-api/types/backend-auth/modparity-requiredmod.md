@@ -1,6 +1,6 @@
 ---
 title: "ModParity.RequiredMod"
-description: "A class in TavernLib, TavernLib.Backend.Auth."
+description: "One mod a joining player is missing or has the wrong version of, as sent in the refusal and written to last_rejection.json."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.Auth`.
 
-A **class** in `TavernLib`, `TavernLib.Backend.Auth`.
+One mod a joining player is missing or has the wrong version of, as sent in the refusal and written to `last_rejection.json`.
 
 - **Listed in** [TavernLib.Backend.Auth](/tavernlib-api/types/backend-auth)
 - **Nested in** [`ModParity`](/tavernlib-api/types/backend-auth/modparity)
@@ -28,9 +28,9 @@ A **class** in `TavernLib`, `TavernLib.Backend.Auth`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-id" /><code>{"string Id"}</code> |  |
-| <Link id="m-sourcerepo" /><code>{"string SourceRepo"}</code> |  |
-| <Link id="m-version" /><code>{"string Version"}</code> |  |
+| <Link id="m-id" /><code>{"string Id"}</code> | The mod id. |
+| <Link id="m-sourcerepo" /><code>{"string SourceRepo"}</code> | The source the server installed it from. |
+| <Link id="m-version" /><code>{"string Version"}</code> | The version the server has. |
 
 ## Used in
 

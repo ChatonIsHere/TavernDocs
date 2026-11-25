@@ -1,6 +1,6 @@
 ---
 title: "ConsoleEvent<T>"
-description: "class ConsoleEvent<T> in Root.Township."
+description: "A named event that remote console clients can subscribe to over the websocket."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ConsoleEvent&lt;T&gt;
 
 A **class** in `Root.Township`, `Alta.Console`.
+
+A named event that remote console clients can subscribe to over the websocket. Creating one registers it; invoking it queues the data to be sent on a background thread.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Inherits or implements** [`ConsoleEvent`](/game-api/types/alta-console/consoleevent), [`IConsoleEvent`](/game-api/types/alta-console/iconsoleevent)
@@ -26,14 +28,14 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-type" /><code>{"Type Type { get; }"}</code> |  |
+| <Link id="m-type" /><code>{"Type Type { get; }"}</code> | The data type the event sends. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deregister" /><code>{"override void Deregister()"}</code> |  |
-| <Link id="m-invoke" /><code>{"void Invoke(Func<T> getData)"}</code> |  |
+| <Link id="m-deregister" /><code>{"override void Deregister()"}</code> | Removes all listeners and unregisters the event. |
+| <Link id="m-invoke" /><code>{"void Invoke(Func<T> getData)"}</code> | If anyone is subscribed, gets the data from the function and queues it as a subscription message. |
 
 ## Used in
 

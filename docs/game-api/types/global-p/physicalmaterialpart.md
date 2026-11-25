@@ -1,6 +1,6 @@
 ---
 title: "PhysicalMaterialPart"
-description: "Gives an item its physical material (iron, wood and so on): sets renderer materials, scales impact damage and hardness, updates durability, and syncs "
+description: "Gives an item its physical material (iron, wood and so on): sets renderer materials, scales impact damage and hardness, updates durability, and syncs and..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "IAltaFileFormat"
-description: "abstract class IAltaFileFormat in Alta.IO."
+description: "Base for a file format the game can read from and write to a stream, such as a save file's contents."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IAltaFileFormat
 
 An **abstract class** in `Alta.IO`, `Alta.Utilities`.
+
+Base for a file format the game can read from and write to a stream, such as a save file's contents. Disposable.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `IDisposable`
@@ -26,16 +28,16 @@ An **abstract class** in `Alta.IO`, `Alta.Utilities`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdisposed" /><code>{"bool IsDisposed { get; private set; }"}</code> |  |
+| <Link id="m-isdisposed" /><code>{"bool IsDisposed { get; private set; }"}</code> | Whether `Dispose` has been called. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clone" /><code>{"abstract "}<Link to="/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> |  |
-| <Link id="m-dispose" /><code>{"virtual void Dispose()"}</code> |  |
-| <Link id="m-readfrom" /><code>{"abstract void ReadFrom(FileInfo info, Stream stream)"}</code> |  |
-| <Link id="m-writeto" /><code>{"abstract void WriteTo(Stream stream, CancellationToken token)"}</code> |  |
+| <Link id="m-clone" /><code>{"abstract "}<Link to="/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> | Returns a copy of the file's contents. |
+| <Link id="m-dispose" /><code>{"virtual void Dispose()"}</code> | Marks the object disposed. |
+| <Link id="m-readfrom" /><code>{"abstract void ReadFrom(FileInfo info, Stream stream)"}</code> | Reads the contents from a stream, given the file it came from. |
+| <Link id="m-writeto" /><code>{"abstract void WriteTo(Stream stream, CancellationToken token)"}</code> | Writes the contents to a stream. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "RateLimiter"
-description: "new RateLimiter(float targetTickRate) then bool IsRateLimited(): false at most targetTickRate times a second (by Time.realtimeSinceStartup), true in b"
+description: "new RateLimiter(float targetTickRate) then bool IsRateLimited(): false at most targetTickRate times a second (by Time.realtimeSinceStartup), true in between."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

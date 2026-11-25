@@ -1,6 +1,6 @@
 ---
 title: "LeaderboardDefinition"
-description: "class LeaderboardDefinition in Root.Township."
+description: "Asset for a leaderboard (a course), with its size and whether lower scores are better."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LeaderboardDefinition
 
 A **class** in `Root.Township`, no namespace.
+
+Asset for a leaderboard (a course), with its size and whether lower scores are better.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`HashedGeneralValue<LeaderboardDefinition>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -35,13 +37,13 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-coursename-2" /><code>{"string CourseName { get; }"}</code> |  |
+| <Link id="m-coursename-2" /><code>{"string CourseName { get; }"}</code> | Course name shown for the leaderboard. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getdata" /><code><Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" GetData()"}</code> |  |
+| <Link id="m-getdata" /><code><Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" GetData()"}</code> | A `LeaderboardDefinitionData` with this definition, its hash, name, size and lowest-is-best flag. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "EventOrb"
-description: "class EventOrb in Root.Township."
+description: "A menu orb that runs a set action when the player lets go of it in a valid place."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EventOrb
 
 A **class** in `Root.Township`, `ATT.MainMenu.Scripts`.
+
+A menu orb that runs a set action when the player lets go of it in a valid place. Wraps an `ActionOrb`.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour)
@@ -37,18 +39,18 @@ A **class** in `Root.Township`, `ATT.MainMenu.Scripts`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-actionorb-2" /><code><Link to="/game-api/types/global-a-b/actionorb">{"ActionOrb"}</Link>{" "}<Link to="/game-api/types/global-a-b/actionorb">{"ActionOrb"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-actionorb-2" /><code><Link to="/game-api/types/global-a-b/actionorb">{"ActionOrb"}</Link>{" "}<Link to="/game-api/types/global-a-b/actionorb">{"ActionOrb"}</Link>{" { get; }"}</code> | The orb pickup and its target. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clearreleaseaction" /><code>{"void ClearReleaseAction()"}</code> |  |
-| <Link id="m-setreleaseaction" /><code>{"void SetReleaseAction(Action action)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
+| <Link id="m-clearreleaseaction" /><code>{"void ClearReleaseAction()"}</code> | Removes the release action and force drops the orb. |
+| <Link id="m-setreleaseaction" /><code>{"void SetReleaseAction(Action action)"}</code> | Sets what runs when the orb is let go. |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Hooks the orb's let go and grab filter, and sets its home position. |
 | <Link id="m-hasinteractionexception" /><code>{"private bool HasInteractionException()"}</code> |  |
 | <Link id="m-onvalidletgo" /><code>{"private void OnValidLetGo()"}</code> |  |
-| <Link id="m-validatepickupinteraction" /><code>{"protected virtual void ValidatePickupInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |  |
+| <Link id="m-validatepickupinteraction" /><code>{"protected virtual void ValidatePickupInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> | Blocks grabbing when no release action is set, except on a client when `isInteractionOnServer` is set. |
 
 ## Used in
 

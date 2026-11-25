@@ -1,6 +1,6 @@
 ---
 title: "TreeSpecies"
-description: "Species asset: physical material, hit effects, Wedge and Stick drop distributions, damage and break multipliers, DropVelocity, leaf materials."
+description: "A hashed asset for one kind of tree: its wood material, how chopping damage spreads, when the trunk falls and what drops when pieces are chopped."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Woodcutting`.
 
-Species asset: physical material, hit effects, `Wedge` and `Stick` drop distributions, damage and break multipliers, `DropVelocity`, leaf materials.
+A hashed asset for one kind of tree: its wood material, how chopping damage spreads, when the trunk falls and what drops when pieces are chopped. Stored under `Woodcutting/TreeSpecies`.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`HashedGeneralValue<TreeSpecies>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -54,27 +54,27 @@ Species asset: physical material, hit effects, `Wedge` and `Stick` drop distribu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-breakthresholdmultiplier-2" /><code>{"float BreakThresholdMultiplier { get; }"}</code> |  |
-| <Link id="m-damagemultiplier-2" /><code>{"float DamageMultiplier { get; }"}</code> |  |
-| <Link id="m-distancedistribution-2" /><code>{"float DistanceDistribution { get; }"}</code> |  |
-| <Link id="m-doneeffect-2" /><code><Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" DoneEffect { get; }"}</code> |  |
-| <Link id="m-dropvelocity-2" /><code>{"float DropVelocity { get; }"}</code> |  |
-| <Link id="m-hiteffect-2" /><code><Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" HitEffect { get; }"}</code> |  |
-| <Link id="m-imposterlod-2" /><code>{"int ImposterLod { get; }"}</code> |  |
-| <Link id="m-leafmaterialrects" /><code><Link to="/game-api/types/alta-utilities/materialrect">{"MaterialRect"}</Link>{"[] LeafMaterialRects { get; }"}</code> |  |
-| <Link id="m-leafmaterials" /><code>{"Material[] LeafMaterials { get; }"}</code> |  |
-| <Link id="m-oppositesthreshold-2" /><code>{"float OppositesThreshold { get; }"}</code> |  |
-| <Link id="m-physicalmaterial-2" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-stick-2" /><code><Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" Stick { get; }"}</code> |  |
-| <Link id="m-totalfallsidethreshold-2" /><code>{"float TotalFallSideThreshold { get; }"}</code> |  |
-| <Link id="m-totalpercentthreshold-2" /><code>{"float TotalPercentThreshold { get; }"}</code> |  |
-| <Link id="m-wedge-2" /><code><Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" Wedge { get; }"}</code> |  |
+| <Link id="m-breakthresholdmultiplier-2" /><code>{"float BreakThresholdMultiplier { get; }"}</code> | Multiplies the impulse needed to break tree branches off when something hits them. |
+| <Link id="m-damagemultiplier-2" /><code>{"float DamageMultiplier { get; }"}</code> | Divides chopping damage, so a higher value means a tougher tree. Also used as the tree's max health. |
+| <Link id="m-distancedistribution-2" /><code>{"float DistanceDistribution { get; }"}</code> | Radius around a hit over which chopping damage spreads to nearby cut points. |
+| <Link id="m-doneeffect-2" /><code><Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" DoneEffect { get; }"}</code> | Impact effect used when a section is chopped through. |
+| <Link id="m-dropvelocity-2" /><code>{"float DropVelocity { get; }"}</code> | Random velocity (and spin) given to wedges or sticks dropped from a chop. |
+| <Link id="m-hiteffect-2" /><code><Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" HitEffect { get; }"}</code> | Impact effect used when the tree is hit. |
+| <Link id="m-imposterlod-2" /><code>{"int ImposterLod { get; }"}</code> | LOD index at which the tree switches to an imposter. |
+| <Link id="m-leafmaterialrects" /><code><Link to="/game-api/types/alta-utilities/materialrect">{"MaterialRect"}</Link>{"[] LeafMaterialRects { get; }"}</code> | Leaf materials as atlas rects, using the baked atlas data if present. |
+| <Link id="m-leafmaterials" /><code>{"Material[] LeafMaterials { get; }"}</code> | The tree's leaf materials before atlasing. |
+| <Link id="m-oppositesthreshold-2" /><code>{"float OppositesThreshold { get; }"}</code> | If two opposite cut points add up to more than this, the section is chopped through. |
+| <Link id="m-physicalmaterial-2" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" { get; }"}</code> | The wood material, which sets hardness, renderer material and the material of dropped pieces. |
+| <Link id="m-stick-2" /><code><Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" Stick { get; }"}</code> | Distribution of prefabs dropped when a stick-type piece is chopped. |
+| <Link id="m-totalfallsidethreshold-2" /><code>{"float TotalFallSideThreshold { get; }"}</code> | Once `TotalPercentThreshold` is passed, the first cut point past this progress chops the section and sets the fall side. |
+| <Link id="m-totalpercentthreshold-2" /><code>{"float TotalPercentThreshold { get; }"}</code> | Average cut progress across a section's cut points needed before `TotalFallSideThreshold` is checked. |
+| <Link id="m-wedge-2" /><code><Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" Wedge { get; }"}</code> | Distribution of prefabs (wood wedges) dropped when a section is chopped. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fixmaterials" /><code>{"void FixMaterials(IEnumerable<"}<Link to="/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{"> definitions)"}</code> |  |
+| <Link id="m-fixmaterials" /><code>{"void FixMaterials(IEnumerable<"}<Link to="/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{"> definitions)"}</code> | Editor bake: finds the atlased version of each leaf material and stores its rect. |
 
 ## Used in
 

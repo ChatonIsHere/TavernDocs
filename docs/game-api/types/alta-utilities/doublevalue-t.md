@@ -1,6 +1,6 @@
 ---
 title: "DoubleValue<T>"
-description: "class DoubleValue<T> in Root.Township."
+description: "A SingleValue<T> with a second float value."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DoubleValue&lt;T&gt;
 
 A **class** in `Root.Township`, `Alta`.
+
+A `SingleValue<T>` with a second float value.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`SingleValue<T>`](/game-api/types/alta-utilities/singlevalue-t)
@@ -33,4 +35,4 @@ A **class** in `Root.Township`, `Alta`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-value2-2" /><code>{"float Value2 { get; }"}</code> |  |
+| <Link id="m-value2-2" /><code>{"float Value2 { get; }"}</code> | The second value. |

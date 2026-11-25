@@ -1,6 +1,6 @@
 ---
 title: "CustomizationSlotEntry"
-description: "One part of a cosmetic or equipment visual placed in a customization slot. Tracks whether other items cover it (impeded) or a slot disables it (hidden"
+description: "One part of a cosmetic or equipment visual placed in a customization slot."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

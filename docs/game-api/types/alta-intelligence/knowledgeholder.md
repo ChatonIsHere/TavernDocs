@@ -1,6 +1,6 @@
 ---
 title: "KnowledgeHolder"
-description: "A store of known events and rule definitions for the creature knowledge system. It can have a parent, whose knowledge also counts."
+description: "A store of known events and rule definitions for the creature knowledge system."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

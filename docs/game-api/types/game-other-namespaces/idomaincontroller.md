@@ -1,6 +1,6 @@
 ---
 title: "IDomainController"
-description: "interface IDomainController in Root.Township."
+description: "Creates and tracks per-player domains (spawned areas tied to one player)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `ATT.Domains`.
 
+Creates and tracks per-player domains (spawned areas tied to one player). Implemented by `DomainController` and bound in `GameLifetimeScope`. Create and destroy are server only.
+
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Derived types** [`DomainController`](/game-api/types/game-other-namespaces/domaincontroller)
 
@@ -19,9 +21,9 @@ An **interface** in `Root.Township`, `ATT.Domains`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createdomainforplayer" /><code>{"Task<"}<Link to="/game-api/types/game-other-namespaces/domain">{"Domain"}</Link>{"> CreateDomainForPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-destroydomain" /><code>{"Task DestroyDomain("}<Link to="/game-api/types/game-other-namespaces/domain">{"Domain"}</Link>{" domain)"}</code> |  |
-| <Link id="m-getdomainforplayer" /><code><Link to="/game-api/types/game-other-namespaces/domain">{"Domain"}</Link>{" GetDomainForPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
+| <Link id="m-createdomainforplayer" /><code>{"Task<"}<Link to="/game-api/types/game-other-namespaces/domain">{"Domain"}</Link>{"> CreateDomainForPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Server: spawns a domain for the player at the next free offset. |
+| <Link id="m-destroydomain" /><code>{"Task DestroyDomain("}<Link to="/game-api/types/game-other-namespaces/domain">{"Domain"}</Link>{" domain)"}</code> | Server: destroys a domain and clears its save. |
+| <Link id="m-getdomainforplayer" /><code><Link to="/game-api/types/game-other-namespaces/domain">{"Domain"}</Link>{" GetDomainForPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Returns the player's domain, or null. |
 
 ## Used in
 

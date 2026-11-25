@@ -1,6 +1,6 @@
 ---
 title: "VfxData"
-description: "class VfxData in Root.Township."
+description: "Settings asset for a two-part particle effect: particles that spawn, fly to a destination (usually the player) and trigger an arrival effect."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VfxData
 
 A **class** in `Root.Township`, `Features.Visual_Effects.VFXData`.
+
+Settings asset for a two-part particle effect: particles that spawn, fly to a destination (usually the player) and trigger an arrival effect. Used for effects like gaining a skill orb. Looked up by hash.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`HashedGeneralValue<VfxData>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -39,13 +41,13 @@ A **class** in `Root.Township`, `Features.Visual_Effects.VFXData`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-particleacceleration-2" /><code>{"float ParticleAcceleration { get; }"}</code> |  |
-| <Link id="m-particledestination-2" /><code><Link to="/game-api/types/global-p/particledestination">{"ParticleDestination"}</Link>{" "}<Link to="/game-api/types/global-p/particledestination">{"ParticleDestination"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-particlesonarrival-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" ParticlesOnArrival { get; }"}</code> |  |
-| <Link id="m-particlespeed-2" /><code>{"float ParticleSpeed { get; }"}</code> |  |
-| <Link id="m-particlestotransform-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" ParticlesToTransform { get; }"}</code> |  |
-| <Link id="m-shouldplayvfx-2" /><code>{"bool ShouldPlayVFX { get; }"}</code> |  |
-| <Link id="m-timetostartmoving-2" /><code>{"float TimeToStartMoving { get; }"}</code> |  |
+| <Link id="m-particleacceleration-2" /><code>{"float ParticleAcceleration { get; }"}</code> | Extra speed the travelling particles gain, in metres per second. |
+| <Link id="m-particledestination-2" /><code><Link to="/game-api/types/global-p/particledestination">{"ParticleDestination"}</Link>{" "}<Link to="/game-api/types/global-p/particledestination">{"ParticleDestination"}</Link>{" { get; }"}</code> | Where the particles fly to. |
+| <Link id="m-particlesonarrival-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" ParticlesOnArrival { get; }"}</code> | Pooled effect spawned when the particles arrive. |
+| <Link id="m-particlespeed-2" /><code>{"float ParticleSpeed { get; }"}</code> | Starting speed of the travelling particles, in metres per second. |
+| <Link id="m-particlestotransform-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" ParticlesToTransform { get; }"}</code> | Pooled effect whose particles fly to the destination. |
+| <Link id="m-shouldplayvfx-2" /><code>{"bool ShouldPlayVFX { get; }"}</code> | Switch to turn the effect off without removing references to it. |
+| <Link id="m-timetostartmoving-2" /><code>{"float TimeToStartMoving { get; }"}</code> | Delay before the particles start flying, in seconds. |
 
 ## Used in
 

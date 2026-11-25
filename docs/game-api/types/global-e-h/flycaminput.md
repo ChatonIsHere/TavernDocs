@@ -1,6 +1,6 @@
 ---
 title: "FlyCamInput"
-description: "Generated Unity Input System wrapper for the fly cam (spectator camera) controls, with a single Playing action map (move, look, elevation, sensitivity"
+description: "Generated Unity Input System wrapper for the fly cam (spectator camera) controls, with a single Playing action map (move, look, elevation, sensitivity, show..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

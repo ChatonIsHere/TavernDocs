@@ -1,6 +1,6 @@
 ---
 title: "IAnalyticsService"
-description: "interface IAnalyticsService in Alta.Analytics.Runtime."
+description: "The game's analytics event bus."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
+The game's analytics event bus. Listeners (dispatchers) receive each event's data.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`IEventSource<IReadonlyAnalyticsData>`](/game-api/types/assembly-other/ieventsource-t)
 - **Derived types** [`AnalyticsService`](/game-api/types/assembly-other/analyticsservice)
@@ -20,7 +22,7 @@ An **interface** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-send" /><code>{"void Send("}<Link to="/game-api/types/assembly-other/ianalyticsevent">{"IAnalyticsEvent"}</Link>{" analyticsEvent)"}</code> |  |
+| <Link id="m-send" /><code>{"void Send("}<Link to="/game-api/types/assembly-other/ianalyticsevent">{"IAnalyticsEvent"}</Link>{" analyticsEvent)"}</code> | Fills in the event's injected data and sends it to every listener. |
 
 ## Used in
 

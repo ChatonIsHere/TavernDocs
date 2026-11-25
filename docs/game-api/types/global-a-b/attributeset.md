@@ -1,6 +1,6 @@
 ---
 title: "AttributeSet"
-description: "class AttributeSet in Root.Township."
+description: "Biome attribute values (such as for spawning) with an optional parent set to fall back on."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AttributeSet
 
 A **class** in `Root.Township`, no namespace.
+
+Biome attribute values (such as for spawning) with an optional parent set to fall back on. Unset values are rolled from the attribute's default range on first read.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `IEnumerable<KeyValuePair<BiomeAttribute, float>>`, `IEnumerable`
@@ -32,18 +34,18 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-parent" /><code><Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" Parent { get; private set; }"}</code> |  |
+| <Link id="m-parent" /><code><Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" Parent { get; private set; }"}</code> | The set to fall back on. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-get" /><code>{"float Get("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" attribute, Random random = null)"}</code> |  |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<KeyValuePair<"}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{", float>> GetEnumerator() (iterator)"}</code> |  |
-| <Link id="m-isset" /><code>{"bool IsSet("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" attribute, bool isIncludingParent = true)"}</code> |  |
-| <Link id="m-set" /><code>{"void Set("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" attribute, float value)"}</code> |  |
-| <Link id="m-setparent" /><code>{"void SetParent("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" parent)"}</code> |  |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |  |
+| <Link id="m-get" /><code>{"float Get("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" attribute, Random random = null)"}</code> | Returns the value here, else the parent's; with no parent, rolls one in the default range and stores it. |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<KeyValuePair<"}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{", float>> GetEnumerator() (iterator)"}</code> | Lists values set here, then the parent's values not overridden here. |
+| <Link id="m-isset" /><code>{"bool IsSet("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" attribute, bool isIncludingParent = true)"}</code> | Whether the attribute has a value here (or in a parent, by default). |
+| <Link id="m-set" /><code>{"void Set("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" attribute, float value)"}</code> | Sets a value in this set. |
+| <Link id="m-setparent" /><code>{"void SetParent("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" parent)"}</code> | Changes the parent set. |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Lists values set here, then the parent's values not overridden here. |
 
 ## Used in
 

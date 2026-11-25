@@ -1,6 +1,6 @@
 ---
 title: "ServerListingPayload.SceneKind"
-description: "An private enum in TavernLib, TavernLib.Backend.Server. Reach it through att-stubs' publicized assemblies or Harmony's AccessTools."
+description: "Private: which scene the listing reports, Normal, Quest or Tutorial."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **private enum** in `TavernLib`, `TavernLib.Backend.Server`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
 
-An **private enum** in `TavernLib`, `TavernLib.Backend.Server`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+Private: which scene the listing reports, Normal, Quest or Tutorial. The launch arguments win over the settings.
 
 - **Listed in** [TavernLib.Backend.Server](/tavernlib-api/types/backend-server)
 - **Nested in** [`ServerListingPayload`](/tavernlib-api/types/backend-server/serverlistingpayload)

@@ -1,6 +1,6 @@
 ---
 title: "PlayerStateManager"
-description: "Component on each player that holds its current state (first join, alive, dead and so on) as a stack of nested states, switches between them, syncs ch"
+description: "Component on each player that holds its current state (first join, alive, dead and so on) as a stack of nested states, switches between them, syncs changes..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

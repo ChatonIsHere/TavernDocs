@@ -1,6 +1,6 @@
 ---
 title: "WindPattern"
-description: "class WindPattern in Root.Township."
+description: "A ScriptableObject holding one wind speed and strength pair, used by the grass and local wind managers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WindPattern
 
 A **class** in `Root.Township`, no namespace.
+
+A ScriptableObject holding one wind speed and strength pair, used by the grass and local wind managers.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `ScriptableObject`
@@ -34,14 +36,14 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-windspeed-2" /><code>{"float WindSpeed { get; }"}</code> |  |
-| <Link id="m-windstrength-2" /><code>{"float WindStrength { get; }"}</code> |  |
+| <Link id="m-windspeed-2" /><code>{"float WindSpeed { get; }"}</code> | Wind speed. |
+| <Link id="m-windstrength-2" /><code>{"float WindStrength { get; }"}</code> | Wind strength. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"void Create(float windSpeed, float windStrength)"}</code> |  |
+| <Link id="m-create" /><code>{"void Create(float windSpeed, float windStrength)"}</code> | Sets the speed and strength. |
 
 ## Used in
 

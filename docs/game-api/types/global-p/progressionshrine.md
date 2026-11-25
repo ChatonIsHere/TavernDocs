@@ -1,6 +1,6 @@
 ---
 title: "ProgressionShrine"
-description: "Base for the skill shrine a player opens to see and spend progression points. Server opens it for one player and syncs who is using it and the visuals"
+description: "Base for the skill shrine a player opens to see and spend progression points."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "LocomotionModifierAction"
-description: "abstract class LocomotionModifierAction in Root.Township."
+description: "Base asset for something that changes smooth locomotion for a while, started and ended on the player controller."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LocomotionModifierAction
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base asset for something that changes smooth locomotion for a while, started and ended on the player controller.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `ScriptableObject`
@@ -26,8 +28,8 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-begin" /><code>{"abstract void Begin("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> |  |
-| <Link id="m-finish" /><code>{"abstract void Finish("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> |  |
+| <Link id="m-begin" /><code>{"abstract void Begin("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Applies the change to the player's locomotion. |
+| <Link id="m-finish" /><code>{"abstract void Finish("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Removes the change. |
 
 ## Used in
 

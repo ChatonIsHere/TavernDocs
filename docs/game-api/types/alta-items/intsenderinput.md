@@ -1,6 +1,6 @@
 ---
 title: "IntSenderInput"
-description: "class IntSenderInput in Root.Township."
+description: "A serialized link from a logic receiver to a LogicIntSender."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IntSenderInput
 
 A **class** in `Root.Township`, `Alta.Logic`.
+
+A serialized link from a logic receiver to a `LogicIntSender`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`SenderInput<LogicIntSender, LogicIntSaveData>`](/game-api/types/alta-items/senderinput-tsender-tdata)

@@ -1,6 +1,6 @@
 ---
 title: "ActionOrb"
-description: "A hovering orb the player grabs and pulls to their face to trigger an action, with haptics and a screen fade as it gets closer. Used for menu, revive "
+description: "A hovering orb the player grabs and pulls to their face to trigger an action, with haptics and a screen fade as it gets closer."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

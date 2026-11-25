@@ -1,6 +1,6 @@
 ---
 title: "CustomizationState"
-description: "class CustomizationState in Root.Township."
+description: "The player state for the character customization room."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CustomizationState
 
 A **class** in `Root.Township`, `Alta.PlayerStates`.
+
+The player state for the character customization room. The client spawns the room and a customization controller; when the player finishes, the server saves their cosmetics and moves them to playing.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`PlayerStateBase`](/game-api/types/alta-player/playerstatebase)
@@ -36,8 +38,8 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> |  |
-| <Link id="m-statetype" /><code>{"override "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> |  |
+| <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> | "Customization State". |
+| <Link id="m-statetype" /><code>{"override "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> | `PlayerStateType.Customization`. |
 | <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/customizationstatesettings">{"CustomizationStateSettings"}</Link>{" Settings { get; }"}</code> |  |
 
 ## Methods
@@ -45,12 +47,12 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 | Member | What it is |
 | --- | --- |
 | <Link id="m-destroycustomizationcontrollerandroom" /><code>{"private void DestroyCustomizationControllerAndRoom()"}</code> |  |
-| <Link id="m-onactivate" /><code>{"protected override void OnActivate()"}</code> |  |
-| <Link id="m-onactivateremote" /><code>{"protected override async void OnActivateRemote(bool isPlayerCharacterSpawned)"}</code> |  |
-| <Link id="m-ondeactivate" /><code>{"protected override void OnDeactivate()"}</code> |  |
-| <Link id="m-ondeactivateremote" /><code>{"protected override void OnDeactivateRemote(bool isPlayerCharacterSpawned)"}</code> |  |
+| <Link id="m-onactivate" /><code>{"protected override void OnActivate()"}</code> | Server: loads the chunk at the player's spawn position if they are not in one yet. |
+| <Link id="m-onactivateremote" /><code>{"protected override async void OnActivateRemote(bool isPlayerCharacterSpawned)"}</code> | Client, local player: spawns the customization room and controller, then resets post processing. |
+| <Link id="m-ondeactivate" /><code>{"protected override void OnDeactivate()"}</code> | Server: counts a finish customization action for the player. |
+| <Link id="m-ondeactivateremote" /><code>{"protected override void OnDeactivateRemote(bool isPlayerCharacterSpawned)"}</code> | Client, local player: fades out, unlinks and destroys the customization controller and room. |
 | <Link id="m-repositionplayer" /><code>{"private void RepositionPlayer()"}</code> |  |
 | <Link id="m-spawncontroller" /><code>{"private void SpawnController()"}</code> |  |
 | <Link id="m-spawncustomizationroom" /><code>{"private async Task SpawnCustomizationRoom()"}</code> |  |
-| <Link id="m-sync" /><code>{"protected override async void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-sync" /><code>{"protected override async void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sends the chosen cosmetics. On the server it checks them, saves them, syncs them to others and starts the customization to playing transition. |
 | <Link id="m-verifycustomization" /><code>{"private async Task VerifyCustomization(bool isValid)"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "ColliderGroup"
-description: "class ColliderGroup in Root.Township."
+description: "A ComponentGroup of colliders with helpers to switch them on and off, set their layer, and ignore collisions with other colliders."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ColliderGroup
 
 A **class** in `Root.Township`, no namespace.
+
+A `ComponentGroup` of colliders with helpers to switch them on and off, set their layer, and ignore collisions with other colliders.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`ComponentGroup<Collider>`](/game-api/types/global-c-d/componentgroup-t)
@@ -35,17 +37,17 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ignorecollisionscoroutine" /><code>{"static IEnumerator IgnoreCollisionsCoroutine(IEnumerable<Collider> colliders, IEnumerable<Collider> otherColliders, float secondsToIgnore = 0.1) (iterator)"}</code> |  |
-| <Link id="m-ignorecollisionsforduration" /><code>{"static "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" IgnoreCollisionsForDuration(IEnumerable<Collider> colliders, IEnumerable<Collider> otherColliders, MonoBehaviour nullCheck, float secondsToIgnore = 0.1)"}</code> |  |
-| <Link id="m-ignoreself" /><code>{"void IgnoreSelf(bool isIgnoring = true)"}</code> |  |
-| <Link id="m-setactive" /><code>{"virtual void SetActive(bool isEnabled)"}</code> |  |
-| <Link id="m-setignore" /><code>{"void SetIgnore(Collider ignore, bool isIgnoring)"}</code> |  |
-| <Link id="m-setignore-2" /><code>{"void SetIgnore("}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" ignore, bool isIgnoring)"}</code> |  |
-| <Link id="m-setignore-3" /><code>{"void SetIgnore(IEnumerable<Collider> ignore, bool isIgnoring)"}</code> |  |
-| <Link id="m-setlayer" /><code>{"void SetLayer(int layer)"}</code> |  |
-| <Link id="m-ignorecollision" /><code>{"protected virtual void IgnoreCollision(Collider thisCollider, Collider otherCollider, bool isIgnoring)"}</code> |  |
-| <Link id="m-iselementvalid" /><code>{"protected override bool IsElementValid(Collider element)"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| <Link id="m-ignorecollisionscoroutine" /><code>{"static IEnumerator IgnoreCollisionsCoroutine(IEnumerable<Collider> colliders, IEnumerable<Collider> otherColliders, float secondsToIgnore = 0.1) (iterator)"}</code> | Coroutine that ignores collisions between two sets of colliders for a time, then restores them. |
+| <Link id="m-ignorecollisionsforduration" /><code>{"static "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" IgnoreCollisionsForDuration(IEnumerable<Collider> colliders, IEnumerable<Collider> otherColliders, MonoBehaviour nullCheck, float secondsToIgnore = 0.1)"}</code> | Starts `IgnoreCollisionsCoroutine`, stopping if the given behaviour is destroyed. Default 0.1 seconds. |
+| <Link id="m-ignoreself" /><code>{"void IgnoreSelf(bool isIgnoring = true)"}</code> | Makes the group's colliders ignore each other (or stop ignoring). Runs on `Start` if set to. |
+| <Link id="m-setactive" /><code>{"virtual void SetActive(bool isEnabled)"}</code> | Enables or disables every collider in the group. |
+| <Link id="m-setignore" /><code>{"void SetIgnore(Collider ignore, bool isIgnoring)"}</code> | Ignores or restores collision between the group and a collider, another group, or a list of colliders. |
+| <Link id="m-setignore-2" /><code>{"void SetIgnore("}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" ignore, bool isIgnoring)"}</code> | Ignores or restores collision between the group and a collider, another group, or a list of colliders. |
+| <Link id="m-setignore-3" /><code>{"void SetIgnore(IEnumerable<Collider> ignore, bool isIgnoring)"}</code> | Ignores or restores collision between the group and a collider, another group, or a list of colliders. |
+| <Link id="m-setlayer" /><code>{"void SetLayer(int layer)"}</code> | Moves every collider's object to a layer. |
+| <Link id="m-ignorecollision" /><code>{"protected virtual void IgnoreCollision(Collider thisCollider, Collider otherCollider, bool isIgnoring)"}</code> | Ignores or restores collision between two colliders. Subclasses can override it. |
+| <Link id="m-iselementvalid" /><code>{"protected override bool IsElementValid(Collider element)"}</code> | Skips trigger colliders when the group does not accept triggers. |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor hook. Does nothing useful. |
 | <Link id="m-start" /><code>{"private void Start()"}</code> |  |
 
 ## Used in

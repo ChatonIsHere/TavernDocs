@@ -1,6 +1,6 @@
 ---
 title: "WoodcutTree.MapNode"
-description: "class WoodcutTree.MapNode in Root.Township."
+description: "One segment in a WoodcutTree's layout: its model, the connection it hangs from, its children and attachments."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WoodcutTree.MapNode
 
 A **class** in `Root.Township`, `Alta.Woodcutting`.
+
+One segment in a `WoodcutTree`'s layout: its model, the connection it hangs from, its children and attachments. Mass and size changes add up into the parent nodes.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`WoodcutTree`](/game-api/types/alta-crafting/woodcuttree)
@@ -33,25 +35,25 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attachments" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/treeattachment">{"TreeAttachment"}</Link>{"> Attachments { get; }"}</code> |  |
-| <Link id="m-children" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{", "}<Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{"> Children { get; }"}</code> |  |
-| <Link id="m-hasfirstrenderer" /><code>{"bool HasFirstRenderer { get; private set; }"}</code> |  |
-| <Link id="m-mass-2" /><code>{"float Mass { get; set; }"}</code> |  |
-| <Link id="m-model" /><code><Link to="/game-api/types/alta-crafting/woodcuttreemodel">{"WoodcutTreeModel"}</Link>{" Model { get; set; }"}</code> |  |
-| <Link id="m-parent" /><code><Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" Parent { get; set; }"}</code> |  |
-| <Link id="m-renderers" /><code>{"MeshRenderer[] Renderers { get; private set; }"}</code> |  |
-| <Link id="m-rotation" /><code>{"int Rotation { get; set; }"}</code> |  |
-| <Link id="m-totalsize-2" /><code>{"int TotalSize { get; set; }"}</code> |  |
-| <Link id="m-tree" /><code><Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" Tree { get; set; }"}</code> |  |
+| <Link id="m-attachments" /><code>{"List<"}<Link to="/game-api/types/alta-crafting/treeattachment">{"TreeAttachment"}</Link>{"> Attachments { get; }"}</code> | Attachments on this segment. |
+| <Link id="m-children" /><code>{"Dictionary<"}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{", "}<Link to="/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{"> Children { get; }"}</code> | Child nodes by the connection they hang from. |
+| <Link id="m-hasfirstrenderer" /><code>{"bool HasFirstRenderer { get; private set; }"}</code> | False if the first LOD renderer was skipped because the model's colour is off. |
+| <Link id="m-mass-2" /><code>{"float Mass { get; set; }"}</code> | Mass of this segment and everything above it. Changes propagate to the parent. |
+| <Link id="m-model" /><code><Link to="/game-api/types/alta-crafting/woodcuttreemodel">{"WoodcutTreeModel"}</Link>{" Model { get; set; }"}</code> | The segment's model. |
+| <Link id="m-parent" /><code><Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" Parent { get; set; }"}</code> | Connection this segment hangs from. Null for the root. |
+| <Link id="m-renderers" /><code>{"MeshRenderer[] Renderers { get; private set; }"}</code> | LOD renderers made by `GenerateRenderers`. |
+| <Link id="m-rotation" /><code>{"int Rotation { get; set; }"}</code> | Rotation step on the parent connection. |
+| <Link id="m-totalsize-2" /><code>{"int TotalSize { get; set; }"}</code> | Segment count of this node and everything above it. Changes propagate to the parent. |
+| <Link id="m-tree" /><code><Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" Tree { get; set; }"}</code> | The tree this node belongs to. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addattachment" /><code>{"void AddAttachment("}<Link to="/game-api/types/alta-crafting/treeattachment">{"TreeAttachment"}</Link>{" attachment)"}</code> |  |
-| <Link id="m-generaterenderers" /><code>{"void GenerateRenderers()"}</code> |  |
-| <Link id="m-removeattachment" /><code>{"void RemoveAttachment("}<Link to="/game-api/types/alta-crafting/treeattachment">{"TreeAttachment"}</Link>{" attachment)"}</code> |  |
-| <Link id="m-spawnattachment" /><code>{"void SpawnAttachment("}<Link to="/game-api/types/alta-crafting/presettree-step-attachment">{"PresetTree.Step.Attachment"}</Link>{" stepAttachment)"}</code> |  |
+| <Link id="m-addattachment" /><code>{"void AddAttachment("}<Link to="/game-api/types/alta-crafting/treeattachment">{"TreeAttachment"}</Link>{" attachment)"}</code> | Attaches a `TreeAttachment` (such as a branch item) to this segment and saves it as a child. |
+| <Link id="m-generaterenderers" /><code>{"void GenerateRenderers()"}</code> | Creates hidden LOD mesh renderers for the segment, once. |
+| <Link id="m-removeattachment" /><code>{"void RemoveAttachment("}<Link to="/game-api/types/alta-crafting/treeattachment">{"TreeAttachment"}</Link>{" attachment)"}</code> | Detaches an attachment from this segment. |
+| <Link id="m-spawnattachment" /><code>{"void SpawnAttachment("}<Link to="/game-api/types/alta-crafting/presettree-step-attachment">{"PresetTree.Step.Attachment"}</Link>{" stepAttachment)"}</code> | Spawns a preset attachment and attaches it at its saved position, rotation and scale. |
 
 ## Used in
 

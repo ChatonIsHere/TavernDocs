@@ -1,6 +1,6 @@
 ---
 title: "IPlatformPlayer"
-description: "interface IPlatformPlayer in Root.Township."
+description: "The platform-specific side of a player (VR rig, fly cam and so on): its hand inputs, transform and player controller."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+The platform-specific side of a player (VR rig, fly cam and so on): its hand inputs, transform and player controller.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`LocomotionlessPlayerController`](/game-api/types/global-i-l/locomotionlessplayercontroller), [`MainMenuPlayerController`](/game-api/types/global-m-o/mainmenuplayercontroller), [`Player`](/game-api/types/global-p/player)
 
@@ -19,19 +21,19 @@ An **interface** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isloaded" /><code>{"bool IsLoaded { get; }"}</code> |  |
-| <Link id="m-islocalplayer" /><code>{"bool IsLocalPlayer { get; }"}</code> |  |
-| <Link id="m-leftinput" /><code><Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" LeftInput { get; }"}</code> |  |
-| <Link id="m-playercontroller" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-playermode" /><code><Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-playertransform" /><code>{"Transform PlayerTransform { get; }"}</code> |  |
-| <Link id="m-rightinput" /><code><Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" RightInput { get; }"}</code> |  |
+| <Link id="m-isloaded" /><code>{"bool IsLoaded { get; }"}</code> | True once the platform player is ready. |
+| <Link id="m-islocalplayer" /><code>{"bool IsLocalPlayer { get; }"}</code> | True for the player on this machine. |
+| <Link id="m-leftinput" /><code><Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" LeftInput { get; }"}</code> | Input for the left hand. |
+| <Link id="m-playercontroller" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; }"}</code> | The player controller it drives. |
+| <Link id="m-playermode" /><code><Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" { get; }"}</code> | Which `PlayerMode` this player is using. |
+| <Link id="m-playertransform" /><code>{"Transform PlayerTransform { get; }"}</code> | Root transform of the player. |
+| <Link id="m-rightinput" /><code><Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" RightInput { get; }"}</code> | Input for the right hand. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondisconnectedfromplatform" /><code>{"void OnDisconnectedFromPlatform()"}</code> |  |
+| <Link id="m-ondisconnectedfromplatform" /><code>{"void OnDisconnectedFromPlatform()"}</code> | Called when the player disconnects from the platform. |
 
 ## Used in
 

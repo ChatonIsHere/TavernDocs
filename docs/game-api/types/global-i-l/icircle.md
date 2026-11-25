@@ -1,6 +1,6 @@
 ---
 title: "ICircle"
-description: "interface ICircle in Root.Township."
+description: "A circle in 3D space: a centre, a radius and the direction it faces."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+A circle in 3D space: a centre, a radius and the direction it faces.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`PulleyBeltHelper.Circle`](/game-api/types/global-p/pulleybelthelper-circle), [`Turnable`](/game-api/types/global-t-x/turnable)
 
@@ -19,9 +21,9 @@ An **interface** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-face" /><code>{"Vector3 Face { get; }"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> |  |
-| <Link id="m-radius" /><code>{"float Radius { get; }"}</code> |  |
+| <Link id="m-face" /><code>{"Vector3 Face { get; }"}</code> | Direction the circle faces (its normal). |
+| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> | Centre of the circle. |
+| <Link id="m-radius" /><code>{"float Radius { get; }"}</code> | Radius of the circle. |
 
 ## Used in
 

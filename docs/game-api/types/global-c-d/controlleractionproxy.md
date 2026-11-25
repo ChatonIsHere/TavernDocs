@@ -1,6 +1,6 @@
 ---
 title: "ControllerActionProxy"
-description: "A stand-in controller action that forwards the state and events of whichever ControllerAction it is linked to, and can be switched off on its own. Cli"
+description: "A stand-in controller action that forwards the state and events of whichever ControllerAction it is linked to, and can be switched off on its own."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

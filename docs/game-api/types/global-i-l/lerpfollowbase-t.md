@@ -1,6 +1,6 @@
 ---
 title: "LerpFollowBase<T>"
-description: "abstract class LerpFollowBase<T> in Root.Township."
+description: "Makes an object trail smoothly after a target's position plus an offset, in late update."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LerpFollowBase&lt;T&gt;
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Makes an object trail smoothly after a target's position plus an offset, in late update. Off on a dedicated server by default. `LerpFollow` and `ScaledLerpFollow` derive from it.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,10 +28,10 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cachedtransform" /><code>{"protected Transform cachedTransform"}</code> |  |
+| <Link id="m-cachedtransform" /><code>{"protected Transform cachedTransform"}</code> | This object's transform. |
 | <Link id="m-isdisabledonserver" /><code>{"private bool isDisabledOnServer"}</code> |  |
 | <Link id="m-lerppersecond" /><code>{"private float lerpPerSecond"}</code> |  |
-| <Link id="m-oldposition" /><code>{"protected Vector3 oldPosition"}</code> |  |
+| <Link id="m-oldposition" /><code>{"protected Vector3 oldPosition"}</code> | Position from the last update. |
 | <Link id="m-staticupdatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" staticUpdateModule"}</code> |  |
 | <Link id="m-updatemodule" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateModule"}</code> |  |
 | <Link id="m-worldoffset" /><code>{"private Vector3 worldOffset"}</code> |  |
@@ -38,16 +40,16 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-target" /><code>{"abstract T Target { get; }"}</code> |  |
-| <Link id="m-targetposition" /><code>{"protected abstract Vector3 TargetPosition { get; }"}</code> |  |
+| <Link id="m-target" /><code>{"abstract T Target { get; }"}</code> | The thing being followed. Following stops when it becomes null. |
+| <Link id="m-targetposition" /><code>{"protected abstract Vector3 TargetPosition { get; }"}</code> | World position of the target. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-settarget" /><code>{"virtual void SetTarget(T target)"}</code> |  |
-| <Link id="m-start" /><code>{"virtual void Start()"}</code> |  |
+| <Link id="m-settarget" /><code>{"virtual void SetTarget(T target)"}</code> | Enables following when the target is not null. |
+| <Link id="m-start" /><code>{"virtual void Start()"}</code> | Snaps to the target, and disables itself on a server unless that is turned off. |
 | <Link id="m-movementupdate" /><code>{"private void MovementUpdate()"}</code> |  |
-| <Link id="m-moving" /><code>{"protected virtual void Moving(Vector3 from, Vector3 to)"}</code> |  |
+| <Link id="m-moving" /><code>{"protected virtual void Moving(Vector3 from, Vector3 to)"}</code> | Called each update with the old and target positions, for subclasses. |
 | <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
 | <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "ItemScroller"
-description: "class ItemScroller in Root.Township."
+description: "Client UI: a row of ScrollElements that slides along to show a window of a longer list, reusing a few element copies."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ItemScroller
 
 A **class** in `Root.Township`, no namespace.
+
+Client UI: a row of `ScrollElement`s that slides along to show a window of a longer list, reusing a few element copies. Scrolling left moves to higher indices.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `MonoBehaviour`
@@ -50,20 +52,20 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canscrollleft" /><code>{"bool CanScrollLeft { get; }"}</code> |  |
-| <Link id="m-canscrollright" /><code>{"bool CanScrollRight { get; }"}</code> |  |
-| <Link id="m-count-2" /><code>{"int Count { get; }"}</code> |  |
-| <Link id="m-isscrollingleft-2" /><code>{"bool IsScrollingLeft { get; set; }"}</code> |  |
-| <Link id="m-isscrollingright-2" /><code>{"bool IsScrollingRight { get; set; }"}</code> |  |
+| <Link id="m-canscrollleft" /><code>{"bool CanScrollLeft { get; }"}</code> | Whether there are more items past the end of the visible window. Always true until a max index is set. |
+| <Link id="m-canscrollright" /><code>{"bool CanScrollRight { get; }"}</code> | Whether the window can move back towards index 0. Always true until a max index is set. |
+| <Link id="m-count-2" /><code>{"int Count { get; }"}</code> | How many elements are visible at once. |
+| <Link id="m-isscrollingleft-2" /><code>{"bool IsScrollingLeft { get; set; }"}</code> | Set while a left scroll is held, so it keeps stepping. |
+| <Link id="m-isscrollingright-2" /><code>{"bool IsScrollingRight { get; set; }"}</code> | Set while a right scroll is held, so it keeps stepping. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-resetandrefresh" /><code>{"void ResetAndRefresh(int maxIndex)"}</code> |  |
-| <Link id="m-scrolldirection" /><code>{"void ScrollDirection(int direction)"}</code> |  |
-| <Link id="m-scrollto" /><code>{"void ScrollTo(int target)"}</code> |  |
-| <Link id="m-show" /><code>{"void Show()"}</code> |  |
+| <Link id="m-resetandrefresh" /><code>{"void ResetAndRefresh(int maxIndex)"}</code> | Hides everything, goes back to index 0 with a new item count and reshows the elements after 0.1 seconds. |
+| <Link id="m-scrolldirection" /><code>{"void ScrollDirection(int direction)"}</code> | Moves the target one step in a direction if it stays in range, and fires the scroll event. |
+| <Link id="m-scrollto" /><code>{"void ScrollTo(int target)"}</code> | Sets the index to scroll to. The row then steps there over time. |
+| <Link id="m-show" /><code>{"void Show()"}</code> | Shows the first `Count` elements. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |

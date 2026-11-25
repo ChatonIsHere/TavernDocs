@@ -1,6 +1,6 @@
 ---
 title: "EntityMessageHandler"
-description: "If an entity message arrives on a client before that entity has spawned there, the game keeps a copy and handles it when it spawns (Spawner.WaitForSpa"
+description: "If an entity message arrives on a client before that entity has spawned there, the game keeps a copy and handles it when it spawns (Spawner.WaitForSpawn)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

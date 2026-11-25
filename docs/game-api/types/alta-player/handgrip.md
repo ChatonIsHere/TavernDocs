@@ -1,6 +1,6 @@
 ---
 title: "HandGrip"
-description: "class HandGrip in Root.Township."
+description: "Curls a hand model's fingers around what it holds, and blends in finger tracking from the controller."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandGrip
 
 A **class** in `Root.Township`, `Alta.Character`.
+
+Curls a hand model's fingers around what it holds, and blends in finger tracking from the controller. Turns itself off on headless servers.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `MonoBehaviour`
@@ -44,27 +46,27 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentthumbconfiguration" /><code><Link to="/game-api/types/global-t-x/thumbconfiguration">{"ThumbConfiguration"}</Link>{" CurrentThumbConfiguration { get; }"}</code> |  |
-| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; set; }"}</code> |  |
-| <Link id="m-isgripping-2" /><code>{"bool IsGripping { get; set; }"}</code> |  |
-| <Link id="m-islefthand-2" /><code>{"bool IsLeftHand { get; }"}</code> |  |
-| <Link id="m-isskeletalgripenabled" /><code>{"bool IsSkeletalGripEnabled { get; set; }"}</code> |  |
-| <Link id="m-thumbposition" /><code><Link to="/game-api/types/global-t-x/thumbposition">{"ThumbPosition"}</Link>{" "}<Link to="/game-api/types/global-t-x/thumbposition">{"ThumbPosition"}</Link>{" { get; set; }"}</code> |  |
+| <Link id="m-currentthumbconfiguration" /><code><Link to="/game-api/types/global-t-x/thumbconfiguration">{"ThumbConfiguration"}</Link>{" CurrentThumbConfiguration { get; }"}</code> | Thumb configuration for the current thumb position. |
+| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; set; }"}</code> | Whether finger poses are updated each frame. |
+| <Link id="m-isgripping-2" /><code>{"bool IsGripping { get; set; }"}</code> | Whether the hand is gripping. Setting it to true starts a grip. |
+| <Link id="m-islefthand-2" /><code>{"bool IsLeftHand { get; }"}</code> | True for the left hand. |
+| <Link id="m-isskeletalgripenabled" /><code>{"bool IsSkeletalGripEnabled { get; set; }"}</code> | Whether tracked finger curl can add to the grip pose. |
+| <Link id="m-thumbposition" /><code><Link to="/game-api/types/global-t-x/thumbposition">{"ThumbPosition"}</Link>{" "}<Link to="/game-api/types/global-t-x/thumbposition">{"ThumbPosition"}</Link>{" { get; set; }"}</code> | Where the thumb rests, which picks the thumb configuration. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-postlateupdate" /><code>{"event "}<Link to="/game-api/types/global-t-x/updatehandler">{"UpdateHandler"}</Link>{" PostLateUpdate"}</code> |  |
+| <Link id="m-postlateupdate" /><code>{"event "}<Link to="/game-api/types/global-t-x/updatehandler">{"UpdateHandler"}</Link>{" PostLateUpdate"}</code> | Raised after the fingers are posed each frame. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-forcenextskeletal" /><code>{"void ForceNextSkeletal()"}</code> |  |
-| <Link id="m-serializegrip" /><code>{"void SerializeGrip("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-skeletalinput" /><code>{"void SkeletalInput(float[] fingersProgress)"}</code> |  |
-| <Link id="m-startgrip" /><code>{"void StartGrip()"}</code> |  |
+| <Link id="m-forcenextskeletal" /><code>{"void ForceNextSkeletal()"}</code> | Makes the next frame use the tracked finger pose. |
+| <Link id="m-serializegrip" /><code>{"void SerializeGrip("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes each finger's grip pose. Reading starts the grip animation. |
+| <Link id="m-skeletalinput" /><code>{"void SkeletalInput(float[] fingersProgress)"}</code> | Takes per-finger curl amounts (thumb first) from finger tracking. |
+| <Link id="m-startgrip" /><code>{"void StartGrip()"}</code> | Curls each finger until it touches the held object and animates into that pose. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
 | <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |

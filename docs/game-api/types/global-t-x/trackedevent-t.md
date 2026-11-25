@@ -1,6 +1,6 @@
 ---
 title: "TrackedEvent<T>"
-description: "A delegate list you add to with + and fire with Invoke, which remembers whether it has fired. Used for the client's entity-spawned listeners and as th"
+description: "A delegate list you add to with + and fire with Invoke, which remembers whether it has fired."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

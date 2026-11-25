@@ -1,6 +1,6 @@
 ---
 title: "Ecosystem"
-description: "A chunk's (or cave layer's) set of populations, with spawn points worked out from the ground."
+description: "Component on a location chunk listing the creature populations that live there."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Populations`.
 
-A chunk's (or cave layer's) set of populations, with spawn points worked out from the ground.
+Component on a location chunk listing the creature populations that live there. Server: when the chunk loads it spawns a population folder per population, or reloads the saved ones.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISpawnSystem`](/game-api/types/alta-world-generation/ispawnsystem), [`ISavable<EcosystemSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<EcosystemSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -43,19 +43,19 @@ A chunk's (or cave layer's) set of populations, with spawn points worked out fro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; private set; }"}</code> |  |
-| <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; private set; }"}</code> |  |
+| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; private set; }"}</code> | The `LocationChunk` it is on. |
+| <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; private set; }"}</code> | True after server initialization. |
 | <Link id="m-alta-populations-ispawnsystem-item" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" this[uint populationHash] { get; }"}</code> |  |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addpopulation" /><code>{"void AddPopulation("}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" folder)"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-setpoints" /><code>{"void SetPoints(List<"}<Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{"> spawnPoints, uint populationHash)"}</code> |  |
-| <Link id="m-setpopulationvalue" /><code>{"void SetPopulationValue(uint populationHash, "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" value)"}</code> |  |
-| <Link id="m-trygetpopulationvalue" /><code>{"bool TryGetPopulationValue(uint populationHash, out "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" value)"}</code> |  |
+| <Link id="m-addpopulation" /><code>{"void AddPopulation("}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" folder)"}</code> | Adds a population folder to this chunk's list. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: maps its populations and hooks the chunk's load and unload. |
+| <Link id="m-setpoints" /><code>{"void SetPoints(List<"}<Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{"> spawnPoints, uint populationHash)"}</code> | Sets the spawn points for a population, if none are set yet. |
+| <Link id="m-setpopulationvalue" /><code>{"void SetPopulationValue(uint populationHash, "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" value)"}</code> | Sets the spawn information for a population, if none is set yet. |
+| <Link id="m-trygetpopulationvalue" /><code>{"bool TryGetPopulationValue(uint populationHash, out "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" value)"}</code> | Gets a population's spawn information. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-chunkinitializepopulations" /><code>{"private void ChunkInitializePopulations("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
 | <Link id="m-cleanspawnpoints" /><code>{"private void CleanSpawnPoints("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |

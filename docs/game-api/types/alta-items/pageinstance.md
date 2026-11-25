@@ -1,6 +1,6 @@
 ---
 title: "PageInstance"
-description: "A page inside a book or on paper: Book, Data, Set(PageData), event Action<PageInstance> OnChangedPage."
+description: "A page or sheet of paper entity showing PageData (a recipe or glyphs)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Pages`.
 
-A page inside a book or on paper: `Book`, `Data`, `Set(PageData)`, `event Action<PageInstance> OnChangedPage`.
+A page or sheet of paper entity showing `PageData` (a recipe or glyphs). It renders only while visible, syncs its data from the server and is saved; freshly generated pages get a random page.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`GeneratedNetworkEntityBehaviour`](/game-api/types/alta-networking/generatednetworkentitybehaviour), [`ISavable<PageInstanceSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<PageInstanceSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -45,35 +45,35 @@ A page inside a book or on paper: `Book`, `Data`, `Set(PageData)`, `event Action
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animator-2" /><code>{"Animator Animator { get; }"}</code> |  |
-| <Link id="m-book" /><code><Link to="/game-api/types/alta-items/book">{"Book"}</Link>{" "}<Link to="/game-api/types/alta-items/book">{"Book"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-data-2" /><code><Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" Data { get; }"}</code> |  |
-| <Link id="m-isduplicate" /><code>{"protected virtual bool IsDuplicate { get; set; }"}</code> |  |
+| <Link id="m-animator-2" /><code>{"Animator Animator { get; }"}</code> | The page's animator. |
+| <Link id="m-book" /><code><Link to="/game-api/types/alta-items/book">{"Book"}</Link>{" "}<Link to="/game-api/types/alta-items/book">{"Book"}</Link>{" { get; private set; }"}</code> | The book this page is in, or null when loose. |
+| <Link id="m-data-2" /><code><Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" Data { get; }"}</code> | The page's contents. |
+| <Link id="m-isduplicate" /><code>{"protected virtual bool IsDuplicate { get; set; }"}</code> | Whether this page is a copy; saved with the page. Subclasses decide what it means. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onchangedpage" /><code>{"event Action<"}<Link to="/game-api/types/alta-items/pageinstance">{"PageInstance"}</Link>{"> OnChangedPage"}</code> |  |
+| <Link id="m-onchangedpage" /><code>{"event Action<"}<Link to="/game-api/types/alta-items/pageinstance">{"PageInstance"}</Link>{"> OnChangedPage"}</code> | Raised when page data is read from the network. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-forcesync" /><code>{"void ForceSync()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-reload" /><code>{"void Reload()"}</code> |  |
-| <Link id="m-set" /><code>{"void Set("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data)"}</code> |  |
-| <Link id="m-setinbook" /><code>{"void SetInBook("}<Link to="/game-api/types/alta-items/book">{"Book"}</Link>{" book)"}</code> |  |
+| <Link id="m-forcesync" /><code>{"void ForceSync()"}</code> | Sends the page data to everyone in the chunks. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the synced data message and hooks rendering to visibility. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: restores the duplicate flag loaded from the save. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the page data to a new player. |
+| <Link id="m-reload" /><code>{"void Reload()"}</code> | Re-renders the page if it is visible. |
+| <Link id="m-set" /><code>{"void Set("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data)"}</code> | Sets the page data and syncs it. |
+| <Link id="m-setinbook" /><code>{"void SetInBook("}<Link to="/game-api/types/alta-items/book">{"Book"}</Link>{" book)"}</code> | Puts the page in a book (turning off its physics and colliders) or takes it out with null. |
 | <Link id="m-delayrender" /><code>{"private IEnumerator DelayRender("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data) (iterator)"}</code> |  |
 | <Link id="m-delayrender-2" /><code>{"private void DelayRender()"}</code> |  |
-| <Link id="m-generate" /><code>{"protected override void Generate("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
+| <Link id="m-generate" /><code>{"protected override void Generate("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: gives a newly generated page a random spawnable page, or destroys it if there is none. |
 | <Link id="m-load" /><code>{"private void Load()"}</code> |  |
 | <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-serialize" /><code>{"protected virtual void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-serialize" /><code>{"protected virtual void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the page data and raises `OnChangedPage` when reading. |
 | <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 | <Link id="m-unload" /><code>{"private void Unload()"}</code> |  |
 

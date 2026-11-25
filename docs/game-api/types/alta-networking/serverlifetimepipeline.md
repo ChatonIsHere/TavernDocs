@@ -1,6 +1,6 @@
 ---
 title: "ServerLifetimePipeline"
-description: "Opens the server socket and makes the handler. GetServerRegion(), GetServerFleet()."
+description: "Opens the server socket and makes the handler."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

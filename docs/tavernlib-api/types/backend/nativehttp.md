@@ -1,6 +1,6 @@
 ---
 title: "NativeHttp"
-description: "A class in TavernLib, TavernLib.Backend."
+description: "A blocking HTTP GET client on Windows' WinHTTP, for mod downloads during reconcile, before Unity's TLS is up."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend`.
 
-A **class** in `TavernLib`, `TavernLib.Backend`.
+A blocking HTTP GET client on Windows' WinHTTP, for mod downloads during reconcile, before Unity's TLS is up. One instance is one session; don't use it on the main thread.
 
 - **Listed in** [TavernLib.Backend](/tavernlib-api/types/backend)
 - **Inherits or implements** `IDisposable`
@@ -41,9 +41,9 @@ A **class** in `TavernLib`, `TavernLib.Backend`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-download" /><code>{"void Download(string url, Stream destination, DateTime deadlineUtc, TimeSpan stallTimeout, long maxBytes)"}</code> |  |
-| <Link id="m-getstring" /><code>{"string GetString(string url, TimeSpan timeout, long maxBytes)"}</code> |  |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Closes the WinHTTP session. |
+| <Link id="m-download" /><code>{"void Download(string url, Stream destination, DateTime deadlineUtc, TimeSpan stallTimeout, long maxBytes)"}</code> | Writes a URL's body into a stream. Throws on a non-2xx status, a body over `maxBytes`, a stalled step or the deadline passing. |
+| <Link id="m-getstring" /><code>{"string GetString(string url, TimeSpan timeout, long maxBytes)"}</code> | Downloads a URL and returns its body as UTF-8 text, within the timeout and size limit. |
 | <Link id="m-check" /><code>{"private static void Check(bool ok, string call)"}</code> |  |
 | <Link id="m-describe" /><code>{"private static string Describe(int code)"}</code> |  |
 | <Link id="m-remainingms" /><code>{"private static int RemainingMs(DateTime deadlineUtc, string url)"}</code> |  |

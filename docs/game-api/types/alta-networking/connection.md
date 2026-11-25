@@ -1,6 +1,6 @@
 ---
 title: "Connection"
-description: "One per peer. On a server, a player's is player.ConnectionToRemotePlayer."
+description: "One network link between the server and a client: per channel send queues, receivers and a table of message handlers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Networking`.
 
-One per peer. On a server, a player's is `player.ConnectionToRemotePlayer`.
+One network link between the server and a client: per channel send queues, receivers and a table of message handlers. The server has one per connected client (`Player.ConnectionToRemotePlayer`); a client has one to the server.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`IConnection`](/game-api/types/global-i-l/iconnection)
@@ -50,46 +50,46 @@ One per peer. On a server, a player's is `player.ConnectionToRemotePlayer`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultchannel" /><code><Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" DefaultChannel { get; set; }"}</code> |  |
-| <Link id="m-identifier" /><code>{"int Identifier { get; }"}</code> |  |
-| <Link id="m-isapproved" /><code>{"bool IsApproved { get; private set; }"}</code> |  |
-| <Link id="m-isdisposed-2" /><code>{"bool IsDisposed { get; }"}</code> |  |
-| <Link id="m-player-2" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Player { get; set; }"}</code> |  |
-| <Link id="m-playername" /><code>{"string PlayerName { get; private set; }"}</code> |  |
-| <Link id="m-socket" /><code><Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" Socket { get; private set; }"}</code> |  |
-| <Link id="m-userinfo" /><code><Link to="/game-api/types/global-t-x/userinfoandrole">{"UserInfoAndRole"}</Link>{" UserInfo { get; set; }"}</code> |  |
+| <Link id="m-defaultchannel" /><code><Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" DefaultChannel { get; set; }"}</code> | Channel used when a send passes a null channel. |
+| <Link id="m-identifier" /><code>{"int Identifier { get; }"}</code> | The transport connection id. |
+| <Link id="m-isapproved" /><code>{"bool IsApproved { get; private set; }"}</code> | Whether the connection has been approved. Sends still queue before this, but nothing is flushed. |
+| <Link id="m-isdisposed-2" /><code>{"bool IsDisposed { get; }"}</code> | True once `Dispose` has run. Sends then return false. |
+| <Link id="m-player-2" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Player { get; set; }"}</code> | The `IPlayer` on the other end. Setting it updates `PlayerName` and raises `PlayerSet`. |
+| <Link id="m-playername" /><code>{"string PlayerName { get; private set; }"}</code> | Username of the linked player, or `Unknown Player` before one is set. |
+| <Link id="m-socket" /><code><Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" Socket { get; private set; }"}</code> | The `ISocket` this connection belongs to. |
+| <Link id="m-userinfo" /><code><Link to="/game-api/types/global-t-x/userinfoandrole">{"UserInfoAndRole"}</Link>{" UserInfo { get; set; }"}</code> | The user and role info for the player on this connection. |
 | <Link id="m-transportconnection" /><code>{"private "}<Link to="/game-api/types/assembly-other/itransportconnection">{"ITransportConnection"}</Link>{" TransportConnection { get; }"}</code> |  |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-approved" /><code>{"event "}<Link to="/game-api/types/alta-networking/connectioneventhandler">{"ConnectionEventHandler"}</Link>{" Approved"}</code> |  |
-| <Link id="m-disconnected" /><code>{"event "}<Link to="/game-api/types/alta-networking/connectioneventhandler">{"ConnectionEventHandler"}</Link>{" Disconnected"}</code> |  |
-| <Link id="m-packetsent" /><code>{"event "}<Link to="/game-api/types/alta-networking/packetsenthandler">{"PacketSentHandler"}</Link>{" PacketSent"}</code> |  |
-| <Link id="m-playerset" /><code>{"event Action<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> PlayerSet"}</code> |  |
+| <Link id="m-approved" /><code>{"event "}<Link to="/game-api/types/alta-networking/connectioneventhandler">{"ConnectionEventHandler"}</Link>{" Approved"}</code> | Raised when the connection is approved. |
+| <Link id="m-disconnected" /><code>{"event "}<Link to="/game-api/types/alta-networking/connectioneventhandler">{"ConnectionEventHandler"}</Link>{" Disconnected"}</code> | Raised when the connection is disposed while the transport is running. Exceptions in handlers are logged. |
+| <Link id="m-packetsent" /><code>{"event "}<Link to="/game-api/types/alta-networking/packetsenthandler">{"PacketSentHandler"}</Link>{" PacketSent"}</code> | Raised after each packet goes to the transport, with its bytes, channel and result. |
+| <Link id="m-playerset" /><code>{"event Action<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> PlayerSet"}</code> | Raised when `Player` is assigned. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-approve" /><code>{"void Approve()"}</code> |  |
-| <Link id="m-clearallhandlers" /><code>{"void ClearAllHandlers()"}</code> |  |
-| <Link id="m-clearhandler" /><code>{"void ClearHandler("}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" message)"}</code> |  |
-| <Link id="m-disconnect" /><code>{"void Disconnect(string reason)"}</code> |  |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |  |
-| <Link id="m-flushpacketmanagers" /><code>{"void FlushPacketManagers()"}</code> |  |
-| <Link id="m-ping" /><code>{"IEnumerator Ping(Action<float> callback, float timeOut = 5)"}</code> |  |
-| <Link id="m-processexistingqueues" /><code>{"void ProcessExistingQueues()"}</code> |  |
-| <Link id="m-receivepacket" /><code>{"void ReceivePacket(int channelIdentifier, ArraySegment<byte> data)"}</code> |  |
-| <Link id="m-receivepacketonserver" /><code>{"void ReceivePacketOnServer(ArraySegment<byte> data)"}</code> |  |
-| <Link id="m-send" /><code>{"bool Send("}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel, "}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" type, "}<Link to="/game-api/types/alta-networking/serializeconnectionmethod">{"SerializeConnectionMethod"}</Link>{" handler)"}</code> |  |
-| <Link id="m-send-2" /><code>{"bool Send("}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel, "}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" writer, int byteCount)"}</code> |  |
-| <Link id="m-sethandler" /><code>{"void SetHandler("}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" message, "}<Link to="/game-api/types/alta-networking/serializeconnectionmethod">{"SerializeConnectionMethod"}</Link>{" handler)"}</code> |  |
-| <Link id="m-startqueuing" /><code>{"void StartQueuing()"}</code> |  |
-| <Link id="m-stopqueuing" /><code>{"void StopQueuing()"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
-| <Link id="m-updatepacketmanagers" /><code>{"void UpdatePacketManagers()"}</code> |  |
+| <Link id="m-approve" /><code>{"void Approve()"}</code> | Marks the connection approved and raises `Approved`. Packets are only flushed once approved. |
+| <Link id="m-clearallhandlers" /><code>{"void ClearAllHandlers()"}</code> | Removes every message handler. |
+| <Link id="m-clearhandler" /><code>{"void ClearHandler("}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" message)"}</code> | Removes the handler for one message type. |
+| <Link id="m-disconnect" /><code>{"void Disconnect(string reason)"}</code> | Logs the reason, clears approval and asks the socket to close the connection. |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Sends the transport disconnect, raises `Disconnected` and frees queues, receivers and handlers. Safe to call twice. |
+| <Link id="m-flushpacketmanagers" /><code>{"void FlushPacketManagers()"}</code> | Sends everything waiting in each channel's outgoing packet manager. Does nothing until approved. |
+| <Link id="m-ping" /><code>{"IEnumerator Ping(Action<float> callback, float timeOut = 5)"}</code> | Coroutine that pings the remote IP address and passes the time to the callback. |
+| <Link id="m-processexistingqueues" /><code>{"void ProcessExistingQueues()"}</code> | Has each channel's receiver process the messages it has queued. |
+| <Link id="m-receivepacket" /><code>{"void ReceivePacket(int channelIdentifier, ArraySegment<byte> data)"}</code> | Hands an incoming packet to the receiver for its channel. |
+| <Link id="m-receivepacketonserver" /><code>{"void ReceivePacketOnServer(ArraySegment<byte> data)"}</code> | Processes every message in a packet straight away, one after another. |
+| <Link id="m-send" /><code>{"bool Send("}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel, "}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" type, "}<Link to="/game-api/types/alta-networking/serializeconnectionmethod">{"SerializeConnectionMethod"}</Link>{" handler)"}</code> | Queues a message (or raw writer bytes) on a channel's outgoing packet manager. Returns false if disposed or the channel is unknown. |
+| <Link id="m-send-2" /><code>{"bool Send("}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel, "}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" writer, int byteCount)"}</code> | Queues a message (or raw writer bytes) on a channel's outgoing packet manager. Returns false if disposed or the channel is unknown. |
+| <Link id="m-sethandler" /><code>{"void SetHandler("}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" message, "}<Link to="/game-api/types/alta-networking/serializeconnectionmethod">{"SerializeConnectionMethod"}</Link>{" handler)"}</code> | Sets the handler for a message type on this connection, warning if it replaces one. |
+| <Link id="m-startqueuing" /><code>{"void StartQueuing()"}</code> | Holds outgoing messages instead of sending them. Used while a client reports it has paused; a client paused for a minute is disconnected. |
+| <Link id="m-stopqueuing" /><code>{"void StopQueuing()"}</code> | Stops holding messages and sends everything that was queued. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | The user info if known, otherwise the connection id. |
+| <Link id="m-updatepacketmanagers" /><code>{"void UpdatePacketManagers()"}</code> | Per frame update of the outgoing packet managers, reading the transport queue size first. Does nothing until approved. |
 | <Link id="m-disconnectaftertimeout" /><code>{"private async void DisconnectAfterTimeout("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |  |
 | <Link id="m-handleconnectionpause" /><code>{"internal void HandleConnectionPause("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 | <Link id="m-hashandler" /><code>{"private bool HasHandler("}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" message)"}</code> |  |

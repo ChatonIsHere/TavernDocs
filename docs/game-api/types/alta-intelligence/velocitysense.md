@@ -1,6 +1,6 @@
 ---
 title: "VelocitySense"
-description: "target.GetVelocity(), which is always 0. No shipped sense uses it: \"Velocity\" is a BasicSense."
+description: "target.GetVelocity(), which is always 0."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "UserToken"
-description: "class UserToken in Root.Township."
+description: "One user entry on the friends board, with optional accept and reject buttons."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UserToken
 
 A **class** in `Root.Township`, `Alta.Meta.Friends`.
+
+One user entry on the friends board, with optional accept and reject buttons.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** `MonoBehaviour`
@@ -35,15 +37,15 @@ A **class** in `Root.Township`, `Alta.Meta.Friends`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-manager" /><code><Link to="/game-api/types/alta-menus/friendsmanager">{"FriendsManager"}</Link>{" Manager { get; private set; }"}</code> |  |
-| <Link id="m-userinfo" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" { get; private set; }"}</code> |  |
+| <Link id="m-manager" /><code><Link to="/game-api/types/alta-menus/friendsmanager">{"FriendsManager"}</Link>{" Manager { get; private set; }"}</code> | The friends manager that owns it. |
+| <Link id="m-userinfo" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" { get; private set; }"}</code> | The user shown. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"void Run(bool hasAccepted)"}</code> |  |
-| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo, "}<Link to="/game-api/types/alta-menus/friendsmanager">{"FriendsManager"}</Link>{" manager, Action<"}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> accept, Action<"}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> reject)"}</code> |  |
+| <Link id="m-run" /><code>{"void Run(bool hasAccepted)"}</code> | Runs the accept or reject action. |
+| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo, "}<Link to="/game-api/types/alta-menus/friendsmanager">{"FriendsManager"}</Link>{" manager, Action<"}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> accept, Action<"}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> reject)"}</code> | Sets the user, name text and actions. A button is hidden when its action is null. |
 
 ## Used in
 

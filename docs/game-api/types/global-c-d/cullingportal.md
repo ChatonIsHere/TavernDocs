@@ -1,6 +1,6 @@
 ---
 title: "CullingPortal"
-description: "class CullingPortal in Root.Township."
+description: "A portal between two chunks (mostly cave layers) that can hide or show the static renderers in a box on either side."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CullingPortal
 
 A **class** in `Root.Township`, no namespace.
+
+A portal between two chunks (mostly cave layers) that can hide or show the static renderers in a box on either side. Registers itself with both chunks' connections.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MonoBehaviour`
@@ -42,19 +44,19 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-backchunk-2" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" BackChunk { get; set; }"}</code> |  |
-| <Link id="m-center-2" /><code>{"Vector3 Center { get; }"}</code> |  |
-| <Link id="m-direction-2" /><code>{"Vector3 Direction { get; }"}</code> |  |
-| <Link id="m-frontchunk-2" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" FrontChunk { get; set; }"}</code> |  |
+| <Link id="m-backchunk-2" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" BackChunk { get; set; }"}</code> | Chunk on the back side, or null if it's missing or disabled (not checked on Android). |
+| <Link id="m-center-2" /><code>{"Vector3 Center { get; }"}</code> | World position of the portal. |
+| <Link id="m-direction-2" /><code>{"Vector3 Direction { get; }"}</code> | World direction the portal faces (its local up). |
+| <Link id="m-frontchunk-2" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" FrontChunk { get; set; }"}</code> | Chunk on the front side, or null if it's missing or disabled (not checked on Android). |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cullback" /><code>{"void CullBack()"}</code> |  |
-| <Link id="m-cullfront" /><code>{"void CullFront()"}</code> |  |
-| <Link id="m-uncullback" /><code>{"void UncullBack()"}</code> |  |
-| <Link id="m-uncullfront" /><code>{"void UncullFront()"}</code> |  |
+| <Link id="m-cullback" /><code>{"void CullBack()"}</code> | Hides the renderers on the back side. |
+| <Link id="m-cullfront" /><code>{"void CullFront()"}</code> | Hides the renderers on the front side. |
+| <Link id="m-uncullback" /><code>{"void UncullBack()"}</code> | Shows the renderers on the back side, finding them in the cave streamer the first time. |
+| <Link id="m-uncullfront" /><code>{"void UncullFront()"}</code> | Shows the renderers on the front side, finding them in the cave streamer the first time. |
 | <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
 | <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
 | <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |

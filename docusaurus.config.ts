@@ -97,6 +97,8 @@ const config: Config = {
                         {type: 'docSidebar', sidebarId: 'mod', label: 'Guides'},
                         {type: 'docSidebar', sidebarId: 'tavernlib', label: 'TavernLib API'},
                         {type: 'docSidebar', sidebarId: 'game', label: 'Game API'},
+                        {type: 'doc', docId: 'tavernlib-api/types/overview', label: 'TavernLib types'},
+                        {type: 'doc', docId: 'game-api/types/overview', label: 'Game types'},
                     ],
                 },
                 {type: 'docSidebar', sidebarId: 'help', position: 'left', label: 'Help'},

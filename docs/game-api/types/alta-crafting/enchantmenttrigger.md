@@ -1,6 +1,6 @@
 ---
 title: "EnchantmentTrigger"
-description: "When it fires. CreateApplication applies the trigger on the server only. QuickDrawTrigger is one (a fast, effective hit within timeToHit)."
+description: "When it fires."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

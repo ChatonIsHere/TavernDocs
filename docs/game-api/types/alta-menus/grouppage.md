@@ -1,6 +1,6 @@
 ---
 title: "GroupPage"
-description: "Base for a page in the server management UI that shows one joined group. Client only."
+description: "Base for a page in the server management UI that shows one joined group."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

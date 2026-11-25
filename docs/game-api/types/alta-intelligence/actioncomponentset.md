@@ -1,6 +1,6 @@
 ---
 title: "ActionComponentSet"
-description: "A MonoBehaviour whose child ActionComponents make up one set of choices."
+description: "A component whose children are ActionComponents; it builds the set of actions an AI agent can choose from."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
 
-A `MonoBehaviour` whose child `ActionComponent`s make up one set of choices.
+A component whose children are `ActionComponent`s; it builds the set of actions an AI agent can choose from.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** `MonoBehaviour`
@@ -34,7 +34,7 @@ A `MonoBehaviour` whose child `ActionComponent`s make up one set of choices.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getactionset" /><code><Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<T> GetActionSet<T>()"}</code> |  |
+| <Link id="m-getactionset" /><code><Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<T> GetActionSet<T>()"}</code> | Builds an action set from the child action components. Its cache only works for the base `Agent` type, so it usually rebuilds each call. |
 
 ## Used in
 

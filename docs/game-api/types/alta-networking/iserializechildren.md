@@ -1,6 +1,6 @@
 ---
 title: "ISerializeChildren"
-description: "interface ISerializeChildren in Root.Township."
+description: "Passed to ISavable load and save methods so a component can save and restore the child prefabs spawned under its entity."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Networking`.
 
+Passed to `ISavable` load and save methods so a component can save and restore the child prefabs spawned under its entity.
+
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Derived types** [`NetworkPrefab`](/game-api/types/alta-networking/networkprefab), [`EmptyChildrenSerializer`](/game-api/types/global-e-h/emptychildrenserializer)
 
@@ -19,18 +21,18 @@ An **interface** in `Root.Township`, `Alta.Networking`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-childcount" /><code>{"int ChildCount { get; }"}</code> |  |
-| <Link id="m-childprefabs" /><code>{"List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> ChildPrefabs { get; }"}</code> |  |
+| <Link id="m-childcount" /><code>{"int ChildCount { get; }"}</code> | Number of child entries. |
+| <Link id="m-childprefabs" /><code>{"List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> ChildPrefabs { get; }"}</code> | The child prefab entries. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addchild" /><code>{"void AddChild("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child)"}</code> |  |
-| <Link id="m-addemptychildatindex" /><code>{"void AddEmptyChildAtIndex(int index)"}</code> |  |
-| <Link id="m-getchildindex" /><code>{"int GetChildIndex("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child)"}</code> |  |
-| <Link id="m-getchildindex-2" /><code>{"int GetChildIndex("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent)"}</code> |  |
-| <Link id="m-getspawnedchildren" /><code>{"void GetSpawnedChildren(int index, "}<Link to="/game-api/types/alta-networking/networkprefabchildeventhandler">{"NetworkPrefabChildEventHandler"}</Link>{" callback)"}</code> |  |
+| <Link id="m-addchild" /><code>{"void AddChild("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child)"}</code> | Records a spawned child prefab under a parent entity. |
+| <Link id="m-addemptychildatindex" /><code>{"void AddEmptyChildAtIndex(int index)"}</code> | Adds an empty placeholder at a child index. |
+| <Link id="m-getchildindex" /><code>{"int GetChildIndex("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child)"}</code> | Index of a child entry, looked up by child prefab or by parent entity. |
+| <Link id="m-getchildindex-2" /><code>{"int GetChildIndex("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent)"}</code> | Index of a child entry, looked up by child prefab or by parent entity. |
+| <Link id="m-getspawnedchildren" /><code>{"void GetSpawnedChildren(int index, "}<Link to="/game-api/types/alta-networking/networkprefabchildeventhandler">{"NetworkPrefabChildEventHandler"}</Link>{" callback)"}</code> | Calls back with the children spawned for the entry at an index. |
 
 ## Used in
 

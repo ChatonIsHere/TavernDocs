@@ -1,6 +1,6 @@
 ---
 title: "HandCamera"
-description: "class HandCamera in Root.Township."
+description: "The handheld photo camera a player spawns from the quick access menu."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandCamera
 
 A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
+
+The handheld photo camera a player spawns from the quick access menu. Only its owner can pick it up; photos, selfie mode and streaming sync to others. Never saved. `HandCamera.Current` is the local player's.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`IBuildRendererBakeable`](/game-api/types/assembly-other/ibuildrendererbakeable), [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable)
@@ -76,46 +78,46 @@ A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activecamera" /><code><Link to="/game-api/types/alta-customization/blockablecamera">{"BlockableCamera"}</Link>{" ActiveCamera { get; }"}</code> |  |
-| <Link id="m-current" /><code>{"static "}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" Current { get; private set; }"}</code> |  |
-| <Link id="m-currenttimer-2" /><code>{"int CurrentTimer { get; }"}</code> |  |
-| <Link id="m-handles-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> Handles { get; }"}</code> |  |
-| <Link id="m-islocalplayer" /><code>{"bool IsLocalPlayer { get; private set; }"}</code> |  |
-| <Link id="m-isscreenfree" /><code>{"bool IsScreenFree { get; }"}</code> |  |
-| <Link id="m-isstreaming" /><code>{"bool IsStreaming { get; private set; }"}</code> |  |
-| <Link id="m-isusingselfiecamera" /><code>{"bool IsUsingSelfieCamera { get; private set; }"}</code> |  |
+| <Link id="m-activecamera" /><code><Link to="/game-api/types/alta-customization/blockablecamera">{"BlockableCamera"}</Link>{" ActiveCamera { get; }"}</code> | The front camera, or the selfie camera when selfie mode is on. |
+| <Link id="m-current" /><code>{"static "}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" Current { get; private set; }"}</code> | Static: the camera owned by the local player, or null. |
+| <Link id="m-currenttimer-2" /><code>{"int CurrentTimer { get; }"}</code> | Seconds of the selected photo timer. |
+| <Link id="m-handles-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> Handles { get; }"}</code> | The pickups the camera is held by. |
+| <Link id="m-islocalplayer" /><code>{"bool IsLocalPlayer { get; private set; }"}</code> | True if the local player owns this camera. |
+| <Link id="m-isscreenfree" /><code>{"bool IsScreenFree { get; }"}</code> | False while a photo is being taken. |
+| <Link id="m-isstreaming" /><code>{"bool IsStreaming { get; private set; }"}</code> | True while the camera feed is being streamed out. |
+| <Link id="m-isusingselfiecamera" /><code>{"bool IsUsingSelfieCamera { get; private set; }"}</code> | True in selfie mode. |
 | <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |  |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onconnectedcalled" /><code>{"event Action<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> OnConnectedCalled"}</code> |  |
-| <Link id="m-onpostrender" /><code>{"static event "}<Link to="/game-api/types/alta-customization/handcamerarender">{"HandCameraRender"}</Link>{" onPostRender"}</code> |  |
-| <Link id="m-onprerender" /><code>{"static event "}<Link to="/game-api/types/alta-customization/handcamerarender">{"HandCameraRender"}</Link>{" onPreRender"}</code> |  |
-| <Link id="m-onupdatedsettings" /><code>{"event Action<"}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{"> OnUpdatedSettings"}</code> |  |
-| <Link id="m-ownerupdated" /><code>{"event Action<bool> OwnerUpdated"}</code> |  |
-| <Link id="m-photostart" /><code>{"event Action PhotoStart"}</code> |  |
-| <Link id="m-selfiemodechanged" /><code>{"event Action<bool> SelfieModeChanged"}</code> |  |
+| <Link id="m-onconnectedcalled" /><code>{"event Action<"}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"> OnConnectedCalled"}</code> | Raised after `OnConnected` for a player. |
+| <Link id="m-onpostrender" /><code>{"static event "}<Link to="/game-api/types/alta-customization/handcamerarender">{"HandCameraRender"}</Link>{" onPostRender"}</code> | Static event after either camera renders. |
+| <Link id="m-onprerender" /><code>{"static event "}<Link to="/game-api/types/alta-customization/handcamerarender">{"HandCameraRender"}</Link>{" onPreRender"}</code> | Static event before either camera renders, with the reason (for example a photo). UI uses it to hide things. |
+| <Link id="m-onupdatedsettings" /><code>{"event Action<"}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{"> OnUpdatedSettings"}</code> | Raised when timer, streaming or resolution settings change. |
+| <Link id="m-ownerupdated" /><code>{"event Action<bool> OwnerUpdated"}</code> | Raised when the owner is set, with whether it is the local player. |
+| <Link id="m-photostart" /><code>{"event Action PhotoStart"}</code> | Raised when a long press to take a photo begins. |
+| <Link id="m-selfiemodechanged" /><code>{"event Action<bool> SelfieModeChanged"}</code> | Raised when selfie mode turns on or off. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changetimer" /><code>{"void ChangeTimer()"}</code> |  |
-| <Link id="m-endhaptics" /><code>{"void EndHaptics("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |  |
-| <Link id="m-fade" /><code>{"void Fade(bool isFadingIn)"}</code> |  |
-| <Link id="m-flipcamera" /><code>{"void FlipCamera()"}</code> |  |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-interactionfilter" /><code>{"void InteractionFilter("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |  |
-| <Link id="m-isinteractorowner" /><code>{"bool IsInteractorOwner("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-screenshot-2" /><code>{"void Screenshot("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |  |
-| <Link id="m-setforcedhighres" /><code>{"void SetForcedHighRes(bool isforced)"}</code> |  |
-| <Link id="m-setupowner" /><code>{"void SetupOwner("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-starthaptics" /><code>{"void StartHaptics("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |  |
-| <Link id="m-takescreenshot" /><code>{"void TakeScreenshot()"}</code> |  |
-| <Link id="m-togglestreaming" /><code>{"void ToggleStreaming()"}</code> |  |
+| <Link id="m-changetimer" /><code>{"void ChangeTimer()"}</code> | Client: cycles to the next photo timer option. |
+| <Link id="m-endhaptics" /><code>{"void EndHaptics("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> | Stops the long-press vibration for a hand. |
+| <Link id="m-fade" /><code>{"void Fade(bool isFadingIn)"}</code> | Fades the camera in or out. Server: sends it to clients, and fading out destroys the camera afterwards. |
+| <Link id="m-flipcamera" /><code>{"void FlipCamera()"}</code> | Switches between front and selfie camera and syncs it. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up sync messages and marks the handles as not saved. |
+| <Link id="m-interactionfilter" /><code>{"void InteractionFilter("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> | Blocks anyone but the owner from grabbing the handles. |
+| <Link id="m-isinteractorowner" /><code>{"bool IsInteractorOwner("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | True if the hand belongs to the camera's owner. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends the owner and selfie state to a newly connected player. |
+| <Link id="m-screenshot-2" /><code>{"void Screenshot("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> | Input handler for the photo button: stops the haptics and takes a photo. |
+| <Link id="m-setforcedhighres" /><code>{"void SetForcedHighRes(bool isforced)"}</code> | Forces the high resolution render texture even when not streaming. |
+| <Link id="m-setupowner" /><code>{"void SetupOwner("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Server: sets which player owns the camera and syncs it. Called when the camera is spawned for a player. |
+| <Link id="m-starthaptics" /><code>{"void StartHaptics("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> | Starts a light vibration on a hand while the photo button is held. |
+| <Link id="m-takescreenshot" /><code>{"void TakeScreenshot()"}</code> | Takes a photo (after the timer) and tells others so they see it too. |
+| <Link id="m-togglestreaming" /><code>{"void ToggleStreaming()"}</code> | Turns streaming of the camera feed on or off and syncs it. |
 | <Link id="m-addlocalplayer" /><code>{"private void AddLocalPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |
 | <Link id="m-animatemarker" /><code>{"private IEnumerator AnimateMarker(Color color, bool hasEffectss = false, int blips = 1) (iterator)"}</code> |  |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
@@ -133,7 +135,7 @@ A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
 | <Link id="m-onprerender-2" /><code>{"private void OnPreRender()"}</code> |  |
 | <Link id="m-remotescreenshot" /><code>{"private async void RemoteScreenshot()"}</code> |  |
 | <Link id="m-runtimer" /><code>{"private async Task RunTimer(int timer)"}</code> |  |
-| <Link id="m-screenshot-3" /><code>{"private async void Screenshot()"}</code> |  |
+| <Link id="m-screenshot-3" /><code>{"private async void Screenshot()"}</code> | Input handler for the photo button: stops the haptics and takes a photo. |
 | <Link id="m-setantialiasing" /><code>{"private void SetAntialiasing(bool isEnabled)"}</code> |  |
 | <Link id="m-setupforlocalplayerowner" /><code>{"private void SetupForLocalPlayerOwner()"}</code> |  |
 | <Link id="m-setviewfindertexture" /><code>{"private void SetViewFinderTexture(Texture texture)"}</code> |  |

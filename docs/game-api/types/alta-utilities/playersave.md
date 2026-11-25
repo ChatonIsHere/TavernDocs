@@ -1,6 +1,6 @@
 ---
 title: "PlayerSave"
-description: "class PlayerSave in Root.Township."
+description: "A player's save file: position data plus binary blobs for their body, state stack, player entity, progression and cosmetics."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerSave
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+A player's save file: position data plus binary blobs for their body, state stack, player entity, progression and cosmetics. Server: `Player.Save` gives the loaded one. The blobs are saving-system bits; treat them as opaque.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`IAltaFileFormat`](/game-api/types/assembly-other/ialtafileformat)
@@ -44,29 +46,29 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cosmeticbytes" /><code>{"int CosmeticBytes { get; set; }"}</code> |  |
-| <Link id="m-cosmeticdata" /><code>{"uint[] CosmeticData { get; set; }"}</code> |  |
-| <Link id="m-data" /><code><Link to="/game-api/types/alta-utilities/playersavefiledata">{"PlayerSaveFileData"}</Link>{" Data { get; }"}</code> |  |
-| <Link id="m-lastsafeposition-2" /><code>{"Vector3 LastSafePosition { get; set; }"}</code> |  |
-| <Link id="m-playerbytes-2" /><code>{"int PlayerBytes { get; set; }"}</code> |  |
-| <Link id="m-playerdata" /><code>{"uint[] PlayerData { get; set; }"}</code> |  |
-| <Link id="m-playeridentifier" /><code>{"int PlayerIdentifier { get; set; }"}</code> |  |
-| <Link id="m-prefabbytes-2" /><code>{"int PrefabBytes { get; set; }"}</code> |  |
-| <Link id="m-prefabchunkversioning" /><code><Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" PrefabChunkVersioning { get; set; }"}</code> |  |
-| <Link id="m-prefabdata" /><code>{"uint[] PrefabData { get; set; }"}</code> |  |
-| <Link id="m-progressionbytes-2" /><code>{"int ProgressionBytes { get; set; }"}</code> |  |
-| <Link id="m-progressiondata" /><code>{"uint[] ProgressionData { get; set; }"}</code> |  |
-| <Link id="m-statebytes-2" /><code>{"int StateBytes { get; set; }"}</code> |  |
-| <Link id="m-statedata" /><code>{"uint[] StateData { get; set; }"}</code> |  |
+| <Link id="m-cosmeticbytes" /><code>{"int CosmeticBytes { get; set; }"}</code> | Used length of `CosmeticData` in bytes. |
+| <Link id="m-cosmeticdata" /><code>{"uint[] CosmeticData { get; set; }"}</code> | The player's look. Setting it returns the old array to the pool. |
+| <Link id="m-data" /><code><Link to="/game-api/types/alta-utilities/playersavefiledata">{"PlayerSaveFileData"}</Link>{" Data { get; }"}</code> | `position` (where they were) and `home` (their respawn point, if set). |
+| <Link id="m-lastsafeposition-2" /><code>{"Vector3 LastSafePosition { get; set; }"}</code> | The last safe spot their client reported. |
+| <Link id="m-playerbytes-2" /><code>{"int PlayerBytes { get; set; }"}</code> | Used length of `PlayerData` in bytes. |
+| <Link id="m-playerdata" /><code>{"uint[] PlayerData { get; set; }"}</code> | The `Player` entity's own savable parts. Setting it returns the old array to the pool. |
+| <Link id="m-playeridentifier" /><code>{"int PlayerIdentifier { get; set; }"}</code> | The user id. |
+| <Link id="m-prefabbytes-2" /><code>{"int PrefabBytes { get; set; }"}</code> | Used length of `PrefabData` in bytes. |
+| <Link id="m-prefabchunkversioning" /><code><Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" PrefabChunkVersioning { get; set; }"}</code> | Save format versions the prefab data was written with. |
+| <Link id="m-prefabdata" /><code>{"uint[] PrefabData { get; set; }"}</code> | The body: what's in their hands, belt and back, and everything inside. Setting it returns the old array to the pool. |
+| <Link id="m-progressionbytes-2" /><code>{"int ProgressionBytes { get; set; }"}</code> | Used length of `ProgressionData` in bytes. |
+| <Link id="m-progressiondata" /><code>{"uint[] ProgressionData { get; set; }"}</code> | Skills and progression. Setting it returns the old array to the pool. |
+| <Link id="m-statebytes-2" /><code>{"int StateBytes { get; set; }"}</code> | Used length of `StateData` in bytes. |
+| <Link id="m-statedata" /><code>{"uint[] StateData { get; set; }"}</code> | The player state stack. Setting it returns the old array to the pool. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clone" /><code>{"override "}<Link to="/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> |  |
-| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> |  |
-| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> |  |
-| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> |  |
+| <Link id="m-clone" /><code>{"override "}<Link to="/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> | Deep copy with its own arrays, used when writing the file in the background. |
+| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> | Returns all arrays to the pool. Warns if any were missing. |
+| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> | Reads the file, handling the current and three older formats. Older formats may drop cosmetics or state. |
+| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> | Writes the file in the current format. |
 | <Link id="m-releasearray" /><code>{"private bool ReleaseArray(ref uint[] array)"}</code> |  |
 
 ## Used in

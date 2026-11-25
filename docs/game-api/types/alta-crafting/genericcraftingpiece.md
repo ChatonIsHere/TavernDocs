@@ -1,6 +1,6 @@
 ---
 title: "GenericCraftingPiece"
-description: "class GenericCraftingPiece in Root.Township."
+description: "One ghost piece of a generic crafting station's project."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GenericCraftingPiece
 
 A **class** in `Root.Township`, `Alta.Crafting`.
+
+One ghost piece of a generic crafting station's project. Placing the right item fills it with that item's material; hammering its nails completes it before a timer pops it back out. A pooled object on both sides; the station syncs it.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`PooledObject`](/game-api/types/global-p/pooledobject), [`INailable`](/game-api/types/alta-crafting/inailable)
@@ -48,43 +50,43 @@ A **class** in `Root.Township`, `Alta.Crafting`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bounds" /><code>{"Bounds Bounds { get; }"}</code> |  |
-| <Link id="m-centerposition-2" /><code>{"Vector3 CenterPosition { get; }"}</code> |  |
-| <Link id="m-hash" /><code>{"int Hash { get; }"}</code> |  |
-| <Link id="m-iscomplete" /><code>{"bool IsComplete { get; private set; }"}</code> |  |
-| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; private set; }"}</code> |  |
-| <Link id="m-isfilled" /><code>{"bool IsFilled { get; private set; }"}</code> |  |
-| <Link id="m-level" /><code>{"int Level { get; }"}</code> |  |
-| <Link id="m-material" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" Material { get; private set; }"}</code> |  |
-| <Link id="m-nails" /><code><Link to="/game-api/types/alta-crafting/genericcraftingnail">{"GenericCraftingNail"}</Link>{"[] Nails { get; private set; }"}</code> |  |
-| <Link id="m-resulthash" /><code>{"int ResultHash { get; }"}</code> |  |
-| <Link id="m-rotation" /><code>{"Quaternion Rotation { get; private set; }"}</code> |  |
+| <Link id="m-bounds" /><code>{"Bounds Bounds { get; }"}</code> | World bounds of the piece's mesh. |
+| <Link id="m-centerposition-2" /><code>{"Vector3 CenterPosition { get; }"}</code> | World centre of the piece's mesh. |
+| <Link id="m-hash" /><code>{"int Hash { get; }"}</code> | Identifier of this piece in the recipe. |
+| <Link id="m-iscomplete" /><code>{"bool IsComplete { get; private set; }"}</code> | True once all its nails are done. |
+| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; private set; }"}</code> | True when the piece can be filled (its level is open). |
+| <Link id="m-isfilled" /><code>{"bool IsFilled { get; private set; }"}</code> | True when an item has been placed in it. |
+| <Link id="m-level" /><code>{"int Level { get; }"}</code> | The build level this piece belongs to. |
+| <Link id="m-material" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" Material { get; private set; }"}</code> | Physical material of the item placed in it, or null. |
+| <Link id="m-nails" /><code><Link to="/game-api/types/alta-crafting/genericcraftingnail">{"GenericCraftingNail"}</Link>{"[] Nails { get; private set; }"}</code> | The piece's nails. |
+| <Link id="m-resulthash" /><code>{"int ResultHash { get; }"}</code> | Result hash from the piece definition. |
+| <Link id="m-rotation" /><code>{"Quaternion Rotation { get; private set; }"}</code> | World rotation of the piece. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-acceptscomponent" /><code>{"bool AcceptsComponent("}<Link to="/game-api/types/alta-crafting/genericcraftingcomponent">{"GenericCraftingComponent"}</Link>{" component)"}</code> |  |
-| <Link id="m-applysavedata" /><code>{"void ApplySaveData("}<Link to="/game-api/types/alta-crafting/piecesavedata-alta-crafting">{"PieceSaveData"}</Link>{" saveData, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-canremove" /><code>{"bool CanRemove()"}</code> |  |
-| <Link id="m-checkfailpop" /><code>{"void CheckFailPop()"}</code> |  |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-empty" /><code>{"void Empty()"}</code> |  |
-| <Link id="m-forcecomplete" /><code>{"void ForceComplete()"}</code> |  |
-| <Link id="m-getsavedata" /><code><Link to="/game-api/types/alta-crafting/piecesavedata-alta-crafting">{"PieceSaveData"}</Link>{" GetSaveData()"}</code> |  |
-| <Link id="m-oncomplete" /><code>{"void OnComplete("}<Link to="/game-api/types/alta-crafting/genericcraftingnail">{"GenericCraftingNail"}</Link>{" nail, bool hasEffects)"}</code> |  |
-| <Link id="m-playdestroyeffect" /><code>{"void PlayDestroyEffect()"}</code> |  |
-| <Link id="m-receivechiselhit" /><code>{"void ReceiveChiselHit(float damage)"}</code> |  |
-| <Link id="m-setanimate" /><code>{"void SetAnimate(bool isAnimating)"}</code> |  |
-| <Link id="m-setenabled" /><code>{"void SetEnabled(bool isEnabled)"}</code> |  |
-| <Link id="m-setmaterial" /><code>{"void SetMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material)"}</code> |  |
-| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/alta-crafting/iproject">{"IProject"}</Link>{" project, "}<Link to="/game-api/types/alta-crafting/genericcraftingpiecedefinition">{"GenericCraftingPieceDefinition"}</Link>{" definition)"}</code> |  |
-| <Link id="m-spawnrefuse" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnRefuse()"}</code> |  |
-| <Link id="m-syncfailure" /><code>{"void SyncFailure("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncfull" /><code>{"void SyncFull("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncgrab" /><code>{"void SyncGrab("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncstate" /><code>{"void SyncState("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool hasEffects)"}</code> |  |
-| <Link id="m-updatedistance" /><code>{"void UpdateDistance(int rangeLevel)"}</code> |  |
+| <Link id="m-acceptscomponent" /><code>{"bool AcceptsComponent("}<Link to="/game-api/types/alta-crafting/genericcraftingcomponent">{"GenericCraftingComponent"}</Link>{" component)"}</code> | True if the piece is enabled, empty and the component is the right source item. |
+| <Link id="m-applysavedata" /><code>{"void ApplySaveData("}<Link to="/game-api/types/alta-crafting/piecesavedata-alta-crafting">{"PieceSaveData"}</Link>{" saveData, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Server: restores the piece from a save. An unfinished filled piece comes back as a loose item instead. |
+| <Link id="m-canremove" /><code>{"bool CanRemove()"}</code> | True if filled, and either unfinished or at a level the project allows removing. |
+| <Link id="m-checkfailpop" /><code>{"void CheckFailPop()"}</code> | May pop a completed piece out at random, more likely the more it was damaged. |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | Empties the piece, releases its nails and returns it to the pool. |
+| <Link id="m-empty" /><code>{"void Empty()"}</code> | Removes the material, resetting the piece's progress. |
+| <Link id="m-forcecomplete" /><code>{"void ForceComplete()"}</code> | Completes every nail and the piece, without effects. |
+| <Link id="m-getsavedata" /><code><Link to="/game-api/types/alta-crafting/piecesavedata-alta-crafting">{"PieceSaveData"}</Link>{" GetSaveData()"}</code> | Returns the piece's hash, completion, damage and material for saving. |
+| <Link id="m-oncomplete" /><code>{"void OnComplete("}<Link to="/game-api/types/alta-crafting/genericcraftingnail">{"GenericCraftingNail"}</Link>{" nail, bool hasEffects)"}</code> | Called when a nail finishes; completes the piece if all nails are done and tells the project. |
+| <Link id="m-playdestroyeffect" /><code>{"void PlayDestroyEffect()"}</code> | Plays the effect for a piece breaking from bad hits. |
+| <Link id="m-receivechiselhit" /><code>{"void ReceiveChiselHit(float damage)"}</code> | Server: pops the piece out if a chisel hit is strong enough and it can be removed. |
+| <Link id="m-setanimate" /><code>{"void SetAnimate(bool isAnimating)"}</code> | Highlights an empty enabled piece, or turns the highlight off. |
+| <Link id="m-setenabled" /><code>{"void SetEnabled(bool isEnabled)"}</code> | Opens or closes the piece. Closing a filled piece drops its item back out. |
+| <Link id="m-setmaterial" /><code>{"void SetMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material)"}</code> | Fills the piece with a material, or empties it with null. On the server, filling starts the timer that pops it if nails aren't done. |
+| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/alta-crafting/iproject">{"IProject"}</Link>{" project, "}<Link to="/game-api/types/alta-crafting/genericcraftingpiecedefinition">{"GenericCraftingPieceDefinition"}</Link>{" definition)"}</code> | Sets the piece up from its definition for a project: transform, meshes, nails. |
+| <Link id="m-spawnrefuse" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnRefuse()"}</code> | Spawns the placed item back out as a loose item with its material. |
+| <Link id="m-syncfailure" /><code>{"void SyncFailure("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads how damaged the piece is, which drives the crack visuals. |
+| <Link id="m-syncfull" /><code>{"void SyncFull("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the piece state and every nail. |
+| <Link id="m-syncgrab" /><code>{"void SyncGrab("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Client to server: a player grabbed the filled piece, so the server pops it into their hand. |
+| <Link id="m-syncstate" /><code>{"void SyncState("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool hasEffects)"}</code> | Writes or reads enabled, complete and filled state and the material. |
+| <Link id="m-updatedistance" /><code>{"void UpdateDistance(int rangeLevel)"}</code> | Shows or hides the meshes for a distance level. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-checkiscomplete" /><code>{"private bool CheckIsComplete()"}</code> |  |
 | <Link id="m-filterpop" /><code>{"private void FilterPop("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |  |

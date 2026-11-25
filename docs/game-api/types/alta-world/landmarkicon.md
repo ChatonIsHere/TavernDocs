@@ -1,6 +1,6 @@
 ---
 title: "LandmarkIcon"
-description: "class LandmarkIcon in Root.Township."
+description: "A hashed asset for a map landmark icon."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LandmarkIcon
 
 A **class** in `Root.Township`, `Alta.Map`.
+
+A hashed asset for a map landmark icon.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** [`HashedGeneralValue<LandmarkIcon>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -34,8 +36,8 @@ A **class** in `Root.Township`, `Alta.Map`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-scale-2" /><code>{"float Scale { get; }"}</code> |  |
-| <Link id="m-sprite-2" /><code>{"Sprite Sprite { get; }"}</code> |  |
+| <Link id="m-scale-2" /><code>{"float Scale { get; }"}</code> | Size of the icon on the map. 1 by default. |
+| <Link id="m-sprite-2" /><code>{"Sprite Sprite { get; }"}</code> | The icon image. |
 
 ## Used in
 

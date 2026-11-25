@@ -1,6 +1,6 @@
 ---
 title: "ActionItemData"
-description: "class ActionItemData in Root.Township."
+description: "Settings for an item summoned from the quick access menu: what to spawn, where, and when it despawns if the player walks away."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ActionItemData
 
 A **class** in `Root.Township`, `Alta.QuickAccessActions`.
+
+Settings for an item summoned from the quick access menu: what to spawn, where, and when it despawns if the player walks away.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `ScriptableObject`
@@ -39,14 +41,14 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-action-2" /><code><Link to="/game-api/types/alta-player/summonactionitemquickaccess">{"SummonActionItemQuickAccess"}</Link>{" Action { get; }"}</code> |  |
-| <Link id="m-actionitemprefab-2" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" ActionItemPrefab { get; }"}</code> |  |
-| <Link id="m-distancefromplayer-2" /><code>{"float DistanceFromPlayer { get; }"}</code> |  |
-| <Link id="m-maxdistancefromplayersquared-2" /><code>{"float MaxDistanceFromPlayerSquared { get; }"}</code> |  |
-| <Link id="m-onactionitemdisappeareffects-2" /><code><Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" OnActionItemDisappearEffects { get; }"}</code> |  |
-| <Link id="m-onactionitemspawneffects-2" /><code><Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" OnActionItemSpawnEffects { get; }"}</code> |  |
-| <Link id="m-outofrangehaptic-2" /><code>{"float OutOfRangeHaptic { get; }"}</code> |  |
-| <Link id="m-timetodespawn-2" /><code>{"float TimeToDespawn { get; }"}</code> |  |
+| <Link id="m-action-2" /><code><Link to="/game-api/types/alta-player/summonactionitemquickaccess">{"SummonActionItemQuickAccess"}</Link>{" Action { get; }"}</code> | The quick access action that summons this item. |
+| <Link id="m-actionitemprefab-2" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" ActionItemPrefab { get; }"}</code> | The prefab spawned. |
+| <Link id="m-distancefromplayer-2" /><code>{"float DistanceFromPlayer { get; }"}</code> | How far in front of the player it spawns. |
+| <Link id="m-maxdistancefromplayersquared-2" /><code>{"float MaxDistanceFromPlayerSquared { get; }"}</code> | Squared distance from the player's head beyond which the despawn timer runs. |
+| <Link id="m-onactionitemdisappeareffects-2" /><code><Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" OnActionItemDisappearEffects { get; }"}</code> | Event with a position, for effects when the item goes. |
+| <Link id="m-onactionitemspawneffects-2" /><code><Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" OnActionItemSpawnEffects { get; }"}</code> | Event with a position, for effects when the item appears. |
+| <Link id="m-outofrangehaptic-2" /><code>{"float OutOfRangeHaptic { get; }"}</code> | Haptic strength on both hands while the item is out of range. |
+| <Link id="m-timetodespawn-2" /><code>{"float TimeToDespawn { get; }"}</code> | Seconds out of range before the item is destroyed. Resets when back in range. |
 
 ## Used in
 

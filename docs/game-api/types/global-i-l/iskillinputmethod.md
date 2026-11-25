@@ -1,6 +1,6 @@
 ---
 title: "ISkillInputMethod"
-description: "interface ISkillInputMethod in Root.Township."
+description: "One gesture a held tool skill waits for (shake, downward swing, strike succession, bow pullback, hand position and so on)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+One gesture a held tool skill waits for (shake, downward swing, strike succession, bow pullback, hand position and so on). Created from a `SkillInputStructure` and owned by a `HeldPickupHandler`.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`BowStringPullbackInputMethod`](/game-api/types/global-a-b/bowstringpullbackinputmethod), [`DownwardSwingInput`](/game-api/types/global-c-d/downwardswinginput), [`HandPositionInput`](/game-api/types/global-e-h/handpositioninput), [`PickupGrabInputMethod`](/game-api/types/global-p/pickupgrabinputmethod), [`ShakeInput`](/game-api/types/global-s/shakeinput), [`StrikeSuccessionInput`](/game-api/types/global-s/strikesuccessioninput), [`TemperatureCheckInput`](/game-api/types/global-t-x/temperaturecheckinput)
 
@@ -19,26 +21,26 @@ An **interface** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handler" /><code><Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" Handler { get; }"}</code> |  |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> |  |
-| <Link id="m-needsupdate" /><code>{"bool NeedsUpdate { get; }"}</code> |  |
-| <Link id="m-receiveshits" /><code>{"bool ReceivesHits { get; }"}</code> |  |
+| <Link id="m-handler" /><code><Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" Handler { get; }"}</code> | The held pickup handler this input was registered with. |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> | True while the gesture has been performed and the skill can fire. |
+| <Link id="m-needsupdate" /><code>{"bool NeedsUpdate { get; }"}</code> | Whether the input needs `Update` every frame; if any input does, the handler registers for updates. |
+| <Link id="m-receiveshits" /><code>{"bool ReceivesHits { get; }"}</code> | Whether hits go to this input's `ReceiveHit` instead of directly executing the skill when active. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changedactive" /><code>{"event Action<bool, "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> ChangedActive"}</code> |  |
+| <Link id="m-changedactive" /><code>{"event Action<bool, "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> ChangedActive"}</code> | Raised when the gesture becomes active or stops being active; skills listen to it to arm or disarm. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-receivehit" /><code>{"bool ReceiveHit("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool, "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> |  |
-| <Link id="m-registerhandler" /><code>{"void RegisterHandler("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" pickupHandler, "}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" structure, "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> |  |
-| <Link id="m-reset" /><code>{"void Reset(bool isCallingEvent)"}</code> |  |
-| <Link id="m-update" /><code>{"void Update()"}</code> |  |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | Tears down whatever the input set up when it is removed from the handler. |
+| <Link id="m-receivehit" /><code>{"bool ReceiveHit("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool, "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> | For inputs that react to hits: handles a tool hit and returns true if the input should then reset. |
+| <Link id="m-registerhandler" /><code>{"void RegisterHandler("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" pickupHandler, "}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" structure, "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> | Links the input to its handler, structure and skill, and sets up any detectors it needs. |
+| <Link id="m-reset" /><code>{"void Reset(bool isCallingEvent)"}</code> | Makes the input inactive again, optionally raising `ChangedActive`. |
+| <Link id="m-update" /><code>{"void Update()"}</code> | Per-frame check for the gesture, called by the handler while `NeedsUpdate` is true. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "Event"
-description: "class Event in Root.Township."
+description: "One remembered event in an AI's History: some knowledge atoms that fade over a lifetime."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Event
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+One remembered event in an AI's `History`: some knowledge atoms that fade over a lifetime. Events form a linked list of the active ones.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 
@@ -32,10 +34,10 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-day" /><code><Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{" "}<Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-isalive" /><code>{"bool IsAlive { get; private set; }"}</code> |  |
-| <Link id="m-knowledge" /><code><Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{"[] Knowledge { get; private set; }"}</code> |  |
-| <Link id="m-next" /><code><Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" Next { get; }"}</code> |  |
+| <Link id="m-day" /><code><Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{" "}<Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{" { get; private set; }"}</code> | The day the event happened. |
+| <Link id="m-isalive" /><code>{"bool IsAlive { get; private set; }"}</code> | False once the event is older than its lifetime and has left the active list. |
+| <Link id="m-knowledge" /><code><Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{"[] Knowledge { get; private set; }"}</code> | The knowledge atoms this event holds. Their age weighting falls from 1 to 0 as the event ages. |
+| <Link id="m-next" /><code><Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" Next { get; }"}</code> | The next active event in the history list. |
 | <Link id="m-age" /><code>{"private float Age { get; set; }"}</code> |  |
 | <Link id="m-lifetime" /><code>{"private float LifeTime { get; set; }"}</code> |  |
 
@@ -43,7 +45,7 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"void Update(float duration)"}</code> |  |
+| <Link id="m-update" /><code>{"void Update(float duration)"}</code> | Ages the event, lowering its knowledge weighting, and unlinks it once its lifetime runs out. |
 | <Link id="m-ageweightknowledge" /><code>{"private void AgeWeightKnowledge(float weight)"}</code> |  |
 
 ## Used in

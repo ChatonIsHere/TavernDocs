@@ -1,6 +1,6 @@
 ---
 title: "ServerBackup.BackupResult"
-description: "A internal class in TavernLib, TavernLib.Backend.Server. Reach it through att-stubs' publicized assemblies or Harmony's AccessTools."
+description: "Internal: what one CreateBackup made."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **internal class** in `TavernLib`, `TavernLib.Backend.Server`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
 
-A **internal class** in `TavernLib`, `TavernLib.Backend.Server`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+Internal: what one `CreateBackup` made.
 
 - **Listed in** [TavernLib.Backend.Server](/tavernlib-api/types/backend-server)
 - **Nested in** [`ServerBackup`](/tavernlib-api/types/backend-server/serverbackup)
@@ -28,10 +28,10 @@ A **internal class** in `TavernLib`, `TavernLib.Backend.Server`. Reach it throug
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filesadded" /><code>{"int FilesAdded"}</code> |  |
-| <Link id="m-filesskipped" /><code>{"int FilesSkipped"}</code> |  |
-| <Link id="m-sizebytes" /><code>{"long SizeBytes"}</code> |  |
-| <Link id="m-zippath" /><code>{"string ZipPath"}</code> |  |
+| <Link id="m-filesadded" /><code>{"int FilesAdded"}</code> | How many files went into the zip. |
+| <Link id="m-filesskipped" /><code>{"int FilesSkipped"}</code> | How many files were in use or gone and were left out. |
+| <Link id="m-sizebytes" /><code>{"long SizeBytes"}</code> | The finished zip's size. |
+| <Link id="m-zippath" /><code>{"string ZipPath"}</code> | The finished zip's full path. |
 
 ## Used in
 

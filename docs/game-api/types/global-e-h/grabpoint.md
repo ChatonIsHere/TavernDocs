@@ -1,6 +1,6 @@
 ---
 title: "GrabPoint"
-description: "A plain serialized class, not a component. Runs wherever a grab is worked out (the holder's client first, then replayed elsewhere from the synced grab"
+description: "A spot on a pickup where a hand can hold it, with a rule for how the hand may turn."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-A plain serialized class, not a component. Runs wherever a grab is worked out (the holder's client first, then replayed elsewhere from the synced grab point).
+A spot on a pickup where a hand can hold it, with a rule for how the hand may turn. A plain serialized class; a `Pickup` has an array of them and grabs the lowest scoring one.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Documented in** [Grab points and hand-touch points](/game-api/items/grab-points#grabpoint)
@@ -27,7 +27,7 @@ A plain serialized class, not a component. Runs wherever a grab is worked out (t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rotationmode" /><code><Link to="/game-api/types/global-q-r/rotationmode">{"RotationMode"}</Link>{" rotationMode"}</code> |  |
+| <Link id="m-rotationmode" /><code><Link to="/game-api/types/global-q-r/rotationmode">{"RotationMode"}</Link>{" rotationMode"}</code> | Backing field for `RotationMode`. |
 | <Link id="m-dockedrestriction" /><code>{"private "}<Link to="/game-api/types/global-p/pickupfromdockrestriction">{"PickupFromDockRestriction"}</Link>{" dockedRestriction"}</code> |  |
 | <Link id="m-enabledfromdocks" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{"> enabledFromDocks"}</code> |  |
 | <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> |  |
@@ -49,24 +49,24 @@ A plain serialized class, not a component. Runs wherever a grab is worked out (t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enabledfromdocks-2" /><code>{"List<"}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{"> EnabledFromDocks { get; }"}</code> |  |
-| <Link id="m-isdisabled-2" /><code>{"bool IsDisabled { get; set; }"}</code> |  |
-| <Link id="m-isocupied" /><code>{"bool IsOcupied { get; set; }"}</code> |  |
-| <Link id="m-lastlinearposition" /><code>{"float LastLinearPosition { get; set; }"}</code> |  |
-| <Link id="m-lastposition" /><code>{"Vector3 LastPosition { get; set; }"}</code> |  |
-| <Link id="m-lastrotation" /><code>{"Quaternion LastRotation { get; set; }"}</code> |  |
-| <Link id="m-nondockedrestriction-2" /><code><Link to="/game-api/types/global-p/pickupfromdockrestriction">{"PickupFromDockRestriction"}</Link>{" NonDockedRestriction { get; set; }"}</code> |  |
-| <Link id="m-rotationmode-2" /><code><Link to="/game-api/types/global-q-r/rotationmode">{"RotationMode"}</Link>{" "}<Link to="/game-api/types/global-q-r/rotationmode">{"RotationMode"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-transform-2" /><code>{"Transform Transform { get; }"}</code> |  |
+| <Link id="m-enabledfromdocks-2" /><code>{"List<"}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{"> EnabledFromDocks { get; }"}</code> | If not empty, the point can only be used while docked when the dock is one of these kinds. Undocked, it is always usable. |
+| <Link id="m-isdisabled-2" /><code>{"bool IsDisabled { get; set; }"}</code> | Turns the point off. |
+| <Link id="m-isocupied" /><code>{"bool IsOcupied { get; set; }"}</code> | Taken by a hand. Only set for points that refuse a second hand (misspelt in the code). |
+| <Link id="m-lastlinearposition" /><code>{"float LastLinearPosition { get; set; }"}</code> | Where along the linear extent (0 to 1) the hand ended up in the last `CheckScore`. |
+| <Link id="m-lastposition" /><code>{"Vector3 LastPosition { get; set; }"}</code> | Fitted local position from the last `CheckScore`. |
+| <Link id="m-lastrotation" /><code>{"Quaternion LastRotation { get; set; }"}</code> | Fitted local rotation from the last `CheckScore`. |
+| <Link id="m-nondockedrestriction-2" /><code><Link to="/game-api/types/global-p/pickupfromdockrestriction">{"PickupFromDockRestriction"}</Link>{" NonDockedRestriction { get; set; }"}</code> | Flags for when the item is not docked: no left hand, no right hand, or force fixed rotation. |
+| <Link id="m-rotationmode-2" /><code><Link to="/game-api/types/global-q-r/rotationmode">{"RotationMode"}</Link>{" "}<Link to="/game-api/types/global-q-r/rotationmode">{"RotationMode"}</Link>{" { get; }"}</code> | How the hand's rotation is fitted: free, fixed, fixed flip, pole, one-way pole or surface. |
+| <Link id="m-transform-2" /><code>{"Transform Transform { get; }"}</code> | Transform marking the point, if used. Otherwise a stored local position and rotation are used. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applyto" /><code>{"void ApplyTo(float scale, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" holder, Transform target)"}</code> |  |
-| <Link id="m-applyto-2" /><code>{"void ApplyTo(float scale, Transform interactionPoint, Transform target)"}</code> |  |
-| <Link id="m-checkscore" /><code>{"float CheckScore(Transform pickup, float scale, float distanceWeighting, float angleWeighting, Vector3 localHandPosition, Quaternion localHandRotation, bool isLeft, bool isDocked)"}</code> |  |
-| <Link id="m-drawgizmos" /><code>{"void DrawGizmos(float scale)"}</code> |  |
+| <Link id="m-applyto" /><code>{"void ApplyTo(float scale, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" holder, Transform target)"}</code> | Moves the item so the hand sits on the pose from the last `CheckScore`. Marks single-hand points as taken. |
+| <Link id="m-applyto-2" /><code>{"void ApplyTo(float scale, Transform interactionPoint, Transform target)"}</code> | Moves the item so the hand sits on the pose from the last `CheckScore`. Marks single-hand points as taken. |
+| <Link id="m-checkscore" /><code>{"float CheckScore(Transform pickup, float scale, float distanceWeighting, float angleWeighting, Vector3 localHandPosition, Quaternion localHandRotation, bool isLeft, bool isDocked)"}</code> | Scores a hand against this point (distance plus angle) and stores the fitted pose. Infinity means not allowed for this hand. |
+| <Link id="m-drawgizmos" /><code>{"void DrawGizmos(float scale)"}</code> | Editor: draws the point, its axes, linear extent and pole or surface limits. |
 
 ## Used in
 

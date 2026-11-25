@@ -1,6 +1,6 @@
 ---
 title: "ICustomizationHandler"
-description: "interface ICustomizationHandler in Root.Township."
+description: "Something that shows a customised player body, such as a player character or a dummy, and that the customization manager applies outfits to."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Customization`.
 
+Something that shows a customised player body, such as a player character or a dummy, and that the customization manager applies outfits to.
+
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Derived types** [`PlayerCustomizationHandler`](/game-api/types/alta-customization/playercustomizationhandler)
 
@@ -19,22 +21,22 @@ An **interface** in `Root.Township`, `Alta.Customization`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-characterdummy" /><code><Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-hasmanager" /><code>{"bool HasManager { get; }"}</code> |  |
-| <Link id="m-isdestroyed" /><code>{"bool IsDestroyed { get; }"}</code> |  |
-| <Link id="m-isfirstperson" /><code>{"bool IsFirstPerson { get; }"}</code> |  |
-| <Link id="m-manager" /><code><Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" Manager { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-rootbone" /><code>{"Transform RootBone { get; }"}</code> |  |
+| <Link id="m-characterdummy" /><code><Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" { get; }"}</code> | The character dummy used to show customisation, if any. |
+| <Link id="m-hasmanager" /><code>{"bool HasManager { get; }"}</code> | Whether a customization manager is set. |
+| <Link id="m-isdestroyed" /><code>{"bool IsDestroyed { get; }"}</code> | Whether the handler has been destroyed. |
+| <Link id="m-isfirstperson" /><code>{"bool IsFirstPerson { get; }"}</code> | Whether it is shown first person (the local player's own body). |
+| <Link id="m-manager" /><code><Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" Manager { get; }"}</code> | The `PlayerCharacterCustomizationManager` applying customisation to this handler. |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | A name for logs. |
+| <Link id="m-rootbone" /><code>{"Transform RootBone { get; }"}</code> | Root bone of the body's skeleton. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroy" /><code>{"void Destroy()"}</code> |  |
-| <Link id="m-getbone" /><code>{"Transform GetBone(Transform oldBone, bool isLoggingUnfoundBones)"}</code> |  |
-| <Link id="m-setfirstperson" /><code>{"void SetFirstPerson(bool isFirstPerson)"}</code> |  |
-| <Link id="m-setmanager" /><code>{"void SetManager("}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager)"}</code> |  |
+| <Link id="m-destroy" /><code>{"void Destroy()"}</code> | Destroys the handler's visuals. |
+| <Link id="m-getbone" /><code>{"Transform GetBone(Transform oldBone, bool isLoggingUnfoundBones)"}</code> | Finds this body's matching bone for a bone from a customisation prefab, optionally logging when it is missing. |
+| <Link id="m-setfirstperson" /><code>{"void SetFirstPerson(bool isFirstPerson)"}</code> | Switches between first and third person display. |
+| <Link id="m-setmanager" /><code>{"void SetManager("}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager)"}</code> | Sets the customization manager. |
 
 ## Used in
 

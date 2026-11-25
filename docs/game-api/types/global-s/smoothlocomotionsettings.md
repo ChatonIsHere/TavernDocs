@@ -1,6 +1,6 @@
 ---
 title: "SmoothLocomotionSettings"
-description: "class SmoothLocomotionSettings in Root.Township."
+description: "Global tuning for the player's smooth (stick) locomotion: speeds, step and slope handling, falling, fall damage and safety recovery."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SmoothLocomotionSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Global tuning for the player's smooth (stick) locomotion: speeds, step and slope handling, falling, fall damage and safety recovery. Get it with `GlobalSettings<SmoothLocomotionSettings>.Instance`; read by `SmoothLocomotion`.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`GlobalSettings<SmoothLocomotionSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -74,53 +76,53 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clampedspeed-2" /><code>{"float ClampedSpeed { get; }"}</code> |  |
-| <Link id="m-combatspeedmultiplier-2" /><code>{"float CombatSpeedMultiplier { get; }"}</code> |  |
+| <Link id="m-clampedspeed-2" /><code>{"float ClampedSpeed { get; }"}</code> | Top horizontal speed movement is clamped to. |
+| <Link id="m-combatspeedmultiplier-2" /><code>{"float CombatSpeedMultiplier { get; }"}</code> | Speed multiplier applied while in combat. |
 | <Link id="m-dangerdamage-2" /><code>{"float DangerDamage { get; }"}</code> |  |
-| <Link id="m-dangermask-2" /><code>{"LayerMask DangerMask { get; }"}</code> |  |
-| <Link id="m-deceleratelerp-2" /><code>{"float DecelerateLerp { get; }"}</code> |  |
+| <Link id="m-dangermask-2" /><code>{"LayerMask DangerMask { get; }"}</code> | Layers counted as dangerous; a safe recovery point can't be within 1 m of them. |
+| <Link id="m-deceleratelerp-2" /><code>{"float DecelerateLerp { get; }"}</code> | How fast movement speed falls off when input stops. |
 | <Link id="m-disablerotatoronactivehandfor-2" /><code><Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" DisableRotatorOnActiveHandFor { get; }"}</code> |  |
-| <Link id="m-distancetocheckforinfinitefall-2" /><code>{"float DistanceToCheckForInfiniteFall { get; }"}</code> |  |
-| <Link id="m-extraheight-2" /><code>{"float ExtraHeight { get; }"}</code> |  |
-| <Link id="m-fallcrippledamageoverdistance-2" /><code>{"AnimationCurve FallCrippleDamageOverDistance { get; }"}</code> |  |
-| <Link id="m-falldamageoverdistance-2" /><code>{"AnimationCurve FallDamageOverDistance { get; }"}</code> |  |
-| <Link id="m-falldamagesound-2" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" FallDamageSound { get; }"}</code> |  |
-| <Link id="m-falleffectsscaleoverdistance-2" /><code>{"AnimationCurve FallEffectsScaleOverDistance { get; }"}</code> |  |
-| <Link id="m-fallingcontrolovertime-2" /><code>{"AnimationCurve FallingControlOverTime { get; }"}</code> |  |
-| <Link id="m-gravitymultiplier-2" /><code>{"float GravityMultiplier { get; }"}</code> |  |
-| <Link id="m-hasmovedsensitivitysquared-2" /><code>{"float HasMovedSensitivitySquared { get; }"}</code> |  |
-| <Link id="m-hungrysoundcooldown-2" /><code>{"float HungrySoundCooldown { get; }"}</code> |  |
-| <Link id="m-inputcurve-2" /><code>{"AnimationCurve InputCurve { get; }"}</code> |  |
-| <Link id="m-leanlimit-2" /><code>{"float LeanLimit { get; }"}</code> |  |
-| <Link id="m-maxanglebeforeslopedot-2" /><code>{"float MaxAngleBeforeSlopeDot { get; }"}</code> |  |
-| <Link id="m-maxfalldistance-2" /><code>{"float MaxFallDistance { get; }"}</code> |  |
+| <Link id="m-distancetocheckforinfinitefall-2" /><code>{"float DistanceToCheckForInfiniteFall { get; }"}</code> | How far down to look for ground; with none in range the player is moved back to safety. |
+| <Link id="m-extraheight-2" /><code>{"float ExtraHeight { get; }"}</code> | Added to the head height when working out the character height. |
+| <Link id="m-fallcrippledamageoverdistance-2" /><code>{"AnimationCurve FallCrippleDamageOverDistance { get; }"}</code> | Curve from fall height to the crippling part of fall damage. |
+| <Link id="m-falldamageoverdistance-2" /><code>{"AnimationCurve FallDamageOverDistance { get; }"}</code> | Curve from fall height to fall damage. Its last key sets `MaxFallDistance`. |
+| <Link id="m-falldamagesound-2" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" FallDamageSound { get; }"}</code> | Sound played on fall damage. |
+| <Link id="m-falleffectsscaleoverdistance-2" /><code>{"AnimationCurve FallEffectsScaleOverDistance { get; }"}</code> | Curve from fall height to the scale of the landing effect. |
+| <Link id="m-fallingcontrolovertime-2" /><code>{"AnimationCurve FallingControlOverTime { get; }"}</code> | Curve from time spent falling to how much input control is left. |
+| <Link id="m-gravitymultiplier-2" /><code>{"float GravityMultiplier { get; }"}</code> | Gravity multiplier for the player. |
+| <Link id="m-hasmovedsensitivitysquared-2" /><code>{"float HasMovedSensitivitySquared { get; }"}</code> | Squared distance the local player's feet must move before it counts as having moved. |
+| <Link id="m-hungrysoundcooldown-2" /><code>{"float HungrySoundCooldown { get; }"}</code> | Minimum seconds between "too hungry to run" sounds. |
+| <Link id="m-inputcurve-2" /><code>{"AnimationCurve InputCurve { get; }"}</code> | Curve applied to stick input strength. |
+| <Link id="m-leanlimit-2" /><code>{"float LeanLimit { get; }"}</code> | How far the head can lean from the body before the character is repositioned. |
+| <Link id="m-maxanglebeforeslopedot-2" /><code>{"float MaxAngleBeforeSlopeDot { get; }"}</code> | Ground normal Y below which the ground counts as a slope you slide on. |
+| <Link id="m-maxfalldistance-2" /><code>{"float MaxFallDistance { get; }"}</code> | Largest fall distance that is synced; copied from the fall damage curve's last key. |
 | <Link id="m-mindistanceforeffect-2" /><code>{"float MinDistanceForEffect { get; }"}</code> |  |
-| <Link id="m-minimumheight-2" /><code>{"float MinimumHeight { get; }"}</code> |  |
-| <Link id="m-minimumvelocity-2" /><code>{"float MinimumVelocity { get; }"}</code> |  |
-| <Link id="m-normalstepheight-2" /><code>{"float NormalStepHeight { get; }"}</code> |  |
-| <Link id="m-onhitgroundeffectscaled-2" /><code><Link to="/game-api/types/global-t-x/transformscaledevent">{"TransformScaledEvent"}</Link>{" OnHitGroundEffectScaled { get; }"}</code> |  |
-| <Link id="m-pressacceleratelerp-2" /><code>{"float PressAccelerateLerp { get; }"}</code> |  |
-| <Link id="m-pressedspeed-2" /><code>{"float PressedSpeed { get; }"}</code> |  |
-| <Link id="m-recoverfromsafetyrepositionblackfadeduration-2" /><code>{"float RecoverFromSafetyRepositionBlackFadeDuration { get; }"}</code> |  |
-| <Link id="m-recoverfromsafetyrepositionduration-2" /><code>{"float RecoverFromSafetyRepositionDuration { get; }"}</code> |  |
-| <Link id="m-recoveryfadeblackness-2" /><code>{"float RecoveryFadeBlackness { get; }"}</code> |  |
-| <Link id="m-safetymask-2" /><code>{"LayerMask SafetyMask { get; }"}</code> |  |
-| <Link id="m-slipvalueincreaseduration-2" /><code>{"float SlipValueIncreaseDuration { get; }"}</code> |  |
-| <Link id="m-slopehelperdistance-2" /><code>{"float SlopeHelperDistance { get; }"}</code> |  |
-| <Link id="m-slopemultiplier-2" /><code>{"float SlopeMultiplier { get; }"}</code> |  |
-| <Link id="m-standablemask-2" /><code>{"LayerMask StandableMask { get; }"}</code> |  |
-| <Link id="m-teleportfalltimer-2" /><code>{"float TeleportFallTimer { get; }"}</code> |  |
-| <Link id="m-touchacceleratelerp-2" /><code>{"float TouchAccelerateLerp { get; }"}</code> |  |
-| <Link id="m-touchedspeed-2" /><code>{"float TouchedSpeed { get; }"}</code> |  |
-| <Link id="m-tryingtorunhungrysound" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" TryingToRunHungrySound { get; }"}</code> |  |
-| <Link id="m-walkingspeedmultiplier" /><code>{"float WalkingSpeedMultiplier { get; set; }"}</code> |  |
+| <Link id="m-minimumheight-2" /><code>{"float MinimumHeight { get; }"}</code> | Lowest the character height can be. |
+| <Link id="m-minimumvelocity-2" /><code>{"float MinimumVelocity { get; }"}</code> | Lowest move speed while input is applied. Creatures regaining control also use it. |
+| <Link id="m-normalstepheight-2" /><code>{"float NormalStepHeight { get; }"}</code> | Step height the character controller uses. |
+| <Link id="m-onhitgroundeffectscaled-2" /><code><Link to="/game-api/types/global-t-x/transformscaledevent">{"TransformScaledEvent"}</Link>{" OnHitGroundEffectScaled { get; }"}</code> | Effect event raised on landing, scaled by fall height. |
+| <Link id="m-pressacceleratelerp-2" /><code>{"float PressAccelerateLerp { get; }"}</code> | How fast speed builds up when the stick is pressed (running). |
+| <Link id="m-pressedspeed-2" /><code>{"float PressedSpeed { get; }"}</code> | Move speed when the stick is pressed in. |
+| <Link id="m-recoverfromsafetyrepositionblackfadeduration-2" /><code>{"float RecoverFromSafetyRepositionBlackFadeDuration { get; }"}</code> | Fade to black time when the player is moved back to safety. |
+| <Link id="m-recoverfromsafetyrepositionduration-2" /><code>{"float RecoverFromSafetyRepositionDuration { get; }"}</code> | How long the move back to safety takes. |
+| <Link id="m-recoveryfadeblackness-2" /><code>{"float RecoveryFadeBlackness { get; }"}</code> | How dark the screen goes during safety recovery. |
+| <Link id="m-safetymask-2" /><code>{"LayerMask SafetyMask { get; }"}</code> | Layers a player can be put back onto when moved to safety. |
+| <Link id="m-slipvalueincreaseduration-2" /><code>{"float SlipValueIncreaseDuration { get; }"}</code> | Seconds for sliding on a steep slope to build up to full. |
+| <Link id="m-slopehelperdistance-2" /><code>{"float SlopeHelperDistance { get; }"}</code> | Extra distance below the feet checked for ground, to stick to slopes. |
+| <Link id="m-slopemultiplier-2" /><code>{"float SlopeMultiplier { get; }"}</code> | Strength of sliding down a steep slope. |
+| <Link id="m-standablemask-2" /><code>{"LayerMask StandableMask { get; }"}</code> | Layers the player can stand on. |
+| <Link id="m-teleportfalltimer-2" /><code>{"float TeleportFallTimer { get; }"}</code> | Seconds of falling after which the teleporters are turned off. |
+| <Link id="m-touchacceleratelerp-2" /><code>{"float TouchAccelerateLerp { get; }"}</code> | How fast speed builds up when the stick is only touched (walking). |
+| <Link id="m-touchedspeed-2" /><code>{"float TouchedSpeed { get; }"}</code> | Move speed when the stick is only touched. |
+| <Link id="m-tryingtorunhungrysound" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" TryingToRunHungrySound { get; }"}</code> | Sound played when the player tries to run while too hungry. |
+| <Link id="m-walkingspeedmultiplier" /><code>{"float WalkingSpeedMultiplier { get; set; }"}</code> | Runtime multiplier on walking speed. Settable. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canrun" /><code>{"bool CanRun("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" hungerStat, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" fullnessStat)"}</code> |  |
-| <Link id="m-lerpheight" /><code>{"float LerpHeight(float currenty, float targetY)"}</code> |  |
+| <Link id="m-canrun" /><code>{"bool CanRun("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" hungerStat, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" fullnessStat)"}</code> | True unless the hunger stat is enabled and at level 2 or lower; then running needs some fullness left. |
+| <Link id="m-lerpheight" /><code>{"float LerpHeight(float currenty, float targetY)"}</code> | Smooths a height towards a target using the height adjustment curve. |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
 
 ## Used in

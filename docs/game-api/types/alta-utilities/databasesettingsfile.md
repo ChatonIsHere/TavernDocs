@@ -1,6 +1,6 @@
 ---
 title: "DatabaseSettingsFile"
-description: "class DatabaseSettingsFile in Root.Township."
+description: "A settings \"file\" stored through the Alta web API's settings endpoint instead of on disk."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DatabaseSettingsFile
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+A settings "file" stored through the Alta web API's settings endpoint instead of on disk. Most file operations do nothing.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`IAltaFile`](/game-api/types/assembly-other/ialtafile)
@@ -32,29 +34,29 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-content" /><code><Link to="/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Content { get; set; }"}</code> |  |
-| <Link id="m-fullname" /><code>{"string FullName { get; }"}</code> |  |
-| <Link id="m-haschanged" /><code>{"bool HasChanged { get; }"}</code> |  |
-| <Link id="m-isexisting" /><code>{"bool IsExisting { get; }"}</code> |  |
-| <Link id="m-isreading" /><code>{"bool IsReading { get; private set; }"}</code> |  |
-| <Link id="m-iswriting" /><code>{"bool IsWriting { get; private set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
+| <Link id="m-content" /><code><Link to="/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Content { get; set; }"}</code> | The last content read or to be written. |
+| <Link id="m-fullname" /><code>{"string FullName { get; }"}</code> | Same as `Name`, the settings key. |
+| <Link id="m-haschanged" /><code>{"bool HasChanged { get; }"}</code> | Always true. |
+| <Link id="m-isexisting" /><code>{"bool IsExisting { get; }"}</code> | Always true. |
+| <Link id="m-isreading" /><code>{"bool IsReading { get; private set; }"}</code> | Meant to show a read is running. It's cleared as soon as the read starts, so it's rarely true. |
+| <Link id="m-iswriting" /><code>{"bool IsWriting { get; private set; }"}</code> | True while a write is running. |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | The settings key used with the API. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-delete" /><code>{"void Delete(bool isDeletingBackup = false)"}</code> |  |
-| <Link id="m-deleteasync" /><code>{"Task DeleteAsync(bool isDeletingBackup = false)"}</code> |  |
-| <Link id="m-finishreading" /><code>{"void FinishReading()"}</code> |  |
-| <Link id="m-finishwriting" /><code>{"void FinishWriting()"}</code> |  |
-| <Link id="m-moveto" /><code>{"void MoveTo("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder)"}</code> |  |
-| <Link id="m-queueunload" /><code>{"void QueueUnload()"}</code> |  |
-| <Link id="m-queueunloadasync" /><code>{"Task QueueUnloadAsync()"}</code> |  |
-| <Link id="m-readasync" /><code>{"Task<T> ReadAsync<T>()"}</code> |  |
-| <Link id="m-readasync-2" /><code>{"async Task<T> ReadAsync<T>(Func<T> create)"}</code> |  |
-| <Link id="m-refresh" /><code>{"void Refresh()"}</code> |  |
-| <Link id="m-resethaschanged" /><code>{"void ResetHasChanged()"}</code> |  |
-| <Link id="m-writeasync" /><code>{"async void WriteAsync()"}</code> |  |
+| <Link id="m-delete" /><code>{"void Delete(bool isDeletingBackup = false)"}</code> | Does nothing. |
+| <Link id="m-deleteasync" /><code>{"Task DeleteAsync(bool isDeletingBackup = false)"}</code> | Does nothing. |
+| <Link id="m-finishreading" /><code>{"void FinishReading()"}</code> | Blocks until a running read finishes. |
+| <Link id="m-finishwriting" /><code>{"void FinishWriting()"}</code> | Blocks until a running write finishes. |
+| <Link id="m-moveto" /><code>{"void MoveTo("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder)"}</code> | Does nothing. |
+| <Link id="m-queueunload" /><code>{"void QueueUnload()"}</code> | Does nothing. |
+| <Link id="m-queueunloadasync" /><code>{"Task QueueUnloadAsync()"}</code> | Does nothing. |
+| <Link id="m-readasync" /><code>{"Task<T> ReadAsync<T>()"}</code> | Fetches the settings text from the API and reads it into a new content object. Empty text leaves it at defaults. |
+| <Link id="m-readasync-2" /><code>{"async Task<T> ReadAsync<T>(Func<T> create)"}</code> | Fetches the settings text from the API and reads it into a new content object. Empty text leaves it at defaults. |
+| <Link id="m-refresh" /><code>{"void Refresh()"}</code> | Does nothing. |
+| <Link id="m-resethaschanged" /><code>{"void ResetHasChanged()"}</code> | Does nothing. |
+| <Link id="m-writeasync" /><code>{"async void WriteAsync()"}</code> | Writes `Content` to text and sends it to the API, waiting for any earlier write first. |
 | <Link id="m-readinternal" /><code>{"private async Task<T> ReadInternal<T>(Func<T> create)"}</code> |  |
 | <Link id="m-writeinternal" /><code>{"private async Task WriteInternal()"}</code> |  |

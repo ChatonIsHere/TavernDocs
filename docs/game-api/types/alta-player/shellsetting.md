@@ -1,6 +1,6 @@
 ---
 title: "ShellSetting"
-description: "abstract class ShellSetting in Root.Township."
+description: "Base for one setting applied to a player effect's shell material."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ShellSetting
 
 An **abstract class** in `Root.Township`, `Alta.PlayerEffects`.
+
+Base for one setting applied to a player effect's shell material.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Derived types** [`CombatShellSetting`](/game-api/types/alta-player/combatshellsetting), [`StatEffectShellSetting`](/game-api/types/alta-player/stateffectshellsetting)
@@ -25,7 +27,7 @@ An **abstract class** in `Root.Township`, `Alta.PlayerEffects`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setmaterial" /><code>{"abstract void SetMaterial(Material material)"}</code> |  |
+| <Link id="m-setmaterial" /><code>{"abstract void SetMaterial(Material material)"}</code> | Applies this setting to the material. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "ModsListConfig"
-description: "A class in TavernLib, TavernLib.Backend.Server.Configs."
+description: "The ServerConfigFile for a modlist file, read by ModReconciler.ReconcileModList."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
-A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
+The `ServerConfigFile` for a modlist file, read by `ModReconciler.ReconcileModList`.
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/tavernlib-api/types/backend-server-configs)
 - **Inherits or implements** [`ServerConfigFile<ModsList>`](/tavernlib-api/types/backend-server-configs/serverconfigfile-t)

@@ -1,6 +1,6 @@
 ---
 title: "Belt"
-description: "A drive belt between pulleys in mechanisms. Not the player's belt."
+description: "A drive belt between pulleys in mechanisms."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

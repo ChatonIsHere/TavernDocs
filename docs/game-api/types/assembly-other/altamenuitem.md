@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItem"
-description: "abstract class AltaMenuItem in Alta.MenuItem."
+description: "Base for Alta's editor menu commands."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaMenuItem
 
 An **abstract class** in `Alta.MenuItem`, no namespace.
+
+Base for Alta's editor menu commands. Subclasses nest inside an `AltaMenuItemBase` path class, and editor tooling generates a Unity menu entry for each one. Editor only, does nothing in a running server.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`ISearchableTool`](/game-api/types/assembly-other/isearchabletool)
@@ -26,25 +28,25 @@ An **abstract class** in `Alta.MenuItem`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-description" /><code>{"virtual string Description { get; }"}</code> |  |
-| <Link id="m-icon" /><code>{"string Icon { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"virtual string Name { get; }"}</code> |  |
-| <Link id="m-priority" /><code>{"virtual int Priority { get; }"}</code> |  |
-| <Link id="m-substringcount" /><code>{"static int SubstringCount { get; }"}</code> |  |
+| <Link id="m-description" /><code>{"virtual string Description { get; }"}</code> | Optional description for the tool search. Null unless overridden. |
+| <Link id="m-icon" /><code>{"string Icon { get; }"}</code> | Always `Icons/Command.png`. |
+| <Link id="m-name" /><code>{"virtual string Name { get; }"}</code> | Menu entry name. Defaults to the class name with spaces put before each capital letter. |
+| <Link id="m-priority" /><code>{"virtual int Priority { get; }"}</code> | Menu ordering priority. Zero unless overridden. |
+| <Link id="m-substringcount" /><code>{"static int SubstringCount { get; }"}</code> | Length of the `AltaMenuItemBase` type name plus one, cut off the base type name to get the menu path. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-content" /><code>{"virtual void Content(TextWriter writer)"}</code> |  |
-| <Link id="m-externalcontent" /><code>{"virtual void ExternalContent(TextWriter writer)"}</code> |  |
-| <Link id="m-generatepath" /><code>{"static string GeneratePath("}<Link to="/game-api/types/assembly-other/isearchabletool">{"ISearchableTool"}</Link>{" item)"}</code> |  |
-| <Link id="m-generatepathsplit" /><code>{"static void GeneratePathSplit("}<Link to="/game-api/types/assembly-other/isearchabletool">{"ISearchableTool"}</Link>{" item, out string path, out string name)"}</code> |  |
-| <Link id="m-getarguments" /><code>{"string GetArguments()"}</code> |  |
-| <Link id="m-getpath" /><code>{"virtual string GetPath()"}</code> |  |
-| <Link id="m-validate" /><code>{"virtual bool Validate()"}</code> |  |
-| <Link id="m-run" /><code>{"protected abstract void Run()"}</code> |  |
-| <Link id="m-run-2" /><code>{"protected void Run<T>()"}</code> |  |
+| <Link id="m-content" /><code>{"virtual void Content(TextWriter writer)"}</code> | Writes the body of the generated menu method, which by default just calls the item's run method. |
+| <Link id="m-externalcontent" /><code>{"virtual void ExternalContent(TextWriter writer)"}</code> | Writes extra code outside the generated method. Empty by default. |
+| <Link id="m-generatepath" /><code>{"static string GeneratePath("}<Link to="/game-api/types/assembly-other/isearchabletool">{"ISearchableTool"}</Link>{" item)"}</code> | Joins an item's path and cleaned name into the full menu path. |
+| <Link id="m-generatepathsplit" /><code>{"static void GeneratePathSplit("}<Link to="/game-api/types/assembly-other/isearchabletool">{"ISearchableTool"}</Link>{" item, out string path, out string name)"}</code> | Splits an item into menu path and cleaned name, logging an error and stripping `%`, `#` and `&` if the name has them. |
+| <Link id="m-getarguments" /><code>{"string GetArguments()"}</code> | The parameter list written into the generated menu method, always a `UnityEditor.MenuCommand`. |
+| <Link id="m-getpath" /><code>{"virtual string GetPath()"}</code> | Menu path, built from the base class's full name with the `AltaMenuItemBase` prefix removed, `_` turned to spaces and `+` to `/`. |
+| <Link id="m-validate" /><code>{"virtual bool Validate()"}</code> | Whether the menu entry is enabled. True unless overridden. |
+| <Link id="m-run" /><code>{"protected abstract void Run()"}</code> | What the menu item does when picked. Each subclass implements it. |
+| <Link id="m-run-2" /><code>{"protected void Run<T>()"}</code> | What the menu item does when picked. Each subclass implements it. |
 
 ## Used in
 

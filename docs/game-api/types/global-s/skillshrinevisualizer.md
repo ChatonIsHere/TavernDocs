@@ -1,6 +1,6 @@
 ---
 title: "SkillShrineVisualizer"
-description: "abstract class SkillShrineVisualizer in Root.Township."
+description: "Base for the display on a skill shrine that shows one progression path for the player using it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SkillShrineVisualizer
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for the display on a skill shrine that shows one progression path for the player using it. Server prepares the data, which is then synced to clients.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,16 +28,16 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-path" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" Path { get; private set; }"}</code> |  |
+| <Link id="m-path" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" Path { get; private set; }"}</code> | The progression path this visualizer shows. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disable" /><code>{"abstract void Disable()"}</code> |  |
-| <Link id="m-prepareonserver" /><code>{"abstract void PrepareOnServer("}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" progressionManager)"}</code> |  |
-| <Link id="m-serialize" /><code>{"abstract void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" manager)"}</code> |  |
-| <Link id="m-setpath" /><code>{"virtual void SetPath("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> |  |
+| <Link id="m-disable" /><code>{"abstract void Disable()"}</code> | Hides the display. |
+| <Link id="m-prepareonserver" /><code>{"abstract void PrepareOnServer("}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" progressionManager)"}</code> | Server: gathers what to show from the player's progression manager. |
+| <Link id="m-serialize" /><code>{"abstract void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" manager)"}</code> | Reads or writes the display data on a stream. |
+| <Link id="m-setpath" /><code>{"virtual void SetPath("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | Sets the path to show. |
 
 ## Used in
 

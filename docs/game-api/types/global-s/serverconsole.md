@@ -1,6 +1,6 @@
 ---
 title: "ServerConsole"
-description: "Base for the dedicated server's text console (Windows, Linux or a null console). Queues typed lines and hands them to listeners on the main thread."
+description: "Base for the dedicated server's text console (Windows, Linux or a null console)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

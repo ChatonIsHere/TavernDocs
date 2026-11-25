@@ -1,6 +1,6 @@
 ---
 title: "IPlayer"
-description: "interface IPlayer in Root.Township."
+description: "The interface behind every player on the server or client."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Networking.Scripts.Player`.
 
+The interface behind every player on the server or client. `Player` is the only implementation; `Player.Current`, `Player.AllPlayers` and `Player.Get` hand these out.
+
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`INetworkEntity`](/game-api/types/alta-networking/inetworkentity)
 - **Derived types** [`Player`](/game-api/types/global-p/player), [`PlayerEvent`](/game-api/types/global-p/playerevent), [`PlayerList`](/game-api/types/global-p/playerlist), [`PlayerUnityEvent`](/game-api/types/global-p/playerunityevent)
@@ -22,41 +24,41 @@ An **interface** in `Root.Township`, `Alta.Networking.Scripts.Player`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunkmanager" /><code><Link to="/game-api/types/global-p/playerchunkmanager">{"PlayerChunkManager"}</Link>{" ChunkManager { get; }"}</code> |  |
-| <Link id="m-connectiontoremoteplayer" /><code><Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" ConnectionToRemotePlayer { get; }"}</code> |  |
-| <Link id="m-customization" /><code><Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" Customization { get; }"}</code> |  |
-| <Link id="m-friendshipmanager" /><code><Link to="/game-api/types/global-e-h/friendshipmanager">{"FriendshipManager"}</Link>{" "}<Link to="/game-api/types/global-e-h/friendshipmanager">{"FriendshipManager"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-islocalplayer" /><code>{"bool IsLocalPlayer { get; }"}</code> |  |
-| <Link id="m-playercharacter" /><code><Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" "}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-playercontroller" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-playereventsmanager" /><code><Link to="/game-api/types/global-p/playereventsmanager">{"PlayerEventsManager"}</Link>{" "}<Link to="/game-api/types/global-p/playereventsmanager">{"PlayerEventsManager"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-playermode" /><code><Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" { get; set; }"}</code> |  |
-| <Link id="m-progressionmanager" /><code><Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" ProgressionManager { get; }"}</code> |  |
-| <Link id="m-save" /><code><Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" Save { get; }"}</code> |  |
-| <Link id="m-statemanager" /><code><Link to="/game-api/types/alta-player/playerstatemanager">{"PlayerStateManager"}</Link>{" StateManager { get; }"}</code> |  |
-| <Link id="m-unityobjectname" /><code>{"string UnityObjectName { get; }"}</code> |  |
-| <Link id="m-unlockmanager" /><code><Link to="/game-api/types/global-p/playerunlockmanager">{"PlayerUnlockManager"}</Link>{" UnlockManager { get; }"}</code> |  |
-| <Link id="m-userinfo" /><code><Link to="/game-api/types/global-t-x/userinfoandrole">{"UserInfoAndRole"}</Link>{" UserInfo { get; }"}</code> |  |
-| <Link id="m-voice" /><code>{"IParticipant Voice { get; set; }"}</code> |  |
+| <Link id="m-chunkmanager" /><code><Link to="/game-api/types/global-p/playerchunkmanager">{"PlayerChunkManager"}</Link>{" ChunkManager { get; }"}</code> | The player's `PlayerChunkManager`, which decides which chunks are loaded for them. |
+| <Link id="m-connectiontoremoteplayer" /><code><Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" ConnectionToRemotePlayer { get; }"}</code> | Server: the network connection to this player. Null on clients. |
+| <Link id="m-customization" /><code><Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" Customization { get; }"}</code> | The player's cosmetics (their look). |
+| <Link id="m-friendshipmanager" /><code><Link to="/game-api/types/global-e-h/friendshipmanager">{"FriendshipManager"}</Link>{" "}<Link to="/game-api/types/global-e-h/friendshipmanager">{"FriendshipManager"}</Link>{" { get; }"}</code> | Tracks which other players this player is friends with. |
+| <Link id="m-islocalplayer" /><code>{"bool IsLocalPlayer { get; }"}</code> | True on a client for the player it controls. Always false on a dedicated server. |
+| <Link id="m-playercharacter" /><code><Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" "}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" { get; }"}</code> | The current body as a `PlayerCharacter`. A hard cast of `PlayerController`. |
+| <Link id="m-playercontroller" /><code><Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; }"}</code> | The body the player currently controls, or null between spawns. |
+| <Link id="m-playereventsmanager" /><code><Link to="/game-api/types/global-p/playereventsmanager">{"PlayerEventsManager"}</Link>{" "}<Link to="/game-api/types/global-p/playereventsmanager">{"PlayerEventsManager"}</Link>{" { get; }"}</code> | The player's event hub component. |
+| <Link id="m-playermode" /><code><Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" { get; set; }"}</code> | How the player joined (VR, fly, autocam and so on). Only normal modes are saved. |
+| <Link id="m-progressionmanager" /><code><Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" ProgressionManager { get; }"}</code> | The player's skills and progression. |
+| <Link id="m-save" /><code><Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" Save { get; }"}</code> | Server: the player's `PlayerSave` in memory, created at join if they had none. Null on clients. |
+| <Link id="m-statemanager" /><code><Link to="/game-api/types/alta-player/playerstatemanager">{"PlayerStateManager"}</Link>{" StateManager { get; }"}</code> | The player's state stack (playing, downed, character room and so on). |
+| <Link id="m-unityobjectname" /><code>{"string UnityObjectName { get; }"}</code> | The GameObject's name, such as `12 - Remote Player Bob`. |
+| <Link id="m-unlockmanager" /><code><Link to="/game-api/types/global-p/playerunlockmanager">{"PlayerUnlockManager"}</Link>{" UnlockManager { get; }"}</code> | Which unlocks the player has. |
+| <Link id="m-userinfo" /><code><Link to="/game-api/types/global-t-x/userinfoandrole">{"UserInfoAndRole"}</Link>{" UserInfo { get; }"}</code> | The player's account id, username and member status. |
+| <Link id="m-voice" /><code>{"IParticipant Voice { get; set; }"}</code> | The player's Vivox voice participant, if voice chat is on. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loadcomplete" /><code>{"event Action LoadComplete"}</code> |  |
-| <Link id="m-playercontrollerset" /><code>{"event "}<Link to="/game-api/types/global-p/playercontrollerhandler">{"PlayerControllerHandler"}</Link>{" PlayerControllerSet"}</code> |  |
+| <Link id="m-loadcomplete" /><code>{"event Action LoadComplete"}</code> | Raised after the player's save (entity, states and progression) has been loaded. |
+| <Link id="m-playercontrollerset" /><code>{"event "}<Link to="/game-api/types/global-p/playercontrollerhandler">{"PlayerControllerHandler"}</Link>{" PlayerControllerSet"}</code> | Raised when `PlayerController` is set or cleared. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroywithassociatedobjects" /><code>{"void DestroyWithAssociatedObjects()"}</code> |  |
-| <Link id="m-getspawnposition" /><code>{"Vector3 GetSpawnPosition(bool isHome)"}</code> |  |
-| <Link id="m-isinsavablestate" /><code>{"bool IsInSavableState(bool isSavingIfDead = false)"}</code> |  |
-| <Link id="m-kick" /><code>{"void Kick(string reason)"}</code> |  |
-| <Link id="m-safemovetochunk" /><code>{"void SafeMoveToChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, Vector3 controllerPosition, Action callback)"}</code> |  |
-| <Link id="m-savecontrollerandstate" /><code>{"void SaveControllerAndState(bool isSavingIfDead = false)"}</code> |  |
-| <Link id="m-writesave" /><code>{"void WriteSave(bool isUnloading)"}</code> |  |
+| <Link id="m-destroywithassociatedobjects" /><code>{"void DestroyWithAssociatedObjects()"}</code> | Destroys the player's body and the entities spawned with it, then the player entity itself. |
+| <Link id="m-getspawnposition" /><code>{"Vector3 GetSpawnPosition(bool isHome)"}</code> | Where the player should appear: their saved position on join, or their respawn point (home if set) when respawning. |
+| <Link id="m-isinsavablestate" /><code>{"bool IsInSavableState(bool isSavingIfDead = false)"}</code> | Whether the player can be saved now. False with saving off, in fly or autocam mode, in the character room, dead or blocked. |
+| <Link id="m-kick" /><code>{"void Kick(string reason)"}</code> | Server: disconnects the player and logs the reason. |
+| <Link id="m-safemovetochunk" /><code>{"void SafeMoveToChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, Vector3 controllerPosition, Action callback)"}</code> | Server: parks the body in the void chunk, waits for the client to load the target chunk, moves it there, then calls the callback. |
+| <Link id="m-savecontrollerandstate" /><code>{"void SaveControllerAndState(bool isSavingIfDead = false)"}</code> | Server: copies body, states and progression into `Save`, if the player is in a savable state. Does not write the file. |
+| <Link id="m-writesave" /><code>{"void WriteSave(bool isUnloading)"}</code> | Server: serializes the player entity into `Save` and starts writing the file. Pass `isUnloading` when the player is leaving. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "BoulderDefinition"
-description: "class BoulderDefinition in Root.Township."
+description: "An asset describing a mineable rock: its health, what it drops, how its hits look, and its ore material."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BoulderDefinition
 
 A **class** in `Root.Township`, `Alta.Impact`.
+
+An asset describing a mineable rock: its health, what it drops, how its hits look, and its ore material. Used by `Rock`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`HashedGeneralValue<BoulderDefinition>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -38,12 +40,12 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroyedeffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DestroyedEffect { get; }"}</code> |  |
-| <Link id="m-dropcount-2" /><code>{"AnimationCurve DropCount { get; }"}</code> |  |
-| <Link id="m-health-2" /><code>{"int Health { get; }"}</code> |  |
-| <Link id="m-impactsettings-2" /><code><Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" ImpactSettings { get; }"}</code> |  |
-| <Link id="m-orematerial-2" /><code>{"Material OreMaterial { get; }"}</code> |  |
-| <Link id="m-resourcesdropchances-2" /><code><Link to="/game-api/types/alta-items/resourcedropchance">{"ResourceDropChance"}</Link>{"[] ResourcesDropChances { get; }"}</code> |  |
+| <Link id="m-destroyedeffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DestroyedEffect { get; }"}</code> | Pooled effect spawned when the rock is destroyed. Not on headless servers. |
+| <Link id="m-dropcount-2" /><code>{"AnimationCurve DropCount { get; }"}</code> | Curve sampled at a random value to get how many resources drop. |
+| <Link id="m-health-2" /><code>{"int Health { get; }"}</code> | How much damage the rock takes before breaking. |
+| <Link id="m-impactsettings-2" /><code><Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" ImpactSettings { get; }"}</code> | Impact effects and sounds for hits on the rock. |
+| <Link id="m-orematerial-2" /><code>{"Material OreMaterial { get; }"}</code> | Material put on the rock's ore renderers. |
+| <Link id="m-resourcesdropchances-2" /><code><Link to="/game-api/types/alta-items/resourcedropchance">{"ResourceDropChance"}</Link>{"[] ResourcesDropChances { get; }"}</code> | Which resources can drop and how likely each is. |
 
 ## Used in
 

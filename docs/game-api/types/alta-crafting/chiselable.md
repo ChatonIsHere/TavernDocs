@@ -1,6 +1,6 @@
 ---
 title: "Chiselable"
-description: "class Chiselable in Root.Township."
+description: "Something a chisel can carve."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Chiselable
 
 A **class** in `Root.Township`, `Alta.Carpentry`.
+
+Something a chisel can carve. Passes chisel hits on to events; subclasses decide direction rules.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** `MonoBehaviour`, [`IChiselable`](/game-api/types/alta-crafting/ichiselable)
@@ -33,23 +35,23 @@ A **class** in `Root.Township`, `Alta.Carpentry`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isenabled" /><code>{"virtual bool IsEnabled { get; set; }"}</code> |  |
-| <Link id="m-triggerhaptics" /><code>{"virtual bool TriggerHaptics { get; }"}</code> |  |
+| <Link id="m-isenabled" /><code>{"virtual bool IsEnabled { get; set; }"}</code> | Whether chisels can hit it right now. |
+| <Link id="m-triggerhaptics" /><code>{"virtual bool TriggerHaptics { get; }"}</code> | Whether a chisel near it vibrates the controller. False by default. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onhit" /><code>{"event "}<Link to="/game-api/types/alta-crafting/chiselhit">{"ChiselHit"}</Link>{" onHit"}</code> |  |
+| <Link id="m-onhit" /><code>{"event "}<Link to="/game-api/types/alta-crafting/chiselhit">{"ChiselHit"}</Link>{" onHit"}</code> | Raised on every chisel hit with damage, position, direction, tool and collider. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getchiseleable" /><code>{"static "}<Link to="/game-api/types/alta-crafting/ichiselable">{"IChiselable"}</Link>{" GetChiseleable(Collider collider)"}</code> |  |
-| <Link id="m-getdirectionleniency" /><code>{"virtual void GetDirectionLeniency(ref float directionMultiplier)"}</code> |  |
-| <Link id="m-gethitmultiplier" /><code>{"virtual float GetHitMultiplier(Vector3 hitDirection)"}</code> |  |
-| <Link id="m-receivedamage" /><code>{"virtual void ReceiveDamage(float damage, Vector3 position, Vector3 direction, "}<Link to="/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> |  |
+| <Link id="m-getchiseleable" /><code>{"static "}<Link to="/game-api/types/alta-crafting/ichiselable">{"IChiselable"}</Link>{" GetChiseleable(Collider collider)"}</code> | Finds the chiselable on a collider or its attached rigidbody, or null. |
+| <Link id="m-getdirectionleniency" /><code>{"virtual void GetDirectionLeniency(ref float directionMultiplier)"}</code> | Subclass: can adjust the direction multiplier. Does nothing by default. |
+| <Link id="m-gethitmultiplier" /><code>{"virtual float GetHitMultiplier(Vector3 hitDirection)"}</code> | How well a hit direction lines up, from 0 to 1. Always 1 by default. |
+| <Link id="m-receivedamage" /><code>{"virtual void ReceiveDamage(float damage, Vector3 position, Vector3 direction, "}<Link to="/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> | Takes a chisel hit and raises the damage and hit events. |
 
 ## Used in
 

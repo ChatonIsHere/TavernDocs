@@ -1,6 +1,6 @@
 ---
 title: "PopupScriptableObject"
-description: "class PopupScriptableObject in Root.Township."
+description: "Base for assets such as TreeSize, DurabilitySettings and LootValue that name a resource sub folder."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PopupScriptableObject
 
 A **class** in `Root.Township`, no namespace.
+
+Base for assets such as `TreeSize`, `DurabilitySettings` and `LootValue` that name a resource sub folder.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `ScriptableObject`
@@ -26,4 +28,4 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-subfolder" /><code>{"virtual string SubFolder { get; }"}</code> |  |
+| <Link id="m-subfolder" /><code>{"virtual string SubFolder { get; }"}</code> | Sub folder for this asset type, for example "Items/". Empty by default. |

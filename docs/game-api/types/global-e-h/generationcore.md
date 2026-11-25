@@ -1,6 +1,6 @@
 ---
 title: "GenerationCore"
-description: "class GenerationCore in Root.Township."
+description: "A procedural set piece (an encounter, a camp) placed by forest or cave generation."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GenerationCore
 
 A **class** in `Root.Township`, no namespace.
+
+A procedural set piece (an encounter, a camp) placed by forest or cave generation. Its `GeneratablePart`s build static content first and, when the chunk is being generated, dynamic content after.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`StaticEnvironmentPieceInstance`](/game-api/types/alta-world/staticenvironmentpieceinstance), [`IDistributionValue`](/game-api/types/alta-world-generation/idistributionvalue)
@@ -35,23 +37,23 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-chunkingparent" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" ChunkingParent { get; private set; }"}</code> |  |
-| <Link id="m-isdynamic" /><code>{"bool IsDynamic { get; private set; }"}</code> |  |
-| <Link id="m-maximumradius-2" /><code>{"float MaximumRadius { get; }"}</code> |  |
-| <Link id="m-minimumradius-2" /><code>{"float MinimumRadius { get; }"}</code> |  |
-| <Link id="m-radius" /><code>{"float Radius { get; private set; }"}</code> |  |
-| <Link id="m-seed" /><code>{"int Seed { get; private set; }"}</code> |  |
-| <Link id="m-spawndata" /><code><Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" { get; private set; }"}</code> |  |
+| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" { get; private set; }"}</code> | Chunk the core is in: its chunking parent's chunk, or the best chunk at its position. |
+| <Link id="m-chunkingparent" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" ChunkingParent { get; private set; }"}</code> | Entity spawned content is chunked under, if any. |
+| <Link id="m-isdynamic" /><code>{"bool IsDynamic { get; private set; }"}</code> | Whether the core is dynamic. Never set in this code, so always false. |
+| <Link id="m-maximumradius-2" /><code>{"float MaximumRadius { get; }"}</code> | Largest radius this core may be placed with. Also used to filter it in distributions. |
+| <Link id="m-minimumradius-2" /><code>{"float MinimumRadius { get; }"}</code> | Smallest radius this core may be placed with. |
+| <Link id="m-radius" /><code>{"float Radius { get; private set; }"}</code> | Radius chosen for this placement. |
+| <Link id="m-seed" /><code>{"int Seed { get; private set; }"}</code> | Seed passed to `Generate`. |
+| <Link id="m-spawndata" /><code><Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" { get; private set; }"}</code> | Spawn data passed to `Generate`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addpart" /><code>{"void AddPart("}<Link to="/game-api/types/global-e-h/generatablepart">{"GeneratablePart"}</Link>{" part)"}</code> |  |
-| <Link id="m-generate" /><code>{"void Generate("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" chunkingParent, bool isModifyingTerrain, float radius, int seed = 0)"}</code> |  |
-| <Link id="m-generatedynamic" /><code>{"void GenerateDynamic()"}</code> |  |
-| <Link id="m-release" /><code>{"override void Release()"}</code> |  |
+| <Link id="m-addpart" /><code>{"void AddPart("}<Link to="/game-api/types/global-e-h/generatablepart">{"GeneratablePart"}</Link>{" part)"}</code> | Adds a part to the list being generated this run. |
+| <Link id="m-generate" /><code>{"void Generate("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" chunkingParent, bool isModifyingTerrain, float radius, int seed = 0)"}</code> | Runs every part's static generation with the given spawn data, radius and seed. |
+| <Link id="m-generatedynamic" /><code>{"void GenerateDynamic()"}</code> | If the spawn data is generating, runs every part's dynamic generation and the static generation helper. |
+| <Link id="m-release" /><code>{"override void Release()"}</code> | Destroys the core's object. |
 | <Link id="m-evaluate" /><code>{"private float Alta.Caves.IDistributionValue.Evaluate("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" set)"}</code> |  |
 | <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |  |
 | <Link id="m-testgenerate" /><code>{"private void TestGenerate()"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "LogicBoolSender"
-description: "class LogicBoolSender in Root.Township."
+description: "Logic component that sends a bool to linked logic receivers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LogicBoolSender
 
 A **class** in `Root.Township`, `Alta.Logic`.
+
+Logic component that sends a bool to linked logic receivers. The value is stored in its shared logic save data.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`LogicValueSender<LogicBoolSaveData>`](/game-api/types/alta-items/logicvaluesender-tdata)
@@ -33,10 +35,10 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-readvalue" /><code>{"bool ReadValue()"}</code> |  |
-| <Link id="m-updatevalue" /><code>{"void UpdateValue(bool value)"}</code> |  |
-| <Link id="m-readdatavalue" /><code>{"protected override void ReadDataValue()"}</code> |  |
-| <Link id="m-writedatavalue" /><code>{"protected override void WriteDataValue()"}</code> |  |
+| <Link id="m-readvalue" /><code>{"bool ReadValue()"}</code> | Current value. |
+| <Link id="m-updatevalue" /><code>{"void UpdateValue(bool value)"}</code> | Sets the value and pushes it to the shared data if it changed. |
+| <Link id="m-readdatavalue" /><code>{"protected override void ReadDataValue()"}</code> | Reads the value from the shared data. Runs when it changes from elsewhere. |
+| <Link id="m-writedatavalue" /><code>{"protected override void WriteDataValue()"}</code> | Writes the value into the shared data. |
 
 ## Used in
 

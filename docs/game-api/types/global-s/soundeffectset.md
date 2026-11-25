@@ -1,6 +1,6 @@
 ---
 title: "SoundEffectSet"
-description: "class SoundEffectSet in Root.Township."
+description: "A ScriptableObject pairing a SoundEffect type with a Wwise event."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SoundEffectSet
 
 A **class** in `Root.Township`, no namespace.
+
+A ScriptableObject pairing a `SoundEffect` type with a Wwise event. Plays through the `AudioManager` singleton, so it only makes sound where audio runs.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `ScriptableObject`
@@ -34,19 +36,19 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-soundeffecttype-2" /><code><Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" SoundEffectType { get; }"}</code> |  |
-| <Link id="m-soundevent-2" /><code>{"Event SoundEvent { get; }"}</code> |  |
+| <Link id="m-soundeffecttype-2" /><code><Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" SoundEffectType { get; }"}</code> | The `SoundEffect` value this set is for. |
+| <Link id="m-soundevent-2" /><code>{"Event SoundEvent { get; }"}</code> | The Wwise event to post. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-play" /><code>{"void Play()"}</code> |  |
-| <Link id="m-playatobject" /><code>{"void PlayAtObject(Component position)"}</code> |  |
-| <Link id="m-playatposition" /><code>{"void PlayAtPosition(Vector3 position)"}</code> |  |
-| <Link id="m-playatposition-2" /><code>{"void PlayAtPosition(Vector3 position, Quaternion rotation)"}</code> |  |
-| <Link id="m-playonobject" /><code>{"void PlayOnObject(Component position)"}</code> |  |
-| <Link id="m-playonobject-2" /><code>{"void PlayOnObject("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" position)"}</code> |  |
+| <Link id="m-play" /><code>{"void Play()"}</code> | Plays the sound with no position. |
+| <Link id="m-playatobject" /><code>{"void PlayAtObject(Component position)"}</code> | Plays the sound at a component's current position, tied to its game object. |
+| <Link id="m-playatposition" /><code>{"void PlayAtPosition(Vector3 position)"}</code> | Plays the sound at a world position. The rotation overload ignores the rotation. |
+| <Link id="m-playatposition-2" /><code>{"void PlayAtPosition(Vector3 position, Quaternion rotation)"}</code> | Plays the sound at a world position. The rotation overload ignores the rotation. |
+| <Link id="m-playonobject" /><code>{"void PlayOnObject(Component position)"}</code> | Plays the sound attached to a component's game object, or to a player's controller. |
+| <Link id="m-playonobject-2" /><code>{"void PlayOnObject("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" position)"}</code> | Plays the sound attached to a component's game object, or to a player's controller. |
 
 ## Used in
 

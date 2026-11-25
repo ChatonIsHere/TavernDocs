@@ -1,6 +1,6 @@
 ---
 title: "BoneIdentifier"
-description: "class BoneIdentifier in Root.Township."
+description: "An empty asset used as a key to name a bone, looked up through a RigMap."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BoneIdentifier
 
 A **class** in `Root.Township`, no namespace.
+
+An empty asset used as a key to name a bone, looked up through a `RigMap`.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `ScriptableObject`

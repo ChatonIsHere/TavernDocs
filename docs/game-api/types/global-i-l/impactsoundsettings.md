@@ -1,6 +1,6 @@
 ---
 title: "ImpactSoundSettings"
-description: "class ImpactSoundSettings in Root.Township."
+description: "Global settings for Wwise impact sounds: the send and receive events, velocity RTPC and material sound map."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactSoundSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Global settings for Wwise impact sounds: the send and receive events, velocity RTPC and material sound map. `ImpactSoundManager` holds it, but nothing in this server build reads the values.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`GlobalSettings<ImpactSoundSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -38,11 +40,11 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultimpactsound-2" /><code>{"Switch DefaultImpactSound { get; }"}</code> |  |
-| <Link id="m-impactrecieveevent" /><code>{"Event ImpactRecieveEvent { get; }"}</code> |  |
-| <Link id="m-impactsendevent-2" /><code>{"Event ImpactSendEvent { get; }"}</code> |  |
-| <Link id="m-impactsoundmap-2" /><code><Link to="/game-api/types/global-i-l/impactsoundmap">{"ImpactSoundMap"}</Link>{" "}<Link to="/game-api/types/global-i-l/impactsoundmap">{"ImpactSoundMap"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-impactvelocityrtpc-2" /><code>{"RTPC ImpactVelocityRTPC { get; }"}</code> |  |
+| <Link id="m-defaultimpactsound-2" /><code>{"Switch DefaultImpactSound { get; }"}</code> | Wwise switch used when no mapped sound fits. |
+| <Link id="m-impactrecieveevent" /><code>{"Event ImpactRecieveEvent { get; }"}</code> | Wwise event for the struck side of an impact. |
+| <Link id="m-impactsendevent-2" /><code>{"Event ImpactSendEvent { get; }"}</code> | Wwise event for the striking side of an impact. |
+| <Link id="m-impactsoundmap-2" /><code><Link to="/game-api/types/global-i-l/impactsoundmap">{"ImpactSoundMap"}</Link>{" "}<Link to="/game-api/types/global-i-l/impactsoundmap">{"ImpactSoundMap"}</Link>{" { get; }"}</code> | Map of impact sounds per material. |
+| <Link id="m-impactvelocityrtpc-2" /><code>{"RTPC ImpactVelocityRTPC { get; }"}</code> | Wwise RTPC fed with impact velocity. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "InputMap.IPlayingBaseActions"
-description: "Callbacks for the core VR controller actions in the generated InputMap. OpenXRWrapper implements it to fill in each hand's input."
+description: "Callbacks for the core VR controller actions in the generated InputMap."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

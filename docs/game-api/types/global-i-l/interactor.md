@@ -1,6 +1,6 @@
 ---
 title: "Interactor"
-description: "Runs on both sides: the grab is decided on the player's own client, then replayed on the server and on other clients."
+description: "The grabbing part of a hand."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-Runs on both sides: the grab is decided on the player's own client, then replayed on the server and on other clients.
+The grabbing part of a hand. It finds `Interactable`s in its trigger, picks the best one, starts and stops interactions and syncs them. A `ControllerExtension` on each hand of a player body; the owning client drives it and the server checks and relays.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`ControllerExtension`](/game-api/types/global-c-d/controllerextension)
@@ -29,7 +29,7 @@ Runs on both sides: the grab is decided on the player's own client, then replaye
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maximumscore" /><code>{"const float MaximumScore"}</code> |  |
+| <Link id="m-maximumscore" /><code>{"const float MaximumScore"}</code> | `float.MaxValue`. A score at this value means the interactable can't be picked. |
 | <Link id="m-baseposition" /><code>{"private Vector3 basePosition"}</code> |  |
 | <Link id="m-baserotation" /><code>{"private Quaternion baseRotation"}</code> |  |
 | <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" channels"}</code> |  |
@@ -66,52 +66,52 @@ Runs on both sides: the grab is decided on the player's own client, then replaye
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channels-2" /><code><Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" Channels { get; }"}</code> |  |
-| <Link id="m-folder" /><code>{"Transform Folder { get; }"}</code> |  |
-| <Link id="m-forwardsource" /><code><Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" ForwardSource { get; private set; }"}</code> |  |
-| <Link id="m-gripanimator" /><code><Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" GripAnimator { get; }"}</code> |  |
-| <Link id="m-hasgripanimator" /><code>{"bool HasGripAnimator { get; private set; }"}</code> |  |
-| <Link id="m-interactingwith-2" /><code><Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" InteractingWith { get; }"}</code> |  |
-| <Link id="m-interactionpoint" /><code>{"Transform InteractionPoint { get; }"}</code> |  |
-| <Link id="m-isduringphysicsoverlap" /><code>{"static int IsDuringPhysicsOverlap { get; set; }"}</code> |  |
-| <Link id="m-isinteracting" /><code>{"bool IsInteracting { get; }"}</code> |  |
-| <Link id="m-istoggleholding" /><code>{"bool IsToggleHolding { get; private set; }"}</code> |  |
-| <Link id="m-overlapinteractables" /><code>{"List<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{"> OverlapInteractables { get; }"}</code> |  |
-| <Link id="m-triggerobjecttransform-2" /><code>{"Transform TriggerObjectTransform { get; }"}</code> |  |
+| <Link id="m-channels-2" /><code><Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" Channels { get; }"}</code> | The interaction channels this hand can use. An override, if set, replaces the prefab's channels. |
+| <Link id="m-folder" /><code>{"Transform Folder { get; }"}</code> | The body's transform, or the interactor's own without a controller. |
+| <Link id="m-forwardsource" /><code><Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" ForwardSource { get; private set; }"}</code> | The interactable the last `StartInteract` was called on, before forwarding picked the real target. |
+| <Link id="m-gripanimator" /><code><Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" GripAnimator { get; }"}</code> | The hand's grip animator, if it has one. |
+| <Link id="m-hasgripanimator" /><code>{"bool HasGripAnimator { get; private set; }"}</code> | Whether the hand had a grip animator at setup. |
+| <Link id="m-interactingwith-2" /><code><Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" InteractingWith { get; }"}</code> | What this hand is holding or using now, or null. |
+| <Link id="m-interactionpoint" /><code>{"Transform InteractionPoint { get; }"}</code> | The point used for distance scoring: the hand's grip point. |
+| <Link id="m-isduringphysicsoverlap" /><code>{"static int IsDuringPhysicsOverlap { get; set; }"}</code> | Static counter, above zero while an interaction is starting from a trigger overlap or being stopped. |
+| <Link id="m-isinteracting" /><code>{"bool IsInteracting { get; }"}</code> | True while `InteractingWith` is set. |
+| <Link id="m-istoggleholding" /><code>{"bool IsToggleHolding { get; private set; }"}</code> | True while the hand holds something with toggle grab, so letting go of the button doesn't drop it. |
+| <Link id="m-overlapinteractables" /><code>{"List<"}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{"> OverlapInteractables { get; }"}</code> | The interactables found in the last overlap check. |
+| <Link id="m-triggerobjecttransform-2" /><code>{"Transform TriggerObjectTransform { get; }"}</code> | The transform of the hand's trigger sphere or capsule. |
 | <Link id="m-hastimedout" /><code>{"private bool HasTimedOut { get; }"}</code> |  |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getgrabassistblock" /><code>{"event "}<Link to="/game-api/types/alta-utilities/generaldelegates-boolupdater">{"GeneralDelegates.BoolUpdater"}</Link>{" GetGrabAssistBlock"}</code> |  |
-| <Link id="m-interactionended" /><code>{"event "}<Link to="/game-api/types/global-i-l/interactionhandler">{"InteractionHandler"}</Link>{" InteractionEnded"}</code> |  |
-| <Link id="m-interactionstarted" /><code>{"event "}<Link to="/game-api/types/global-i-l/interactionhandler">{"InteractionHandler"}</Link>{" InteractionStarted"}</code> |  |
-| <Link id="m-preinteractionstarted" /><code>{"event "}<Link to="/game-api/types/global-i-l/interactionhandler">{"InteractionHandler"}</Link>{" PreInteractionStarted"}</code> |  |
+| <Link id="m-getgrabassistblock" /><code>{"event "}<Link to="/game-api/types/alta-utilities/generaldelegates-boolupdater">{"GeneralDelegates.BoolUpdater"}</Link>{" GetGrabAssistBlock"}</code> | Handlers can set the value to true to turn off grab assist for this hand. |
+| <Link id="m-interactionended" /><code>{"event "}<Link to="/game-api/types/global-i-l/interactionhandler">{"InteractionHandler"}</Link>{" InteractionEnded"}</code> | Raised after an interaction stops. |
+| <Link id="m-interactionstarted" /><code>{"event "}<Link to="/game-api/types/global-i-l/interactionhandler">{"InteractionHandler"}</Link>{" InteractionStarted"}</code> | Raised after an interaction has started and been sent. |
+| <Link id="m-preinteractionstarted" /><code>{"event "}<Link to="/game-api/types/global-i-l/interactionhandler">{"InteractionHandler"}</Link>{" PreInteractionStarted"}</code> | Raised just before the interactable's `Interact` runs. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkhold" /><code>{"void CheckHold("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |  |
-| <Link id="m-checkrelease" /><code>{"void CheckRelease("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller, bool isDisabling)"}</code> |  |
-| <Link id="m-getcollideroverlap" /><code>{"int GetColliderOverlap(out Collider[] colliders)"}</code> |  |
-| <Link id="m-getconfirmationoninteractable" /><code>{"void GetConfirmationOnInteractable("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" targetInteractable)"}</code> |  |
-| <Link id="m-initializecontrollerextension" /><code>{"override void InitializeControllerExtension()"}</code> |  |
-| <Link id="m-isgrabassistblocked" /><code>{"bool IsGrabAssistBlocked()"}</code> |  |
-| <Link id="m-onconnectedtoplayer" /><code>{"override void OnConnectedToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-resetoverrideinteractionchannels" /><code>{"void ResetOverrideInteractionChannels()"}</code> |  |
-| <Link id="m-resettimeout" /><code>{"void ResetTimeout()"}</code> |  |
-| <Link id="m-selectbestfromcurrent" /><code>{"bool SelectBestFromCurrent(out "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" bestInteractable)"}</code> |  |
-| <Link id="m-setoverrideinteractionchannels" /><code>{"void SetOverrideInteractionChannels("}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" newChannels)"}</code> |  |
-| <Link id="m-startinteract" /><code><Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" StartInteract("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, bool isFromNetwork = false, bool isForced = false, bool isForcingHold = false)"}</code> |  |
-| <Link id="m-stopinteract" /><code>{"void StopInteract(bool isFromServer = false, bool isForced = false)"}</code> |  |
-| <Link id="m-swapinteract" /><code><Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" SwapInteract("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, bool isForced = false)"}</code> |  |
+| <Link id="m-checkhold" /><code>{"void CheckHold("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Run when the grab button is pressed: tries grab assist, or picks the best overlapping interactable and starts on it. |
+| <Link id="m-checkrelease" /><code>{"void CheckRelease("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller, bool isDisabling)"}</code> | Run when the grab button is let go: stops the interaction unless toggle-holding (or the hand is being disabled). |
+| <Link id="m-getcollideroverlap" /><code>{"int GetColliderOverlap(out Collider[] colliders)"}</code> | Sweeps the hand's trigger since the last physics step and returns how many colliders it hit, with the shared buffer. |
+| <Link id="m-getconfirmationoninteractable" /><code>{"void GetConfirmationOnInteractable("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" targetInteractable)"}</code> | Starts on the interactable, or if another player holds it, buzzes both and waits for them to let go while you keep holding. |
+| <Link id="m-initializecontrollerextension" /><code>{"override void InitializeControllerExtension()"}</code> | Sets up the interact sync messages, the trigger offset (mirrored for the right hand) and grab assist on the local player. |
+| <Link id="m-isgrabassistblocked" /><code>{"bool IsGrabAssistBlocked()"}</code> | Whether any `GetGrabAssistBlock` handler is blocking grab assist. |
+| <Link id="m-onconnectedtoplayer" /><code>{"override void OnConnectedToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: tells a newly arrived player what this hand is holding, as a forced hold. |
+| <Link id="m-resetoverrideinteractionchannels" /><code>{"void ResetOverrideInteractionChannels()"}</code> | Clears a channel override so `Channels` goes back to the prefab's. |
+| <Link id="m-resettimeout" /><code>{"void ResetTimeout()"}</code> | Restarts the interact attempt timer, so a timed-out hand can grab again. |
+| <Link id="m-selectbestfromcurrent" /><code>{"bool SelectBestFromCurrent(out "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" bestInteractable)"}</code> | Overlaps the trigger now and returns the lowest-scoring interactable that accepts this hand. |
+| <Link id="m-setoverrideinteractionchannels" /><code>{"void SetOverrideInteractionChannels("}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" newChannels)"}</code> | Replaces this hand's interaction channels until reset. |
+| <Link id="m-startinteract" /><code><Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" StartInteract("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, bool isFromNetwork = false, bool isForced = false, bool isForcingHold = false)"}</code> | Starts interacting after following forwards and checking the target allows it. Sends the grab and keeps a held item out of chunk saves. |
+| <Link id="m-stopinteract" /><code>{"void StopInteract(bool isFromServer = false, bool isForced = false)"}</code> | Ends the current interaction, sends it unless it came from the server, and restores the item's save mode. |
+| <Link id="m-swapinteract" /><code><Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" SwapInteract("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, bool isForced = false)"}</code> | Stops the current interaction and starts on another interactable. |
 | <Link id="m-addoverlap" /><code>{"private void AddOverlap(Collider collider)"}</code> |  |
 | <Link id="m-checkgrabassist" /><code>{"private bool CheckGrabAssist()"}</code> |  |
 | <Link id="m-clearassist" /><code>{"private void ClearAssist()"}</code> |  |
 | <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |  |
-| <Link id="m-getcollideroverlap-2" /><code>{"private int GetColliderOverlap()"}</code> |  |
+| <Link id="m-getcollideroverlap-2" /><code>{"private int GetColliderOverlap()"}</code> | Sweeps the hand's trigger since the last physics step and returns how many colliders it hit, with the shared buffer. |
 | <Link id="m-isgrabassistenabledandnotblocked" /><code>{"private bool IsGrabAssistEnabledAndNotBlocked()"}</code> |  |
 | <Link id="m-jointbroken" /><code>{"private void JointBroken("}<Link to="/game-api/types/global-i-l/jointbreakdetector">{"JointBreakDetector"}</Link>{" detector, float force)"}</code> |  |
 | <Link id="m-networkstartinteraction" /><code>{"private void NetworkStartInteraction("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "PlayerComponent"
-description: "class PlayerComponent in Root.Township."
+description: "Base for components on the Player object (the player's network entity, not their body)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerComponent
 
 A **class** in `Root.Township`, no namespace.
+
+Base for components on the `Player` object (the player's network entity, not their body). `Player` calls `InitializeComponent` on each one.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour)
@@ -32,14 +34,14 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-player-2" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-player-2" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" { get; }"}</code> | The `Player` on the same object. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializecomponent" /><code>{"void InitializeComponent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" newIPlayer)"}</code> |  |
-| <Link id="m-playerloadcomplete" /><code>{"protected virtual void PlayerLoadComplete()"}</code> |  |
+| <Link id="m-initializecomponent" /><code>{"void InitializeComponent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" newIPlayer)"}</code> | Hooks `PlayerLoadComplete` to the player's `LoadComplete` event. |
+| <Link id="m-playerloadcomplete" /><code>{"protected virtual void PlayerLoadComplete()"}</code> | Called when the player has finished loading. Empty by default. |
 
 ## Used in
 

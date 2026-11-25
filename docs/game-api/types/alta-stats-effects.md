@@ -12,7 +12,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Alchemy
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`BreathableArea`](/game-api/types/alta-stats-effects/breathablearea) | class | `EffectArea` | 0 |  |
 | [`BuildUpconcoctionEffect`](/game-api/types/alta-stats-effects/buildupconcoctioneffect) | abstract class | `EffectDefinition` | 1 | [Effects](../game-systems/effects.md) |
@@ -47,7 +47,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Heat
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`CylinderHeatArea`](/game-api/types/alta-stats-effects/cylinderheatarea) | class | `HeatAreaModifier` | 0 |  |
 | [`EnergyBasedHeatSource`](/game-api/types/alta-stats-effects/energybasedheatsource) | class | `HeatSourceBase` | 0 | [Heat](../game-systems/heat.md): A `HeatSourceBase` whose `ConductToHeatPoint` adds nothing. Looks unfinished. |
@@ -68,7 +68,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`HeatManager`](/game-api/types/alta-stats-effects/heatmanager) | class | `MonoBehaviour` | 0 | [Heat](../game-systems/heat.md#heatmanager): Burns a body: it watches a `HeatPointCollection`'s points and, on the server, damages its `HealthObject` when they pass `burnDamageThreshold`, and lights it above `ignitionThreshold`. |
 | [`HeatPoint`](/game-api/types/alta-stats-effects/heatpoint) | class | `MonoBehaviour`, `IChildSyncable<HeatPoint, HeatPointCollectionSaveData.Element>`, `IChildSyncable<HeatPoint>`, +4 more | 30 | [Heat](../game-systems/heat.md#heatpoint): Implements `IHeatReceiver` (and so `IHeatSource`). Usually several per item, held by a `HeatPointCollection` on the entity, which saves and syncs them. |
 | [`HeatPoint.Neighbour`](/game-api/types/alta-stats-effects/heatpoint-neighbour) | class |  | 3 |  |
-| [`HeatPointCollection`](/game-api/types/alta-stats-effects/heatpointcollection) | class | `ChildSyncableCollection<HeatPoint, HeatPointCollection, HeatPointCollectionSaveData, HeatPointCollectionSaveData.Element>`, `INetworkSerialized` | 8 |  |
+| [`HeatPointCollection`](/game-api/types/alta-stats-effects/heatpointcollection) | class | `ChildSyncableCollection<HeatPoint, HeatPointCollection, HeatPointCollectionSaveData, HeatPointCollectionSaveData.Element>`, `INetworkSerialized` | 8 | The heat points on an entity, synced together as one block whenever any of them changes. See the heat guide. |
 | [`HeatPointCollectionAreaFilter`](/game-api/types/alta-stats-effects/heatpointcollectionareafilter) | class | `MonoBehaviour` | 1 |  |
 | [`HeatPointTemperatureController`](/game-api/types/alta-stats-effects/heatpointtemperaturecontroller) | class | `MonoBehaviour` | 0 | [Heat](../game-systems/heat.md): Clamps a point between `minTemperature` and `maxTemperature` through its `TemperatureModifier`, on the server. |
 | [`HeatPointToHeatAreaLink`](/game-api/types/alta-stats-effects/heatpointtoheatarealink) | class | `MonoBehaviour` | 0 |  |
@@ -87,7 +87,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Liquid
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`BoilingParticles`](/game-api/types/alta-stats-effects/boilingparticles) | class | `PooledObject` | 5 |  |
 | [`BoilingParticlesMaterialCreator`](/game-api/types/alta-stats-effects/boilingparticlesmaterialcreator) | class | `MaterialCreator<LiquidVisualData>` | 3 |  |
@@ -101,11 +101,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ILiquidParticlesMarker`](/game-api/types/alta-stats-effects/iliquidparticlesmarker) | internal interface |  | 1 |  |
 | [`ILiquidTransitionController`](/game-api/types/alta-stats-effects/iliquidtransitioncontroller) | interface |  | 0 |  |
 | [`IPourableContainer`](/game-api/types/alta-stats-effects/ipourablecontainer) | interface |  | 4 | [Liquids](../game-systems/liquids.md) |
-| [`LiquidContainer`](/game-api/types/alta-stats-effects/liquidcontainer) | class | `GeneratedNetworkEntityBehaviour`, `ILiquidContainer`, `ILiquidContainerInternal`, +6 more | 24 |  |
+| [`LiquidContainer`](/game-api/types/alta-stats-effects/liquidcontainer) | class | `GeneratedNetworkEntityBehaviour`, `ILiquidContainer`, `ILiquidContainerInternal`, +6 more | 24 | Holds a whole number of units of one liquid (a bucket, a flask, a pond). Only the server changes the contents; the level and liquid are synced, saved, and shown through an optional surface visual. Pours in progress show as fractional amounts. |
 | [`LiquidContainerAmountChangedHandler`](/game-api/types/alta-stats-effects/liquidcontaineramountchangedhandler) | delegate |  | 0 |  |
 | [`LiquidContainerHandler`](/game-api/types/alta-stats-effects/liquidcontainerhandler) | delegate |  | 0 |  |
 | [`LiquidContainerLid`](/game-api/types/alta-stats-effects/liquidcontainerlid) | class | `NetworkEntityBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 9 | [Liquids](../game-systems/liquids.md): A lid that opens and closes a container. |
-| [`LiquidContainerSaveData`](/game-api/types/alta-stats-effects/liquidcontainersavedata) | class | `NewSaveData<LiquidContainer, LiquidContainerSaveData>` | 7 |  |
+| [`LiquidContainerSaveData`](/game-api/types/alta-stats-effects/liquidcontainersavedata) | class | `NewSaveData<LiquidContainer, LiquidContainerSaveData>` | 7 | Save data for a `LiquidContainer` (save version 1): its fill level, whether it can be filled or emptied, and either a preset liquid or custom liquid data. |
 | [`LiquidContainerSaveData.CustomData`](/game-api/types/alta-stats-effects/liquidcontainersavedata-customdata) | class |  | 5 |  |
 | [`LiquidContainerSaveData.Effect`](/game-api/types/alta-stats-effects/liquidcontainersavedata-effect) | class |  | 2 |  |
 | [`LiquidContainerTrigger`](/game-api/types/alta-stats-effects/liquidcontainertrigger) | class | `MonoBehaviour` | 2 | [Liquids](../game-systems/liquids.md#dipping-liquidcontainertrigger) |
@@ -115,7 +115,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LiquidDefinition`](/game-api/types/alta-stats-effects/liquiddefinition) | class | `HashedGeneralValue<LiquidDefinition>` | 2 | [Liquids](../game-systems/liquids.md#liquiddefinition-liquidcontent-and-liquiddata): `HashedGeneralValue<LiquidDefinition>` asset under `Cooking/Liquids`: a named liquid (water, a potion). `LiquidData Data`, `LiquidContent GetAsLiquidContent()` (cached). |
 | [`LiquidFillFilter`](/game-api/types/alta-stats-effects/liquidfillfilter) | delegate |  | 0 |  |
 | [`LiquidFoamMaterialCreator`](/game-api/types/alta-stats-effects/liquidfoammaterialcreator) | class | `MaterialCreator<LiquidVisualData>` | 1 |  |
-| [`LiquidGravity`](/game-api/types/alta-stats-effects/liquidgravity) | class |  | 14 |  |
+| [`LiquidGravity`](/game-api/types/alta-stats-effects/liquidgravity) | class |  | 14 | Simulates which way a liquid surface points as its container moves and tips, with some sloshing. `LiquidSurfaceVisual` uses one. Plain class, client visuals. |
 | [`LiquidGravityAdjustment`](/game-api/types/alta-stats-effects/liquidgravityadjustment) | static class |  | 1 |  |
 | [`LiquidHeatAreaController`](/game-api/types/alta-stats-effects/liquidheatareacontroller) | class | `MonoBehaviour` | 0 | [Liquids](../game-systems/liquids.md): Links a container's liquid to a heat area and heat point. |
 | [`LiquidParticleMarker`](/game-api/types/alta-stats-effects/liquidparticlemarker) | class | `MonoBehaviour`, `ILiquidParticlesMarker` | 1 |  |
@@ -125,11 +125,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LiquidSettings.Create`](/game-api/types/alta-stats-effects/liquidsettings-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<LiquidSettings>` | 0 |  |
 | [`LiquidStencilShaderController`](/game-api/types/alta-stats-effects/liquidstencilshadercontroller) | class | `MonoBehaviour` | 0 |  |
 | [`LiquidSurfaceMaterialCreator`](/game-api/types/alta-stats-effects/liquidsurfacematerialcreator) | class | `MaterialCreator<LiquidVisualData>` | 7 |  |
-| [`LiquidSurfaceVisual`](/game-api/types/alta-stats-effects/liquidsurfacevisual) | abstract class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 19 |  |
-| [`LiquidTransition`](/game-api/types/alta-stats-effects/liquidtransition) | class |  | 11 |  |
+| [`LiquidSurfaceVisual`](/game-api/types/alta-stats-effects/liquidsurfacevisual) | abstract class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 19 | Base for the liquid surface inside a container. It tracks how far the container is tipped (through `LiquidGravity`) and how full it is, and on clients draws the surface. It also stays active on the server, where the tip state is still updated. |
+| [`LiquidTransition`](/game-api/types/alta-stats-effects/liquidtransition) | class |  | 11 | One pour in progress from a source liquid container into a receiving one. Progress builds up and each time it reaches 1, one unit of liquid moves over. |
 | [`LiquidTypeChangedHandler`](/game-api/types/alta-stats-effects/liquidtypechangedhandler) | delegate |  | 0 |  |
-| [`LiquidVisualData`](/game-api/types/alta-stats-effects/liquidvisualdata) | class | `MaterialPropertyBlockSettings<LiquidVisualData>` | 24 |  |
-| [`MaterialCreator<T>`](/game-api/types/alta-stats-effects/materialcreator-t) | abstract class |  | 1 |  |
+| [`LiquidVisualData`](/game-api/types/alta-stats-effects/liquidvisualdata) | class | `MaterialPropertyBlockSettings<LiquidVisualData>` | 24 | Asset with the look of a liquid (colours, rim, fresnel, highlight, waves) that liquid surfaces apply as material properties. Client visuals only. |
+| [`MaterialCreator<T>`](/game-api/types/alta-stats-effects/materialcreator-t) | abstract class |  | 1 | Base for classes that build a liquid material from settings of type `T` and a template material. |
 | [`PickupLiquidContainerEnabler`](/game-api/types/alta-stats-effects/pickupliquidcontainerenabler) | class | `MonoBehaviour` | 0 | [Liquids](../game-systems/liquids.md): Links a pickup to its container, pouring and surface, and filters what can be added. |
 | [`PickupLiquidContainerEnabler.DockingElibility`](/game-api/types/alta-stats-effects/pickupliquidcontainerenabler-dockingelibility) | enum |  | 3 |  |
 | [`PotionImpactColorer`](/game-api/types/alta-stats-effects/potionimpactcolorer) | class | `MonoBehaviour` | 1 |  |
@@ -141,7 +141,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.StatSystem
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AreaFilter`](/game-api/types/alta-stats-effects/areafilter) | enum |  | 3 |  |
 | [`BurnStat`](/game-api/types/alta-stats-effects/burnstat) | class | `ControlledStat` | 2 | [Stats](../game-systems/stats.md) |
@@ -185,7 +185,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`StatAffectingArea`](/game-api/types/alta-stats-effects/stataffectingarea) | class | `MonoBehaviour` | 0 | [Stats](../game-systems/stats.md): An area that changes a stat by `affectValuePerSecond` on things inside it. |
 | [`StatAppliedHandler`](/game-api/types/alta-stats-effects/statappliedhandler) | delegate |  | 0 |  |
 | [`StatBar`](/game-api/types/alta-stats-effects/statbar) | class | `StatBarSimple` | 6 | [Stats](../game-systems/stats.md) |
-| [`StatBarBase`](/game-api/types/alta-stats-effects/statbarbase) | class | `MonoBehaviour` | 6 |  |
+| [`StatBarBase`](/game-api/types/alta-stats-effects/statbarbase) | class | `MonoBehaviour` | 6 | Base for a bar that shows one stat (such as on the player's wrist). Hides itself while the hand camera takes a photo. Client side. |
 | [`StatBarNotch`](/game-api/types/alta-stats-effects/statbarnotch) | class | `MonoBehaviour` | 4 |  |
 | [`StatBarSimple`](/game-api/types/alta-stats-effects/statbarsimple) | class | `StatBarBase` | 6 | [Stats](../game-systems/stats.md) |
 | [`StatBarSimple.IsLerping`](/game-api/types/alta-stats-effects/statbarsimple-islerping) | delegate |  | 0 |  |

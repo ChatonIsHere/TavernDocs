@@ -1,6 +1,6 @@
 ---
 title: "DockVisual"
-description: "The bubble and item count label on a pickup dock. Switches materials by distance to the local player's head, pulses while hovered, and can hide from t"
+description: "The bubble and item count label on a pickup dock."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

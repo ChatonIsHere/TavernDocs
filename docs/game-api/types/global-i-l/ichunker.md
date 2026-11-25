@@ -1,6 +1,6 @@
 ---
 title: "IChunker"
-description: "Server: a node in the tree that decides which players a networked object is spawned for, based on chunks. Chunker is the implementation."
+description: "Server: a node in the tree that decides which players a networked object is spawned for, based on chunks."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

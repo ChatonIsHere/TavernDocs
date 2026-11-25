@@ -1,6 +1,6 @@
 ---
 title: "ChunkVersioning"
-description: "class ChunkVersioning in Root.Township."
+description: "The set of save format versions a chunk was written with: a map from save type hash to version number."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChunkVersioning
 
 A **class** in `Root.Township`, `Alta.Saving`.
+
+The set of save format versions a chunk was written with: a map from save type hash to version number. `SavingSystem.LatestChunkVersioning` holds the current one; each chunk save stores the versioning it used.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 
@@ -31,24 +33,24 @@ A **class** in `Root.Township`, `Alta.Saving`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hashversions" /><code>{"Dictionary<uint, uint> HashVersions { get; }"}</code> |  |
+| <Link id="m-hashversions" /><code>{"Dictionary<uint, uint> HashVersions { get; }"}</code> | Map from a save type's hash to its version. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-add" /><code>{"void Add(uint hash, uint version)"}</code> |  |
-| <Link id="m-equals" /><code>{"override bool Equals(object otherObject)"}</code> |  |
-| <Link id="m-fromstring" /><code>{"void FromString(string value)"}</code> |  |
-| <Link id="m-getarray" /><code>{"uint[] GetArray()"}</code> |  |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |  |
-| <Link id="m-loadarray" /><code>{"void LoadArray(uint[] elements)"}</code> |  |
-| <Link id="m-op-equality" /><code>{"static bool op_Equality("}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" first, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" second)"}</code> |  |
-| <Link id="m-op-inequality" /><code>{"static bool op_Inequality("}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" first, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" second)"}</code> |  |
-| <Link id="m-read" /><code>{"void Read(BinaryReader reader, int index = 0)"}</code> |  |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |  |
-| <Link id="m-write" /><code>{"void Write(BinaryWriter writer)"}</code> |  |
+| <Link id="m-add" /><code>{"void Add(uint hash, uint version)"}</code> | Adds a hash and version. Logs an error and keeps the old value if the hash is already there. |
+| <Link id="m-equals" /><code>{"override bool Equals(object otherObject)"}</code> | True unless a hash in both sets has a different version. Hashes only in one set are ignored. |
+| <Link id="m-fromstring" /><code>{"void FromString(string value)"}</code> | Loads from the comma text form made by `ToString` (count, then hash and version pairs). |
+| <Link id="m-getarray" /><code>{"uint[] GetArray()"}</code> | Returns hash and version pairs as one flat array. |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Hash built from all hash and version pairs. |
+| <Link id="m-loadarray" /><code>{"void LoadArray(uint[] elements)"}</code> | Adds hash and version pairs from a flat array made by `GetArray`. |
+| <Link id="m-op-equality" /><code>{"static bool op_Equality("}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" first, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" second)"}</code> | Same as `Equals`, with null handling. |
+| <Link id="m-op-inequality" /><code>{"static bool op_Inequality("}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" first, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" second)"}</code> | Opposite of `==`. |
+| <Link id="m-read" /><code>{"void Read(BinaryReader reader, int index = 0)"}</code> | Replaces the contents from a binary reader (count, then pairs). |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the pairs through an Alta `Stream`. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Text form: the count, then each hash and version, all comma separated. |
+| <Link id="m-write" /><code>{"void Write(BinaryWriter writer)"}</code> | Writes the count and pairs to a binary writer. |
 
 ## Used in
 

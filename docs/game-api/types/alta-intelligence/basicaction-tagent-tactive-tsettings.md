@@ -1,6 +1,6 @@
 ---
 title: "BasicAction<TAgent, TActive, TSettings>"
-description: "class BasicAction<TAgent, TActive, TSettings> in Root.Township."
+description: "An Action<TAgent> that runs a TActive with settings TSettings, reusing finished or cancelled instances from a pool."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BasicAction&lt;TAgent, TActive, TSettings&gt;
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+An `Action<TAgent>` that runs a `TActive` with settings `TSettings`, reusing finished or cancelled instances from a pool.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`Action<TAgent>`](/game-api/types/alta-intelligence/action-tagent)
@@ -32,15 +34,15 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generalsettings" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/iactionsettings">{"IActionSettings"}</Link>{" GeneralSettings { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"override string Name { get; }"}</code> |  |
-| <Link id="m-settings" /><code>{"TSettings Settings { get; private set; }"}</code> |  |
+| <Link id="m-generalsettings" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/iactionsettings">{"IActionSettings"}</Link>{" GeneralSettings { get; }"}</code> | The settings as `IActionSettings`. |
+| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | The settings' `name`. |
+| <Link id="m-settings" /><code>{"TSettings Settings { get; private set; }"}</code> | The typed settings this action was made with. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" Start(TAgent agent)"}</code> |  |
+| <Link id="m-start" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" Start(TAgent agent)"}</code> | Takes a pooled active action (or makes one), starts it on the agent, calls the settings' `HandleUsed` and returns it. |
 | <Link id="m-pool" /><code>{"private void Pool("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |  |
 
 ## Used in

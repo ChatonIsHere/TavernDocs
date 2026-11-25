@@ -1,6 +1,6 @@
 ---
 title: "ForestGeneration"
-description: "Alta.Forests.ForestGeneration, the layout. It's an ICacheable, so it's stored in the cache."
+description: "A forest's generated layout: outline, entrances and a path graph of nodes, edges and triangular spaces, plus lookups by chunk and grid."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Forests`.
 
-`Alta.Forests.ForestGeneration`, the layout. It's an `ICacheable`, so it's stored in the cache.
+A forest's generated layout: outline, entrances and a path graph of nodes, edges and triangular spaces, plus lookups by chunk and grid. Cached as an `ICacheable`; get it from the forest generator's `GetGenerationAsync` or `GetGenerated`.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`ICacheable`](/game-api/types/alta-world/icacheable)
@@ -53,53 +53,53 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-area-2" /><code>{"float Area { get; }"}</code> |  |
-| <Link id="m-biomespheremanager" /><code><Link to="/game-api/types/global-a-b/biomespheremanager">{"BiomeSphereManager"}</Link>{" "}<Link to="/game-api/types/global-a-b/biomespheremanager">{"BiomeSphereManager"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-bounds" /><code>{"Bounds Bounds { get; private set; }"}</code> |  |
-| <Link id="m-delaunay" /><code>{"Mesh Delaunay { get; }"}</code> |  |
-| <Link id="m-edges-2" /><code>{"IReadOnlyList<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> Edges { get; }"}</code> |  |
-| <Link id="m-entrancenodes-2" /><code>{"ICollection<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{"> EntranceNodes { get; }"}</code> |  |
-| <Link id="m-entrances" /><code>{"ICollection<Vector3> Entrances { get; }"}</code> |  |
-| <Link id="m-generator" /><code><Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" Generator { get; set; }"}</code> |  |
-| <Link id="m-longestpath" /><code>{"float LongestPath { get; private set; }"}</code> |  |
-| <Link id="m-nodecount" /><code>{"int NodeCount { get; }"}</code> |  |
-| <Link id="m-nodes-2" /><code>{"IReadOnlyList<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{"> Nodes { get; }"}</code> |  |
-| <Link id="m-outline" /><code>{"ICollection<Vector3> Outline { get; }"}</code> |  |
-| <Link id="m-outlineindices" /><code>{"int[] OutlineIndices { get; }"}</code> |  |
-| <Link id="m-seed-2" /><code>{"uint Seed { get; }"}</code> |  |
-| <Link id="m-simplexnoise" /><code><Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" "}<Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-spaces-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{"> Spaces { get; }"}</code> |  |
-| <Link id="m-version" /><code>{"uint Version { get; }"}</code> |  |
-| <Link id="m-workingedges" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> WorkingEdges { get; }"}</code> |  |
-| <Link id="m-workingnodes" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{"> WorkingNodes { get; }"}</code> |  |
-| <Link id="m-workingspaces" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{"> WorkingSpaces { get; }"}</code> |  |
+| <Link id="m-area-2" /><code>{"float Area { get; }"}</code> | Area of the forest outline, worked out when the outline is set. |
+| <Link id="m-biomespheremanager" /><code><Link to="/game-api/types/global-a-b/biomespheremanager">{"BiomeSphereManager"}</Link>{" "}<Link to="/game-api/types/global-a-b/biomespheremanager">{"BiomeSphereManager"}</Link>{" { get; }"}</code> | The biome areas inside the forest. Saved with the layout. |
+| <Link id="m-bounds" /><code>{"Bounds Bounds { get; private set; }"}</code> | Bounds around the outline points, grown by 1 unit. |
+| <Link id="m-delaunay" /><code>{"Mesh Delaunay { get; }"}</code> | The TriangleNet triangulation of the node positions, used by `GetSpace` and `GetNodeHeight`. |
+| <Link id="m-edges-2" /><code>{"IReadOnlyList<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> Edges { get; }"}</code> | All path edges between nodes. |
+| <Link id="m-entrancenodes-2" /><code>{"ICollection<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{"> EntranceNodes { get; }"}</code> | The nodes at the forest entrances, set by `CollectEntrances`. |
+| <Link id="m-entrances" /><code>{"ICollection<Vector3> Entrances { get; }"}</code> | World positions of the entrance points. |
+| <Link id="m-generator" /><code><Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" Generator { get; set; }"}</code> | The `ForestGenerator` this layout belongs to. |
+| <Link id="m-longestpath" /><code>{"float LongestPath { get; private set; }"}</code> | Not set anywhere in this build, so always 0. |
+| <Link id="m-nodecount" /><code>{"int NodeCount { get; }"}</code> | How many path nodes there are. |
+| <Link id="m-nodes-2" /><code>{"IReadOnlyList<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{"> Nodes { get; }"}</code> | All path nodes, read-only. |
+| <Link id="m-outline" /><code>{"ICollection<Vector3> Outline { get; }"}</code> | World positions of the outline points. |
+| <Link id="m-outlineindices" /><code>{"int[] OutlineIndices { get; }"}</code> | Triangle indices from triangulating the outline. Used by `Contains`. |
+| <Link id="m-seed-2" /><code>{"uint Seed { get; }"}</code> | The seed the layout was generated from. |
+| <Link id="m-simplexnoise" /><code><Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" "}<Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" { get; }"}</code> | Noise seeded from the forest seed, set by `GenerateNoise`. |
+| <Link id="m-spaces-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{"> Spaces { get; }"}</code> | The triangular spaces between edges, skipping empty slots. |
+| <Link id="m-version" /><code>{"uint Version { get; }"}</code> | Cache data version, 1. |
+| <Link id="m-workingedges" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> WorkingEdges { get; }"}</code> | The editable edge list, used while generating. |
+| <Link id="m-workingnodes" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{"> WorkingNodes { get; }"}</code> | The editable node list, used while generating. |
+| <Link id="m-workingspaces" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{"> WorkingSpaces { get; }"}</code> | The editable space list (may hold nulls), used while generating. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-closestnode" /><code><Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" ClosestNode(Vector2 point, out bool isWithinRadius)"}</code> |  |
-| <Link id="m-collectentrances" /><code>{"void CollectEntrances()"}</code> |  |
-| <Link id="m-contains" /><code>{"bool Contains(Vector2 point)"}</code> |  |
-| <Link id="m-createedge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" CreateEdge("}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" a, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" b, "}<Link to="/game-api/types/alta-world-generation/edgetype">{"EdgeType"}</Link>{" type)"}</code> |  |
-| <Link id="m-distancetobordersquared" /><code>{"float DistanceToBorderSquared(Vector2 point)"}</code> |  |
-| <Link id="m-distancetopath" /><code>{"float DistanceToPath(Vector2 point, Predicate<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> predicate, bool isIncludingRadius = true)"}</code> |  |
-| <Link id="m-distancetopath-2" /><code>{"float DistanceToPath(Vector2 point, Predicate<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> predicate, out "}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" nearest, out float nearestProgress, bool isIncludingRadius = true)"}</code> |  |
-| <Link id="m-distancetopathornode" /><code>{"float DistanceToPathOrNode(Vector2 point, Predicate<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> edgePredicate, out "}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" nearestEdge, out "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" nearestNode, out float nearestProgress, bool isIncludingRadius = true)"}</code> |  |
-| <Link id="m-evaluategroup" /><code>{"void EvaluateGroup(float worldX, float worldZ, out int groupX, out int groupZ)"}</code> |  |
-| <Link id="m-evaluatenearest" /><code><Link to="/game-api/types/alta-world-generation/forestgenerator-nearestinfo">{"ForestGenerator.NearestInfo"}</Link>{" EvaluateNearest(Vector2 position, int xGroup, int zGroup, Predicate<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> condition)"}</code> |  |
-| <Link id="m-generatenoise" /><code>{"void GenerateNoise()"}</code> |  |
-| <Link id="m-getedge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" GetEdge(int fromIndex, int toIndex)"}</code> |  |
-| <Link id="m-getedgeswithinchunk" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> GetEdgesWithinChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-getnodeheight" /><code>{"float GetNodeHeight(Vector2 point)"}</code> |  |
-| <Link id="m-getnodeswithinchunk" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{"> GetNodesWithinChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |  |
-| <Link id="m-getspace" /><code><Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{" GetSpace(Vector2 point)"}</code> |  |
-| <Link id="m-serializeasync" /><code>{"async Task SerializeAsync(uint version, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-setgroupsizes" /><code>{"void SetGroupSizes(uint sizeX, uint sizeZ)"}</code> |  |
-| <Link id="m-setoutline" /><code>{"void SetOutline(Transform[] outline, Transform[] entrances)"}</code> |  |
-| <Link id="m-setseed" /><code>{"void SetSeed(uint seed)"}</code> |  |
-| <Link id="m-sortnodes" /><code>{"async Task SortNodes()"}</code> |  |
-| <Link id="m-updatedelaunay" /><code>{"void UpdateDelaunay(List<Vector3> overridePoints = null)"}</code> |  |
+| <Link id="m-closestnode" /><code><Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" ClosestNode(Vector2 point, out bool isWithinRadius)"}</code> | Nearest path node to an x/z point from the grid lookup. Stops early and reports when the point is inside a node's radius. |
+| <Link id="m-collectentrances" /><code>{"void CollectEntrances()"}</code> | Takes the first nodes (one per entrance position) as the entrance nodes. |
+| <Link id="m-contains" /><code>{"bool Contains(Vector2 point)"}</code> | Whether an x/z point is inside the forest outline. |
+| <Link id="m-createedge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" CreateEdge("}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" a, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" b, "}<Link to="/game-api/types/alta-world-generation/edgetype">{"EdgeType"}</Link>{" type)"}</code> | Adds an edge of a given type between two nodes, links paths both ways and files it under its location chunk. |
+| <Link id="m-distancetobordersquared" /><code>{"float DistanceToBorderSquared(Vector2 point)"}</code> | Squared distance from an x/z point to the nearest outline segment. |
+| <Link id="m-distancetopath" /><code>{"float DistanceToPath(Vector2 point, Predicate<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> predicate, bool isIncludingRadius = true)"}</code> | Distance from an x/z point to the nearest edge that passes the filter, checking every edge. Minus the path radius by default. |
+| <Link id="m-distancetopath-2" /><code>{"float DistanceToPath(Vector2 point, Predicate<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> predicate, out "}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" nearest, out float nearestProgress, bool isIncludingRadius = true)"}</code> | Distance from an x/z point to the nearest edge that passes the filter, checking every edge. Minus the path radius by default. |
+| <Link id="m-distancetopathornode" /><code>{"float DistanceToPathOrNode(Vector2 point, Predicate<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> edgePredicate, out "}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" nearestEdge, out "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" nearestNode, out float nearestProgress, bool isIncludingRadius = true)"}</code> | Like `DistanceToPath` but checks the grid group first and falls back to all edges. The node output is always null. |
+| <Link id="m-evaluategroup" /><code>{"void EvaluateGroup(float worldX, float worldZ, out int groupX, out int groupZ)"}</code> | Turns a world x/z into grid group indices, from the terrain offset and the group sizes. |
+| <Link id="m-evaluatenearest" /><code><Link to="/game-api/types/alta-world-generation/forestgenerator-nearestinfo">{"ForestGenerator.NearestInfo"}</Link>{" EvaluateNearest(Vector2 position, int xGroup, int zGroup, Predicate<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> condition)"}</code> | Up to the five nearest edges (passing a filter) to a point within one grid group, nearest first. |
+| <Link id="m-generatenoise" /><code>{"void GenerateNoise()"}</code> | Creates the forest's simplex noise from the seed. |
+| <Link id="m-getedge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" GetEdge(int fromIndex, int toIndex)"}</code> | The edge between two node indices, or null (with an error) if an index is out of range. |
+| <Link id="m-getedgeswithinchunk" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"> GetEdgesWithinChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | The edges filed under a location chunk. Empty if none. |
+| <Link id="m-getnodeheight" /><code>{"float GetNodeHeight(Vector2 point)"}</code> | Height at an x/z point, blended from the heights of the surrounding nodes. -1 if outside the triangulation. |
+| <Link id="m-getnodeswithinchunk" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{"> GetNodesWithinChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | The nodes filed under a location chunk. Empty if none. |
+| <Link id="m-getspace" /><code><Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{" GetSpace(Vector2 point)"}</code> | The triangular space containing an x/z point, found through the triangulation. Null if outside. |
+| <Link id="m-serializeasync" /><code>{"async Task SerializeAsync(uint version, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the layout for the cache. After reading it rebuilds the chunk and grid lookups, triangulation, entrances and noise. |
+| <Link id="m-setgroupsizes" /><code>{"void SetGroupSizes(uint sizeX, uint sizeZ)"}</code> | Sets the x and z size of the grid groups used for lookups. |
+| <Link id="m-setoutline" /><code>{"void SetOutline(Transform[] outline, Transform[] entrances)"}</code> | Copies the outline and entrance positions from transforms and works out bounds and area. |
+| <Link id="m-setseed" /><code>{"void SetSeed(uint seed)"}</code> | Sets the generation seed. |
+| <Link id="m-sortnodes" /><code>{"async Task SortNodes()"}</code> | Async: files nodes and edges under their location chunks and a 51 by 51 grid for fast lookups. Also adds those chunks to `LocationChunk.ContentLocationChunks`. |
+| <Link id="m-updatedelaunay" /><code>{"void UpdateDelaunay(List<Vector3> overridePoints = null)"}</code> | Rebuilds the triangulation from the node positions, or from given points. |
 | <Link id="m-evaluatebounds" /><code>{"private void EvaluateBounds()"}</code> |  |
 | <Link id="m-getgroup" /><code>{"private Vector2 GetGroup(int groupX, int groupZ, out float distanceToCornerSquared)"}</code> |  |
 | <Link id="m-serializenodes" /><code>{"private void SerializeNodes("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |

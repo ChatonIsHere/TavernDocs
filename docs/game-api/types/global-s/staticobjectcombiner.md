@@ -1,6 +1,6 @@
 ---
 title: "StaticObjectCombiner"
-description: "StaticObjectCombiner (no namespace) and its subclasses SceneStaticObjectCombiner and DynamicObjectCombiner merge meshes, join LOD groups, flatten coll"
+description: "Bake-time tool on static prefabs that merges LOD groups, joins meshes by material, removes hidden or underground triangles and flattens colliders, based on..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-`StaticObjectCombiner` (no namespace) and its subclasses `SceneStaticObjectCombiner` and `DynamicObjectCombiner` merge meshes, join LOD groups, flatten colliders and cut hidden triangles.
+Bake-time tool on static prefabs that merges LOD groups, joins meshes by material, removes hidden or underground triangles and flattens colliders, based on its `functions` flags. Runs during static batching, not in a live game.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`
@@ -32,7 +32,7 @@ A **class** in `Root.Township`, no namespace.
 | --- | --- |
 | <Link id="m-additionalcheckpoints" /><code>{"private Vector3[] additionalCheckPoints"}</code> |  |
 | <Link id="m-btnbake" /><code>{"private bool btnBake"}</code> |  |
-| <Link id="m-functions" /><code>{"protected "}<Link to="/game-api/types/global-s/staticobjectcombiner-combinefunctions">{"StaticObjectCombiner.CombineFunctions"}</Link>{" functions"}</code> |  |
+| <Link id="m-functions" /><code>{"protected "}<Link to="/game-api/types/global-s/staticobjectcombiner-combinefunctions">{"StaticObjectCombiner.CombineFunctions"}</Link>{" functions"}</code> | Flags for which bake steps to run (LOD join, mesh join, occlusion, collider joining and flattening, terrain occlusion). |
 | <Link id="m-impostorkey" /><code>{"private const string ImpostorKey"}</code> |  |
 | <Link id="m-isforcingjoinedmeshcollidersconvex" /><code>{"private bool isForcingJoinedMeshCollidersConvex"}</code> |  |
 | <Link id="m-isignoringautomatedmarking" /><code>{"private bool isIgnoringAutomatedMarking"}</code> |  |
@@ -43,30 +43,30 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isautomatedcall" /><code>{"static bool IsAutomatedCall { get; set; }"}</code> |  |
-| <Link id="m-isterrainbakinglocked" /><code>{"static bool IsTerrainBakingLocked { get; set; }"}</code> |  |
-| <Link id="m-iscleaningonjoin" /><code>{"protected virtual bool IsCleaningOnJoin { get; }"}</code> |  |
-| <Link id="m-issettingtoterrainlayer" /><code>{"protected virtual bool IsSettingToTerrainLayer { get; }"}</code> |  |
+| <Link id="m-isautomatedcall" /><code>{"static bool IsAutomatedCall { get; set; }"}</code> | Static flag for automated batch runs. While set, collider joining and terrain collider steps are skipped unless the object opts in. |
+| <Link id="m-isterrainbakinglocked" /><code>{"static bool IsTerrainBakingLocked { get; set; }"}</code> | Static switch that turns off all terrain-based triangle removal. |
+| <Link id="m-iscleaningonjoin" /><code>{"protected virtual bool IsCleaningOnJoin { get; }"}</code> | Whether empty child objects are deleted after joining. True by default. |
+| <Link id="m-issettingtoterrainlayer" /><code>{"protected virtual bool IsSettingToTerrainLayer { get; }"}</code> | Whether joined meshes are moved to the Terrain layer. True by default. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-oncreatedrenderers" /><code>{"static event Action<IEnumerable<Renderer>> OnCreatedRenderers"}</code> |  |
-| <Link id="m-postbakeables" /><code>{"event Action<GameObject> PostBakeables"}</code> |  |
+| <Link id="m-oncreatedrenderers" /><code>{"static event Action<IEnumerable<Renderer>> OnCreatedRenderers"}</code> | Static one-shot event raised with the renderers a mesh join created. Cleared after each join. |
+| <Link id="m-postbakeables" /><code>{"event Action<GameObject> PostBakeables"}</code> | Raised after the object's build bakeables have been baked, before any combining. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-autolod" /><code>{"static void AutoLOD(GameObject baseObject)"}</code> |  |
-| <Link id="m-bake" /><code>{"virtual void Bake()"}</code> |  |
-| <Link id="m-cleanrecursive" /><code>{"static bool CleanRecursive(Transform parent)"}</code> |  |
-| <Link id="m-excludeoccludedtriangles" /><code>{"static Mesh ExcludeOccludedTriangles(Mesh mesh, List<"}<Link to="/game-api/types/global-q-r/removingtriangle">{"RemovingTriangle"}</Link>{"> trianglesToRemove)"}</code> |  |
-| <Link id="m-flattenprimitivecolliders" /><code>{"static void FlattenPrimitiveColliders(Transform transform)"}</code> |  |
-| <Link id="m-gatherrenderers" /><code>{"static void GatherRenderers(GameObject prefab, LODGroup lodGroup, Dictionary<"}<Link to="/game-api/types/global-m-o/materiallod">{"MaterialLOD"}</Link>{", List<MeshFilter>> meshesByMaterial, Func<Renderer, bool> validateRenderer = null)"}</code> |  |
-| <Link id="m-joinmeshes" /><code>{"static List<GameObject> JoinMeshes(Transform baseTransform, LODGroup lodGroup, KeyValuePair<"}<Link to="/game-api/types/global-m-o/materiallod">{"MaterialLOD"}</Link>{", List<MeshFilter>> pair, out List<Mesh> newMeshes, bool isCleaningUp = false)"}</code> |  |
-| <Link id="m-setupfull" /><code>{"void SetupFull()"}</code> |  |
+| <Link id="m-autolod" /><code>{"static void AutoLOD(GameObject baseObject)"}</code> | Merges all child LOD groups into a single LOD group on the base object, taking the largest transition height per level. |
+| <Link id="m-bake" /><code>{"virtual void Bake()"}</code> | Runs every enabled bake step on this object. |
+| <Link id="m-cleanrecursive" /><code>{"static bool CleanRecursive(Transform parent)"}</code> | Deletes child objects that have nothing but a transform. True if the given object was deleted. |
+| <Link id="m-excludeoccludedtriangles" /><code>{"static Mesh ExcludeOccludedTriangles(Mesh mesh, List<"}<Link to="/game-api/types/global-q-r/removingtriangle">{"RemovingTriangle"}</Link>{"> trianglesToRemove)"}</code> | Returns a copy of a mesh with the listed triangles removed. |
+| <Link id="m-flattenprimitivecolliders" /><code>{"static void FlattenPrimitiveColliders(Transform transform)"}</code> | Moves box colliders onto shared child objects grouped by layer and rotation, so there are fewer collider objects. |
+| <Link id="m-gatherrenderers" /><code>{"static void GatherRenderers(GameObject prefab, LODGroup lodGroup, Dictionary<"}<Link to="/game-api/types/global-m-o/materiallod">{"MaterialLOD"}</Link>{", List<MeshFilter>> meshesByMaterial, Func<Renderer, bool> validateRenderer = null)"}</code> | Groups the prefab's mesh filters by material and LOD level, skipping impostors and parts on other rigidbodies. |
+| <Link id="m-joinmeshes" /><code>{"static List<GameObject> JoinMeshes(Transform baseTransform, LODGroup lodGroup, KeyValuePair<"}<Link to="/game-api/types/global-m-o/materiallod">{"MaterialLOD"}</Link>{", List<MeshFilter>> pair, out List<Mesh> newMeshes, bool isCleaningUp = false)"}</code> | Combines a group of meshes with the same material and LOD into new mesh objects under the base transform. |
+| <Link id="m-setupfull" /><code>{"void SetupFull()"}</code> | Turns on every bake step. |
 | <Link id="m-additionalcheckpoints-2" /><code>{"private IEnumerable<Vector3> AdditionalCheckPoints() (iterator)"}</code> |  |
 | <Link id="m-anychecks" /><code>{"private static bool AnyChecks(bool[] checks, List<int> triangles, int i)"}</code> |  |
 | <Link id="m-getlodlevel" /><code>{"private static int GetLODLevel(Renderer renderer, LOD[] lods)"}</code> |  |
@@ -76,5 +76,5 @@ A **class** in `Root.Township`, no namespace.
 | <Link id="m-joinmeshcolliders" /><code>{"private void JoinMeshColliders()"}</code> |  |
 | <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
 | <Link id="m-trianglevalidation" /><code>{"private static bool TriangleValidation(Vector3 a, Vector3 b, Vector3 c, Matrix4x4 localToWorld, Terrain terrain)"}</code> |  |
-| <Link id="m-validaterenderer" /><code>{"protected virtual bool ValidateRenderer(Renderer renderer)"}</code> |  |
+| <Link id="m-validaterenderer" /><code>{"protected virtual bool ValidateRenderer(Renderer renderer)"}</code> | Subclass filter for which renderers may be joined. Allows all by default. |
 | <Link id="m-validation" /><code>{"private static bool Validation(Vector3 worldVertex, Matrix4x4 localToWorld, Terrain terrain)"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "PuzzleCondition"
-description: "class PuzzleCondition in Root.Township."
+description: "Base for one condition of an in-world puzzle."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PuzzleCondition
 
 A **class** in `Root.Township`, no namespace.
+
+Base for one condition of an in-world puzzle. Subclasses set the completion state, which raises an event when it changes.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MonoBehaviour`
@@ -32,13 +34,13 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-completionstate" /><code>{"bool CompletionState { get; protected set; }"}</code> |  |
+| <Link id="m-completionstate" /><code>{"bool CompletionState { get; protected set; }"}</code> | Whether the condition is met. Only subclasses can set it. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-statechanged" /><code>{"event "}<Link to="/game-api/types/global-p/puzzleconditionhandler">{"PuzzleConditionHandler"}</Link>{" StateChanged"}</code> |  |
+| <Link id="m-statechanged" /><code>{"event "}<Link to="/game-api/types/global-p/puzzleconditionhandler">{"PuzzleConditionHandler"}</Link>{" StateChanged"}</code> | Raised when the completion state changes. |
 
 ## Used in
 

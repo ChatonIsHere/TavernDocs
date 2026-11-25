@@ -1,6 +1,6 @@
 ---
 title: "ObjectPipeline"
-description: "class ObjectPipeline in Root.Township."
+description: "A serializable chain that turns an input object (usually a Distribution) into one result, such as picking a random prefab."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ObjectPipeline
 
 A **class** in `Root.Township`, no namespace.
+
+A serializable chain that turns an input object (usually a `Distribution`) into one result, such as picking a random prefab. Used by cave cluster generators and forest encounters.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 
@@ -35,17 +37,17 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-elements" /><code>{"static "}<Link to="/game-api/types/global-p/pipelineelement">{"PipelineElement"}</Link>{"[] Elements { get; }"}</code> |  |
-| <Link id="m-hasinput" /><code>{"bool HasInput { get; }"}</code> |  |
+| <Link id="m-elements" /><code>{"static "}<Link to="/game-api/types/global-p/pipelineelement">{"PipelineElement"}</Link>{"[] Elements { get; }"}</code> | The available steps: pick from a distribution, and flatten a distribution. |
+| <Link id="m-hasinput" /><code>{"bool HasInput { get; }"}</code> | Whether an input object is set. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-get" /><code>{"Object Get("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData, string errorName = \"Unknown\")"}</code> |  |
-| <Link id="m-get-2" /><code>{"Object Get(Func<double> random, "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData, string errorName = \"Unknown\")"}</code> |  |
-| <Link id="m-getall" /><code>{"IEnumerable<Object> GetAll() (iterator)"}</code> |  |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |  |
+| <Link id="m-get" /><code>{"Object Get("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData, string errorName = \"Unknown\")"}</code> | Runs the chain and returns the result. Steps up to the cache depth run once and are reused. |
+| <Link id="m-get-2" /><code>{"Object Get(Func<double> random, "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData, string errorName = \"Unknown\")"}</code> | Runs the chain and returns the result. Steps up to the cache depth run once and are reused. |
+| <Link id="m-getall" /><code>{"IEnumerable<Object> GetAll() (iterator)"}</code> | Lists every result each step could give for the input. |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> | Clears the cache so the next `Get` runs every step again. |
 
 ## Used in
 

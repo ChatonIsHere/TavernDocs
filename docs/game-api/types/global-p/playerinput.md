@@ -1,6 +1,6 @@
 ---
 title: "PlayerInput"
-description: "class PlayerInput in Root.Township."
+description: "One hand's input component on the platform player."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerInput
 
 A **class** in `Root.Township`, no namespace.
+
+One hand's input component on the platform player. Holds the hand index, raw button state, the D-pad helper and haptics. Client side; get it from the player's `LeftInput` or `RightInput`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MonoBehaviour`
@@ -35,31 +37,31 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-actionsmanager-2" /><code><Link to="/game-api/types/global-c-d/controlleractionsmanager">{"ControllerActionsManager"}</Link>{" ActionsManager { get; }"}</code> |  |
-| <Link id="m-dpad" /><code><Link to="/game-api/types/global-c-d/controllerdpad">{"ControllerDPad"}</Link>{" DPad { get; private set; }"}</code> |  |
-| <Link id="m-handindex-2" /><code><Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" "}<Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-hasplatformcontroller" /><code>{"bool HasPlatformController { get; private set; }"}</code> |  |
-| <Link id="m-inputcontroller-2" /><code><Link to="/game-api/types/global-c-d/deviceinputcontroller">{"DeviceInputController"}</Link>{" InputController { get; }"}</code> |  |
-| <Link id="m-otherplayerinput" /><code><Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" OtherPlayerInput { get; }"}</code> |  |
-| <Link id="m-player" /><code><Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" Player { get; private set; }"}</code> |  |
-| <Link id="m-rawinput" /><code><Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" RawInput { get; }"}</code> |  |
-| <Link id="m-targettransform-2" /><code>{"Transform TargetTransform { get; set; }"}</code> |  |
+| <Link id="m-actionsmanager-2" /><code><Link to="/game-api/types/global-c-d/controlleractionsmanager">{"ControllerActionsManager"}</Link>{" ActionsManager { get; }"}</code> | The `ControllerActionsManager` set on the prefab for this hand. |
+| <Link id="m-dpad" /><code><Link to="/game-api/types/global-c-d/controllerdpad">{"ControllerDPad"}</Link>{" DPad { get; private set; }"}</code> | A `ControllerDPad` created in `Awake` and updated every frame for this hand. |
+| <Link id="m-handindex-2" /><code><Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" "}<Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" { get; }"}</code> | Which hand this input is for (left or right), set on the prefab. |
+| <Link id="m-hasplatformcontroller" /><code>{"bool HasPlatformController { get; private set; }"}</code> | True once `SetPlatformController` has given this hand a device input controller. |
+| <Link id="m-inputcontroller-2" /><code><Link to="/game-api/types/global-c-d/deviceinputcontroller">{"DeviceInputController"}</Link>{" InputController { get; }"}</code> | The device input controller that feeds this hand, or null until one is set. |
+| <Link id="m-otherplayerinput" /><code><Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" OtherPlayerInput { get; }"}</code> | The input for the opposite hand, taken from the owning player. |
+| <Link id="m-player" /><code><Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" Player { get; private set; }"}</code> | The platform player this hand belongs to, set by `InitializeForPlayer`. |
+| <Link id="m-rawinput" /><code><Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" RawInput { get; }"}</code> | The `ControllerInput` holding this hand's current button and axis values. The input controller writes into it each frame while the player is loaded. |
+| <Link id="m-targettransform-2" /><code>{"Transform TargetTransform { get; set; }"}</code> | The transform the hand tracks. Setting a new one rebuilds the tracked device (empty in this build). |
 | <Link id="m-trackeddevice" /><code>{"private "}<Link to="/game-api/types/alta-menus/trackeddevice">{"TrackedDevice"}</Link>{" "}<Link to="/game-api/types/alta-menus/trackeddevice">{"TrackedDevice"}</Link>{" { get; }"}</code> |  |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-receivedcontroller" /><code>{"event Action<"}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{"> ReceivedController"}</code> |  |
+| <Link id="m-receivedcontroller" /><code>{"event Action<"}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{"> ReceivedController"}</code> | Raised when `SetPlatformController` assigns a device input controller. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeforplayer" /><code>{"void InitializeForPlayer("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-setplatformcontroller" /><code>{"void SetPlatformController("}<Link to="/game-api/types/global-c-d/deviceinputcontroller">{"DeviceInputController"}</Link>{" inputController)"}</code> |  |
-| <Link id="m-triggerhaptic" /><code>{"void TriggerHaptic(float strength, float duration, float frequency = 80)"}</code> |  |
-| <Link id="m-triggerhaptic-2" /><code>{"void TriggerHaptic(AnimationCurve curve, float strength = 1, float frequency = 80)"}</code> |  |
+| <Link id="m-initializeforplayer" /><code>{"void InitializeForPlayer("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player)"}</code> | Stores the platform player that owns this hand. Needed before `OtherPlayerInput` works. |
+| <Link id="m-setplatformcontroller" /><code>{"void SetPlatformController("}<Link to="/game-api/types/global-c-d/deviceinputcontroller">{"DeviceInputController"}</Link>{" inputController)"}</code> | Assigns the device input controller for this hand and raises `ReceivedController`. |
+| <Link id="m-triggerhaptic" /><code>{"void TriggerHaptic(float strength, float duration, float frequency = 80)"}</code> | Client: vibrates this controller, either at a fixed strength for a duration or following a curve. Scaled by the haptics strength setting; does nothing without a controller. |
+| <Link id="m-triggerhaptic-2" /><code>{"void TriggerHaptic(AnimationCurve curve, float strength = 1, float frequency = 80)"}</code> | Client: vibrates this controller, either at a fixed strength for a duration or following a curve. Scaled by the haptics strength setting; does nothing without a controller. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-createtrackeddevice" /><code>{"private void CreateTrackedDevice()"}</code> |  |
 | <Link id="m-haptic" /><code>{"private IEnumerator Haptic(float strength, float duration, float frequency) (iterator)"}</code> |  |

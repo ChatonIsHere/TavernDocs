@@ -1,6 +1,6 @@
 ---
 title: "IChildSyncable<T>"
-description: "An element in a ChildSyncableCollectionBase that syncs as part of its parent entity rather than as its own entity. The two-type version also saves and"
+description: "An element in a ChildSyncableCollectionBase that syncs as part of its parent entity rather than as its own entity."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

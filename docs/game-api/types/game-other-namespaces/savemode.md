@@ -1,6 +1,6 @@
 ---
 title: "SaveMode"
-description: "What happens to a spawned instance when its chunk saves or unloads. It's set on the instance (prefab.SaveMode); the spawn helpers that take a SaveMode"
+description: "How a spawned instance is saved when its chunk saves or unloads: Base (on its own), Child (inside its chunking parent), Ignore (not saved), Player or..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **enum** in `Root.Township`, `ATT.Saving`.
 
-What happens to a spawned instance when its chunk saves or unloads. It's set on the instance (`prefab.SaveMode`); the spawn helpers that take a `SaveMode` set it for you.
+How a spawned instance is saved when its chunk saves or unloads: `Base` (on its own), `Child` (inside its chunking parent), `Ignore` (not saved), `Player` or `Creature` (destroyed on unload, never saved). See the Prefabs guide.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Documented in** [Prefabs and prefab hashes](/game-api/world/prefabs#savemode)

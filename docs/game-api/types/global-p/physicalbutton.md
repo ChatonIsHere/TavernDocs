@@ -1,6 +1,6 @@
 ---
 title: "PhysicalButton"
-description: "Runs on every machine that simulates the press; not networked."
+description: "A push button driven by physics: the button part slides along one axis and fires Pressed and Released as it passes set depths."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-Runs on every machine that simulates the press; not networked.
+A push button driven by physics: the button part slides along one axis and fires `Pressed` and `Released` as it passes set depths. Runs locally on whichever machine simulates it; not networked by itself.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`Interactable`](/game-api/types/global-i-l/interactable), [`IPreventAtlasing`](/game-api/types/alta-utilities/ipreventatlasing)
@@ -62,24 +62,24 @@ Runs on every machine that simulates the press; not networked.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buttoncollider-2" /><code>{"Collider ButtonCollider { get; }"}</code> |  |
-| <Link id="m-buttonrenderer-2" /><code>{"Renderer ButtonRenderer { get; }"}</code> |  |
-| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; set; }"}</code> |  |
-| <Link id="m-state" /><code>{"bool State { get; private set; }"}</code> |  |
+| <Link id="m-buttoncollider-2" /><code>{"Collider ButtonCollider { get; }"}</code> | The moving part's collider. Its rigidbody is the part that slides. |
+| <Link id="m-buttonrenderer-2" /><code>{"Renderer ButtonRenderer { get; }"}</code> | Renderer recoloured (or given another material) when the button is enabled or disabled. |
+| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; set; }"}</code> | Whether the button can be pressed. Disabling it freezes the moving part, changes its look and stops presses. |
+| <Link id="m-state" /><code>{"bool State { get; private set; }"}</code> | True between a press and the following release. |
 | <Link id="m-defaultsoundeffectset-2" /><code>{"private static "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" DefaultSoundEffectSet { get; }"}</code> |  |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pressed-2" /><code>{"event Action Pressed"}</code> |  |
-| <Link id="m-released-2" /><code>{"event Action Released"}</code> |  |
+| <Link id="m-pressed-2" /><code>{"event Action Pressed"}</code> | Raised when the button is pushed past the press threshold while enabled and not already on. |
+| <Link id="m-released-2" /><code>{"event Action Released"}</code> | Raised when the button returns past the release threshold with no one touching it. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setstateinternal" /><code>{"void SetStateInternal(bool state)"}</code> |  |
+| <Link id="m-setstateinternal" /><code>{"void SetStateInternal(bool state)"}</code> | Sets `State` without firing events or sounds. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-changevisuals" /><code>{"private void ChangeVisuals(bool isActive)"}</code> |  |
 | <Link id="m-delaystart-2" /><code>{"private async Task DelayStart()"}</code> |  |
@@ -94,7 +94,7 @@ Runs on every machine that simulates the press; not networked.
 | <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
 | <Link id="m-onpressed" /><code>{"private void OnPressed()"}</code> |  |
 | <Link id="m-onreleased" /><code>{"private void OnReleased()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor: keeps the depth range valid and runs the test press or release buttons. |
 
 ## Used in
 

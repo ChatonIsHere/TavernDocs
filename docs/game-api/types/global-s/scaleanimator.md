@@ -1,6 +1,6 @@
 ---
 title: "ScaleAnimator"
-description: "class ScaleAnimator in Root.Township."
+description: "Helper that scales a behaviour's transform in or out along \"on\" and \"off\" curves, using a coroutine on that behaviour."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ScaleAnimator
 
 A **class** in `Root.Township`, no namespace.
+
+Helper that scales a behaviour's transform in or out along "on" and "off" curves, using a coroutine on that behaviour.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Derived types** [`RendererScaleAnimator`](/game-api/types/global-q-r/rendererscaleanimator)
@@ -37,25 +39,25 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-behaviour-2" /><code>{"MonoBehaviour Behaviour { get; }"}</code> |  |
-| <Link id="m-isanimating" /><code>{"bool IsAnimating { get; }"}</code> |  |
-| <Link id="m-ison-2" /><code>{"bool IsOn { get; set; }"}</code> |  |
-| <Link id="m-multiplier" /><code>{"float Multiplier { get; private set; }"}</code> |  |
+| <Link id="m-behaviour-2" /><code>{"MonoBehaviour Behaviour { get; }"}</code> | The behaviour whose transform is scaled and which runs the coroutine. |
+| <Link id="m-isanimating" /><code>{"bool IsAnimating { get; }"}</code> | True while the animation coroutine is running. |
+| <Link id="m-ison-2" /><code>{"bool IsOn { get; set; }"}</code> | Whether it is (or is going) on. Setting it calls `Set`. |
+| <Link id="m-multiplier" /><code>{"float Multiplier { get; private set; }"}</code> | Extra scale factor applied on top of the curves. Starts at 1. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finished" /><code>{"event Action Finished"}</code> |  |
+| <Link id="m-finished" /><code>{"event Action Finished"}</code> | Raised each time an animation run ends. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-set" /><code>{"void Set(bool isOn)"}</code> |  |
-| <Link id="m-stop" /><code>{"void Stop()"}</code> |  |
+| <Link id="m-set" /><code>{"void Set(bool isOn)"}</code> | Turns on or off. Animates if the behaviour is active, otherwise jumps to the end scale. |
+| <Link id="m-stop" /><code>{"void Stop()"}</code> | Stops the animation and jumps to the end scale. |
 | <Link id="m-animate" /><code>{"private IEnumerator Animate() (iterator)"}</code> |  |
-| <Link id="m-setscale" /><code>{"protected virtual void SetScale(float scale)"}</code> |  |
+| <Link id="m-setscale" /><code>{"protected virtual void SetScale(float scale)"}</code> | Applies a scale relative to the start scale, never below 0.001 if zero is disallowed. |
 
 ## Used in
 

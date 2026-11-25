@@ -1,6 +1,6 @@
 ---
 title: "CharacterComponentControllerCollection"
-description: "class CharacterComponentControllerCollection in Root.Township."
+description: "Character controller that runs a list of child controllers: owned ones only when the character is local, unowned ones always."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CharacterComponentControllerCollection
 
 A **class** in `Root.Township`, `Alta.Character`.
+
+Character controller that runs a list of child controllers: owned ones only when the character is local, unowned ones always.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`CharacterComponentController`](/game-api/types/alta-player/charactercomponentcontroller)
@@ -34,17 +36,17 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-controllers" /><code>{"List<"}<Link to="/game-api/types/alta-player/charactercomponentcontroller">{"CharacterComponentController"}</Link>{"> Controllers { get; }"}</code> |  |
-| <Link id="m-islocal" /><code>{"override bool IsLocal { set; }"}</code> |  |
+| <Link id="m-controllers" /><code>{"List<"}<Link to="/game-api/types/alta-player/charactercomponentcontroller">{"CharacterComponentController"}</Link>{"> Controllers { get; }"}</code> | The owned controllers, updated only when `IsLocal`. |
+| <Link id="m-islocal" /><code>{"override bool IsLocal { set; }"}</code> | Setting it also sets it on every child controller. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> |  |
-| <Link id="m-getcontroller" /><code>{"T GetController<T>()"}</code> |  |
-| <Link id="m-setactive" /><code>{"void SetActive(bool isActive)"}</code> |  |
-| <Link id="m-updatecharactercomponent" /><code>{"override void UpdateCharacterComponent()"}</code> |  |
+| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> | Runs fixed update on enabled children, owned ones only if local. The owned and unowned order can be inverted. |
+| <Link id="m-getcontroller" /><code>{"T GetController<T>()"}</code> | First owned or unowned controller of type `T`, or null with a warning. |
+| <Link id="m-setactive" /><code>{"void SetActive(bool isActive)"}</code> | Enables or disables this and every child controller. |
+| <Link id="m-updatecharactercomponent" /><code>{"override void UpdateCharacterComponent()"}</code> | Same as `FixedUpdateCharacterComponent`, for the per-frame update. |
 
 ## Used in
 

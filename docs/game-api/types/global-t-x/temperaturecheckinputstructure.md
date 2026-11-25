@@ -1,6 +1,6 @@
 ---
 title: "TemperatureCheckInputStructure"
-description: "class TemperatureCheckInputStructure in Root.Township."
+description: "Skill input settings that activate a skill when the held item (or its matching tool parts) is in a hot enough heat area for a set time."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TemperatureCheckInputStructure
 
 A **class** in `Root.Township`, no namespace.
+
+Skill input settings that activate a skill when the held item (or its matching tool parts) is in a hot enough heat area for a set time.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** [`SkillInputStructure`](/game-api/types/global-s/skillinputstructure)
@@ -37,17 +39,17 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activetime-2" /><code>{"float ActiveTime { get; }"}</code> |  |
-| <Link id="m-mintemperaturetoactivate-2" /><code>{"float MinTemperatureToActivate { get; }"}</code> |  |
-| <Link id="m-timetoactivate-2" /><code>{"float TimeToActivate { get; }"}</code> |  |
+| <Link id="m-activetime-2" /><code>{"float ActiveTime { get; }"}</code> | Seconds the input stays active once triggered. |
+| <Link id="m-mintemperaturetoactivate-2" /><code>{"float MinTemperatureToActivate { get; }"}</code> | A heat area must be hotter than this to count. |
+| <Link id="m-timetoactivate-2" /><code>{"float TimeToActivate { get; }"}</code> | Seconds in the heat before the input activates. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getnewinput" /><code>{"override "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> |  |
-| <Link id="m-validatecolliderimpactors" /><code>{"bool ValidateColliderImpactors(IEnumerable<"}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"> impactors)"}</code> |  |
-| <Link id="m-validatepickup" /><code>{"override bool ValidatePickup("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> |  |
+| <Link id="m-getnewinput" /><code>{"override "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> | Creates a `TemperatureCheckInput`. |
+| <Link id="m-validatecolliderimpactors" /><code>{"bool ValidateColliderImpactors(IEnumerable<"}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"> impactors)"}</code> | True if no channels are set, or any impactor on the collider has one of them. |
+| <Link id="m-validatepickup" /><code>{"override bool ValidatePickup("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> | True if no channels are set, or the held tool has one of them. |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
 
 ## Used in

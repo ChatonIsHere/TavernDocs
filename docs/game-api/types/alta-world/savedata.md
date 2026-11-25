@@ -1,6 +1,6 @@
 ---
 title: "SaveData"
-description: "abstract class SaveData in Root.Township."
+description: "Base class for all save data versions."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SaveData
 
 An **abstract class** in `Root.Township`, `Alta.Saving`.
+
+Base class for all save data versions. The saving system reads an old version, calls `Migrate` until it reaches the latest one, then calls `Apply`.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Derived types** [`BasicSaveData<TData>`](/game-api/types/global-a-b/basicsavedata-tdata), [`NewSaveData<TSavable, TData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata), [`OldSaveData`](/game-api/types/global-m-o/oldsavedata)
@@ -25,8 +27,8 @@ An **abstract class** in `Root.Township`, `Alta.Saving`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"abstract bool Apply(object target, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> |  |
-| <Link id="m-migrate" /><code>{"abstract "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |  |
+| <Link id="m-apply" /><code>{"abstract bool Apply(object target, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Loads this data into the target object. Returns false if it failed. |
+| <Link id="m-migrate" /><code>{"abstract "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Returns the next newer version of this data, or null if there is no migration (the load then fails). |
 
 ## Used in
 

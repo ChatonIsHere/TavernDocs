@@ -1,6 +1,6 @@
 ---
 title: "DevGameServerInfo"
-description: "A GameServerInfo with a fixed ConnectionInfo. GetDevServer(ip, port, sceneIndex). TavernLib's /join_local_server uses it."
+description: "A GameServerInfo with a fixed ConnectionInfo."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

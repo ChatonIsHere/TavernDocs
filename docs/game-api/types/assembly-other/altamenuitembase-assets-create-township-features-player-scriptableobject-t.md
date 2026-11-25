@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<T>"
-description: "Editor menu marker: a settings asset's nested Create class inherits it to appear under Assets/Create/Township/Features/Player. Does nothing at runtime"
+description: "Editor menu marker: a settings asset's nested Create class inherits it to appear under Assets/Create/Township/Features/Player."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

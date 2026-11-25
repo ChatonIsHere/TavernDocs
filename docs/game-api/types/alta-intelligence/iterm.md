@@ -1,6 +1,6 @@
 ---
 title: "ITerm"
-description: "interface ITerm in Root.Township."
+description: "A term in the small Prolog-style logic engine in Alta.Intelligence (atoms, variables, compounds)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Intelligence`.
 
+A term in the small Prolog-style logic engine in `Alta.Intelligence` (atoms, variables, compounds). Probably not used by the shipped creatures; nothing outside that namespace uses it.
+
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Derived types** [`Compound`](/game-api/types/alta-intelligence/compound), [`DataAtom<T>`](/game-api/types/alta-intelligence/dataatom-t), [`IData<T>`](/game-api/types/alta-intelligence/idata-t), [`Predicate`](/game-api/types/alta-intelligence/predicate), [`Term`](/game-api/types/alta-intelligence/term), [`Variable<T>`](/game-api/types/alta-intelligence/variable-t)
 
@@ -19,9 +21,9 @@ An **interface** in `Root.Township`, `Alta.Intelligence`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkbind" /><code><Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" CheckBind(Dictionary<"}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"> bindings)"}</code> |  |
-| <Link id="m-constantinitialize" /><code>{"void ConstantInitialize("}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" definion)"}</code> |  |
-| <Link id="m-contains" /><code>{"bool Contains("}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" other)"}</code> |  |
+| <Link id="m-checkbind" /><code><Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" CheckBind(Dictionary<"}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"> bindings)"}</code> | Returns the term with any bound variables replaced from the given bindings. |
+| <Link id="m-constantinitialize" /><code>{"void ConstantInitialize("}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" definion)"}</code> | Called when a definition is created, so variables know which definition they belong to. |
+| <Link id="m-contains" /><code>{"bool Contains("}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" other)"}</code> | Whether this term is or contains the other term. |
 
 ## Used in
 

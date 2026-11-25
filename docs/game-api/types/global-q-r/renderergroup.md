@@ -1,6 +1,6 @@
 ---
 title: "RendererGroup"
-description: "class RendererGroup in Root.Township."
+description: "A group of renderers changed together: layer, shadows, alpha and material floats."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RendererGroup
 
 A **class** in `Root.Township`, no namespace.
+
+A group of renderers changed together: layer, shadows, alpha and material floats. Enabling or disabling the component shows or hides them all (not on a headless server).
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** [`ComponentGroup<Renderer>`](/game-api/types/global-c-d/componentgroup-t), [`IReferenceRenderer`](/game-api/types/global-i-l/ireferencerenderer)
@@ -35,18 +37,18 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-albedoalpha-2" /><code>{"float AlbedoAlpha { get; set; }"}</code> |  |
-| <Link id="m-layer-2" /><code>{"int Layer { get; set; }"}</code> |  |
-| <Link id="m-receiveshadows-2" /><code>{"bool ReceiveShadows { get; set; }"}</code> |  |
-| <Link id="m-shadowcastingmode-2" /><code>{"ShadowCastingMode ShadowCastingMode { get; set; }"}</code> |  |
+| <Link id="m-albedoalpha-2" /><code>{"float AlbedoAlpha { get; set; }"}</code> | Sets the alpha of every renderer's shared material colour, hiding renderers below 0.01. Ignored while the component is disabled. |
+| <Link id="m-layer-2" /><code>{"int Layer { get; set; }"}</code> | Sets the layer on every renderer's GameObject. |
+| <Link id="m-receiveshadows-2" /><code>{"bool ReceiveShadows { get; set; }"}</code> | Sets shadow receiving on every renderer. |
+| <Link id="m-shadowcastingmode-2" /><code>{"ShadowCastingMode ShadowCastingMode { get; set; }"}</code> | Sets the shadow casting mode on every renderer. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setasmaterialinstances" /><code>{"void SetAsMaterialInstances()"}</code> |  |
-| <Link id="m-updatematerialfloat" /><code>{"void UpdateMaterialFloat(string floatName, float value)"}</code> |  |
-| <Link id="m-updatematerialfloat-2" /><code>{"void UpdateMaterialFloat(int floatID, float value)"}</code> |  |
+| <Link id="m-setasmaterialinstances" /><code>{"void SetAsMaterialInstances()"}</code> | Gives each renderer its own material copy, so later changes do not affect other objects. The copies are cleaned up on destroy. |
+| <Link id="m-updatematerialfloat" /><code>{"void UpdateMaterialFloat(string floatName, float value)"}</code> | Sets a float on the shared material of every enabled renderer, by name or property id. |
+| <Link id="m-updatematerialfloat-2" /><code>{"void UpdateMaterialFloat(int floatID, float value)"}</code> | Sets a float on the shared material of every enabled renderer, by name or property id. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
 | <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |

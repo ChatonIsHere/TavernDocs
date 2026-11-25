@@ -1,6 +1,6 @@
 ---
 title: "InteractArguments"
-description: "struct InteractArguments in Root.Township."
+description: "The network message sent when a hand starts holding an entity: the held entity, its velocity and pose, the hand's pose, and force flags."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InteractArguments
 
 A **struct** in `Root.Township`, no namespace.
+
+The network message sent when a hand starts holding an entity: the held entity, its velocity and pose, the hand's pose, and force flags.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`INetworkInteractArgument`](/game-api/types/global-i-l/inetworkinteractargument)
@@ -27,15 +29,15 @@ A **struct** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-angularvelocity" /><code>{"Vector3 angularVelocity"}</code> |  |
-| <Link id="m-interactorposition" /><code>{"Vector3 interactorPosition"}</code> |  |
-| <Link id="m-interactorrotation" /><code>{"Quaternion interactorRotation"}</code> |  |
-| <Link id="m-isforced" /><code>{"bool isForced"}</code> |  |
-| <Link id="m-isforcinghold" /><code>{"bool isForcingHold"}</code> |  |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |  |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |  |
-| <Link id="m-target" /><code>{"uint target"}</code> |  |
-| <Link id="m-velocity" /><code>{"Vector3 velocity"}</code> |  |
+| <Link id="m-angularvelocity" /><code>{"Vector3 angularVelocity"}</code> | Angular velocity of the held entity. |
+| <Link id="m-interactorposition" /><code>{"Vector3 interactorPosition"}</code> | World position of the hand (its wrist). |
+| <Link id="m-interactorrotation" /><code>{"Quaternion interactorRotation"}</code> | World rotation of the hand. |
+| <Link id="m-isforced" /><code>{"bool isForced"}</code> | Backing field for `IsForced`. |
+| <Link id="m-isforcinghold" /><code>{"bool isForcingHold"}</code> | Backing field for `IsForcingHold`. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | World position of the held entity. |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | World rotation of the held entity. |
+| <Link id="m-target" /><code>{"uint target"}</code> | Backing field for `Target`. |
+| <Link id="m-velocity" /><code>{"Vector3 velocity"}</code> | Velocity of the held entity, including the player's movement when built from an `Interactor`. |
 | <Link id="m-angularvelocitymax" /><code>{"private static readonly Vector3 AngularVelocityMax"}</code> |  |
 | <Link id="m-angularvelocitymin" /><code>{"private static readonly Vector3 AngularVelocityMin"}</code> |  |
 | <Link id="m-angularvelocityprecision" /><code>{"private const float AngularVelocityPrecision"}</code> |  |
@@ -48,17 +50,17 @@ A **struct** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isaccessingscore" /><code>{"bool IsAccessingScore { get; }"}</code> |  |
-| <Link id="m-isforced-2" /><code>{"bool IsForced { get; }"}</code> |  |
-| <Link id="m-isforcinghold-2" /><code>{"bool IsForcingHold { get; }"}</code> |  |
-| <Link id="m-target-2" /><code>{"uint Target { get; }"}</code> |  |
+| <Link id="m-isaccessingscore" /><code>{"bool IsAccessingScore { get; }"}</code> | Always true, so the receiver checks the grab is valid and logs an error if not. |
+| <Link id="m-isforced-2" /><code>{"bool IsForced { get; }"}</code> | Whether the interaction was forced. |
+| <Link id="m-isforcinghold-2" /><code>{"bool IsForcingHold { get; }"}</code> | Whether to force the hold. |
+| <Link id="m-target-2" /><code>{"uint Target { get; }"}</code> | Identifier of the held entity. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-serializelinearangularvelocity" /><code>{"static void SerializeLinearAngularVelocity("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref Vector3 velocity, ref Vector3 angularVelocity)"}</code> |  |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the target, velocities, poses (relative to a chunk) and flags. |
+| <Link id="m-serializelinearangularvelocity" /><code>{"static void SerializeLinearAngularVelocity("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref Vector3 velocity, ref Vector3 angularVelocity)"}</code> | Writes or reads a velocity and angular velocity with the same limits. |
 
 ## Used in
 

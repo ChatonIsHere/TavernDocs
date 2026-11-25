@@ -1,6 +1,6 @@
 ---
 title: "IJumpAttacker"
-description: "ActiveJumpAt calls it at the start and end of a jump. Spriggull charges its beak with it."
+description: "ActiveJumpAt calls it at the start and end of a jump."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

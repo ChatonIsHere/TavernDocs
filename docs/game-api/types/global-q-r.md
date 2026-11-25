@@ -12,7 +12,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Q
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`QuadTriangulationToolLogic`](/game-api/types/global-q-r/quadtriangulationtoollogic) | static class |  | 3 |  |
 | [`QuaternionRotationSlerp`](/game-api/types/global-q-r/quaternionrotationslerp) | class | `MonoBehaviour` | 1 |  |
@@ -23,12 +23,12 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## R
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`RaiseHandStructure`](/game-api/types/global-q-r/raisehandstructure) | class | `HandPositionStructure` | 0 |  |
 | [`RaiseHandStructure.Create`](/game-api/types/global-q-r/raisehandstructure-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input.ScriptableObject<RaiseHandStructure>` | 0 |  |
-| [`RampBrush`](/game-api/types/global-q-r/rampbrush) | class | `MonoBehaviour` | 24 |  |
-| [`RamSpline`](/game-api/types/global-q-r/ramspline) | class | `MonoBehaviour` | 98 |  |
+| [`RampBrush`](/game-api/types/global-q-r/rampbrush) | class | `MonoBehaviour` | 24 | Editor tool for terrain: strokes a ramp along control points into the terrain heightmap, blending with brush size, softness and opacity. Needs a `Terrain` on the same object; not used at runtime. |
+| [`RamSpline`](/game-api/types/global-q-r/ramspline) | class | `MonoBehaviour` | 98 | Third-party NatureManufacture river spline: builds a river mesh along Catmull-Rom control points, with width, flow map and vertex colours. Used for forest river paths (`RiverPath.Mesh`). |
 | [`RandomAnimationStart`](/game-api/types/global-q-r/randomanimationstart) | class | `MonoBehaviour` | 0 |  |
 | [`RandomAudioPlayer`](/game-api/types/global-q-r/randomaudioplayer) | class | `MonoBehaviour` | 0 |  |
 | [`RandomChildWeight`](/game-api/types/global-q-r/randomchildweight) | class | `MonoBehaviour` | 1 |  |
@@ -61,11 +61,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`RaycastReflection`](/game-api/types/global-q-r/raycastreflection) | class | `MonoBehaviour` | 1 |  |
 | [`RebindSkinnedMeshRenderers`](/game-api/types/global-q-r/rebindskinnedmeshrenderers) | class | `MonoBehaviour` | 0 |  |
 | [`ReceivingMetrics`](/game-api/types/global-q-r/receivingmetrics) | class |  | 6 |  |
-| [`RecentPlayerActionPage`](/game-api/types/global-q-r/recentplayeractionpage) | class | `PanelComponent` | 11 |  |
+| [`RecentPlayerActionPage`](/game-api/types/global-q-r/recentplayeractionpage) | class | `PanelComponent` | 11 | Social tablet page for one recent player: friend, unfriend, mute, report, ban and unban buttons. Actions run on the client through the Alta API; reports and bans are also sent to the server, which raises console events. |
 | [`RecentPlayerActionPage.FriendButtonMap`](/game-api/types/global-q-r/recentplayeractionpage-friendbuttonmap) | struct |  | 2 |  |
 | [`RecentPlayerElement`](/game-api/types/global-q-r/recentplayerelement) | class | `ListElementWithButtonAndExtraText` | 3 |  |
 | [`RecentPlayerElement.NameplateMeshReference`](/game-api/types/global-q-r/recentplayerelement-nameplatemeshreference) | class |  | 2 |  |
-| [`RecentPlayers`](/game-api/types/global-q-r/recentplayers) | static class |  | 13 |  |
+| [`RecentPlayers`](/game-api/types/global-q-r/recentplayers) | static class |  | 13 | Client-only helpers and the `recent-players` console module (alias `recent`) for the recent players list, which is stored through the Alta API. |
 | [`RedesignedAltaAccountLinker`](/game-api/types/global-q-r/redesignedaltaaccountlinker) | internal class | `LoginAndRegisterHelper` | 3 |  |
 | [`RefBoolDelegate`](/game-api/types/global-q-r/refbooldelegate) | delegate |  | 0 |  |
 | [`ReferenceEqualsComparer<T>`](/game-api/types/global-q-r/referenceequalscomparer-t) | internal class | `IEqualityComparer<T>` | 0 |  |
@@ -74,10 +74,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`RemoteConsoleResponseType`](/game-api/types/global-q-r/remoteconsoleresponsetype) | enum | `byte` | 1 |  |
 | [`RemoteConsoleUtility`](/game-api/types/global-q-r/remoteconsoleutility) | static class |  | 1 |  |
 | [`RemoteEquipmentModeVisuals`](/game-api/types/global-q-r/remoteequipmentmodevisuals) | class | `MonoBehaviour` | 2 |  |
-| [`RemovingTriangle`](/game-api/types/global-q-r/removingtriangle) | class |  | 10 |  |
+| [`RemovingTriangle`](/game-api/types/global-q-r/removingtriangle) | class |  | 10 | One mesh triangle with its corners, centre, edges and normal, used when deciding which triangles to strip from combined static meshes. |
 | [`RendererBoundsSizeAttribute`](/game-api/types/global-q-r/rendererboundssizeattribute) | class | `PropertyAttribute` | 0 |  |
 | [`RendererGhost`](/game-api/types/global-q-r/rendererghost) | class | `PooledObject` | 1 |  |
-| [`RendererGroup`](/game-api/types/global-q-r/renderergroup) | class | `ComponentGroup<Renderer>`, `IReferenceRenderer` | 7 |  |
+| [`RendererGroup`](/game-api/types/global-q-r/renderergroup) | class | `ComponentGroup<Renderer>`, `IReferenceRenderer` | 7 | A group of renderers changed together: layer, shadows, alpha and material floats. Enabling or disabling the component shows or hides them all (not on a headless server). |
 | [`RendererMaterializer`](/game-api/types/global-q-r/renderermaterializer) | class | `MonoBehaviour` | 5 |  |
 | [`RendererMaterializerHandler`](/game-api/types/global-q-r/renderermaterializerhandler) | class |  | 7 |  |
 | [`RendererMeshReplacePooledObject`](/game-api/types/global-q-r/renderermeshreplacepooledobject) | class | `MeshReplacePooledObject` | 1 |  |

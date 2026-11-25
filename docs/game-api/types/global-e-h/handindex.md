@@ -1,6 +1,6 @@
 ---
 title: "HandIndex"
-description: "enum HandIndex in Root.Township."
+description: "Which hand: Left, Right or Both."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandIndex
 
 An **enum** in `Root.Township`, no namespace.
+
+Which hand: `Left`, `Right` or `Both`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 

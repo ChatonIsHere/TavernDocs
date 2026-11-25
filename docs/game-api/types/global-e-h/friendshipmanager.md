@@ -1,6 +1,6 @@
 ---
 title: "FriendshipManager"
-description: "Each Player has one. Holds that player's friend list, and on the client, whether that player is a friend of the local player. Data comes from the Alta"
+description: "Each Player has one."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "IHighLevelApiClient"
-description: "The game's client for Alta's old web API, one property per area. You get it from ApiAccess.ApiClient. The services are gone, so most calls time out un"
+description: "The game's client for Alta's old web API, one property per area."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

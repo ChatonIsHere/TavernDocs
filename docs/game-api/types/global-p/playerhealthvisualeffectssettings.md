@@ -1,6 +1,6 @@
 ---
 title: "PlayerHealthVisualEffectsSettings"
-description: "class PlayerHealthVisualEffectsSettings in Root.Township."
+description: "Asset with the local player's health effects: hurt vignette, saturation by health, hunger blur and stomach sounds, recent damage, and the nightmare fog effect."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerHealthVisualEffectsSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Asset with the local player's health effects: hurt vignette, saturation by health, hunger blur and stomach sounds, recent damage, and the nightmare fog effect.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `ScriptableObject`
@@ -50,27 +52,27 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-blurrydelay-2" /><code>{"float BlurryDelay { get; }"}</code> |  |
-| <Link id="m-blurryeffect-2" /><code><Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" BlurryEffect { get; }"}</code> |  |
-| <Link id="m-chanceofstomachaudio-2" /><code>{"float ChanceOfStomachAudio { get; }"}</code> |  |
-| <Link id="m-deadsaturation-2" /><code>{"float DeadSaturation { get; }"}</code> |  |
-| <Link id="m-hungerdefinition-2" /><code><Link to="/game-api/types/alta-stats-effects/hungerstat">{"HungerStat"}</Link>{" HungerDefinition { get; }"}</code> |  |
-| <Link id="m-hurtshell-2" /><code><Link to="/game-api/types/alta-player/shellsetting">{"ShellSetting"}</Link>{" HurtShell { get; }"}</code> |  |
-| <Link id="m-hurtshellcurve-2" /><code><Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" HurtShellCurve { get; }"}</code> |  |
-| <Link id="m-isblurringonrepeat-2" /><code>{"bool IsBlurringOnRepeat { get; }"}</code> |  |
-| <Link id="m-maxhungerlevelbeforeblur-2" /><code>{"int MaxHungerLevelBeforeBlur { get; }"}</code> |  |
-| <Link id="m-recentdamagecooldown-2" /><code>{"float RecentDamageCooldown { get; }"}</code> |  |
-| <Link id="m-recentdamagedefinition-2" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" RecentDamageDefinition { get; }"}</code> |  |
-| <Link id="m-repeatstartsonlevel-2" /><code>{"int RepeatStartsOnLevel { get; }"}</code> |  |
-| <Link id="m-saturationcurve-2" /><code>{"AnimationCurve SaturationCurve { get; }"}</code> |  |
-| <Link id="m-vignettedurationcurve-2" /><code><Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" VignetteDurationCurve { get; }"}</code> |  |
-| <Link id="m-visionlerpspeed-2" /><code>{"float VisionLerpSpeed { get; }"}</code> |  |
+| <Link id="m-blurrydelay-2" /><code>{"float BlurryDelay { get; }"}</code> | Seconds between repeated hunger blurs. |
+| <Link id="m-blurryeffect-2" /><code><Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" BlurryEffect { get; }"}</code> | Curve and length of one hunger blur. |
+| <Link id="m-chanceofstomachaudio-2" /><code>{"float ChanceOfStomachAudio { get; }"}</code> | Chance of a stomach rumble with each blur. |
+| <Link id="m-deadsaturation-2" /><code>{"float DeadSaturation { get; }"}</code> | Screen saturation while dead. |
+| <Link id="m-hungerdefinition-2" /><code><Link to="/game-api/types/alta-stats-effects/hungerstat">{"HungerStat"}</Link>{" HungerDefinition { get; }"}</code> | The hunger stat, used to get the hunger level. |
+| <Link id="m-hurtshell-2" /><code><Link to="/game-api/types/alta-player/shellsetting">{"ShellSetting"}</Link>{" HurtShell { get; }"}</code> | Shell setting for the hurt effect. |
+| <Link id="m-hurtshellcurve-2" /><code><Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" HurtShellCurve { get; }"}</code> | Curve and length of the hurt shell effect. |
+| <Link id="m-isblurringonrepeat-2" /><code>{"bool IsBlurringOnRepeat { get; }"}</code> | Whether the hunger blur repeats at low hunger levels. |
+| <Link id="m-maxhungerlevelbeforeblur-2" /><code>{"int MaxHungerLevelBeforeBlur { get; }"}</code> | Hunger levels at or above this don't blur. |
+| <Link id="m-recentdamagecooldown-2" /><code>{"float RecentDamageCooldown { get; }"}</code> | Seconds the recent damage stat stays on after damage. |
+| <Link id="m-recentdamagedefinition-2" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" RecentDamageDefinition { get; }"}</code> | The stat set to 1 while the player was recently damaged. |
+| <Link id="m-repeatstartsonlevel-2" /><code>{"int RepeatStartsOnLevel { get; }"}</code> | Hunger level at or below which the blur repeats. |
+| <Link id="m-saturationcurve-2" /><code>{"AnimationCurve SaturationCurve { get; }"}</code> | Curve from health to screen saturation. |
+| <Link id="m-vignettedurationcurve-2" /><code><Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" VignetteDurationCurve { get; }"}</code> | Curve and length of the hurt vignette. |
+| <Link id="m-visionlerpspeed-2" /><code>{"float VisionLerpSpeed { get; }"}</code> | How fast saturation changes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setupnightmare" /><code>{"void SetupNightmare("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |  |
+| <Link id="m-setupnightmare" /><code>{"void SetupNightmare("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> | Starts watching the nightmare stat to show its particles and fog. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "PlayerCustomizationHandler"
-description: "On a body: applies the visuals, finds bones, first-person mode. ArmorManager, EditableEquipmentManager."
+description: "Links a player's character model to the customization system: finds bones by name, holds the armour and equipment managers and switches first person."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Customization`.
 
-On a body: applies the visuals, finds bones, first-person mode. `ArmorManager`, `EditableEquipmentManager`.
+Links a player's character model to the customization system: finds bones by name, holds the armour and equipment managers and switches first person. A component on the player character.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** `MonoBehaviour`, [`ICustomizationHandler`](/game-api/types/alta-customization/icustomizationhandler)
@@ -38,31 +38,31 @@ On a body: applies the visuals, finds bones, first-person mode. `ArmorManager`, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-armormanager-2" /><code><Link to="/game-api/types/alta-customization/playerarmormanager">{"PlayerArmorManager"}</Link>{" ArmorManager { get; }"}</code> |  |
-| <Link id="m-characterbounds" /><code>{"Bounds CharacterBounds { get; }"}</code> |  |
-| <Link id="m-characterdummy" /><code><Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-editableequipmentmanager-2" /><code><Link to="/game-api/types/alta-customization/editableequipmentmanager">{"EditableEquipmentManager"}</Link>{" "}<Link to="/game-api/types/alta-customization/editableequipmentmanager">{"EditableEquipmentManager"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-hasmanager" /><code>{"bool HasManager { get; private set; }"}</code> |  |
-| <Link id="m-isdestroyed" /><code>{"bool IsDestroyed { get; private set; }"}</code> |  |
-| <Link id="m-isfirstperson" /><code>{"bool IsFirstPerson { get; }"}</code> |  |
-| <Link id="m-manager" /><code><Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" Manager { get; private set; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> |  |
-| <Link id="m-rootbone" /><code>{"Transform RootBone { get; }"}</code> |  |
+| <Link id="m-armormanager-2" /><code><Link to="/game-api/types/alta-customization/playerarmormanager">{"PlayerArmorManager"}</Link>{" ArmorManager { get; }"}</code> | The player's armour manager. |
+| <Link id="m-characterbounds" /><code>{"Bounds CharacterBounds { get; }"}</code> | Bounds of the character body, from the inspector size. |
+| <Link id="m-characterdummy" /><code><Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" { get; }"}</code> | The character model this handler drives. |
+| <Link id="m-editableequipmentmanager-2" /><code><Link to="/game-api/types/alta-customization/editableequipmentmanager">{"EditableEquipmentManager"}</Link>{" "}<Link to="/game-api/types/alta-customization/editableequipmentmanager">{"EditableEquipmentManager"}</Link>{" { get; }"}</code> | The editable equipment manager. |
+| <Link id="m-hasmanager" /><code>{"bool HasManager { get; private set; }"}</code> | Whether a customization manager is set. |
+| <Link id="m-isdestroyed" /><code>{"bool IsDestroyed { get; private set; }"}</code> | Set by `Destroy`. |
+| <Link id="m-isfirstperson" /><code>{"bool IsFirstPerson { get; }"}</code> | Whether the model is in first person mode. |
+| <Link id="m-manager" /><code><Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" Manager { get; private set; }"}</code> | The customization manager applying cosmetics to this character. |
+| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> | The game object's name, stored on `Start`. |
+| <Link id="m-rootbone" /><code>{"Transform RootBone { get; }"}</code> | The model's root bone. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onmanagerupdated" /><code>{"event Action<"}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{"> onManagerUpdated"}</code> |  |
+| <Link id="m-onmanagerupdated" /><code>{"event Action<"}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{"> onManagerUpdated"}</code> | Raised when the manager changes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroy" /><code>{"void Destroy()"}</code> |  |
-| <Link id="m-getbone" /><code>{"Transform GetBone(Transform oldBone, bool isLoggingUnfoundBones)"}</code> |  |
-| <Link id="m-setfirstperson" /><code>{"void SetFirstPerson(bool isFirstPerson)"}</code> |  |
-| <Link id="m-setmanager" /><code>{"void SetManager("}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager)"}</code> |  |
+| <Link id="m-destroy" /><code>{"void Destroy()"}</code> | Marks the handler destroyed and detaches it from its manager. |
+| <Link id="m-getbone" /><code>{"Transform GetBone(Transform oldBone, bool isLoggingUnfoundBones)"}</code> | Finds this character's bone with the same name (or entity original name) as another rig's bone. Can log misses. |
+| <Link id="m-setfirstperson" /><code>{"void SetFirstPerson(bool isFirstPerson)"}</code> | Switches first person mode and tells the manager. |
+| <Link id="m-setmanager" /><code>{"void SetManager("}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager)"}</code> | Sets the customization manager and raises `onManagerUpdated`. |
 | <Link id="m-addtomap" /><code>{"private void AddToMap(Transform transform)"}</code> |  |
 | <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
 | <Link id="m-preparechildmap" /><code>{"private void PrepareChildMap()"}</code> |  |

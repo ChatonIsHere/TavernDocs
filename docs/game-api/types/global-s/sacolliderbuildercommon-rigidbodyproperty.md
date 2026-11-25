@@ -1,6 +1,6 @@
 ---
 title: "SAColliderBuilderCommon.RigidbodyProperty"
-description: "class SAColliderBuilderCommon.RigidbodyProperty in Root.Township."
+description: "Editor tool settings from the SAColliderBuilder package: the Rigidbody to add when building colliders."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SAColliderBuilderCommon.RigidbodyProperty
 
 A **class** in `Root.Township`, no namespace.
+
+Editor tool settings from the SAColliderBuilder package: the Rigidbody to add when building colliders.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Nested in** [`SAColliderBuilderCommon`](/game-api/types/global-s/sacolliderbuildercommon)
@@ -25,21 +27,21 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-angulardrag" /><code>{"float angularDrag"}</code> |  |
-| <Link id="m-collisiondetectionmode" /><code>{"CollisionDetectionMode collisionDetectionMode"}</code> |  |
-| <Link id="m-drag" /><code>{"float drag"}</code> |  |
-| <Link id="m-interpolation" /><code>{"RigidbodyInterpolation interpolation"}</code> |  |
-| <Link id="m-iscreate" /><code>{"bool isCreate"}</code> |  |
-| <Link id="m-iskinematic" /><code>{"bool isKinematic"}</code> |  |
-| <Link id="m-mass" /><code>{"float mass"}</code> |  |
-| <Link id="m-usegravity" /><code>{"bool useGravity"}</code> |  |
-| <Link id="m-viewadvanced" /><code>{"bool viewAdvanced"}</code> |  |
+| <Link id="m-angulardrag" /><code>{"float angularDrag"}</code> | Angular drag for the made Rigidbody. |
+| <Link id="m-collisiondetectionmode" /><code>{"CollisionDetectionMode collisionDetectionMode"}</code> | Collision detection mode for the made Rigidbody. |
+| <Link id="m-drag" /><code>{"float drag"}</code> | Drag for the made Rigidbody. |
+| <Link id="m-interpolation" /><code>{"RigidbodyInterpolation interpolation"}</code> | Interpolation for the made Rigidbody. |
+| <Link id="m-iscreate" /><code>{"bool isCreate"}</code> | Whether to add a Rigidbody at all. |
+| <Link id="m-iskinematic" /><code>{"bool isKinematic"}</code> | Whether the made Rigidbody is kinematic. True by default. |
+| <Link id="m-mass" /><code>{"float mass"}</code> | Mass for the made Rigidbody. |
+| <Link id="m-usegravity" /><code>{"bool useGravity"}</code> | Whether the made Rigidbody uses gravity. |
+| <Link id="m-viewadvanced" /><code>{"bool viewAdvanced"}</code> | Inspector only: shows the advanced fields. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-shallowcopy" /><code><Link to="/game-api/types/global-s/sacolliderbuildercommon-rigidbodyproperty">{"SAColliderBuilderCommon.RigidbodyProperty"}</Link>{" ShallowCopy()"}</code> |  |
+| <Link id="m-shallowcopy" /><code><Link to="/game-api/types/global-s/sacolliderbuildercommon-rigidbodyproperty">{"SAColliderBuilderCommon.RigidbodyProperty"}</Link>{" ShallowCopy()"}</code> | Returns a copy of these settings. |
 
 ## Used in
 

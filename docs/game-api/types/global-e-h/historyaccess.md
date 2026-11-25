@@ -1,6 +1,6 @@
 ---
 title: "HistoryAccess"
-description: "abstract class HistoryAccess in Root.Township."
+description: "Component front for an undo and redo history, raising bool events when undo or redo becomes possible or not, for buttons."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HistoryAccess
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Component front for an undo and redo history, raising bool events when undo or redo becomes possible or not, for buttons.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `MonoBehaviour`, [`IHasHistory`](/game-api/types/global-i-l/ihashistory), [`IHistoryManager`](/game-api/types/global-i-l/ihistorymanager)
@@ -35,23 +37,23 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-history" /><code>{"abstract "}<Link to="/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" History { get; }"}</code> |  |
-| <Link id="m-isredopossible" /><code>{"bool IsRedoPossible { get; }"}</code> |  |
-| <Link id="m-isundopossible" /><code>{"bool IsUndoPossible { get; }"}</code> |  |
+| <Link id="m-history" /><code>{"abstract "}<Link to="/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" History { get; }"}</code> | The history this component drives. |
+| <Link id="m-isredopossible" /><code>{"bool IsRedoPossible { get; }"}</code> | Whether there is something to redo. |
+| <Link id="m-isundopossible" /><code>{"bool IsUndoPossible { get; }"}</code> | Whether there is something to undo. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-itempushed" /><code>{"event Action ItemPushed"}</code> |  |
+| <Link id="m-itempushed" /><code>{"event Action ItemPushed"}</code> | Raised when a new item is added to the history. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |  |
-| <Link id="m-redo" /><code>{"void Redo()"}</code> |  |
-| <Link id="m-undo" /><code>{"void Undo()"}</code> |  |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | Clears the history. |
+| <Link id="m-redo" /><code>{"void Redo()"}</code> | Redoes the last undone item. |
+| <Link id="m-undo" /><code>{"void Undo()"}</code> | Undoes the last item. |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Listens for new history items. |
 | <Link id="m-onitempushed" /><code>{"private void OnItemPushed()"}</code> |  |
 | <Link id="m-updatecache" /><code>{"private void UpdateCache()"}</code> |  |

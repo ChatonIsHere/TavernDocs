@@ -1,6 +1,6 @@
 ---
 title: "EntityStatistic"
-description: "Network profiling stats for one entity: bytes sent, split by entity message type and by behaviour. Used by the networking profiler."
+description: "Network profiling stats for one entity: bytes sent, split by entity message type and by behaviour."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

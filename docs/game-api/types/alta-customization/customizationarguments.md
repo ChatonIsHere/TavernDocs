@@ -1,6 +1,6 @@
 ---
 title: "CustomizationArguments"
-description: "class CustomizationArguments in Root.Township."
+description: "Extra settings for one customization part, such as colours (TwoColors)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CustomizationArguments
 
 A **class** in `Root.Township`, `Alta.Customization`.
+
+Extra settings for one customization part, such as colours (`TwoColors`). This base class carries nothing; subclasses add fields and serialize them.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Derived types** [`CosmeticBodyType`](/game-api/types/alta-customization/cosmeticbodytype), [`CosmeticSkinColor`](/game-api/types/alta-customization/cosmeticskincolor), [`EquipmentPart`](/game-api/types/alta-customization/equipmentpart), [`SkinMeshPart`](/game-api/types/alta-customization/skinmeshpart), [`TwoColors`](/game-api/types/alta-customization/twocolors)
@@ -25,16 +27,16 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isimpeded" /><code>{"bool IsImpeded { get; set; }"}</code> |  |
-| <Link id="m-size" /><code>{"virtual int Size { get; }"}</code> |  |
+| <Link id="m-isimpeded" /><code>{"bool IsImpeded { get; set; }"}</code> | Set when another worn part impedes this one; the part may then switch to its impeded LODs. |
+| <Link id="m-size" /><code>{"virtual int Size { get; }"}</code> | How many bits `Serialize` uses. 0 in the base class. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clone" /><code>{"virtual "}<Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" Clone()"}</code> |  |
-| <Link id="m-randomize" /><code>{"virtual void Randomize()"}</code> |  |
-| <Link id="m-serialize" /><code>{"virtual void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-clone" /><code>{"virtual "}<Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" Clone()"}</code> | Returns a copy of these arguments. |
+| <Link id="m-randomize" /><code>{"virtual void Randomize()"}</code> | Picks random values. Does nothing in the base class. |
+| <Link id="m-serialize" /><code>{"virtual void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the arguments for the network. Does nothing in the base class. |
 
 ## Used in
 

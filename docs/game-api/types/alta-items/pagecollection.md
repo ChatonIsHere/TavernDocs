@@ -1,6 +1,6 @@
 ---
 title: "PageCollection"
-description: "class PageCollection in Root.Township."
+description: "Asset listing the pages a kind of book can hold, in order."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PageCollection
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+Asset listing the pages a kind of book can hold, in order. Looked up by hash; a `Book` uses one to know its pages.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`HashedGeneralValue<PageCollection>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -40,20 +42,20 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canremovepagesfrom-2" /><code>{"bool CanRemovePagesFrom { get; }"}</code> |  |
-| <Link id="m-flairs-2" /><code><Link to="/game-api/types/alta-items/flairsettings">{"FlairSettings"}</Link>{" Flairs { get; }"}</code> |  |
-| <Link id="m-initialpages-2" /><code>{"IEnumerable<Object> InitialPages { get; }"}</code> |  |
-| <Link id="m-ishidingmaxcount-2" /><code>{"bool IsHidingMaxCount { get; }"}</code> |  |
-| <Link id="m-pagebases-2" /><code>{"Object[] PageBases { get; }"}</code> |  |
-| <Link id="m-preferredprovider-2" /><code>{"int PreferredProvider { get; }"}</code> |  |
-| <Link id="m-size" /><code>{"int Size { get; }"}</code> |  |
+| <Link id="m-canremovepagesfrom-2" /><code>{"bool CanRemovePagesFrom { get; }"}</code> | If false, pulling a page out of the book makes a duplicate and leaves the page in. |
+| <Link id="m-flairs-2" /><code><Link to="/game-api/types/alta-items/flairsettings">{"FlairSettings"}</Link>{" Flairs { get; }"}</code> | Decoration settings for books with this collection. |
+| <Link id="m-initialpages-2" /><code>{"IEnumerable<Object> InitialPages { get; }"}</code> | Pages every world starts with already unlocked. |
+| <Link id="m-ishidingmaxcount-2" /><code>{"bool IsHidingMaxCount { get; }"}</code> | If true, the book's counter shows only pages found, not found out of total. |
+| <Link id="m-pagebases-2" /><code>{"Object[] PageBases { get; }"}</code> | The page assets in order. |
+| <Link id="m-preferredprovider-2" /><code>{"int PreferredProvider { get; }"}</code> | Provider id used when creating page data. |
+| <Link id="m-size" /><code>{"int Size { get; }"}</code> | Number of pages in the collection. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generatepage" /><code><Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" GeneratePage(int index)"}</code> |  |
-| <Link id="m-indexof" /><code>{"int IndexOf(Object pageObject)"}</code> |  |
+| <Link id="m-generatepage" /><code><Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" GeneratePage(int index)"}</code> | Creates the page data for the page at an index, with the preferred provider. |
+| <Link id="m-indexof" /><code>{"int IndexOf(Object pageObject)"}</code> | Position of a page asset in the collection, or -1. |
 
 ## Used in
 

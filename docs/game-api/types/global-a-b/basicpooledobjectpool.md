@@ -1,6 +1,6 @@
 ---
 title: "BasicPooledObjectPool"
-description: "abstract class BasicPooledObjectPool in Root.Township."
+description: "Base pool for one PooledObjectDefinition."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BasicPooledObjectPool
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base pool for one `PooledObjectDefinition`. Fills itself with the initial pool size of inactive copies and empties on game reload. `PooledObjectPool` and `MaxLimitPooledObjectPool` derive from it.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Derived types** [`MaxLimitPooledObjectPool`](/game-api/types/global-m-o/maxlimitpooledobjectpool), [`PooledObjectPool`](/game-api/types/global-p/pooledobjectpool)
@@ -25,15 +27,15 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definition" /><code>{"protected readonly "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition"}</code> |  |
-| <Link id="m-pooledobjects" /><code>{"protected Stack<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> pooledObjects"}</code> |  |
+| <Link id="m-definition" /><code>{"protected readonly "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition"}</code> | The definition this pool serves. |
+| <Link id="m-pooledobjects" /><code>{"protected Stack<"}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> pooledObjects"}</code> | Inactive objects ready to hand out. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-release" /><code>{"abstract void Release("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject, Action releaseCallback)"}</code> |  |
-| <Link id="m-request" /><code>{"abstract "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" Request(Vector3 position, Quaternion rotation)"}</code> |  |
+| <Link id="m-release" /><code>{"abstract void Release("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject, Action releaseCallback)"}</code> | Returns an object to the pool, then calls the callback. |
+| <Link id="m-request" /><code>{"abstract "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" Request(Vector3 position, Quaternion rotation)"}</code> | Takes an object from the pool at the given position and rotation. |
 
 ## Used in
 

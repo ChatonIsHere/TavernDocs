@@ -1,6 +1,6 @@
 ---
 title: "RequirementAttribute"
-description: "abstract class RequirementAttribute in Root.Township."
+description: "Base attribute for a condition a console command (method or whole module class) needs before it can run."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RequirementAttribute
 
 An **abstract class** in `Root.Township`, `Alta.Console`.
+
+Base attribute for a condition a console command (method or whole module class) needs before it can run. Subclasses override `Check`.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Inherits or implements** `Attribute`
@@ -27,8 +29,8 @@ An **abstract class** in `Root.Township`, `Alta.Console`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-check" /><code>{"virtual bool Check()"}</code> |  |
-| <Link id="m-check-2" /><code>{"virtual bool Check("}<Link to="/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> |  |
+| <Link id="m-check" /><code>{"virtual bool Check()"}</code> | Returns whether the requirement is met. The default is always true; the context overload just calls the plain one unless overridden. |
+| <Link id="m-check-2" /><code>{"virtual bool Check("}<Link to="/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> | Returns whether the requirement is met. The default is always true; the context overload just calls the plain one unless overridden. |
 
 ## Used in
 

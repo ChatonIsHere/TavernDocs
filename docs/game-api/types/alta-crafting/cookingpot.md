@@ -1,6 +1,6 @@
 ---
 title: "CookingPot"
-description: "Its CookingStage (an enum inside CookingPot) moves through Preparation, WarmingUp, Stewing and StewLocked. Everything below is set up in InitializeAsS"
+description: "Its CookingStage (an enum inside CookingPot) moves through Preparation, WarmingUp, Stewing and StewLocked."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

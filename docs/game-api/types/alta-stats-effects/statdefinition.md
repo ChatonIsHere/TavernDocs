@@ -1,6 +1,6 @@
 ---
 title: "StatDefinition"
-description: "A ScriptableObject asset. Get one with StatDefinition.All, StatDefinition.Get(hash), or from a stat's Definition."
+description: "A stat asset (health, hunger, speed and so on), a hashed value looked up by hash or name."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
 
-A `ScriptableObject` asset. Get one with `StatDefinition.All`, `StatDefinition.Get(hash)`, or from a stat's `Definition`.
+A stat asset (health, hunger, speed and so on), a hashed value looked up by hash or name. Each `StatManager` makes a `Stat` per definition. Subclasses add special behaviour for some stats.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`HashedGeneralValue<StatDefinition>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -46,23 +46,23 @@ A `ScriptableObject` asset. Get one with `StatDefinition.All`, `StatDefinition.G
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> |  |
-| <Link id="m-indirectmodificationcurve-2" /><code>{"AnimationCurve IndirectModificationCurve { get; }"}</code> |  |
-| <Link id="m-isindirectusagemultiplier-2" /><code>{"bool IsIndirectUsageMultiplier { get; }"}</code> |  |
-| <Link id="m-issaveserialized-2" /><code>{"bool IsSaveSerialized { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-particlescolor-2" /><code>{"Color ParticlesColor { get; }"}</code> |  |
+| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> | How long the upgrade particle effect plays when this stat is raised by an upgrade. |
+| <Link id="m-indirectmodificationcurve-2" /><code>{"AnimationCurve IndirectModificationCurve { get; }"}</code> | Curve used by indirect stat modifiers to turn an input value into a modifier for this stat. |
+| <Link id="m-isindirectusagemultiplier-2" /><code>{"bool IsIndirectUsageMultiplier { get; }"}</code> | Whether indirect modifiers on this stat are applied as multipliers rather than added. |
+| <Link id="m-issaveserialized-2" /><code>{"bool IsSaveSerialized { get; }"}</code> | Whether the stat's value is written to the player save. |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | The stat's name as set on the asset. Used by `StatManager.GetStat` and console commands. |
+| <Link id="m-particlescolor-2" /><code>{"Color ParticlesColor { get; }"}</code> | Colour of the upgrade particle effect for this stat. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applied" /><code>{"virtual void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |  |
-| <Link id="m-checkserialize" /><code>{"virtual bool CheckSerialize(float oldValue, float newValue)"}</code> |  |
-| <Link id="m-getnotchescount" /><code>{"virtual int GetNotchesCount(float statMaximum)"}</code> |  |
-| <Link id="m-getnotchesposition" /><code>{"virtual void GetNotchesPosition(int notchesCount, float statMaximum, out float[] positions, out bool[] isMajor)"}</code> |  |
-| <Link id="m-getstatonplayer" /><code><Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" GetStatOnPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |  |
-| <Link id="m-isvaluevalidforcommands" /><code>{"bool IsValueValidForCommands(float value)"}</code> |  |
+| <Link id="m-applied" /><code>{"virtual void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | Virtual hook the `StatManager` calls for each stat after setting them up. Empty in the base; subclasses like hunger use it. |
+| <Link id="m-checkserialize" /><code>{"virtual bool CheckSerialize(float oldValue, float newValue)"}</code> | Decides if a value change is big enough to send over the network. Default is a change greater than the asset's `changeToSync` (0.1). |
+| <Link id="m-getnotchescount" /><code>{"virtual int GetNotchesCount(float statMaximum)"}</code> | How many notches the wrist band bar shows for a given maximum, from the asset's notch spacing. |
+| <Link id="m-getnotchesposition" /><code>{"virtual void GetNotchesPosition(int notchesCount, float statMaximum, out float[] positions, out bool[] isMajor)"}</code> | Works out evenly spaced notch positions (0 to 1) and which of them are major notches. |
+| <Link id="m-getstatonplayer" /><code><Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" GetStatOnPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Finds this stat on a player's health stat manager. Logs an error and returns null if missing. |
+| <Link id="m-isvaluevalidforcommands" /><code>{"bool IsValueValidForCommands(float value)"}</code> | Checks a value against the optional min and max allowed when setting this stat by console command. |
 
 ## Used in
 

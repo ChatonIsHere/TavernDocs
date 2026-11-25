@@ -1,6 +1,6 @@
 ---
 title: "SceneSerializer"
-description: "class SceneSerializer in Root.Township."
+description: "Sends and reads the regular state updates of every EntitySerializer in a network scene, packing as many as fit into each SceneSerialize message."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SceneSerializer
 
 A **class** in `Root.Township`, `Alta.Networking.Internal`.
+
+Sends and reads the regular state updates of every `EntitySerializer` in a network scene, packing as many as fit into each `SceneSerialize` message. The server writes per connection.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 
@@ -24,10 +26,10 @@ A **class** in `Root.Township`, `Alta.Networking.Internal`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-messagesperconnection" /><code>{"static "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" MessagesPerConnection"}</code> |  |
-| <Link id="m-serializationtimems" /><code>{"static "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" SerializationTimeMs"}</code> |  |
-| <Link id="m-serializetoconnectionsms" /><code>{"static "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" SerializeToConnectionsMs"}</code> |  |
-| <Link id="m-writingentity" /><code>{"static "}<Link to="/game-api/types/alta-networking/serializingentityhandler">{"SerializingEntityHandler"}</Link>{" WritingEntity"}</code> |  |
+| <Link id="m-messagesperconnection" /><code>{"static "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" MessagesPerConnection"}</code> | Running average of messages sent per connection per pass. |
+| <Link id="m-serializationtimems" /><code>{"static "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" SerializationTimeMs"}</code> | Running average time spent preparing entity data. |
+| <Link id="m-serializetoconnectionsms" /><code>{"static "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" SerializeToConnectionsMs"}</code> | Running average time to write and send to all connections. |
+| <Link id="m-writingentity" /><code>{"static "}<Link to="/game-api/types/alta-networking/serializingentityhandler">{"SerializingEntityHandler"}</Link>{" WritingEntity"}</code> | Static debug hook called for every entity written. |
 | <Link id="m-connections" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{"> connections"}</code> |  |
 | <Link id="m-entitymanager" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymanager">{"EntityManager"}</Link>{" entityManager"}</code> |  |
 | <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
@@ -39,17 +41,17 @@ A **class** in `Root.Township`, `Alta.Networking.Internal`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serializationchannel" /><code><Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" SerializationChannel { get; set; }"}</code> |  |
+| <Link id="m-serializationchannel" /><code><Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" SerializationChannel { get; set; }"}</code> | Channel the serialize messages go out on. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialsyncentities" /><code>{"void InitialSyncEntities("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target)"}</code> |  |
-| <Link id="m-prepareserializeentities" /><code>{"void PrepareSerializeEntities(bool isServer)"}</code> |  |
-| <Link id="m-sendserialized" /><code>{"void SendSerialized("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> |  |
-| <Link id="m-serializeread" /><code>{"void SerializeRead("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" stream)"}</code> |  |
-| <Link id="m-serializewrite" /><code>{"void SerializeWrite("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" stream, "}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, ref int startIndex)"}</code> |  |
+| <Link id="m-initialsyncentities" /><code>{"void InitialSyncEntities("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" target)"}</code> | Server: sends a joining player a sync message for every embedded scene entity, then destroy messages for missing ones. |
+| <Link id="m-prepareserializeentities" /><code>{"void PrepareSerializeEntities(bool isServer)"}</code> | Has each serializer capture its data for this pass, using the server or client set. |
+| <Link id="m-sendserialized" /><code>{"void SendSerialized("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> | Writes and sends entity data to every connection on the socket, split over messages (logs an error at 1000). |
+| <Link id="m-serializeread" /><code>{"void SerializeRead("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" stream)"}</code> | Reads a serialize message and hands each entity's bits to its serializer. Skips unknown entities and data the sender may not write. |
+| <Link id="m-serializewrite" /><code>{"void SerializeWrite("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" stream, "}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, ref int startIndex)"}</code> | Writes serializers into one message up to `MaxBitsPerSerializationMessage`. Sets `startIndex` to where the next message resumes, or -1 when done. |
 | <Link id="m-updateentitydata" /><code>{"private void UpdateEntityData(IEnumerable<"}<Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{"> serializers)"}</code> |  |
 
 ## Used in

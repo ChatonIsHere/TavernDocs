@@ -1,6 +1,6 @@
 ---
 title: "CaveLayerChunk"
-description: "A LocationChunk for one cave layer. See Caves."
+description: "A LocationChunk for one cave layer."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "Item"
-description: "A ScriptableObject asset (through Alta.HashedGeneralValue<Item> in Alta.Values). The same on both sides; it's data."
+description: "The item asset behind a pickup: tags, weight, stacking, dock placement, sounds, loot value and extra ItemComponents."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Inventory`.
 
-A `ScriptableObject` asset (through `Alta.HashedGeneralValue<Item>` in `Alta.Values`). The same on both sides; it's data.
+The item asset behind a pickup: tags, weight, stacking, dock placement, sounds, loot value and extra `ItemComponent`s. A hashed value loaded from `Items/Items`; a pickup reaches it through `Pickup.Item`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`HashedGeneralValue<Item>`](/game-api/types/assembly-other/hashedgeneralvalue-t), [`IPageBasis`](/game-api/types/alta-items/ipagebasis)
@@ -67,46 +67,46 @@ A `ScriptableObject` asset (through `Alta.HashedGeneralValue<Item>` in `Alta.Val
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-calculatedscale" /><code>{"float CalculatedScale { set; }"}</code> |  |
-| <Link id="m-components-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-i-l/itemcomponent">{"ItemComponent"}</Link>{"> Components { get; }"}</code> |  |
-| <Link id="m-dockedstacksize-2" /><code>{"int DockedStackSize { get; }"}</code> |  |
-| <Link id="m-glyph-2" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" "}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-hassize" /><code>{"bool HasSize { get; }"}</code> |  |
-| <Link id="m-isassistgrabblocked-2" /><code>{"bool IsAssistGrabBlocked { get; }"}</code> |  |
-| <Link id="m-isdestroywhendocked" /><code>{"bool IsDestroyWhenDocked { get; }"}</code> |  |
-| <Link id="m-isdisabledonsimpleserver-2" /><code>{"bool IsDisabledOnSimpleServer { get; }"}</code> |  |
-| <Link id="m-isoverridingdefaultshrunkenscale-2" /><code>{"bool IsOverridingDefaultShrunkenScale { get; }"}</code> |  |
-| <Link id="m-isoverridingdefaultvisualscale-2" /><code>{"bool IsOverridingDefaultVisualScale { get; }"}</code> |  |
-| <Link id="m-isplayingsound-2" /><code>{"bool IsPlayingSound { get; }"}</code> |  |
-| <Link id="m-isscalingongrab-2" /><code>{"bool IsScalingOnGrab { get; }"}</code> |  |
-| <Link id="m-issnappingtohand-2" /><code>{"bool IsSnappingToHand { get; }"}</code> |  |
-| <Link id="m-isstackable-2" /><code>{"bool IsStackable { get; }"}</code> |  |
-| <Link id="m-isstackablewhencrafted-2" /><code>{"bool IsStackableWhenCrafted { get; }"}</code> |  |
-| <Link id="m-isusingshrunkenvisual-2" /><code>{"bool IsUsingShrunkenVisual { get; }"}</code> |  |
-| <Link id="m-lootcategory-2" /><code><Link to="/game-api/types/alta-world-generation/category">{"Category"}</Link>{" LootCategory { get; }"}</code> |  |
-| <Link id="m-lootvalue-2" /><code><Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-overrideletgosoundeffecttype-2" /><code><Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" OverrideLetGoSoundEffectType { get; }"}</code> |  |
-| <Link id="m-overridepickupsoundeffecttype-2" /><code><Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" OverridePickUpSoundEffectType { get; }"}</code> |  |
-| <Link id="m-overridescaleinsidevisual-2" /><code>{"float OverrideScaleInsideVisual { get; }"}</code> |  |
-| <Link id="m-overrideshrunkenscale-2" /><code>{"float OverrideShrunkenScale { get; }"}</code> |  |
-| <Link id="m-prefab" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Prefab { get; set; }"}</code> |  |
-| <Link id="m-shrunkenvisual-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" ShrunkenVisual { get; }"}</code> |  |
-| <Link id="m-size-2" /><code>{"int Size { get; }"}</code> |  |
-| <Link id="m-storescale-2" /><code>{"Vector3 StoreScale { get; }"}</code> |  |
-| <Link id="m-tags-2" /><code>{"List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> Tags { get; }"}</code> |  |
-| <Link id="m-weight-2" /><code>{"float Weight { get; }"}</code> |  |
+| <Link id="m-calculatedscale" /><code>{"float CalculatedScale { set; }"}</code> | Write-only: stores the last calculated scale on the asset, shown read-only in the inspector. |
+| <Link id="m-components-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-i-l/itemcomponent">{"ItemComponent"}</Link>{"> Components { get; }"}</code> | The extra `ItemComponent` data blocks on this item. |
+| <Link id="m-dockedstacksize-2" /><code>{"int DockedStackSize { get; }"}</code> | How many of this item make one stack in a dock (default 30). Docks multiply it by their max stacks. |
+| <Link id="m-glyph-2" /><code><Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" "}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" { get; }"}</code> | The symbol shown for this item on book pages. |
+| <Link id="m-hassize" /><code>{"bool HasSize { get; }"}</code> | True if the asset's size is not negative. |
+| <Link id="m-isassistgrabblocked-2" /><code>{"bool IsAssistGrabBlocked { get; }"}</code> | When true, grab assist will not pull this item to the hand. |
+| <Link id="m-isdestroywhendocked" /><code>{"bool IsDestroyWhenDocked { get; }"}</code> | Asset flag; nothing reads it in this build. |
+| <Link id="m-isdisabledonsimpleserver-2" /><code>{"bool IsDisabledOnSimpleServer { get; }"}</code> | Hides the item from progress console commands on a simple server. |
+| <Link id="m-isoverridingdefaultshrunkenscale-2" /><code>{"bool IsOverridingDefaultShrunkenScale { get; }"}</code> | Whether `OverrideShrunkenScale` replaces the default shrunken scale. |
+| <Link id="m-isoverridingdefaultvisualscale-2" /><code>{"bool IsOverridingDefaultVisualScale { get; }"}</code> | Whether `OverrideScaleInsideVisual` replaces the default scale inside the shrunken visual. |
+| <Link id="m-isplayingsound-2" /><code>{"bool IsPlayingSound { get; }"}</code> | Whether picking up and letting go of this item plays a sound. |
+| <Link id="m-isscalingongrab-2" /><code>{"bool IsScalingOnGrab { get; }"}</code> | Whether the item shrinks or grows when grabbed (used by `PickupInteractionScaler`). |
+| <Link id="m-issnappingtohand-2" /><code>{"bool IsSnappingToHand { get; }"}</code> | Whether the item snaps into the hand when grabbed, for example out of a dock. |
+| <Link id="m-isstackable-2" /><code>{"bool IsStackable { get; }"}</code> | Whether more than one of this item can share a dock. |
+| <Link id="m-isstackablewhencrafted-2" /><code>{"bool IsStackableWhenCrafted { get; }"}</code> | Whether the item can still stack in a dock once it is part of a crafted object. |
+| <Link id="m-isusingshrunkenvisual-2" /><code>{"bool IsUsingShrunkenVisual { get; }"}</code> | Whether the shrunken visual is used when the item is scaled down. |
+| <Link id="m-lootcategory-2" /><code><Link to="/game-api/types/alta-world-generation/category">{"Category"}</Link>{" LootCategory { get; }"}</code> | The loot category this item belongs to. |
+| <Link id="m-lootvalue-2" /><code><Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" { get; }"}</code> | The item's loot value. Crafting also uses it to pick the most valuable part. |
+| <Link id="m-overrideletgosoundeffecttype-2" /><code><Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" OverrideLetGoSoundEffectType { get; }"}</code> | Sound played on letting go, or `None` for the default. |
+| <Link id="m-overridepickupsoundeffecttype-2" /><code><Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" OverridePickUpSoundEffectType { get; }"}</code> | Sound played on pick up, or `None` for the default. |
+| <Link id="m-overridescaleinsidevisual-2" /><code>{"float OverrideScaleInsideVisual { get; }"}</code> | Scale of the item inside the shrunken visual, when overriding the default. |
+| <Link id="m-overrideshrunkenscale-2" /><code>{"float OverrideShrunkenScale { get; }"}</code> | Shrunken scale to use when overriding the default. |
+| <Link id="m-prefab" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Prefab { get; set; }"}</code> | The network prefab for this item, looked up by stored hash. Logs a warning if no prefab is set. |
+| <Link id="m-shrunkenvisual-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" ShrunkenVisual { get; }"}</code> | Pooled visual shown around the item when it is shrunk. |
+| <Link id="m-size-2" /><code>{"int Size { get; }"}</code> | The item's crafting size (never below 0). Crafting parts start with it. |
+| <Link id="m-storescale-2" /><code>{"Vector3 StoreScale { get; }"}</code> | Scale applied when the item is stored scaled down in a dock (default half size). |
+| <Link id="m-tags-2" /><code>{"List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> Tags { get; }"}</code> | The pickup tags on this item. Docks use them to include, exclude or scale items. |
+| <Link id="m-weight-2" /><code>{"float Weight { get; }"}</code> | Base weight of the item. `Pickup.RawWeight` uses it, then the material's multiplier applies. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createpage" /><code><Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" CreatePage(int preferredProvider)"}</code> |  |
-| <Link id="m-getbyprefabhash" /><code>{"static "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" GetByPrefabHash(uint hash)"}</code> |  |
-| <Link id="m-getcomponent" /><code>{"T GetComponent<T>("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material = null)"}</code> |  |
-| <Link id="m-getcomponent-2" /><code><Link to="/game-api/types/global-i-l/itemcomponent">{"ItemComponent"}</Link>{" GetComponent(Type type, "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material = null)"}</code> |  |
-| <Link id="m-gethash" /><code>{"uint GetHash()"}</code> |  |
-| <Link id="m-getpositioning" /><code><Link to="/game-api/types/alta-items/item-dockpositioning">{"Item.DockPositioning"}</Link>{" GetPositioning("}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" settings, bool isScaling, bool isCrafted)"}</code> |  |
-| <Link id="m-getproviderid" /><code>{"int GetProviderID(int preferredProvider)"}</code> |  |
+| <Link id="m-createpage" /><code><Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" CreatePage(int preferredProvider)"}</code> | Builds a book page for this item using the edible or ingredient page provider. |
+| <Link id="m-getbyprefabhash" /><code>{"static "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" GetByPrefabHash(uint hash)"}</code> | Finds the item used by a prefab, through the prefab's common pickup. Null if there is none. |
+| <Link id="m-getcomponent" /><code>{"T GetComponent<T>("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material = null)"}</code> | Gets the first item component of a type that matches the given material (or any), initialised for this item. |
+| <Link id="m-getcomponent-2" /><code><Link to="/game-api/types/global-i-l/itemcomponent">{"ItemComponent"}</Link>{" GetComponent(Type type, "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material = null)"}</code> | Gets the first item component of a type that matches the given material (or any), initialised for this item. |
+| <Link id="m-gethash" /><code>{"uint GetHash()"}</code> | Returns the item's hash, for the page system. |
+| <Link id="m-getpositioning" /><code><Link to="/game-api/types/alta-items/item-dockpositioning">{"Item.DockPositioning"}</Link>{" GetPositioning("}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" settings, bool isScaling, bool isCrafted)"}</code> | Picks where and how the item sits in a dock: crafted custom, custom per dock type, then scaled or normal default. |
+| <Link id="m-getproviderid" /><code>{"int GetProviderID(int preferredProvider)"}</code> | Returns the page provider to use, the edible one unless the ingredient one was asked for. Logs other values. |
 
 ## Used in
 

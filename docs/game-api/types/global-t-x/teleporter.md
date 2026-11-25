@@ -1,6 +1,6 @@
 ---
 title: "Teleporter"
-description: "class Teleporter in Root.Township."
+description: "Hand controller extension for pointer teleporting: shows the pointer while the teleport action is held and moves the player there on release."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Teleporter
 
 A **class** in `Root.Township`, no namespace.
+
+Hand controller extension for pointer teleporting: shows the pointer while the teleport action is held and moves the player there on release. Local player only, and not in auto cam mode.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** [`ControllerExtension`](/game-api/types/global-c-d/controllerextension)
@@ -37,22 +39,22 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-directionsetting" /><code>{"int DirectionSetting { get; set; }"}</code> |  |
+| <Link id="m-directionsetting" /><code>{"int DirectionSetting { get; set; }"}</code> | A settable value with no reader in this class. |
 | <Link id="m-lastcolliderhit" /><code>{"private Collider LastColliderHit { get; set; }"}</code> |  |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-departed" /><code>{"event Action<Vector3> Departed"}</code> |  |
+| <Link id="m-departed" /><code>{"event Action<Vector3> Departed"}</code> | Raised with the hand's position when a teleport happens. Plays the depart sound. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attemptteleport" /><code>{"void AttemptTeleport("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller, bool isDisabling)"}</code> |  |
-| <Link id="m-initializecontrollerextension" /><code>{"override void InitializeControllerExtension()"}</code> |  |
-| <Link id="m-startshowpointer" /><code>{"void StartShowPointer("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |  |
+| <Link id="m-attemptteleport" /><code>{"void AttemptTeleport("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller, bool isDisabling)"}</code> | Called when the teleport action ends. Teleports if the pointer has a valid target, and cancels the other hand's pointer. |
+| <Link id="m-initializecontrollerextension" /><code>{"override void InitializeControllerExtension()"}</code> | Finds the hand's `Pointer` and links to the other hand's teleporter once the local player is set. |
+| <Link id="m-startshowpointer" /><code>{"void StartShowPointer("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Shows the pointer while teleporting is allowed (not downed, hand free, locomotion not blocked). |
 | <Link id="m-cancelteleport" /><code>{"private void CancelTeleport("}<Link to="/game-api/types/global-c-d/controlleractionproxy">{"ControllerActionProxy"}</Link>{" proxy)"}</code> |  |
 | <Link id="m-checkshowpointer" /><code>{"private IEnumerator CheckShowPointer() (iterator)"}</code> |  |
 | <Link id="m-checkvalidendinput" /><code>{"private bool CheckValidEndInput()"}</code> |  |

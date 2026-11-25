@@ -1,6 +1,6 @@
 ---
 title: "ConnectToServerUtility"
-description: "Owns the client socket and the current pipeline. StopCurrentConnectionAttempt(). Registers the in-game message handlers once a join succeeds."
+description: "Owns the client socket and the current pipeline."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

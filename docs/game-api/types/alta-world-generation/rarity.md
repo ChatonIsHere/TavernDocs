@@ -1,6 +1,6 @@
 ---
 title: "Rarity"
-description: "class Rarity in Root.Township."
+description: "A loot rarity asset with a weighting."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Rarity
 
 A **class** in `Root.Township`, `Alta.Loot`.
+
+A loot rarity asset with a weighting. All rarities load from Resources/Items/Rarities, and loot tables pick one at random.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`GeneralValue`](/game-api/types/assembly-other/generalvalue)
@@ -35,14 +37,14 @@ A **class** in `Root.Township`, `Alta.Loot`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-originweightings-2" /><code><Link to="/game-api/types/alta-world-generation/originsinglevalue">{"OriginSingleValue"}</Link>{"[] OriginWeightings { get; }"}</code> |  |
-| <Link id="m-weighting-2" /><code>{"float Weighting { get; }"}</code> |  |
+| <Link id="m-originweightings-2" /><code><Link to="/game-api/types/alta-world-generation/originsinglevalue">{"OriginSingleValue"}</Link>{"[] OriginWeightings { get; }"}</code> | Weightings used to pick an `Origin` for loot of this rarity. |
+| <Link id="m-weighting-2" /><code>{"float Weighting { get; }"}</code> | Base weighting (default 1). |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getrandom" /><code>{"static "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" GetRandom(float weightingPower, List<"}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{"> ignore)"}</code> |  |
+| <Link id="m-getrandom" /><code>{"static "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" GetRandom(float weightingPower, List<"}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{"> ignore)"}</code> | Weighted pick from all rarities not in `ignore`. The running total is raised to `weightingPower` before comparing, which favours rarities earlier in the list as it grows. |
 
 ## Used in
 

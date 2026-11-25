@@ -1,6 +1,6 @@
 ---
 title: "BiomeAttribute"
-description: "class BiomeAttribute in Root.Township."
+description: "A named world generation value, such as prosperity, elevation or slope, that biomes set ranges for."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BiomeAttribute
 
 A **class** in `Root.Township`, no namespace.
+
+A named world generation value, such as prosperity, elevation or slope, that biomes set ranges for. Spawn and loot rules read these values from `SpawnData` attributes.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`GeneralValue`](/game-api/types/assembly-other/generalvalue)
@@ -37,10 +39,10 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultmaximum-2" /><code>{"float DefaultMaximum { get; }"}</code> |  |
-| <Link id="m-defaultminimum-2" /><code>{"float DefaultMinimum { get; }"}</code> |  |
-| <Link id="m-extraperlayer-2" /><code>{"float ExtraPerLayer { get; }"}</code> |  |
-| <Link id="m-isprocedural-2" /><code>{"bool IsProcedural { get; }"}</code> |  |
+| <Link id="m-defaultmaximum-2" /><code>{"float DefaultMaximum { get; }"}</code> | Upper value used when a biome doesn't set this attribute. |
+| <Link id="m-defaultminimum-2" /><code>{"float DefaultMinimum { get; }"}</code> | Lower value used when a biome doesn't set this attribute. |
+| <Link id="m-extraperlayer-2" /><code>{"float ExtraPerLayer { get; }"}</code> | Added once per depth layer in cave biomes, so the value grows deeper down. |
+| <Link id="m-isprocedural-2" /><code>{"bool IsProcedural { get; }"}</code> | When true, forest spawning averages the value between the two nodes of the nearest path edge. |
 
 ## Used in
 

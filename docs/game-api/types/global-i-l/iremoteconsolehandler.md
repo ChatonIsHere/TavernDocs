@@ -1,6 +1,6 @@
 ---
 title: "IRemoteConsoleHandler"
-description: "One connected remote console session (WebSocket console or client handler). Passed with the ConsoleConnected and ConsoleDisconnected events of ServerR"
+description: "One connected remote console session (WebSocket console or client handler)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

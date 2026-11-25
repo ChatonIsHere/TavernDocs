@@ -12,38 +12,38 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`CurveRange<T>`](/game-api/types/alta-utilities/curverange-t) | class | `DoubleValue<T>` | 4 |  |
 | [`CurveValue<T>`](/game-api/types/alta-utilities/curvevalue-t) | class |  | 4 |  |
-| [`DoubleValue<T>`](/game-api/types/alta-utilities/doublevalue-t) | class | `SingleValue<T>` | 3 |  |
+| [`DoubleValue<T>`](/game-api/types/alta-utilities/doublevalue-t) | class | `SingleValue<T>` | 3 | A `SingleValue<T>` with a second float value. |
 | [`FileDownload`](/game-api/types/alta-utilities/filedownload) | class |  | 6 |  |
 | [`ICollisionStandard`](/game-api/types/alta-utilities/icollisionstandard) | interface |  | 1 |  |
 | [`IDisableOnSimpleServer`](/game-api/types/alta-utilities/idisableonsimpleserver) | interface |  | 1 |  |
 | [`Math2d`](/game-api/types/alta-utilities/math2d) | static class |  | 1 |  |
 | [`MathfOperation`](/game-api/types/alta-utilities/mathfoperation) | static class |  | 6 |  |
 | [`Operation`](/game-api/types/alta-utilities/operation) | delegate |  | 0 |  |
-| [`OperationType`](/game-api/types/alta-utilities/operationtype) | enum |  | 7 |  |
+| [`OperationType`](/game-api/types/alta-utilities/operationtype) | enum |  | 7 | How to combine two floats, turned into a function by `MathfOperation.GetOperation`: Set (take the new value), Max, Min, Add, Subtract, Multiply, or Multiply1Minus (`a * (1 - b)`). |
 | [`SerializeHashedObject`](/game-api/types/alta-utilities/serializehashedobject) | static class |  | 3 |  |
 | [`SimpleHashedGeneralValue<T>`](/game-api/types/alta-utilities/simplehashedgeneralvalue-t) | abstract class | `HashedGeneralValue<T>`, `IDisableOnSimpleServer` | 2 |  |
-| [`SingleValue<T>`](/game-api/types/alta-utilities/singlevalue-t) | class |  | 4 |  |
+| [`SingleValue<T>`](/game-api/types/alta-utilities/singlevalue-t) | class |  | 4 | A serializable pair of an object and a float, for inspector lists of weighted or scored things. |
 | [`StatDefinitionConverter`](/game-api/types/alta-utilities/statdefinitionconverter) | class | `HashedGeneralValueConverter<StatDefinition>` | 0 |  |
 | [`SurfaceMaterial`](/game-api/types/alta-utilities/surfacematerial) | class | `ScriptableObject` | 0 |  |
 | [`SurfaceMaterial.Create`](/game-api/types/alta-utilities/surfacematerial-create) | class | `AltaMenuItemBase.Assets.Create.Township.Environmental.ScriptableObject<SurfaceMaterial>` | 0 |  |
 
 ## Alta.AssetBaking
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AssetBakingSettings`](/game-api/types/alta-utilities/assetbakingsettings) | static class |  | 5 |  |
 | [`CachedDirectory`](/game-api/types/alta-utilities/cacheddirectory) | class |  | 3 |  |
 
 ## Alta.Bezier
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`Bezier`](/game-api/types/alta-utilities/bezier) | static class |  | 4 |  |
-| [`BezierSpline`](/game-api/types/alta-utilities/bezierspline) | class | `MonoBehaviour`, `IInstructionResult` | 19 |  |
+| [`BezierSpline`](/game-api/types/alta-utilities/bezierspline) | class | `MonoBehaviour`, `IInstructionResult` | 19 | A cubic Bezier spline component: control points in groups of three per curve, with free, aligned or mirrored handles and optional looping. Used by spline displays, terrain splines, forest spline instructions and some effects. |
 | [`ItemModifier`](/game-api/types/alta-utilities/itemmodifier) | abstract class | `SplineDisplayModifier` | 2 |  |
 | [`Skip`](/game-api/types/alta-utilities/skip) | class | `ItemModifier`, `IIgnoreForStaticFlatten`, `IDontSplit` | 1 |  |
 | [`SplineChangedHandler`](/game-api/types/alta-utilities/splinechangedhandler) | delegate |  | 0 |  |
@@ -54,7 +54,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SplineDecorator.RotationMode`](/game-api/types/alta-utilities/splinedecorator-rotationmode) | enum |  | 4 |  |
 | [`SplineDecorator.ScaleMode`](/game-api/types/alta-utilities/splinedecorator-scalemode) | enum |  | 2 |  |
 | [`SplineDecorator.UpMode`](/game-api/types/alta-utilities/splinedecorator-upmode) | enum |  | 2 |  |
-| [`SplineDisplay`](/game-api/types/alta-utilities/splinedisplay) | abstract class | `MonoBehaviour`, `IBakeable` | 5 |  |
+| [`SplineDisplay`](/game-api/types/alta-utilities/splinedisplay) | abstract class | `MonoBehaviour`, `IBakeable` | 5 | Base for something built along a parent `BezierSpline` (a mesh, fence and so on). It rebuilds when the spline changes and can be baked to remove itself. |
 | [`SplineDisplayModifier`](/game-api/types/alta-utilities/splinedisplaymodifier) | abstract class | `MonoBehaviour`, `IDestroyOnBake` | 0 |  |
 | [`SplineMesh`](/game-api/types/alta-utilities/splinemesh) | class | `SplineDisplay` | 0 |  |
 | [`WedgeChooser`](/game-api/types/alta-utilities/wedgechooser) | class | `ItemModifier` | 2 |  |
@@ -62,20 +62,20 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Rendering
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`MaterialInstance`](/game-api/types/alta-utilities/materialinstance) | class | `IDisposable` | 4 |  |
 | [`MaterialInstanceGroup`](/game-api/types/alta-utilities/materialinstancegroup) | class | `IDisposable`, `IReadOnlyCollection<MaterialInstance>`, `IEnumerable<MaterialInstance>`, +1 more | 4 |  |
 
 ## Alta.UnityWrappers
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`UnityQualitySettingsController`](/game-api/types/alta-utilities/unityqualitysettingscontroller) | static class |  | 1 |  |
 
 ## Alta.Utilities
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AltaContractResolver`](/game-api/types/alta-utilities/altacontractresolver) | class | `DefaultContractResolver` | 1 |  |
 | [`AltaGizmos`](/game-api/types/alta-utilities/altagizmos) | class |  | 2 |  |
@@ -87,13 +87,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`BoolSettingValue`](/game-api/types/alta-utilities/boolsettingvalue) | class |  | 1 |  |
 | [`BuildVersionException`](/game-api/types/alta-utilities/buildversionexception) | class | `Exception` | 1 |  |
 | [`BuildVersionExtensions`](/game-api/types/alta-utilities/buildversionextensions) | static class |  | 2 |  |
-| [`ChunkSaveFormat`](/game-api/types/alta-utilities/chunksaveformat) | class | `IAltaFileFormat` | 13 |  |
+| [`ChunkSaveFormat`](/game-api/types/alta-utilities/chunksaveformat) | class | `IAltaFileFormat` | 13 | File format for one chunk's save: a list of versions, each with the chunk's own data and its saved objects. Shared by reference count. |
 | [`ChunkSaveFormat.Version`](/game-api/types/alta-utilities/chunksaveformat-version) | class |  | 5 |  |
-| [`ColorMaterialProperty`](/game-api/types/alta-utilities/colormaterialproperty) | class | `MaterialProperty<Color>` | 3 |  |
+| [`ColorMaterialProperty`](/game-api/types/alta-utilities/colormaterialproperty) | class | `MaterialProperty<Color>` | 3 | A colour shader property, looked up by name once, that can be set on a material or a property block. |
 | [`CorruptPlayerSaveFileException`](/game-api/types/alta-utilities/corruptplayersavefileexception) | internal class | `PlayerSaveException` | 2 |  |
 | [`CursorUtilities`](/game-api/types/alta-utilities/cursorutilities) | static class |  | 1 |  |
 | [`DamagePopup`](/game-api/types/alta-utilities/damagepopup) | class | `TextPopup` | 3 | [Items, interaction and damage](../items/overview.md) |
-| [`DatabaseSettingsFile`](/game-api/types/alta-utilities/databasesettingsfile) | class | `IAltaFile` | 20 |  |
+| [`DatabaseSettingsFile`](/game-api/types/alta-utilities/databasesettingsfile) | class | `IAltaFile` | 20 | A settings "file" stored through the Alta web API's settings endpoint instead of on disk. Most file operations do nothing. |
 | [`DebuggingCollection<T>`](/game-api/types/alta-utilities/debuggingcollection-t) | class | `IEnumerable`, `ICollection<T>`, `IEnumerable<T>` | 9 |  |
 | [`DebuggingCollection<T>.DebuggingCollectionEnumerator<TInnerType>`](/game-api/types/alta-utilities/debuggingcollection-t-debuggingcollectionenumerator-tinnertype) | class | `IEnumerator<TInnerType>`, `IEnumerator`, `IDisposable` | 6 |  |
 | [`DevOnlyAttribute`](/game-api/types/alta-utilities/devonlyattribute) | class | `Attribute` | 0 |  |
@@ -105,15 +105,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`EnumSettingAccess`](/game-api/types/alta-utilities/enumsettingaccess) | abstract class | `StringGameSettingsAccess` | 1 |  |
 | [`FloatGameSettingsAccess`](/game-api/types/alta-utilities/floatgamesettingsaccess) | class | `SettingsFieldAccess<float>` | 0 |  |
 | [`FloatGameSettingsAccess.Create`](/game-api/types/alta-utilities/floatgamesettingsaccess-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<FloatGameSettingsAccess>` | 0 |  |
-| [`FloatMaterialProperty`](/game-api/types/alta-utilities/floatmaterialproperty) | class | `MaterialProperty<float>` | 3 |  |
+| [`FloatMaterialProperty`](/game-api/types/alta-utilities/floatmaterialproperty) | class | `MaterialProperty<float>` | 3 | A cached shader property id for a float value, set on a material or a property block. |
 | [`ForwardedList<T>`](/game-api/types/alta-utilities/forwardedlist-t) | class | `IListenedList<T>`, `IEnumerable<T>`, `IEnumerable` | 9 |  |
 | [`GameSettings`](/game-api/types/alta-utilities/gamesettings) | class | `Settings`, `ICloneable` | 37 | [Settings and files](../console-and-utilities/settings-and-files.md#gamesettings): Marked `[Obsolete("Use GlobalConstants instead.")]`, but it's still what `GameConfig` holds and the game still reads it everywhere. |
 | [`GeneralDelegates`](/game-api/types/alta-utilities/generaldelegates) | static class |  | 0 |  |
 | [`GeneralDelegates.BoolUpdater`](/game-api/types/alta-utilities/generaldelegates-boolupdater) | delegate |  | 0 |  |
 | [`GeneralDelegates.ValueUpdater`](/game-api/types/alta-utilities/generaldelegates-valueupdater) | delegate |  | 0 |  |
 | [`GeometryHelperMethods`](/game-api/types/alta-utilities/geometryhelpermethods) | static class |  | 1 |  |
-| [`IIgnoreForStaticFlatten`](/game-api/types/alta-utilities/iignoreforstaticflatten) | interface | `IDontSplit` | 0 |  |
-| [`IListenedList<T>`](/game-api/types/alta-utilities/ilistenedlist-t) | interface | `IEnumerable<T>`, `IEnumerable` | 7 |  |
+| [`IIgnoreForStaticFlatten`](/game-api/types/alta-utilities/iignoreforstaticflatten) | interface | `IDontSplit` | 0 | Marker for components that must stay on their own object when static scenery is flattened. Extends `IDontSplit`; used by things like `ModifiableStaticObject` and `RotateOverTime`. |
+| [`IListenedList<T>`](/game-api/types/alta-utilities/ilistenedlist-t) | interface | `IEnumerable<T>`, `IEnumerable` | 7 | A read-only view of a list that raises events when items are added or removed. `ListenedList<T>` and `ForwardedList<T>` implement it. |
 | [`IntGameSettingsAccess`](/game-api/types/alta-utilities/intgamesettingsaccess) | class | `SettingsFieldAccess<int>` | 0 |  |
 | [`IntGameSettingsAccess.Create`](/game-api/types/alta-utilities/intgamesettingsaccess-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<IntGameSettingsAccess>` | 0 |  |
 | [`ISettingsFieldAccess`](/game-api/types/alta-utilities/isettingsfieldaccess) | interface |  | 3 |  |
@@ -123,27 +123,27 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`JsonMaxValueProvider`](/game-api/types/alta-utilities/jsonmaxvalueprovider) | class | `JsonRangeValueProviderFilter<float>` | 2 |  |
 | [`JsonMinAttribute`](/game-api/types/alta-utilities/jsonminattribute) | class | `JsonPropertyFilterAttribute` | 2 |  |
 | [`JsonMinValueProvider`](/game-api/types/alta-utilities/jsonminvalueprovider) | class | `JsonRangeValueProviderFilter<float>` | 2 |  |
-| [`JsonPropertyFilterAttribute`](/game-api/types/alta-utilities/jsonpropertyfilterattribute) | abstract class | `Attribute` | 2 |  |
+| [`JsonPropertyFilterAttribute`](/game-api/types/alta-utilities/jsonpropertyfilterattribute) | abstract class | `Attribute` | 2 | Base of the `JsonMin`, `JsonMax` and `JsonRange` attributes on settings properties, which clamp values when JSON is read or a value is set from the console. |
 | [`JsonRangeAttribute`](/game-api/types/alta-utilities/jsonrangeattribute) | class | `JsonPropertyFilterAttribute` | 2 |  |
 | [`JsonRangeFloatAttribute`](/game-api/types/alta-utilities/jsonrangefloatattribute) | class | `JsonPropertyFilterAttribute` | 2 |  |
 | [`JsonRangeFloatValueProvider`](/game-api/types/alta-utilities/jsonrangefloatvalueprovider) | class | `JsonRangeValueProviderFilter<float>` | 2 |  |
 | [`JsonRangeValueProvider`](/game-api/types/alta-utilities/jsonrangevalueprovider) | class | `JsonRangeValueProviderFilter<int>` | 2 |  |
-| [`JsonRangeValueProviderFilter<T>`](/game-api/types/alta-utilities/jsonrangevalueproviderfilter-t) | abstract class | `IValueProvider` | 4 |  |
+| [`JsonRangeValueProviderFilter<T>`](/game-api/types/alta-utilities/jsonrangevalueproviderfilter-t) | abstract class | `IValueProvider` | 4 | Wraps a Json.NET `IValueProvider` so values are clamped to a range both when read and when written. Subclasses define `Clamp`. |
 | [`LandmarkCandidateFinder`](/game-api/types/alta-utilities/landmarkcandidatefinder) | class | `MonoBehaviour` | 0 |  |
 | [`LauncherSettings`](/game-api/types/alta-utilities/launchersettings) | class | `Settings`, `ICloneable` | 1 |  |
-| [`LerpingControlledFloatValue`](/game-api/types/alta-utilities/lerpingcontrolledfloatvalue) | class |  | 12 |  |
+| [`LerpingControlledFloatValue`](/game-api/types/alta-utilities/lerpingcontrolledfloatvalue) | class |  | 12 | A float that eases toward a target over time and writes each step through a setter callback. A control value can temporarily take over the target. Call `Update` every frame. |
 | [`LerpingFloatGetValue`](/game-api/types/alta-utilities/lerpingfloatgetvalue) | class |  | 8 |  |
-| [`LerpingFloatValue`](/game-api/types/alta-utilities/lerpingfloatvalue) | class |  | 10 |  |
+| [`LerpingFloatValue`](/game-api/types/alta-utilities/lerpingfloatvalue) | class |  | 10 | Helper that moves a float towards a target over time and pushes each new value to a setter. You call `Update` every frame yourself. |
 | [`LerpingValue<T>`](/game-api/types/alta-utilities/lerpingvalue-t) | abstract class |  | 9 |  |
 | [`Line`](/game-api/types/alta-utilities/line) | struct |  | 3 |  |
-| [`ListenedList<T>`](/game-api/types/alta-utilities/listenedlist-t) | class | `IListenedList<T>`, `IEnumerable<T>`, `IEnumerable`, +1 more | 12 |  |
+| [`ListenedList<T>`](/game-api/types/alta-utilities/listenedlist-t) | class | `IListenedList<T>`, `IEnumerable<T>`, `IEnumerable`, +1 more | 12 | A list that raises events when items are added or removed. Adding through the `ICollection` interface is refused with an error. |
 | [`ListItemChangedHandler<T>`](/game-api/types/alta-utilities/listitemchangedhandler-t) | delegate |  | 0 |  |
 | [`LoggingWatch`](/game-api/types/alta-utilities/loggingwatch) | class |  | 4 |  |
 | [`MaterialProperty<T>`](/game-api/types/alta-utilities/materialproperty-t) | abstract class |  | 3 |  |
 | [`MaterialPropertyBlockSettings<T>`](/game-api/types/alta-utilities/materialpropertyblocksettings-t) | class | `HashedGeneralValue<T>` | 0 |  |
 | [`MeshFilterExtensions`](/game-api/types/alta-utilities/meshfilterextensions) | static class |  | 1 |  |
 | [`MicrophoneEnumSettingAccess`](/game-api/types/alta-utilities/microphoneenumsettingaccess) | class | `EnumSettingAccess` | 3 |  |
-| [`PlayerSave`](/game-api/types/alta-utilities/playersave) | class | `IAltaFileFormat` | 20 |  |
+| [`PlayerSave`](/game-api/types/alta-utilities/playersave) | class | `IAltaFileFormat` | 20 | A player's save file: position data plus binary blobs for their body, state stack, player entity, progression and cosmetics. Server: `Player.Save` gives the loaded one. The blobs are saving-system bits; treat them as opaque. |
 | [`PlayerSaveData`](/game-api/types/alta-utilities/playersavedata) | class | `HashedGeneralValue<PlayerSaveData>` | 2 | [Saving](../networking/saving.md): The starting inventory for new players (`InitialPlayerInventory` in the settings picks which). |
 | [`PlayerSaveData.Create`](/game-api/types/alta-utilities/playersavedata-create) | class | `AltaMenuItemBase.Assets.Create.Utility.ScriptableObject<PlayerSaveData>` | 0 |  |
 | [`PlayerSaveException`](/game-api/types/alta-utilities/playersaveexception) | internal abstract class | `Exception` | 2 |  |
@@ -159,8 +159,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ServerSettings`](/game-api/types/alta-utilities/serversettings) | class | `Settings`, `ICloneable` | 49 | [ServerSettings](../../tavernlib-api/types/backend-server-configs/serversettings.md), [Server settings](../networking/server-settings.md#serversettings): A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
 | [`SetRenderQueue`](/game-api/types/alta-utilities/setrenderqueue) | class | `MonoBehaviour` | 0 |  |
 | [`SettingBasedToggler`](/game-api/types/alta-utilities/settingbasedtoggler) | class | `MonoBehaviour` | 0 |  |
-| [`SettingsFieldAccess`](/game-api/types/alta-utilities/settingsfieldaccess) | class | `ScriptableObject`, `ISettingsFieldAccess` | 7 |  |
-| [`SettingsFieldAccess<TFieldType>`](/game-api/types/alta-utilities/settingsfieldaccess-tfieldtype) | abstract class | `SettingsFieldAccess` | 4 |  |
+| [`SettingsFieldAccess`](/game-api/types/alta-utilities/settingsfieldaccess) | class | `ScriptableObject`, `ISettingsFieldAccess` | 7 | Asset that ties a settings menu entry to one game or server setting, read and written by reflection in the generic subclass. |
+| [`SettingsFieldAccess<TFieldType>`](/game-api/types/alta-utilities/settingsfieldaccess-tfieldtype) | abstract class | `SettingsFieldAccess` | 4 | An asset that reads and writes one named property of `GameSettings` or `ServerSettings` by reflection. Used by quick access menu and settings UI entries. |
 | [`SettingsFileAccess<TSettings>`](/game-api/types/alta-utilities/settingsfileaccess-tsettings) | class | `ISettingsFileAccess`, `ISettings` | 12 | [Settings and files](../console-and-utilities/settings-and-files.md#settingsfileaccess): When it's made it: |
 | [`SettingsFilesHandler`](/game-api/types/alta-utilities/settingsfileshandler) | static class |  | 0 |  |
 | [`SettingsManager`](/game-api/types/alta-utilities/settingsmanager) | class | `ISettingsManager` | 5 | [Settings and files](../console-and-utilities/settings-and-files.md#settingsmanager): Static members, plus an instance that VContainer hands out as `ISettingsManager`. |
@@ -185,15 +185,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Utilities.Atlas
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AtlasDefinition`](/game-api/types/alta-utilities/atlasdefinition) | class | `ScriptableObject` | 28 |  |
+| [`AtlasDefinition`](/game-api/types/alta-utilities/atlasdefinition) | class | `ScriptableObject` | 28 | Asset describing a texture atlas: which materials it combines into one baked material, and where each sits in the atlas. `ApplyTo` swaps renderers over to the baked material and rewrites their mesh UVs. Mostly a build and editor tool. |
 | [`AtlasDefinition.AtlasedMaterial`](/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial) | class |  | 6 |  |
 | [`AtlasSettings`](/game-api/types/alta-utilities/atlassettings) | class | `ScriptableObject` | 4 |  |
 | [`AtlasTarget`](/game-api/types/alta-utilities/atlastarget) | enum |  | 2 |  |
 | [`AtlasType`](/game-api/types/alta-utilities/atlastype) | enum |  | 5 |  |
 | [`BasicBlit`](/game-api/types/alta-utilities/basicblit) | internal class | `ShaderBlit` | 1 |  |
-| [`IPreventAtlasing`](/game-api/types/alta-utilities/ipreventatlasing) | interface |  | 1 |  |
+| [`IPreventAtlasing`](/game-api/types/alta-utilities/ipreventatlasing) | interface |  | 1 | Implemented by components that can keep a renderer out of texture atlas baking. |
 | [`IPreventNoLongerReadable`](/game-api/types/alta-utilities/ipreventnolongerreadable) | interface |  | 1 |  |
 | [`MaterialRect`](/game-api/types/alta-utilities/materialrect) | struct |  | 6 |  |
 | [`MeshFilterExtensions`](/game-api/types/alta-utilities/meshfilterextensions-alta-utilities-atlas) | static class |  | 1 |  |
@@ -217,20 +217,20 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Utilities.Hierarchy
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AltaHierarchyData`](/game-api/types/alta-utilities/altahierarchydata) | class | `ScriptableObject` | 5 |  |
 | [`AltaHierarchyData.Pocket`](/game-api/types/alta-utilities/altahierarchydata-pocket) | class |  | 2 |  |
 
 ## Alta.Utilities.Profiling
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ChunkDisplay`](/game-api/types/alta-utilities/chunkdisplay) | class | `LiveDataDisplayBase` | 1 |  |
 | [`FpsDisplay`](/game-api/types/alta-utilities/fpsdisplay) | class | `LiveDataDisplayBase` | 0 |  |
 | [`GraphicsLevelDisplay`](/game-api/types/alta-utilities/graphicsleveldisplay) | class | `LiveDataDisplayBase` | 1 |  |
 | [`LastCombatHit`](/game-api/types/alta-utilities/lastcombathit) | class | `LiveDataDisplayBase` | 2 |  |
-| [`LiveDataDisplayBase`](/game-api/types/alta-utilities/livedatadisplaybase) | abstract class | `ScriptableObject` | 6 |  |
+| [`LiveDataDisplayBase`](/game-api/types/alta-utilities/livedatadisplaybase) | abstract class | `ScriptableObject` | 6 | Base asset for one line of the live debug data display (a title and a value). Subclasses supply the value text. |
 | [`LiveDataDisplayCollection`](/game-api/types/alta-utilities/livedatadisplaycollection) | class | `ScriptableObject` | 1 |  |
 | [`LiveDataDisplayView`](/game-api/types/alta-utilities/livedatadisplayview) | class | `MonoBehaviour` | 1 |  |
 | [`NetworkBytesDisplay`](/game-api/types/alta-utilities/networkbytesdisplay) | class | `LiveDataDisplayBase` | 2 |  |
@@ -244,15 +244,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Utilities.Profiling.NetworkTransportMetrics
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ConnectionChannelStatistic`](/game-api/types/alta-utilities/connectionchannelstatistic) | class | `NetworkingStatistic` | 2 |  |
 | [`ConnectionChannelStatistics`](/game-api/types/alta-utilities/connectionchannelstatistics) | class | `NetworkingStatisticsList<ConnectionChannelStatistic, KeyValuePair<ConnectionChannel, ConnectionChannelStatistic>>` | 1 |  |
 | [`INetworkStatistic`](/game-api/types/alta-utilities/inetworkstatistic) | interface |  | 4 |  |
 | [`INetworkStatisticCollection`](/game-api/types/alta-utilities/inetworkstatisticcollection) | interface |  | 4 |  |
 | [`NetworkingProfiler`](/game-api/types/alta-utilities/networkingprofiler) | class | `SingletonBehaviour<NetworkingProfiler>` | 2 |  |
-| [`NetworkingStatistic`](/game-api/types/alta-utilities/networkingstatistic) | class | `INetworkStatistic` | 9 |  |
-| [`NetworkingStatisticsList<T>`](/game-api/types/alta-utilities/networkingstatisticslist-t) | abstract class | `INetworkStatisticCollection` | 6 |  |
+| [`NetworkingStatistic`](/game-api/types/alta-utilities/networkingstatistic) | class | `INetworkStatistic` | 9 | Counter for one kind of network message in the transport metrics: how many were sent and how many bytes. |
+| [`NetworkingStatisticsList<T>`](/game-api/types/alta-utilities/networkingstatisticslist-t) | abstract class | `INetworkStatisticCollection` | 6 | A named list of network traffic statistics with per-frame and per-second byte totals, for profiling and summary dumps. |
 | [`NetworkingStatisticsList<TStatistic, TInternalObject>`](/game-api/types/alta-utilities/networkingstatisticslist-tstatistic-tinternalobject) | class | `NetworkingStatisticsList<TStatistic>` | 1 |  |
 | [`NetworkingStatisticsListNonSerialized<T>`](/game-api/types/alta-utilities/networkingstatisticslistnonserialized-t) | abstract class | `INetworkStatisticCollection` | 6 |  |
 | [`NetworkStatisticWithIncomingPackets`](/game-api/types/alta-utilities/networkstatisticwithincomingpackets) | abstract class | `NetworkTransportStatistic` | 2 |  |
@@ -260,18 +260,18 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`NetworkTransportCountStatisticField`](/game-api/types/alta-utilities/networktransportcountstatisticfield) | class | `NetworkTransportStatisticField` | 2 |  |
 | [`NetworkTransportHostStatistic`](/game-api/types/alta-utilities/networktransporthoststatistic) | class | `NetworkTransportStatistic` | 5 |  |
 | [`NetworkTransportOverallStatistics`](/game-api/types/alta-utilities/networktransportoverallstatistics) | class | `NetworkStatisticWithIncomingPackets` | 1 |  |
-| [`NetworkTransportStatistic`](/game-api/types/alta-utilities/networktransportstatistic) | abstract class | `INetworkStatisticCollection` | 6 |  |
-| [`NetworkTransportStatisticField`](/game-api/types/alta-utilities/networktransportstatisticfield) | class | `INetworkStatistic` | 9 |  |
+| [`NetworkTransportStatistic`](/game-api/types/alta-utilities/networktransportstatistic) | abstract class | `INetworkStatisticCollection` | 6 | Base for a set of outgoing network transport stats (messages, packets, bytes) used by the networking profiler. |
+| [`NetworkTransportStatisticField`](/game-api/types/alta-utilities/networktransportstatisticfield) | class | `INetworkStatistic` | 9 | One network traffic counter for the profiler. Reads a running total from a function you pass in and reports it relative to the last reset. |
 | [`NetworkTransportStatisticType`](/game-api/types/alta-utilities/networktransportstatistictype) | enum |  | 2 |  |
 
 ## Alta.Utilities.Profiling.NetworkTransportMetrics.ABTesting
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ServerPingProfiler`](/game-api/types/alta-utilities/serverpingprofiler) | class | `NetworkEntityBehaviour` | 3 |  |
 
 ## Alta.Utility.Graphics
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`GraphicsSettingsController`](/game-api/types/alta-utilities/graphicssettingscontroller) | static class |  | 2 |  |

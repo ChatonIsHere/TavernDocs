@@ -1,6 +1,6 @@
 ---
 title: "PerPlayerManager<TThis, TContent, TSaveFormat>"
-description: "Base for server singletons that load, cache and save one content object per player from that player's data file. Get one with the static Instance."
+description: "Base for server singletons that load, cache and save one content object per player from that player's data file."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

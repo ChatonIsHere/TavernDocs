@@ -1,6 +1,6 @@
 ---
 title: "ReplaceAvoidFlags"
-description: "enum ReplaceAvoidFlags in Root.Township."
+description: "Flags for what to leave alone when one entity replaces another (for example CraftingPart and Fire check them): position, relation, internal state, charge,..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ReplaceAvoidFlags
 
 An **enum** in `Root.Township`, `Alta.Networking`.
+
+Flags for what to leave alone when one entity replaces another (for example `CraftingPart` and `Fire` check them): position, relation, internal state, charge, stats, health or chunk.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Attributes** `Flags`

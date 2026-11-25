@@ -1,6 +1,6 @@
 ---
 title: "QuickAccessMenuSettings"
-description: "class QuickAccessMenuSettings in Root.Township."
+description: "Global settings for the quick access (wrist) menu: where its bubbles spawn, how it follows the hand and how titles show."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # QuickAccessMenuSettings
 
 A **class** in `Root.Township`, `Alta.QuickAccessActions`.
+
+Global settings for the quick access (wrist) menu: where its bubbles spawn, how it follows the hand and how titles show.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`GlobalSettings<QuickAccessMenuSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -50,27 +52,27 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-centertitlebackgrounddiameter-2" /><code>{"float CenterTitleBackgroundDiameter { get; }"}</code> |  |
-| <Link id="m-centertitlebackgroundprefab-2" /><code>{"GameObject CenterTitleBackgroundPrefab { get; }"}</code> |  |
-| <Link id="m-centertitlemaxcharacters-2" /><code>{"int CenterTitleMaxCharacters { get; }"}</code> |  |
-| <Link id="m-centertitlemaxlines-2" /><code>{"int CenterTitleMaxLines { get; }"}</code> |  |
-| <Link id="m-displaytitlesincenter-2" /><code>{"bool DisplayTitlesInCenter { get; }"}</code> |  |
-| <Link id="m-islerpingtowardshandposition-2" /><code>{"bool IsLerpingTowardsHandPosition { get; }"}</code> |  |
-| <Link id="m-maxanglebeforelerp-2" /><code>{"float MaxAngleBeforeLerp { get; }"}</code> |  |
-| <Link id="m-maxbubbledistancesquared-2" /><code>{"float MaxBubbleDistanceSquared { get; }"}</code> |  |
-| <Link id="m-menuprefabdefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" MenuPrefabDefinition { get; }"}</code> |  |
-| <Link id="m-positionlerpspeedoverdistance-2" /><code>{"AnimationCurve PositionLerpSpeedOverDistance { get; }"}</code> |  |
-| <Link id="m-rotationlerpspeed-2" /><code>{"float RotationLerpSpeed { get; }"}</code> |  |
-| <Link id="m-spawnnestedradius-2" /><code>{"float SpawnNestedRadius { get; }"}</code> |  |
-| <Link id="m-spawnradius-2" /><code>{"float SpawnRadius { get; }"}</code> |  |
-| <Link id="m-targetdistancebeforelerpsquared-2" /><code>{"float TargetDistanceBeforeLerpSquared { get; }"}</code> |  |
+| <Link id="m-centertitlebackgrounddiameter-2" /><code>{"float CenterTitleBackgroundDiameter { get; }"}</code> | Size of the centre title background. |
+| <Link id="m-centertitlebackgroundprefab-2" /><code>{"GameObject CenterTitleBackgroundPrefab { get; }"}</code> | Background shown behind the centre title. |
+| <Link id="m-centertitlemaxcharacters-2" /><code>{"int CenterTitleMaxCharacters { get; }"}</code> | Most characters in a centre title. |
+| <Link id="m-centertitlemaxlines-2" /><code>{"int CenterTitleMaxLines { get; }"}</code> | Most lines in a centre title. |
+| <Link id="m-displaytitlesincenter-2" /><code>{"bool DisplayTitlesInCenter { get; }"}</code> | Whether bubble titles show in the middle of the menu. |
+| <Link id="m-islerpingtowardshandposition-2" /><code>{"bool IsLerpingTowardsHandPosition { get; }"}</code> | Whether the menu moves to follow the hand. |
+| <Link id="m-maxanglebeforelerp-2" /><code>{"float MaxAngleBeforeLerp { get; }"}</code> | Angle the controller can turn before the menu starts following. |
+| <Link id="m-maxbubbledistancesquared-2" /><code>{"float MaxBubbleDistanceSquared { get; }"}</code> | Squared distance a hand must be within to pick a bubble, probably. |
+| <Link id="m-menuprefabdefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" MenuPrefabDefinition { get; }"}</code> | Pooled prefab for the menu. |
+| <Link id="m-positionlerpspeedoverdistance-2" /><code>{"AnimationCurve PositionLerpSpeedOverDistance { get; }"}</code> | Follow speed by distance from the hand. |
+| <Link id="m-rotationlerpspeed-2" /><code>{"float RotationLerpSpeed { get; }"}</code> | How fast the menu turns to follow the controller. |
+| <Link id="m-spawnnestedradius-2" /><code>{"float SpawnNestedRadius { get; }"}</code> | Radius for bubbles of a nested menu. |
+| <Link id="m-spawnradius-2" /><code>{"float SpawnRadius { get; }"}</code> | Radius bubbles are placed at around the menu centre. |
+| <Link id="m-targetdistancebeforelerpsquared-2" /><code>{"float TargetDistanceBeforeLerpSquared { get; }"}</code> | Squared distance at which the menu stops following, probably. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxdistancebeforelerp-2" /><code>{"float MaxDistanceBeforeLerp(int nestedLevel)"}</code> |  |
-| <Link id="m-playselectmenueffects" /><code>{"void PlaySelectMenuEffects("}<Link to="/game-api/types/alta-player/quickaccessmenububble">{"QuickAccessMenuBubble"}</Link>{" bubble)"}</code> |  |
+| <Link id="m-maxdistancebeforelerp-2" /><code>{"float MaxDistanceBeforeLerp(int nestedLevel)"}</code> | Squared distance the hand can move before the menu follows; grows with nesting level. |
+| <Link id="m-playselectmenueffects" /><code>{"void PlaySelectMenuEffects("}<Link to="/game-api/types/alta-player/quickaccessmenububble">{"QuickAccessMenuBubble"}</Link>{" bubble)"}</code> | Plays the active or inactive select sound and effect for a bubble. |
 
 ## Used in
 

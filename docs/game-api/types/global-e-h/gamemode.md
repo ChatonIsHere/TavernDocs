@@ -1,6 +1,6 @@
 ---
 title: "GameMode"
-description: "Abstract base: IsClient, IsServer, ActivateAsync(), StopModeAsync. Subclasses: ServerHostingGameMode, JoinedServerGameMode, LocalTestGameMode."
+description: "Base for how the game runs (for example as a server or a client): starting up, loading the game scene and stopping."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **abstract class** in `Root.Township`, no namespace.
 
-Abstract base: `IsClient`, `IsServer`, `ActivateAsync()`, `StopModeAsync`. Subclasses: `ServerHostingGameMode`, `JoinedServerGameMode`, `LocalTestGameMode`.
+Base for how the game runs (for example as a server or a client): starting up, loading the game scene and stopping.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Derived types** [`JoinServerGameModeBase`](/game-api/types/global-i-l/joinservergamemodebase), [`ServerHostingGameMode`](/game-api/types/global-s/serverhostinggamemode)
@@ -28,24 +28,24 @@ Abstract base: `IsClient`, `IsServer`, `ActivateAsync()`, `StopModeAsync`. Subcl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | Shared logger. |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isclient" /><code>{"abstract bool IsClient { get; }"}</code> |  |
-| <Link id="m-isserver" /><code>{"abstract bool IsServer { get; }"}</code> |  |
+| <Link id="m-isclient" /><code>{"abstract bool IsClient { get; }"}</code> | Whether this mode runs a client. |
+| <Link id="m-isserver" /><code>{"abstract bool IsServer { get; }"}</code> | Whether this mode runs a server. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activateasync" /><code>{"abstract Task<bool> ActivateAsync()"}</code> |  |
-| <Link id="m-onstartfailed" /><code>{"virtual void OnStartFailed()"}</code> |  |
-| <Link id="m-onstartsucceeded" /><code>{"virtual void OnStartSucceeded()"}</code> |  |
-| <Link id="m-stopmodeasync" /><code>{"virtual Task StopModeAsync(string reason)"}</code> |  |
-| <Link id="m-loadandswaptogamesceneasync" /><code>{"protected virtual async Task LoadAndSwapToGameSceneAsync(int sceneIndex)"}</code> |  |
+| <Link id="m-activateasync" /><code>{"abstract Task<bool> ActivateAsync()"}</code> | Subclass: starts the mode. True on success. |
+| <Link id="m-onstartfailed" /><code>{"virtual void OnStartFailed()"}</code> | Called after a failed start. Empty by default. |
+| <Link id="m-onstartsucceeded" /><code>{"virtual void OnStartSucceeded()"}</code> | Called after a successful start. Empty by default. |
+| <Link id="m-stopmodeasync" /><code>{"virtual Task StopModeAsync(string reason)"}</code> | Stops the mode. The base clears every timeline entry. |
+| <Link id="m-loadandswaptogamesceneasync" /><code>{"protected virtual async Task LoadAndSwapToGameSceneAsync(int sceneIndex)"}</code> | Fades the local player to black, waits half a second and loads the game scene by index. |
 
 ## Used in
 

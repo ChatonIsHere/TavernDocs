@@ -1,6 +1,6 @@
 ---
 title: "ModHandshake"
-description: "A static class in TavernLib, TavernLib.Backend.Mods."
+description: "The server's mod snapshot for the auth port's ping, mods_list and the join's parity check, cached for 5 seconds."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `TavernLib`, `TavernLib.Backend.Mods`.
 
-A **static class** in `TavernLib`, `TavernLib.Backend.Mods`.
+The server's mod snapshot for the auth port's ping, `mods_list` and the join's parity check, cached for 5 seconds.
 
 - **Listed in** [TavernLib.Backend.Mods](/tavernlib-api/types/backend-mods)
 - **Nested types** [`Entry`](/tavernlib-api/types/backend-mods/modhandshake-entry)
@@ -30,6 +30,6 @@ A **static class** in `TavernLib`, `TavernLib.Backend.Mods`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-snapshot" /><code>{"static ValueTuple<string, List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{">> Snapshot(string gameDir)"}</code> |  |
+| <Link id="m-snapshot" /><code>{"static ValueTuple<string, List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{">> Snapshot(string gameDir)"}</code> | The enabled mods installed for `server`, sorted by id, the enabled untracked mods, and a hash of both. |
 | <Link id="m-buildsnapshot" /><code>{"private static ValueTuple<string, List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{">> BuildSnapshot(string gameDir)"}</code> |  |
 | <Link id="m-untrackedstamp" /><code>{"private static string UntrackedStamp(string gameDir, "}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{" mod)"}</code> |  |

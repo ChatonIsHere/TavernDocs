@@ -1,6 +1,6 @@
 ---
 title: "RoomFixes"
-description: "class RoomFixes in Root.Township."
+description: "Cave map generator part that tidies open areas: fills rooms below a minimum size with wall, then joins the rest with corridors."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RoomFixes
 
 A **class** in `Root.Township`, `Alta.Caves.PluginParts`.
+
+Cave map generator part that tidies open areas: fills rooms below a minimum size with wall, then joins the rest with corridors. Settings only; the work is done in `RoomFixesInstance`.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`MapGeneratorPart`](/game-api/types/alta-world-generation/mapgeneratorpart)
@@ -40,20 +42,20 @@ A **class** in `Root.Township`, `Alta.Caves.PluginParts`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-linethreshold-2" /><code>{"float LineThreshold { get; }"}</code> |  |
-| <Link id="m-manmadelayer-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" ManMadeLayer { get; }"}</code> |  |
-| <Link id="m-maximumcorridorwidth-2" /><code>{"float MaximumCorridorWidth { get; }"}</code> |  |
-| <Link id="m-minimumcorridorwidth-2" /><code>{"float MinimumCorridorWidth { get; }"}</code> |  |
-| <Link id="m-minimumroomsize-2" /><code>{"int MinimumRoomSize { get; }"}</code> |  |
-| <Link id="m-roomvalue" /><code>{"int RoomValue { get; }"}</code> |  |
-| <Link id="m-wallvalue" /><code>{"int WallValue { get; }"}</code> |  |
-| <Link id="m-yindex-2" /><code>{"int YIndex { get; }"}</code> |  |
+| <Link id="m-linethreshold-2" /><code>{"float LineThreshold { get; }"}</code> | Threshold passed to the corridor line drawing, together with the man-made layer. |
+| <Link id="m-manmadelayer-2" /><code><Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" ManMadeLayer { get; }"}</code> | Layer plugin passed to corridor drawing, probably to mark corridors as man-made. |
+| <Link id="m-maximumcorridorwidth-2" /><code>{"float MaximumCorridorWidth { get; }"}</code> | Largest random corridor width. |
+| <Link id="m-minimumcorridorwidth-2" /><code>{"float MinimumCorridorWidth { get; }"}</code> | Smallest random corridor width. |
+| <Link id="m-minimumroomsize-2" /><code>{"int MinimumRoomSize { get; }"}</code> | Open areas with fewer cells than this are filled with `WallValue`. |
+| <Link id="m-roomvalue" /><code>{"int RoomValue { get; }"}</code> | Value written into cells that are room or corridor. |
+| <Link id="m-wallvalue" /><code>{"int WallValue { get; }"}</code> | Value written into cells of rooms that are too small. |
+| <Link id="m-yindex-2" /><code>{"int YIndex { get; }"}</code> | Which Y slice of the layer is processed. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getinstance" /><code>{"override "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> |  |
+| <Link id="m-getinstance" /><code>{"override "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> | Creates the `RoomFixesInstance` that runs this part on a plugin. |
 
 ## Used in
 

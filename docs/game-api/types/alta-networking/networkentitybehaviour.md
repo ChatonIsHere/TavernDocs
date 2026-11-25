@@ -1,6 +1,6 @@
 ---
 title: "NetworkEntityBehaviour"
-description: "The base class for networked components. Entity gets the NetworkEntity. Overridable:"
+description: "Base class for game components that live on a NetworkEntity."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **abstract class** in `Root.Township`, `Alta.Networking`.
 
-The base class for networked components. `Entity` gets the `NetworkEntity`. Overridable:
+Base class for game components that live on a `NetworkEntity`. Override its hooks to run code when the entity is set up, spawned by the server, or sent to a player.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MonoBehaviour`, [`INetworkEntityBehaviour`](/game-api/types/alta-networking/inetworkentitybehaviour)
@@ -36,13 +36,13 @@ The base class for networked components. `Entity` gets the `NetworkEntity`. Over
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity-2" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> |  |
+| <Link id="m-entity-2" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | The `NetworkEntity` on the same GameObject, filled in at bake time. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"virtual void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"virtual void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-ondisconnected" /><code>{"virtual void OnDisconnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
+| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | Called on both sides when the entity is initialized. Empty by default. |
+| <Link id="m-initializeasserver" /><code>{"virtual void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: called once when the server sets up the entity, whether freshly spawned or loaded from a save, with its `SpawnData`. Empty by default. |
+| <Link id="m-onconnected" /><code>{"virtual void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: called when the entity is sent to a player, so you can send that player any extra state. Empty by default. |
+| <Link id="m-ondisconnected" /><code>{"virtual void OnDisconnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: called when the entity stops being synced to a player. Empty by default. |

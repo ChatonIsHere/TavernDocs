@@ -1,6 +1,6 @@
 ---
 title: "LocomotionFunction"
-description: "enum LocomotionFunction in Root.Township."
+description: "The kinds of player movement (teleport, smooth, reposition, rotation, anchor distance, recovery, forced), used to tell which locomotion system is acting."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LocomotionFunction
 
 An **enum** in `Root.Township`, no namespace.
+
+The kinds of player movement (teleport, smooth, reposition, rotation, anchor distance, recovery, forced), used to tell which locomotion system is acting.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 

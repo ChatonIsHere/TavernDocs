@@ -1,6 +1,6 @@
 ---
 title: "ProgressionSlot"
-description: "A node in a tree: uint Hash, uint Cost, List<uint> Dependencies (slot hashes), ProfessionSkill Skill, ProgressionPath Path."
+description: "One slot in a profession skill tree: a skill, its cost in points, and the slots it depends on."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-A node in a tree: `uint Hash`, `uint Cost`, `List<uint> Dependencies` (slot hashes), `ProfessionSkill Skill`, `ProgressionPath Path`.
+One slot in a profession skill tree: a skill, its cost in points, and the slots it depends on. The tree's `Validate` fills in the hash and path.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Documented in** [Skills and unlocks](/game-api/game-systems/skills-and-unlocks)
@@ -42,24 +42,24 @@ A node in a tree: `uint Hash`, `uint Cost`, `List<uint> Dependencies` (slot hash
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cost-2" /><code>{"uint Cost { get; }"}</code> |  |
-| <Link id="m-dependencies-2" /><code>{"List<uint> Dependencies { get; }"}</code> |  |
-| <Link id="m-hash-2" /><code>{"uint Hash { get; }"}</code> |  |
-| <Link id="m-inheritslots-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> InheritSlots { get; }"}</code> |  |
-| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-path" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" Path { get; set; }"}</code> |  |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> |  |
-| <Link id="m-skill-2" /><code><Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" Skill { get; }"}</code> |  |
-| <Link id="m-sloticon-2" /><code>{"Texture2D SlotIcon { get; }"}</code> |  |
+| <Link id="m-cost-2" /><code>{"uint Cost { get; }"}</code> | Skill points needed to buy it. Default 1. |
+| <Link id="m-dependencies-2" /><code>{"List<uint> Dependencies { get; }"}</code> | Hashes of the slots that must come first. |
+| <Link id="m-hash-2" /><code>{"uint Hash { get; }"}</code> | Identifier saved with a player's progress. Made from the skill hash and its dependencies. |
+| <Link id="m-inheritslots-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> InheritSlots { get; }"}</code> | Slots that depend on this one. |
+| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> | Display name. Defaults to the skill's name. |
+| <Link id="m-path" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" Path { get; set; }"}</code> | The progression path (such as mining or forging) this slot belongs to. |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> | Position of the slot on the skill tree board. |
+| <Link id="m-skill-2" /><code><Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" Skill { get; }"}</code> | The skill this slot unlocks. |
+| <Link id="m-sloticon-2" /><code>{"Texture2D SlotIcon { get; }"}</code> | Icon shown for the slot. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addinherit" /><code>{"void AddInherit("}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{" tree)"}</code> |  |
-| <Link id="m-forcechange" /><code>{"void ForceChange()"}</code> |  |
-| <Link id="m-getindentlevel" /><code>{"int GetIndentLevel("}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{" skillTree)"}</code> |  |
-| <Link id="m-validate" /><code>{"void Validate("}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{" skillTree)"}</code> |  |
+| <Link id="m-addinherit" /><code>{"void AddInherit("}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{" tree)"}</code> | Registers this slot as a follow-on of each slot it depends on. |
+| <Link id="m-forcechange" /><code>{"void ForceChange()"}</code> | Nudges the hash by a random amount, giving the slot a new identity. |
+| <Link id="m-getindentlevel" /><code>{"int GetIndentLevel("}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{" skillTree)"}</code> | Depth in the tree: one more than its deepest dependency. Cached. |
+| <Link id="m-validate" /><code>{"void Validate("}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{" skillTree)"}</code> | Fills in a missing hash and name, sets the path from the tree and recalculates the indent level. |
 
 ## Used in
 

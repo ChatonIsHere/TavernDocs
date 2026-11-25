@@ -1,6 +1,6 @@
 ---
 title: "ServerBoard"
-description: "class ServerBoard in Root.Township."
+description: "A server list board in the main menu (public, my servers, open or discover)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerBoard
 
 A **class** in `Root.Township`, no namespace.
+
+A server list board in the main menu (public, my servers, open or discover). Fetches its list from the Alta API every `updateInterval` seconds while logged in, filters and shows it. Client only.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`
@@ -48,28 +50,28 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-display-2" /><code><Link to="/game-api/types/global-s/serverselectiondisplay">{"ServerSelectionDisplay"}</Link>{" Display { get; }"}</code> |  |
-| <Link id="m-headingtext-2" /><code>{"string HeadingText { get; }"}</code> |  |
-| <Link id="m-isemptyoronlytutorial" /><code>{"bool IsEmptyOrOnlyTutorial { get; }"}</code> |  |
-| <Link id="m-type-2" /><code><Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{" Type { get; }"}</code> |  |
+| <Link id="m-display-2" /><code><Link to="/game-api/types/global-s/serverselectiondisplay">{"ServerSelectionDisplay"}</Link>{" Display { get; }"}</code> | The selection display that holds the server elements. |
+| <Link id="m-headingtext-2" /><code>{"string HeadingText { get; }"}</code> | Heading shown for this board. |
+| <Link id="m-isemptyoronlytutorial" /><code>{"bool IsEmptyOrOnlyTutorial { get; }"}</code> | True if every server in the last list is on scene index 1 (the tutorial), or the list is empty. |
+| <Link id="m-type-2" /><code><Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{" Type { get; }"}</code> | Which API list this board shows. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onrefreshfinished" /><code>{"event Action OnRefreshFinished"}</code> |  |
-| <Link id="m-selectedchanged" /><code>{"event "}<Link to="/game-api/types/global-s/selectedelementchanged">{"SelectedElementChanged"}</Link>{" SelectedChanged"}</code> |  |
+| <Link id="m-onrefreshfinished" /><code>{"event Action OnRefreshFinished"}</code> | Raised once after the next refresh, then cleared. Add a handler again for each refresh. |
+| <Link id="m-selectedchanged" /><code>{"event "}<Link to="/game-api/types/global-s/selectedelementchanged">{"SelectedElementChanged"}</Link>{" SelectedChanged"}</code> | Raised when the selected server entry changes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disableupdate" /><code>{"void DisableUpdate()"}</code> |  |
-| <Link id="m-refreshserverslist" /><code>{"async Task RefreshServersList()"}</code> |  |
-| <Link id="m-resumeupdate" /><code>{"void ResumeUpdate()"}</code> |  |
-| <Link id="m-selectserver" /><code>{"void SelectServer("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> |  |
-| <Link id="m-setactive" /><code>{"void SetActive(bool isActive)"}</code> |  |
-| <Link id="m-updatevalue" /><code>{"void UpdateValue(float value)"}</code> |  |
+| <Link id="m-disableupdate" /><code>{"void DisableUpdate()"}</code> | Stops refreshing and hides the server entries, showing the joining text instead. |
+| <Link id="m-refreshserverslist" /><code>{"async Task RefreshServersList()"}</code> | Fetches this board type's servers from the API, then filters and rebuilds the list. |
+| <Link id="m-resumeupdate" /><code>{"void ResumeUpdate()"}</code> | Hides the joining text, shows the entries again and restarts refreshing. |
+| <Link id="m-selectserver" /><code>{"void SelectServer("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | Selects the entry for the given server. |
+| <Link id="m-setactive" /><code>{"void SetActive(bool isActive)"}</code> | Shows or hides the board and starts or stops refreshing. |
+| <Link id="m-updatevalue" /><code>{"void UpdateValue(float value)"}</code> | Adds to the display's scroll value. |
 | <Link id="m-filterservers" /><code>{"private void FilterServers()"}</code> |  |
 | <Link id="m-loadservers-2" /><code>{"private IEnumerator LoadServers() (iterator)"}</code> |  |
 | <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "RecentPlayerActionPage"
-description: "class RecentPlayerActionPage in Root.Township."
+description: "Social tablet page for one recent player: friend, unfriend, mute, report, ban and unban buttons."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RecentPlayerActionPage
 
 A **class** in `Root.Township`, no namespace.
+
+Social tablet page for one recent player: friend, unfriend, mute, report, ban and unban buttons. Actions run on the client through the Alta API; reports and bans are also sent to the server, which raises console events.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** [`PanelComponent`](/game-api/types/alta-menus/panelcomponent)
@@ -65,17 +67,17 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-banplayer" /><code>{"async void BanPlayer()"}</code> |  |
-| <Link id="m-denyfriendrequest" /><code>{"async void DenyFriendRequest()"}</code> |  |
-| <Link id="m-initsync" /><code>{"void InitSync()"}</code> |  |
-| <Link id="m-inject" /><code>{"void Inject("}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> |  |
-| <Link id="m-makefriendrequest" /><code>{"async void MakeFriendRequest()"}</code> |  |
-| <Link id="m-reportplayer" /><code>{"async void ReportPlayer()"}</code> |  |
-| <Link id="m-respondfriendrequest" /><code>{"async void RespondFriendRequest()"}</code> |  |
-| <Link id="m-setreportreason" /><code>{"void SetReportReason(int reason)"}</code> |  |
-| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{" recentPlayer)"}</code> |  |
-| <Link id="m-unbanplayer" /><code>{"async void UnBanPlayer()"}</code> |  |
-| <Link id="m-unfriend" /><code>{"void Unfriend()"}</code> |  |
+| <Link id="m-banplayer" /><code>{"async void BanPlayer()"}</code> | Bans the player from the current server through the API and tells the server, which raises `SocialTabletPlayerBanned`. |
+| <Link id="m-denyfriendrequest" /><code>{"async void DenyFriendRequest()"}</code> | Declines the player's friend request by removing the friendship. |
+| <Link id="m-initsync" /><code>{"void InitSync()"}</code> | Creates the friendship and tablet action messages on the social tablet's entity. |
+| <Link id="m-inject" /><code>{"void Inject("}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> | Receives the analytics service by dependency injection. |
+| <Link id="m-makefriendrequest" /><code>{"async void MakeFriendRequest()"}</code> | Sends a friend request (or accepts theirs) and shows the sent page. |
+| <Link id="m-reportplayer" /><code>{"async void ReportPlayer()"}</code> | Reports the player with the chosen reason and tells the server, which raises `SocialTabletPlayerReported`. |
+| <Link id="m-respondfriendrequest" /><code>{"async void RespondFriendRequest()"}</code> | Accepts the player's friend request. |
+| <Link id="m-setreportreason" /><code>{"void SetReportReason(int reason)"}</code> | Sets the report reason from a `ReportType` number. |
+| <Link id="m-setup" /><code>{"void Setup("}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{" recentPlayer)"}</code> | Shows a recent player: fills the elements and picks the right friend, mute and ban buttons. Ban buttons need the Ban group permission. |
+| <Link id="m-unbanplayer" /><code>{"async void UnBanPlayer()"}</code> | Unbans the player from the current server and tells the server. |
+| <Link id="m-unfriend" /><code>{"void Unfriend()"}</code> | Removes the friendship and tells the other player to refresh their friends list. |
 | <Link id="m-addfriend" /><code>{"private async Task<bool> AddFriend()"}</code> |  |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-banplayertask" /><code>{"private async Task BanPlayerTask()"}</code> |  |

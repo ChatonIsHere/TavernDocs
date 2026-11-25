@@ -1,6 +1,6 @@
 ---
 title: "LogicIntSender"
-description: "class LogicIntSender in Root.Township."
+description: "Logic sender that holds an int and passes changes to linked receivers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LogicIntSender
 
 A **class** in `Root.Township`, `Alta.Logic`.
+
+Logic sender that holds an int and passes changes to linked receivers.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`LogicValueSender<LogicIntSaveData>`](/game-api/types/alta-items/logicvaluesender-tdata)
@@ -27,15 +29,15 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentvalue" /><code>{"int currentValue"}</code> |  |
+| <Link id="m-currentvalue" /><code>{"int currentValue"}</code> | The current int value. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatevalue" /><code>{"void UpdateValue(int value)"}</code> |  |
-| <Link id="m-readdatavalue" /><code>{"protected override void ReadDataValue()"}</code> |  |
-| <Link id="m-writedatavalue" /><code>{"protected override void WriteDataValue()"}</code> |  |
+| <Link id="m-updatevalue" /><code>{"void UpdateValue(int value)"}</code> | Sets the value and notifies linked receivers if it changed. |
+| <Link id="m-readdatavalue" /><code>{"protected override void ReadDataValue()"}</code> | Copies the value from the shared logic data. |
+| <Link id="m-writedatavalue" /><code>{"protected override void WriteDataValue()"}</code> | Copies the value into the shared logic data. |
 
 ## Used in
 

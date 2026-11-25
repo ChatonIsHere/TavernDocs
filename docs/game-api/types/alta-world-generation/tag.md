@@ -1,6 +1,6 @@
 ---
 title: "Tag"
-description: "class Tag in Root.Township."
+description: "A tag asset for the PAGaC construction system (under PAGaC/Construction/Tags), with a colour for display."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Tag
 
 A **class** in `Root.Township`, `Alta.PAGaC`.
+
+A tag asset for the PAGaC construction system (under `PAGaC/Construction/Tags`), with a colour for display.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`HashedGeneralValue<Tag>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -33,13 +35,13 @@ A **class** in `Root.Township`, `Alta.PAGaC`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-color" /><code>{"Color Color { get; }"}</code> |  |
+| <Link id="m-color" /><code>{"Color Color { get; }"}</code> | Display colour. Picked at random in the editor if left black. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Gives the tag a random colour if it is still black. |
 
 ## Used in
 

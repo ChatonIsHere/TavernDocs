@@ -1,6 +1,6 @@
 ---
 title: "WhitelistRequestList.WhitelistRequest"
-description: "A class in TavernLib, TavernLib.Backend.Server.Configs."
+description: "One whitelist application."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
-A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
+One whitelist application.
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/tavernlib-api/types/backend-server-configs)
 - **Nested in** [`WhitelistRequestList`](/tavernlib-api/types/backend-server-configs/whitelistrequestlist)
@@ -28,9 +28,9 @@ A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-appliedat" /><code>{"string AppliedAt { get; set; }"}</code> |  |
-| <Link id="m-ip" /><code>{"string Ip { get; set; }"}</code> |  |
-| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> |  |
+| <Link id="m-appliedat" /><code>{"string AppliedAt { get; set; }"}</code> | When it was filed, as UTC ISO 8601 text. |
+| <Link id="m-ip" /><code>{"string Ip { get; set; }"}</code> | The address it came from. |
+| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | The name that applied. |
 | <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |  |
 
 ## Used in

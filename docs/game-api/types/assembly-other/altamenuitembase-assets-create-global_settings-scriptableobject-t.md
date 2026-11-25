@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<T>"
-description: "Editor menu marker: a settings asset's nested Create class inherits it to appear under Assets/Create/Global Settings. Does nothing at runtime."
+description: "Editor menu marker: a settings asset's nested Create class inherits it to appear under Assets/Create/Global Settings."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

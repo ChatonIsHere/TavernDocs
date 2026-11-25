@@ -12,7 +12,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Combat
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`DeadPlugin`](/game-api/types/alta-intelligence/deadplugin) | class | `AtmospherePlugin` | 3 |  |
 | [`DeathAnimationSettings`](/game-api/types/alta-intelligence/deathanimationsettings) | class | `ScriptableObject` | 7 |  |
@@ -21,7 +21,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Creatures
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`DeathEffect`](/game-api/types/alta-intelligence/deatheffect) | class | `MonoBehaviour` | 1 |  |
 | [`DeathEvent`](/game-api/types/alta-intelligence/deathevent) | class | `AltaEvent<DeathEffect, DeathUnityEvent>` | 0 |  |
@@ -31,7 +31,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Intelligence
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`Action<TAgent>`](/game-api/types/alta-intelligence/action-tagent) | abstract class | `IAction<TAgent>`, `IAction` | 9 | [Actions and decisions](../creatures/actions-and-decisions.md), [Docks](../items/docks.md) |
 | [`ActionComponent`](/game-api/types/alta-intelligence/actioncomponent) | abstract class | `MonoBehaviour`, `IActionSettings` | 9 | [Actions and decisions](../creatures/actions-and-decisions.md#actioncomponent): The settings every action has: |
@@ -58,7 +58,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ActiveIdle`](/game-api/types/alta-intelligence/activeidle) | class | `BasicActiveAction<Agent, AgentIdleSettings>` | 2 |  |
 | [`ActiveInteractApproach`](/game-api/types/alta-intelligence/activeinteractapproach) | class | `ActiveNavigation<ActiveInteractApproach, Agent, AgentInteractApproachSettings>` | 1 |  |
 | [`ActiveJumpAt`](/game-api/types/alta-intelligence/activejumpat) | class | `BasicActiveAction<Agent, AgentJumpAtSettings>` | 1 |  |
-| [`ActiveNavigation<TThis, TAgent, TSettings>`](/game-api/types/alta-intelligence/activenavigation-tthis-tagent-tsettings) | class | `BasicActiveAction<TAgent, TSettings>` | 1 |  |
+| [`ActiveNavigation<TThis, TAgent, TSettings>`](/game-api/types/alta-intelligence/activenavigation-tthis-tagent-tsettings) | class | `BasicActiveAction<TAgent, TSettings>` | 1 | Base for creature actions that walk the agent to its target. Applies speed and acceleration from the settings and finishes when the navigator reaches the target. |
 | [`ActiveNest`](/game-api/types/alta-intelligence/activenest) | class | `ActiveNavigation<ActiveNest, Agent, AgentNestSettings>` | 1 |  |
 | [`ActiveRegainControl`](/game-api/types/alta-intelligence/activeregaincontrol) | class | `BasicActiveAction<Agent, AgentRegainControlSettings>` | 1 | [Actions and decisions](../creatures/actions-and-decisions.md) |
 | [`ActiveSchmeecheeFlee`](/game-api/types/alta-intelligence/activeschmeecheeflee) | class | `BasicActiveAction<Schmeechee, SchmeecheeFleeSettings>` | 1 |  |
@@ -75,7 +75,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`AgentCircleCloserSettings`](/game-api/types/alta-intelligence/agentcircleclosersettings) | class | `AgentMoveCloserSettings` | 1 |  |
 | [`AgentCircleRepositionSettings`](/game-api/types/alta-intelligence/agentcirclerepositionsettings) | class | `TimedActionComponent` | 6 |  |
 | [`AgentCircleTargetSettings`](/game-api/types/alta-intelligence/agentcircletargetsettings) | class | `RandomTimedActionComponent` | 3 |  |
-| [`AgentCrawlSettings`](/game-api/types/alta-intelligence/agentcrawlsettings) | class | `RandomTimedActionComponent` | 8 |  |
+| [`AgentCrawlSettings`](/game-api/types/alta-intelligence/agentcrawlsettings) | class | `RandomTimedActionComponent` | 8 | Action settings for a creature crawling over surfaces for a random duration (`ActiveCrawl`). Sits under an action set on the creature prefab. |
 | [`AgentDelayEnterSetSettings`](/game-api/types/alta-intelligence/agentdelayentersetsettings) | class | `ActionComponent` | 2 |  |
 | [`AgentDeletedSettings`](/game-api/types/alta-intelligence/agentdeletedsettings) | class | `ActionComponent` | 0 |  |
 | [`AgentDisabledSettings`](/game-api/types/alta-intelligence/agentdisabledsettings) | class | `ActionComponent` | 0 |  |
@@ -83,11 +83,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`AgentEatSettings`](/game-api/types/alta-intelligence/agenteatsettings) | class | `ActionComponent` | 2 |  |
 | [`AgentFaceTargetSettings`](/game-api/types/alta-intelligence/agentfacetargetsettings) | class | `ActionComponent` | 1 |  |
 | [`AgentFollowSettings`](/game-api/types/alta-intelligence/agentfollowsettings) | class | `AgentNavigationSettings` | 4 |  |
-| [`AgentIdleSettings`](/game-api/types/alta-intelligence/agentidlesettings) | class | `RandomTimedActionComponent` | 10 |  |
+| [`AgentIdleSettings`](/game-api/types/alta-intelligence/agentidlesettings) | class | `RandomTimedActionComponent` | 10 | Settings for a creature's idle action: how long it lasts, whether it faces or follows its target during set time windows, and a chance to wander to a new spot. Its action is `ActiveIdle`. |
 | [`AgentInteractApproachSettings`](/game-api/types/alta-intelligence/agentinteractapproachsettings) | class | `AgentNavigationSettings` | 7 |  |
 | [`AgentJumpAtSettings`](/game-api/types/alta-intelligence/agentjumpatsettings) | class | `RandomTimedActionComponent` | 5 |  |
 | [`AgentMoveCloserSettings`](/game-api/types/alta-intelligence/agentmoveclosersettings) | class | `ActionComponent` | 3 |  |
-| [`AgentNavigationSettings`](/game-api/types/alta-intelligence/agentnavigationsettings) | abstract class | `ActionComponent` | 5 |  |
+| [`AgentNavigationSettings`](/game-api/types/alta-intelligence/agentnavigationsettings) | abstract class | `ActionComponent` | 5 | Base for a creature action component with movement settings for getting to its target. |
 | [`AgentNestSettings`](/game-api/types/alta-intelligence/agentnestsettings) | class | `AgentNavigationSettings` | 6 |  |
 | [`AgentRegainControlSettings`](/game-api/types/alta-intelligence/agentregaincontrolsettings) | class | `RandomTimedActionComponent` | 4 |  |
 | [`AgentRollUpInPlace`](/game-api/types/alta-intelligence/agentrollupinplace) | class | `BasicActiveAction<Agent, AgentRollUpInPlaceSettings>` | 1 | [Actions and decisions](../creatures/actions-and-decisions.md) |
@@ -115,14 +115,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`AttackDirectionAnimationFloatSettings.FloatAnimation`](/game-api/types/alta-intelligence/attackdirectionanimationfloatsettings-floatanimation) | class | `IAttackDirectionAnimation` | 0 |  |
 | [`AttackDirectionAnimationLayerLerpSettings`](/game-api/types/alta-intelligence/attackdirectionanimationlayerlerpsettings) | class | `AttackDirectionAnimationSettings` | 0 |  |
 | [`AttackDirectionAnimationLayerLerpSettings.LayerAnimation`](/game-api/types/alta-intelligence/attackdirectionanimationlayerlerpsettings-layeranimation) | class | `IAttackDirectionAnimation` | 0 |  |
-| [`AttackDirectionAnimationSettings`](/game-api/types/alta-intelligence/attackdirectionanimationsettings) | abstract class | `ScriptableObject` | 2 |  |
+| [`AttackDirectionAnimationSettings`](/game-api/types/alta-intelligence/attackdirectionanimationsettings) | abstract class | `ScriptableObject` | 2 | Asset that makes an attack direction animation helper for a creature's animator parameter. |
 | [`AttackDirectionCore`](/game-api/types/alta-intelligence/attackdirectioncore) | class |  | 3 |  |
-| [`AttackDirectionCoreSettings`](/game-api/types/alta-intelligence/attackdirectioncoresettings) | class | `ScriptableObject` | 8 |  |
+| [`AttackDirectionCoreSettings`](/game-api/types/alta-intelligence/attackdirectioncoresettings) | class | `ScriptableObject` | 8 | Settings asset that makes a creature animate in response to where its target is attacking from (above or either side). `GetCore` makes the runtime `AttackDirectionCore`. |
 | [`AttackDirectionReactAIHook`](/game-api/types/alta-intelligence/attackdirectionreactaihook) | class | `AiHook` | 0 | [Actions and decisions](../creatures/actions-and-decisions.md): Drives animation from the direction of the target's attacks. |
 | [`AttackParameters`](/game-api/types/alta-intelligence/attackparameters) | struct |  | 3 |  |
 | [`Babu`](/game-api/types/alta-intelligence/babu) | class | `Agent<Babu>`, `IHasViewCone`, `IInteractAgent`, +4 more | 5 | [Other creatures](../creatures/other-creatures.md#babu-dragonfly-deathfern), [Creature data](../creatures/creature-data.md) |
-| [`BaseAtom`](/game-api/types/alta-intelligence/baseatom) | class | `Term` | 5 |  |
-| [`BaseAtom.Definition`](/game-api/types/alta-intelligence/baseatom-definition) | class | `IAtomDefinition` | 6 |  |
+| [`BaseAtom`](/game-api/types/alta-intelligence/baseatom) | class | `Term` | 5 | A named constant term in the AI's logic system (predicates, compounds and variables used for creature reasoning). Its nested `Definition` pairs a compound with a goal and a weighting. |
+| [`BaseAtom.Definition`](/game-api/types/alta-intelligence/baseatom-definition) | class | `IAtomDefinition` | 6 | A rule in the creature knowledge system: when the compound holds, the goal predicate follows, with a weight that fades as the event it came from ages. |
 | [`BasicAction<TAgent, TActive, TSettings>`](/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings) | class | `Action<TAgent>` | 5 | [Actions and decisions](../creatures/actions-and-decisions.md) |
 | [`BasicActiveAction<TAgent, TSettings>`](/game-api/types/alta-intelligence/basicactiveaction-tagent-tsettings) | abstract class | `BasicActiveAction<TAgent>` | 2 | [Actions and decisions](../creatures/actions-and-decisions.md) |
 | [`BasicActiveAction<TAgent>`](/game-api/types/alta-intelligence/basicactiveaction-tagent) | abstract class | `IBasicActiveAction<TAgent>`, `IActiveAction` | 10 | [Actions and decisions](../creatures/actions-and-decisions.md) |
@@ -135,7 +135,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`Character`](/game-api/types/alta-intelligence/character) | class |  | 5 |  |
 | [`CollisionImpulseReader`](/game-api/types/alta-intelligence/collisionimpulsereader) | class | `MonoBehaviour` | 0 |  |
 | [`Compound`](/game-api/types/alta-intelligence/compound) | class | `Predicate`, `ITerm` | 2 |  |
-| [`CompoundPart`](/game-api/types/alta-intelligence/compoundpart) | class | `Term`, `ICompoundPart` | 6 |  |
+| [`CompoundPart`](/game-api/types/alta-intelligence/compoundpart) | class | `Term`, `ICompoundPart` | 6 | A list of terms (a first term and the rest) in the AI's logic system, used when unifying compounds. |
 | [`CreateTargetOperation`](/game-api/types/alta-intelligence/createtargetoperation) | static class |  | 12 |  |
 | [`DataAtom<T>`](/game-api/types/alta-intelligence/dataatom-t) | class | `Atom`, `IData<T>`, `ITerm` | 4 |  |
 | [`Day`](/game-api/types/alta-intelligence/day) | class |  | 4 |  |
@@ -148,7 +148,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`DistanceSquaredSense.Create`](/game-api/types/alta-intelligence/distancesquaredsense-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Creatures.ScriptableObject<DistanceSquaredSense>` | 0 |  |
 | [`Dragonfly`](/game-api/types/alta-intelligence/dragonfly) | class | `Agent<Dragonfly>`, `IHasViewCone` | 4 | [Other creatures](../creatures/other-creatures.md#babu-dragonfly-deathfern), [Creature data](../creatures/creature-data.md): Dragonfly, and the Dais animals: Dais Base, Dais Variant, Dais Red, Antler, Antler Red, Child and Child Red Variant |
 | [`EmptyAttackDirectionAnimation`](/game-api/types/alta-intelligence/emptyattackdirectionanimation) | class | `IAttackDirectionAnimation` | 1 |  |
-| [`Event`](/game-api/types/alta-intelligence/event) | class |  | 7 |  |
+| [`Event`](/game-api/types/alta-intelligence/event) | class |  | 7 | One remembered event in an AI's `History`: some knowledge atoms that fade over a lifetime. Events form a linked list of the active ones. |
 | [`EventChannelAiHook`](/game-api/types/alta-intelligence/eventchannelaihook) | class | `AiHook` | 0 | [Actions and decisions](../creatures/actions-and-decisions.md): Fires a channel event when the action starts and another when it ends. |
 | [`EventChannelTimedAiHook`](/game-api/types/alta-intelligence/eventchanneltimedaihook) | class | `AiHook` | 0 | [Actions and decisions](../creatures/actions-and-decisions.md): Fires channel events at set delays after the action starts. |
 | [`FaceTarget`](/game-api/types/alta-intelligence/facetarget) | class | `MonoBehaviour`, `INetworkSerialized` | 5 |  |
@@ -166,7 +166,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`GreaterGotera`](/game-api/types/alta-intelligence/greatergotera) | class | `Agent<GreaterGotera>`, `IAgent`, `ITarget`, +2 more | 3 | [Common creatures](../creatures/common-creatures.md#gotera-and-greatergotera), [Creature data](../creatures/creature-data.md) |
 | [`Grounded`](/game-api/types/alta-intelligence/grounded) | class | `TargetOperation` | 3 |  |
 | [`GroundedOperation`](/game-api/types/alta-intelligence/groundedoperation) | class | `TargetOperationComponent` | 1 |  |
-| [`History`](/game-api/types/alta-intelligence/history) | class |  | 11 |  |
+| [`History`](/game-api/types/alta-intelligence/history) | class |  | 11 | A timeline of days and knowledge events for the experimental AI reasoning system. Time is in days (1.0 is one day). Only created by the test `Intelligence` component. |
 | [`HookAction`](/game-api/types/alta-intelligence/hookaction) | internal struct |  | 2 |  |
 | [`HookEventChannel`](/game-api/types/alta-intelligence/hookeventchannel) | enum |  | 21 |  |
 | [`HurtSense`](/game-api/types/alta-intelligence/hurtsense) | class | `Sense` | 1 | [Targets and senses](../creatures/targets-and-senses.md): `agent.Hurt` for that target. |
@@ -174,21 +174,21 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`IAction`](/game-api/types/alta-intelligence/iaction) | interface |  | 8 | [Actions and decisions](../creatures/actions-and-decisions.md) |
 | [`IAction<in TAgent>`](/game-api/types/alta-intelligence/iaction-intagent) | interface | `IAction` | 1 | [Actions and decisions](../creatures/actions-and-decisions.md) |
 | [`IActionDecider`](/game-api/types/alta-intelligence/iactiondecider) | interface |  | 3 |  |
-| [`IActionSettings`](/game-api/types/alta-intelligence/iactionsettings) | interface |  | 9 |  |
+| [`IActionSettings`](/game-api/types/alta-intelligence/iactionsettings) | interface |  | 9 | Settings every AI action has: its weighting and the rules for cancelling it. Implemented by `ActionComponent`. |
 | [`IActionTarget`](/game-api/types/alta-intelligence/iactiontarget) | interface |  | 2 |  |
 | [`IActiveAction`](/game-api/types/alta-intelligence/iactiveaction) | interface |  | 8 | [Actions and decisions](../creatures/actions-and-decisions.md) |
-| [`IAgent`](/game-api/types/alta-intelligence/iagent) | interface | `ITarget`, `ITargetPointer`, `INetworkEntityBehaviour` | 24 |  |
+| [`IAgent`](/game-api/types/alta-intelligence/iagent) | interface | `ITarget`, `ITargetPointer`, `INetworkEntityBehaviour` | 24 | The interface for an AI creature's brain, implemented by `Agent`. Decisions and actions run on the server; the server registers live agents with `AgentUpdater`. |
 | [`IAgentDebugger`](/game-api/types/alta-intelligence/iagentdebugger) | interface |  | 0 |  |
 | [`IAiHook`](/game-api/types/alta-intelligence/iaihook) | interface |  | 1 |  |
-| [`IAtomDefinition`](/game-api/types/alta-intelligence/iatomdefinition) | interface |  | 4 |  |
-| [`IAttackDirectionAnimation`](/game-api/types/alta-intelligence/iattackdirectionanimation) | interface |  | 4 |  |
+| [`IAtomDefinition`](/game-api/types/alta-intelligence/iatomdefinition) | interface |  | 4 | A piece of knowledge in the creature knowledge system: a compound and a goal, with a weight that fades as the event it came from ages. |
+| [`IAttackDirectionAnimation`](/game-api/types/alta-intelligence/iattackdirectionanimation) | interface |  | 4 | One animator parameter (bool, float or layer weight) that shows which way a creature is about to attack. `AttackDirectionCore` drives three of them: layer, side and up. |
 | [`IBasicActiveAction<in TAgent>`](/game-api/types/alta-intelligence/ibasicactiveaction-intagent) | interface | `IActiveAction` | 1 |  |
 | [`ICompoundPart`](/game-api/types/alta-intelligence/icompoundpart) | interface |  | 2 |  |
 | [`IData<T>`](/game-api/types/alta-intelligence/idata-t) | interface | `ITerm` | 0 |  |
-| [`IHasViewCone`](/game-api/types/alta-intelligence/ihasviewcone) | interface |  | 1 |  |
+| [`IHasViewCone`](/game-api/types/alta-intelligence/ihasviewcone) | interface |  | 1 | Implemented by AI that has a `ViewCone` for sight checks. |
 | [`IInteractAgent`](/game-api/types/alta-intelligence/iinteractagent) | interface | `IAgent`, `ITarget`, `ITargetPointer`, +1 more | 1 |  |
 | [`IJumpAttacker`](/game-api/types/alta-intelligence/ijumpattacker) | interface |  | 1 | [Combat, damage and death](../creatures/combat-and-damage.md): `ActiveJumpAt` calls it at the start and end of a jump. `Spriggull` charges its beak with it. |
-| [`ILinkedAgent`](/game-api/types/alta-intelligence/ilinkedagent) | interface |  | 5 |  |
+| [`ILinkedAgent`](/game-api/types/alta-intelligence/ilinkedagent) | interface |  | 5 | What `AgentUpdater` needs from a creature AI to schedule it. `Agent` implements it explicitly; agents are kept in a linked list sorted by priority. |
 | [`Intelligence`](/game-api/types/alta-intelligence/intelligence) | class | `MonoBehaviour` | 7 |  |
 | [`IntelligenceExtensionMethods`](/game-api/types/alta-intelligence/intelligenceextensionmethods) | static class |  | 2 |  |
 | [`InverseLerpSenseSelf`](/game-api/types/alta-intelligence/inverselerpsenseself) | class | `TargetOperation` | 3 |  |
@@ -196,30 +196,30 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`IReceiveImpulseFromCollision`](/game-api/types/alta-intelligence/ireceiveimpulsefromcollision) | interface |  | 1 |  |
 | [`ITarget`](/game-api/types/alta-intelligence/itarget) | interface | `ITargetPointer` | 13 | [Targets and senses](../creatures/targets-and-senses.md#itarget): Anything a creature can consider. `Target` implements it, so every creature is also a target for other creatures. |
 | [`ITargetExtensions`](/game-api/types/alta-intelligence/itargetextensions) | static class |  | 1 |  |
-| [`ITargetPointer`](/game-api/types/alta-intelligence/itargetpointer) | interface |  | 1 |  |
-| [`ITerm`](/game-api/types/alta-intelligence/iterm) | interface |  | 3 |  |
-| [`KnowledgeHolder`](/game-api/types/alta-intelligence/knowledgeholder) | class |  | 7 |  |
+| [`ITargetPointer`](/game-api/types/alta-intelligence/itargetpointer) | interface |  | 1 | Anything that can name an AI target for itself. Every `ITarget` and agent is one, and so are things like `SeedSpray`; hit code uses it to find who to blame for a hit. |
+| [`ITerm`](/game-api/types/alta-intelligence/iterm) | interface |  | 3 | A term in the small Prolog-style logic engine in `Alta.Intelligence` (atoms, variables, compounds). Probably not used by the shipped creatures; nothing outside that namespace uses it. |
+| [`KnowledgeHolder`](/game-api/types/alta-intelligence/knowledgeholder) | class |  | 7 | A store of known events and rule definitions for the creature knowledge system. It can have a parent, whose knowledge also counts. |
 | [`Lifetime`](/game-api/types/alta-intelligence/lifetime) | class | `TargetOperation` | 2 |  |
 | [`LifetimeOperation`](/game-api/types/alta-intelligence/lifetimeoperation) | class | `TargetOperationComponent` | 1 |  |
 | [`Not`](/game-api/types/alta-intelligence/not) | class | `Predicate` | 2 |  |
 | [`OldSenseOperation`](/game-api/types/alta-intelligence/oldsenseoperation) | class | `TargetOperationComponent` | 2 |  |
-| [`Operator`](/game-api/types/alta-intelligence/operator) | abstract class | `Predicate` | 2 |  |
+| [`Operator`](/game-api/types/alta-intelligence/operator) | abstract class | `Predicate` | 2 | Base for predicates that join two other predicates (such as and), in the creature knowledge system. Evaluates the left side, then the right side with the left's bindings. |
 | [`Or`](/game-api/types/alta-intelligence/or) | class | `Operator` | 3 |  |
 | [`Phantom`](/game-api/types/alta-intelligence/phantom) | class | `Agent<Phantom>`, `IHasViewCone`, `IListenToMiningEcho` | 9 | [Other creatures](../creatures/other-creatures.md#phantom), [Creature data](../creatures/creature-data.md): A night creature that can be solid or immaterial. Prefabs: Phantom (2 health) and Phantom Head (0.5 health, takes double spiritual damage). |
 | [`PickupAgent`](/game-api/types/alta-intelligence/pickupagent) | class | `MonoBehaviour` | 3 | [Other creatures](../creatures/other-creatures.md#pickupagent): `public class PickupAgent : MonoBehaviour`, for creatures you can hold. |
 | [`PlayerCharacterTarget`](/game-api/types/alta-intelligence/playercharactertarget) | class | `Target` | 5 | [Targets and senses](../creatures/targets-and-senses.md#playercharactertarget): `PlayerCharacterTarget : Target` is the player's target component. |
 | [`PlayerLikeSpectralGhost`](/game-api/types/alta-intelligence/playerlikespectralghost) | class | `Phantom` | 2 | [Other creatures](../creatures/other-creatures.md#playerlikespectralghost), [Creature data](../creatures/creature-data.md): A phantom dressed as a player (prefab "Spectral Ghost", 2 health; it uses the phantom's passive set and destroys itself on death). |
 | [`Plus`](/game-api/types/alta-intelligence/plus) | class | `Operator` | 3 |  |
-| [`Predicate`](/game-api/types/alta-intelligence/predicate) | abstract class | `ITerm`, `ICompoundPart` | 13 |  |
+| [`Predicate`](/game-api/types/alta-intelligence/predicate) | abstract class | `ITerm`, `ICompoundPart` | 13 | Base for a logic term in the AI knowledge system: a functor with argument terms that is evaluated against a `KnowledgeHolder` to produce weighted results. Operators combine predicates. |
 | [`ProgressStatChangeHook`](/game-api/types/alta-intelligence/progressstatchangehook) | class | `StatChangeHook` | 1 | [Actions and decisions](../creatures/actions-and-decisions.md) |
 | [`ProjectileShooter`](/game-api/types/alta-intelligence/projectileshooter) | class | `MonoBehaviour` | 3 |  |
 | [`ProjectileShooter.AimMode`](/game-api/types/alta-intelligence/projectileshooter-aimmode) | enum |  | 4 |  |
-| [`RandomTimedActionComponent`](/game-api/types/alta-intelligence/randomtimedactioncomponent) | abstract class | `ActionComponent` | 3 |  |
+| [`RandomTimedActionComponent`](/game-api/types/alta-intelligence/randomtimedactioncomponent) | abstract class | `ActionComponent` | 3 | Base for AI action components that run for a random length of time, set in the inspector (5 to 7 seconds by default). |
 | [`RaycastGrounded`](/game-api/types/alta-intelligence/raycastgrounded) | class | `TargetOperation` | 3 |  |
 | [`RaycastGroundedOperation`](/game-api/types/alta-intelligence/raycastgroundedoperation) | class | `TargetOperationComponent` | 1 |  |
 | [`RaycastGroundedOperationType`](/game-api/types/alta-intelligence/raycastgroundedoperationtype) | enum |  | 3 |  |
 | [`RepeatIfHasTarget`](/game-api/types/alta-intelligence/repeatifhastarget) | class | `MonoBehaviour` | 2 |  |
-| [`Result`](/game-api/types/alta-intelligence/result) | class |  | 5 |  |
+| [`Result`](/game-api/types/alta-intelligence/result) | class |  | 5 | One answer to a creature AI logic query: the term bindings that make it true and its weight. |
 | [`RotateToTargetWorldXZ`](/game-api/types/alta-intelligence/rotatetotargetworldxz) | class | `NetworkEntityBehaviour`, `INetworkSerialized` | 3 |  |
 | [`RVOBlockedOperation`](/game-api/types/alta-intelligence/rvoblockedoperation) | class | `TargetOperationComponent` | 1 |  |
 | [`RVOBlockedValue`](/game-api/types/alta-intelligence/rvoblockedvalue) | class | `TargetOperation` | 2 |  |
@@ -234,9 +234,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SchmeecheePlantSettings`](/game-api/types/alta-intelligence/schmeecheeplantsettings) | class | `RandomTimedActionComponent` | 0 |  |
 | [`SchmeecheePlaySettings`](/game-api/types/alta-intelligence/schmeecheeplaysettings) | class | `ActionComponent` | 0 |  |
 | [`SeedSpray`](/game-api/types/alta-intelligence/seedspray) | class | `NetworkEntityBehaviour`, `ITargetPointer` | 6 | [Combat, damage and death](../creatures/combat-and-damage.md) |
-| [`SeedSpray.BasicImpactSyncArguments`](/game-api/types/alta-intelligence/seedspray-basicimpactsyncarguments) | struct |  | 11 |  |
+| [`SeedSpray.BasicImpactSyncArguments`](/game-api/types/alta-intelligence/seedspray-basicimpactsyncarguments) | struct |  | 11 | Network copy of a seed's hit, sent by the server so clients apply the same impact to the struck entity's `ImpactDetector`. |
 | [`SeedSprayManager`](/game-api/types/alta-intelligence/seedspraymanager) | class | `NetworkEntityBehaviour` | 2 | [Combat, damage and death](../creatures/combat-and-damage.md) |
-| [`Sense`](/game-api/types/alta-intelligence/sense) | abstract class | `GeneralValue` | 6 |  |
+| [`Sense`](/game-api/types/alta-intelligence/sense) | abstract class | `GeneralValue` | 6 | Asset for something an AI agent can measure about a target (distance, visibility and so on) as a number. Sense assets are loaded from `Resources/Senses`. |
 | [`SenseOld`](/game-api/types/alta-intelligence/senseold) | enum |  | 20 |  |
 | [`SenseOperation`](/game-api/types/alta-intelligence/senseoperation) | class | `TargetOperationComponent` | 2 |  |
 | [`SenseSetup`](/game-api/types/alta-intelligence/sensesetup) | class |  | 3 |  |
@@ -245,17 +245,17 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`StatChangeHook`](/game-api/types/alta-intelligence/statchangehook) | abstract class | `AiHook` | 0 |  |
 | [`StatOperation`](/game-api/types/alta-intelligence/statoperation) | class | `TargetOperationComponent` | 1 |  |
 | [`StatValue`](/game-api/types/alta-intelligence/statvalue) | class | `TargetOperation` | 2 |  |
-| [`Target`](/game-api/types/alta-intelligence/target) | class | `NetworkEntityBehaviour`, `ITarget`, `ITargetPointer` | 15 |  |
+| [`Target`](/game-api/types/alta-intelligence/target) | class | `NetworkEntityBehaviour`, `ITarget`, `ITargetPointer` | 15 | A networked thing that AI creatures can sense and attack, with optional health and interactable links. Only active on the server: on clients it disables itself (and by default its GameObject). |
 | [`TargetCollector`](/game-api/types/alta-intelligence/targetcollector) | class | `MonoBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 4 |  |
 | [`TargetCollectorManager`](/game-api/types/alta-intelligence/targetcollectormanager) | static class |  | 3 |  |
 | [`TargetOperation`](/game-api/types/alta-intelligence/targetoperation) | abstract class |  | 3 | [Actions and decisions](../creatures/actions-and-decisions.md): One scoring rule. `float Evaluate(Agent agent, ITarget target)`, plus a `Weight`. |
-| [`TargetOperationComponent`](/game-api/types/alta-intelligence/targetoperationcomponent) | abstract class | `MonoBehaviour` | 1 |  |
+| [`TargetOperationComponent`](/game-api/types/alta-intelligence/targetoperationcomponent) | abstract class | `MonoBehaviour` | 1 | Base component that supplies a `TargetOperation` for AI target scoring. Its object is renamed to match the operation in the editor. |
 | [`TargetPointer`](/game-api/types/alta-intelligence/targetpointer) | class | `MonoBehaviour`, `ITargetPointer` | 1 |  |
 | [`TargetResult`](/game-api/types/alta-intelligence/targetresult) | class |  | 2 |  |
 | [`TargetResult.Result`](/game-api/types/alta-intelligence/targetresult-result) | class |  | 4 |  |
-| [`Term`](/game-api/types/alta-intelligence/term) | abstract class | `ITerm` | 5 |  |
+| [`Term`](/game-api/types/alta-intelligence/term) | abstract class | `ITerm` | 5 | Base of terms in the AI's logic system (atoms, variables, compounds). `Unify` matches two terms in the Prolog style. |
 | [`ThresholdListener`](/game-api/types/alta-intelligence/thresholdlistener) | class |  | 3 |  |
-| [`TimedActionComponent`](/game-api/types/alta-intelligence/timedactioncomponent) | abstract class | `ActionComponent` | 1 |  |
+| [`TimedActionComponent`](/game-api/types/alta-intelligence/timedactioncomponent) | abstract class | `ActionComponent` | 1 | Base for a creature action component that runs for a set duration. |
 | [`True`](/game-api/types/alta-intelligence/true) | class | `Predicate` | 2 |  |
 | [`Turabada`](/game-api/types/alta-intelligence/turabada) | class | `Agent<Turabada>`, `IHasViewCone` | 6 | [Common creatures](../creatures/common-creatures.md#turabada), [Creature data](../creatures/creature-data.md): On death it turns off collision and sets the animator bool named by `killedAnimatorBoolean` ("Killed" by default) directly on the `Animator`, on each side. |
 | [`Variable`](/game-api/types/alta-intelligence/variable) | class | `Term` | 7 |  |
@@ -272,7 +272,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 ## Alta.Intelligence.Wyrms
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ActiveCatch`](/game-api/types/alta-intelligence/activecatch) | class | `BasicActiveAction<Wyrm, WyrmCatchSettings>` | 2 |  |
 | [`ActiveDig`](/game-api/types/alta-intelligence/activedig) | class | `BasicActiveAction<Wyrm, WyrmDigSettings>` | 2 |  |
@@ -284,14 +284,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`WyrmCatchSettings`](/game-api/types/alta-intelligence/wyrmcatchsettings) | class | `TimedActionComponent` | 1 |  |
 | [`WyrmDigSettings`](/game-api/types/alta-intelligence/wyrmdigsettings) | class | `TimedActionComponent` | 4 |  |
 | [`WyrmDodgeSettings`](/game-api/types/alta-intelligence/wyrmdodgesettings) | class | `TimedActionComponent` | 1 |  |
-| [`WyrmEmergeSettings`](/game-api/types/alta-intelligence/wyrmemergesettings) | class | `TimedActionComponent` | 6 |  |
+| [`WyrmEmergeSettings`](/game-api/types/alta-intelligence/wyrmemergesettings) | class | `TimedActionComponent` | 6 | Action settings for a burrowed wyrm coming up when a target is close (`ActiveEmerge`). After emerging it switches to its emerged senses. |
 | [`WyrmMeleeSettings`](/game-api/types/alta-intelligence/wyrmmeleesettings) | class | `TimedActionComponent` | 6 |  |
 | [`WyrmSpinSettings`](/game-api/types/alta-intelligence/wyrmspinsettings) | class | `ActionComponent` | 4 |  |
-| [`WyrmSpitSettings`](/game-api/types/alta-intelligence/wyrmspitsettings) | class | `TimedActionComponent` | 7 |  |
+| [`WyrmSpitSettings`](/game-api/types/alta-intelligence/wyrmspitsettings) | class | `TimedActionComponent` | 7 | Action settings for a wyrm's spit attack (`ActiveSpit`), scored by distance, hurt and whether the target is the same as before. |
 
 ## Alta.Pathfinding
 
-| Type | Kind | Base | Public members | Documented in |
+| Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`Director`](/game-api/types/alta-intelligence/director) | class | `MonoBehaviour` | 15 | [Movement and pathfinding](../creatures/movement-and-pathfinding.md#director): Finds its `Navigator` in its parents on `Awake`. |
 | [`Follower`](/game-api/types/alta-intelligence/follower) | class |  | 3 |  |

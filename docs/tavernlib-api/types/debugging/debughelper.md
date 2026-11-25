@@ -1,6 +1,6 @@
 ---
 title: "DebugHelper"
-description: "A class in TavernLib, TavernLib.Debugging."
+description: "The /debug_helper service: copies the game's NLog output into MelonLoader's log and draws an on-screen toggle per log level."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Debugging`.
 
-A **class** in `TavernLib`, `TavernLib.Debugging`.
+The `/debug_helper` service: copies the game's NLog output into MelonLoader's log and draws an on-screen toggle per log level. Nothing for mods to call; its constructor is internal.
 
 - **Listed in** [TavernLib.Debugging](/tavernlib-api/types/debugging)
 - **Inherits or implements** [`IService`](/tavernlib-api/types/services/iservice)

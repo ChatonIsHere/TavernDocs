@@ -1,6 +1,6 @@
 ---
 title: "TemperatureToMaterial"
-description: "Glow and colour from temperature. Client visuals."
+description: "Glow and colour from temperature."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

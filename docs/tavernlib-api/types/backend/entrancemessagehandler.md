@@ -1,6 +1,6 @@
 ---
 title: "EntranceMessageHandler"
-description: "A class in TavernLib, TavernLib.Backend."
+description: "Receives the roles message on a client and keeps the local player's roles."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `TavernLib`, `TavernLib.Backend`.
 
-A **class** in `TavernLib`, `TavernLib.Backend`.
+Receives the roles message on a client and keeps the local player's roles. Registered as a service on both sides, but only sets its handler when not a server.
 
 - **Listed in** [TavernLib.Backend](/tavernlib-api/types/backend)
 - **Inherits or implements** [`IService`](/tavernlib-api/types/services/iservice)
@@ -28,7 +28,7 @@ A **class** in `TavernLib`, `TavernLib.Backend`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-localuser" /><code><Link to="/tavernlib-api/types/backend-server-configs/userconfig-user">{"UserConfig.User"}</Link>{" LocalUser { get; private set; }"}</code> |  |
+| <Link id="m-localuser" /><code><Link to="/tavernlib-api/types/backend-server-configs/userconfig-user">{"UserConfig.User"}</Link>{" LocalUser { get; private set; }"}</code> | The local player as a `UserConfig.User`. Only its `Roles` are filled in, from the last roles message the server sent. |
 
 ## Methods
 

@@ -1,6 +1,6 @@
 ---
 title: "GlobalSettings<T>"
-description: "The game's design data as ScriptableObject assets: MenuSettings, NetworkingSettings, SmoothLocomotionSettings, PickupTypeSettings and many more."
+description: "Base for global settings ScriptableObjects with a static Instance."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Global.Runtime`, `Alta.Global`.
 
-The game's design data as `ScriptableObject` assets: `MenuSettings`, `NetworkingSettings`, `SmoothLocomotionSettings`, `PickupTypeSettings` and many more.
+Base for global settings ScriptableObjects with a static `Instance`. The instance is set when a `GlobalSettingsInitializer` or the lifetime-scope installer calls `InitializeInstance` at startup.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`GlobalSettings`](/game-api/types/assembly-other/globalsettings)
@@ -36,11 +36,11 @@ The game's design data as `ScriptableObject` assets: `MenuSettings`, `Networking
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance-2" /><code>{"static T Instance { get; }"}</code> |  |
+| <Link id="m-instance-2" /><code>{"static T Instance { get; }"}</code> | The active settings asset. Null until it has been initialized (the editor fallback returns null in this build). |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeinstance" /><code>{"sealed override void InitializeInstance()"}</code> |  |
+| <Link id="m-initializeinstance" /><code>{"sealed override void InitializeInstance()"}</code> | Makes this asset the static `Instance`. Called at startup for every listed settings asset. |
 | <Link id="m-geteditorinstance" /><code>{"private static T GetEditorInstance()"}</code> |  |

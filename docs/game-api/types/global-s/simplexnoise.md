@@ -1,6 +1,6 @@
 ---
 title: "SimplexNoise"
-description: "class SimplexNoise in Root.Township."
+description: "Simplex noise in 2, 3 or 4 dimensions, with per-instance offsets added to the inputs."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SimplexNoise
 
 A **class** in `Root.Township`, no namespace.
+
+Simplex noise in 2, 3 or 4 dimensions, with per-instance offsets added to the inputs.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Nested types** [`Grad`](/game-api/types/global-s/simplexnoise-grad)
@@ -45,12 +47,12 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-noise" /><code>{"double Noise(double xin, double yin)"}</code> |  |
-| <Link id="m-noise-2" /><code>{"double Noise(double xin, double yin, double zin)"}</code> |  |
-| <Link id="m-noise-3" /><code>{"double Noise(double x, double y, double z, double w)"}</code> |  |
-| <Link id="m-noise01" /><code>{"double Noise01(double x, double y)"}</code> |  |
-| <Link id="m-noise01-2" /><code>{"double Noise01(double x, double y, double z)"}</code> |  |
-| <Link id="m-noise01-3" /><code>{"double Noise01(double x, double y, double z, double w)"}</code> |  |
+| <Link id="m-noise" /><code>{"double Noise(double xin, double yin)"}</code> | Noise value at the point, in the range -1 to 1. |
+| <Link id="m-noise-2" /><code>{"double Noise(double xin, double yin, double zin)"}</code> | Noise value at the point, in the range -1 to 1. |
+| <Link id="m-noise-3" /><code>{"double Noise(double x, double y, double z, double w)"}</code> | Noise value at the point, in the range -1 to 1. |
+| <Link id="m-noise01" /><code>{"double Noise01(double x, double y)"}</code> | Noise value at the point, rescaled to 0 to 1. |
+| <Link id="m-noise01-2" /><code>{"double Noise01(double x, double y, double z)"}</code> | Noise value at the point, rescaled to 0 to 1. |
+| <Link id="m-noise01-3" /><code>{"double Noise01(double x, double y, double z, double w)"}</code> | Noise value at the point, rescaled to 0 to 1. |
 | <Link id="m-dot" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y)"}</code> |  |
 | <Link id="m-dot-2" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y, double z)"}</code> |  |
 | <Link id="m-dot-3" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y, double z, double w)"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "SmoothLocomotionPlayerController"
-description: "abstract class SmoothLocomotionPlayerController in Root.Township."
+description: "Base VR player controller for players that move with thumbstick (smooth) locomotion, through a SmoothLocomotion component."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SmoothLocomotionPlayerController
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base VR player controller for players that move with thumbstick (smooth) locomotion, through a `SmoothLocomotion` component.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`VRPlayerController`](/game-api/types/global-t-x/vrplayercontroller)
@@ -32,15 +34,15 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bodycenter" /><code>{"override Vector3 BodyCenter { get; }"}</code> |  |
-| <Link id="m-realfeetposition" /><code>{"override Vector3 RealFeetPosition { get; }"}</code> |  |
-| <Link id="m-smoothlocomotion-2" /><code><Link to="/game-api/types/global-s/smoothlocomotion">{"SmoothLocomotion"}</Link>{" "}<Link to="/game-api/types/global-s/smoothlocomotion">{"SmoothLocomotion"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-bodycenter" /><code>{"override Vector3 BodyCenter { get; }"}</code> | Body centre as worked out by the smooth locomotion component. |
+| <Link id="m-realfeetposition" /><code>{"override Vector3 RealFeetPosition { get; }"}</code> | Point under the player at the controller's height: the locomotion position for the local player, the head position for others. |
+| <Link id="m-smoothlocomotion-2" /><code><Link to="/game-api/types/global-s/smoothlocomotion">{"SmoothLocomotion"}</Link>{" "}<Link to="/game-api/types/global-s/smoothlocomotion">{"SmoothLocomotion"}</Link>{" { get; }"}</code> | The smooth locomotion component. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loadforchunk" /><code>{"protected override void LoadForChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |  |
+| <Link id="m-loadforchunk" /><code>{"protected override void LoadForChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Also makes smooth locomotion wait for the chunk to finish loading. |
 
 ## Used in
 

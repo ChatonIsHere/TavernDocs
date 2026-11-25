@@ -1,6 +1,6 @@
 ---
 title: "Pointer"
-description: "class Pointer in Root.Township."
+description: "The teleport arc on a hand."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Pointer
 
 A **class** in `Root.Township`, no namespace.
+
+The teleport arc on a hand. Each frame it traces a curved arc from the hand, finds where it lands and whether the player may teleport there, and draws the arc and target. Client, local player.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`ControllerExtension`](/game-api/types/global-c-d/controllerextension)
@@ -89,29 +91,29 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hit" /><code>{"RaycastHit Hit { get; }"}</code> |  |
-| <Link id="m-isagedenough" /><code>{"bool IsAgedEnough { get; }"}</code> |  |
-| <Link id="m-islimitingteleportradius-2" /><code>{"bool IsLimitingTeleportRadius { get; set; }"}</code> |  |
-| <Link id="m-istargetshowing" /><code>{"bool IsTargetShowing { get; set; }"}</code> |  |
-| <Link id="m-isvalidteleport" /><code>{"bool IsValidTeleport { get; }"}</code> |  |
-| <Link id="m-limitcenter" /><code>{"Vector3 LimitCenter { get; set; }"}</code> |  |
-| <Link id="m-limitradiussquared-2" /><code>{"float LimitRadiusSquared { get; set; }"}</code> |  |
-| <Link id="m-overridevelocitycurve" /><code>{"AnimationCurve OverrideVelocityCurve { get; set; }"}</code> |  |
-| <Link id="m-standablemask-2" /><code>{"LayerMask StandableMask { get; }"}</code> |  |
-| <Link id="m-triggerspassedthrough-2" /><code>{"HashSet<"}<Link to="/game-api/types/global-i-l/iteleportawaretrigger">{"ITeleportAwareTrigger"}</Link>{"> TriggersPassedThrough { get; }"}</code> |  |
+| <Link id="m-hit" /><code>{"RaycastHit Hit { get; }"}</code> | The raycast hit where the arc landed last frame. |
+| <Link id="m-isagedenough" /><code>{"bool IsAgedEnough { get; }"}</code> | True once the arc has been held for at least the minimum time. |
+| <Link id="m-islimitingteleportradius-2" /><code>{"bool IsLimitingTeleportRadius { get; set; }"}</code> | When true, targets farther than `LimitRadiusSquared` from `LimitCenter` are invalid. |
+| <Link id="m-istargetshowing" /><code>{"bool IsTargetShowing { get; set; }"}</code> | Whether the landing target marker is drawn. True by default. |
+| <Link id="m-isvalidteleport" /><code>{"bool IsValidTeleport { get; }"}</code> | True if the current landing spot is valid and the arc has been held long enough. |
+| <Link id="m-limitcenter" /><code>{"Vector3 LimitCenter { get; set; }"}</code> | Centre for the teleport radius limit. Character customization sets it to its own position. |
+| <Link id="m-limitradiussquared-2" /><code>{"float LimitRadiusSquared { get; set; }"}</code> | Squared radius for the teleport limit. |
+| <Link id="m-overridevelocitycurve" /><code>{"AnimationCurve OverrideVelocityCurve { get; set; }"}</code> | Settable velocity curve. Not read anywhere in this build; the arc uses its own curve. |
+| <Link id="m-standablemask-2" /><code>{"LayerMask StandableMask { get; }"}</code> | Layers the player can teleport onto. The current unlock can override it. |
+| <Link id="m-triggerspassedthrough-2" /><code>{"HashSet<"}<Link to="/game-api/types/global-i-l/iteleportawaretrigger">{"ITeleportAwareTrigger"}</Link>{"> TriggersPassedThrough { get; }"}</code> | Teleport-aware triggers the arc passed through this frame. |
 | <Link id="m-maxdottoteleport" /><code>{"private float MaxDotToTeleport { get; set; }"}</code> |  |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-targetchanged" /><code>{"event "}<Link to="/game-api/types/global-p/pointereventhandler">{"PointerEventHandler"}</Link>{" TargetChanged"}</code> |  |
+| <Link id="m-targetchanged" /><code>{"event "}<Link to="/game-api/types/global-p/pointereventhandler">{"PointerEventHandler"}</Link>{" TargetChanged"}</code> | Raised when the landing collider or its validity changes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Makes the arc material and reads the max teleport angle and the player's unlock manager. |
 | <Link id="m-getposition" /><code>{"private Vector3 GetPosition(float time, Vector3 forward, float velocity)"}</code> |  |
 | <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |  |
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |

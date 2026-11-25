@@ -1,6 +1,6 @@
 ---
 title: "ActionComponent"
-description: "The settings every action has:"
+description: "Base for a creature action set up as a component on a creature's AI prefab."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **abstract class** in `Root.Township`, `Alta.Intelligence`.
 
-The settings every action has:
+Base for a creature action set up as a component on a creature's AI prefab. Holds the weighting and cancel rules, and builds the action with target operations found in child objects named Base Required, Base Preferred, Target Required and Target Preferred.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** `MonoBehaviour`, [`IActionSettings`](/game-api/types/alta-intelligence/iactionsettings)
@@ -48,28 +48,28 @@ The settings every action has:
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cancancelselfwithsametarget-2" /><code>{"bool CanCancelSelfWithSameTarget { get; }"}</code> |  |
-| <Link id="m-cancelpriority-2" /><code>{"int CancelPriority { get; }"}</code> |  |
-| <Link id="m-iscancellable-2" /><code>{"bool IsCancellable { get; }"}</code> |  |
-| <Link id="m-minimumcancelpriority-2" /><code>{"int MinimumCancelPriority { get; }"}</code> |  |
-| <Link id="m-minimumcancelweighting-2" /><code>{"float MinimumCancelWeighting { get; }"}</code> |  |
-| <Link id="m-multiplier" /><code>{"float Multiplier { get; }"}</code> |  |
+| <Link id="m-cancancelselfwithsametarget-2" /><code>{"bool CanCancelSelfWithSameTarget { get; }"}</code> | If false, choosing this same action on the same target again restarts it instead of cancelling and starting fresh. |
+| <Link id="m-cancelpriority-2" /><code>{"int CancelPriority { get; }"}</code> | This action is only considered while another runs if its priority is at least the running action's `MinimumCancelPriority`. |
+| <Link id="m-iscancellable-2" /><code>{"bool IsCancellable { get; }"}</code> | If false, the agent does not re-decide while this action runs; it waits for it to finish. |
+| <Link id="m-minimumcancelpriority-2" /><code>{"int MinimumCancelPriority { get; }"}</code> | While this action runs, other actions need at least this `CancelPriority` to replace it. |
+| <Link id="m-minimumcancelweighting-2" /><code>{"float MinimumCancelWeighting { get; }"}</code> | While this action runs, a replacement needs at least this weighting. |
+| <Link id="m-multiplier" /><code>{"float Multiplier { get; }"}</code> | Weighting multiplier for choosing this action: the base value plus a random extra each time it is read, if set. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-used" /><code>{"event "}<Link to="/game-api/types/alta-intelligence/actionsettingsusedhandler">{"ActionSettingsUsedHandler"}</Link>{" Used"}</code> |  |
+| <Link id="m-used" /><code>{"event "}<Link to="/game-api/types/alta-intelligence/actionsettingsusedhandler">{"ActionSettingsUsedHandler"}</Link>{" Used"}</code> | Raised each time an active action of this component starts. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getstaticaction" /><code><Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetStaticAction()"}</code> |  |
-| <Link id="m-handleused" /><code>{"void HandleUsed("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> |  |
+| <Link id="m-getstaticaction" /><code><Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetStaticAction()"}</code> | Builds the action once (with its target operations from the named child objects) and returns the cached one after that. |
+| <Link id="m-handleused" /><code>{"void HandleUsed("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | Called each time the action starts. On first use it initializes `IAiHook` components on the object, then raises `Used`. |
 | <Link id="m-addchildrento" /><code>{"private void AddChildrenTo(string childName, List<"}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> operations)"}</code> |  |
-| <Link id="m-getaction" /><code>{"protected abstract "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> |  |
+| <Link id="m-getaction" /><code>{"protected abstract "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Subclasses create the `IAction` for this component here. |
+| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Empty editor hook for subclasses. |
 
 ## Used in
 

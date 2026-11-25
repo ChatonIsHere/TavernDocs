@@ -1,6 +1,6 @@
 ---
 title: "GrabPointParameters"
-description: "class GrabPointParameters in Root.Township."
+description: "Which grab point of a pickup a hand holds and where along it, so a grab can be sent over the network and reapplied."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GrabPointParameters
 
 A **class** in `Root.Township`, no namespace.
+
+Which grab point of a pickup a hand holds and where along it, so a grab can be sent over the network and reapplied.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 
@@ -34,9 +36,9 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applied" /><code><Link to="/game-api/types/global-e-h/grabpoint">{"GrabPoint"}</Link>{" Applied("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-grabpointforpickup" /><code><Link to="/game-api/types/global-e-h/grabpoint">{"GrabPoint"}</Link>{" GrabPointForPickup("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
+| <Link id="m-applied" /><code><Link to="/game-api/types/global-e-h/grabpoint">{"GrabPoint"}</Link>{" Applied("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Writes the stored position and rotation back onto the pickup's grab point and returns it. |
+| <Link id="m-grabpointforpickup" /><code><Link to="/game-api/types/global-e-h/grabpoint">{"GrabPoint"}</Link>{" GrabPointForPickup("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Returns the grab point by its stored index. |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Reads or writes the grab point index (0 to 15), linear position, local position and rotation. |
 
 ## Used in
 

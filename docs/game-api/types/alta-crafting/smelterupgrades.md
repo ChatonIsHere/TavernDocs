@@ -1,6 +1,6 @@
 ---
 title: "SmelterUpgrades"
-description: "An unlockable set of smelter abilities: extra recipes, metals it can melt for moulds, and a speed bonus. Applied through SmelterUnlockManager."
+description: "An unlockable set of smelter abilities: extra recipes, metals it can melt for moulds, and a speed bonus."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

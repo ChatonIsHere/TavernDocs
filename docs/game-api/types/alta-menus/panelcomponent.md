@@ -1,6 +1,6 @@
 ---
 title: "PanelComponent"
-description: "abstract class PanelComponent in Root.Township."
+description: "Base for components that fill a meta UI Panel with data."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PanelComponent
 
 An **abstract class** in `Root.Township`, `Alta.Meta.UI`.
+
+Base for components that fill a meta UI `Panel` with data. Refreshes when the panel opens if marked stale, and marks itself stale on a timer (30 seconds by default).
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** `MonoBehaviour`
@@ -27,26 +29,26 @@ An **abstract class** in `Root.Township`, `Alta.Meta.UI`.
 | Member | What it is |
 | --- | --- |
 | <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |  |
-| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> |  |
-| <Link id="m-needstorefreshdata" /><code>{"protected bool needsToRefreshData"}</code> |  |
-| <Link id="m-panel" /><code>{"protected "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel"}</code> |  |
+| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | NLog logger shared by panel components. |
+| <Link id="m-needstorefreshdata" /><code>{"protected bool needsToRefreshData"}</code> | True when data should be reloaded on the next panel state change. |
+| <Link id="m-panel" /><code>{"protected "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel"}</code> | The panel this component belongs to (set in the editor). |
 | <Link id="m-refreshtimer" /><code>{"private float refreshTimer"}</code> |  |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-panel-2" /><code><Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-panel-2" /><code><Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" { get; }"}</code> | The panel this component belongs to. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-forcerefreshonnextload" /><code>{"void ForceRefreshOnNextLoad()"}</code> |  |
-| <Link id="m-refreshdata" /><code>{"virtual void RefreshData()"}</code> |  |
+| <Link id="m-forcerefreshonnextload" /><code>{"void ForceRefreshOnNextLoad()"}</code> | Refreshes now if the panel is open, otherwise refreshes the next time it opens. |
+| <Link id="m-refreshdata" /><code>{"virtual void RefreshData()"}</code> | Override to reload the panel's data. Empty in the base. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-handlepanelstatechange" /><code>{"private void HandlePanelStateChange("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |  |
-| <Link id="m-handlestatechange" /><code>{"protected virtual void HandleStateChange("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |  |
+| <Link id="m-handlestatechange" /><code>{"protected virtual void HandleStateChange("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> | Hook for subclasses, called each time the panel opens or closes. |
 | <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
 | <Link id="m-refreshagain" /><code>{"private void RefreshAgain()"}</code> |  |
 

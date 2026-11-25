@@ -1,6 +1,6 @@
 ---
 title: "PositionSerializer"
-description: "Writes and reads an entity's position and rotation for the network, optionally relative to a moving context such as a cart or boat it stands on. Posit"
+description: "Writes and reads an entity's position and rotation for the network, optionally relative to a moving context such as a cart or boat it stands on."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

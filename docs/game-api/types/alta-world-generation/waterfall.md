@@ -1,6 +1,6 @@
 ---
 title: "Waterfall"
-description: "class Waterfall in Root.Township."
+description: "A waterfall in river generation, from a top river node to a bottom one, with the river paths that pass through it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Waterfall
 
 A **class** in `Root.Township`, `Alta.Forests`.
+
+A waterfall in river generation, from a top river node to a bottom one, with the river paths that pass through it.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 
@@ -30,19 +32,19 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bottom" /><code><Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" Bottom { get; private set; }"}</code> |  |
-| <Link id="m-direction" /><code>{"Vector2 Direction { get; private set; }"}</code> |  |
-| <Link id="m-height" /><code>{"float Height { get; private set; }"}</code> |  |
-| <Link id="m-lengthxz" /><code>{"float LengthXZ { get; private set; }"}</code> |  |
-| <Link id="m-paths-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{"> Paths { get; }"}</code> |  |
-| <Link id="m-top" /><code><Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" Top { get; set; }"}</code> |  |
+| <Link id="m-bottom" /><code><Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" Bottom { get; private set; }"}</code> | Bottom node. Set with `SetBottom`. |
+| <Link id="m-direction" /><code>{"Vector2 Direction { get; private set; }"}</code> | Flat direction from top to bottom. |
+| <Link id="m-height" /><code>{"float Height { get; private set; }"}</code> | Drop from top to bottom. |
+| <Link id="m-lengthxz" /><code>{"float LengthXZ { get; private set; }"}</code> | Flat distance from top to bottom. |
+| <Link id="m-paths-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{"> Paths { get; }"}</code> | River paths through the waterfall. |
+| <Link id="m-top" /><code><Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" Top { get; set; }"}</code> | Top node. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addpath" /><code>{"void AddPath("}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" path)"}</code> |  |
-| <Link id="m-setbottom" /><code>{"void SetBottom("}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" bottom)"}</code> |  |
+| <Link id="m-addpath" /><code>{"void AddPath("}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" path)"}</code> | Adds a river path and links it to this waterfall. |
+| <Link id="m-setbottom" /><code>{"void SetBottom("}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" bottom)"}</code> | Sets the bottom node and works out direction, flat length and height. |
 
 ## Used in
 

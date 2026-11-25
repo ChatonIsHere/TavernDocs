@@ -1,6 +1,6 @@
 ---
 title: "SmeltingRecipe"
-description: "A smelter recipe asset: the items that go in, what comes out and how much fuel it needs. Looked up by hash like other HashedGeneralValue assets."
+description: "A smelter recipe asset: the items that go in, what comes out and how much fuel it needs."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

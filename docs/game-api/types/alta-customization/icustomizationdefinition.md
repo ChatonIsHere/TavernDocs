@@ -1,6 +1,6 @@
 ---
 title: "ICustomizationDefinition"
-description: "interface ICustomizationDefinition in Root.Township."
+description: "One cosmetic option for the character customiser: it can be shown on a character, spawned as a pickup for preview and given default arguments."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Customization`.
 
+One cosmetic option for the character customiser: it can be shown on a character, spawned as a pickup for preview and given default arguments.
+
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Derived types** [`PlayerCosmeticDefinition`](/game-api/types/alta-customization/playercosmeticdefinition), [`PlayerEquipmentDefinition`](/game-api/types/alta-customization/playerequipmentdefinition)
 
@@ -19,19 +21,19 @@ An **interface** in `Root.Township`, `Alta.Customization`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-category" /><code><Link to="/game-api/types/alta-customization/icustomizationcategory">{"ICustomizationCategory"}</Link>{" Category { get; set; }"}</code> |  |
-| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> |  |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |  |
-| <Link id="m-pickuptype" /><code><Link to="/game-api/types/alta-customization/cosmeticpickuptype">{"CosmeticPickupType"}</Link>{" PickupType { get; }"}</code> |  |
-| <Link id="m-uiselectionboardscale" /><code>{"float UISelectionBoardScale { get; }"}</code> |  |
+| <Link id="m-category" /><code><Link to="/game-api/types/alta-customization/icustomizationcategory">{"ICustomizationCategory"}</Link>{" Category { get; set; }"}</code> | The customisation category this option belongs to. |
+| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> | Asset hash identifying the option. |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | Option name. |
+| <Link id="m-pickuptype" /><code><Link to="/game-api/types/alta-customization/cosmeticpickuptype">{"CosmeticPickupType"}</Link>{" PickupType { get; }"}</code> | What kind of cosmetic pickup represents it. |
+| <Link id="m-uiselectionboardscale" /><code>{"float UISelectionBoardScale { get; }"}</code> | Scale for the option's preview on the selection board. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createdefaultarguments" /><code><Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] CreateDefaultArguments()"}</code> |  |
-| <Link id="m-getvisual" /><code><Link to="/game-api/types/alta-customization/icustomizationvisual">{"ICustomizationVisual"}</Link>{" GetVisual()"}</code> |  |
-| <Link id="m-spawnpickup" /><code><Link to="/game-api/types/alta-customization/customizationpickup">{"CustomizationPickup"}</Link>{" SpawnPickup("}<Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments, Transform parent)"}</code> |  |
+| <Link id="m-createdefaultarguments" /><code><Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] CreateDefaultArguments()"}</code> | Creates the default arguments (such as colours) for this option. |
+| <Link id="m-getvisual" /><code><Link to="/game-api/types/alta-customization/icustomizationvisual">{"ICustomizationVisual"}</Link>{" GetVisual()"}</code> | Returns the visual used to show this option on a character. |
+| <Link id="m-spawnpickup" /><code><Link to="/game-api/types/alta-customization/customizationpickup">{"CustomizationPickup"}</Link>{" SpawnPickup("}<Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments, Transform parent)"}</code> | Spawns a pickup for this option with the given arguments under a parent. |
 
 ## Used in
 

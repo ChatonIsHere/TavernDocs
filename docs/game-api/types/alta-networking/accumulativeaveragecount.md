@@ -1,6 +1,6 @@
 ---
 title: "AccumulativeAverageCount"
-description: "class AccumulativeAverageCount in Root.Township."
+description: "A counter that keeps a running average of how many times something happened per period."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AccumulativeAverageCount
 
 A **class** in `Root.Township`, `Alta.Networking`.
+
+A counter that keeps a running average of how many times something happened per period. Used for networking stats such as per-type serialize counts.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 
@@ -31,15 +33,15 @@ A **class** in `Root.Township`, `Alta.Networking`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-count-2" /><code>{"double Count { get; }"}</code> |  |
+| <Link id="m-count-2" /><code>{"double Count { get; }"}</code> | Average of the recorded counts. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clearrecord" /><code>{"void ClearRecord()"}</code> |  |
-| <Link id="m-increment" /><code>{"void Increment()"}</code> |  |
-| <Link id="m-recordandresetcount" /><code>{"void RecordAndResetCount()"}</code> |  |
+| <Link id="m-clearrecord" /><code>{"void ClearRecord()"}</code> | Resets the recorded average. |
+| <Link id="m-increment" /><code>{"void Increment()"}</code> | Adds one to the current period's count. |
+| <Link id="m-recordandresetcount" /><code>{"void RecordAndResetCount()"}</code> | Adds the current count to the average and starts a new period at zero. |
 
 ## Used in
 

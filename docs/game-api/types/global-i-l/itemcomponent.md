@@ -1,6 +1,6 @@
 ---
 title: "ItemComponent"
-description: "abstract class ItemComponent in Root.Township."
+description: "Base for an asset that adds data to an Item, such as CookableItem."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ItemComponent
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for an asset that adds data to an `Item`, such as `CookableItem`. Can be limited to some physical materials.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `ScriptableObject`, [`IItemComponent`](/game-api/types/global-i-l/iitemcomponent)
@@ -32,13 +34,13 @@ An **abstract class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-item" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" { get; private set; }"}</code> |  |
+| <Link id="m-item" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" { get; private set; }"}</code> | The item this component is attached to, set when the item initializes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkmatch" /><code>{"bool CheckMatch("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial)"}</code> |  |
+| <Link id="m-checkmatch" /><code>{"bool CheckMatch("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial)"}</code> | Whether this component applies to a physical material. True if none are listed or the material is null. |
 | <Link id="m-initialize" /><code>{"private void IItemComponent.Initialize("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> |  |
 
 ## Used in

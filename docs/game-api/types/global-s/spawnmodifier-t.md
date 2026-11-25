@@ -1,6 +1,6 @@
 ---
 title: "SpawnModifier<T>"
-description: "Base asset for filters in the forest fill spawner that adjust a candidate point and its weight before spawning. Subclasses fix T, for example SpawnMod"
+description: "Base asset for filters in the forest fill spawner that adjust a candidate point and its weight before spawning."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

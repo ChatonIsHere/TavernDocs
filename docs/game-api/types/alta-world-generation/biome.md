@@ -1,6 +1,6 @@
 ---
 title: "Biome"
-description: "class Biome in Root.Township."
+description: "Cave biome asset (under Caves/Biomes): loot tables, attribute ranges and element multipliers used by cave generation."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Biome
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+Cave biome asset (under `Caves/Biomes`): loot tables, attribute ranges and element multipliers used by cave generation.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`HashedGeneralValue<Biome>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -38,16 +40,16 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attributes-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-a-b/attributedoublevalue">{"AttributeDoubleValue"}</Link>{"> Attributes { get; }"}</code> |  |
-| <Link id="m-elements-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/elementsinglevalue">{"ElementSingleValue"}</Link>{"> Elements { get; }"}</code> |  |
-| <Link id="m-loottables-2" /><code><Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] LootTables { get; }"}</code> |  |
+| <Link id="m-attributes-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/global-a-b/attributedoublevalue">{"AttributeDoubleValue"}</Link>{"> Attributes { get; }"}</code> | Attribute ranges, each with a min and max value. |
+| <Link id="m-elements-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/elementsinglevalue">{"ElementSingleValue"}</Link>{"> Elements { get; }"}</code> | Element multipliers. |
+| <Link id="m-loottables-2" /><code><Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] LootTables { get; }"}</code> | Loot tables used in this biome. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getattribute" /><code>{"void GetAttribute("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" attribute, out float min, out float max)"}</code> |  |
-| <Link id="m-getelementmultiplier" /><code>{"float GetElementMultiplier("}<Link to="/game-api/types/alta-world-generation/element">{"Element"}</Link>{" element)"}</code> |  |
+| <Link id="m-getattribute" /><code>{"void GetAttribute("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" attribute, out float min, out float max)"}</code> | Gets the min and max for a biome attribute. Both 0 if not set. |
+| <Link id="m-getelementmultiplier" /><code>{"float GetElementMultiplier("}<Link to="/game-api/types/alta-world-generation/element">{"Element"}</Link>{" element)"}</code> | Gets the multiplier for an element. 1 if not set. |
 
 ## Used in
 

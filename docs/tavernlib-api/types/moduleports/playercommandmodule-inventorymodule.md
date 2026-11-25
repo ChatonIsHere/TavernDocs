@@ -1,6 +1,6 @@
 ---
 title: "PlayerCommandModule.InventoryModule"
-description: "A static class in TavernLib, TavernLib.ModulePorts."
+description: "The player inventory submodule: view an online player's inventory, and save or load it."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `TavernLib`, `TavernLib.ModulePorts`.
 
-A **static class** in `TavernLib`, `TavernLib.ModulePorts`.
+The `player inventory` submodule: view an online player's inventory, and save or load it. Server only; its commands are private.
 
 - **Listed in** [TavernLib.ModulePorts](/tavernlib-api/types/moduleports)
 - **Nested in** [`PlayerCommandModule`](/tavernlib-api/types/moduleports/playercommandmodule)

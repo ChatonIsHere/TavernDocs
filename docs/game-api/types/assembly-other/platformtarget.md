@@ -1,6 +1,6 @@
 ---
 title: "PlatformTarget"
-description: "PC = 1, Quest = 2 (flags, in Alta.Platform.dll). The client sends it in its join request."
+description: "PC = 1, Quest = 2 (flags, in Alta.Platform.dll)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

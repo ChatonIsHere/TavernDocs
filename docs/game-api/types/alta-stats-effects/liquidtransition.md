@@ -1,6 +1,6 @@
 ---
 title: "LiquidTransition"
-description: "One pour in progress from a source liquid container into a receiving one. Progress builds up and each time it reaches 1, one unit of liquid moves over"
+description: "One pour in progress from a source liquid container into a receiving one."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

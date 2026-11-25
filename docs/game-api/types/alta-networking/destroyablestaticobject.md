@@ -1,6 +1,6 @@
 ---
 title: "DestroyableStaticObject"
-description: "Alta.Networking.DestroyableStaticObject derives from ModifiableStaticObject and adds health. On the server it listens to its ImpactDetectors."
+description: "Alta.Networking.DestroyableStaticObject derives from ModifiableStaticObject and adds health."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

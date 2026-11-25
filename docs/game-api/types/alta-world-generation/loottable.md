@@ -1,6 +1,6 @@
 ---
 title: "LootTable"
-description: "class LootTable in Root.Township."
+description: "A loot table asset: item entries grouped by rarity, with extra entries for festivals."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LootTable
 
 A **class** in `Root.Township`, `Alta.Loot`.
+
+A loot table asset: item entries grouped by rarity, with extra entries for festivals. `GetLoot` rolls an item for a dock.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`GeneralValue`](/game-api/types/assembly-other/generalvalue)
@@ -36,14 +38,14 @@ A **class** in `Root.Township`, `Alta.Loot`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entries-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/loottable-raritylist">{"LootTable.RarityList"}</Link>{"> Entries { get; }"}</code> |  |
+| <Link id="m-entries-2" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/loottable-raritylist">{"LootTable.RarityList"}</Link>{"> Entries { get; }"}</code> | The entry lists, one per rarity. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getloot" /><code>{"static "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" GetLoot("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] localTables, float weightingPower, out int count)"}</code> |  |
-| <Link id="m-getloot-2" /><code>{"static "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" GetLoot("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] localTables, float weightingPower, out int count, out "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, out "}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{" origin)"}</code> |  |
+| <Link id="m-getloot" /><code>{"static "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" GetLoot("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] localTables, float weightingPower, out int count)"}</code> | Rolls a rarity, then an origin, then a category and an item for a dock. Returns the item and count, or null. The count never reaches `Maximum` unless it equals `Minimum`. |
+| <Link id="m-getloot-2" /><code>{"static "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" GetLoot("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] localTables, float weightingPower, out int count, out "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, out "}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{" origin)"}</code> | Rolls a rarity, then an origin, then a category and an item for a dock. Returns the item and count, or null. The count never reaches `Maximum` unless it equals `Minimum`. |
 
 ## Used in
 

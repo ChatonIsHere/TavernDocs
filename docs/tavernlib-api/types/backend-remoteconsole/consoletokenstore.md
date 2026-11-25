@@ -1,6 +1,6 @@
 ---
 title: "ConsoleTokenStore"
-description: "A internal static class in TavernLib, TavernLib.Backend.RemoteConsole. Reach it through att-stubs' publicized assemblies or Harmony's AccessTools."
+description: "Internal: console_tokens.json with an in-memory copy rebuilt after each write, so the check on every command never reads the disk."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **internal static class** in `TavernLib`, `TavernLib.Backend.RemoteConsole`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
 
-A **internal static class** in `TavernLib`, `TavernLib.Backend.RemoteConsole`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+Internal: `console_tokens.json` with an in-memory copy rebuilt after each write, so the check on every command never reads the disk. Server; only the server writes the file.
 
 - **Listed in** [TavernLib.Backend.RemoteConsole](/tavernlib-api/types/backend-remoteconsole)
 - **Nested types** [`Entry`](/tavernlib-api/types/backend-remoteconsole/consoletokenstore-entry)
@@ -35,23 +35,23 @@ A **internal static class** in `TavernLib`, `TavernLib.Backend.RemoteConsole`. R
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-all" /><code>{"static IEnumerable<"}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletoken">{"ConsoleToken"}</Link>{"> All { get; }"}</code> |  |
-| <Link id="m-loaded" /><code>{"static bool Loaded { get; private set; }"}</code> |  |
-| <Link id="m-ownergeneration-2" /><code>{"static int OwnerGeneration { get; }"}</code> |  |
+| <Link id="m-all" /><code>{"static IEnumerable<"}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletoken">{"ConsoleToken"}</Link>{"> All { get; }"}</code> | Every named token, oldest first. |
+| <Link id="m-loaded" /><code>{"static bool Loaded { get; private set; }"}</code> | True once the file has been read, or found missing. |
+| <Link id="m-ownergeneration-2" /><code>{"static int OwnerGeneration { get; }"}</code> | The owner token's generation from the file: 0 until it is first rotated. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allows" /><code>{"static bool Allows(string id, "}<Link to="/game-api/types/alta-console/commandpart">{"CommandPart"}</Link>{" part)"}</code> |  |
-| <Link id="m-ensureloaded" /><code>{"static bool EnsureLoaded()"}</code> |  |
-| <Link id="m-find" /><code>{"static "}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletoken">{"ConsoleToken"}</Link>{" Find(string id)"}</code> |  |
-| <Link id="m-load" /><code>{"static void Load()"}</code> |  |
-| <Link id="m-nevergranted" /><code>{"static bool NeverGranted(string path)"}</code> |  |
-| <Link id="m-normalizepath" /><code>{"static string NormalizePath(string path)"}</code> |  |
-| <Link id="m-pathof" /><code>{"static string PathOf("}<Link to="/game-api/types/alta-console/commandpart">{"CommandPart"}</Link>{" part)"}</code> |  |
-| <Link id="m-touch" /><code>{"static void Touch(string id)"}</code> |  |
-| <Link id="m-update" /><code>{"static void Update(Func<"}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenlist">{"ConsoleTokenList"}</Link>{", bool> change)"}</code> |  |
+| <Link id="m-allows" /><code>{"static bool Allows(string id, "}<Link to="/game-api/types/alta-console/commandpart">{"CommandPart"}</Link>{" part)"}</code> | The gate: may this named token see and run this command or module? A module passes when a granted command is inside it. |
+| <Link id="m-ensureloaded" /><code>{"static bool EnsureLoaded()"}</code> | True once the file has been read. Retries a failed read at most every 5 seconds. |
+| <Link id="m-find" /><code>{"static "}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletoken">{"ConsoleToken"}</Link>{" Find(string id)"}</code> | The named token with this id, or `null`. |
+| <Link id="m-load" /><code>{"static void Load()"}</code> | Reads the file. A missing one means no tokens yet; an unreadable one leaves every console token refused, the owner's too. |
+| <Link id="m-nevergranted" /><code>{"static bool NeverGranted(string path)"}</code> | True for `repeat`, `token` and anything under them, which can't be given to a named token. |
+| <Link id="m-normalizepath" /><code>{"static string NormalizePath(string path)"}</code> | A path in lower case with single spaces and no outer spaces. |
+| <Link id="m-pathof" /><code>{"static string PathOf("}<Link to="/game-api/types/alta-console/commandpart">{"CommandPart"}</Link>{" part)"}</code> | The typed path of a command or module, such as `player progression list`, without parameters. |
+| <Link id="m-touch" /><code>{"static void Touch(string id)"}</code> | Records now as the token's last use. Logs a warning if the file can't be written. |
+| <Link id="m-update" /><code>{"static void Update(Func<"}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenlist">{"ConsoleTokenList"}</Link>{", bool> change)"}</code> | Reads the file, applies a change and writes it back under its lock. The copy is rebuilt when the change returns true. |
 | <Link id="m-ancestors" /><code>{"private static IEnumerable<string> Ancestors(string path) (iterator)"}</code> |  |
 | <Link id="m-granted" /><code>{"private static bool Granted(HashSet<string> granted, string path)"}</code> |  |
 | <Link id="m-rebuild" /><code>{"private static void Rebuild("}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenlist">{"ConsoleTokenList"}</Link>{" list)"}</code> |  |

@@ -1,6 +1,6 @@
 ---
 title: "StructureSide"
-description: "enum StructureSide in Root.Township."
+description: "Flags for the six sides of a StructureCube: forward, right, backward, left, up and down."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StructureSide
 
 An **enum** in `Root.Township`, no namespace.
+
+Flags for the six sides of a `StructureCube`: forward, right, backward, left, up and down. Used by the mining base generator.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Attributes** `Flags`

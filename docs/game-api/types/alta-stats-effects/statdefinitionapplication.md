@@ -1,6 +1,6 @@
 ---
 title: "StatDefinitionApplication"
-description: "Serializable class in a StatManager's list. Holds a definition plus Default, DefaultMinimum and DefaultMaximum. Stat.Reset goes back to these."
+description: "A stat definition paired with its default value and range, as set up on a StatManager."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
 
-`[Serializable]` class in a `StatManager`'s list. Holds a definition plus `Default`, `DefaultMinimum` and `DefaultMaximum`. `Stat.Reset` goes back to these.
+A stat definition paired with its default value and range, as set up on a `StatManager`. Each `Stat` keeps the one it was made from.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Documented in** [Stats](/game-api/game-systems/stats#statdefinitionapplication)
@@ -38,17 +38,17 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-default" /><code>{"float Default { get; }"}</code> |  |
-| <Link id="m-defaultmaximum" /><code>{"float DefaultMaximum { get; }"}</code> |  |
-| <Link id="m-defaultminimum" /><code>{"float DefaultMinimum { get; }"}</code> |  |
-| <Link id="m-definition-2" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" Definition { get; }"}</code> |  |
-| <Link id="m-name-2" /><code>{"string Name { get; set; }"}</code> |  |
+| <Link id="m-default" /><code>{"float Default { get; }"}</code> | Starting value. |
+| <Link id="m-defaultmaximum" /><code>{"float DefaultMaximum { get; }"}</code> | Starting maximum. |
+| <Link id="m-defaultminimum" /><code>{"float DefaultMinimum { get; }"}</code> | Starting minimum. |
+| <Link id="m-definition-2" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" Definition { get; }"}</code> | The stat definition. |
+| <Link id="m-name-2" /><code>{"string Name { get; set; }"}</code> | Display name. Defaults to the definition's asset name. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setbase" /><code>{"void SetBase(float baseValue)"}</code> |  |
+| <Link id="m-setbase" /><code>{"void SetBase(float baseValue)"}</code> | Sets the default and maximum to the value and the minimum to 0. |
 
 ## Used in
 

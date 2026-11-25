@@ -1,6 +1,6 @@
 ---
 title: "Button"
-description: "class Button in Root.Township."
+description: "A simple button component for the in-game (meta) UI."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Button
 
 A **class** in `Root.Township`, `Alta.Meta.UI`.
+
+A simple button component for the in-game (meta) UI. Holds a label, enabled flag and pressed state, raises events, and plays press and release sounds if set.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** `MonoBehaviour`
@@ -31,7 +33,7 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 | <Link id="m-btnreleased" /><code>{"private bool btnReleased"}</code> |  |
 | <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |  |
 | <Link id="m-label" /><code>{"private string label"}</code> |  |
-| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | NLog logger shared by all buttons. |
 | <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-menus/buttonsettings">{"ButtonSettings"}</Link>{" settings"}</code> |  |
 | <Link id="m-sounds" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttonsoundsettings">{"ButtonSoundSettings"}</Link>{" sounds"}</code> |  |
 
@@ -39,29 +41,29 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; set; }"}</code> |  |
-| <Link id="m-label-2" /><code>{"string Label { get; set; }"}</code> |  |
-| <Link id="m-settings-2" /><code><Link to="/game-api/types/alta-menus/buttonsettings">{"ButtonSettings"}</Link>{" Settings { get; set; }"}</code> |  |
-| <Link id="m-state" /><code>{"bool State { get; private set; }"}</code> |  |
+| <Link id="m-isenabled-2" /><code>{"bool IsEnabled { get; set; }"}</code> | Whether the button is enabled. Setting it raises `EnabledChanged`; nothing here stops `Press` when disabled. |
+| <Link id="m-label-2" /><code>{"string Label { get; set; }"}</code> | The button text. Setting it raises `LabelChanged`. |
+| <Link id="m-settings-2" /><code><Link to="/game-api/types/alta-menus/buttonsettings">{"ButtonSettings"}</Link>{" Settings { get; set; }"}</code> | The `ButtonSettings` asset for the button. Setting it raises `SettingsChanged`. |
+| <Link id="m-state" /><code>{"bool State { get; private set; }"}</code> | True between `Press` and `Release`. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enabledchanged" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{"> EnabledChanged"}</code> |  |
-| <Link id="m-labelchanged" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{"> LabelChanged"}</code> |  |
-| <Link id="m-pressed" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{"> Pressed"}</code> |  |
-| <Link id="m-released" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{"> Released"}</code> |  |
-| <Link id="m-settingschanged" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{"> SettingsChanged"}</code> |  |
+| <Link id="m-enabledchanged" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{"> EnabledChanged"}</code> | Raised when `IsEnabled` changes. |
+| <Link id="m-labelchanged" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{"> LabelChanged"}</code> | Raised when `Label` changes. |
+| <Link id="m-pressed" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{"> Pressed"}</code> | Raised by `Press`. |
+| <Link id="m-released" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{"> Released"}</code> | Raised by `Release`. |
+| <Link id="m-settingschanged" /><code>{"event Action<"}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{"> SettingsChanged"}</code> | Raised when `Settings` changes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onpressed" /><code>{"void OnPressed()"}</code> |  |
-| <Link id="m-onreleased" /><code>{"void OnReleased()"}</code> |  |
-| <Link id="m-press" /><code>{"void Press()"}</code> |  |
-| <Link id="m-release" /><code>{"void Release()"}</code> |  |
+| <Link id="m-onpressed" /><code>{"void OnPressed()"}</code> | Same as `Press`; exists so the inspector debug button can call it. |
+| <Link id="m-onreleased" /><code>{"void OnReleased()"}</code> | Same as `Release`; exists so the inspector debug button can call it. |
+| <Link id="m-press" /><code>{"void Press()"}</code> | Logs the press, sets `State` to true and raises `Pressed`. |
+| <Link id="m-release" /><code>{"void Release()"}</code> | Logs the release, sets `State` to false and raises `Released`. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 
 ## Used in

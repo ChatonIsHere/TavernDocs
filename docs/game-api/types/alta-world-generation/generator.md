@@ -1,6 +1,6 @@
 ---
 title: "Generator"
-description: "class Generator in Root.Township."
+description: "A 3D grid of tagged nodes for procedural construction, all set to the air tag at first."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Generator
 
 A **class** in `Root.Township`, `Alta.PAGaC`.
+
+A 3D grid of tagged nodes for procedural construction, all set to the air tag at first.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Attributes** `DefaultMember`
@@ -31,18 +33,18 @@ A **class** in `Root.Township`, `Alta.PAGaC`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-item" /><code><Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" this[int x, int y, int z] { get; }"}</code> |  |
-| <Link id="m-sizex" /><code>{"int SizeX { get; private set; }"}</code> |  |
-| <Link id="m-sizey" /><code>{"int SizeY { get; private set; }"}</code> |  |
-| <Link id="m-sizez" /><code>{"int SizeZ { get; private set; }"}</code> |  |
+| <Link id="m-item" /><code><Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" this[int x, int y, int z] { get; }"}</code> | The node at x, y, z. |
+| <Link id="m-sizex" /><code>{"int SizeX { get; private set; }"}</code> | Grid size in x. |
+| <Link id="m-sizey" /><code>{"int SizeY { get; private set; }"}</code> | Grid size in y. |
+| <Link id="m-sizez" /><code>{"int SizeZ { get; private set; }"}</code> | Grid size in z. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-castto" /><code><Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" CastTo(int x, int y, int z, int xInterval, int yInterval, int zInterval, IEnumerable<"}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"> tags, int maxDistance = 2147483647)"}</code> |  |
-| <Link id="m-casttonot" /><code><Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" CastToNot(int x, int y, int z, int xInterval, int yInterval, int zInterval, IEnumerable<"}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"> tags, int maxDistance = 2147483647)"}</code> |  |
-| <Link id="m-export" /><code><Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"[,,] Export()"}</code> |  |
+| <Link id="m-castto" /><code><Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" CastTo(int x, int y, int z, int xInterval, int yInterval, int zInterval, IEnumerable<"}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"> tags, int maxDistance = 2147483647)"}</code> | Steps from a cell by an interval until a node with one of the tags. Only positive intervals work: 0 divides by zero and negatives stop at once. |
+| <Link id="m-casttonot" /><code><Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" CastToNot(int x, int y, int z, int xInterval, int yInterval, int zInterval, IEnumerable<"}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"> tags, int maxDistance = 2147483647)"}</code> | Like `CastTo`, but starts in a tagged cell and stops at the first node without those tags. Same interval limits. |
+| <Link id="m-export" /><code><Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"[,,] Export()"}</code> | The tag of every node as a 3D array. |
 
 ## Used in
 

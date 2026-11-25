@@ -1,6 +1,6 @@
 ---
 title: "ScaleLerpPooledObject"
-description: "A pooled object that grows from tiny to its start size when taken from the pool and shrinks away before it goes back. Client-side visual effect."
+description: "A pooled object that grows from tiny to its start size when taken from the pool and shrinks away before it goes back."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

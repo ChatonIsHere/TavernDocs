@@ -1,6 +1,6 @@
 ---
 title: "TimberPiece"
-description: "class TimberPiece in Root.Township."
+description: "One piece of a carpentry timber block that tilts away as it is chiselled until it breaks off."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TimberPiece
 
 A **class** in `Root.Township`, `Alta.Carpentry`.
+
+One piece of a carpentry timber block that tilts away as it is chiselled until it breaks off. The server applies damage; progress syncs to clients.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`TimberPieceBase`](/game-api/types/alta-crafting/timberpiecebase)
@@ -49,25 +51,25 @@ A **class** in `Root.Township`, `Alta.Carpentry`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentchiselpoint" /><code>{"Vector3 CurrentChiselPoint { get; }"}</code> |  |
-| <Link id="m-hasdirection" /><code>{"bool HasDirection { get; private set; }"}</code> |  |
-| <Link id="m-hittingdirection" /><code>{"Vector3 HittingDirection { get; }"}</code> |  |
-| <Link id="m-isinversedup" /><code>{"bool IsInversedUp { get; }"}</code> |  |
-| <Link id="m-meshfilter" /><code>{"override MeshFilter MeshFilter { get; }"}</code> |  |
-| <Link id="m-progress-2" /><code>{"override float Progress { get; set; }"}</code> |  |
+| <Link id="m-currentchiselpoint" /><code>{"Vector3 CurrentChiselPoint { get; }"}</code> | The point where chisel hits do the most good, moving as the piece tilts. |
+| <Link id="m-hasdirection" /><code>{"bool HasDirection { get; private set; }"}</code> | True after the first hit sets the direction the piece will tilt. |
+| <Link id="m-hittingdirection" /><code>{"Vector3 HittingDirection { get; }"}</code> | World direction the piece should be hit in. |
+| <Link id="m-isinversedup" /><code>{"bool IsInversedUp { get; }"}</code> | Whether the piece's tilt is flipped (the block is upside down). |
+| <Link id="m-meshfilter" /><code>{"override MeshFilter MeshFilter { get; }"}</code> | The mesh filter on the piece. |
+| <Link id="m-progress-2" /><code>{"override float Progress { get; set; }"}</code> | Chiselling progress from 0 to 1. Setting it tilts and moves the piece to match. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getdirectionleniency" /><code>{"override void GetDirectionLeniency(ref float multiplier)"}</code> |  |
-| <Link id="m-gethitmultiplier" /><code>{"override float GetHitMultiplier(Vector3 hitDirection)"}</code> |  |
-| <Link id="m-load" /><code>{"override void Load("}<Link to="/game-api/types/alta-crafting/piecesavedata">{"PieceSaveData"}</Link>{" data)"}</code> |  |
-| <Link id="m-receivedamage" /><code>{"override void ReceiveDamage(float damage, Vector3 position, Vector3 direction, "}<Link to="/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> |  |
-| <Link id="m-rotate" /><code>{"override void Rotate(bool isInversedUp)"}</code> |  |
-| <Link id="m-save" /><code>{"override "}<Link to="/game-api/types/alta-crafting/piecesavedata">{"PieceSaveData"}</Link>{" Save()"}</code> |  |
-| <Link id="m-serialize" /><code>{"override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWritingFull)"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
+| <Link id="m-getdirectionleniency" /><code>{"override void GetDirectionLeniency(ref float multiplier)"}</code> | Raises the chisel direction multiplier as progress grows, so later hits can be less precise. |
+| <Link id="m-gethitmultiplier" /><code>{"override float GetHitMultiplier(Vector3 hitDirection)"}</code> | How well a hit direction lines up with the piece. Before the first hit, horizontal hits score best. |
+| <Link id="m-load" /><code>{"override void Load("}<Link to="/game-api/types/alta-crafting/piecesavedata">{"PieceSaveData"}</Link>{" data)"}</code> | Restores progress and direction from save data. |
+| <Link id="m-receivedamage" /><code>{"override void ReceiveDamage(float damage, Vector3 position, Vector3 direction, "}<Link to="/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> | Server: adds progress from a chisel hit, scaled by distance to the chisel point and the block's density. |
+| <Link id="m-rotate" /><code>{"override void Rotate(bool isInversedUp)"}</code> | Pulls progress back down to a cap when the block is flipped before the piece is done. |
+| <Link id="m-save" /><code>{"override "}<Link to="/game-api/types/alta-crafting/piecesavedata">{"PieceSaveData"}</Link>{" Save()"}</code> | Returns the piece's progress and directions as save data. |
+| <Link id="m-serialize" /><code>{"override void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWritingFull)"}</code> | Syncs progress and direction. Clients show a damage popup when it changes. |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Caches the mesh filter and sets up the tilt model. |
 | <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
 | <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
 

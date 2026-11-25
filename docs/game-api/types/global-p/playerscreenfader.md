@@ -1,6 +1,6 @@
 ---
 title: "PlayerScreenFader"
-description: "Fades the local player's view to and from black. Subclasses draw the fade. Lockers can hold the screen black (and the player controller locked) until "
+description: "Fades the local player's view to and from black."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

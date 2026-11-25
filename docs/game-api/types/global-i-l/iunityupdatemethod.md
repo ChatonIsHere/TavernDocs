@@ -1,6 +1,6 @@
 ---
 title: "IUnityUpdateMethod"
-description: "interface IUnityUpdateMethod in Root.Township."
+description: "Opaque handle for a method registered with an UpdateModule."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IUnityUpdateMethod
 
 An **interface** in `Root.Township`, no namespace.
+
+Opaque handle for a method registered with an `UpdateModule`. Keep it so you can pass it to `UpdateModule.DeregisterMethod` later.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`UpdateModule.MethodNode`](/game-api/types/global-t-x/updatemodule-methodnode)

@@ -1,6 +1,6 @@
 ---
 title: "EyeFocusControllerSettings"
-description: "Settings asset for EyeFocusController, which picks what a character's eyes look at. Nearby colliders are scored by adding up penalties (detriments) an"
+description: "Settings asset for EyeFocusController, which picks what a character's eyes look at."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

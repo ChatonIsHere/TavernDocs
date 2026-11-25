@@ -1,6 +1,6 @@
 ---
 title: "TradeVendor"
-description: "Subscribes to ServerHandler.PlayerJoined and never unsubscribes. A destroyed vendor throws when its owner joins, which stops the handlers after it."
+description: "A player trading deck."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Trading`.
 
-Subscribes to `ServerHandler.PlayerJoined` and never unsubscribes. A destroyed vendor throws when its owner joins, which stops the handlers after it.
+A player trading deck. The first player to put coins in the tax dock claims it, stocks items and sets a price, and buyers pay coins to take stock. The server runs the trades.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavableFull<TradeVendorSaveData>`](/game-api/types/alta-world/isavablefull-t), [`ISavable<TradeVendorSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<TradeVendorSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase), [`ISavableFull`](/game-api/types/alta-world/isavablefull-t), [`IOperateOnWipe`](/game-api/types/global-i-l/ioperateonwipe)
@@ -55,28 +55,28 @@ Subscribes to `ServerHandler.PlayerJoined` and never unsubscribes. A destroyed v
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hasstock" /><code>{"bool HasStock { get; }"}</code> |  |
-| <Link id="m-owner" /><code>{"int Owner { get; private set; }"}</code> |  |
-| <Link id="m-taxdock-2" /><code><Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" TaxDock { get; }"}</code> |  |
-| <Link id="m-tradestate" /><code><Link to="/game-api/types/alta-crafting/tradestatus">{"TradeStatus"}</Link>{" TradeState { get; private set; }"}</code> |  |
+| <Link id="m-hasstock" /><code>{"bool HasStock { get; }"}</code> | Whether the stock dock holds at least one lot of the set item amount. |
+| <Link id="m-owner" /><code>{"int Owner { get; private set; }"}</code> | The user ID of the deck's owner. 0 when unclaimed. |
+| <Link id="m-taxdock-2" /><code><Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" TaxDock { get; }"}</code> | The dock the owner pays tax coins into. |
+| <Link id="m-tradestate" /><code><Link to="/game-api/types/alta-crafting/tradestatus">{"TradeStatus"}</Link>{" TradeState { get; private set; }"}</code> | Unoccupied, out of stock, or open for sale. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-statuschanged" /><code>{"event "}<Link to="/game-api/types/alta-crafting/tradevendor-statuschangedhandler">{"TradeVendor.StatusChangedHandler"}</Link>{" StatusChanged"}</code> |  |
+| <Link id="m-statuschanged" /><code>{"event "}<Link to="/game-api/types/alta-crafting/tradevendor-statuschangedhandler">{"TradeVendor.StatusChangedHandler"}</Link>{" StatusChanged"}</code> | Raised when `TradeState` changes. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |  |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |  |
-| <Link id="m-load" /><code>{"void Load("}<Link to="/game-api/types/alta-crafting/tradevendorsavedata">{"TradeVendorSaveData"}</Link>{" data, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> |  |
-| <Link id="m-loadsetup" /><code>{"void LoadSetup()"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-save" /><code><Link to="/game-api/types/alta-crafting/tradevendorsavedata">{"TradeVendorSaveData"}</Link>{" Save("}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> |  |
-| <Link id="m-wipeoperation" /><code>{"void WipeOperation()"}</code> |  |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Limits the stock and payment docks to the owner and sets up owner sync. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: hooks up docks, counters, tax and lever. A deck whose display doesn't match its stock posts its contents to the owner and is replaced. |
+| <Link id="m-load" /><code>{"void Load("}<Link to="/game-api/types/alta-crafting/tradevendorsavedata">{"TradeVendorSaveData"}</Link>{" data, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Restores the owner's user ID. |
+| <Link id="m-loadsetup" /><code>{"void LoadSetup()"}</code> | Works out the trade status after loading. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends the owner to a player who has just spawned the deck. |
+| <Link id="m-save" /><code><Link to="/game-api/types/alta-crafting/tradevendorsavedata">{"TradeVendorSaveData"}</Link>{" Save("}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Saves the owner's user ID. |
+| <Link id="m-wipeoperation" /><code>{"void WipeOperation()"}</code> | Server: on a wipe, sends the owner's stock and coins to their postbox. |
 | <Link id="m-coinsejected" /><code>{"private void CoinsEjected()"}</code> |  |
 | <Link id="m-deactivatevendor" /><code>{"private async void DeactivateVendor(bool isSendingToPostBox)"}</code> |  |
 | <Link id="m-disablecolliders" /><code>{"private void DisableColliders("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |  |

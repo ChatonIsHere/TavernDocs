@@ -1,6 +1,6 @@
 ---
 title: "SingletonBehaviour<T>"
-description: "class SingletonBehaviour<T> in Alta.Singletons."
+description: "Base for a component that should exist once."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SingletonBehaviour&lt;T&gt;
 
 A **class** in `Alta.Singletons`, `Alta.Utilities`.
+
+Base for a component that should exist once. The first one to wake becomes `Instance`; any later copy destroys itself.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,16 +28,16 @@ A **class** in `Alta.Singletons`, `Alta.Utilities`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instanceset" /><code>{"static Action<T> InstanceSet"}</code> |  |
+| <Link id="m-instanceset" /><code>{"static Action<T> InstanceSet"}</code> | Called with the instance when it is set. |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static T Instance { get; protected set; }"}</code> |  |
+| <Link id="m-instance" /><code>{"static T Instance { get; protected set; }"}</code> | The single instance, or null before one has woken. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |  |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Registers this as `Instance`, or destroys this component if one already exists. Call the base if you override it. |

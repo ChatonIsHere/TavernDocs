@@ -1,6 +1,6 @@
 ---
 title: "IPopulationFolder"
-description: "A saved area that holds one population: its size, density and spawn point picker. BasicPopulationFolder is the main implementation."
+description: "A saved area that holds one population: its size, density and spawn point picker."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

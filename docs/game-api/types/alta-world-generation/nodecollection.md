@@ -1,6 +1,6 @@
 ---
 title: "NodeCollection"
-description: "A set of grid nodes from the PAGaC procedural generator, with a running bounding box. The bounds code has slips (max Y and Z are only updated when X g"
+description: "A set of grid nodes from the PAGaC procedural generator, with a running bounding box."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -104,7 +104,7 @@ TavernEssentials' log guard finds it by name (`TavernLib.TavernLogger`, private 
 | `TavernLib.Tavern` | The `MelonPlugin` itself. `const string Version` (see [Which TavernLib is running](overview.md#which-tavernlib-is-running)). |
 | `TavernLib.Backend.BackendUtils` | `HashDigest(string)` (SHA-256, lower-case hex), `TokenUrlSafe(int)`, `TavernApi` (the listing URL) and `ServerUri`. |
 | `TavernLib.Backend.NativeHttp` | A blocking HTTP client for mod downloads: `GetString`, `Download`. Never on the main thread. |
-| `TavernLib.Backend.WindowsProxy` | `CreateSystemProxy()`, Windows' proxy settings for `NativeHttp`. |
+| `TavernLib.Backend.WindowsProxy` | `CreateSystemProxy()`, Windows' proxy settings for the community listing's `HttpClient` (`ServerListingController`). `NativeHttp` uses WinHTTP's own automatic proxy instead. |
 | `TavernLib.Backend.Server.ServerBackup` | Timed world backups on headless servers. `ServerDirectory` is `ATTSave\Servers\-1`. |
 | `TavernLib.Backend.Server.ServerListingController` | Sends the server to Community Servers every few seconds, from a background loop. |
 | `TavernLib.Backend.Server.ServerListingPayload` | What's sent to the listing. |

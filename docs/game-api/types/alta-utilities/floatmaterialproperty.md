@@ -1,6 +1,6 @@
 ---
 title: "FloatMaterialProperty"
-description: "class FloatMaterialProperty in Root.Township."
+description: "A cached shader property id for a float value, set on a material or a property block."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FloatMaterialProperty
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+A cached shader property id for a float value, set on a material or a property block.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`MaterialProperty<float>`](/game-api/types/alta-utilities/materialproperty-t)
@@ -25,8 +27,8 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setonmaterial" /><code>{"override void SetOnMaterial(float value, Material material)"}</code> |  |
-| <Link id="m-setonpropertyblock" /><code>{"override void SetOnPropertyBlock(float value, MaterialPropertyBlock propertyBlock)"}</code> |  |
+| <Link id="m-setonmaterial" /><code>{"override void SetOnMaterial(float value, Material material)"}</code> | Sets the float on a material. |
+| <Link id="m-setonpropertyblock" /><code>{"override void SetOnPropertyBlock(float value, MaterialPropertyBlock propertyBlock)"}</code> | Sets the float on a material property block. |
 
 ## Used in
 

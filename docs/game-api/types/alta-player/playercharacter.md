@@ -1,6 +1,6 @@
 ---
 title: "PlayerCharacter"
-description: "Alta.Character.PlayerCharacter, the VR body. Extra members:"
+description: "The player's body in the world: the PlayerController used for normal play, with the character dummy, IK, belt and back docks, inventory and customization."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Character`.
 
-`Alta.Character.PlayerCharacter`, the VR body. Extra members:
+The player's body in the world: the `PlayerController` used for normal play, with the character dummy, IK, belt and back docks, inventory and customization. Both sides; get it from `player.PlayerCharacter`.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`SmoothLocomotionPlayerController`](/game-api/types/global-s/smoothlocomotionplayercontroller), [`IHasFingertips`](/game-api/types/global-i-l/ihasfingertips)
@@ -58,47 +58,47 @@ A **class** in `Root.Township`, `Alta.Character`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-backdocks-2" /><code><Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" BackDocks { get; }"}</code> |  |
-| <Link id="m-beltdocks-2" /><code><Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" BeltDocks { get; }"}</code> |  |
-| <Link id="m-bodyanimator" /><code>{"Animator BodyAnimator { get; private set; }"}</code> |  |
-| <Link id="m-bodycollidergroup-2" /><code><Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" BodyColliderGroup { get; }"}</code> |  |
-| <Link id="m-bodycontroller-2" /><code>{"override "}<Link to="/game-api/types/alta-player/bodycontroller">{"BodyController"}</Link>{" "}<Link to="/game-api/types/alta-player/bodycontroller">{"BodyController"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-customizationhandler-2" /><code><Link to="/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" CustomizationHandler { get; }"}</code> |  |
-| <Link id="m-dockpositioncontroller-2" /><code><Link to="/game-api/types/alta-player/dockpositioncontroller">{"DockPositionController"}</Link>{" "}<Link to="/game-api/types/alta-player/dockpositioncontroller">{"DockPositionController"}</Link>{" { get; }"}</code> |  |
-| <Link id="m-dummy-2" /><code><Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" Dummy { get; }"}</code> |  |
-| <Link id="m-head" /><code>{"override Transform Head { get; }"}</code> |  |
-| <Link id="m-headfollow-2" /><code>{"override Transform HeadFollow { get; }"}</code> |  |
-| <Link id="m-headheight" /><code>{"override float HeadHeight { get; }"}</code> |  |
-| <Link id="m-health" /><code><Link to="/game-api/types/global-p/playerhealth">{"PlayerHealth"}</Link>{" Health { get; }"}</code> |  |
-| <Link id="m-ikcontroller-2" /><code><Link to="/game-api/types/global-c-d/characterikcontroller">{"CharacterIKController"}</Link>{" IKController { get; }"}</code> |  |
-| <Link id="m-inventory" /><code><Link to="/game-api/types/alta-player/inventory">{"Inventory"}</Link>{" "}<Link to="/game-api/types/alta-player/inventory">{"Inventory"}</Link>{" { get; private set; }"}</code> |  |
-| <Link id="m-localitycontroller-2" /><code><Link to="/game-api/types/alta-player/characterlocalitycontroller">{"CharacterLocalityController"}</Link>{" LocalityController { get; }"}</code> |  |
-| <Link id="m-locomotioncontroller" /><code><Link to="/game-api/types/global-p/playerlocomotioncontroller">{"PlayerLocomotionController"}</Link>{" LocomotionController { get; }"}</code> |  |
-| <Link id="m-moveduration-2" /><code>{"float MoveDuration { get; }"}</code> |  |
-| <Link id="m-rigidbodies-2" /><code><Link to="/game-api/types/global-q-r/rigidbodycollection">{"RigidbodyCollection"}</Link>{" Rigidbodies { get; }"}</code> |  |
-| <Link id="m-specialeffectscontroller-2" /><code><Link to="/game-api/types/global-p/playerspecialeffectscontroller">{"PlayerSpecialEffectsController"}</Link>{" SpecialEffectsController { get; }"}</code> |  |
-| <Link id="m-teleportstyle-2" /><code><Link to="/game-api/types/alta-player/locomotionstyle">{"LocomotionStyle"}</Link>{" TeleportStyle { get; set; }"}</code> |  |
+| <Link id="m-backdocks-2" /><code><Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" BackDocks { get; }"}</code> | The dock group on the player's back. |
+| <Link id="m-beltdocks-2" /><code><Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" BeltDocks { get; }"}</code> | The dock group on the player's belt. |
+| <Link id="m-bodyanimator" /><code>{"Animator BodyAnimator { get; private set; }"}</code> | The character dummy's animator. Turned off during physics steps while IK runs. |
+| <Link id="m-bodycollidergroup-2" /><code><Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" BodyColliderGroup { get; }"}</code> | The body's colliders. Downed and dead states switch them off; arrows ignore the shooter's own. |
+| <Link id="m-bodycontroller-2" /><code>{"override "}<Link to="/game-api/types/alta-player/bodycontroller">{"BodyController"}</Link>{" "}<Link to="/game-api/types/alta-player/bodycontroller">{"BodyController"}</Link>{" { get; }"}</code> | The body controller that moves the body under the head and hands. |
+| <Link id="m-customizationhandler-2" /><code><Link to="/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" CustomizationHandler { get; }"}</code> | Applies the player's cosmetics to this body. Attached when the body links to a player. |
+| <Link id="m-dockpositioncontroller-2" /><code><Link to="/game-api/types/alta-player/dockpositioncontroller">{"DockPositionController"}</Link>{" "}<Link to="/game-api/types/alta-player/dockpositioncontroller">{"DockPositionController"}</Link>{" { get; }"}</code> | Places belt docks to fit the body type. |
+| <Link id="m-dummy-2" /><code><Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" Dummy { get; }"}</code> | The character dummy (model, animator, fingertips, cosmetics packer). |
+| <Link id="m-head" /><code>{"override Transform Head { get; }"}</code> | The head transform from the locality controller. |
+| <Link id="m-headfollow-2" /><code>{"override Transform HeadFollow { get; }"}</code> | Transform that follows the head. |
+| <Link id="m-headheight" /><code>{"override float HeadHeight { get; }"}</code> | Local height of the head, from the locality controller. |
+| <Link id="m-health" /><code><Link to="/game-api/types/global-p/playerhealth">{"PlayerHealth"}</Link>{" Health { get; }"}</code> | The body's `PlayerHealth`. |
+| <Link id="m-ikcontroller-2" /><code><Link to="/game-api/types/global-c-d/characterikcontroller">{"CharacterIKController"}</Link>{" IKController { get; }"}</code> | The IK controller, updated every frame and physics step. |
+| <Link id="m-inventory" /><code><Link to="/game-api/types/alta-player/inventory">{"Inventory"}</Link>{" "}<Link to="/game-api/types/alta-player/inventory">{"Inventory"}</Link>{" { get; private set; }"}</code> | The player's inventory helper, created in `Awake`. |
+| <Link id="m-localitycontroller-2" /><code><Link to="/game-api/types/alta-player/characterlocalitycontroller">{"CharacterLocalityController"}</Link>{" LocalityController { get; }"}</code> | Handles which parts show for the local player versus others (head and so on). |
+| <Link id="m-locomotioncontroller" /><code><Link to="/game-api/types/global-p/playerlocomotioncontroller">{"PlayerLocomotionController"}</Link>{" LocomotionController { get; }"}</code> | The `PlayerLocomotionController` moving this body. |
+| <Link id="m-moveduration-2" /><code>{"float MoveDuration { get; }"}</code> | Serialized move duration (0.01 seconds by default); nothing else in this build reads it. |
+| <Link id="m-rigidbodies-2" /><code><Link to="/game-api/types/global-q-r/rigidbodycollection">{"RigidbodyCollection"}</Link>{" Rigidbodies { get; }"}</code> | The body's rigidbodies. |
+| <Link id="m-specialeffectscontroller-2" /><code><Link to="/game-api/types/global-p/playerspecialeffectscontroller">{"PlayerSpecialEffectsController"}</Link>{" SpecialEffectsController { get; }"}</code> | Plays special effects on the body. |
+| <Link id="m-teleportstyle-2" /><code><Link to="/game-api/types/alta-player/locomotionstyle">{"LocomotionStyle"}</Link>{" TeleportStyle { get; set; }"}</code> | Locomotion style for teleports. Settable; nothing else in this build reads it. |
 | <Link id="m-ihasfingertips-fingertips" /><code>{"private "}<Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" IHasFingertips.FingerTips { get; }"}</code> |  |
-| <Link id="m-savemode" /><code>{"protected override "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" { get; }"}</code> |  |
+| <Link id="m-savemode" /><code>{"protected override "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" { get; }"}</code> | Always `SaveMode.Player`: saved with the player save, not with a chunk. |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-scalechanged" /><code>{"event "}<Link to="/game-api/types/alta-player/scalechangedhandler">{"ScaleChangedHandler"}</Link>{" ScaleChanged"}</code> |  |
+| <Link id="m-scalechanged" /><code>{"event "}<Link to="/game-api/types/alta-player/scalechangedhandler">{"ScaleChangedHandler"}</Link>{" ScaleChanged"}</code> | Declared for scale changes and listened to by the dock dropper, but nothing in this build raises it. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> |  |
-| <Link id="m-loadfrom" /><code>{"override void LoadFrom("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> |  |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |  |
-| <Link id="m-saveto" /><code>{"override void SaveTo("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> |  |
-| <Link id="m-unlinkfromplayer" /><code>{"override void UnlinkFromPlayer()"}</code> |  |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |  |
+| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> | Build time: removes the non-baked character renderer. |
+| <Link id="m-loadfrom" /><code>{"override void LoadFrom("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> | Server: loads the body and hands from the player save. A player with no saved prefab data gets the default starting data. |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | When the owning player connects, sends them their last safe position if one is saved. |
+| <Link id="m-saveto" /><code>{"override void SaveTo("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> | Writes the body's network prefab data (docks, held items and so on) into the player save. |
+| <Link id="m-unlinkfromplayer" /><code>{"override void UnlinkFromPlayer()"}</code> | Destroys the customization handler and stops listening for armed changes before the base unlink. |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Sets up health, creates the `Inventory`, grabs the body animator and hooks dock placement to the body type once cosmetics are packed. |
 | <Link id="m-onarmedchanged" /><code>{"private void OnArmedChanged(bool isArmed)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> |  |
+| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> | Destroys the customization handler with the body. |
 | <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
 | <Link id="m-onlinkedtoplayer" /><code>{"private void OnLinkedToPlayer()"}</code> |  |
 | <Link id="m-setupdocksbasedonbodytype" /><code>{"private void SetupDocksBasedOnBodyType()"}</code> |  |

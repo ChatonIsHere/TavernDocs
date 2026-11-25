@@ -1,6 +1,6 @@
 ---
 title: "GlobalPagesManager"
-description: "Alta.Pages.GlobalPagesManager, a NetworkEntityBehaviour singleton (GlobalPagesManager.Instance). The list is built and kept on the server and saved wi"
+description: "Alta.Pages.GlobalPagesManager, a NetworkEntityBehaviour singleton (GlobalPagesManager.Instance)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

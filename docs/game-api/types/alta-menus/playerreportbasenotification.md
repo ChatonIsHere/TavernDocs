@@ -1,6 +1,6 @@
 ---
 title: "PlayerReportBaseNotification"
-description: "abstract class PlayerReportBaseNotification in Root.Township."
+description: "Base for main menu inbox notifications about player reports, where accepting bans the reported user from that server through the Alta API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerReportBaseNotification
 
 An **abstract class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
+
+Base for main menu inbox notifications about player reports, where accepting bans the reported user from that server through the Alta API.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** [`UINotification`](/game-api/types/alta-menus/uinotification)
@@ -32,14 +34,14 @@ An **abstract class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-accepttext" /><code>{"override string AcceptText { get; }"}</code> |  |
-| <Link id="m-declinetext" /><code>{"override string DeclineText { get; }"}</code> |  |
-| <Link id="m-message" /><code>{"override string Message { get; }"}</code> |  |
-| <Link id="m-shortmessage" /><code>{"override string ShortMessage { get; }"}</code> |  |
-| <Link id="m-showloadingforaccept" /><code>{"override bool ShowLoadingForAccept { get; }"}</code> |  |
+| <Link id="m-accepttext" /><code>{"override string AcceptText { get; }"}</code> | "Ban User". |
+| <Link id="m-declinetext" /><code>{"override string DeclineText { get; }"}</code> | "Ok". |
+| <Link id="m-message" /><code>{"override string Message { get; }"}</code> | "Player Report:". |
+| <Link id="m-shortmessage" /><code>{"override string ShortMessage { get; }"}</code> | "Player Report". |
+| <Link id="m-showloadingforaccept" /><code>{"override bool ShowLoadingForAccept { get; }"}</code> | False; the ban shows its own loading popup. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-banuserfromreport" /><code>{"protected async Task<bool> BanUserFromReport("}<Link to="/game-api/types/assembly-api-client/playerreportadmin">{"PlayerReportAdmin"}</Link>{" report, "}<Link to="/game-api/types/global-s/socialanalyticsbanmenupanelorigin">{"SocialAnalyticsBanMenuPanelOrigin"}</Link>{" panelOrigin)"}</code> |  |
+| <Link id="m-banuserfromreport" /><code>{"protected async Task<bool> BanUserFromReport("}<Link to="/game-api/types/assembly-api-client/playerreportadmin">{"PlayerReportAdmin"}</Link>{" report, "}<Link to="/game-api/types/global-s/socialanalyticsbanmenupanelorigin">{"SocialAnalyticsBanMenuPanelOrigin"}</Link>{" panelOrigin)"}</code> | Asks for confirmation, bans the reported user from the report's server and marks the report acted on. Returns whether it was done. |

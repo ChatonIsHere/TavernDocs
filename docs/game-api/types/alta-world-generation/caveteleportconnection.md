@@ -1,6 +1,6 @@
 ---
 title: "CaveTeleportConnection"
-description: "A link between two cave teleporter layers and its fuel costs. Watches fuel on both layers and raises events as the link becomes usable or not."
+description: "A link between two cave teleporter layers and its fuel costs."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 title: "BackendUtils"
-description: "A static class in TavernLib, TavernLib.Backend."
+description: "Small helpers shared by TavernLib's backend: the listing URL, SHA-256 hashing and random URL-safe tokens."
 displayed_sidebar: tavernlib
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `TavernLib`, `TavernLib.Backend`.
 
-A **static class** in `TavernLib`, `TavernLib.Backend`.
+Small helpers shared by TavernLib's backend: the listing URL, SHA-256 hashing and random URL-safe tokens.
 
 - **Listed in** [TavernLib.Backend](/tavernlib-api/types/backend)
 - **Documented in** [BackendUtils](/tavernlib-api/types/backend/backendutils), [Internals](/tavernlib-api/internals)
@@ -21,12 +21,12 @@ A **static class** in `TavernLib`, `TavernLib.Backend`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serveruri" /><code>{"static string ServerUri { get; }"}</code> |  |
-| <Link id="m-tavernapi" /><code>{"static string TavernApi { get; }"}</code> |  |
+| <Link id="m-serveruri" /><code>{"static string ServerUri { get; }"}</code> | `/servers`, the listing API's path for posting and removing a server. |
+| <Link id="m-tavernapi" /><code>{"static string TavernApi { get; }"}</code> | The Community Servers listing's base URL: `/listing_api`'s value, or `http://themoddingtavern.com:1763`. |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hashdigest" /><code>{"static string HashDigest(string input)"}</code> |  |
-| <Link id="m-tokenurlsafe" /><code>{"static string TokenUrlSafe(int nbytes = 32)"}</code> |  |
+| <Link id="m-hashdigest" /><code>{"static string HashDigest(string input)"}</code> | The SHA-256 hash of a string's UTF-8 bytes, as lower-case hex. |
+| <Link id="m-tokenurlsafe" /><code>{"static string TokenUrlSafe(int nbytes = 32)"}</code> | A random token from a cryptographic generator, as base64url with no padding. 32 bytes by default. |

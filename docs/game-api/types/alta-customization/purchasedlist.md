@@ -1,6 +1,6 @@
 ---
 title: "PurchasedList"
-description: "Which cosmetic hashes the local player owns or can pick, built from default cosmetics, the shop API's owned items and developer items. The owned and a"
+description: "Which cosmetic hashes the local player owns or can pick, built from default cosmetics, the shop API's owned items and developer items."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null

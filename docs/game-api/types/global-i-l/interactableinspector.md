@@ -1,6 +1,6 @@
 ---
 title: "InteractableInspector"
-description: "class InteractableInspector in Root.Township."
+description: "Debug bubble shown in the world for inspecting a prefab's components, methods and values in game."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InteractableInspector
 
 A **class** in `Root.Township`, no namespace.
+
+Debug bubble shown in the world for inspecting a prefab's components, methods and values in game. Pooled, client side, and released when you move more than 5 m away.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`PooledObject`](/game-api/types/global-p/pooledobject)
@@ -47,9 +49,9 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clean" /><code>{"void Clean()"}</code> |  |
-| <Link id="m-registerinspector" /><code>{"void RegisterInspector("}<Link to="/game-api/types/global-i-l/inspectorbase">{"InspectorBase"}</Link>{" inspector, Component root)"}</code> |  |
-| <Link id="m-registerprefab" /><code>{"void RegisterPrefab("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> |  |
+| <Link id="m-clean" /><code>{"void Clean()"}</code> | Unhooks everything, releases its text and returns the bubble to the pool. |
+| <Link id="m-registerinspector" /><code>{"void RegisterInspector("}<Link to="/game-api/types/global-i-l/inspectorbase">{"InspectorBase"}</Link>{" inspector, Component root)"}</code> | Sets which component, method, value or interactor this bubble shows and colours it by type. |
+| <Link id="m-registerprefab" /><code>{"void RegisterPrefab("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> | Cleans the bubble up when that prefab's entity is destroyed. |
 | <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
 | <Link id="m-checkinteraction" /><code>{"private IEnumerator CheckInteraction("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor) (iterator)"}</code> |  |
 | <Link id="m-distancerelease" /><code>{"private void DistanceRelease("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |  |

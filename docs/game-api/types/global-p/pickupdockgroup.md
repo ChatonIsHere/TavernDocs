@@ -1,6 +1,6 @@
 ---
 title: "PickupDockGroup"
-description: "class PickupDockGroup in Root.Township."
+description: "A group of pickup docks on one object, so they can be handled together."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupDockGroup
 
 A **class** in `Root.Township`, no namespace.
+
+A group of pickup docks on one object, so they can be handled together.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`ComponentGroup<PickupDock>`](/game-api/types/global-c-d/componentgroup-t)
@@ -26,7 +28,7 @@ A **class** in `Root.Township`, no namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroyallcontent" /><code>{"void DestroyAllContent()"}</code> |  |
+| <Link id="m-destroyallcontent" /><code>{"void DestroyAllContent()"}</code> | Destroys everything docked in every dock of the group. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "PlayerMapManager"
-description: "One player's discovered pieces. IsThisMapPieceDiscovered(Map, int), GetUndiscoveredMapPieces(Map), DiscoverPiece(Map, int)."
+description: "Map discovery state for one player (or the shared map): which pieces of each Map are uncovered."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Map`.
 
-One player's discovered pieces. `IsThisMapPieceDiscovered(Map, int)`, `GetUndiscoveredMapPieces(Map)`, `DiscoverPiece(Map, int)`.
+Map discovery state for one player (or the shared map): which pieces of each `Map` are uncovered. Kept by `MapManager` and saved in the player's map file.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Documented in** [Map and landmarks](/game-api/world/map-and-landmarks)
@@ -37,10 +37,10 @@ One player's discovered pieces. `IsThisMapPieceDiscovered(Map, int)`, `GetUndisc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-discoverpiece" /><code>{"bool DiscoverPiece("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map, int pieceIndex)"}</code> |  |
-| <Link id="m-getundiscoveredmappieces" /><code>{"IEnumerable<int> GetUndiscoveredMapPieces("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map) (iterator)"}</code> |  |
-| <Link id="m-isthismappiecediscovered" /><code>{"bool IsThisMapPieceDiscovered("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map, int pieceIndex)"}</code> |  |
-| <Link id="m-syncmapmanager" /><code>{"void SyncMapManager("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-discoverpiece" /><code>{"bool DiscoverPiece("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map, int pieceIndex)"}</code> | Marks a piece discovered and tells the map. Returns false if it already was. The server then saves the file. |
+| <Link id="m-getundiscoveredmappieces" /><code>{"IEnumerable<int> GetUndiscoveredMapPieces("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map) (iterator)"}</code> | Indexes of the pieces not yet discovered on the map. |
+| <Link id="m-isthismappiecediscovered" /><code>{"bool IsThisMapPieceDiscovered("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map, int pieceIndex)"}</code> | True if the piece has been discovered. |
+| <Link id="m-syncmapmanager" /><code>{"void SyncMapManager("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the discovery flags of every map. `MapManager` sends it to each player when they connect. |
 | <Link id="m-serializemap" /><code>{"private void SerializeMap("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
 
 ## Used in

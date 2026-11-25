@@ -1,6 +1,6 @@
 ---
 title: "MeshPlacementData"
-description: "A saved mesh placement for the Scrapper tool: local transform, mesh and material, with optional texture atlas baking. Build-time data."
+description: "A saved mesh placement for the Scrapper tool: local transform, mesh and material, with optional texture atlas baking."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -51,7 +51,7 @@ A saved mesh placement for the Scrapper tool: local transform, mesh and material
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bakeatlas" /><code>{"bool BakeAtlas(IEnumerable<"}<Link to="/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{"> definitions)"}</code> | Swaps the mesh and material for an atlased version, using the forced atlas first, then the first definition that applies. Returns true on success. |
+| <Link id="m-bakeatlas" /><code>{"bool BakeAtlas(IEnumerable<"}<Link to="/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{"> definitions)"}</code> | Swaps the mesh and material for an atlased version (forced atlas first, then the first that applies). True on success. |
 | <Link id="m-savedata" /><code>{"void SaveData(Vector3 localScale, Vector3 localEulerAngles, Vector3 localPosition, Mesh sharedMesh, Material sharedMaterial)"}</code> | Stores the transform, mesh and material. |
 
 ## Used in
