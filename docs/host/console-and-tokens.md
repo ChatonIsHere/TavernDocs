@@ -29,6 +29,8 @@ The **owner token** gives full control of your server. Anyone who has it can do 
   docker compose exec -e TAVERN_CONSOLE_TOKEN_FILE="/root/.wine/drive_c/users/root/AppData/Roaming/TheModdingTavern/console_token.txt" a-township-container python3 /console-bridge.py run "player list"
   ```
 
+  It waits up to 190 seconds for the reply. A slow command, like a forest reset with Forest Performance installed, can take longer: add `-e TAVERN_CONSOLE_COMMAND_TIMEOUT=600` after `exec` to wait 10 minutes. If it does time out, the command still finishes on the server; check the log for the result.
+
 ### From outside your network
 
 The console port is closed to the internet if you followed these guides, and it should stay that way. To reach it from your PC, use an SSH tunnel (see [Using the console from your PC](docker/vps.md#using-the-console-from-your-pc)) and connect to `127.0.0.1`.
